@@ -6,7 +6,7 @@ User authorization: implement IFSC-00 through IFSC-15 autonomously in this copie
 
 User update: remote `https://github.com/theusinshow/vecta.git` is empty (successful `git ls-remote`, no refs). It is now `origin`; the read-only local source is `know-os-source`. Preserve inherited history. Favor low token usage and basic focused checks per coherent milestone; run full final gate once, expanding checks only for actual failures/risks.
 
-Current milestone: **IFSC-08 — remaining Golden Lessons**. IFSC-00/01/02/03 passed focused gates; IFSC-04/05/06 functional gates passed with publication explicitly pending independent QA; see docs/ifsc/IMPLEMENTATION-AUDIT.md.
+Current milestone: **IFSC-09 — unified assessment engine**. IFSC-00/01/02/03 passed focused gates; IFSC-04/05/06 functional gates passed with publication explicitly pending independent QA; see docs/ifsc/IMPLEMENTATION-AUDIT.md.
 
 - [x] Integrate ADRs 0017–0029; supersede only ADR 0008's single-owner constraint.
 - [x] Reconcile the core documentation and agent rules with the approved expansion.
@@ -22,7 +22,7 @@ IFSC-01 acceptance: relational requirements/sources/prerequisites/settings; refe
 
 IFSC-02: preserve v1 parser/hash behavior; add strict v2 shape and semantic references/answers/exposure checks; persist sources/curriculum/Question versions atomically in the existing importer; reject version conflicts; preserve attempts. Validate focused import compatibility/integration plus typecheck/lint.
 
-NEXT ACTION: implement POR-01, CIE-06 and GH-06 through the existing registries, verify source alignment and continue to the unified assessment engine. Planner functional policy checks passed; final QA readiness certification remains pending IFSC-12. MAT-07 source is draft; independent content QA/publication remains a visible acceptance item. Historical V1 plans below are retained as history, not the active roadmap.
+NEXT ACTION: implement shared AssessmentTemplate/Instance/Response, frozen exact versions, open responses and transactional/idempotent finalization. Golden draft rendering/evaluation checks passed; independent publication QA remains pending. Planner functional policy checks passed; final QA readiness certification remains pending IFSC-12. MAT-07 source is draft; independent content QA/publication remains a visible acceptance item. Historical V1 plans below are retained as history, not the active roadmap.
 
 This file is the durable control surface for the current multi-step implementation task. Keep it current so a new Codex session can resume without asking the user to restate decisions.
 
@@ -1304,6 +1304,7 @@ Step 23 dogfood study flow UX pass is implemented and validated locally. Dev-mod
 ## NEXT ACTION
 
 Review Step 23 on the running no-OAuth local memory server at `http://127.0.0.1:3211/lessons/js-fundamentals-001` while the listener PID 40540 stays alive. The bundled JavaScript example Pack is imported there; import the desired complete Track Pack again if needed because `memory://local` content only survives in that exact process. Do not deploy, push or apply production Neon migrations without explicit confirmation.
+
 
 
 

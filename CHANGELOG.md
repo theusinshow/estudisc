@@ -167,3 +167,9 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 - Added deterministic time-budget planning with prerequisites, weakness, review urgency, subject balance and configurable exam phase.
 - Replanning preserves active sessions and discards planned debt.
 - Added draft prerequisite teaching for MAT-07; publication approval remains pending.
+
+## 2026-10-01 — four Golden Lessons
+
+- Authored draft Portuguese, Science and Geography/History Golden Lessons with truthful sources/provenance.
+- Added accessible atom exploration and a vertical ordering timeline through the existing renderer.
+- Verified edital Anexo V directly; retained historical/private source boundaries.

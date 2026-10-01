@@ -8,6 +8,8 @@ import {
   type TitledTextBlockPayload
 } from "@/features/lessons/blocks/block-schemas";
 import { NumericExplorer } from "./numeric-explorer";
+import { AtomModel } from "./atom-model";
+import { atomModelSchema } from "./atom-model-schema";
 import { numericExplorerSchema } from "./numeric-explorer-schema";
 import { educationalActivitySchema } from "@/features/activities/application/educational-activity";
 import { EducationalActivityPanel } from "@/features/activities/components/educational-activity-panel";
@@ -31,7 +33,10 @@ const blockRenderers: Readonly<Record<string, BlockRenderer>> = {
   classification: renderEducationalBlock,
   ordering: renderEducationalBlock,
   matching: renderEducationalBlock
+  ,diagram:renderDiagram,timeline:renderTimeline
 };
+function renderDiagram(block:ImportedLessonBlock){const parsed=atomModelSchema.safeParse(block.payload);return parsed.success?<AtomModel {...parsed.data}/>:<InvalidBlock block={block}/>;}
+function renderTimeline(block:ImportedLessonBlock){const raw=typeof block.payload==="object"&&block.payload!==null?block.payload:{};return renderEducationalBlock({...block,payload:{...raw,type:"ordering"}});}
 
 function renderNumericExplorer(block: ImportedLessonBlock) {
   const parsed = numericExplorerSchema.safeParse(block.payload);

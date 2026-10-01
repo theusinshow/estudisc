@@ -72,3 +72,11 @@ Content boundary: `packs/seeds/ifsc-2027.golden.track.v2.json` contains draft AI
 Planner policy now prioritizes real due reviews, weakness, curriculum importance, required prerequisites, weekly subject balance and configurable exam phases. Selection respects time budgets, excludes reserved/unavailable questions and caps new learning. PostgreSQL and memory adapters use the same pure priority policy; a new plan never rewrites ACTIVE structure. Expired PLANNED sessions are abandoned rather than becoming lesson debt. MAT prerequisite draft now contains actual teaching and three retrieval questions.
 
 Focused policy and migrated slice tests passed; typecheck/lint passed. Live planner-ready QA certification remains pending IFSC-12 and is not claimed. Performance and multi-subject golden regression receive the final integrated check.
+
+## IFSC-08 — four Golden Lessons
+
+Draft Golden content now includes MAT-07, POR-01, CIE-06 and GH-06, plus prerequisite mathematics. Existing Block registry gained a keyboard/touch atom model with structured table and prediction; timeline uses ordering buttons. Shared Questions cover numerical, multiple-choice, matching and ordering. Text highlighting/classification remain guided interactions.
+
+Verified official edital Anexo V pages 41–43 visually and by extraction: exam 29 November 2026 at 14:00, 4h, 28 questions (7 per area). Source PDF is private and unchanged. GH source references include the Planalto texts of Laws 581/1850, 2040/1871, 3353/1888 and Biblioteca Nacional's abolition material. Seed provenance is generated, never official.
+
+Focused checks: all four Golden Lessons validate/render via canonical registry; every shared Question completes with the real evaluator in the disposable memory adapter. Typecheck/lint passed. Independent content QA remains pending; no draft is represented as published curriculum.

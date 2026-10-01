@@ -6,6 +6,7 @@ import { parseStaticActivityConfig } from "@/features/activities/application/sta
 import { educationalActivitySchema } from "@/features/activities/application/educational-activity";
 import { numericExplorerSchema } from "@/features/lessons/blocks/numeric-explorer-schema";
 import { questionReferenceSchema } from "@/features/activities/application/question-reference";
+import { atomModelSchema } from "@/features/lessons/blocks/atom-model-schema";
 
 export function curriculumFromV2(pack: TrackPackV2) {
   return {
@@ -28,7 +29,7 @@ export function validateTrackPackV2Semantics(pack: TrackPackV2) {
   const unique = (id: string, path: string) => { if (ids.has(id)) fail(path, `Duplicate stable ID ${id}`); ids.add(id); };
   // Extend these alongside the actual renderer/registry capabilities in IFSC-03.
   const educationalTypes = new Set(["numeric", "ordering", "classification", "matching", "text-highlight", "guided-steps"]);
-  const registeredBlocks = new Set(["text", "concept", "note", "warning", "code", "example", "prediction", "summary", "worked-example", "numeric-explorer", ...educationalTypes]);
+  const registeredBlocks = new Set(["text", "concept", "note", "warning", "code", "example", "prediction", "summary", "worked-example", "numeric-explorer", "diagram", "timeline", ...educationalTypes]);
   const registeredActivities = new Set(["prediction", "multiple-choice", "code", "debug", "question", ...educationalTypes]);
   unique(pack.track.id, "track.id");
   for (const question of pack.questions) {
@@ -52,8 +53,8 @@ export function validateTrackPackV2Semantics(pack: TrackPackV2) {
         unique(block.id, "blocks");
         if (!registeredBlocks.has(block.type)) fail("blocks.type", `Interaction ${block.type} is not registered yet`);
         else {
-          const schema = block.type === "numeric-explorer" ? numericExplorerSchema : educationalTypes.has(block.type) ? educationalActivitySchema : block.type === "code" ? codeBlockSchema : block.type === "text" ? textBlockSchema : block.type === "concept" ? conceptBlockSchema : titledTextBlockSchema;
-          if (!schema.safeParse({ ...block.payload, ...block }).success) fail("blocks.payload", "Invalid registered Block payload");
+          const schema = block.type === "diagram" ? atomModelSchema : block.type === "numeric-explorer" ? numericExplorerSchema : block.type === "timeline" || educationalTypes.has(block.type) ? educationalActivitySchema : block.type === "code" ? codeBlockSchema : block.type === "text" ? textBlockSchema : block.type === "concept" ? conceptBlockSchema : titledTextBlockSchema;
+          if (!schema.safeParse({ ...block.payload, ...block, ...(block.type==="timeline"?{type:"ordering"}:{}) }).success) fail("blocks.payload", "Invalid registered Block payload");
         }
         if (block.conceptIds.some(id => !concepts.has(id))) fail("blocks", "Unknown Concept");
       }

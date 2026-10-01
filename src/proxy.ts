@@ -59,7 +59,7 @@ const authProxy = auth((request: AuthenticatedRequest) => {
     return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
   }
 
-  const decision = getAuthGuardDecision(request.auth?.user?.email, getServerEnv());
+  const decision = process.env.NODE_ENV==="production"&&!isGoogleAuthConfigured(getServerEnv())?"forbidden":getAuthGuardDecision(request.auth?.user?.email, getServerEnv());
 
   if (decision === "allow") {
     const env=getServerEnv();
