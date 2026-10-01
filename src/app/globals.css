@@ -2071,3 +2071,35 @@ a {
     transform: none !important;
   }
 }
+
+/* Mobile learning controls, canonical v3 tokens. */
+.learning-interaction {
+  padding: var(--kos-spacing-8);
+  margin-block: var(--kos-spacing-8);
+  border: var(--kos-border-rule) solid var(--kos-color-ink);
+  border-radius: var(--kos-radius-learning-card);
+  background: var(--kos-color-panel);
+  box-shadow: var(--kos-shadow-structural);
+  max-width: 72ch;
+}
+.learning-interaction h3 { margin-top: 0; }
+.learning-interaction fieldset { border: 0; padding: 0; margin-block: var(--kos-spacing-8); }
+.learning-field { display: grid; gap: var(--kos-spacing-4); margin-block: var(--kos-spacing-8); flex: 1; min-width: 0; }
+.learning-field input, .learning-field select {
+  width: 100%; min-height: var(--kos-size-answer-min-height); font: inherit;
+  padding: var(--kos-spacing-6); border: var(--kos-border-rule) solid var(--kos-color-ink);
+  border-radius: var(--kos-radius-md); background: var(--kos-color-panel); color: var(--kos-color-ink);
+}
+.learning-controls { display: flex; flex-wrap: wrap; gap: var(--kos-spacing-4); align-items: center; }
+.learning-interaction button { min-height: var(--kos-touch-minimum); padding: var(--kos-spacing-6); cursor: pointer; }
+.learning-interaction button:disabled { cursor: default; opacity: var(--kos-state-disabled-opacity); }
+.learning-answer {
+  display: flex; align-items: center; gap: var(--kos-spacing-6); width: 100%; text-align: left;
+  min-height: var(--kos-size-answer-min-height); padding: var(--kos-spacing-8); margin-block: var(--kos-spacing-4);
+  border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-interactive); background: var(--kos-color-panel); color: var(--kos-color-ink);
+}
+.learning-answer[aria-pressed='true'], .learning-answer:has(input:checked) { background: var(--kos-color-signal); font-weight: var(--kos-typography-body-weights-bold); }
+.learning-order { padding-left: var(--kos-spacing-12); }
+.learning-order li { margin-block: var(--kos-spacing-8); }
+.learning-feedback, .learning-hint { margin-top: var(--kos-spacing-8); padding-block: var(--kos-spacing-6); }
+.learning-interaction output { display: block; font-weight: var(--kos-typography-body-weights-bold); overflow-wrap: anywhere; }

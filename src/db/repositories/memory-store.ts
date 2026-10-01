@@ -308,7 +308,7 @@ export class MemoryTrackImportRepository implements TrackImportRepository {
             type: activity.type,
             prompt: activity.prompt,
             orderIndex: activityIndex,
-            config: pack.schema === "caderno.track.v2" && "config" in activity ? { ...(activity.config as Record<string, unknown>), ...activity } : activity,
+            config: pack.schema === "caderno.track.v2" && "config" in activity ? { ...(activity.config as Record<string, unknown>), ...activity, questionVersion: "questionId" in activity ? pack.questions.find(question => question.id === activity.questionId)?.version : undefined } : activity,
             evaluatorVersion: `${pack.schema}:${pack.version}`
           });
           importedActivities += 1;

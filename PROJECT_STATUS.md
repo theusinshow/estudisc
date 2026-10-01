@@ -783,3 +783,5 @@ Step 23 is ready for local review on `http://127.0.0.1:3211/lessons/js-fundament
 ## NEXT ACTION
 
 Review Step 23 on `http://127.0.0.1:3211/lessons/js-fundamentals-001` while listener PID 40540 stays alive. The bundled JavaScript example Pack is already imported in that `memory://local` process; persistent database import, push, deploy and production migrations remain separate approval boundaries.
+
+Active IFSC update: IFSC-03 focused gate passed. IFSC-04 is in progress; interaction checks are currently formative, so the first student slice is not yet complete.

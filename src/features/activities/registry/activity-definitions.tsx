@@ -2,6 +2,10 @@ import { parseCodeActivityConfig } from "@/features/activities/application/code-
 import { parseStaticActivityConfig } from "@/features/activities/application/static-activity-config";
 import { CodeActivityPanel } from "@/features/activities/components/code-activity-panel";
 import { StaticActivityPanel } from "@/features/activities/components/static-activity-panel";
+import { parseEducationalActivityConfig } from "../application/educational-activity";
+import { questionReferenceSchema } from "../application/question-reference";
+import { EducationalActivityPanel } from "../components/educational-activity-panel";
+import { QuestionActivity } from "../components/question-activity";
 
 import type { ActivityConfigByType, ActivityDefinition, ExecutableActivityType, KnownActivityType } from "./types";
 
@@ -67,11 +71,22 @@ const multipleChoiceActivityDefinition: ActivityDefinition<"multiple-choice"> = 
   )
 };
 
+type EducationalType = "numeric" | "ordering" | "classification" | "matching" | "text-highlight" | "guided-steps";
+function educationalDefinition<Type extends EducationalType>(type: Type): ActivityDefinition<Type> {
+  return { type, label: "Prática guiada", parseConfig: input => parseEducationalActivityConfig({ ...(typeof input === "object" && input !== null ? input : {}), type }), render: ({ activity, config }) => <EducationalActivityPanel prompt={activity.prompt} config={config} /> };
+}
 const activityDefinitions = {
   code: codeActivityDefinition,
   debug: debugActivityDefinition,
   prediction: predictionActivityDefinition,
-  "multiple-choice": multipleChoiceActivityDefinition
+  "multiple-choice": multipleChoiceActivityDefinition,
+  numeric: educationalDefinition("numeric"),
+  ordering: educationalDefinition("ordering"),
+  classification: educationalDefinition("classification"),
+  matching: educationalDefinition("matching"),
+  "text-highlight": educationalDefinition("text-highlight"),
+  "guided-steps": educationalDefinition("guided-steps"),
+  question: { type: "question", label: "Questão", parseConfig: input => questionReferenceSchema.parse(input), render: ({ config }) => <QuestionActivity config={config} /> }
 } satisfies ActivityDefinitionMap;
 
 const executableActivityTypes = new Set<string>(["code", "debug"]);

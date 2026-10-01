@@ -6,7 +6,7 @@ User authorization: implement IFSC-00 through IFSC-15 autonomously in this copie
 
 User update: remote `https://github.com/theusinshow/vecta.git` is empty (successful `git ls-remote`, no refs). It is now `origin`; the read-only local source is `know-os-source`. Preserve inherited history. Favor low token usage and basic focused checks per coherent milestone; run full final gate once, expanding checks only for actual failures/risks.
 
-Current milestone: **IFSC-03 — educational interactions**. IFSC-00/01/02 passed focused gates; see docs/ifsc/IMPLEMENTATION-AUDIT.md.
+Current milestone: **IFSC-04 — percentage student slice**. IFSC-00/01/02/03 passed focused gates; see docs/ifsc/IMPLEMENTATION-AUDIT.md.
 
 - [x] Integrate ADRs 0017–0029; supersede only ADR 0008's single-owner constraint.
 - [x] Reconcile the core documentation and agent rules with the approved expansion.
@@ -22,7 +22,7 @@ IFSC-01 acceptance: relational requirements/sources/prerequisites/settings; refe
 
 IFSC-02: preserve v1 parser/hash behavior; add strict v2 shape and semantic references/answers/exposure checks; persist sources/curriculum/Question versions atomically in the existing importer; reject version conflicts; preserve attempts. Validate focused import compatibility/integration plus typecheck/lint.
 
-NEXT ACTION: extend the existing Block/Activity registries with numeric, ordering, classification, matching, text highlight, guided steps and numeric exploration. Use touch/keyboard controls. Then enable the supplied minimal v2 fixture and implement the MAT-07 student slice. Historical V1 plans below are retained as history, not the active roadmap.
+NEXT ACTION: connect Questions to durable immutable Attempts/evidence and StudySession, author the MAT-07 golden fixture, and validate Today → lesson → submission → result → review. Extend v1 learning policies with versioned v2 after the slice. Historical V1 plans below are retained as history, not the active roadmap.
 
 This file is the durable control surface for the current multi-step implementation task. Keep it current so a new Codex session can resume without asking the user to restate decisions.
 
@@ -1304,3 +1304,4 @@ Step 23 dogfood study flow UX pass is implemented and validated locally. Dev-mod
 ## NEXT ACTION
 
 Review Step 23 on the running no-OAuth local memory server at `http://127.0.0.1:3211/lessons/js-fundamentals-001` while the listener PID 40540 stays alive. The bundled JavaScript example Pack is imported there; import the desired complete Track Pack again if needed because `memory://local` content only survives in that exact process. Do not deploy, push or apply production Neon migrations without explicit confirmation.
+

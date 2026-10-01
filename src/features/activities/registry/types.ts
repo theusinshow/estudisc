@@ -4,6 +4,8 @@ import type { SourceDiffLine } from "@/features/attempts/source-diff";
 import type { CodeActivityConfig } from "@/features/activities/application/code-activity-config";
 import type { StaticActivityConfig } from "@/features/activities/application/static-activity-config";
 import type { JavaScriptExecutionResult, JavaScriptTestResult } from "@/runtime/javascript/api";
+import type { EducationalActivityConfig } from "../application/educational-activity";
+import type { QuestionReferenceConfig } from "../application/question-reference";
 
 export type ActivityRecord = Readonly<{
   stableId: string;
@@ -17,6 +19,13 @@ export type ActivityConfigByType = {
   debug: CodeActivityConfig;
   prediction: StaticActivityConfig;
   "multiple-choice": StaticActivityConfig;
+  numeric: EducationalActivityConfig;
+  ordering: EducationalActivityConfig;
+  classification: EducationalActivityConfig;
+  matching: EducationalActivityConfig;
+  "text-highlight": EducationalActivityConfig;
+  "guided-steps": EducationalActivityConfig;
+  question: QuestionReferenceConfig;
 };
 
 export type KnownActivityType = keyof ActivityConfigByType;

@@ -7,6 +7,10 @@ import {
   type TextBlockPayload,
   type TitledTextBlockPayload
 } from "@/features/lessons/blocks/block-schemas";
+import { NumericExplorer } from "./numeric-explorer";
+import { numericExplorerSchema } from "./numeric-explorer-schema";
+import { educationalActivitySchema } from "@/features/activities/application/educational-activity";
+import { EducationalActivityPanel } from "@/features/activities/components/educational-activity-panel";
 import type { ImportedLessonBlock, LessonBlockRendererProps } from "@/features/lessons/blocks/types";
 
 type BlockRenderer = (block: ImportedLessonBlock) => React.ReactNode;
@@ -19,8 +23,25 @@ const blockRenderers: Readonly<Record<string, BlockRenderer>> = {
   warning: renderWarningBlock,
   example: renderExampleBlock,
   prediction: renderPredictionBlock,
-  summary: renderSummaryBlock
+  summary: renderSummaryBlock,
+  "worked-example": renderExampleBlock,
+  "numeric-explorer": renderNumericExplorer,
+  "guided-steps": renderEducationalBlock,
+  "text-highlight": renderEducationalBlock,
+  classification: renderEducationalBlock,
+  ordering: renderEducationalBlock,
+  matching: renderEducationalBlock
 };
+
+function renderNumericExplorer(block: ImportedLessonBlock) {
+  const parsed = numericExplorerSchema.safeParse(block.payload);
+  return parsed.success ? <NumericExplorer {...parsed.data} /> : <InvalidBlock block={block} />;
+}
+function renderEducationalBlock(block: ImportedLessonBlock) {
+  const parsed = educationalActivitySchema.safeParse(block.payload);
+  const payload = block.payload as { title?: unknown };
+  return parsed.success ? <EducationalActivityPanel prompt={typeof payload.title === "string" ? payload.title : "Pratique este passo"} config={parsed.data} /> : <InvalidBlock block={block} />;
+}
 
 export function LessonBlockList({ blocks }: Readonly<{ blocks: ReadonlyArray<ImportedLessonBlock> }>) {
   return (

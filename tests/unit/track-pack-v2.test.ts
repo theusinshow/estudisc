@@ -4,10 +4,10 @@ import v1 from "../../packs/examples/javascript-fundamentals.track.json";
 import { validateTrackPack, trackPackV2Schema } from "@/features/import/api";
 import { canExposeQuestion, evaluateQuestion } from "@/features/questions/api";
 
-it("keeps v1 behavior, validates v2 references and rejects unregistered interactions", () => {
+it("keeps v1 behavior and validates v2 references and registered interactions", () => {
   expect(validateTrackPack(v1).ok).toBe(true);
   expect(trackPackV2Schema.safeParse(example).success).toBe(true);
-  expect(validateTrackPack(example).ok).toBe(false); // numeric-explorer/question are introduced in IFSC-03.
+  expect(validateTrackPack(example).ok).toBe(true);
   const candidate = structuredClone(example);
   candidate.track.modules[0].lessons[0].blocks = [];
   candidate.track.modules[0].lessons[0].activities = [];

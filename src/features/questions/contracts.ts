@@ -18,6 +18,8 @@ export const questionSchema = z.object({
     z.object({ kind: z.literal("matching"), pairs: z.record(id, id) }).strict()
   ]),
   explanation: z.string().min(1).optional(), sourceIds: uniqueIds.default([]),
+  items: z.array(z.object({ id, label: z.string().min(1) }).strict()).default([]),
+  destinations: z.array(z.object({ id, label: z.string().min(1) }).strict()).default([]),
   provenance: z.object({ type: z.enum(["official_exam", "generated", "human_created", "derived"]), examId: id.optional(), officialNumber: z.number().int().positive().optional(), generationRunId: id.optional(), derivedFromQuestionId: id.optional() }).strict(),
   exposurePolicy: z.object({ minimumDaysBetween: z.number().int().nonnegative().default(0), maximumTrainingExposures: z.number().int().nonnegative().optional(), reservedForAssessment: z.boolean().default(false), unlockAt: z.iso.datetime().optional() }).strict().default({ minimumDaysBetween: 0, reservedForAssessment: false }),
   status: z.enum(["draft", "auto_validated", "in_review", "approved", "published", "retired", "annulled"])
@@ -34,6 +36,13 @@ export const questionSchema = z.object({
   if (question.provenance.type !== "official_exam" && (question.provenance.examId || question.provenance.officialNumber)) fail("Non-official item cannot carry official identity", ["provenance"]);
   if (question.provenance.type === "derived" && !question.provenance.derivedFromQuestionId) fail("Derived item needs an original reference", ["provenance"]);
   if (question.status === "annulled" && question.provenance.type !== "official_exam") fail("Only official items may be annulled", ["status"]);
+  if (["ordering", "classification", "matching"].includes(question.type) && !question.items.length) fail("Interaction requires labeled items", ["items"]);
+  if (question.type === "classification" || question.type === "matching") {
+    if (!question.destinations.length) fail("Interaction requires labeled destinations", ["destinations"]);
+    const expected = question.answer.kind === "classification" ? question.answer.assignments : question.answer.kind === "matching" ? question.answer.pairs : {};
+    if (Object.keys(expected).length !== question.items.length || question.items.some(item => !question.destinations.some(destination => destination.id === expected[item.id]))) fail("Invalid assignments", ["answer"]);
+  }
+  if (question.answer.kind === "ordering" && (question.answer.orderedIds.length !== question.items.length || question.answer.orderedIds.some(id => !question.items.some(item => item.id === id)))) fail("Invalid item order", ["answer"]);
 });
 
 export type Question = z.infer<typeof questionSchema>;

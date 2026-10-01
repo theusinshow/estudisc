@@ -19,6 +19,13 @@ async function ActivityRenderer({ activity }: Readonly<{ activity: ActivityRecor
     case "debug":
     case "prediction":
     case "multiple-choice":
+    case "numeric":
+    case "ordering":
+    case "classification":
+    case "matching":
+    case "text-highlight":
+    case "guided-steps":
+    case "question":
       return renderKnownActivity(activity, activity.type);
     default:
       return (
@@ -33,7 +40,9 @@ async function ActivityRenderer({ activity }: Readonly<{ activity: ActivityRecor
 
 async function renderKnownActivity<Type extends KnownActivityType>(activity: ActivityRecord, type: Type) {
   const definition = getActivityDefinition(type);
-  const config = definition.parseConfig(activity.config);
+  let config;
+  try { config = definition.parseConfig(activity.config); }
+  catch { return <div className="activity-panel"><h3>{activity.prompt}</h3><p>Este exercício precisa de revisão de conteúdo antes de ser usado.</p></div>; }
   const feedback: ActivityAttemptFeedback | null = isExecutableActivityType(type)
     ? await getLatestActivityAttemptFeedback(activity.stableId)
     : null;

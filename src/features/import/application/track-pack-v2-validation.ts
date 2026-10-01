@@ -3,6 +3,9 @@ import type { TrackPackV2 } from "./track-pack-v2-schema";
 import { codeBlockSchema, conceptBlockSchema, textBlockSchema, titledTextBlockSchema } from "@/features/lessons/blocks/block-schemas";
 import { parseCodeActivityConfig } from "@/features/activities/application/code-activity-config";
 import { parseStaticActivityConfig } from "@/features/activities/application/static-activity-config";
+import { educationalActivitySchema } from "@/features/activities/application/educational-activity";
+import { numericExplorerSchema } from "@/features/lessons/blocks/numeric-explorer-schema";
+import { questionReferenceSchema } from "@/features/activities/application/question-reference";
 
 export function curriculumFromV2(pack: TrackPackV2) {
   return {
@@ -24,8 +27,9 @@ export function validateTrackPackV2Semantics(pack: TrackPackV2) {
   const ids = new Set<string>();
   const unique = (id: string, path: string) => { if (ids.has(id)) fail(path, `Duplicate stable ID ${id}`); ids.add(id); };
   // Extend these alongside the actual renderer/registry capabilities in IFSC-03.
-  const registeredBlocks = new Set(["text", "concept", "note", "warning", "code", "example", "prediction", "summary"]);
-  const registeredActivities = new Set(["prediction", "multiple-choice", "code", "debug"]);
+  const educationalTypes = new Set(["numeric", "ordering", "classification", "matching", "text-highlight", "guided-steps"]);
+  const registeredBlocks = new Set(["text", "concept", "note", "warning", "code", "example", "prediction", "summary", "worked-example", "numeric-explorer", ...educationalTypes]);
+  const registeredActivities = new Set(["prediction", "multiple-choice", "code", "debug", "question", ...educationalTypes]);
   unique(pack.track.id, "track.id");
   for (const question of pack.questions) {
     unique(question.id, "questions");
@@ -48,7 +52,7 @@ export function validateTrackPackV2Semantics(pack: TrackPackV2) {
         unique(block.id, "blocks");
         if (!registeredBlocks.has(block.type)) fail("blocks.type", `Interaction ${block.type} is not registered yet`);
         else {
-          const schema = block.type === "code" ? codeBlockSchema : block.type === "text" ? textBlockSchema : block.type === "concept" ? conceptBlockSchema : titledTextBlockSchema;
+          const schema = block.type === "numeric-explorer" ? numericExplorerSchema : educationalTypes.has(block.type) ? educationalActivitySchema : block.type === "code" ? codeBlockSchema : block.type === "text" ? textBlockSchema : block.type === "concept" ? conceptBlockSchema : titledTextBlockSchema;
           if (!schema.safeParse({ ...block.payload, ...block }).success) fail("blocks.payload", "Invalid registered Block payload");
         }
         if (block.conceptIds.some(id => !concepts.has(id))) fail("blocks", "Unknown Concept");
@@ -57,7 +61,12 @@ export function validateTrackPackV2Semantics(pack: TrackPackV2) {
         unique(activity.id, "activities");
         if (!registeredActivities.has(activity.type)) fail("activities.type", `Activity ${activity.type} is not registered yet`);
         else {
-          try { (activity.type === "code" || activity.type === "debug" ? parseCodeActivityConfig : parseStaticActivityConfig)({ ...activity.config, ...activity }); }
+          try {
+            const config = { ...activity.config, ...activity };
+            if (activity.type === "question") questionReferenceSchema.parse({ ...config, questionVersion: questions.get(activity.questionId!)?.version });
+            else if (educationalTypes.has(activity.type)) educationalActivitySchema.parse(config);
+            else (activity.type === "code" || activity.type === "debug" ? parseCodeActivityConfig : parseStaticActivityConfig)(config);
+          }
           catch { fail("activities.config", "Invalid registered Activity config"); }
         }
         if (activity.conceptIds.some(id => !lesson.concepts.some(concept => concept.id === id))) fail("activities.conceptIds", "Unknown lesson Concept");

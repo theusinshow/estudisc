@@ -50,3 +50,9 @@ Added strict Zod v2 parsing alongside unchanged v1 parsing, semantic curriculum/
 Basic gate: `pnpm exec vitest run tests/unit/track-pack-v2.test.ts tests/integration/track-pack-v2.test.ts tests/unit/track-import-service.test.ts tests/unit/track-pack-validation.test.ts` — 11 passed; typecheck/lint passed. The integration test applies migrations in disposable PGlite and verifies v1/v2 import, idempotence, version conflict rollback and old Question reconstruction. No production migration was applied.
 
 The supplied minimal example parses structurally but activation rejects its not-yet-registered numeric explorer/Question activity. This is intentional until IFSC-03; v2 fixtures with available capabilities import normally. Full student use, publication QA and final acceptance are pending.
+
+## IFSC-03 — educational interactions
+
+Extended the existing registries with numeric, ordering, matching, classification, text-highlight, guided steps and numeric exploration. Controls support keyboard/touch without dragging; invalid configuration has a safe fallback. Question references freeze the bank version on import. Guided checks are formative; official durable submissions are connected in IFSC-04.
+
+Validation: 12 focused tests passed (interaction components, evaluator, registry, renderer and v2 import); `pnpm typecheck` and `pnpm lint` passed. Touch sizes follow generated v3 tokens. Integrated student mobile flow remains the IFSC-04 gate.

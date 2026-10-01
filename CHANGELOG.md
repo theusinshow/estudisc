@@ -147,3 +147,9 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 - Added compatible strict Track Pack v2 and versioned shared Questions with deterministic scoring and protected exposure rules.
 - Migration 0011; focused compatibility/integration gate: 11 tests, typecheck/lint passed. New interactions remain blocked until IFSC-03.
 
+
+## 2026-10-01 — IFSC-03
+
+- Added accessible educational interactions and numeric exploration through existing registries.
+- Bound shared question activity references to immutable question versions; unavailable content fails safely.
+- Validated 12 focused tests, typecheck and lint.
