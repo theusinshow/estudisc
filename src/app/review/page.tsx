@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { revalidatePath } from "next/cache";
+import { Check } from "lucide-react";
 
 import { AppShell } from "@/components/layout/app-shell";
-import { FirstRunCallout } from "@/components/ui/first-run-callout";
 import { completeConceptReview, getDueReviews } from "@/features/review/api";
+import { masteryStateLabels, type MasteryState } from "@/features/mastery/mastery-policy";
 
 export const dynamic = "force-dynamic";
 
@@ -27,38 +28,33 @@ export default async function ReviewPage() {
       <section className="foundation-panel content-panel accent-panel accent-review" aria-labelledby="review-title">
         <p className="eyebrow">Revisão</p>
         <h1 id="review-title">Revisões de hoje</h1>
-        <p>
-          A fila usa apenas regras determinísticas. Cada item mostra por que entrou na revisão e atualiza a
-          próxima data ao ser concluído.
-        </p>
+        <p>Cada conceito volta quando está perto de ser esquecido. Revisar na hora certa fixa o conteúdo para a prova.</p>
 
         {dueReviews.length === 0 ? (
-          <FirstRunCallout
-            title="Nenhuma prática disponível ainda."
-            description="A fila de prática nasce depois que você ativa uma aula e registra evidência com SUBMIT SOLUTION."
-          />
+          <div className="empty-state">
+            <strong>Nada para revisar hoje</strong>
+            <p>As revisões aparecem depois que você responde questões nas sessões de estudo.</p>
+            <Link className="primary-action" href="/">Ir para Hoje</Link>
+          </div>
         ) : (
-          <ol className="record-list" aria-label="Revisões vencidas">
-            {dueReviews.map((review) => (
-              <li key={review.conceptStableId}>
-                <div>
-                  <Link href={`/concepts/${review.conceptStableId}`}>
-                    <strong>{review.conceptTitle}</strong>
-                  </Link>
+          <>
+            <p className="count-chip">{dueReviews.length === 1 ? "1 conceito" : `${dueReviews.length} conceitos`} para revisar</p>
+            <ol className="review-list" aria-label="Revisões vencidas">
+              {dueReviews.map((review) => (
+                <li key={review.conceptStableId}>
+                  <Link href={`/concepts/${review.conceptStableId}`}><strong>{review.conceptTitle}</strong></Link>
                   <span>{review.reason}</span>
                   <small>
-                    {review.currentMasteryState} · {review.reviewCount} revisão registrada
+                    {masteryStateLabels[review.currentMasteryState as MasteryState] ?? review.currentMasteryState} · {review.reviewCount === 1 ? "1 revisão" : `${review.reviewCount} revisões`}
                   </small>
                   <form action={completeReviewAction}>
                     <input type="hidden" name="conceptId" value={review.conceptStableId} />
-                    <button className="secondary-action" type="submit">
-                      CONCLUIR REVISÃO
-                    </button>
+                    <button className="secondary-action" type="submit"><Check aria-hidden="true" />Concluir revisão</button>
                   </form>
-                </div>
-              </li>
-            ))}
-          </ol>
+                </li>
+              ))}
+            </ol>
+          </>
         )}
       </section>
     </AppShell>

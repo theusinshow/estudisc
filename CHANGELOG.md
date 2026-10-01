@@ -28,6 +28,7 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 
 ### Added
 
+- Simulados, resultado e Revisão redesenhados (ADR 0030): cards por tipo, cronômetro fixo, marcação "revisar depois", placar e barras por área, correção com prévia do enunciado, estados vazios úteis.
 - ADR 0030 neo-brutalist UI refresh: tokens v4, self-hosted Archivo/JetBrains Mono, new shell and bottom navigation, rebuilt Today and study session, unified control vocabulary, colored lesson blocks and answer feedback, Portuguese student labels.
 
 - IFSC test-week lesson drafts (MAT-01–06, MAT-08–10) in compact seed format, expanded into Pack v2 Questions/activities and merged by the source-pack builder; all `draft` pending human review.

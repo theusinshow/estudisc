@@ -1,10 +1,26 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { z } from "zod";
 import { AppShell } from "@/components/layout/app-shell";
 import { assessmentRepository } from "@/features/assessments/api";
 import { AssessmentPanel } from "@/features/assessments/assessment-panel";
+import { assessmentKindLabel, subjectLabel } from "@/features/assessments/labels";
 import { getOwnerId } from "@/features/auth/owner";
 export const dynamic="force-dynamic";
 const resultSchema=z.object({correct:z.number(),scored:z.number(),total:z.number(),bySubject:z.record(z.string(),z.object({correct:z.number(),scored:z.number(),total:z.number(),annulled:z.number()})),items:z.array(z.object({questionId:z.string(),stem:z.string().optional(),correctAnswer:z.string().optional(),outcome:z.string(),explanation:z.string().optional(),conceptIds:z.array(z.string())}))});
-export default async function AssessmentPage({params}:{params:Promise<{assessmentId:string}>}){const {assessmentId}=await params;if(!z.uuid().safeParse(assessmentId).success)notFound();const view=await assessmentRepository().view(await getOwnerId(),assessmentId);if(!view)notFound();const result=resultSchema.safeParse(view.result);return <AppShell><article className="foundation-panel content-panel"><p className="eyebrow">{view.kind} · {view.mode}</p><h1>{view.status==="FINALIZED"?"Resultado da avaliação":"Sua avaliação"}</h1>{view.status==="ACTIVE"?<AssessmentPanel view={view} serverNow={view.serverNow}/>:result.success?<><p>{result.data.correct} de {result.data.scored} questões pontuáveis corretas.</p><p>Este resultado ajuda a escolher o próximo estudo. Não representa uma probabilidade de aprovação.</p><ul>{Object.entries(result.data.bySubject).map(([subject,score])=><li key={subject}>{subject}: {score.correct}/{score.scored}{score.annulled?` · ${score.annulled} anulada(s)`:""}</li>)}</ul><h2>Para revisar</h2>{result.data.items.map((item,index)=><details key={item.questionId}><summary>Questão {index+1} · {item.outcome==="passed"?"Correta":item.outcome==="annulled"?"Anulada":"Retomar"}</summary><p>{item.stem}</p>{item.correctAnswer&&<p>Resposta: {item.correctAnswer}</p>}<p>{item.explanation??"Confira a solução oficial ou o material aprovado."}</p><p>Conceitos: {item.conceptIds.join(", ")}</p></details>)}</>:<p>Resultado indisponível.</p>}</article></AppShell>;}
-
+const outcomeLabel=(outcome:string)=>outcome==="passed"?"Acertou":outcome==="annulled"?"Anulada":"Revisar";
+export default async function AssessmentPage({params}:{params:Promise<{assessmentId:string}>}){
+  const {assessmentId}=await params;if(!z.uuid().safeParse(assessmentId).success)notFound();
+  const view=await assessmentRepository().view(await getOwnerId(),assessmentId);if(!view)notFound();
+  const result=resultSchema.safeParse(view.result);
+  return <AppShell><article className="foundation-panel content-panel assessment-page">
+    <p className="eyebrow">{assessmentKindLabel[view.kind]??view.kind}{view.mode==="EXAM"?" · modo prova":""}</p>
+    <h1>{view.status==="FINALIZED"?"Seu resultado":"Simulado"}</h1>
+    {view.status==="ACTIVE"?<AssessmentPanel view={view} serverNow={view.serverNow}/>:result.success?<>
+      <section className="score-card" aria-label="Pontuação"><strong>{result.data.correct}<span>/{result.data.scored}</span></strong><p>questões pontuáveis corretas. Use isto para escolher o que estudar; não é uma previsão de aprovação.</p></section>
+      <section className="module-section" aria-labelledby="by-subject"><h2 id="by-subject">Por área</h2><ul className="subject-bars">{Object.entries(result.data.bySubject).map(([subject,score])=><li key={subject} data-subject={subject}><span>{subjectLabel[subject]??subject}</span><span className="bar" aria-hidden="true"><span style={{width:`${score.scored?Math.round(score.correct/score.scored*100):0}%`}}/></span><strong>{score.correct}/{score.scored}</strong>{score.annulled?<small>{score.annulled} anulada(s)</small>:null}</li>)}</ul></section>
+      <section className="module-section" aria-labelledby="review-items"><h2 id="review-items">Correção</h2><div className="review-items">{result.data.items.map((item,index)=><details key={item.questionId} data-outcome={item.outcome}><summary><span className="question-number">{index+1}</span><span className="summary-text"><strong>{outcomeLabel(item.outcome)}</strong>{item.stem&&<small>{item.stem}</small>}</span></summary><p>{item.stem}</p>{item.correctAnswer&&<p><strong>Resposta:</strong> {item.correctAnswer}</p>}<p>{item.explanation??"Confira a solução oficial ou o material aprovado."}</p></details>)}</div></section>
+      <Link className="primary-action" href="/">Voltar para Hoje</Link>
+    </>:<p>Resultado indisponível.</p>}
+  </article></AppShell>;
+}
