@@ -20,11 +20,12 @@ import {
 const primaryNavigationItems = [
   { label: "Hoje", href: "/", icon: Database, match: ["/"] },
   { label: "Aprender", href: "/tracks", icon: BookOpen, match: ["/tracks", "/lessons", "/concepts"] },
-  { label: "Praticar", href: "/review", icon: RotateCcw, match: ["/review", "/mistakes"] },
   { label: "Progresso", href: "/progress", icon: ChartNoAxesColumnIncreasing, match: ["/progress"] }
 ];
 
 const secondaryNavigationItems = [
+  { label: "Revisar", href: "/review", icon: RotateCcw, match: ["/review"] },
+  { label: "Avaliações", href: "/assessments", icon: BookOpen, match: ["/assessments"] },
   { label: "Importar", href: "/import", icon: Upload, match: ["/import"] },
   { label: "Histórico", href: "/history", icon: History, match: ["/history"] },
   { label: "Erros", href: "/mistakes", icon: TriangleAlert, match: ["/mistakes"] },

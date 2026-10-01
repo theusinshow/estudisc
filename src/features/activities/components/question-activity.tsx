@@ -11,5 +11,5 @@ export async function QuestionActivity({ config,activityStableId,sessionId }: { 
     const repository=getDatabaseUrl()==="memory://local"?new MemoryQuestionStudyRepository():new QuestionStudyRepository();
     view=await repository.view(await getOwnerId(),activityStableId,config.questionId,config.questionVersion,sessionId);
   } catch(error) {if(!(error instanceof QuestionUnavailableError))throw error;}
-  return view?<QuestionPanel question={view.question} hints={view.hints} activityStableId={activityStableId} sessionId={sessionId} lastAnswer={view.lastAnswer} />:<p>Questão indisponível para estudo. Escolha outro exercício publicado.</p>;
+  return view?<QuestionPanel question={view.question} hintCount={view.hintCount} activityStableId={activityStableId} sessionId={sessionId} lastAnswer={view.lastAnswer} />:<p>Questão indisponível para estudo. Escolha outro exercício publicado.</p>;
 }

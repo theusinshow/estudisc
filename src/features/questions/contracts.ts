@@ -18,6 +18,7 @@ export const questionSchema = z.object({
     z.object({ kind: z.literal("matching"), pairs: z.record(id, id) }).strict()
   ]),
   explanation: z.string().min(1).optional(), sourceIds: uniqueIds.default([]),
+  assets:z.array(z.object({id:z.uuid(),sourceId:id,page:z.number().int().positive(),alt:z.string().min(1),width:z.number().int().positive(),height:z.number().int().positive()}).strict()).default([]),
   items: z.array(z.object({ id, label: z.string().min(1) }).strict()).default([]),
   destinations: z.array(z.object({ id, label: z.string().min(1) }).strict()).default([]),
   provenance: z.object({ type: z.enum(["official_exam", "generated", "human_created", "derived"]), examId: id.optional(), officialNumber: z.number().int().positive().optional(), generationRunId: id.optional(), derivedFromQuestionId: id.optional() }).strict(),

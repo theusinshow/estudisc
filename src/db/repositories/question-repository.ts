@@ -23,7 +23,7 @@ export class DrizzleQuestionRepository {
         await tx.insert(questions).values({ stableId: question.id }).onConflictDoNothing();
         const [identity] = await tx.select().from(questions).where(eq(questions.stableId, question.id));
         const contentHash = hashCanonicalJson(question);
-        const [created] = await tx.insert(questionVersions).values({ questionId: identity.id, version: question.version, subjectCode: question.subjectCode, type: question.type, difficulty: question.difficulty, status: question.status, contentHash, content: question }).onConflictDoNothing().returning();
+        const [created] = await tx.insert(questionVersions).values({ questionId: identity.id, version: question.version, subjectCode: question.subjectCode, type: question.type, difficulty: question.difficulty, status: question.status === "published" ? "draft" : question.status, contentHash, content: question }).onConflictDoNothing().returning();
         const [version] = created ? [created] : await tx.select().from(questionVersions).where(and(eq(questionVersions.questionId, identity.id), eq(questionVersions.version, question.version)));
         if (!version || version.contentHash !== contentHash) throw new QuestionVersionConflictError();
         if (!created) continue;

@@ -34,6 +34,7 @@ export type LessonDetail = Readonly<{
   title: string;
   trackStableId: string;
   trackTitle: string;
+  metadata?:Record<string,unknown>;
   concepts: ReadonlyArray<{
     stableId: string;
     title: string;
@@ -217,6 +218,7 @@ export class CatalogRepository {
         id: lessons.id,
         stableId: lessons.stableId,
         title: lessons.title,
+        metadata: lessons.metadata,
         trackStableId: tracks.stableId,
         trackTitle: tracks.title
       })
@@ -266,6 +268,7 @@ export class CatalogRepository {
     return {
       stableId: lesson.stableId,
       title: lesson.title,
+      metadata:lesson.metadata as Record<string,unknown>,
       trackStableId: lesson.trackStableId,
       trackTitle: lesson.trackTitle,
       concepts: conceptRows,

@@ -69,7 +69,7 @@ export const lessons = pgTable(
     contentVersion: integer("content_version").notNull(),
     orderIndex: integer("order_index").notNull()
   },
-  (table) => [uniqueIndex("lessons_stable_version_idx").on(table.stableId, table.contentVersion)]
+  (table) => [uniqueIndex("lessons_module_stable_version_idx").on(table.moduleId, table.stableId, table.contentVersion)]
 );
 
 export const concepts = pgTable(

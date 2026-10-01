@@ -25,6 +25,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
       <article className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="lesson-title">
         <p className="eyebrow">{lesson.trackTitle}</p>
         <h1 id="lesson-title">{lesson.title}</h1>
+        {Boolean(lesson.metadata?.kind)&&(!lesson.metadata?.qaReleaseId||lesson.metadata?.status!=="published")&&<p className="learning-hint">Prévia administrativa · conteúdo aguardando QA independente.</p>}
         <ProgressSummary progress={progress} />
         <LessonSessionCallout progress={progress} />
 

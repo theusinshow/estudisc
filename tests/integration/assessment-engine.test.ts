@@ -5,10 +5,12 @@ import { DrizzleTrackImportRepository } from "@/db/repositories/track-import-rep
 import { AssessmentRepository } from "@/db/repositories/assessment-repository";
 import { attempts,conceptEvidence,assessmentResponses } from "@/db/schema";
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
+import { simulatePublication } from "./ifsc-publication-fixture";
 it("freezes and resumes, permits response changes, then finalizes exactly once",async()=>{
   const database=await createMigratedPgliteTestDatabase();try{
     const fixture=JSON.parse(JSON.stringify(source));fixture.questions.forEach((question:{status:string})=>question.status="published");
     expect((await importTrackPack(fixture,new DrizzleTrackImportRepository(database.db))).status).toBe("imported");
+    await simulatePublication(database.db);
     const repo=new AssessmentRepository(database.db);const template=await repo.importTemplate({id:"mini-test",version:1,title:"Avaliação de teste",kind:"MINI_SIMULATION",trackId:"ifsc-2027",durationMinutes:5,status:"published",items:[{id:"Q-MAT-GOLDEN-1",version:1},{id:"Q-MAT-GOLDEN-3",version:1}]});
     const key=crypto.randomUUID(),now=new Date();const started=await repo.start("student-a",template.id,key,now);expect(await repo.start("student-a",template.id,key,now)).toEqual(started);
     expect(await repo.view("student-b",started.id)).toBeNull();const view=(await repo.view("student-a",started.id))!;expect(view.result).toBeNull();expect(view.questions[0].question).not.toHaveProperty("answer");

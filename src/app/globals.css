@@ -2103,3 +2103,6 @@ a {
 .learning-order li { margin-block: var(--kos-spacing-8); }
 .learning-feedback, .learning-hint { margin-top: var(--kos-spacing-8); padding-block: var(--kos-spacing-6); }
 .learning-interaction output { display: block; font-weight: var(--kos-typography-body-weights-bold); overflow-wrap: anywhere; }
+.question-source-figure { margin: var(--kos-spacing-4) 0; }
+.question-source-figure img { max-width: 100%; height: auto; display: block; }
+.question-source-figure figcaption { font-size: 0.875rem; margin-top: var(--kos-spacing-2); }

@@ -191,6 +191,7 @@ type MemoryPackImport = ExistingPackImport & {
 };
 
 type MemoryStore = {
+  questionAssets:Array<{id:string;questionId:string;version:number;bytes:Buffer;contentHash:string;mimeType:string}>;
   assessmentTemplates:Array<{id:string;definition:AssessmentTemplate;contentHash:string}>;
   assessmentInstances:Array<{id:string;ownerId:string;templateId:string;startKey:string;status:string;snapshot:AssessmentSnapshot;startedAt:Date;deadlineAt:Date;finalizedAt:Date|null;result:unknown}>;
   assessmentResponses:Array<{instanceId:string;versionId:string;response:unknown;flagged:boolean}>;
@@ -224,6 +225,7 @@ const globalStore = globalThis as typeof globalThis & {
 
 export function getMemoryStore() {
   globalStore.__knowOsMemoryStore ??= {
+    questionAssets:[],
     assessmentTemplates:[],assessmentInstances:[],assessmentResponses:[],
     questionAssistance:[],questionExposures:[],studySessions:[],
     packImports: [],

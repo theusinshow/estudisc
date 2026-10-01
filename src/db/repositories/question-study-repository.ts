@@ -48,7 +48,7 @@ export class QuestionStudyRepository {
         await tx.insert(questionExposures).values({ownerId,questionId:identity.questionId,firstSeenAt:new Date(),lastSeenAt:new Date(),timesSeen:1,lastContext:"learn"}).onConflictDoUpdate({target:[questionExposures.ownerId,questionExposures.questionId],set:{lastSeenAt:new Date(),timesSeen:sql`${questionExposures.timesSeen}+1`,lastContext:"learn"}});
       }
       const [latest]=await tx.select().from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.questionVersionId,ctx.versionId),sql`${attempts.context}->>'contextKey'=${ctx.contextKey}`)).orderBy(desc(attempts.createdAt)).limit(1);
-      return {question:studentQuestion(ctx.question),hints:ctx.config.hints,lastAnswer:latest?.response?(latest.response as {answer:unknown}).answer:undefined};
+      return {question:studentQuestion(ctx.question),hintCount:ctx.config.hints.length,lastAnswer:latest?.response?(latest.response as {answer:unknown}).answer:undefined};
     });
   }
   async interact(ownerId:string,activity:string,input:{questionId:string;questionVersion:number;action:"submit"|"hint"|"solution";submissionKey:string;response:unknown;sessionId?:string}) {
@@ -63,7 +63,7 @@ export class QuestionStudyRepository {
         const hintLevel=input.action==="hint"?Math.min(assistance.hintLevel+1,ctx.config.hints.length):assistance.hintLevel;
         await tx.update(questionAssistance).set({hintLevel,solutionRevealed:input.action==="solution"?1:assistance.solutionRevealed,updatedAt:new Date()}).where(where);
         await tx.insert(studyEvents).values({ownerId,type:"question_assistance",entityType:"question",entityId:ctx.question.id,payload:{version:ctx.question.version,action:input.action,hintLevel,contextKey:ctx.contextKey}});
-        return input.action==="hint"?{hintLevel}:{correct:false,explanation:ctx.question.explanation??"Solução ainda não disponível."};
+        return input.action==="hint"?{hintLevel,hint:ctx.config.hints[hintLevel-1]}:{correct:false,explanation:ctx.question.explanation??"Solução ainda não disponível."};
       }
       const [previous]=await tx.select().from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.submissionKey,input.submissionKey)));
       if(previous){if(previous.activityId!==ctx.activity.id||hashCanonicalJson(previous.response)!==hashCanonicalJson({answer:input.response}))throw new SubmissionConflictError();return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:ctx.question.explanation};}

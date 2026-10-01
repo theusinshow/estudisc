@@ -35,6 +35,7 @@ export function validateTrackPackV2Semantics(pack: TrackPackV2) {
   for (const question of pack.questions) {
     unique(question.id, "questions");
     if (question.conceptIds.some(id => !concepts.has(id)) || question.sourceIds.some(id => !sources.has(id))) fail("questions", "Unknown Concept/source");
+    if(question.assets.some(asset=>!question.sourceIds.includes(asset.sourceId)))fail("questions.assets","Asset source is not part of the Question provenance");
     if (question.provenance.type === "official_exam") {
       const officialSources = question.sourceIds.map(id => sources.get(id)).filter(source => source?.type === "official_exam");
       if (!officialSources.length) fail("questions.provenance", "Official item needs its exam source");

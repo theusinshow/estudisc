@@ -5,11 +5,13 @@ import { getDatabaseUrl } from "@/db/connection";
 import { MemoryTrackImportRepository } from "@/db/repositories/memory-store";
 import { DrizzleTrackImportRepository } from "@/db/repositories/track-import-repository";
 import { importTrackPack, readJsonRequestWithLimit } from "@/features/import/api";
+import { requireAdmin,AccessDeniedError } from "@/features/auth/owner";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
+  let profile;try{profile=await requireAdmin();}catch(error){if(error instanceof AccessDeniedError)return NextResponse.json({code:"admin_required"},{status:403});throw error;}
   const parsedRequest = await readJsonRequestWithLimit(request);
 
   if (!parsedRequest.ok) {
@@ -27,7 +29,7 @@ export async function POST(request: Request) {
   try {
     await ensureDatabaseReady();
     const repository =
-      getDatabaseUrl() === "memory://local" ? new MemoryTrackImportRepository() : new DrizzleTrackImportRepository();
+      getDatabaseUrl() === "memory://local" ? new MemoryTrackImportRepository() : new DrizzleTrackImportRepository(undefined,profile.ownerId);
     const result = await importTrackPack(parsedRequest.body, repository);
 
     if (result.status === "invalid") {

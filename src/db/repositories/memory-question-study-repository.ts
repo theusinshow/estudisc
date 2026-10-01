@@ -30,13 +30,13 @@ export class MemoryQuestionStudyRepository {
       if(exposure){exposure.timesSeen++;exposure.lastSeenAt=new Date();}else this.store.questionExposures.push({ownerId,questionId,lastSeenAt:new Date(),timesSeen:1});
     }
     const latest=[...this.store.attempts].reverse().find(item=>item.ownerId===ownerId&&item.activityStableId===activityId&&item.context?.contextKey===ctx.contextKey);
-    return {question:studentQuestion(ctx.question),hints:ctx.config.hints,lastAnswer:latest?.response};
+    return {question:studentQuestion(ctx.question),hintCount:ctx.config.hints.length,lastAnswer:latest?.response};
   }
   async interact(...[ownerId,activityId,input]:Parameters<QuestionStudyRepository["interact"]>){
     const ctx=this.context(ownerId,activityId,input.questionId,input.questionVersion,input.sessionId);
     const assistance=this.store.questionAssistance.find(item=>item.ownerId===ownerId&&item.questionId===input.questionId&&item.version===input.questionVersion&&item.contextKey===ctx.contextKey);
     if(!assistance)throw new QuestionUnavailableError();
-    if(input.action==="hint"){assistance.hintLevel=Math.min(ctx.config.hints.length,assistance.hintLevel+1);return {hintLevel:assistance.hintLevel};}
+    if(input.action==="hint"){assistance.hintLevel=Math.min(ctx.config.hints.length,assistance.hintLevel+1);return {hintLevel:assistance.hintLevel,hint:ctx.config.hints[assistance.hintLevel-1]};}
     if(input.action==="solution"){assistance.solutionRevealed=true;return {correct:false,explanation:ctx.question.explanation};}
     const previous=this.store.attempts.find(attempt=>attempt.ownerId===ownerId&&attempt.submissionKey===input.submissionKey);
     if(previous){if(previous.activityStableId!==activityId||JSON.stringify(previous.response)!==JSON.stringify(input.response))throw new SubmissionConflictError();return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:ctx.question.explanation};}

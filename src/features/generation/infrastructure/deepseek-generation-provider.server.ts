@@ -31,6 +31,12 @@ export class DeepSeekGenerationProvider implements GenerationProvider {
     private readonly timeoutMs = 45_000
   ) {}
 
+  // Shared server gateway for bounded contextual assistance; UI never calls a provider.
+  async assist(prompt:string):Promise<GenerationProviderResult>{
+    if(!this.config.apiKey)return {ok:false,error:{code:"authentication",message:"Tutor is not configured",retryable:false}};
+    return this.callDeepSeek({compiledPrompt:{prompt},model:this.config.defaultModel},768);
+  }
+
   async generate(request: GenerationProviderRequest): Promise<GenerationProviderResult> {
     if (!this.config.apiKey) {
       return {
@@ -72,7 +78,7 @@ export class DeepSeekGenerationProvider implements GenerationProvider {
     };
   }
 
-  private async callDeepSeek(request: GenerationProviderRequest): Promise<GenerationProviderResult> {
+  private async callDeepSeek(request: Pick<GenerationProviderRequest,"model"> & {compiledPrompt:{prompt:string}},maxTokens?:number): Promise<GenerationProviderResult> {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), this.timeoutMs);
 
@@ -88,6 +94,7 @@ export class DeepSeekGenerationProvider implements GenerationProvider {
           model: request.model,
           response_format: { type: "json_object" },
           temperature: 0.2,
+          ...(maxTokens?{max_tokens:maxTokens}:{}),
           messages: [
             {
               role: "system",
