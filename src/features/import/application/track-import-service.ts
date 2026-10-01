@@ -1,4 +1,4 @@
-import type { TrackPack } from "@/features/import/application/track-pack-schema";
+import type { TrackPack, TrackPackLesson, TrackPackActivity } from "@/features/import/application/track-pack-schema";
 import { validateTrackPack, type TrackPackIssue } from "@/features/import/application/track-pack-validation";
 
 export type ExistingPackImport = Readonly<{
@@ -161,8 +161,8 @@ export async function importTrackPack(input: unknown, repository: TrackImportRep
 }
 
 export function summarizeTrackPack(pack: TrackPack): TrackPackPreviewSummary {
-  const lessons = pack.track.modules.flatMap((module) => module.lessons);
-  const activities = lessons.flatMap((lesson) => lesson.activities);
+  const lessons = pack.track.modules.flatMap<TrackPackLesson>((moduleDefinition) => moduleDefinition.lessons);
+  const activities = lessons.flatMap<TrackPackActivity>((lesson) => lesson.activities);
   const conceptIds = new Set(lessons.flatMap((lesson) => lesson.concepts.map((concept) => concept.id)));
 
   return {

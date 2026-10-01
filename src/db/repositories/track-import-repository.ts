@@ -19,6 +19,9 @@ import type {
   TrackImportRepository
 } from "@/features/import/application/track-import-service";
 import type { TrackPack } from "@/features/import/application/track-pack-schema";
+import { curriculumFromV2 } from "@/features/import/application/track-pack-v2-validation";
+import { DrizzleCurriculumRepository } from "./curriculum-repository";
+import { DrizzleQuestionRepository } from "./question-repository";
 
 type TrackImportDatabase = PgDatabase<PgQueryResultHKT, typeof schema>;
 
@@ -82,6 +85,7 @@ export class DrizzleTrackImportRepository implements TrackImportRepository {
             stableId: module.id,
             trackId: track.id,
             title: module.title,
+            subjectCode: "subjectCode" in module ? module.subjectCode : null,
             orderIndex: moduleIndex
           })
           .returning({ id: modules.id });
@@ -97,6 +101,7 @@ export class DrizzleTrackImportRepository implements TrackImportRepository {
               stableId: lesson.id,
               moduleId: moduleRow.id,
               title: lesson.title,
+              metadata: pack.schema === "caderno.track.v2" && "kind" in lesson ? { kind: lesson.kind, estimatedMinutes: lesson.estimatedMinutes, status: lesson.status, objectives: lesson.objectives, sourceIds: lesson.sourceIds, prerequisiteConceptIds: lesson.prerequisiteConceptIds, exitTicketQuestionIds: lesson.exitTicketQuestionIds } : {},
               contentVersion: lesson.version,
               orderIndex: lessonIndex
             })
@@ -149,7 +154,7 @@ export class DrizzleTrackImportRepository implements TrackImportRepository {
               lessonId: lessonRow.id,
               type: block.type,
               orderIndex: blockIndex,
-              payload: block
+              payload: pack.schema === "caderno.track.v2" && "payload" in block ? { ...(block.payload as Record<string, unknown>), ...block } : block
             });
           }
 
@@ -160,12 +165,17 @@ export class DrizzleTrackImportRepository implements TrackImportRepository {
               type: activity.type,
               prompt: activity.prompt,
               orderIndex: activityIndex,
-              config: activity,
+              config: pack.schema === "caderno.track.v2" && "config" in activity ? { ...(activity.config as Record<string, unknown>), ...activity } : activity,
               evaluatorVersion: `${pack.schema}:${pack.version}`
             });
             importedActivities += 1;
           }
         }
+      }
+
+      if (pack.schema === "caderno.track.v2") {
+        await new DrizzleCurriculumRepository(tx).applyFoundation(track.id, curriculumFromV2(pack));
+        await new DrizzleQuestionRepository(tx).importVersions(track.id, pack.questions);
       }
 
       return {

@@ -1,0 +1,157 @@
+{
+  "schema": "caderno.track.v2",
+  "packId": "know-os.ifsc-2027.example",
+  "version": 1,
+  "language": "pt-BR",
+  "sources": [
+    {
+      "id": "src-ifsc-edital-2027-1",
+      "type": "official_curriculum",
+      "title": "Edital de Ingresso Nº 05/DEING/2027/1",
+      "locator": {
+        "section": "Anexo V",
+        "pages": "41-43"
+      }
+    }
+  ],
+  "curriculumRequirements": [
+    {
+      "id": "IFSC27.MAT.NUM.PERCENTAGE",
+      "subjectCode": "MAT",
+      "label": "Porcentagem",
+      "sourceId": "src-ifsc-edital-2027-1",
+      "sourceLocator": {
+        "section": "Anexo V / Matemática / item 1"
+      },
+      "mappedConceptIds": [
+        "MAT.PCT.CONCEPT",
+        "MAT.PCT.CALCULATE",
+        "MAT.PCT.INTERPRET"
+      ],
+      "status": "mapped"
+    }
+  ],
+  "conceptPrerequisites": [
+    {
+      "conceptId": "MAT.PCT.CALCULATE",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-MAT-PCT-001",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PCT.CALCULATE",
+      "conceptIds": [
+        "MAT.PCT.CALCULATE"
+      ],
+      "type": "numeric",
+      "difficulty": "direct",
+      "cognitiveOperations": [
+        "calculate"
+      ],
+      "stem": "Calcule 20% de 150.",
+      "answer": {
+        "kind": "numeric",
+        "value": 30,
+        "tolerance": 0
+      },
+      "explanation": "20% = 0,20. Então 0,20 × 150 = 30.",
+      "sourceIds": [
+        "src-ifsc-edital-2027-1"
+      ],
+      "provenance": {
+        "type": "human_created"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 3,
+        "reservedForAssessment": false
+      },
+      "status": "approved"
+    }
+  ],
+  "track": {
+    "id": "ifsc-2027",
+    "title": "IFSC 2027",
+    "description": "Example partial Track Pack v2 for the IFSC expansion.",
+    "metadata": {
+      "examDate": "2026-11-29"
+    },
+    "modules": [
+      {
+        "id": "mat",
+        "title": "Matemática",
+        "subjectCode": "MAT",
+        "lessons": [
+          {
+            "id": "MAT-07",
+            "version": 1,
+            "title": "Porcentagem",
+            "kind": "core",
+            "estimatedMinutes": 35,
+            "status": "draft",
+            "concepts": [
+              {
+                "id": "MAT.PCT.CONCEPT",
+                "title": "Entender porcentagem como parte de 100",
+                "importance": "high"
+              },
+              {
+                "id": "MAT.PCT.CALCULATE",
+                "title": "Calcular porcentagem de uma quantidade",
+                "importance": "high"
+              },
+              {
+                "id": "MAT.PCT.INTERPRET",
+                "title": "Interpretar problemas percentuais",
+                "importance": "high"
+              }
+            ],
+            "prerequisiteConceptIds": [],
+            "objectives": [
+              "Representar porcentagem como fração/decimal.",
+              "Calcular porcentagem de uma quantidade.",
+              "Distinguir valor percentual de resultado final em contexto."
+            ],
+            "sourceIds": [
+              "src-ifsc-edital-2027-1"
+            ],
+            "blocks": [
+              {
+                "id": "mat07-b1",
+                "type": "numeric-explorer",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "MAT.PCT.CONCEPT",
+                  "MAT.PCT.CALCULATE"
+                ],
+                "payload": {
+                  "initialValue": 400,
+                  "initialPercentage": 25
+                }
+              }
+            ],
+            "activities": [
+              {
+                "id": "mat07-a1",
+                "type": "question",
+                "conceptIds": [
+                  "MAT.PCT.CALCULATE"
+                ],
+                "prompt": "Resolva sem dica se possível.",
+                "questionId": "Q-MAT-PCT-001",
+                "config": {},
+                "evaluatorVersion": "question.numeric.v1"
+              }
+            ],
+            "exitTicketQuestionIds": [
+              "Q-MAT-PCT-001"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

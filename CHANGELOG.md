@@ -141,3 +141,9 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 - Added curriculum/source/prerequisite/settings schema and migration 0010; atomic idempotent foundation seed and derived partial coverage.
 - Basic gate: 3 focused tests, typecheck and lint passed. No production migration.
 
+
+## 2026-10-01 — IFSC-02
+
+- Added compatible strict Track Pack v2 and versioned shared Questions with deterministic scoring and protected exposure rules.
+- Migration 0011; focused compatibility/integration gate: 11 tests, typecheck/lint passed. New interactions remain blocked until IFSC-03.
+

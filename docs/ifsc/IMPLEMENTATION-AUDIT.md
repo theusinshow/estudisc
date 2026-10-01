@@ -28,7 +28,8 @@ The authoritative `EDITAL 05_2027_1_TECNICO_INTEGRADO_PROVA ok (1).pdf` was foun
 
 - IFSC-00: complete; final lint passed without warnings.
 - IFSC-01: curriculum foundation implemented; basic gate recorded below.
-- IFSC-02–15: pending.
+- IFSC-02: compatible Pack v2 and shared Question Bank implemented; basic gate recorded below.
+- IFSC-03–15: pending.
 
 No final acceptance audit has passed. The system is not yet a complete IFSC student product.
 
@@ -41,3 +42,11 @@ Migration: `0010_real_blur.sql` and matching Drizzle snapshot/journal. The gener
 Basic validation under the user's updated testing preference: `pnpm exec vitest run tests/unit/curriculum.test.ts tests/integration/curriculum-repository.test.ts` — 3 passed. Covers repeat seed, rollback, existing-graph cycles, subject/reference checks and incomplete coverage. `pnpm typecheck` passed; lint rerun after correcting the fixture variable name. No redundant full build/E2E for this non-UI increment.
 
 Target remote changed to `https://github.com/theusinshow/vecta.git` per user instruction. Successful `git ls-remote` returned no refs; `origin` now points there, inherited local history is preserved, and no push occurred.
+
+## IFSC-02
+
+Added strict Zod v2 parsing alongside unchanged v1 parsing, semantic curriculum/question/source/provenance/exposure checks, runtime capability rejection, atomic importer extensions and versioned Question persistence. New migration `0011_ordinary_lockjaw.sql` adds five Question tables and Lesson metadata. Owner IDs follow the actual repository text-ID convention. Payloads cannot override validated type/identity fields. Supplied JSON Schema remains the initial shape reference; runtime contracts currently narrow rich content to safe plain text and require typed answer definitions.
+
+Basic gate: `pnpm exec vitest run tests/unit/track-pack-v2.test.ts tests/integration/track-pack-v2.test.ts tests/unit/track-import-service.test.ts tests/unit/track-pack-validation.test.ts` — 11 passed; typecheck/lint passed. The integration test applies migrations in disposable PGlite and verifies v1/v2 import, idempotence, version conflict rollback and old Question reconstruction. No production migration was applied.
+
+The supplied minimal example parses structurally but activation rejects its not-yet-registered numeric explorer/Question activity. This is intentional until IFSC-03; v2 fixtures with available capabilities import normally. Full student use, publication QA and final acceptance are pending.

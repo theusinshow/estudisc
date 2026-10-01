@@ -6,7 +6,7 @@ User authorization: implement IFSC-00 through IFSC-15 autonomously in this copie
 
 User update: remote `https://github.com/theusinshow/vecta.git` is empty (successful `git ls-remote`, no refs). It is now `origin`; the read-only local source is `know-os-source`. Preserve inherited history. Favor low token usage and basic focused checks per coherent milestone; run full final gate once, expanding checks only for actual failures/risks.
 
-Current milestone: **IFSC-02 — compatible Track Pack v2 / shared versioned Questions**. IFSC-00/01 passed their focused gates; see docs/ifsc/IMPLEMENTATION-AUDIT.md.
+Current milestone: **IFSC-03 — educational interactions**. IFSC-00/01/02 passed focused gates; see docs/ifsc/IMPLEMENTATION-AUDIT.md.
 
 - [x] Integrate ADRs 0017–0029; supersede only ADR 0008's single-owner constraint.
 - [x] Reconcile the core documentation and agent rules with the approved expansion.
@@ -22,7 +22,7 @@ IFSC-01 acceptance: relational requirements/sources/prerequisites/settings; refe
 
 IFSC-02: preserve v1 parser/hash behavior; add strict v2 shape and semantic references/answers/exposure checks; persist sources/curriculum/Question versions atomically in the existing importer; reject version conflicts; preserve attempts. Validate focused import compatibility/integration plus typecheck/lint.
 
-NEXT ACTION: implement v2 contracts and shared Question Bank, then continue to educational registries. Historical V1 plans below are retained as history, not the active roadmap.
+NEXT ACTION: extend the existing Block/Activity registries with numeric, ordering, classification, matching, text highlight, guided steps and numeric exploration. Use touch/keyboard controls. Then enable the supplied minimal v2 fixture and implement the MAT-07 student slice. Historical V1 plans below are retained as history, not the active roadmap.
 
 This file is the durable control surface for the current multi-step implementation task. Keep it current so a new Codex session can resume without asking the user to restate decisions.
 

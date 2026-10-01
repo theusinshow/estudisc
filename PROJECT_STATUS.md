@@ -4,11 +4,11 @@
 
 Active checkout: `C:\Dev\pessoal\vecta`, copied with Git history from the original KNOW/OS under explicit user authorization. Production and the original checkout remain untouched.
 
-Current milestone: **IFSC-02 IN PROGRESS**. IFSC-00/01 passed their gates. Curriculum migration 0010_real_blur.sql passed disposable PGlite; partial seed and coverage queries work. IFSC-02 through IFSC-15 are pending. Acceptance criteria are not yet satisfied; no production readiness is claimed.
+Current milestone: **IFSC-03 IN PROGRESS**. IFSC-00/01/02 passed focused gates. Migrations 0010/0011 passed disposable PGlite; compatible Pack v2, partial curriculum and immutable versioned Questions work. IFSC-03 through IFSC-15 are pending. Acceptance criteria are not yet satisfied; no production readiness is claimed.
 
 The existing V1 core is the implementation foundation. The approved target is `docs/ifsc/17-ACCEPTANCE-CRITERIA.md` once integrated. Historical PDFs are private local source material under `sources/ifsc/historical`, not publicly served assets. Credentials were not copied.
 
-NEXT ACTION: implement compatible Pack v2 and versioned Questions in the existing importer; details in PLANS.md. The older V1 status below is historical.
+NEXT ACTION: educational registry extensions, then MAT-07 student slice; details in PLANS.md. The older V1 status below is historical.
 
 Last updated: 2026-08-05
 

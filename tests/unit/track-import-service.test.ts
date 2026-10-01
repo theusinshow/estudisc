@@ -1,3 +1,4 @@
+import type { TrackPackLesson, TrackPackActivity } from "@/features/import/application/track-pack-schema";
 import examplePack from "../../packs/examples/javascript-fundamentals.track.json";
 import { describe, expect, it } from "vitest";
 
@@ -19,9 +20,9 @@ function createRepository(existing: ExistingPackImport | null = null): TrackImpo
 
       return {
         trackStableId: pack.track.id,
-        importedLessons: pack.track.modules.flatMap((module) => module.lessons).length,
-        importedActivities: pack.track.modules.flatMap((module) =>
-          module.lessons.flatMap((lesson) => lesson.activities)
+        importedLessons: pack.track.modules.flatMap<TrackPackLesson>((module) => module.lessons).length,
+        importedActivities: pack.track.modules.flatMap<TrackPackActivity>((module) =>
+          module.lessons.flatMap<TrackPackActivity>((lesson) => lesson.activities)
         ).length
       };
     }
@@ -122,3 +123,4 @@ describe("importTrackPack", () => {
     expect(repository.applied).toBe(0);
   });
 });
+

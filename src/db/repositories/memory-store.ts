@@ -18,7 +18,7 @@ import type {
   TrackImportRepository
 } from "@/features/import/application/track-import-service";
 import type { GamificationSummary } from "@/features/gamification/gamification-rules";
-import type { TrackPack } from "@/features/import/application/track-pack-schema";
+import type { TrackPack, TrackPackLesson, TrackPackActivity } from "@/features/import/application/track-pack-schema";
 import { categorizeSubmissionMistake } from "@/features/mistakes/mistake-categorization";
 import {
   calculateInitialReviewAt,
@@ -296,7 +296,7 @@ export class MemoryTrackImportRepository implements TrackImportRepository {
             lessonStableId: lesson.id,
             type: block.type,
             orderIndex: blockIndex,
-            payload: block
+            payload: pack.schema === "caderno.track.v2" && "payload" in block ? { ...(block.payload as Record<string, unknown>), ...block } : block
           });
         });
 
@@ -308,7 +308,7 @@ export class MemoryTrackImportRepository implements TrackImportRepository {
             type: activity.type,
             prompt: activity.prompt,
             orderIndex: activityIndex,
-            config: activity,
+            config: pack.schema === "caderno.track.v2" && "config" in activity ? { ...(activity.config as Record<string, unknown>), ...activity } : activity,
             evaluatorVersion: `${pack.schema}:${pack.version}`
           });
           importedActivities += 1;
@@ -325,12 +325,12 @@ export class MemoryTrackImportRepository implements TrackImportRepository {
 }
 
 function summarizePack(pack: TrackPack): AppliedTrackImport {
-  const lessons = pack.track.modules.flatMap((module) => module.lessons);
+    const lessons = pack.track.modules.flatMap<TrackPackLesson>((moduleDefinition) => moduleDefinition.lessons);
 
   return {
     trackStableId: pack.track.id,
     importedLessons: lessons.length,
-    importedActivities: lessons.flatMap((lesson) => lesson.activities).length
+    importedActivities: lessons.flatMap<TrackPackActivity>((lesson) => lesson.activities).length
   };
 }
 

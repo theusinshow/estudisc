@@ -4,15 +4,18 @@ import {
   type PackValidationIssue
 } from "@/features/import/application/lesson-pack-validation";
 import { hashCanonicalJson } from "@/lib/canonical-json";
+import { trackPackV2Schema } from "./track-pack-v2-schema";
+import { validateTrackPackV2Semantics } from "./track-pack-v2-validation";
 
-export type TrackPackIssue = PackValidationIssue;
+export type TrackPackIssue = Readonly<{ code: string; message: string; path: string }>;
 
 export type TrackPackValidationResult =
   | Readonly<{ ok: true; pack: TrackPack; contentHash: string }>
   | Readonly<{ ok: false; issues: TrackPackIssue[] }>;
 
 export function validateTrackPack(input: unknown): TrackPackValidationResult {
-  const parsed = trackPackSchema.safeParse(input);
+  const isV2 = typeof input === "object" && input !== null && "schema" in input && input.schema === "caderno.track.v2";
+  const parsed = isV2 ? trackPackV2Schema.safeParse(input) : trackPackSchema.safeParse(input);
 
   if (!parsed.success) {
     return {
@@ -25,7 +28,7 @@ export function validateTrackPack(input: unknown): TrackPackValidationResult {
     };
   }
 
-  const semanticIssues = validateSemantics(parsed.data);
+  const semanticIssues = parsed.data.schema === "caderno.track.v2" ? validateTrackPackV2Semantics(parsed.data) : validateSemantics(parsed.data);
 
   if (semanticIssues.length > 0) {
     return { ok: false, issues: semanticIssues };
@@ -43,7 +46,7 @@ export function hashTrackPack(pack: TrackPack) {
 }
 
 function validateSemantics(pack: TrackPack): TrackPackIssue[] {
-  const issues: TrackPackIssue[] = [];
+  const issues: PackValidationIssue[] = [];
   const ids = new Map<string, string>();
 
   addUnique(ids, issues, pack.track.id, "track.id");

@@ -2,6 +2,8 @@ export { importTrackPack, previewTrackPack } from "./application/track-import-se
 export type { TrackImportPreviewResult, TrackImportRepository, TrackImportResult } from "./application/track-import-service";
 export { MAX_TRACK_PACK_BYTES, readJsonRequestWithLimit } from "./application/import-request";
 export { trackPackSchema } from "./application/track-pack-schema";
+export { trackPackV2Schema } from "./application/track-pack-v2-schema";
+export type { TrackPackV2 } from "./application/track-pack-v2-schema";
 export type { TrackPack } from "./application/track-pack-schema";
 export { lessonPackSchema } from "./application/lesson-pack-schema";
 export type { LessonPack } from "./application/lesson-pack-schema";

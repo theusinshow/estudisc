@@ -1,4 +1,5 @@
 import { z } from "zod";
+import type { TrackPackV2 } from "./track-pack-v2-schema";
 
 export const stableIdSchema = z.string().trim().min(1);
 
@@ -52,6 +53,7 @@ export const trackPackSchema = z.object({
   })
 });
 
-export type TrackPack = z.infer<typeof trackPackSchema>;
+export type TrackPackV1 = z.infer<typeof trackPackSchema>;
+export type TrackPack = TrackPackV1 | TrackPackV2;
 export type TrackPackLesson = TrackPack["track"]["modules"][number]["lessons"][number];
 export type TrackPackActivity = TrackPackLesson["activities"][number];

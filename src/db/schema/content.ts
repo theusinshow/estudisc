@@ -65,6 +65,7 @@ export const lessons = pgTable(
       .notNull()
       .references(() => modules.id),
     title: text("title").notNull(),
+    metadata: jsonb("metadata").notNull().default({}),
     contentVersion: integer("content_version").notNull(),
     orderIndex: integer("order_index").notNull()
   },
