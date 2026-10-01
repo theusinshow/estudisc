@@ -9,14 +9,14 @@ export default async function AchievementsPage() {
   return (
     <AppShell>
       <section className="foundation-panel content-panel accent-panel accent-progress" aria-labelledby="achievements-title">
-        <p className="eyebrow">Achievements</p>
+        <p className="eyebrow">Conquistas</p>
         <h1 id="achievements-title">Rank, badges e missões</h1>
         <p>Critérios são determinísticos. XP mede jornada; Mastery continua separado.</p>
 
         <section className="module-section" aria-labelledby="rank-title">
           <h2 id="rank-title">Rank</h2>
           <div className="mastery-panel" aria-label="Rank atual">
-            <p className="technical-label">RANK</p>
+            <p className="technical-label">Nível</p>
             <p className="mastery-score">
               {gamification.rank.label} <span>{gamification.rank.currentXp} XP</span>
             </p>

@@ -15,11 +15,12 @@ import {
   MoreHorizontal,
   RotateCcw,
   TriangleAlert,
+  Sun,
   Upload
 } from "lucide-react";
 
 const primaryNavigationItems = [
-  { label: "Hoje", href: "/", icon: Database, match: ["/"] },
+  { label: "Hoje", href: "/", icon: Sun, match: ["/"] },
   { label: "Aprender", href: "/tracks", icon: BookOpen, match: ["/tracks", "/lessons", "/concepts"] },
   { label: "Progresso", href: "/progress", icon: ChartNoAxesColumnIncreasing, match: ["/progress"] }
 ];
@@ -50,7 +51,7 @@ export function PrimaryNav() {
 
   return (
     <>
-      {primaryNavigationItems.map((item, index) => {
+      {primaryNavigationItems.map((item) => {
         const Icon = item.icon;
         const isCurrent = isCurrentRoute(pathname, item.match);
 
@@ -61,8 +62,7 @@ export function PrimaryNav() {
             aria-current={isCurrent ? "page" : undefined}
             key={item.href}
           >
-            <span className="nav-index">{String(index + 1).padStart(2, "0")}</span>
-            <Icon aria-hidden="true" />
+            <span className="nav-icon"><Icon aria-hidden="true" /></span>
             <span>{item.label}</span>
           </Link>
         );
@@ -70,7 +70,7 @@ export function PrimaryNav() {
 
       <details className={hasSecondaryCurrent ? "nav-more nav-more-current" : "nav-more"}>
         <summary>
-          <MoreHorizontal aria-hidden="true" />
+          <span className="nav-icon"><MoreHorizontal aria-hidden="true" /></span>
           <span>Mais</span>
         </summary>
 

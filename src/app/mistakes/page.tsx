@@ -12,7 +12,7 @@ export default async function MistakesPage() {
   return (
     <AppShell>
       <section className="foundation-panel content-panel accent-panel accent-mistakes" aria-labelledby="mistakes-title">
-        <p className="eyebrow">Mistakes</p>
+        <p className="eyebrow">Erros</p>
         <h1 id="mistakes-title">Erros registrados</h1>
         <p>
           Erros ficam ligados à tentativa e ao conceito. Quando corrigidos, mudam para resolvido sem

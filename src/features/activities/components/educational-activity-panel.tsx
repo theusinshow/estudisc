@@ -27,6 +27,6 @@ export function EducationalActivityPanel({ prompt, config }: { prompt: string; c
     </form>
     {hintLevel > 0 && <aside className="learning-hint"><strong>Dica {hintLevel}</strong><p>{config.hints[hintLevel - 1]}</p></aside>}
     {hintLevel < config.hints.length && <button type="button" onClick={() => setHintLevel(hintLevel + 1)}>Ver {hintLevel === 0 ? "uma dica" : "próxima dica"}</button>}
-    {feedback && <div role="status" className="learning-feedback"><strong>{feedback.correct ? "Resposta correta" : "Vamos revisar este passo"}</strong><p>{config.explanation || (feedback.correct ? "Você pode continuar." : "Confira os dados e tente novamente. Uma dica pode ajudar.")}</p></div>}
+    {feedback && <div role="status" className="learning-feedback" data-result={feedback.correct ? "correct" : "incorrect"}><strong>{feedback.correct ? "Resposta correta" : "Vamos revisar este passo"}</strong><p>{config.explanation || (feedback.correct ? "Você pode continuar." : "Confira os dados e tente novamente. Uma dica pode ajudar.")}</p></div>}
   </section>;
 }

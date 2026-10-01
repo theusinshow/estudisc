@@ -8,7 +8,7 @@ test("foundation shell renders on desktop", async ({ page }) => {
   await expect(page.getByRole("main")).toContainText("Próxima ação");
   await expect(page.getByRole("link", { name: /Aprender/ })).toBeVisible();
   await expect(page.getByText("Mais", { exact: true })).toBeVisible();
-  await expect(page.getByText("Fundação ativa")).toBeVisible();
+  await expect(page.getByText("Fundação ativa")).toHaveCount(0);
 });
 
 test("mobile shell keeps primary study navigation visible", async ({ page }) => {

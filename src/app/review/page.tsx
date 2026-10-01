@@ -25,7 +25,7 @@ export default async function ReviewPage() {
   return (
     <AppShell>
       <section className="foundation-panel content-panel accent-panel accent-review" aria-labelledby="review-title">
-        <p className="eyebrow">Review</p>
+        <p className="eyebrow">Revisão</p>
         <h1 id="review-title">Revisões de hoje</h1>
         <p>
           A fila usa apenas regras determinísticas. Cada item mostra por que entrou na revisão e atualiza a

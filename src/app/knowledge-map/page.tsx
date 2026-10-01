@@ -14,7 +14,7 @@ export default async function KnowledgeMapPage() {
   return (
     <AppShell>
       <section className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="knowledge-map-title">
-        <p className="eyebrow">Knowledge Map</p>
+        <p className="eyebrow">Mapa de conhecimento</p>
         <h1 id="knowledge-map-title">Mapa de conhecimento</h1>
         <p>Lista hierárquica completa dos conceitos importados. Esta versão não depende de canvas.</p>
 

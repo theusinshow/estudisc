@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight, Play } from "lucide-react";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
@@ -10,63 +11,72 @@ import { getDatabaseUrl } from "@/db/connection";
 
 export const dynamic = "force-dynamic";
 
+const kindLabel = { continue: "Continuar", review: "Revisar", mistake: "Corrigir erro", project: "Projeto" } as const;
+
 export default async function HomePage() {
   const recommendations = await getRecommendations();
-  const primaryRecommendation = recommendations[0];
-  const sessions=getDatabaseUrl()?await studySessionRepository().list(await getOwnerId()):[];
+  const [primaryRecommendation, ...queue] = recommendations;
+  const sessions = getDatabaseUrl() ? await studySessionRepository().list(await getOwnerId()) : [];
+  const openSessions = sessions.filter(session => session.status === "ACTIVE" || session.status === "PLANNED");
 
   return (
     <AppShell>
-      <section className="foundation-panel accent-panel accent-today" aria-labelledby="today-title">
-        <p className="eyebrow">Today</p>
-        <h1 id="today-title">Próxima ação</h1>
-        <SessionControls />
-        {sessions.filter(session=>session.status==="ACTIVE"||session.status==="PLANNED").map(session=><p key={session.id}><Link href={`/study/${session.id}`}>Retomar sessão de {session.budgetMinutes} min</Link></p>)}
-        <p>A ordem é determinística: revisão vencida, erro ativo, continuidade do catálogo e aplicação em projeto.</p>
+      <div className="today">
+        <header className="today-header">
+          <p className="today-date">{new Intl.DateTimeFormat("pt-BR", { weekday: "long", day: "numeric", month: "long" }).format(new Date())}</p>
+          <h1>Hoje</h1>
+        </header>
 
-        {primaryRecommendation ? (
-          <Link className="today-action" href={primaryRecommendation.href}>
-            <strong>{primaryRecommendation.title}</strong>
-            <span>{primaryRecommendation.reason}</span>
+        {openSessions.map(session => (
+          <Link className="resume-card" href={`/study/${session.id}`} key={session.id}>
+            <span className="resume-icon"><Play aria-hidden="true" /></span>
+            <span>
+              <strong>Continuar de onde parou</strong>
+              <small>Sessão de {session.budgetMinutes} min</small>
+            </span>
+            <ArrowRight aria-hidden="true" />
           </Link>
-        ) : (
-          <FirstRunCallout description="Ainda não existe catálogo local para calcular a próxima aula, revisão ou prática." />
-        )}
+        ))}
 
-        <section className="module-section" aria-labelledby="recommendations-title">
-          <h2 id="recommendations-title">Recomendações</h2>
-          {recommendations.length === 0 ? (
-            <p className="lesson-text">As recomendações aparecem depois que uma aula for ativada.</p>
+        <section className="time-card" aria-labelledby="time-title">
+          <h2 id="time-title">Quanto tempo você tem agora?</h2>
+          <p>Montamos a sessão com revisões, erros pendentes e a próxima aula.</p>
+          <SessionControls />
+        </section>
+
+        <section className="today-next" aria-labelledby="next-title">
+          <h2 id="next-title">Próxima ação</h2>
+          {primaryRecommendation ? (
+            <Link className="next-card" data-kind={primaryRecommendation.kind} href={primaryRecommendation.href}>
+              <span className="kind-chip">{kindLabel[primaryRecommendation.kind]}</span>
+              <strong>{primaryRecommendation.title}</strong>
+              <span>{primaryRecommendation.reason}</span>
+              <ArrowRight aria-hidden="true" />
+            </Link>
           ) : (
-            <ol className="record-list" aria-label="Recomendações determinísticas">
-              {recommendations.map((recommendation) => (
+            <FirstRunCallout description="Ainda não há aulas disponíveis. Assim que um conteúdo for liberado, ele aparece aqui." />
+          )}
+        </section>
+
+        {queue.length > 0 && (
+          <section className="today-queue" aria-labelledby="queue-title">
+            <h2 id="queue-title">Depois disso</h2>
+            <ol>
+              {queue.map(recommendation => (
                 <li key={recommendation.id}>
-                  <Link href={recommendation.href}>
-                    <strong>{recommendation.title}</strong>
-                    <span>{recommendation.reason}</span>
-                    <small>{recommendation.kind}</small>
+                  <Link href={recommendation.href} data-kind={recommendation.kind}>
+                    <span className="kind-dot" aria-hidden="true" />
+                    <span>
+                      <strong>{recommendation.title}</strong>
+                      <small>{kindLabel[recommendation.kind]} · {recommendation.reason}</small>
+                    </span>
                   </Link>
                 </li>
               ))}
             </ol>
-          )}
-        </section>
-
-        <dl className="foundation-list" aria-label="Estado da fundação">
-          <div>
-            <dt>Fonte</dt>
-            <dd>Regras locais sem dependência de IA.</dd>
-          </div>
-          <div>
-            <dt>Prioridade</dt>
-            <dd>Review, erros, continuidade, projetos.</dd>
-          </div>
-          <div>
-            <dt>Validação</dt>
-            <dd>Recomendações derivadas de evidência e catálogo.</dd>
-          </div>
-        </dl>
-      </section>
+          </section>
+        )}
+      </div>
     </AppShell>
   );
 }

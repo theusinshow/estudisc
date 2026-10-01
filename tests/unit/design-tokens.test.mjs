@@ -17,8 +17,8 @@ describe("design token generator", () => {
       expect(result.count).toBeGreaterThan(80);
       expect(css).toContain("GENERATED FILE. DO NOT EDIT MANUALLY.");
       expect(css).toContain("Source: design-system/design-tokens.json");
-      expect(css).toContain("--kos-color-ink: #0E0E0C;");
-      expect(css).toContain("--kos-focus-color: #2B4FC8;");
+      expect(css).toContain("--kos-color-ink: #17141F;");
+      expect(css).toContain("--kos-focus-color: #3A4FE0;");
     } finally {
       await rm(tempDir, { recursive: true, force: true });
     }

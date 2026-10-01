@@ -1,7 +1,14 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$version": "3.0.0",
+  "$version": "4.0.0",
   "$changelog": [
+    {
+      "version": "4.0.0",
+      "date": "2026-10-01",
+      "changes": [
+        "ADR 0030 neo-brutalist refresh: saturated subject palette, 3px ink rules, deeper solid shadows, rounder radii, loaded Archivo/JetBrains Mono"
+      ]
+    },
     {
       "version": "3.0.0",
       "date": "2026-10-01",
@@ -37,31 +44,31 @@
     }
   ],
   "color": {
-    "ink": "#0E0E0C",
-    "paper": "#EFEBE1",
-    "dimmedPaper": "#E6E0D4",
-    "panel": "#FBF9F4",
-    "dim": "#6F6C62",
-    "desk": "#D9D4C7",
+    "ink": "#17141F",
+    "paper": "#FFF4E0",
+    "dimmedPaper": "#F6E9CF",
+    "panel": "#FFFCF5",
+    "dim": "#5E5868",
+    "desk": "#F1E4C8",
     "machine": "#141412",
     "machineText": "#E9E5D8",
     "machineRule": "#3A3A34",
-    "signal": "#F5C518",
-    "signalInk": "#5B4800",
-    "success": "#1E6F49",
-    "warning": "#8B5A00",
-    "error": "#B83220",
-    "info": "#2B4FC8",
+    "signal": "#FFD43B",
+    "signalInk": "#2B2200",
+    "success": "#14804A",
+    "warning": "#9A5B00",
+    "error": "#C8321F",
+    "info": "#3A4FE0",
     "accent": {
-      "onboarding": "#007C89",
-      "learn": "#2B4FC8",
-      "practice": "#6A3FB5",
-      "review": "#A45400",
-      "mistakes": "#B83220",
-      "progress": "#1E6F49",
-      "generation": "#9A2F6A"
+      "onboarding": "#00808C",
+      "learn": "#3A4FE0",
+      "practice": "#6B3FD8",
+      "review": "#B25A00",
+      "mistakes": "#C8321F",
+      "progress": "#14804A",
+      "generation": "#B0247A"
     },
-    "overlay": "rgba(14,14,12,0.62)",
+    "overlay": "rgba(23,20,31,0.62)",
     "mastery": {
       "0": "#B9B4A8",
       "1": "#9C978D",
@@ -71,10 +78,18 @@
       "5": "#0E0E0C"
     },
     "subjectAccent": {
-      "mathematics": "{color.signal}",
-      "portuguese": "#7D5BD6",
-      "science": "#49B67A",
-      "historyGeography": "#3F7CCB"
+      "mathematics": "#B69CFF",
+      "portuguese": "#FF8FC8",
+      "science": "#C4F03A",
+      "historyGeography": "#FFA552"
+    },
+    "surface": {
+      "violet": "#B69CFF",
+      "pink": "#FF8FC8",
+      "lime": "#C4F03A",
+      "orange": "#FFA552",
+      "sky": "#8FDCFF",
+      "yellow": "{color.signal}"
     }
   },
   "state": {
@@ -153,30 +168,30 @@
     "32": "64px"
   },
   "border": {
-    "hair": "1px",
-    "rule": "2px",
+    "hair": "1.5px",
+    "rule": "3px",
     "accent": "8px",
     "navActive": "4px"
   },
   "radius": {
     "none": "0px",
-    "sm": "2px",
-    "md": "4px",
-    "learningCard": "12px",
+    "sm": "6px",
+    "md": "10px",
+    "learningCard": "18px",
     "interactive": "14px",
-    "sheet": "18px"
+    "sheet": "24px"
   },
   "shadow": {
-    "structural": "3px 3px 0 {color.ink}",
-    "raised": "4px 4px 0 {color.ink}",
-    "window": "10px 10px 0 rgba(14,14,12,0.90)",
-    "pressed": "2px 2px 0 {color.ink}"
+    "structural": "4px 4px 0 {color.ink}",
+    "raised": "6px 6px 0 {color.ink}",
+    "window": "8px 8px 0 {color.ink}",
+    "pressed": "1px 1px 0 {color.ink}"
   },
   "motion": {
     "fast": "120ms",
     "base": "140ms",
     "slow": "180ms",
-    "easing": "ease-out",
+    "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
     "linear": "linear",
     "travelMin": "2px",
     "travelMax": "4px"

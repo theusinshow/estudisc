@@ -28,6 +28,8 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 
 ### Added
 
+- ADR 0030 neo-brutalist UI refresh: tokens v4, self-hosted Archivo/JetBrains Mono, new shell and bottom navigation, rebuilt Today and study session, unified control vocabulary, colored lesson blocks and answer feedback, Portuguese student labels.
+
 - IFSC test-week lesson drafts (MAT-01–06, MAT-08–10) in compact seed format, expanded into Pack v2 Questions/activities and merged by the source-pack builder; all `draft` pending human review.
 - `scripts/audit-ifsc-official-bank.mjs`: read-only OCR/representation pre-review checklist for the private official bank.
 - Fixed: the 2025.2 OCR page footer is now filtered during official ingestion.

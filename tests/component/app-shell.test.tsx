@@ -26,6 +26,6 @@ describe("AppShell", () => {
     expect(screen.getByRole("link", { name: /mapa/i, hidden: true })).toHaveAttribute("href", "/knowledge-map");
     expect(screen.getByRole("navigation", { name: /navegação principal/i })).toBeInTheDocument();
     expect(screen.getByRole("main")).toHaveAttribute("id", "main-content");
-    expect(screen.getByRole("status")).toHaveTextContent("Fundação ativa");
+    expect(screen.queryByText("Fundação ativa")).not.toBeInTheDocument();
   });
 });

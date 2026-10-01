@@ -21,7 +21,7 @@ describe("ProgressSummary", () => {
 
     expect(screen.getByLabelText("Progresso")).toHaveTextContent("Lições concluídas");
     expect(screen.getByLabelText("Progresso")).toHaveTextContent("Atividades aprovadas");
-    expect(screen.getByLabelText("Progresso")).toHaveTextContent("Mastery de conceitos");
+    expect(screen.getByLabelText("Progresso")).toHaveTextContent("Domínio dos conceitos");
     expect(screen.getByLabelText("Progresso")).toHaveTextContent("Ainda não calculado");
   });
 });

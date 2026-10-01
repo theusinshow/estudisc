@@ -1,6 +1,6 @@
 # KNOW/OS visual context
 
-Canonical authority: `design-system/DESIGN_SYSTEM_INDEX.md` and `design-system/design-tokens.json`, refined by ADR 0027. This context is a pointer, not a second token source.
+Canonical authority: `design-system/DESIGN_SYSTEM_INDEX.md` and `design-system/design-tokens.json`, refined by ADR 0027 and the neo-brutalist refresh in ADR 0030 (tokens v4: saturated surface roles, 3px ink rules, solid offset shadows, rounder radii; color always paired with a text cue). This context is a pointer, not a second token source.
 
 Students read and solve one item at a time on a phone under ordinary home/daylight conditions. Warm paper and dark ink preserve reading comfort; stronger surfaces identify interactions, examples and primary study actions.
 

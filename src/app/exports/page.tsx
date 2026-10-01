@@ -12,7 +12,7 @@ export default async function ExportsPage() {
   return (
     <AppShell>
       <section className="foundation-panel content-panel" aria-labelledby="exports-title">
-        <p className="eyebrow">Portability</p>
+        <p className="eyebrow">Seus dados</p>
         <h1 id="exports-title">Exports</h1>
         <p>Pré-visualize categorias e avisos de privacidade antes de gerar JSON local.</p>
 

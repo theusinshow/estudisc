@@ -9,7 +9,7 @@ export default async function ProjectsPage() {
   return (
     <AppShell>
       <section className="foundation-panel content-panel" aria-labelledby="projects-title">
-        <p className="eyebrow">Projects</p>
+        <p className="eyebrow">Projetos</p>
         <h1 id="projects-title">Projetos</h1>
         <p>
           Contextos de projeto conectam conceitos e atividades a aplicação real. Eles são opcionais; o

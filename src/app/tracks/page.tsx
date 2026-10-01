@@ -12,7 +12,7 @@ export default async function TracksPage() {
   return (
     <AppShell>
       <section className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="tracks-title">
-        <p className="eyebrow">Trilhas importadas</p>
+        <p className="eyebrow">Trilhas</p>
         <h1 id="tracks-title">Catálogo</h1>
         {tracks.status === "not_configured" ? (
           <p>Configure `DATABASE_URL` ou use `pglite://memory` em desenvolvimento para importar conteúdo.</p>

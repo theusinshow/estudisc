@@ -10,7 +10,7 @@ export default function ImportPage() {
   return (
     <AppShell>
       <section className="foundation-panel content-panel import-panel accent-panel accent-import" aria-labelledby="import-title">
-        <p className="eyebrow">Import Pack</p>
+        <p className="eyebrow">Importar conteúdo</p>
         <h1 id="import-title">Ativar catálogo</h1>
         <p>
           Escolha entre estudar uma trilha pronta ou criar uma aula nova. Em ambos os caminhos, o KNOW/OS faz

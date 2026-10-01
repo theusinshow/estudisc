@@ -22,9 +22,9 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
     <QuestionAssets assets={question.assets}/>
     <form onSubmit={event=>{event.preventDefault();void send("submit");}}><ResponseFields id={id} question={question} response={response} disabled={busy} onChange={value=>{setResponse(value);setFeedback(null);setKey(crypto.randomUUID());}} /><button className="primary-button" disabled={busy} type="submit">{busy?"Registrando…":"Enviar resposta"}</button></form>
     {hintLevel>0&&<aside className="learning-hint"><strong>Dica {hintLevel}</strong><p>{hint}</p></aside>}
-    {hintLevel<hintCount&&<button type="button" disabled={busy} onClick={()=>void send("hint")}>Ver uma dica</button>}
-    <button type="button" disabled={busy} onClick={()=>void send("solution")}>Ver solução</button>
-    {feedback&&<div role="status" className="learning-feedback"><strong>{feedback.attemptId?(feedback.correct?"Resposta correta":"Vamos revisar"):"Solução consultada"}</strong><p>{feedback.explanation}</p>{feedback.attemptId&&<small>Tentativa registrada. Domínio depende de prática e revisão.</small>}</div>}
+    <div className="question-aids">{hintLevel<hintCount&&<button type="button" disabled={busy} onClick={()=>void send("hint")}>Ver uma dica</button>}
+    <button type="button" disabled={busy} onClick={()=>void send("solution")}>Ver solução</button></div>
+    {feedback&&<div role="status" className="learning-feedback" data-result={feedback.attemptId?(feedback.correct?"correct":"incorrect"):"solution"}><strong>{feedback.attemptId?(feedback.correct?"Resposta correta":"Vamos revisar"):"Solução consultada"}</strong><p>{feedback.explanation}</p>{feedback.attemptId&&<small>Tentativa registrada. Domínio depende de prática e revisão.</small>}</div>}
     {error&&<p role="alert">{error}</p>}
     <TutorPanel activityId={activityStableId} questionId={question.id} questionVersion={question.version} sessionId={sessionId}/>
   </section>;

@@ -13,7 +13,7 @@ export function ProgressSummary({ progress }: ProgressSummaryProps) {
 
   return (
     <aside className="progress-summary" aria-label="Progresso">
-      <p className="eyebrow">Progresso de navegação</p>
+      <p className="eyebrow">Seu progresso nesta aula</p>
       <dl>
         {hasLessonStats ? (
           <>
@@ -45,7 +45,7 @@ export function ProgressSummary({ progress }: ProgressSummaryProps) {
           </dd>
         </div>
         <div>
-          <dt>Mastery de conceitos</dt>
+          <dt>Domínio dos conceitos</dt>
           <dd>{progress.masteryStatus === "not_calculated" ? "Ainda não calculado" : progress.masteryStatus}</dd>
         </div>
       </dl>
