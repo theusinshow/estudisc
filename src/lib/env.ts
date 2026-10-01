@@ -42,6 +42,7 @@ export const serverEnvSchema = z.object({
   DEEPSEEK_DEFAULT_MODEL: deepSeekModel.default("deepseek-v4-flash"),
   DEEPSEEK_PRO_MODEL: deepSeekModel.default("deepseek-v4-pro"),
   KNOW_OS_ALLOWED_GOOGLE_EMAILS: emailAllowlist,
+  KNOW_OS_ADMIN_GOOGLE_EMAILS: emailAllowlist,
   KNOW_OS_OWNER_ID: z.string().trim().min(1).default("local-owner"),
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info")
 });
@@ -61,6 +62,7 @@ export function getServerEnv(source: Record<string, string | undefined> = proces
     DEEPSEEK_DEFAULT_MODEL: source.DEEPSEEK_DEFAULT_MODEL,
     DEEPSEEK_PRO_MODEL: source.DEEPSEEK_PRO_MODEL,
     KNOW_OS_ALLOWED_GOOGLE_EMAILS: source.KNOW_OS_ALLOWED_GOOGLE_EMAILS,
+    KNOW_OS_ADMIN_GOOGLE_EMAILS: source.KNOW_OS_ADMIN_GOOGLE_EMAILS,
     KNOW_OS_OWNER_ID: source.KNOW_OS_OWNER_ID,
     LOG_LEVEL: source.LOG_LEVEL
   });

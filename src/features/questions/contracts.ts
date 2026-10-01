@@ -37,10 +37,12 @@ export const questionSchema = z.object({
   if (question.provenance.type === "derived" && !question.provenance.derivedFromQuestionId) fail("Derived item needs an original reference", ["provenance"]);
   if (question.status === "annulled" && question.provenance.type !== "official_exam") fail("Only official items may be annulled", ["status"]);
   if (["ordering", "classification", "matching"].includes(question.type) && !question.items.length) fail("Interaction requires labeled items", ["items"]);
+  if(new Set(question.items.map(item=>item.id)).size!==question.items.length||new Set(question.destinations.map(item=>item.id)).size!==question.destinations.length)fail("Duplicate interaction IDs",["items"]);
   if (question.type === "classification" || question.type === "matching") {
     if (!question.destinations.length) fail("Interaction requires labeled destinations", ["destinations"]);
     const expected = question.answer.kind === "classification" ? question.answer.assignments : question.answer.kind === "matching" ? question.answer.pairs : {};
     if (Object.keys(expected).length !== question.items.length || question.items.some(item => !question.destinations.some(destination => destination.id === expected[item.id]))) fail("Invalid assignments", ["answer"]);
+    if(question.type==="matching"&&new Set(Object.values(expected)).size!==question.items.length)fail("Matching requires distinct destinations",["answer"]);
   }
   if (question.answer.kind === "ordering" && (question.answer.orderedIds.length !== question.items.length || question.answer.orderedIds.some(id => !question.items.some(item => item.id === id)))) fail("Invalid item order", ["answer"]);
 });

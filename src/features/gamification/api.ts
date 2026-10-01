@@ -1,3 +1,4 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { getDatabaseUrl } from "@/db/connection";
 import { GamificationRepository } from "@/db/repositories/gamification-repository";
 import { MemoryGamificationRepository, MemoryXpRepository } from "@/db/repositories/memory-store";
@@ -5,17 +6,16 @@ import { XpRepository } from "@/db/repositories/xp-repository";
 import { listMistakes } from "@/features/mistakes/api";
 import { getDueReviews } from "@/features/review/api";
 import { attachGamificationPersistence, buildGamificationSummary } from "@/features/gamification/gamification-rules";
-import { getServerEnv } from "@/lib/env";
 
 type XpStore = Pick<XpRepository, "getSummary">;
 type GamificationStore = Pick<GamificationRepository, "getState" | "syncSummary">;
 
 export async function getXpSummary(repository: XpStore = createXpRepository()) {
-  return repository.getSummary(getServerEnv().KNOW_OS_OWNER_ID);
+  return repository.getSummary(await getOwnerId());
 }
 
 export async function getGamificationSummary() {
-  const ownerId = getServerEnv().KNOW_OS_OWNER_ID;
+  const ownerId = await getOwnerId();
   const [xp, dueReviews, mistakes] = await Promise.all([getXpSummary(), getDueReviews(), listMistakes()]);
   const summary = buildGamificationSummary({ xp, dueReviews, mistakes });
   const persistence = await createGamificationRepository().syncSummary(ownerId, summary);
@@ -38,3 +38,4 @@ function createGamificationRepository(): GamificationStore {
 
   return new GamificationRepository();
 }
+

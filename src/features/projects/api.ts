@@ -1,12 +1,12 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { getDatabaseUrl } from "@/db/connection";
 import { MemoryProjectRepository } from "@/db/repositories/memory-store";
 import { ProjectRepository } from "@/db/repositories/project-repository";
-import { getServerEnv } from "@/lib/env";
 
 type ProjectStore = Pick<ProjectRepository, "createProject" | "listProjects">;
 
 export async function listProjects(repository: ProjectStore = createProjectRepository()) {
-  return repository.listProjects(getServerEnv().KNOW_OS_OWNER_ID);
+  return repository.listProjects(await getOwnerId());
 }
 
 export async function createProjectContext(
@@ -20,7 +20,7 @@ export async function createProjectContext(
   repository: ProjectStore = createProjectRepository()
 ) {
   return repository.createProject({
-    ownerId: getServerEnv().KNOW_OS_OWNER_ID,
+    ownerId: await getOwnerId(),
     ...input
   });
 }
@@ -32,3 +32,4 @@ function createProjectRepository(): ProjectStore {
 
   return new ProjectRepository();
 }
+

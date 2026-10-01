@@ -1,3 +1,4 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { z } from "zod";
 import { NextResponse } from "next/server";
 
@@ -8,7 +9,6 @@ import { compileManualGenerationSpec } from "@/features/generation/manual-genera
 import { DeepSeekGenerationProvider } from "@/features/generation/infrastructure/deepseek-generation-provider.server";
 import { getDeepSeekProviderConfig } from "@/features/generation/infrastructure/deepseek-config.server";
 import { readJsonRequestWithLimit } from "@/features/import/api";
-import { getServerEnv } from "@/lib/env";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -60,7 +60,7 @@ export async function POST(request: Request) {
   }
 
   const model = requestBody.data.model ?? providerConfig.defaultModel;
-  const ownerId = getServerEnv().KNOW_OS_OWNER_ID;
+  const ownerId = await getOwnerId();
   const repository = getGenerationJobRepository();
   const job = await repository.create({
     ownerId,
@@ -165,3 +165,4 @@ function mapProviderErrorToHttpStatus(code: string) {
 
   return 502;
 }
+

@@ -1,0 +1,662 @@
+{
+  "schema": "caderno.track.v2",
+  "packId": "know-os.ifsc-2027.golden",
+  "version": 1,
+  "language": "pt-BR",
+  "sources": [
+    {
+      "id": "src-ifsc-edital-2027-1",
+      "type": "official_curriculum",
+      "title": "Edital de Ingresso Nº 05/DEING/2027/1",
+      "locator": {
+        "section": "Anexo V",
+        "pages": "41-43"
+      }
+    },
+    {
+      "id": "src-ifsc-golden-author",
+      "type": "ai_generated",
+      "title": "KNOW/OS Golden Lessons — autoria assistida por IA",
+      "metadata": {
+        "authorRunId": "ifsc-golden-author-v1",
+        "reviewStatus": "pending"
+      }
+    }
+  ],
+  "curriculumRequirements": [
+    {
+      "id": "IFSC27.MAT.NUM.PERCENTAGE",
+      "subjectCode": "MAT",
+      "label": "Porcentagem",
+      "sourceId": "src-ifsc-edital-2027-1",
+      "sourceLocator": {
+        "section": "Anexo V / Matemática / item 1"
+      },
+      "mappedConceptIds": [
+        "MAT.PCT.CONCEPT",
+        "MAT.PCT.CONVERT",
+        "MAT.PCT.CALCULATE",
+        "MAT.PCT.DISCOUNT",
+        "MAT.PCT.INCREASE",
+        "MAT.PCT.INTERPRET"
+      ],
+      "status": "mapped"
+    }
+  ],
+  "conceptPrerequisites": [
+    {
+      "conceptId": "MAT.PCT.CONVERT",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.CALCULATE",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.DISCOUNT",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.INCREASE",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.INTERPRET",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-MAT-GOLDEN-1",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PCT.CONCEPT",
+      "conceptIds": [
+        "MAT.PCT.CONCEPT"
+      ],
+      "type": "numeric",
+      "difficulty": "foundation",
+      "cognitiveOperations": [
+        "recall"
+      ],
+      "stem": "O símbolo 15% significa quantas partes em cada 100?",
+      "answer": {
+        "kind": "numeric",
+        "value": 15,
+        "tolerance": 0
+      },
+      "explanation": "15% representa 15 de cada 100 partes.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "Q-MAT-GOLDEN-2",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PCT.CONVERT",
+      "conceptIds": [
+        "MAT.PCT.CONVERT"
+      ],
+      "type": "numeric",
+      "difficulty": "foundation",
+      "cognitiveOperations": [
+        "calculate"
+      ],
+      "stem": "Escreva 25% em notação decimal.",
+      "answer": {
+        "kind": "numeric",
+        "value": 0.25,
+        "tolerance": 0
+      },
+      "explanation": "25% = 25/100 = 0,25.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "Q-MAT-GOLDEN-3",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PCT.CALCULATE",
+      "conceptIds": [
+        "MAT.PCT.CALCULATE"
+      ],
+      "type": "numeric",
+      "difficulty": "direct",
+      "cognitiveOperations": [
+        "calculate"
+      ],
+      "stem": "Calcule 20% de 150.",
+      "answer": {
+        "kind": "numeric",
+        "value": 30,
+        "tolerance": 0
+      },
+      "explanation": "20/100 × 150 = 30.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "Q-MAT-GOLDEN-4",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PCT.DISCOUNT",
+      "conceptIds": [
+        "MAT.PCT.DISCOUNT",
+        "MAT.PCT.CALCULATE",
+        "MAT.PCT.INTERPRET"
+      ],
+      "type": "numeric",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stem": "Um produto custa R$ 2.400 e tem desconto de 15%. Qual é o preço final, em reais?",
+      "answer": {
+        "kind": "numeric",
+        "value": 2040,
+        "tolerance": 0
+      },
+      "explanation": "O desconto é 0,15 × 2.400 = 360. O preço final é 2.400 − 360 = 2.040.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "Q-MAT-GOLDEN-5",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PCT.INCREASE",
+      "conceptIds": [
+        "MAT.PCT.INCREASE",
+        "MAT.PCT.CALCULATE",
+        "MAT.PCT.INTERPRET"
+      ],
+      "type": "numeric",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "apply"
+      ],
+      "stem": "Uma mensalidade de R$ 80 aumentou 10%. Qual é a nova mensalidade, em reais?",
+      "answer": {
+        "kind": "numeric",
+        "value": 88,
+        "tolerance": 0
+      },
+      "explanation": "O aumento é 8 reais. Somando ao valor inicial: 80 + 8 = 88.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "Q-MAT-GOLDEN-6",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PCT.INTERPRET",
+      "conceptIds": [
+        "MAT.PCT.INTERPRET",
+        "MAT.PCT.CALCULATE"
+      ],
+      "type": "numeric",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stem": "Uma cooperativa vendeu 200 unidades de um produto. Para a próxima feira, espera vender 25% a mais. Quantas unidades a cooperativa deve preparar para atender essa previsão?",
+      "answer": {
+        "kind": "numeric",
+        "value": 250,
+        "tolerance": 0
+      },
+      "explanation": "25% de 200 são 50 unidades adicionais. A previsão total é 200 + 50 = 250 unidades.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    }
+  ],
+  "track": {
+    "id": "ifsc-2027",
+    "title": "IFSC 2027",
+    "description": "Aulas de referência em rascunho; exigem revisão independente antes da publicação.",
+    "metadata": {
+      "examDate": "2026-11-29"
+    },
+    "modules": [
+      {
+        "id": "mat",
+        "title": "Matemática",
+        "subjectCode": "MAT",
+        "lessons": [
+          {
+            "id": "MAT-PREREQ",
+            "version": 2,
+            "title": "Frações, decimais e razões — preparação",
+            "kind": "compact",
+            "estimatedMinutes": 15,
+            "status": "draft",
+            "concepts": [
+              {
+                "id": "MAT.FRACTION.MEANING",
+                "title": "Fração como parte do todo",
+                "importance": "high"
+              },
+              {
+                "id": "MAT.DECIMAL.MEANING",
+                "title": "Notação decimal",
+                "importance": "high"
+              },
+              {
+                "id": "MAT.PROPORTION.CONCEPT",
+                "title": "Razão e proporção",
+                "importance": "high"
+              }
+            ],
+            "prerequisiteConceptIds": [],
+            "objectives": [],
+            "sourceIds": [
+              "src-ifsc-golden-author"
+            ],
+            "exitTicketQuestionIds": [],
+            "blocks": [
+              {
+                "id": "mat-prereq-note",
+                "type": "note",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "title": "Preparação",
+                  "content": "Conteúdo de pré-requisitos em preparação; esta aula ainda não está pronta para o planejador."
+                }
+              }
+            ],
+            "activities": []
+          },
+          {
+            "id": "MAT-07",
+            "version": 3,
+            "title": "Porcentagem: parte, desconto e preço final",
+            "kind": "core",
+            "estimatedMinutes": 35,
+            "status": "draft",
+            "concepts": [
+              {
+                "id": "MAT.PCT.CONCEPT",
+                "title": "Porcentagem como parte de 100",
+                "importance": "high"
+              },
+              {
+                "id": "MAT.PCT.CONVERT",
+                "title": "Converter fração, decimal e porcentagem",
+                "importance": "high"
+              },
+              {
+                "id": "MAT.PCT.CALCULATE",
+                "title": "Calcular a parte percentual",
+                "importance": "high"
+              },
+              {
+                "id": "MAT.PCT.DISCOUNT",
+                "title": "Desconto e preço final",
+                "importance": "high"
+              },
+              {
+                "id": "MAT.PCT.INCREASE",
+                "title": "Aumento percentual",
+                "importance": "high"
+              },
+              {
+                "id": "MAT.PCT.INTERPRET",
+                "title": "Interpretar a quantidade solicitada",
+                "importance": "high"
+              }
+            ],
+            "prerequisiteConceptIds": [
+              "MAT.FRACTION.MEANING",
+              "MAT.DECIMAL.MEANING",
+              "MAT.PROPORTION.CONCEPT"
+            ],
+            "objectives": [
+              "Porcentagem como parte de 100",
+              "Converter fração, decimal e porcentagem",
+              "Calcular a parte percentual",
+              "Desconto e preço final",
+              "Aumento percentual",
+              "Interpretar a quantidade solicitada"
+            ],
+            "sourceIds": [
+              "src-ifsc-edital-2027-1",
+              "src-ifsc-golden-author"
+            ],
+            "exitTicketQuestionIds": [
+              "Q-MAT-GOLDEN-4",
+              "Q-MAT-GOLDEN-5",
+              "Q-MAT-GOLDEN-6"
+            ],
+            "blocks": [
+              {
+                "id": "mat07-retrieval",
+                "type": "guided-steps",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "title": "Antes de começar",
+                  "steps": [
+                    {
+                      "id": "fraction",
+                      "prompt": "Quanto vale 1/4 em decimal?",
+                      "expected": "0,25"
+                    },
+                    {
+                      "id": "percent",
+                      "prompt": "Quantas partes em 100 correspondem a 1/4?",
+                      "expected": 25
+                    }
+                  ],
+                  "explanation": "1/4 = 25/100 = 0,25 = 25%. Se essa conversão ainda for difícil, revise frações e decimais."
+                }
+              },
+              {
+                "id": "mat07-hook",
+                "type": "text",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "content": "Uma etiqueta anuncia 15% de desconto. Isso informa a parte que será retirada do preço; ainda precisamos calcular quanto será pago. Vamos distinguir essas duas quantidades."
+                }
+              },
+              {
+                "id": "mat07-explorer",
+                "type": "numeric-explorer",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "MAT.PCT.CONCEPT",
+                  "MAT.PCT.CALCULATE"
+                ],
+                "payload": {
+                  "initialValue": 2400,
+                  "initialPercentage": 15
+                }
+              },
+              {
+                "id": "mat07-concept",
+                "type": "concept",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "conceptId": "MAT.PCT.CONCEPT",
+                  "title": "Por cento significa por 100",
+                  "content": "Uma porcentagem é uma razão com base 100. 15% = 15/100 = 0,15. Para converter um decimal em porcentagem, multiplique por 100; para converter porcentagem em decimal, divida por 100."
+                }
+              },
+              {
+                "id": "mat07-example",
+                "type": "worked-example",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "MAT.PCT.CALCULATE",
+                  "MAT.PCT.DISCOUNT",
+                  "MAT.PCT.INTERPRET"
+                ],
+                "payload": {
+                  "title": "15% de R$ 2.400",
+                  "content": "1. Identifique a base: R$ 2.400. 2. Converta 15% em 0,15. 3. Calcule a parte: 2.400 × 0,15 = R$ 360. 4. Como a pergunta pede o preço final, subtraia o desconto: 2.400 − 360 = R$ 2.040."
+                }
+              },
+              {
+                "id": "mat07-guided",
+                "type": "guided-steps",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "title": "Faça um cálculo acompanhado",
+                  "steps": [
+                    {
+                      "id": "decimal",
+                      "prompt": "Escreva 10% em decimal (use vírgula).",
+                      "expected": "0,10"
+                    },
+                    {
+                      "id": "part",
+                      "prompt": "Quanto é 10% de 80?",
+                      "expected": 8
+                    },
+                    {
+                      "id": "final",
+                      "prompt": "Qual é o preço final depois desse desconto?",
+                      "expected": 72
+                    }
+                  ],
+                  "hints": [
+                    "Primeiro divida a porcentagem por 100.",
+                    "Multiplique 80 por 0,10.",
+                    "Retire a parte calculada do preço inicial."
+                  ],
+                  "explanation": "10% de 80 = 8. Com desconto, o preço final é 72. Com aumento, seria 88."
+                }
+              },
+              {
+                "id": "mat07-warning",
+                "type": "warning",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "title": "A parte não é o preço final",
+                  "content": "R$ 360 é o desconto; R$ 2.040 é o preço final. Depois de calcular a porcentagem, releia a pergunta para decidir se deve somar, subtrair ou informar apenas a parte."
+                }
+              },
+              {
+                "id": "mat07-transfer",
+                "type": "text",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "content": "Agora responda às questões sem consultar o exemplo. Nos problemas de contexto, identifique a quantidade solicitada antes de calcular. A última questão muda o contexto para unidades de produção."
+                }
+              },
+              {
+                "id": "mat07-summary",
+                "type": "summary",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "title": "Para lembrar depois",
+                  "content": "Parte percentual = base × taxa/100. Desconto: base − parte. Aumento: base + parte. Revise em outro dia e tente recuperar esses passos antes de consultar o resumo."
+                }
+              }
+            ],
+            "activities": [
+              {
+                "id": "mat07-q1",
+                "type": "question",
+                "prompt": "O símbolo 15% significa quantas partes em cada 100?",
+                "conceptIds": [
+                  "MAT.PCT.CONCEPT"
+                ],
+                "questionId": "Q-MAT-GOLDEN-1",
+                "config": {
+                  "hints": [
+                    "Identifique a base e a quantidade solicitada.",
+                    "Converta a porcentagem em uma razão sobre 100.",
+                    "Calcule a parte; então verifique se precisa somar ou subtrair."
+                  ],
+                  "phase": "independent"
+                }
+              },
+              {
+                "id": "mat07-q2",
+                "type": "question",
+                "prompt": "Escreva 25% em notação decimal.",
+                "conceptIds": [
+                  "MAT.PCT.CONVERT"
+                ],
+                "questionId": "Q-MAT-GOLDEN-2",
+                "config": {
+                  "hints": [
+                    "Identifique a base e a quantidade solicitada.",
+                    "Converta a porcentagem em uma razão sobre 100.",
+                    "Calcule a parte; então verifique se precisa somar ou subtrair."
+                  ],
+                  "phase": "independent"
+                }
+              },
+              {
+                "id": "mat07-q3",
+                "type": "question",
+                "prompt": "Calcule 20% de 150.",
+                "conceptIds": [
+                  "MAT.PCT.CALCULATE"
+                ],
+                "questionId": "Q-MAT-GOLDEN-3",
+                "config": {
+                  "hints": [
+                    "Identifique a base e a quantidade solicitada.",
+                    "Converta a porcentagem em uma razão sobre 100.",
+                    "Calcule a parte; então verifique se precisa somar ou subtrair."
+                  ],
+                  "phase": "independent"
+                }
+              },
+              {
+                "id": "mat07-q4",
+                "type": "question",
+                "prompt": "Um produto custa R$ 2.400 e tem desconto de 15%. Qual é o preço final, em reais?",
+                "conceptIds": [
+                  "MAT.PCT.DISCOUNT",
+                  "MAT.PCT.CALCULATE",
+                  "MAT.PCT.INTERPRET"
+                ],
+                "questionId": "Q-MAT-GOLDEN-4",
+                "config": {
+                  "hints": [
+                    "Identifique a base e a quantidade solicitada.",
+                    "Converta a porcentagem em uma razão sobre 100.",
+                    "Calcule a parte; então verifique se precisa somar ou subtrair."
+                  ],
+                  "phase": "exit_ticket"
+                }
+              },
+              {
+                "id": "mat07-q5",
+                "type": "question",
+                "prompt": "Uma mensalidade de R$ 80 aumentou 10%. Qual é a nova mensalidade, em reais?",
+                "conceptIds": [
+                  "MAT.PCT.INCREASE",
+                  "MAT.PCT.CALCULATE",
+                  "MAT.PCT.INTERPRET"
+                ],
+                "questionId": "Q-MAT-GOLDEN-5",
+                "config": {
+                  "hints": [
+                    "Identifique a base e a quantidade solicitada.",
+                    "Converta a porcentagem em uma razão sobre 100.",
+                    "Calcule a parte; então verifique se precisa somar ou subtrair."
+                  ],
+                  "phase": "exit_ticket"
+                }
+              },
+              {
+                "id": "mat07-q6",
+                "type": "question",
+                "prompt": "Uma cooperativa vendeu 200 unidades de um produto. Para a próxima feira, espera vender 25% a mais. Quantas unidades a cooperativa deve preparar para atender essa previsão?",
+                "conceptIds": [
+                  "MAT.PCT.INTERPRET",
+                  "MAT.PCT.CALCULATE"
+                ],
+                "questionId": "Q-MAT-GOLDEN-6",
+                "config": {
+                  "hints": [
+                    "Identifique a base e a quantidade solicitada.",
+                    "Converta a porcentagem em uma razão sobre 100.",
+                    "Calcule a parte; então verifique se precisa somar ou subtrair."
+                  ],
+                  "phase": "exit_ticket"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "por",
+        "title": "Português",
+        "subjectCode": "POR",
+        "lessons": []
+      },
+      {
+        "id": "cie",
+        "title": "Ciências",
+        "subjectCode": "CIE",
+        "lessons": []
+      },
+      {
+        "id": "gh",
+        "title": "Geografia e História",
+        "subjectCode": "GH",
+        "lessons": []
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { ActivityAttemptRepository } from "@/db/repositories/activity-attempt-repository";
 import { getDatabaseUrl } from "@/db/connection";
 import { MemoryActivityAttemptRepository } from "@/db/repositories/memory-store";
-import { getServerEnv } from "@/lib/env";
 import { isExecutableActivityType, parseActivityConfig } from "@/features/activities/registry";
 import { evaluateJavaScriptActivity, runJavaScript } from "@/runtime/javascript/api";
 import type { ActivityAttemptFeedback } from "@/features/activities/registry";
@@ -29,7 +29,7 @@ export async function runCodeActivity(
   source: string,
   repository: ActivityAttemptStore = createActivityAttemptRepository()
 ): Promise<RunCodeActivityResult> {
-  const ownerId = getServerEnv().KNOW_OS_OWNER_ID;
+  const ownerId = await getOwnerId();
   const activity = await repository.getCodeActivity(activityStableId);
 
   if (!activity || !isExecutableActivityType(activity.type)) {
@@ -47,7 +47,7 @@ export async function submitCodeActivity(
   source: string,
   repository: ActivityAttemptStore = createActivityAttemptRepository()
 ): Promise<SubmitCodeActivityResult> {
-  const ownerId = getServerEnv().KNOW_OS_OWNER_ID;
+  const ownerId = await getOwnerId();
   const activity = await repository.getCodeActivity(activityStableId);
 
   if (!activity || !isExecutableActivityType(activity.type)) {
@@ -70,7 +70,7 @@ export async function getLatestActivityAttemptFeedback(
   activityStableId: string,
   repository: ActivityAttemptStore = createActivityAttemptRepository()
 ): Promise<ActivityAttemptFeedback | null> {
-  const ownerId = getServerEnv().KNOW_OS_OWNER_ID;
+  const ownerId = await getOwnerId();
   const activity = await repository.getCodeActivity(activityStableId);
 
   if (!activity) {
@@ -106,3 +106,4 @@ function createActivityAttemptRepository(): ActivityAttemptStore {
 
   return new ActivityAttemptRepository();
 }
+

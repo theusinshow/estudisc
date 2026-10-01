@@ -1,7 +1,8 @@
 import { NextResponse, type NextRequest } from "next/server";
 
 import { auth } from "@/auth";
-import { getAuthGuardDecision, isPublicRuntimePath } from "@/features/auth/session-guard";
+import { getAuthGuardDecision, isPublicRuntimePath,isAdminRuntimePath } from "@/features/auth/session-guard";
+import { isGoogleAuthConfigured } from "@/features/auth/auth-readiness";
 import { getServerEnv } from "@/lib/env";
 import {
   applyBaseSecurityHeaders,
@@ -61,6 +62,8 @@ const authProxy = auth((request: AuthenticatedRequest) => {
   const decision = getAuthGuardDecision(request.auth?.user?.email, getServerEnv());
 
   if (decision === "allow") {
+    const env=getServerEnv();
+    if(isAdminRuntimePath(pathname)&&isGoogleAuthConfigured(env)&&!env.KNOW_OS_ADMIN_GOOGLE_EMAILS.includes(request.auth?.user?.email?.trim().toLowerCase()??""))return secureResponse(NextResponse.json({code:"admin_required",message:"Esta ação requer perfil de administrador."},{status:403}),contentSecurityPolicy);
     return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
   }
 

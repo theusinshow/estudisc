@@ -1,18 +1,15 @@
 import { getDatabaseUrl } from "@/db/connection";
-import { getMemoryStore } from "@/db/repositories/memory-store";
-import { DrizzleQuestionRepository } from "@/db/repositories/question-repository";
-import { canExposeQuestion, questionSchema } from "@/features/questions/api";
+import { QuestionStudyRepository, QuestionUnavailableError } from "@/db/repositories/question-study-repository";
+import { MemoryQuestionStudyRepository } from "@/db/repositories/memory-question-study-repository";
+import { getOwnerId } from "@/features/auth/owner";
 import type { QuestionReferenceConfig } from "../application/question-reference";
-import { EducationalActivityPanel } from "./educational-activity-panel";
-import { questionInteraction } from "@/features/questions/interaction";
+import { QuestionPanel } from "./question-panel";
 
-export async function QuestionActivity({ config }: { config: QuestionReferenceConfig }) {
-  let question;
-  if (getDatabaseUrl() === "memory://local") {
-    const candidates = getMemoryStore().packImports.flatMap(entry => entry.manifest?.schema === "caderno.track.v2" ? entry.manifest.questions : []);
-    const match = candidates.find(candidate => candidate.id === config.questionId && candidate.version === config.questionVersion);
-    question = match ? questionSchema.parse(match) : null;
-  } else question = (await new DrizzleQuestionRepository().getVersion(config.questionId, config.questionVersion))?.question;
-  if (!question || !canExposeQuestion(question, { now: new Date(), context: "training" })) return <p>Questão indisponível para estudo. Escolha outro exercício publicado.</p>;
-  return <>{question.stimulus && <p>{question.stimulus}</p>}<EducationalActivityPanel prompt={question.stem} config={questionInteraction(question, config.hints)} /></>;
+export async function QuestionActivity({ config,activityStableId,sessionId }: { config: QuestionReferenceConfig;activityStableId:string;sessionId?:string }) {
+  let view;
+  try {
+    const repository=getDatabaseUrl()==="memory://local"?new MemoryQuestionStudyRepository():new QuestionStudyRepository();
+    view=await repository.view(await getOwnerId(),activityStableId,config.questionId,config.questionVersion,sessionId);
+  } catch(error) {if(!(error instanceof QuestionUnavailableError))throw error;}
+  return view?<QuestionPanel question={view.question} hints={view.hints} activityStableId={activityStableId} sessionId={sessionId} lastAnswer={view.lastAnswer} />:<p>Questão indisponível para estudo. Escolha outro exercício publicado.</p>;
 }

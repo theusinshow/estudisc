@@ -1,10 +1,10 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { NextResponse } from "next/server";
 
 import { ensureDatabaseReady } from "@/db/connection";
 import { readJsonRequestWithLimit } from "@/features/import/api";
 import { ManualGenerationProvider } from "@/features/generation/infrastructure/manual-generation-provider";
 import { getGenerationJobRepository } from "@/features/generation/server-repositories";
-import { getServerEnv } from "@/lib/env";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -37,7 +37,7 @@ export async function POST(request: Request) {
   try {
     await ensureDatabaseReady();
     const job = await getGenerationJobRepository().create({
-      ownerId: getServerEnv().KNOW_OS_OWNER_ID,
+      ownerId: await getOwnerId(),
       mode: "manual_copy_paste",
       provider: "manual",
       spec: compiled.spec,
@@ -68,3 +68,4 @@ export async function POST(request: Request) {
     );
   }
 }
+

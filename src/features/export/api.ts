@@ -1,8 +1,8 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { ensureDatabaseReady, getDatabaseUrl } from "@/db/connection";
 import { ExportRepository } from "@/db/repositories/export-repository";
 import { MemoryExportRepository } from "@/db/repositories/memory-store";
 import { getGamificationSummary } from "@/features/gamification/api";
-import { getServerEnv } from "@/lib/env";
 
 import {
   buildExportPayload,
@@ -44,7 +44,7 @@ export async function getExportPayload({
 }
 
 async function getExportSnapshot() {
-  const ownerId = getServerEnv().KNOW_OS_OWNER_ID;
+  const ownerId = await getOwnerId();
   await getGamificationSummary();
 
   if (getDatabaseUrl() === "memory://local") {
@@ -54,3 +54,4 @@ async function getExportSnapshot() {
   await ensureDatabaseReady();
   return new ExportRepository().getSnapshot(ownerId);
 }
+

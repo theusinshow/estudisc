@@ -1,0 +1,1 @@
+ALTER TABLE "review_schedules" ADD COLUMN "metadata" jsonb DEFAULT '{}'::jsonb NOT NULL;

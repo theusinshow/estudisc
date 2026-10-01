@@ -3,18 +3,24 @@ import Link from "next/link";
 import { AppShell } from "@/components/layout/app-shell";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
 import { getRecommendations } from "@/features/recommendations/api";
+import { SessionControls } from "@/features/study-sessions/session-controls";
+import { studySessionRepository } from "@/features/study-sessions/api";
+import { getOwnerId } from "@/features/auth/owner";
 
 export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   const recommendations = await getRecommendations();
   const primaryRecommendation = recommendations[0];
+  const sessions=await studySessionRepository().list(await getOwnerId());
 
   return (
     <AppShell>
       <section className="foundation-panel accent-panel accent-today" aria-labelledby="today-title">
         <p className="eyebrow">Today</p>
         <h1 id="today-title">Próxima ação</h1>
+        <SessionControls />
+        {sessions.filter(session=>session.status==="ACTIVE"||session.status==="PLANNED").map(session=><p key={session.id}><Link href={`/study/${session.id}`}>Retomar sessão de {session.budgetMinutes} min</Link></p>)}
         <p>A ordem é determinística: revisão vencida, erro ativo, continuidade do catálogo e aplicação em projeto.</p>
 
         {primaryRecommendation ? (

@@ -86,7 +86,7 @@ const activityDefinitions = {
   matching: educationalDefinition("matching"),
   "text-highlight": educationalDefinition("text-highlight"),
   "guided-steps": educationalDefinition("guided-steps"),
-  question: { type: "question", label: "Questão", parseConfig: input => questionReferenceSchema.parse(input), render: ({ config }) => <QuestionActivity config={config} /> }
+  question: { type: "question", label: "Questão", parseConfig: input => questionReferenceSchema.parse(input), render: ({ config,activity }) => <QuestionActivity config={config} activityStableId={activity.stableId} sessionId={activity.studySessionId} /> }
 } satisfies ActivityDefinitionMap;
 
 const executableActivityTypes = new Set<string>(["code", "debug"]);

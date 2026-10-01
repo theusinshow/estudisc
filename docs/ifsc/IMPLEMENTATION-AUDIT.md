@@ -56,3 +56,13 @@ The supplied minimal example parses structurally but activation rejects its not-
 Extended the existing registries with numeric, ordering, matching, classification, text-highlight, guided steps and numeric exploration. Controls support keyboard/touch without dragging; invalid configuration has a safe fallback. Question references freeze the bank version on import. Guided checks are formative; official durable submissions are connected in IFSC-04.
 
 Validation: 12 focused tests passed (interaction components, evaluator, registry, renderer and v2 import); `pnpm typecheck` and `pnpm lint` passed. Touch sizes follow generated v3 tokens. Integrated student mobile flow remains the IFSC-04 gate.
+
+## IFSC-04/05/06 — percentage slice, policies and sessions
+
+Functional slice implemented using existing Attempts/evidence/review/registry/catalog. Server scoring, response retry keys, monotonic hint/solution exposure, exact question references, distinct private Google owners and Admin route protection. PLANNED/ACTIVE/COMPLETED/ABANDONED sessions have owner-scoped transactional transitions; ACTIVE structure is frozen and resumes. Submitted answers survive reload. Results distinguish participation from mastery.
+
+Versioned mastery.v2/review.v2 preserve v1. Independent, varied, later retrieval and transfer are required for Mastered; retention can become review-due independently. Reviews use adaptive 1/3/7/14/30 scheduling. Self-rating in v2 is reflection and cannot create successful retrieval evidence.
+
+Evidence: focused profile/registry/import tests passed; migrated percentage integration passed (retry conflict, exactly one Attempt/evidence/review, owner isolation, frozen ACTIVE, result); deterministic policy tests passed; mobile Playwright percentage flow passed with 44px+ controls/no horizontal overflow/reload/result. Typecheck/lint passed.
+
+Content boundary: `packs/seeds/ifsc-2027.golden.track.v2.json` contains draft AI-authored MAT-07 with truthful provenance and six questions. No independent publication review is fabricated. Disposable tests alone simulate published data. Functional infrastructure is verified; live student content/publication and full content-readiness acceptance remain pending the QA gate. Planner generalization is next. No production migration or remote write.

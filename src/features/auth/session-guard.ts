@@ -25,3 +25,4 @@ export function isPublicRuntimePath(pathname: string) {
     pathname === "/favicon.ico"
   );
 }
+export function isAdminRuntimePath(pathname:string){return pathname==="/import"||pathname.startsWith("/admin")||pathname.startsWith("/api/import/")||pathname.startsWith("/api/generation/")||pathname.startsWith("/api/restore");}

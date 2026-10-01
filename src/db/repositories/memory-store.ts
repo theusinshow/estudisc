@@ -87,6 +87,10 @@ type MemoryAttempt = {
   output: JavaScriptEvaluationResult["execution"];
   tests: JavaScriptEvaluationResult["tests"];
   createdAt: Date;
+  submissionKey?:string;
+  response?:unknown;
+  questionVersionId?:string;
+  context?:Record<string,unknown>;
 };
 
 type MemoryConceptEvidence = {
@@ -103,6 +107,7 @@ type MemoryConceptEvidence = {
 };
 
 type MemoryReviewSchedule = {
+  metadata?:{stage:number;stabilityDays:number};
   ownerId: string;
   conceptStableId: string;
   currentMasteryState: string;
@@ -185,6 +190,9 @@ type MemoryPackImport = ExistingPackImport & {
 };
 
 type MemoryStore = {
+  questionAssistance: Array<{ownerId:string;questionId:string;version:number;contextKey:string;hintLevel:number;solutionRevealed:boolean}>;
+  questionExposures: Array<{ownerId:string;questionId:string;lastSeenAt:Date;timesSeen:number}>;
+  studySessions:Array<{id:string;ownerId:string;trackId:string;status:string;budgetMinutes:number;items:unknown;policyVersion:string;startedAt:Date|null;endedAt:Date|null;createdAt:Date}>;
   packImports: MemoryPackImport[];
   tracks: MemoryTrack[];
   modules: MemoryModule[];
@@ -201,7 +209,7 @@ type MemoryStore = {
   badgeAwards: MemoryBadgeAward[];
   missionProgress: MemoryMissionProgress[];
   missionProgressEvents: MemoryMissionProgressEvent[];
-  events: HistoryEvent[];
+  events: Array<HistoryEvent & {ownerId?:string}>;
   lessonProgressCount: number;
   trackProgressCount: number;
 };
@@ -212,6 +220,7 @@ const globalStore = globalThis as typeof globalThis & {
 
 export function getMemoryStore() {
   globalStore.__knowOsMemoryStore ??= {
+    questionAssistance:[],questionExposures:[],studySessions:[],
     packImports: [],
     tracks: [],
     modules: [],
@@ -655,6 +664,7 @@ export class MemoryActivityAttemptRepository {
     }
 
     this.store.events.push({
+      ownerId,
       id: `memory-event-${this.store.events.length + 1}`,
       type: "activity_submitted",
       entityType: "activity",
@@ -737,6 +747,13 @@ export class MemoryReviewRepository {
       return null;
     }
 
+    const prior=this.store.reviewSchedules.find(schedule=>schedule.ownerId===ownerId&&schedule.conceptStableId===conceptStableId);
+    if(prior?.policyVersion==="review.v2"){
+      if(quality<=2)prior.nextReviewAt=new Date(reviewedAt.getTime()+86400000);
+      this.store.events.push({ownerId,id:crypto.randomUUID(),type:"review_reflection",entityType:"concept",entityId:conceptStableId,payload:{quality,policyVersion:"review.v2"},occurredAt:reviewedAt});
+      return {conceptStableId,quality,nextReviewAt:prior.nextReviewAt,eventType:"review_completed"};
+    }
+
     const outcome = quality >= 3 ? "passed" : "failed";
     const nextReviewAt = calculateNextReviewAt({ quality, reviewCount: 1, reviewedAt });
     const sourceId = `memory-review-${this.store.conceptEvidence.length + 1}`;
@@ -786,6 +803,7 @@ export class MemoryReviewRepository {
     }
 
     this.store.events.push({
+      ownerId,
       id: `memory-event-${this.store.events.length + 1}`,
       type: "review_completed",
       entityType: "concept",
@@ -1227,7 +1245,7 @@ export class MemoryProgressRepository {
 export class MemoryHistoryRepository {
   constructor(private readonly store = getMemoryStore()) {}
 
-  async listEvents(): Promise<HistoryEvent[]> {
-    return [...this.store.events].sort((left, right) => right.occurredAt.getTime() - left.occurredAt.getTime());
+  async listEvents(ownerId="local-owner"): Promise<HistoryEvent[]> {
+    return this.store.events.filter(event=>!event.ownerId||event.ownerId===ownerId).sort((left, right) => right.occurredAt.getTime() - left.occurredAt.getTime());
   }
 }

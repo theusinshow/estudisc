@@ -1,4 +1,4 @@
-import { asc, eq } from "drizzle-orm";
+import { and, asc, desc, eq } from "drizzle-orm";
 import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 
 import { ensureDatabaseReady, getDatabase } from "@/db/connection";
@@ -211,7 +211,7 @@ export class CatalogRepository {
     };
   }
 
-  async getLesson(stableId: string): Promise<LessonDetail | null> {
+  async getLesson(stableId: string, version?:number): Promise<LessonDetail | null> {
     const [lesson] = await this.db
       .select({
         id: lessons.id,
@@ -223,7 +223,8 @@ export class CatalogRepository {
       .from(lessons)
       .innerJoin(modules, eq(modules.id, lessons.moduleId))
       .innerJoin(tracks, eq(tracks.id, modules.trackId))
-      .where(eq(lessons.stableId, stableId))
+      .where(version===undefined?eq(lessons.stableId, stableId):and(eq(lessons.stableId,stableId),eq(lessons.contentVersion,version)))
+      .orderBy(desc(lessons.contentVersion))
       .limit(1);
 
     if (!lesson) {

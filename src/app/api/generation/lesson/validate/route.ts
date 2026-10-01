@@ -1,10 +1,10 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { z } from "zod";
 import { NextResponse } from "next/server";
 
 import { readJsonRequestWithLimit } from "@/features/import/api";
 import { validateGeneratedLessonOutput } from "@/features/generation/generated-output-validation";
 import { getGenerationJobRepository } from "@/features/generation/server-repositories";
-import { getServerEnv } from "@/lib/env";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -41,7 +41,7 @@ export async function POST(request: Request) {
 
   if (requestBody.data.jobId) {
     await getGenerationJobRepository().updateStatus(
-      getServerEnv().KNOW_OS_OWNER_ID,
+      await getOwnerId(),
       requestBody.data.jobId,
       result.status === "ready_to_preview" ? "ready_to_import" : "invalid"
     );
@@ -56,3 +56,4 @@ export async function POST(request: Request) {
 
   return NextResponse.json(result);
 }
+

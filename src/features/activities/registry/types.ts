@@ -12,6 +12,7 @@ export type ActivityRecord = Readonly<{
   type: string;
   prompt: string;
   config: unknown;
+  studySessionId?:string;
 }>;
 
 export type ActivityConfigByType = {

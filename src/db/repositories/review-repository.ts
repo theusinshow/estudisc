@@ -82,6 +82,14 @@ export class ReviewRepository {
       if (!concept) {
         return null;
       }
+      const [existingReview]=await tx.select().from(reviewSchedules).where(and(eq(reviewSchedules.ownerId,ownerId),eq(reviewSchedules.conceptId,concept.id))).for("update");
+      if(existingReview?.policyVersion==="review.v2"){
+        // Self-rating is useful reflection, but does not prove successful retrieval.
+        const nextReviewAt=quality<=2?new Date(reviewedAt.getTime()+86400000):existingReview.nextReviewAt;
+        await tx.update(reviewSchedules).set({nextReviewAt,updatedAt:reviewedAt}).where(eq(reviewSchedules.id,existingReview.id));
+        await tx.insert(studyEvents).values({ownerId,type:"review_reflection",entityType:"concept",entityId:conceptStableId,payload:{quality,policyVersion:"review.v2"}});
+        return {conceptStableId,quality,nextReviewAt,eventType:"review_completed"};
+      }
 
       const nextReviewAt = calculateNextReviewAt({
         quality,

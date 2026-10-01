@@ -153,3 +153,11 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 - Added accessible educational interactions and numeric exploration through existing registries.
 - Bound shared question activity references to immutable question versions; unavailable content fails safely.
 - Validated 12 focused tests, typecheck and lint.
+
+## 2026-10-01 — IFSC student slice and versioned policies
+
+- Server-scored Questions emit immutable, idempotent Attempts and append-only multi-Concept evidence.
+- Private Google identities have separate owner IDs and explicit ADMIN/STUDENT roles.
+- Added persisted study sessions, frozen active structure, resumption and result summaries.
+- Added deterministic mastery.v2/review.v2 while retaining v1. Hints and solution exposure reduce independence; self-rating cannot prove retrieval.
+- MAT-07 seed remains draft pending independent QA. Integration uses disposable published fixtures; mobile slice passed.

@@ -1,3 +1,4 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { z } from "zod";
 import { NextResponse } from "next/server";
 
@@ -8,7 +9,6 @@ import { getGenerationJobRepository } from "@/features/generation/server-reposit
 import { buildTrackPackFromGeneratedLesson } from "@/features/generation/manual-generation-service";
 import { generationImportTargetSchema } from "@/features/generation/contracts";
 import { importTrackPack, readJsonRequestWithLimit } from "@/features/import/api";
-import { getServerEnv } from "@/lib/env";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -59,7 +59,7 @@ export async function POST(request: Request) {
 
     if (requestBody.data.jobId) {
       await getGenerationJobRepository().updateStatus(
-        getServerEnv().KNOW_OS_OWNER_ID,
+        await getOwnerId(),
         requestBody.data.jobId,
         result.status === "imported" || result.status === "already_imported" ? "imported" : "invalid"
       );
@@ -91,3 +91,4 @@ export async function POST(request: Request) {
     );
   }
 }
+

@@ -1,3 +1,4 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { getDatabaseUrl } from "@/db/connection";
 import { CatalogRepository, withCatalogRepository } from "@/db/repositories/catalog-repository";
 import {
@@ -9,11 +10,10 @@ import {
 import { MistakeRepository } from "@/db/repositories/mistake-repository";
 import { ProjectRepository } from "@/db/repositories/project-repository";
 import { ReviewRepository } from "@/db/repositories/review-repository";
-import { getServerEnv } from "@/lib/env";
 import { buildRecommendations } from "@/features/recommendations/recommendation-rules";
 
 export async function getRecommendations() {
-  const ownerId = getServerEnv().KNOW_OS_OWNER_ID;
+  const ownerId = await getOwnerId();
 
   if (getDatabaseUrl() === "memory://local") {
     const [dueReviews, mistakes, tracks, projects] = await Promise.all([
@@ -37,3 +37,4 @@ export async function getRecommendations() {
     return buildRecommendations({ dueReviews, mistakes, tracks, projects });
   });
 }
+

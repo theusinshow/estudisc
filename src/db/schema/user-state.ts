@@ -1,6 +1,7 @@
 import { index, integer, jsonb, pgTable, primaryKey, text, timestamp, uniqueIndex, uuid } from "drizzle-orm/pg-core";
 
 import { activities, concepts, lessons, tracks } from "@/db/schema/content";
+import { questionVersions } from "@/db/schema/questions";
 
 export const owners = pgTable("owners", {
   id: text("id").primaryKey(),
@@ -53,8 +54,11 @@ export const attempts = pgTable("attempts", {
   outcome: text("outcome").notNull(),
   output: jsonb("output").notNull(),
   evaluatorVersion: text("evaluator_version").notNull(),
+  submissionKey: text("submission_key"),
+  questionVersionId: uuid("question_version_id").references(() => questionVersions.id),
+  context: jsonb("context").notNull().default({}),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow()
-});
+}, table => [uniqueIndex("attempts_owner_submission_idx").on(table.ownerId, table.submissionKey)]);
 
 export const conceptEvidence = pgTable(
   "concept_evidence",
@@ -96,6 +100,7 @@ export const reviewSchedules = pgTable(
     reviewCount: integer("review_count").notNull().default(0),
     recentQuality: integer("recent_quality").notNull().default(0),
     policyVersion: text("policy_version").notNull(),
+    metadata: jsonb("metadata").notNull().default({}),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow()
   },
   (table) => [

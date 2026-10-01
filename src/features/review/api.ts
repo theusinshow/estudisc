@@ -1,13 +1,13 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { getDatabaseUrl } from "@/db/connection";
 import { MemoryReviewRepository } from "@/db/repositories/memory-store";
 import { ReviewRepository } from "@/db/repositories/review-repository";
-import { getServerEnv } from "@/lib/env";
 import type { ReviewQuality } from "@/features/review/review-policy";
 
 type ReviewStore = Pick<ReviewRepository, "completeReview" | "listDueReviews">;
 
 export async function getDueReviews(repository: ReviewStore = createReviewRepository()) {
-  return repository.listDueReviews(getServerEnv().KNOW_OS_OWNER_ID);
+  return repository.listDueReviews(await getOwnerId());
 }
 
 export async function completeConceptReview(
@@ -16,7 +16,7 @@ export async function completeConceptReview(
   repository: ReviewStore = createReviewRepository()
 ) {
   return repository.completeReview({
-    ownerId: getServerEnv().KNOW_OS_OWNER_ID,
+    ownerId: await getOwnerId(),
     conceptStableId,
     quality
   });
@@ -29,3 +29,4 @@ function createReviewRepository(): ReviewStore {
 
   return new ReviewRepository();
 }
+

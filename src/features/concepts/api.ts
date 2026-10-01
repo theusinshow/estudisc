@@ -1,9 +1,9 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { ConceptEvidenceRepository } from "@/db/repositories/concept-evidence-repository";
 import { getDatabaseUrl } from "@/db/connection";
 import { withCatalogRepository } from "@/db/repositories/catalog-repository";
 import { MemoryCatalogRepository, MemoryConceptEvidenceRepository } from "@/db/repositories/memory-store";
-import { calculateConceptMastery } from "@/features/mastery/mastery-policy";
-import { getServerEnv } from "@/lib/env";
+import { calculateVersionedMastery } from "@/features/mastery/mastery-policy-v2";
 
 export async function getConcept(stableId: string) {
   if (getDatabaseUrl() === "memory://local") {
@@ -13,10 +13,10 @@ export async function getConcept(stableId: string) {
       return null;
     }
 
-    const evidence = await new MemoryConceptEvidenceRepository().listForConcept(getServerEnv().KNOW_OS_OWNER_ID, stableId);
+    const evidence = await new MemoryConceptEvidenceRepository().listForConcept(await getOwnerId(), stableId);
     return {
       ...concept,
-      mastery: calculateConceptMastery(evidence)
+      mastery: calculateVersionedMastery(evidence)
     };
   }
 
@@ -27,10 +27,11 @@ export async function getConcept(stableId: string) {
       return null;
     }
 
-    const evidence = await new ConceptEvidenceRepository().listForConcept(getServerEnv().KNOW_OS_OWNER_ID, stableId);
+    const evidence = await new ConceptEvidenceRepository().listForConcept(await getOwnerId(), stableId);
     return {
       ...concept,
-      mastery: calculateConceptMastery(evidence)
+      mastery: calculateVersionedMastery(evidence)
     };
   });
 }
+

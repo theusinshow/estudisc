@@ -1,14 +1,15 @@
+import { getOwnerId } from "@/features/auth/owner";
 import { getDatabaseUrl } from "@/db/connection";
 import { withHistoryRepository } from "@/db/repositories/history-repository";
 import { MemoryHistoryRepository } from "@/db/repositories/memory-store";
-import { getServerEnv } from "@/lib/env";
 
 export async function listHistoryEvents() {
-  const ownerId = getServerEnv().KNOW_OS_OWNER_ID;
+  const ownerId = await getOwnerId();
 
   if (getDatabaseUrl() === "memory://local") {
-    return new MemoryHistoryRepository().listEvents();
+    return new MemoryHistoryRepository().listEvents(ownerId);
   }
 
   return withHistoryRepository((repository) => repository.listEvents(ownerId));
 }
+
