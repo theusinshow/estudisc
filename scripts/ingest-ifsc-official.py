@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'sources/ifsc/historical'
 OUTPUT=ROOT/'.local/ifsc-official'
 NAMESPACE=uuid.UUID('145c1956-287d-5172-b121-b1b2b7e6bc61')
-HEADER=re.compile(r'^(MINIST[ÉE]RIO|INSTITUTO FEDERAL|PR[ÓO]-REITORIA|DEPARTAMENTO DE INGRESSO|Exame de Classifica|\d{1,2}$)')
+HEADER=re.compile(r'^(Santa Catarina\s+PR[ÓO]-REITORIA|Santa Catarina$|MINIST[ÉE]RIO|INSTITUTO FEDERAL|PR[ÓO]-REITORIA|DEPARTAMENTO DE INGRESSO|Exame de Classifica|\d{1,2}$)')
 def normalized(text):return ''.join(c for c in unicodedata.normalize('NFD',text.upper()) if unicodedata.category(c)!='Mn')
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def clean(text):return '\n'.join(line for line in text.splitlines() if not HEADER.match(line.strip())).strip()

@@ -1,0 +1,322 @@
+{
+  "status": "draft_pending_human_review",
+  "lessons": [
+    {
+      "id": "MAT-02",
+      "title": "Divisibilidade, primos, MMC e MDC",
+      "estimatedMinutes": 40,
+      "conceptTitles": {
+        "MAT.DIV.DIVISIBILITY": "Critérios de divisibilidade",
+        "MAT.DIV.PRIME": "Números primos e compostos",
+        "MAT.DIV.FACTORIZATION": "Fatoração em números primos",
+        "MAT.DIV.MMC": "Mínimo múltiplo comum (MMC)",
+        "MAT.DIV.MDC": "Máximo divisor comum (MDC)",
+        "MAT.DIV.MODEL": "Decidir entre MMC e MDC em um problema"
+      },
+      "hook": "Dois ônibus saem juntos do terminal: um passa a cada 20 minutos e o outro a cada 30 minutos. Quando vão sair juntos de novo? E se você quiser cortar duas fitas em pedaços iguais do maior tamanho possível? MMC e MDC respondem perguntas assim.",
+      "concepts": [
+        { "conceptId": "MAT.DIV.DIVISIBILITY", "title": "Critérios de divisibilidade", "content": "Um número é divisível por 2 se termina em algarismo par; por 3 se a soma dos algarismos é múltiplo de 3; por 5 se termina em 0 ou 5; por 9 se a soma dos algarismos é múltiplo de 9; por 10 se termina em 0. Exemplo: 471 tem soma 4 + 7 + 1 = 12, então é divisível por 3, mas não por 9." },
+        { "conceptId": "MAT.DIV.PRIME", "title": "Primos e compostos", "content": "Um número primo tem exatamente dois divisores naturais: 1 e ele mesmo (2, 3, 5, 7, 11, 13, ...). Um número composto tem mais de dois divisores. O número 1 não é primo nem composto, e 2 é o único primo par." },
+        { "conceptId": "MAT.DIV.FACTORIZATION", "title": "Fatoração em primos", "content": "Todo número natural maior que 1 pode ser escrito como produto de primos de um único jeito (sem contar a ordem). Divida sucessivamente pelo menor primo possível. Exemplo: 60 = 2 × 2 × 3 × 5 = 2² × 3 × 5." },
+        { "conceptId": "MAT.DIV.MMC", "title": "MMC", "content": "O mínimo múltiplo comum é o menor número positivo que é múltiplo de todos os números dados. Pela fatoração, multiplique todos os primos que aparecem, cada um com o maior expoente. Exemplo: 12 = 2² × 3 e 18 = 2 × 3², então MMC = 2² × 3² = 36." },
+        { "conceptId": "MAT.DIV.MDC", "title": "MDC", "content": "O máximo divisor comum é o maior número que divide todos os números dados. Pela fatoração, multiplique apenas os primos comuns, cada um com o menor expoente. Exemplo: MDC(12, 18) = 2 × 3 = 6. Se o MDC é 1, os números são primos entre si." },
+        { "conceptId": "MAT.DIV.MODEL", "title": "MMC ou MDC?", "content": "Use MMC quando eventos se repetem e você quer saber quando voltam a coincidir (o resultado é maior ou igual aos números dados). Use MDC quando quer repartir ou cortar em partes iguais, do maior tamanho possível, sem sobras (o resultado é menor ou igual aos números dados)." }
+      ],
+      "examples": [
+        { "title": "Luzes que piscam juntas", "content": "Uma luz pisca a cada 4 s e outra a cada 6 s; agora piscaram juntas. 1. A pergunta é sobre coincidência no tempo: MMC. 2. 4 = 2² e 6 = 2 × 3. 3. MMC = 2² × 3 = 12. Elas piscam juntas de novo em 12 s.", "conceptIds": ["MAT.DIV.MMC", "MAT.DIV.MODEL"] },
+        { "title": "Kits iguais", "content": "Há 24 cadernos e 40 canetas para montar o maior número de kits iguais, sem sobras. 1. Repartir sem sobra: MDC. 2. 24 = 2³ × 3 e 40 = 2³ × 5. 3. MDC = 2³ = 8 kits. Cada kit tem 24 ÷ 8 = 3 cadernos e 40 ÷ 8 = 5 canetas.", "conceptIds": ["MAT.DIV.MDC", "MAT.DIV.MODEL", "MAT.DIV.FACTORIZATION"] }
+      ],
+      "warning": { "title": "Não troque MMC por MDC", "content": "Se a resposta do problema de repartir saiu maior que as quantidades dadas, você usou MMC no lugar de MDC. Confira: o MDC nunca passa do menor número, e o MMC nunca fica abaixo do maior." },
+      "summary": "Critérios: 2 (par), 3 (soma múltipla de 3), 5 (termina em 0 ou 5), 9 (soma múltipla de 9). Primo tem exatamente dois divisores; 1 não é primo. MMC: todos os primos com maior expoente, para coincidências. MDC: primos comuns com menor expoente, para repartir sem sobra.",
+      "questions": [
+        { "conceptIds": ["MAT.DIV.DIVISIBILITY"], "type": "mc", "difficulty": "direct", "ops": ["identify"], "stem": "Qual número é divisível por 3 e por 5 ao mesmo tempo?", "choices": ["125", "243", "135", "352", "110"], "correct": 2, "explanation": "135 termina em 5 (divisível por 5) e 1 + 3 + 5 = 9 é múltiplo de 3. 125 e 110 não passam no critério do 3 (somas 8 e 2); 243 e 352 não terminam em 0 ou 5." },
+        { "conceptIds": ["MAT.DIV.DIVISIBILITY"], "type": "num", "difficulty": "applied", "ops": ["apply"], "stem": "No número 47□, o símbolo □ representa um algarismo. Qual algarismo torna o número divisível por 9?", "value": 7, "hints": ["Some os algarismos conhecidos: 4 + 7.", "A soma total precisa ser múltiplo de 9."], "explanation": "4 + 7 = 11. O próximo múltiplo de 9 é 18, então □ = 18 − 11 = 7. O número 477 tem soma 18 e é divisível por 9 (477 ÷ 9 = 53)." },
+        { "conceptIds": ["MAT.DIV.PRIME"], "type": "mc", "difficulty": "foundation", "ops": ["identify"], "stem": "Qual dos números abaixo é primo?", "choices": ["21", "27", "33", "29", "39"], "correct": 3, "explanation": "29 só é divisível por 1 e por 29. Os outros são compostos: 21 = 3 × 7, 27 = 3 × 9, 33 = 3 × 11, 39 = 3 × 13." },
+        { "conceptIds": ["MAT.DIV.PRIME"], "type": "num", "difficulty": "direct", "ops": ["identify"], "stem": "Quantos números primos existem entre 20 e 40?", "value": 4, "explanation": "Os primos entre 20 e 40 são 23, 29, 31 e 37. Todos os outros têm divisores além de 1 e de si mesmos (por exemplo, 21 = 3 × 7, 25 = 5 × 5, 33 = 3 × 11, 39 = 3 × 13)." },
+        { "conceptIds": ["MAT.DIV.FACTORIZATION"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Qual é a fatoração de 360 em números primos?", "choices": ["2³ × 3² × 5", "2² × 3² × 10", "2³ × 3 × 15", "2⁴ × 3 × 5", "2 × 3 × 5 × 12"], "correct": 0, "explanation": "360 = 2 × 180 = 2 × 2 × 90 = 2 × 2 × 2 × 45 = 2³ × 3² × 5. As opções com 10, 15 e 12 dão 360, mas esses fatores não são primos. 2⁴ × 3 × 5 = 240." },
+        { "conceptIds": ["MAT.DIV.FACTORIZATION"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Um número tem fatoração 2² × 3 × 7. Qual é esse número?", "value": 84, "explanation": "2² × 3 × 7 = 4 × 3 × 7 = 12 × 7 = 84." },
+        { "conceptIds": ["MAT.DIV.MMC", "MAT.DIV.FACTORIZATION"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule o MMC de 12 e 18.", "value": 36, "explanation": "12 = 2² × 3 e 18 = 2 × 3². MMC: todos os primos com o maior expoente: 2² × 3² = 4 × 9 = 36." },
+        { "conceptIds": ["MAT.DIV.MMC", "MAT.DIV.MODEL"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "s", "stem": "Uma luz vermelha pisca a cada 6 segundos e uma verde a cada 8 segundos. Elas acabaram de piscar juntas. Daqui a quantos segundos vão piscar juntas novamente?", "value": 24, "explanation": "Coincidência de eventos repetidos: MMC. 6 = 2 × 3 e 8 = 2³. MMC = 2³ × 3 = 24 segundos.", "exit": true },
+        { "conceptIds": ["MAT.DIV.MDC", "MAT.DIV.FACTORIZATION"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule o MDC de 48 e 72.", "value": 24, "explanation": "48 = 2⁴ × 3 e 72 = 2³ × 3². MDC: primos comuns com o menor expoente: 2³ × 3 = 24." },
+        { "conceptIds": ["MAT.DIV.MDC"], "type": "mc", "difficulty": "direct", "ops": ["analyze"], "stem": "Qual par de números é formado por primos entre si (MDC igual a 1)?", "choices": ["12 e 18", "15 e 28", "21 e 35", "20 e 30", "9 e 27"], "correct": 1, "explanation": "15 = 3 × 5 e 28 = 2² × 7 não têm fator primo em comum, então MDC = 1. Os demais pares têm MDC 6, 7, 10 e 9." },
+        { "conceptIds": ["MAT.DIV.MDC", "MAT.DIV.MODEL"], "type": "mc", "difficulty": "applied", "ops": ["apply"], "stem": "Uma professora tem 36 lápis e 54 borrachas e quer montar o maior número possível de kits iguais, usando todo o material, sem sobras. Quantos kits ela consegue montar?", "choices": ["6", "9", "18", "108", "12"], "correct": 2, "explanation": "Repartir em partes iguais sem sobra: MDC. 36 = 2² × 3² e 54 = 2 × 3³. MDC = 2 × 3² = 18 kits, cada um com 2 lápis e 3 borrachas. 108 é o MMC, que não faz sentido aqui.", "exit": true },
+        { "conceptIds": ["MAT.DIV.MODEL"], "type": "mc", "difficulty": "direct", "ops": ["interpret"], "stem": "Dois ônibus saem juntos às 7h. Um sai a cada 20 minutos e o outro a cada 30 minutos. Qual cálculo indica daqui a quantos minutos eles voltarão a sair juntos?", "choices": ["MDC de 20 e 30", "MMC de 20 e 30", "20 + 30", "30 − 20", "20 × 30 ÷ 2"], "correct": 1, "explanation": "Eventos que se repetem e voltam a coincidir: MMC. MMC(20, 30) = 60, ou seja, voltam a sair juntos às 8h." },
+        { "conceptIds": ["MAT.DIV.MODEL", "MAT.DIV.MDC"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "cm", "stem": "Duas fitas medem 84 cm e 120 cm. Elas serão cortadas em pedaços todos do mesmo tamanho, o maior possível, sem sobras. Qual será o comprimento de cada pedaço?", "value": 12, "explanation": "Cortar em partes iguais do maior tamanho possível: MDC. 84 = 2² × 3 × 7 e 120 = 2³ × 3 × 5. MDC = 2² × 3 = 12 cm (7 pedaços de uma fita e 10 da outra).", "exit": true }
+      ]
+    },
+    {
+      "id": "MAT-03",
+      "title": "Frações",
+      "estimatedMinutes": 40,
+      "prerequisiteConceptIds": ["MAT.FRACTION.MEANING", "MAT.DIV.MMC", "MAT.DIV.MDC"],
+      "conceptTitles": {
+        "MAT.FRACTION.EQUIVALENCE": "Frações equivalentes",
+        "MAT.FRACTION.SIMPLIFY": "Simplificação de frações",
+        "MAT.FRACTION.COMPARE": "Comparação de frações",
+        "MAT.FRACTION.OPERATIONS": "Operações com frações",
+        "MAT.FRACTION.CONTEXT": "Frações em situações-problema"
+      },
+      "hook": "Uma pizza foi cortada em 8 pedaços e você comeu 2. Outra, do mesmo tamanho, foi cortada em 4 e você comeu 1. Você comeu a mesma quantidade nas duas? Frações equivalentes mostram que sim.",
+      "concepts": [
+        { "conceptId": "MAT.FRACTION.EQUIVALENCE", "title": "Frações equivalentes", "content": "Frações equivalentes representam a mesma quantidade. Para obter uma, multiplique ou divida numerador e denominador pelo mesmo número diferente de zero. Exemplo: 2/8 = 1/4, pois 2 ÷ 2 = 1 e 8 ÷ 2 = 4." },
+        { "conceptId": "MAT.FRACTION.SIMPLIFY", "title": "Simplificar", "content": "Simplificar é dividir numerador e denominador pelo mesmo número até que não tenham divisor comum além de 1 (forma irredutível). O caminho mais rápido é dividir pelo MDC. Exemplo: 18/24, MDC = 6, então 18/24 = 3/4." },
+        { "conceptId": "MAT.FRACTION.COMPARE", "title": "Comparar frações", "content": "Com denominadores iguais, é maior a fração com maior numerador. Com denominadores diferentes, escreva frações equivalentes com o mesmo denominador (use o MMC) e compare os numeradores. Exemplo: 2/3 = 8/12 e 3/4 = 9/12, logo 3/4 > 2/3." },
+        { "conceptId": "MAT.FRACTION.OPERATIONS", "title": "Operar com frações", "content": "Somar ou subtrair: iguale os denominadores (MMC) e opere os numeradores. Multiplicar: numerador vezes numerador e denominador vezes denominador. Dividir: mantenha a primeira e multiplique pelo inverso da segunda. Exemplo: 1/2 + 1/3 = 3/6 + 2/6 = 5/6." },
+        { "conceptId": "MAT.FRACTION.CONTEXT", "title": "Fração de uma quantidade", "content": "Para calcular uma fração de uma quantidade, divida pelo denominador e multiplique pelo numerador. Exemplo: 3/5 de 40 = (40 ÷ 5) × 3 = 24. Quando o problema fala em 'o que sobra', calcule 1 menos as partes usadas." }
+      ],
+      "examples": [
+        { "title": "Soma com denominadores diferentes", "content": "Calcule 2/3 + 1/4. 1. MMC(3, 4) = 12. 2. 2/3 = 8/12 e 1/4 = 3/12. 3. 8/12 + 3/12 = 11/12, que já é irredutível.", "conceptIds": ["MAT.FRACTION.OPERATIONS", "MAT.FRACTION.EQUIVALENCE"] },
+        { "title": "O que sobrou da mesada", "content": "Ana gastou 1/2 da mesada com lanche e 1/5 com transporte. 1. Gasto total: 1/2 + 1/5 = 5/10 + 2/10 = 7/10. 2. Sobra: 1 − 7/10 = 3/10. 3. Se a mesada é R$ 50, sobram (50 ÷ 10) × 3 = R$ 15.", "conceptIds": ["MAT.FRACTION.CONTEXT", "MAT.FRACTION.OPERATIONS"] }
+      ],
+      "warning": { "title": "Não some denominadores", "content": "1/2 + 1/3 não é 2/5. Somar denominadores muda o tamanho das partes. Primeiro iguale os denominadores: 3/6 + 2/6 = 5/6." },
+      "summary": "Equivalentes: multiplique ou divida em cima e embaixo pelo mesmo número. Simplifique dividindo pelo MDC. Para comparar, somar e subtrair, use denominador comum (MMC). Multiplicação: em linha. Divisão: multiplique pelo inverso. Fração de quantidade: divida pelo denominador e multiplique pelo numerador.",
+      "questions": [
+        { "conceptIds": ["MAT.FRACTION.EQUIVALENCE"], "type": "mc", "difficulty": "foundation", "ops": ["identify"], "stem": "Qual fração é equivalente a 3/4?", "choices": ["4/5", "9/12", "3/8", "6/4", "5/6"], "correct": 1, "explanation": "Multiplicando numerador e denominador de 3/4 por 3: 9/12. Somar 1 em cima e embaixo (4/5) não gera fração equivalente." },
+        { "conceptIds": ["MAT.FRACTION.EQUIVALENCE"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Complete a igualdade 2/5 = x/35. Qual é o valor de x?", "value": 14, "explanation": "O denominador foi multiplicado por 7 (5 × 7 = 35). O numerador também deve ser: 2 × 7 = 14." },
+        { "conceptIds": ["MAT.FRACTION.SIMPLIFY"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Qual é a forma irredutível de 18/24?", "choices": ["9/12", "6/8", "2/3", "4/3", "3/4"], "correct": 4, "explanation": "MDC(18, 24) = 6. 18 ÷ 6 = 3 e 24 ÷ 6 = 4, logo 3/4. 9/12 e 6/8 são equivalentes, mas ainda podem ser simplificadas." },
+        { "conceptIds": ["MAT.FRACTION.SIMPLIFY"], "type": "mc", "difficulty": "direct", "ops": ["analyze"], "stem": "Qual fração já está na forma irredutível?", "choices": ["14/21", "10/25", "9/16", "12/30", "8/20"], "correct": 2, "explanation": "9 = 3² e 16 = 2⁴ não têm fator comum, então 9/16 é irredutível. As outras simplificam por 7, 5, 6 e 4." },
+        { "conceptIds": ["MAT.FRACTION.COMPARE"], "type": "mc", "difficulty": "direct", "ops": ["compare"], "stem": "Qual é a maior fração?", "choices": ["3/5", "5/8", "2/3", "7/12", "1/2"], "correct": 2, "explanation": "Com denominador 120: 3/5 = 72/120, 5/8 = 75/120, 2/3 = 80/120, 7/12 = 70/120, 1/2 = 60/120. A maior é 2/3." },
+        { "conceptIds": ["MAT.FRACTION.COMPARE", "MAT.FRACTION.EQUIVALENCE"], "type": "mc", "difficulty": "direct", "ops": ["compare"], "stem": "Qual alternativa coloca 3/4, 2/3 e 5/6 em ordem crescente?", "choices": ["3/4 < 2/3 < 5/6", "2/3 < 3/4 < 5/6", "5/6 < 3/4 < 2/3", "2/3 < 5/6 < 3/4", "3/4 < 5/6 < 2/3"], "correct": 1, "explanation": "Com denominador 12: 2/3 = 8/12, 3/4 = 9/12 e 5/6 = 10/12. Logo 2/3 < 3/4 < 5/6." },
+        { "conceptIds": ["MAT.FRACTION.OPERATIONS"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule 2/3 + 1/4.", "choices": ["3/7", "11/12", "3/12", "2/7", "5/6"], "correct": 1, "explanation": "MMC(3, 4) = 12. 2/3 = 8/12 e 1/4 = 3/12. 8/12 + 3/12 = 11/12. A resposta 3/7 vem do erro de somar numeradores e denominadores." },
+        { "conceptIds": ["MAT.FRACTION.OPERATIONS"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule (3/5) ÷ (3/10).", "value": 2, "explanation": "Mantenha a primeira e multiplique pelo inverso da segunda: 3/5 × 10/3 = 30/15 = 2." },
+        { "conceptIds": ["MAT.FRACTION.OPERATIONS"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule 3/4 × 2/9 e simplifique.", "choices": ["1/6", "5/13", "27/8", "6/13", "2/3"], "correct": 0, "explanation": "3/4 × 2/9 = 6/36 = 1/6. 27/8 seria o resultado de multiplicar pelo inverso (divisão), e 5/13 vem de somar em linha." },
+        { "conceptIds": ["MAT.FRACTION.CONTEXT"], "type": "num", "difficulty": "applied", "ops": ["apply"], "stem": "Uma turma tem 32 alunos, e 3/8 deles praticam vôlei. Quantos alunos praticam vôlei?", "value": 12, "explanation": "3/8 de 32 = (32 ÷ 8) × 3 = 4 × 3 = 12 alunos.", "exit": true },
+        { "conceptIds": ["MAT.FRACTION.CONTEXT", "MAT.FRACTION.OPERATIONS"], "type": "mc", "difficulty": "applied", "ops": ["apply"], "stem": "Uma família gasta 1/3 da renda com aluguel e 1/4 com alimentação. Que fração da renda sobra para o resto?", "choices": ["2/7", "7/12", "1/12", "5/12", "5/7"], "correct": 3, "explanation": "Gasto: 1/3 + 1/4 = 4/12 + 3/12 = 7/12. Sobra: 1 − 7/12 = 5/12. 7/12 é o que foi gasto, não o que sobra.", "exit": true },
+        { "conceptIds": ["MAT.FRACTION.OPERATIONS", "MAT.FRACTION.CONTEXT"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "xícaras", "stem": "Uma receita de bolo usa 3/4 de xícara de açúcar. Quantas xícaras de açúcar são necessárias para fazer 6 receitas? (Responda em número decimal.)", "value": 4.5, "explanation": "6 × 3/4 = 18/4 = 9/2 = 4,5 xícaras.", "exit": true }
+      ]
+    },
+    {
+      "id": "MAT-04",
+      "title": "Decimais e notação científica",
+      "estimatedMinutes": 40,
+      "prerequisiteConceptIds": ["MAT.DECIMAL.MEANING", "MAT.FRACTION.SIMPLIFY"],
+      "conceptTitles": {
+        "MAT.DECIMAL.OPERATIONS": "Operações com números decimais",
+        "MAT.FRACTION.DECIMAL.CONVERT": "Conversão entre frações e decimais",
+        "MAT.SCI.NOTATION.READ": "Leitura da notação científica",
+        "MAT.SCI.NOTATION.CONVERT": "Escrever números em notação científica",
+        "MAT.SCI.NOTATION.OPERATE": "Operações em notação científica"
+      },
+      "hook": "A luz percorre cerca de 300 000 km por segundo, e uma bactéria pode medir 0,000002 m. Escrever tantos zeros é cansativo e fácil de errar. A notação científica resolve isso: 3 × 10⁵ km/s e 2 × 10⁻⁶ m.",
+      "concepts": [
+        { "conceptId": "MAT.DECIMAL.OPERATIONS", "title": "Operar com decimais", "content": "Na adição e na subtração, alinhe as vírgulas. Na multiplicação, multiplique sem vírgula e dê ao resultado tantas casas decimais quanto a soma das casas dos fatores: 0,3 × 0,2 = 0,06. Na divisão, multiplique dividendo e divisor pela mesma potência de 10 para eliminar a vírgula do divisor: 1,2 ÷ 0,4 = 12 ÷ 4 = 3." },
+        { "conceptId": "MAT.FRACTION.DECIMAL.CONVERT", "title": "Fração ↔ decimal", "content": "Para passar de fração para decimal, divida o numerador pelo denominador: 3/8 = 3 ÷ 8 = 0,375. Para passar de decimal para fração, escreva o número sem vírgula sobre 10, 100, 1000... conforme as casas decimais e simplifique: 0,45 = 45/100 = 9/20." },
+        { "conceptId": "MAT.SCI.NOTATION.READ", "title": "Ler notação científica", "content": "Um número em notação científica tem a forma a × 10ⁿ, com 1 ≤ a < 10 e n inteiro. Expoente positivo desloca a vírgula para a direita (número grande); expoente negativo desloca para a esquerda (número pequeno). Exemplo: 4,2 × 10³ = 4 200 e 4,2 × 10⁻³ = 0,0042." },
+        { "conceptId": "MAT.SCI.NOTATION.CONVERT", "title": "Escrever em notação científica", "content": "Coloque a vírgula logo após o primeiro algarismo diferente de zero e conte quantas casas ela andou. Se o número original é grande, o expoente é positivo; se é menor que 1, é negativo. Exemplo: 72 000 = 7,2 × 10⁴ e 0,0035 = 3,5 × 10⁻³." },
+        { "conceptId": "MAT.SCI.NOTATION.OPERATE", "title": "Multiplicar e dividir", "content": "Multiplique (ou divida) as partes a e some (ou subtraia) os expoentes de 10. Depois ajuste para que a parte a fique entre 1 e 10. Exemplo: (4 × 10³) × (5 × 10²) = 20 × 10⁵ = 2 × 10⁶." }
+      ],
+      "examples": [
+        { "title": "Troco com decimais", "content": "Comprei 3 cadernos de R$ 7,45 e paguei com R$ 50,00. 1. 3 × 7,45 = 22,35. 2. 50,00 − 22,35 = 27,65. O troco é R$ 27,65.", "conceptIds": ["MAT.DECIMAL.OPERATIONS"] },
+        { "title": "Divisão em notação científica", "content": "Calcule (6 × 10⁸) ÷ (3 × 10⁵). 1. 6 ÷ 3 = 2. 2. 10⁸ ÷ 10⁵ = 10⁸⁻⁵ = 10³. 3. Resultado: 2 × 10³ = 2 000.", "conceptIds": ["MAT.SCI.NOTATION.OPERATE"] }
+      ],
+      "warning": { "title": "A parte 'a' precisa ficar entre 1 e 10", "content": "25 × 10⁴ e 0,8 × 10³ representam números corretos, mas não estão em notação científica. Ajuste: 25 × 10⁴ = 2,5 × 10⁵ e 0,8 × 10³ = 8 × 10². Quando a vírgula anda para a esquerda, o expoente aumenta." },
+      "summary": "Some e subtraia decimais com vírgulas alinhadas; na multiplicação, conte as casas. Fração → decimal: divida. Decimal → fração: denominador 10, 100, 1000 e simplifique. Notação científica: a × 10ⁿ com 1 ≤ a < 10. Multiplicação: multiplique os a e some os expoentes; divisão: divida os a e subtraia os expoentes.",
+      "questions": [
+        { "conceptIds": ["MAT.DECIMAL.OPERATIONS"], "type": "num", "difficulty": "foundation", "ops": ["calculate"], "stem": "Calcule 3,75 + 2,4.", "value": 6.15, "explanation": "Alinhando as vírgulas: 3,75 + 2,40 = 6,15. Errar o alinhamento (3,75 + 0,24) daria 3,99." },
+        { "conceptIds": ["MAT.DECIMAL.OPERATIONS"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule 0,6 × 0,4.", "value": 0.24, "explanation": "6 × 4 = 24. Os fatores têm 1 + 1 = 2 casas decimais, então o resultado é 0,24 (e não 2,4)." },
+        { "conceptIds": ["MAT.DECIMAL.OPERATIONS"], "type": "num", "difficulty": "applied", "ops": ["apply"], "stem": "Uma caneta custa R$ 1,25. Quantas canetas é possível comprar com exatamente R$ 15,00?", "value": 12, "explanation": "15 ÷ 1,25 = 1500 ÷ 125 = 12 canetas.", "exit": true },
+        { "conceptIds": ["MAT.FRACTION.DECIMAL.CONVERT"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Qual é a forma decimal de 3/8?", "choices": ["0,38", "0,375", "3,8", "0,125", "0,83"], "correct": 1, "explanation": "3 ÷ 8 = 0,375. Escrever 0,38 junta numerador e denominador, o que não tem significado; 0,125 é 1/8." },
+        { "conceptIds": ["MAT.FRACTION.DECIMAL.CONVERT"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Qual fração irredutível representa 0,45?", "choices": ["45/10", "4/5", "9/2", "9/20", "45/1000"], "correct": 3, "explanation": "0,45 tem duas casas decimais: 45/100. Simplificando por 5: 9/20." },
+        { "conceptIds": ["MAT.SCI.NOTATION.READ"], "type": "mc", "difficulty": "foundation", "ops": ["interpret"], "stem": "Qual número é representado por 3,2 × 10⁴?", "choices": ["3 200", "320 000", "32 000", "0,00032", "3 200 000"], "correct": 2, "explanation": "Expoente 4 positivo: a vírgula anda 4 casas para a direita. 3,2 → 32 000." },
+        { "conceptIds": ["MAT.SCI.NOTATION.READ"], "type": "mc", "difficulty": "direct", "ops": ["identify"], "stem": "Qual dos números abaixo está escrito corretamente em notação científica?", "choices": ["12 × 10³", "0,5 × 10⁻²", "4,7 × 10⁵", "10 × 10⁴", "47 × 10⁻¹"], "correct": 2, "explanation": "Na notação científica, a parte que multiplica a potência de 10 deve estar entre 1 (inclusive) e 10 (exclusive). Só 4,7 cumpre isso." },
+        { "conceptIds": ["MAT.SCI.NOTATION.CONVERT"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Como se escreve 0,00056 em notação científica?", "choices": ["5,6 × 10⁴", "5,6 × 10⁻³", "56 × 10⁻⁵", "5,6 × 10⁻⁴", "0,56 × 10⁻³"], "correct": 3, "explanation": "A vírgula anda 4 casas para a direita até ficar 5,6. Como o número é menor que 1, o expoente é negativo: 5,6 × 10⁻⁴." },
+        { "conceptIds": ["MAT.SCI.NOTATION.CONVERT"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "O número 4 500 000 escrito em notação científica é 4,5 × 10ⁿ. Qual é o valor de n?", "value": 6, "explanation": "De 4 500 000 para 4,5 a vírgula anda 6 casas para a esquerda. O número é grande, então n = 6." },
+        { "conceptIds": ["MAT.SCI.NOTATION.OPERATE"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule (2 × 10³) × (4 × 10⁵).", "choices": ["8 × 10⁸", "8 × 10¹⁵", "6 × 10⁸", "8 × 10²", "2 × 10²"], "correct": 0, "explanation": "2 × 4 = 8 e 10³ × 10⁵ = 10³⁺⁵ = 10⁸. Multiplicar os expoentes (10¹⁵) é um erro comum." },
+        { "conceptIds": ["MAT.SCI.NOTATION.OPERATE", "MAT.SCI.NOTATION.READ"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "s", "stimulus": "A luz percorre aproximadamente 3 × 10⁵ km por segundo. A distância média entre a Terra e o Sol é de aproximadamente 1,5 × 10⁸ km.", "stem": "Quantos segundos, aproximadamente, a luz do Sol leva para chegar à Terra?", "value": 500, "explanation": "Tempo = distância ÷ velocidade = (1,5 × 10⁸) ÷ (3 × 10⁵) = 0,5 × 10³ = 5 × 10² = 500 s (cerca de 8 minutos e 20 segundos).", "exit": true },
+        { "conceptIds": ["MAT.SCI.NOTATION.OPERATE", "MAT.SCI.NOTATION.CONVERT"], "type": "mc", "difficulty": "applied", "ops": ["apply"], "stem": "Um servidor guarda 5 × 10⁴ arquivos, cada um com 6 × 10³ bytes. Qual é o total de bytes, em notação científica?", "choices": ["30 × 10¹²", "3 × 10⁷", "3 × 10⁸", "11 × 10⁷", "3 × 10¹²"], "correct": 2, "explanation": "5 × 6 = 30 e 10⁴ × 10³ = 10⁷: 30 × 10⁷. Ajustando: 30 = 3 × 10¹, logo 3 × 10⁸ bytes.", "exit": true }
+      ]
+    },
+    {
+      "id": "MAT-05",
+      "title": "Razão e proporção",
+      "estimatedMinutes": 35,
+      "prerequisiteConceptIds": ["MAT.FRACTION.EQUIVALENCE", "MAT.FRACTION.SIMPLIFY"],
+      "conceptTitles": {
+        "MAT.RATIO.CONCEPT": "Razão entre duas grandezas",
+        "MAT.RATIO.INTERPRET": "Interpretar razões (escala, velocidade, concentração)",
+        "MAT.PROPORTION.EQUIVALENT": "Proporções e propriedade fundamental",
+        "MAT.PROPORTION.CONTEXT": "Proporção em situações-problema"
+      },
+      "hook": "Uma receita de suco pede 1 copo de concentrado para 3 copos de água. Se você quiser fazer uma jarra maior com o mesmo sabor, quanto de cada coisa vai usar? Manter o sabor é manter a razão.",
+      "concepts": [
+        { "conceptId": "MAT.RATIO.CONCEPT", "title": "O que é razão", "content": "Razão é a comparação entre duas quantidades por divisão: a razão de a para b é a/b (ou a : b), com b ≠ 0. A ordem importa: 'meninas para meninos' é diferente de 'meninos para meninas'. Exemplo: 10 meninas e 15 meninos dão razão 10/15 = 2/3." },
+        { "conceptId": "MAT.RATIO.INTERPRET", "title": "Razões do dia a dia", "content": "Algumas razões têm nome próprio. Escala = medida no desenho ÷ medida real (1 : 1000 significa que 1 cm vale 1000 cm reais). Velocidade média = distância ÷ tempo. Concentração = quantidade de soluto ÷ volume. Para comparar misturas, compare as razões, não apenas as quantidades." },
+        { "conceptId": "MAT.PROPORTION.EQUIVALENT", "title": "Proporção", "content": "Proporção é a igualdade entre duas razões: a/b = c/d. Propriedade fundamental: o produto dos extremos é igual ao produto dos meios, a × d = b × c. Exemplo: em x/6 = 4/3, temos 3x = 24, então x = 8." },
+        { "conceptId": "MAT.PROPORTION.CONTEXT", "title": "Usar proporção em problemas", "content": "Monte a proporção mantendo as mesmas grandezas na mesma posição (por exemplo, concentrado em cima e água embaixo nas duas razões). Para dividir um total em partes proporcionais a 2 e 3, divida o total por 2 + 3 e multiplique por cada parte." }
+      ],
+      "examples": [
+        { "title": "Escala de mapa", "content": "Num mapa de escala 1 : 200 000, duas cidades estão a 7 cm. 1. Distância real = 7 × 200 000 = 1 400 000 cm. 2. 1 400 000 cm = 14 000 m = 14 km.", "conceptIds": ["MAT.RATIO.INTERPRET"] },
+        { "title": "Divisão proporcional", "content": "Dividir R$ 150 entre Ana e Bia na razão 2 : 3. 1. Total de partes: 2 + 3 = 5. 2. Cada parte: 150 ÷ 5 = 30. 3. Ana recebe 2 × 30 = R$ 60 e Bia, 3 × 30 = R$ 90. Conferindo: 60 + 90 = 150 e 60/90 = 2/3.", "conceptIds": ["MAT.PROPORTION.CONTEXT", "MAT.PROPORTION.EQUIVALENT"] }
+      ],
+      "warning": { "title": "A ordem das grandezas importa", "content": "Se a razão é de concentrado para água, 2 : 7 significa 2 partes de concentrado e 7 de água, totalizando 9 partes. Inverter a razão ou confundir parte com total são os erros mais comuns." },
+      "summary": "Razão compara por divisão, e a ordem importa. Escala, velocidade e concentração são razões. Proporção: a/b = c/d, e a × d = b × c. Em divisão proporcional, some as partes, ache o valor de uma parte e multiplique.",
+      "questions": [
+        { "conceptIds": ["MAT.RATIO.CONCEPT"], "type": "mc", "difficulty": "foundation", "ops": ["identify"], "stem": "Em uma sala há 12 meninas e 18 meninos. Qual é a razão entre o número de meninas e o número de meninos, na forma simplificada?", "choices": ["3/2", "2/3", "2/5", "3/5", "6"], "correct": 1, "explanation": "Meninas para meninos: 12/18 = 2/3. 3/2 inverte a ordem; 2/5 compara meninas com o total; 6 é a diferença." },
+        { "conceptIds": ["MAT.RATIO.CONCEPT"], "type": "num", "difficulty": "foundation", "ops": ["calculate"], "stem": "Qual é a razão entre 45 e 15?", "value": 3, "explanation": "Razão de 45 para 15: 45 ÷ 15 = 3." },
+        { "conceptIds": ["MAT.RATIO.INTERPRET"], "type": "mc", "difficulty": "direct", "ops": ["interpret"], "stem": "Um mapa está na escala 1 : 500 000. Quanto 1 cm no mapa representa na realidade?", "choices": ["500 m", "5 km", "50 km", "500 km", "50 m"], "correct": 1, "explanation": "1 cm no mapa vale 500 000 cm reais. 500 000 cm = 5 000 m = 5 km." },
+        { "conceptIds": ["MAT.RATIO.INTERPRET"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "unit": "km/h", "stem": "Um ônibus percorreu 240 km em 3 horas. Qual foi sua velocidade média, em km/h?", "value": 80, "explanation": "Velocidade média = distância ÷ tempo = 240 ÷ 3 = 80 km/h." },
+        { "conceptIds": ["MAT.RATIO.INTERPRET", "MAT.RATIO.CONCEPT"], "type": "mc", "difficulty": "applied", "ops": ["compare"], "stem": "Cinco pessoas prepararam café com quantidades diferentes de pó e água. Qual mistura é a mais forte (mais pó por mL de água)?", "choices": ["3 colheres para 200 mL", "4 colheres para 250 mL", "6 colheres para 400 mL", "5 colheres para 300 mL", "2 colheres para 150 mL"], "correct": 3, "explanation": "Colheres por 100 mL: 3/200 → 1,5; 4/250 → 1,6; 6/400 → 1,5; 5/300 → cerca de 1,67; 2/150 → cerca de 1,33. A maior razão é 5 para 300 mL. Ter mais colheres (6) não basta: é preciso comparar a razão.", "exit": true },
+        { "conceptIds": ["MAT.PROPORTION.EQUIVALENT"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Na proporção x/12 = 5/4, qual é o valor de x?", "value": 15, "explanation": "Produto dos extremos igual ao dos meios: 4x = 12 × 5 = 60, então x = 15." },
+        { "conceptIds": ["MAT.PROPORTION.EQUIVALENT"], "type": "mc", "difficulty": "direct", "ops": ["analyze"], "stem": "Qual par de razões forma uma proporção?", "choices": ["2/3 e 6/8", "3/5 e 12/20", "4/7 e 8/12", "5/6 e 10/18", "1/4 e 3/8"], "correct": 1, "explanation": "3 × 20 = 60 e 5 × 12 = 60, então 3/5 = 12/20. Nos outros pares os produtos cruzados são diferentes (por exemplo, 2 × 8 = 16 e 3 × 6 = 18)." },
+        { "conceptIds": ["MAT.PROPORTION.CONTEXT", "MAT.PROPORTION.EQUIVALENT"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "L", "stem": "Um suco é preparado na razão de 2 partes de concentrado para 7 partes de água. Usando 6 litros de concentrado, quantos litros de água são necessários?", "value": 21, "explanation": "2/7 = 6/x, então 2x = 42 e x = 21 litros de água.", "exit": true },
+        { "conceptIds": ["MAT.PROPORTION.CONTEXT"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "R$", "stem": "Dois irmãos vão dividir R$ 360 na razão 4 : 5. Quanto recebe quem fica com a maior parte?", "value": 200, "explanation": "Total de partes: 4 + 5 = 9. Cada parte: 360 ÷ 9 = 40. A maior parte: 5 × 40 = R$ 200 (a outra recebe R$ 160).", "exit": true }
+      ]
+    },
+    {
+      "id": "MAT-06",
+      "title": "Regra de três",
+      "estimatedMinutes": 35,
+      "prerequisiteConceptIds": ["MAT.PROPORTION.EQUIVALENT"],
+      "conceptTitles": {
+        "MAT.RULE3.DIRECT": "Regra de três diretamente proporcional",
+        "MAT.RULE3.INVERSE": "Regra de três inversamente proporcional",
+        "MAT.RULE3.IDENTIFY": "Identificar se as grandezas são diretas ou inversas",
+        "MAT.RULE3.CONTEXT": "Regra de três em situações-problema"
+      },
+      "hook": "Se 4 pedreiros constroem um muro em 6 dias, mais pedreiros levariam mais ou menos tempo? Antes de fazer a conta, é preciso pensar em como as grandezas se relacionam.",
+      "concepts": [
+        { "conceptId": "MAT.RULE3.DIRECT", "title": "Grandezas diretamente proporcionais", "content": "Duas grandezas são diretamente proporcionais quando, ao dobrar uma, a outra também dobra (a razão entre elas é constante). Monte a proporção e multiplique cruzado. Exemplo: 3 kg custam R$ 12; 5 kg custam x. 3/5 = 12/x, logo 3x = 60 e x = R$ 20." },
+        { "conceptId": "MAT.RULE3.INVERSE", "title": "Grandezas inversamente proporcionais", "content": "São inversamente proporcionais quando, ao dobrar uma, a outra cai pela metade (o produto entre elas é constante). Exemplo: 4 pedreiros fazem o muro em 6 dias; com 8 pedreiros, 4 × 6 = 8 × x, então x = 3 dias." },
+        { "conceptId": "MAT.RULE3.IDENTIFY", "title": "Direta ou inversa?", "content": "Pergunte: se uma grandeza aumenta, a outra aumenta ou diminui na mesma proporção? Aumenta junto: direta. Diminui: inversa. Cuidado: há grandezas que mudam juntas sem ser proporcionais, como idade e altura, e aí a regra de três não se aplica." },
+        { "conceptId": "MAT.RULE3.CONTEXT", "title": "Passo a passo em problemas", "content": "1. Organize uma tabela com as grandezas em colunas. 2. Coloque o x no valor desconhecido. 3. Decida se a relação é direta ou inversa. 4. Se inversa, inverta uma das razões (ou use produto constante). 5. Confira se a resposta faz sentido." }
+      ],
+      "examples": [
+        { "title": "Consumo de combustível (direta)", "content": "Um carro roda 150 km com 12 L. Quantos km roda com 20 L? 1. Mais litros, mais km: direta. 2. 12/20 = 150/x. 3. 12x = 3000, x = 250 km.", "conceptIds": ["MAT.RULE3.DIRECT", "MAT.RULE3.CONTEXT"] },
+        { "title": "Velocidade e tempo (inversa)", "content": "A 60 km/h uma viagem leva 5 h. Quanto tempo leva a 75 km/h? 1. Mais velocidade, menos tempo: inversa. 2. Produto constante: 60 × 5 = 75 × x. 3. 300 = 75x, x = 4 h.", "conceptIds": ["MAT.RULE3.INVERSE", "MAT.RULE3.IDENTIFY"] }
+      ],
+      "warning": { "title": "Confira o sentido da resposta", "content": "Se mais operários resultou em mais dias, você tratou como direta uma relação inversa. Antes de calcular, decida a relação; depois de calcular, confira se o resultado aumentou ou diminuiu como esperado." },
+      "summary": "Direta: as grandezas variam no mesmo sentido e a razão é constante; multiplique cruzado. Inversa: variam em sentidos opostos e o produto é constante. Sempre identifique o tipo antes de calcular e confira o sentido do resultado.",
+      "questions": [
+        { "conceptIds": ["MAT.RULE3.DIRECT"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "unit": "R$", "stem": "Se 4 kg de feijão custam R$ 30, quanto custam 10 kg do mesmo feijão?", "value": 75, "explanation": "Direta: 4/10 = 30/x, então 4x = 300 e x = R$ 75." },
+        { "conceptIds": ["MAT.RULE3.DIRECT"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "unit": "km", "stem": "Um carro percorre 180 km com 15 litros de gasolina. Quantos quilômetros percorre com 40 litros, no mesmo ritmo de consumo?", "value": 480, "explanation": "Direta: 15/40 = 180/x, então 15x = 7200 e x = 480 km (12 km por litro)." },
+        { "conceptIds": ["MAT.RULE3.INVERSE"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "unit": "dias", "stem": "Seis operários constroem um muro em 10 dias. Em quantos dias 15 operários, com o mesmo ritmo, construiriam o mesmo muro?", "value": 4, "explanation": "Mais operários, menos dias: inversa. 6 × 10 = 15 × x, então 60 = 15x e x = 4 dias." },
+        { "conceptIds": ["MAT.RULE3.INVERSE"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "unit": "h", "stem": "A 60 km/h, uma viagem dura 4 horas. Quanto tempo dura a mesma viagem a 80 km/h?", "value": 3, "explanation": "Inversa: 60 × 4 = 80 × x, então 240 = 80x e x = 3 h." },
+        { "conceptIds": ["MAT.RULE3.IDENTIFY"], "type": "mc", "difficulty": "direct", "ops": ["identify"], "stem": "Em qual situação as grandezas são inversamente proporcionais?", "choices": ["Quantidade de pães e preço total pago", "Velocidade e tempo para percorrer a mesma distância", "Distância percorrida e combustível gasto pelo mesmo carro", "Páginas impressas e tempo de impressão na mesma impressora", "Lado de um quadrado e seu perímetro"], "correct": 1, "explanation": "Para a mesma distância, dobrar a velocidade reduz o tempo à metade: inversa. As demais aumentam juntas na mesma proporção: diretas." },
+        { "conceptIds": ["MAT.RULE3.IDENTIFY"], "type": "mc", "difficulty": "applied", "ops": ["analyze"], "stem": "Em qual par as grandezas NÃO são proporcionais (nem direta nem inversamente), e por isso não se resolve por regra de três?", "choices": ["Número de torneiras iguais e tempo para encher um tanque", "Horas trabalhadas e valor recebido, com valor por hora fixo", "Quantidade de ingredientes e número de porções de uma receita", "Velocidade e tempo de viagem na mesma distância", "Idade e altura de uma pessoa"], "correct": 4, "explanation": "Uma pessoa com o dobro da idade não tem o dobro (nem a metade) da altura. As outras situações são proporcionais: a primeira e a quarta inversas, a segunda e a terceira diretas." },
+        { "conceptIds": ["MAT.RULE3.IDENTIFY", "MAT.RULE3.INVERSE", "MAT.RULE3.CONTEXT"], "type": "mc", "difficulty": "applied", "ops": ["apply"], "stem": "Um estoque de ração dura 20 dias para alimentar 12 cães. Se chegarem mais 3 cães e cada cão comer a mesma quantidade, quantos dias a ração vai durar?", "choices": ["25", "16", "15", "23", "17"], "correct": 1, "explanation": "Mais cães, menos dias: inversa. Agora são 15 cães. 12 × 20 = 15 × x, então 240 = 15x e x = 16 dias. A resposta 25 vem de tratar a relação como direta.", "exit": true },
+        { "conceptIds": ["MAT.RULE3.CONTEXT", "MAT.RULE3.INVERSE"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "h", "stem": "Oito torneiras iguais enchem um tanque em 9 horas. Em quantas horas 12 torneiras iguais a essas encheriam o mesmo tanque?", "value": 6, "explanation": "Mais torneiras, menos tempo: inversa. 8 × 9 = 12 × x, então 72 = 12x e x = 6 h.", "exit": true },
+        { "conceptIds": ["MAT.RULE3.CONTEXT", "MAT.RULE3.DIRECT"], "type": "num", "difficulty": "applied", "ops": ["apply"], "stem": "Uma impressora imprime 45 páginas em 3 minutos. Mantendo o ritmo, quantas páginas imprime em 20 minutos?", "value": 300, "explanation": "Mais tempo, mais páginas: direta. 3/20 = 45/x, então 3x = 900 e x = 300 páginas (15 por minuto).", "exit": true }
+      ]
+    },
+    {
+      "id": "MAT-08",
+      "title": "Porcentagem aplicada e juros",
+      "estimatedMinutes": 40,
+      "prerequisiteConceptIds": ["MAT.PCT.CONCEPT", "MAT.PCT.CALCULATE"],
+      "conceptTitles": {
+        "MAT.PCT.SUCCESSIVE": "Aumentos e descontos sucessivos",
+        "MAT.PCT.REVERSE": "Encontrar o valor original",
+        "MAT.INTEREST.CONCEPT": "Capital, taxa, tempo, juros e montante",
+        "MAT.INTEREST.SIMPLE": "Juros simples",
+        "MAT.INTEREST.INTERPRET": "Interpretar situações de juros"
+      },
+      "hook": "Uma loja aumentou um preço em 20% e, na semana seguinte, anunciou 20% de desconto. O preço voltou ao original? Não! Porcentagens sucessivas não se somam nem se cancelam simplesmente.",
+      "concepts": [
+        { "conceptId": "MAT.PCT.SUCCESSIVE", "title": "Fator multiplicativo", "content": "Aumentar p% é multiplicar por (1 + p/100); descontar p% é multiplicar por (1 − p/100). Em variações sucessivas, multiplique os fatores. Exemplo: aumento de 20% e desconto de 20%: 1,2 × 0,8 = 0,96, ou seja, queda total de 4%." },
+        { "conceptId": "MAT.PCT.REVERSE", "title": "Voltar ao valor original", "content": "Se você conhece o valor depois do aumento ou desconto, divida pelo fator. Exemplo: depois de 10% de desconto o preço é R$ 90; original = 90 ÷ 0,9 = R$ 100. Não basta somar 10% de 90, pois a porcentagem foi calculada sobre o valor original." },
+        { "conceptId": "MAT.INTEREST.CONCEPT", "title": "Vocabulário dos juros", "content": "Capital (C) é o valor aplicado ou emprestado. Taxa (i) é a porcentagem cobrada por período. Tempo (t) é o número de períodos. Juros (J) são o valor acrescentado e montante (M) é o total: M = C + J. A taxa e o tempo precisam estar na mesma unidade (ao mês com meses, ao ano com anos)." },
+        { "conceptId": "MAT.INTEREST.SIMPLE", "title": "Juros simples", "content": "No regime de juros simples, os juros de cada período são sempre calculados sobre o capital inicial: J = C × i × t, com i em forma decimal. Exemplo: R$ 1 000 a 2% ao mês por 3 meses: J = 1000 × 0,02 × 3 = R$ 60 e M = R$ 1 060." },
+        { "conceptId": "MAT.INTEREST.INTERPRET", "title": "Ler situações de juros", "content": "Em juros simples, o montante cresce sempre o mesmo valor a cada período, como uma sequência que soma uma quantia fixa. A partir de uma tabela ou de um enunciado, é possível descobrir a taxa (i = J ÷ (C × t)) ou o tempo (t = J ÷ (C × i))." }
+      ],
+      "examples": [
+        { "title": "Dois descontos seguidos", "content": "Um produto de R$ 200 tem 10% de desconto e depois mais 5%. 1. Fatores: 0,90 e 0,95. 2. 200 × 0,90 = 180. 3. 180 × 0,95 = 171. Preço final R$ 171, desconto total de 14,5% (e não 15%).", "conceptIds": ["MAT.PCT.SUCCESSIVE"] },
+        { "title": "Taxa a partir dos juros", "content": "R$ 500 aplicados a juros simples renderam R$ 60 em 4 meses. 1. J = C × i × t: 60 = 500 × i × 4. 2. 60 = 2000 × i. 3. i = 0,03 = 3% ao mês.", "conceptIds": ["MAT.INTEREST.INTERPRET", "MAT.INTEREST.SIMPLE"] }
+      ],
+      "warning": { "title": "Porcentagens não se somam em sequência", "content": "Dois aumentos de 10% não dão 20%: 1,1 × 1,1 = 1,21, ou seja, 21%. E um desconto de 20% depois de um aumento de 20% não volta ao preço original. Sempre multiplique os fatores." },
+      "summary": "Aumento de p%: × (1 + p/100). Desconto de p%: × (1 − p/100). Sucessivos: multiplique os fatores. Valor original: divida pelo fator. Juros simples: J = C × i × t e M = C + J, com taxa e tempo na mesma unidade.",
+      "questions": [
+        { "conceptIds": ["MAT.PCT.SUCCESSIVE"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Um preço sofreu dois aumentos sucessivos de 10%. Qual foi o aumento total?", "choices": ["20%", "21%", "10%", "1%", "19%"], "correct": 1, "explanation": "Fatores: 1,1 × 1,1 = 1,21, ou seja, aumento total de 21%. O segundo aumento incide sobre um valor que já tinha crescido." },
+        { "conceptIds": ["MAT.PCT.SUCCESSIVE"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "unit": "R$", "stem": "Um produto de R$ 200 teve aumento de 20% e, depois, desconto de 20%. Qual é o preço final?", "value": 192, "explanation": "200 × 1,2 = 240. 240 × 0,8 = 192. O preço final é R$ 192, menor que o original." },
+        { "conceptIds": ["MAT.PCT.SUCCESSIVE", "MAT.PCT.REVERSE"], "type": "mc", "difficulty": "applied", "ops": ["compare"], "stem": "Um produto custa R$ 100 em duas lojas. A loja A dá um desconto único de 30%. A loja B dá dois descontos sucessivos de 15%. Qual afirmação é verdadeira?", "choices": ["As duas lojas chegam ao mesmo preço final.", "A loja B fica mais barata.", "A loja A fica mais barata.", "A loja B dá desconto total de 30,25%.", "Não é possível comparar sem saber o preço de custo."], "correct": 2, "explanation": "Loja A: 100 × 0,70 = R$ 70. Loja B: 100 × 0,85 × 0,85 = R$ 72,25 (desconto total de 27,75%). A loja A é mais barata.", "exit": true },
+        { "conceptIds": ["MAT.PCT.REVERSE"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "unit": "R$", "stem": "Depois de um desconto de 25%, uma mochila custou R$ 60. Qual era o preço original?", "value": 80, "explanation": "Com 25% de desconto paga-se 75% do preço: 0,75 × P = 60, então P = 60 ÷ 0,75 = R$ 80." },
+        { "conceptIds": ["MAT.PCT.REVERSE"], "type": "mc", "difficulty": "applied", "ops": ["calculate"], "stem": "Após um aumento de 15%, uma conta de luz passou a custar R$ 230. Qual era o valor antes do aumento?", "choices": ["R$ 195,50", "R$ 200,00", "R$ 215,00", "R$ 264,50", "R$ 210,00"], "correct": 1, "explanation": "230 ÷ 1,15 = 200. Tirar 15% de 230 (R$ 195,50) erra porque os 15% foram calculados sobre o valor antigo, não sobre o novo." },
+        { "conceptIds": ["MAT.INTEREST.CONCEPT"], "type": "mc", "difficulty": "foundation", "ops": ["recall"], "stem": "Em uma aplicação financeira, o que é o montante?", "choices": ["Apenas os juros recebidos", "A taxa de juros por mês", "O tempo da aplicação", "O capital somado aos juros", "O capital menos os juros"], "correct": 3, "explanation": "Montante é o valor total ao final: M = C + J." },
+        { "conceptIds": ["MAT.INTEREST.CONCEPT"], "type": "mc", "difficulty": "direct", "ops": ["interpret"], "stem": "Uma aplicação tem taxa de 1% ao mês e dura 2 anos. Para usar J = C × i × t, qual valor de t deve ser usado?", "choices": ["2", "12", "1", "0,24", "24"], "correct": 4, "explanation": "A taxa é mensal, então o tempo deve estar em meses: 2 anos = 24 meses." },
+        { "conceptIds": ["MAT.INTEREST.SIMPLE"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "unit": "R$", "stem": "Quanto rendem, em juros simples, R$ 1 500 aplicados a 2% ao mês durante 6 meses?", "value": 180, "explanation": "J = C × i × t = 1500 × 0,02 × 6 = 30 × 6 = R$ 180." },
+        { "conceptIds": ["MAT.INTEREST.SIMPLE", "MAT.INTEREST.CONCEPT"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "R$", "stem": "Uma pessoa pegou R$ 2 000 emprestados a juros simples de 3% ao mês, para pagar tudo de uma vez após 5 meses. Qual é o montante a pagar, em reais? (Digite só o número, sem ponto de milhar.)", "value": 2300, "explanation": "J = 2000 × 0,03 × 5 = R$ 300. M = C + J = 2000 + 300 = R$ 2 300.", "exit": true },
+        { "conceptIds": ["MAT.INTEREST.INTERPRET"], "type": "mc", "difficulty": "direct", "ops": ["interpret"], "stimulus": "Montante de uma aplicação de R$ 1 000 a juros simples: após 1 mês, R$ 1 050; após 2 meses, R$ 1 100; após 3 meses, R$ 1 150.", "stem": "Qual é a taxa mensal dessa aplicação?", "choices": ["50%", "5%", "15%", "0,5%", "10%"], "correct": 1, "explanation": "O montante cresce R$ 50 por mês. 50 ÷ 1000 = 0,05 = 5% ao mês. 15% é o total acumulado em 3 meses." },
+        { "conceptIds": ["MAT.INTEREST.INTERPRET", "MAT.INTEREST.SIMPLE"], "type": "num", "difficulty": "applied", "ops": ["infer"], "unit": "%", "stem": "Uma aplicação de R$ 800 a juros simples rendeu R$ 96 de juros em 4 meses. Qual é a taxa mensal, em porcentagem?", "value": 3, "explanation": "96 = 800 × i × 4 = 3200 × i, então i = 96 ÷ 3200 = 0,03 = 3% ao mês.", "exit": true }
+      ]
+    },
+    {
+      "id": "MAT-09",
+      "title": "Potências, radicais e expressões",
+      "estimatedMinutes": 40,
+      "prerequisiteConceptIds": ["MAT.DIV.FACTORIZATION"],
+      "conceptTitles": {
+        "MAT.POWER.CONCEPT": "Potência: definição, expoente zero e negativo",
+        "MAT.POWER.PROPERTIES": "Propriedades das potências",
+        "MAT.RADICAL.CONCEPT": "Raiz quadrada e raiz cúbica",
+        "MAT.RADICAL.SIMPLIFY": "Simplificação de radicais",
+        "MAT.EXPR.ORDER": "Ordem das operações com potências e raízes",
+        "MAT.EXPR.MIXED": "Expressões com potências e radicais"
+      },
+      "hook": "Uma bactéria se divide em duas a cada hora. Depois de 10 horas, uma única bactéria vira 2 × 2 × 2 × ... dez vezes. Potências servem para escrever essas multiplicações repetidas de forma curta: 2¹⁰ = 1 024.",
+      "concepts": [
+        { "conceptId": "MAT.POWER.CONCEPT", "title": "O que é potência", "content": "aⁿ é o produto de n fatores iguais a a: 3⁴ = 3 × 3 × 3 × 3 = 81. Por definição, a⁰ = 1 (a ≠ 0) e a⁻ⁿ = 1/aⁿ, por exemplo 2⁻³ = 1/8. Atenção ao sinal: (−2)⁴ = 16, mas −2⁴ = −16, pois o expoente só atinge o 2." },
+        { "conceptId": "MAT.POWER.PROPERTIES", "title": "Propriedades", "content": "Mesma base na multiplicação: some os expoentes (aᵐ × aⁿ = aᵐ⁺ⁿ). Na divisão: subtraia (aᵐ ÷ aⁿ = aᵐ⁻ⁿ). Potência de potência: multiplique ((aᵐ)ⁿ = aᵐˣⁿ). Exemplo: 2³ × 2⁴ = 2⁷ e (3²)³ = 3⁶." },
+        { "conceptId": "MAT.RADICAL.CONCEPT", "title": "Raízes", "content": "A raiz quadrada de um número não negativo é o número não negativo que, elevado ao quadrado, dá esse número: √49 = 7, pois 7² = 49. A raiz cúbica desfaz o cubo: ∛8 = 2, pois 2³ = 8. Quando a raiz não é exata, dá para localizá-la entre inteiros: 6² = 36 < 40 < 49 = 7², então √40 está entre 6 e 7." },
+        { "conceptId": "MAT.RADICAL.SIMPLIFY", "title": "Simplificar radicais", "content": "Use √(a × b) = √a × √b e procure o maior quadrado perfeito dentro do radicando. Exemplo: √50 = √(25 × 2) = 5√2. Radicais semelhantes (mesmo radicando) somam-se como termos iguais: 2√3 + 5√3 = 7√3." },
+        { "conceptId": "MAT.EXPR.ORDER", "title": "Ordem das operações", "content": "Resolva primeiro parênteses, colchetes e chaves; depois potências e raízes; depois multiplicações e divisões; por último adições e subtrações, da esquerda para a direita. Exemplo: 2 + 3 × 2² = 2 + 3 × 4 = 2 + 12 = 14." },
+        { "conceptId": "MAT.EXPR.MIXED", "title": "Expressões mistas", "content": "Em expressões com potências, raízes e frações, calcule cada potência e raiz separadamente antes de combinar os resultados. Uma raiz sobre uma soma, como √(9 + 16), exige somar primeiro: √25 = 5, e não 3 + 4." }
+      ],
+      "examples": [
+        { "title": "Propriedades em sequência", "content": "Calcule 2⁵ × 2³ ÷ 2⁶. 1. Multiplicação de mesma base: 2⁵⁺³ = 2⁸. 2. Divisão: 2⁸⁻⁶ = 2². 3. 2² = 4.", "conceptIds": ["MAT.POWER.PROPERTIES"] },
+        { "title": "Expressão mista", "content": "Calcule 3² + √(36) ÷ 2 − 2⁰. 1. Potências e raízes: 9 + 6 ÷ 2 − 1. 2. Divisão: 6 ÷ 2 = 3. 3. Da esquerda para a direita: 9 + 3 − 1 = 11.", "conceptIds": ["MAT.EXPR.MIXED", "MAT.EXPR.ORDER"] }
+      ],
+      "warning": { "title": "Raiz de soma não é soma de raízes", "content": "√(9 + 16) = √25 = 5, mas √9 + √16 = 3 + 4 = 7. Também não confunda 2³ com 2 × 3: 2³ = 8, enquanto 2 × 3 = 6." },
+      "summary": "aⁿ multiplica a por si mesmo n vezes; a⁰ = 1; a⁻ⁿ = 1/aⁿ. Mesma base: multiplicação soma expoentes, divisão subtrai, potência de potência multiplica. Raiz desfaz potência; simplifique tirando quadrados perfeitos. Ordem: parênteses, potências e raízes, × e ÷, + e −.",
+      "questions": [
+        { "conceptIds": ["MAT.POWER.CONCEPT"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule (−2)⁵.", "value": -32, "explanation": "(−2) × (−2) × (−2) × (−2) × (−2): cinco fatores negativos dão resultado negativo. 2⁵ = 32, logo (−2)⁵ = −32." },
+        { "conceptIds": ["MAT.POWER.CONCEPT"], "type": "mc", "difficulty": "direct", "ops": ["identify"], "stem": "Qual das expressões é igual a 1/9?", "choices": ["−3²", "3⁻¹", "(−3)²", "3⁻²", "9⁻²"], "correct": 3, "explanation": "3⁻² = 1/3² = 1/9. Já −3² = −9, 3⁻¹ = 1/3, (−3)² = 9 e 9⁻² = 1/81." },
+        { "conceptIds": ["MAT.POWER.CONCEPT", "MAT.EXPR.MIXED"], "type": "num", "difficulty": "applied", "ops": ["apply"], "stem": "Uma cultura começa com 3 bactérias, e cada bactéria se divide em duas a cada hora. Quantas bactérias haverá após 5 horas?", "value": 96, "explanation": "A quantidade dobra a cada hora: 3 × 2⁵ = 3 × 32 = 96 bactérias.", "exit": true },
+        { "conceptIds": ["MAT.POWER.PROPERTIES"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Escreva 2⁵ × 2³ ÷ 2⁴ como uma única potência de base 2.", "choices": ["2⁴", "2¹²", "4⁴", "2⁶⁰", "2²"], "correct": 0, "explanation": "Multiplicação de mesma base soma expoentes: 2⁵⁺³ = 2⁸. Divisão subtrai: 2⁸⁻⁴ = 2⁴." },
+        { "conceptIds": ["MAT.POWER.PROPERTIES"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule (5²)³ ÷ 5⁵.", "value": 5, "explanation": "Potência de potência: (5²)³ = 5⁶. Divisão de mesma base: 5⁶⁻⁵ = 5¹ = 5." },
+        { "conceptIds": ["MAT.RADICAL.CONCEPT"], "type": "num", "difficulty": "foundation", "ops": ["calculate"], "stem": "Calcule √144.", "value": 12, "explanation": "12² = 144, então √144 = 12." },
+        { "conceptIds": ["MAT.RADICAL.CONCEPT"], "type": "mc", "difficulty": "direct", "ops": ["compare"], "stem": "Entre quais números inteiros consecutivos está √50?", "choices": ["6 e 7", "7 e 8", "25 e 26", "5 e 6", "8 e 9"], "correct": 1, "explanation": "7² = 49 e 8² = 64. Como 49 < 50 < 64, temos 7 < √50 < 8. A opção 25 e 26 confunde raiz com metade." },
+        { "conceptIds": ["MAT.RADICAL.SIMPLIFY"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Qual é a forma simplificada de √72?", "choices": ["2√6", "36√2", "8√3", "4√2", "6√2"], "correct": 4, "explanation": "72 = 36 × 2, e 36 é o maior quadrado perfeito que divide 72. √72 = √36 × √2 = 6√2." },
+        { "conceptIds": ["MAT.RADICAL.SIMPLIFY"], "type": "mc", "difficulty": "applied", "ops": ["calculate"], "stem": "Calcule √12 + √27.", "choices": ["√39", "5√3", "6√3", "5√6", "13√3"], "correct": 1, "explanation": "√12 = √(4 × 3) = 2√3 e √27 = √(9 × 3) = 3√3. Radicais semelhantes: 2√3 + 3√3 = 5√3. Somar os radicandos (√39) está errado." },
+        { "conceptIds": ["MAT.EXPR.ORDER"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule 2 + 3 × 4².", "value": 50, "explanation": "Potência primeiro: 4² = 16. Depois multiplicação: 3 × 16 = 48. Por fim: 2 + 48 = 50. Somar antes ((2 + 3) × 16 = 80) está errado." },
+        { "conceptIds": ["MAT.EXPR.ORDER"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule (8 − 2)² ÷ 4 − 3.", "value": 6, "explanation": "Parênteses: 8 − 2 = 6. Potência: 6² = 36. Divisão: 36 ÷ 4 = 9. Subtração: 9 − 3 = 6." },
+        { "conceptIds": ["MAT.EXPR.MIXED", "MAT.EXPR.ORDER"], "type": "num", "difficulty": "applied", "ops": ["calculate"], "stem": "Calcule √49 + 2³ × 3 − 10.", "value": 21, "explanation": "√49 = 7 e 2³ = 8. Multiplicação: 8 × 3 = 24. Depois: 7 + 24 − 10 = 21.", "exit": true },
+        { "conceptIds": ["MAT.EXPR.MIXED", "MAT.RADICAL.CONCEPT"], "type": "num", "difficulty": "applied", "ops": ["calculate"], "stem": "Calcule 4² − √(9 + 16) + 3⁰.", "value": 12, "explanation": "4² = 16; √(9 + 16) = √25 = 5; 3⁰ = 1. Então 16 − 5 + 1 = 12. Calcular √9 + √16 = 7 daria 10, que está errado.", "exit": true }
+      ]
+    },
+    {
+      "id": "MAT-10",
+      "title": "Inequações e intervalos",
+      "estimatedMinutes": 35,
+      "conceptTitles": {
+        "MAT.INEQ.COMPARE": "Desigualdades e suas propriedades",
+        "MAT.INEQ.SOLVE": "Resolver inequações do 1º grau",
+        "MAT.INTERVAL.READ": "Ler intervalos reais",
+        "MAT.INTERVAL.REPRESENT": "Representar soluções em intervalos e na reta"
+      },
+      "hook": "Um plano de celular cobra R$ 30 fixos mais R$ 2 por GB extra, e você pode gastar no máximo R$ 50. Quantos GB extras cabem no orçamento? 'No máximo' é uma desigualdade, e a resposta é um conjunto de valores, não um só.",
+      "concepts": [
+        { "conceptId": "MAT.INEQ.COMPARE", "title": "Desigualdades", "content": "Os símbolos são < (menor), > (maior), ≤ (menor ou igual) e ≥ (maior ou igual). Somar ou subtrair o mesmo número dos dois lados mantém o sentido. Multiplicar ou dividir por um número positivo mantém; por um número negativo, inverte o sentido: se 2 < 5, então −2 > −5." },
+        { "conceptId": "MAT.INEQ.SOLVE", "title": "Resolver inequações", "content": "Resolva como uma equação, isolando x, mas inverta o sinal da desigualdade sempre que multiplicar ou dividir os dois lados por um número negativo. Exemplo: −3x + 2 < 11 → −3x < 9 → x > −3 (o sinal virou ao dividir por −3)." },
+        { "conceptId": "MAT.INTERVAL.READ", "title": "Notação de intervalo", "content": "[a, b] inclui a e b; ]a, b[ exclui os dois; [a, b[ inclui a e exclui b. Infinito nunca é incluído: ]−∞, 3] são os reais menores ou iguais a 3. Alguns livros usam parênteses para excluir: (a, b) é o mesmo que ]a, b[." },
+        { "conceptId": "MAT.INTERVAL.REPRESENT", "title": "Na reta numérica", "content": "Na reta, bolinha cheia indica extremo incluído (≤ ou ≥) e bolinha vazia indica extremo excluído (< ou >). O trecho destacado mostra todos os valores da solução. Exemplo: x > 2 é bolinha vazia em 2 com destaque para a direita, ou seja, ]2, +∞[." }
+      ],
+      "examples": [
+        { "title": "Inequação com inversão", "content": "Resolva 5 − 2x ≥ −3. 1. Subtraia 5: −2x ≥ −8. 2. Divida por −2 e inverta: x ≤ 4. 3. Intervalo: ]−∞, 4], bolinha cheia em 4 e destaque para a esquerda. Teste: x = 0 dá 5 ≥ −3, verdadeiro.", "conceptIds": ["MAT.INEQ.SOLVE", "MAT.INTERVAL.REPRESENT"] },
+        { "title": "Orçamento do celular", "content": "30 + 2g ≤ 50. 1. Subtraia 30: 2g ≤ 20. 2. Divida por 2: g ≤ 10. Cabem no máximo 10 GB extras.", "conceptIds": ["MAT.INEQ.SOLVE"] }
+      ],
+      "warning": { "title": "Dividiu por negativo? Inverta!", "content": "Em −2x < 6, dividir por −2 sem inverter daria x < −3, o que é falso (teste x = 0: −2 × 0 = 0 < 6 é verdadeiro, mas 0 < −3 não). O correto é x > −3. Teste um valor para conferir." },
+      "summary": "Somar ou subtrair mantém o sentido da desigualdade; multiplicar ou dividir por negativo inverte. [ ] inclui o extremo, ] [ exclui; infinito sempre aberto. Na reta: bolinha cheia inclui, vazia exclui. Teste um valor para conferir a solução.",
+      "questions": [
+        { "conceptIds": ["MAT.INEQ.COMPARE"], "type": "mc", "difficulty": "direct", "ops": ["compare"], "stem": "Qual desigualdade é verdadeira?", "choices": ["−3 > −1", "−0,5 < −0,4", "2/3 < 3/5", "−7 ≥ −2", "0 < −1"], "correct": 1, "explanation": "−0,5 está à esquerda de −0,4 na reta, então −0,5 < −0,4. As outras são falsas: por exemplo, 2/3 ≈ 0,67 é maior que 3/5 = 0,6." },
+        { "conceptIds": ["MAT.INEQ.COMPARE"], "type": "mc", "difficulty": "direct", "ops": ["infer"], "stem": "Sabendo que a < b, o que se pode afirmar sobre −2a e −2b?", "choices": ["−2a < −2b", "−2a > −2b", "−2a = −2b", "−2a ≤ −2b", "Não é possível comparar"], "correct": 1, "explanation": "Multiplicar os dois lados por um número negativo inverte o sentido: −2a > −2b. Exemplo: 1 < 3, mas −2 > −6." },
+        { "conceptIds": ["MAT.INEQ.SOLVE"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Qual é a solução de 3x − 5 > 7?", "choices": ["x > 4", "x < 4", "x > 2/3", "x > 12", "x ≥ 4"], "correct": 0, "explanation": "3x > 12, então x > 4. O sinal não inverte porque dividimos por 3, que é positivo. x ≥ 4 incluiria o 4, que não satisfaz (3 × 4 − 5 = 7, e 7 > 7 é falso)." },
+        { "conceptIds": ["MAT.INEQ.SOLVE"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Qual é a solução de −2x + 1 ≤ 9?", "choices": ["x ≤ −4", "x ≤ 4", "x ≥ 4", "x ≥ −4", "x ≥ −5"], "correct": 3, "explanation": "−2x ≤ 8. Dividindo por −2, o sinal inverte: x ≥ −4. Teste x = 0: 1 ≤ 9, verdadeiro, e 0 ≥ −4 confere." },
+        { "conceptIds": ["MAT.INEQ.SOLVE", "MAT.INEQ.COMPARE"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "GB", "stem": "Um plano de celular cobra R$ 30 fixos mais R$ 2 por GB extra usado. Com um orçamento de no máximo R$ 50, qual é o maior número inteiro de GB extras que podem ser usados?", "value": 10, "explanation": "30 + 2g ≤ 50 → 2g ≤ 20 → g ≤ 10. O maior inteiro é 10 GB.", "exit": true },
+        { "conceptIds": ["MAT.INTERVAL.READ"], "type": "num", "difficulty": "direct", "ops": ["interpret"], "stem": "Quantos números inteiros pertencem ao intervalo [−2, 3[?", "value": 5, "explanation": "O intervalo inclui −2 e exclui 3. Inteiros: −2, −1, 0, 1, 2. São 5." },
+        { "conceptIds": ["MAT.INTERVAL.READ"], "type": "mc", "difficulty": "direct", "ops": ["identify"], "stem": "Como se escreve o conjunto {x ∈ ℝ | x > 1} em notação de intervalo?", "choices": ["[1, +∞[", "]1, +∞[", "]−∞, 1[", "]−∞, 1]", "[1, +∞]"], "correct": 1, "explanation": "x > 1 exclui o 1 (colchete aberto) e segue até o infinito, que é sempre aberto: ]1, +∞[." },
+        { "conceptIds": ["MAT.INTERVAL.READ", "MAT.INEQ.COMPARE"], "type": "mc", "difficulty": "applied", "ops": ["interpret"], "stem": "Uma vacina deve ser armazenada entre 2 °C e 8 °C, incluindo esses dois valores, ou seja, no intervalo [2, 8]. Qual temperatura está FORA do intervalo permitido?", "choices": ["2 °C", "5,5 °C", "8 °C", "8,5 °C", "3 °C"], "correct": 3, "explanation": "[2, 8] inclui 2 e 8 e todos os valores entre eles. 8,5 °C é maior que 8, portanto está fora.", "exit": true },
+        { "conceptIds": ["MAT.INTERVAL.REPRESENT"], "type": "mc", "difficulty": "direct", "ops": ["interpret"], "stem": "Na reta numérica há uma bolinha cheia em −1, uma bolinha vazia em 4 e o trecho entre elas está destacado. Qual intervalo foi representado?", "choices": ["]−1, 4]", "[−1, 4]", "[−1, 4[", "]−1, 4[", "{−1, 4}"], "correct": 2, "explanation": "Bolinha cheia inclui −1 (colchete fechado) e bolinha vazia exclui 4 (colchete aberto): [−1, 4[. {−1, 4} seria só os dois números, sem o trecho entre eles." },
+        { "conceptIds": ["MAT.INTERVAL.REPRESENT", "MAT.INEQ.SOLVE"], "type": "mc", "difficulty": "applied", "ops": ["apply"], "stem": "Resolva 2x + 3 ≤ 11 e indique o conjunto solução em notação de intervalo.", "choices": ["]−∞, 4]", "]−∞, 4[", "[4, +∞[", "]−∞, 7]", "]4, +∞["], "correct": 0, "explanation": "2x ≤ 8, então x ≤ 4. O 4 está incluído (≤) e o infinito é aberto: ]−∞, 4]. Na reta, bolinha cheia em 4 e destaque para a esquerda.", "exit": true }
+      ]
+    }
+  ]
+}

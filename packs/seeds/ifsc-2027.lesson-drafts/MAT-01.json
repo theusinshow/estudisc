@@ -1,0 +1,43 @@
+{
+  "status": "draft_pending_human_review",
+  "lessons": [
+    {
+      "id": "MAT-01",
+      "title": "Números e operações",
+      "estimatedMinutes": 35,
+      "conceptTitles": {
+        "MAT.NUM.NATURAL.INTEGER": "Números naturais e inteiros",
+        "MAT.NUM.OPERATIONS": "As quatro operações e seu significado",
+        "MAT.NUM.ORDER": "Comparar e ordenar números com sinal",
+        "MAT.NUM.REAL.PROPERTIES": "Propriedades das operações",
+        "MAT.NUM.EXPRESSIONS": "Expressões numéricas e ordem das operações"
+      },
+      "hook": "A temperatura de uma cidade era −3 °C de manhã e subiu 8 °C até a tarde. Para saber a temperatura final, precisamos operar com números negativos e entender o que cada operação representa.",
+      "concepts": [
+        { "conceptId": "MAT.NUM.NATURAL.INTEGER", "title": "Naturais e inteiros", "content": "Os números naturais (ℕ) são 0, 1, 2, 3, ... e servem para contar. Os inteiros (ℤ) incluem os naturais e seus opostos negativos: ..., −2, −1, 0, 1, 2, ... Todo natural é inteiro, mas nem todo inteiro é natural (por exemplo, −5)." },
+        { "conceptId": "MAT.NUM.OPERATIONS", "title": "O que cada operação significa", "content": "Adição junta ou acrescenta; subtração retira ou compara; multiplicação repete parcelas iguais ou combina grupos; divisão reparte em partes iguais ou mede quantas vezes cabe. Na multiplicação e na divisão de inteiros: sinais iguais dão resultado positivo; sinais diferentes dão resultado negativo." },
+        { "conceptId": "MAT.NUM.ORDER", "title": "Comparar números com sinal", "content": "Na reta numérica, quanto mais à direita, maior o número. Por isso −2 > −7, mesmo que 7 seja maior que 2. Entre dois negativos, é maior o que tem menor distância até o zero (menor módulo)." },
+        { "conceptId": "MAT.NUM.REAL.PROPERTIES", "title": "Propriedades úteis", "content": "Comutativa: a + b = b + a e a × b = b × a. Associativa: (a + b) + c = a + (b + c). Distributiva: a × (b + c) = a × b + a × c. Elemento neutro: a + 0 = a e a × 1 = a. Subtração e divisão não são comutativas." },
+        { "conceptId": "MAT.NUM.EXPRESSIONS", "title": "Ordem das operações", "content": "Resolva primeiro o que está dentro de parênteses, depois colchetes e chaves. Em seguida, potências e raízes; depois multiplicações e divisões, na ordem em que aparecem; por último, adições e subtrações, na ordem em que aparecem." }
+      ],
+      "examples": [
+        { "title": "Expressão com sinais", "content": "Calcule 20 − 3 × (4 − 6). 1. Parênteses: 4 − 6 = −2. 2. Multiplicação: 3 × (−2) = −6. 3. Subtração: 20 − (−6) = 20 + 6 = 26.", "conceptIds": ["MAT.NUM.EXPRESSIONS", "MAT.NUM.OPERATIONS"] },
+        { "title": "Temperatura", "content": "Começou em −3 °C e subiu 8 °C: −3 + 8 = 5 °C. Se depois caísse 9 °C: 5 − 9 = −4 °C.", "conceptIds": ["MAT.NUM.OPERATIONS", "MAT.NUM.NATURAL.INTEGER"] }
+      ],
+      "warning": { "title": "Da esquerda para a direita", "content": "Em 12 ÷ 3 × 2, não multiplique primeiro: divisão e multiplicação têm a mesma prioridade. 12 ÷ 3 = 4 e 4 × 2 = 8 (e não 2)." },
+      "summary": "ℕ ⊂ ℤ. Na reta, maior é quem está mais à direita. Sinais iguais na multiplicação/divisão dão positivo; diferentes, negativo. Ordem: parênteses, potências, × e ÷, + e −.",
+      "questions": [
+        { "conceptIds": ["MAT.NUM.NATURAL.INTEGER"], "type": "mc", "difficulty": "foundation", "ops": ["identify"], "stem": "Qual dos números abaixo é inteiro, mas não é natural?", "choices": ["0", "7", "−4", "12", "1"], "correct": 2, "explanation": "−4 é inteiro negativo, portanto não pertence aos naturais." },
+        { "conceptIds": ["MAT.NUM.NATURAL.INTEGER"], "type": "mc", "difficulty": "direct", "ops": ["recall"], "stem": "Qual afirmação é verdadeira?", "choices": ["Todo inteiro é natural.", "Todo natural é inteiro.", "O zero não é inteiro.", "Os naturais incluem −1.", "Não existe inteiro menor que −100."], "correct": 1, "explanation": "Os naturais estão contidos nos inteiros." },
+        { "conceptIds": ["MAT.NUM.OPERATIONS"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule (−6) × (−4).", "value": 24, "explanation": "Sinais iguais: resultado positivo. 6 × 4 = 24." },
+        { "conceptIds": ["MAT.NUM.OPERATIONS"], "type": "num", "difficulty": "applied", "ops": ["apply"], "stem": "Uma escola dividiu 156 livros igualmente entre 12 turmas. Quantos livros cada turma recebeu?", "value": 13, "explanation": "Divisão como repartição: 156 ÷ 12 = 13.", "exit": true },
+        { "conceptIds": ["MAT.NUM.ORDER"], "type": "mc", "difficulty": "direct", "ops": ["compare"], "stem": "Qual é o maior número?", "choices": ["−9", "−2", "−5", "−12", "−3"], "correct": 1, "explanation": "Entre negativos, o maior é o mais próximo de zero: −2." },
+        { "conceptIds": ["MAT.NUM.ORDER"], "type": "mc", "difficulty": "applied", "ops": ["compare"], "stem": "As temperaturas mínimas de quatro cidades foram −1 °C, 3 °C, −6 °C e 0 °C. Qual sequência está em ordem crescente?", "choices": ["−1, −6, 0, 3", "−6, −1, 0, 3", "0, −1, 3, −6", "3, 0, −1, −6", "−6, 0, −1, 3"], "correct": 1, "explanation": "Na reta: −6 < −1 < 0 < 3.", "exit": true },
+        { "conceptIds": ["MAT.NUM.REAL.PROPERTIES"], "type": "mc", "difficulty": "direct", "ops": ["identify"], "stem": "A igualdade 5 × (3 + 2) = 5 × 3 + 5 × 2 ilustra qual propriedade?", "choices": ["Comutativa", "Associativa", "Distributiva", "Elemento neutro", "Fechamento"], "correct": 2, "explanation": "Multiplicar uma soma é o mesmo que multiplicar cada parcela: propriedade distributiva." },
+        { "conceptIds": ["MAT.NUM.REAL.PROPERTIES"], "type": "mc", "difficulty": "direct", "ops": ["analyze"], "stem": "Qual operação NÃO é comutativa?", "choices": ["Adição de inteiros", "Multiplicação de inteiros", "Subtração de inteiros", "Adição de naturais", "Multiplicação de naturais"], "correct": 2, "explanation": "7 − 2 = 5, mas 2 − 7 = −5. A subtração não é comutativa." },
+        { "conceptIds": ["MAT.NUM.EXPRESSIONS"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule 18 − 2 × 5 + 4.", "value": 12, "explanation": "Multiplicação primeiro: 2 × 5 = 10. Depois, da esquerda para a direita: 18 − 10 + 4 = 12." },
+        { "conceptIds": ["MAT.NUM.EXPRESSIONS", "MAT.NUM.OPERATIONS"], "type": "num", "difficulty": "applied", "ops": ["calculate"], "stem": "Calcule 30 ÷ (−5) + 2 × (7 − 10).", "value": -12, "explanation": "30 ÷ (−5) = −6; 7 − 10 = −3; 2 × (−3) = −6; −6 + (−6) = −12.", "exit": true }
+      ]
+    }
+  ]
+}

@@ -18,7 +18,7 @@ Checkout: `C:\Dev\pessoal\vecta`. `origin` is `https://github.com/theusinshow/ve
 
 The user explicitly chose **draft content for human review**, without subagents or automatic content approval.
 
-The source pack contains 27 official numbered Anexo V requirements, 378 atomic Concepts across 68 editorial Lesson records (including the prerequisite mini-lesson), 29 Golden Questions and 112 original Integrated Questions. All requirements have proposed mappings. There are **63 Lessons without authored teaching/practice/exit tickets**, and none of the seed content has fabricated independent QA. Mapping is not validated coverage or planner readiness.
+The source pack contains 27 official numbered Anexo V requirements, 378 atomic Concepts across 68 editorial Lesson records (including the prerequisite mini-lesson), 29 Golden Questions and 112 original Integrated Questions. All requirements have proposed mappings. A test week of AI-assisted draft Lessons now exists for MAT-01–06 and MAT-08–10 (`packs/seeds/ifsc-2027.lesson-drafts/`, expanded by `scripts/expand-ifsc-lesson-drafts.mjs`). Parallel agents only authored these drafts and approved nothing. There are **54 Lessons without authored teaching/practice/exit tickets**, and none of the seed content has fabricated independent QA. Mapping is not validated coverage or planner readiness.
 
 The 112 original items have definitive-key provenance; 2025.1 Q15 is annulled and evidence-ineligible, and 56 items from 2026 are reserved. OCR was necessary for the 2025.2 source. All source text ordering, stimulus page coverage, classification and accessible figure descriptions still require human verification. The manually corrected Q18 is not an independent approval.
 

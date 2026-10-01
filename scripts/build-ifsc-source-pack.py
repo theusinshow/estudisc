@@ -9,6 +9,10 @@ ingestion=importlib.util.module_from_spec(spec);spec.loader.exec_module(ingestio
 inventory=ingestion.concepts_from_docs()
 golden=json.loads((ROOT/'packs/seeds/ifsc-2027.golden.track.v2.json').read_text(encoding='utf8'))
 bank=json.loads((ROOT/'.local/ifsc-official/bank.draft.json').read_text(encoding='utf8'))
+# AI-assisted lesson drafts (versioned seed); expansion stays in one Node script shared with tests.
+import subprocess
+drafts=json.loads(subprocess.run(['node',str(ROOT/'scripts/expand-ifsc-lesson-drafts.mjs')],capture_output=True,check=True,encoding='utf8').stdout)
+draft_lessons={l['id']:l for l in drafts['lessons']}
 edital=next((ROOT/'sources/ifsc').glob('EDITAL 05*'))
 with pdfplumber.open(edital) as pdf:
     text='\n'.join('\n'.join(line for line in page.extract_text().splitlines() if line.strip()!='z' and not re.match(r'^\[\s*\d+\s*\]$',line.strip())) for page in pdf.pages[40:43])
@@ -46,14 +50,21 @@ for module in golden['track']['modules']:
             if any(c['id'] not in ids for c in entry['concepts']):lesson['version']+=1
         else:
             # Honest editorial backlog: no placeholder prose, activities or fake teaching coverage.
-            lesson={'id':lesson_id,'version':1,'title':entry['title'],'kind':'core','estimatedMinutes':30,'status':'draft','concepts':[c for c in entry['concepts'] if c['id'] not in golden_concepts],'objectives':[],'sourceIds':[source_id],'prerequisiteConceptIds':[],'exitTicketQuestionIds':[],'blocks':[],'activities':[]}
+            concepts=[c for c in entry['concepts'] if c['id'] not in golden_concepts]
+            lesson={'id':lesson_id,'version':1,'title':entry['title'],'kind':'core','estimatedMinutes':30,'status':'draft','concepts':concepts,'objectives':[],'sourceIds':[source_id],'prerequisiteConceptIds':[],'exitTicketQuestionIds':[],'blocks':[],'activities':[]}
+            if lesson_id in draft_lessons:
+                draft=draft_lessons[lesson_id]
+                # Drafts may only retitle inventory Concepts; the Anexo V mapping stays authoritative.
+                assert sorted(c['id'] for c in draft['concepts'])==sorted(c['id'] for c in concepts),lesson_id
+                importance={c['id']:c['importance'] for c in concepts}
+                lesson={**draft,'concepts':[{**c,'importance':importance[c['id']]} for c in draft['concepts']],'sourceIds':[source_id,*draft['sourceIds']]}
             module['lessons'].append(lesson)
     module['lessons'].sort(key=lambda lesson:lesson['id'])
 golden['version']=2
-golden['track']['metadata'].update({'examDate':'2026-11-29T14:00:00-03:00','sourceScopeVerified':False,'editorialCoverage':'inventory_only_pending_content_and_independent_qa'})
+golden['track']['metadata'].update({'examDate':'2026-11-29T14:00:00-03:00','sourceScopeVerified':False,'editorialCoverage':'ai_drafts_pending_human_review_and_independent_qa'})
 golden['curriculumRequirements']=requirements
-golden['sources'] += [{'id':source_id,'type':'official_curriculum','title':'Edital 05/DEING/2027/1 — Anexo V completo','locator':{'privateFile':edital.name,'pages':[41,42,43]},'metadata':{'sha256':hashlib.sha256(edital.read_bytes()).hexdigest(),'transcriptionStatus':'visually_checked','mappingStatus':'pending_independent_review'}}]+bank['sources']
-golden['questions'] += bank['questions']
+golden['sources'] += [{'id':source_id,'type':'official_curriculum','title':'Edital 05/DEING/2027/1 — Anexo V completo','locator':{'privateFile':edital.name,'pages':[41,42,43]},'metadata':{'sha256':hashlib.sha256(edital.read_bytes()).hexdigest(),'transcriptionStatus':'visually_checked','mappingStatus':'pending_independent_review'}}]+bank['sources']+([drafts['source']] if drafts['lessons'] else [])
+golden['questions'] += bank['questions']+drafts['questions']
 out=ROOT/'.local/ifsc-official';(out/'track.source-pack.v2.json').write_text(json.dumps(golden,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
-report={'requirements':len(requirements),'unmapped':sum(not r['mappedConceptIds'] for r in requirements),'lessons':sum(len(m['lessons']) for m in golden['track']['modules']),'concepts':len(set(c['id'] for m in golden['track']['modules'] for l in m['lessons'] for c in l['concepts'])),'questions':len(golden['questions']),'complete':False,'contentGaps':[l['id'] for m in golden['track']['modules'] for l in m['lessons'] if not l['blocks'] or not l['exitTicketQuestionIds']]}
+report={'requirements':len(requirements),'unmapped':sum(not r['mappedConceptIds'] for r in requirements),'lessons':sum(len(m['lessons']) for m in golden['track']['modules']),'concepts':len(set(c['id'] for m in golden['track']['modules'] for l in m['lessons'] for c in l['concepts'])),'questions':len(golden['questions']),'complete':False,'draftLessonsPendingHumanReview':sorted(draft_lessons),'contentGaps':[l['id'] for m in golden['track']['modules'] for l in m['lessons'] if not l['blocks'] or not l['exitTicketQuestionIds']]}
 (out/'coverage.inventory.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf8');print(json.dumps(report))

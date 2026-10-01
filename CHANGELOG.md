@@ -28,6 +28,10 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 
 ### Added
 
+- IFSC test-week lesson drafts (MAT-01–06, MAT-08–10) in compact seed format, expanded into Pack v2 Questions/activities and merged by the source-pack builder; all `draft` pending human review.
+- `scripts/audit-ifsc-official-bank.mjs`: read-only OCR/representation pre-review checklist for the private official bank.
+- Fixed: the 2025.2 OCR page footer is now filtered during official ingestion.
+
 - Phase 0 Next.js App Router scaffold with TypeScript strict mode and pinned pnpm dependencies.
 - Tailwind CSS foundation and generated CSS custom properties from `design-system/design-tokens.json`.
 - Minimal responsive accessible application shell using official branding assets, skip link, navigation placeholders, main landmark and status region.

@@ -12,6 +12,8 @@ Validation: 134 tests passed / 1 real-PostgreSQL test skipped; lint/typecheck/bu
 
 The existing V1 core is the implementation foundation. The approved target is `docs/ifsc/17-ACCEPTANCE-CRITERIA.md` once integrated. Historical PDFs are private local source material under `sources/ifsc/historical`, not publicly served assets. Credentials were not copied.
 
+Update (2026-10-01, Claude Code): one test week of AI-assisted **draft** lessons was added: MAT-01–06, MAT-08–10 in `packs/seeds/ifsc-2027.lesson-drafts/`, 99 draft Questions. 54 Lessons remain without teaching content. Nothing was approved. The 2025.2 OCR page-footer leak was removed from 20 official items; their classification still needs human review. Validation: `tests/unit/ifsc-lesson-drafts.test.ts` and `tests/integration/source-pack-local.test.ts` passed, typecheck and lint clean.
+
 NEXT ACTION: human editorial production/review using the private source pack and `/admin`; publish only through independent QA. See `docs/ifsc/LOCAL-DELIVERY.md`. The older V1 status below is historical.
 
 Last updated: 2026-08-05
