@@ -1,0 +1,88 @@
+{
+  "schema": "caderno.track.v1",
+  "packId": "know-os.ifsc-2027.foundation",
+  "version": 1,
+  "language": "pt-BR",
+  "track": {
+    "id": "ifsc-2027",
+    "title": "IFSC 2027",
+    "description": "Fundação curricular parcial; conteúdo ainda não publicado nem planner-ready.",
+    "modules": [
+      {
+        "id": "mat",
+        "title": "Matemática",
+        "lessons": [
+          {
+            "id": "MAT-PREREQUISITES",
+            "version": 1,
+            "title": "Pré-requisitos — conteúdo em preparação",
+            "concepts": [
+              {
+                "id": "MAT.FRACTION.MEANING",
+                "title": "Interpretar uma fração"
+              },
+              {
+                "id": "MAT.DECIMAL.MEANING",
+                "title": "Interpretar um número decimal"
+              },
+              {
+                "id": "MAT.PROPORTION.CONCEPT",
+                "title": "Interpretar proporcionalidade"
+              }
+            ],
+            "blocks": [],
+            "activities": []
+          },
+          {
+            "id": "MAT-07",
+            "version": 1,
+            "title": "Porcentagem — conteúdo em preparação",
+            "concepts": [
+              {
+                "id": "MAT.PCT.CONCEPT",
+                "title": "Entender porcentagem como parte de 100"
+              },
+              {
+                "id": "MAT.PCT.CONVERT",
+                "title": "Converter fração, decimal e porcentagem"
+              },
+              {
+                "id": "MAT.PCT.CALCULATE",
+                "title": "Calcular porcentagem de uma quantidade"
+              },
+              {
+                "id": "MAT.PCT.DISCOUNT",
+                "title": "Calcular desconto e preço final"
+              },
+              {
+                "id": "MAT.PCT.INCREASE",
+                "title": "Calcular aumento percentual"
+              },
+              {
+                "id": "MAT.PCT.INTERPRET",
+                "title": "Interpretar a quantidade pedida"
+              }
+            ],
+            "blocks": [],
+            "activities": []
+          }
+        ]
+      },
+      {
+        "id": "por",
+        "title": "Língua Portuguesa",
+        "lessons": []
+      },
+      {
+        "id": "cie",
+        "title": "Ciências",
+        "lessons": []
+      },
+      {
+        "id": "gh",
+        "title": "Geografia e História",
+        "lessons": []
+      }
+    ]
+  }
+}

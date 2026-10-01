@@ -1,0 +1,133 @@
+{
+  "sources": [
+    {
+      "id": "src-ifsc-edital-2027-1",
+      "type": "official_curriculum",
+      "title": "Edital de Ingresso Nº 05/DEING/2027/1",
+      "locator": {
+        "section": "Anexo V",
+        "pages": "41–43"
+      },
+      "metadata": {
+        "localFile": "sources/ifsc/EDITAL 05_2027_1_TECNICO_INTEGRADO_PROVA ok (1).pdf"
+      }
+    }
+  ],
+  "requirements": [
+    {
+      "id": "IFSC27.MAT.NUM.PERCENTAGE",
+      "subjectCode": "MAT",
+      "label": "Porcentagem",
+      "sourceId": "src-ifsc-edital-2027-1",
+      "sourceLocator": {
+        "section": "Anexo V / Matemática / item 1"
+      },
+      "mappedConceptIds": [
+        "MAT.PCT.CONCEPT",
+        "MAT.PCT.CONVERT",
+        "MAT.PCT.CALCULATE",
+        "MAT.PCT.DISCOUNT",
+        "MAT.PCT.INCREASE",
+        "MAT.PCT.INTERPRET"
+      ]
+    }
+  ],
+  "prerequisites": [
+    {
+      "conceptId": "MAT.PCT.CONVERT",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.CALCULATE",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.DISCOUNT",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.INCREASE",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.INTERPRET",
+      "prerequisiteConceptId": "MAT.PCT.CONCEPT",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.CALCULATE",
+      "prerequisiteConceptId": "MAT.FRACTION.MEANING",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.CALCULATE",
+      "prerequisiteConceptId": "MAT.DECIMAL.MEANING",
+      "strength": "required"
+    },
+    {
+      "conceptId": "MAT.PCT.CALCULATE",
+      "prerequisiteConceptId": "MAT.PROPORTION.CONCEPT",
+      "strength": "required"
+    }
+  ],
+  "settings": [
+    {
+      "conceptId": "MAT.PCT.CONCEPT",
+      "moduleId": "mat",
+      "subjectCode": "MAT",
+      "importance": "high"
+    },
+    {
+      "conceptId": "MAT.PCT.CONVERT",
+      "moduleId": "mat",
+      "subjectCode": "MAT",
+      "importance": "high"
+    },
+    {
+      "conceptId": "MAT.PCT.CALCULATE",
+      "moduleId": "mat",
+      "subjectCode": "MAT",
+      "importance": "high"
+    },
+    {
+      "conceptId": "MAT.PCT.DISCOUNT",
+      "moduleId": "mat",
+      "subjectCode": "MAT",
+      "importance": "high"
+    },
+    {
+      "conceptId": "MAT.PCT.INCREASE",
+      "moduleId": "mat",
+      "subjectCode": "MAT",
+      "importance": "high"
+    },
+    {
+      "conceptId": "MAT.PCT.INTERPRET",
+      "moduleId": "mat",
+      "subjectCode": "MAT",
+      "importance": "high"
+    },
+    {
+      "conceptId": "MAT.FRACTION.MEANING",
+      "moduleId": "mat",
+      "subjectCode": "MAT",
+      "importance": "high"
+    },
+    {
+      "conceptId": "MAT.DECIMAL.MEANING",
+      "moduleId": "mat",
+      "subjectCode": "MAT",
+      "importance": "high"
+    },
+    {
+      "conceptId": "MAT.PROPORTION.CONCEPT",
+      "moduleId": "mat",
+      "subjectCode": "MAT",
+      "importance": "high"
+    }
+  ]
+}

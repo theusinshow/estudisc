@@ -27,6 +27,17 @@ The authoritative `EDITAL 05_2027_1_TECNICO_INTEGRADO_PROVA ok (1).pdf` was foun
 ## Milestones
 
 - IFSC-00: complete; final lint passed without warnings.
-- IFSC-01–15: pending.
+- IFSC-01: curriculum foundation implemented; basic gate recorded below.
+- IFSC-02–15: pending.
 
 No final acceptance audit has passed. The system is not yet a complete IFSC student product.
+
+## IFSC-01
+
+Added six curriculum/source tables, same-Track relational constraints, Module subject metadata, atomic/idempotent foundation seed, graph/reference validators and derived coverage queries. Seed: four Modules, six MAT-07 Concepts plus three prerequisites; one mapped percentage requirement. Official scope remains explicitly unverified and published/QA content readiness remains absent, so the system cannot falsely claim curriculum completion.
+
+Migration: `0010_real_blur.sql` and matching Drizzle snapshot/journal. The generated Module composite unique constraint was moved before foreign keys referencing it; all migrations were verified in disposable PGlite. No production database was used.
+
+Basic validation under the user's updated testing preference: `pnpm exec vitest run tests/unit/curriculum.test.ts tests/integration/curriculum-repository.test.ts` — 3 passed. Covers repeat seed, rollback, existing-graph cycles, subject/reference checks and incomplete coverage. `pnpm typecheck` passed; lint rerun after correcting the fixture variable name. No redundant full build/E2E for this non-UI increment.
+
+Target remote changed to `https://github.com/theusinshow/vecta.git` per user instruction. Successful `git ls-remote` returned no refs; `origin` now points there, inherited local history is preserved, and no push occurred.

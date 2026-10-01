@@ -5,6 +5,7 @@ import {
   primaryKey,
   text,
   timestamp,
+  unique,
   uniqueIndex,
   uuid
 } from "drizzle-orm/pg-core";
@@ -49,9 +50,10 @@ export const modules = pgTable(
       .notNull()
       .references(() => tracks.id),
     title: text("title").notNull(),
+    subjectCode: text("subject_code"),
     orderIndex: integer("order_index").notNull()
   },
-  (table) => [uniqueIndex("modules_track_stable_idx").on(table.trackId, table.stableId)]
+  (table) => [uniqueIndex("modules_track_stable_idx").on(table.trackId, table.stableId), unique("modules_track_id_unique").on(table.trackId, table.id)]
 );
 
 export const lessons = pgTable(

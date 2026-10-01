@@ -135,3 +135,9 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 - Product, domain, data, Pack, Programming Lab, testing, security and roadmap documentation.
 - ADR set for foundational architectural decisions.
 - Initial Codex Phase 0 bootstrap prompt.
+
+## 2026-10-01 — IFSC-01
+
+- Added curriculum/source/prerequisite/settings schema and migration 0010; atomic idempotent foundation seed and derived partial coverage.
+- Basic gate: 3 focused tests, typecheck and lint passed. No production migration.
+

@@ -2,6 +2,8 @@
 
 ## Approved IFSC expansion
 
+User update (2026-10-01): target remote is `https://github.com/theusinshow/vecta`. Prioritize speed and low token use. Run basic focused validation for each coherent change; preserve critical domain invariants. Do not repeat the full suite/build/E2E after every small edit. Full final acceptance checks remain required. Push/deploy/production migration still need explicit authorization.
+
 The user authorized IFSC-00 through IFSC-15 continuously; the approved roadmap is docs/ifsc/16-IMPLEMENTATION-PLAN.md. Private ADMIN/STUDENT profiles are approved by ADR 0026, not a public SaaS scope expansion. Retain production approval boundaries.
 
 - Extend existing core modules; no parallel renderer, activity registry, mastery, review or assessment engines.

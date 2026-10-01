@@ -4,7 +4,9 @@
 
 User authorization: implement IFSC-00 through IFSC-15 autonomously in this copied checkout, `C:\Dev\pessoal\vecta`. The original `know-os` checkout is read-only. No production migrations, remote pushes or deployments are authorized.
 
-Current milestone: **IFSC-01 — curriculum foundation**. IFSC-00 passed its gate; see docs/ifsc/IMPLEMENTATION-AUDIT.md.
+User update: remote `https://github.com/theusinshow/vecta.git` is empty (successful `git ls-remote`, no refs). It is now `origin`; the read-only local source is `know-os-source`. Preserve inherited history. Favor low token usage and basic focused checks per coherent milestone; run full final gate once, expanding checks only for actual failures/risks.
+
+Current milestone: **IFSC-02 — compatible Track Pack v2 / shared versioned Questions**. IFSC-00/01 passed their focused gates; see docs/ifsc/IMPLEMENTATION-AUDIT.md.
 
 - [x] Integrate ADRs 0017–0029; supersede only ADR 0008's single-owner constraint.
 - [x] Reconcile the core documentation and agent rules with the approved expansion.
@@ -18,7 +20,9 @@ Inspection: existing V1 imports/renderer/registry/Attempts/evidence/review/maste
 
 IFSC-01 acceptance: relational requirements/sources/prerequisites/settings; reference and cycle validation; idempotent foundation seed (four modules, six percentage concepts plus prerequisite concepts); coverage derived from real mappings/content/QA, with gaps visible; migrated PGlite tests; baseline gate. No authoritative coverage claim from lesson titles or imported status.
 
-NEXT ACTION: implement curriculum schema, domain validation, repository coverage queries and seed fixture, then test. Historical V1 plans below are retained as history, not the active roadmap.
+IFSC-02: preserve v1 parser/hash behavior; add strict v2 shape and semantic references/answers/exposure checks; persist sources/curriculum/Question versions atomically in the existing importer; reject version conflicts; preserve attempts. Validate focused import compatibility/integration plus typecheck/lint.
+
+NEXT ACTION: implement v2 contracts and shared Question Bank, then continue to educational registries. Historical V1 plans below are retained as history, not the active roadmap.
 
 This file is the durable control surface for the current multi-step implementation task. Keep it current so a new Codex session can resume without asking the user to restate decisions.
 
