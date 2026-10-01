@@ -1,5 +1,9 @@
 # 08 — Learning Engine
 
+## IFSC learning loop
+
+Active recall precedes recaps. Learning follows context → concept → worked example → guided practice → independent practice → transfer. Repeated errors trigger alternate explanations/micro-exercises and prerequisite remediation. Exit tickets include direct, applied and transfer items. StudySessions organize existing lessons/reviews/practice; completion never confers mastery. Recommendations remain candidate input to the deterministic Planner. See ifsc/04-PEDAGOGY.md.
+
 ## Purpose
 
 The Learning Engine sequences content and records progress without confusing completion with knowledge.

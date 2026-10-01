@@ -1,6 +1,7 @@
 # ADR 0008 — Build single-user now with ownership-ready data
 
-Status: Accepted
+Status: Superseded
+Superseded by: ADR 0026 (single-owner constraint only; ownership boundaries remain).
 Date: 2026-07-30
 
 ## Context

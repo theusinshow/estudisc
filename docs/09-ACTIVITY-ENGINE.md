@@ -1,5 +1,9 @@
 # 09 — Activity Engine
 
+## Approved educational registry extensions
+
+Add deterministic numeric, ordering, classification, matching, text-highlight and guided-step interactions plus numeric exploration. Activities reference shared Question versions. Schema, response, scorer, feedback/evidence mapping and touch/keyboard alternatives are required. Hint ladder: conceptual direction → first step → partial solution → full solution. Persist assistance and solution exposure. EXAM disables assistance and immediate correctness. See ifsc/06-LESSON-SYSTEM.md and ifsc/07-QUESTION-SYSTEM.md.
+
 ## Contract
 
 Every activity type provides:

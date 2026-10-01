@@ -1,5 +1,9 @@
 # 03 — Information Architecture
 
+## Student and Admin navigation
+
+Student mobile navigation: Today, Learn, Progress, More. More exposes Review, Simulations, Curriculum, History and Settings. Tutor is contextual. Admin has a separate denser shell, with authorization on its server boundaries. The broad route inventory below remains available through secondary navigation. Concept remains the mastery unit.
+
 ## Primary navigation
 
 1. Today

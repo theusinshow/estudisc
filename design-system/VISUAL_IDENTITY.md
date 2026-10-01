@@ -184,7 +184,7 @@ Regras:
 
 Forma:
 
-- raio entre 0 e 4 px;
+- raio base entre 0 e 4 px; superfícies de estudo usam os tokens v3 de 12–18 px;
 - borda sólida;
 - sombra sólida;
 - composição em blocos claros;

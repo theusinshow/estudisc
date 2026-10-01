@@ -1,9 +1,55 @@
 # KNOW/OS — Sistema de Componentes
 
+## IFSC v3 — approved delta
+
+
+Required learning components/variants:
+
+- `StudySessionCard`
+- `SessionProgress`
+- `LessonHeader`
+- `LearningSurface`
+- `WorkedExample`
+- `HintPanel`
+- `FeedbackPanel`
+- `QuestionShell`
+- `AnswerChoice`
+- `NumericAnswer`
+- `TextHighlightActivity`
+- `OrderingActivity`
+- `ClassificationActivity`
+- `NumericExplorer`
+- `TimelineActivity`
+- `DiagramActivity`
+- `MasteryIndicator`
+- `RetentionStatus`
+- `ReviewCard`
+- `AssessmentTimer`
+- `QuestionNavigator`
+- `TutorSheet`
+
+## Mechanical press behavior
+
+Pressable surfaces should visually depress using existing motion/shadow tokens:
+
+default → hard offset shadow
+active → short translate + reduced shadow
+
+Respect `prefers-reduced-motion`.
+
+## Touch
+
+Primary buttons generally use at least the existing 44px minimum hit target; learning answers often benefit from 52–56px or more depending on content.
+
+## Content rule
+
+Do not wrap every prose paragraph in a bordered card. Structural emphasis belongs on actionable/meaningful surfaces.
+
+
 ## Contrato global
 
 Todo componente consome `design-tokens.json`. Valores literais locais são
-proibidos. Raio entre 0 e 4px, borda explícita, sombra sólida e foco visível.
+proibidos. Raio base entre 0 e 4px; superfícies de aprendizagem e sheets usam os tokens v3 de 12–18px. Borda explícita, sombra sólida e foco visível.
 
 ## Ação
 

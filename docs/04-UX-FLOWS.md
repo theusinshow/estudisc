@@ -1,5 +1,9 @@
 # 04 — Core UX Flows
 
+## IFSC canonical session
+
+Today → choose 15/30 minutes or complete session → activate/freeze StudySession → retrieval → content/example → guided/independent/transfer practice → exit ticket → result → evidence/review updates. Resume persists item progress; ACTIVE composition cannot be rebuilt. Missed days trigger recomputation, not lesson debt. Browsing remains free; the Planner can substitute prerequisite remediation for dependent new content. Assessments autosave mutable responses and freeze exact versions/order; transactional idempotent finalization appends evidence once.
+
 ## Continue learning
 
 Today → Continue → Lesson step → Activity/checkpoint → completion state → next recommendation.

@@ -53,3 +53,8 @@ Thumbs.db
 *.tmp
 *.temp
 .cache/
+
+# Imported specification archive and private official source originals
+/ifsc-source/
+/sources/ifsc/**/*.pdf
+/sources/ifsc/*.pdf

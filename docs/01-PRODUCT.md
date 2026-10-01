@@ -1,8 +1,12 @@
 # 01 — Product Definition
 
+## Approved IFSC product extension
+
+Today → StudySession answers what to study now. Add EXAM mode: no hints, tutor or correctness feedback until finalization. BUILD remains for programming. Coverage, evidence, retention and assessments describe progress; no admission probability. See [IFSC product](ifsc/00-IFSC-PRODUCT.md).
+
 ## Users
 
-V1 serves one owner who studies and builds projects. The architecture preserves an ownership boundary so the product can later support multiple users without rewriting every domain table.
+The original V1 served one owner. ADR 0026 approves private allowlisted ADMIN and STUDENT profiles mapped to distinct owners. Students own learning state; Admin manages curriculum, sources, QA and publication. No public signup, organizations, billing or classrooms.
 
 ## Core jobs
 

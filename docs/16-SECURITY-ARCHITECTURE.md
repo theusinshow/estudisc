@@ -1,5 +1,9 @@
 # 16 — Security Architecture
 
+## IFSC trust boundaries
+
+Map allowlisted Google identities to distinct owners/roles; enforce owner scoping and ADMIN publication authorization on servers. Question selection and delivery enforce reserved exposure; protected exam sources are not public assets. No executable Pack components. AI context is minimized through the gateway; no client secrets or AI writes to canonical learning state. Published content/history cannot be overwritten by editing/import. ADR 0015 remains infrastructure authority; ADR 0026 refines ownership.
+
 ## Trust boundaries
 
 1. Browser UI.

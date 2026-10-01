@@ -1,0 +1,30 @@
+{
+  "$description": "Proposed v3 delta; merge into canonical design-system/design-tokens.json rather than using as a second runtime token source.",
+  "designVersion": "3.0.0",
+  "direction": "functional-neo-brutalism-mobile-first-learning-first",
+  "proposed": {
+    "radius": {
+      "learningCard": "12px",
+      "interactive": "14px",
+      "sheet": "18px"
+    },
+    "size": {
+      "answerMinHeight": "56px",
+      "primaryMobileButton": "52px"
+    },
+    "navigation": {
+      "mobileBottomHeight": "64px"
+    },
+    "subjectAccent": {
+      "mathematics": "{color.signal}",
+      "portuguese": "#7D5BD6",
+      "science": "#49B67A",
+      "historyGeography": "#3F7CCB"
+    }
+  },
+  "rules": [
+    "Existing semantic state colors remain authoritative.",
+    "Exact values must pass contrast/accessibility review before merging.",
+    "Do not consume this delta directly in production; generate canonical tokens after merge."
+  ]
+}

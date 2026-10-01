@@ -1,5 +1,9 @@
 # 20 — Product Acceptance Criteria
 
+## IFSC completion gate
+
+Audit [IFSC acceptance criteria](ifsc/17-ACCEPTANCE-CRITERIA.md) in addition to core criteria. Full coverage requires every authoritative Anexo V requirement, zero unmapped requirements, validated mappings and planner-ready content/question coverage. Mobile-first flows and golden regression fixtures are required. Compiling alone is not completion.
+
 ## Global
 
 - Keyboard-only use supports all primary flows.

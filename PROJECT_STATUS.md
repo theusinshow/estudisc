@@ -1,5 +1,15 @@
 # KNOW/OS — Project Status
 
+## IFSC expansion — current status (2026-10-01)
+
+Active checkout: `C:\Dev\pessoal\vecta`, copied with Git history from the original KNOW/OS under explicit user authorization. Production and the original checkout remain untouched.
+
+Current milestone: **IFSC-01 IN PROGRESS**. IFSC-00 passed lint/typecheck/tests/build and shell E2E; IFSC-01 through IFSC-15 are pending. Acceptance criteria are not yet satisfied; no production readiness is claimed.
+
+The existing V1 core is the implementation foundation. The approved target is `docs/ifsc/17-ACCEPTANCE-CRITERIA.md` once integrated. Historical PDFs are private local source material under `sources/ifsc/historical`, not publicly served assets. Credentials were not copied.
+
+NEXT ACTION: implement curriculum tables/validation/coverage and the IFSC foundation seed; details in PLANS.md. The older V1 status below is historical.
+
 Last updated: 2026-08-05
 
 ## Current phase

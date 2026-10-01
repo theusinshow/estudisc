@@ -2,8 +2,8 @@
 
 ## Breakpoints canônicos
 
-Consumir os tokens `breakpoint.*`. O layout é desktop-first para programação,
-mas todas as funções essenciais precisam de composição mobile equivalente.
+Consumir os tokens `breakpoint.*`. O produto de estudo é mobile-first: validar mobile → tablet → desktop.
+O Programming Lab pode receber melhorias de largura em desktop, com todas as funções essenciais disponíveis no mobile.
 
 ## Wide desktop
 

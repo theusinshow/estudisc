@@ -1,4 +1,6 @@
-# KNOW/OS Design System v2.2
+# KNOW/OS Design System v3.0
+
+O delta IFSC em ifsc-v3/ evolui a direção para mobile-first e learning-first. Preserva identidade, acessibilidade, tokens e Programming Lab. Todas as referências v2 descrevem a origem histórica; v3 governa as novas superfícies de estudo.
 
 Pacote consolidado da fonte de verdade visual, de interação e de identidade do KNOW/OS.
 

@@ -1,5 +1,9 @@
 # 17 — Roadmap
 
+## Active approved expansion
+
+The V1 phases below are historical. Continue through IFSC-00 → IFSC-01 → … → IFSC-15 per ifsc/16-IMPLEMENTATION-PLAN.md, validating and recording each gate. The user authorized continuous local implementation. Production migrations, pushes and deployment retain separate approval boundaries.
+
 Execution protocol: `AUTONOMY.md`.
 
 The lead agent may progress automatically through these phases, but each phase must remain independently planned, validated, documented, and checkpointed. Do not collapse the roadmap into one unstructured implementation.
@@ -14,7 +18,7 @@ Before starting the next phase:
 - `PLANS.md`, `PROJECT_STATUS.md`, documentation, and changelog are current;
 - a local Git checkpoint is created when safe and available;
 - unresolved risks do not invalidate the next phase;
-- the next phase remains inside approved V1 scope.
+- the next phase remains inside approved V1 or IFSC expansion scope.
 
 ## Phase 0 — Foundation
 

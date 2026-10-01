@@ -1,5 +1,9 @@
 # 15 — Testing Strategy
 
+## IFSC invariant coverage
+
+Add tests for idempotent submission/finalization with exactly-once evidence, v1/v2 Pack compatibility, immutable published/history versions, deterministic assistance-weighted mastery, review failure intervals, derived curriculum coverage, frozen ACTIVE sessions, private owner/role isolation, reserved-question exclusion and annulled no-score/no-evidence behavior. Golden fixtures: MAT-07, POR-01, CIE-06, GH-06. Test student critical paths mobile first, without hover/drag dependence or color-only status. Use migrated disposable PGlite, memory UI harness and full baseline checks. Never apply production migrations through a test gate.
+
 ## Test pyramid
 
 ### Unit

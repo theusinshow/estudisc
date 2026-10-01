@@ -1,7 +1,14 @@
 {
   "$schema": "https://design-tokens.github.io/community-group/format/",
-  "$version": "2.1.0",
+  "$version": "3.0.0",
   "$changelog": [
+    {
+      "version": "3.0.0",
+      "date": "2026-10-01",
+      "changes": [
+        "Added mobile learning surface, answer and navigation tokens; preserved existing semantic and technical tokens"
+      ]
+    },
     {
       "version": "2.2.0",
       "date": "2026-08-04",
@@ -62,6 +69,12 @@
       "3": "#4E4B45",
       "4": "#252421",
       "5": "#0E0E0C"
+    },
+    "subjectAccent": {
+      "mathematics": "{color.signal}",
+      "portuguese": "#7D5BD6",
+      "science": "#49B67A",
+      "historyGeography": "#3F7CCB"
     }
   },
   "state": {
@@ -148,7 +161,10 @@
   "radius": {
     "none": "0px",
     "sm": "2px",
-    "md": "4px"
+    "md": "4px",
+    "learningCard": "12px",
+    "interactive": "14px",
+    "sheet": "18px"
   },
   "shadow": {
     "structural": "3px 3px 0 {color.ink}",
@@ -178,7 +194,9 @@
     "sidebar": "214px",
     "drawer": "360px",
     "paletteMax": "660px",
-    "statusbar": "28px"
+    "statusbar": "28px",
+    "answerMinHeight": "56px",
+    "primaryMobileButton": "52px"
   },
   "icon": {
     "sm": "16px",
@@ -251,5 +269,8 @@
   "theme": {
     "systemDarkMode": false,
     "dimmedPaperMode": "manual"
+  },
+  "navigation": {
+    "mobileBottomHeight": "64px"
   }
 }

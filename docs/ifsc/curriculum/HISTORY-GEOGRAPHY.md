@@ -1,0 +1,165 @@
+# Geography and History Curriculum — IFSC 2027
+
+Status: **Accepted draft for seeding**
+Official basis: Edital 05/DEING/2027/1, Anexo V, Geografia e História.
+
+This Module integrates Geography and History because the official exam allocates one seven-question area to both.
+
+## GH-01 — Geographic space, cartography, time and sources
+
+- `GH.GEO.SPACE`
+- `GH.GEO.BASIC_CONCEPTS`
+- `GH.CARTO.REPRESENTATION`
+- `GH.CARTO.INTERPRET`
+- `GH.GRAPHIC.ICONOGRAPHIC`
+- `GH.HIST.HISTORIOGRAPHY`
+- `GH.HIST.TIME`
+- `GH.HIST.MEMORY`
+- `GH.HIST.SOURCE`
+
+## GH-02 — Social formation of Santa Catarina
+
+- `GH.SC.INDIGENOUS`
+- `GH.SC.TRADITIONAL`
+- `GH.SC.AFRICAN_AFRODESC`
+- `GH.SC.EUROPEAN_COLONIZATION`
+- `GH.SC.ETHNIC_RELATIONS`
+- `GH.SC.MINORITIES`
+
+## GH-03 — Territory of Santa Catarina and Contestado
+
+- `GH.SC.TERRITORIAL_FORMATION`
+- `GH.SC.CONTESTADO.CONTEXT`
+- `GH.SC.CONTESTADO.CAUSES`
+- `GH.SC.CONTESTADO.ACTOR`
+- `GH.SC.CONTESTADO.CONSEQUENCES`
+- `GH.SC.TERRITORY.INTERPRET`
+
+## GH-04 — Regions, economy, population and environment of Santa Catarina
+
+- `GH.SC.REGIONS`
+- `GH.SC.ECONOMY`
+- `GH.SC.SOCIAL`
+- `GH.SC.URBAN_RURAL`
+- `GH.SC.ENVIRONMENT`
+- `GH.SC.LANDSCAPE_CHANGE`
+
+## GH-05 — Indigenous peoples, territory and Colonial Brazil
+
+- `GH.BR.TERRITORIAL_FORMATION`
+- `GH.BR.INDIGENOUS_AGENCY`
+- `GH.BR.COLONIZATION`
+- `GH.BR.COLONIAL_ECONOMY`
+- `GH.BR.TERRITORY_CHANGE`
+
+## GH-06 — Slavery and resistance
+
+- `GH.BR.SLAVERY.SYSTEM`
+- `GH.BR.SLAVERY.AFRICAN_AFRODESC`
+- `GH.BR.SLAVERY.RESISTANCE`
+- `GH.BR.QUILOMBOS`
+- `GH.BR.SLAVERY.SOURCE_ANALYSIS`
+- `GH.BR.SLAVERY.CAUSE_EFFECT`
+
+## GH-07 — Independence and Brazilian Empire
+
+- `GH.BR.INDEPENDENCE.CONTEXT`
+- `GH.BR.INDEPENDENCE.PROCESS`
+- `GH.BR.MONARCHY`
+- `GH.BR.EMPIRE.SOCIETY`
+- `GH.BR.EMPIRE.CONFLICTS`
+
+## GH-08 — Abolition and Republic
+
+- `GH.BR.ABOLITION.PROCESS`
+- `GH.BR.ABOLITION.AGENCY`
+- `GH.BR.ABOLITION.LAWS`
+- `GH.BR.REPUBLIC.PROCLAMATION`
+- `GH.BR.ABOLITION.AFTERMATH`
+
+## GH-09 — Old Republic and Vargas Era
+
+- `GH.BR.OLD_REPUBLIC`
+- `GH.BR.OLIGARCHIES`
+- `GH.BR.SOCIAL_MOVEMENTS_REPUBLIC`
+- `GH.BR.VARGAS.CONTEXT`
+- `GH.BR.VARGAS.STATE`
+- `GH.BR.VARGAS.WORK`
+
+## GH-10 — Post-war Brazil and dictatorship
+
+- `GH.BR.POSTWAR`
+- `GH.BR.DICTATORSHIP.CONTEXT`
+- `GH.BR.DICTATORSHIP.POLITICS`
+- `GH.BR.DICTATORSHIP.SOCIETY`
+- `GH.BR.DICTATORSHIP.RESISTANCE`
+
+## GH-11 — Redemocratization and contemporary Brazil
+
+- `GH.BR.REDEMOCRATIZATION`
+- `GH.BR.CONSTITUTIONAL_ORDER`
+- `GH.BR.NEOLIBERAL_ERA`
+- `GH.BR.CONTEMPORARY_CHANGE`
+
+## GH-12 — Brazilian economic and population geography
+
+- `GH.BR.AGRICULTURE_MODERNIZATION`
+- `GH.BR.INDUSTRIALIZATION`
+- `GH.BR.URBANIZATION`
+- `GH.BR.POPULATION`
+- `GH.BR.CULTURE_IDENTITY`
+- `GH.BR.TERRITORIALITIES`
+- `GH.BR.ENVIRONMENT_LANDSCAPE`
+
+## GH-13 — Capitalism, globalization, work and inequality
+
+- `GH.WORLD.CAPITALISM`
+- `GH.WORLD.GLOBALIZATION`
+- `GH.WORLD.WORLD_SYSTEM`
+- `GH.WORLD.INEQUALITY`
+- `GH.WORLD.WORK`
+
+## GH-14 — Antiquity and Middle Ages
+
+- `GH.GENERAL.FIRST_SOCIETIES`
+- `GH.GENERAL.ANTIQUITY`
+- `GH.GENERAL.MIDDLE_AGES`
+- `GH.GENERAL.ISLAMIC_EXPANSION`
+
+## GH-15 — Renaissance, National States and Reformation
+
+- `GH.GENERAL.RENAISSANCE`
+- `GH.GENERAL.MODERNITY`
+- `GH.GENERAL.NATIONAL_STATES`
+- `GH.GENERAL.REFORMATION`
+- `GH.GENERAL.COUNTER_REFORMATION`
+
+## GH-16 — Maritime expansion, Enlightenment and revolutions
+
+- `GH.GENERAL.MARITIME_EXPANSION`
+- `GH.GENERAL.AMERICAS_COLONIZATION`
+- `GH.GENERAL.ENLIGHTENMENT`
+- `GH.GENERAL.BOURGEOIS_REVOLUTIONS`
+- `GH.GENERAL.AMERICAS_INDEPENDENCE`
+
+## GH-17 — Industrialization, imperialism and World Wars
+
+- `GH.GENERAL.INDUSTRIAL_REVOLUTION`
+- `GH.GENERAL.IMPERIALISM_AFRICA_ASIA`
+- `GH.GENERAL.TOTALITARIANISM`
+- `GH.GENERAL.WORLD_WAR_I`
+- `GH.GENERAL.INTERWAR`
+- `GH.GENERAL.WORLD_WAR_II`
+
+## GH-18 — Cold War, decolonization, resistance and Human Rights
+
+- `GH.GENERAL.COLD_WAR`
+- `GH.GENERAL.DECOLONIZATION`
+- `GH.GENERAL.IMPERIALISMS_20_21`
+- `GH.GENERAL.RESISTANCE`
+- `GH.GENERAL.COUNTERCULTURE`
+- `GH.GENERAL.HUMAN_RIGHTS`
+
+## Pedagogical rule
+
+Use maps, timelines, visual sources, excerpts and cause/effect reasoning where they serve the Concept. Avoid turning the entire Module into date memorization.

@@ -1,5 +1,9 @@
 # 18 — Observability
 
+## IFSC metrics
+
+Record safe duration/count/status metrics for planner decisions, assessment autosave/finalization retries, generation usage, QA blockers, exposure rejection and curriculum gaps. Policy/version IDs support audits. Avoid raw answers, lesson text, protected questions or unrelated student history in operational logs.
+
 ## Goals
 
 Enable debugging without collecting unnecessary personal learning content.

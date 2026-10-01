@@ -44,7 +44,7 @@ Feature modules may expose a small public API. Cross-feature imports should flow
 
 ## Deployment posture
 
-V1 should be deployable to a conventional Node-compatible platform with managed PostgreSQL. Vendor selection is deferred. The application must remain runnable locally.
+V1 should be deployable to a conventional Node-compatible platform with managed PostgreSQL. ADR 0015 selects Vercel and Neon; ADR 0026 refines private owner mapping. The application must remain runnable locally.
 
 ## Authentication posture
 

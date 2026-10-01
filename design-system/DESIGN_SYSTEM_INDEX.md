@@ -1,6 +1,10 @@
 # KNOW/OS — Índice do Design System (fonte de verdade)
 
-Versão 2.2 · 2026-07-30 · direção **Brutalismo Técnico + voz editorial**.
+## Delta IFSC integrado
+
+As regras v3 em ifsc-v3/ refinam telas e componentes de estudo. ACCESSIBILITY.md e design-tokens.json continuam no topo da precedência. Student mobile: Hoje, Aprender, Progresso, Mais; Admin separado; Programming Lab mantém sua autoridade técnica. TOKENS-DELTA.json é proposta histórica e não deve ser consumido pelo runtime. Valores aprovados vivem somente no JSON canônico.
+
+Versão 3.0 · 2026-10-01 · direção **Neo-Brutalismo Funcional + aprendizagem mobile-first** (ADR 0027).
 
 **Status:** APPROVED / FROZEN FOR IMPLEMENTATION
 
@@ -56,7 +60,7 @@ Corrija o protótipo; não enfraqueça a especificação.
 
 ## 3. Tokens canônicos
 
-`design-tokens.json` v2.1 é a única fonte de valores literais. O código de
+`design-tokens.json` v3.0 é a única fonte de valores literais. O código de
 produção deve consumir CSS custom properties geradas a partir do JSON.
 
 Não escrever diretamente em componentes:
@@ -94,7 +98,7 @@ migração e atualização do changelog.
 4. **Uma CTA primária por contexto de decisão visível.** Regiões independentes, drawers ou modais podem ter sua própria CTA, desde que não concorram dentro do mesmo fluxo.
 5. **RUN nunca registra tentativa. SUBMIT SOLUTION sempre registra.** Possuem rótulos completos, atalhos distintos e separação visual.
 6. **Superfície escura significa que a máquina executa ou representa saída técnica.** Usar em editor, terminal, testes, saída, code blocks, preview técnico e tooltip. Não existe dark mode completo.
-7. **Raio entre 0 e 4px. Sombra sólida.** Gradiente, blur, glassmorphism e sombra difusa são proibidos.
+7. **Raio base entre 0 e 4px; superfícies de aprendizagem e sheets usam os tokens v3 de 12–18px. Sombra sólida.** Gradiente, blur, glassmorphism e sombra difusa são proibidos.
 8. **Movimento de interface usa no máximo 180ms e deslocamento de 2–4px.** Nenhuma animação contínua decorativa.
 9. **Tipografia: Archivo + JetBrains Mono.** Mono para código, saída técnica e metadados; Archivo para leitura e interface.
 10. **Alvo de toque mínimo abaixo de 1200px: 44px.** Densidade compacta é desativada abaixo de 768px.

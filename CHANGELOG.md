@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-01 — IFSC-00 integration
+
+- Integrated approved IFSC specifications and ADRs 0017–0029; superseded the single-owner constraint while preserving infrastructure/history.
+- Reconciled core documentation, roadmap and agent rules; v1 behavior remains explicit.
+- Merged Design System v3 direction/tokens into the canonical pipeline.
+- Copied the existing checkout into vecta without credentials; historical exam sources remain private local files.
+- Runtime IFSC capabilities remain pending; this entry records documentation foundation only.
+
 All notable changes to this repository specification are documented here.
 
 The format follows Keep a Changelog principles. Product versions will follow Semantic Versioning once the application scaffold exists.

@@ -1,5 +1,9 @@
 # 21 — Repository Structure
 
+## IFSC feature additions
+
+Add src/features/curriculum, questions, study-sessions, planner, assessments, content-qa and tutor. Extend existing lessons/activities/attempts/mastery/review/recommendations/generation/import. Migrations remain in src/db/migrations, not the package suggested db/schema/migrations path. Private source PDFs live under sources/ifsc; protected originals must never be served by public/.
+
 ## Planned structure after scaffold
 
 ```text

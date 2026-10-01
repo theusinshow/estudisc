@@ -35,7 +35,7 @@ Stop and ask before:
 - destructive or irreversible actions involving non-disposable data;
 - modifying files outside the repository or approved writable roots;
 - materially expanding the approved product scope;
-- implementing multi-user accounts, billing, marketplace features, or other explicitly deferred capabilities;
+- implementing public multi-user accounts, billing, marketplace features, or other explicitly deferred capabilities (private ADMIN/STUDENT profiles are approved by ADR 0026);
 - overriding an approved ADR, Product specification, Design System rule, or security boundary when the conflict cannot be resolved within existing precedence rules.
 
 ## Autonomous execution loop
@@ -78,7 +78,7 @@ A phase may begin automatically only when:
 - required checks have actually run;
 - documentation and project status are current;
 - no unresolved blocker compromises the next phase;
-- the next phase remains inside the approved V1 scope.
+- the next phase remains inside the approved V1 or IFSC expansion scope.
 
 Do not collapse several phases into one unstructured implementation. Each phase must have its own plan, verification log, and checkpoint.
 

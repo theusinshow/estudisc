@@ -1,5 +1,9 @@
 # 05 — Domain Model
 
+## Approved IFSC aggregates
+
+Add CurriculumRequirement, ConceptPrerequisite, track Concept settings, ContentSource/link, Question/version/exposure, StudyPlan, StudySession/item, AssessmentTemplate/Instance/Response, QAReview and OwnerIdentity. These extend the existing content, learning, import and generation boundaries. Concept is the atomic target; no Skill or LearningUnit aggregate. Attempt is a historical fact; one Attempt may append evidence for multiple Concepts. See ifsc/appendix/A-DATA-MODEL-DELTA.md.
+
 ## Bounded feature areas
 
 ### Content catalog

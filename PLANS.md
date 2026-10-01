@@ -1,5 +1,25 @@
 # KNOW/OS — Autonomous Execution Plan
 
+## IFSC expansion — active program (2026-10-01)
+
+User authorization: implement IFSC-00 through IFSC-15 autonomously in this copied checkout, `C:\Dev\pessoal\vecta`. The original `know-os` checkout is read-only. No production migrations, remote pushes or deployments are authorized.
+
+Current milestone: **IFSC-01 — curriculum foundation**. IFSC-00 passed its gate; see docs/ifsc/IMPLEMENTATION-AUDIT.md.
+
+- [x] Integrate ADRs 0017–0029; supersede only ADR 0008's single-owner constraint.
+- [x] Reconcile the core documentation and agent rules with the approved expansion.
+- [x] Merge the v3 design delta into the canonical design documentation/token source.
+- [x] Validate documentation authority, tokens, lint, typecheck, tests and build.
+- [x] Record the gate; immediately start IFSC-01.
+
+Following milestones: IFSC-01 curriculum; IFSC-02 Pack v2; IFSC-03 interactions; IFSC-04 percentage slice; IFSC-05 versioned policies; IFSC-06 sessions; IFSC-07 planner; IFSC-08 remaining Golden Lessons; IFSC-09 assessments; IFSC-10 historical exams; IFSC-11 simulations; IFSC-12 QA; IFSC-13 tutor; IFSC-14 curriculum; IFSC-15 hardening and final acceptance audit.
+
+Inspection: existing V1 imports/renderer/registry/Attempts/evidence/review/mastery/auth/generation are reused. The source checkout has only untracked exam PDFs. It was cloned locally without secrets or build output. Historical PDFs were copied to `sources/ifsc/historical`, outside `public`. The ZIP is extracted under `ifsc-source/know-os-ifsc-spec-v1-final` for traceability. The minimal v2 example is a contract fixture, not a validated curriculum or publication approval.
+
+IFSC-01 acceptance: relational requirements/sources/prerequisites/settings; reference and cycle validation; idempotent foundation seed (four modules, six percentage concepts plus prerequisite concepts); coverage derived from real mappings/content/QA, with gaps visible; migrated PGlite tests; baseline gate. No authoritative coverage claim from lesson titles or imported status.
+
+NEXT ACTION: implement curriculum schema, domain validation, repository coverage queries and seed fixture, then test. Historical V1 plans below are retained as history, not the active roadmap.
+
 This file is the durable control surface for the current multi-step implementation task. Keep it current so a new Codex session can resume without asking the user to restate decisions.
 
 Operating protocol: `AUTONOMY.md`.

@@ -1,5 +1,9 @@
 # 06 — Data Model
 
+## IFSC additions
+
+Add relational curriculum_requirements, curriculum_requirement_concepts, concept_prerequisites, track_concept_settings, content_sources, content_source_links, questions/question_versions/choices/concepts/exposures, study_plans/sessions/items, assessment_templates/items/instances/responses, qa_reviews and owner_identities. Published versions are immutable and retained for historical references. Owner-owned sessions, exposures and assessments use owner_id. Preserve existing append-only tables and v1 policies. Coverage is derived from mappings, published planner-ready content and QA, never the imported status field. See ifsc/appendix/A-DATA-MODEL-DELTA.md.
+
 ## Ownership
 
 Every user-owned record includes `owner_id`, even while V1 uses a single seeded owner. Imported catalog content is not duplicated per owner unless modification or provenance requires it.

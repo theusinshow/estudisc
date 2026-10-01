@@ -1,5 +1,9 @@
 # 24 — Data Retention and Privacy
 
+## Private profiles and AI
+
+Student learning state belongs to its distinct owner; ADMIN access is limited to necessary support/QA summaries and authorized functions. Minimize contextual tutor data; exclude unrelated history. Tutor is optional and disabled in EXAM. Published approved content remains canonical. Historical attempts/evidence and referenced versions are retained through content retirement. All provider calls pass through the gateway.
+
 ## Principle
 
 Collect and retain only what supports the learning experience, reliability or explicit user-requested history.

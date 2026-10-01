@@ -1,5 +1,21 @@
 # KNOW/OS — Repository Instructions for Agents
 
+## Approved IFSC expansion
+
+The user authorized IFSC-00 through IFSC-15 continuously; the approved roadmap is docs/ifsc/16-IMPLEMENTATION-PLAN.md. Private ADMIN/STUDENT profiles are approved by ADR 0026, not a public SaaS scope expansion. Retain production approval boundaries.
+
+- Extend existing core modules; no parallel renderer, activity registry, mastery, review or assessment engines.
+- Concept remains the atomic mastery target; lesson completion never sets mastery.
+- Attempts are immutable; ConceptEvidence is append-only.
+- AI cannot own canonical mastery, retention, planner decisions or official scores.
+- Reserved official questions/assets never enter training or public static assets before release.
+- Published lesson/question versions are immutable.
+- Use shared versioned Questions with distinct official/generated/human/derived provenance.
+- Every interaction defines schema, renderer, response, evaluator where applicable, feedback/evidence and touch/keyboard behavior.
+- Student UI is mobile-first; retain Programming Lab progressive enhancement.
+- Prefer generic content/configuration over IFSC track-name branches.
+
+
 Read this file before making changes.
 
 ## Agent operating mode

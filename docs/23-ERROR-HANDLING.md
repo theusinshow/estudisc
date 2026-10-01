@@ -1,5 +1,9 @@
 # 23 — Error Handling
 
+## Pedagogical errors
+
+Learning-error taxonomy is distinct from system/runtime failure: CONCEPTUAL, PROCEDURAL, CALCULATION, INTERPRETATION, PREREQUISITE, DISTRACTOR, ATTENTION, MEMORY, UNKNOWN. Classification precedence: deterministic rule, known distractor, student report, advisory AI inference, UNKNOWN. Repeated errors trigger remediation; network/autosave failures preserve recoverable work.
+
 ## Error categories
 
 - validation;

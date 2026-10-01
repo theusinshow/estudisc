@@ -1,5 +1,9 @@
 # 22 — API and Server Action Conventions
 
+## IFSC mutation contracts
+
+Require owner-bound idempotency keys for Attempt submission and assessment finalization. Persist Attempt/evidence/events/projections in one transaction; unique constraints prevent concurrent duplication. Assessment responses are mutable only while open. Freeze versions/order/timing/policies when activating an instance/session. Deliver student-safe question DTOs; withhold answer/solution/correctness during EXAM and reject reserved selection server-side.
+
 ## General
 
 Use explicit validated boundaries. Do not expose database records directly as public response contracts.

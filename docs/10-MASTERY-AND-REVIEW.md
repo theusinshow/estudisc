@@ -1,5 +1,9 @@
 # 10 — Mastery and Review
 
+## Versioned IFSC policy extension
+
+Preserve mastery.v1/review.v1 semantics below. Add mastery.v2 with correctness, difficulty/context, hint/solution independence, evidence diversity, delayed retrieval and transfer. One immediate correct answer cannot produce Mastered. Retention/review urgency can decay without erasing demonstrated mastery. review.v2 uses +1/+3/+7/+14/+30 days with earlier failed/assisted retrieval and daily time budgets. Deterministic policies and versioned projections remain auditable. Learning errors use CONCEPTUAL, PROCEDURAL, CALCULATION, INTERPRETATION, PREREQUISITE, DISTRACTOR, ATTENTION, MEMORY, UNKNOWN; runtime failures retain their existing categories. See ifsc/appendix/B-MASTERY-REVIEW-V2.md.
+
 ## Mastery states
 
 0. Unseen

@@ -1,8 +1,12 @@
 # 02 — Scope
 
+## Approved IFSC scope
+
+CurriculumRequirement mapping/prerequisites/importance, shared versioned Question Bank, StudyPlan/StudySession, deterministic Planner, unified Assessment Engine (diagnostic/simulation/official), official provenance/reservation, educational interactions, mastery.v2/review.v2, publication QA and optional contextual tutor are approved. No public signup, organizations, billing or social product. See ifsc/16-IMPLEMENTATION-PLAN.md. The original V1 scope below remains applicable to core functionality.
+
 ## V1 in scope
 
-- Single owner profile.
+- Private allowlisted ADMIN/STUDENT profiles with isolated owner state (ADR 0026).
 - Tracks, modules, lessons, concepts and content blocks.
 - Activity engine with prediction, multiple choice, explanation, code and debug activities.
 - Immutable attempts and study-event history.

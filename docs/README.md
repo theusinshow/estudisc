@@ -1,5 +1,9 @@
 # KNOW/OS Documentation Index
 
+## IFSC expansion
+
+Start with [IFSC specification index](ifsc/README.md), [implementation roadmap](ifsc/16-IMPLEMENTATION-PLAN.md) and [acceptance criteria](ifsc/17-ACCEPTANCE-CRITERIA.md). ADRs 0017–0029 are integrated. Core documents describe the approved generic extensions; PROJECT_STATUS.md distinguishes implemented behavior from planned contracts.
+
 ## Product
 
 - `00-VISION.md`

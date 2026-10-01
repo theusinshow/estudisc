@@ -1,5 +1,9 @@
 # KNOW/OS
 
+## Expansão IFSC 2027
+
+O roadmap IFSC estende o núcleo existente com currículo rastreável, Question Bank, sessões e planner determinístico, assessments, QA e tutor opcional. Perfis privados ADMIN/STUDENT mantêm estado separado. Especificação: [docs/ifsc/README.md](docs/ifsc/README.md); progresso atual em PROJECT_STATUS.md. A implementação está em andamento; recursos planejados não são apresentados como concluídos. Design System v3 evolui os tokens canônicos; v1 e o Programming Lab permanecem suportados.
+
 **Personal Learning Operating System**
 
 KNOW/OS é um sistema pessoal para estruturar aprendizado, prática, revisão e aplicação em projetos reais. A primeira extensão de domínio é programação, começando por JavaScript, mas o núcleo é agnóstico de assunto.
@@ -7,7 +11,7 @@ KNOW/OS é um sistema pessoal para estruturar aprendizado, prática, revisão e 
 ## Estado do projeto
 
 - Fase atual: **V1 publicado em produção com Neon Postgres, Vercel e Auth.js Google OAuth; Pack exemplo ativado e gamificação persistida como projeção auditável**.
-- Design System oficial: `design-system/`, versão 2.2.
+- Design System oficial: `design-system/`, versão 3.0 (delta IFSC integrado; tokens históricos preservados).
 - Implementação: Next.js App Router com TypeScript strict, Tailwind, token pipeline, shell acessível, fundação Drizzle/PostgreSQL, Zod, Vitest, Testing Library, Playwright e CI.
 - V1 local implementado e verificado: importar conteúdo por `/import`, navegar por trilhas/lições/conceitos, executar JavaScript com RUN, registrar tentativa com SUBMIT SOLUTION, reabrir feedback persistido, ver progresso, histórico, contrato de runtime, stdout/stderr/testes, diff da tentativa, atividade inicial de debug, mastery determinístico, agenda de review, erros categorizados, projetos opcionais, XP/ranks/badges/missões com projeção persistida, mapa de conhecimento acessível, recomendações locais, preview de import/export/restore, exports Backup/Progress/Teacher Context, auditoria de acessibilidade e preparação de segurança/deploy local.
 - Modo de execução do Codex: **autonomia elevada com limites de repositório**.
