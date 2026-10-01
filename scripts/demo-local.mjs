@@ -10,7 +10,10 @@ const server = spawn(process.execPath, ["node_modules/next/dist/bin/next", "dev"
   stdio: ["ignore", "pipe", "pipe"],
   env: { ...process.env, DATABASE_URL: "memory://local", KNOW_OS_OWNER_ID: "local-owner" }
 });
-server.stderr.on("data", chunk => { const text = String(chunk); if (/error|already running/i.test(text) && !/MissingSecret|authjs/.test(text)) process.stderr.write(text); });
+// Both pipes must be drained: an unread stdout fills its buffer and freezes the server after ~900 requests.
+const relay = chunk => { const text = String(chunk); if (/error|⨯|already running/i.test(text) && !/MissingSecret|authjs|assertConfig|hydrated but some attributes/.test(text)) process.stderr.write(text); };
+server.stdout.on("data", relay);
+server.stderr.on("data", relay);
 server.on("exit", code => { console.log(`Servidor encerrado (código ${code}).`); process.exit(code ?? 0); });
 process.on("SIGINT", () => server.kill());
 
