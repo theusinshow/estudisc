@@ -17,7 +17,6 @@ test("mobile shell keeps primary study navigation visible", async ({ page }) => 
 
   await expect(page.getByRole("link", { name: /Hoje/ })).toBeVisible();
   await expect(page.getByRole("link", { name: /Aprender/ })).toBeVisible();
-  await expect(page.getByRole("link", { name: /Praticar/ })).toBeVisible();
   await expect(page.getByRole("link", { name: /Progresso/ })).toBeVisible();
   await expect(page.getByText("Mais", { exact: true })).toBeVisible();
 

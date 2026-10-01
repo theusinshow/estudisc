@@ -14,7 +14,9 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const requestSchema = z.object({
-  spec: generationSpecSchema,
+  spec: generationSpecSchema.refine((spec) => spec.targetSchema === "caderno.lesson.v1", {
+    message: "Use the Admin SourcePack workflow for caderno.track.v2."
+  }),
   model: z.enum(["deepseek-v4-flash", "deepseek-v4-pro"]).optional()
 });
 

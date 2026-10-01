@@ -55,6 +55,17 @@ export class QuestionStudyRepository {
     return this.db.transaction(async tx=>{
       await tx.insert(owners).values({id:ownerId,displayName:"Private learner"}).onConflictDoNothing();
       await tx.select().from(owners).where(eq(owners.id,ownerId)).for("update");
+      if(input.action==="submit"){
+        const [previous]=await tx.select().from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.submissionKey,input.submissionKey)));
+        if(previous){
+          const [identity]=previous.activityId?await tx.select().from(activities).where(eq(activities.id,previous.activityId)):[];
+          const conditions=previous.context as {questionId?:string;questionVersion?:number;contextKey?:string};
+          if(identity?.stableId!==activity||conditions.questionId!==input.questionId||conditions.questionVersion!==input.questionVersion||input.sessionId&&conditions.contextKey!==input.sessionId||hashCanonicalJson(previous.response)!==hashCanonicalJson({answer:input.response}))throw new SubmissionConflictError();
+          const [exam]=await tx.select().from(assessmentInstances).where(and(eq(assessmentInstances.ownerId,ownerId),eq(assessmentInstances.status,"ACTIVE"),eq(assessmentInstances.mode,"EXAM")));if(exam)throw new QuestionUnavailableError();
+          const bank=await new DrizzleQuestionRepository(tx).getVersion(input.questionId,input.questionVersion);
+          return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:bank?.question.explanation};
+        }
+      }
       const ctx=await new QuestionStudyRepository(tx).context(ownerId,activity,input.questionId,input.questionVersion,input.sessionId);
       const where=and(eq(questionAssistance.ownerId,ownerId),eq(questionAssistance.questionVersionId,ctx.versionId),eq(questionAssistance.contextKey,ctx.contextKey));
       const [assistance]=await tx.select().from(questionAssistance).where(where);

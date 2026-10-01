@@ -6,13 +6,14 @@ import { getRecommendations } from "@/features/recommendations/api";
 import { SessionControls } from "@/features/study-sessions/session-controls";
 import { studySessionRepository } from "@/features/study-sessions/api";
 import { getOwnerId } from "@/features/auth/owner";
+import { getDatabaseUrl } from "@/db/connection";
 
 export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   const recommendations = await getRecommendations();
   const primaryRecommendation = recommendations[0];
-  const sessions=await studySessionRepository().list(await getOwnerId());
+  const sessions=getDatabaseUrl()?await studySessionRepository().list(await getOwnerId()):[];
 
   return (
     <AppShell>

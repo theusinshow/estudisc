@@ -16,7 +16,7 @@ Validation:
 - `pnpm build`: passed after the final token merge.
 - `pnpm exec playwright test tests/e2e/shell.spec.ts`: 8 passed (desktop/mobile).
 
-No application capability is marked implemented by documentation alone. Runtime IFSC milestones remain pending. No database migration was applied, and no external write occurred.
+At this initial gate, runtime milestones were pending. Later runtime gates are recorded below. Migrations were subsequently exercised only in disposable databases; no external write occurred.
 
 ## Source inventory
 
@@ -29,9 +29,13 @@ The authoritative `EDITAL 05_2027_1_TECNICO_INTEGRADO_PROVA ok (1).pdf` was foun
 - IFSC-00: complete; final lint passed without warnings.
 - IFSC-01: curriculum foundation implemented; basic gate recorded below.
 - IFSC-02: compatible Pack v2 and shared Question Bank implemented; basic gate recorded below.
-- IFSC-03–15: pending.
+- IFSC-03–09: implemented locally with the engineering gates below; seeds remain draft.
+- IFSC-10/11: original-bank ingestion, private assets and simulation templates implemented; transcription/classification and benchmark publication await human QA.
+- IFSC-12/13: editorial gates, v2 GenerationJobs and bounded contextual tutor implemented; live provider invocation is unverified.
+- IFSC-14: proposed full requirement mapping and draft inventory exist; 63 teaching lessons and independent QA remain open.
+- IFSC-15: local hardening and mobile smoke passed; production observation and final content acceptance remain open.
 
-No final acceptance audit has passed. The system is not yet a complete IFSC student product.
+Final acceptance was audited against `17-ACCEPTANCE-CRITERIA.md`; the matrix below records passing local mechanisms separately from open release/content gates. Not all IFSC acceptance criteria pass.
 
 ## IFSC-01
 
@@ -88,3 +92,37 @@ One engine now supports all six assessment kinds via immutable versioned templat
 Student surfaces include assessment list/resume, saving/changing responses, timer, finalization and per-subject/result review. DTOs contain no answer or explanation before finish. Admin template endpoints require ADMIN.
 
 Validation: migrated PGlite integration passed (resume/start retry, mutable responses, no provisional Attempts, deadline/owner protection, finalization exactly once). Typecheck/lint passed. Broad/final template seeding, actual official assets, final mobile assessment E2E and independent content QA remain visible pending items for IFSC-10/11/12/15.
+
+## IFSC-10–15 — final local engineering audit
+
+The private source pack now imports 141 Questions (112 official, 29 Golden), 378 Concepts and 27 numbered Anexo V requirements into disposable PGlite. Original-page PNG hashes and authenticated persistence were checked. Twelve draft assessment templates validate through the shared engine. Official annulment, reserved availability and full composition checks are enforced. See `OFFICIAL-BANK-INGESTION.md` for OCR/transcription limits.
+
+Editorial releases preserve author/hash/version, require all four independent layers, reject self-review, enforce minimum Question coverage and withdraw a published release after rejection. V2 GenerationJobs use the existing compiler/importer with exact run provenance. The optional tutor uses the existing gateway; no live provider call was made.
+
+The user chose draft content for human review. The full mapping is proposed rather than approved; 63 of 68 Lesson records have no authored teaching/practice/exit ticket. Derived coverage cannot report complete or planner-ready from this inventory. No independent reviews or publication were fabricated.
+
+| Acceptance group | Local evidence | Open acceptance/release limits |
+| --- | --- | --- |
+| Curriculum | Strict references/cycles; complete proposed source inventory; QA-derived coverage | Human source-scope/classification verification and teaching coverage |
+| Lesson system / regression | Four Golden Lessons validate/render/complete; invalid types fail safely; mobile percentage resume | Full content release; comprehensive assessment browser flow |
+| Question / Attempts | Deterministic evaluators, immutable versions, retry/ownership and transaction integration | Human key/stimulus/accessibility review of official transcription |
+| Mastery / Review / Planner | Versioned deterministic policies, prerequisite/budget/balance tests, frozen sessions | Tuning with actual multi-subject published curriculum and study history |
+| Assessments / Diagnostic | Version/order freezing, mutable responses, deadlines, once-only evidence; broad/targeted templates and limited-confidence signals | Human-approved templates; student benchmark release and usability observation |
+| Content QA | Independent-layer gates, self-approval rejection, immutable releases, withdrawal regression | Actual human approval and completion of 63 teaching gaps |
+| Tutor | Bounded/minimized context, EXAM guard, persisted exposure | Live provider verification, usage controls and operational monitoring |
+| Mobile / Design | Four-item bottom nav, role-aware actions; mobile shell and percentage E2E | Broader real-device observation and complete assessment E2E |
+| Security / Privacy | Owner isolation, handler Admin gates, private PNGs, answer-safe DTOs, cross-site mutation guard, production memory harness prohibition | Real PostgreSQL/OAuth environment verification; full assessment/asset backup restoration |
+
+The Admin authoring surface is a minimal JSON-based CMS with previews, coverage and QA; rich filters, student-management and analytics views remain limited. Production observation/PWA were not claimed. No live migration, deployment, push or protected-material publication occurred. Added migrations are `0010`–`0017` (curriculum, Questions, profiles/study, assessments, private assets, QA releases, scoped Lesson identity); all are tracked with Drizzle metadata.
+
+Final command/result inventory:
+
+- `pnpm test`: final updated-dependency gate passed 60 files / 134 tests; one real-PostgreSQL test skipped.
+- `pnpm exec vitest run tests/unit/mutation-origin.test.ts tests/component/app-shell.test.tsx tests/integration/content-release.test.ts`: 3 files / 3 tests passed after final origin/navigation/withdrawal fixes.
+- `pnpm exec playwright test tests/e2e/shell.spec.ts --project=mobile-chrome`: 4 passed.
+- `pnpm exec playwright test tests/e2e/percentage-study.spec.ts --project=mobile-chrome`: 1 passed, including reload/resume, prerequisite retrieval and result.
+- The final combined mobile command reran both files after dependency remediation: five passed.
+- `pnpm exec vitest run tests/unit/deepseek-generation-route.test.ts tests/unit/generation-contracts.test.ts`: eight passed after rejecting v2 in the legacy v1 provider route before any paid call.
+- `pnpm typecheck`, `pnpm lint`, `pnpm build`, `git diff --check`: passed; the updated-dependency gate is recorded in `LOCAL-DELIVERY.md`.
+
+The production dependency audit found six advisories in the inherited lockfile. Next.js and its lint config were upgraded together to 16.3.6, with patched transitive resolution. Details and final audit/build results are recorded in `LOCAL-DELIVERY.md`; old milestone version numbers above are historical.

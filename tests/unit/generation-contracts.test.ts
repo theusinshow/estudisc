@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 
-import { generationStatuses, type GenerationSpec } from "@/features/generation/contracts";
+import { generationSpecSchema, generationStatuses, type GenerationSpec } from "@/features/generation/contracts";
 import { parseGeneratedJson } from "@/features/generation/json-parser";
 import { compileGenerationPrompt } from "@/features/generation/prompt-compiler";
 import { getServerEnv } from "@/lib/env";
@@ -64,6 +64,33 @@ describe("generation contracts", () => {
     });
     expect(parseGeneratedJson("")).toMatchObject({ ok: false, code: "empty_response" });
     expect(parseGeneratedJson("```json\n{}\n```")).toMatchObject({ ok: false, code: "markdown_wrapped" });
+  });
+
+  it("compiles v2 source context into an unpublished educational pack without self approval", () => {
+    const draftSpec = generationSpecSchema.parse({
+      ...spec,
+      targetSchema: "caderno.track.v2",
+      sourcePackContext: {
+        subjectCode: "MAT",
+        sourceIds: ["official-annex-v"],
+        requirementIds: ["mat-requirement-4"],
+        prerequisiteConceptIds: ["ratio"]
+      }
+    });
+    const compiled = compileGenerationPrompt(draftSpec);
+    const example = JSON.parse(compiled.jsonExample);
+    expect(example.schema).toBe("caderno.track.v2");
+    expect(example.track.modules[0]).toMatchObject({ subjectCode: "MAT" });
+    expect(example.track.modules[0].lessons[0]).toMatchObject({
+      status: "draft", sourceIds: ["official-annex-v"], prerequisiteConceptIds: ["ratio"]
+    });
+    expect(compiled.prompt).toContain("mat-requirement-4");
+    expect(compiled.prompt).toContain("exit ticket");
+    expect(compiled.prompt).toContain("generationRunId");
+    expect(compiled.prompt).toContain("Nenhum conteúdo gerado aprova o próprio QA");
+    expect(generationSpecSchema.safeParse({ ...draftSpec, sourcePackContext: {
+      ...draftSpec.sourcePackContext, sourceIds: []
+    } }).success).toBe(false);
   });
 
   it("reports DeepSeek readiness without exposing API keys", async () => {

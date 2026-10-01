@@ -17,8 +17,11 @@ it("locks an immutable author/hash, requires four independent layers, and reuses
     for(const layer of qaLayers)await repo.review("reviewer",release.id,{...review,layer});
     expect(await repo.publish(release.id)).toEqual({published:true});
     expect((await new DrizzleQuestionRepository(database.db).getVersion("Q-MAT-GOLDEN-3",1))?.question.status).toBe("published");
+    await repo.review("reviewer",release.id,{...review,verdict:"REJECT",findings:[{severity:"CRITICAL",message:"Disposable regression: withdrawn content"}]});
+    expect((await new DrizzleQuestionRepository(database.db).getVersion("Q-MAT-GOLDEN-3",1))?.question.status).toBe("retired");
+    await expect(repo.publish(release.id)).rejects.toThrow("Retired");
     fixture.version=2;expect((await importTrackPack(fixture,new DrizzleTrackImportRepository(database.db,"other-admin"))).status).toBe("imported");
     const changed=structuredClone(fixture);changed.version=3;changed.questions[2].stem="Different immutable content";
     await expect(importTrackPack(changed,new DrizzleTrackImportRepository(database.db,"author"))).rejects.toThrow();
   }finally{await database.close();}
-});
+},30000);

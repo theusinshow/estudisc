@@ -3,9 +3,9 @@ import { and,desc,eq,inArray,sql } from "drizzle-orm";
 import type { PgDatabase,PgQueryResultHKT } from "drizzle-orm/pg-core";
 import { getDatabase } from "@/db/connection";
 import type * as schema from "@/db/schema";
-import { assessmentInstances,assessmentResponses,assessmentTemplates,attempts,conceptEvidence,concepts,mistakes,owners,questionExposures,questionVersions,reviewSchedules,studyEvents } from "@/db/schema";
+import { assessmentInstances,assessmentResponses,assessmentTemplates,attempts,conceptEvidence,concepts,mistakes,owners,questionExposures,questionVersions,reviewSchedules,studyEvents,tracks,trackConceptSettings } from "@/db/schema";
 import { assessmentSnapshotSchema,assessmentTemplateSchema,ASSESSMENT_POLICY,validateAssessmentComposition } from "@/features/assessments/contracts";
-import { scoreAssessment } from "@/features/assessments/scoring";
+import { scoreAssessment,assessmentFeedback,diagnosticSignals } from "@/features/assessments/scoring";
 import { studentQuestion } from "@/features/questions/student-view";
 import { evidenceStrengthV2,MASTERY_V2 } from "@/features/mastery/mastery-policy-v2";
 import { REVIEW_V2,scheduleReviewV2 } from "@/features/review/review-policy-v2";
@@ -16,10 +16,12 @@ type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
 export class AssessmentStateError extends Error {constructor(){super("Assessment unavailable or closed");}}
 export class AssessmentRepository{
   constructor(private readonly db:Database=getDatabase()){}
+  private async assertTrackScope(trackId:string,conceptIds:readonly string[]){const members=await this.db.select({stableId:concepts.stableId}).from(trackConceptSettings).innerJoin(tracks,eq(tracks.id,trackConceptSettings.trackId)).innerJoin(concepts,eq(concepts.id,trackConceptSettings.conceptId)).where(eq(tracks.stableId,trackId));const ids=new Set(members.map(row=>row.stableId));if(conceptIds.some(id=>!ids.has(id)))throw new AssessmentStateError();}
   async importTemplate(input:unknown){
     const template=assessmentTemplateSchema.parse(input);const questions=[];
     for(const ref of template.items){const item=await new DrizzleQuestionRepository(this.db).getVersion(ref.id,ref.version);if(!item)throw new AssessmentStateError();questions.push(item.question);}
     validateAssessmentComposition(template,questions);
+    await this.assertTrackScope(template.trackId,questions.flatMap(question=>question.conceptIds));
     const contentHash=hashCanonicalJson(template);
     const [created]=await this.db.insert(assessmentTemplates).values({stableId:template.id,version:template.version,kind:template.kind,status:template.status,contentHash,definition:template}).onConflictDoNothing().returning();
     if(created)return created;
@@ -46,7 +48,8 @@ export class AssessmentRepository{
         frozen.push({versionId:bank.versionId,question:bank.question,choiceOrder});
         await tx.insert(questionExposures).values({ownerId,questionId:identity.questionId,firstSeenAt:now,lastSeenAt:now,timesSeen:1,lastContext:"assessment"}).onConflictDoUpdate({target:[questionExposures.ownerId,questionExposures.questionId],set:{lastSeenAt:now,timesSeen:sql`${questionExposures.timesSeen}+1`,lastContext:"assessment"}});
       }
-      validateAssessmentComposition(template,frozen.map(item=>item.question));
+      validateAssessmentComposition(template,frozen.map(item=>item.question),true);
+      await new AssessmentRepository(tx).assertTrackScope(template.trackId,frozen.flatMap(item=>item.question.conceptIds));
       const mode=template.kind==="FULL_SIMULATION"||template.kind==="OFFICIAL_EXAM"?"EXAM":"ASSESSMENT";
       const snapshot=assessmentSnapshotSchema.parse({kind:template.kind,mode,questions:frozen,durationMinutes:template.durationMinutes,policyVersion:ASSESSMENT_POLICY,masteryPolicy:MASTERY_V2,reviewPolicy:REVIEW_V2});
       await tx.insert(assessmentInstances).values({id,ownerId,templateId,startKey,mode,snapshot,startedAt:now,deadlineAt:new Date(now.getTime()+template.durationMinutes*60000)});return {id};
@@ -88,7 +91,7 @@ export class AssessmentRepository{
           if(!item.evaluation.correct)await tx.insert(mistakes).values({ownerId,conceptId:concept.id,attemptId:attempt.id,category:item.question.type==="numeric"?"CALCULATION":item.question.choices?.find(choice=>choice.id===item.response)?.targetsError?.toUpperCase()??"UNKNOWN",summary:"Rever o conceito identificado na avaliação."});
         }
       }
-      const result={correct:scored.correct,scored:scored.scored,total:scored.total,bySubject:scored.bySubject,policyVersion:ASSESSMENT_POLICY,finishedAfterDeadline:now.getTime()>instance.deadlineAt.getTime(),items:scored.items.map(item=>({versionId:item.versionId,questionId:item.question.id,outcome:item.evaluation.outcome,explanation:item.question.explanation,conceptIds:item.question.conceptIds}))};
+      const result={correct:scored.correct,scored:scored.scored,total:scored.total,bySubject:scored.bySubject,diagnostic:diagnosticSignals(scored.items),policyVersion:ASSESSMENT_POLICY,finishedAfterDeadline:now.getTime()>instance.deadlineAt.getTime(),items:scored.items.map(item=>({versionId:item.versionId,questionId:item.question.id,...assessmentFeedback(item.question,item.evaluation.outcome),outcome:item.evaluation.outcome,explanation:item.question.explanation,conceptIds:item.question.conceptIds}))};
       await tx.update(assessmentInstances).set({status:"FINALIZED",result,finalizedAt:now}).where(eq(assessmentInstances.id,id));
       await tx.insert(studyEvents).values({ownerId,type:"assessment_finalized",entityType:"assessment",entityId:id,payload:{correct:result.correct,scored:result.scored,policyVersion:ASSESSMENT_POLICY}});return result;
     });

@@ -1,4 +1,4 @@
-import { and, asc, desc, eq } from "drizzle-orm";
+import { and, asc, desc, eq,sql } from "drizzle-orm";
 import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 
 import { ensureDatabaseReady, getDatabase } from "@/db/connection";
@@ -77,7 +77,7 @@ export type KnowledgeMapConcept = Readonly<{
 export class CatalogRepository {
   constructor(private readonly db: CatalogDatabase = getDatabase()) {}
 
-  async listTracks(): Promise<TrackListItem[]> {
+  async listTracks(publishedOnly=false): Promise<TrackListItem[]> {
     const rows = await this.db
       .select({
         stableId: tracks.stableId,
@@ -87,7 +87,7 @@ export class CatalogRepository {
       })
       .from(tracks)
       .leftJoin(modules, eq(modules.trackId, tracks.id))
-      .leftJoin(lessons, eq(lessons.moduleId, modules.id))
+      .leftJoin(lessons, and(eq(lessons.moduleId, modules.id),publishedOnly?sql`(${lessons.metadata}->>'kind' IS NULL OR (${lessons.metadata}->>'status'='published' AND ${lessons.metadata}->>'qaReleaseId' IS NOT NULL))`:undefined))
       .orderBy(asc(tracks.title));
 
     const byTrack = new Map<
@@ -128,7 +128,7 @@ export class CatalogRepository {
     }));
   }
 
-  async getTrack(stableId: string): Promise<TrackDetail | null> {
+  async getTrack(stableId: string,publishedOnly=false): Promise<TrackDetail | null> {
     const [track] = await this.db
       .select({
         id: tracks.id,
@@ -156,7 +156,7 @@ export class CatalogRepository {
       .from(modules)
       .leftJoin(lessons, eq(lessons.moduleId, modules.id))
       .leftJoin(activities, eq(activities.lessonId, lessons.id))
-      .where(eq(modules.trackId, track.id))
+      .where(and(eq(modules.trackId, track.id),publishedOnly?sql`(${lessons.metadata}->>'kind' IS NULL OR (${lessons.metadata}->>'status'='published' AND ${lessons.metadata}->>'qaReleaseId' IS NOT NULL))`:undefined))
       .orderBy(asc(modules.orderIndex), asc(lessons.orderIndex), asc(activities.orderIndex));
 
     const moduleMap = new Map<

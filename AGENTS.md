@@ -4,6 +4,8 @@
 
 User update (2026-10-01): target remote is `https://github.com/theusinshow/vecta`. Prioritize speed and low token use. Run basic focused validation for each coherent change; preserve critical domain invariants. Do not repeat the full suite/build/E2E after every small edit. Full final acceptance checks remain required. Push/deploy/production migration still need explicit authorization.
 
+Editorial decision (2026-10-01): leave content in draft for human review. Do not fabricate independent approval or use subagents to approve this delivery. Keep missing teaching material and unverified official-source mappings visible; draft inventory is not planner-ready curriculum.
+
 The user authorized IFSC-00 through IFSC-15 continuously; the approved roadmap is docs/ifsc/16-IMPLEMENTATION-PLAN.md. Private ADMIN/STUDENT profiles are approved by ADR 0026, not a public SaaS scope expansion. Retain production approval boundaries.
 
 - Extend existing core modules; no parallel renderer, activity registry, mastery, review or assessment engines.
@@ -121,3 +123,13 @@ pnpm db:generate
 Playwright uses port `3210` through `playwright.config.ts` with an owned server and one worker. Keep it serial while `DATABASE_URL=memory://local` is the E2E harness, because that disposable repository is process-global across browser projects.
 
 Do not invent success. If a command cannot run because of the local environment, record the exact command, error and next safe action in `PLANS.md` and `PROJECT_STATUS.md`.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

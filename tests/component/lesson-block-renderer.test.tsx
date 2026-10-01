@@ -62,18 +62,18 @@ describe("LessonBlockRenderer", () => {
     const { rerender } = render(
       <LessonBlockRenderer
         block={{
-          stableId: "diagram",
-          type: "diagram",
+          stableId: "unsupported-diagram",
+          type: "unsupported-diagram",
           payload: {
-            id: "diagram",
-            type: "diagram",
+            id: "unsupported-diagram",
+            type: "unsupported-diagram",
             nodes: []
           }
         }}
       />
     );
 
-    expect(screen.getByLabelText("Bloco importado")).toHaveTextContent("diagram");
+    expect(screen.getByLabelText("Bloco importado")).toHaveTextContent("unsupported-diagram");
     expect(screen.getByLabelText("Bloco importado")).toHaveTextContent("ainda não possui renderer aprovado");
 
     rerender(

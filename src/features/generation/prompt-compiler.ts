@@ -20,7 +20,7 @@ const compactLessonExample = {
 } as const;
 
 export function compileGenerationPrompt(spec: GenerationSpec): CompiledGenerationPrompt {
-  const jsonExample = JSON.stringify(compactLessonExample);
+  const jsonExample = spec.targetSchema==="caderno.track.v2"?JSON.stringify({schema:"caderno.track.v2",packId:spec.importTarget.packId,version:spec.importTarget.version,language:"pt-BR",sources:[],curriculumRequirements:[],conceptPrerequisites:[],questions:[],track:{id:spec.importTarget.trackId,title:spec.importTarget.trackTitle,metadata:{},modules:[{id:spec.importTarget.moduleId,title:spec.importTarget.moduleTitle,subjectCode:spec.sourcePackContext?.subjectCode,lessons:[{id:"stable-lesson-id",version:1,title:spec.lessonTitle,kind:"core",status:"draft",estimatedMinutes:30,concepts:spec.concepts,objectives:[spec.lessonGoal],sourceIds:spec.sourcePackContext?.sourceIds??[],prerequisiteConceptIds:spec.sourcePackContext?.prerequisiteConceptIds??[],exitTicketQuestionIds:[],blocks:[],activities:[]}]}]}}):JSON.stringify(compactLessonExample);
   const concepts = spec.concepts.map((concept) => `- ${concept.id}: ${concept.title}`).join("\n");
   const activityTypes = spec.activityTypes.join(", ");
   const constraints = spec.constraints.length > 0 ? spec.constraints.map((item) => `- ${item}`).join("\n") : "- Sem restricoes adicionais.";
@@ -34,6 +34,7 @@ export function compileGenerationPrompt(spec: GenerationSpec): CompiledGeneratio
       "Nao use Markdown, comentarios, texto antes ou depois do JSON.",
       "Nao inclua scripts, HTML executavel, URLs de rastreamento, segredos ou chaves de API.",
       "Use portugues do Brasil.",
+      ...(spec.targetSchema==="caderno.track.v2"?["Use somente conteúdo em rascunho, Concepts atômicos e fontes explícitas. Escreva ensino, exemplo resolvido, prática guiada, prática independente, transferência e exit ticket; não use placeholders. Questões precisam de respostas tipadas, explicações, dificuldade e provenance generated com generationRunId do trabalho. Nenhum conteúdo gerado aprova o próprio QA.",`SourcePack context: ${JSON.stringify(spec.sourcePackContext)}`]:[]),
       "",
       `Titulo da aula: ${spec.lessonTitle}`,
       `Objetivo: ${spec.lessonGoal}`,

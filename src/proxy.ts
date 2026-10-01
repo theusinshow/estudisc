@@ -4,6 +4,7 @@ import { auth } from "@/auth";
 import { getAuthGuardDecision, isPublicRuntimePath,isAdminRuntimePath } from "@/features/auth/session-guard";
 import { isGoogleAuthConfigured } from "@/features/auth/auth-readiness";
 import { getServerEnv } from "@/lib/env";
+import { isAllowedMutationOrigin } from "@/features/auth/mutation-origin";
 import {
   applyBaseSecurityHeaders,
   buildContentSecurityPolicy,
@@ -57,6 +58,10 @@ const authProxy = auth((request: AuthenticatedRequest) => {
 
   if (isPublicRuntimePath(pathname)) {
     return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
+  }
+
+  if(pathname.startsWith("/api/")&&!["GET","HEAD","OPTIONS"].includes(request.method)){
+    if(!isAllowedMutationOrigin(request.headers,request.nextUrl,getServerEnv().APP_URL))return secureResponse(NextResponse.json({code:"origin_rejected"},{status:403}),contentSecurityPolicy);
   }
 
   const decision = process.env.NODE_ENV==="production"&&!isGoogleAuthConfigured(getServerEnv())?"forbidden":getAuthGuardDecision(request.auth?.user?.email, getServerEnv());

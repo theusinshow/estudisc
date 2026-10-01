@@ -7,7 +7,9 @@ import { getServerEnv } from "@/lib/env";
 let postgresClient: postgres.Sql | undefined;
 
 export function getDatabaseUrl() {
-  return getServerEnv().DATABASE_URL;
+  const url=getServerEnv().DATABASE_URL;
+  if(process.env.NODE_ENV==="production"&&url==="memory://local")throw new Error("memory://local is a development-only harness");
+  return url;
 }
 
 export function getDatabase() {

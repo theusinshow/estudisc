@@ -92,6 +92,14 @@ describe("/api/generation/deepseek/generate", () => {
     mocks.repository.recordProviderUsage.mockResolvedValue({ id: "job-1" });
   });
 
+  it("rejects v2 before spending a provider call in the legacy v1 workflow", async () => {
+    const { POST } = await import("@/app/api/generation/deepseek/generate/route");
+    const response = await POST(buildRequest({ ...spec, targetSchema: "caderno.track.v2" }));
+    expect(response.status).toBe(400);
+    expect(mocks.generate).not.toHaveBeenCalled();
+    expect(mocks.repository.create).not.toHaveBeenCalled();
+  });
+
   it("validates successful DeepSeek JSON before returning preview", async () => {
     mocks.generate.mockResolvedValue({
       ok: true,

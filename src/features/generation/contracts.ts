@@ -22,7 +22,7 @@ export type GenerationStatus = (typeof generationStatuses)[number];
 
 export type GenerationMode = "manual_copy_paste" | "deepseek";
 
-export type GenerationSchemaTarget = "caderno.lesson.v1";
+export type GenerationSchemaTarget = "caderno.lesson.v1" | "caderno.track.v2";
 
 export const generationImportTargetSchema = z.object({
   packId: z.string().regex(/^[a-z0-9][a-z0-9._-]{2,127}$/),
@@ -34,7 +34,8 @@ export const generationImportTargetSchema = z.object({
 });
 
 export const generationSpecSchema = z.object({
-  targetSchema: z.literal("caderno.lesson.v1"),
+  targetSchema: z.enum(["caderno.lesson.v1","caderno.track.v2"]),
+  sourcePackContext:z.object({subjectCode:z.enum(["MAT","POR","CIE","GH"]),sourceIds:z.array(z.string().min(1)).min(1),requirementIds:z.array(z.string().min(1)).min(1),prerequisiteConceptIds:z.array(z.string().min(1)).default([])}).strict().optional(),
   language: z.literal("pt-BR"),
   audienceLevel: z.enum(["beginner", "intermediate", "advanced"]),
   lessonTitle: z.string().trim().min(1),

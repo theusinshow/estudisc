@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect,useState } from "react";
 import {
   BookOpen,
   ChartNoAxesColumnIncreasing,
@@ -26,7 +27,8 @@ const primaryNavigationItems = [
 const secondaryNavigationItems = [
   { label: "Revisar", href: "/review", icon: RotateCcw, match: ["/review"] },
   { label: "Avaliações", href: "/assessments", icon: BookOpen, match: ["/assessments"] },
-  { label: "Importar", href: "/import", icon: Upload, match: ["/import"] },
+  { label: "Importar", href: "/import", icon: Upload, match: ["/import"],adminOnly:true },
+  { label: "Administração", href: "/admin", icon: Database, match: ["/admin"],adminOnly:true },
   { label: "Histórico", href: "/history", icon: History, match: ["/history"] },
   { label: "Erros", href: "/mistakes", icon: TriangleAlert, match: ["/mistakes"] },
   { label: "Projetos", href: "/projects", icon: FolderKanban, match: ["/projects"] },
@@ -40,8 +42,11 @@ function isCurrentRoute(pathname: string, matches: string[]) {
 }
 
 export function PrimaryNav() {
+  const [isAdmin,setIsAdmin]=useState(false);
+  useEffect(()=>{const controller=new AbortController();void fetch("/api/profile",{signal:controller.signal}).then(response=>response.ok?response.json():null).then(profile=>setIsAdmin(profile?.role==="ADMIN")).catch(()=>{});return ()=>controller.abort();},[]);
+  const secondaryItems=secondaryNavigationItems.filter(item=>!("adminOnly" in item)||isAdmin);
   const pathname = usePathname() ?? "/";
-  const hasSecondaryCurrent = secondaryNavigationItems.some((item) => isCurrentRoute(pathname, item.match));
+  const hasSecondaryCurrent = secondaryItems.some((item) => isCurrentRoute(pathname, item.match));
 
   return (
     <>
@@ -70,7 +75,7 @@ export function PrimaryNav() {
         </summary>
 
         <div className="nav-more-panel">
-          {secondaryNavigationItems.map((item) => {
+          {secondaryItems.map((item) => {
             const Icon = item.icon;
             const isCurrent = isCurrentRoute(pathname, item.match);
 

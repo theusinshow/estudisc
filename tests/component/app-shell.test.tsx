@@ -18,11 +18,11 @@ describe("AppShell", () => {
     expect(screen.getByRole("link", { name: "KNOW/OS página inicial" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /hoje/i })).toHaveAttribute("href", "/");
     expect(screen.getByRole("link", { name: /aprender/i })).toHaveAttribute("href", "/tracks");
-    expect(screen.getByRole("link", { name: /praticar/i })).toHaveAttribute("href", "/review");
+    expect(screen.getByRole("link", { name: /revisar/i, hidden:true })).toHaveAttribute("href", "/review");
     expect(screen.getByRole("link", { name: /progresso/i })).toHaveAttribute("href", "/progress");
     expect(screen.getByText("Mais")).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /histórico/i, hidden: true })).toHaveAttribute("href", "/history");
-    expect(screen.getByRole("link", { name: /importar/i, hidden: true })).toHaveAttribute("href", "/import");
+    expect(screen.queryByRole("link", { name: /importar/i, hidden: true })).not.toBeInTheDocument();
     expect(screen.getByRole("link", { name: /mapa/i, hidden: true })).toHaveAttribute("href", "/knowledge-map");
     expect(screen.getByRole("navigation", { name: /navegação principal/i })).toBeInTheDocument();
     expect(screen.getByRole("main")).toHaveAttribute("id", "main-content");

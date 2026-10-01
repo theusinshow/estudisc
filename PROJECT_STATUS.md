@@ -4,11 +4,15 @@
 
 Active checkout: `C:\Dev\pessoal\vecta`, copied with Git history from the original KNOW/OS under explicit user authorization. Production and the original checkout remain untouched.
 
-Current milestone: **IFSC-03 IN PROGRESS**. IFSC-00/01/02 passed focused gates. Migrations 0010/0011 passed disposable PGlite; compatible Pack v2, partial curriculum and immutable versioned Questions work. IFSC-03 through IFSC-15 are pending. Acceptance criteria are not yet satisfied; no production readiness is claimed.
+Current state: **LOCAL IFSC RUNTIME IMPLEMENTED; CONTENT RELEASE DEFERRED TO HUMAN REVIEW**. User explicitly selected draft content for human review on 2026-10-01. Sessions, deterministic planner/mastery/review, shared Questions/assessments, private official assets, editorial QA/CMS and optional tutor are implemented locally. Migrations 0010–0017 passed disposable PGlite. Full production/content acceptance remains open.
+
+Private source inventory: 112 official Questions plus 29 Golden Questions, 303 image references, 27 Anexo V requirements mapped to 378 Concepts, and 12 draft assessment templates. Inventory mapping is not teaching coverage: 63 curriculum Lessons still need authored teaching/practice/exit-ticket content. Existing Golden Lessons and proposed official classifications also require independent human QA. No published seed or complete curriculum is claimed.
+
+Validation: 134 tests passed / 1 real-PostgreSQL test skipped; lint/typecheck/build passed; five mobile shell and percentage session/resume/submit/result checks passed. Eight focused generation tests cover the final legacy-route guard. Dependency security remediation passed `pnpm security:audit` with no known production vulnerabilities. PostgreSQL/OAuth production configuration and deployment remain outside this local validation.
 
 The existing V1 core is the implementation foundation. The approved target is `docs/ifsc/17-ACCEPTANCE-CRITERIA.md` once integrated. Historical PDFs are private local source material under `sources/ifsc/historical`, not publicly served assets. Credentials were not copied.
 
-NEXT ACTION: educational registry extensions, then MAT-07 student slice; details in PLANS.md. The older V1 status below is historical.
+NEXT ACTION: human editorial production/review using the private source pack and `/admin`; publish only through independent QA. See `docs/ifsc/LOCAL-DELIVERY.md`. The older V1 status below is historical.
 
 Last updated: 2026-08-05
 

@@ -6,7 +6,7 @@ User authorization: implement IFSC-00 through IFSC-15 autonomously in this copie
 
 User update: remote `https://github.com/theusinshow/vecta.git` is empty (successful `git ls-remote`, no refs). It is now `origin`; the read-only local source is `know-os-source`. Preserve inherited history. Favor low token usage and basic focused checks per coherent milestone; run full final gate once, expanding checks only for actual failures/risks.
 
-Current milestone: **IFSC-10 — official exam preservation**. IFSC-00/01/02/03 passed focused gates; IFSC-04/05/06 functional gates passed with publication explicitly pending independent QA; see docs/ifsc/IMPLEMENTATION-AUDIT.md.
+Current state: **IFSC local engineering validation; editorial publication deferred to human review by explicit user choice**. The full source inventory and runtime are implemented, but IFSC-10 factual/classification QA and IFSC-14 planner-ready teaching coverage remain open. No milestone is marked complete merely because inventory exists. See `docs/ifsc/LOCAL-DELIVERY.md` and the audit.
 
 - [x] Integrate ADRs 0017–0029; supersede only ADR 0008's single-owner constraint.
 - [x] Reconcile the core documentation and agent rules with the approved expansion.

@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-01 — IFSC local runtime and draft content
+
+- Extended existing renderer/registries/imports with educational interactions, Golden Lessons and immutable Questions.
+- Added owner-scoped frozen StudySessions, deterministic planner and versioned mastery/review policies.
+- Added shared assessment/diagnostic engine, definitive-key ingestion, private authenticated images and 12 draft simulations/benchmarks.
+- Added independent four-layer QA, atomic publication/withdrawal, Admin JSON authoring/preview and v2 GenerationJob integration.
+- Added optional contextual tutor through the existing gateway, protected exam mode and attested assistance.
+- Mapped all 27 official numbered requirements to 378 Concepts; explicitly retained 63 teaching gaps and unpublished content for human review.
+- Hardened owner-aware exports, dynamic personalized pages, mutation origin checks and four-item mobile bottom navigation.
+- Updated Next.js/lint config to 16.3.6 and vulnerable inherited transitive overrides; production dependency audit passes.
+- Validation: 134 tests passed / 1 real-PostgreSQL test skipped, eight final focused generation tests, lint/typecheck/build passed, five mobile checks passed. No remote or production write.
+
 ## 2026-10-01 — IFSC-00 integration
 
 - Integrated approved IFSC specifications and ADRs 0017–0029; superseded the single-owner constraint while preserving infrastructure/history.

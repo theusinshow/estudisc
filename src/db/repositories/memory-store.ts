@@ -83,7 +83,7 @@ type MemoryAttempt = {
   ownerId: string;
   activityStableId: string;
   attemptNumber: number;
-  outcome: "passed" | "failed";
+  outcome: "passed" | "failed" | "annulled";
   source: string;
   output: JavaScriptEvaluationResult["execution"];
   tests: JavaScriptEvaluationResult["tests"];
@@ -546,7 +546,7 @@ export class MemoryActivityAttemptRepository {
     return {
       attemptId: attempt.id,
       attemptNumber: attempt.attemptNumber,
-      outcome: attempt.outcome,
+      outcome: attempt.outcome==="annulled"?"failed":attempt.outcome,
       source: attempt.source,
       execution: attempt.output,
       tests: attempt.tests,

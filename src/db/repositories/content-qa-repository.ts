@@ -11,6 +11,16 @@ type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
 export class ContentQaRepository {
   constructor(private readonly db:Database=getDatabase()){}
   async list(){return this.db.select().from(contentReleases).orderBy(asc(contentReleases.createdAt));}
+  async retire(releaseId:string){return this.db.transaction(async tx=>{
+    const [release]=await tx.select().from(contentReleases).where(eq(contentReleases.id,releaseId)).for("update");if(!release)throw new Error("Release not found");
+    if(release.targetType==="question"){
+      const bank=await new DrizzleQuestionRepository(tx).getVersion(release.stableId,release.version);if(bank&&bank.question.status!=="annulled")await tx.update(questionVersions).set({status:"retired"}).where(eq(questionVersions.id,bank.versionId));
+    }else if(release.targetType==="lesson"){
+      const rows=await tx.select().from(lessons).where(and(eq(lessons.stableId,release.stableId),eq(lessons.contentVersion,release.version)));
+      for(const row of rows)await tx.update(lessons).set({metadata:{...row.metadata as object,status:"retired"}}).where(eq(lessons.id,row.id));
+    }
+    await tx.update(contentReleases).set({status:"retired"}).where(eq(contentReleases.id,releaseId));return {retired:true};
+  });}
   async register(authorId:string,targetType:"lesson"|"question"|"curriculum",stableId:string,version:number){
     const packs=await this.db.select().from(packImports).orderBy(desc(packImports.importedAt));let target:unknown;
     for(const row of packs){const parsed=trackPackV2Schema.safeParse(row.manifest);if(!parsed.success)continue;
@@ -25,16 +35,18 @@ export class ContentQaRepository {
     const review=qaReviewSchema.parse(input);
     return this.db.transaction(async tx=>{
       const [release]=await tx.select().from(contentReleases).where(eq(contentReleases.id,releaseId)).for("update");
-      if(!release||release.authorId===reviewerId||release.status!=="draft")throw new Error("Independent reviewer required for draft version");
-      await tx.insert(contentQaReviews).values({releaseId,reviewerId,...review});return {recorded:true};
+      if(!release||release.authorId===reviewerId||release.status==="retired")throw new Error("Independent reviewer required for active version");
+      if(release.status==="published"&&review.verdict==="APPROVE")throw new Error("Published version cannot receive a new approval");
+      await tx.insert(contentQaReviews).values({releaseId,reviewerId,...review});if(release.status==="published"&&review.verdict==="REJECT")await new ContentQaRepository(tx).retire(release.id);return {recorded:true};
     });
   }
   async publish(releaseId:string){return this.db.transaction(async tx=>{
     const [release]=await tx.select().from(contentReleases).where(eq(contentReleases.id,releaseId)).for("update");if(!release)throw new Error("Release not found");
-    if(release.status==="published")return {published:true};
+    if(release.status==="retired")throw new Error("Retired version requires a new content version");
     const reviews=await tx.select().from(contentQaReviews).where(eq(contentQaReviews.releaseId,releaseId)).orderBy(asc(contentQaReviews.createdAt));
     const issues=publicationIssues(release.authorId,reviews.map(r=>({...qaReviewSchema.parse({layer:r.layer,verdict:r.verdict,rationale:r.rationale,findings:r.findings}),reviewerId:r.reviewerId})));
     if(issues.length)throw new Error(`QA blocks publication: ${issues.join(",")}`);
+    if(release.status==="published")return {published:true};
     if(release.targetType==="question"){
       const bank=await new DrizzleQuestionRepository(tx).getVersion(release.stableId,release.version);if(!bank)throw new Error("Question not found");
       for(const asset of bank.question.assets){const [row]=await tx.select().from(questionAssets).where(eq(questionAssets.id,asset.id));if(!row||row.questionVersionId!==bank.versionId)throw new Error("Source asset missing");}

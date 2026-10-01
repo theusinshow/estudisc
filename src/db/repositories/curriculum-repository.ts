@@ -3,7 +3,7 @@ import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 
 import { getDatabase } from "@/db/connection";
 import type * as schema from "@/db/schema";
-import { concepts, conceptPrerequisites, contentSourceLinks, contentSources, curriculumRequirementConcepts, curriculumRequirements, lessonConcepts, lessons, modules, trackConceptSettings, tracks } from "@/db/schema";
+import { concepts, conceptPrerequisites, contentSourceLinks, contentSources, curriculumRequirementConcepts, curriculumRequirements, lessonConcepts, lessons, modules, trackConceptSettings, tracks,contentReleases } from "@/db/schema";
 import { deriveRequirementCoverage, findGraphCycles, summarizeCurriculum, validateCurriculum } from "@/features/curriculum/api";
 import { hashCanonicalJson } from "@/lib/canonical-json";
 
@@ -91,12 +91,17 @@ export class DrizzleCurriculumRepository {
     const rows = await this.db.select().from(curriculumRequirements).where(eq(curriculumRequirements.trackId, trackId));
     const mappings = await this.db.select({ requirementId: curriculumRequirementConcepts.requirementId, conceptId: concepts.stableId })
       .from(curriculumRequirementConcepts).innerJoin(concepts, eq(concepts.id, curriculumRequirementConcepts.conceptId)).where(eq(curriculumRequirementConcepts.trackId, trackId));
+    const [track]=await this.db.select().from(tracks).where(eq(tracks.id,trackId));
+    const [scopeRelease]=track?await this.db.select().from(contentReleases).where(and(eq(contentReleases.targetType,"curriculum"),eq(contentReleases.stableId,track.stableId),eq(contentReleases.version,track.contentVersion),eq(contentReleases.status,"published"))):[];
+    const readiness=await this.db.select({conceptId:concepts.stableId,metadata:lessons.metadata}).from(lessonConcepts).innerJoin(concepts,eq(concepts.id,lessonConcepts.conceptId)).innerJoin(lessons,eq(lessons.id,lessonConcepts.lessonId)).innerJoin(modules,eq(modules.id,lessons.moduleId)).where(eq(modules.trackId,trackId));
+    const publishedReleases=new Set((await this.db.select({id:contentReleases.id}).from(contentReleases).where(eq(contentReleases.status,"published"))).map(row=>row.id));
+    const readyIds=new Set(readiness.filter(row=>{const meta=row.metadata as {status?:string;qaReleaseId?:string};return meta.status==="published"&&meta.qaReleaseId&&publishedReleases.has(meta.qaReleaseId);}).map(row=>row.conceptId));
+    const facts=[...readyIds].map(conceptId=>({conceptId,published:true,plannerReady:true,qaApproved:true}));
     const requirements = rows.map(row => {
       const mappedConceptIds = mappings.filter(mapping => mapping.requirementId === row.id).map(mapping => mapping.conceptId).sort();
-      // IFSC-01 has no published/QA-ready content. Never infer readiness from titles or imported status.
-      const state = deriveRequirementCoverage(mappedConceptIds, [], false);
-      return { id: row.stableId, label: row.label, subjectCode: row.subjectCode, mappedConceptIds, state, contentGaps: mappedConceptIds };
+      const state = deriveRequirementCoverage(mappedConceptIds, facts, Boolean(scopeRelease));
+      return { id: row.stableId, label: row.label, subjectCode: row.subjectCode, mappedConceptIds, state, contentGaps: mappedConceptIds.filter(id=>!readyIds.has(id)) };
     }).sort((a, b) => a.id.localeCompare(b.id));
-    return { requirements, summary: summarizeCurriculum(requirements, false) };
+    return { requirements, summary: summarizeCurriculum(requirements, Boolean(scopeRelease)) };
   }
 }

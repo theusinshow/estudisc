@@ -1,4 +1,4 @@
-import { getOwnerId } from "@/features/auth/owner";
+import { getOwnerProfile } from "@/features/auth/owner";
 import { ensureDatabaseReady, getDatabaseUrl } from "@/db/connection";
 import { ExportRepository } from "@/db/repositories/export-repository";
 import { MemoryExportRepository } from "@/db/repositories/memory-store";
@@ -44,14 +44,16 @@ export async function getExportPayload({
 }
 
 async function getExportSnapshot() {
-  const ownerId = await getOwnerId();
+  const {ownerId,role} = await getOwnerProfile();
   await getGamificationSummary();
 
   if (getDatabaseUrl() === "memory://local") {
-    return new MemoryExportRepository().getSnapshot(ownerId);
+    const snapshot=await new MemoryExportRepository().getSnapshot(ownerId);return role==="ADMIN"?snapshot:{...snapshot,packManifests:[]};
   }
 
   await ensureDatabaseReady();
-  return new ExportRepository().getSnapshot(ownerId);
+  const snapshot=await new ExportRepository().getSnapshot(ownerId);
+  // Student exports carry owned learning facts; editorial manifests contain reserved questions and keys.
+  return role==="ADMIN"?snapshot:{...snapshot,packManifests:[]};
 }
 

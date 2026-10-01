@@ -12,11 +12,13 @@ export const frozenQuestionSchema=z.object({versionId:z.uuid(),question:question
 export const assessmentSnapshotSchema=z.object({kind:z.enum(assessmentKinds),mode:z.enum(["ASSESSMENT","EXAM"]),questions:z.array(frozenQuestionSchema).min(1).max(28),durationMinutes:z.number().int().min(5).max(240),policyVersion:z.literal(ASSESSMENT_POLICY),masteryPolicy:z.literal("mastery.v2"),reviewPolicy:z.literal("review.v2")}).strict();
 export type AssessmentTemplate=z.infer<typeof assessmentTemplateSchema>;
 export type AssessmentSnapshot=z.infer<typeof assessmentSnapshotSchema>;
-export function validateAssessmentComposition(template:AssessmentTemplate,questions:readonly z.infer<typeof questionSchema>[]){
+export function validateAssessmentComposition(template:AssessmentTemplate,questions:readonly z.infer<typeof questionSchema>[],requirePublished=template.status==="published"){
   if(questions.length!==template.items.length)throw new Error("Missing frozen questions");
   if(["BROAD_DIAGNOSTIC","FULL_SIMULATION","OFFICIAL_EXAM"].includes(template.kind))for(const subject of ["MAT","POR","CIE","GH"])if(questions.filter(question=>question.subjectCode===subject).length!==7)throw new Error("Assessment requires seven questions per subject");
   if(template.kind==="SUBJECT_SIMULATION"&&new Set(questions.map(question=>question.subjectCode)).size!==1)throw new Error("Subject simulation must use one subject");
-  if(["FULL_SIMULATION","OFFICIAL_EXAM"].includes(template.kind)&&questions.some(question=>question.type==="multiple_choice"&&question.choices?.length!==5))throw new Error("Full exam multiple choice requires five alternatives");
-  if(questions.some(question=>question.status!=="published"&&!(template.kind==="OFFICIAL_EXAM"&&question.status==="annulled")))throw new Error("Only published or official annulled questions may enter an assessment");
+  if(["FULL_SIMULATION","OFFICIAL_EXAM"].includes(template.kind)&&questions.some(question=>question.type!=="multiple_choice"||question.choices?.length!==5))throw new Error("Full exam requires multiple choice with five alternatives");
+  if(template.kind==="OFFICIAL_EXAM"&&questions.some(question=>question.provenance.type!=="official_exam"||question.provenance.examId!==template.examId))throw new Error("Official exam must preserve its original identity");
+  if(requirePublished&&questions.some(question=>question.status!=="published"&&!(template.kind==="OFFICIAL_EXAM"&&question.status==="annulled")))throw new Error("Only published or official annulled questions may enter an assessment");
   if(questions.some(question=>question.exposurePolicy.reservedForAssessment&&(template.kind!=="OFFICIAL_EXAM"||template.examId!==question.provenance.examId)))throw new Error("Reserved question requires its authorized official template");
+  if(questions.some(question=>question.exposurePolicy.reservedForAssessment)&&!template.availableAt)throw new Error("Reserved benchmark requires an explicit availability date");
 }

@@ -1,4 +1,4 @@
-import { getOwnerId } from "@/features/auth/owner";
+import { getOwnerProfile } from "@/features/auth/owner";
 import { getDatabaseUrl } from "@/db/connection";
 import { CatalogRepository, withCatalogRepository } from "@/db/repositories/catalog-repository";
 import {
@@ -13,7 +13,8 @@ import { ReviewRepository } from "@/db/repositories/review-repository";
 import { buildRecommendations } from "@/features/recommendations/recommendation-rules";
 
 export async function getRecommendations() {
-  const ownerId = await getOwnerId();
+  const {ownerId,role} = await getOwnerProfile();
+  if(!getDatabaseUrl())return [];
 
   if (getDatabaseUrl() === "memory://local") {
     const [dueReviews, mistakes, tracks, projects] = await Promise.all([
@@ -23,18 +24,18 @@ export async function getRecommendations() {
       new MemoryProjectRepository().listProjects(ownerId)
     ]);
 
-    return buildRecommendations({ dueReviews, mistakes, tracks, projects });
+    return buildRecommendations({ dueReviews, mistakes, tracks:tracks.filter(track=>track.lessonCount>0), projects });
   }
 
   return withCatalogRepository(async (catalogRepository: CatalogRepository) => {
     const [dueReviews, mistakes, tracks, projects] = await Promise.all([
       new ReviewRepository().listDueReviews(ownerId),
       new MistakeRepository().listMistakes(ownerId),
-      catalogRepository.listTracks(),
+      catalogRepository.listTracks(role==="STUDENT"),
       new ProjectRepository().listProjects(ownerId)
     ]);
 
-    return buildRecommendations({ dueReviews, mistakes, tracks, projects });
+    return buildRecommendations({ dueReviews, mistakes, tracks:tracks.filter(track=>track.lessonCount>0), projects });
   });
 }
 

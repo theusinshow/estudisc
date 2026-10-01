@@ -9,7 +9,7 @@ import { MistakeRepository, type MistakeRecord } from "@/db/repositories/mistake
 import { ProjectRepository, type ProjectSummary } from "@/db/repositories/project-repository";
 import { ReviewRepository, type DueReview } from "@/db/repositories/review-repository";
 import { XpRepository, type XpSummary } from "@/db/repositories/xp-repository";
-import { activities, attempts, conceptEvidence, concepts, packImports } from "@/db/schema";
+import { activities, attempts, conceptEvidence, concepts, packImports,questions,questionVersions } from "@/db/schema";
 import type * as schema from "@/db/schema";
 
 type ExportDatabase = PgDatabase<PgQueryResultHKT, typeof schema>;
@@ -35,6 +35,9 @@ export type ExportAttemptRecord = Readonly<{
   outcome: string;
   source: string;
   createdAt: Date;
+  response?:unknown;
+  context?:unknown;
+  questionVersion?:number|null;
 }>;
 
 export type ExportSnapshot = Readonly<{
@@ -136,18 +139,25 @@ export class ExportRepository {
         attemptNumber: attempts.attemptNumber,
         outcome: attempts.outcome,
         response: attempts.response,
+        context:attempts.context,
+        questionStableId:questions.stableId,
+        questionVersion:questionVersions.version,
+        questionContent:questionVersions.content,
         createdAt: attempts.createdAt
       })
       .from(attempts)
-      .innerJoin(activities, eq(activities.id, attempts.activityId))
+      .leftJoin(activities, eq(activities.id, attempts.activityId))
+      .leftJoin(questionVersions,eq(questionVersions.id,attempts.questionVersionId))
+      .leftJoin(questions,eq(questions.id,questionVersions.questionId))
       .where(eq(attempts.ownerId, ownerId))
       .orderBy(desc(attempts.createdAt));
 
     return rows.map((row) => ({
       id: row.id,
-      activityStableId: row.activityStableId,
-      activityType: row.activityType,
-      activityPrompt: row.activityPrompt,
+      activityStableId: row.activityStableId??row.questionStableId??"historical-question",
+      activityType: row.activityType??"question",
+      activityPrompt: row.activityPrompt??(row.questionContent as {stem?:string}|null)?.stem??"Questão histórica",
+      response:row.response,context:row.context,questionVersion:row.questionVersion,
       attemptNumber: row.attemptNumber,
       outcome: row.outcome,
       source: parseAttemptSource(row.response),
