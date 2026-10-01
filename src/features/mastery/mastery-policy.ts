@@ -3,12 +3,12 @@ import type { ConceptEvidenceRecord } from "@/db/repositories/concept-evidence-r
 export const MASTERY_POLICY_VERSION = "mastery.v1";
 
 export const masteryStateLabels = {
-  unseen: "Unseen",
-  introduced: "Introduced",
-  understood: "Understood",
-  practicing: "Practicing",
-  strong: "Strong",
-  mastered: "Mastered"
+  unseen: "Não visto",
+  introduced: "Introduzido",
+  understood: "Entendido",
+  practicing: "Praticando",
+  strong: "Forte",
+  mastered: "Dominado"
 } as const;
 
 export type MasteryState = keyof typeof masteryStateLabels;

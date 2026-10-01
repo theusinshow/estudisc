@@ -27,15 +27,15 @@ const primaryNavigationItems = [
 
 const secondaryNavigationItems = [
   { label: "Revisar", href: "/review", icon: RotateCcw, match: ["/review"] },
-  { label: "Avaliações", href: "/assessments", icon: BookOpen, match: ["/assessments"] },
+  { label: "Simulados", href: "/assessments", icon: BookOpen, match: ["/assessments"] },
   { label: "Importar", href: "/import", icon: Upload, match: ["/import"],adminOnly:true },
   { label: "Administração", href: "/admin", icon: Database, match: ["/admin"],adminOnly:true },
   { label: "Histórico", href: "/history", icon: History, match: ["/history"] },
   { label: "Erros", href: "/mistakes", icon: TriangleAlert, match: ["/mistakes"] },
-  { label: "Projetos", href: "/projects", icon: FolderKanban, match: ["/projects"] },
+  { label: "Projetos", href: "/projects", icon: FolderKanban, match: ["/projects"],adminOnly:true },
   { label: "Mapa", href: "/knowledge-map", icon: Map, match: ["/knowledge-map"] },
-  { label: "Exports", href: "/exports", icon: Download, match: ["/exports"] },
-  { label: "Badges", href: "/achievements", icon: Medal, match: ["/achievements"] }
+  { label: "Exportar dados", href: "/exports", icon: Download, match: ["/exports"],adminOnly:true },
+  { label: "Conquistas", href: "/achievements", icon: Medal, match: ["/achievements"] }
 ];
 
 function isCurrentRoute(pathname: string, matches: string[]) {
