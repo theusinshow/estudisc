@@ -30,7 +30,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
         <h1 id="lesson-title">{lesson.title}</h1>
         {Boolean(lesson.metadata?.kind)&&(!lesson.metadata?.qaReleaseId||lesson.metadata?.status!=="published")&&<p className="learning-hint">Prévia administrativa · conteúdo aguardando QA independente.</p>}
         <ProgressSummary progress={progress} />
-        <LessonSessionCallout progress={progress} />
+        {!stepped && <LessonSessionCallout progress={progress} />}
 
         {stepped ? (
           <LessonSteps blocks={lesson.blocks} activities={lesson.activities} />

@@ -12,7 +12,9 @@ export function LessonStepper({ steps }: Readonly<{ steps: LessonStep[] }>) {
   const top = useRef<HTMLDivElement>(null);
   const go = (next: number) => {
     setIndex(next);
-    top.current?.scrollIntoView({ block: "start" });
+    // Scroll the window (not an inner container) only when the step start left the viewport.
+    const box = top.current?.getBoundingClientRect();
+    if (box && box.top < 0) window.scrollTo({ top: window.scrollY + box.top - 96 });
   };
   const current = steps[index];
   const last = index === steps.length - 1;
@@ -22,7 +24,7 @@ export function LessonStepper({ steps }: Readonly<{ steps: LessonStep[] }>) {
       <div className="stepper-head">
         {showAll ? <span className="stepper-count">Aula inteira · {steps.length} partes</span> : <span className="stepper-count" aria-live="polite">Passo {index + 1} de {steps.length} · <strong>{current?.label}</strong></span>}
         <button type="button" className="stepper-toggle" onClick={() => setShowAll(value => !value)} aria-pressed={showAll}>{showAll ? "Um passo por vez" : "Ver tudo"}</button>
-        {!showAll && <span className="stepper-bar" aria-hidden="true"><span style={{ width: `${((index + 1) / steps.length) * 100}%` }} /></span>}
+        {!showAll && <progress className="stepper-bar" value={index + 1} max={steps.length} aria-label="Progresso da aula" />}
       </div>
       {steps.map((step, position) => (
         <section className="lesson-step" data-kind={step.kind} key={step.id} hidden={!showAll && position !== index} aria-label={step.label}>

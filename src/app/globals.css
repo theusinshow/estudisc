@@ -1734,7 +1734,8 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .progress-summary dd { margin: 0; font-size: 1.75rem; font-weight: 900; font-variant-numeric: tabular-nums; }
 .lesson-flow-nav { display: flex; flex-wrap: wrap; gap: var(--kos-spacing-6); }
 .lesson-flow-nav a { display: grid; padding: var(--kos-spacing-6) var(--kos-spacing-10); border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: 999px; background: var(--kos-color-panel); color: var(--kos-color-ink); text-decoration: none; font-weight: 700; }
-.foundation-panel > .record-list, .foundation-panel > .concept-list, .foundation-panel > .module-section, .foundation-panel > .module-stack, .foundation-panel > .lesson-blocks, .foundation-panel > .study-session-callout, .foundation-panel > .lesson-flow-nav { margin: 0; padding-inline: 0; }
+.foundation-panel > .record-list, .foundation-panel > .concept-list, .foundation-panel > .module-section, .foundation-panel > .module-stack, .foundation-panel > .lesson-blocks, .foundation-panel > .lesson-flow-nav { margin: 0; padding-inline: 0; }
+.foundation-panel > .study-session-callout { margin: 0; }
 .progress-summary dl > div { display: grid; align-content: start; gap: 2px; padding: var(--kos-spacing-6) var(--kos-spacing-8); border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-md); background: var(--kos-color-panel); }
 .progress-summary dd { font-family: inherit; letter-spacing: 0; text-transform: none; font-size: 1.5rem; overflow-wrap: anywhere; }
 .progress-summary .eyebrow { justify-self: start; padding: 2px var(--kos-spacing-6); border: var(--kos-border-hair) solid var(--kos-color-ink); background: var(--kos-color-panel); }
@@ -1857,3 +1858,17 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .stepper-nav .primary-button { background: var(--kos-color-ink); color: var(--kos-color-paper); min-height: 56px; font-size: 1.0625rem; }
 .stepper-nav button { min-height: 56px; }
 .lesson-step > .lesson-text, .lesson-step .lesson-text { max-width: 65ch; margin: 0; padding: 0; border: 0; background: none; box-shadow: none; font-size: 1.125rem; line-height: 1.65; }
+
+/* Progress bars use native <progress>: the CSP blocks inline style attributes. */
+progress.stepper-bar, progress.bar { -webkit-appearance: none; appearance: none; display: block; width: 100%; height: 14px; border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: 999px; background: var(--kos-color-panel); color: var(--kos-color-signal); overflow: hidden; }
+progress.bar { height: 22px; color: var(--subject, var(--kos-color-signal)); }
+progress.stepper-bar { flex-basis: 100%; }
+progress.stepper-bar::-webkit-progress-bar, progress.bar::-webkit-progress-bar { background: var(--kos-color-panel); }
+progress.stepper-bar::-webkit-progress-value { background: var(--kos-color-signal); border-right: var(--kos-border-rule) solid var(--kos-color-ink); }
+progress.bar::-webkit-progress-value { background: var(--subject, var(--kos-color-signal)); border-right: var(--kos-border-rule) solid var(--kos-color-ink); }
+progress.stepper-bar::-moz-progress-bar { background: var(--kos-color-signal); }
+progress.bar::-moz-progress-bar { background: var(--subject, var(--kos-color-signal)); }
+.atom-model-svg { display: block; width: 100%; max-width: 360px; height: 160px; }
+@media (min-width: 900px) { .sidebar { z-index: 20; } .topbar { z-index: 30; } }
+.progress-summary dd { font-size: 1.375rem; line-height: 1.2; }
+.progress-summary { padding: var(--kos-spacing-10) var(--kos-spacing-12); }
