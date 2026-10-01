@@ -11,6 +11,7 @@ import { scheduleReviewV2,REVIEW_V2 } from "@/features/review/review-policy-v2";
 export class MemoryQuestionStudyRepository {
   constructor(private readonly store=getMemoryStore()){}
   private context(ownerId:string,activityId:string,questionId:string,version:number,sessionId?:string){
+    if(this.store.assessmentInstances.some(instance=>instance.ownerId===ownerId&&instance.status==="ACTIVE"&&instance.snapshot.mode==="EXAM"))throw new QuestionUnavailableError();
     const activity=this.store.activities.find(activity=>activity.stableId===activityId);
     const config=questionReferenceSchema.safeParse(activity?.config);
     const input=this.store.packImports.flatMap(entry=>entry.manifest?.schema==="caderno.track.v2"?entry.manifest.questions:[]).find(question=>question.id===questionId&&question.version===version);

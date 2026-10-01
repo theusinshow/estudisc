@@ -1,0 +1,10 @@
+import { notFound } from "next/navigation";
+import { z } from "zod";
+import { AppShell } from "@/components/layout/app-shell";
+import { assessmentRepository } from "@/features/assessments/api";
+import { AssessmentPanel } from "@/features/assessments/assessment-panel";
+import { getOwnerId } from "@/features/auth/owner";
+export const dynamic="force-dynamic";
+const resultSchema=z.object({correct:z.number(),scored:z.number(),total:z.number(),bySubject:z.record(z.string(),z.object({correct:z.number(),scored:z.number(),total:z.number(),annulled:z.number()})),items:z.array(z.object({questionId:z.string(),outcome:z.string(),explanation:z.string().optional(),conceptIds:z.array(z.string())}))});
+export default async function AssessmentPage({params}:{params:Promise<{assessmentId:string}>}){const {assessmentId}=await params;if(!z.uuid().safeParse(assessmentId).success)notFound();const view=await assessmentRepository().view(await getOwnerId(),assessmentId);if(!view)notFound();const result=resultSchema.safeParse(view.result);return <AppShell><article className="foundation-panel content-panel"><p className="eyebrow">{view.kind} · {view.mode}</p><h1>{view.status==="FINALIZED"?"Resultado da avaliação":"Sua avaliação"}</h1>{view.status==="ACTIVE"?<AssessmentPanel view={view} serverNow={view.serverNow}/>:result.success?<><p>{result.data.correct} de {result.data.scored} questões pontuáveis corretas.</p><p>Este resultado ajuda a escolher o próximo estudo. Não representa uma probabilidade de aprovação.</p><ul>{Object.entries(result.data.bySubject).map(([subject,score])=><li key={subject}>{subject}: {score.correct}/{score.scored}{score.annulled?` · ${score.annulled} anulada(s)`:""}</li>)}</ul><h2>Para revisar</h2>{result.data.items.map(item=><details key={item.questionId}><summary>{item.questionId} · {item.outcome}</summary><p>{item.explanation??"Confira a solução oficial ou o material aprovado."}</p><p>Conceitos: {item.conceptIds.join(", ")}</p></details>)}</>:<p>Resultado indisponível.</p>}</article></AppShell>;}
+

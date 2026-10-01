@@ -1,0 +1,4 @@
+"use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+export function AssessmentStartButton({templateId}:{templateId:string}){const [busy,setBusy]=useState(false);const [error,setError]=useState("");const [key]=useState(()=>crypto.randomUUID());const router=useRouter();return <div><button disabled={busy} onClick={async()=>{setBusy(true);setError("");try{const response=await fetch("/api/assessments",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({templateId,startKey:key})});if(!response.ok)throw new Error("Esta avaliação ainda não está disponível, ou existe outra em andamento.");const result=await response.json();router.push(`/assessments/${result.id}`);}catch(error){setError(error instanceof Error?error.message:"Falha ao iniciar avaliação.");}finally{setBusy(false);}}}>Iniciar avaliação</button>{error&&<p role="alert">{error}</p>}</div>;}

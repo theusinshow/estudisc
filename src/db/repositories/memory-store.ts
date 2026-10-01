@@ -28,6 +28,7 @@ import {
   type ReviewQuality
 } from "@/features/review/review-policy";
 import type { JavaScriptEvaluationResult } from "@/runtime/javascript/api";
+import type { AssessmentTemplate,AssessmentSnapshot } from "@/features/assessments/contracts";
 
 type MemoryTrack = {
   stableId: string;
@@ -190,6 +191,9 @@ type MemoryPackImport = ExistingPackImport & {
 };
 
 type MemoryStore = {
+  assessmentTemplates:Array<{id:string;definition:AssessmentTemplate;contentHash:string}>;
+  assessmentInstances:Array<{id:string;ownerId:string;templateId:string;startKey:string;status:string;snapshot:AssessmentSnapshot;startedAt:Date;deadlineAt:Date;finalizedAt:Date|null;result:unknown}>;
+  assessmentResponses:Array<{instanceId:string;versionId:string;response:unknown;flagged:boolean}>;
   questionAssistance: Array<{ownerId:string;questionId:string;version:number;contextKey:string;hintLevel:number;solutionRevealed:boolean}>;
   questionExposures: Array<{ownerId:string;questionId:string;lastSeenAt:Date;timesSeen:number}>;
   studySessions:Array<{id:string;ownerId:string;trackId:string;status:string;budgetMinutes:number;items:unknown;policyVersion:string;startedAt:Date|null;endedAt:Date|null;createdAt:Date}>;
@@ -220,6 +224,7 @@ const globalStore = globalThis as typeof globalThis & {
 
 export function getMemoryStore() {
   globalStore.__knowOsMemoryStore ??= {
+    assessmentTemplates:[],assessmentInstances:[],assessmentResponses:[],
     questionAssistance:[],questionExposures:[],studySessions:[],
     packImports: [],
     tracks: [],

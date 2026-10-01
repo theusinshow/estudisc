@@ -80,3 +80,11 @@ Draft Golden content now includes MAT-07, POR-01, CIE-06 and GH-06, plus prerequ
 Verified official edital Anexo V pages 41–43 visually and by extraction: exam 29 November 2026 at 14:00, 4h, 28 questions (7 per area). Source PDF is private and unchanged. GH source references include the Planalto texts of Laws 581/1850, 2040/1871, 3353/1888 and Biblioteca Nacional's abolition material. Seed provenance is generated, never official.
 
 Focused checks: all four Golden Lessons validate/render via canonical registry; every shared Question completes with the real evaluator in the disposable memory adapter. Typecheck/lint passed. Independent content QA remains pending; no draft is represented as published curriculum.
+
+## IFSC-09 — unified assessment engine
+
+One engine now supports all six assessment kinds via immutable versioned templates and frozen instances. Choices/order/time/policy are frozen; responses remain mutable until finalization. Server deadlines reject late response updates. Finalization row-locks owner/instance, emits immutable Attempts and multi-Concept evidence, review/mistake projections and result in one transaction; retries return the stored result. Official annulled items do not score or produce evidence. Active EXAM blocks ordinary question hint/solution endpoints. Protected templates check configured availability.
+
+Student surfaces include assessment list/resume, saving/changing responses, timer, finalization and per-subject/result review. DTOs contain no answer or explanation before finish. Admin template endpoints require ADMIN.
+
+Validation: migrated PGlite integration passed (resume/start retry, mutable responses, no provisional Attempts, deadline/owner protection, finalization exactly once). Typecheck/lint passed. Broad/final template seeding, actual official assets, final mobile assessment E2E and independent content QA remain visible pending items for IFSC-10/11/12/15.

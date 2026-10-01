@@ -40,7 +40,7 @@ export class DrizzleQuestionRepository {
   }
 
   async getVersion(stableId: string, version: number): Promise<{ versionId: string; question: Question } | null> {
-    const [row] = await this.db.select({ versionId: questionVersions.id, content: questionVersions.content }).from(questionVersions).innerJoin(questions, eq(questions.id, questionVersions.questionId)).where(and(eq(questions.stableId, stableId), eq(questionVersions.version, version)));
-    return row ? { versionId: row.versionId, question: questionSchema.parse(row.content) } : null;
+    const [row] = await this.db.select({ versionId: questionVersions.id, content: questionVersions.content,status:questionVersions.status }).from(questionVersions).innerJoin(questions, eq(questions.id, questionVersions.questionId)).where(and(eq(questions.stableId, stableId), eq(questionVersions.version, version)));
+    return row ? { versionId: row.versionId, question: questionSchema.parse({...row.content as object,status:row.status}) } : null;
   }
 }

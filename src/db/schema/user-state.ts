@@ -47,7 +47,6 @@ export const attempts = pgTable("attempts", {
     .notNull()
     .references(() => owners.id),
   activityId: uuid("activity_id")
-    .notNull()
     .references(() => activities.id),
   attemptNumber: integer("attempt_number").notNull(),
   response: jsonb("response").notNull(),

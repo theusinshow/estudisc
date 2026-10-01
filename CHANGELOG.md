@@ -173,3 +173,10 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 - Authored draft Portuguese, Science and Geography/History Golden Lessons with truthful sources/provenance.
 - Added accessible atom exploration and a vertical ordering timeline through the existing renderer.
 - Verified edital Anexo V directly; retained historical/private source boundaries.
+
+## 2026-10-01 — unified assessment engine
+
+- Added versioned templates, frozen assessment instances and mutable open responses.
+- Added transactional/idempotent finalization using existing Attempts/evidence/review.
+- Added student assessment UI with server deadline and deferred results; Admin template authorization.
+- Tested migrated integration, typecheck and lint. Actual official bank/template content remains pending.

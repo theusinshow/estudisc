@@ -791,3 +791,5 @@ Active IFSC update: the percentage slice, v2 learning policies and persistent se
 Active IFSC update: deterministic planner policy is connected to both adapters and passed focused checks. IFSC-08 remaining Golden Lessons is active. All generated content is still draft pending independent QA.
 
 Active IFSC update: all four Golden draft fixtures validate/render/evaluate. Official edital was checked directly. IFSC-09 unified assessment engine is active; publication still requires independent QA.
+
+Active IFSC update: unified assessment engine passed migrated integration, types and lint. IFSC-10 official bank preservation is active. Content QA, complete curriculum and final integrated checks remain pending.

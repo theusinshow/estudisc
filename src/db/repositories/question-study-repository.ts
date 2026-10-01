@@ -2,7 +2,7 @@ import { and, count, desc, eq, inArray, sql } from "drizzle-orm";
 import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 import type * as schema from "@/db/schema";
 import { getDatabase } from "@/db/connection";
-import { activities, attempts, conceptEvidence, concepts, lessons, modules, owners, questionAssistance, questionExposures, questionVersions, reviewSchedules, studyEvents, studySessions, mistakes } from "@/db/schema";
+import { activities, attempts, conceptEvidence, concepts, lessons, modules, owners, questionAssistance, questionExposures, questionVersions, reviewSchedules, studyEvents, studySessions, mistakes,assessmentInstances } from "@/db/schema";
 import { DrizzleQuestionRepository } from "./question-repository";
 import { canExposeQuestion } from "@/features/questions/exposure";
 import { evaluateQuestion, QUESTION_EVALUATOR_VERSION } from "@/features/questions/evaluation";
@@ -24,6 +24,7 @@ export class QuestionStudyRepository {
     return canExposeQuestion(ctx.question,{now:new Date(),context:"training",exposure:exposure??undefined});
   }
   private async context(ownerId:string, activityStableId:string, questionId:string, version:number, sessionId?:string) {
+    const [exam]=await this.db.select({id:assessmentInstances.id}).from(assessmentInstances).where(and(eq(assessmentInstances.ownerId,ownerId),eq(assessmentInstances.status,"ACTIVE"),eq(assessmentInstances.mode,"EXAM")));if(exam)throw new QuestionUnavailableError();
     const rows=await this.db.select({activity:activities,lesson:lessons,trackId:modules.trackId}).from(activities).innerJoin(lessons,eq(lessons.id,activities.lessonId)).innerJoin(modules,eq(modules.id,lessons.moduleId)).where(eq(activities.stableId,activityStableId)).orderBy(desc(lessons.contentVersion));
     const row=rows.find(row=>{const config=questionReferenceSchema.safeParse(row.activity.config);return row.activity.type==="question"&&config.success&&config.data.questionId===questionId&&config.data.questionVersion===version;});
     if(!row)throw new QuestionUnavailableError();
