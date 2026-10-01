@@ -275,6 +275,105 @@
         "reservedForAssessment": false
       },
       "status": "draft"
+    },
+    {
+      "id": "Q-MAT-PREREQ-1",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.FRACTION.MEANING",
+      "conceptIds": [
+        "MAT.FRACTION.MEANING"
+      ],
+      "type": "numeric",
+      "difficulty": "foundation",
+      "cognitiveOperations": [
+        "calculate"
+      ],
+      "stem": "Escreva 1/2 em decimal.",
+      "answer": {
+        "kind": "numeric",
+        "value": 0.5,
+        "tolerance": 0
+      },
+      "explanation": "1/2 representa metade do todo: 0,5.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "Q-MAT-PREREQ-2",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.DECIMAL.MEANING",
+      "conceptIds": [
+        "MAT.DECIMAL.MEANING"
+      ],
+      "type": "numeric",
+      "difficulty": "foundation",
+      "cognitiveOperations": [
+        "calculate"
+      ],
+      "stem": "Escreva 0,75 como porcentagem. Informe apenas o número antes do símbolo %.",
+      "answer": {
+        "kind": "numeric",
+        "value": 75,
+        "tolerance": 0
+      },
+      "explanation": "0,75 × 100 = 75%.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "Q-MAT-PREREQ-3",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PROPORTION.CONCEPT",
+      "conceptIds": [
+        "MAT.PROPORTION.CONCEPT"
+      ],
+      "type": "numeric",
+      "difficulty": "foundation",
+      "cognitiveOperations": [
+        "calculate"
+      ],
+      "stem": "Uma receita usa 3 copos de farinha para cada 2 copos de água. Mantendo a proporção, quantos copos de água serão usados com 6 copos de farinha?",
+      "answer": {
+        "kind": "numeric",
+        "value": 4,
+        "tolerance": 0
+      },
+      "explanation": "A farinha dobrou de 3 para 6; a água também deve dobrar de 2 para 4.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
     }
   ],
   "track": {
@@ -315,24 +414,94 @@
               }
             ],
             "prerequisiteConceptIds": [],
-            "objectives": [],
+            "objectives": [
+              "Fração como parte do todo",
+              "Notação decimal",
+              "Razão e proporção"
+            ],
             "sourceIds": [
               "src-ifsc-golden-author"
             ],
-            "exitTicketQuestionIds": [],
+            "exitTicketQuestionIds": [
+              "Q-MAT-PREREQ-1",
+              "Q-MAT-PREREQ-2",
+              "Q-MAT-PREREQ-3"
+            ],
             "blocks": [
               {
-                "id": "mat-prereq-note",
-                "type": "note",
+                "id": "mat-prereq-fraction",
+                "type": "text",
                 "schemaVersion": 1,
                 "conceptIds": [],
                 "payload": {
-                  "title": "Preparação",
-                  "content": "Conteúdo de pré-requisitos em preparação; esta aula ainda não está pronta para o planejador."
+                  "content": "Uma fração representa uma divisão ou partes de um todo. Em 1/2, o todo foi dividido em duas partes iguais e uma foi considerada. Dividir 1 por 2 dá 0,5; multiplicar esse decimal por 100 dá 50%."
+                }
+              },
+              {
+                "id": "mat-prereq-decimal",
+                "type": "worked-example",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "title": "Do decimal para a porcentagem",
+                  "content": "0,75 = 75/100 = 75%. O decimal 0,75 é menor que 1, mas 75% não é menor que 1%: as unidades de comparação são diferentes."
+                }
+              },
+              {
+                "id": "mat-prereq-ratio",
+                "type": "worked-example",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "title": "Mantenha a mesma razão",
+                  "content": "Se 3 copos de farinha correspondem a 2 de água, dobrar a farinha para 6 exige dobrar a água para 4. Multiplique as duas quantidades pelo mesmo fator para preservar a razão."
                 }
               }
             ],
-            "activities": []
+            "activities": [
+              {
+                "id": "mat-prereq-q1",
+                "type": "question",
+                "prompt": "Escreva 1/2 em decimal.",
+                "conceptIds": [
+                  "MAT.FRACTION.MEANING"
+                ],
+                "questionId": "Q-MAT-PREREQ-1",
+                "config": {
+                  "hints": [
+                    "Identifique a relação entre a parte e o todo."
+                  ]
+                }
+              },
+              {
+                "id": "mat-prereq-q2",
+                "type": "question",
+                "prompt": "Escreva 0,75 como porcentagem. Informe apenas o número antes do símbolo %.",
+                "conceptIds": [
+                  "MAT.DECIMAL.MEANING"
+                ],
+                "questionId": "Q-MAT-PREREQ-2",
+                "config": {
+                  "hints": [
+                    "Identifique a relação entre a parte e o todo."
+                  ]
+                }
+              },
+              {
+                "id": "mat-prereq-q3",
+                "type": "question",
+                "prompt": "Uma receita usa 3 copos de farinha para cada 2 copos de água. Mantendo a proporção, quantos copos de água serão usados com 6 copos de farinha?",
+                "conceptIds": [
+                  "MAT.PROPORTION.CONCEPT"
+                ],
+                "questionId": "Q-MAT-PREREQ-3",
+                "config": {
+                  "hints": [
+                    "Identifique a relação entre a parte e o todo."
+                  ]
+                }
+              }
+            ]
           },
           {
             "id": "MAT-07",

@@ -161,3 +161,9 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 - Added persisted study sessions, frozen active structure, resumption and result summaries.
 - Added deterministic mastery.v2/review.v2 while retaining v1. Hints and solution exposure reduce independence; self-rating cannot prove retrieval.
 - MAT-07 seed remains draft pending independent QA. Integration uses disposable published fixtures; mobile slice passed.
+
+## 2026-10-01 — IFSC planner
+
+- Added deterministic time-budget planning with prerequisites, weakness, review urgency, subject balance and configurable exam phase.
+- Replanning preserves active sessions and discards planned debt.
+- Added draft prerequisite teaching for MAT-07; publication approval remains pending.

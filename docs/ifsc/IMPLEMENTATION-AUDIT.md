@@ -66,3 +66,9 @@ Versioned mastery.v2/review.v2 preserve v1. Independent, varied, later retrieval
 Evidence: focused profile/registry/import tests passed; migrated percentage integration passed (retry conflict, exactly one Attempt/evidence/review, owner isolation, frozen ACTIVE, result); deterministic policy tests passed; mobile Playwright percentage flow passed with 44px+ controls/no horizontal overflow/reload/result. Typecheck/lint passed.
 
 Content boundary: `packs/seeds/ifsc-2027.golden.track.v2.json` contains draft AI-authored MAT-07 with truthful provenance and six questions. No independent publication review is fabricated. Disposable tests alone simulate published data. Functional infrastructure is verified; live student content/publication and full content-readiness acceptance remain pending the QA gate. Planner generalization is next. No production migration or remote write.
+
+## IFSC-07 — deterministic planner
+
+Planner policy now prioritizes real due reviews, weakness, curriculum importance, required prerequisites, weekly subject balance and configurable exam phases. Selection respects time budgets, excludes reserved/unavailable questions and caps new learning. PostgreSQL and memory adapters use the same pure priority policy; a new plan never rewrites ACTIVE structure. Expired PLANNED sessions are abandoned rather than becoming lesson debt. MAT prerequisite draft now contains actual teaching and three retrieval questions.
+
+Focused policy and migrated slice tests passed; typecheck/lint passed. Live planner-ready QA certification remains pending IFSC-12 and is not claimed. Performance and multi-subject golden regression receive the final integrated check.

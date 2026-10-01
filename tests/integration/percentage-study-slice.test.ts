@@ -4,7 +4,7 @@ import { importTrackPack } from "@/features/import/api";
 import { DrizzleTrackImportRepository } from "@/db/repositories/track-import-repository";
 import { QuestionStudyRepository } from "@/db/repositories/question-study-repository";
 import { StudySessionRepository } from "@/db/repositories/study-session-repository";
-import { attempts,conceptEvidence,reviewSchedules } from "@/db/schema";
+import { attempts,conceptEvidence,reviewSchedules,concepts,owners } from "@/db/schema";
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
 it("completes the percentage slice, deduplicates retries and isolates owners",async()=>{
   const database=await createMigratedPgliteTestDatabase();
@@ -12,6 +12,9 @@ it("completes the percentage slice, deduplicates retries and isolates owners",as
     // Publication is simulated only in this disposable fixture. The source seed remains draft.
     const fixture=JSON.parse(JSON.stringify(pack));fixture.questions.forEach((question:{status:string})=>question.status="published");fixture.track.modules[0].lessons[1].status="published";
     expect((await importTrackPack(fixture,new DrizzleTrackImportRepository(database.db))).status).toBe("imported");
+    await database.db.insert(owners).values({id:"student-a",displayName:"Test learner"});
+    const prerequisites=(await database.db.select().from(concepts)).filter(concept=>["MAT.FRACTION.MEANING","MAT.DECIMAL.MEANING","MAT.PROPORTION.CONCEPT"].includes(concept.stableId));
+    for(const concept of prerequisites)await database.db.insert(conceptEvidence).values({ownerId:"student-a",conceptId:concept.id,type:"diagnostic_result",strength:2,sourceType:"disposable_test",sourceId:crypto.randomUUID(),conditions:{outcome:"passed"}});
     const sessions=new StudySessionRepository(database.db);const questions=new QuestionStudyRepository(database.db);
     const session=await sessions.plan("student-a",15);expect(session).not.toBeNull();
     expect(await sessions.get("student-b",session!.id)).toBeNull();
@@ -25,7 +28,7 @@ it("completes the percentage slice, deduplicates retries and isolates owners",as
     await expect(questions.interact("student-a","mat07-q3",{...input,response:"31"})).rejects.toThrow("Submission key");
     await expect(questions.interact("student-b","mat07-q3",input)).rejects.toThrow("unavailable");
     expect(await database.db.select().from(attempts)).toHaveLength(1);
-    expect(await database.db.select().from(conceptEvidence)).toHaveLength(1);
+    expect(await database.db.select().from(conceptEvidence)).toHaveLength(4);
     expect(await database.db.select().from(reviewSchedules)).toHaveLength(1);
     await sessions.transition("student-a",session!.id,"complete");expect((await sessions.result("student-a",session!.id))!).toMatchObject({answered:1,correct:1});
     await expect(sessions.transition("student-a",session!.id,"start")).rejects.toThrow("Session state");

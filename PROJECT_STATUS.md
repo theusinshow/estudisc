@@ -787,3 +787,5 @@ Review Step 23 on `http://127.0.0.1:3211/lessons/js-fundamentals-001` while list
 Active IFSC update: IFSC-03 focused gate passed. IFSC-04 is in progress; interaction checks are currently formative, so the first student slice is not yet complete.
 
 Active IFSC update: the percentage slice, v2 learning policies and persistent sessions passed focused functional checks, including mobile E2E. AI-authored seed content is draft and requires independent QA before student publication. IFSC-07 planner is in progress.
+
+Active IFSC update: deterministic planner policy is connected to both adapters and passed focused checks. IFSC-08 remaining Golden Lessons is active. All generated content is still draft pending independent QA.
