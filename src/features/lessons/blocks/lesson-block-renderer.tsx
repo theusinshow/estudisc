@@ -94,7 +94,7 @@ function renderConceptBlock(block: ImportedLessonBlock) {
   return (
     <BlockShell label="Conceito" variant="concept">
       <strong>{parsed.data.title ?? parsed.data.conceptId ?? "Conceito importado"}</strong>
-      {parsed.data.content ? <p>{parsed.data.content}</p> : null}
+      {parsed.data.content ? <Paragraphs text={parsed.data.content} /> : null}
     </BlockShell>
   );
 }
@@ -139,7 +139,7 @@ function renderUnsupportedBlock(block: ImportedLessonBlock) {
 }
 
 function TextBlock({ payload }: Readonly<{ payload: TextBlockPayload }>) {
-  return <p className="lesson-text">{payload.content}</p>;
+  return <div className="lesson-text"><Paragraphs text={payload.content} /></div>;
 }
 
 function CodeBlock({ payload }: Readonly<{ payload: CodeBlockPayload }>) {
@@ -165,7 +165,7 @@ function TitledTextBlock({
   return (
     <BlockShell label={label} variant={variant}>
       {payload.title ? <strong>{payload.title}</strong> : null}
-      <p>{payload.content}</p>
+      <Paragraphs text={payload.content} />
     </BlockShell>
   );
 }
@@ -194,4 +194,9 @@ function BlockShell({
       <div>{children}</div>
     </section>
   );
+}
+
+// Authored content separates paragraphs with a blank line; numbered steps stay one per line.
+function Paragraphs({ text }: Readonly<{ text: string }>) {
+  return <>{text.split(/\n\s*\n/).map((paragraph, index) => <p key={index}>{paragraph.split("\n").flatMap((line, lineIndex) => lineIndex ? [<br key={lineIndex} />, line] : [line])}</p>)}</>;
 }

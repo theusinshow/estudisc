@@ -33,13 +33,21 @@ export function expandLessonDraft(draft) {
   const block = (suffix, type, payload, ids = []) => ({ id: `${prefix}-${suffix}`, type, schemaVersion: 1, conceptIds: ids, payload });
   const blocks = [
     block("hook", "text", { content: draft.hook }),
-    ...draft.concepts.map((c, i) => block(`concept-${i + 1}`, "concept", { conceptId: c.conceptId, title: c.title, content: c.content }, [c.conceptId])),
+    // Each Concept is its own teaching unit: intuition, rule, worked examples, then its common error.
+    ...draft.concepts.flatMap((c, i) => [
+      ...(c.intuition ? [block(`c${i + 1}-intuition`, "text", { content: c.intuition }, [c.conceptId])] : []),
+      block(`concept-${i + 1}`, "concept", { conceptId: c.conceptId, title: c.title, content: c.content }, [c.conceptId]),
+      ...(c.examples ?? []).map((e, j) => block(`c${i + 1}-example-${j + 1}`, "worked-example", { title: e.title, content: e.content }, [c.conceptId])),
+      ...(c.pitfall ? [block(`c${i + 1}-pitfall`, "warning", c.pitfall, [c.conceptId])] : [])
+    ]),
     ...(draft.examples ?? []).map((e, i) => block(`example-${i + 1}`, "worked-example", { title: e.title, content: e.content }, e.conceptIds ?? [])),
     ...(draft.warning ? [block("warning", "warning", draft.warning)] : []),
     block("transfer", "text", { content: "Agora pratique sem consultar os exemplos. Leia o enunciado inteiro e identifique o que é pedido antes de responder." }),
     block("summary", "summary", { title: "Para lembrar depois", content: draft.summary })
   ];
-  const activities = draft.questions.map((q, index) => ({ id: `${prefix}-q${index + 1}`, type: "question", prompt: q.stem, conceptIds: q.conceptIds, questionId: questions[index].id, config: { hints: (q.hints ?? []).slice(0, 3), phase: q.exit ? "exit_ticket" : "independent" } }));
+  // The first practice item of each Concept becomes a quick check shown right after that Concept is taught.
+  const checkpoints = new Map(draft.concepts.map((c, i) => [draft.questions.findIndex(q => !q.exit && q.conceptIds[0] === c.conceptId), `${prefix}-concept-${i + 1}`]));
+  const activities = draft.questions.map((q, index) => ({ id: `${prefix}-q${index + 1}`, type: "question", prompt: q.stem, conceptIds: q.conceptIds, questionId: questions[index].id, config: { hints: (q.hints ?? []).slice(0, 3), phase: q.exit ? "exit_ticket" : "independent", ...(checkpoints.has(index) ? { checkpointFor: checkpoints.get(index) } : {}) } }));
   return {
     lesson: { id, version: 1, title: draft.title, kind: "core", estimatedMinutes: draft.estimatedMinutes ?? 35, status: "draft", concepts: conceptIds.map(c => ({ id: c, title: draft.conceptTitles[c], importance: "high" })), prerequisiteConceptIds: draft.prerequisiteConceptIds ?? [], objectives: conceptIds.map(c => draft.conceptTitles[c]), sourceIds: [DRAFT_SOURCE.id], exitTicketQuestionIds: questions.filter((_, i) => draft.questions[i].exit).map(q => q.id), blocks, activities },
     questions

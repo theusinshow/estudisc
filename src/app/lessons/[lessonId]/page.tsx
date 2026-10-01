@@ -7,6 +7,7 @@ import { getLesson } from "@/features/lessons/api";
 import { LessonBlockList } from "@/features/lessons/blocks";
 import { getLessonProgress } from "@/features/progress/api";
 import { ProgressSummary } from "@/features/progress/progress-summary";
+import { LessonSteps } from "@/features/lessons/lesson-steps";
 
 type LessonPageProps = Readonly<{
   params: Promise<{ lessonId: string }>;
@@ -19,6 +20,8 @@ export default async function LessonPage({ params }: LessonPageProps) {
   if (!lesson) {
     notFound();
   }
+  // Study lessons get the one-idea-per-screen flow; programming lessons keep the Lab layout.
+  const stepped = !lesson.activities.some(activity => activity.type === "code" || activity.type === "debug");
 
   return (
     <AppShell>
@@ -29,6 +32,10 @@ export default async function LessonPage({ params }: LessonPageProps) {
         <ProgressSummary progress={progress} />
         <LessonSessionCallout progress={progress} />
 
+        {stepped ? (
+          <LessonSteps blocks={lesson.blocks} activities={lesson.activities} />
+        ) : (
+          <>
         <nav className="lesson-flow-nav" aria-label="Fluxo da aula">
           <a href="#lesson-body-title">
             <span>01</span>
@@ -70,6 +77,8 @@ export default async function LessonPage({ params }: LessonPageProps) {
           <h2 id="activities-title">Prática</h2>
           <ActivityList activities={lesson.activities} />
         </section>
+          </>
+        )}
       </article>
     </AppShell>
   );

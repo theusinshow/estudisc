@@ -28,6 +28,7 @@ The format follows Keep a Changelog principles. Product versions will follow Sem
 
 ### Added
 
+- Modo aula em passos (uma ideia por tela, checagem rápida após cada conceito, prática e desafio final) na sessão de estudo e nas aulas sem código; rascunhos aceitam intuição, exemplos e erro comum por conceito; MAT-01 reescrita no formato rico como piloto.
 - Simulados, resultado e Revisão redesenhados (ADR 0030): cards por tipo, cronômetro fixo, marcação "revisar depois", placar e barras por área, correção com prévia do enunciado, estados vazios úteis.
 - ADR 0030 neo-brutalist UI refresh: tokens v4, self-hosted Archivo/JetBrains Mono, new shell and bottom navigation, rebuilt Today and study session, unified control vocabulary, colored lesson blocks and answer feedback, Portuguese student labels.
 

@@ -4,7 +4,7 @@
     {
       "id": "MAT-01",
       "title": "Números e operações",
-      "estimatedMinutes": 35,
+      "estimatedMinutes": 40,
       "conceptTitles": {
         "MAT.NUM.NATURAL.INTEGER": "Números naturais e inteiros",
         "MAT.NUM.OPERATIONS": "As quatro operações e seu significado",
@@ -12,20 +12,62 @@
         "MAT.NUM.REAL.PROPERTIES": "Propriedades das operações",
         "MAT.NUM.EXPRESSIONS": "Expressões numéricas e ordem das operações"
       },
-      "hook": "A temperatura de uma cidade era −3 °C de manhã e subiu 8 °C até a tarde. Para saber a temperatura final, precisamos operar com números negativos e entender o que cada operação representa.",
+      "hook": "Às 6h, um termômetro em São Joaquim marcava −3 °C. Até as 14h, a temperatura subiu 8 °C. Que temperatura o termômetro mostrou à tarde?\n\nPara responder com segurança, você precisa de três ideias desta aula: o que são números negativos, o que cada operação significa e em que ordem fazer as contas. Elas aparecem em quase todas as questões de Matemática do IFSC, mesmo quando o assunto principal é outro.",
       "concepts": [
-        { "conceptId": "MAT.NUM.NATURAL.INTEGER", "title": "Naturais e inteiros", "content": "Os números naturais (ℕ) são 0, 1, 2, 3, ... e servem para contar. Os inteiros (ℤ) incluem os naturais e seus opostos negativos: ..., −2, −1, 0, 1, 2, ... Todo natural é inteiro, mas nem todo inteiro é natural (por exemplo, −5)." },
-        { "conceptId": "MAT.NUM.OPERATIONS", "title": "O que cada operação significa", "content": "Adição junta ou acrescenta; subtração retira ou compara; multiplicação repete parcelas iguais ou combina grupos; divisão reparte em partes iguais ou mede quantas vezes cabe. Na multiplicação e na divisão de inteiros: sinais iguais dão resultado positivo; sinais diferentes dão resultado negativo." },
-        { "conceptId": "MAT.NUM.ORDER", "title": "Comparar números com sinal", "content": "Na reta numérica, quanto mais à direita, maior o número. Por isso −2 > −7, mesmo que 7 seja maior que 2. Entre dois negativos, é maior o que tem menor distância até o zero (menor módulo)." },
-        { "conceptId": "MAT.NUM.REAL.PROPERTIES", "title": "Propriedades úteis", "content": "Comutativa: a + b = b + a e a × b = b × a. Associativa: (a + b) + c = a + (b + c). Distributiva: a × (b + c) = a × b + a × c. Elemento neutro: a + 0 = a e a × 1 = a. Subtração e divisão não são comutativas." },
-        { "conceptId": "MAT.NUM.EXPRESSIONS", "title": "Ordem das operações", "content": "Resolva primeiro o que está dentro de parênteses, depois colchetes e chaves. Em seguida, potências e raízes; depois multiplicações e divisões, na ordem em que aparecem; por último, adições e subtrações, na ordem em que aparecem." }
+        {
+          "conceptId": "MAT.NUM.NATURAL.INTEGER",
+          "title": "Naturais e inteiros",
+          "intuition": "Pense em contar alunos numa sala: 0, 1, 2, 3... Não existe \"menos dois alunos\". Agora pense num saldo bancário ou numa temperatura: aí faz sentido ficar abaixo de zero. Por isso a Matemática usa dois conjuntos diferentes.",
+          "content": "Números naturais (ℕ): 0, 1, 2, 3, 4, ... Servem para contar e ordenar.\n\nNúmeros inteiros (ℤ): ..., −3, −2, −1, 0, 1, 2, 3, ... São os naturais mais os seus opostos negativos.\n\nTodo número natural também é inteiro, mas nem todo inteiro é natural. O −5, por exemplo, é inteiro e não é natural. O zero pertence aos dois conjuntos.",
+          "examples": [
+            { "title": "Classificando números", "content": "Quais destes são naturais: 7, −2, 0, 15, −10?\n1. 7 e 15 servem para contar: são naturais.\n2. 0 também é natural.\n3. −2 e −10 são negativos: são inteiros, mas não naturais.\nResposta: 7, 0 e 15." }
+          ],
+          "pitfall": { "title": "O zero conta", "content": "Muita gente esquece que o 0 é natural e inteiro ao mesmo tempo. Em questão de \"qual número não é natural\", o 0 nunca é a resposta certa." }
+        },
+        {
+          "conceptId": "MAT.NUM.OPERATIONS",
+          "title": "O que cada operação significa",
+          "intuition": "Antes de calcular, pergunte: o que está acontecendo na situação? Juntar, tirar, repetir ou repartir? Escolher a operação certa é metade do problema.",
+          "content": "Adição: juntar ou acrescentar (5 + 3).\nSubtração: tirar, ou descobrir a diferença entre dois valores (9 − 4).\nMultiplicação: repetir parcelas iguais (4 × 6 é 6 + 6 + 6 + 6).\nDivisão: repartir em partes iguais, ou descobrir quantas vezes um valor cabe em outro (20 ÷ 5).\n\nCom sinais, na multiplicação e na divisão vale a regra: sinais iguais dão resultado positivo; sinais diferentes dão resultado negativo. (−6) × (−4) = 24 e (−6) × 4 = −24.\n\nNa adição com sinais, pense em andar na reta numérica: somar um positivo anda para a direita, somar um negativo anda para a esquerda.",
+          "examples": [
+            { "title": "A temperatura de São Joaquim", "content": "Começou em −3 °C e subiu 8 °C. Subir é acrescentar: −3 + 8.\nNa reta, saia do −3 e ande 8 casas para a direita: −2, −1, 0, 1, 2, 3, 4, 5.\nResposta: 5 °C." },
+            { "title": "Repartir livros", "content": "Uma escola tem 156 livros para dividir igualmente entre 12 turmas. Repartir em partes iguais é divisão: 156 ÷ 12 = 13.\nConferência: 13 × 12 = 156. Cada turma recebe 13 livros." }
+          ],
+          "pitfall": { "title": "A regra dos sinais não vale para a soma", "content": "\"Menos com menos dá mais\" vale para multiplicação e divisão. Na soma, −5 + (−3) = −8: são duas dívidas que se juntam, e a dívida aumenta." }
+        },
+        {
+          "conceptId": "MAT.NUM.ORDER",
+          "title": "Comparar números com sinal",
+          "intuition": "Quem está mais frio: uma cidade a −2 °C ou outra a −7 °C? A de −7 °C. Então −7 é menor que −2, mesmo que 7 seja maior que 2.",
+          "content": "Na reta numérica, os números crescem da esquerda para a direita. Quanto mais à direita, maior o número.\n\nEntre dois negativos, é maior o que está mais perto do zero: −2 > −7.\nQualquer positivo é maior que qualquer negativo, e o zero fica no meio.\n\nOrdem crescente vai do menor para o maior; decrescente, do maior para o menor.",
+          "examples": [
+            { "title": "Ordenando temperaturas", "content": "Coloque em ordem crescente: −1, 3, −6, 0.\n1. Comece pelo mais à esquerda: −6.\n2. Depois −1 (mais perto do zero que −6).\n3. Depois 0 e, por fim, 3.\nResposta: −6, −1, 0, 3." }
+          ],
+          "pitfall": { "title": "Não compare só os algarismos", "content": "Ver \"7 é maior que 2\" e concluir que −7 > −2 é o erro mais comum. Com negativos, imagine a reta ou o termômetro antes de responder." }
+        },
+        {
+          "conceptId": "MAT.NUM.REAL.PROPERTIES",
+          "title": "Propriedades que facilitam as contas",
+          "intuition": "Para calcular 4 × 37 × 25 de cabeça, você pode trocar a ordem: 4 × 25 = 100, e 100 × 37 = 3.700. Isso só é permitido por causa das propriedades das operações.",
+          "content": "Comutativa: a ordem não muda o resultado na adição e na multiplicação (3 + 5 = 5 + 3; 4 × 7 = 7 × 4).\nAssociativa: você pode agrupar como quiser: (2 + 3) + 4 = 2 + (3 + 4).\nDistributiva: multiplicar uma soma é multiplicar cada parcela: 5 × (3 + 2) = 5 × 3 + 5 × 2.\nElemento neutro: somar 0 ou multiplicar por 1 não muda o número.\n\nAtenção: subtração e divisão não são comutativas. 7 − 2 = 5, mas 2 − 7 = −5.",
+          "examples": [
+            { "title": "Distributiva no cálculo mental", "content": "Calcule 6 × 102.\n1. Escreva 102 como 100 + 2.\n2. Distribua: 6 × 100 + 6 × 2 = 600 + 12.\n3. Resultado: 612." }
+          ],
+          "pitfall": { "title": "Trocar a ordem na subtração", "content": "Em 20 − 8, inverter para 8 − 20 muda o resultado de 12 para −12. Só troque a ordem em somas e multiplicações." }
+        },
+        {
+          "conceptId": "MAT.NUM.EXPRESSIONS",
+          "title": "Ordem das operações",
+          "intuition": "Quanto é 2 + 3 × 4? Se você fizer da esquerda para a direita, dá 20. Se seguir a regra, dá 14. Para todos chegarem ao mesmo resultado, existe uma ordem combinada.",
+          "content": "1. Parênteses ( ), depois colchetes [ ], depois chaves { }.\n2. Potências e raízes.\n3. Multiplicações e divisões, na ordem em que aparecem, da esquerda para a direita.\n4. Adições e subtrações, na ordem em que aparecem, da esquerda para a direita.\n\nMultiplicação e divisão têm a mesma prioridade, assim como adição e subtração. Por isso a ordem de leitura decide qual vem primeiro.",
+          "examples": [
+            { "title": "Expressão com sinais", "content": "Calcule 20 − 3 × (4 − 6).\n1. Parênteses: 4 − 6 = −2.\n2. Multiplicação: 3 × (−2) = −6.\n3. Subtração: 20 − (−6) = 20 + 6 = 26." },
+            { "title": "Mesma prioridade", "content": "Calcule 12 ÷ 3 × 2.\nDivisão e multiplicação têm a mesma prioridade, então siga da esquerda para a direita: 12 ÷ 3 = 4, depois 4 × 2 = 8." }
+          ],
+          "pitfall": { "title": "Multiplicação não vem sempre antes", "content": "Em 12 ÷ 3 × 2, fazer 3 × 2 primeiro dá 2, que está errado. Entre × e ÷, vale a ordem de leitura. O mesmo acontece entre + e −: em 10 − 4 + 2, o resultado é 8, não 4." }
+        }
       ],
-      "examples": [
-        { "title": "Expressão com sinais", "content": "Calcule 20 − 3 × (4 − 6). 1. Parênteses: 4 − 6 = −2. 2. Multiplicação: 3 × (−2) = −6. 3. Subtração: 20 − (−6) = 20 + 6 = 26.", "conceptIds": ["MAT.NUM.EXPRESSIONS", "MAT.NUM.OPERATIONS"] },
-        { "title": "Temperatura", "content": "Começou em −3 °C e subiu 8 °C: −3 + 8 = 5 °C. Se depois caísse 9 °C: 5 − 9 = −4 °C.", "conceptIds": ["MAT.NUM.OPERATIONS", "MAT.NUM.NATURAL.INTEGER"] }
-      ],
-      "warning": { "title": "Da esquerda para a direita", "content": "Em 12 ÷ 3 × 2, não multiplique primeiro: divisão e multiplicação têm a mesma prioridade. 12 ÷ 3 = 4 e 4 × 2 = 8 (e não 2)." },
-      "summary": "ℕ ⊂ ℤ. Na reta, maior é quem está mais à direita. Sinais iguais na multiplicação/divisão dão positivo; diferentes, negativo. Ordem: parênteses, potências, × e ÷, + e −.",
+      "summary": "Naturais (ℕ) contam a partir do 0; inteiros (ℤ) incluem os negativos.\nAntes de calcular, decida o que a situação pede: juntar, tirar, repetir ou repartir.\nNa reta, maior é quem está mais à direita: −2 > −7.\nNa multiplicação e na divisão, sinais iguais dão positivo e sinais diferentes dão negativo.\nOrdem das contas: parênteses, potências, × e ÷, + e −, sempre da esquerda para a direita dentro do mesmo nível.",
       "questions": [
         { "conceptIds": ["MAT.NUM.NATURAL.INTEGER"], "type": "mc", "difficulty": "foundation", "ops": ["identify"], "stem": "Qual dos números abaixo é inteiro, mas não é natural?", "choices": ["0", "7", "−4", "12", "1"], "correct": 2, "explanation": "−4 é inteiro negativo, portanto não pertence aos naturais." },
         { "conceptIds": ["MAT.NUM.NATURAL.INTEGER"], "type": "mc", "difficulty": "direct", "ops": ["recall"], "stem": "Qual afirmação é verdadeira?", "choices": ["Todo inteiro é natural.", "Todo natural é inteiro.", "O zero não é inteiro.", "Os naturais incluem −1.", "Não existe inteiro menor que −100."], "correct": 1, "explanation": "Os naturais estão contidos nos inteiros." },
