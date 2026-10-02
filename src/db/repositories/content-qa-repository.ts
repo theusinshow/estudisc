@@ -63,4 +63,51 @@ export class ContentQaRepository {
     }
     await tx.update(contentReleases).set({status:"published"}).where(eq(contentReleases.id,releaseId));return {published:true};
   });}
+
+  /** Latest imported definition of a lesson version and the question versions it uses (activities and exit ticket). */
+  private async lessonBundle(stableId:string,version:number){
+    const packs=await this.db.select().from(packImports).orderBy(desc(packImports.importedAt));
+    for(const row of packs){const parsed=trackPackV2Schema.safeParse(row.manifest);if(!parsed.success)continue;
+      const lesson=parsed.data.track.modules.flatMap(m=>m.lessons).find(l=>l.id===stableId&&l.version===version);if(!lesson)continue;
+      const ids=new Set([...lesson.activities.flatMap(a=>a.questionId?[a.questionId]:[]),...lesson.exitTicketQuestionIds]);
+      return {lesson,questions:parsed.data.questions.filter(q=>ids.has(q.id))};}
+    throw new Error("Lesson version not found in imported packs");
+  }
+
+  /** Every imported lesson version with its release status and the status of its questions' releases. */
+  async lessonQueue(){
+    const packs=await this.db.select().from(packImports).orderBy(desc(packImports.importedAt));const releases=await this.list();
+    const status=(type:string,id:string,version:number)=>releases.find(r=>r.targetType===type&&r.stableId===id&&r.version===version);
+    const seen=new Set<string>();const queue=[];
+    for(const row of packs){const parsed=trackPackV2Schema.safeParse(row.manifest);if(!parsed.success)continue;
+      for(const trackModule of parsed.data.track.modules)for(const lesson of trackModule.lessons){const key=`${lesson.id}@${lesson.version}`;if(seen.has(key))continue;seen.add(key);
+        const ids=new Set([...lesson.activities.flatMap(a=>a.questionId?[a.questionId]:[]),...lesson.exitTicketQuestionIds]);
+        const questions=parsed.data.questions.filter(q=>ids.has(q.id)).map(q=>({id:q.id,version:q.version,release:status("question",q.id,q.version)}));
+        queue.push({lesson:{id:lesson.id,version:lesson.version,title:lesson.title,subject:trackModule.subjectCode},release:status("lesson",lesson.id,lesson.version),questions});}}
+    return queue;
+  }
+
+  async lessonDetail(stableId:string,version:number){
+    const bundle=await this.lessonBundle(stableId,version);const releases=await this.list();
+    const release=(type:string,id:string,v:number)=>releases.find(r=>r.targetType===type&&r.stableId===id&&r.version===v);
+    return {...bundle,lessonRelease:release("lesson",stableId,version),questionReleases:bundle.questions.map(q=>({id:q.id,release:release("question",q.id,q.version)}))};
+  }
+
+  /**
+   * One human decision applied to a lesson and its questions: the four layer reviews are recorded on every
+   * unpublished release of the bundle (append-only rows, independence still checked per release), and with
+   * `publish` the questions then the lesson are published. All-or-nothing in one transaction.
+   */
+  async reviewLesson(reviewerId:string,stableId:string,version:number,reviews:unknown[],publish:boolean){
+    const parsedReviews=reviews.map(review=>qaReviewSchema.parse(review));
+    return this.db.transaction(async tx=>{
+      const repo=new ContentQaRepository(tx);const {questions}=await repo.lessonBundle(stableId,version);const releases=await repo.list();
+      const find=(type:string,id:string,v:number)=>{const row=releases.find(r=>r.targetType===type&&r.stableId===id&&r.version===v);if(!row)throw new Error(`Release not registered: ${type} ${id} v${v}`);return row;};
+      const bundle=[...questions.map(q=>find("question",q.id,q.version)),find("lesson",stableId,version)];
+      let recorded=0;
+      for(const release of bundle){if(release.status!=="draft")continue;for(const review of parsedReviews){await repo.review(reviewerId,release.id,{...review,rationale:`[Revisão da aula ${stableId} v${version}] ${review.rationale}`});recorded+=1;}}
+      if(publish)for(const release of bundle)await repo.publish(release.id);
+      return {recorded,published:publish,releases:bundle.length};
+    });
+  }
 }

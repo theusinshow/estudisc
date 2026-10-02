@@ -15,6 +15,7 @@
         "POR.AUDIENCE.EFFECT": "Público-alvo e efeitos de sentido"
       },
       "hook": "A biblioteca da escola vai fechar mais cedo na sexta. Essa mesma informação pode virar um bilhete na geladeira, um aviso no mural ou um post com emoji no perfil da escola.\n\nA informação é a mesma, mas os textos são diferentes. O que muda? Quem escreve, para quem, onde, quando e para quê.\n\nEm provas de Português como a do IFSC, quase toda questão começa com um texto. Saber que tipo de texto é aquele, para que ele foi feito e quem está falando já elimina muitas alternativas. É isso que você vai treinar nesta aula.",
+      "opening": { "title": "Antes de começar", "content": "Pense no aviso da biblioteca: o bilhete na geladeira, o aviso no mural e o post com emoji trazem a mesma informação. Então eles são, no fundo, o mesmo texto? Pense numa resposta e guarde. No fim da aula, você vai conferir se acertou." },
       "concepts": [
         {
           "conceptId": "POR.GENRE.IDENTIFY",
@@ -24,7 +25,33 @@
           "examples": [
             { "title": "Um papel no mural do prédio", "content": "Texto: “Vende-se bicicleta aro 26, pouco usada. R$ 350. Falar com Rui, bloco C.”\n1. Formato: texto curto com produto, preço e contato.\n2. Linguagem: frases sem verbo conjugado e a fórmula “vende-se”.\n3. Uso: alguém quer vender um objeto para os vizinhos.\nResposta: é um anúncio classificado." }
           ],
-          "pitfall": { "title": "Gênero não é suporte", "content": "Jornal, revista, site, celular e mural são suportes: lugares onde o texto aparece. Notícia, carta do leitor e anúncio são gêneros. Um mesmo jornal traz vários gêneros, e uma notícia pode aparecer no jornal, no site ou no celular. Se uma alternativa responde “jornal” para “qual é o gênero?”, desconfie." }
+          "pitfall": { "title": "Gênero não é suporte", "content": "Jornal, revista, site, celular e mural são suportes: lugares onde o texto aparece. Notícia, carta do leitor e anúncio são gêneros. Um mesmo jornal traz vários gêneros, e uma notícia pode aparecer no jornal, no site ou no celular. Se uma alternativa responde “jornal” para “qual é o gênero?”, desconfie." },
+          "extras": [
+            { "type": "figure", "file": "POR-02/genero-suporte.svg", "alt": "Uma notícia ligada por setas a três suportes: jornal, site e celular", "caption": "Notícia é o gênero; jornal, site e celular são suportes onde ela pode aparecer.", "longDescription": "À esquerda, um cartão amarelo com a palavra NOTÍCIA e a indicação “gênero”. Três setas saem dele para três quadros à direita, cada um marcado como “suporte”: jornal (desenho de uma página impressa com colunas), site (janela de navegador) e celular (aparelho com linhas de texto na tela).\nA mesma notícia pode aparecer nos três lugares. O gênero continua o mesmo; muda apenas o suporte, isto é, o lugar onde o texto aparece." },
+            {
+              "type": "classification",
+              "afterExample": 1,
+              "title": "Gênero ou suporte?",
+              "instructions": "Gênero é o modelo do texto. Suporte é o lugar onde o texto aparece.",
+              "items": [
+                { "id": "noticia", "label": "Notícia" },
+                { "id": "jornal", "label": "Jornal impresso" },
+                { "id": "receita", "label": "Receita" },
+                { "id": "site", "label": "Site" },
+                { "id": "carta", "label": "Carta do leitor" },
+                { "id": "mural", "label": "Mural da escola" },
+                { "id": "verbete", "label": "Verbete" },
+                { "id": "revista", "label": "Revista" }
+              ],
+              "destinations": [
+                { "id": "genero", "label": "Gênero" },
+                { "id": "suporte", "label": "Suporte" }
+              ],
+              "expected": { "noticia": "genero", "receita": "genero", "carta": "genero", "verbete": "genero", "jornal": "suporte", "site": "suporte", "mural": "suporte", "revista": "suporte" },
+              "hints": ["Pergunte: isso é um tipo de texto ou um lugar onde textos aparecem?", "Um jornal traz notícias, cartas do leitor e anúncios. Então o jornal é o lugar, não o gênero."],
+              "explanation": "Notícia, receita, carta do leitor e verbete são gêneros: modelos de texto. Jornal impresso, site, mural e revista são suportes: num mesmo suporte aparecem vários gêneros."
+            }
+          ]
         },
         {
           "conceptId": "POR.GENRE.PURPOSE",
@@ -34,7 +61,50 @@
           "examples": [
             { "title": "Aviso no portão", "content": "Texto: “A partir de segunda, a entrada dos alunos será pelo portão lateral. O portão da frente ficará fechado para obras.”\n1. O que o texto faz? Comunica uma mudança.\n2. Tenta convencer alguém? Não: não há argumentos nem apelos.\n3. Ensina um passo a passo? Não.\nResposta: a finalidade é informar e orientar quem chega à escola." }
           ],
-          "pitfall": { "title": "Finalidade não é tema", "content": "Tema é o assunto: sobre o que o texto fala. Finalidade é a intenção: para que ele foi escrito. Uma notícia sobre a dengue e um cartaz “Elimine a água parada” têm o mesmo tema. A notícia informa; o cartaz quer que você aja. Alternativas que só repetem o assunto do texto costumam estar erradas." }
+          "pitfall": { "title": "Finalidade não é tema", "content": "Tema é o assunto: sobre o que o texto fala. Finalidade é a intenção: para que ele foi escrito. Uma notícia sobre a dengue e um cartaz “Elimine a água parada” têm o mesmo tema. A notícia informa; o cartaz quer que você aja. Alternativas que só repetem o assunto do texto costumam estar erradas." },
+          "extras": [
+            {
+              "type": "text-highlight",
+              "afterExample": 1,
+              "title": "Quais trechos mostram que o cartaz quer convencer?",
+              "instructions": "O cartaz está dividido em trechos. Marque só os que pedem algo ao leitor ou falam diretamente com ele para levá-lo a agir.",
+              "items": [
+                { "id": "doe", "label": "Doe um agasalho." },
+                { "id": "caixas", "label": "As caixas de coleta ficam na secretaria," },
+                { "id": "datas", "label": "de 2 a 20 de junho." },
+                { "id": "casaco", "label": "O seu casaco parado no armário pode aquecer alguém neste inverno." },
+                { "id": "participe", "label": "Participe!" },
+                { "id": "gremio", "label": "A campanha é organizada pelo grêmio estudantil." }
+              ],
+              "expectedIds": ["doe", "casaco", "participe"],
+              "hints": ["Procure verbos que dão uma ordem ou fazem um pedido ao leitor.", "Um trecho que fala do “seu” casaco está se dirigindo a quem lê."],
+              "explanation": "“Doe” e “Participe!” são pedidos diretos ao leitor, e “O seu casaco parado no armário pode aquecer alguém” fala com o leitor para convencê-lo a doar. Os outros trechos só informam local, datas e quem organiza: são dados, não apelos."
+            },
+            {
+              "type": "matching",
+              "title": "Ligue cada gênero à sua finalidade principal",
+              "instructions": "Cada finalidade serve para um só gênero.",
+              "items": [
+                { "id": "receita", "label": "Receita" },
+                { "id": "noticia", "label": "Notícia" },
+                { "id": "campanha", "label": "Cartaz de campanha" },
+                { "id": "tirinha", "label": "Tirinha de humor" },
+                { "id": "bilhete", "label": "Bilhete" },
+                { "id": "poema", "label": "Poema" }
+              ],
+              "destinations": [
+                { "id": "instruir", "label": "Instruir" },
+                { "id": "informar", "label": "Informar" },
+                { "id": "convencer", "label": "Convencer" },
+                { "id": "divertir", "label": "Divertir" },
+                { "id": "combinar", "label": "Pedir ou combinar" },
+                { "id": "expressar", "label": "Expressar sentimentos" }
+              ],
+              "expected": { "receita": "instruir", "noticia": "informar", "campanha": "convencer", "tirinha": "divertir", "bilhete": "combinar", "poema": "expressar" },
+              "hints": ["Comece pelos pares mais fáceis: o que uma receita faz com o leitor?", "A tirinha de humor quer provocar riso; o bilhete resolve algo do dia a dia."],
+              "explanation": "A receita ensina a fazer; a notícia apresenta fatos; o cartaz de campanha quer levar o leitor a agir; a tirinha de humor quer divertir; o bilhete pede ou combina algo; o poema expressa sentimentos."
+            }
+          ]
         },
         {
           "conceptId": "POR.GENRE.MODALITY",
@@ -44,7 +114,31 @@
           "examples": [
             { "title": "A tartaruga e a sacola", "content": "Cartaz: foto de uma tartaruga presa em uma sacola plástica no mar. Texto: “Para você, foram 5 minutos de uso.”\n1. A frase sozinha fica incompleta: 5 minutos de uso de quê?\n2. A imagem responde: da sacola, que agora está no mar.\n3. Juntas, as linguagens dizem: algo que usamos por pouco tempo prejudica um animal por muito tempo.\nResposta: a imagem completa o sentido da frase." }
           ],
-          "pitfall": { "title": "Não pule a imagem", "content": "Muita gente lê só as palavras e trata a imagem como enfeite. Em tirinhas, anúncios e memes, a resposta quase sempre depende do que a imagem mostra. Antes de marcar, pergunte: o que a imagem acrescenta, confirma ou desmente?" }
+          "pitfall": { "title": "Não pule a imagem", "content": "Muita gente lê só as palavras e trata a imagem como enfeite. Em tirinhas, anúncios e memes, a resposta quase sempre depende do que a imagem mostra. Antes de marcar, pergunte: o que a imagem acrescenta, confirma ou desmente?" },
+          "extras": [
+            { "type": "figure", "file": "POR-02/cartaz-multimodal.svg", "alt": "Cartaz amarelo com a frase “Feche bem.” e o desenho de uma torneira pingando", "caption": "A frase sozinha fica incompleta; a imagem diz o que deve ser fechado.", "longDescription": "Um cartaz amarelo tem, no alto, a frase “Feche bem.” em letras grandes. Abaixo, o desenho de uma torneira saindo da parede, com duas gotas caindo e uma poça embaixo.\nAo lado, três explicações. Só a frase: feche o quê? Só a imagem: uma torneira pingando. Juntas: feche bem a torneira e não desperdice água.\nA imagem completa o sentido da frase. Esse é um texto multimodal: o sentido nasce da relação entre palavra e imagem." },
+            {
+              "type": "classification",
+              "title": "Verbal, não verbal ou multimodal?",
+              "instructions": "Observe só a forma da linguagem: palavras, imagens ou as duas juntas.",
+              "items": [
+                { "id": "placa", "label": "Placa com um cigarro cortado por uma faixa vermelha, sem palavras" },
+                { "id": "emoji", "label": "Emoji de polegar para cima enviado sozinho" },
+                { "id": "audio", "label": "Recado de voz gravado no celular" },
+                { "id": "verbete", "label": "Verbete de dicionário sem ilustração" },
+                { "id": "meme", "label": "Meme com foto e frase" },
+                { "id": "tirinha", "label": "Tirinha com desenhos e balões de fala" }
+              ],
+              "destinations": [
+                { "id": "verbal", "label": "Verbal (só palavras)" },
+                { "id": "nao-verbal", "label": "Não verbal (só imagem ou símbolo)" },
+                { "id": "multimodal", "label": "Multimodal (palavras e imagem)" }
+              ],
+              "expected": { "placa": "nao-verbal", "emoji": "nao-verbal", "audio": "verbal", "verbete": "verbal", "meme": "multimodal", "tirinha": "multimodal" },
+              "hints": ["Palavras faladas também são linguagem verbal.", "Se o texto usa palavras e imagem ao mesmo tempo, ele é multimodal."],
+              "explanation": "A placa e o emoji comunicam sem palavras: são não verbais. O recado de voz e o verbete usam só palavras, faladas ou escritas: são verbais. O meme e a tirinha juntam imagem e palavras: são multimodais."
+            }
+          ]
         },
         {
           "conceptId": "POR.CONTEXT.SITUATION",
@@ -54,7 +148,10 @@
           "examples": [
             { "title": "Bilhete da avó", "content": "Texto: “Pedro, deixei o dinheiro do gás em cima do micro-ondas. O moço passa depois do almoço. Vó.”\n1. Quem escreve: a avó (assinatura).\n2. Para quem: Pedro (nome no início).\n3. Onde: em casa, para ser lido depois.\n4. Relação: família. Por isso o texto é curto e informal.\n5. “O moço” é alguém que os dois conhecem, o entregador de gás. O contexto compartilhado dispensa explicações." }
           ],
-          "pitfall": { "title": "O texto não foi escrito para você, agora", "content": "Quem lê a prova não é o destinatário original. Antes de interpretar “hoje”, “aqui” ou “nós”, descubra quem escreveu, quando e para quem. Datas, assinaturas e o local de publicação são pistas, não detalhes." }
+          "pitfall": { "title": "O texto não foi escrito para você, agora", "content": "Quem lê a prova não é o destinatário original. Antes de interpretar “hoje”, “aqui” ou “nós”, descubra quem escreveu, quando e para quem. Datas, assinaturas e o local de publicação são pistas, não detalhes." },
+          "extras": [
+            { "type": "figure", "afterExample": 1, "file": "POR-02/situacao-comunicacao.svg", "alt": "Mapa da situação de comunicação do bilhete da avó, com o texto no centro e cinco perguntas ao redor", "caption": "Antes de interpretar um texto, responda: quem, para quem, onde, quando e para quê.", "longDescription": "No centro, um quadro amarelo: TEXTO, o bilhete. Setas saem dele para cinco perguntas, respondidas com o bilhete da avó.\nQuem escreve? A avó.\nPara quem? Pedro.\nOnde? Em casa, para ler depois.\nQuando? Antes de o gás chegar.\nPara quê? Dizer onde está o dinheiro do gás." }
+          ]
         },
         {
           "conceptId": "POR.AUTHORSHIP.VOICE",
@@ -65,7 +162,26 @@
             { "title": "Quem prometeu o prazo?", "content": "Notícia: “A diretora Ana Costa afirmou que a reforma terminará em março.”\n1. Quem escreveu a notícia: um jornalista.\n2. Quem garante o prazo: a diretora, citada com o verbo “afirmou”.\n3. Se a reforma atrasar, a promessa foi da diretora, não do jornal." },
             { "title": "O “eu” de um conto", "content": "Conto assinado por uma escritora: “Eu tinha oito anos e um cachorro chamado Farol.”\n1. Quem diz “eu” é o narrador.\n2. O texto é ficção, então não sabemos se a escritora teve um cachorro.\n3. Não atribua à autora a vida do narrador." }
           ],
-          "pitfall": { "title": "Narrador não é autor", "content": "Num texto em primeira pessoa, é tentador achar que o escritor está contando a própria vida. Só afirme isso se o gênero ou a situação indicarem, como numa autobiografia ou num relato pessoal assinado. Em contos, crônicas ficcionais e poemas, trate o “eu” como uma voz criada." }
+          "pitfall": { "title": "Narrador não é autor", "content": "Num texto em primeira pessoa, é tentador achar que o escritor está contando a própria vida. Só afirme isso se o gênero ou a situação indicarem, como numa autobiografia ou num relato pessoal assinado. Em contos, crônicas ficcionais e poemas, trate o “eu” como uma voz criada." },
+          "extras": [
+            {
+              "type": "text-highlight",
+              "afterExample": 1,
+              "title": "Onde o jornalista dá a palavra a outra pessoa?",
+              "instructions": "A notícia está dividida em trechos. Marque os trechos em que a informação ou a opinião é atribuída a alguém citado, com aspas ou com verbos como “disse”, “afirmou” e “segundo”.",
+              "items": [
+                { "id": "reaberta", "label": "A ponte da Rua do Porto foi reaberta na manhã de ontem." },
+                { "id": "obra", "label": "A obra durou dois meses." },
+                { "id": "segundo", "label": "Segundo a prefeitura, a estrutura aguenta caminhões de até 20 toneladas." },
+                { "id": "moradora", "label": "“Agora as crianças voltam a ir a pé para a escola”, disse a moradora Lúcia Ramos." },
+                { "id": "transito", "label": "O trânsito no local foi liberado às 9h." },
+                { "id": "engenheiro", "label": "O engenheiro Paulo Dias afirmou que a ponte deveria ter uma ciclovia." }
+              ],
+              "expectedIds": ["segundo", "moradora", "engenheiro"],
+              "hints": ["Procure aspas e os verbos “disse”, “afirmou” e a palavra “segundo”.", "Nem toda voz citada vem entre aspas: “afirmou que…” também atribui a fala a alguém."],
+              "explanation": "Três trechos atribuem a fala a outra voz: “Segundo a prefeitura”, a fala da moradora entre aspas com “disse” e a opinião do engenheiro com “afirmou que”. Os outros três são informações dadas pelo próprio jornalista, sem atribuição."
+            }
+          ]
         },
         {
           "conceptId": "POR.AUDIENCE.EFFECT",
@@ -75,8 +191,50 @@
           "examples": [
             { "title": "Mesma reunião, dois públicos", "content": "A: “Prezados responsáveis, informamos que a reunião bimestral ocorrerá no dia 10, às 19h.”\nB: “Galera do 9º ano, dia 10 tem reunião com as famílias. Avisa lá em casa!”\n1. A usa “Prezados responsáveis” e linguagem formal: o público são os pais.\n2. B usa “Galera” e um pedido informal: o público são os alunos.\n3. Efeito de B: aproximar-se dos alunos e transformá-los em mensageiros do aviso." }
           ],
-          "pitfall": { "title": "Efeito sem prova não vale", "content": "Alternativas como “emocionar o leitor” ou “chocar o público” parecem sempre possíveis. Só aceite um efeito se você conseguir apontar no texto a escolha que o produz e se ele combinar com o público visado." }
+          "pitfall": { "title": "Efeito sem prova não vale", "content": "Alternativas como “emocionar o leitor” ou “chocar o público” parecem sempre possíveis. Só aceite um efeito se você conseguir apontar no texto a escolha que o produz e se ele combinar com o público visado." },
+          "extras": [
+            {
+              "type": "text-highlight",
+              "afterExample": 1,
+              "title": "Quais trechos mostram que o convite é para crianças?",
+              "instructions": "O convite está dividido em trechos. Marque só os que revelam o público pelo jeito de chamar o leitor, pelo vocabulário ou pelo assunto.",
+              "items": [
+                { "id": "oi", "label": "Oi, criançada!" },
+                { "id": "sabado", "label": "No sábado, às 10h," },
+                { "id": "sala", "label": "a biblioteca municipal abre uma nova sala de leitura." },
+                { "id": "almofada", "label": "Tem almofada fofinha e livro com desenho de dinossauro!" },
+                { "id": "traga", "label": "Traga o papai, a mamãe ou quem cuida de você." },
+                { "id": "entrada", "label": "A entrada é gratuita." }
+              ],
+              "expectedIds": ["oi", "almofada", "traga"],
+              "hints": ["Veja como o texto chama o leitor logo na primeira frase.", "Quem precisa levar “o papai, a mamãe ou quem cuida de você”?"],
+              "explanation": "“Oi, criançada!” chama o leitor diretamente; “almofada fofinha” e “desenho de dinossauro” são vocabulário e assunto escolhidos para crianças; “Traga o papai, a mamãe ou quem cuida de você” supõe um leitor que depende de um adulto. Horário, local e entrada gratuita serviriam para qualquer público."
+            }
+          ]
         }
+      ],
+      "integration": [
+        {
+          "type": "classification",
+          "conceptIds": ["POR.GENRE.IDENTIFY", "POR.CONTEXT.SITUATION", "POR.AUDIENCE.EFFECT"],
+          "title": "Bilhete, aviso no mural e post: o que muda?",
+          "instructions": "Volte aos três textos do começo da aula sobre a biblioteca. Classifique cada elemento.",
+          "items": [
+            { "id": "informacao", "label": "A informação: a biblioteca fecha mais cedo na sexta" },
+            { "id": "genero", "label": "O gênero do texto" },
+            { "id": "suporte", "label": "O lugar onde o texto aparece" },
+            { "id": "leitor", "label": "Quem vai ler" },
+            { "id": "linguagem", "label": "A linguagem: mais formal ou com emoji" }
+          ],
+          "destinations": [
+            { "id": "igual", "label": "Fica igual nos três" },
+            { "id": "muda", "label": "Muda de um texto para outro" }
+          ],
+          "expected": { "informacao": "igual", "genero": "muda", "suporte": "muda", "leitor": "muda", "linguagem": "muda" },
+          "hints": ["Releia o começo da aula: o que os três textos têm em comum?", "Um bilhete fica na geladeira; um post fica no perfil da escola. Quem lê cada um?"],
+          "explanation": "Só a informação se repete. O gênero (bilhete, aviso, post), o suporte (geladeira, mural, rede social), quem lê (família, quem passa pela escola, seguidores) e a linguagem mudam conforme a situação."
+        },
+        { "type": "prediction", "title": "Volte à sua previsão", "content": "No começo da aula você pensou se o bilhete, o aviso e o post seriam o mesmo texto. Não são: a informação é a mesma, mas mudam o gênero, o suporte, quem escreve, quem lê e a linguagem. Cada situação pede um texto. Sua previsão bateu?" }
       ],
       "summary": "Gênero é o modelo do texto (notícia, receita, bilhete); suporte é onde ele aparece (jornal, site, mural).\nFinalidade é para que o texto foi escrito; tema é sobre o que ele fala.\nEm textos multimodais, o sentido nasce da relação entre palavra e imagem: leia as duas.\nSituação de comunicação: quem escreve, para quem, onde e quando. “Hoje” e “amanhã” dependem dela.\nAutor é a pessoa real; narrador, eu lírico e personagens são vozes dentro do texto. Aspas mostram vozes citadas.\nO público-alvo aparece nas escolhas de vocabulário e tom; todo efeito precisa de uma prova no texto.",
       "questions": [

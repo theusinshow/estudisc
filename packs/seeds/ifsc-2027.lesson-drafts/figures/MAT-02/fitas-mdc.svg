@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 410" font-family="Archivo, Arial, Helvetica, sans-serif">
+  <rect width="640" height="410" fill="#FFFCF5"/>
+  <text x="32" y="44" font-size="26" font-weight="800" fill="#17141F">Pedaços de 30 cm, sem sobra</text>
+  <text x="80" y="94" font-size="20" font-weight="800" fill="#17141F">Fita de 90 cm: 3 pedaços</text>
+  <rect x="80" y="108" width="360" height="48" fill="#FFD43B" stroke="#17141F" stroke-width="3"/>
+  <text x="80" y="200" font-size="20" font-weight="800" fill="#17141F">Fita de 120 cm: 4 pedaços</text>
+  <rect x="80" y="214" width="480" height="48" fill="#FFD43B" stroke="#17141F" stroke-width="3"/>
+  <g stroke="#17141F" stroke-width="3">
+    <line x1="200" y1="108" x2="200" y2="156"/><line x1="320" y1="108" x2="320" y2="156"/>
+    <line x1="200" y1="214" x2="200" y2="262"/><line x1="320" y1="214" x2="320" y2="262"/><line x1="440" y1="214" x2="440" y2="262"/>
+  </g>
+  <g font-size="19" font-weight="700" fill="#17141F" text-anchor="middle">
+    <text x="140" y="139">30 cm</text><text x="260" y="139">30 cm</text><text x="380" y="139">30 cm</text>
+    <text x="140" y="245">30 cm</text><text x="260" y="245">30 cm</text><text x="380" y="245">30 cm</text><text x="500" y="245">30 cm</text>
+  </g>
+  <text x="80" y="320" font-size="20" font-weight="800" fill="#C8321F">E pedaços de 40 cm na fita de 90 cm?</text>
+  <rect x="80" y="334" width="160" height="48" fill="#8FDCFF" stroke="#17141F" stroke-width="3"/>
+  <rect x="240" y="334" width="160" height="48" fill="#8FDCFF" stroke="#17141F" stroke-width="3"/>
+  <rect x="400" y="334" width="40" height="48" fill="#C8321F" stroke="#17141F" stroke-width="3"/>
+  <g font-size="19" font-weight="700" fill="#17141F" text-anchor="middle"><text x="160" y="365">40 cm</text><text x="320" y="365">40 cm</text></g>
+  <text x="452" y="365" font-size="19" font-weight="800" fill="#C8321F">sobram 10 cm</text>
+</svg>

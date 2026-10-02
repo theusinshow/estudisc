@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 700" font-family="Archivo, Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#17141F"/></marker>
+  </defs>
+  <rect width="640" height="700" fill="#FFFCF5"/>
+  <text x="24" y="40" font-size="24" font-weight="800" fill="#17141F">Onde cada grupo se concentrou</text>
+  <text x="24" y="68" font-size="18" font-weight="700" fill="#C8321F">Esquema, sem escala e sem limites reais</text>
+  <text x="24" y="106" font-size="18" font-weight="800" fill="#17141F">Oeste</text>
+  <line x1="88" y1="100" x2="500" y2="100" stroke="#17141F" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="616" y="106" font-size="18" font-weight="800" fill="#17141F" text-anchor="end">Leste, mar</text>
+  <g fill="none" stroke="#17141F" stroke-width="3">
+    <rect x="24" y="122" width="192" height="354" rx="12"/>
+    <rect x="224" y="122" width="192" height="354" rx="12"/>
+    <rect x="424" y="122" width="192" height="354" rx="12"/>
+  </g>
+  <g font-size="19" font-weight="800" fill="#17141F" text-anchor="middle">
+    <text x="120" y="154">Oeste e planalto</text>
+    <text x="320" y="154">Vale do Itajaí</text>
+    <text x="520" y="154">Litoral</text>
+  </g>
+  <g stroke="#17141F" stroke-width="2">
+    <rect x="32" y="168" width="176" height="92" rx="10" fill="#14804A"/>
+    <rect x="232" y="168" width="176" height="92" rx="10" fill="#14804A"/>
+    <rect x="432" y="168" width="176" height="92" rx="10" fill="#14804A"/>
+    <rect x="232" y="270" width="176" height="92" rx="10" fill="#FFD43B"/>
+    <rect x="232" y="372" width="176" height="92" rx="10" fill="#FFD43B"/>
+    <rect x="432" y="270" width="176" height="92" rx="10" fill="#FFD43B"/>
+    <rect x="432" y="372" width="176" height="92" rx="10" fill="#FFD43B"/>
+  </g>
+  <g fill="#FFFCF5" text-anchor="middle">
+    <text x="120" y="196" font-size="19" font-weight="800">Kaingang</text><text x="120" y="222" font-size="17" font-weight="700">ex.: TI Xapecó</text><text x="120" y="248" font-size="17" font-weight="700">vivem hoje</text>
+    <text x="320" y="196" font-size="18" font-weight="800">Laklãnõ/Xokleng</text><text x="320" y="222" font-size="17" font-weight="700">TI Ibirama-Laklãnõ</text><text x="320" y="248" font-size="17" font-weight="700">vivem hoje</text>
+    <text x="520" y="196" font-size="19" font-weight="800">Guarani</text><text x="520" y="222" font-size="17" font-weight="700">sobretudo aqui</text><text x="520" y="248" font-size="17" font-weight="700">vivem hoje</text>
+  </g>
+  <g fill="#17141F" text-anchor="middle">
+    <text x="320" y="298" font-size="19" font-weight="800">Alemães</text><text x="320" y="324" font-size="17" font-weight="700">século XIX</text><text x="320" y="350" font-size="17" font-weight="700">ex.: Blumenau, 1850</text>
+    <text x="320" y="400" font-size="19" font-weight="800">Italianos</text><text x="320" y="426" font-size="17" font-weight="700">a partir da</text><text x="320" y="452" font-size="17" font-weight="700">década de 1870</text>
+    <text x="520" y="298" font-size="19" font-weight="800">Vicentistas</text><text x="520" y="324" font-size="17" font-weight="700">século XVII</text><text x="520" y="350" font-size="17" font-weight="700">ex.: Laguna</text>
+    <text x="520" y="400" font-size="19" font-weight="800">Açorianos</text><text x="520" y="426" font-size="17" font-weight="700">cerca de</text><text x="520" y="452" font-size="17" font-weight="700">1748 a 1756</text>
+  </g>
+  <text x="24" y="512" font-size="19" font-weight="800" fill="#17141F">Também:</text>
+  <g stroke="#17141F" stroke-width="2" fill="#FFD43B">
+    <rect x="24" y="526" width="288" height="92" rx="10"/>
+    <rect x="328" y="526" width="288" height="92" rx="10"/>
+  </g>
+  <g fill="#17141F">
+    <text x="40" y="554" font-size="19" font-weight="800">Sul do estado</text><text x="40" y="580" font-size="17" font-weight="700">Italianos, a partir da</text><text x="40" y="604" font-size="17" font-weight="700">década de 1870</text>
+    <text x="344" y="554" font-size="19" font-weight="800">Joinville</text><text x="344" y="580" font-size="17" font-weight="700">Alemães: Colônia Dona</text><text x="344" y="604" font-size="17" font-weight="700">Francisca, 1851</text>
+  </g>
+  <rect x="24" y="640" width="26" height="20" rx="4" fill="#14804A" stroke="#17141F" stroke-width="2"/>
+  <text x="60" y="657" font-size="17" font-weight="700" fill="#17141F">Povos indígenas: onde vivem hoje</text>
+  <rect x="24" y="670" width="26" height="20" rx="4" fill="#FFD43B" stroke="#17141F" stroke-width="2"/>
+  <text x="60" y="687" font-size="17" font-weight="700" fill="#17141F">Colonização e imigração: época de chegada</text>
+</svg>

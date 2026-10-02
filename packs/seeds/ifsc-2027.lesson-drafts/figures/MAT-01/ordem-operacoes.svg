@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 570" font-family="Archivo, Arial, Helvetica, sans-serif">
+  <rect width="640" height="570" fill="#FFFCF5"/>
+  <text x="32" y="48" font-size="26" font-weight="800" fill="#17141F">A ordem combinada das contas</text>
+  <g stroke="#17141F" stroke-width="3">
+    <rect x="32" y="72" width="576" height="50" rx="12" fill="#FFD43B"/>
+    <rect x="32" y="132" width="576" height="50" rx="12" fill="#FFA552"/>
+    <rect x="32" y="192" width="576" height="50" rx="12" fill="#8FDCFF"/>
+    <rect x="32" y="252" width="576" height="50" rx="12" fill="#FFFCF5"/>
+  </g>
+  <g stroke="#17141F" stroke-width="2.5" fill="#FFFCF5">
+    <circle cx="62" cy="97" r="17"/><circle cx="62" cy="157" r="17"/><circle cx="62" cy="217" r="17"/><circle cx="62" cy="277" r="17"/>
+  </g>
+  <g font-size="20" font-weight="800" fill="#17141F" text-anchor="middle"><text x="62" y="104">1</text><text x="62" y="164">2</text><text x="62" y="224">3</text><text x="62" y="284">4</text></g>
+  <g font-size="20" font-weight="700" fill="#17141F">
+    <text x="92" y="104">Parênteses ( ), colchetes [ ], chaves { }</text>
+    <text x="92" y="164">Potências e raízes</text>
+    <text x="92" y="224">× e ÷, da esquerda para a direita</text>
+    <text x="92" y="284">+ e −, da esquerda para a direita</text>
+  </g>
+  <text x="32" y="352" font-size="22" font-weight="800" fill="#17141F">Exemplo</text>
+  <g font-size="24" font-weight="800" fill="#17141F">
+    <text x="32" y="396">20 − 3 × (4 − 6)</text>
+    <text x="32" y="446">= 20 − 3 × (−2)</text>
+    <text x="32" y="496">= 20 − (−6)</text>
+    <text x="32" y="546">= 26</text>
+  </g>
+  <g stroke="#17141F" stroke-width="2.5">
+    <rect x="276" y="422" width="332" height="34" rx="10" fill="#FFD43B"/>
+    <rect x="276" y="472" width="332" height="34" rx="10" fill="#8FDCFF"/>
+    <rect x="276" y="522" width="332" height="34" rx="10" fill="#FFFCF5"/>
+  </g>
+  <g font-size="18" font-weight="700" fill="#17141F">
+    <text x="290" y="445">1: parênteses, 4 − 6 = −2</text>
+    <text x="290" y="495">3: multiplicação, 3 × (−2) = −6</text>
+    <text x="290" y="545">4: subtração, 20 + 6 = 26</text>
+  </g>
+</svg>

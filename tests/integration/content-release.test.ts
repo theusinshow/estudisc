@@ -12,7 +12,9 @@ it("locks an immutable author/hash, requires four independent layers, and reuses
     expect((await importTrackPack(fixture,new DrizzleTrackImportRepository(database.db,"author"))).status).toBe("imported");
     const repo=new ContentQaRepository(database.db);const release=(await repo.list()).find(r=>r.stableId==="Q-MAT-GOLDEN-3")!;
     const review={layer:"FACTUAL",verdict:"APPROVE",rationale:"Disposable fixture validates release policy only.",findings:[]};
-    await expect(repo.review("author",release.id,review)).rejects.toThrow("Independent");
+    // ADR 0033: the generated item is attributed to its AI authoring run, not to the importer.
+    expect(release.authorId).toBe("ai:ifsc-golden-author-v1");
+    await expect(repo.review("ai:ifsc-golden-author-v1",release.id,review)).rejects.toThrow("Independent");
     await expect(repo.publish(release.id)).rejects.toThrow("QA blocks");
     for(const layer of qaLayers)await repo.review("reviewer",release.id,{...review,layer});
     expect(await repo.publish(release.id)).toEqual({published:true});

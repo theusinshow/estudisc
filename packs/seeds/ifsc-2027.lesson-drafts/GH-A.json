@@ -37,7 +37,34 @@
           "examples": [
             { "title": "Uma praia, quatro lentes", "content": "1. Paisagem: areia, morro, barcos coloridos e o barulho do mar.\n2. Lugar: para a família de pescadores, é onde aprenderam o ofício e se encontram todo dia.\n3. Território: a faixa de areia é disputada entre os pescadores e um empreendimento que quer cercá-la.\n4. Região: a praia faz parte do litoral, área definida por critérios naturais e econômicos." }
           ],
-          "pitfall": { "title": "Paisagem não é só natureza", "content": "Uma avenida cheia de prédios também é paisagem: paisagem é o que se percebe, natural ou construído. E território não é sinônimo de país — qualquer espaço marcado por relações de poder pode ser território." }
+          "pitfall": { "title": "Paisagem não é só natureza", "content": "Uma avenida cheia de prédios também é paisagem: paisagem é o que se percebe, natural ou construído. E território não é sinônimo de país — qualquer espaço marcado por relações de poder pode ser território." },
+          "extras": [
+            {
+              "type": "classification",
+              "afterExample": 1,
+              "title": "Qual lente da Geografia aparece em cada situação?",
+              "instructions": "Veja o foco de cada frase: aparência, vivência, poder ou semelhança por critério.",
+              "items": [
+                { "id": "ondas", "label": "O barulho das ondas, os barcos coloridos e o morro verde vistos da orla" },
+                { "id": "avenida", "label": "Uma avenida cheia de prédios, carros e o ruído do trânsito" },
+                { "id": "pracinha", "label": "A pracinha onde um senhor joga dominó com os amigos há 40 anos" },
+                { "id": "escola", "label": "A escola onde você fez amigos e guarda lembranças" },
+                { "id": "areia", "label": "Pescadores e um hotel disputando quem pode usar a mesma faixa de areia" },
+                { "id": "fronteira", "label": "A fronteira entre dois países, com postos que controlam quem passa" },
+                { "id": "economia", "label": "Municípios agrupados por terem a mesma atividade econômica principal" },
+                { "id": "clima", "label": "Uma área formada por lugares com clima parecido" }
+              ],
+              "destinations": [
+                { "id": "paisagem", "label": "Paisagem (o que se percebe)" },
+                { "id": "lugar", "label": "Lugar (o que se vive)" },
+                { "id": "territorio", "label": "Território (poder e limites)" },
+                { "id": "regiao", "label": "Região (semelhança por critério)" }
+              ],
+              "expected": { "ondas": "paisagem", "avenida": "paisagem", "pracinha": "lugar", "escola": "lugar", "areia": "territorio", "fronteira": "territorio", "economia": "regiao", "clima": "regiao" },
+              "hints": ["A frase descreve o que se vê e se ouve, conta um vínculo, fala de quem manda ou agrupa por critério?", "Uma avenida cheia de prédios também é paisagem: paisagem não é só natureza."],
+              "explanation": "Ondas, barcos e a avenida são paisagem: o que os sentidos percebem, natural ou construído. A pracinha e a escola são lugares, espaços vividos. A disputa pela areia e a fronteira controlada envolvem poder: território. Agrupar por atividade econômica ou por clima é definir região por um critério."
+            }
+          ]
         },
         {
           "conceptId": "GH.CARTO.REPRESENTATION",
@@ -48,7 +75,11 @@
             { "title": "Lendo um mapa sem pressa", "content": "Mapa fictício: “Uso da terra em um município”.\n1. Título: o tema é como a terra é usada.\n2. Legenda: verde é mata, amarelo é lavoura, cinza é área urbana.\n3. Orientação: a seta mostra o norte para cima.\n4. Só agora responda à pergunta, por exemplo: a área urbana fica ao norte ou ao sul do rio?" },
             { "title": "Groenlândia gigante?", "content": "1. No mapa de Mercator, a Groenlândia parece quase do tamanho da África.\n2. Na realidade, a África é mais de dez vezes maior.\n3. Isso acontece porque Mercator estica as áreas das altas latitudes, perto dos polos.\n4. Conclusão: a projeção escolhida muda a impressão que o mapa passa." }
           ],
-          "pitfall": { "title": "Norte nem sempre está em cima", "content": "Colocar o norte no alto do mapa é uma convenção, não uma regra da natureza. Sempre confira a seta de orientação ou a rosa dos ventos antes de responder sobre direções." }
+          "pitfall": { "title": "Norte nem sempre está em cima", "content": "Colocar o norte no alto do mapa é uma convenção, não uma regra da natureza. Sempre confira a seta de orientação ou a rosa dos ventos antes de responder sobre direções." },
+          "extras": [
+            { "type": "figure", "afterExample": 1, "file": "GH-01/mapa-escala.svg", "alt": "Mapa fictício do uso da terra em um município, com título, legenda, seta do norte e escalas numérica e gráfica", "caption": "Antes de responder, leia título, legenda, orientação e escala. Aqui, a área urbana fica ao norte do rio.", "longDescription": "Mapa fictício com o título “Uso da terra em um município”.\nLegenda: verde é mata, amarelo é lavoura, cinza é área urbana, a faixa azul é o rio, o círculo preto é a sede e o círculo vermelho é a escola.\nOrientação: uma seta no canto superior direito aponta o norte para cima.\nO rio corta o mapa de oeste para leste, pelo meio. A área urbana, com a sede, fica a noroeste, ao norte do rio. A mata fica ao sul do rio, a sudoeste. O restante é lavoura. A escola fica a leste da sede, também ao norte do rio.\nEscala numérica: 1:100.000. Escala gráfica: uma barra de 0 a 3 km, dividida em três partes; cada parte mede 1 cm no mapa impresso e vale 1 km.\nUma linha tracejada liga a sede à escola e mede 3 cm no mapa. Pela escala, a distância real em linha reta é 3 km.\nFonte: ilustração própria, dados fictícios." },
+            { "type": "figure", "afterExample": 2, "file": "GH-01/mercator.svg", "alt": "Esquema comparando Groenlândia e África no mapa de Mercator e em áreas reais", "caption": "Na projeção de Mercator, a Groenlândia parece quase do tamanho da África; na realidade, a África é mais de dez vezes maior.", "longDescription": "Esquema sem escala, com formas simplificadas (ovais), não com os contornos reais.\nÀ esquerda, “No mapa de Mercator”: a Groenlândia e a África aparecem como ovais quase do mesmo tamanho.\nÀ direita, “Áreas reais”: a oval da Groenlândia é pequena e a da África é muito maior, porque a área da África é mais de dez vezes a da Groenlândia.\nExplicação: a projeção de Mercator conserva as formas, mas estica as áreas perto dos polos, onde fica a Groenlândia." }
+          ]
         },
         {
           "conceptId": "GH.CARTO.INTERPRET",
@@ -59,7 +90,22 @@
             { "title": "De centímetros a quilômetros", "content": "Num mapa 1:250.000, duas cidades estão a 6 cm.\n1. Multiplique: 6 × 250.000 = 1.500.000 cm.\n2. Converta: 1.500.000 ÷ 100.000 = 15.\nResposta: 15 km." },
             { "title": "O caminho inverso", "content": "Uma estrada real tem 20 km. Quantos centímetros ela terá num mapa 1:500.000?\n1. Converta: 20 km = 2.000.000 cm.\n2. Divida pelo denominador: 2.000.000 ÷ 500.000 = 4.\nResposta: 4 cm." }
           ],
-          "pitfall": { "title": "Escala grande não é número grande", "content": "Quanto maior o denominador, menor a escala. 1:10.000 é uma escala maior que 1:1.000.000, porque reduz menos a realidade e mostra mais detalhes." }
+          "pitfall": { "title": "Escala grande não é número grande", "content": "Quanto maior o denominador, menor a escala. 1:10.000 é uma escala maior que 1:1.000.000, porque reduz menos a realidade e mostra mais detalhes." },
+          "extras": [
+            {
+              "type": "guided-steps",
+              "afterExample": 1,
+              "title": "Outro caminho para o mesmo mapa: 6 cm em 1:250.000",
+              "instructions": "Responda cada passo com um número inteiro, sem unidade e sem pontos.",
+              "steps": [
+                { "id": "dois-cm", "prompt": "Em 1:250.000, 2 cm no mapa valem 500.000 cm reais. Como 100.000 cm = 1 km, quantos km são 500.000 cm?", "expected": 5 },
+                { "id": "grupos", "prompt": "Quantos grupos de 2 cm cabem em 6 cm?", "expected": 3 },
+                { "id": "distancia", "prompt": "Se cada grupo de 2 cm vale 5 km, quantos km valem os 6 cm?", "expected": 15 }
+              ],
+              "hints": ["Divida 500.000 por 100.000.", "Cada grupo de 2 cm vale 5 km; multiplique pelo número de grupos."],
+              "explanation": "500.000 cm ÷ 100.000 = 5 km, então 2 cm do mapa valem 5 km. Em 6 cm cabem 3 grupos de 2 cm: 3 × 5 = 15 km. É o mesmo resultado do exemplo, que fez 6 × 250.000 = 1.500.000 cm = 15 km."
+            }
+          ]
         },
         {
           "conceptId": "GH.GRAPHIC.ICONOGRAPHIC",
@@ -90,7 +136,27 @@
             { "title": "Em que século?", "content": "Em que século está o ano de 1748?\n1. Corte os dois últimos algarismos: 17.\n2. O ano não termina em 00, então some 1: 18.\nResposta: século XVIII." },
             { "title": "Calculando uma duração", "content": "Uma colônia foi fundada em 1829 e outra em 1850. Quanto tempo separa as duas fundações?\n1. Subtraia o ano mais antigo do mais recente: 1850 − 1829.\n2. Resultado: 21 anos.\n3. Repare: as duas datas estão no mesmo século, o XIX." }
           ],
-          "pitfall": { "title": "1900 ainda é século XIX", "content": "O século XX começa em 1901, não em 1900. Anos terminados em 00 fecham um século. E, nas datas a.C., quanto maior o número, mais antigo é o ano: 500 a.C. é anterior a 100 a.C." }
+          "pitfall": { "title": "1900 ainda é século XIX", "content": "O século XX começa em 1901, não em 1900. Anos terminados em 00 fecham um século. E, nas datas a.C., quanto maior o número, mais antigo é o ano: 500 a.C. é anterior a 100 a.C." },
+          "extras": [
+            { "type": "figure", "file": "GH-01/seculos.svg", "alt": "Linha do tempo com os séculos XVIII, XIX e XX e os anos 1748, 1850, 1888 e 1900 marcados", "caption": "Cada século vai do ano terminado em 01 até o terminado em 00: 1900 ainda é século XIX.", "longDescription": "Linha do tempo de 1701 a 2000, com as posições proporcionais aos anos, dividida em três faixas.\nSéculo XVIII: de 1701 a 1800. Nele está marcado o ano de 1748.\nSéculo XIX: de 1801 a 1900. Nele estão marcados 1850, 1888 e 1900. O ponto de 1900 fica no fim da faixa do século XIX, logo antes do início do século XX.\nSéculo XX: de 1901 a 2000.\nDestaque: 1900 ainda é século XIX; o século XX só começa em 1901." },
+            {
+              "type": "ordering",
+              "afterExample": 2,
+              "title": "Coloque os anos em ordem cronológica",
+              "instructions": "Do mais antigo, no alto, ao mais recente, embaixo.",
+              "items": [
+                { "id": "a1894", "label": "1894: Desterro passa a se chamar Florianópolis" },
+                { "id": "a100ac", "label": "100 a.C." },
+                { "id": "a1829", "label": "1829" },
+                { "id": "a1900", "label": "1900: último ano do século XIX" },
+                { "id": "a500ac", "label": "500 a.C." },
+                { "id": "a1748", "label": "1748" }
+              ],
+              "expectedOrder": ["a500ac", "a100ac", "a1748", "a1829", "a1894", "a1900"],
+              "hints": ["Datas antes de Cristo vêm antes de todas as datas depois de Cristo.", "Nas datas a.C., quanto maior o número, mais antigo é o ano."],
+              "explanation": "Primeiro as datas a.C., da maior para a menor: 500 a.C. e depois 100 a.C. Em seguida, as datas d.C. em ordem crescente: 1748, 1829, 1894 e 1900."
+            }
+          ]
         },
         {
           "conceptId": "GH.HIST.MEMORY",
@@ -110,7 +176,32 @@
           "examples": [
             { "title": "Interrogando uma carta", "content": "Carta fictícia de 1860: o diretor de uma colônia escreve ao governo pedindo mais verbas e dizendo que “tudo vai bem”.\n1. Quem escreveu: o responsável pela colônia.\n2. Para quem: o governo, que financiava a colônia.\n3. Objetivo: conseguir recursos e mostrar bom trabalho.\n4. Cuidado: ele tinha motivos para esconder problemas. É preciso comparar com outras fontes, como cartas de colonos." }
           ],
-          "pitfall": { "title": "Antigo não quer dizer verdadeiro", "content": "Uma fonte da época é valiosa, mas carrega o ponto de vista de quem a fez. Documento oficial também tem autor e intenção." }
+          "pitfall": { "title": "Antigo não quer dizer verdadeiro", "content": "Uma fonte da época é valiosa, mas carrega o ponto de vista de quem a fez. Documento oficial também tem autor e intenção." },
+          "extras": [
+            { "type": "figure", "afterExample": 1, "file": "GH-01/interrogar-fonte.svg", "alt": "Cartão com as perguntas para interrogar uma fonte, aplicadas a uma carta fictícia de 1860", "caption": "Toda fonte tem autor, época, destinatário e intenção. Pergunte antes de acreditar.", "longDescription": "Cartão “Interrogue a fonte”, aplicado a uma carta fictícia de 1860 em que o diretor de uma colônia escreve ao governo.\nQuem produziu? O diretor da colônia.\nQuando? Em 1860.\nPara quem? O governo, que financiava a colônia.\nPor quê? Para pedir verbas e mostrar bom trabalho.\nO que ela pode calar? Problemas da colônia. Por isso, compare com outras fontes, como cartas de colonos." },
+            {
+              "type": "classification",
+              "afterExample": 1,
+              "title": "Fonte primária ou secundária?",
+              "instructions": "Primária: produzida na época estudada ou por quem viveu o fato. Secundária: produzida depois, analisando outras fontes. O tema é a vida em uma colônia do século XIX.",
+              "items": [
+                { "id": "diario", "label": "Diário escrito por uma colona em 1875" },
+                { "id": "foto", "label": "Fotografia da sede da colônia tirada em 1890" },
+                { "id": "lei", "label": "Lei de 1860 sobre a venda de lotes aos colonos" },
+                { "id": "entrevista", "label": "Entrevista gravada com uma pessoa que viveu na colônia, contando o que viu" },
+                { "id": "livro", "label": "Livro didático de 2020 sobre a imigração" },
+                { "id": "documentario", "label": "Documentário de 2015 que analisa cartas da colônia" },
+                { "id": "artigo", "label": "Artigo de uma historiadora que compara relatórios do governo" }
+              ],
+              "destinations": [
+                { "id": "primaria", "label": "Fonte primária" },
+                { "id": "secundaria", "label": "Fonte secundária" }
+              ],
+              "expected": { "diario": "primaria", "foto": "primaria", "lei": "primaria", "entrevista": "primaria", "livro": "secundaria", "documentario": "secundaria", "artigo": "secundaria" },
+              "hints": ["Pergunte: foi feita na época ou por quem viveu o fato?", "Um relato oral de quem viveu o fato é fonte primária, mesmo gravado depois."],
+              "explanation": "Diário, fotografia e lei foram produzidos na época; a entrevista é o relato de quem viveu o fato. Todos são fontes primárias. O livro didático, o documentário e o artigo foram feitos depois, analisando outras fontes: são secundárias."
+            }
+          ]
         }
       ],
       "summary": "Espaço geográfico é a natureza transformada pela sociedade ao longo do tempo.\nPaisagem é o que se percebe; lugar, o que se vive; território, o que se controla; região, o que se agrupa por critério.\nMapa tem título, legenda, escala, orientação e fonte; toda projeção distorce algo.\nDistância real = distância no mapa × denominador; 1:100.000 significa 1 cm = 1 km.\nEm gráficos e tabelas, leia título, eixos, unidades e fonte antes de concluir.\nHistória é conhecimento construído com fontes e evidências; interpretações mudam com novas fontes.\nSéculo XIX = 1801 a 1900; cronologia ordena, duração mede.\nMemória é seletiva e disputada; a História a analisa criticamente.\nToda fonte tem autor, época e intenção: pergunte quem, quando, para quem e por quê.",
@@ -134,6 +225,10 @@
         { "conceptIds": ["GH.CARTO.INTERPRET", "GH.CARTO.REPRESENTATION"], "type": "num", "difficulty": "ifsc", "ops": ["interpret", "calculate"], "stimulus": "Mapa (descrito em palavras), com título “Municípios do vale: rede de estradas”. Legenda: linha vermelha contínua = rodovia estadual; linha tracejada = estrada de terra; círculo preto = sede de município. Uma seta indica o norte para cima. Escala numérica: 1:200.000. No mapa, a sede do município B fica 6 cm ao norte da sede do município A, medidos em linha reta.", "stem": "Qual é a distância real, em linha reta, entre as sedes de A e B, em quilômetros?", "value": 12, "unit": "km", "explanation": "6 × 200.000 = 1.200.000 cm. Dividindo por 100.000 (cm em 1 km), a distância real é 12 km. A legenda e a seta ajudam a localizar as sedes, mas o cálculo usa a escala.", "hints": ["Qual elemento do mapa permite converter centímetros em quilômetros?", "Multiplique a medida no mapa pelo denominador da escala.", "6 × 200.000 = 1.200.000 cm. Agora converta para quilômetros."], "exit": true },
         { "conceptIds": ["GH.HIST.SOURCE", "GH.HIST.HISTORIOGRAPHY"], "type": "mc", "difficulty": "ifsc", "ops": ["evaluate", "compare"], "stimulus": "Texto 1 — trecho fictício de relatório de um diretor de colônia ao governo provincial, em 1860 (elaborado para esta questão): “Os colonos prosperam, a mata recua e a terra, antes deserta, já produz milho e mandioca. Peço novas verbas para abrir estradas.”\n\nTexto 2 — síntese de pesquisas históricas: registros de conflitos mostram que, na mesma época, povos indígenas viviam e circulavam pela região onde as colônias se instalavam.", "stem": "Ao comparar os textos, um historiador deve concluir que:", "choices": ["o relatório é neutro e confiável, por ser um documento oficial escrito por quem viveu na época.", "o Texto 2 deve ser descartado, pois foi produzido muito depois dos fatos que analisa.", "o relatório tem interesses próprios, e a terra “deserta” deve ser confrontada com outras fontes.", "como as fontes discordam, é impossível saber qualquer coisa segura sobre aquele passado.", "a região estava mesmo vazia, já que o diretor conhecia a colônia e viveu naquela época."], "correct": 2, "explanation": "O diretor queria verbas e tinha interesse em mostrar sucesso. Chamar a terra de “deserta” apaga a presença indígena registrada em outras fontes. Ser da época não torna uma fonte neutra.", "hints": ["Pergunte ao Texto 1: quem escreveu, para quem e com que objetivo?", "Um documento oficial da época pode ter interesses próprios?"], "exit": true },
         { "conceptIds": ["GH.GRAPHIC.ICONOGRAPHIC", "GH.GEO.SPACE"], "type": "mc", "difficulty": "ifsc", "ops": ["interpret", "analyze"], "stimulus": "Tabela (dados fictícios): população de um município catarinense, em mil habitantes.\n1970 — urbana: 8; rural: 22.\n1990 — urbana: 20; rural: 15.\n2020 — urbana: 41; rural: 9.", "stem": "A leitura da tabela permite afirmar que, entre 1970 e 2020:", "choices": ["a população total do município diminuiu, acompanhando a queda rural.", "a população rural cresceu em todos os períodos, junto com a urbana.", "a população urbana já era maioria em 1970 e continuou crescendo.", "a população urbana passou a ser maioria, enquanto a rural diminuiu.", "as populações urbana e rural cresceram no mesmo ritmo nos dois períodos."], "correct": 3, "explanation": "Em 1970, a maioria era rural (22 mil contra 8 mil). Em 1990, a urbana já era maior (20 mil contra 15 mil) e, em 2020, chegou a 41 mil, enquanto a rural caiu para 9 mil. O total cresceu de 30 mil para 50 mil.", "hints": ["Compare urbana e rural em cada ano, uma linha de cada vez.", "Some urbana + rural para ver o total em 1970 e em 2020."], "exit": true }
+      ],
+      "opening": { "title": "Antes de começar", "content": "Volte ao começo: o mapa no celular, a foto antiga da rua e o relato da sua avó. Algum deles mostra o bairro exatamente como ele é, sem nenhuma escolha de quem o fez? Pense numa resposta e guarde. No fim da aula, você vai conferir se acertou." },
+      "integration": [
+        { "type": "prediction", "title": "Volte à sua previsão", "content": "No começo, você pensou se o mapa, a foto ou o relato da avó mostram o bairro sem nenhuma escolha. Nenhum mostra: o mapa escolhe escala, projeção e legenda; a foto escolhe um enquadramento; a memória é seletiva e cheia de afeto. Isso não os torna inúteis. Cada um vira uma boa fonte quando você pergunta quem produziu, quando, para quem e por quê, e compara com outras. Sua previsão bateu?" }
       ]
     },
     {
@@ -189,7 +284,27 @@
           "examples": [
             { "title": "Por que o governo trouxe imigrantes?", "content": "1. Ocupar terras no sul do país.\n2. Produzir alimentos em pequenas propriedades.\n3. Substituir a mão de obra escravizada, à medida que a escravidão era combatida.\n4. Atender a uma ideologia de branqueamento da população.\n5. Consequência: avanço sobre terras indígenas, como as dos Xokleng no Vale do Itajaí." }
           ],
-          "pitfall": { "title": "Nem “terra vazia”, nem “colonização harmoniosa”", "content": "Frases como “os imigrantes desbravaram a mata virgem” escondem que havia povos vivendo ali. Reconhecer o trabalho e as dificuldades dos imigrantes não exige apagar a violência contra os indígenas." }
+          "pitfall": { "title": "Nem “terra vazia”, nem “colonização harmoniosa”", "content": "Frases como “os imigrantes desbravaram a mata virgem” escondem que havia povos vivendo ali. Reconhecer o trabalho e as dificuldades dos imigrantes não exige apagar a violência contra os indígenas." },
+          "extras": [
+            { "type": "figure", "file": "GH-02/grupos-esquema.svg", "alt": "Esquema, sem escala, de onde se concentraram povos indígenas e grupos de colonizadores em Santa Catarina", "caption": "Esquema sem escala e sem limites reais: os povos indígenas vivem hoje em várias regiões, e cada grupo de colonizadores chegou em uma época.", "longDescription": "Esquema sem escala e sem limites reais. Não é um mapa: são caixas organizadas de oeste para leste, até o mar.\nOeste e planalto: Kaingang, que vivem hoje na região, por exemplo na Terra Indígena Xapecó.\nVale do Itajaí: Laklãnõ/Xokleng, que vivem hoje na Terra Indígena Ibirama-Laklãnõ; alemães, no século XIX, por exemplo em Blumenau (1850); italianos, a partir da década de 1870.\nLitoral: Guarani, que vivem hoje sobretudo no litoral; vicentistas, no século XVII, em núcleos como Laguna; açorianos, entre cerca de 1748 e 1756.\nTambém: no sul do estado, italianos a partir da década de 1870; em Joinville, alemães da Colônia Dona Francisca (1851).\nLegenda: caixas verdes são povos indígenas, no lugar onde vivem hoje; caixas amarelas são grupos da colonização e da imigração, com a época de chegada." },
+            {
+              "type": "text-highlight",
+              "afterExample": 1,
+              "title": "Quais trechos apagam a presença indígena?",
+              "instructions": "Anúncio fictício de uma companhia de colonização, escrito para esta atividade no estilo das propagandas do século XIX. Ele aparece dividido em trechos, na ordem. Marque todos os trechos que fazem parecer que ninguém vivia na terra.",
+              "items": [
+                { "id": "chamada", "label": "Famílias trabalhadoras, venham para o Sul do Brasil!" },
+                { "id": "sertao", "label": "Um sertão sem dono espera pelo arado." },
+                { "id": "lotes", "label": "Lotes medidos, pagos em prestações." },
+                { "id": "ninguem", "label": "Nessas matas nenhuma alma jamais morou." },
+                { "id": "escola", "label": "Escola e igreja serão erguidas na sede da colônia." },
+                { "id": "primeiros", "label": "Sejam os primeiros a pisar nessa terra intocada!" }
+              ],
+              "expectedIds": ["sertao", "ninguem", "primeiros"],
+              "hints": ["Procure os trechos que dizem que a terra não tinha dono ou habitantes.", "Promessas de lotes, escola e igreja podem não ser cumpridas, mas não falam sobre quem já vivia ali."],
+              "explanation": "“Sertão sem dono”, “nenhuma alma jamais morou” e “os primeiros a pisar” apagam os povos indígenas que já viviam nessas terras, que eram, em grande parte, territórios indígenas. Os outros trechos são convites e promessas: também merecem desconfiança, mas não negam a presença indígena."
+            }
+          ]
         },
         {
           "conceptId": "GH.SC.ETHNIC_RELATIONS",
@@ -199,7 +314,32 @@
           "examples": [
             { "title": "Uma cultura, muitas origens", "content": "1. O boi de mamão é uma brincadeira popular do litoral catarinense.\n2. O engenho de farinha usa a mandioca, cultivada pelos indígenas muito antes da chegada dos europeus.\n3. A culinária do litoral mistura saberes indígenas, africanos e açorianos.\n4. Conclusão: a cultura catarinense nasce de trocas — mas reconhecer a mistura não apaga as desigualdades entre os grupos." }
           ],
-          "pitfall": { "title": "Mistura não é igualdade", "content": "Dizer que “aqui todos se misturaram e vivem em harmonia” esconde o racismo e as desigualdades que ainda existem. Diversidade cultural e desigualdade social podem existir ao mesmo tempo." }
+          "pitfall": { "title": "Mistura não é igualdade", "content": "Dizer que “aqui todos se misturaram e vivem em harmonia” esconde o racismo e as desigualdades que ainda existem. Diversidade cultural e desigualdade social podem existir ao mesmo tempo." },
+          "extras": [
+            {
+              "type": "classification",
+              "afterExample": 1,
+              "title": "Mito ou evidência?",
+              "instructions": "Separe as frases que repetem um mito ou uma memória seletiva das que se apoiam em pesquisas e fontes.",
+              "items": [
+                { "id": "europeus", "label": "Santa Catarina foi construída só por imigrantes europeus." },
+                { "id": "branda", "label": "A escravidão em Santa Catarina foi branda." },
+                { "id": "vazia", "label": "Os colonos chegaram a uma terra vazia." },
+                { "id": "harmonia", "label": "Aqui todos se misturaram e vivem em harmonia, sem racismo." },
+                { "id": "baleeiras", "label": "Africanos escravizados trabalharam nas armações baleeiras do litoral no século XVIII." },
+                { "id": "xokleng", "label": "A expansão das colônias no Vale do Itajaí avançou sobre o território dos Xokleng." },
+                { "id": "mandioca", "label": "Os engenhos de farinha usam a mandioca, cultivada pelos indígenas antes da chegada dos europeus." },
+                { "id": "resistencia", "label": "Pessoas escravizadas resistiram com fugas, quilombos e compra de alforria." }
+              ],
+              "destinations": [
+                { "id": "mito", "label": "Mito ou memória seletiva que as pesquisas contestam" },
+                { "id": "evidencia", "label": "Afirmação sustentada por evidências" }
+              ],
+              "expected": { "europeus": "mito", "branda": "mito", "vazia": "mito", "harmonia": "mito", "baleeiras": "evidencia", "xokleng": "evidencia", "mandioca": "evidencia", "resistencia": "evidencia" },
+              "hints": ["Frases com “só”, “todos” e “sem” costumam apagar grupos ou conflitos.", "As pesquisas mostram que a escravidão em SC também foi violenta e que havia indígenas nas terras dadas aos colonos."],
+              "explanation": "As quatro primeiras frases são mitos: apagam indígenas, africanos e afrodescendentes, a violência da escravidão e o racismo que ainda existe. As outras quatro se apoiam em pesquisas: o trabalho escravizado nas armações baleeiras, o avanço sobre o território Xokleng, a origem indígena da mandioca e as formas de resistência à escravidão."
+            }
+          ]
         },
         {
           "conceptId": "GH.SC.MINORITIES",
@@ -227,6 +367,38 @@
         { "conceptIds": ["GH.SC.EUROPEAN_COLONIZATION", "GH.SC.INDIGENOUS"], "type": "mc", "difficulty": "ifsc", "ops": ["compare", "analyze"], "stimulus": "Texto 1 — anúncio fictício, inspirado em propagandas de colonização do século XIX (elaborado para esta questão): “Terras férteis e desocupadas no vale! Mata virgem à espera de braços trabalhadores. Lotes a preço baixo.”\n\nTexto 2 — síntese de pesquisas históricas: a expansão das colônias no Vale do Itajaí avançou sobre áreas onde viviam os Laklãnõ/Xokleng. Houve conflitos, e grupos de bugreiros foram contratados para atacar seus acampamentos.", "stem": "A comparação entre os textos permite concluir que:", "choices": ["os dois textos defendem a mesma visão sobre a colonização do vale.", "o Texto 2 confirma que o vale era uma mata sem habitantes.", "o anúncio é mais confiável, por ter sido escrito na época dos fatos.", "a colonização do vale foi harmoniosa, como mostra o Texto 1.", "o anúncio chamava de “desocupadas” terras onde viviam os Xokleng."], "correct": 4, "explanation": "O anúncio queria atrair colonos e vender lotes, por isso chamava a terra de “desocupada”. As pesquisas mostram que ali viviam os Xokleng, atacados durante a expansão. Ser da época não torna a fonte neutra.", "hints": ["Qual era o objetivo de quem escreveu o anúncio?", "O Texto 2 diz que o vale estava vazio?"], "exit": true },
         { "conceptIds": ["GH.SC.ETHNIC_RELATIONS"], "type": "mc", "difficulty": "ifsc", "ops": ["infer"], "stimulus": "Depoimento fictício, inspirado em relatos de história oral (elaborado para esta questão): “Minha avó contava que, quando era menina, em Blumenau, a professora mandou todo mundo parar de falar alemão. Os adultos só falavam a língua dentro de casa, baixinho, e trocavam para o português quando passava a polícia. Isso foi no tempo da guerra.”", "stem": "O depoimento se relaciona a qual processo histórico?", "choices": ["À campanha de nacionalização do Estado Novo, na Segunda Guerra.", "À chegada dos açorianos ao litoral catarinense, no século XVIII.", "À fundação da Colônia Blumenau pelos primeiros imigrantes, em 1850.", "À Lei Áurea, que encerrou legalmente a escravidão, em 1888.", "À demarcação de Terras Indígenas prevista na Constituição de 1988."], "correct": 0, "explanation": "A proibição de falar alemão, a escola e a vigilância policial “no tempo da guerra” apontam para a campanha de nacionalização do Estado Novo (1937–1945), intensificada na Segunda Guerra.", "hints": ["Que pistas de tempo o depoimento dá?", "Qual governo proibiu línguas estrangeiras em espaços públicos?"], "exit": true },
         { "conceptIds": ["GH.SC.MINORITIES", "GH.SC.AFRICAN_AFRODESC"], "type": "mc", "difficulty": "ifsc", "ops": ["evaluate"], "stimulus": "Antonieta de Barros (1901–1952) foi uma professora negra nascida em Florianópolis. Dedicou-se à alfabetização e defendia a educação como direito. Em 1934, foi eleita deputada estadual em Santa Catarina. As brasileiras haviam conquistado o direito de voto em 1932.", "stem": "Por que a eleição de Antonieta de Barros é considerada um marco para as minorias?", "choices": ["Porque as mulheres eram minoria numérica na população catarinense da época.", "Porque, a partir dela, o racismo deixou de existir na política de Santa Catarina.", "Porque uma mulher negra chegou a um espaço de poder que excluía seu grupo.", "Porque ela foi a primeira pessoa a votar depois da lei eleitoral de 1932.", "Porque a lei eleitoral de 1932 reservava vagas parlamentares para pessoas negras."], "correct": 2, "explanation": "Minoria é questão de poder. Mulheres e pessoas negras tinham pouquíssimo acesso aos parlamentos, e a eleição de Antonieta rompeu essa exclusão. Isso não acabou com o racismo, mas ampliou a representação.", "hints": ["Lembre: minoria é questão de número ou de poder?", "Que dois grupos historicamente excluídos da política Antonieta representava?"], "exit": true }
+      ],
+      "opening": { "title": "Antes de começar", "content": "Muita gente repete que Santa Catarina “foi construída por imigrantes europeus”. Quando os primeiros colonos europeus chegaram ao litoral e aos vales, encontraram terras vazias, esperando para ser ocupadas? Pense numa resposta e guarde. No fim da aula, você vai conferir se acertou." },
+      "integration": [
+        { "type": "figure", "file": "GH-02/linha-do-tempo.svg", "alt": "Linha do tempo com marcos da ocupação de Santa Catarina, de 1748 a 1945", "caption": "Açorianos no século XVIII, alemães e italianos no século XIX e, no século XX, a campanha de nacionalização.", "longDescription": "Linha do tempo de 1740 a 1950, com as posições proporcionais aos anos.\nDe cerca de 1748 a 1756: chegada dos açorianos ao litoral.\n1829: fundação de São Pedro de Alcântara, colônia alemã.\n1850: fundação de Blumenau.\n1851: fundação da Colônia Dona Francisca, que deu origem a Joinville.\nA partir da década de 1870: chegada de imigrantes italianos.\nDe 1937 a 1945: campanha de nacionalização do Estado Novo, que proibiu línguas estrangeiras em espaços públicos.", "conceptIds": ["GH.SC.EUROPEAN_COLONIZATION", "GH.SC.ETHNIC_RELATIONS"] },
+        {
+          "type": "matching",
+          "title": "Ligue cada grupo à sua região ou época",
+          "instructions": "Use o que a aula disse sobre cada grupo. Cada destino serve para um só grupo.",
+          "items": [
+            { "id": "guarani", "label": "Guarani" },
+            { "id": "kaingang", "label": "Kaingang" },
+            { "id": "xokleng", "label": "Laklãnõ/Xokleng" },
+            { "id": "vicentistas", "label": "Vicentistas" },
+            { "id": "acorianos", "label": "Açorianos" },
+            { "id": "alemaes", "label": "Alemães" },
+            { "id": "italianos", "label": "Italianos" }
+          ],
+          "destinations": [
+            { "id": "d-litoral-hoje", "label": "Vivem hoje sobretudo no litoral; no período colonial, eram chamados de Carijó" },
+            { "id": "d-oeste", "label": "Vivem hoje no oeste e no planalto, como na Terra Indígena Xapecó" },
+            { "id": "d-ibirama", "label": "Vivem hoje no Vale do Itajaí, na Terra Indígena Ibirama-Laklãnõ" },
+            { "id": "d-xvii", "label": "Século XVII: vindos de São Vicente, fundaram núcleos como Laguna" },
+            { "id": "d-1748", "label": "Entre cerca de 1748 e 1756, trazidos pela Coroa portuguesa ao litoral" },
+            { "id": "d-xix", "label": "Século XIX: São Pedro de Alcântara, Blumenau e Dona Francisca" },
+            { "id": "d-1870", "label": "A partir da década de 1870, sobretudo no sul e no Vale do Itajaí" }
+          ],
+          "expected": { "guarani": "d-litoral-hoje", "kaingang": "d-oeste", "xokleng": "d-ibirama", "vicentistas": "d-xvii", "acorianos": "d-1748", "alemaes": "d-xix", "italianos": "d-1870" },
+          "hints": ["Três destinos falam de povos que vivem hoje em Santa Catarina.", "Na linha do tempo: açorianos no século XVIII, alemães e italianos no século XIX."],
+          "explanation": "Guarani no litoral, Kaingang no oeste e no planalto e Laklãnõ/Xokleng no Vale do Itajaí vivem hoje em SC. Os vicentistas chegaram no século XVII; os açorianos, entre cerca de 1748 e 1756; os alemães fundaram colônias no século XIX; os italianos vieram a partir da década de 1870.",
+          "conceptIds": ["GH.SC.INDIGENOUS", "GH.SC.EUROPEAN_COLONIZATION"]
+        },
+        { "type": "prediction", "title": "Volte à sua previsão", "content": "No começo, você pensou se os colonos europeus encontraram terras vazias. Não encontraram: Guarani, Kaingang e Laklãnõ/Xokleng já viviam aqui, e muito antes os povos dos sambaquis ocuparam o litoral. As terras entregues aos colonos eram, em grande parte, territórios indígenas, e a ocupação veio com violência. Africanos escravizados e seus descendentes também estão no estado desde o período colonial. Sua previsão bateu?" }
       ]
     }
   ]

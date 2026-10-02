@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" font-family="Archivo, Arial, Helvetica, sans-serif">
+  <rect width="640" height="330" fill="#FFFCF5"/>
+  <defs>
+    <marker id="axis" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#17141F"/></marker>
+    <marker id="grow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#14804A"/></marker>
+  </defs>
+  <text x="32" y="48" font-size="26" font-weight="800" fill="#17141F">Mais à direita, maior</text>
+  <line x1="140" y1="100" x2="500" y2="100" stroke="#14804A" stroke-width="5" marker-end="url(#grow)"/>
+  <text x="320" y="88" font-size="19" font-weight="800" fill="#14804A" text-anchor="middle">os números crescem</text>
+  <line x1="28" y1="180" x2="616" y2="180" stroke="#17141F" stroke-width="3" marker-end="url(#axis)"/>
+  <g stroke="#17141F" stroke-width="3">
+    <line x1="50" y1="170" x2="50" y2="190"/><line x1="95" y1="170" x2="95" y2="190"/><line x1="140" y1="170" x2="140" y2="190"/><line x1="185" y1="170" x2="185" y2="190"/>
+    <line x1="230" y1="170" x2="230" y2="190"/><line x1="275" y1="170" x2="275" y2="190"/><line x1="320" y1="170" x2="320" y2="190"/><line x1="365" y1="170" x2="365" y2="190"/>
+    <line x1="410" y1="166" x2="410" y2="194" stroke-width="5"/><line x1="455" y1="170" x2="455" y2="190"/><line x1="500" y1="170" x2="500" y2="190"/><line x1="545" y1="170" x2="545" y2="190"/>
+    <line x1="590" y1="170" x2="590" y2="190"/>
+  </g>
+  <g font-size="18" font-weight="700" fill="#17141F" text-anchor="middle">
+    <text x="50" y="218">−8</text><text x="95" y="218">−7</text><text x="140" y="218">−6</text><text x="185" y="218">−5</text><text x="230" y="218">−4</text>
+    <text x="275" y="218">−3</text><text x="320" y="218">−2</text><text x="365" y="218">−1</text><text x="410" y="218" font-weight="800">0</text><text x="455" y="218">1</text>
+    <text x="500" y="218">2</text><text x="545" y="218">3</text><text x="590" y="218">4</text>
+  </g>
+  <circle cx="95" cy="180" r="10" fill="#8FDCFF" stroke="#17141F" stroke-width="2.5"/>
+  <circle cx="320" cy="180" r="10" fill="#FFA552" stroke="#17141F" stroke-width="2.5"/>
+  <text x="95" y="150" font-size="19" font-weight="800" fill="#17141F" text-anchor="middle">−7 °C</text>
+  <text x="320" y="150" font-size="19" font-weight="800" fill="#17141F" text-anchor="middle">−2 °C</text>
+  <text x="32" y="270" font-size="22" font-weight="800" fill="#14804A">−7 fica à esquerda de −2: −7 &lt; −2</text>
+  <text x="32" y="308" font-size="19" font-weight="700" fill="#17141F">Entre negativos, maior é o mais perto do zero.</text>
+</svg>

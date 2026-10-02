@@ -22,7 +22,31 @@
           "examples": [
             { "title": "Classificando números", "content": "Quais destes são naturais: 7, −2, 0, 15, −10?\n1. 7 e 15 servem para contar: são naturais.\n2. 0 também é natural.\n3. −2 e −10 são negativos: são inteiros, mas não naturais.\nResposta: 7, 0 e 15." }
           ],
-          "pitfall": { "title": "O zero conta", "content": "Muita gente esquece que o 0 é natural e inteiro ao mesmo tempo. Em questão de \"qual número não é natural\", o 0 nunca é a resposta certa." }
+          "pitfall": { "title": "O zero conta", "content": "Muita gente esquece que o 0 é natural e inteiro ao mesmo tempo. Em questão de \"qual número não é natural\", o 0 nunca é a resposta certa." },
+          "extras": [
+            { "type": "figure", "file": "MAT-01/conjuntos.svg", "alt": "Diagrama com o conjunto dos naturais desenhado dentro do conjunto dos inteiros", "caption": "Os naturais ficam dentro dos inteiros: todo natural é inteiro, mas nem todo inteiro é natural.", "longDescription": "Um retângulo grande representa os inteiros (ℤ). Dentro dele há um retângulo menor, que representa os naturais (ℕ).\nNo retângulo menor estão 0, 1, 7 e 15: eles são naturais e, por estarem dentro de ℤ, também são inteiros.\nFora do retângulo menor, mas dentro do grande, estão −2, −10 e −5: são só inteiros, não naturais.\nO zero fica dentro dos naturais." },
+            {
+              "type": "classification",
+              "afterExample": 1,
+              "title": "Natural ou só inteiro?",
+              "instructions": "Coloque cada número no grupo certo. Lembre que todo natural também é inteiro.",
+              "items": [
+                { "id": "n12", "label": "12" },
+                { "id": "nm5", "label": "−5" },
+                { "id": "n0", "label": "0" },
+                { "id": "nm1", "label": "−1" },
+                { "id": "n30", "label": "30" },
+                { "id": "nm100", "label": "−100" }
+              ],
+              "destinations": [
+                { "id": "natural", "label": "Natural (e também inteiro)" },
+                { "id": "inteiro", "label": "Inteiro, mas não natural" }
+              ],
+              "expected": { "n12": "natural", "nm5": "inteiro", "n0": "natural", "nm1": "inteiro", "n30": "natural", "nm100": "inteiro" },
+              "hints": ["Naturais servem para contar: 0, 1, 2, 3...", "O zero não é negativo."],
+              "explanation": "12, 0 e 30 são naturais e, por isso, também inteiros. −5, −1 e −100 são negativos: pertencem aos inteiros, mas não aos naturais."
+            }
+          ]
         },
         {
           "conceptId": "MAT.NUM.OPERATIONS",
@@ -33,7 +57,10 @@
             { "title": "A temperatura de São Joaquim", "content": "Começou em −3 °C e subiu 8 °C. Subir é acrescentar: −3 + 8.\nNa reta, saia do −3 e ande 8 casas para a direita: −2, −1, 0, 1, 2, 3, 4, 5.\nResposta: 5 °C." },
             { "title": "Repartir livros", "content": "Uma escola tem 156 livros para dividir igualmente entre 12 turmas. Repartir em partes iguais é divisão: 156 ÷ 12 = 13.\nConferência: 13 × 12 = 156. Cada turma recebe 13 livros." }
           ],
-          "pitfall": { "title": "A regra dos sinais não vale para a soma", "content": "\"Menos com menos dá mais\" vale para multiplicação e divisão. Na soma, −5 + (−3) = −8: são duas dívidas que se juntam, e a dívida aumenta." }
+          "pitfall": { "title": "A regra dos sinais não vale para a soma", "content": "\"Menos com menos dá mais\" vale para multiplicação e divisão. Na soma, −5 + (−3) = −8: são duas dívidas que se juntam, e a dívida aumenta." },
+          "extras": [
+            { "type": "figure", "afterExample": 1, "file": "MAT-01/reta-temperatura.svg", "alt": "Reta numérica de −4 a 6 com oito saltos para a direita, saindo do −3 e chegando ao 5", "caption": "Subir 8 °C a partir de −3 °C é andar 8 casas para a direita: o termômetro chega a 5 °C.", "longDescription": "Uma reta numérica vai de −4 a 6, com o zero destacado. Um ponto vermelho marca −3, a temperatura às 6h.\nOito saltos verdes, de uma casa cada, levam do −3 ao 5, passando por −2, −1, 0, 1, 2, 3 e 4.\nUm ponto verde marca 5, a temperatura às 14h. Somar um número positivo é andar para a direita: −3 + 8 = 5." }
+          ]
         },
         {
           "conceptId": "MAT.NUM.ORDER",
@@ -43,7 +70,26 @@
           "examples": [
             { "title": "Ordenando temperaturas", "content": "Coloque em ordem crescente: −1, 3, −6, 0.\n1. Comece pelo mais à esquerda: −6.\n2. Depois −1 (mais perto do zero que −6).\n3. Depois 0 e, por fim, 3.\nResposta: −6, −1, 0, 3." }
           ],
-          "pitfall": { "title": "Não compare só os algarismos", "content": "Ver \"7 é maior que 2\" e concluir que −7 > −2 é o erro mais comum. Com negativos, imagine a reta ou o termômetro antes de responder." }
+          "pitfall": { "title": "Não compare só os algarismos", "content": "Ver \"7 é maior que 2\" e concluir que −7 > −2 é o erro mais comum. Com negativos, imagine a reta ou o termômetro antes de responder." },
+          "extras": [
+            { "type": "figure", "file": "MAT-01/comparar-negativos.svg", "alt": "Reta numérica de −8 a 4 com os pontos −7 e −2 marcados como temperaturas", "caption": "Na reta, maior é quem está mais à direita: −7 < −2.", "longDescription": "Uma reta numérica vai de −8 a 4, com o zero destacado. Uma seta acima dela indica que os números crescem da esquerda para a direita.\nUm ponto azul marca −7 °C e um ponto laranja marca −2 °C.\nO −7 fica à esquerda do −2, então −7 < −2. Entre negativos, o maior é o que está mais perto do zero." },
+            {
+              "type": "ordering",
+              "afterExample": 1,
+              "title": "Ordene as temperaturas da mais fria para a mais quente",
+              "instructions": "Coloque em ordem crescente, do menor para o maior.",
+              "items": [
+                { "id": "t1", "label": "1 °C" },
+                { "id": "tm9", "label": "−9 °C" },
+                { "id": "tm3", "label": "−3 °C" },
+                { "id": "t7", "label": "7 °C" },
+                { "id": "tm5", "label": "−5 °C" }
+              ],
+              "expectedOrder": ["tm9", "tm5", "tm3", "t1", "t7"],
+              "hints": ["A mais fria é a que fica mais à esquerda na reta.", "Entre os negativos, o mais distante do zero é o menor."],
+              "explanation": "Na reta, da esquerda para a direita: −9, −5, −3, 1, 7. Entre os negativos, −9 é o menor por estar mais longe do zero; qualquer positivo é maior que qualquer negativo."
+            }
+          ]
         },
         {
           "conceptId": "MAT.NUM.REAL.PROPERTIES",
@@ -64,7 +110,23 @@
             { "title": "Expressão com sinais", "content": "Calcule 20 − 3 × (4 − 6).\n1. Parênteses: 4 − 6 = −2.\n2. Multiplicação: 3 × (−2) = −6.\n3. Subtração: 20 − (−6) = 20 + 6 = 26." },
             { "title": "Mesma prioridade", "content": "Calcule 12 ÷ 3 × 2.\nDivisão e multiplicação têm a mesma prioridade, então siga da esquerda para a direita: 12 ÷ 3 = 4, depois 4 × 2 = 8." }
           ],
-          "pitfall": { "title": "Multiplicação não vem sempre antes", "content": "Em 12 ÷ 3 × 2, fazer 3 × 2 primeiro dá 2, que está errado. Entre × e ÷, vale a ordem de leitura. O mesmo acontece entre + e −: em 10 − 4 + 2, o resultado é 8, não 4." }
+          "pitfall": { "title": "Multiplicação não vem sempre antes", "content": "Em 12 ÷ 3 × 2, fazer 3 × 2 primeiro dá 2, que está errado. Entre × e ÷, vale a ordem de leitura. O mesmo acontece entre + e −: em 10 − 4 + 2, o resultado é 8, não 4." },
+          "extras": [
+            { "type": "figure", "afterExample": 1, "file": "MAT-01/ordem-operacoes.svg", "alt": "Escada com os quatro níveis da ordem das operações e a resolução de 20 − 3 × (4 − 6)", "caption": "Primeiro os parênteses, depois potências, depois × e ÷, por fim + e −.", "longDescription": "Quatro faixas mostram a ordem combinada:\n1. Parênteses, colchetes e chaves.\n2. Potências e raízes.\n3. Multiplicações e divisões, da esquerda para a direita.\n4. Adições e subtrações, da esquerda para a direita.\nExemplo: 20 − 3 × (4 − 6). Nível 1: 4 − 6 = −2, e fica 20 − 3 × (−2). Nível 3: 3 × (−2) = −6, e fica 20 − (−6). Nível 4: 20 + 6 = 26." },
+            {
+              "type": "guided-steps",
+              "title": "Resolva passo a passo: 50 − 6 × (9 − 4) ÷ 3",
+              "instructions": "Responda cada passo com um número inteiro.",
+              "steps": [
+                { "id": "parenteses", "prompt": "Primeiro os parênteses: quanto é 9 − 4?", "expected": 5 },
+                { "id": "multiplicacao", "prompt": "Agora fica 50 − 6 × 5 ÷ 3. A multiplicação aparece primeiro na leitura: quanto é 6 × 5?", "expected": 30 },
+                { "id": "divisao", "prompt": "Depois a divisão: quanto é 30 ÷ 3?", "expected": 10 },
+                { "id": "resultado", "prompt": "Por fim, a subtração: quanto é 50 − 10?", "expected": 40 }
+              ],
+              "hints": ["Os parênteses vêm antes de tudo.", "× e ÷ têm a mesma prioridade: faça na ordem em que aparecem, da esquerda para a direita."],
+              "explanation": "9 − 4 = 5; depois, da esquerda para a direita, 6 × 5 = 30 e 30 ÷ 3 = 10; por fim, 50 − 10 = 40. Fazer 50 − 6 antes da multiplicação daria um resultado errado."
+            }
+          ]
         }
       ],
       "summary": "Naturais (ℕ) contam a partir do 0; inteiros (ℤ) incluem os negativos.\nAntes de calcular, decida o que a situação pede: juntar, tirar, repetir ou repartir.\nNa reta, maior é quem está mais à direita: −2 > −7.\nNa multiplicação e na divisão, sinais iguais dão positivo e sinais diferentes dão negativo.\nOrdem das contas: parênteses, potências, × e ÷, + e −, sempre da esquerda para a direita dentro do mesmo nível.",
@@ -79,6 +141,10 @@
         { "conceptIds": ["MAT.NUM.REAL.PROPERTIES"], "type": "mc", "difficulty": "direct", "ops": ["analyze"], "stem": "Qual operação NÃO é comutativa?", "choices": ["Adição de inteiros", "Multiplicação de inteiros", "Adição de naturais", "Subtração de inteiros", "Multiplicação de naturais"], "correct": 3, "explanation": "7 − 2 = 5, mas 2 − 7 = −5: a subtração não é comutativa. Adição e multiplicação são comutativas tanto nos naturais quanto nos inteiros.", "hints": ["Teste trocar a ordem dos números: 7 − 2 e 2 − 7 dão o mesmo resultado?", "Só uma das operações listadas muda o resultado quando a ordem é trocada."] },
         { "conceptIds": ["MAT.NUM.EXPRESSIONS"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule 18 − 2 × 5 + 4.", "value": 12, "explanation": "Multiplicação primeiro: 2 × 5 = 10. Depois, da esquerda para a direita: 18 − 10 + 4 = 12.", "hints": ["Antes de somar ou subtrair, faça as multiplicações.", "Depois de 2 × 5, siga da esquerda para a direita: 18 − 10 + 4."] },
         { "conceptIds": ["MAT.NUM.EXPRESSIONS", "MAT.NUM.OPERATIONS"], "type": "num", "difficulty": "applied", "ops": ["calculate"], "stem": "Calcule 30 ÷ (−5) + 2 × (7 − 10).", "value": -12, "explanation": "30 ÷ (−5) = −6; 7 − 10 = −3; 2 × (−3) = −6; −6 + (−6) = −12.", "exit": true, "hints": ["Resolva primeiro o parêntese (7 − 10).", "Faça a divisão e a multiplicação antes da soma; atenção aos sinais."] }
+      ],
+      "opening": { "title": "Antes de começar", "content": "O termômetro marcava −3 °C e a temperatura subiu 8 °C. Muita gente responde 11 °C, porque soma 3 + 8. Outra pergunta: −7 é maior ou menor que −2? Anote seus dois palpites. No fim da aula, você vai conferir." },
+      "integration": [
+        { "type": "prediction", "title": "Volte à sua previsão", "content": "No começo, você deu palpites sobre −3 + 8 e sobre −7 e −2. Saindo do −3 e andando 8 casas para a direita, o termômetro chega a 5 °C, não a 11 °C: o 11 aparece quando se ignora o sinal do −3. E −7 é menor que −2, porque fica mais à esquerda na reta. Seus palpites bateram?" }
       ]
     }
   ]

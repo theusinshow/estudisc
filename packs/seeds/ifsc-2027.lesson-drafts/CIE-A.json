@@ -155,6 +155,7 @@
         "CIE.ENERGY.CONTEXT": "Energia na sociedade e no ambiente"
       },
       "hook": "Às 7h você liga o chuveiro elétrico e a água sai quente. De onde veio esse calor?\n\nA eletricidade pode ter vindo de uma usina hidrelétrica num rio do Sul do Brasil: a água da represa desceu, girou turbinas, virou energia elétrica, percorreu quilômetros de fios e virou calor no chuveiro.\n\nEm nenhum momento a energia foi criada do nada, e ela também não sumiu. Ela só mudou de forma. Entender essas mudanças é o assunto desta aula.",
+      "opening": { "title": "Antes de começar", "content": "Depois do banho, você desliga o chuveiro. A energia que ele usou acabou, sumiu de vez? E a usina que mandou essa energia, criou-a do nada? Pense numa resposta e guarde. No fim da aula, você vai conferir se acertou." },
       "concepts": [
         {
           "conceptId": "CIE.ENERGY.SOURCES",
@@ -164,7 +165,31 @@
           "examples": [
             { "title": "Classificando fontes", "content": "Classifique: gás natural, vento, bagaço de cana, carvão mineral, luz do Sol.\n1. O vento e a luz do Sol se renovam todos os dias: renováveis.\n2. O bagaço de cana vem de plantas que podem ser replantadas: renovável.\n3. Gás natural e carvão mineral se formaram em milhões de anos: não renováveis.\nResposta: renováveis — vento, bagaço e Sol; não renováveis — gás natural e carvão." }
           ],
-          "pitfall": { "title": "Renovável não quer dizer sem impacto", "content": "Uma hidrelétrica usa fonte renovável, mas a barragem alaga terras e muda a vida do rio e de quem mora perto. E o que define uma fonte não renovável não é poluir: é o estoque limitado. Não confunda as duas ideias." }
+          "pitfall": { "title": "Renovável não quer dizer sem impacto", "content": "Uma hidrelétrica usa fonte renovável, mas a barragem alaga terras e muda a vida do rio e de quem mora perto. E o que define uma fonte não renovável não é poluir: é o estoque limitado. Não confunda as duas ideias." },
+          "extras": [
+            { "type": "figure", "file": "CIE-02/fontes.svg", "alt": "Quadro com fontes de energia renováveis e não renováveis", "caption": "Renovável é a fonte que se repõe; não renovável é a que tem estoque limitado.", "longDescription": "Quadro com duas colunas.\nRenováveis, que se repõem naturalmente: solar (luz do Sol), eólica (vento), hídrica (rios), biomassa (bagaço de cana) e geotérmica.\nNão renováveis, com estoque limitado: petróleo, gás natural, carvão mineral e urânio (usinas nucleares).\nNo rodapé: o critério para classificar é o estoque, não a poluição." },
+            {
+              "type": "classification",
+              "afterExample": 1,
+              "title": "Renovável ou não renovável?",
+              "instructions": "Pergunte: essa fonte se repõe naturalmente, ou o estoque acaba?",
+              "items": [
+                { "id": "petroleo", "label": "Petróleo" },
+                { "id": "rio", "label": "Água de um rio represado" },
+                { "id": "uranio", "label": "Urânio de uma usina nuclear" },
+                { "id": "lenha", "label": "Lenha de reflorestamento" },
+                { "id": "diesel", "label": "Óleo diesel" },
+                { "id": "geotermica", "label": "Calor do interior da Terra" }
+              ],
+              "destinations": [
+                { "id": "renovavel", "label": "Renovável (se repõe)" },
+                { "id": "nao-renovavel", "label": "Não renovável (estoque limitado)" }
+              ],
+              "expected": { "rio": "renovavel", "lenha": "renovavel", "geotermica": "renovavel", "petroleo": "nao-renovavel", "diesel": "nao-renovavel", "uranio": "nao-renovavel" },
+              "hints": ["O óleo diesel é feito a partir de quê?", "A lenha de reflorestamento vem de árvores que podem ser replantadas."],
+              "explanation": "Água dos rios, lenha de reflorestamento e calor do interior da Terra se repõem naturalmente: são renováveis. Petróleo e óleo diesel (feito do petróleo) se formaram em milhões de anos, e o urânio é um minério: os três têm estoque limitado."
+            }
+          ]
         },
         {
           "conceptId": "CIE.ENERGY.TYPES",
@@ -185,7 +210,25 @@
             { "title": "A cadeia da hidrelétrica", "content": "Siga a energia, da represa até o chuveiro.\n1. A água está no alto da barragem: potencial gravitacional.\n2. Ela desce pelos dutos ganhando velocidade: cinética.\n3. A água gira a turbina, que gira o gerador: cinética → elétrica.\n4. A energia elétrica chega pelos fios e o chuveiro a transforma em térmica.\nCadeia: potencial gravitacional → cinética → elétrica → térmica." },
             { "title": "Pedalando até a escola", "content": "1. Os alimentos guardam energia química.\n2. Os músculos transformam parte dela em movimento: a bicicleta ganha energia cinética.\n3. Outra parte vira calor: por isso você chega suado.\nCadeia: química → cinética + térmica." }
           ],
-          "pitfall": { "title": "Gerar não é criar", "content": "\"Usina gera energia\" é jeito de falar. Na verdade, a usina transforma energia que já existia (da água, do vento, do Sol ou do combustível) em energia elétrica. Nenhum aparelho cria energia do nada." }
+          "pitfall": { "title": "Gerar não é criar", "content": "\"Usina gera energia\" é jeito de falar. Na verdade, a usina transforma energia que já existia (da água, do vento, do Sol ou do combustível) em energia elétrica. Nenhum aparelho cria energia do nada." },
+          "extras": [
+            { "type": "figure", "afterExample": 1, "file": "CIE-02/hidreletrica.svg", "alt": "Cadeia de transformações de energia, da represa de uma hidrelétrica até o chuveiro elétrico", "caption": "Da represa ao banho, a energia muda de forma três vezes, e nada é criado.", "longDescription": "Quatro etapas, de cima para baixo, ligadas por setas.\n1. Potencial gravitacional: a água está parada no alto da represa.\nSeta: a água desce pelos dutos.\n2. Cinética: a água rápida gira a turbina.\nSeta: a turbina gira o gerador.\n3. Elétrica: a corrente percorre os fios.\nSeta: os fios chegam ao chuveiro.\n4. Térmica: o chuveiro esquenta a água.\nNo rodapé: nada foi criado, a energia só mudou de forma. Em cada etapa, uma parte vira calor e som." },
+            {
+              "type": "ordering",
+              "afterExample": 1,
+              "title": "Ordene a cadeia de uma termelétrica a carvão",
+              "instructions": "Siga a energia, do combustível até os fios.",
+              "items": [
+                { "id": "vapor", "label": "O vapor gira a turbina (cinética)" },
+                { "id": "carvao", "label": "O carvão queima na caldeira (química → térmica)" },
+                { "id": "gerador", "label": "O gerador transforma o giro em energia elétrica" },
+                { "id": "agua", "label": "O calor ferve a água e forma vapor" }
+              ],
+              "expectedOrder": ["carvao", "agua", "vapor", "gerador"],
+              "hints": ["Toda termelétrica começa queimando um combustível.", "A turbina só gira depois que existe vapor."],
+              "explanation": "A energia química do carvão vira térmica na queima; o calor ferve a água; o vapor gira a turbina (cinética); o gerador transforma esse movimento em energia elétrica. Cadeia: química → térmica → cinética → elétrica."
+            }
+          ]
         },
         {
           "conceptId": "CIE.ENERGY.CONSERVATION",
@@ -196,7 +239,25 @@
             { "title": "O balanço de uma lâmpada", "content": "Uma lâmpada recebe 60 J de energia elétrica a cada segundo e emite 6 J como luz.\n1. Energia dissipada: 60 − 6 = 54 J, principalmente calor.\n2. Rendimento: 6 ÷ 60 = 0,1.\n3. Em porcentagem: 0,1 × 100 = 10%.\nNada sumiu: 6 J de luz + 54 J de calor = 60 J." },
             { "title": "O skate na pista em U", "content": "1. No alto da pista, o skatista parado tem energia potencial gravitacional.\n2. Ao descer, ela vira cinética: ele ganha velocidade.\n3. Ao subir do outro lado, a cinética volta a ser potencial.\n4. Por causa do atrito com o ar e com a pista, ele sobe um pouco menos a cada ida: parte da energia virou calor e som." }
           ],
-          "pitfall": { "title": "Energia \"gasta\" não desaparece", "content": "No dia a dia dizemos \"gastei energia\". Em Ciências, isso quer dizer que a energia foi transformada, muitas vezes em calor que não dá para reaproveitar. Se uma alternativa disser que a energia \"sumiu\" ou \"foi destruída\", desconfie." }
+          "pitfall": { "title": "Energia \"gasta\" não desaparece", "content": "No dia a dia dizemos \"gastei energia\". Em Ciências, isso quer dizer que a energia foi transformada, muitas vezes em calor que não dá para reaproveitar. Se uma alternativa disser que a energia \"sumiu\" ou \"foi destruída\", desconfie." },
+          "extras": [
+            { "type": "figure", "afterExample": 1, "file": "CIE-02/lampada.svg", "alt": "Diagrama de fluxo de energia de uma lâmpada: entram 60 J, saem 6 J de luz e 54 J de calor", "caption": "A largura de cada faixa mostra a quantidade de energia: entram 60 J e saem 60 J.", "longDescription": "Uma faixa laranja larga representa os 60 J de energia elétrica que a lâmpada recebe a cada segundo. Ela se divide em duas.\nUma faixa amarela fina, para cima: 6 J de luz, a energia útil.\nUma faixa vermelha grossa, para a direita: 54 J de calor, a energia dissipada, que não some.\nEmbaixo: 60 J = 6 J de luz + 54 J de calor. Rendimento: 6 ÷ 60 = 0,1 = 10%." },
+            {
+              "type": "guided-steps",
+              "afterExample": 1,
+              "title": "Calcule passo a passo: uma lâmpada de LED",
+              "instructions": "Uma lâmpada de LED recebe 20 J de energia elétrica e emite 8 J de luz. Responda cada passo com um número inteiro.",
+              "steps": [
+                { "id": "dissipada", "prompt": "Quantos joules foram dissipados, principalmente como calor?", "expected": 12 },
+                { "id": "vezes", "prompt": "Quantas vezes 20 J cabem em 100 J?", "expected": 5 },
+                { "id": "luz100", "prompt": "No mesmo ritmo, se recebesse 100 J, quantos joules sairiam como luz?", "expected": 40 },
+                { "id": "rendimento", "prompt": "Então, qual é o rendimento da lâmpada, em porcentagem?", "expected": 40 }
+              ],
+              "hints": ["Energia recebida = energia útil + energia dissipada.", "Rendimento em porcentagem é quanto sai de útil para cada 100 J recebidos."],
+              "explanation": "Dissipada: 20 − 8 = 12 J. Como 100 J são 5 vezes 20 J, para cada 100 J recebidos saem 5 × 8 = 40 J de luz: o rendimento é 40%. Pela conta direta, 8 ÷ 20 = 0,4 = 40%. Essa lâmpada aproveita uma parte maior da energia que a do exemplo, que aproveitava 10%."
+            },
+            { "type": "figure", "afterExample": 2, "file": "CIE-02/skate.svg", "alt": "Skatista em três pontos de uma pista em U, com a altura de partida marcada", "caption": "Potencial e cinética se trocam o tempo todo; o atrito leva um pouco da energia a cada ida.", "longDescription": "Uma pista em forma de U, com uma linha tracejada na altura de partida.\nA, no alto da borda esquerda, parado: energia potencial gravitacional máxima e nenhuma energia cinética.\nB, no fundo da pista, mais rápido: energia cinética máxima e potencial mínima.\nC, na borda direita, abaixo da linha tracejada: ele sobe menos que a altura de partida, porque parte da energia virou calor e som no atrito com a pista e com o ar.\nDescendo, potencial vira cinética; subindo, cinética vira potencial." }
+          ]
         },
         {
           "conceptId": "CIE.ENERGY.CONTEXT",
@@ -208,6 +269,9 @@
           ],
           "pitfall": { "title": "Não existe fonte perfeita", "content": "Responder \"a fonte X não tem nenhum impacto\" quase sempre está errado. Eólica muda a paisagem e exige área; solar depende da luz; hidrelétrica alaga terras. O certo é comparar vantagens e desvantagens." }
         }
+      ],
+      "integration": [
+        { "type": "prediction", "title": "Volte à sua previsão", "content": "No começo da aula você pensou se a energia do banho sumiu e se a usina a criou do nada. Nenhuma das duas coisas acontece. A usina transformou a energia potencial da água em elétrica, e o chuveiro transformou a elétrica em térmica. Esse calor passou para a água, o ar e as paredes e se espalhou até ficar difícil de aproveitar, mas não sumiu. Sua previsão bateu?" }
       ],
       "summary": "Fontes renováveis se repõem (sol, vento, água, biomassa); não renováveis têm estoque limitado (petróleo, gás, carvão, urânio).\nRenovável não quer dizer sem impacto ambiental.\nFormas de energia: cinética, potencial gravitacional e elástica, química, térmica, elétrica, luminosa, sonora e nuclear.\nPara descrever uma transformação, siga a energia: de que forma entra, em que forma sai.\nA energia não é criada nem destruída: energia recebida = útil + dissipada.\nRendimento = energia útil ÷ energia recebida; nunca chega a 100%.\nToda fonte tem vantagens e desvantagens; o sistema elétrico combina várias.",
       "questions": [

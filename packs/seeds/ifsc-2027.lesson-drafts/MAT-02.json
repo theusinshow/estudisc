@@ -36,7 +36,32 @@
             { "title": "O 91 é primo?", "content": "1. 91 é ímpar: não é divisível por 2.\n2. 9 + 1 = 10, que não é múltiplo de 3: não é divisível por 3.\n3. Não termina em 0 nem em 5: não é divisível por 5.\n4. Teste o 7: 91 ÷ 7 = 13, divisão exata.\nResposta: 91 = 7 × 13, então é composto. Parece primo, mas não é." },
             { "title": "O 53 é primo?", "content": "Atalho: basta testar os primos cujo quadrado não passa do número. Como 7 × 7 = 49 é menor que 53 e 11 × 11 = 121 já passa, teste só 2, 3, 5 e 7.\n1. 53 é ímpar: não divide por 2.\n2. 5 + 3 = 8: não divide por 3.\n3. Termina em 3: não divide por 5.\n4. 53 ÷ 7 = 7, com resto 4: não divide por 7.\nResposta: nenhum divide, então 53 é primo." }
           ],
-          "pitfall": { "title": "O 1 não é primo, e ímpar não é sinônimo de primo", "content": "Primo precisa ter exatamente dois divisores, e o 1 só tem um. Outro erro comum é achar que todo número ímpar é primo: 9, 15, 21, 51 e 91 são ímpares e compostos (51 = 3 × 17)." }
+          "pitfall": { "title": "O 1 não é primo, e ímpar não é sinônimo de primo", "content": "Primo precisa ter exatamente dois divisores, e o 1 só tem um. Outro erro comum é achar que todo número ímpar é primo: 9, 15, 21, 51 e 91 são ímpares e compostos (51 = 3 × 17)." },
+          "extras": [
+            {
+              "type": "classification",
+              "afterExample": 2,
+              "title": "Primo, composto ou nenhum dos dois?",
+              "instructions": "Classifique cada número. Use os critérios de divisibilidade e teste o 7 quando precisar.",
+              "items": [
+                { "id": "p1", "label": "1" },
+                { "id": "p2", "label": "2" },
+                { "id": "p41", "label": "41" },
+                { "id": "p49", "label": "49" },
+                { "id": "p59", "label": "59" },
+                { "id": "p77", "label": "77" },
+                { "id": "p87", "label": "87" }
+              ],
+              "destinations": [
+                { "id": "primo", "label": "Primo" },
+                { "id": "composto", "label": "Composto" },
+                { "id": "nenhum", "label": "Nem primo nem composto" }
+              ],
+              "expected": { "p1": "nenhum", "p2": "primo", "p41": "primo", "p49": "composto", "p59": "primo", "p77": "composto", "p87": "composto" },
+              "hints": ["Quantos divisores tem o 1?", "Alguns ímpares enganam: teste 3 e 7 antes de dizer que um número é primo."],
+              "explanation": "O 1 tem um único divisor, então não é primo nem composto. 2, 41 e 59 têm exatamente dois divisores: são primos. 49 = 7 × 7, 77 = 7 × 11 e 87 = 3 × 29 são compostos, mesmo sendo ímpares."
+            }
+          ]
         },
         {
           "conceptId": "MAT.DIV.FACTORIZATION",
@@ -47,7 +72,10 @@
             { "title": "Fatorando o 180", "content": "1. 180 ÷ 2 = 90\n2. 90 ÷ 2 = 45 (45 é ímpar, o 2 não serve mais)\n3. 45 ÷ 3 = 15\n4. 15 ÷ 3 = 5\n5. 5 ÷ 5 = 1\nFatores usados: 2, 2, 3, 3 e 5. Logo, 180 = 2² × 3² × 5.\nConferência: 4 × 9 × 5 = 180." },
             { "title": "Do produto de volta ao número", "content": "Qual número tem fatoração 2 × 3² × 5?\n1. Resolva a potência: 3² = 9.\n2. Multiplique: 2 × 9 = 18.\n3. 18 × 5 = 90.\nResposta: 90." }
           ],
-          "pitfall": { "title": "Todos os fatores precisam ser primos", "content": "Escrever 180 = 4 × 5 × 9 está certo como multiplicação, mas não é fatoração em primos: o 4 e o 9 ainda podem ser quebrados (4 = 2 × 2 e 9 = 3 × 3). Só pare quando todos os fatores forem primos." }
+          "pitfall": { "title": "Todos os fatores precisam ser primos", "content": "Escrever 180 = 4 × 5 × 9 está certo como multiplicação, mas não é fatoração em primos: o 4 e o 9 ainda podem ser quebrados (4 = 2 × 2 e 9 = 3 × 3). Só pare quando todos os fatores forem primos." },
+          "extras": [
+            { "type": "figure", "afterExample": 1, "file": "MAT-02/arvore-180.svg", "alt": "Árvore de fatores do 180 que termina nos primos 2, 2, 3, 3 e 5", "caption": "Cada galho termina num primo: 180 = 2² × 3² × 5.", "longDescription": "O 180 se divide em 2 × 90. O 2 é primo, então esse galho para.\nO 90 se divide em 2 × 45; o 45 se divide em 3 × 15; o 15 se divide em 3 × 5.\nOs números primos, destacados em círculos amarelos, são 2, 2, 3, 3 e 5. Os compostos (180, 90, 45 e 15) ficam em caixas, porque ainda se dividem.\nResultado: 180 = 2 × 2 × 3 × 3 × 5 = 2² × 3² × 5. Conferência: 4 × 9 × 5 = 180." }
+          ]
         },
         {
           "conceptId": "MAT.DIV.MMC",
@@ -58,7 +86,23 @@
             { "title": "MMC de 12 e 18", "content": "1. Fatore: 12 = 2² × 3 e 18 = 2 × 3².\n2. Primos que aparecem: 2 e 3.\n3. Maior expoente de cada um: 2² e 3².\n4. MMC = 2² × 3² = 4 × 9 = 36.\nConferência: 36 ÷ 12 = 3 e 36 ÷ 18 = 2." },
             { "title": "Fatoração simultânea: MMC de 8, 10 e 15", "content": "Divida todos ao mesmo tempo pelo menor primo possível. Quem não divide, desce igual.\n1. 8, 10, 15 ÷ 2 → 4, 5, 15\n2. 4, 5, 15 ÷ 2 → 2, 5, 15\n3. 2, 5, 15 ÷ 2 → 1, 5, 15\n4. 1, 5, 15 ÷ 3 → 1, 5, 5\n5. 1, 5, 5 ÷ 5 → 1, 1, 1\nMMC = 2 × 2 × 2 × 3 × 5 = 120." }
           ],
-          "pitfall": { "title": "Multiplicar os números nem sempre dá o MMC", "content": "4 × 6 = 24 é múltiplo comum de 4 e 6, mas não é o menor: o MMC é 12. O produto só coincide com o MMC quando os números não têm fator primo em comum, como 4 e 9 (MMC = 36)." }
+          "pitfall": { "title": "Multiplicar os números nem sempre dá o MMC", "content": "4 × 6 = 24 é múltiplo comum de 4 e 6, mas não é o menor: o MMC é 12. O produto só coincide com o MMC quando os números não têm fator primo em comum, como 4 e 9 (MMC = 36)." },
+          "extras": [
+            {
+              "type": "guided-steps",
+              "title": "Calcule passo a passo: MMC de 24 e 36",
+              "instructions": "Responda cada passo com um número inteiro.",
+              "steps": [
+                { "id": "exp24", "prompt": "Fatorando, 24 = 2 × 2 × 2 × 3. Quantas vezes o fator 2 aparece?", "expected": 3 },
+                { "id": "exp36", "prompt": "Fatorando, 36 = 2 × 2 × 3 × 3. Quantas vezes o fator 3 aparece?", "expected": 2 },
+                { "id": "pot2", "prompt": "No MMC, o 2 entra com o maior expoente entre 2³ e 2². Quanto vale essa potência?", "expected": 8 },
+                { "id": "pot3", "prompt": "O 3 entra com o maior expoente entre 3 e 3². Quanto vale essa potência?", "expected": 9 },
+                { "id": "mmc", "prompt": "Então, quanto é MMC(24, 36)?", "expected": 72 }
+              ],
+              "hints": ["Conte os fatores iguais: 2 × 2 × 2 é 2³ e 3 × 3 é 3².", "No MMC, cada primo entra uma vez, com o maior expoente: multiplique as duas potências."],
+              "explanation": "24 = 2³ × 3 e 36 = 2² × 3². Com os maiores expoentes: 2³ × 3² = 8 × 9 = 72. Conferência: 72 ÷ 24 = 3 e 72 ÷ 36 = 2."
+            }
+          ]
         },
         {
           "conceptId": "MAT.DIV.MDC",
@@ -80,7 +124,31 @@
             { "title": "Os ônibus do terminal", "content": "Linhas a cada 20 e 30 minutos saíram juntas às 6h.\n1. Ciclos que voltam a coincidir: MMC.\n2. 20 = 2² × 5 e 30 = 2 × 3 × 5.\n3. MMC = 2² × 3 × 5 = 60 minutos.\nResposta: saem juntas de novo às 7h." },
             { "title": "As fitas da costureira", "content": "Fitas de 90 cm e 120 cm, cortadas em pedaços iguais, do maior tamanho possível, sem sobras.\n1. Repartir em partes iguais, o maior possível: MDC.\n2. 90 = 2 × 3² × 5 e 120 = 2³ × 3 × 5.\n3. MDC = 2 × 3 × 5 = 30 cm.\nResposta: pedaços de 30 cm (3 de uma fita e 4 da outra, 7 no total)." }
           ],
-          "pitfall": { "title": "Confira o tamanho da resposta e o que foi pedido", "content": "Se num problema de repartir a resposta saiu maior que as quantidades que você tinha, você calculou o MMC no lugar do MDC: não dá para cortar pedaços de 360 cm de uma fita de 90 cm. Leia também a pergunta até o fim: ela quer o tamanho de cada parte ou o número de partes?" }
+          "pitfall": { "title": "Confira o tamanho da resposta e o que foi pedido", "content": "Se num problema de repartir a resposta saiu maior que as quantidades que você tinha, você calculou o MMC no lugar do MDC: não dá para cortar pedaços de 360 cm de uma fita de 90 cm. Leia também a pergunta até o fim: ela quer o tamanho de cada parte ou o número de partes?" },
+          "extras": [
+            { "type": "figure", "afterExample": 1, "file": "MAT-02/onibus-mmc.svg", "alt": "Duas linhas do tempo das 6h00 às 8h00 com as partidas das linhas de ônibus A e B", "caption": "As partidas coincidem a cada 60 minutos, que é o MMC de 20 e 30.", "longDescription": "Duas linhas do tempo vão das 6h00 às 8h00.\nLinha A, a cada 20 minutos: partidas às 6h00, 6h20, 6h40, 7h00, 7h20, 7h40 e 8h00.\nLinha B, a cada 30 minutos: partidas às 6h00, 6h30, 7h00, 7h30 e 8h00.\nFaixas amarelas marcam os horários em que as duas saem juntas: 6h00, 7h00 e 8h00. O intervalo entre esses encontros é 60 minutos, o MMC de 20 e 30." },
+            { "type": "figure", "afterExample": 2, "file": "MAT-02/fitas-mdc.svg", "alt": "Fitas de 90 cm e 120 cm divididas em pedaços de 30 cm, e a fita de 90 cm cortada em pedaços de 40 cm com sobra", "caption": "30 cm é o maior pedaço que cabe exatamente nas duas fitas: é o MDC de 90 e 120.", "longDescription": "As fitas estão desenhadas na mesma escala.\nA fita de 90 cm vira 3 pedaços de 30 cm, sem sobra. A fita de 120 cm vira 4 pedaços de 30 cm, sem sobra. São 7 pedaços no total.\nE se os pedaços tivessem 40 cm? O 40 cabe exatamente no 120, mas na fita de 90 cm saem 2 pedaços de 40 cm e sobram 10 cm. Por isso 40 não serve: o pedaço precisa dividir as duas medidas, e o maior que faz isso é 30 cm, o MDC." },
+            {
+              "type": "classification",
+              "title": "MMC ou MDC?",
+              "instructions": "Leia cada situação e decida qual cálculo resolve. Não precisa fazer a conta.",
+              "items": [
+                { "id": "semaforos", "label": "Dois semáforos abriram juntos agora. Um abre a cada 40 s e o outro a cada 60 s. Quando abrem juntos de novo?" },
+                { "id": "grupos", "label": "Dividir 24 meninas e 32 meninos em grupos do mesmo tamanho, o maior possível, sem misturar e sem sobrar ninguém." },
+                { "id": "feiras", "label": "Uma feira acontece a cada 15 dias e outra a cada 10 dias. Hoje houve as duas. Quando caem no mesmo dia de novo?" },
+                { "id": "pacotes", "label": "Repartir 48 pães de mel e 60 brigadeiros em pacotes iguais, o maior número possível de pacotes, sem sobrar doce." },
+                { "id": "piso", "label": "Cobrir um piso de 120 cm por 180 cm com quadrados iguais, os maiores possíveis, sem cortar nenhum." },
+                { "id": "figurinhas", "label": "Achar a menor quantidade de figurinhas que pode ser dividida igualmente tanto em pacotes de 8 quanto em pacotes de 12." }
+              ],
+              "destinations": [
+                { "id": "mmc", "label": "MMC: ciclos que coincidem ou menor múltiplo comum" },
+                { "id": "mdc", "label": "MDC: repartir em partes iguais, o maior possível" }
+              ],
+              "expected": { "semaforos": "mmc", "grupos": "mdc", "feiras": "mmc", "pacotes": "mdc", "piso": "mdc", "figurinhas": "mmc" },
+              "hints": ["Pergunte-se: a resposta vai ser maior ou menor que os números dados?", "Cuidado com a palavra \"dividida\": procurar o menor número que 8 e 12 dividem é procurar um múltiplo comum."],
+              "explanation": "Semáforos e feiras são ciclos que voltam a coincidir: MMC. Grupos, pacotes e quadrados do piso repartem quantidades em partes iguais, do maior tamanho possível: MDC. As figurinhas enganam: o menor número que se divide por 8 e por 12 é um múltiplo comum, então é MMC (24)."
+            }
+          ]
         }
       ],
       "summary": "Divisível quer dizer divisão exata, com resto 0.\nPor 3 e por 9, olhe a soma dos algarismos; por 6, o número precisa passar nos testes do 2 e do 3.\nPrimo tem exatamente dois divisores. O 1 não é primo, e o 2 é o único primo par.\nFatorar é escrever o número como produto de primos, por divisões sucessivas.\nMMC: todos os primos, cada um com o maior expoente. Serve para ciclos que voltam a coincidir.\nMDC: só os primos comuns, com o menor expoente. Serve para repartir em partes iguais, sem sobras.\nConfira sempre: MMC ≥ maior número e MDC ≤ menor número.",
@@ -102,6 +170,10 @@
         { "conceptIds": ["MAT.DIV.MODEL", "MAT.DIV.MMC"], "type": "mc", "difficulty": "ifsc", "ops": ["interpret", "apply"], "stimulus": "Em um terminal de ônibus de Joinville, a linha A parte a cada 15 minutos e a linha B parte a cada 25 minutos. Às 6h50, as duas linhas partiram ao mesmo tempo.", "stem": "Mantidos esses intervalos, em qual horário as duas linhas partirão juntas novamente pela primeira vez?", "choices": ["6h55", "7h15", "7h30", "8h05", "13h05"], "correct": 3, "hints": ["Partidas que se repetem e voltam a coincidir: qual ferramenta resolve?", "Calcule o MMC de 15 e 25 e some esse tempo a 6h50."], "explanation": "Ciclos que voltam a coincidir pedem o MMC. 15 = 3 × 5 e 25 = 5², então MMC = 3 × 5² = 75 minutos, ou 1h15. Somando a 6h50, as linhas partem juntas às 8h05. O 6h55 vem do MDC (5 min), o 7h30 vem de somar 15 + 25 e o 13h05 vem do produto 15 × 25 = 375 min, que é múltiplo comum, mas não o primeiro.", "exit": true },
         { "conceptIds": ["MAT.DIV.MDC", "MAT.DIV.MODEL", "MAT.DIV.FACTORIZATION"], "type": "num", "difficulty": "ifsc", "ops": ["interpret", "calculate"], "unit": "caixas", "stimulus": "Um produtor de São Joaquim separou 84 maçãs Fuji e 120 maçãs Gala para vender em caixas. Cada caixa terá maçãs de um único tipo, todas as caixas terão a mesma quantidade de maçãs, essa quantidade será a maior possível e nenhuma maçã pode sobrar.", "stem": "Quantas caixas o produtor vai usar ao todo?", "value": 17, "hints": ["A quantidade de maçãs por caixa deve ser a maior possível, sem sobras: MMC ou MDC?", "Calcule o MDC de 84 e 120 pela fatoração.", "Atenção: a pergunta é o número de caixas, não quantas maçãs vão em cada caixa."], "explanation": "Repartir em quantidades iguais, a maior possível, sem sobras, pede o MDC. 84 = 2² × 3 × 7 e 120 = 2³ × 3 × 5, então MDC = 2² × 3 = 12 maçãs por caixa. Caixas: 84 ÷ 12 = 7 de Fuji e 120 ÷ 12 = 10 de Gala, 17 no total. Quem responde 12 deu a quantidade de maçãs por caixa, não o número de caixas.", "exit": true },
         { "conceptIds": ["MAT.DIV.DIVISIBILITY", "MAT.DIV.MMC"], "type": "num", "difficulty": "ifsc", "ops": ["infer", "apply"], "stimulus": "O código do armário de Lúcia é o menor número de três algarismos que é divisível por 2, por 3 e por 5 ao mesmo tempo.", "stem": "Qual é o código do armário?", "value": 120, "hints": ["Ser divisível por 2 e por 5 ao mesmo tempo obriga o número a terminar em qual algarismo?", "Agora teste, a partir do 100, os números terminados nesse algarismo pelo critério do 3."], "explanation": "Divisível por 2 e por 5, o número termina em 0. Testando a partir do 100 pelo critério do 3: 100 (soma 1) não, 110 (soma 2) não, 120 (soma 3) sim. Outro caminho: o número precisa ser múltiplo de MMC(2, 3, 5) = 30, e o primeiro múltiplo de 30 com três algarismos é 30 × 4 = 120. Quem responde 30 esqueceu que o código tem três algarismos.", "exit": true }
+      ],
+      "opening": { "title": "Antes de começar", "content": "As duas linhas de ônibus saem juntas às 6h, uma a cada 20 minutos e outra a cada 30. Muita gente pensa que elas só vão se reencontrar depois de 20 × 30 = 600 minutos, isto é, 10 horas depois. Você concorda? Anote o horário que você acha certo. No fim da aula, você vai conferir." },
+      "integration": [
+        { "type": "prediction", "title": "Volte à sua previsão", "content": "No começo, você deu um palpite para o reencontro dos ônibus. Eles saem juntos de novo depois de MMC(20, 30) = 60 minutos, às 7h. Os 600 minutos de 20 × 30 também são um múltiplo comum, mas não o primeiro. E as fitas da costureira viram pedaços de 30 cm, o MDC de 90 e 120. Sua previsão bateu?" }
       ]
     }
   ]

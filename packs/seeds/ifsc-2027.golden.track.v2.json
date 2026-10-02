@@ -2419,6 +2419,16 @@
                 }
               },
               {
+                "id": "por01-opening",
+                "type": "prediction",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "title": "Antes de começar",
+                  "content": "O texto não diz que choveu. Mesmo assim, dá para concluir que Lia pegou chuva? Pense: quando é permitido ler nas entrelinhas, e quando isso vira invenção? Guarde sua resposta."
+                }
+              },
+              {
                 "id": "por01-explicit",
                 "type": "concept",
                 "schemaVersion": 1,
@@ -2438,6 +2448,24 @@
                   "conceptId": "POR.READ.INFER",
                   "title": "Possível não significa sustentado",
                   "content": "Informação explícita está escrita. Inferência liga pistas do texto a uma conclusão compatível. Uma alternativa plausível no mundo real pode estar errada se depender de dados que o texto não oferece."
+                }
+              },
+              {
+                "id": "por01-figure",
+                "type": "figure",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "POR.READ.EXPLICIT",
+                  "POR.READ.INFER"
+                ],
+                "payload": {
+                  "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTIwIiBmb250LWZhbWlseT0iQXJjaGl2bywgQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+CiAgPHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSI1MjAiIGZpbGw9IiNGRkZDRjUiLz4KICA8dGV4dCB4PSIzMiIgeT0iNDYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiMxNzE0MUYiPlRyw6pzIHRpcG9zIGRlIGFmaXJtYcOnw6NvIHNvYnJlIHVtIHRleHRvPC90ZXh0PgogIDx0ZXh0IHg9IjMyIiB5PSI3OCIgZm9udC1zaXplPSIxOCIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzVFNTg2OCI+VGV4dG86IExpYSBmZWNob3UgbyBndWFyZGEtY2h1dmEgZSBkZWl4b3UgbyBjYXNhY28gbW9saGFkby48L3RleHQ+CiAgPHJlY3QgeD0iMzIiIHk9IjEwNCIgd2lkdGg9IjU3NiIgaGVpZ2h0PSIxMTYiIHJ4PSIxNiIgZmlsbD0iI0M0RjAzQSIgc3Ryb2tlPSIjMTcxNDFGIiBzdHJva2Utd2lkdGg9IjMiLz4KICA8dGV4dCB4PSI1MiIgeT0iMTQwIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iODAwIiBmaWxsPSIjMTcxNDFGIj5FeHBsw61jaXRhOiBlc3TDoSBlc2NyaXRvPC90ZXh0PgogIDx0ZXh0IHg9IjUyIiB5PSIxNzIiIGZvbnQtc2l6ZT0iMTkiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMxNzE0MUYiPuKAnExpYSBmZWNob3UgbyBndWFyZGEtY2h1dmEu4oCdPC90ZXh0PgogIDx0ZXh0IHg9IjUyIiB5PSIyMDIiIGZvbnQtc2l6ZT0iMTciIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMxNzE0MUYiPlByb3ZhOiBhIHByw7NwcmlhIGZyYXNlIGRvIHRleHRvLjwvdGV4dD4KICA8cmVjdCB4PSIzMiIgeT0iMjM2IiB3aWR0aD0iNTc2IiBoZWlnaHQ9IjExNiIgcng9IjE2IiBmaWxsPSIjRkZENDNCIiBzdHJva2U9IiMxNzE0MUYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDx0ZXh0IHg9IjUyIiB5PSIyNzIiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiMxNzE0MUYiPkluZmVyw6puY2lhIHN1c3RlbnRhZGE6IHBpc3RhICsgY29uY2x1c8OjbzwvdGV4dD4KICA8dGV4dCB4PSI1MiIgeT0iMzA0IiBmb250LXNpemU9IjE5IiBmb250LXdlaWdodD0iNjAwIiBmaWxsPSIjMTcxNDFGIj7igJxMaWEgcHJvdmF2ZWxtZW50ZSBwZWdvdSBjaHV2YS7igJ08L3RleHQ+CiAgPHRleHQgeD0iNTIiIHk9IjMzNCIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzE3MTQxRiI+UHJvdmE6IGd1YXJkYS1jaHV2YSBlIGNhc2FjbyBtb2xoYWRvLjwvdGV4dD4KICA8cmVjdCB4PSIzMiIgeT0iMzY4IiB3aWR0aD0iNTc2IiBoZWlnaHQ9IjExNiIgcng9IjE2IiBmaWxsPSIjRkY4RkM4IiBzdHJva2U9IiMxNzE0MUYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDx0ZXh0IHg9IjUyIiB5PSI0MDQiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IiMxNzE0MUYiPlNlbSBhcG9pbzogdmVtIGRlIGZvcmEgZG8gdGV4dG88L3RleHQ+CiAgPHRleHQgeD0iNTIiIHk9IjQzNiIgZm9udC1zaXplPSIxOSIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzE3MTQxRiI+4oCcTGlhIG1vcmEgbG9uZ2UgZGEgYmlibGlvdGVjYS7igJ08L3RleHQ+CiAgPHRleHQgeD0iNTIiIHk9IjQ2NiIgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzE3MTQxRiI+UHJvdmE6IG5lbmh1bWE7IG8gdGV4dG8gbsOjbyBkaXogaXNzby48L3RleHQ+Cjwvc3ZnPgo=",
+                  "alt": "Três faixas comparando afirmação explícita, inferência sustentada e afirmação sem apoio sobre o texto de Lia",
+                  "caption": "Toda afirmação sobre um texto precisa de prova: a frase, uma pista ou nada.",
+                  "credit": "Ilustração própria (rascunho)",
+                  "longDescription": "Texto de base: Lia fechou o guarda-chuva e deixou o casaco molhado.\nExplícita: \"Lia fechou o guarda-chuva.\" A prova é a própria frase do texto.\nInferência sustentada: \"Lia provavelmente pegou chuva.\" A prova são as pistas: guarda-chuva e casaco molhado.\nSem apoio: \"Lia mora longe da biblioteca.\" Não há prova; o texto não diz isso.",
+                  "width": 640,
+                  "height": 520
                 }
               },
               {
@@ -2570,6 +2598,16 @@
                   "conceptId": "POR.READ.DISTRACTOR",
                   "title": "Como as alternativas erradas enganam",
                   "content": "Desconfie de alternativas que generalizam (todos, sempre, nunca), inventam uma causa, trocam quem disse o quê ou trazem algo verdadeiro no mundo, mas ausente do texto. Elimine cada uma com um motivo, apontando o que falta."
+                }
+              },
+              {
+                "id": "por01-return",
+                "type": "prediction",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "title": "Volte à sua previsão",
+                  "content": "Ler nas entrelinhas é permitido quando uma pista do texto sustenta a conclusão: o guarda-chuva e o casaco molhado autorizam pensar em chuva. Sem pista, a conclusão vira invenção. Sua previsão bateu?"
                 }
               },
               {

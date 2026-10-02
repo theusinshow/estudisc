@@ -13,3 +13,25 @@ export function publicationIssues(authorId:string, reviews:readonly (QaReview & 
     return review.findings.filter(f=>f.severity==="HIGH"||f.severity==="CRITICAL"||f.severity==="MEDIUM"&&!f.editorialOverrideReason).map(f=>`${layer}_${f.severity}`);
   });
 }
+
+type ProvenanceSource = Readonly<{ id: string; type: string; metadata?: Record<string, unknown> }>;
+type AuthoredQuestion = Readonly<{ provenance: Readonly<{ type: string; generationRunId?: string; examId?: string }> }>;
+type AuthoredLesson = Readonly<{ sourceIds: readonly string[] }>;
+
+/** ADR 0033: a release is attributed to whoever wrote the content, falling back to the importer. */
+export function releaseAuthor(
+  target: Readonly<{ kind: "question"; question: AuthoredQuestion } | { kind: "lesson"; lesson: AuthoredLesson } | { kind: "curriculum" }>,
+  sources: readonly ProvenanceSource[],
+  importerId: string
+) {
+  if (target.kind === "question") {
+    const { provenance } = target.question;
+    if (provenance.type === "generated" && provenance.generationRunId) return `ai:${provenance.generationRunId}`;
+    if (provenance.type === "official_exam" && provenance.examId) return `exam:${provenance.examId}`;
+  }
+  if (target.kind === "lesson") {
+    const runId = sources.find(source => target.lesson.sourceIds.includes(source.id) && source.type === "ai_generated" && typeof source.metadata?.authorRunId === "string")?.metadata?.authorRunId;
+    if (typeof runId === "string") return `ai:${runId}`;
+  }
+  return importerId;
+}

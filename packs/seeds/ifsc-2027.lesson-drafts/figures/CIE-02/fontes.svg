@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" font-family="Archivo, Arial, Helvetica, sans-serif">
+  <rect width="640" height="420" fill="#FFFCF5"/>
+  <text x="32" y="44" font-size="26" font-weight="800" fill="#17141F">Fontes de energia</text>
+  <rect x="24" y="64" width="288" height="300" fill="#FFFCF5" stroke="#17141F" stroke-width="3"/>
+  <rect x="24" y="64" width="288" height="72" fill="#14804A" stroke="#17141F" stroke-width="3"/>
+  <text x="168" y="96" font-size="24" font-weight="800" fill="#FFFCF5" text-anchor="middle">Renováveis</text>
+  <text x="168" y="124" font-size="18" font-weight="700" fill="#FFFCF5" text-anchor="middle">se repõem naturalmente</text>
+  <rect x="328" y="64" width="288" height="300" fill="#FFFCF5" stroke="#17141F" stroke-width="3"/>
+  <rect x="328" y="64" width="288" height="72" fill="#C8321F" stroke="#17141F" stroke-width="3"/>
+  <text x="472" y="96" font-size="24" font-weight="800" fill="#FFFCF5" text-anchor="middle">Não renováveis</text>
+  <text x="472" y="124" font-size="18" font-weight="700" fill="#FFFCF5" text-anchor="middle">estoque limitado</text>
+  <g fill="#14804A"><circle cx="46" cy="172" r="7"/><circle cx="46" cy="212" r="7"/><circle cx="46" cy="252" r="7"/><circle cx="46" cy="292" r="7"/><circle cx="46" cy="332" r="7"/></g>
+  <g font-size="19" font-weight="700" fill="#17141F">
+    <text x="62" y="179">Solar (luz do Sol)</text>
+    <text x="62" y="219">Eólica (vento)</text>
+    <text x="62" y="259">Hídrica (rios)</text>
+    <text x="62" y="299">Biomassa (bagaço)</text>
+    <text x="62" y="339">Geotérmica</text>
+  </g>
+  <g fill="#C8321F"><circle cx="350" cy="172" r="7"/><circle cx="350" cy="212" r="7"/><circle cx="350" cy="252" r="7"/><circle cx="350" cy="292" r="7"/></g>
+  <g font-size="19" font-weight="700" fill="#17141F">
+    <text x="366" y="179">Petróleo</text>
+    <text x="366" y="219">Gás natural</text>
+    <text x="366" y="259">Carvão mineral</text>
+    <text x="366" y="299">Urânio (nuclear)</text>
+  </g>
+  <text x="32" y="402" font-size="20" font-weight="800" fill="#17141F">O critério é o estoque, não a poluição.</text>
+</svg>

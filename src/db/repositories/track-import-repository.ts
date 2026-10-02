@@ -22,6 +22,7 @@ import type { TrackPack } from "@/features/import/application/track-pack-schema"
 import { curriculumFromV2 } from "@/features/import/application/track-pack-v2-validation";
 import { DrizzleCurriculumRepository } from "./curriculum-repository";
 import { DrizzleQuestionRepository } from "./question-repository";
+import { releaseAuthor } from "@/features/content-qa/policy";
 import { ContentQaRepository } from "./content-qa-repository";
 
 type TrackImportDatabase = PgDatabase<PgQueryResultHKT, typeof schema>;
@@ -178,10 +179,11 @@ export class DrizzleTrackImportRepository implements TrackImportRepository {
         await new DrizzleCurriculumRepository(tx).applyFoundation(track.id, curriculumFromV2(pack));
         await new DrizzleQuestionRepository(tx).importVersions(track.id, pack.questions);
         const qa=new ContentQaRepository(tx);
-        await qa.register(this.authorId,"curriculum",pack.track.id,pack.version);
-        for(const question of pack.questions)await qa.register(this.authorId,"question",question.id,question.version);
+        // ADR 0033: releases are attributed to the content's author (AI run, exam), not to whoever imported it.
+        await qa.register(releaseAuthor({kind:"curriculum"},pack.sources,this.authorId),"curriculum",pack.track.id,pack.version);
+        for(const question of pack.questions)await qa.register(releaseAuthor({kind:"question",question},pack.sources,this.authorId),"question",question.id,question.version);
         for(const lesson of pack.track.modules.flatMap(module=>module.lessons)){
-          const release=await qa.register(this.authorId,"lesson",lesson.id,lesson.version);
+          const release=await qa.register(releaseAuthor({kind:"lesson",lesson},pack.sources,this.authorId),"lesson",lesson.id,lesson.version);
           if(release.status==="published"){
             const rows=await tx.select().from(lessons).innerJoin(modules,eq(modules.id,lessons.moduleId)).where(and(eq(lessons.stableId,lesson.id),eq(lessons.contentVersion,lesson.version),eq(modules.trackId,track.id)));
             for(const row of rows)await tx.update(lessons).set({metadata:{...row.lessons.metadata as object,status:"published",qaReleaseId:release.id}}).where(eq(lessons.id,row.lessons.id));
