@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-01 — First-lesson dogfood fixes
+
+- Numeric answers accept a trailing `%`, unit word or `R$` prefix through one shared parser; the Question `unit` is shown beside the field.
+- Wrong answers show "Ainda não" without the worked solution and no longer mark the solution as revealed, keeping retries independent evidence; a correct answer locks resubmission until the answer changes.
+- Lessons end in a completion screen linking to the next lesson; the current step is kept in the URL hash (standalone lessons only, not study sessions).
+- The lesson progress card refreshes after each attempt (read-only `GET /api/lessons/[lessonId]/progress`) and shows the weakest practiced concept from `mastery.v2`; lesson completion still never sets mastery.
+- Track page: CTA to the first unfinished lesson, completed-lesson marks, pluralization, "nesta trilha"/"Aulas" wording; student-facing track description no longer carries the internal draft notice.
+- MAT-PREREQ draft: practice items differ from the worked examples, per-question hints, clearer decimal-to-percent example (still draft, unapproved).
+- Visual: full-width question cards in steps, single input label, stable scrollbar gutter.
+
 ## 2026-10-01 — IFSC local runtime and draft content
 
 - Extended existing renderer/registries/imports with educational interactions, Golden Lessons and immutable Questions.

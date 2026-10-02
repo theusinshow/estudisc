@@ -54,7 +54,7 @@ export function buildRecommendations({
       id: `continue:${firstTrack.stableId}`,
       kind: "continue",
       title: `Continuar ${firstTrack.title}`,
-      reason: "Próxima trilha disponível pelo catálogo importado.",
+      reason: "Retome a trilha pela próxima aula que falta concluir.",
       href: `/tracks/${firstTrack.stableId}`,
       priority: 30
     });

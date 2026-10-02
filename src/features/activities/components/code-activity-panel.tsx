@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { diffSourceLines } from "@/features/attempts/source-diff";
+import { ATTEMPT_RECORDED_EVENT } from "@/features/progress/live-progress-summary";
 import type { ActivityAttemptFeedback } from "@/features/activities/registry";
 
 type RequestErrorExecutionPayload = Readonly<{
@@ -119,6 +120,7 @@ export function CodeActivityPanel({
           submittedAt: new Date().toISOString()
         });
         setStatus(`SUBMIT registrou tentativa ${submission.attemptNumber}`);
+        window.dispatchEvent(new Event(ATTEMPT_RECORDED_EVENT));
         return;
       }
 

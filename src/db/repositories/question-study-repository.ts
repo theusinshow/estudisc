@@ -63,7 +63,7 @@ export class QuestionStudyRepository {
           if(identity?.stableId!==activity||conditions.questionId!==input.questionId||conditions.questionVersion!==input.questionVersion||input.sessionId&&conditions.contextKey!==input.sessionId||hashCanonicalJson(previous.response)!==hashCanonicalJson({answer:input.response}))throw new SubmissionConflictError();
           const [exam]=await tx.select().from(assessmentInstances).where(and(eq(assessmentInstances.ownerId,ownerId),eq(assessmentInstances.status,"ACTIVE"),eq(assessmentInstances.mode,"EXAM")));if(exam)throw new QuestionUnavailableError();
           const bank=await new DrizzleQuestionRepository(tx).getVersion(input.questionId,input.questionVersion);
-          return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:bank?.question.explanation};
+          return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:previous.outcome==="passed"?bank?.question.explanation:undefined};
         }
       }
       const ctx=await new QuestionStudyRepository(tx).context(ownerId,activity,input.questionId,input.questionVersion,input.sessionId);
@@ -77,7 +77,7 @@ export class QuestionStudyRepository {
         return input.action==="hint"?{hintLevel,hint:ctx.config.hints[hintLevel-1]}:{correct:false,explanation:ctx.question.explanation??"Solução ainda não disponível."};
       }
       const [previous]=await tx.select().from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.submissionKey,input.submissionKey)));
-      if(previous){if(previous.activityId!==ctx.activity.id||hashCanonicalJson(previous.response)!==hashCanonicalJson({answer:input.response}))throw new SubmissionConflictError();return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:ctx.question.explanation};}
+      if(previous){if(previous.activityId!==ctx.activity.id||hashCanonicalJson(previous.response)!==hashCanonicalJson({answer:input.response}))throw new SubmissionConflictError();return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:previous.outcome==="passed"?ctx.question.explanation:undefined};}
       const evaluation=evaluateQuestion(ctx.question,input.response);
       if(!evaluation.evidenceEligible)throw new QuestionUnavailableError();
       const [number]=await tx.select({value:count()}).from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.activityId,ctx.activity.id)));
@@ -100,8 +100,9 @@ export class QuestionStudyRepository {
         if(!evaluation.correct)await tx.insert(mistakes).values({ownerId,conceptId:concept.id,attemptId:attempt.id,category:ctx.question.type==="numeric"?"CALCULATION":"INTERPRETATION",summary:"Rever o raciocínio desta questão."});
       }
       await tx.insert(studyEvents).values({ownerId,type:"activity_submitted",entityType:"activity",entityId:ctx.activity.stableId,payload:{attemptId:attempt.id,outcome:evaluation.outcome,sessionId:input.sessionId??null}});
-      await tx.update(questionAssistance).set({solutionRevealed:1,updatedAt:new Date()}).where(where);
-      return {attemptId:attempt.id,correct:evaluation.correct,explanation:ctx.question.explanation};
+      // A wrong answer does not show the worked solution, so a retry still counts as independent evidence.
+      if(evaluation.correct)await tx.update(questionAssistance).set({solutionRevealed:1,updatedAt:new Date()}).where(where);
+      return {attemptId:attempt.id,correct:evaluation.correct,explanation:evaluation.correct?ctx.question.explanation:undefined};
     });
   }
 }

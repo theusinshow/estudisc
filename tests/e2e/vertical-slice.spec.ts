@@ -51,7 +51,7 @@ test("mobile catalog and progress keep a visible continuation path", async ({ pa
   await page.setViewportSize({ width: 375, height: 812 });
   await page.goto("/tracks/javascript");
 
-  const continueLesson = page.getByRole("link", { name: /Continuar pela primeira aula/ });
+  const continueLesson = page.getByRole("link", { name: /Começar pela primeira aula|Continuar pela próxima aula/ });
   await expect(continueLesson).toBeVisible();
   await expect(continueLesson).toContainText("Variáveis, tipos e operadores");
   await expect
@@ -80,7 +80,7 @@ test("imports a Track Pack, browses the lesson, runs code, submits and shows his
   await page.goto("/tracks/javascript");
 
   await expect(page.getByRole("heading", { name: "JavaScript" })).toBeVisible();
-  await expect(page.getByRole("link", { name: /Variáveis, tipos e operadores/ })).toBeVisible();
+  await expect(page.getByRole("link", { name: /^Variáveis, tipos e operadores/ })).toBeVisible();
   await page.goto("/lessons/js-fundamentals-001");
 
   await expect(page.getByRole("heading", { name: "Variáveis, tipos e operadores" })).toBeVisible();
@@ -89,7 +89,7 @@ test("imports a Track Pack, browses the lesson, runs code, submits and shows his
   await expect(page.getByRole("heading", { name: "Logical AND" })).toBeVisible();
   await expect(page.getByLabel("Mastery do conceito")).toContainText("POLICY mastery.v1");
   await expect(page.getByLabel("Mastery do conceito")).toContainText(/Não visto|Entendido|Praticando/);
-  await page.getByRole("link", { name: /Variáveis, tipos e operadores/ }).click();
+  await page.getByRole("link", { name: /^Variáveis, tipos e operadores/ }).click();
 
   await expect(page.getByRole("heading", { name: "Variáveis, tipos e operadores" })).toBeVisible();
   await expect(page.getByRole("heading", { name: /Crie uma condição/ })).toBeVisible();
@@ -132,7 +132,9 @@ test("imports a Track Pack, browses the lesson, runs code, submits and shows his
   await reloadedDebugPanel.getByText("Terminal, testes e diff").click();
   await expect(page.getByLabel("Progresso")).toContainText("Atividades aprovadas");
   await expect(page.getByLabel("Progresso")).toContainText("2/2");
-  await expect(page.getByLabel("Progresso")).toContainText("Ainda não calculado");
+  // Passing every activity in one sitting is evidence, not mastery: the policy label must stay below "Dominado".
+  await expect(page.getByLabel("Progresso")).toContainText("Domínio dos conceitos");
+  await expect(page.getByLabel("Progresso")).not.toContainText("Dominado");
   await expect(page.getByLabel("Estado da sessão de estudo")).toContainText("Todas as atividades desta aula foram aprovadas");
 
   await page.setViewportSize({ width: 375, height: 812 });
@@ -154,7 +156,7 @@ test("imports a Track Pack, browses the lesson, runs code, submits and shows his
   await expect(page.getByLabel("Mastery do conceito")).toContainText("evidência registrada");
 
   await page.goto("/tracks/javascript");
-  await expect(page.getByLabel("Progresso")).toContainText("Lições concluídas");
+  await expect(page.getByLabel("Progresso")).toContainText("Aulas concluídas");
   await expect(page.getByLabel("Progresso")).toContainText("1/1");
 
   await page.getByText("Mais", { exact: true }).click();

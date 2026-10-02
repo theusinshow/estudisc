@@ -39,7 +39,7 @@ export class MemoryQuestionStudyRepository {
     if(input.action==="hint"){assistance.hintLevel=Math.min(ctx.config.hints.length,assistance.hintLevel+1);return {hintLevel:assistance.hintLevel,hint:ctx.config.hints[assistance.hintLevel-1]};}
     if(input.action==="solution"){assistance.solutionRevealed=true;return {correct:false,explanation:ctx.question.explanation};}
     const previous=this.store.attempts.find(attempt=>attempt.ownerId===ownerId&&attempt.submissionKey===input.submissionKey);
-    if(previous){if(previous.activityStableId!==activityId||JSON.stringify(previous.response)!==JSON.stringify(input.response))throw new SubmissionConflictError();return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:ctx.question.explanation};}
+    if(previous){if(previous.activityStableId!==activityId||JSON.stringify(previous.response)!==JSON.stringify(input.response))throw new SubmissionConflictError();return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:previous.outcome==="passed"?ctx.question.explanation:undefined};}
     const evaluation=evaluateQuestion(ctx.question,input.response); if(!evaluation.evidenceEligible)throw new QuestionUnavailableError();
     const id=crypto.randomUUID();const now=new Date();
     const conditions={policyVersion:MASTERY_V2,outcome:evaluation.outcome,hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed,difficulty:ctx.question.difficulty,mode:"learn",questionId:ctx.question.id,questionVersion:ctx.question.version,contextKey:ctx.contextKey};
@@ -56,7 +56,8 @@ export class MemoryQuestionStudyRepository {
       else this.store.reviewSchedules.push({ownerId,conceptStableId,currentMasteryState:evaluation.correct?"understood":"introduced",lastReviewedAt:null,nextReviewAt:schedule.nextReviewAt,reviewCount:0,recentQuality:evaluation.correct?3:1,policyVersion:REVIEW_V2,updatedAt:now,metadata:{stage:schedule.stage,stabilityDays:schedule.stabilityDays}});
       if(!evaluation.correct)this.store.mistakes.push({id:crypto.randomUUID(),ownerId,conceptStableId,attemptId:id,category:ctx.question.type==="numeric"?"CALCULATION":"INTERPRETATION",summary:"Rever o raciocínio desta questão.",status:"active",createdAt:now,resolvedAt:null});
     }
-    assistance.solutionRevealed=true;
-    return {attemptId:id,correct:evaluation.correct,explanation:ctx.question.explanation};
+    // A wrong answer does not show the worked solution, so a retry still counts as independent evidence.
+    if(evaluation.correct)assistance.solutionRevealed=true;
+    return {attemptId:id,correct:evaluation.correct,explanation:evaluation.correct?ctx.question.explanation:undefined};
   }
 }

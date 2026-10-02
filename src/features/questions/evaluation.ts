@@ -1,4 +1,5 @@
 import type { Question } from "./contracts";
+import { parseNumericResponse } from "@/features/activities/application/numeric-response";
 
 export const QUESTION_EVALUATOR_VERSION = "question.v1";
 export function evaluateQuestion(question: Question, response: unknown) {
@@ -6,7 +7,7 @@ export function evaluateQuestion(question: Question, response: unknown) {
   const answer = question.answer;
   let correct = false;
   if (answer.kind === "numeric") {
-    const raw = typeof response === "number" ? response : typeof response === "string" && /^[-+]?\d+(?:[.,]\d+)?$/.test(response.trim()) ? Number(response.trim().replace(",", ".")) : NaN;
+    const raw = parseNumericResponse(response);
     correct = Number.isFinite(raw) && Math.abs(raw - answer.value) <= answer.tolerance;
   } else if (answer.kind === "multiple_choice") correct = response === answer.choiceId;
   else if (answer.kind === "ordering") correct = Array.isArray(response) && JSON.stringify(response) === JSON.stringify(answer.orderedIds);

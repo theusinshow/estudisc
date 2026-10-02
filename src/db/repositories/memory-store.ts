@@ -1226,15 +1226,17 @@ export class MemoryProgressRepository {
     const passedActivityIds = new Set(
       attemptRows.filter((attempt) => attempt.outcome === "passed").map((attempt) => attempt.activityStableId)
     );
-    const completedLessons = Array.from(activitiesByLesson.values()).filter(
-      (lessonActivityIds) =>
+    const completedLessonStableIds = Array.from(activitiesByLesson).filter(
+      ([, lessonActivityIds]) =>
         lessonActivityIds.length > 0 && lessonActivityIds.every((activityId) => passedActivityIds.has(activityId))
-    ).length;
+    ).map(([lessonStableId]) => lessonStableId);
+    const completedLessons = completedLessonStableIds.length;
 
     return {
       trackStableId: track.stableId,
       totalLessons: lessonIds.length,
       completedLessons,
+      completedLessonStableIds,
       totalActivities: activityIds.length,
       attemptedActivities: new Set(attemptRows.map((attempt) => attempt.activityStableId)).size,
       passedActivities: passedActivityIds.size,

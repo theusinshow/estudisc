@@ -2,14 +2,14 @@ import type { ReactNode } from "react";
 
 import { ActivityList, type ActivityRecord } from "@/features/activities/registry";
 import { LessonBlockRenderer, type ImportedLessonBlock } from "./blocks";
-import { LessonStepper, type LessonStep } from "./lesson-stepper";
+import { LessonStepper, type LessonCompletion, type LessonStep } from "./lesson-stepper";
 
 const blockKind: Record<string, LessonStep["kind"]> = { concept: "concept", "worked-example": "example", example: "example", warning: "warning", summary: "summary" };
 const stepLabel: Record<LessonStep["kind"], string> = { intro: "Para começar", concept: "Conceito", example: "Exemplo resolvido", warning: "Cuidado", summary: "Resumo", check: "Checagem rápida", practice: "Prática", exit: "Desafio final", interaction: "Atividade" };
 const config = (activity: ActivityRecord) => (activity.config ?? {}) as { phase?: string; checkpointFor?: string };
 
 /** Turns the existing lesson blocks and activities into one-idea-per-screen steps. Content-driven, no subject branches. */
-export function LessonSteps({ blocks, activities }: Readonly<{ blocks: ReadonlyArray<ImportedLessonBlock>; activities: ReadonlyArray<ActivityRecord> }>) {
+export function LessonSteps({ blocks, activities, completion }: Readonly<{ blocks: ReadonlyArray<ImportedLessonBlock>; activities: ReadonlyArray<ActivityRecord>; completion?: LessonCompletion }>) {
   const steps: Array<Omit<LessonStep, "label"> & { node: ReactNode }> = [];
   const used = new Set<string>();
   let pendingText: ImportedLessonBlock[] = [];
@@ -34,5 +34,5 @@ export function LessonSteps({ blocks, activities }: Readonly<{ blocks: ReadonlyA
   const remaining = activities.filter(activity => !used.has(activity.stableId));
   for (const exit of [false, true]) for (const activity of remaining) if ((config(activity).phase === "exit_ticket") === exit) steps.push({ id: activity.stableId, kind: exit ? "exit" : "practice", node: <ActivityList activities={[activity]} /> });
 
-  return <LessonStepper steps={steps.map(step => ({ ...step, label: stepLabel[step.kind] }))} />;
+  return <LessonStepper steps={steps.map(step => ({ ...step, label: stepLabel[step.kind] }))} completion={completion} />;
 }

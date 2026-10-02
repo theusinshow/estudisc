@@ -6,8 +6,9 @@ import { ActivityList } from "@/features/activities/registry";
 import { getLesson } from "@/features/lessons/api";
 import { LessonBlockList } from "@/features/lessons/blocks";
 import { getLessonProgress } from "@/features/progress/api";
-import { ProgressSummary } from "@/features/progress/progress-summary";
+import { LiveLessonProgress } from "@/features/progress/live-progress-summary";
 import { LessonSteps } from "@/features/lessons/lesson-steps";
+import { getTrack } from "@/features/tracks/api";
 
 type LessonPageProps = Readonly<{
   params: Promise<{ lessonId: string }>;
@@ -15,11 +16,21 @@ type LessonPageProps = Readonly<{
 
 export default async function LessonPage({ params }: LessonPageProps) {
   const { lessonId } = await params;
-  const [lesson, progress] = await Promise.all([getLesson(lessonId), getLessonProgress(lessonId)]);
+  const lesson = await getLesson(lessonId);
 
   if (!lesson) {
     notFound();
   }
+  const [progress, track] = await Promise.all([
+    getLessonProgress(lesson.stableId, lesson.concepts.map((concept) => concept.stableId)),
+    getTrack(lesson.trackStableId)
+  ]);
+  const trackLessons = track?.modules.flatMap((module) => module.lessons) ?? [];
+  const next = trackLessons[trackLessons.findIndex((entry) => entry.stableId === lesson.stableId) + 1];
+  const completion = {
+    trackHref: `/tracks/${lesson.trackStableId}`,
+    nextLesson: next && trackLessons.some((entry) => entry.stableId === lesson.stableId) ? { href: `/lessons/${next.stableId}`, title: next.title } : undefined
+  };
   // Study lessons get the one-idea-per-screen flow; programming lessons keep the Lab layout.
   const stepped = !lesson.activities.some(activity => activity.type === "code" || activity.type === "debug");
 
@@ -29,11 +40,11 @@ export default async function LessonPage({ params }: LessonPageProps) {
         <p className="eyebrow">{lesson.trackTitle}</p>
         <h1 id="lesson-title">{lesson.title}</h1>
         {Boolean(lesson.metadata?.kind)&&(!lesson.metadata?.qaReleaseId||lesson.metadata?.status!=="published")&&<p className="learning-hint">Prévia administrativa · conteúdo aguardando QA independente.</p>}
-        <ProgressSummary progress={progress} />
+        <LiveLessonProgress lessonStableId={lesson.stableId} initial={progress} />
         {!stepped && <LessonSessionCallout progress={progress} />}
 
         {stepped ? (
-          <LessonSteps blocks={lesson.blocks} activities={lesson.activities} />
+          <LessonSteps blocks={lesson.blocks} activities={lesson.activities} completion={completion} />
         ) : (
           <>
         <nav className="lesson-flow-nav" aria-label="Fluxo da aula">

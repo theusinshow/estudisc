@@ -26,6 +26,19 @@ IFSC-14 lesson drafts (2026-10-01, Claude Code): author the 63 missing Lessons a
 
 User scope change (2026-10-01): author only one test week of lessons to save tokens. Delivered drafts: MAT-01, MAT-02, MAT-03, MAT-04, MAT-05, MAT-06, MAT-08, MAT-09, MAT-10 (99 draft Questions). Together with the Golden lessons, these give 14 study lessons. The other 54 Lessons stay inventory-only (`contentGaps` in `coverage.inventory.json`). The test week is mostly Math; POR/CIE/GH have only their Golden Lesson. Also fixed: the 2025.2 OCR page footer leaked into 20 official items (ingestion header filter). `scripts/audit-ifsc-official-bank.mjs` writes a human pre-review checklist to `.local/ifsc-official/official-review.checklist.json`.
 
+First-lesson dogfood fixes (2026-10-01, Claude Code): a simulated student run of `MAT-PREREQ` found 18 issues; the user asked to fix them one by one. Increments, each with focused validation:
+- [x] F1 numeric answers accept a trailing `%` or unit word ("75%", "4 copos"); one shared parser; `unit` shown beside the field.
+- [x] F2 last step ends in a completion panel linking to the next lesson / track instead of a disabled "Fim da aula".
+- [x] F3 lesson progress shows real concept mastery (mastery.v2 via existing evidence), never lesson completion as mastery.
+- [x] F4/F5 progress refreshes after an attempt (`router.refresh`); a correct answer locks resubmission until the answer changes.
+- [x] F6 current step survives reload (URL hash `#passo-N`).
+- [x] F7 track CTA points to the first unfinished lesson; lesson cards mark completed lessons.
+- [x] F8 copy: pluralization, "nesta trilha", "aulas" wording, no "catálogo importado" jargon, no internal draft notice in the student track description.
+- [x] F9 incorrect feedback no longer reveals the worked answer (keeps retries independent; `solutionRevealed` only when the explanation is actually shown).
+- [x] F10 draft content: MAT-PREREQ practice differs from the worked example, per-question hints, clearer 0,75/75% sentence (stays draft).
+- [x] F11 visual: question card full width, single field label, stable scrollbar gutter.
+Not changed: mistakes stay active until resolved in /mistakes (deliberate error notebook); "Próximo" stays enabled on practice steps (skipping is allowed by design). Validation: 143 tests / 3 skipped (baseline), lint/typecheck/build, mobile E2E percentage-study/shell/vertical-slice passed; vertical-slice Lab RUN step is a pre-existing intermittent failure (also at HEAD).
+
 NEXT ACTION (previous): ingest/classify the four Integrated historical exams and definitive keys, preserve private assets, enforce reserved benchmarks and retain 2025.1 Q15 as annulled. Then seed simulations and connect publication QA. Assessment engine focused integration passed. Golden draft rendering/evaluation checks passed; independent publication QA remains pending. Planner functional policy checks passed; final QA readiness certification remains pending IFSC-12. MAT-07 source is draft; independent content QA/publication remains a visible acceptance item. Historical V1 plans below are retained as history, not the active roadmap.
 
 This file is the durable control surface for the current multi-step implementation task. Keep it current so a new Codex session can resume without asking the user to restate decisions.

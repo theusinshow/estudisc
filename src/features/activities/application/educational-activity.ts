@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { parseNumericResponse } from "./numeric-response";
 
 const item = z.object({ id: z.string().min(1), label: z.string().min(1) }).strict();
 const items = z.array(item).min(1).max(60).refine(values => new Set(values.map(item => item.id)).size === values.length, "Duplicate item ID");
@@ -28,7 +29,7 @@ export function evaluateEducationalActivity(config: EducationalActivityConfig, r
   let correct = false;
   if (config.type === "multiple-choice") correct = response === config.expectedChoice;
   else if (config.type === "numeric") {
-    const raw = typeof response === "number" ? response : typeof response === "string" && /^[-+]?\d+(?:[.,]\d+)?$/.test(response.trim()) ? Number(response.trim().replace(",", ".")) : NaN;
+    const raw = parseNumericResponse(response);
     correct = Number.isFinite(raw) && Math.abs(raw - config.expected) <= config.tolerance;
   } else if (config.type === "ordering") correct = JSON.stringify(response) === JSON.stringify(config.expectedOrder);
   else if (config.type === "text-highlight") correct = Array.isArray(response) && response.every(id => typeof id === "string") && JSON.stringify([...response].sort()) === JSON.stringify([...config.expectedIds].sort());

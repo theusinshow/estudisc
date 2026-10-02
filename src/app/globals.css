@@ -1500,6 +1500,7 @@ a {
    subject fills on warm paper. Layout shell, base controls and Today.
    ========================================================================== */
 html {
+  scrollbar-gutter: stable;
   min-width: 320px;
   background: var(--kos-color-paper);
   color: var(--kos-color-ink);
@@ -1671,6 +1672,8 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .learning-field { display: grid; gap: var(--kos-spacing-4); font-weight: 700; }
 .learning-field input, .learning-field select { width: 100%; min-height: 56px; padding: 0 var(--kos-spacing-8); border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-interactive); background: var(--kos-color-paper); color: var(--kos-color-ink); font: inherit; font-size: 1.125rem; }
 .learning-field input:focus, .learning-field select:focus { background: var(--kos-color-panel); box-shadow: var(--kos-shadow-structural); outline: none; }
+.numeric-input { display: flex; align-items: center; gap: var(--kos-spacing-4); }
+.numeric-unit { font-size: 1.125rem; font-weight: 700; }
 .learning-answer { display: flex; align-items: center; gap: var(--kos-spacing-8); width: 100%; min-height: 56px; margin: 0; padding: var(--kos-spacing-6) var(--kos-spacing-8); border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-interactive); background: var(--kos-color-paper); color: var(--kos-color-ink); font-weight: 500; text-align: left; cursor: pointer; transition: transform var(--kos-motion-fast) var(--kos-motion-easing), box-shadow var(--kos-motion-fast) var(--kos-motion-easing); }
 .learning-answer:hover { box-shadow: var(--kos-shadow-structural); transform: translate(-1px, -1px); }
 .learning-answer input { flex: none; width: 22px; height: 22px; margin: 0; accent-color: var(--kos-color-ink); }
@@ -1857,6 +1860,14 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 @media (min-width: 900px) { .stepper-nav { bottom: 0; } }
 .stepper-nav .primary-button { background: var(--kos-color-ink); color: var(--kos-color-paper); min-height: 56px; font-size: 1.0625rem; }
 .stepper-nav button { min-height: 56px; }
+.stepper-nav:has(> :only-child) { grid-template-columns: 1fr; }
+/* Inside a lesson step the question card matches the step column instead of a narrower 72ch box. */
+.lesson-step .learning-interaction { max-width: none; }
+.lesson-complete { display: grid; align-content: start; min-height: 0; gap: var(--kos-spacing-8); padding: var(--kos-spacing-12); border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-sheet); background: var(--kos-color-panel); box-shadow: var(--kos-shadow-raised); }
+.lesson-complete h2 { margin: 0; font-size: 1.5rem; font-weight: 800; line-height: 1.2; }
+.lesson-complete p { margin: 0; line-height: 1.6; }
+.lesson-complete-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--kos-spacing-6) var(--kos-spacing-10); }
+.lesson-complete-actions .primary-button { display: inline-flex; align-items: center; gap: var(--kos-spacing-4); min-height: 56px; padding: 0 var(--kos-spacing-10); text-decoration: none; }
 .lesson-step > .lesson-text, .lesson-step .lesson-text { max-width: 65ch; margin: 0; padding: 0; border: 0; background: none; box-shadow: none; font-size: 1.125rem; line-height: 1.65; }
 
 /* Progress bars use native <progress>: the CSP blocks inline style attributes. */

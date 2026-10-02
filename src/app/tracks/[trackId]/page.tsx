@@ -18,7 +18,10 @@ export default async function TrackPage({ params }: TrackPageProps) {
     notFound();
   }
 
-  const firstLesson = track.modules.flatMap((module) => module.lessons).at(0);
+  const lessons = track.modules.flatMap((module) => module.lessons);
+  const completed = new Set(progress?.completedLessonStableIds ?? []);
+  const nextLesson = lessons.find((lesson) => !completed.has(lesson.stableId));
+  const started = completed.size > 0;
 
   return (
     <AppShell>
@@ -28,15 +31,16 @@ export default async function TrackPage({ params }: TrackPageProps) {
         <p>{track.description}</p>
         <ProgressSummary progress={progress} />
 
-        {firstLesson ? (
-          <Link
-            aria-label="Continuar pela primeira aula"
-            className="today-action study-next-action"
-            href={`/lessons/${firstLesson.stableId}`}
-          >
-            <strong>Continuar pela primeira aula</strong>
-            <span>{firstLesson.title}</span>
+        {nextLesson ? (
+          <Link className="today-action study-next-action" href={`/lessons/${nextLesson.stableId}`}>
+            <strong>{started ? "Continuar pela próxima aula" : "Começar pela primeira aula"}</strong>
+            <span>{nextLesson.title}</span>
           </Link>
+        ) : lessons.length ? (
+          <p className="today-action study-next-action">
+            <strong>Todas as aulas desta trilha foram concluídas</strong>
+            <span>Continue pelas revisões na tela Hoje.</span>
+          </p>
         ) : null}
 
         <div className="module-stack" aria-label="Módulos da trilha">
@@ -45,14 +49,17 @@ export default async function TrackPage({ params }: TrackPageProps) {
               <summary aria-labelledby={`module-${module.stableId}`}>
                 <span className="technical-label">Módulo {moduleIndex + 1}</span>
                 <h2 id={`module-${module.stableId}`}>{module.title}</h2>
-                <span>{module.lessons.length} aulas</span>
+                <span>{plural(module.lessons.length, "aula", "aulas")}</span>
               </summary>
               <ol className="record-list">
                 {module.lessons.map((lesson) => (
                   <li key={lesson.stableId}>
-                    <Link href={`/lessons/${lesson.stableId}`}>
+                    <Link href={`/lessons/${lesson.stableId}`} data-complete={completed.has(lesson.stableId) || undefined}>
                       <strong>{lesson.title}</strong>
-                      <span>{lesson.activityCount} atividade disponível</span>
+                      <span>
+                        {completed.has(lesson.stableId) ? "Concluída · " : ""}
+                        {plural(lesson.activityCount, "atividade", "atividades")}
+                      </span>
                     </Link>
                   </li>
                 ))}
@@ -63,4 +70,8 @@ export default async function TrackPage({ params }: TrackPageProps) {
       </section>
     </AppShell>
   );
+}
+
+function plural(count: number, singular: string, pluralForm: string) {
+  return `${count} ${count === 1 ? singular : pluralForm}`;
 }

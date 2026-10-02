@@ -16,6 +16,8 @@ Update (2026-10-01, Claude Code): one test week of AI-assisted **draft** lessons
 
 UI update (2026-10-01): ADR 0030 neo-brutalist refresh was applied to the student shell, Today, study session, lesson blocks, questions, lists and Progress. Validation: component tests 15/15, the token test, typecheck and lint passed, and the mobile E2E shell and percentage-session specs passed 5/5. The Lab, import and admin screens inherit the tokens but have not had a dedicated design pass.
 
+Dogfood fixes (2026-10-01, Claude Code): a simulated student run of the first lesson (`MAT-PREREQ`) found 18 issues, all addressed: numeric answers accept `75%`/`4 copos`; wrong answers no longer reveal the solution (retries stay independent evidence); the lesson ends in a completion screen linking to the next lesson; the step survives reload (`#passo-N`); the progress card refreshes live via read-only `GET /api/lessons/[id]/progress` and shows the weakest practiced concept from `mastery.v2`; the track CTA targets the first unfinished lesson; copy/plural/visual fixes. MAT-PREREQ draft practice no longer repeats its worked examples and has per-question hints (still draft). Validation: 143 tests passed / 3 skipped (environmental, same as baseline), lint/typecheck/build passed, mobile E2E `percentage-study`, `shell` and `vertical-slice` passed. Known pre-existing flake: the Lab RUN step in `vertical-slice.spec.ts:70` intermittently misses "RUN concluído sem registrar tentativa" (also fails at HEAD 93243e7).
+
 NEXT ACTION: human editorial production/review using the private source pack and `/admin`; publish only through independent QA. See `docs/ifsc/LOCAL-DELIVERY.md`. The older V1 status below is historical.
 
 Last updated: 2026-08-05

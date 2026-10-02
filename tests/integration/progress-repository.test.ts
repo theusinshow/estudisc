@@ -52,6 +52,7 @@ describe("ProgressRepository", () => {
       {
         totalLessons: 1,
         completedLessons: 0,
+        completedLessonStableIds: [],
         totalActivities: 2,
         attemptedActivities: 1,
         passedActivities: 1,

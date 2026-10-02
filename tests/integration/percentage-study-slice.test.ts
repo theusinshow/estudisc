@@ -24,13 +24,18 @@ it("completes the percentage slice, deduplicates retries and isolates owners",as
     const frozen=session!.items;expect((await sessions.plan("student-a",30))!.items).toEqual(frozen);
     const view=await questions.view("student-a","mat07-q3","Q-MAT-GOLDEN-3",1,session!.id);
     expect(view.question).not.toHaveProperty("answer");expect(view.question).not.toHaveProperty("explanation");
-    const input={questionId:"Q-MAT-GOLDEN-3",questionVersion:1,action:"submit" as const,submissionKey:crypto.randomUUID(),response:"30",sessionId:session!.id};
-    const first=await questions.interact("student-a","mat07-q3",input);expect(first).toMatchObject({correct:true});
+    // A wrong answer hides the worked solution, so the corrected retry is still independent evidence.
+    const wrong=await questions.interact("student-a","mat07-q3",{questionId:"Q-MAT-GOLDEN-3",questionVersion:1,action:"submit",submissionKey:crypto.randomUUID(),response:"29",sessionId:session!.id});
+    expect(wrong).toMatchObject({correct:false});expect(wrong.explanation).toBeUndefined();
+    const input={questionId:"Q-MAT-GOLDEN-3",questionVersion:1,action:"submit" as const,submissionKey:crypto.randomUUID(),response:"30 %",sessionId:session!.id};
+    const first=await questions.interact("student-a","mat07-q3",input);expect(first).toMatchObject({correct:true});expect(first.explanation).toBeTruthy();
+    const passedEvidence=(await database.db.select().from(conceptEvidence)).filter(item=>item.sourceType==="question_attempt"&&(item.conditions as Record<string,unknown>).outcome==="passed");
+    expect(passedEvidence.length).toBeGreaterThan(0);expect(passedEvidence.every(item=>(item.conditions as Record<string,unknown>).solutionRevealed===false)).toBe(true);
     expect(await questions.interact("student-a","mat07-q3",input)).toEqual(first);
     await expect(questions.interact("student-a","mat07-q3",{...input,response:"31"})).rejects.toThrow("Submission key");
     await expect(questions.interact("student-b","mat07-q3",input)).rejects.toThrow("unavailable");
-    expect(await database.db.select().from(attempts)).toHaveLength(1);
-    expect(await database.db.select().from(conceptEvidence)).toHaveLength(4);
+    expect(await database.db.select().from(attempts)).toHaveLength(2);
+    expect(await database.db.select().from(conceptEvidence)).toHaveLength(5);
     expect(await database.db.select().from(reviewSchedules)).toHaveLength(1);
     await sessions.transition("student-a",session!.id,"complete");expect((await sessions.result("student-a",session!.id))!).toMatchObject({answered:1,correct:1});
     await expect(sessions.transition("student-a",session!.id,"start")).rejects.toThrow("Session state");

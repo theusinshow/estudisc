@@ -19,6 +19,7 @@ export type TrackProgressSummary = Readonly<{
   trackStableId: string;
   totalLessons: number;
   completedLessons: number;
+  completedLessonStableIds: readonly string[];
   totalActivities: number;
   attemptedActivities: number;
   passedActivities: number;
@@ -71,7 +72,7 @@ export class ProgressRepository {
 
     const rows = await this.db
       .select({
-        lessonId: lessons.id,
+        lessonId: lessons.stableId,
         activityId: activities.id
       })
       .from(modules)
@@ -91,15 +92,16 @@ export class ProgressRepository {
       activityIdsByLesson.set(row.lessonId, [...(activityIdsByLesson.get(row.lessonId) ?? []), row.activityId]);
     }
 
-    const completedLessons = Array.from(activityIdsByLesson.values()).filter(
-      (lessonActivityIds) =>
+    const completedLessonStableIds = Array.from(activityIdsByLesson).filter(
+      ([, lessonActivityIds]) =>
         lessonActivityIds.length > 0 && lessonActivityIds.every((activityId) => passedActivityIds.has(activityId))
-    ).length;
+    ).map(([lessonStableId]) => lessonStableId);
 
     return {
       trackStableId: track.stableId,
       totalLessons: lessonIds.length,
-      completedLessons,
+      completedLessons: completedLessonStableIds.length,
+      completedLessonStableIds,
       totalActivities: activityIds.length,
       attemptedActivities: new Set(attemptRows.map((attempt) => attempt.activityId)).size,
       passedActivities: passedActivityIds.size,
