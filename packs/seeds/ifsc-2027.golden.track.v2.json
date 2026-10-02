@@ -481,9 +481,9 @@
       "stem": "O que Lia fez explicitamente ao chegar à biblioteca?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "E"
+        "choiceId": "B"
       },
-      "explanation": "Fechar o guarda-chuva aparece diretamente no texto. Chuva é uma inferência, não uma fala explícita.",
+      "explanation": "Fechar o guarda-chuva aparece diretamente no texto. Chuva é uma inferência, não uma fala de Lia; o casaco ficou perto da porta, e ela só olhou para a janela.",
       "sourceIds": [
         "src-ifsc-golden-author"
       ],
@@ -500,32 +500,32 @@
       "choices": [
         {
           "id": "A",
-          "content": "Leu um romance inteiro.",
-          "correct": false,
-          "targetsError": "conceptual"
-        },
-        {
-          "id": "B",
-          "content": "Telefonou para um amigo.",
-          "correct": false,
-          "targetsError": "conceptual"
-        },
-        {
-          "id": "C",
           "content": "Afirmou que estava chovendo.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
+          "id": "B",
+          "content": "Fechou o guarda-chuva.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "Guardou o casaco no armário.",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
           "id": "D",
-          "content": "Voltou imediatamente para casa.",
+          "content": "Pegou um livro na estante.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
           "id": "E",
-          "content": "Fechou o guarda-chuva.",
-          "correct": true
+          "content": "Fechou a janela da biblioteca.",
+          "correct": false,
+          "targetsError": "conceptual"
         }
       ]
     },
@@ -547,9 +547,9 @@
       "stem": "Qual inferência tem apoio nas pistas do primeiro texto?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "E"
+        "choiceId": "D"
       },
-      "explanation": "O guarda-chuva e o casaco molhado sustentam uma hipótese de chuva, sem garantir todas as circunstâncias.",
+      "explanation": "O guarda-chuva e o casaco molhado sustentam uma hipótese de chuva, sem garantir todas as circunstâncias. Morar longe ou não gostar de ler são hipóteses sem pista no texto.",
       "sourceIds": [
         "src-ifsc-golden-author"
       ],
@@ -566,13 +566,13 @@
       "choices": [
         {
           "id": "A",
-          "content": "Lia perdeu todos os seus livros.",
+          "content": "Lia esqueceu o guarda-chuva em casa.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
           "id": "B",
-          "content": "A biblioteca fechou por inundação.",
+          "content": "A biblioteca estava fechada por causa da chuva.",
           "correct": false,
           "targetsError": "conceptual"
         },
@@ -584,14 +584,14 @@
         },
         {
           "id": "D",
-          "content": "A janela estava quebrada.",
-          "correct": false,
-          "targetsError": "conceptual"
+          "content": "Lia provavelmente esteve exposta à chuva.",
+          "correct": true
         },
         {
           "id": "E",
-          "content": "Lia provavelmente esteve exposta à chuva.",
-          "correct": true
+          "content": "Lia não gosta de ler em dias de chuva.",
+          "correct": false,
+          "targetsError": "conceptual"
         }
       ]
     },
@@ -612,7 +612,7 @@
       "stem": "Qual síntese melhor representa o segundo texto?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "E"
+        "choiceId": "A"
       },
       "explanation": "A sequência une ampliação, baixa adesão e consulta aos alunos. As outras alternativas acrescentam dados ausentes.",
       "sourceIds": [
@@ -631,32 +631,293 @@
       "choices": [
         {
           "id": "A",
+          "content": "A equipe procura adequar o horário da biblioteca após uma adesão baixa.",
+          "correct": true
+        },
+        {
+          "id": "B",
           "content": "A biblioteca será fechada definitivamente.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "B",
+          "id": "C",
           "content": "Os alunos deixaram de ter provas.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "C",
+          "id": "D",
           "content": "A equipe já sabe exatamente por que ninguém foi.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "D",
+          "id": "E",
           "content": "A escola proibiu consultas aos estudantes.",
+          "correct": false,
+          "targetsError": "conceptual"
+        }
+      ]
+    },
+    {
+      "id": "Q-POR-GOLDEN-7",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "POR.READ.EXPLICIT",
+      "conceptIds": [
+        "POR.READ.EXPLICIT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "direct",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stem": "Segundo o texto, onde os bebedouros foram instalados em março?",
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A primeira frase diz que os bebedouros foram instalados em quatro praças. Os pontos de ônibus são apenas um plano que a prefeitura estuda.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft",
+      "stimulus": "Em março, a prefeitura de uma cidade do litoral catarinense instalou bebedouros em quatro praças. Até junho, a venda de garrafas plásticas de água nos quiosques próximos caiu pela metade, segundo os comerciantes. A prefeitura agora estuda levar bebedouros também para os pontos de ônibus.",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Nos pontos de ônibus.",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "B",
+          "content": "Nos quiosques próximos às praças.",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "C",
+          "content": "Em todas as escolas da cidade.",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "D",
+          "content": "Na faixa de areia das praias.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
           "id": "E",
-          "content": "A equipe procura adequar o horário da biblioteca após uma adesão baixa.",
+          "content": "Em quatro praças.",
           "correct": true
+        }
+      ]
+    },
+    {
+      "id": "Q-POR-GOLDEN-8",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "POR.READ.MAIN_IDEA",
+      "conceptIds": [
+        "POR.READ.MAIN_IDEA"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stem": "Qual síntese representa melhor o texto?",
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "A melhor síntese une as três partes: instalação, queda nas vendas e próximo passo. A alternativa sobre a instalação é verdadeira, mas parcial; as outras acrescentam fatos que o texto não traz.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft",
+      "stimulus": "Em março, a prefeitura de uma cidade do litoral catarinense instalou bebedouros em quatro praças. Até junho, a venda de garrafas plásticas de água nos quiosques próximos caiu pela metade, segundo os comerciantes. A prefeitura agora estuda levar bebedouros também para os pontos de ônibus.",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A prefeitura instalou bebedouros em quatro praças em março.",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "B",
+          "content": "Os quiosques do litoral estão fechando por falta de clientes.",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "C",
+          "content": "Depois da instalação de bebedouros em praças, a venda de garrafas caiu, e a prefeitura estuda ampliar a medida.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "A venda de garrafas plásticas foi proibida na cidade.",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "E",
+          "content": "Os comerciantes pediram a retirada dos bebedouros.",
+          "correct": false,
+          "targetsError": "conceptual"
+        }
+      ]
+    },
+    {
+      "id": "Q-POR-GOLDEN-9",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "POR.READ.EVIDENCE",
+      "conceptIds": [
+        "POR.READ.EVIDENCE"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stem": "Qual trecho mostra de onde vem a informação sobre a queda nas vendas?",
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A expressão “segundo os comerciantes” indica a fonte da informação. “Caiu pela metade” informa o tamanho da queda, não quem a relatou.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft",
+      "stimulus": "Em março, a prefeitura de uma cidade do litoral catarinense instalou bebedouros em quatro praças. Até junho, a venda de garrafas plásticas de água nos quiosques próximos caiu pela metade, segundo os comerciantes. A prefeitura agora estuda levar bebedouros também para os pontos de ônibus.",
+      "choices": [
+        {
+          "id": "A",
+          "content": "“Em março”",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "B",
+          "content": "“segundo os comerciantes”",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "“instalou bebedouros em quatro praças”",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "D",
+          "content": "“caiu pela metade”",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "E",
+          "content": "“estuda levar bebedouros também para os pontos de ônibus”",
+          "correct": false,
+          "targetsError": "conceptual"
+        }
+      ]
+    },
+    {
+      "id": "Q-POR-GOLDEN-10",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "POR.READ.DISTRACTOR",
+      "conceptIds": [
+        "POR.READ.DISTRACTOR",
+        "POR.READ.EVIDENCE"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stem": "Qual afirmação NÃO pode ser concluída do texto?",
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "O texto atribui a informação aos comerciantes; não menciona estudo oficial. As demais afirmações têm um trecho que as sustenta.",
+      "sourceIds": [
+        "src-ifsc-golden-author"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "ifsc-golden-author-v1"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 1,
+        "reservedForAssessment": false
+      },
+      "status": "draft",
+      "stimulus": "Em março, a prefeitura de uma cidade do litoral catarinense instalou bebedouros em quatro praças. Até junho, a venda de garrafas plásticas de água nos quiosques próximos caiu pela metade, segundo os comerciantes. A prefeitura agora estuda levar bebedouros também para os pontos de ônibus.",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Os bebedouros foram instalados em março.",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "B",
+          "content": "A venda de garrafas caiu nos quiosques próximos às praças.",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "C",
+          "content": "A prefeitura considera ampliar o uso de bebedouros.",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "D",
+          "content": "A queda nas vendas foi medida por um estudo oficial da prefeitura.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "A informação sobre as vendas foi dada pelos comerciantes.",
+          "correct": false,
+          "targetsError": "conceptual"
         }
       ]
     },
@@ -677,7 +938,7 @@
       "stem": "Qual afirmação NÃO pode ser concluída apenas do segundo texto?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "E"
+        "choiceId": "A"
       },
       "explanation": "O texto registra a adesão, mas não informa sua causa. Desinteresse por leitura é uma possibilidade externa.",
       "sourceIds": [
@@ -696,32 +957,32 @@
       "choices": [
         {
           "id": "A",
+          "content": "Os estudantes faltaram porque não gostam de ler.",
+          "correct": true
+        },
+        {
+          "id": "B",
           "content": "O horário foi ampliado.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "B",
+          "id": "C",
           "content": "A adesão foi baixa.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "C",
+          "id": "D",
           "content": "A ampliação ocorreu na semana de provas.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "D",
+          "id": "E",
           "content": "A equipe decidiu consultar os estudantes.",
           "correct": false,
           "targetsError": "conceptual"
-        },
-        {
-          "id": "E",
-          "content": "Os estudantes faltaram porque não gostam de ler.",
-          "correct": true
         }
       ]
     },
@@ -806,12 +1067,12 @@
         "interpret",
         "apply"
       ],
-      "stem": "Um aviso diz: 'A entrega ocorrerá até sexta-feira, se o material chegar na quinta.' Qual conclusão respeita essa condição?",
+      "stem": "Um aviso diz: “A entrega ocorrerá até sexta-feira, se o material chegar na quinta.” Qual conclusão respeita essa condição?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "E"
+        "choiceId": "C"
       },
-      "explanation": "A palavra 'se' introduz a condição. A conclusão não pode transformar uma possibilidade condicionada em certeza.",
+      "explanation": "A palavra “se” introduz a condição. A conclusão não pode transformar uma possibilidade condicionada em certeza.",
       "sourceIds": [
         "src-ifsc-golden-author"
       ],
@@ -839,20 +1100,20 @@
         },
         {
           "id": "C",
+          "content": "A entrega até sexta depende da chegada do material na quinta.",
+          "correct": true
+        },
+        {
+          "id": "D",
           "content": "Nenhuma entrega será possível.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "D",
+          "id": "E",
           "content": "A quinta-feira é a data de entrega ao cliente.",
           "correct": false,
           "targetsError": "conceptual"
-        },
-        {
-          "id": "E",
-          "content": "A entrega até sexta depende da chegada do material na quinta.",
-          "correct": true
         }
       ]
     },
@@ -873,7 +1134,7 @@
       "stem": "Qual característica pertence ao modelo nuclear de Rutherford?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "A"
+        "choiceId": "B"
       },
       "explanation": "O modelo nuclear distingue um núcleo pequeno e uma região externa ocupada por elétrons.",
       "sourceIds": [
@@ -891,14 +1152,14 @@
       "choices": [
         {
           "id": "A",
-          "content": "Um núcleo pequeno e positivo concentra grande parte da massa.",
-          "correct": true
-        },
-        {
-          "id": "B",
           "content": "O átomo é uma esfera indivisível em todas as circunstâncias.",
           "correct": false,
           "targetsError": "conceptual"
+        },
+        {
+          "id": "B",
+          "content": "Um núcleo pequeno e positivo concentra grande parte da massa.",
+          "correct": true
         },
         {
           "id": "C",
@@ -1003,7 +1264,7 @@
       "stem": "Quais partículas estão no núcleo de um átomo de carbono-12?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "A"
+        "choiceId": "D"
       },
       "explanation": "O núcleo do carbono-12 tem prótons e nêutrons; os elétrons ocupam a região externa.",
       "sourceIds": [
@@ -1021,26 +1282,26 @@
       "choices": [
         {
           "id": "A",
-          "content": "Prótons e nêutrons.",
-          "correct": true
-        },
-        {
-          "id": "B",
           "content": "Apenas elétrons.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "C",
+          "id": "B",
           "content": "Elétrons e prótons, sem nêutrons.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "D",
+          "id": "C",
           "content": "Todas as partículas estão em uma órbita única.",
           "correct": false,
           "targetsError": "conceptual"
+        },
+        {
+          "id": "D",
+          "content": "Prótons e nêutrons.",
+          "correct": true
         },
         {
           "id": "E",
@@ -1203,7 +1464,7 @@
       "stem": "Por que a escravidão deve ser analisada como um sistema histórico?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "C"
+        "choiceId": "A"
       },
       "explanation": "Um sistema envolve instituições e relações sociais que sustentavam a exploração, não somente atos isolados.",
       "sourceIds": [
@@ -1226,20 +1487,20 @@
       "choices": [
         {
           "id": "A",
+          "content": "Ela articulava exploração do trabalho, regras de propriedade, poder e hierarquias sociais.",
+          "correct": true
+        },
+        {
+          "id": "B",
           "content": "Era apenas uma escolha individual sem relações econômicas.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "B",
+          "id": "C",
           "content": "Não tinha vínculo com leis ou política.",
           "correct": false,
           "targetsError": "conceptual"
-        },
-        {
-          "id": "C",
-          "content": "Ela articulava exploração do trabalho, regras de propriedade, poder e hierarquias sociais.",
-          "correct": true
         },
         {
           "id": "D",
@@ -1273,7 +1534,7 @@
       "stem": "Qual conjunto apresenta formas de resistência à escravidão?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "C"
+        "choiceId": "E"
       },
       "explanation": "Resistência assumiu formas diversas; quilombos foram uma das formas de organização e defesa da liberdade.",
       "sourceIds": [
@@ -1307,20 +1568,20 @@
         },
         {
           "id": "C",
-          "content": "Fugas, formação de quilombos e lutas por liberdade.",
-          "correct": true
-        },
-        {
-          "id": "D",
           "content": "Proibição de qualquer negociação ou organização comunitária.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "E",
+          "id": "D",
           "content": "Aceitação uniforme da escravidão por todos os grupos.",
           "correct": false,
           "targetsError": "conceptual"
+        },
+        {
+          "id": "E",
+          "content": "Fugas, formação de quilombos e lutas por liberdade.",
+          "correct": true
         }
       ]
     },
@@ -1465,7 +1726,7 @@
       "stem": "Ao consultar uma lei abolicionista, qual cuidado é adequado?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "C"
+        "choiceId": "B"
       },
       "explanation": "Uma fonte legal informa decisões normativas; seus efeitos e sua aplicação exigem outras fontes e contexto.",
       "sourceIds": [
@@ -1493,14 +1754,14 @@
         },
         {
           "id": "B",
-          "content": "Ignorar a autoria, data e contexto da norma.",
-          "correct": false,
-          "targetsError": "conceptual"
+          "content": "Distinguir o que a norma declara das condições e práticas sociais de sua aplicação.",
+          "correct": true
         },
         {
           "id": "C",
-          "content": "Distinguir o que a norma declara das condições e práticas sociais de sua aplicação.",
-          "correct": true
+          "content": "Ignorar a autoria, data e contexto da norma.",
+          "correct": false,
+          "targetsError": "conceptual"
         },
         {
           "id": "D",
@@ -1534,7 +1795,7 @@
       "stem": "Qual conclusão distingue fim legal da escravidão e transformação social?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "C"
+        "choiceId": "D"
       },
       "explanation": "A ruptura jurídica é um marco, mas não elimina automaticamente as estruturas de desigualdade.",
       "sourceIds": [
@@ -1569,14 +1830,14 @@
         },
         {
           "id": "C",
-          "content": "A extinção legal não significou eliminação imediata das desigualdades.",
-          "correct": true
-        },
-        {
-          "id": "D",
           "content": "A legislação tornou desnecessária toda luta social posterior.",
           "correct": false,
           "targetsError": "conceptual"
+        },
+        {
+          "id": "D",
+          "content": "A extinção legal não significou eliminação imediata das desigualdades.",
+          "correct": true
         },
         {
           "id": "E",
@@ -1604,7 +1865,7 @@
       "stem": "Por que estudar diferentes quilombos ajuda a compreender a resistência?",
       "answer": {
         "kind": "multiple_choice",
-        "choiceId": "C"
+        "choiceId": "A"
       },
       "explanation": "A diversidade de comunidades permite analisar práticas e contextos distintos de resistência.",
       "sourceIds": [
@@ -1626,20 +1887,20 @@
       "choices": [
         {
           "id": "A",
+          "content": "Revela variadas formas de organização comunitária e de luta por autonomia.",
+          "correct": true
+        },
+        {
+          "id": "B",
           "content": "Prova que existiu apenas um quilombo no Brasil.",
           "correct": false,
           "targetsError": "conceptual"
         },
         {
-          "id": "B",
+          "id": "C",
           "content": "Mostra ausência completa de vínculos sociais.",
           "correct": false,
           "targetsError": "conceptual"
-        },
-        {
-          "id": "C",
-          "content": "Revela variadas formas de organização comunitária e de luta por autonomia.",
-          "correct": true
         },
         {
           "id": "D",
@@ -2158,6 +2419,17 @@
                 }
               },
               {
+                "id": "por01-explicit",
+                "type": "concept",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "conceptId": "POR.READ.EXPLICIT",
+                  "title": "Está escrito no texto",
+                  "content": "Informação explícita é a que o texto afirma com palavras. A alternativa correta pode usar outras palavras (paráfrase), mas não pode dizer mais nem menos que o trecho. Antes de responder, volte ao texto e encontre a frase."
+                }
+              },
+              {
                 "id": "por01-contrast",
                 "type": "concept",
                 "schemaVersion": 1,
@@ -2259,6 +2531,48 @@
                 }
               },
               {
+                "id": "por01-main-idea",
+                "type": "concept",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "conceptId": "POR.READ.MAIN_IDEA",
+                  "title": "A ideia que une as partes",
+                  "content": "A ideia principal é a síntese que conecta as informações importantes do começo ao fim. Uma alternativa que fala de um só detalhe é parcial; uma que acrescenta fatos é exagerada. No texto acima, horário ampliado, pouca adesão e consulta aos alunos formam uma sequência."
+                }
+              },
+              {
+                "id": "por01-evidence",
+                "type": "concept",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "conceptId": "POR.READ.EVIDENCE",
+                  "title": "Aponte o trecho",
+                  "content": "Uma leitura é sustentada quando você consegue apontar a frase que a autoriza. Diante de duas alternativas parecidas, pergunte: qual delas eu consigo provar com um trecho do texto? A que só dá contexto (quando, onde) não prova a leitura."
+                }
+              },
+              {
+                "id": "por01-third",
+                "type": "text",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "content": "Em março, a prefeitura de uma cidade do litoral catarinense instalou bebedouros em quatro praças. Até junho, a venda de garrafas plásticas de água nos quiosques próximos caiu pela metade, segundo os comerciantes. A prefeitura agora estuda levar bebedouros também para os pontos de ônibus."
+                }
+              },
+              {
+                "id": "por01-distractor",
+                "type": "concept",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "conceptId": "POR.READ.DISTRACTOR",
+                  "title": "Como as alternativas erradas enganam",
+                  "content": "Desconfie de alternativas que generalizam (todos, sempre, nunca), inventam uma causa, trocam quem disse o quê ou trazem algo verdadeiro no mundo, mas ausente do texto. Elimine cada uma com um motivo, apontando o que falta."
+                }
+              },
+              {
                 "id": "por01-summary",
                 "type": "summary",
                 "schemaVersion": 1,
@@ -2280,9 +2594,8 @@
                 "questionId": "Q-POR-GOLDEN-1",
                 "config": {
                   "hints": [
-                    "Releia os dados e identifique o conceito necessário.",
-                    "Compare a alternativa com o que o texto ou modelo realmente permite afirmar.",
-                    "Elimine conclusões que exigem informações ausentes."
+                    "Volte ao texto: o que está escrito com todas as letras?",
+                    "Desconfie de alternativas que mudam um detalhe: onde, quando ou o quê."
                   ],
                   "phase": "independent"
                 }
@@ -2298,9 +2611,8 @@
                 "questionId": "Q-POR-GOLDEN-2",
                 "config": {
                   "hints": [
-                    "Releia os dados e identifique o conceito necessário.",
-                    "Compare a alternativa com o que o texto ou modelo realmente permite afirmar.",
-                    "Elimine conclusões que exigem informações ausentes."
+                    "Quais pistas do texto têm relação com o tempo lá fora?",
+                    "Escolha a conclusão que você consegue justificar com essas pistas, sem inventar dados."
                   ],
                   "phase": "independent"
                 }
@@ -2315,15 +2627,79 @@
                 "questionId": "Q-POR-GOLDEN-3",
                 "config": {
                   "hints": [
-                    "Releia os dados e identifique o conceito necessário.",
-                    "Compare a alternativa com o que o texto ou modelo realmente permite afirmar.",
-                    "Elimine conclusões que exigem informações ausentes."
+                    "Uma boa síntese junta o começo, o meio e o fim do texto.",
+                    "Elimine alternativas que acrescentam fatos que o texto não traz."
                   ],
                   "phase": "independent"
                 }
               },
               {
                 "id": "por-01-q4",
+                "type": "question",
+                "prompt": "Segundo o texto, onde os bebedouros foram instalados em março?",
+                "conceptIds": [
+                  "POR.READ.EXPLICIT"
+                ],
+                "questionId": "Q-POR-GOLDEN-7",
+                "config": {
+                  "hints": [
+                    "Releia a primeira frase do texto.",
+                    "Cuidado: um dos lugares citados é só um plano para o futuro."
+                  ],
+                  "phase": "independent"
+                }
+              },
+              {
+                "id": "por-01-q5",
+                "type": "question",
+                "prompt": "Qual síntese representa melhor o texto?",
+                "conceptIds": [
+                  "POR.READ.MAIN_IDEA"
+                ],
+                "questionId": "Q-POR-GOLDEN-8",
+                "config": {
+                  "hints": [
+                    "A síntese precisa cobrir instalação, efeito nas vendas e próximo passo.",
+                    "Uma alternativa verdadeira, mas parcial, não é a melhor síntese."
+                  ],
+                  "phase": "independent"
+                }
+              },
+              {
+                "id": "por-01-q6",
+                "type": "question",
+                "prompt": "Qual trecho mostra de onde vem a informação sobre a queda nas vendas?",
+                "conceptIds": [
+                  "POR.READ.EVIDENCE"
+                ],
+                "questionId": "Q-POR-GOLDEN-9",
+                "config": {
+                  "hints": [
+                    "Quem informou que as vendas caíram?",
+                    "Procure uma expressão que indique a origem da informação."
+                  ],
+                  "phase": "independent"
+                }
+              },
+              {
+                "id": "por-01-q7",
+                "type": "question",
+                "prompt": "Qual afirmação NÃO pode ser concluída do texto?",
+                "conceptIds": [
+                  "POR.READ.DISTRACTOR",
+                  "POR.READ.EVIDENCE"
+                ],
+                "questionId": "Q-POR-GOLDEN-10",
+                "config": {
+                  "hints": [
+                    "Teste cada alternativa: dá para apontar o trecho que a sustenta?",
+                    "Segundo o texto, quem relatou a queda nas vendas?"
+                  ],
+                  "phase": "independent"
+                }
+              },
+              {
+                "id": "por-01-q8",
                 "type": "question",
                 "prompt": "Qual afirmação NÃO pode ser concluída apenas do segundo texto?",
                 "conceptIds": [
@@ -2332,15 +2708,14 @@
                 "questionId": "Q-POR-GOLDEN-4",
                 "config": {
                   "hints": [
-                    "Releia os dados e identifique o conceito necessário.",
-                    "Compare a alternativa com o que o texto ou modelo realmente permite afirmar.",
-                    "Elimine conclusões que exigem informações ausentes."
+                    "O texto informa por que os estudantes não foram?",
+                    "Procure a alternativa que inventa uma causa."
                   ],
                   "phase": "exit_ticket"
                 }
               },
               {
-                "id": "por-01-q5",
+                "id": "por-01-q9",
                 "type": "question",
                 "prompt": "Qual trecho sustenta melhor a leitura de que a equipe quer ouvir os usuários?",
                 "conceptIds": [
@@ -2350,17 +2725,16 @@
                 "questionId": "Q-POR-GOLDEN-5",
                 "config": {
                   "hints": [
-                    "Releia os dados e identifique o conceito necessário.",
-                    "Compare a alternativa com o que o texto ou modelo realmente permite afirmar.",
-                    "Elimine conclusões que exigem informações ausentes."
+                    "Qual frase mostra uma ação da equipe voltada aos alunos?",
+                    "A evidência certa prova a leitura; não basta dar contexto."
                   ],
                   "phase": "exit_ticket"
                 }
               },
               {
-                "id": "por-01-q6",
+                "id": "por-01-q10",
                 "type": "question",
-                "prompt": "Um aviso diz: 'A entrega ocorrerá até sexta-feira, se o material chegar na quinta.' Qual conclusão respeita essa condição?",
+                "prompt": "Um aviso diz: “A entrega ocorrerá até sexta-feira, se o material chegar na quinta.” Qual conclusão respeita essa condição?",
                 "conceptIds": [
                   "POR.READ.INFER",
                   "POR.READ.DISTRACTOR"
@@ -2368,9 +2742,8 @@
                 "questionId": "Q-POR-GOLDEN-6",
                 "config": {
                   "hints": [
-                    "Releia os dados e identifique o conceito necessário.",
-                    "Compare a alternativa com o que o texto ou modelo realmente permite afirmar.",
-                    "Elimine conclusões que exigem informações ausentes."
+                    "Repare na palavra “se”.",
+                    "Uma condição não é uma certeza: a entrega depende de algo acontecer antes."
                   ],
                   "phase": "exit_ticket"
                 }

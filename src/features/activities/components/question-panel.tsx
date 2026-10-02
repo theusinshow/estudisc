@@ -3,6 +3,7 @@ import { useId, useState } from "react";
 import type { StudentQuestion } from "@/features/questions/student-view";
 import { initialResponse, ResponseFields,type QuestionResponse } from "./response-fields";
 import { QuestionAssets } from "@/features/questions/question-assets";
+import { Paragraphs } from "@/components/ui/paragraphs";
 import { TutorPanel } from "@/features/questions/tutor-panel";
 import { ATTEMPT_RECORDED_EVENT } from "@/features/progress/live-progress-summary";
 
@@ -19,7 +20,7 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
       if(action==="hint"){setHintLevel(body.hintLevel);setHint(body.hint??"");} else {setFeedback(body);if(body.attemptId)window.dispatchEvent(new Event(ATTEMPT_RECORDED_EVENT));}
     } catch(error) {setError(error instanceof Error?error.message:"Falha ao registrar resposta.");} finally {setBusy(false);}
   }
-  return <section className="learning-interaction" aria-labelledby={`${id}-title`}><h3 id={`${id}-title`}>{question.stem}</h3>{question.stimulus&&<p>{question.stimulus}</p>}
+  return <section className="learning-interaction" aria-labelledby={`${id}-title`}>{question.stimulus&&<div className="question-stimulus"><Paragraphs text={question.stimulus}/></div>}<h3 id={`${id}-title`}>{question.stem}</h3>
     <QuestionAssets assets={question.assets}/>
     <form onSubmit={event=>{event.preventDefault();void send("submit");}}><ResponseFields id={id} question={question} response={response} disabled={busy} onChange={value=>{setResponse(value);setFeedback(null);setKey(crypto.randomUUID());}} /><button className="primary-button" disabled={busy||feedback?.correct===true} type="submit">{busy?"Registrando…":feedback?.correct?"Resposta registrada":"Enviar resposta"}</button></form>
     {hintLevel>0&&<aside className="learning-hint"><strong>Dica {hintLevel}</strong><p>{hint}</p></aside>}

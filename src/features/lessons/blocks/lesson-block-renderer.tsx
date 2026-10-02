@@ -7,6 +7,7 @@ import {
   type TextBlockPayload,
   type TitledTextBlockPayload
 } from "@/features/lessons/blocks/block-schemas";
+import { Paragraphs } from "@/components/ui/paragraphs";
 import { NumericExplorer } from "./numeric-explorer";
 import { AtomModel } from "./atom-model";
 import { atomModelSchema } from "./atom-model-schema";
@@ -194,9 +195,4 @@ function BlockShell({
       <div>{children}</div>
     </section>
   );
-}
-
-// Authored content separates paragraphs with a blank line; numbered steps stay one per line.
-function Paragraphs({ text }: Readonly<{ text: string }>) {
-  return <>{text.split(/\n\s*\n/).map((paragraph, index) => <p key={index}>{paragraph.split("\n").flatMap((line, lineIndex) => lineIndex ? [<br key={lineIndex} />, line] : [line])}</p>)}</>;
 }

@@ -2,49 +2,6 @@
   "status": "draft_pending_human_review",
   "lessons": [
     {
-      "id": "MAT-02",
-      "title": "Divisibilidade, primos, MMC e MDC",
-      "estimatedMinutes": 40,
-      "conceptTitles": {
-        "MAT.DIV.DIVISIBILITY": "Critérios de divisibilidade",
-        "MAT.DIV.PRIME": "Números primos e compostos",
-        "MAT.DIV.FACTORIZATION": "Fatoração em números primos",
-        "MAT.DIV.MMC": "Mínimo múltiplo comum (MMC)",
-        "MAT.DIV.MDC": "Máximo divisor comum (MDC)",
-        "MAT.DIV.MODEL": "Decidir entre MMC e MDC em um problema"
-      },
-      "hook": "Dois ônibus saem juntos do terminal: um passa a cada 20 minutos e o outro a cada 30 minutos. Quando vão sair juntos de novo? E se você quiser cortar duas fitas em pedaços iguais do maior tamanho possível? MMC e MDC respondem perguntas assim.",
-      "concepts": [
-        { "conceptId": "MAT.DIV.DIVISIBILITY", "title": "Critérios de divisibilidade", "content": "Um número é divisível por 2 se termina em algarismo par; por 3 se a soma dos algarismos é múltiplo de 3; por 5 se termina em 0 ou 5; por 9 se a soma dos algarismos é múltiplo de 9; por 10 se termina em 0. Exemplo: 471 tem soma 4 + 7 + 1 = 12, então é divisível por 3, mas não por 9." },
-        { "conceptId": "MAT.DIV.PRIME", "title": "Primos e compostos", "content": "Um número primo tem exatamente dois divisores naturais: 1 e ele mesmo (2, 3, 5, 7, 11, 13, ...). Um número composto tem mais de dois divisores. O número 1 não é primo nem composto, e 2 é o único primo par." },
-        { "conceptId": "MAT.DIV.FACTORIZATION", "title": "Fatoração em primos", "content": "Todo número natural maior que 1 pode ser escrito como produto de primos de um único jeito (sem contar a ordem). Divida sucessivamente pelo menor primo possível. Exemplo: 60 = 2 × 2 × 3 × 5 = 2² × 3 × 5." },
-        { "conceptId": "MAT.DIV.MMC", "title": "MMC", "content": "O mínimo múltiplo comum é o menor número positivo que é múltiplo de todos os números dados. Pela fatoração, multiplique todos os primos que aparecem, cada um com o maior expoente. Exemplo: 12 = 2² × 3 e 18 = 2 × 3², então MMC = 2² × 3² = 36." },
-        { "conceptId": "MAT.DIV.MDC", "title": "MDC", "content": "O máximo divisor comum é o maior número que divide todos os números dados. Pela fatoração, multiplique apenas os primos comuns, cada um com o menor expoente. Exemplo: MDC(12, 18) = 2 × 3 = 6. Se o MDC é 1, os números são primos entre si." },
-        { "conceptId": "MAT.DIV.MODEL", "title": "MMC ou MDC?", "content": "Use MMC quando eventos se repetem e você quer saber quando voltam a coincidir (o resultado é maior ou igual aos números dados). Use MDC quando quer repartir ou cortar em partes iguais, do maior tamanho possível, sem sobras (o resultado é menor ou igual aos números dados)." }
-      ],
-      "examples": [
-        { "title": "Luzes que piscam juntas", "content": "Uma luz pisca a cada 4 s e outra a cada 6 s; agora piscaram juntas. 1. A pergunta é sobre coincidência no tempo: MMC. 2. 4 = 2² e 6 = 2 × 3. 3. MMC = 2² × 3 = 12. Elas piscam juntas de novo em 12 s.", "conceptIds": ["MAT.DIV.MMC", "MAT.DIV.MODEL"] },
-        { "title": "Kits iguais", "content": "Há 24 cadernos e 40 canetas para montar o maior número de kits iguais, sem sobras. 1. Repartir sem sobra: MDC. 2. 24 = 2³ × 3 e 40 = 2³ × 5. 3. MDC = 2³ = 8 kits. Cada kit tem 24 ÷ 8 = 3 cadernos e 40 ÷ 8 = 5 canetas.", "conceptIds": ["MAT.DIV.MDC", "MAT.DIV.MODEL", "MAT.DIV.FACTORIZATION"] }
-      ],
-      "warning": { "title": "Não troque MMC por MDC", "content": "Se a resposta do problema de repartir saiu maior que as quantidades dadas, você usou MMC no lugar de MDC. Confira: o MDC nunca passa do menor número, e o MMC nunca fica abaixo do maior." },
-      "summary": "Critérios: 2 (par), 3 (soma múltipla de 3), 5 (termina em 0 ou 5), 9 (soma múltipla de 9). Primo tem exatamente dois divisores; 1 não é primo. MMC: todos os primos com maior expoente, para coincidências. MDC: primos comuns com menor expoente, para repartir sem sobra.",
-      "questions": [
-        { "conceptIds": ["MAT.DIV.DIVISIBILITY"], "type": "mc", "difficulty": "direct", "ops": ["identify"], "stem": "Qual número é divisível por 3 e por 5 ao mesmo tempo?", "choices": ["125", "243", "135", "352", "110"], "correct": 2, "explanation": "135 termina em 5 (divisível por 5) e 1 + 3 + 5 = 9 é múltiplo de 3. 125 e 110 não passam no critério do 3 (somas 8 e 2); 243 e 352 não terminam em 0 ou 5." },
-        { "conceptIds": ["MAT.DIV.DIVISIBILITY"], "type": "num", "difficulty": "applied", "ops": ["apply"], "stem": "No número 47□, o símbolo □ representa um algarismo. Qual algarismo torna o número divisível por 9?", "value": 7, "hints": ["Some os algarismos conhecidos: 4 + 7.", "A soma total precisa ser múltiplo de 9."], "explanation": "4 + 7 = 11. O próximo múltiplo de 9 é 18, então □ = 18 − 11 = 7. O número 477 tem soma 18 e é divisível por 9 (477 ÷ 9 = 53)." },
-        { "conceptIds": ["MAT.DIV.PRIME"], "type": "mc", "difficulty": "foundation", "ops": ["identify"], "stem": "Qual dos números abaixo é primo?", "choices": ["21", "27", "33", "29", "39"], "correct": 3, "explanation": "29 só é divisível por 1 e por 29. Os outros são compostos: 21 = 3 × 7, 27 = 3 × 9, 33 = 3 × 11, 39 = 3 × 13." },
-        { "conceptIds": ["MAT.DIV.PRIME"], "type": "num", "difficulty": "direct", "ops": ["identify"], "stem": "Quantos números primos existem entre 20 e 40?", "value": 4, "explanation": "Os primos entre 20 e 40 são 23, 29, 31 e 37. Todos os outros têm divisores além de 1 e de si mesmos (por exemplo, 21 = 3 × 7, 25 = 5 × 5, 33 = 3 × 11, 39 = 3 × 13)." },
-        { "conceptIds": ["MAT.DIV.FACTORIZATION"], "type": "mc", "difficulty": "direct", "ops": ["calculate"], "stem": "Qual é a fatoração de 360 em números primos?", "choices": ["2³ × 3² × 5", "2² × 3² × 10", "2³ × 3 × 15", "2⁴ × 3 × 5", "2 × 3 × 5 × 12"], "correct": 0, "explanation": "360 = 2 × 180 = 2 × 2 × 90 = 2 × 2 × 2 × 45 = 2³ × 3² × 5. As opções com 10, 15 e 12 dão 360, mas esses fatores não são primos. 2⁴ × 3 × 5 = 240." },
-        { "conceptIds": ["MAT.DIV.FACTORIZATION"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Um número tem fatoração 2² × 3 × 7. Qual é esse número?", "value": 84, "explanation": "2² × 3 × 7 = 4 × 3 × 7 = 12 × 7 = 84." },
-        { "conceptIds": ["MAT.DIV.MMC", "MAT.DIV.FACTORIZATION"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule o MMC de 12 e 18.", "value": 36, "explanation": "12 = 2² × 3 e 18 = 2 × 3². MMC: todos os primos com o maior expoente: 2² × 3² = 4 × 9 = 36." },
-        { "conceptIds": ["MAT.DIV.MMC", "MAT.DIV.MODEL"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "s", "stem": "Uma luz vermelha pisca a cada 6 segundos e uma verde a cada 8 segundos. Elas acabaram de piscar juntas. Daqui a quantos segundos vão piscar juntas novamente?", "value": 24, "explanation": "Coincidência de eventos repetidos: MMC. 6 = 2 × 3 e 8 = 2³. MMC = 2³ × 3 = 24 segundos.", "exit": true },
-        { "conceptIds": ["MAT.DIV.MDC", "MAT.DIV.FACTORIZATION"], "type": "num", "difficulty": "direct", "ops": ["calculate"], "stem": "Calcule o MDC de 48 e 72.", "value": 24, "explanation": "48 = 2⁴ × 3 e 72 = 2³ × 3². MDC: primos comuns com o menor expoente: 2³ × 3 = 24." },
-        { "conceptIds": ["MAT.DIV.MDC"], "type": "mc", "difficulty": "direct", "ops": ["analyze"], "stem": "Qual par de números é formado por primos entre si (MDC igual a 1)?", "choices": ["12 e 18", "15 e 28", "21 e 35", "20 e 30", "9 e 27"], "correct": 1, "explanation": "15 = 3 × 5 e 28 = 2² × 7 não têm fator primo em comum, então MDC = 1. Os demais pares têm MDC 6, 7, 10 e 9." },
-        { "conceptIds": ["MAT.DIV.MDC", "MAT.DIV.MODEL"], "type": "mc", "difficulty": "applied", "ops": ["apply"], "stem": "Uma professora tem 36 lápis e 54 borrachas e quer montar o maior número possível de kits iguais, usando todo o material, sem sobras. Quantos kits ela consegue montar?", "choices": ["6", "9", "18", "108", "12"], "correct": 2, "explanation": "Repartir em partes iguais sem sobra: MDC. 36 = 2² × 3² e 54 = 2 × 3³. MDC = 2 × 3² = 18 kits, cada um com 2 lápis e 3 borrachas. 108 é o MMC, que não faz sentido aqui.", "exit": true },
-        { "conceptIds": ["MAT.DIV.MODEL"], "type": "mc", "difficulty": "direct", "ops": ["interpret"], "stem": "Dois ônibus saem juntos às 7h. Um sai a cada 20 minutos e o outro a cada 30 minutos. Qual cálculo indica daqui a quantos minutos eles voltarão a sair juntos?", "choices": ["MDC de 20 e 30", "MMC de 20 e 30", "20 + 30", "30 − 20", "20 × 30 ÷ 2"], "correct": 1, "explanation": "Eventos que se repetem e voltam a coincidir: MMC. MMC(20, 30) = 60, ou seja, voltam a sair juntos às 8h." },
-        { "conceptIds": ["MAT.DIV.MODEL", "MAT.DIV.MDC"], "type": "num", "difficulty": "applied", "ops": ["apply"], "unit": "cm", "stem": "Duas fitas medem 84 cm e 120 cm. Elas serão cortadas em pedaços todos do mesmo tamanho, o maior possível, sem sobras. Qual será o comprimento de cada pedaço?", "value": 12, "explanation": "Cortar em partes iguais do maior tamanho possível: MDC. 84 = 2² × 3 × 7 e 120 = 2³ × 3 × 5. MDC = 2² × 3 = 12 cm (7 pedaços de uma fita e 10 da outra).", "exit": true }
-      ]
-    },
-    {
       "id": "MAT-03",
       "title": "Frações",
       "estimatedMinutes": 40,

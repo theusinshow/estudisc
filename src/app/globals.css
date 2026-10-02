@@ -1670,6 +1670,10 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .learning-interaction fieldset { display: grid; gap: var(--kos-spacing-6); margin: 0; padding: 0; border: 0; }
 .learning-interaction legend { margin-bottom: var(--kos-spacing-4); font-size: 0.875rem; font-weight: 700; color: var(--kos-color-dim); }
 .learning-field { display: grid; gap: var(--kos-spacing-4); font-weight: 700; }
+/* Question stimulus: shown before the stem, keeping authored paragraphs and verse lines. */
+.question-stimulus { padding: var(--kos-spacing-8) var(--kos-spacing-10); border-radius: var(--kos-radius-md); background: var(--kos-color-dimmed-paper); line-height: 1.6; }
+.question-stimulus p { margin: 0; }
+.question-stimulus p + p { margin-top: var(--kos-spacing-5); }
 .learning-field input, .learning-field select { width: 100%; min-height: 56px; padding: 0 var(--kos-spacing-8); border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-interactive); background: var(--kos-color-paper); color: var(--kos-color-ink); font: inherit; font-size: 1.125rem; }
 .learning-field input:focus, .learning-field select:focus { background: var(--kos-color-panel); box-shadow: var(--kos-shadow-structural); outline: none; }
 .numeric-input { display: flex; align-items: center; gap: var(--kos-spacing-4); }
