@@ -1674,6 +1674,13 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .question-stimulus { padding: var(--kos-spacing-8) var(--kos-spacing-10); border-radius: var(--kos-radius-md); background: var(--kos-color-dimmed-paper); line-height: 1.6; }
 .question-stimulus p { margin: 0; }
 .question-stimulus p + p { margin-top: var(--kos-spacing-5); }
+/* Unavailable question: draft preview for the reviewer, reason for the student. */
+.question-draft-preview { border-style: dashed; }
+.question-draft-badge { justify-self: start; margin: 0; padding: 2px var(--kos-spacing-6); border: var(--kos-border-hair) solid var(--kos-color-ink); border-radius: 999px; background: var(--kos-color-signal); font-size: 0.8125rem; font-weight: 800; }
+.question-draft-note { margin: 0; color: var(--kos-color-dim); font-weight: 600; line-height: 1.45; }
+.question-draft-note a { color: var(--kos-color-ink); font-weight: 800; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.question-draft-choices { display: grid; gap: var(--kos-spacing-3); margin: 0; padding-left: var(--kos-spacing-10); list-style: upper-alpha; }
+.question-draft-choices li[data-correct] { font-weight: 800; }
 /* ADR 0032: lesson figures. */
 .lesson-figure { display: grid; gap: var(--kos-spacing-4); margin: 0; }
 .lesson-figure img { display: block; width: 100%; height: auto; border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-learning-card); background: var(--kos-color-panel); }

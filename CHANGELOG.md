@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-02 — Clear reasons for unavailable questions
+
+- An admin opening a draft lesson now sees a read-only "Rascunho · prévia do revisor" for each question (stem, choices, key; no submission, so no attempt on unpublished content) instead of "Questão indisponível para estudo". Students see why an item is unavailable: recently seen (spacing window) or not released yet.
+
 ## 2026-10-02 — One-click Week 1 import
 
 - `/import` starts with "Importar a Semana 1": an admin-only route imports the bundled pack (`packs/releases/ifsc-week-1.pack.json`, kept in sync with the drafts by a unit test) as draft, then links to `/admin/review`. The JSON/AI importer moved under "Importação avançada".
