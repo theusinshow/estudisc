@@ -6,6 +6,7 @@ import { useEffect,useState } from "react";
 import {
   BookOpen,
   ChartNoAxesColumnIncreasing,
+  ClipboardCheck,
   Database,
   Download,
   FolderKanban,
@@ -30,6 +31,7 @@ const secondaryNavigationItems = [
   { label: "Revisar", href: "/review", icon: RotateCcw, match: ["/review"] },
   { label: "Simulados", href: "/assessments", icon: BookOpen, match: ["/assessments"] },
   { label: "Importar", href: "/import", icon: Upload, match: ["/import"],adminOnly:true },
+  { label: "Revisar aulas", href: "/admin/review", icon: ClipboardCheck, match: ["/admin/review"],adminOnly:true },
   { label: "Administração", href: "/admin", icon: Database, match: ["/admin"],adminOnly:true },
   { label: "Histórico", href: "/history", icon: History, match: ["/history"] },
   { label: "Erros", href: "/mistakes", icon: TriangleAlert, match: ["/mistakes"] },

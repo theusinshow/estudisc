@@ -39,25 +39,25 @@ export default async function LessonReviewPage({ params, searchParams }: Props) 
 
   return (
     <AppShell>
-      <div className="review-page">
-        <Link href="/admin/review" className="review-back"><ArrowLeft aria-hidden="true" /> Todas as aulas</Link>
+      <div className="editorial-page">
+        <Link href="/admin/review" className="editorial-back"><ArrowLeft aria-hidden="true" /> Todas as aulas</Link>
         <header>
           <h1>{lesson.title}</h1>
-          <p className="review-meta">{lesson.id} · versão {lesson.version} · <span className="review-status" data-status={status}>{statusLabel[status] ?? "Sem registro"}</span></p>
-          <Link href={`/lessons/${encodeURIComponent(lesson.id)}`} target="_blank" className="secondary-action review-preview">
+          <p className="editorial-meta">{lesson.id} · versão {lesson.version} · <span className="editorial-status" data-status={status}>{statusLabel[status] ?? "Sem registro"}</span></p>
+          <Link href={`/lessons/${encodeURIComponent(lesson.id)}`} target="_blank" className="secondary-action editorial-preview">
             Abrir a aula como o aluno vê <ExternalLink aria-hidden="true" />
           </Link>
         </header>
 
-        <section className="review-section" aria-labelledby="concepts-title">
+        <section className="editorial-section" aria-labelledby="concepts-title">
           <h2 id="concepts-title">Conceitos ({lesson.concepts.length})</h2>
-          <ul className="review-concepts">{lesson.concepts.map((concept) => <li key={concept.id}><strong>{concept.title}</strong><small>{concept.id}</small></li>)}</ul>
+          <ul className="editorial-concepts">{lesson.concepts.map((concept) => <li key={concept.id}><strong>{concept.title}</strong><small>{concept.id}</small></li>)}</ul>
         </section>
 
-        <section className="review-section" aria-labelledby="questions-title">
+        <section className="editorial-section" aria-labelledby="questions-title">
           <h2 id="questions-title">Questões ({questions.length})</h2>
-          <p className="review-lede">Confira se cada gabarito está certo e se só uma alternativa é defensável. Gabarito errado é falha crítica.</p>
-          <ol className="review-questions">
+          <p className="editorial-lede">Confira se cada gabarito está certo e se só uma alternativa é defensável. Gabarito errado é falha crítica.</p>
+          <ol className="editorial-questions">
             {questions.map((question) => (
               <li key={question.id}>
                 <details>
@@ -67,36 +67,36 @@ export default async function LessonReviewPage({ params, searchParams }: Props) 
                   </summary>
                   {question.stimulus ? <div className="question-stimulus"><Paragraphs text={question.stimulus} /></div> : null}
                   {question.choices?.length ? (
-                    <ol className="review-choices">
+                    <ol className="editorial-choices">
                       {question.choices.map((choice, index) => (
                         <li key={choice.id} data-correct={choice.correct || undefined}>
-                          <span className="review-letter">{LETTERS[index]}</span>
+                          <span className="editorial-letter">{LETTERS[index]}</span>
                           <span>{choice.content}</span>
-                          {choice.correct ? <strong className="review-key">Gabarito</strong> : null}
+                          {choice.correct ? <strong className="editorial-key">Gabarito</strong> : null}
                         </li>
                       ))}
                     </ol>
                   ) : question.answer.kind === "numeric" ? (
-                    <p className="review-answer">Resposta: <strong>{String(question.answer.value).replace(".", ",")}{question.answer.unit ? ` ${question.answer.unit}` : ""}</strong>{question.answer.tolerance ? ` (tolerância ${question.answer.tolerance})` : ""}</p>
+                    <p className="editorial-answer">Resposta: <strong>{String(question.answer.value).replace(".", ",")}{question.answer.unit ? ` ${question.answer.unit}` : ""}</strong>{question.answer.tolerance ? ` (tolerância ${question.answer.tolerance})` : ""}</p>
                   ) : (
-                    <pre className="review-answer">{JSON.stringify(question.answer, null, 2)}</pre>
+                    <pre className="editorial-answer">{JSON.stringify(question.answer, null, 2)}</pre>
                   )}
-                  <p className="review-explanation"><strong>Explicação:</strong> {question.explanation}</p>
-                  {hints.get(question.id)?.length ? <p className="review-hints"><strong>Dicas:</strong> {hints.get(question.id)!.join(" → ")}</p> : null}
+                  <p className="editorial-explanation"><strong>Explicação:</strong> {question.explanation}</p>
+                  {hints.get(question.id)?.length ? <p className="editorial-hints"><strong>Dicas:</strong> {hints.get(question.id)!.join(" → ")}</p> : null}
                 </details>
               </li>
             ))}
           </ol>
         </section>
 
-        <section className="review-section" aria-labelledby="decision-title">
+        <section className="editorial-section" aria-labelledby="decision-title">
           <h2 id="decision-title">Sua revisão</h2>
           {status === "published" && pendingQuestions === 0 ? (
-            <p className="review-empty">Esta versão já está publicada. Para mudar o conteúdo, importe uma nova versão.</p>
+            <p className="editorial-message" data-kind="ok" role="status">Publicada: o aluno já vê esta aula e as {questions.length} questões dela. Para mudar o conteúdo, importe uma nova versão.</p>
           ) : status === "retired" ? (
-            <p className="review-empty">Esta versão foi retirada. Uma nova versão precisa ser importada.</p>
+            <p className="editorial-empty">Esta versão foi retirada. Uma nova versão precisa ser importada.</p>
           ) : !lessonRelease ? (
-            <p className="review-empty">Esta versão ainda não tem registro editorial. Reimporte a trilha para registrá-la.</p>
+            <p className="editorial-empty">Esta versão ainda não tem registro editorial. Reimporte a trilha para registrá-la.</p>
           ) : (
             <LessonReviewForm lessonId={lesson.id} version={lesson.version} questionCount={questions.length} />
           )}

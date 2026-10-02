@@ -9,7 +9,9 @@ export async function listTracks() {
   }
 
   const student=(await getOwnerProfile()).role==="STUDENT";
-  return withCatalogRepository((repository) => repository.listTracks(student));
+  const tracks=await withCatalogRepository((repository) => repository.listTracks(student));
+  // A student only sees tracks that already have a published lesson; the empty state explains the rest.
+  return student ? tracks.filter((track) => track.lessonCount > 0) : tracks;
 }
 
 export async function getTrack(stableId: string) {

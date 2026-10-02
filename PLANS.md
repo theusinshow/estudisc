@@ -56,7 +56,8 @@ Week 1 lessons (2026-10-01, Claude Code, user request "semana equilibrada"): 8 l
 - [x] W1 MAT-02, POR-02, CIE-01/02, GH-01/02 authored in the MAT-01 format; MAT-01 and Golden POR-01 revised.
 - [x] W2 four-layer self-review with a key-position/length audit; findings fixed; record in `docs/ifsc/WEEK-01-REVIEW.md`.
 - [x] W3 stimulus rendering fix; lint, typecheck, 155 tests, mobile check on the seeded memory server.
-- [ ] W4 human review and release (user decision); optional: per-lesson review screen in `/admin` to make that release practical.
+- [x] W4a per-lesson review screen in `/admin/review` and provenance-based authorship (ADR 0033).
+- [ ] W4b owner imports `.local/vecta-semana-1.json` in production and reviews/publishes each lesson (human decision).
 
 Lesson format v2 (2026-10-02, Claude Code, user request: "imagens dentro das aulas", start with guide + formats + one model lesson):
 - [x] L1 ADR 0032: `figure` block (image embedded as a data URI inside the Pack, sanitized SVG/PNG/WebP/JPEG, required alt text and text equivalent, provenance credit).

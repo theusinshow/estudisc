@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-02 — Per-lesson review and Week 1 in the new format
+
+- `/admin/review` (also in the admin "Mais" menu): imported lessons by subject with status; each lesson shows the student preview link, every question with key, explanation and hints, and a four-layer form. One submission records the owner's reviews on the lesson and its questions and publishes them together, in one transaction.
+- ADR 0033: releases are attributed to the content's author (`ai:<run>` for generated content, `exam:<id>` for official items) instead of the importer, so the owner can review AI-authored drafts; self-review stays blocked for human-authored content.
+- All Week 1 lessons gained opening/closing predictions, authored SVG figures (22 in total) and self-check interactions; Golden POR-01 gained predictions and a figure. Students no longer see tracks without a published lesson.
+- New scripts: `build-ifsc-week-pack.mjs` (importable Week 1 pack, about 500 kB) and `render-lesson-figures.mjs`.
+
 ## 2026-10-02 — Lesson figures, richer formats and the authoring guide
 
 - ADR 0032 `figure` block: an image embedded in the Pack as a sanitized data URI (SVG/PNG/WebP/JPEG, at most 200 kB), rendered through `<img>`, with required alt text, a "Descrição da imagem" text equivalent and credit.

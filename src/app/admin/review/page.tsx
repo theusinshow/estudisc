@@ -23,9 +23,9 @@ export default async function LessonReviewQueuePage() {
   if (!getDatabaseUrl() || getDatabaseUrl() === "memory://local") {
     return (
       <AppShell>
-        <div className="review-page">
+        <div className="editorial-page">
           <h1>Revisão de aulas</h1>
-          <p className="review-lede">A revisão usa o banco de dados persistente. O modo de demonstração não aprova conteúdo.</p>
+          <p className="editorial-lede">A revisão usa o banco de dados persistente. O modo de demonstração não aprova conteúdo.</p>
         </div>
       </AppShell>
     );
@@ -36,32 +36,32 @@ export default async function LessonReviewQueuePage() {
 
   return (
     <AppShell>
-      <div className="review-page">
+      <div className="editorial-page">
         <header>
           <h1>Revisão de aulas</h1>
-          <p className="review-lede">
+          <p className="editorial-lede">
             Abra uma aula, confira como o aluno vai vê-la, leia as questões e registre as quatro camadas de revisão. Ao aprovar, a aula e as questões dela são publicadas juntas.
           </p>
         </header>
 
         {queue.length === 0 ? (
-          <p className="review-empty">Nenhuma aula importada ainda. Importe a trilha em <Link href="/import">Importar</Link>.</p>
+          <p className="editorial-empty">Nenhuma aula importada ainda. Importe a trilha em <Link href="/import">Importar</Link>.</p>
         ) : (
           subjects.map((subject) => (
-            <section key={subject} className="review-group" aria-labelledby={`subject-${subject}`}>
+            <section key={subject} className="editorial-group" aria-labelledby={`subject-${subject}`}>
               <h2 id={`subject-${subject}`}>{subjectLabel[subject] ?? subject}</h2>
-              <ul className="review-list">
+              <ul className="editorial-list">
                 {queue.filter((item) => item.lesson.subject === subject).map((item) => {
                   const status = item.release?.status ?? "unregistered";
                   const published = item.questions.filter((question) => question.release?.status === "published").length;
                   return (
                     <li key={`${item.lesson.id}@${item.lesson.version}`}>
-                      <Link href={`/admin/review/${encodeURIComponent(item.lesson.id)}?version=${item.lesson.version}`} className="review-item" data-status={status}>
-                        <span className="review-item-title">
+                      <Link href={`/admin/review/${encodeURIComponent(item.lesson.id)}?version=${item.lesson.version}`} className="editorial-item" data-status={status}>
+                        <span className="editorial-item-title">
                           <strong>{item.lesson.title}</strong>
                           <small>{item.lesson.id} · versão {item.lesson.version} · {published}/{item.questions.length} questões publicadas</small>
                         </span>
-                        <span className="review-status">{statusLabel[status] ?? "Sem registro"}</span>
+                        <span className="editorial-status">{statusLabel[status] ?? "Sem registro"}</span>
                       </Link>
                     </li>
                   );

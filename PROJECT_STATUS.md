@@ -28,6 +28,8 @@ Vecta production (2026-10-02, user-authorized): https://vecta-three.vercel.app â
 
 Lesson format v2 (2026-10-02): ADR 0032 figure block, richer draft formats, CIE-01 model lesson with authored diagrams, `docs/ifsc/LESSON-AUTHORING-GUIDE.md` and `scripts/audit-lesson-drafts.mjs` (flags MAT-03..10 for hints/order). Content remains draft.
 
+Per-lesson review (2026-10-02): `/admin/review` + ADR 0033; all Week 1 lessons in the new format (22 figures). End-to-end check on a local PGlite Postgres: import 201 (12 lessons), POR-01 reviewed and published from the form, student sees only POR-01 (MAT-01 404), session button appears. Production still needs the owner to import `.local/vecta-semana-1.json` (generate with `node scripts/build-ifsc-week-pack.mjs .local/vecta-semana-1.json`) and review each lesson.
+
 NEXT ACTION: human editorial production/review using the private source pack and `/admin`; publish only through independent QA. See `docs/ifsc/LOCAL-DELIVERY.md`. The older V1 status below is historical.
 
 Last updated: 2026-08-05

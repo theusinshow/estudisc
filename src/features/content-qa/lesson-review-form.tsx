@@ -55,15 +55,15 @@ export function LessonReviewForm({ lessonId, version, questionCount }: Readonly<
   }
 
   return (
-    <form className="review-form" onSubmit={submit} aria-busy={busy}>
+    <form className="editorial-form" onSubmit={submit} aria-busy={busy}>
       {qaLayers.map((layer) => {
         const state = layers[layer];
         const id = `layer-${layer}`;
         return (
-          <fieldset key={layer} className="review-layer" data-verdict={state.verdict}>
+          <fieldset key={layer} className="editorial-layer" data-verdict={state.verdict}>
             <legend>{layerCopy[layer].title}</legend>
-            <p className="review-check">{layerCopy[layer].check}</p>
-            <div className="review-verdict" role="radiogroup" aria-label={`Decisão: ${layerCopy[layer].title}`}>
+            <p className="editorial-check">{layerCopy[layer].check}</p>
+            <div className="editorial-verdict" role="radiogroup" aria-label={`Decisão: ${layerCopy[layer].title}`}>
               {(["APPROVE", "REJECT"] as const).map((verdict) => (
                 <label key={verdict}>
                   <input type="radio" name={`${id}-verdict`} checked={state.verdict === verdict} onChange={() => update(layer, { verdict })} />
@@ -71,11 +71,11 @@ export function LessonReviewForm({ lessonId, version, questionCount }: Readonly<
                 </label>
               ))}
             </div>
-            <label className="review-field">
+            <label className="editorial-field">
               O que você conferiu (mínimo {MIN_RATIONALE} caracteres)
               <textarea value={state.rationale} onChange={(event) => update(layer, { rationale: event.target.value })} rows={3} required minLength={MIN_RATIONALE} />
             </label>
-            <label className="review-field">
+            <label className="editorial-field">
               Achado (opcional)
               <select value={state.severity} onChange={(event) => update(layer, { severity: event.target.value as Severity })}>
                 <option value="">Nenhum</option>
@@ -87,13 +87,13 @@ export function LessonReviewForm({ lessonId, version, questionCount }: Readonly<
               </select>
             </label>
             {state.severity ? (
-              <label className="review-field">
+              <label className="editorial-field">
                 Descreva o achado
                 <textarea value={state.finding} onChange={(event) => update(layer, { finding: event.target.value })} rows={2} required />
               </label>
             ) : null}
             {state.severity === "MEDIUM" && state.verdict === "APPROVE" ? (
-              <label className="review-field">
+              <label className="editorial-field">
                 Por que aceitar mesmo assim (mínimo {MIN_RATIONALE} caracteres)
                 <textarea value={state.override} onChange={(event) => update(layer, { override: event.target.value })} rows={2} required minLength={MIN_RATIONALE} />
               </label>
@@ -102,14 +102,14 @@ export function LessonReviewForm({ lessonId, version, questionCount }: Readonly<
         );
       })}
 
-      <label className="review-publish">
+      <label className="editorial-publish">
         <input type="checkbox" checked={publish && !anyReject} disabled={anyReject} onChange={(event) => setPublish(event.target.checked)} />
         <span>Publicar a aula e as {questionCount} questões ao enviar{anyReject ? " (indisponível: há camada reprovada)" : ""}</span>
       </label>
 
-      {incomplete.length ? <p className="review-hint">Complete: {incomplete.map((layer) => layerCopy[layer].title).join(", ")}.</p> : null}
+      {incomplete.length ? <p className="editorial-hint">Complete: {incomplete.map((layer) => layerCopy[layer].title).join(", ")}.</p> : null}
       <button type="submit" className="primary-button" disabled={busy || incomplete.length > 0}>{busy ? "Registrando…" : "Registrar revisão"}</button>
-      {message ? <p role={message.kind === "error" ? "alert" : "status"} className="review-message" data-kind={message.kind}>{message.text}</p> : null}
+      {message ? <p role={message.kind === "error" ? "alert" : "status"} className="editorial-message" data-kind={message.kind}>{message.text}</p> : null}
     </form>
   );
 }

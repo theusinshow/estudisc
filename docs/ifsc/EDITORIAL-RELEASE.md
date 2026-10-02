@@ -8,6 +8,12 @@ All four layers require independent approval: STRUCTURAL, FACTUAL, PEDAGOGICAL, 
 
 The user chose draft content for human review. No independent reviews have been fabricated for bundled seeds. A second authorized human reviewer must assess the actual sources and findings before publication. Disposable test fixtures simulate publication explicitly and are not evidence of content approval. Rejecting a published release records the finding and withdraws it; a retired stable version cannot be republished. Correct the content in a new version.
 
+## Per-lesson review (ADR 0033)
+
+Imports attribute each release to the content's author: generated items to `ai:<generationRunId>`, lessons with an AI source to `ai:<authorRunId>`, official items to `exam:<examId>`; the importer only when the content declares no author. The owner therefore can review AI-authored drafts, while content the owner wrote still needs another reviewer.
+
+`/admin/review` lists imported lessons. A lesson page shows the student preview, every question with its key, and a form with the four layers. One submission records the reviews on the lesson and on each of its questions (separate append-only rows sharing the rationale) and, when all layers approve, publishes questions and lesson in a single transaction. Any blocking finding or rejection publishes nothing.
+
 ## Admin JSON workflow
 
 V2 imports automatically register draft releases. The QA queue shows the release UUID. Send one independently justified review per layer using the QA action panel, then publish only after the four real reviews and structural/coverage checks pass:

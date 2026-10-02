@@ -89,6 +89,8 @@ Campos comuns às atividades: `title` (o enunciado que aparece), `instructions`,
 3. `pnpm vitest run tests/unit/ifsc-lesson-drafts.test.ts`: o Pack completo valida.
 4. Revisão humana nas quatro camadas: estrutura, fatos (refazer cada conta), pedagogia e alinhamento ao IFSC. Registre achados como em `WEEK-01-REVIEW.md`.
 5. Abra a aula no servidor de demonstração (`node scripts/demo-local.mjs`) no celular e passe por todos os passos.
+6. Figuras: `node scripts/render-lesson-figures.mjs <AULA> saida.png` e confira a imagem na largura do celular.
+7. Publicar: `node scripts/build-ifsc-week-pack.mjs .local/vecta-semana-1.json`, importe o arquivo em **Importar** e revise cada aula em **Mais → Revisar aulas** (`/admin/review`). Aprovando as quatro camadas, a aula e as questões dela são publicadas juntas.
 
 ## 8. Exemplo de conceito completo (rascunho)
 
