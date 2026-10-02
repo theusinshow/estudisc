@@ -29,3 +29,32 @@ export type TextBlockPayload = z.infer<typeof textBlockSchema>;
 export type CodeBlockPayload = z.infer<typeof codeBlockSchema>;
 export type TitledTextBlockPayload = z.infer<typeof titledTextBlockSchema>;
 export type ConceptBlockPayload = z.infer<typeof conceptBlockSchema>;
+
+// ADR 0032: authored lesson figures travel inside the Pack as data URIs and render only through <img>.
+export const FIGURE_MAX_BYTES = 200_000;
+const FIGURE_DATA_URI = /^data:image\/(svg\+xml|png|webp|jpeg);base64,([A-Za-z0-9+/]+={0,2})$/;
+const UNSAFE_SVG = /<script|<foreignObject|\son[a-z]+\s*=|javascript:|(?:xlink:)?href\s*=\s*["'](?!#)/i;
+
+export function inspectFigureSource(src: string): string | null {
+  const match = FIGURE_DATA_URI.exec(src);
+  if (!match) return "Figure source must be a base64 data URI of SVG, PNG, WebP or JPEG";
+  const binary = atob(match[2]);
+  if (binary.length > FIGURE_MAX_BYTES) return `Figure exceeds ${FIGURE_MAX_BYTES} bytes`;
+  if (match[1] === "svg+xml" && UNSAFE_SVG.test(binary)) return "SVG figure contains scripts, handlers or external references";
+  return null;
+}
+
+export const figureBlockSchema = baseBlockSchema.extend({
+  src: z.string().superRefine((src, context) => {
+    const problem = inspectFigureSource(src);
+    if (problem) context.addIssue({ code: "custom", message: problem });
+  }),
+  alt: z.string().trim().min(12),
+  caption: z.string().trim().min(1),
+  credit: z.string().trim().min(1).optional(),
+  longDescription: z.string().trim().min(1).optional(),
+  width: z.number().int().positive().max(4000),
+  height: z.number().int().positive().max(4000)
+});
+
+export type FigureBlockPayload = z.infer<typeof figureBlockSchema>;

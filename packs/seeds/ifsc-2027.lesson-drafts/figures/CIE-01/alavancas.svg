@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" font-family="Archivo, Arial, Helvetica, sans-serif">
+  <rect width="640" height="480" fill="#FFFCF5"/>
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#14804A"/></marker>
+  </defs>
+  <g font-size="18" font-weight="700" fill="#17141F">
+    <polygon points="40,30 54,52 26,52" fill="#FFD43B" stroke="#17141F" stroke-width="2.5"/><text x="64" y="50">apoio</text>
+    <rect x="160" y="34" width="20" height="20" fill="#14804A"/><text x="188" y="50">força (você)</text>
+    <rect x="350" y="34" width="20" height="20" fill="#C8321F"/><text x="378" y="50">carga</text>
+  </g>
+  <text x="32" y="112" font-size="22" font-weight="800" fill="#17141F">Interfixa: apoio no meio</text>
+  <text x="32" y="146" font-size="17" font-weight="600" fill="#5E5868">gangorra, tesoura</text>
+  <line x1="330" y1="160" x2="600" y2="160" stroke="#17141F" stroke-width="7"/>
+  <polygon points="465,164 485,196 445,196" fill="#FFD43B" stroke="#17141F" stroke-width="3"/>
+  <line x1="350" y1="112" x2="350" y2="150" stroke="#14804A" stroke-width="6" marker-end="url(#tip)"/>
+  <rect x="560" y="126" width="34" height="30" fill="#C8321F" stroke="#17141F" stroke-width="2.5"/>
+  <text x="32" y="252" font-size="22" font-weight="800" fill="#17141F">Inter-resistente: carga no meio</text>
+  <text x="32" y="286" font-size="17" font-weight="600" fill="#5E5868">carrinho de mão, quebra-nozes</text>
+  <line x1="300" y1="290" x2="600" y2="290" stroke="#17141F" stroke-width="7"/>
+  <polygon points="310,294 330,326 290,326" fill="#FFD43B" stroke="#17141F" stroke-width="3"/>
+  <rect x="430" y="256" width="34" height="30" fill="#C8321F" stroke="#17141F" stroke-width="2.5"/>
+  <line x1="590" y1="340" x2="590" y2="304" stroke="#14804A" stroke-width="6" marker-end="url(#tip)"/>
+  <text x="32" y="392" font-size="22" font-weight="800" fill="#17141F">Interpotente: força no meio</text>
+  <text x="32" y="426" font-size="17" font-weight="600" fill="#5E5868">pinça, vara de pescar</text>
+  <line x1="300" y1="430" x2="600" y2="430" stroke="#17141F" stroke-width="7"/>
+  <polygon points="310,434 330,466 290,466" fill="#FFD43B" stroke="#17141F" stroke-width="3"/>
+  <line x1="450" y1="476" x2="450" y2="444" stroke="#14804A" stroke-width="6" marker-end="url(#tip)"/>
+  <rect x="560" y="396" width="34" height="30" fill="#C8321F" stroke="#17141F" stroke-width="2.5"/>
+</svg>

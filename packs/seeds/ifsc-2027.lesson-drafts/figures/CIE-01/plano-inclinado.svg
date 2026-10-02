@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 390" font-family="Archivo, Arial, Helvetica, sans-serif">
+  <rect width="640" height="390" fill="#FFFCF5"/>
+  <defs><marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#14804A"/></marker></defs>
+  <text x="32" y="44" font-size="22" font-weight="800" fill="#17141F">Subir a mesma caixa até 1 m de altura</text>
+  <line x1="20" y1="300" x2="620" y2="300" stroke="#17141F" stroke-width="3"/>
+  <rect x="470" y="160" width="150" height="140" fill="#8FDCFF" stroke="#17141F" stroke-width="3"/>
+  <text x="545" y="236" font-size="18" font-weight="800" fill="#17141F" text-anchor="middle">1 m</text>
+  <polygon points="90,300 470,160 470,300" fill="#FFD43B" fill-opacity="0.55" stroke="#17141F" stroke-width="4"/>
+  <rect x="200" y="226" width="44" height="40" fill="#C8321F" stroke="#17141F" stroke-width="3" transform="rotate(-20.2 222 246)"/>
+  <line x1="140" y1="304" x2="190" y2="286" stroke="#14804A" stroke-width="7" marker-end="url(#g)"/>
+  <line x1="440" y1="290" x2="440" y2="178" stroke="#14804A" stroke-width="7" marker-end="url(#g)"/>
+  <text x="430" y="104" font-size="18" font-weight="800" fill="#14804A" text-anchor="end">Direto: força grande,</text>
+  <text x="430" y="128" font-size="18" font-weight="800" fill="#14804A" text-anchor="end">caminho de 1 m</text>
+  <text x="32" y="338" font-size="18" font-weight="800" fill="#14804A">Rampa: força menor, caminho de cerca de 3 m</text>
+  <text x="32" y="372" font-size="16" font-weight="600" fill="#5E5868">A energia para subir a caixa é a mesma nos dois casos.</text>
+</svg>

@@ -1,6 +1,7 @@
 import {
   codeBlockSchema,
   conceptBlockSchema,
+  figureBlockSchema,
   textBlockSchema,
   titledTextBlockSchema,
   type CodeBlockPayload,
@@ -34,10 +35,35 @@ const blockRenderers: Readonly<Record<string, BlockRenderer>> = {
   classification: renderEducationalBlock,
   ordering: renderEducationalBlock,
   matching: renderEducationalBlock
-  ,diagram:renderDiagram,timeline:renderTimeline
+  ,diagram:renderDiagram,timeline:renderTimeline,
+  figure: renderFigureBlock
 };
 function renderDiagram(block:ImportedLessonBlock){const parsed=atomModelSchema.safeParse(block.payload);return parsed.success?<AtomModel {...parsed.data}/>:<InvalidBlock block={block}/>;}
 function renderTimeline(block:ImportedLessonBlock){const raw=typeof block.payload==="object"&&block.payload!==null?block.payload:{};return renderEducationalBlock({...block,payload:{...raw,type:"ordering"}});}
+
+// ADR 0032: the data URI renders through <img>, so SVG scripts can never execute; the text equivalent is a disclosure.
+function renderFigureBlock(block: ImportedLessonBlock) {
+  const payload = typeof block.payload === "object" && block.payload !== null ? block.payload : {};
+  const parsed = figureBlockSchema.safeParse({ type: block.type, ...payload });
+  if (!parsed.success) return <InvalidBlock block={block} />;
+  const figure = parsed.data;
+  return (
+    <figure className="lesson-figure">
+      {/* eslint-disable-next-line @next/next/no-img-element -- Pack-embedded data URI; next/image cannot optimise it. */}
+      <img src={figure.src} alt={figure.alt} width={figure.width} height={figure.height} loading="lazy" decoding="async" />
+      <figcaption>
+        <span>{figure.caption}</span>
+        {figure.credit ? <small>{figure.credit}</small> : null}
+      </figcaption>
+      {figure.longDescription ? (
+        <details className="lesson-figure-description">
+          <summary>Descrição da imagem</summary>
+          <Paragraphs text={figure.longDescription} />
+        </details>
+      ) : null}
+    </figure>
+  );
+}
 
 function renderNumericExplorer(block: ImportedLessonBlock) {
   const parsed = numericExplorerSchema.safeParse(block.payload);

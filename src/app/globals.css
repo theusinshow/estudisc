@@ -1674,6 +1674,13 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .question-stimulus { padding: var(--kos-spacing-8) var(--kos-spacing-10); border-radius: var(--kos-radius-md); background: var(--kos-color-dimmed-paper); line-height: 1.6; }
 .question-stimulus p { margin: 0; }
 .question-stimulus p + p { margin-top: var(--kos-spacing-5); }
+/* ADR 0032: lesson figures. */
+.lesson-figure { display: grid; gap: var(--kos-spacing-4); margin: 0; }
+.lesson-figure img { display: block; width: 100%; height: auto; border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-learning-card); background: var(--kos-color-panel); }
+.lesson-figure figcaption { display: grid; gap: var(--kos-spacing-1); font-size: 0.9375rem; font-weight: 650; line-height: 1.45; }
+.lesson-figure figcaption small { color: var(--kos-color-dim); font-size: 0.8125rem; font-weight: 550; }
+.lesson-figure-description summary { display: inline-flex; align-items: center; min-height: 44px; font-weight: 750; cursor: pointer; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.lesson-figure-description p { margin: var(--kos-spacing-2) 0 0; line-height: 1.55; }
 .learning-interaction form { display: grid; gap: var(--kos-spacing-6); }
 .learning-interaction fieldset { display: grid; gap: var(--kos-spacing-6); margin: 0; padding: 0; border: 0; }
 .learning-interaction legend { margin-bottom: var(--kos-spacing-4); font-size: 0.875rem; font-weight: 700; color: var(--kos-color-dim); }

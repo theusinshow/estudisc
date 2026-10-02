@@ -4,8 +4,8 @@ import { ActivityList, type ActivityRecord } from "@/features/activities/registr
 import { LessonBlockRenderer, type ImportedLessonBlock } from "./blocks";
 import { LessonStepper, type LessonCompletion, type LessonStep } from "./lesson-stepper";
 
-const blockKind: Record<string, LessonStep["kind"]> = { concept: "concept", "worked-example": "example", example: "example", warning: "warning", summary: "summary" };
-const stepLabel: Record<LessonStep["kind"], string> = { intro: "Para começar", concept: "Conceito", example: "Exemplo resolvido", warning: "Cuidado", summary: "Resumo", check: "Checagem rápida", practice: "Prática", exit: "Desafio final", interaction: "Atividade" };
+const blockKind: Record<string, LessonStep["kind"]> = { concept: "concept", "worked-example": "example", example: "example", warning: "warning", summary: "summary", figure: "figure", prediction: "prediction" };
+const stepLabel: Record<LessonStep["kind"], string> = { intro: "Para começar", concept: "Conceito", example: "Exemplo resolvido", warning: "Cuidado", summary: "Resumo", check: "Checagem rápida", practice: "Prática", exit: "Desafio final", interaction: "Atividade", figure: "Observe", prediction: "Antes de começar" };
 const config = (activity: ActivityRecord) => (activity.config ?? {}) as { phase?: string; checkpointFor?: string };
 
 /** Turns the existing lesson blocks and activities into one-idea-per-screen steps. Content-driven, no subject branches. */

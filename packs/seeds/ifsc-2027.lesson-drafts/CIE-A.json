@@ -23,7 +23,10 @@
             { "title": "Passageiro no ônibus", "content": "Um aluno está sentado num ônibus que anda pela BR-101.\n1. Em relação ao motorista: a distância entre os dois não muda. O aluno está em repouso.\n2. Em relação a uma placa na beira da estrada: a distância muda a cada segundo. O aluno está em movimento.\n3. Conclusão: o mesmo aluno está em repouso e em movimento ao mesmo tempo, em relação a referenciais diferentes." },
             { "title": "A moeda que cai", "content": "Dentro do ônibus, andando em linha reta com velocidade constante, um passageiro solta uma moeda.\n1. Para o passageiro, a moeda cai em linha reta, para baixo.\n2. Para quem está parado na calçada, a moeda também avança junto com o ônibus enquanto cai.\n3. Por isso, para a calçada, a trajetória é uma curva.\nMesma moeda, trajetórias diferentes: depende do referencial." }
           ],
-          "pitfall": { "title": "\"Parado\" não é absoluto", "content": "Dizer \"a árvore está parada\" só está certo se o referencial for o chão. Para quem passa de carro, a árvore se move para trás. Em questões de referencial, procure sempre em relação a quem a pergunta está sendo feita." }
+          "pitfall": { "title": "\"Parado\" não é absoluto", "content": "Dizer \"a árvore está parada\" só está certo se o referencial for o chão. Para quem passa de carro, a árvore se move para trás. Em questões de referencial, procure sempre em relação a quem a pergunta está sendo feita." },
+          "extras": [
+            { "type": "figure", "file": "CIE-01/referencial.svg", "alt": "Dois passageiros, A e B, sentados lado a lado num ônibus a 60 km/h, e uma pessoa parada no ponto", "caption": "O mesmo passageiro está parado ou em movimento, dependendo de quem observa.", "longDescription": "Um ônibus amarelo anda para a direita a 60 km/h. Dentro dele, os passageiros A e B estão sentados lado a lado. Na calçada, uma pessoa espera no ponto.\nPara B, a distância até A não muda: A está em repouso.\nPara a pessoa no ponto, a posição de A muda a cada segundo: A está em movimento." }
+          ]
         },
         {
           "conceptId": "CIE.MECH.SPEED_BASIC",
@@ -34,7 +37,22 @@
             { "title": "De bicicleta para a escola", "content": "Você pedala 3 km em 15 minutos. Qual a velocidade média em km/h?\n1. Transforme o tempo em horas: 15 min = 15 ÷ 60 = 0,25 h.\n2. Divida: vm = 3 km ÷ 0,25 h = 12 km/h.\n3. Em m/s: 12 ÷ 3,6 ≈ 3,3 m/s.\nConferência: 3.000 m ÷ 900 s ≈ 3,3 m/s. Os dois caminhos batem." },
             { "title": "Convertendo a velocidade de um carro", "content": "Um carro anda a 36 km/h. Quanto é isso em m/s?\n1. De km/h para m/s, divida por 3,6.\n2. 36 ÷ 3,6 = 10.\nResposta: 10 m/s. O carro anda 10 metros a cada segundo." }
           ],
-          "pitfall": { "title": "Velocidade média não é média das velocidades", "content": "Você vai até a casa da avó, 30 km, a 30 km/h (1 h). Volta os mesmos 30 km a 15 km/h (2 h). A média das velocidades daria 22,5 km/h, mas isso está errado.\nO certo é distância total ÷ tempo total: 60 km ÷ 3 h = 20 km/h. O trecho mais lento dura mais tempo e pesa mais na média." }
+          "pitfall": { "title": "Velocidade média não é média das velocidades", "content": "Você vai até a casa da avó, 30 km, a 30 km/h (1 h). Volta os mesmos 30 km a 15 km/h (2 h). A média das velocidades daria 22,5 km/h, mas isso está errado.\nO certo é distância total ÷ tempo total: 60 km ÷ 3 h = 20 km/h. O trecho mais lento dura mais tempo e pesa mais na média." },
+          "extras": [
+            { "type": "figure", "file": "CIE-01/velocidade-media.svg", "alt": "Linha do tempo de 3 horas: ida de 1 hora a 30 km/h e volta de 2 horas a 15 km/h", "caption": "A velocidade média usa a distância total e o tempo total, não a média das velocidades.", "longDescription": "Uma viagem de ida e volta, 30 km para cada lado. A ida, a 30 km/h, dura 1 hora. A volta, a 15 km/h, dura 2 horas.\nCerto: 60 km divididos por 3 horas dão 20 km/h.\nErrado: a média das velocidades, (30 + 15) ÷ 2, dá 22,5 km/h, porque ignora que a volta durou o dobro do tempo." },
+            {
+              "type": "guided-steps",
+              "title": "Calcule passo a passo: 3 km em 15 minutos",
+              "instructions": "Responda cada passo com um número inteiro.",
+              "steps": [
+                { "id": "trechos", "prompt": "Quantos trechos de 15 minutos cabem em 1 hora?", "expected": 4 },
+                { "id": "distancia", "prompt": "Mantendo o ritmo, quantos km a bicicleta andaria em 1 hora?", "expected": 12 },
+                { "id": "velocidade", "prompt": "Então, qual é a velocidade média em km/h?", "expected": 12 }
+              ],
+              "hints": ["1 hora tem 60 minutos.", "Se em 15 minutos ela anda 3 km, em 4 trechos de 15 minutos anda 4 × 3 km."],
+              "explanation": "Uma hora tem 4 trechos de 15 minutos. Em cada um, a bicicleta anda 3 km: 4 × 3 = 12 km em 1 hora, ou seja, 12 km/h."
+            }
+          ]
         },
         {
           "conceptId": "CIE.MECH.SIMPLE_MACHINES",
@@ -45,7 +63,34 @@
             { "title": "Levantando uma pedra com uma barra", "content": "Uma pedra de 600 N está a 20 cm do apoio. Você empurra a outra ponta, a 120 cm do apoio. Que força precisa fazer?\n1. Equilíbrio: F × 120 = 600 × 20.\n2. F × 120 = 12.000.\n3. F = 12.000 ÷ 120 = 100 N.\nVocê faz 100 N em vez de 600 N: seis vezes menos força, porque sua mão está seis vezes mais longe do apoio." },
             { "title": "Roldana móvel e o preço da corda", "content": "Um balde de 300 N sobe 1 m com uma roldana móvel ideal.\n1. A força cai pela metade: 300 ÷ 2 = 150 N.\n2. Mas é preciso puxar o dobro de corda: 2 m.\n3. Compare: 300 N × 1 m = 300 e 150 N × 2 m = 300.\nO trabalho é o mesmo (300 joules). A roldana facilitou, mas não economizou energia." }
           ],
-          "pitfall": { "title": "Máquina não cria energia", "content": "\"A rampa faz a caixa ficar mais leve\" e \"a roldana dá energia extra\" são erros comuns. O peso da caixa não muda e nenhuma energia aparece do nada. A máquina apenas distribui o esforço: menos força, mais caminho." }
+          "pitfall": { "title": "Máquina não cria energia", "content": "\"A rampa faz a caixa ficar mais leve\" e \"a roldana dá energia extra\" são erros comuns. O peso da caixa não muda e nenhuma energia aparece do nada. A máquina apenas distribui o esforço: menos força, mais caminho." },
+          "extras": [
+            { "type": "figure", "file": "CIE-01/alavancas.svg", "alt": "Os três tipos de alavanca, com a posição do apoio, da força e da carga em cada um", "caption": "O que muda entre os tipos de alavanca é o elemento que fica no meio.", "longDescription": "Interfixa: o apoio fica no meio, a força numa ponta e a carga na outra. Exemplos: gangorra, tesoura.\nInter-resistente: a carga fica no meio, entre o apoio e a força. Exemplos: carrinho de mão, quebra-nozes.\nInterpotente: a força fica no meio, entre o apoio e a carga. Exemplos: pinça, vara de pescar." },
+            {
+              "type": "classification",
+              "title": "Classifique cada alavanca",
+              "instructions": "Pense no elemento que fica no meio: apoio, carga ou força.",
+              "items": [
+                { "id": "gangorra", "label": "Gangorra" },
+                { "id": "carrinho", "label": "Carrinho de mão" },
+                { "id": "pinca", "label": "Pinça" },
+                { "id": "tesoura", "label": "Tesoura" },
+                { "id": "quebra-nozes", "label": "Quebra-nozes" },
+                { "id": "vara", "label": "Vara de pescar" }
+              ],
+              "destinations": [
+                { "id": "interfixa", "label": "Interfixa (apoio no meio)" },
+                { "id": "inter-resistente", "label": "Inter-resistente (carga no meio)" },
+                { "id": "interpotente", "label": "Interpotente (força no meio)" }
+              ],
+              "expected": { "gangorra": "interfixa", "tesoura": "interfixa", "carrinho": "inter-resistente", "quebra-nozes": "inter-resistente", "pinca": "interpotente", "vara": "interpotente" },
+              "hints": ["Na gangorra, onde fica o apoio?", "No carrinho de mão, a roda é o apoio e a carga fica no meio."],
+              "explanation": "Gangorra e tesoura têm o apoio no meio. Carrinho de mão e quebra-nozes têm a carga no meio. Pinça e vara de pescar têm a força no meio.",
+              "afterExample": 1
+            },
+            { "type": "figure", "file": "CIE-01/roldanas.svg", "alt": "Roldana fixa e roldana móvel erguendo uma carga de 300 newtons", "caption": "A roldana fixa muda a direção da força; a móvel divide a força por dois e dobra a corda puxada.", "longDescription": "Roldana fixa: presa ao teto, sustenta uma carga de 300 N. Para erguer a carga, puxa-se a corda para baixo com 300 N. Só a direção muda.\nRoldana móvel: presa à carga de 300 N, com uma ponta da corda fixa no teto. Puxando a outra ponta para cima, basta 150 N, mas é preciso puxar o dobro de corda.", "afterExample": 1 },
+            { "type": "figure", "file": "CIE-01/plano-inclinado.svg", "alt": "Uma caixa subindo 1 metro por uma rampa e o mesmo trajeto feito levantando direto", "caption": "A rampa troca força por distância: menos força, caminho maior, a mesma energia.", "longDescription": "Para subir uma caixa até 1 m de altura, há dois caminhos. Levantando direto, a força é grande e o caminho tem 1 m. Pela rampa, a força é menor, mas o caminho tem cerca de 3 m. A energia necessária para subir a caixa é a mesma nos dois casos (com atrito, a rampa exige um pouco mais).", "afterExample": 2 }
+          ]
         },
         {
           "conceptId": "CIE.MECH.APPLICATION",
@@ -55,7 +100,23 @@
           "examples": [
             { "title": "Viagem com parada", "content": "Um ônibus anda 140 km em 2 h, para 30 min num posto e depois anda mais 40 km em 30 min. Qual a velocidade média da viagem toda?\n1. Distância total: 140 + 40 = 180 km.\n2. Tempo total, com a parada: 2 h + 0,5 h + 0,5 h = 3 h.\n3. vm = 180 ÷ 3 = 60 km/h.\nSe você esquecesse a parada, acharia 72 km/h, que está errado." }
           ],
-          "pitfall": { "title": "Unidades misturadas", "content": "Dividir 10 km por 40 min e escrever \"0,25 km/h\" é um erro clássico. 40 min não é 40 h. Converta antes: 40 min = 40 ÷ 60 h, ou responda em km/min e converta depois." }
+          "pitfall": { "title": "Unidades misturadas", "content": "Dividir 10 km por 40 min e escrever \"0,25 km/h\" é um erro clássico. 40 min não é 40 h. Converta antes: 40 min = 40 ÷ 60 h, ou responda em km/min e converta depois." },
+          "extras": [
+            {
+              "type": "ordering",
+              "title": "Monte o roteiro para resolver um problema",
+              "instructions": "Coloque os passos na ordem em que devem ser feitos.",
+              "items": [
+                { "id": "conferir", "label": "Conferir se o resultado faz sentido" },
+                { "id": "ler", "label": "Ler o que a questão pede" },
+                { "id": "relacao", "label": "Escolher a relação (v = d ÷ t ou alavanca)" },
+                { "id": "dados", "label": "Organizar os dados e converter as unidades" }
+              ],
+              "expectedOrder": ["ler", "dados", "relacao", "conferir"],
+              "hints": ["O primeiro passo vem antes de qualquer conta.", "Converter unidades acontece antes de escolher a fórmula e calcular."],
+              "explanation": "Primeiro entenda o que é pedido; depois organize os dados nas mesmas unidades; então escolha a relação e calcule; por fim, confira se o resultado é razoável."
+            }
+          ]
         }
       ],
       "summary": "Movimento e repouso dependem do referencial: sempre pergunte \"em relação a quê?\".\nVelocidade média = distância total ÷ tempo total, incluindo as paradas.\nkm/h → m/s: divida por 3,6. m/s → km/h: multiplique por 3,6.\nVelocidade média não é a média das velocidades.\nNa alavanca: força × distância ao apoio é igual dos dois lados.\nRoldana fixa muda a direção; roldana móvel divide a força por 2 e dobra a corda.\nMáquinas simples trocam força por distância: nunca criam energia.",
@@ -75,6 +136,10 @@
         { "conceptIds": ["CIE.MECH.SPEED_BASIC", "CIE.MECH.APPLICATION"], "type": "mc", "difficulty": "ifsc", "ops": ["interpret", "calculate"], "stimulus": "Num trecho urbano da BR-101, a placa indica velocidade máxima de 80 km/h. Um radar registrou um carro passando a 25 m/s.", "stem": "Com base na situação, o carro estava acima do limite?", "choices": ["Não, porque 25 é menor que 80.", "Sim, porque 25 m/s equivalem a 250 km/h.", "Sim, porque 25 m/s equivalem a 90 km/h.", "Não, porque 25 m/s equivalem a cerca de 6,9 km/h.", "Não é possível comparar m/s com km/h."], "correct": 2, "explanation": "Para comparar, use a mesma unidade. De m/s para km/h, multiplique por 3,6: 25 × 3,6 = 90 km/h, acima de 80 km/h. Comparar 25 com 80 direto ignora as unidades; dividir por 3,6 faz a conversão no sentido errado.", "hints": ["Só dá para comparar velocidades na mesma unidade.", "De m/s para km/h, multiplica-se ou divide-se por 3,6?", "Calcule 25 × 3,6 e compare com 80."], "exit": true },
         { "conceptIds": ["CIE.MECH.APPLICATION", "CIE.MECH.SPEED_BASIC"], "type": "mc", "difficulty": "ifsc", "ops": ["interpret", "calculate"], "stimulus": "Um ônibus intermunicipal faz uma viagem de 180 km pelo litoral catarinense. O motorista anotou os dois trechos da viagem:\nTrecho 1 — 120 km em 1,5 h (pista livre).\nTrecho 2 — 60 km em 1 h (trecho em obras).", "stem": "Qual foi a velocidade média do ônibus na viagem completa?", "choices": ["60 km/h", "70 km/h", "72 km/h", "80 km/h", "140 km/h"], "correct": 2, "explanation": "Distância total: 180 km. Tempo total: 1,5 + 1 = 2,5 h. vm = 180 ÷ 2,5 = 72 km/h. 70 km/h é a média das velocidades dos trechos (80 e 60), que não leva em conta o tempo gasto em cada um.", "hints": ["Velocidade média usa os totais da viagem.", "Some os tempos dos dois trechos.", "Divida 180 km pelo tempo total."], "exit": true },
         { "conceptIds": ["CIE.MECH.SIMPLE_MACHINES", "CIE.MECH.APPLICATION"], "type": "mc", "difficulty": "ifsc", "ops": ["evaluate"], "stimulus": "Na obra de uma casa em Blumenau, um ajudante usa uma roldana móvel para erguer sacos de areia até o segundo andar. Ele comenta: \"Com essa roldana eu faço metade da força. Então gasto metade da energia para subir cada saco.\"", "stem": "A conclusão do ajudante está correta?", "choices": ["Sim, metade da força significa metade da energia.", "Sim, porque a roldana fornece a outra metade da energia.", "Não: a roldana móvel não reduz a força, só muda a direção.", "Não: ele gasta o dobro de energia, porque puxa o dobro de corda com a mesma força de antes.", "Não: a força cai pela metade, mas ele puxa o dobro de corda; a energia é a mesma."], "correct": 4, "explanation": "Máquinas simples trocam força por distância. Metade da força vezes o dobro da distância dá o mesmo trabalho (na prática, um pouco mais, por causa do atrito). A roldana não fornece energia, e a força realmente cai pela metade (quem só muda a direção é a roldana fixa).", "hints": ["Lembre o exemplo do balde de 300 N com roldana móvel.", "Quando a força cai pela metade, o que acontece com o comprimento de corda puxado?", "Compare força × distância nos dois casos."], "exit": true }
+      ],
+      "opening": { "title": "Antes de começar", "content": "Uma rampa deixa mais fácil subir uma geladeira até o caminhão. Isso quer dizer que a rampa dá energia de graça? Pense numa resposta e guarde. No fim da aula, você vai conferir se acertou." },
+      "integration": [
+        { "type": "prediction", "title": "Volte à sua previsão", "content": "No começo da aula você pensou se a rampa dá energia de graça. Ela não dá: a rampa diminui a força, mas aumenta o caminho, e a energia para subir a geladeira continua a mesma. Sua previsão bateu?" }
       ]
     },
     {

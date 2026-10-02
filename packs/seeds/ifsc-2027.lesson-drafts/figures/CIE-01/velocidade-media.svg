@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="Archivo, Arial, Helvetica, sans-serif">
+  <rect width="640" height="360" fill="#FFFCF5"/>
+  <text x="32" y="50" font-size="26" font-weight="800" fill="#17141F">Ida e volta: 30 km + 30 km</text>
+  <rect x="50" y="96" width="180" height="70" fill="#8FDCFF" stroke="#17141F" stroke-width="3"/>
+  <rect x="230" y="96" width="360" height="70" fill="#FFA552" stroke="#17141F" stroke-width="3"/>
+  <text x="140" y="128" font-size="22" font-weight="800" fill="#17141F" text-anchor="middle">Ida</text>
+  <text x="140" y="154" font-size="18" font-weight="700" fill="#17141F" text-anchor="middle">30 km/h</text>
+  <text x="410" y="128" font-size="22" font-weight="800" fill="#17141F" text-anchor="middle">Volta</text>
+  <text x="410" y="154" font-size="18" font-weight="700" fill="#17141F" text-anchor="middle">15 km/h</text>
+  <line x1="50" y1="186" x2="590" y2="186" stroke="#17141F" stroke-width="3"/>
+  <g stroke="#17141F" stroke-width="3"><line x1="50" y1="178" x2="50" y2="194"/><line x1="230" y1="178" x2="230" y2="194"/><line x1="410" y1="178" x2="410" y2="194"/><line x1="590" y1="178" x2="590" y2="194"/></g>
+  <g font-size="18" font-weight="700" fill="#17141F" text-anchor="middle"><text x="50" y="218">0 h</text><text x="230" y="218">1 h</text><text x="410" y="218">2 h</text><text x="590" y="218">3 h</text></g>
+  <text x="32" y="268" font-size="22" font-weight="800" fill="#14804A">Certo: 60 km ÷ 3 h = 20 km/h</text>
+  <text x="32" y="306" font-size="22" font-weight="800" fill="#C8321F">Errado: (30 + 15) ÷ 2 = 22,5 km/h</text>
+  <text x="32" y="342" font-size="17" font-weight="600" fill="#5E5868">A volta lenta dura mais tempo, então pesa mais.</text>
+</svg>
