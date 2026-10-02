@@ -19,8 +19,24 @@ const layerCopy: Record<Layer, { title: string; check: string }> = {
 const MIN_RATIONALE = 20;
 const blank = (): LayerState => ({ verdict: "APPROVE", rationale: "", severity: "", finding: "", override: "" });
 
-/** The owner's four-layer decision for a lesson and its questions (ADR 0033). Nothing is prefilled: the rationale is the reviewer's own. */
+export type ReviewTarget = Readonly<{ lessonId: string; version: number; title: string; questionCount: number; preselected?: boolean }>;
+type Outcome = Readonly<{ lessonId: string; ok: boolean; error?: string }>;
+
+/** Single-lesson form, kept as the per-lesson entry point. */
 export function LessonReviewForm({ lessonId, version, questionCount }: Readonly<{ lessonId: string; version: number; questionCount: number }>) {
+  return <ReviewForm targets={[{ lessonId, version, title: lessonId, questionCount, preselected: true }]} />;
+}
+
+/**
+ * The owner's four-layer decision (ADR 0033) for one lesson, or for several selected lessons at once.
+ * Nothing is prefilled: the rationale is the reviewer's own. Each lesson publishes or fails on its own.
+ */
+export function ReviewForm({ targets }: Readonly<{ targets: readonly ReviewTarget[] }>) {
+  const multiple = targets.length > 1;
+  const [selected, setSelected] = useState<Set<string>>(() => new Set(targets.filter((target) => target.preselected).map((target) => target.lessonId)));
+  const [outcomes, setOutcomes] = useState<Outcome[]>([]);
+  const chosen = targets.filter((target) => selected.has(target.lessonId));
+  const questionCount = chosen.reduce((sum, target) => sum + target.questionCount, 0);
   const router = useRouter();
   const [layers, setLayers] = useState<Record<Layer, LayerState>>(() => Object.fromEntries(qaLayers.map((layer) => [layer, blank()])) as Record<Layer, LayerState>);
   const [publish, setPublish] = useState(true);
@@ -29,11 +45,12 @@ export function LessonReviewForm({ lessonId, version, questionCount }: Readonly<
 
   const update = (layer: Layer, patch: Partial<LayerState>) => setLayers((current) => ({ ...current, [layer]: { ...current[layer], ...patch } }));
   const anyReject = qaLayers.some((layer) => layers[layer].verdict === "REJECT");
+  const toggle = (lessonId: string) => setSelected((current) => { const next = new Set(current); if (next.has(lessonId)) next.delete(lessonId); else next.add(lessonId); return next; });
   const incomplete = qaLayers.filter((layer) => layers[layer].rationale.trim().length < MIN_RATIONALE || (layers[layer].severity && !layers[layer].finding.trim()) || (layers[layer].severity === "MEDIUM" && layers[layer].verdict === "APPROVE" && layers[layer].override.trim().length < MIN_RATIONALE));
 
   async function submit(event: FormEvent) {
     event.preventDefault();
-    if (incomplete.length) return;
+    if (incomplete.length || chosen.length === 0) return;
     setBusy(true);
     setMessage(null);
     const reviews = qaLayers.map((layer) => {
@@ -42,10 +59,21 @@ export function LessonReviewForm({ lessonId, version, questionCount }: Readonly<
       return { layer, verdict: state.verdict, rationale: state.rationale.trim(), findings };
     });
     try {
-      const response = await fetch("/api/admin/content-qa", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "review_lesson", lessonId, version, reviews, publish: publish && !anyReject }) });
+      const shouldPublish = publish && !anyReject;
+      const payload = multiple
+        ? { action: "review_lessons", lessons: chosen.map(({ lessonId, version }) => ({ lessonId, version })), reviews, publish: shouldPublish }
+        : { action: "review_lesson", lessonId: chosen[0].lessonId, version: chosen[0].version, reviews, publish: shouldPublish };
+      const response = await fetch("/api/admin/content-qa", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
       const body = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(body.message ?? "A revisão não foi registrada.");
-      setMessage({ kind: "ok", text: publish && !anyReject ? `Revisão registrada e aula publicada com ${questionCount} questões.` : "Revisão registrada. A aula continua em rascunho." });
+      if (multiple) {
+        const results: Outcome[] = body.results ?? [];
+        setOutcomes(results);
+        const done = results.filter((result) => result.ok).length;
+        setMessage({ kind: done === results.length ? "ok" : "error", text: `${done} de ${results.length} aulas ${shouldPublish ? "publicadas" : "revisadas"}.${done < results.length ? " Veja abaixo o que bloqueou as demais." : ""}` });
+      } else {
+        setMessage({ kind: "ok", text: shouldPublish ? `Revisão registrada e aula publicada com ${questionCount} questões.` : "Revisão registrada. A aula continua em rascunho." });
+      }
       router.refresh();
     } catch (error) {
       setMessage({ kind: "error", text: `Nada foi alterado: ${error instanceof Error ? error.message : "falha ao registrar."}` });
@@ -56,6 +84,18 @@ export function LessonReviewForm({ lessonId, version, questionCount }: Readonly<
 
   return (
     <form className="editorial-form" onSubmit={submit} aria-busy={busy}>
+      {multiple ? (
+        <fieldset className="editorial-layer">
+          <legend>Aulas incluídas ({chosen.length})</legend>
+          <p className="editorial-check">Ao enviar, você declara ter conferido cada aula marcada. As quatro camadas abaixo valem para todas elas.</p>
+          {targets.map((target) => (
+            <label key={target.lessonId} className="editorial-publish">
+              <input type="checkbox" checked={selected.has(target.lessonId)} onChange={() => toggle(target.lessonId)} />
+              <span>{target.title} <small>({target.lessonId}, {target.questionCount} questões)</small></span>
+            </label>
+          ))}
+        </fieldset>
+      ) : null}
       {qaLayers.map((layer) => {
         const state = layers[layer];
         const id = `layer-${layer}`;
@@ -104,12 +144,17 @@ export function LessonReviewForm({ lessonId, version, questionCount }: Readonly<
 
       <label className="editorial-publish">
         <input type="checkbox" checked={publish && !anyReject} disabled={anyReject} onChange={(event) => setPublish(event.target.checked)} />
-        <span>Publicar a aula e as {questionCount} questões ao enviar{anyReject ? " (indisponível: há camada reprovada)" : ""}</span>
+        <span>{multiple ? `Publicar as ${chosen.length} aulas e as ${questionCount} questões ao enviar` : `Publicar a aula e as ${questionCount} questões ao enviar`}{anyReject ? " (indisponível: há camada reprovada)" : ""}</span>
       </label>
 
       {incomplete.length ? <p className="editorial-hint">Complete: {incomplete.map((layer) => layerCopy[layer].title).join(", ")}.</p> : null}
-      <button type="submit" className="primary-button" disabled={busy || incomplete.length > 0}>{busy ? "Registrando…" : "Registrar revisão"}</button>
+      <button type="submit" className="primary-button" disabled={busy || incomplete.length > 0 || chosen.length === 0}>{busy ? "Registrando…" : "Registrar revisão"}</button>
       {message ? <p role={message.kind === "error" ? "alert" : "status"} className="editorial-message" data-kind={message.kind}>{message.text}</p> : null}
+      {outcomes.some((outcome) => !outcome.ok) ? (
+        <ul className="editorial-outcomes">
+          {outcomes.filter((outcome) => !outcome.ok).map((outcome) => <li key={outcome.lessonId}><strong>{outcome.lessonId}:</strong> {outcome.error}</li>)}
+        </ul>
+      ) : null}
     </form>
   );
 }

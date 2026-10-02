@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-02 — Bulk lesson publishing
+
+- `/admin/review` gains "Publicar várias aulas de uma vez": the owner's four-layer decision applies to every selected lesson (Week 1 preselected from `src/features/content-qa/release-groups.ts`); each lesson publishes or fails on its own and failures are listed. Verified against the real Week 1 pack: all 8 lessons publish with their questions.
+
 ## 2026-10-02 — Clear reasons for unavailable questions
 
 - An admin opening a draft lesson now sees a read-only "Rascunho · prévia do revisor" for each question (stem, choices, key; no submission, so no attempt on unpublished content) instead of "Questão indisponível para estudo". Students see why an item is unavailable: recently seen (spacing window) or not released yet.

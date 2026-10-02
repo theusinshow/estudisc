@@ -1,9 +1,11 @@
+import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import source from "../../packs/seeds/ifsc-2027.golden.track.v2.json";
 import { importTrackPack } from "@/features/import/api";
 import { DrizzleTrackImportRepository } from "@/db/repositories/track-import-repository";
 import { ContentQaRepository } from "@/db/repositories/content-qa-repository";
 import { qaLayers, releaseAuthor } from "@/features/content-qa/policy";
+import { RELEASE_GROUPS } from "@/features/content-qa/release-groups";
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
 
 const approvals = qaLayers.map(layer => ({ layer, verdict: "APPROVE", rationale: "Conferi conteúdo, gabaritos e alinhamento nesta fixture.", findings: [] }));
@@ -56,4 +58,27 @@ describe("per-lesson review", () => {
       await database.close();
     }
   }, 60000);
+});
+
+describe("bulk lesson review", () => {
+  it("publishes every Week 1 lesson of the release pack with one owner decision", async () => {
+    const database = await createMigratedPgliteTestDatabase();
+    try {
+      const weekPack = JSON.parse(readFileSync("packs/releases/ifsc-week-1.pack.json", "utf8"));
+      expect((await importTrackPack(weekPack, new DrizzleTrackImportRepository(database.db, "owner"))).status).toBe("imported");
+      const repo = new ContentQaRepository(database.db);
+      const targets = RELEASE_GROUPS[0].lessonIds.map(lessonId => ({ lessonId, version: 1 }));
+      const { results } = await repo.reviewLessons("owner", targets, approvals, true);
+      expect(results.filter(result => !result.ok)).toEqual([]);
+      const queue = await repo.lessonQueue();
+      for (const lessonId of RELEASE_GROUPS[0].lessonIds) {
+        const entry = queue.find(item => item.lesson.id === lessonId)!;
+        expect(entry.release?.status, lessonId).toBe("published");
+        expect(entry.questions.every(question => question.release?.status === "published"), lessonId).toBe(true);
+      }
+      expect(queue.find(item => item.lesson.id === "MAT-07")!.release?.status).toBe("draft");
+    } finally {
+      await database.close();
+    }
+  }, 180000);
 });

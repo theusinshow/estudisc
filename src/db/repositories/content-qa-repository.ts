@@ -110,4 +110,14 @@ export class ContentQaRepository {
       return {recorded,published:publish,releases:bundle.length};
     });
   }
+
+  /** The same owner decision applied to several lessons; each lesson succeeds or fails on its own. */
+  async reviewLessons(reviewerId:string,targets:ReadonlyArray<{lessonId:string;version:number}>,reviews:unknown[],publish:boolean){
+    const results=[];
+    for(const target of targets){
+      try{const outcome=await this.reviewLesson(reviewerId,target.lessonId,target.version,reviews,publish);results.push({...target,ok:true as const,...outcome});}
+      catch(error){results.push({...target,ok:false as const,error:error instanceof Error?error.message:"Falha ao revisar"});}
+    }
+    return {results};
+  }
 }

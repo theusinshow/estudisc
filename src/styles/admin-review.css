@@ -63,4 +63,10 @@
 .editorial-advanced { margin-top: var(--kos-spacing-12); }
 .editorial-advanced > summary { display: inline-flex; align-items: center; min-height: 44px; font-weight: 750; cursor: pointer; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 
+.editorial-bulk { display: grid; gap: var(--kos-spacing-8); padding: var(--kos-spacing-8) var(--kos-spacing-10); border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-learning-card); background: var(--kos-color-surface-yellow); }
+.editorial-bulk > summary { min-height: 44px; display: flex; align-items: center; font-weight: 900; cursor: pointer; }
+.editorial-bulk[open] > summary { margin-bottom: var(--kos-spacing-6); }
+.editorial-outcomes { display: grid; gap: var(--kos-spacing-3); margin: 0; padding-left: var(--kos-spacing-10); }
+.editorial-publish small { color: var(--kos-color-dim); font-weight: 600; }
+
 @media (prefers-reduced-motion: reduce) { .editorial-item { transition: none; } }

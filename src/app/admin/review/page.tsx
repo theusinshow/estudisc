@@ -6,6 +6,8 @@ import { AppShell } from "@/components/layout/app-shell";
 import { getDatabase, getDatabaseUrl } from "@/db/connection";
 import { ContentQaRepository } from "@/db/repositories/content-qa-repository";
 import { AccessDeniedError, requireAdmin } from "@/features/auth/owner";
+import { ReviewForm } from "@/features/content-qa/lesson-review-form";
+import { RELEASE_GROUPS } from "@/features/content-qa/release-groups";
 
 export const dynamic = "force-dynamic";
 
@@ -33,6 +35,8 @@ export default async function LessonReviewQueuePage() {
 
   const queue = await new ContentQaRepository(getDatabase()).lessonQueue();
   const subjects = [...new Set(queue.map((item) => item.lesson.subject))];
+  const preselected = new Set(RELEASE_GROUPS.flatMap((group) => group.lessonIds));
+  const drafts = queue.filter((item) => item.release?.status === "draft").map((item) => ({ lessonId: item.lesson.id, version: item.lesson.version, title: item.lesson.title, questionCount: item.questions.length, preselected: preselected.has(item.lesson.id) }));
 
   return (
     <AppShell>
@@ -43,6 +47,14 @@ export default async function LessonReviewQueuePage() {
             Abra uma aula, confira como o aluno vai vê-la, leia as questões e registre as quatro camadas de revisão. Ao aprovar, a aula e as questões dela são publicadas juntas.
           </p>
         </header>
+
+        {drafts.length > 1 ? (
+          <details className="editorial-bulk">
+            <summary>Publicar várias aulas de uma vez ({drafts.filter((item) => item.preselected).length} da {RELEASE_GROUPS[0]?.label ?? "lista"} marcadas)</summary>
+            <p className="editorial-lede">Use depois de abrir e conferir as aulas. A sua avaliação nas quatro camadas vale para todas as aulas marcadas, e cada uma é publicada com as próprias questões.</p>
+            <ReviewForm targets={drafts} />
+          </details>
+        ) : null}
 
         {queue.length === 0 ? (
           <p className="editorial-empty">Nenhuma aula importada ainda. Importe a trilha em <Link href="/import">Importar</Link>.</p>
