@@ -9,8 +9,8 @@ const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "KNOW/OS",
-  description: "Personal Learning Operating System"
+  title: "Vecta",
+  description: "Estudo para o IFSC, uma ideia por vez."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

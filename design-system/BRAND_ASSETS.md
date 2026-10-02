@@ -7,6 +7,19 @@ Ele não define os ícones usados na interface; para isso, consulte `ICONOGRAPHY
 
 ---
 
+
+## 0. Vecta (2026-10-01) — marca atual do app
+
+Por decisão do proprietário, o app passou a se chamar **Vecta**. Símbolo: um “V” cujo braço direito termina em ponta de seta — letra e vetor ao mesmo tempo, apontando para cima (progresso). Quadrado `signal` (#FFD43B) com contorno `ink` (#17141F) de 4 px na grade de 64 px; glifo com traço de 7 px e junção em ângulo.
+
+| Arquivo | Uso |
+|---|---|
+| `assets/vecta-mark.svg` | símbolo canônico, também usado como `src/app/icon.svg` |
+| `assets/vecta-mark-mono.svg` | versão de uma cor |
+| `src/app/apple-icon.png` | Apple touch icon 180 px, sangrado sem contorno |
+
+O wordmark “vecta” é texto vivo em Archivo 900, largura 125%, minúsculas, renderizado pelo componente `BrandLockup`; não há lockup em SVG porque SVG em `<img>` não carrega a fonte do produto. Os tokens e a direção neo-brutalista não mudam. Os assets KNOW/OS abaixo ficam como histórico.
+
 ## 1. Conceito do símbolo
 
 O símbolo representa um **caderno aberto** como estrutura de conhecimento:

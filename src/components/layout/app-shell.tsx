@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { BrandLockup } from "@/components/brand/brand-lockup";
 import { PrimaryNav } from "@/components/layout/primary-nav";
 
 export function AppShell({ children }: Readonly<{ children: ReactNode }>) {
@@ -11,9 +12,8 @@ export function AppShell({ children }: Readonly<{ children: ReactNode }>) {
       </a>
 
       <header className="topbar">
-        <Link className="brand-link" href="/" aria-label="KNOW/OS página inicial">
-          {/* eslint-disable-next-line @next/next/no-img-element -- Static official SVG lockup from public/branding. */}
-          <img src="/branding/know-os-lockup.svg" alt="KNOW/OS" width="154" height="38" />
+        <Link className="brand-link" href="/" aria-label="Vecta, página inicial">
+          <BrandLockup />
         </Link>
       </header>
 

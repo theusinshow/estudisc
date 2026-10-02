@@ -28,7 +28,7 @@ describe("session guard", () => {
     expect(isPublicRuntimePath("/api/auth/signin")).toBe(true);
     expect(isPublicRuntimePath("/auth/signin")).toBe(true);
     expect(isPublicRuntimePath("/api/health/db")).toBe(true);
-    expect(isPublicRuntimePath("/branding/know-os-lockup.svg")).toBe(true);
+    expect(isPublicRuntimePath("/branding/vecta-mark.svg")).toBe(true);
     expect(isPublicRuntimePath("/api/export")).toBe(false);
   });
 });

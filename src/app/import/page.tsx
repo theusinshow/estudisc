@@ -13,7 +13,7 @@ export default function ImportPage() {
         <p className="eyebrow">Importar conteúdo</p>
         <h1 id="import-title">Ativar catálogo</h1>
         <p>
-          Escolha entre estudar uma trilha pronta ou criar uma aula nova. Em ambos os caminhos, o KNOW/OS faz
+          Escolha entre estudar uma trilha pronta ou criar uma aula nova. Em ambos os caminhos, o Vecta faz
           preview antes de aplicar e bloqueia conflitos.
         </p>
 

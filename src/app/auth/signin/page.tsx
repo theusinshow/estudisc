@@ -1,5 +1,5 @@
-import Image from "next/image";
 
+import { BrandLockup } from "@/components/brand/brand-lockup";
 import { signIn } from "@/auth";
 import { googleAuthorizationParams } from "@/features/auth/google-oauth";
 import { getServerEnv } from "@/lib/env";
@@ -49,7 +49,7 @@ function getErrorMessage(error: string | undefined) {
   }
 
   if (error === "AccessDenied") {
-    return "Esta conta Google não está autorizada para este KNOW/OS.";
+    return "Esta conta Google não está autorizada para este Vecta.";
   }
 
   if (error === "OAuthSignin" || error === "OAuthCallback") {
@@ -70,7 +70,7 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
       <main className="auth-surface" aria-labelledby="signin-title">
         <section className="auth-panel">
           <div className="auth-panel-header">
-            <Image src="/branding/know-os-lockup.svg" alt="KNOW/OS" width={188} height={34} priority />
+            <BrandLockup priority />
             <p className="eyebrow">Entrar</p>
           </div>
           <div className="auth-copy">
@@ -97,13 +97,7 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
     <main className="auth-surface" aria-labelledby="signin-title">
       <section className="auth-panel">
         <div className="auth-panel-header">
-          <Image
-            src="/branding/know-os-lockup.svg"
-            alt="KNOW/OS"
-            width={188}
-            height={34}
-            priority
-          />
+<BrandLockup priority />
           <p className="eyebrow">Acesso do proprietário</p>
         </div>
 
