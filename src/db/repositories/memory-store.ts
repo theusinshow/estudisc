@@ -464,6 +464,7 @@ export class MemoryCatalogRepository {
         summary: string | null;
         lessonIds: Set<string>;
         trackTitles: Set<string>;
+        areaTitles: Set<string>;
       }
     >();
 
@@ -475,7 +476,8 @@ export class MemoryCatalogRepository {
           title: concept.title,
           summary: concept.summary,
           lessonIds: new Set<string>(),
-          trackTitles: new Set<string>()
+          trackTitles: new Set<string>(),
+          areaTitles: new Set<string>()
         });
 
       existing.lessonIds.add(concept.lessonStableId);
@@ -488,6 +490,10 @@ export class MemoryCatalogRepository {
         existing.trackTitles.add(track.title);
       }
 
+      if (moduleRecord) {
+        existing.areaTitles.add(moduleRecord.title);
+      }
+
       conceptMap.set(concept.stableId, existing);
     }
 
@@ -497,7 +503,8 @@ export class MemoryCatalogRepository {
         title: concept.title,
         summary: concept.summary,
         lessonCount: concept.lessonIds.size,
-        trackTitles: Array.from(concept.trackTitles).sort((left, right) => left.localeCompare(right))
+        trackTitles: Array.from(concept.trackTitles).sort((left, right) => left.localeCompare(right)),
+        areaTitles: Array.from(concept.areaTitles).sort((left, right) => left.localeCompare(right))
       }))
       .sort((left, right) => left.title.localeCompare(right.title));
   }
@@ -698,8 +705,12 @@ export class MemoryConceptEvidenceRepository {
   constructor(private readonly store = getMemoryStore()) {}
 
   async listForConcept(ownerId: string, conceptStableId: string): Promise<ConceptEvidenceRecord[]> {
+    return (await this.listForOwner(ownerId)).filter((entry) => entry.conceptStableId === conceptStableId);
+  }
+
+  async listForOwner(ownerId: string): Promise<ConceptEvidenceRecord[]> {
     return this.store.conceptEvidence
-      .filter((entry) => entry.ownerId === ownerId && entry.conceptStableId === conceptStableId)
+      .filter((entry) => entry.ownerId === ownerId)
       .sort((left, right) => right.createdAt.getTime() - left.createdAt.getTime())
       .map((entry) => ({
         id: entry.id,

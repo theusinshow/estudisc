@@ -43,21 +43,24 @@ describe("CatalogRepository", () => {
         title: "Logical AND",
         summary: "Retorna verdadeiro quando ambas as condições são verdadeiras.",
         lessonCount: 1,
-        trackTitles: ["JavaScript"]
+        trackTitles: ["JavaScript"],
+        areaTitles: ["Fundamentos"]
       },
       {
         stableId: "js-type-number",
         title: "Number",
         summary: "Representa valores numéricos.",
         lessonCount: 1,
-        trackTitles: ["JavaScript"]
+        trackTitles: ["JavaScript"],
+        areaTitles: ["Fundamentos"]
       },
       {
         stableId: "js-type-string",
         title: "String",
         summary: "Representa texto.",
         lessonCount: 1,
-        trackTitles: ["JavaScript"]
+        trackTitles: ["JavaScript"],
+        areaTitles: ["Fundamentos"]
       }
     ]);
   });

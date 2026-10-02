@@ -15,7 +15,8 @@ function createSnapshot(): ExportSnapshot {
         title: "Logical AND",
         summary: null,
         lessonCount: 1,
-        trackTitles: ["JavaScript"]
+        trackTitles: ["JavaScript"],
+        areaTitles: ["Fundamentos"]
       }
     ],
     masteryEvidence: [

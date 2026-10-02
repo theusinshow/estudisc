@@ -72,6 +72,8 @@ export type KnowledgeMapConcept = Readonly<{
   summary: string | null;
   lessonCount: number;
   trackTitles: string[];
+  /** Module titles, the subject areas a concept is taught in. */
+  areaTitles: string[];
 }>;
 
 export class CatalogRepository {
@@ -359,6 +361,7 @@ export class CatalogRepository {
         title: concepts.title,
         summary: concepts.summary,
         lessonStableId: lessons.stableId,
+        moduleTitle: modules.title,
         trackTitle: tracks.title
       })
       .from(concepts)
@@ -376,6 +379,7 @@ export class CatalogRepository {
         summary: string | null;
         lessonIds: Set<string>;
         trackTitles: Set<string>;
+        areaTitles: Set<string>;
       }
     >();
 
@@ -387,7 +391,8 @@ export class CatalogRepository {
           title: row.title,
           summary: row.summary,
           lessonIds: new Set<string>(),
-          trackTitles: new Set<string>()
+          trackTitles: new Set<string>(),
+          areaTitles: new Set<string>()
         };
 
       if (row.lessonStableId) {
@@ -398,6 +403,10 @@ export class CatalogRepository {
         existing.trackTitles.add(row.trackTitle);
       }
 
+      if (row.moduleTitle) {
+        existing.areaTitles.add(row.moduleTitle);
+      }
+
       conceptMap.set(row.stableId, existing);
     }
 
@@ -406,7 +415,8 @@ export class CatalogRepository {
       title: concept.title,
       summary: concept.summary,
       lessonCount: concept.lessonIds.size,
-      trackTitles: Array.from(concept.trackTitles).sort((left, right) => left.localeCompare(right))
+      trackTitles: Array.from(concept.trackTitles).sort((left, right) => left.localeCompare(right)),
+      areaTitles: Array.from(concept.areaTitles).sort((left, right) => left.localeCompare(right))
     }));
   }
 }

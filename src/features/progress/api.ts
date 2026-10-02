@@ -5,6 +5,9 @@ import { getDatabaseUrl } from "@/db/connection";
 import { MemoryConceptEvidenceRepository, MemoryProgressRepository } from "@/db/repositories/memory-store";
 import { calculateVersionedMastery } from "@/features/mastery/mastery-policy-v2";
 import { summarizeConceptMastery, type ConceptMasterySummary } from "./mastery-summary";
+import { buildProgressOverview, type ProgressOverview } from "./overview";
+import { listKnowledgeMapConcepts } from "@/features/concepts/knowledge-map-api";
+import { listHistoryEvents } from "@/features/history/api";
 
 export async function getLessonProgress(lessonStableId: string, conceptStableIds: readonly string[] = []) {
   const ownerId = await getOwnerId();
@@ -39,4 +42,20 @@ async function getConceptMasterySummary(ownerId: string, conceptStableIds: reado
     conceptStableIds.map(async (conceptStableId) => calculateVersionedMastery(await repository.listForConcept(ownerId, conceptStableId)))
   );
   return summarizeConceptMastery(states);
+}
+
+export async function getProgressOverview(now = new Date()): Promise<ProgressOverview> {
+  if (!getDatabaseUrl()) {
+    return buildProgressOverview({ concepts: [], evidence: [], eventDates: [], now });
+  }
+
+  const ownerId = await getOwnerId();
+  const memory = getDatabaseUrl() === "memory://local";
+  const [concepts, evidence, events] = await Promise.all([
+    listKnowledgeMapConcepts(),
+    (memory ? new MemoryConceptEvidenceRepository() : new ConceptEvidenceRepository()).listForOwner(ownerId),
+    listHistoryEvents()
+  ]);
+
+  return buildProgressOverview({ concepts, evidence, eventDates: events.map((event) => event.occurredAt), now });
 }

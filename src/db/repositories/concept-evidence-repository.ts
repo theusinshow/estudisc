@@ -45,6 +45,31 @@ export class ConceptEvidenceRepository {
       conditions: parseConditions(row.conditions)
     }));
   }
+
+  // One read for owner-wide progress views, instead of one query per concept.
+  async listForOwner(ownerId: string): Promise<ConceptEvidenceRecord[]> {
+    const rows = await this.db
+      .select({
+        id: conceptEvidence.id,
+        conceptStableId: concepts.stableId,
+        type: conceptEvidence.type,
+        strength: conceptEvidence.strength,
+        sourceType: conceptEvidence.sourceType,
+        sourceId: conceptEvidence.sourceId,
+        attemptId: conceptEvidence.attemptId,
+        conditions: conceptEvidence.conditions,
+        createdAt: conceptEvidence.createdAt
+      })
+      .from(conceptEvidence)
+      .innerJoin(concepts, eq(concepts.id, conceptEvidence.conceptId))
+      .where(eq(conceptEvidence.ownerId, ownerId))
+      .orderBy(desc(conceptEvidence.createdAt));
+
+    return rows.map((row) => ({
+      ...row,
+      conditions: parseConditions(row.conditions)
+    }));
+  }
 }
 
 function parseConditions(value: unknown): Record<string, unknown> {
