@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-02 — MAT-PREREQ editorial corrections
+
+- MAT-PREREQ now teaches decimal place value and explicit ratio/proportion definitions, with a chocolate-bar hook, an accessible authored figure, guided practice and a proportionality warning. Its three final Questions use A–E alternatives and revised hints.
+- Corrected content uses new versions (Lesson 3, Questions 2, Golden/Week 1 packs 2); all items remain draft with generated provenance. The target 2027/1 Anexo V mapping still requires source verification.
+- Added scoped prerequisite authoring/regeneration and refreshed the Week 1 import bundle. Review exports now include interaction prompts/answers that were omitted because the exporter checked the payload instead of the block type.
+- Updated evaluator/rendering/mobile study checks and removed hardcoded pack-version assumptions from the immutable-release integration test.
+
 ## 2026-10-02 — Bulk lesson publishing
 
 - `/admin/review` gains "Publicar várias aulas de uma vez": the owner's four-layer decision applies to every selected lesson (Week 1 preselected from `src/features/content-qa/release-groups.ts`); each lesson publishes or fails on its own and failures are listed. Verified against the real Week 1 pack: all 8 lessons publish with their questions.

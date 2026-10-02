@@ -16,11 +16,12 @@ const page = await browser.newPage({ viewport: { width: 390, height: 800 }, devi
 
 function interaction(block) {
   const p = block.payload;
+  const type = block.type;
   const lines = [`**Atividade (${block.type}):** ${p.title ?? ""}`, p.instructions ? `_${p.instructions}_` : ""];
-  if (p.type === "classification" || p.type === "matching") for (const item of p.items) lines.push(`- ${item.label} → ${p.destinations.find(d => d.id === p.expected[item.id])?.label}`);
-  if (p.type === "ordering") lines.push(`Ordem correta: ${p.expectedOrder.map(id => p.items.find(i => i.id === id)?.label).join(" → ")}`);
-  if (p.type === "text-highlight") for (const item of p.items) lines.push(`- ${p.expectedIds.includes(item.id) ? "[EVIDÊNCIA] " : ""}${item.label}`);
-  if (p.type === "guided-steps") for (const step of p.steps) lines.push(`- ${step.prompt} → ${step.expected}`);
+  if (type === "classification" || type === "matching") for (const item of p.items) lines.push(`- ${item.label} → ${p.destinations.find(d => d.id === p.expected[item.id])?.label}`);
+  if (type === "ordering") lines.push(`Ordem correta: ${p.expectedOrder.map(id => p.items.find(i => i.id === id)?.label).join(" → ")}`);
+  if (type === "text-highlight") for (const item of p.items) lines.push(`- ${p.expectedIds.includes(item.id) ? "[EVIDÊNCIA] " : ""}${item.label}`);
+  if (type === "guided-steps") for (const step of p.steps) lines.push(`- ${step.prompt} → ${step.expected}`);
   if (p.hints?.length) lines.push(`Dicas: ${p.hints.join(" | ")}`);
   if (p.explanation) lines.push(`Explicação: ${p.explanation}`);
   return lines.filter(Boolean).join("\n");

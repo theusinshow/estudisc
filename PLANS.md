@@ -1,4 +1,34 @@
-# KNOW/OS — Autonomous Execution Plan
+# KNOW/OS - Autonomous Execution Plan
+
+## MAT-PREREQ editorial corrections (2026-10-02)
+
+User authorized applying the review corrections, committing and pushing to `https://github.com/theusinshow/vecta`. Scope: MAT-PREREQ only, its generated packs/review export and documentation. Content stays draft; publication is a separate human decision.
+
+Assumptions: existing lesson/question versions may already have been imported, so corrected content uses new versions. The 2027/1 Anexo V mapping remains unverified; the historical 2026/1 edital confirms topic relevance but does not prove the current mapping.
+
+Acceptance: explicit fraction/decimal/ratio/proportion teaching, accessible authored figure, intermediate practice before the warning, exactly three A–E exit questions with unique correct choices, hints that leave the calculation to the learner, source/release synchronization and unchanged unrelated lessons/questions.
+
+- [x] Update canonical MAT-PREREQ authoring and regenerate only its seed content and the Week 1 release.
+- [x] Regenerate the local Markdown/PNG review export and inspect the diagram at phone width.
+- [x] Run focused import/evaluation/rendering checks, then required final lint/typecheck/test/build and focused mobile checks.
+- [x] Record results/status/changelog and prepare the scoped commit/push authorized by the user. The session final response records the actual delivery outcome.
+
+Verification log (2026-10-02):
+
+- `node scripts/build-ifsc-math-preparation.mjs`: generated lesson v3 / three Questions v2, all draft; `node scripts/build-ifsc-week-pack.mjs`: generated Week 1 pack v2, 12 lessons / 140 Questions. Compared both seed and release to HEAD: only MAT-PREREQ and Q-MAT-PREREQ-1/2/3 changed, plus the pack version.
+- `node scripts/export-lessons-for-review.mjs`: regenerated local Markdown/PNGs; confirmed three final keys C/B/E and the guided answer in the exported Markdown.
+- `node scripts/render-lesson-figures.mjs MAT-PREREQ .local/mat-prereq-phone.png`: visually inspected at 343 px; ten equal parts, three highlighted, readable labels, equivalent lesson text and alt/longDescription.
+- `pnpm test tests/unit/ifsc-math-preparation.test.ts tests/unit/ifsc-week-pack.test.ts tests/unit/ifsc-lesson-drafts.test.ts tests/component/golden-lessons.test.tsx tests/integration/golden-questions.test.ts`: 7 passed.
+- `pnpm lint`, `pnpm typecheck`, `pnpm build`: passed. `pnpm exec eslint scripts/build-ifsc-math-preparation.mjs scripts/build-ifsc-golden-seed.mjs scripts/export-lessons-for-review.mjs tests/unit/ifsc-math-preparation.test.ts tests/component/golden-lessons.test.tsx tests/integration/content-release.test.ts tests/e2e/percentage-study.spec.ts`: passed after the test correction.
+- Initial `pnpm test`: 171 passed / 1 failed / 3 skipped. `content-release.test.ts:25` hardcoded pack version 2, now already current, and got `already_imported` instead of `imported`. Changed its version advancement to relative increments, retaining immutable-content rejection; `pnpm test tests/integration/content-release.test.ts` passed. Final focused `pnpm test tests/unit/ifsc-math-preparation.test.ts tests/unit/ifsc-week-pack.test.ts tests/unit/ifsc-lesson-drafts.test.ts tests/component/golden-lessons.test.tsx tests/integration/golden-questions.test.ts tests/integration/content-release.test.ts`: 8 passed.
+- With `$env:DATABASE_URL='memory://local'`, `pnpm test:e2e`: 20 passed / 14 failed. Failures: auth expects removed KNOW/OS image (both projects); import UI expects controls inside the now-collapsed advanced importer (three tests, both projects); motion expects the old sign-in transitions (both projects); vertical-slice expects legacy continuation links (both projects) and the known intermittent Lab RUN result (mobile). Those application surfaces are unchanged by this correction. The mobile percentage import also failed after the seed was regenerated during the run; isolated validation below passed. Full E2E acceptance is not claimed.
+- Fresh owned memory server, `$env:DATABASE_URL='memory://local'` then `pnpm test:e2e tests/e2e/percentage-study.spec.ts --project=mobile-chrome`: 1 passed, including the figure, three MC submissions, session completion, percentage continuation, reload/resume and responsive bounds. The desktop percentage scenario also passed in the full run.
+- `git diff --check`: passed.
+- Final `pnpm test`: 172 passed / 3 skipped (68 test files passed / 3 skipped). Final `pnpm build` after the last wording correction: passed. The broad E2E failure is retained above; this is not a full application acceptance gate.
+
+Repository delivery: user-authorized scoped commit and `git push origin main`; actual outcome is reported in the session response.
+
+NEXT ACTION: human review/import of the new MAT-PREREQ draft version and target-edital verification. A separate task must reconcile legacy E2E expectations and investigate shared-state/continuation failures before claiming full application acceptance.
 
 ## IFSC expansion — active program (2026-10-01)
 
@@ -1350,8 +1380,5 @@ Step 23 dogfood study flow UX pass is implemented and validated locally. Dev-mod
 ## NEXT ACTION
 
 Review Step 23 on the running no-OAuth local memory server at `http://127.0.0.1:3211/lessons/js-fundamentals-001` while the listener PID 40540 stays alive. The bundled JavaScript example Pack is imported there; import the desired complete Track Pack again if needed because `memory://local` content only survives in that exact process. Do not deploy, push or apply production Neon migrations without explicit confirmation.
-
-
-
 
 

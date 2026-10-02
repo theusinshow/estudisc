@@ -1,4 +1,14 @@
-# KNOW/OS — Project Status
+# KNOW/OS - Project Status
+
+## MAT-PREREQ editorial correction (2026-10-02)
+
+User authorized the correction, commit and push to `theusinshow/vecta`. MAT-PREREQ now includes explicit fraction/decimal/ratio/proportion teaching, an authored accessible figure, guided practice, a proportionality warning and exactly three A–E exit Questions with revised hints. New versions: Lesson 3, Questions 2, Golden/Week 1 packs 2. All remain draft; no publication approval is recorded. Other lessons/questions were compared against HEAD and remain unchanged.
+
+Canonical scoped authoring lives in `scripts/build-ifsc-math-preparation.mjs`; the import bundle and `.local/revisao-semana-1/MAT-PREREQ.md` / its PNG are regenerated. The review exporter now preserves interaction prompts/answers. Editorial/source notes: `docs/ifsc/golden-lessons/MAT-PREREQ-PREPARATION.md`.
+
+Validation: final suite 172 passed / 3 skipped; 8 focused evaluator/import/rendering/immutable-release tests passed; lint/typecheck/build passed; figure visually checked at 343 px; isolated mobile percentage-study E2E passed, including the updated prerequisite Questions, figure and session resume. Full E2E ran with `DATABASE_URL=memory://local`: 20 passed / 14 failed (legacy auth/import/motion/progress expectations, mobile Lab RUN flake and a percentage import failure resolved by isolated rerun after regeneration). Full E2E acceptance remains open. Exact commands, errors and recovery actions are in the top section of PLANS.md. Commit/push are user-authorized and their actual outcome is recorded in the session response.
+
+NEXT ACTION: before publication, the owner must review/import the new draft version and verify the actual 05/DEING/2027/1 Anexo V; historical 2026/1 coverage does not establish the target-edition mapping. Remaining E2E issues need separate reconciliation; publication/production migration are not part of this correction.
 
 ## IFSC expansion — current status (2026-10-01)
 

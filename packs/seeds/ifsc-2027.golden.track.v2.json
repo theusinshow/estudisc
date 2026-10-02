@@ -1,7 +1,7 @@
 {
   "schema": "caderno.track.v2",
   "packId": "know-os.ifsc-2027.golden",
-  "version": 1,
+  "version": 2,
   "language": "pt-BR",
   "sources": [
     {
@@ -365,24 +365,54 @@
     },
     {
       "id": "Q-MAT-PREREQ-1",
-      "version": 1,
+      "version": 2,
       "subjectCode": "MAT",
       "primaryConceptId": "MAT.FRACTION.MEANING",
       "conceptIds": [
         "MAT.FRACTION.MEANING"
       ],
-      "type": "numeric",
+      "type": "multiple_choice",
       "difficulty": "foundation",
       "cognitiveOperations": [
         "calculate"
       ],
-      "stem": "Escreva 1/4 em decimal.",
+      "stem": "Qual número decimal representa 1/4?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "0,14",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "B",
+          "content": "0,20",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "C",
+          "content": "0,25",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "0,40",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "E",
+          "content": "4,00",
+          "correct": false,
+          "targetsError": "conceptual"
+        }
+      ],
       "answer": {
-        "kind": "numeric",
-        "value": 0.25,
-        "tolerance": 0
+        "kind": "multiple_choice",
+        "choiceId": "C"
       },
-      "explanation": "1 ÷ 4 = 0,25: o todo foi dividido em 4 partes iguais e uma foi considerada.",
+      "explanation": "1/4 = 25/100 = 0,25: multiplicamos o numerador e o denominador por 25. Também podemos calcular 1 ÷ 4 = 0,25.",
       "sourceIds": [
         "src-ifsc-golden-author"
       ],
@@ -398,25 +428,54 @@
     },
     {
       "id": "Q-MAT-PREREQ-2",
-      "version": 1,
+      "version": 2,
       "subjectCode": "MAT",
       "primaryConceptId": "MAT.DECIMAL.MEANING",
       "conceptIds": [
         "MAT.DECIMAL.MEANING"
       ],
-      "type": "numeric",
+      "type": "multiple_choice",
       "difficulty": "foundation",
       "cognitiveOperations": [
         "calculate"
       ],
-      "stem": "Escreva 0,4 como porcentagem.",
+      "stem": "Uma estudante completou 0,4 de uma lista de exercícios. Que porcentagem da lista ela completou?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "4%",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "B",
+          "content": "40%",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "0,4%",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "D",
+          "content": "60%",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "E",
+          "content": "400%",
+          "correct": false,
+          "targetsError": "conceptual"
+        }
+      ],
       "answer": {
-        "kind": "numeric",
-        "value": 40,
-        "tolerance": 0,
-        "unit": "%"
+        "kind": "multiple_choice",
+        "choiceId": "B"
       },
-      "explanation": "0,4 × 100 = 40, então 0,4 = 40%.",
+      "explanation": "0,4 = 4/10 = 40/100 = 40%. A pergunta pede a parte concluída, não a parte que falta.",
       "sourceIds": [
         "src-ifsc-golden-author"
       ],
@@ -432,25 +491,54 @@
     },
     {
       "id": "Q-MAT-PREREQ-3",
-      "version": 1,
+      "version": 2,
       "subjectCode": "MAT",
       "primaryConceptId": "MAT.PROPORTION.CONCEPT",
       "conceptIds": [
         "MAT.PROPORTION.CONCEPT"
       ],
-      "type": "numeric",
+      "type": "multiple_choice",
       "difficulty": "foundation",
       "cognitiveOperations": [
         "calculate"
       ],
       "stem": "Uma receita usa 2 copos de leite para cada 5 colheres de açúcar. Mantendo a proporção, quantas colheres de açúcar serão usadas com 6 copos de leite?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "5",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "B",
+          "content": "9",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "C",
+          "content": "10",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "D",
+          "content": "30",
+          "correct": false,
+          "targetsError": "conceptual"
+        },
+        {
+          "id": "E",
+          "content": "15",
+          "correct": true
+        }
+      ],
       "answer": {
-        "kind": "numeric",
-        "value": 15,
-        "tolerance": 0,
-        "unit": "colheres"
+        "kind": "multiple_choice",
+        "choiceId": "E"
       },
-      "explanation": "O leite foi multiplicado por 3 (de 2 para 6); o açúcar também deve ser: 5 × 3 = 15 colheres.",
+      "explanation": "O leite foi multiplicado por 3 (6 ÷ 2 = 3); o açúcar também deve ser: 5 × 3 = 15 colheres.",
       "sourceIds": [
         "src-ifsc-golden-author"
       ],
@@ -1932,7 +2020,7 @@
         "lessons": [
           {
             "id": "MAT-PREREQ",
-            "version": 2,
+            "version": 3,
             "title": "Frações, decimais e razões — preparação",
             "kind": "compact",
             "estimatedMinutes": 15,
@@ -1970,32 +2058,150 @@
             ],
             "blocks": [
               {
-                "id": "mat-prereq-fraction",
+                "id": "mat-prereq-hook",
                 "type": "text",
                 "schemaVersion": 1,
                 "conceptIds": [],
                 "payload": {
-                  "content": "Uma fração representa uma divisão ou partes de um todo. Em 1/2, o todo foi dividido em duas partes iguais e uma foi considerada. Dividir 1 por 2 dá 0,5; multiplicar esse decimal por 100 dá 50%."
+                  "content": "Uma barra de chocolate foi dividida em 10 pedaços iguais. Você comeu 3. Essa quantidade pode ser escrita como 3/10, 0,3 ou 30%. Nesta aula, vamos entender essas escritas e aprender a manter as proporções de uma receita."
+                }
+              },
+              {
+                "id": "mat-prereq-fraction",
+                "type": "concept",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "MAT.FRACTION.MEANING"
+                ],
+                "payload": {
+                  "conceptId": "MAT.FRACTION.MEANING",
+                  "title": "Frações: partes iguais e divisão",
+                  "content": "Uma fração pode representar partes iguais de um todo ou uma divisão. Em 1/2, o denominador (número de baixo) indica duas partes iguais; o numerador (número de cima) indica uma dessas partes.\n\nPara escrever uma fração em decimal, divida o numerador pelo denominador. Também podemos usar uma fração equivalente: multiplicar os dois números pelo mesmo fator diferente de zero não altera seu valor."
+                }
+              },
+              {
+                "id": "mat-prereq-decimal-concept",
+                "type": "concept",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "MAT.DECIMAL.MEANING"
+                ],
+                "payload": {
+                  "conceptId": "MAT.DECIMAL.MEANING",
+                  "title": "Décimos e centésimos",
+                  "content": "Na escrita decimal, a primeira casa depois da vírgula representa décimos; a segunda, centésimos. Assim, 0,5 = 5/10 e 0,25 = 25/100.\n\nNa barra de chocolate, 3 de 10 partes iguais correspondem a 3/10 = 0,3. Se cada décimo fosse dividido em 10 partes iguais, seriam 30 de 100 partes: 30/100 = 30%."
+                }
+              },
+              {
+                "id": "mat-prereq-figure",
+                "type": "figure",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "MAT.FRACTION.MEANING",
+                  "MAT.DECIMAL.MEANING"
+                ],
+                "payload": {
+                  "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOTAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMzkwIDIwMCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsbGVkYnk9InRpdGxlIGRlc2MiPgogIDx0aXRsZSBpZD0idGl0bGUiPlRyw6pzIGTDqWNpbW9zIGRlIHVtYSBiYXJyYTwvdGl0bGU+CiAgPGRlc2MgaWQ9ImRlc2MiPkRleiBwYXJ0ZXMgaWd1YWlzLCB0csOqcyBkZXN0YWNhZGFzLiBUcsOqcyBkw6ljaW1vcyBlcXVpdmFsZW0gYSAwLDMgZSBhIDMwJS48L2Rlc2M+CiAgPHJlY3Qgd2lkdGg9IjM5MCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNGRkZDRjUiLz4KICA8ZyBmaWxsPSIjMTcxNDFGIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIHRleHQtYW5jaG9yPSJtaWRkbGUiPgogICAgPHRleHQgeD0iMTk1IiB5PSIzNSIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9IjcwMCI+MyBkZSAxMCBwYXJ0ZXMgaWd1YWlzPC90ZXh0PgogICAgPHJlY3QgeD0iMjUiIHk9IjU4IiB3aWR0aD0iMTAyIiBoZWlnaHQ9IjU4IiBmaWxsPSIjRkZENDNCIi8+CiAgICA8cmVjdCB4PSIyNSIgeT0iNTgiIHdpZHRoPSIzNDAiIGhlaWdodD0iNTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE3MTQxRiIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgICA8cGF0aCBkPSJNNTkgNThWMTE2IE05MyA1OFYxMTYgTTEyNyA1OFYxMTYgTTE2MSA1OFYxMTYgTTE5NSA1OFYxMTYgTTIyOSA1OFYxMTYgTTI2MyA1OFYxMTYgTTI5NyA1OFYxMTYgTTMzMSA1OFYxMTYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE3MTQxRiIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8dGV4dCB4PSIxOTUiIHk9IjE1NSIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCI+My8xMCA9IDAsMyA9IDMwJTwvdGV4dD4KICAgIDx0ZXh0IHg9IjE5NSIgeT0iMTg0IiBmb250LXNpemU9IjIwIj5PIHJldMOibmd1bG8gaW50ZWlybyDDqSBvIHRvZG8uPC90ZXh0PgogIDwvZz4KPC9zdmc+Cg==",
+                  "alt": "Barra dividida em dez partes iguais, das quais três estão destacadas.",
+                  "caption": "3 de 10 partes iguais: 3/10 = 0,3 = 30%.",
+                  "longDescription": "O retângulo representa uma barra inteira dividida em dez partes de mesma área. Três partes estão destacadas e sete não. A parte destacada representa três décimos: 3/10 = 0,3 = 30%. Todas essas informações também aparecem no texto da aula.",
+                  "credit": "Ilustração própria (rascunho)",
+                  "width": 390,
+                  "height": 200
+                }
+              },
+              {
+                "id": "mat-prereq-fraction-example",
+                "type": "worked-example",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "MAT.FRACTION.MEANING",
+                  "MAT.DECIMAL.MEANING"
+                ],
+                "payload": {
+                  "title": "Da fração para o decimal",
+                  "content": "1. Queremos escrever 3/4 em decimal.\n2. Para obter denominador 100, multiplicamos 4 por 25.\n3. Multiplicamos o numerador pelo mesmo fator: 3 × 25 = 75.\n4. Assim, 3/4 = 75/100 = 0,75."
                 }
               },
               {
                 "id": "mat-prereq-decimal",
                 "type": "worked-example",
                 "schemaVersion": 1,
-                "conceptIds": [],
+                "conceptIds": [
+                  "MAT.DECIMAL.MEANING"
+                ],
                 "payload": {
                   "title": "Do decimal para a porcentagem",
-                  "content": "0,75 = 75/100 = 75%. Porcentagem é uma fração com denominador 100: o inteiro 1 vale 100%, então 0,75 do inteiro vale 75%. Para converter, multiplique o decimal por 100."
+                  "content": "Porcentagem compara uma quantidade com 100 partes iguais. O inteiro 1 corresponde a 100%.\n\n1. O decimal 0,75 corresponde a 75/100.\n2. Portanto, 0,75 = 75%.\n3. Para converter, multiplique o decimal por 100 e acrescente o símbolo % ao resultado: 0,75 × 100 = 75; a porcentagem é 75%."
+                }
+              },
+              {
+                "id": "mat-prereq-ratio-concept",
+                "type": "concept",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "MAT.PROPORTION.CONCEPT"
+                ],
+                "payload": {
+                  "conceptId": "MAT.PROPORTION.CONCEPT",
+                  "title": "Razão e proporção",
+                  "content": "Razão é uma comparação por divisão. Uma receita usa 3 copos de farinha para 2 copos de água: a razão entre farinha e água é 3/2, nessa ordem.\n\nProporção é a igualdade entre duas razões. Com 6 copos de farinha e 4 de água, temos 3/2 = 6/4. Multiplicar as duas quantidades pelo mesmo fator mantém a proporção."
                 }
               },
               {
                 "id": "mat-prereq-ratio",
                 "type": "worked-example",
                 "schemaVersion": 1,
-                "conceptIds": [],
+                "conceptIds": [
+                  "MAT.PROPORTION.CONCEPT"
+                ],
                 "payload": {
                   "title": "Mantenha a mesma razão",
-                  "content": "Se 3 copos de farinha correspondem a 2 de água, dobrar a farinha para 6 exige dobrar a água para 4. Multiplique as duas quantidades pelo mesmo fator para preservar a razão."
+                  "content": "1. A receita usa 3 copos de farinha para 2 de água.\n2. A nova quantidade de farinha é 6 copos: o fator é 6 ÷ 3 = 2.\n3. A água deve ser multiplicada pelo mesmo fator: 2 × 2 = 4 copos.\n4. Conferência: 3/2 = 6/4; as duas razões valem 1,5."
+                }
+              },
+              {
+                "id": "mat-prereq-practice",
+                "type": "guided-steps",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "MAT.PROPORTION.CONCEPT"
+                ],
+                "payload": {
+                  "title": "Experimente antes do desafio",
+                  "steps": [
+                    {
+                      "id": "water",
+                      "prompt": "Um suco usa 2 medidas de concentrado para 3 de água. Com 4 medidas de concentrado, quantas medidas de água mantêm a proporção?",
+                      "expected": 6
+                    }
+                  ],
+                  "hints": [
+                    "Compare a quantidade inicial de concentrado com a nova quantidade."
+                  ],
+                  "explanation": "O concentrado dobrou, de 2 para 4; a água também deve dobrar, de 3 para 6 medidas."
+                }
+              },
+              {
+                "id": "mat-prereq-warning",
+                "type": "warning",
+                "schemaVersion": 1,
+                "conceptIds": [
+                  "MAT.PROPORTION.CONCEPT"
+                ],
+                "payload": {
+                  "title": "Somar não mantém necessariamente a proporção",
+                  "content": "Na receita de 3 copos de farinha para 2 de água, acrescentar 3 copos a cada ingrediente resulta em 6 de farinha e 5 de água. A proporção mudou: 3/2 é diferente de 6/5.\n\nPara dobrar a receita, multiplique as duas quantidades por 2: serão 6 copos de farinha e 4 de água."
+                }
+              },
+              {
+                "id": "mat-prereq-summary",
+                "type": "summary",
+                "schemaVersion": 1,
+                "conceptIds": [],
+                "payload": {
+                  "title": "Para lembrar depois",
+                  "content": "Fração em decimal: divida o numerador pelo denominador ou encontre uma fração equivalente.\nDécimos e centésimos: primeira e segunda casas depois da vírgula.\nDecimal em porcentagem: multiplique por 100 e acrescente %.\nProporção: mantenha a ordem das quantidades e multiplique ambas pelo mesmo fator.\nAgora tente as três questões finais sem consultar os exemplos."
                 }
               }
             ],
@@ -2003,31 +2209,33 @@
               {
                 "id": "mat-prereq-q1",
                 "type": "question",
-                "prompt": "Escreva 1/4 em decimal.",
+                "prompt": "Qual número decimal representa 1/4?",
                 "conceptIds": [
                   "MAT.FRACTION.MEANING"
                 ],
                 "questionId": "Q-MAT-PREREQ-1",
                 "config": {
                   "hints": [
-                    "Uma fração é uma divisão: numerador dividido pelo denominador.",
-                    "Calcule 1 ÷ 4. Dica: é a metade de 0,5."
-                  ]
+                    "O denominador indica em quantas partes iguais o inteiro foi dividido.",
+                    "Procure uma fração equivalente com denominador 100 e escreva-a em decimal."
+                  ],
+                  "phase": "exit_ticket"
                 }
               },
               {
                 "id": "mat-prereq-q2",
                 "type": "question",
-                "prompt": "Escreva 0,4 como porcentagem.",
+                "prompt": "Uma estudante completou 0,4 de uma lista de exercícios. Que porcentagem da lista ela completou?",
                 "conceptIds": [
                   "MAT.DECIMAL.MEANING"
                 ],
                 "questionId": "Q-MAT-PREREQ-2",
                 "config": {
                   "hints": [
-                    "Porcentagem é uma fração com denominador 100: o inteiro 1 vale 100%.",
-                    "Multiplique o decimal por 100."
-                  ]
+                    "Porcentagem compara uma quantidade com 100 partes iguais.",
+                    "Multiplique o decimal por 100 para obter o número que acompanha o símbolo %."
+                  ],
+                  "phase": "exit_ticket"
                 }
               },
               {
@@ -2040,9 +2248,10 @@
                 "questionId": "Q-MAT-PREREQ-3",
                 "config": {
                   "hints": [
-                    "Descubra por quanto o leite foi multiplicado.",
-                    "De 2 para 6 o leite foi multiplicado por 3; faça o mesmo com o açúcar."
-                  ]
+                    "Compare a quantidade inicial de leite com a quantidade nova.",
+                    "Para manter a proporção, aplique às colheres de açúcar o mesmo fator usado nos copos de leite."
+                  ],
+                  "phase": "exit_ticket"
                 }
               }
             ]
