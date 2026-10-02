@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-02 — Empty-production fixes
+
+- Today hides the session buttons when nothing is published (they could only fail with "content_gap"); empty states are role-aware: students see "Suas aulas ainda não foram liberadas", the admin sees the import → review → publish steps.
+- A student opening an admin page is redirected to Today instead of receiving raw JSON 403; admin APIs still answer 403.
+
 ## 2026-10-01 — Vecta brand
 
 - The app is now branded Vecta: minimalist vector-V mark (`public/branding/vecta-mark.svg`, app icon `src/app/icon.svg`, Apple icon) and a live Archivo wordmark through `BrandLockup` in the shell and sign-in. Page title "Vecta"; tokens unchanged. Recorded in `design-system/BRAND_ASSETS.md` §0.

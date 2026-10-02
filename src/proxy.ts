@@ -72,7 +72,11 @@ const authProxy = auth((request: AuthenticatedRequest) => {
     if (pathname === "/api/session") return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
     const account = readAccountSession(request.cookies.get(ACCOUNT_SESSION_COOKIE)?.value, accountConfig.accounts, accountConfig.secret);
     if (account) {
-      if (isAdminRuntimePath(pathname) && account.role !== "ADMIN") return secureResponse(NextResponse.json({ code: "admin_required", message: "Esta ação requer perfil de administrador." }, { status: 403 }), contentSecurityPolicy);
+      if (isAdminRuntimePath(pathname) && account.role !== "ADMIN") {
+        // APIs answer 403; pages send the student home instead of showing raw JSON.
+        if (pathname.startsWith("/api/")) return secureResponse(NextResponse.json({ code: "admin_required", message: "Esta ação requer perfil de administrador." }, { status: 403 }), contentSecurityPolicy);
+        return secureResponse(NextResponse.redirect(new URL("/", request.url)), contentSecurityPolicy);
+      }
       return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
     }
     if (pathname.startsWith("/api/")) return secureResponse(NextResponse.json({ code: "auth_required", message: "Entre com sua conta para continuar." }, { status: 401 }), contentSecurityPolicy);

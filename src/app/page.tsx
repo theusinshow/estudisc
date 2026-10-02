@@ -67,13 +67,14 @@ export default async function HomePage() {
           </Link>
         ))}
 
-        <section className="time-card" aria-labelledby="time-title">
+        {/* Without anything to study, the session buttons could only fail; the callout below explains instead. */}
+        {primaryRecommendation && <section className="time-card" aria-labelledby="time-title">
           <h2 id="time-title">Quanto tempo você tem agora?</h2>
           <p>Montamos a sessão com revisões, erros pendentes e a próxima aula.</p>
           <ClickSpark>
             <SessionControls />
           </ClickSpark>
-        </section>
+        </section>}
 
         <section className="today-next" aria-labelledby="next-title">
           <h2 id="next-title">Próxima ação</h2>
@@ -85,7 +86,7 @@ export default async function HomePage() {
               <ArrowRight aria-hidden="true" />
             </Link>
           ) : (
-            <FirstRunCallout description="Ainda não há aulas disponíveis. Assim que um conteúdo for liberado, ele aparece aqui." />
+            <FirstRunCallout />
           )}
         </section>
 

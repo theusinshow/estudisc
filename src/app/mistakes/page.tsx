@@ -23,6 +23,8 @@ export default async function MistakesPage() {
           <FirstRunCallout
             title="Nenhum erro categorizado."
             description="Erros úteis aparecem depois de praticar uma atividade importada e enviar uma solução."
+            studentTitle="Nenhum erro por enquanto."
+            studentDescription="Quando uma resposta não der certo, o erro fica guardado aqui para você corrigir depois."
           />
         ) : (
           <ol className="record-list" aria-label="Erros categorizados">
