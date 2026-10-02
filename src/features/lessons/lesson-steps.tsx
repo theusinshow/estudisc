@@ -5,7 +5,7 @@ import { LessonBlockRenderer, type ImportedLessonBlock } from "./blocks";
 import { LessonStepper, type LessonCompletion, type LessonStep } from "./lesson-stepper";
 
 const blockKind: Record<string, LessonStep["kind"]> = { concept: "concept", "worked-example": "example", example: "example", warning: "warning", summary: "summary", figure: "figure", prediction: "prediction" };
-const stepLabel: Record<LessonStep["kind"], string> = { intro: "Para começar", concept: "Conceito", example: "Exemplo resolvido", warning: "Cuidado", summary: "Resumo", check: "Checagem rápida", practice: "Prática", exit: "Desafio final", interaction: "Atividade", figure: "Observe", prediction: "Antes de começar" };
+const stepLabel: Record<LessonStep["kind"], string> = { intro: "Para começar", concept: "Conceito", example: "Exemplo resolvido", warning: "Cuidado", summary: "Resumo", check: "Checagem rápida", practice: "Prática", exit: "Desafio final", interaction: "Atividade", figure: "Observe", prediction: "Pare e pense" };
 const config = (activity: ActivityRecord) => (activity.config ?? {}) as { phase?: string; checkpointFor?: string };
 
 /** Turns the existing lesson blocks and activities into one-idea-per-screen steps. Content-driven, no subject branches. */
@@ -22,7 +22,8 @@ export function LessonSteps({ blocks, activities, completion }: Readonly<{ block
     openConcept = undefined;
   };
   blocks.forEach((block, index) => {
-    if (block.type === "concept" || block.type === "summary") closeConcept();
+    // A prediction is never part of a concept, so the previous concept's quick check comes before it.
+    if (block.type === "concept" || block.type === "summary" || block.type === "prediction") closeConcept();
     if (block.type === "text" && index > 0) { pendingText.push(block); return; }
     const group = [...pendingText, block];
     pendingText = [];

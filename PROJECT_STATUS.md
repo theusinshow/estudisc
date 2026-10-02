@@ -26,6 +26,8 @@ Week 1 (2026-10-01, Claude Code): balanced first week of 8 draft lessons (MAT-01
 
 Vecta production (2026-10-02, user-authorized): https://vecta-three.vercel.app — new Vercel Hobby project `vecta` (separate from `know-os`), Git-connected to theusinshow/vecta, framework pinned in `vercel.json`; Neon Free `vecta-db` provisioned through the Vercel Marketplace (sets `DATABASE_URL`); `AUTH_SECRET` (new, production-only) and `KNOW_OS_ACCOUNTS` stored as sensitive env vars; 18 migrations applied. Smoke: health 200, unauthenticated redirect to sign-in, accounts listed, invalid code 401. No content imported yet: Week 1 still needs import plus human release in `/admin`.
 
+Lesson format v2 (2026-10-02): ADR 0032 figure block, richer draft formats, CIE-01 model lesson with authored diagrams, `docs/ifsc/LESSON-AUTHORING-GUIDE.md` and `scripts/audit-lesson-drafts.mjs` (flags MAT-03..10 for hints/order). Content remains draft.
+
 NEXT ACTION: human editorial production/review using the private source pack and `/admin`; publish only through independent QA. See `docs/ifsc/LOCAL-DELIVERY.md`. The older V1 status below is historical.
 
 Last updated: 2026-08-05

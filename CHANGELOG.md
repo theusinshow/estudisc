@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-02 — Lesson figures, richer formats and the authoring guide
+
+- ADR 0032 `figure` block: an image embedded in the Pack as a sanitized data URI (SVG/PNG/WebP/JPEG, at most 200 kB), rendered through `<img>`, with required alt text, a "Descrição da imagem" text equivalent and credit.
+- Draft format: per-concept `extras` (figures from SVG files, predictions, classification, ordering, matching, text-highlight, guided steps, with `afterExample` placement), lesson `opening` and `integration`. Step mode labels figures "Observe" and predictions "Pare e pense"; activity check button reads "Conferir resposta".
+- CIE-01 rebuilt as the model lesson with five authored diagrams and interactions. New `docs/ifsc/LESSON-AUTHORING-GUIDE.md` and `scripts/audit-lesson-drafts.mjs`.
+
 ## 2026-10-02 — Empty-production fixes
 
 - Today hides the session buttons when nothing is published (they could only fail with "content_gap"); empty states are role-aware: students see "Suas aulas ainda não foram liberadas", the admin sees the import → review → publish steps.

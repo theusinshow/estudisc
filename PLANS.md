@@ -57,6 +57,14 @@ Week 1 lessons (2026-10-01, Claude Code, user request "semana equilibrada"): 8 l
 - [x] W2 four-layer self-review with a key-position/length audit; findings fixed; record in `docs/ifsc/WEEK-01-REVIEW.md`.
 - [x] W3 stimulus rendering fix; lint, typecheck, 155 tests, mobile check on the seeded memory server.
 - [ ] W4 human review and release (user decision); optional: per-lesson review screen in `/admin` to make that release practical.
+
+Lesson format v2 (2026-10-02, Claude Code, user request: "imagens dentro das aulas", start with guide + formats + one model lesson):
+- [x] L1 ADR 0032: `figure` block (image embedded as a data URI inside the Pack, sanitized SVG/PNG/WebP/JPEG, required alt text and text equivalent, provenance credit).
+- [x] L2 Figure schema, Pack v2 registration, renderer, styles; tests for accept/reject and rendering.
+- [x] L3 Draft format: per-concept `extras` (figure from an SVG file, prediction, classification, ordering, matching, text-highlight, guided-steps) and a lesson-level opening prediction; expander + test.
+- [x] L4 `docs/ifsc/LESSON-AUTHORING-GUIDE.md`: lesson anatomy, per-subject templates, block catalog, image rules, question rules, review checklist.
+- [x] L5 Rebuild CIE-01 as the model lesson with authored SVG figures and interactions; mobile visual check.
+- [x] L6 lint, typecheck, tests, build; docs/changelog; commit, push, deploy.
 Validation: pnpm lint, pnpm typecheck, pnpm test (155 passed / 3 skipped), pnpm build passed; Playwright screenshots at 390px and 1280px on a seeded `memory://local` server (no horizontal overflow; only Next devtools CSP warnings, identical on untouched pages). E2E not re-run. Risk: progress counts every catalog concept, including draft tracks hidden from students.
 
 NEXT ACTION (previous): ingest/classify the four Integrated historical exams and definitive keys, preserve private assets, enforce reserved benchmarks and retain 2025.1 Q15 as annulled. Then seed simulations and connect publication QA. Assessment engine focused integration passed. Golden draft rendering/evaluation checks passed; independent publication QA remains pending. Planner functional policy checks passed; final QA readiness certification remains pending IFSC-12. MAT-07 source is draft; independent content QA/publication remains a visible acceptance item. Historical V1 plans below are retained as history, not the active roadmap.

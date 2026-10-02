@@ -10,7 +10,7 @@ it("allows ordering with keyboard buttons and explains the result", async () => 
   render(<EducationalActivityPanel prompt="Ordene" config={parseEducationalActivityConfig({ type: "ordering", items: [{id:"b",label:"Segundo"},{id:"a",label:"Primeiro"}], expectedOrder:["a","b"] })} />);
   const up = screen.getByRole("button", {name:"Mover Primeiro para cima"});
   up.focus(); await user.keyboard("{Enter}");
-  await user.click(screen.getByRole("button", {name:"Conferir exercício guiado"}));
+  await user.click(screen.getByRole("button", {name:"Conferir resposta"}));
   expect(screen.getByRole("status")).toHaveTextContent("Resposta correta");
 });
 it("explores percentages and rejects empty values", async () => {
