@@ -3,6 +3,9 @@ import Image from "next/image";
 import { signIn } from "@/auth";
 import { googleAuthorizationParams } from "@/features/auth/google-oauth";
 import { getServerEnv } from "@/lib/env";
+import { getAccountConfig } from "@/features/auth/account-mode";
+import { publicAccounts } from "@/features/auth/code-accounts";
+import { AccountSignIn } from "@/features/auth/account-sign-in";
 
 type SignInPageProps = {
   searchParams?: Promise<{
@@ -60,6 +63,25 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
   const params = await searchParams;
   const callbackUrl = normalizeCallbackUrl(params?.callbackUrl);
   const errorMessage = getErrorMessage(params?.error);
+  const accountConfig = getAccountConfig(getServerEnv());
+
+  if (accountConfig) {
+    return (
+      <main className="auth-surface" aria-labelledby="signin-title">
+        <section className="auth-panel">
+          <div className="auth-panel-header">
+            <Image src="/branding/know-os-lockup.svg" alt="KNOW/OS" width={188} height={34} priority />
+            <p className="eyebrow">Entrar</p>
+          </div>
+          <div className="auth-copy">
+            <h1 id="signin-title">Escolha seu perfil</h1>
+            <p>Cada perfil guarda o próprio progresso.</p>
+          </div>
+          <AccountSignIn accounts={publicAccounts(accountConfig.accounts)} callbackUrl={callbackUrl} />
+        </section>
+      </main>
+    );
+  }
 
   async function signInWithGoogle() {
     "use server";

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-01 — Code accounts (ADR 0031)
+
+- Dev-created accounts with a 6-digit code to separate progress (`KNOW_OS_ACCOUNTS`, scrypt hashes, `scripts/create-account.mjs`); accounts mode takes precedence over Google OAuth locally and in production.
+- Sign-in page with profile picker and the React Bits "Code Slots" animation (vendored, adapted to the CSP and design tokens, compact on narrow phones).
+- `POST/DELETE /api/session` with HMAC session cookie, per-IP/account throttling; nav shows the signed-in name and "Sair"; admin paths require ADMIN.
+- Added dependency `motion` 13.4.6. Playwright keeps accounts off; the demo seed mints an ADMIN session when accounts exist.
+
 ## 2026-10-01 — First-lesson dogfood fixes
 
 - Numeric answers accept a trailing `%`, unit word or `R$` prefix through one shared parser; the Question `unit` is shown beside the field.

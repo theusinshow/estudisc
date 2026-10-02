@@ -5,6 +5,8 @@ import { getAuthGuardDecision, isPublicRuntimePath,isAdminRuntimePath } from "@/
 import { isGoogleAuthConfigured } from "@/features/auth/auth-readiness";
 import { getServerEnv } from "@/lib/env";
 import { isAllowedMutationOrigin } from "@/features/auth/mutation-origin";
+import { getAccountConfig } from "@/features/auth/account-mode";
+import { ACCOUNT_SESSION_COOKIE, readAccountSession } from "@/features/auth/code-accounts";
 import {
   applyBaseSecurityHeaders,
   buildContentSecurityPolicy,
@@ -62,6 +64,21 @@ const authProxy = auth((request: AuthenticatedRequest) => {
 
   if(pathname.startsWith("/api/")&&!["GET","HEAD","OPTIONS"].includes(request.method)){
     if(!isAllowedMutationOrigin(request.headers,request.nextUrl,getServerEnv().APP_URL))return secureResponse(NextResponse.json({code:"origin_rejected"},{status:403}),contentSecurityPolicy);
+  }
+
+  // Accounts mode (ADR 0031): a signed session cookie replaces the Google check, also in production.
+  const accountConfig = getAccountConfig(getServerEnv());
+  if (accountConfig) {
+    if (pathname === "/api/session") return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
+    const account = readAccountSession(request.cookies.get(ACCOUNT_SESSION_COOKIE)?.value, accountConfig.accounts, accountConfig.secret);
+    if (account) {
+      if (isAdminRuntimePath(pathname) && account.role !== "ADMIN") return secureResponse(NextResponse.json({ code: "admin_required", message: "Esta ação requer perfil de administrador." }, { status: 403 }), contentSecurityPolicy);
+      return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
+    }
+    if (pathname.startsWith("/api/")) return secureResponse(NextResponse.json({ code: "auth_required", message: "Entre com sua conta para continuar." }, { status: 401 }), contentSecurityPolicy);
+    const accountSignInUrl = new URL("/auth/signin", request.url);
+    accountSignInUrl.searchParams.set("callbackUrl", `${request.nextUrl.pathname}${request.nextUrl.search}`);
+    return secureResponse(NextResponse.redirect(accountSignInUrl), contentSecurityPolicy);
   }
 
   const decision = process.env.NODE_ENV==="production"&&!isGoogleAuthConfigured(getServerEnv())?"forbidden":getAuthGuardDecision(request.auth?.user?.email, getServerEnv());

@@ -20,6 +20,8 @@ export default defineConfig({
       AUTH_SECRET: "test-auth-secret-do-not-use",
       DATABASE_URL: process.env.DATABASE_URL ?? "memory://local",
       KNOW_OS_ALLOWED_GOOGLE_EMAILS: "",
+      // Code accounts from .env.local stay off; E2E covers the owner flow without a login.
+      KNOW_OS_ACCOUNTS: "",
       KNOW_OS_OWNER_ID: process.env.KNOW_OS_OWNER_ID ?? "local-owner"
     },
     url: "http://127.0.0.1:3210",

@@ -44,6 +44,7 @@ export const serverEnvSchema = z.object({
   KNOW_OS_ALLOWED_GOOGLE_EMAILS: emailAllowlist,
   KNOW_OS_ADMIN_GOOGLE_EMAILS: emailAllowlist,
   KNOW_OS_OWNER_ID: z.string().trim().min(1).default("local-owner"),
+  KNOW_OS_ACCOUNTS: optionalSecret,
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info")
 });
 
@@ -64,6 +65,7 @@ export function getServerEnv(source: Record<string, string | undefined> = proces
     KNOW_OS_ALLOWED_GOOGLE_EMAILS: source.KNOW_OS_ALLOWED_GOOGLE_EMAILS,
     KNOW_OS_ADMIN_GOOGLE_EMAILS: source.KNOW_OS_ADMIN_GOOGLE_EMAILS,
     KNOW_OS_OWNER_ID: source.KNOW_OS_OWNER_ID,
+    KNOW_OS_ACCOUNTS: source.KNOW_OS_ACCOUNTS,
     LOG_LEVEL: source.LOG_LEVEL
   });
 }

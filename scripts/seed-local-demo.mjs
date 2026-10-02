@@ -2,6 +2,7 @@
 // dev server, marked "published" in that disposable memory so a student can try them.
 // It never touches a persistent database and approves nothing in the repository.
 import { readFileSync } from "node:fs";
+import { createRequire } from "node:module";
 import { DRAFT_SOURCE, expandLessonDraft, loadLessonDrafts } from "./expand-ifsc-lesson-drafts.mjs";
 
 const base = process.argv[2] ?? "http://localhost:3000";
@@ -15,8 +16,23 @@ for (const { lesson } of drafts) pack.track.modules.find(m => m.subjectCode === 
 pack.questions.forEach(q => { q.status = "published"; q.exposurePolicy.minimumDaysBetween = 0; });
 pack.track.modules.forEach(m => m.lessons.forEach(l => { l.status = "published"; }));
 
+// With code accounts in .env.local (ADR 0031) import routes need an ADMIN session; mint one with the
+// local AUTH_SECRET, exactly as the server would after a sign-in.
+const require = createRequire(import.meta.url);
+const { loadEnvConfig } = require(require.resolve("@next/env", { paths: [require.resolve("next/package.json")] }));
+const { combinedEnv } = loadEnvConfig(process.cwd(), true, { info() {}, error() {} });
+let cookie = "";
+if (combinedEnv.KNOW_OS_ACCOUNTS?.trim()) {
+  const emitWarning = process.emitWarning;
+  process.emitWarning = (warning, ...rest) => { if (!String(warning).includes("Module type of")) emitWarning.call(process, warning, ...rest); };
+  const { ACCOUNT_SESSION_COOKIE, createAccountSession, parseCodeAccounts } = await import("../src/features/auth/code-accounts.ts");
+  const admin = parseCodeAccounts(combinedEnv.KNOW_OS_ACCOUNTS).find(account => account.role === "ADMIN");
+  if (!admin) throw new Error("KNOW_OS_ACCOUNTS has no ADMIN account to load the demo content.");
+  cookie = `${ACCOUNT_SESSION_COOKIE}=${createAccountSession(admin, combinedEnv.AUTH_SECRET)}`;
+}
+
 const post = async (path, data) => {
-  const response = await fetch(base + path, { method: "POST", headers: { "Content-Type": "application/json", Origin: base }, body: JSON.stringify(data) });
+  const response = await fetch(base + path, { method: "POST", headers: { "Content-Type": "application/json", Origin: base, ...(cookie ? { Cookie: cookie } : {}) }, body: JSON.stringify(data) });
   return `${response.status} ${response.ok ? "ok" : (await response.text()).slice(0, 160)}`;
 };
 console.log("aulas:", await post("/api/import/track", pack));

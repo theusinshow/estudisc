@@ -1883,3 +1883,216 @@ progress.bar::-moz-progress-bar { background: var(--subject, var(--kos-color-sig
 @media (min-width: 900px) { .sidebar { z-index: 20; } .topbar { z-index: 30; } }
 .progress-summary dd { font-size: 1.375rem; line-height: 1.2; }
 .progress-summary { padding: var(--kos-spacing-10) var(--kos-spacing-12); }
+
+/* Code Slots (adapted from React Bits, MIT + Commons Clause). Sizes must match the component's
+   slotSize/gap props (48/8), which position the caret; colors come from KNOW/OS tokens. */
+.code-slots {
+  --cs-accent: var(--kos-color-signal);
+  --cs-ink: var(--kos-color-ink);
+  --cs-slot: var(--kos-color-paper);
+  --cs-digit: var(--kos-color-ink);
+  --cs-danger: var(--kos-color-error);
+  --cs-size: 48px;
+  --cs-height: 57px;
+  --cs-gap: 8px;
+  --cs-radius: 12px;
+  --cs-font: 24px;
+
+  position: relative;
+  display: inline-block;
+}
+
+.code-slots__row {
+  position: relative;
+  display: inline-flex;
+  gap: var(--cs-gap);
+  cursor: text;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity 200ms ease;
+}
+
+.code-slots__row[data-disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.code-slots__input {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: transparent;
+  caret-color: transparent;
+  font-size: 16px;
+  opacity: 0;
+  cursor: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.code-slots__wash {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  border: var(--kos-border-rule) solid var(--cs-ink);
+  border-radius: var(--cs-radius);
+  background: var(--cs-accent);
+  color: var(--cs-digit);
+  clip-path: inset(0 50%);
+  pointer-events: none;
+}
+
+.code-slots__check {
+  display: grid;
+  place-items: center;
+}
+
+.code-slots__slot {
+  position: relative;
+  width: var(--cs-size);
+  height: var(--cs-height);
+  border-radius: var(--cs-radius);
+  overflow: hidden;
+  border: var(--kos-border-rule) solid var(--cs-ink);
+  background: var(--cs-slot);
+  transition: background-color 200ms ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.code-slots__fill {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: var(--cs-accent);
+  transform-origin: center;
+  transform: scale(0);
+  transition: background-color 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .code-slots__row[data-status='idle']:not([data-disabled]):hover .code-slots__slot:not([data-active]) {
+    background: color-mix(in srgb, var(--cs-ink) 4%, var(--cs-slot));
+  }
+}
+
+.code-slots__slot[data-active] {
+  background: color-mix(in srgb, var(--cs-ink) 8%, var(--cs-slot));
+}
+
+.code-slots__row[data-status='error'] .code-slots__slot {
+  background: color-mix(in srgb, var(--cs-danger) 20%, var(--cs-slot));
+}
+
+.code-slots__row[data-status='error'] .code-slots__fill {
+  background: var(--cs-danger);
+}
+
+.code-slots__digit {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  color: var(--cs-digit);
+  font-family: inherit;
+  font-size: var(--cs-font);
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  opacity: 0;
+}
+
+.code-slots__caret {
+  position: absolute;
+  z-index: 3;
+  top: 25%;
+  left: calc(var(--cs-size) / 2 - 0.75px);
+  width: 1.5px;
+  height: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.code-slots__caret[data-show] {
+  opacity: 1;
+}
+
+.code-slots__caret-line {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--cs-ink);
+  animation: code-slots-blink 1s linear infinite;
+}
+
+@keyframes code-slots-blink {
+  0%,
+  49.9% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.code-slots__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .code-slots__digit,
+  .code-slots__check {
+    transform: none !important;
+    transition: opacity 150ms ease;
+  }
+
+  .code-slots__caret-line {
+    animation: none;
+  }
+
+  .code-slots__wash {
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+
+  .code-slots__row[data-status='success'] .code-slots__wash {
+    opacity: 1;
+  }
+}
+
+/* Account sign-in (ADR 0031): profile picker + Code Slots. */
+.account-sign-in { display: grid; gap: var(--kos-spacing-10); }
+.account-picker { display: flex; flex-wrap: wrap; gap: var(--kos-spacing-6); margin: 0; padding: 0; border: 0; }
+.account-picker legend { margin-bottom: var(--kos-spacing-6); font-weight: 800; }
+.account-option { display: inline-flex; align-items: center; gap: var(--kos-spacing-4); min-height: var(--kos-touch-minimum, 44px); padding: 0 var(--kos-spacing-10); border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-interactive); background: var(--kos-color-paper); color: var(--kos-color-ink); font: inherit; font-weight: 700; cursor: pointer; }
+.account-option[aria-pressed="true"] { background: var(--kos-color-signal); box-shadow: var(--kos-shadow-structural); }
+.account-option:focus-visible { outline: 3px solid var(--kos-color-ink); outline-offset: 3px; }
+.account-code { display: grid; gap: var(--kos-spacing-6); justify-items: start; }
+.account-code > p:first-child { margin: 0; font-weight: 700; }
+.account-code-message { min-height: 1.5em; margin: 0; font-weight: 700; }
+.account-code-message[data-tone="error"] { color: var(--kos-color-error); }
+.code-slots.code-slots--compact { --cs-size: 40px; --cs-height: 47px; --cs-gap: 6px; --cs-font: 20px; }
+.code-slots-placeholder { display: inline-flex; gap: 8px; }
+.code-slots-placeholder span { width: 48px; height: 57px; border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: 12px; background: var(--kos-color-paper); }
+.nav-account { display: grid; gap: var(--kos-spacing-4); margin-top: var(--kos-spacing-6); padding-top: var(--kos-spacing-6); border-top: var(--kos-border-rule) solid var(--kos-color-ink); }
+.nav-account > span { padding: 0 var(--kos-spacing-6); font-size: 0.875rem; }
+.nav-account button { display: flex; align-items: center; gap: var(--kos-spacing-6); width: 100%; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+@media (max-width: 420px) { .code-slots-placeholder { gap: 6px; } .code-slots-placeholder span { width: 40px; height: 47px; } }
+.nav-account button { font-weight: 700; }

@@ -39,6 +39,13 @@ First-lesson dogfood fixes (2026-10-01, Claude Code): a simulated student run of
 - [x] F11 visual: question card full width, single field label, stable scrollbar gutter.
 Not changed: mistakes stay active until resolved in /mistakes (deliberate error notebook); "Próximo" stays enabled on practice steps (skipping is allowed by design). Validation: 143 tests / 3 skipped (baseline), lint/typecheck/build, mobile E2E percentage-study/shell/vertical-slice passed; vertical-slice Lab RUN step is a pre-existing intermittent failure (also at HEAD).
 
+Code accounts (2026-10-01, Claude Code, user request): dev-created accounts with a 6-digit code and the React Bits Code Slots animation, to separate progress (Matheus ADMIN, Kauã STUDENT). Valid locally and in production (user choice); recorded in ADR 0031.
+- [x] A1 `KNOW_OS_ACCOUNTS` (scrypt-hashed codes, never committed) + HMAC session cookie signed with `AUTH_SECRET`; accounts mode takes precedence over Google OAuth.
+- [x] A2 `getOwnerProfile` and the proxy resolve the account; admin paths need ADMIN; `POST/DELETE /api/session` with per-IP/account throttling.
+- [x] A3 Sign-in page: account picker + Code Slots (adapted: no inline styles because of CSP, design tokens, client-only); "Sair" and account name in the nav.
+- [x] A4 `scripts/create-account.mjs` writes `.env.local`; demo seed mints an admin session when accounts exist; Playwright server keeps accounts off.
+- [x] A5 tests, ADR, docs, changelog.
+
 NEXT ACTION (previous): ingest/classify the four Integrated historical exams and definitive keys, preserve private assets, enforce reserved benchmarks and retain 2025.1 Q15 as annulled. Then seed simulations and connect publication QA. Assessment engine focused integration passed. Golden draft rendering/evaluation checks passed; independent publication QA remains pending. Planner functional policy checks passed; final QA readiness certification remains pending IFSC-12. MAT-07 source is draft; independent content QA/publication remains a visible acceptance item. Historical V1 plans below are retained as history, not the active roadmap.
 
 This file is the durable control surface for the current multi-step implementation task. Keep it current so a new Codex session can resume without asking the user to restate decisions.

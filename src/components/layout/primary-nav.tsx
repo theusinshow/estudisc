@@ -10,6 +10,7 @@ import {
   Download,
   FolderKanban,
   History,
+  LogOut,
   Map,
   Medal,
   MoreHorizontal,
@@ -43,8 +44,11 @@ function isCurrentRoute(pathname: string, matches: string[]) {
 }
 
 export function PrimaryNav() {
-  const [isAdmin,setIsAdmin]=useState(false);
-  useEffect(()=>{const controller=new AbortController();void fetch("/api/profile",{signal:controller.signal}).then(response=>response.ok?response.json():null).then(profile=>setIsAdmin(profile?.role==="ADMIN")).catch(()=>{});return ()=>controller.abort();},[]);
+  const [profile,setProfile]=useState<{role?:string;name?:string|null;accountMode?:boolean}|null>(null);
+  useEffect(()=>{const controller=new AbortController();void fetch("/api/profile",{signal:controller.signal}).then(response=>response.ok?response.json():null).then(setProfile).catch(()=>{});return ()=>controller.abort();},[]);
+  const isAdmin=profile?.role==="ADMIN";
+  // A full reload after sign-out drops every client cache of the previous account.
+  async function signOut(){await fetch("/api/session",{method:"DELETE"}).catch(()=>{});window.location.replace(new URL("/auth/signin",window.location.origin).href);}
   const secondaryItems=secondaryNavigationItems.filter(item=>!("adminOnly" in item)||isAdmin);
   const pathname = usePathname() ?? "/";
   const hasSecondaryCurrent = secondaryItems.some((item) => isCurrentRoute(pathname, item.match));
@@ -91,6 +95,12 @@ export function PrimaryNav() {
               </Link>
             );
           })}
+          {profile?.accountMode&&(
+            <div className="nav-account">
+              <span>Conectado como <strong>{profile.name}</strong></span>
+              <button type="button" className="nav-link" onClick={()=>void signOut()}><LogOut aria-hidden="true" /><span>Sair</span></button>
+            </div>
+          )}
         </div>
       </details>
     </>
