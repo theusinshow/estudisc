@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-02 — One-click Week 1 import
+
+- `/import` starts with "Importar a Semana 1": an admin-only route imports the bundled pack (`packs/releases/ifsc-week-1.pack.json`, kept in sync with the drafts by a unit test) as draft, then links to `/admin/review`. The JSON/AI importer moved under "Importação avançada".
+- Fixed the broken import layout: four CSS references to tokens that do not exist (`--kos-spacing-7`, `--kos-color-accent-import`, `--kos-shadow-hard`, `--kos-area-accent`) collapsed gaps, backgrounds and shadows.
+
 ## 2026-10-02 — Per-lesson review and Week 1 in the new format
 
 - `/admin/review` (also in the admin "Mais" menu): imported lessons by subject with status; each lesson shows the student preview link, every question with key, explanation and hints, and a four-layer form. One submission records the owner's reviews on the lesson and its questions and publishes them together, in one transaction.

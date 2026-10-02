@@ -56,4 +56,11 @@
 .editorial-message[data-kind="error"] { background: var(--kos-color-surface-pink); }
 .editorial-group { display: grid; gap: var(--kos-spacing-2); }
 
+.editorial-import { display: grid; gap: var(--kos-spacing-6); justify-items: start; margin-top: var(--kos-spacing-10); padding: var(--kos-spacing-10); border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-learning-card); background: var(--kos-color-surface-yellow); box-shadow: var(--kos-shadow-raised); }
+.editorial-import h2 { margin: 0; font-size: 1.375rem; font-weight: 900; }
+.editorial-import p { margin: 0; max-width: 60ch; font-weight: 550; line-height: 1.45; }
+.editorial-import svg { width: 18px; height: 18px; }
+.editorial-advanced { margin-top: var(--kos-spacing-12); }
+.editorial-advanced > summary { display: inline-flex; align-items: center; min-height: 44px; font-weight: 750; cursor: pointer; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+
 @media (prefers-reduced-motion: reduce) { .editorial-item { transition: none; } }

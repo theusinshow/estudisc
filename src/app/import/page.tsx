@@ -1,4 +1,6 @@
+import "@/styles/admin-review.css";
 import { AppShell } from "@/components/layout/app-shell";
+import { WeekImportCard } from "@/features/import/components/week-import-card";
 import { TrackPackImporter } from "@/features/import/components/track-pack-importer";
 import { getDeepSeekGenerationConfig } from "@/features/generation/infrastructure/deepseek-config.server";
 
@@ -12,12 +14,14 @@ export default function ImportPage() {
       <section className="foundation-panel content-panel import-panel accent-panel accent-import" aria-labelledby="import-title">
         <p className="eyebrow">Importar conteúdo</p>
         <h1 id="import-title">Ativar catálogo</h1>
-        <p>
-          Escolha entre estudar uma trilha pronta ou criar uma aula nova. Em ambos os caminhos, o Vecta faz
-          preview antes de aplicar e bloqueia conflitos.
-        </p>
+        <p>Importe a trilha do IFSC com um clique. Depois, revise e publique cada aula para o aluno.</p>
 
-        <TrackPackImporter deepSeek={deepSeek} />
+        <WeekImportCard />
+
+        <details className="editorial-advanced">
+          <summary>Importação avançada (JSON ou aula gerada por IA)</summary>
+          <TrackPackImporter deepSeek={deepSeek} />
+        </details>
       </section>
     </AppShell>
   );

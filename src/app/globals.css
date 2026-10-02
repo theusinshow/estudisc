@@ -262,7 +262,7 @@ a {
 
 .lesson-flow-nav a:hover,
 .lesson-flow-nav a:focus-visible {
-  background: color-mix(in srgb, var(--kos-color-paper) 84%, var(--kos-area-accent));
+  background: color-mix(in srgb, var(--kos-color-paper) 84%, var(--kos-area-accent, var(--kos-color-signal)));
   box-shadow: var(--kos-shadow-raised);
   transform: translateY(calc(-1 * var(--kos-motion-travel-min)));
 }
@@ -392,7 +392,7 @@ a {
 }
 
 .study-next-action {
-  background: color-mix(in srgb, var(--kos-color-paper) 72%, var(--kos-area-accent));
+  background: color-mix(in srgb, var(--kos-color-paper) 72%, var(--kos-area-accent, var(--kos-color-signal)));
   color: var(--kos-color-ink);
 }
 
@@ -501,8 +501,8 @@ a {
 }
 
 .import-intent-option[aria-pressed="true"] {
-  background: color-mix(in srgb, var(--kos-color-accent-import) 18%, var(--kos-color-paper));
-  box-shadow: var(--kos-shadow-hard);
+  background: color-mix(in srgb, var(--kos-color-signal) 40%, var(--kos-color-paper));
+  box-shadow: var(--kos-shadow-raised);
   transform: translate(
     calc(-1 * var(--kos-motion-travel-min)),
     calc(-1 * var(--kos-motion-travel-min))
@@ -553,7 +553,7 @@ a {
 .generation-panel,
 .import-step-panel {
   display: grid;
-  gap: var(--kos-spacing-7);
+  gap: var(--kos-spacing-8);
   border: var(--kos-border-rule) solid var(--kos-color-ink);
   background: var(--kos-color-paper);
   box-shadow: var(--kos-shadow-pressed);
