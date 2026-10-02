@@ -46,6 +46,19 @@ Code accounts (2026-10-01, Claude Code, user request): dev-created accounts with
 - [x] A4 `scripts/create-account.mjs` writes `.env.local`; demo seed mints an admin session when accounts exist; Playwright server keeps accounts off.
 - [x] A5 tests, ADR, docs, changelog.
 
+Progress + Today redesign (2026-10-01, Claude Code, user request, direction "Escada + Memória"): progress describes concept mastery, not XP. Matos UI charts (vendored from its shadcn registry, adapted to tokens/CSP) and React Bits micro-interactions (CountUp, ClickSpark, staggered entry; adapted, no SSR inline styles). Styles live in `src/styles/progress.css`/`today.css` to avoid colliding with the parallel login work in `globals.css`.
+- [x] P1 `ConceptEvidenceRepository.listForOwner` (+ memory) and pure `buildProgressOverview` (mastery ladder via the versioned policy, cooling concepts by retention, study days from study events, no streak) with unit tests.
+- [x] P2 `/progress`: mastery ladder, cooling memory, rhythm heatmap (Matos), area balance radar (Matos, ≥3 areas), XP demoted to effort.
+- [x] P3 `/` Today: pulse line (reviews/mistakes/practicing), 7-day week strip, staggered queue, ClickSpark on session start.
+- [x] P4 lint, typecheck, unit tests, build, mobile/desktop visual check; changelog.
+
+Week 1 lessons (2026-10-01, Claude Code, user request "semana equilibrada"): 8 lessons, 2 per area, AI-authored by one author per file and self-reviewed by the main agent; content stays draft (no approvals).
+- [x] W1 MAT-02, POR-02, CIE-01/02, GH-01/02 authored in the MAT-01 format; MAT-01 and Golden POR-01 revised.
+- [x] W2 four-layer self-review with a key-position/length audit; findings fixed; record in `docs/ifsc/WEEK-01-REVIEW.md`.
+- [x] W3 stimulus rendering fix; lint, typecheck, 155 tests, mobile check on the seeded memory server.
+- [ ] W4 human review and release (user decision); optional: per-lesson review screen in `/admin` to make that release practical.
+Validation: pnpm lint, pnpm typecheck, pnpm test (155 passed / 3 skipped), pnpm build passed; Playwright screenshots at 390px and 1280px on a seeded `memory://local` server (no horizontal overflow; only Next devtools CSP warnings, identical on untouched pages). E2E not re-run. Risk: progress counts every catalog concept, including draft tracks hidden from students.
+
 NEXT ACTION (previous): ingest/classify the four Integrated historical exams and definitive keys, preserve private assets, enforce reserved benchmarks and retain 2025.1 Q15 as annulled. Then seed simulations and connect publication QA. Assessment engine focused integration passed. Golden draft rendering/evaluation checks passed; independent publication QA remains pending. Planner functional policy checks passed; final QA readiness certification remains pending IFSC-12. MAT-07 source is draft; independent content QA/publication remains a visible acceptance item. Historical V1 plans below are retained as history, not the active roadmap.
 
 This file is the durable control surface for the current multi-step implementation task. Keep it current so a new Codex session can resume without asking the user to restate decisions.

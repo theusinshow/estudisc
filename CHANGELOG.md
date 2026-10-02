@@ -1,5 +1,22 @@
 # Changelog
 
+## 2026-10-01 — Vecta brand
+
+- The app is now branded Vecta: minimalist vector-V mark (`public/branding/vecta-mark.svg`, app icon `src/app/icon.svg`, Apple icon) and a live Archivo wordmark through `BrandLockup` in the shell and sign-in. Page title "Vecta"; tokens unchanged. Recorded in `design-system/BRAND_ASSETS.md` §0.
+
+## 2026-10-01 — Week 1 lessons (draft) and question stimulus rendering
+
+- Balanced first week, two lessons per area, all still drafts pending independent human review: new MAT-02 (moved to its own file), POR-02, CIE-01, CIE-02, GH-01 and GH-02; MAT-01 and the Golden POR-01 revised. Record and open verification items in `docs/ifsc/WEEK-01-REVIEW.md`.
+- Golden generator: POR-01 now teaches all five concepts with two questions each (Q-POR-GOLDEN-7..10) and question-specific hints; fixed a bug that gave every multiple-choice question of a subject the same key letter.
+- Question stimulus renders before the stem and keeps authored paragraphs and line breaks (shared `Paragraphs` component), in study and assessment panels.
+
+## 2026-10-01 — Progress and Today redesign
+
+- `/progress` now describes knowledge, not points: a mastery ladder of the six `mastery`-policy states (tap a rung to list its concepts), a Memory list of concepts whose estimated retention fell below 60% or whose latest answer failed after a success, a 16-week study-days heatmap and an area balance radar by module. XP moved to a secondary "Esforço" section and never changes a rung.
+- `/` (Hoje): pulse line (due reviews, active mistakes, concepts practicing or above), staggered queue, a Sunday-first week strip that marks studied days without any streak, and click sparks on the session buttons.
+- Charts vendored from the Matos UI registry (`src/components/matos-ui/`) and micro-interactions adapted from React Bits (`src/components/motion/`: CountUp, ClickSpark, staggered Reveal). Both avoid server-rendered inline styles (CSP), animate only content nobody has seen yet, and respect reduced motion.
+- Data: pure `buildProgressOverview` (unit-tested), `ConceptEvidenceRepository.listForOwner` (one read instead of one per concept) and an additive `areaTitles` (module titles) on knowledge-map concepts. Study days count study events and answered attempts in the São Paulo calendar; the Today date uses the same time zone.
+
 ## 2026-10-01 — Code accounts (ADR 0031)
 
 - Dev-created accounts with a 6-digit code to separate progress (`KNOW_OS_ACCOUNTS`, scrypt hashes, `scripts/create-account.mjs`); accounts mode takes precedence over Google OAuth locally and in production.

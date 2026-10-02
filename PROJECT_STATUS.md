@@ -20,6 +20,10 @@ Dogfood fixes (2026-10-01, Claude Code): a simulated student run of the first le
 
 Code accounts (2026-10-01, ADR 0031): Matheus (ADMIN) and Kauã (STUDENT) sign in with a 6-digit code (Code Slots animation); accounts live only in the git-ignored `.env.local` as scrypt hashes. Verified live: redirect to sign-in, wrong code drain + message, sign-in, admin 403 for the student, sign-out, separate progress per account, throttling (429) and foreign-origin rejection (403); mobile 375 px fits. Production needs `KNOW_OS_ACCOUNTS` and `AUTH_SECRET` set on the host.
 
+Progress/Today redesign (2026-10-01, Claude Code): `/progress` shows the mastery ladder, cooling memory, study-days heatmap and area radar (Matos UI charts, vendored) with XP demoted to "Esforço"; Today gains a pulse line, week strip and React Bits micro-interactions, all CSP-safe. Validated with lint/typecheck/155 tests/build and 390px/1280px screenshots; E2E not re-run. Not committed.
+
+Week 1 (2026-10-01, Claude Code): balanced first week of 8 draft lessons (MAT-01/02, POR-01/02, CIE-01/02, GH-01/02; ~5 h 20 min, 117 questions) authored and self-reviewed; nothing approved or published. See `docs/ifsc/WEEK-01-REVIEW.md`. The Golden pack now has 33 questions.
+
 NEXT ACTION: human editorial production/review using the private source pack and `/admin`; publish only through independent QA. See `docs/ifsc/LOCAL-DELIVERY.md`. The older V1 status below is historical.
 
 Last updated: 2026-08-05
