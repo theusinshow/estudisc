@@ -6,6 +6,8 @@ ADRs 0017–0029 are Accepted. ADR 0026 supersedes ADR 0008 for private multi-pr
 
 ADRs document durable decisions with meaningful alternatives and consequences.
 
+[ADR 0036](0036-direct-admin-publication.md) permits explicit audited ADMIN publication by code without editorial reviews, while preserving the existing reviewed workflow.
+
 Status values: Proposed, Accepted, Superseded, Rejected.
 
 Create a new ADR when changing architecture, trust boundaries, persistence, Pack compatibility, runtime isolation, authentication or a major cross-feature contract. Do not rewrite accepted history; supersede it with a new ADR.

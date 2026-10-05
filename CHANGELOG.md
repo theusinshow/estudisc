@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-05 - Direct ADMIN lesson publication
+
+- Add `publishLessonsDirect` and authenticated `publish_lessons_direct` API action for1–40 exact imported lesson versions and their shared Questions, atomically and without four-layer editorial review.
+- Store the authenticated ADMIN identity/reason in separate append-only publication events; repeat calls add no duplicate records or fabricated reviews.
+- Waive editorial completeness gates only for this explicit operation; retain retirement, source-asset/reference checks, reservation policies, immutable content and unchanged student state. Migration0018 adds the audit table; existing reviewed publication remains available.
+
+
 ## Science draft snapshot (2026-10-05)
 
 - Preserve forty CIE-01..40 draft lessons, 320 generated Questions, full source/sidecar and thirteen static draft figures in a portable versioned snapshot.

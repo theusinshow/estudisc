@@ -11,3 +11,13 @@ export const contentQaReviews = pgTable("content_qa_reviews", {
   findings: jsonb("findings").notNull(), rationale: text("rationale").notNull(),
   createdAt: timestamp("created_at",{withTimezone:true}).notNull().defaultNow()
 });
+
+// Administrative publication decisions are separate from editorial reviews.
+export const contentPublicationEvents = pgTable("content_publication_events", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  releaseId: uuid("release_id").notNull().references(() => contentReleases.id),
+  actorId: text("actor_id").notNull(),
+  mode: text("mode").notNull().default("admin_direct"),
+  reason: text("reason").notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow()
+}, table => [uniqueIndex("content_publication_event_release_idx").on(table.releaseId)]);
