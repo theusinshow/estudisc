@@ -35,3 +35,7 @@ Exact staged candidate exported with `git checkout-index --all --force --prefix=
 Root read-only checks rerun: `pnpm exec tsx tools/science-import/qa/persistent-db-audit.ts --worker-closed`, `pnpm exec tsx tools/science-import/qa/persistent-receipt-audit.ts`, `node tools/science-import/qa/source-audit.mjs`:PASS with40original stale manifest hash findings retained. Reports `.local/science-push-db-audit.log`, `.local/science-push-receipts.log`, `.local/science-push-source-audit.log`.
 
 The user subsequently authorized publication of all forty lessons and stated review is complete. This is a real user decision, not independent agent approval. Actual authenticated production import/publication and readback remain a separate operation; do not infer publication from this committed draft snapshot.
+
+Final portable browser recheck: `$env:DATABASE_URL='memory://local'; pnpm exec playwright test tests/e2e/accessibility.spec.ts tests/e2e/science-qa-mobile.spec.ts`:4passed/2failed. Both Science previews and both skip-link checks passed; accessibility route navigation timed out in both projects. Full application gate remains FAIL; these two additional navigation failures are unresolved and are not claimed to be baseline.
+
+Snapshot commit `faba15c` pushed successfully to origin/main. User-authorized production publication is pending ADMIN login at https://vecta-three.vercel.app/auth/signin?callbackUrl=%2Fadmin%2Freview; no actual production import/publication has occurred.
