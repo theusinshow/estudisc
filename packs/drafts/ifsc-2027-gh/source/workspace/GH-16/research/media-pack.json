@@ -1,0 +1,30 @@
+{
+  "lessonId": "GH-16",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-061",
+      "title": "Museu Imperial — acervo e história do Brasil Imperial",
+      "org": "Ibram / Museu Imperial",
+      "type": "OFFICIAL_MUSEUM_COLLECTION",
+      "url": "https://www.gov.br/museus/pt-br/museus-ibram/museu-imperial/museu-imperial-pagina-inicial",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-16-001",
+    "lessonId": "GH-16",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo 1808–1824 com eventos do processo de independência.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

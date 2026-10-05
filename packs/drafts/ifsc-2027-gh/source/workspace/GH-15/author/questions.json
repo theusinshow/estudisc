@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-15-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Resistência negra, quilombos, abolicionismo e pós-abolição, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
+      },
+      {
+        "key": "B",
+        "text": "Resistências à escravidão ocorreram durante todo o período escravista por fugas, quilombos, revoltas, negociações, ações culturais e outras estratégias."
+      },
+      {
+        "key": "C",
+        "text": "Quilombos surgiram apenas no final do século XIX."
+      },
+      {
+        "key": "D",
+        "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
+      },
+      {
+        "key": "E",
+        "text": "As próprias pessoas escravizadas tiveram pouca participação no processo abolicionista."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "Resistências à escravidão ocorreram durante todo o período escravista por fugas, quilombos, revoltas, negociações, ações culturais e outras estratégias.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-15-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-15-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
+      },
+      {
+        "key": "B",
+        "text": "Quilombos surgiram apenas no final do século XIX."
+      },
+      {
+        "key": "C",
+        "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
+      },
+      {
+        "key": "D",
+        "text": "O movimento abolicionista reuniu pessoas escravizadas, libertas, negras livres e aliados de diferentes grupos sociais."
+      },
+      {
+        "key": "E",
+        "text": "As próprias pessoas escravizadas tiveram pouca participação no processo abolicionista."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "O movimento abolicionista reuniu pessoas escravizadas, libertas, negras livres e aliados de diferentes grupos sociais.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-15-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-15-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: A abolição não foi presente concedido de cima para baixo; foi resultado de conflitos, resistências e mobilização social. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
+      },
+      {
+        "key": "B",
+        "text": "Quilombos surgiram apenas no final do século XIX."
+      },
+      {
+        "key": "C",
+        "text": "Leis como Eusébio de Queirós, Ventre Livre e Sexagenários integraram um processo gradual e conflituoso que culminou na Lei Áurea em 1888."
+      },
+      {
+        "key": "D",
+        "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
+      },
+      {
+        "key": "E",
+        "text": "As próprias pessoas escravizadas tiveram pouca participação no processo abolicionista."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Leis como Eusébio de Queirós, Ventre Livre e Sexagenários integraram um processo gradual e conflituoso que culminou na Lei Áurea em 1888.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-15-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-15-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Resistência negra, quilombos, abolicionismo e pós-abolição por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Lei Áurea extinguiu juridicamente a escravidão, mas não criou políticas amplas de terra, educação, renda e inclusão para a população liberta."
+      },
+      {
+        "key": "B",
+        "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
+      },
+      {
+        "key": "C",
+        "text": "Quilombos surgiram apenas no final do século XIX."
+      },
+      {
+        "key": "D",
+        "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
+      },
+      {
+        "key": "E",
+        "text": "As próprias pessoas escravizadas tiveram pouca participação no processo abolicionista."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A Lei Áurea extinguiu juridicamente a escravidão, mas não criou políticas amplas de terra, educação, renda e inclusão para a população liberta.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-15-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-15-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Resistências à escravidão ocorreram durante todo o período escravista por fugas, quilombos, revoltas, negociações, ações culturais e outras estratégias.\nII. A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel.\nIII. Leis como Eusébio de Queirós, Ventre Livre e Sexagenários integraram um processo gradual e conflituoso que culminou na Lei Áurea em 1888.\nIV. Quilombos surgiram apenas no final do século XIX.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-15-CON-01",
+      "GH-15-CON-02",
+      "GH-15-CON-03",
+      "GH-15-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-15-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Resistência negra, quilombos, abolicionismo e pós-abolição. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
+      },
+      {
+        "key": "B",
+        "text": "Quilombos surgiram apenas no final do século XIX."
+      },
+      {
+        "key": "C",
+        "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Reconhecer processos de longa duração e protagonismos diversos em vez de buscar um único herói causal."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Reconhecer processos de longa duração e protagonismos diversos em vez de buscar um único herói causal.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-15-CON-01",
+      "GH-15-CON-02",
+      "GH-15-CON-03",
+      "GH-15-CON-04",
+      "GH-15-CON-05",
+      "GH-15-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-15-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Resistência negra, quilombos, abolicionismo e pós-abolição?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Resistências à escravidão ocorreram durante todo o período escravista por fugas, quilombos, revoltas, negociações, ações culturais e outras estratégias."
+      },
+      {
+        "key": "B",
+        "text": "O movimento abolicionista reuniu pessoas escravizadas, libertas, negras livres e aliados de diferentes grupos sociais."
+      },
+      {
+        "key": "C",
+        "text": "O pós-abolição continuou marcado por racismo, desigualdade e luta por cidadania."
+      },
+      {
+        "key": "D",
+        "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
+      },
+      {
+        "key": "E",
+        "text": "A Lei Áurea extinguiu juridicamente a escravidão, mas não criou políticas amplas de terra, educação, renda e inclusão para a população liberta."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-15-CON-01",
+      "GH-15-CON-02",
+      "GH-15-CON-03",
+      "GH-15-CON-04",
+      "GH-15-CON-05",
+      "GH-15-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-15-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Resistência negra, quilombos, abolicionismo e pós-abolição, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
+      },
+      {
+        "key": "B",
+        "text": "Quilombos surgiram apenas no final do século XIX."
+      },
+      {
+        "key": "C",
+        "text": "O pós-abolição continuou marcado por racismo, desigualdade e luta por cidadania."
+      },
+      {
+        "key": "D",
+        "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
+      },
+      {
+        "key": "E",
+        "text": "As próprias pessoas escravizadas tiveram pouca participação no processo abolicionista."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "O pós-abolição continuou marcado por racismo, desigualdade e luta por cidadania.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-15-CON-01",
+      "GH-15-CON-02",
+      "GH-15-CON-03",
+      "GH-15-CON-04",
+      "GH-15-CON-05",
+      "GH-15-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

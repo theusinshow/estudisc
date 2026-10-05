@@ -7,13 +7,14 @@ import { trackPackV2Schema } from "../../../src/features/import/application/trac
 import { jsonFile } from "./adapted-pack-audit";
 import { SCIENCE_DRAFT_PACK } from "../paths";
 
-const pack = trackPackV2Schema.parse(jsonFile(process.env.SCIENCE_QA_PACK ?? SCIENCE_DRAFT_PACK));
-const pilot = new Set(["CIE-04", "CIE-10", "CIE-18", "CIE-22", "CIE-30", "CIE-33", "CIE-38", "CIE-40"]);
+const pack = trackPackV2Schema.parse(jsonFile(process.env.EDITORIAL_QA_PACK ?? process.env.SCIENCE_QA_PACK ?? SCIENCE_DRAFT_PACK));
+const pilot = new Set(process.env.EDITORIAL_QA_PILOTS?.split(",") ?? ["CIE-04", "CIE-10", "CIE-18", "CIE-22", "CIE-30", "CIE-33", "CIE-38", "CIE-40"]);
+const output = process.env.EDITORIAL_QA_OUTPUT ?? ".local/science-integration/qa-mobile";
 const css = readFileSync("src/styles/generated/design-tokens.css", "utf8") + readFileSync("src/app/globals.css", "utf8").replace(/^@import[^;]+;\s*/gm, "");
-mkdirSync(".local/science-integration/qa-mobile", { recursive: true });
+mkdirSync(output, { recursive: true });
 for (const lesson of pack.track.modules.flatMap(module => module.lessons).filter(lesson => pilot.has(lesson.id))) {
   const questions = pack.questions.filter(question => lesson.activities.some(activity => activity.questionId === question.id));
   const html = renderToStaticMarkup(<div className="app-shell"><main id="main-content" className="main-surface"><article className="foundation-panel content-panel accent-panel accent-learn"><h1>{lesson.title}</h1><div className="lesson-stepper" data-mode="all">{lesson.blocks.map(block => <section className="lesson-step" key={block.id}><LessonBlockRenderer block={{ stableId: block.id, type: block.type, payload: block.payload }}/></section>)}{questions.map(question => <section className="lesson-step" key={question.id}><QuestionPanel question={studentQuestion(question)} activityStableId={`${question.id}-ACT`}/></section>)}</div></article></main></div>);
-  writeFileSync(`.local/science-integration/qa-mobile/${lesson.id}.html`, `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>${css}</style></head><body>${html}</body></html>`);
+  writeFileSync(`${output}/${lesson.id}.html`, `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>${css}</style></head><body>${html}</body></html>`);
 }
 console.log("Generated 8 pilot SSR previews with existing app CSS. Static semantics/layout scope only; no route or hydration simulation.");

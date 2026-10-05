@@ -6,6 +6,22 @@
 
 # KNOW/OS - Project Status
 
+## Reviewed GH application checkpoint (2026-10-05)
+
+Repository delivery explicitly authorized by subsequent user commit/push request. Pre-commit focusedGH/Science/Week1/publication regressions PASS12tests across6files, `pnpm lint`/`pnpm typecheck`/staged whitespace check PASS; sealed Pack and all753source files verified byte-for-byte in Git index.773scoped files staged, existing next-env.d.ts/SCIENCE-CURRICULUM-MAP.md excluded. Repository commit/push result is reported in the delivery response; this does not establish production content publication or a fully passing application E2E gate.
+
+User confirmed the lessons are reviewed and authorized applying/publishing the exact49 GH-V2 version3 lessons /392 version2 Questions. Sealed Pack remains unchanged;42authentic media,29deterministic assets and6conceptual illustrations remain pending. Prepared authenticated publication payloads40+9 under `.local/gh-application/`, pinned to the portable Pack rawSHA256. Disposable migrated PGlite publication test PASS1:49/392published,441audit events, idempotent retries, no fabricated QA reviews and unchanged canonical Questions/other releases/student state. Payload generation, scoped ESLint and `pnpm typecheck` PASS; previous broader E2E gate remains open.
+
+PRODUCTION NOT APPLIED: Orca production tab requires Matheus ADMIN login/access code. Owner login requested; no real credentials read, production writes, deployment or migration. NEXT ACTION: finish login in the opened Orca tab, then existing authenticated Pack preview/import and direct-publication40+9, with published readback. Live API/migration readiness remains unverified behind authentication.
+
+## Geography + History V2 integration (2026-10-05)
+
+Locally imported the supplied 49 GH lessons / 392 unchanged Questions as preview drafts using the Science adapter and existing core importer. Pilots PASS before five idempotent batches; latest snapshot has 670 blocks, three reused canonical Concepts and 290 new atoms. Existing IFSC/Week 1 Mathematics and Science content plus learner state are preserved. ADR0037 avoids semantic collisions with existing GH IDs using GH-V2-01..49; original IDs/content remain in the complete source/sidecar. Source name/target inconsistencies and unverified official mapping remain pending human review.
+
+Portable snapshot: packs/drafts/ifsc-2027-gh/gh.pack.json (1,046,064 bytes; 2,512 bytes headroom under unchanged 1 MiB limit). All 753 source files match the ZIP byte-for-byte. Media remains pending in separate pipelines: 42 authentic licensing/provenance requests, 29 exact deterministic assets, 6 non-documentary illustrations. No publication, production/external write or migration.
+
+LOCAL DRAFT IMPORT COMPLETE. Full suite 193 passed / 1 real-PostgreSQL skipped; lint/typecheck/build PASS. Full serial E2E:24passed/14failed in existing sign-in/import/motion, continuation/session and mobile Lab flows; GH and Science previews passed both projects. Full application gate remains unaccepted, with no zero-regression claim against an unavailable baseline log. Exact commands, hashes and limits: tools/gh-import/README.md. NEXT ACTION: human source/taxonomy/media review while retaining drafts; reconcile broad E2E separately. No production import/publication.
+
 ## MAT-PREREQ editorial correction (2026-10-02)
 
 User authorized the correction, commit and push to `theusinshow/vecta`. MAT-PREREQ now includes explicit fraction/decimal/ratio/proportion teaching, an authored accessible figure, guided practice, a proportionality warning and exactly three A–E exit Questions with revised hints. New versions: Lesson 3, Questions 2, Golden/Week 1 packs 2. All remain draft; no publication approval is recorded. Other lessons/questions were compared against HEAD and remain unchanged.

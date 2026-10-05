@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-19-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Era Vargas, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+      },
+      {
+        "key": "B",
+        "text": "A Revolução de 1930 encerrou a ordem política da República Velha e levou Getúlio Vargas ao governo."
+      },
+      {
+        "key": "C",
+        "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+      },
+      {
+        "key": "D",
+        "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+      },
+      {
+        "key": "E",
+        "text": "Direitos trabalhistas significaram autonomia sindical completa."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A Revolução de 1930 encerrou a ordem política da República Velha e levou Getúlio Vargas ao governo.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-19-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-19-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “Toda a Era Vargas foi uma democracia liberal contínua.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+      },
+      {
+        "key": "B",
+        "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+      },
+      {
+        "key": "C",
+        "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+      },
+      {
+        "key": "D",
+        "text": "O período varguista combinou centralização estatal, industrialização, legislação trabalhista e construção de uma imagem pública do governo."
+      },
+      {
+        "key": "E",
+        "text": "Direitos trabalhistas significaram autonomia sindical completa."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "O período varguista combinou centralização estatal, industrialização, legislação trabalhista e construção de uma imagem pública do governo.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-19-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-19-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: Entre 1930 e 1945, Vargas governou em fases diferentes, incluindo uma ditadura entre 1937 e 1945. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+      },
+      {
+        "key": "B",
+        "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+      },
+      {
+        "key": "C",
+        "text": "A Constituição de 1934 foi seguida pelo golpe de 1937, que instaurou o Estado Novo autoritário."
+      },
+      {
+        "key": "D",
+        "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+      },
+      {
+        "key": "E",
+        "text": "Direitos trabalhistas significaram autonomia sindical completa."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A Constituição de 1934 foi seguida pelo golpe de 1937, que instaurou o Estado Novo autoritário.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-19-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-19-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Era Vargas por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "No Estado Novo houve censura, propaganda oficial, perseguição a opositores e restrição de partidos e liberdades."
+      },
+      {
+        "key": "B",
+        "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+      },
+      {
+        "key": "C",
+        "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+      },
+      {
+        "key": "D",
+        "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+      },
+      {
+        "key": "E",
+        "text": "Direitos trabalhistas significaram autonomia sindical completa."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "No Estado Novo houve censura, propaganda oficial, perseguição a opositores e restrição de partidos e liberdades.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-19-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-19-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. A Revolução de 1930 encerrou a ordem política da República Velha e levou Getúlio Vargas ao governo.\nII. Toda a Era Vargas foi uma democracia liberal contínua.\nIII. A Constituição de 1934 foi seguida pelo golpe de 1937, que instaurou o Estado Novo autoritário.\nIV. O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-19-CON-01",
+      "GH-19-CON-02",
+      "GH-19-CON-03",
+      "GH-19-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-19-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Era Vargas. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+      },
+      {
+        "key": "B",
+        "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+      },
+      {
+        "key": "C",
+        "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Distinguir fases do período e avaliar simultaneamente políticas sociais, econômicas e autoritárias."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Distinguir fases do período e avaliar simultaneamente políticas sociais, econômicas e autoritárias.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-19-CON-01",
+      "GH-19-CON-02",
+      "GH-19-CON-03",
+      "GH-19-CON-04",
+      "GH-19-CON-05",
+      "GH-19-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-19-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Era Vargas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Revolução de 1930 encerrou a ordem política da República Velha e levou Getúlio Vargas ao governo."
+      },
+      {
+        "key": "B",
+        "text": "O período varguista combinou centralização estatal, industrialização, legislação trabalhista e construção de uma imagem pública do governo."
+      },
+      {
+        "key": "C",
+        "text": "A legislação trabalhista ampliou direitos formais ao mesmo tempo em que o Estado buscou controlar a organização sindical."
+      },
+      {
+        "key": "D",
+        "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+      },
+      {
+        "key": "E",
+        "text": "No Estado Novo houve censura, propaganda oficial, perseguição a opositores e restrição de partidos e liberdades."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-19-CON-01",
+      "GH-19-CON-02",
+      "GH-19-CON-03",
+      "GH-19-CON-04",
+      "GH-19-CON-05",
+      "GH-19-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-19-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Era Vargas, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+      },
+      {
+        "key": "B",
+        "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+      },
+      {
+        "key": "C",
+        "text": "A legislação trabalhista ampliou direitos formais ao mesmo tempo em que o Estado buscou controlar a organização sindical."
+      },
+      {
+        "key": "D",
+        "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+      },
+      {
+        "key": "E",
+        "text": "Direitos trabalhistas significaram autonomia sindical completa."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A legislação trabalhista ampliou direitos formais ao mesmo tempo em que o Estado buscou controlar a organização sindical.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-19-CON-01",
+      "GH-19-CON-02",
+      "GH-19-CON-03",
+      "GH-19-CON-04",
+      "GH-19-CON-05",
+      "GH-19-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

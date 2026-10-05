@@ -1,0 +1,523 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "GH-10",
+    "subject": "GH",
+    "title": "Santa Catarina urbana e rural",
+    "unit": "Santa Catarina",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+    "concepts": [
+      {
+        "id": "GH-10-CON-01",
+        "name": "Urbanização",
+        "masteryTarget": "Santa Catarina é altamente urbanizada, mas atividades rurais continuam relevantes para a economia e para a organização regional."
+      },
+      {
+        "id": "GH-10-CON-02",
+        "name": "Rede de cidades",
+        "masteryTarget": "Agroindústria conecta produção rural, processamento industrial, transporte e mercados urbanos."
+      },
+      {
+        "id": "GH-10-CON-03",
+        "name": "Metropolização",
+        "masteryTarget": "Redes de cidades articulam municípios de diferentes tamanhos por emprego, saúde, educação, comércio e serviços."
+      },
+      {
+        "id": "GH-10-CON-04",
+        "name": "Áreas rurais",
+        "masteryTarget": "Mobilidade populacional inclui migração permanente e deslocamentos cotidianos entre municípios."
+      },
+      {
+        "id": "GH-10-CON-05",
+        "name": "Agropecuária",
+        "masteryTarget": "Urbanização não significa desaparecimento do campo, mas transformação das relações entre espaços urbanos e rurais."
+      },
+      {
+        "id": "GH-10-CON-06",
+        "name": "Agroindústria",
+        "masteryTarget": "Urbanização não significa desaparecimento do campo, mas transformação das relações entre espaços urbanos e rurais."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "GH-10-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Campo e cidade em Santa Catarina dependem um do outro por fluxos de pessoas, mercadorias, capital e serviços."
+      },
+      {
+        "id": "GH-10-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar os conceitos centrais de Santa Catarina urbana e rural em linguagem própria.",
+          "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+          "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+        ]
+      },
+      {
+        "id": "GH-10-B03",
+        "type": "EXPLANATION",
+        "title": "Ideia central",
+        "content": "Santa Catarina é altamente urbanizada, mas atividades rurais continuam relevantes para a economia e para a organização regional. Agroindústria conecta produção rural, processamento industrial, transporte e mercados urbanos.",
+        "items": [
+          "Santa Catarina é altamente urbanizada, mas atividades rurais continuam relevantes para a economia e para a organização regional.",
+          "Agroindústria conecta produção rural, processamento industrial, transporte e mercados urbanos."
+        ]
+      },
+      {
+        "id": "GH-10-B04",
+        "type": "EXPLANATION",
+        "title": "Como as relações se organizam",
+        "content": "Redes de cidades articulam municípios de diferentes tamanhos por emprego, saúde, educação, comércio e serviços. Mobilidade populacional inclui migração permanente e deslocamentos cotidianos entre municípios.",
+        "items": [
+          "Redes de cidades articulam municípios de diferentes tamanhos por emprego, saúde, educação, comércio e serviços.",
+          "Mobilidade populacional inclui migração permanente e deslocamentos cotidianos entre municípios."
+        ]
+      },
+      {
+        "id": "GH-10-B05",
+        "type": "EXPLANATION",
+        "title": "O que conecta o tema à prova",
+        "content": "Urbanização não significa desaparecimento do campo, mas transformação das relações entre espaços urbanos e rurais.",
+        "items": [
+          "Urbanização não significa desaparecimento do campo, mas transformação das relações entre espaços urbanos e rurais.",
+          "Relacionar produção, circulação, serviços e mobilidade para explicar conexões campo-cidade."
+        ]
+      },
+      {
+        "id": "GH-10-B06",
+        "type": "CALLOUT",
+        "variant": "SOURCE_LITERACY",
+        "title": "Leia a fonte, não apenas o tema",
+        "items": [
+          "Relacionar produção, circulação, serviços e mobilidade para explicar conexões campo-cidade.",
+          "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+        ]
+      },
+      {
+        "id": "GH-10-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTION",
+        "title": "Erros que custam ponto",
+        "items": [
+          "Urbanização significa que a agricultura deixa de existir.",
+          "Campo e cidade funcionam como espaços totalmente isolados.",
+          "Toda cidade catarinense exerce a mesma influência regional.",
+          "Agroindústria é uma atividade exclusivamente urbana sem ligação com o campo."
+        ]
+      },
+      {
+        "id": "GH-10-B08",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Vocabulário essencial",
+        "items": [
+          "Urbanização",
+          "Rede de cidades",
+          "Metropolização",
+          "Áreas rurais",
+          "Agropecuária",
+          "Agroindústria"
+        ]
+      },
+      {
+        "id": "GH-10-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Como resolver uma questão",
+        "prompt": "Uma questão apresenta uma fonte relacionada a Santa Catarina urbana e rural. Como decidir entre alternativas plausíveis?",
+        "answer": "Urbanização não significa desaparecimento do campo, mas transformação das relações entre espaços urbanos e rurais.",
+        "reasoning": [
+          "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+          "Extraia da fonte apenas as evidências explícitas.",
+          "Ative o conceito da aula que explica a evidência.",
+          "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+          "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+        ]
+      },
+      {
+        "id": "GH-10-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Estratégia IFSC",
+        "items": [
+          "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+          "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+          "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+        ]
+      },
+      {
+        "id": "GH-10-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Material complementar",
+        "mediaRefs": [
+          "SRC-GH-001",
+          "SRC-GH-019",
+          "SRC-GH-020",
+          "SRC-GH-032"
+        ],
+        "optional": true
+      },
+      {
+        "id": "GH-10-B12",
+        "type": "IMAGE_REQUEST",
+        "title": "Ilustração conceitual",
+        "requestRef": "IMG-GH-10-001",
+        "status": "PENDING"
+      },
+      {
+        "id": "GH-10-B13",
+        "type": "SUMMARY",
+        "title": "Resumo para recuperar sem olhar",
+        "items": [
+          "Santa Catarina é altamente urbanizada, mas atividades rurais continuam relevantes para a economia e para a organização regional.",
+          "Agroindústria conecta produção rural, processamento industrial, transporte e mercados urbanos.",
+          "Redes de cidades articulam municípios de diferentes tamanhos por emprego, saúde, educação, comércio e serviços.",
+          "Mobilidade populacional inclui migração permanente e deslocamentos cotidianos entre municípios.",
+          "Urbanização não significa desaparecimento do campo, mas transformação das relações entre espaços urbanos e rurais."
+        ]
+      },
+      {
+        "id": "GH-10-B14",
+        "type": "EXIT_TICKET",
+        "title": "Saída rápida",
+        "prompt": "Em duas ou três frases, explique a ideia mais importante de Santa Catarina urbana e rural e cite um erro de interpretação que você evitaria numa questão.",
+        "answerGuide": "Santa Catarina é altamente urbanizada, mas atividades rurais continuam relevantes para a economia e para a organização regional. Evite, por exemplo: Urbanização significa que a agricultura deixa de existir."
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-GH-001",
+      "SRC-GH-001",
+      "SRC-GH-014",
+      "SRC-GH-019",
+      "SRC-GH-020",
+      "SRC-GH-032",
+      "SRC-IFSC-GH-2026-1",
+      "SRC-IFSC-GH-2026-2"
+    ],
+    "mediaRefs": [
+      "SRC-GH-001",
+      "SRC-GH-019",
+      "SRC-GH-020",
+      "SRC-GH-032"
+    ],
+    "imageRequestRefs": [
+      "IMG-GH-10-001"
+    ],
+    "editorialNotes": [
+      "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+      "Não publicar mídia externa sem revisão de licença e proveniência.",
+      "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+      "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+    ]
+  },
+  "questions": [
+    {
+      "id": "GH-10-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Em relação a Santa Catarina urbana e rural, qual afirmação está correta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Urbanização significa que a agricultura deixa de existir."
+        },
+        {
+          "key": "B",
+          "text": "Santa Catarina é altamente urbanizada, mas atividades rurais continuam relevantes para a economia e para a organização regional."
+        },
+        {
+          "key": "C",
+          "text": "Campo e cidade funcionam como espaços totalmente isolados."
+        },
+        {
+          "key": "D",
+          "text": "Toda cidade catarinense exerce a mesma influência regional."
+        },
+        {
+          "key": "E",
+          "text": "Agroindústria é uma atividade exclusivamente urbana sem ligação com o campo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Santa Catarina é altamente urbanizada, mas atividades rurais continuam relevantes para a economia e para a organização regional.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "RECALL",
+      "conceptIds": [
+        "GH-10-CON-01"
+      ],
+      "targetedError": "foundation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-10-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante diz: “Urbanização significa que a agricultura deixa de existir.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Urbanização significa que a agricultura deixa de existir."
+        },
+        {
+          "key": "B",
+          "text": "Campo e cidade funcionam como espaços totalmente isolados."
+        },
+        {
+          "key": "C",
+          "text": "Toda cidade catarinense exerce a mesma influência regional."
+        },
+        {
+          "key": "D",
+          "text": "Agroindústria conecta produção rural, processamento industrial, transporte e mercados urbanos."
+        },
+        {
+          "key": "E",
+          "text": "Agroindústria é uma atividade exclusivamente urbana sem ligação com o campo."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Agroindústria conecta produção rural, processamento industrial, transporte e mercados urbanos.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-10-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-10-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Considere a situação de partida da aula: Campo e cidade em Santa Catarina dependem um do outro por fluxos de pessoas, mercadorias, capital e serviços. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Urbanização significa que a agricultura deixa de existir."
+        },
+        {
+          "key": "B",
+          "text": "Campo e cidade funcionam como espaços totalmente isolados."
+        },
+        {
+          "key": "C",
+          "text": "Redes de cidades articulam municípios de diferentes tamanhos por emprego, saúde, educação, comércio e serviços."
+        },
+        {
+          "key": "D",
+          "text": "Toda cidade catarinense exerce a mesma influência regional."
+        },
+        {
+          "key": "E",
+          "text": "Agroindústria é uma atividade exclusivamente urbana sem ligação com o campo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Redes de cidades articulam municípios de diferentes tamanhos por emprego, saúde, educação, comércio e serviços.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "GH-10-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-10-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "O IFSC pode apresentar Santa Catarina urbana e rural por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mobilidade populacional inclui migração permanente e deslocamentos cotidianos entre municípios."
+        },
+        {
+          "key": "B",
+          "text": "Urbanização significa que a agricultura deixa de existir."
+        },
+        {
+          "key": "C",
+          "text": "Campo e cidade funcionam como espaços totalmente isolados."
+        },
+        {
+          "key": "D",
+          "text": "Toda cidade catarinense exerce a mesma influência regional."
+        },
+        {
+          "key": "E",
+          "text": "Agroindústria é uma atividade exclusivamente urbana sem ligação com o campo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Mobilidade populacional inclui migração permanente e deslocamentos cotidianos entre municípios.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "GH-10-CON-04"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-10-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Santa Catarina é altamente urbanizada, mas atividades rurais continuam relevantes para a economia e para a organização regional.\nII. Urbanização significa que a agricultura deixa de existir.\nIII. Redes de cidades articulam municípios de diferentes tamanhos por emprego, saúde, educação, comércio e serviços.\nIV. Campo e cidade funcionam como espaços totalmente isolados.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-10-CON-01",
+        "GH-10-CON-02",
+        "GH-10-CON-03",
+        "GH-10-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-10-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma fonte foi apresentada numa questão sobre Santa Catarina urbana e rural. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Urbanização significa que a agricultura deixa de existir."
+        },
+        {
+          "key": "B",
+          "text": "Campo e cidade funcionam como espaços totalmente isolados."
+        },
+        {
+          "key": "C",
+          "text": "Toda cidade catarinense exerce a mesma influência regional."
+        },
+        {
+          "key": "D",
+          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        },
+        {
+          "key": "E",
+          "text": "Relacionar produção, circulação, serviços e mobilidade para explicar conexões campo-cidade."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Relacionar produção, circulação, serviços e mobilidade para explicar conexões campo-cidade.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "conceptIds": [
+        "GH-10-CON-01",
+        "GH-10-CON-02",
+        "GH-10-CON-03",
+        "GH-10-CON-04",
+        "GH-10-CON-05",
+        "GH-10-CON-06"
+      ],
+      "targetedError": "source_interpretation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-10-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Santa Catarina urbana e rural?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Santa Catarina é altamente urbanizada, mas atividades rurais continuam relevantes para a economia e para a organização regional."
+        },
+        {
+          "key": "B",
+          "text": "Agroindústria conecta produção rural, processamento industrial, transporte e mercados urbanos."
+        },
+        {
+          "key": "C",
+          "text": "Urbanização não significa desaparecimento do campo, mas transformação das relações entre espaços urbanos e rurais."
+        },
+        {
+          "key": "D",
+          "text": "Toda cidade catarinense exerce a mesma influência regional."
+        },
+        {
+          "key": "E",
+          "text": "Mobilidade populacional inclui migração permanente e deslocamentos cotidianos entre municípios."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-10-CON-01",
+        "GH-10-CON-02",
+        "GH-10-CON-03",
+        "GH-10-CON-04",
+        "GH-10-CON-05",
+        "GH-10-CON-06"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-10-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Santa Catarina urbana e rural, qual conclusão final é sustentável?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Urbanização significa que a agricultura deixa de existir."
+        },
+        {
+          "key": "B",
+          "text": "Campo e cidade funcionam como espaços totalmente isolados."
+        },
+        {
+          "key": "C",
+          "text": "Urbanização não significa desaparecimento do campo, mas transformação das relações entre espaços urbanos e rurais."
+        },
+        {
+          "key": "D",
+          "text": "Toda cidade catarinense exerce a mesma influência regional."
+        },
+        {
+          "key": "E",
+          "text": "Agroindústria é uma atividade exclusivamente urbana sem ligação com o campo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Urbanização não significa desaparecimento do campo, mas transformação das relações entre espaços urbanos e rurais.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-10-CON-01",
+        "GH-10-CON-02",
+        "GH-10-CON-03",
+        "GH-10-CON-04",
+        "GH-10-CON-05",
+        "GH-10-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    }
+  ]
+}

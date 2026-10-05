@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-07-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Colonização, imigração e diversidade cultural catarinense, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todo o território catarinense foi colonizado pelo mesmo grupo europeu."
+      },
+      {
+        "key": "B",
+        "text": "Fluxos açorianos, alemães, italianos e de outros grupos participaram da ocupação e transformação de diferentes áreas de Santa Catarina."
+      },
+      {
+        "key": "C",
+        "text": "A imigração europeia ocorreu antes da presença indígena."
+      },
+      {
+        "key": "D",
+        "text": "Colonização europeia explica sozinha toda a cultura catarinense."
+      },
+      {
+        "key": "E",
+        "text": "Identidade regional é natural e imutável."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "Fluxos açorianos, alemães, italianos e de outros grupos participaram da ocupação e transformação de diferentes áreas de Santa Catarina.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-07-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-07-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “Todo o território catarinense foi colonizado pelo mesmo grupo europeu.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todo o território catarinense foi colonizado pelo mesmo grupo europeu."
+      },
+      {
+        "key": "B",
+        "text": "A imigração europeia ocorreu antes da presença indígena."
+      },
+      {
+        "key": "C",
+        "text": "Colonização europeia explica sozinha toda a cultura catarinense."
+      },
+      {
+        "key": "D",
+        "text": "A colonização por imigrantes ocorreu em contextos, épocas e regiões distintas e se relacionou a políticas de ocupação territorial e trabalho."
+      },
+      {
+        "key": "E",
+        "text": "Identidade regional é natural e imutável."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A colonização por imigrantes ocorreu em contextos, épocas e regiões distintas e se relacionou a políticas de ocupação territorial e trabalho.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-07-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-07-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: A imigração europeia marcou regiões catarinenses, mas não substitui toda a história anterior do território. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todo o território catarinense foi colonizado pelo mesmo grupo europeu."
+      },
+      {
+        "key": "B",
+        "text": "A imigração europeia ocorreu antes da presença indígena."
+      },
+      {
+        "key": "C",
+        "text": "As colônias modificaram paisagens, redes urbanas, agricultura, indústria, língua, religião e práticas culturais."
+      },
+      {
+        "key": "D",
+        "text": "Colonização europeia explica sozinha toda a cultura catarinense."
+      },
+      {
+        "key": "E",
+        "text": "Identidade regional é natural e imutável."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "As colônias modificaram paisagens, redes urbanas, agricultura, indústria, língua, religião e práticas culturais.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-07-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-07-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Colonização, imigração e diversidade cultural catarinense por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A narrativa de uma Santa Catarina exclusivamente europeia apaga povos indígenas, população negra e outros grupos."
+      },
+      {
+        "key": "B",
+        "text": "Todo o território catarinense foi colonizado pelo mesmo grupo europeu."
+      },
+      {
+        "key": "C",
+        "text": "A imigração europeia ocorreu antes da presença indígena."
+      },
+      {
+        "key": "D",
+        "text": "Colonização europeia explica sozinha toda a cultura catarinense."
+      },
+      {
+        "key": "E",
+        "text": "Identidade regional é natural e imutável."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A narrativa de uma Santa Catarina exclusivamente europeia apaga povos indígenas, população negra e outros grupos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-07-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-07-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Fluxos açorianos, alemães, italianos e de outros grupos participaram da ocupação e transformação de diferentes áreas de Santa Catarina.\nII. Todo o território catarinense foi colonizado pelo mesmo grupo europeu.\nIII. As colônias modificaram paisagens, redes urbanas, agricultura, indústria, língua, religião e práticas culturais.\nIV. A imigração europeia ocorreu antes da presença indígena.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-07-CON-01",
+      "GH-07-CON-02",
+      "GH-07-CON-03",
+      "GH-07-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-07-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Colonização, imigração e diversidade cultural catarinense. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todo o território catarinense foi colonizado pelo mesmo grupo europeu."
+      },
+      {
+        "key": "B",
+        "text": "A imigração europeia ocorreu antes da presença indígena."
+      },
+      {
+        "key": "C",
+        "text": "Colonização europeia explica sozinha toda a cultura catarinense."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Relacionar fluxos migratórios a regiões específicas e analisar criticamente narrativas identitárias."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Relacionar fluxos migratórios a regiões específicas e analisar criticamente narrativas identitárias.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-07-CON-01",
+      "GH-07-CON-02",
+      "GH-07-CON-03",
+      "GH-07-CON-04",
+      "GH-07-CON-05",
+      "GH-07-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-07-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Colonização, imigração e diversidade cultural catarinense?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Fluxos açorianos, alemães, italianos e de outros grupos participaram da ocupação e transformação de diferentes áreas de Santa Catarina."
+      },
+      {
+        "key": "B",
+        "text": "A colonização por imigrantes ocorreu em contextos, épocas e regiões distintas e se relacionou a políticas de ocupação territorial e trabalho."
+      },
+      {
+        "key": "C",
+        "text": "Identidades regionais são construídas historicamente e podem selecionar quais memórias recebem maior visibilidade."
+      },
+      {
+        "key": "D",
+        "text": "Colonização europeia explica sozinha toda a cultura catarinense."
+      },
+      {
+        "key": "E",
+        "text": "A narrativa de uma Santa Catarina exclusivamente europeia apaga povos indígenas, população negra e outros grupos."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-07-CON-01",
+      "GH-07-CON-02",
+      "GH-07-CON-03",
+      "GH-07-CON-04",
+      "GH-07-CON-05",
+      "GH-07-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-07-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Colonização, imigração e diversidade cultural catarinense, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todo o território catarinense foi colonizado pelo mesmo grupo europeu."
+      },
+      {
+        "key": "B",
+        "text": "A imigração europeia ocorreu antes da presença indígena."
+      },
+      {
+        "key": "C",
+        "text": "Identidades regionais são construídas historicamente e podem selecionar quais memórias recebem maior visibilidade."
+      },
+      {
+        "key": "D",
+        "text": "Colonização europeia explica sozinha toda a cultura catarinense."
+      },
+      {
+        "key": "E",
+        "text": "Identidade regional é natural e imutável."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Identidades regionais são construídas historicamente e podem selecionar quais memórias recebem maior visibilidade.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-07-CON-01",
+      "GH-07-CON-02",
+      "GH-07-CON-03",
+      "GH-07-CON-04",
+      "GH-07-CON-05",
+      "GH-07-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

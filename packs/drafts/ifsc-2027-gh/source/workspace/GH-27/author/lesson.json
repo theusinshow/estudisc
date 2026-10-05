@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "GH-27",
+  "subject": "GH",
+  "title": "Dinâmica populacional brasileira",
+  "unit": "Brasil",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+  "concepts": [
+    {
+      "id": "GH-27-CON-01",
+      "name": "Distribuição da população",
+      "masteryTarget": "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região."
+    },
+    {
+      "id": "GH-27-CON-02",
+      "name": "Densidade",
+      "masteryTarget": "Transição demográfica envolve queda das taxas de mortalidade e, posteriormente, de natalidade, alterando crescimento e estrutura etária."
+    },
+    {
+      "id": "GH-27-CON-03",
+      "name": "Crescimento e transição demográfica",
+      "masteryTarget": "Migrações internas modificaram a distribuição da população brasileira ao longo do século XX e continuam mudando de direção e intensidade."
+    },
+    {
+      "id": "GH-27-CON-04",
+      "name": "Migrações internas e internacionais",
+      "masteryTarget": "Indicadores como idade, fecundidade, mortalidade e migração ajudam a interpretar tendências populacionais."
+    },
+    {
+      "id": "GH-27-CON-05",
+      "name": "Estrutura etária",
+      "masteryTarget": "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho."
+    },
+    {
+      "id": "GH-27-CON-06",
+      "name": "Indicadores demográficos",
+      "masteryTarget": "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "GH-27-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "População deve ser analisada por distribuição, estrutura, movimentos e condições de vida, não apenas por total de habitantes."
+    },
+    {
+      "id": "GH-27-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar os conceitos centrais de Dinâmica populacional brasileira em linguagem própria.",
+        "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+        "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+      ]
+    },
+    {
+      "id": "GH-27-B03",
+      "type": "EXPLANATION",
+      "title": "Ideia central",
+      "content": "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região. Transição demográfica envolve queda das taxas de mortalidade e, posteriormente, de natalidade, alterando crescimento e estrutura etária.",
+      "items": [
+        "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região.",
+        "Transição demográfica envolve queda das taxas de mortalidade e, posteriormente, de natalidade, alterando crescimento e estrutura etária."
+      ]
+    },
+    {
+      "id": "GH-27-B04",
+      "type": "EXPLANATION",
+      "title": "Como as relações se organizam",
+      "content": "Migrações internas modificaram a distribuição da população brasileira ao longo do século XX e continuam mudando de direção e intensidade. Indicadores como idade, fecundidade, mortalidade e migração ajudam a interpretar tendências populacionais.",
+      "items": [
+        "Migrações internas modificaram a distribuição da população brasileira ao longo do século XX e continuam mudando de direção e intensidade.",
+        "Indicadores como idade, fecundidade, mortalidade e migração ajudam a interpretar tendências populacionais."
+      ]
+    },
+    {
+      "id": "GH-27-B05",
+      "type": "EXPLANATION",
+      "title": "O que conecta o tema à prova",
+      "content": "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho.",
+      "items": [
+        "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho.",
+        "Ler taxas e mapas distinguindo valores absolutos, proporções e densidades."
+      ]
+    },
+    {
+      "id": "GH-27-B06",
+      "type": "CALLOUT",
+      "variant": "SOURCE_LITERACY",
+      "title": "Leia a fonte, não apenas o tema",
+      "items": [
+        "Ler taxas e mapas distinguindo valores absolutos, proporções e densidades.",
+        "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+      ]
+    },
+    {
+      "id": "GH-27-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTION",
+      "title": "Erros que custam ponto",
+      "items": [
+        "População absoluta e densidade demográfica são a mesma medida.",
+        "Migração sempre ocorre de áreas pobres para áreas ricas.",
+        "Transição demográfica significa apenas aumento da população.",
+        "Uma região pouco povoada é necessariamente pouco urbanizada."
+      ]
+    },
+    {
+      "id": "GH-27-B08",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Vocabulário essencial",
+      "items": [
+        "Distribuição da população",
+        "Densidade",
+        "Crescimento e transição demográfica",
+        "Migrações internas e internacionais",
+        "Estrutura etária",
+        "Indicadores demográficos"
+      ]
+    },
+    {
+      "id": "GH-27-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Como resolver uma questão",
+      "prompt": "Uma questão apresenta uma fonte relacionada a Dinâmica populacional brasileira. Como decidir entre alternativas plausíveis?",
+      "answer": "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho.",
+      "reasoning": [
+        "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+        "Extraia da fonte apenas as evidências explícitas.",
+        "Ative o conceito da aula que explica a evidência.",
+        "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+        "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+      ]
+    },
+    {
+      "id": "GH-27-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Estratégia IFSC",
+      "items": [
+        "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+        "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+        "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+      ]
+    },
+    {
+      "id": "GH-27-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Material complementar",
+      "mediaRefs": [
+        "SRC-GH-001",
+        "SRC-GH-002",
+        "SRC-GH-019",
+        "SRC-GH-032"
+      ],
+      "optional": true
+    },
+    {
+      "id": "GH-27-B12",
+      "type": "COMPONENT_REQUEST",
+      "title": "Visual determinístico",
+      "requestRef": "DET-GH-27-001",
+      "status": "PENDING"
+    },
+    {
+      "id": "GH-27-B13",
+      "type": "SUMMARY",
+      "title": "Resumo para recuperar sem olhar",
+      "items": [
+        "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região.",
+        "Transição demográfica envolve queda das taxas de mortalidade e, posteriormente, de natalidade, alterando crescimento e estrutura etária.",
+        "Migrações internas modificaram a distribuição da população brasileira ao longo do século XX e continuam mudando de direção e intensidade.",
+        "Indicadores como idade, fecundidade, mortalidade e migração ajudam a interpretar tendências populacionais.",
+        "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho."
+      ]
+    },
+    {
+      "id": "GH-27-B14",
+      "type": "EXIT_TICKET",
+      "title": "Saída rápida",
+      "prompt": "Em duas ou três frases, explique a ideia mais importante de Dinâmica populacional brasileira e cite um erro de interpretação que você evitaria numa questão.",
+      "answerGuide": "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região. Evite, por exemplo: População absoluta e densidade demográfica são a mesma medida."
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-GH-001",
+    "SRC-GH-001",
+    "SRC-GH-002",
+    "SRC-GH-019",
+    "SRC-GH-032",
+    "SRC-GH-033",
+    "SRC-GH-057",
+    "SRC-GH-065",
+    "SRC-GH-066",
+    "SRC-GH-074",
+    "SRC-IFSC-GH-2026-1",
+    "SRC-IFSC-GH-2026-2"
+  ],
+  "mediaRefs": [
+    "SRC-GH-001",
+    "SRC-GH-002",
+    "SRC-GH-019",
+    "SRC-GH-032",
+    "SRC-GH-033",
+    "SRC-GH-057",
+    "SRC-GH-065",
+    "SRC-GH-066"
+  ],
+  "imageRequestRefs": [],
+  "editorialNotes": [
+    "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+    "Não publicar mídia externa sem revisão de licença e proveniência.",
+    "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+    "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+  ]
+}

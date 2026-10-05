@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "GH-01",
+  "subject": "GH",
+  "title": "Espaço geográfico e conceitos básicos da Geografia",
+  "unit": "Fundamentos",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+  "concepts": [
+    {
+      "id": "GH-01-CON-01",
+      "name": "Espaço geográfico",
+      "masteryTarget": "O espaço geográfico resulta da interação histórica entre sociedades e natureza e está em transformação contínua."
+    },
+    {
+      "id": "GH-01-CON-02",
+      "name": "Paisagem",
+      "masteryTarget": "Paisagem é aquilo que pode ser percebido em um recorte do espaço e guarda marcas de diferentes tempos."
+    },
+    {
+      "id": "GH-01-CON-03",
+      "name": "Lugar",
+      "masteryTarget": "Lugar enfatiza vivência, identidade e pertencimento; território envolve relações de poder e apropriação do espaço."
+    },
+    {
+      "id": "GH-01-CON-04",
+      "name": "Território",
+      "masteryTarget": "Região é um recorte construído a partir de critérios escolhidos, como clima, economia, cultura ou administração."
+    },
+    {
+      "id": "GH-01-CON-05",
+      "name": "Região",
+      "masteryTarget": "Os conceitos geográficos não são sinônimos: cada um destaca uma dimensão diferente do espaço."
+    },
+    {
+      "id": "GH-01-CON-06",
+      "name": "Relações sociedade-natureza",
+      "masteryTarget": "Os conceitos geográficos não são sinônimos: cada um destaca uma dimensão diferente do espaço."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "GH-01-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Uma avenida, uma área rural e uma floresta podem pertencer ao mesmo espaço geográfico, mas são produzidas e usadas de modos diferentes."
+    },
+    {
+      "id": "GH-01-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar os conceitos centrais de Espaço geográfico e conceitos básicos da Geografia em linguagem própria.",
+        "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+        "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+      ]
+    },
+    {
+      "id": "GH-01-B03",
+      "type": "EXPLANATION",
+      "title": "Ideia central",
+      "content": "O espaço geográfico resulta da interação histórica entre sociedades e natureza e está em transformação contínua. Paisagem é aquilo que pode ser percebido em um recorte do espaço e guarda marcas de diferentes tempos.",
+      "items": [
+        "O espaço geográfico resulta da interação histórica entre sociedades e natureza e está em transformação contínua.",
+        "Paisagem é aquilo que pode ser percebido em um recorte do espaço e guarda marcas de diferentes tempos."
+      ]
+    },
+    {
+      "id": "GH-01-B04",
+      "type": "EXPLANATION",
+      "title": "Como as relações se organizam",
+      "content": "Lugar enfatiza vivência, identidade e pertencimento; território envolve relações de poder e apropriação do espaço. Região é um recorte construído a partir de critérios escolhidos, como clima, economia, cultura ou administração.",
+      "items": [
+        "Lugar enfatiza vivência, identidade e pertencimento; território envolve relações de poder e apropriação do espaço.",
+        "Região é um recorte construído a partir de critérios escolhidos, como clima, economia, cultura ou administração."
+      ]
+    },
+    {
+      "id": "GH-01-B05",
+      "type": "EXPLANATION",
+      "title": "O que conecta o tema à prova",
+      "content": "Os conceitos geográficos não são sinônimos: cada um destaca uma dimensão diferente do espaço.",
+      "items": [
+        "Os conceitos geográficos não são sinônimos: cada um destaca uma dimensão diferente do espaço.",
+        "Identificar qual conceito geográfico melhor explica uma situação, justificando com elementos do texto, mapa ou imagem."
+      ]
+    },
+    {
+      "id": "GH-01-B06",
+      "type": "CALLOUT",
+      "variant": "SOURCE_LITERACY",
+      "title": "Leia a fonte, não apenas o tema",
+      "items": [
+        "Identificar qual conceito geográfico melhor explica uma situação, justificando com elementos do texto, mapa ou imagem.",
+        "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+      ]
+    },
+    {
+      "id": "GH-01-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTION",
+      "title": "Erros que custam ponto",
+      "items": [
+        "Espaço geográfico é apenas o espaço natural sem ação humana.",
+        "Território é sinônimo de país e nunca existe em outras escalas.",
+        "Paisagem mostra somente elementos naturais.",
+        "Regiões são divisões eternas e independentes do critério usado."
+      ]
+    },
+    {
+      "id": "GH-01-B08",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Vocabulário essencial",
+      "items": [
+        "Espaço geográfico",
+        "Paisagem",
+        "Lugar",
+        "Território",
+        "Região",
+        "Relações sociedade-natureza"
+      ]
+    },
+    {
+      "id": "GH-01-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Como resolver uma questão",
+      "prompt": "Uma questão apresenta uma fonte relacionada a Espaço geográfico e conceitos básicos da Geografia. Como decidir entre alternativas plausíveis?",
+      "answer": "Os conceitos geográficos não são sinônimos: cada um destaca uma dimensão diferente do espaço.",
+      "reasoning": [
+        "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+        "Extraia da fonte apenas as evidências explícitas.",
+        "Ative o conceito da aula que explica a evidência.",
+        "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+        "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+      ]
+    },
+    {
+      "id": "GH-01-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Estratégia IFSC",
+      "items": [
+        "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+        "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+        "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+      ]
+    },
+    {
+      "id": "GH-01-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Material complementar",
+      "mediaRefs": [
+        "SRC-GH-001",
+        "SRC-GH-002"
+      ],
+      "optional": true
+    },
+    {
+      "id": "GH-01-B12",
+      "type": "IMAGE_REQUEST",
+      "title": "Ilustração conceitual",
+      "requestRef": "IMG-GH-01-001",
+      "status": "PENDING"
+    },
+    {
+      "id": "GH-01-B13",
+      "type": "SUMMARY",
+      "title": "Resumo para recuperar sem olhar",
+      "items": [
+        "O espaço geográfico resulta da interação histórica entre sociedades e natureza e está em transformação contínua.",
+        "Paisagem é aquilo que pode ser percebido em um recorte do espaço e guarda marcas de diferentes tempos.",
+        "Lugar enfatiza vivência, identidade e pertencimento; território envolve relações de poder e apropriação do espaço.",
+        "Região é um recorte construído a partir de critérios escolhidos, como clima, economia, cultura ou administração.",
+        "Os conceitos geográficos não são sinônimos: cada um destaca uma dimensão diferente do espaço."
+      ]
+    },
+    {
+      "id": "GH-01-B14",
+      "type": "EXIT_TICKET",
+      "title": "Saída rápida",
+      "prompt": "Em duas ou três frases, explique a ideia mais importante de Espaço geográfico e conceitos básicos da Geografia e cite um erro de interpretação que você evitaria numa questão.",
+      "answerGuide": "O espaço geográfico resulta da interação histórica entre sociedades e natureza e está em transformação contínua. Evite, por exemplo: Espaço geográfico é apenas o espaço natural sem ação humana."
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-GH-001",
+    "SRC-GH-001",
+    "SRC-GH-002",
+    "SRC-GH-007",
+    "SRC-GH-008",
+    "SRC-IFSC-GH-2026-1",
+    "SRC-IFSC-GH-2026-2"
+  ],
+  "mediaRefs": [
+    "SRC-GH-001",
+    "SRC-GH-002"
+  ],
+  "imageRequestRefs": [
+    "IMG-GH-01-001"
+  ],
+  "editorialNotes": [
+    "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+    "Não publicar mídia externa sem revisão de licença e proveniência.",
+    "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+    "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+  ]
+}

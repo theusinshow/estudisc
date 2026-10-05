@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-08-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Formação territorial de Santa Catarina e Guerra do Contestado, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Contestado foi uma guerra internacional entre Brasil e Argentina."
+      },
+      {
+        "key": "B",
+        "text": "A Guerra do Contestado ocorreu principalmente entre 1912 e 1916 em área disputada por Paraná e Santa Catarina."
+      },
+      {
+        "key": "C",
+        "text": "O conflito ocorreu apenas por divergências religiosas sem relação com terra."
+      },
+      {
+        "key": "D",
+        "text": "Os sertanejos apoiaram unanimemente as empresas estrangeiras."
+      },
+      {
+        "key": "E",
+        "text": "A ferrovia não teve relação com transformações fundiárias na região."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A Guerra do Contestado ocorreu principalmente entre 1912 e 1916 em área disputada por Paraná e Santa Catarina.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-08-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-08-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “O Contestado foi uma guerra internacional entre Brasil e Argentina.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Contestado foi uma guerra internacional entre Brasil e Argentina."
+      },
+      {
+        "key": "B",
+        "text": "O conflito ocorreu apenas por divergências religiosas sem relação com terra."
+      },
+      {
+        "key": "C",
+        "text": "Os sertanejos apoiaram unanimemente as empresas estrangeiras."
+      },
+      {
+        "key": "D",
+        "text": "A construção da ferrovia e concessões de terras a empresas afetaram populações sertanejas e intensificaram conflitos pela posse da terra."
+      },
+      {
+        "key": "E",
+        "text": "A ferrovia não teve relação com transformações fundiárias na região."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A construção da ferrovia e concessões de terras a empresas afetaram populações sertanejas e intensificaram conflitos pela posse da terra.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-08-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-08-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: A Guerra do Contestado envolveu terra, ferrovia, empresas, sertanejos, religião e disputa territorial. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Contestado foi uma guerra internacional entre Brasil e Argentina."
+      },
+      {
+        "key": "B",
+        "text": "O conflito ocorreu apenas por divergências religiosas sem relação com terra."
+      },
+      {
+        "key": "C",
+        "text": "O movimento reuniu dimensões sociais, políticas, econômicas e religiosas; reduzi-lo apenas a fanatismo religioso distorce o conflito."
+      },
+      {
+        "key": "D",
+        "text": "Os sertanejos apoiaram unanimemente as empresas estrangeiras."
+      },
+      {
+        "key": "E",
+        "text": "A ferrovia não teve relação com transformações fundiárias na região."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "O movimento reuniu dimensões sociais, políticas, econômicas e religiosas; reduzi-lo apenas a fanatismo religioso distorce o conflito.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-08-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-08-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Formação territorial de Santa Catarina e Guerra do Contestado por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A atuação de companhias como a Brazil Railway e a exploração madeireira alteraram o acesso à terra e aos recursos."
+      },
+      {
+        "key": "B",
+        "text": "O Contestado foi uma guerra internacional entre Brasil e Argentina."
+      },
+      {
+        "key": "C",
+        "text": "O conflito ocorreu apenas por divergências religiosas sem relação com terra."
+      },
+      {
+        "key": "D",
+        "text": "Os sertanejos apoiaram unanimemente as empresas estrangeiras."
+      },
+      {
+        "key": "E",
+        "text": "A ferrovia não teve relação com transformações fundiárias na região."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A atuação de companhias como a Brazil Railway e a exploração madeireira alteraram o acesso à terra e aos recursos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-08-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-08-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. A Guerra do Contestado ocorreu principalmente entre 1912 e 1916 em área disputada por Paraná e Santa Catarina.\nII. O Contestado foi uma guerra internacional entre Brasil e Argentina.\nIII. O movimento reuniu dimensões sociais, políticas, econômicas e religiosas; reduzi-lo apenas a fanatismo religioso distorce o conflito.\nIV. O conflito ocorreu apenas por divergências religiosas sem relação com terra.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-08-CON-01",
+      "GH-08-CON-02",
+      "GH-08-CON-03",
+      "GH-08-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-08-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Formação territorial de Santa Catarina e Guerra do Contestado. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Contestado foi uma guerra internacional entre Brasil e Argentina."
+      },
+      {
+        "key": "B",
+        "text": "O conflito ocorreu apenas por divergências religiosas sem relação com terra."
+      },
+      {
+        "key": "C",
+        "text": "Os sertanejos apoiaram unanimemente as empresas estrangeiras."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Integrar mapa, cronologia e interesses de diferentes grupos para explicar o conflito."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Integrar mapa, cronologia e interesses de diferentes grupos para explicar o conflito.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-08-CON-01",
+      "GH-08-CON-02",
+      "GH-08-CON-03",
+      "GH-08-CON-04",
+      "GH-08-CON-05",
+      "GH-08-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-08-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Formação territorial de Santa Catarina e Guerra do Contestado?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Guerra do Contestado ocorreu principalmente entre 1912 e 1916 em área disputada por Paraná e Santa Catarina."
+      },
+      {
+        "key": "B",
+        "text": "A construção da ferrovia e concessões de terras a empresas afetaram populações sertanejas e intensificaram conflitos pela posse da terra."
+      },
+      {
+        "key": "C",
+        "text": "O conflito terminou com forte repressão e se relacionou à definição territorial e às desigualdades fundiárias da região."
+      },
+      {
+        "key": "D",
+        "text": "Os sertanejos apoiaram unanimemente as empresas estrangeiras."
+      },
+      {
+        "key": "E",
+        "text": "A atuação de companhias como a Brazil Railway e a exploração madeireira alteraram o acesso à terra e aos recursos."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-08-CON-01",
+      "GH-08-CON-02",
+      "GH-08-CON-03",
+      "GH-08-CON-04",
+      "GH-08-CON-05",
+      "GH-08-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-08-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Formação territorial de Santa Catarina e Guerra do Contestado, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Contestado foi uma guerra internacional entre Brasil e Argentina."
+      },
+      {
+        "key": "B",
+        "text": "O conflito ocorreu apenas por divergências religiosas sem relação com terra."
+      },
+      {
+        "key": "C",
+        "text": "O conflito terminou com forte repressão e se relacionou à definição territorial e às desigualdades fundiárias da região."
+      },
+      {
+        "key": "D",
+        "text": "Os sertanejos apoiaram unanimemente as empresas estrangeiras."
+      },
+      {
+        "key": "E",
+        "text": "A ferrovia não teve relação com transformações fundiárias na região."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "O conflito terminou com forte repressão e se relacionou à definição territorial e às desigualdades fundiárias da região.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-08-CON-01",
+      "GH-08-CON-02",
+      "GH-08-CON-03",
+      "GH-08-CON-04",
+      "GH-08-CON-05",
+      "GH-08-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

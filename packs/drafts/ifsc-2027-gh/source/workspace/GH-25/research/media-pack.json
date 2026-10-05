@@ -1,0 +1,39 @@
+{
+  "lessonId": "GH-25",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-001",
+      "title": "Atlas Geográfico Escolar — Ensino Fundamental 6º ao 9º ano",
+      "org": "IBGE",
+      "type": "ATLAS",
+      "url": "https://www.ibge.gov.br/geociencias/atlas/nacional/24678-atlas-geografico-escolar-ensino-fundamental.html",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-020",
+      "title": "Síntese Anual da Agricultura de Santa Catarina 2025",
+      "org": "EPAGRI/CEPA",
+      "type": "REPORT",
+      "url": "https://docweb.epagri.sc.gov.br/website_cepa/publicacoes/Sintese_2025.pdf",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-25-001",
+    "lessonId": "GH-25",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Diagrama de cadeia agroindustrial e comparação agricultura familiar/agronegócio sem falsa dicotomia.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

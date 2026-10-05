@@ -1,0 +1,48 @@
+{
+  "lessonId": "GH-45",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-050",
+      "title": "Holocausto — local de aprendizado para estudantes",
+      "org": "United States Holocaust Memorial Museum",
+      "type": "STUDENT_LEARNING_SITE",
+      "url": "https://encyclopedia.ushmm.org/content/pt-br/project/the-holocaust-a-learning-site-for-students",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-051",
+      "title": "Segunda Guerra Mundial na Europa",
+      "org": "United States Holocaust Memorial Museum",
+      "type": "OFFICIAL_REFERENCE",
+      "url": "https://encyclopedia.ushmm.org/content/pt-br/article/world-war-ii-in-europe",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-071",
+      "title": "Segunda Guerra Mundial",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-segunda-guerra-mundial/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-45-001",
+    "lessonId": "GH-45",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa/linha do tempo 1939–1945 + componente separado sobre Holocausto baseado em USHMM.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}
