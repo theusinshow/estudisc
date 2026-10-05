@@ -1,0 +1,756 @@
+{
+  "version": 2,
+  "count": 24,
+  "requests": [
+    {
+      "id": "COMP-CIE-06-001",
+      "lessonId": "CIE-06",
+      "title": "Circuitos elétricos",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "SVG de circuito simples com bateria, chave, lâmpada e fios; gerar versões aberto/fechado usando símbolos consistentes.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-FIS-006",
+        "SRC-PHET-003"
+      ],
+      "conceptIds": [
+        "CIE-06-CON-01",
+        "CIE-06-CON-02",
+        "CIE-06-CON-03",
+        "CIE-06-CON-04",
+        "CIE-06-CON-05",
+        "CIE-06-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-07-001",
+      "lessonId": "CIE-07",
+      "title": "Consumo e uso consciente de energia elétrica",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Componente calculadora de consumo: potência (W), tempo (h), resultado em kWh e explicação dimensional.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-FIS-007",
+        "SRC-FIS-008",
+        "SRC-FIS-009"
+      ],
+      "conceptIds": [
+        "CIE-07-CON-01",
+        "CIE-07-CON-02",
+        "CIE-07-CON-03",
+        "CIE-07-CON-04",
+        "CIE-07-CON-05",
+        "CIE-07-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-08-001",
+      "lessonId": "CIE-08",
+      "title": "Propriedades, estados e mudanças da matéria",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Diagrama de partículas para sólido/líquido/gás e setas de mudanças de estado; SVG, não imagem generativa.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-QUI-001",
+        "SRC-QUI-002",
+        "SRC-PHET-004"
+      ],
+      "conceptIds": [
+        "CIE-08-CON-01",
+        "CIE-08-CON-02",
+        "CIE-08-CON-03",
+        "CIE-08-CON-04",
+        "CIE-08-CON-05",
+        "CIE-08-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-09-001",
+      "lessonId": "CIE-09",
+      "title": "Modelos atômicos e partículas subatômicas",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Linha histórica esquemática Dalton → Thomson → Rutherford → Bohr; SVG com modelos explicitamente didáticos e não em escala.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-QUI-003",
+        "SRC-QUI-006",
+        "SRC-PHET-005"
+      ],
+      "conceptIds": [
+        "CIE-09-CON-01",
+        "CIE-09-CON-02",
+        "CIE-09-CON-03",
+        "CIE-09-CON-04",
+        "CIE-09-CON-05",
+        "CIE-09-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-10-001",
+      "lessonId": "CIE-10",
+      "title": "Número atômico, número de massa, massa atômica e íons",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Componente interativo do átomo mostrando Z, A, p, n, e e carga, ou embed PhET Monte um Átomo.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-QUI-003",
+        "SRC-QUI-006",
+        "SRC-PHET-005"
+      ],
+      "conceptIds": [
+        "CIE-10-CON-01",
+        "CIE-10-CON-02",
+        "CIE-10-CON-03",
+        "CIE-10-CON-04",
+        "CIE-10-CON-05",
+        "CIE-10-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-11-001",
+      "lessonId": "CIE-11",
+      "title": "Tabela Periódica, elementos, moléculas e substâncias",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Tabela Periódica baseada em dados confiáveis; HTML/SVG, sem geração por imagem.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-QUI-003",
+        "SRC-QUI-006"
+      ],
+      "conceptIds": [
+        "CIE-11-CON-01",
+        "CIE-11-CON-02",
+        "CIE-11-CON-03",
+        "CIE-11-CON-04",
+        "CIE-11-CON-05",
+        "CIE-11-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-13-001",
+      "lessonId": "CIE-13",
+      "title": "Separação de misturas",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Diagrama vetorial de filtração, decantação e destilação simples, com labels renderizados pela VECTA.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-QUI-004",
+        "SRC-QUI-007"
+      ],
+      "conceptIds": [
+        "CIE-13-CON-01",
+        "CIE-13-CON-02",
+        "CIE-13-CON-03",
+        "CIE-13-CON-04",
+        "CIE-13-CON-05",
+        "CIE-13-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-15-001",
+      "lessonId": "CIE-15",
+      "title": "Teoria celular e tipos de célula",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Diagrama vetorial comparando célula procariótica, eucariótica animal e vegetal; labels separados do SVG-base quando possível.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-BIO-001"
+      ],
+      "conceptIds": [
+        "CIE-15-CON-01",
+        "CIE-15-CON-02",
+        "CIE-15-CON-03",
+        "CIE-15-CON-04",
+        "CIE-15-CON-05",
+        "CIE-15-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-16-001",
+      "lessonId": "CIE-16",
+      "title": "Estruturas celulares, bioquímica e metabolismo",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Diagrama vetorial de organelas principais e fluxo conceitual de metabolismo; não usar IA generativa para anatomia celular precisa.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-BIO-001"
+      ],
+      "conceptIds": [
+        "CIE-16-CON-01",
+        "CIE-16-CON-02",
+        "CIE-16-CON-03",
+        "CIE-16-CON-04",
+        "CIE-16-CON-05",
+        "CIE-16-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-17-001",
+      "lessonId": "CIE-17",
+      "title": "DNA, genes e cromossomos",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Diagrama DNA → gene → cromossomo; SVG com escalas declaradamente esquemáticas.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-BIO-002",
+        "SRC-BIO-001"
+      ],
+      "conceptIds": [
+        "CIE-17-CON-01",
+        "CIE-17-CON-02",
+        "CIE-17-CON-03",
+        "CIE-17-CON-04",
+        "CIE-17-CON-05",
+        "CIE-17-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-18-001",
+      "lessonId": "CIE-18",
+      "title": "Mitose, meiose e gametogênese",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Linha temporal/diagrama de mitose vs meiose; componente determinístico para evitar fases incorretas.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-BIO-002"
+      ],
+      "conceptIds": [
+        "CIE-18-CON-01",
+        "CIE-18-CON-02",
+        "CIE-18-CON-03",
+        "CIE-18-CON-04",
+        "CIE-18-CON-05",
+        "CIE-18-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-22-001",
+      "lessonId": "CIE-22",
+      "title": "Efeito estufa, aquecimento global e camada de ozônio",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Diagrama separado: efeito estufa vs camada de ozônio; SVG para impedir mistura conceitual.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-ECO-004",
+        "SRC-ECO-005"
+      ],
+      "conceptIds": [
+        "CIE-22-CON-01",
+        "CIE-22-CON-02",
+        "CIE-22-CON-03",
+        "CIE-22-CON-04",
+        "CIE-22-CON-05",
+        "CIE-22-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-25-001",
+      "lessonId": "CIE-25",
+      "title": "Mendel e a 1ª Lei",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Quadrado de Punnett interativo/determinístico; jamais gerado por imagem.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-BIO-003",
+        "SRC-BIO-002"
+      ],
+      "conceptIds": [
+        "CIE-25-CON-01",
+        "CIE-25-CON-02",
+        "CIE-25-CON-03",
+        "CIE-25-CON-04",
+        "CIE-25-CON-05",
+        "CIE-25-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-27-001",
+      "lessonId": "CIE-27",
+      "title": "Classificação dos seres vivos",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Árvore/classificação esquemática com HTML/SVG; sem sugerir árvore filogenética exata quando for apenas classificação escolar.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-BIO-005"
+      ],
+      "conceptIds": [
+        "CIE-27-CON-01",
+        "CIE-27-CON-02",
+        "CIE-27-CON-03",
+        "CIE-27-CON-04",
+        "CIE-27-CON-05",
+        "CIE-27-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-29-001",
+      "lessonId": "CIE-29",
+      "title": "Corpo humano: sistemas, estrutura e funcionamento",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Mapa simplificado de sistemas do corpo humano com hotspots; usar ilustração licenciada ou vetor revisado, não anatomia generativa como fonte factual.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-BIO-006"
+      ],
+      "conceptIds": [
+        "CIE-29-CON-01",
+        "CIE-29-CON-02",
+        "CIE-29-CON-03",
+        "CIE-29-CON-04",
+        "CIE-29-CON-05",
+        "CIE-29-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-30-001",
+      "lessonId": "CIE-30",
+      "title": "Vacinas, imunidade e doenças dos sistemas",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Fluxo vacina → antígeno → resposta → células de memória → resposta futura; SVG com labels da UI.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-BIO-006",
+        "SRC-HEALTH-001",
+        "SRC-HEALTH-002"
+      ],
+      "conceptIds": [
+        "CIE-30-CON-01",
+        "CIE-30-CON-02",
+        "CIE-30-CON-03",
+        "CIE-30-CON-04",
+        "CIE-30-CON-05",
+        "CIE-30-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-31-001",
+      "lessonId": "CIE-31",
+      "title": "Substâncias psicoativas, sentidos e visão",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Diagrama óptico do olho, miopia e hipermetropia; SVG geométrico revisado.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-SED-002",
+        "SRC-HEALTH-006",
+        "SRC-HEALTH-007",
+        "SRC-HEALTH-008"
+      ],
+      "conceptIds": [
+        "CIE-31-CON-01",
+        "CIE-31-CON-02",
+        "CIE-31-CON-03",
+        "CIE-31-CON-04",
+        "CIE-31-CON-05",
+        "CIE-31-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-32-001",
+      "lessonId": "CIE-32",
+      "title": "Reprodução humana, ciclo menstrual e fecundação",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Diagrama reprodutivo e linha do ciclo menstrual; usar recurso médico/licenciado ou desenho vetorial revisado, não IA generativa como autoridade.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-HEALTH-003"
+      ],
+      "conceptIds": [
+        "CIE-32-CON-01",
+        "CIE-32-CON-02",
+        "CIE-32-CON-03",
+        "CIE-32-CON-04",
+        "CIE-32-CON-05",
+        "CIE-32-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-33-001",
+      "lessonId": "CIE-33",
+      "title": "Métodos anticoncepcionais e ISTs",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Tabela comparativa de métodos contraceptivos e prevenção de IST; HTML/data, sem imagem generativa.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-HEALTH-003",
+        "SRC-HEALTH-004",
+        "SRC-HEALTH-005",
+        "SRC-HEALTH-009"
+      ],
+      "conceptIds": [
+        "CIE-33-CON-01",
+        "CIE-33-CON-02",
+        "CIE-33-CON-03",
+        "CIE-33-CON-04",
+        "CIE-33-CON-05",
+        "CIE-33-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-34-001",
+      "lessonId": "CIE-34",
+      "title": "Lamarck, Darwin e seleção natural",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Timeline Lamarck / Darwin-Wallace / síntese moderna; usar retratos públicos/licenciados ou apenas texto + SVG.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-EVO-001",
+        "SRC-EVO-002",
+        "SRC-PHET-006"
+      ],
+      "conceptIds": [
+        "CIE-34-CON-01",
+        "CIE-34-CON-02",
+        "CIE-34-CON-03",
+        "CIE-34-CON-04",
+        "CIE-34-CON-05",
+        "CIE-34-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-37-001",
+      "lessonId": "CIE-37",
+      "title": "Sistema Solar",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Sistema Solar esquemático com aviso 'não está em escala'; preferir SVG/dados astronômicos.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-ASTRO-001",
+        "SRC-ASTRO-002",
+        "SRC-PHET-007"
+      ],
+      "conceptIds": [
+        "CIE-37-CON-01",
+        "CIE-37-CON-02",
+        "CIE-37-CON-03",
+        "CIE-37-CON-04",
+        "CIE-37-CON-05",
+        "CIE-37-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-38-001",
+      "lessonId": "CIE-38",
+      "title": "Terra e Lua",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Diagrama Terra-Lua-Sol para fases/eclipses e vetor de gravidade; SVG interativo.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-ASTRO-001",
+        "SRC-PHET-007",
+        "SRC-ASTRO-006"
+      ],
+      "conceptIds": [
+        "CIE-38-CON-01",
+        "CIE-38-CON-02",
+        "CIE-38-CON-03",
+        "CIE-38-CON-04",
+        "CIE-38-CON-05",
+        "CIE-38-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-39-001",
+      "lessonId": "CIE-39",
+      "title": "Escalas e ordem de grandeza astronômica",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Componente de escalas com potências de dez, UA e ano-luz; HTML/SVG.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-ASTRO-003",
+        "SRC-ASTRO-001"
+      ],
+      "conceptIds": [
+        "CIE-39-CON-01",
+        "CIE-39-CON-02",
+        "CIE-39-CON-03",
+        "CIE-39-CON-04",
+        "CIE-39-CON-05",
+        "CIE-39-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
+    {
+      "id": "COMP-CIE-40-001",
+      "lessonId": "CIE-40",
+      "title": "Evolução estelar",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "Diagrama de evolução estelar por massa; SVG com duas trilhas principais e labels revisados.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-ASTRO-004",
+        "SRC-ASTRO-005"
+      ],
+      "conceptIds": [
+        "CIE-40-CON-01",
+        "CIE-40-CON-02",
+        "CIE-40-CON-03",
+        "CIE-40-CON-04",
+        "CIE-40-CON-05",
+        "CIE-40-CON-06"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    }
+  ]
+}

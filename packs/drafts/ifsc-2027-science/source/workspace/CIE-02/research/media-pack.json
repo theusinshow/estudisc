@@ -1,0 +1,34 @@
+{
+  "lessonId": "CIE-02",
+  "mediaCandidates": [],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-02-001",
+      "lessonId": "CIE-02",
+      "blockId": "CIE-02-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração educacional limpa mostrando uma rampa, uma alavanca e uma roldana em três pequenas cenas do cotidiano, sem texto ou fórmulas, objetos fisicamente plausíveis, fundo simples, estilo editorial científico moderno.",
+      "factualConstraints": [
+        "Mostrar apoio da alavanca claramente",
+        "Não sugerir que máquinas simples criam energia",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Máquinas simples.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-02-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

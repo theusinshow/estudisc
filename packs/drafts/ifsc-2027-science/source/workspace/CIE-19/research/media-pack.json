@@ -1,0 +1,34 @@
+{
+  "lessonId": "CIE-19",
+  "mediaCandidates": [],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-19-001",
+      "lessonId": "CIE-19",
+      "blockId": "CIE-19-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração de ecossistema brasileiro com plantas, herbívoro, predador, fungos e decomposição no solo, água, luz e elementos abióticos visíveis; sem setas e sem texto, estilo científico editorial.",
+      "factualConstraints": [
+        "Representar produtores, consumidores e decompositores",
+        "Evitar espécies incompatíveis no mesmo cenário",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Ecossistemas e relações ecológicas básicas.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-19-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

@@ -1,0 +1,657 @@
+{
+  "version": 2,
+  "generator": "ANTIGRAVITY_NANO_BANANA_2",
+  "count": 13,
+  "policy": "Generate only listed requests. Never invent extra lesson art automatically.",
+  "requests": [
+    {
+      "id": "IMG-CIE-02-001",
+      "lessonId": "CIE-02",
+      "blockId": "CIE-02-B11",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração educacional limpa mostrando uma rampa, uma alavanca e uma roldana em três pequenas cenas do cotidiano, sem texto ou fórmulas, objetos fisicamente plausíveis, fundo simples, estilo editorial científico moderno.",
+      "factualConstraints": [
+        "Mostrar apoio da alavanca claramente",
+        "Não sugerir que máquinas simples criam energia",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Máquinas simples.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-02-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-FIS-002"
+      ],
+      "conceptIds": [
+        "CIE-02-CON-01",
+        "CIE-02-CON-02",
+        "CIE-02-CON-03",
+        "CIE-02-CON-04",
+        "CIE-02-CON-05",
+        "CIE-02-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-04-001",
+      "lessonId": "CIE-04",
+      "blockId": "CIE-04-B12",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração educacional em três painéis sem rótulos: colher metálica aquecendo por contato, água em panela com circulação visível por setas gráficas simples, e Sol aquecendo a Terra através do espaço; visual limpo, científico e apropriado ao 7º-9º ano.",
+      "factualConstraints": [
+        "Painéis devem representar condução, convecção e radiação sem misturá-las",
+        "Sem afirmar que calor é matéria",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Propagação do calor e máquinas térmicas.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-04-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-FIS-004",
+        "SRC-FIS-003"
+      ],
+      "conceptIds": [
+        "CIE-04-CON-01",
+        "CIE-04-CON-02",
+        "CIE-04-CON-03",
+        "CIE-04-CON-04",
+        "CIE-04-CON-05",
+        "CIE-04-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-05-001",
+      "lessonId": "CIE-05",
+      "blockId": "CIE-05-B12",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Cena didática de uma pessoa pedalando bicicleta com cadeia visual de transformações de energia sugerida por elementos gráficos abstratos, cidade sustentável ao fundo, sem texto, estilo infográfico editorial limpo.",
+      "factualConstraints": [
+        "Não representar energia como substância material",
+        "Sem texto embutido",
+        "Evitar números ou fórmulas"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Fontes, transformações e conservação de energia.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-05-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-FIS-005",
+        "SRC-PHET-002"
+      ],
+      "conceptIds": [
+        "CIE-05-CON-01",
+        "CIE-05-CON-02",
+        "CIE-05-CON-03",
+        "CIE-05-CON-04",
+        "CIE-05-CON-05",
+        "CIE-05-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-12-001",
+      "lessonId": "CIE-12",
+      "blockId": "CIE-12-B12",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Quatro recipientes de laboratório em composição educacional: água pura transparente, água com sal dissolvido visualmente uniforme, água e óleo em duas camadas, água com areia sedimentada; sem rótulos, fundo neutro.",
+      "factualConstraints": [
+        "Água+óleo deve ter duas fases visíveis",
+        "Sal dissolvido não deve aparecer como cristais suspensos",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Substâncias puras, misturas, fases e componentes.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-12-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-QUI-003",
+        "SRC-QUI-007"
+      ],
+      "conceptIds": [
+        "CIE-12-CON-01",
+        "CIE-12-CON-02",
+        "CIE-12-CON-03",
+        "CIE-12-CON-04",
+        "CIE-12-CON-05",
+        "CIE-12-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-14-001",
+      "lessonId": "CIE-14",
+      "blockId": "CIE-14-B11",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Composição educacional com quatro evidências possíveis de transformação química: formação de bolhas, precipitado em solução, emissão de luz e mudança de cor, apresentada como cenas de laboratório escolar seguras, sem texto.",
+      "factualConstraints": [
+        "Não sugerir que toda mudança de cor prova reação",
+        "Equipamentos escolares plausíveis",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Transformações e reações químicas.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-14-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-QUI-005",
+        "SRC-QUI-003"
+      ],
+      "conceptIds": [
+        "CIE-14-CON-01",
+        "CIE-14-CON-02",
+        "CIE-14-CON-03",
+        "CIE-14-CON-04",
+        "CIE-14-CON-05",
+        "CIE-14-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-19-001",
+      "lessonId": "CIE-19",
+      "blockId": "CIE-19-B11",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração de ecossistema brasileiro com plantas, herbívoro, predador, fungos e decomposição no solo, água, luz e elementos abióticos visíveis; sem setas e sem texto, estilo científico editorial.",
+      "factualConstraints": [
+        "Representar produtores, consumidores e decompositores",
+        "Evitar espécies incompatíveis no mesmo cenário",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Ecossistemas e relações ecológicas básicas.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-19-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-ECO-001",
+        "SRC-ECO-002"
+      ],
+      "conceptIds": [
+        "CIE-19-CON-01",
+        "CIE-19-CON-02",
+        "CIE-19-CON-03",
+        "CIE-19-CON-04",
+        "CIE-19-CON-05",
+        "CIE-19-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-20-001",
+      "lessonId": "CIE-20",
+      "blockId": "CIE-20-B11",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Montagem editorial em seis vinhetas de paisagens brasileiras: Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa; sem pessoas, sem texto, diferenças ecológicas claras e visualmente plausíveis.",
+      "factualConstraints": [
+        "Cada paisagem deve ser distinta",
+        "Evitar estereótipos geográficos incorretos",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Ecossistemas brasileiros.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-20-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-ECO-001",
+        "SRC-ECO-003"
+      ],
+      "conceptIds": [
+        "CIE-20-CON-01",
+        "CIE-20-CON-02",
+        "CIE-20-CON-03",
+        "CIE-20-CON-04",
+        "CIE-20-CON-05",
+        "CIE-20-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-21-001",
+      "lessonId": "CIE-21",
+      "blockId": "CIE-21-B11",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Cena educativa de bacia hidrográfica com cidade, rio, área verde e diferentes fontes de impacto ambiental e ações de recuperação, sem texto, visual limpo e não apocalíptico.",
+      "factualConstraints": [
+        "Mostrar tanto impactos quanto medidas de mitigação",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Sustentabilidade, poluição e impactos ambientais.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-21-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-ECO-002",
+        "SRC-SED-001"
+      ],
+      "conceptIds": [
+        "CIE-21-CON-01",
+        "CIE-21-CON-02",
+        "CIE-21-CON-03",
+        "CIE-21-CON-04",
+        "CIE-21-CON-05",
+        "CIE-21-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-23-001",
+      "lessonId": "CIE-23",
+      "blockId": "CIE-23-B11",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração conceitual de fragmentação de habitat: floresta contínua dividida por estrada, animais em fragmentos separados e corredor ecológico em uma área, sem texto.",
+      "factualConstraints": [
+        "Estrada deve cortar o habitat",
+        "Corredor ecológico deve ser visualmente distinguível",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Biodiversidade, ameaças, conservação e preservação.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-23-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-ECO-003",
+        "SRC-ECO-002"
+      ],
+      "conceptIds": [
+        "CIE-23-CON-01",
+        "CIE-23-CON-02",
+        "CIE-23-CON-03",
+        "CIE-23-CON-04",
+        "CIE-23-CON-05",
+        "CIE-23-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-26-001",
+      "lessonId": "CIE-26",
+      "blockId": "CIE-26-B11",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração educacional de laboratório de biotecnologia moderno e realista, pesquisadora analisando amostras e DNA representado apenas como elemento gráfico conceitual ao fundo, sem texto ou sequências genéticas legíveis.",
+      "factualConstraints": [
+        "Não mostrar edição genética como 'superpoder'",
+        "Sem texto embutido",
+        "Sem códigos genéticos inventados"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Interações alélicas, genética aplicada e biotecnologia.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-26-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-BIO-004",
+        "SRC-BIO-002"
+      ],
+      "conceptIds": [
+        "CIE-26-CON-01",
+        "CIE-26-CON-02",
+        "CIE-26-CON-03",
+        "CIE-26-CON-04",
+        "CIE-26-CON-05",
+        "CIE-26-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-28-001",
+      "lessonId": "CIE-28",
+      "blockId": "CIE-28-B11",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Montagem científica didática com exemplos de animal, planta, fungo e microrganismos em quatro áreas visuais, sem rótulos, estética consistente e limpa.",
+      "factualConstraints": [
+        "Fungo não deve parecer planta",
+        "Microrganismos devem ser indicados como microscópicos por enquadramento, sem escala falsa explícita",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Animais, plantas, fungos e microrganismos.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-28-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-BIO-005",
+        "SRC-ECO-002"
+      ],
+      "conceptIds": [
+        "CIE-28-CON-01",
+        "CIE-28-CON-02",
+        "CIE-28-CON-03",
+        "CIE-28-CON-04",
+        "CIE-28-CON-05",
+        "CIE-28-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-35-001",
+      "lessonId": "CIE-35",
+      "blockId": "CIE-35-B12",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Cena de população de insetos com variação de cor sobre dois fundos naturais, aves predadoras capturando mais indivíduos conspícuos; sem texto, mostrando variação pré-existente e seleção diferencial.",
+      "factualConstraints": [
+        "Variação deve existir antes da predação",
+        "Não mostrar insetos mudando de cor por vontade",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Teoria sintética e fatores evolutivos.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-35-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-EVO-001",
+        "SRC-EVO-002",
+        "SRC-PHET-006"
+      ],
+      "conceptIds": [
+        "CIE-35-CON-01",
+        "CIE-35-CON-02",
+        "CIE-35-CON-03",
+        "CIE-35-CON-04",
+        "CIE-35-CON-05",
+        "CIE-35-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    },
+    {
+      "id": "IMG-CIE-36-001",
+      "lessonId": "CIE-36",
+      "blockId": "CIE-36-B11",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração editorial de campo paleontológico com camadas rochosas e fósseis sendo escavados por equipe, sem texto; cena cientificamente plausível e contemporânea.",
+      "factualConstraints": [
+        "Fósseis integrados a camadas sedimentares",
+        "Sem dinossauros vivos ao lado dos pesquisadores",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Registro fóssil e origem da vida.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-36-001-v1.png",
+      "promptVersion": 2,
+      "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-EVO-003",
+        "SRC-EVO-001"
+      ],
+      "conceptIds": [
+        "CIE-36-CON-01",
+        "CIE-36-CON-02",
+        "CIE-36-CON-03",
+        "CIE-36-CON-04",
+        "CIE-36-CON-05",
+        "CIE-36-CON-06"
+      ],
+      "reviewChecklist": [
+        "No embedded text unless explicitly required.",
+        "No obvious duplicated/malformed objects.",
+        "No scientific claim beyond the factual constraints.",
+        "Composition remains readable at mobile width.",
+        "Alt text accurately describes the final selected image.",
+        "Factual review remains PENDING after generation."
+      ],
+      "status": "PENDING_GENERATION"
+    }
+  ]
+}

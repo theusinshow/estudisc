@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "CIE-12",
+  "subject": "CIE",
+  "title": "Substâncias puras, misturas, fases e componentes",
+  "unit": "Matéria e Energia",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+  "concepts": [
+    {
+      "id": "CIE-12-CON-01",
+      "name": "Substância pura",
+      "masteryTarget": "Substância pura possui composição química definida; mistura reúne duas ou mais substâncias."
+    },
+    {
+      "id": "CIE-12-CON-02",
+      "name": "Mistura",
+      "masteryTarget": "Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada."
+    },
+    {
+      "id": "CIE-12-CON-03",
+      "name": "Homogênea/heterogênea",
+      "masteryTarget": "Mistura heterogênea apresenta duas ou mais fases distinguíveis."
+    },
+    {
+      "id": "CIE-12-CON-04",
+      "name": "Fase x componente",
+      "masteryTarget": "Componente é cada substância presente na mistura; fase é cada porção visualmente uniforme do sistema."
+    },
+    {
+      "id": "CIE-12-CON-05",
+      "name": "Classificação de sistemas materiais",
+      "masteryTarget": "Número de componentes e número de fases não precisam ser iguais."
+    },
+    {
+      "id": "CIE-12-CON-06",
+      "name": "A classificação depende das condições e da escala de observa…",
+      "masteryTarget": "A classificação depende das condições e da escala de observação adotada em Ciências escolares."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-12-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Um recipiente contém água, sal totalmente dissolvido e óleo formando uma camada separada. Quantos componentes e quantas fases há? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+    },
+    {
+      "id": "CIE-12-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar com as próprias palavras os conceitos centrais de substâncias puras, misturas, fases e componentes.",
+        "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+        "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+      ]
+    },
+    {
+      "id": "CIE-12-B03",
+      "type": "EXPLANATION",
+      "title": "Base conceitual",
+      "content": "Substância pura possui composição química definida; mistura reúne duas ou mais substâncias. Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo substâncias puras, misturas, fases e componentes.",
+      "items": [
+        "Substância pura possui composição química definida; mistura reúne duas ou mais substâncias.",
+        "Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada."
+      ]
+    },
+    {
+      "id": "CIE-12-B04",
+      "type": "EXPLANATION",
+      "title": "Como as ideias se conectam",
+      "content": "Mistura heterogênea apresenta duas ou mais fases distinguíveis. Componente é cada substância presente na mistura; fase é cada porção visualmente uniforme do sistema. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "items": [
+        "Mistura heterogênea apresenta duas ou mais fases distinguíveis.",
+        "Componente é cada substância presente na mistura; fase é cada porção visualmente uniforme do sistema."
+      ]
+    },
+    {
+      "id": "CIE-12-B05",
+      "type": "EXPLANATION",
+      "title": "Aplicações, limites e leitura científica",
+      "content": "Número de componentes e número de fases não precisam ser iguais. A classificação depende das condições e da escala de observação adotada em Ciências escolares. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "items": [
+        "Número de componentes e número de fases não precisam ser iguais.",
+        "A classificação depende das condições e da escala de observação adotada em Ciências escolares."
+      ]
+    },
+    {
+      "id": "CIE-12-B06",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Termos que precisam estar claros",
+      "items": [
+        "substância pura",
+        "mistura",
+        "homogênea/heterogênea",
+        "fase x componente",
+        "classificação de sistemas materiais"
+      ]
+    },
+    {
+      "id": "CIE-12-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTIONS",
+      "title": "Erros que a prova pode explorar",
+      "items": [
+        "Toda mistura possui exatamente duas fases.",
+        "Fase e componente significam sempre a mesma coisa.",
+        "Uma solução de sal em água é heterogênea porque contém duas substâncias.",
+        "Substância pura é formada obrigatoriamente por um único elemento químico."
+      ]
+    },
+    {
+      "id": "CIE-12-B08",
+      "type": "CALLOUT",
+      "variant": "ACTIVE_LEARNING",
+      "title": "Atividade de compreensão",
+      "items": [
+        "Analise quatro sistemas: água destilada, água+sal dissolvido, água+óleo e água+areia.",
+        "Conte componentes e fases em cada caso.",
+        "Classifique como substância pura ou mistura e, quando mistura, homogênea ou heterogênea.",
+        "Explique por que número de componentes e número de fases podem ser diferentes."
+      ]
+    },
+    {
+      "id": "CIE-12-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo resolvido passo a passo",
+      "prompt": "Um recipiente contém água, sal totalmente dissolvido e óleo formando uma camada separada. Quantos componentes e quantas fases há?",
+      "answer": "Três componentes e duas fases.",
+      "reasoning": "1) Use esta relação: Substância pura possui composição química definida; mistura reúne duas ou mais substâncias. 2) Use esta relação: Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada. 3) Use esta relação: Mistura heterogênea apresenta duas ou mais fases distinguíveis. 4) Aplicando essas relações à situação, a conclusão correta é: Três componentes e duas fases."
+    },
+    {
+      "id": "CIE-12-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Como isso costuma aparecer em prova",
+      "items": [
+        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de substâncias puras, misturas, fases e componentes.",
+        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+      ]
+    },
+    {
+      "id": "CIE-12-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Explore e teste a ideia",
+      "mediaRefs": [
+        "SRC-QUI-007"
+      ],
+      "optional": true
+    },
+    {
+      "id": "CIE-12-B12",
+      "type": "IMAGE_REQUEST",
+      "title": "Ilustração de apoio",
+      "requestRef": "IMG-CIE-12-001",
+      "status": "GENERATION_PENDING"
+    },
+    {
+      "id": "CIE-12-B13",
+      "type": "SUMMARY",
+      "title": "Resumo de prova",
+      "items": [
+        "Substância pura possui composição química definida; mistura reúne duas ou mais substâncias.",
+        "Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada.",
+        "Mistura heterogênea apresenta duas ou mais fases distinguíveis.",
+        "Componente é cada substância presente na mistura; fase é cada porção visualmente uniforme do sistema.",
+        "Número de componentes e número de fases não precisam ser iguais.",
+        "A classificação depende das condições e da escala de observação adotada em Ciências escolares."
+      ]
+    },
+    {
+      "id": "CIE-12-B14",
+      "type": "EXIT_TICKET",
+      "title": "Recuperação ativa",
+      "prompt": "Sem consultar a aula, explique substâncias puras, misturas, fases e componentes usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+      "answerGuide": {
+        "mustMention": [
+          "Substância pura possui composição química definida; mistura reúne duas ou mais substâncias.",
+          "Mistura heterogênea apresenta duas ou mais fases distinguíveis.",
+          "correção explícita de pelo menos um erro conceitual da aula"
+        ]
+      }
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-QUI-003",
+    "SRC-QUI-007"
+  ],
+  "mediaRefs": [
+    "SRC-QUI-007"
+  ],
+  "imageRequestRefs": [
+    "IMG-CIE-12-001"
+  ],
+  "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+}

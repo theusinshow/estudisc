@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hashContract": "editorial.sourceHash = hashCanonicalJson of original source block (recursively sorted keys); whole source-pack SHA256 remains raw bytes",
+  "rawSource": "editorial-sidecar.json sourcePacks unchanged; runtime editorial only id/type/sourceHash",
+  "mappings": {
+    "HOOK": "note", "LEARNING_GOALS": "note", "EXPLANATION": "note", "CALLOUT": "note", "WORKED_EXAMPLE": "worked-example", "MEDIA_RECOMMENDATION": "note", "SUMMARY": "summary", "EXIT_TICKET": "note", "IMAGE_REQUEST": "note pending; optional figure from media manifest", "DETERMINISTIC_COMPONENT_REQUEST": "note pending; optional figure from media manifest"
+  },
+  "textContract": "Preserve every source content/items/prompt/answer/reasoning/mustMention string; verbatim sentences already contained in another source paragraph stay visible there once. Sidecar preserves original arrangement; no Markdown rendering assumption",
+  "questionContract": "Exact canonical stem/choices/key/explanation in shared Question; generated activity label ID only, type question, questionVersion2 on repository import",
+  "interactionContract": "Source text active learning/exit-ticket are reflective notes, no invented evaluator/evidence;8 shared question activities perlesson use existing keyboard/touch/evaluator/mastery flow"
+}

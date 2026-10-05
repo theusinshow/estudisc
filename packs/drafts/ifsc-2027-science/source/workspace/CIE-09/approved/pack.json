@@ -1,0 +1,499 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-09",
+    "subject": "CIE",
+    "title": "Modelos atômicos e partículas subatômicas",
+    "unit": "Matéria e Energia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-09-CON-01",
+        "name": "Dalton",
+        "masteryTarget": "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem."
+      },
+      {
+        "id": "CIE-09-CON-02",
+        "name": "Thomson",
+        "masteryTarget": "Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente."
+      },
+      {
+        "id": "CIE-09-CON-03",
+        "name": "Rutherford",
+        "masteryTarget": "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna."
+      },
+      {
+        "id": "CIE-09-CON-04",
+        "name": "Bohr em nível fundamental",
+        "masteryTarget": "Rutherford propôs um núcleo pequeno e positivo, com a maior parte do volume atômico sendo espaço ao redor do núcleo."
+      },
+      {
+        "id": "CIE-09-CON-05",
+        "name": "Núcleo e eletrosfera",
+        "masteryTarget": "No modelo de Bohr, elétrons ocupam níveis de energia definidos, uma simplificação útil no nível escolar."
+      },
+      {
+        "id": "CIE-09-CON-06",
+        "name": "Carga e localização de prótons, nêutrons e elétrons",
+        "masteryTarget": "Prótons têm carga positiva, nêutrons são eletricamente neutros e elétrons têm carga negativa."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-09-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Um experimento indica que a carga positiva do átomo está concentrada em uma região muito pequena. A qual ideia isso se relaciona diretamente? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-09-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de modelos atômicos e partículas subatômicas.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-09-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem. Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo modelos atômicos e partículas subatômicas.",
+        "items": [
+          "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem.",
+          "Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente."
+        ]
+      },
+      {
+        "id": "CIE-09-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna. Rutherford propôs um núcleo pequeno e positivo, com a maior parte do volume atômico sendo espaço ao redor do núcleo. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna.",
+          "Rutherford propôs um núcleo pequeno e positivo, com a maior parte do volume atômico sendo espaço ao redor do núcleo."
+        ]
+      },
+      {
+        "id": "CIE-09-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "No modelo de Bohr, elétrons ocupam níveis de energia definidos, uma simplificação útil no nível escolar. Prótons têm carga positiva, nêutrons são eletricamente neutros e elétrons têm carga negativa. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "No modelo de Bohr, elétrons ocupam níveis de energia definidos, uma simplificação útil no nível escolar.",
+          "Prótons têm carga positiva, nêutrons são eletricamente neutros e elétrons têm carga negativa."
+        ]
+      },
+      {
+        "id": "CIE-09-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "Dalton",
+          "Thomson",
+          "Rutherford",
+          "Bohr em nível fundamental",
+          "núcleo e eletrosfera",
+          "carga e localização de prótons, nêutrons e elétrons"
+        ]
+      },
+      {
+        "id": "CIE-09-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Todos os modelos atômicos históricos são idênticos.",
+          "Elétrons ficam dentro do núcleo junto com prótons e nêutrons.",
+          "Nêutrons têm carga elétrica positiva igual à dos prótons.",
+          "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+        ]
+      },
+      {
+        "id": "CIE-09-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Organize quatro cartões: Dalton, Thomson, Rutherford e Bohr.",
+          "Para cada modelo, associe a evidência ou problema que ele ajudou a explicar.",
+          "Destaque o que mudou de um modelo para o seguinte.",
+          "Finalize explicando por que modelos científicos não são 'desenhos definitivos da realidade'."
+        ]
+      },
+      {
+        "id": "CIE-09-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Um experimento indica que a carga positiva do átomo está concentrada em uma região muito pequena. A qual ideia isso se relaciona diretamente?",
+        "answer": "À existência de um núcleo atômico pequeno e positivo, associada ao modelo de Rutherford.",
+        "reasoning": "1) Use esta relação: Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem. 2) Use esta relação: Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente. 3) Use esta relação: Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna. 4) Aplicando essas relações à situação, a conclusão correta é: À existência de um núcleo atômico pequeno e positivo, associada ao modelo de Rutherford."
+      },
+      {
+        "id": "CIE-09-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de modelos atômicos e partículas subatômicas.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-09-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Explore e teste a ideia",
+        "mediaRefs": [
+          "SRC-QUI-006",
+          "SRC-PHET-005"
+        ],
+        "optional": true
+      },
+      {
+        "id": "CIE-09-B12",
+        "type": "DETERMINISTIC_COMPONENT_REQUEST",
+        "title": "Componente visual/interativo",
+        "request": "Linha histórica esquemática Dalton → Thomson → Rutherford → Bohr; SVG com modelos explicitamente didáticos e não em escala.",
+        "status": "IMPLEMENTATION_REQUIRED"
+      },
+      {
+        "id": "CIE-09-B13",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem.",
+          "Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente.",
+          "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna.",
+          "Rutherford propôs um núcleo pequeno e positivo, com a maior parte do volume atômico sendo espaço ao redor do núcleo.",
+          "No modelo de Bohr, elétrons ocupam níveis de energia definidos, uma simplificação útil no nível escolar.",
+          "Prótons têm carga positiva, nêutrons são eletricamente neutros e elétrons têm carga negativa."
+        ]
+      },
+      {
+        "id": "CIE-09-B14",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique modelos atômicos e partículas subatômicas usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem.",
+            "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-QUI-003",
+      "SRC-QUI-006",
+      "SRC-PHET-005"
+    ],
+    "mediaRefs": [
+      "SRC-QUI-006",
+      "SRC-PHET-005"
+    ],
+    "imageRequestRefs": [],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-09-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de modelos atômicos e partículas subatômicas, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+        },
+        {
+          "key": "B",
+          "text": "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem."
+        },
+        {
+          "key": "C",
+          "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+        },
+        {
+          "key": "D",
+          "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+        },
+        {
+          "key": "E",
+          "text": "Todos os modelos atômicos históricos são idênticos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-09-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-09-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar modelos atômicos e partículas subatômicas sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente."
+        },
+        {
+          "key": "B",
+          "text": "Todos os modelos atômicos históricos são idênticos."
+        },
+        {
+          "key": "C",
+          "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+        },
+        {
+          "key": "D",
+          "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+        },
+        {
+          "key": "E",
+          "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-09-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-09-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em modelos atômicos e partículas subatômicas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Todos os modelos atômicos históricos são idênticos."
+        },
+        {
+          "key": "B",
+          "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+        },
+        {
+          "key": "C",
+          "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+        },
+        {
+          "key": "D",
+          "text": "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna."
+        },
+        {
+          "key": "E",
+          "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-09-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-09-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um experimento indica que a carga positiva do átomo está concentrada em uma região muito pequena. A qual ideia isso se relaciona diretamente?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ao átomo indivisível de Dalton como descrição final."
+        },
+        {
+          "key": "B",
+          "text": "À ausência completa de partículas subatômicas."
+        },
+        {
+          "key": "C",
+          "text": "À localização dos elétrons dentro do núcleo."
+        },
+        {
+          "key": "D",
+          "text": "À existência de um núcleo atômico pequeno e positivo, associada ao modelo de Rutherford."
+        },
+        {
+          "key": "E",
+          "text": "À ideia de que toda a massa está uniformemente espalhada sem núcleo."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "À existência de um núcleo atômico pequeno e positivo, associada ao modelo de Rutherford.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-09-CON-01",
+        "CIE-09-CON-02",
+        "CIE-09-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-09-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem.\nII. Todos os modelos atômicos históricos são idênticos.\nIII. Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna.\nIV. Elétrons ficam dentro do núcleo junto com prótons e nêutrons.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-09-CON-01",
+        "CIE-09-CON-02",
+        "CIE-09-CON-03",
+        "CIE-09-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-09-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre modelos atômicos e partículas subatômicas para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+        },
+        {
+          "key": "B",
+          "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+        },
+        {
+          "key": "C",
+          "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+        },
+        {
+          "key": "D",
+          "text": "Todos os modelos atômicos históricos são idênticos."
+        },
+        {
+          "key": "E",
+          "text": "No modelo de Bohr, elétrons ocupam níveis de energia definidos, uma simplificação útil no nível escolar."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: No modelo de Bohr, elétrons ocupam níveis de energia definidos, uma simplificação útil no nível escolar.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-09-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-09-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre modelos atômicos e partículas subatômicas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem."
+        },
+        {
+          "key": "B",
+          "text": "Todos os modelos atômicos históricos são idênticos."
+        },
+        {
+          "key": "C",
+          "text": "Rutherford propôs um núcleo pequeno e positivo, com a maior parte do volume atômico sendo espaço ao redor do núcleo."
+        },
+        {
+          "key": "D",
+          "text": "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna."
+        },
+        {
+          "key": "E",
+          "text": "Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a incorreta: Todos os modelos atômicos históricos são idênticos. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-09-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-09-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em modelos atômicos e partículas subatômicas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+        },
+        {
+          "key": "B",
+          "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+        },
+        {
+          "key": "C",
+          "text": "Todos os modelos atômicos históricos são idênticos."
+        },
+        {
+          "key": "D",
+          "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+        },
+        {
+          "key": "E",
+          "text": "Prótons têm carga positiva, nêutrons são eletricamente neutros e elétrons têm carga negativa."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Prótons têm carga positiva, nêutrons são eletricamente neutros e elétrons têm carga negativa.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-09-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

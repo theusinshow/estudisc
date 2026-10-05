@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-37-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de sistema solar, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias."
+      },
+      {
+        "key": "B",
+        "text": "Plutão continua classificado oficialmente como um dos oito planetas."
+      },
+      {
+        "key": "C",
+        "text": "A Terra está no centro da Via Láctea."
+      },
+      {
+        "key": "D",
+        "text": "Planetas brilham no céu porque realizam fusão nuclear como estrelas."
+      },
+      {
+        "key": "E",
+        "text": "Todos os planetas são formados principalmente pelos mesmos materiais e têm tamanho semelhante."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-37-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-37-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar sistema solar sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Terra está no centro da Via Láctea."
+      },
+      {
+        "key": "B",
+        "text": "Plutão continua classificado oficialmente como um dos oito planetas."
+      },
+      {
+        "key": "C",
+        "text": "Todos os planetas são formados principalmente pelos mesmos materiais e têm tamanho semelhante."
+      },
+      {
+        "key": "D",
+        "text": "Mercúrio, Vênus, Terra e Marte são planetas rochosos; Júpiter e Saturno são gigantes gasosos, enquanto Urano e Netuno são gigantes de gelo na classificação moderna."
+      },
+      {
+        "key": "E",
+        "text": "Planetas brilham no céu porque realizam fusão nuclear como estrelas."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Mercúrio, Vênus, Terra e Marte são planetas rochosos; Júpiter e Saturno são gigantes gasosos, enquanto Urano e Netuno são gigantes de gelo na classificação moderna.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-37-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-37-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em sistema solar?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todos os planetas são formados principalmente pelos mesmos materiais e têm tamanho semelhante."
+      },
+      {
+        "key": "B",
+        "text": "Plutão continua classificado oficialmente como um dos oito planetas."
+      },
+      {
+        "key": "C",
+        "text": "Planetas brilham no céu porque realizam fusão nuclear como estrelas."
+      },
+      {
+        "key": "D",
+        "text": "A Terra está no centro da Via Láctea."
+      },
+      {
+        "key": "E",
+        "text": "Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-37-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-37-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual sequência contém apenas planetas rochosos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Júpiter, Saturno, Urano e Netuno."
+      },
+      {
+        "key": "B",
+        "text": "Terra, Júpiter, Marte e Saturno."
+      },
+      {
+        "key": "C",
+        "text": "Mercúrio, Saturno, Netuno e Terra."
+      },
+      {
+        "key": "D",
+        "text": "Mercúrio, Vênus, Terra e Marte."
+      },
+      {
+        "key": "E",
+        "text": "Sol, Terra, Lua e Marte."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Mercúrio, Vênus, Terra e Marte.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-37-CON-01",
+      "CIE-37-CON-02",
+      "CIE-37-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-37-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias.\nII. Plutão continua classificado oficialmente como um dos oito planetas.\nIII. Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU.\nIV. Todos os planetas são formados principalmente pelos mesmos materiais e têm tamanho semelhante.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-37-CON-01",
+      "CIE-37-CON-02",
+      "CIE-37-CON-03",
+      "CIE-37-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-37-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre sistema solar para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Terra está no centro da Via Láctea."
+      },
+      {
+        "key": "B",
+        "text": "Planetas não emitem luz visível própria como estrelas; são vistos principalmente pela luz solar refletida."
+      },
+      {
+        "key": "C",
+        "text": "Todos os planetas são formados principalmente pelos mesmos materiais e têm tamanho semelhante."
+      },
+      {
+        "key": "D",
+        "text": "Plutão continua classificado oficialmente como um dos oito planetas."
+      },
+      {
+        "key": "E",
+        "text": "Planetas brilham no céu porque realizam fusão nuclear como estrelas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: Planetas não emitem luz visível própria como estrelas; são vistos principalmente pela luz solar refletida.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-37-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-37-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre sistema solar?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias."
+      },
+      {
+        "key": "B",
+        "text": "Plutão continua classificado oficialmente como um dos oito planetas."
+      },
+      {
+        "key": "C",
+        "text": "Mercúrio, Vênus, Terra e Marte são planetas rochosos; Júpiter e Saturno são gigantes gasosos, enquanto Urano e Netuno são gigantes de gelo na classificação moderna."
+      },
+      {
+        "key": "D",
+        "text": "Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU."
+      },
+      {
+        "key": "E",
+        "text": "Asteroides, cometas, meteoroides e outros pequenos corpos também fazem parte do Sistema Solar."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a incorreta: Plutão continua classificado oficialmente como um dos oito planetas. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-37-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-37-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em sistema solar?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Sistema Solar está na Via Láctea, e a Via Láctea é apenas uma entre muitas galáxias do Universo observável."
+      },
+      {
+        "key": "B",
+        "text": "Plutão continua classificado oficialmente como um dos oito planetas."
+      },
+      {
+        "key": "C",
+        "text": "Todos os planetas são formados principalmente pelos mesmos materiais e têm tamanho semelhante."
+      },
+      {
+        "key": "D",
+        "text": "A Terra está no centro da Via Láctea."
+      },
+      {
+        "key": "E",
+        "text": "Planetas brilham no céu porque realizam fusão nuclear como estrelas."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: O Sistema Solar está na Via Láctea, e a Via Láctea é apenas uma entre muitas galáxias do Universo observável.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-37-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

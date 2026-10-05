@@ -1,5 +1,32 @@
 # KNOW/OS - Autonomous Execution Plan
 
+## Verify and push forty Science drafts (2026-10-05)
+
+User explicitly authorized verification, commit and push to `https://github.com/theusinshow/vecta`. Scope: confirm the existing local forty-lesson import, commit a portable draft content snapshot and its Science-specific tooling/tests/mobile fixes, then push the reviewed commit. Exclude paused gamification, separate Mathematics deployment/counter changes, credentials, databases and unrelated librarian/Studio work. User follow-up explicitly authorizes importing and publishing all forty Science lessons on the existing production site, stating the review is already complete. Preserve that genuine user decision; no fabricated independent agent approval. No deployment command or production schema migration is authorized.
+
+Acceptance: exact CIE-01..40 / 320 draft Questions, current source/pack hashes matching existing QA, read-only persistent database audit, immutable original source copy, portable validation without ignored local prerequisites, relevant/final checks with baseline E2E failures disclosed, narrow staged diff and successful origin/main push. Preserve existing full initial QA; recheck only changed packaging/dependencies. Confirmed current persistent import: 40/40 draft lessons, 320 Questions, 240 mapped Concepts, 538 blocks, thirteen figures, seven receipts, zero orphans/duplicate Question versions and unchanged student state/baseline. All620original files and thirteen figures match source/index/isolated candidate byte-for-byte. The sealed1046767-byte Pack retains rawSHA256 a44180849db02d397efc4da100267889ae5132c39218ea2184e2966ceb3b91e2. Portable candidate frozen install/lint/typecheck/build PASS; full unit suite180passed/3skipped; focusedScience+Week1 nine tests PASS. Full E2E17passed/19failed while checkout exports restarted its dev server; this is an unaccepted run, not proof of zero regressions. Focused browser recheck pending. NEXT ACTION: finish browser evidence, commit/push only staged Science scope, then authenticated existing UI import/publication and exact40/320 production acceptance.
+
+## Science V2 integration (2026-10-05)
+
+Authorized scope: integrate supplied Science V2 without editorial changes, research or publication. Source package exists in Downloads. Preserve initial dirty tree (snapshot in .vecta-agent-context/INITIAL-GIT-STATUS.txt).
+
+Acceptance: 40 draft lessons/320 questions; mapped Concepts/blocks; source/answer fidelity; idempotent core importer; pilot 8/64 passes before five batches; media queues preserved with honest pending status; Math regressions checked; full lint/typecheck/test/build/serial E2E at final gate. No production/external writes.
+
+Increments: bootstrap/contracts -> deterministic preflight -> pilot import/QA -> five idempotent batches -> deterministic media + Antigravity handoff -> full QA -> IMPORT_READY if all criteria pass. Current state and ownership in .vecta-agent-context.
+
+COMPLETED: bootstrap/contracts/source baseline; pilot8/64; five batches15/120,22/176,28/224,35/280,40/320; media snapshot7; direct persistent QA. Current40draftlessons/320draftQuestions/240Concepts/538blocks/13SVGs. Original620sourcefiles unchanged; 9canonical Concepts and complete baselineIFSC/Math preserved across7actualimports. Media revision13lessonsv3/27v2, Questions/sourcev2; oldv2 lessons/blocks preserved. Packhash722f1deeb98c55cb121f988931596830a68c5bd4ab15fcf7754f49ebe574bc27,1046767diskbytes. Idempotence/zeroorphanjoins/zero duplicate Question versions/studentstate0 confirmed.
+
+FINAL CHECKS: `pnpm lint`, `pnpm typecheck`, `pnpm test`228passed/3skipped, `pnpm build` PASS; `pnpm exec tsc --noEmit -p tools/science-import/tsconfig.json` and scoped QA-script lint PASS. With SCIENCE_QA_PACK=.local/science-integration/media/science.pack.json and DATABASE_URL=memory://local, `pnpm test:e2e`22passed/14failed: all14failures already in .local/progress-version-e2e.log baseline15,0new names; fullapplication release gate remains FAIL. Final `pnpm exec playwright test tests/e2e/science-qa-mobile.spec.ts --project=mobile-chrome` PASS1case/all8pilotlessons. Direct `pnpm exec tsx tools/science-import/qa/persistent-receipt-audit.ts` PASS7/7 and `pnpm exec tsx tools/science-import/qa/persistent-db-audit.ts --worker-closed` PASS. Exact commands and reports: tools/science-import/README.md, tools/science-import/qa/FINAL-QA.md, .local/science-integration/FINAL-ACCEPTANCE.md, .vecta-agent-context/VALIDATION-LOG.md.
+
+Resolved actual exceptions: strict renderer payloads;1MiB cap using compact JSON/shared pointers/full sidecar; canonical blockhash order; serialized undefined metadata hash; full baseline selection for all9canonical targets; mobile URL intrinsic grid overflow; fixture figureparagraph assertion; media immutablelesson conflict via additive runtimev3 revisions. Same-version guards never weakened; failedmedia transaction left no import7 record before correctedcandidate.
+
+RISKS: 40stale upstream manifest hashes;11unimplemented deterministic requests/13Antigravity images pending;13SVGs are static drafts needing human factual/visual review and requested interactions remain pending; upstream Concept names/mastery targets, officialcrosswalk/prerequisites/pacing require human review. Pack headroom1809bytes; enrichment needs compatible separate/versioned flow, never change a sealed package. Existing dirty changes preserved, no production/external write, no publication.
+
+STATUS: IMPORT_READY_LOCAL_DRAFT.
+NEXT ACTION: review the draft and recorded source/media findings; follow exact Antigravity handoff and pending deterministic requirements. Address existing application E2E failures as a separate release gate. Publishing/deployment/production application requires explicit authorization; do not automatically proceed.
+
+# KNOW/OS - Autonomous Execution Plan
+
 ## MAT-PREREQ editorial corrections (2026-10-02)
 
 User authorized applying the review corrections, committing and pushing to `https://github.com/theusinshow/vecta`. Scope: MAT-PREREQ only, its generated packs/review export and documentation. Content stays draft; publication is a separate human decision.

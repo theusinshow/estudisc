@@ -1,0 +1,494 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-11",
+    "subject": "CIE",
+    "title": "Tabela Periódica, elementos, moléculas e substâncias",
+    "unit": "Matéria e Energia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-11-CON-01",
+        "name": "Organização geral da Tabela Periódica",
+        "masteryTarget": "Elemento químico é definido pelo número de prótons de seus átomos."
+      },
+      {
+        "id": "CIE-11-CON-02",
+        "name": "Símbolos químicos",
+        "masteryTarget": "A Tabela Periódica moderna organiza os elementos em ordem crescente de número atômico."
+      },
+      {
+        "id": "CIE-11-CON-03",
+        "name": "Elemento x átomo x molécula x substância",
+        "masteryTarget": "Linhas são períodos e colunas são grupos ou famílias; elementos de um mesmo grupo frequentemente compartilham propriedades químicas."
+      },
+      {
+        "id": "CIE-11-CON-04",
+        "name": "Substância simples e composta",
+        "masteryTarget": "Símbolos químicos representam elementos, como O para oxigênio e Fe para ferro."
+      },
+      {
+        "id": "CIE-11-CON-05",
+        "name": "Molécula é um conjunto definido de átomos ligados",
+        "masteryTarget": "Molécula é um conjunto definido de átomos ligados; nem toda substância é molecular, mas essa ideia é útil para muitas substâncias do nível fundamental."
+      },
+      {
+        "id": "CIE-11-CON-06",
+        "name": "Substância simples envolve um único elemento químico",
+        "masteryTarget": "Substância simples envolve um único elemento químico; substância composta envolve mais de um elemento químico."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-11-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "O gás oxigênio é representado por O₂. Como ele deve ser classificado? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-11-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de tabela periódica, elementos, moléculas e substâncias.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-11-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Elemento químico é definido pelo número de prótons de seus átomos. A Tabela Periódica moderna organiza os elementos em ordem crescente de número atômico. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo tabela periódica, elementos, moléculas e substâncias.",
+        "items": [
+          "Elemento químico é definido pelo número de prótons de seus átomos.",
+          "A Tabela Periódica moderna organiza os elementos em ordem crescente de número atômico."
+        ]
+      },
+      {
+        "id": "CIE-11-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Linhas são períodos e colunas são grupos ou famílias; elementos de um mesmo grupo frequentemente compartilham propriedades químicas. Símbolos químicos representam elementos, como O para oxigênio e Fe para ferro. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Linhas são períodos e colunas são grupos ou famílias; elementos de um mesmo grupo frequentemente compartilham propriedades químicas.",
+          "Símbolos químicos representam elementos, como O para oxigênio e Fe para ferro."
+        ]
+      },
+      {
+        "id": "CIE-11-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Molécula é um conjunto definido de átomos ligados; nem toda substância é molecular, mas essa ideia é útil para muitas substâncias do nível fundamental. Substância simples envolve um único elemento químico; substância composta envolve mais de um elemento químico. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Molécula é um conjunto definido de átomos ligados; nem toda substância é molecular, mas essa ideia é útil para muitas substâncias do nível fundamental.",
+          "Substância simples envolve um único elemento químico; substância composta envolve mais de um elemento químico."
+        ]
+      },
+      {
+        "id": "CIE-11-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "organização geral da Tabela Periódica",
+          "símbolos químicos",
+          "elemento x átomo x molécula x substância",
+          "substância simples e composta"
+        ]
+      },
+      {
+        "id": "CIE-11-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "A Tabela Periódica é organizada alfabeticamente pelo nome dos elementos.",
+          "Dois átomos pertencem ao mesmo elemento apenas se tiverem o mesmo número de nêutrons.",
+          "Toda molécula contém obrigatoriamente elementos diferentes.",
+          "Substância simples significa mistura de várias substâncias."
+        ]
+      },
+      {
+        "id": "CIE-11-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Escolha seis elementos na Tabela Periódica e registre símbolo, Z, período e grupo.",
+          "Separe os exemplos em metais, ametais ou outras categorias apenas quando essa informação estiver disponível na tabela usada.",
+          "Classifique O₂, H₂O e Fe como exemplo de substância simples/composta ou elemento, justificando cada caso.",
+          "Explique por que elemento, átomo, molécula e substância não são sinônimos."
+        ]
+      },
+      {
+        "id": "CIE-11-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "O gás oxigênio é representado por O₂. Como ele deve ser classificado?",
+        "answer": "É uma substância simples formada por moléculas com átomos de um único elemento químico.",
+        "reasoning": "1) Use esta relação: Elemento químico é definido pelo número de prótons de seus átomos. 2) Use esta relação: A Tabela Periódica moderna organiza os elementos em ordem crescente de número atômico. 3) Use esta relação: Linhas são períodos e colunas são grupos ou famílias; elementos de um mesmo grupo frequentemente compartilham propriedades químicas. 4) Aplicando essas relações à situação, a conclusão correta é: É uma substância simples formada por moléculas com átomos de um único elemento químico."
+      },
+      {
+        "id": "CIE-11-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de tabela periódica, elementos, moléculas e substâncias.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-11-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Explore e teste a ideia",
+        "mediaRefs": [
+          "SRC-QUI-006"
+        ],
+        "optional": true
+      },
+      {
+        "id": "CIE-11-B12",
+        "type": "DETERMINISTIC_COMPONENT_REQUEST",
+        "title": "Componente visual/interativo",
+        "request": "Tabela Periódica baseada em dados confiáveis; HTML/SVG, sem geração por imagem.",
+        "status": "IMPLEMENTATION_REQUIRED"
+      },
+      {
+        "id": "CIE-11-B13",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Elemento químico é definido pelo número de prótons de seus átomos.",
+          "A Tabela Periódica moderna organiza os elementos em ordem crescente de número atômico.",
+          "Linhas são períodos e colunas são grupos ou famílias; elementos de um mesmo grupo frequentemente compartilham propriedades químicas.",
+          "Símbolos químicos representam elementos, como O para oxigênio e Fe para ferro.",
+          "Molécula é um conjunto definido de átomos ligados; nem toda substância é molecular, mas essa ideia é útil para muitas substâncias do nível fundamental.",
+          "Substância simples envolve um único elemento químico; substância composta envolve mais de um elemento químico."
+        ]
+      },
+      {
+        "id": "CIE-11-B14",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique tabela periódica, elementos, moléculas e substâncias usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Elemento químico é definido pelo número de prótons de seus átomos.",
+            "Linhas são períodos e colunas são grupos ou famílias; elementos de um mesmo grupo frequentemente compartilham propriedades químicas.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-QUI-003",
+      "SRC-QUI-006"
+    ],
+    "mediaRefs": [
+      "SRC-QUI-006"
+    ],
+    "imageRequestRefs": [],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-11-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de tabela periódica, elementos, moléculas e substâncias, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Tabela Periódica é organizada alfabeticamente pelo nome dos elementos."
+        },
+        {
+          "key": "B",
+          "text": "Toda molécula contém obrigatoriamente elementos diferentes."
+        },
+        {
+          "key": "C",
+          "text": "Substância simples significa mistura de várias substâncias."
+        },
+        {
+          "key": "D",
+          "text": "Dois átomos pertencem ao mesmo elemento apenas se tiverem o mesmo número de nêutrons."
+        },
+        {
+          "key": "E",
+          "text": "Elemento químico é definido pelo número de prótons de seus átomos."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Elemento químico é definido pelo número de prótons de seus átomos.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-11-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-11-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar tabela periódica, elementos, moléculas e substâncias sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Tabela Periódica moderna organiza os elementos em ordem crescente de número atômico."
+        },
+        {
+          "key": "B",
+          "text": "Substância simples significa mistura de várias substâncias."
+        },
+        {
+          "key": "C",
+          "text": "Dois átomos pertencem ao mesmo elemento apenas se tiverem o mesmo número de nêutrons."
+        },
+        {
+          "key": "D",
+          "text": "Toda molécula contém obrigatoriamente elementos diferentes."
+        },
+        {
+          "key": "E",
+          "text": "A Tabela Periódica é organizada alfabeticamente pelo nome dos elementos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: A Tabela Periódica moderna organiza os elementos em ordem crescente de número atômico.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-11-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-11-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em tabela periódica, elementos, moléculas e substâncias?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Tabela Periódica é organizada alfabeticamente pelo nome dos elementos."
+        },
+        {
+          "key": "B",
+          "text": "Substância simples significa mistura de várias substâncias."
+        },
+        {
+          "key": "C",
+          "text": "Dois átomos pertencem ao mesmo elemento apenas se tiverem o mesmo número de nêutrons."
+        },
+        {
+          "key": "D",
+          "text": "Linhas são períodos e colunas são grupos ou famílias; elementos de um mesmo grupo frequentemente compartilham propriedades químicas."
+        },
+        {
+          "key": "E",
+          "text": "Toda molécula contém obrigatoriamente elementos diferentes."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Linhas são períodos e colunas são grupos ou famílias; elementos de um mesmo grupo frequentemente compartilham propriedades químicas.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-11-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-11-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "O gás oxigênio é representado por O₂. Como ele deve ser classificado?",
+      "options": [
+        {
+          "key": "A",
+          "text": "É uma substância composta porque possui dois átomos."
+        },
+        {
+          "key": "B",
+          "text": "É uma mistura homogênea de dois elementos."
+        },
+        {
+          "key": "C",
+          "text": "É um único átomo de oxigênio."
+        },
+        {
+          "key": "D",
+          "text": "É uma substância simples formada por moléculas com átomos de um único elemento químico."
+        },
+        {
+          "key": "E",
+          "text": "É um íon negativo por ter índice 2."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "É uma substância simples formada por moléculas com átomos de um único elemento químico.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-11-CON-01",
+        "CIE-11-CON-02",
+        "CIE-11-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-11-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Elemento químico é definido pelo número de prótons de seus átomos.\nII. A Tabela Periódica é organizada alfabeticamente pelo nome dos elementos.\nIII. Linhas são períodos e colunas são grupos ou famílias; elementos de um mesmo grupo frequentemente compartilham propriedades químicas.\nIV. Dois átomos pertencem ao mesmo elemento apenas se tiverem o mesmo número de nêutrons.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-11-CON-01",
+        "CIE-11-CON-02",
+        "CIE-11-CON-03",
+        "CIE-11-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-11-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre tabela periódica, elementos, moléculas e substâncias para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Molécula é um conjunto definido de átomos ligados; nem toda substância é molecular, mas essa ideia é útil para muitas substâncias do nível fundamental."
+        },
+        {
+          "key": "B",
+          "text": "Toda molécula contém obrigatoriamente elementos diferentes."
+        },
+        {
+          "key": "C",
+          "text": "Dois átomos pertencem ao mesmo elemento apenas se tiverem o mesmo número de nêutrons."
+        },
+        {
+          "key": "D",
+          "text": "A Tabela Periódica é organizada alfabeticamente pelo nome dos elementos."
+        },
+        {
+          "key": "E",
+          "text": "Substância simples significa mistura de várias substâncias."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Molécula é um conjunto definido de átomos ligados; nem toda substância é molecular, mas essa ideia é útil para muitas substâncias do nível fundamental.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-11-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-11-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre tabela periódica, elementos, moléculas e substâncias?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Linhas são períodos e colunas são grupos ou famílias; elementos de um mesmo grupo frequentemente compartilham propriedades químicas."
+        },
+        {
+          "key": "B",
+          "text": "A Tabela Periódica é organizada alfabeticamente pelo nome dos elementos."
+        },
+        {
+          "key": "C",
+          "text": "Símbolos químicos representam elementos, como O para oxigênio e Fe para ferro."
+        },
+        {
+          "key": "D",
+          "text": "Elemento químico é definido pelo número de prótons de seus átomos."
+        },
+        {
+          "key": "E",
+          "text": "A Tabela Periódica moderna organiza os elementos em ordem crescente de número atômico."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a incorreta: A Tabela Periódica é organizada alfabeticamente pelo nome dos elementos. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-11-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-11-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em tabela periódica, elementos, moléculas e substâncias?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Toda molécula contém obrigatoriamente elementos diferentes."
+        },
+        {
+          "key": "B",
+          "text": "Substância simples envolve um único elemento químico; substância composta envolve mais de um elemento químico."
+        },
+        {
+          "key": "C",
+          "text": "A Tabela Periódica é organizada alfabeticamente pelo nome dos elementos."
+        },
+        {
+          "key": "D",
+          "text": "Substância simples significa mistura de várias substâncias."
+        },
+        {
+          "key": "E",
+          "text": "Dois átomos pertencem ao mesmo elemento apenas se tiverem o mesmo número de nêutrons."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Substância simples envolve um único elemento químico; substância composta envolve mais de um elemento químico.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-11-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

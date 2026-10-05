@@ -1,0 +1,191 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "CIE-01",
+  "subject": "CIE",
+  "title": "Movimento",
+  "unit": "Matéria e Energia",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+  "concepts": [
+    {
+      "id": "CIE-01-CON-01",
+      "name": "Referencial e posição",
+      "masteryTarget": "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo."
+    },
+    {
+      "id": "CIE-01-CON-02",
+      "name": "Trajetória e deslocamento",
+      "masteryTarget": "Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final."
+    },
+    {
+      "id": "CIE-01-CON-03",
+      "name": "Rapidez/velocidade média em nível fundamental",
+      "masteryTarget": "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido."
+    },
+    {
+      "id": "CIE-01-CON-04",
+      "name": "Interpretação de situações de movimento",
+      "masteryTarget": "Um mesmo objeto pode estar em repouso para um observador e em movimento para outro."
+    },
+    {
+      "id": "CIE-01-CON-05",
+      "name": "Movimentos da Terra como aplicação contextual quando pertinente",
+      "masteryTarget": "Forças podem alterar o estado de movimento; o atrito é uma interação importante em situações cotidianas."
+    },
+    {
+      "id": "CIE-01-CON-06",
+      "name": "Os movimentos da Terra mostram que estar 'parado' na superfí…",
+      "masteryTarget": "Os movimentos da Terra mostram que estar 'parado' na superfície não significa estar parado no espaço."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-01-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Uma pessoa caminha 100 m para leste e depois retorna 100 m ao ponto inicial. Qual interpretação é correta? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+    },
+    {
+      "id": "CIE-01-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar com as próprias palavras os conceitos centrais de movimento.",
+        "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+        "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+      ]
+    },
+    {
+      "id": "CIE-01-B03",
+      "type": "EXPLANATION",
+      "title": "Base conceitual",
+      "content": "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo. Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo movimento.",
+      "items": [
+        "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo.",
+        "Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final."
+      ]
+    },
+    {
+      "id": "CIE-01-B04",
+      "type": "EXPLANATION",
+      "title": "Como as ideias se conectam",
+      "content": "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido. Um mesmo objeto pode estar em repouso para um observador e em movimento para outro. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "items": [
+        "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido.",
+        "Um mesmo objeto pode estar em repouso para um observador e em movimento para outro."
+      ]
+    },
+    {
+      "id": "CIE-01-B05",
+      "type": "EXPLANATION",
+      "title": "Aplicações, limites e leitura científica",
+      "content": "Forças podem alterar o estado de movimento; o atrito é uma interação importante em situações cotidianas. Os movimentos da Terra mostram que estar 'parado' na superfície não significa estar parado no espaço. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "items": [
+        "Forças podem alterar o estado de movimento; o atrito é uma interação importante em situações cotidianas.",
+        "Os movimentos da Terra mostram que estar 'parado' na superfície não significa estar parado no espaço."
+      ]
+    },
+    {
+      "id": "CIE-01-B06",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Termos que precisam estar claros",
+      "items": [
+        "referencial e posição",
+        "trajetória e deslocamento",
+        "rapidez/velocidade média em nível fundamental",
+        "interpretação de situações de movimento",
+        "movimentos da Terra como aplicação contextual quando pertinente"
+      ]
+    },
+    {
+      "id": "CIE-01-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTIONS",
+      "title": "Erros que a prova pode explorar",
+      "items": [
+        "Movimento é uma propriedade absoluta e independe do observador.",
+        "Trajetória e deslocamento são sempre iguais.",
+        "Se a velocidade é constante, o corpo obrigatoriamente está parado.",
+        "Um objeto só pode se mover se houver uma força atuando continuamente na mesma direção."
+      ]
+    },
+    {
+      "id": "CIE-01-B08",
+      "type": "CALLOUT",
+      "variant": "ACTIVE_LEARNING",
+      "title": "Atividade de compreensão",
+      "items": [
+        "Marque duas posições em uma linha e escolha um objeto pequeno ou use um vídeo curto de movimento.",
+        "Registre posição e tempo em pelo menos três instantes e descreva o referencial usado.",
+        "Compare distância percorrida com deslocamento entre início e fim.",
+        "Explique como a resposta mudaria se o referencial fosse outro."
+      ]
+    },
+    {
+      "id": "CIE-01-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo resolvido passo a passo",
+      "prompt": "Uma pessoa caminha 100 m para leste e depois retorna 100 m ao ponto inicial. Qual interpretação é correta?",
+      "answer": "Ela percorreu 200 m, mas seu deslocamento final é zero.",
+      "reasoning": "1) Use esta relação: Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo. 2) Use esta relação: Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final. 3) Use esta relação: Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido. 4) Aplicando essas relações à situação, a conclusão correta é: Ela percorreu 200 m, mas seu deslocamento final é zero."
+    },
+    {
+      "id": "CIE-01-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Como isso costuma aparecer em prova",
+      "items": [
+        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de movimento.",
+        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+      ]
+    },
+    {
+      "id": "CIE-01-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Explore e teste a ideia",
+      "mediaRefs": [
+        "SRC-PHET-001"
+      ],
+      "optional": true
+    },
+    {
+      "id": "CIE-01-B12",
+      "type": "SUMMARY",
+      "title": "Resumo de prova",
+      "items": [
+        "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo.",
+        "Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final.",
+        "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido.",
+        "Um mesmo objeto pode estar em repouso para um observador e em movimento para outro.",
+        "Forças podem alterar o estado de movimento; o atrito é uma interação importante em situações cotidianas.",
+        "Os movimentos da Terra mostram que estar 'parado' na superfície não significa estar parado no espaço."
+      ]
+    },
+    {
+      "id": "CIE-01-B13",
+      "type": "EXIT_TICKET",
+      "title": "Recuperação ativa",
+      "prompt": "Sem consultar a aula, explique movimento usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+      "answerGuide": {
+        "mustMention": [
+          "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo.",
+          "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido.",
+          "correção explícita de pelo menos um erro conceitual da aula"
+        ]
+      }
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-FIS-001",
+    "SRC-PHET-001"
+  ],
+  "mediaRefs": [
+    "SRC-PHET-001"
+  ],
+  "imageRequestRefs": [],
+  "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+}

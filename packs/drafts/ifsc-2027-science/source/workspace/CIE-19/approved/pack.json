@@ -1,0 +1,486 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-19",
+    "subject": "CIE",
+    "title": "Ecossistemas e relações ecológicas básicas",
+    "unit": "Vida e Evolução — Ecologia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-19-CON-01",
+        "name": "Fatores bióticos e abióticos",
+        "masteryTarget": "Ecossistema inclui fatores bióticos, como seres vivos, e fatores abióticos, como água, luz, solo e temperatura."
+      },
+      {
+        "id": "CIE-19-CON-02",
+        "name": "Habitat e nicho em nível introdutório",
+        "masteryTarget": "Produtores capturam energia e sintetizam matéria orgânica; consumidores obtêm energia alimentando-se de outros organismos."
+      },
+      {
+        "id": "CIE-19-CON-03",
+        "name": "Cadeias e teias alimentares como suporte à compreensão de ecossistemas",
+        "masteryTarget": "Decompositores transformam matéria orgânica e devolvem nutrientes ao ambiente."
+      },
+      {
+        "id": "CIE-19-CON-04",
+        "name": "Fluxo de energia",
+        "masteryTarget": "Energia flui pelas cadeias alimentares e parte se dissipa a cada transformação, enquanto a matéria pode circular nos ciclos biogeoquímicos."
+      },
+      {
+        "id": "CIE-19-CON-05",
+        "name": "Diversidade de ecossistemas",
+        "masteryTarget": "Habitat é o local onde um organismo vive; nicho ecológico inclui seu modo de vida e interações."
+      },
+      {
+        "id": "CIE-19-CON-06",
+        "name": "Teias alimentares representam múltiplas relações tróficas e…",
+        "masteryTarget": "Teias alimentares representam múltiplas relações tróficas e são mais realistas que uma cadeia isolada."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-19-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Se fungos e bactérias decompositoras fossem removidos de um ecossistema, qual consequência seria esperada? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-19-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de ecossistemas e relações ecológicas básicas.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-19-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Ecossistema inclui fatores bióticos, como seres vivos, e fatores abióticos, como água, luz, solo e temperatura. Produtores capturam energia e sintetizam matéria orgânica; consumidores obtêm energia alimentando-se de outros organismos. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo ecossistemas e relações ecológicas básicas.",
+        "items": [
+          "Ecossistema inclui fatores bióticos, como seres vivos, e fatores abióticos, como água, luz, solo e temperatura.",
+          "Produtores capturam energia e sintetizam matéria orgânica; consumidores obtêm energia alimentando-se de outros organismos."
+        ]
+      },
+      {
+        "id": "CIE-19-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Decompositores transformam matéria orgânica e devolvem nutrientes ao ambiente. Energia flui pelas cadeias alimentares e parte se dissipa a cada transformação, enquanto a matéria pode circular nos ciclos biogeoquímicos. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Decompositores transformam matéria orgânica e devolvem nutrientes ao ambiente.",
+          "Energia flui pelas cadeias alimentares e parte se dissipa a cada transformação, enquanto a matéria pode circular nos ciclos biogeoquímicos."
+        ]
+      },
+      {
+        "id": "CIE-19-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Habitat é o local onde um organismo vive; nicho ecológico inclui seu modo de vida e interações. Teias alimentares representam múltiplas relações tróficas e são mais realistas que uma cadeia isolada. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Habitat é o local onde um organismo vive; nicho ecológico inclui seu modo de vida e interações.",
+          "Teias alimentares representam múltiplas relações tróficas e são mais realistas que uma cadeia isolada."
+        ]
+      },
+      {
+        "id": "CIE-19-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "fatores bióticos e abióticos",
+          "habitat e nicho em nível introdutório",
+          "cadeias e teias alimentares como suporte à compreensão de ecossistemas",
+          "fluxo de energia",
+          "diversidade de ecossistemas"
+        ]
+      },
+      {
+        "id": "CIE-19-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Ecossistema é formado apenas pelos animais de uma região.",
+          "Energia é reciclada infinitamente no ecossistema sem perdas.",
+          "Decompositores não têm papel nos ciclos de nutrientes.",
+          "Habitat e nicho ecológico são exatamente a mesma ideia."
+        ]
+      },
+      {
+        "id": "CIE-19-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Monte uma teia alimentar com produtores, consumidores e decompositores de um ecossistema coerente.",
+          "Inclua fatores abióticos como água, luz e temperatura.",
+          "Retire um componente da teia e preveja possíveis efeitos sem afirmar que todos os efeitos são imediatos ou lineares.",
+          "Explique a diferença entre fluxo de energia e ciclagem de matéria."
+        ]
+      },
+      {
+        "id": "CIE-19-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Se fungos e bactérias decompositoras fossem removidos de um ecossistema, qual consequência seria esperada?",
+        "answer": "Acúmulo de matéria orgânica e prejuízo à reciclagem de nutrientes.",
+        "reasoning": "1) Use esta relação: Ecossistema inclui fatores bióticos, como seres vivos, e fatores abióticos, como água, luz, solo e temperatura. 2) Use esta relação: Produtores capturam energia e sintetizam matéria orgânica; consumidores obtêm energia alimentando-se de outros organismos. 3) Use esta relação: Decompositores transformam matéria orgânica e devolvem nutrientes ao ambiente. 4) Aplicando essas relações à situação, a conclusão correta é: Acúmulo de matéria orgânica e prejuízo à reciclagem de nutrientes."
+      },
+      {
+        "id": "CIE-19-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de ecossistemas e relações ecológicas básicas.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-19-B11",
+        "type": "IMAGE_REQUEST",
+        "title": "Ilustração de apoio",
+        "requestRef": "IMG-CIE-19-001",
+        "status": "GENERATION_PENDING"
+      },
+      {
+        "id": "CIE-19-B12",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Ecossistema inclui fatores bióticos, como seres vivos, e fatores abióticos, como água, luz, solo e temperatura.",
+          "Produtores capturam energia e sintetizam matéria orgânica; consumidores obtêm energia alimentando-se de outros organismos.",
+          "Decompositores transformam matéria orgânica e devolvem nutrientes ao ambiente.",
+          "Energia flui pelas cadeias alimentares e parte se dissipa a cada transformação, enquanto a matéria pode circular nos ciclos biogeoquímicos.",
+          "Habitat é o local onde um organismo vive; nicho ecológico inclui seu modo de vida e interações.",
+          "Teias alimentares representam múltiplas relações tróficas e são mais realistas que uma cadeia isolada."
+        ]
+      },
+      {
+        "id": "CIE-19-B13",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique ecossistemas e relações ecológicas básicas usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Ecossistema inclui fatores bióticos, como seres vivos, e fatores abióticos, como água, luz, solo e temperatura.",
+            "Decompositores transformam matéria orgânica e devolvem nutrientes ao ambiente.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-ECO-001",
+      "SRC-ECO-002"
+    ],
+    "mediaRefs": [],
+    "imageRequestRefs": [
+      "IMG-CIE-19-001"
+    ],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-19-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de ecossistemas e relações ecológicas básicas, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Habitat e nicho ecológico são exatamente a mesma ideia."
+        },
+        {
+          "key": "B",
+          "text": "Energia é reciclada infinitamente no ecossistema sem perdas."
+        },
+        {
+          "key": "C",
+          "text": "Decompositores não têm papel nos ciclos de nutrientes."
+        },
+        {
+          "key": "D",
+          "text": "Ecossistema inclui fatores bióticos, como seres vivos, e fatores abióticos, como água, luz, solo e temperatura."
+        },
+        {
+          "key": "E",
+          "text": "Ecossistema é formado apenas pelos animais de uma região."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Ecossistema inclui fatores bióticos, como seres vivos, e fatores abióticos, como água, luz, solo e temperatura.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-19-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-19-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar ecossistemas e relações ecológicas básicas sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Energia é reciclada infinitamente no ecossistema sem perdas."
+        },
+        {
+          "key": "B",
+          "text": "Decompositores não têm papel nos ciclos de nutrientes."
+        },
+        {
+          "key": "C",
+          "text": "Ecossistema é formado apenas pelos animais de uma região."
+        },
+        {
+          "key": "D",
+          "text": "Produtores capturam energia e sintetizam matéria orgânica; consumidores obtêm energia alimentando-se de outros organismos."
+        },
+        {
+          "key": "E",
+          "text": "Habitat e nicho ecológico são exatamente a mesma ideia."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Produtores capturam energia e sintetizam matéria orgânica; consumidores obtêm energia alimentando-se de outros organismos.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-19-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-19-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em ecossistemas e relações ecológicas básicas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Decompositores não têm papel nos ciclos de nutrientes."
+        },
+        {
+          "key": "B",
+          "text": "Ecossistema é formado apenas pelos animais de uma região."
+        },
+        {
+          "key": "C",
+          "text": "Decompositores transformam matéria orgânica e devolvem nutrientes ao ambiente."
+        },
+        {
+          "key": "D",
+          "text": "Energia é reciclada infinitamente no ecossistema sem perdas."
+        },
+        {
+          "key": "E",
+          "text": "Habitat e nicho ecológico são exatamente a mesma ideia."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a correta: Decompositores transformam matéria orgânica e devolvem nutrientes ao ambiente.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-19-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-19-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Se fungos e bactérias decompositoras fossem removidos de um ecossistema, qual consequência seria esperada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Aumento ilimitado da energia disponível."
+        },
+        {
+          "key": "B",
+          "text": "Fim da necessidade de produtores."
+        },
+        {
+          "key": "C",
+          "text": "Transformação de consumidores em produtores."
+        },
+        {
+          "key": "D",
+          "text": "Acúmulo de matéria orgânica e prejuízo à reciclagem de nutrientes."
+        },
+        {
+          "key": "E",
+          "text": "Nenhuma mudança, pois decompositores são irrelevantes."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Acúmulo de matéria orgânica e prejuízo à reciclagem de nutrientes.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-19-CON-01",
+        "CIE-19-CON-02",
+        "CIE-19-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-19-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Ecossistema inclui fatores bióticos, como seres vivos, e fatores abióticos, como água, luz, solo e temperatura.\nII. Ecossistema é formado apenas pelos animais de uma região.\nIII. Decompositores transformam matéria orgânica e devolvem nutrientes ao ambiente.\nIV. Energia é reciclada infinitamente no ecossistema sem perdas.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-19-CON-01",
+        "CIE-19-CON-02",
+        "CIE-19-CON-03",
+        "CIE-19-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-19-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre ecossistemas e relações ecológicas básicas para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Energia é reciclada infinitamente no ecossistema sem perdas."
+        },
+        {
+          "key": "B",
+          "text": "Habitat é o local onde um organismo vive; nicho ecológico inclui seu modo de vida e interações."
+        },
+        {
+          "key": "C",
+          "text": "Habitat e nicho ecológico são exatamente a mesma ideia."
+        },
+        {
+          "key": "D",
+          "text": "Decompositores não têm papel nos ciclos de nutrientes."
+        },
+        {
+          "key": "E",
+          "text": "Ecossistema é formado apenas pelos animais de uma região."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Habitat é o local onde um organismo vive; nicho ecológico inclui seu modo de vida e interações.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-19-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-19-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre ecossistemas e relações ecológicas básicas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ecossistema inclui fatores bióticos, como seres vivos, e fatores abióticos, como água, luz, solo e temperatura."
+        },
+        {
+          "key": "B",
+          "text": "Decompositores transformam matéria orgânica e devolvem nutrientes ao ambiente."
+        },
+        {
+          "key": "C",
+          "text": "Ecossistema é formado apenas pelos animais de uma região."
+        },
+        {
+          "key": "D",
+          "text": "Energia flui pelas cadeias alimentares e parte se dissipa a cada transformação, enquanto a matéria pode circular nos ciclos biogeoquímicos."
+        },
+        {
+          "key": "E",
+          "text": "Produtores capturam energia e sintetizam matéria orgânica; consumidores obtêm energia alimentando-se de outros organismos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a incorreta: Ecossistema é formado apenas pelos animais de uma região. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-19-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-19-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em ecossistemas e relações ecológicas básicas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Decompositores não têm papel nos ciclos de nutrientes."
+        },
+        {
+          "key": "B",
+          "text": "Ecossistema é formado apenas pelos animais de uma região."
+        },
+        {
+          "key": "C",
+          "text": "Habitat e nicho ecológico são exatamente a mesma ideia."
+        },
+        {
+          "key": "D",
+          "text": "Energia é reciclada infinitamente no ecossistema sem perdas."
+        },
+        {
+          "key": "E",
+          "text": "Teias alimentares representam múltiplas relações tróficas e são mais realistas que uma cadeia isolada."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Teias alimentares representam múltiplas relações tróficas e são mais realistas que uma cadeia isolada.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-19-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

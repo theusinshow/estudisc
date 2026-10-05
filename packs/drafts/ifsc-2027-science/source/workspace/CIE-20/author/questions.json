@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-20-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de ecossistemas brasileiros, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Mata Atlântica mantém praticamente toda sua cobertura original intacta."
+      },
+      {
+        "key": "B",
+        "text": "O Pampa brasileiro ocorre principalmente na Amazônia."
+      },
+      {
+        "key": "C",
+        "text": "A Amazônia possui extensa floresta tropical e grande biodiversidade, mas sofre pressões como desmatamento, queimadas e expansão de atividades econômicas."
+      },
+      {
+        "key": "D",
+        "text": "A Amazônia não sofre impactos humanos relevantes por ser muito extensa."
+      },
+      {
+        "key": "E",
+        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: A Amazônia possui extensa floresta tropical e grande biodiversidade, mas sofre pressões como desmatamento, queimadas e expansão de atividades econômicas.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-20-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-20-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar ecossistemas brasileiros sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Mata Atlântica mantém praticamente toda sua cobertura original intacta."
+      },
+      {
+        "key": "B",
+        "text": "O Cerrado apresenta grande biodiversidade e importância para nascentes e bacias hidrográficas, sofrendo forte conversão de habitat."
+      },
+      {
+        "key": "C",
+        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+      },
+      {
+        "key": "D",
+        "text": "A Amazônia não sofre impactos humanos relevantes por ser muito extensa."
+      },
+      {
+        "key": "E",
+        "text": "O Pampa brasileiro ocorre principalmente na Amazônia."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: O Cerrado apresenta grande biodiversidade e importância para nascentes e bacias hidrográficas, sofrendo forte conversão de habitat.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-20-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-20-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em ecossistemas brasileiros?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Mata Atlântica acompanha grande parte do litoral brasileiro e possui alto endemismo, porém está muito fragmentada."
+      },
+      {
+        "key": "B",
+        "text": "A Mata Atlântica mantém praticamente toda sua cobertura original intacta."
+      },
+      {
+        "key": "C",
+        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+      },
+      {
+        "key": "D",
+        "text": "A Amazônia não sofre impactos humanos relevantes por ser muito extensa."
+      },
+      {
+        "key": "E",
+        "text": "O Pampa brasileiro ocorre principalmente na Amazônia."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: A Mata Atlântica acompanha grande parte do litoral brasileiro e possui alto endemismo, porém está muito fragmentada.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-20-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-20-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual bioma brasileiro é frequentemente associado ao 'berço das águas' por abrigar nascentes importantes e sofre forte pressão da expansão agropecuária?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pampa."
+      },
+      {
+        "key": "B",
+        "text": "Pantanal."
+      },
+      {
+        "key": "C",
+        "text": "Caatinga exclusivamente."
+      },
+      {
+        "key": "D",
+        "text": "Cerrado."
+      },
+      {
+        "key": "E",
+        "text": "Mata de araucária como bioma oficial separado."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Cerrado.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-20-CON-01",
+      "CIE-20-CON-02",
+      "CIE-20-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-20-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. A Amazônia possui extensa floresta tropical e grande biodiversidade, mas sofre pressões como desmatamento, queimadas e expansão de atividades econômicas.\nII. A Caatinga é uma floresta úmida típica do Sudeste.\nIII. A Mata Atlântica acompanha grande parte do litoral brasileiro e possui alto endemismo, porém está muito fragmentada.\nIV. O Pampa brasileiro ocorre principalmente na Amazônia.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-20-CON-01",
+      "CIE-20-CON-02",
+      "CIE-20-CON-03",
+      "CIE-20-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-20-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre ecossistemas brasileiros para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pantanal é uma grande planície inundável; Pampa predomina no sul do Rio Grande do Sul com campos e formações associadas."
+      },
+      {
+        "key": "B",
+        "text": "A Amazônia não sofre impactos humanos relevantes por ser muito extensa."
+      },
+      {
+        "key": "C",
+        "text": "O Pampa brasileiro ocorre principalmente na Amazônia."
+      },
+      {
+        "key": "D",
+        "text": "A Mata Atlântica mantém praticamente toda sua cobertura original intacta."
+      },
+      {
+        "key": "E",
+        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: Pantanal é uma grande planície inundável; Pampa predomina no sul do Rio Grande do Sul com campos e formações associadas.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-20-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-20-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre ecossistemas brasileiros?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Amazônia possui extensa floresta tropical e grande biodiversidade, mas sofre pressões como desmatamento, queimadas e expansão de atividades econômicas."
+      },
+      {
+        "key": "B",
+        "text": "A Caatinga é adaptada ao clima semiárido e possui biodiversidade própria, não sendo um ambiente biologicamente pobre."
+      },
+      {
+        "key": "C",
+        "text": "O Cerrado apresenta grande biodiversidade e importância para nascentes e bacias hidrográficas, sofrendo forte conversão de habitat."
+      },
+      {
+        "key": "D",
+        "text": "A Mata Atlântica acompanha grande parte do litoral brasileiro e possui alto endemismo, porém está muito fragmentada."
+      },
+      {
+        "key": "E",
+        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a incorreta: A Caatinga é uma floresta úmida típica do Sudeste. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-20-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-20-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em ecossistemas brasileiros?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Pampa brasileiro ocorre principalmente na Amazônia."
+      },
+      {
+        "key": "B",
+        "text": "Santa Catarina está inserida predominantemente no domínio da Mata Atlântica e seus ecossistemas associados."
+      },
+      {
+        "key": "C",
+        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+      },
+      {
+        "key": "D",
+        "text": "A Amazônia não sofre impactos humanos relevantes por ser muito extensa."
+      },
+      {
+        "key": "E",
+        "text": "A Mata Atlântica mantém praticamente toda sua cobertura original intacta."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: Santa Catarina está inserida predominantemente no domínio da Mata Atlântica e seus ecossistemas associados.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-20-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

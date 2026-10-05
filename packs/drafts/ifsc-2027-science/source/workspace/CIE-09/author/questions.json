@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-09-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de modelos atômicos e partículas subatômicas, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+      },
+      {
+        "key": "B",
+        "text": "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem."
+      },
+      {
+        "key": "C",
+        "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+      },
+      {
+        "key": "D",
+        "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+      },
+      {
+        "key": "E",
+        "text": "Todos os modelos atômicos históricos são idênticos."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-09-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-09-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar modelos atômicos e partículas subatômicas sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente."
+      },
+      {
+        "key": "B",
+        "text": "Todos os modelos atômicos históricos são idênticos."
+      },
+      {
+        "key": "C",
+        "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+      },
+      {
+        "key": "D",
+        "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+      },
+      {
+        "key": "E",
+        "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-09-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-09-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em modelos atômicos e partículas subatômicas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todos os modelos atômicos históricos são idênticos."
+      },
+      {
+        "key": "B",
+        "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+      },
+      {
+        "key": "C",
+        "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+      },
+      {
+        "key": "D",
+        "text": "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna."
+      },
+      {
+        "key": "E",
+        "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-09-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-09-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um experimento indica que a carga positiva do átomo está concentrada em uma região muito pequena. A qual ideia isso se relaciona diretamente?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ao átomo indivisível de Dalton como descrição final."
+      },
+      {
+        "key": "B",
+        "text": "À ausência completa de partículas subatômicas."
+      },
+      {
+        "key": "C",
+        "text": "À localização dos elétrons dentro do núcleo."
+      },
+      {
+        "key": "D",
+        "text": "À existência de um núcleo atômico pequeno e positivo, associada ao modelo de Rutherford."
+      },
+      {
+        "key": "E",
+        "text": "À ideia de que toda a massa está uniformemente espalhada sem núcleo."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "À existência de um núcleo atômico pequeno e positivo, associada ao modelo de Rutherford.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-09-CON-01",
+      "CIE-09-CON-02",
+      "CIE-09-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-09-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem.\nII. Todos os modelos atômicos históricos são idênticos.\nIII. Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna.\nIV. Elétrons ficam dentro do núcleo junto com prótons e nêutrons.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-09-CON-01",
+      "CIE-09-CON-02",
+      "CIE-09-CON-03",
+      "CIE-09-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-09-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre modelos atômicos e partículas subatômicas para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+      },
+      {
+        "key": "B",
+        "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+      },
+      {
+        "key": "C",
+        "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+      },
+      {
+        "key": "D",
+        "text": "Todos os modelos atômicos históricos são idênticos."
+      },
+      {
+        "key": "E",
+        "text": "No modelo de Bohr, elétrons ocupam níveis de energia definidos, uma simplificação útil no nível escolar."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: No modelo de Bohr, elétrons ocupam níveis de energia definidos, uma simplificação útil no nível escolar.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-09-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-09-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre modelos atômicos e partículas subatômicas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem."
+      },
+      {
+        "key": "B",
+        "text": "Todos os modelos atômicos históricos são idênticos."
+      },
+      {
+        "key": "C",
+        "text": "Rutherford propôs um núcleo pequeno e positivo, com a maior parte do volume atômico sendo espaço ao redor do núcleo."
+      },
+      {
+        "key": "D",
+        "text": "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna."
+      },
+      {
+        "key": "E",
+        "text": "Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a incorreta: Todos os modelos atômicos históricos são idênticos. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-09-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-09-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em modelos atômicos e partículas subatômicas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+      },
+      {
+        "key": "B",
+        "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+      },
+      {
+        "key": "C",
+        "text": "Todos os modelos atômicos históricos são idênticos."
+      },
+      {
+        "key": "D",
+        "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+      },
+      {
+        "key": "E",
+        "text": "Prótons têm carga positiva, nêutrons são eletricamente neutros e elétrons têm carga negativa."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Prótons têm carga positiva, nêutrons são eletricamente neutros e elétrons têm carga negativa.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-09-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

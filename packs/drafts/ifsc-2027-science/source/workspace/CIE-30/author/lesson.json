@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "CIE-30",
+  "subject": "CIE",
+  "title": "Vacinas, imunidade e doenças dos sistemas",
+  "unit": "Vida e Evolução — Corpo Humano e Saúde",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+  "concepts": [
+    {
+      "id": "CIE-30-CON-01",
+      "name": "Antígeno e resposta imune em nível introdutório",
+      "masteryTarget": "Vacinas apresentam antígenos ou instruções que induzem uma resposta imunológica específica sem causar a doença da mesma forma que uma infecção natural típica."
+    },
+    {
+      "id": "CIE-30-CON-02",
+      "name": "Memória imunológica",
+      "masteryTarget": "A resposta adaptativa pode gerar células de memória, permitindo resposta mais rápida em exposições futuras."
+    },
+    {
+      "id": "CIE-30-CON-03",
+      "name": "Vacina x tratamento",
+      "masteryTarget": "Vacinação é principalmente medida preventiva; não deve ser confundida com antibióticos nem com soros que fornecem anticorpos prontos."
+    },
+    {
+      "id": "CIE-30-CON-04",
+      "name": "Prevenção",
+      "masteryTarget": "Doenças podem afetar sistemas específicos, mas muitos agentes e condições repercutem em vários sistemas do corpo."
+    },
+    {
+      "id": "CIE-30-CON-05",
+      "name": "Doenças representativas dos principais sistemas sem transformar a aula em catálogo de patologias",
+      "masteryTarget": "Prevenção inclui vacinação, saneamento, hábitos de saúde, proteção individual e acompanhamento médico conforme o problema."
+    },
+    {
+      "id": "CIE-30-CON-06",
+      "name": "Antibióticos atuam contra bactérias sensíveis e não tratam i…",
+      "masteryTarget": "Antibióticos atuam contra bactérias sensíveis e não tratam infecções virais de forma geral."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-30-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Após vacinação, qual resposta explica a proteção futura de forma geral? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+    },
+    {
+      "id": "CIE-30-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar com as próprias palavras os conceitos centrais de vacinas, imunidade e doenças dos sistemas.",
+        "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+        "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+      ]
+    },
+    {
+      "id": "CIE-30-B03",
+      "type": "EXPLANATION",
+      "title": "Base conceitual",
+      "content": "Vacinas apresentam antígenos ou instruções que induzem uma resposta imunológica específica sem causar a doença da mesma forma que uma infecção natural típica. A resposta adaptativa pode gerar células de memória, permitindo resposta mais rápida em exposições futuras. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo vacinas, imunidade e doenças dos sistemas.",
+      "items": [
+        "Vacinas apresentam antígenos ou instruções que induzem uma resposta imunológica específica sem causar a doença da mesma forma que uma infecção natural típica.",
+        "A resposta adaptativa pode gerar células de memória, permitindo resposta mais rápida em exposições futuras."
+      ]
+    },
+    {
+      "id": "CIE-30-B04",
+      "type": "EXPLANATION",
+      "title": "Como as ideias se conectam",
+      "content": "Vacinação é principalmente medida preventiva; não deve ser confundida com antibióticos nem com soros que fornecem anticorpos prontos. Doenças podem afetar sistemas específicos, mas muitos agentes e condições repercutem em vários sistemas do corpo. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "items": [
+        "Vacinação é principalmente medida preventiva; não deve ser confundida com antibióticos nem com soros que fornecem anticorpos prontos.",
+        "Doenças podem afetar sistemas específicos, mas muitos agentes e condições repercutem em vários sistemas do corpo."
+      ]
+    },
+    {
+      "id": "CIE-30-B05",
+      "type": "EXPLANATION",
+      "title": "Aplicações, limites e leitura científica",
+      "content": "Prevenção inclui vacinação, saneamento, hábitos de saúde, proteção individual e acompanhamento médico conforme o problema. Antibióticos atuam contra bactérias sensíveis e não tratam infecções virais de forma geral. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "items": [
+        "Prevenção inclui vacinação, saneamento, hábitos de saúde, proteção individual e acompanhamento médico conforme o problema.",
+        "Antibióticos atuam contra bactérias sensíveis e não tratam infecções virais de forma geral."
+      ]
+    },
+    {
+      "id": "CIE-30-B06",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Termos que precisam estar claros",
+      "items": [
+        "antígeno e resposta imune em nível introdutório",
+        "memória imunológica",
+        "vacina x tratamento",
+        "prevenção",
+        "doenças representativas dos principais sistemas sem transformar a aula em catálogo de patologias"
+      ]
+    },
+    {
+      "id": "CIE-30-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTIONS",
+      "title": "Erros que a prova pode explorar",
+      "items": [
+        "Vacina fornece sempre anticorpos prontos e por isso é igual a soro.",
+        "Antibióticos tratam qualquer infecção viral.",
+        "Vacinas servem apenas para tratar uma doença depois que sintomas graves aparecem.",
+        "Memória imunológica significa que o organismo nunca mais pode ser infectado por nenhum agente."
+      ]
+    },
+    {
+      "id": "CIE-30-B08",
+      "type": "CALLOUT",
+      "variant": "ACTIVE_LEARNING",
+      "title": "Atividade de compreensão",
+      "items": [
+        "Classifique cartões em vacina, soro, antibiótico e medida de prevenção geral.",
+        "Para cada um, diga se estimula resposta imune, fornece anticorpos prontos, atua contra bactérias sensíveis ou reduz exposição/risco.",
+        "Use uma situação de campanha de vacinação para explicar memória imunológica.",
+        "Confira informações de saúde em fonte oficial antes de atualizar exemplos."
+      ]
+    },
+    {
+      "id": "CIE-30-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo resolvido passo a passo",
+      "prompt": "Após vacinação, qual resposta explica a proteção futura de forma geral?",
+      "answer": "O sistema imune desenvolve resposta específica e pode formar memória imunológica contra o antígeno alvo.",
+      "reasoning": "1) Use esta relação: Vacinas apresentam antígenos ou instruções que induzem uma resposta imunológica específica sem causar a doença da mesma forma que uma infecção natural típica. 2) Use esta relação: A resposta adaptativa pode gerar células de memória, permitindo resposta mais rápida em exposições futuras. 3) Use esta relação: Vacinação é principalmente medida preventiva; não deve ser confundida com antibióticos nem com soros que fornecem anticorpos prontos. 4) Aplicando essas relações à situação, a conclusão correta é: O sistema imune desenvolve resposta específica e pode formar memória imunológica contra o antígeno alvo."
+    },
+    {
+      "id": "CIE-30-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Como isso costuma aparecer em prova",
+      "items": [
+        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de vacinas, imunidade e doenças dos sistemas.",
+        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+      ]
+    },
+    {
+      "id": "CIE-30-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Explore e teste a ideia",
+      "mediaRefs": [
+        "SRC-BIO-006"
+      ],
+      "optional": true
+    },
+    {
+      "id": "CIE-30-B12",
+      "type": "DETERMINISTIC_COMPONENT_REQUEST",
+      "title": "Componente visual/interativo",
+      "request": "Fluxo vacina → antígeno → resposta → células de memória → resposta futura; SVG com labels da UI.",
+      "status": "IMPLEMENTATION_REQUIRED"
+    },
+    {
+      "id": "CIE-30-B13",
+      "type": "SUMMARY",
+      "title": "Resumo de prova",
+      "items": [
+        "Vacinas apresentam antígenos ou instruções que induzem uma resposta imunológica específica sem causar a doença da mesma forma que uma infecção natural típica.",
+        "A resposta adaptativa pode gerar células de memória, permitindo resposta mais rápida em exposições futuras.",
+        "Vacinação é principalmente medida preventiva; não deve ser confundida com antibióticos nem com soros que fornecem anticorpos prontos.",
+        "Doenças podem afetar sistemas específicos, mas muitos agentes e condições repercutem em vários sistemas do corpo.",
+        "Prevenção inclui vacinação, saneamento, hábitos de saúde, proteção individual e acompanhamento médico conforme o problema.",
+        "Antibióticos atuam contra bactérias sensíveis e não tratam infecções virais de forma geral."
+      ]
+    },
+    {
+      "id": "CIE-30-B14",
+      "type": "EXIT_TICKET",
+      "title": "Recuperação ativa",
+      "prompt": "Sem consultar a aula, explique vacinas, imunidade e doenças dos sistemas usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+      "answerGuide": {
+        "mustMention": [
+          "Vacinas apresentam antígenos ou instruções que induzem uma resposta imunológica específica sem causar a doença da mesma forma que uma infecção natural típica.",
+          "Vacinação é principalmente medida preventiva; não deve ser confundida com antibióticos nem com soros que fornecem anticorpos prontos.",
+          "correção explícita de pelo menos um erro conceitual da aula"
+        ]
+      }
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-BIO-006",
+    "SRC-HEALTH-001",
+    "SRC-HEALTH-002"
+  ],
+  "mediaRefs": [
+    "SRC-BIO-006"
+  ],
+  "imageRequestRefs": [],
+  "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+}

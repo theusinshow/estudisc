@@ -1,0 +1,33 @@
+{
+  "lessonId": "CIE-21",
+  "mediaCandidates": [],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-21-001",
+      "lessonId": "CIE-21",
+      "blockId": "CIE-21-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Cena educativa de bacia hidrográfica com cidade, rio, área verde e diferentes fontes de impacto ambiental e ações de recuperação, sem texto, visual limpo e não apocalíptico.",
+      "factualConstraints": [
+        "Mostrar tanto impactos quanto medidas de mitigação",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Sustentabilidade, poluição e impactos ambientais.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-21-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

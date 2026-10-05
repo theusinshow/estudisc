@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-22-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de efeito estufa, aquecimento global e camada de ozônio, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O buraco na camada de ozônio é a causa principal do aquecimento global."
+      },
+      {
+        "key": "B",
+        "text": "Aquecimento global significa que todos os lugares ficam mais quentes todos os dias."
+      },
+      {
+        "key": "C",
+        "text": "O efeito estufa natural ajuda a manter a Terra em temperatura compatível com a vida ao reter parte da radiação infravermelha emitida pela superfície."
+      },
+      {
+        "key": "D",
+        "text": "O efeito estufa natural é totalmente prejudicial e deveria ser eliminado."
+      },
+      {
+        "key": "E",
+        "text": "Ozônio estratosférico e gases de efeito estufa são exatamente o mesmo fenômeno."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: O efeito estufa natural ajuda a manter a Terra em temperatura compatível com a vida ao reter parte da radiação infravermelha emitida pela superfície.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-22-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-22-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar efeito estufa, aquecimento global e camada de ozônio sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O aumento de concentrações de gases de efeito estufa por atividades humanas intensifica o balanço radiativo e contribui para o aquecimento global."
+      },
+      {
+        "key": "B",
+        "text": "Aquecimento global significa que todos os lugares ficam mais quentes todos os dias."
+      },
+      {
+        "key": "C",
+        "text": "O efeito estufa natural é totalmente prejudicial e deveria ser eliminado."
+      },
+      {
+        "key": "D",
+        "text": "O buraco na camada de ozônio é a causa principal do aquecimento global."
+      },
+      {
+        "key": "E",
+        "text": "Ozônio estratosférico e gases de efeito estufa são exatamente o mesmo fenômeno."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: O aumento de concentrações de gases de efeito estufa por atividades humanas intensifica o balanço radiativo e contribui para o aquecimento global.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-22-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-22-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em efeito estufa, aquecimento global e camada de ozônio?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O efeito estufa natural é totalmente prejudicial e deveria ser eliminado."
+      },
+      {
+        "key": "B",
+        "text": "Ozônio estratosférico e gases de efeito estufa são exatamente o mesmo fenômeno."
+      },
+      {
+        "key": "C",
+        "text": "O buraco na camada de ozônio é a causa principal do aquecimento global."
+      },
+      {
+        "key": "D",
+        "text": "Aquecimento global significa que todos os lugares ficam mais quentes todos os dias."
+      },
+      {
+        "key": "E",
+        "text": "Consequências do aquecimento global incluem alterações de extremos climáticos, nível do mar, disponibilidade de água e ecossistemas, com variações regionais."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Consequências do aquecimento global incluem alterações de extremos climáticos, nível do mar, disponibilidade de água e ecossistemas, com variações regionais.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-22-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-22-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual afirmação diferencia corretamente os dois fenômenos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ambos são causados exclusivamente pela falta de oxigênio."
+      },
+      {
+        "key": "B",
+        "text": "O efeito estufa é um buraco físico na atmosfera."
+      },
+      {
+        "key": "C",
+        "text": "A camada de ozônio controla diretamente as marés."
+      },
+      {
+        "key": "D",
+        "text": "A camada de ozônio filtra radiação UV, enquanto o efeito estufa envolve retenção de radiação infravermelha no sistema climático."
+      },
+      {
+        "key": "E",
+        "text": "Não existe diferença científica entre eles."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A camada de ozônio filtra radiação UV, enquanto o efeito estufa envolve retenção de radiação infravermelha no sistema climático.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-22-CON-01",
+      "CIE-22-CON-02",
+      "CIE-22-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-22-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. O efeito estufa natural ajuda a manter a Terra em temperatura compatível com a vida ao reter parte da radiação infravermelha emitida pela superfície.\nII. O buraco na camada de ozônio é a causa principal do aquecimento global.\nIII. Consequências do aquecimento global incluem alterações de extremos climáticos, nível do mar, disponibilidade de água e ecossistemas, com variações regionais.\nIV. O efeito estufa natural é totalmente prejudicial e deveria ser eliminado.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-22-CON-01",
+      "CIE-22-CON-02",
+      "CIE-22-CON-03",
+      "CIE-22-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-22-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre efeito estufa, aquecimento global e camada de ozônio para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aquecimento global significa que todos os lugares ficam mais quentes todos os dias."
+      },
+      {
+        "key": "B",
+        "text": "Ozônio estratosférico e gases de efeito estufa são exatamente o mesmo fenômeno."
+      },
+      {
+        "key": "C",
+        "text": "O buraco na camada de ozônio é a causa principal do aquecimento global."
+      },
+      {
+        "key": "D",
+        "text": "O efeito estufa natural é totalmente prejudicial e deveria ser eliminado."
+      },
+      {
+        "key": "E",
+        "text": "A camada de ozônio estratosférico absorve grande parte da radiação ultravioleta biologicamente danosa."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: A camada de ozônio estratosférico absorve grande parte da radiação ultravioleta biologicamente danosa.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-22-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-22-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre efeito estufa, aquecimento global e camada de ozônio?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O efeito estufa natural ajuda a manter a Terra em temperatura compatível com a vida ao reter parte da radiação infravermelha emitida pela superfície."
+      },
+      {
+        "key": "B",
+        "text": "O buraco na camada de ozônio é a causa principal do aquecimento global."
+      },
+      {
+        "key": "C",
+        "text": "Mitigação inclui reduzir emissões e ampliar sumidouros de carbono; adaptação prepara sociedades e ecossistemas para impactos."
+      },
+      {
+        "key": "D",
+        "text": "O aumento de concentrações de gases de efeito estufa por atividades humanas intensifica o balanço radiativo e contribui para o aquecimento global."
+      },
+      {
+        "key": "E",
+        "text": "Consequências do aquecimento global incluem alterações de extremos climáticos, nível do mar, disponibilidade de água e ecossistemas, com variações regionais."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a incorreta: O buraco na camada de ozônio é a causa principal do aquecimento global. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-22-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-22-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em efeito estufa, aquecimento global e camada de ozônio?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O buraco na camada de ozônio é a causa principal do aquecimento global."
+      },
+      {
+        "key": "B",
+        "text": "Aquecimento global significa que todos os lugares ficam mais quentes todos os dias."
+      },
+      {
+        "key": "C",
+        "text": "A destruição da camada de ozônio esteve ligada principalmente a substâncias destruidoras de ozônio, como CFCs; não é a mesma causa do aquecimento global."
+      },
+      {
+        "key": "D",
+        "text": "Ozônio estratosférico e gases de efeito estufa são exatamente o mesmo fenômeno."
+      },
+      {
+        "key": "E",
+        "text": "O efeito estufa natural é totalmente prejudicial e deveria ser eliminado."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: A destruição da camada de ozônio esteve ligada principalmente a substâncias destruidoras de ozônio, como CFCs; não é a mesma causa do aquecimento global.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-22-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

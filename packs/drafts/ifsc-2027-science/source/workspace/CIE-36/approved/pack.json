@@ -1,0 +1,485 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-36",
+    "subject": "CIE",
+    "title": "Registro fóssil e origem da vida",
+    "unit": "Vida e Evolução — Evolução",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-36-CON-01",
+        "name": "Fósseis como evidências",
+        "masteryTarget": "Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos."
+      },
+      {
+        "id": "CIE-36-CON-02",
+        "name": "Datação relativa em nível básico",
+        "masteryTarget": "A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos."
+      },
+      {
+        "id": "CIE-36-CON-03",
+        "name": "Hipóteses científicas para origem da vida em nível escolar",
+        "masteryTarget": "O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados."
+      },
+      {
+        "id": "CIE-36-CON-04",
+        "name": "Diferença entre origem da vida e evolução biológica",
+        "masteryTarget": "Origem da vida e evolução biológica são problemas relacionados, mas diferentes: evolução descreve mudanças em populações após a existência de sistemas vivos replicantes."
+      },
+      {
+        "id": "CIE-36-CON-05",
+        "name": "Hipóteses científicas sobre origem da vida buscam explicar e…",
+        "masteryTarget": "Hipóteses científicas sobre origem da vida buscam explicar etapas químicas e ambientais compatíveis com evidências disponíveis."
+      },
+      {
+        "id": "CIE-36-CON-06",
+        "name": "Experimentos clássicos, como Miller-Urey, mostraram que molé…",
+        "masteryTarget": "Experimentos clássicos, como Miller-Urey, mostraram que moléculas orgânicas podem formar-se em certas condições simuladas, mas não 'criaram vida'."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-36-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Por que o registro fóssil possui lacunas? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-36-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de registro fóssil e origem da vida.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-36-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos. A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo registro fóssil e origem da vida.",
+        "items": [
+          "Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos.",
+          "A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos."
+        ]
+      },
+      {
+        "id": "CIE-36-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados. Origem da vida e evolução biológica são problemas relacionados, mas diferentes: evolução descreve mudanças em populações após a existência de sistemas vivos replicantes. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados.",
+          "Origem da vida e evolução biológica são problemas relacionados, mas diferentes: evolução descreve mudanças em populações após a existência de sistemas vivos replicantes."
+        ]
+      },
+      {
+        "id": "CIE-36-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Hipóteses científicas sobre origem da vida buscam explicar etapas químicas e ambientais compatíveis com evidências disponíveis. Experimentos clássicos, como Miller-Urey, mostraram que moléculas orgânicas podem formar-se em certas condições simuladas, mas não 'criaram vida'. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Hipóteses científicas sobre origem da vida buscam explicar etapas químicas e ambientais compatíveis com evidências disponíveis.",
+          "Experimentos clássicos, como Miller-Urey, mostraram que moléculas orgânicas podem formar-se em certas condições simuladas, mas não 'criaram vida'."
+        ]
+      },
+      {
+        "id": "CIE-36-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "fósseis como evidências",
+          "datação relativa em nível básico",
+          "hipóteses científicas para origem da vida em nível escolar",
+          "diferença entre origem da vida e evolução biológica"
+        ]
+      },
+      {
+        "id": "CIE-36-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Todo organismo que viveu no passado deixou fóssil.",
+          "Fósseis provam que espécies sempre permaneceram exatamente iguais.",
+          "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula.",
+          "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        ]
+      },
+      {
+        "id": "CIE-36-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Ordene imagens/descrições de camadas geológicas e fósseis em sequência relativa.",
+          "Explique por que o registro fóssil tem lacunas.",
+          "Leia uma descrição do experimento de Miller-Urey e identifique exatamente o que ele mostrou e o que não mostrou.",
+          "Separe a pergunta 'como a vida surgiu?' da pergunta 'como populações mudam depois que a vida existe?'."
+        ]
+      },
+      {
+        "id": "CIE-36-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Por que o registro fóssil possui lacunas?",
+        "answer": "Porque fossilização é rara e depende de condições de preservação, além de erosão e limites de amostragem.",
+        "reasoning": "1) Use esta relação: Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos. 2) Use esta relação: A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos. 3) Use esta relação: O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados. 4) Aplicando essas relações à situação, a conclusão correta é: Porque fossilização é rara e depende de condições de preservação, além de erosão e limites de amostragem."
+      },
+      {
+        "id": "CIE-36-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de registro fóssil e origem da vida.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-36-B11",
+        "type": "IMAGE_REQUEST",
+        "title": "Ilustração de apoio",
+        "requestRef": "IMG-CIE-36-001",
+        "status": "GENERATION_PENDING"
+      },
+      {
+        "id": "CIE-36-B12",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos.",
+          "A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos.",
+          "O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados.",
+          "Origem da vida e evolução biológica são problemas relacionados, mas diferentes: evolução descreve mudanças em populações após a existência de sistemas vivos replicantes.",
+          "Hipóteses científicas sobre origem da vida buscam explicar etapas químicas e ambientais compatíveis com evidências disponíveis.",
+          "Experimentos clássicos, como Miller-Urey, mostraram que moléculas orgânicas podem formar-se em certas condições simuladas, mas não 'criaram vida'."
+        ]
+      },
+      {
+        "id": "CIE-36-B13",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique registro fóssil e origem da vida usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos.",
+            "O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-EVO-003",
+      "SRC-EVO-001"
+    ],
+    "mediaRefs": [],
+    "imageRequestRefs": [
+      "IMG-CIE-36-001"
+    ],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-36-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de registro fóssil e origem da vida, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula."
+        },
+        {
+          "key": "B",
+          "text": "Todo organismo que viveu no passado deixou fóssil."
+        },
+        {
+          "key": "C",
+          "text": "Fósseis provam que espécies sempre permaneceram exatamente iguais."
+        },
+        {
+          "key": "D",
+          "text": "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        },
+        {
+          "key": "E",
+          "text": "Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-36-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-36-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar registro fóssil e origem da vida sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fósseis provam que espécies sempre permaneceram exatamente iguais."
+        },
+        {
+          "key": "B",
+          "text": "Todo organismo que viveu no passado deixou fóssil."
+        },
+        {
+          "key": "C",
+          "text": "A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos."
+        },
+        {
+          "key": "D",
+          "text": "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        },
+        {
+          "key": "E",
+          "text": "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a correta: A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-36-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-36-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em registro fóssil e origem da vida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fósseis provam que espécies sempre permaneceram exatamente iguais."
+        },
+        {
+          "key": "B",
+          "text": "O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados."
+        },
+        {
+          "key": "C",
+          "text": "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        },
+        {
+          "key": "D",
+          "text": "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula."
+        },
+        {
+          "key": "E",
+          "text": "Todo organismo que viveu no passado deixou fóssil."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-36-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-36-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Por que o registro fóssil possui lacunas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Porque organismos antigos não possuíam estruturas corporais."
+        },
+        {
+          "key": "B",
+          "text": "Porque fósseis surgem apenas de animais atuais."
+        },
+        {
+          "key": "C",
+          "text": "Porque camadas geológicas não registram tempo."
+        },
+        {
+          "key": "D",
+          "text": "Porque fossilização é rara e depende de condições de preservação, além de erosão e limites de amostragem."
+        },
+        {
+          "key": "E",
+          "text": "Porque todo fóssil desaparece depois de um ano."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Porque fossilização é rara e depende de condições de preservação, além de erosão e limites de amostragem.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-36-CON-01",
+        "CIE-36-CON-02",
+        "CIE-36-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-36-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos.\nII. Todo organismo que viveu no passado deixou fóssil.\nIII. O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados.\nIV. Fósseis provam que espécies sempre permaneceram exatamente iguais.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-36-CON-01",
+        "CIE-36-CON-02",
+        "CIE-36-CON-03",
+        "CIE-36-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-36-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre registro fóssil e origem da vida para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Todo organismo que viveu no passado deixou fóssil."
+        },
+        {
+          "key": "B",
+          "text": "Fósseis provam que espécies sempre permaneceram exatamente iguais."
+        },
+        {
+          "key": "C",
+          "text": "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        },
+        {
+          "key": "D",
+          "text": "Hipóteses científicas sobre origem da vida buscam explicar etapas químicas e ambientais compatíveis com evidências disponíveis."
+        },
+        {
+          "key": "E",
+          "text": "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Hipóteses científicas sobre origem da vida buscam explicar etapas químicas e ambientais compatíveis com evidências disponíveis.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-36-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-36-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre registro fóssil e origem da vida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados."
+        },
+        {
+          "key": "B",
+          "text": "Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos."
+        },
+        {
+          "key": "C",
+          "text": "Todo organismo que viveu no passado deixou fóssil."
+        },
+        {
+          "key": "D",
+          "text": "Origem da vida e evolução biológica são problemas relacionados, mas diferentes: evolução descreve mudanças em populações após a existência de sistemas vivos replicantes."
+        },
+        {
+          "key": "E",
+          "text": "A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a incorreta: Todo organismo que viveu no passado deixou fóssil. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-36-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-36-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em registro fóssil e origem da vida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Experimentos clássicos, como Miller-Urey, mostraram que moléculas orgânicas podem formar-se em certas condições simuladas, mas não 'criaram vida'."
+        },
+        {
+          "key": "B",
+          "text": "Fósseis provam que espécies sempre permaneceram exatamente iguais."
+        },
+        {
+          "key": "C",
+          "text": "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        },
+        {
+          "key": "D",
+          "text": "Todo organismo que viveu no passado deixou fóssil."
+        },
+        {
+          "key": "E",
+          "text": "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Experimentos clássicos, como Miller-Urey, mostraram que moléculas orgânicas podem formar-se em certas condições simuladas, mas não 'criaram vida'.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-36-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

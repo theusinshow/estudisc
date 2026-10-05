@@ -1,0 +1,50 @@
+{
+  "lessonId": "CIE-10",
+  "title": "Número atômico, número de massa, massa atômica e íons",
+  "unit": "Matéria e Energia",
+  "priority": "P0",
+  "concepts": [
+    {
+      "id": "CIE-10-CON-01",
+      "name": "Z",
+      "masteryTarget": "Número atômico Z é o número de prótons no núcleo e identifica o elemento químico."
+    },
+    {
+      "id": "CIE-10-CON-02",
+      "name": "A",
+      "masteryTarget": "Número de massa A é a soma de prótons e nêutrons do núcleo de um átomo ou isótopo."
+    },
+    {
+      "id": "CIE-10-CON-03",
+      "name": "Cálculo de prótons/nêutrons/elétrons",
+      "masteryTarget": "O número de nêutrons pode ser obtido por A − Z quando A representa um número de massa inteiro."
+    },
+    {
+      "id": "CIE-10-CON-04",
+      "name": "Átomo neutro",
+      "masteryTarget": "Em um átomo eletricamente neutro, o número de elétrons é igual ao número de prótons."
+    },
+    {
+      "id": "CIE-10-CON-05",
+      "name": "Cátion e ânion",
+      "masteryTarget": "Cátions possuem carga líquida positiva por perda de elétrons; ânions possuem carga líquida negativa por ganho de elétrons."
+    },
+    {
+      "id": "CIE-10-CON-06",
+      "name": "Diferença entre número de massa e massa atômica",
+      "masteryTarget": "Massa atômica apresentada na Tabela Periódica é uma média associada aos isótopos naturais e não deve ser confundida com o número de massa de um átomo específico."
+    }
+  ],
+  "estimatedMinutes": 30,
+  "modes": [
+    "LEARN",
+    "PRACTICE",
+    "REVIEW"
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-QUI-003",
+    "SRC-QUI-006",
+    "SRC-PHET-005"
+  ]
+}

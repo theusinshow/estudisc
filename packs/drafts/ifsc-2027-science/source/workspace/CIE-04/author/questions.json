@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-04-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de propagação do calor e máquinas térmicas, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Condução transporta grandes porções de matéria de um lugar para outro."
+      },
+      {
+        "key": "B",
+        "text": "Uma máquina térmica converte todo calor recebido em trabalho sem perdas."
+      },
+      {
+        "key": "C",
+        "text": "Radiação térmica só pode ocorrer quando há ar."
+      },
+      {
+        "key": "D",
+        "text": "Convecção é o mecanismo dominante dentro de uma barra metálica sólida."
+      },
+      {
+        "key": "E",
+        "text": "Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-04-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-04-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar propagação do calor e máquinas térmicas sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Condução transporta grandes porções de matéria de um lugar para outro."
+      },
+      {
+        "key": "B",
+        "text": "Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura."
+      },
+      {
+        "key": "C",
+        "text": "Convecção é o mecanismo dominante dentro de uma barra metálica sólida."
+      },
+      {
+        "key": "D",
+        "text": "Radiação térmica só pode ocorrer quando há ar."
+      },
+      {
+        "key": "E",
+        "text": "Uma máquina térmica converte todo calor recebido em trabalho sem perdas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-04-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-04-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em propagação do calor e máquinas térmicas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Condução transporta grandes porções de matéria de um lugar para outro."
+      },
+      {
+        "key": "B",
+        "text": "Uma máquina térmica converte todo calor recebido em trabalho sem perdas."
+      },
+      {
+        "key": "C",
+        "text": "Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material."
+      },
+      {
+        "key": "D",
+        "text": "Convecção é o mecanismo dominante dentro de uma barra metálica sólida."
+      },
+      {
+        "key": "E",
+        "text": "Radiação térmica só pode ocorrer quando há ar."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-04-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-04-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao aquecer água numa panela, a água mais quente no fundo tende a subir e a mais fria tende a descer. Qual processo domina esse movimento?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Condução exclusiva no líquido."
+      },
+      {
+        "key": "B",
+        "text": "Radiação ultravioleta."
+      },
+      {
+        "key": "C",
+        "text": "Fusão nuclear."
+      },
+      {
+        "key": "D",
+        "text": "Convecção térmica."
+      },
+      {
+        "key": "E",
+        "text": "Isolamento térmico."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Convecção térmica.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-04-CON-01",
+      "CIE-04-CON-02",
+      "CIE-04-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-04-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria.\nII. Convecção é o mecanismo dominante dentro de uma barra metálica sólida.\nIII. Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material.\nIV. Radiação térmica só pode ocorrer quando há ar.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-04-CON-01",
+      "CIE-04-CON-02",
+      "CIE-04-CON-03",
+      "CIE-04-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-04-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre propagação do calor e máquinas térmicas para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Condução transporta grandes porções de matéria de um lugar para outro."
+      },
+      {
+        "key": "B",
+        "text": "Radiação térmica só pode ocorrer quando há ar."
+      },
+      {
+        "key": "C",
+        "text": "Uma máquina térmica converte todo calor recebido em trabalho sem perdas."
+      },
+      {
+        "key": "D",
+        "text": "Máquinas térmicas convertem parte da energia térmica em trabalho mecânico, sempre com transferências de energia para o ambiente."
+      },
+      {
+        "key": "E",
+        "text": "Convecção é o mecanismo dominante dentro de uma barra metálica sólida."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Máquinas térmicas convertem parte da energia térmica em trabalho mecânico, sempre com transferências de energia para o ambiente.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-04-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-04-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre propagação do calor e máquinas térmicas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material."
+      },
+      {
+        "key": "B",
+        "text": "O aquecimento da Terra pelo Sol é possível através do vácuo graças à radiação."
+      },
+      {
+        "key": "C",
+        "text": "Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria."
+      },
+      {
+        "key": "D",
+        "text": "Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura."
+      },
+      {
+        "key": "E",
+        "text": "Convecção é o mecanismo dominante dentro de uma barra metálica sólida."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a incorreta: Convecção é o mecanismo dominante dentro de uma barra metálica sólida. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-04-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-04-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em propagação do calor e máquinas térmicas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Condução transporta grandes porções de matéria de um lugar para outro."
+      },
+      {
+        "key": "B",
+        "text": "Condutores e isolantes térmicos são escolhidos conforme a função: panelas precisam transferir calor, cabos devem dificultá-lo."
+      },
+      {
+        "key": "C",
+        "text": "Convecção é o mecanismo dominante dentro de uma barra metálica sólida."
+      },
+      {
+        "key": "D",
+        "text": "Radiação térmica só pode ocorrer quando há ar."
+      },
+      {
+        "key": "E",
+        "text": "Uma máquina térmica converte todo calor recebido em trabalho sem perdas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: Condutores e isolantes térmicos são escolhidos conforme a função: panelas precisam transferir calor, cabos devem dificultá-lo.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-04-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

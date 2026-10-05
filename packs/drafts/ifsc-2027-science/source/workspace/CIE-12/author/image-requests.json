@@ -1,0 +1,52 @@
+[
+  {
+    "id": "IMG-CIE-12-001",
+    "lessonId": "CIE-12",
+    "blockId": "CIE-12-B12",
+    "generator": "ANTIGRAVITY_NANO_BANANA_2",
+    "type": "EDUCATIONAL_ILLUSTRATION",
+    "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+    "prompt": "Quatro recipientes de laboratório em composição educacional: água pura transparente, água com sal dissolvido visualmente uniforme, água e óleo em duas camadas, água com areia sedimentada; sem rótulos, fundo neutro.",
+    "factualConstraints": [
+      "Água+óleo deve ter duas fases visíveis",
+      "Sal dissolvido não deve aparecer como cristais suspensos",
+      "Sem texto embutido"
+    ],
+    "forbiddenElements": [
+      "texto ilegível",
+      "fórmulas inventadas",
+      "rótulos científicos não validados",
+      "marcas d'água"
+    ],
+    "aspectRatio": "16:9",
+    "textInImage": false,
+    "altTextDraft": "Ilustração educacional de apoio para a aula Substâncias puras, misturas, fases e componentes.",
+    "factualReviewStatus": "PENDING",
+    "visualReviewStatus": "PENDING",
+    "outputFilename": "IMG-CIE-12-001-v1.png",
+    "promptVersion": 2,
+    "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-QUI-003",
+      "SRC-QUI-007"
+    ],
+    "conceptIds": [
+      "CIE-12-CON-01",
+      "CIE-12-CON-02",
+      "CIE-12-CON-03",
+      "CIE-12-CON-04",
+      "CIE-12-CON-05",
+      "CIE-12-CON-06"
+    ],
+    "reviewChecklist": [
+      "No embedded text unless explicitly required.",
+      "No obvious duplicated/malformed objects.",
+      "No scientific claim beyond the factual constraints.",
+      "Composition remains readable at mobile width.",
+      "Alt text accurately describes the final selected image.",
+      "Factual review remains PENDING after generation."
+    ],
+    "status": "PENDING_GENERATION"
+  }
+]

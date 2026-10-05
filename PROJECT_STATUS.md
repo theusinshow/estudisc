@@ -1,3 +1,5 @@
+2026-10-05 Science snapshot verified for authorized commit/push:40CIE-01..40 drafts/320generated Questions,620unchanged source files and13SVGs preserved in packs/drafts/ifsc-2027-science/. Read-only actual local DB/receipts/source checks PASS; exact staged portable candidate frozen install/lint/typecheck/build PASS,180tests passed/3skipped,nine focused tests PASS. Full E2E17passed/19failed in a run affected by owned-server restarts; bothScience mobile previews PASS, full application gate not accepted. Excluded paused achievements and unrelated Mathematics/Studio changes. User subsequently authorized publishing allfortyScience lessons, stating review is complete. NEXT ACTION: authenticated production UI import/publication and verify40published lessons/320Questions; sitecurrentlyrequiresADMINlogin. No deployment/schema migration authorized. See PLANS.md and tools/science-import/qa/FINAL-QA.md for exact commands and limits.
+
 # KNOW/OS - Project Status
 
 ## MAT-PREREQ editorial correction (2026-10-02)

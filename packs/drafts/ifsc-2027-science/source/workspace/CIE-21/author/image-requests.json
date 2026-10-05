@@ -1,0 +1,51 @@
+[
+  {
+    "id": "IMG-CIE-21-001",
+    "lessonId": "CIE-21",
+    "blockId": "CIE-21-B11",
+    "generator": "ANTIGRAVITY_NANO_BANANA_2",
+    "type": "EDUCATIONAL_ILLUSTRATION",
+    "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+    "prompt": "Cena educativa de bacia hidrográfica com cidade, rio, área verde e diferentes fontes de impacto ambiental e ações de recuperação, sem texto, visual limpo e não apocalíptico.",
+    "factualConstraints": [
+      "Mostrar tanto impactos quanto medidas de mitigação",
+      "Sem texto embutido"
+    ],
+    "forbiddenElements": [
+      "texto ilegível",
+      "fórmulas inventadas",
+      "rótulos científicos não validados",
+      "marcas d'água"
+    ],
+    "aspectRatio": "16:9",
+    "textInImage": false,
+    "altTextDraft": "Ilustração educacional de apoio para a aula Sustentabilidade, poluição e impactos ambientais.",
+    "factualReviewStatus": "PENDING",
+    "visualReviewStatus": "PENDING",
+    "outputFilename": "IMG-CIE-21-001-v1.png",
+    "promptVersion": 2,
+    "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-ECO-002",
+      "SRC-SED-001"
+    ],
+    "conceptIds": [
+      "CIE-21-CON-01",
+      "CIE-21-CON-02",
+      "CIE-21-CON-03",
+      "CIE-21-CON-04",
+      "CIE-21-CON-05",
+      "CIE-21-CON-06"
+    ],
+    "reviewChecklist": [
+      "No embedded text unless explicitly required.",
+      "No obvious duplicated/malformed objects.",
+      "No scientific claim beyond the factual constraints.",
+      "Composition remains readable at mobile width.",
+      "Alt text accurately describes the final selected image.",
+      "Factual review remains PENDING after generation."
+    ],
+    "status": "PENDING_GENERATION"
+  }
+]

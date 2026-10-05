@@ -1,0 +1,34 @@
+{
+  "lessonId": "CIE-26",
+  "mediaCandidates": [],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-26-001",
+      "lessonId": "CIE-26",
+      "blockId": "CIE-26-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração educacional de laboratório de biotecnologia moderno e realista, pesquisadora analisando amostras e DNA representado apenas como elemento gráfico conceitual ao fundo, sem texto ou sequências genéticas legíveis.",
+      "factualConstraints": [
+        "Não mostrar edição genética como 'superpoder'",
+        "Sem texto embutido",
+        "Sem códigos genéticos inventados"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Interações alélicas, genética aplicada e biotecnologia.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-26-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

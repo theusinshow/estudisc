@@ -1,0 +1,53 @@
+{
+  "lessonId": "CIE-35",
+  "mediaCandidates": [
+    {
+      "id": "SRC-EVO-002",
+      "title": "Seleção Natural",
+      "org": "Conexão Escola — SME Goiânia",
+      "type": "LESSON_SLIDES_ACTIVITY",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/ciencias-da-natureza-selecao-natural/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Complementa esta aula com material público/educacional ou interação."
+    },
+    {
+      "id": "SRC-PHET-006",
+      "title": "Seleção Natural",
+      "org": "PhET / University of Colorado Boulder",
+      "type": "SIMULATION",
+      "url": "https://phet.colorado.edu/pt_BR/simulations/natural-selection",
+      "licenseStatus": "EXTERNAL_EMBED_REVIEW",
+      "reason": "Complementa esta aula com material público/educacional ou interação."
+    }
+  ],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-35-001",
+      "lessonId": "CIE-35",
+      "blockId": "CIE-35-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Cena de população de insetos com variação de cor sobre dois fundos naturais, aves predadoras capturando mais indivíduos conspícuos; sem texto, mostrando variação pré-existente e seleção diferencial.",
+      "factualConstraints": [
+        "Variação deve existir antes da predação",
+        "Não mostrar insetos mudando de cor por vontade",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Teoria sintética e fatores evolutivos.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-35-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

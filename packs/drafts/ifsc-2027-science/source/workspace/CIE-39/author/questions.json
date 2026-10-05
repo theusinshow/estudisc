@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-39-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de escalas e ordem de grandeza astronômica, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ordem de grandeza permite comparar escalas aproximando valores a potências de dez."
+      },
+      {
+        "key": "B",
+        "text": "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia."
+      },
+      {
+        "key": "C",
+        "text": "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala."
+      },
+      {
+        "key": "D",
+        "text": "Ordem de grandeza serve apenas para números menores que um."
+      },
+      {
+        "key": "E",
+        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: Ordem de grandeza permite comparar escalas aproximando valores a potências de dez.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-39-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-39-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar escalas e ordem de grandeza astronômica sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia."
+      },
+      {
+        "key": "B",
+        "text": "Ordem de grandeza serve apenas para números menores que um."
+      },
+      {
+        "key": "C",
+        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+      },
+      {
+        "key": "D",
+        "text": "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala."
+      },
+      {
+        "key": "E",
+        "text": "Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-39-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-39-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em escalas e ordem de grandeza astronômica?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala."
+      },
+      {
+        "key": "B",
+        "text": "Ordem de grandeza serve apenas para números menores que um."
+      },
+      {
+        "key": "C",
+        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+      },
+      {
+        "key": "D",
+        "text": "Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano."
+      },
+      {
+        "key": "E",
+        "text": "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-39-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-39-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual unidade é mais adequada para expressar a distância entre estrelas próximas em linguagem escolar de Astronomia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Quilograma."
+      },
+      {
+        "key": "B",
+        "text": "Watt."
+      },
+      {
+        "key": "C",
+        "text": "Grau Celsius."
+      },
+      {
+        "key": "D",
+        "text": "Ano-luz."
+      },
+      {
+        "key": "E",
+        "text": "Litro."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Ano-luz.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-39-CON-01",
+      "CIE-39-CON-02",
+      "CIE-39-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-39-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Ordem de grandeza permite comparar escalas aproximando valores a potências de dez.\nII. Ano-luz é uma unidade de tempo usada para idade das estrelas.\nIII. Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano.\nIV. Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-39-CON-01",
+      "CIE-39-CON-02",
+      "CIE-39-CON-03",
+      "CIE-39-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-39-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre escalas e ordem de grandeza astronômica para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Notação científica facilita escrever e comparar números muito grandes ou muito pequenos em Astronomia."
+      },
+      {
+        "key": "B",
+        "text": "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia."
+      },
+      {
+        "key": "C",
+        "text": "Ordem de grandeza serve apenas para números menores que um."
+      },
+      {
+        "key": "D",
+        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+      },
+      {
+        "key": "E",
+        "text": "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: Notação científica facilita escrever e comparar números muito grandes ou muito pequenos em Astronomia.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-39-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-39-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre escalas e ordem de grandeza astronômica?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários."
+      },
+      {
+        "key": "B",
+        "text": "Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano."
+      },
+      {
+        "key": "C",
+        "text": "Ordem de grandeza permite comparar escalas aproximando valores a potências de dez."
+      },
+      {
+        "key": "D",
+        "text": "O Sistema Solar é muito menor que a Via Láctea; a galáxia contém enorme quantidade de estrelas e sistemas planetários."
+      },
+      {
+        "key": "E",
+        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a incorreta: Ano-luz é uma unidade de tempo usada para idade das estrelas. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-39-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-39-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em escalas e ordem de grandeza astronômica?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Modelos gráficos do Sistema Solar frequentemente distorcem simultaneamente tamanhos e distâncias; é preciso informar quando uma representação não está em escala."
+      },
+      {
+        "key": "B",
+        "text": "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia."
+      },
+      {
+        "key": "C",
+        "text": "Ordem de grandeza serve apenas para números menores que um."
+      },
+      {
+        "key": "D",
+        "text": "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala."
+      },
+      {
+        "key": "E",
+        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: Modelos gráficos do Sistema Solar frequentemente distorcem simultaneamente tamanhos e distâncias; é preciso informar quando uma representação não está em escala.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-39-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

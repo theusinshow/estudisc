@@ -1,0 +1,53 @@
+{
+  "lessonId": "CIE-05",
+  "mediaCandidates": [
+    {
+      "id": "SRC-FIS-005",
+      "title": "Transformações da energia no cotidiano",
+      "org": "Conexão Escola — SME Goiânia",
+      "type": "LESSON_SLIDES_ACTIVITY",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/ciencias-da-natureza-transformacoes-da-energia-no-cotidiano/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Complementa esta aula com material público/educacional ou interação."
+    },
+    {
+      "id": "SRC-PHET-002",
+      "title": "Formas e Transformações de Energia",
+      "org": "PhET / University of Colorado Boulder",
+      "type": "SIMULATION",
+      "url": "https://phet.colorado.edu/pt_BR/simulations/energy-forms-and-changes",
+      "licenseStatus": "EXTERNAL_EMBED_REVIEW",
+      "reason": "Complementa esta aula com material público/educacional ou interação."
+    }
+  ],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-05-001",
+      "lessonId": "CIE-05",
+      "blockId": "CIE-05-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Cena didática de uma pessoa pedalando bicicleta com cadeia visual de transformações de energia sugerida por elementos gráficos abstratos, cidade sustentável ao fundo, sem texto, estilo infográfico editorial limpo.",
+      "factualConstraints": [
+        "Não representar energia como substância material",
+        "Sem texto embutido",
+        "Evitar números ou fórmulas"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Fontes, transformações e conservação de energia.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-05-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

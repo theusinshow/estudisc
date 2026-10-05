@@ -1,0 +1,502 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-05",
+    "subject": "CIE",
+    "title": "Fontes, transformações e conservação de energia",
+    "unit": "Matéria e Energia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-05-CON-01",
+        "name": "Energia cinética",
+        "masteryTarget": "Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora."
+      },
+      {
+        "id": "CIE-05-CON-02",
+        "name": "Potencial",
+        "masteryTarget": "Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação."
+      },
+      {
+        "id": "CIE-05-CON-03",
+        "name": "Térmica",
+        "masteryTarget": "Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada."
+      },
+      {
+        "id": "CIE-05-CON-04",
+        "name": "Química",
+        "masteryTarget": "Fontes renováveis são repostas em escalas humanas de tempo, enquanto fontes não renováveis dependem de reservas finitas ou de reposição muito lenta."
+      },
+      {
+        "id": "CIE-05-CON-05",
+        "name": "Elétrica",
+        "masteryTarget": "Avaliar uma fonte de energia exige considerar disponibilidade, custo, impacto socioambiental, confiabilidade e eficiência."
+      },
+      {
+        "id": "CIE-05-CON-06",
+        "name": "Luminosa",
+        "masteryTarget": "Na bicicleta, energia química do organismo pode transformar-se em energia mecânica e cinética, com dissipação térmica."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-05-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Uma lâmpada LED recebe energia elétrica. Qual descrição é adequada? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-05-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de fontes, transformações e conservação de energia.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-05-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora. Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo fontes, transformações e conservação de energia.",
+        "items": [
+          "Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora.",
+          "Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação."
+        ]
+      },
+      {
+        "id": "CIE-05-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada. Fontes renováveis são repostas em escalas humanas de tempo, enquanto fontes não renováveis dependem de reservas finitas ou de reposição muito lenta. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada.",
+          "Fontes renováveis são repostas em escalas humanas de tempo, enquanto fontes não renováveis dependem de reservas finitas ou de reposição muito lenta."
+        ]
+      },
+      {
+        "id": "CIE-05-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Avaliar uma fonte de energia exige considerar disponibilidade, custo, impacto socioambiental, confiabilidade e eficiência. Na bicicleta, energia química do organismo pode transformar-se em energia mecânica e cinética, com dissipação térmica. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Avaliar uma fonte de energia exige considerar disponibilidade, custo, impacto socioambiental, confiabilidade e eficiência.",
+          "Na bicicleta, energia química do organismo pode transformar-se em energia mecânica e cinética, com dissipação térmica."
+        ]
+      },
+      {
+        "id": "CIE-05-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "energia cinética",
+          "potencial",
+          "térmica",
+          "química",
+          "elétrica",
+          "luminosa",
+          "fontes renováveis e não renováveis",
+          "cadeias de transformação"
+        ]
+      },
+      {
+        "id": "CIE-05-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Energia é criada sempre que um aparelho é ligado.",
+          "Conservação de energia significa que toda energia continua igualmente útil.",
+          "Toda fonte renovável é isenta de impactos ambientais.",
+          "Energia térmica não participa de transformações em equipamentos elétricos."
+        ]
+      },
+      {
+        "id": "CIE-05-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Monte uma cadeia de transformações para três situações: bicicleta, lâmpada e usina hidrelétrica.",
+          "Comece pela forma de energia predominante na entrada e termine nas saídas úteis e dissipadas.",
+          "Marque onde aparece energia térmica mesmo quando ela não é o objetivo do sistema.",
+          "Discuta por que conservação de energia não significa 100% de aproveitamento útil."
+        ]
+      },
+      {
+        "id": "CIE-05-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Uma lâmpada LED recebe energia elétrica. Qual descrição é adequada?",
+        "answer": "Parte vira luz e parte se transforma em energia térmica; a energia total é conservada.",
+        "reasoning": "1) Use esta relação: Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora. 2) Use esta relação: Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação. 3) Use esta relação: Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada. 4) Aplicando essas relações à situação, a conclusão correta é: Parte vira luz e parte se transforma em energia térmica; a energia total é conservada."
+      },
+      {
+        "id": "CIE-05-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de fontes, transformações e conservação de energia.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-05-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Explore e teste a ideia",
+        "mediaRefs": [
+          "SRC-FIS-005",
+          "SRC-PHET-002"
+        ],
+        "optional": true
+      },
+      {
+        "id": "CIE-05-B12",
+        "type": "IMAGE_REQUEST",
+        "title": "Ilustração de apoio",
+        "requestRef": "IMG-CIE-05-001",
+        "status": "GENERATION_PENDING"
+      },
+      {
+        "id": "CIE-05-B13",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora.",
+          "Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação.",
+          "Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada.",
+          "Fontes renováveis são repostas em escalas humanas de tempo, enquanto fontes não renováveis dependem de reservas finitas ou de reposição muito lenta.",
+          "Avaliar uma fonte de energia exige considerar disponibilidade, custo, impacto socioambiental, confiabilidade e eficiência.",
+          "Na bicicleta, energia química do organismo pode transformar-se em energia mecânica e cinética, com dissipação térmica."
+        ]
+      },
+      {
+        "id": "CIE-05-B14",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique fontes, transformações e conservação de energia usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora.",
+            "Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-FIS-005",
+      "SRC-PHET-002"
+    ],
+    "mediaRefs": [
+      "SRC-FIS-005",
+      "SRC-PHET-002"
+    ],
+    "imageRequestRefs": [
+      "IMG-CIE-05-001"
+    ],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-05-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de fontes, transformações e conservação de energia, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora."
+        },
+        {
+          "key": "B",
+          "text": "Conservação de energia significa que toda energia continua igualmente útil."
+        },
+        {
+          "key": "C",
+          "text": "Energia é criada sempre que um aparelho é ligado."
+        },
+        {
+          "key": "D",
+          "text": "Energia térmica não participa de transformações em equipamentos elétricos."
+        },
+        {
+          "key": "E",
+          "text": "Toda fonte renovável é isenta de impactos ambientais."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-05-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-05-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar fontes, transformações e conservação de energia sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Toda fonte renovável é isenta de impactos ambientais."
+        },
+        {
+          "key": "B",
+          "text": "Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação."
+        },
+        {
+          "key": "C",
+          "text": "Energia é criada sempre que um aparelho é ligado."
+        },
+        {
+          "key": "D",
+          "text": "Conservação de energia significa que toda energia continua igualmente útil."
+        },
+        {
+          "key": "E",
+          "text": "Energia térmica não participa de transformações em equipamentos elétricos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-05-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-05-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em fontes, transformações e conservação de energia?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Energia é criada sempre que um aparelho é ligado."
+        },
+        {
+          "key": "B",
+          "text": "Toda fonte renovável é isenta de impactos ambientais."
+        },
+        {
+          "key": "C",
+          "text": "Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada."
+        },
+        {
+          "key": "D",
+          "text": "Conservação de energia significa que toda energia continua igualmente útil."
+        },
+        {
+          "key": "E",
+          "text": "Energia térmica não participa de transformações em equipamentos elétricos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a correta: Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-05-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-05-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma lâmpada LED recebe energia elétrica. Qual descrição é adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Toda energia vira luz, sem aquecimento."
+        },
+        {
+          "key": "B",
+          "text": "A lâmpada cria energia luminosa do nada."
+        },
+        {
+          "key": "C",
+          "text": "A energia elétrica desaparece depois de usada."
+        },
+        {
+          "key": "D",
+          "text": "Parte vira luz e parte se transforma em energia térmica; a energia total é conservada."
+        },
+        {
+          "key": "E",
+          "text": "LED transforma luz em eletricidade durante o uso comum."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Parte vira luz e parte se transforma em energia térmica; a energia total é conservada.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-05-CON-01",
+        "CIE-05-CON-02",
+        "CIE-05-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-05-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora.\nII. Energia é criada sempre que um aparelho é ligado.\nIII. Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada.\nIV. Conservação de energia significa que toda energia continua igualmente útil.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-05-CON-01",
+        "CIE-05-CON-02",
+        "CIE-05-CON-03",
+        "CIE-05-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-05-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre fontes, transformações e conservação de energia para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Energia é criada sempre que um aparelho é ligado."
+        },
+        {
+          "key": "B",
+          "text": "Toda fonte renovável é isenta de impactos ambientais."
+        },
+        {
+          "key": "C",
+          "text": "Energia térmica não participa de transformações em equipamentos elétricos."
+        },
+        {
+          "key": "D",
+          "text": "Conservação de energia significa que toda energia continua igualmente útil."
+        },
+        {
+          "key": "E",
+          "text": "Avaliar uma fonte de energia exige considerar disponibilidade, custo, impacto socioambiental, confiabilidade e eficiência."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Avaliar uma fonte de energia exige considerar disponibilidade, custo, impacto socioambiental, confiabilidade e eficiência.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-05-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-05-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre fontes, transformações e conservação de energia?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Energia é criada sempre que um aparelho é ligado."
+        },
+        {
+          "key": "B",
+          "text": "Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora."
+        },
+        {
+          "key": "C",
+          "text": "Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada."
+        },
+        {
+          "key": "D",
+          "text": "Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação."
+        },
+        {
+          "key": "E",
+          "text": "Fontes renováveis são repostas em escalas humanas de tempo, enquanto fontes não renováveis dependem de reservas finitas ou de reposição muito lenta."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a incorreta: Energia é criada sempre que um aparelho é ligado. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-05-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-05-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em fontes, transformações e conservação de energia?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Na bicicleta, energia química do organismo pode transformar-se em energia mecânica e cinética, com dissipação térmica."
+        },
+        {
+          "key": "B",
+          "text": "Energia é criada sempre que um aparelho é ligado."
+        },
+        {
+          "key": "C",
+          "text": "Toda fonte renovável é isenta de impactos ambientais."
+        },
+        {
+          "key": "D",
+          "text": "Energia térmica não participa de transformações em equipamentos elétricos."
+        },
+        {
+          "key": "E",
+          "text": "Conservação de energia significa que toda energia continua igualmente útil."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Na bicicleta, energia química do organismo pode transformar-se em energia mecânica e cinética, com dissipação térmica.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-05-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

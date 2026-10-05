@@ -1,0 +1,52 @@
+[
+  {
+    "id": "IMG-CIE-19-001",
+    "lessonId": "CIE-19",
+    "blockId": "CIE-19-B11",
+    "generator": "ANTIGRAVITY_NANO_BANANA_2",
+    "type": "EDUCATIONAL_ILLUSTRATION",
+    "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+    "prompt": "Ilustração de ecossistema brasileiro com plantas, herbívoro, predador, fungos e decomposição no solo, água, luz e elementos abióticos visíveis; sem setas e sem texto, estilo científico editorial.",
+    "factualConstraints": [
+      "Representar produtores, consumidores e decompositores",
+      "Evitar espécies incompatíveis no mesmo cenário",
+      "Sem texto embutido"
+    ],
+    "forbiddenElements": [
+      "texto ilegível",
+      "fórmulas inventadas",
+      "rótulos científicos não validados",
+      "marcas d'água"
+    ],
+    "aspectRatio": "16:9",
+    "textInImage": false,
+    "altTextDraft": "Ilustração educacional de apoio para a aula Ecossistemas e relações ecológicas básicas.",
+    "factualReviewStatus": "PENDING",
+    "visualReviewStatus": "PENDING",
+    "outputFilename": "IMG-CIE-19-001-v1.png",
+    "promptVersion": 2,
+    "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-ECO-001",
+      "SRC-ECO-002"
+    ],
+    "conceptIds": [
+      "CIE-19-CON-01",
+      "CIE-19-CON-02",
+      "CIE-19-CON-03",
+      "CIE-19-CON-04",
+      "CIE-19-CON-05",
+      "CIE-19-CON-06"
+    ],
+    "reviewChecklist": [
+      "No embedded text unless explicitly required.",
+      "No obvious duplicated/malformed objects.",
+      "No scientific claim beyond the factual constraints.",
+      "Composition remains readable at mobile width.",
+      "Alt text accurately describes the final selected image.",
+      "Factual review remains PENDING after generation."
+    ],
+    "status": "PENDING_GENERATION"
+  }
+]

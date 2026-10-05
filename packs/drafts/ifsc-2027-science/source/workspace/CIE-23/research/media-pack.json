@@ -1,0 +1,34 @@
+{
+  "lessonId": "CIE-23",
+  "mediaCandidates": [],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-23-001",
+      "lessonId": "CIE-23",
+      "blockId": "CIE-23-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração conceitual de fragmentação de habitat: floresta contínua dividida por estrada, animais em fragmentos separados e corredor ecológico em uma área, sem texto.",
+      "factualConstraints": [
+        "Estrada deve cortar o habitat",
+        "Corredor ecológico deve ser visualmente distinguível",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Biodiversidade, ameaças, conservação e preservação.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-23-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

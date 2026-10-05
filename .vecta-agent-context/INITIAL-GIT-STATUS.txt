@@ -1,0 +1,41 @@
+ M .gitignore
+ M AGENTS.md
+ M CHANGELOG.md
+ M PLANS.md
+ M PROJECT_STATUS.md
+ M docs/05-DOMAIN-MODEL.md
+ M docs/ADR/README.md
+ M next-env.d.ts
+ M package.json
+ M pnpm-lock.yaml
+ M src/app/achievements/page.tsx
+ M src/app/globals.css
+ M src/db/repositories/gamification-repository.ts
+ M src/db/repositories/memory-question-study-repository.ts
+ M src/db/repositories/memory-store.ts
+ M src/db/repositories/progress-repository.ts
+ M src/db/repositories/question-study-repository.ts
+ M src/features/activities/components/question-panel.tsx
+ M src/features/gamification/api.ts
+ M src/features/gamification/gamification-rules.ts
+ M src/styles/generated/design-tokens.css
+ M tests/integration/gamification-repository.test.ts
+ M tests/integration/percentage-study-slice.test.ts
+ M tests/integration/progress-repository.test.ts
+ M tests/unit/gamification-rules.test.ts
+?? .agents/
+?? .maestri/
+?? MATHEMATICS-COVERAGE-REPORT.md
+?? docs/ADR/0034-file-based-content-studio.md
+?? docs/ADR/0035-source-library-metadata.md
+?? docs/ifsc/MATHEMATICS-PRODUCTION-PLAN.md
+?? src/features/gamification/achievements-board.tsx
+?? src/features/gamification/study-rewards.ts
+?? src/styles/achievements.css
+?? tests/component/achievements-board.test.tsx
+?? tests/integration/content-studio-import.test.ts
+?? tests/integration/study-rewards.test.ts
+?? tests/unit/content-studio.test.ts
+?? tests/unit/source-library.test.ts
+?? tools/
+?? vecta-source-library/

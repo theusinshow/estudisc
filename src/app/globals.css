@@ -422,6 +422,11 @@ a {
   margin: 0;
 }
 
+.lesson-callout > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
 .first-run-callout {
   gap: var(--kos-spacing-6);
 }
@@ -1576,7 +1581,7 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 }
 
 /* Page frame: content sits on paper, no wrapper box. */
-.foundation-panel { display: grid; gap: var(--kos-spacing-10); width: min(100%, 1040px); margin-inline: auto; }
+.foundation-panel { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--kos-spacing-10); width: min(100%, 1040px); margin-inline: auto; }
 .foundation-panel h1 { margin: 0; font-size: clamp(2.25rem, 7vw, 3.5rem); font-weight: 900; line-height: 1; }
 .foundation-panel > p { max-width: 65ch; margin: 0; font-size: 1.0625rem; color: var(--kos-color-dim); }
 .eyebrow { justify-self: start; margin: 0; padding: 2px var(--kos-spacing-6); border: var(--kos-border-hair) solid var(--kos-color-ink); border-radius: 999px; background: var(--kos-color-panel); font-family: var(--font-mono), monospace; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
@@ -1864,7 +1869,7 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .review-items details[open] .summary-text small { display: none; }
 
 /* Lesson stepper: one idea per screen inside study sessions. */
-.lesson-stepper { display: grid; gap: var(--kos-spacing-10); scroll-margin-top: 76px; }
+.lesson-stepper { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--kos-spacing-10); scroll-margin-top: 76px; }
 .stepper-head { position: sticky; top: 60px; z-index: 15; display: flex; flex-wrap: wrap; align-items: center; gap: var(--kos-spacing-4) var(--kos-spacing-8); padding: var(--kos-spacing-6) 0; background: var(--kos-color-paper); }
 @media (min-width: 900px) { .stepper-head { top: 72px; } .lesson-stepper { scroll-margin-top: 88px; } }
 .stepper-count { font-size: 0.9375rem; }
@@ -1872,7 +1877,7 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .stepper-head .stepper-toggle { margin-left: auto; min-height: 36px; padding: 0 var(--kos-spacing-8); border-style: dashed; box-shadow: none; font-size: 0.875rem; }
 .stepper-bar { flex-basis: 100%; height: 12px; border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: 999px; background: var(--kos-color-panel); overflow: hidden; }
 .stepper-bar span { display: block; height: 100%; background: var(--kos-color-signal); border-right: var(--kos-border-rule) solid var(--kos-color-ink); transition: width var(--kos-motion-base) var(--kos-motion-easing); }
-.lesson-step { display: grid; gap: var(--kos-spacing-10); min-height: 40dvh; align-content: start; }
+.lesson-step { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--kos-spacing-10); min-height: 40dvh; align-content: start; }
 .lesson-stepper[data-mode="all"] .lesson-step { min-height: 0; }
 .lesson-step[data-kind="check"]::before { content: "Responda antes de seguir"; justify-self: start; padding: 2px var(--kos-spacing-6); border: var(--kos-border-hair) solid var(--kos-color-ink); border-radius: 999px; background: var(--kos-color-surface-pink); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
 .lesson-step[data-kind="exit"]::before { content: "Desafio final"; justify-self: start; padding: 2px var(--kos-spacing-6); border: var(--kos-border-hair) solid var(--kos-color-ink); border-radius: 999px; background: var(--kos-color-signal); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }

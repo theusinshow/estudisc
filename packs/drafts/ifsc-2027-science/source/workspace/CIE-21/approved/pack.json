@@ -1,0 +1,487 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-21",
+    "subject": "CIE",
+    "title": "Sustentabilidade, poluição e impactos ambientais",
+    "unit": "Vida e Evolução — Ecologia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-21-CON-01",
+        "name": "Sustentabilidade",
+        "masteryTarget": "Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial."
+      },
+      {
+        "id": "CIE-21-CON-02",
+        "name": "Poluição do ar, água e solo",
+        "masteryTarget": "Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível."
+      },
+      {
+        "id": "CIE-21-CON-03",
+        "name": "Resíduos",
+        "masteryTarget": "Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo."
+      },
+      {
+        "id": "CIE-21-CON-04",
+        "name": "Impactos ambientais",
+        "masteryTarget": "Sustentabilidade envolve dimensões ambiental, social e econômica e não se resume a uma ação individual isolada."
+      },
+      {
+        "id": "CIE-21-CON-05",
+        "name": "Prevenção e mitigação",
+        "masteryTarget": "Impactos devem ser avaliados ao longo do ciclo de vida de produtos e tecnologias."
+      },
+      {
+        "id": "CIE-21-CON-06",
+        "name": "Consumo e energia como conexão",
+        "masteryTarget": "Mitigação reduz causas ou intensidade de impactos; adaptação reduz vulnerabilidade aos efeitos que já ocorrem ou são esperados."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-21-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Uma cidade reduz vazamentos, amplia tratamento de esgoto e recupera mata ciliar. Qual ideia melhor resume essas ações? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-21-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de sustentabilidade, poluição e impactos ambientais.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-21-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial. Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo sustentabilidade, poluição e impactos ambientais.",
+        "items": [
+          "Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial.",
+          "Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível."
+        ]
+      },
+      {
+        "id": "CIE-21-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo. Sustentabilidade envolve dimensões ambiental, social e econômica e não se resume a uma ação individual isolada. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo.",
+          "Sustentabilidade envolve dimensões ambiental, social e econômica e não se resume a uma ação individual isolada."
+        ]
+      },
+      {
+        "id": "CIE-21-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Impactos devem ser avaliados ao longo do ciclo de vida de produtos e tecnologias. Mitigação reduz causas ou intensidade de impactos; adaptação reduz vulnerabilidade aos efeitos que já ocorrem ou são esperados. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Impactos devem ser avaliados ao longo do ciclo de vida de produtos e tecnologias.",
+          "Mitigação reduz causas ou intensidade de impactos; adaptação reduz vulnerabilidade aos efeitos que já ocorrem ou são esperados."
+        ]
+      },
+      {
+        "id": "CIE-21-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "sustentabilidade",
+          "poluição do ar, água e solo",
+          "resíduos",
+          "impactos ambientais",
+          "prevenção e mitigação",
+          "consumo e energia como conexão"
+        ]
+      },
+      {
+        "id": "CIE-21-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Sustentabilidade significa apenas reciclar lixo doméstico.",
+          "Qualquer poluição desaparece rapidamente sem intervenção.",
+          "Impactos ambientais são sempre locais e nunca afetam regiões distantes.",
+          "Tecnologia mais nova é automaticamente sustentável."
+        ]
+      },
+      {
+        "id": "CIE-21-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Escolha um problema ambiental local ou hipotético e monte a cadeia causa → impacto → grupos afetados → medida de prevenção/mitigação.",
+          "Separe poluição do ar, água e solo quando pertinente.",
+          "Avalie uma solução considerando efeitos colaterais e não apenas benefício imediato.",
+          "Conecte sustentabilidade a decisões concretas de consumo, produção e gestão."
+        ]
+      },
+      {
+        "id": "CIE-21-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Uma cidade reduz vazamentos, amplia tratamento de esgoto e recupera mata ciliar. Qual ideia melhor resume essas ações?",
+        "answer": "São medidas integradas de sustentabilidade e redução de impactos sobre água e ecossistemas.",
+        "reasoning": "1) Use esta relação: Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial. 2) Use esta relação: Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível. 3) Use esta relação: Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo. 4) Aplicando essas relações à situação, a conclusão correta é: São medidas integradas de sustentabilidade e redução de impactos sobre água e ecossistemas."
+      },
+      {
+        "id": "CIE-21-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de sustentabilidade, poluição e impactos ambientais.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-21-B11",
+        "type": "IMAGE_REQUEST",
+        "title": "Ilustração de apoio",
+        "requestRef": "IMG-CIE-21-001",
+        "status": "GENERATION_PENDING"
+      },
+      {
+        "id": "CIE-21-B12",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial.",
+          "Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível.",
+          "Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo.",
+          "Sustentabilidade envolve dimensões ambiental, social e econômica e não se resume a uma ação individual isolada.",
+          "Impactos devem ser avaliados ao longo do ciclo de vida de produtos e tecnologias.",
+          "Mitigação reduz causas ou intensidade de impactos; adaptação reduz vulnerabilidade aos efeitos que já ocorrem ou são esperados."
+        ]
+      },
+      {
+        "id": "CIE-21-B13",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique sustentabilidade, poluição e impactos ambientais usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial.",
+            "Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-ECO-002",
+      "SRC-SED-001"
+    ],
+    "mediaRefs": [],
+    "imageRequestRefs": [
+      "IMG-CIE-21-001"
+    ],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-21-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de sustentabilidade, poluição e impactos ambientais, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sustentabilidade significa apenas reciclar lixo doméstico."
+        },
+        {
+          "key": "B",
+          "text": "Tecnologia mais nova é automaticamente sustentável."
+        },
+        {
+          "key": "C",
+          "text": "Qualquer poluição desaparece rapidamente sem intervenção."
+        },
+        {
+          "key": "D",
+          "text": "Impactos ambientais são sempre locais e nunca afetam regiões distantes."
+        },
+        {
+          "key": "E",
+          "text": "Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-21-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-21-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar sustentabilidade, poluição e impactos ambientais sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível."
+        },
+        {
+          "key": "B",
+          "text": "Qualquer poluição desaparece rapidamente sem intervenção."
+        },
+        {
+          "key": "C",
+          "text": "Tecnologia mais nova é automaticamente sustentável."
+        },
+        {
+          "key": "D",
+          "text": "Impactos ambientais são sempre locais e nunca afetam regiões distantes."
+        },
+        {
+          "key": "E",
+          "text": "Sustentabilidade significa apenas reciclar lixo doméstico."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-21-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-21-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em sustentabilidade, poluição e impactos ambientais?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sustentabilidade significa apenas reciclar lixo doméstico."
+        },
+        {
+          "key": "B",
+          "text": "Impactos ambientais são sempre locais e nunca afetam regiões distantes."
+        },
+        {
+          "key": "C",
+          "text": "Tecnologia mais nova é automaticamente sustentável."
+        },
+        {
+          "key": "D",
+          "text": "Qualquer poluição desaparece rapidamente sem intervenção."
+        },
+        {
+          "key": "E",
+          "text": "Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-21-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-21-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma cidade reduz vazamentos, amplia tratamento de esgoto e recupera mata ciliar. Qual ideia melhor resume essas ações?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Eliminam qualquer impacto ambiental futuro."
+        },
+        {
+          "key": "B",
+          "text": "Afetam apenas a economia, não o ambiente."
+        },
+        {
+          "key": "C",
+          "text": "São exemplos de poluição planejada."
+        },
+        {
+          "key": "D",
+          "text": "São medidas integradas de sustentabilidade e redução de impactos sobre água e ecossistemas."
+        },
+        {
+          "key": "E",
+          "text": "Tornam desnecessário monitorar a qualidade da água."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "São medidas integradas de sustentabilidade e redução de impactos sobre água e ecossistemas.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-21-CON-01",
+        "CIE-21-CON-02",
+        "CIE-21-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-21-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial.\nII. Sustentabilidade significa apenas reciclar lixo doméstico.\nIII. Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo.\nIV. Qualquer poluição desaparece rapidamente sem intervenção.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-21-CON-01",
+        "CIE-21-CON-02",
+        "CIE-21-CON-03",
+        "CIE-21-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-21-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre sustentabilidade, poluição e impactos ambientais para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Impactos ambientais são sempre locais e nunca afetam regiões distantes."
+        },
+        {
+          "key": "B",
+          "text": "Qualquer poluição desaparece rapidamente sem intervenção."
+        },
+        {
+          "key": "C",
+          "text": "Impactos devem ser avaliados ao longo do ciclo de vida de produtos e tecnologias."
+        },
+        {
+          "key": "D",
+          "text": "Tecnologia mais nova é automaticamente sustentável."
+        },
+        {
+          "key": "E",
+          "text": "Sustentabilidade significa apenas reciclar lixo doméstico."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a correta: Impactos devem ser avaliados ao longo do ciclo de vida de produtos e tecnologias.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-21-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-21-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre sustentabilidade, poluição e impactos ambientais?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo."
+        },
+        {
+          "key": "B",
+          "text": "Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível."
+        },
+        {
+          "key": "C",
+          "text": "Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial."
+        },
+        {
+          "key": "D",
+          "text": "Sustentabilidade envolve dimensões ambiental, social e econômica e não se resume a uma ação individual isolada."
+        },
+        {
+          "key": "E",
+          "text": "Sustentabilidade significa apenas reciclar lixo doméstico."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a incorreta: Sustentabilidade significa apenas reciclar lixo doméstico. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-21-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-21-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em sustentabilidade, poluição e impactos ambientais?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Impactos ambientais são sempre locais e nunca afetam regiões distantes."
+        },
+        {
+          "key": "B",
+          "text": "Mitigação reduz causas ou intensidade de impactos; adaptação reduz vulnerabilidade aos efeitos que já ocorrem ou são esperados."
+        },
+        {
+          "key": "C",
+          "text": "Sustentabilidade significa apenas reciclar lixo doméstico."
+        },
+        {
+          "key": "D",
+          "text": "Tecnologia mais nova é automaticamente sustentável."
+        },
+        {
+          "key": "E",
+          "text": "Qualquer poluição desaparece rapidamente sem intervenção."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Mitigação reduz causas ou intensidade de impactos; adaptação reduz vulnerabilidade aos efeitos que já ocorrem ou são esperados.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-21-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

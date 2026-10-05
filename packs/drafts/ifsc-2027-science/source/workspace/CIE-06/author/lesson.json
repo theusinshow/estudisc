@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "CIE-06",
+  "subject": "CIE",
+  "title": "Circuitos elétricos",
+  "unit": "Matéria e Energia",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+  "concepts": [
+    {
+      "id": "CIE-06-CON-01",
+      "name": "Corrente elétrica em nível fundamental",
+      "masteryTarget": "Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado."
+    },
+    {
+      "id": "CIE-06-CON-02",
+      "name": "Circuito aberto e fechado",
+      "masteryTarget": "Uma chave aberta interrompe o caminho e uma chave fechada permite continuidade elétrica."
+    },
+    {
+      "id": "CIE-06-CON-03",
+      "name": "Fonte, condutor, receptor e interruptor",
+      "masteryTarget": "Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas."
+    },
+    {
+      "id": "CIE-06-CON-04",
+      "name": "Associação qualitativa",
+      "masteryTarget": "Materiais condutores permitem movimento de cargas com maior facilidade que isolantes nas condições usuais."
+    },
+    {
+      "id": "CIE-06-CON-05",
+      "name": "Segurança elétrica",
+      "masteryTarget": "Curto-circuito é uma conexão de resistência muito baixa que pode produzir correntes intensas e aquecimento perigoso."
+    },
+    {
+      "id": "CIE-06-CON-06",
+      "name": "Diagramas elétricos usam símbolos padronizados para represen…",
+      "masteryTarget": "Diagramas elétricos usam símbolos padronizados para representar componentes e conexões."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-06-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Uma pilha, fios e uma lâmpada estão conectados, mas um dos fios está desconectado. O que ocorre? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+    },
+    {
+      "id": "CIE-06-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar com as próprias palavras os conceitos centrais de circuitos elétricos.",
+        "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+        "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+      ]
+    },
+    {
+      "id": "CIE-06-B03",
+      "type": "EXPLANATION",
+      "title": "Base conceitual",
+      "content": "Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado. Uma chave aberta interrompe o caminho e uma chave fechada permite continuidade elétrica. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo circuitos elétricos.",
+      "items": [
+        "Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado.",
+        "Uma chave aberta interrompe o caminho e uma chave fechada permite continuidade elétrica."
+      ]
+    },
+    {
+      "id": "CIE-06-B04",
+      "type": "EXPLANATION",
+      "title": "Como as ideias se conectam",
+      "content": "Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas. Materiais condutores permitem movimento de cargas com maior facilidade que isolantes nas condições usuais. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "items": [
+        "Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas.",
+        "Materiais condutores permitem movimento de cargas com maior facilidade que isolantes nas condições usuais."
+      ]
+    },
+    {
+      "id": "CIE-06-B05",
+      "type": "EXPLANATION",
+      "title": "Aplicações, limites e leitura científica",
+      "content": "Curto-circuito é uma conexão de resistência muito baixa que pode produzir correntes intensas e aquecimento perigoso. Diagramas elétricos usam símbolos padronizados para representar componentes e conexões. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "items": [
+        "Curto-circuito é uma conexão de resistência muito baixa que pode produzir correntes intensas e aquecimento perigoso.",
+        "Diagramas elétricos usam símbolos padronizados para representar componentes e conexões."
+      ]
+    },
+    {
+      "id": "CIE-06-B06",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Termos que precisam estar claros",
+      "items": [
+        "corrente elétrica em nível fundamental",
+        "circuito aberto e fechado",
+        "fonte, condutor, receptor e interruptor",
+        "associação qualitativa",
+        "segurança elétrica"
+      ]
+    },
+    {
+      "id": "CIE-06-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTIONS",
+      "title": "Erros que a prova pode explorar",
+      "items": [
+        "Uma lâmpada acende mesmo com o circuito aberto se a bateria for forte.",
+        "Corrente elétrica é consumida completamente pelo primeiro componente do circuito.",
+        "Todo material é igualmente condutor.",
+        "Curto-circuito é uma forma segura de economizar energia."
+      ]
+    },
+    {
+      "id": "CIE-06-B08",
+      "type": "CALLOUT",
+      "variant": "ACTIVE_LEARNING",
+      "title": "Atividade de compreensão",
+      "items": [
+        "No PhET ou em um esquema, monte pilha, fios, chave e lâmpada.",
+        "Teste circuito aberto e fechado e registre o que muda.",
+        "Crie de propósito uma ligação incorreta e explique por que a lâmpada não acende.",
+        "Identifique fonte, condutores, receptor e interruptor no circuito final."
+      ]
+    },
+    {
+      "id": "CIE-06-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo resolvido passo a passo",
+      "prompt": "Uma pilha, fios e uma lâmpada estão conectados, mas um dos fios está desconectado. O que ocorre?",
+      "answer": "O circuito está aberto e não há corrente contínua pelo caminho completo; a lâmpada não acende.",
+      "reasoning": "1) Use esta relação: Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado. 2) Use esta relação: Uma chave aberta interrompe o caminho e uma chave fechada permite continuidade elétrica. 3) Use esta relação: Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas. 4) Aplicando essas relações à situação, a conclusão correta é: O circuito está aberto e não há corrente contínua pelo caminho completo; a lâmpada não acende."
+    },
+    {
+      "id": "CIE-06-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Como isso costuma aparecer em prova",
+      "items": [
+        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de circuitos elétricos.",
+        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+      ]
+    },
+    {
+      "id": "CIE-06-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Explore e teste a ideia",
+      "mediaRefs": [
+        "SRC-FIS-006",
+        "SRC-PHET-003"
+      ],
+      "optional": true
+    },
+    {
+      "id": "CIE-06-B12",
+      "type": "DETERMINISTIC_COMPONENT_REQUEST",
+      "title": "Componente visual/interativo",
+      "request": "SVG de circuito simples com bateria, chave, lâmpada e fios; gerar versões aberto/fechado usando símbolos consistentes.",
+      "status": "IMPLEMENTATION_REQUIRED"
+    },
+    {
+      "id": "CIE-06-B13",
+      "type": "SUMMARY",
+      "title": "Resumo de prova",
+      "items": [
+        "Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado.",
+        "Uma chave aberta interrompe o caminho e uma chave fechada permite continuidade elétrica.",
+        "Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas.",
+        "Materiais condutores permitem movimento de cargas com maior facilidade que isolantes nas condições usuais.",
+        "Curto-circuito é uma conexão de resistência muito baixa que pode produzir correntes intensas e aquecimento perigoso.",
+        "Diagramas elétricos usam símbolos padronizados para representar componentes e conexões."
+      ]
+    },
+    {
+      "id": "CIE-06-B14",
+      "type": "EXIT_TICKET",
+      "title": "Recuperação ativa",
+      "prompt": "Sem consultar a aula, explique circuitos elétricos usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+      "answerGuide": {
+        "mustMention": [
+          "Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado.",
+          "Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas.",
+          "correção explícita de pelo menos um erro conceitual da aula"
+        ]
+      }
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-FIS-006",
+    "SRC-PHET-003"
+  ],
+  "mediaRefs": [
+    "SRC-FIS-006",
+    "SRC-PHET-003"
+  ],
+  "imageRequestRefs": [],
+  "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+}

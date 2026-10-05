@@ -1,0 +1,44 @@
+{
+  "lessonId": "CIE-12",
+  "mediaCandidates": [
+    {
+      "id": "SRC-QUI-007",
+      "title": "Substâncias e misturas",
+      "org": "Conexão Escola — SME Goiânia",
+      "type": "LESSON_SLIDES_ACTIVITY",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/ciencias-da-natureza-como-classificar-e-separar-as-misturas/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Complementa esta aula com material público/educacional ou interação."
+    }
+  ],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-12-001",
+      "lessonId": "CIE-12",
+      "blockId": "CIE-12-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Quatro recipientes de laboratório em composição educacional: água pura transparente, água com sal dissolvido visualmente uniforme, água e óleo em duas camadas, água com areia sedimentada; sem rótulos, fundo neutro.",
+      "factualConstraints": [
+        "Água+óleo deve ter duas fases visíveis",
+        "Sal dissolvido não deve aparecer como cristais suspensos",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Substâncias puras, misturas, fases e componentes.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-12-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

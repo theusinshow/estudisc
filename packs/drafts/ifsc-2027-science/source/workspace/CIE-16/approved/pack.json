@@ -1,0 +1,482 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-16",
+    "subject": "CIE",
+    "title": "Estruturas celulares, bioquímica e metabolismo",
+    "unit": "Vida e Evolução — Citologia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-16-CON-01",
+        "name": "Membrana, citoplasma, núcleo e organelas principais",
+        "masteryTarget": "Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente."
+      },
+      {
+        "id": "CIE-16-CON-02",
+        "name": "Água, sais, carboidratos, lipídios e proteínas em nível introdutório",
+        "masteryTarget": "Ribossomos atuam na síntese de proteínas."
+      },
+      {
+        "id": "CIE-16-CON-03",
+        "name": "Metabolismo",
+        "masteryTarget": "Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes."
+      },
+      {
+        "id": "CIE-16-CON-04",
+        "name": "Respiração celular e fotossíntese como processos centrais, sem aprofundamento bioquímico",
+        "masteryTarget": "Cloroplastos realizam fotossíntese em células de plantas e algas que os possuem."
+      },
+      {
+        "id": "CIE-16-CON-05",
+        "name": "Água, sais minerais, carboidratos, lipídios, proteínas e áci…",
+        "masteryTarget": "Água, sais minerais, carboidratos, lipídios, proteínas e ácidos nucleicos são componentes químicos importantes das células."
+      },
+      {
+        "id": "CIE-16-CON-06",
+        "name": "Metabolismo é o conjunto de reações químicas celulares",
+        "masteryTarget": "Metabolismo é o conjunto de reações químicas celulares; inclui processos de construção e de degradação de moléculas."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-16-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Uma célula muscular aumenta sua demanda de energia durante exercício. Qual organela e processo estão diretamente relacionados ao fornecimento de ATP em células eucarióticas? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-16-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de estruturas celulares, bioquímica e metabolismo.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-16-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente. Ribossomos atuam na síntese de proteínas. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo estruturas celulares, bioquímica e metabolismo.",
+        "items": [
+          "Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente.",
+          "Ribossomos atuam na síntese de proteínas."
+        ]
+      },
+      {
+        "id": "CIE-16-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes. Cloroplastos realizam fotossíntese em células de plantas e algas que os possuem. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes.",
+          "Cloroplastos realizam fotossíntese em células de plantas e algas que os possuem."
+        ]
+      },
+      {
+        "id": "CIE-16-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Água, sais minerais, carboidratos, lipídios, proteínas e ácidos nucleicos são componentes químicos importantes das células. Metabolismo é o conjunto de reações químicas celulares; inclui processos de construção e de degradação de moléculas. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Água, sais minerais, carboidratos, lipídios, proteínas e ácidos nucleicos são componentes químicos importantes das células.",
+          "Metabolismo é o conjunto de reações químicas celulares; inclui processos de construção e de degradação de moléculas."
+        ]
+      },
+      {
+        "id": "CIE-16-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "membrana, citoplasma, núcleo e organelas principais",
+          "água, sais, carboidratos, lipídios e proteínas em nível introdutório",
+          "metabolismo",
+          "respiração celular e fotossíntese como processos centrais, sem aprofundamento bioquímico"
+        ]
+      },
+      {
+        "id": "CIE-16-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Mitocôndrias produzem matéria do nada.",
+          "Ribossomos armazenam toda a informação genética da célula.",
+          "Fotossíntese ocorre em todas as células animais.",
+          "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+        ]
+      },
+      {
+        "id": "CIE-16-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Faça uma tabela 'estrutura → função' para membrana, ribossomo, mitocôndria, cloroplasto e núcleo.",
+          "Relacione respiração celular e fotossíntese às transformações de matéria e energia sem decorar equações avançadas.",
+          "Identifique quais estruturas aparecem em células animais, vegetais ou em ambas.",
+          "Evite a analogia 'organelas são órgãos em miniatura' quando ela levar a conclusões erradas."
+        ]
+      },
+      {
+        "id": "CIE-16-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Uma célula muscular aumenta sua demanda de energia durante exercício. Qual organela e processo estão diretamente relacionados ao fornecimento de ATP em células eucarióticas?",
+        "answer": "Mitocôndrias e respiração celular.",
+        "reasoning": "1) Use esta relação: Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente. 2) Use esta relação: Ribossomos atuam na síntese de proteínas. 3) Use esta relação: Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes. 4) Aplicando essas relações à situação, a conclusão correta é: Mitocôndrias e respiração celular."
+      },
+      {
+        "id": "CIE-16-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de estruturas celulares, bioquímica e metabolismo.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-16-B11",
+        "type": "DETERMINISTIC_COMPONENT_REQUEST",
+        "title": "Componente visual/interativo",
+        "request": "Diagrama vetorial de organelas principais e fluxo conceitual de metabolismo; não usar IA generativa para anatomia celular precisa.",
+        "status": "IMPLEMENTATION_REQUIRED"
+      },
+      {
+        "id": "CIE-16-B12",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente.",
+          "Ribossomos atuam na síntese de proteínas.",
+          "Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes.",
+          "Cloroplastos realizam fotossíntese em células de plantas e algas que os possuem.",
+          "Água, sais minerais, carboidratos, lipídios, proteínas e ácidos nucleicos são componentes químicos importantes das células.",
+          "Metabolismo é o conjunto de reações químicas celulares; inclui processos de construção e de degradação de moléculas."
+        ]
+      },
+      {
+        "id": "CIE-16-B13",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique estruturas celulares, bioquímica e metabolismo usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente.",
+            "Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-BIO-001"
+    ],
+    "mediaRefs": [],
+    "imageRequestRefs": [],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-16-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de estruturas celulares, bioquímica e metabolismo, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ribossomos armazenam toda a informação genética da célula."
+        },
+        {
+          "key": "B",
+          "text": "Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente."
+        },
+        {
+          "key": "C",
+          "text": "Mitocôndrias produzem matéria do nada."
+        },
+        {
+          "key": "D",
+          "text": "Fotossíntese ocorre em todas as células animais."
+        },
+        {
+          "key": "E",
+          "text": "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-16-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-16-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar estruturas celulares, bioquímica e metabolismo sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mitocôndrias produzem matéria do nada."
+        },
+        {
+          "key": "B",
+          "text": "Ribossomos armazenam toda a informação genética da célula."
+        },
+        {
+          "key": "C",
+          "text": "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+        },
+        {
+          "key": "D",
+          "text": "Ribossomos atuam na síntese de proteínas."
+        },
+        {
+          "key": "E",
+          "text": "Fotossíntese ocorre em todas as células animais."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Ribossomos atuam na síntese de proteínas.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-16-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-16-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em estruturas celulares, bioquímica e metabolismo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes."
+        },
+        {
+          "key": "B",
+          "text": "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+        },
+        {
+          "key": "C",
+          "text": "Mitocôndrias produzem matéria do nada."
+        },
+        {
+          "key": "D",
+          "text": "Fotossíntese ocorre em todas as células animais."
+        },
+        {
+          "key": "E",
+          "text": "Ribossomos armazenam toda a informação genética da célula."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-16-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-16-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma célula muscular aumenta sua demanda de energia durante exercício. Qual organela e processo estão diretamente relacionados ao fornecimento de ATP em células eucarióticas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloroplastos e fotossíntese em células musculares."
+        },
+        {
+          "key": "B",
+          "text": "Núcleo e filtração do sangue."
+        },
+        {
+          "key": "C",
+          "text": "Ribossomos e digestão extracelular."
+        },
+        {
+          "key": "D",
+          "text": "Mitocôndrias e respiração celular."
+        },
+        {
+          "key": "E",
+          "text": "Parede celular e transpiração."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Mitocôndrias e respiração celular.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-16-CON-01",
+        "CIE-16-CON-02",
+        "CIE-16-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-16-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente.\nII. Mitocôndrias produzem matéria do nada.\nIII. Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes.\nIV. Ribossomos armazenam toda a informação genética da célula.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-16-CON-01",
+        "CIE-16-CON-02",
+        "CIE-16-CON-03",
+        "CIE-16-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-16-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre estruturas celulares, bioquímica e metabolismo para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Água, sais minerais, carboidratos, lipídios, proteínas e ácidos nucleicos são componentes químicos importantes das células."
+        },
+        {
+          "key": "B",
+          "text": "Fotossíntese ocorre em todas as células animais."
+        },
+        {
+          "key": "C",
+          "text": "Mitocôndrias produzem matéria do nada."
+        },
+        {
+          "key": "D",
+          "text": "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+        },
+        {
+          "key": "E",
+          "text": "Ribossomos armazenam toda a informação genética da célula."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Água, sais minerais, carboidratos, lipídios, proteínas e ácidos nucleicos são componentes químicos importantes das células.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-16-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-16-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre estruturas celulares, bioquímica e metabolismo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cloroplastos realizam fotossíntese em células de plantas e algas que os possuem."
+        },
+        {
+          "key": "B",
+          "text": "Ribossomos atuam na síntese de proteínas."
+        },
+        {
+          "key": "C",
+          "text": "Mitocôndrias produzem matéria do nada."
+        },
+        {
+          "key": "D",
+          "text": "Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes."
+        },
+        {
+          "key": "E",
+          "text": "Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a incorreta: Mitocôndrias produzem matéria do nada. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-16-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-16-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em estruturas celulares, bioquímica e metabolismo?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mitocôndrias produzem matéria do nada."
+        },
+        {
+          "key": "B",
+          "text": "Ribossomos armazenam toda a informação genética da célula."
+        },
+        {
+          "key": "C",
+          "text": "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+        },
+        {
+          "key": "D",
+          "text": "Fotossíntese ocorre em todas as células animais."
+        },
+        {
+          "key": "E",
+          "text": "Metabolismo é o conjunto de reações químicas celulares; inclui processos de construção e de degradação de moléculas."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Metabolismo é o conjunto de reações químicas celulares; inclui processos de construção e de degradação de moléculas.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-16-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

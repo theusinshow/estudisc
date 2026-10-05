@@ -1,0 +1,34 @@
+{
+  "lessonId": "CIE-36",
+  "mediaCandidates": [],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-36-001",
+      "lessonId": "CIE-36",
+      "blockId": "CIE-36-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração editorial de campo paleontológico com camadas rochosas e fósseis sendo escavados por equipe, sem texto; cena cientificamente plausível e contemporânea.",
+      "factualConstraints": [
+        "Fósseis integrados a camadas sedimentares",
+        "Sem dinossauros vivos ao lado dos pesquisadores",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Registro fóssil e origem da vida.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-36-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

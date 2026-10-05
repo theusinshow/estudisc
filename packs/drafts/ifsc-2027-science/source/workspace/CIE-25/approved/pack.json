@@ -1,0 +1,486 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-25",
+    "subject": "CIE",
+    "title": "Mendel e a 1ª Lei",
+    "unit": "Vida e Evolução — Genética",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-25-CON-01",
+        "name": "Experimentos de Mendel",
+        "masteryTarget": "Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides."
+      },
+      {
+        "id": "CIE-25-CON-02",
+        "name": "Caracteres",
+        "masteryTarget": "Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente."
+      },
+      {
+        "id": "CIE-25-CON-03",
+        "name": "Alelos",
+        "masteryTarget": "Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par."
+      },
+      {
+        "id": "CIE-25-CON-04",
+        "name": "Dominante/recessivo",
+        "masteryTarget": "Em dominância completa, heterozigotos apresentam o fenótipo associado ao alelo dominante, mas o alelo recessivo continua presente."
+      },
+      {
+        "id": "CIE-25-CON-05",
+        "name": "Genótipo/fenótipo",
+        "masteryTarget": "Cruzamentos simples podem ser representados por quadros de Punnett para visualizar probabilidades de combinações."
+      },
+      {
+        "id": "CIE-25-CON-06",
+        "name": "Cruzamentos simples",
+        "masteryTarget": "Probabilidade genética indica chance esperada em muitos eventos e não garante o resultado de uma família pequena."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-25-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Em um cruzamento Aa × Aa com dominância completa, qual proporção genotípica esperada aparece no modelo mendeliano simples? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-25-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de mendel e a 1ª lei.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-25-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides. Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo mendel e a 1ª lei.",
+        "items": [
+          "Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides.",
+          "Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente."
+        ]
+      },
+      {
+        "id": "CIE-25-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par. Em dominância completa, heterozigotos apresentam o fenótipo associado ao alelo dominante, mas o alelo recessivo continua presente. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par.",
+          "Em dominância completa, heterozigotos apresentam o fenótipo associado ao alelo dominante, mas o alelo recessivo continua presente."
+        ]
+      },
+      {
+        "id": "CIE-25-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Cruzamentos simples podem ser representados por quadros de Punnett para visualizar probabilidades de combinações. Probabilidade genética indica chance esperada em muitos eventos e não garante o resultado de uma família pequena. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Cruzamentos simples podem ser representados por quadros de Punnett para visualizar probabilidades de combinações.",
+          "Probabilidade genética indica chance esperada em muitos eventos e não garante o resultado de uma família pequena."
+        ]
+      },
+      {
+        "id": "CIE-25-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "experimentos de Mendel",
+          "caracteres",
+          "alelos",
+          "dominante/recessivo",
+          "genótipo/fenótipo",
+          "cruzamentos simples",
+          "probabilidade básica em cruzamentos"
+        ]
+      },
+      {
+        "id": "CIE-25-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Alelos recessivos desaparecem quando há um alelo dominante.",
+          "Fenótipo e genótipo são sinônimos.",
+          "Cada gameta recebe os dois alelos de um par.",
+          "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        ]
+      },
+      {
+        "id": "CIE-25-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Represente um cruzamento monohíbrido simples com quadro de Punnett ou fichas de alelos.",
+          "Separe genótipo de fenótipo e identifique gametas possíveis.",
+          "Converta as combinações em probabilidades, lembrando que probabilidade não obriga uma família pequena a seguir exatamente a proporção esperada.",
+          "Explique a segregação dos alelos na formação dos gametas."
+        ]
+      },
+      {
+        "id": "CIE-25-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Em um cruzamento Aa × Aa com dominância completa, qual proporção genotípica esperada aparece no modelo mendeliano simples?",
+        "answer": "1 AA : 2 Aa : 1 aa.",
+        "reasoning": "1) Use esta relação: Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides. 2) Use esta relação: Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente. 3) Use esta relação: Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par. 4) Aplicando essas relações à situação, a conclusão correta é: 1 AA : 2 Aa : 1 aa."
+      },
+      {
+        "id": "CIE-25-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de mendel e a 1ª lei.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-25-B11",
+        "type": "DETERMINISTIC_COMPONENT_REQUEST",
+        "title": "Componente visual/interativo",
+        "request": "Quadrado de Punnett interativo/determinístico; jamais gerado por imagem.",
+        "status": "IMPLEMENTATION_REQUIRED"
+      },
+      {
+        "id": "CIE-25-B12",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides.",
+          "Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente.",
+          "Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par.",
+          "Em dominância completa, heterozigotos apresentam o fenótipo associado ao alelo dominante, mas o alelo recessivo continua presente.",
+          "Cruzamentos simples podem ser representados por quadros de Punnett para visualizar probabilidades de combinações.",
+          "Probabilidade genética indica chance esperada em muitos eventos e não garante o resultado de uma família pequena."
+        ]
+      },
+      {
+        "id": "CIE-25-B13",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique mendel e a 1ª lei usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides.",
+            "Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-BIO-003",
+      "SRC-BIO-002"
+    ],
+    "mediaRefs": [],
+    "imageRequestRefs": [],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-25-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de mendel e a 1ª lei, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        },
+        {
+          "key": "B",
+          "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        },
+        {
+          "key": "C",
+          "text": "Cada gameta recebe os dois alelos de um par."
+        },
+        {
+          "key": "D",
+          "text": "Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides."
+        },
+        {
+          "key": "E",
+          "text": "Fenótipo e genótipo são sinônimos."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-25-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-25-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar mendel e a 1ª lei sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        },
+        {
+          "key": "B",
+          "text": "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        },
+        {
+          "key": "C",
+          "text": "Fenótipo e genótipo são sinônimos."
+        },
+        {
+          "key": "D",
+          "text": "Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente."
+        },
+        {
+          "key": "E",
+          "text": "Cada gameta recebe os dois alelos de um par."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-25-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-25-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em mendel e a 1ª lei?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        },
+        {
+          "key": "B",
+          "text": "Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par."
+        },
+        {
+          "key": "C",
+          "text": "Cada gameta recebe os dois alelos de um par."
+        },
+        {
+          "key": "D",
+          "text": "Fenótipo e genótipo são sinônimos."
+        },
+        {
+          "key": "E",
+          "text": "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-25-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-25-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Em um cruzamento Aa × Aa com dominância completa, qual proporção genotípica esperada aparece no modelo mendeliano simples?",
+      "options": [
+        {
+          "key": "A",
+          "text": "4 AA : 0 Aa : 0 aa."
+        },
+        {
+          "key": "B",
+          "text": "1 AA : 1 Aa : 2 aa."
+        },
+        {
+          "key": "C",
+          "text": "2 AA : 2 aa, sem heterozigotos."
+        },
+        {
+          "key": "D",
+          "text": "1 AA : 2 Aa : 1 aa."
+        },
+        {
+          "key": "E",
+          "text": "Todos os descendentes são Aa."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "1 AA : 2 Aa : 1 aa.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-25-CON-01",
+        "CIE-25-CON-02",
+        "CIE-25-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-25-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides.\nII. Alelos recessivos desaparecem quando há um alelo dominante.\nIII. Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par.\nIV. Fenótipo e genótipo são sinônimos.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-25-CON-01",
+        "CIE-25-CON-02",
+        "CIE-25-CON-03",
+        "CIE-25-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-25-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre mendel e a 1ª lei para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        },
+        {
+          "key": "B",
+          "text": "Cruzamentos simples podem ser representados por quadros de Punnett para visualizar probabilidades de combinações."
+        },
+        {
+          "key": "C",
+          "text": "Fenótipo e genótipo são sinônimos."
+        },
+        {
+          "key": "D",
+          "text": "Cada gameta recebe os dois alelos de um par."
+        },
+        {
+          "key": "E",
+          "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Cruzamentos simples podem ser representados por quadros de Punnett para visualizar probabilidades de combinações.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-25-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-25-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre mendel e a 1ª lei?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        },
+        {
+          "key": "B",
+          "text": "Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par."
+        },
+        {
+          "key": "C",
+          "text": "Em dominância completa, heterozigotos apresentam o fenótipo associado ao alelo dominante, mas o alelo recessivo continua presente."
+        },
+        {
+          "key": "D",
+          "text": "Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente."
+        },
+        {
+          "key": "E",
+          "text": "Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a incorreta: Alelos recessivos desaparecem quando há um alelo dominante. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-25-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-25-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em mendel e a 1ª lei?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Cada gameta recebe os dois alelos de um par."
+        },
+        {
+          "key": "B",
+          "text": "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        },
+        {
+          "key": "C",
+          "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        },
+        {
+          "key": "D",
+          "text": "Probabilidade genética indica chance esperada em muitos eventos e não garante o resultado de uma família pequena."
+        },
+        {
+          "key": "E",
+          "text": "Fenótipo e genótipo são sinônimos."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Probabilidade genética indica chance esperada em muitos eventos e não garante o resultado de uma família pequena.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-25-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

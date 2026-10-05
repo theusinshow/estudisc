@@ -1,0 +1,27 @@
+{
+  "packageVersion": "2.0",
+  "status": "PASS",
+  "counts": {
+    "lessons": 40,
+    "questions": 320,
+    "blocks": 538,
+    "concepts": 240,
+    "imageRequests": 13,
+    "deterministicAssets": 24,
+    "activeLearningBlocks": 40
+  },
+  "checks": {
+    "40Lessons": true,
+    "320Questions": true,
+    "40ActiveLearningBlocks": true,
+    "13ImageRequests": true,
+    "24DeterministicAssets": true,
+    "questionIdsUnique": true,
+    "noExactRepeatedQuestionStems": true,
+    "sourceRefsResolve": true,
+    "imageBlockRefsResolve": true,
+    "conceptRefsResolve": true
+  },
+  "issues": [],
+  "warnings": []
+}

@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-28-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de animais, plantas, fungos e microrganismos, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Plantas obtêm todo seu alimento pronto do solo."
+      },
+      {
+        "key": "B",
+        "text": "Todo microrganismo causa doença."
+      },
+      {
+        "key": "C",
+        "text": "Animais são organismos eucarióticos heterotróficos e apresentam grande diversidade de formas e estratégias de vida."
+      },
+      {
+        "key": "D",
+        "text": "Animais são o único grupo importante para o funcionamento dos ecossistemas."
+      },
+      {
+        "key": "E",
+        "text": "Todos os fungos são plantas."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Animais são organismos eucarióticos heterotróficos e apresentam grande diversidade de formas e estratégias de vida.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-28-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-28-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar animais, plantas, fungos e microrganismos sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Plantas obtêm todo seu alimento pronto do solo."
+      },
+      {
+        "key": "B",
+        "text": "Todo microrganismo causa doença."
+      },
+      {
+        "key": "C",
+        "text": "Todos os fungos são plantas."
+      },
+      {
+        "key": "D",
+        "text": "Plantas são eucarióticas e, em sua maioria, realizam fotossíntese; são fundamentais na produção primária e em habitats terrestres."
+      },
+      {
+        "key": "E",
+        "text": "Animais são o único grupo importante para o funcionamento dos ecossistemas."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Plantas são eucarióticas e, em sua maioria, realizam fotossíntese; são fundamentais na produção primária e em habitats terrestres.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-28-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-28-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em animais, plantas, fungos e microrganismos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todo microrganismo causa doença."
+      },
+      {
+        "key": "B",
+        "text": "Animais são o único grupo importante para o funcionamento dos ecossistemas."
+      },
+      {
+        "key": "C",
+        "text": "Fungos são eucarióticos heterotróficos por absorção e incluem decompositores, simbiontes e espécies usadas em alimentos e medicamentos."
+      },
+      {
+        "key": "D",
+        "text": "Plantas obtêm todo seu alimento pronto do solo."
+      },
+      {
+        "key": "E",
+        "text": "Todos os fungos são plantas."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Fungos são eucarióticos heterotróficos por absorção e incluem decompositores, simbiontes e espécies usadas em alimentos e medicamentos.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-28-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-28-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Leveduras usadas na produção de pães pertencem a qual grupo?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Plantas."
+      },
+      {
+        "key": "B",
+        "text": "Animais."
+      },
+      {
+        "key": "C",
+        "text": "Vírus obrigatoriamente."
+      },
+      {
+        "key": "D",
+        "text": "Fungos."
+      },
+      {
+        "key": "E",
+        "text": "Algas macroscópicas exclusivamente."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Fungos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-28-CON-01",
+      "CIE-28-CON-02",
+      "CIE-28-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-28-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Animais são organismos eucarióticos heterotróficos e apresentam grande diversidade de formas e estratégias de vida.\nII. Todos os fungos são plantas.\nIII. Fungos são eucarióticos heterotróficos por absorção e incluem decompositores, simbiontes e espécies usadas em alimentos e medicamentos.\nIV. Todo microrganismo causa doença.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-28-CON-01",
+      "CIE-28-CON-02",
+      "CIE-28-CON-03",
+      "CIE-28-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-28-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre animais, plantas, fungos e microrganismos para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todo microrganismo causa doença."
+      },
+      {
+        "key": "B",
+        "text": "Animais são o único grupo importante para o funcionamento dos ecossistemas."
+      },
+      {
+        "key": "C",
+        "text": "Plantas obtêm todo seu alimento pronto do solo."
+      },
+      {
+        "key": "D",
+        "text": "Todos os fungos são plantas."
+      },
+      {
+        "key": "E",
+        "text": "Microrganismos participam de fermentação, ciclagem de nutrientes, microbiotas e processos industriais, embora alguns causem doenças."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Microrganismos participam de fermentação, ciclagem de nutrientes, microbiotas e processos industriais, embora alguns causem doenças.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-28-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-28-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre animais, plantas, fungos e microrganismos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Plantas são eucarióticas e, em sua maioria, realizam fotossíntese; são fundamentais na produção primária e em habitats terrestres."
+      },
+      {
+        "key": "B",
+        "text": "Fungos são eucarióticos heterotróficos por absorção e incluem decompositores, simbiontes e espécies usadas em alimentos e medicamentos."
+      },
+      {
+        "key": "C",
+        "text": "Animais são organismos eucarióticos heterotróficos e apresentam grande diversidade de formas e estratégias de vida."
+      },
+      {
+        "key": "D",
+        "text": "Todos os fungos são plantas."
+      },
+      {
+        "key": "E",
+        "text": "Microrganismos incluem organismos e entidades de grupos distintos; bactérias, muitos fungos e protistas microscópicos têm papéis ecológicos variados."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a incorreta: Todos os fungos são plantas. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-28-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-28-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em animais, plantas, fungos e microrganismos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Animais são o único grupo importante para o funcionamento dos ecossistemas."
+      },
+      {
+        "key": "B",
+        "text": "Plantas obtêm todo seu alimento pronto do solo."
+      },
+      {
+        "key": "C",
+        "text": "Todos os fungos são plantas."
+      },
+      {
+        "key": "D",
+        "text": "Todo microrganismo causa doença."
+      },
+      {
+        "key": "E",
+        "text": "Importância ecológica não depende de utilidade direta para humanos; espécies mantêm interações e processos do ecossistema."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Importância ecológica não depende de utilidade direta para humanos; espécies mantêm interações e processos do ecossistema.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-28-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

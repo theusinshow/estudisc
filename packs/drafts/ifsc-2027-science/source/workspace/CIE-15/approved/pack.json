@@ -1,0 +1,482 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-15",
+    "subject": "CIE",
+    "title": "Teoria celular e tipos de célula",
+    "unit": "Vida e Evolução — Citologia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-15-CON-01",
+        "name": "Princípios da teoria celular",
+        "masteryTarget": "A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes."
+      },
+      {
+        "id": "CIE-15-CON-02",
+        "name": "Procarionte x eucarionte",
+        "masteryTarget": "Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma."
+      },
+      {
+        "id": "CIE-15-CON-03",
+        "name": "Célula animal e vegetal como exemplos eucarióticos",
+        "masteryTarget": "Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas."
+      },
+      {
+        "id": "CIE-15-CON-04",
+        "name": "Relação estrutura-função",
+        "masteryTarget": "Bactérias são exemplos de organismos procariontes; animais, plantas, fungos e protistas são eucariontes."
+      },
+      {
+        "id": "CIE-15-CON-05",
+        "name": "Células animais e vegetais compartilham várias estruturas, m…",
+        "masteryTarget": "Células animais e vegetais compartilham várias estruturas, mas células vegetais apresentam parede celular, cloroplastos e grande vacúolo central como características comuns."
+      },
+      {
+        "id": "CIE-15-CON-06",
+        "name": "Estrutura e função estão relacionadas",
+        "masteryTarget": "Estrutura e função estão relacionadas: diferentes células podem especializar-se para realizar tarefas distintas."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-15-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Uma célula possui DNA, ribossomos e membrana plasmática, mas não apresenta núcleo delimitado por membrana. Como classificá-la? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-15-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de teoria celular e tipos de célula.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-15-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes. Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo teoria celular e tipos de célula.",
+        "items": [
+          "A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes.",
+          "Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma."
+        ]
+      },
+      {
+        "id": "CIE-15-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas. Bactérias são exemplos de organismos procariontes; animais, plantas, fungos e protistas são eucariontes. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas.",
+          "Bactérias são exemplos de organismos procariontes; animais, plantas, fungos e protistas são eucariontes."
+        ]
+      },
+      {
+        "id": "CIE-15-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Células animais e vegetais compartilham várias estruturas, mas células vegetais apresentam parede celular, cloroplastos e grande vacúolo central como características comuns. Estrutura e função estão relacionadas: diferentes células podem especializar-se para realizar tarefas distintas. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Células animais e vegetais compartilham várias estruturas, mas células vegetais apresentam parede celular, cloroplastos e grande vacúolo central como características comuns.",
+          "Estrutura e função estão relacionadas: diferentes células podem especializar-se para realizar tarefas distintas."
+        ]
+      },
+      {
+        "id": "CIE-15-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "princípios da teoria celular",
+          "procarionte x eucarionte",
+          "célula animal e vegetal como exemplos eucarióticos",
+          "relação estrutura-função"
+        ]
+      },
+      {
+        "id": "CIE-15-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Todas as células possuem núcleo delimitado por membrana.",
+          "Bactérias não possuem material genético.",
+          "Células vegetais não possuem membrana plasmática.",
+          "Todo ser vivo é formado por muitas células."
+        ]
+      },
+      {
+        "id": "CIE-15-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Separe cartões com características celulares em três grupos: presentes em todas as células, típicas de procariontes e típicas de eucariontes.",
+          "Compare célula bacteriana, animal e vegetal sem usar tamanho como único critério.",
+          "Monte um quadro com membrana, DNA, ribossomos, núcleo e organelas membranosas.",
+          "Explique como a atividade se conecta à teoria celular."
+        ]
+      },
+      {
+        "id": "CIE-15-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Uma célula possui DNA, ribossomos e membrana plasmática, mas não apresenta núcleo delimitado por membrana. Como classificá-la?",
+        "answer": "Como célula procariótica.",
+        "reasoning": "1) Use esta relação: A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes. 2) Use esta relação: Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma. 3) Use esta relação: Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas. 4) Aplicando essas relações à situação, a conclusão correta é: Como célula procariótica."
+      },
+      {
+        "id": "CIE-15-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de teoria celular e tipos de célula.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-15-B11",
+        "type": "DETERMINISTIC_COMPONENT_REQUEST",
+        "title": "Componente visual/interativo",
+        "request": "Diagrama vetorial comparando célula procariótica, eucariótica animal e vegetal; labels separados do SVG-base quando possível.",
+        "status": "IMPLEMENTATION_REQUIRED"
+      },
+      {
+        "id": "CIE-15-B12",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes.",
+          "Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma.",
+          "Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas.",
+          "Bactérias são exemplos de organismos procariontes; animais, plantas, fungos e protistas são eucariontes.",
+          "Células animais e vegetais compartilham várias estruturas, mas células vegetais apresentam parede celular, cloroplastos e grande vacúolo central como características comuns.",
+          "Estrutura e função estão relacionadas: diferentes células podem especializar-se para realizar tarefas distintas."
+        ]
+      },
+      {
+        "id": "CIE-15-B13",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique teoria celular e tipos de célula usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes.",
+            "Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-BIO-001"
+    ],
+    "mediaRefs": [],
+    "imageRequestRefs": [],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-15-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de teoria celular e tipos de célula, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Células vegetais não possuem membrana plasmática."
+        },
+        {
+          "key": "B",
+          "text": "Todas as células possuem núcleo delimitado por membrana."
+        },
+        {
+          "key": "C",
+          "text": "A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes."
+        },
+        {
+          "key": "D",
+          "text": "Bactérias não possuem material genético."
+        },
+        {
+          "key": "E",
+          "text": "Todo ser vivo é formado por muitas células."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a correta: A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-15-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-15-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar teoria celular e tipos de célula sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Todo ser vivo é formado por muitas células."
+        },
+        {
+          "key": "B",
+          "text": "Bactérias não possuem material genético."
+        },
+        {
+          "key": "C",
+          "text": "Células vegetais não possuem membrana plasmática."
+        },
+        {
+          "key": "D",
+          "text": "Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma."
+        },
+        {
+          "key": "E",
+          "text": "Todas as células possuem núcleo delimitado por membrana."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-15-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-15-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em teoria celular e tipos de célula?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Células vegetais não possuem membrana plasmática."
+        },
+        {
+          "key": "B",
+          "text": "Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas."
+        },
+        {
+          "key": "C",
+          "text": "Todas as células possuem núcleo delimitado por membrana."
+        },
+        {
+          "key": "D",
+          "text": "Bactérias não possuem material genético."
+        },
+        {
+          "key": "E",
+          "text": "Todo ser vivo é formado por muitas células."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-15-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-15-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma célula possui DNA, ribossomos e membrana plasmática, mas não apresenta núcleo delimitado por membrana. Como classificá-la?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Como célula eucariótica vegetal obrigatoriamente."
+        },
+        {
+          "key": "B",
+          "text": "Como vírus."
+        },
+        {
+          "key": "C",
+          "text": "Como célula sem material genético."
+        },
+        {
+          "key": "D",
+          "text": "Como célula procariótica."
+        },
+        {
+          "key": "E",
+          "text": "Como organela celular."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Como célula procariótica.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-15-CON-01",
+        "CIE-15-CON-02",
+        "CIE-15-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-15-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes.\nII. Todas as células possuem núcleo delimitado por membrana.\nIII. Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas.\nIV. Bactérias não possuem material genético.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-15-CON-01",
+        "CIE-15-CON-02",
+        "CIE-15-CON-03",
+        "CIE-15-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-15-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre teoria celular e tipos de célula para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Todo ser vivo é formado por muitas células."
+        },
+        {
+          "key": "B",
+          "text": "Bactérias não possuem material genético."
+        },
+        {
+          "key": "C",
+          "text": "Células animais e vegetais compartilham várias estruturas, mas células vegetais apresentam parede celular, cloroplastos e grande vacúolo central como características comuns."
+        },
+        {
+          "key": "D",
+          "text": "Células vegetais não possuem membrana plasmática."
+        },
+        {
+          "key": "E",
+          "text": "Todas as células possuem núcleo delimitado por membrana."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a correta: Células animais e vegetais compartilham várias estruturas, mas células vegetais apresentam parede celular, cloroplastos e grande vacúolo central como características comuns.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-15-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-15-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre teoria celular e tipos de célula?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas."
+        },
+        {
+          "key": "B",
+          "text": "Bactérias são exemplos de organismos procariontes; animais, plantas, fungos e protistas são eucariontes."
+        },
+        {
+          "key": "C",
+          "text": "Todas as células possuem núcleo delimitado por membrana."
+        },
+        {
+          "key": "D",
+          "text": "Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma."
+        },
+        {
+          "key": "E",
+          "text": "A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a incorreta: Todas as células possuem núcleo delimitado por membrana. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-15-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-15-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em teoria celular e tipos de célula?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Todas as células possuem núcleo delimitado por membrana."
+        },
+        {
+          "key": "B",
+          "text": "Bactérias não possuem material genético."
+        },
+        {
+          "key": "C",
+          "text": "Células vegetais não possuem membrana plasmática."
+        },
+        {
+          "key": "D",
+          "text": "Todo ser vivo é formado por muitas células."
+        },
+        {
+          "key": "E",
+          "text": "Estrutura e função estão relacionadas: diferentes células podem especializar-se para realizar tarefas distintas."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Estrutura e função estão relacionadas: diferentes células podem especializar-se para realizar tarefas distintas.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-15-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

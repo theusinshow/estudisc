@@ -1,0 +1,486 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-02",
+    "subject": "CIE",
+    "title": "Máquinas simples",
+    "unit": "Matéria e Energia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-02-CON-01",
+        "name": "Força e vantagem mecânica qualitativa",
+        "masteryTarget": "Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção."
+      },
+      {
+        "id": "CIE-02-CON-02",
+        "name": "Alavancas",
+        "masteryTarget": "Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga."
+      },
+      {
+        "id": "CIE-02-CON-03",
+        "name": "Roldanas",
+        "masteryTarget": "O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior."
+      },
+      {
+        "id": "CIE-02-CON-04",
+        "name": "Plano inclinado",
+        "masteryTarget": "Roda e eixo facilitam movimentos ao combinar dois raios diferentes em um mesmo sistema."
+      },
+      {
+        "id": "CIE-02-CON-05",
+        "name": "Roda e eixo",
+        "masteryTarget": "A vantagem mecânica não significa criar energia; em condições ideais, ganhar em força implica compensar em distância."
+      },
+      {
+        "id": "CIE-02-CON-06",
+        "name": "Aplicações cotidianas",
+        "masteryTarget": "Tesoura, abridor, rampa, carrinho de mão e roldanas são aplicações de princípios de máquinas simples."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-02-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Para colocar uma caixa pesada em um caminhão, uma pessoa usa uma rampa longa. Por que isso ajuda? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-02-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de máquinas simples.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-02-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção. Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo máquinas simples.",
+        "items": [
+          "Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção.",
+          "Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga."
+        ]
+      },
+      {
+        "id": "CIE-02-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior. Roda e eixo facilitam movimentos ao combinar dois raios diferentes em um mesmo sistema. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior.",
+          "Roda e eixo facilitam movimentos ao combinar dois raios diferentes em um mesmo sistema."
+        ]
+      },
+      {
+        "id": "CIE-02-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "A vantagem mecânica não significa criar energia; em condições ideais, ganhar em força implica compensar em distância. Tesoura, abridor, rampa, carrinho de mão e roldanas são aplicações de princípios de máquinas simples. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "A vantagem mecânica não significa criar energia; em condições ideais, ganhar em força implica compensar em distância.",
+          "Tesoura, abridor, rampa, carrinho de mão e roldanas são aplicações de princípios de máquinas simples."
+        ]
+      },
+      {
+        "id": "CIE-02-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "força e vantagem mecânica qualitativa",
+          "alavancas",
+          "roldanas",
+          "plano inclinado",
+          "roda e eixo",
+          "aplicações cotidianas"
+        ]
+      },
+      {
+        "id": "CIE-02-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Máquinas simples produzem energia adicional.",
+          "Toda roldana reduz obrigatoriamente a força pela metade.",
+          "Um plano inclinado diminui simultaneamente a força e a distância percorrida.",
+          "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        ]
+      },
+      {
+        "id": "CIE-02-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Escolha três situações: abrir uma tampa, subir uma caixa por rampa e erguer uma carga com roldana.",
+          "Identifique qual máquina simples aparece em cada caso e onde está o ponto de apoio ou a mudança de direção da força.",
+          "Compare força necessária e distância percorrida sem afirmar que a máquina cria energia.",
+          "Finalize dizendo qual solução é mais adequada para cada tarefa."
+        ]
+      },
+      {
+        "id": "CIE-02-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Para colocar uma caixa pesada em um caminhão, uma pessoa usa uma rampa longa. Por que isso ajuda?",
+        "answer": "A rampa aumenta a distância do percurso e permite realizar a elevação com menor força.",
+        "reasoning": "1) Use esta relação: Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção. 2) Use esta relação: Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga. 3) Use esta relação: O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior. 4) Aplicando essas relações à situação, a conclusão correta é: A rampa aumenta a distância do percurso e permite realizar a elevação com menor força."
+      },
+      {
+        "id": "CIE-02-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de máquinas simples.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-02-B11",
+        "type": "IMAGE_REQUEST",
+        "title": "Ilustração de apoio",
+        "requestRef": "IMG-CIE-02-001",
+        "status": "GENERATION_PENDING"
+      },
+      {
+        "id": "CIE-02-B12",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção.",
+          "Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga.",
+          "O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior.",
+          "Roda e eixo facilitam movimentos ao combinar dois raios diferentes em um mesmo sistema.",
+          "A vantagem mecânica não significa criar energia; em condições ideais, ganhar em força implica compensar em distância.",
+          "Tesoura, abridor, rampa, carrinho de mão e roldanas são aplicações de princípios de máquinas simples."
+        ]
+      },
+      {
+        "id": "CIE-02-B13",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique máquinas simples usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção.",
+            "O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-FIS-002"
+    ],
+    "mediaRefs": [],
+    "imageRequestRefs": [
+      "IMG-CIE-02-001"
+    ],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-02-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de máquinas simples, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Um plano inclinado diminui simultaneamente a força e a distância percorrida."
+        },
+        {
+          "key": "B",
+          "text": "Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção."
+        },
+        {
+          "key": "C",
+          "text": "Toda roldana reduz obrigatoriamente a força pela metade."
+        },
+        {
+          "key": "D",
+          "text": "Máquinas simples produzem energia adicional."
+        },
+        {
+          "key": "E",
+          "text": "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-02-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-02-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar máquinas simples sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        },
+        {
+          "key": "B",
+          "text": "Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga."
+        },
+        {
+          "key": "C",
+          "text": "Toda roldana reduz obrigatoriamente a força pela metade."
+        },
+        {
+          "key": "D",
+          "text": "Máquinas simples produzem energia adicional."
+        },
+        {
+          "key": "E",
+          "text": "Um plano inclinado diminui simultaneamente a força e a distância percorrida."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-02-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-02-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em máquinas simples?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Um plano inclinado diminui simultaneamente a força e a distância percorrida."
+        },
+        {
+          "key": "B",
+          "text": "Toda roldana reduz obrigatoriamente a força pela metade."
+        },
+        {
+          "key": "C",
+          "text": "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        },
+        {
+          "key": "D",
+          "text": "Máquinas simples produzem energia adicional."
+        },
+        {
+          "key": "E",
+          "text": "O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-02-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-02-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Para colocar uma caixa pesada em um caminhão, uma pessoa usa uma rampa longa. Por que isso ajuda?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A rampa elimina o peso da caixa."
+        },
+        {
+          "key": "B",
+          "text": "A rampa reduz a distância e a força ao mesmo tempo."
+        },
+        {
+          "key": "C",
+          "text": "A rampa cria energia mecânica."
+        },
+        {
+          "key": "D",
+          "text": "A rampa aumenta a distância do percurso e permite realizar a elevação com menor força."
+        },
+        {
+          "key": "E",
+          "text": "A rampa impede qualquer ação do atrito."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A rampa aumenta a distância do percurso e permite realizar a elevação com menor força.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-02-CON-01",
+        "CIE-02-CON-02",
+        "CIE-02-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-02-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção.\nII. Máquinas simples produzem energia adicional.\nIII. O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior.\nIV. Toda roldana reduz obrigatoriamente a força pela metade.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-02-CON-01",
+        "CIE-02-CON-02",
+        "CIE-02-CON-03",
+        "CIE-02-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-02-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre máquinas simples para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Toda roldana reduz obrigatoriamente a força pela metade."
+        },
+        {
+          "key": "B",
+          "text": "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        },
+        {
+          "key": "C",
+          "text": "Um plano inclinado diminui simultaneamente a força e a distância percorrida."
+        },
+        {
+          "key": "D",
+          "text": "Máquinas simples produzem energia adicional."
+        },
+        {
+          "key": "E",
+          "text": "A vantagem mecânica não significa criar energia; em condições ideais, ganhar em força implica compensar em distância."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: A vantagem mecânica não significa criar energia; em condições ideais, ganhar em força implica compensar em distância.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-02-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-02-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre máquinas simples?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Máquinas simples produzem energia adicional."
+        },
+        {
+          "key": "B",
+          "text": "Roda e eixo facilitam movimentos ao combinar dois raios diferentes em um mesmo sistema."
+        },
+        {
+          "key": "C",
+          "text": "Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga."
+        },
+        {
+          "key": "D",
+          "text": "O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior."
+        },
+        {
+          "key": "E",
+          "text": "Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a incorreta: Máquinas simples produzem energia adicional. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-02-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-02-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em máquinas simples?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Toda roldana reduz obrigatoriamente a força pela metade."
+        },
+        {
+          "key": "B",
+          "text": "Um plano inclinado diminui simultaneamente a força e a distância percorrida."
+        },
+        {
+          "key": "C",
+          "text": "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        },
+        {
+          "key": "D",
+          "text": "Máquinas simples produzem energia adicional."
+        },
+        {
+          "key": "E",
+          "text": "Tesoura, abridor, rampa, carrinho de mão e roldanas são aplicações de princípios de máquinas simples."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Tesoura, abridor, rampa, carrinho de mão e roldanas são aplicações de princípios de máquinas simples.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-02-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

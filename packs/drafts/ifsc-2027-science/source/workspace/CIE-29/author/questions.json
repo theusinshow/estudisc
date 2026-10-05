@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-29-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de corpo humano: sistemas, estrutura e funcionamento, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Homeostase significa manter todas as variáveis internas absolutamente fixas, sem qualquer oscilação."
+      },
+      {
+        "key": "B",
+        "text": "O sistema circulatório produz todo o oxigênio usado pelas células."
+      },
+      {
+        "key": "C",
+        "text": "Cada sistema do corpo funciona isoladamente dos demais."
+      },
+      {
+        "key": "D",
+        "text": "Sistema digestório transforma alimentos e absorve nutrientes; sistema circulatório distribui substâncias pelo corpo."
+      },
+      {
+        "key": "E",
+        "text": "Rins fazem parte do sistema digestório."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Sistema digestório transforma alimentos e absorve nutrientes; sistema circulatório distribui substâncias pelo corpo.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-29-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-29-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar corpo humano: sistemas, estrutura e funcionamento sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O sistema circulatório produz todo o oxigênio usado pelas células."
+      },
+      {
+        "key": "B",
+        "text": "Homeostase significa manter todas as variáveis internas absolutamente fixas, sem qualquer oscilação."
+      },
+      {
+        "key": "C",
+        "text": "Sistema respiratório realiza trocas gasosas entre organismo e ambiente, fornecendo oxigênio e eliminando dióxido de carbono."
+      },
+      {
+        "key": "D",
+        "text": "Cada sistema do corpo funciona isoladamente dos demais."
+      },
+      {
+        "key": "E",
+        "text": "Rins fazem parte do sistema digestório."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Sistema respiratório realiza trocas gasosas entre organismo e ambiente, fornecendo oxigênio e eliminando dióxido de carbono.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-29-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-29-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em corpo humano: sistemas, estrutura e funcionamento?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O sistema circulatório produz todo o oxigênio usado pelas células."
+      },
+      {
+        "key": "B",
+        "text": "Rins fazem parte do sistema digestório."
+      },
+      {
+        "key": "C",
+        "text": "Cada sistema do corpo funciona isoladamente dos demais."
+      },
+      {
+        "key": "D",
+        "text": "Homeostase significa manter todas as variáveis internas absolutamente fixas, sem qualquer oscilação."
+      },
+      {
+        "key": "E",
+        "text": "Sistema urinário participa da excreção e do controle de água, sais e composição do sangue."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Sistema urinário participa da excreção e do controle de água, sais e composição do sangue.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-29-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-29-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante exercício, respiração e frequência cardíaca aumentam. Qual explicação integra os sistemas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O coração passa a produzir oxigênio."
+      },
+      {
+        "key": "B",
+        "text": "O sistema digestório substitui o sistema respiratório."
+      },
+      {
+        "key": "C",
+        "text": "Os rins assumem a função dos músculos."
+      },
+      {
+        "key": "D",
+        "text": "Maior atividade muscular aumenta demandas metabólicas, e sistemas respiratório e circulatório ajustam trocas e transporte de gases e nutrientes."
+      },
+      {
+        "key": "E",
+        "text": "Os sistemas deixam de interagir durante o exercício."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Maior atividade muscular aumenta demandas metabólicas, e sistemas respiratório e circulatório ajustam trocas e transporte de gases e nutrientes.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-29-CON-01",
+      "CIE-29-CON-02",
+      "CIE-29-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-29-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Sistema digestório transforma alimentos e absorve nutrientes; sistema circulatório distribui substâncias pelo corpo.\nII. Cada sistema do corpo funciona isoladamente dos demais.\nIII. Sistema urinário participa da excreção e do controle de água, sais e composição do sangue.\nIV. O sistema circulatório produz todo o oxigênio usado pelas células.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-29-CON-01",
+      "CIE-29-CON-02",
+      "CIE-29-CON-03",
+      "CIE-29-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-29-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre corpo humano: sistemas, estrutura e funcionamento para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O sistema circulatório produz todo o oxigênio usado pelas células."
+      },
+      {
+        "key": "B",
+        "text": "Cada sistema do corpo funciona isoladamente dos demais."
+      },
+      {
+        "key": "C",
+        "text": "Rins fazem parte do sistema digestório."
+      },
+      {
+        "key": "D",
+        "text": "Sistema locomotor envolve ossos, articulações e músculos na sustentação e movimento."
+      },
+      {
+        "key": "E",
+        "text": "Homeostase significa manter todas as variáveis internas absolutamente fixas, sem qualquer oscilação."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Sistema locomotor envolve ossos, articulações e músculos na sustentação e movimento.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-29-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-29-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre corpo humano: sistemas, estrutura e funcionamento?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sistema digestório transforma alimentos e absorve nutrientes; sistema circulatório distribui substâncias pelo corpo."
+      },
+      {
+        "key": "B",
+        "text": "Sistema urinário participa da excreção e do controle de água, sais e composição do sangue."
+      },
+      {
+        "key": "C",
+        "text": "Sistema nervoso recebe, processa e coordena informações rapidamente; sistema endócrino usa hormônios para regular processos."
+      },
+      {
+        "key": "D",
+        "text": "Cada sistema do corpo funciona isoladamente dos demais."
+      },
+      {
+        "key": "E",
+        "text": "Sistema respiratório realiza trocas gasosas entre organismo e ambiente, fornecendo oxigênio e eliminando dióxido de carbono."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a incorreta: Cada sistema do corpo funciona isoladamente dos demais. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-29-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-29-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em corpo humano: sistemas, estrutura e funcionamento?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rins fazem parte do sistema digestório."
+      },
+      {
+        "key": "B",
+        "text": "Homeostase significa manter todas as variáveis internas absolutamente fixas, sem qualquer oscilação."
+      },
+      {
+        "key": "C",
+        "text": "O sistema circulatório produz todo o oxigênio usado pelas células."
+      },
+      {
+        "key": "D",
+        "text": "Homeostase descreve manutenção dinâmica de condições internas compatíveis com o funcionamento das células, com cooperação entre sistemas."
+      },
+      {
+        "key": "E",
+        "text": "Cada sistema do corpo funciona isoladamente dos demais."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Homeostase descreve manutenção dinâmica de condições internas compatíveis com o funcionamento das células, com cooperação entre sistemas.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-29-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

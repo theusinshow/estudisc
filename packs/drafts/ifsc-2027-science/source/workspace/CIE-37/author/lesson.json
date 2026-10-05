@@ -1,0 +1,201 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "CIE-37",
+  "subject": "CIE",
+  "title": "Sistema Solar",
+  "unit": "Terra e Universo",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+  "concepts": [
+    {
+      "id": "CIE-37-CON-01",
+      "name": "Sol",
+      "masteryTarget": "O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias."
+    },
+    {
+      "id": "CIE-37-CON-02",
+      "name": "Planetas",
+      "masteryTarget": "Mercúrio, Vênus, Terra e Marte são planetas rochosos; Júpiter e Saturno são gigantes gasosos, enquanto Urano e Netuno são gigantes de gelo na classificação moderna."
+    },
+    {
+      "id": "CIE-37-CON-03",
+      "name": "Planetas rochosos e gigantes",
+      "masteryTarget": "Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU."
+    },
+    {
+      "id": "CIE-37-CON-04",
+      "name": "Satélites, asteroides, cometas e outros corpos",
+      "masteryTarget": "Asteroides, cometas, meteoroides e outros pequenos corpos também fazem parte do Sistema Solar."
+    },
+    {
+      "id": "CIE-37-CON-05",
+      "name": "Organização e movimentos gerais",
+      "masteryTarget": "Planetas não emitem luz visível própria como estrelas; são vistos principalmente pela luz solar refletida."
+    },
+    {
+      "id": "CIE-37-CON-06",
+      "name": "O Sistema Solar está na Via Láctea, e a Via Láctea é apenas…",
+      "masteryTarget": "O Sistema Solar está na Via Láctea, e a Via Láctea é apenas uma entre muitas galáxias do Universo observável."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-37-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Qual sequência contém apenas planetas rochosos? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+    },
+    {
+      "id": "CIE-37-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar com as próprias palavras os conceitos centrais de sistema solar.",
+        "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+        "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+      ]
+    },
+    {
+      "id": "CIE-37-B03",
+      "type": "EXPLANATION",
+      "title": "Base conceitual",
+      "content": "O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias. Mercúrio, Vênus, Terra e Marte são planetas rochosos; Júpiter e Saturno são gigantes gasosos, enquanto Urano e Netuno são gigantes de gelo na classificação moderna. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo sistema solar.",
+      "items": [
+        "O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias.",
+        "Mercúrio, Vênus, Terra e Marte são planetas rochosos; Júpiter e Saturno são gigantes gasosos, enquanto Urano e Netuno são gigantes de gelo na classificação moderna."
+      ]
+    },
+    {
+      "id": "CIE-37-B04",
+      "type": "EXPLANATION",
+      "title": "Como as ideias se conectam",
+      "content": "Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU. Asteroides, cometas, meteoroides e outros pequenos corpos também fazem parte do Sistema Solar. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "items": [
+        "Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU.",
+        "Asteroides, cometas, meteoroides e outros pequenos corpos também fazem parte do Sistema Solar."
+      ]
+    },
+    {
+      "id": "CIE-37-B05",
+      "type": "EXPLANATION",
+      "title": "Aplicações, limites e leitura científica",
+      "content": "Planetas não emitem luz visível própria como estrelas; são vistos principalmente pela luz solar refletida. O Sistema Solar está na Via Láctea, e a Via Láctea é apenas uma entre muitas galáxias do Universo observável. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "items": [
+        "Planetas não emitem luz visível própria como estrelas; são vistos principalmente pela luz solar refletida.",
+        "O Sistema Solar está na Via Láctea, e a Via Láctea é apenas uma entre muitas galáxias do Universo observável."
+      ]
+    },
+    {
+      "id": "CIE-37-B06",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Termos que precisam estar claros",
+      "items": [
+        "Sol",
+        "planetas",
+        "planetas rochosos e gigantes",
+        "satélites, asteroides, cometas e outros corpos",
+        "organização e movimentos gerais"
+      ]
+    },
+    {
+      "id": "CIE-37-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTIONS",
+      "title": "Erros que a prova pode explorar",
+      "items": [
+        "Plutão continua classificado oficialmente como um dos oito planetas.",
+        "Todos os planetas são formados principalmente pelos mesmos materiais e têm tamanho semelhante.",
+        "A Terra está no centro da Via Láctea.",
+        "Planetas brilham no céu porque realizam fusão nuclear como estrelas."
+      ]
+    },
+    {
+      "id": "CIE-37-B08",
+      "type": "CALLOUT",
+      "variant": "ACTIVE_LEARNING",
+      "title": "Atividade de compreensão",
+      "items": [
+        "Classifique os oito planetas em rochosos, gigantes gasosos e gigantes de gelo.",
+        "Adicione planeta anão, asteroide e cometa e explique por que são categorias diferentes.",
+        "Organize os planetas por distância ao Sol sem assumir que um desenho está em escala.",
+        "Use Stellarium/PhET apenas como apoio, mantendo os conceitos essenciais na própria aula."
+      ]
+    },
+    {
+      "id": "CIE-37-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo resolvido passo a passo",
+      "prompt": "Qual sequência contém apenas planetas rochosos?",
+      "answer": "Mercúrio, Vênus, Terra e Marte.",
+      "reasoning": "1) Use esta relação: O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias. 2) Use esta relação: Mercúrio, Vênus, Terra e Marte são planetas rochosos; Júpiter e Saturno são gigantes gasosos, enquanto Urano e Netuno são gigantes de gelo na classificação moderna. 3) Use esta relação: Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU. 4) Aplicando essas relações à situação, a conclusão correta é: Mercúrio, Vênus, Terra e Marte."
+    },
+    {
+      "id": "CIE-37-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Como isso costuma aparecer em prova",
+      "items": [
+        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de sistema solar.",
+        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+      ]
+    },
+    {
+      "id": "CIE-37-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Explore e teste a ideia",
+      "mediaRefs": [
+        "SRC-ASTRO-002",
+        "SRC-PHET-007"
+      ],
+      "optional": true
+    },
+    {
+      "id": "CIE-37-B12",
+      "type": "DETERMINISTIC_COMPONENT_REQUEST",
+      "title": "Componente visual/interativo",
+      "request": "Sistema Solar esquemático com aviso 'não está em escala'; preferir SVG/dados astronômicos.",
+      "status": "IMPLEMENTATION_REQUIRED"
+    },
+    {
+      "id": "CIE-37-B13",
+      "type": "SUMMARY",
+      "title": "Resumo de prova",
+      "items": [
+        "O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias.",
+        "Mercúrio, Vênus, Terra e Marte são planetas rochosos; Júpiter e Saturno são gigantes gasosos, enquanto Urano e Netuno são gigantes de gelo na classificação moderna.",
+        "Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU.",
+        "Asteroides, cometas, meteoroides e outros pequenos corpos também fazem parte do Sistema Solar.",
+        "Planetas não emitem luz visível própria como estrelas; são vistos principalmente pela luz solar refletida.",
+        "O Sistema Solar está na Via Láctea, e a Via Láctea é apenas uma entre muitas galáxias do Universo observável."
+      ]
+    },
+    {
+      "id": "CIE-37-B14",
+      "type": "EXIT_TICKET",
+      "title": "Recuperação ativa",
+      "prompt": "Sem consultar a aula, explique sistema solar usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+      "answerGuide": {
+        "mustMention": [
+          "O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias.",
+          "Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU.",
+          "correção explícita de pelo menos um erro conceitual da aula"
+        ]
+      }
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-ASTRO-001",
+    "SRC-ASTRO-002",
+    "SRC-PHET-007"
+  ],
+  "mediaRefs": [
+    "SRC-ASTRO-002",
+    "SRC-PHET-007"
+  ],
+  "imageRequestRefs": [],
+  "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+}

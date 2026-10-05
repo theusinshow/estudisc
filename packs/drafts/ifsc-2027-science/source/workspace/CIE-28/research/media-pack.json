@@ -1,0 +1,34 @@
+{
+  "lessonId": "CIE-28",
+  "mediaCandidates": [],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-28-001",
+      "lessonId": "CIE-28",
+      "blockId": "CIE-28-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Montagem científica didática com exemplos de animal, planta, fungo e microrganismos em quatro áreas visuais, sem rótulos, estética consistente e limpa.",
+      "factualConstraints": [
+        "Fungo não deve parecer planta",
+        "Microrganismos devem ser indicados como microscópicos por enquadramento, sem escala falsa explícita",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Animais, plantas, fungos e microrganismos.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-28-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-27-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de classificação dos seres vivos, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Classificação biológica nunca muda depois de criada."
+      },
+      {
+        "key": "B",
+        "text": "Seres parecidos externamente são sempre os parentes evolutivos mais próximos."
+      },
+      {
+        "key": "C",
+        "text": "Todos os microrganismos pertencem ao mesmo grupo taxonômico."
+      },
+      {
+        "key": "D",
+        "text": "Classificação biológica organiza organismos em grupos com base em características e, na sistemática moderna, relações evolutivas."
+      },
+      {
+        "key": "E",
+        "text": "Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Classificação biológica organiza organismos em grupos com base em características e, na sistemática moderna, relações evolutivas.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-27-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-27-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar classificação dos seres vivos sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Seres parecidos externamente são sempre os parentes evolutivos mais próximos."
+      },
+      {
+        "key": "B",
+        "text": "Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade."
+      },
+      {
+        "key": "C",
+        "text": "Espécie é uma categoria básica de classificação; definições de espécie variam conforme o grupo e o problema científico."
+      },
+      {
+        "key": "D",
+        "text": "Todos os microrganismos pertencem ao mesmo grupo taxonômico."
+      },
+      {
+        "key": "E",
+        "text": "Classificação biológica nunca muda depois de criada."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Espécie é uma categoria básica de classificação; definições de espécie variam conforme o grupo e o problema científico.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-27-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-27-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em classificação dos seres vivos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Seres parecidos externamente são sempre os parentes evolutivos mais próximos."
+      },
+      {
+        "key": "B",
+        "text": "Todos os microrganismos pertencem ao mesmo grupo taxonômico."
+      },
+      {
+        "key": "C",
+        "text": "Classificação biológica nunca muda depois de criada."
+      },
+      {
+        "key": "D",
+        "text": "Categorias taxonômicas são hierárquicas, como espécie, gênero, família, ordem, classe, filo e reino em uma apresentação escolar tradicional."
+      },
+      {
+        "key": "E",
+        "text": "Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Categorias taxonômicas são hierárquicas, como espécie, gênero, família, ordem, classe, filo e reino em uma apresentação escolar tradicional.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-27-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-27-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Por que nomes científicos são úteis?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Porque cada país cria um nome científico diferente para a mesma espécie."
+      },
+      {
+        "key": "B",
+        "text": "Porque substituem toda necessidade de estudar características."
+      },
+      {
+        "key": "C",
+        "text": "Porque são sempre escritos na língua local."
+      },
+      {
+        "key": "D",
+        "text": "Porque seguem convenções compartilhadas e reduzem ambiguidades entre diferentes nomes populares."
+      },
+      {
+        "key": "E",
+        "text": "Porque indicam obrigatoriamente o habitat de cada organismo."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Porque seguem convenções compartilhadas e reduzem ambiguidades entre diferentes nomes populares.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-27-CON-01",
+      "CIE-27-CON-02",
+      "CIE-27-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-27-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Classificação biológica organiza organismos em grupos com base em características e, na sistemática moderna, relações evolutivas.\nII. Classificação biológica nunca muda depois de criada.\nIII. Categorias taxonômicas são hierárquicas, como espécie, gênero, família, ordem, classe, filo e reino em uma apresentação escolar tradicional.\nIV. Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-27-CON-01",
+      "CIE-27-CON-02",
+      "CIE-27-CON-03",
+      "CIE-27-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-27-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre classificação dos seres vivos para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade."
+      },
+      {
+        "key": "B",
+        "text": "Seres parecidos externamente são sempre os parentes evolutivos mais próximos."
+      },
+      {
+        "key": "C",
+        "text": "Animais, plantas, fungos e diversos grupos de microrganismos apresentam características celulares e ecológicas distintas."
+      },
+      {
+        "key": "D",
+        "text": "Classificação biológica nunca muda depois de criada."
+      },
+      {
+        "key": "E",
+        "text": "Todos os microrganismos pertencem ao mesmo grupo taxonômico."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Animais, plantas, fungos e diversos grupos de microrganismos apresentam características celulares e ecológicas distintas.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-27-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-27-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre classificação dos seres vivos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Categorias taxonômicas são hierárquicas, como espécie, gênero, família, ordem, classe, filo e reino em uma apresentação escolar tradicional."
+      },
+      {
+        "key": "B",
+        "text": "Classificação biológica organiza organismos em grupos com base em características e, na sistemática moderna, relações evolutivas."
+      },
+      {
+        "key": "C",
+        "text": "Classificação biológica nunca muda depois de criada."
+      },
+      {
+        "key": "D",
+        "text": "Nomes científicos seguem convenções internacionais para reduzir ambiguidades entre idiomas e nomes populares."
+      },
+      {
+        "key": "E",
+        "text": "Espécie é uma categoria básica de classificação; definições de espécie variam conforme o grupo e o problema científico."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a incorreta: Classificação biológica nunca muda depois de criada. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-27-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-27-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em classificação dos seres vivos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Seres parecidos externamente são sempre os parentes evolutivos mais próximos."
+      },
+      {
+        "key": "B",
+        "text": "Classificações científicas podem mudar quando novas evidências, sobretudo moleculares, modificam hipóteses de parentesco."
+      },
+      {
+        "key": "C",
+        "text": "Todos os microrganismos pertencem ao mesmo grupo taxonômico."
+      },
+      {
+        "key": "D",
+        "text": "Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade."
+      },
+      {
+        "key": "E",
+        "text": "Classificação biológica nunca muda depois de criada."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: Classificações científicas podem mudar quando novas evidências, sobretudo moleculares, modificam hipóteses de parentesco.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-27-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

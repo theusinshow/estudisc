@@ -1,0 +1,499 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-08",
+    "subject": "CIE",
+    "title": "Propriedades, estados e mudanças da matéria",
+    "unit": "Matéria e Energia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-08-CON-01",
+        "name": "Massa, volume e propriedades específicas em nível escolar",
+        "masteryTarget": "Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais."
+      },
+      {
+        "id": "CIE-08-CON-02",
+        "name": "Sólido, líquido e gasoso",
+        "masteryTarget": "No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível."
+      },
+      {
+        "id": "CIE-08-CON-03",
+        "name": "Fusão",
+        "masteryTarget": "Fusão é a passagem de sólido para líquido; solidificação é o processo inverso."
+      },
+      {
+        "id": "CIE-08-CON-04",
+        "name": "Solidificação",
+        "masteryTarget": "Vaporização leva líquido a gás e condensação leva gás a líquido."
+      },
+      {
+        "id": "CIE-08-CON-05",
+        "name": "Vaporização",
+        "masteryTarget": "Sublimação é a passagem direta entre sólido e gás em determinadas condições."
+      },
+      {
+        "id": "CIE-08-CON-06",
+        "name": "Condensação",
+        "masteryTarget": "Mudança de estado físico não implica, por si só, formação de uma nova substância."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-08-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Gotas aparecem do lado externo de um copo muito frio. Qual explicação é correta? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-08-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de propriedades, estados e mudanças da matéria.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-08-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais. No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo propriedades, estados e mudanças da matéria.",
+        "items": [
+          "Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais.",
+          "No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível."
+        ]
+      },
+      {
+        "id": "CIE-08-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Fusão é a passagem de sólido para líquido; solidificação é o processo inverso. Vaporização leva líquido a gás e condensação leva gás a líquido. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Fusão é a passagem de sólido para líquido; solidificação é o processo inverso.",
+          "Vaporização leva líquido a gás e condensação leva gás a líquido."
+        ]
+      },
+      {
+        "id": "CIE-08-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Sublimação é a passagem direta entre sólido e gás em determinadas condições. Mudança de estado físico não implica, por si só, formação de uma nova substância. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Sublimação é a passagem direta entre sólido e gás em determinadas condições.",
+          "Mudança de estado físico não implica, por si só, formação de uma nova substância."
+        ]
+      },
+      {
+        "id": "CIE-08-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "massa, volume e propriedades específicas em nível escolar",
+          "sólido, líquido e gasoso",
+          "fusão",
+          "solidificação",
+          "vaporização",
+          "condensação",
+          "sublimação",
+          "interpretação de mudanças físicas"
+        ]
+      },
+      {
+        "id": "CIE-08-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Derreter gelo forma uma nova substância.",
+          "Gases não possuem massa.",
+          "Evaporação e ebulição são fenômenos totalmente sem relação.",
+          "Na condensação, o líquido transforma-se em gás."
+        ]
+      },
+      {
+        "id": "CIE-08-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Use cartões ou um diagrama de partículas para representar sólido, líquido e gás.",
+          "Associe fusão, solidificação, vaporização, condensação e sublimação às mudanças corretas.",
+          "Escolha uma mudança e descreva o que acontece com organização/movimento das partículas sem dizer que elas mudam de identidade química.",
+          "Classifique derretimento do gelo como transformação física e justifique."
+        ]
+      },
+      {
+        "id": "CIE-08-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Gotas aparecem do lado externo de um copo muito frio. Qual explicação é correta?",
+        "answer": "Vapor de água do ar perde energia e condensa na superfície fria.",
+        "reasoning": "1) Use esta relação: Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais. 2) Use esta relação: No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível. 3) Use esta relação: Fusão é a passagem de sólido para líquido; solidificação é o processo inverso. 4) Aplicando essas relações à situação, a conclusão correta é: Vapor de água do ar perde energia e condensa na superfície fria."
+      },
+      {
+        "id": "CIE-08-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de propriedades, estados e mudanças da matéria.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-08-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Explore e teste a ideia",
+        "mediaRefs": [
+          "SRC-PHET-004"
+        ],
+        "optional": true
+      },
+      {
+        "id": "CIE-08-B12",
+        "type": "DETERMINISTIC_COMPONENT_REQUEST",
+        "title": "Componente visual/interativo",
+        "request": "Diagrama de partículas para sólido/líquido/gás e setas de mudanças de estado; SVG, não imagem generativa.",
+        "status": "IMPLEMENTATION_REQUIRED"
+      },
+      {
+        "id": "CIE-08-B13",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais.",
+          "No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível.",
+          "Fusão é a passagem de sólido para líquido; solidificação é o processo inverso.",
+          "Vaporização leva líquido a gás e condensação leva gás a líquido.",
+          "Sublimação é a passagem direta entre sólido e gás em determinadas condições.",
+          "Mudança de estado físico não implica, por si só, formação de uma nova substância."
+        ]
+      },
+      {
+        "id": "CIE-08-B14",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique propriedades, estados e mudanças da matéria usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais.",
+            "Fusão é a passagem de sólido para líquido; solidificação é o processo inverso.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-QUI-001",
+      "SRC-QUI-002",
+      "SRC-PHET-004"
+    ],
+    "mediaRefs": [
+      "SRC-PHET-004"
+    ],
+    "imageRequestRefs": [],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-08-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de propriedades, estados e mudanças da matéria, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gases não possuem massa."
+        },
+        {
+          "key": "B",
+          "text": "Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais."
+        },
+        {
+          "key": "C",
+          "text": "Derreter gelo forma uma nova substância."
+        },
+        {
+          "key": "D",
+          "text": "Evaporação e ebulição são fenômenos totalmente sem relação."
+        },
+        {
+          "key": "E",
+          "text": "Na condensação, o líquido transforma-se em gás."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-08-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-08-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar propriedades, estados e mudanças da matéria sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Derreter gelo forma uma nova substância."
+        },
+        {
+          "key": "B",
+          "text": "Gases não possuem massa."
+        },
+        {
+          "key": "C",
+          "text": "Evaporação e ebulição são fenômenos totalmente sem relação."
+        },
+        {
+          "key": "D",
+          "text": "Na condensação, o líquido transforma-se em gás."
+        },
+        {
+          "key": "E",
+          "text": "No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-08-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-08-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em propriedades, estados e mudanças da matéria?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gases não possuem massa."
+        },
+        {
+          "key": "B",
+          "text": "Fusão é a passagem de sólido para líquido; solidificação é o processo inverso."
+        },
+        {
+          "key": "C",
+          "text": "Evaporação e ebulição são fenômenos totalmente sem relação."
+        },
+        {
+          "key": "D",
+          "text": "Na condensação, o líquido transforma-se em gás."
+        },
+        {
+          "key": "E",
+          "text": "Derreter gelo forma uma nova substância."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Fusão é a passagem de sólido para líquido; solidificação é o processo inverso.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-08-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-08-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Gotas aparecem do lado externo de um copo muito frio. Qual explicação é correta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A água atravessa o vidro por poros invisíveis."
+        },
+        {
+          "key": "B",
+          "text": "O vidro fabrica água."
+        },
+        {
+          "key": "C",
+          "text": "A água líquida do ar sofre fusão."
+        },
+        {
+          "key": "D",
+          "text": "Vapor de água do ar perde energia e condensa na superfície fria."
+        },
+        {
+          "key": "E",
+          "text": "O copo libera hidrogênio e oxigênio que formam as gotas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Vapor de água do ar perde energia e condensa na superfície fria.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-08-CON-01",
+        "CIE-08-CON-02",
+        "CIE-08-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-08-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais.\nII. Derreter gelo forma uma nova substância.\nIII. Fusão é a passagem de sólido para líquido; solidificação é o processo inverso.\nIV. Gases não possuem massa.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-08-CON-01",
+        "CIE-08-CON-02",
+        "CIE-08-CON-03",
+        "CIE-08-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-08-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre propriedades, estados e mudanças da matéria para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Evaporação e ebulição são fenômenos totalmente sem relação."
+        },
+        {
+          "key": "B",
+          "text": "Gases não possuem massa."
+        },
+        {
+          "key": "C",
+          "text": "Derreter gelo forma uma nova substância."
+        },
+        {
+          "key": "D",
+          "text": "Na condensação, o líquido transforma-se em gás."
+        },
+        {
+          "key": "E",
+          "text": "Sublimação é a passagem direta entre sólido e gás em determinadas condições."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Sublimação é a passagem direta entre sólido e gás em determinadas condições.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-08-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-08-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre propriedades, estados e mudanças da matéria?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais."
+        },
+        {
+          "key": "B",
+          "text": "Derreter gelo forma uma nova substância."
+        },
+        {
+          "key": "C",
+          "text": "Fusão é a passagem de sólido para líquido; solidificação é o processo inverso."
+        },
+        {
+          "key": "D",
+          "text": "No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível."
+        },
+        {
+          "key": "E",
+          "text": "Vaporização leva líquido a gás e condensação leva gás a líquido."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a incorreta: Derreter gelo forma uma nova substância. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-08-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-08-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em propriedades, estados e mudanças da matéria?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mudança de estado físico não implica, por si só, formação de uma nova substância."
+        },
+        {
+          "key": "B",
+          "text": "Evaporação e ebulição são fenômenos totalmente sem relação."
+        },
+        {
+          "key": "C",
+          "text": "Na condensação, o líquido transforma-se em gás."
+        },
+        {
+          "key": "D",
+          "text": "Derreter gelo forma uma nova substância."
+        },
+        {
+          "key": "E",
+          "text": "Gases não possuem massa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Mudança de estado físico não implica, por si só, formação de uma nova substância.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-08-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

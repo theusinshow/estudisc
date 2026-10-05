@@ -1,0 +1,792 @@
+[
+  {
+    "id": "MAT.PCT.CONCEPT",
+    "title": "Porcentagem como parte de 100",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PCT.CALCULATE",
+    "title": "Calcular a parte percentual",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PCT.INTERPRET",
+    "title": "Interpretar a quantidade solicitada",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "js-type-string",
+    "title": "String",
+    "file": "packs\\examples\\javascript-fundamentals.track.json"
+  },
+  {
+    "id": "js-type-number",
+    "title": "Number",
+    "file": "packs\\examples\\javascript-fundamentals.track.json"
+  },
+  {
+    "id": "js-logical-and",
+    "title": "Logical AND",
+    "file": "packs\\examples\\javascript-fundamentals.track.json"
+  },
+  {
+    "id": "MAT.FRACTION.MEANING",
+    "title": "Fração como parte do todo",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DECIMAL.MEANING",
+    "title": "Notação decimal",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PROPORTION.CONCEPT",
+    "title": "Razão e proporção",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PCT.CONVERT",
+    "title": "Converter fração, decimal e porcentagem",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PCT.DISCOUNT",
+    "title": "Desconto e preço final",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PCT.INCREASE",
+    "title": "Aumento percentual",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.NUM.NATURAL.INTEGER",
+    "title": "Números naturais e inteiros",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.NUM.OPERATIONS",
+    "title": "As quatro operações e seu significado",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.NUM.ORDER",
+    "title": "Comparar e ordenar números com sinal",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.NUM.REAL.PROPERTIES",
+    "title": "Propriedades das operações",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.NUM.EXPRESSIONS",
+    "title": "Expressões numéricas e ordem das operações",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DIV.DIVISIBILITY",
+    "title": "Critérios de divisibilidade",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DIV.PRIME",
+    "title": "Números primos e compostos",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DIV.FACTORIZATION",
+    "title": "Fatoração em números primos",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DIV.MMC",
+    "title": "Mínimo múltiplo comum (MMC)",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DIV.MDC",
+    "title": "Máximo divisor comum (MDC)",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DIV.MODEL",
+    "title": "Decidir entre MMC e MDC",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "POR.READ.EXPLICIT",
+    "title": "Localizar informação explícita",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "POR.READ.MAIN_IDEA",
+    "title": "Reconhecer a ideia principal",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "POR.READ.INFER",
+    "title": "Inferir a partir de pistas",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "POR.READ.EVIDENCE",
+    "title": "Sustentar leitura com evidência",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "POR.READ.DISTRACTOR",
+    "title": "Rejeitar alternativas sem apoio",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "POR.GENRE.IDENTIFY",
+    "title": "Reconhecer o gênero do texto",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "POR.GENRE.PURPOSE",
+    "title": "Identificar a finalidade do texto",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "POR.GENRE.MODALITY",
+    "title": "Linguagem verbal, não verbal e multimodal",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "POR.CONTEXT.SITUATION",
+    "title": "Situação de comunicação",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "POR.AUTHORSHIP.VOICE",
+    "title": "Autor, narrador, eu lírico e vozes citadas",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "POR.AUDIENCE.EFFECT",
+    "title": "Público-alvo e efeitos de sentido",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "CIE.ATOM.MODELS",
+    "title": "Reconhecer modelos atômicos",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "CIE.ATOM.PARTICLES",
+    "title": "Distinguir partículas subatômicas",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "CIE.ATOM.CHARGE",
+    "title": "Determinar carga elétrica",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "CIE.ATOM.STRUCTURE",
+    "title": "Relacionar núcleo e região eletrônica",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "CIE.ATOM.Z",
+    "title": "Identificar número atômico",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "CIE.ATOM.A",
+    "title": "Calcular número de massa",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "CIE.ATOM.ION",
+    "title": "Interpretar formação de íons",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "CIE.MECH.MOTION",
+    "title": "Movimento, repouso e referencial",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "CIE.MECH.SPEED_BASIC",
+    "title": "Velocidade média e conversão de unidades",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "CIE.MECH.SIMPLE_MACHINES",
+    "title": "Máquinas simples: alavanca, roldana e plano inclinado",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "CIE.MECH.APPLICATION",
+    "title": "Resolver problemas reais de movimento e máquinas",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "CIE.ENERGY.SOURCES",
+    "title": "Fontes de energia renováveis e não renováveis",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "CIE.ENERGY.TYPES",
+    "title": "Formas de energia",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "CIE.ENERGY.TRANSFORMATION",
+    "title": "Transformações de energia",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "CIE.ENERGY.CONSERVATION",
+    "title": "Conservação da energia e rendimento",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "CIE.ENERGY.CONTEXT",
+    "title": "Energia na sociedade e no ambiente",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.BR.SLAVERY.SYSTEM",
+    "title": "Compreender a escravidão como sistema",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "GH.BR.SLAVERY.RESISTANCE",
+    "title": "Reconhecer formas de resistência",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "GH.BR.QUILOMBOS",
+    "title": "Compreender organização quilombola",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "GH.BR.ABOLITION.PROCESS",
+    "title": "Relacionar etapas da abolição",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "GH.BR.ABOLITION.AGENCY",
+    "title": "Reconhecer sujeitos da luta abolicionista",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "GH.BR.SLAVERY.SOURCE_ANALYSIS",
+    "title": "Interpretar fontes e limites",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "GH.BR.SLAVERY.CAUSE_EFFECT",
+    "title": "Distinguir mudança legal e social",
+    "file": "packs\\seeds\\ifsc-2027.golden.track.v2.json"
+  },
+  {
+    "id": "GH.GEO.SPACE",
+    "title": "Espaço geográfico: sociedade transformando a natureza",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.GEO.BASIC_CONCEPTS",
+    "title": "Paisagem, lugar, território e região",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.CARTO.REPRESENTATION",
+    "title": "Elementos do mapa, coordenadas e projeções",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.CARTO.INTERPRET",
+    "title": "Escala e leitura de mapas",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.GRAPHIC.ICONOGRAPHIC",
+    "title": "Gráficos, tabelas e imagens como linguagem",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.HIST.HISTORIOGRAPHY",
+    "title": "História como conhecimento construído",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.HIST.TIME",
+    "title": "Tempo cronológico, séculos e duração",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.HIST.MEMORY",
+    "title": "Memória, lugares de memória e patrimônio",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.HIST.SOURCE",
+    "title": "Fontes históricas e crítica das fontes",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.SC.INDIGENOUS",
+    "title": "Povos indígenas em Santa Catarina",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.SC.TRADITIONAL",
+    "title": "Povos e comunidades tradicionais",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.SC.AFRICAN_AFRODESC",
+    "title": "Africanos e afrodescendentes em Santa Catarina",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.SC.EUROPEAN_COLONIZATION",
+    "title": "Colonização portuguesa e imigração europeia",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.SC.ETHNIC_RELATIONS",
+    "title": "Relações étnico-raciais em Santa Catarina",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "GH.SC.MINORITIES",
+    "title": "Minorias, representação e direitos",
+    "file": "packs\\releases\\ifsc-week-1.pack.json"
+  },
+  {
+    "id": "MAT.FRACTION.EQUIVALENCE",
+    "title": "Frações equivalentes",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.FRACTION.SIMPLIFY",
+    "title": "Simplificação de frações",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.FRACTION.COMPARE",
+    "title": "Comparação de frações",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.FRACTION.OPERATIONS",
+    "title": "Operações com frações",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.FRACTION.CONTEXT",
+    "title": "Frações em situações-problema",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DECIMAL.OPERATIONS",
+    "title": "Operações com números decimais",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.FRACTION.DECIMAL.CONVERT",
+    "title": "Conversão entre frações e decimais",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.SCI.NOTATION.READ",
+    "title": "Leitura da notação científica",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.SCI.NOTATION.CONVERT",
+    "title": "Escrever números em notação científica",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.SCI.NOTATION.OPERATE",
+    "title": "Operações em notação científica",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RATIO.CONCEPT",
+    "title": "Razão entre duas grandezas",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RATIO.INTERPRET",
+    "title": "Interpretar razões (escala, velocidade, concentração)",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PROPORTION.EQUIVALENT",
+    "title": "Proporções e propriedade fundamental",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PROPORTION.CONTEXT",
+    "title": "Proporção em situações-problema",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RULE3.DIRECT",
+    "title": "Regra de três diretamente proporcional",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RULE3.INVERSE",
+    "title": "Regra de três inversamente proporcional",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RULE3.IDENTIFY",
+    "title": "Identificar se as grandezas são diretas ou inversas",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RULE3.CONTEXT",
+    "title": "Regra de três em situações-problema",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PCT.SUCCESSIVE",
+    "title": "Aumentos e descontos sucessivos",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PCT.REVERSE",
+    "title": "Encontrar o valor original",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.INTEREST.CONCEPT",
+    "title": "Capital, taxa, tempo, juros e montante",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.INTEREST.SIMPLE",
+    "title": "Juros simples",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.INTEREST.INTERPRET",
+    "title": "Interpretar situações de juros",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.POWER.CONCEPT",
+    "title": "Potência: definição, expoente zero e negativo",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.POWER.PROPERTIES",
+    "title": "Propriedades das potências",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RADICAL.CONCEPT",
+    "title": "Raiz quadrada e raiz cúbica",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RADICAL.SIMPLIFY",
+    "title": "Simplificação de radicais",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EXPR.ORDER",
+    "title": "Ordem das operações com potências e raízes",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EXPR.MIXED",
+    "title": "Expressões com potências e radicais",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.INEQ.COMPARE",
+    "title": "Desigualdades e suas propriedades",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.INEQ.SOLVE",
+    "title": "Resolver inequações do 1º grau",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.INTERVAL.READ",
+    "title": "Ler intervalos reais",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.INTERVAL.REPRESENT",
+    "title": "Representar soluções em intervalos e na reta",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.ALG.EXPRESSION",
+    "title": "Expressões algébricas representam regras",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.ALG.SUBSTITUTE",
+    "title": "Calcular valor por substituição",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.ALG.SIMPLIFY",
+    "title": "Simplificar sem juntar termos diferentes",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.MONOMIAL.CONCEPT",
+    "title": "Reconhecer coeficiente e parte literal",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.MONOMIAL.DEGREE",
+    "title": "Determinar o grau de um monômio",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.MONOMIAL.OPERATIONS",
+    "title": "Operar monômios com a regra adequada",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.POLY.CONCEPT",
+    "title": "Reconhecer polinômios",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.POLY.DEGREE",
+    "title": "Encontrar o grau de um polinômio",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.POLY.OPERATIONS",
+    "title": "Somar e multiplicar polinômios",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.NOTABLE.PRODUCTS",
+    "title": "Usar produtos notáveis sem trocar sinais",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.FACTOR.COMMON",
+    "title": "Colocar o maior fator comum em evidência",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.FACTOR.PATTERNS",
+    "title": "Reconhecer diferença de quadrados e trinômio quadrado perfeito",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.FACTOR.INTERPRET",
+    "title": "Interpretar formas fatoradas e expandidas",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EQ1.CONCEPT",
+    "title": "Entender uma equação de primeiro grau",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EQ1.SOLVE",
+    "title": "Resolver preservando a igualdade",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EQ1.CHECK",
+    "title": "Conferir a solução na equação original",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EQ1.MODEL",
+    "title": "Traduzir uma situação para uma equação",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EQ1.CONTEXT",
+    "title": "Interpretar a resposta no contexto",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.SYSTEM.CONCEPT",
+    "title": "Entender a solução de um sistema",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.SYSTEM.SUBSTITUTION",
+    "title": "Resolver por substituição",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.SYSTEM.ELIMINATION",
+    "title": "Resolver por eliminação",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.SYSTEM.INTERPRET",
+    "title": "Interpretar e conferir o par ordenado",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.SYSTEM.CONTEXT",
+    "title": "Modelar uma situação com duas condições",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EQ2.CONCEPT",
+    "title": "Reconhecer uma equação de segundo grau",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EQ2.FACTOR",
+    "title": "Resolver por fatoração e produto nulo",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EQ2.FORMULA",
+    "title": "Aplicar a fórmula resolutiva",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EQ2.ROOTS",
+    "title": "Classificar raízes reais pelo discriminante",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.EQ2.CONTEXT",
+    "title": "Interpretar raízes no contexto",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.MEASURE.LENGTH",
+    "title": "Comprimento e escala métrica",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.MEASURE.AREA",
+    "title": "Área como medida de superfície",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.MEASURE.CAPACITY",
+    "title": "Capacidade e volume interno",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.MEASURE.TIME",
+    "title": "Tempo e duração",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.MEASURE.CONVERT",
+    "title": "Conversões em uma unidade comum",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.GEO.ANGLES",
+    "title": "Medida e relações entre ângulos",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.GEO.PERIMETER",
+    "title": "Perímetro como contorno",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.GEO.AREA.RECTANGLE",
+    "title": "Área do retângulo",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.GEO.AREA.TRIANGLE",
+    "title": "Área do triângulo",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.GEO.AREA.OTHER_PLANAR",
+    "title": "Áreas de outros quadriláteros",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.GEO.CONTEXT",
+    "title": "Escolha de medidas em problemas geométricos",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.VOLUME.CUBE",
+    "title": "Volume do cubo",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.VOLUME.PRISM",
+    "title": "Volume de prismas",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.VOLUME.CYLINDER",
+    "title": "Volume do cilindro",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.VOLUME.UNITS",
+    "title": "Unidades de volume e capacidade",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RIGHTTRI.PYTHAGORAS",
+    "title": "Teorema de Pitágoras",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RIGHTTRI.METRIC",
+    "title": "Altura e projeções no triângulo retângulo",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.RIGHTTRI.CONTEXT",
+    "title": "Modelar problemas com triângulos retângulos",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DATA.TABLE.READ",
+    "title": "Ler dados em tabelas",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DATA.GRAPH.READ",
+    "title": "Ler gráficos de barras",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DATA.GRAPH.COMPARE",
+    "title": "Comparar frequências em gráficos",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.DATA.INFER",
+    "title": "Inferir com cautela",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PROB.FREQUENCY",
+    "title": "Frequência absoluta e relativa",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.PROB.ESTIMATE",
+    "title": "Estimar probabilidade por repetição",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  },
+  {
+    "id": "MAT.COUNT.MULTIPLICATIVE",
+    "title": "Contagem multiplicativa",
+    "file": ".local\\mathematics-production\\application\\mathematics.pack.json"
+  }
+]

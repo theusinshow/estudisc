@@ -1,0 +1,34 @@
+{
+  "lessonId": "CIE-14",
+  "mediaCandidates": [],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-14-001",
+      "lessonId": "CIE-14",
+      "blockId": "CIE-14-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Composição educacional com quatro evidências possíveis de transformação química: formação de bolhas, precipitado em solução, emissão de luz e mudança de cor, apresentada como cenas de laboratório escolar seguras, sem texto.",
+      "factualConstraints": [
+        "Não sugerir que toda mudança de cor prova reação",
+        "Equipamentos escolares plausíveis",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Transformações e reações químicas.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-14-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

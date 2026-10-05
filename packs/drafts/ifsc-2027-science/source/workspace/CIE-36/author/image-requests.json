@@ -1,0 +1,52 @@
+[
+  {
+    "id": "IMG-CIE-36-001",
+    "lessonId": "CIE-36",
+    "blockId": "CIE-36-B11",
+    "generator": "ANTIGRAVITY_NANO_BANANA_2",
+    "type": "EDUCATIONAL_ILLUSTRATION",
+    "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+    "prompt": "Ilustração editorial de campo paleontológico com camadas rochosas e fósseis sendo escavados por equipe, sem texto; cena cientificamente plausível e contemporânea.",
+    "factualConstraints": [
+      "Fósseis integrados a camadas sedimentares",
+      "Sem dinossauros vivos ao lado dos pesquisadores",
+      "Sem texto embutido"
+    ],
+    "forbiddenElements": [
+      "texto ilegível",
+      "fórmulas inventadas",
+      "rótulos científicos não validados",
+      "marcas d'água"
+    ],
+    "aspectRatio": "16:9",
+    "textInImage": false,
+    "altTextDraft": "Ilustração educacional de apoio para a aula Registro fóssil e origem da vida.",
+    "factualReviewStatus": "PENDING",
+    "visualReviewStatus": "PENDING",
+    "outputFilename": "IMG-CIE-36-001-v1.png",
+    "promptVersion": 2,
+    "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-EVO-003",
+      "SRC-EVO-001"
+    ],
+    "conceptIds": [
+      "CIE-36-CON-01",
+      "CIE-36-CON-02",
+      "CIE-36-CON-03",
+      "CIE-36-CON-04",
+      "CIE-36-CON-05",
+      "CIE-36-CON-06"
+    ],
+    "reviewChecklist": [
+      "No embedded text unless explicitly required.",
+      "No obvious duplicated/malformed objects.",
+      "No scientific claim beyond the factual constraints.",
+      "Composition remains readable at mobile width.",
+      "Alt text accurately describes the final selected image.",
+      "Factual review remains PENDING after generation."
+    ],
+    "status": "PENDING_GENERATION"
+  }
+]

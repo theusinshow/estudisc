@@ -1,0 +1,500 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-13",
+    "subject": "CIE",
+    "title": "Separação de misturas",
+    "unit": "Matéria e Energia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-13-CON-01",
+        "name": "Catação",
+        "masteryTarget": "Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos."
+      },
+      {
+        "id": "CIE-13-CON-02",
+        "name": "Peneiração",
+        "masteryTarget": "Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso."
+      },
+      {
+        "id": "CIE-13-CON-03",
+        "name": "Filtração",
+        "masteryTarget": "Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis."
+      },
+      {
+        "id": "CIE-13-CON-04",
+        "name": "Decantação",
+        "masteryTarget": "Evaporação pode recuperar um soluto sólido ao remover o solvente, mas não recupera o solvente."
+      },
+      {
+        "id": "CIE-13-CON-05",
+        "name": "Centrifugação",
+        "masteryTarget": "Destilação simples combina vaporização e condensação e pode recuperar solvente de uma solução em casos adequados."
+      },
+      {
+        "id": "CIE-13-CON-06",
+        "name": "Evaporação",
+        "masteryTarget": "A escolha do método depende das propriedades da mistura; não existe um processo universal para toda mistura."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-13-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Qual método é adequado para separar areia não dissolvida da água em uma mistura simples? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-13-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de separação de misturas.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-13-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos. Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo separação de misturas.",
+        "items": [
+          "Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos.",
+          "Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso."
+        ]
+      },
+      {
+        "id": "CIE-13-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis. Evaporação pode recuperar um soluto sólido ao remover o solvente, mas não recupera o solvente. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis.",
+          "Evaporação pode recuperar um soluto sólido ao remover o solvente, mas não recupera o solvente."
+        ]
+      },
+      {
+        "id": "CIE-13-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Destilação simples combina vaporização e condensação e pode recuperar solvente de uma solução em casos adequados. A escolha do método depende das propriedades da mistura; não existe um processo universal para toda mistura. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Destilação simples combina vaporização e condensação e pode recuperar solvente de uma solução em casos adequados.",
+          "A escolha do método depende das propriedades da mistura; não existe um processo universal para toda mistura."
+        ]
+      },
+      {
+        "id": "CIE-13-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "catação",
+          "peneiração",
+          "filtração",
+          "decantação",
+          "centrifugação",
+          "evaporação",
+          "destilação simples em nível fundamental",
+          "separação de líquidos imiscíveis"
+        ]
+      },
+      {
+        "id": "CIE-13-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Filtração separa sal dissolvido da água de forma eficiente.",
+          "Decantação exige que todos os componentes tenham a mesma densidade.",
+          "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente.",
+          "Um único método de separação funciona para qualquer mistura."
+        ]
+      },
+      {
+        "id": "CIE-13-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Receba cinco misturas-problema, como areia+água, óleo+água, feijão+pedrinhas, sal+água e areia+cascalho.",
+          "Escolha o método de separação para cada caso.",
+          "Justifique a escolha pela propriedade explorada: tamanho, densidade, estado físico, solubilidade ou ponto de ebulição.",
+          "Quando um único método não bastar, proponha uma sequência."
+        ]
+      },
+      {
+        "id": "CIE-13-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Qual método é adequado para separar areia não dissolvida da água em uma mistura simples?",
+        "answer": "Filtração.",
+        "reasoning": "1) Use esta relação: Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos. 2) Use esta relação: Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso. 3) Use esta relação: Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis. 4) Aplicando essas relações à situação, a conclusão correta é: Filtração."
+      },
+      {
+        "id": "CIE-13-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de separação de misturas.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-13-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Explore e teste a ideia",
+        "mediaRefs": [
+          "SRC-QUI-004",
+          "SRC-QUI-007"
+        ],
+        "optional": true
+      },
+      {
+        "id": "CIE-13-B12",
+        "type": "DETERMINISTIC_COMPONENT_REQUEST",
+        "title": "Componente visual/interativo",
+        "request": "Diagrama vetorial de filtração, decantação e destilação simples, com labels renderizados pela VECTA.",
+        "status": "IMPLEMENTATION_REQUIRED"
+      },
+      {
+        "id": "CIE-13-B13",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos.",
+          "Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso.",
+          "Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis.",
+          "Evaporação pode recuperar um soluto sólido ao remover o solvente, mas não recupera o solvente.",
+          "Destilação simples combina vaporização e condensação e pode recuperar solvente de uma solução em casos adequados.",
+          "A escolha do método depende das propriedades da mistura; não existe um processo universal para toda mistura."
+        ]
+      },
+      {
+        "id": "CIE-13-B14",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique separação de misturas usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos.",
+            "Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-QUI-004",
+      "SRC-QUI-007"
+    ],
+    "mediaRefs": [
+      "SRC-QUI-004",
+      "SRC-QUI-007"
+    ],
+    "imageRequestRefs": [],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-13-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de separação de misturas, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos."
+        },
+        {
+          "key": "B",
+          "text": "Decantação exige que todos os componentes tenham a mesma densidade."
+        },
+        {
+          "key": "C",
+          "text": "Um único método de separação funciona para qualquer mistura."
+        },
+        {
+          "key": "D",
+          "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        },
+        {
+          "key": "E",
+          "text": "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-13-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-13-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar separação de misturas sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        },
+        {
+          "key": "B",
+          "text": "Decantação exige que todos os componentes tenham a mesma densidade."
+        },
+        {
+          "key": "C",
+          "text": "Um único método de separação funciona para qualquer mistura."
+        },
+        {
+          "key": "D",
+          "text": "Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso."
+        },
+        {
+          "key": "E",
+          "text": "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-13-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-13-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em separação de misturas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        },
+        {
+          "key": "B",
+          "text": "Um único método de separação funciona para qualquer mistura."
+        },
+        {
+          "key": "C",
+          "text": "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente."
+        },
+        {
+          "key": "D",
+          "text": "Decantação exige que todos os componentes tenham a mesma densidade."
+        },
+        {
+          "key": "E",
+          "text": "Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-13-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-13-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual método é adequado para separar areia não dissolvida da água em uma mistura simples?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sublimação."
+        },
+        {
+          "key": "B",
+          "text": "Fusão."
+        },
+        {
+          "key": "C",
+          "text": "Eletrólise."
+        },
+        {
+          "key": "D",
+          "text": "Filtração."
+        },
+        {
+          "key": "E",
+          "text": "Magnetização, se a areia não for magnética."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Filtração.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-13-CON-01",
+        "CIE-13-CON-02",
+        "CIE-13-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-13-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos.\nII. Filtração separa sal dissolvido da água de forma eficiente.\nIII. Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis.\nIV. Decantação exige que todos os componentes tenham a mesma densidade.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-13-CON-01",
+        "CIE-13-CON-02",
+        "CIE-13-CON-03",
+        "CIE-13-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-13-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre separação de misturas para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Decantação exige que todos os componentes tenham a mesma densidade."
+        },
+        {
+          "key": "B",
+          "text": "Destilação simples combina vaporização e condensação e pode recuperar solvente de uma solução em casos adequados."
+        },
+        {
+          "key": "C",
+          "text": "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente."
+        },
+        {
+          "key": "D",
+          "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        },
+        {
+          "key": "E",
+          "text": "Um único método de separação funciona para qualquer mistura."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Destilação simples combina vaporização e condensação e pode recuperar solvente de uma solução em casos adequados.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-13-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-13-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre separação de misturas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        },
+        {
+          "key": "B",
+          "text": "Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis."
+        },
+        {
+          "key": "C",
+          "text": "Evaporação pode recuperar um soluto sólido ao remover o solvente, mas não recupera o solvente."
+        },
+        {
+          "key": "D",
+          "text": "Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso."
+        },
+        {
+          "key": "E",
+          "text": "Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a incorreta: Filtração separa sal dissolvido da água de forma eficiente. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-13-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-13-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em separação de misturas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente."
+        },
+        {
+          "key": "B",
+          "text": "A escolha do método depende das propriedades da mistura; não existe um processo universal para toda mistura."
+        },
+        {
+          "key": "C",
+          "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        },
+        {
+          "key": "D",
+          "text": "Decantação exige que todos os componentes tenham a mesma densidade."
+        },
+        {
+          "key": "E",
+          "text": "Um único método de separação funciona para qualquer mistura."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: A escolha do método depende das propriedades da mistura; não existe um processo universal para toda mistura.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-13-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

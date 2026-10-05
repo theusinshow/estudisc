@@ -1,0 +1,24 @@
+{
+  "lessonId": "CIE-10",
+  "reviewStatus": "APPROVED_CONTENT_V2",
+  "checks": {
+    "curriculumCoverage": "PASS",
+    "factualConsistency": "PASS_MODEL_SECOND_PASS",
+    "ageAppropriateness": "PASS",
+    "misconceptionsAddressed": "PASS",
+    "questionAnswerUniqueness": "PASS_DETERMINISTIC_VALIDATION_REQUIRED",
+    "copyright": "PASS_ORIGINAL_TEXT_LINK_ONLY_POLICY",
+    "mediaCoreDependency": "PASS",
+    "imageScientificReview": "NOT_APPLICABLE",
+    "integrationSchema": "PENDING_REPO_VALIDATION"
+  },
+  "findings": [],
+  "requiredBeforeLive": [
+    "Validar schema e block renderer contra o VECTA atual.",
+    "Mapear/reutilizar Concepts existentes antes de criar novos.",
+    "Executar validação determinística de todas as alternativas e gabaritos após qualquer transformação de schema.",
+    "Gerar/revisar assets do Antigravity somente onde houver image request.",
+    "Implementar/reusar componentes determinísticos solicitados.",
+    "Não publicar em lote antes de testar as aulas-piloto."
+  ]
+}

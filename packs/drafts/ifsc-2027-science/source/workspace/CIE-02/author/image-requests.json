@@ -1,0 +1,51 @@
+[
+  {
+    "id": "IMG-CIE-02-001",
+    "lessonId": "CIE-02",
+    "blockId": "CIE-02-B11",
+    "generator": "ANTIGRAVITY_NANO_BANANA_2",
+    "type": "EDUCATIONAL_ILLUSTRATION",
+    "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+    "prompt": "Ilustração educacional limpa mostrando uma rampa, uma alavanca e uma roldana em três pequenas cenas do cotidiano, sem texto ou fórmulas, objetos fisicamente plausíveis, fundo simples, estilo editorial científico moderno.",
+    "factualConstraints": [
+      "Mostrar apoio da alavanca claramente",
+      "Não sugerir que máquinas simples criam energia",
+      "Sem texto embutido"
+    ],
+    "forbiddenElements": [
+      "texto ilegível",
+      "fórmulas inventadas",
+      "rótulos científicos não validados",
+      "marcas d'água"
+    ],
+    "aspectRatio": "16:9",
+    "textInImage": false,
+    "altTextDraft": "Ilustração educacional de apoio para a aula Máquinas simples.",
+    "factualReviewStatus": "PENDING",
+    "visualReviewStatus": "PENDING",
+    "outputFilename": "IMG-CIE-02-001-v1.png",
+    "promptVersion": 2,
+    "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-FIS-002"
+    ],
+    "conceptIds": [
+      "CIE-02-CON-01",
+      "CIE-02-CON-02",
+      "CIE-02-CON-03",
+      "CIE-02-CON-04",
+      "CIE-02-CON-05",
+      "CIE-02-CON-06"
+    ],
+    "reviewChecklist": [
+      "No embedded text unless explicitly required.",
+      "No obvious duplicated/malformed objects.",
+      "No scientific claim beyond the factual constraints.",
+      "Composition remains readable at mobile width.",
+      "Alt text accurately describes the final selected image.",
+      "Factual review remains PENDING after generation."
+    ],
+    "status": "PENDING_GENERATION"
+  }
+]

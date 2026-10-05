@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "CIE-39",
+  "subject": "CIE",
+  "title": "Escalas e ordem de grandeza astronômica",
+  "unit": "Terra e Universo",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+  "concepts": [
+    {
+      "id": "CIE-39-CON-01",
+      "name": "Escalas de tamanho e distância",
+      "masteryTarget": "Ordem de grandeza permite comparar escalas aproximando valores a potências de dez."
+    },
+    {
+      "id": "CIE-39-CON-02",
+      "name": "Sistema Solar x galáxia x Universo",
+      "masteryTarget": "Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários."
+    },
+    {
+      "id": "CIE-39-CON-03",
+      "name": "Unidade astronômica",
+      "masteryTarget": "Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano."
+    },
+    {
+      "id": "CIE-39-CON-04",
+      "name": "Ano-luz",
+      "masteryTarget": "O Sistema Solar é muito menor que a Via Láctea; a galáxia contém enorme quantidade de estrelas e sistemas planetários."
+    },
+    {
+      "id": "CIE-39-CON-05",
+      "name": "Notação científica como conexão com Matemática",
+      "masteryTarget": "Notação científica facilita escrever e comparar números muito grandes ou muito pequenos em Astronomia."
+    },
+    {
+      "id": "CIE-39-CON-06",
+      "name": "Comparação de ordens de grandeza",
+      "masteryTarget": "Modelos gráficos do Sistema Solar frequentemente distorcem simultaneamente tamanhos e distâncias; é preciso informar quando uma representação não está em escala."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-39-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Qual unidade é mais adequada para expressar a distância entre estrelas próximas em linguagem escolar de Astronomia? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+    },
+    {
+      "id": "CIE-39-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar com as próprias palavras os conceitos centrais de escalas e ordem de grandeza astronômica.",
+        "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+        "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+      ]
+    },
+    {
+      "id": "CIE-39-B03",
+      "type": "EXPLANATION",
+      "title": "Base conceitual",
+      "content": "Ordem de grandeza permite comparar escalas aproximando valores a potências de dez. Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo escalas e ordem de grandeza astronômica.",
+      "items": [
+        "Ordem de grandeza permite comparar escalas aproximando valores a potências de dez.",
+        "Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários."
+      ]
+    },
+    {
+      "id": "CIE-39-B04",
+      "type": "EXPLANATION",
+      "title": "Como as ideias se conectam",
+      "content": "Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano. O Sistema Solar é muito menor que a Via Láctea; a galáxia contém enorme quantidade de estrelas e sistemas planetários. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "items": [
+        "Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano.",
+        "O Sistema Solar é muito menor que a Via Láctea; a galáxia contém enorme quantidade de estrelas e sistemas planetários."
+      ]
+    },
+    {
+      "id": "CIE-39-B05",
+      "type": "EXPLANATION",
+      "title": "Aplicações, limites e leitura científica",
+      "content": "Notação científica facilita escrever e comparar números muito grandes ou muito pequenos em Astronomia. Modelos gráficos do Sistema Solar frequentemente distorcem simultaneamente tamanhos e distâncias; é preciso informar quando uma representação não está em escala. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "items": [
+        "Notação científica facilita escrever e comparar números muito grandes ou muito pequenos em Astronomia.",
+        "Modelos gráficos do Sistema Solar frequentemente distorcem simultaneamente tamanhos e distâncias; é preciso informar quando uma representação não está em escala."
+      ]
+    },
+    {
+      "id": "CIE-39-B06",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Termos que precisam estar claros",
+      "items": [
+        "escalas de tamanho e distância",
+        "Sistema Solar x galáxia x Universo",
+        "unidade astronômica",
+        "ano-luz",
+        "notação científica como conexão com Matemática",
+        "comparação de ordens de grandeza"
+      ]
+    },
+    {
+      "id": "CIE-39-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTIONS",
+      "title": "Erros que a prova pode explorar",
+      "items": [
+        "Ano-luz é uma unidade de tempo usada para idade das estrelas.",
+        "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia.",
+        "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala.",
+        "Ordem de grandeza serve apenas para números menores que um."
+      ]
+    },
+    {
+      "id": "CIE-39-B08",
+      "type": "CALLOUT",
+      "variant": "ACTIVE_LEARNING",
+      "title": "Atividade de compreensão",
+      "items": [
+        "Construa uma escada de potências de dez com tamanhos/distâncias: Terra, distância Terra-Sol, Sistema Solar, estrela próxima e escala galáctica.",
+        "Converta pelo menos dois valores para notação científica.",
+        "Identifique quando usar km, UA e ano-luz.",
+        "Marque explicitamente quais diagramas não estão em escala."
+      ]
+    },
+    {
+      "id": "CIE-39-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo resolvido passo a passo",
+      "prompt": "Qual unidade é mais adequada para expressar a distância entre estrelas próximas em linguagem escolar de Astronomia?",
+      "answer": "Ano-luz.",
+      "reasoning": "1) Use esta relação: Ordem de grandeza permite comparar escalas aproximando valores a potências de dez. 2) Use esta relação: Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários. 3) Use esta relação: Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano. 4) Aplicando essas relações à situação, a conclusão correta é: Ano-luz."
+    },
+    {
+      "id": "CIE-39-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Como isso costuma aparecer em prova",
+      "items": [
+        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de escalas e ordem de grandeza astronômica.",
+        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+      ]
+    },
+    {
+      "id": "CIE-39-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Explore e teste a ideia",
+      "mediaRefs": [
+        "SRC-ASTRO-003"
+      ],
+      "optional": true
+    },
+    {
+      "id": "CIE-39-B12",
+      "type": "DETERMINISTIC_COMPONENT_REQUEST",
+      "title": "Componente visual/interativo",
+      "request": "Componente de escalas com potências de dez, UA e ano-luz; HTML/SVG.",
+      "status": "IMPLEMENTATION_REQUIRED"
+    },
+    {
+      "id": "CIE-39-B13",
+      "type": "SUMMARY",
+      "title": "Resumo de prova",
+      "items": [
+        "Ordem de grandeza permite comparar escalas aproximando valores a potências de dez.",
+        "Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários.",
+        "Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano.",
+        "O Sistema Solar é muito menor que a Via Láctea; a galáxia contém enorme quantidade de estrelas e sistemas planetários.",
+        "Notação científica facilita escrever e comparar números muito grandes ou muito pequenos em Astronomia.",
+        "Modelos gráficos do Sistema Solar frequentemente distorcem simultaneamente tamanhos e distâncias; é preciso informar quando uma representação não está em escala."
+      ]
+    },
+    {
+      "id": "CIE-39-B14",
+      "type": "EXIT_TICKET",
+      "title": "Recuperação ativa",
+      "prompt": "Sem consultar a aula, explique escalas e ordem de grandeza astronômica usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+      "answerGuide": {
+        "mustMention": [
+          "Ordem de grandeza permite comparar escalas aproximando valores a potências de dez.",
+          "Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano.",
+          "correção explícita de pelo menos um erro conceitual da aula"
+        ]
+      }
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-ASTRO-003",
+    "SRC-ASTRO-001"
+  ],
+  "mediaRefs": [
+    "SRC-ASTRO-003"
+  ],
+  "imageRequestRefs": [],
+  "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+}

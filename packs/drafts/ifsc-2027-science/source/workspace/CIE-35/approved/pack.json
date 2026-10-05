@@ -1,0 +1,502 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-35",
+    "subject": "CIE",
+    "title": "Teoria sintética e fatores evolutivos",
+    "unit": "Vida e Evolução — Evolução",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-35-CON-01",
+        "name": "Integração Darwin + genética",
+        "masteryTarget": "Mutação gera novas variantes de DNA e é uma fonte última de novos alelos."
+      },
+      {
+        "id": "CIE-35-CON-02",
+        "name": "Mutação",
+        "masteryTarget": "Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas."
+      },
+      {
+        "id": "CIE-35-CON-03",
+        "name": "Recombinação",
+        "masteryTarget": "Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente."
+      },
+      {
+        "id": "CIE-35-CON-04",
+        "name": "Seleção natural",
+        "masteryTarget": "Deriva genética é mudança aleatória nas frequências alélicas, com efeitos especialmente importantes em populações pequenas."
+      },
+      {
+        "id": "CIE-35-CON-05",
+        "name": "Fluxo gênico",
+        "masteryTarget": "Fluxo gênico ocorre quando indivíduos ou gametas se deslocam entre populações e levam alelos de uma população a outra."
+      },
+      {
+        "id": "CIE-35-CON-06",
+        "name": "Deriva genética em nível introdutório",
+        "masteryTarget": "A diversidade humana não sustenta hierarquias biológicas de 'raças superiores'; variação é distribuída de modo complexo e populações compartilham ancestralidade recente."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-35-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Uma tempestade reduz ao acaso uma pequena população, e os sobreviventes possuem frequências alélicas diferentes da população original. Qual mecanismo está exemplificado? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-35-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de teoria sintética e fatores evolutivos.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-35-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Mutação gera novas variantes de DNA e é uma fonte última de novos alelos. Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo teoria sintética e fatores evolutivos.",
+        "items": [
+          "Mutação gera novas variantes de DNA e é uma fonte última de novos alelos.",
+          "Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas."
+        ]
+      },
+      {
+        "id": "CIE-35-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente. Deriva genética é mudança aleatória nas frequências alélicas, com efeitos especialmente importantes em populações pequenas. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente.",
+          "Deriva genética é mudança aleatória nas frequências alélicas, com efeitos especialmente importantes em populações pequenas."
+        ]
+      },
+      {
+        "id": "CIE-35-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Fluxo gênico ocorre quando indivíduos ou gametas se deslocam entre populações e levam alelos de uma população a outra. A diversidade humana não sustenta hierarquias biológicas de 'raças superiores'; variação é distribuída de modo complexo e populações compartilham ancestralidade recente. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Fluxo gênico ocorre quando indivíduos ou gametas se deslocam entre populações e levam alelos de uma população a outra.",
+          "A diversidade humana não sustenta hierarquias biológicas de 'raças superiores'; variação é distribuída de modo complexo e populações compartilham ancestralidade recente."
+        ]
+      },
+      {
+        "id": "CIE-35-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "integração Darwin + genética",
+          "mutação",
+          "recombinação",
+          "seleção natural",
+          "fluxo gênico",
+          "deriva genética em nível introdutório",
+          "diversidade humana sem hierarquização racial"
+        ]
+      },
+      {
+        "id": "CIE-35-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Toda mutação ocorre porque o organismo precisa adaptar-se.",
+          "Deriva genética é uma forma de seleção consciente.",
+          "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo.",
+          "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        ]
+      },
+      {
+        "id": "CIE-35-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Simule uma população com fichas de duas cores representando alelos.",
+          "Faça rodadas separadas para mutação/recombinação, seleção, deriva e fluxo gênico, mudando apenas uma regra por vez.",
+          "Compare como cada mecanismo altera frequências ou diversidade.",
+          "Discuta por que variação humana não sustenta hierarquias de 'raças superiores'."
+        ]
+      },
+      {
+        "id": "CIE-35-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Uma tempestade reduz ao acaso uma pequena população, e os sobreviventes possuem frequências alélicas diferentes da população original. Qual mecanismo está exemplificado?",
+        "answer": "Deriva genética por efeito aleatório de redução populacional.",
+        "reasoning": "1) Use esta relação: Mutação gera novas variantes de DNA e é uma fonte última de novos alelos. 2) Use esta relação: Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas. 3) Use esta relação: Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente. 4) Aplicando essas relações à situação, a conclusão correta é: Deriva genética por efeito aleatório de redução populacional."
+      },
+      {
+        "id": "CIE-35-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de teoria sintética e fatores evolutivos.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-35-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Explore e teste a ideia",
+        "mediaRefs": [
+          "SRC-EVO-002",
+          "SRC-PHET-006"
+        ],
+        "optional": true
+      },
+      {
+        "id": "CIE-35-B12",
+        "type": "IMAGE_REQUEST",
+        "title": "Ilustração de apoio",
+        "requestRef": "IMG-CIE-35-001",
+        "status": "GENERATION_PENDING"
+      },
+      {
+        "id": "CIE-35-B13",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Mutação gera novas variantes de DNA e é uma fonte última de novos alelos.",
+          "Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas.",
+          "Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente.",
+          "Deriva genética é mudança aleatória nas frequências alélicas, com efeitos especialmente importantes em populações pequenas.",
+          "Fluxo gênico ocorre quando indivíduos ou gametas se deslocam entre populações e levam alelos de uma população a outra.",
+          "A diversidade humana não sustenta hierarquias biológicas de 'raças superiores'; variação é distribuída de modo complexo e populações compartilham ancestralidade recente."
+        ]
+      },
+      {
+        "id": "CIE-35-B14",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique teoria sintética e fatores evolutivos usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Mutação gera novas variantes de DNA e é uma fonte última de novos alelos.",
+            "Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-EVO-001",
+      "SRC-EVO-002",
+      "SRC-PHET-006"
+    ],
+    "mediaRefs": [
+      "SRC-EVO-002",
+      "SRC-PHET-006"
+    ],
+    "imageRequestRefs": [
+      "IMG-CIE-35-001"
+    ],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-35-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de teoria sintética e fatores evolutivos, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        },
+        {
+          "key": "B",
+          "text": "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo."
+        },
+        {
+          "key": "C",
+          "text": "Mutação gera novas variantes de DNA e é uma fonte última de novos alelos."
+        },
+        {
+          "key": "D",
+          "text": "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        },
+        {
+          "key": "E",
+          "text": "Deriva genética é uma forma de seleção consciente."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a correta: Mutação gera novas variantes de DNA e é uma fonte última de novos alelos.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-35-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-35-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar teoria sintética e fatores evolutivos sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        },
+        {
+          "key": "B",
+          "text": "Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas."
+        },
+        {
+          "key": "C",
+          "text": "Deriva genética é uma forma de seleção consciente."
+        },
+        {
+          "key": "D",
+          "text": "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        },
+        {
+          "key": "E",
+          "text": "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-35-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-35-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em teoria sintética e fatores evolutivos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente."
+        },
+        {
+          "key": "B",
+          "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        },
+        {
+          "key": "C",
+          "text": "Deriva genética é uma forma de seleção consciente."
+        },
+        {
+          "key": "D",
+          "text": "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo."
+        },
+        {
+          "key": "E",
+          "text": "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-35-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-35-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma tempestade reduz ao acaso uma pequena população, e os sobreviventes possuem frequências alélicas diferentes da população original. Qual mecanismo está exemplificado?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Seleção artificial planejada."
+        },
+        {
+          "key": "B",
+          "text": "Uso e desuso lamarckista."
+        },
+        {
+          "key": "C",
+          "text": "Fotossíntese."
+        },
+        {
+          "key": "D",
+          "text": "Deriva genética por efeito aleatório de redução populacional."
+        },
+        {
+          "key": "E",
+          "text": "Fecundação independente de genética populacional."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Deriva genética por efeito aleatório de redução populacional.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-35-CON-01",
+        "CIE-35-CON-02",
+        "CIE-35-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-35-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Mutação gera novas variantes de DNA e é uma fonte última de novos alelos.\nII. Toda mutação ocorre porque o organismo precisa adaptar-se.\nIII. Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente.\nIV. Deriva genética é uma forma de seleção consciente.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-35-CON-01",
+        "CIE-35-CON-02",
+        "CIE-35-CON-03",
+        "CIE-35-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-35-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre teoria sintética e fatores evolutivos para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fluxo gênico ocorre quando indivíduos ou gametas se deslocam entre populações e levam alelos de uma população a outra."
+        },
+        {
+          "key": "B",
+          "text": "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo."
+        },
+        {
+          "key": "C",
+          "text": "Deriva genética é uma forma de seleção consciente."
+        },
+        {
+          "key": "D",
+          "text": "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        },
+        {
+          "key": "E",
+          "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A alternativa A é a correta: Fluxo gênico ocorre quando indivíduos ou gametas se deslocam entre populações e levam alelos de uma população a outra.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-35-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-35-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre teoria sintética e fatores evolutivos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas."
+        },
+        {
+          "key": "B",
+          "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        },
+        {
+          "key": "C",
+          "text": "Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente."
+        },
+        {
+          "key": "D",
+          "text": "Deriva genética é mudança aleatória nas frequências alélicas, com efeitos especialmente importantes em populações pequenas."
+        },
+        {
+          "key": "E",
+          "text": "Mutação gera novas variantes de DNA e é uma fonte última de novos alelos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a incorreta: Toda mutação ocorre porque o organismo precisa adaptar-se. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-35-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-35-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em teoria sintética e fatores evolutivos?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        },
+        {
+          "key": "B",
+          "text": "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo."
+        },
+        {
+          "key": "C",
+          "text": "A diversidade humana não sustenta hierarquias biológicas de 'raças superiores'; variação é distribuída de modo complexo e populações compartilham ancestralidade recente."
+        },
+        {
+          "key": "D",
+          "text": "Deriva genética é uma forma de seleção consciente."
+        },
+        {
+          "key": "E",
+          "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a correta: A diversidade humana não sustenta hierarquias biológicas de 'raças superiores'; variação é distribuída de modo complexo e populações compartilham ancestralidade recente.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-35-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

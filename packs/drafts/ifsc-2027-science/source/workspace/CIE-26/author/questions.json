@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-26-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de interações alélicas, genética aplicada e biotecnologia, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Se uma técnica é cientificamente possível, sua aplicação é automaticamente ética."
+      },
+      {
+        "key": "B",
+        "text": "Na dominância incompleta, o heterozigoto apresenta fenótipo intermediário em relação aos homozigotos em exemplos clássicos."
+      },
+      {
+        "key": "C",
+        "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+      },
+      {
+        "key": "D",
+        "text": "Dados genéticos não trazem qualquer questão de privacidade."
+      },
+      {
+        "key": "E",
+        "text": "Biotecnologia é apenas manipulação genética de seres humanos."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: Na dominância incompleta, o heterozigoto apresenta fenótipo intermediário em relação aos homozigotos em exemplos clássicos.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-26-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-26-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar interações alélicas, genética aplicada e biotecnologia sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dados genéticos não trazem qualquer questão de privacidade."
+      },
+      {
+        "key": "B",
+        "text": "Na codominância, dois alelos podem contribuir de forma detectável para o fenótipo do heterozigoto."
+      },
+      {
+        "key": "C",
+        "text": "Biotecnologia é apenas manipulação genética de seres humanos."
+      },
+      {
+        "key": "D",
+        "text": "Se uma técnica é cientificamente possível, sua aplicação é automaticamente ética."
+      },
+      {
+        "key": "E",
+        "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: Na codominância, dois alelos podem contribuir de forma detectável para o fenótipo do heterozigoto.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-26-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-26-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em interações alélicas, genética aplicada e biotecnologia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Se uma técnica é cientificamente possível, sua aplicação é automaticamente ética."
+      },
+      {
+        "key": "B",
+        "text": "Dados genéticos não trazem qualquer questão de privacidade."
+      },
+      {
+        "key": "C",
+        "text": "Biotecnologia usa organismos, células ou moléculas biológicas para desenvolver produtos e processos."
+      },
+      {
+        "key": "D",
+        "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+      },
+      {
+        "key": "E",
+        "text": "Biotecnologia é apenas manipulação genética de seres humanos."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Biotecnologia usa organismos, células ou moléculas biológicas para desenvolver produtos e processos.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-26-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-26-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em um sistema de codominância, o que pode ocorrer no heterozigoto?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Um dos alelos é obrigatoriamente destruído."
+      },
+      {
+        "key": "B",
+        "text": "Os dois alelos deixam de ser expressos."
+      },
+      {
+        "key": "C",
+        "text": "O indivíduo passa a ter apenas um alelo."
+      },
+      {
+        "key": "D",
+        "text": "Os produtos ou efeitos associados aos dois alelos podem ser detectados simultaneamente."
+      },
+      {
+        "key": "E",
+        "text": "O DNA deixa de participar do fenótipo."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Os produtos ou efeitos associados aos dois alelos podem ser detectados simultaneamente.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-26-CON-01",
+      "CIE-26-CON-02",
+      "CIE-26-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-26-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Na dominância incompleta, o heterozigoto apresenta fenótipo intermediário em relação aos homozigotos em exemplos clássicos.\nII. Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante.\nIII. Biotecnologia usa organismos, células ou moléculas biológicas para desenvolver produtos e processos.\nIV. Biotecnologia é apenas manipulação genética de seres humanos.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-26-CON-01",
+      "CIE-26-CON-02",
+      "CIE-26-CON-03",
+      "CIE-26-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-26-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre interações alélicas, genética aplicada e biotecnologia para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dados genéticos não trazem qualquer questão de privacidade."
+      },
+      {
+        "key": "B",
+        "text": "Se uma técnica é cientificamente possível, sua aplicação é automaticamente ética."
+      },
+      {
+        "key": "C",
+        "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+      },
+      {
+        "key": "D",
+        "text": "Bioética discute valores e responsabilidades em decisões envolvendo vida, saúde, tecnologia e ambiente."
+      },
+      {
+        "key": "E",
+        "text": "Biotecnologia é apenas manipulação genética de seres humanos."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Bioética discute valores e responsabilidades em decisões envolvendo vida, saúde, tecnologia e ambiente.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-26-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-26-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre interações alélicas, genética aplicada e biotecnologia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Na dominância incompleta, o heterozigoto apresenta fenótipo intermediário em relação aos homozigotos em exemplos clássicos."
+      },
+      {
+        "key": "B",
+        "text": "Testes genéticos, organismos geneticamente modificados e terapias baseadas em genes são exemplos de aplicações que exigem análise de benefícios, riscos e limites."
+      },
+      {
+        "key": "C",
+        "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+      },
+      {
+        "key": "D",
+        "text": "Na codominância, dois alelos podem contribuir de forma detectável para o fenótipo do heterozigoto."
+      },
+      {
+        "key": "E",
+        "text": "Biotecnologia usa organismos, células ou moléculas biológicas para desenvolver produtos e processos."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a incorreta: Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-26-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-26-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em interações alélicas, genética aplicada e biotecnologia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Biotecnologia é apenas manipulação genética de seres humanos."
+      },
+      {
+        "key": "B",
+        "text": "Se uma técnica é cientificamente possível, sua aplicação é automaticamente ética."
+      },
+      {
+        "key": "C",
+        "text": "Informação genética é sensível e levanta questões de privacidade, discriminação e consentimento."
+      },
+      {
+        "key": "D",
+        "text": "Dados genéticos não trazem qualquer questão de privacidade."
+      },
+      {
+        "key": "E",
+        "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Informação genética é sensível e levanta questões de privacidade, discriminação e consentimento.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-26-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

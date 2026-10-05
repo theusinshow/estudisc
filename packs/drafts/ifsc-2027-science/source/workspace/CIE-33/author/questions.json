@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-33-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de métodos anticoncepcionais e ists, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+      },
+      {
+        "key": "B",
+        "text": "Todos os métodos contraceptivos têm o mesmo mecanismo e a mesma eficácia."
+      },
+      {
+        "key": "C",
+        "text": "Somente pessoas com sintomas podem transmitir ISTs."
+      },
+      {
+        "key": "D",
+        "text": "Usar dois preservativos ao mesmo tempo aumenta a proteção."
+      },
+      {
+        "key": "E",
+        "text": "Preservativos funcionam como barreira e também reduzem o risco de transmissão de muitas ISTs quando usados corretamente."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Preservativos funcionam como barreira e também reduzem o risco de transmissão de muitas ISTs quando usados corretamente.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-33-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-33-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar métodos anticoncepcionais e ists sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Somente pessoas com sintomas podem transmitir ISTs."
+      },
+      {
+        "key": "B",
+        "text": "Usar dois preservativos ao mesmo tempo aumenta a proteção."
+      },
+      {
+        "key": "C",
+        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+      },
+      {
+        "key": "D",
+        "text": "Todos os métodos contraceptivos têm o mesmo mecanismo e a mesma eficácia."
+      },
+      {
+        "key": "E",
+        "text": "Métodos hormonais atuam principalmente sobre ovulação e muco cervical, mas não protegem de ISTs."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Métodos hormonais atuam principalmente sobre ovulação e muco cervical, mas não protegem de ISTs.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-33-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-33-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em métodos anticoncepcionais e ists?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Usar dois preservativos ao mesmo tempo aumenta a proteção."
+      },
+      {
+        "key": "B",
+        "text": "Somente pessoas com sintomas podem transmitir ISTs."
+      },
+      {
+        "key": "C",
+        "text": "Todos os métodos contraceptivos têm o mesmo mecanismo e a mesma eficácia."
+      },
+      {
+        "key": "D",
+        "text": "DIU e implante são métodos de longa duração com mecanismos distintos; escolha deve considerar orientação em saúde e preferências da pessoa."
+      },
+      {
+        "key": "E",
+        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: DIU e implante são métodos de longa duração com mecanismos distintos; escolha deve considerar orientação em saúde e preferências da pessoa.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-33-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-33-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma pessoa deseja reduzir ao mesmo tempo o risco de gravidez e de IST. Qual estratégia geral é mais adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Usar apenas antibiótico preventivamente."
+      },
+      {
+        "key": "B",
+        "text": "Usar dois preservativos simultaneamente."
+      },
+      {
+        "key": "C",
+        "text": "Usar somente método hormonal, pois ele evita ISTs."
+      },
+      {
+        "key": "D",
+        "text": "Usar preservativo corretamente e, se desejado, associá-lo a outro método contraceptivo apropriado."
+      },
+      {
+        "key": "E",
+        "text": "Evitar qualquer testagem porque ausência de sintomas garante ausência de IST."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Usar preservativo corretamente e, se desejado, associá-lo a outro método contraceptivo apropriado.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-33-CON-01",
+      "CIE-33-CON-02",
+      "CIE-33-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-33-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Preservativos funcionam como barreira e também reduzem o risco de transmissão de muitas ISTs quando usados corretamente.\nII. Pílula anticoncepcional protege contra HIV e todas as ISTs.\nIII. DIU e implante são métodos de longa duração com mecanismos distintos; escolha deve considerar orientação em saúde e preferências da pessoa.\nIV. Usar dois preservativos ao mesmo tempo aumenta a proteção.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-33-CON-01",
+      "CIE-33-CON-02",
+      "CIE-33-CON-03",
+      "CIE-33-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-33-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre métodos anticoncepcionais e ists para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Usar dois preservativos ao mesmo tempo aumenta a proteção."
+      },
+      {
+        "key": "B",
+        "text": "ISTs podem ser transmitidas mesmo por pessoas sem sintomas aparentes; testagem, vacinação quando disponível e prevenção combinada são importantes."
+      },
+      {
+        "key": "C",
+        "text": "Somente pessoas com sintomas podem transmitir ISTs."
+      },
+      {
+        "key": "D",
+        "text": "Todos os métodos contraceptivos têm o mesmo mecanismo e a mesma eficácia."
+      },
+      {
+        "key": "E",
+        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: ISTs podem ser transmitidas mesmo por pessoas sem sintomas aparentes; testagem, vacinação quando disponível e prevenção combinada são importantes.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-33-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-33-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre métodos anticoncepcionais e ists?",
+    "options": [
+      {
+        "key": "A",
+        "text": "DIU e implante são métodos de longa duração com mecanismos distintos; escolha deve considerar orientação em saúde e preferências da pessoa."
+      },
+      {
+        "key": "B",
+        "text": "Preservativos funcionam como barreira e também reduzem o risco de transmissão de muitas ISTs quando usados corretamente."
+      },
+      {
+        "key": "C",
+        "text": "Métodos hormonais atuam principalmente sobre ovulação e muco cervical, mas não protegem de ISTs."
+      },
+      {
+        "key": "D",
+        "text": "Métodos definitivos, como vasectomia e laqueadura, requerem decisão informada e seguem critérios legais e de saúde."
+      },
+      {
+        "key": "E",
+        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a incorreta: Pílula anticoncepcional protege contra HIV e todas as ISTs. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-33-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-33-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em métodos anticoncepcionais e ists?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Usar dois preservativos ao mesmo tempo aumenta a proteção."
+      },
+      {
+        "key": "B",
+        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+      },
+      {
+        "key": "C",
+        "text": "Dupla proteção combina preservativo com outro método contraceptivo quando se busca prevenção de gravidez e de ISTs."
+      },
+      {
+        "key": "D",
+        "text": "Somente pessoas com sintomas podem transmitir ISTs."
+      },
+      {
+        "key": "E",
+        "text": "Todos os métodos contraceptivos têm o mesmo mecanismo e a mesma eficácia."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Dupla proteção combina preservativo com outro método contraceptivo quando se busca prevenção de gravidez e de ISTs.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-33-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

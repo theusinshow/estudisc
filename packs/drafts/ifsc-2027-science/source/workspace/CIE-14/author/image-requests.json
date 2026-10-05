@@ -1,0 +1,52 @@
+[
+  {
+    "id": "IMG-CIE-14-001",
+    "lessonId": "CIE-14",
+    "blockId": "CIE-14-B11",
+    "generator": "ANTIGRAVITY_NANO_BANANA_2",
+    "type": "EDUCATIONAL_ILLUSTRATION",
+    "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+    "prompt": "Composição educacional com quatro evidências possíveis de transformação química: formação de bolhas, precipitado em solução, emissão de luz e mudança de cor, apresentada como cenas de laboratório escolar seguras, sem texto.",
+    "factualConstraints": [
+      "Não sugerir que toda mudança de cor prova reação",
+      "Equipamentos escolares plausíveis",
+      "Sem texto embutido"
+    ],
+    "forbiddenElements": [
+      "texto ilegível",
+      "fórmulas inventadas",
+      "rótulos científicos não validados",
+      "marcas d'água"
+    ],
+    "aspectRatio": "16:9",
+    "textInImage": false,
+    "altTextDraft": "Ilustração educacional de apoio para a aula Transformações e reações químicas.",
+    "factualReviewStatus": "PENDING",
+    "visualReviewStatus": "PENDING",
+    "outputFilename": "IMG-CIE-14-001-v1.png",
+    "promptVersion": 2,
+    "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-QUI-005",
+      "SRC-QUI-003"
+    ],
+    "conceptIds": [
+      "CIE-14-CON-01",
+      "CIE-14-CON-02",
+      "CIE-14-CON-03",
+      "CIE-14-CON-04",
+      "CIE-14-CON-05",
+      "CIE-14-CON-06"
+    ],
+    "reviewChecklist": [
+      "No embedded text unless explicitly required.",
+      "No obvious duplicated/malformed objects.",
+      "No scientific claim beyond the factual constraints.",
+      "Composition remains readable at mobile width.",
+      "Alt text accurately describes the final selected image.",
+      "Factual review remains PENDING after generation."
+    ],
+    "status": "PENDING_GENERATION"
+  }
+]

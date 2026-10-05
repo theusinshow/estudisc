@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "CIE-10",
+  "subject": "CIE",
+  "title": "Número atômico, número de massa, massa atômica e íons",
+  "unit": "Matéria e Energia",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+  "concepts": [
+    {
+      "id": "CIE-10-CON-01",
+      "name": "Z",
+      "masteryTarget": "Número atômico Z é o número de prótons no núcleo e identifica o elemento químico."
+    },
+    {
+      "id": "CIE-10-CON-02",
+      "name": "A",
+      "masteryTarget": "Número de massa A é a soma de prótons e nêutrons do núcleo de um átomo ou isótopo."
+    },
+    {
+      "id": "CIE-10-CON-03",
+      "name": "Cálculo de prótons/nêutrons/elétrons",
+      "masteryTarget": "O número de nêutrons pode ser obtido por A − Z quando A representa um número de massa inteiro."
+    },
+    {
+      "id": "CIE-10-CON-04",
+      "name": "Átomo neutro",
+      "masteryTarget": "Em um átomo eletricamente neutro, o número de elétrons é igual ao número de prótons."
+    },
+    {
+      "id": "CIE-10-CON-05",
+      "name": "Cátion e ânion",
+      "masteryTarget": "Cátions possuem carga líquida positiva por perda de elétrons; ânions possuem carga líquida negativa por ganho de elétrons."
+    },
+    {
+      "id": "CIE-10-CON-06",
+      "name": "Diferença entre número de massa e massa atômica",
+      "masteryTarget": "Massa atômica apresentada na Tabela Periódica é uma média associada aos isótopos naturais e não deve ser confundida com o número de massa de um átomo específico."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-10-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Um átomo neutro possui Z = 15 e A = 31. Quantos prótons, nêutrons e elétrons ele possui? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+    },
+    {
+      "id": "CIE-10-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar com as próprias palavras os conceitos centrais de número atômico, número de massa, massa atômica e íons.",
+        "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+        "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+      ]
+    },
+    {
+      "id": "CIE-10-B03",
+      "type": "EXPLANATION",
+      "title": "Base conceitual",
+      "content": "Número atômico Z é o número de prótons no núcleo e identifica o elemento químico. Número de massa A é a soma de prótons e nêutrons do núcleo de um átomo ou isótopo. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo número atômico, número de massa, massa atômica e íons.",
+      "items": [
+        "Número atômico Z é o número de prótons no núcleo e identifica o elemento químico.",
+        "Número de massa A é a soma de prótons e nêutrons do núcleo de um átomo ou isótopo."
+      ]
+    },
+    {
+      "id": "CIE-10-B04",
+      "type": "EXPLANATION",
+      "title": "Como as ideias se conectam",
+      "content": "O número de nêutrons pode ser obtido por A − Z quando A representa um número de massa inteiro. Em um átomo eletricamente neutro, o número de elétrons é igual ao número de prótons. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "items": [
+        "O número de nêutrons pode ser obtido por A − Z quando A representa um número de massa inteiro.",
+        "Em um átomo eletricamente neutro, o número de elétrons é igual ao número de prótons."
+      ]
+    },
+    {
+      "id": "CIE-10-B05",
+      "type": "EXPLANATION",
+      "title": "Aplicações, limites e leitura científica",
+      "content": "Cátions possuem carga líquida positiva por perda de elétrons; ânions possuem carga líquida negativa por ganho de elétrons. Massa atômica apresentada na Tabela Periódica é uma média associada aos isótopos naturais e não deve ser confundida com o número de massa de um átomo específico. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "items": [
+        "Cátions possuem carga líquida positiva por perda de elétrons; ânions possuem carga líquida negativa por ganho de elétrons.",
+        "Massa atômica apresentada na Tabela Periódica é uma média associada aos isótopos naturais e não deve ser confundida com o número de massa de um átomo específico."
+      ]
+    },
+    {
+      "id": "CIE-10-B06",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Termos que precisam estar claros",
+      "items": [
+        "Z",
+        "A",
+        "cálculo de prótons/nêutrons/elétrons",
+        "átomo neutro",
+        "cátion e ânion",
+        "diferença entre número de massa e massa atômica"
+      ]
+    },
+    {
+      "id": "CIE-10-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTIONS",
+      "title": "Erros que a prova pode explorar",
+      "items": [
+        "Número de massa é a soma de prótons e elétrons.",
+        "Um íon surge quando o núcleo ganha ou perde prótons em uma reação química comum.",
+        "Todo átomo tem número de elétrons diferente do número de prótons.",
+        "Massa atômica da Tabela Periódica é sempre um número inteiro igual ao número de massa de qualquer átomo do elemento."
+      ]
+    },
+    {
+      "id": "CIE-10-B08",
+      "type": "CALLOUT",
+      "variant": "ACTIVE_LEARNING",
+      "title": "Atividade de compreensão",
+      "items": [
+        "Use o PhET Monte um Átomo ou cartões de prótons, nêutrons e elétrons.",
+        "Receba valores de Z e A e monte um átomo neutro; depois transforme-o em cátion e ânion alterando apenas elétrons.",
+        "Calcule nêutrons por A − Z.",
+        "Compare número de massa de um átomo específico com a massa atômica mostrada na Tabela Periódica."
+      ]
+    },
+    {
+      "id": "CIE-10-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo resolvido passo a passo",
+      "prompt": "Um átomo neutro possui Z = 15 e A = 31. Quantos prótons, nêutrons e elétrons ele possui?",
+      "answer": "15 prótons, 16 nêutrons e 15 elétrons.",
+      "reasoning": "1) Use esta relação: Número atômico Z é o número de prótons no núcleo e identifica o elemento químico. 2) Use esta relação: Número de massa A é a soma de prótons e nêutrons do núcleo de um átomo ou isótopo. 3) Use esta relação: O número de nêutrons pode ser obtido por A − Z quando A representa um número de massa inteiro. 4) Aplicando essas relações à situação, a conclusão correta é: 15 prótons, 16 nêutrons e 15 elétrons."
+    },
+    {
+      "id": "CIE-10-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Como isso costuma aparecer em prova",
+      "items": [
+        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de número atômico, número de massa, massa atômica e íons.",
+        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+      ]
+    },
+    {
+      "id": "CIE-10-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Explore e teste a ideia",
+      "mediaRefs": [
+        "SRC-QUI-006",
+        "SRC-PHET-005"
+      ],
+      "optional": true
+    },
+    {
+      "id": "CIE-10-B12",
+      "type": "DETERMINISTIC_COMPONENT_REQUEST",
+      "title": "Componente visual/interativo",
+      "request": "Componente interativo do átomo mostrando Z, A, p, n, e e carga, ou embed PhET Monte um Átomo.",
+      "status": "IMPLEMENTATION_REQUIRED"
+    },
+    {
+      "id": "CIE-10-B13",
+      "type": "SUMMARY",
+      "title": "Resumo de prova",
+      "items": [
+        "Número atômico Z é o número de prótons no núcleo e identifica o elemento químico.",
+        "Número de massa A é a soma de prótons e nêutrons do núcleo de um átomo ou isótopo.",
+        "O número de nêutrons pode ser obtido por A − Z quando A representa um número de massa inteiro.",
+        "Em um átomo eletricamente neutro, o número de elétrons é igual ao número de prótons.",
+        "Cátions possuem carga líquida positiva por perda de elétrons; ânions possuem carga líquida negativa por ganho de elétrons.",
+        "Massa atômica apresentada na Tabela Periódica é uma média associada aos isótopos naturais e não deve ser confundida com o número de massa de um átomo específico."
+      ]
+    },
+    {
+      "id": "CIE-10-B14",
+      "type": "EXIT_TICKET",
+      "title": "Recuperação ativa",
+      "prompt": "Sem consultar a aula, explique número atômico, número de massa, massa atômica e íons usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+      "answerGuide": {
+        "mustMention": [
+          "Número atômico Z é o número de prótons no núcleo e identifica o elemento químico.",
+          "O número de nêutrons pode ser obtido por A − Z quando A representa um número de massa inteiro.",
+          "correção explícita de pelo menos um erro conceitual da aula"
+        ]
+      }
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-QUI-003",
+    "SRC-QUI-006",
+    "SRC-PHET-005"
+  ],
+  "mediaRefs": [
+    "SRC-QUI-006",
+    "SRC-PHET-005"
+  ],
+  "imageRequestRefs": [],
+  "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+}

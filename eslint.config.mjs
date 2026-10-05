@@ -6,10 +6,10 @@ export default defineConfig([
   ...nextVitals,
   ...nextTypeScript,
   globalIgnores([
-    ".next/**",
+    "**/.next/**",
     "node_modules/**",
     "coverage/**",
-    "design-system/**/*.js",
+    "**/design-system/**/*.js",
     "playwright-report/**",
     "test-results/**",
     "src/styles/generated/**"

@@ -1,0 +1,53 @@
+{
+  "lessonId": "CIE-04",
+  "mediaCandidates": [
+    {
+      "id": "SRC-FIS-004",
+      "title": "Propagação do calor",
+      "org": "Conexão Escola — SME Goiânia",
+      "type": "VIDEO_LESSON_ACTIVITY",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/ciencias-da-natureza-propagacao-do-calor/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Complementa esta aula com material público/educacional ou interação."
+    },
+    {
+      "id": "SRC-FIS-003",
+      "title": "Equilíbrio termodinâmico",
+      "org": "Conexão Escola — SME Goiânia",
+      "type": "LESSON_SLIDES_ACTIVITY",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/ciencias-da-natureza-equilibrio-termodinamico/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Complementa esta aula com material público/educacional ou interação."
+    }
+  ],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-04-001",
+      "lessonId": "CIE-04",
+      "blockId": "CIE-04-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Ilustração educacional em três painéis sem rótulos: colher metálica aquecendo por contato, água em panela com circulação visível por setas gráficas simples, e Sol aquecendo a Terra através do espaço; visual limpo, científico e apropriado ao 7º-9º ano.",
+      "factualConstraints": [
+        "Painéis devem representar condução, convecção e radiação sem misturá-las",
+        "Sem afirmar que calor é matéria",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Propagação do calor e máquinas térmicas.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-04-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

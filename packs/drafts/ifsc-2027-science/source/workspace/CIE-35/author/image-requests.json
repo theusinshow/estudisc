@@ -1,0 +1,53 @@
+[
+  {
+    "id": "IMG-CIE-35-001",
+    "lessonId": "CIE-35",
+    "blockId": "CIE-35-B12",
+    "generator": "ANTIGRAVITY_NANO_BANANA_2",
+    "type": "EDUCATIONAL_ILLUSTRATION",
+    "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+    "prompt": "Cena de população de insetos com variação de cor sobre dois fundos naturais, aves predadoras capturando mais indivíduos conspícuos; sem texto, mostrando variação pré-existente e seleção diferencial.",
+    "factualConstraints": [
+      "Variação deve existir antes da predação",
+      "Não mostrar insetos mudando de cor por vontade",
+      "Sem texto embutido"
+    ],
+    "forbiddenElements": [
+      "texto ilegível",
+      "fórmulas inventadas",
+      "rótulos científicos não validados",
+      "marcas d'água"
+    ],
+    "aspectRatio": "16:9",
+    "textInImage": false,
+    "altTextDraft": "Ilustração educacional de apoio para a aula Teoria sintética e fatores evolutivos.",
+    "factualReviewStatus": "PENDING",
+    "visualReviewStatus": "PENDING",
+    "outputFilename": "IMG-CIE-35-001-v1.png",
+    "promptVersion": 2,
+    "visualSystemRef": "MEDIA-PRODUCTION/VISUAL-SYSTEM.md",
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-EVO-001",
+      "SRC-EVO-002",
+      "SRC-PHET-006"
+    ],
+    "conceptIds": [
+      "CIE-35-CON-01",
+      "CIE-35-CON-02",
+      "CIE-35-CON-03",
+      "CIE-35-CON-04",
+      "CIE-35-CON-05",
+      "CIE-35-CON-06"
+    ],
+    "reviewChecklist": [
+      "No embedded text unless explicitly required.",
+      "No obvious duplicated/malformed objects.",
+      "No scientific claim beyond the factual constraints.",
+      "Composition remains readable at mobile width.",
+      "Alt text accurately describes the final selected image.",
+      "Factual review remains PENDING after generation."
+    ],
+    "status": "PENDING_GENERATION"
+  }
+]

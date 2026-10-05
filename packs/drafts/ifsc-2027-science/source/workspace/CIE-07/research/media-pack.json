@@ -1,0 +1,35 @@
+{
+  "lessonId": "CIE-07",
+  "mediaCandidates": [
+    {
+      "id": "SRC-FIS-007",
+      "title": "Potência elétrica e consumo energético",
+      "org": "Conexão Escola — SME Goiânia",
+      "type": "LESSON_SLIDES_ACTIVITY",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/ciencias-da-natureza-por-que-e-importante-considerar-a-potencia-eletrica/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Complementa esta aula com material público/educacional ou interação."
+    },
+    {
+      "id": "SRC-FIS-008",
+      "title": "Uso consciente de energia elétrica",
+      "org": "Conexão Escola — SME Goiânia",
+      "type": "LESSON_SLIDES_ACTIVITY",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/como-reduzir-o-consumo-de-energia-eletrica/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Complementa esta aula com material público/educacional ou interação."
+    },
+    {
+      "id": "SRC-FIS-009",
+      "title": "Cálculo de consumo de energia elétrica",
+      "org": "Conexão Escola — SME Goiânia",
+      "type": "VIDEO_LESSON_ACTIVITY",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/ciencias-da-natureza-calculo-de-consumo-de-energia-eletrica/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Complementa esta aula com material público/educacional ou interação."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": "Componente calculadora de consumo: potência (W), tempo (h), resultado em kWh e explicação dimensional.",
+  "coreLessonDependsOnExternalMedia": false
+}

@@ -1,5 +1,12 @@
 # Changelog
 
+## Science draft snapshot (2026-10-05)
+
+- Preserve forty CIE-01..40 draft lessons, 320 generated Questions, full source/sidecar and thirteen static draft figures in a portable versioned snapshot.
+- Add deterministic source/adapter/import/preservation QA and mobile smoke checks using existing core contracts, renderers and evaluators.
+- Keep student state, historical content, official mapping uncertainty and pending editorial/media review separate; fix intrinsic mobile grid/long-link overflow. No production import/publication.
+
+
 ## 2026-10-02 — MAT-PREREQ editorial corrections
 
 - MAT-PREREQ now teaches decimal place value and explicit ratio/proportion definitions, with a chocolate-bar hook, an accessible authored figure, guided practice and a proportionality warning. Its three final Questions use A–E alternatives and revised hints.

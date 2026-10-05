@@ -1,0 +1,484 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-18",
+    "subject": "CIE",
+    "title": "Mitose, meiose e gametogênese",
+    "unit": "Vida e Evolução — Citologia",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-18-CON-01",
+        "name": "Finalidade da mitose",
+        "masteryTarget": "Mitose geralmente produz duas células-filhas geneticamente muito semelhantes à célula de origem, mantendo o número de cromossomos em organismos diploides."
+      },
+      {
+        "id": "CIE-18-CON-02",
+        "name": "Finalidade da meiose",
+        "masteryTarget": "Mitose participa de crescimento, renovação e reparo de tecidos."
+      },
+      {
+        "id": "CIE-18-CON-03",
+        "name": "Número cromossômico qualitativo",
+        "masteryTarget": "Meiose envolve duas divisões celulares e reduz pela metade o número de cromossomos, originando células haploides."
+      },
+      {
+        "id": "CIE-18-CON-04",
+        "name": "Variabilidade",
+        "masteryTarget": "Meiose contribui para variabilidade genética por processos como recombinação e distribuição independente de cromossomos."
+      },
+      {
+        "id": "CIE-18-CON-05",
+        "name": "Formação de gametas",
+        "masteryTarget": "Gametogênese é o processo de formação de gametas e envolve meiose em animais e outros eventos de diferenciação."
+      },
+      {
+        "id": "CIE-18-CON-06",
+        "name": "Comparação entre processos",
+        "masteryTarget": "Na fecundação, a união de gametas restaura o número diploide característico da espécie em ciclos sexuais típicos."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-18-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Qual processo celular está diretamente associado à redução do número de cromossomos na formação de gametas? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-18-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de mitose, meiose e gametogênese.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-18-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "Mitose geralmente produz duas células-filhas geneticamente muito semelhantes à célula de origem, mantendo o número de cromossomos em organismos diploides. Mitose participa de crescimento, renovação e reparo de tecidos. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo mitose, meiose e gametogênese.",
+        "items": [
+          "Mitose geralmente produz duas células-filhas geneticamente muito semelhantes à célula de origem, mantendo o número de cromossomos em organismos diploides.",
+          "Mitose participa de crescimento, renovação e reparo de tecidos."
+        ]
+      },
+      {
+        "id": "CIE-18-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "Meiose envolve duas divisões celulares e reduz pela metade o número de cromossomos, originando células haploides. Meiose contribui para variabilidade genética por processos como recombinação e distribuição independente de cromossomos. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "Meiose envolve duas divisões celulares e reduz pela metade o número de cromossomos, originando células haploides.",
+          "Meiose contribui para variabilidade genética por processos como recombinação e distribuição independente de cromossomos."
+        ]
+      },
+      {
+        "id": "CIE-18-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Gametogênese é o processo de formação de gametas e envolve meiose em animais e outros eventos de diferenciação. Na fecundação, a união de gametas restaura o número diploide característico da espécie em ciclos sexuais típicos. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Gametogênese é o processo de formação de gametas e envolve meiose em animais e outros eventos de diferenciação.",
+          "Na fecundação, a união de gametas restaura o número diploide característico da espécie em ciclos sexuais típicos."
+        ]
+      },
+      {
+        "id": "CIE-18-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "finalidade da mitose",
+          "finalidade da meiose",
+          "número cromossômico qualitativo",
+          "variabilidade",
+          "formação de gametas",
+          "comparação entre processos"
+        ]
+      },
+      {
+        "id": "CIE-18-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "Mitose produz quatro gametas haploides.",
+          "Meiose serve apenas para cicatrização de tecidos.",
+          "Gametas humanos normais têm o mesmo número de cromossomos de uma célula somática diploide.",
+          "Meiose elimina toda variabilidade genética entre os descendentes."
+        ]
+      },
+      {
+        "id": "CIE-18-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Ordene cartões simplificados das etapas de divisão celular ou use um diagrama vetorial validado.",
+          "Compare objetivo, número de divisões e resultado de mitose e meiose.",
+          "Relacione meiose à formação de gametas e à variabilidade genética.",
+          "Evite decorar nomes de fases sem compreender o que acontece com cromossomos e número cromossômico."
+        ]
+      },
+      {
+        "id": "CIE-18-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Qual processo celular está diretamente associado à redução do número de cromossomos na formação de gametas?",
+        "answer": "Meiose.",
+        "reasoning": "1) Use esta relação: Mitose geralmente produz duas células-filhas geneticamente muito semelhantes à célula de origem, mantendo o número de cromossomos em organismos diploides. 2) Use esta relação: Mitose participa de crescimento, renovação e reparo de tecidos. 3) Use esta relação: Meiose envolve duas divisões celulares e reduz pela metade o número de cromossomos, originando células haploides. 4) Aplicando essas relações à situação, a conclusão correta é: Meiose."
+      },
+      {
+        "id": "CIE-18-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de mitose, meiose e gametogênese.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-18-B11",
+        "type": "DETERMINISTIC_COMPONENT_REQUEST",
+        "title": "Componente visual/interativo",
+        "request": "Linha temporal/diagrama de mitose vs meiose; componente determinístico para evitar fases incorretas.",
+        "status": "IMPLEMENTATION_REQUIRED"
+      },
+      {
+        "id": "CIE-18-B12",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "Mitose geralmente produz duas células-filhas geneticamente muito semelhantes à célula de origem, mantendo o número de cromossomos em organismos diploides.",
+          "Mitose participa de crescimento, renovação e reparo de tecidos.",
+          "Meiose envolve duas divisões celulares e reduz pela metade o número de cromossomos, originando células haploides.",
+          "Meiose contribui para variabilidade genética por processos como recombinação e distribuição independente de cromossomos.",
+          "Gametogênese é o processo de formação de gametas e envolve meiose em animais e outros eventos de diferenciação.",
+          "Na fecundação, a união de gametas restaura o número diploide característico da espécie em ciclos sexuais típicos."
+        ]
+      },
+      {
+        "id": "CIE-18-B13",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique mitose, meiose e gametogênese usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "Mitose geralmente produz duas células-filhas geneticamente muito semelhantes à célula de origem, mantendo o número de cromossomos em organismos diploides.",
+            "Meiose envolve duas divisões celulares e reduz pela metade o número de cromossomos, originando células haploides.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-BIO-002"
+    ],
+    "mediaRefs": [],
+    "imageRequestRefs": [],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-18-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de mitose, meiose e gametogênese, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Meiose serve apenas para cicatrização de tecidos."
+        },
+        {
+          "key": "B",
+          "text": "Mitose geralmente produz duas células-filhas geneticamente muito semelhantes à célula de origem, mantendo o número de cromossomos em organismos diploides."
+        },
+        {
+          "key": "C",
+          "text": "Meiose elimina toda variabilidade genética entre os descendentes."
+        },
+        {
+          "key": "D",
+          "text": "Gametas humanos normais têm o mesmo número de cromossomos de uma célula somática diploide."
+        },
+        {
+          "key": "E",
+          "text": "Mitose produz quatro gametas haploides."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Mitose geralmente produz duas células-filhas geneticamente muito semelhantes à célula de origem, mantendo o número de cromossomos em organismos diploides.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-18-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-18-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar mitose, meiose e gametogênese sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mitose produz quatro gametas haploides."
+        },
+        {
+          "key": "B",
+          "text": "Meiose serve apenas para cicatrização de tecidos."
+        },
+        {
+          "key": "C",
+          "text": "Meiose elimina toda variabilidade genética entre os descendentes."
+        },
+        {
+          "key": "D",
+          "text": "Gametas humanos normais têm o mesmo número de cromossomos de uma célula somática diploide."
+        },
+        {
+          "key": "E",
+          "text": "Mitose participa de crescimento, renovação e reparo de tecidos."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Mitose participa de crescimento, renovação e reparo de tecidos.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-18-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-18-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em mitose, meiose e gametogênese?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Meiose serve apenas para cicatrização de tecidos."
+        },
+        {
+          "key": "B",
+          "text": "Gametas humanos normais têm o mesmo número de cromossomos de uma célula somática diploide."
+        },
+        {
+          "key": "C",
+          "text": "Meiose envolve duas divisões celulares e reduz pela metade o número de cromossomos, originando células haploides."
+        },
+        {
+          "key": "D",
+          "text": "Mitose produz quatro gametas haploides."
+        },
+        {
+          "key": "E",
+          "text": "Meiose elimina toda variabilidade genética entre os descendentes."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a correta: Meiose envolve duas divisões celulares e reduz pela metade o número de cromossomos, originando células haploides.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-18-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-18-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual processo celular está diretamente associado à redução do número de cromossomos na formação de gametas?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mitose."
+        },
+        {
+          "key": "B",
+          "text": "Fotossíntese."
+        },
+        {
+          "key": "C",
+          "text": "Respiração celular."
+        },
+        {
+          "key": "D",
+          "text": "Meiose."
+        },
+        {
+          "key": "E",
+          "text": "Tradução proteica."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Meiose.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-18-CON-01",
+        "CIE-18-CON-02",
+        "CIE-18-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-18-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Mitose geralmente produz duas células-filhas geneticamente muito semelhantes à célula de origem, mantendo o número de cromossomos em organismos diploides.\nII. Mitose produz quatro gametas haploides.\nIII. Meiose envolve duas divisões celulares e reduz pela metade o número de cromossomos, originando células haploides.\nIV. Meiose serve apenas para cicatrização de tecidos.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-18-CON-01",
+        "CIE-18-CON-02",
+        "CIE-18-CON-03",
+        "CIE-18-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-18-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre mitose, meiose e gametogênese para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Meiose elimina toda variabilidade genética entre os descendentes."
+        },
+        {
+          "key": "B",
+          "text": "Gametogênese é o processo de formação de gametas e envolve meiose em animais e outros eventos de diferenciação."
+        },
+        {
+          "key": "C",
+          "text": "Mitose produz quatro gametas haploides."
+        },
+        {
+          "key": "D",
+          "text": "Gametas humanos normais têm o mesmo número de cromossomos de uma célula somática diploide."
+        },
+        {
+          "key": "E",
+          "text": "Meiose serve apenas para cicatrização de tecidos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a correta: Gametogênese é o processo de formação de gametas e envolve meiose em animais e outros eventos de diferenciação.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-18-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-18-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre mitose, meiose e gametogênese?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mitose geralmente produz duas células-filhas geneticamente muito semelhantes à célula de origem, mantendo o número de cromossomos em organismos diploides."
+        },
+        {
+          "key": "B",
+          "text": "Mitose produz quatro gametas haploides."
+        },
+        {
+          "key": "C",
+          "text": "Mitose participa de crescimento, renovação e reparo de tecidos."
+        },
+        {
+          "key": "D",
+          "text": "Meiose envolve duas divisões celulares e reduz pela metade o número de cromossomos, originando células haploides."
+        },
+        {
+          "key": "E",
+          "text": "Meiose contribui para variabilidade genética por processos como recombinação e distribuição independente de cromossomos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a incorreta: Mitose produz quatro gametas haploides. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-18-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-18-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em mitose, meiose e gametogênese?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gametas humanos normais têm o mesmo número de cromossomos de uma célula somática diploide."
+        },
+        {
+          "key": "B",
+          "text": "Meiose elimina toda variabilidade genética entre os descendentes."
+        },
+        {
+          "key": "C",
+          "text": "Meiose serve apenas para cicatrização de tecidos."
+        },
+        {
+          "key": "D",
+          "text": "Mitose produz quatro gametas haploides."
+        },
+        {
+          "key": "E",
+          "text": "Na fecundação, a união de gametas restaura o número diploide característico da espécie em ciclos sexuais típicos."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Na fecundação, a união de gametas restaura o número diploide característico da espécie em ciclos sexuais típicos.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-18-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

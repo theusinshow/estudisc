@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "CIE-40",
+  "subject": "CIE",
+  "title": "Evolução estelar",
+  "unit": "Terra e Universo",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+  "concepts": [
+    {
+      "id": "CIE-40-CON-01",
+      "name": "Formação estelar",
+      "masteryTarget": "Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear."
+    },
+    {
+      "id": "CIE-40-CON-02",
+      "name": "Sequência principal",
+      "masteryTarget": "Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida."
+    },
+    {
+      "id": "CIE-40-CON-03",
+      "name": "Papel da massa",
+      "masteryTarget": "A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela."
+    },
+    {
+      "id": "CIE-40-CON-04",
+      "name": "Gigantes/supergigantes",
+      "masteryTarget": "Estrelas de massa semelhante à do Sol evoluem para gigante vermelha e terminam como anã branca após perder camadas externas."
+    },
+    {
+      "id": "CIE-40-CON-05",
+      "name": "Anã branca",
+      "masteryTarget": "Estrelas muito massivas podem sofrer colapso do núcleo e explosão de supernova, deixando estrela de nêutrons ou, em certos casos, buraco negro."
+    },
+    {
+      "id": "CIE-40-CON-06",
+      "name": "Supernova",
+      "masteryTarget": "Elementos químicos mais pesados são produzidos por processos estelares e eventos associados, conectando evolução estelar à composição do Universo e dos planetas."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-40-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Qual fator tem papel decisivo no caminho evolutivo e destino final de uma estrela? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+    },
+    {
+      "id": "CIE-40-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar com as próprias palavras os conceitos centrais de evolução estelar.",
+        "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+        "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+      ]
+    },
+    {
+      "id": "CIE-40-B03",
+      "type": "EXPLANATION",
+      "title": "Base conceitual",
+      "content": "Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear. Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo evolução estelar.",
+      "items": [
+        "Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear.",
+        "Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida."
+      ]
+    },
+    {
+      "id": "CIE-40-B04",
+      "type": "EXPLANATION",
+      "title": "Como as ideias se conectam",
+      "content": "A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela. Estrelas de massa semelhante à do Sol evoluem para gigante vermelha e terminam como anã branca após perder camadas externas. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "items": [
+        "A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela.",
+        "Estrelas de massa semelhante à do Sol evoluem para gigante vermelha e terminam como anã branca após perder camadas externas."
+      ]
+    },
+    {
+      "id": "CIE-40-B05",
+      "type": "EXPLANATION",
+      "title": "Aplicações, limites e leitura científica",
+      "content": "Estrelas muito massivas podem sofrer colapso do núcleo e explosão de supernova, deixando estrela de nêutrons ou, em certos casos, buraco negro. Elementos químicos mais pesados são produzidos por processos estelares e eventos associados, conectando evolução estelar à composição do Universo e dos planetas. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "items": [
+        "Estrelas muito massivas podem sofrer colapso do núcleo e explosão de supernova, deixando estrela de nêutrons ou, em certos casos, buraco negro.",
+        "Elementos químicos mais pesados são produzidos por processos estelares e eventos associados, conectando evolução estelar à composição do Universo e dos planetas."
+      ]
+    },
+    {
+      "id": "CIE-40-B06",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Termos que precisam estar claros",
+      "items": [
+        "formação estelar",
+        "sequência principal",
+        "papel da massa",
+        "gigantes/supergigantes",
+        "anã branca",
+        "supernova",
+        "estrela de nêutrons",
+        "buraco negro em nível adequado ao Fundamental"
+      ]
+    },
+    {
+      "id": "CIE-40-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTIONS",
+      "title": "Erros que a prova pode explorar",
+      "items": [
+        "Todas as estrelas terminam obrigatoriamente como buracos negros.",
+        "Estrelas queimam por combustão química semelhante a uma fogueira.",
+        "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida.",
+        "O Sol já é uma anã branca na fase atual."
+      ]
+    },
+    {
+      "id": "CIE-40-B08",
+      "type": "CALLOUT",
+      "variant": "ACTIVE_LEARNING",
+      "title": "Atividade de compreensão",
+      "items": [
+        "Organize cartões de evolução estelar em dois caminhos gerais: estrela de massa semelhante ao Sol e estrela muito massiva.",
+        "Comece em nuvem molecular/protoestrela, passe pela sequência principal e termine nos destinos adequados.",
+        "Explique por que massa inicial altera tempo de vida e destino.",
+        "Use um diagrama determinístico validado; não peça ao gerador de imagens para inventar o ciclo estelar."
+      ]
+    },
+    {
+      "id": "CIE-40-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo resolvido passo a passo",
+      "prompt": "Qual fator tem papel decisivo no caminho evolutivo e destino final de uma estrela?",
+      "answer": "Sua massa inicial.",
+      "reasoning": "1) Use esta relação: Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear. 2) Use esta relação: Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida. 3) Use esta relação: A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela. 4) Aplicando essas relações à situação, a conclusão correta é: Sua massa inicial."
+    },
+    {
+      "id": "CIE-40-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Como isso costuma aparecer em prova",
+      "items": [
+        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de evolução estelar.",
+        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+      ]
+    },
+    {
+      "id": "CIE-40-B11",
+      "type": "DETERMINISTIC_COMPONENT_REQUEST",
+      "title": "Componente visual/interativo",
+      "request": "Diagrama de evolução estelar por massa; SVG com duas trilhas principais e labels revisados.",
+      "status": "IMPLEMENTATION_REQUIRED"
+    },
+    {
+      "id": "CIE-40-B12",
+      "type": "SUMMARY",
+      "title": "Resumo de prova",
+      "items": [
+        "Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear.",
+        "Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida.",
+        "A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela.",
+        "Estrelas de massa semelhante à do Sol evoluem para gigante vermelha e terminam como anã branca após perder camadas externas.",
+        "Estrelas muito massivas podem sofrer colapso do núcleo e explosão de supernova, deixando estrela de nêutrons ou, em certos casos, buraco negro.",
+        "Elementos químicos mais pesados são produzidos por processos estelares e eventos associados, conectando evolução estelar à composição do Universo e dos planetas."
+      ]
+    },
+    {
+      "id": "CIE-40-B13",
+      "type": "EXIT_TICKET",
+      "title": "Recuperação ativa",
+      "prompt": "Sem consultar a aula, explique evolução estelar usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+      "answerGuide": {
+        "mustMention": [
+          "Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear.",
+          "A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela.",
+          "correção explícita de pelo menos um erro conceitual da aula"
+        ]
+      }
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-ASTRO-004",
+    "SRC-ASTRO-005"
+  ],
+  "mediaRefs": [],
+  "imageRequestRefs": [],
+  "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+}

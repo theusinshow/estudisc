@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-40-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de evolução estelar, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear."
+      },
+      {
+        "key": "B",
+        "text": "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida."
+      },
+      {
+        "key": "C",
+        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+      },
+      {
+        "key": "D",
+        "text": "O Sol já é uma anã branca na fase atual."
+      },
+      {
+        "key": "E",
+        "text": "Estrelas queimam por combustão química semelhante a uma fogueira."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-40-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-40-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar evolução estelar sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Sol já é uma anã branca na fase atual."
+      },
+      {
+        "key": "B",
+        "text": "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida."
+      },
+      {
+        "key": "C",
+        "text": "Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida."
+      },
+      {
+        "key": "D",
+        "text": "Estrelas queimam por combustão química semelhante a uma fogueira."
+      },
+      {
+        "key": "E",
+        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-40-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-40-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em evolução estelar?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Sol já é uma anã branca na fase atual."
+      },
+      {
+        "key": "B",
+        "text": "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida."
+      },
+      {
+        "key": "C",
+        "text": "A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela."
+      },
+      {
+        "key": "D",
+        "text": "Estrelas queimam por combustão química semelhante a uma fogueira."
+      },
+      {
+        "key": "E",
+        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-40-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-40-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual fator tem papel decisivo no caminho evolutivo e destino final de uma estrela?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A existência de oceanos em planetas próximos."
+      },
+      {
+        "key": "B",
+        "text": "A fase da Lua observada da Terra."
+      },
+      {
+        "key": "C",
+        "text": "A quantidade de oxigênio da atmosfera terrestre."
+      },
+      {
+        "key": "D",
+        "text": "Sua massa inicial."
+      },
+      {
+        "key": "E",
+        "text": "A posição do observador na superfície da Terra."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Sua massa inicial.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-40-CON-01",
+      "CIE-40-CON-02",
+      "CIE-40-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-40-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear.\nII. Todas as estrelas terminam obrigatoriamente como buracos negros.\nIII. A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela.\nIV. Estrelas queimam por combustão química semelhante a uma fogueira.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-40-CON-01",
+      "CIE-40-CON-02",
+      "CIE-40-CON-03",
+      "CIE-40-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-40-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre evolução estelar para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+      },
+      {
+        "key": "B",
+        "text": "Estrelas queimam por combustão química semelhante a uma fogueira."
+      },
+      {
+        "key": "C",
+        "text": "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida."
+      },
+      {
+        "key": "D",
+        "text": "O Sol já é uma anã branca na fase atual."
+      },
+      {
+        "key": "E",
+        "text": "Estrelas muito massivas podem sofrer colapso do núcleo e explosão de supernova, deixando estrela de nêutrons ou, em certos casos, buraco negro."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Estrelas muito massivas podem sofrer colapso do núcleo e explosão de supernova, deixando estrela de nêutrons ou, em certos casos, buraco negro.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-40-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-40-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre evolução estelar?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela."
+      },
+      {
+        "key": "B",
+        "text": "Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida."
+      },
+      {
+        "key": "C",
+        "text": "Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear."
+      },
+      {
+        "key": "D",
+        "text": "Estrelas de massa semelhante à do Sol evoluem para gigante vermelha e terminam como anã branca após perder camadas externas."
+      },
+      {
+        "key": "E",
+        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a incorreta: Todas as estrelas terminam obrigatoriamente como buracos negros. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-40-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-40-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em evolução estelar?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Elementos químicos mais pesados são produzidos por processos estelares e eventos associados, conectando evolução estelar à composição do Universo e dos planetas."
+      },
+      {
+        "key": "B",
+        "text": "Estrelas queimam por combustão química semelhante a uma fogueira."
+      },
+      {
+        "key": "C",
+        "text": "O Sol já é uma anã branca na fase atual."
+      },
+      {
+        "key": "D",
+        "text": "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida."
+      },
+      {
+        "key": "E",
+        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: Elementos químicos mais pesados são produzidos por processos estelares e eventos associados, conectando evolução estelar à composição do Universo e dos planetas.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-40-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-07-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de consumo e uso consciente de energia elétrica, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+      },
+      {
+        "key": "B",
+        "text": "Quanto maior a potência, maior necessariamente a eficiência."
+      },
+      {
+        "key": "C",
+        "text": "Quilowatt-hora é unidade de potência."
+      },
+      {
+        "key": "D",
+        "text": "Um aparelho desligado sempre consome a mesma energia que ligado."
+      },
+      {
+        "key": "E",
+        "text": "Potência indica a rapidez com que um aparelho transforma ou transfere energia e é expressa em watts."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Potência indica a rapidez com que um aparelho transforma ou transfere energia e é expressa em watts.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-07-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-07-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar consumo e uso consciente de energia elétrica sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Quilowatt-hora é unidade de potência."
+      },
+      {
+        "key": "B",
+        "text": "O consumo de energia depende da potência e do tempo de uso; em contas de eletricidade é comum usar quilowatt-hora."
+      },
+      {
+        "key": "C",
+        "text": "Um aparelho desligado sempre consome a mesma energia que ligado."
+      },
+      {
+        "key": "D",
+        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+      },
+      {
+        "key": "E",
+        "text": "Quanto maior a potência, maior necessariamente a eficiência."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: O consumo de energia depende da potência e do tempo de uso; em contas de eletricidade é comum usar quilowatt-hora.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-07-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-07-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em consumo e uso consciente de energia elétrica?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Quanto maior a potência, maior necessariamente a eficiência."
+      },
+      {
+        "key": "B",
+        "text": "Um aparelho desligado sempre consome a mesma energia que ligado."
+      },
+      {
+        "key": "C",
+        "text": "Quilowatt-hora é unidade de potência."
+      },
+      {
+        "key": "D",
+        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+      },
+      {
+        "key": "E",
+        "text": "Para estimar consumo em kWh, converte-se a potência para kW e multiplica-se pelo tempo em horas."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Para estimar consumo em kWh, converte-se a potência para kW e multiplica-se pelo tempo em horas.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-07-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-07-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um aparelho de 1.000 W funciona por 2 horas. Desprezando variações, qual consumo de energia corresponde a esse uso?",
+    "options": [
+      {
+        "key": "A",
+        "text": "0,5 kWh."
+      },
+      {
+        "key": "B",
+        "text": "1 kWh."
+      },
+      {
+        "key": "C",
+        "text": "2 kW."
+      },
+      {
+        "key": "D",
+        "text": "2 kWh."
+      },
+      {
+        "key": "E",
+        "text": "2.000 kWh."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "2 kWh.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-07-CON-01",
+      "CIE-07-CON-02",
+      "CIE-07-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-07-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Potência indica a rapidez com que um aparelho transforma ou transfere energia e é expressa em watts.\nII. Potência e energia consumida são exatamente a mesma grandeza.\nIII. Para estimar consumo em kWh, converte-se a potência para kW e multiplica-se pelo tempo em horas.\nIV. Um aparelho desligado sempre consome a mesma energia que ligado.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-07-CON-01",
+      "CIE-07-CON-02",
+      "CIE-07-CON-03",
+      "CIE-07-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-07-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre consumo e uso consciente de energia elétrica para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Quilowatt-hora é unidade de potência."
+      },
+      {
+        "key": "B",
+        "text": "Um aparelho desligado sempre consome a mesma energia que ligado."
+      },
+      {
+        "key": "C",
+        "text": "Reduzir tempo de uso e escolher equipamentos eficientes pode diminuir consumo sem eliminar a função do aparelho."
+      },
+      {
+        "key": "D",
+        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+      },
+      {
+        "key": "E",
+        "text": "Quanto maior a potência, maior necessariamente a eficiência."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: Reduzir tempo de uso e escolher equipamentos eficientes pode diminuir consumo sem eliminar a função do aparelho.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-07-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-07-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre consumo e uso consciente de energia elétrica?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Um aparelho de maior potência não é automaticamente mais eficiente; eficiência compara resultado útil e energia utilizada."
+      },
+      {
+        "key": "B",
+        "text": "Para estimar consumo em kWh, converte-se a potência para kW e multiplica-se pelo tempo em horas."
+      },
+      {
+        "key": "C",
+        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+      },
+      {
+        "key": "D",
+        "text": "O consumo de energia depende da potência e do tempo de uso; em contas de eletricidade é comum usar quilowatt-hora."
+      },
+      {
+        "key": "E",
+        "text": "Potência indica a rapidez com que um aparelho transforma ou transfere energia e é expressa em watts."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a incorreta: Potência e energia consumida são exatamente a mesma grandeza. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-07-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-07-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em consumo e uso consciente de energia elétrica?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Quilowatt-hora é unidade de potência."
+      },
+      {
+        "key": "B",
+        "text": "Quanto maior a potência, maior necessariamente a eficiência."
+      },
+      {
+        "key": "C",
+        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+      },
+      {
+        "key": "D",
+        "text": "Uso consciente também considera horários, hábitos, manutenção e impactos da geração de eletricidade."
+      },
+      {
+        "key": "E",
+        "text": "Um aparelho desligado sempre consome a mesma energia que ligado."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Uso consciente também considera horários, hábitos, manutenção e impactos da geração de eletricidade.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-07-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

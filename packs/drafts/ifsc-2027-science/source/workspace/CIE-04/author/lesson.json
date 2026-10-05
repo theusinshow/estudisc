@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "CIE-04",
+  "subject": "CIE",
+  "title": "Propagação do calor e máquinas térmicas",
+  "unit": "Matéria e Energia",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+  "concepts": [
+    {
+      "id": "CIE-04-CON-01",
+      "name": "Condução",
+      "masteryTarget": "Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria."
+    },
+    {
+      "id": "CIE-04-CON-02",
+      "name": "Convecção",
+      "masteryTarget": "Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura."
+    },
+    {
+      "id": "CIE-04-CON-03",
+      "name": "Radiação",
+      "masteryTarget": "Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material."
+    },
+    {
+      "id": "CIE-04-CON-04",
+      "name": "Máquinas térmicas em nível conceitual",
+      "masteryTarget": "O aquecimento da Terra pelo Sol é possível através do vácuo graças à radiação."
+    },
+    {
+      "id": "CIE-04-CON-05",
+      "name": "Rendimento apenas qualitativo",
+      "masteryTarget": "Máquinas térmicas convertem parte da energia térmica em trabalho mecânico, sempre com transferências de energia para o ambiente."
+    },
+    {
+      "id": "CIE-04-CON-06",
+      "name": "Aplicações",
+      "masteryTarget": "Condutores e isolantes térmicos são escolhidos conforme a função: panelas precisam transferir calor, cabos devem dificultá-lo."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-04-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Ao aquecer água numa panela, a água mais quente no fundo tende a subir e a mais fria tende a descer. Qual processo domina esse movimento? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+    },
+    {
+      "id": "CIE-04-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar com as próprias palavras os conceitos centrais de propagação do calor e máquinas térmicas.",
+        "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+        "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+      ]
+    },
+    {
+      "id": "CIE-04-B03",
+      "type": "EXPLANATION",
+      "title": "Base conceitual",
+      "content": "Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria. Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo propagação do calor e máquinas térmicas.",
+      "items": [
+        "Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria.",
+        "Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura."
+      ]
+    },
+    {
+      "id": "CIE-04-B04",
+      "type": "EXPLANATION",
+      "title": "Como as ideias se conectam",
+      "content": "Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material. O aquecimento da Terra pelo Sol é possível através do vácuo graças à radiação. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "items": [
+        "Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material.",
+        "O aquecimento da Terra pelo Sol é possível através do vácuo graças à radiação."
+      ]
+    },
+    {
+      "id": "CIE-04-B05",
+      "type": "EXPLANATION",
+      "title": "Aplicações, limites e leitura científica",
+      "content": "Máquinas térmicas convertem parte da energia térmica em trabalho mecânico, sempre com transferências de energia para o ambiente. Condutores e isolantes térmicos são escolhidos conforme a função: panelas precisam transferir calor, cabos devem dificultá-lo. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "items": [
+        "Máquinas térmicas convertem parte da energia térmica em trabalho mecânico, sempre com transferências de energia para o ambiente.",
+        "Condutores e isolantes térmicos são escolhidos conforme a função: panelas precisam transferir calor, cabos devem dificultá-lo."
+      ]
+    },
+    {
+      "id": "CIE-04-B06",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Termos que precisam estar claros",
+      "items": [
+        "condução",
+        "convecção",
+        "radiação",
+        "máquinas térmicas em nível conceitual",
+        "rendimento apenas qualitativo",
+        "aplicações"
+      ]
+    },
+    {
+      "id": "CIE-04-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTIONS",
+      "title": "Erros que a prova pode explorar",
+      "items": [
+        "Convecção é o mecanismo dominante dentro de uma barra metálica sólida.",
+        "Radiação térmica só pode ocorrer quando há ar.",
+        "Uma máquina térmica converte todo calor recebido em trabalho sem perdas.",
+        "Condução transporta grandes porções de matéria de um lugar para outro."
+      ]
+    },
+    {
+      "id": "CIE-04-B08",
+      "type": "CALLOUT",
+      "variant": "ACTIVE_LEARNING",
+      "title": "Atividade de compreensão",
+      "items": [
+        "Classifique cenas do cotidiano como condução, convecção ou radiação: colher metálica em panela, água aquecendo e Sol aquecendo a pele.",
+        "Justifique cada classificação pelo mecanismo, não apenas pelo objeto presente.",
+        "Procure um exemplo em que mais de um mecanismo ocorra ao mesmo tempo.",
+        "Explique por que radiação pode atravessar o espaço entre Sol e Terra."
+      ]
+    },
+    {
+      "id": "CIE-04-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo resolvido passo a passo",
+      "prompt": "Ao aquecer água numa panela, a água mais quente no fundo tende a subir e a mais fria tende a descer. Qual processo domina esse movimento?",
+      "answer": "Convecção térmica.",
+      "reasoning": "1) Use esta relação: Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria. 2) Use esta relação: Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura. 3) Use esta relação: Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material. 4) Aplicando essas relações à situação, a conclusão correta é: Convecção térmica."
+    },
+    {
+      "id": "CIE-04-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Como isso costuma aparecer em prova",
+      "items": [
+        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de propagação do calor e máquinas térmicas.",
+        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+      ]
+    },
+    {
+      "id": "CIE-04-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Explore e teste a ideia",
+      "mediaRefs": [
+        "SRC-FIS-004",
+        "SRC-FIS-003"
+      ],
+      "optional": true
+    },
+    {
+      "id": "CIE-04-B12",
+      "type": "IMAGE_REQUEST",
+      "title": "Ilustração de apoio",
+      "requestRef": "IMG-CIE-04-001",
+      "status": "GENERATION_PENDING"
+    },
+    {
+      "id": "CIE-04-B13",
+      "type": "SUMMARY",
+      "title": "Resumo de prova",
+      "items": [
+        "Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria.",
+        "Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura.",
+        "Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material.",
+        "O aquecimento da Terra pelo Sol é possível através do vácuo graças à radiação.",
+        "Máquinas térmicas convertem parte da energia térmica em trabalho mecânico, sempre com transferências de energia para o ambiente.",
+        "Condutores e isolantes térmicos são escolhidos conforme a função: panelas precisam transferir calor, cabos devem dificultá-lo."
+      ]
+    },
+    {
+      "id": "CIE-04-B14",
+      "type": "EXIT_TICKET",
+      "title": "Recuperação ativa",
+      "prompt": "Sem consultar a aula, explique propagação do calor e máquinas térmicas usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+      "answerGuide": {
+        "mustMention": [
+          "Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria.",
+          "Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material.",
+          "correção explícita de pelo menos um erro conceitual da aula"
+        ]
+      }
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-FIS-004",
+    "SRC-FIS-003"
+  ],
+  "mediaRefs": [
+    "SRC-FIS-004",
+    "SRC-FIS-003"
+  ],
+  "imageRequestRefs": [
+    "IMG-CIE-04-001"
+  ],
+  "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+}

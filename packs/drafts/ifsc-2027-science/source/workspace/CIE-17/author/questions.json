@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-17-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de dna, genes e cromossomos, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "DNA é uma molécula que armazena informação genética por meio da sequência de seus nucleotídeos."
+      },
+      {
+        "key": "B",
+        "text": "DNA existe exclusivamente em células reprodutivas."
+      },
+      {
+        "key": "C",
+        "text": "Todo caráter humano é controlado por um único gene e não sofre influência ambiental."
+      },
+      {
+        "key": "D",
+        "text": "Gene, DNA e cromossomo são exatamente a mesma estrutura."
+      },
+      {
+        "key": "E",
+        "text": "Cromossomos são formados apenas por lipídios."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: DNA é uma molécula que armazena informação genética por meio da sequência de seus nucleotídeos.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-17-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-17-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar dna, genes e cromossomos sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "DNA existe exclusivamente em células reprodutivas."
+      },
+      {
+        "key": "B",
+        "text": "Cromossomos são formados apenas por lipídios."
+      },
+      {
+        "key": "C",
+        "text": "Gene, DNA e cromossomo são exatamente a mesma estrutura."
+      },
+      {
+        "key": "D",
+        "text": "Todo caráter humano é controlado por um único gene e não sofre influência ambiental."
+      },
+      {
+        "key": "E",
+        "text": "Gene é um segmento de DNA associado à produção de um produto funcional e à herança de características de modo frequentemente complexo."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A alternativa E é a correta: Gene é um segmento de DNA associado à produção de um produto funcional e à herança de características de modo frequentemente complexo.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-17-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-17-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em dna, genes e cromossomos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Gene, DNA e cromossomo são exatamente a mesma estrutura."
+      },
+      {
+        "key": "B",
+        "text": "Cromossomos são estruturas formadas por DNA associado a proteínas; em células eucarióticas ficam no núcleo durante grande parte do ciclo celular."
+      },
+      {
+        "key": "C",
+        "text": "Todo caráter humano é controlado por um único gene e não sofre influência ambiental."
+      },
+      {
+        "key": "D",
+        "text": "DNA existe exclusivamente em células reprodutivas."
+      },
+      {
+        "key": "E",
+        "text": "Cromossomos são formados apenas por lipídios."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: Cromossomos são estruturas formadas por DNA associado a proteínas; em células eucarióticas ficam no núcleo durante grande parte do ciclo celular.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-17-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-17-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual relação é correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "DNA é um tipo de cromossomo formado por genes fora da célula."
+      },
+      {
+        "key": "B",
+        "text": "Cromossomos são segmentos de proteína sem DNA."
+      },
+      {
+        "key": "C",
+        "text": "Genes ficam apenas no citoplasma e nunca no DNA."
+      },
+      {
+        "key": "D",
+        "text": "Genes são segmentos de DNA localizados em cromossomos."
+      },
+      {
+        "key": "E",
+        "text": "Cada célula contém um único gene."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Genes são segmentos de DNA localizados em cromossomos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-17-CON-01",
+      "CIE-17-CON-02",
+      "CIE-17-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-17-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. DNA é uma molécula que armazena informação genética por meio da sequência de seus nucleotídeos.\nII. Gene, DNA e cromossomo são exatamente a mesma estrutura.\nIII. Cromossomos são estruturas formadas por DNA associado a proteínas; em células eucarióticas ficam no núcleo durante grande parte do ciclo celular.\nIV. Todo caráter humano é controlado por um único gene e não sofre influência ambiental.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-17-CON-01",
+      "CIE-17-CON-02",
+      "CIE-17-CON-03",
+      "CIE-17-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-17-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre dna, genes e cromossomos para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Características observáveis resultam da interação entre informação genética e ambiente, não apenas de um único gene em todos os casos."
+      },
+      {
+        "key": "B",
+        "text": "Todo caráter humano é controlado por um único gene e não sofre influência ambiental."
+      },
+      {
+        "key": "C",
+        "text": "Cromossomos são formados apenas por lipídios."
+      },
+      {
+        "key": "D",
+        "text": "DNA existe exclusivamente em células reprodutivas."
+      },
+      {
+        "key": "E",
+        "text": "Gene, DNA e cromossomo são exatamente a mesma estrutura."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: Características observáveis resultam da interação entre informação genética e ambiente, não apenas de um único gene em todos os casos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-17-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-17-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre dna, genes e cromossomos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Gene é um segmento de DNA associado à produção de um produto funcional e à herança de características de modo frequentemente complexo."
+      },
+      {
+        "key": "B",
+        "text": "Genes ocupam posições específicas nos cromossomos e podem apresentar versões chamadas alelos."
+      },
+      {
+        "key": "C",
+        "text": "Gene, DNA e cromossomo são exatamente a mesma estrutura."
+      },
+      {
+        "key": "D",
+        "text": "Cromossomos são estruturas formadas por DNA associado a proteínas; em células eucarióticas ficam no núcleo durante grande parte do ciclo celular."
+      },
+      {
+        "key": "E",
+        "text": "DNA é uma molécula que armazena informação genética por meio da sequência de seus nucleotídeos."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a incorreta: Gene, DNA e cromossomo são exatamente a mesma estrutura. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-17-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-17-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em dna, genes e cromossomos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Antes da divisão celular, o DNA precisa ser duplicado para que a informação genética possa ser distribuída às células descendentes."
+      },
+      {
+        "key": "B",
+        "text": "Gene, DNA e cromossomo são exatamente a mesma estrutura."
+      },
+      {
+        "key": "C",
+        "text": "DNA existe exclusivamente em células reprodutivas."
+      },
+      {
+        "key": "D",
+        "text": "Todo caráter humano é controlado por um único gene e não sofre influência ambiental."
+      },
+      {
+        "key": "E",
+        "text": "Cromossomos são formados apenas por lipídios."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A alternativa A é a correta: Antes da divisão celular, o DNA precisa ser duplicado para que a informação genética possa ser distribuída às células descendentes.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-17-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

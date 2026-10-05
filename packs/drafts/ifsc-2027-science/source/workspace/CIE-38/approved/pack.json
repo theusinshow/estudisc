@@ -1,0 +1,499 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "CIE-38",
+    "subject": "CIE",
+    "title": "Terra e Lua",
+    "unit": "Terra e Universo",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+    "concepts": [
+      {
+        "id": "CIE-38-CON-01",
+        "name": "Rotação e translação da Terra",
+        "masteryTarget": "A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite."
+      },
+      {
+        "id": "CIE-38-CON-02",
+        "name": "Lua",
+        "masteryTarget": "A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano."
+      },
+      {
+        "id": "CIE-38-CON-03",
+        "name": "Movimentos relativos",
+        "masteryTarget": "A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol."
+      },
+      {
+        "id": "CIE-38-CON-04",
+        "name": "Fases da Lua",
+        "masteryTarget": "Fases da Lua não são causadas pela sombra da Terra; sombra terrestre sobre a Lua ocorre em eclipses lunares."
+      },
+      {
+        "id": "CIE-38-CON-05",
+        "name": "Eclipses em nível fundamental",
+        "masteryTarget": "Massa é propriedade do corpo e não depende do astro onde ele está; peso depende da interação gravitacional e pode mudar."
+      },
+      {
+        "id": "CIE-38-CON-06",
+        "name": "Gravidade, massa e peso como contexto",
+        "masteryTarget": "A Lua possui gravidade menor que a Terra e atmosfera extremamente tênue, o que afeta peso, céu e condições de superfície."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "CIE-38-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Um astronauta vai da Terra para a Lua. O que acontece com massa e peso? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+      },
+      {
+        "id": "CIE-38-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar com as próprias palavras os conceitos centrais de terra e lua.",
+          "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+          "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+        ]
+      },
+      {
+        "id": "CIE-38-B03",
+        "type": "EXPLANATION",
+        "title": "Base conceitual",
+        "content": "A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite. A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo terra e lua.",
+        "items": [
+          "A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite.",
+          "A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano."
+        ]
+      },
+      {
+        "id": "CIE-38-B04",
+        "type": "EXPLANATION",
+        "title": "Como as ideias se conectam",
+        "content": "A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol. Fases da Lua não são causadas pela sombra da Terra; sombra terrestre sobre a Lua ocorre em eclipses lunares. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+        "items": [
+          "A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol.",
+          "Fases da Lua não são causadas pela sombra da Terra; sombra terrestre sobre a Lua ocorre em eclipses lunares."
+        ]
+      },
+      {
+        "id": "CIE-38-B05",
+        "type": "EXPLANATION",
+        "title": "Aplicações, limites e leitura científica",
+        "content": "Massa é propriedade do corpo e não depende do astro onde ele está; peso depende da interação gravitacional e pode mudar. A Lua possui gravidade menor que a Terra e atmosfera extremamente tênue, o que afeta peso, céu e condições de superfície. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+        "items": [
+          "Massa é propriedade do corpo e não depende do astro onde ele está; peso depende da interação gravitacional e pode mudar.",
+          "A Lua possui gravidade menor que a Terra e atmosfera extremamente tênue, o que afeta peso, céu e condições de superfície."
+        ]
+      },
+      {
+        "id": "CIE-38-B06",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Termos que precisam estar claros",
+        "items": [
+          "rotação e translação da Terra",
+          "Lua",
+          "movimentos relativos",
+          "fases da Lua",
+          "eclipses em nível fundamental",
+          "gravidade, massa e peso como contexto"
+        ]
+      },
+      {
+        "id": "CIE-38-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTIONS",
+        "title": "Erros que a prova pode explorar",
+        "items": [
+          "As estações do ano são causadas principalmente pela distância da Terra ao Sol.",
+          "Fases da Lua ocorrem porque a sombra da Terra cobre a Lua todo mês.",
+          "A massa de um astronauta diminui ao chegar à Lua.",
+          "A Terra permanece na mesma posição no espaço enquanto gira em torno do próprio eixo."
+        ]
+      },
+      {
+        "id": "CIE-38-B08",
+        "type": "CALLOUT",
+        "variant": "ACTIVE_LEARNING",
+        "title": "Atividade de compreensão",
+        "items": [
+          "Use uma lâmpada como Sol e uma esfera como Lua para observar fases a partir da posição de um observador.",
+          "Diferencie fases de eclipses e identifique quando sombra realmente participa.",
+          "Compare massa e peso de um objeto na Terra e na Lua.",
+          "Relacione rotação a dia/noite e translação + inclinação do eixo às estações."
+        ]
+      },
+      {
+        "id": "CIE-38-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo resolvido passo a passo",
+        "prompt": "Um astronauta vai da Terra para a Lua. O que acontece com massa e peso?",
+        "answer": "A massa permanece essencialmente a mesma, enquanto o peso diminui por causa da menor gravidade lunar.",
+        "reasoning": "1) Use esta relação: A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite. 2) Use esta relação: A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano. 3) Use esta relação: A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol. 4) Aplicando essas relações à situação, a conclusão correta é: A massa permanece essencialmente a mesma, enquanto o peso diminui por causa da menor gravidade lunar."
+      },
+      {
+        "id": "CIE-38-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Como isso costuma aparecer em prova",
+        "items": [
+          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de terra e lua.",
+          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        ]
+      },
+      {
+        "id": "CIE-38-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Explore e teste a ideia",
+        "mediaRefs": [
+          "SRC-PHET-007",
+          "SRC-ASTRO-006"
+        ],
+        "optional": true
+      },
+      {
+        "id": "CIE-38-B12",
+        "type": "DETERMINISTIC_COMPONENT_REQUEST",
+        "title": "Componente visual/interativo",
+        "request": "Diagrama Terra-Lua-Sol para fases/eclipses e vetor de gravidade; SVG interativo.",
+        "status": "IMPLEMENTATION_REQUIRED"
+      },
+      {
+        "id": "CIE-38-B13",
+        "type": "SUMMARY",
+        "title": "Resumo de prova",
+        "items": [
+          "A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite.",
+          "A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano.",
+          "A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol.",
+          "Fases da Lua não são causadas pela sombra da Terra; sombra terrestre sobre a Lua ocorre em eclipses lunares.",
+          "Massa é propriedade do corpo e não depende do astro onde ele está; peso depende da interação gravitacional e pode mudar.",
+          "A Lua possui gravidade menor que a Terra e atmosfera extremamente tênue, o que afeta peso, céu e condições de superfície."
+        ]
+      },
+      {
+        "id": "CIE-38-B14",
+        "type": "EXIT_TICKET",
+        "title": "Recuperação ativa",
+        "prompt": "Sem consultar a aula, explique terra e lua usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+        "answerGuide": {
+          "mustMention": [
+            "A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite.",
+            "A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol.",
+            "correção explícita de pelo menos um erro conceitual da aula"
+          ]
+        }
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-001",
+      "SRC-ASTRO-001",
+      "SRC-PHET-007",
+      "SRC-ASTRO-006"
+    ],
+    "mediaRefs": [
+      "SRC-PHET-007",
+      "SRC-ASTRO-006"
+    ],
+    "imageRequestRefs": [],
+    "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+  },
+  "questions": [
+    {
+      "id": "CIE-38-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Durante uma revisão de terra e lua, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Terra permanece na mesma posição no espaço enquanto gira em torno do próprio eixo."
+        },
+        {
+          "key": "B",
+          "text": "A massa de um astronauta diminui ao chegar à Lua."
+        },
+        {
+          "key": "C",
+          "text": "As estações do ano são causadas principalmente pela distância da Terra ao Sol."
+        },
+        {
+          "key": "D",
+          "text": "Fases da Lua ocorrem porque a sombra da Terra cobre a Lua todo mês."
+        },
+        {
+          "key": "E",
+          "text": "A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-38-CON-01"
+      ],
+      "targetedError": "core_concept",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-38-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante precisa explicar terra e lua sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Terra permanece na mesma posição no espaço enquanto gira em torno do próprio eixo."
+        },
+        {
+          "key": "B",
+          "text": "As estações do ano são causadas principalmente pela distância da Terra ao Sol."
+        },
+        {
+          "key": "C",
+          "text": "A massa de um astronauta diminui ao chegar à Lua."
+        },
+        {
+          "key": "D",
+          "text": "A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano."
+        },
+        {
+          "key": "E",
+          "text": "Fases da Lua ocorrem porque a sombra da Terra cobre a Lua todo mês."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
+      "conceptIds": [
+        "CIE-38-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-38-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em terra e lua?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fases da Lua ocorrem porque a sombra da Terra cobre a Lua todo mês."
+        },
+        {
+          "key": "B",
+          "text": "As estações do ano são causadas principalmente pela distância da Terra ao Sol."
+        },
+        {
+          "key": "C",
+          "text": "A Terra permanece na mesma posição no espaço enquanto gira em torno do próprio eixo."
+        },
+        {
+          "key": "D",
+          "text": "A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol."
+        },
+        {
+          "key": "E",
+          "text": "A massa de um astronauta diminui ao chegar à Lua."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D é a correta: A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-38-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-38-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um astronauta vai da Terra para a Lua. O que acontece com massa e peso?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Massa e peso diminuem na mesma proporção."
+        },
+        {
+          "key": "B",
+          "text": "A massa diminui, mas o peso permanece igual."
+        },
+        {
+          "key": "C",
+          "text": "Ambos aumentam porque a Lua está no espaço."
+        },
+        {
+          "key": "D",
+          "text": "A massa permanece essencialmente a mesma, enquanto o peso diminui por causa da menor gravidade lunar."
+        },
+        {
+          "key": "E",
+          "text": "Nenhuma grandeza pode mudar porque gravidade não existe na Lua."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A massa permanece essencialmente a mesma, enquanto o peso diminui por causa da menor gravidade lunar.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "CIE-38-CON-01",
+        "CIE-38-CON-02",
+        "CIE-38-CON-03"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-38-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite.\nII. As estações do ano são causadas principalmente pela distância da Terra ao Sol.\nIII. A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol.\nIV. Fases da Lua ocorrem porque a sombra da Terra cobre a Lua todo mês.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-38-CON-01",
+        "CIE-38-CON-02",
+        "CIE-38-CON-03",
+        "CIE-38-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-38-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao transferir o que foi estudado sobre terra e lua para uma situação nova, qual conclusão permanece válida?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fases da Lua ocorrem porque a sombra da Terra cobre a Lua todo mês."
+        },
+        {
+          "key": "B",
+          "text": "As estações do ano são causadas principalmente pela distância da Terra ao Sol."
+        },
+        {
+          "key": "C",
+          "text": "A Terra permanece na mesma posição no espaço enquanto gira em torno do próprio eixo."
+        },
+        {
+          "key": "D",
+          "text": "A massa de um astronauta diminui ao chegar à Lua."
+        },
+        {
+          "key": "E",
+          "text": "Massa é propriedade do corpo e não depende do astro onde ele está; peso depende da interação gravitacional e pode mudar."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A alternativa E é a correta: Massa é propriedade do corpo e não depende do astro onde ele está; peso depende da interação gravitacional e pode mudar.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "CIE-38-CON-05"
+      ],
+      "targetedError": "transfer",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-38-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre terra e lua?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano."
+        },
+        {
+          "key": "B",
+          "text": "As estações do ano são causadas principalmente pela distância da Terra ao Sol."
+        },
+        {
+          "key": "C",
+          "text": "Fases da Lua não são causadas pela sombra da Terra; sombra terrestre sobre a Lua ocorre em eclipses lunares."
+        },
+        {
+          "key": "D",
+          "text": "A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite."
+        },
+        {
+          "key": "E",
+          "text": "A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A alternativa B é a incorreta: As estações do ano são causadas principalmente pela distância da Terra ao Sol. As demais expressam relações compatíveis com os conceitos da aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "CIE-38-CON-01"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    },
+    {
+      "id": "CIE-38-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em terra e lua?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A massa de um astronauta diminui ao chegar à Lua."
+        },
+        {
+          "key": "B",
+          "text": "Fases da Lua ocorrem porque a sombra da Terra cobre a Lua todo mês."
+        },
+        {
+          "key": "C",
+          "text": "A Lua possui gravidade menor que a Terra e atmosfera extremamente tênue, o que afeta peso, céu e condições de superfície."
+        },
+        {
+          "key": "D",
+          "text": "As estações do ano são causadas principalmente pela distância da Terra ao Sol."
+        },
+        {
+          "key": "E",
+          "text": "A Terra permanece na mesma posição no espaço enquanto gira em torno do próprio eixo."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A alternativa C é a correta: A Lua possui gravidade menor que a Terra e atmosfera extremamente tênue, o que afeta peso, céu e condições de superfície.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "CIE-38-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    }
+  ]
+}

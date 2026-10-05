@@ -1,0 +1,295 @@
+[
+  {
+    "id": "CIE-12-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Durante uma revisão de substâncias puras, misturas, fases e componentes, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Fase e componente significam sempre a mesma coisa."
+      },
+      {
+        "key": "B",
+        "text": "Substância pura é formada obrigatoriamente por um único elemento químico."
+      },
+      {
+        "key": "C",
+        "text": "Uma solução de sal em água é heterogênea porque contém duas substâncias."
+      },
+      {
+        "key": "D",
+        "text": "Substância pura possui composição química definida; mistura reúne duas ou mais substâncias."
+      },
+      {
+        "key": "E",
+        "text": "Toda mistura possui exatamente duas fases."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Substância pura possui composição química definida; mistura reúne duas ou mais substâncias.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-12-CON-01"
+    ],
+    "targetedError": "core_concept",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-12-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante precisa explicar substâncias puras, misturas, fases e componentes sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Toda mistura possui exatamente duas fases."
+      },
+      {
+        "key": "B",
+        "text": "Substância pura é formada obrigatoriamente por um único elemento químico."
+      },
+      {
+        "key": "C",
+        "text": "Fase e componente significam sempre a mesma coisa."
+      },
+      {
+        "key": "D",
+        "text": "Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada."
+      },
+      {
+        "key": "E",
+        "text": "Uma solução de sal em água é heterogênea porque contém duas substâncias."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
+    "conceptIds": [
+      "CIE-12-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-12-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em substâncias puras, misturas, fases e componentes?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Toda mistura possui exatamente duas fases."
+      },
+      {
+        "key": "B",
+        "text": "Mistura heterogênea apresenta duas ou mais fases distinguíveis."
+      },
+      {
+        "key": "C",
+        "text": "Substância pura é formada obrigatoriamente por um único elemento químico."
+      },
+      {
+        "key": "D",
+        "text": "Fase e componente significam sempre a mesma coisa."
+      },
+      {
+        "key": "E",
+        "text": "Uma solução de sal em água é heterogênea porque contém duas substâncias."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A alternativa B é a correta: Mistura heterogênea apresenta duas ou mais fases distinguíveis.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-12-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-12-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um recipiente contém água, sal totalmente dissolvido e óleo formando uma camada separada. Quantos componentes e quantas fases há?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Duas componentes e três fases."
+      },
+      {
+        "key": "B",
+        "text": "Três componentes e três fases."
+      },
+      {
+        "key": "C",
+        "text": "Uma componente e duas fases."
+      },
+      {
+        "key": "D",
+        "text": "Três componentes e duas fases."
+      },
+      {
+        "key": "E",
+        "text": "Duas componentes e uma fase."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Três componentes e duas fases.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "CIE-12-CON-01",
+      "CIE-12-CON-02",
+      "CIE-12-CON-03"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-12-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Substância pura possui composição química definida; mistura reúne duas ou mais substâncias.\nII. Toda mistura possui exatamente duas fases.\nIII. Mistura heterogênea apresenta duas ou mais fases distinguíveis.\nIV. Fase e componente significam sempre a mesma coisa.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-12-CON-01",
+      "CIE-12-CON-02",
+      "CIE-12-CON-03",
+      "CIE-12-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-12-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Ao transferir o que foi estudado sobre substâncias puras, misturas, fases e componentes para uma situação nova, qual conclusão permanece válida?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Fase e componente significam sempre a mesma coisa."
+      },
+      {
+        "key": "B",
+        "text": "Toda mistura possui exatamente duas fases."
+      },
+      {
+        "key": "C",
+        "text": "Uma solução de sal em água é heterogênea porque contém duas substâncias."
+      },
+      {
+        "key": "D",
+        "text": "Número de componentes e número de fases não precisam ser iguais."
+      },
+      {
+        "key": "E",
+        "text": "Substância pura é formada obrigatoriamente por um único elemento químico."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D é a correta: Número de componentes e número de fases não precisam ser iguais.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "CIE-12-CON-05"
+    ],
+    "targetedError": "transfer",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-12-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre substâncias puras, misturas, fases e componentes?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Componente é cada substância presente na mistura; fase é cada porção visualmente uniforme do sistema."
+      },
+      {
+        "key": "B",
+        "text": "Substância pura possui composição química definida; mistura reúne duas ou mais substâncias."
+      },
+      {
+        "key": "C",
+        "text": "Toda mistura possui exatamente duas fases."
+      },
+      {
+        "key": "D",
+        "text": "Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada."
+      },
+      {
+        "key": "E",
+        "text": "Mistura heterogênea apresenta duas ou mais fases distinguíveis."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a incorreta: Toda mistura possui exatamente duas fases. As demais expressam relações compatíveis com os conceitos da aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "CIE-12-CON-01"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  },
+  {
+    "id": "CIE-12-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em substâncias puras, misturas, fases e componentes?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Toda mistura possui exatamente duas fases."
+      },
+      {
+        "key": "B",
+        "text": "Fase e componente significam sempre a mesma coisa."
+      },
+      {
+        "key": "C",
+        "text": "A classificação depende das condições e da escala de observação adotada em Ciências escolares."
+      },
+      {
+        "key": "D",
+        "text": "Uma solução de sal em água é heterogênea porque contém duas substâncias."
+      },
+      {
+        "key": "E",
+        "text": "Substância pura é formada obrigatoriamente por um único elemento químico."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A alternativa C é a correta: A classificação depende das condições e da escala de observação adotada em Ciências escolares.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "CIE-12-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+  }
+]

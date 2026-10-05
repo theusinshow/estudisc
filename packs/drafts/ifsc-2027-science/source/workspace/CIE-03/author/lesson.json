@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "CIE-03",
+  "subject": "CIE",
+  "title": "Calor, temperatura e equilíbrio térmico",
+  "unit": "Matéria e Energia",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION",
+  "concepts": [
+    {
+      "id": "CIE-03-CON-01",
+      "name": "Diferença entre calor e temperatura",
+      "masteryTarget": "Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura."
+    },
+    {
+      "id": "CIE-03-CON-02",
+      "name": "Transferência de energia térmica",
+      "masteryTarget": "Espontaneamente, energia térmica é transferida do corpo de maior temperatura para o de menor temperatura."
+    },
+    {
+      "id": "CIE-03-CON-03",
+      "name": "Equilíbrio térmico",
+      "masteryTarget": "Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica."
+    },
+    {
+      "id": "CIE-03-CON-04",
+      "name": "Isolamento térmico",
+      "masteryTarget": "Um isolante térmico reduz a taxa de transferência de calor, mas não 'produz frio' nem impede a troca para sempre."
+    },
+    {
+      "id": "CIE-03-CON-05",
+      "name": "Situações cotidianas",
+      "masteryTarget": "Sensação térmica não é sinônimo de temperatura: materiais à mesma temperatura podem parecer diferentes ao toque por conduzirem calor de modos diferentes."
+    },
+    {
+      "id": "CIE-03-CON-06",
+      "name": "Caixas e garrafas térmicas funcionam dificultando diferentes…",
+      "masteryTarget": "Caixas e garrafas térmicas funcionam dificultando diferentes mecanismos de transferência de energia térmica."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-03-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Uma lata gelada é colocada em uma sala quente e deixada por bastante tempo. O que tende a ocorrer? Não responda por memorização: identifique primeiro quais conceitos explicam a situação."
+    },
+    {
+      "id": "CIE-03-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar com as próprias palavras os conceitos centrais de calor, temperatura e equilíbrio térmico.",
+        "Aplicar esses conceitos em situações novas, inclusive questões contextualizadas no estilo IFSC.",
+        "Reconhecer erros conceituais frequentes e justificar por que estão errados."
+      ]
+    },
+    {
+      "id": "CIE-03-B03",
+      "type": "EXPLANATION",
+      "title": "Base conceitual",
+      "content": "Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura. Espontaneamente, energia térmica é transferida do corpo de maior temperatura para o de menor temperatura. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo calor, temperatura e equilíbrio térmico.",
+      "items": [
+        "Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura.",
+        "Espontaneamente, energia térmica é transferida do corpo de maior temperatura para o de menor temperatura."
+      ]
+    },
+    {
+      "id": "CIE-03-B04",
+      "type": "EXPLANATION",
+      "title": "Como as ideias se conectam",
+      "content": "Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica. Um isolante térmico reduz a taxa de transferência de calor, mas não 'produz frio' nem impede a troca para sempre. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "items": [
+        "Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica.",
+        "Um isolante térmico reduz a taxa de transferência de calor, mas não 'produz frio' nem impede a troca para sempre."
+      ]
+    },
+    {
+      "id": "CIE-03-B05",
+      "type": "EXPLANATION",
+      "title": "Aplicações, limites e leitura científica",
+      "content": "Sensação térmica não é sinônimo de temperatura: materiais à mesma temperatura podem parecer diferentes ao toque por conduzirem calor de modos diferentes. Caixas e garrafas térmicas funcionam dificultando diferentes mecanismos de transferência de energia térmica. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "items": [
+        "Sensação térmica não é sinônimo de temperatura: materiais à mesma temperatura podem parecer diferentes ao toque por conduzirem calor de modos diferentes.",
+        "Caixas e garrafas térmicas funcionam dificultando diferentes mecanismos de transferência de energia térmica."
+      ]
+    },
+    {
+      "id": "CIE-03-B06",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Termos que precisam estar claros",
+      "items": [
+        "diferença entre calor e temperatura",
+        "transferência de energia térmica",
+        "equilíbrio térmico",
+        "isolamento térmico",
+        "situações cotidianas"
+      ]
+    },
+    {
+      "id": "CIE-03-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTIONS",
+      "title": "Erros que a prova pode explorar",
+      "items": [
+        "Calor e temperatura são a mesma grandeza.",
+        "O frio flui espontaneamente do corpo frio para o quente.",
+        "Um isolante térmico mantém a temperatura para sempre.",
+        "No equilíbrio térmico os corpos deixam de possuir energia interna."
+      ]
+    },
+    {
+      "id": "CIE-03-B08",
+      "type": "CALLOUT",
+      "variant": "ACTIVE_LEARNING",
+      "title": "Atividade de compreensão",
+      "items": [
+        "Compare duas situações em que objetos começam com temperaturas diferentes e são colocados em contato térmico.",
+        "Preveja o sentido da transferência de energia antes de observar o resultado.",
+        "Explique por que a transferência tende a diminuir à medida que as temperaturas se aproximam.",
+        "Diferencie 'ficar frio' de 'receber menos energia térmica'."
+      ]
+    },
+    {
+      "id": "CIE-03-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo resolvido passo a passo",
+      "prompt": "Uma lata gelada é colocada em uma sala quente e deixada por bastante tempo. O que tende a ocorrer?",
+      "answer": "Ela recebe energia térmica do ambiente até se aproximar da temperatura do ambiente.",
+      "reasoning": "1) Use esta relação: Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura. 2) Use esta relação: Espontaneamente, energia térmica é transferida do corpo de maior temperatura para o de menor temperatura. 3) Use esta relação: Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica. 4) Aplicando essas relações à situação, a conclusão correta é: Ela recebe energia térmica do ambiente até se aproximar da temperatura do ambiente."
+    },
+    {
+      "id": "CIE-03-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Como isso costuma aparecer em prova",
+      "items": [
+        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
+        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
+        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de calor, temperatura e equilíbrio térmico.",
+        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+      ]
+    },
+    {
+      "id": "CIE-03-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Explore e teste a ideia",
+      "mediaRefs": [
+        "SRC-FIS-003",
+        "SRC-FIS-004"
+      ],
+      "optional": true
+    },
+    {
+      "id": "CIE-03-B12",
+      "type": "SUMMARY",
+      "title": "Resumo de prova",
+      "items": [
+        "Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura.",
+        "Espontaneamente, energia térmica é transferida do corpo de maior temperatura para o de menor temperatura.",
+        "Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica.",
+        "Um isolante térmico reduz a taxa de transferência de calor, mas não 'produz frio' nem impede a troca para sempre.",
+        "Sensação térmica não é sinônimo de temperatura: materiais à mesma temperatura podem parecer diferentes ao toque por conduzirem calor de modos diferentes.",
+        "Caixas e garrafas térmicas funcionam dificultando diferentes mecanismos de transferência de energia térmica."
+      ]
+    },
+    {
+      "id": "CIE-03-B13",
+      "type": "EXIT_TICKET",
+      "title": "Recuperação ativa",
+      "prompt": "Sem consultar a aula, explique calor, temperatura e equilíbrio térmico usando pelo menos três ideias centrais e corrija um dos erros conceituais apresentados.",
+      "answerGuide": {
+        "mustMention": [
+          "Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura.",
+          "Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica.",
+          "correção explícita de pelo menos um erro conceitual da aula"
+        ]
+      }
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-001",
+    "SRC-FIS-003",
+    "SRC-FIS-004"
+  ],
+  "mediaRefs": [
+    "SRC-FIS-003",
+    "SRC-FIS-004"
+  ],
+  "imageRequestRefs": [],
+  "editorialNotes": "Versão 2: aula ampliada com explicações em camadas, exemplo resolvido, estratégia IFSC, recuperação ativa e banco de 8 questões. Conteúdo original ancorado no SourcePack; validar renderer e reconciliar Concept IDs no VECTA."
+}

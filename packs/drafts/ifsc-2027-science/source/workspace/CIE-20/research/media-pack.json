@@ -1,0 +1,34 @@
+{
+  "lessonId": "CIE-20",
+  "mediaCandidates": [],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-CIE-20-001",
+      "lessonId": "CIE-20",
+      "blockId": "CIE-20-B08",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem substituir informação factual da aula.",
+      "prompt": "Montagem editorial em seis vinhetas de paisagens brasileiras: Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa; sem pessoas, sem texto, diferenças ecológicas claras e visualmente plausíveis.",
+      "factualConstraints": [
+        "Cada paisagem deve ser distinta",
+        "Evitar estereótipos geográficos incorretos",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "texto ilegível",
+        "fórmulas inventadas",
+        "rótulos científicos não validados",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para a aula Ecossistemas brasileiros.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-CIE-20-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}
