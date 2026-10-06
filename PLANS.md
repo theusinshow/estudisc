@@ -1,6 +1,17 @@
 # Estudisc current plan
 
-## Current task — authorized evolution implementation (2026-10-06)
+## Current task — product context refresh and continuation (2026-10-06)
+
+User authorized updating the stale Impeccable context and continuing local implementation. Update existing PRODUCT.md to the current schema using confirmed repository/user facts; remove deprecated Register and add platform, positioning, operating context, constraints, evidence and product principles. Preserve canonical DS authority and do not invent claims or visual direction.
+
+- [x] Refresh PRODUCT.md and recognized DESIGN.md sections; verify confirmed source pointers and current Impeccable schema (`doctor findings=[]`).
+- [ ] Record the user's model-routing choice before dependent Phase 3 algorithm work; context refresh and independent read-only preparation continue meanwhile.
+- [x] Complete context schema/link/hash/diff checks, lint, status and changelog. No runtime/content/dependency changes; prior application acceptance remains valid evidence, not a fresh run claim.
+- [ ] Continue dependent Phase 3 work after the asynchronous model-routing choice; no new algorithm has been implemented while awaiting the answer.
+
+NEXT ACTION: await the already-presented model-routing choice, then continue the Phase 3 contract in the authorized session or preserve the Terra handoff as selected. Context refresh is complete; exact commands/results: [refresh report](docs/estudisc/PRODUCT-CONTEXT-REFRESH.md). No rediscovery or production write.
+
+## Completed increment — authorized evolution foundation (2026-10-06)
 
 The user authorized implementation after the completed audit. Continue local increments automatically; external/production writes and published content changes remain separate boundaries. No additional agents or automatic model switch.
 

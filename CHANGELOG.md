@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-06 — Product/design context refresh
+
+- Update existing PRODUCT.md to the current Impeccable schema using confirmed product constraints and source evidence; remove deprecated Register and record web platform, positioning, operating context and product principles.
+- Organize DESIGN.md into recognized sections and align its navigation/Focus pointers with ADR 0040; retain canonical DS/token authority. Doctor returns no findings; source/hash/link/diff checks and lint pass. No runtime/content changes or inferred workflow defaults. Exact commands: `docs/estudisc/PRODUCT-CONTEXT-REFRESH.md`.
+
 ## 2026-10-06 — Progressive study foundation and Today
 
 - Add centrally validated default-off feature flags, compatible five-destination navigation with topbar Sheet, and shared Focus layout for flagged lesson/ACTIVE study/assessment flows. Add native Dialog/Sheet, keyboard Tabs and component registry using unchanged DS 4.0.0 tokens (ADR 0040).

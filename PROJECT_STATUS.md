@@ -33,6 +33,10 @@ Editorial source caveats about rights, official curriculum mapping, pacing and q
 
 ## Current priorities
 
+Auxiliary product/design context refresh is complete under the user's latest authorization: PRODUCT.md has the current Impeccable schema, DESIGN.md uses recognized sections and actual ADR 0040 navigation/Focus pointers. Doctor reports no findings; schema/source/hash/link/diff checks and lint pass. No runtime/content/dependency changes from `b30b86d`; prior application gates remain verified evidence. See [context refresh](docs/estudisc/PRODUCT-CONTEXT-REFRESH.md).
+
+The user's asynchronous choice about resolving Phase 3's contract in this session versus retaining the requested Terra routing is pending. Independent spec/hash preparation is complete; no dependent scheduling/override algorithm was changed while waiting.
+
 Implementation is now authorized by the user and the first Phase 0/1/2 foundation increment is locally accepted: validated default-off flags, compatible five-destination shell, Focus mode, native Sheet/Dialog, keyboard Tabs, real session-only `/plan`, and reusable Today presentation with next action first. ADR 0040 and canonical DS screen/registry docs record compatibility; tokens remain 4.0.0. No Pack/data migration, published-content change or domain-policy change.
 
 Current implementation checks: lint/typecheck/build/pack validation PASS; tests 275 PASS / 3 optional PostgreSQL SKIP; existing off/default E2E 38 PASS / 4 intentional flagged SKIP; separate on E2E 4 PASS. Browser QA at 320/360/390/430/1280, keyboard/modal/Focus exit/reduced motion passed. Exact commands/results/limitations: [foundation report](docs/estudisc/EVOLUTION-FOUNDATION.md).

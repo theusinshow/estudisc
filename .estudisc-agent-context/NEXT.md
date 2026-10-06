@@ -1,5 +1,7 @@
 # Estudisc next action
 
+Latest update: the user authorized refreshing auxiliary Impeccable context and continuing. PRODUCT.md/DESIGN.md refresh is accepted; doctor findings=[], context/link/hash/diff checks and lint PASS. Runtime/content/dependencies remain unchanged from b30b86d. Details: `docs/estudisc/PRODUCT-CONTEXT-REFRESH.md`. The asynchronous model-routing choice (continue Phase 3 contract here vs retain Terra) is pending; do not assume an answer. Independent Planner spec/hash preparation is complete. Continue from the existing handoff when the choice arrives.
+
 Consolidation and identity migration are complete. Read PROJECT_STATUS.md and the final consolidation report, then continue only with the next explicitly approved evolution through protected main. Do not repeat imports or publication. Preserve stable IDs, hashes, learner state, legacy readers and existing source caveats.
 
 The initial architecture audit is complete and the user subsequently authorized implementation. The first Phase 0/1/2 foundation increment is locally accepted: flags, five-destination navigation, shared Focus, native Dialog/Sheet/Tabs, session-only `/plan` and next-action-first Today. Read `docs/estudisc/EVOLUTION-FOUNDATION.md` for exact checks: 275 tests / 3 optional PostgreSQL skips; 38 existing E2E / 4 intentional flagged skips plus 4 separate flagged passes; lint/typecheck/build/pack and browser QA PASS. No published content/domain policy/production state changed; all flags default off.
