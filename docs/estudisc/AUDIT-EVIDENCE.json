@@ -1,0 +1,388 @@
+{
+  "auditDate": "2026-10-06",
+  "baseCommit": "d38f640698d3640a9b65f9c57e8b4b3ef8f55526",
+  "archive": {
+    "path": "C:/Users/Matheus/Downloads/estudisc_codex_pack.zip",
+    "sha256": "4ccd11ce2fa160b589688082d8e9388e3750d7bde57f87827e50d812a3fae862",
+    "entriesVerifiedByteIdentical": 12
+  },
+  "scope": "Targeted repository/spec audit; hashes are not independent content or production certification.",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "e437838c1765bf878d894d887e0e50c07fc2f9d9b8c92837ae7cf9be12ca5a96"
+    },
+    {
+      "path": "AUTONOMY.md",
+      "sha256": "a74289908d25a1eece4ddae6a48933e55012d0a8be2a5766b25f35782e6602d9"
+    },
+    {
+      "path": "package.json",
+      "sha256": "704e48505943dfa76f5ae195e859eabfcd095b59069fd333a7ee450563071db7"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "598a32c58bc87ccc58fe45e58d43c161a0849434e3c84025b21962f61db1ced6"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "854390da3888695434a110d1147a8cad523fa2fa957f6766caa85cbe07daf455"
+    },
+    {
+      "path": "docs/02-SCOPE.md",
+      "sha256": "fd769390df742bde123accfca9bea804172a13f1f1557c10a079054480484da5"
+    },
+    {
+      "path": "docs/07-TECHNICAL-ARCHITECTURE.md",
+      "sha256": "26d9e8ea5a39954c1447932c9fcf0a1cfee1bdd4660049e54f0d2349763fddda"
+    },
+    {
+      "path": "docs/ifsc/16-IMPLEMENTATION-PLAN.md",
+      "sha256": "e2846e2630b975964c5eb7d7992a227b62fad684e1ec5d9848745ba6794a49cd"
+    },
+    {
+      "path": "docs/ADR/0021-deterministic-planner.md",
+      "sha256": "895ee1c3522c0bfdd15f9b057f04fb742fb2d072525b3845b8e51b067175c90b"
+    },
+    {
+      "path": "docs/ADR/0022-unified-assessment-engine.md",
+      "sha256": "d61b4e1d23f2a74eda3ab621d56965146668f5bf253b101d1ee41a79e487cc17"
+    },
+    {
+      "path": "docs/ADR/0023-official-exam-preservation.md",
+      "sha256": "d368bfd61ba6df16f55715b8d5405070a69236d407232650c98e3709097bf5d1"
+    },
+    {
+      "path": "docs/ADR/0024-mastery-review-v2.md",
+      "sha256": "fd7955c5d802e0c2cd7533555d84ce0479769b2382e1bdbd92eca978962fab78"
+    },
+    {
+      "path": "docs/ADR/0029-published-content-immutable.md",
+      "sha256": "3fbb74d7bfe1ddff9fe884b93be42bf186af01eba5cb147c01cd670019ecffaa"
+    },
+    {
+      "path": "docs/ADR/0030-neo-brutalist-visual-refresh.md",
+      "sha256": "7192f5a6bf50e747d2696b9449ba36eaccdfb44f761b140b371742d31835076d"
+    },
+    {
+      "path": "docs/ADR/0032-lesson-figure-block.md",
+      "sha256": "03fe5827b16daa6f52afc731a2bb9e9301c81f28ad5b21c064169ae92d367627"
+    },
+    {
+      "path": "docs/ADR/0036-direct-admin-publication.md",
+      "sha256": "5d9651ddeb3fd0669a13e7636c3ec345362e6b287ff1bd0e88ba57430ef09e43"
+    },
+    {
+      "path": "design-system/DESIGN_SYSTEM_INDEX.md",
+      "sha256": "92c2c9d097958420aacd09fe1f837672c43254e4ad0c27e22b962522c03035af"
+    },
+    {
+      "path": "design-system/VERSION",
+      "sha256": "fd74ec08ccc3f3a67b174c72d055c4ca09326d3d63156c7c36cc7a6309868774"
+    },
+    {
+      "path": "design-system/design-tokens.json",
+      "sha256": "e2e25908db9188afb53fe81599b94fcb16ac7637534be9d2f23f83e7dacd7f84"
+    },
+    {
+      "path": "src/components/layout/app-shell.tsx",
+      "sha256": "de755ba538e5ddc73de0baec283d63dfcbf6bbadd84c6c8ec5e5326dcc4ca989"
+    },
+    {
+      "path": "src/components/layout/primary-nav.tsx",
+      "sha256": "2643d24d5a4305d0e1b52eb07d3ac59ecf33751399d995d9eb73b74e2b35d40a"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "sha256": "4f80aef36c19f00321898875a56d74171b3a07a8c93eadc44d55a8eec6ee8393"
+    },
+    {
+      "path": "src/app/study/[sessionId]/page.tsx",
+      "sha256": "2168ab4135256c78df91d41279efbdf353cd0da19a15d73b215fab8cf39f3ce3"
+    },
+    {
+      "path": "src/app/review/page.tsx",
+      "sha256": "17b268aee4b3c8cfeac5a5f26131934d80062e34dbe1c99a30b966626b1d8a18"
+    },
+    {
+      "path": "src/app/mistakes/page.tsx",
+      "sha256": "8f697058ec15b28e94bd0625c7af69d50ffac40d5dba229ede6254dd607d6d00"
+    },
+    {
+      "path": "src/app/knowledge-map/page.tsx",
+      "sha256": "3f1fef00d7444ea6ccd3c70779762647655e8ab7adbab6d19f71a8ebbaed47d5"
+    },
+    {
+      "path": "src/app/globals.css",
+      "sha256": "02ba7ff3a45f719ea3557db18bd9edcfb62d0e75ea5caf9ed3c476fcd84fa2b2"
+    },
+    {
+      "path": "src/features/today/get-today-dashboard.ts",
+      "sha256": "5b826089f06b710998e368f54f97fdbd3a0ed2a35bf680f96aec407c30242acc"
+    },
+    {
+      "path": "src/features/recommendations/recommendation-rules.ts",
+      "sha256": "8fe249c87dee51fa4c90c0f50a33d529db71c3b0ec8ff360c10484db525bcc79"
+    },
+    {
+      "path": "src/features/recommendations/lesson-candidates.ts",
+      "sha256": "c698e820f0c4111a932fb947a121f89f30626065b6ca7c87bbdfc6799d46ff16"
+    },
+    {
+      "path": "src/features/study-sessions/contracts.ts",
+      "sha256": "60948e42396156d0b57a026bc3ec24c61afeb35c60e10a834bad4dbf61c75e32"
+    },
+    {
+      "path": "src/features/study-sessions/planner-policy.ts",
+      "sha256": "15061748ddc579dcfb6ad835193dfe43a282c8b442ee051a91a59bfff21e0ba6"
+    },
+    {
+      "path": "src/features/study-sessions/session-controls.tsx",
+      "sha256": "397e87e0d56013fe92877ac118d183bf4f1e03989d3aa4beedf5ee3f7be16a90"
+    },
+    {
+      "path": "src/app/api/study-sessions/route.ts",
+      "sha256": "3ef0117d44f72f65a6f81b52f88676cd1652569322dc6c59406c13ca0b3ef85a"
+    },
+    {
+      "path": "src/db/schema/study.ts",
+      "sha256": "fad52a0d094364e3836b8a04b8582a47526184b19f4447196bc107a0c83e966c"
+    },
+    {
+      "path": "src/db/schema/user-state.ts",
+      "sha256": "6adf47f4cf31d027da03167e2bfd9e9b1643c5bb3b8fab0b8eb360dad5d252c0"
+    },
+    {
+      "path": "src/db/schema/curriculum.ts",
+      "sha256": "0b14c3bbca7fbaeaf69a8623ba4989cce902117a51f71f2a0312691811b51945"
+    },
+    {
+      "path": "src/db/schema/question-assets.ts",
+      "sha256": "4f958c1b0353cfc5e19da84d6168e549548bd7853aa6146fc8245ee3b8148616"
+    },
+    {
+      "path": "src/db/repositories/study-session-repository.ts",
+      "sha256": "b00cadeaeaccef05b7a56cc855f1d2a40580e6890f0e9bb40ab6e750d579009d"
+    },
+    {
+      "path": "src/db/repositories/memory-study-session-repository.ts",
+      "sha256": "34b2180faa51a3786fe2f43422a4fd1d0372cd90759db31adb1b5bf57837d5e0"
+    },
+    {
+      "path": "src/db/repositories/catalog-repository.ts",
+      "sha256": "7dc55a8e42c7fde05e3de0060ae4c4c98eed0d563cf5a9629317cbe4b201940a"
+    },
+    {
+      "path": "src/db/repositories/review-repository.ts",
+      "sha256": "dc4f7fcdb3b68848bff36554938203315b47e91aca121a241ee620efe113215d"
+    },
+    {
+      "path": "src/db/repositories/question-study-repository.ts",
+      "sha256": "f10dd9ac8abf07a2cd06c3fd997b75cf62b3c8c3c5dfb1afc7c4ef4d0f37b50e"
+    },
+    {
+      "path": "src/db/repositories/assessment-repository.ts",
+      "sha256": "b3ece9795e556dbec774e8ee628777ccf55db221c1b0a742618b55c9e3428725"
+    },
+    {
+      "path": "src/features/lessons/lesson-steps.tsx",
+      "sha256": "c896eac7220c8380d43c589e4abebd2249254715d4deb0b3f69cb5f8e11f78eb"
+    },
+    {
+      "path": "src/features/lessons/lesson-stepper.tsx",
+      "sha256": "57efd99e3c719f716ef12ccd97b4933508ddacf4f20c4aafc8ef649140572279"
+    },
+    {
+      "path": "src/features/lessons/blocks/types.ts",
+      "sha256": "a4622b163a6d0d2e519389ee1332e1df38f3009e86fc4942d51bfa9384964fd7"
+    },
+    {
+      "path": "src/features/lessons/blocks/block-schemas.ts",
+      "sha256": "8e835ed4807a85b9e8e4ac9c38caf844ec500204dc79443bf3271e7217b38b5c"
+    },
+    {
+      "path": "src/features/lessons/blocks/lesson-block-renderer.tsx",
+      "sha256": "ccd4be1381a7a788ef2ffe3ab5fd3fe2e9565fd8a19578111bd0977796de7341"
+    },
+    {
+      "path": "src/features/activities/registry/activity-definitions.tsx",
+      "sha256": "5c88c19866e37f734188ffb5f10915216af527d7c43bbc39b22bd4a6a5ab6097"
+    },
+    {
+      "path": "src/features/activities/components/educational-activity-panel.tsx",
+      "sha256": "5c3a71f7183c0733470743c49f8b87e95b53067f6260018d46606ab7921af075"
+    },
+    {
+      "path": "src/features/activities/application/educational-activity.ts",
+      "sha256": "553f0bd1bb7a541bee0cd7ba3f56f022ccf6784107e7cff95b85d81f1da12c5d"
+    },
+    {
+      "path": "src/features/mastery/mastery-policy-v2.ts",
+      "sha256": "0a85391fa55fed9fe922834a897420adb8d8946c27dcfa134e2abdd0fa560b74"
+    },
+    {
+      "path": "src/features/review/review-policy-v2.ts",
+      "sha256": "1e2cdabe2f9fabea194a39d87a175a54935c5067cbbe240d828bb250dc4fbeee"
+    },
+    {
+      "path": "src/features/mistakes/mistake-categorization.ts",
+      "sha256": "2ff5caecd5e914d1c57975bc3260b432010a9f62bcc5c0fe7586aa79618d442e"
+    },
+    {
+      "path": "src/features/progress/api.ts",
+      "sha256": "32cce648bd42e9b89ebe81b125dcb3ea407d17f2c9a6a064085e78e38fae612d"
+    },
+    {
+      "path": "src/features/progress/overview.ts",
+      "sha256": "03a2174a2d94ec64546715c37b77418a47c0ec41d52d20fa8253d1aefd3d84a3"
+    },
+    {
+      "path": "src/features/concepts/knowledge-map-api.ts",
+      "sha256": "2eef258ce011ef0ef6cf7286918143224b27bba4820b36d6b35de4552a331717"
+    },
+    {
+      "path": "src/features/assessments/contracts.ts",
+      "sha256": "804dbc356f1718f475db7289a2dbc0ce9e57b6f412a4e39e0a6abd94237558dd"
+    },
+    {
+      "path": "src/features/assessments/assessment-panel.tsx",
+      "sha256": "051cbe88a92b8f82b2a2958e12d196511e8b19f0cbfd3dd5a964e64ce8520914"
+    },
+    {
+      "path": "src/app/api/tutor/route.ts",
+      "sha256": "33a838db59ad13aa89eb0959e0a28ece07e17c42ae2b2b17178b2a0f94913c66"
+    },
+    {
+      "path": "src/features/questions/tutor-panel.tsx",
+      "sha256": "d02d6fc02696c42e8c464b32281099b530b64c21b5182791e13d0544454f588f"
+    },
+    {
+      "path": "src/features/generation/contracts.ts",
+      "sha256": "7ee19e12eedbfca318ab38f493874e8e85c843465b2faa26fee67e5e782eca87"
+    },
+    {
+      "path": "src/features/generation/infrastructure/deepseek-generation-provider.server.ts",
+      "sha256": "72053174421064302d2b36702089d44a3922a91bd0956338e60dafc6da6db3aa"
+    },
+    {
+      "path": "src/features/import/application/track-pack-v2-schema.ts",
+      "sha256": "ab87d12e6b2bf9ac63a7b8ce02f5ddc3314826c5a60dd9030942375e2fb48e03"
+    },
+    {
+      "path": "tools/estudisc-content-studio/ARCHITECTURE.md",
+      "sha256": "f086765902d263484046be92f3b83681820ff69a72f328852b875316186d807d"
+    },
+    {
+      "path": "tools/estudisc-content-studio/catalog.ts",
+      "sha256": "fbc53054f503b2c6d89132e5fa257b6cba944e77aa8f79f6a9cf32d12ed8536c"
+    },
+    {
+      "path": "tools/estudisc-content-studio/contracts.ts",
+      "sha256": "c2bc11b4124c12b414a4a9be486dc14ac70c4331f56e5c8efefbe9b50c44f95a"
+    },
+    {
+      "path": "tools/estudisc-content-studio/CONTENT-CONTRACT.md",
+      "sha256": "29ea58b25b7e93e969cfe6f97c0a1d652a1be61232386c08306c262ee1ddece9"
+    },
+    {
+      "path": "tools/estudisc-content-studio/context/agent-efficiency.md",
+      "sha256": "cb71be73fda2341a281d5caa9b54089fd5f39d964dbc73e881eb07d6922f16b6"
+    },
+    {
+      "path": "tests/unit/today-dashboard.test.ts",
+      "sha256": "c41938429031d8d106c4ccd2f06854104e83d16ffe6740f8da15f666c08330eb"
+    },
+    {
+      "path": "tests/unit/planner-policy.test.ts",
+      "sha256": "a756da1373d1532b09898b7aadae0a7eccd8add3ad6b4e71588dfc0ae3b2f32b"
+    },
+    {
+      "path": "tests/unit/learning-policies-v2.test.ts",
+      "sha256": "593cf4cbdb163835bb619a5d8ad9454ebb63ad6c161acccfc3f90144fcaa0889"
+    },
+    {
+      "path": "tests/unit/estudisc-content-preservation.test.ts",
+      "sha256": "ed4d2e4ee0d396dfc5d0edb3b57c05daf0b851a2173a86913e5b23a471d910d4"
+    },
+    {
+      "path": "tests/component/educational-interactions.test.tsx",
+      "sha256": "2c129801d7f3b0fcdecd04aec302d4a7a97c9cb6919c85ae3a825359f898bc61"
+    },
+    {
+      "path": "tests/integration/assessment-engine.test.ts",
+      "sha256": "67406956a4d24fee59fb16001ec34d42c0404924fa0117e0a037b643e0b7929c"
+    },
+    {
+      "path": "tests/e2e/accessibility.spec.ts",
+      "sha256": "de823445bfb6e341c352c6210f17668549e40e520d85c1e5c65ab28d609a7a94"
+    },
+    {
+      "path": "tests/e2e/shell.spec.ts",
+      "sha256": "8e7dc6341a8513ba9e73ffeb6fdf1b27509a25dd004403d84a42d9bf46a9cee3"
+    },
+    {
+      "path": "playwright.config.ts",
+      "sha256": "71f68b70f7c6a15887fd6974db079247144e6ceac915d7b32edd561d3ecc7c41"
+    },
+    {
+      "path": "scripts/run-e2e.mjs",
+      "sha256": "1fc2289820988daac519ccdc5d461da364d8598c9c48ea72d3bdb682ebb19661"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "6956e1059548101f8ba5a714befb5919c5cc5be977ae5761d82f56bc54e22f45"
+    },
+    {
+      "path": ".github/workflows/e2e.yml",
+      "sha256": "c07b01c8e932427b8364e3c35d83a0efdfe1f5519014b4829c6fa9006c4f3f7d"
+    },
+    {
+      "path": "docs/estudisc/source-pack/00_README_CODEX.md",
+      "sha256": "93f30a75b4966685f49d9532a644cdf7ef82e61363308185af00c989c6ff317f"
+    },
+    {
+      "path": "docs/estudisc/source-pack/01_PRODUCT_ARCHITECTURE.md",
+      "sha256": "0ba32855cddd547c8d32b8990699eb2749e9565f9ddbd3456e790f93ef423417"
+    },
+    {
+      "path": "docs/estudisc/source-pack/02_CODEX_MASTER_PROMPT.md",
+      "sha256": "87c6c77acb0b88345cc47f72f1cade1884589e43a48103311957076d423248a6"
+    },
+    {
+      "path": "docs/estudisc/source-pack/03_IMPLEMENTATION_GAP_ANALYSIS_TEMPLATE.md",
+      "sha256": "aadeb8918af17db45cb3514a6800efb41f42f8081fb1ed592a72a68e54c14216"
+    },
+    {
+      "path": "docs/estudisc/source-pack/04_IMPLEMENTATION_PLAN_TEMPLATE.md",
+      "sha256": "74af51df1fc28271e6ddf51d31f20afa42206dfd05d762ffd1964b5614d584ac"
+    },
+    {
+      "path": "docs/estudisc/source-pack/05_INTERACTIVE_LEARNING.md",
+      "sha256": "3c24ae4a286fbff937282a1cfcdaa5fa5ddde806d0074a7a50d9c9dfa11f2738"
+    },
+    {
+      "path": "docs/estudisc/source-pack/06_LESSON_BLUEPRINT_PIPELINE.md",
+      "sha256": "5feb09b11087762291633557f4827e7cbc9d7cf9f94d27c4a7956756cd5f925b"
+    },
+    {
+      "path": "docs/estudisc/source-pack/07_AI_LEARNING_LAYER.md",
+      "sha256": "f050fcaf10e34c6af59cdeb79fbcc127e67540bad21cb61fa73c668479a62b8a"
+    },
+    {
+      "path": "docs/estudisc/source-pack/08_DESIGN_SYSTEM_EVOLUTION.md",
+      "sha256": "fdbf51e34e35ff6aed7a9ab4a41ec62eabfd3292c0cf54d2e1f6c895b8549ca2"
+    },
+    {
+      "path": "docs/estudisc/source-pack/09_ACCEPTANCE_AND_QA.md",
+      "sha256": "6cf249253210951af9af9ab9c3498eef6ea26e63e579f0817f684bffb020a979"
+    },
+    {
+      "path": "docs/estudisc/source-pack/10_EXECUTION_CHECKLIST.md",
+      "sha256": "d806560fab213bd55531b4ae63bd45327d51f37cd48e3fbf88cec0122ae17a28"
+    },
+    {
+      "path": "docs/estudisc/source-pack/manifest.json",
+      "sha256": "738841a2eff310ad0232f47c1cfffbce1d95c4a2dcd9b4a0d0fd069d81085bcd"
+    }
+  ]
+}

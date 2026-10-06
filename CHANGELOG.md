@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-06 — Architecture pack audit and model routing
+
+- Preserve the supplied eleven-document architecture pack and manifest with archive/file hashes; audit existing modules against every proposed area without changing runtime code or published content.
+- Add implementation gap analysis, phased dependencies/acceptance/rollback, likely additive migrations and Luna Max → Terra → exceptional Sol High routing. Keep navigation/Pack compatibility, planner-readiness, evidence and publication caveats explicit.
+- Local checks: lint/typecheck/build/pack validation PASS; 262 tests PASS / 3 optional PostgreSQL SKIP; full E2E 38 PASS / 0 FAIL. Initial local dependency mismatch repaired with frozen install. Exact evidence: `docs/estudisc/AUDIT-VERIFICATION.md`. Large phases and production operations remain pending.
+
 ## 2026-10-06 — Estudisc consolidation
 
 - Adopt Estudisc as the current identity; preserve deprecated environment aliases, signed sessions, old backups, immutable Pack IDs, hashes and factual history (ADR 0039).

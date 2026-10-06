@@ -1,3 +1,5 @@
 # Estudisc next action
 
 Consolidation and identity migration are complete. Read PROJECT_STATUS.md and the final consolidation report, then continue only with the next explicitly approved evolution through protected main. Do not repeat imports or publication. Preserve stable IDs, hashes, learner state, legacy readers and existing source caveats.
+
+The 2026-10-06 architecture-pack request is audit/planning only. Read `docs/estudisc/PRODUCT_ARCHITECTURE.md`, `IMPLEMENTATION-GAP-ANALYSIS.md` and `IMPLEMENTATION-PLAN.md` in that directory. Local lint/typecheck/tests/build/pack checks and full E2E passed; exact current evidence is in `AUDIT-VERIFICATION.md`. No large phase or production write was performed. In a separately authorized implementation execution, Luna Max starts remaining Phase 0 navigation/flag/compatibility reconciliation and a small Phase 1 increment. Terra owns concrete domain decisions; Sol High enters only for evidenced exceptional risk. No additional agents by default and no claim of an automatic model switch.

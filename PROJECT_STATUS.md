@@ -33,8 +33,14 @@ Editorial source caveats about rights, official curriculum mapping, pacing and q
 
 ## Current priorities
 
-Consolidation is implemented and accepted. Preserve the production alias, authentication and existing catalog; use protected main for the next approved evolution. Current Design System version is defined only in `design-system/VERSION`.
+Consolidation is implemented and accepted. The supplied architecture pack has now been audited against the existing implementation; this execution produces documentation only. Read [architecture](docs/estudisc/PRODUCT_ARCHITECTURE.md), [gap analysis](docs/estudisc/IMPLEMENTATION-GAP-ANALYSIS.md), and [implementation/model-routing plan](docs/estudisc/IMPLEMENTATION-PLAN.md). No large phase has been implemented, and no content has been imported or republished.
+
+Current local audit checks: lint, typecheck, build and pack validation PASS; tests 262 PASS / 3 optional real-PostgreSQL SKIP; full E2E 38 PASS / 0 FAIL. Initial dependency auto-install failed with `ERR_PNPM_ABORTED_REMOVE_MODULES_DIR_NO_TTY`; `$env:CI = 'true'; pnpm install --frozen-lockfile` repaired the local environment before successful reruns. Exact commands, source provenance and validation limits: [audit verification](docs/estudisc/AUDIT-VERIFICATION.md). No new remote/production acceptance is claimed.
+
+Open contracts for future implementation: five-tab navigation reconciliation with the approved four-item shell, weekly routine/override semantics, version-compatible resume and purpose/step projection, readiness independent of mere publication, and help-aware assessed interactions. These are planning findings, not changes to current production behavior. Luna Max handles routine implementation; Terra handles domain/security/architecture decisions; Sol High is conditional critical review. The active session did not switch models or recruit agents.
+
+Preserve the production alias, authentication and existing catalog; use protected main for future authorized evolution. Current Design System version is defined only in `design-system/VERSION` (4.0.0).
 
 ## Next action
 
-Follow [PLANS.md](PLANS.md) and [.estudisc-agent-context/NEXT.md](.estudisc-agent-context/NEXT.md). Historical implementation logs are in `docs/history/`; they do not define the current import or publication queue.
+The requested first execution ends at audit/planning. After separately authorized implementation, start with remaining Phase 0 reconciliation and a small Phase 1 increment; see [PLANS.md](PLANS.md) and [.estudisc-agent-context/NEXT.md](.estudisc-agent-context/NEXT.md). Do not automatically continue into the large phases. Historical implementation logs are in `docs/history/`; they do not define the current import or publication queue.
