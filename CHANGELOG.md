@@ -1,5 +1,7 @@
 # Changelog
 
+2026-10-06 production activation COMPLETE: Mathematics19/240,Science40/320,History-Geography49/392,Portuguese24/192;132published lessons/1144subjectQuestions. Actual132studyURLsPASS,read-onlyproductionhash/preservationauditPASS. Scoped2MiBdeploy and only0018auditmigration completed under explicituserauthorization. No source rewriting or answer submissions. Remote2MiBpatchbd3fa56preservesexistingGH4fa1ed0;rootdirtyworkretained. FullapplicationE2Eremains22PASS/14preexistingFAIL. Exactreport:docs/all-subjects-live-20261006.md. NEXT ACTION: none for this delivery;do not repeat imports/publication.
+
 ## 2026-10-05 - Reviewed GH publication preparation
 
 - Record genuine owner authorization to apply the49GH lessons/392Questions; retain the sealed Pack and pending-media flags.
