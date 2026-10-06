@@ -4,7 +4,7 @@ import { ensureDatabaseReady } from "@/db/connection";
 import { getDatabaseUrl } from "@/db/connection";
 import { MemoryTrackImportRepository } from "@/db/repositories/memory-store";
 import { DrizzleTrackImportRepository } from "@/db/repositories/track-import-repository";
-import { importTrackPack, readJsonRequestWithLimit } from "@/features/import/api";
+import { importTrackPack, readJsonRequestWithLimit, MAX_TRACK_PACK_BYTES } from "@/features/import/api";
 import { requireAdmin,AccessDeniedError } from "@/features/auth/owner";
 
 export const runtime = "nodejs";
@@ -12,7 +12,7 @@ export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
   let profile;try{profile=await requireAdmin();}catch(error){if(error instanceof AccessDeniedError)return NextResponse.json({code:"admin_required"},{status:403});throw error;}
-  const parsedRequest = await readJsonRequestWithLimit(request);
+  const parsedRequest = await readJsonRequestWithLimit(request, MAX_TRACK_PACK_BYTES);
 
   if (!parsedRequest.ok) {
     return NextResponse.json(

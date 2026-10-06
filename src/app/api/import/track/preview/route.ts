@@ -3,13 +3,13 @@ import { NextResponse } from "next/server";
 import { ensureDatabaseReady, getDatabaseUrl } from "@/db/connection";
 import { MemoryTrackImportRepository } from "@/db/repositories/memory-store";
 import { DrizzleTrackImportRepository } from "@/db/repositories/track-import-repository";
-import { previewTrackPack, readJsonRequestWithLimit } from "@/features/import/api";
+import { previewTrackPack, readJsonRequestWithLimit, MAX_TRACK_PACK_BYTES } from "@/features/import/api";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
-  const parsedRequest = await readJsonRequestWithLimit(request);
+  const parsedRequest = await readJsonRequestWithLimit(request, MAX_TRACK_PACK_BYTES);
 
   if (!parsedRequest.ok) {
     return NextResponse.json(
