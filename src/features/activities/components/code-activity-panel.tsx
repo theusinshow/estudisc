@@ -2,7 +2,7 @@
 
 import { CheckCircle2, Play, Terminal } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 
 import { diffSourceLines } from "@/features/attempts/source-diff";
 import { ATTEMPT_RECORDED_EVENT } from "@/features/progress/live-progress-summary";
@@ -43,6 +43,8 @@ type CodeActivityPanelProps = Readonly<{
   initialFeedback: ActivityAttemptFeedback | null;
 }>;
 
+const subscribeToHydration = () => () => {};
+
 export function CodeActivityPanel({
   activityStableId,
   activityLabel,
@@ -50,6 +52,8 @@ export function CodeActivityPanel({
   starterCode,
   initialFeedback
 }: CodeActivityPanelProps) {
+  // Avoid accepting edits before React can record them in the submitted state.
+  const ready = useSyncExternalStore(subscribeToHydration, () => true, () => false);
   const [source, setSource] = useState(starterCode);
   const [execution, setExecution] = useState<ExecutionPayload | null>(initialFeedback?.execution ?? null);
   const [tests, setTests] = useState<TestPayload[]>(initialFeedback?.tests ?? []);
@@ -161,16 +165,17 @@ export function CodeActivityPanel({
         className="code-editor"
         id={`${activityStableId}-source`}
         spellCheck={false}
+        disabled={!ready}
         value={source}
         onChange={(event) => setSource(event.target.value)}
       />
 
       <div className="activity-actions">
-        <button type="button" className="secondary-action" onClick={run} disabled={pendingAction !== null}>
+        <button type="button" className="secondary-action" onClick={run} disabled={!ready || pendingAction !== null}>
           <Play aria-hidden="true" />
           <span>RUN</span>
         </button>
-        <button type="button" className="primary-action" onClick={submit} disabled={pendingAction !== null}>
+        <button type="button" className="primary-action" onClick={submit} disabled={!ready || pendingAction !== null}>
           <CheckCircle2 aria-hidden="true" />
           <span>SUBMIT SOLUTION</span>
         </button>

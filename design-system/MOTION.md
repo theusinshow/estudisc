@@ -1,4 +1,4 @@
-# KNOW/OS — Motion
+# Estudisc — Motion
 
 ## Princípio
 

@@ -223,12 +223,12 @@ export class MemoryGenerationJobRepository {
 }
 
 const globalGenerationJobStore = globalThis as typeof globalThis & {
-  __knowOsGenerationJobs?: GenerationJobRecord[];
+  __estudiscGenerationJobs?: GenerationJobRecord[];
 };
 
 function getMemoryGenerationJobs() {
-  globalGenerationJobStore.__knowOsGenerationJobs ??= [];
-  return globalGenerationJobStore.__knowOsGenerationJobs;
+  globalGenerationJobStore.__estudiscGenerationJobs ??= [];
+  return globalGenerationJobStore.__estudiscGenerationJobs;
 }
 
 function mapGenerationJobRow(row: typeof generationJobs.$inferSelect): GenerationJobRecord {

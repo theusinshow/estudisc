@@ -12,7 +12,7 @@ export function AppShell({ children }: Readonly<{ children: ReactNode }>) {
       </a>
 
       <header className="topbar">
-        <Link className="brand-link" href="/" aria-label="Vecta, página inicial">
+        <Link className="brand-link" href="/" aria-label="Estudisc, página inicial">
           <BrandLockup />
         </Link>
       </header>

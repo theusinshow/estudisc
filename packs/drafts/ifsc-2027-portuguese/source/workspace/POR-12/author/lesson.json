@@ -1,0 +1,151 @@
+{
+  "id": "POR-12",
+  "subject": "POR",
+  "title": "Voz ativa, passiva e foco da informação",
+  "module": "Gramática em contexto",
+  "priority": "P1",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Transformar e interpretar construções ativas/passivas observando foco discursivo.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-011",
+    "POR-SRC-013"
+  ],
+  "conceptRefs": [
+    "POR-12-C01",
+    "POR-12-C02",
+    "POR-12-C03",
+    "POR-12-C04",
+    "POR-12-C05",
+    "POR-12-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Compare “A comissão divulgou o resultado”, “O resultado foi divulgado pela comissão” e “O resultado foi divulgado”."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Transformar e interpretar construções ativas/passivas observando foco discursivo.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Na voz ativa, o sujeito gramatical geralmente corresponde ao participante apresentado como agente em verbos compatíveis.",
+        "Na passiva analítica, o participante afetado pode ocupar a posição de sujeito, com auxiliar “ser” e particípio.",
+        "O agente da passiva pode ser omitido quando desconhecido, irrelevante ou discursivamente apagado."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Transformar ativa em passiva exige preservar tempo verbal, relações semânticas e concordância.",
+        "Nem toda oração admite transformação passiva; a estrutura do verbo é decisiva.",
+        "A escolha entre ativa e passiva altera o foco informacional, embora possa manter o evento básico."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "voz ativa",
+          "conceptRef": "POR-12-C01"
+        },
+        {
+          "term": "voz passiva analítica",
+          "conceptRef": "POR-12-C02"
+        },
+        {
+          "term": "voz passiva sintética",
+          "conceptRef": "POR-12-C03"
+        },
+        {
+          "term": "agente da passiva",
+          "conceptRef": "POR-12-C04"
+        },
+        {
+          "term": "foco",
+          "conceptRef": "POR-12-C05"
+        },
+        {
+          "term": "transitividade",
+          "conceptRef": "POR-12-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Toda frase com “ser” está na passiva.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "A passiva sempre informa quem agiu.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Qualquer verbo aceita passiva.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Ativa e passiva têm sempre o mesmo efeito discursivo.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Compare “A comissão divulgou o resultado”, “O resultado foi divulgado pela comissão” e “O resultado foi divulgado”.",
+      "analysis": "O evento é semelhante, mas o foco muda para “resultado”; na última forma o agente é apagado."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Transforme orações quando possível.",
+        "Marque casos incompatíveis com passiva.",
+        "Compare manchetes que incluem/omitem o agente."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Confira agente, participante afetado e tempo verbal."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Na voz ativa, o sujeito gramatical geralmente corresponde ao participante apresentado como agente em verbos compatíveis.",
+        "Na passiva analítica, o participante afetado pode ocupar a posição de sujeito, com auxiliar “ser” e particípio.",
+        "O agente da passiva pode ser omitido quando desconhecido, irrelevante ou discursivamente apagado.",
+        "Transformar ativa em passiva exige preservar tempo verbal, relações semânticas e concordância.",
+        "Nem toda oração admite transformação passiva; a estrutura do verbo é decisiva.",
+        "A escolha entre ativa e passiva altera o foco informacional, embora possa manter o evento básico."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Voz ativa, passiva e foco da informação e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [
+      "POR-ASSET-06"
+    ],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

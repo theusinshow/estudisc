@@ -1,0 +1,57 @@
+{
+  "lessonId": "GH-21",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-016",
+      "title": "Memória Política de Santa Catarina",
+      "org": "ALESC + UFSC",
+      "type": "DIDACTIC_REPOSITORY",
+      "url": "https://memoriapolitica.alesc.sc.gov.br/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-028",
+      "title": "Memórias Reveladas",
+      "org": "Arquivo Nacional",
+      "type": "PRIMARY_SOURCE_REPOSITORY",
+      "url": "https://www.gov.br/memoriasreveladas/pt-br",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-029",
+      "title": "Imagens e documentos do período de 1964–1985",
+      "org": "Arquivo Nacional — Memórias Reveladas",
+      "type": "PRIMARY_SOURCE_MEDIA",
+      "url": "https://www.gov.br/memoriasreveladas/pt-br/centrais-de-conteudo/multimidias/imagens-e-documentos-do-periodo-de-1964-1985/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-069",
+      "title": "Processos que resultaram na ditadura civil-militar no Brasil",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-os-processos-politicos-e-sociais-que-resultaram-na-ditadura-civil-militar-no-brasil/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-21-001",
+    "lessonId": "GH-21",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo 1964–1985 + atos institucionais e marcos de resistência, com fontes do Arquivo Nacional.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

@@ -1,4 +1,4 @@
-# KNOW/OS — Tipografia
+# Estudisc — Tipografia
 
 ## Decisão final
 

@@ -1,11 +1,13 @@
 // Dev-created accounts that sign in with a numeric code (ADR 0031). Codes are stored only as scrypt
-// hashes in the KNOW_OS_ACCOUNTS environment variable; sessions are HMAC-signed cookies keyed by
+// hashes in the ESTUDISC_ACCOUNTS environment variable; sessions are HMAC-signed cookies keyed by
 // AUTH_SECRET. No path aliases here: scripts/*.mjs import this file directly. Hashes use ":" separators
 // because Next expands "$NAME" inside .env files.
 import { createHash, createHmac, randomBytes, scryptSync, timingSafeEqual } from "node:crypto";
 import { z } from "zod";
 
-export const ACCOUNT_SESSION_COOKIE = "kos_session";
+export const ACCOUNT_SESSION_COOKIE = "estudisc_session";
+export const LEGACY_ACCOUNT_SESSION_COOKIE = "kos_session";
+export const ACCOUNT_SESSION_COOKIE_NAMES = [ACCOUNT_SESSION_COOKIE, LEGACY_ACCOUNT_SESSION_COOKIE] as const;
 export const ACCOUNT_SESSION_MAX_AGE_SECONDS = 60 * 60 * 24 * 30;
 export const ACCESS_CODE_PATTERN = /^\d{6}$/;
 const SCRYPT = { N: 16384, r: 8, p: 1, keyLength: 32 };
@@ -81,4 +83,13 @@ export function readAccountSession(token: string | undefined, accounts: readonly
 
 export function accountSessionCookieOptions(production: boolean) {
   return { httpOnly: true, sameSite: "lax" as const, secure: production, path: "/", maxAge: ACCOUNT_SESSION_MAX_AGE_SECONDS };
+}
+
+/** Read signed sessions under the canonical cookie or the deprecated name; writes use Estudisc. */
+export function readAccountSessionFromCookies(cookies: { get(name: string): { value: string } | undefined }, accounts: readonly CodeAccount[], secret: string, now = Date.now()): CodeAccount | null {
+  for (const name of ACCOUNT_SESSION_COOKIE_NAMES) {
+    const account = readAccountSession(cookies.get(name)?.value, accounts, secret, now);
+    if (account) return account;
+  }
+  return null;
 }

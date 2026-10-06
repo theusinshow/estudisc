@@ -20,7 +20,7 @@ export type ExportPreview = Readonly<{
 }>;
 
 export type ExportPayload = Readonly<{
-  schema: "know-os.export.v1";
+  schema: "estudisc.export.v1";
   kind: ExportKind;
   exportedAt: string;
   privacy: Readonly<{
@@ -65,7 +65,7 @@ export function buildExportPayload({
   const preview = buildExportPreview(kind, snapshot);
 
   return {
-    schema: "know-os.export.v1",
+    schema: "estudisc.export.v1",
     kind,
     exportedAt: exportedAt.toISOString(),
     privacy: {

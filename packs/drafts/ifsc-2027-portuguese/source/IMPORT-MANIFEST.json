@@ -1,0 +1,37 @@
+{
+  "package": "VECTA-PORTUGUESE-CONTENT-IFSC-2027-1-v1",
+  "status": "IMPORT_READY_CONTENT_POR_V1",
+  "counts": {
+    "lessons": 24,
+    "questions": 192,
+    "concepts": 144
+  },
+  "pilotLessons": [
+    "POR-01",
+    "POR-08",
+    "POR-11",
+    "POR-13",
+    "POR-16",
+    "POR-17",
+    "POR-19",
+    "POR-23"
+  ],
+  "batchPlan": [
+    {
+      "id": "BATCH-01",
+      "range": "POR-01..POR-06"
+    },
+    {
+      "id": "BATCH-02",
+      "range": "POR-07..POR-12"
+    },
+    {
+      "id": "BATCH-03",
+      "range": "POR-13..POR-18"
+    },
+    {
+      "id": "BATCH-04",
+      "range": "POR-19..POR-24"
+    }
+  ]
+}

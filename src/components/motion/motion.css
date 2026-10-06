@@ -1,4 +1,4 @@
 /* Positioning for the React Bits adaptations; lives in CSS because the CSP blocks server-rendered styles. */
 .count-up { font-variant-numeric: tabular-nums; }
 .click-spark { position: relative; }
-.click-spark-canvas { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; color: var(--kos-color-ink); pointer-events: none; }
+.click-spark-canvas { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; color: var(--estudisc-color-ink); pointer-events: none; }

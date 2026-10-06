@@ -7,7 +7,7 @@ import { generateDesignTokenCss } from "../../scripts/generate-design-tokens.mjs
 
 describe("design token generator", () => {
   it("generates checked-in CSS custom properties from the canonical token source", async () => {
-    const tempDir = await mkdtemp(path.join(os.tmpdir(), "know-os-tokens-"));
+    const tempDir = await mkdtemp(path.join(os.tmpdir(), "estudisc-tokens-"));
     const output = path.join(tempDir, "tokens.css");
 
     try {
@@ -17,8 +17,8 @@ describe("design token generator", () => {
       expect(result.count).toBeGreaterThan(80);
       expect(css).toContain("GENERATED FILE. DO NOT EDIT MANUALLY.");
       expect(css).toContain("Source: design-system/design-tokens.json");
-      expect(css).toContain("--kos-color-ink: #17141F;");
-      expect(css).toContain("--kos-focus-color: #3A4FE0;");
+      expect(css).toContain("--estudisc-color-ink: #17141F;");
+      expect(css).toContain("--estudisc-focus-color: #3A4FE0;");
     } finally {
       await rm(tempDir, { recursive: true, force: true });
     }

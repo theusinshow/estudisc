@@ -13,16 +13,16 @@ describe("server environment contract", () => {
       DEEPSEEK_BASE_URL: "https://api.deepseek.com",
       DEEPSEEK_DEFAULT_MODEL: "deepseek-v4-flash",
       DEEPSEEK_PRO_MODEL: "deepseek-v4-pro",
-      KNOW_OS_ALLOWED_GOOGLE_EMAILS: [],
-      KNOW_OS_OWNER_ID: "local-owner"
+      ESTUDISC_ALLOWED_GOOGLE_EMAILS: [],
+      ESTUDISC_OWNER_ID: "local-owner"
     });
   });
 
   it("parses the Google e-mail allowlist", () => {
     expect(
       getServerEnv({
-        KNOW_OS_ALLOWED_GOOGLE_EMAILS: " Owner@Example.com,second@example.com "
-      }).KNOW_OS_ALLOWED_GOOGLE_EMAILS
+        ESTUDISC_ALLOWED_GOOGLE_EMAILS: " Owner@Example.com,second@example.com "
+      }).ESTUDISC_ALLOWED_GOOGLE_EMAILS
     ).toEqual(["owner@example.com", "second@example.com"]);
   });
 
@@ -39,7 +39,7 @@ describe("server environment contract", () => {
         DEEPSEEK_BASE_URL: "",
         DEEPSEEK_DEFAULT_MODEL: "",
         DEEPSEEK_PRO_MODEL: "",
-        KNOW_OS_ALLOWED_GOOGLE_EMAILS: ""
+        ESTUDISC_ALLOWED_GOOGLE_EMAILS: ""
       })
     ).toMatchObject({
       APP_URL: undefined,
@@ -52,16 +52,16 @@ describe("server environment contract", () => {
       DEEPSEEK_BASE_URL: "https://api.deepseek.com",
       DEEPSEEK_DEFAULT_MODEL: "deepseek-v4-flash",
       DEEPSEEK_PRO_MODEL: "deepseek-v4-pro",
-      KNOW_OS_ALLOWED_GOOGLE_EMAILS: []
+      ESTUDISC_ALLOWED_GOOGLE_EMAILS: []
     });
   });
 
   it("rejects invalid allowed Google e-mail entries", () => {
-    expect(() => getServerEnv({ KNOW_OS_ALLOWED_GOOGLE_EMAILS: "not-an-email" })).toThrow();
+    expect(() => getServerEnv({ ESTUDISC_ALLOWED_GOOGLE_EMAILS: "not-an-email" })).toThrow();
   });
 
   it("parses Auth.js trusted-host setting for hosted reverse proxies", () => {
-    expect(getServerEnv({ AUTH_TRUST_HOST: "true" }).AUTH_TRUST_HOST).toBe("true");
+    expect(getServerEnv({ AUTH_TRUST_HOST: "true" }).AUTH_TRUST_HOST).toBe(true);
     expect(() => getServerEnv({ AUTH_TRUST_HOST: "yes" })).toThrow();
   });
 

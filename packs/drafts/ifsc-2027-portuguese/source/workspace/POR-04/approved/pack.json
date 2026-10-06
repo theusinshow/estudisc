@@ -1,0 +1,514 @@
+{
+  "lesson": {
+    "id": "POR-04",
+    "subject": "POR",
+    "title": "Textos verbais, não verbais e multissemióticos",
+    "module": "Leitura e gêneros",
+    "priority": "P0",
+    "status": "IMPORT_READY",
+    "estimatedMinutes": 22,
+    "masteryTarget": "Integrar palavras, imagens, diagramação e símbolos para interpretar charges, cartuns, tirinhas, infográficos e campanhas.",
+    "sourceRefs": [
+      "POR-SRC-001",
+      "POR-SRC-005",
+      "POR-SRC-009",
+      "POR-SRC-038"
+    ],
+    "conceptRefs": [
+      "POR-04-C01",
+      "POR-04-C02",
+      "POR-04-C03",
+      "POR-04-C04",
+      "POR-04-C05",
+      "POR-04-C06"
+    ],
+    "blocks": [
+      {
+        "type": "HOOK",
+        "title": "Leia como a prova lê",
+        "content": "Um cartaz mostra uma torneira aberta sobre um reservatório quase vazio. Ao lado, a frase “Só um minutinho a mais”. A palavra “minutinho” aparece enorme."
+      },
+      {
+        "type": "LEARNING_GOALS",
+        "items": [
+          "Integrar palavras, imagens, diagramação e símbolos para interpretar charges, cartuns, tirinhas, infográficos e campanhas.",
+          "Justificar respostas com evidência linguística ou textual.",
+          "Evitar regras absolutas quando o fenômeno depende do contexto."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 1",
+        "paragraphs": [
+          "Textos multissemióticos constroem sentido pela combinação de palavras, imagens, cores, disposição gráfica e símbolos.",
+          "A imagem pode complementar, contradizer, ironizar ou restringir o sentido do texto verbal.",
+          "Charge costuma dialogar com acontecimento/contexto reconhecível; cartum pode explorar situação mais universal."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 2",
+        "paragraphs": [
+          "Tirinha organiza sequência de quadros e frequentemente depende de progressão e quebra de expectativa.",
+          "Infográficos combinam dados e recursos visuais; a leitura exige relacionar títulos, legendas, escalas, ícones e números.",
+          "Humor e crítica podem surgir do contraste entre o que é dito e o que é mostrado."
+        ]
+      },
+      {
+        "type": "KEY_TERMS",
+        "items": [
+          {
+            "term": "multissemiose",
+            "conceptRef": "POR-04-C01"
+          },
+          {
+            "term": "linguagem verbal",
+            "conceptRef": "POR-04-C02"
+          },
+          {
+            "term": "linguagem não verbal",
+            "conceptRef": "POR-04-C03"
+          },
+          {
+            "term": "charge",
+            "conceptRef": "POR-04-C04"
+          },
+          {
+            "term": "cartum",
+            "conceptRef": "POR-04-C05"
+          },
+          {
+            "term": "infográfico",
+            "conceptRef": "POR-04-C06"
+          }
+        ]
+      },
+      {
+        "type": "MISCONCEPTION_CHECK",
+        "items": [
+          {
+            "claim": "Em charge basta ler a legenda.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Imagem em texto jornalístico nunca influencia a interpretação.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Charge e cartum são sempre idênticos.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Cor e disposição gráfica não constroem sentido.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          }
+        ]
+      },
+      {
+        "type": "WORKED_EXAMPLE",
+        "stimulus": "Um cartaz mostra uma torneira aberta sobre um reservatório quase vazio. Ao lado, a frase “Só um minutinho a mais”. A palavra “minutinho” aparece enorme.",
+        "analysis": "O tamanho da palavra e o contraste com o reservatório reforçam a crítica: algo apresentado como pequeno pode ter efeito acumulado relevante."
+      },
+      {
+        "type": "ACTIVE_LEARNING",
+        "title": "Atividade de aplicação",
+        "steps": [
+          "Observe uma charge sem legenda e registre hipóteses.",
+          "Leia a legenda e reveja as hipóteses.",
+          "Explique separadamente o papel da imagem e do texto verbal."
+        ],
+        "evidence": "Resposta curta ou classificação justificada."
+      },
+      {
+        "type": "IFSC_STRATEGY",
+        "content": "Faça duas leituras: cada modo separadamente e depois a combinação."
+      },
+      {
+        "type": "SUMMARY",
+        "items": [
+          "Textos multissemióticos constroem sentido pela combinação de palavras, imagens, cores, disposição gráfica e símbolos.",
+          "A imagem pode complementar, contradizer, ironizar ou restringir o sentido do texto verbal.",
+          "Charge costuma dialogar com acontecimento/contexto reconhecível; cartum pode explorar situação mais universal.",
+          "Tirinha organiza sequência de quadros e frequentemente depende de progressão e quebra de expectativa.",
+          "Infográficos combinam dados e recursos visuais; a leitura exige relacionar títulos, legendas, escalas, ícones e números.",
+          "Humor e crítica podem surgir do contraste entre o que é dito e o que é mostrado."
+        ]
+      },
+      {
+        "type": "EXIT_TICKET",
+        "prompt": "Explique o princípio mais importante de Textos verbais, não verbais e multissemióticos e crie um exemplo próprio."
+      }
+    ],
+    "media": {
+      "deterministicAssetRefs": [
+        "POR-ASSET-02"
+      ],
+      "antigravityRefs": [
+        "POR-IMG-01"
+      ],
+      "authenticMediaRefs": []
+    }
+  },
+  "questions": [
+    {
+      "id": "POR-04-Q01",
+      "lessonId": "POR-04",
+      "type": "MCQ",
+      "stem": "Qual afirmação descreve corretamente Textos verbais, não verbais e multissemióticos em uso real da língua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Imagem em texto jornalístico nunca influencia a interpretação."
+        },
+        {
+          "id": "B",
+          "text": "Charge e cartum são sempre idênticos."
+        },
+        {
+          "id": "C",
+          "text": "Cor e disposição gráfica não constroem sentido."
+        },
+        {
+          "id": "D",
+          "text": "Textos multissemióticos constroem sentido pela combinação de palavras, imagens, cores, disposição gráfica e símbolos."
+        },
+        {
+          "id": "E",
+          "text": "Em charge basta ler a legenda."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Textos multissemióticos constroem sentido pela combinação de palavras, imagens, cores, disposição gráfica e símbolos.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
+      "concepts": [
+        "POR-04-C01"
+      ],
+      "targetedError": "Em charge basta ler a legenda.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-04-Q02",
+      "lessonId": "POR-04",
+      "type": "MCQ",
+      "stem": "Em uma questão contextualizada sobre Textos verbais, não verbais e multissemióticos, qual princípio deve orientar a análise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A imagem pode complementar, contradizer, ironizar ou restringir o sentido do texto verbal."
+        },
+        {
+          "id": "B",
+          "text": "Charge e cartum são sempre idênticos."
+        },
+        {
+          "id": "C",
+          "text": "Cor e disposição gráfica não constroem sentido."
+        },
+        {
+          "id": "D",
+          "text": "Em charge basta ler a legenda."
+        },
+        {
+          "id": "E",
+          "text": "Imagem em texto jornalístico nunca influencia a interpretação."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A imagem pode complementar, contradizer, ironizar ou restringir o sentido do texto verbal.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
+      "concepts": [
+        "POR-04-C02"
+      ],
+      "targetedError": "Imagem em texto jornalístico nunca influencia a interpretação.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-04-Q03",
+      "lessonId": "POR-04",
+      "type": "MCQ",
+      "stem": "Qual alternativa evita uma generalização inadequada sobre Textos verbais, não verbais e multissemióticos?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cor e disposição gráfica não constroem sentido."
+        },
+        {
+          "id": "B",
+          "text": "Em charge basta ler a legenda."
+        },
+        {
+          "id": "C",
+          "text": "Charge costuma dialogar com acontecimento/contexto reconhecível; cartum pode explorar situação mais universal."
+        },
+        {
+          "id": "D",
+          "text": "Imagem em texto jornalístico nunca influencia a interpretação."
+        },
+        {
+          "id": "E",
+          "text": "Charge e cartum são sempre idênticos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Charge costuma dialogar com acontecimento/contexto reconhecível; cartum pode explorar situação mais universal.",
+      "difficulty": "applied",
+      "cognitiveOperation": "discriminate",
+      "concepts": [
+        "POR-04-C03"
+      ],
+      "targetedError": "Charge e cartum são sempre idênticos.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-04-Q04",
+      "lessonId": "POR-04",
+      "type": "MCQ",
+      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Textos verbais, não verbais e multissemióticos?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Em charge basta ler a legenda."
+        },
+        {
+          "id": "B",
+          "text": "Imagem em texto jornalístico nunca influencia a interpretação."
+        },
+        {
+          "id": "C",
+          "text": "Charge e cartum são sempre idênticos."
+        },
+        {
+          "id": "D",
+          "text": "Cor e disposição gráfica não constroem sentido."
+        },
+        {
+          "id": "E",
+          "text": "Tirinha organiza sequência de quadros e frequentemente depende de progressão e quebra de expectativa."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Tirinha organiza sequência de quadros e frequentemente depende de progressão e quebra de expectativa.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-04-C04"
+      ],
+      "targetedError": "Cor e disposição gráfica não constroem sentido.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-04-Q05",
+      "lessonId": "POR-04",
+      "type": "MCQ",
+      "stem": "Qual critério é seguro para resolver uma questão sobre Textos verbais, não verbais e multissemióticos?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Imagem em texto jornalístico nunca influencia a interpretação."
+        },
+        {
+          "id": "B",
+          "text": "Infográficos combinam dados e recursos visuais; a leitura exige relacionar títulos, legendas, escalas, ícones e números."
+        },
+        {
+          "id": "C",
+          "text": "Charge e cartum são sempre idênticos."
+        },
+        {
+          "id": "D",
+          "text": "Cor e disposição gráfica não constroem sentido."
+        },
+        {
+          "id": "E",
+          "text": "Em charge basta ler a legenda."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Infográficos combinam dados e recursos visuais; a leitura exige relacionar títulos, legendas, escalas, ícones e números.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
+      "concepts": [
+        "POR-04-C05"
+      ],
+      "targetedError": "Em charge basta ler a legenda.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-04-Q06",
+      "lessonId": "POR-04",
+      "type": "MCQ",
+      "stem": "Ao comparar alternativas sobre Textos verbais, não verbais e multissemióticos, qual análise está correta?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Charge e cartum são sempre idênticos."
+        },
+        {
+          "id": "B",
+          "text": "Cor e disposição gráfica não constroem sentido."
+        },
+        {
+          "id": "C",
+          "text": "Em charge basta ler a legenda."
+        },
+        {
+          "id": "D",
+          "text": "Humor e crítica podem surgir do contraste entre o que é dito e o que é mostrado."
+        },
+        {
+          "id": "E",
+          "text": "Imagem em texto jornalístico nunca influencia a interpretação."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Humor e crítica podem surgir do contraste entre o que é dito e o que é mostrado.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-04-C06"
+      ],
+      "targetedError": "Imagem em texto jornalístico nunca influencia a interpretação.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-04-Q07",
+      "lessonId": "POR-04",
+      "type": "MCQ",
+      "stem": "Um estudante afirma: “Em charge basta ler a legenda.”. Qual é a melhor correção?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+        },
+        {
+          "id": "B",
+          "text": "A generalização deve ser aceita sem verificar contexto."
+        },
+        {
+          "id": "C",
+          "text": "A melhor estratégia é decorar a frase."
+        },
+        {
+          "id": "D",
+          "text": "Não há critério linguístico para avaliar a afirmação."
+        },
+        {
+          "id": "E",
+          "text": "Basta escolher a alternativa mais longa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Textos multissemióticos constroem sentido pela combinação de palavras, imagens, cores, disposição gráfica e símbolos.",
+      "difficulty": "applied",
+      "cognitiveOperation": "diagnose_error",
+      "concepts": [
+        "POR-04-C01"
+      ],
+      "targetedError": "Em charge basta ler a legenda.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-04-Q08",
+      "lessonId": "POR-04",
+      "type": "MCQ",
+      "stimulus": "Um cartaz mostra uma torneira aberta sobre um reservatório quase vazio. Ao lado, a frase “Só um minutinho a mais”. A palavra “minutinho” aparece enorme.",
+      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O trecho não permite nenhuma análise."
+        },
+        {
+          "id": "B",
+          "text": "A única tarefa é classificar todas as palavras."
+        },
+        {
+          "id": "C",
+          "text": "O tamanho da palavra e o contraste com o reservatório reforçam a crítica: algo apresentado como pequeno pode ter efeito acumulado relevante."
+        },
+        {
+          "id": "D",
+          "text": "A análise depende apenas do tamanho do trecho."
+        },
+        {
+          "id": "E",
+          "text": "Qualquer interpretação é igualmente válida."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "O tamanho da palavra e o contraste com o reservatório reforçam a crítica: algo apresentado como pequeno pode ter efeito acumulado relevante.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-04-C01",
+        "POR-04-C02"
+      ],
+      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
+      "provenance": "VECTA_ORIGINAL"
+    }
+  ],
+  "concepts": [
+    {
+      "editorialConceptId": "POR-04-C01",
+      "lessonId": "POR-04",
+      "name": "multissemiose",
+      "masteryTarget": "Textos multissemióticos constroem sentido pela combinação de palavras, imagens, cores, disposição gráfica e símbolos.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-04-C02",
+      "lessonId": "POR-04",
+      "name": "linguagem verbal",
+      "masteryTarget": "A imagem pode complementar, contradizer, ironizar ou restringir o sentido do texto verbal.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-04-C03",
+      "lessonId": "POR-04",
+      "name": "linguagem não verbal",
+      "masteryTarget": "Charge costuma dialogar com acontecimento/contexto reconhecível; cartum pode explorar situação mais universal.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-04-C04",
+      "lessonId": "POR-04",
+      "name": "charge",
+      "masteryTarget": "Tirinha organiza sequência de quadros e frequentemente depende de progressão e quebra de expectativa.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-04-C05",
+      "lessonId": "POR-04",
+      "name": "cartum",
+      "masteryTarget": "Infográficos combinam dados e recursos visuais; a leitura exige relacionar títulos, legendas, escalas, ícones e números.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-04-C06",
+      "lessonId": "POR-04",
+      "name": "infográfico",
+      "masteryTarget": "Humor e crítica podem surgir do contraste entre o que é dito e o que é mostrado.",
+      "status": "EDITORIAL"
+    }
+  ],
+  "qa": {
+    "lessonId": "POR-04",
+    "status": "PASS",
+    "checks": {
+      "sourceRefsResolve": true,
+      "questionCount": 8,
+      "eachQuestionHasFiveOptions": true,
+      "originalCoreContent": true
+    },
+    "editorialCautions": [
+      "Final VECTA schema must be reconciled by integration Maestro.",
+      "Question distractors should receive final spot-check after import/render."
+    ]
+  }
+}

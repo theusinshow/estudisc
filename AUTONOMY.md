@@ -1,4 +1,4 @@
-# KNOW/OS — Guarded Autonomy Protocol
+# Estudisc — Guarded Autonomy Protocol
 
 This file defines how Codex and other implementation agents may work with high autonomy in this repository.
 

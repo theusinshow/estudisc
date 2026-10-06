@@ -9,8 +9,9 @@ test.beforeAll(() => {
 test("Science pilot static core SSR preserves mobile layout and native radio keyboard behavior", async ({ page }) => {
   // This preview is private, static SSR + existing app CSS. It does not publish or submit drafts.
   await page.setViewportSize({ width: 344, height: 800 });
-  for (const id of ["CIE-04", "CIE-10", "CIE-18", "CIE-22", "CIE-30", "CIE-33", "CIE-38", "CIE-40"]) {
-    await page.setContent(readFileSync(`.local/science-integration/qa-mobile/${id}.html`, "utf8"));
+  const output = process.env.EDITORIAL_QA_OUTPUT ?? ".local/science-integration/qa-mobile";
+  for (const id of process.env.EDITORIAL_QA_PILOT?.split(",") ?? ["CIE-04", "CIE-10", "CIE-18", "CIE-22", "CIE-30", "CIE-33", "CIE-38", "CIE-40"]) {
+    await page.setContent(readFileSync(`${output}/${id}.html`, "utf8"));
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     await expect(page.getByText("Bloco inválido", { exact: true })).toHaveCount(0);
     await expect(page.getByRole("radio")).toHaveCount(40);

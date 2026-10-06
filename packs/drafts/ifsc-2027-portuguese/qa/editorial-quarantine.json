@@ -1,0 +1,31 @@
+{
+  "status": "QUARANTINED_FOR_HUMAN_EDITORIAL_REVIEW",
+  "technicalImportBlocked": false,
+  "publicationReady": false,
+  "sourceModified": false,
+  "confirmedFindings": [
+    {
+      "concept": "POR-01-C03",
+      "sourceName": "finalidade",
+      "targetConcern": "masteryTarget lists genres and distinguishes genres from textual types, rather than purpose."
+    },
+    {
+      "concept": "POR-01-C05",
+      "sourceName": "interlocutor",
+      "targetConcern": "masteryTarget describes oral/written/verbal/visual/multisemiotic modality, rather than interlocutor."
+    },
+    {
+      "concept": "POR-01-C06",
+      "sourceName": "modalidade",
+      "targetConcern": "masteryTarget distinguishes informative/opinion genres by purpose/circulation, rather than modality."
+    }
+  ],
+  "requiredHumanAction": "Reconcile name/target pairs across the registry before publication or claiming planner-ready mastery coverage. Corrections require a new content version; original inputs and current runtime remain immutable.",
+  "additionalCautions": [
+    "144 newly mapped atomic targets retained, no title-only equivalence/merge with existing canonical POR Concepts.",
+    "Upstream PASS and IMPORT_READY are source metadata, not VECTA human approval.",
+    "Official curriculum mapping and source rights are unverified; LINK_ONLY references do not authorize copying.",
+    "Source Questions are template-heavy; distractor adequacy and generic Q07 explanations need human spot-check.",
+    "15 deterministic asset requests,2optional Antigravity requests and2authentic LINK_ONLY media references remain unproduced; core textual blocks are complete."
+  ]
+}

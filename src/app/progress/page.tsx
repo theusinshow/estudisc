@@ -152,6 +152,7 @@ export default async function ProgressPage() {
             Rank, badges e missões <ArrowRight aria-hidden="true" />
           </Link>
         </section>
+        <Link href="/tracks" className="effort-link">Continuar estudando <ArrowRight aria-hidden="true" /></Link>
       </div>
     </AppShell>
   );

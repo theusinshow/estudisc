@@ -2,7 +2,7 @@
 
 /**
  * Matos UI Score Radar (https://matos-ui.com/charts/score-radar-chart), vendored and adapted:
- * motion/react instead of framer-motion, KNOW/OS tokens through CSS classes (CSP blocks SSR style
+ * motion/react instead of framer-motion, Estudisc tokens through CSS classes (CSP blocks SSR style
  * attributes), client-only gating that cannot mismatch hydration, roving focus and wrapped labels.
  */
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";

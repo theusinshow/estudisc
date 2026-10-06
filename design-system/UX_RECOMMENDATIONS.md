@@ -1,4 +1,4 @@
-# KNOW/OS — Recomendações de UX
+# Estudisc — Recomendações de UX
 
 Estas recomendações não alteram silenciosamente a arquitetura. Cada uma exige
 decisão de produto ou ADR antes de virar contrato.

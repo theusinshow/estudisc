@@ -1,0 +1,514 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "GH-12",
+    "subject": "GH",
+    "title": "Pindorama, território e formação do Brasil",
+    "unit": "Brasil",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+    "concepts": [
+      {
+        "id": "GH-12-CON-01",
+        "name": "Territórios indígenas antes de 1500",
+        "masteryTarget": "O território brasileiro foi formado historicamente e não existia com as fronteiras atuais antes da colonização."
+      },
+      {
+        "id": "GH-12-CON-02",
+        "name": "Diversidade dos povos originários",
+        "masteryTarget": "Diversos povos indígenas ocupavam o território com línguas, sistemas sociais, economias e relações ambientais distintas."
+      },
+      {
+        "id": "GH-12-CON-03",
+        "name": "Apropriação colonial",
+        "masteryTarget": "A colonização portuguesa iniciou processos de apropriação, guerra, alianças, deslocamentos e imposição de novas formas territoriais."
+      },
+      {
+        "id": "GH-12-CON-04",
+        "name": "Fronteiras em formação",
+        "masteryTarget": "A expansão para além dos limites inicialmente negociados entre potências europeias ocorreu ao longo de séculos."
+      },
+      {
+        "id": "GH-12-CON-05",
+        "name": "Expansão territorial",
+        "masteryTarget": "Chamar o território anterior à conquista apenas de terra vazia apaga sociedades e territorialidades preexistentes."
+      },
+      {
+        "id": "GH-12-CON-06",
+        "name": "Território como construção histórica",
+        "masteryTarget": "Chamar o território anterior à conquista apenas de terra vazia apaga sociedades e territorialidades preexistentes."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "GH-12-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Antes de 1500, o território hoje chamado Brasil já era ocupado por muitos povos com diferentes territorialidades."
+      },
+      {
+        "id": "GH-12-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar os conceitos centrais de Pindorama, território e formação do Brasil em linguagem própria.",
+          "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+          "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+        ]
+      },
+      {
+        "id": "GH-12-B03",
+        "type": "EXPLANATION",
+        "title": "Ideia central",
+        "content": "O território brasileiro foi formado historicamente e não existia com as fronteiras atuais antes da colonização. Diversos povos indígenas ocupavam o território com línguas, sistemas sociais, economias e relações ambientais distintas.",
+        "items": [
+          "O território brasileiro foi formado historicamente e não existia com as fronteiras atuais antes da colonização.",
+          "Diversos povos indígenas ocupavam o território com línguas, sistemas sociais, economias e relações ambientais distintas."
+        ]
+      },
+      {
+        "id": "GH-12-B04",
+        "type": "EXPLANATION",
+        "title": "Como as relações se organizam",
+        "content": "A colonização portuguesa iniciou processos de apropriação, guerra, alianças, deslocamentos e imposição de novas formas territoriais. A expansão para além dos limites inicialmente negociados entre potências europeias ocorreu ao longo de séculos.",
+        "items": [
+          "A colonização portuguesa iniciou processos de apropriação, guerra, alianças, deslocamentos e imposição de novas formas territoriais.",
+          "A expansão para além dos limites inicialmente negociados entre potências europeias ocorreu ao longo de séculos."
+        ]
+      },
+      {
+        "id": "GH-12-B05",
+        "type": "EXPLANATION",
+        "title": "O que conecta o tema à prova",
+        "content": "Chamar o território anterior à conquista apenas de terra vazia apaga sociedades e territorialidades preexistentes.",
+        "items": [
+          "Chamar o território anterior à conquista apenas de terra vazia apaga sociedades e territorialidades preexistentes.",
+          "Identificar como mapas e narrativas podem naturalizar fronteiras que são resultado de processos históricos."
+        ]
+      },
+      {
+        "id": "GH-12-B06",
+        "type": "CALLOUT",
+        "variant": "SOURCE_LITERACY",
+        "title": "Leia a fonte, não apenas o tema",
+        "items": [
+          "Identificar como mapas e narrativas podem naturalizar fronteiras que são resultado de processos históricos.",
+          "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+        ]
+      },
+      {
+        "id": "GH-12-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTION",
+        "title": "Erros que custam ponto",
+        "items": [
+          "O território brasileiro já possuía as fronteiras atuais em 1500.",
+          "O espaço era vazio e sem sociedades organizadas antes dos portugueses.",
+          "Todos os povos originários ocupavam o território da mesma forma.",
+          "A formação territorial brasileira ocorreu em um único evento."
+        ]
+      },
+      {
+        "id": "GH-12-B08",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Vocabulário essencial",
+        "items": [
+          "Territórios indígenas antes de 1500",
+          "Diversidade dos povos originários",
+          "Apropriação colonial",
+          "Fronteiras em formação",
+          "Expansão territorial",
+          "Território como construção histórica"
+        ]
+      },
+      {
+        "id": "GH-12-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Como resolver uma questão",
+        "prompt": "Uma questão apresenta uma fonte relacionada a Pindorama, território e formação do Brasil. Como decidir entre alternativas plausíveis?",
+        "answer": "Chamar o território anterior à conquista apenas de terra vazia apaga sociedades e territorialidades preexistentes.",
+        "reasoning": [
+          "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+          "Extraia da fonte apenas as evidências explícitas.",
+          "Ative o conceito da aula que explica a evidência.",
+          "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+          "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+        ]
+      },
+      {
+        "id": "GH-12-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Estratégia IFSC",
+        "items": [
+          "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+          "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+          "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+        ]
+      },
+      {
+        "id": "GH-12-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Material complementar",
+        "mediaRefs": [
+          "SRC-GH-021",
+          "SRC-GH-022"
+        ],
+        "optional": true
+      },
+      {
+        "id": "GH-12-B12",
+        "type": "COMPONENT_REQUEST",
+        "title": "Visual determinístico",
+        "requestRef": "DET-GH-12-001",
+        "status": "PENDING"
+      },
+      {
+        "id": "GH-12-B13",
+        "type": "SUMMARY",
+        "title": "Resumo para recuperar sem olhar",
+        "items": [
+          "O território brasileiro foi formado historicamente e não existia com as fronteiras atuais antes da colonização.",
+          "Diversos povos indígenas ocupavam o território com línguas, sistemas sociais, economias e relações ambientais distintas.",
+          "A colonização portuguesa iniciou processos de apropriação, guerra, alianças, deslocamentos e imposição de novas formas territoriais.",
+          "A expansão para além dos limites inicialmente negociados entre potências europeias ocorreu ao longo de séculos.",
+          "Chamar o território anterior à conquista apenas de terra vazia apaga sociedades e territorialidades preexistentes."
+        ]
+      },
+      {
+        "id": "GH-12-B14",
+        "type": "EXIT_TICKET",
+        "title": "Saída rápida",
+        "prompt": "Em duas ou três frases, explique a ideia mais importante de Pindorama, território e formação do Brasil e cite um erro de interpretação que você evitaria numa questão.",
+        "answerGuide": "O território brasileiro foi formado historicamente e não existia com as fronteiras atuais antes da colonização. Evite, por exemplo: O território brasileiro já possuía as fronteiras atuais em 1500."
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-GH-001",
+      "SRC-GH-021",
+      "SRC-GH-022",
+      "SRC-IFSC-GH-2026-1",
+      "SRC-IFSC-GH-2026-2"
+    ],
+    "mediaRefs": [
+      "SRC-GH-021",
+      "SRC-GH-022"
+    ],
+    "imageRequestRefs": [],
+    "editorialNotes": [
+      "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+      "Não publicar mídia externa sem revisão de licença e proveniência.",
+      "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+      "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+    ]
+  },
+  "questions": [
+    {
+      "id": "GH-12-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Em relação a Pindorama, território e formação do Brasil, qual afirmação está correta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O território brasileiro já possuía as fronteiras atuais em 1500."
+        },
+        {
+          "key": "B",
+          "text": "O território brasileiro foi formado historicamente e não existia com as fronteiras atuais antes da colonização."
+        },
+        {
+          "key": "C",
+          "text": "O espaço era vazio e sem sociedades organizadas antes dos portugueses."
+        },
+        {
+          "key": "D",
+          "text": "Todos os povos originários ocupavam o território da mesma forma."
+        },
+        {
+          "key": "E",
+          "text": "A formação territorial brasileira ocorreu em um único evento."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "O território brasileiro foi formado historicamente e não existia com as fronteiras atuais antes da colonização.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "RECALL",
+      "conceptIds": [
+        "GH-12-CON-01"
+      ],
+      "targetedError": "foundation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-12-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante diz: “O território brasileiro já possuía as fronteiras atuais em 1500.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O território brasileiro já possuía as fronteiras atuais em 1500."
+        },
+        {
+          "key": "B",
+          "text": "O espaço era vazio e sem sociedades organizadas antes dos portugueses."
+        },
+        {
+          "key": "C",
+          "text": "Todos os povos originários ocupavam o território da mesma forma."
+        },
+        {
+          "key": "D",
+          "text": "Diversos povos indígenas ocupavam o território com línguas, sistemas sociais, economias e relações ambientais distintas."
+        },
+        {
+          "key": "E",
+          "text": "A formação territorial brasileira ocorreu em um único evento."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Diversos povos indígenas ocupavam o território com línguas, sistemas sociais, economias e relações ambientais distintas.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-12-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-12-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Considere a situação de partida da aula: Antes de 1500, o território hoje chamado Brasil já era ocupado por muitos povos com diferentes territorialidades. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O território brasileiro já possuía as fronteiras atuais em 1500."
+        },
+        {
+          "key": "B",
+          "text": "O espaço era vazio e sem sociedades organizadas antes dos portugueses."
+        },
+        {
+          "key": "C",
+          "text": "A colonização portuguesa iniciou processos de apropriação, guerra, alianças, deslocamentos e imposição de novas formas territoriais."
+        },
+        {
+          "key": "D",
+          "text": "Todos os povos originários ocupavam o território da mesma forma."
+        },
+        {
+          "key": "E",
+          "text": "A formação territorial brasileira ocorreu em um único evento."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A colonização portuguesa iniciou processos de apropriação, guerra, alianças, deslocamentos e imposição de novas formas territoriais.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "GH-12-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-12-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "O IFSC pode apresentar Pindorama, território e formação do Brasil por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A expansão para além dos limites inicialmente negociados entre potências europeias ocorreu ao longo de séculos."
+        },
+        {
+          "key": "B",
+          "text": "O território brasileiro já possuía as fronteiras atuais em 1500."
+        },
+        {
+          "key": "C",
+          "text": "O espaço era vazio e sem sociedades organizadas antes dos portugueses."
+        },
+        {
+          "key": "D",
+          "text": "Todos os povos originários ocupavam o território da mesma forma."
+        },
+        {
+          "key": "E",
+          "text": "A formação territorial brasileira ocorreu em um único evento."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A expansão para além dos limites inicialmente negociados entre potências europeias ocorreu ao longo de séculos.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "GH-12-CON-04"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-12-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. O território brasileiro foi formado historicamente e não existia com as fronteiras atuais antes da colonização.\nII. O território brasileiro já possuía as fronteiras atuais em 1500.\nIII. A colonização portuguesa iniciou processos de apropriação, guerra, alianças, deslocamentos e imposição de novas formas territoriais.\nIV. O espaço era vazio e sem sociedades organizadas antes dos portugueses.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-12-CON-01",
+        "GH-12-CON-02",
+        "GH-12-CON-03",
+        "GH-12-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-12-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma fonte foi apresentada numa questão sobre Pindorama, território e formação do Brasil. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O território brasileiro já possuía as fronteiras atuais em 1500."
+        },
+        {
+          "key": "B",
+          "text": "O espaço era vazio e sem sociedades organizadas antes dos portugueses."
+        },
+        {
+          "key": "C",
+          "text": "Todos os povos originários ocupavam o território da mesma forma."
+        },
+        {
+          "key": "D",
+          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        },
+        {
+          "key": "E",
+          "text": "Identificar como mapas e narrativas podem naturalizar fronteiras que são resultado de processos históricos."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Identificar como mapas e narrativas podem naturalizar fronteiras que são resultado de processos históricos.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "conceptIds": [
+        "GH-12-CON-01",
+        "GH-12-CON-02",
+        "GH-12-CON-03",
+        "GH-12-CON-04",
+        "GH-12-CON-05",
+        "GH-12-CON-06"
+      ],
+      "targetedError": "source_interpretation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-12-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Pindorama, território e formação do Brasil?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O território brasileiro foi formado historicamente e não existia com as fronteiras atuais antes da colonização."
+        },
+        {
+          "key": "B",
+          "text": "Diversos povos indígenas ocupavam o território com línguas, sistemas sociais, economias e relações ambientais distintas."
+        },
+        {
+          "key": "C",
+          "text": "Chamar o território anterior à conquista apenas de terra vazia apaga sociedades e territorialidades preexistentes."
+        },
+        {
+          "key": "D",
+          "text": "Todos os povos originários ocupavam o território da mesma forma."
+        },
+        {
+          "key": "E",
+          "text": "A expansão para além dos limites inicialmente negociados entre potências europeias ocorreu ao longo de séculos."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-12-CON-01",
+        "GH-12-CON-02",
+        "GH-12-CON-03",
+        "GH-12-CON-04",
+        "GH-12-CON-05",
+        "GH-12-CON-06"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-12-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Pindorama, território e formação do Brasil, qual conclusão final é sustentável?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O território brasileiro já possuía as fronteiras atuais em 1500."
+        },
+        {
+          "key": "B",
+          "text": "O espaço era vazio e sem sociedades organizadas antes dos portugueses."
+        },
+        {
+          "key": "C",
+          "text": "Chamar o território anterior à conquista apenas de terra vazia apaga sociedades e territorialidades preexistentes."
+        },
+        {
+          "key": "D",
+          "text": "Todos os povos originários ocupavam o território da mesma forma."
+        },
+        {
+          "key": "E",
+          "text": "A formação territorial brasileira ocorreu em um único evento."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Chamar o território anterior à conquista apenas de terra vazia apaga sociedades e territorialidades preexistentes.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-12-CON-01",
+        "GH-12-CON-02",
+        "GH-12-CON-03",
+        "GH-12-CON-04",
+        "GH-12-CON-05",
+        "GH-12-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    }
+  ]
+}

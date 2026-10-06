@@ -1,0 +1,54 @@
+{
+  "lessonId": "GH-41",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-035",
+      "title": "Revoluções Industriais",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-revolucoes-industriais/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-080",
+      "title": "Revoluções Industriais",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-revolucoes-industriais/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte adicional para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-GH-41-001",
+      "lessonId": "GH-41",
+      "blockId": "GH-41-B12",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem simular documento histórico.",
+      "prompt": "Ilustração educacional conceitual contrastando oficina artesanal e fábrica mecanizada; claramente ilustrativa, não uma fotografia histórica. Estilo VECTA: clean editorial educational illustration, mobile-readable, no text embedded.",
+      "factualConstraints": [
+        "A imagem deve ser claramente ilustrativa e não documental",
+        "Não inventar mapas, bandeiras, datas, documentos ou pessoas históricas específicas",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "falsa fotografia histórica",
+        "documento histórico inventado",
+        "mapa político impreciso",
+        "texto ilegível",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para Revolução Industrial e sociedade industrial.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-GH-41-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

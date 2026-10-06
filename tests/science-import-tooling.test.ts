@@ -36,7 +36,7 @@ describe("Science draft import infrastructure", () => {
     const inputs = loadInputs(process.cwd());
     expect(() => editorialPackSchema.parse({ ...inputs.packs[0].pack, ignored: "must not silently disappear" })).toThrow();
     const ids = inputs.packs.flatMap(row => row.pack.lesson.concepts.map(concept => concept.id));
-    const existing = JSON.parse(readFileSync(".vecta-agent-context/EXISTING-CONCEPTS.json", "utf8")) as { id: string }[];
+    const existing = JSON.parse(readFileSync(".estudisc-agent-context/EXISTING-CONCEPTS.json", "utf8")) as { id: string }[];
     const existingIds = new Set(existing.map(row => row.id));
     expect(() => validateConceptMap(inputs.conceptMap, ids, existingIds)).not.toThrow();
     expect(() => validateConceptMap({ ...inputs.conceptMap, entries: inputs.conceptMap.entries.slice(1) }, ids, existingIds)).toThrow();

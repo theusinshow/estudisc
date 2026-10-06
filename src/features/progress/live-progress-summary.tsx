@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { ProgressSummary, type ProgressSummaryData } from "./progress-summary";
 
-export const ATTEMPT_RECORDED_EVENT = "kos:attempt-recorded";
+export const ATTEMPT_RECORDED_EVENT = "estudisc:attempt-recorded";
 
 /** Re-reads lesson progress after each recorded attempt without re-rendering (and re-exposing) the questions. */
 export function LiveLessonProgress({ lessonStableId, initial }: Readonly<{ lessonStableId: string; initial: ProgressSummaryData | null }>) {
@@ -20,7 +20,9 @@ export function LiveLessonProgress({ lessonStableId, initial }: Readonly<{ lesso
         .catch(() => { /* keep the last known progress; the next attempt retries */ });
     };
     window.addEventListener(ATTEMPT_RECORDED_EVENT, refresh);
-    return () => { window.removeEventListener(ATTEMPT_RECORDED_EVENT, refresh); controller?.abort(); };
+    // Deprecated event from cached legacy clients, during the deployment transition.
+    window.addEventListener("kos:attempt-recorded", refresh);
+    return () => { window.removeEventListener(ATTEMPT_RECORDED_EVENT, refresh); window.removeEventListener("kos:attempt-recorded", refresh); controller?.abort(); };
   }, [lessonStableId]);
 
   return <ProgressSummary progress={progress} />;

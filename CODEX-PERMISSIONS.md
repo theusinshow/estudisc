@@ -1,10 +1,10 @@
-# Codex Permissions for KNOW/OS
+# Codex Permissions for Estudisc
 
 Use `/permissions` at the start of the Codex session and choose an automation-friendly mode that remains restricted to the repository workspace.
 
 Recommended principle:
 
-- allow reading, writing and routine commands inside `C:\Dev\know-os`;
+- allow reading, writing and routine commands inside the current Estudisc checkout;
 - keep unrelated directories and the broader computer outside writable roots;
 - keep external writes, deployment, publishing, real-secret access and destructive data operations behind user approval;
 - do not use unrestricted full-computer access merely to reduce prompts.

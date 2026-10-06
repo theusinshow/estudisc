@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-44-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Entre-guerras e totalitarismos, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nazismo era um movimento democrático pluralista."
+      },
+      {
+        "key": "B",
+        "text": "A Crise de 1929 provocou desemprego e instabilidade em várias economias, embora seus efeitos variassem entre países."
+      },
+      {
+        "key": "C",
+        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+      },
+      {
+        "key": "D",
+        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+      },
+      {
+        "key": "E",
+        "text": "Crise de 1929 foi a única causa do nazismo."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A Crise de 1929 provocou desemprego e instabilidade em várias economias, embora seus efeitos variassem entre países.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-44-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-44-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “Nazismo era um movimento democrático pluralista.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nazismo era um movimento democrático pluralista."
+      },
+      {
+        "key": "B",
+        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+      },
+      {
+        "key": "C",
+        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+      },
+      {
+        "key": "D",
+        "text": "Fascismo italiano e nazismo alemão rejeitavam democracia liberal, valorizavam liderança autoritária, nacionalismo e mobilização política."
+      },
+      {
+        "key": "E",
+        "text": "Crise de 1929 foi a única causa do nazismo."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Fascismo italiano e nazismo alemão rejeitavam democracia liberal, valorizavam liderança autoritária, nacionalismo e mobilização política.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-44-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-44-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: Crise econômica, medo político e fragilidade democrática criaram condições para regimes autoritários no entre-guerras. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nazismo era um movimento democrático pluralista."
+      },
+      {
+        "key": "B",
+        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+      },
+      {
+        "key": "C",
+        "text": "O nazismo incorporou racismo biológico e antissemitismo como elementos centrais de sua ideologia e política de Estado."
+      },
+      {
+        "key": "D",
+        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+      },
+      {
+        "key": "E",
+        "text": "Crise de 1929 foi a única causa do nazismo."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "O nazismo incorporou racismo biológico e antissemitismo como elementos centrais de sua ideologia e política de Estado.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-44-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-44-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Entre-guerras e totalitarismos por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Propaganda, organizações de massa, repressão e violência foram instrumentos de consolidação de regimes totalitários."
+      },
+      {
+        "key": "B",
+        "text": "Nazismo era um movimento democrático pluralista."
+      },
+      {
+        "key": "C",
+        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+      },
+      {
+        "key": "D",
+        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+      },
+      {
+        "key": "E",
+        "text": "Crise de 1929 foi a única causa do nazismo."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "Propaganda, organizações de massa, repressão e violência foram instrumentos de consolidação de regimes totalitários.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-44-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-44-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. A Crise de 1929 provocou desemprego e instabilidade em várias economias, embora seus efeitos variassem entre países.\nII. Nazismo era um movimento democrático pluralista.\nIII. O nazismo incorporou racismo biológico e antissemitismo como elementos centrais de sua ideologia e política de Estado.\nIV. O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-44-CON-01",
+      "GH-44-CON-02",
+      "GH-44-CON-03",
+      "GH-44-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-44-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Entre-guerras e totalitarismos. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nazismo era um movimento democrático pluralista."
+      },
+      {
+        "key": "B",
+        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+      },
+      {
+        "key": "C",
+        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Diferenciar nome de partido, propaganda e características efetivas do regime."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Diferenciar nome de partido, propaganda e características efetivas do regime.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-44-CON-01",
+      "GH-44-CON-02",
+      "GH-44-CON-03",
+      "GH-44-CON-04",
+      "GH-44-CON-05",
+      "GH-44-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-44-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Entre-guerras e totalitarismos?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Crise de 1929 provocou desemprego e instabilidade em várias economias, embora seus efeitos variassem entre países."
+      },
+      {
+        "key": "B",
+        "text": "Fascismo italiano e nazismo alemão rejeitavam democracia liberal, valorizavam liderança autoritária, nacionalismo e mobilização política."
+      },
+      {
+        "key": "C",
+        "text": "A ascensão nazista ocorreu por mecanismos eleitorais e políticos que depois foram usados para destruir instituições democráticas."
+      },
+      {
+        "key": "D",
+        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+      },
+      {
+        "key": "E",
+        "text": "Propaganda, organizações de massa, repressão e violência foram instrumentos de consolidação de regimes totalitários."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-44-CON-01",
+      "GH-44-CON-02",
+      "GH-44-CON-03",
+      "GH-44-CON-04",
+      "GH-44-CON-05",
+      "GH-44-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-44-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Entre-guerras e totalitarismos, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nazismo era um movimento democrático pluralista."
+      },
+      {
+        "key": "B",
+        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+      },
+      {
+        "key": "C",
+        "text": "A ascensão nazista ocorreu por mecanismos eleitorais e políticos que depois foram usados para destruir instituições democráticas."
+      },
+      {
+        "key": "D",
+        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+      },
+      {
+        "key": "E",
+        "text": "Crise de 1929 foi a única causa do nazismo."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A ascensão nazista ocorreu por mecanismos eleitorais e políticos que depois foram usados para destruir instituições democráticas.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-44-CON-01",
+      "GH-44-CON-02",
+      "GH-44-CON-03",
+      "GH-44-CON-04",
+      "GH-44-CON-05",
+      "GH-44-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

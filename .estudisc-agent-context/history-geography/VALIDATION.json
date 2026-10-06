@@ -1,0 +1,28 @@
+{
+  "codeDependencyFileHashes": {
+    "src/features/import/application/import-request.ts": "45b56c2a0390225a5bbc395f73f1d48c2efe7b03be5da246f943eb16f3f8b226",
+    "src/app/api/import/track/route.ts": "403841fd8c534c4201f24fc66eddb4f920da90cb07bbc275bb9152e274c5ac45",
+    "src/app/api/import/track/preview/route.ts": "eb8cb1215c3a8056c85495df6f8a0a34ae2fbbb7eabaa3cbc331743b21c4c6f2",
+    "tests/unit/import-request.test.ts": "f6f2d2199665593651360e3dc1e3a9f55dc375109cbdc4600b3eacb18a4c07d3",
+    "tests/unit/track-import-size-route.test.ts": "3f0907c26996526509e61111e94fc1050ddfef74caaad195c5000a89dbac1fd7",
+    "tests/history-geography-import.test.tsx": "a0ec65d7c45a152b7b7a178a02a1379377ba3856d18fa0e7f6638b57a2af92f0",
+    "tools/science-import/history-geography.ts": "a1977e92d0a87390b2ca8db89d9b0c5152d6c347b36b1e432b60baabc0fa2eb6",
+    "tools/science-import/mapper.ts": "fc7c6c38aedd0442277e6282f6dac5b2bd97f88277a3650f2a8c019c28633616",
+    "tools/science-import/cli.ts": "258b49c172e655d083535cab2ee37fbc8209e1ee14fd58b3b75243199774f128",
+    "tools/science-import/qa/history-geography-audit.ts": "c592dab650a11e1a6244fed31308bb403ce52796c755605c24954f1b7b0e2b6e",
+    "tools/science-import/qa/history-geography-db-audit.ts": "256ef65c790dcc6c2d87921cd13dc0706a538996674757e8e52deff666cfb618",
+    "packs/drafts/ifsc-2027-history-geography/history-geography.pack.json": "8867dae0f40a5a88aabc690b4ced0c4ebbd1312f9ef33a33fed404b705d41771",
+    "packs/drafts/ifsc-2027-portuguese/portuguese.pack.json": "56184aa794ae0bf6b118beee50ff666a1a1bbc03be350e26e72a1110b9eae157",
+    "packs/drafts/ifsc-2027-science/science.pack.json": "a44180849db02d397efc4da100267889ae5132c39218ea2184e2966ceb3b91e2",
+    "package.json": "b974d5fc07a5c83548a4906374e9ca711018bc9f30b8c2d077d0847bc6c66d5b",
+    "pnpm-lock.yaml": "598a32c58bc87ccc58fe45e58d43c161a0849434e3c84025b21962f61db1ced6"
+  },
+  "fullTest": "246PASS/3SKIPPED",
+  "focused": "16PASS",
+  "mobile": "8GHpilotsPASSat344px",
+  "e2e": "22PASS/14samebaselineFAIL;0newnames",
+  "sourceFilesUnchanged": 753,
+  "publicationPreflight": "49/392/441audit,idempotence,892baselinepreserved;disposableonly",
+  "isolatedRuntimeCandidate": "3runtimefiles,unit4PASS,scopedlintPASS,webpackbuildPASS,typecheckPASS",
+  "productionDeploymentOrMigrationPerformed": false
+}

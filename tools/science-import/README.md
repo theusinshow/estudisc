@@ -1,18 +1,18 @@
 # Science V2 integration
 
-Local, draft-only integration of the supplied `VECTA-SCIENCE-CONTENT-IFSC-2027-1-v2.zip`. This tooling reuses VECTA's Pack v2 validation, shared Questions, deterministic evaluators, renderers, migrations and transactional importer. It does not research, author, approve, publish or deploy content.
+Local, draft-only integration of the supplied `Estudisc-SCIENCE-CONTENT-IFSC-2027-1-v2.zip`. This tooling reuses Estudisc's Pack v2 validation, shared Questions, deterministic evaluators, renderers, migrations and transactional importer. It does not research, author, approve, publish or deploy content.
 
 ## Inputs and persistent memory
 
 The committed snapshot lives in `packs/drafts/ifsc-2027-science/`: sealed runtime Pack, complete editorial sidecar, all 620 immutable source files and thirteen hash-pinned SVG drafts. Tooling and QA now default to these tracked inputs, so a fresh clone needs no Downloads archive or ignored local Mathematics package. When the local Mathematics candidate exists, the preservation test additionally audits it. `SCIENCE_QA_PACK` still selects an explicit candidate; databases and working outputs remain local and ignored. The draft is deliberately absent from the public Pack catalog.
 
-Optional archive recovery: extract the supplied archive into `.local/science-package/`, producing `.local/science-package/VECTA-SCIENCE-CONTENT-v2/`. Normal validation uses the committed source copy. Original ZIP SHA-256: `0B382A3D8EA73D4B8CABB36DDCBA9DDF8BC707CE8BDDEB61D1969C5CE2F4A30F`.
+Optional archive recovery: extract the supplied archive into `.local/science-package/`, producing `.local/science-package/Estudisc-SCIENCE-CONTENT-v2/`. Normal validation uses the committed source copy. Original ZIP SHA-256: `0B382A3D8EA73D4B8CABB36DDCBA9DDF8BC707CE8BDDEB61D1969C5CE2F4A30F`.
 
 ```powershell
-Expand-Archive -LiteralPath 'C:\Users\Matheus\Downloads\VECTA-SCIENCE-CONTENT-IFSC-2027-1-v2.zip' -DestinationPath '.local/science-package'
+Expand-Archive -LiteralPath 'C:\Users\Matheus\Downloads\Estudisc-SCIENCE-CONTENT-IFSC-2027-1-v2.zip' -DestinationPath '.local/science-package'
 ```
 
-Start resumption with `.vecta-agent-context/CURRENT-STATUS.md` and `NEXT.md`. The project/content/media/validation contracts and Concept/block maps in that directory contain the one-time architecture discovery. Keep the source package immutable. The QA source baseline pins all 620 source files; stale upstream manifest hashes are disclosed rather than replaced in the source.
+Start resumption with `.estudisc-agent-context/CURRENT-STATUS.md` and `NEXT.md`. The project/content/media/validation contracts and Concept/block maps in that directory contain the one-time architecture discovery. Keep the source package immutable. The QA source baseline pins all 620 source files; stale upstream manifest hashes are disclosed rather than replaced in the source.
 
 ## Commands and gates
 
@@ -59,3 +59,28 @@ All 240 editorial Concepts have explicit mappings: nine existing canonical targe
 The 13 deterministic SVGs are static draft fallbacks with complete text equivalents, not factual approval or completion of requested interactive components. Eleven deterministic requests need exact data, reviewed geometry or licensed inputs. Thirteen generative requests are `ANTIGRAVITY_MANUAL_REQUIRED`; the exact queue and prompt are preserved in `.local/science-integration/antigravity-handoff/`. No image service was invoked. Pending media renders explicit notes; core source text/questions remain available.
 
 No new Pack schema, learning engine, production migration or public assets are introduced. Every imported Science lesson and Question remains draft. Human editorial/factual/publication review and explicit authorization for external writes remain required.
+
+## Portuguese profile
+
+The same CLI supports `--subject portuguese`, using portuguese.ts as a strict source-shape projection into the shared adapter. It reuses the core Pack v2 importer, existing block/Question renderer and preservation audit; no runtime schema or learning engine changes. Pilot POR-01/08/11/13/16/17/19/23 is followed by cumulative batch1..4 (13/17/20/24lessons,104/136/160/192Questions). Runtime lessons2 preserve the existing global POR-01/02@1 identities; Questions1 and editorial package1 are retained. Snapshots2..6 are idempotent.
+
+```text
+pnpm exec tsx tools/science-import/cli.ts import --subject portuguese --stage pilot
+pnpm exec tsx tools/science-import/cli.ts validate --subject portuguese --stage batch4
+pnpm exec tsx tools/science-import/qa/portuguese-db-audit.ts
+pnpm exec vitest run tests/portuguese-import.test.tsx tests/science-import-tooling.test.ts
+```
+
+The owned DB/artifacts are under .local/portuguese-integration/. The sealed review candidate is packs/drafts/ifsc-2027-portuguese/portuguese.pack.json, with original source, sidecar, explicit concept map and receipts. See qa/PORTUGUESE-FINAL-QA.md and .estudisc-agent-context/{CURRENT-STATUS.md,NEXT.md}. Confirmed Concept label/target discrepancies remain in editorial quarantine and all content stays draft; this integration supplies no independent editorial approval.
+
+## History/Geography v2 profile
+
+Use the same CLI with --subject history-geography;manifestpilot8and6cumulativebatchescreateone49lesson/392Question/293Conceptcollection(snapshot7). GH-06has5originalConcepts;do not fabricate a sixth. The strict source projection reuses existing blocks/Questions/renderer and preserves all753sourcefiles. Completecandidate1192969bytesusesauthorized2MiBTrackPackpreview/applylimit (ADR0037);unrelatedJSONdefaultsremain1MiB.
+
+```text
+pnpm exec tsx tools/science-import/cli.ts import --subject history-geography --stage pilot
+pnpm exec tsx tools/science-import/cli.ts validate --subject history-geography --stage batch6
+pnpm exec tsx tools/science-import/qa/history-geography-db-audit.ts
+```
+
+Source/candidate/sidecar/receipts:packs/drafts/ifsc-2027-history-geography/. OwnedDB:.local/history-geography-integration/db. Finaltechnical/liveblockers:qa/HISTORY-GEOGRAPHY-FINAL-QA.md. Live2MiBdeployment and0018auditmigrationstillneedexplicitproductionauthorization;local/sourcehumanreviewpermissiondoesnotchangethoseboundaries.

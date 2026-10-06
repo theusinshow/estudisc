@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-14-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Escravidão no Brasil: sistema, trabalho e violência, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+      },
+      {
+        "key": "B",
+        "text": "Milhões de africanos foram forçados a atravessar o Atlântico e submetidos à escravidão nas Américas."
+      },
+      {
+        "key": "C",
+        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+      },
+      {
+        "key": "D",
+        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+      },
+      {
+        "key": "E",
+        "text": "A escravidão existiu somente em grandes plantações."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "Milhões de africanos foram forçados a atravessar o Atlântico e submetidos à escravidão nas Américas.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-14-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-14-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “A escravidão brasileira foi branda e baseada em relações harmoniosas.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+      },
+      {
+        "key": "B",
+        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+      },
+      {
+        "key": "C",
+        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+      },
+      {
+        "key": "D",
+        "text": "No Brasil, pessoas escravizadas trabalharam em atividades rurais, mineração, serviços urbanos, ofícios e trabalho doméstico."
+      },
+      {
+        "key": "E",
+        "text": "A escravidão existiu somente em grandes plantações."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "No Brasil, pessoas escravizadas trabalharam em atividades rurais, mineração, serviços urbanos, ofícios e trabalho doméstico.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-14-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-14-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: A escravidão foi um sistema econômico, social, jurídico e político sustentado por violência e desumanização. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+      },
+      {
+        "key": "B",
+        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+      },
+      {
+        "key": "C",
+        "text": "A violência física e psicológica era estrutural ao sistema escravista, embora as experiências variassem conforme tempo e lugar."
+      },
+      {
+        "key": "D",
+        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+      },
+      {
+        "key": "E",
+        "text": "A escravidão existiu somente em grandes plantações."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A violência física e psicológica era estrutural ao sistema escravista, embora as experiências variassem conforme tempo e lugar.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-14-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-14-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Escravidão no Brasil: sistema, trabalho e violência por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pessoas escravizadas formaram famílias, redes culturais, religiosas e estratégias de sobrevivência e resistência."
+      },
+      {
+        "key": "B",
+        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+      },
+      {
+        "key": "C",
+        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+      },
+      {
+        "key": "D",
+        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+      },
+      {
+        "key": "E",
+        "text": "A escravidão existiu somente em grandes plantações."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "Pessoas escravizadas formaram famílias, redes culturais, religiosas e estratégias de sobrevivência e resistência.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-14-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-14-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Milhões de africanos foram forçados a atravessar o Atlântico e submetidos à escravidão nas Américas.\nII. A escravidão brasileira foi branda e baseada em relações harmoniosas.\nIII. A violência física e psicológica era estrutural ao sistema escravista, embora as experiências variassem conforme tempo e lugar.\nIV. A violência ocorria apenas quando um senhor individual perdia o controle.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-14-CON-01",
+      "GH-14-CON-02",
+      "GH-14-CON-03",
+      "GH-14-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-14-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Escravidão no Brasil: sistema, trabalho e violência. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+      },
+      {
+        "key": "B",
+        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+      },
+      {
+        "key": "C",
+        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Combinar texto, imagem e contexto para reconhecer mecanismos estruturais do sistema escravista."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Combinar texto, imagem e contexto para reconhecer mecanismos estruturais do sistema escravista.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-14-CON-01",
+      "GH-14-CON-02",
+      "GH-14-CON-03",
+      "GH-14-CON-04",
+      "GH-14-CON-05",
+      "GH-14-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-14-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Escravidão no Brasil: sistema, trabalho e violência?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Milhões de africanos foram forçados a atravessar o Atlântico e submetidos à escravidão nas Américas."
+      },
+      {
+        "key": "B",
+        "text": "No Brasil, pessoas escravizadas trabalharam em atividades rurais, mineração, serviços urbanos, ofícios e trabalho doméstico."
+      },
+      {
+        "key": "C",
+        "text": "A escravidão moldou desigualdades sociais e raciais que não desapareceram automaticamente com a abolição."
+      },
+      {
+        "key": "D",
+        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+      },
+      {
+        "key": "E",
+        "text": "Pessoas escravizadas formaram famílias, redes culturais, religiosas e estratégias de sobrevivência e resistência."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-14-CON-01",
+      "GH-14-CON-02",
+      "GH-14-CON-03",
+      "GH-14-CON-04",
+      "GH-14-CON-05",
+      "GH-14-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-14-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Escravidão no Brasil: sistema, trabalho e violência, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+      },
+      {
+        "key": "B",
+        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+      },
+      {
+        "key": "C",
+        "text": "A escravidão moldou desigualdades sociais e raciais que não desapareceram automaticamente com a abolição."
+      },
+      {
+        "key": "D",
+        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+      },
+      {
+        "key": "E",
+        "text": "A escravidão existiu somente em grandes plantações."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A escravidão moldou desigualdades sociais e raciais que não desapareceram automaticamente com a abolição.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-14-CON-01",
+      "GH-14-CON-02",
+      "GH-14-CON-03",
+      "GH-14-CON-04",
+      "GH-14-CON-05",
+      "GH-14-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

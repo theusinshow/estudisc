@@ -1,0 +1,52 @@
+{
+  "origin": "DEMO / NOT PRODUCTION CONTENT — pinned CIE-06 catalog",
+  "sha256": "b43effed59a919595bd46afccc6e07f0da7c2ad46c02647552d132f0b7ddffcd",
+  "sourceScopeVerified": false,
+  "track": {
+    "id": "ifsc-2027",
+    "title": "IFSC 2027"
+  },
+  "modules": [
+    {
+      "id": "cie",
+      "title": "Ciências",
+      "subjectCode": "CIE",
+      "lessons": [
+        {
+          "id": "CIE-06",
+          "version": 1,
+          "title": "Estrutura atômica: partículas, massa e íons",
+          "kind": "core",
+          "estimatedMinutes": 35,
+          "status": "draft",
+          "concepts": [
+            {
+              "id": "CIE.ATOM.Z",
+              "title": "Identificar número atômico",
+              "importance": "high"
+            }
+          ],
+          "prerequisiteConceptIds": [],
+          "objectives": [
+            "Reconhecer modelos atômicos",
+            "Distinguir partículas subatômicas",
+            "Determinar carga elétrica",
+            "Relacionar núcleo e região eletrônica",
+            "Identificar número atômico",
+            "Calcular número de massa",
+            "Interpretar formação de íons"
+          ],
+          "sourceIds": [
+            "src-ifsc-edital-2027-1"
+          ],
+          "exitTicketQuestionIds": [],
+          "blocks": [],
+          "activities": []
+        }
+      ]
+    }
+  ],
+  "requirements": [],
+  "sources": [],
+  "historicalQuestions": []
+}

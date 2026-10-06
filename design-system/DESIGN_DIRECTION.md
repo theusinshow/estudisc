@@ -1,6 +1,6 @@
-# KNOW/OS — Direção de Design
+# Estudisc — Direção de Design
 
-## IFSC v3 — approved delta
+## Delta IFSC integrado
 
 
 ## Thesis

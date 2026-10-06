@@ -1,0 +1,5844 @@
+{
+  "schemaVersion": 1,
+  "sourceScopeVerified": false,
+  "existingSourceIds": [
+    "src-ifsc-edital-2027-1",
+    "src-ifsc-golden-author",
+    "src-gh-lei-aurea",
+    "src-gh-ventre-livre",
+    "src-gh-bn-abolition",
+    "src-gh-eusebio"
+  ],
+  "origins": [
+    {
+      "path": "docs/ifsc/curriculum/MATHEMATICS.md",
+      "sha256": "f16d4b4077fc1b024a39ccf230d9c0f66c8311ef5507c77525567f36a79e44ba"
+    },
+    {
+      "path": "docs/ifsc/curriculum/PORTUGUESE.md",
+      "sha256": "57bbf2b74658a074cb1a3ef66c5d0cc14dc96b73569be2c0f2dcca2c9721d42a"
+    },
+    {
+      "path": "docs/ifsc/curriculum/SCIENCE.md",
+      "sha256": "20b6df96076ec0ba883a1ee22f2c8cb3bc6eb62cfd13c983584b08f4d22c6b2e"
+    },
+    {
+      "path": "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md",
+      "sha256": "8428acfe3c66928186ea5b57e22728464725de91468832c54f98d08c319f9202"
+    },
+    {
+      "path": "packs/seeds/ifsc-2027.golden.track.v2.json",
+      "sha256": "b43effed59a919595bd46afccc6e07f0da7c2ad46c02647552d132f0b7ddffcd"
+    }
+  ],
+  "lessons": [
+    {
+      "subject": "CIE",
+      "id": "CIE-01",
+      "topic": "Motion and simple machines",
+      "conceptIds": [
+        "CIE.MECH.MOTION",
+        "CIE.MECH.SPEED_BASIC",
+        "CIE.MECH.SIMPLE_MACHINES",
+        "CIE.MECH.APPLICATION"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-02",
+      "topic": "Energy and transformations",
+      "conceptIds": [
+        "CIE.ENERGY.SOURCES",
+        "CIE.ENERGY.TYPES",
+        "CIE.ENERGY.TRANSFORMATION",
+        "CIE.ENERGY.CONSERVATION",
+        "CIE.ENERGY.CONTEXT"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-03",
+      "topic": "Heat and thermodynamics",
+      "conceptIds": [
+        "CIE.HEAT.TEMPERATURE",
+        "CIE.HEAT.TRANSFER.CONDUCTION",
+        "CIE.HEAT.TRANSFER.CONVECTION",
+        "CIE.HEAT.TRANSFER.RADIATION",
+        "CIE.HEAT.EQUILIBRIUM",
+        "CIE.HEAT.THERMAL_MACHINES"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-04",
+      "topic": "Electricity and circuits",
+      "conceptIds": [
+        "CIE.ELEC.CIRCUIT",
+        "CIE.ELEC.COMPONENTS",
+        "CIE.ELEC.ENERGY_CONSUMPTION",
+        "CIE.ELEC.CONSCIOUS_USE",
+        "CIE.ELEC.INTERPRET"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-05",
+      "topic": "Matter and physical states",
+      "conceptIds": [
+        "CIE.MATTER.GENERAL_PROPERTIES",
+        "CIE.MATTER.SPECIFIC_PROPERTIES",
+        "CIE.MATTER.STATES",
+        "CIE.MATTER.STATE_CHANGE",
+        "CIE.MATTER.PHYSICAL_CHANGE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-06",
+      "topic": "Atomic structure",
+      "conceptIds": [
+        "CIE.ATOM.MODELS",
+        "CIE.ATOM.PARTICLES",
+        "CIE.ATOM.CHARGE",
+        "CIE.ATOM.STRUCTURE",
+        "CIE.ATOM.Z",
+        "CIE.ATOM.A",
+        "CIE.ATOM.MASS",
+        "CIE.ATOM.ION"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-07",
+      "topic": "Periodic table, elements, molecules and substances",
+      "conceptIds": [
+        "CIE.PERIODIC.ORGANIZATION",
+        "CIE.PERIODIC.INTERPRET",
+        "CIE.ELEMENT.CONCEPT",
+        "CIE.MOLECULE.CONCEPT",
+        "CIE.SUBSTANCE.CONCEPT",
+        "CIE.SUBSTANCE.PURE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-08",
+      "topic": "Mixtures and separation",
+      "conceptIds": [
+        "CIE.MIXTURE.CONCEPT",
+        "CIE.MIXTURE.HOMOGENEOUS",
+        "CIE.MIXTURE.HETEROGENEOUS",
+        "CIE.MIXTURE.PHASES_COMPONENTS",
+        "CIE.MIXTURE.SEPARATION",
+        "CIE.MIXTURE.MISCIBLE_IMMISCIBLE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-09",
+      "topic": "Chemical transformations and reactions",
+      "conceptIds": [
+        "CIE.CHEM.TRANSFORMATION_EVIDENCE",
+        "CIE.CHEM.REACTION",
+        "CIE.CHEM.REACTANTS_PRODUCTS",
+        "CIE.CHEM.CONTEXT"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-10",
+      "topic": "Cells",
+      "conceptIds": [
+        "CIE.CELL.THEORY",
+        "CIE.CELL.PROKARYOTIC",
+        "CIE.CELL.EUKARYOTIC",
+        "CIE.CELL.STRUCTURES",
+        "CIE.CELL.COMPARE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-11",
+      "topic": "Metabolism, DNA, genes and chromosomes",
+      "conceptIds": [
+        "CIE.CELL.BIOCHEMISTRY_BASIC",
+        "CIE.CELL.METABOLISM_BASIC",
+        "CIE.GENETICS.DNA",
+        "CIE.GENETICS.GENE",
+        "CIE.GENETICS.CHROMOSOME",
+        "CIE.GENETICS.RELATION"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-12",
+      "topic": "Mitosis, meiosis and gametogenesis",
+      "conceptIds": [
+        "CIE.DIVISION.MITOSIS",
+        "CIE.DIVISION.MEIOSIS",
+        "CIE.DIVISION.COMPARE",
+        "CIE.REPRO.GAMETOGENESIS"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-13",
+      "topic": "Ecology and ecosystems",
+      "conceptIds": [
+        "CIE.ECO.ECOSYSTEM",
+        "CIE.ECO.BIOTIC_ABIOTIC",
+        "CIE.ECO.BRAZILIAN_ECOSYSTEMS",
+        "CIE.ECO.RELATIONS",
+        "CIE.ECO.INTERPRET"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-14",
+      "topic": "Biodiversity, environment and sustainability",
+      "conceptIds": [
+        "CIE.ENV.SUSTAINABILITY",
+        "CIE.ENV.POLLUTION",
+        "CIE.ENV.GREENHOUSE_EFFECT",
+        "CIE.ENV.GLOBAL_WARMING",
+        "CIE.ENV.OZONE",
+        "CIE.ENV.BIODIVERSITY_THREATS",
+        "CIE.ENV.CONSERVATION_PRESERVATION",
+        "CIE.ENV.INDIGENOUS_QUILOMBOLA",
+        "CIE.ENV.ENERGY_SOURCES"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-15",
+      "topic": "Genetics and biotechnology",
+      "conceptIds": [
+        "CIE.GEN.MENDEL",
+        "CIE.GEN.FIRST_LAW",
+        "CIE.GEN.ALLELIC_INTERACTIONS",
+        "CIE.BIOTECH.APPLICATION",
+        "CIE.BIOTECH.ETHICS",
+        "CIE.BIOTECH.SOCIOENVIRONMENTAL"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-16",
+      "topic": "Diversity of living beings",
+      "conceptIds": [
+        "CIE.LIFE.ANIMALS",
+        "CIE.LIFE.PLANTS",
+        "CIE.LIFE.FUNGI",
+        "CIE.LIFE.MICROORGANISMS",
+        "CIE.LIFE.CLASSIFICATION",
+        "CIE.LIFE.IMPORTANCE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-17",
+      "topic": "Human body and systems",
+      "conceptIds": [
+        "CIE.HUMAN.ORGANIZATION",
+        "CIE.HUMAN.SYSTEMS",
+        "CIE.HUMAN.STRUCTURE_FUNCTION",
+        "CIE.HUMAN.SYSTEM_DISEASE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-18",
+      "topic": "Health, vaccines, senses and psychoactive substances",
+      "conceptIds": [
+        "CIE.HEALTH.VACCINE_MECHANISM",
+        "CIE.HEALTH.DISEASE_PREVENTION",
+        "CIE.HEALTH.PSYCHOACTIVE_EFFECTS",
+        "CIE.SENSES.ORGANS",
+        "CIE.SENSES.VISION",
+        "CIE.SENSES.VISION_CONDITIONS"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-19",
+      "topic": "Reproduction, contraception and STIs",
+      "conceptIds": [
+        "CIE.REPRO.MENSTRUAL_CYCLE",
+        "CIE.REPRO.FERTILIZATION",
+        "CIE.REPRO.CONTRACEPTION",
+        "CIE.REPRO.STI"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-20",
+      "topic": "Biological evolution",
+      "conceptIds": [
+        "CIE.EVOL.LAMARCK",
+        "CIE.EVOL.DARWIN",
+        "CIE.EVOL.SYNTHETIC_THEORY",
+        "CIE.EVOL.FACTORS",
+        "CIE.EVOL.FOSSILS",
+        "CIE.EVOL.ORIGIN_OF_LIFE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-21",
+      "topic": "Astronomy",
+      "conceptIds": [
+        "CIE.ASTRO.SOLAR_SYSTEM",
+        "CIE.ASTRO.EARTH_MOON",
+        "CIE.ASTRO.ORDER_MAGNITUDE",
+        "CIE.ASTRO.STELLAR_EVOLUTION"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-01",
+      "topic": "Geographic space, cartography, time and sources",
+      "conceptIds": [
+        "GH.GEO.SPACE",
+        "GH.GEO.BASIC_CONCEPTS",
+        "GH.CARTO.REPRESENTATION",
+        "GH.CARTO.INTERPRET",
+        "GH.GRAPHIC.ICONOGRAPHIC",
+        "GH.HIST.HISTORIOGRAPHY",
+        "GH.HIST.TIME",
+        "GH.HIST.MEMORY",
+        "GH.HIST.SOURCE"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-02",
+      "topic": "Social formation of Santa Catarina",
+      "conceptIds": [
+        "GH.SC.INDIGENOUS",
+        "GH.SC.TRADITIONAL",
+        "GH.SC.AFRICAN_AFRODESC",
+        "GH.SC.EUROPEAN_COLONIZATION",
+        "GH.SC.ETHNIC_RELATIONS",
+        "GH.SC.MINORITIES"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-03",
+      "topic": "Territory of Santa Catarina and Contestado",
+      "conceptIds": [
+        "GH.SC.TERRITORIAL_FORMATION",
+        "GH.SC.CONTESTADO.CONTEXT",
+        "GH.SC.CONTESTADO.CAUSES",
+        "GH.SC.CONTESTADO.ACTOR",
+        "GH.SC.CONTESTADO.CONSEQUENCES",
+        "GH.SC.TERRITORY.INTERPRET"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-04",
+      "topic": "Regions, economy, population and environment of Santa Catarina",
+      "conceptIds": [
+        "GH.SC.REGIONS",
+        "GH.SC.ECONOMY",
+        "GH.SC.SOCIAL",
+        "GH.SC.URBAN_RURAL",
+        "GH.SC.ENVIRONMENT",
+        "GH.SC.LANDSCAPE_CHANGE"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-05",
+      "topic": "Indigenous peoples, territory and Colonial Brazil",
+      "conceptIds": [
+        "GH.BR.TERRITORIAL_FORMATION",
+        "GH.BR.INDIGENOUS_AGENCY",
+        "GH.BR.COLONIZATION",
+        "GH.BR.COLONIAL_ECONOMY",
+        "GH.BR.TERRITORY_CHANGE"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-06",
+      "topic": "Slavery and resistance",
+      "conceptIds": [
+        "GH.BR.SLAVERY.SYSTEM",
+        "GH.BR.SLAVERY.AFRICAN_AFRODESC",
+        "GH.BR.SLAVERY.RESISTANCE",
+        "GH.BR.QUILOMBOS",
+        "GH.BR.SLAVERY.SOURCE_ANALYSIS",
+        "GH.BR.SLAVERY.CAUSE_EFFECT",
+        "GH.BR.ABOLITION.PROCESS",
+        "GH.BR.ABOLITION.AGENCY"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-07",
+      "topic": "Independence and Brazilian Empire",
+      "conceptIds": [
+        "GH.BR.INDEPENDENCE.CONTEXT",
+        "GH.BR.INDEPENDENCE.PROCESS",
+        "GH.BR.MONARCHY",
+        "GH.BR.EMPIRE.SOCIETY",
+        "GH.BR.EMPIRE.CONFLICTS"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-08",
+      "topic": "Abolition and Republic",
+      "conceptIds": [
+        "GH.BR.ABOLITION.PROCESS",
+        "GH.BR.ABOLITION.AGENCY",
+        "GH.BR.ABOLITION.LAWS",
+        "GH.BR.REPUBLIC.PROCLAMATION",
+        "GH.BR.ABOLITION.AFTERMATH"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-09",
+      "topic": "Old Republic and Vargas Era",
+      "conceptIds": [
+        "GH.BR.OLD_REPUBLIC",
+        "GH.BR.OLIGARCHIES",
+        "GH.BR.SOCIAL_MOVEMENTS_REPUBLIC",
+        "GH.BR.VARGAS.CONTEXT",
+        "GH.BR.VARGAS.STATE",
+        "GH.BR.VARGAS.WORK"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-10",
+      "topic": "Post-war Brazil and dictatorship",
+      "conceptIds": [
+        "GH.BR.POSTWAR",
+        "GH.BR.DICTATORSHIP.CONTEXT",
+        "GH.BR.DICTATORSHIP.POLITICS",
+        "GH.BR.DICTATORSHIP.SOCIETY",
+        "GH.BR.DICTATORSHIP.RESISTANCE"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-11",
+      "topic": "Redemocratization and contemporary Brazil",
+      "conceptIds": [
+        "GH.BR.REDEMOCRATIZATION",
+        "GH.BR.CONSTITUTIONAL_ORDER",
+        "GH.BR.NEOLIBERAL_ERA",
+        "GH.BR.CONTEMPORARY_CHANGE"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-12",
+      "topic": "Brazilian economic and population geography",
+      "conceptIds": [
+        "GH.BR.AGRICULTURE_MODERNIZATION",
+        "GH.BR.INDUSTRIALIZATION",
+        "GH.BR.URBANIZATION",
+        "GH.BR.POPULATION",
+        "GH.BR.CULTURE_IDENTITY",
+        "GH.BR.TERRITORIALITIES",
+        "GH.BR.ENVIRONMENT_LANDSCAPE"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-13",
+      "topic": "Capitalism, globalization, work and inequality",
+      "conceptIds": [
+        "GH.WORLD.CAPITALISM",
+        "GH.WORLD.GLOBALIZATION",
+        "GH.WORLD.WORLD_SYSTEM",
+        "GH.WORLD.INEQUALITY",
+        "GH.WORLD.WORK"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-14",
+      "topic": "Antiquity and Middle Ages",
+      "conceptIds": [
+        "GH.GENERAL.FIRST_SOCIETIES",
+        "GH.GENERAL.ANTIQUITY",
+        "GH.GENERAL.MIDDLE_AGES",
+        "GH.GENERAL.ISLAMIC_EXPANSION"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-15",
+      "topic": "Renaissance, National States and Reformation",
+      "conceptIds": [
+        "GH.GENERAL.RENAISSANCE",
+        "GH.GENERAL.MODERNITY",
+        "GH.GENERAL.NATIONAL_STATES",
+        "GH.GENERAL.REFORMATION",
+        "GH.GENERAL.COUNTER_REFORMATION"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-16",
+      "topic": "Maritime expansion, Enlightenment and revolutions",
+      "conceptIds": [
+        "GH.GENERAL.MARITIME_EXPANSION",
+        "GH.GENERAL.AMERICAS_COLONIZATION",
+        "GH.GENERAL.ENLIGHTENMENT",
+        "GH.GENERAL.BOURGEOIS_REVOLUTIONS",
+        "GH.GENERAL.AMERICAS_INDEPENDENCE"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-17",
+      "topic": "Industrialization, imperialism and World Wars",
+      "conceptIds": [
+        "GH.GENERAL.INDUSTRIAL_REVOLUTION",
+        "GH.GENERAL.IMPERIALISM_AFRICA_ASIA",
+        "GH.GENERAL.TOTALITARIANISM",
+        "GH.GENERAL.WORLD_WAR_I",
+        "GH.GENERAL.INTERWAR",
+        "GH.GENERAL.WORLD_WAR_II"
+      ]
+    },
+    {
+      "subject": "GH",
+      "id": "GH-18",
+      "topic": "Cold War, decolonization, resistance and Human Rights",
+      "conceptIds": [
+        "GH.GENERAL.COLD_WAR",
+        "GH.GENERAL.DECOLONIZATION",
+        "GH.GENERAL.IMPERIALISMS_20_21",
+        "GH.GENERAL.RESISTANCE",
+        "GH.GENERAL.COUNTERCULTURE",
+        "GH.GENERAL.HUMAN_RIGHTS"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-01",
+      "topic": "Numbers and operations",
+      "conceptIds": [
+        "MAT.NUM.NATURAL.INTEGER",
+        "MAT.NUM.OPERATIONS",
+        "MAT.NUM.ORDER",
+        "MAT.NUM.REAL.PROPERTIES",
+        "MAT.NUM.EXPRESSIONS"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-02",
+      "topic": "Divisibility, primes, MMC and MDC",
+      "conceptIds": [
+        "MAT.DIV.DIVISIBILITY",
+        "MAT.DIV.PRIME",
+        "MAT.DIV.FACTORIZATION",
+        "MAT.DIV.MMC",
+        "MAT.DIV.MDC",
+        "MAT.DIV.MODEL"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-03",
+      "topic": "Fractions",
+      "conceptIds": [
+        "MAT.FRACTION.MEANING",
+        "MAT.FRACTION.EQUIVALENCE",
+        "MAT.FRACTION.SIMPLIFY",
+        "MAT.FRACTION.COMPARE",
+        "MAT.FRACTION.OPERATIONS",
+        "MAT.FRACTION.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-04",
+      "topic": "Decimals and scientific notation",
+      "conceptIds": [
+        "MAT.DECIMAL.MEANING",
+        "MAT.DECIMAL.OPERATIONS",
+        "MAT.FRACTION.DECIMAL.CONVERT",
+        "MAT.SCI.NOTATION.READ",
+        "MAT.SCI.NOTATION.CONVERT",
+        "MAT.SCI.NOTATION.OPERATE"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-05",
+      "topic": "Ratio and proportion",
+      "conceptIds": [
+        "MAT.RATIO.CONCEPT",
+        "MAT.RATIO.INTERPRET",
+        "MAT.PROPORTION.CONCEPT",
+        "MAT.PROPORTION.EQUIVALENT",
+        "MAT.PROPORTION.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-06",
+      "topic": "Rule of three",
+      "conceptIds": [
+        "MAT.RULE3.DIRECT",
+        "MAT.RULE3.INVERSE",
+        "MAT.RULE3.IDENTIFY",
+        "MAT.RULE3.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-07",
+      "topic": "Percentage",
+      "conceptIds": [
+        "MAT.PCT.CONCEPT",
+        "MAT.PCT.CONVERT",
+        "MAT.PCT.CALCULATE",
+        "MAT.PCT.DISCOUNT",
+        "MAT.PCT.INCREASE",
+        "MAT.PCT.INTERPRET"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-08",
+      "topic": "Percentage applications and interest",
+      "conceptIds": [
+        "MAT.PCT.SUCCESSIVE",
+        "MAT.PCT.REVERSE",
+        "MAT.INTEREST.CONCEPT",
+        "MAT.INTEREST.SIMPLE",
+        "MAT.INTEREST.INTERPRET"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-09",
+      "topic": "Powers, radicals and expressions",
+      "conceptIds": [
+        "MAT.POWER.CONCEPT",
+        "MAT.POWER.PROPERTIES",
+        "MAT.RADICAL.CONCEPT",
+        "MAT.RADICAL.SIMPLIFY",
+        "MAT.EXPR.ORDER",
+        "MAT.EXPR.MIXED"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-10",
+      "topic": "Inequalities and intervals",
+      "conceptIds": [
+        "MAT.INEQ.COMPARE",
+        "MAT.INEQ.SOLVE",
+        "MAT.INTERVAL.READ",
+        "MAT.INTERVAL.REPRESENT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-11",
+      "topic": "Algebraic expressions and monomials",
+      "conceptIds": [
+        "MAT.ALG.EXPRESSION",
+        "MAT.ALG.SUBSTITUTE",
+        "MAT.ALG.SIMPLIFY",
+        "MAT.MONOMIAL.CONCEPT",
+        "MAT.MONOMIAL.DEGREE",
+        "MAT.MONOMIAL.OPERATIONS"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-12",
+      "topic": "Polynomials, notable products and factorization",
+      "conceptIds": [
+        "MAT.POLY.CONCEPT",
+        "MAT.POLY.DEGREE",
+        "MAT.POLY.OPERATIONS",
+        "MAT.NOTABLE.PRODUCTS",
+        "MAT.FACTOR.COMMON",
+        "MAT.FACTOR.PATTERNS",
+        "MAT.FACTOR.INTERPRET"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-13",
+      "topic": "First-degree equations",
+      "conceptIds": [
+        "MAT.EQ1.CONCEPT",
+        "MAT.EQ1.SOLVE",
+        "MAT.EQ1.CHECK",
+        "MAT.EQ1.MODEL",
+        "MAT.EQ1.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-14",
+      "topic": "Systems of equations",
+      "conceptIds": [
+        "MAT.SYSTEM.CONCEPT",
+        "MAT.SYSTEM.SUBSTITUTION",
+        "MAT.SYSTEM.ELIMINATION",
+        "MAT.SYSTEM.INTERPRET",
+        "MAT.SYSTEM.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-15",
+      "topic": "Second-degree equations",
+      "conceptIds": [
+        "MAT.EQ2.CONCEPT",
+        "MAT.EQ2.FACTOR",
+        "MAT.EQ2.FORMULA",
+        "MAT.EQ2.ROOTS",
+        "MAT.EQ2.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-16",
+      "topic": "Units, perimeter and area",
+      "conceptIds": [
+        "MAT.MEASURE.LENGTH",
+        "MAT.MEASURE.AREA",
+        "MAT.MEASURE.CAPACITY",
+        "MAT.MEASURE.TIME",
+        "MAT.MEASURE.CONVERT",
+        "MAT.GEO.ANGLES",
+        "MAT.GEO.PERIMETER",
+        "MAT.GEO.AREA.RECTANGLE",
+        "MAT.GEO.AREA.TRIANGLE",
+        "MAT.GEO.AREA.OTHER_PLANAR",
+        "MAT.GEO.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-17",
+      "topic": "Volumes and right-triangle relations",
+      "conceptIds": [
+        "MAT.VOLUME.CUBE",
+        "MAT.VOLUME.PRISM",
+        "MAT.VOLUME.CYLINDER",
+        "MAT.VOLUME.UNITS",
+        "MAT.RIGHTTRI.PYTHAGORAS",
+        "MAT.RIGHTTRI.METRIC",
+        "MAT.RIGHTTRI.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-18",
+      "topic": "Tables, graphs, probability and counting",
+      "conceptIds": [
+        "MAT.DATA.TABLE.READ",
+        "MAT.DATA.GRAPH.READ",
+        "MAT.DATA.GRAPH.COMPARE",
+        "MAT.DATA.INFER",
+        "MAT.PROB.FREQUENCY",
+        "MAT.PROB.ESTIMATE",
+        "MAT.COUNT.MULTIPLICATIVE"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-PREREQ",
+      "topic": "Frações, decimais e razões — preparação",
+      "conceptIds": [
+        "MAT.FRACTION.MEANING",
+        "MAT.DECIMAL.MEANING",
+        "MAT.PROPORTION.CONCEPT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-01",
+      "topic": "Comprehension and inference",
+      "conceptIds": [
+        "POR.READ.EXPLICIT",
+        "POR.READ.MAIN_IDEA",
+        "POR.READ.INFER",
+        "POR.READ.EVIDENCE",
+        "POR.READ.DISTRACTOR"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-02",
+      "topic": "Genres, purpose, context and authorship",
+      "conceptIds": [
+        "POR.GENRE.IDENTIFY",
+        "POR.GENRE.PURPOSE",
+        "POR.GENRE.MODALITY",
+        "POR.CONTEXT.SITUATION",
+        "POR.AUTHORSHIP.VOICE",
+        "POR.AUDIENCE.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-03",
+      "topic": "Cohesion, coherence and discourse operators",
+      "conceptIds": [
+        "POR.COHESION.REFERENCE",
+        "POR.COHESION.CONNECTOR",
+        "POR.COHERENCE.RELATION",
+        "POR.OPERATOR.LOGIC",
+        "POR.OPERATOR.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-04",
+      "topic": "Argumentation and intentionality",
+      "conceptIds": [
+        "POR.ARG.CLAIM",
+        "POR.ARG.EVIDENCE",
+        "POR.ARG.STRATEGY",
+        "POR.INTENTION",
+        "POR.PERSUASION.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-05",
+      "topic": "Semantics, synonymy and ambiguity",
+      "conceptIds": [
+        "POR.SEM.CONTEXT",
+        "POR.SEM.SYNONYM",
+        "POR.SEM.POLYSEMY",
+        "POR.SEM.AMBIGUITY",
+        "POR.SEM.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-06",
+      "topic": "Figures of speech and meaning effects",
+      "conceptIds": [
+        "POR.FIG.IDENTIFY",
+        "POR.FIG.METAPHOR",
+        "POR.FIG.COMPARISON",
+        "POR.FIG.IRONY",
+        "POR.FIG.OTHER",
+        "POR.FIG.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-07",
+      "topic": "Intertextuality and literary resources",
+      "conceptIds": [
+        "POR.INTERTEXT.RECOGNIZE",
+        "POR.INTERTEXT.RELATION",
+        "POR.LITERARY.RESOURCE",
+        "POR.LITERARY.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-08",
+      "topic": "Linguistic variation and prejudice",
+      "conceptIds": [
+        "POR.VAR.REGIONAL",
+        "POR.VAR.SOCIAL",
+        "POR.VAR.LEXICAL",
+        "POR.VAR.PHONOLOGICAL",
+        "POR.VAR.SYNTACTIC",
+        "POR.VAR.PRESTIGE",
+        "POR.VAR.PREJUDICE",
+        "POR.VAR.SEMANTIC_EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-09",
+      "topic": "Morphology, inflections and written conventions",
+      "conceptIds": [
+        "POR.WRITING.CONVENTION",
+        "POR.PHONEME.GRAPHEME",
+        "POR.MORPH.WORD_CLASS",
+        "POR.MORPH.NOMINAL_INFLECTION",
+        "POR.MORPH.VERBAL_INFLECTION",
+        "POR.MORPH.CONTEXT_EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-10",
+      "topic": "Syntax, voices, agreement and regency",
+      "conceptIds": [
+        "POR.SYNTAX.RELATIONS",
+        "POR.VOICE.ACTIVE_PASSIVE",
+        "POR.ORDER.EFFECT",
+        "POR.AGREEMENT.NOMINAL",
+        "POR.AGREEMENT.VERBAL",
+        "POR.REGENCY",
+        "POR.SYNTAX.MEANING"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "CIE.ASTRO.EARTH_MOON",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-21"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ASTRO.ORDER_MAGNITUDE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-21"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ASTRO.SOLAR_SYSTEM",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-21"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ASTRO.STELLAR_EVOLUTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-21"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ATOM.A",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.CHARGE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.ION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.MASS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ATOM.MODELS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.PARTICLES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.STRUCTURE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.Z",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.BIOTECH.APPLICATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.BIOTECH.ETHICS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.BIOTECH.SOCIOENVIRONMENTAL",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.BIOCHEMISTRY_BASIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.COMPARE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.EUKARYOTIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.METABOLISM_BASIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.PROKARYOTIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.STRUCTURES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.THEORY",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CHEM.CONTEXT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CHEM.REACTANTS_PRODUCTS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CHEM.REACTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CHEM.TRANSFORMATION_EVIDENCE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.DIVISION.COMPARE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.DIVISION.MEIOSIS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.DIVISION.MITOSIS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ECO.BIOTIC_ABIOTIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ECO.BRAZILIAN_ECOSYSTEMS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ECO.ECOSYSTEM",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ECO.INTERPRET",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ECO.RELATIONS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEC.CIRCUIT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEC.COMPONENTS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEC.CONSCIOUS_USE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEC.ENERGY_CONSUMPTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEC.INTERPRET",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEMENT.CONCEPT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENERGY.CONSERVATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENERGY.CONTEXT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENERGY.SOURCES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENERGY.TRANSFORMATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENERGY.TYPES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.BIODIVERSITY_THREATS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.CONSERVATION_PRESERVATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.ENERGY_SOURCES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.GLOBAL_WARMING",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.GREENHOUSE_EFFECT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.INDIGENOUS_QUILOMBOLA",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.OZONE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.POLLUTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.SUSTAINABILITY",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.DARWIN",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.FACTORS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.FOSSILS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.LAMARCK",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.ORIGIN_OF_LIFE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.SYNTHETIC_THEORY",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GEN.ALLELIC_INTERACTIONS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GEN.FIRST_LAW",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GEN.MENDEL",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GENETICS.CHROMOSOME",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GENETICS.DNA",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GENETICS.GENE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GENETICS.RELATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEALTH.DISEASE_PREVENTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEALTH.PSYCHOACTIVE_EFFECTS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEALTH.VACCINE_MECHANISM",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.EQUILIBRIUM",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.TEMPERATURE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.THERMAL_MACHINES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.TRANSFER.CONDUCTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.TRANSFER.CONVECTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.TRANSFER.RADIATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HUMAN.ORGANIZATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HUMAN.STRUCTURE_FUNCTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HUMAN.SYSTEM_DISEASE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HUMAN.SYSTEMS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.ANIMALS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.CLASSIFICATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.FUNGI",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.IMPORTANCE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.MICROORGANISMS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.PLANTS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MATTER.GENERAL_PROPERTIES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MATTER.PHYSICAL_CHANGE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MATTER.SPECIFIC_PROPERTIES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MATTER.STATE_CHANGE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MATTER.STATES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MECH.APPLICATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MECH.MOTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MECH.SIMPLE_MACHINES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MECH.SPEED_BASIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.CONCEPT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.HETEROGENEOUS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.HOMOGENEOUS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.MISCIBLE_IMMISCIBLE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.PHASES_COMPONENTS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.SEPARATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MOLECULE.CONCEPT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.PERIODIC.INTERPRET",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.PERIODIC.ORGANIZATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.REPRO.CONTRACEPTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-19"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.REPRO.FERTILIZATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-19"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.REPRO.GAMETOGENESIS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.REPRO.MENSTRUAL_CYCLE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-19"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.REPRO.STI",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-19"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.SENSES.ORGANS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.SENSES.VISION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.SENSES.VISION_CONDITIONS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.SUBSTANCE.CONCEPT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.SUBSTANCE.PURE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.ABOLITION.AFTERMATH",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.ABOLITION.AGENCY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-08",
+        "GH-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "GH.BR.ABOLITION.LAWS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.ABOLITION.PROCESS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-08",
+        "GH-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "GH.BR.AGRICULTURE_MODERNIZATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.COLONIAL_ECONOMY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.COLONIZATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.CONSTITUTIONAL_ORDER",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.CONTEMPORARY_CHANGE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.CULTURE_IDENTITY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.DICTATORSHIP.CONTEXT",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.DICTATORSHIP.POLITICS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.DICTATORSHIP.RESISTANCE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.DICTATORSHIP.SOCIETY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.EMPIRE.CONFLICTS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.EMPIRE.SOCIETY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.ENVIRONMENT_LANDSCAPE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.INDEPENDENCE.CONTEXT",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.INDEPENDENCE.PROCESS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.INDIGENOUS_AGENCY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.INDUSTRIALIZATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.MONARCHY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.NEOLIBERAL_ERA",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.OLD_REPUBLIC",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.OLIGARCHIES",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.POPULATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.POSTWAR",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.QUILOMBOS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "GH.BR.REDEMOCRATIZATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.REPUBLIC.PROCLAMATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.SLAVERY.AFRICAN_AFRODESC",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.SLAVERY.CAUSE_EFFECT",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "GH.BR.SLAVERY.RESISTANCE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "GH.BR.SLAVERY.SOURCE_ANALYSIS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "GH.BR.SLAVERY.SYSTEM",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "GH.BR.SOCIAL_MOVEMENTS_REPUBLIC",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.TERRITORIAL_FORMATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.TERRITORIALITIES",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.TERRITORY_CHANGE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.URBANIZATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.VARGAS.CONTEXT",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.VARGAS.STATE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.BR.VARGAS.WORK",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.CARTO.INTERPRET",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.CARTO.REPRESENTATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.AMERICAS_COLONIZATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.AMERICAS_INDEPENDENCE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.ANTIQUITY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.BOURGEOIS_REVOLUTIONS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.COLD_WAR",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.COUNTER_REFORMATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.COUNTERCULTURE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.DECOLONIZATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.ENLIGHTENMENT",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.FIRST_SOCIETIES",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.HUMAN_RIGHTS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.IMPERIALISM_AFRICA_ASIA",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.IMPERIALISMS_20_21",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.INDUSTRIAL_REVOLUTION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.INTERWAR",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.ISLAMIC_EXPANSION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.MARITIME_EXPANSION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.MIDDLE_AGES",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.MODERNITY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.NATIONAL_STATES",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.REFORMATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.RENAISSANCE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.RESISTANCE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.TOTALITARIANISM",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.WORLD_WAR_I",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GENERAL.WORLD_WAR_II",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GEO.BASIC_CONCEPTS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GEO.SPACE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.GRAPHIC.ICONOGRAPHIC",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.HIST.HISTORIOGRAPHY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.HIST.MEMORY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.HIST.SOURCE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.HIST.TIME",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.AFRICAN_AFRODESC",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.CONTESTADO.ACTOR",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.CONTESTADO.CAUSES",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.CONTESTADO.CONSEQUENCES",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.CONTESTADO.CONTEXT",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.ECONOMY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.ENVIRONMENT",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.ETHNIC_RELATIONS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.EUROPEAN_COLONIZATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.INDIGENOUS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.LANDSCAPE_CHANGE",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.MINORITIES",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.REGIONS",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.SOCIAL",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.TERRITORIAL_FORMATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.TERRITORY.INTERPRET",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.TRADITIONAL",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.SC.URBAN_RURAL",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.WORLD.CAPITALISM",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.WORLD.GLOBALIZATION",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.WORLD.INEQUALITY",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.WORLD.WORK",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "GH.WORLD.WORLD_SYSTEM",
+      "subjects": [
+        "GH"
+      ],
+      "lessonIds": [
+        "GH-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/HISTORY-GEOGRAPHY.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.ALG.EXPRESSION",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.ALG.SIMPLIFY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.ALG.SUBSTITUTE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.COUNT.MULTIPLICATIVE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DATA.GRAPH.COMPARE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DATA.GRAPH.READ",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DATA.INFER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DATA.TABLE.READ",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DECIMAL.MEANING",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04",
+        "MAT-PREREQ"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.DECIMAL.OPERATIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.DIVISIBILITY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.FACTORIZATION",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.MDC",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.MMC",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.MODEL",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.PRIME",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ1.CHECK",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ1.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ1.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ1.MODEL",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ1.SOLVE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ2.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ2.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ2.FACTOR",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ2.FORMULA",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ2.ROOTS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EXPR.MIXED",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EXPR.ORDER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FACTOR.COMMON",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FACTOR.INTERPRET",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FACTOR.PATTERNS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.COMPARE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.DECIMAL.CONVERT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.EQUIVALENCE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.MEANING",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03",
+        "MAT-PREREQ"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.FRACTION.OPERATIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.SIMPLIFY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.ANGLES",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.AREA.OTHER_PLANAR",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.AREA.RECTANGLE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.AREA.TRIANGLE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.PERIMETER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INEQ.COMPARE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INEQ.SOLVE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INTEREST.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INTEREST.INTERPRET",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INTEREST.SIMPLE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INTERVAL.READ",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INTERVAL.REPRESENT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MEASURE.AREA",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MEASURE.CAPACITY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MEASURE.CONVERT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MEASURE.LENGTH",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MEASURE.TIME",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MONOMIAL.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MONOMIAL.DEGREE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MONOMIAL.OPERATIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NOTABLE.PRODUCTS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NUM.EXPRESSIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NUM.NATURAL.INTEGER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NUM.OPERATIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NUM.ORDER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NUM.REAL.PROPERTIES",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PCT.CALCULATE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.CONVERT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.DISCOUNT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.INCREASE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.INTERPRET",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.REVERSE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PCT.SUCCESSIVE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.POLY.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.POLY.DEGREE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.POLY.OPERATIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.POWER.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.POWER.PROPERTIES",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PROB.ESTIMATE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PROB.FREQUENCY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PROPORTION.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-05",
+        "MAT-PREREQ"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PROPORTION.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PROPORTION.EQUIVALENT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RADICAL.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RADICAL.SIMPLIFY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RATIO.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RATIO.INTERPRET",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RIGHTTRI.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RIGHTTRI.METRIC",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RIGHTTRI.PYTHAGORAS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RULE3.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RULE3.DIRECT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RULE3.IDENTIFY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RULE3.INVERSE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SCI.NOTATION.CONVERT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SCI.NOTATION.OPERATE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SCI.NOTATION.READ",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SYSTEM.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SYSTEM.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SYSTEM.ELIMINATION",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SYSTEM.INTERPRET",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SYSTEM.SUBSTITUTION",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.VOLUME.CUBE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.VOLUME.CYLINDER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.VOLUME.PRISM",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.VOLUME.UNITS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.AGREEMENT.NOMINAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.AGREEMENT.VERBAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.ARG.CLAIM",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.ARG.EVIDENCE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.ARG.STRATEGY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.AUDIENCE.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.AUTHORSHIP.VOICE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.COHERENCE.RELATION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.COHESION.CONNECTOR",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.COHESION.REFERENCE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.CONTEXT.SITUATION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.COMPARISON",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.IDENTIFY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.IRONY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.METAPHOR",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.OTHER",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.GENRE.IDENTIFY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.GENRE.MODALITY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.GENRE.PURPOSE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.INTENTION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.INTERTEXT.RECOGNIZE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.INTERTEXT.RELATION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.LITERARY.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.LITERARY.RESOURCE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.MORPH.CONTEXT_EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.MORPH.NOMINAL_INFLECTION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.MORPH.VERBAL_INFLECTION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.MORPH.WORD_CLASS",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.OPERATOR.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.OPERATOR.LOGIC",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.ORDER.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.PERSUASION.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.PHONEME.GRAPHEME",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.READ.DISTRACTOR",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "POR.READ.EVIDENCE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "POR.READ.EXPLICIT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "POR.READ.INFER",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "POR.READ.MAIN_IDEA",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "POR.REGENCY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SEM.AMBIGUITY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SEM.CONTEXT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SEM.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SEM.POLYSEMY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SEM.SYNONYM",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SYNTAX.MEANING",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SYNTAX.RELATIONS",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.LEXICAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.PHONOLOGICAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.PREJUDICE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.PRESTIGE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.REGIONAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.SEMANTIC_EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.SOCIAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.SYNTACTIC",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VOICE.ACTIVE_PASSIVE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.WRITING.CONVENTION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    }
+  ]
+}

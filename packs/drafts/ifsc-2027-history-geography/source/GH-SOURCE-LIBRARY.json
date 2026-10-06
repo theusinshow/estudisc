@@ -1,0 +1,1397 @@
+{
+  "version": "0.1",
+  "sourceCount": 85,
+  "sources": [
+    {
+      "id": "SRC-IFSC-GH-001",
+      "title": "Edital IFSC 2027/1 — Anexo V — Geografia e História",
+      "org": "IFSC",
+      "type": "OFFICIAL_SYLLABUS",
+      "url": null,
+      "roles": [
+        "CURRICULUM_SOURCE_OF_TRUTH"
+      ],
+      "lessons": [
+        "GH-01",
+        "GH-02",
+        "GH-03",
+        "GH-04",
+        "GH-05",
+        "GH-06",
+        "GH-07",
+        "GH-08",
+        "GH-09",
+        "GH-10",
+        "GH-11",
+        "GH-12",
+        "GH-13",
+        "GH-14",
+        "GH-15",
+        "GH-16",
+        "GH-17",
+        "GH-18",
+        "GH-19",
+        "GH-20",
+        "GH-21",
+        "GH-22",
+        "GH-23",
+        "GH-24",
+        "GH-25",
+        "GH-26",
+        "GH-27",
+        "GH-28",
+        "GH-29",
+        "GH-30",
+        "GH-31",
+        "GH-32",
+        "GH-33",
+        "GH-34",
+        "GH-35",
+        "GH-36",
+        "GH-37",
+        "GH-38",
+        "GH-39",
+        "GH-40",
+        "GH-41",
+        "GH-42",
+        "GH-43",
+        "GH-44",
+        "GH-45",
+        "GH-46",
+        "GH-47",
+        "GH-48",
+        "GH-49"
+      ],
+      "reuseStatus": "LOCAL_REFERENCE"
+    },
+    {
+      "id": "SRC-IFSC-GH-2025-1",
+      "title": "IFSC Técnico Integrado 2025.1 — questões 15–21",
+      "org": "IFSC",
+      "type": "OFFICIAL_EXAM",
+      "url": null,
+      "roles": [
+        "EXAM_STYLE"
+      ],
+      "lessons": [],
+      "reuseStatus": "LOCAL_REFERENCE"
+    },
+    {
+      "id": "SRC-IFSC-GH-2025-2",
+      "title": "IFSC Técnico Integrado 2025.2 — questões 15–21",
+      "org": "IFSC",
+      "type": "OFFICIAL_EXAM",
+      "url": null,
+      "roles": [
+        "EXAM_STYLE"
+      ],
+      "lessons": [],
+      "reuseStatus": "LOCAL_REFERENCE"
+    },
+    {
+      "id": "SRC-IFSC-GH-2026-1",
+      "title": "IFSC Técnico Integrado 2026.1 — questões 15–21",
+      "org": "IFSC",
+      "type": "OFFICIAL_EXAM",
+      "url": null,
+      "roles": [
+        "EXAM_STYLE"
+      ],
+      "lessons": [],
+      "reuseStatus": "LOCAL_REFERENCE"
+    },
+    {
+      "id": "SRC-IFSC-GH-2026-2",
+      "title": "IFSC Técnico Integrado 2026.2 — questões 15–21",
+      "org": "IFSC",
+      "type": "OFFICIAL_EXAM",
+      "url": null,
+      "roles": [
+        "EXAM_STYLE"
+      ],
+      "lessons": [],
+      "reuseStatus": "LOCAL_REFERENCE"
+    },
+    {
+      "id": "SRC-GH-001",
+      "title": "Atlas Geográfico Escolar — Ensino Fundamental 6º ao 9º ano",
+      "org": "IBGE",
+      "type": "ATLAS",
+      "url": "https://www.ibge.gov.br/geociencias/atlas/nacional/24678-atlas-geografico-escolar-ensino-fundamental.html",
+      "roles": [
+        "PRIMARY",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-01",
+        "GH-02",
+        "GH-03",
+        "GH-09",
+        "GH-10",
+        "GH-11",
+        "GH-24",
+        "GH-25",
+        "GH-26",
+        "GH-27",
+        "GH-29",
+        "GH-30",
+        "GH-31"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-002",
+      "title": "Atlas Geográfico Escolar",
+      "org": "IBGE",
+      "type": "ATLAS",
+      "url": "https://www.ibge.gov.br/geociencias/atlas/nacional/16633-atlas-geografico-escolar.html",
+      "roles": [
+        "PRIMARY",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-01",
+        "GH-02",
+        "GH-03",
+        "GH-24",
+        "GH-27",
+        "GH-30",
+        "GH-31"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-003",
+      "title": "Orientação Geográfica",
+      "org": "IBGE Educa",
+      "type": "ACTIVITY",
+      "url": "https://educa.ibge.gov.br/professores/blog/21089-orientacao-geografica.html",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-02"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-004",
+      "title": "Cartografia: Mapas",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT_VIDEO",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geo-cart-map/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-02",
+        "GH-03"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-005",
+      "title": "Escalas cartográficas",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/gscalas-aficas/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-02"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-006",
+      "title": "Coordenadas geográficas",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-as-coordenadas-geograficas/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-02"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-007",
+      "title": "A paisagem geográfica",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-a-paisagem-geografica/",
+      "roles": [
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-01"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-008",
+      "title": "Espaço Geográfico",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/espaco-geografico/",
+      "roles": [
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-01"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-009",
+      "title": "A história e suas fontes",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/hstoria-a-historia-e-suas-fontes/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-03",
+        "GH-04"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-010",
+      "title": "Educação Patrimonial",
+      "org": "IPHAN",
+      "type": "OFFICIAL_REFERENCE",
+      "url": "https://www.gov.br/iphan/pt-br/patrimonio-cultural/educacao-patrimonial",
+      "roles": [
+        "FACT_CHECK",
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-04",
+        "GH-28"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-011",
+      "title": "Povos indígenas de Santa Catarina: cultura, diversidade e saberes",
+      "org": "UFSC PROFC",
+      "type": "TEACHER_TRAINING",
+      "url": "https://profc.ufsc.br/formacoes-disponiveis/PROFC111/",
+      "roles": [
+        "PRIMARY",
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-05"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-012",
+      "title": "Brincando e Conhecendo os Indígenas em Santa Catarina",
+      "org": "LABHIN/UFSC",
+      "type": "DIDACTIC_BOOK",
+      "url": "https://labhin.ufsc.br/livros/brincando-e-conhecendo-os-indigenas-em-santa-catarina/",
+      "roles": [
+        "PRIMARY",
+        "ACTIVITY",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-05"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-013",
+      "title": "História e Cultura Indígena de Santa Catarina através das escolas",
+      "org": "LABHIN/UFSC",
+      "type": "DIDACTIC_COLLECTION",
+      "url": "https://labhin.ufsc.br/livros/colecao-historia-e-cultura-indigena-de-santa-catarina-atraves-das-escolas/",
+      "roles": [
+        "PRIMARY"
+      ],
+      "lessons": [
+        "GH-05"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-014",
+      "title": "A presença indígena no contexto urbano de Santa Catarina",
+      "org": "FUNAI",
+      "type": "CARTILHA",
+      "url": "https://www.gov.br/funai/pt-br/assuntos/noticias/2018/funai-publica-cartilhas-sobre-a-relacao-dos-povos-indigenas-e-meios-urbanos-em-santa-catarina",
+      "roles": [
+        "FACT_CHECK",
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-05",
+        "GH-10"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-015",
+      "title": "Dados Quilombolas de Santa Catarina",
+      "org": "SAS/SC",
+      "type": "OFFICIAL_DATA",
+      "url": "https://www.sas.sc.gov.br/index.php/direitos-humanos/gerencia-de-politicas-para-igualdade-racial-e-imigrantes-geiri/dados-2",
+      "roles": [
+        "FACT_CHECK",
+        "DATA"
+      ],
+      "lessons": [
+        "GH-06",
+        "GH-28"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-016",
+      "title": "Memória Política de Santa Catarina",
+      "org": "ALESC + UFSC",
+      "type": "DIDACTIC_REPOSITORY",
+      "url": "https://memoriapolitica.alesc.sc.gov.br/",
+      "roles": [
+        "PRIMARY",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-07",
+        "GH-08",
+        "GH-09",
+        "GH-18",
+        "GH-19",
+        "GH-20",
+        "GH-21",
+        "GH-22"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-017",
+      "title": "A Guerra do Contestado",
+      "org": "Memória Política de Santa Catarina — ALESC/UFSC",
+      "type": "DIDACTIC_ARTICLE",
+      "url": "https://memoriapolitica.alesc.sc.gov.br/momentos-historicos/1-Primeira_Republica/7-A_Guerra_do_Contestado",
+      "roles": [
+        "PRIMARY",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-08"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-018",
+      "title": "Panorama Geral da Guerra do Contestado",
+      "org": "Memória Política de Santa Catarina — ALESC/UFSC",
+      "type": "DIDACTIC_ARTICLE",
+      "url": "https://memoriapolitica.alesc.sc.gov.br/momentos-historicos/1-Primeira_Republica/8-Panorama_Geral_da_Guerra_do_Contestado",
+      "roles": [
+        "PRIMARY"
+      ],
+      "lessons": [
+        "GH-08"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-019",
+      "title": "Adensamento Econômico e Populacional: um olhar regional em Santa Catarina",
+      "org": "SEPLAN/SC",
+      "type": "REPORT",
+      "url": "https://www.seplan.sc.gov.br/download/adensamento-economico-e-populacional-um-olhar-regional-em-santa-catarina/",
+      "roles": [
+        "FACT_CHECK",
+        "DATA"
+      ],
+      "lessons": [
+        "GH-09",
+        "GH-10",
+        "GH-27"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-020",
+      "title": "Síntese Anual da Agricultura de Santa Catarina 2025",
+      "org": "EPAGRI/CEPA",
+      "type": "REPORT",
+      "url": "https://docweb.epagri.sc.gov.br/website_cepa/publicacoes/Sintese_2025.pdf",
+      "roles": [
+        "FACT_CHECK",
+        "DATA"
+      ],
+      "lessons": [
+        "GH-09",
+        "GH-10",
+        "GH-11",
+        "GH-25"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-021",
+      "title": "Povos indígenas no Brasil",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-povos-indigenas-no-brasil/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-12",
+        "GH-13",
+        "GH-28"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-022",
+      "title": "Terras Indígenas: Dados Geoespaciais e Mapas",
+      "org": "FUNAI",
+      "type": "OFFICIAL_DATA_MAPS",
+      "url": "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/geoprocessamento-e-mapas",
+      "roles": [
+        "FACT_CHECK",
+        "MEDIA",
+        "DATA"
+      ],
+      "lessons": [
+        "GH-12",
+        "GH-13",
+        "GH-28"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-023",
+      "title": "A escravidão no Brasil",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-a-escravidao-no-brasil/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-14"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-024",
+      "title": "Quilombo",
+      "org": "Fundação Cultural Palmares",
+      "type": "OFFICIAL_REFERENCE",
+      "url": "https://www.gov.br/palmares/pt-br/departamentos/protecao-preservacao-e-articulacao/serra-da-barriga-1/quilombo",
+      "roles": [
+        "FACT_CHECK",
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-15",
+        "GH-28"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-025",
+      "title": "Abolição da escravatura",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-abolicao-da-escravatura/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-15"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-026",
+      "title": "República Velha: Aspectos Políticos",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-republica-velha-aspectos-politicos/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-18"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-027",
+      "title": "Governo Dutra",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-governo-dutra/",
+      "roles": [
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-20"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-028",
+      "title": "Memórias Reveladas",
+      "org": "Arquivo Nacional",
+      "type": "PRIMARY_SOURCE_REPOSITORY",
+      "url": "https://www.gov.br/memoriasreveladas/pt-br",
+      "roles": [
+        "PRIMARY",
+        "FACT_CHECK",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-21",
+        "GH-22",
+        "GH-49"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-029",
+      "title": "Imagens e documentos do período de 1964–1985",
+      "org": "Arquivo Nacional — Memórias Reveladas",
+      "type": "PRIMARY_SOURCE_MEDIA",
+      "url": "https://www.gov.br/memoriasreveladas/pt-br/centrais-de-conteudo/multimidias/imagens-e-documentos-do-periodo-de-1964-1985/",
+      "roles": [
+        "PRIMARY",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-21",
+        "GH-22"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-030",
+      "title": "A Constituição Cidadã de 1988",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-a-constituicao-cidada-de-1988/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-22"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-031",
+      "title": "Industrialização brasileira",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-industrializacao-brasileira/",
+      "roles": [
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-26"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-032",
+      "title": "Taxa de urbanização — espacializando informações",
+      "org": "IBGE Educa",
+      "type": "ACTIVITY_DATA",
+      "url": "https://educa.ibge.gov.br/professores/educa-atividades/17692-taxa-de-urbanizacao-espacializando-informacoes.html",
+      "roles": [
+        "PRIMARY",
+        "ACTIVITY",
+        "DATA"
+      ],
+      "lessons": [
+        "GH-10",
+        "GH-26",
+        "GH-27"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-033",
+      "title": "População brasileira",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-populacao-brasileira/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-27",
+        "GH-28"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-034",
+      "title": "Globalização",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-globalization/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-30"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-035",
+      "title": "Revoluções Industriais",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-revolucoes-industriais/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-29",
+        "GH-41"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-036",
+      "title": "O Mercantilismo e a Emergência do Capitalismo",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "VIDEO_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-o-mercantilismo-e-a-emergencia-do-capitalismo/",
+      "roles": [
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-29",
+        "GH-35",
+        "GH-39"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-037",
+      "title": "Provas IFSC recentes — desigualdade social e mundo do trabalho",
+      "org": "IFSC",
+      "type": "OFFICIAL_EXAM_SIGNAL",
+      "url": "",
+      "roles": [
+        "EXAM_STYLE"
+      ],
+      "lessons": [
+        "GH-31"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-038",
+      "title": "Humanismo e Renascimento",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-humanismo-e-renascimento/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-34"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-039",
+      "title": "A Formação do Estado Moderno",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-a-formacao-do-estado-moderno/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-35"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-040",
+      "title": "Reforma Protestante",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-reforma-protestante-e-o-que/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-36"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-041",
+      "title": "A reação Católica à Reforma Protestante",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-a-reacao-catolica-a-reforma-protestante/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-36"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-042",
+      "title": "As Grandes Navegações",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-as-grandes-navegacoes/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-37"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-043",
+      "title": "Mecanismos da conquista e colonização da América",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-os-mecanismos-utilizados-pelos-europeus-na-conquista-e-colonizacao-da-america/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-38"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-044",
+      "title": "O Iluminismo",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-o-iluminismo/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-39"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-045",
+      "title": "Colonialismo na África",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-colonialismo-na-africa/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-42"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-046",
+      "title": "História Geral da África",
+      "org": "UNESCO",
+      "type": "REFERENCE_COLLECTION",
+      "url": "https://www.unesco.org/pt/general-history-africa",
+      "roles": [
+        "PRIMARY",
+        "FACT_CHECK"
+      ],
+      "lessons": [
+        "GH-32",
+        "GH-33",
+        "GH-42",
+        "GH-47",
+        "GH-48"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-047",
+      "title": "Programa Brasil-África: Histórias Cruzadas",
+      "org": "UNESCO",
+      "type": "PEDAGOGICAL_COLLECTION",
+      "url": "https://www.unesco.org/pt/articles/programa-brasil-africa-historias-cruzadas",
+      "roles": [
+        "PRIMARY",
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-14",
+        "GH-15",
+        "GH-42",
+        "GH-47",
+        "GH-48"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-048",
+      "title": "Primeira Guerra Mundial",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-primeira-guerra-mundial/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-43"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-049",
+      "title": "Nazifascismo e regimes totalitários",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "VIDEO_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/o-surgimento-de-regimes-totalitarios-fascismo-e-nazismo/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-44"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-050",
+      "title": "Holocausto — local de aprendizado para estudantes",
+      "org": "United States Holocaust Memorial Museum",
+      "type": "STUDENT_LEARNING_SITE",
+      "url": "https://encyclopedia.ushmm.org/content/pt-br/project/the-holocaust-a-learning-site-for-students",
+      "roles": [
+        "PRIMARY",
+        "FACT_CHECK",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-44",
+        "GH-45",
+        "GH-49"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-051",
+      "title": "Segunda Guerra Mundial na Europa",
+      "org": "United States Holocaust Memorial Museum",
+      "type": "OFFICIAL_REFERENCE",
+      "url": "https://encyclopedia.ushmm.org/content/pt-br/article/world-war-ii-in-europe",
+      "roles": [
+        "FACT_CHECK",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-45"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-052",
+      "title": "Guerra Fria",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-guerra-fria/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-46"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-053",
+      "title": "A descolonização da África",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-a-descolonizacao-da-africa/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-47"
+      ],
+      "reuseStatus": "REQUIRES_LICENSE_REVIEW"
+    },
+    {
+      "id": "SRC-GH-054",
+      "title": "Declaração Universal dos Direitos Humanos",
+      "org": "ONU Brasil",
+      "type": "PRIMARY_DOCUMENT",
+      "url": "https://brasil.un.org/pt-br/91601-declara%C3%A7%C3%A3o-universal-dos-direitos-humanos",
+      "roles": [
+        "PRIMARY",
+        "FACT_CHECK"
+      ],
+      "lessons": [
+        "GH-49"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-055",
+      "title": "Human Rights — recurso educacional",
+      "org": "Nações Unidas",
+      "type": "EDUCATIONAL_RESOURCE",
+      "url": "https://www.un.org/pt/teach/human-rights",
+      "roles": [
+        "PRIMARY",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-49"
+      ],
+      "reuseStatus": "REFERENCE_OR_LINK_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-056",
+      "title": "Biomas brasileiros",
+      "org": "IBGE Educa",
+      "type": "OFFICIAL_EDUCATIONAL_PAGE",
+      "url": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18307-biomas-brasileiros.html",
+      "roles": [
+        "PRIMARY",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-24"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-057",
+      "title": "Mapas para o Ensino Fundamental",
+      "org": "IBGE Educa",
+      "type": "OFFICIAL_MAP_COLLECTION",
+      "url": "https://educa.ibge.gov.br/criancas/mapas-5.html",
+      "roles": [
+        "PRIMARY",
+        "MEDIA"
+      ],
+      "lessons": [
+        "GH-02",
+        "GH-03",
+        "GH-09",
+        "GH-11",
+        "GH-24",
+        "GH-27"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-058",
+      "title": "Legislação abolicionista no Império",
+      "org": "Arquivo Nacional",
+      "type": "PRIMARY_SOURCE_GUIDE",
+      "url": "https://www.gov.br/arquivonacional/pt-br/sites_eventos/sites-tematicos-1/brasil-oitocentista/temas-oitocentistas/legislacao-abolicionista-no-imperio/",
+      "roles": [
+        "PRIMARY",
+        "FACT_CHECK"
+      ],
+      "lessons": [
+        "GH-15",
+        "GH-17"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-059",
+      "title": "Constituição de 1988 — Alicerces da Redemocratização",
+      "org": "Senado Federal",
+      "type": "OFFICIAL_COLLECTION",
+      "url": "https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/outras-publicacoes/volume-i-constituicao-de-1988",
+      "roles": [
+        "PRIMARY",
+        "FACT_CHECK"
+      ],
+      "lessons": [
+        "GH-22"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-060",
+      "title": "Constituição Federal de 1988 — texto atualizado",
+      "org": "Câmara dos Deputados",
+      "type": "PRIMARY_DOCUMENT",
+      "url": "https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html",
+      "roles": [
+        "PRIMARY",
+        "FACT_CHECK"
+      ],
+      "lessons": [
+        "GH-22",
+        "GH-49"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-061",
+      "title": "Museu Imperial — acervo e história do Brasil Imperial",
+      "org": "Ibram / Museu Imperial",
+      "type": "OFFICIAL_MUSEUM_COLLECTION",
+      "url": "https://www.gov.br/museus/pt-br/museus-ibram/museu-imperial/museu-imperial-pagina-inicial",
+      "roles": [
+        "PRIMARY",
+        "MEDIA",
+        "FACT_CHECK"
+      ],
+      "lessons": [
+        "GH-16",
+        "GH-17",
+        "GH-15"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-062",
+      "title": "Brasil-África: Histórias Cruzadas — anos finais",
+      "org": "UNESCO / MEC",
+      "type": "PEDAGOGICAL_COLLECTION",
+      "url": "https://www.unesco.org/en/articles/brazil-africa-crossed-histories-programme",
+      "roles": [
+        "PRIMARY",
+        "SUPPORT"
+      ],
+      "lessons": [
+        "GH-14",
+        "GH-15",
+        "GH-28",
+        "GH-42",
+        "GH-47",
+        "GH-48"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-063",
+      "title": "Integração da História Geral da África nos currículos",
+      "org": "UNESCO",
+      "type": "CURRICULUM_GUIDE",
+      "url": "https://www.unesco.org/pt/articles/integrar-historia-geral-da-africa-nos-sistemas-educacionais-curricular",
+      "roles": [
+        "FACT_CHECK",
+        "PEDAGOGY"
+      ],
+      "lessons": [
+        "GH-32",
+        "GH-42",
+        "GH-47",
+        "GH-48"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-064",
+      "title": "Globalização e desigualdade",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-a-globalizacao-e-a-desigualdade/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-30",
+        "GH-31"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-065",
+      "title": "Urbanização brasileira",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geo-urban-brasi/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-26",
+        "GH-27"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-066",
+      "title": "Fluxos populacionais brasileiros",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geoa-fluxos-popu-brasos/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-27"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-067",
+      "title": "A Era Vargas — introdução",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-a-era-vargas-uma-introducao/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-19"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-068",
+      "title": "Primeiro Reinado e Constituição de 1824",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-o-primeiro-reinado-e-a-constituicao-de-1824/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-17"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-069",
+      "title": "Processos que resultaram na ditadura civil-militar no Brasil",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-os-processos-politicos-e-sociais-que-resultaram-na-ditadura-civil-militar-no-brasil/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-21"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-070",
+      "title": "Primeira Guerra Mundial e disputas imperialistas",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-as-disputas-imperialistas-e-a-1-guerra-mundial/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-43"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-071",
+      "title": "Segunda Guerra Mundial",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-segunda-guerra-mundial/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-45"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-072",
+      "title": "Guerra Fria — guerra das ideologias",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-a-guerra-das-ideologias-a-guerra-fria/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-46"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-073",
+      "title": "Antiguidade Clássica: para quê e para quem?",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-antiguidade-classica-para-que-e-para-quem/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-32"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-074",
+      "title": "Grandes deslocamentos populacionais",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-grandes-deslocamentos-populacionais/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-27",
+        "GH-30",
+        "GH-31"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-075",
+      "title": "Direitos Humanos",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-direitos-humanos/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-49"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-076",
+      "title": "Histórico do Programa Nacional de Desestatização",
+      "org": "BNDES",
+      "type": "OFFICIAL_HISTORY_DATA",
+      "url": "https://www.bndes.gov.br/wps/portal/site/home/transparencia/desestatizacao/projetos-encerrados/Historico",
+      "roles": [
+        "PRIMARY",
+        "FACT_CHECK",
+        "DATA"
+      ],
+      "lessons": [
+        "GH-23"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-077",
+      "title": "Abertura comercial, reestruturação industrial e exportações brasileiras na década de 1990",
+      "org": "IPEA",
+      "type": "TECHNICAL_REPORT",
+      "url": "https://portalantigo.ipea.gov.br/agencia/images/stories/PDFs/TDs/td_0829.pdf",
+      "roles": [
+        "PRIMARY",
+        "FACT_CHECK"
+      ],
+      "lessons": [
+        "GH-23"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-078",
+      "title": "Independências nas Américas",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-independencias-nas-americas/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-40"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-079",
+      "title": "Revolução Haitiana e independência",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "VIDEO_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-os-processos-de-independencia-nas-americas-a-revolucao-haitiana/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-40"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    },
+    {
+      "id": "SRC-GH-080",
+      "title": "Revoluções Industriais",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-revolucoes-industriais/",
+      "roles": [
+        "SUPPORT",
+        "ACTIVITY"
+      ],
+      "lessons": [
+        "GH-41"
+      ],
+      "reuseStatus": "LINK_ONLY_UNTIL_VERIFIED"
+    }
+  ]
+}

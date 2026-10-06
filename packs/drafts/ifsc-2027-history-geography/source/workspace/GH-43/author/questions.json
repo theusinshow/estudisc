@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-43-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Primeira Guerra Mundial, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+      },
+      {
+        "key": "B",
+        "text": "Rivalidades imperialistas, nacionalismos, corrida armamentista e sistemas de alianças contribuíram para a crise que levou à guerra em 1914."
+      },
+      {
+        "key": "C",
+        "text": "Todos os combates ocorreram somente em trincheiras na França."
+      },
+      {
+        "key": "D",
+        "text": "O conflito não alterou fronteiras políticas."
+      },
+      {
+        "key": "E",
+        "text": "Tratado de Versalhes encerrou definitivamente tensões europeias."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "Rivalidades imperialistas, nacionalismos, corrida armamentista e sistemas de alianças contribuíram para a crise que levou à guerra em 1914.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-43-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-43-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “A guerra ocorreu apenas por causa do assassinato em Sarajevo.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+      },
+      {
+        "key": "B",
+        "text": "Todos os combates ocorreram somente em trincheiras na França."
+      },
+      {
+        "key": "C",
+        "text": "O conflito não alterou fronteiras políticas."
+      },
+      {
+        "key": "D",
+        "text": "O assassinato do arquiduque Francisco Ferdinando foi o estopim, não a única causa da guerra."
+      },
+      {
+        "key": "E",
+        "text": "Tratado de Versalhes encerrou definitivamente tensões europeias."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "O assassinato do arquiduque Francisco Ferdinando foi o estopim, não a única causa da guerra.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-43-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-43-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: A Primeira Guerra Mundial resultou de tensões acumuladas e transformou a política mundial. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+      },
+      {
+        "key": "B",
+        "text": "Todos os combates ocorreram somente em trincheiras na França."
+      },
+      {
+        "key": "C",
+        "text": "Frentes de trincheiras, artilharia, metralhadoras, gases e mobilização industrial marcaram o conflito."
+      },
+      {
+        "key": "D",
+        "text": "O conflito não alterou fronteiras políticas."
+      },
+      {
+        "key": "E",
+        "text": "Tratado de Versalhes encerrou definitivamente tensões europeias."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Frentes de trincheiras, artilharia, metralhadoras, gases e mobilização industrial marcaram o conflito.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-43-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-43-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Primeira Guerra Mundial por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A guerra provocou milhões de mortes, queda de impérios e criação de novos Estados."
+      },
+      {
+        "key": "B",
+        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+      },
+      {
+        "key": "C",
+        "text": "Todos os combates ocorreram somente em trincheiras na França."
+      },
+      {
+        "key": "D",
+        "text": "O conflito não alterou fronteiras políticas."
+      },
+      {
+        "key": "E",
+        "text": "Tratado de Versalhes encerrou definitivamente tensões europeias."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A guerra provocou milhões de mortes, queda de impérios e criação de novos Estados.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-43-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-43-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Rivalidades imperialistas, nacionalismos, corrida armamentista e sistemas de alianças contribuíram para a crise que levou à guerra em 1914.\nII. A guerra ocorreu apenas por causa do assassinato em Sarajevo.\nIII. Frentes de trincheiras, artilharia, metralhadoras, gases e mobilização industrial marcaram o conflito.\nIV. Todos os combates ocorreram somente em trincheiras na França.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-43-CON-01",
+      "GH-43-CON-02",
+      "GH-43-CON-03",
+      "GH-43-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-43-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Primeira Guerra Mundial. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+      },
+      {
+        "key": "B",
+        "text": "Todos os combates ocorreram somente em trincheiras na França."
+      },
+      {
+        "key": "C",
+        "text": "O conflito não alterou fronteiras políticas."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Separar causas estruturais, estopim e consequências ao interpretar uma cronologia."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Separar causas estruturais, estopim e consequências ao interpretar uma cronologia.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-43-CON-01",
+      "GH-43-CON-02",
+      "GH-43-CON-03",
+      "GH-43-CON-04",
+      "GH-43-CON-05",
+      "GH-43-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-43-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Primeira Guerra Mundial?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rivalidades imperialistas, nacionalismos, corrida armamentista e sistemas de alianças contribuíram para a crise que levou à guerra em 1914."
+      },
+      {
+        "key": "B",
+        "text": "O assassinato do arquiduque Francisco Ferdinando foi o estopim, não a única causa da guerra."
+      },
+      {
+        "key": "C",
+        "text": "O Tratado de Versalhes impôs condições duras à Alemanha e contribuiu para tensões do período entre-guerras."
+      },
+      {
+        "key": "D",
+        "text": "O conflito não alterou fronteiras políticas."
+      },
+      {
+        "key": "E",
+        "text": "A guerra provocou milhões de mortes, queda de impérios e criação de novos Estados."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-43-CON-01",
+      "GH-43-CON-02",
+      "GH-43-CON-03",
+      "GH-43-CON-04",
+      "GH-43-CON-05",
+      "GH-43-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-43-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Primeira Guerra Mundial, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+      },
+      {
+        "key": "B",
+        "text": "Todos os combates ocorreram somente em trincheiras na França."
+      },
+      {
+        "key": "C",
+        "text": "O Tratado de Versalhes impôs condições duras à Alemanha e contribuiu para tensões do período entre-guerras."
+      },
+      {
+        "key": "D",
+        "text": "O conflito não alterou fronteiras políticas."
+      },
+      {
+        "key": "E",
+        "text": "Tratado de Versalhes encerrou definitivamente tensões europeias."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "O Tratado de Versalhes impôs condições duras à Alemanha e contribuiu para tensões do período entre-guerras.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-43-CON-01",
+      "GH-43-CON-02",
+      "GH-43-CON-03",
+      "GH-43-CON-04",
+      "GH-43-CON-05",
+      "GH-43-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

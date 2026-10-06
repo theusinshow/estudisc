@@ -122,7 +122,7 @@ describe("export contracts", () => {
     });
 
     expect(payload).toMatchObject({
-      schema: "know-os.export.v1",
+      schema: "estudisc.export.v1",
       kind: "teacher_context",
       exportedAt: "2026-07-30T12:00:00.000Z",
       privacy: {

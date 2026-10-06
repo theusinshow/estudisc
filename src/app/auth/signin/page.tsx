@@ -49,7 +49,7 @@ function getErrorMessage(error: string | undefined) {
   }
 
   if (error === "AccessDenied") {
-    return "Esta conta Google não está autorizada para este Vecta.";
+    return "Esta conta Google não está autorizada para este Estudisc.";
   }
 
   if (error === "OAuthSignin" || error === "OAuthCallback") {

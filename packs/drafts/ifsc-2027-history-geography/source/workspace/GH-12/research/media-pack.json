@@ -1,0 +1,39 @@
+{
+  "lessonId": "GH-12",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-021",
+      "title": "Povos indígenas no Brasil",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-povos-indigenas-no-brasil/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-022",
+      "title": "Terras Indígenas: Dados Geoespaciais e Mapas",
+      "org": "FUNAI",
+      "type": "OFFICIAL_DATA_MAPS",
+      "url": "https://www.gov.br/funai/pt-br/atuacao/terras-indigenas/geoprocessamento-e-mapas",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-12-001",
+    "lessonId": "GH-12",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo e mapa de formação territorial do Brasil, sem sugerir fronteiras atuais para 1500.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

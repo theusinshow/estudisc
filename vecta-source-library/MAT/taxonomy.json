@@ -1,0 +1,1640 @@
+{
+  "subject": "MAT",
+  "sourceScopeVerified": false,
+  "lessons": [
+    {
+      "subject": "MAT",
+      "id": "MAT-01",
+      "topic": "Numbers and operations",
+      "conceptIds": [
+        "MAT.NUM.NATURAL.INTEGER",
+        "MAT.NUM.OPERATIONS",
+        "MAT.NUM.ORDER",
+        "MAT.NUM.REAL.PROPERTIES",
+        "MAT.NUM.EXPRESSIONS"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-02",
+      "topic": "Divisibility, primes, MMC and MDC",
+      "conceptIds": [
+        "MAT.DIV.DIVISIBILITY",
+        "MAT.DIV.PRIME",
+        "MAT.DIV.FACTORIZATION",
+        "MAT.DIV.MMC",
+        "MAT.DIV.MDC",
+        "MAT.DIV.MODEL"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-03",
+      "topic": "Fractions",
+      "conceptIds": [
+        "MAT.FRACTION.MEANING",
+        "MAT.FRACTION.EQUIVALENCE",
+        "MAT.FRACTION.SIMPLIFY",
+        "MAT.FRACTION.COMPARE",
+        "MAT.FRACTION.OPERATIONS",
+        "MAT.FRACTION.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-04",
+      "topic": "Decimals and scientific notation",
+      "conceptIds": [
+        "MAT.DECIMAL.MEANING",
+        "MAT.DECIMAL.OPERATIONS",
+        "MAT.FRACTION.DECIMAL.CONVERT",
+        "MAT.SCI.NOTATION.READ",
+        "MAT.SCI.NOTATION.CONVERT",
+        "MAT.SCI.NOTATION.OPERATE"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-05",
+      "topic": "Ratio and proportion",
+      "conceptIds": [
+        "MAT.RATIO.CONCEPT",
+        "MAT.RATIO.INTERPRET",
+        "MAT.PROPORTION.CONCEPT",
+        "MAT.PROPORTION.EQUIVALENT",
+        "MAT.PROPORTION.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-06",
+      "topic": "Rule of three",
+      "conceptIds": [
+        "MAT.RULE3.DIRECT",
+        "MAT.RULE3.INVERSE",
+        "MAT.RULE3.IDENTIFY",
+        "MAT.RULE3.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-07",
+      "topic": "Percentage",
+      "conceptIds": [
+        "MAT.PCT.CONCEPT",
+        "MAT.PCT.CONVERT",
+        "MAT.PCT.CALCULATE",
+        "MAT.PCT.DISCOUNT",
+        "MAT.PCT.INCREASE",
+        "MAT.PCT.INTERPRET"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-08",
+      "topic": "Percentage applications and interest",
+      "conceptIds": [
+        "MAT.PCT.SUCCESSIVE",
+        "MAT.PCT.REVERSE",
+        "MAT.INTEREST.CONCEPT",
+        "MAT.INTEREST.SIMPLE",
+        "MAT.INTEREST.INTERPRET"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-09",
+      "topic": "Powers, radicals and expressions",
+      "conceptIds": [
+        "MAT.POWER.CONCEPT",
+        "MAT.POWER.PROPERTIES",
+        "MAT.RADICAL.CONCEPT",
+        "MAT.RADICAL.SIMPLIFY",
+        "MAT.EXPR.ORDER",
+        "MAT.EXPR.MIXED"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-10",
+      "topic": "Inequalities and intervals",
+      "conceptIds": [
+        "MAT.INEQ.COMPARE",
+        "MAT.INEQ.SOLVE",
+        "MAT.INTERVAL.READ",
+        "MAT.INTERVAL.REPRESENT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-11",
+      "topic": "Algebraic expressions and monomials",
+      "conceptIds": [
+        "MAT.ALG.EXPRESSION",
+        "MAT.ALG.SUBSTITUTE",
+        "MAT.ALG.SIMPLIFY",
+        "MAT.MONOMIAL.CONCEPT",
+        "MAT.MONOMIAL.DEGREE",
+        "MAT.MONOMIAL.OPERATIONS"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-12",
+      "topic": "Polynomials, notable products and factorization",
+      "conceptIds": [
+        "MAT.POLY.CONCEPT",
+        "MAT.POLY.DEGREE",
+        "MAT.POLY.OPERATIONS",
+        "MAT.NOTABLE.PRODUCTS",
+        "MAT.FACTOR.COMMON",
+        "MAT.FACTOR.PATTERNS",
+        "MAT.FACTOR.INTERPRET"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-13",
+      "topic": "First-degree equations",
+      "conceptIds": [
+        "MAT.EQ1.CONCEPT",
+        "MAT.EQ1.SOLVE",
+        "MAT.EQ1.CHECK",
+        "MAT.EQ1.MODEL",
+        "MAT.EQ1.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-14",
+      "topic": "Systems of equations",
+      "conceptIds": [
+        "MAT.SYSTEM.CONCEPT",
+        "MAT.SYSTEM.SUBSTITUTION",
+        "MAT.SYSTEM.ELIMINATION",
+        "MAT.SYSTEM.INTERPRET",
+        "MAT.SYSTEM.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-15",
+      "topic": "Second-degree equations",
+      "conceptIds": [
+        "MAT.EQ2.CONCEPT",
+        "MAT.EQ2.FACTOR",
+        "MAT.EQ2.FORMULA",
+        "MAT.EQ2.ROOTS",
+        "MAT.EQ2.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-16",
+      "topic": "Units, perimeter and area",
+      "conceptIds": [
+        "MAT.MEASURE.LENGTH",
+        "MAT.MEASURE.AREA",
+        "MAT.MEASURE.CAPACITY",
+        "MAT.MEASURE.TIME",
+        "MAT.MEASURE.CONVERT",
+        "MAT.GEO.ANGLES",
+        "MAT.GEO.PERIMETER",
+        "MAT.GEO.AREA.RECTANGLE",
+        "MAT.GEO.AREA.TRIANGLE",
+        "MAT.GEO.AREA.OTHER_PLANAR",
+        "MAT.GEO.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-17",
+      "topic": "Volumes and right-triangle relations",
+      "conceptIds": [
+        "MAT.VOLUME.CUBE",
+        "MAT.VOLUME.PRISM",
+        "MAT.VOLUME.CYLINDER",
+        "MAT.VOLUME.UNITS",
+        "MAT.RIGHTTRI.PYTHAGORAS",
+        "MAT.RIGHTTRI.METRIC",
+        "MAT.RIGHTTRI.CONTEXT"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-18",
+      "topic": "Tables, graphs, probability and counting",
+      "conceptIds": [
+        "MAT.DATA.TABLE.READ",
+        "MAT.DATA.GRAPH.READ",
+        "MAT.DATA.GRAPH.COMPARE",
+        "MAT.DATA.INFER",
+        "MAT.PROB.FREQUENCY",
+        "MAT.PROB.ESTIMATE",
+        "MAT.COUNT.MULTIPLICATIVE"
+      ]
+    },
+    {
+      "subject": "MAT",
+      "id": "MAT-PREREQ",
+      "topic": "Frações, decimais e razões — preparação",
+      "conceptIds": [
+        "MAT.FRACTION.MEANING",
+        "MAT.DECIMAL.MEANING",
+        "MAT.PROPORTION.CONCEPT"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "MAT.ALG.EXPRESSION",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.ALG.SIMPLIFY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.ALG.SUBSTITUTE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.COUNT.MULTIPLICATIVE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DATA.GRAPH.COMPARE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DATA.GRAPH.READ",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DATA.INFER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DATA.TABLE.READ",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DECIMAL.MEANING",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04",
+        "MAT-PREREQ"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.DECIMAL.OPERATIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.DIVISIBILITY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.FACTORIZATION",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.MDC",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.MMC",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.MODEL",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.DIV.PRIME",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ1.CHECK",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ1.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ1.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ1.MODEL",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ1.SOLVE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ2.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ2.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ2.FACTOR",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ2.FORMULA",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EQ2.ROOTS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EXPR.MIXED",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.EXPR.ORDER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FACTOR.COMMON",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FACTOR.INTERPRET",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FACTOR.PATTERNS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.COMPARE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.DECIMAL.CONVERT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.EQUIVALENCE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.MEANING",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03",
+        "MAT-PREREQ"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.FRACTION.OPERATIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.FRACTION.SIMPLIFY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.ANGLES",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.AREA.OTHER_PLANAR",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.AREA.RECTANGLE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.AREA.TRIANGLE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.GEO.PERIMETER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INEQ.COMPARE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INEQ.SOLVE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INTEREST.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INTEREST.INTERPRET",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INTEREST.SIMPLE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INTERVAL.READ",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.INTERVAL.REPRESENT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MEASURE.AREA",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MEASURE.CAPACITY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MEASURE.CONVERT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MEASURE.LENGTH",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MEASURE.TIME",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MONOMIAL.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MONOMIAL.DEGREE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.MONOMIAL.OPERATIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NOTABLE.PRODUCTS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NUM.EXPRESSIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NUM.NATURAL.INTEGER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NUM.OPERATIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NUM.ORDER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.NUM.REAL.PROPERTIES",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PCT.CALCULATE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.CONVERT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.DISCOUNT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.INCREASE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.INTERPRET",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PCT.REVERSE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PCT.SUCCESSIVE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.POLY.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.POLY.DEGREE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.POLY.OPERATIONS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.POWER.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.POWER.PROPERTIES",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PROB.ESTIMATE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PROB.FREQUENCY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PROPORTION.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-05",
+        "MAT-PREREQ"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "MAT.PROPORTION.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.PROPORTION.EQUIVALENT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RADICAL.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RADICAL.SIMPLIFY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RATIO.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RATIO.INTERPRET",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RIGHTTRI.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RIGHTTRI.METRIC",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RIGHTTRI.PYTHAGORAS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RULE3.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RULE3.DIRECT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RULE3.IDENTIFY",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.RULE3.INVERSE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SCI.NOTATION.CONVERT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SCI.NOTATION.OPERATE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SCI.NOTATION.READ",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SYSTEM.CONCEPT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SYSTEM.CONTEXT",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SYSTEM.ELIMINATION",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SYSTEM.INTERPRET",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.SYSTEM.SUBSTITUTION",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.VOLUME.CUBE",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.VOLUME.CYLINDER",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.VOLUME.PRISM",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "MAT.VOLUME.UNITS",
+      "subjects": [
+        "MAT"
+      ],
+      "lessonIds": [
+        "MAT-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/MATHEMATICS.md"
+      ],
+      "seedPresent": false
+    }
+  ]
+}

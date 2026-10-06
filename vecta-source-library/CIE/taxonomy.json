@@ -1,0 +1,1758 @@
+{
+  "subject": "CIE",
+  "sourceScopeVerified": false,
+  "lessons": [
+    {
+      "subject": "CIE",
+      "id": "CIE-01",
+      "topic": "Motion and simple machines",
+      "conceptIds": [
+        "CIE.MECH.MOTION",
+        "CIE.MECH.SPEED_BASIC",
+        "CIE.MECH.SIMPLE_MACHINES",
+        "CIE.MECH.APPLICATION"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-02",
+      "topic": "Energy and transformations",
+      "conceptIds": [
+        "CIE.ENERGY.SOURCES",
+        "CIE.ENERGY.TYPES",
+        "CIE.ENERGY.TRANSFORMATION",
+        "CIE.ENERGY.CONSERVATION",
+        "CIE.ENERGY.CONTEXT"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-03",
+      "topic": "Heat and thermodynamics",
+      "conceptIds": [
+        "CIE.HEAT.TEMPERATURE",
+        "CIE.HEAT.TRANSFER.CONDUCTION",
+        "CIE.HEAT.TRANSFER.CONVECTION",
+        "CIE.HEAT.TRANSFER.RADIATION",
+        "CIE.HEAT.EQUILIBRIUM",
+        "CIE.HEAT.THERMAL_MACHINES"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-04",
+      "topic": "Electricity and circuits",
+      "conceptIds": [
+        "CIE.ELEC.CIRCUIT",
+        "CIE.ELEC.COMPONENTS",
+        "CIE.ELEC.ENERGY_CONSUMPTION",
+        "CIE.ELEC.CONSCIOUS_USE",
+        "CIE.ELEC.INTERPRET"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-05",
+      "topic": "Matter and physical states",
+      "conceptIds": [
+        "CIE.MATTER.GENERAL_PROPERTIES",
+        "CIE.MATTER.SPECIFIC_PROPERTIES",
+        "CIE.MATTER.STATES",
+        "CIE.MATTER.STATE_CHANGE",
+        "CIE.MATTER.PHYSICAL_CHANGE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-06",
+      "topic": "Atomic structure",
+      "conceptIds": [
+        "CIE.ATOM.MODELS",
+        "CIE.ATOM.PARTICLES",
+        "CIE.ATOM.CHARGE",
+        "CIE.ATOM.STRUCTURE",
+        "CIE.ATOM.Z",
+        "CIE.ATOM.A",
+        "CIE.ATOM.MASS",
+        "CIE.ATOM.ION"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-07",
+      "topic": "Periodic table, elements, molecules and substances",
+      "conceptIds": [
+        "CIE.PERIODIC.ORGANIZATION",
+        "CIE.PERIODIC.INTERPRET",
+        "CIE.ELEMENT.CONCEPT",
+        "CIE.MOLECULE.CONCEPT",
+        "CIE.SUBSTANCE.CONCEPT",
+        "CIE.SUBSTANCE.PURE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-08",
+      "topic": "Mixtures and separation",
+      "conceptIds": [
+        "CIE.MIXTURE.CONCEPT",
+        "CIE.MIXTURE.HOMOGENEOUS",
+        "CIE.MIXTURE.HETEROGENEOUS",
+        "CIE.MIXTURE.PHASES_COMPONENTS",
+        "CIE.MIXTURE.SEPARATION",
+        "CIE.MIXTURE.MISCIBLE_IMMISCIBLE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-09",
+      "topic": "Chemical transformations and reactions",
+      "conceptIds": [
+        "CIE.CHEM.TRANSFORMATION_EVIDENCE",
+        "CIE.CHEM.REACTION",
+        "CIE.CHEM.REACTANTS_PRODUCTS",
+        "CIE.CHEM.CONTEXT"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-10",
+      "topic": "Cells",
+      "conceptIds": [
+        "CIE.CELL.THEORY",
+        "CIE.CELL.PROKARYOTIC",
+        "CIE.CELL.EUKARYOTIC",
+        "CIE.CELL.STRUCTURES",
+        "CIE.CELL.COMPARE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-11",
+      "topic": "Metabolism, DNA, genes and chromosomes",
+      "conceptIds": [
+        "CIE.CELL.BIOCHEMISTRY_BASIC",
+        "CIE.CELL.METABOLISM_BASIC",
+        "CIE.GENETICS.DNA",
+        "CIE.GENETICS.GENE",
+        "CIE.GENETICS.CHROMOSOME",
+        "CIE.GENETICS.RELATION"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-12",
+      "topic": "Mitosis, meiosis and gametogenesis",
+      "conceptIds": [
+        "CIE.DIVISION.MITOSIS",
+        "CIE.DIVISION.MEIOSIS",
+        "CIE.DIVISION.COMPARE",
+        "CIE.REPRO.GAMETOGENESIS"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-13",
+      "topic": "Ecology and ecosystems",
+      "conceptIds": [
+        "CIE.ECO.ECOSYSTEM",
+        "CIE.ECO.BIOTIC_ABIOTIC",
+        "CIE.ECO.BRAZILIAN_ECOSYSTEMS",
+        "CIE.ECO.RELATIONS",
+        "CIE.ECO.INTERPRET"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-14",
+      "topic": "Biodiversity, environment and sustainability",
+      "conceptIds": [
+        "CIE.ENV.SUSTAINABILITY",
+        "CIE.ENV.POLLUTION",
+        "CIE.ENV.GREENHOUSE_EFFECT",
+        "CIE.ENV.GLOBAL_WARMING",
+        "CIE.ENV.OZONE",
+        "CIE.ENV.BIODIVERSITY_THREATS",
+        "CIE.ENV.CONSERVATION_PRESERVATION",
+        "CIE.ENV.INDIGENOUS_QUILOMBOLA",
+        "CIE.ENV.ENERGY_SOURCES"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-15",
+      "topic": "Genetics and biotechnology",
+      "conceptIds": [
+        "CIE.GEN.MENDEL",
+        "CIE.GEN.FIRST_LAW",
+        "CIE.GEN.ALLELIC_INTERACTIONS",
+        "CIE.BIOTECH.APPLICATION",
+        "CIE.BIOTECH.ETHICS",
+        "CIE.BIOTECH.SOCIOENVIRONMENTAL"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-16",
+      "topic": "Diversity of living beings",
+      "conceptIds": [
+        "CIE.LIFE.ANIMALS",
+        "CIE.LIFE.PLANTS",
+        "CIE.LIFE.FUNGI",
+        "CIE.LIFE.MICROORGANISMS",
+        "CIE.LIFE.CLASSIFICATION",
+        "CIE.LIFE.IMPORTANCE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-17",
+      "topic": "Human body and systems",
+      "conceptIds": [
+        "CIE.HUMAN.ORGANIZATION",
+        "CIE.HUMAN.SYSTEMS",
+        "CIE.HUMAN.STRUCTURE_FUNCTION",
+        "CIE.HUMAN.SYSTEM_DISEASE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-18",
+      "topic": "Health, vaccines, senses and psychoactive substances",
+      "conceptIds": [
+        "CIE.HEALTH.VACCINE_MECHANISM",
+        "CIE.HEALTH.DISEASE_PREVENTION",
+        "CIE.HEALTH.PSYCHOACTIVE_EFFECTS",
+        "CIE.SENSES.ORGANS",
+        "CIE.SENSES.VISION",
+        "CIE.SENSES.VISION_CONDITIONS"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-19",
+      "topic": "Reproduction, contraception and STIs",
+      "conceptIds": [
+        "CIE.REPRO.MENSTRUAL_CYCLE",
+        "CIE.REPRO.FERTILIZATION",
+        "CIE.REPRO.CONTRACEPTION",
+        "CIE.REPRO.STI"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-20",
+      "topic": "Biological evolution",
+      "conceptIds": [
+        "CIE.EVOL.LAMARCK",
+        "CIE.EVOL.DARWIN",
+        "CIE.EVOL.SYNTHETIC_THEORY",
+        "CIE.EVOL.FACTORS",
+        "CIE.EVOL.FOSSILS",
+        "CIE.EVOL.ORIGIN_OF_LIFE"
+      ]
+    },
+    {
+      "subject": "CIE",
+      "id": "CIE-21",
+      "topic": "Astronomy",
+      "conceptIds": [
+        "CIE.ASTRO.SOLAR_SYSTEM",
+        "CIE.ASTRO.EARTH_MOON",
+        "CIE.ASTRO.ORDER_MAGNITUDE",
+        "CIE.ASTRO.STELLAR_EVOLUTION"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "CIE.ASTRO.EARTH_MOON",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-21"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ASTRO.ORDER_MAGNITUDE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-21"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ASTRO.SOLAR_SYSTEM",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-21"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ASTRO.STELLAR_EVOLUTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-21"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ATOM.A",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.CHARGE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.ION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.MASS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ATOM.MODELS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.PARTICLES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.STRUCTURE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.ATOM.Z",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "CIE.BIOTECH.APPLICATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.BIOTECH.ETHICS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.BIOTECH.SOCIOENVIRONMENTAL",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.BIOCHEMISTRY_BASIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.COMPARE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.EUKARYOTIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.METABOLISM_BASIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.PROKARYOTIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.STRUCTURES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CELL.THEORY",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CHEM.CONTEXT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CHEM.REACTANTS_PRODUCTS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CHEM.REACTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.CHEM.TRANSFORMATION_EVIDENCE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.DIVISION.COMPARE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.DIVISION.MEIOSIS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.DIVISION.MITOSIS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ECO.BIOTIC_ABIOTIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ECO.BRAZILIAN_ECOSYSTEMS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ECO.ECOSYSTEM",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ECO.INTERPRET",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ECO.RELATIONS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-13"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEC.CIRCUIT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEC.COMPONENTS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEC.CONSCIOUS_USE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEC.ENERGY_CONSUMPTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEC.INTERPRET",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ELEMENT.CONCEPT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENERGY.CONSERVATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENERGY.CONTEXT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENERGY.SOURCES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENERGY.TRANSFORMATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENERGY.TYPES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.BIODIVERSITY_THREATS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.CONSERVATION_PRESERVATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.ENERGY_SOURCES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.GLOBAL_WARMING",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.GREENHOUSE_EFFECT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.INDIGENOUS_QUILOMBOLA",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.OZONE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.POLLUTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.ENV.SUSTAINABILITY",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-14"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.DARWIN",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.FACTORS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.FOSSILS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.LAMARCK",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.ORIGIN_OF_LIFE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.EVOL.SYNTHETIC_THEORY",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-20"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GEN.ALLELIC_INTERACTIONS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GEN.FIRST_LAW",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GEN.MENDEL",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-15"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GENETICS.CHROMOSOME",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GENETICS.DNA",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GENETICS.GENE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.GENETICS.RELATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-11"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEALTH.DISEASE_PREVENTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEALTH.PSYCHOACTIVE_EFFECTS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEALTH.VACCINE_MECHANISM",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.EQUILIBRIUM",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.TEMPERATURE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.THERMAL_MACHINES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.TRANSFER.CONDUCTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.TRANSFER.CONVECTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HEAT.TRANSFER.RADIATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HUMAN.ORGANIZATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HUMAN.STRUCTURE_FUNCTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HUMAN.SYSTEM_DISEASE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.HUMAN.SYSTEMS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-17"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.ANIMALS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.CLASSIFICATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.FUNGI",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.IMPORTANCE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.MICROORGANISMS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.LIFE.PLANTS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-16"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MATTER.GENERAL_PROPERTIES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MATTER.PHYSICAL_CHANGE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MATTER.SPECIFIC_PROPERTIES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MATTER.STATE_CHANGE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MATTER.STATES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MECH.APPLICATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MECH.MOTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MECH.SIMPLE_MACHINES",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MECH.SPEED_BASIC",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.CONCEPT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.HETEROGENEOUS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.HOMOGENEOUS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.MISCIBLE_IMMISCIBLE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.PHASES_COMPONENTS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MIXTURE.SEPARATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.MOLECULE.CONCEPT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.PERIODIC.INTERPRET",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.PERIODIC.ORGANIZATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.REPRO.CONTRACEPTION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-19"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.REPRO.FERTILIZATION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-19"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.REPRO.GAMETOGENESIS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-12"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.REPRO.MENSTRUAL_CYCLE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-19"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.REPRO.STI",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-19"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.SENSES.ORGANS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.SENSES.VISION",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.SENSES.VISION_CONDITIONS",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-18"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.SUBSTANCE.CONCEPT",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "CIE.SUBSTANCE.PURE",
+      "subjects": [
+        "CIE"
+      ],
+      "lessonIds": [
+        "CIE-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/SCIENCE.md"
+      ],
+      "seedPresent": false
+    }
+  ]
+}

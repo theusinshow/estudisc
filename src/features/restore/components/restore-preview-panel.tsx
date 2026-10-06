@@ -4,13 +4,13 @@ import { useId, useState } from "react";
 
 type RestorePreview = Readonly<{
   status: "ready";
-  schema: "know-os.restore-preview.v1";
+  schema: "estudisc.restore-preview.v1";
   sourceExportedAt: string;
   applicationMode: "non_destructive_plan";
   categories: readonly { id: string; label: string; count: number; private: boolean }[];
   warnings: readonly string[];
   userStatePlan: {
-    schema: "know-os.user-state-restore-dry-run.v1";
+    schema: "estudisc.user-state-restore-dry-run.v1";
     mode: "user_state_dry_run";
     sourceExportFingerprint: string;
     applyEnabled: false;
@@ -123,7 +123,7 @@ export function RestorePreviewPanel() {
           setError(null);
           setMessage(event.target.value.trim() ? "Backup carregado. Execute o preview." : "Nenhum Backup carregado.");
         }}
-        placeholder={'{\n  "schema": "know-os.export.v1",\n  "kind": "backup"\n}'}
+        placeholder={'{\n  "schema": "estudisc.export.v1",\n  "kind": "backup"\n}'}
       />
 
       <div className="activity-actions">

@@ -1,0 +1,510 @@
+{
+  "lesson": {
+    "id": "POR-05",
+    "subject": "POR",
+    "title": "Convenções da escrita: ortografia, acentuação e pontuação com sentido",
+    "module": "Gramática em contexto",
+    "priority": "P1",
+    "status": "IMPORT_READY",
+    "estimatedMinutes": 22,
+    "masteryTarget": "Reconhecer convenções ortográficas e usar pontuação como estrutura e recurso de sentido.",
+    "sourceRefs": [
+      "POR-SRC-001",
+      "POR-SRC-003",
+      "POR-SRC-009",
+      "POR-SRC-011"
+    ],
+    "conceptRefs": [
+      "POR-05-C01",
+      "POR-05-C02",
+      "POR-05-C03",
+      "POR-05-C04",
+      "POR-05-C05",
+      "POR-05-C06"
+    ],
+    "blocks": [
+      {
+        "type": "HOOK",
+        "title": "Leia como a prova lê",
+        "content": "Em “Não, espere.” a vírgula separa a negação do comando. Em “Não espere.” a orientação muda."
+      },
+      {
+        "type": "LEARNING_GOALS",
+        "items": [
+          "Reconhecer convenções ortográficas e usar pontuação como estrutura e recurso de sentido.",
+          "Justificar respostas com evidência linguística ou textual.",
+          "Evitar regras absolutas quando o fenômeno depende do contexto."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 1",
+        "paragraphs": [
+          "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável.",
+          "A acentuação gráfica segue regras convencionais e não corresponde simplesmente à intensidade percebida na fala.",
+          "A vírgula organiza estruturas sintáticas e não deve ser explicada apenas como pausa para respirar."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 2",
+        "paragraphs": [
+          "Dois-pontos podem anunciar explicação, enumeração, fala ou consequência explicitada.",
+          "Reticências, exclamação, interrogação, aspas e travessões podem produzir hesitação, ênfase, dúvida, distanciamento ou marcação de voz.",
+          "Mudanças de pontuação podem alterar relação sintática e sentido."
+        ]
+      },
+      {
+        "type": "KEY_TERMS",
+        "items": [
+          {
+            "term": "ortografia",
+            "conceptRef": "POR-05-C01"
+          },
+          {
+            "term": "acentuação",
+            "conceptRef": "POR-05-C02"
+          },
+          {
+            "term": "pontuação",
+            "conceptRef": "POR-05-C03"
+          },
+          {
+            "term": "aspas",
+            "conceptRef": "POR-05-C04"
+          },
+          {
+            "term": "travessão",
+            "conceptRef": "POR-05-C05"
+          },
+          {
+            "term": "reticências",
+            "conceptRef": "POR-05-C06"
+          }
+        ]
+      },
+      {
+        "type": "MISCONCEPTION_CHECK",
+        "items": [
+          {
+            "claim": "Usa-se vírgula sempre que há pausa na fala.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Toda palavra pronunciada com força recebe acento.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Reticências sempre significam tristeza.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "A ortografia pode ser decidida apenas pela pronúncia.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          }
+        ]
+      },
+      {
+        "type": "WORKED_EXAMPLE",
+        "stimulus": "Em “Não, espere.” a vírgula separa a negação do comando. Em “Não espere.” a orientação muda.",
+        "analysis": "A pontuação altera a estrutura e o comando comunicado; não é mero enfeite."
+      },
+      {
+        "type": "ACTIVE_LEARNING",
+        "title": "Atividade de aplicação",
+        "steps": [
+          "Compare pares cuja pontuação muda o sentido.",
+          "Explique a função do sinal sem usar apenas “pausa”.",
+          "Consulte no VOLP cinco grafias que geram dúvida."
+        ],
+        "evidence": "Resposta curta ou classificação justificada."
+      },
+      {
+        "type": "IFSC_STRATEGY",
+        "content": "Pergunte o que o sinal organiza/destaca e qual efeito produz no trecho."
+      },
+      {
+        "type": "SUMMARY",
+        "items": [
+          "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável.",
+          "A acentuação gráfica segue regras convencionais e não corresponde simplesmente à intensidade percebida na fala.",
+          "A vírgula organiza estruturas sintáticas e não deve ser explicada apenas como pausa para respirar.",
+          "Dois-pontos podem anunciar explicação, enumeração, fala ou consequência explicitada.",
+          "Reticências, exclamação, interrogação, aspas e travessões podem produzir hesitação, ênfase, dúvida, distanciamento ou marcação de voz.",
+          "Mudanças de pontuação podem alterar relação sintática e sentido."
+        ]
+      },
+      {
+        "type": "EXIT_TICKET",
+        "prompt": "Explique o princípio mais importante de Convenções da escrita: ortografia, acentuação e pontuação com sentido e crie um exemplo próprio."
+      }
+    ],
+    "media": {
+      "deterministicAssetRefs": [],
+      "antigravityRefs": [],
+      "authenticMediaRefs": []
+    }
+  },
+  "questions": [
+    {
+      "id": "POR-05-Q01",
+      "lessonId": "POR-05",
+      "type": "MCQ",
+      "stem": "Qual afirmação descreve corretamente Convenções da escrita: ortografia, acentuação e pontuação com sentido em uso real da língua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Toda palavra pronunciada com força recebe acento."
+        },
+        {
+          "id": "B",
+          "text": "Reticências sempre significam tristeza."
+        },
+        {
+          "id": "C",
+          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+        },
+        {
+          "id": "D",
+          "text": "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável."
+        },
+        {
+          "id": "E",
+          "text": "Usa-se vírgula sempre que há pausa na fala."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
+      "concepts": [
+        "POR-05-C01"
+      ],
+      "targetedError": "Usa-se vírgula sempre que há pausa na fala.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-05-Q02",
+      "lessonId": "POR-05",
+      "type": "MCQ",
+      "stem": "Em uma questão contextualizada sobre Convenções da escrita: ortografia, acentuação e pontuação com sentido, qual princípio deve orientar a análise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A acentuação gráfica segue regras convencionais e não corresponde simplesmente à intensidade percebida na fala."
+        },
+        {
+          "id": "B",
+          "text": "Reticências sempre significam tristeza."
+        },
+        {
+          "id": "C",
+          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+        },
+        {
+          "id": "D",
+          "text": "Usa-se vírgula sempre que há pausa na fala."
+        },
+        {
+          "id": "E",
+          "text": "Toda palavra pronunciada com força recebe acento."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A acentuação gráfica segue regras convencionais e não corresponde simplesmente à intensidade percebida na fala.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
+      "concepts": [
+        "POR-05-C02"
+      ],
+      "targetedError": "Toda palavra pronunciada com força recebe acento.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-05-Q03",
+      "lessonId": "POR-05",
+      "type": "MCQ",
+      "stem": "Qual alternativa evita uma generalização inadequada sobre Convenções da escrita: ortografia, acentuação e pontuação com sentido?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+        },
+        {
+          "id": "B",
+          "text": "Usa-se vírgula sempre que há pausa na fala."
+        },
+        {
+          "id": "C",
+          "text": "A vírgula organiza estruturas sintáticas e não deve ser explicada apenas como pausa para respirar."
+        },
+        {
+          "id": "D",
+          "text": "Toda palavra pronunciada com força recebe acento."
+        },
+        {
+          "id": "E",
+          "text": "Reticências sempre significam tristeza."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A vírgula organiza estruturas sintáticas e não deve ser explicada apenas como pausa para respirar.",
+      "difficulty": "applied",
+      "cognitiveOperation": "discriminate",
+      "concepts": [
+        "POR-05-C03"
+      ],
+      "targetedError": "Reticências sempre significam tristeza.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-05-Q04",
+      "lessonId": "POR-05",
+      "type": "MCQ",
+      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Convenções da escrita: ortografia, acentuação e pontuação com sentido?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Usa-se vírgula sempre que há pausa na fala."
+        },
+        {
+          "id": "B",
+          "text": "Toda palavra pronunciada com força recebe acento."
+        },
+        {
+          "id": "C",
+          "text": "Reticências sempre significam tristeza."
+        },
+        {
+          "id": "D",
+          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+        },
+        {
+          "id": "E",
+          "text": "Dois-pontos podem anunciar explicação, enumeração, fala ou consequência explicitada."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Dois-pontos podem anunciar explicação, enumeração, fala ou consequência explicitada.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-05-C04"
+      ],
+      "targetedError": "A ortografia pode ser decidida apenas pela pronúncia.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-05-Q05",
+      "lessonId": "POR-05",
+      "type": "MCQ",
+      "stem": "Qual critério é seguro para resolver uma questão sobre Convenções da escrita: ortografia, acentuação e pontuação com sentido?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Toda palavra pronunciada com força recebe acento."
+        },
+        {
+          "id": "B",
+          "text": "Reticências, exclamação, interrogação, aspas e travessões podem produzir hesitação, ênfase, dúvida, distanciamento ou marcação de voz."
+        },
+        {
+          "id": "C",
+          "text": "Reticências sempre significam tristeza."
+        },
+        {
+          "id": "D",
+          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+        },
+        {
+          "id": "E",
+          "text": "Usa-se vírgula sempre que há pausa na fala."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Reticências, exclamação, interrogação, aspas e travessões podem produzir hesitação, ênfase, dúvida, distanciamento ou marcação de voz.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
+      "concepts": [
+        "POR-05-C05"
+      ],
+      "targetedError": "Usa-se vírgula sempre que há pausa na fala.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-05-Q06",
+      "lessonId": "POR-05",
+      "type": "MCQ",
+      "stem": "Ao comparar alternativas sobre Convenções da escrita: ortografia, acentuação e pontuação com sentido, qual análise está correta?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reticências sempre significam tristeza."
+        },
+        {
+          "id": "B",
+          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+        },
+        {
+          "id": "C",
+          "text": "Usa-se vírgula sempre que há pausa na fala."
+        },
+        {
+          "id": "D",
+          "text": "Mudanças de pontuação podem alterar relação sintática e sentido."
+        },
+        {
+          "id": "E",
+          "text": "Toda palavra pronunciada com força recebe acento."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Mudanças de pontuação podem alterar relação sintática e sentido.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-05-C06"
+      ],
+      "targetedError": "Toda palavra pronunciada com força recebe acento.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-05-Q07",
+      "lessonId": "POR-05",
+      "type": "MCQ",
+      "stem": "Um estudante afirma: “Usa-se vírgula sempre que há pausa na fala.”. Qual é a melhor correção?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+        },
+        {
+          "id": "B",
+          "text": "A generalização deve ser aceita sem verificar contexto."
+        },
+        {
+          "id": "C",
+          "text": "A melhor estratégia é decorar a frase."
+        },
+        {
+          "id": "D",
+          "text": "Não há critério linguístico para avaliar a afirmação."
+        },
+        {
+          "id": "E",
+          "text": "Basta escolher a alternativa mais longa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável.",
+      "difficulty": "applied",
+      "cognitiveOperation": "diagnose_error",
+      "concepts": [
+        "POR-05-C01"
+      ],
+      "targetedError": "Usa-se vírgula sempre que há pausa na fala.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-05-Q08",
+      "lessonId": "POR-05",
+      "type": "MCQ",
+      "stimulus": "Em “Não, espere.” a vírgula separa a negação do comando. Em “Não espere.” a orientação muda.",
+      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O trecho não permite nenhuma análise."
+        },
+        {
+          "id": "B",
+          "text": "A única tarefa é classificar todas as palavras."
+        },
+        {
+          "id": "C",
+          "text": "A pontuação altera a estrutura e o comando comunicado; não é mero enfeite."
+        },
+        {
+          "id": "D",
+          "text": "A análise depende apenas do tamanho do trecho."
+        },
+        {
+          "id": "E",
+          "text": "Qualquer interpretação é igualmente válida."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A pontuação altera a estrutura e o comando comunicado; não é mero enfeite.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-05-C01",
+        "POR-05-C02"
+      ],
+      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
+      "provenance": "VECTA_ORIGINAL"
+    }
+  ],
+  "concepts": [
+    {
+      "editorialConceptId": "POR-05-C01",
+      "lessonId": "POR-05",
+      "name": "ortografia",
+      "masteryTarget": "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-05-C02",
+      "lessonId": "POR-05",
+      "name": "acentuação",
+      "masteryTarget": "A acentuação gráfica segue regras convencionais e não corresponde simplesmente à intensidade percebida na fala.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-05-C03",
+      "lessonId": "POR-05",
+      "name": "pontuação",
+      "masteryTarget": "A vírgula organiza estruturas sintáticas e não deve ser explicada apenas como pausa para respirar.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-05-C04",
+      "lessonId": "POR-05",
+      "name": "aspas",
+      "masteryTarget": "Dois-pontos podem anunciar explicação, enumeração, fala ou consequência explicitada.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-05-C05",
+      "lessonId": "POR-05",
+      "name": "travessão",
+      "masteryTarget": "Reticências, exclamação, interrogação, aspas e travessões podem produzir hesitação, ênfase, dúvida, distanciamento ou marcação de voz.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-05-C06",
+      "lessonId": "POR-05",
+      "name": "reticências",
+      "masteryTarget": "Mudanças de pontuação podem alterar relação sintática e sentido.",
+      "status": "EDITORIAL"
+    }
+  ],
+  "qa": {
+    "lessonId": "POR-05",
+    "status": "PASS",
+    "checks": {
+      "sourceRefsResolve": true,
+      "questionCount": 8,
+      "eachQuestionHasFiveOptions": true,
+      "originalCoreContent": true
+    },
+    "editorialCautions": [
+      "Final VECTA schema must be reconciled by integration Maestro.",
+      "Question distractors should receive final spot-check after import/render."
+    ]
+  }
+}

@@ -1,17 +1,21 @@
-# KNOW/OS
+# Estudisc
 
 ## Expansão IFSC 2027
 
-O roadmap IFSC estende o núcleo existente com currículo rastreável, Question Bank, sessões e planner determinístico, assessments, QA e tutor opcional. Perfis privados ADMIN/STUDENT mantêm estado separado. Especificação: [docs/ifsc/README.md](docs/ifsc/README.md); progresso atual em PROJECT_STATUS.md. A implementação está em andamento; recursos planejados não são apresentados como concluídos. Design System v3 evolui os tokens canônicos; v1 e o Programming Lab permanecem suportados.
+O roadmap IFSC estende o núcleo existente com currículo rastreável, Question Bank, sessões e planner determinístico, assessments, QA e tutor opcional. Perfis privados ADMIN/STUDENT mantêm estado separado. Especificação: [docs/ifsc/README.md](docs/ifsc/README.md); progresso atual em PROJECT_STATUS.md. A implementação está em andamento; recursos planejados não são apresentados como concluídos. A versão atual do Design System é definida em `design-system/VERSION`; o Programming Lab permanece suportado.
 
 **Personal Learning Operating System**
 
-KNOW/OS é um sistema pessoal para estruturar aprendizado, prática, revisão e aplicação em projetos reais. A primeira extensão de domínio é programação, começando por JavaScript, mas o núcleo é agnóstico de assunto.
+Estudisc é um sistema pessoal para estruturar aprendizado, prática, revisão e aplicação em projetos reais. A primeira extensão de domínio é programação, começando por JavaScript, mas o núcleo é agnóstico de assunto.
+
+## Conteúdo em produção
+
+132 aulas e 1.144 questões: Matemática 19/240, Ciências 40/320, História-Geografia 49/392 e Português 24/192. Todas já estão importadas e publicadas; não repetir a ativação. Estado atual: [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
 ## Estado do projeto
 
 - Fase atual: **V1 publicado em produção com Neon Postgres, Vercel e Auth.js Google OAuth; Pack exemplo ativado e gamificação persistida como projeção auditável**.
-- Design System oficial: `design-system/`, versão 3.0 (delta IFSC integrado; tokens históricos preservados).
+- Design System oficial: `design-system/VERSION`, com valores canônicos em `design-system/design-tokens.json`.
 - Implementação: Next.js App Router com TypeScript strict, Tailwind, token pipeline, shell acessível, fundação Drizzle/PostgreSQL, Zod, Vitest, Testing Library, Playwright e CI.
 - V1 local implementado e verificado: importar conteúdo por `/import`, navegar por trilhas/lições/conceitos, executar JavaScript com RUN, registrar tentativa com SUBMIT SOLUTION, reabrir feedback persistido, ver progresso, histórico, contrato de runtime, stdout/stderr/testes, diff da tentativa, atividade inicial de debug, mastery determinístico, agenda de review, erros categorizados, projetos opcionais, XP/ranks/badges/missões com projeção persistida, mapa de conhecimento acessível, recomendações locais, preview de import/export/restore, exports Backup/Progress/Teacher Context, auditoria de acessibilidade e preparação de segurança/deploy local.
 - Modo de execução do Codex: **autonomia elevada com limites de repositório**.
@@ -71,7 +75,7 @@ Para validar um PostgreSQL real sem tocar nas tabelas da aplicação:
 pnpm test:postgres
 ```
 
-O comando lê `TEST_DATABASE_URL` ou `DATABASE_URL` do ambiente ou do `.env.local` ignorado pelo Git, cria um schema descartável `know_os_real_pg_*`, aplica as migrations nele, roda importação/RUN/SUBMIT/progresso e remove apenas esse schema ao final. Durante essa validação isolada, referências de FK geradas como `"public".*` são reescopadas para o schema descartável; `pnpm db:migrate` continua sendo o caminho para aplicar as migrations reais no schema `public` do alvo escolhido.
+O comando lê `TEST_DATABASE_URL` ou `DATABASE_URL` do ambiente ou do `.env.local` ignorado pelo Git, cria um schema descartável `estudisc_real_pg_*`, aplica as migrations nele, roda importação/RUN/SUBMIT/progresso e remove apenas esse schema ao final. Durante essa validação isolada, referências de FK geradas como `"public".*` são reescopadas para o schema descartável; `pnpm db:migrate` continua sendo o caminho para aplicar as migrations reais no schema `public` do alvo escolhido.
 
 ## Produção planejada
 
@@ -80,7 +84,7 @@ ADR 0015 define a stack de preparação para produção:
 - Vercel para hosting.
 - Neon Postgres para `DATABASE_URL`.
 - Auth.js com Google OAuth.
-- Allowlist inicial por e-mail em `KNOW_OS_ALLOWED_GOOGLE_EMAILS`.
+- Allowlist inicial por e-mail em `Estudisc_ALLOWED_GOOGLE_EMAILS`.
 - Tela própria em `/auth/signin`, seguindo o Design System, com Google OAuth configurado para seleção explícita de conta.
 
 Variáveis esperadas para produção:
@@ -92,8 +96,8 @@ AUTH_SECRET
 AUTH_TRUST_HOST
 AUTH_GOOGLE_ID
 AUTH_GOOGLE_SECRET
-KNOW_OS_ALLOWED_GOOGLE_EMAILS
-KNOW_OS_OWNER_ID
+Estudisc_ALLOWED_GOOGLE_EMAILS
+Estudisc_OWNER_ID
 LOG_LEVEL
 ```
 
@@ -133,7 +137,7 @@ Com um banco migrado ou com o harness Playwright:
 - `POST /api/import/track/preview` valida e resume um Track Pack antes de mutação.
 - `POST /api/import/track` aplica limite de tamanho, validação e conflito por hash de conteúdo.
 - `GET /api/import/track/example` entrega o Pack exemplo versionado para ativação inicial pela UI protegida.
-- `GET /api/export/preview` e `GET /api/export` produzem contratos JSON `know-os.export.v1`.
+- `GET /api/export/preview` e `GET /api/export` produzem contratos JSON `estudisc.export.v1`.
 - `POST /api/restore/preview` valida Backups, lista categorias e inclui o plano `user_state_dry_run` bloqueado para replay seguro futuro. A página `/exports` expõe esse dry-run sem botão de apply para estado do usuário.
 - `POST /api/restore` aplica manifests de Pack de forma não destrutiva. O Backup preserva categorias de estado do usuário, mas ADR 0014 deixa replay/merge de estado append-only fora do restore V1; ADR 0016 define a política exigida antes de um futuro restore completo.
 - Respostas incluem headers básicos: `X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options` e `Permissions-Policy`.
@@ -146,7 +150,7 @@ Com um banco migrado ou com o harness Playwright:
 3. Cole `PROMPT-CODEX-START.md` no Codex.
 
 ```powershell
-cd C:\Dev\pessoal\know-os
+cd C:\Dev\pessoal\estudisc
 codex
 ```
 
@@ -181,7 +185,7 @@ A autonomia reduz pedidos de confirmação, mas não remove planejamento, testes
 ## Estrutura
 
 ```text
-know-os/
+estudisc/
 ├── AGENTS.md
 ├── AUTONOMY.md
 ├── PROMPT-CODEX-START.md
@@ -199,3 +203,7 @@ know-os/
 ```
 
 Consulte `docs/21-REPOSITORY-STRUCTURE.md` para a estrutura planejada após o scaffold.
+
+## Current production
+
+132publishedlessons/1144subjectQuestions:Math19/240,Science40/320,History-Geography49/392,Portuguese24/192.Do not repeatimports/publication.Currentstate:PROJECT_STATUS.md.Identity/legacycompatibility:docs/migrations/ESTUDISC-RENAME.md.DesignSystemversion:design-system/VERSION.History:docs/history/.

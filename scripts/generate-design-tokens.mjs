@@ -40,7 +40,7 @@ function collectTokens(node, root, prefix = []) {
   }
 
   if (typeof node !== "object") {
-    return [[`--kos-${prefix.map(toKebab).join("-")}`, resolveReferences(node, root)]];
+    return [[`--estudisc-${prefix.map(toKebab).join("-")}`, resolveReferences(node, root)]];
   }
 
   return Object.entries(node)

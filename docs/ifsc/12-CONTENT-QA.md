@@ -3,7 +3,11 @@
 Status: **Accepted**
 Source of truth for: publication quality gates.
 
-## Four QA layers
+## Publication paths
+
+Editorial Reviewed requires the four independent layers below. Admin Direct is the separate authorized path with authenticated ADMIN, exact versions, explicit reason and atomic audit event; it does not fabricate reviews. Current operational contract: [EDITORIAL-RELEASE.md](EDITORIAL-RELEASE.md). Publication mode is visible in Admin.
+
+## Four QA layers (Editorial Reviewed)
 
 1. Structural QA
 2. Factual QA

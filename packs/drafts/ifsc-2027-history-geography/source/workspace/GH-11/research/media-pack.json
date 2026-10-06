@@ -1,0 +1,48 @@
+{
+  "lessonId": "GH-11",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-001",
+      "title": "Atlas Geográfico Escolar — Ensino Fundamental 6º ao 9º ano",
+      "org": "IBGE",
+      "type": "ATLAS",
+      "url": "https://www.ibge.gov.br/geociencias/atlas/nacional/24678-atlas-geografico-escolar-ensino-fundamental.html",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-020",
+      "title": "Síntese Anual da Agricultura de Santa Catarina 2025",
+      "org": "EPAGRI/CEPA",
+      "type": "REPORT",
+      "url": "https://docweb.epagri.sc.gov.br/website_cepa/publicacoes/Sintese_2025.pdf",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-057",
+      "title": "Mapas para o Ensino Fundamental",
+      "org": "IBGE Educa",
+      "type": "OFFICIAL_MAP_COLLECTION",
+      "url": "https://educa.ibge.gov.br/criancas/mapas-5.html",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-11-001",
+    "lessonId": "GH-11",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa físico simplificado de Santa Catarina + cards de riscos socioambientais, usando dados/fontes oficiais.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

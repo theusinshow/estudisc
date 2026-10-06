@@ -1,17 +1,17 @@
-# START HERE — KNOW/OS
+# START HERE — Estudisc
 
 ## 1. Coloque o projeto em `C:\Dev`
 
 Extraia o ZIP. O resultado deve ser:
 
 ```text
-C:\Dev\know-os
+C:\Dev\pessoal\estudisc
 ```
 
 ## 2. Abra a pasta
 
 ```powershell
-cd C:\Dev\know-os
+cd C:\Dev\pessoal\estudisc
 ```
 
 ## 3. Inicie o Git
@@ -19,7 +19,7 @@ cd C:\Dev\know-os
 ```powershell
 git init
 git add .
-git commit -m "chore: initialize KNOW/OS specification repository"
+git commit -m "chore: initialize Estudisc specification repository"
 ```
 
 ## 4. Abra no Cursor, caso queira

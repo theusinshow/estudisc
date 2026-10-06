@@ -9,8 +9,10 @@ const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Vecta",
-  description: "Estudo para o IFSC, uma ideia por vez."
+  title: "Estudisc",
+  description: "Estudo para o IFSC com aulas, prática e revisão baseadas em evidências.",
+  applicationName: "Estudisc",
+  openGraph: { title: "Estudisc", description: "Estudo, prática e revisão para o IFSC.", siteName: "Estudisc", locale: "pt_BR", type: "website" }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

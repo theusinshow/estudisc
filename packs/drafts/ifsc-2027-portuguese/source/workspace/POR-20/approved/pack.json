@@ -1,0 +1,513 @@
+{
+  "lesson": {
+    "id": "POR-20",
+    "subject": "POR",
+    "title": "Coerência, progressão temática e relações entre ideias",
+    "module": "Textualidade e argumentação",
+    "priority": "P0",
+    "status": "IMPORT_READY",
+    "estimatedMinutes": 22,
+    "masteryTarget": "Avaliar consistência global, continuidade temática e compatibilidade entre informações.",
+    "sourceRefs": [
+      "POR-SRC-001",
+      "POR-SRC-017",
+      "POR-SRC-026",
+      "POR-SRC-027",
+      "POR-SRC-028"
+    ],
+    "conceptRefs": [
+      "POR-20-C01",
+      "POR-20-C02",
+      "POR-20-C03",
+      "POR-20-C04",
+      "POR-20-C05",
+      "POR-20-C06"
+    ],
+    "blocks": [
+      {
+        "type": "HOOK",
+        "title": "Leia como a prova lê",
+        "content": "Um texto defende transporte coletivo, passa a explicar uma receita sem relação com o tema e retorna à mobilidade."
+      },
+      {
+        "type": "LEARNING_GOALS",
+        "items": [
+          "Avaliar consistência global, continuidade temática e compatibilidade entre informações.",
+          "Justificar respostas com evidência linguística ou textual.",
+          "Evitar regras absolutas quando o fenômeno depende do contexto."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 1",
+        "paragraphs": [
+          "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto.",
+          "Progressão temática exige acrescentar informações relacionadas, não apenas repetir a mesma ideia.",
+          "Contradições não explicadas podem romper a coerência global."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 2",
+        "paragraphs": [
+          "Informações verdadeiras podem ser irrelevantes ao objetivo e prejudicar a progressão.",
+          "Conhecimento de mundo participa da coerência, mas não autoriza ignorar o que o texto estabelece.",
+          "Conectores ajudam a explicitar relações, porém não consertam ideias logicamente incompatíveis."
+        ]
+      },
+      {
+        "type": "KEY_TERMS",
+        "items": [
+          {
+            "term": "coerência",
+            "conceptRef": "POR-20-C01"
+          },
+          {
+            "term": "progressão temática",
+            "conceptRef": "POR-20-C02"
+          },
+          {
+            "term": "contradição",
+            "conceptRef": "POR-20-C03"
+          },
+          {
+            "term": "continuidade",
+            "conceptRef": "POR-20-C04"
+          },
+          {
+            "term": "relevância",
+            "conceptRef": "POR-20-C05"
+          },
+          {
+            "term": "consistência",
+            "conceptRef": "POR-20-C06"
+          }
+        ]
+      },
+      {
+        "type": "MISCONCEPTION_CHECK",
+        "items": [
+          {
+            "claim": "Muitos conectores garantem coerência.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Coerência é não cometer erro gramatical.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Todo parágrafo deve repetir a tese.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Qualquer informação verdadeira melhora o texto.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          }
+        ]
+      },
+      {
+        "type": "WORKED_EXAMPLE",
+        "stimulus": "Um texto defende transporte coletivo, passa a explicar uma receita sem relação com o tema e retorna à mobilidade.",
+        "analysis": "A receita pode ser coerente por si, mas é irrelevante no encadeamento e rompe a progressão temática."
+      },
+      {
+        "type": "ACTIVE_LEARNING",
+        "title": "Atividade de aplicação",
+        "steps": [
+          "Reordene parágrafos embaralhados.",
+          "Ache uma frase verdadeira porém irrelevante.",
+          "Mostre por que conector correto não salva contradição."
+        ],
+        "evidence": "Resposta curta ou classificação justificada."
+      },
+      {
+        "type": "IFSC_STRATEGY",
+        "content": "Leia como conjunto: tema, encadeamento, relações e contradições."
+      },
+      {
+        "type": "SUMMARY",
+        "items": [
+          "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto.",
+          "Progressão temática exige acrescentar informações relacionadas, não apenas repetir a mesma ideia.",
+          "Contradições não explicadas podem romper a coerência global.",
+          "Informações verdadeiras podem ser irrelevantes ao objetivo e prejudicar a progressão.",
+          "Conhecimento de mundo participa da coerência, mas não autoriza ignorar o que o texto estabelece.",
+          "Conectores ajudam a explicitar relações, porém não consertam ideias logicamente incompatíveis."
+        ]
+      },
+      {
+        "type": "EXIT_TICKET",
+        "prompt": "Explique o princípio mais importante de Coerência, progressão temática e relações entre ideias e crie um exemplo próprio."
+      }
+    ],
+    "media": {
+      "deterministicAssetRefs": [
+        "POR-ASSET-12"
+      ],
+      "antigravityRefs": [],
+      "authenticMediaRefs": []
+    }
+  },
+  "questions": [
+    {
+      "id": "POR-20-Q01",
+      "lessonId": "POR-20",
+      "type": "MCQ",
+      "stem": "Qual afirmação descreve corretamente Coerência, progressão temática e relações entre ideias em uso real da língua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Coerência é não cometer erro gramatical."
+        },
+        {
+          "id": "B",
+          "text": "Todo parágrafo deve repetir a tese."
+        },
+        {
+          "id": "C",
+          "text": "Qualquer informação verdadeira melhora o texto."
+        },
+        {
+          "id": "D",
+          "text": "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto."
+        },
+        {
+          "id": "E",
+          "text": "Muitos conectores garantem coerência."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
+      "concepts": [
+        "POR-20-C01"
+      ],
+      "targetedError": "Muitos conectores garantem coerência.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-20-Q02",
+      "lessonId": "POR-20",
+      "type": "MCQ",
+      "stem": "Em uma questão contextualizada sobre Coerência, progressão temática e relações entre ideias, qual princípio deve orientar a análise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Progressão temática exige acrescentar informações relacionadas, não apenas repetir a mesma ideia."
+        },
+        {
+          "id": "B",
+          "text": "Todo parágrafo deve repetir a tese."
+        },
+        {
+          "id": "C",
+          "text": "Qualquer informação verdadeira melhora o texto."
+        },
+        {
+          "id": "D",
+          "text": "Muitos conectores garantem coerência."
+        },
+        {
+          "id": "E",
+          "text": "Coerência é não cometer erro gramatical."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Progressão temática exige acrescentar informações relacionadas, não apenas repetir a mesma ideia.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
+      "concepts": [
+        "POR-20-C02"
+      ],
+      "targetedError": "Coerência é não cometer erro gramatical.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-20-Q03",
+      "lessonId": "POR-20",
+      "type": "MCQ",
+      "stem": "Qual alternativa evita uma generalização inadequada sobre Coerência, progressão temática e relações entre ideias?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Qualquer informação verdadeira melhora o texto."
+        },
+        {
+          "id": "B",
+          "text": "Muitos conectores garantem coerência."
+        },
+        {
+          "id": "C",
+          "text": "Contradições não explicadas podem romper a coerência global."
+        },
+        {
+          "id": "D",
+          "text": "Coerência é não cometer erro gramatical."
+        },
+        {
+          "id": "E",
+          "text": "Todo parágrafo deve repetir a tese."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Contradições não explicadas podem romper a coerência global.",
+      "difficulty": "applied",
+      "cognitiveOperation": "discriminate",
+      "concepts": [
+        "POR-20-C03"
+      ],
+      "targetedError": "Todo parágrafo deve repetir a tese.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-20-Q04",
+      "lessonId": "POR-20",
+      "type": "MCQ",
+      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Coerência, progressão temática e relações entre ideias?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Muitos conectores garantem coerência."
+        },
+        {
+          "id": "B",
+          "text": "Coerência é não cometer erro gramatical."
+        },
+        {
+          "id": "C",
+          "text": "Todo parágrafo deve repetir a tese."
+        },
+        {
+          "id": "D",
+          "text": "Qualquer informação verdadeira melhora o texto."
+        },
+        {
+          "id": "E",
+          "text": "Informações verdadeiras podem ser irrelevantes ao objetivo e prejudicar a progressão."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Informações verdadeiras podem ser irrelevantes ao objetivo e prejudicar a progressão.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-20-C04"
+      ],
+      "targetedError": "Qualquer informação verdadeira melhora o texto.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-20-Q05",
+      "lessonId": "POR-20",
+      "type": "MCQ",
+      "stem": "Qual critério é seguro para resolver uma questão sobre Coerência, progressão temática e relações entre ideias?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Coerência é não cometer erro gramatical."
+        },
+        {
+          "id": "B",
+          "text": "Conhecimento de mundo participa da coerência, mas não autoriza ignorar o que o texto estabelece."
+        },
+        {
+          "id": "C",
+          "text": "Todo parágrafo deve repetir a tese."
+        },
+        {
+          "id": "D",
+          "text": "Qualquer informação verdadeira melhora o texto."
+        },
+        {
+          "id": "E",
+          "text": "Muitos conectores garantem coerência."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Conhecimento de mundo participa da coerência, mas não autoriza ignorar o que o texto estabelece.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
+      "concepts": [
+        "POR-20-C05"
+      ],
+      "targetedError": "Muitos conectores garantem coerência.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-20-Q06",
+      "lessonId": "POR-20",
+      "type": "MCQ",
+      "stem": "Ao comparar alternativas sobre Coerência, progressão temática e relações entre ideias, qual análise está correta?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Todo parágrafo deve repetir a tese."
+        },
+        {
+          "id": "B",
+          "text": "Qualquer informação verdadeira melhora o texto."
+        },
+        {
+          "id": "C",
+          "text": "Muitos conectores garantem coerência."
+        },
+        {
+          "id": "D",
+          "text": "Conectores ajudam a explicitar relações, porém não consertam ideias logicamente incompatíveis."
+        },
+        {
+          "id": "E",
+          "text": "Coerência é não cometer erro gramatical."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Conectores ajudam a explicitar relações, porém não consertam ideias logicamente incompatíveis.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-20-C06"
+      ],
+      "targetedError": "Coerência é não cometer erro gramatical.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-20-Q07",
+      "lessonId": "POR-20",
+      "type": "MCQ",
+      "stem": "Um estudante afirma: “Muitos conectores garantem coerência.”. Qual é a melhor correção?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+        },
+        {
+          "id": "B",
+          "text": "A generalização deve ser aceita sem verificar contexto."
+        },
+        {
+          "id": "C",
+          "text": "A melhor estratégia é decorar a frase."
+        },
+        {
+          "id": "D",
+          "text": "Não há critério linguístico para avaliar a afirmação."
+        },
+        {
+          "id": "E",
+          "text": "Basta escolher a alternativa mais longa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto.",
+      "difficulty": "applied",
+      "cognitiveOperation": "diagnose_error",
+      "concepts": [
+        "POR-20-C01"
+      ],
+      "targetedError": "Muitos conectores garantem coerência.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-20-Q08",
+      "lessonId": "POR-20",
+      "type": "MCQ",
+      "stimulus": "Um texto defende transporte coletivo, passa a explicar uma receita sem relação com o tema e retorna à mobilidade.",
+      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O trecho não permite nenhuma análise."
+        },
+        {
+          "id": "B",
+          "text": "A única tarefa é classificar todas as palavras."
+        },
+        {
+          "id": "C",
+          "text": "A receita pode ser coerente por si, mas é irrelevante no encadeamento e rompe a progressão temática."
+        },
+        {
+          "id": "D",
+          "text": "A análise depende apenas do tamanho do trecho."
+        },
+        {
+          "id": "E",
+          "text": "Qualquer interpretação é igualmente válida."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A receita pode ser coerente por si, mas é irrelevante no encadeamento e rompe a progressão temática.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-20-C01",
+        "POR-20-C02"
+      ],
+      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
+      "provenance": "VECTA_ORIGINAL"
+    }
+  ],
+  "concepts": [
+    {
+      "editorialConceptId": "POR-20-C01",
+      "lessonId": "POR-20",
+      "name": "coerência",
+      "masteryTarget": "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-20-C02",
+      "lessonId": "POR-20",
+      "name": "progressão temática",
+      "masteryTarget": "Progressão temática exige acrescentar informações relacionadas, não apenas repetir a mesma ideia.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-20-C03",
+      "lessonId": "POR-20",
+      "name": "contradição",
+      "masteryTarget": "Contradições não explicadas podem romper a coerência global.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-20-C04",
+      "lessonId": "POR-20",
+      "name": "continuidade",
+      "masteryTarget": "Informações verdadeiras podem ser irrelevantes ao objetivo e prejudicar a progressão.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-20-C05",
+      "lessonId": "POR-20",
+      "name": "relevância",
+      "masteryTarget": "Conhecimento de mundo participa da coerência, mas não autoriza ignorar o que o texto estabelece.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-20-C06",
+      "lessonId": "POR-20",
+      "name": "consistência",
+      "masteryTarget": "Conectores ajudam a explicitar relações, porém não consertam ideias logicamente incompatíveis.",
+      "status": "EDITORIAL"
+    }
+  ],
+  "qa": {
+    "lessonId": "POR-20",
+    "status": "PASS",
+    "checks": {
+      "sourceRefsResolve": true,
+      "questionCount": 8,
+      "eachQuestionHasFiveOptions": true,
+      "originalCoreContent": true
+    },
+    "editorialCautions": [
+      "Final VECTA schema must be reconciled by integration Maestro.",
+      "Question distractors should receive final spot-check after import/render."
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-# Contributing to KNOW/OS
+# Contributing to Estudisc
 
 The project is currently private and single-maintainer, but changes should follow professional repository practices.
 

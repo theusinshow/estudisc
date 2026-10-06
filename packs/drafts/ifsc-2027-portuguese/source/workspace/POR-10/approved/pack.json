@@ -1,0 +1,509 @@
+{
+  "lesson": {
+    "id": "POR-10",
+    "subject": "POR",
+    "title": "Concordância verbal e nominal",
+    "module": "Gramática em contexto",
+    "priority": "P0",
+    "status": "IMPORT_READY",
+    "estimatedMinutes": 22,
+    "masteryTarget": "Aplicar concordância em textos e reconhecer distrações por proximidade.",
+    "sourceRefs": [
+      "POR-SRC-001",
+      "POR-SRC-014",
+      "POR-SRC-038"
+    ],
+    "conceptRefs": [
+      "POR-10-C01",
+      "POR-10-C02",
+      "POR-10-C03",
+      "POR-10-C04",
+      "POR-10-C05",
+      "POR-10-C06"
+    ],
+    "blocks": [
+      {
+        "type": "HOOK",
+        "title": "Leia como a prova lê",
+        "content": "Em “Os resultados da pesquisa mostram uma mudança”, o verbo está no plural por concordar com “resultados”, não com “pesquisa”."
+      },
+      {
+        "type": "LEARNING_GOALS",
+        "items": [
+          "Aplicar concordância em textos e reconhecer distrações por proximidade.",
+          "Justificar respostas com evidência linguística ou textual.",
+          "Evitar regras absolutas quando o fenômeno depende do contexto."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 1",
+        "paragraphs": [
+          "Na concordância verbal, o verbo se ajusta ao núcleo do sujeito em pessoa e número conforme a construção.",
+          "Termos entre sujeito e verbo podem distrair; a concordância não é determinada pela palavra mais próxima.",
+          "Na concordância nominal, determinantes e modificadores relacionam-se ao substantivo em gênero e número."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 2",
+        "paragraphs": [
+          "Sujeitos compostos e construções com porcentagens, partitivas ou coletivos exigem atenção ao núcleo e ao contexto.",
+          "Em locuções verbais, a flexão principal costuma aparecer no auxiliar conforme a estrutura.",
+          "A prova pode cobrar concordância junto com conectores, regência ou sentido no mesmo texto."
+        ]
+      },
+      {
+        "type": "KEY_TERMS",
+        "items": [
+          {
+            "term": "concordância verbal",
+            "conceptRef": "POR-10-C01"
+          },
+          {
+            "term": "concordância nominal",
+            "conceptRef": "POR-10-C02"
+          },
+          {
+            "term": "núcleo do sujeito",
+            "conceptRef": "POR-10-C03"
+          },
+          {
+            "term": "gênero",
+            "conceptRef": "POR-10-C04"
+          },
+          {
+            "term": "número",
+            "conceptRef": "POR-10-C05"
+          },
+          {
+            "term": "pessoa",
+            "conceptRef": "POR-10-C06"
+          }
+        ]
+      },
+      {
+        "type": "MISCONCEPTION_CHECK",
+        "items": [
+          {
+            "claim": "O verbo concorda com a palavra imediatamente anterior.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Concordância nominal envolve só adjetivos.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Sujeito distante deixa de controlar concordância.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Uso frequente na fala sempre coincide com norma-padrão escrita.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          }
+        ]
+      },
+      {
+        "type": "WORKED_EXAMPLE",
+        "stimulus": "Em “Os resultados da pesquisa mostram uma mudança”, o verbo está no plural por concordar com “resultados”, não com “pesquisa”.",
+        "analysis": "O núcleo do sujeito é “resultados”; “da pesquisa” apenas o especifica."
+      },
+      {
+        "type": "ACTIVE_LEARNING",
+        "title": "Atividade de aplicação",
+        "steps": [
+          "Sublinhe o núcleo do sujeito antes de flexionar.",
+          "Resolva pares com palavra próxima como distração.",
+          "Revise um parágrafo e explique cada correção."
+        ],
+        "evidence": "Resposta curta ou classificação justificada."
+      },
+      {
+        "type": "IFSC_STRATEGY",
+        "content": "Identifique o núcleo que realmente controla a concordância."
+      },
+      {
+        "type": "SUMMARY",
+        "items": [
+          "Na concordância verbal, o verbo se ajusta ao núcleo do sujeito em pessoa e número conforme a construção.",
+          "Termos entre sujeito e verbo podem distrair; a concordância não é determinada pela palavra mais próxima.",
+          "Na concordância nominal, determinantes e modificadores relacionam-se ao substantivo em gênero e número.",
+          "Sujeitos compostos e construções com porcentagens, partitivas ou coletivos exigem atenção ao núcleo e ao contexto.",
+          "Em locuções verbais, a flexão principal costuma aparecer no auxiliar conforme a estrutura.",
+          "A prova pode cobrar concordância junto com conectores, regência ou sentido no mesmo texto."
+        ]
+      },
+      {
+        "type": "EXIT_TICKET",
+        "prompt": "Explique o princípio mais importante de Concordância verbal e nominal e crie um exemplo próprio."
+      }
+    ],
+    "media": {
+      "deterministicAssetRefs": [],
+      "antigravityRefs": [],
+      "authenticMediaRefs": []
+    }
+  },
+  "questions": [
+    {
+      "id": "POR-10-Q01",
+      "lessonId": "POR-10",
+      "type": "MCQ",
+      "stem": "Qual afirmação descreve corretamente Concordância verbal e nominal em uso real da língua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Concordância nominal envolve só adjetivos."
+        },
+        {
+          "id": "B",
+          "text": "Sujeito distante deixa de controlar concordância."
+        },
+        {
+          "id": "C",
+          "text": "Uso frequente na fala sempre coincide com norma-padrão escrita."
+        },
+        {
+          "id": "D",
+          "text": "Na concordância verbal, o verbo se ajusta ao núcleo do sujeito em pessoa e número conforme a construção."
+        },
+        {
+          "id": "E",
+          "text": "O verbo concorda com a palavra imediatamente anterior."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Na concordância verbal, o verbo se ajusta ao núcleo do sujeito em pessoa e número conforme a construção.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
+      "concepts": [
+        "POR-10-C01"
+      ],
+      "targetedError": "O verbo concorda com a palavra imediatamente anterior.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-10-Q02",
+      "lessonId": "POR-10",
+      "type": "MCQ",
+      "stem": "Em uma questão contextualizada sobre Concordância verbal e nominal, qual princípio deve orientar a análise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Termos entre sujeito e verbo podem distrair; a concordância não é determinada pela palavra mais próxima."
+        },
+        {
+          "id": "B",
+          "text": "Sujeito distante deixa de controlar concordância."
+        },
+        {
+          "id": "C",
+          "text": "Uso frequente na fala sempre coincide com norma-padrão escrita."
+        },
+        {
+          "id": "D",
+          "text": "O verbo concorda com a palavra imediatamente anterior."
+        },
+        {
+          "id": "E",
+          "text": "Concordância nominal envolve só adjetivos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Termos entre sujeito e verbo podem distrair; a concordância não é determinada pela palavra mais próxima.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
+      "concepts": [
+        "POR-10-C02"
+      ],
+      "targetedError": "Concordância nominal envolve só adjetivos.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-10-Q03",
+      "lessonId": "POR-10",
+      "type": "MCQ",
+      "stem": "Qual alternativa evita uma generalização inadequada sobre Concordância verbal e nominal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Uso frequente na fala sempre coincide com norma-padrão escrita."
+        },
+        {
+          "id": "B",
+          "text": "O verbo concorda com a palavra imediatamente anterior."
+        },
+        {
+          "id": "C",
+          "text": "Na concordância nominal, determinantes e modificadores relacionam-se ao substantivo em gênero e número."
+        },
+        {
+          "id": "D",
+          "text": "Concordância nominal envolve só adjetivos."
+        },
+        {
+          "id": "E",
+          "text": "Sujeito distante deixa de controlar concordância."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Na concordância nominal, determinantes e modificadores relacionam-se ao substantivo em gênero e número.",
+      "difficulty": "applied",
+      "cognitiveOperation": "discriminate",
+      "concepts": [
+        "POR-10-C03"
+      ],
+      "targetedError": "Sujeito distante deixa de controlar concordância.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-10-Q04",
+      "lessonId": "POR-10",
+      "type": "MCQ",
+      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Concordância verbal e nominal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O verbo concorda com a palavra imediatamente anterior."
+        },
+        {
+          "id": "B",
+          "text": "Concordância nominal envolve só adjetivos."
+        },
+        {
+          "id": "C",
+          "text": "Sujeito distante deixa de controlar concordância."
+        },
+        {
+          "id": "D",
+          "text": "Uso frequente na fala sempre coincide com norma-padrão escrita."
+        },
+        {
+          "id": "E",
+          "text": "Sujeitos compostos e construções com porcentagens, partitivas ou coletivos exigem atenção ao núcleo e ao contexto."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Sujeitos compostos e construções com porcentagens, partitivas ou coletivos exigem atenção ao núcleo e ao contexto.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-10-C04"
+      ],
+      "targetedError": "Uso frequente na fala sempre coincide com norma-padrão escrita.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-10-Q05",
+      "lessonId": "POR-10",
+      "type": "MCQ",
+      "stem": "Qual critério é seguro para resolver uma questão sobre Concordância verbal e nominal?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Concordância nominal envolve só adjetivos."
+        },
+        {
+          "id": "B",
+          "text": "Em locuções verbais, a flexão principal costuma aparecer no auxiliar conforme a estrutura."
+        },
+        {
+          "id": "C",
+          "text": "Sujeito distante deixa de controlar concordância."
+        },
+        {
+          "id": "D",
+          "text": "Uso frequente na fala sempre coincide com norma-padrão escrita."
+        },
+        {
+          "id": "E",
+          "text": "O verbo concorda com a palavra imediatamente anterior."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Em locuções verbais, a flexão principal costuma aparecer no auxiliar conforme a estrutura.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
+      "concepts": [
+        "POR-10-C05"
+      ],
+      "targetedError": "O verbo concorda com a palavra imediatamente anterior.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-10-Q06",
+      "lessonId": "POR-10",
+      "type": "MCQ",
+      "stem": "Ao comparar alternativas sobre Concordância verbal e nominal, qual análise está correta?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sujeito distante deixa de controlar concordância."
+        },
+        {
+          "id": "B",
+          "text": "Uso frequente na fala sempre coincide com norma-padrão escrita."
+        },
+        {
+          "id": "C",
+          "text": "O verbo concorda com a palavra imediatamente anterior."
+        },
+        {
+          "id": "D",
+          "text": "A prova pode cobrar concordância junto com conectores, regência ou sentido no mesmo texto."
+        },
+        {
+          "id": "E",
+          "text": "Concordância nominal envolve só adjetivos."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A prova pode cobrar concordância junto com conectores, regência ou sentido no mesmo texto.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-10-C06"
+      ],
+      "targetedError": "Concordância nominal envolve só adjetivos.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-10-Q07",
+      "lessonId": "POR-10",
+      "type": "MCQ",
+      "stem": "Um estudante afirma: “O verbo concorda com a palavra imediatamente anterior.”. Qual é a melhor correção?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+        },
+        {
+          "id": "B",
+          "text": "A generalização deve ser aceita sem verificar contexto."
+        },
+        {
+          "id": "C",
+          "text": "A melhor estratégia é decorar a frase."
+        },
+        {
+          "id": "D",
+          "text": "Não há critério linguístico para avaliar a afirmação."
+        },
+        {
+          "id": "E",
+          "text": "Basta escolher a alternativa mais longa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Na concordância verbal, o verbo se ajusta ao núcleo do sujeito em pessoa e número conforme a construção.",
+      "difficulty": "applied",
+      "cognitiveOperation": "diagnose_error",
+      "concepts": [
+        "POR-10-C01"
+      ],
+      "targetedError": "O verbo concorda com a palavra imediatamente anterior.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-10-Q08",
+      "lessonId": "POR-10",
+      "type": "MCQ",
+      "stimulus": "Em “Os resultados da pesquisa mostram uma mudança”, o verbo está no plural por concordar com “resultados”, não com “pesquisa”.",
+      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O trecho não permite nenhuma análise."
+        },
+        {
+          "id": "B",
+          "text": "A única tarefa é classificar todas as palavras."
+        },
+        {
+          "id": "C",
+          "text": "O núcleo do sujeito é “resultados”; “da pesquisa” apenas o especifica."
+        },
+        {
+          "id": "D",
+          "text": "A análise depende apenas do tamanho do trecho."
+        },
+        {
+          "id": "E",
+          "text": "Qualquer interpretação é igualmente válida."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "O núcleo do sujeito é “resultados”; “da pesquisa” apenas o especifica.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-10-C01",
+        "POR-10-C02"
+      ],
+      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
+      "provenance": "VECTA_ORIGINAL"
+    }
+  ],
+  "concepts": [
+    {
+      "editorialConceptId": "POR-10-C01",
+      "lessonId": "POR-10",
+      "name": "concordância verbal",
+      "masteryTarget": "Na concordância verbal, o verbo se ajusta ao núcleo do sujeito em pessoa e número conforme a construção.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-10-C02",
+      "lessonId": "POR-10",
+      "name": "concordância nominal",
+      "masteryTarget": "Termos entre sujeito e verbo podem distrair; a concordância não é determinada pela palavra mais próxima.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-10-C03",
+      "lessonId": "POR-10",
+      "name": "núcleo do sujeito",
+      "masteryTarget": "Na concordância nominal, determinantes e modificadores relacionam-se ao substantivo em gênero e número.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-10-C04",
+      "lessonId": "POR-10",
+      "name": "gênero",
+      "masteryTarget": "Sujeitos compostos e construções com porcentagens, partitivas ou coletivos exigem atenção ao núcleo e ao contexto.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-10-C05",
+      "lessonId": "POR-10",
+      "name": "número",
+      "masteryTarget": "Em locuções verbais, a flexão principal costuma aparecer no auxiliar conforme a estrutura.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-10-C06",
+      "lessonId": "POR-10",
+      "name": "pessoa",
+      "masteryTarget": "A prova pode cobrar concordância junto com conectores, regência ou sentido no mesmo texto.",
+      "status": "EDITORIAL"
+    }
+  ],
+  "qa": {
+    "lessonId": "POR-10",
+    "status": "PASS",
+    "checks": {
+      "sourceRefsResolve": true,
+      "questionCount": 8,
+      "eachQuestionHasFiveOptions": true,
+      "originalCoreContent": true
+    },
+    "editorialCautions": [
+      "Final VECTA schema must be reconciled by integration Maestro.",
+      "Question distractors should receive final spot-check after import/render."
+    ]
+  }
+}

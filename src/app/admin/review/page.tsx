@@ -8,6 +8,7 @@ import { ContentQaRepository } from "@/db/repositories/content-qa-repository";
 import { AccessDeniedError, requireAdmin } from "@/features/auth/owner";
 import { ReviewForm } from "@/features/content-qa/lesson-review-form";
 import { RELEASE_GROUPS } from "@/features/content-qa/release-groups";
+import { PublicationSummary } from "@/features/content-qa/publication-summary";
 
 export const dynamic = "force-dynamic";
 
@@ -75,6 +76,7 @@ export default async function LessonReviewQueuePage() {
                         </span>
                         <span className="editorial-status">{statusLabel[status] ?? "Sem registro"}</span>
                       </Link>
+                      <PublicationSummary details={item.publication} />
                     </li>
                   );
                 })}

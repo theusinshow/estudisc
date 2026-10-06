@@ -1,0 +1,39 @@
+{
+  "sources": [
+    {
+      "content": {
+        "id": "src-demo-spec",
+        "type": "human_created",
+        "title": "DEMO synthetic test specification — not factual research",
+        "locator": {
+          "localFile": "research/research-notes.md"
+        },
+        "metadata": {
+          "demo": true
+        }
+      },
+      "organization": "VECTA Content Studio DEMO",
+      "verification": "VERIFIED",
+      "verifiedAt": "2026-10-02T12:00:00Z",
+      "notes": "Verified against synthetic fixture specification only. Never use as production research."
+    }
+  ],
+  "assertions": [
+    {
+      "id": "demo-fact",
+      "kind": "FACT",
+      "statement": "In the synthetic fixture Z equals the number of protons.",
+      "sourceIds": [
+        "src-demo-spec"
+      ]
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "demo-research",
+      "status": "RESEARCH_REQUIRED",
+      "message": "Real official mappings and independent scientific research deliberately omitted from this workflow fixture.",
+      "blocking": false
+    }
+  ]
+}

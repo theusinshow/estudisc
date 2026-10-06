@@ -1,6 +1,6 @@
-# KNOW/OS — Especificação de Telas
+# Estudisc — Especificação de Telas
 
-## IFSC v3 — approved delta
+## Delta IFSC integrado
 
 
 ## Today

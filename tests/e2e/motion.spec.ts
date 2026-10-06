@@ -37,7 +37,7 @@ test("sign-in surface uses approved motion tokens for feedback and reveal", asyn
     return styles.animationDuration;
   });
 
-  expect(buttonMotion.transitionProperty).toContain("transform");
+  expect(buttonMotion.transitionProperty.split(",").map(property => property.trim())).toEqual(expect.arrayContaining(["background-color", "transform"]));
   expect(Math.max(...cssTimeListToMs(buttonMotion.transitionDuration))).toBeGreaterThanOrEqual(120);
   expect(Math.max(...cssTimeListToMs(buttonMotion.transitionDuration))).toBeLessThanOrEqual(180);
   expect(Math.max(...cssTimeListToMs(panelAnimation))).toBe(180);

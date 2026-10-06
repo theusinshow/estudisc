@@ -4,7 +4,7 @@ Date: 2026-07-30
 
 ## Current status
 
-KNOW/OS V1 is prepared for local development and CI validation. No production deployment is authorized in the current scope.
+Estudisc V1 is prepared for local development and CI validation. No production deployment is authorized in the current scope.
 
 ADR 0015 selects the production preparation stack:
 
@@ -18,7 +18,7 @@ The repository has:
 - reproducible pnpm install through `pnpm-lock.yaml`;
 - Next.js App Router build with TypeScript strict mode;
 - Drizzle migration files under `src/db/migrations`;
-- environment validation for `DATABASE_URL`, `APP_URL`, `KNOW_OS_OWNER_ID` and `LOG_LEVEL`;
+- environment validation for `DATABASE_URL`, `APP_URL`, `Estudisc_OWNER_ID` and `LOG_LEVEL`;
 - CI for install, lint, typecheck, unit/integration tests and build;
 - separate Playwright smoke workflow;
 - baseline response security headers.
@@ -42,11 +42,11 @@ Do not treat Playwright as a production readiness test. It currently uses `DATAB
 | --- | --- | --- | --- |
 | `DATABASE_URL` | No | Yes | Must point to PostgreSQL for durable state. Never commit it. |
 | `APP_URL` | No | Yes | Must match the deployed origin for callbacks, links and future auth. |
-| `KNOW_OS_OWNER_ID` | No | Yes | Local default is `local-owner`; production needs an authenticated owner mapping. |
+| `Estudisc_OWNER_ID` | No | Yes | Local default is `local-owner`; production needs an authenticated owner mapping. |
 | `AUTH_SECRET` | No | Yes | Required by Auth.js for encrypted cookies/tokens. |
 | `AUTH_GOOGLE_ID` | No | Yes | Google OAuth client ID. |
 | `AUTH_GOOGLE_SECRET` | No | Yes | Google OAuth client secret. |
-| `KNOW_OS_ALLOWED_GOOGLE_EMAILS` | No | Yes | Comma-separated allowlist for initial single-owner access. |
+| `Estudisc_ALLOWED_GOOGLE_EMAILS` | No | Yes | Comma-separated allowlist for initial single-owner access. |
 | `LOG_LEVEL` | No | No | Defaults to `info`. |
 
 ## Production blockers

@@ -1,10 +1,12 @@
-# KNOW/OS — Repository Instructions for Agents
+# Estudisc — Repository Instructions for Agents
 
 ## Approved IFSC expansion
 
-User update (2026-10-01): target remote is `https://github.com/theusinshow/vecta`. Prioritize speed and low token use. Run basic focused validation for each coherent change; preserve critical domain invariants. Do not repeat the full suite/build/E2E after every small edit. Full final acceptance checks remain required. Push/deploy/production migration still need explicit authorization.
+Current remote target: `https://github.com/theusinshow/estudisc`. Prioritize speed and low token use. Run focused validation for each coherent change; preserve critical domain invariants. Full final acceptance checks remain required. External and production operations remain within the user's explicit session authorization.
 
-Editorial decision (2026-10-01): leave content in draft for human review. Do not fabricate independent approval or use subagents to approve this delivery. Keep missing teaching material and unverified official-source mappings visible; draft inventory is not planner-ready curriculum.
+User update (2026-10-03): resume authorized work with economical agent execution. Reuse existing workers; no additional agents by default. Read the current plan/status sections and targeted file ranges instead of entire historical logs. Bound tool output to about 40 lines / 4 KB; never dump full JSON packs, SVG or base64. Assign one job per handoff and return concise results. Recheck changed targets/dependencies using actual prior evidence and hashes; preserve complete initial QA and final acceptance. Content Studio details: `tools/estudisc-content-studio/context/agent-efficiency.md`. Preserve current model/effort settings unless the user requests a change.
+
+Current content state: 132 lessons / 1,144 Questions are published under explicit human authorization. Do not re-import or republish them. Editorial Reviewed and Admin Direct are distinct paths; actual audit/review records determine the mode. New content remains draft until authorized review/publication. Do not fabricate independent approval. Keep source, editorial and official-mapping caveats visible; publication alone does not certify planner readiness.
 
 The user authorized IFSC-00 through IFSC-15 continuously; the approved roadmap is docs/ifsc/16-IMPLEMENTATION-PLAN.md. Private ADMIN/STUDENT profiles are approved by ADR 0026, not a public SaaS scope expansion. Retain production approval boundaries.
 

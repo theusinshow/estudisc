@@ -1,4 +1,4 @@
-# KNOW/OS — Responsividade
+# Estudisc — Responsividade
 
 ## Breakpoints canônicos
 

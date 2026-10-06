@@ -1,0 +1,150 @@
+{
+  "id": "POR-15",
+  "subject": "POR",
+  "title": "Ambiguidade, duplo sentido e desambiguação",
+  "module": "Sentido e conexão",
+  "priority": "P0",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Detectar fontes lexicais/sintáticas de ambiguidade e reescrever quando necessário.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-020"
+  ],
+  "conceptRefs": [
+    "POR-15-C01",
+    "POR-15-C02",
+    "POR-15-C03",
+    "POR-15-C04",
+    "POR-15-C05",
+    "POR-15-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "“Vi a professora com o binóculo” pode indicar que quem viu usou o binóculo ou que a professora estava com ele."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Detectar fontes lexicais/sintáticas de ambiguidade e reescrever quando necessário.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Ambiguidade ocorre quando um enunciado admite mais de uma interpretação relevante.",
+        "Ela pode surgir de polissemia, posição de termos, referência pronominal, adjuntos ou estrutura sintática.",
+        "Em humor e publicidade, duplo sentido pode ser intencional e produzir efeito."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Em textos informativos/jurídicos/instrucionais, ambiguidade não planejada pode prejudicar clareza.",
+        "Desambiguar exige reescrever para tornar explícita a relação pretendida.",
+        "Nem toda multiplicidade de interpretação é erro; gênero e intenção determinam se o recurso é produtivo."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "ambiguidade lexical",
+          "conceptRef": "POR-15-C01"
+        },
+        {
+          "term": "ambiguidade sintática",
+          "conceptRef": "POR-15-C02"
+        },
+        {
+          "term": "duplo sentido",
+          "conceptRef": "POR-15-C03"
+        },
+        {
+          "term": "referência",
+          "conceptRef": "POR-15-C04"
+        },
+        {
+          "term": "escopo",
+          "conceptRef": "POR-15-C05"
+        },
+        {
+          "term": "desambiguação",
+          "conceptRef": "POR-15-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Toda ambiguidade é erro gramatical.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Se há duas leituras nenhuma pode ser defendida.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Ambiguidade só vem de palavras polissêmicas.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Literatura deve eliminar duplo sentido.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "“Vi a professora com o binóculo” pode indicar que quem viu usou o binóculo ou que a professora estava com ele.",
+      "analysis": "A ambiguidade decorre do encaixe de “com o binóculo”; a reescrita deve explicitar quem possui/usa o instrumento."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Identifique duas leituras para frases ambíguas.",
+        "Classifique a fonte da ambiguidade.",
+        "Reescreva cada frase em duas versões claras."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Localize exatamente qual palavra/estrutura sustenta cada leitura."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Ambiguidade ocorre quando um enunciado admite mais de uma interpretação relevante.",
+        "Ela pode surgir de polissemia, posição de termos, referência pronominal, adjuntos ou estrutura sintática.",
+        "Em humor e publicidade, duplo sentido pode ser intencional e produzir efeito.",
+        "Em textos informativos/jurídicos/instrucionais, ambiguidade não planejada pode prejudicar clareza.",
+        "Desambiguar exige reescrever para tornar explícita a relação pretendida.",
+        "Nem toda multiplicidade de interpretação é erro; gênero e intenção determinam se o recurso é produtivo."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Ambiguidade, duplo sentido e desambiguação e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [
+      "POR-ASSET-08"
+    ],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

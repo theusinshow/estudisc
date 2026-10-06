@@ -31,8 +31,8 @@ The original V1 served one owner. ADR 0026 approves private allowlisted ADMIN an
 
 ## Product language
 
-Brand: `KNOW/OS`
-Technical identifier: `know-os`
+Brand: `Estudisc`
+Technical identifier: `estudisc`
 Positioning: `Personal Learning Operating System`
 
 User interface is initially Portuguese. Code, database names and technical contracts use English.

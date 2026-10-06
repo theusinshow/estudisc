@@ -45,7 +45,7 @@ Current V1 mode. Restores Pack manifests from Backup exports through the normal 
 
 ### `user_state_dry_run`
 
-Required mode before full user-state restore. The preview contract now includes `know-os.user-state-restore-dry-run.v1`, which fingerprints the Backup, counts user-state categories and reports why apply remains disabled. The dry-run foundation validates the shape of append-only/projection categories and prepares for restore provenance/idempotency checks. `/exports` exposes this plan as a preview-only UI surface.
+Required mode before full user-state restore. The preview contract now includes `estudisc.user-state-restore-dry-run.v1`, which fingerprints the Backup, counts user-state categories and reports why apply remains disabled. The dry-run foundation validates the shape of append-only/projection categories and prepares for restore provenance/idempotency checks. `/exports` exposes this plan as a preview-only UI surface.
 
 ### `user_state_apply`
 

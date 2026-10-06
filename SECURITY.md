@@ -2,7 +2,7 @@
 
 ## Current support
 
-KNOW/OS is pre-release. Security reports apply to the current `main` branch.
+Estudisc is pre-release. Security reports apply to the current `main` branch.
 
 ## Core security invariants
 

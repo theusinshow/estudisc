@@ -7,7 +7,7 @@ const configuredEnv = getServerEnv({
   AUTH_SECRET: "12345678901234567890123456789012",
   AUTH_GOOGLE_ID: "google-client-id",
   AUTH_GOOGLE_SECRET: "google-client-secret",
-  KNOW_OS_ALLOWED_GOOGLE_EMAILS: "owner@example.com"
+  ESTUDISC_ALLOWED_GOOGLE_EMAILS: "owner@example.com"
 });
 
 describe("session guard", () => {

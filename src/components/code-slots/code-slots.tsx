@@ -1,7 +1,7 @@
 'use client';
 
 // Adapted from React Bits "Code Slots" (https://reactbits.dev/c/micro/code-slots, MIT + Commons Clause,
-// (c) 2026 David Haz). KNOW/OS changes: colors/sizes come from design tokens in globals.css instead of an
+// (c) 2026 David Haz). Estudisc changes: colors/sizes come from design tokens in globals.css instead of an
 // inline style attribute (blocked by our CSP), lucide icon, Portuguese labels.
 
 import React, { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';

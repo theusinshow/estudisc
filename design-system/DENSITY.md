@@ -1,4 +1,4 @@
-# KNOW/OS — Densidade
+# Estudisc — Densidade
 
 ## Regimes
 

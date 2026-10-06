@@ -1,4 +1,4 @@
-# KNOW/OS — Acessibilidade
+# Estudisc — Acessibilidade
 
 Este documento tem precedência máxima.
 

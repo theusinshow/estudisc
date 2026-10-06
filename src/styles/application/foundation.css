@@ -1,0 +1,597 @@
+* {
+  box-sizing: border-box;
+}
+
+
+a {
+  color: inherit;
+}
+
+@keyframes estudisc-surface-enter {
+  from {
+    opacity: 0.86;
+    transform: translateY(var(--estudisc-motion-travel-max));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes estudisc-state-enter {
+  from {
+    opacity: 0.9;
+    transform: translateY(var(--estudisc-motion-travel-min));
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:focus-visible {
+  outline: var(--estudisc-focus-width) var(--estudisc-focus-style) var(--estudisc-focus-color);
+  outline-offset: var(--estudisc-focus-offset);
+}
+
+::selection {
+  background: var(--estudisc-editor-selection);
+}
+
+.content-panel h1 {
+  max-width: 18ch;
+}
+
+.content-panel > h1 {
+  max-width: none;
+}
+
+.record-list,
+.concept-list {
+  display: grid;
+  gap: var(--estudisc-spacing-4);
+  margin: var(--estudisc-spacing-8) 0 0;
+  padding: 0;
+}
+
+.foundation-panel > .record-list,
+.foundation-panel > .concept-list {
+  margin: var(--estudisc-spacing-10) var(--estudisc-spacing-12) 0;
+}
+
+.record-list {
+  list-style: none;
+}
+
+.record-list li > a,
+.record-list li > div,
+.concept-list li,
+.concept-list a {
+  display: grid;
+  gap: var(--estudisc-spacing-2);
+}
+
+.record-list > li,
+.concept-list > li,
+.module-stack > *,
+.lesson-blocks > *,
+.auth-status > div {
+  animation: estudisc-state-enter var(--estudisc-motion-base) var(--estudisc-motion-easing);
+}
+
+.concept-list li,
+.record-list li > a,
+.record-list li > div {
+  border: var(--estudisc-border-hair) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-paper);
+  box-shadow: var(--estudisc-shadow-pressed);
+  padding: var(--estudisc-spacing-8);
+  transition:
+    background-color var(--estudisc-motion-fast) var(--estudisc-motion-linear),
+    box-shadow var(--estudisc-motion-fast) var(--estudisc-motion-easing),
+    transform var(--estudisc-motion-fast) var(--estudisc-motion-easing);
+}
+
+.concept-list a {
+  text-decoration: none;
+}
+
+.record-list li > a,
+.record-list li > div {
+  min-height: var(--estudisc-touch-minimum);
+  text-decoration: none;
+}
+
+.record-list li:nth-child(even) > a,
+.record-list li:nth-child(even) > div,
+.concept-list li:nth-child(even) {
+  background: var(--estudisc-color-panel);
+}
+
+.record-list li > div {
+  background: var(--estudisc-color-dimmed-paper);
+}
+
+.concept-list li:has(a:hover),
+.concept-list li:focus-within,
+.record-list li > a:hover,
+.record-list li > a:focus-visible {
+  background: color-mix(in srgb, var(--estudisc-color-paper) 84%, var(--estudisc-color-signal));
+  box-shadow: var(--estudisc-shadow-raised);
+  transform: translateY(calc(-1 * var(--estudisc-motion-travel-min)));
+}
+
+.record-list strong,
+.concept-list strong,
+.module-section h2 {
+  font-weight: var(--estudisc-typography-body-weights-bold);
+}
+
+.record-list span,
+.record-list small,
+.concept-list span {
+  color: var(--estudisc-color-dim);
+  font-size: var(--estudisc-typography-body-sizes-sm);
+}
+
+.record-list small {
+  font-family: var(--estudisc-typography-technical-family), monospace;
+  letter-spacing: var(--estudisc-typography-technical-tracking);
+  text-transform: uppercase;
+}
+
+.inline-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--estudisc-spacing-2) var(--estudisc-spacing-6);
+  margin: var(--estudisc-spacing-2) 0;
+  padding: 0;
+  color: var(--estudisc-color-dim);
+  font-size: var(--estudisc-typography-body-sizes-sm);
+  list-style: none;
+}
+
+.module-stack,
+.module-section,
+.lesson-blocks {
+  display: grid;
+  gap: var(--estudisc-spacing-8);
+  margin-top: var(--estudisc-spacing-10);
+}
+
+.module-section {
+  border: var(--estudisc-border-rule) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-panel);
+  box-shadow: var(--estudisc-shadow-pressed);
+  padding: var(--estudisc-spacing-8);
+}
+
+.foundation-panel > .module-section,
+.foundation-panel > .module-stack,
+.foundation-panel > .lesson-blocks,
+.foundation-panel > .import-workspace {
+  margin: var(--estudisc-spacing-10) var(--estudisc-spacing-12) 0;
+}
+
+.foundation-panel > .module-section:last-child,
+.foundation-panel > .module-stack:last-child,
+.foundation-panel > .lesson-blocks:last-child,
+.foundation-panel > .import-workspace:last-child,
+.foundation-panel > .record-list:last-child,
+.foundation-panel > .concept-list:last-child {
+  margin-bottom: var(--estudisc-spacing-12);
+}
+
+.module-section h2 {
+  border-bottom: var(--estudisc-border-hair) solid var(--estudisc-color-ink);
+  margin: 0;
+  padding-bottom: var(--estudisc-spacing-5);
+  font-size: var(--estudisc-typography-body-sizes-lg);
+}
+
+.module-disclosure {
+  padding: 0;
+}
+
+.module-disclosure summary {
+  min-height: var(--estudisc-touch-minimum);
+  cursor: pointer;
+  display: grid;
+  gap: var(--estudisc-spacing-2);
+  padding: var(--estudisc-spacing-8);
+}
+
+.module-disclosure summary::marker {
+  font-family: var(--estudisc-typography-technical-family), monospace;
+}
+
+.module-disclosure summary h2 {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.module-disclosure summary > span:last-child {
+  color: var(--estudisc-color-dim);
+  font-size: var(--estudisc-typography-body-sizes-sm);
+}
+
+.module-disclosure > .record-list,
+.module-disclosure > p {
+  margin: 0 var(--estudisc-spacing-8) var(--estudisc-spacing-8);
+}
+
+.knowledge-map-sections {
+  display: grid;
+  gap: var(--estudisc-spacing-8);
+  margin: var(--estudisc-spacing-10) var(--estudisc-spacing-12) var(--estudisc-spacing-12);
+}
+
+.knowledge-map-sections .module-section {
+  margin: 0;
+}
+
+.lesson-flow-nav {
+  display: grid;
+  gap: var(--estudisc-spacing-4);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.foundation-panel > .lesson-flow-nav {
+  margin: var(--estudisc-spacing-10) var(--estudisc-spacing-12) 0;
+}
+
+.lesson-flow-nav a {
+  min-height: var(--estudisc-touch-minimum);
+  display: grid;
+  gap: var(--estudisc-spacing-2);
+  border: var(--estudisc-border-hair) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-paper);
+  box-shadow: var(--estudisc-shadow-pressed);
+  padding: var(--estudisc-spacing-5);
+  text-decoration: none;
+  transition:
+    background-color var(--estudisc-motion-fast) var(--estudisc-motion-linear),
+    box-shadow var(--estudisc-motion-fast) var(--estudisc-motion-easing),
+    transform var(--estudisc-motion-fast) var(--estudisc-motion-easing);
+}
+
+.lesson-flow-nav a:hover,
+.lesson-flow-nav a:focus-visible {
+  background: color-mix(in srgb, var(--estudisc-color-paper) 84%, var(--estudisc-area-accent, var(--estudisc-color-signal)));
+  box-shadow: var(--estudisc-shadow-raised);
+  transform: translateY(calc(-1 * var(--estudisc-motion-travel-min)));
+}
+
+.lesson-flow-nav span {
+  color: var(--estudisc-color-dim);
+  font-family: var(--estudisc-typography-technical-family), monospace;
+  font-size: var(--estudisc-typography-technical-sizes-xs);
+  font-weight: var(--estudisc-typography-technical-weights-bold);
+  letter-spacing: var(--estudisc-typography-technical-tracking);
+}
+
+.lesson-flow-nav strong {
+  font-size: var(--estudisc-typography-body-sizes-sm);
+}
+
+.concept-list {
+  list-style-position: inside;
+}
+
+.lesson-text {
+  max-width: 68ch;
+  margin: 0;
+  border: var(--estudisc-border-hair) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-paper);
+  box-shadow: var(--estudisc-shadow-pressed);
+  padding: var(--estudisc-spacing-8);
+  animation: estudisc-state-enter var(--estudisc-motion-base) var(--estudisc-motion-easing);
+}
+
+.mastery-panel {
+  display: grid;
+  gap: var(--estudisc-spacing-6);
+  border: var(--estudisc-border-rule) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-paper);
+  box-shadow: var(--estudisc-shadow-pressed);
+  padding: var(--estudisc-spacing-8);
+  animation: estudisc-state-enter var(--estudisc-motion-base) var(--estudisc-motion-easing);
+  transition:
+    box-shadow var(--estudisc-motion-fast) var(--estudisc-motion-easing),
+    transform var(--estudisc-motion-fast) var(--estudisc-motion-easing);
+}
+
+.mastery-panel:hover {
+  box-shadow: var(--estudisc-shadow-raised);
+  transform: translateY(calc(-1 * var(--estudisc-motion-travel-min)));
+}
+
+.technical-label {
+  margin: 0;
+  color: var(--estudisc-color-dim);
+  font-family: var(--estudisc-typography-technical-family), monospace;
+  font-size: var(--estudisc-typography-technical-sizes-sm);
+  letter-spacing: var(--estudisc-typography-technical-tracking);
+  text-transform: uppercase;
+}
+
+.mastery-score {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--estudisc-spacing-4);
+  align-items: baseline;
+  margin: 0;
+  font-size: var(--estudisc-typography-body-sizes-lg);
+  font-weight: var(--estudisc-typography-body-weights-bold);
+}
+
+.mastery-score span {
+  font-family: var(--estudisc-typography-technical-family), monospace;
+  font-size: var(--estudisc-typography-body-sizes-sm);
+}
+
+.mastery-panel ul {
+  display: grid;
+  gap: var(--estudisc-spacing-2);
+  margin: 0;
+  padding-left: var(--estudisc-spacing-10);
+}
+
+.machine-block {
+  overflow-x: auto;
+  margin: 0;
+  border: var(--estudisc-border-rule) solid var(--estudisc-color-machine-rule);
+  background: var(--estudisc-color-machine);
+  color: var(--estudisc-color-machine-text);
+  font-family: var(--estudisc-typography-code-family), monospace;
+  font-size: var(--estudisc-typography-code-size);
+  line-height: var(--estudisc-typography-code-leading);
+  padding: var(--estudisc-spacing-8);
+}
+
+.machine-block-figure {
+  display: grid;
+  margin: 0;
+}
+
+.machine-block-figure figcaption {
+  border: var(--estudisc-border-rule) solid var(--estudisc-color-machine-rule);
+  border-bottom: 0;
+  background: var(--estudisc-color-machine);
+  color: var(--estudisc-terminal-system);
+  font-family: var(--estudisc-typography-technical-family), monospace;
+  font-size: var(--estudisc-typography-technical-sizes-sm);
+  letter-spacing: var(--estudisc-typography-technical-tracking);
+  padding: var(--estudisc-spacing-4) var(--estudisc-spacing-6);
+  text-transform: uppercase;
+}
+
+.lesson-callout {
+  display: grid;
+  gap: var(--estudisc-spacing-4);
+  border: var(--estudisc-border-rule) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-paper);
+  box-shadow: var(--estudisc-shadow-pressed);
+  padding: var(--estudisc-spacing-8);
+  animation: estudisc-state-enter var(--estudisc-motion-base) var(--estudisc-motion-easing);
+  transition:
+    background-color var(--estudisc-motion-fast) var(--estudisc-motion-linear),
+    box-shadow var(--estudisc-motion-fast) var(--estudisc-motion-easing),
+    transform var(--estudisc-motion-fast) var(--estudisc-motion-easing);
+}
+
+
+.lesson-callout:hover {
+  box-shadow: var(--estudisc-shadow-window);
+  transform: translateY(calc(-1 * var(--estudisc-motion-travel-min)));
+}
+
+.study-next-action {
+  background: color-mix(in srgb, var(--estudisc-color-paper) 72%, var(--estudisc-area-accent, var(--estudisc-color-signal)));
+  color: var(--estudisc-color-ink);
+}
+
+.lesson-callout[data-variant="warning"],
+.lesson-callout[data-variant="invalid"] {
+  box-shadow: inset 0 0 0 var(--estudisc-border-rule) var(--estudisc-color-warning), var(--estudisc-shadow-pressed);
+}
+
+.lesson-callout[data-variant="concept"] {
+  background: var(--estudisc-color-panel);
+}
+
+.lesson-callout-label {
+  width: fit-content;
+  border: var(--estudisc-border-hair) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-signal);
+  color: var(--estudisc-color-signal-ink);
+  font-family: var(--estudisc-typography-technical-family), monospace;
+  font-size: var(--estudisc-typography-technical-sizes-xs);
+  font-weight: var(--estudisc-typography-technical-weights-bold);
+  letter-spacing: var(--estudisc-typography-technical-tracking);
+  padding: var(--estudisc-spacing-1) var(--estudisc-spacing-3);
+  text-transform: uppercase;
+}
+
+.lesson-callout p {
+  margin: 0;
+}
+
+.lesson-callout > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.first-run-callout {
+  gap: var(--estudisc-spacing-6);
+}
+
+.first-run-callout > strong {
+  font-size: var(--estudisc-typography-body-sizes-lg);
+}
+
+.first-run-steps {
+  display: grid;
+  gap: var(--estudisc-spacing-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.first-run-steps li {
+  display: grid;
+  gap: var(--estudisc-spacing-2);
+  border: var(--estudisc-border-hair) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-dimmed-paper);
+  padding: var(--estudisc-spacing-5);
+}
+
+.first-run-steps span {
+  color: var(--estudisc-color-dim);
+  font-size: var(--estudisc-typography-body-sizes-sm);
+}
+
+.first-run-callout .primary-action {
+  width: fit-content;
+}
+
+.activity-stack,
+.activity-panel {
+  display: grid;
+  gap: var(--estudisc-spacing-8);
+}
+
+.import-workspace {
+  display: grid;
+  gap: var(--estudisc-spacing-8);
+  margin-top: var(--estudisc-spacing-10);
+}
+
+.import-intent-panel {
+  display: grid;
+  gap: var(--estudisc-spacing-6);
+  border: var(--estudisc-border-rule) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-paper);
+  box-shadow: var(--estudisc-shadow-pressed);
+  padding: var(--estudisc-spacing-8);
+}
+
+.import-intent-selector {
+  display: grid;
+  gap: var(--estudisc-spacing-5);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.import-intent-option {
+  min-height: var(--estudisc-touch-minimum);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: var(--estudisc-spacing-5);
+  border: var(--estudisc-border-rule) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-panel);
+  color: var(--estudisc-color-ink);
+  cursor: pointer;
+  padding: var(--estudisc-spacing-6);
+  text-align: left;
+  transition:
+    box-shadow var(--estudisc-motion-fast) var(--estudisc-motion-easing),
+    transform var(--estudisc-motion-fast) var(--estudisc-motion-easing),
+    background-color var(--estudisc-motion-fast) var(--estudisc-motion-linear);
+}
+
+.import-intent-option[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--estudisc-color-signal) 40%, var(--estudisc-color-paper));
+  box-shadow: var(--estudisc-shadow-raised);
+  transform: translate(
+    calc(-1 * var(--estudisc-motion-travel-min)),
+    calc(-1 * var(--estudisc-motion-travel-min))
+  );
+}
+
+.import-intent-option:hover,
+.import-intent-option:focus-visible {
+  box-shadow: var(--estudisc-shadow-raised);
+}
+
+.import-intent-option svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-top: var(--estudisc-spacing-1);
+}
+
+.import-intent-option span {
+  display: grid;
+  gap: var(--estudisc-spacing-2);
+}
+
+.import-intent-option strong {
+  font-family: var(--estudisc-typography-technical-family), monospace;
+  font-size: var(--estudisc-typography-technical-sizes-sm);
+  letter-spacing: var(--estudisc-typography-technical-tracking);
+  text-transform: uppercase;
+}
+
+.import-intent-option small {
+  color: var(--estudisc-color-dim);
+  font-size: var(--estudisc-typography-body-sizes-sm);
+  line-height: 1.35;
+}
+
+.import-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--estudisc-spacing-6);
+}
+
+.generation-mode-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--estudisc-spacing-4);
+}
+
+.generation-panel,
+.import-step-panel {
+  display: grid;
+  gap: var(--estudisc-spacing-8);
+  border: var(--estudisc-border-rule) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-paper);
+  box-shadow: var(--estudisc-shadow-pressed);
+  padding: var(--estudisc-spacing-8);
+}
+
+.generation-workflow {
+  display: grid;
+  gap: var(--estudisc-spacing-6);
+}
+
+.generation-form {
+  display: grid;
+  gap: var(--estudisc-spacing-6);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.generation-form label {
+  display: grid;
+  gap: var(--estudisc-spacing-3);
+}
+
+.generation-form input,
+.generation-form textarea {
+  min-height: var(--estudisc-touch-minimum);
+  border: var(--estudisc-border-rule) solid var(--estudisc-color-ink);
+  background: var(--estudisc-color-dimmed-paper);
+  color: var(--estudisc-color-ink);
+  font: inherit;
+  padding: var(--estudisc-spacing-5);
+}
+
+.generation-form textarea {
+  resize: vertical;
+}
+
+.generation-form-wide {
+  grid-column: 1 / -1;
+}

@@ -1,0 +1,515 @@
+{
+  "lesson": {
+    "id": "POR-16",
+    "subject": "POR",
+    "title": "Figuras de linguagem e efeitos de sentido",
+    "module": "Sentido e conexão",
+    "priority": "P0",
+    "status": "IMPORT_READY",
+    "estimatedMinutes": 22,
+    "masteryTarget": "Reconhecer figuras frequentes e explicar seu efeito no texto.",
+    "sourceRefs": [
+      "POR-SRC-001",
+      "POR-SRC-021",
+      "POR-SRC-033",
+      "POR-SRC-038"
+    ],
+    "conceptRefs": [
+      "POR-16-C01",
+      "POR-16-C02",
+      "POR-16-C03",
+      "POR-16-C04",
+      "POR-16-C05",
+      "POR-16-C06"
+    ],
+    "blocks": [
+      {
+        "type": "HOOK",
+        "title": "Leia como a prova lê",
+        "content": "Depois de esperar duas horas, alguém diz: “Que atendimento rápido!”."
+      },
+      {
+        "type": "LEARNING_GOALS",
+        "items": [
+          "Reconhecer figuras frequentes e explicar seu efeito no texto.",
+          "Justificar respostas com evidência linguística ou textual.",
+          "Evitar regras absolutas quando o fenômeno depende do contexto."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 1",
+        "paragraphs": [
+          "Metáfora aproxima campos de sentido implicitamente; comparação explicita a relação com marcas comparativas.",
+          "Metonímia substitui um termo por outro associado por proximidade de sentido.",
+          "Hipérbole intensifica por exagero; eufemismo atenua formulação potencialmente dura."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 2",
+        "paragraphs": [
+          "Ironia pode produzir sentido oposto/crítico ao literal e depende fortemente do contexto.",
+          "Personificação atribui características ou ações humanas a seres não humanos ou abstratos.",
+          "Em prova, é essencial relacionar a figura ao efeito: humor, crítica, intensificação, suavização, aproximação ou estranhamento."
+        ]
+      },
+      {
+        "type": "KEY_TERMS",
+        "items": [
+          {
+            "term": "metáfora",
+            "conceptRef": "POR-16-C01"
+          },
+          {
+            "term": "comparação",
+            "conceptRef": "POR-16-C02"
+          },
+          {
+            "term": "metonímia",
+            "conceptRef": "POR-16-C03"
+          },
+          {
+            "term": "ironia",
+            "conceptRef": "POR-16-C04"
+          },
+          {
+            "term": "hipérbole",
+            "conceptRef": "POR-16-C05"
+          },
+          {
+            "term": "personificação",
+            "conceptRef": "POR-16-C06"
+          }
+        ]
+      },
+      {
+        "type": "MISCONCEPTION_CHECK",
+        "items": [
+          {
+            "claim": "Toda frase não literal é metáfora.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Ironia é simplesmente mentira.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Figuras só aparecem em poemas.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Basta saber o nome da figura.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          }
+        ]
+      },
+      {
+        "type": "WORKED_EXAMPLE",
+        "stimulus": "Depois de esperar duas horas, alguém diz: “Que atendimento rápido!”.",
+        "analysis": "O contraste entre situação e formulação positiva produz ironia, com efeito crítico/humorístico."
+      },
+      {
+        "type": "ACTIVE_LEARNING",
+        "title": "Atividade de aplicação",
+        "steps": [
+          "Associe exemplos a figuras e explique o efeito.",
+          "Transforme uma frase literal em metáfora, comparação e hipérbole.",
+          "Analise uma charge original e localize o recurso central."
+        ],
+        "evidence": "Resposta curta ou classificação justificada."
+      },
+      {
+        "type": "IFSC_STRATEGY",
+        "content": "Pergunte primeiro “o que essa escolha faz no texto?” e só depois nomeie."
+      },
+      {
+        "type": "SUMMARY",
+        "items": [
+          "Metáfora aproxima campos de sentido implicitamente; comparação explicita a relação com marcas comparativas.",
+          "Metonímia substitui um termo por outro associado por proximidade de sentido.",
+          "Hipérbole intensifica por exagero; eufemismo atenua formulação potencialmente dura.",
+          "Ironia pode produzir sentido oposto/crítico ao literal e depende fortemente do contexto.",
+          "Personificação atribui características ou ações humanas a seres não humanos ou abstratos.",
+          "Em prova, é essencial relacionar a figura ao efeito: humor, crítica, intensificação, suavização, aproximação ou estranhamento."
+        ]
+      },
+      {
+        "type": "EXIT_TICKET",
+        "prompt": "Explique o princípio mais importante de Figuras de linguagem e efeitos de sentido e crie um exemplo próprio."
+      }
+    ],
+    "media": {
+      "deterministicAssetRefs": [
+        "POR-ASSET-09"
+      ],
+      "antigravityRefs": [],
+      "authenticMediaRefs": [
+        "POR-MEDIA-01",
+        "POR-MEDIA-02"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "POR-16-Q01",
+      "lessonId": "POR-16",
+      "type": "MCQ",
+      "stem": "Qual afirmação descreve corretamente Figuras de linguagem e efeitos de sentido em uso real da língua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ironia é simplesmente mentira."
+        },
+        {
+          "id": "B",
+          "text": "Figuras só aparecem em poemas."
+        },
+        {
+          "id": "C",
+          "text": "Basta saber o nome da figura."
+        },
+        {
+          "id": "D",
+          "text": "Metáfora aproxima campos de sentido implicitamente; comparação explicita a relação com marcas comparativas."
+        },
+        {
+          "id": "E",
+          "text": "Toda frase não literal é metáfora."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Metáfora aproxima campos de sentido implicitamente; comparação explicita a relação com marcas comparativas.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
+      "concepts": [
+        "POR-16-C01"
+      ],
+      "targetedError": "Toda frase não literal é metáfora.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-16-Q02",
+      "lessonId": "POR-16",
+      "type": "MCQ",
+      "stem": "Em uma questão contextualizada sobre Figuras de linguagem e efeitos de sentido, qual princípio deve orientar a análise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Metonímia substitui um termo por outro associado por proximidade de sentido."
+        },
+        {
+          "id": "B",
+          "text": "Figuras só aparecem em poemas."
+        },
+        {
+          "id": "C",
+          "text": "Basta saber o nome da figura."
+        },
+        {
+          "id": "D",
+          "text": "Toda frase não literal é metáfora."
+        },
+        {
+          "id": "E",
+          "text": "Ironia é simplesmente mentira."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Metonímia substitui um termo por outro associado por proximidade de sentido.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
+      "concepts": [
+        "POR-16-C02"
+      ],
+      "targetedError": "Ironia é simplesmente mentira.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-16-Q03",
+      "lessonId": "POR-16",
+      "type": "MCQ",
+      "stem": "Qual alternativa evita uma generalização inadequada sobre Figuras de linguagem e efeitos de sentido?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Basta saber o nome da figura."
+        },
+        {
+          "id": "B",
+          "text": "Toda frase não literal é metáfora."
+        },
+        {
+          "id": "C",
+          "text": "Hipérbole intensifica por exagero; eufemismo atenua formulação potencialmente dura."
+        },
+        {
+          "id": "D",
+          "text": "Ironia é simplesmente mentira."
+        },
+        {
+          "id": "E",
+          "text": "Figuras só aparecem em poemas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Hipérbole intensifica por exagero; eufemismo atenua formulação potencialmente dura.",
+      "difficulty": "applied",
+      "cognitiveOperation": "discriminate",
+      "concepts": [
+        "POR-16-C03"
+      ],
+      "targetedError": "Figuras só aparecem em poemas.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-16-Q04",
+      "lessonId": "POR-16",
+      "type": "MCQ",
+      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Figuras de linguagem e efeitos de sentido?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Toda frase não literal é metáfora."
+        },
+        {
+          "id": "B",
+          "text": "Ironia é simplesmente mentira."
+        },
+        {
+          "id": "C",
+          "text": "Figuras só aparecem em poemas."
+        },
+        {
+          "id": "D",
+          "text": "Basta saber o nome da figura."
+        },
+        {
+          "id": "E",
+          "text": "Ironia pode produzir sentido oposto/crítico ao literal e depende fortemente do contexto."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Ironia pode produzir sentido oposto/crítico ao literal e depende fortemente do contexto.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-16-C04"
+      ],
+      "targetedError": "Basta saber o nome da figura.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-16-Q05",
+      "lessonId": "POR-16",
+      "type": "MCQ",
+      "stem": "Qual critério é seguro para resolver uma questão sobre Figuras de linguagem e efeitos de sentido?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ironia é simplesmente mentira."
+        },
+        {
+          "id": "B",
+          "text": "Personificação atribui características ou ações humanas a seres não humanos ou abstratos."
+        },
+        {
+          "id": "C",
+          "text": "Figuras só aparecem em poemas."
+        },
+        {
+          "id": "D",
+          "text": "Basta saber o nome da figura."
+        },
+        {
+          "id": "E",
+          "text": "Toda frase não literal é metáfora."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Personificação atribui características ou ações humanas a seres não humanos ou abstratos.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
+      "concepts": [
+        "POR-16-C05"
+      ],
+      "targetedError": "Toda frase não literal é metáfora.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-16-Q06",
+      "lessonId": "POR-16",
+      "type": "MCQ",
+      "stem": "Ao comparar alternativas sobre Figuras de linguagem e efeitos de sentido, qual análise está correta?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Figuras só aparecem em poemas."
+        },
+        {
+          "id": "B",
+          "text": "Basta saber o nome da figura."
+        },
+        {
+          "id": "C",
+          "text": "Toda frase não literal é metáfora."
+        },
+        {
+          "id": "D",
+          "text": "Em prova, é essencial relacionar a figura ao efeito: humor, crítica, intensificação, suavização, aproximação ou estranhamento."
+        },
+        {
+          "id": "E",
+          "text": "Ironia é simplesmente mentira."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Em prova, é essencial relacionar a figura ao efeito: humor, crítica, intensificação, suavização, aproximação ou estranhamento.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-16-C06"
+      ],
+      "targetedError": "Ironia é simplesmente mentira.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-16-Q07",
+      "lessonId": "POR-16",
+      "type": "MCQ",
+      "stem": "Um estudante afirma: “Toda frase não literal é metáfora.”. Qual é a melhor correção?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+        },
+        {
+          "id": "B",
+          "text": "A generalização deve ser aceita sem verificar contexto."
+        },
+        {
+          "id": "C",
+          "text": "A melhor estratégia é decorar a frase."
+        },
+        {
+          "id": "D",
+          "text": "Não há critério linguístico para avaliar a afirmação."
+        },
+        {
+          "id": "E",
+          "text": "Basta escolher a alternativa mais longa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Metáfora aproxima campos de sentido implicitamente; comparação explicita a relação com marcas comparativas.",
+      "difficulty": "applied",
+      "cognitiveOperation": "diagnose_error",
+      "concepts": [
+        "POR-16-C01"
+      ],
+      "targetedError": "Toda frase não literal é metáfora.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-16-Q08",
+      "lessonId": "POR-16",
+      "type": "MCQ",
+      "stimulus": "Depois de esperar duas horas, alguém diz: “Que atendimento rápido!”.",
+      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O trecho não permite nenhuma análise."
+        },
+        {
+          "id": "B",
+          "text": "A única tarefa é classificar todas as palavras."
+        },
+        {
+          "id": "C",
+          "text": "O contraste entre situação e formulação positiva produz ironia, com efeito crítico/humorístico."
+        },
+        {
+          "id": "D",
+          "text": "A análise depende apenas do tamanho do trecho."
+        },
+        {
+          "id": "E",
+          "text": "Qualquer interpretação é igualmente válida."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "O contraste entre situação e formulação positiva produz ironia, com efeito crítico/humorístico.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-16-C01",
+        "POR-16-C02"
+      ],
+      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
+      "provenance": "VECTA_ORIGINAL"
+    }
+  ],
+  "concepts": [
+    {
+      "editorialConceptId": "POR-16-C01",
+      "lessonId": "POR-16",
+      "name": "metáfora",
+      "masteryTarget": "Metáfora aproxima campos de sentido implicitamente; comparação explicita a relação com marcas comparativas.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-16-C02",
+      "lessonId": "POR-16",
+      "name": "comparação",
+      "masteryTarget": "Metonímia substitui um termo por outro associado por proximidade de sentido.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-16-C03",
+      "lessonId": "POR-16",
+      "name": "metonímia",
+      "masteryTarget": "Hipérbole intensifica por exagero; eufemismo atenua formulação potencialmente dura.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-16-C04",
+      "lessonId": "POR-16",
+      "name": "ironia",
+      "masteryTarget": "Ironia pode produzir sentido oposto/crítico ao literal e depende fortemente do contexto.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-16-C05",
+      "lessonId": "POR-16",
+      "name": "hipérbole",
+      "masteryTarget": "Personificação atribui características ou ações humanas a seres não humanos ou abstratos.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-16-C06",
+      "lessonId": "POR-16",
+      "name": "personificação",
+      "masteryTarget": "Em prova, é essencial relacionar a figura ao efeito: humor, crítica, intensificação, suavização, aproximação ou estranhamento.",
+      "status": "EDITORIAL"
+    }
+  ],
+  "qa": {
+    "lessonId": "POR-16",
+    "status": "PASS",
+    "checks": {
+      "sourceRefsResolve": true,
+      "questionCount": 8,
+      "eachQuestionHasFiveOptions": true,
+      "originalCoreContent": true
+    },
+    "editorialCautions": [
+      "Final VECTA schema must be reconciled by integration Maestro.",
+      "Question distractors should receive final spot-check after import/render."
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-# KNOW/OS Documentation Index
+# Estudisc Documentation Index
 
 ## IFSC expansion
 

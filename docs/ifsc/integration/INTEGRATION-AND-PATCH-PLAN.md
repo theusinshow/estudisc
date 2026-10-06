@@ -1,10 +1,10 @@
-# KNOW/OS Core Integration and Patch Plan
+# Estudisc Core Integration and Patch Plan
 
 Status: **Accepted**
 
 ## Principle
 
-Patch the existing KNOW/OS source-of-truth documents in place. Do not create a competing architecture.
+Patch the existing Estudisc source-of-truth documents in place. Do not create a competing architecture.
 
 ## Preserve
 

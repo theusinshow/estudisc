@@ -1,0 +1,520 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "GH-24",
+    "subject": "GH",
+    "title": "Ambiente e transformação das paisagens brasileiras",
+    "unit": "Brasil",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+    "concepts": [
+      {
+        "id": "GH-24-CON-01",
+        "name": "Biomas",
+        "masteryTarget": "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas."
+      },
+      {
+        "id": "GH-24-CON-02",
+        "name": "Uso da terra",
+        "masteryTarget": "Queimadas e desmatamento alteram vegetação, biodiversidade, solos, ciclos de água e emissões de gases de efeito estufa."
+      },
+      {
+        "id": "GH-24-CON-03",
+        "name": "Desmatamento e queimadas",
+        "masteryTarget": "Urbanização modifica drenagem, impermeabilização do solo, ilhas de calor e demanda por água e energia."
+      },
+      {
+        "id": "GH-24-CON-04",
+        "name": "Recursos hídricos",
+        "masteryTarget": "Grandes obras, mineração e expansão agropecuária podem gerar benefícios econômicos e também conflitos e impactos territoriais."
+      },
+      {
+        "id": "GH-24-CON-05",
+        "name": "Urbanização",
+        "masteryTarget": "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas."
+      },
+      {
+        "id": "GH-24-CON-06",
+        "name": "Mudanças climáticas como contexto",
+        "masteryTarget": "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "GH-24-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "A transformação das paisagens brasileiras combina expansão urbana, agricultura, infraestrutura, mineração e conservação."
+      },
+      {
+        "id": "GH-24-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar os conceitos centrais de Ambiente e transformação das paisagens brasileiras em linguagem própria.",
+          "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+          "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+        ]
+      },
+      {
+        "id": "GH-24-B03",
+        "type": "EXPLANATION",
+        "title": "Ideia central",
+        "content": "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas. Queimadas e desmatamento alteram vegetação, biodiversidade, solos, ciclos de água e emissões de gases de efeito estufa.",
+        "items": [
+          "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas.",
+          "Queimadas e desmatamento alteram vegetação, biodiversidade, solos, ciclos de água e emissões de gases de efeito estufa."
+        ]
+      },
+      {
+        "id": "GH-24-B04",
+        "type": "EXPLANATION",
+        "title": "Como as relações se organizam",
+        "content": "Urbanização modifica drenagem, impermeabilização do solo, ilhas de calor e demanda por água e energia. Grandes obras, mineração e expansão agropecuária podem gerar benefícios econômicos e também conflitos e impactos territoriais.",
+        "items": [
+          "Urbanização modifica drenagem, impermeabilização do solo, ilhas de calor e demanda por água e energia.",
+          "Grandes obras, mineração e expansão agropecuária podem gerar benefícios econômicos e também conflitos e impactos territoriais."
+        ]
+      },
+      {
+        "id": "GH-24-B05",
+        "type": "EXPLANATION",
+        "title": "O que conecta o tema à prova",
+        "content": "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas.",
+        "items": [
+          "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas.",
+          "Cruzar mapa de biomas, uso da terra e texto contextual para identificar causas e consequências territoriais."
+        ]
+      },
+      {
+        "id": "GH-24-B06",
+        "type": "CALLOUT",
+        "variant": "SOURCE_LITERACY",
+        "title": "Leia a fonte, não apenas o tema",
+        "items": [
+          "Cruzar mapa de biomas, uso da terra e texto contextual para identificar causas e consequências territoriais.",
+          "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+        ]
+      },
+      {
+        "id": "GH-24-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTION",
+        "title": "Erros que custam ponto",
+        "items": [
+          "Todos os biomas brasileiros possuem a mesma vegetação e clima.",
+          "Queimadas afetam apenas a área imediatamente queimada.",
+          "Urbanização não interfere em rios e drenagem.",
+          "Conservação significa necessariamente impedir qualquer presença humana."
+        ]
+      },
+      {
+        "id": "GH-24-B08",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Vocabulário essencial",
+        "items": [
+          "Biomas",
+          "Uso da terra",
+          "Desmatamento e queimadas",
+          "Recursos hídricos",
+          "Urbanização",
+          "Mudanças climáticas como contexto"
+        ]
+      },
+      {
+        "id": "GH-24-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Como resolver uma questão",
+        "prompt": "Uma questão apresenta uma fonte relacionada a Ambiente e transformação das paisagens brasileiras. Como decidir entre alternativas plausíveis?",
+        "answer": "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas.",
+        "reasoning": [
+          "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+          "Extraia da fonte apenas as evidências explícitas.",
+          "Ative o conceito da aula que explica a evidência.",
+          "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+          "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+        ]
+      },
+      {
+        "id": "GH-24-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Estratégia IFSC",
+        "items": [
+          "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+          "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+          "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+        ]
+      },
+      {
+        "id": "GH-24-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Material complementar",
+        "mediaRefs": [
+          "SRC-GH-001",
+          "SRC-GH-002",
+          "SRC-GH-056",
+          "SRC-GH-057"
+        ],
+        "optional": true
+      },
+      {
+        "id": "GH-24-B12",
+        "type": "COMPONENT_REQUEST",
+        "title": "Visual determinístico",
+        "requestRef": "DET-GH-24-001",
+        "status": "PENDING"
+      },
+      {
+        "id": "GH-24-B13",
+        "type": "SUMMARY",
+        "title": "Resumo para recuperar sem olhar",
+        "items": [
+          "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas.",
+          "Queimadas e desmatamento alteram vegetação, biodiversidade, solos, ciclos de água e emissões de gases de efeito estufa.",
+          "Urbanização modifica drenagem, impermeabilização do solo, ilhas de calor e demanda por água e energia.",
+          "Grandes obras, mineração e expansão agropecuária podem gerar benefícios econômicos e também conflitos e impactos territoriais.",
+          "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas."
+        ]
+      },
+      {
+        "id": "GH-24-B14",
+        "type": "EXIT_TICKET",
+        "title": "Saída rápida",
+        "prompt": "Em duas ou três frases, explique a ideia mais importante de Ambiente e transformação das paisagens brasileiras e cite um erro de interpretação que você evitaria numa questão.",
+        "answerGuide": "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas. Evite, por exemplo: Todos os biomas brasileiros possuem a mesma vegetação e clima."
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-GH-001",
+      "SRC-GH-001",
+      "SRC-GH-002",
+      "SRC-GH-056",
+      "SRC-GH-057",
+      "SRC-IFSC-GH-2026-1",
+      "SRC-IFSC-GH-2026-2"
+    ],
+    "mediaRefs": [
+      "SRC-GH-001",
+      "SRC-GH-002",
+      "SRC-GH-056",
+      "SRC-GH-057"
+    ],
+    "imageRequestRefs": [],
+    "editorialNotes": [
+      "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+      "Não publicar mídia externa sem revisão de licença e proveniência.",
+      "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+      "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+    ]
+  },
+  "questions": [
+    {
+      "id": "GH-24-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Em relação a Ambiente e transformação das paisagens brasileiras, qual afirmação está correta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        },
+        {
+          "key": "B",
+          "text": "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas."
+        },
+        {
+          "key": "C",
+          "text": "Queimadas afetam apenas a área imediatamente queimada."
+        },
+        {
+          "key": "D",
+          "text": "Urbanização não interfere em rios e drenagem."
+        },
+        {
+          "key": "E",
+          "text": "Conservação significa necessariamente impedir qualquer presença humana."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "RECALL",
+      "conceptIds": [
+        "GH-24-CON-01"
+      ],
+      "targetedError": "foundation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-24-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante diz: “Todos os biomas brasileiros possuem a mesma vegetação e clima.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        },
+        {
+          "key": "B",
+          "text": "Queimadas afetam apenas a área imediatamente queimada."
+        },
+        {
+          "key": "C",
+          "text": "Urbanização não interfere em rios e drenagem."
+        },
+        {
+          "key": "D",
+          "text": "Queimadas e desmatamento alteram vegetação, biodiversidade, solos, ciclos de água e emissões de gases de efeito estufa."
+        },
+        {
+          "key": "E",
+          "text": "Conservação significa necessariamente impedir qualquer presença humana."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Queimadas e desmatamento alteram vegetação, biodiversidade, solos, ciclos de água e emissões de gases de efeito estufa.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-24-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-24-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Considere a situação de partida da aula: A transformação das paisagens brasileiras combina expansão urbana, agricultura, infraestrutura, mineração e conservação. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        },
+        {
+          "key": "B",
+          "text": "Queimadas afetam apenas a área imediatamente queimada."
+        },
+        {
+          "key": "C",
+          "text": "Urbanização modifica drenagem, impermeabilização do solo, ilhas de calor e demanda por água e energia."
+        },
+        {
+          "key": "D",
+          "text": "Urbanização não interfere em rios e drenagem."
+        },
+        {
+          "key": "E",
+          "text": "Conservação significa necessariamente impedir qualquer presença humana."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Urbanização modifica drenagem, impermeabilização do solo, ilhas de calor e demanda por água e energia.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "GH-24-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-24-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "O IFSC pode apresentar Ambiente e transformação das paisagens brasileiras por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Grandes obras, mineração e expansão agropecuária podem gerar benefícios econômicos e também conflitos e impactos territoriais."
+        },
+        {
+          "key": "B",
+          "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        },
+        {
+          "key": "C",
+          "text": "Queimadas afetam apenas a área imediatamente queimada."
+        },
+        {
+          "key": "D",
+          "text": "Urbanização não interfere em rios e drenagem."
+        },
+        {
+          "key": "E",
+          "text": "Conservação significa necessariamente impedir qualquer presença humana."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Grandes obras, mineração e expansão agropecuária podem gerar benefícios econômicos e também conflitos e impactos territoriais.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "GH-24-CON-04"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-24-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas.\nII. Todos os biomas brasileiros possuem a mesma vegetação e clima.\nIII. Urbanização modifica drenagem, impermeabilização do solo, ilhas de calor e demanda por água e energia.\nIV. Queimadas afetam apenas a área imediatamente queimada.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-24-CON-01",
+        "GH-24-CON-02",
+        "GH-24-CON-03",
+        "GH-24-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-24-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma fonte foi apresentada numa questão sobre Ambiente e transformação das paisagens brasileiras. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        },
+        {
+          "key": "B",
+          "text": "Queimadas afetam apenas a área imediatamente queimada."
+        },
+        {
+          "key": "C",
+          "text": "Urbanização não interfere em rios e drenagem."
+        },
+        {
+          "key": "D",
+          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        },
+        {
+          "key": "E",
+          "text": "Cruzar mapa de biomas, uso da terra e texto contextual para identificar causas e consequências territoriais."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Cruzar mapa de biomas, uso da terra e texto contextual para identificar causas e consequências territoriais.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "conceptIds": [
+        "GH-24-CON-01",
+        "GH-24-CON-02",
+        "GH-24-CON-03",
+        "GH-24-CON-04",
+        "GH-24-CON-05",
+        "GH-24-CON-06"
+      ],
+      "targetedError": "source_interpretation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-24-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Ambiente e transformação das paisagens brasileiras?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas."
+        },
+        {
+          "key": "B",
+          "text": "Queimadas e desmatamento alteram vegetação, biodiversidade, solos, ciclos de água e emissões de gases de efeito estufa."
+        },
+        {
+          "key": "C",
+          "text": "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas."
+        },
+        {
+          "key": "D",
+          "text": "Urbanização não interfere em rios e drenagem."
+        },
+        {
+          "key": "E",
+          "text": "Grandes obras, mineração e expansão agropecuária podem gerar benefícios econômicos e também conflitos e impactos territoriais."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-24-CON-01",
+        "GH-24-CON-02",
+        "GH-24-CON-03",
+        "GH-24-CON-04",
+        "GH-24-CON-05",
+        "GH-24-CON-06"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-24-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Ambiente e transformação das paisagens brasileiras, qual conclusão final é sustentável?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        },
+        {
+          "key": "B",
+          "text": "Queimadas afetam apenas a área imediatamente queimada."
+        },
+        {
+          "key": "C",
+          "text": "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas."
+        },
+        {
+          "key": "D",
+          "text": "Urbanização não interfere em rios e drenagem."
+        },
+        {
+          "key": "E",
+          "text": "Conservação significa necessariamente impedir qualquer presença humana."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-24-CON-01",
+        "GH-24-CON-02",
+        "GH-24-CON-03",
+        "GH-24-CON-04",
+        "GH-24-CON-05",
+        "GH-24-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    }
+  ]
+}

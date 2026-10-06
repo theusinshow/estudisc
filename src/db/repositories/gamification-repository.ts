@@ -5,6 +5,7 @@ import { getDatabase } from "@/db/connection";
 import { badgeAwards, missionProgress, missionProgressEvents, owners } from "@/db/schema";
 import type * as schema from "@/db/schema";
 import type { GamificationSummary } from "@/features/gamification/gamification-rules";
+import { GAMIFICATION_POLICY_VERSION } from "@/features/gamification/study-rewards";
 
 type GamificationDatabase = PgDatabase<PgQueryResultHKT, typeof schema>;
 
@@ -44,8 +45,6 @@ export type GamificationPersistenceState = Readonly<{
   missionProgress: MissionProgressRecord[];
   missionEvents: MissionProgressEventRecord[];
 }>;
-
-const GAMIFICATION_POLICY_VERSION = "gamification.v1";
 
 export class GamificationRepository {
   constructor(private readonly db: GamificationDatabase = getDatabase()) {}

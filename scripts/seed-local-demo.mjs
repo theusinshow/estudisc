@@ -21,14 +21,16 @@ pack.track.modules.forEach(m => m.lessons.forEach(l => { l.status = "published";
 const require = createRequire(import.meta.url);
 const { loadEnvConfig } = require(require.resolve("@next/env", { paths: [require.resolve("next/package.json")] }));
 const { combinedEnv } = loadEnvConfig(process.cwd(), true, { info() {}, error() {} });
+const { getServerEnv } = await import("../src/lib/env.ts");
+const env = getServerEnv(combinedEnv);
 let cookie = "";
-if (combinedEnv.KNOW_OS_ACCOUNTS?.trim()) {
+if (env.ESTUDISC_ACCOUNTS?.trim()) {
   const emitWarning = process.emitWarning;
   process.emitWarning = (warning, ...rest) => { if (!String(warning).includes("Module type of")) emitWarning.call(process, warning, ...rest); };
   const { ACCOUNT_SESSION_COOKIE, createAccountSession, parseCodeAccounts } = await import("../src/features/auth/code-accounts.ts");
-  const admin = parseCodeAccounts(combinedEnv.KNOW_OS_ACCOUNTS).find(account => account.role === "ADMIN");
-  if (!admin) throw new Error("KNOW_OS_ACCOUNTS has no ADMIN account to load the demo content.");
-  cookie = `${ACCOUNT_SESSION_COOKIE}=${createAccountSession(admin, combinedEnv.AUTH_SECRET)}`;
+  const admin = parseCodeAccounts(env.ESTUDISC_ACCOUNTS).find(account => account.role === "ADMIN");
+  if (!admin) throw new Error("ESTUDISC_ACCOUNTS has no ADMIN account to load the demo content.");
+  cookie = `${ACCOUNT_SESSION_COOKIE}=${createAccountSession(admin, env.AUTH_SECRET)}`;
 }
 
 const post = async (path, data) => {

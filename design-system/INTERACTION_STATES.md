@@ -1,4 +1,4 @@
-# KNOW/OS — Estados de Interação
+# Estudisc — Estados de Interação
 
 ## Regra de comunicação
 

@@ -14,13 +14,13 @@ describe("RestorePreviewPanel", () => {
     const fetchMock = vi.fn(async () =>
       Response.json({
         status: "ready",
-        schema: "know-os.restore-preview.v1",
+        schema: "estudisc.restore-preview.v1",
         sourceExportedAt: "2026-07-30T12:00:00.000Z",
         applicationMode: "non_destructive_plan",
         categories: [],
         warnings: [],
         userStatePlan: {
-          schema: "know-os.user-state-restore-dry-run.v1",
+          schema: "estudisc.user-state-restore-dry-run.v1",
           mode: "user_state_dry_run",
           sourceExportFingerprint: "a".repeat(64),
           applyEnabled: false,

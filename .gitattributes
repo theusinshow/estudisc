@@ -12,3 +12,10 @@ packs/seeds/ifsc-2027.lesson-drafts/figures/**/*.svg text eol=lf
 packs/seeds/ifsc-2027.lesson-drafts/figures/GH-01/mapa-escala.svg text eol=crlf
 packs/seeds/ifsc-2027.lesson-drafts/figures/GH-01/mercator.svg text eol=crlf
 packs/seeds/ifsc-2027.lesson-drafts/figures/GH-01/seculos.svg text eol=crlf
+
+packs/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+vecta-source-library/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+estudisc-source-library/** -text
+
+# Markdown's two-space line breaks are intentional, including historical reports.
+*.md whitespace=-blank-at-eol

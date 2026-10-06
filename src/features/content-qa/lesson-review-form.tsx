@@ -4,6 +4,8 @@ import { useRouter } from "next/navigation";
 import { type FormEvent, useState } from "react";
 
 import { qaLayers } from "./policy";
+import { apiErrorSchema, readValidatedResponse } from "@/lib/api-response";
+import { lessonReviewOutcomeSchema, lessonReviewsResponseSchema } from "./response-contracts";
 
 type Layer = (typeof qaLayers)[number];
 type Severity = "" | "INFO" | "LOW" | "MEDIUM" | "HIGH" | "CRITICAL";
@@ -64,19 +66,22 @@ export function ReviewForm({ targets }: Readonly<{ targets: readonly ReviewTarge
         ? { action: "review_lessons", lessons: chosen.map(({ lessonId, version }) => ({ lessonId, version })), reviews, publish: shouldPublish }
         : { action: "review_lesson", lessonId: chosen[0].lessonId, version: chosen[0].version, reviews, publish: shouldPublish };
       const response = await fetch("/api/admin/content-qa", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
-      const body = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(body.message ?? "A revisão não foi registrada.");
+      if (!response.ok) {
+        const error = await readValidatedResponse(response, apiErrorSchema);
+        throw new Error(error.message ?? "A revisão não foi registrada.");
+      }
       if (multiple) {
-        const results: Outcome[] = body.results ?? [];
+        const { results } = await readValidatedResponse(response, lessonReviewsResponseSchema);
         setOutcomes(results);
         const done = results.filter((result) => result.ok).length;
         setMessage({ kind: done === results.length ? "ok" : "error", text: `${done} de ${results.length} aulas ${shouldPublish ? "publicadas" : "revisadas"}.${done < results.length ? " Veja abaixo o que bloqueou as demais." : ""}` });
       } else {
+        await readValidatedResponse(response, lessonReviewOutcomeSchema);
         setMessage({ kind: "ok", text: shouldPublish ? `Revisão registrada e aula publicada com ${questionCount} questões.` : "Revisão registrada. A aula continua em rascunho." });
       }
       router.refresh();
     } catch (error) {
-      setMessage({ kind: "error", text: `Nada foi alterado: ${error instanceof Error ? error.message : "falha ao registrar."}` });
+      setMessage({ kind: "error", text: `${error instanceof Error ? error.message : "Falha ao registrar."} Confira o estado atual antes de tentar novamente.` });
     } finally {
       setBusy(false);
     }

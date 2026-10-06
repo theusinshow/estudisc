@@ -1,6 +1,6 @@
-# Guia de autoria de aulas — Vecta / IFSC
+# Guia de autoria de aulas — Estudisc / IFSC
 
-Este guia descreve como montar uma aula boa no Vecta, do rascunho até a revisão. A aula-modelo é a **CIE-01 (Movimento e máquinas simples)**, em `packs/seeds/ifsc-2027.lesson-drafts/CIE-A.json`, com figuras em `figures/CIE-01/`. Use-a como referência concreta para tudo o que está abaixo.
+Este guia descreve como montar uma aula boa no Estudisc, do rascunho até a revisão. A aula-modelo é a **CIE-01 (Movimento e máquinas simples)**, em `packs/seeds/ifsc-2027.lesson-drafts/CIE-A.json`, com figuras em `figures/CIE-01/`. Use-a como referência concreta para tudo o que está abaixo.
 
 Regras que não mudam (de `AGENTS.md` e `04-PEDAGOGY.md`):
 

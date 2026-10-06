@@ -1,0 +1,512 @@
+{
+  "lesson": {
+    "id": "POR-02",
+    "subject": "POR",
+    "title": "Compreensão global, tema, ideia principal e informação explícita",
+    "module": "Leitura e gêneros",
+    "priority": "P0",
+    "status": "IMPORT_READY",
+    "estimatedMinutes": 22,
+    "masteryTarget": "Localizar informações explícitas, identificar tema e sintetizar a ideia principal sem extrapolar o texto.",
+    "sourceRefs": [
+      "POR-SRC-001",
+      "POR-SRC-004",
+      "POR-SRC-007",
+      "POR-SRC-008",
+      "POR-SRC-035",
+      "POR-SRC-037"
+    ],
+    "conceptRefs": [
+      "POR-02-C01",
+      "POR-02-C02",
+      "POR-02-C03",
+      "POR-02-C04",
+      "POR-02-C05",
+      "POR-02-C06"
+    ],
+    "blocks": [
+      {
+        "type": "HOOK",
+        "title": "Leia como a prova lê",
+        "content": "A biblioteca do bairro ampliou o horário aos sábados depois de uma pesquisa mostrar que estudantes não conseguiam frequentá-la durante a semana. Nos dois primeiros meses, o movimento de sábado duplicou."
+      },
+      {
+        "type": "LEARNING_GOALS",
+        "items": [
+          "Localizar informações explícitas, identificar tema e sintetizar a ideia principal sem extrapolar o texto.",
+          "Justificar respostas com evidência linguística ou textual.",
+          "Evitar regras absolutas quando o fenômeno depende do contexto."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 1",
+        "paragraphs": [
+          "Informação explícita é aquela apresentada diretamente no texto e pode ser localizada sem inferência adicional.",
+          "O tema é o assunto geral; a ideia principal é o que o texto afirma de mais relevante sobre esse assunto.",
+          "Uma boa síntese preserva as relações essenciais do texto e elimina exemplos ou detalhes secundários."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 2",
+        "paragraphs": [
+          "O título pode orientar a leitura, mas deve ser confirmado pelo desenvolvimento do texto.",
+          "Parafrasear é reformular uma informação mantendo seu sentido central, sem acrescentar uma opinião nova.",
+          "Em questões de compreensão, alternativas podem ser falsas por exagerar, restringir ou inverter uma informação verdadeira do texto."
+        ]
+      },
+      {
+        "type": "KEY_TERMS",
+        "items": [
+          {
+            "term": "tema",
+            "conceptRef": "POR-02-C01"
+          },
+          {
+            "term": "ideia principal",
+            "conceptRef": "POR-02-C02"
+          },
+          {
+            "term": "informação explícita",
+            "conceptRef": "POR-02-C03"
+          },
+          {
+            "term": "síntese",
+            "conceptRef": "POR-02-C04"
+          },
+          {
+            "term": "título",
+            "conceptRef": "POR-02-C05"
+          },
+          {
+            "term": "paráfrase",
+            "conceptRef": "POR-02-C06"
+          }
+        ]
+      },
+      {
+        "type": "MISCONCEPTION_CHECK",
+        "items": [
+          {
+            "claim": "A ideia principal é sempre a primeira frase.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Se a alternativa usa palavras do texto, ela está correta.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Tema e opinião do leitor são a mesma coisa.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Resumir significa copiar todas as frases importantes.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          }
+        ]
+      },
+      {
+        "type": "WORKED_EXAMPLE",
+        "stimulus": "A biblioteca do bairro ampliou o horário aos sábados depois de uma pesquisa mostrar que estudantes não conseguiam frequentá-la durante a semana. Nos dois primeiros meses, o movimento de sábado duplicou.",
+        "analysis": "Tema: acesso à biblioteca. Ideia principal: a ampliação do horário atendeu uma demanda e aumentou a frequência aos sábados; não se pode afirmar que o movimento total duplicou."
+      },
+      {
+        "type": "ACTIVE_LEARNING",
+        "title": "Atividade de aplicação",
+        "steps": [
+          "Marque informações explícitas e detalhes secundários.",
+          "Escreva o tema em até cinco palavras.",
+          "Produza uma frase-síntese e compare com versões que exageram ou restringem o texto."
+        ],
+        "evidence": "Resposta curta ou classificação justificada."
+      },
+      {
+        "type": "IFSC_STRATEGY",
+        "content": "Confira cada alternativa contra o texto e desconfie de absolutos que o original não usa."
+      },
+      {
+        "type": "SUMMARY",
+        "items": [
+          "Informação explícita é aquela apresentada diretamente no texto e pode ser localizada sem inferência adicional.",
+          "O tema é o assunto geral; a ideia principal é o que o texto afirma de mais relevante sobre esse assunto.",
+          "Uma boa síntese preserva as relações essenciais do texto e elimina exemplos ou detalhes secundários.",
+          "O título pode orientar a leitura, mas deve ser confirmado pelo desenvolvimento do texto.",
+          "Parafrasear é reformular uma informação mantendo seu sentido central, sem acrescentar uma opinião nova.",
+          "Em questões de compreensão, alternativas podem ser falsas por exagerar, restringir ou inverter uma informação verdadeira do texto."
+        ]
+      },
+      {
+        "type": "EXIT_TICKET",
+        "prompt": "Explique o princípio mais importante de Compreensão global, tema, ideia principal e informação explícita e crie um exemplo próprio."
+      }
+    ],
+    "media": {
+      "deterministicAssetRefs": [],
+      "antigravityRefs": [],
+      "authenticMediaRefs": []
+    }
+  },
+  "questions": [
+    {
+      "id": "POR-02-Q01",
+      "lessonId": "POR-02",
+      "type": "MCQ",
+      "stem": "Qual afirmação descreve corretamente Compreensão global, tema, ideia principal e informação explícita em uso real da língua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Se a alternativa usa palavras do texto, ela está correta."
+        },
+        {
+          "id": "B",
+          "text": "Tema e opinião do leitor são a mesma coisa."
+        },
+        {
+          "id": "C",
+          "text": "Resumir significa copiar todas as frases importantes."
+        },
+        {
+          "id": "D",
+          "text": "Informação explícita é aquela apresentada diretamente no texto e pode ser localizada sem inferência adicional."
+        },
+        {
+          "id": "E",
+          "text": "A ideia principal é sempre a primeira frase."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Informação explícita é aquela apresentada diretamente no texto e pode ser localizada sem inferência adicional.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
+      "concepts": [
+        "POR-02-C01"
+      ],
+      "targetedError": "A ideia principal é sempre a primeira frase.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-02-Q02",
+      "lessonId": "POR-02",
+      "type": "MCQ",
+      "stem": "Em uma questão contextualizada sobre Compreensão global, tema, ideia principal e informação explícita, qual princípio deve orientar a análise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O tema é o assunto geral; a ideia principal é o que o texto afirma de mais relevante sobre esse assunto."
+        },
+        {
+          "id": "B",
+          "text": "Tema e opinião do leitor são a mesma coisa."
+        },
+        {
+          "id": "C",
+          "text": "Resumir significa copiar todas as frases importantes."
+        },
+        {
+          "id": "D",
+          "text": "A ideia principal é sempre a primeira frase."
+        },
+        {
+          "id": "E",
+          "text": "Se a alternativa usa palavras do texto, ela está correta."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "O tema é o assunto geral; a ideia principal é o que o texto afirma de mais relevante sobre esse assunto.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
+      "concepts": [
+        "POR-02-C02"
+      ],
+      "targetedError": "Se a alternativa usa palavras do texto, ela está correta.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-02-Q03",
+      "lessonId": "POR-02",
+      "type": "MCQ",
+      "stem": "Qual alternativa evita uma generalização inadequada sobre Compreensão global, tema, ideia principal e informação explícita?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Resumir significa copiar todas as frases importantes."
+        },
+        {
+          "id": "B",
+          "text": "A ideia principal é sempre a primeira frase."
+        },
+        {
+          "id": "C",
+          "text": "Uma boa síntese preserva as relações essenciais do texto e elimina exemplos ou detalhes secundários."
+        },
+        {
+          "id": "D",
+          "text": "Se a alternativa usa palavras do texto, ela está correta."
+        },
+        {
+          "id": "E",
+          "text": "Tema e opinião do leitor são a mesma coisa."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Uma boa síntese preserva as relações essenciais do texto e elimina exemplos ou detalhes secundários.",
+      "difficulty": "applied",
+      "cognitiveOperation": "discriminate",
+      "concepts": [
+        "POR-02-C03"
+      ],
+      "targetedError": "Tema e opinião do leitor são a mesma coisa.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-02-Q04",
+      "lessonId": "POR-02",
+      "type": "MCQ",
+      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Compreensão global, tema, ideia principal e informação explícita?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A ideia principal é sempre a primeira frase."
+        },
+        {
+          "id": "B",
+          "text": "Se a alternativa usa palavras do texto, ela está correta."
+        },
+        {
+          "id": "C",
+          "text": "Tema e opinião do leitor são a mesma coisa."
+        },
+        {
+          "id": "D",
+          "text": "Resumir significa copiar todas as frases importantes."
+        },
+        {
+          "id": "E",
+          "text": "O título pode orientar a leitura, mas deve ser confirmado pelo desenvolvimento do texto."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "O título pode orientar a leitura, mas deve ser confirmado pelo desenvolvimento do texto.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-02-C04"
+      ],
+      "targetedError": "Resumir significa copiar todas as frases importantes.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-02-Q05",
+      "lessonId": "POR-02",
+      "type": "MCQ",
+      "stem": "Qual critério é seguro para resolver uma questão sobre Compreensão global, tema, ideia principal e informação explícita?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Se a alternativa usa palavras do texto, ela está correta."
+        },
+        {
+          "id": "B",
+          "text": "Parafrasear é reformular uma informação mantendo seu sentido central, sem acrescentar uma opinião nova."
+        },
+        {
+          "id": "C",
+          "text": "Tema e opinião do leitor são a mesma coisa."
+        },
+        {
+          "id": "D",
+          "text": "Resumir significa copiar todas as frases importantes."
+        },
+        {
+          "id": "E",
+          "text": "A ideia principal é sempre a primeira frase."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Parafrasear é reformular uma informação mantendo seu sentido central, sem acrescentar uma opinião nova.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
+      "concepts": [
+        "POR-02-C05"
+      ],
+      "targetedError": "A ideia principal é sempre a primeira frase.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-02-Q06",
+      "lessonId": "POR-02",
+      "type": "MCQ",
+      "stem": "Ao comparar alternativas sobre Compreensão global, tema, ideia principal e informação explícita, qual análise está correta?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Tema e opinião do leitor são a mesma coisa."
+        },
+        {
+          "id": "B",
+          "text": "Resumir significa copiar todas as frases importantes."
+        },
+        {
+          "id": "C",
+          "text": "A ideia principal é sempre a primeira frase."
+        },
+        {
+          "id": "D",
+          "text": "Em questões de compreensão, alternativas podem ser falsas por exagerar, restringir ou inverter uma informação verdadeira do texto."
+        },
+        {
+          "id": "E",
+          "text": "Se a alternativa usa palavras do texto, ela está correta."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Em questões de compreensão, alternativas podem ser falsas por exagerar, restringir ou inverter uma informação verdadeira do texto.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-02-C06"
+      ],
+      "targetedError": "Se a alternativa usa palavras do texto, ela está correta.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-02-Q07",
+      "lessonId": "POR-02",
+      "type": "MCQ",
+      "stem": "Um estudante afirma: “A ideia principal é sempre a primeira frase.”. Qual é a melhor correção?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+        },
+        {
+          "id": "B",
+          "text": "A generalização deve ser aceita sem verificar contexto."
+        },
+        {
+          "id": "C",
+          "text": "A melhor estratégia é decorar a frase."
+        },
+        {
+          "id": "D",
+          "text": "Não há critério linguístico para avaliar a afirmação."
+        },
+        {
+          "id": "E",
+          "text": "Basta escolher a alternativa mais longa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Informação explícita é aquela apresentada diretamente no texto e pode ser localizada sem inferência adicional.",
+      "difficulty": "applied",
+      "cognitiveOperation": "diagnose_error",
+      "concepts": [
+        "POR-02-C01"
+      ],
+      "targetedError": "A ideia principal é sempre a primeira frase.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-02-Q08",
+      "lessonId": "POR-02",
+      "type": "MCQ",
+      "stimulus": "A biblioteca do bairro ampliou o horário aos sábados depois de uma pesquisa mostrar que estudantes não conseguiam frequentá-la durante a semana. Nos dois primeiros meses, o movimento de sábado duplicou.",
+      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O trecho não permite nenhuma análise."
+        },
+        {
+          "id": "B",
+          "text": "A única tarefa é classificar todas as palavras."
+        },
+        {
+          "id": "C",
+          "text": "Tema: acesso à biblioteca. Ideia principal: a ampliação do horário atendeu uma demanda e aumentou a frequência aos sábados; não se pode afirmar que o movimento total duplicou."
+        },
+        {
+          "id": "D",
+          "text": "A análise depende apenas do tamanho do trecho."
+        },
+        {
+          "id": "E",
+          "text": "Qualquer interpretação é igualmente válida."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Tema: acesso à biblioteca. Ideia principal: a ampliação do horário atendeu uma demanda e aumentou a frequência aos sábados; não se pode afirmar que o movimento total duplicou.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-02-C01",
+        "POR-02-C02"
+      ],
+      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
+      "provenance": "VECTA_ORIGINAL"
+    }
+  ],
+  "concepts": [
+    {
+      "editorialConceptId": "POR-02-C01",
+      "lessonId": "POR-02",
+      "name": "tema",
+      "masteryTarget": "Informação explícita é aquela apresentada diretamente no texto e pode ser localizada sem inferência adicional.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-02-C02",
+      "lessonId": "POR-02",
+      "name": "ideia principal",
+      "masteryTarget": "O tema é o assunto geral; a ideia principal é o que o texto afirma de mais relevante sobre esse assunto.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-02-C03",
+      "lessonId": "POR-02",
+      "name": "informação explícita",
+      "masteryTarget": "Uma boa síntese preserva as relações essenciais do texto e elimina exemplos ou detalhes secundários.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-02-C04",
+      "lessonId": "POR-02",
+      "name": "síntese",
+      "masteryTarget": "O título pode orientar a leitura, mas deve ser confirmado pelo desenvolvimento do texto.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-02-C05",
+      "lessonId": "POR-02",
+      "name": "título",
+      "masteryTarget": "Parafrasear é reformular uma informação mantendo seu sentido central, sem acrescentar uma opinião nova.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-02-C06",
+      "lessonId": "POR-02",
+      "name": "paráfrase",
+      "masteryTarget": "Em questões de compreensão, alternativas podem ser falsas por exagerar, restringir ou inverter uma informação verdadeira do texto.",
+      "status": "EDITORIAL"
+    }
+  ],
+  "qa": {
+    "lessonId": "POR-02",
+    "status": "PASS",
+    "checks": {
+      "sourceRefsResolve": true,
+      "questionCount": 8,
+      "eachQuestionHasFiveOptions": true,
+      "originalCoreContent": true
+    },
+    "editorialCautions": [
+      "Final VECTA schema must be reconciled by integration Maestro.",
+      "Question distractors should receive final spot-check after import/render."
+    ]
+  }
+}

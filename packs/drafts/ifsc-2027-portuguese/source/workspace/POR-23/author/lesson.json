@@ -1,0 +1,154 @@
+{
+  "id": "POR-23",
+  "subject": "POR",
+  "title": "Variedades do português brasileiro: região, grupo, tempo e situação",
+  "module": "Variação linguística",
+  "priority": "P0",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Reconhecer variação regional, social, histórica e situacional e relacioná-la a escolhas linguísticas.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-031",
+    "POR-SRC-032",
+    "POR-SRC-035",
+    "POR-SRC-037",
+    "POR-SRC-038"
+  ],
+  "conceptRefs": [
+    "POR-23-C01",
+    "POR-23-C02",
+    "POR-23-C03",
+    "POR-23-C04",
+    "POR-23-C05",
+    "POR-23-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Uma pessoa escreve “Prezada equipe, solicito informações...” em e-mail formal e envia “me chama quando chegar” a um amigo."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Reconhecer variação regional, social, histórica e situacional e relacioná-la a escolhas linguísticas.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Línguas variam sistematicamente segundo região, grupo social, época, situação comunicativa e outras dimensões.",
+        "Variação regional pode aparecer em pronúncia, vocabulário e construções sem implicar inferioridade linguística.",
+        "Variação social relaciona-se a redes, grupos, profissões, idade e trajetórias, não apenas escolaridade."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Variação situacional envolve adequar registro, vocabulário e formalidade às condições de interação.",
+        "Variação histórica explica por que formas mudam, surgem ou deixam de circular ao longo do tempo.",
+        "Uma mesma pessoa utiliza repertórios diferentes conforme interlocutor, objetivo e contexto."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "variação regional",
+          "conceptRef": "POR-23-C01"
+        },
+        {
+          "term": "variação social",
+          "conceptRef": "POR-23-C02"
+        },
+        {
+          "term": "variação situacional",
+          "conceptRef": "POR-23-C03"
+        },
+        {
+          "term": "variação histórica",
+          "conceptRef": "POR-23-C04"
+        },
+        {
+          "term": "léxico regional",
+          "conceptRef": "POR-23-C05"
+        },
+        {
+          "term": "registro",
+          "conceptRef": "POR-23-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Cada região fala outra língua.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Variação é sinônimo de erro.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Pessoa pertence a uma única variedade fixa.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Só o vocabulário varia.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Uma pessoa escreve “Prezada equipe, solicito informações...” em e-mail formal e envia “me chama quando chegar” a um amigo.",
+      "analysis": "A mudança é situacional; o falante adapta recursos a interlocutor e finalidade."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Colete pares de palavras regionais sem hierarquizar.",
+        "Classifique exemplos regional/social/histórica/situacional.",
+        "Reescreva mensagem informal para contexto formal."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Não trate forma diferente como erro automaticamente; identifique contexto e efeito."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Línguas variam sistematicamente segundo região, grupo social, época, situação comunicativa e outras dimensões.",
+        "Variação regional pode aparecer em pronúncia, vocabulário e construções sem implicar inferioridade linguística.",
+        "Variação social relaciona-se a redes, grupos, profissões, idade e trajetórias, não apenas escolaridade.",
+        "Variação situacional envolve adequar registro, vocabulário e formalidade às condições de interação.",
+        "Variação histórica explica por que formas mudam, surgem ou deixam de circular ao longo do tempo.",
+        "Uma mesma pessoa utiliza repertórios diferentes conforme interlocutor, objetivo e contexto."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Variedades do português brasileiro: região, grupo, tempo e situação e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [
+      "POR-ASSET-14"
+    ],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

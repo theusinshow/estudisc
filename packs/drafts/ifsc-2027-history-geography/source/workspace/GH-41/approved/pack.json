@@ -1,0 +1,514 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "GH-41",
+    "subject": "GH",
+    "title": "Revolução Industrial e sociedade industrial",
+    "unit": "História Geral",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+    "concepts": [
+      {
+        "id": "GH-41-CON-01",
+        "name": "Inglaterra",
+        "masteryTarget": "A industrialização começou na Grã-Bretanha no século XVIII e expandiu-se de modo desigual para outras regiões."
+      },
+      {
+        "id": "GH-41-CON-02",
+        "name": "Máquinas e fontes de energia",
+        "masteryTarget": "Máquinas, fábricas e novas fontes de energia aumentaram capacidade produtiva e modificaram organização do trabalho."
+      },
+      {
+        "id": "GH-41-CON-03",
+        "name": "Fábrica",
+        "masteryTarget": "Crescimento industrial acelerou urbanização e formação de grupos como burguesia industrial e proletariado."
+      },
+      {
+        "id": "GH-41-CON-04",
+        "name": "Urbanização",
+        "masteryTarget": "Longas jornadas, baixos salários e condições perigosas estimularam associações, greves e movimentos de trabalhadores."
+      },
+      {
+        "id": "GH-41-CON-05",
+        "name": "Burguesia e proletariado",
+        "masteryTarget": "Industrialização teve fases ligadas a tecnologias diferentes e produziu impactos ambientais e sociais duradouros."
+      },
+      {
+        "id": "GH-41-CON-06",
+        "name": "Condições de trabalho",
+        "masteryTarget": "Industrialização teve fases ligadas a tecnologias diferentes e produziu impactos ambientais e sociais duradouros."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "GH-41-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "A Revolução Industrial transformou produção, energia, cidades e relações de trabalho."
+      },
+      {
+        "id": "GH-41-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar os conceitos centrais de Revolução Industrial e sociedade industrial em linguagem própria.",
+          "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+          "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+        ]
+      },
+      {
+        "id": "GH-41-B03",
+        "type": "EXPLANATION",
+        "title": "Ideia central",
+        "content": "A industrialização começou na Grã-Bretanha no século XVIII e expandiu-se de modo desigual para outras regiões. Máquinas, fábricas e novas fontes de energia aumentaram capacidade produtiva e modificaram organização do trabalho.",
+        "items": [
+          "A industrialização começou na Grã-Bretanha no século XVIII e expandiu-se de modo desigual para outras regiões.",
+          "Máquinas, fábricas e novas fontes de energia aumentaram capacidade produtiva e modificaram organização do trabalho."
+        ]
+      },
+      {
+        "id": "GH-41-B04",
+        "type": "EXPLANATION",
+        "title": "Como as relações se organizam",
+        "content": "Crescimento industrial acelerou urbanização e formação de grupos como burguesia industrial e proletariado. Longas jornadas, baixos salários e condições perigosas estimularam associações, greves e movimentos de trabalhadores.",
+        "items": [
+          "Crescimento industrial acelerou urbanização e formação de grupos como burguesia industrial e proletariado.",
+          "Longas jornadas, baixos salários e condições perigosas estimularam associações, greves e movimentos de trabalhadores."
+        ]
+      },
+      {
+        "id": "GH-41-B05",
+        "type": "EXPLANATION",
+        "title": "O que conecta o tema à prova",
+        "content": "Industrialização teve fases ligadas a tecnologias diferentes e produziu impactos ambientais e sociais duradouros.",
+        "items": [
+          "Industrialização teve fases ligadas a tecnologias diferentes e produziu impactos ambientais e sociais duradouros.",
+          "Relacionar inovação tecnológica a mudanças simultâneas no trabalho, cidade e ambiente."
+        ]
+      },
+      {
+        "id": "GH-41-B06",
+        "type": "CALLOUT",
+        "variant": "SOURCE_LITERACY",
+        "title": "Leia a fonte, não apenas o tema",
+        "items": [
+          "Relacionar inovação tecnológica a mudanças simultâneas no trabalho, cidade e ambiente.",
+          "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+        ]
+      },
+      {
+        "id": "GH-41-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTION",
+        "title": "Erros que custam ponto",
+        "items": [
+          "Revolução Industrial foi um evento instantâneo ocorrido em todos os países ao mesmo tempo.",
+          "Máquinas eliminaram imediatamente todo trabalho humano.",
+          "Urbanização industrial ocorreu sem conflitos trabalhistas.",
+          "Industrialização não alterou o uso de energia e recursos naturais."
+        ]
+      },
+      {
+        "id": "GH-41-B08",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Vocabulário essencial",
+        "items": [
+          "Inglaterra",
+          "Máquinas e fontes de energia",
+          "Fábrica",
+          "Urbanização",
+          "Burguesia e proletariado",
+          "Condições de trabalho"
+        ]
+      },
+      {
+        "id": "GH-41-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Como resolver uma questão",
+        "prompt": "Uma questão apresenta uma fonte relacionada a Revolução Industrial e sociedade industrial. Como decidir entre alternativas plausíveis?",
+        "answer": "Industrialização teve fases ligadas a tecnologias diferentes e produziu impactos ambientais e sociais duradouros.",
+        "reasoning": [
+          "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+          "Extraia da fonte apenas as evidências explícitas.",
+          "Ative o conceito da aula que explica a evidência.",
+          "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+          "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+        ]
+      },
+      {
+        "id": "GH-41-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Estratégia IFSC",
+        "items": [
+          "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+          "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+          "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+        ]
+      },
+      {
+        "id": "GH-41-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Material complementar",
+        "mediaRefs": [
+          "SRC-GH-035"
+        ],
+        "optional": true
+      },
+      {
+        "id": "GH-41-B12",
+        "type": "IMAGE_REQUEST",
+        "title": "Ilustração conceitual",
+        "requestRef": "IMG-GH-41-001",
+        "status": "PENDING"
+      },
+      {
+        "id": "GH-41-B13",
+        "type": "SUMMARY",
+        "title": "Resumo para recuperar sem olhar",
+        "items": [
+          "A industrialização começou na Grã-Bretanha no século XVIII e expandiu-se de modo desigual para outras regiões.",
+          "Máquinas, fábricas e novas fontes de energia aumentaram capacidade produtiva e modificaram organização do trabalho.",
+          "Crescimento industrial acelerou urbanização e formação de grupos como burguesia industrial e proletariado.",
+          "Longas jornadas, baixos salários e condições perigosas estimularam associações, greves e movimentos de trabalhadores.",
+          "Industrialização teve fases ligadas a tecnologias diferentes e produziu impactos ambientais e sociais duradouros."
+        ]
+      },
+      {
+        "id": "GH-41-B14",
+        "type": "EXIT_TICKET",
+        "title": "Saída rápida",
+        "prompt": "Em duas ou três frases, explique a ideia mais importante de Revolução Industrial e sociedade industrial e cite um erro de interpretação que você evitaria numa questão.",
+        "answerGuide": "A industrialização começou na Grã-Bretanha no século XVIII e expandiu-se de modo desigual para outras regiões. Evite, por exemplo: Revolução Industrial foi um evento instantâneo ocorrido em todos os países ao mesmo tempo."
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-GH-001",
+      "SRC-GH-035",
+      "SRC-IFSC-GH-2026-1",
+      "SRC-IFSC-GH-2026-2",
+      "SRC-GH-080"
+    ],
+    "mediaRefs": [
+      "SRC-GH-035"
+    ],
+    "imageRequestRefs": [
+      "IMG-GH-41-001"
+    ],
+    "editorialNotes": [
+      "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+      "Não publicar mídia externa sem revisão de licença e proveniência.",
+      "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+      "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+    ]
+  },
+  "questions": [
+    {
+      "id": "GH-41-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Em relação a Revolução Industrial e sociedade industrial, qual afirmação está correta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Revolução Industrial foi um evento instantâneo ocorrido em todos os países ao mesmo tempo."
+        },
+        {
+          "key": "B",
+          "text": "A industrialização começou na Grã-Bretanha no século XVIII e expandiu-se de modo desigual para outras regiões."
+        },
+        {
+          "key": "C",
+          "text": "Máquinas eliminaram imediatamente todo trabalho humano."
+        },
+        {
+          "key": "D",
+          "text": "Urbanização industrial ocorreu sem conflitos trabalhistas."
+        },
+        {
+          "key": "E",
+          "text": "Industrialização não alterou o uso de energia e recursos naturais."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "A industrialização começou na Grã-Bretanha no século XVIII e expandiu-se de modo desigual para outras regiões.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "RECALL",
+      "conceptIds": [
+        "GH-41-CON-01"
+      ],
+      "targetedError": "foundation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-41-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante diz: “Revolução Industrial foi um evento instantâneo ocorrido em todos os países ao mesmo tempo.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Revolução Industrial foi um evento instantâneo ocorrido em todos os países ao mesmo tempo."
+        },
+        {
+          "key": "B",
+          "text": "Máquinas eliminaram imediatamente todo trabalho humano."
+        },
+        {
+          "key": "C",
+          "text": "Urbanização industrial ocorreu sem conflitos trabalhistas."
+        },
+        {
+          "key": "D",
+          "text": "Máquinas, fábricas e novas fontes de energia aumentaram capacidade produtiva e modificaram organização do trabalho."
+        },
+        {
+          "key": "E",
+          "text": "Industrialização não alterou o uso de energia e recursos naturais."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Máquinas, fábricas e novas fontes de energia aumentaram capacidade produtiva e modificaram organização do trabalho.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-41-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-41-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Considere a situação de partida da aula: A Revolução Industrial transformou produção, energia, cidades e relações de trabalho. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Revolução Industrial foi um evento instantâneo ocorrido em todos os países ao mesmo tempo."
+        },
+        {
+          "key": "B",
+          "text": "Máquinas eliminaram imediatamente todo trabalho humano."
+        },
+        {
+          "key": "C",
+          "text": "Crescimento industrial acelerou urbanização e formação de grupos como burguesia industrial e proletariado."
+        },
+        {
+          "key": "D",
+          "text": "Urbanização industrial ocorreu sem conflitos trabalhistas."
+        },
+        {
+          "key": "E",
+          "text": "Industrialização não alterou o uso de energia e recursos naturais."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Crescimento industrial acelerou urbanização e formação de grupos como burguesia industrial e proletariado.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "GH-41-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-41-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "O IFSC pode apresentar Revolução Industrial e sociedade industrial por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Longas jornadas, baixos salários e condições perigosas estimularam associações, greves e movimentos de trabalhadores."
+        },
+        {
+          "key": "B",
+          "text": "Revolução Industrial foi um evento instantâneo ocorrido em todos os países ao mesmo tempo."
+        },
+        {
+          "key": "C",
+          "text": "Máquinas eliminaram imediatamente todo trabalho humano."
+        },
+        {
+          "key": "D",
+          "text": "Urbanização industrial ocorreu sem conflitos trabalhistas."
+        },
+        {
+          "key": "E",
+          "text": "Industrialização não alterou o uso de energia e recursos naturais."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Longas jornadas, baixos salários e condições perigosas estimularam associações, greves e movimentos de trabalhadores.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "GH-41-CON-04"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-41-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. A industrialização começou na Grã-Bretanha no século XVIII e expandiu-se de modo desigual para outras regiões.\nII. Revolução Industrial foi um evento instantâneo ocorrido em todos os países ao mesmo tempo.\nIII. Crescimento industrial acelerou urbanização e formação de grupos como burguesia industrial e proletariado.\nIV. Máquinas eliminaram imediatamente todo trabalho humano.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-41-CON-01",
+        "GH-41-CON-02",
+        "GH-41-CON-03",
+        "GH-41-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-41-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma fonte foi apresentada numa questão sobre Revolução Industrial e sociedade industrial. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Revolução Industrial foi um evento instantâneo ocorrido em todos os países ao mesmo tempo."
+        },
+        {
+          "key": "B",
+          "text": "Máquinas eliminaram imediatamente todo trabalho humano."
+        },
+        {
+          "key": "C",
+          "text": "Urbanização industrial ocorreu sem conflitos trabalhistas."
+        },
+        {
+          "key": "D",
+          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        },
+        {
+          "key": "E",
+          "text": "Relacionar inovação tecnológica a mudanças simultâneas no trabalho, cidade e ambiente."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Relacionar inovação tecnológica a mudanças simultâneas no trabalho, cidade e ambiente.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "conceptIds": [
+        "GH-41-CON-01",
+        "GH-41-CON-02",
+        "GH-41-CON-03",
+        "GH-41-CON-04",
+        "GH-41-CON-05",
+        "GH-41-CON-06"
+      ],
+      "targetedError": "source_interpretation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-41-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Revolução Industrial e sociedade industrial?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A industrialização começou na Grã-Bretanha no século XVIII e expandiu-se de modo desigual para outras regiões."
+        },
+        {
+          "key": "B",
+          "text": "Máquinas, fábricas e novas fontes de energia aumentaram capacidade produtiva e modificaram organização do trabalho."
+        },
+        {
+          "key": "C",
+          "text": "Industrialização teve fases ligadas a tecnologias diferentes e produziu impactos ambientais e sociais duradouros."
+        },
+        {
+          "key": "D",
+          "text": "Urbanização industrial ocorreu sem conflitos trabalhistas."
+        },
+        {
+          "key": "E",
+          "text": "Longas jornadas, baixos salários e condições perigosas estimularam associações, greves e movimentos de trabalhadores."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-41-CON-01",
+        "GH-41-CON-02",
+        "GH-41-CON-03",
+        "GH-41-CON-04",
+        "GH-41-CON-05",
+        "GH-41-CON-06"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-41-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Revolução Industrial e sociedade industrial, qual conclusão final é sustentável?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Revolução Industrial foi um evento instantâneo ocorrido em todos os países ao mesmo tempo."
+        },
+        {
+          "key": "B",
+          "text": "Máquinas eliminaram imediatamente todo trabalho humano."
+        },
+        {
+          "key": "C",
+          "text": "Industrialização teve fases ligadas a tecnologias diferentes e produziu impactos ambientais e sociais duradouros."
+        },
+        {
+          "key": "D",
+          "text": "Urbanização industrial ocorreu sem conflitos trabalhistas."
+        },
+        {
+          "key": "E",
+          "text": "Industrialização não alterou o uso de energia e recursos naturais."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Industrialização teve fases ligadas a tecnologias diferentes e produziu impactos ambientais e sociais duradouros.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-41-CON-01",
+        "GH-41-CON-02",
+        "GH-41-CON-03",
+        "GH-41-CON-04",
+        "GH-41-CON-05",
+        "GH-41-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    }
+  ]
+}

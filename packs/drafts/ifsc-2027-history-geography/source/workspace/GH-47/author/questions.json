@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-47-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Independências da África e da Ásia, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as colônias ficaram independentes pacificamente no mesmo ano."
+      },
+      {
+        "key": "B",
+        "text": "Após 1945, movimentos nacionalistas e anticoloniais ganharam força na África e Ásia."
+      },
+      {
+        "key": "C",
+        "text": "A África era politicamente homogênea durante a descolonização."
+      },
+      {
+        "key": "D",
+        "text": "Independência eliminou imediatamente todos os efeitos do colonialismo."
+      },
+      {
+        "key": "E",
+        "text": "Movimentos africanos e asiáticos não tiveram protagonismo no processo."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "Após 1945, movimentos nacionalistas e anticoloniais ganharam força na África e Ásia.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-47-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-47-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “Todas as colônias ficaram independentes pacificamente no mesmo ano.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as colônias ficaram independentes pacificamente no mesmo ano."
+      },
+      {
+        "key": "B",
+        "text": "A África era politicamente homogênea durante a descolonização."
+      },
+      {
+        "key": "C",
+        "text": "Independência eliminou imediatamente todos os efeitos do colonialismo."
+      },
+      {
+        "key": "D",
+        "text": "A independência da Índia em 1947 ocorreu após longa mobilização e veio acompanhada da partição entre Índia e Paquistão."
+      },
+      {
+        "key": "E",
+        "text": "Movimentos africanos e asiáticos não tiveram protagonismo no processo."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A independência da Índia em 1947 ocorreu após longa mobilização e veio acompanhada da partição entre Índia e Paquistão.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-47-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-47-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: Descolonização foi resultado de lutas locais, mudanças internacionais e enfraquecimento dos impérios após a Segunda Guerra. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as colônias ficaram independentes pacificamente no mesmo ano."
+      },
+      {
+        "key": "B",
+        "text": "A África era politicamente homogênea durante a descolonização."
+      },
+      {
+        "key": "C",
+        "text": "Em diferentes países africanos, independências ocorreram por negociação, mobilização política ou guerras, em ritmos distintos."
+      },
+      {
+        "key": "D",
+        "text": "Independência eliminou imediatamente todos os efeitos do colonialismo."
+      },
+      {
+        "key": "E",
+        "text": "Movimentos africanos e asiáticos não tiveram protagonismo no processo."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Em diferentes países africanos, independências ocorreram por negociação, mobilização política ou guerras, em ritmos distintos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-47-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-47-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Independências da África e da Ásia por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Fronteiras herdadas do colonialismo e economias dependentes criaram desafios para novos Estados."
+      },
+      {
+        "key": "B",
+        "text": "Todas as colônias ficaram independentes pacificamente no mesmo ano."
+      },
+      {
+        "key": "C",
+        "text": "A África era politicamente homogênea durante a descolonização."
+      },
+      {
+        "key": "D",
+        "text": "Independência eliminou imediatamente todos os efeitos do colonialismo."
+      },
+      {
+        "key": "E",
+        "text": "Movimentos africanos e asiáticos não tiveram protagonismo no processo."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "Fronteiras herdadas do colonialismo e economias dependentes criaram desafios para novos Estados.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-47-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-47-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Após 1945, movimentos nacionalistas e anticoloniais ganharam força na África e Ásia.\nII. Todas as colônias ficaram independentes pacificamente no mesmo ano.\nIII. Em diferentes países africanos, independências ocorreram por negociação, mobilização política ou guerras, em ritmos distintos.\nIV. A África era politicamente homogênea durante a descolonização.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-47-CON-01",
+      "GH-47-CON-02",
+      "GH-47-CON-03",
+      "GH-47-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-47-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Independências da África e da Ásia. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as colônias ficaram independentes pacificamente no mesmo ano."
+      },
+      {
+        "key": "B",
+        "text": "A África era politicamente homogênea durante a descolonização."
+      },
+      {
+        "key": "C",
+        "text": "Independência eliminou imediatamente todos os efeitos do colonialismo."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Comparar mapas coloniais e pós-independência observando permanências de fronteiras e mudanças políticas."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Comparar mapas coloniais e pós-independência observando permanências de fronteiras e mudanças políticas.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-47-CON-01",
+      "GH-47-CON-02",
+      "GH-47-CON-03",
+      "GH-47-CON-04",
+      "GH-47-CON-05",
+      "GH-47-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-47-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Independências da África e da Ásia?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Após 1945, movimentos nacionalistas e anticoloniais ganharam força na África e Ásia."
+      },
+      {
+        "key": "B",
+        "text": "A independência da Índia em 1947 ocorreu após longa mobilização e veio acompanhada da partição entre Índia e Paquistão."
+      },
+      {
+        "key": "C",
+        "text": "Descolonização política não eliminou automaticamente relações econômicas desiguais ou interferências externas."
+      },
+      {
+        "key": "D",
+        "text": "Independência eliminou imediatamente todos os efeitos do colonialismo."
+      },
+      {
+        "key": "E",
+        "text": "Fronteiras herdadas do colonialismo e economias dependentes criaram desafios para novos Estados."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-47-CON-01",
+      "GH-47-CON-02",
+      "GH-47-CON-03",
+      "GH-47-CON-04",
+      "GH-47-CON-05",
+      "GH-47-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-47-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Independências da África e da Ásia, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as colônias ficaram independentes pacificamente no mesmo ano."
+      },
+      {
+        "key": "B",
+        "text": "A África era politicamente homogênea durante a descolonização."
+      },
+      {
+        "key": "C",
+        "text": "Descolonização política não eliminou automaticamente relações econômicas desiguais ou interferências externas."
+      },
+      {
+        "key": "D",
+        "text": "Independência eliminou imediatamente todos os efeitos do colonialismo."
+      },
+      {
+        "key": "E",
+        "text": "Movimentos africanos e asiáticos não tiveram protagonismo no processo."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Descolonização política não eliminou automaticamente relações econômicas desiguais ou interferências externas.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-47-CON-01",
+      "GH-47-CON-02",
+      "GH-47-CON-03",
+      "GH-47-CON-04",
+      "GH-47-CON-05",
+      "GH-47-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

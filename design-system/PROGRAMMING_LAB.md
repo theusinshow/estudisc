@@ -1,4 +1,4 @@
-# KNOW/OS — Programming Lab
+# Estudisc — Programming Lab
 
 ## Objetivo
 

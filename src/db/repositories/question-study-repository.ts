@@ -2,7 +2,7 @@ import { and, count, desc, eq, inArray, sql } from "drizzle-orm";
 import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 import type * as schema from "@/db/schema";
 import { getDatabase } from "@/db/connection";
-import { activities, attempts, conceptEvidence, concepts, lessons, modules, owners, questionAssistance, questionExposures, questionVersions, reviewSchedules, studyEvents, studySessions, mistakes,assessmentInstances } from "@/db/schema";
+import { activities, attempts, conceptEvidence, concepts, lessons, modules, owners, questionAssistance, questionExposures, questionVersions, reviewSchedules, studyEvents, studySessions, mistakes,assessmentInstances, xpTransactions } from "@/db/schema";
 import { DrizzleQuestionRepository } from "./question-repository";
 import { canExposeQuestion } from "@/features/questions/exposure";
 import { evaluateQuestion, QUESTION_EVALUATOR_VERSION } from "@/features/questions/evaluation";
@@ -11,6 +11,7 @@ import { questionReferenceSchema } from "@/features/activities/application/quest
 import { hashCanonicalJson } from "@/lib/canonical-json";
 import { evidenceStrengthV2, MASTERY_V2 } from "@/features/mastery/mastery-policy-v2";
 import { scheduleReviewV2, REVIEW_V2 } from "@/features/review/review-policy-v2";
+import { isIndependentQuestionSuccess, QUESTION_SUCCESS_XP, QUESTION_SUCCESS_REASON } from "@/features/gamification/study-rewards";
 
 type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
 export class QuestionUnavailableError extends Error { constructor(){super("Question unavailable");} }
@@ -63,7 +64,7 @@ export class QuestionStudyRepository {
           if(identity?.stableId!==activity||conditions.questionId!==input.questionId||conditions.questionVersion!==input.questionVersion||input.sessionId&&conditions.contextKey!==input.sessionId||hashCanonicalJson(previous.response)!==hashCanonicalJson({answer:input.response}))throw new SubmissionConflictError();
           const [exam]=await tx.select().from(assessmentInstances).where(and(eq(assessmentInstances.ownerId,ownerId),eq(assessmentInstances.status,"ACTIVE"),eq(assessmentInstances.mode,"EXAM")));if(exam)throw new QuestionUnavailableError();
           const bank=await new DrizzleQuestionRepository(tx).getVersion(input.questionId,input.questionVersion);
-          return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:previous.outcome==="passed"?bank?.question.explanation:undefined};
+          return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:previous.outcome==="passed"?bank?.question.explanation:undefined,xpAwarded:0};
         }
       }
       const ctx=await new QuestionStudyRepository(tx).context(ownerId,activity,input.questionId,input.questionVersion,input.sessionId);
@@ -84,6 +85,16 @@ export class QuestionStudyRepository {
       const now=new Date();
       const conditions={policyVersion:MASTERY_V2,outcome:evaluation.outcome,difficulty:ctx.question.difficulty,mode:"learn",hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed===1,questionId:ctx.question.id,questionVersion:ctx.question.version,contextKey:ctx.contextKey};
       const [attempt]=await tx.insert(attempts).values({ownerId,activityId:ctx.activity.id,attemptNumber:number.value+1,response:{answer:input.response},outcome:evaluation.outcome,output:evaluation,evaluatorVersion:QUESTION_EVALUATOR_VERSION,submissionKey:input.submissionKey,questionVersionId:ctx.versionId,context:conditions}).returning();
+      // Atomic with the Attempt, once per stable Question across versions/activities/sessions.
+      let xpAwarded = 0;
+      if (isIndependentQuestionSuccess(conditions)) {
+        // The owner row is locked above: concurrent submissions cannot both award XP.
+        const [reward] = await tx.select({ id: xpTransactions.id }).from(xpTransactions).where(and(eq(xpTransactions.ownerId, ownerId), eq(xpTransactions.reason, QUESTION_SUCCESS_REASON), eq(xpTransactions.sourceType, "question"), eq(xpTransactions.sourceId, ctx.question.id)));
+        if (!reward) {
+          await tx.insert(xpTransactions).values({ ownerId, amount: QUESTION_SUCCESS_XP, reason: QUESTION_SUCCESS_REASON, sourceType: "question", sourceId: ctx.question.id });
+          xpAwarded = QUESTION_SUCCESS_XP;
+        }
+      }
       const mapped=await tx.select().from(concepts).where(inArray(concepts.stableId,ctx.question.conceptIds));
       for(const concept of mapped){
         const history=await tx.select().from(conceptEvidence).where(and(eq(conceptEvidence.ownerId,ownerId),eq(conceptEvidence.conceptId,concept.id)));
@@ -102,7 +113,7 @@ export class QuestionStudyRepository {
       await tx.insert(studyEvents).values({ownerId,type:"activity_submitted",entityType:"activity",entityId:ctx.activity.stableId,payload:{attemptId:attempt.id,outcome:evaluation.outcome,sessionId:input.sessionId??null}});
       // A wrong answer does not show the worked solution, so a retry still counts as independent evidence.
       if(evaluation.correct)await tx.update(questionAssistance).set({solutionRevealed:1,updatedAt:new Date()}).where(where);
-      return {attemptId:attempt.id,correct:evaluation.correct,explanation:evaluation.correct?ctx.question.explanation:undefined};
+      return {attemptId:attempt.id,correct:evaluation.correct,explanation:evaluation.correct?ctx.question.explanation:undefined,xpAwarded};
     });
   }
 }

@@ -1,0 +1,514 @@
+{
+  "lesson": {
+    "id": "POR-03",
+    "subject": "POR",
+    "title": "Inferência, implícitos, pressupostos e leitura de contexto",
+    "module": "Leitura e gêneros",
+    "priority": "P0",
+    "status": "IMPORT_READY",
+    "estimatedMinutes": 22,
+    "masteryTarget": "Inferir sentidos e informações implícitas a partir de pistas textuais e contexto, sem inventar dados.",
+    "sourceRefs": [
+      "POR-SRC-001",
+      "POR-SRC-007",
+      "POR-SRC-008",
+      "POR-SRC-033",
+      "POR-SRC-034"
+    ],
+    "conceptRefs": [
+      "POR-03-C01",
+      "POR-03-C02",
+      "POR-03-C03",
+      "POR-03-C04",
+      "POR-03-C05",
+      "POR-03-C06"
+    ],
+    "blocks": [
+      {
+        "type": "HOOK",
+        "title": "Leia como a prova lê",
+        "content": "Ao entrar na sala, Caio colocou o guarda-chuva pingando ao lado da porta e disse: “Ainda bem que trouxe outra camiseta na mochila.”"
+      },
+      {
+        "type": "LEARNING_GOALS",
+        "items": [
+          "Inferir sentidos e informações implícitas a partir de pistas textuais e contexto, sem inventar dados.",
+          "Justificar respostas com evidência linguística ou textual.",
+          "Evitar regras absolutas quando o fenômeno depende do contexto."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 1",
+        "paragraphs": [
+          "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente.",
+          "Informações implícitas podem resultar de ações, escolhas lexicais, relações causais, ironia, omissões ou conhecimento compartilhado.",
+          "Pressupostos tendem a permanecer mesmo quando a frase é negada; “João parou de correr” pressupõe que João corria antes."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 2",
+        "paragraphs": [
+          "Subentendidos dependem mais da situação comunicativa e podem ser negados pelo falante com maior facilidade.",
+          "Uma inferência válida precisa ser compatível com todas as informações relevantes do texto.",
+          "O sentido de uma palavra desconhecida pode muitas vezes ser inferido pelas palavras vizinhas e pela situação apresentada."
+        ]
+      },
+      {
+        "type": "KEY_TERMS",
+        "items": [
+          {
+            "term": "inferência",
+            "conceptRef": "POR-03-C01"
+          },
+          {
+            "term": "implícito",
+            "conceptRef": "POR-03-C02"
+          },
+          {
+            "term": "pressuposto",
+            "conceptRef": "POR-03-C03"
+          },
+          {
+            "term": "subentendido",
+            "conceptRef": "POR-03-C04"
+          },
+          {
+            "term": "pista textual",
+            "conceptRef": "POR-03-C05"
+          },
+          {
+            "term": "contexto",
+            "conceptRef": "POR-03-C06"
+          }
+        ]
+      },
+      {
+        "type": "MISCONCEPTION_CHECK",
+        "items": [
+          {
+            "claim": "Inferir é escolher a interpretação mais criativa.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Toda informação implícita é subjetiva.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Pressuposto e opinião do leitor são a mesma coisa.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Se não está escrito literalmente, não pode ser cobrado.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          }
+        ]
+      },
+      {
+        "type": "WORKED_EXAMPLE",
+        "stimulus": "Ao entrar na sala, Caio colocou o guarda-chuva pingando ao lado da porta e disse: “Ainda bem que trouxe outra camiseta na mochila.”",
+        "analysis": "É razoável inferir que Caio se molhou ou enfrentou chuva; não se pode concluir onde choveu ou quanto tempo durou."
+      },
+      {
+        "type": "ACTIVE_LEARNING",
+        "title": "Atividade de aplicação",
+        "steps": [
+          "Leia cinco microtextos com pistas incompletas.",
+          "Destaque a pista que sustenta cada inferência.",
+          "Classifique conclusões como sustentadas, possíveis ou incompatíveis."
+        ],
+        "evidence": "Resposta curta ou classificação justificada."
+      },
+      {
+        "type": "IFSC_STRATEGY",
+        "content": "Pergunte “qual trecho permite concluir isso?”. Sem pista suficiente, provavelmente há extrapolação."
+      },
+      {
+        "type": "SUMMARY",
+        "items": [
+          "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente.",
+          "Informações implícitas podem resultar de ações, escolhas lexicais, relações causais, ironia, omissões ou conhecimento compartilhado.",
+          "Pressupostos tendem a permanecer mesmo quando a frase é negada; “João parou de correr” pressupõe que João corria antes.",
+          "Subentendidos dependem mais da situação comunicativa e podem ser negados pelo falante com maior facilidade.",
+          "Uma inferência válida precisa ser compatível com todas as informações relevantes do texto.",
+          "O sentido de uma palavra desconhecida pode muitas vezes ser inferido pelas palavras vizinhas e pela situação apresentada."
+        ]
+      },
+      {
+        "type": "EXIT_TICKET",
+        "prompt": "Explique o princípio mais importante de Inferência, implícitos, pressupostos e leitura de contexto e crie um exemplo próprio."
+      }
+    ],
+    "media": {
+      "deterministicAssetRefs": [],
+      "antigravityRefs": [],
+      "authenticMediaRefs": [
+        "POR-MEDIA-01",
+        "POR-MEDIA-02"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "POR-03-Q01",
+      "lessonId": "POR-03",
+      "type": "MCQ",
+      "stem": "Qual afirmação descreve corretamente Inferência, implícitos, pressupostos e leitura de contexto em uso real da língua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Toda informação implícita é subjetiva."
+        },
+        {
+          "id": "B",
+          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+        },
+        {
+          "id": "C",
+          "text": "Se não está escrito literalmente, não pode ser cobrado."
+        },
+        {
+          "id": "D",
+          "text": "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente."
+        },
+        {
+          "id": "E",
+          "text": "Inferir é escolher a interpretação mais criativa."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
+      "concepts": [
+        "POR-03-C01"
+      ],
+      "targetedError": "Inferir é escolher a interpretação mais criativa.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-03-Q02",
+      "lessonId": "POR-03",
+      "type": "MCQ",
+      "stem": "Em uma questão contextualizada sobre Inferência, implícitos, pressupostos e leitura de contexto, qual princípio deve orientar a análise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Informações implícitas podem resultar de ações, escolhas lexicais, relações causais, ironia, omissões ou conhecimento compartilhado."
+        },
+        {
+          "id": "B",
+          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+        },
+        {
+          "id": "C",
+          "text": "Se não está escrito literalmente, não pode ser cobrado."
+        },
+        {
+          "id": "D",
+          "text": "Inferir é escolher a interpretação mais criativa."
+        },
+        {
+          "id": "E",
+          "text": "Toda informação implícita é subjetiva."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Informações implícitas podem resultar de ações, escolhas lexicais, relações causais, ironia, omissões ou conhecimento compartilhado.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
+      "concepts": [
+        "POR-03-C02"
+      ],
+      "targetedError": "Toda informação implícita é subjetiva.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-03-Q03",
+      "lessonId": "POR-03",
+      "type": "MCQ",
+      "stem": "Qual alternativa evita uma generalização inadequada sobre Inferência, implícitos, pressupostos e leitura de contexto?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Se não está escrito literalmente, não pode ser cobrado."
+        },
+        {
+          "id": "B",
+          "text": "Inferir é escolher a interpretação mais criativa."
+        },
+        {
+          "id": "C",
+          "text": "Pressupostos tendem a permanecer mesmo quando a frase é negada; “João parou de correr” pressupõe que João corria antes."
+        },
+        {
+          "id": "D",
+          "text": "Toda informação implícita é subjetiva."
+        },
+        {
+          "id": "E",
+          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Pressupostos tendem a permanecer mesmo quando a frase é negada; “João parou de correr” pressupõe que João corria antes.",
+      "difficulty": "applied",
+      "cognitiveOperation": "discriminate",
+      "concepts": [
+        "POR-03-C03"
+      ],
+      "targetedError": "Pressuposto e opinião do leitor são a mesma coisa.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-03-Q04",
+      "lessonId": "POR-03",
+      "type": "MCQ",
+      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Inferência, implícitos, pressupostos e leitura de contexto?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Inferir é escolher a interpretação mais criativa."
+        },
+        {
+          "id": "B",
+          "text": "Toda informação implícita é subjetiva."
+        },
+        {
+          "id": "C",
+          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+        },
+        {
+          "id": "D",
+          "text": "Se não está escrito literalmente, não pode ser cobrado."
+        },
+        {
+          "id": "E",
+          "text": "Subentendidos dependem mais da situação comunicativa e podem ser negados pelo falante com maior facilidade."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Subentendidos dependem mais da situação comunicativa e podem ser negados pelo falante com maior facilidade.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-03-C04"
+      ],
+      "targetedError": "Se não está escrito literalmente, não pode ser cobrado.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-03-Q05",
+      "lessonId": "POR-03",
+      "type": "MCQ",
+      "stem": "Qual critério é seguro para resolver uma questão sobre Inferência, implícitos, pressupostos e leitura de contexto?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Toda informação implícita é subjetiva."
+        },
+        {
+          "id": "B",
+          "text": "Uma inferência válida precisa ser compatível com todas as informações relevantes do texto."
+        },
+        {
+          "id": "C",
+          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+        },
+        {
+          "id": "D",
+          "text": "Se não está escrito literalmente, não pode ser cobrado."
+        },
+        {
+          "id": "E",
+          "text": "Inferir é escolher a interpretação mais criativa."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Uma inferência válida precisa ser compatível com todas as informações relevantes do texto.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
+      "concepts": [
+        "POR-03-C05"
+      ],
+      "targetedError": "Inferir é escolher a interpretação mais criativa.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-03-Q06",
+      "lessonId": "POR-03",
+      "type": "MCQ",
+      "stem": "Ao comparar alternativas sobre Inferência, implícitos, pressupostos e leitura de contexto, qual análise está correta?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+        },
+        {
+          "id": "B",
+          "text": "Se não está escrito literalmente, não pode ser cobrado."
+        },
+        {
+          "id": "C",
+          "text": "Inferir é escolher a interpretação mais criativa."
+        },
+        {
+          "id": "D",
+          "text": "O sentido de uma palavra desconhecida pode muitas vezes ser inferido pelas palavras vizinhas e pela situação apresentada."
+        },
+        {
+          "id": "E",
+          "text": "Toda informação implícita é subjetiva."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "O sentido de uma palavra desconhecida pode muitas vezes ser inferido pelas palavras vizinhas e pela situação apresentada.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-03-C06"
+      ],
+      "targetedError": "Toda informação implícita é subjetiva.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-03-Q07",
+      "lessonId": "POR-03",
+      "type": "MCQ",
+      "stem": "Um estudante afirma: “Inferir é escolher a interpretação mais criativa.”. Qual é a melhor correção?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+        },
+        {
+          "id": "B",
+          "text": "A generalização deve ser aceita sem verificar contexto."
+        },
+        {
+          "id": "C",
+          "text": "A melhor estratégia é decorar a frase."
+        },
+        {
+          "id": "D",
+          "text": "Não há critério linguístico para avaliar a afirmação."
+        },
+        {
+          "id": "E",
+          "text": "Basta escolher a alternativa mais longa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente.",
+      "difficulty": "applied",
+      "cognitiveOperation": "diagnose_error",
+      "concepts": [
+        "POR-03-C01"
+      ],
+      "targetedError": "Inferir é escolher a interpretação mais criativa.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-03-Q08",
+      "lessonId": "POR-03",
+      "type": "MCQ",
+      "stimulus": "Ao entrar na sala, Caio colocou o guarda-chuva pingando ao lado da porta e disse: “Ainda bem que trouxe outra camiseta na mochila.”",
+      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O trecho não permite nenhuma análise."
+        },
+        {
+          "id": "B",
+          "text": "A única tarefa é classificar todas as palavras."
+        },
+        {
+          "id": "C",
+          "text": "É razoável inferir que Caio se molhou ou enfrentou chuva; não se pode concluir onde choveu ou quanto tempo durou."
+        },
+        {
+          "id": "D",
+          "text": "A análise depende apenas do tamanho do trecho."
+        },
+        {
+          "id": "E",
+          "text": "Qualquer interpretação é igualmente válida."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "É razoável inferir que Caio se molhou ou enfrentou chuva; não se pode concluir onde choveu ou quanto tempo durou.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-03-C01",
+        "POR-03-C02"
+      ],
+      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
+      "provenance": "VECTA_ORIGINAL"
+    }
+  ],
+  "concepts": [
+    {
+      "editorialConceptId": "POR-03-C01",
+      "lessonId": "POR-03",
+      "name": "inferência",
+      "masteryTarget": "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-03-C02",
+      "lessonId": "POR-03",
+      "name": "implícito",
+      "masteryTarget": "Informações implícitas podem resultar de ações, escolhas lexicais, relações causais, ironia, omissões ou conhecimento compartilhado.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-03-C03",
+      "lessonId": "POR-03",
+      "name": "pressuposto",
+      "masteryTarget": "Pressupostos tendem a permanecer mesmo quando a frase é negada; “João parou de correr” pressupõe que João corria antes.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-03-C04",
+      "lessonId": "POR-03",
+      "name": "subentendido",
+      "masteryTarget": "Subentendidos dependem mais da situação comunicativa e podem ser negados pelo falante com maior facilidade.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-03-C05",
+      "lessonId": "POR-03",
+      "name": "pista textual",
+      "masteryTarget": "Uma inferência válida precisa ser compatível com todas as informações relevantes do texto.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-03-C06",
+      "lessonId": "POR-03",
+      "name": "contexto",
+      "masteryTarget": "O sentido de uma palavra desconhecida pode muitas vezes ser inferido pelas palavras vizinhas e pela situação apresentada.",
+      "status": "EDITORIAL"
+    }
+  ],
+  "qa": {
+    "lessonId": "POR-03",
+    "status": "PASS",
+    "checks": {
+      "sourceRefsResolve": true,
+      "questionCount": 8,
+      "eachQuestionHasFiveOptions": true,
+      "originalCoreContent": true
+    },
+    "editorialCautions": [
+      "Final VECTA schema must be reconciled by integration Maestro.",
+      "Question distractors should receive final spot-check after import/render."
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "id": "POR-09",
+  "subject": "POR",
+  "title": "Sintaxe: sujeito, predicado, complementos e ordem dos termos",
+  "module": "Gramática em contexto",
+  "priority": "P1",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Compreender relações sintáticas fundamentais e efeitos da ordem dos termos.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-011",
+    "POR-SRC-013"
+  ],
+  "conceptRefs": [
+    "POR-09-C01",
+    "POR-09-C02",
+    "POR-09-C03",
+    "POR-09-C04",
+    "POR-09-C05",
+    "POR-09-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Em “Chegaram cedo os estudantes do turno da manhã”, o sujeito aparece depois do verbo."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Compreender relações sintáticas fundamentais e efeitos da ordem dos termos.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Sujeito é o termo com o qual o verbo estabelece relação de concordância em estruturas pessoais, não simplesmente “quem faz a ação”.",
+        "Predicado reúne o que se declara sobre o sujeito ou a estrutura verbal da oração.",
+        "Objetos completam verbos transitivos; o indireto é introduzido por preposição exigida pelo verbo."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Adjuntos acrescentam circunstâncias ou caracterizações e não têm a mesma função de complementos exigidos.",
+        "A ordem direta sujeito-verbo-complementos é frequente, mas inversões podem produzir foco, ritmo ou estilo.",
+        "Identificar funções sintáticas exige relações entre termos, não apenas posição."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "sujeito",
+          "conceptRef": "POR-09-C01"
+        },
+        {
+          "term": "predicado",
+          "conceptRef": "POR-09-C02"
+        },
+        {
+          "term": "objeto direto",
+          "conceptRef": "POR-09-C03"
+        },
+        {
+          "term": "objeto indireto",
+          "conceptRef": "POR-09-C04"
+        },
+        {
+          "term": "adjunto",
+          "conceptRef": "POR-09-C05"
+        },
+        {
+          "term": "ordem direta",
+          "conceptRef": "POR-09-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Sujeito é sempre quem pratica ação.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "O primeiro termo é sempre sujeito.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Todo termo depois do verbo é objeto direto.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Se a ordem muda, a função muda automaticamente.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Em “Chegaram cedo os estudantes do turno da manhã”, o sujeito aparece depois do verbo.",
+      "analysis": "“Os estudantes do turno da manhã” é sujeito porque o verbo concorda com “estudantes”; posição não define função."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Reordene frases mantendo funções.",
+        "Use concordância e regência como pistas.",
+        "Compare o destaque informacional em ordens diferentes."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Procure o verbo e suas relações antes de nomear funções."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Sujeito é o termo com o qual o verbo estabelece relação de concordância em estruturas pessoais, não simplesmente “quem faz a ação”.",
+        "Predicado reúne o que se declara sobre o sujeito ou a estrutura verbal da oração.",
+        "Objetos completam verbos transitivos; o indireto é introduzido por preposição exigida pelo verbo.",
+        "Adjuntos acrescentam circunstâncias ou caracterizações e não têm a mesma função de complementos exigidos.",
+        "A ordem direta sujeito-verbo-complementos é frequente, mas inversões podem produzir foco, ritmo ou estilo.",
+        "Identificar funções sintáticas exige relações entre termos, não apenas posição."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Sintaxe: sujeito, predicado, complementos e ordem dos termos e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [
+      "POR-ASSET-05"
+    ],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

@@ -1,0 +1,881 @@
+{
+  "subject": "POR",
+  "sourceScopeVerified": false,
+  "lessons": [
+    {
+      "subject": "POR",
+      "id": "POR-01",
+      "topic": "Comprehension and inference",
+      "conceptIds": [
+        "POR.READ.EXPLICIT",
+        "POR.READ.MAIN_IDEA",
+        "POR.READ.INFER",
+        "POR.READ.EVIDENCE",
+        "POR.READ.DISTRACTOR"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-02",
+      "topic": "Genres, purpose, context and authorship",
+      "conceptIds": [
+        "POR.GENRE.IDENTIFY",
+        "POR.GENRE.PURPOSE",
+        "POR.GENRE.MODALITY",
+        "POR.CONTEXT.SITUATION",
+        "POR.AUTHORSHIP.VOICE",
+        "POR.AUDIENCE.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-03",
+      "topic": "Cohesion, coherence and discourse operators",
+      "conceptIds": [
+        "POR.COHESION.REFERENCE",
+        "POR.COHESION.CONNECTOR",
+        "POR.COHERENCE.RELATION",
+        "POR.OPERATOR.LOGIC",
+        "POR.OPERATOR.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-04",
+      "topic": "Argumentation and intentionality",
+      "conceptIds": [
+        "POR.ARG.CLAIM",
+        "POR.ARG.EVIDENCE",
+        "POR.ARG.STRATEGY",
+        "POR.INTENTION",
+        "POR.PERSUASION.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-05",
+      "topic": "Semantics, synonymy and ambiguity",
+      "conceptIds": [
+        "POR.SEM.CONTEXT",
+        "POR.SEM.SYNONYM",
+        "POR.SEM.POLYSEMY",
+        "POR.SEM.AMBIGUITY",
+        "POR.SEM.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-06",
+      "topic": "Figures of speech and meaning effects",
+      "conceptIds": [
+        "POR.FIG.IDENTIFY",
+        "POR.FIG.METAPHOR",
+        "POR.FIG.COMPARISON",
+        "POR.FIG.IRONY",
+        "POR.FIG.OTHER",
+        "POR.FIG.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-07",
+      "topic": "Intertextuality and literary resources",
+      "conceptIds": [
+        "POR.INTERTEXT.RECOGNIZE",
+        "POR.INTERTEXT.RELATION",
+        "POR.LITERARY.RESOURCE",
+        "POR.LITERARY.EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-08",
+      "topic": "Linguistic variation and prejudice",
+      "conceptIds": [
+        "POR.VAR.REGIONAL",
+        "POR.VAR.SOCIAL",
+        "POR.VAR.LEXICAL",
+        "POR.VAR.PHONOLOGICAL",
+        "POR.VAR.SYNTACTIC",
+        "POR.VAR.PRESTIGE",
+        "POR.VAR.PREJUDICE",
+        "POR.VAR.SEMANTIC_EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-09",
+      "topic": "Morphology, inflections and written conventions",
+      "conceptIds": [
+        "POR.WRITING.CONVENTION",
+        "POR.PHONEME.GRAPHEME",
+        "POR.MORPH.WORD_CLASS",
+        "POR.MORPH.NOMINAL_INFLECTION",
+        "POR.MORPH.VERBAL_INFLECTION",
+        "POR.MORPH.CONTEXT_EFFECT"
+      ]
+    },
+    {
+      "subject": "POR",
+      "id": "POR-10",
+      "topic": "Syntax, voices, agreement and regency",
+      "conceptIds": [
+        "POR.SYNTAX.RELATIONS",
+        "POR.VOICE.ACTIVE_PASSIVE",
+        "POR.ORDER.EFFECT",
+        "POR.AGREEMENT.NOMINAL",
+        "POR.AGREEMENT.VERBAL",
+        "POR.REGENCY",
+        "POR.SYNTAX.MEANING"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "POR.AGREEMENT.NOMINAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.AGREEMENT.VERBAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.ARG.CLAIM",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.ARG.EVIDENCE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.ARG.STRATEGY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.AUDIENCE.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.AUTHORSHIP.VOICE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.COHERENCE.RELATION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.COHESION.CONNECTOR",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.COHESION.REFERENCE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.CONTEXT.SITUATION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.COMPARISON",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.IDENTIFY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.IRONY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.METAPHOR",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.FIG.OTHER",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-06"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.GENRE.IDENTIFY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.GENRE.MODALITY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.GENRE.PURPOSE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-02"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.INTENTION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.INTERTEXT.RECOGNIZE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.INTERTEXT.RELATION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.LITERARY.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.LITERARY.RESOURCE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-07"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.MORPH.CONTEXT_EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.MORPH.NOMINAL_INFLECTION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.MORPH.VERBAL_INFLECTION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.MORPH.WORD_CLASS",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.OPERATOR.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.OPERATOR.LOGIC",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-03"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.ORDER.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.PERSUASION.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-04"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.PHONEME.GRAPHEME",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.READ.DISTRACTOR",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "POR.READ.EVIDENCE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "POR.READ.EXPLICIT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "POR.READ.INFER",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "POR.READ.MAIN_IDEA",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-01"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md",
+        "packs/seeds/ifsc-2027.golden.track.v2.json"
+      ],
+      "seedPresent": true
+    },
+    {
+      "id": "POR.REGENCY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SEM.AMBIGUITY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SEM.CONTEXT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SEM.EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SEM.POLYSEMY",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SEM.SYNONYM",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-05"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SYNTAX.MEANING",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.SYNTAX.RELATIONS",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.LEXICAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.PHONOLOGICAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.PREJUDICE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.PRESTIGE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.REGIONAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.SEMANTIC_EFFECT",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.SOCIAL",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VAR.SYNTACTIC",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-08"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.VOICE.ACTIVE_PASSIVE",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-10"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    },
+    {
+      "id": "POR.WRITING.CONVENTION",
+      "subjects": [
+        "POR"
+      ],
+      "lessonIds": [
+        "POR-09"
+      ],
+      "origins": [
+        "docs/ifsc/curriculum/PORTUGUESE.md"
+      ],
+      "seedPresent": false
+    }
+  ]
+}

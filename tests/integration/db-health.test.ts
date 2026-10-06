@@ -6,7 +6,7 @@ import { getServerEnv } from "@/lib/env";
 describe("server environment validation", () => {
   it("defaults the local owner and log level without requiring secrets", () => {
     expect(getServerEnv({})).toMatchObject({
-      KNOW_OS_OWNER_ID: "local-owner",
+      ESTUDISC_OWNER_ID: "local-owner",
       LOG_LEVEL: "info"
     });
   });

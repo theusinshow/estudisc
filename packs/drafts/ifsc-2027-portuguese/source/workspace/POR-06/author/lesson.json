@@ -1,0 +1,151 @@
+{
+  "id": "POR-06",
+  "subject": "POR",
+  "title": "Fonema, grafema e relações entre fala e escrita",
+  "module": "Gramática em contexto",
+  "priority": "P1",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Distinguir som, fonema, letra e grafema e compreender relações não biunívocas entre fala e escrita.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-003",
+    "POR-SRC-010"
+  ],
+  "conceptRefs": [
+    "POR-06-C01",
+    "POR-06-C02",
+    "POR-06-C03",
+    "POR-06-C04",
+    "POR-06-C05",
+    "POR-06-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Em “casa” e “cela”, a letra c não representa o mesmo som. O som inicial de “sapo” também pode aparecer com outras grafias em palavras diferentes."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Distinguir som, fonema, letra e grafema e compreender relações não biunívocas entre fala e escrita.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Fonema é unidade sonora distintiva: trocar um fonema pode produzir outra palavra, como em “faca” e “vaca”.",
+        "Grafema é representação escrita; letras ou combinações de letras podem representar fonemas.",
+        "Uma mesma letra pode representar sons diferentes, e um mesmo fonema pode receber grafias diferentes."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Dígrafos são combinações de duas letras que representam um único fonema em determinados contextos.",
+        "Número de letras e número de fonemas não precisam coincidir.",
+        "Pronúncias regionais diferentes não significam automaticamente erro ortográfico."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "fone",
+          "conceptRef": "POR-06-C01"
+        },
+        {
+          "term": "fonema",
+          "conceptRef": "POR-06-C02"
+        },
+        {
+          "term": "grafema",
+          "conceptRef": "POR-06-C03"
+        },
+        {
+          "term": "letra",
+          "conceptRef": "POR-06-C04"
+        },
+        {
+          "term": "dígrafo",
+          "conceptRef": "POR-06-C05"
+        },
+        {
+          "term": "sílaba",
+          "conceptRef": "POR-06-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Cada letra representa sempre um único som.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Toda palavra tem o mesmo número de letras e fonemas.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Um dígrafo representa dois fonemas.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Pronúncia regional diferente prova erro de escrita.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Em “casa” e “cela”, a letra c não representa o mesmo som. O som inicial de “sapo” também pode aparecer com outras grafias em palavras diferentes.",
+      "analysis": "A relação som-escrita é sistemática, mas não de um para um; contexto ortográfico importa."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Monte pares mínimos trocando um fonema.",
+        "Separe letras de fonemas em palavras com dígrafos.",
+        "Classifique casos de mesma letra/sons diferentes e mesmo som/grafias diferentes."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Não conte fonemas mecanicamente pelas letras; observe dígrafos e contexto."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Fonema é unidade sonora distintiva: trocar um fonema pode produzir outra palavra, como em “faca” e “vaca”.",
+        "Grafema é representação escrita; letras ou combinações de letras podem representar fonemas.",
+        "Uma mesma letra pode representar sons diferentes, e um mesmo fonema pode receber grafias diferentes.",
+        "Dígrafos são combinações de duas letras que representam um único fonema em determinados contextos.",
+        "Número de letras e número de fonemas não precisam coincidir.",
+        "Pronúncias regionais diferentes não significam automaticamente erro ortográfico."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Fonema, grafema e relações entre fala e escrita e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [
+      "POR-ASSET-03"
+    ],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

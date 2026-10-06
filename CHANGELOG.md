@@ -1,17 +1,30 @@
 # Changelog
 
+## 2026-10-06 — Estudisc consolidation
+
+- Adopt Estudisc as the current identity; preserve deprecated environment aliases, signed sessions, old backups, immutable Pack IDs, hashes and factual history (ADR 0039).
+- Add the Today read coordinator, deterministic recommendation reasons and bulk mastery evidence reads; split memory domains, importer panels/hooks, publication responsibilities and ordered CSS without replacing the stack.
+- Expose reviewed/direct publication and real audit information; validate critical API responses and add structured operational logs with allowlisted metadata.
+- Fix the known E2E failures, mobile navigation intercepting RUN and edits before hydration. Isolate browser projects and remove the GH preview's dependency on ignored receipts. No test was deleted.
+- Local acceptance: lint, typecheck, build and Pack validation pass; full tests 261 pass / 3 optional real-PostgreSQL skips; integration 41 pass / 3 skips; content QA 17 pass; unit 203 pass; E2E 38 pass / 0 fail. Current report: docs/migrations/ESTUDISC-CONSOLIDATION-RESULTS.md.
+- Rename the existing GitHub repository and Vercel project while preserving their IDs, Git connection and `vecta-three.vercel.app` alias. Remote CI and read-only production acceptance are tracked in the current report.
+
 2026-10-06 production activation COMPLETE: Mathematics19/240,Science40/320,History-Geography49/392,Portuguese24/192;132published lessons/1144subjectQuestions. Actual132studyURLsPASS,read-onlyproductionhash/preservationauditPASS. Scoped2MiBdeploy and only0018auditmigration completed under explicituserauthorization. No source rewriting or answer submissions. Remote2MiBpatchbd3fa56preservesexistingGH4fa1ed0;rootdirtyworkretained. FullapplicationE2Eremains22PASS/14preexistingFAIL. Exactreport:docs/all-subjects-live-20261006.md. NEXT ACTION: none for this delivery;do not repeat imports/publication.
 
-## 2026-10-05 - Reviewed GH publication preparation
+## 2026-10-05 - History/Geography v2 and 2 MiB Track Packs
 
-- Record genuine owner authorization to apply the49GH lessons/392Questions; retain the sealed Pack and pending-media flags.
-- Prepare hash-pinned direct ADMIN publication batches40+9 and test actual disposable import/publication,441audit events, idempotent retries and preservation without fabricated reviews. Production application awaits owner ADMIN login; no deployment/migration performed.
+- Integrate49draftlessons/392sharedQuestions/293source-definedConcepts/670blocks through the sharedScienceadapter/coreimporter,keeping753originalfilesunchanged and preserving existingMath/Science/Portuguese/studentstate.
+- Raise only Track Pack preview/apply request caps to2MiB with UTF8/declaration checks and413rejection;genericJSONdefault/restore bounds stay1MiB (ADR0037). Preserve schemas,sourceversions,keys and existing publication boundaries.
+- Full246tests/lint/typecheck/build/mobilePASS;E2E22PASS/14existingFAIL,0newnames. Narrowdeploymentcandidate and exact49lessonpublicationfixtureverified. ActualsiteGHpreviewstill413/1MiB;liveapplication awaits explicitdeployment+0018productionmigration permission. Portuguese24/192stilldrafts. Exactcommands/results:tools/science-import/qa/HISTORY-GEOGRAPHY-FINAL-QA.md.
 
-## 2026-10-05 - Geography and History draft integration
+2026-10-05 reviewed Portuguese site application: exact24lesson/192Question pack imported through authenticatedADMIN live workflow, preserving31priorreviewentries. Publication is pending the explicitly authorized production audit migration0018; failed audit insert left all24drafts. Disposable repair/rollback preflight passed;History/Geography still requires its actual package path. See docs/portuguese-site-application.md.
 
-- Import 49 GH lessons and 392 unchanged Questions through the shared Science adapter and existing Pack v2/core importer, using eight pilots and five idempotent batches.
-- Preserve the complete 753-file editorial source, explicit Concept/ID map and sidecar; namespace colliding runtime identities as GH-V2 while retaining existing Science/Mathematics, canonical Concepts and learner state.
-- Keep 42 authentic media, 29 deterministic assets and 6 conceptual illustrations pending in separate pipelines; no automatic publication or documentary AI imagery. Compact redundant metadata within the unchanged 1 MiB transport limit.
+## 2026-10-05 - Portuguese editorial draft integration
+
+- Integrate24lessons/192sharedQuestions/144explicitConcepts and264blocks from the original Portuguese v1 package, keeping164source files byte-identical.
+- Extend the Science adapter/CLI/preservation/mobile tools with a Portuguese profile; preserve question stimuli, Unicode, A–E keys, explanations and source pacing without runtime schema changes or parallel engines.
+- Preserve existing global POR-01/02@1 versions with runtime lesson2; idempotent pilot/four cumulative imports retain all700baselineQuestions and immutable study state.
+- Quarantine confirmed Concept name/masteryTarget discrepancies for human review; retain media/source/curriculum caveats and draft publication state. Final deterministic tests/lint/typecheck/build/mobile and read-only database audit pass; full serialE2E22PASS/14existingFAIL (zero new failure names) leaves the application release gate unaccepted; exact commands/results in tools/science-import/qa/PORTUGUESE-FINAL-QA.md.
 
 ## 2026-10-05 - Direct ADMIN lesson publication
 
@@ -20,12 +33,86 @@
 - Waive editorial completeness gates only for this explicit operation; retain retirement, source-asset/reference checks, reservation policies, immutable content and unchanged student state. Migration0018 adds the audit table; existing reviewed publication remains available.
 
 
-## Science draft snapshot (2026-10-05)
+2026-10-05 Science V2: added deterministic source adapters, Concept/block mappings, import and QA tooling using existing Pack v2/core importer/shared Questions/renderers. Applied 40 lessons/320 Questions as local drafts, preserving source files, Math/IFSC, shared Concepts, immutable history and student state. Added13safe deterministic SVG draft fallbacks;11deterministic and13generative requests remain pending with original Antigravity handoff. Media revisions create13runtime lessonv3 versions while preserving editorial/Questionv2. Fixed generic lesson grid/text wrapping for long source URLs and scoped existing generated/prototype lint ignores to nested copies. Structural/fidelity/renderer/persistent QA,228tests, lint/typecheck/build and mobile smoke passed;14existingE2E failures keep fullapplication release gate unaccepted. No source rewriting, factual approval, publication, deployment or production migration.
 
-- Preserve forty CIE-01..40 draft lessons, 320 generated Questions, full source/sidecar and thirteen static draft figures in a portable versioned snapshot.
-- Add deterministic source/adapter/import/preservation QA and mobile smoke checks using existing core contracts, renderers and evaluators.
-- Keep student state, historical content, official mapping uncertainty and pending editorial/media review separate; fix intrinsic mobile grid/long-link overflow. No production import/publication.
+2026-10-04 lesson-counter correction prepared: select the newest lesson content version for activity totals and owner-specific attempted/passed counters, matching Catalog lookup. Added regressions for import order, historical attempt/evidence preservation, owner isolation and missing lessons. Full lint/typecheck/test/build passed; browser failures remain the previously recorded19/15 baseline. Production application awaits the explicit narrow-deployment confirmation required by repository policy.
 
+2026-10-04 Mathematics applied to the real VECTA site: user corrected destination to https://vecta-three.vercel.app. Imported the approved nineteen lessons as a single Mathematics collection and published all19versions/240Questions through existing authenticated four-layer review gates, retaining source/mapping/pacing disclosures. Verified real-site release counts, all nineteen student pages at343x844 and preservation of previous versions and the original full IFSC track. Recorded a separate progress-counter version-selection limitation for PREREQ/01/02/07; no attempt/evidence rewrite or application deployment/schema migration occurred.
+
+2026-10-04 human approval recorded: the owner explicitly approved all nineteen Mathematics drafts and confirmed application at https://know-os.vercel.app. Recorded delegated nonsimulated Studio approval and generated canonical exports, retaining draft runtime status and existing source/mapping/pacing disclosures. Prepared a validated847537byte combined Mathematics candidate and passed disposable real-repository import/idempotence/synthetic publication checks for19lessons/240Questions without student-state writes. Opened the real site portal and prepared the exact-version four-layer publication request. Real-site application awaits the required ADMIN login; no site import/publication/deployment is claimed.
+
+2026-10-04 Mathematics draft delivery: completed genuine Author corrections and independent QA for all19lessons covering106canonical Concepts,240Questions and57exitQuestions. Fixed MAT10's purchase constraint/final hints/pacing, MAT16's Portuguese hints/distractors/losango practice/pacing, and MAT18's self-contained data practice/feedback/independent example plus an additional ambiguous category comparison. Regenerated current manuscripts/figure evidence and343px reports; exact-hash require-ready acceptance passed19/19. All content remains draft for human review; official mapping, rights and pacing caveats remain visible. Full tests219passed/3skipped, lint/typecheck/build passed; application E2E19passed/15failed remains an unresolved release gate.
+
+2026-10-03 user-selected runtime preparation: changed Lupa/Library from xhigh to high for their existing sessions after claims completed; preserved models/history and updated future handoff metadata. Created a genuine Antigravity VECTA IMAGE PRODUCER with a bounded preparation role; native image capability discovery remains pending and no generation or media integration is claimed.
+
+2026-10-03 agent efficiency: added a shared Content Studio execution policy and compact single-job handoffs; bounded terminal output, targeted corrections and reuse of actual prior QA evidence. Preserved current models, independent review, active claims and human publication gates. No token-savings measurement is claimed.
+
+
+2026-10-03 Mathematics orchestration: reused idle Lupa as a third actual independent Reviewer with exclusive disjoint assignments; all author corrections routed to Trama. Read-only final-acceptance utility verifies current QA/manuscript hashes,106 canonical Concepts, separate actual Author/Reviewer terminals and current343px all-block renderer reports; no application contract or approval gate changed. Completion remains pending.
+
+## 2026-10-03 - Mathematics production resumption
+
+- Resumed four real terminal claims and verified all nineteen Researcher snapshots against their recorded hashes; preserved existing independently reviewed drafts and revision history.
+- Repaired MAT-05 concept/example tags through its actual Author so the existing student stepper can place all nine declared checkpoints; no renderer or evaluator change.
+- Rebalanced the unclaimed final MAT-17 authorship to the idle Trama terminal while Lupa handles algebra revisions; independent review remains with Library. Generalized local mobile inspection copies to current Mathematics blocks, bound to lesson hashes.
+- Kept draft/human/publication gates and pending official mapping/source rights visible. Full nineteen-lesson acceptance remains in progress.
+
+## 2026-10-02 - Full Mathematics production preparation
+
+- Recorded user authorization, the complete 18-lesson/prerequisite queue and per-lesson completeness requirements for original draft authoring and independent review.
+- Identified the missing full Studio inventory and explicit research/content/QA gaps; existing ten drafts remain revision inputs, with eight main lessons still to author. No new content or approval was fabricated.
+- Initialized 19 real draft-production jobs using the existing pinned-catalog API, covering 106 canonical Concepts without a replacement official bank. Started actual Library/Researcher/Author/Reviewer queues with separate ownership; human approval/publication remains pending.
+- Added local draft manuscripts, solutions, mobile figure inspection and readiness checks bound to actual independent QA/artifact hashes. Preserved invalid/restricted-source snapshots through the existing reset/history flow and routed factual/pedagogical repairs to their owners. No complete lesson/approval/publication claim; Image Producer remains a separately authorized subsequent task.
+
+- Completed all nineteen current research stages with verified recorded hashes and no factual blockers; balanced real canvas authorship across disjoint existing terminals, preserving independent QA and draft/human gates. Added explicit local ownership, duplicate-safe asynchronous handoffs and per-Concept completeness checks for the human-review index.
+
+- Reassigned the idle Library terminal to independent Reviewer of Lupa/prerequisite drafts and transferred its own future author corrections to Trama. Separate exclusive reviewer routers preserve real claim/hash ownership. Corrected the actual mobile text-chart representation through its Author without a renderer or asset-rights change; independent QA remains required.
+
+## 2026-10-02 - Mathematics enrichment independent review
+
+- Consolidated actual Lupa, Trama and Crivo source/coverage, pedagogical and mathematical audits with snapshot hashes, checked scope and remaining evidence/rights/accessibility gaps.
+- Added protective HAS_ERRORS/reference-only findings to SEDUC notation and UEPA metric sources, preserving original validation history and all other source records; regenerated indexes. Corrected coverage-report notation/capacity evidence and narrowed angles/time ratings.
+- Recorded a reviewer arithmetic correction and conditional pilot recommendations. No lessons, approvals, original-PDF modifications or runtime changes.
+
+## 2026-10-02 - IFSC 2027/1 Mathematics source enrichment
+
+- Added 46 canonical Mathematics source records with actual Concepts, page/section maps, sampled independent calculations, license status and explicit research/verification limits; generated source indexes now cover 65 total records.
+- Preserved two unchanged local reference PDFs (IFTO simple-interest and IFES divisibility), excluded from Git. Flagged three source calculation/identity errors; no material is approved for embedding and no lesson/question content was generated.
+- Added a topic-by-topic coverage report distinguishing improved source availability from actual teaching coverage and listing the remaining inequalities, radicals, capacity, probability, time/interest and access gaps.
+
+## 2026-10-02 - Mathematics source assessment
+
+- Recorded real, separate Maestri Researcher/Reviewer audits with PDF/page evidence of incorrect examples/answer keys, pedagogical/accessibility limitations and partial IFSC 2027/1 fit.
+- Added capacity/empirical-probability coverage refinements and practical source-use guidance. Original files, catalog licensing and editorial approval boundaries remain unchanged; no lesson generated.
+
+## 2026-10-02 - Mathematics source coverage audit
+
+- Reconfirmed all 19 ProEdu originals on disk and compared inspected sections against the actual official IFSC 05/DEING/2027/1 Mathematics syllabus. Documented absent/partial topics without claiming full exam coverage or editorial approval.
+- Expanded existing source mappings for nested MMC/MDC/prime factors, notable products, linear-equation examples, ratios/proportions and volume/capacity; retained stable IDs, file hashes and rights review. Added a persistent collection coverage report.
+
+## 2026-10-02 - Maestri editorial team
+
+- Configured real Lupa/RESEARCHER, Trama/AUTHOR and Crivo/REVIEWER Codex GPT-6.1 Sol HIGH terminals, coordinated by the current ORCHESTRATOR, with actual Studio roles, shared context notes and star connections.
+- Verified role/root/model and READY responses through Maestri; documented standby ownership and recovery. No lesson job, import or publication started.
+
+## 2026-10-02 - ProEdu Mathematics source intake
+
+- Curated 19 Mathematics source records for UFV/e-Tec Brasil's Matemática Instrumental, by Ricardo Ferreira Paraizo. Preserved original PDFs locally (494 pages, 32,218,100 bytes) with unique SHA-256 hashes, file metadata, attribution and a collection index.
+- Mapped inspected content to existing Concepts and kept missing/partial mappings explicit. No lessons, official IFSC coverage claims or publication approvals were generated.
+- Recorded CC BY-NC-ND 3.0 US from the item metadata/license RDF and the conflicting page-footer badge. Reuse remains REQUIRES_REVIEW; PDFs are Git-ignored and reserved for unmodified local noncommercial reference.
+
+## 2026-10-02 — VECTA Content Studio
+
+- Added file-based editorial tooling in `tools/vecta-content-studio`, operated through four versioned Maestri prompts with no model API dependency. Reuses the real Pack v2 Lesson, shared Questions and runtime validation rather than defining a second learning engine.
+- Added local CLI jobs, safe claims, atomic state transitions, input/output hashes, independent review, revision history/limits, scoped recovery and an explicit human export approval gate. Promotion exports draft Pack v2 plus provenance/media/QA audit and manifest, without importing or publishing.
+- Added source/media licensing, factual/reference/answer/renderer/exit-ticket validation, generated illustration requests, compact context and a practical Maestri runbook. Unverified official mappings, incomplete teaching and unsupported runtime components remain visible.
+- Added a synthetic CIE-06 fixture with HIGH finding/revision and clearly simulated promotion; 31 focused tooling/import tests cover safety, preserved block evidence references and real disposable database compatibility. Existing student runtime, Pack schemas and publication QA remain unchanged.
+
+## 2026-10-02 - VECTA Source Library
+
+- Initialized an empty source library using existing Content Studio SourcePack/MediaPack and runtime ContentSource contracts; curation metadata includes subject/topic/Concept mapping, quality, licensing, verification, pending review and history.
+- Added safe URL normalization, duplicate lookup, stable ID allocation, source/media validation and derived subject/media/inbox/archive indexes. Existing seed IDs can be retained without renaming provenance.
+- Added compact taxonomy for 378 actual repository Concept IDs with origin and seed-presence flags; official mappings and teaching coverage remain unverified. Added intake/resumption conventions and ADR 0035. No lessons or external resources were collected.
 
 ## 2026-10-02 — MAT-PREREQ editorial corrections
 

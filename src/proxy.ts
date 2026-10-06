@@ -6,7 +6,7 @@ import { isGoogleAuthConfigured } from "@/features/auth/auth-readiness";
 import { getServerEnv } from "@/lib/env";
 import { isAllowedMutationOrigin } from "@/features/auth/mutation-origin";
 import { getAccountConfig } from "@/features/auth/account-mode";
-import { ACCOUNT_SESSION_COOKIE, readAccountSession } from "@/features/auth/code-accounts";
+import { readAccountSessionFromCookies } from "@/features/auth/code-accounts";
 import {
   applyBaseSecurityHeaders,
   buildContentSecurityPolicy,
@@ -70,7 +70,7 @@ const authProxy = auth((request: AuthenticatedRequest) => {
   const accountConfig = getAccountConfig(getServerEnv());
   if (accountConfig) {
     if (pathname === "/api/session") return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
-    const account = readAccountSession(request.cookies.get(ACCOUNT_SESSION_COOKIE)?.value, accountConfig.accounts, accountConfig.secret);
+    const account = readAccountSessionFromCookies(request.cookies, accountConfig.accounts, accountConfig.secret);
     if (account) {
       if (isAdminRuntimePath(pathname) && account.role !== "ADMIN") {
         // APIs answer 403; pages send the student home instead of showing raw JSON.
@@ -89,7 +89,7 @@ const authProxy = auth((request: AuthenticatedRequest) => {
 
   if (decision === "allow") {
     const env=getServerEnv();
-    if(isAdminRuntimePath(pathname)&&isGoogleAuthConfigured(env)&&!env.KNOW_OS_ADMIN_GOOGLE_EMAILS.includes(request.auth?.user?.email?.trim().toLowerCase()??""))return secureResponse(NextResponse.json({code:"admin_required",message:"Esta ação requer perfil de administrador."},{status:403}),contentSecurityPolicy);
+    if(isAdminRuntimePath(pathname)&&isGoogleAuthConfigured(env)&&!env.ESTUDISC_ADMIN_GOOGLE_EMAILS.includes(request.auth?.user?.email?.trim().toLowerCase()??""))return secureResponse(NextResponse.json({code:"admin_required",message:"Esta ação requer perfil de administrador."},{status:403}),contentSecurityPolicy);
     return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
   }
 
@@ -101,7 +101,7 @@ const authProxy = auth((request: AuthenticatedRequest) => {
           message:
             decision === "unauthenticated"
               ? "Autenticação Google é necessária para acessar este recurso."
-              : "Esta conta Google não está autorizada para este KNOW/OS."
+              : "Esta conta Google não está autorizada para este Estudisc."
         },
         { status: decision === "unauthenticated" ? 401 : 403 }
       ),

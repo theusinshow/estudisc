@@ -1,0 +1,13 @@
+PHASE: ALL_SUBJECTS_LIVE
+STATUS: COMPLETE
+SITE: https://vecta-three.vercel.app/tracks
+PUBLISHED: Mathematics19/240;Science40/320;GH49/392;Portuguese24/192
+TOTAL_CURRENT:132lessons/1144Questions
+LIVE_ACCEPTANCE:132studyURLsHTTP200/correcttitle/noinvalidrenderer;allcanonicalQuestion/blockhashesmatch
+PRESERVATION:priorcontent/versions/learnerhistory/evidence/sessions/reviews/exposuresunchanged;noanswersubmissions
+PRODUCTION:2MiBlimitdeployed;only0018auditmigrationapplied;1017ADMINpublicationauditrows;0fabricatedQA
+CODE:runtimepatchbd3fa56,deliverydocs091dcc8onorigin/main;newremoteGH4fa1ed0preserved;rootmain2fd36de/dirtyworkretained
+CHECKS:246testspassed3skipped,lint/typecheck/build/mobilePASS;fullE2E22PASS14existingFAIL0newnames
+REPORT:docs/all-subjects-live-20261006.md
+PRIVATE_RECEIPTS:.local/all-subjects-application/
+NEXT_ACTION:none;optionalE2E/media/source/localbranchalignmentseparate
