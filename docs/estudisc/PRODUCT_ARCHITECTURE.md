@@ -1,6 +1,6 @@
 # Estudisc evolution — architecture entry point
 
-Audit date: 2026-10-06. This execution covers audit and planning only.
+Audit date: 2026-10-06. The initial audit/planning execution is complete. The user subsequently authorized implementation; the first foundation/Today increment is tracked in [the implementation report](EVOLUTION-FOUNDATION.md).
 
 Read [the supplied product architecture](source-pack/01_PRODUCT_ARCHITECTURE.md), [the gap analysis](IMPLEMENTATION-GAP-ANALYSIS.md), [the implementation plan](IMPLEMENTATION-PLAN.md), and [model routing](MODEL-ROUTING-POLICY.md). Specialized source documents are preserved unchanged in `source-pack/`; do not duplicate them into competing specifications.
 
@@ -12,9 +12,9 @@ The pack extends the existing Next.js/React/Drizzle/PostgreSQL/Auth.js modular m
 
 Precedence and reconciliations:
 
-- The user's first-execution limit overrides the pack's later instruction to continue implementation. No large phase, import, publication, push, deployment or production migration is authorized by this audit.
+- The user's first-execution limit was honored by the completed audit. The subsequent implementation request authorizes local phases/increments. Imports/publication of real content, pushes, deployment and production migrations remain separate boundaries.
 - Preserve [approved scope](../02-SCOPE.md), [IFSC roadmap](../ifsc/16-IMPLEMENTATION-PLAN.md) and accepted [ADRs](../ADR/README.md). Evolution phases 0–15 below are a new planning sequence, not a claim that existing IFSC milestones are missing.
-- [Design System index](../../design-system/DESIGN_SYSTEM_INDEX.md) and `design-system/VERSION` remain canonical. Current version is 4.0.0. The proposed five-tab navigation evolves the accepted four-item shell; document that change in a follow-up ADR and screen specifications before implementing it. Suggested spacing/motion values in the pack do not replace approved tokens.
+- [Design System index](../../design-system/DESIGN_SYSTEM_INDEX.md) and `design-system/VERSION` remain canonical. Current version is 4.0.0. [ADR 0040](../ADR/0040-evolution-shell-and-runtime-compatibility.md) and updated screen specifications reconcile the flagged five-destination shell with the default four-item path. Suggested pack spacing/motion does not replace approved tokens.
 - `LessonSection`, `LearningPurpose` and resumable steps need a compatibility decision before changing persisted Pack contracts. Extend the current block renderer and Activity registry. Any Pack schema change requires an ADR, migration strategy, fixtures and compatibility tests.
 - The 132 lessons / 1,144 Questions remain published and immutable. Enrichment produces new draft versions with the same stable identities, rather than editing or republishing existing versions. Actual editorial reviews and Admin Direct audit records retain their distinct meanings.
 - Publication is not certification of rights, official curriculum mapping, pacing or planner readiness. Keep current caveats visible and decide eligibility explicitly before changing selection policy.

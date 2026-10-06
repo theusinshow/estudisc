@@ -2,6 +2,15 @@
 
 ## Delta IFSC integrado
 
+### Progressive shell and Today (ADR 0040)
+
+- Default/off: preserve Hoje/Aprender/Progresso/Mais and current Today.
+- `FEATURE_STUDY_PLANNER`: primary destinations Hoje/Plano/Aprender/Revisar/Progresso; secondary/account actions in a titled topbar Sheet with Escape/focus return. At 320px each destination remains a single label with at least 44px touch width/height. Desktop uses the same destinations in the sidebar.
+- Plano initially shows existing prepared/ACTIVE/completed session snapshots and 15/30/60-minute controls. Week/routine/onboarding modes remain pending; never display invented availability or a weekly allocation.
+- `FEATURE_NEW_TODAY`: date/title → next action and readable reason → real session snapshots/preparation → attention → short queue → week. The primary action is visible at ~390×844. Counts and durations display only when factual; planned minutes are not measured elapsed time.
+- `FEATURE_INTERACTIVE_LESSONS`: lesson/ACTIVE study uses AppShell Focus; `FEATURE_REAL_EXAM`: ACTIVE assessment uses Focus. Keep explicit exit and skip/main; exit is navigation, not completion/abandonment/submission. Results return to ordinary shell.
+- Loading/empty/error states explain recovery. Day-off/completed-day and routine-dependent states wait for real routine facts.
+
 
 ## Today
 

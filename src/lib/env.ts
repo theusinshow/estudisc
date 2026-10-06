@@ -1,5 +1,6 @@
 import { logEvent } from "./logger.ts";
 import { z } from "zod";
+import { featureFlagsSchema } from "./feature-flags.ts";
 
 const optionalUrl = z.preprocess((value) => (value === "" ? undefined : value), z.url().optional());
 const optionalSecret = z.preprocess(
@@ -47,7 +48,8 @@ export const serverEnvSchema = z.object({
   ESTUDISC_OWNER_ID: z.string().trim().min(1).default("local-owner"),
   ESTUDISC_ACCOUNTS: optionalSecret,
   ESTUDISC_RUN_REAL_POSTGRES_TESTS: z.enum(["0", "1"]).optional(),
-  LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info")
+  LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
+  ...featureFlagsSchema.shape
 });
 
 export type ServerEnv = z.infer<typeof serverEnvSchema>;
@@ -78,6 +80,7 @@ export function getServerEnv(source: Record<string, string | undefined> = proces
     ESTUDISC_OWNER_ID: source.ESTUDISC_OWNER_ID ?? source.KNOW_OS_OWNER_ID,
     ESTUDISC_ACCOUNTS: source.ESTUDISC_ACCOUNTS ?? source.KNOW_OS_ACCOUNTS,
     ESTUDISC_RUN_REAL_POSTGRES_TESTS: source.ESTUDISC_RUN_REAL_POSTGRES_TESTS ?? source.KNOW_OS_RUN_REAL_POSTGRES_TESTS,
-    LOG_LEVEL: source.LOG_LEVEL
+    LOG_LEVEL: source.LOG_LEVEL,
+    ...Object.fromEntries(Object.keys(featureFlagsSchema.shape).map(name => [name, source[name]]))
   });
 }

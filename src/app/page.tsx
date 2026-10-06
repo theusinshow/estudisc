@@ -10,6 +10,8 @@ import { FirstRunCallout } from "@/components/ui/first-run-callout";
 import { WeekStrip } from "@/features/progress/week-strip";
 import { getTodayDashboard } from "@/features/today/get-today-dashboard";
 import { SessionControls } from "@/features/study-sessions/session-controls";
+import { getFeatureFlags } from "@/lib/feature-flags";
+import { TodayPage } from "@/features/today/today-page";
 
 export const dynamic = "force-dynamic";
 
@@ -17,6 +19,7 @@ const kindLabel = { continue: "Continuar", review: "Revisar", mistake: "Corrigir
 
 export default async function HomePage() {
   const dashboard = await getTodayDashboard();
+  if (getFeatureFlags().FEATURE_NEW_TODAY) return <TodayPage dashboard={dashboard} />;
   const primaryRecommendation = dashboard.nextAction;
   const queue = dashboard.queue;
   const overview = dashboard.progress;

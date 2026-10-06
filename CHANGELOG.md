@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-06 — Progressive study foundation and Today
+
+- Add centrally validated default-off feature flags, compatible five-destination navigation with topbar Sheet, and shared Focus layout for flagged lesson/ACTIVE study/assessment flows. Add native Dialog/Sheet, keyboard Tabs and component registry using unchanged DS 4.0.0 tokens (ADR 0040).
+- Add flagged `/plan` for existing session preparation/history and a reusable Today presentation that places authoritative next action/reason first. Preserve existing recommendation/session/evidence/scoring engines and published Pack contracts/bytes.
+- Validate 275 tests / 3 optional PostgreSQL skips, lint/typecheck/build/pack checks, 38 legacy E2E and 4 flagged E2E, plus mobile/desktop/modal/keyboard/Focus/reduced-motion QA. Save a hash-pinned Terra handoff for weekly routine/overrides/rebalance and preview consistency. Flags remain off; no production operation. Exact commands: `docs/estudisc/EVOLUTION-FOUNDATION.md`.
+
 ## 2026-10-06 — Architecture pack audit and model routing
 
 - Preserve the supplied eleven-document architecture pack and manifest with archive/file hashes; audit existing modules against every proposed area without changing runtime code or published content.

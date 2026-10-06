@@ -4,7 +4,7 @@ Date: 2026-10-06. Base: `d38f640`, `main`. Inputs: [architecture](PRODUCT_ARCHIT
 
 ## 1. Strategy and authorization
 
-This first execution delivers audit and planning only. Large phases below are pending; their descriptions are not implementation or production approval. The existing IFSC roadmap remains accepted; this plan extends its implemented modules rather than replaying IFSC-00–15. Start a future execution from the first unmet gate, not from a blank scaffold.
+The first execution delivered audit/planning only. The user's subsequent implementation request authorizes local increments, now tracked in [EVOLUTION-FOUNDATION.md](EVOLUTION-FOUNDATION.md). The existing IFSC roadmap remains accepted; this plan extends its modules rather than replaying IFSC-00–15. External/production operations remain separate boundaries. Continue from the first unmet gate.
 
 Use the smallest reversible increment: contract → focused implementation → focused tests → documentation → full phase acceptance → safe local checkpoint. Luna Max performs routine work; Terra resolves precise domain/security/architecture decisions; Sol High reviews exceptional risk. Do not scale model because a phase has many files. No additional agents by default.
 
@@ -20,23 +20,27 @@ During each coherent change: focused tests must verify actual domain rules and f
 
 UI gates: 320/360/390/430px, desktop, safe areas, focus, keyboard/touch, 44px targets, labels/semantics, contrast, reduced motion, loading/empty/error, recovery and non-drag alternatives. Existing E2E is a baseline, not certification for new controls. Source/media review gates require actual rights/mapping evidence and complete initial QA.
 
-Centralize feature flags in validated application configuration; the names below are planned and absent from current runtime. Default new flags off. Off restores the prior presentation/service entry path; on must be tested. Flags cannot bypass owner permissions, exposure, scoring or publication checks. Leave additive data in place when disabling a phase; no destructive down-migration or historic-record rewriting. Versioned policy/snapshot data must remain readable with the flag off.
+Central feature flags now live in validated application configuration. All nine default off; four expose the initial foundation UI and the other five reserve later rollout names. Off restores the prior presentation/service entry path; on must be tested. Flags cannot bypass owner permissions, exposure, scoring or publication checks. Leave additive data in place when disabling a phase; no destructive down-migration or historic-record rewriting. Versioned policy/snapshot data must remain readable with the flag off.
 
 Update `PROJECT_STATUS.md`, this plan, relevant docs/ADRs and `CHANGELOG.md` for behavior/contracts. Commit locally only with understood tree and passed gate. Stop at a safe handoff for unsupported model decisions, material unresolved specification conflicts or authorization boundaries.
 
 ## 3. Phase 0 — Stabilization
+
+Implementation update: ADR 0040 and canonical screen/index documentation reconcile the new navigation. Zod flags default off; Section/Step remains the existing runtime projection. No persisted Pack contract or migration was introduced. Current acceptance is in EVOLUTION-FOUNDATION.md.
 
 Risk LOW; Luna Max. Existing consolidation is substantially complete. This audit reruns baseline acceptance; it does not certify the implementation phases.
 
 - [x] Read and preserve source pack; pin provenance and targeted implementation hashes.
 - [x] Reconcile existing engines, DS 4.0.0 and accepted scope with the new proposal in the architecture entry point.
 - [x] Write gap analysis and model-routed phased plan without runtime/domain edits.
-- [ ] Before implementation, record five-tab navigation evolution in ADR/screen specs and settle compatibility strategy for runtime/purpose/steps; retain approved token values.
-- [ ] Establish central flags as the first needed gated feature is implemented, with default/off/on tests.
+- [x] Record five-destination navigation in ADR/screen specs and keep steps as compatible runtime projection; persisted purpose/resume is a later contract.
+- [x] Establish central flags with default/off/on and invalid-setting tests.
 
 Targets: architecture docs, DS specs/VERSION, relevant ADRs, existing application environment configuration. Acceptance: current configured checks actually pass; differences from historical CI/production evidence are explicit; no duplicate version authority or existing-content changes. Rollback: docs/checkpoint revert; no data migration.
 
 ## 4. Phase 1 — Design Foundation
+
+First increment implemented: shared shell/TopBar, flagged five destinations with real `/plan`, Focus variant, native Dialog/Sheet, keyboard Tabs and registry. Tokens/fonts are preserved. Extra primitives wait for concrete consumers. Full routine UX is not claimed; current acceptance is in EVOLUTION-FOUNDATION.md.
 
 Risk LOW/MEDIUM; Luna Max. Depends on navigation reconciliation in Phase 0. Flag: `FEATURE_STUDY_PLANNER` controls exposure of the future Plano destination; shared foundation changes require compatibility tests.
 
@@ -46,6 +50,8 @@ Acceptance: five primary destinations have real authorized routes; staged Planne
 
 ## 5. Phase 2 — Today
 
+First increment implemented under FEATURE_NEW_TODAY: reusable StudyActionCard, next action first, factual session snapshots/preparation, attention/queue/week. Recommendation policy/coordinator are unchanged. Routine-dependent no-plan/day-off/completed-day states remain pending real Phase 3 facts.
+
 Risk LOW for presentation, HIGH if ordering changes. Luna Max; Terra only for new recommendation rules. Depends on Phase 1; routine-dependent states finalize after Phase 3. Flag: `FEATURE_NEW_TODAY`.
 
 Targets: `src/app/page.tsx`, `src/features/today/get-today-dashboard.ts`, recommendation types, Today CSS and existing tests. Extract StudyActionCard/TodayPlan/Attention/LearningSummary presentation without duplicating query coordination. Show reason and counts/duration only from facts. Preserve active-session priority and read-only rendering. Add explicit no-content/no-routine/day-off/completed states when supporting facts exist.
@@ -53,6 +59,8 @@ Targets: `src/app/page.tsx`, `src/features/today/get-today-dashboard.ts`, recomm
 Acceptance: first ~390×844 viewport foregrounds next action; resume/queue work; no mutation on GET and shared facts are fetched once. Domain priority fixtures remain unchanged for UI-only work. Rollback: existing Today rendering; historical sessions and evidence remain readable.
 
 ## 6. Phase 3 — Study Planner
+
+MODEL ESCALATION REQUIRED: [Terra routine handoff](handoffs/2026-10-06-planner-routine-terra.md) defines the next safe domain-contract task. `/plan` currently wraps existing session planning/history; weekly routine/modes/overrides/rebalance are not implemented.
 
 Risk MEDIUM for contracts/UI; HIGH for scheduling. Luna Max for additive storage and specified UI; Terra defines rebalance/availability conflicts before algorithm changes. Depends on Phases 0–2. Flag: `FEATURE_STUDY_PLANNER`.
 
@@ -196,6 +204,7 @@ Likely Sol High review points: new Adaptive Session crossing selection/evidence,
 - [x] Source pack read and preserved; current implementation audited; gaps and reusable paths recorded.
 - [x] Model routing, risks, likely migrations, dependencies, acceptance and rollback documented.
 - [x] Complete application and documentation acceptance; results recorded in AUDIT-VERIFICATION.md.
-- [ ] Large implementation phases 1–15 remain pending by explicit first-execution scope.
+- [x] Implement the first Phase 0/1/2 foundation increment after explicit user authorization; see EVOLUTION-FOUNDATION.md.
+- [ ] Complete routine-dependent Phase 1/2 remainder and Phases 3–15 after their required contracts/model gates.
 
-NEXT ACTION after this audit: in a separately authorized implementation execution, use Luna Max for the Phase 0 navigation/flag/compatibility reconciliation and first small Phase 1 increment. Read these three entry documents and only affected files. Escalate a real domain/architecture decision with a compact hash-pinned handoff under `docs/estudisc/handoffs/`; no production write or corpus republication is implied.
+NEXT ACTION: read the completed foundation report and Terra routine handoff. Terra settles Phase 3 availability/modes/overrides/rebalance/preview consistency and eligibility facts; Luna then implements specified additive storage/UI/helpers. Do not change scheduling/evidence by trial and error. No production write or corpus republication is implied.

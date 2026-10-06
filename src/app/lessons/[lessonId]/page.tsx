@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 
 import { AppShell } from "@/components/layout/app-shell";
+import { getFeatureFlags } from "@/lib/feature-flags";
 import { ActivityList } from "@/features/activities/registry";
 import { getLesson } from "@/features/lessons/api";
 import { LessonBlockList } from "@/features/lessons/blocks";
@@ -35,7 +36,7 @@ export default async function LessonPage({ params }: LessonPageProps) {
   const stepped = !lesson.activities.some(activity => activity.type === "code" || activity.type === "debug");
 
   return (
-    <AppShell>
+    <AppShell mode={getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? "focus" : "page"} exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha" }}>
       <article className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="lesson-title">
         <p className="eyebrow">{lesson.trackTitle}</p>
         <h1 id="lesson-title">{lesson.title}</h1>

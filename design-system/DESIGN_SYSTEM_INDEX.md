@@ -8,6 +8,8 @@ Versão atual: consulte design-system/VERSION (fonte única).
 
 **Status:** APPROVED / FROZEN FOR IMPLEMENTATION
 
+Progressive evolution under [ADR 0040](../docs/ADR/0040-evolution-shell-and-runtime-compatibility.md): the four-item shell remains the default. `FEATURE_STUDY_PLANNER=true` exposes Hoje, Plano, Aprender, Revisar, Progresso and moves secondary/account actions to the TopBar Sheet. Focus hides global navigation while preserving explicit exit, main and skip link. Token values and version remain unchanged. Reuse inventory: [Component Registry](COMPONENT_REGISTRY.md).
+
 Leia este arquivo primeiro. Ele define onde cada decisão vive, quem vence em
 caso de conflito e o que é obrigatório para implementação.
 

@@ -1,6 +1,27 @@
 # Estudisc current plan
 
-## Current task — architecture pack audit (2026-10-06)
+## Current task — authorized evolution implementation (2026-10-06)
+
+The user authorized implementation after the completed audit. Continue local increments automatically; external/production writes and published content changes remain separate boundaries. No additional agents or automatic model switch.
+
+Current increment: Phase 0 compatibility/navigation decision and validated flags; Phase 1 shell/Focus mode, accessible foundation primitives and registry; Phase 2 reusable Today presentation using existing recommendations. Weekly scheduling/readiness and evidence policy decisions remain Terra handoff work.
+
+Assumptions: preserve Design System 4.0.0 values and current engines; new flags default off; `/plan` initially exposes only existing session planning/history, not invented weekly availability; old navigation remains usable with flags off; existing lesson steps are runtime projections, not a new Pack schema. Focus does not abandon or complete a session. Recommendation ordering is unchanged.
+
+Acceptance: flag off/on and invalid configuration tests; real five-destination navigation with secondary actions in the top bar; Focus hides global nav but provides explicit exit; native dialog/sheet focus/escape/return and keyboard tabs/segmented controls; truthful Today counts/durations/reasons; 320/360/390/430px checks, reduced motion, 44px targets; full configured phase gates and immutable-content checks.
+
+- [x] Record ADR 0040 and canonical screen/navigation/compatibility rules.
+- [x] Implement validated flags and compatible shell/Focus/navigation; focused tests.
+- [x] Add native Dialog/Sheet, keyboard Tabs and component registry; unused wrappers deferred to real consumers.
+- [x] Extract Today presentation without domain-policy changes; routine-dependent states remain Phase 3 work.
+- [x] Complete mobile/accessibility/browser QA, lint/typecheck/test/build/full off/on E2E and documentation.
+- [x] Reach the Terra routine/mode/override/rebalance/preview domain-contract boundary and save a compact hash-pinned handoff.
+
+Current increment acceptance: PASS. Lint/typecheck/build/pack validation PASS; tests 275 PASS / 3 optional PostgreSQL SKIP; default E2E 38 PASS / 4 intentional flagged SKIP; separate on E2E 4 PASS / no failures; browser 320/360/390/430/1280, keyboard/modal/Focus/reduced-motion QA PASS. Exact commands: [foundation report](docs/estudisc/EVOLUTION-FOUNDATION.md).
+
+NEXT ACTION — MODEL ESCALATION REQUIRED: Terra must define Phase 3 routine timezone/modes/allocations/overrides, missed-day no-debt recomputation and preview/apply revision semantics, including actual readiness facts. [Compact handoff and exact next prompt](docs/estudisc/handoffs/2026-10-06-planner-routine-terra.md), with 17 input hashes. Local implementation remains authorized after that decision; no repeated approval needed for routine work. This session cannot switch models. Production/external writes remain unapproved.
+
+## Completed task — architecture pack audit (2026-10-06)
 
 User scope for this execution: read `estudisc_codex_pack.zip`, audit the existing implementation, write `docs/estudisc/IMPLEMENTATION-GAP-ANALYSIS.md` and `docs/estudisc/IMPLEMENTATION-PLAN.md`, and route future phases by model. Do not implement the large phases or perform external/production writes.
 

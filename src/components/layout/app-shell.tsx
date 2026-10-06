@@ -1,25 +1,21 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
+import { ShellNavigation } from "@/components/layout/primary-nav";
+import { getFeatureFlags } from "@/lib/feature-flags";
 
-import { BrandLockup } from "@/components/brand/brand-lockup";
-import { PrimaryNav } from "@/components/layout/primary-nav";
-
-export function AppShell({ children }: Readonly<{ children: ReactNode }>) {
+export function AppShell({ children, mode = "page", exit }: Readonly<{
+  children: ReactNode;
+  mode?: "page" | "focus";
+  exit?: Readonly<{ href: string; label: string }>;
+}>) {
+  const studyNavigation = getFeatureFlags().FEATURE_STUDY_PLANNER;
+  const focus = mode === "focus";
   return (
-    <div className="app-shell">
+    <div className="app-shell" data-mode={mode}>
       <a className="skip-link" href="#main-content">
         Pular para o conteúdo principal
       </a>
 
-      <header className="topbar">
-        <Link className="brand-link" href="/" aria-label="Estudisc, página inicial">
-          <BrandLockup />
-        </Link>
-      </header>
-
-      <nav className="sidebar" aria-label="Navegação principal">
-        <PrimaryNav />
-      </nav>
+      <ShellNavigation studyNavigation={studyNavigation} focus={focus} exit={focus ? exit ?? { href: "/", label: "Voltar para Hoje" } : undefined} />
 
       <main id="main-content" className="main-surface" tabIndex={-1}>
         {children}

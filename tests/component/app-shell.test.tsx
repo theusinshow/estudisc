@@ -1,9 +1,29 @@
 import { render, screen } from "@testing-library/react";
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { AppShell } from "@/components/layout/app-shell";
 
+afterEach(() => vi.unstubAllEnvs());
+
 describe("AppShell", () => {
+  it("promotes real study destinations while retaining secondary pages in a closed sheet", () => {
+    vi.stubEnv("FEATURE_STUDY_PLANNER", "true");
+    render(<AppShell><h1>Hoje</h1></AppShell>);
+    expect(screen.getByRole("link", { name: "Plano" })).toHaveAttribute("href", "/plan");
+    expect(screen.getByRole("link", { name: "Revisar" })).toHaveAttribute("href", "/review");
+    expect(screen.queryByText("Mais")).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Abrir perfil e outras páginas" })).toHaveAttribute("aria-expanded", "false");
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+  });
+
+  it("keeps an explicit exit and main landmark while hiding global navigation in Focus", () => {
+    render(<AppShell mode="focus" exit={{ href: "/tracks", label: "Voltar à trilha" }}><h1>Aula</h1></AppShell>);
+    expect(screen.queryByRole("navigation")).not.toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Voltar à trilha" })).toHaveAttribute("href", "/tracks");
+    expect(screen.getByRole("main")).toHaveAttribute("id", "main-content");
+    expect(screen.getByRole("link", { name: /pular para o conteúdo/i })).toBeInTheDocument();
+  });
+
   it("renders the accessible foundation shell without claiming product screens are complete", () => {
     render(
       <AppShell>

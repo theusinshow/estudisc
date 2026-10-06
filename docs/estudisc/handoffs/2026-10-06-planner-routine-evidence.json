@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-06",
+  "base": "50cfae4",
+  "scope": "Planner Terra handoff inputs after initial foundation increment; no production audit",
+  "files": [
+    {
+      "path": "src/features/study-sessions/planner-policy.ts",
+      "sha256": "15061748ddc579dcfb6ad835193dfe43a282c8b442ee051a91a59bfff21e0ba6"
+    },
+    {
+      "path": "src/features/study-sessions/contracts.ts",
+      "sha256": "60948e42396156d0b57a026bc3ec24c61afeb35c60e10a834bad4dbf61c75e32"
+    },
+    {
+      "path": "src/app/api/study-sessions/route.ts",
+      "sha256": "3ef0117d44f72f65a6f81b52f88676cd1652569322dc6c59406c13ca0b3ef85a"
+    },
+    {
+      "path": "src/db/repositories/study-session-repository.ts",
+      "sha256": "b00cadeaeaccef05b7a56cc855f1d2a40580e6890f0e9bb40ab6e750d579009d"
+    },
+    {
+      "path": "src/db/repositories/memory-study-session-repository.ts",
+      "sha256": "34b2180faa51a3786fe2f43422a4fd1d0372cd90759db31adb1b5bf57837d5e0"
+    },
+    {
+      "path": "src/db/schema/study.ts",
+      "sha256": "fad52a0d094364e3836b8a04b8582a47526184b19f4447196bc107a0c83e966c"
+    },
+    {
+      "path": "src/features/recommendations/recommendation-rules.ts",
+      "sha256": "8fe249c87dee51fa4c90c0f50a33d529db71c3b0ec8ff360c10484db525bcc79"
+    },
+    {
+      "path": "src/features/recommendations/lesson-candidates.ts",
+      "sha256": "c698e820f0c4111a932fb947a121f89f30626065b6ca7c87bbdfc6799d46ff16"
+    },
+    {
+      "path": "src/app/plan/page.tsx",
+      "sha256": "6129f0cf83f88946d4e6abae1760913eee447cc2e1a21297e7bfedea4a689bbd"
+    },
+    {
+      "path": "src/features/today/today-plan.tsx",
+      "sha256": "07e7e1517b95f47539c269079f4ed1398c50d93586116f35785d697afeb296a3"
+    },
+    {
+      "path": "docs/ADR/0021-deterministic-planner.md",
+      "sha256": "895ee1c3522c0bfdd15f9b057f04fb742fb2d072525b3845b8e51b067175c90b"
+    },
+    {
+      "path": "docs/ADR/0024-mastery-review-v2.md",
+      "sha256": "fd7955c5d802e0c2cd7533555d84ce0479769b2382e1bdbd92eca978962fab78"
+    },
+    {
+      "path": "docs/ADR/0029-published-content-immutable.md",
+      "sha256": "3fbb74d7bfe1ddff9fe884b93be42bf186af01eba5cb147c01cd670019ecffaa"
+    },
+    {
+      "path": "docs/ADR/0036-direct-admin-publication.md",
+      "sha256": "5d9651ddeb3fd0669a13e7636c3ec345362e6b287ff1bd0e88ba57430ef09e43"
+    },
+    {
+      "path": "docs/ADR/0040-evolution-shell-and-runtime-compatibility.md",
+      "sha256": "8daaaa9165e931f310c16397b43b5263b7f0a3141c088ae27724e1d625317eff"
+    },
+    {
+      "path": "tests/unit/planner-policy.test.ts",
+      "sha256": "a756da1373d1532b09898b7aadae0a7eccd8add3ad6b4e71588dfc0ae3b2f32b"
+    },
+    {
+      "path": "tests/unit/today-dashboard.test.ts",
+      "sha256": "c41938429031d8d106c4ccd2f06854104e83d16ffe6740f8da15f666c08330eb"
+    }
+  ]
+}
