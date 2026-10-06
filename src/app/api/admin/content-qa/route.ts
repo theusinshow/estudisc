@@ -1,3 +1,4 @@
+import { logEvent } from "@/lib/logger";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { requireAdmin,AccessDeniedError } from "@/features/auth/owner";
@@ -28,10 +29,10 @@ export async function POST(request:Request){
       case "review_lesson": result=await repo.reviewLesson(profile.ownerId,input.lessonId,input.version,input.reviews,input.publish);break;
       case "review_lessons": result=await repo.reviewLessons(profile.ownerId,input.lessons,input.reviews,input.publish);break;
       case "publish_lessons_direct": result=await repo.publishLessonsDirect(profile,{lessons:input.lessons,reason:input.reason});break;
-      case "publish": result=await repo.publish(input.releaseId);break;
+      case "publish": result=await repo.publish(input.releaseId,profile.ownerId);break;
     }
-    return NextResponse.json(result);
-  }catch(error){
+    logEvent("info","publication_completed",{operation:input.action});return NextResponse.json(result);
+  }catch(error){logEvent("error","publication_failure",{operation:"publication",errorType:error instanceof Error?error.name:"UnknownError"});
     return NextResponse.json({code:error instanceof AccessDeniedError?"admin_required":"qa_action_blocked",message:error instanceof Error?error.message:"Invalid request"},{status:error instanceof AccessDeniedError?403:409});
   }
 }

@@ -9,40 +9,49 @@ import { importTrackPack } from "../../src/features/import/application/track-imp
 import { hashCanonicalJson } from "../../src/lib/canonical-json";
 import { BATCHES, PILOT, mediaAssetsSchema } from "./contracts";
 import { buildSciencePack, readJson, sha256, validateConceptMap } from "./mapper";
+import { buildPortuguesePack, PORTUGUESE_MAP, PORTUGUESE_PROFILE, PORTUGUESE_PILOT, PORTUGUESE_BATCHES } from "./portuguese";
+import { buildGhPack, GH_MAP, GH_PILOT, GH_BATCHES, GH_PROFILE } from "./history-geography";
 import { capturePreservationSnapshot, assertPreservation } from "./qa/preservation-audit";
 
 const root = process.cwd();
-const outputRoot = resolve(root, ".local/science-integration");
+const subject = argument("--subject", "science");
+assert(["science", "portuguese", "history-geography"].includes(subject), "Unsupported subject");
+const portuguese = subject === "portuguese";
+const gh = subject === "history-geography";
+const outputRoot = resolve(root, portuguese ? ".local/portuguese-integration" : gh ? ".local/history-geography-integration" : ".local/science-integration");
+const packFilename = portuguese ? "portuguese.pack.json" : gh ? "history-geography.pack.json" : "science.pack.json";
+const preservationProfile = portuguese ? { packId: PORTUGUESE_PROFILE.packId, trackId: PORTUGUESE_PROFILE.trackId, questionPrefix: "POR", conceptMapPath: PORTUGUESE_MAP } : gh ? { packId: GH_PROFILE.packId, trackId: GH_PROFILE.trackId, questionPrefix: "GH", conceptMapPath: GH_MAP } : undefined;
 function writeJson(path: string, value: unknown) { mkdirSync(resolve(path, ".."), { recursive: true }); writeFileSync(path, `${JSON.stringify(value, null, 2)}\n`, "utf8"); }
 function argument(name: string, fallback: string) { const index = process.argv.indexOf(name); return index === -1 ? fallback : process.argv[index + 1]; }
 export async function main() {
   const command = process.argv[2] ?? "preflight";
   assert(["preflight", "build", "import", "validate"].includes(command), "Commands: preflight|build|import|validate");
   const stage = argument("--stage", "pilot");
-  assert(/^(pilot|batch[1-5]|media)$/.test(stage), "Stage: pilot|batch1..batch5|media");
+  assert((portuguese ? /^(pilot|batch[1-4])$/ : gh ? /^(pilot|batch[1-6])$/ : /^(pilot|batch[1-5]|media)$/).test(stage), "Stage: pilot|batch1..batch5|media");
   const batchCount = stage === "pilot" ? 0 : stage === "media" ? 5 : Number(stage.slice(5));
-  const selected = [...PILOT, ...BATCHES.slice(0, batchCount).flat()].sort();
+  const selected = [...new Set([...(portuguese ? PORTUGUESE_PILOT : gh ? GH_PILOT : PILOT), ...(portuguese ? PORTUGUESE_BATCHES : gh ? GH_BATCHES : BATCHES).slice(0, batchCount).flat()])].sort();
   const mediaPath = argument("--media", "");
   const media = mediaPath ? mediaAssetsSchema.parse(readJson(resolve(root, mediaPath))) : { assets: [] };
-  const result = buildSciencePack(root, selected, stage === "media" ? 7 : batchCount + 1, undefined, media);
-  const existing = readJson(resolve(root, ".vecta-agent-context/EXISTING-CONCEPTS.json")) as { id: string }[];
+  const subjectResult = portuguese ? buildPortuguesePack(root, selected, batchCount + 2) : gh ? buildGhPack(root, selected, batchCount + 1) : undefined;
+  const result = subjectResult ?? buildSciencePack(root, selected, stage === "media" ? 7 : batchCount + 1, undefined, media);
+  const existing = readJson(resolve(root, ".estudisc-agent-context/EXISTING-CONCEPTS.json")) as { id: string }[];
   validateConceptMap(result.inputs.conceptMap, result.inputs.packs.flatMap(row => row.pack.lesson.concepts.map(concept => concept.id)), new Set(existing.map(row => row.id)));
   const manifest = readJson(join(result.inputs.sourceRoot, "IMPORT-MANIFEST.json")) as { lessons: { lessonId: string; hash: string }[] };
-  const staleManifestHashes = result.inputs.packs.filter(row => manifest.lessons.find(entry => entry.lessonId === row.lessonId)?.hash !== row.sourceHash).map(row => row.lessonId);
+  const staleManifestHashes = (portuguese || gh) ? [] : result.inputs.packs.filter(row => manifest.lessons.find(entry => entry.lessonId === row.lessonId)?.hash !== row.sourceHash).map(row => row.lessonId);
   const allSourcePins = Object.fromEntries(result.inputs.packs.map(row => [row.lessonId, row.sourceHash]));
   const pinsPath = join(outputRoot, "source-pins.json");
   if (existsSync(pinsPath)) assert.deepEqual(readJson(pinsPath), allSourcePins, "Editorial source changed after pinning; halt and audit");
   else writeJson(pinsPath, allSourcePins);
   const stageRoot = join(outputRoot, stage);
-  const packPath = join(stageRoot, "science.pack.json");
+  const packPath = join(stageRoot, packFilename);
   if (existsSync(packPath)) assert.equal(hashCanonicalJson(readJson(packPath)), hashCanonicalJson(result.pack), "Snapshot changed; use new version instead of overwriting an immutable candidate");
   else { mkdirSync(stageRoot, { recursive: true }); writeFileSync(packPath, `${JSON.stringify(result.pack)}\n`, "utf8"); }
   const fidelityPath = join(stageRoot, "editorial-sidecar.json");
-  const sidecar = { sourcePins: Object.fromEntries(result.selected.map(row => [row.lessonId, row.sourceHash])), sourcePacks: result.selected.map(row => row.pack), sourceLibrary: result.inputs.library, conceptMap: result.inputs.conceptMap.entries.filter(entry => selected.some(id => entry.editorialId.startsWith(`${id}-`))), media, ...(stage === "media" ? { runtimeMediaLessonVersions: Object.fromEntries(result.pack.track.modules.flatMap(module => module.lessons).filter(lesson => lesson.version === 3).map(lesson => [lesson.id, lesson.version])) } : {}), integrationDefaults: { estimatedMinutes: 30, provenanceType: "generated", cognitiveOperations: { UNDERSTAND: "interpret", TRANSFER: "apply" }, curriculumCrosswalkUnverified: true } };
+  const sidecar = { sourcePins: Object.fromEntries(result.selected.map(row => [row.lessonId, row.sourceHash])), sourcePacks: subjectResult ? subjectResult.originals.filter(row => selected.includes(row.lessonId)).map(row => row.original) : result.selected.map(row => row.pack), sourceLibrary: result.inputs.library, conceptMap: result.inputs.conceptMap.entries.filter(entry => selected.some(id => entry.editorialId.startsWith(`${id}-`))), media, ...(stage === "media" ? { runtimeMediaLessonVersions: Object.fromEntries(result.pack.track.modules.flatMap(module => module.lessons).filter(lesson => lesson.version === 3).map(lesson => [lesson.id, lesson.version])) } : {}), integrationDefaults: { estimatedMinutes: portuguese ? "source-defined" : 30, originalProvenance: portuguese ? "VECTA_ORIGINAL" : gh ? "ORIGINAL_VECTA_GROUNDED_GH_V2" : "ORIGINAL_VECTA_GROUNDED_V2", provenanceType: "generated", cognitiveOperations: { UNDERSTAND: "interpret", TRANSFER: "apply" }, curriculumCrosswalkUnverified: true } };
   if (existsSync(fidelityPath)) assert.equal(hashCanonicalJson(readJson(fidelityPath)), hashCanonicalJson(sidecar)); else writeJson(fidelityPath, sidecar);
-  const report = { stage, lessons: selected.length, questions: result.pack.questions.length, concepts: result.pack.track.modules.flatMap(module => module.lessons.flatMap(lesson => lesson.concepts)).length, sourceVersion: 2, snapshotVersion: result.pack.version, contentHash: result.contentHash, byteLength: result.byteLength, draftsOnly: true, staleManifestHashes, embeddedMedia: media.assets.length, missingMediaFallbacks: result.pack.track.modules.flatMap(module => module.lessons.flatMap(lesson => lesson.blocks)).filter(block => ["IMAGE_REQUEST", "DETERMINISTIC_COMPONENT_REQUEST"].includes(String((block.payload.editorial as { type: string }).type)) && block.type !== "figure").length, importPerformed: false, publicationPerformed: false };
+  const report = { stage, lessons: selected.length, questions: result.pack.questions.length, concepts: result.pack.track.modules.flatMap(module => module.lessons.flatMap(lesson => lesson.concepts)).length, sourceVersion: portuguese ? 1 : 2, snapshotVersion: result.pack.version, contentHash: result.contentHash, byteLength: result.byteLength, draftsOnly: true, staleManifestHashes, embeddedMedia: media.assets.length, missingMediaFallbacks: result.pack.track.modules.flatMap(module => module.lessons.flatMap(lesson => lesson.blocks)).filter(block => ["IMAGE_REQUEST", "DETERMINISTIC_COMPONENT_REQUEST", "COMPONENT_REQUEST"].includes(String((block.payload.editorial as { type: string }).type)) && block.type !== "figure").length, importPerformed: false, publicationPerformed: false };
   if (command === "import" || command === "validate") {
-    const databasePath = resolve(root, argument("--db", ".local/science-integration/db"));
+    const databasePath = resolve(root, argument("--db", portuguese ? ".local/portuguese-integration/db" : gh ? ".local/history-geography-integration/db" : ".local/science-integration/db"));
     assert(databasePath.startsWith(`${outputRoot}\\`) || databasePath.startsWith(`${outputRoot}/`), "Only owned .local/science-integration persistent development database is allowed");
     const client = new PGlite(databasePath);
     await client.waitReady;
@@ -59,22 +68,22 @@ export async function main() {
         writeJson(receiptPath, { migrationHash });
       } else assert.equal((readJson(receiptPath) as { migrationHash: string }).migrationHash, migrationHash, "Development schema drift requires explicit migration audit");
       const db = drizzle(client, { schema });
-      const repository = new DrizzleTrackImportRepository(db, "science-local-integration");
-      const baselinePaths = ["packs/releases/ifsc-week-1.pack.json", ".local/mathematics-production/application/mathematics.pack.json"].filter(path => existsSync(resolve(root, path)));
+      const repository = new DrizzleTrackImportRepository(db, portuguese ? "portuguese-local-integration" : gh ? "history-geography-local-integration" : "science-local-integration");
+      const baselinePaths = ["packs/releases/ifsc-week-1.pack.json", ".local/mathematics-production/application/mathematics.pack.json", ...((portuguese || gh) ? ["packs/drafts/ifsc-2027-science/science.pack.json"] : []), ...(gh ? ["packs/drafts/ifsc-2027-portuguese/portuguese.pack.json"] : [])].filter(path => existsSync(resolve(root, path)));
       const beforeState = await client.query("SELECT (SELECT count(*)::int FROM attempts) AS attempts, (SELECT count(*)::int FROM study_events) AS study_events, (SELECT count(*)::int FROM concept_evidence) AS concept_evidence");
       let preservationBefore: Awaited<ReturnType<typeof capturePreservationSnapshot>>;
       if (command === "import") {
         for (const path of baselinePaths) { const baseline = await importTrackPack(readJson(resolve(root, path)), repository); assert(["imported", "already_imported"].includes(baseline.status), `Baseline import failed: ${JSON.stringify(baseline).slice(0, 500)}`); }
-        preservationBefore = await capturePreservationSnapshot(client);
+        preservationBefore = await capturePreservationSnapshot(client, preservationProfile);
         const imported = await importTrackPack(result.pack, repository); assert(["imported", "already_imported"].includes(imported.status), JSON.stringify(imported));
         assert.equal((await importTrackPack(result.pack, repository)).status, "already_imported");
-      } else preservationBefore = await capturePreservationSnapshot(client);
+      } else preservationBefore = await capturePreservationSnapshot(client, preservationProfile);
       const imported = await repository.findPackImport(result.pack.packId, result.pack.version); assert.equal(imported?.contentHash, result.contentHash, "Expected exact source-bound import");
-      const lessons = await client.query<{ stable_id: string; status: string }>("SELECT l.stable_id, l.metadata->>'status' AS status FROM lessons l JOIN modules m ON m.id=l.module_id JOIN tracks t ON t.id=m.track_id WHERE t.stable_id='ifsc-2027-science' AND t.content_version=$1", [result.pack.version]);
+      const lessons = await client.query<{ stable_id: string; status: string }>("SELECT l.stable_id, l.metadata->>'status' AS status FROM lessons l JOIN modules m ON m.id=l.module_id JOIN tracks t ON t.id=m.track_id WHERE t.stable_id=$2 AND t.content_version=$1", [result.pack.version, result.pack.track.id]);
       assert.equal(lessons.rows.length, selected.length); assert(lessons.rows.every(row => row.status === "draft"));
       const afterState = await client.query("SELECT (SELECT count(*)::int FROM attempts) AS attempts, (SELECT count(*)::int FROM study_events) AS study_events, (SELECT count(*)::int FROM concept_evidence) AS concept_evidence");
       assert.deepEqual(afterState.rows, beforeState.rows, "Content import touched immutable student state");
-      const preservation = assertPreservation(preservationBefore, await capturePreservationSnapshot(client));
+      const preservation = assertPreservation(preservationBefore, await capturePreservationSnapshot(client, preservationProfile));
       const preservationPath = join(stageRoot, "preservation-audit.json");
       if (existsSync(preservationPath)) assert.equal((readJson(preservationPath) as { afterHash: string }).afterHash, preservation.afterHash, "Existing baseline drifted after sealed import");
       writeJson(preservationPath, preservation);

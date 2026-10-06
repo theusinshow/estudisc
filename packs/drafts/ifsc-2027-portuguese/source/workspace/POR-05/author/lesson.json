@@ -1,0 +1,150 @@
+{
+  "id": "POR-05",
+  "subject": "POR",
+  "title": "Convenções da escrita: ortografia, acentuação e pontuação com sentido",
+  "module": "Gramática em contexto",
+  "priority": "P1",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Reconhecer convenções ortográficas e usar pontuação como estrutura e recurso de sentido.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-003",
+    "POR-SRC-009",
+    "POR-SRC-011"
+  ],
+  "conceptRefs": [
+    "POR-05-C01",
+    "POR-05-C02",
+    "POR-05-C03",
+    "POR-05-C04",
+    "POR-05-C05",
+    "POR-05-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Em “Não, espere.” a vírgula separa a negação do comando. Em “Não espere.” a orientação muda."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Reconhecer convenções ortográficas e usar pontuação como estrutura e recurso de sentido.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável.",
+        "A acentuação gráfica segue regras convencionais e não corresponde simplesmente à intensidade percebida na fala.",
+        "A vírgula organiza estruturas sintáticas e não deve ser explicada apenas como pausa para respirar."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Dois-pontos podem anunciar explicação, enumeração, fala ou consequência explicitada.",
+        "Reticências, exclamação, interrogação, aspas e travessões podem produzir hesitação, ênfase, dúvida, distanciamento ou marcação de voz.",
+        "Mudanças de pontuação podem alterar relação sintática e sentido."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "ortografia",
+          "conceptRef": "POR-05-C01"
+        },
+        {
+          "term": "acentuação",
+          "conceptRef": "POR-05-C02"
+        },
+        {
+          "term": "pontuação",
+          "conceptRef": "POR-05-C03"
+        },
+        {
+          "term": "aspas",
+          "conceptRef": "POR-05-C04"
+        },
+        {
+          "term": "travessão",
+          "conceptRef": "POR-05-C05"
+        },
+        {
+          "term": "reticências",
+          "conceptRef": "POR-05-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Usa-se vírgula sempre que há pausa na fala.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Toda palavra pronunciada com força recebe acento.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Reticências sempre significam tristeza.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "A ortografia pode ser decidida apenas pela pronúncia.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Em “Não, espere.” a vírgula separa a negação do comando. Em “Não espere.” a orientação muda.",
+      "analysis": "A pontuação altera a estrutura e o comando comunicado; não é mero enfeite."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Compare pares cuja pontuação muda o sentido.",
+        "Explique a função do sinal sem usar apenas “pausa”.",
+        "Consulte no VOLP cinco grafias que geram dúvida."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Pergunte o que o sinal organiza/destaca e qual efeito produz no trecho."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável.",
+        "A acentuação gráfica segue regras convencionais e não corresponde simplesmente à intensidade percebida na fala.",
+        "A vírgula organiza estruturas sintáticas e não deve ser explicada apenas como pausa para respirar.",
+        "Dois-pontos podem anunciar explicação, enumeração, fala ou consequência explicitada.",
+        "Reticências, exclamação, interrogação, aspas e travessões podem produzir hesitação, ênfase, dúvida, distanciamento ou marcação de voz.",
+        "Mudanças de pontuação podem alterar relação sintática e sentido."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Convenções da escrita: ortografia, acentuação e pontuação com sentido e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

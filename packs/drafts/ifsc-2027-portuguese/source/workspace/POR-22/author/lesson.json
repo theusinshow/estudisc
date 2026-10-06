@@ -1,0 +1,157 @@
+{
+  "id": "POR-22",
+  "subject": "POR",
+  "title": "Intencionalidade, contexto, autoria e posicionamento",
+  "module": "Textualidade e argumentação",
+  "priority": "P0",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Relacionar escolhas textuais a produtor, público, situação, objetivo e posicionamento.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-019",
+    "POR-SRC-025",
+    "POR-SRC-026",
+    "POR-SRC-033",
+    "POR-SRC-035"
+  ],
+  "conceptRefs": [
+    "POR-22-C01",
+    "POR-22-C02",
+    "POR-22-C03",
+    "POR-22-C04",
+    "POR-22-C05",
+    "POR-22-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "“Você já conferiu sua senha hoje?” aparece num anúncio de segurança digital de um banco; numa conversa entre amigos teria outra função provável."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Relacionar escolhas textuais a produtor, público, situação, objetivo e posicionamento.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Intencionalidade é direcionamento comunicativo construído pelo texto; não exige adivinhar a psicologia privada do autor.",
+        "Autoria importa porque escolhas de fonte, gênero, léxico, enquadramento e suporte situam o discurso.",
+        "O mesmo enunciado pode produzir efeitos diferentes quando muda contexto, público ou suporte."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Modalizadores e escolhas avaliativas podem revelar certeza, compromisso, dúvida ou julgamento.",
+        "Identificar público-alvo envolve vocabulário, pressupostos, formato, canal e finalidade.",
+        "Afirmações sobre intenção devem ser sustentadas por marcas do texto e situação de circulação."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "intencionalidade",
+          "conceptRef": "POR-22-C01"
+        },
+        {
+          "term": "autoria",
+          "conceptRef": "POR-22-C02"
+        },
+        {
+          "term": "contexto de produção",
+          "conceptRef": "POR-22-C03"
+        },
+        {
+          "term": "público-alvo",
+          "conceptRef": "POR-22-C04"
+        },
+        {
+          "term": "posicionamento",
+          "conceptRef": "POR-22-C05"
+        },
+        {
+          "term": "modalização",
+          "conceptRef": "POR-22-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Analisar intenção é descobrir pensamentos privados do autor.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Contexto nunca muda sentido.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Texto jornalístico é neutro por definição.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Sem conhecer pessoalmente o autor não há posicionamento analisável.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "“Você já conferiu sua senha hoje?” aparece num anúncio de segurança digital de um banco; numa conversa entre amigos teria outra função provável.",
+      "analysis": "No anúncio, a pergunta funciona como alerta/convocação à ação, moldada pelo emissor e pelo contexto."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Analise a mesma frase em três suportes.",
+        "Liste marcas de público/finalidade.",
+        "Separe inferência sustentada de especulação."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Use o tripé quem enuncia + para quem + para quê."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Intencionalidade é direcionamento comunicativo construído pelo texto; não exige adivinhar a psicologia privada do autor.",
+        "Autoria importa porque escolhas de fonte, gênero, léxico, enquadramento e suporte situam o discurso.",
+        "O mesmo enunciado pode produzir efeitos diferentes quando muda contexto, público ou suporte.",
+        "Modalizadores e escolhas avaliativas podem revelar certeza, compromisso, dúvida ou julgamento.",
+        "Identificar público-alvo envolve vocabulário, pressupostos, formato, canal e finalidade.",
+        "Afirmações sobre intenção devem ser sustentadas por marcas do texto e situação de circulação."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Intencionalidade, contexto, autoria e posicionamento e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [],
+    "antigravityRefs": [
+      "POR-IMG-02"
+    ],
+    "authenticMediaRefs": [
+      "POR-MEDIA-01",
+      "POR-MEDIA-02"
+    ]
+  }
+}

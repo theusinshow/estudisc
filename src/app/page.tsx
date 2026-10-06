@@ -7,30 +7,22 @@ import { ClickSpark } from "@/components/motion/click-spark";
 import { CountUp } from "@/components/motion/count-up";
 import { Reveal } from "@/components/motion/reveal";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
-import { listMistakes } from "@/features/mistakes/api";
-import { getProgressOverview } from "@/features/progress/api";
 import { WeekStrip } from "@/features/progress/week-strip";
-import { getRecommendations } from "@/features/recommendations/api";
-import { getDueReviews } from "@/features/review/api";
+import { getTodayDashboard } from "@/features/today/get-today-dashboard";
 import { SessionControls } from "@/features/study-sessions/session-controls";
-import { studySessionRepository } from "@/features/study-sessions/api";
-import { getOwnerId } from "@/features/auth/owner";
-import { getDatabaseUrl } from "@/db/connection";
 
 export const dynamic = "force-dynamic";
 
 const kindLabel = { continue: "Continuar", review: "Revisar", mistake: "Corrigir erro", project: "Projeto" } as const;
 
 export default async function HomePage() {
-  const recommendations = await getRecommendations();
-  const [primaryRecommendation, ...queue] = recommendations;
-  const sessions = getDatabaseUrl() ? await studySessionRepository().list(await getOwnerId()) : [];
-  const openSessions = sessions.filter(session => session.status === "ACTIVE" || session.status === "PLANNED");
-  const [overview, dueReviews, mistakes] = await Promise.all([
-    getProgressOverview(),
-    getDatabaseUrl() ? getDueReviews() : [],
-    getDatabaseUrl() ? listMistakes() : []
-  ]);
+  const dashboard = await getTodayDashboard();
+  const primaryRecommendation = dashboard.nextAction;
+  const queue = dashboard.queue;
+  const overview = dashboard.progress;
+  const dueReviews = dashboard.dueReviews;
+  const mistakes = dashboard.mistakes;
+  const openSessions = dashboard.sessions.filter(session => session.status === "ACTIVE" || session.status === "PLANNED");
   const activeMistakes = mistakes.filter(mistake => mistake.status === "active").length;
   const pulse = [
     { href: "/review", kind: "review", count: dueReviews.length, label: dueReviews.length === 1 ? "revisão para hoje" : "revisões para hoje" },

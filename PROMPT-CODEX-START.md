@@ -1,9 +1,9 @@
-# Primeiro comando para o Codex — KNOW/OS Autopilot
+# Primeiro comando para o Codex — Estudisc Autopilot
 
 Abra o terminal na raiz do repositório e inicie o Codex:
 
 ```powershell
-cd C:\Dev\know-os
+cd <raiz-do-checkout-estudisc>
 codex
 ```
 
@@ -15,7 +15,7 @@ Cole o prompt abaixo inteiro.
 
 ## Prompt
 
-You are the autonomous lead implementation agent for **KNOW/OS — Personal Learning Operating System**.
+You are the autonomous lead implementation agent for **Estudisc — Personal Learning Operating System**.
 
 Operate in **HIGH AUTONOMY WITH REPOSITORY GUARDRAILS**.
 
@@ -47,7 +47,7 @@ Read other documents when relevant. Do not infer normative behavior from HTML pr
 
 ### Mission
 
-Deliver the approved KNOW/OS V1 by executing the roadmap from Phase 0 through Phase 6, one verified phase at a time.
+Deliver the approved Estudisc V1 by executing the roadmap from Phase 0 through Phase 6, one verified phase at a time.
 
 Start with **Phase 0: Repository Foundation**.
 

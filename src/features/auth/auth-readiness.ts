@@ -9,5 +9,5 @@ export function isAllowedGoogleEmail(email: string | null | undefined, env: Serv
     return false;
   }
 
-  return env.KNOW_OS_ALLOWED_GOOGLE_EMAILS.includes(email.trim().toLowerCase());
+  return env.ESTUDISC_ALLOWED_GOOGLE_EMAILS.includes(email.trim().toLowerCase());
 }

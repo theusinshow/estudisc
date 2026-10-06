@@ -1,0 +1,28 @@
+{
+  "baseline": ".local/direct-publication-e2e.log",
+  "current": ".local/portuguese-final-e2e.log",
+  "baselineFailures": 15,
+  "currentFailures": 14,
+  "passed": 22,
+  "newFailures": [],
+  "resolvedFailures": [
+    "mobile-chrome: tests/e2e/vertical-slice.spec.ts:70:5: imports a Track Pack, browses the lesson, runs code, submits and shows history"
+  ],
+  "failureNames": [
+    "chromium: tests/e2e/auth.spec.ts:3:5: custom sign-in surface uses KNOW/OS design language",
+    "chromium: tests/e2e/import-ui.spec.ts:29:5: keeps the first import step compact on mobile",
+    "chromium: tests/e2e/import-ui.spec.ts:3:5: imports the bundled example Track Pack through the product surface",
+    "chromium: tests/e2e/import-ui.spec.ts:57:5: validates and imports a manually generated Lesson Pack through the product surface",
+    "chromium: tests/e2e/motion.spec.ts:19:5: sign-in surface uses approved motion tokens for feedback and reveal",
+    "chromium: tests/e2e/percentage-study.spec.ts:3:5: studies percentage on mobile and resumes a frozen session",
+    "chromium: tests/e2e/vertical-slice.spec.ts:44:5: mobile catalog and progress keep a visible continuation path",
+    "mobile-chrome: tests/e2e/auth.spec.ts:3:5: custom sign-in surface uses KNOW/OS design language",
+    "mobile-chrome: tests/e2e/import-ui.spec.ts:29:5: keeps the first import step compact on mobile",
+    "mobile-chrome: tests/e2e/import-ui.spec.ts:3:5: imports the bundled example Track Pack through the product surface",
+    "mobile-chrome: tests/e2e/import-ui.spec.ts:57:5: validates and imports a manually generated Lesson Pack through the product surface",
+    "mobile-chrome: tests/e2e/motion.spec.ts:19:5: sign-in surface uses approved motion tokens for feedback and reveal",
+    "mobile-chrome: tests/e2e/percentage-study.spec.ts:3:5: studies percentage on mobile and resumes a frozen session",
+    "mobile-chrome: tests/e2e/vertical-slice.spec.ts:44:5: mobile catalog and progress keep a visible continuation path"
+  ],
+  "applicationReleaseGate": "FAIL"
+}

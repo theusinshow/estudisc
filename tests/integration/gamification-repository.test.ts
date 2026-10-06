@@ -21,7 +21,7 @@ describe("GamificationRepository", () => {
   it("materializes badge awards once and audits mission status changes", async () => {
     testDb = await createMigratedPgliteTestDatabase();
     const repository = new GamificationRepository(testDb.db as never);
-    const completeSummary = buildGamificationSummary({
+    const initialSummary = buildGamificationSummary({
       xp: {
         totalXp: 60,
         transactions: [
@@ -39,14 +39,14 @@ describe("GamificationRepository", () => {
       mistakes: []
     });
 
-    await repository.syncSummary("local-owner", completeSummary);
-    await repository.syncSummary("local-owner", completeSummary);
+    await repository.syncSummary("local-owner", initialSummary);
+    await repository.syncSummary("local-owner", initialSummary);
 
     await expect(countRows(testDb.db, badgeAwards)).resolves.toBe(1);
-    await expect(countRows(testDb.db, missionProgress)).resolves.toBe(3);
-    await expect(countRows(testDb.db, missionProgressEvents)).resolves.toBe(3);
+    await expect(countRows(testDb.db, missionProgress)).resolves.toBe(5);
+    await expect(countRows(testDb.db, missionProgressEvents)).resolves.toBe(5);
 
-    const reopenedSummary = buildGamificationSummary({
+    const startedSummary = buildGamificationSummary({
       xp: {
         totalXp: 60,
         transactions: [
@@ -71,20 +71,21 @@ describe("GamificationRepository", () => {
           reason: "Review due"
         }
       ],
-      mistakes: []
+      mistakes: [],
+      evidence: [{ id: "e1", attemptId: "a1", conceptStableId: "concept-a", type: "question_result", strength: 1, sourceType: "question_attempt", sourceId: "a1", createdAt: new Date("2026-07-30T12:00:00.000Z"), conditions: { questionId: "q1", outcome: "failed", hintLevel: 0, solutionRevealed: false } }]
     });
 
-    await repository.syncSummary("local-owner", reopenedSummary);
+    await repository.syncSummary("local-owner", startedSummary);
 
     await expect(countRows(testDb.db, badgeAwards)).resolves.toBe(1);
-    await expect(countRows(testDb.db, missionProgressEvents)).resolves.toBe(4);
-    const [reviewMission] = await testDb.db
+    await expect(countRows(testDb.db, missionProgressEvents)).resolves.toBe(6);
+    const [startMission] = await testDb.db
       .select({ status: missionProgress.status, completedAt: missionProgress.completedAt })
       .from(missionProgress)
-      .where(eq(missionProgress.missionId, "review-due"));
+      .where(eq(missionProgress.missionId, "study-start"));
 
-    expect(reviewMission).toMatchObject({
-      status: "available",
+    expect(startMission).toMatchObject({
+      status: "complete",
       completedAt: expect.any(Date)
     });
   });

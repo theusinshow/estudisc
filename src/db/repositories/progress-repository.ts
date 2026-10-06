@@ -1,4 +1,4 @@
-import { and, eq, inArray } from "drizzle-orm";
+import { and, desc, eq, inArray } from "drizzle-orm";
 import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 
 import { getDatabase } from "@/db/connection";
@@ -34,6 +34,7 @@ export class ProgressRepository {
       .select({ id: lessons.id, stableId: lessons.stableId })
       .from(lessons)
       .where(eq(lessons.stableId, lessonStableId))
+      .orderBy(desc(lessons.contentVersion))
       .limit(1);
 
     if (!lesson) {

@@ -1,0 +1,492 @@
+{
+  "subject": "Língua Portuguesa",
+  "subjectCode": "POR",
+  "target": "IFSC Técnico Integrado 2027/1",
+  "version": "1.0",
+  "status": "IMPORT_READY_CONTENT_POR_V1",
+  "lessonCount": 24,
+  "questionCount": 192,
+  "conceptCount": 144,
+  "lessons": [
+    {
+      "id": "POR-01",
+      "module": "Leitura e gêneros",
+      "title": "Gêneros do discurso, tipos textuais e modalidades",
+      "priority": "P0",
+      "official": [
+        "Compreensão de diferentes gêneros do discurso/textuais e suas modalidades"
+      ],
+      "objective": "Reconhecer gênero, finalidade, suporte, interlocutor e predominância tipológica sem confundir gênero com tipo textual.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-002",
+        "POR-SRC-004",
+        "POR-SRC-005",
+        "POR-SRC-006",
+        "POR-SRC-038"
+      ]
+    },
+    {
+      "id": "POR-02",
+      "module": "Leitura e gêneros",
+      "title": "Compreensão global, tema, ideia principal e informação explícita",
+      "priority": "P0",
+      "official": [
+        "Compreensão de diferentes gêneros do discurso/textuais e suas modalidades"
+      ],
+      "objective": "Localizar informações explícitas, identificar tema e sintetizar a ideia principal sem extrapolar o texto.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-004",
+        "POR-SRC-007",
+        "POR-SRC-008",
+        "POR-SRC-035",
+        "POR-SRC-037"
+      ]
+    },
+    {
+      "id": "POR-03",
+      "module": "Leitura e gêneros",
+      "title": "Inferência, implícitos, pressupostos e leitura de contexto",
+      "priority": "P0",
+      "official": [
+        "Compreensão de diferentes gêneros do discurso/textuais e suas modalidades",
+        "Contexto"
+      ],
+      "objective": "Inferir sentidos e informações implícitas a partir de pistas textuais e contexto, sem inventar dados.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-007",
+        "POR-SRC-008",
+        "POR-SRC-033",
+        "POR-SRC-034"
+      ]
+    },
+    {
+      "id": "POR-04",
+      "module": "Leitura e gêneros",
+      "title": "Textos verbais, não verbais e multissemióticos",
+      "priority": "P0",
+      "official": [
+        "Compreensão de diferentes gêneros do discurso/textuais e suas modalidades",
+        "Recursos linguístico-literários na produção de efeitos de sentido"
+      ],
+      "objective": "Integrar palavras, imagens, diagramação e símbolos para interpretar charges, cartuns, tirinhas, infográficos e campanhas.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-005",
+        "POR-SRC-009",
+        "POR-SRC-038"
+      ]
+    },
+    {
+      "id": "POR-05",
+      "module": "Gramática em contexto",
+      "title": "Convenções da escrita: ortografia, acentuação e pontuação com sentido",
+      "priority": "P1",
+      "official": [
+        "Convenções da língua escrita"
+      ],
+      "objective": "Reconhecer convenções ortográficas e usar pontuação como estrutura e recurso de sentido.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-003",
+        "POR-SRC-009",
+        "POR-SRC-011"
+      ]
+    },
+    {
+      "id": "POR-06",
+      "module": "Gramática em contexto",
+      "title": "Fonema, grafema e relações entre fala e escrita",
+      "priority": "P1",
+      "official": [
+        "Aspectos fonético-fonológicos (relações fone-fonema-grafema)"
+      ],
+      "objective": "Distinguir som, fonema, letra e grafema e compreender relações não biunívocas entre fala e escrita.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-003",
+        "POR-SRC-010"
+      ]
+    },
+    {
+      "id": "POR-07",
+      "module": "Gramática em contexto",
+      "title": "Classes de palavras, flexões e função no texto",
+      "priority": "P1",
+      "official": [
+        "Aspectos morfológicos e sintáticos (flexões)"
+      ],
+      "objective": "Reconhecer classes e flexões pelo funcionamento no enunciado.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-011",
+        "POR-SRC-012",
+        "POR-SRC-015"
+      ]
+    },
+    {
+      "id": "POR-08",
+      "module": "Gramática em contexto",
+      "title": "Tempos e modos verbais: indicativo, subjuntivo e imperativo",
+      "priority": "P0",
+      "official": [
+        "Aspectos morfológicos e sintáticos (flexões)"
+      ],
+      "objective": "Interpretar tempos e modos como escolhas de sentido ligadas a certeza, hipótese, desejo, orientação e temporalidade.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-012",
+        "POR-SRC-038"
+      ]
+    },
+    {
+      "id": "POR-09",
+      "module": "Gramática em contexto",
+      "title": "Sintaxe: sujeito, predicado, complementos e ordem dos termos",
+      "priority": "P1",
+      "official": [
+        "Aspectos morfológicos e sintáticos"
+      ],
+      "objective": "Compreender relações sintáticas fundamentais e efeitos da ordem dos termos.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-011",
+        "POR-SRC-013"
+      ]
+    },
+    {
+      "id": "POR-10",
+      "module": "Gramática em contexto",
+      "title": "Concordância verbal e nominal",
+      "priority": "P0",
+      "official": [
+        "Concordância"
+      ],
+      "objective": "Aplicar concordância em textos e reconhecer distrações por proximidade.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-014",
+        "POR-SRC-038"
+      ]
+    },
+    {
+      "id": "POR-11",
+      "module": "Gramática em contexto",
+      "title": "Regência verbal e nominal, preposição e crase",
+      "priority": "P0",
+      "official": [
+        "Regência"
+      ],
+      "objective": "Reconhecer relações de regência e condições básicas para crase.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-003",
+        "POR-SRC-013",
+        "POR-SRC-038"
+      ]
+    },
+    {
+      "id": "POR-12",
+      "module": "Gramática em contexto",
+      "title": "Voz ativa, passiva e foco da informação",
+      "priority": "P1",
+      "official": [
+        "Ordem ativa, passiva"
+      ],
+      "objective": "Transformar e interpretar construções ativas/passivas observando foco discursivo.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-011",
+        "POR-SRC-013"
+      ]
+    },
+    {
+      "id": "POR-13",
+      "module": "Sentido e conexão",
+      "title": "Operadores lógico-discursivos, conjunções e advérbios",
+      "priority": "P0",
+      "official": [
+        "Operadores lógico-discursivos"
+      ],
+      "objective": "Identificar relações de causa, consequência, oposição, conclusão, condição, finalidade, tempo e adição.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-015",
+        "POR-SRC-016",
+        "POR-SRC-017",
+        "POR-SRC-038"
+      ]
+    },
+    {
+      "id": "POR-14",
+      "module": "Sentido e conexão",
+      "title": "Sinonímia, antonímia, polissemia e sentido no contexto",
+      "priority": "P0",
+      "official": [
+        "Sinonímia",
+        "Aspectos semânticos"
+      ],
+      "objective": "Interpretar equivalência e contraste lexical considerando contexto, registro e nuance.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-018",
+        "POR-SRC-019",
+        "POR-SRC-038"
+      ]
+    },
+    {
+      "id": "POR-15",
+      "module": "Sentido e conexão",
+      "title": "Ambiguidade, duplo sentido e desambiguação",
+      "priority": "P0",
+      "official": [
+        "Ambiguidades"
+      ],
+      "objective": "Detectar fontes lexicais/sintáticas de ambiguidade e reescrever quando necessário.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-020"
+      ]
+    },
+    {
+      "id": "POR-16",
+      "module": "Sentido e conexão",
+      "title": "Figuras de linguagem e efeitos de sentido",
+      "priority": "P0",
+      "official": [
+        "Figuras de linguagem",
+        "Recursos linguístico-literários na produção de efeitos de sentido"
+      ],
+      "objective": "Reconhecer figuras frequentes e explicar seu efeito no texto.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-021",
+        "POR-SRC-033",
+        "POR-SRC-038"
+      ]
+    },
+    {
+      "id": "POR-17",
+      "module": "Textualidade e argumentação",
+      "title": "Tese, argumentos e estratégias argumentativas",
+      "priority": "P0",
+      "official": [
+        "Estratégias argumentativas"
+      ],
+      "objective": "Distinguir tema, tese e argumento e avaliar evidências e movimentos argumentativos.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-022",
+        "POR-SRC-023",
+        "POR-SRC-024",
+        "POR-SRC-025"
+      ]
+    },
+    {
+      "id": "POR-18",
+      "module": "Textualidade e argumentação",
+      "title": "Recursos linguístico-literários e produção de efeitos de sentido",
+      "priority": "P0",
+      "official": [
+        "Recursos linguístico-literários na produção de efeitos de sentido"
+      ],
+      "objective": "Analisar escolha lexical, pontuação, repetição, ordem, vozes, ritmo, modalização e linguagem figurada.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-009",
+        "POR-SRC-019",
+        "POR-SRC-020",
+        "POR-SRC-021",
+        "POR-SRC-025",
+        "POR-SRC-026",
+        "POR-SRC-033"
+      ]
+    },
+    {
+      "id": "POR-19",
+      "module": "Textualidade e argumentação",
+      "title": "Coesão: referenciação, substituição e conexão",
+      "priority": "P0",
+      "official": [
+        "Coesão"
+      ],
+      "objective": "Reconhecer recursos que conectam partes do texto e recuperam referentes.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-015",
+        "POR-SRC-016",
+        "POR-SRC-017",
+        "POR-SRC-026",
+        "POR-SRC-027",
+        "POR-SRC-028",
+        "POR-SRC-038"
+      ]
+    },
+    {
+      "id": "POR-20",
+      "module": "Textualidade e argumentação",
+      "title": "Coerência, progressão temática e relações entre ideias",
+      "priority": "P0",
+      "official": [
+        "Coerência"
+      ],
+      "objective": "Avaliar consistência global, continuidade temática e compatibilidade entre informações.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-017",
+        "POR-SRC-026",
+        "POR-SRC-027",
+        "POR-SRC-028"
+      ]
+    },
+    {
+      "id": "POR-21",
+      "module": "Textualidade e argumentação",
+      "title": "Intertextualidade: citação, paráfrase, paródia e diálogo entre textos",
+      "priority": "P0",
+      "official": [
+        "Intertextualidade"
+      ],
+      "objective": "Reconhecer relações explícitas e implícitas entre textos e interpretar seus efeitos.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-029",
+        "POR-SRC-030",
+        "POR-SRC-033",
+        "POR-SRC-034"
+      ]
+    },
+    {
+      "id": "POR-22",
+      "module": "Textualidade e argumentação",
+      "title": "Intencionalidade, contexto, autoria e posicionamento",
+      "priority": "P0",
+      "official": [
+        "Intencionalidade",
+        "Contexto",
+        "Autoria"
+      ],
+      "objective": "Relacionar escolhas textuais a produtor, público, situação, objetivo e posicionamento.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-019",
+        "POR-SRC-025",
+        "POR-SRC-026",
+        "POR-SRC-033",
+        "POR-SRC-035"
+      ]
+    },
+    {
+      "id": "POR-23",
+      "module": "Variação linguística",
+      "title": "Variedades do português brasileiro: região, grupo, tempo e situação",
+      "priority": "P0",
+      "official": [
+        "Análise das diversas variedades linguísticas do português brasileiro e suas diferenças fonético-fonológicas, lexicais e sintáticas, avaliando seus efeitos semânticos"
+      ],
+      "objective": "Reconhecer variação regional, social, histórica e situacional e relacioná-la a escolhas linguísticas.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-031",
+        "POR-SRC-032",
+        "POR-SRC-035",
+        "POR-SRC-037",
+        "POR-SRC-038"
+      ]
+    },
+    {
+      "id": "POR-24",
+      "module": "Variação linguística",
+      "title": "Norma-padrão, variedades prestigiadas/estigmatizadas e preconceito linguístico",
+      "priority": "P0",
+      "official": [
+        "Variedades prestigiadas, estigmatizadas e o preconceito linguístico"
+      ],
+      "objective": "Distinguir adequação linguística de julgamento social e reconhecer prestígio/estigma como fenômenos sociais.",
+      "sourceIds": [
+        "POR-SRC-001",
+        "POR-SRC-031",
+        "POR-SRC-032",
+        "POR-SRC-038"
+      ]
+    }
+  ],
+  "pastExamSignals": [
+    {
+      "edition": "2025.1",
+      "signal": "compreensão global de texto informativo e avaliação de afirmações",
+      "lessonIds": [
+        "POR-02",
+        "POR-03"
+      ]
+    },
+    {
+      "edition": "2025.1",
+      "signal": "efeitos sociais de escolhas lexicais ao nomear grupos",
+      "lessonIds": [
+        "POR-14",
+        "POR-22",
+        "POR-24"
+      ]
+    },
+    {
+      "edition": "2026.2",
+      "signal": "ironia/figura de linguagem em texto visual-argumentativo",
+      "lessonIds": [
+        "POR-04",
+        "POR-16",
+        "POR-18"
+      ]
+    },
+    {
+      "edition": "2026.2",
+      "signal": "modo imperativo em campanha/texto real",
+      "lessonIds": [
+        "POR-08"
+      ]
+    },
+    {
+      "edition": "2026.2",
+      "signal": "variação lexical regional — menta/hortelã",
+      "lessonIds": [
+        "POR-23",
+        "POR-24"
+      ]
+    },
+    {
+      "edition": "2026.2",
+      "signal": "leitura integrada de lei e imagens",
+      "lessonIds": [
+        "POR-04",
+        "POR-21",
+        "POR-22"
+      ]
+    },
+    {
+      "edition": "2026.2",
+      "signal": "sentido contextual e substituição lexical",
+      "lessonIds": [
+        "POR-14"
+      ]
+    },
+    {
+      "edition": "2026.2",
+      "signal": "identificação de gênero — crônica",
+      "lessonIds": [
+        "POR-01"
+      ]
+    },
+    {
+      "edition": "2026.2",
+      "signal": "integração de regência/crase, concordância e conectores em lacunas",
+      "lessonIds": [
+        "POR-10",
+        "POR-11",
+        "POR-13",
+        "POR-19"
+      ]
+    }
+  ]
+}

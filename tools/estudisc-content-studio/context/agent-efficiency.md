@@ -1,0 +1,13 @@
+# Economical agent execution
+
+Applies to the current authorized Mathematics draft queue. Preserve actual model/effort settings, exclusive role ownership, independent review, immutable history and human approval boundaries.
+
+- Reuse existing terminals. No recruits, subagents, duplicate handoffs or reset for quota. One assigned job per handoff; return after completion or a concrete blocker. The coordinator dispatches the next job.
+- Read repository/role/shared context once per session. For each job read its exact request, claim hashes and necessary artifacts. After compaction/restart restore current instructions and the active claim; a historical standby/Author launcher does not supersede an explicit current Reviewer assignment.
+- Search with `rg`; extract relevant JSON fields with a script. Bound command output to approximately 40 lines or 4 KB, and report summaries/IDs/paths. Never dump whole packs, catalogs, Lesson/Question JSON, SVG or base64. Inspect complete necessary inputs locally; an output limit is not a review coverage limit.
+- Initial independent QA covers every required dimension and all questions, answers, distractor rationales and consequential claims. Later QA compares current inputs with the actual previous reviewed snapshot, verifies fixes and affected dependencies, and explicitly records prior report paths/hashes supporting unchanged evidence. Reopen anything whose evidence is missing, changed or unresolved. No assumed approval, omitted blocking finding or lowered severity.
+- Author revisions address actual finding targets and necessary references. Preserve unrelated content and verify changed answers independently. Run job validation before completion; do not regenerate the full lesson for a localized fix.
+- Use pinned source locators. Repeat research or browser inspection only for new/changed evidence or a specific unresolved concern. Report unavailable evidence honestly. Inspect figures at the required mobile width when relevant.
+- Run focused checks for each coherent change. The coordinator owns final acceptance; workers do not repeat application lint/build/full tests/E2E for content-only edits.
+- Keep terminal handoffs under roughly 12 lines: job/owner, decision or fixed IDs, exact validation/completion results, artifact paths and unresolved risks. Full evidence belongs in the structured artifacts. Do not ask back or send routine progress messages to other agents.
+- If quota interrupts work, retain the claim and artifacts. On explicit resumption inspect the current state and continue that claim; do not onboard again or claim a second job.

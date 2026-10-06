@@ -1,4 +1,5 @@
 # Preserve sealed draft bytes and upstream hashes across Windows/Linux checkouts.
+packs/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 packs/drafts/ifsc-2027-science/** -text whitespace=cr-at-eol
 packs/drafts/ifsc-2027-gh/** -text whitespace=cr-at-eol
 packs/drafts/ifsc-2027-gh/source/** whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
@@ -12,3 +13,9 @@ packs/seeds/ifsc-2027.lesson-drafts/figures/**/*.svg text eol=lf
 packs/seeds/ifsc-2027.lesson-drafts/figures/GH-01/mapa-escala.svg text eol=crlf
 packs/seeds/ifsc-2027.lesson-drafts/figures/GH-01/mercator.svg text eol=crlf
 packs/seeds/ifsc-2027.lesson-drafts/figures/GH-01/seculos.svg text eol=crlf
+
+vecta-source-library/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+estudisc-source-library/** -text
+
+# Markdown's two-space line breaks are intentional, including historical reports.
+*.md whitespace=-blank-at-eol,-blank-at-eof

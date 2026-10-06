@@ -1,0 +1,524 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "GH-30",
+    "subject": "GH",
+    "title": "Mundialização, globalização e geopolítica contemporânea",
+    "unit": "Espaço geográfico mundial",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+    "concepts": [
+      {
+        "id": "GH-30-CON-01",
+        "name": "Fluxos de mercadorias, capitais, pessoas e informação",
+        "masteryTarget": "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais."
+      },
+      {
+        "id": "GH-30-CON-02",
+        "name": "Empresas transnacionais",
+        "masteryTarget": "Empresas transnacionais organizam etapas de produção em diferentes países e conectam territórios por cadeias globais."
+      },
+      {
+        "id": "GH-30-CON-03",
+        "name": "Redes",
+        "masteryTarget": "Fronteiras tornam-se mais permeáveis para alguns fluxos e permanecem seletivas para outros, especialmente migração humana."
+      },
+      {
+        "id": "GH-30-CON-04",
+        "name": "Integração desigual",
+        "masteryTarget": "Recursos estratégicos, tecnologia, logística e controle de cadeias produtivas possuem importância geopolítica."
+      },
+      {
+        "id": "GH-30-CON-05",
+        "name": "Fronteiras seletivas",
+        "masteryTarget": "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes."
+      },
+      {
+        "id": "GH-30-CON-06",
+        "name": "Recursos estratégicos e poder global",
+        "masteryTarget": "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "GH-30-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Globalização intensifica conexões, mas não torna fronteiras e desigualdades irrelevantes."
+      },
+      {
+        "id": "GH-30-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar os conceitos centrais de Mundialização, globalização e geopolítica contemporânea em linguagem própria.",
+          "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+          "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+        ]
+      },
+      {
+        "id": "GH-30-B03",
+        "type": "EXPLANATION",
+        "title": "Ideia central",
+        "content": "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais. Empresas transnacionais organizam etapas de produção em diferentes países e conectam territórios por cadeias globais.",
+        "items": [
+          "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais.",
+          "Empresas transnacionais organizam etapas de produção em diferentes países e conectam territórios por cadeias globais."
+        ]
+      },
+      {
+        "id": "GH-30-B04",
+        "type": "EXPLANATION",
+        "title": "Como as relações se organizam",
+        "content": "Fronteiras tornam-se mais permeáveis para alguns fluxos e permanecem seletivas para outros, especialmente migração humana. Recursos estratégicos, tecnologia, logística e controle de cadeias produtivas possuem importância geopolítica.",
+        "items": [
+          "Fronteiras tornam-se mais permeáveis para alguns fluxos e permanecem seletivas para outros, especialmente migração humana.",
+          "Recursos estratégicos, tecnologia, logística e controle de cadeias produtivas possuem importância geopolítica."
+        ]
+      },
+      {
+        "id": "GH-30-B05",
+        "type": "EXPLANATION",
+        "title": "O que conecta o tema à prova",
+        "content": "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes.",
+        "items": [
+          "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes.",
+          "Interpretar casos contemporâneos distinguindo integração econômica, fronteiras seletivas e relações de poder."
+        ]
+      },
+      {
+        "id": "GH-30-B06",
+        "type": "CALLOUT",
+        "variant": "SOURCE_LITERACY",
+        "title": "Leia a fonte, não apenas o tema",
+        "items": [
+          "Interpretar casos contemporâneos distinguindo integração econômica, fronteiras seletivas e relações de poder.",
+          "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+        ]
+      },
+      {
+        "id": "GH-30-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTION",
+        "title": "Erros que custam ponto",
+        "items": [
+          "Globalização eliminou todas as fronteiras nacionais.",
+          "Todos os países se beneficiam igualmente das redes globais.",
+          "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras.",
+          "Geopolítica deixou de existir com a internet."
+        ]
+      },
+      {
+        "id": "GH-30-B08",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Vocabulário essencial",
+        "items": [
+          "Fluxos de mercadorias, capitais, pessoas e informação",
+          "Empresas transnacionais",
+          "Redes",
+          "Integração desigual",
+          "Fronteiras seletivas",
+          "Recursos estratégicos e poder global"
+        ]
+      },
+      {
+        "id": "GH-30-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Como resolver uma questão",
+        "prompt": "Uma questão apresenta uma fonte relacionada a Mundialização, globalização e geopolítica contemporânea. Como decidir entre alternativas plausíveis?",
+        "answer": "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes.",
+        "reasoning": [
+          "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+          "Extraia da fonte apenas as evidências explícitas.",
+          "Ative o conceito da aula que explica a evidência.",
+          "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+          "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+        ]
+      },
+      {
+        "id": "GH-30-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Estratégia IFSC",
+        "items": [
+          "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+          "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+          "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+        ]
+      },
+      {
+        "id": "GH-30-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Material complementar",
+        "mediaRefs": [
+          "SRC-GH-001",
+          "SRC-GH-002",
+          "SRC-GH-034",
+          "SRC-GH-064"
+        ],
+        "optional": true
+      },
+      {
+        "id": "GH-30-B12",
+        "type": "IMAGE_REQUEST",
+        "title": "Ilustração conceitual",
+        "requestRef": "IMG-GH-30-001",
+        "status": "PENDING"
+      },
+      {
+        "id": "GH-30-B13",
+        "type": "SUMMARY",
+        "title": "Resumo para recuperar sem olhar",
+        "items": [
+          "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais.",
+          "Empresas transnacionais organizam etapas de produção em diferentes países e conectam territórios por cadeias globais.",
+          "Fronteiras tornam-se mais permeáveis para alguns fluxos e permanecem seletivas para outros, especialmente migração humana.",
+          "Recursos estratégicos, tecnologia, logística e controle de cadeias produtivas possuem importância geopolítica.",
+          "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes."
+        ]
+      },
+      {
+        "id": "GH-30-B14",
+        "type": "EXIT_TICKET",
+        "title": "Saída rápida",
+        "prompt": "Em duas ou três frases, explique a ideia mais importante de Mundialização, globalização e geopolítica contemporânea e cite um erro de interpretação que você evitaria numa questão.",
+        "answerGuide": "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais. Evite, por exemplo: Globalização eliminou todas as fronteiras nacionais."
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-GH-001",
+      "SRC-GH-001",
+      "SRC-GH-002",
+      "SRC-GH-034",
+      "SRC-GH-064",
+      "SRC-GH-074",
+      "SRC-IFSC-GH-2026-1",
+      "SRC-IFSC-GH-2026-2"
+    ],
+    "mediaRefs": [
+      "SRC-GH-001",
+      "SRC-GH-002",
+      "SRC-GH-034",
+      "SRC-GH-064",
+      "SRC-GH-074"
+    ],
+    "imageRequestRefs": [
+      "IMG-GH-30-001"
+    ],
+    "editorialNotes": [
+      "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+      "Não publicar mídia externa sem revisão de licença e proveniência.",
+      "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+      "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+    ]
+  },
+  "questions": [
+    {
+      "id": "GH-30-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Em relação a Mundialização, globalização e geopolítica contemporânea, qual afirmação está correta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Globalização eliminou todas as fronteiras nacionais."
+        },
+        {
+          "key": "B",
+          "text": "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais."
+        },
+        {
+          "key": "C",
+          "text": "Todos os países se beneficiam igualmente das redes globais."
+        },
+        {
+          "key": "D",
+          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
+        },
+        {
+          "key": "E",
+          "text": "Geopolítica deixou de existir com a internet."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "RECALL",
+      "conceptIds": [
+        "GH-30-CON-01"
+      ],
+      "targetedError": "foundation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-30-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante diz: “Globalização eliminou todas as fronteiras nacionais.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Globalização eliminou todas as fronteiras nacionais."
+        },
+        {
+          "key": "B",
+          "text": "Todos os países se beneficiam igualmente das redes globais."
+        },
+        {
+          "key": "C",
+          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
+        },
+        {
+          "key": "D",
+          "text": "Empresas transnacionais organizam etapas de produção em diferentes países e conectam territórios por cadeias globais."
+        },
+        {
+          "key": "E",
+          "text": "Geopolítica deixou de existir com a internet."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Empresas transnacionais organizam etapas de produção em diferentes países e conectam territórios por cadeias globais.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-30-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-30-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Considere a situação de partida da aula: Globalização intensifica conexões, mas não torna fronteiras e desigualdades irrelevantes. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Globalização eliminou todas as fronteiras nacionais."
+        },
+        {
+          "key": "B",
+          "text": "Todos os países se beneficiam igualmente das redes globais."
+        },
+        {
+          "key": "C",
+          "text": "Fronteiras tornam-se mais permeáveis para alguns fluxos e permanecem seletivas para outros, especialmente migração humana."
+        },
+        {
+          "key": "D",
+          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
+        },
+        {
+          "key": "E",
+          "text": "Geopolítica deixou de existir com a internet."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Fronteiras tornam-se mais permeáveis para alguns fluxos e permanecem seletivas para outros, especialmente migração humana.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "GH-30-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-30-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "O IFSC pode apresentar Mundialização, globalização e geopolítica contemporânea por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Recursos estratégicos, tecnologia, logística e controle de cadeias produtivas possuem importância geopolítica."
+        },
+        {
+          "key": "B",
+          "text": "Globalização eliminou todas as fronteiras nacionais."
+        },
+        {
+          "key": "C",
+          "text": "Todos os países se beneficiam igualmente das redes globais."
+        },
+        {
+          "key": "D",
+          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
+        },
+        {
+          "key": "E",
+          "text": "Geopolítica deixou de existir com a internet."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Recursos estratégicos, tecnologia, logística e controle de cadeias produtivas possuem importância geopolítica.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "GH-30-CON-04"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-30-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais.\nII. Globalização eliminou todas as fronteiras nacionais.\nIII. Fronteiras tornam-se mais permeáveis para alguns fluxos e permanecem seletivas para outros, especialmente migração humana.\nIV. Todos os países se beneficiam igualmente das redes globais.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-30-CON-01",
+        "GH-30-CON-02",
+        "GH-30-CON-03",
+        "GH-30-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-30-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma fonte foi apresentada numa questão sobre Mundialização, globalização e geopolítica contemporânea. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Globalização eliminou todas as fronteiras nacionais."
+        },
+        {
+          "key": "B",
+          "text": "Todos os países se beneficiam igualmente das redes globais."
+        },
+        {
+          "key": "C",
+          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
+        },
+        {
+          "key": "D",
+          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        },
+        {
+          "key": "E",
+          "text": "Interpretar casos contemporâneos distinguindo integração econômica, fronteiras seletivas e relações de poder."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Interpretar casos contemporâneos distinguindo integração econômica, fronteiras seletivas e relações de poder.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "conceptIds": [
+        "GH-30-CON-01",
+        "GH-30-CON-02",
+        "GH-30-CON-03",
+        "GH-30-CON-04",
+        "GH-30-CON-05",
+        "GH-30-CON-06"
+      ],
+      "targetedError": "source_interpretation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-30-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Mundialização, globalização e geopolítica contemporânea?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais."
+        },
+        {
+          "key": "B",
+          "text": "Empresas transnacionais organizam etapas de produção em diferentes países e conectam territórios por cadeias globais."
+        },
+        {
+          "key": "C",
+          "text": "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes."
+        },
+        {
+          "key": "D",
+          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
+        },
+        {
+          "key": "E",
+          "text": "Recursos estratégicos, tecnologia, logística e controle de cadeias produtivas possuem importância geopolítica."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-30-CON-01",
+        "GH-30-CON-02",
+        "GH-30-CON-03",
+        "GH-30-CON-04",
+        "GH-30-CON-05",
+        "GH-30-CON-06"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-30-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Mundialização, globalização e geopolítica contemporânea, qual conclusão final é sustentável?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Globalização eliminou todas as fronteiras nacionais."
+        },
+        {
+          "key": "B",
+          "text": "Todos os países se beneficiam igualmente das redes globais."
+        },
+        {
+          "key": "C",
+          "text": "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes."
+        },
+        {
+          "key": "D",
+          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
+        },
+        {
+          "key": "E",
+          "text": "Geopolítica deixou de existir com a internet."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-30-CON-01",
+        "GH-30-CON-02",
+        "GH-30-CON-03",
+        "GH-30-CON-04",
+        "GH-30-CON-05",
+        "GH-30-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    }
+  ]
+}

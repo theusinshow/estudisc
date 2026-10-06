@@ -13,17 +13,10 @@ export async function createMigratedPgliteTestDatabase() {
     .filter((file) => file.endsWith(".sql"))
     .sort((left, right) => left.localeCompare(right));
 
-  for (const migrationFile of migrationFiles) {
-    const migrationSql = await readFile(path.join(migrationsDirectory, migrationFile), "utf8");
-
-    for (const statement of migrationSql.split("--> statement-breakpoint")) {
-      const trimmed = statement.trim();
-
-      if (trimmed.length > 0) {
-        await client.query(trimmed);
-      }
-    }
-  }
+  // One transactional DDL batch avoids a WASM/SQL round trip for every statement.
+  // Each database remains disposable and isolated; no seeded content or learner state is shared.
+  const statements = await Promise.all(migrationFiles.map(async file => (await readFile(path.join(migrationsDirectory, file), "utf8")).split("--> statement-breakpoint").filter(statement => statement.trim()).join("\n")));
+  await client.exec(`BEGIN;\n${statements.join("\n")}\nCOMMIT;`);
 
   const db = drizzle(client, { schema });
 

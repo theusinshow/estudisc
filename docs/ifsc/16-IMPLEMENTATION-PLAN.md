@@ -5,7 +5,7 @@ Source of truth for: milestone execution order.
 
 ## Rule
 
-Do not rebuild the KNOW/OS foundation. Each milestone extends the current repository and ends with green tests/build/docs.
+Do not rebuild the Estudisc foundation. Each milestone extends the current repository and ends with green tests/build/docs.
 
 ## Milestones
 

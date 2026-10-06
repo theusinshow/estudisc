@@ -1,0 +1,50 @@
+{
+  "questions": [
+    {
+      "id": "Q-CIE-06-DEMO",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE.ATOM.Z",
+      "conceptIds": [
+        "CIE.ATOM.Z"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "foundation",
+      "cognitiveOperations": [
+        "identify"
+      ],
+      "stem": "DEMO: com quatro prótons, qual é Z?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "4",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "8",
+          "correct": false,
+          "targetsError": "conceptual",
+          "rationale": "Confunde número atômico com soma de partículas."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Pela especificação DEMO, Z = número de prótons = 4.",
+      "sourceIds": [
+        "src-demo-spec"
+      ],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "demo-author-v1"
+      },
+      "exposurePolicy": {
+        "reservedForAssessment": false,
+        "minimumDaysBetween": 0
+      },
+      "status": "draft"
+    }
+  ]
+}

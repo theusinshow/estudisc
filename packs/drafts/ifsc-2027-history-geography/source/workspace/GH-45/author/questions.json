@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-45-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Segunda Guerra Mundial e Holocausto, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+      },
+      {
+        "key": "B",
+        "text": "A guerra começou na Europa em 1939 com a invasão alemã da Polônia e envolveu conflitos em várias regiões do mundo."
+      },
+      {
+        "key": "C",
+        "text": "A guerra aconteceu somente na Europa."
+      },
+      {
+        "key": "D",
+        "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+      },
+      {
+        "key": "E",
+        "text": "A ONU foi criada antes da Primeira Guerra Mundial."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A guerra começou na Europa em 1939 com a invasão alemã da Polônia e envolveu conflitos em várias regiões do mundo.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-45-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-45-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+      },
+      {
+        "key": "B",
+        "text": "A guerra aconteceu somente na Europa."
+      },
+      {
+        "key": "C",
+        "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+      },
+      {
+        "key": "D",
+        "text": "As potências do Eixo enfrentaram os Aliados em guerra de enorme mobilização militar, econômica e civil."
+      },
+      {
+        "key": "E",
+        "text": "A ONU foi criada antes da Primeira Guerra Mundial."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "As potências do Eixo enfrentaram os Aliados em guerra de enorme mobilização militar, econômica e civil.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-45-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-45-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: A Segunda Guerra foi guerra total e incluiu genocídio sistemático promovido pela Alemanha nazista e seus colaboradores. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+      },
+      {
+        "key": "B",
+        "text": "A guerra aconteceu somente na Europa."
+      },
+      {
+        "key": "C",
+        "text": "O Holocausto foi a perseguição e assassinato sistemático de cerca de seis milhões de judeus europeus pelo regime nazista e seus aliados e colaboradores, além da perseguição de outros grupos."
+      },
+      {
+        "key": "D",
+        "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+      },
+      {
+        "key": "E",
+        "text": "A ONU foi criada antes da Primeira Guerra Mundial."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "O Holocausto foi a perseguição e assassinato sistemático de cerca de seis milhões de judeus europeus pelo regime nazista e seus aliados e colaboradores, além da perseguição de outros grupos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-45-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-45-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Segunda Guerra Mundial e Holocausto por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A guerra no Pacífico terminou após ofensivas aliadas, bombas atômicas em Hiroshima e Nagasaki e rendição japonesa em 1945."
+      },
+      {
+        "key": "B",
+        "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+      },
+      {
+        "key": "C",
+        "text": "A guerra aconteceu somente na Europa."
+      },
+      {
+        "key": "D",
+        "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+      },
+      {
+        "key": "E",
+        "text": "A ONU foi criada antes da Primeira Guerra Mundial."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A guerra no Pacífico terminou após ofensivas aliadas, bombas atômicas em Hiroshima e Nagasaki e rendição japonesa em 1945.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-45-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-45-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. A guerra começou na Europa em 1939 com a invasão alemã da Polônia e envolveu conflitos em várias regiões do mundo.\nII. Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra.\nIII. O Holocausto foi a perseguição e assassinato sistemático de cerca de seis milhões de judeus europeus pelo regime nazista e seus aliados e colaboradores, além da perseguição de outros grupos.\nIV. A guerra aconteceu somente na Europa.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-45-CON-01",
+      "GH-45-CON-02",
+      "GH-45-CON-03",
+      "GH-45-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-45-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Segunda Guerra Mundial e Holocausto. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+      },
+      {
+        "key": "B",
+        "text": "A guerra aconteceu somente na Europa."
+      },
+      {
+        "key": "C",
+        "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Usar documentos e mapas para distinguir guerra militar, ocupação, perseguição racial e genocídio."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Usar documentos e mapas para distinguir guerra militar, ocupação, perseguição racial e genocídio.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-45-CON-01",
+      "GH-45-CON-02",
+      "GH-45-CON-03",
+      "GH-45-CON-04",
+      "GH-45-CON-05",
+      "GH-45-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-45-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Segunda Guerra Mundial e Holocausto?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A guerra começou na Europa em 1939 com a invasão alemã da Polônia e envolveu conflitos em várias regiões do mundo."
+      },
+      {
+        "key": "B",
+        "text": "As potências do Eixo enfrentaram os Aliados em guerra de enorme mobilização militar, econômica e civil."
+      },
+      {
+        "key": "C",
+        "text": "O pós-guerra levou à criação da ONU e a uma nova ordem internacional marcada pela ascensão de EUA e URSS."
+      },
+      {
+        "key": "D",
+        "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+      },
+      {
+        "key": "E",
+        "text": "A guerra no Pacífico terminou após ofensivas aliadas, bombas atômicas em Hiroshima e Nagasaki e rendição japonesa em 1945."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-45-CON-01",
+      "GH-45-CON-02",
+      "GH-45-CON-03",
+      "GH-45-CON-04",
+      "GH-45-CON-05",
+      "GH-45-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-45-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Segunda Guerra Mundial e Holocausto, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+      },
+      {
+        "key": "B",
+        "text": "A guerra aconteceu somente na Europa."
+      },
+      {
+        "key": "C",
+        "text": "O pós-guerra levou à criação da ONU e a uma nova ordem internacional marcada pela ascensão de EUA e URSS."
+      },
+      {
+        "key": "D",
+        "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+      },
+      {
+        "key": "E",
+        "text": "A ONU foi criada antes da Primeira Guerra Mundial."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "O pós-guerra levou à criação da ONU e a uma nova ordem internacional marcada pela ascensão de EUA e URSS.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-45-CON-01",
+      "GH-45-CON-02",
+      "GH-45-CON-03",
+      "GH-45-CON-04",
+      "GH-45-CON-05",
+      "GH-45-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

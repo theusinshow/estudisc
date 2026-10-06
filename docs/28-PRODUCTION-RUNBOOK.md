@@ -4,7 +4,7 @@ Date: 2026-07-30
 
 ## Status
 
-This runbook prepares KNOW/OS for the selected production stack from ADR 0015:
+This runbook prepares Estudisc for the selected production stack from ADR 0015:
 
 - Vercel hosting.
 - Neon Postgres.
@@ -17,7 +17,7 @@ It does not authorize external resource creation, deployment or secret handling 
 Repository:
 
 ```text
-https://github.com/theusinshow/know-os
+https://github.com/theusinshow/estudisc
 ```
 
 Current branch:
@@ -44,7 +44,7 @@ pnpm build
 User action required:
 
 1. Create or select a Neon project.
-2. Create a database for KNOW/OS.
+2. Create a database for Estudisc.
 3. Copy the PostgreSQL connection string.
 4. Store it as `DATABASE_URL` in Vercel project environment variables.
 
@@ -57,7 +57,7 @@ pnpm test:postgres
 pnpm db:migrate
 ```
 
-`pnpm test:postgres` creates a uniquely named disposable `know_os_real_pg_*` schema, applies the checked-in migrations inside that schema, runs a minimal import/RUN/SUBMIT/progress smoke, and drops only that schema during cleanup. It reads `TEST_DATABASE_URL` first and falls back to `DATABASE_URL`, including from ignored `.env.local`, without printing credentials. Because the generated migrations contain foreign keys qualified as `"public".*`, the isolated validation rebinds those FK references to the disposable schema at runtime; it does not modify migration files or production tables.
+`pnpm test:postgres` creates a uniquely named disposable `estudisc_real_pg_*` schema, applies the checked-in migrations inside that schema, runs a minimal import/RUN/SUBMIT/progress smoke, and drops only that schema during cleanup. It reads `TEST_DATABASE_URL` first and falls back to `DATABASE_URL`, including from ignored `.env.local`, without printing credentials. Because the generated migrations contain foreign keys qualified as `"public".*`, the isolated validation rebinds those FK references to the disposable schema at runtime; it does not modify migration files or production tables.
 
 `pnpm db:migrate` runs `drizzle-kit migrate` against the configured `DATABASE_URL`.
 
@@ -98,22 +98,22 @@ AUTH_TRUST_HOST=true
 3. Store the allowed Google account e-mail list:
 
 ```text
-KNOW_OS_ALLOWED_GOOGLE_EMAILS=owner@example.com
+Estudisc_ALLOWED_GOOGLE_EMAILS=owner@example.com
 ```
 
 4. Store the owner mapping:
 
 ```text
-KNOW_OS_OWNER_ID=production-owner
+Estudisc_OWNER_ID=production-owner
 ```
 
-Only e-mails in `KNOW_OS_ALLOWED_GOOGLE_EMAILS` can access protected pages and APIs when Google OAuth is configured.
+Only e-mails in `Estudisc_ALLOWED_GOOGLE_EMAILS` can access protected pages and APIs when Google OAuth is configured.
 
 ## Step 5 — Vercel project
 
 User action required:
 
-1. Import `theusinshow/know-os` into Vercel.
+1. Import `theusinshow/estudisc` into Vercel.
 2. Configure environment variables for Production and Preview as appropriate.
 3. Confirm that Vercel's system environment variables are enabled.
 4. Do not deploy until the local production-readiness gate passes.
@@ -127,8 +127,8 @@ AUTH_SECRET
 AUTH_TRUST_HOST
 AUTH_GOOGLE_ID
 AUTH_GOOGLE_SECRET
-KNOW_OS_ALLOWED_GOOGLE_EMAILS
-KNOW_OS_OWNER_ID
+Estudisc_ALLOWED_GOOGLE_EMAILS
+Estudisc_OWNER_ID
 LOG_LEVEL
 ```
 
@@ -170,7 +170,7 @@ If Google shows `Erro 401: invalid_client` or `The OAuth client was not found`, 
 1. Confirm the production `AUTH_GOOGLE_ID` is the OAuth Client ID from the Google Cloud project that has this redirect URI:
 
 ```text
-https://know-os.vercel.app/api/auth/callback/google
+https://vecta-three.vercel.app/api/auth/callback/google
 ```
 
 2. Confirm `AUTH_GOOGLE_SECRET` belongs to the same OAuth client.

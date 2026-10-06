@@ -1,0 +1,75 @@
+{
+  "lessonId": "GH-22",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-016",
+      "title": "Memória Política de Santa Catarina",
+      "org": "ALESC + UFSC",
+      "type": "DIDACTIC_REPOSITORY",
+      "url": "https://memoriapolitica.alesc.sc.gov.br/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-028",
+      "title": "Memórias Reveladas",
+      "org": "Arquivo Nacional",
+      "type": "PRIMARY_SOURCE_REPOSITORY",
+      "url": "https://www.gov.br/memoriasreveladas/pt-br",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-029",
+      "title": "Imagens e documentos do período de 1964–1985",
+      "org": "Arquivo Nacional — Memórias Reveladas",
+      "type": "PRIMARY_SOURCE_MEDIA",
+      "url": "https://www.gov.br/memoriasreveladas/pt-br/centrais-de-conteudo/multimidias/imagens-e-documentos-do-periodo-de-1964-1985/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-030",
+      "title": "A Constituição Cidadã de 1988",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-a-constituicao-cidada-de-1988/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-059",
+      "title": "Constituição de 1988 — Alicerces da Redemocratização",
+      "org": "Senado Federal",
+      "type": "OFFICIAL_COLLECTION",
+      "url": "https://www12.senado.leg.br/publicacoes/estudos-legislativos/tipos-de-estudos/outras-publicacoes/volume-i-constituicao-de-1988",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-060",
+      "title": "Constituição Federal de 1988 — texto atualizado",
+      "org": "Câmara dos Deputados",
+      "type": "PRIMARY_DOCUMENT",
+      "url": "https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-22-001",
+    "lessonId": "GH-22",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo da abertura à Constituição de 1988.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

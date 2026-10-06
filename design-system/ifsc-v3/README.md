@@ -1,8 +1,10 @@
-# KNOW/OS Design System v3 — IFSC Delta
+# Estudisc — delta IFSC histórico integrado
 
-Status: **Accepted design-direction delta**
+Versão atual: `../VERSION`. Este diretório conserva o nome da origem histórica e não define uma segunda versão atual.
 
-Apply this delta to the existing normative Design System. Do not create a competing production token source.
+Status: **Delta integrado**
+
+This delta is already integrated into the current normative Design System. Do not create a competing production token source.
 
 ## Direction
 
@@ -35,9 +37,9 @@ Foundation/owned primitives first. External references are inspiration/source-co
 
 Preferred order:
 
-1. existing KNOW/OS component;
+1. existing Estudisc component;
 2. shadcn-style accessible primitive/pattern;
-3. approved source component adapted into KNOW/OS tokens;
+3. approved source component adapted into Estudisc tokens;
 4. purpose-built component.
 
 Useful reference registries may include Arc/UIArc, Motion Primitives, Planes, Space UI, 21st.dev, Component Gallery, Magic UI, Aceternity, Componentry, Skecher UI and Uiverse. Spline/Unicorn are experimental and not core learning dependencies.

@@ -1,0 +1,54 @@
+{
+  "lessonId": "GH-29",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-001",
+      "title": "Atlas Geográfico Escolar — Ensino Fundamental 6º ao 9º ano",
+      "org": "IBGE",
+      "type": "ATLAS",
+      "url": "https://www.ibge.gov.br/geociencias/atlas/nacional/24678-atlas-geografico-escolar-ensino-fundamental.html",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-035",
+      "title": "Revoluções Industriais",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-revolucoes-industriais/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-GH-29-001",
+      "lessonId": "GH-29",
+      "blockId": "GH-29-B12",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem simular documento histórico.",
+      "prompt": "Ilustração conceitual das transformações do capitalismo: comércio marítimo, fábrica, finanças e redes digitais em composição cronológica não documental. Estilo VECTA: clean editorial educational illustration, mobile-readable, no text embedded.",
+      "factualConstraints": [
+        "A imagem deve ser claramente ilustrativa e não documental",
+        "Não inventar mapas, bandeiras, datas, documentos ou pessoas históricas específicas",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "falsa fotografia histórica",
+        "documento histórico inventado",
+        "mapa político impreciso",
+        "texto ilegível",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para Capitalismo: formação, fases e organização do espaço.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-GH-29-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

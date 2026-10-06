@@ -1,11 +1,11 @@
-# KNOW/OS — Iconografia
+# Estudisc — Iconografia
 
 ## Biblioteca base
 
 Lucide, mantendo a geometria original da biblioteca, incluindo `stroke-linecap`
 e `stroke-linejoin`. Não modificar os SVGs globalmente para forçar cantos retos.
 
-A marca KNOW/OS não faz parte da biblioteca Lucide. Seus arquivos e regras ficam
+A marca Estudisc não faz parte da biblioteca Lucide. Seus arquivos e regras ficam
 em `BRAND_ASSETS.md`.
 
 ## Símbolos proprietários

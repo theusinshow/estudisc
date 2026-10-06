@@ -2,9 +2,10 @@ import { expect, test } from "@playwright/test";
 
 test("imports the bundled example Track Pack through the product surface", async ({ page }) => {
   await page.goto("/import");
+  await page.getByText("Importação avançada (JSON ou aula gerada por IA)", { exact: true }).click();
 
   await expect(page.getByRole("heading", { name: "Ativar catálogo" })).toBeVisible();
-  await expect(page.getByRole("button", { name: /Estudar trilha pronta/ })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.getByRole("button", { name: /Estudar trilha pronta/i })).toHaveAttribute("aria-pressed", "true");
   await expect(page.getByRole("button", { name: "Aplicar" })).toBeDisabled();
 
   await page.getByRole("button", { name: "Carregar exemplo" }).click();
@@ -29,9 +30,10 @@ test("imports the bundled example Track Pack through the product surface", async
 test("keeps the first import step compact on mobile", async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
   await page.goto("/import");
+  await page.getByText("Importação avançada (JSON ou aula gerada por IA)", { exact: true }).click();
 
   await expect(page.getByRole("heading", { name: "Ativar catálogo" })).toBeVisible();
-  await expect(page.getByRole("button", { name: /Estudar trilha pronta/ })).toHaveAttribute("aria-pressed", "true");
+  await expect(page.getByRole("button", { name: /Estudar trilha pronta/i })).toHaveAttribute("aria-pressed", "true");
   await expect(page.getByRole("button", { name: "Carregar exemplo" })).toBeVisible();
   await expect(page.getByRole("button", { name: "Preview" })).toBeVisible();
   await expect(page.getByRole("tab", { name: "Manual / Copy Paste" })).toBeHidden();
@@ -56,6 +58,7 @@ test("keeps the first import step compact on mobile", async ({ page }) => {
 
 test("validates and imports a manually generated Lesson Pack through the product surface", async ({ page }) => {
   await page.goto("/import");
+  await page.getByText("Importação avançada (JSON ou aula gerada por IA)", { exact: true }).click();
 
   await page.getByRole("button", { name: /Criar aula com IA/ }).click();
   await expect(page.getByRole("tab", { name: "Manual / Copy Paste" })).toHaveAttribute("aria-selected", "true");

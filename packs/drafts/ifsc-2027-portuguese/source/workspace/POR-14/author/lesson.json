@@ -1,0 +1,150 @@
+{
+  "id": "POR-14",
+  "subject": "POR",
+  "title": "Sinonímia, antonímia, polissemia e sentido no contexto",
+  "module": "Sentido e conexão",
+  "priority": "P0",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Interpretar equivalência e contraste lexical considerando contexto, registro e nuance.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-018",
+    "POR-SRC-019",
+    "POR-SRC-038"
+  ],
+  "conceptRefs": [
+    "POR-14-C01",
+    "POR-14-C02",
+    "POR-14-C03",
+    "POR-14-C04",
+    "POR-14-C05",
+    "POR-14-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Em “o projeto avançou rapidamente”, “avançou” significa progrediu. Em “o atleta avançou dez metros”, refere-se a deslocamento físico."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Interpretar equivalência e contraste lexical considerando contexto, registro e nuance.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Sinônimos raramente são intercambiáveis em todos os contextos; equivalência depende de sentido, registro e construção.",
+        "Antônimos expressam oposição, mas o tipo de oposição pode ser complementar, gradual ou relacional.",
+        "Polissemia ocorre quando uma mesma forma lexical apresenta sentidos relacionados em contextos distintos."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "O contexto restringe o sentido provável de palavras e expressões.",
+        "Substituir uma palavra por “sinônimo” pode mudar intensidade, avaliação, formalidade ou efeito discursivo.",
+        "Denotação privilegia sentido mais literal; conotação mobiliza associações e usos figurados."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "sinonímia",
+          "conceptRef": "POR-14-C01"
+        },
+        {
+          "term": "antonímia",
+          "conceptRef": "POR-14-C02"
+        },
+        {
+          "term": "polissemia",
+          "conceptRef": "POR-14-C03"
+        },
+        {
+          "term": "denotação",
+          "conceptRef": "POR-14-C04"
+        },
+        {
+          "term": "conotação",
+          "conceptRef": "POR-14-C05"
+        },
+        {
+          "term": "campo semântico",
+          "conceptRef": "POR-14-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Sinônimos podem ser trocados em qualquer frase.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Cada palavra tem um único significado.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Antônimo é sempre negação com “não”.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Contexto não interfere no sentido.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Em “o projeto avançou rapidamente”, “avançou” significa progrediu. Em “o atleta avançou dez metros”, refere-se a deslocamento físico.",
+      "analysis": "A palavra é polissêmica; o contexto seleciona sentidos relacionados, mas não idênticos."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Escolha o melhor sinônimo em três contextos.",
+        "Explique por que uma troca serve em uma frase e não em outra.",
+        "Crie dois usos de uma palavra polissêmica."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Releia a frase completa e verifique sentido, intensidade e registro."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Sinônimos raramente são intercambiáveis em todos os contextos; equivalência depende de sentido, registro e construção.",
+        "Antônimos expressam oposição, mas o tipo de oposição pode ser complementar, gradual ou relacional.",
+        "Polissemia ocorre quando uma mesma forma lexical apresenta sentidos relacionados em contextos distintos.",
+        "O contexto restringe o sentido provável de palavras e expressões.",
+        "Substituir uma palavra por “sinônimo” pode mudar intensidade, avaliação, formalidade ou efeito discursivo.",
+        "Denotação privilegia sentido mais literal; conotação mobiliza associações e usos figurados."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Sinonímia, antonímia, polissemia e sentido no contexto e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

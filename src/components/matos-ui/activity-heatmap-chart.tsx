@@ -2,7 +2,7 @@
 
 /**
  * Matos UI Activity Heatmap (https://matos-ui.com/charts/activity-heatmap-chart), vendored and adapted:
- * motion/react instead of framer-motion, KNOW/OS tokens through CSS classes (the CSP blocks SSR style
+ * motion/react instead of framer-motion, Estudisc tokens through CSS classes (the CSP blocks SSR style
  * attributes), positioned month labels, roving focus with day/week arrow keys and pt-BR copy.
  */
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";

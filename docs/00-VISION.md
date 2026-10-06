@@ -2,13 +2,13 @@
 
 ## Product vision
 
-KNOW/OS is a personal operating system for building knowledge. It converts passive study into a traceable cycle of understanding, prediction, execution, error, investigation, correction, explanation, application and review.
+Estudisc is a personal operating system for building knowledge. It converts passive study into a traceable cycle of understanding, prediction, execution, error, investigation, correction, explanation, application and review.
 
 The product should make the user feel that knowledge is being constructed, connected and strengthened over time—not merely consumed.
 
 ## Core promise
 
-At any moment, KNOW/OS should answer:
+At any moment, Estudisc should answer:
 
 - What am I learning?
 - What should I do next?
@@ -21,7 +21,7 @@ At any moment, KNOW/OS should answer:
 
 The first domain is programming. The long-term system can host portable learning Packs for any subject that can be represented through concepts, structured content, activities, evidence and review.
 
-KNOW/OS is not intended to become a traditional school LMS, a marketplace-first course platform, a generic notes app or an analytics dashboard.
+Estudisc is not intended to become a traditional school LMS, a marketplace-first course platform, a generic notes app or an analytics dashboard.
 
 ## Product principles
 

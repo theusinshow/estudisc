@@ -1,0 +1,154 @@
+{
+  "id": "POR-03",
+  "subject": "POR",
+  "title": "Inferência, implícitos, pressupostos e leitura de contexto",
+  "module": "Leitura e gêneros",
+  "priority": "P0",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Inferir sentidos e informações implícitas a partir de pistas textuais e contexto, sem inventar dados.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-007",
+    "POR-SRC-008",
+    "POR-SRC-033",
+    "POR-SRC-034"
+  ],
+  "conceptRefs": [
+    "POR-03-C01",
+    "POR-03-C02",
+    "POR-03-C03",
+    "POR-03-C04",
+    "POR-03-C05",
+    "POR-03-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Ao entrar na sala, Caio colocou o guarda-chuva pingando ao lado da porta e disse: “Ainda bem que trouxe outra camiseta na mochila.”"
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Inferir sentidos e informações implícitas a partir de pistas textuais e contexto, sem inventar dados.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente.",
+        "Informações implícitas podem resultar de ações, escolhas lexicais, relações causais, ironia, omissões ou conhecimento compartilhado.",
+        "Pressupostos tendem a permanecer mesmo quando a frase é negada; “João parou de correr” pressupõe que João corria antes."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Subentendidos dependem mais da situação comunicativa e podem ser negados pelo falante com maior facilidade.",
+        "Uma inferência válida precisa ser compatível com todas as informações relevantes do texto.",
+        "O sentido de uma palavra desconhecida pode muitas vezes ser inferido pelas palavras vizinhas e pela situação apresentada."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "inferência",
+          "conceptRef": "POR-03-C01"
+        },
+        {
+          "term": "implícito",
+          "conceptRef": "POR-03-C02"
+        },
+        {
+          "term": "pressuposto",
+          "conceptRef": "POR-03-C03"
+        },
+        {
+          "term": "subentendido",
+          "conceptRef": "POR-03-C04"
+        },
+        {
+          "term": "pista textual",
+          "conceptRef": "POR-03-C05"
+        },
+        {
+          "term": "contexto",
+          "conceptRef": "POR-03-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Inferir é escolher a interpretação mais criativa.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Toda informação implícita é subjetiva.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Pressuposto e opinião do leitor são a mesma coisa.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Se não está escrito literalmente, não pode ser cobrado.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Ao entrar na sala, Caio colocou o guarda-chuva pingando ao lado da porta e disse: “Ainda bem que trouxe outra camiseta na mochila.”",
+      "analysis": "É razoável inferir que Caio se molhou ou enfrentou chuva; não se pode concluir onde choveu ou quanto tempo durou."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Leia cinco microtextos com pistas incompletas.",
+        "Destaque a pista que sustenta cada inferência.",
+        "Classifique conclusões como sustentadas, possíveis ou incompatíveis."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Pergunte “qual trecho permite concluir isso?”. Sem pista suficiente, provavelmente há extrapolação."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente.",
+        "Informações implícitas podem resultar de ações, escolhas lexicais, relações causais, ironia, omissões ou conhecimento compartilhado.",
+        "Pressupostos tendem a permanecer mesmo quando a frase é negada; “João parou de correr” pressupõe que João corria antes.",
+        "Subentendidos dependem mais da situação comunicativa e podem ser negados pelo falante com maior facilidade.",
+        "Uma inferência válida precisa ser compatível com todas as informações relevantes do texto.",
+        "O sentido de uma palavra desconhecida pode muitas vezes ser inferido pelas palavras vizinhas e pela situação apresentada."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Inferência, implícitos, pressupostos e leitura de contexto e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [],
+    "antigravityRefs": [],
+    "authenticMediaRefs": [
+      "POR-MEDIA-01",
+      "POR-MEDIA-02"
+    ]
+  }
+}

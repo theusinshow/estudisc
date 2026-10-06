@@ -1,10 +1,10 @@
-# KNOW/OS — Índice do Design System (fonte de verdade)
+# Estudisc — Índice do Design System (fonte de verdade)
 
 ## Delta IFSC integrado
 
 As regras v3 em ifsc-v3/ refinam telas e componentes de estudo. ACCESSIBILITY.md e design-tokens.json continuam no topo da precedência. Student mobile: Hoje, Aprender, Progresso, Mais; Admin separado; Programming Lab mantém sua autoridade técnica. TOKENS-DELTA.json é proposta histórica e não deve ser consumido pelo runtime. Valores aprovados vivem somente no JSON canônico.
 
-Versão 3.0 · 2026-10-01 · direção **Neo-Brutalismo Funcional + aprendizagem mobile-first** (ADR 0027).
+Versão atual: consulte design-system/VERSION (fonte única).
 
 **Status:** APPROVED / FROZEN FOR IMPLEMENTATION
 
@@ -60,7 +60,7 @@ Corrija o protótipo; não enfraqueça a especificação.
 
 ## 3. Tokens canônicos
 
-`design-tokens.json` v3.0 é a única fonte de valores literais. O código de
+`design-tokens.json` é a única fonte de valores literais. O código de
 produção deve consumir CSS custom properties geradas a partir do JSON.
 
 Não escrever diretamente em componentes:
@@ -98,11 +98,11 @@ migração e atualização do changelog.
 4. **Uma CTA primária por contexto de decisão visível.** Regiões independentes, drawers ou modais podem ter sua própria CTA, desde que não concorram dentro do mesmo fluxo.
 5. **RUN nunca registra tentativa. SUBMIT SOLUTION sempre registra.** Possuem rótulos completos, atalhos distintos e separação visual.
 6. **Superfície escura significa que a máquina executa ou representa saída técnica.** Usar em editor, terminal, testes, saída, code blocks, preview técnico e tooltip. Não existe dark mode completo.
-7. **Raio base entre 0 e 4px; superfícies de aprendizagem e sheets usam os tokens v3 de 12–18px. Sombra sólida.** Gradiente, blur, glassmorphism e sombra difusa são proibidos.
+7. **Raio base entre 0 e 4px; superfícies de aprendizagem e sheets usam os tokens canônicos de 12–18px. Sombra sólida.** Gradiente, blur, glassmorphism e sombra difusa são proibidos.
 8. **Movimento de interface usa no máximo 180ms e deslocamento de 2–4px.** Nenhuma animação contínua decorativa.
 9. **Tipografia: Archivo + JetBrains Mono.** Mono para código, saída técnica e metadados; Archivo para leitura e interface.
 10. **Alvo de toque mínimo abaixo de 1200px: 44px.** Densidade compacta é desativada abaixo de 768px.
-11. **Emoji é proibido como iconografia.** Lucide é a biblioteca base em sua geometria original. Símbolos proprietários KNOW/OS podem usar cantos retos.
+11. **Emoji é proibido como iconografia.** Lucide é a biblioteca base em sua geometria original. Símbolos proprietários Estudisc podem usar cantos retos.
 12. **Erro é dado, nunca punição.** A mensagem nomeia o problema e explica o conceito relevante; sem shake, culpa ou vermelho isolado.
 13. **Tabelas de dados recompõem em blocos abaixo de 1200px.** Conteúdo técnico dependente de largura — código, diff, terminal, stack trace e matrizes — pode usar overflow controlado, tabs ou uma visualização alternativa documentada.
 14. **Recomposição, não redução.** Mapa vira lista no mobile; diff empilha; editor e terminal viram tabs exclusivas.

@@ -29,7 +29,7 @@ export function compileGenerationPrompt(spec: GenerationSpec): CompiledGeneratio
     targetSchema: spec.targetSchema,
     jsonExample,
     prompt: [
-      "Voce esta gerando conteudo para KNOW/OS.",
+      "Voce esta gerando conteudo para Estudisc.",
       `Responda somente com JSON valido no schema ${spec.targetSchema}.`,
       "Nao use Markdown, comentarios, texto antes ou depois do JSON.",
       "Nao inclua scripts, HTML executavel, URLs de rastreamento, segredos ou chaves de API.",

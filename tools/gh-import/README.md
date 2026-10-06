@@ -1,6 +1,6 @@
 # GH V2 importer — persistent technical context
 
-Integrates the supplied VECTA-GH-CONTENT-IFSC-2027-1-v2 package without research, editorial rewriting or question generation. Reuses the Science adapter (`buildEditorialPack`, `mapBlock`, Concept validator, preservation auditor and static mobile preview), existing Pack v2 schema, transactional importer, shared Question Bank, core renderer/evaluators and publication gates. Science defaults and its sealed snapshot remain unchanged. No UI, schema, input-limit or learning-engine changes.
+Integrates the supplied Estudisc-GH-CONTENT-IFSC-2027-1-v2 package without research, editorial rewriting or question generation. Reuses the Science adapter (`buildEditorialPack`, `mapBlock`, Concept validator, preservation auditor and static mobile preview), existing Pack v2 schema, transactional importer, shared Question Bank, core renderer/evaluators and publication gates. Science defaults and its sealed snapshot remain unchanged. No UI, schema, input-limit or learning-engine changes.
 
 ## Inputs and identities
 

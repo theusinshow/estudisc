@@ -15,7 +15,7 @@ describe("AppShell", () => {
       "href",
       "#main-content"
     );
-    expect(screen.getByRole("link", { name: "Vecta, página inicial" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Estudisc, página inicial" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /hoje/i })).toHaveAttribute("href", "/");
     expect(screen.getByRole("link", { name: /aprender/i })).toHaveAttribute("href", "/tracks");
     expect(screen.getByRole("link", { name: /revisar/i, hidden:true })).toHaveAttribute("href", "/review");

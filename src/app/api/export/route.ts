@@ -16,7 +16,7 @@ export async function GET(request: Request) {
 
     return NextResponse.json(payload, {
       headers: {
-        "content-disposition": `attachment; filename="know-os-${payload.kind}.json"`
+        "content-disposition": `attachment; filename="estudisc-${payload.kind}.json"`
       }
     });
   } catch (error) {

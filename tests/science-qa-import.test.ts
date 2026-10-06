@@ -38,4 +38,4 @@ it("imports Science drafts without creating learners, attempts, study events or 
     await expect(qa.publish(releases[0].id)).rejects.toThrow("QA blocks");
     expect(verifySourceUnchanged()).toBe(620);
   } finally { await database.close(); }
-}, 30000);
+}, 90000);

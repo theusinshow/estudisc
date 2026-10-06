@@ -38,9 +38,10 @@ async function getConceptMasterySummary(ownerId: string, conceptStableIds: reado
   }
 
   const repository = memory ? new MemoryConceptEvidenceRepository() : new ConceptEvidenceRepository();
-  const states = await Promise.all(
-    conceptStableIds.map(async (conceptStableId) => calculateVersionedMastery(await repository.listForConcept(ownerId, conceptStableId)))
-  );
+  const evidence = await repository.listForConcepts(ownerId, conceptStableIds);
+  const groups = new Map<string, typeof evidence>();
+  for (const item of evidence) { const rows = groups.get(item.conceptStableId) ?? []; rows.push(item); groups.set(item.conceptStableId, rows); }
+  const states = [...new Set(conceptStableIds)].map(id => calculateVersionedMastery(groups.get(id) ?? []));
   return summarizeConceptMastery(states);
 }
 

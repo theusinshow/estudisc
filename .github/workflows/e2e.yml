@@ -1,39 +1,34 @@
-name: E2E
-
+name: Estudisc Full E2E
 on:
   workflow_dispatch:
-  pull_request:
-    paths:
-      - "src/**"
-      - "tests/e2e/**"
-      - "playwright.config.ts"
-      - "package.json"
-      - "pnpm-lock.yaml"
-
+permissions:
+  contents: read
+concurrency:
+  group: estudisc-full-e2e-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   playwright:
-    name: Playwright smoke
+    name: full-e2e
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      DATABASE_URL: memory://local
     steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v5
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v5
         with:
           version: 11.9.0
-
-      - name: Setup Node
-        uses: actions/setup-node@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 24.14.0
           cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Install Playwright browsers
-        run: pnpm exec playwright install --with-deps chromium
-
-      - name: Run Playwright smoke tests
-        run: pnpm test:e2e -- --project=chromium
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: estudisc-full-e2e-report
+          path: |
+            playwright-report/
+            test-results/

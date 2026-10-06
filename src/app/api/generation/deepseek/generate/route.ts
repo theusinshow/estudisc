@@ -1,3 +1,4 @@
+import { logEvent } from "@/lib/logger";
 import { getOwnerId } from "@/features/auth/owner";
 import { z } from "zod";
 import { NextResponse } from "next/server";
@@ -21,6 +22,7 @@ const requestSchema = z.object({
 });
 
 export async function POST(request: Request) {
+  logEvent("info", "generation_requested", { operation: "generation" });
   const providerConfig = getDeepSeekProviderConfig();
 
   if (!providerConfig.apiKey) {

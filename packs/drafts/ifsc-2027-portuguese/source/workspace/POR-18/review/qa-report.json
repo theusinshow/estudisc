@@ -1,0 +1,14 @@
+{
+  "lessonId": "POR-18",
+  "status": "PASS",
+  "checks": {
+    "sourceRefsResolve": true,
+    "questionCount": 8,
+    "eachQuestionHasFiveOptions": true,
+    "originalCoreContent": true
+  },
+  "editorialCautions": [
+    "Final VECTA schema must be reconciled by integration Maestro.",
+    "Question distractors should receive final spot-check after import/render."
+  ]
+}

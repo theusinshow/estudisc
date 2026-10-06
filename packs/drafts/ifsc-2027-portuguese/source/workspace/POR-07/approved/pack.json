@@ -1,0 +1,510 @@
+{
+  "lesson": {
+    "id": "POR-07",
+    "subject": "POR",
+    "title": "Classes de palavras, flexões e função no texto",
+    "module": "Gramática em contexto",
+    "priority": "P1",
+    "status": "IMPORT_READY",
+    "estimatedMinutes": 22,
+    "masteryTarget": "Reconhecer classes e flexões pelo funcionamento no enunciado.",
+    "sourceRefs": [
+      "POR-SRC-001",
+      "POR-SRC-011",
+      "POR-SRC-012",
+      "POR-SRC-015"
+    ],
+    "conceptRefs": [
+      "POR-07-C01",
+      "POR-07-C02",
+      "POR-07-C03",
+      "POR-07-C04",
+      "POR-07-C05",
+      "POR-07-C06"
+    ],
+    "blocks": [
+      {
+        "type": "HOOK",
+        "title": "Leia como a prova lê",
+        "content": "Em “O jantar está pronto”, “jantar” funciona como substantivo. Em “Vamos jantar cedo”, funciona como verbo."
+      },
+      {
+        "type": "LEARNING_GOALS",
+        "items": [
+          "Reconhecer classes e flexões pelo funcionamento no enunciado.",
+          "Justificar respostas com evidência linguística ou textual.",
+          "Evitar regras absolutas quando o fenômeno depende do contexto."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 1",
+        "paragraphs": [
+          "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto.",
+          "Substantivos nomeiam entidades/conceitos/eventos; adjetivos atribuem características ou relações a substantivos.",
+          "Pronomes podem retomar, antecipar ou apontar referentes e são importantes para a coesão."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 2",
+        "paragraphs": [
+          "Verbos flexionam-se em pessoa, número, tempo e modo e organizam temporalidade/modalidade.",
+          "Advérbios e locuções adverbiais modificam sobretudo verbos, adjetivos, outros advérbios ou o enunciado.",
+          "Conjunções e outros conectores estabelecem relações entre termos, orações e partes do texto."
+        ]
+      },
+      {
+        "type": "KEY_TERMS",
+        "items": [
+          {
+            "term": "substantivo",
+            "conceptRef": "POR-07-C01"
+          },
+          {
+            "term": "adjetivo",
+            "conceptRef": "POR-07-C02"
+          },
+          {
+            "term": "pronome",
+            "conceptRef": "POR-07-C03"
+          },
+          {
+            "term": "verbo",
+            "conceptRef": "POR-07-C04"
+          },
+          {
+            "term": "advérbio",
+            "conceptRef": "POR-07-C05"
+          },
+          {
+            "term": "conjunção",
+            "conceptRef": "POR-07-C06"
+          }
+        ]
+      },
+      {
+        "type": "MISCONCEPTION_CHECK",
+        "items": [
+          {
+            "claim": "Uma palavra pertence à mesma classe em qualquer contexto.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Adjetivo é toda palavra depois de substantivo.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Pronomes só substituem nomes de pessoas.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Conjunções não interferem no sentido.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          }
+        ]
+      },
+      {
+        "type": "WORKED_EXAMPLE",
+        "stimulus": "Em “O jantar está pronto”, “jantar” funciona como substantivo. Em “Vamos jantar cedo”, funciona como verbo.",
+        "analysis": "A forma é a mesma, mas função e comportamento no enunciado revelam classes diferentes."
+      },
+      {
+        "type": "ACTIVE_LEARNING",
+        "title": "Atividade de aplicação",
+        "steps": [
+          "Classifique palavras destacadas em frases.",
+          "Mude o contexto para alterar a classe quando possível.",
+          "Observe como pronomes e conectores ajudam a coesão."
+        ],
+        "evidence": "Resposta curta ou classificação justificada."
+      },
+      {
+        "type": "IFSC_STRATEGY",
+        "content": "Analise a palavra dentro da frase: relação, flexão e função."
+      },
+      {
+        "type": "SUMMARY",
+        "items": [
+          "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto.",
+          "Substantivos nomeiam entidades/conceitos/eventos; adjetivos atribuem características ou relações a substantivos.",
+          "Pronomes podem retomar, antecipar ou apontar referentes e são importantes para a coesão.",
+          "Verbos flexionam-se em pessoa, número, tempo e modo e organizam temporalidade/modalidade.",
+          "Advérbios e locuções adverbiais modificam sobretudo verbos, adjetivos, outros advérbios ou o enunciado.",
+          "Conjunções e outros conectores estabelecem relações entre termos, orações e partes do texto."
+        ]
+      },
+      {
+        "type": "EXIT_TICKET",
+        "prompt": "Explique o princípio mais importante de Classes de palavras, flexões e função no texto e crie um exemplo próprio."
+      }
+    ],
+    "media": {
+      "deterministicAssetRefs": [],
+      "antigravityRefs": [],
+      "authenticMediaRefs": []
+    }
+  },
+  "questions": [
+    {
+      "id": "POR-07-Q01",
+      "lessonId": "POR-07",
+      "type": "MCQ",
+      "stem": "Qual afirmação descreve corretamente Classes de palavras, flexões e função no texto em uso real da língua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Adjetivo é toda palavra depois de substantivo."
+        },
+        {
+          "id": "B",
+          "text": "Pronomes só substituem nomes de pessoas."
+        },
+        {
+          "id": "C",
+          "text": "Conjunções não interferem no sentido."
+        },
+        {
+          "id": "D",
+          "text": "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto."
+        },
+        {
+          "id": "E",
+          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
+      "concepts": [
+        "POR-07-C01"
+      ],
+      "targetedError": "Uma palavra pertence à mesma classe em qualquer contexto.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-07-Q02",
+      "lessonId": "POR-07",
+      "type": "MCQ",
+      "stem": "Em uma questão contextualizada sobre Classes de palavras, flexões e função no texto, qual princípio deve orientar a análise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Substantivos nomeiam entidades/conceitos/eventos; adjetivos atribuem características ou relações a substantivos."
+        },
+        {
+          "id": "B",
+          "text": "Pronomes só substituem nomes de pessoas."
+        },
+        {
+          "id": "C",
+          "text": "Conjunções não interferem no sentido."
+        },
+        {
+          "id": "D",
+          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+        },
+        {
+          "id": "E",
+          "text": "Adjetivo é toda palavra depois de substantivo."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Substantivos nomeiam entidades/conceitos/eventos; adjetivos atribuem características ou relações a substantivos.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
+      "concepts": [
+        "POR-07-C02"
+      ],
+      "targetedError": "Adjetivo é toda palavra depois de substantivo.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-07-Q03",
+      "lessonId": "POR-07",
+      "type": "MCQ",
+      "stem": "Qual alternativa evita uma generalização inadequada sobre Classes de palavras, flexões e função no texto?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Conjunções não interferem no sentido."
+        },
+        {
+          "id": "B",
+          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+        },
+        {
+          "id": "C",
+          "text": "Pronomes podem retomar, antecipar ou apontar referentes e são importantes para a coesão."
+        },
+        {
+          "id": "D",
+          "text": "Adjetivo é toda palavra depois de substantivo."
+        },
+        {
+          "id": "E",
+          "text": "Pronomes só substituem nomes de pessoas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Pronomes podem retomar, antecipar ou apontar referentes e são importantes para a coesão.",
+      "difficulty": "applied",
+      "cognitiveOperation": "discriminate",
+      "concepts": [
+        "POR-07-C03"
+      ],
+      "targetedError": "Pronomes só substituem nomes de pessoas.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-07-Q04",
+      "lessonId": "POR-07",
+      "type": "MCQ",
+      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Classes de palavras, flexões e função no texto?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+        },
+        {
+          "id": "B",
+          "text": "Adjetivo é toda palavra depois de substantivo."
+        },
+        {
+          "id": "C",
+          "text": "Pronomes só substituem nomes de pessoas."
+        },
+        {
+          "id": "D",
+          "text": "Conjunções não interferem no sentido."
+        },
+        {
+          "id": "E",
+          "text": "Verbos flexionam-se em pessoa, número, tempo e modo e organizam temporalidade/modalidade."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Verbos flexionam-se em pessoa, número, tempo e modo e organizam temporalidade/modalidade.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-07-C04"
+      ],
+      "targetedError": "Conjunções não interferem no sentido.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-07-Q05",
+      "lessonId": "POR-07",
+      "type": "MCQ",
+      "stem": "Qual critério é seguro para resolver uma questão sobre Classes de palavras, flexões e função no texto?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Adjetivo é toda palavra depois de substantivo."
+        },
+        {
+          "id": "B",
+          "text": "Advérbios e locuções adverbiais modificam sobretudo verbos, adjetivos, outros advérbios ou o enunciado."
+        },
+        {
+          "id": "C",
+          "text": "Pronomes só substituem nomes de pessoas."
+        },
+        {
+          "id": "D",
+          "text": "Conjunções não interferem no sentido."
+        },
+        {
+          "id": "E",
+          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Advérbios e locuções adverbiais modificam sobretudo verbos, adjetivos, outros advérbios ou o enunciado.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
+      "concepts": [
+        "POR-07-C05"
+      ],
+      "targetedError": "Uma palavra pertence à mesma classe em qualquer contexto.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-07-Q06",
+      "lessonId": "POR-07",
+      "type": "MCQ",
+      "stem": "Ao comparar alternativas sobre Classes de palavras, flexões e função no texto, qual análise está correta?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pronomes só substituem nomes de pessoas."
+        },
+        {
+          "id": "B",
+          "text": "Conjunções não interferem no sentido."
+        },
+        {
+          "id": "C",
+          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+        },
+        {
+          "id": "D",
+          "text": "Conjunções e outros conectores estabelecem relações entre termos, orações e partes do texto."
+        },
+        {
+          "id": "E",
+          "text": "Adjetivo é toda palavra depois de substantivo."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Conjunções e outros conectores estabelecem relações entre termos, orações e partes do texto.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-07-C06"
+      ],
+      "targetedError": "Adjetivo é toda palavra depois de substantivo.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-07-Q07",
+      "lessonId": "POR-07",
+      "type": "MCQ",
+      "stem": "Um estudante afirma: “Uma palavra pertence à mesma classe em qualquer contexto.”. Qual é a melhor correção?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+        },
+        {
+          "id": "B",
+          "text": "A generalização deve ser aceita sem verificar contexto."
+        },
+        {
+          "id": "C",
+          "text": "A melhor estratégia é decorar a frase."
+        },
+        {
+          "id": "D",
+          "text": "Não há critério linguístico para avaliar a afirmação."
+        },
+        {
+          "id": "E",
+          "text": "Basta escolher a alternativa mais longa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto.",
+      "difficulty": "applied",
+      "cognitiveOperation": "diagnose_error",
+      "concepts": [
+        "POR-07-C01"
+      ],
+      "targetedError": "Uma palavra pertence à mesma classe em qualquer contexto.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-07-Q08",
+      "lessonId": "POR-07",
+      "type": "MCQ",
+      "stimulus": "Em “O jantar está pronto”, “jantar” funciona como substantivo. Em “Vamos jantar cedo”, funciona como verbo.",
+      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O trecho não permite nenhuma análise."
+        },
+        {
+          "id": "B",
+          "text": "A única tarefa é classificar todas as palavras."
+        },
+        {
+          "id": "C",
+          "text": "A forma é a mesma, mas função e comportamento no enunciado revelam classes diferentes."
+        },
+        {
+          "id": "D",
+          "text": "A análise depende apenas do tamanho do trecho."
+        },
+        {
+          "id": "E",
+          "text": "Qualquer interpretação é igualmente válida."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A forma é a mesma, mas função e comportamento no enunciado revelam classes diferentes.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-07-C01",
+        "POR-07-C02"
+      ],
+      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
+      "provenance": "VECTA_ORIGINAL"
+    }
+  ],
+  "concepts": [
+    {
+      "editorialConceptId": "POR-07-C01",
+      "lessonId": "POR-07",
+      "name": "substantivo",
+      "masteryTarget": "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-07-C02",
+      "lessonId": "POR-07",
+      "name": "adjetivo",
+      "masteryTarget": "Substantivos nomeiam entidades/conceitos/eventos; adjetivos atribuem características ou relações a substantivos.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-07-C03",
+      "lessonId": "POR-07",
+      "name": "pronome",
+      "masteryTarget": "Pronomes podem retomar, antecipar ou apontar referentes e são importantes para a coesão.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-07-C04",
+      "lessonId": "POR-07",
+      "name": "verbo",
+      "masteryTarget": "Verbos flexionam-se em pessoa, número, tempo e modo e organizam temporalidade/modalidade.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-07-C05",
+      "lessonId": "POR-07",
+      "name": "advérbio",
+      "masteryTarget": "Advérbios e locuções adverbiais modificam sobretudo verbos, adjetivos, outros advérbios ou o enunciado.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-07-C06",
+      "lessonId": "POR-07",
+      "name": "conjunção",
+      "masteryTarget": "Conjunções e outros conectores estabelecem relações entre termos, orações e partes do texto.",
+      "status": "EDITORIAL"
+    }
+  ],
+  "qa": {
+    "lessonId": "POR-07",
+    "status": "PASS",
+    "checks": {
+      "sourceRefsResolve": true,
+      "questionCount": 8,
+      "eachQuestionHasFiveOptions": true,
+      "originalCoreContent": true
+    },
+    "editorialCautions": [
+      "Final VECTA schema must be reconciled by integration Maestro.",
+      "Question distractors should receive final spot-check after import/render."
+    ]
+  }
+}

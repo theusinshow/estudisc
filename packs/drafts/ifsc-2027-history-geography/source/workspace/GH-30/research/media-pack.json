@@ -1,0 +1,81 @@
+{
+  "lessonId": "GH-30",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-001",
+      "title": "Atlas Geográfico Escolar — Ensino Fundamental 6º ao 9º ano",
+      "org": "IBGE",
+      "type": "ATLAS",
+      "url": "https://www.ibge.gov.br/geociencias/atlas/nacional/24678-atlas-geografico-escolar-ensino-fundamental.html",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-002",
+      "title": "Atlas Geográfico Escolar",
+      "org": "IBGE",
+      "type": "ATLAS",
+      "url": "https://www.ibge.gov.br/geociencias/atlas/nacional/16633-atlas-geografico-escolar.html",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-034",
+      "title": "Globalização",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-globalization/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-064",
+      "title": "Globalização e desigualdade",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-a-globalizacao-e-a-desigualdade/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-074",
+      "title": "Grandes deslocamentos populacionais",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/geografia-grandes-deslocamentos-populacionais/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [
+    {
+      "id": "IMG-GH-30-001",
+      "lessonId": "GH-30",
+      "blockId": "GH-30-B12",
+      "generator": "ANTIGRAVITY_NANO_BANANA_2",
+      "type": "EDUCATIONAL_ILLUSTRATION",
+      "purpose": "Apoiar compreensão visual sem simular documento histórico.",
+      "prompt": "Ilustração conceitual de redes globais conectando portos, cabos, aviões, contêineres e dados; sem fronteiras políticas precisas e sem texto. Estilo VECTA: clean editorial educational illustration, mobile-readable, no text embedded.",
+      "factualConstraints": [
+        "A imagem deve ser claramente ilustrativa e não documental",
+        "Não inventar mapas, bandeiras, datas, documentos ou pessoas históricas específicas",
+        "Sem texto embutido"
+      ],
+      "forbiddenElements": [
+        "falsa fotografia histórica",
+        "documento histórico inventado",
+        "mapa político impreciso",
+        "texto ilegível",
+        "marcas d'água"
+      ],
+      "aspectRatio": "16:9",
+      "textInImage": false,
+      "altTextDraft": "Ilustração educacional de apoio para Mundialização, globalização e geopolítica contemporânea.",
+      "factualReviewStatus": "PENDING",
+      "visualReviewStatus": "PENDING",
+      "outputFilename": "IMG-GH-30-001-v1.png"
+    }
+  ],
+  "deterministicComponentRequest": null,
+  "coreLessonDependsOnExternalMedia": false
+}

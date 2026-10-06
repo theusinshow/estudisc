@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-11-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Diversidade ambiental e transformação das paisagens catarinenses, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Enchentes e deslizamentos são sempre fenômenos exclusivamente naturais."
+      },
+      {
+        "key": "B",
+        "text": "Santa Catarina reúne litoral, planaltos, serras, vales, bacias hidrográficas e diferentes formações da Mata Atlântica."
+      },
+      {
+        "key": "C",
+        "text": "Mata Atlântica existe apenas no litoral catarinense."
+      },
+      {
+        "key": "D",
+        "text": "Paisagem permanece estável quando há urbanização."
+      },
+      {
+        "key": "E",
+        "text": "Risco ambiental depende apenas da intensidade de um evento natural."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "Santa Catarina reúne litoral, planaltos, serras, vales, bacias hidrográficas e diferentes formações da Mata Atlântica.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-11-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-11-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “Enchentes e deslizamentos são sempre fenômenos exclusivamente naturais.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Enchentes e deslizamentos são sempre fenômenos exclusivamente naturais."
+      },
+      {
+        "key": "B",
+        "text": "Mata Atlântica existe apenas no litoral catarinense."
+      },
+      {
+        "key": "C",
+        "text": "Paisagem permanece estável quando há urbanização."
+      },
+      {
+        "key": "D",
+        "text": "Urbanização, agricultura, indústria, mineração, infraestrutura e turismo transformam paisagens e podem gerar impactos socioambientais."
+      },
+      {
+        "key": "E",
+        "text": "Risco ambiental depende apenas da intensidade de um evento natural."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Urbanização, agricultura, indústria, mineração, infraestrutura e turismo transformam paisagens e podem gerar impactos socioambientais.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-11-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-11-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: Paisagens catarinenses resultam tanto de processos naturais quanto das formas de uso do território. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Enchentes e deslizamentos são sempre fenômenos exclusivamente naturais."
+      },
+      {
+        "key": "B",
+        "text": "Mata Atlântica existe apenas no litoral catarinense."
+      },
+      {
+        "key": "C",
+        "text": "Desmatamento e ocupação de áreas frágeis podem ampliar erosão, enchentes, deslizamentos e perda de biodiversidade."
+      },
+      {
+        "key": "D",
+        "text": "Paisagem permanece estável quando há urbanização."
+      },
+      {
+        "key": "E",
+        "text": "Risco ambiental depende apenas da intensidade de um evento natural."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Desmatamento e ocupação de áreas frágeis podem ampliar erosão, enchentes, deslizamentos e perda de biodiversidade.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-11-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-11-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Diversidade ambiental e transformação das paisagens catarinenses por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Riscos ambientais dependem da combinação entre processos naturais, exposição da população e vulnerabilidade social."
+      },
+      {
+        "key": "B",
+        "text": "Enchentes e deslizamentos são sempre fenômenos exclusivamente naturais."
+      },
+      {
+        "key": "C",
+        "text": "Mata Atlântica existe apenas no litoral catarinense."
+      },
+      {
+        "key": "D",
+        "text": "Paisagem permanece estável quando há urbanização."
+      },
+      {
+        "key": "E",
+        "text": "Risco ambiental depende apenas da intensidade de um evento natural."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "Riscos ambientais dependem da combinação entre processos naturais, exposição da população e vulnerabilidade social.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-11-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-11-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Santa Catarina reúne litoral, planaltos, serras, vales, bacias hidrográficas e diferentes formações da Mata Atlântica.\nII. Enchentes e deslizamentos são sempre fenômenos exclusivamente naturais.\nIII. Desmatamento e ocupação de áreas frágeis podem ampliar erosão, enchentes, deslizamentos e perda de biodiversidade.\nIV. Mata Atlântica existe apenas no litoral catarinense.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-11-CON-01",
+      "GH-11-CON-02",
+      "GH-11-CON-03",
+      "GH-11-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-11-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Diversidade ambiental e transformação das paisagens catarinenses. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Enchentes e deslizamentos são sempre fenômenos exclusivamente naturais."
+      },
+      {
+        "key": "B",
+        "text": "Mata Atlântica existe apenas no litoral catarinense."
+      },
+      {
+        "key": "C",
+        "text": "Paisagem permanece estável quando há urbanização."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Comparar mapas, fotografias e dados para relacionar transformação territorial e risco socioambiental."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Comparar mapas, fotografias e dados para relacionar transformação territorial e risco socioambiental.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-11-CON-01",
+      "GH-11-CON-02",
+      "GH-11-CON-03",
+      "GH-11-CON-04",
+      "GH-11-CON-05",
+      "GH-11-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-11-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Diversidade ambiental e transformação das paisagens catarinenses?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Santa Catarina reúne litoral, planaltos, serras, vales, bacias hidrográficas e diferentes formações da Mata Atlântica."
+      },
+      {
+        "key": "B",
+        "text": "Urbanização, agricultura, indústria, mineração, infraestrutura e turismo transformam paisagens e podem gerar impactos socioambientais."
+      },
+      {
+        "key": "C",
+        "text": "Analisar paisagem exige observar mudanças ao longo do tempo, e não tratar o ambiente como cenário fixo."
+      },
+      {
+        "key": "D",
+        "text": "Paisagem permanece estável quando há urbanização."
+      },
+      {
+        "key": "E",
+        "text": "Riscos ambientais dependem da combinação entre processos naturais, exposição da população e vulnerabilidade social."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-11-CON-01",
+      "GH-11-CON-02",
+      "GH-11-CON-03",
+      "GH-11-CON-04",
+      "GH-11-CON-05",
+      "GH-11-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-11-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Diversidade ambiental e transformação das paisagens catarinenses, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Enchentes e deslizamentos são sempre fenômenos exclusivamente naturais."
+      },
+      {
+        "key": "B",
+        "text": "Mata Atlântica existe apenas no litoral catarinense."
+      },
+      {
+        "key": "C",
+        "text": "Analisar paisagem exige observar mudanças ao longo do tempo, e não tratar o ambiente como cenário fixo."
+      },
+      {
+        "key": "D",
+        "text": "Paisagem permanece estável quando há urbanização."
+      },
+      {
+        "key": "E",
+        "text": "Risco ambiental depende apenas da intensidade de um evento natural."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Analisar paisagem exige observar mudanças ao longo do tempo, e não tratar o ambiente como cenário fixo.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-11-CON-01",
+      "GH-11-CON-02",
+      "GH-11-CON-03",
+      "GH-11-CON-04",
+      "GH-11-CON-05",
+      "GH-11-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

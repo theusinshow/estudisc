@@ -34,7 +34,7 @@ vi.mock("@/features/generation/server-repositories", () => ({
 }));
 
 vi.mock("@/lib/env", () => ({
-  getServerEnv: () => ({ KNOW_OS_OWNER_ID: "local-owner" })
+  getServerEnv: () => ({ ESTUDISC_OWNER_ID: "local-owner" })
 }));
 
 const spec: GenerationSpec = {

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "vecta-lesson-content-1",
+  "lessonId": "GH-04",
+  "subject": "GH",
+  "title": "História, historiografia, tempo, memória e fontes",
+  "unit": "Fundamentos",
+  "version": 2,
+  "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+  "concepts": [
+    {
+      "id": "GH-04-CON-01",
+      "name": "Fontes históricas",
+      "masteryTarget": "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado."
+    },
+    {
+      "id": "GH-04-CON-02",
+      "name": "Tempo histórico e cronologia",
+      "masteryTarget": "Fonte histórica é todo vestígio que pode ser analisado para responder perguntas sobre sociedades no tempo."
+    },
+    {
+      "id": "GH-04-CON-03",
+      "name": "Memória individual e coletiva",
+      "masteryTarget": "Memória é seletiva e está ligada a experiências e identidades; não é idêntica à historiografia."
+    },
+    {
+      "id": "GH-04-CON-04",
+      "name": "Historiografia",
+      "masteryTarget": "Tempo histórico envolve cronologia, duração, mudanças, permanências e simultaneidades."
+    },
+    {
+      "id": "GH-04-CON-05",
+      "name": "Sujeitos históricos",
+      "masteryTarget": "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates."
+    },
+    {
+      "id": "GH-04-CON-06",
+      "name": "Mudança e permanência",
+      "masteryTarget": "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "GH-04-B01",
+      "type": "HOOK",
+      "title": "Problema de partida",
+      "content": "Uma carta, um objeto, uma fotografia, um depoimento e um mapa podem ser fontes históricas, mas precisam ser interrogados."
+    },
+    {
+      "id": "GH-04-B02",
+      "type": "LEARNING_GOALS",
+      "title": "Ao final desta aula",
+      "items": [
+        "Explicar os conceitos centrais de História, historiografia, tempo, memória e fontes em linguagem própria.",
+        "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+        "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+      ]
+    },
+    {
+      "id": "GH-04-B03",
+      "type": "EXPLANATION",
+      "title": "Ideia central",
+      "content": "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado. Fonte histórica é todo vestígio que pode ser analisado para responder perguntas sobre sociedades no tempo.",
+      "items": [
+        "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado.",
+        "Fonte histórica é todo vestígio que pode ser analisado para responder perguntas sobre sociedades no tempo."
+      ]
+    },
+    {
+      "id": "GH-04-B04",
+      "type": "EXPLANATION",
+      "title": "Como as relações se organizam",
+      "content": "Memória é seletiva e está ligada a experiências e identidades; não é idêntica à historiografia. Tempo histórico envolve cronologia, duração, mudanças, permanências e simultaneidades.",
+      "items": [
+        "Memória é seletiva e está ligada a experiências e identidades; não é idêntica à historiografia.",
+        "Tempo histórico envolve cronologia, duração, mudanças, permanências e simultaneidades."
+      ]
+    },
+    {
+      "id": "GH-04-B05",
+      "type": "EXPLANATION",
+      "title": "O que conecta o tema à prova",
+      "content": "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates.",
+      "items": [
+        "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates.",
+        "Perguntar quem produziu a fonte, quando, para quem, com qual finalidade e quais limites ela possui."
+      ]
+    },
+    {
+      "id": "GH-04-B06",
+      "type": "CALLOUT",
+      "variant": "SOURCE_LITERACY",
+      "title": "Leia a fonte, não apenas o tema",
+      "items": [
+        "Perguntar quem produziu a fonte, quando, para quem, com qual finalidade e quais limites ela possui.",
+        "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+      ]
+    },
+    {
+      "id": "GH-04-B07",
+      "type": "CALLOUT",
+      "variant": "MISCONCEPTION",
+      "title": "Erros que custam ponto",
+      "items": [
+        "Historiadores trabalham somente com documentos escritos oficiais.",
+        "Memória e História são exatamente a mesma coisa.",
+        "Uma fonte fala por si e dispensa contexto.",
+        "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+      ]
+    },
+    {
+      "id": "GH-04-B08",
+      "type": "CALLOUT",
+      "variant": "KEY_TERMS",
+      "title": "Vocabulário essencial",
+      "items": [
+        "Fontes históricas",
+        "Tempo histórico e cronologia",
+        "Memória individual e coletiva",
+        "Historiografia",
+        "Sujeitos históricos",
+        "Mudança e permanência"
+      ]
+    },
+    {
+      "id": "GH-04-B09",
+      "type": "WORKED_EXAMPLE",
+      "title": "Como resolver uma questão",
+      "prompt": "Uma questão apresenta uma fonte relacionada a História, historiografia, tempo, memória e fontes. Como decidir entre alternativas plausíveis?",
+      "answer": "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates.",
+      "reasoning": [
+        "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+        "Extraia da fonte apenas as evidências explícitas.",
+        "Ative o conceito da aula que explica a evidência.",
+        "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+        "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+      ]
+    },
+    {
+      "id": "GH-04-B10",
+      "type": "CALLOUT",
+      "variant": "IFSC_STRATEGY",
+      "title": "Estratégia IFSC",
+      "items": [
+        "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+        "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+        "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+      ]
+    },
+    {
+      "id": "GH-04-B11",
+      "type": "MEDIA_RECOMMENDATION",
+      "title": "Material complementar",
+      "mediaRefs": [
+        "SRC-GH-009"
+      ],
+      "optional": true
+    },
+    {
+      "id": "GH-04-B13",
+      "type": "SUMMARY",
+      "title": "Resumo para recuperar sem olhar",
+      "items": [
+        "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado.",
+        "Fonte histórica é todo vestígio que pode ser analisado para responder perguntas sobre sociedades no tempo.",
+        "Memória é seletiva e está ligada a experiências e identidades; não é idêntica à historiografia.",
+        "Tempo histórico envolve cronologia, duração, mudanças, permanências e simultaneidades.",
+        "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates."
+      ]
+    },
+    {
+      "id": "GH-04-B14",
+      "type": "EXIT_TICKET",
+      "title": "Saída rápida",
+      "prompt": "Em duas ou três frases, explique a ideia mais importante de História, historiografia, tempo, memória e fontes e cite um erro de interpretação que você evitaria numa questão.",
+      "answerGuide": "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado. Evite, por exemplo: Historiadores trabalham somente com documentos escritos oficiais."
+    }
+  ],
+  "sourceRefs": [
+    "SRC-IFSC-GH-001",
+    "SRC-GH-009",
+    "SRC-GH-010",
+    "SRC-IFSC-GH-2026-1",
+    "SRC-IFSC-GH-2026-2"
+  ],
+  "mediaRefs": [
+    "SRC-GH-009"
+  ],
+  "imageRequestRefs": [],
+  "editorialNotes": [
+    "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+    "Não publicar mídia externa sem revisão de licença e proveniência.",
+    "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+    "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+  ]
+}

@@ -1,0 +1,13 @@
+# IFSC 2027 History/Geography draft collection
+
+One compatible caderno.track.v2 pack:49draftlessons,392sharedQuestions,293source-definedatomicConcepts,670blocks. GH-06has5Concepts;other48have6. This is the source count,not a fabricated294thtarget. Runtime/editorial lesson andQuestion versions2;finaltracksnapshot7. All753ZIPfiles are byte-identical under source/,complete originals/library/map are retained in editorial-sidecar.json and source-pins.json.
+
+File1192969diskbytes,fileSHA2568867dae0f40a5a88aabc690b4ced0c4ebbd1312f9ef33a33fed404b705d41771,canonicalhash9443099ce452556ee2053ce479bbf12faf266b46336eab3cbc298a3aa20604a7. ZIPsha229d63e537a83d5305d8c0954ef3f93f9199d328211aad9507e5572084b086bf.
+
+SharedScienceadapter/CLI/coreimporter/Questions/renderer are reused. External strict GHschema accepts original reasoning arrays,answerGuide strings,editorialNotes arrays andCOMPONENT_REQUEST. Projection joins exact reasoning text,retains exact answer-guide wording and maps component requests to existing pending notes;original block type/hash stay exact. RECALL→recall,SOURCE_ANALYSIS→analyze;original provenanceORIGINAL_VECTA_GROUNDED_GH_V2 remains source/sidecar and maps conservatively to generated runtime provenance. No answer/content rewriting/research. Atomic target equivalence is not established by title-only matches;all293explicitnewsource targets preserve existingGHdefinitions/mastery.
+
+Human reviewed/import-publication authorization is recorded from the actual conversation;no new independent QA approval is claimed. Source rights,official curriculum crosswalk,prerequisites/pacing remain disclosed rather than certified. Runtime pacing30minutes is the existing integration default.29deterministic/6optionalimage requests and42authenticmediareviewitems remain pending;no source/asset was fetched/generated. Core original text remains available.
+
+User explicitly chose raising the import limit to2MiB instead of splitting the collection. The runtime patch is limited to Track Pack preview/apply;generic JSON defaults and restore bounds remain1MiB. No Pack schema change. Early unapplied split candidates remain only under .local/,not published or imported. Current live preview returns413with1MiB;deployment+0018auditmigration remain separately pending explicit production permission. Portuguese is already live as24draftlessons/192Questions;GH is not yet imported in the live site.
+
+Local owned DB:.local/history-geography-integration/db. Pilot8and6cumulativebatches imported/idempotent;finalread-onlyaudit preserves892baselineQuestions and user-state,1284totalQuestions,0orphanjoins/duplicateversions. Receipts under qa/. See tools/science-import/qa/HISTORY-GEOGRAPHY-FINAL-QA.md for exact commands/results and current production blockers.

@@ -1,6 +1,6 @@
 "use client";
 
-// Vendored from Matos UI (https://matos-ui.com/r/activity-heatmap-chart.json); KNOW/OS edits are marked inline.
+// Vendored from Matos UI (https://matos-ui.com/r/activity-heatmap-chart.json); Estudisc edits are marked inline.
 
 import {
   type FocusEvent,
@@ -49,7 +49,7 @@ export function useChartInView(viewportId: string): boolean {
     );
 
     if (!root || typeof IntersectionObserver === "undefined") {
-      // KNOW/OS: deferred one frame so the effect never sets state synchronously.
+      // Estudisc: deferred one frame so the effect never sets state synchronously.
       const frame = requestAnimationFrame(() => setHasEnteredView(true));
       return () => cancelAnimationFrame(frame);
     }
@@ -81,7 +81,7 @@ export function useChartInteraction(
   const [rawHoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [rawSelectedIndex, setSelectedIndex] = useState<number | null>(null);
   const hasEnteredView = useChartInView(interactionId);
-  // KNOW/OS: indices past a shrunken series are derived away instead of reset in an effect.
+  // Estudisc: indices past a shrunken series are derived away instead of reset in an effect.
   const hoveredIndex = rawHoveredIndex !== null && rawHoveredIndex < itemCount ? rawHoveredIndex : null;
   const selectedIndex = rawSelectedIndex !== null && rawSelectedIndex < itemCount ? rawSelectedIndex : null;
 

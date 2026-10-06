@@ -12,9 +12,9 @@ import { ProjectRepository } from "@/db/repositories/project-repository";
 import { ReviewRepository } from "@/db/repositories/review-repository";
 import { buildRecommendations } from "@/features/recommendations/recommendation-rules";
 
-export async function getRecommendations() {
-  const {ownerId,role} = await getOwnerProfile();
-  if(!getDatabaseUrl())return [];
+export async function getRecommendationInputs(profile = undefined as Awaited<ReturnType<typeof getOwnerProfile>> | undefined) {
+  const {ownerId,role} = profile ?? await getOwnerProfile();
+  if(!getDatabaseUrl())return {dueReviews:[],mistakes:[],tracks:[],projects:[]};
 
   if (getDatabaseUrl() === "memory://local") {
     const [dueReviews, mistakes, tracks, projects] = await Promise.all([
@@ -24,7 +24,7 @@ export async function getRecommendations() {
       new MemoryProjectRepository().listProjects(ownerId)
     ]);
 
-    return buildRecommendations({ dueReviews, mistakes, tracks:tracks.filter(track=>track.lessonCount>0), projects });
+    return { dueReviews, mistakes, tracks:tracks.filter(track=>track.lessonCount>0), projects };
   }
 
   return withCatalogRepository(async (catalogRepository: CatalogRepository) => {
@@ -35,7 +35,9 @@ export async function getRecommendations() {
       new ProjectRepository().listProjects(ownerId)
     ]);
 
-    return buildRecommendations({ dueReviews, mistakes, tracks:tracks.filter(track=>track.lessonCount>0), projects });
+    return { dueReviews, mistakes, tracks:tracks.filter(track=>track.lessonCount>0), projects };
   });
 }
 
+
+export async function getRecommendations() { return buildRecommendations(await getRecommendationInputs()); }

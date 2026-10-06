@@ -1,3 +1,4 @@
+import {readApplicationCss} from "./application-css";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { renderToStaticMarkup } from "react-dom/server";
 import { LessonBlockRenderer } from "../../../src/features/lessons/blocks";
@@ -8,9 +9,9 @@ import { jsonFile } from "./adapted-pack-audit";
 import { SCIENCE_DRAFT_PACK } from "../paths";
 
 const pack = trackPackV2Schema.parse(jsonFile(process.env.EDITORIAL_QA_PACK ?? process.env.SCIENCE_QA_PACK ?? SCIENCE_DRAFT_PACK));
-const pilot = new Set(process.env.EDITORIAL_QA_PILOTS?.split(",") ?? ["CIE-04", "CIE-10", "CIE-18", "CIE-22", "CIE-30", "CIE-33", "CIE-38", "CIE-40"]);
+const pilot = new Set((process.env.EDITORIAL_QA_PILOTS ?? process.env.EDITORIAL_QA_PILOT)?.split(",") ?? ["CIE-04", "CIE-10", "CIE-18", "CIE-22", "CIE-30", "CIE-33", "CIE-38", "CIE-40"]);
 const output = process.env.EDITORIAL_QA_OUTPUT ?? ".local/science-integration/qa-mobile";
-const css = readFileSync("src/styles/generated/design-tokens.css", "utf8") + readFileSync("src/app/globals.css", "utf8").replace(/^@import[^;]+;\s*/gm, "");
+const css = readFileSync("src/styles/generated/design-tokens.css", "utf8") + readApplicationCss();
 mkdirSync(output, { recursive: true });
 for (const lesson of pack.track.modules.flatMap(module => module.lessons).filter(lesson => pilot.has(lesson.id))) {
   const questions = pack.questions.filter(question => lesson.activities.some(activity => activity.questionId === question.id));

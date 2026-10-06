@@ -1,10 +1,12 @@
 {
-  "name": "know-os",
+  "name": "estudisc",
   "version": "0.1.0",
   "private": true,
-  "description": "KNOW/OS — Personal Learning Operating System",
+  "description": "Estudisc — Evidence-based learning and IFSC preparation",
   "packageManager": "pnpm@11.9.0",
   "scripts": {
+    "estudisc-content": "tsx tools/estudisc-content-studio/cli.ts",
+    "vecta-content": "tsx tools/vecta-content-studio/cli.ts",
     "dev": "next dev",
     "packs:verify": "node scripts/verify-pack-catalog.mjs",
     "generate:tokens": "node scripts/generate-design-tokens.mjs",
@@ -13,11 +15,15 @@
     "test": "vitest run",
     "test:postgres": "node scripts/run-real-postgres-test.mjs",
     "test:watch": "vitest",
-    "test:e2e": "playwright test",
+    "test:e2e": "node scripts/run-e2e.mjs",
     "build": "pnpm generate:tokens && next build",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "security:audit": "pnpm audit --prod --audit-level moderate"
+    "security:audit": "pnpm audit --prod --audit-level moderate",
+    "test:unit": "vitest run --config vitest.unit.config.ts",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "test:content-qa": "vitest run --config vitest.content-qa.config.ts",
+    "test:e2e:critical": "node scripts/run-e2e.mjs tests/e2e/vertical-slice.spec.ts tests/e2e/import-ui.spec.ts tests/e2e/percentage-study.spec.ts tests/e2e/auth.spec.ts"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
@@ -47,8 +53,8 @@
     "eslint-config-next": "16.3.6",
     "jsdom": "30.0.1",
     "tailwindcss": "4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "6.0.3",
-    "vitest": "4.1.10",
-    "tsx": "^4.23.15"
+    "vitest": "4.1.10"
   }
 }

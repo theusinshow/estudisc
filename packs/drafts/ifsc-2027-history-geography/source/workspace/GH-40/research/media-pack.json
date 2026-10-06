@@ -1,0 +1,39 @@
+{
+  "lessonId": "GH-40",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-078",
+      "title": "Independências nas Américas",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-independencias-nas-americas/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte adicional para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-079",
+      "title": "Revolução Haitiana e independência",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "VIDEO_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-os-processos-de-independencia-nas-americas-a-revolucao-haitiana/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte adicional para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-40-001",
+    "lessonId": "GH-40",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa/linha do tempo das independências americanas.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

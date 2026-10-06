@@ -8,8 +8,10 @@ ADRs document durable decisions with meaningful alternatives and consequences.
 
 [ADR 0036](0036-direct-admin-publication.md) permits explicit audited ADMIN publication by code without editorial reviews, while preserving the existing reviewed workflow.
 
+[ADR 0034](0034-file-based-content-studio.md) defines the local file-based Content Studio, runtime contract reuse and the separate human export/publication gates.
+
 Status values: Proposed, Accepted, Superseded, Rejected.
 
 Create a new ADR when changing architecture, trust boundaries, persistence, Pack compatibility, runtime isolation, authentication or a major cross-feature contract. Do not rewrite accepted history; supersede it with a new ADR.
 
-[ADR 0038](0038-track-pack-request-limit.md) raises only Track Pack preview/apply limits to2MiB.
+[ADR 0037](0037-track-pack-request-limit.md) raises only Track Pack preview/apply body limits to2MiB while preserving other JSON limits and Pack compatibility.

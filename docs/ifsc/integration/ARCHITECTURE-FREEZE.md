@@ -1,10 +1,10 @@
-# KNOW/OS IFSC — Architecture Freeze v1
+# Estudisc IFSC — Architecture Freeze v1
 
 Status: **Frozen for implementation**
 
 The following decisions are no longer discovery questions for the initial IFSC implementation:
 
-- IFSC extends the existing KNOW/OS core.
+- IFSC extends the existing Estudisc core.
 - Modular monolith remains.
 - PostgreSQL + Drizzle remains.
 - Versioned Packs remain.

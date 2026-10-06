@@ -1,7 +1,5 @@
-# Official Branding Assets
+# Estudisc branding
 
-These files are copied from the approved Design System v2.2 for direct application use. The normative usage rules remain in `design-system/BRAND_ASSETS.md`.
+Canonical mark: estudisc-mark.svg. The live Estudisc wordmark uses Archivo. The existing geometry remains provisional; no new identity was invented. Canonical icon names start with estudisc-.
 
-Do not edit these copies independently. Update the Design System source first, then synchronize and verify hashes.
-
-The app brand is Vecta (`vecta-mark.svg`, `vecta-mark-mono.svg`), documented in section 0 of `design-system/BRAND_ASSETS.md`. The `know-os-*` files are retained as history and are no longer referenced by the app.
+Old know-os and vecta asset filenames remain deprecated URL aliases for cached clients. New application code uses Estudisc assets.

@@ -35,6 +35,7 @@ XPTransaction, Level, Rank, BadgeDefinition, BadgeAward and MissionProgress.
 - Content versions are imported through Pack boundaries.
 - User state references stable content IDs and survives content updates.
 - Attempts are created, never rewritten.
+- Lesson counters use the latest content version selected by the catalog and count only its activities and the current owner's attempts. Attempts on older versions remain preserved as history.
 - Study events are append-only records of meaningful actions.
 - ConceptProgress is a projection derived from evidence and scheduling state, not an arbitrary manual score.
 - XP transactions are append-only and independently auditable.

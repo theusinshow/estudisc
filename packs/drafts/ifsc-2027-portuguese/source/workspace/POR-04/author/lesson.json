@@ -1,0 +1,154 @@
+{
+  "id": "POR-04",
+  "subject": "POR",
+  "title": "Textos verbais, não verbais e multissemióticos",
+  "module": "Leitura e gêneros",
+  "priority": "P0",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Integrar palavras, imagens, diagramação e símbolos para interpretar charges, cartuns, tirinhas, infográficos e campanhas.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-005",
+    "POR-SRC-009",
+    "POR-SRC-038"
+  ],
+  "conceptRefs": [
+    "POR-04-C01",
+    "POR-04-C02",
+    "POR-04-C03",
+    "POR-04-C04",
+    "POR-04-C05",
+    "POR-04-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Um cartaz mostra uma torneira aberta sobre um reservatório quase vazio. Ao lado, a frase “Só um minutinho a mais”. A palavra “minutinho” aparece enorme."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Integrar palavras, imagens, diagramação e símbolos para interpretar charges, cartuns, tirinhas, infográficos e campanhas.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Textos multissemióticos constroem sentido pela combinação de palavras, imagens, cores, disposição gráfica e símbolos.",
+        "A imagem pode complementar, contradizer, ironizar ou restringir o sentido do texto verbal.",
+        "Charge costuma dialogar com acontecimento/contexto reconhecível; cartum pode explorar situação mais universal."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Tirinha organiza sequência de quadros e frequentemente depende de progressão e quebra de expectativa.",
+        "Infográficos combinam dados e recursos visuais; a leitura exige relacionar títulos, legendas, escalas, ícones e números.",
+        "Humor e crítica podem surgir do contraste entre o que é dito e o que é mostrado."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "multissemiose",
+          "conceptRef": "POR-04-C01"
+        },
+        {
+          "term": "linguagem verbal",
+          "conceptRef": "POR-04-C02"
+        },
+        {
+          "term": "linguagem não verbal",
+          "conceptRef": "POR-04-C03"
+        },
+        {
+          "term": "charge",
+          "conceptRef": "POR-04-C04"
+        },
+        {
+          "term": "cartum",
+          "conceptRef": "POR-04-C05"
+        },
+        {
+          "term": "infográfico",
+          "conceptRef": "POR-04-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Em charge basta ler a legenda.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Imagem em texto jornalístico nunca influencia a interpretação.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Charge e cartum são sempre idênticos.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Cor e disposição gráfica não constroem sentido.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Um cartaz mostra uma torneira aberta sobre um reservatório quase vazio. Ao lado, a frase “Só um minutinho a mais”. A palavra “minutinho” aparece enorme.",
+      "analysis": "O tamanho da palavra e o contraste com o reservatório reforçam a crítica: algo apresentado como pequeno pode ter efeito acumulado relevante."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Observe uma charge sem legenda e registre hipóteses.",
+        "Leia a legenda e reveja as hipóteses.",
+        "Explique separadamente o papel da imagem e do texto verbal."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Faça duas leituras: cada modo separadamente e depois a combinação."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Textos multissemióticos constroem sentido pela combinação de palavras, imagens, cores, disposição gráfica e símbolos.",
+        "A imagem pode complementar, contradizer, ironizar ou restringir o sentido do texto verbal.",
+        "Charge costuma dialogar com acontecimento/contexto reconhecível; cartum pode explorar situação mais universal.",
+        "Tirinha organiza sequência de quadros e frequentemente depende de progressão e quebra de expectativa.",
+        "Infográficos combinam dados e recursos visuais; a leitura exige relacionar títulos, legendas, escalas, ícones e números.",
+        "Humor e crítica podem surgir do contraste entre o que é dito e o que é mostrado."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Textos verbais, não verbais e multissemióticos e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [
+      "POR-ASSET-02"
+    ],
+    "antigravityRefs": [
+      "POR-IMG-01"
+    ],
+    "authenticMediaRefs": []
+  }
+}

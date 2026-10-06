@@ -1,35 +1,35 @@
 /* / (Hoje) — pulse line and week strip. The base Today layout stays in globals.css. */
 
-.today-pulse { display: flex; flex-wrap: wrap; gap: var(--kos-spacing-4); margin: var(--kos-spacing-10) 0 0; padding: 0; list-style: none; }
+.today-pulse { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-4); margin: var(--estudisc-spacing-10) 0 0; padding: 0; list-style: none; }
 .today-pulse a {
-  display: inline-flex; align-items: center; gap: var(--kos-spacing-4); min-height: 44px; padding: var(--kos-spacing-2) var(--kos-spacing-8) var(--kos-spacing-2) var(--kos-spacing-2);
-  border: var(--kos-border-hair) solid var(--kos-color-ink); border-radius: 999px; background: var(--kos-color-panel); color: var(--kos-color-ink);
+  display: inline-flex; align-items: center; gap: var(--estudisc-spacing-4); min-height: 44px; padding: var(--estudisc-spacing-2) var(--estudisc-spacing-8) var(--estudisc-spacing-2) var(--estudisc-spacing-2);
+  border: var(--estudisc-border-hair) solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); color: var(--estudisc-color-ink);
   font-size: 0.9375rem; font-weight: 700; text-decoration: none;
-  transition: transform var(--kos-motion-fast) var(--kos-motion-easing), box-shadow var(--kos-motion-fast) var(--kos-motion-easing);
+  transition: transform var(--estudisc-motion-fast) var(--estudisc-motion-easing), box-shadow var(--estudisc-motion-fast) var(--estudisc-motion-easing);
 }
-.today-pulse a:hover { transform: translate(-1px, -1px); box-shadow: var(--kos-shadow-structural); }
-.today-pulse a:active { transform: translate(2px, 2px); box-shadow: var(--kos-shadow-pressed); }
-.today-pulse .count-up { display: inline-grid; place-items: center; min-width: 34px; height: 34px; padding: 0 var(--kos-spacing-3); border: var(--kos-border-hair) solid var(--kos-color-ink); border-radius: 999px; background: var(--pulse); font-weight: 900; }
-.today-pulse [data-pulse="review"] { --pulse: var(--kos-color-surface-lime); }
-.today-pulse [data-pulse="mistake"] { --pulse: var(--kos-color-surface-pink); }
-.today-pulse [data-pulse="progress"] { --pulse: var(--kos-color-surface-sky); }
-.today-pulse [data-zero] { color: var(--kos-color-dim); }
+.today-pulse a:hover { transform: translate(-1px, -1px); box-shadow: var(--estudisc-shadow-structural); }
+.today-pulse a:active { transform: translate(2px, 2px); box-shadow: var(--estudisc-shadow-pressed); }
+.today-pulse .count-up { display: inline-grid; place-items: center; min-width: 34px; height: 34px; padding: 0 var(--estudisc-spacing-3); border: var(--estudisc-border-hair) solid var(--estudisc-color-ink); border-radius: 999px; background: var(--pulse); font-weight: 900; }
+.today-pulse [data-pulse="review"] { --pulse: var(--estudisc-color-surface-lime); }
+.today-pulse [data-pulse="mistake"] { --pulse: var(--estudisc-color-surface-pink); }
+.today-pulse [data-pulse="progress"] { --pulse: var(--estudisc-color-surface-sky); }
+.today-pulse [data-zero] { color: var(--estudisc-color-dim); }
 .today-pulse [data-zero] .count-up { border-style: dashed; background: transparent; }
 
-.today-week-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--kos-spacing-4); }
+.today-week-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--estudisc-spacing-4); }
 .today .today-week-head h2 { margin: 0; }
-.today-week-head a { display: inline-flex; align-items: center; gap: var(--kos-spacing-3); min-height: 44px; color: var(--kos-color-ink); font-weight: 750; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.today-week-head a { display: inline-flex; align-items: center; gap: var(--estudisc-spacing-3); min-height: 44px; color: var(--estudisc-color-ink); font-weight: 750; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .today-week-head svg { width: 16px; height: 16px; }
-.week-strip { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: var(--kos-spacing-3); margin: var(--kos-spacing-6) 0 var(--kos-spacing-6); padding: 0; list-style: none; }
-.week-strip li { display: grid; justify-items: center; gap: var(--kos-spacing-3); }
-.week-day { color: var(--kos-color-dim); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
-.week-mark { display: grid; place-items: center; width: 100%; max-width: 56px; aspect-ratio: 1; border: var(--kos-border-rule) solid var(--kos-color-ink); border-radius: var(--kos-radius-interactive); background: var(--kos-color-panel); }
+.week-strip { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: var(--estudisc-spacing-3); margin: var(--estudisc-spacing-6) 0 var(--estudisc-spacing-6); padding: 0; list-style: none; }
+.week-strip li { display: grid; justify-items: center; gap: var(--estudisc-spacing-3); }
+.week-day { color: var(--estudisc-color-dim); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+.week-mark { display: grid; place-items: center; width: 100%; max-width: 56px; aspect-ratio: 1; border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-panel); }
 .week-mark svg { width: 22px; height: 22px; stroke-width: 3; }
-.week-strip [data-studied] .week-mark { background: var(--kos-color-surface-lime); box-shadow: var(--kos-shadow-structural); }
-.week-strip [data-today] .week-day { color: var(--kos-color-ink); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
-.week-strip [data-today]:not([data-studied]) .week-mark { background: var(--kos-color-signal); }
-.week-strip [data-future] .week-mark { border-style: dashed; border-color: color-mix(in srgb, var(--kos-color-ink) 40%, transparent); background: transparent; }
-.today-week > p { margin: 0; color: var(--kos-color-dim); font-weight: 550; }
+.week-strip [data-studied] .week-mark { background: var(--estudisc-color-surface-lime); box-shadow: var(--estudisc-shadow-structural); }
+.week-strip [data-today] .week-day { color: var(--estudisc-color-ink); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.week-strip [data-today]:not([data-studied]) .week-mark { background: var(--estudisc-color-signal); }
+.week-strip [data-future] .week-mark { border-style: dashed; border-color: color-mix(in srgb, var(--estudisc-color-ink) 40%, transparent); background: transparent; }
+.today-week > p { margin: 0; color: var(--estudisc-color-dim); font-weight: 550; }
 
 @media (prefers-reduced-motion: reduce) {
   .today-pulse a { transition: none; }

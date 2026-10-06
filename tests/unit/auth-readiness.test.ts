@@ -19,7 +19,7 @@ describe("Google auth readiness", () => {
 
   it("allows only configured Google e-mail addresses", () => {
     const env = getServerEnv({
-      KNOW_OS_ALLOWED_GOOGLE_EMAILS: "owner@example.com"
+      ESTUDISC_ALLOWED_GOOGLE_EMAILS: "owner@example.com"
     });
 
     expect(isAllowedGoogleEmail("OWNER@example.com", env)).toBe(true);

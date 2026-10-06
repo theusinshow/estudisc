@@ -18,11 +18,12 @@ export default defineConfig({
       AUTH_GOOGLE_ID: "",
       AUTH_GOOGLE_SECRET: "",
       AUTH_SECRET: "test-auth-secret-do-not-use",
+      AUTH_TRUST_HOST: "true",
       DATABASE_URL: process.env.DATABASE_URL ?? "memory://local",
-      KNOW_OS_ALLOWED_GOOGLE_EMAILS: "",
+      ESTUDISC_ALLOWED_GOOGLE_EMAILS: "",
       // Code accounts from .env.local stay off; E2E covers the owner flow without a login.
-      KNOW_OS_ACCOUNTS: "",
-      KNOW_OS_OWNER_ID: process.env.KNOW_OS_OWNER_ID ?? "local-owner"
+      ESTUDISC_ACCOUNTS: "",
+      ESTUDISC_OWNER_ID: process.env.ESTUDISC_OWNER_ID ?? "local-owner"
     },
     url: "http://127.0.0.1:3210",
     reuseExistingServer: false,

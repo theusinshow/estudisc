@@ -1,3 +1,4 @@
+import { logEvent } from "@/lib/logger";
 import { NextResponse } from "next/server";
 
 import { ensureDatabaseReady } from "@/db/connection";
@@ -11,7 +12,7 @@ export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 export async function POST(request: Request) {
-  let profile;try{profile=await requireAdmin();}catch(error){if(error instanceof AccessDeniedError)return NextResponse.json({code:"admin_required"},{status:403});throw error;}
+  let profile;try{profile=await requireAdmin();}catch(error){logEvent("error","import_failure",{operation:"import",errorType:error instanceof Error?error.name:"UnknownError"});if(error instanceof AccessDeniedError)return NextResponse.json({code:"admin_required"},{status:403});throw error;}
   const parsedRequest = await readJsonRequestWithLimit(request, MAX_TRACK_PACK_BYTES);
 
   if (!parsedRequest.ok) {
@@ -53,8 +54,10 @@ export async function POST(request: Request) {
       );
     }
 
+    logEvent("info", "import_completed", { operation: "import", status: result.status });
     return NextResponse.json(result, { status: result.status === "imported" ? 201 : 200 });
   } catch (error) {
+    logEvent("error", "import_failure", { operation: "import", errorType: error instanceof Error ? error.name : "UnknownError" });
     if (error instanceof Error && error.message === "DATABASE_URL is not configured") {
       return NextResponse.json(
         { code: "database_not_configured", message: "Configure DATABASE_URL para importar conteúdo." },

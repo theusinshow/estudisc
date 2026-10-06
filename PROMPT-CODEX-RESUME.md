@@ -1,10 +1,10 @@
-# Prompt de retomada do Codex — KNOW/OS
+# Prompt de retomada do Codex — Estudisc
 
 Use este prompt somente quando uma sessão anterior terminar por limite de contexto, fechamento do terminal ou interrupção técnica.
 
 ## Prompt
 
-Resume KNOW/OS autonomous implementation from the durable repository state.
+Resume Estudisc autonomous implementation from the durable repository state.
 
 Read, in order:
 

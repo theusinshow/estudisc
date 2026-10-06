@@ -1,8 +1,9 @@
+import { logEvent } from "@/lib/logger";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { getServerEnv } from "@/lib/env";
 import { getAccountConfig } from "@/features/auth/account-mode";
-import { ACCOUNT_SESSION_COOKIE, accountSessionCookieOptions, createAccountSession, verifyAccessCode } from "@/features/auth/code-accounts";
+import { ACCOUNT_SESSION_COOKIE, LEGACY_ACCOUNT_SESSION_COOKIE, accountSessionCookieOptions, createAccountSession, verifyAccessCode } from "@/features/auth/code-accounts";
 import { clearLoginFailures, loginRetryAfterSeconds, recordLoginFailure } from "@/features/auth/login-throttle";
 export const runtime="nodejs";export const dynamic="force-dynamic";
 const loginSchema=z.object({accountId:z.string().min(1).max(64),code:z.string().max(12)}).strict();
@@ -20,15 +21,18 @@ export async function POST(request:Request){
   const account=config.accounts.find(entry=>entry.id===body.data.accountId);
   if(!account||!verifyAccessCode(body.data.code,account.code)){
     recordLoginFailure(key);
+    logEvent("warn", "auth_failure", { reasonCode: "invalid_code" });
     return NextResponse.json({code:"invalid_code"},{status:401,headers:noStore});
   }
   clearLoginFailures(key);
   const response=NextResponse.json({name:account.name,role:account.role},{headers:noStore});
   response.cookies.set(ACCOUNT_SESSION_COOKIE,createAccountSession(account,config.secret),accountSessionCookieOptions(process.env.NODE_ENV==="production"));
+  response.cookies.delete(LEGACY_ACCOUNT_SESSION_COOKIE);
   return response;
 }
 export async function DELETE(){
   const response=NextResponse.json({ok:true},{headers:noStore});
   response.cookies.delete(ACCOUNT_SESSION_COOKIE);
+  response.cookies.delete(LEGACY_ACCOUNT_SESSION_COOKIE);
   return response;
 }

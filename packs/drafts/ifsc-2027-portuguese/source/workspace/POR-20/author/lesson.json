@@ -1,0 +1,153 @@
+{
+  "id": "POR-20",
+  "subject": "POR",
+  "title": "Coerência, progressão temática e relações entre ideias",
+  "module": "Textualidade e argumentação",
+  "priority": "P0",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Avaliar consistência global, continuidade temática e compatibilidade entre informações.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-017",
+    "POR-SRC-026",
+    "POR-SRC-027",
+    "POR-SRC-028"
+  ],
+  "conceptRefs": [
+    "POR-20-C01",
+    "POR-20-C02",
+    "POR-20-C03",
+    "POR-20-C04",
+    "POR-20-C05",
+    "POR-20-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Um texto defende transporte coletivo, passa a explicar uma receita sem relação com o tema e retorna à mobilidade."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Avaliar consistência global, continuidade temática e compatibilidade entre informações.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto.",
+        "Progressão temática exige acrescentar informações relacionadas, não apenas repetir a mesma ideia.",
+        "Contradições não explicadas podem romper a coerência global."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Informações verdadeiras podem ser irrelevantes ao objetivo e prejudicar a progressão.",
+        "Conhecimento de mundo participa da coerência, mas não autoriza ignorar o que o texto estabelece.",
+        "Conectores ajudam a explicitar relações, porém não consertam ideias logicamente incompatíveis."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "coerência",
+          "conceptRef": "POR-20-C01"
+        },
+        {
+          "term": "progressão temática",
+          "conceptRef": "POR-20-C02"
+        },
+        {
+          "term": "contradição",
+          "conceptRef": "POR-20-C03"
+        },
+        {
+          "term": "continuidade",
+          "conceptRef": "POR-20-C04"
+        },
+        {
+          "term": "relevância",
+          "conceptRef": "POR-20-C05"
+        },
+        {
+          "term": "consistência",
+          "conceptRef": "POR-20-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Muitos conectores garantem coerência.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Coerência é não cometer erro gramatical.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Todo parágrafo deve repetir a tese.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Qualquer informação verdadeira melhora o texto.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Um texto defende transporte coletivo, passa a explicar uma receita sem relação com o tema e retorna à mobilidade.",
+      "analysis": "A receita pode ser coerente por si, mas é irrelevante no encadeamento e rompe a progressão temática."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Reordene parágrafos embaralhados.",
+        "Ache uma frase verdadeira porém irrelevante.",
+        "Mostre por que conector correto não salva contradição."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Leia como conjunto: tema, encadeamento, relações e contradições."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto.",
+        "Progressão temática exige acrescentar informações relacionadas, não apenas repetir a mesma ideia.",
+        "Contradições não explicadas podem romper a coerência global.",
+        "Informações verdadeiras podem ser irrelevantes ao objetivo e prejudicar a progressão.",
+        "Conhecimento de mundo participa da coerência, mas não autoriza ignorar o que o texto estabelece.",
+        "Conectores ajudam a explicitar relações, porém não consertam ideias logicamente incompatíveis."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Coerência, progressão temática e relações entre ideias e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [
+      "POR-ASSET-12"
+    ],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

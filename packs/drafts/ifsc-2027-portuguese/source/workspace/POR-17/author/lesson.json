@@ -1,0 +1,153 @@
+{
+  "id": "POR-17",
+  "subject": "POR",
+  "title": "Tese, argumentos e estratégias argumentativas",
+  "module": "Textualidade e argumentação",
+  "priority": "P0",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Distinguir tema, tese e argumento e avaliar evidências e movimentos argumentativos.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-022",
+    "POR-SRC-023",
+    "POR-SRC-024",
+    "POR-SRC-025"
+  ],
+  "conceptRefs": [
+    "POR-17-C01",
+    "POR-17-C02",
+    "POR-17-C03",
+    "POR-17-C04",
+    "POR-17-C05",
+    "POR-17-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Um artigo defende ampliar ciclovias, cita dados de acidentes, compara custos e responde à crítica de que haveria menos espaço para carros."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Distinguir tema, tese e argumento e avaliar evidências e movimentos argumentativos.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Tese é a posição central defendida; argumento é a razão/evidência usada para sustentá-la.",
+        "Dados, exemplos, comparações, causa/consequência e falas de especialistas podem funcionar como estratégias argumentativas.",
+        "Argumento de autoridade é forte quando a fonte é pertinente e a fala realmente sustenta a tese."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Refutação responde a posição contrária; negociação reconhece parcialmente outra perspectiva para reorganizar a defesa.",
+        "Modalizadores indicam grau de certeza, possibilidade, obrigação ou avaliação e revelam postura do enunciador.",
+        "Um texto pode informar e argumentar ao mesmo tempo; é preciso observar se há posição defendida."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "tese",
+          "conceptRef": "POR-17-C01"
+        },
+        {
+          "term": "argumento",
+          "conceptRef": "POR-17-C02"
+        },
+        {
+          "term": "evidência",
+          "conceptRef": "POR-17-C03"
+        },
+        {
+          "term": "autoridade",
+          "conceptRef": "POR-17-C04"
+        },
+        {
+          "term": "refutação",
+          "conceptRef": "POR-17-C05"
+        },
+        {
+          "term": "modalização",
+          "conceptRef": "POR-17-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Qualquer opinião já é argumento forte.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Tese e tema são iguais.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Citar especialista torna tudo verdadeiro.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Texto argumentativo não pode apresentar fatos.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Um artigo defende ampliar ciclovias, cita dados de acidentes, compara custos e responde à crítica de que haveria menos espaço para carros.",
+      "analysis": "A defesa da ampliação é tese; dados/comparação sustentam; resposta à crítica é refutação."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Separe tema, tese e argumentos.",
+        "Classifique estratégias.",
+        "Avalie a força de cada argumento pela pertinência da evidência."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Pergunte “essa frase está sendo usada para apoiar qual posição?”."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Tese é a posição central defendida; argumento é a razão/evidência usada para sustentá-la.",
+        "Dados, exemplos, comparações, causa/consequência e falas de especialistas podem funcionar como estratégias argumentativas.",
+        "Argumento de autoridade é forte quando a fonte é pertinente e a fala realmente sustenta a tese.",
+        "Refutação responde a posição contrária; negociação reconhece parcialmente outra perspectiva para reorganizar a defesa.",
+        "Modalizadores indicam grau de certeza, possibilidade, obrigação ou avaliação e revelam postura do enunciador.",
+        "Um texto pode informar e argumentar ao mesmo tempo; é preciso observar se há posição defendida."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Tese, argumentos e estratégias argumentativas e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [
+      "POR-ASSET-10"
+    ],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

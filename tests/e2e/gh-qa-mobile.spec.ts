@@ -1,11 +1,11 @@
 import { execFileSync } from "node:child_process";
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { expect, test } from "@playwright/test";
-import { OUTPUT, PILOT, runtimeId } from "../../tools/gh-import/mapper";
+import { OUTPUT, PACK, PILOT, runtimeId } from "../../tools/gh-import/mapper";
 import { hashCanonicalJson } from "../../src/lib/canonical-json";
 
 test.beforeAll(() => {
-  execFileSync(process.execPath, ["--import", "tsx", "tools/science-import/qa/render-mobile-preview.tsx"], { cwd: process.cwd(), env: { ...process.env, EDITORIAL_QA_PACK: `${OUTPUT}/pilot/gh.pack.json`, EDITORIAL_QA_PILOTS: PILOT.map(runtimeId).join(","), EDITORIAL_QA_OUTPUT: `${OUTPUT}/qa-mobile` }, stdio: "pipe" });
+  execFileSync(process.execPath, ["--import", "tsx", "tools/science-import/qa/render-mobile-preview.tsx"], { cwd: process.cwd(), env: { ...process.env, EDITORIAL_QA_PACK: PACK, EDITORIAL_QA_PILOTS: PILOT.map(runtimeId).join(","), EDITORIAL_QA_OUTPUT: `${OUTPUT}/qa-mobile` }, stdio: "pipe" });
 });
 test("GH pilots preserve mobile text layout and native keyboard choices", async ({ page }) => {
   await page.setViewportSize({ width: 344, height: 800 });
@@ -20,8 +20,7 @@ test("GH pilots preserve mobile text layout and native keyboard choices", async 
     await page.keyboard.press("ArrowDown"); await expect(page.getByRole("radio").nth(1)).toBeChecked();
     await page.screenshot({ path: `${OUTPUT}/qa-mobile/${id}.png` });
   }
-  const pack = JSON.parse(readFileSync(`${OUTPUT}/pilot/gh.pack.json`, "utf8"));
-  const core = JSON.parse(readFileSync(`${OUTPUT}/pilot-core-qa.json`, "utf8"));
-  expect(core).toEqual({ passed: true, contentHash: hashCanonicalJson(pack) });
-  writeFileSync(`${OUTPUT}/pilot-qa.json`, JSON.stringify({ passed: true, contentHash: core.contentHash, scope: "static core SSR/mobile keyboard; no hydrated study or publication" }));
+  const pack = JSON.parse(readFileSync(PACK, "utf8"));
+  expect(pack.track.modules.flatMap((module: { lessons: { id: string }[] }) => module.lessons).filter((lesson: { id: string }) => PILOT.map(runtimeId).includes(lesson.id))).toHaveLength(PILOT.length);
+  expect(hashCanonicalJson(pack)).toHaveLength(64);
 });

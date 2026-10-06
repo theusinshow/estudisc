@@ -1,0 +1,85 @@
+{
+  "id": "CIE-06",
+  "version": 2,
+  "title": "DEMO / NOT PRODUCTION CONTENT — Estrutura Atômica",
+  "kind": "core",
+  "estimatedMinutes": 35,
+  "status": "draft",
+  "concepts": [
+    {
+      "id": "CIE.ATOM.Z",
+      "title": "Identificar número atômico",
+      "importance": "high"
+    }
+  ],
+  "prerequisiteConceptIds": [],
+  "objectives": [
+    "Exercitar contratos e handoff; não validar cobertura curricular"
+  ],
+  "sourceIds": [
+    "src-demo-spec"
+  ],
+  "exitTicketQuestionIds": [
+    "Q-CIE-06-DEMO"
+  ],
+  "blocks": [
+    {
+      "id": "demo-text",
+      "type": "text",
+      "schemaVersion": 1,
+      "conceptIds": [
+        "CIE.ATOM.Z"
+      ],
+      "payload": {
+        "content": "DEMO / NOT PRODUCTION CONTENT. Nesta especificação de teste, Z corresponde à quantidade de prótons. Qual seria Z para três prótons?"
+      }
+    },
+    {
+      "id": "demo-image",
+      "type": "figure",
+      "schemaVersion": 1,
+      "conceptIds": [
+        "CIE.ATOM.Z"
+      ],
+      "payload": {
+        "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMjAiIGhlaWdodD0iMTIwIj48cmVjdCB3aWR0aD0iMzIwIiBoZWlnaHQ9IjEyMCIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSI4MCIgY3k9IjYwIiByPSIzMCIgZmlsbD0iI2RkZCIvPjx0ZXh0IHg9IjY1IiB5PSI2NSI+MyBwPC90ZXh0Pjx0ZXh0IHg9IjEzMCIgeT0iNjUiPkRFTU86IFogPSAzPC90ZXh0Pjwvc3ZnPg==",
+        "alt": "Diagrama DEMO com três prótons e número atômico Z igual a três.",
+        "caption": "DEMO: figura simplificada, sem escala física.",
+        "credit": "VECTA Content Studio — figura de teste",
+        "width": 320,
+        "height": 120
+      }
+    },
+    {
+      "id": "demo-example",
+      "type": "worked-example",
+      "schemaVersion": 1,
+      "conceptIds": [
+        "CIE.ATOM.Z"
+      ],
+      "payload": {
+        "title": "Exemplo DEMO",
+        "content": "Conte os prótons: um, dois, três. Na especificação deste teste, Z = 3."
+      }
+    }
+  ],
+  "activities": [
+    {
+      "id": "demo-exit",
+      "type": "question",
+      "conceptIds": [
+        "CIE.ATOM.Z"
+      ],
+      "prompt": "DEMO: com quatro prótons, qual é Z?",
+      "questionId": "Q-CIE-06-DEMO",
+      "config": {
+        "questionVersion": 1,
+        "hints": [
+          "Z acompanha uma partícula do núcleo.",
+          "Conte os prótons."
+        ],
+        "phase": "exit_ticket"
+      }
+    }
+  ]
+}

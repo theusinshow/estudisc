@@ -45,7 +45,7 @@ Migration: `0010_real_blur.sql` and matching Drizzle snapshot/journal. The gener
 
 Basic validation under the user's updated testing preference: `pnpm exec vitest run tests/unit/curriculum.test.ts tests/integration/curriculum-repository.test.ts` — 3 passed. Covers repeat seed, rollback, existing-graph cycles, subject/reference checks and incomplete coverage. `pnpm typecheck` passed; lint rerun after correcting the fixture variable name. No redundant full build/E2E for this non-UI increment.
 
-Target remote changed to `https://github.com/theusinshow/vecta.git` per user instruction. Successful `git ls-remote` returned no refs; `origin` now points there, inherited local history is preserved, and no push occurred.
+Target remote changed to `https://github.com/theusinshow/estudisc.git` per user instruction. Successful `git ls-remote` returned no refs; `origin` now points there, inherited local history is preserved, and no push occurred.
 
 ## IFSC-02
 

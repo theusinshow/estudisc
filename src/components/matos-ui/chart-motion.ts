@@ -1,6 +1,6 @@
 /**
  * Matos UI chart motion, reduced to the values the vendored charts use.
- * Upstream reads these from `@/lib/motion-tokens`; KNOW/OS has no such module, so the tiers are inlined.
+ * Upstream reads these from `@/lib/motion-tokens`; Estudisc has no such module, so the tiers are inlined.
  */
 const decelerate = [0.05, 0.7, 0.1, 1] as const;
 

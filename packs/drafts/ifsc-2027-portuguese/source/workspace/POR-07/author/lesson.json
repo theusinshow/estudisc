@@ -1,0 +1,150 @@
+{
+  "id": "POR-07",
+  "subject": "POR",
+  "title": "Classes de palavras, flexões e função no texto",
+  "module": "Gramática em contexto",
+  "priority": "P1",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Reconhecer classes e flexões pelo funcionamento no enunciado.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-011",
+    "POR-SRC-012",
+    "POR-SRC-015"
+  ],
+  "conceptRefs": [
+    "POR-07-C01",
+    "POR-07-C02",
+    "POR-07-C03",
+    "POR-07-C04",
+    "POR-07-C05",
+    "POR-07-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Em “O jantar está pronto”, “jantar” funciona como substantivo. Em “Vamos jantar cedo”, funciona como verbo."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Reconhecer classes e flexões pelo funcionamento no enunciado.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto.",
+        "Substantivos nomeiam entidades/conceitos/eventos; adjetivos atribuem características ou relações a substantivos.",
+        "Pronomes podem retomar, antecipar ou apontar referentes e são importantes para a coesão."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Verbos flexionam-se em pessoa, número, tempo e modo e organizam temporalidade/modalidade.",
+        "Advérbios e locuções adverbiais modificam sobretudo verbos, adjetivos, outros advérbios ou o enunciado.",
+        "Conjunções e outros conectores estabelecem relações entre termos, orações e partes do texto."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "substantivo",
+          "conceptRef": "POR-07-C01"
+        },
+        {
+          "term": "adjetivo",
+          "conceptRef": "POR-07-C02"
+        },
+        {
+          "term": "pronome",
+          "conceptRef": "POR-07-C03"
+        },
+        {
+          "term": "verbo",
+          "conceptRef": "POR-07-C04"
+        },
+        {
+          "term": "advérbio",
+          "conceptRef": "POR-07-C05"
+        },
+        {
+          "term": "conjunção",
+          "conceptRef": "POR-07-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Uma palavra pertence à mesma classe em qualquer contexto.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Adjetivo é toda palavra depois de substantivo.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Pronomes só substituem nomes de pessoas.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Conjunções não interferem no sentido.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Em “O jantar está pronto”, “jantar” funciona como substantivo. Em “Vamos jantar cedo”, funciona como verbo.",
+      "analysis": "A forma é a mesma, mas função e comportamento no enunciado revelam classes diferentes."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Classifique palavras destacadas em frases.",
+        "Mude o contexto para alterar a classe quando possível.",
+        "Observe como pronomes e conectores ajudam a coesão."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Analise a palavra dentro da frase: relação, flexão e função."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto.",
+        "Substantivos nomeiam entidades/conceitos/eventos; adjetivos atribuem características ou relações a substantivos.",
+        "Pronomes podem retomar, antecipar ou apontar referentes e são importantes para a coesão.",
+        "Verbos flexionam-se em pessoa, número, tempo e modo e organizam temporalidade/modalidade.",
+        "Advérbios e locuções adverbiais modificam sobretudo verbos, adjetivos, outros advérbios ou o enunciado.",
+        "Conjunções e outros conectores estabelecem relações entre termos, orações e partes do texto."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Classes de palavras, flexões e função no texto e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

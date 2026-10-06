@@ -1,0 +1,30 @@
+{
+  "lessonId": "GH-37",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-042",
+      "title": "As Grandes Navegações",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-as-grandes-navegacoes/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-37-001",
+    "lessonId": "GH-37",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa de rotas marítimas dos séculos XV–XVI baseado em fonte histórica/cartográfica.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

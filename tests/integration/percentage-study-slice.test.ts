@@ -4,7 +4,7 @@ import { importTrackPack } from "@/features/import/api";
 import { DrizzleTrackImportRepository } from "@/db/repositories/track-import-repository";
 import { QuestionStudyRepository } from "@/db/repositories/question-study-repository";
 import { StudySessionRepository } from "@/db/repositories/study-session-repository";
-import { attempts,conceptEvidence,reviewSchedules,concepts,owners } from "@/db/schema";
+import { attempts,conceptEvidence,reviewSchedules,concepts,owners,xpTransactions } from "@/db/schema";
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
 import { simulatePublication } from "./ifsc-publication-fixture";
 it("completes the percentage slice, deduplicates retries and isolates owners",async()=>{
@@ -26,12 +26,14 @@ it("completes the percentage slice, deduplicates retries and isolates owners",as
     expect(view.question).not.toHaveProperty("answer");expect(view.question).not.toHaveProperty("explanation");
     // A wrong answer hides the worked solution, so the corrected retry is still independent evidence.
     const wrong=await questions.interact("student-a","mat07-q3",{questionId:"Q-MAT-GOLDEN-3",questionVersion:1,action:"submit",submissionKey:crypto.randomUUID(),response:"29",sessionId:session!.id});
-    expect(wrong).toMatchObject({correct:false});expect(wrong.explanation).toBeUndefined();
+    expect(wrong).toMatchObject({correct:false,xpAwarded:0});expect(wrong.explanation).toBeUndefined();
+    expect(await database.db.select().from(xpTransactions)).toHaveLength(0);
     const input={questionId:"Q-MAT-GOLDEN-3",questionVersion:1,action:"submit" as const,submissionKey:crypto.randomUUID(),response:"30 %",sessionId:session!.id};
-    const first=await questions.interact("student-a","mat07-q3",input);expect(first).toMatchObject({correct:true});expect(first.explanation).toBeTruthy();
+    const first=await questions.interact("student-a","mat07-q3",input);expect(first).toMatchObject({correct:true,xpAwarded:20});expect(first.explanation).toBeTruthy();
     const passedEvidence=(await database.db.select().from(conceptEvidence)).filter(item=>item.sourceType==="question_attempt"&&(item.conditions as Record<string,unknown>).outcome==="passed");
     expect(passedEvidence.length).toBeGreaterThan(0);expect(passedEvidence.every(item=>(item.conditions as Record<string,unknown>).solutionRevealed===false)).toBe(true);
-    expect(await questions.interact("student-a","mat07-q3",input)).toEqual(first);
+    expect(await questions.interact("student-a","mat07-q3",input)).toEqual({...first,xpAwarded:0});
+    expect(await database.db.select().from(xpTransactions)).toMatchObject([{ownerId:"student-a",amount:20,sourceType:"question",sourceId:"Q-MAT-GOLDEN-3"}]);
     await expect(questions.interact("student-a","mat07-q3",{...input,response:"31"})).rejects.toThrow("Submission key");
     await expect(questions.interact("student-b","mat07-q3",input)).rejects.toThrow("unavailable");
     expect(await database.db.select().from(attempts)).toHaveLength(2);

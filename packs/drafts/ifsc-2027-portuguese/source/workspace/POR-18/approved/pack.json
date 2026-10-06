@@ -1,0 +1,517 @@
+{
+  "lesson": {
+    "id": "POR-18",
+    "subject": "POR",
+    "title": "Recursos linguístico-literários e produção de efeitos de sentido",
+    "module": "Textualidade e argumentação",
+    "priority": "P0",
+    "status": "IMPORT_READY",
+    "estimatedMinutes": 22,
+    "masteryTarget": "Analisar escolha lexical, pontuação, repetição, ordem, vozes, ritmo, modalização e linguagem figurada.",
+    "sourceRefs": [
+      "POR-SRC-001",
+      "POR-SRC-009",
+      "POR-SRC-019",
+      "POR-SRC-020",
+      "POR-SRC-021",
+      "POR-SRC-025",
+      "POR-SRC-026",
+      "POR-SRC-033"
+    ],
+    "conceptRefs": [
+      "POR-18-C01",
+      "POR-18-C02",
+      "POR-18-C03",
+      "POR-18-C04",
+      "POR-18-C05",
+      "POR-18-C06"
+    ],
+    "blocks": [
+      {
+        "type": "HOOK",
+        "title": "Leia como a prova lê",
+        "content": "Num conto: “Ele voltou. Outra vez.” A expressão final aparece em período próprio."
+      },
+      {
+        "type": "LEARNING_GOALS",
+        "items": [
+          "Analisar escolha lexical, pontuação, repetição, ordem, vozes, ritmo, modalização e linguagem figurada.",
+          "Justificar respostas com evidência linguística ou textual.",
+          "Evitar regras absolutas quando o fenômeno depende do contexto."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 1",
+        "paragraphs": [
+          "Efeito de sentido resulta da relação entre escolha linguística, gênero, contexto e intenção; não pertence isoladamente a uma palavra.",
+          "Seleção lexical pode intensificar, suavizar, aproximar, distanciar ou avaliar um referente.",
+          "Repetição pode produzir ênfase, ritmo, progressão ou insistência quando intencional."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 2",
+        "paragraphs": [
+          "Pontuação/recursos gráficos podem marcar voz, hesitação, surpresa, ironia, interrupção ou destaque.",
+          "Tempos verbais, ordem dos termos e escolha do narrador influenciam perspectiva e foco.",
+          "Em textos literários, ambiguidade e conotação ampliam interpretações, mas ainda exigem evidência textual."
+        ]
+      },
+      {
+        "type": "KEY_TERMS",
+        "items": [
+          {
+            "term": "efeito de sentido",
+            "conceptRef": "POR-18-C01"
+          },
+          {
+            "term": "seleção lexical",
+            "conceptRef": "POR-18-C02"
+          },
+          {
+            "term": "pontuação expressiva",
+            "conceptRef": "POR-18-C03"
+          },
+          {
+            "term": "repetição",
+            "conceptRef": "POR-18-C04"
+          },
+          {
+            "term": "modalização",
+            "conceptRef": "POR-18-C05"
+          },
+          {
+            "term": "voz narrativa",
+            "conceptRef": "POR-18-C06"
+          }
+        ]
+      },
+      {
+        "type": "MISCONCEPTION_CHECK",
+        "items": [
+          {
+            "claim": "Efeito de sentido é só nome de figura.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Repetição é sempre erro.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Pontuação só marca pausas.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Em literatura qualquer interpretação vale.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          }
+        ]
+      },
+      {
+        "type": "WORKED_EXAMPLE",
+        "stimulus": "Num conto: “Ele voltou. Outra vez.” A expressão final aparece em período próprio.",
+        "analysis": "A fragmentação destaca a repetição do evento e pode sugerir insistência/cansaço/tensão conforme contexto."
+      },
+      {
+        "type": "ACTIVE_LEARNING",
+        "title": "Atividade de aplicação",
+        "steps": [
+          "Altere apenas a pontuação de um trecho e compare efeito.",
+          "Troque palavras avaliativas por neutras.",
+          "Desloque um termo e explique a mudança de foco."
+        ],
+        "evidence": "Resposta curta ou classificação justificada."
+      },
+      {
+        "type": "IFSC_STRATEGY",
+        "content": "Use sequência: escolha formal → destaque/sugestão → função no texto."
+      },
+      {
+        "type": "SUMMARY",
+        "items": [
+          "Efeito de sentido resulta da relação entre escolha linguística, gênero, contexto e intenção; não pertence isoladamente a uma palavra.",
+          "Seleção lexical pode intensificar, suavizar, aproximar, distanciar ou avaliar um referente.",
+          "Repetição pode produzir ênfase, ritmo, progressão ou insistência quando intencional.",
+          "Pontuação/recursos gráficos podem marcar voz, hesitação, surpresa, ironia, interrupção ou destaque.",
+          "Tempos verbais, ordem dos termos e escolha do narrador influenciam perspectiva e foco.",
+          "Em textos literários, ambiguidade e conotação ampliam interpretações, mas ainda exigem evidência textual."
+        ]
+      },
+      {
+        "type": "EXIT_TICKET",
+        "prompt": "Explique o princípio mais importante de Recursos linguístico-literários e produção de efeitos de sentido e crie um exemplo próprio."
+      }
+    ],
+    "media": {
+      "deterministicAssetRefs": [],
+      "antigravityRefs": [],
+      "authenticMediaRefs": [
+        "POR-MEDIA-01",
+        "POR-MEDIA-02"
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": "POR-18-Q01",
+      "lessonId": "POR-18",
+      "type": "MCQ",
+      "stem": "Qual afirmação descreve corretamente Recursos linguístico-literários e produção de efeitos de sentido em uso real da língua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Repetição é sempre erro."
+        },
+        {
+          "id": "B",
+          "text": "Pontuação só marca pausas."
+        },
+        {
+          "id": "C",
+          "text": "Em literatura qualquer interpretação vale."
+        },
+        {
+          "id": "D",
+          "text": "Efeito de sentido resulta da relação entre escolha linguística, gênero, contexto e intenção; não pertence isoladamente a uma palavra."
+        },
+        {
+          "id": "E",
+          "text": "Efeito de sentido é só nome de figura."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Efeito de sentido resulta da relação entre escolha linguística, gênero, contexto e intenção; não pertence isoladamente a uma palavra.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
+      "concepts": [
+        "POR-18-C01"
+      ],
+      "targetedError": "Efeito de sentido é só nome de figura.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-18-Q02",
+      "lessonId": "POR-18",
+      "type": "MCQ",
+      "stem": "Em uma questão contextualizada sobre Recursos linguístico-literários e produção de efeitos de sentido, qual princípio deve orientar a análise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Seleção lexical pode intensificar, suavizar, aproximar, distanciar ou avaliar um referente."
+        },
+        {
+          "id": "B",
+          "text": "Pontuação só marca pausas."
+        },
+        {
+          "id": "C",
+          "text": "Em literatura qualquer interpretação vale."
+        },
+        {
+          "id": "D",
+          "text": "Efeito de sentido é só nome de figura."
+        },
+        {
+          "id": "E",
+          "text": "Repetição é sempre erro."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Seleção lexical pode intensificar, suavizar, aproximar, distanciar ou avaliar um referente.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
+      "concepts": [
+        "POR-18-C02"
+      ],
+      "targetedError": "Repetição é sempre erro.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-18-Q03",
+      "lessonId": "POR-18",
+      "type": "MCQ",
+      "stem": "Qual alternativa evita uma generalização inadequada sobre Recursos linguístico-literários e produção de efeitos de sentido?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Em literatura qualquer interpretação vale."
+        },
+        {
+          "id": "B",
+          "text": "Efeito de sentido é só nome de figura."
+        },
+        {
+          "id": "C",
+          "text": "Repetição pode produzir ênfase, ritmo, progressão ou insistência quando intencional."
+        },
+        {
+          "id": "D",
+          "text": "Repetição é sempre erro."
+        },
+        {
+          "id": "E",
+          "text": "Pontuação só marca pausas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Repetição pode produzir ênfase, ritmo, progressão ou insistência quando intencional.",
+      "difficulty": "applied",
+      "cognitiveOperation": "discriminate",
+      "concepts": [
+        "POR-18-C03"
+      ],
+      "targetedError": "Pontuação só marca pausas.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-18-Q04",
+      "lessonId": "POR-18",
+      "type": "MCQ",
+      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Recursos linguístico-literários e produção de efeitos de sentido?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Efeito de sentido é só nome de figura."
+        },
+        {
+          "id": "B",
+          "text": "Repetição é sempre erro."
+        },
+        {
+          "id": "C",
+          "text": "Pontuação só marca pausas."
+        },
+        {
+          "id": "D",
+          "text": "Em literatura qualquer interpretação vale."
+        },
+        {
+          "id": "E",
+          "text": "Pontuação/recursos gráficos podem marcar voz, hesitação, surpresa, ironia, interrupção ou destaque."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Pontuação/recursos gráficos podem marcar voz, hesitação, surpresa, ironia, interrupção ou destaque.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-18-C04"
+      ],
+      "targetedError": "Em literatura qualquer interpretação vale.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-18-Q05",
+      "lessonId": "POR-18",
+      "type": "MCQ",
+      "stem": "Qual critério é seguro para resolver uma questão sobre Recursos linguístico-literários e produção de efeitos de sentido?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Repetição é sempre erro."
+        },
+        {
+          "id": "B",
+          "text": "Tempos verbais, ordem dos termos e escolha do narrador influenciam perspectiva e foco."
+        },
+        {
+          "id": "C",
+          "text": "Pontuação só marca pausas."
+        },
+        {
+          "id": "D",
+          "text": "Em literatura qualquer interpretação vale."
+        },
+        {
+          "id": "E",
+          "text": "Efeito de sentido é só nome de figura."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Tempos verbais, ordem dos termos e escolha do narrador influenciam perspectiva e foco.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
+      "concepts": [
+        "POR-18-C05"
+      ],
+      "targetedError": "Efeito de sentido é só nome de figura.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-18-Q06",
+      "lessonId": "POR-18",
+      "type": "MCQ",
+      "stem": "Ao comparar alternativas sobre Recursos linguístico-literários e produção de efeitos de sentido, qual análise está correta?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pontuação só marca pausas."
+        },
+        {
+          "id": "B",
+          "text": "Em literatura qualquer interpretação vale."
+        },
+        {
+          "id": "C",
+          "text": "Efeito de sentido é só nome de figura."
+        },
+        {
+          "id": "D",
+          "text": "Em textos literários, ambiguidade e conotação ampliam interpretações, mas ainda exigem evidência textual."
+        },
+        {
+          "id": "E",
+          "text": "Repetição é sempre erro."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Em textos literários, ambiguidade e conotação ampliam interpretações, mas ainda exigem evidência textual.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-18-C06"
+      ],
+      "targetedError": "Repetição é sempre erro.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-18-Q07",
+      "lessonId": "POR-18",
+      "type": "MCQ",
+      "stem": "Um estudante afirma: “Efeito de sentido é só nome de figura.”. Qual é a melhor correção?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+        },
+        {
+          "id": "B",
+          "text": "A generalização deve ser aceita sem verificar contexto."
+        },
+        {
+          "id": "C",
+          "text": "A melhor estratégia é decorar a frase."
+        },
+        {
+          "id": "D",
+          "text": "Não há critério linguístico para avaliar a afirmação."
+        },
+        {
+          "id": "E",
+          "text": "Basta escolher a alternativa mais longa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Efeito de sentido resulta da relação entre escolha linguística, gênero, contexto e intenção; não pertence isoladamente a uma palavra.",
+      "difficulty": "applied",
+      "cognitiveOperation": "diagnose_error",
+      "concepts": [
+        "POR-18-C01"
+      ],
+      "targetedError": "Efeito de sentido é só nome de figura.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-18-Q08",
+      "lessonId": "POR-18",
+      "type": "MCQ",
+      "stimulus": "Num conto: “Ele voltou. Outra vez.” A expressão final aparece em período próprio.",
+      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O trecho não permite nenhuma análise."
+        },
+        {
+          "id": "B",
+          "text": "A única tarefa é classificar todas as palavras."
+        },
+        {
+          "id": "C",
+          "text": "A fragmentação destaca a repetição do evento e pode sugerir insistência/cansaço/tensão conforme contexto."
+        },
+        {
+          "id": "D",
+          "text": "A análise depende apenas do tamanho do trecho."
+        },
+        {
+          "id": "E",
+          "text": "Qualquer interpretação é igualmente válida."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A fragmentação destaca a repetição do evento e pode sugerir insistência/cansaço/tensão conforme contexto.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-18-C01",
+        "POR-18-C02"
+      ],
+      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
+      "provenance": "VECTA_ORIGINAL"
+    }
+  ],
+  "concepts": [
+    {
+      "editorialConceptId": "POR-18-C01",
+      "lessonId": "POR-18",
+      "name": "efeito de sentido",
+      "masteryTarget": "Efeito de sentido resulta da relação entre escolha linguística, gênero, contexto e intenção; não pertence isoladamente a uma palavra.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-18-C02",
+      "lessonId": "POR-18",
+      "name": "seleção lexical",
+      "masteryTarget": "Seleção lexical pode intensificar, suavizar, aproximar, distanciar ou avaliar um referente.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-18-C03",
+      "lessonId": "POR-18",
+      "name": "pontuação expressiva",
+      "masteryTarget": "Repetição pode produzir ênfase, ritmo, progressão ou insistência quando intencional.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-18-C04",
+      "lessonId": "POR-18",
+      "name": "repetição",
+      "masteryTarget": "Pontuação/recursos gráficos podem marcar voz, hesitação, surpresa, ironia, interrupção ou destaque.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-18-C05",
+      "lessonId": "POR-18",
+      "name": "modalização",
+      "masteryTarget": "Tempos verbais, ordem dos termos e escolha do narrador influenciam perspectiva e foco.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-18-C06",
+      "lessonId": "POR-18",
+      "name": "voz narrativa",
+      "masteryTarget": "Em textos literários, ambiguidade e conotação ampliam interpretações, mas ainda exigem evidência textual.",
+      "status": "EDITORIAL"
+    }
+  ],
+  "qa": {
+    "lessonId": "POR-18",
+    "status": "PASS",
+    "checks": {
+      "sourceRefsResolve": true,
+      "questionCount": 8,
+      "eachQuestionHasFiveOptions": true,
+      "originalCoreContent": true
+    },
+    "editorialCautions": [
+      "Final VECTA schema must be reconciled by integration Maestro.",
+      "Question distractors should receive final spot-check after import/render."
+    ]
+  }
+}

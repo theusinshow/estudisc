@@ -2,7 +2,7 @@
 
 Status: **Accepted / Architecture Freeze v1**
 
-This folder defines the IFSC 2027 Track specialization. Core application architecture remains in the existing KNOW/OS documents.
+This folder defines the IFSC 2027 Track specialization. Core application architecture remains in the existing Estudisc documents.
 
 ## Documents
 

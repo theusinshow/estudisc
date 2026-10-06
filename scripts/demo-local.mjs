@@ -8,7 +8,7 @@ const base = `http://localhost:${port}`;
 console.log(`Iniciando servidor local em ${base} (dados temporários)...`);
 const server = spawn(process.execPath, ["node_modules/next/dist/bin/next", "dev", "-p", String(port)], {
   stdio: ["ignore", "pipe", "pipe"],
-  env: { ...process.env, DATABASE_URL: "memory://local", KNOW_OS_OWNER_ID: "local-owner" }
+  env: { ...process.env, DATABASE_URL: "memory://local", ESTUDISC_OWNER_ID: "local-owner", AUTH_TRUST_HOST: "true" }
 });
 // Both pipes must be drained: an unread stdout fills its buffer and freezes the server after ~900 requests.
 const relay = chunk => { const text = String(chunk); if (/error|⨯|already running/i.test(text) && !/MissingSecret|authjs|assertConfig|hydrated but some attributes/.test(text)) process.stderr.write(text); };

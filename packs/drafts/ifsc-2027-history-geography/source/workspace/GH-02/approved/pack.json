@@ -1,0 +1,526 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "GH-02",
+    "subject": "GH",
+    "title": "Cartografia: mapas, orientação, coordenadas e escala",
+    "unit": "Fundamentos",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+    "concepts": [
+      {
+        "id": "GH-02-CON-01",
+        "name": "Mapas e plantas",
+        "masteryTarget": "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade."
+      },
+      {
+        "id": "GH-02-CON-02",
+        "name": "Legenda",
+        "masteryTarget": "Latitude indica a posição ao norte ou ao sul do Equador; longitude indica a posição a leste ou oeste do meridiano de Greenwich."
+      },
+      {
+        "id": "GH-02-CON-03",
+        "name": "Orientação",
+        "masteryTarget": "A escala relaciona uma medida no mapa à distância correspondente no terreno."
+      },
+      {
+        "id": "GH-02-CON-04",
+        "name": "Rosa dos ventos",
+        "masteryTarget": "Quanto maior o denominador de uma escala numérica, menor é a escala e maior tende a ser a área representada com menos detalhe."
+      },
+      {
+        "id": "GH-02-CON-05",
+        "name": "Latitude e longitude",
+        "masteryTarget": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica."
+      },
+      {
+        "id": "GH-02-CON-06",
+        "name": "Escala gráfica e numérica",
+        "masteryTarget": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "GH-02-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "Um mapa reduz o mundo real. Para usá-lo corretamente, é preciso entender orientação, coordenadas, legenda e escala."
+      },
+      {
+        "id": "GH-02-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar os conceitos centrais de Cartografia: mapas, orientação, coordenadas e escala em linguagem própria.",
+          "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+          "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+        ]
+      },
+      {
+        "id": "GH-02-B03",
+        "type": "EXPLANATION",
+        "title": "Ideia central",
+        "content": "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade. Latitude indica a posição ao norte ou ao sul do Equador; longitude indica a posição a leste ou oeste do meridiano de Greenwich.",
+        "items": [
+          "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade.",
+          "Latitude indica a posição ao norte ou ao sul do Equador; longitude indica a posição a leste ou oeste do meridiano de Greenwich."
+        ]
+      },
+      {
+        "id": "GH-02-B04",
+        "type": "EXPLANATION",
+        "title": "Como as relações se organizam",
+        "content": "A escala relaciona uma medida no mapa à distância correspondente no terreno. Quanto maior o denominador de uma escala numérica, menor é a escala e maior tende a ser a área representada com menos detalhe.",
+        "items": [
+          "A escala relaciona uma medida no mapa à distância correspondente no terreno.",
+          "Quanto maior o denominador de uma escala numérica, menor é a escala e maior tende a ser a área representada com menos detalhe."
+        ]
+      },
+      {
+        "id": "GH-02-B05",
+        "type": "EXPLANATION",
+        "title": "O que conecta o tema à prova",
+        "content": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica.",
+        "items": [
+          "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica.",
+          "Ler mapa e legenda antes de inferir localização, distância, direção ou distribuição espacial."
+        ]
+      },
+      {
+        "id": "GH-02-B06",
+        "type": "CALLOUT",
+        "variant": "SOURCE_LITERACY",
+        "title": "Leia a fonte, não apenas o tema",
+        "items": [
+          "Ler mapa e legenda antes de inferir localização, distância, direção ou distribuição espacial.",
+          "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+        ]
+      },
+      {
+        "id": "GH-02-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTION",
+        "title": "Erros que custam ponto",
+        "items": [
+          "Latitude e longitude medem exatamente a altitude de um lugar.",
+          "Escala 1:10.000 representa menos detalhe que 1:1.000.000.",
+          "Todo mapa é uma cópia neutra e completa da realidade.",
+          "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        ]
+      },
+      {
+        "id": "GH-02-B08",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Vocabulário essencial",
+        "items": [
+          "Mapas e plantas",
+          "Legenda",
+          "Orientação",
+          "Rosa dos ventos",
+          "Latitude e longitude",
+          "Escala gráfica e numérica"
+        ]
+      },
+      {
+        "id": "GH-02-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Como resolver uma questão",
+        "prompt": "Uma questão apresenta uma fonte relacionada a Cartografia: mapas, orientação, coordenadas e escala. Como decidir entre alternativas plausíveis?",
+        "answer": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica.",
+        "reasoning": [
+          "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+          "Extraia da fonte apenas as evidências explícitas.",
+          "Ative o conceito da aula que explica a evidência.",
+          "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+          "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+        ]
+      },
+      {
+        "id": "GH-02-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Estratégia IFSC",
+        "items": [
+          "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+          "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+          "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+        ]
+      },
+      {
+        "id": "GH-02-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Material complementar",
+        "mediaRefs": [
+          "SRC-GH-001",
+          "SRC-GH-002",
+          "SRC-GH-003",
+          "SRC-GH-004"
+        ],
+        "optional": true
+      },
+      {
+        "id": "GH-02-B12",
+        "type": "COMPONENT_REQUEST",
+        "title": "Visual determinístico",
+        "requestRef": "DET-GH-02-001",
+        "status": "PENDING"
+      },
+      {
+        "id": "GH-02-B13",
+        "type": "SUMMARY",
+        "title": "Resumo para recuperar sem olhar",
+        "items": [
+          "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade.",
+          "Latitude indica a posição ao norte ou ao sul do Equador; longitude indica a posição a leste ou oeste do meridiano de Greenwich.",
+          "A escala relaciona uma medida no mapa à distância correspondente no terreno.",
+          "Quanto maior o denominador de uma escala numérica, menor é a escala e maior tende a ser a área representada com menos detalhe.",
+          "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica."
+        ]
+      },
+      {
+        "id": "GH-02-B14",
+        "type": "EXIT_TICKET",
+        "title": "Saída rápida",
+        "prompt": "Em duas ou três frases, explique a ideia mais importante de Cartografia: mapas, orientação, coordenadas e escala e cite um erro de interpretação que você evitaria numa questão.",
+        "answerGuide": "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade. Evite, por exemplo: Latitude e longitude medem exatamente a altitude de um lugar."
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-GH-001",
+      "SRC-GH-001",
+      "SRC-GH-002",
+      "SRC-GH-003",
+      "SRC-GH-004",
+      "SRC-GH-005",
+      "SRC-GH-006",
+      "SRC-GH-057",
+      "SRC-IFSC-GH-2026-1",
+      "SRC-IFSC-GH-2026-2"
+    ],
+    "mediaRefs": [
+      "SRC-GH-001",
+      "SRC-GH-002",
+      "SRC-GH-003",
+      "SRC-GH-004",
+      "SRC-GH-005",
+      "SRC-GH-006",
+      "SRC-GH-057"
+    ],
+    "imageRequestRefs": [],
+    "editorialNotes": [
+      "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+      "Não publicar mídia externa sem revisão de licença e proveniência.",
+      "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+      "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+    ]
+  },
+  "questions": [
+    {
+      "id": "GH-02-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Em relação a Cartografia: mapas, orientação, coordenadas e escala, qual afirmação está correta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        },
+        {
+          "key": "B",
+          "text": "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade."
+        },
+        {
+          "key": "C",
+          "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        },
+        {
+          "key": "D",
+          "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        },
+        {
+          "key": "E",
+          "text": "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "RECALL",
+      "conceptIds": [
+        "GH-02-CON-01"
+      ],
+      "targetedError": "foundation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-02-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante diz: “Latitude e longitude medem exatamente a altitude de um lugar.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        },
+        {
+          "key": "B",
+          "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        },
+        {
+          "key": "C",
+          "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        },
+        {
+          "key": "D",
+          "text": "Latitude indica a posição ao norte ou ao sul do Equador; longitude indica a posição a leste ou oeste do meridiano de Greenwich."
+        },
+        {
+          "key": "E",
+          "text": "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Latitude indica a posição ao norte ou ao sul do Equador; longitude indica a posição a leste ou oeste do meridiano de Greenwich.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-02-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-02-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Considere a situação de partida da aula: Um mapa reduz o mundo real. Para usá-lo corretamente, é preciso entender orientação, coordenadas, legenda e escala. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        },
+        {
+          "key": "B",
+          "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        },
+        {
+          "key": "C",
+          "text": "A escala relaciona uma medida no mapa à distância correspondente no terreno."
+        },
+        {
+          "key": "D",
+          "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        },
+        {
+          "key": "E",
+          "text": "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A escala relaciona uma medida no mapa à distância correspondente no terreno.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "GH-02-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-02-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "O IFSC pode apresentar Cartografia: mapas, orientação, coordenadas e escala por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Quanto maior o denominador de uma escala numérica, menor é a escala e maior tende a ser a área representada com menos detalhe."
+        },
+        {
+          "key": "B",
+          "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        },
+        {
+          "key": "C",
+          "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        },
+        {
+          "key": "D",
+          "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        },
+        {
+          "key": "E",
+          "text": "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Quanto maior o denominador de uma escala numérica, menor é a escala e maior tende a ser a área representada com menos detalhe.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "GH-02-CON-04"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-02-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade.\nII. Latitude e longitude medem exatamente a altitude de um lugar.\nIII. A escala relaciona uma medida no mapa à distância correspondente no terreno.\nIV. Escala 1:10.000 representa menos detalhe que 1:1.000.000.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-02-CON-01",
+        "GH-02-CON-02",
+        "GH-02-CON-03",
+        "GH-02-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-02-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma fonte foi apresentada numa questão sobre Cartografia: mapas, orientação, coordenadas e escala. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        },
+        {
+          "key": "B",
+          "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        },
+        {
+          "key": "C",
+          "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        },
+        {
+          "key": "D",
+          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        },
+        {
+          "key": "E",
+          "text": "Ler mapa e legenda antes de inferir localização, distância, direção ou distribuição espacial."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Ler mapa e legenda antes de inferir localização, distância, direção ou distribuição espacial.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "conceptIds": [
+        "GH-02-CON-01",
+        "GH-02-CON-02",
+        "GH-02-CON-03",
+        "GH-02-CON-04",
+        "GH-02-CON-05",
+        "GH-02-CON-06"
+      ],
+      "targetedError": "source_interpretation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-02-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Cartografia: mapas, orientação, coordenadas e escala?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade."
+        },
+        {
+          "key": "B",
+          "text": "Latitude indica a posição ao norte ou ao sul do Equador; longitude indica a posição a leste ou oeste do meridiano de Greenwich."
+        },
+        {
+          "key": "C",
+          "text": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica."
+        },
+        {
+          "key": "D",
+          "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        },
+        {
+          "key": "E",
+          "text": "Quanto maior o denominador de uma escala numérica, menor é a escala e maior tende a ser a área representada com menos detalhe."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-02-CON-01",
+        "GH-02-CON-02",
+        "GH-02-CON-03",
+        "GH-02-CON-04",
+        "GH-02-CON-05",
+        "GH-02-CON-06"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-02-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Cartografia: mapas, orientação, coordenadas e escala, qual conclusão final é sustentável?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        },
+        {
+          "key": "B",
+          "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        },
+        {
+          "key": "C",
+          "text": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica."
+        },
+        {
+          "key": "D",
+          "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        },
+        {
+          "key": "E",
+          "text": "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-02-CON-01",
+        "GH-02-CON-02",
+        "GH-02-CON-03",
+        "GH-02-CON-04",
+        "GH-02-CON-05",
+        "GH-02-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    }
+  ]
+}

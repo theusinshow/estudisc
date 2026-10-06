@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-18-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Proclamação da República e República Velha, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A República de 1889 implantou imediatamente sufrágio universal."
+      },
+      {
+        "key": "B",
+        "text": "A Proclamação da República derrubou a monarquia em 1889 e teve forte participação militar."
+      },
+      {
+        "key": "C",
+        "text": "Coronelismo era um posto oficial do Exército responsável pelas eleições."
+      },
+      {
+        "key": "D",
+        "text": "A República Velha não teve movimentos sociais ou greves."
+      },
+      {
+        "key": "E",
+        "text": "Federalismo eliminou o poder das oligarquias estaduais."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A Proclamação da República derrubou a monarquia em 1889 e teve forte participação militar.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-18-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-18-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “A República de 1889 implantou imediatamente sufrágio universal.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A República de 1889 implantou imediatamente sufrágio universal."
+      },
+      {
+        "key": "B",
+        "text": "Coronelismo era um posto oficial do Exército responsável pelas eleições."
+      },
+      {
+        "key": "C",
+        "text": "A República Velha não teve movimentos sociais ou greves."
+      },
+      {
+        "key": "D",
+        "text": "A Constituição de 1891 estabeleceu república federativa e presidencialista, mas manteve participação eleitoral limitada."
+      },
+      {
+        "key": "E",
+        "text": "Federalismo eliminou o poder das oligarquias estaduais."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A Constituição de 1891 estabeleceu república federativa e presidencialista, mas manteve participação eleitoral limitada.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-18-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-18-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: A República começou em 1889, mas cidadania política e poder permaneceram muito desiguais. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A República de 1889 implantou imediatamente sufrágio universal."
+      },
+      {
+        "key": "B",
+        "text": "Coronelismo era um posto oficial do Exército responsável pelas eleições."
+      },
+      {
+        "key": "C",
+        "text": "Na República Velha, oligarquias estaduais, coronelismo e mecanismos de controle eleitoral tiveram grande influência política."
+      },
+      {
+        "key": "D",
+        "text": "A República Velha não teve movimentos sociais ou greves."
+      },
+      {
+        "key": "E",
+        "text": "Federalismo eliminou o poder das oligarquias estaduais."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Na República Velha, oligarquias estaduais, coronelismo e mecanismos de controle eleitoral tiveram grande influência política.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-18-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-18-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Proclamação da República e República Velha por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O período também teve revoltas urbanas e rurais, greves e movimentos sociais que contestaram exclusões."
+      },
+      {
+        "key": "B",
+        "text": "A República de 1889 implantou imediatamente sufrágio universal."
+      },
+      {
+        "key": "C",
+        "text": "Coronelismo era um posto oficial do Exército responsável pelas eleições."
+      },
+      {
+        "key": "D",
+        "text": "A República Velha não teve movimentos sociais ou greves."
+      },
+      {
+        "key": "E",
+        "text": "Federalismo eliminou o poder das oligarquias estaduais."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "O período também teve revoltas urbanas e rurais, greves e movimentos sociais que contestaram exclusões.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-18-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-18-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. A Proclamação da República derrubou a monarquia em 1889 e teve forte participação militar.\nII. A República de 1889 implantou imediatamente sufrágio universal.\nIII. Na República Velha, oligarquias estaduais, coronelismo e mecanismos de controle eleitoral tiveram grande influência política.\nIV. Coronelismo era um posto oficial do Exército responsável pelas eleições.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-18-CON-01",
+      "GH-18-CON-02",
+      "GH-18-CON-03",
+      "GH-18-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-18-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Proclamação da República e República Velha. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A República de 1889 implantou imediatamente sufrágio universal."
+      },
+      {
+        "key": "B",
+        "text": "Coronelismo era um posto oficial do Exército responsável pelas eleições."
+      },
+      {
+        "key": "C",
+        "text": "A República Velha não teve movimentos sociais ou greves."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Evitar confundir mudança de regime com democratização imediata e universal."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Evitar confundir mudança de regime com democratização imediata e universal.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-18-CON-01",
+      "GH-18-CON-02",
+      "GH-18-CON-03",
+      "GH-18-CON-04",
+      "GH-18-CON-05",
+      "GH-18-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-18-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Proclamação da República e República Velha?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Proclamação da República derrubou a monarquia em 1889 e teve forte participação militar."
+      },
+      {
+        "key": "B",
+        "text": "A Constituição de 1891 estabeleceu república federativa e presidencialista, mas manteve participação eleitoral limitada."
+      },
+      {
+        "key": "C",
+        "text": "Modernização econômica e urbana coexistiu com desigualdade, violência política e direitos restritos."
+      },
+      {
+        "key": "D",
+        "text": "A República Velha não teve movimentos sociais ou greves."
+      },
+      {
+        "key": "E",
+        "text": "O período também teve revoltas urbanas e rurais, greves e movimentos sociais que contestaram exclusões."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-18-CON-01",
+      "GH-18-CON-02",
+      "GH-18-CON-03",
+      "GH-18-CON-04",
+      "GH-18-CON-05",
+      "GH-18-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-18-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Proclamação da República e República Velha, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A República de 1889 implantou imediatamente sufrágio universal."
+      },
+      {
+        "key": "B",
+        "text": "Coronelismo era um posto oficial do Exército responsável pelas eleições."
+      },
+      {
+        "key": "C",
+        "text": "Modernização econômica e urbana coexistiu com desigualdade, violência política e direitos restritos."
+      },
+      {
+        "key": "D",
+        "text": "A República Velha não teve movimentos sociais ou greves."
+      },
+      {
+        "key": "E",
+        "text": "Federalismo eliminou o poder das oligarquias estaduais."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Modernização econômica e urbana coexistiu com desigualdade, violência política e direitos restritos.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-18-CON-01",
+      "GH-18-CON-02",
+      "GH-18-CON-03",
+      "GH-18-CON-04",
+      "GH-18-CON-05",
+      "GH-18-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

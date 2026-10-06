@@ -6,7 +6,7 @@ Draft only. No scientific/editorial source rewrite, research, generative imagery
 
 One source-driven SVG machinery implements mobile text cards, comparisons and flows. The only drawing exceptions are the requested open/closed circuit, the exact supplied Aa × Aa Punnett table, and the two mass-dependent stellar branches. Worked energy and atomic-count examples use only the supplied numbers. Model/classification comparisons do not introduce anatomical, molecular or exact phylogenetic geometry. The current figure renderer displays an image; live calculator/atom/crossing controls are not claimed.
 
-All visible scientific text has a complete text equivalent in the manifest. Source/request metadata and exact source-file hashes are retained in `asset-status.json`. Original queues remain untouched. The exact manual Antigravity handoff remains in `.vecta-agent-context/WORKER-MEDIA-PREFLIGHT.md`; no Antigravity capability/model/generation is verified.
+All visible scientific text has a complete text equivalent in the manifest. Source/request metadata and exact source-file hashes are retained in `asset-status.json`. Original queues remain untouched. The exact manual Antigravity handoff remains in `.estudisc-agent-context/WORKER-MEDIA-PREFLIGHT.md`; no Antigravity capability/model/generation is verified.
 
 Canonical commands (run from repository root):
 

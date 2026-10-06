@@ -2,7 +2,7 @@
 // scrypt hash and never printed. Usage:
 //   node scripts/create-account.mjs "Nome" 123456 [--admin] [--id account-nome]
 //   node scripts/create-account.mjs --remove "Nome"
-// For production, copy KNOW_OS_ACCOUNTS and AUTH_SECRET from .env.local to the hosting environment.
+// For production, copy ESTUDISC_ACCOUNTS and AUTH_SECRET from .env.local to the hosting environment.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { randomBytes } from "node:crypto";
 
@@ -10,6 +10,7 @@ import { randomBytes } from "node:crypto";
 const emitWarning = process.emitWarning;
 process.emitWarning = (warning, ...rest) => { if (!String(warning).includes("Module type of")) emitWarning.call(process, warning, ...rest); };
 const { hashAccessCode, parseCodeAccounts } = await import("../src/features/auth/code-accounts.ts");
+const { getServerEnv } = await import("../src/lib/env.ts");
 
 const ENV_FILE = ".env.local";
 const args = process.argv.slice(2);
@@ -39,14 +40,15 @@ const setValue = (key, value) => {
 };
 
 const sameAccount = (account) => account.id === id || account.name.toLocaleLowerCase("pt-BR") === name.trim().toLocaleLowerCase("pt-BR");
-const accounts = (parseCodeAccounts(valueOf("KNOW_OS_ACCOUNTS")) ?? []).filter((account) => !sameAccount(account));
+const config = getServerEnv(Object.fromEntries(lines.filter(line => /^[A-Z_]+=/.test(line)).map(line => [line.slice(0,line.indexOf("=")), valueOf(line.slice(0,line.indexOf("=")))])));
+const accounts = (parseCodeAccounts(config.ESTUDISC_ACCOUNTS) ?? []).filter((account) => !sameAccount(account));
 if (!remove) accounts.push({ id, name: name.trim(), role: admin ? "ADMIN" : "STUDENT", code: hashAccessCode(code) });
 
 // Single quotes keep the JSON literal in dotenv files.
-setValue("KNOW_OS_ACCOUNTS", accounts.length ? `'${JSON.stringify(accounts)}'` : "");
+setValue("ESTUDISC_ACCOUNTS", accounts.length ? `'${JSON.stringify(accounts)}'` : "");
 if ((valueOf("AUTH_SECRET") ?? "").length < 32) setValue("AUTH_SECRET", randomBytes(32).toString("base64url"));
 writeFileSync(ENV_FILE, `${lines.join("\n")}\n`);
 
 console.log(remove ? `Conta "${name}" removida.` : `Conta "${name.trim()}" (${admin ? "ADMIN" : "STUDENT"}, id ${id}) salva.`);
 console.log(`Contas em ${ENV_FILE}: ${accounts.map((account) => `${account.name} (${account.role})`).join(", ") || "nenhuma — login por código desativado"}.`);
-console.log("Reinicie o servidor para aplicar. Em produção, copie KNOW_OS_ACCOUNTS e AUTH_SECRET para as variáveis de ambiente do host.");
+console.log("Reinicie o servidor para aplicar. Em produção, copie ESTUDISC_ACCOUNTS e AUTH_SECRET para as variáveis de ambiente do host.");

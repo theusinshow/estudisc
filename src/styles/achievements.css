@@ -1,0 +1,90 @@
+/* Study achievements inherit the approved paper/ink, saturated surfaces and token system. */
+.achievements-page { display: grid; gap: var(--estudisc-spacing-24); width: min(100%, 52rem); margin-inline: auto; color: var(--estudisc-color-ink); }
+.achievements-page h1, .achievements-page h2, .achievements-page h3, .achievements-page p { margin: 0; }
+.achievements-page h1 { font-size: clamp(var(--estudisc-typography-display-sizes-md), 8vw, var(--estudisc-typography-display-sizes-2xl)); font-weight: 900; line-height: 1; text-wrap: balance; }
+.achievements-page h2 { font-size: var(--estudisc-typography-display-sizes-sm); font-weight: 850; line-height: 1.15; text-wrap: balance; }
+.achievements-page p { line-height: var(--estudisc-typography-body-leading); }
+.achievements-heading > p { margin-top: var(--estudisc-spacing-8); max-width: 48ch; font-size: var(--estudisc-typography-body-sizes-lg); }
+.achievement-next { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: start; gap: var(--estudisc-spacing-12); padding: var(--estudisc-spacing-12); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-surface-lime); box-shadow: var(--estudisc-shadow-structural); animation: estudisc-state-enter var(--estudisc-motion-base) var(--estudisc-motion-easing) both; }
+.achievement-next-copy { min-width: 0; display: grid; gap: var(--estudisc-spacing-8); }
+.achievement-next h2 { font-size: var(--estudisc-typography-display-sizes-md); font-weight: 900; }
+.achievement-next .achievement-status { display: inline-flex; align-items: center; gap: var(--estudisc-spacing-3); font-size: var(--estudisc-typography-body-sizes-sm); font-weight: 700; }
+.achievement-status svg { width: var(--estudisc-icon-sm); height: var(--estudisc-icon-sm); }
+.achievement-next .primary-action { width: fit-content; margin-top: var(--estudisc-spacing-2); background: var(--estudisc-color-ink); color: var(--estudisc-color-panel); }
+.achievement-mark { display: grid; place-items: center; flex: none; width: var(--estudisc-spacing-32); height: var(--estudisc-spacing-32); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-surface-yellow); color: var(--estudisc-color-ink); box-shadow: var(--estudisc-shadow-pressed); }
+.achievement-mark svg { width: var(--estudisc-spacing-16); height: var(--estudisc-spacing-16); stroke-width: 2; }
+.achievement-mark[data-badge="study-practice-twenty"] { background: var(--estudisc-color-surface-violet); }
+.achievement-mark[data-category="memory"] { background: var(--estudisc-color-surface-sky); }
+.achievement-mark[data-category="comeback"] { background: var(--estudisc-color-surface-pink); }
+.achievement-mark[data-category="rhythm"] { background: var(--estudisc-color-surface-lime); }
+.achievement-meter { display: grid; gap: var(--estudisc-spacing-3); font-size: var(--estudisc-typography-body-sizes-sm); font-variant-numeric: tabular-nums; }
+.achievements-page progress { appearance: none; display: block; width: 100%; height: var(--estudisc-spacing-6); overflow: hidden; border: var(--estudisc-border-hair) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-sm); background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); }
+.achievements-page progress::-webkit-progress-bar { background: var(--estudisc-color-panel); }
+.achievements-page progress::-webkit-progress-value { background: var(--estudisc-color-ink); }
+.achievements-page progress::-moz-progress-bar { background: var(--estudisc-color-ink); }
+.achievement-week-heading, .achievement-section-heading { display: flex; align-items: start; justify-content: space-between; gap: var(--estudisc-spacing-8); }
+.achievement-week-heading p, .achievement-section-heading p { margin-top: var(--estudisc-spacing-3); }
+.achievement-week-count { display: flex; flex-wrap: wrap; align-items: center; justify-content: end; gap: var(--estudisc-spacing-2); min-width: 6ch; font-size: var(--estudisc-typography-display-sizes-sm); font-variant-numeric: tabular-nums; }
+.achievement-week-count svg { width: var(--estudisc-icon-md); height: var(--estudisc-icon-md); }
+.achievement-week-count span { width: 100%; font-size: var(--estudisc-typography-body-sizes-sm); text-align: right; }
+.achievement-days { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: var(--estudisc-spacing-3); margin: var(--estudisc-spacing-12) 0 var(--estudisc-spacing-8); padding: 0; list-style: none; }
+.achievement-days li { display: flex; flex-direction: column; align-items: center; gap: var(--estudisc-spacing-2); font-size: var(--estudisc-typography-body-sizes-sm); font-weight: 650; }
+.achievement-day-mark { display: grid; place-items: center; width: 100%; max-width: var(--estudisc-spacing-32); aspect-ratio: 1; border: var(--estudisc-border-hair) dashed var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-panel); }
+.achievement-day-mark svg { width: var(--estudisc-icon-lg); height: var(--estudisc-icon-lg); }
+.achievement-days li[data-active="true"] .achievement-day-mark { border-style: solid; background: var(--estudisc-color-surface-lime); }
+.achievement-days li[data-today="true"] .achievement-day-mark { outline: var(--estudisc-focus-width) solid var(--estudisc-color-ink); outline-offset: var(--estudisc-focus-offset); }
+.achievement-day-dot { width: var(--estudisc-spacing-4); height: var(--estudisc-spacing-4); border-radius: 50%; background: var(--estudisc-color-ink); }
+.achievement-week-note { font-size: var(--estudisc-typography-body-sizes-sm); max-width: 65ch; }
+.achievement-section-heading > strong { white-space: nowrap; font-size: var(--estudisc-typography-body-sizes-sm); }
+.achievement-collection { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: var(--estudisc-spacing-8); margin: var(--estudisc-spacing-12) 0 0; padding: 0; list-style: none; }
+.achievement-badge { border: var(--estudisc-border-hair) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); }
+.achievement-badge[data-earned="true"] { border-width: var(--estudisc-border-rule); box-shadow: var(--estudisc-shadow-pressed); }
+.achievement-badge summary { display: flex; flex-direction: column; align-items: start; gap: var(--estudisc-spacing-6); padding: var(--estudisc-spacing-8); cursor: pointer; list-style: none; min-height: var(--estudisc-touch-minimum); border-radius: var(--estudisc-radius-learning-card); }
+.achievement-badge summary::-webkit-details-marker { display: none; }
+.achievement-badge summary > strong { font-size: var(--estudisc-typography-body-sizes-lg); line-height: 1.25; font-weight: 800; overflow-wrap: anywhere; }
+.achievement-badge summary:hover, .achievement-badge[open] summary { background: var(--estudisc-color-paper); }
+.achievement-badge-state { display: inline-flex; gap: var(--estudisc-spacing-2); align-items: center; font-size: var(--estudisc-typography-body-sizes-sm); font-weight: 700; }
+.achievement-badge-state svg { width: var(--estudisc-icon-sm); height: var(--estudisc-icon-sm); flex: none; }
+.achievement-badge-count { font-size: var(--estudisc-typography-body-sizes-sm); font-variant-numeric: tabular-nums; }
+.achievement-badge-detail { padding: var(--estudisc-spacing-8); border-top: var(--estudisc-border-hair) solid var(--estudisc-color-ink); font-size: var(--estudisc-typography-body-sizes-sm); }
+.achievement-badge-detail .achievement-date { margin-top: var(--estudisc-spacing-6); }
+.achievement-badge-detail a, .achievement-mission-list a, .achievement-separation a { display: inline-flex; align-items: center; gap: var(--estudisc-spacing-3); min-height: var(--estudisc-touch-minimum); font-weight: 750; text-underline-offset: var(--estudisc-spacing-2); }
+.achievement-badge-detail a { margin-top: var(--estudisc-spacing-4); }
+.achievement-badge-detail a svg, .achievement-mission-list a svg, .achievement-separation a svg { flex: none; width: var(--estudisc-icon-sm); height: var(--estudisc-icon-sm); }
+.achievement-mission-list { margin: var(--estudisc-spacing-12) 0 0; padding: 0; list-style: none; border-top: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }
+.achievement-mission-list li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--estudisc-spacing-6); padding: var(--estudisc-spacing-10) 0; border-bottom: var(--estudisc-border-hair) solid var(--estudisc-color-ink); }
+.achievement-mission-icon { display: grid; place-items: center; width: var(--estudisc-spacing-16); height: var(--estudisc-spacing-16); border: var(--estudisc-border-hair) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-sm); background: var(--estudisc-color-panel); }
+.achievement-mission-icon svg { width: var(--estudisc-icon-md); height: var(--estudisc-icon-md); }
+.achievement-mission-list li[data-complete="true"] .achievement-mission-icon { background: var(--estudisc-color-surface-lime); }
+.achievement-mission-list h3 { font-size: var(--estudisc-typography-body-sizes-lg); font-weight: 800; }
+.achievement-mission-list p { margin-top: var(--estudisc-spacing-2); }
+.achievement-mission-progress { display: block; margin-top: var(--estudisc-spacing-4); font-size: var(--estudisc-typography-body-sizes-sm); font-weight: 700; }
+.achievement-mission-list a { grid-column: 2; justify-self: start; }
+.achievement-rank { display: grid; gap: var(--estudisc-spacing-8); border-top: var(--estudisc-border-rule) solid var(--estudisc-color-ink); padding-top: var(--estudisc-spacing-12); }
+.achievement-rank .achievement-rank-name { margin-top: var(--estudisc-spacing-6); font-size: var(--estudisc-typography-display-sizes-sm); font-weight: 800; }
+.achievement-rank-name span { display: inline-block; margin-left: var(--estudisc-spacing-4); font-size: var(--estudisc-typography-body-sizes-md); font-variant-numeric: tabular-nums; }
+.achievement-rank-progress { display: grid; align-content: center; gap: var(--estudisc-spacing-4); }
+.achievement-xp-rule, .achievement-separation { font-size: var(--estudisc-typography-body-sizes-sm); }
+.achievement-separation a { margin-left: var(--estudisc-spacing-2); }
+.achievement-history summary { min-height: var(--estudisc-touch-minimum); cursor: pointer; font-weight: 750; }
+.achievement-history ul { display: grid; gap: var(--estudisc-spacing-8); list-style: none; margin: var(--estudisc-spacing-8) 0 0; padding: 0; }
+.achievement-history li { display: flex; align-items: start; gap: var(--estudisc-spacing-6); }
+.achievement-history svg { flex: none; width: var(--estudisc-icon-md); height: var(--estudisc-icon-md); }
+@media (max-width: 767px) {
+  .achievement-next { grid-template-columns: minmax(0, 1fr); }
+  .achievement-next > .achievement-mark { width: var(--estudisc-spacing-24); height: var(--estudisc-spacing-24); }
+  .achievement-section-heading { flex-direction: column; }
+  .achievement-next .primary-action { width: 100%; justify-content: center; }
+}
+@media (min-width: 768px) {
+  .achievement-collection { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .achievement-badge summary { padding: var(--estudisc-spacing-12); }
+  .achievement-next { padding: var(--estudisc-spacing-16); }
+  .achievement-mission-list li { grid-template-columns: auto minmax(0, 1fr) auto; align-items: start; }
+  .achievement-mission-list a { grid-column: auto; }
+  .achievement-rank { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .achievement-xp-rule, .achievement-separation { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .achievement-next { animation: none; }
+}

@@ -28,6 +28,11 @@ test-results/
 *.sqlite3
 .local/
 .data/
+.maestri/
+tools/vecta-content-studio/workspace/
+tools/vecta-content-studio/schemas/
+tools/estudisc-content-studio/workspace/
+tools/estudisc-content-studio/schemas/
 
 # Logs
 *.log
@@ -60,3 +65,7 @@ Thumbs.db
 /sources/ifsc/*.pdf
 # Local Python caches from editorial ingestion scripts
 __pycache__/
+
+# Locally preserved source-library PDFs; catalog retains URLs, rights and hashes
+/vecta-source-library/MAT/matematica-instrumental-proedu-585/pdfs/*.pdf
+/vecta-source-library/MAT/math-enrichment-ifsc-2027-1/pdfs/*.pdf

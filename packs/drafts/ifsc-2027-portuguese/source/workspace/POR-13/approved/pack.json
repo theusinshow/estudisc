@@ -1,0 +1,513 @@
+{
+  "lesson": {
+    "id": "POR-13",
+    "subject": "POR",
+    "title": "Operadores lógico-discursivos, conjunções e advérbios",
+    "module": "Sentido e conexão",
+    "priority": "P0",
+    "status": "IMPORT_READY",
+    "estimatedMinutes": 22,
+    "masteryTarget": "Identificar relações de causa, consequência, oposição, conclusão, condição, finalidade, tempo e adição.",
+    "sourceRefs": [
+      "POR-SRC-001",
+      "POR-SRC-015",
+      "POR-SRC-016",
+      "POR-SRC-017",
+      "POR-SRC-038"
+    ],
+    "conceptRefs": [
+      "POR-13-C01",
+      "POR-13-C02",
+      "POR-13-C03",
+      "POR-13-C04",
+      "POR-13-C05",
+      "POR-13-C06"
+    ],
+    "blocks": [
+      {
+        "type": "HOOK",
+        "title": "Leia como a prova lê",
+        "content": "A escola ampliou o bicicletário porque mais estudantes passaram a pedalar. O número de vagas aumentou; portanto, a fila diminuiu."
+      },
+      {
+        "type": "LEARNING_GOALS",
+        "items": [
+          "Identificar relações de causa, consequência, oposição, conclusão, condição, finalidade, tempo e adição.",
+          "Justificar respostas com evidência linguística ou textual.",
+          "Evitar regras absolutas quando o fenômeno depende do contexto."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 1",
+        "paragraphs": [
+          "Conectores não apenas unem trechos: explicitam relações de sentido.",
+          "“Mas”, “porém” e “contudo” costumam introduzir oposição ou contraste.",
+          "“Portanto”, “logo” e “por isso” podem marcar consequência ou conclusão conforme a construção."
+        ]
+      },
+      {
+        "type": "EXPLANATION",
+        "title": "Ideias essenciais — parte 2",
+        "paragraphs": [
+          "“Porque”, “pois” e locuções causais podem apresentar justificativa ou causa; o valor depende de posição e contexto.",
+          "Conectores condicionais, temporais e finalísticos orientam hipótese, sequência e objetivo.",
+          "Trocar um conector exige preservar a relação lógico-discursiva, não apenas a classe gramatical."
+        ]
+      },
+      {
+        "type": "KEY_TERMS",
+        "items": [
+          {
+            "term": "conector",
+            "conceptRef": "POR-13-C01"
+          },
+          {
+            "term": "conjunção",
+            "conceptRef": "POR-13-C02"
+          },
+          {
+            "term": "causa",
+            "conceptRef": "POR-13-C03"
+          },
+          {
+            "term": "consequência",
+            "conceptRef": "POR-13-C04"
+          },
+          {
+            "term": "oposição",
+            "conceptRef": "POR-13-C05"
+          },
+          {
+            "term": "conclusão",
+            "conceptRef": "POR-13-C06"
+          }
+        ]
+      },
+      {
+        "type": "MISCONCEPTION_CHECK",
+        "items": [
+          {
+            "claim": "Conectores são enfeites removíveis.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Todo “pois” tem o mesmo valor.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "“Mas” e “portanto” são trocáveis.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          },
+          {
+            "claim": "Duas conjunções são sempre sinônimas.",
+            "status": "INCORRECT",
+            "instruction": "Explique por que a generalização falha."
+          }
+        ]
+      },
+      {
+        "type": "WORKED_EXAMPLE",
+        "stimulus": "A escola ampliou o bicicletário porque mais estudantes passaram a pedalar. O número de vagas aumentou; portanto, a fila diminuiu.",
+        "analysis": "“Porque” introduz causa; “portanto” apresenta conclusão/consequência relacionada ao aumento das vagas."
+      },
+      {
+        "type": "ACTIVE_LEARNING",
+        "title": "Atividade de aplicação",
+        "steps": [
+          "Organize conectores por relação.",
+          "Substitua conectores e marque trocas válidas.",
+          "Complete lacunas justificando cada escolha."
+        ],
+        "evidence": "Resposta curta ou classificação justificada."
+      },
+      {
+        "type": "IFSC_STRATEGY",
+        "content": "Leia a relação entre as ideias antes de olhar as alternativas."
+      },
+      {
+        "type": "SUMMARY",
+        "items": [
+          "Conectores não apenas unem trechos: explicitam relações de sentido.",
+          "“Mas”, “porém” e “contudo” costumam introduzir oposição ou contraste.",
+          "“Portanto”, “logo” e “por isso” podem marcar consequência ou conclusão conforme a construção.",
+          "“Porque”, “pois” e locuções causais podem apresentar justificativa ou causa; o valor depende de posição e contexto.",
+          "Conectores condicionais, temporais e finalísticos orientam hipótese, sequência e objetivo.",
+          "Trocar um conector exige preservar a relação lógico-discursiva, não apenas a classe gramatical."
+        ]
+      },
+      {
+        "type": "EXIT_TICKET",
+        "prompt": "Explique o princípio mais importante de Operadores lógico-discursivos, conjunções e advérbios e crie um exemplo próprio."
+      }
+    ],
+    "media": {
+      "deterministicAssetRefs": [
+        "POR-ASSET-07"
+      ],
+      "antigravityRefs": [],
+      "authenticMediaRefs": []
+    }
+  },
+  "questions": [
+    {
+      "id": "POR-13-Q01",
+      "lessonId": "POR-13",
+      "type": "MCQ",
+      "stem": "Qual afirmação descreve corretamente Operadores lógico-discursivos, conjunções e advérbios em uso real da língua?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Todo “pois” tem o mesmo valor."
+        },
+        {
+          "id": "B",
+          "text": "“Mas” e “portanto” são trocáveis."
+        },
+        {
+          "id": "C",
+          "text": "Duas conjunções são sempre sinônimas."
+        },
+        {
+          "id": "D",
+          "text": "Conectores não apenas unem trechos: explicitam relações de sentido."
+        },
+        {
+          "id": "E",
+          "text": "Conectores são enfeites removíveis."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Conectores não apenas unem trechos: explicitam relações de sentido.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
+      "concepts": [
+        "POR-13-C01"
+      ],
+      "targetedError": "Conectores são enfeites removíveis.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-13-Q02",
+      "lessonId": "POR-13",
+      "type": "MCQ",
+      "stem": "Em uma questão contextualizada sobre Operadores lógico-discursivos, conjunções e advérbios, qual princípio deve orientar a análise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "“Mas”, “porém” e “contudo” costumam introduzir oposição ou contraste."
+        },
+        {
+          "id": "B",
+          "text": "“Mas” e “portanto” são trocáveis."
+        },
+        {
+          "id": "C",
+          "text": "Duas conjunções são sempre sinônimas."
+        },
+        {
+          "id": "D",
+          "text": "Conectores são enfeites removíveis."
+        },
+        {
+          "id": "E",
+          "text": "Todo “pois” tem o mesmo valor."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "“Mas”, “porém” e “contudo” costumam introduzir oposição ou contraste.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
+      "concepts": [
+        "POR-13-C02"
+      ],
+      "targetedError": "Todo “pois” tem o mesmo valor.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-13-Q03",
+      "lessonId": "POR-13",
+      "type": "MCQ",
+      "stem": "Qual alternativa evita uma generalização inadequada sobre Operadores lógico-discursivos, conjunções e advérbios?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Duas conjunções são sempre sinônimas."
+        },
+        {
+          "id": "B",
+          "text": "Conectores são enfeites removíveis."
+        },
+        {
+          "id": "C",
+          "text": "“Portanto”, “logo” e “por isso” podem marcar consequência ou conclusão conforme a construção."
+        },
+        {
+          "id": "D",
+          "text": "Todo “pois” tem o mesmo valor."
+        },
+        {
+          "id": "E",
+          "text": "“Mas” e “portanto” são trocáveis."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "“Portanto”, “logo” e “por isso” podem marcar consequência ou conclusão conforme a construção.",
+      "difficulty": "applied",
+      "cognitiveOperation": "discriminate",
+      "concepts": [
+        "POR-13-C03"
+      ],
+      "targetedError": "“Mas” e “portanto” são trocáveis.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-13-Q04",
+      "lessonId": "POR-13",
+      "type": "MCQ",
+      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Operadores lógico-discursivos, conjunções e advérbios?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Conectores são enfeites removíveis."
+        },
+        {
+          "id": "B",
+          "text": "Todo “pois” tem o mesmo valor."
+        },
+        {
+          "id": "C",
+          "text": "“Mas” e “portanto” são trocáveis."
+        },
+        {
+          "id": "D",
+          "text": "Duas conjunções são sempre sinônimas."
+        },
+        {
+          "id": "E",
+          "text": "“Porque”, “pois” e locuções causais podem apresentar justificativa ou causa; o valor depende de posição e contexto."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "“Porque”, “pois” e locuções causais podem apresentar justificativa ou causa; o valor depende de posição e contexto.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-13-C04"
+      ],
+      "targetedError": "Duas conjunções são sempre sinônimas.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-13-Q05",
+      "lessonId": "POR-13",
+      "type": "MCQ",
+      "stem": "Qual critério é seguro para resolver uma questão sobre Operadores lógico-discursivos, conjunções e advérbios?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Todo “pois” tem o mesmo valor."
+        },
+        {
+          "id": "B",
+          "text": "Conectores condicionais, temporais e finalísticos orientam hipótese, sequência e objetivo."
+        },
+        {
+          "id": "C",
+          "text": "“Mas” e “portanto” são trocáveis."
+        },
+        {
+          "id": "D",
+          "text": "Duas conjunções são sempre sinônimas."
+        },
+        {
+          "id": "E",
+          "text": "Conectores são enfeites removíveis."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Conectores condicionais, temporais e finalísticos orientam hipótese, sequência e objetivo.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
+      "concepts": [
+        "POR-13-C05"
+      ],
+      "targetedError": "Conectores são enfeites removíveis.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-13-Q06",
+      "lessonId": "POR-13",
+      "type": "MCQ",
+      "stem": "Ao comparar alternativas sobre Operadores lógico-discursivos, conjunções e advérbios, qual análise está correta?",
+      "options": [
+        {
+          "id": "A",
+          "text": "“Mas” e “portanto” são trocáveis."
+        },
+        {
+          "id": "B",
+          "text": "Duas conjunções são sempre sinônimas."
+        },
+        {
+          "id": "C",
+          "text": "Conectores são enfeites removíveis."
+        },
+        {
+          "id": "D",
+          "text": "Trocar um conector exige preservar a relação lógico-discursiva, não apenas a classe gramatical."
+        },
+        {
+          "id": "E",
+          "text": "Todo “pois” tem o mesmo valor."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "Trocar um conector exige preservar a relação lógico-discursiva, não apenas a classe gramatical.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-13-C06"
+      ],
+      "targetedError": "Todo “pois” tem o mesmo valor.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-13-Q07",
+      "lessonId": "POR-13",
+      "type": "MCQ",
+      "stem": "Um estudante afirma: “Conectores são enfeites removíveis.”. Qual é a melhor correção?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+        },
+        {
+          "id": "B",
+          "text": "A generalização deve ser aceita sem verificar contexto."
+        },
+        {
+          "id": "C",
+          "text": "A melhor estratégia é decorar a frase."
+        },
+        {
+          "id": "D",
+          "text": "Não há critério linguístico para avaliar a afirmação."
+        },
+        {
+          "id": "E",
+          "text": "Basta escolher a alternativa mais longa."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Conectores não apenas unem trechos: explicitam relações de sentido.",
+      "difficulty": "applied",
+      "cognitiveOperation": "diagnose_error",
+      "concepts": [
+        "POR-13-C01"
+      ],
+      "targetedError": "Conectores são enfeites removíveis.",
+      "provenance": "VECTA_ORIGINAL"
+    },
+    {
+      "id": "POR-13-Q08",
+      "lessonId": "POR-13",
+      "type": "MCQ",
+      "stimulus": "A escola ampliou o bicicletário porque mais estudantes passaram a pedalar. O número de vagas aumentou; portanto, a fila diminuiu.",
+      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O trecho não permite nenhuma análise."
+        },
+        {
+          "id": "B",
+          "text": "A única tarefa é classificar todas as palavras."
+        },
+        {
+          "id": "C",
+          "text": "“Porque” introduz causa; “portanto” apresenta conclusão/consequência relacionada ao aumento das vagas."
+        },
+        {
+          "id": "D",
+          "text": "A análise depende apenas do tamanho do trecho."
+        },
+        {
+          "id": "E",
+          "text": "Qualquer interpretação é igualmente válida."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "“Porque” introduz causa; “portanto” apresenta conclusão/consequência relacionada ao aumento das vagas.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-13-C01",
+        "POR-13-C02"
+      ],
+      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
+      "provenance": "VECTA_ORIGINAL"
+    }
+  ],
+  "concepts": [
+    {
+      "editorialConceptId": "POR-13-C01",
+      "lessonId": "POR-13",
+      "name": "conector",
+      "masteryTarget": "Conectores não apenas unem trechos: explicitam relações de sentido.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-13-C02",
+      "lessonId": "POR-13",
+      "name": "conjunção",
+      "masteryTarget": "“Mas”, “porém” e “contudo” costumam introduzir oposição ou contraste.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-13-C03",
+      "lessonId": "POR-13",
+      "name": "causa",
+      "masteryTarget": "“Portanto”, “logo” e “por isso” podem marcar consequência ou conclusão conforme a construção.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-13-C04",
+      "lessonId": "POR-13",
+      "name": "consequência",
+      "masteryTarget": "“Porque”, “pois” e locuções causais podem apresentar justificativa ou causa; o valor depende de posição e contexto.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-13-C05",
+      "lessonId": "POR-13",
+      "name": "oposição",
+      "masteryTarget": "Conectores condicionais, temporais e finalísticos orientam hipótese, sequência e objetivo.",
+      "status": "EDITORIAL"
+    },
+    {
+      "editorialConceptId": "POR-13-C06",
+      "lessonId": "POR-13",
+      "name": "conclusão",
+      "masteryTarget": "Trocar um conector exige preservar a relação lógico-discursiva, não apenas a classe gramatical.",
+      "status": "EDITORIAL"
+    }
+  ],
+  "qa": {
+    "lessonId": "POR-13",
+    "status": "PASS",
+    "checks": {
+      "sourceRefsResolve": true,
+      "questionCount": 8,
+      "eachQuestionHasFiveOptions": true,
+      "originalCoreContent": true
+    },
+    "editorialCautions": [
+      "Final VECTA schema must be reconciled by integration Maestro.",
+      "Question distractors should receive final spot-check after import/render."
+    ]
+  }
+}

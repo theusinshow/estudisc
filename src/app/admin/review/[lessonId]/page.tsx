@@ -1,3 +1,4 @@
+import { PublicationSummary } from "@/features/content-qa/publication-summary";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink } from "lucide-react";
@@ -47,6 +48,7 @@ export default async function LessonReviewPage({ params, searchParams }: Props) 
           <Link href={`/lessons/${encodeURIComponent(lesson.id)}`} target="_blank" className="secondary-action editorial-preview">
             Abrir a aula como o aluno vê <ExternalLink aria-hidden="true" />
           </Link>
+          <PublicationSummary details={detail.publication} />
         </header>
 
         <section className="editorial-section" aria-labelledby="concepts-title">

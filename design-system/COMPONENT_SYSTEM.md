@@ -1,6 +1,6 @@
-# KNOW/OS — Sistema de Componentes
+# Estudisc — Sistema de Componentes
 
-## IFSC v3 — approved delta
+## Delta IFSC integrado
 
 
 Required learning components/variants:
@@ -49,7 +49,7 @@ Do not wrap every prose paragraph in a bordered card. Structural emphasis belong
 ## Contrato global
 
 Todo componente consome `design-tokens.json`. Valores literais locais são
-proibidos. Raio base entre 0 e 4px; superfícies de aprendizagem e sheets usam os tokens v3 de 12–18px. Borda explícita, sombra sólida e foco visível.
+proibidos. Raio base entre 0 e 4px; superfícies de aprendizagem e sheets usam os tokens canônicos de 12–18px. Borda explícita, sombra sólida e foco visível.
 
 ## Ação
 

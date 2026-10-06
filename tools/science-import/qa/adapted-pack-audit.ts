@@ -35,7 +35,7 @@ export function auditEditorialSidecar(file: string, pack: TrackPackV2) {
 
 // Independent comparisons against source and mapping sidecar, never adapter output.
 export function auditAdaptedPack(pack: TrackPackV2) {
-  const mapping = new Map<string, string>((jsonFile(".vecta-agent-context/CONCEPT-MAP.json").entries as { editorialId: string; canonicalId: string }[]).map(row => [row.editorialId, row.canonicalId]));
+  const mapping = new Map<string, string>((jsonFile(".estudisc-agent-context/CONCEPT-MAP.json").entries as { editorialId: string; canonicalId: string }[]).map(row => [row.editorialId, row.canonicalId]));
   const canonical = (id: string) => { const result = mapping.get(id); assert(result, `Missing Concept mapping ${id}`); return result; };
   const lessons = pack.track.modules.flatMap(module => module.lessons);
   const integration = pack.track.metadata.scienceIntegration as { status: string; sourceLessonVersion: number; runtimeMediaLessonVersions?: Record<string, number>; humanApprovalRecorded: boolean; sourceHashes: Record<string, string> };

@@ -8,7 +8,7 @@ const args = process.platform === "win32" ? [] : ["exec", "vitest", "run", "test
 const child = spawn(command, args, {
   env: {
     ...process.env,
-    KNOW_OS_RUN_REAL_POSTGRES_TESTS: "1"
+    ESTUDISC_RUN_REAL_POSTGRES_TESTS: "1"
   },
   shell: process.platform === "win32",
   stdio: "inherit"

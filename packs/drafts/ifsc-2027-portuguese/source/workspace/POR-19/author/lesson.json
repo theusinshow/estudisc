@@ -1,0 +1,156 @@
+{
+  "id": "POR-19",
+  "subject": "POR",
+  "title": "Coesão: referenciação, substituição e conexão",
+  "module": "Textualidade e argumentação",
+  "priority": "P0",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Reconhecer recursos que conectam partes do texto e recuperam referentes.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-015",
+    "POR-SRC-016",
+    "POR-SRC-017",
+    "POR-SRC-026",
+    "POR-SRC-027",
+    "POR-SRC-028",
+    "POR-SRC-038"
+  ],
+  "conceptRefs": [
+    "POR-19-C01",
+    "POR-19-C02",
+    "POR-19-C03",
+    "POR-19-C04",
+    "POR-19-C05",
+    "POR-19-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Lia encontrou Marina depois da aula. Ela carregava uma caixa pesada."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Reconhecer recursos que conectam partes do texto e recuperam referentes.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Coesão referencial liga expressões que apontam para o mesmo referente por pronomes, repetição controlada ou substituições lexicais.",
+        "Anáfora recupera referente anterior; catáfora antecipa algo explicitado depois.",
+        "Elipse omite elemento recuperável pelo contexto e pode evitar repetição."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Coesão sequencial organiza a progressão por conectores e outras marcas.",
+        "Pronome mal escolhido pode criar ambiguidade sobre o referente.",
+        "Um texto pode ser coeso e ainda incoerente; coesão e coerência são relacionadas, mas diferentes."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "coesão referencial",
+          "conceptRef": "POR-19-C01"
+        },
+        {
+          "term": "coesão sequencial",
+          "conceptRef": "POR-19-C02"
+        },
+        {
+          "term": "anáfora",
+          "conceptRef": "POR-19-C03"
+        },
+        {
+          "term": "catáfora",
+          "conceptRef": "POR-19-C04"
+        },
+        {
+          "term": "elipse",
+          "conceptRef": "POR-19-C05"
+        },
+        {
+          "term": "conector",
+          "conceptRef": "POR-19-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Coesão e coerência são idênticas.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Repetir palavra sempre destrói coesão.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Todo pronome tem referente evidente.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Conectores são o único recurso coesivo.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Lia encontrou Marina depois da aula. Ela carregava uma caixa pesada.",
+      "analysis": "“Ela” cria cadeia coesiva, mas o referente é ambíguo porque duas pessoas femininas foram mencionadas."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Desenhe setas entre pronomes e referentes.",
+        "Substitua repetições sem perder clareza.",
+        "Corrija cadeias referenciais ambíguas."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Ao encontrar retomada, volte no texto e teste referente gramatical e semântico."
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Coesão referencial liga expressões que apontam para o mesmo referente por pronomes, repetição controlada ou substituições lexicais.",
+        "Anáfora recupera referente anterior; catáfora antecipa algo explicitado depois.",
+        "Elipse omite elemento recuperável pelo contexto e pode evitar repetição.",
+        "Coesão sequencial organiza a progressão por conectores e outras marcas.",
+        "Pronome mal escolhido pode criar ambiguidade sobre o referente.",
+        "Um texto pode ser coeso e ainda incoerente; coesão e coerência são relacionadas, mas diferentes."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Coesão: referenciação, substituição e conexão e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [
+      "POR-ASSET-11"
+    ],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

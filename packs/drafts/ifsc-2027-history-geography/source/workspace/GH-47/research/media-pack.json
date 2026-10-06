@@ -1,0 +1,57 @@
+{
+  "lessonId": "GH-47",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-046",
+      "title": "História Geral da África",
+      "org": "UNESCO",
+      "type": "REFERENCE_COLLECTION",
+      "url": "https://www.unesco.org/pt/general-history-africa",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-047",
+      "title": "Programa Brasil-África: Histórias Cruzadas",
+      "org": "UNESCO",
+      "type": "PEDAGOGICAL_COLLECTION",
+      "url": "https://www.unesco.org/pt/articles/programa-brasil-africa-historias-cruzadas",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-053",
+      "title": "A descolonização da África",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/historia-a-descolonizacao-da-africa/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-062",
+      "title": "Brasil-África: Histórias Cruzadas — anos finais",
+      "org": "UNESCO / MEC",
+      "type": "PEDAGOGICAL_COLLECTION",
+      "url": "https://www.unesco.org/en/articles/brazil-africa-crossed-histories-programme",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-47-001",
+    "lessonId": "GH-47",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa comparativo da África/Ásia colonial e pós-independência, com fonte UNESCO.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

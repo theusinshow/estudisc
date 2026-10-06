@@ -1,0 +1,45 @@
+{
+  "hashAlgorithm": "SHA256",
+  "initialSourceFiles": 164,
+  "finalDeterministicTestFiles": [
+    "tools/science-import/mapper.ts",
+    "tools/science-import/cli.ts",
+    "tools/science-import/portuguese.ts",
+    "tools/science-import/qa/preservation-audit.ts",
+    "tools/science-import/qa/portuguese-audit.ts",
+    "tools/science-import/qa/portuguese-db-audit.ts",
+    "tools/science-import/qa/render-mobile-preview.tsx",
+    "tests/portuguese-import.test.tsx",
+    "tests/e2e/science-qa-mobile.spec.ts",
+    "packs/drafts/ifsc-2027-portuguese/portuguese.pack.json",
+    "packs/drafts/ifsc-2027-science/science.pack.json",
+    "package.json",
+    "pnpm-lock.yaml"
+  ],
+  "fileHashes": {
+    "tools/science-import/mapper.ts": "8019af3d2d2a68c1587b23566a79e36a90bb53d0313cc9c0649c13f3f5c7d4b0",
+    "tools/science-import/cli.ts": "efacc22e75a8bf0372e92389616c784d9ad4ca80a18ed78b7a9655d130a5843b",
+    "tools/science-import/portuguese.ts": "94b8ee954ddd2edf68981c027c38ac17ad9efcf96f1333d773e44e3bb16ea6cf",
+    "tools/science-import/qa/preservation-audit.ts": "6ba1c45b70abfc572eb256f3334af9791b0d2dfe55443296f43e12dbd5f315c8",
+    "tools/science-import/qa/portuguese-audit.ts": "0e2ef3378dc061af64a1c65b743604d83dfc105bf787b1ec19d09628ac54b0b7",
+    "tools/science-import/qa/portuguese-db-audit.ts": "6a53964ca89ef9c5c909c3a42a557704fa24887c73d580802e082a55d941e1b4",
+    "tools/science-import/qa/render-mobile-preview.tsx": "53ada1e0f35d206a0c0a7c964bf85c83dd06d6dd8477df5b9f5193ddda966c30",
+    "tests/portuguese-import.test.tsx": "ce1bdd12102505225fe5c9a98a36781db095a2f94d55666490a1962d202ba59d",
+    "tests/e2e/science-qa-mobile.spec.ts": "7aa6114ff2ad00c337e402f75414834dc6b6d224984864383211c4bf88bdb894",
+    "packs/drafts/ifsc-2027-portuguese/portuguese.pack.json": "56184aa794ae0bf6b118beee50ff666a1a1bbc03be350e26e72a1110b9eae157",
+    "packs/drafts/ifsc-2027-science/science.pack.json": "a44180849db02d397efc4da100267889ae5132c39218ea2184e2966ceb3b91e2",
+    "package.json": "b974d5fc07a5c83548a4906374e9ca711018bc9f30b8c2d077d0847bc6c66d5b",
+    "pnpm-lock.yaml": "598a32c58bc87ccc58fe45e58d43c161a0849434e3c84025b21962f61db1ced6"
+  },
+  "checks": {
+    "focused": "7passed",
+    "fullUnit": "240passed/3skipped",
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "mobilePilot": "8lessonsPASSat344px,radioSpace/ArrowDown,zerohorizontaloverflow",
+    "persistentReadOnlyAudit": "24/192/144/264,892totalQuestions,700preservedbaselineQuestions,0orphans/duplicates/studentEvents",
+    "fullE2E": "22PASS/14FAIL; all14inactual15failurebaseline,0newnames"
+  },
+  "editorialApproval": false
+}

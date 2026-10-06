@@ -1,0 +1,512 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "GH-20",
+    "subject": "GH",
+    "title": "Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964)",
+    "unit": "Brasil",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+    "concepts": [
+      {
+        "id": "GH-20-CON-01",
+        "name": "Dutra",
+        "masteryTarget": "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas."
+      },
+      {
+        "id": "GH-20-CON-02",
+        "name": "Segundo governo Vargas",
+        "masteryTarget": "O segundo governo Vargas combinou nacionalismo econômico, políticas trabalhistas e intensos conflitos políticos."
+      },
+      {
+        "id": "GH-20-CON-03",
+        "name": "JK e desenvolvimentismo",
+        "masteryTarget": "O governo JK priorizou industrialização, infraestrutura e a construção de Brasília, ampliando também endividamento e transformações urbanas."
+      },
+      {
+        "id": "GH-20-CON-04",
+        "name": "Jânio Quadros",
+        "masteryTarget": "Os governos Jânio Quadros e João Goulart ocorreram em ambiente de polarização social e internacional da Guerra Fria."
+      },
+      {
+        "id": "GH-20-CON-05",
+        "name": "João Goulart",
+        "masteryTarget": "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente."
+      },
+      {
+        "id": "GH-20-CON-06",
+        "name": "Urbanização e industrialização",
+        "masteryTarget": "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "GH-20-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "De 1945 a 1964, o Brasil viveu democracia eleitoral com forte urbanização, industrialização e conflitos políticos."
+      },
+      {
+        "id": "GH-20-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar os conceitos centrais de Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964) em linguagem própria.",
+          "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+          "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+        ]
+      },
+      {
+        "id": "GH-20-B03",
+        "type": "EXPLANATION",
+        "title": "Ideia central",
+        "content": "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas. O segundo governo Vargas combinou nacionalismo econômico, políticas trabalhistas e intensos conflitos políticos.",
+        "items": [
+          "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas.",
+          "O segundo governo Vargas combinou nacionalismo econômico, políticas trabalhistas e intensos conflitos políticos."
+        ]
+      },
+      {
+        "id": "GH-20-B04",
+        "type": "EXPLANATION",
+        "title": "Como as relações se organizam",
+        "content": "O governo JK priorizou industrialização, infraestrutura e a construção de Brasília, ampliando também endividamento e transformações urbanas. Os governos Jânio Quadros e João Goulart ocorreram em ambiente de polarização social e internacional da Guerra Fria.",
+        "items": [
+          "O governo JK priorizou industrialização, infraestrutura e a construção de Brasília, ampliando também endividamento e transformações urbanas.",
+          "Os governos Jânio Quadros e João Goulart ocorreram em ambiente de polarização social e internacional da Guerra Fria."
+        ]
+      },
+      {
+        "id": "GH-20-B05",
+        "type": "EXPLANATION",
+        "title": "O que conecta o tema à prova",
+        "content": "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente.",
+        "items": [
+          "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente.",
+          "Relacionar desenvolvimento econômico, mobilização social e Guerra Fria sem reduzir o período a uma causa única."
+        ]
+      },
+      {
+        "id": "GH-20-B06",
+        "type": "CALLOUT",
+        "variant": "SOURCE_LITERACY",
+        "title": "Leia a fonte, não apenas o tema",
+        "items": [
+          "Relacionar desenvolvimento econômico, mobilização social e Guerra Fria sem reduzir o período a uma causa única.",
+          "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+        ]
+      },
+      {
+        "id": "GH-20-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTION",
+        "title": "Erros que custam ponto",
+        "items": [
+          "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo.",
+          "Brasília foi construída durante o governo de D. Pedro II.",
+          "A Guerra Fria não influenciou debates políticos brasileiros.",
+          "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        ]
+      },
+      {
+        "id": "GH-20-B08",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Vocabulário essencial",
+        "items": [
+          "Dutra",
+          "Segundo governo Vargas",
+          "JK e desenvolvimentismo",
+          "Jânio Quadros",
+          "João Goulart",
+          "Urbanização e industrialização"
+        ]
+      },
+      {
+        "id": "GH-20-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Como resolver uma questão",
+        "prompt": "Uma questão apresenta uma fonte relacionada a Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964). Como decidir entre alternativas plausíveis?",
+        "answer": "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente.",
+        "reasoning": [
+          "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+          "Extraia da fonte apenas as evidências explícitas.",
+          "Ative o conceito da aula que explica a evidência.",
+          "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+          "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+        ]
+      },
+      {
+        "id": "GH-20-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Estratégia IFSC",
+        "items": [
+          "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+          "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+          "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+        ]
+      },
+      {
+        "id": "GH-20-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Material complementar",
+        "mediaRefs": [
+          "SRC-GH-016"
+        ],
+        "optional": true
+      },
+      {
+        "id": "GH-20-B12",
+        "type": "COMPONENT_REQUEST",
+        "title": "Visual determinístico",
+        "requestRef": "DET-GH-20-001",
+        "status": "PENDING"
+      },
+      {
+        "id": "GH-20-B13",
+        "type": "SUMMARY",
+        "title": "Resumo para recuperar sem olhar",
+        "items": [
+          "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas.",
+          "O segundo governo Vargas combinou nacionalismo econômico, políticas trabalhistas e intensos conflitos políticos.",
+          "O governo JK priorizou industrialização, infraestrutura e a construção de Brasília, ampliando também endividamento e transformações urbanas.",
+          "Os governos Jânio Quadros e João Goulart ocorreram em ambiente de polarização social e internacional da Guerra Fria.",
+          "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente."
+        ]
+      },
+      {
+        "id": "GH-20-B14",
+        "type": "EXIT_TICKET",
+        "title": "Saída rápida",
+        "prompt": "Em duas ou três frases, explique a ideia mais importante de Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964) e cite um erro de interpretação que você evitaria numa questão.",
+        "answerGuide": "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas. Evite, por exemplo: Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-GH-001",
+      "SRC-GH-016",
+      "SRC-GH-027",
+      "SRC-IFSC-GH-2026-1",
+      "SRC-IFSC-GH-2026-2"
+    ],
+    "mediaRefs": [
+      "SRC-GH-016"
+    ],
+    "imageRequestRefs": [],
+    "editorialNotes": [
+      "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+      "Não publicar mídia externa sem revisão de licença e proveniência.",
+      "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+      "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+    ]
+  },
+  "questions": [
+    {
+      "id": "GH-20-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Em relação a Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964), qual afirmação está correta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        },
+        {
+          "key": "B",
+          "text": "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas."
+        },
+        {
+          "key": "C",
+          "text": "Brasília foi construída durante o governo de D. Pedro II."
+        },
+        {
+          "key": "D",
+          "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        },
+        {
+          "key": "E",
+          "text": "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "RECALL",
+      "conceptIds": [
+        "GH-20-CON-01"
+      ],
+      "targetedError": "foundation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-20-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante diz: “Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        },
+        {
+          "key": "B",
+          "text": "Brasília foi construída durante o governo de D. Pedro II."
+        },
+        {
+          "key": "C",
+          "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        },
+        {
+          "key": "D",
+          "text": "O segundo governo Vargas combinou nacionalismo econômico, políticas trabalhistas e intensos conflitos políticos."
+        },
+        {
+          "key": "E",
+          "text": "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "O segundo governo Vargas combinou nacionalismo econômico, políticas trabalhistas e intensos conflitos políticos.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-20-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-20-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Considere a situação de partida da aula: De 1945 a 1964, o Brasil viveu democracia eleitoral com forte urbanização, industrialização e conflitos políticos. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        },
+        {
+          "key": "B",
+          "text": "Brasília foi construída durante o governo de D. Pedro II."
+        },
+        {
+          "key": "C",
+          "text": "O governo JK priorizou industrialização, infraestrutura e a construção de Brasília, ampliando também endividamento e transformações urbanas."
+        },
+        {
+          "key": "D",
+          "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        },
+        {
+          "key": "E",
+          "text": "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "O governo JK priorizou industrialização, infraestrutura e a construção de Brasília, ampliando também endividamento e transformações urbanas.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "GH-20-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-20-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "O IFSC pode apresentar Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964) por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Os governos Jânio Quadros e João Goulart ocorreram em ambiente de polarização social e internacional da Guerra Fria."
+        },
+        {
+          "key": "B",
+          "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        },
+        {
+          "key": "C",
+          "text": "Brasília foi construída durante o governo de D. Pedro II."
+        },
+        {
+          "key": "D",
+          "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        },
+        {
+          "key": "E",
+          "text": "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Os governos Jânio Quadros e João Goulart ocorreram em ambiente de polarização social e internacional da Guerra Fria.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "GH-20-CON-04"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-20-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas.\nII. Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo.\nIII. O governo JK priorizou industrialização, infraestrutura e a construção de Brasília, ampliando também endividamento e transformações urbanas.\nIV. Brasília foi construída durante o governo de D. Pedro II.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-20-CON-01",
+        "GH-20-CON-02",
+        "GH-20-CON-03",
+        "GH-20-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-20-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma fonte foi apresentada numa questão sobre Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964). Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        },
+        {
+          "key": "B",
+          "text": "Brasília foi construída durante o governo de D. Pedro II."
+        },
+        {
+          "key": "C",
+          "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        },
+        {
+          "key": "D",
+          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        },
+        {
+          "key": "E",
+          "text": "Relacionar desenvolvimento econômico, mobilização social e Guerra Fria sem reduzir o período a uma causa única."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Relacionar desenvolvimento econômico, mobilização social e Guerra Fria sem reduzir o período a uma causa única.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "conceptIds": [
+        "GH-20-CON-01",
+        "GH-20-CON-02",
+        "GH-20-CON-03",
+        "GH-20-CON-04",
+        "GH-20-CON-05",
+        "GH-20-CON-06"
+      ],
+      "targetedError": "source_interpretation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-20-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas."
+        },
+        {
+          "key": "B",
+          "text": "O segundo governo Vargas combinou nacionalismo econômico, políticas trabalhistas e intensos conflitos políticos."
+        },
+        {
+          "key": "C",
+          "text": "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente."
+        },
+        {
+          "key": "D",
+          "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        },
+        {
+          "key": "E",
+          "text": "Os governos Jânio Quadros e João Goulart ocorreram em ambiente de polarização social e internacional da Guerra Fria."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-20-CON-01",
+        "GH-20-CON-02",
+        "GH-20-CON-03",
+        "GH-20-CON-04",
+        "GH-20-CON-05",
+        "GH-20-CON-06"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-20-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964), qual conclusão final é sustentável?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        },
+        {
+          "key": "B",
+          "text": "Brasília foi construída durante o governo de D. Pedro II."
+        },
+        {
+          "key": "C",
+          "text": "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente."
+        },
+        {
+          "key": "D",
+          "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        },
+        {
+          "key": "E",
+          "text": "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-20-CON-01",
+        "GH-20-CON-02",
+        "GH-20-CON-03",
+        "GH-20-CON-04",
+        "GH-20-CON-05",
+        "GH-20-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
-# KNOW/OS — Sistema de Cores
+# Estudisc — Sistema de Cores
 
 ## Política de tema
 
-KNOW/OS possui um tema editorial claro. Não existe dark mode completo.
+Estudisc possui um tema editorial claro. Não existe dark mode completo.
 `dimmedPaper` é uma preferência manual de conforto de leitura e não responde
 automaticamente a `prefers-color-scheme`.
 

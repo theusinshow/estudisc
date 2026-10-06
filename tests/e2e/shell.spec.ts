@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 test("foundation shell renders on desktop", async ({ page }) => {
   await page.goto("/");
 
-  await expect(page.getByRole("link", { name: "Vecta, página inicial" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Estudisc, página inicial" })).toBeVisible();
   await expect(page.getByRole("navigation", { name: "Navegação principal" })).toBeVisible();
   await expect(page.getByRole("main")).toContainText("Próxima ação");
   await expect(page.getByRole("link", { name: /Aprender/ })).toBeVisible();

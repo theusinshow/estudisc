@@ -7,6 +7,7 @@ import { studentQuestion } from "@/features/questions/student-view";
 import { questionReferenceSchema } from "@/features/activities/application/question-reference";
 import { evidenceStrengthV2,MASTERY_V2 } from "@/features/mastery/mastery-policy-v2";
 import { scheduleReviewV2,REVIEW_V2 } from "@/features/review/review-policy-v2";
+import { isIndependentQuestionSuccess, QUESTION_SUCCESS_XP, QUESTION_SUCCESS_REASON } from "@/features/gamification/study-rewards";
 
 export class MemoryQuestionStudyRepository {
   constructor(private readonly store=getMemoryStore()){}
@@ -39,7 +40,7 @@ export class MemoryQuestionStudyRepository {
     if(input.action==="hint"){assistance.hintLevel=Math.min(ctx.config.hints.length,assistance.hintLevel+1);return {hintLevel:assistance.hintLevel,hint:ctx.config.hints[assistance.hintLevel-1]};}
     if(input.action==="solution"){assistance.solutionRevealed=true;return {correct:false,explanation:ctx.question.explanation};}
     const previous=this.store.attempts.find(attempt=>attempt.ownerId===ownerId&&attempt.submissionKey===input.submissionKey);
-    if(previous){if(previous.activityStableId!==activityId||JSON.stringify(previous.response)!==JSON.stringify(input.response))throw new SubmissionConflictError();return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:previous.outcome==="passed"?ctx.question.explanation:undefined};}
+    if(previous){if(previous.activityStableId!==activityId||JSON.stringify(previous.response)!==JSON.stringify(input.response))throw new SubmissionConflictError();return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:previous.outcome==="passed"?ctx.question.explanation:undefined,xpAwarded:0};}
     const evaluation=evaluateQuestion(ctx.question,input.response); if(!evaluation.evidenceEligible)throw new QuestionUnavailableError();
     const id=crypto.randomUUID();const now=new Date();
     const conditions={policyVersion:MASTERY_V2,outcome:evaluation.outcome,hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed,difficulty:ctx.question.difficulty,mode:"learn",questionId:ctx.question.id,questionVersion:ctx.question.version,contextKey:ctx.contextKey};
@@ -56,8 +57,13 @@ export class MemoryQuestionStudyRepository {
       else this.store.reviewSchedules.push({ownerId,conceptStableId,currentMasteryState:evaluation.correct?"understood":"introduced",lastReviewedAt:null,nextReviewAt:schedule.nextReviewAt,reviewCount:0,recentQuality:evaluation.correct?3:1,policyVersion:REVIEW_V2,updatedAt:now,metadata:{stage:schedule.stage,stabilityDays:schedule.stabilityDays}});
       if(!evaluation.correct)this.store.mistakes.push({id:crypto.randomUUID(),ownerId,conceptStableId,attemptId:id,category:ctx.question.type==="numeric"?"CALCULATION":"INTERPRETATION",summary:"Rever o raciocínio desta questão.",status:"active",createdAt:now,resolvedAt:null});
     }
+    let xpAwarded = 0;
+    if (isIndependentQuestionSuccess(conditions) && !this.store.xpTransactions.some(item => item.ownerId === ownerId && item.reason === QUESTION_SUCCESS_REASON && item.sourceType === "question" && item.sourceId === ctx.question.id)) {
+      this.store.xpTransactions.push({ id: crypto.randomUUID(), ownerId, amount: QUESTION_SUCCESS_XP, reason: QUESTION_SUCCESS_REASON, sourceType: "question", sourceId: ctx.question.id, createdAt: now });
+      xpAwarded = QUESTION_SUCCESS_XP;
+    }
     // A wrong answer does not show the worked solution, so a retry still counts as independent evidence.
     if(evaluation.correct)assistance.solutionRevealed=true;
-    return {attemptId:id,correct:evaluation.correct,explanation:evaluation.correct?ctx.question.explanation:undefined};
+    return {attemptId:id,correct:evaluation.correct,explanation:evaluation.correct?ctx.question.explanation:undefined,xpAwarded};
   }
 }

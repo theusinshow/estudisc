@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-17-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Brasil Monárquico, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Constituição de 1824 transformou o Brasil em república."
+      },
+      {
+        "key": "B",
+        "text": "A Constituição de 1824 foi outorgada e instituiu quatro poderes, incluindo o Poder Moderador do imperador."
+      },
+      {
+        "key": "C",
+        "text": "O Poder Moderador era exercido pelo Congresso."
+      },
+      {
+        "key": "D",
+        "text": "O período regencial foi politicamente estável e sem revoltas."
+      },
+      {
+        "key": "E",
+        "text": "O Segundo Reinado aboliu a escravidão logo no início."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A Constituição de 1824 foi outorgada e instituiu quatro poderes, incluindo o Poder Moderador do imperador.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-17-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-17-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “A Constituição de 1824 transformou o Brasil em república.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Constituição de 1824 transformou o Brasil em república."
+      },
+      {
+        "key": "B",
+        "text": "O Poder Moderador era exercido pelo Congresso."
+      },
+      {
+        "key": "C",
+        "text": "O período regencial foi politicamente estável e sem revoltas."
+      },
+      {
+        "key": "D",
+        "text": "O Primeiro Reinado enfrentou conflitos políticos e terminou com a abdicação de D. Pedro I em 1831."
+      },
+      {
+        "key": "E",
+        "text": "O Segundo Reinado aboliu a escravidão logo no início."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "O Primeiro Reinado enfrentou conflitos políticos e terminou com a abdicação de D. Pedro I em 1831.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-17-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-17-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: O Império brasileiro combinou instituições constitucionais, monarquia e uma sociedade escravista. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Constituição de 1824 transformou o Brasil em república."
+      },
+      {
+        "key": "B",
+        "text": "O Poder Moderador era exercido pelo Congresso."
+      },
+      {
+        "key": "C",
+        "text": "O período regencial teve disputas sobre centralização e autonomia e foi marcado por revoltas em várias províncias."
+      },
+      {
+        "key": "D",
+        "text": "O período regencial foi politicamente estável e sem revoltas."
+      },
+      {
+        "key": "E",
+        "text": "O Segundo Reinado aboliu a escravidão logo no início."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "O período regencial teve disputas sobre centralização e autonomia e foi marcado por revoltas em várias províncias.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-17-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-17-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Brasil Monárquico por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O Segundo Reinado consolidou o poder imperial, expandiu a economia cafeeira e manteve a escravidão até 1888."
+      },
+      {
+        "key": "B",
+        "text": "A Constituição de 1824 transformou o Brasil em república."
+      },
+      {
+        "key": "C",
+        "text": "O Poder Moderador era exercido pelo Congresso."
+      },
+      {
+        "key": "D",
+        "text": "O período regencial foi politicamente estável e sem revoltas."
+      },
+      {
+        "key": "E",
+        "text": "O Segundo Reinado aboliu a escravidão logo no início."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "O Segundo Reinado consolidou o poder imperial, expandiu a economia cafeeira e manteve a escravidão até 1888.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-17-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-17-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. A Constituição de 1824 foi outorgada e instituiu quatro poderes, incluindo o Poder Moderador do imperador.\nII. A Constituição de 1824 transformou o Brasil em república.\nIII. O período regencial teve disputas sobre centralização e autonomia e foi marcado por revoltas em várias províncias.\nIV. O Poder Moderador era exercido pelo Congresso.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-17-CON-01",
+      "GH-17-CON-02",
+      "GH-17-CON-03",
+      "GH-17-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-17-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Brasil Monárquico. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Constituição de 1824 transformou o Brasil em república."
+      },
+      {
+        "key": "B",
+        "text": "O Poder Moderador era exercido pelo Congresso."
+      },
+      {
+        "key": "C",
+        "text": "O período regencial foi politicamente estável e sem revoltas."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Relacionar instituições políticas, economia e conflitos sociais ao analisar a monarquia."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Relacionar instituições políticas, economia e conflitos sociais ao analisar a monarquia.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-17-CON-01",
+      "GH-17-CON-02",
+      "GH-17-CON-03",
+      "GH-17-CON-04",
+      "GH-17-CON-05",
+      "GH-17-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-17-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Brasil Monárquico?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Constituição de 1824 foi outorgada e instituiu quatro poderes, incluindo o Poder Moderador do imperador."
+      },
+      {
+        "key": "B",
+        "text": "O Primeiro Reinado enfrentou conflitos políticos e terminou com a abdicação de D. Pedro I em 1831."
+      },
+      {
+        "key": "C",
+        "text": "A crise final do Império envolveu mudanças sociais, abolição, tensões militares, republicanismo e desgaste político."
+      },
+      {
+        "key": "D",
+        "text": "O período regencial foi politicamente estável e sem revoltas."
+      },
+      {
+        "key": "E",
+        "text": "O Segundo Reinado consolidou o poder imperial, expandiu a economia cafeeira e manteve a escravidão até 1888."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-17-CON-01",
+      "GH-17-CON-02",
+      "GH-17-CON-03",
+      "GH-17-CON-04",
+      "GH-17-CON-05",
+      "GH-17-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-17-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Brasil Monárquico, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Constituição de 1824 transformou o Brasil em república."
+      },
+      {
+        "key": "B",
+        "text": "O Poder Moderador era exercido pelo Congresso."
+      },
+      {
+        "key": "C",
+        "text": "A crise final do Império envolveu mudanças sociais, abolição, tensões militares, republicanismo e desgaste político."
+      },
+      {
+        "key": "D",
+        "text": "O período regencial foi politicamente estável e sem revoltas."
+      },
+      {
+        "key": "E",
+        "text": "O Segundo Reinado aboliu a escravidão logo no início."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A crise final do Império envolveu mudanças sociais, abolição, tensões militares, republicanismo e desgaste político.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-17-CON-01",
+      "GH-17-CON-02",
+      "GH-17-CON-03",
+      "GH-17-CON-04",
+      "GH-17-CON-05",
+      "GH-17-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

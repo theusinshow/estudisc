@@ -1,0 +1,408 @@
+[
+  {
+    "id": "DET-GH-02-001",
+    "lessonId": "GH-02",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Componente cartográfico interativo/reutilizável para orientação, coordenadas e cálculo de escala.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-03-001",
+    "lessonId": "GH-03",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Componente de leitura de fonte com camadas: título, legenda, fonte, evidência, inferência.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-08-001",
+    "lessonId": "GH-08",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo 1912–1916 + mapa esquemático da região do Contestado baseado em fonte cartográfica verificável.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-09-001",
+    "lessonId": "GH-09",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa esquemático/regional de Santa Catarina com dados oficiais e camadas econômicas.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-11-001",
+    "lessonId": "GH-11",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa físico simplificado de Santa Catarina + cards de riscos socioambientais, usando dados/fontes oficiais.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-12-001",
+    "lessonId": "GH-12",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo e mapa de formação territorial do Brasil, sem sugerir fronteiras atuais para 1500.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-16-001",
+    "lessonId": "GH-16",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo 1808–1824 com eventos do processo de independência.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-18-001",
+    "lessonId": "GH-18",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo 1889–1930 e diagrama de coronelismo/federalismo.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-19-001",
+    "lessonId": "GH-19",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo 1930–1945 separando Governo Provisório, Constitucional e Estado Novo.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-20-001",
+    "lessonId": "GH-20",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo 1945–1964.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-21-001",
+    "lessonId": "GH-21",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo 1964–1985 + atos institucionais e marcos de resistência, com fontes do Arquivo Nacional.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-22-001",
+    "lessonId": "GH-22",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo da abertura à Constituição de 1988.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-24-001",
+    "lessonId": "GH-24",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa dos seis biomas brasileiros baseado no IBGE.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-25-001",
+    "lessonId": "GH-25",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Diagrama de cadeia agroindustrial e comparação agricultura familiar/agronegócio sem falsa dicotomia.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-26-001",
+    "lessonId": "GH-26",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Gráfico/linha do tempo da urbanização brasileira com dados do IBGE.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-27-001",
+    "lessonId": "GH-27",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Componentes para densidade demográfica, pirâmide etária e fluxos migratórios usando dados oficiais.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-32-001",
+    "lessonId": "GH-32",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo comparativa de sociedades antigas + mapa do Mediterrâneo/Oriente Próximo baseado em fonte.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-33-001",
+    "lessonId": "GH-33",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa de expansão islâmica e rotas de intercâmbio, baseado em fonte histórica verificável.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-37-001",
+    "lessonId": "GH-37",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa de rotas marítimas dos séculos XV–XVI baseado em fonte histórica/cartográfica.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-38-001",
+    "lessonId": "GH-38",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa comparativo de áreas coloniais e principais sociedades americanas, com proveniência.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-39-001",
+    "lessonId": "GH-39",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo Iluminismo/Independência EUA/Revolução Francesa e quadro princípios x exclusões.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-40-001",
+    "lessonId": "GH-40",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa/linha do tempo das independências americanas.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-42-001",
+    "lessonId": "GH-42",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa da partilha colonial da África com fonte UNESCO/atlas histórico.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-43-001",
+    "lessonId": "GH-43",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa de alianças/frentes + linha do tempo 1914–1918.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-44-001",
+    "lessonId": "GH-44",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo entre-guerras e esquema institucional de destruição da democracia nazista.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-45-001",
+    "lessonId": "GH-45",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa/linha do tempo 1939–1945 + componente separado sobre Holocausto baseado em USHMM.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-46-001",
+    "lessonId": "GH-46",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa bipolar e linha do tempo de crises/guerras da Guerra Fria.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-47-001",
+    "lessonId": "GH-47",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa comparativo da África/Ásia colonial e pós-independência, com fonte UNESCO.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  {
+    "id": "DET-GH-49-001",
+    "lessonId": "GH-49",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo de marcos de direitos humanos e movimentos sociais, com fontes ONU.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  }
+]

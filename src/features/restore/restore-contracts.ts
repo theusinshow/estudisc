@@ -6,7 +6,7 @@ import { hashCanonicalJson } from "@/lib/canonical-json";
 export const MAX_RESTORE_BYTES = 1024 * 1024;
 
 const exportPayloadSchema = z.object({
-  schema: z.literal("know-os.export.v1"),
+  schema: z.enum(["estudisc.export.v1", "know-os.export.v1"]),
   kind: z.enum(["backup", "progress", "teacher_context"]),
   exportedAt: z.string(),
   privacy: z.object({
@@ -45,7 +45,7 @@ export type RestoreBackupPayload = z.infer<typeof backupPayloadSchema>;
 export type RestorePreviewResult =
   | Readonly<{
       status: "ready";
-      schema: "know-os.restore-preview.v1";
+      schema: "estudisc.restore-preview.v1";
       sourceExportedAt: string;
       categories: readonly RestoreCategory[];
       warnings: readonly string[];
@@ -67,7 +67,7 @@ export type RestoreCategory = Readonly<{
 }>;
 
 export type UserStateRestoreDryRunPlan = Readonly<{
-  schema: "know-os.user-state-restore-dry-run.v1";
+  schema: "estudisc.user-state-restore-dry-run.v1";
   mode: "user_state_dry_run";
   sourceExportFingerprint: string;
   applyEnabled: false;
@@ -100,7 +100,7 @@ export function previewRestore(input: unknown): RestorePreviewResult {
     return {
       status: "invalid",
       code: "invalid_restore_payload",
-      message: "O arquivo não segue o contrato know-os.export.v1.",
+      message: "O arquivo não segue o contrato estudisc.export.v1.",
       issues: parsed.error.issues.map((issue) => `${issue.path.join(".")}: ${issue.message}`)
     };
   }
@@ -152,7 +152,7 @@ export function previewRestore(input: unknown): RestorePreviewResult {
 
   return {
     status: "ready",
-    schema: "know-os.restore-preview.v1",
+    schema: "estudisc.restore-preview.v1",
     sourceExportedAt: parsed.data.exportedAt,
     categories,
     warnings: [
@@ -200,7 +200,7 @@ export function buildUserStateRestoreDryRunPlan({
   }
 
   return {
-    schema: "know-os.user-state-restore-dry-run.v1",
+    schema: "estudisc.user-state-restore-dry-run.v1",
     mode: "user_state_dry_run",
     sourceExportFingerprint,
     applyEnabled: false,

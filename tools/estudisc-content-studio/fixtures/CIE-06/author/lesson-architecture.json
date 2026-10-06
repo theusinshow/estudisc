@@ -1,0 +1,96 @@
+{
+  "summary": "DEMO / NOT PRODUCTION CONTENT: contrato mínimo e incompleto; não representa aula pronta.",
+  "sequence": [
+    {
+      "id": "demo-seq-1",
+      "phase": "EXPLANATION",
+      "targetIds": [
+        "demo-text"
+      ],
+      "sourceIds": [
+        "src-demo-spec"
+      ],
+      "mediaIds": []
+    },
+    {
+      "id": "demo-seq-2",
+      "phase": "VISUAL",
+      "targetIds": [
+        "demo-image"
+      ],
+      "sourceIds": [
+        "src-demo-spec"
+      ],
+      "mediaIds": [
+        "demo-figure"
+      ]
+    },
+    {
+      "id": "demo-seq-3",
+      "phase": "WORKED_EXAMPLE",
+      "targetIds": [
+        "demo-example"
+      ],
+      "sourceIds": [
+        "src-demo-spec"
+      ],
+      "mediaIds": []
+    },
+    {
+      "id": "demo-seq-4",
+      "phase": "EXIT_TICKET",
+      "targetIds": [
+        "demo-exit",
+        "Q-CIE-06-DEMO"
+      ],
+      "sourceIds": [
+        "src-demo-spec"
+      ],
+      "mediaIds": []
+    }
+  ],
+  "provenance": [
+    {
+      "targetId": "demo-text",
+      "sourceIds": [
+        "src-demo-spec"
+      ],
+      "mediaIds": [],
+      "factual": true
+    },
+    {
+      "targetId": "demo-image",
+      "sourceIds": [
+        "src-demo-spec"
+      ],
+      "mediaIds": [
+        "demo-figure"
+      ],
+      "factual": true
+    },
+    {
+      "targetId": "demo-example",
+      "sourceIds": [
+        "src-demo-spec"
+      ],
+      "mediaIds": [],
+      "factual": true
+    },
+    {
+      "targetId": "demo-exit",
+      "sourceIds": [
+        "src-demo-spec"
+      ],
+      "mediaIds": [],
+      "factual": true
+    },
+    {
+      "targetId": "Q-CIE-06-DEMO",
+      "sourceIds": [
+        "src-demo-spec"
+      ],
+      "mediaIds": [],
+      "factual": true
+    }
+  ]
+}

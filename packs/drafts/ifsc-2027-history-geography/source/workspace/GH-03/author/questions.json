@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-03-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Leitura de mapas, gráficos, imagens e linguagem iconográfica, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+      },
+      {
+        "key": "B",
+        "text": "Gráficos e mapas temáticos devem ser lidos observando título, legenda, unidade, período e fonte."
+      },
+      {
+        "key": "C",
+        "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+      },
+      {
+        "key": "D",
+        "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+      },
+      {
+        "key": "E",
+        "text": "Charge deve ser lida apenas de forma literal."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "Gráficos e mapas temáticos devem ser lidos observando título, legenda, unidade, período e fonte.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-03-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-03-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “Imagem histórica prova sozinha tudo o que aconteceu.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+      },
+      {
+        "key": "B",
+        "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+      },
+      {
+        "key": "C",
+        "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+      },
+      {
+        "key": "D",
+        "text": "Uma fotografia ou gravura é uma fonte produzida em determinado contexto e não uma janela neutra para o passado."
+      },
+      {
+        "key": "E",
+        "text": "Charge deve ser lida apenas de forma literal."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Uma fotografia ou gravura é uma fonte produzida em determinado contexto e não uma janela neutra para o passado.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-03-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-03-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: O IFSC costuma combinar mapas, gráficos, fotografias, charges e textos. Ler a fonte visual é parte do conteúdo. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+      },
+      {
+        "key": "B",
+        "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+      },
+      {
+        "key": "C",
+        "text": "Charges e tirinhas usam seleção, exagero, ironia ou contraste e exigem interpretação do contexto."
+      },
+      {
+        "key": "D",
+        "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+      },
+      {
+        "key": "E",
+        "text": "Charge deve ser lida apenas de forma literal."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Charges e tirinhas usam seleção, exagero, ironia ou contraste e exigem interpretação do contexto.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-03-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-03-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Leitura de mapas, gráficos, imagens e linguagem iconográfica por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Duas representações do mesmo fenômeno podem destacar aspectos diferentes e produzir leituras distintas."
+      },
+      {
+        "key": "B",
+        "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+      },
+      {
+        "key": "C",
+        "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+      },
+      {
+        "key": "D",
+        "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+      },
+      {
+        "key": "E",
+        "text": "Charge deve ser lida apenas de forma literal."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "Duas representações do mesmo fenômeno podem destacar aspectos diferentes e produzir leituras distintas.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-03-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-03-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Gráficos e mapas temáticos devem ser lidos observando título, legenda, unidade, período e fonte.\nII. Imagem histórica prova sozinha tudo o que aconteceu.\nIII. Charges e tirinhas usam seleção, exagero, ironia ou contraste e exigem interpretação do contexto.\nIV. Um gráfico pode ser interpretado sem observar unidade e período.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-03-CON-01",
+      "GH-03-CON-02",
+      "GH-03-CON-03",
+      "GH-03-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-03-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Leitura de mapas, gráficos, imagens e linguagem iconográfica. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+      },
+      {
+        "key": "B",
+        "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+      },
+      {
+        "key": "C",
+        "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Distinguir evidência visível, contexto da fonte e inferência histórica/geográfica."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Distinguir evidência visível, contexto da fonte e inferência histórica/geográfica.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-03-CON-01",
+      "GH-03-CON-02",
+      "GH-03-CON-03",
+      "GH-03-CON-04",
+      "GH-03-CON-05",
+      "GH-03-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-03-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Leitura de mapas, gráficos, imagens e linguagem iconográfica?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Gráficos e mapas temáticos devem ser lidos observando título, legenda, unidade, período e fonte."
+      },
+      {
+        "key": "B",
+        "text": "Uma fotografia ou gravura é uma fonte produzida em determinado contexto e não uma janela neutra para o passado."
+      },
+      {
+        "key": "C",
+        "text": "Uma boa interpretação separa o que a fonte mostra diretamente do que precisa ser inferido com conhecimento prévio."
+      },
+      {
+        "key": "D",
+        "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+      },
+      {
+        "key": "E",
+        "text": "Duas representações do mesmo fenômeno podem destacar aspectos diferentes e produzir leituras distintas."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-03-CON-01",
+      "GH-03-CON-02",
+      "GH-03-CON-03",
+      "GH-03-CON-04",
+      "GH-03-CON-05",
+      "GH-03-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-03-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Leitura de mapas, gráficos, imagens e linguagem iconográfica, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+      },
+      {
+        "key": "B",
+        "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+      },
+      {
+        "key": "C",
+        "text": "Uma boa interpretação separa o que a fonte mostra diretamente do que precisa ser inferido com conhecimento prévio."
+      },
+      {
+        "key": "D",
+        "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+      },
+      {
+        "key": "E",
+        "text": "Charge deve ser lida apenas de forma literal."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Uma boa interpretação separa o que a fonte mostra diretamente do que precisa ser inferido com conhecimento prévio.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-03-CON-01",
+      "GH-03-CON-02",
+      "GH-03-CON-03",
+      "GH-03-CON-04",
+      "GH-03-CON-05",
+      "GH-03-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

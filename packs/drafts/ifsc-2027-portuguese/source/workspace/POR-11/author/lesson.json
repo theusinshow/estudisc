@@ -1,0 +1,150 @@
+{
+  "id": "POR-11",
+  "subject": "POR",
+  "title": "Regência verbal e nominal, preposição e crase",
+  "module": "Gramática em contexto",
+  "priority": "P0",
+  "status": "IMPORT_READY",
+  "estimatedMinutes": 22,
+  "masteryTarget": "Reconhecer relações de regência e condições básicas para crase.",
+  "sourceRefs": [
+    "POR-SRC-001",
+    "POR-SRC-003",
+    "POR-SRC-013",
+    "POR-SRC-038"
+  ],
+  "conceptRefs": [
+    "POR-11-C01",
+    "POR-11-C02",
+    "POR-11-C03",
+    "POR-11-C04",
+    "POR-11-C05",
+    "POR-11-C06"
+  ],
+  "blocks": [
+    {
+      "type": "HOOK",
+      "title": "Leia como a prova lê",
+      "content": "Compare “O estudante assistiu ao debate” e “O técnico assistiu o paciente”."
+    },
+    {
+      "type": "LEARNING_GOALS",
+      "items": [
+        "Reconhecer relações de regência e condições básicas para crase.",
+        "Justificar respostas com evidência linguística ou textual.",
+        "Evitar regras absolutas quando o fenômeno depende do contexto."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 1",
+      "paragraphs": [
+        "Regência descreve a relação entre termo regente e complemento, incluindo a preposição exigida quando houver.",
+        "Verbos podem mudar de regência e sentido conforme o uso; é preciso analisar a construção inteira.",
+        "A crase gráfica marca, em casos regulares, a fusão da preposição “a” com artigo “a/as” ou certos demonstrativos."
+      ]
+    },
+    {
+      "type": "EXPLANATION",
+      "title": "Ideias essenciais — parte 2",
+      "paragraphs": [
+        "Não há crase apenas porque a palavra seguinte é feminina; é preciso verificar exigência de preposição e presença de determinante compatível.",
+        "Regência nominal envolve nomes que selecionam complementos preposicionados.",
+        "Substituir uma preposição pode alterar norma, sentido ou ambos."
+      ]
+    },
+    {
+      "type": "KEY_TERMS",
+      "items": [
+        {
+          "term": "regência verbal",
+          "conceptRef": "POR-11-C01"
+        },
+        {
+          "term": "regência nominal",
+          "conceptRef": "POR-11-C02"
+        },
+        {
+          "term": "preposição",
+          "conceptRef": "POR-11-C03"
+        },
+        {
+          "term": "complemento",
+          "conceptRef": "POR-11-C04"
+        },
+        {
+          "term": "crase",
+          "conceptRef": "POR-11-C05"
+        },
+        {
+          "term": "transitividade",
+          "conceptRef": "POR-11-C06"
+        }
+      ]
+    },
+    {
+      "type": "MISCONCEPTION_CHECK",
+      "items": [
+        {
+          "claim": "Antes de toda palavra feminina há crase.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Regência é só lista de preposições.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Todo verbo exige objeto direto.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        },
+        {
+          "claim": "Uso comum na fala sempre coincide com norma-padrão.",
+          "status": "INCORRECT",
+          "instruction": "Explique por que a generalização falha."
+        }
+      ]
+    },
+    {
+      "type": "WORKED_EXAMPLE",
+      "stimulus": "Compare “O estudante assistiu ao debate” e “O técnico assistiu o paciente”.",
+      "analysis": "No sentido de ver/presenciar, a norma-padrão tradicional usa “assistir a”; no sentido de prestar assistência, complemento direto."
+    },
+    {
+      "type": "ACTIVE_LEARNING",
+      "title": "Atividade de aplicação",
+      "steps": [
+        "Teste a exigência de preposição em construções.",
+        "Use pistas práticas de crase sem transformá-las em regra única.",
+        "Troque o verbo e observe como a regência muda."
+      ],
+      "evidence": "Resposta curta ou classificação justificada."
+    },
+    {
+      "type": "IFSC_STRATEGY",
+      "content": "Pergunte: o termo anterior exige “a”? O seguinte admite artigo “a/as”?"
+    },
+    {
+      "type": "SUMMARY",
+      "items": [
+        "Regência descreve a relação entre termo regente e complemento, incluindo a preposição exigida quando houver.",
+        "Verbos podem mudar de regência e sentido conforme o uso; é preciso analisar a construção inteira.",
+        "A crase gráfica marca, em casos regulares, a fusão da preposição “a” com artigo “a/as” ou certos demonstrativos.",
+        "Não há crase apenas porque a palavra seguinte é feminina; é preciso verificar exigência de preposição e presença de determinante compatível.",
+        "Regência nominal envolve nomes que selecionam complementos preposicionados.",
+        "Substituir uma preposição pode alterar norma, sentido ou ambos."
+      ]
+    },
+    {
+      "type": "EXIT_TICKET",
+      "prompt": "Explique o princípio mais importante de Regência verbal e nominal, preposição e crase e crie um exemplo próprio."
+    }
+  ],
+  "media": {
+    "deterministicAssetRefs": [],
+    "antigravityRefs": [],
+    "authenticMediaRefs": []
+  }
+}

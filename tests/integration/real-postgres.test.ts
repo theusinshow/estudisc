@@ -16,8 +16,9 @@ import { activities, attempts, packImports, studyEvents, tracks } from "@/db/sch
 import type * as schema from "@/db/schema";
 import { runCodeActivity, submitCodeActivity } from "@/features/activities/api";
 import { importTrackPack } from "@/features/import/api";
+import { getServerEnv } from "@/lib/env";
 
-const shouldRunRealPostgres = process.env.KNOW_OS_RUN_REAL_POSTGRES_TESTS === "1";
+const shouldRunRealPostgres = getServerEnv().ESTUDISC_RUN_REAL_POSTGRES_TESTS === "1";
 const passingSource =
   "const documentExists = true;\nconst userAuthorized = false;\nconst canOpen = documentExists && userAuthorized;\nconsole.log(canOpen);";
 
@@ -56,7 +57,7 @@ describe.skipIf(!shouldRunRealPostgres)("real PostgreSQL migration-backed smoke"
     const attemptRepository = new ActivityAttemptRepository(db as never);
     const progressRepository = new ProgressRepository(db as never);
 
-    vi.stubEnv("KNOW_OS_OWNER_ID", `real-postgres-owner-${randomUUID()}`);
+    vi.stubEnv("ESTUDISC_OWNER_ID", `real-postgres-owner-${randomUUID()}`);
 
     const importResult = await importTrackPack(examplePack, importRepository);
     expect(importResult).toMatchObject({
@@ -100,12 +101,12 @@ describe.skipIf(!shouldRunRealPostgres)("real PostgreSQL migration-backed smoke"
 
     await expect(countRows(db, attempts)).resolves.toBe(1);
     await expect(countRows(db, studyEvents)).resolves.toBe(1);
-    await expect(progressRepository.getLessonProgress(process.env.KNOW_OS_OWNER_ID ?? "", "js-fundamentals-001")).resolves.toMatchObject({
+    await expect(progressRepository.getLessonProgress(process.env.ESTUDISC_OWNER_ID ?? "", "js-fundamentals-001")).resolves.toMatchObject({
       totalActivities: 2,
       attemptedActivities: 1,
       passedActivities: 1
     });
-    await expect(progressRepository.getTrackProgress(process.env.KNOW_OS_OWNER_ID ?? "", "javascript")).resolves.toMatchObject({
+    await expect(progressRepository.getTrackProgress(process.env.ESTUDISC_OWNER_ID ?? "", "javascript")).resolves.toMatchObject({
       totalLessons: 1,
       totalActivities: 2,
       attemptedActivities: 1,
@@ -207,11 +208,11 @@ async function countRows(db: ReturnType<typeof drizzle<typeof schema>>, table: P
 }
 
 function createDisposableSchemaName() {
-  return `know_os_real_pg_${randomUUID().replaceAll("-", "_")}`;
+  return `estudisc_real_pg_${randomUUID().replaceAll("-", "_")}`;
 }
 
 function escapeIdentifier(identifier: string) {
-  if (!/^know_os_real_pg_[a-z0-9_]+$/.test(identifier)) {
+  if (!/^estudisc_real_pg_[a-z0-9_]+$/.test(identifier)) {
     throw new Error(`Refusing unsafe PostgreSQL schema identifier: ${identifier}`);
   }
 
