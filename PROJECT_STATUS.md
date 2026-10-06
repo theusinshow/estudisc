@@ -29,11 +29,11 @@ Do not repeat content imports or publication. Stable IDs, versions, source files
 
 ## Known issues
 
-Editorial source caveats about rights, official curriculum mapping, pacing and quarantined Portuguese Concept labels remain recorded. Publication does not certify these matters. Consolidation acceptance and remote results are being finalized in the linked report; do not infer remote CI success from local tests.
+Editorial source caveats about rights, official curriculum mapping, pacing and quarantined Portuguese Concept labels remain recorded. Publication does not certify these matters. Local acceptance, main CI and full E2E are green; exact evidence is in the consolidation report.
 
 ## Current priorities
 
-Finish final acceptance and remote identity migration; preserve the production alias, authentication and existing catalog. Current Design System version is defined only in `design-system/VERSION`.
+Consolidation is implemented and accepted. Preserve the production alias, authentication and existing catalog; use protected main for the next approved evolution. Current Design System version is defined only in `design-system/VERSION`.
 
 ## Next action
 
