@@ -1,4 +1,5 @@
-export const MAX_TRACK_PACK_BYTES = 1024 * 1024;
+const DEFAULT_JSON_REQUEST_BYTES = 1024 * 1024;
+export const MAX_TRACK_PACK_BYTES = 2 * 1024 * 1024;
 
 export type JsonRequestReadResult =
   | Readonly<{ ok: true; body: unknown; byteLength: number }>
@@ -12,7 +13,7 @@ export type JsonRequestReadResult =
 
 export async function readJsonRequestWithLimit(
   request: Request,
-  maxBytes = MAX_TRACK_PACK_BYTES
+  maxBytes = DEFAULT_JSON_REQUEST_BYTES
 ): Promise<JsonRequestReadResult> {
   const contentLength = request.headers.get("content-length");
 
