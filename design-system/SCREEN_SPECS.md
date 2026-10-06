@@ -4,6 +4,8 @@
 
 ### Progressive shell and Today (ADR 0040)
 
+Phase 3 under ADR 0041 extends flagged Plano with actual routine onboarding (days/time/priorities/preview), week/routine views, manual allocation, dated overrides/focus and explicit apply. No changes are saved by viewing a preview. Loading/empty/invalid/stale/unavailable-subject states retain a recovery path. Today displays routine facts (day off, completed planned budget or time reserved for simulation) without pretending they establish learning evidence. Suggested hours do not restrict voluntary study. The rollout remains default off.
+
 - Default/off: preserve Hoje/Aprender/Progresso/Mais and current Today.
 - `FEATURE_STUDY_PLANNER`: primary destinations Hoje/Plano/Aprender/Revisar/Progresso; secondary/account actions in a titled topbar Sheet with Escape/focus return. At 320px each destination remains a single label with at least 44px touch width/height. Desktop uses the same destinations in the sidebar.
 - Plano initially shows existing prepared/ACTIVE/completed session snapshots and 15/30/60-minute controls. Week/routine/onboarding modes remain pending; never display invented availability or a weekly allocation.

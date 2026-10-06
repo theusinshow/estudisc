@@ -1,5 +1,7 @@
 # MODEL HANDOFF — Planner routine contract
 
+Resolved 2026-10-06: user authorized this session to continue; ADR 0041 and [Phase 3 report](../WEEKLY-ROUTINE.md) implement the routine contract. The text/hashes below preserve the original handoff baseline, not the current next action. No independent Terra review or model switch is claimed.
+
 MODEL ESCALATION REQUIRED
 
 Recommended model: **Terra**. Risk: HIGH for routine/rebalance policy; routine UI/additive storage returns to Luna Max after the contract is settled. No additional agent has been recruited and this session cannot switch its own model.

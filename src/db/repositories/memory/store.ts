@@ -172,6 +172,8 @@ export type MemoryStore = {
   questionAssistance: Array<{ownerId:string;questionId:string;version:number;contextKey:string;hintLevel:number;solutionRevealed:boolean}>;
   questionExposures: Array<{ownerId:string;questionId:string;lastSeenAt:Date;timesSeen:number}>;
   studySessions:Array<{id:string;ownerId:string;trackId:string;status:string;budgetMinutes:number;items:unknown;policyVersion:string;startedAt:Date|null;endedAt:Date|null;createdAt:Date}>;
+  studyPlans: Array<{ownerId:string;revision:number;settings:unknown;updatedAt:Date}>;
+  studyPlanPreviews: Array<{id:string;ownerId:string;baseRevision:number;settings:unknown;snapshot:unknown;dependencyHash:string;policyVersion:string;createdAt:Date;expiresAt:Date;appliedRevision:number|null;appliedAt:Date|null}>;
   packImports: MemoryPackImport[];
   tracks: MemoryTrack[];
   modules: MemoryModule[];
@@ -202,6 +204,7 @@ export function getMemoryStore() {
     questionAssets:[],
     assessmentTemplates:[],assessmentInstances:[],assessmentResponses:[],
     questionAssistance:[],questionExposures:[],studySessions:[],
+    studyPlans:[],studyPlanPreviews:[],
     packImports: [],
     tracks: [],
     modules: [],
@@ -223,6 +226,8 @@ export function getMemoryStore() {
     trackProgressCount: 0
   };
 
+  globalStore.__estudiscMemoryStore.studyPlans ??= [];
+  globalStore.__estudiscMemoryStore.studyPlanPreviews ??= [];
   return globalStore.__estudiscMemoryStore;
 }
 

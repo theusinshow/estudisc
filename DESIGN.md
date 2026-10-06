@@ -28,7 +28,7 @@ New learning surfaces use moderate canonical radii and 56px answer targets. Othe
 
 ## Components
 
-Reuse `design-system/COMPONENT_REGISTRY.md` and existing feature components. The shared AppShell owns TopBar/navigation/Focus; native Dialog/Sheet and keyboard Tabs provide the tested foundation. StudyActionCard and TodayPlan display authoritative reasons and real session facts; `/plan` currently exposes existing sessions rather than a weekly routine. Tutor is contextual. Admin has denser editorial tools and existing permission boundaries. Programming Lab retains its approved technical controls.
+Reuse `design-system/COMPONENT_REGISTRY.md` and existing feature components. The shared AppShell owns TopBar/navigation/Focus; native Dialog/Sheet and keyboard Tabs provide the tested foundation. StudyActionCard and TodayPlan display authoritative reasons and real session facts. Flagged `/plan` now adds actual weekly routine onboarding, time/subject views, manual allocation and explicit preview/apply under ADR 0041. Tutor is contextual. Admin has denser editorial tools and existing permission boundaries. Programming Lab retains its approved technical controls.
 
 ## Do's and Don'ts
 

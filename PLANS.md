@@ -1,11 +1,30 @@
 # Estudisc current plan
 
-## Current task — product context refresh and continuation (2026-10-06)
+## Current task — Phase 3 weekly routine (2026-10-06)
+
+The user's “pode seguir” answers the pending choice: authorize this session to resolve and implement the Phase 3 contract. This is an explicit exception to the earlier Terra handoff for this increment; no model switch or additional agent. Local implementation remains authorized; production/external operations remain separate.
+
+Assumptions/acceptance: versioned deterministic time allocation inside the existing study-session/planner feature; owner/timezone-scoped seven-day routine, modes/priorities/manual allocations, dated overrides/focus, review target and simulation time reservation; immutable ACTIVE composition; no missed-day task debt. Preview/apply is explicit, owner/revision/dependency/expiry checked and idempotent. Publication is not readiness certification; existing question/prerequisite/exposure selection rules remain. Additive tables only, no Pack/content/evidence migration.
+
+- [x] ADR 0041, validated contracts, pure calendar/allocation policy and meaningful golden/edge tests.
+- [x] SQL + memory plan/preview persistence, owner isolation/stale preview/idempotence and disposable SQL validation.
+- [x] Owner-scoped API and routine onboarding/week/editor UI with default-off rollout, loading/empty/error recovery.
+- [x] Integrate routine time constraints with existing session planning/start without changing priority weights/mastery; preserve ACTIVE and prepared state on failed replan.
+- [x] Complete final default/on confirmation and documentation/hash/diff acceptance; 38 default and 10 flagged E2E pass.
+- [x] Prepare the accepted Phase 3 checkpoint and resumable Adaptive Session next increment; model-policy and production boundaries preserved.
+
+Current gate evidence: lint/typecheck/build/packs PASS; 299 tests PASS / 3 optional real-PostgreSQL SKIP; flagged E2E 10 PASS / no skips or failures; browser 320/360/390/430/1280, keyboard/preview/apply/reload/day-off/server-budget QA PASS. The first E2E attempt caught a test label locator mismatch; semantic combobox locator fixed it. One later child launch returned exit 1 without a mobile result; direct mobile passed, runner diagnostics were improved, and final combined on run passed. Exact commands/limits: [Phase 3 report](docs/estudisc/WEEKLY-ROUTINE.md).
+
+Phase 3 gate: accepted locally. Default final E2E 38 PASS / 10 intentional gated SKIP; on final E2E 10 PASS / no skips or failures; remaining checks as above. Evidence pins 41 implementation/test hashes and compares the actual 17 prior handoff inputs; previous SQL and 12 source documents unchanged.
+
+NEXT ACTION: Phase 3 is checkpointed and locally accepted. Continue the versioned Adaptive Session contract (10/20/30/45, explicit candidate actions, one clock and readiness reasons) inside existing core modules. Model choice for Phase 3 is resolved; no repeat permission is needed for its fixes. Do not execute migration 0019 against production, deploy or republish content without explicit authorization.
+
+## Completed task — product context refresh and continuation (2026-10-06)
 
 User authorized updating the stale Impeccable context and continuing local implementation. Update existing PRODUCT.md to the current schema using confirmed repository/user facts; remove deprecated Register and add platform, positioning, operating context, constraints, evidence and product principles. Preserve canonical DS authority and do not invent claims or visual direction.
 
 - [x] Refresh PRODUCT.md and recognized DESIGN.md sections; verify confirmed source pointers and current Impeccable schema (`doctor findings=[]`).
-- [ ] Record the user's model-routing choice before dependent Phase 3 algorithm work; context refresh and independent read-only preparation continue meanwhile.
+- [x] User authorized this session to resolve the Phase 3 contract and continue; no automatic model switch.
 - [x] Complete context schema/link/hash/diff checks, lint, status and changelog. No runtime/content/dependency changes; prior application acceptance remains valid evidence, not a fresh run claim.
 - [ ] Continue dependent Phase 3 work after the asynchronous model-routing choice; no new algorithm has been implemented while awaiting the answer.
 

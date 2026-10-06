@@ -2,6 +2,8 @@
 
 Implementation delta: the subsequent authorized Phase 0/1/2 foundation increment is recorded in [EVOLUTION-FOUNDATION.md](EVOLUTION-FOUNDATION.md). Classifications below retain the initial audited checkpoint; use that report and the current plan for implemented flags/navigation/Focus/Today and remaining routine contracts.
 
+Phase 3 delta: [WEEKLY-ROUTINE.md](WEEKLY-ROUTINE.md) records actual routine persistence, onboarding/week/manual/override/focus and checked previews; original gap classifications below remain audit history rather than current implementation status.
+
 ## 1. Snapshot and audit limits
 
 Date: 2026-10-06. Branch: `main`. Base: `d38f640` (`Merge pull request #2 from theusinshow/finalize/estudisc`). Initial working tree was clean. Remote: `https://github.com/theusinshow/estudisc.git`.

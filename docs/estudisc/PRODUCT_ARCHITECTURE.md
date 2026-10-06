@@ -22,3 +22,5 @@ Precedence and reconciliations:
 - Provider credentials, external model calls and production operations remain separate authorization boundaries. Future model names below are routing recommendations; this session did not switch models or recruit agents.
 
 Offline/advanced experiences are listed in the source architecture but lack detailed acceptance contracts. Phase 15 is deferred until its scope is defined.
+
+The user's subsequent continuation resolves the prior Phase 3 model handoff in this session. Weekly routine is implemented under ADR 0041; current evidence/limits are in [WEEKLY-ROUTINE.md](WEEKLY-ROUTINE.md). No model switch, production migration/rollout, new publication or readiness certification is implied.

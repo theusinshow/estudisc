@@ -23,3 +23,5 @@ Search existing components/features before adding one. Status describes rollout/
 | InteractiveMap / Knowledge canvas | EXPERIMENTAL | Not implemented | Lazy loading, accessible fallback and approved semantics first |
 
 External sources are adopted for a concrete unmet need and retain Estudisc identity. shadcn, dnd-kit, React Flow and MapLibre are not blanket installation requirements.
+
+Phase 3 additions (EXPERIMENTAL/default-off): `RoutinePlanner` and `RoutineWeekView` in `src/features/study-sessions/`. They consume the shared native controls/Tabs, canonical tokens and authoritative routine DTO. Their budgets are planned time, never measured elapsed time or mastery.

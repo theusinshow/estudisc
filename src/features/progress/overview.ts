@@ -4,6 +4,11 @@ import { calculateVersionedMastery } from "@/features/mastery/mastery-policy-v2"
 
 export const masteryOrder: readonly MasteryState[] = ["unseen", "introduced", "understood", "practicing", "strong", "mastered"];
 
+/** Saving availability is configuration, not evidence that a study day happened. */
+export function studyActivityDates(events: readonly { type: string; occurredAt: Date }[]) {
+  return events.filter(event => event.type !== "study_plan_applied").map(event => event.occurredAt);
+}
+
 export type OverviewConcept = Readonly<{ stableId: string; title: string; areaTitles: readonly string[] }>;
 
 export type LadderRung = Readonly<{

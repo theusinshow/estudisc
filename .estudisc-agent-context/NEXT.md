@@ -1,5 +1,9 @@
 # Estudisc next action
 
+Current Phase 3: the user answered the model-routing choice with “pode seguir”; current-session routine contract/implementation is authorized and the original Terra handoff is resolved. ADR 0041, migration 0019 (two additive empty tables), owner/timezone-scoped weekly routine, modes/manual allocation/overrides/focus/reservations, checked preview/apply and existing planner/start limits are implemented. ACTIVE snapshots and failed-replan prepared state are preserved; no new mastery/evidence/scoring authority. All flags default off; no production migration/deploy/publication.
+
+Phase 3 gate accepted: lint/typecheck/build/packs PASS; 299 tests / 3 optional PostgreSQL skips; final default E2E 38 PASS / 10 intentional gated skips; canonical flagged E2E 10 PASS; browser/hash/diff QA PASS. Exact current evidence/commands in `docs/estudisc/WEEKLY-ROUTINE.md`. Checkpoint, then Adaptive Session contract through existing modules; no new agent/model switch is claimed. Historical paragraphs below do not reopen the resolved Phase 3 choice.
+
 Latest update: the user authorized refreshing auxiliary Impeccable context and continuing. PRODUCT.md/DESIGN.md refresh is accepted; doctor findings=[], context/link/hash/diff checks and lint PASS. Runtime/content/dependencies remain unchanged from b30b86d. Details: `docs/estudisc/PRODUCT-CONTEXT-REFRESH.md`. The asynchronous model-routing choice (continue Phase 3 contract here vs retain Terra) is pending; do not assume an answer. Independent Planner spec/hash preparation is complete. Continue from the existing handoff when the choice arrives.
 
 Consolidation and identity migration are complete. Read PROJECT_STATUS.md and the final consolidation report, then continue only with the next explicitly approved evolution through protected main. Do not repeat imports or publication. Preserve stable IDs, hashes, learner state, legacy readers and existing source caveats.

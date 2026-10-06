@@ -12,6 +12,8 @@ import { getTodayDashboard } from "@/features/today/get-today-dashboard";
 import { SessionControls } from "@/features/study-sessions/session-controls";
 import { getFeatureFlags } from "@/lib/feature-flags";
 import { TodayPage } from "@/features/today/today-page";
+import { remainingRoutineMinutes } from "@/features/study-sessions/routine-session-constraints";
+import { formatTodayDate } from "@/features/today/today-date";
 
 export const dynamic = "force-dynamic";
 
@@ -37,7 +39,7 @@ export default async function HomePage() {
     <AppShell>
       <div className="today">
         <header className="today-header">
-          <p className="today-date">{new Intl.DateTimeFormat("pt-BR", { weekday: "long", day: "numeric", month: "long", timeZone: "America/Sao_Paulo" }).format(new Date())}</p>
+          <p className="today-date">{formatTodayDate(dashboard.routine?.week?.today)}</p>
           <h1>Hoje</h1>
           <ul className="today-pulse" aria-label="Resumo de hoje">
             {pulse.map(item => (
@@ -67,7 +69,7 @@ export default async function HomePage() {
           <h2 id="time-title">Quanto tempo você tem agora?</h2>
           <p>Montamos a sessão com revisões, erros pendentes e a próxima aula.</p>
           <ClickSpark>
-            <SessionControls />
+            <SessionControls availableMinutes={dashboard.routine?.week?.activeSessionId ? undefined : remainingRoutineMinutes(dashboard.routine?.week ?? null)} />
           </ClickSpark>
         </section>}
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-06 — Weekly routine and checked plan previews
+
+- Add owner-scoped routine.v1 with timezone/calendar budgets, Automatic/Assisted/Manual distribution, priorities, temporary focus/overrides, review targets and explicit simulation time reservation (ADR 0041). Add two empty user-state tables in migration 0019; no Pack or learner-history transformation.
+- Add onboarding/week/routine editing and server-derived preview/apply with owner/revision/dependency/expiry checks and idempotent audit events. Constrain existing planner/start paths cumulatively by routine time/subject budgets, preserve ACTIVE snapshots and keep prepared sessions on failed replanning.
+- Reuse Today facts, display genuine day-off/budget-used/simulation-reserved states and routine date, exclude configuration from study-day activity, and handle unavailable/generic subject identifiers without hidden invalid selection or inherited object keys. Preserve mastery/review/scoring and published corpus bytes; rollout remains off.
+- Add SQL/memory, domain/API/UI and desktop/mobile acceptance coverage. Surface actual child-launch errors/signals in the serial E2E runner. Exact commands/results/limits: `docs/estudisc/WEEKLY-ROUTINE.md`. Production migration/deployment and routine backup remain separate gates.
+
 ## 2026-10-06 — Product/design context refresh
 
 - Update existing PRODUCT.md to the current Impeccable schema using confirmed product constraints and source evidence; remove deprecated Register and record web platform, positioning, operating context and product principles.

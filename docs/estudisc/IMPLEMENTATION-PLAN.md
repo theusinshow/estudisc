@@ -60,7 +60,7 @@ Acceptance: first ~390×844 viewport foregrounds next action; resume/queue work;
 
 ## 6. Phase 3 — Study Planner
 
-MODEL ESCALATION REQUIRED: [Terra routine handoff](handoffs/2026-10-06-planner-routine-terra.md) defines the next safe domain-contract task. `/plan` currently wraps existing session planning/history; weekly routine/modes/overrides/rebalance are not implemented.
+The user authorized this session to resolve the routine contract. [ADR 0041](../ADR/0041-weekly-study-routine-and-checked-previews.md) and [Phase 3 report](WEEKLY-ROUTINE.md) record weekly availability, modes, overrides/focus, explicit checked preview/apply and compatible session time limits. The original Terra handoff is resolved; its hashes remain historical. Adaptive Session/readiness and backup integration remain separate contracts.
 
 Risk MEDIUM for contracts/UI; HIGH for scheduling. Luna Max for additive storage and specified UI; Terra defines rebalance/availability conflicts before algorithm changes. Depends on Phases 0–2. Flag: `FEATURE_STUDY_PLANNER`.
 

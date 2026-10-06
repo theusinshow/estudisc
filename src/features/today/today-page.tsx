@@ -7,6 +7,7 @@ import { getFeatureFlags } from "@/lib/feature-flags";
 import { StudyActionCard } from "./study-action-card";
 import { TodayPlan } from "./today-plan";
 import type { getTodayDashboard } from "./get-today-dashboard";
+import { formatTodayDate } from "./today-date";
 
 type Dashboard = Awaited<ReturnType<typeof getTodayDashboard>>;
 
@@ -17,7 +18,7 @@ export function TodayPage({ dashboard }: Readonly<{ dashboard: Dashboard }>) {
   const overview = dashboard.progress;
   return <AppShell><div className="today today-evolution">
     <header className="today-header">
-      <p className="today-date">{new Intl.DateTimeFormat("pt-BR", { weekday: "long", day: "numeric", month: "long", timeZone: "America/Sao_Paulo" }).format(new Date())}</p>
+      <p className="today-date">{formatTodayDate(dashboard.routine?.week?.today)}</p>
       <h1>Hoje</h1>
     </header>
     <section className="today-next" aria-labelledby="next-title">
@@ -25,7 +26,7 @@ export function TodayPage({ dashboard }: Readonly<{ dashboard: Dashboard }>) {
       {next ? <StudyActionCard variant={next.kind === "mistake" ? "practice" : next.kind}
         title={next.title} reason={next.reason} href={next.href} estimatedMinutes={session?.budgetMinutes} /> : <FirstRunCallout />}
     </section>
-    <TodayPlan sessions={dashboard.sessions} hasNextAction={Boolean(next)} plannerEnabled={getFeatureFlags().FEATURE_STUDY_PLANNER} />
+    <TodayPlan sessions={dashboard.sessions} hasNextAction={Boolean(next)} plannerEnabled={getFeatureFlags().FEATURE_STUDY_PLANNER} routine={dashboard.routine} />
     {(dashboard.dueReviews.length > 0 || activeMistakes > 0) && <section className="today-attention" aria-labelledby="attention-title">
       <h2 id="attention-title">Precisa da sua atenção</h2>
       <ul>

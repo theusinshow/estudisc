@@ -2,6 +2,8 @@
 
 Source: explicit user instruction, 2026-10-06. Applies to this evolution plan; preserves existing repository authorization and content-review boundaries.
 
+Session exception (2026-10-06): the user answered the pending current-session-vs-Terra choice with “pode seguir”, authorizing this session to resolve and implement Phase 3. The previous routine handoff is resolved by ADR 0041; no model switch or agent recruitment occurred. Do not ask again for that increment's routine fixes/validation. Standing recommendations for other high-risk work and production approval boundaries remain.
+
 Default: **Luna Max**. Escalate to **Terra** for a concrete domain, architecture, security, persisted-data or consistency decision. Use **Sol High** exceptionally for unresolved difficult diagnosis, critical adversarial review, irreversibility or unresolved architectural tradeoffs. A long task, many files/tests, large context or an initial failed attempt do not justify escalation.
 
 The active session cannot change its own model. Do not claim to have used Luna/Terra/Sol without actual selection. Terra is the user's routing label; availability must be checked in the execution environment when a handoff is needed. Do not silently substitute another model. No additional agents by default; reuse existing workers only when their involvement is actually authorized.

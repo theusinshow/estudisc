@@ -33,15 +33,19 @@ Editorial source caveats about rights, official curriculum mapping, pacing and q
 
 ## Current priorities
 
+Phase 3 implementation: the user authorized this session to continue after the model-routing choice. Owner-scoped weekly routine, three modes, priorities/manual allocation, dated overrides/focus, review target, simulation time reservation and explicit revision/dependency/expiry-checked preview/apply are implemented under default-off FEATURE_STUDY_PLANNER. Existing planner/start paths respect time/subject limits while preserving ACTIVE snapshots; saving availability does not count as a study day. ADR 0041 and additive migration 0019 record the contract. No Pack or published-content transformation; no production migration or release.
+
+Phase 3 acceptance: lint/typecheck/build/packs PASS; 299 tests PASS / 3 optional real-PostgreSQL SKIP; final default E2E 38 PASS / 10 intentional gated SKIP; final on E2E 10 PASS / no failures; mobile/desktop/browser/hash/diff QA PASS. Exact commands and limits: [WEEKLY-ROUTINE.md](docs/estudisc/WEEKLY-ROUTINE.md). The earlier Terra handoff is resolved by explicit user continuation, not a claimed model switch/independent review. Remaining contracts include Adaptive Session 10/20/30/45, readiness reasons, persisted lesson interaction resume and compatible routine backup.
+
 Auxiliary product/design context refresh is complete under the user's latest authorization: PRODUCT.md has the current Impeccable schema, DESIGN.md uses recognized sections and actual ADR 0040 navigation/Focus pointers. Doctor reports no findings; schema/source/hash/link/diff checks and lint pass. No runtime/content/dependency changes from `b30b86d`; prior application gates remain verified evidence. See [context refresh](docs/estudisc/PRODUCT-CONTEXT-REFRESH.md).
 
-The user's asynchronous choice about resolving Phase 3's contract in this session versus retaining the requested Terra routing is pending. Independent spec/hash preparation is complete; no dependent scheduling/override algorithm was changed while waiting.
+The user's previously pending asynchronous choice was answered with “pode seguir”; this session was authorized to resolve the Phase 3 contract. The context-refresh checkpoint remains historical evidence, not a current blocker.
 
 Implementation is now authorized by the user and the first Phase 0/1/2 foundation increment is locally accepted: validated default-off flags, compatible five-destination shell, Focus mode, native Sheet/Dialog, keyboard Tabs, real session-only `/plan`, and reusable Today presentation with next action first. ADR 0040 and canonical DS screen/registry docs record compatibility; tokens remain 4.0.0. No Pack/data migration, published-content change or domain-policy change.
 
 Current implementation checks: lint/typecheck/build/pack validation PASS; tests 275 PASS / 3 optional PostgreSQL SKIP; existing off/default E2E 38 PASS / 4 intentional flagged SKIP; separate on E2E 4 PASS. Browser QA at 320/360/390/430/1280, keyboard/modal/Focus exit/reduced motion passed. Exact commands/results/limitations: [foundation report](docs/estudisc/EVOLUTION-FOUNDATION.md).
 
-MODEL ESCALATION REQUIRED: [Terra handoff](docs/estudisc/handoffs/2026-10-06-planner-routine-terra.md) for weekly availability, modes, overrides, missed-day rebalance, preview/apply revision and readiness facts. These policy decisions affect pedagogical selection and existing ACTIVE sessions; current UI remains session-only. Future implementation is already locally authorized, but the requested model-routing policy requires this safe handoff. No model switch or new agent was performed; no production rollout is claimed. All new flags remain off unless explicitly enabled.
+Historical foundation handoff: [the original routine task](docs/estudisc/handoffs/2026-10-06-planner-routine-terra.md) was subsequently resolved by the user's current-session authorization and ADR 0041. No model switch/new agent or production rollout is claimed. All new flags remain off unless explicitly enabled.
 
 ## Completed initial audit — historical baseline
 
@@ -55,4 +59,4 @@ Preserve the production alias, authentication and existing catalog; use protecte
 
 ## Next action
 
-Continue from the Terra Phase 3 contract handoff, then return specified routine storage/UI/helpers to Luna Max; see [PLANS.md](PLANS.md) and [.estudisc-agent-context/NEXT.md](.estudisc-agent-context/NEXT.md). Do not rediscover the repo or repeat imports/publication. Historical implementation logs are in `docs/history/`.
+Complete the current Phase 3 acceptance evidence, then continue the Adaptive Session contract through existing modules; see [PLANS.md](PLANS.md) and [.estudisc-agent-context/NEXT.md](.estudisc-agent-context/NEXT.md). Do not repeat imports/publication or claim planner-readiness certification from publication. Historical implementation logs are in `docs/history/`.

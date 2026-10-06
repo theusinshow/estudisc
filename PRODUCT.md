@@ -31,7 +31,7 @@ Students primarily read, practice and review on a phone; desktop expands the sam
 - Real exam mode hides hints, tutor and correctness feedback until finalization. Reserved official Questions/assets remain protected and never become unrestricted AI input or public static assets.
 - AI is optional/contextual and cannot own canonical recommendations, mastery, review, official scores or publication. Learner code remains isolated; RUN does not record an official Attempt and SUBMIT does.
 - Preserve canonical Design System authority, content identities/hashes and historical compatibility. Feature flags introduce changes progressively; external/production writes need explicit authorization.
-- Open product contracts: weekly routine modes/availability/overrides/rebalance, version-compatible persisted interaction resume and purpose/evidence semantics. These are planned capabilities, not claims that the current session-only Plano already implements them.
+- Flagged weekly routine now implements availability/modes/overrides/focus and checked preview/apply (ADR 0041). Open contracts remain Adaptive Session composition/readiness, version-compatible persisted interaction resume and purpose/evidence semantics. Planned time is not measured time or proof of learning.
 
 ## Brand Commitments
 
