@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-27-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Dinâmica populacional brasileira, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "População absoluta e densidade demográfica são a mesma medida."
+      },
+      {
+        "key": "B",
+        "text": "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região."
+      },
+      {
+        "key": "C",
+        "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+      },
+      {
+        "key": "D",
+        "text": "Transição demográfica significa apenas aumento da população."
+      },
+      {
+        "key": "E",
+        "text": "Uma região pouco povoada é necessariamente pouco urbanizada."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-27-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-27-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “População absoluta e densidade demográfica são a mesma medida.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "População absoluta e densidade demográfica são a mesma medida."
+      },
+      {
+        "key": "B",
+        "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+      },
+      {
+        "key": "C",
+        "text": "Transição demográfica significa apenas aumento da população."
+      },
+      {
+        "key": "D",
+        "text": "Transição demográfica envolve queda das taxas de mortalidade e, posteriormente, de natalidade, alterando crescimento e estrutura etária."
+      },
+      {
+        "key": "E",
+        "text": "Uma região pouco povoada é necessariamente pouco urbanizada."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Transição demográfica envolve queda das taxas de mortalidade e, posteriormente, de natalidade, alterando crescimento e estrutura etária.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-27-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-27-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: População deve ser analisada por distribuição, estrutura, movimentos e condições de vida, não apenas por total de habitantes. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "População absoluta e densidade demográfica são a mesma medida."
+      },
+      {
+        "key": "B",
+        "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+      },
+      {
+        "key": "C",
+        "text": "Migrações internas modificaram a distribuição da população brasileira ao longo do século XX e continuam mudando de direção e intensidade."
+      },
+      {
+        "key": "D",
+        "text": "Transição demográfica significa apenas aumento da população."
+      },
+      {
+        "key": "E",
+        "text": "Uma região pouco povoada é necessariamente pouco urbanizada."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Migrações internas modificaram a distribuição da população brasileira ao longo do século XX e continuam mudando de direção e intensidade.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-27-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-27-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Dinâmica populacional brasileira por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Indicadores como idade, fecundidade, mortalidade e migração ajudam a interpretar tendências populacionais."
+      },
+      {
+        "key": "B",
+        "text": "População absoluta e densidade demográfica são a mesma medida."
+      },
+      {
+        "key": "C",
+        "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+      },
+      {
+        "key": "D",
+        "text": "Transição demográfica significa apenas aumento da população."
+      },
+      {
+        "key": "E",
+        "text": "Uma região pouco povoada é necessariamente pouco urbanizada."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "Indicadores como idade, fecundidade, mortalidade e migração ajudam a interpretar tendências populacionais.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-27-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-27-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região.\nII. População absoluta e densidade demográfica são a mesma medida.\nIII. Migrações internas modificaram a distribuição da população brasileira ao longo do século XX e continuam mudando de direção e intensidade.\nIV. Migração sempre ocorre de áreas pobres para áreas ricas.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-27-CON-01",
+      "GH-27-CON-02",
+      "GH-27-CON-03",
+      "GH-27-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-27-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Dinâmica populacional brasileira. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "População absoluta e densidade demográfica são a mesma medida."
+      },
+      {
+        "key": "B",
+        "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+      },
+      {
+        "key": "C",
+        "text": "Transição demográfica significa apenas aumento da população."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Ler taxas e mapas distinguindo valores absolutos, proporções e densidades."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Ler taxas e mapas distinguindo valores absolutos, proporções e densidades.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-27-CON-01",
+      "GH-27-CON-02",
+      "GH-27-CON-03",
+      "GH-27-CON-04",
+      "GH-27-CON-05",
+      "GH-27-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-27-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Dinâmica populacional brasileira?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região."
+      },
+      {
+        "key": "B",
+        "text": "Transição demográfica envolve queda das taxas de mortalidade e, posteriormente, de natalidade, alterando crescimento e estrutura etária."
+      },
+      {
+        "key": "C",
+        "text": "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho."
+      },
+      {
+        "key": "D",
+        "text": "Transição demográfica significa apenas aumento da população."
+      },
+      {
+        "key": "E",
+        "text": "Indicadores como idade, fecundidade, mortalidade e migração ajudam a interpretar tendências populacionais."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-27-CON-01",
+      "GH-27-CON-02",
+      "GH-27-CON-03",
+      "GH-27-CON-04",
+      "GH-27-CON-05",
+      "GH-27-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-27-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Dinâmica populacional brasileira, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "População absoluta e densidade demográfica são a mesma medida."
+      },
+      {
+        "key": "B",
+        "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+      },
+      {
+        "key": "C",
+        "text": "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho."
+      },
+      {
+        "key": "D",
+        "text": "Transição demográfica significa apenas aumento da população."
+      },
+      {
+        "key": "E",
+        "text": "Uma região pouco povoada é necessariamente pouco urbanizada."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-27-CON-01",
+      "GH-27-CON-02",
+      "GH-27-CON-03",
+      "GH-27-CON-04",
+      "GH-27-CON-05",
+      "GH-27-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

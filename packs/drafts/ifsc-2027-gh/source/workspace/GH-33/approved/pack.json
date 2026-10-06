@@ -1,0 +1,511 @@
+{
+  "lesson": {
+    "schemaVersion": "vecta-lesson-content-1",
+    "lessonId": "GH-33",
+    "subject": "GH",
+    "title": "Idade Média e expansão islâmica",
+    "unit": "História Geral",
+    "version": 2,
+    "status": "APPROVED_CONTENT_PENDING_INTEGRATION_V2",
+    "concepts": [
+      {
+        "id": "GH-33-CON-01",
+        "name": "Formação do mundo medieval",
+        "masteryTarget": "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval."
+      },
+      {
+        "id": "GH-33-CON-02",
+        "name": "Feudalismo como organização histórica",
+        "masteryTarget": "O chamado feudalismo descreve formas de organização social e econômica de partes da Europa e não um modelo idêntico em todo lugar e período."
+      },
+      {
+        "id": "GH-33-CON-03",
+        "name": "Igreja e cultura",
+        "masteryTarget": "O Islã surgiu no século VII na Península Arábica e expandiu-se por vastas áreas da África, Ásia e Europa."
+      },
+      {
+        "id": "GH-33-CON-04",
+        "name": "Cidades e comércio",
+        "masteryTarget": "Sociedades islâmicas desenvolveram centros urbanos, comércio, ciência, filosofia e circulação de conhecimentos."
+      },
+      {
+        "id": "GH-33-CON-05",
+        "name": "Origem e expansão do Islã",
+        "masteryTarget": "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais."
+      },
+      {
+        "id": "GH-33-CON-06",
+        "name": "Intercâmbios no Mediterrâneo",
+        "masteryTarget": "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais."
+      }
+    ],
+    "blocks": [
+      {
+        "id": "GH-33-B01",
+        "type": "HOOK",
+        "title": "Problema de partida",
+        "content": "A Idade Média europeia coexistiu com sociedades islâmicas dinâmicas e intensas redes de comércio e conhecimento."
+      },
+      {
+        "id": "GH-33-B02",
+        "type": "LEARNING_GOALS",
+        "title": "Ao final desta aula",
+        "items": [
+          "Explicar os conceitos centrais de Idade Média e expansão islâmica em linguagem própria.",
+          "Interpretar texto, mapa, gráfico, imagem ou documento relacionado ao tema.",
+          "Aplicar o conteúdo em questão contextualizada no estilo IFSC e justificar a alternativa correta."
+        ]
+      },
+      {
+        "id": "GH-33-B03",
+        "type": "EXPLANATION",
+        "title": "Ideia central",
+        "content": "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval. O chamado feudalismo descreve formas de organização social e econômica de partes da Europa e não um modelo idêntico em todo lugar e período.",
+        "items": [
+          "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval.",
+          "O chamado feudalismo descreve formas de organização social e econômica de partes da Europa e não um modelo idêntico em todo lugar e período."
+        ]
+      },
+      {
+        "id": "GH-33-B04",
+        "type": "EXPLANATION",
+        "title": "Como as relações se organizam",
+        "content": "O Islã surgiu no século VII na Península Arábica e expandiu-se por vastas áreas da África, Ásia e Europa. Sociedades islâmicas desenvolveram centros urbanos, comércio, ciência, filosofia e circulação de conhecimentos.",
+        "items": [
+          "O Islã surgiu no século VII na Península Arábica e expandiu-se por vastas áreas da África, Ásia e Europa.",
+          "Sociedades islâmicas desenvolveram centros urbanos, comércio, ciência, filosofia e circulação de conhecimentos."
+        ]
+      },
+      {
+        "id": "GH-33-B05",
+        "type": "EXPLANATION",
+        "title": "O que conecta o tema à prova",
+        "content": "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais.",
+        "items": [
+          "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais.",
+          "Evitar o rótulo simplista de “Idade das Trevas” e observar diversidade e intercâmbios."
+        ]
+      },
+      {
+        "id": "GH-33-B06",
+        "type": "CALLOUT",
+        "variant": "SOURCE_LITERACY",
+        "title": "Leia a fonte, não apenas o tema",
+        "items": [
+          "Evitar o rótulo simplista de “Idade das Trevas” e observar diversidade e intercâmbios.",
+          "Observe autoria, data, lugar, finalidade, legenda/unidade e o que a fonte permite ou não concluir."
+        ]
+      },
+      {
+        "id": "GH-33-B07",
+        "type": "CALLOUT",
+        "variant": "MISCONCEPTION",
+        "title": "Erros que custam ponto",
+        "items": [
+          "A Idade Média foi um período sem cidades, comércio ou conhecimento.",
+          "O mundo islâmico permaneceu isolado da Europa.",
+          "Feudalismo existiu de forma idêntica em todo o planeta.",
+          "Islã e árabe são sinônimos étnicos e religiosos."
+        ]
+      },
+      {
+        "id": "GH-33-B08",
+        "type": "CALLOUT",
+        "variant": "KEY_TERMS",
+        "title": "Vocabulário essencial",
+        "items": [
+          "Formação do mundo medieval",
+          "Feudalismo como organização histórica",
+          "Igreja e cultura",
+          "Cidades e comércio",
+          "Origem e expansão do Islã",
+          "Intercâmbios no Mediterrâneo"
+        ]
+      },
+      {
+        "id": "GH-33-B09",
+        "type": "WORKED_EXAMPLE",
+        "title": "Como resolver uma questão",
+        "prompt": "Uma questão apresenta uma fonte relacionada a Idade Média e expansão islâmica. Como decidir entre alternativas plausíveis?",
+        "answer": "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais.",
+        "reasoning": [
+          "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+          "Extraia da fonte apenas as evidências explícitas.",
+          "Ative o conceito da aula que explica a evidência.",
+          "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+          "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
+        ]
+      },
+      {
+        "id": "GH-33-B10",
+        "type": "CALLOUT",
+        "variant": "IFSC_STRATEGY",
+        "title": "Estratégia IFSC",
+        "items": [
+          "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+          "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+          "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
+        ]
+      },
+      {
+        "id": "GH-33-B11",
+        "type": "MEDIA_RECOMMENDATION",
+        "title": "Material complementar",
+        "mediaRefs": [
+          "SRC-GH-046"
+        ],
+        "optional": true
+      },
+      {
+        "id": "GH-33-B12",
+        "type": "COMPONENT_REQUEST",
+        "title": "Visual determinístico",
+        "requestRef": "DET-GH-33-001",
+        "status": "PENDING"
+      },
+      {
+        "id": "GH-33-B13",
+        "type": "SUMMARY",
+        "title": "Resumo para recuperar sem olhar",
+        "items": [
+          "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval.",
+          "O chamado feudalismo descreve formas de organização social e econômica de partes da Europa e não um modelo idêntico em todo lugar e período.",
+          "O Islã surgiu no século VII na Península Arábica e expandiu-se por vastas áreas da África, Ásia e Europa.",
+          "Sociedades islâmicas desenvolveram centros urbanos, comércio, ciência, filosofia e circulação de conhecimentos.",
+          "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais."
+        ]
+      },
+      {
+        "id": "GH-33-B14",
+        "type": "EXIT_TICKET",
+        "title": "Saída rápida",
+        "prompt": "Em duas ou três frases, explique a ideia mais importante de Idade Média e expansão islâmica e cite um erro de interpretação que você evitaria numa questão.",
+        "answerGuide": "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval. Evite, por exemplo: A Idade Média foi um período sem cidades, comércio ou conhecimento."
+      }
+    ],
+    "sourceRefs": [
+      "SRC-IFSC-GH-001",
+      "SRC-GH-046",
+      "SRC-IFSC-GH-2026-1",
+      "SRC-IFSC-GH-2026-2"
+    ],
+    "mediaRefs": [
+      "SRC-GH-046"
+    ],
+    "imageRequestRefs": [],
+    "editorialNotes": [
+      "Conteúdo original VECTA baseado no currículo IFSC e fontes catalogadas.",
+      "Não publicar mídia externa sem revisão de licença e proveniência.",
+      "Em temas históricos, priorizar documentos autênticos e leitura crítica de fontes.",
+      "Questões revisadas em segunda passada para reduzir repetição de stems e reforçar interpretação de fontes."
+    ]
+  },
+  "questions": [
+    {
+      "id": "GH-33-Q001",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Em relação a Idade Média e expansão islâmica, qual afirmação está correta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        },
+        {
+          "key": "B",
+          "text": "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval."
+        },
+        {
+          "key": "C",
+          "text": "O mundo islâmico permaneceu isolado da Europa."
+        },
+        {
+          "key": "D",
+          "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        },
+        {
+          "key": "E",
+          "text": "Islã e árabe são sinônimos étnicos e religiosos."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "RECALL",
+      "conceptIds": [
+        "GH-33-CON-01"
+      ],
+      "targetedError": "foundation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-33-Q002",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um estudante diz: “A Idade Média foi um período sem cidades, comércio ou conhecimento.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        },
+        {
+          "key": "B",
+          "text": "O mundo islâmico permaneceu isolado da Europa."
+        },
+        {
+          "key": "C",
+          "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        },
+        {
+          "key": "D",
+          "text": "O chamado feudalismo descreve formas de organização social e econômica de partes da Europa e não um modelo idêntico em todo lugar e período."
+        },
+        {
+          "key": "E",
+          "text": "Islã e árabe são sinônimos étnicos e religiosos."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "O chamado feudalismo descreve formas de organização social e econômica de partes da Europa e não um modelo idêntico em todo lugar e período.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-33-CON-02"
+      ],
+      "targetedError": "concept_discrimination",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-33-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Considere a situação de partida da aula: A Idade Média europeia coexistiu com sociedades islâmicas dinâmicas e intensas redes de comércio e conhecimento. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        },
+        {
+          "key": "B",
+          "text": "O mundo islâmico permaneceu isolado da Europa."
+        },
+        {
+          "key": "C",
+          "text": "O Islã surgiu no século VII na Península Arábica e expandiu-se por vastas áreas da África, Ásia e Europa."
+        },
+        {
+          "key": "D",
+          "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        },
+        {
+          "key": "E",
+          "text": "Islã e árabe são sinônimos étnicos e religiosos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "O Islã surgiu no século VII na Península Arábica e expandiu-se por vastas áreas da África, Ásia e Europa.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "APPLY",
+      "conceptIds": [
+        "GH-33-CON-03"
+      ],
+      "targetedError": "relationship",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-33-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "O IFSC pode apresentar Idade Média e expansão islâmica por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sociedades islâmicas desenvolveram centros urbanos, comércio, ciência, filosofia e circulação de conhecimentos."
+        },
+        {
+          "key": "B",
+          "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        },
+        {
+          "key": "C",
+          "text": "O mundo islâmico permaneceu isolado da Europa."
+        },
+        {
+          "key": "D",
+          "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        },
+        {
+          "key": "E",
+          "text": "Islã e árabe são sinônimos étnicos e religiosos."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "Sociedades islâmicas desenvolveram centros urbanos, comércio, ciência, filosofia e circulação de conhecimentos.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "TRANSFER",
+      "conceptIds": [
+        "GH-33-CON-04"
+      ],
+      "targetedError": "application",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-33-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Analise as afirmações a seguir:\nI. Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval.\nII. A Idade Média foi um período sem cidades, comércio ou conhecimento.\nIII. O Islã surgiu no século VII na Península Arábica e expandiu-se por vastas áreas da África, Ásia e Europa.\nIV. O mundo islâmico permaneceu isolado da Europa.\nAssinale a alternativa CORRETA.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Apenas I está correta."
+        },
+        {
+          "key": "B",
+          "text": "Apenas I e III estão corretas."
+        },
+        {
+          "key": "C",
+          "text": "Apenas II e IV estão corretas."
+        },
+        {
+          "key": "D",
+          "text": "Apenas I, II e III estão corretas."
+        },
+        {
+          "key": "E",
+          "text": "Todas estão corretas."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-33-CON-01",
+        "GH-33-CON-02",
+        "GH-33-CON-03",
+        "GH-33-CON-04"
+      ],
+      "targetedError": "multi_statement_reasoning",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-33-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma fonte foi apresentada numa questão sobre Idade Média e expansão islâmica. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        },
+        {
+          "key": "B",
+          "text": "O mundo islâmico permaneceu isolado da Europa."
+        },
+        {
+          "key": "C",
+          "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        },
+        {
+          "key": "D",
+          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        },
+        {
+          "key": "E",
+          "text": "Evitar o rótulo simplista de “Idade das Trevas” e observar diversidade e intercâmbios."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Evitar o rótulo simplista de “Idade das Trevas” e observar diversidade e intercâmbios.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "conceptIds": [
+        "GH-33-CON-01",
+        "GH-33-CON-02",
+        "GH-33-CON-03",
+        "GH-33-CON-04",
+        "GH-33-CON-05",
+        "GH-33-CON-06"
+      ],
+      "targetedError": "source_interpretation",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-33-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Idade Média e expansão islâmica?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval."
+        },
+        {
+          "key": "B",
+          "text": "O chamado feudalismo descreve formas de organização social e econômica de partes da Europa e não um modelo idêntico em todo lugar e período."
+        },
+        {
+          "key": "C",
+          "text": "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais."
+        },
+        {
+          "key": "D",
+          "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        },
+        {
+          "key": "E",
+          "text": "Sociedades islâmicas desenvolveram centros urbanos, comércio, ciência, filosofia e circulação de conhecimentos."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-33-CON-01",
+        "GH-33-CON-02",
+        "GH-33-CON-03",
+        "GH-33-CON-04",
+        "GH-33-CON-05",
+        "GH-33-CON-06"
+      ],
+      "targetedError": "misconception_identification",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-33-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Idade Média e expansão islâmica, qual conclusão final é sustentável?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        },
+        {
+          "key": "B",
+          "text": "O mundo islâmico permaneceu isolado da Europa."
+        },
+        {
+          "key": "C",
+          "text": "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais."
+        },
+        {
+          "key": "D",
+          "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        },
+        {
+          "key": "E",
+          "text": "Islã e árabe são sinônimos étnicos e religiosos."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-33-CON-01",
+        "GH-33-CON-02",
+        "GH-33-CON-03",
+        "GH-33-CON-04",
+        "GH-33-CON-05",
+        "GH-33-CON-06"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    }
+  ]
+}

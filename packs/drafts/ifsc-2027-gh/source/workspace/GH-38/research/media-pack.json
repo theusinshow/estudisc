@@ -1,0 +1,30 @@
+{
+  "lessonId": "GH-38",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-043",
+      "title": "Mecanismos da conquista e colonização da América",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-os-mecanismos-utilizados-pelos-europeus-na-conquista-e-colonizacao-da-america/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-38-001",
+    "lessonId": "GH-38",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Mapa comparativo de áreas coloniais e principais sociedades americanas, com proveniência.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

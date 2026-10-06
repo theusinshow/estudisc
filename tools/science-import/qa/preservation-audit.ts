@@ -9,8 +9,8 @@ function normalized(value: unknown): string {
   return JSON.stringify(value);
 }
 const hash = (value: unknown) => createHash("sha256").update(normalized(value)).digest("hex");
-export async function capturePreservationSnapshot(client: PGlite) {
-  const reused = (jsonFile(".vecta-agent-context/CONCEPT-MAP.json").entries as { canonicalId: string; disposition: string }[]).filter(entry => entry.disposition === "existing").map(entry => entry.canonicalId).sort();
+export async function capturePreservationSnapshot(client: PGlite, options?: { packId: string; trackId: string; questionPattern: string; reusedIds: string[] }) {
+  const reused = options ? [...options.reusedIds].sort() : (jsonFile(".vecta-agent-context/CONCEPT-MAP.json").entries as { canonicalId: string; disposition: string }[]).filter(entry => entry.disposition === "existing").map(entry => entry.canonicalId).sort();
   const queries = {
     packImports: "SELECT schema,pack_id,version,content_hash,status,manifest FROM pack_imports WHERE pack_id <> 'vecta.ifsc-2027.science.local-v2' ORDER BY pack_id,version",
     tracks: "SELECT stable_id,title,description,content_version FROM tracks WHERE stable_id <> 'ifsc-2027-science' ORDER BY stable_id,content_version",
@@ -21,7 +21,9 @@ export async function capturePreservationSnapshot(client: PGlite) {
   };
   const sections: Record<string, { count: number; hash: string }> = {};
   for (const [name, sql] of Object.entries(queries)) {
-    const result = await client.query(sql);
+    const query = options ? sql.replaceAll("'vecta.ifsc-2027.science.local-v2'", "$1").replaceAll("'ifsc-2027-science'", "$1").replaceAll("'^CIE-[0-9]{2}-Q[0-9]{3}$'", "$1") : sql;
+    const parameter = name === "packImports" ? options?.packId : name === "questions" ? options?.questionPattern : options?.trackId;
+    const result = await client.query(query, options ? [parameter] : []);
     sections[name] = { count: result.rows.length, hash: hash(result.rows) };
   }
   const shared = await client.query<{ stable_id: string; title: string; summary: string | null }>("SELECT stable_id,title,summary FROM concepts WHERE stable_id=ANY($1::text[]) ORDER BY stable_id", [reused]);

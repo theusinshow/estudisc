@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-40-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Independências nas Américas, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as independências americanas aconteceram no mesmo ano."
+      },
+      {
+        "key": "B",
+        "text": "A independência dos Estados Unidos ocorreu no final do século XVIII e influenciou debates políticos, mas não aboliu a escravidão nacionalmente naquele momento."
+      },
+      {
+        "key": "C",
+        "text": "Haiti conquistou independência por concessão pacífica da França."
+      },
+      {
+        "key": "D",
+        "text": "Brasil tornou-se república em 1822."
+      },
+      {
+        "key": "E",
+        "text": "Independência eliminou imediatamente escravidão e desigualdade em todo o continente."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A independência dos Estados Unidos ocorreu no final do século XVIII e influenciou debates políticos, mas não aboliu a escravidão nacionalmente naquele momento.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-40-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-40-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “Todas as independências americanas aconteceram no mesmo ano.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as independências americanas aconteceram no mesmo ano."
+      },
+      {
+        "key": "B",
+        "text": "Haiti conquistou independência por concessão pacífica da França."
+      },
+      {
+        "key": "C",
+        "text": "Brasil tornou-se república em 1822."
+      },
+      {
+        "key": "D",
+        "text": "A Revolução Haitiana foi liderada por pessoas escravizadas e criou um Estado independente após derrotar o domínio colonial francês."
+      },
+      {
+        "key": "E",
+        "text": "Independência eliminou imediatamente escravidão e desigualdade em todo o continente."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A Revolução Haitiana foi liderada por pessoas escravizadas e criou um Estado independente após derrotar o domínio colonial francês.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-40-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-40-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: As independências americanas tiveram causas e protagonistas diversos; não formaram uma única revolução continental. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as independências americanas aconteceram no mesmo ano."
+      },
+      {
+        "key": "B",
+        "text": "Haiti conquistou independência por concessão pacífica da França."
+      },
+      {
+        "key": "C",
+        "text": "Na América Espanhola, lideranças e conflitos regionais produziram diversos novos Estados no início do século XIX."
+      },
+      {
+        "key": "D",
+        "text": "Brasil tornou-se república em 1822."
+      },
+      {
+        "key": "E",
+        "text": "Independência eliminou imediatamente escravidão e desigualdade em todo o continente."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Na América Espanhola, lideranças e conflitos regionais produziram diversos novos Estados no início do século XIX.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-40-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-40-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Independências nas Américas por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Independência do Brasil manteve monarquia e escravidão, diferenciando-se de muitos vizinhos republicanos."
+      },
+      {
+        "key": "B",
+        "text": "Todas as independências americanas aconteceram no mesmo ano."
+      },
+      {
+        "key": "C",
+        "text": "Haiti conquistou independência por concessão pacífica da França."
+      },
+      {
+        "key": "D",
+        "text": "Brasil tornou-se república em 1822."
+      },
+      {
+        "key": "E",
+        "text": "Independência eliminou imediatamente escravidão e desigualdade em todo o continente."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A Independência do Brasil manteve monarquia e escravidão, diferenciando-se de muitos vizinhos republicanos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-40-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-40-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. A independência dos Estados Unidos ocorreu no final do século XVIII e influenciou debates políticos, mas não aboliu a escravidão nacionalmente naquele momento.\nII. Todas as independências americanas aconteceram no mesmo ano.\nIII. Na América Espanhola, lideranças e conflitos regionais produziram diversos novos Estados no início do século XIX.\nIV. Haiti conquistou independência por concessão pacífica da França.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-40-CON-01",
+      "GH-40-CON-02",
+      "GH-40-CON-03",
+      "GH-40-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-40-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Independências nas Américas. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as independências americanas aconteceram no mesmo ano."
+      },
+      {
+        "key": "B",
+        "text": "Haiti conquistou independência por concessão pacífica da França."
+      },
+      {
+        "key": "C",
+        "text": "Brasil tornou-se república em 1822."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Comparar processos observando regime político, participação social e continuidades após a ruptura colonial."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Comparar processos observando regime político, participação social e continuidades após a ruptura colonial.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-40-CON-01",
+      "GH-40-CON-02",
+      "GH-40-CON-03",
+      "GH-40-CON-04",
+      "GH-40-CON-05",
+      "GH-40-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-40-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Independências nas Américas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A independência dos Estados Unidos ocorreu no final do século XVIII e influenciou debates políticos, mas não aboliu a escravidão nacionalmente naquele momento."
+      },
+      {
+        "key": "B",
+        "text": "A Revolução Haitiana foi liderada por pessoas escravizadas e criou um Estado independente após derrotar o domínio colonial francês."
+      },
+      {
+        "key": "C",
+        "text": "Independência política não significou automaticamente igualdade social, soberania econômica plena ou inclusão popular."
+      },
+      {
+        "key": "D",
+        "text": "Brasil tornou-se república em 1822."
+      },
+      {
+        "key": "E",
+        "text": "A Independência do Brasil manteve monarquia e escravidão, diferenciando-se de muitos vizinhos republicanos."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-40-CON-01",
+      "GH-40-CON-02",
+      "GH-40-CON-03",
+      "GH-40-CON-04",
+      "GH-40-CON-05",
+      "GH-40-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-40-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Independências nas Américas, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as independências americanas aconteceram no mesmo ano."
+      },
+      {
+        "key": "B",
+        "text": "Haiti conquistou independência por concessão pacífica da França."
+      },
+      {
+        "key": "C",
+        "text": "Independência política não significou automaticamente igualdade social, soberania econômica plena ou inclusão popular."
+      },
+      {
+        "key": "D",
+        "text": "Brasil tornou-se república em 1822."
+      },
+      {
+        "key": "E",
+        "text": "Independência eliminou imediatamente escravidão e desigualdade em todo o continente."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Independência política não significou automaticamente igualdade social, soberania econômica plena ou inclusão popular.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-40-CON-01",
+      "GH-40-CON-02",
+      "GH-40-CON-03",
+      "GH-40-CON-04",
+      "GH-40-CON-05",
+      "GH-40-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

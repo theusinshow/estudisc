@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-13-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Colonização portuguesa e povos originários, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+      },
+      {
+        "key": "B",
+        "text": "A colonização portuguesa combinou interesses econômicos, ocupação territorial, evangelização e exploração do trabalho."
+      },
+      {
+        "key": "C",
+        "text": "Povos indígenas não tiveram agência no período colonial."
+      },
+      {
+        "key": "D",
+        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+      },
+      {
+        "key": "E",
+        "text": "A colonização portuguesa ocorreu sem exploração de trabalho indígena."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A colonização portuguesa combinou interesses econômicos, ocupação territorial, evangelização e exploração do trabalho.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-13-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-13-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “O contato entre portugueses e indígenas foi sempre pacífico e harmonioso.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+      },
+      {
+        "key": "B",
+        "text": "Povos indígenas não tiveram agência no período colonial."
+      },
+      {
+        "key": "C",
+        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+      },
+      {
+        "key": "D",
+        "text": "As relações entre colonizadores e povos originários incluíram alianças, trocas, guerras, escravização, resistência e negociação."
+      },
+      {
+        "key": "E",
+        "text": "A colonização portuguesa ocorreu sem exploração de trabalho indígena."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "As relações entre colonizadores e povos originários incluíram alianças, trocas, guerras, escravização, resistência e negociação.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-13-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-13-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: O encontro de 1500 não foi um contato entre uma sociedade ativa e uma terra vazia. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+      },
+      {
+        "key": "B",
+        "text": "Povos indígenas não tiveram agência no período colonial."
+      },
+      {
+        "key": "C",
+        "text": "Povos indígenas tomaram decisões e participaram ativamente da história colonial; não foram apenas vítimas passivas."
+      },
+      {
+        "key": "D",
+        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+      },
+      {
+        "key": "E",
+        "text": "A colonização portuguesa ocorreu sem exploração de trabalho indígena."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Povos indígenas tomaram decisões e participaram ativamente da história colonial; não foram apenas vítimas passivas.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-13-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-13-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Colonização portuguesa e povos originários por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Doenças introduzidas pelos europeus provocaram grande impacto demográfico, além da violência e dos deslocamentos."
+      },
+      {
+        "key": "B",
+        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+      },
+      {
+        "key": "C",
+        "text": "Povos indígenas não tiveram agência no período colonial."
+      },
+      {
+        "key": "D",
+        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+      },
+      {
+        "key": "E",
+        "text": "A colonização portuguesa ocorreu sem exploração de trabalho indígena."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "Doenças introduzidas pelos europeus provocaram grande impacto demográfico, além da violência e dos deslocamentos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-13-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-13-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. A colonização portuguesa combinou interesses econômicos, ocupação territorial, evangelização e exploração do trabalho.\nII. O contato entre portugueses e indígenas foi sempre pacífico e harmonioso.\nIII. Povos indígenas tomaram decisões e participaram ativamente da história colonial; não foram apenas vítimas passivas.\nIV. Povos indígenas não tiveram agência no período colonial.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-13-CON-01",
+      "GH-13-CON-02",
+      "GH-13-CON-03",
+      "GH-13-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-13-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Colonização portuguesa e povos originários. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+      },
+      {
+        "key": "B",
+        "text": "Povos indígenas não tiveram agência no período colonial."
+      },
+      {
+        "key": "C",
+        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Ler documentos coloniais como fontes produzidas por agentes com interesses e perspectivas específicos."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Ler documentos coloniais como fontes produzidas por agentes com interesses e perspectivas específicos.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-13-CON-01",
+      "GH-13-CON-02",
+      "GH-13-CON-03",
+      "GH-13-CON-04",
+      "GH-13-CON-05",
+      "GH-13-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-13-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Colonização portuguesa e povos originários?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A colonização portuguesa combinou interesses econômicos, ocupação territorial, evangelização e exploração do trabalho."
+      },
+      {
+        "key": "B",
+        "text": "As relações entre colonizadores e povos originários incluíram alianças, trocas, guerras, escravização, resistência e negociação."
+      },
+      {
+        "key": "C",
+        "text": "Fontes como a Carta de Caminha mostram o olhar europeu e precisam ser lidas considerando autoria, contexto e finalidade."
+      },
+      {
+        "key": "D",
+        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+      },
+      {
+        "key": "E",
+        "text": "Doenças introduzidas pelos europeus provocaram grande impacto demográfico, além da violência e dos deslocamentos."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-13-CON-01",
+      "GH-13-CON-02",
+      "GH-13-CON-03",
+      "GH-13-CON-04",
+      "GH-13-CON-05",
+      "GH-13-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-13-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Colonização portuguesa e povos originários, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+      },
+      {
+        "key": "B",
+        "text": "Povos indígenas não tiveram agência no período colonial."
+      },
+      {
+        "key": "C",
+        "text": "Fontes como a Carta de Caminha mostram o olhar europeu e precisam ser lidas considerando autoria, contexto e finalidade."
+      },
+      {
+        "key": "D",
+        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+      },
+      {
+        "key": "E",
+        "text": "A colonização portuguesa ocorreu sem exploração de trabalho indígena."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Fontes como a Carta de Caminha mostram o olhar europeu e precisam ser lidas considerando autoria, contexto e finalidade.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-13-CON-01",
+      "GH-13-CON-02",
+      "GH-13-CON-03",
+      "GH-13-CON-04",
+      "GH-13-CON-05",
+      "GH-13-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

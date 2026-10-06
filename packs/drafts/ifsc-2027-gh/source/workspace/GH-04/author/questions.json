@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-04-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a História, historiografia, tempo, memória e fontes, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+      },
+      {
+        "key": "B",
+        "text": "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado."
+      },
+      {
+        "key": "C",
+        "text": "Memória e História são exatamente a mesma coisa."
+      },
+      {
+        "key": "D",
+        "text": "Uma fonte fala por si e dispensa contexto."
+      },
+      {
+        "key": "E",
+        "text": "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-04-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-04-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “Historiadores trabalham somente com documentos escritos oficiais.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+      },
+      {
+        "key": "B",
+        "text": "Memória e História são exatamente a mesma coisa."
+      },
+      {
+        "key": "C",
+        "text": "Uma fonte fala por si e dispensa contexto."
+      },
+      {
+        "key": "D",
+        "text": "Fonte histórica é todo vestígio que pode ser analisado para responder perguntas sobre sociedades no tempo."
+      },
+      {
+        "key": "E",
+        "text": "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "Fonte histórica é todo vestígio que pode ser analisado para responder perguntas sobre sociedades no tempo.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-04-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-04-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: Uma carta, um objeto, uma fotografia, um depoimento e um mapa podem ser fontes históricas, mas precisam ser interrogados. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+      },
+      {
+        "key": "B",
+        "text": "Memória e História são exatamente a mesma coisa."
+      },
+      {
+        "key": "C",
+        "text": "Memória é seletiva e está ligada a experiências e identidades; não é idêntica à historiografia."
+      },
+      {
+        "key": "D",
+        "text": "Uma fonte fala por si e dispensa contexto."
+      },
+      {
+        "key": "E",
+        "text": "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Memória é seletiva e está ligada a experiências e identidades; não é idêntica à historiografia.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-04-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-04-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar História, historiografia, tempo, memória e fontes por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tempo histórico envolve cronologia, duração, mudanças, permanências e simultaneidades."
+      },
+      {
+        "key": "B",
+        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+      },
+      {
+        "key": "C",
+        "text": "Memória e História são exatamente a mesma coisa."
+      },
+      {
+        "key": "D",
+        "text": "Uma fonte fala por si e dispensa contexto."
+      },
+      {
+        "key": "E",
+        "text": "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "Tempo histórico envolve cronologia, duração, mudanças, permanências e simultaneidades.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-04-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-04-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado.\nII. Historiadores trabalham somente com documentos escritos oficiais.\nIII. Memória é seletiva e está ligada a experiências e identidades; não é idêntica à historiografia.\nIV. Memória e História são exatamente a mesma coisa.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-04-CON-01",
+      "GH-04-CON-02",
+      "GH-04-CON-03",
+      "GH-04-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-04-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre História, historiografia, tempo, memória e fontes. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+      },
+      {
+        "key": "B",
+        "text": "Memória e História são exatamente a mesma coisa."
+      },
+      {
+        "key": "C",
+        "text": "Uma fonte fala por si e dispensa contexto."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Perguntar quem produziu a fonte, quando, para quem, com qual finalidade e quais limites ela possui."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Perguntar quem produziu a fonte, quando, para quem, com qual finalidade e quais limites ela possui.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-04-CON-01",
+      "GH-04-CON-02",
+      "GH-04-CON-03",
+      "GH-04-CON-04",
+      "GH-04-CON-05",
+      "GH-04-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-04-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar História, historiografia, tempo, memória e fontes?",
+    "options": [
+      {
+        "key": "A",
+        "text": "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado."
+      },
+      {
+        "key": "B",
+        "text": "Fonte histórica é todo vestígio que pode ser analisado para responder perguntas sobre sociedades no tempo."
+      },
+      {
+        "key": "C",
+        "text": "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates."
+      },
+      {
+        "key": "D",
+        "text": "Uma fonte fala por si e dispensa contexto."
+      },
+      {
+        "key": "E",
+        "text": "Tempo histórico envolve cronologia, duração, mudanças, permanências e simultaneidades."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-04-CON-01",
+      "GH-04-CON-02",
+      "GH-04-CON-03",
+      "GH-04-CON-04",
+      "GH-04-CON-05",
+      "GH-04-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-04-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de História, historiografia, tempo, memória e fontes, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+      },
+      {
+        "key": "B",
+        "text": "Memória e História são exatamente a mesma coisa."
+      },
+      {
+        "key": "C",
+        "text": "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates."
+      },
+      {
+        "key": "D",
+        "text": "Uma fonte fala por si e dispensa contexto."
+      },
+      {
+        "key": "E",
+        "text": "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-04-CON-01",
+      "GH-04-CON-02",
+      "GH-04-CON-03",
+      "GH-04-CON-04",
+      "GH-04-CON-05",
+      "GH-04-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

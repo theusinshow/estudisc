@@ -1,0 +1,75 @@
+{
+  "lessonId": "GH-49",
+  "mediaCandidates": [
+    {
+      "id": "SRC-GH-028",
+      "title": "Memórias Reveladas",
+      "org": "Arquivo Nacional",
+      "type": "PRIMARY_SOURCE_REPOSITORY",
+      "url": "https://www.gov.br/memoriasreveladas/pt-br",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-050",
+      "title": "Holocausto — local de aprendizado para estudantes",
+      "org": "United States Holocaust Memorial Museum",
+      "type": "STUDENT_LEARNING_SITE",
+      "url": "https://encyclopedia.ushmm.org/content/pt-br/project/the-holocaust-a-learning-site-for-students",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-054",
+      "title": "Declaração Universal dos Direitos Humanos",
+      "org": "ONU Brasil",
+      "type": "PRIMARY_DOCUMENT",
+      "url": "https://brasil.un.org/pt-br/91601-declara%C3%A7%C3%A3o-universal-dos-direitos-humanos",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-055",
+      "title": "Human Rights — recurso educacional",
+      "org": "Nações Unidas",
+      "type": "EDUCATIONAL_RESOURCE",
+      "url": "https://www.un.org/pt/teach/human-rights",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-060",
+      "title": "Constituição Federal de 1988 — texto atualizado",
+      "org": "Câmara dos Deputados",
+      "type": "PRIMARY_DOCUMENT",
+      "url": "https://www2.camara.leg.br/legin/fed/consti/1988/constituicao-1988-5-outubro-1988-322142-normaatualizada-pl.html",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    },
+    {
+      "id": "SRC-GH-075",
+      "title": "Direitos Humanos",
+      "org": "Conexão Escola SME Goiânia",
+      "type": "SLIDES_ACTIVITY_TEXT",
+      "url": "https://sme.goiania.go.gov.br/conexaoescola/ensino_fundamental/historia-direitos-humanos/",
+      "licenseStatus": "LINK_ONLY",
+      "reason": "Fonte/documento/mapa/atividade complementar para esta aula; verificar licença antes de embutir."
+    }
+  ],
+  "generatedImageRequests": [],
+  "deterministicComponentRequest": {
+    "id": "DET-GH-49-001",
+    "lessonId": "GH-49",
+    "type": "DETERMINISTIC_EDUCATIONAL_COMPONENT",
+    "brief": "Linha do tempo de marcos de direitos humanos e movimentos sociais, com fontes ONU.",
+    "preferredImplementation": [
+      "REUSE_EXISTING_COMPONENT",
+      "SVG",
+      "HTML_CSS",
+      "REACT"
+    ],
+    "requiresSourceValidation": true,
+    "status": "PENDING"
+  },
+  "coreLessonDependsOnExternalMedia": false
+}

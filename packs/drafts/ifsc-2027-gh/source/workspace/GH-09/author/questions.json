@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-09-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Regiões catarinenses: formação histórica, economia e sociedade, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as regiões de Santa Catarina possuem a mesma estrutura econômica."
+      },
+      {
+        "key": "B",
+        "text": "As regiões catarinenses apresentam especializações econômicas e trajetórias de ocupação distintas."
+      },
+      {
+        "key": "C",
+        "text": "Regiões são áreas homogêneas e sem diferenças internas."
+      },
+      {
+        "key": "D",
+        "text": "A economia catarinense depende de uma única atividade."
+      },
+      {
+        "key": "E",
+        "text": "Fluxos migratórios não alteram a organização regional."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "As regiões catarinenses apresentam especializações econômicas e trajetórias de ocupação distintas.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-09-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-09-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “Todas as regiões de Santa Catarina possuem a mesma estrutura econômica.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as regiões de Santa Catarina possuem a mesma estrutura econômica."
+      },
+      {
+        "key": "B",
+        "text": "Regiões são áreas homogêneas e sem diferenças internas."
+      },
+      {
+        "key": "C",
+        "text": "A economia catarinense depende de uma única atividade."
+      },
+      {
+        "key": "D",
+        "text": "O Oeste possui forte presença agroindustrial; o Vale do Itajaí combina indústria, serviços e urbanização; a Grande Florianópolis concentra funções administrativas e de serviços."
+      },
+      {
+        "key": "E",
+        "text": "Fluxos migratórios não alteram a organização regional."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "O Oeste possui forte presença agroindustrial; o Vale do Itajaí combina indústria, serviços e urbanização; a Grande Florianópolis concentra funções administrativas e de serviços.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-09-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-09-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: Santa Catarina possui regiões com formações históricas e economias diferentes, conectadas por redes e fluxos. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as regiões de Santa Catarina possuem a mesma estrutura econômica."
+      },
+      {
+        "key": "B",
+        "text": "Regiões são áreas homogêneas e sem diferenças internas."
+      },
+      {
+        "key": "C",
+        "text": "Norte, Serra e Sul também possuem redes produtivas e urbanas próprias, que mudaram ao longo do tempo."
+      },
+      {
+        "key": "D",
+        "text": "A economia catarinense depende de uma única atividade."
+      },
+      {
+        "key": "E",
+        "text": "Fluxos migratórios não alteram a organização regional."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Norte, Serra e Sul também possuem redes produtivas e urbanas próprias, que mudaram ao longo do tempo.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-09-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-09-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Regiões catarinenses: formação histórica, economia e sociedade por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Divisão regional é um instrumento de análise e não significa que cada região seja internamente homogênea."
+      },
+      {
+        "key": "B",
+        "text": "Todas as regiões de Santa Catarina possuem a mesma estrutura econômica."
+      },
+      {
+        "key": "C",
+        "text": "Regiões são áreas homogêneas e sem diferenças internas."
+      },
+      {
+        "key": "D",
+        "text": "A economia catarinense depende de uma única atividade."
+      },
+      {
+        "key": "E",
+        "text": "Fluxos migratórios não alteram a organização regional."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "Divisão regional é um instrumento de análise e não significa que cada região seja internamente homogênea.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-09-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-09-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. As regiões catarinenses apresentam especializações econômicas e trajetórias de ocupação distintas.\nII. Todas as regiões de Santa Catarina possuem a mesma estrutura econômica.\nIII. Norte, Serra e Sul também possuem redes produtivas e urbanas próprias, que mudaram ao longo do tempo.\nIV. Regiões são áreas homogêneas e sem diferenças internas.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-09-CON-01",
+      "GH-09-CON-02",
+      "GH-09-CON-03",
+      "GH-09-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-09-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Regiões catarinenses: formação histórica, economia e sociedade. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as regiões de Santa Catarina possuem a mesma estrutura econômica."
+      },
+      {
+        "key": "B",
+        "text": "Regiões são áreas homogêneas e sem diferenças internas."
+      },
+      {
+        "key": "C",
+        "text": "A economia catarinense depende de uma única atividade."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Interpretar mapas e dados regionais sem transformar tendências em regras absolutas."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Interpretar mapas e dados regionais sem transformar tendências em regras absolutas.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-09-CON-01",
+      "GH-09-CON-02",
+      "GH-09-CON-03",
+      "GH-09-CON-04",
+      "GH-09-CON-05",
+      "GH-09-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-09-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Regiões catarinenses: formação histórica, economia e sociedade?",
+    "options": [
+      {
+        "key": "A",
+        "text": "As regiões catarinenses apresentam especializações econômicas e trajetórias de ocupação distintas."
+      },
+      {
+        "key": "B",
+        "text": "O Oeste possui forte presença agroindustrial; o Vale do Itajaí combina indústria, serviços e urbanização; a Grande Florianópolis concentra funções administrativas e de serviços."
+      },
+      {
+        "key": "C",
+        "text": "Migrações internas e externas, infraestrutura e atividades produtivas ajudam a explicar mudanças populacionais regionais."
+      },
+      {
+        "key": "D",
+        "text": "A economia catarinense depende de uma única atividade."
+      },
+      {
+        "key": "E",
+        "text": "Divisão regional é um instrumento de análise e não significa que cada região seja internamente homogênea."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-09-CON-01",
+      "GH-09-CON-02",
+      "GH-09-CON-03",
+      "GH-09-CON-04",
+      "GH-09-CON-05",
+      "GH-09-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-09-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Regiões catarinenses: formação histórica, economia e sociedade, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Todas as regiões de Santa Catarina possuem a mesma estrutura econômica."
+      },
+      {
+        "key": "B",
+        "text": "Regiões são áreas homogêneas e sem diferenças internas."
+      },
+      {
+        "key": "C",
+        "text": "Migrações internas e externas, infraestrutura e atividades produtivas ajudam a explicar mudanças populacionais regionais."
+      },
+      {
+        "key": "D",
+        "text": "A economia catarinense depende de uma única atividade."
+      },
+      {
+        "key": "E",
+        "text": "Fluxos migratórios não alteram a organização regional."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "Migrações internas e externas, infraestrutura e atividades produtivas ajudam a explicar mudanças populacionais regionais.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-09-CON-01",
+      "GH-09-CON-02",
+      "GH-09-CON-03",
+      "GH-09-CON-04",
+      "GH-09-CON-05",
+      "GH-09-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

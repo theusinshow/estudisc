@@ -1,0 +1,308 @@
+[
+  {
+    "id": "GH-16-Q001",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em relação a Independência do Brasil, qual afirmação está correta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Independência foi um ato instantâneo e sem conflitos."
+      },
+      {
+        "key": "B",
+        "text": "A transferência da corte portuguesa para o Rio de Janeiro em 1808 alterou instituições, comércio e relações políticas na colônia."
+      },
+      {
+        "key": "C",
+        "text": "Em 1822 o Brasil tornou-se uma república democrática."
+      },
+      {
+        "key": "D",
+        "text": "A escravidão terminou junto com a independência."
+      },
+      {
+        "key": "E",
+        "text": "Todas as províncias aceitaram imediatamente o novo governo."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "A transferência da corte portuguesa para o Rio de Janeiro em 1808 alterou instituições, comércio e relações políticas na colônia.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "RECALL",
+    "conceptIds": [
+      "GH-16-CON-01"
+    ],
+    "targetedError": "foundation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-16-Q002",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um estudante diz: “A Independência foi um ato instantâneo e sem conflitos.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Independência foi um ato instantâneo e sem conflitos."
+      },
+      {
+        "key": "B",
+        "text": "Em 1822 o Brasil tornou-se uma república democrática."
+      },
+      {
+        "key": "C",
+        "text": "A escravidão terminou junto com a independência."
+      },
+      {
+        "key": "D",
+        "text": "A Revolução Liberal do Porto de 1820 pressionou pelo retorno de D. João VI e pela recolonização política do Brasil."
+      },
+      {
+        "key": "E",
+        "text": "Todas as províncias aceitaram imediatamente o novo governo."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A Revolução Liberal do Porto de 1820 pressionou pelo retorno de D. João VI e pela recolonização política do Brasil.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-16-CON-02"
+    ],
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-16-Q003",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Considere a situação de partida da aula: A Independência de 1822 rompeu vínculos políticos com Portugal, mas preservou várias estruturas sociais. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Independência foi um ato instantâneo e sem conflitos."
+      },
+      {
+        "key": "B",
+        "text": "Em 1822 o Brasil tornou-se uma república democrática."
+      },
+      {
+        "key": "C",
+        "text": "A Independência envolveu disputas regionais e conflitos armados, não apenas o episódio simbólico do 7 de Setembro."
+      },
+      {
+        "key": "D",
+        "text": "A escravidão terminou junto com a independência."
+      },
+      {
+        "key": "E",
+        "text": "Todas as províncias aceitaram imediatamente o novo governo."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A Independência envolveu disputas regionais e conflitos armados, não apenas o episódio simbólico do 7 de Setembro.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
+    "conceptIds": [
+      "GH-16-CON-03"
+    ],
+    "targetedError": "relationship",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-16-Q004",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "O IFSC pode apresentar Independência do Brasil por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "options": [
+      {
+        "key": "A",
+        "text": "O novo Estado manteve a monarquia, a escravidão e forte poder das elites proprietárias."
+      },
+      {
+        "key": "B",
+        "text": "A Independência foi um ato instantâneo e sem conflitos."
+      },
+      {
+        "key": "C",
+        "text": "Em 1822 o Brasil tornou-se uma república democrática."
+      },
+      {
+        "key": "D",
+        "text": "A escravidão terminou junto com a independência."
+      },
+      {
+        "key": "E",
+        "text": "Todas as províncias aceitaram imediatamente o novo governo."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "O novo Estado manteve a monarquia, a escravidão e forte poder das elites proprietárias.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-16-CON-04"
+    ],
+    "targetedError": "application",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-16-Q005",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Analise as afirmações a seguir:\nI. A transferência da corte portuguesa para o Rio de Janeiro em 1808 alterou instituições, comércio e relações políticas na colônia.\nII. A Independência foi um ato instantâneo e sem conflitos.\nIII. A Independência envolveu disputas regionais e conflitos armados, não apenas o episódio simbólico do 7 de Setembro.\nIV. Em 1822 o Brasil tornou-se uma república democrática.\nAssinale a alternativa CORRETA.",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apenas I está correta."
+      },
+      {
+        "key": "B",
+        "text": "Apenas I e III estão corretas."
+      },
+      {
+        "key": "C",
+        "text": "Apenas II e IV estão corretas."
+      },
+      {
+        "key": "D",
+        "text": "Apenas I, II e III estão corretas."
+      },
+      {
+        "key": "E",
+        "text": "Todas estão corretas."
+      }
+    ],
+    "correctOption": "B",
+    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-16-CON-01",
+      "GH-16-CON-02",
+      "GH-16-CON-03",
+      "GH-16-CON-04"
+    ],
+    "targetedError": "multi_statement_reasoning",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-16-Q006",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma fonte foi apresentada numa questão sobre Independência do Brasil. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Independência foi um ato instantâneo e sem conflitos."
+      },
+      {
+        "key": "B",
+        "text": "Em 1822 o Brasil tornou-se uma república democrática."
+      },
+      {
+        "key": "C",
+        "text": "A escravidão terminou junto com a independência."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+      },
+      {
+        "key": "E",
+        "text": "Distinguir símbolos comemorativos do processo histórico mais amplo e de suas continuidades."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Distinguir símbolos comemorativos do processo histórico mais amplo e de suas continuidades.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "conceptIds": [
+      "GH-16-CON-01",
+      "GH-16-CON-02",
+      "GH-16-CON-03",
+      "GH-16-CON-04",
+      "GH-16-CON-05",
+      "GH-16-CON-06"
+    ],
+    "targetedError": "source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-16-Q007",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Independência do Brasil?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A transferência da corte portuguesa para o Rio de Janeiro em 1808 alterou instituições, comércio e relações políticas na colônia."
+      },
+      {
+        "key": "B",
+        "text": "A Revolução Liberal do Porto de 1820 pressionou pelo retorno de D. João VI e pela recolonização política do Brasil."
+      },
+      {
+        "key": "C",
+        "text": "A independência política não significou igualdade social nem participação política ampla."
+      },
+      {
+        "key": "D",
+        "text": "A escravidão terminou junto com a independência."
+      },
+      {
+        "key": "E",
+        "text": "O novo Estado manteve a monarquia, a escravidão e forte poder das elites proprietárias."
+      }
+    ],
+    "correctOption": "D",
+    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-16-CON-01",
+      "GH-16-CON-02",
+      "GH-16-CON-03",
+      "GH-16-CON-04",
+      "GH-16-CON-05",
+      "GH-16-CON-06"
+    ],
+    "targetedError": "misconception_identification",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-16-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Independência do Brasil, qual conclusão final é sustentável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A Independência foi um ato instantâneo e sem conflitos."
+      },
+      {
+        "key": "B",
+        "text": "Em 1822 o Brasil tornou-se uma república democrática."
+      },
+      {
+        "key": "C",
+        "text": "A independência política não significou igualdade social nem participação política ampla."
+      },
+      {
+        "key": "D",
+        "text": "A escravidão terminou junto com a independência."
+      },
+      {
+        "key": "E",
+        "text": "Todas as províncias aceitaram imediatamente o novo governo."
+      }
+    ],
+    "correctOption": "C",
+    "explanation": "A independência política não significou igualdade social nem participação política ampla.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-16-CON-01",
+      "GH-16-CON-02",
+      "GH-16-CON-03",
+      "GH-16-CON-04",
+      "GH-16-CON-05",
+      "GH-16-CON-06"
+    ],
+    "targetedError": "synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  }
+]

@@ -1,5 +1,7 @@
 # Preserve sealed draft bytes and upstream hashes across Windows/Linux checkouts.
 packs/drafts/ifsc-2027-science/** -text whitespace=cr-at-eol
+packs/drafts/ifsc-2027-gh/** -text whitespace=cr-at-eol
+packs/drafts/ifsc-2027-gh/source/** whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 # Upstream Markdown line breaks/EOF whitespace are preserved, not reformatted.
 packs/drafts/ifsc-2027-science/source/** whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
 # Preserve the sealed SVG descriptions exactly as initially validated.
