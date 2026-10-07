@@ -31,6 +31,11 @@ describe("local UNREVIEWED lesson blueprints", () => {
   });
 
   it("keeps missing goals explicit, classifies accent-insensitively and reports invalid prerequisites", () => {
+    for (const title of ["Frações", "Expressões algébricas", "Contagem"]) {
+      const explicit = { ...original, title, concepts: original.concepts.map(c => ({ ...c, title })), objectives: ["Explorar o exemplo escrito"] };
+      const proposal = createLessonBlueprint(corpus[0].pack, "MAT", explicit, hashes, [], now);
+      expect(proposal.recommendedBlocks).toContain("numeric-explorer"); expect(proposal.reviewState).toBe("UNREVIEWED");
+    }
     const pack = structuredClone(corpus[0].pack), lesson = structuredClone(original);
     lesson.title = "Porcentagem e proporção"; lesson.objectives = [];
     let result = createLessonBlueprint(pack, "MAT", lesson, hashes, [], now);

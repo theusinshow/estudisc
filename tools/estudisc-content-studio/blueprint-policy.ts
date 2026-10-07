@@ -7,7 +7,7 @@ type Lesson = TrackPackV2["track"]["modules"][number]["lessons"][number];
 const rules = [
   { name: "spatial", pattern: /\b(mapa|localiz|territor|bioma|relevo|espaco geograf)/, blocks: ["map", "matching"], visual: ["map"], missing: ["map:approved-point-configuration"] },
   { name: "chronological", pattern: /\b(tempo histor|cronolog|periodo|revoluc|independen|coloniz|idade media)/, blocks: ["timeline"], visual: ["timeline"], missing: ["timeline:approved-ordered-items"] },
-  { name: "numeric", pattern: /\b(porcent|percent|propor|razao|funcao|equacao|fracao|medida|area|volume)/, blocks: ["numeric-explorer", "worked-example"], visual: ["diagram"], missing: ["numeric-explorer:approved-model-configuration"] },
+  { name: "numeric", pattern: /\b(porcent|percent|propor|razao|funcao|equacao|fracao|fracoes|expressao algebr|expressoes algebr|contagem|medida|area|volume)/, blocks: ["numeric-explorer", "worked-example"], visual: ["diagram"], missing: ["numeric-explorer:approved-model-configuration"] },
   { name: "process", pattern: /\b(ciclo|processo|transform|digest|respir|fotossint|reproduc)/, blocks: ["guided-steps", "ordering"], visual: ["process-diagram"], missing: ["guided-steps:approved-process-steps"] },
   { name: "classification", pattern: /\b(classific|genero|classes|substantiv|adjetiv|verbo|reino|mistura)/, blocks: ["classification", "matching"], visual: [], missing: [] },
   { name: "interpretation", pattern: /\b(interpret|leitura|texto|argument|inferenc|coesao|coerenc)/, blocks: ["text-highlight", "guided-steps"], visual: [], missing: [] },

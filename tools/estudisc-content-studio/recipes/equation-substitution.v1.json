@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-13",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "330c50c393e7eb6bd63106d1928e6dc74107ee6563030d3d3af49fba04787c60",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "B-MAT-13-mat-eq1-check-example-ENR-LINEAR",
+      "afterBlockId": "B-MAT-13-mat-eq1-check-example",
+      "sourceBlockHash": "f79baa2419fd7e18c2f02e8222578f5d6bc3a0424c2b67434d1a9a8587bd4f39",
+      "sourceQuote": "7·5 + 4 = 39",
+      "conceptId": "MAT.EQ1.CHECK",
+      "objective": "Verificar candidatos substituindo-os na equação original.",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore a verificação da equação",
+        "variableLabel": "Valor de x",
+        "outputLabel": "Membro esquerdo",
+        "min": 0,
+        "max": 10,
+        "step": 0.1,
+        "initial": 5,
+        "slope": 7,
+        "intercept": 4,
+        "explanation": "Na equação 7x + 4 = 39, o membro direito permanece 39. O explorador calcula somente o membro esquerdo; x = 5 produz 39 e confere a igualdade. Compare outros candidatos com esse mesmo membro direito."
+      },
+      "expectedInitialResult": 39
+    }
+  ]
+}

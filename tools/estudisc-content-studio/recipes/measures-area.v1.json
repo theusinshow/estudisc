@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-16",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "fd2d1de2a2635b8e4cf9af347d08c3cebd4d8502780ff383ef4b5b222e340d42",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "MAT16-V2-B04-AREA-EXAMPLE-ENR-LINEAR",
+      "afterBlockId": "MAT16-V2-B04-AREA-EXAMPLE",
+      "sourceBlockHash": "e986bead367f40267765c3318ce7d3c46da2ade1a26dee1b2fdf4cf6deb3b8f2",
+      "sourceQuote": "0,3 × 10.000 cm² = 3.000 cm².",
+      "conceptId": "MAT.MEASURE.AREA",
+      "objective": "Converter comprimentos e áreas com fatores adequados à grandeza.",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore a conversão de área",
+        "variableLabel": "Área",
+        "unit": "m²",
+        "outputLabel": "Área convertida",
+        "outputUnit": "cm²",
+        "min": 0,
+        "max": 5,
+        "step": 0.1,
+        "initial": 0.3,
+        "slope": 10000,
+        "intercept": 0,
+        "explanation": "O fator de conversão de m² para cm² é 10.000 porque se convertem os dois lados do quadrado. Mantendo essas unidades, 0,3 m² corresponde a 3.000 cm²."
+      },
+      "expectedInitialResult": 3000
+    },
+    {
+      "newBlockId": "MAT16-V2-B05-CAPACITY-EXAMPLE-ENR-LINEAR",
+      "afterBlockId": "MAT16-V2-B05-CAPACITY-EXAMPLE",
+      "sourceBlockHash": "0eb8adb8c6e707ffe6d28e75411cedc1c6f63a3b2da2f18806eb5b3d7a6210d6",
+      "sourceQuote": "Em mililitros, isso equivale a 4.000 mL.",
+      "conceptId": "MAT.MEASURE.CAPACITY",
+      "objective": "Relacionar volume interno e capacidade e calcular durações em unidades comuns.",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore volume e capacidade",
+        "variableLabel": "Volume interno",
+        "unit": "dm³",
+        "outputLabel": "Capacidade",
+        "outputUnit": "mL",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "initial": 4,
+        "slope": 1000,
+        "intercept": 0,
+        "explanation": "Cada dm³ de volume interno corresponde a 1 L, ou 1.000 mL. Neste modelo, 4 dm³ correspondem a 4.000 mL; o fator permanece ligado às unidades escolhidas."
+      },
+      "expectedInitialResult": 4000
+    },
+    {
+      "newBlockId": "MAT16-V2-B10-RECTANGLE-EXAMPLE-ENR-LINEAR",
+      "afterBlockId": "MAT16-V2-B10-RECTANGLE-EXAMPLE",
+      "sourceBlockHash": "99ad4582c30ca7d25d0cfb79f79e830a82e63a81c9fb6a85e616f17238aca528",
+      "sourceQuote": "A = 7 × 4 = 28 cm².",
+      "conceptId": "MAT.GEO.AREA.RECTANGLE",
+      "objective": "Calcular perímetros e áreas de retângulos, triângulos, paralelogramos, losangos e trapézios.",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore a área do retângulo",
+        "variableLabel": "Base",
+        "unit": "cm",
+        "outputLabel": "Área",
+        "outputUnit": "cm²",
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "initial": 7,
+        "slope": 4,
+        "intercept": 0,
+        "explanation": "A altura permanece 4 cm e a base varia. Para base de 7 cm, a área é 7 × 4 = 28 cm². O resultado é uma área, não o perímetro do retângulo."
+      },
+      "expectedInitialResult": 28
+    }
+  ]
+}

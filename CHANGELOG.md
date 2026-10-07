@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-07 — Representative source-defined mathematics
+
+- Add an optional explicit integer-input constraint to the existing linear explorer for authored count examples, retaining old decimal/time controls, raw display drafts and no canonical Attempt/evidence effects (ADR 0051).
+- Add six source-bound mathematics candidates with ten explorers for decimal/scientific values, fixed-plus-variable price, equation substitution, units/area, prism/capacity and combinations. Preserve original blocks/Activities/Question references and source conditions.
+- Expand deterministic numeric proposal keywords for plural fractions, algebraic expressions and counting while retaining UNREVIEWED/confidence caveats. Record full technical acceptance and the owner's continuous execution instruction through the approved roadmap.
+
 ## 2026-10-07 — Source-defined baseline linear exploration
 
 - Release the code through protected PR #6 and the existing production alias, then publish MAT-05/MAT-06 v3 through real authenticated targeted append/Admin Direct: two new lesson releases, three explorers, original v2 versions and eight Questions per lesson preserved. Record actual actor/mode, Question digests, correct live inputs/results and unchanged nineteen Mathematics identities.

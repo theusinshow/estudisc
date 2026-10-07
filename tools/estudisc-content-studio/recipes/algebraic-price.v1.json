@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-11",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "6e79156dafbf3159d7e7e66e1d131462ef0e9d9602d8ab8b0da2bc7fc7c1598f",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "B-MAT-11-mat-alg-expression-example-ENR-LINEAR",
+      "afterBlockId": "B-MAT-11-mat-alg-expression-example",
+      "sourceBlockHash": "759c2e0ffec631a241e2e4c00faa1b2ee82799d9c42f93531a54651058f78229",
+      "sourceQuote": "8·3 + 5 = 24 + 5 = R$ 29.",
+      "conceptId": "MAT.ALG.EXPRESSION",
+      "objective": "Representar uma regra variável por uma expressão algébrica.",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore o preço dos cartazes",
+        "variableLabel": "Quantidade de cartazes",
+        "outputLabel": "Preço total",
+        "outputUnit": "reais",
+        "min": 1,
+        "max": 20,
+        "step": 1,
+        "initial": 3,
+        "slope": 8,
+        "intercept": 5,
+        "integerInput": true,
+        "explanation": "Cada cartaz acrescenta R$ 8; a preparação de R$ 5 permanece fixa por pedido. Use quantidades inteiras: para 3 cartazes, 8 × 3 + 5 = R$ 29."
+      },
+      "expectedInitialResult": 29
+    }
+  ]
+}

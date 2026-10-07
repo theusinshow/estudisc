@@ -1,5 +1,34 @@
 # Estudisc current plan
 
+## Active goal — complete the approved evolution continuously (2026-10-07)
+
+Latest owner instruction: continue everything until finished, without ending execution at each batch. Complete the approved Phase 0–14 requirements and remaining consumers/production rollout, preserving the standing direct-release policy and current model/effort; no extra agents by default. Phase 15 remains explicitly deferred because its offline/sync scope is undefined. Purchases, destructive non-disposable operations and raw-secret handling keep their distinct boundaries.
+
+Execution order: finish a representative broader Phase 9 batch using actual authored math goals/existing models; then Phase 10 review/mistake loop, Phase 11 optional contextual AI, Phase 12 knowledge-map presentation, Phase 13 exam navigation/review/results, Phase 14 admin authoring/health. Reconcile remaining Phase 0–8 consumers and safe production flags/table readiness before final acceptance. Reuse existing engines and actual accepted contracts; document concrete domain/security exceptions rather than trial-and-error or invented certification.
+
+- [ ] Representative broader source-defined enrichment batch and actual release.
+- [ ] Review/mistake retrieval, factual grouping and different-question practice.
+- [ ] Optional contextual AI service/limits/cache/fallback with reserved/exam exclusion.
+- [ ] Prerequisite graph read model and accessible lazy interactive presentation.
+- [ ] Existing real-exam navigation, flags, final review and factual results.
+- [ ] Existing ADMIN authoring/asset/blueprint/health consumers with immutable publication.
+- [ ] Remaining foundation/routine/runtime consumers and verified compatible production rollout.
+- [ ] Final full engineering/production acceptance and current documentation.
+
+Current checkpoint: PR #6 code and PR #7 actual release receipts merged, main 01bbd17 synchronized. MAT-05/MAT-06/MAT-07/MAT-08 enrichment is live; never repeat those version imports/publications. Continue automatically after each technical gate; no editorial review permission.
+
+### Active representative batch
+
+Scope: source-defined MAT-04 decimal multiplication/scientific notation; MAT-11 fixed+variable poster price; MAT-13 original-equation substitution; MAT-16 area conversion/capacity/rectangle with fixed height; MAT-17 prism with fixed base/capacity conversion; MAT-18 combinations with fixed second stage. Six new immutable versions using existing linear renderer and exact authored goals/Concepts/quotes. Source conditions and units remain explicit; no inverse/quadratic/fraction model is forced into linear form. This brings the representative total to ten enriched identities, not a false claim that all 132 lessons have new goals/blocks.
+
+Add optional integerInput to the existing linear configuration for explicit count examples only (ADR 0051); preserve old fractional input behavior, raw unsent draft strings and no evidence/Attempt writes. Extend numeric blueprint keyword coverage for plural fractions/algebraic expressions/counting, keeping UNREVIEWED/confidence caveats and current source/hash binding. Bound transport locally; no original corpus/bank changes or extra agents.
+
+Acceptance: compatible optional field/whole-number bounds, unchanged legacy decimal/time behavior, strict source/Question preservation, independent initial arithmetic, invalid count feedback and keyboard/mobile checks. Focused then full required phase gates, actual protected code deployment before candidate activation, all six production previews before writes, real Admin Direct/preservation/history/collection receipts. Continue directly to the next approved increment after this gate.
+
+Local batch acceptance: fifteen focused PASS; full 377 PASS/three optional real-PG SKIP; lint/typecheck/build/packs PASS; full serial 52 E2E PASS/eighteen gated SKIP; focused flags-on four PASS/zero SKIP; screenshot/overflow capture two PASS/zero SKIP. Bounded visual pass/detector [], eighty-eight actual accepted-code comparisons (eighty-three unchanged after line-ending normalization), five original corpus/mirror byte hashes unchanged. All 101 blocks/107 Activities/95 Question references preserved, independent source arithmetic and stable repeat exports. Six actual authenticated production previews 200/ready/exact hashes, bounded gzip transport works. No new-version import/publication yet. [Report](docs/estudisc/REPRESENTATIVE-ENRICHMENT.md), [local evidence](docs/estudisc/REPRESENTATIVE-ENRICHMENT-EVIDENCE.json).
+
+NEXT ACTION: protected code release/deployment for the compatible integer option, then append/activate all six exact candidates under existing Admin Direct. Continue automatically to the review/mistake increment after recording actual preservation/rollout. Missing non-math objectives remain explicit; local author-architecture inventory (213 files) did not reveal declared goal/outcome fields and is not permission to invent original goals.
+
 ## Completed rollout — bounded linear enrichment (2026-10-07)
 
 Extend source-bound recipes to the already registered bounded linear model, preserving percentage compatibility and source/next-version/Question guards. ADR 0050 defines baseline local text input with the interactive flag off; slider and persisted resume stay enhancements. No new table/flag/engine or production credential access. Exploration remains separate from Attempts/mastery.
