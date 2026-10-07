@@ -1,6 +1,6 @@
 # Estudisc current plan
 
-## Active increment — bounded linear enrichment (2026-10-07)
+## Completed rollout — bounded linear enrichment (2026-10-07)
 
 Extend source-bound recipes to the already registered bounded linear model, preserving percentage compatibility and source/next-version/Question guards. ADR 0050 defines baseline local text input with the interactive flag off; slider and persisted resume stay enhancements. No new table/flag/engine or production credential access. Exploration remains separate from Attempts/mastery.
 
@@ -10,12 +10,14 @@ Acceptance: strict compatible recipe union; exact source hashes and complete ori
 
 - [x] Define contract/ADR and implement baseline linear input.
 - [x] Create two source-defined recipes; validate compatibility/preservation/UI.
-- [ ] Complete full engineering gates and protected code release/deployment.
-- [ ] Activate two new versions and record actual historical/current acceptance.
+- [x] Complete full engineering gates and protected code release/deployment.
+- [x] Activate two new versions and record actual historical/current acceptance.
 
 Local acceptance: focused twenty-four PASS; full 374 PASS / three optional real-PG SKIP; lint/typecheck/build/packs PASS; clean full serial E2E fifty PASS / eighteen gated SKIP; final flags-on focused six PASS / two flag-off SKIP. Bounded desktop/mobile visual pass and detector [] completed; eighty-one prior technical hashes compared (seventy-four unchanged), five corpus/mirror files unchanged. Source/Activities/eight Question refs per candidate preserved. Fixed known-family missing payload type in a read projection, isolated collided test fixture namespaces, serialized type checks, preserved old disposable Next dev cache after malformed generated JSON/early hydration; final clean suite passed. Production baseline: both old v2 published/eight Questions, new v3 absent, Mathematics nineteen identities. No import/publication/migration/flag change yet. [Engineering report](docs/estudisc/LINEAR-ENRICHMENT.md), [actual local evidence](docs/estudisc/LINEAR-ENRICHMENT-EVIDENCE.json).
 
-NEXT ACTION: release the accepted code through eight protected checks and existing Vercel alias, verify actual build commit/READY before targeted authenticated append/Admin Direct activation of MAT-05/MAT-06 v3. MAT-07/MAT-08 are already live; never repeat their imports/publications. No editorial or raw-secret approval request.
+Actual rollout: [PR #6](https://github.com/theusinshow/estudisc/pull/6) eight checks PASS, merged c190d53; Vercel dpl_BrqjcGtsgveeKipcRcJUMM55Xjvm READY/build commit verified/existing alias preserved. Exact preflight 200 each, two targeted imports 201/one lesson/twelve Activities each; one authenticated Admin Direct 200/two newly published releases. Old/current versions published and accessible, eight Question digests each unchanged (e8ca2ceb./631e7c67.), nineteen Mathematics identities/twenty links unchanged. Current pages have one/two local text inputs, correct 135/63/770 outputs, zero sliders/invalid blocks/draft banners; historical pages have zero new linear controls. Real actor/mode, no fake QA, migration/flag change/Question rewrite/corpus import. [Actual receipt](docs/estudisc/LINEAR-ENRICHMENT-RELEASE.json) supersedes the earlier pre-release state/evidence. Production keyboard automation remains unverified because Orca snapshot runtime is unavailable; actual HTML/API checks and local desktop/mobile E2E are recorded separately.
+
+NEXT ACTION: broader source-defined enrichment using compatible existing models and actual authored goals; exclude the already live MAT-05/MAT-06/MAT-07/MAT-08 versions from repeat import/publication. Preserve original Questions/versions and surface missing goals or concrete pedagogical exceptions. Phase 9 is ongoing; later roadmap phases remain. Current release receipts use the protected documentation checkpoint workflow; actual check outcomes stay available in associated GitHub PR/history. No editorial or raw-secret approval request.
 
 ## Completed rollout — MAT-08 source-defined enrichment (2026-10-07)
 
