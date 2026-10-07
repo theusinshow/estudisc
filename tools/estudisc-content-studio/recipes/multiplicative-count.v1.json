@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-18",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "2e99cf64a6345af846b82e2c486b3b3190803046f4176395217082f1c2a7512c",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "MAT18-V2-B15-COUNT-EXAMPLE-ENR-LINEAR",
+      "afterBlockId": "MAT18-V2-B15-COUNT-EXAMPLE",
+      "sourceBlockHash": "1381d18a0302078f99db9af6cc9e191d8fb7e5968eb5218ae66c68154cd990fe",
+      "sourceQuote": "3×2=6 combinações.",
+      "conceptId": "MAT.COUNT.MULTIPLICATIVE",
+      "objective": "Contar combinações por multiplicação de opções em etapas.",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore a contagem de combinações",
+        "variableLabel": "Quantidade de camisetas",
+        "outputLabel": "Combinações",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "initial": 3,
+        "slope": 2,
+        "intercept": 0,
+        "integerInput": true,
+        "explanation": "As opções de calças permanecem duas; cada camiseta combina com ambas. Use quantidades inteiras: 3 camisetas × 2 calças dão 6 combinações. A contagem pressupõe que todos esses pares podem ser escolhidos."
+      },
+      "expectedInitialResult": 6
+    }
+  ]
+}

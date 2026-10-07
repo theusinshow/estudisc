@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-17",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "d01e23d1098966347a8fed9897232dc0afcde154ca7116aa86b61b82635409e5",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "BLK-MAT-17-E02-ENR-LINEAR",
+      "afterBlockId": "BLK-MAT-17-E02",
+      "sourceBlockHash": "47ea3e3e82dd66da746320f6eae724688bc502490210d4c73f000841b0543094",
+      "sourceQuote": "V=32×9=288 cm³.",
+      "conceptId": "MAT.VOLUME.PRISM",
+      "objective": "Usar área da base e altura perpendicular no volume de prismas.",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore o volume do prisma",
+        "variableLabel": "Altura perpendicular",
+        "unit": "cm",
+        "outputLabel": "Volume",
+        "outputUnit": "cm³",
+        "min": 1,
+        "max": 30,
+        "step": 1,
+        "initial": 9,
+        "slope": 32,
+        "intercept": 0,
+        "explanation": "A área da base permanece 32 cm². Multiplique pela altura perpendicular: 9 cm produzem 288 cm³. A aresta lateral de um prisma oblíquo não substitui essa altura."
+      },
+      "expectedInitialResult": 288
+    },
+    {
+      "newBlockId": "BLK-MAT-17-E04-ENR-LINEAR",
+      "afterBlockId": "BLK-MAT-17-E04",
+      "sourceBlockHash": "7b8bd39dfdce8e58e4712702b9cee4403d6af82ad630686e359cd78f82ff616c",
+      "sourceQuote": "2,5×1.000=2.500 L.",
+      "conceptId": "MAT.VOLUME.UNITS",
+      "objective": "Converter unidades cúbicas e relacionar volume à capacidade na unidade pedida.",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore a capacidade do reservatório",
+        "variableLabel": "Volume interno",
+        "unit": "m³",
+        "outputLabel": "Capacidade",
+        "outputUnit": "L",
+        "min": 0,
+        "max": 10,
+        "step": 0.1,
+        "initial": 2.5,
+        "slope": 1000,
+        "intercept": 0,
+        "explanation": "Cada m³ corresponde a 1.000 L. Mantendo essas unidades, o volume interno de 2,5 m³ corresponde à capacidade de 2.500 L."
+      },
+      "expectedInitialResult": 2500
+    }
+  ]
+}

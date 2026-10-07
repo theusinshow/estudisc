@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-04",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "0dbc98639b204e9850d66fc007545e5dd5dd41904f28bdb25652232dce03db07",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "BLK-MAT-04-E02-ENR-LINEAR",
+      "afterBlockId": "BLK-MAT-04-E02",
+      "sourceBlockHash": "78b1b51bcac4eec66c0ac36d80fe3758c274b5bc58af90e2c84729da4224d25d",
+      "sourceQuote": "Calcule 3,2×0,25 e 5,4÷0,9.",
+      "conceptId": "MAT.DECIMAL.OPERATIONS",
+      "objective": "Operações com números decimais",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore a multiplicação decimal",
+        "variableLabel": "Primeiro fator",
+        "outputLabel": "Produto",
+        "min": 0,
+        "max": 10,
+        "step": 0.1,
+        "initial": 3.2,
+        "slope": 0.25,
+        "intercept": 0,
+        "explanation": "O segundo fator permanece 0,25. No exemplo, 3,2 × 0,25 = 0,8; altere o primeiro fator para comparar os produtos. A exibição arredonda quando há mais de quatro casas decimais."
+      },
+      "expectedInitialResult": 0.8
+    },
+    {
+      "newBlockId": "BLK-MAT-04-E04-ENR-LINEAR",
+      "afterBlockId": "BLK-MAT-04-E04",
+      "sourceBlockHash": "b0a55066a3808a1d95e71435183ac755deb0af7aedbd08259d32065fe2d2a3f0",
+      "sourceQuote": "Interprete 3,6×10⁵.",
+      "conceptId": "MAT.SCI.NOTATION.READ",
+      "objective": "Leitura da notação científica",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore a leitura da notação científica",
+        "variableLabel": "Coeficiente",
+        "outputLabel": "Número",
+        "min": 1,
+        "max": 9.9,
+        "step": 0.1,
+        "initial": 3.6,
+        "slope": 100000,
+        "intercept": 0,
+        "explanation": "O expoente permanece 5: multiplicamos o coeficiente por 100.000. Para o coeficiente 3,6, o número é 360.000. O intervalo deste explorador mantém o coeficiente entre 1 e 9,9."
+      },
+      "expectedInitialResult": 360000
+    }
+  ]
+}
