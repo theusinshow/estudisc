@@ -35,8 +35,8 @@ try {
   switch (command) {
     case "enrichment-preview": {
       const result = prepareEnrichmentPreview(studio, readJson(resolve(root, required(values.request, "--request RECIPE"))));
-      console.log(`ENRICHMENT PREVIEW: ${result.preview.lesson.id} v${result.preview.lesson.version}; added blocks=${result.preview.newBlocks.length}; retained Questions=${result.preview.questionReferences.length}; written=${result.written}; REVIEW_REQUIRED.`);
-      console.log(`Local review candidate: ${result.directory}; no approval, import-ready Pack or publication.`);
+      console.log(`ENRICHMENT PREVIEW: ${result.preview.lesson.id} v${result.preview.lesson.version}; added blocks=${result.preview.newBlocks.length}; retained Questions=${result.preview.questionReferences.length}; written=${result.written}; ${result.reviewRequest.gate}.`);
+      console.log(`Local release candidate: ${result.directory}; standing Admin Direct authorization recorded; actual compatible import/deployment/publication remains to execute.`);
       break;
     }
     case "blueprints": {

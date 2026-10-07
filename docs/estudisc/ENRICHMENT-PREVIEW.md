@@ -1,5 +1,7 @@
 # Phase 9 — Source-bound enrichment review preparation
 
+Current release policy (2026-10-07): [ADR 0048](../ADR/0048-social-project-direct-release.md). Matheus explicitly replaced editorial/human release review with community feedback for this social project. Current CLI metadata is ADMIN_DIRECT_AUTHORIZED, includes the existing direct-publication request and keeps independentQaRecorded=false; output is release-request.json. Earlier REVIEW_REQUIRED results below are historical receipts, not current launch blockers. Actual compatible targeted import and deployment/publication remain to execute; [technical handoff](handoffs/2026-10-07-targeted-enrichment-import.md). No launch is claimed from authorization alone.
+
 Date: 2026-10-07. Base checkpoint: `f950593`. Decision: [ADR 0047](../ADR/0047-source-bound-enrichment-review-previews.md). Policy: [ENRICHMENT-PREVIEW-POLICY.md](../../tools/estudisc-content-studio/ENRICHMENT-PREVIEW-POLICY.md). Review-preparation increment accepted locally; exact hashes are in [evidence](ENRICHMENT-PREVIEW-EVIDENCE.json). Reviewed/batch enrichment remains pending.
 
 ## Concrete pilot

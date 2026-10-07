@@ -2,6 +2,8 @@
 
 ## Approved IFSC expansion
 
+User policy update (2026-10-07): Estudisc is a social project. Product/content review is performed by its users; do not require Matheus's time or an independent editorial approval as a release gate for authorized features/enrichment. After engineering validation, launch in-scope changes directly. This is standing session authorization for the corresponding software release/publication, not an independent QA record. Use the existing Admin Direct path with the actual authorization/reason; keep Editorial Reviewed distinct. Maintain tests, immutable published versions, append-only evidence, security/reservation and truthful source/rights/mapping disclosures. Preserve unrelated approval boundaries and scope limits.
+
 Current remote target: `https://github.com/theusinshow/estudisc`. Prioritize speed and low token use. Run focused validation for each coherent change; preserve critical domain invariants. Full final acceptance checks remain required. External and production operations remain within the user's explicit session authorization.
 
 User update (2026-10-03): resume authorized work with economical agent execution. Reuse existing workers; no additional agents by default. Read the current plan/status sections and targeted file ranges instead of entire historical logs. Bound tool output to about 40 lines / 4 KB; never dump full JSON packs, SVG or base64. Assign one job per handoff and return concise results. Recheck changed targets/dependencies using actual prior evidence and hashes; preserve complete initial QA and final acceptance. Content Studio details: `tools/estudisc-content-studio/context/agent-efficiency.md`. Preserve current model/effort settings unless the user requests a change.

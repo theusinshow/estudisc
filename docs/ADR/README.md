@@ -1,5 +1,7 @@
 # Architecture Decision Records
 
+[ADR 0048](0048-social-project-direct-release.md) records the explicit social-project owner instruction: launch technically validated authorized features/content directly through existing Admin Direct; users review usage/content. Human/independent editorial release gates are superseded, never fabricated.
+
 [ADR 0047](0047-source-bound-enrichment-review-previews.md) defines source/hash-bound enrichment review candidates, explicit pending review and preserved original/Question identities without an alternate approval or import path.
 
 [ADR 0046](0046-local-lesson-blueprint-proposals.md) defines local UNREVIEWED, version/hash-bound teaching proposals, compact extraction, explicit source gaps and conservative cache invalidation without corpus publication.

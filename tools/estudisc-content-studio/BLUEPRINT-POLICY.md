@@ -1,5 +1,7 @@
 # Local blueprint proposal policy — blueprint.v1
 
+Release-policy override: [ADR 0048](../../docs/ADR/0048-social-project-direct-release.md) records the owner's 2026-10-07 social-project instruction. UNREVIEWED and confidence/source findings remain factual metadata; they do not require Matheus or an independent editor to approve an authorized launch. Users supply review/feedback after technically validated Admin Direct release. Missing-source/rights/technical facts must remain truthful; engineering invariants still apply. Original human/editorial review references below are historical release policy, superseded by this instruction.
+
 Use the four exact historically audited import artifacts in `blueprint-sources.ts`. Their local draft status remains unchanged; a prior publication audit does not establish current production state or pedagogical/rights/mapping readiness. Pin raw and normalized hashes. Reuse curriculum-only Studio catalog context and teaching asset eligibility; never extract Question stems, choices, answers, private state, image bytes or source originals.
 
 Extract IDs/version/title/subject/Concepts/objectives/block and Activity types/counts, source IDs and a teaching-text word count. The word count scans a bounded whitelist of teaching text keys, not Question/config answers. Do not export block payloads. Missing objectives produce a null learning goal and a human source-review finding; never substitute Concept titles or invent common mistakes.

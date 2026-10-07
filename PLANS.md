@@ -1,5 +1,21 @@
 # Estudisc current plan
 
+## Completed policy increment — Social-project direct release (2026-10-07)
+
+Base `86b85f9`. User explicitly superseded mandatory editorial/human review for authorized launches: the project is social and users review actual usage/content. Record the policy persistently and use existing Admin Direct, never fabricate independent QA. Previous Phase 9 review-only gates are historical and superseded for this authorized release.
+
+Acceptance: durable policy/ADR and current status; technically validated source-bound MAT-07 v5 candidate can proceed through existing direct release/import boundaries with real owner authorization/reason, preserving old versions/Questions/evidence. No parallel approval mode/engine, no re-import or republication of the existing 132 lessons. Complete scoped and full engineering gates; enable/release completed feature paths within this authorization as concrete mechanisms permit. No extra agents/model change or repeated permission to review.
+
+- [x] Record explicit social/community review and standing direct-release authorization in AGENTS/AUTONOMY.
+- [x] Reconcile Phase 9 preview/blueprint policy; candidate includes existing Admin Direct request and standing owner authorization, without fake QA.
+- [x] Verify source/Question preservation and full engineering acceptance of this policy/candidate change.
+- [x] Update docs/status/changelog/evidence/checkpoint preparation and leave precise rollout status.
+- [ ] Implement compatible targeted v2 lesson import and perform actual production activation; this is a technical prerequisite, not another editorial approval.
+
+Current acceptance: focused 42 PASS; full 355 PASS / three optional real-PostgreSQL SKIP; lint/typecheck/build/packs/schema export PASS; fresh serial default E2E 46 PASS / 18 gated SKIP. Candidate CLI writes four new-generation files then zero, ADMIN_DIRECT_AUTHORIZED/UNREVIEWED editorial evidence/independentQaRecorded=false/valid existing direct-publication request. Actual hash checks: four current code/test hashes, 58 unique prior accepted comparisons, twelve unchanged source documents, four media inputs/four source packs and twelve retained Question references. Source/runtime/engine/auth/Pack/dependency/link/diff PASS. No actual production release; [current report](docs/estudisc/SOCIAL-RELEASE.md).
+
+NEXT ACTION — MODEL ESCALATION REQUIRED: Terra defines/implements targeted persisted v2 lesson-version append into the existing collection, resolving existing Questions/Concepts, version/idempotence and transaction boundaries without a full re-import or duplicate Track. [Compact handoff/exact prompt](docs/estudisc/handoffs/2026-10-07-targeted-enrichment-import.md). Then activate through existing Admin Direct under standing user authorization; no Matheus/independent editorial review gate. No model change/additional agent was performed.
+
 ## Completed increment — Phase 9 source-bound enrichment review preparation (2026-10-07)
 
 Phase 8 is checkpointed at `f950593`. Continuous local implementation is authorized; all blueprints remain UNREVIEWED. Implement the smallest reviewable authoring increment, preserving the original corpus and existing Studio review/publication authority. No agents/model changes or fabricated independent approval.

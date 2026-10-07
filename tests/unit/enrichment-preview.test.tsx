@@ -11,6 +11,7 @@ import { createLessonBlueprint } from "../../tools/estudisc-content-studio/bluep
 import { createEnrichmentPreview, prepareEnrichmentPreview } from "../../tools/estudisc-content-studio/enrichment";
 import { Studio } from "../../tools/estudisc-content-studio/workspace";
 import { enrichmentRecipeSchema } from "../../tools/estudisc-content-studio/enrichment-contracts";
+import { directPublicationSchema } from "@/features/content-qa/direct-publication";
 import recipe from "../../tools/estudisc-content-studio/recipes/percentage-calculation.v1.json";
 
 const root = process.cwd(), pack = loadBlueprintCorpus(root)[0].pack;
@@ -64,16 +65,21 @@ describe("source-bound enrichment review preview", () => {
   it("retains exact review-request hashes, skips unchanged files and repairs invented review status", () => {
     const studio = new Studio(root, mkdtempSync(join(root, ".local/enrichment-tests-")));
     const first = prepareEnrichmentPreview(studio, recipe);
-    expect(first.written).toBe(4); expect(first.reviewRequest.gate).toBe("REVIEW_REQUIRED");
+    expect(first.written).toBe(4); expect(first.reviewRequest.gate).toBe("ADMIN_DIRECT_AUTHORIZED");
     expect(first.reviewRequest.blueprintReviewState).toBe("UNREVIEWED");
     expect(first.reviewRequest.dimensions).toHaveLength(7);
+    expect(first.reviewRequest.releasePolicy).toMatchObject({ publicationMode: "admin_direct", editorialReviewRequired: false, feedbackBy: "users" });
+    expect(first.reviewRequest.independentQaRecorded).toBe(false);
+    const { action, ...publication } = first.reviewRequest.publicationRequest;
+    expect(action).toBe("publish_lessons_direct"); expect(directPublicationSchema.parse(publication).lessons).toEqual([{ lessonId: "MAT-07", version: 5 }]);
     expect(first.reviewRequest.inputHashes.preview).toBe(hashCanonicalJson(first.preview.lesson));
     const second = prepareEnrichmentPreview(studio, recipe);
     expect(second.written).toBe(0); expect(second.key).toBe(first.key);
-    const file = join(first.directory, "review-request.json");
+    const file = join(first.directory, "release-request.json");
     writeFileSync(file, JSON.stringify({ ...first.reviewRequest, gate: "APPROVED", reviewerId: "invented-reviewer" }));
     expect(prepareEnrichmentPreview(studio, recipe).written).toBe(1);
-    expect(JSON.parse(readFileSync(file, "utf8")).gate).toBe("REVIEW_REQUIRED");
+    const repaired = JSON.parse(readFileSync(file, "utf8"));
+    expect(repaired.gate).toBe("ADMIN_DIRECT_AUTHORIZED"); expect(repaired.reviewerId).toBeUndefined(); expect(repaired.independentQaRecorded).toBe(false);
     const changed = structuredClone(recipe); changed.additions[0].parameters.initialPercentage = 20; changed.additions[0].expectedInitialResult = 55;
     expect(prepareEnrichmentPreview(studio, changed).key).not.toBe(first.key);
     expect(() => prepareEnrichmentPreview(new Studio(root, "public/enrichment-tests"), recipe)).toThrow("ignored authoring");

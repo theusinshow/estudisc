@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-07 — Social-project direct release rule
+
+- Record the explicit owner instruction in AGENTS/AUTONOMY/ADR 0048: technically validated authorized features/enrichment launch directly; users provide review/feedback, without requiring Matheus or independent editorial approval. Existing Admin Direct/audit actor/reason remains authoritative; no invented Reviewer/QA or new publication mode.
+- Enrichment candidates now carry ADMIN_DIRECT_AUTHORIZED, community feedback status, truthful UNREVIEWED/no-independent-QA metadata and an existing direct-publication request in release-request.json. Complete policy/hash binding preserves previous generations and immutable source/Question records.
+- Retain engineering/security/source/version invariants and unrelated boundaries. Actual activation still needs a compatible targeted v2 lesson-version import; full Track re-import/duplicate collection is not used as a shortcut. Technical handoff is documented, without another editorial review gate or false production-release claim.
+
 ## 2026-10-07 — Source-bound enrichment review preview
 
 - Add a generic strict authoring recipe and local review candidate preparation through existing Studio CLI (ADR 0047). The first MAT-07 v5 proposal adds one percentage explorer after authored E03, anchored to the existing goal/Concept and 16% of 275 = 44; preserve original blocks/Activities/Questions/answers and published bytes.

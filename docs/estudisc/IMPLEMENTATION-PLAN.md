@@ -130,13 +130,15 @@ Acceptance: exactly one identified blueprint for each of 132 current lesson vers
 
 ## 12. Phase 9 — Content Enrichment
 
+Current owner policy: [ADR 0048](../ADR/0048-social-project-direct-release.md) supersedes independent/human editorial release gates. Social/community feedback follows technically validated direct launch using existing Admin Direct with actual authorization/audit records. Missing objective/source/rights facts remain visible; UNREVIEWED is evidence status, not a permission gate. MAT-07 v5 is authorized; compatible targeted lesson-version import is the current engineering prerequisite, documented in [handoff](handoffs/2026-10-07-targeted-enrichment-import.md).
+
 First review-preparation increment: [ENRICHMENT-PREVIEW.md](ENRICHMENT-PREVIEW.md), ADR 0047. A source-bound MAT-07 percentage explorer is illustrated in an isolated next-version candidate; all blueprints/candidates remain UNREVIEWED/REVIEW_REQUIRED. This preparation supplies no approved blueprint, independent factual approval or reviewed batch. Existing Studio review/export remains authoritative.
 
 Risk MEDIUM, HIGH for ambiguous pedagogy. Luna Max for approved blueprints/components; Terra exceptions. Depends on Phase 8 review and relevant blocks/assets. Flag: `FEATURE_INTERACTIVE_LESSONS` gates presentation, not publication authorization.
 
-Start one small representative draft pilot, then batches of 10–20 lessons after its QA passes. Create new draft versions with stable lesson/question identities and preserved historical references; do not modify original published bytes. Use real independent factual/pedagogical/accessibility/source review; prior evidence may be reused only with reviewed artifact/dependency hashes. Do not infer approval from confidence or historic Admin Direct publication.
+Start one small representative pilot, then batches of 10–20 lessons after engineering QA passes. Create new versions with stable lesson/question identities and preserved historical references; do not modify original published bytes. Community review follows launch. Keep actual factual/pedagogical/accessibility/source findings and use prior evidence only with actual target/dependency hashes. Direct release authorization comes from the current owner instruction; confidence and historic publication never imply independent QA.
 
-Acceptance per batch: meaning/facts/answers/distractors and Concept mapping reviewed, interaction goal and help/evidence valid, rights/alt verified, mobile QA, original versions still usable, draft Pack compatibility/Content Studio QA. Human authorization is required before import/publication to production. Rollback: do not select unpublished drafts; retain original published versions; any retirement/publication is separate authorized workflow.
+Acceptance per batch: meaning/facts/answers/distractors and Concept mapping checked with truthful findings, valid interaction goal/help/evidence, rights/alt, mobile and Pack compatibility/engineering QA, original versions still usable. Standing authorization permits direct release under existing Admin Direct after these checks; no repeated human review is required. Rollback retains original immutable versions. Existing security and unrelated operation boundaries remain applicable.
 
 ## 13. Phase 10 — Review and Smart Mistakes
 

@@ -9,8 +9,10 @@ import { enrichmentRecipeSchema } from "./enrichment-contracts";
 import { lessonBlueprintSchema, type LessonBlueprint } from "./blueprint-contracts";
 import { runBlueprintPipeline } from "./blueprints";
 import { loadBlueprintCorpus } from "./blueprint-sources";
+import { directPublicationSchema } from "@/features/content-qa/direct-publication";
+import { socialReleasePolicy, socialPublicationReason } from "./social-release-policy";
 
-const policyFiles = ["tools/estudisc-content-studio/enrichment.ts", "tools/estudisc-content-studio/enrichment-contracts.ts", "tools/estudisc-content-studio/ENRICHMENT-PREVIEW-POLICY.md", "tools/estudisc-content-studio/contracts.ts", "src/features/questions/contracts.ts", "src/features/activities/application/question-reference.ts", "src/features/lessons/blocks/numeric-explorer-schema.ts", "src/features/lessons/blocks/numeric-explorer.tsx", "src/features/lessons/blocks/lesson-block-renderer.tsx", "src/features/lessons/interaction-state.ts", "src/features/lessons/interaction-policy.ts"];
+const policyFiles = ["tools/estudisc-content-studio/enrichment.ts", "tools/estudisc-content-studio/enrichment-contracts.ts", "tools/estudisc-content-studio/social-release-policy.ts", "docs/ADR/0048-social-project-direct-release.md", "src/features/content-qa/direct-publication.ts", "tools/estudisc-content-studio/ENRICHMENT-PREVIEW-POLICY.md", "tools/estudisc-content-studio/contracts.ts", "src/features/questions/contracts.ts", "src/features/activities/application/question-reference.ts", "src/features/lessons/blocks/numeric-explorer-schema.ts", "src/features/lessons/blocks/numeric-explorer.tsx", "src/features/lessons/blocks/lesson-block-renderer.tsx", "src/features/lessons/interaction-state.ts", "src/features/lessons/interaction-policy.ts"];
 
 /** Pure construction of an isolated review candidate, never a reviewed/import-ready artifact. */
 export function createEnrichmentPreview(pack: TrackPackV2, inputBlueprint: LessonBlueprint, inputRecipe: unknown) {
@@ -34,7 +36,7 @@ export function createEnrichmentPreview(pack: TrackPackV2, inputBlueprint: Lesso
     if (Math.abs(computed - addition.expectedInitialResult) > 1e-9) throw new Error("Expected initial result disagrees with existing percentage calculation");
     const provenance = anchor.payload.contentStudio;
     return { id: addition.newBlockId, schemaVersion: 1, type: addition.type, conceptIds: [addition.conceptId], payload: { ...addition.parameters,
-      contentStudio: { ...(provenance && typeof provenance === "object" ? structuredClone(provenance) : {}), enrichment: { purpose: addition.purpose, sourceBlockId: anchor.id, sourceBlockHash: addition.sourceBlockHash, objective: addition.objective, recipeHash: hashCanonicalJson(recipe), reviewStatus: "REVIEW_REQUIRED" } } } };
+      contentStudio: { ...(provenance && typeof provenance === "object" ? structuredClone(provenance) : {}), enrichment: { purpose: addition.purpose, sourceBlockId: anchor.id, sourceBlockHash: addition.sourceBlockHash, objective: addition.objective, recipeHash: hashCanonicalJson(recipe), reviewStatus: "community_feedback_pending" } } } };
   });
   const original = structuredClone(source);
   const lesson = lessonSchema.parse({ ...original, version: recipe.newVersion, status: "draft",
@@ -65,12 +67,14 @@ export function prepareEnrichmentPreview(studio: Studio, inputRecipe: unknown) {
   const key = hashCanonicalJson(inputHashes), rootDirectory = studio.dir("enrichment-previews");
   if (existsSync(join(rootDirectory, "state.json"))) throw new Error("Enrichment directory conflicts with a Studio job");
   const directory = join(rootDirectory, key);
-  const reviewRequest = { schemaVersion: 1, gate: "REVIEW_REQUIRED", blueprintReviewState: blueprint.reviewState, identity: recipe.identity, proposedVersion: recipe.newVersion, authorId: recipe.authorId,
+  const reviewRequest = { schemaVersion: 1, gate: "ADMIN_DIRECT_AUTHORIZED", blueprintReviewState: blueprint.reviewState, identity: recipe.identity, proposedVersion: recipe.newVersion, authorId: recipe.authorId,
     inputHashes, dimensions: categories, sourcePath: source.path, sourceCaveats: blueprint.summary.caveats,
-    expectations: ["Review the exact blueprint, whole source lesson and new interaction in all seven dimensions", "Verify unchanged Questions/answers and prerequisite/source/rights disclosures against real prior reviewed receipts", "Actual independent Reviewer ownership and hash-bound report must use existing Studio workflow; no confidence-based approval", "Use original published version until a separately reviewed draft/import/publication workflow is authorized"],
-    noAutomaticApproval: true, noImportOrPublication: true, newMedia: false, evidence: "exploration_only_no_Attempt_or_mastery" };
+    expectations: ["Validate the source/interaction technically, preserve Questions and disclose actual source/rights/mapping caveats", "Activate through existing authenticated Admin Direct after compatible targeted import; community feedback supplies product/content review", "Do not fabricate independent QA or replace the published original in place"],
+    releasePolicy: socialReleasePolicy, independentQaRecorded: false,
+    publicationRequest: { action: "publish_lessons_direct", ...directPublicationSchema.parse({ lessons: [{ lessonId: recipe.identity.lessonId, version: recipe.newVersion }], reason: socialPublicationReason }) },
+    noFabricatedEditorialApproval: true, noImportOrPublication: false, newMedia: false, evidence: "exploration_only_no_Attempt_or_mastery" };
   let written = 0;
-  for (const [name, value] of [["preview.lesson.json", preview.lesson], ["recipe.json", recipe], ["review-request.json", reviewRequest], ["references.json", preview.questionReferences]] as const) {
+  for (const [name, value] of [["preview.lesson.json", preview.lesson], ["recipe.json", recipe], ["release-request.json", reviewRequest], ["references.json", preview.questionReferences]] as const) {
     const file = join(directory, name), content = JSON.stringify(value, null, 2) + "\n";
     if (!existsSync(file) || readFileSync(file, "utf8") !== content) { atomicJson(file, value); written++; }
   }
