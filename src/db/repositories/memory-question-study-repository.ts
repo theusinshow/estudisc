@@ -44,8 +44,10 @@ export class MemoryQuestionStudyRepository {
       this.store.questionAssistance.push({ownerId,questionId,version,contextKey:ctx.contextKey,hintLevel:0,solutionRevealed:false});
       if(exposure){exposure.timesSeen++;exposure.lastSeenAt=new Date();}else this.store.questionExposures.push({ownerId,questionId,lastSeenAt:new Date(),timesSeen:1});
     }
-    const latest=[...this.store.attempts].reverse().find(item=>item.ownerId===ownerId&&item.activityStableId===activityId&&item.context?.contextKey===ctx.contextKey);
-    return {question:studentQuestion(ctx.question),hintCount:ctx.config.hints.length,lastAnswer:latest?.response};
+    const latest=[...this.store.attempts].reverse().find(item=>item.ownerId===ownerId&&item.context?.questionId===questionId&&item.context?.questionVersion===version&&item.context?.contextKey===ctx.contextKey);
+    return {question:studentQuestion(ctx.question),hintCount:ctx.config.hints.length,lastAnswer:latest?.response,
+      lastAttempt:latest?{attemptId:latest.id,submissionKey:latest.submissionKey??latest.id,correct:latest.outcome==="passed",explanation:latest.outcome==="passed"?ctx.question.explanation:undefined}:undefined,
+      assistance:{hintLevel:opened?.hintLevel??0,hint:ctx.config.hints[(opened?.hintLevel??0)-1]??"",solutionRevealed:opened?.solutionRevealed??false,explanation:opened?.solutionRevealed?ctx.question.explanation:undefined}};
   }
   async interact(...[ownerId,activityId,input]:Parameters<QuestionStudyRepository["interact"]>){
     const ctx=this.context(ownerId,activityId,input.questionId,input.questionVersion,input.sessionId);

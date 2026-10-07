@@ -1,5 +1,22 @@
 # Estudisc current plan
 
+## Completed increment — Phase 5 lesson resume (2026-10-06)
+
+Phase 4 gate passed and is checkpointed at `4557014`. Continue the approved roadmap with owner/version/context-pinned resume through the existing lesson stepper and shared Question UI. No new renderer, evidence rule, Pack schema, published-content transformation or production operation.
+
+Acceptance: compatible additive user-state snapshot; server validates published frozen lesson and ACTIVE owned session membership; step IDs and unsent responses are bounded/validated, never authoritative attempts or grades; independent contexts/versions cannot overwrite one another; persisted answers and assistance remain authoritative on reload. Revision conflicts preserve newer state, stale/removed step IDs recover visibly, elapsed active time is an estimate separate from wall-clock, and accessibility/mobile/keyboard behavior remains. Feature off retains prior readers and routes without writes.
+
+- [x] Record ADR/contract and targeted domain fixtures before persistence/UI.
+- [x] Extend SQL/memory user state and scoped API with revision/owner/version guards.
+- [x] Integrate existing LessonSteps/Stepper/Question registry with explicit save/error/recovery.
+- [x] Focused then full acceptance, docs/hash/source checks and local checkpoint preparation.
+
+Focused acceptance: 8 resume domain/SQL/memory/lifecycle tests PASS; combined adaptive/golden/resume fixtures 20 PASS before the lifecycle additions. Adaptive/resume on E2E 10 PASS. Version-draft scope recovery, idle/non-repeating save and navigation flush guards are covered. Full gates in progress; see [resume report](docs/estudisc/LESSON-RESUME.md). Additive migration 0020 has run only through disposable SQL fixtures; published corpus and canonical grading remain unchanged.
+
+Final gate: lint/typecheck/build/packs PASS; 329 tests PASS / 3 optional real-PostgreSQL SKIP; default E2E 42 PASS / 16 gated SKIP; foundation/routine/resume on 16 PASS; adaptive/resume on 10 PASS. UI/detector/hash/source/link/diff PASS. 30 current hashes and 28 actual prior comparisons; prior migrations and published corpus unchanged. [Exact commands and limits](docs/estudisc/LESSON-RESUME.md).
+
+NEXT ACTION: checkpoint this accepted increment, then Phase 6 typed interactive blocks/contracts and their scoped resume/evaluation/touch/keyboard fixtures in the existing registries. Do not apply 0020 to production or transform existing snapshots/content without authorization.
+
 ## Completed task — Phase 4 adaptive sessions (2026-10-06)
 
 The user's latest “pode seguir” authorizes the next Adaptive Session increment in this session; no repeat model-choice question, automatic switch or additional agents. Extend the existing planner, shared Question delivery and session repositories. Preserve production/external boundaries.

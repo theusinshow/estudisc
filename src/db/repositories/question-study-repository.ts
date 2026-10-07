@@ -72,7 +72,9 @@ export class QuestionStudyRepository {
         await tx.insert(questionExposures).values({ownerId,questionId:identity.questionId,firstSeenAt:new Date(),lastSeenAt:new Date(),timesSeen:1,lastContext:"learn"}).onConflictDoUpdate({target:[questionExposures.ownerId,questionExposures.questionId],set:{lastSeenAt:new Date(),timesSeen:sql`${questionExposures.timesSeen}+1`,lastContext:"learn"}});
       }
       const [latest]=await tx.select().from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.questionVersionId,ctx.versionId),sql`${attempts.context}->>'contextKey'=${ctx.contextKey}`)).orderBy(desc(attempts.createdAt)).limit(1);
-      return {question:studentQuestion(ctx.question),hintCount:ctx.config.hints.length,lastAnswer:latest?.response?(latest.response as {answer:unknown}).answer:undefined};
+      return {question:studentQuestion(ctx.question),hintCount:ctx.config.hints.length,lastAnswer:latest?.response?(latest.response as {answer:unknown}).answer:undefined,
+        lastAttempt:latest?{attemptId:latest.id,submissionKey:latest.submissionKey??latest.id,correct:latest.outcome==="passed",explanation:latest.outcome==="passed"?ctx.question.explanation:undefined}:undefined,
+        assistance:{hintLevel:opened?.hintLevel??0,hint:ctx.config.hints[(opened?.hintLevel??0)-1]??"",solutionRevealed:Boolean(opened?.solutionRevealed),explanation:opened?.solutionRevealed?ctx.question.explanation:undefined}};
     });
   }
   async interact(ownerId:string,activity:string,input:{questionId:string;questionVersion:number;action:"submit"|"hint"|"solution";submissionKey:string;response:unknown;sessionId?:string}) {

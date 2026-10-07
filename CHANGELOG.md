@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-06 — Scoped lesson and shared Question resume
+
+- Add a mutable owner/track/lesson-version/context snapshot and additive empty lesson_resumes table in migration 0020 (ADR 0043). Validate published/frozen owned scope, bounded typed Question drafts, revision conflicts and identical retry. Preserve published content, Pack contracts and append-only learner evidence.
+- Extend existing LessonSteps/Stepper/QuestionPanel with stable-step/expanded-view resume, serialized saves, explicit retry/conflict recovery, bounded navigation flush and visible-page time estimates saved at interaction/manual-save boundaries. Default-off interactive rollout controls new writes; Programming Lab and legacy hash flow retain their existing path.
+- Restore submitted feedback/hints/solution state from actual canonical owner records; draft base-attempt identity prevents pending/old answers from overriding newer submissions. Resume JSON never supplies grades, mastery, official scores or XP.
+- Add lifecycle/SQL/memory/domain and desktop/mobile reload/offline/two-tab coverage. Additional typed interactive-block state and snapshot backup remain separate contracts. Validation/limits: `docs/estudisc/LESSON-RESUME.md`.
+
 ## 2026-10-06 — Adaptive sessions and frozen activity membership
 
 - Extend the existing planner with default-off planner.v2 and 10/20/30/45-minute controls, one composition clock, explicit review/remediation/practice/learning reasons and routine time constraints (ADR 0042). Short sessions deliver shared Questions; full lessons require actual independent editorial QA, available checkpoints, prerequisites and a full estimate that fits.

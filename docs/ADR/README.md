@@ -2,6 +2,8 @@
 
 [ADR 0042](0042-adaptive-session-snapshots-and-readiness.md) extends the existing planner with adaptive budgets, actual editorial readiness, frozen cross-track membership and factual summaries without changing evidence rules.
 
+[ADR 0043](0043-owner-scoped-lesson-resume.md) separates scoped mutable step/Question drafts from canonical Attempts and assistance, with revision/idempotence and stale-answer guards.
+
 [ADR 0041](0041-weekly-study-routine-and-checked-previews.md) defines owner-scoped weekly time allocation, explicit revision/dependency-checked preview/apply and compatible session limits.
 
 [ADR 0040](0040-evolution-shell-and-runtime-compatibility.md) defines flagged five-destination navigation, shared Focus layout and compatible runtime step projection without changing Pack schemas.

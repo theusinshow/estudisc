@@ -4,6 +4,7 @@ export * from "./curriculum";
 export * from "./questions";
 export * from "./study";
 export * from "./study-plans";
+export * from "./lesson-resumes";
 export * from "./assessments";
 export * from "./question-assets";
 export * from "./content-qa";

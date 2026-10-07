@@ -30,6 +30,7 @@ export type TrackDetail = Readonly<{
 }>;
 
 export type LessonDetail = Readonly<{
+  resumeScope?: { trackId: string; lessonId: string; version: number };
   stableId: string;
   title: string;
   trackStableId: string;
@@ -222,7 +223,8 @@ export class CatalogRepository {
         title: lessons.title,
         metadata: lessons.metadata,
         trackStableId: tracks.stableId,
-        trackTitle: tracks.title
+        trackTitle: tracks.title,
+        internalTrackId: tracks.id, version: lessons.contentVersion
       })
       .from(lessons)
       .innerJoin(modules, eq(modules.id, lessons.moduleId))
@@ -271,6 +273,7 @@ export class CatalogRepository {
       stableId: lesson.stableId,
       title: lesson.title,
       metadata:lesson.metadata as Record<string,unknown>,
+      resumeScope: (lesson.metadata as { status?: string; qaReleaseId?: string })?.status === "published" && (lesson.metadata as { qaReleaseId?: string })?.qaReleaseId ? { trackId: lesson.internalTrackId, lessonId: lesson.stableId, version: lesson.version } : undefined,
       trackStableId: lesson.trackStableId,
       trackTitle: lesson.trackTitle,
       concepts: conceptRows,

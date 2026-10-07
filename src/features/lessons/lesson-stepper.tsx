@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useLessonResume } from "./resume-provider";
+import { restoredStep } from "./resume-contracts";
 
 export type LessonStep = { id: string; kind: "intro" | "concept" | "example" | "warning" | "summary" | "check" | "practice" | "exit" | "interaction" | "figure" | "prediction"; label: string; node: ReactNode };
 export type LessonCompletion = Readonly<{ trackHref: string; nextLesson?: Readonly<{ href: string; title: string }> }>;
@@ -17,16 +19,19 @@ function stepFromHash(hash: string, total: number) {
 
 /** Shows one step at a time. Every step stays mounted, so answers and feedback survive navigation. */
 export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonStep[]; completion?: LessonCompletion }>) {
-  const [index, setIndex] = useState(0);
-  const [showAll, setShowAll] = useState(false);
+  const resume = useLessonResume();
+  const restored = restoredStep(steps.map(step => step.id), resume?.data.stepId ?? null, resume?.data.completed ?? false);
+  const [index, setIndex] = useState(() => restored.index);
+  const [showAll, setShowAll] = useState(() => resume?.data.showAll ?? false);
   const top = useRef<HTMLDivElement>(null);
   // Only a standalone lesson owns the URL; a study session renders several steppers on one page.
-  const ownsUrl = Boolean(completion);
+  const ownsUrl = Boolean(completion) && !resume;
   // Read after hydration: the server always renders step 1, so the hidden attributes match.
   // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time sync from the URL, not derived state
-  useEffect(() => { if (ownsUrl) setIndex(stepFromHash(window.location.hash, steps.length)); }, [ownsUrl, steps.length]);
+  useEffect(() => { if (ownsUrl && window.location.hash) setIndex(stepFromHash(window.location.hash, steps.length)); }, [ownsUrl, steps.length]);
   const go = (next: number) => {
     setIndex(next);
+    resume?.update({ stepId: steps[next]?.id ?? null, completed: next >= steps.length });
     if (ownsUrl) window.history.replaceState(null, "", next >= steps.length ? DONE_HASH : `#passo-${next + 1}`);
     // Scroll the window (not an inner container) only when the step start left the viewport.
     const box = top.current?.getBoundingClientRect();
@@ -38,9 +43,10 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
 
   return (
     <div className="lesson-stepper" ref={top} data-mode={showAll ? "all" : "step"}>
+      {restored.stale && <p role="status">O passo salvo não está disponível. Retomamos o primeiro passo desta versão.</p>}
       <div className="stepper-head">
         {showAll ? <span className="stepper-count">Aula inteira · {steps.length} partes</span> : <span className="stepper-count" aria-live="polite">{done ? <strong>Aula concluída</strong> : <>Passo {index + 1} de {steps.length} · <strong>{current?.label}</strong></>}</span>}
-        <button type="button" className="stepper-toggle" onClick={() => setShowAll(value => !value)} aria-pressed={showAll}>{showAll ? "Um passo por vez" : "Ver tudo"}</button>
+        <button type="button" className="stepper-toggle" onClick={() => { setShowAll(!showAll); resume?.update({ showAll: !showAll }); }} aria-pressed={showAll}>{showAll ? "Um passo por vez" : "Ver tudo"}</button>
         {!showAll && <progress className="stepper-bar" value={Math.min(index + 1, steps.length)} max={steps.length} aria-label="Progresso da aula" />}
       </div>
       {steps.map((step, position) => (

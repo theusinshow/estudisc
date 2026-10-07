@@ -88,6 +88,8 @@ Terra handoff prompt:
 
 ## 8. Phase 5 — Lesson Architecture and resume
 
+Current increment: [LESSON-RESUME.md](LESSON-RESUME.md) and ADR 0043 implement scoped stable-step/expanded-view/shared Question drafts, canonical answer/assistance reload and revision/idempotence recovery. Additional typed interaction state is added with Phase 6 block contracts; no generic arbitrary state or new Pack renderer. Local final gate is recorded in that report.
+
 Risk MEDIUM; Luna Max for approved runtime projection/UI; Terra if persisted contracts/evidence or version migration become ambiguous. Depends on Phases 1/4 contracts. Flag: `FEATURE_INTERACTIVE_LESSONS`.
 
 Extend `lesson-steps.tsx`, `lesson-stepper.tsx`, existing block dispatcher and Activity registry. Start with a projection/sidecar for Section/Step/purpose; preserve old Pack inputs. Any Pack-schema change requires ADR/migration fixtures and compatibility tests. Add FocusShell and owner/version/context-pinned resume (step, interaction state, answers, elapsed time, scroll only when meaningful), using new mutable snapshots or append-only events separate from Attempts.

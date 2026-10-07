@@ -11,6 +11,7 @@ Phase 3 under ADR 0041 extends flagged Plano with actual routine onboarding (day
 - Plano initially shows existing prepared/ACTIVE/completed session snapshots and 15/30/60-minute controls. Week/routine/onboarding modes remain pending; never display invented availability or a weekly allocation.
 - `FEATURE_NEW_TODAY`: date/title → next action and readable reason → real session snapshots/preparation → attention → short queue → week. The primary action is visible at ~390×844. Counts and durations display only when factual; planned minutes are not measured elapsed time.
 - `FEATURE_INTERACTIVE_LESSONS`: lesson/ACTIVE study uses AppShell Focus; `FEATURE_REAL_EXAM`: ACTIVE assessment uses Focus. Keep explicit exit and skip/main; exit is navigation, not completion/abandonment/submission. Results return to ordinary shell.
+- Interactive resume under [ADR 0043](../docs/ADR/0043-owner-scoped-lesson-resume.md) adds a wrapping save-status row and an explicit 44px save/retry action in the existing lesson surface. Restore stable step/expanded view and unsent shared Question response by owner/version/context. Conflict explains that another tab saved a newer point and offers reload; failed save preserves the local response. Canonical answer/help/feedback comes from actual server records. No new tokens or renderer; Programming Lab retains its current path.
 - Loading/empty/error states explain recovery. Day-off/completed-day and routine-dependent states wait for real routine facts.
 
 

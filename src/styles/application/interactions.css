@@ -271,6 +271,8 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .session-plan li > span { flex: 1; min-width: 0; overflow-wrap: anywhere; }
 .session-plan li > span > small { display: block; margin-top: var(--estudisc-spacing-4); font-family: inherit; font-weight: 400; white-space: normal; }
 .session-plan li > small { flex-shrink: 0; }
+.lesson-resume-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--estudisc-spacing-8); margin-block: var(--estudisc-spacing-8); }
+.lesson-resume-controls p { flex: 1 1 220px; margin: 0; }
 .time-options.is-adaptive { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (min-width: 640px) { .time-options.is-adaptive { grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr)); } }
 .session-lesson { display: grid; gap: var(--estudisc-spacing-10); padding-top: var(--estudisc-spacing-12); border-top: var(--estudisc-border-rule) dashed var(--estudisc-color-ink); }

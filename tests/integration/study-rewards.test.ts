@@ -14,6 +14,7 @@ describe.each(["memory", "persistent"] as const)("Question rewards (%s)", storeK
     const database = storeKind === "persistent" ? await createMigratedPgliteTestDatabase() : undefined;
     // Isolated disposable store, without resetting any shared development process.
     const store: ReturnType<typeof getMemoryStore> = {
+      lessonResumes: [],
       questionAssets: [], assessmentTemplates: [], assessmentInstances: [], assessmentResponses: [],
       questionAssistance: [], questionExposures: [], studySessions: [], studyPlans: [], studyPlanPreviews: [], packImports: [], tracks: [],
       modules: [], lessons: [], concepts: [], blocks: [], activities: [], attempts: [], conceptEvidence: [],

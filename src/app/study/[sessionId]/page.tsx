@@ -10,6 +10,8 @@ import { getLesson } from "@/features/lessons/api";
 import { LessonSteps } from "@/features/lessons/lesson-steps";
 import { ActivityList } from "@/features/activities/registry";
 import { getTodayDashboard } from "@/features/today/get-today-dashboard";
+import { getLessonResume } from "@/features/lessons/resume-api";
+import { LessonResumeProvider } from "@/features/lessons/resume-provider";
 export const dynamic="force-dynamic";
 const statusLabel:Record<string,string>={PLANNED:"Pronta para começar",ACTIVE:"Em andamento",COMPLETED:"Concluída",ABANDONED:"Encerrada"};
 export default async function StudyPage({params}:{params:Promise<{sessionId:string}>}){
@@ -27,8 +29,10 @@ export default async function StudyPage({params}:{params:Promise<{sessionId:stri
     {items.length>0&&<ol className="session-plan" aria-label="Roteiro da sessão">{items.map(item=><li key={JSON.stringify([item.trackId,item.lessonId,item.version])}><span>{item.title}{item.reason&&<small>{item.reason}</small>}</span><small>~{item.minutes} min</small></li>)}</ol>}
     {session.status!=="ACTIVE"&&<SessionControls sessionId={session.id} status={session.status} />}
     {session.status==="ACTIVE"&&await Promise.all(items.map(async item=>{const key=JSON.stringify([item.trackId,item.lessonId,item.version]);
-      if(item.delivery==="questions"&&item.activitySnapshots)return <section className="session-lesson" key={key}><h2>{item.title}</h2><p>{item.reason}</p>{item.caveats?.map(caveat=><p className="learning-hint" key={caveat}>{caveat}</p>)}<ActivityList activities={item.activitySnapshots.map(activity=>({...activity,studySessionId:session.id}))}/></section>;
-      const lesson=await getLesson(item.lessonId,item.version,item.trackId);return lesson?<section className="session-lesson" key={key}><h2>{lesson.title}</h2>{item.caveats?.map(caveat=><p className="learning-hint" key={caveat}>{caveat}</p>)}<LessonSteps blocks={lesson.blocks} activities={lesson.activities.filter(activity=>item.activityIds.includes(activity.stableId)).map(activity=>({...activity,studySessionId:session.id}))} /></section>:<p key={key}>Esta versão da aula está indisponível.</p>;}))}
+      const resumeScope=getFeatureFlags().FEATURE_INTERACTIVE_LESSONS?{trackId:item.trackId??session.trackId,lessonId:item.lessonId,version:item.version,sessionId:session.id}:undefined;
+      const resumeSnapshot=await getLessonResume(resumeScope);
+      if(item.delivery==="questions"&&item.activitySnapshots){const body=<ActivityList activities={item.activitySnapshots.map(activity=>({...activity,studySessionId:session.id}))}/>;return <section className="session-lesson" key={key}><h2>{item.title}</h2><p>{item.reason}</p>{item.caveats?.map(caveat=><p className="learning-hint" key={caveat}>{caveat}</p>)}{resumeScope?<LessonResumeProvider scope={resumeScope} initial={resumeSnapshot}>{body}</LessonResumeProvider>:body}</section>;}
+      const lesson=await getLesson(item.lessonId,item.version,item.trackId);return lesson?<section className="session-lesson" key={key}><h2>{lesson.title}</h2>{item.caveats?.map(caveat=><p className="learning-hint" key={caveat}>{caveat}</p>)}<LessonSteps blocks={lesson.blocks} activities={lesson.activities.filter(activity=>item.activityIds.includes(activity.stableId)).map(activity=>({...activity,studySessionId:session.id}))} resumeScope={resumeScope} resumeSnapshot={resumeSnapshot} /></section>:<p key={key}>Esta versão da aula está indisponível.</p>;}))}
     {session.status==="ACTIVE"&&<footer className="session-finish"><p>Terminou as atividades? Conclua para registrar a sessão.</p><SessionControls sessionId={session.id} status={session.status} /></footer>}
   </article></AppShell>;
 }
