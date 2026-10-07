@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-07 — MAT-08 percentage applications live
+
+- Publish one immutable MAT-08 v3 via authenticated targeted append and authorized Admin Direct, adding three existing percentage explorers after source examples for successive discount, original-price check and monthly simple interest.
+- Preserve published v2, thirteen original blocks, fifteen Activities, ten shared Questions and nineteen Mathematics lesson identities. Record actual production actor/mode, unchanged Question digests, correct learner-page outputs and source caveats; no fabricated editorial approval, corpus re-import, production migration or feature flag change.
+- Add the reproducible source-bound recipe and technical/release receipt; reconcile the active Phase 9 routing/next action with the standing social release policy.
+
 ## 2026-10-07 — MAT-07 v5 activated in production
 
 - Use the real existing authenticated ADMIN session to preview/import one source/hash-bound lesson version and activate through existing Admin Direct under standing owner authorization. One new published lesson release; no fabricated editorial approvals, credential extraction or corpus-wide import.

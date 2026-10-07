@@ -1,5 +1,22 @@
 # Estudisc current plan
 
+## Completed rollout — MAT-08 source-defined enrichment (2026-10-07)
+
+Standing social release authorization applies. Scope: append MAT-08 v3 from immutable v2, with three existing percentage explorers after authored worked examples E01/E02/E04: 10% of 280 = 28 (second discount), 18% of 300 = 54 (original-price check), 1.6% of 1250 = 20 (monthly simple interest). Existing prose explicitly distinguishes the computed part from final price/total interest. No new formula, renderer, Question, media, mastery evidence, feature flag or migration; no repeated MAT-07 import.
+
+Acceptance: source/anchor/objective/Concept/Question hash binding; all original blocks/Activities/references/caveats preserved; strict packet validation and repeat export stability. Authenticated production dry run, one targeted append, actual Admin Direct activation, historical/current Question digest and publication preservation, unchanged Mathematics identities, three correct initial outputs and keyboard/mobile input smoke. Run focused checks plus final lint/typecheck/test/build/packs/E2E; record exact results and sanitized actual receipts. No invented editorial approval or raw-secret handling.
+
+- [x] Create source-bound recipe and validate/export against unchanged corpus.
+- [x] Complete engineering gates and live preflight/preservation baseline.
+- [x] Append/publish v3, verify actual software behavior and historical preservation.
+- [x] Update docs/status/changelog/receipt and prepare protected checkpoint release.
+
+Actual acceptance: focused fifteen PASS; full 361 PASS / three optional real-PG SKIP; lint/typecheck/build/packs PASS; serial browser 48 PASS / eighteen gated SKIP. Eighty-one technical targets and five corpus/mirror files match prior accepted hashes. Live preview 200/exact packet 808b730d.; import 201/one lesson/fifteen retained Activities; Admin Direct 200/one newly published release. V2/v3 ten Question digests unchanged (eb7244bc.), both published; historical lesson 200/no explorer, current page 200/three correct outputs/no draft banner; Mathematics nineteen unique lessons unchanged. Administrative draft GET correctly showed the new draft before activation; an initial operator assertion assumed Student behavior and was corrected without a code change. No Student-role production assertion is inferred from an ADMIN session. [Actual evidence](docs/estudisc/PERCENTAGE-APPLICATIONS-RELEASE.json).
+
+Live keyboard automation was not verified: Orca snapshot returned runtime_unavailable, eval focus was false and native commands left all six explorer inputs unchanged. Existing unchanged-component desktop/mobile interaction E2E passed; HTML/live outputs/history/Question preservation checks succeeded. Do not claim a production keyboard interaction test. Protected documentation/recipe checkpoint uses ordinary merge only after eight required checks; actual outcomes remain available in the associated GitHub PR/history.
+
+NEXT ACTION: extend compatible source-bound recipes for existing bounded linear models and verify their production interaction rollout before broader-domain batches. Missing authored goals/ambiguous pedagogy remain explicit exceptions; do not force unrelated goals into percentages. No repeated editorial permission or MAT-07/MAT-08 import.
+
 ## Completed rollout — MAT-07 v5 live (2026-10-07)
 
 Used the dedicated Orca project browser and existing authenticated ADMIN session, without password/cookie/production secret extraction. Actual production preview 200/ready/exact packet SHA 95a5462e…; targeted import 201/imported/one lesson/eighteen Activities; existing Admin Direct publication 200/published/one newly published release. Real actor/mode recorded, no independent QA fabricated or human content review requested.
