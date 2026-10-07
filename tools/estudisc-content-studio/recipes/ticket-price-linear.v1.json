@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-05",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "2495117723605764f8f718880aed3795dade0f5a948b5f8c96463af298e76003",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "BLK-MAT-05-ENR-LINEAR-E04",
+      "afterBlockId": "BLK-MAT-05-E04",
+      "sourceBlockHash": "f107cf2689c3345a4a6e257bf26fce56d776faeadaf7bfedd8bce0b47cf765bd",
+      "sourceQuote": "Para 9 ingressos, 9×15=R$ 135.",
+      "conceptId": "MAT.PROPORTION.CONTEXT",
+      "objective": "Proporção em situações-problema",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore o preço dos ingressos",
+        "variableLabel": "Quantidade de ingressos",
+        "outputLabel": "Preço",
+        "unit": "ingressos",
+        "outputUnit": "reais",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "initial": 9,
+        "slope": 15,
+        "intercept": 0,
+        "explanation": "Mantendo o preço de R$ 15 por ingresso, o preço total varia proporcionalmente à quantidade. Para 9 ingressos, o resultado é R$ 135."
+      },
+      "expectedInitialResult": 135
+    }
+  ]
+}

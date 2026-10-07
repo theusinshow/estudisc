@@ -1,5 +1,22 @@
 # Estudisc current plan
 
+## Active increment — bounded linear enrichment (2026-10-07)
+
+Extend source-bound recipes to the already registered bounded linear model, preserving percentage compatibility and source/next-version/Question guards. ADR 0050 defines baseline local text input with the interactive flag off; slider and persisted resume stay enhancements. No new table/flag/engine or production credential access. Exploration remains separate from Attempts/mastery.
+
+Scope: MAT-05 v2 → v3, E04 tickets × 15 = price (initial 9 → 135); MAT-06 v2 → v3, E01 notebooks × 7 = price (9 → 63), E04 minutes × 70 = pages (11 → 770). Exact source goals/Concepts/quotes, bounded nonnegative inputs and original constant-rate conditions. No inverse model or new teaching claim.
+
+Acceptance: strict compatible recipe union; exact source hashes and complete original-field/block/Activity/Question preservation; source arithmetic and invalid-model/range/result rejection. Flag-off keyboard/mobile/text recovery and independent multiple controls, no resume writes or official submissions; flag-on regression. Focused checks then full lint/typecheck/test/build/packs/serial E2E and one bounded desktop/mobile visual pass. Protected code release before authenticated production targeted append/Admin Direct activation, actual current/historical preservation/outputs/counts and truthful audit receipt. No extra agents/model changes or editorial approval gate.
+
+- [x] Define contract/ADR and implement baseline linear input.
+- [x] Create two source-defined recipes; validate compatibility/preservation/UI.
+- [ ] Complete full engineering gates and protected code release/deployment.
+- [ ] Activate two new versions and record actual historical/current acceptance.
+
+Local acceptance: focused twenty-four PASS; full 374 PASS / three optional real-PG SKIP; lint/typecheck/build/packs PASS; clean full serial E2E fifty PASS / eighteen gated SKIP; final flags-on focused six PASS / two flag-off SKIP. Bounded desktop/mobile visual pass and detector [] completed; eighty-one prior technical hashes compared (seventy-four unchanged), five corpus/mirror files unchanged. Source/Activities/eight Question refs per candidate preserved. Fixed known-family missing payload type in a read projection, isolated collided test fixture namespaces, serialized type checks, preserved old disposable Next dev cache after malformed generated JSON/early hydration; final clean suite passed. Production baseline: both old v2 published/eight Questions, new v3 absent, Mathematics nineteen identities. No import/publication/migration/flag change yet. [Engineering report](docs/estudisc/LINEAR-ENRICHMENT.md), [actual local evidence](docs/estudisc/LINEAR-ENRICHMENT-EVIDENCE.json).
+
+NEXT ACTION: release the accepted code through eight protected checks and existing Vercel alias, verify actual build commit/READY before targeted authenticated append/Admin Direct activation of MAT-05/MAT-06 v3. MAT-07/MAT-08 are already live; never repeat their imports/publications. No editorial or raw-secret approval request.
+
 ## Completed rollout — MAT-08 source-defined enrichment (2026-10-07)
 
 Standing social release authorization applies. Scope: append MAT-08 v3 from immutable v2, with three existing percentage explorers after authored worked examples E01/E02/E04: 10% of 280 = 28 (second discount), 18% of 300 = 54 (original-price check), 1.6% of 1250 = 20 (monthly simple interest). Existing prose explicitly distinguishes the computed part from final price/total interest. No new formula, renderer, Question, media, mastery evidence, feature flag or migration; no repeated MAT-07 import.

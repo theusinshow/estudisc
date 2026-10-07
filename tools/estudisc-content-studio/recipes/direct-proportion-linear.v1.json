@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-06",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "dd304c36ec54ebfcf27c5dab193d7a8de2528fc69f7a4d7e6e8601612fa6432b",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "BLK-MAT-06-ENR-LINEAR-E01",
+      "afterBlockId": "BLK-MAT-06-E01",
+      "sourceBlockHash": "65f61cb7c093c6d6d7b59c86b11fabc195afae48d63b9305b0d90a4c416e1131",
+      "sourceQuote": "Para 9, 9×7=R$ 63.",
+      "conceptId": "MAT.RULE3.DIRECT",
+      "objective": "Regra de três diretamente proporcional",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore o preço dos cadernos",
+        "variableLabel": "Quantidade de cadernos",
+        "outputLabel": "Preço",
+        "unit": "cadernos",
+        "outputUnit": "reais",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "initial": 9,
+        "slope": 7,
+        "intercept": 0,
+        "explanation": "Os cadernos são iguais e cada um custa R$ 7. Mantendo esse preço unitário, 9 cadernos custam R$ 63 e a razão preço:quantidade permanece constante."
+      },
+      "expectedInitialResult": 63
+    },
+    {
+      "newBlockId": "BLK-MAT-06-ENR-LINEAR-E04",
+      "afterBlockId": "BLK-MAT-06-E04",
+      "sourceBlockHash": "d3b39095c0645f1b01d3c89198774d45d30d49fe0d9c371da057c32be4192388",
+      "sourceQuote": "11×70=770 páginas.",
+      "conceptId": "MAT.RULE3.CONTEXT",
+      "objective": "Regra de três em situações-problema",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore a produção da copiadora",
+        "variableLabel": "Tempo de impressão",
+        "outputLabel": "Páginas",
+        "unit": "minutos",
+        "outputUnit": "páginas",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "initial": 11,
+        "slope": 70,
+        "intercept": 0,
+        "explanation": "O modelo mantém a mesma configuração e não inclui pausas: a taxa é 70 páginas por minuto. Nessas condições, 11 minutos correspondem a 770 páginas."
+      },
+      "expectedInitialResult": 770
+    }
+  ]
+}

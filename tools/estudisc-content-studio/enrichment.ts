@@ -32,8 +32,9 @@ export function createEnrichmentPreview(pack: TrackPackV2, inputBlueprint: Lesso
     if (!blueprint.recommendedBlocks.includes(addition.type)) throw new Error("Interaction not proposed by the current blueprint");
     if (ids.has(addition.newBlockId)) throw new Error("Enrichment block identity collision");
     ids.add(addition.newBlockId);
-    const computed = addition.parameters.initialValue * addition.parameters.initialPercentage / 100;
-    if (Math.abs(computed - addition.expectedInitialResult) > 1e-9) throw new Error("Expected initial result disagrees with existing percentage calculation");
+    const parameters = addition.parameters;
+    const computed = "mode" in parameters ? parameters.slope * parameters.initial + parameters.intercept : parameters.initialValue * parameters.initialPercentage / 100;
+    if (Math.abs(computed - addition.expectedInitialResult) > 1e-9) throw new Error("Expected initial result disagrees with existing numeric calculation");
     const provenance = anchor.payload.contentStudio;
     return { id: addition.newBlockId, schemaVersion: 1, type: addition.type, conceptIds: [addition.conceptId], payload: { ...addition.parameters,
       contentStudio: { ...(provenance && typeof provenance === "object" ? structuredClone(provenance) : {}), enrichment: { purpose: addition.purpose, sourceBlockId: anchor.id, sourceBlockHash: addition.sourceBlockHash, objective: addition.objective, recipeHash: hashCanonicalJson(recipe), reviewStatus: "community_feedback_pending" } } } };
@@ -62,7 +63,7 @@ export function prepareEnrichmentPreview(studio: Studio, inputRecipe: unknown) {
   if (hashCanonicalJson(blueprint) !== entry.blueprintHash) throw new Error("Blueprint changed during preview preparation");
   const corpus = loadBlueprintCorpus(studio.root), source = corpus.find(s => s.pack.track.id === recipe.identity.trackId)!;
   const preview = createEnrichmentPreview(source.pack, blueprint, recipe);
-  const policyHash = hashCanonicalJson(Object.fromEntries(policyFiles.map(file => [file, createHash("sha256").update(readFileSync(join(studio.root, file))).digest("hex")])));
+  const policyHash = hashCanonicalJson(Object.fromEntries([...policyFiles, "docs/ADR/0050-source-bound-linear-enrichment.md", "src/features/lessons/blocks/linear-explorer.tsx", "src/features/lessons/use-interaction-state.ts"].map(file => [file, createHash("sha256").update(readFileSync(join(studio.root, file))).digest("hex")])));
   const inputHashes = { sourceLesson: preview.sourceLessonHash, sourcePack: source.canonicalHash, blueprint: preview.blueprintHash, blueprintInputs: preview.blueprintInputHash, recipe: preview.recipeHash, questions: preview.questionHash, preview: preview.previewHash, policy: policyHash, assets: pipeline.index.assetHash };
   const key = hashCanonicalJson(inputHashes), rootDirectory = studio.dir("enrichment-previews");
   if (existsSync(join(rootDirectory, "state.json"))) throw new Error("Enrichment directory conflicts with a Studio job");
