@@ -36,6 +36,8 @@ Reviewer `APPROVED` is an editorial recommendation. It stops at `HUMAN_REVIEW_RE
 
 ## Commands
 
+`pnpm estudisc-content blueprints` extracts the 132 historically audited local lesson versions into ignored, version/hash-bound UNREVIEWED proposals and a compact aggregate/exception report. No full lesson payloads, Question content or image bytes are exported; no source is rewritten/imported/published. Unchanged complete inputs skip; source, curriculum, policy or current asset-rights changes invalidate. See [BLUEPRINT-POLICY.md](BLUEPRINT-POLICY.md) and [local pipeline report](../../docs/estudisc/LESSON-BLUEPRINTS.md). Missing objectives require human source review; confidence never supplies approval. Use only the default ignored workspace or `.local/`.
+
 | Command | Purpose |
 | --- | --- |
 | `pnpm estudisc-content init CIE-06` | Create a job; reject duplicates. |

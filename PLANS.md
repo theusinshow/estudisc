@@ -1,5 +1,22 @@
 # Estudisc current plan
 
+## Completed increment — Phase 8 local Lesson Blueprint pipeline (2026-10-07)
+
+Phase 7 is checkpointed at `a70b98d`. Continue with the existing Studio catalog, Pack validator, canonical hashes and metadata-only teaching assets. No additional agents or model changes.
+
+Assumptions: use the four local import artifacts identified by the prior production audit, pin their actual bytes/canonical hashes and lesson versions; local `draft` status is preserved and historical publication evidence is clearly distinguished from a fresh production read. Extract lesson teaching text locally without exporting payloads, images, Question stems/answers or reserved assets. Missing objectives remain missing, proposed archetypes/blocks never imply pedagogical approval. All generated blueprints start unreviewed.
+
+Acceptance: 132 unique version-bound summaries/blueprints, deterministic classification/clusters/confidence reasons/component and asset needs; aggregate/exception report; source, dependency, policy and asset hashes invalidate stale artifacts; unchanged inputs skip without timestamp churn; corrupted artifacts regenerate. Outputs stay in ignored Studio sidecars, never rewrite/import/publish content. Focused tests plus full lint/typecheck/test/build/packs/E2E gate, documentation and checkpoint.
+
+- [x] Define ADR 0046, source manifest and compact blueprint contract/rules.
+- [x] Implement local extraction/classification/report/cache through Studio CLI.
+- [x] Verify all 132 versions, deterministic totals, source/asset/policy invalidation and confidentiality.
+- [x] Complete full acceptance, documentation/status/changelog/evidence and checkpoint preparation.
+
+Final local acceptance: 38 focused tests PASS; 351 full tests PASS / 3 optional real-PostgreSQL SKIP; lint/typecheck/build/packs/CLI/schema export PASS; fresh serial default E2E 44 PASS / 18 gated SKIP. Actual CLI repeat generated=0/skipped=132; 113 missing objectives, 117 review findings, zero reusable assets. Initial typecheck caught a fixture using nonexistent `requiredLevel`; corrected to the existing `strength` contract before the green checks. Runtime, corpus, assets, sources, engines and dependencies unchanged; exact commands/evidence: [blueprint report](docs/estudisc/LESSON-BLUEPRINTS.md).
+
+NEXT ACTION: checkpoint this accepted proposal pipeline, then review missing source objectives and exact blueprints for a bounded Phase 9 draft pilot. All proposals remain UNREVIEWED; no independent approval or publication is fabricated. Route only concrete unresolved pedagogical exceptions to Terra; no stronger-model bulk lesson dump.
+
 ## Completed increment — Phase 7 teaching-asset metadata (2026-10-07)
 
 Phase 6 core is checkpointed at `57be5e6`; user's latest “continue” preserves continuous local authorization/model/effort and no additional agents. Extend existing Studio media contracts/validation and safe figure boundary; private official Question storage/exposure APIs remain authoritative and unchanged.

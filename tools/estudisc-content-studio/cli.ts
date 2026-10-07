@@ -7,6 +7,8 @@ import { Studio, atomicJson } from "./workspace";
 import { readJson, validateJob } from "./validation";
 import { runDemo } from "./demo";
 import { teachingAssetInventory, searchTeachingAssets } from "./assets";
+import { runBlueprintPipeline } from "./blueprints";
+import { lessonBlueprintSchema } from "./blueprint-contracts";
 
 const { values, positionals } = parseArgs({ allowPositionals: true, options: {
   workspace: { type: "string" }, request: { type: "string" }, owner: { type: "string" }, model: { type: "string" },
@@ -29,6 +31,12 @@ try {
   if (!existsSync(join(root, "AGENTS.md")) || !existsSync(join(root, "tools/estudisc-content-studio/contracts.ts"))) throw new Error("Run from Estudisc repository root");
   const studio = new Studio(root, values.workspace);
   switch (command) {
+    case "blueprints": {
+      const result = runBlueprintPipeline(studio);
+      console.log(`BLUEPRINTS: ${result.report.lessons}; generated=${result.generated}; skipped=${result.skipped}; missing objectives=${result.report.missingObjectives}; deep review=${result.report.needsDeepReview}; reusable assets=${result.report.reusableAssetMatches}.`);
+      console.log("Local UNREVIEWED proposals and metadata-only index/report saved in Studio lesson-blueprints/. No rewriting, import or publication.");
+      break;
+    }
     case "init": console.log("Job created.", JSON.stringify(studio.init(required(jobId, "JOB"), values.request ? readJson(resolve(root, values.request)) : undefined), null, 2)); break;
     case "list": console.log(studio.list().map(s => `${s.jobId}\t${s.status}\trevisions=${s.revisionCount}`).join("\n") || "No jobs."); break;
     case "assets": {
@@ -62,9 +70,9 @@ try {
     case "demo": console.log("DEMO / NOT PRODUCTION CONTENT"); printState(runDemo(studio, values["simulate-approval"])); break;
     case "schemas": {
       const output = resolve(root, "tools/estudisc-content-studio/schemas"); mkdirSync(output, { recursive: true });
-      for (const [name, schema] of Object.entries(contracts)) if (name.endsWith("Schema") && schema instanceof z.ZodType) atomicJson(join(output, `${name}.json`), z.toJSONSchema(schema, { io: "input" }));
+      for (const [name, schema] of Object.entries({ ...contracts, lessonBlueprintSchema })) if (name.endsWith("Schema") && schema instanceof z.ZodType) atomicJson(join(output, `${name}.json`), z.toJSONSchema(schema, { io: "input" }));
       console.log(`JSON Schemas exported to ${output}; refinements still require CLI validation.`); break;
     }
-    default: console.log("pnpm estudisc-content init|status|next|validate|claim|complete|reset-stage|approve|promote|recover-lock JOB [ROLE/STAGE]\npnpm estudisc-content list|schemas|demo|assets|assets-index\nAsset filters: --query TEXT --subject CODE --concept ID --type TYPE --reuse-only\nOptions: --workspace PATH --request PATH --owner SESSION --model MODEL --reason TEXT --abandon-owner SESSION --by HUMAN --note TEXT\nDEMO only: --simulate-approval"); if (command) process.exitCode = 1;
+    default: console.log("pnpm estudisc-content init|status|next|validate|claim|complete|reset-stage|approve|promote|recover-lock JOB [ROLE/STAGE]\npnpm estudisc-content list|schemas|demo|assets|assets-index|blueprints\nAsset filters: --query TEXT --subject CODE --concept ID --type TYPE --reuse-only\nOptions: --workspace PATH --request PATH --owner SESSION --model MODEL --reason TEXT --abandon-owner SESSION --by HUMAN --note TEXT\nDEMO only: --simulate-approval"); if (command) process.exitCode = 1;
   }
 } catch (error) { console.error(error instanceof Error ? error.message : String(error)); process.exitCode = 1; }

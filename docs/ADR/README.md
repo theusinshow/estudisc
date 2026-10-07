@@ -1,5 +1,7 @@
 # Architecture Decision Records
 
+[ADR 0046](0046-local-lesson-blueprint-proposals.md) defines local UNREVIEWED, version/hash-bound teaching proposals, compact extraction, explicit source gaps and conservative cache invalidation without corpus publication.
+
 [ADR 0042](0042-adaptive-session-snapshots-and-readiness.md) extends the existing planner with adaptive budgets, actual editorial readiness, frozen cross-track membership and factual summaries without changing evidence rules.
 
 [ADR 0043](0043-owner-scoped-lesson-resume.md) separates scoped mutable step/Question drafts from canonical Attempts and assistance, with revision/idempotence and stale-answer guards.

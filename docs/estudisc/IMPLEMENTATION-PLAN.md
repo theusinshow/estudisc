@@ -120,6 +120,8 @@ Acceptance: actual rights state controls reuse; unknown/link-only rights cannot 
 
 ## 11. Phase 8 — Lesson Blueprint Pipeline
 
+Local proposal pipeline: [LESSON-BLUEPRINTS.md](LESSON-BLUEPRINTS.md) and ADR 0046. All 132 historically audited import lesson versions have deterministic, UNREVIEWED metadata-only proposals; missing goals are explicit, no mistakes are invented. Cache compares actual artifacts and binds source/corpus/catalog/policy/current asset eligibility. Human blueprint review and Phase 9 enrichment remain pending.
+
 Risk LOW/MEDIUM; Luna Max; Terra only for low-confidence/complex pedagogical exceptions. Depends on stable Phase 5–7 component contracts. No student flag; CLI dry-run/report is default.
 
 Reuse `tools/estudisc-content-studio/catalog.ts`, contracts, artifact hashing/validation and adapter. Extract current published versions locally, summaries (IDs/version/subject/Concepts/objectives/blocks/word count), deterministic archetypes/clusters and asset/component needs. Write sourceHash, dependency/policy hashes, blueprintVersion/generatedAt/reviewState; source-only hash equality must not hide changed policy or assets. Define confidence heuristics and review limits transparently.
@@ -215,4 +217,4 @@ Likely Sol High review points: new Adaptive Session crossing selection/evidence,
 - [x] Implement the first Phase 0/1/2 foundation increment after explicit user authorization; see EVOLUTION-FOUNDATION.md.
 - [ ] Complete routine-dependent Phase 1/2 remainder and Phases 3–15 after their required contracts/model gates.
 
-NEXT ACTION: read the completed foundation report and Terra routine handoff. Terra settles Phase 3 availability/modes/overrides/rebalance/preview consistency and eligibility facts; Luna then implements specified additive storage/UI/helpers. Do not change scheduling/evidence by trial and error. No production write or corpus republication is implied.
+NEXT ACTION: Phase 0–8 local increments are recorded in their current reports, with later consumers/rollout limitations preserved. Review Phase 8 proposals and actual missing source objectives before Phase 9 draft enrichment. Only reviewed exact blueprints/components may drive enrichment; route precise pedagogical exceptions to Terra. No automatic approval, production write or corpus republication is implied.

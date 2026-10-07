@@ -8,6 +8,8 @@ Current deltas: [weekly routine](WEEKLY-ROUTINE.md) and [adaptive sessions](ADAP
 
 [Phase 7 metadata/authoring](TEACHING-ASSETS.md) provides licensed version/hash inventory, local search/selection and per-source visual rights validation. Admin catalogue UI and distribution/storage remain later consumers; no actual asset was approved or published by this increment.
 
+[Phase 8 proposal pipeline](LESSON-BLUEPRINTS.md) locally extracts all 132 historically audited lesson versions into compact UNREVIEWED blueprints, clusters/needs/confidence findings and cache-bound sidecars. Actual goals are absent for 113 source lessons; 117 proposals need deeper/source review. No approved blueprint, invented objective/mistake, enrichment or republication is claimed.
+
 Implementation delta: the subsequent authorized Phase 0/1/2 foundation increment is recorded in [EVOLUTION-FOUNDATION.md](EVOLUTION-FOUNDATION.md). Classifications below retain the initial audited checkpoint; use that report and the current plan for implemented flags/navigation/Focus/Today and remaining routine contracts.
 
 Phase 3 delta: [WEEKLY-ROUTINE.md](WEEKLY-ROUTINE.md) records actual routine persistence, onboarding/week/manual/override/focus and checked previews; original gap classifications below remain audit history rather than current implementation status.

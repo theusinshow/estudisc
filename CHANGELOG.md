@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-07 — Local Lesson Blueprint proposal pipeline
+
+- Extend the existing Studio CLI with `blueprints`: compact metadata/teaching-text counts, deterministic archetypes/clusters, interaction/asset/component needs and explicit confidence/source findings for 132 historically audited import lesson versions (ADR 0046).
+- Keep all proposals UNREVIEWED; retain missing objectives/null learning goals and empty uninferred mistakes. Never export full lesson payloads, Questions/answers, image bytes or reserved assets; no import/publication/runtime/engine change.
+- Bind track/lesson versions, source/corpus/catalog dependency/policy/current asset hashes and artifact hashes. Preserve prior generations; unchanged validated proposals keep timestamps and skip; corrupt or invented approval state regenerates. Changed audited sources fail closed pending explicit reconciliation.
+- Test corpus totals, metadata boundaries, classification/prerequisite findings, independent invalidation, actual cache repair/skip and asset-rights withdrawal. Exact commands, reports and remaining review gates: `docs/estudisc/LESSON-BLUEPRINTS.md`.
+
 ## 2026-10-07 — Teaching-asset metadata and local authoring inventory
 
 - Extend existing Studio image candidates with optional version/type/subjects/Concepts/tags/dimensions/text/reuse/rights/exposure metadata (ADR 0045); preserve legacy normalized artifacts and actual license states. No database, learner Pack envelope, protected Question storage or CSP change.

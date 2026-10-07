@@ -1,5 +1,7 @@
 # Estudisc evolution — architecture entry point
 
+Local authoring evolution: ADR 0046 and [Lesson Blueprint proposals](LESSON-BLUEPRINTS.md) extend the existing Studio catalog/assets/Pack contract with ignored metadata-only proposal sidecars. Hash-bound extraction/classification never owns learner evidence, planner decisions or publication; UNREVIEWED proposals require actual source/pedagogical review before enrichment.
+
 Audit date: 2026-10-06. The initial audit/planning execution is complete. The user subsequently authorized implementation; the first foundation/Today increment is tracked in [the implementation report](EVOLUTION-FOUNDATION.md).
 
 Read [the supplied product architecture](source-pack/01_PRODUCT_ARCHITECTURE.md), [the gap analysis](IMPLEMENTATION-GAP-ANALYSIS.md), [the implementation plan](IMPLEMENTATION-PLAN.md), and [model routing](MODEL-ROUTING-POLICY.md). Specialized source documents are preserved unchanged in `source-pack/`; do not duplicate them into competing specifications.
