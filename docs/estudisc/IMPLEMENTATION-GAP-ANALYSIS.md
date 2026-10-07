@@ -1,5 +1,7 @@
 # Estudisc — Implementation Gap Analysis
 
+[Phase 9 review preparation](ENRICHMENT-PREVIEW.md) adds a generic source/blueprint/Question/policy-bound recipe and local MAT-07 exploratory candidate. Original blocks/activities and twelve Questions remain intact. Actual blueprint/pilot review and batch enrichment remain pending; no alternate reviewer state, approval, import or publication is introduced.
+
 Current deltas: [weekly routine](WEEKLY-ROUTINE.md) and [adaptive sessions](ADAPTIVE-SESSIONS.md). The original gaps below remain the initial audit snapshot; use the reports and current implementation plan for continuation.
 
 [Scoped lesson resume](LESSON-RESUME.md) closes stable-step/expanded/shared Question draft reload and stale-submission/assistance guards. Typed state for other interactive blocks remains tied to Phase 6 contracts.

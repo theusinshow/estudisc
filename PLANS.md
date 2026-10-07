@@ -1,5 +1,22 @@
 # Estudisc current plan
 
+## Completed increment — Phase 9 source-bound enrichment review preparation (2026-10-07)
+
+Phase 8 is checkpointed at `f950593`. Continuous local implementation is authorized; all blueprints remain UNREVIEWED. Implement the smallest reviewable authoring increment, preserving the original corpus and existing Studio review/publication authority. No agents/model changes or fabricated independent approval.
+
+Assumptions: an isolated preview proposal may illustrate a pending blueprint; it cannot be selected/imported/promoted as reviewed enrichment. Choose MAT-07 percentage calculation, source worked example E03 (16% of 275 = 44), explicit existing objective and Concept. One numeric explorer uses the existing schema/renderer. New lesson version is a local review candidate only; unchanged blocks, activities, Questions/versions/answers and source caveats remain intact. No new media or canonical evidence.
+
+Acceptance: generic strict recipe/source/blueprint/Question/policy/asset hash binding; one source-anchored added exploratory block and compatible new-version local preview; deterministic untouched-block/reference preservation and output integrity; explicit seven-dimension independent review request, never an approval report or import-ready Pack. Existing Studio remains the only editorial review/export workflow. Corpus/source drift fails closed. Meaningful rejection/preservation/rendering tests, mobile/keyboard/flags QA in disposable fixtures, full final gates, docs/evidence/checkpoint.
+
+- [x] Define ADR 0047 and a generic bounded preview recipe/contract.
+- [x] Implement source-bound local preview preparation/cache and concrete MAT-07 recipe.
+- [x] Verify preservation/rejection/semantic rendering and disposable mobile/keyboard QA.
+- [x] Complete full gates, docs/status/changelog/evidence and checkpoint preparation.
+
+Final engineering acceptance: 42 focused PASS; 355 full tests PASS / 3 optional real-PostgreSQL SKIP; lint/typecheck/build/packs/CLI/schema export PASS; fresh serial default E2E 46 PASS / 18 gated SKIP; focused foundation/interactive-on E2E two PASS / zero SKIP. Native focus/reduced-motion style diagnostics required polling actual computed transitions; schema export required omitting internal undefined mode from the two-field percentage projection. Post-fix focused tests/typecheck/schema export and changed-target lint PASS. Actual repeated CLI writes zero files; source/runtime/engine/dependency/media/hash/link preservation PASS (7 current hashes / 52 actual prior comparisons / 12 source documents / four media inputs / four source packs; 14 source blocks, 18 activities and 12 Question records retained). [Pilot report](docs/estudisc/ENRICHMENT-PREVIEW.md).
+
+NEXT ACTION: checkpoint the accepted review-preparation increment. Integrate the exact preview/blueprint/source/reference hashes into the existing Studio job/independent review workflow before reviewed draft promotion or batches. No Studio job/reviewer claim/approval was fabricated. Published originals remain selected; source/pedagogy exceptions are routed individually, and production import/publication remains separately authorized.
+
 ## Completed increment — Phase 8 local Lesson Blueprint pipeline (2026-10-07)
 
 Phase 7 is checkpointed at `a70b98d`. Continue with the existing Studio catalog, Pack validator, canonical hashes and metadata-only teaching assets. No additional agents or model changes.

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-07 — Source-bound enrichment review preview
+
+- Add a generic strict authoring recipe and local review candidate preparation through existing Studio CLI (ADR 0047). The first MAT-07 v5 proposal adds one percentage explorer after authored E03, anchored to the existing goal/Concept and 16% of 275 = 44; preserve original blocks/Activities/Questions/answers and published bytes.
+- Bind source/blueprint/recipe/Question/policy/asset/candidate hashes; reject stale anchors, invented objectives/Concepts, collisions, invalid calculations/models/version rollback and public output. Unchanged proposals skip, tampered review requests repair to REVIEW_REQUIRED; retain generations.
+- Prepare a seven-dimension review request without approval/import-ready Pack or publication. Existing Studio ownership/review/export remains authoritative; actual review and batches are pending. Add preservation/schema/render/cache/rejection fixtures and disposable browser QA; no renderer, evidence, authentication or Pack-schema change.
+
 ## 2026-10-07 — Local Lesson Blueprint proposal pipeline
 
 - Extend the existing Studio CLI with `blueprints`: compact metadata/teaching-text counts, deterministic archetypes/clusters, interaction/asset/component needs and explicit confidence/source findings for 132 historically audited import lesson versions (ADR 0046).

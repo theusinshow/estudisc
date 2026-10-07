@@ -36,6 +36,8 @@ Reviewer `APPROVED` is an editorial recommendation. It stops at `HUMAN_REVIEW_RE
 
 ## Commands
 
+`pnpm estudisc-content enrichment-preview --request tools/estudisc-content-studio/recipes/percentage-calculation.v1.json` prepares MAT-07 v5 as an isolated REVIEW_REQUIRED candidate: one existing percentage explorer after authored example E03, unchanged original lesson/Activity content and twelve hash-bound shared Question references. The request lists all seven existing Studio review dimensions and source caveats. It creates no QA approval or import-ready Pack and does not change role/state/publication authority. See [preview policy](ENRICHMENT-PREVIEW-POLICY.md) and [pilot report](../../docs/estudisc/ENRICHMENT-PREVIEW.md). Only ignored default workspace or `.local/` outputs are permitted.
+
 `pnpm estudisc-content blueprints` extracts the 132 historically audited local lesson versions into ignored, version/hash-bound UNREVIEWED proposals and a compact aggregate/exception report. No full lesson payloads, Question content or image bytes are exported; no source is rewritten/imported/published. Unchanged complete inputs skip; source, curriculum, policy or current asset-rights changes invalidate. See [BLUEPRINT-POLICY.md](BLUEPRINT-POLICY.md) and [local pipeline report](../../docs/estudisc/LESSON-BLUEPRINTS.md). Missing objectives require human source review; confidence never supplies approval. Use only the default ignored workspace or `.local/`.
 
 | Command | Purpose |

@@ -1,5 +1,7 @@
 # Architecture Decision Records
 
+[ADR 0047](0047-source-bound-enrichment-review-previews.md) defines source/hash-bound enrichment review candidates, explicit pending review and preserved original/Question identities without an alternate approval or import path.
+
 [ADR 0046](0046-local-lesson-blueprint-proposals.md) defines local UNREVIEWED, version/hash-bound teaching proposals, compact extraction, explicit source gaps and conservative cache invalidation without corpus publication.
 
 [ADR 0042](0042-adaptive-session-snapshots-and-readiness.md) extends the existing planner with adaptive budgets, actual editorial readiness, frozen cross-track membership and factual summaries without changing evidence rules.

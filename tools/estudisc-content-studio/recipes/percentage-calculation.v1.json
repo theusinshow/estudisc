@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "identity": { "trackId": "ifsc-2027-mathematics", "trackVersion": 1, "lessonId": "MAT-07", "lessonVersion": 4 },
+  "sourceLessonHash": "97a1594b327900174c9d50f4566b62ca93c26bcfacc07de6fd3051a76cb75362",
+  "newVersion": 5,
+  "authorId": "codex-local-preview",
+  "additions": [
+    {
+      "newBlockId": "BLK-MAT-07-ENR-PERCENT-01",
+      "afterBlockId": "BLK-MAT-07-E03",
+      "sourceBlockHash": "71eb3f3b493e170863418bb7d277f4320a353452d0de60c6cce812d9f42bfe2a",
+      "sourceQuote": "Calcule 16% de 275.",
+      "conceptId": "MAT.PCT.CALCULATE",
+      "objective": "Calcular a parte percentual",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": { "initialValue": 275, "initialPercentage": 16 },
+      "expectedInitialResult": 44
+    }
+  ]
+}

@@ -130,6 +130,8 @@ Acceptance: exactly one identified blueprint for each of 132 current lesson vers
 
 ## 12. Phase 9 — Content Enrichment
 
+First review-preparation increment: [ENRICHMENT-PREVIEW.md](ENRICHMENT-PREVIEW.md), ADR 0047. A source-bound MAT-07 percentage explorer is illustrated in an isolated next-version candidate; all blueprints/candidates remain UNREVIEWED/REVIEW_REQUIRED. This preparation supplies no approved blueprint, independent factual approval or reviewed batch. Existing Studio review/export remains authoritative.
+
 Risk MEDIUM, HIGH for ambiguous pedagogy. Luna Max for approved blueprints/components; Terra exceptions. Depends on Phase 8 review and relevant blocks/assets. Flag: `FEATURE_INTERACTIVE_LESSONS` gates presentation, not publication authorization.
 
 Start one small representative draft pilot, then batches of 10–20 lessons after its QA passes. Create new draft versions with stable lesson/question identities and preserved historical references; do not modify original published bytes. Use real independent factual/pedagogical/accessibility/source review; prior evidence may be reused only with reviewed artifact/dependency hashes. Do not infer approval from confidence or historic Admin Direct publication.
