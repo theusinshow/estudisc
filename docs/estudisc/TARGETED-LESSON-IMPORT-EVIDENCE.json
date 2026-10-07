@@ -4,121 +4,121 @@
   "scope": "Targeted append contract/adapters/API/import UI and source/CI compatibility; existing published data/Questions/learner engines preserved",
   "files": [
     {
-      "path": "src/app/lessons/[lessonId]/page.tsx",
-      "sha256": "05b77823a972c33ce8ce5e66e83736f47ec51dfde7afd4910b172a1920fc86b5"
-    },
-    {
-      "path": "src/db/repositories/catalog-repository.ts",
-      "sha256": "afa25b8762b98e4a3868bd40d7c3bbbd2e463b6d814eec8b49b61f7efd31398e"
-    },
-    {
-      "path": "src/db/repositories/memory/catalog.ts",
-      "sha256": "ff819d81da74136699de8483786dfa14fb2a38b905f19466bd579d6efd5eed03"
-    },
-    {
-      "path": "src/db/repositories/memory/store.ts",
-      "sha256": "da195ed8e3c73a409ce315527ffab99e47d7ae4417df38248ee6951aa3ccaea5"
-    },
-    {
-      "path": "src/db/repositories/track-import-repository.ts",
-      "sha256": "a572dca939d3851ec2fc08a1685d591df9f1516ba3aa47fcea0ae106ae91def6"
-    },
-    {
-      "path": "src/features/import/api.ts",
-      "sha256": "85c54e8128ebabba89bad46040d4bebfcd4b190b4feec4abd0294613e3c1e4b2"
-    },
-    {
-      "path": "src/features/import/application/client-response-contracts.ts",
-      "sha256": "b8844ffa00cf16896e00ff3e75409824b8a58d45adec8a0c0e5ca5f5e36602e2"
-    },
-    {
-      "path": "src/features/import/application/track-pack-validation.ts",
-      "sha256": "51ecc2f9371f4adfb3e87ad928cbdc4a94d888d7f74edb7b58e01501e400351c"
-    },
-    {
-      "path": "src/features/import/components/import-result-panel.tsx",
-      "sha256": "8e59874f70332eb773fa3e9f0b072cfb2d42213da9868fec44ceb46c150928c9"
-    },
-    {
-      "path": "src/features/import/components/importer-shared.ts",
-      "sha256": "3f8f2b0300a69003d88748f0d4ef28ac094f7a1873ecd4193a80288c6cf0f297"
-    },
-    {
-      "path": "src/features/import/hooks/use-track-pack-import.ts",
-      "sha256": "bd703079e2fa28577e859b6b85f86b4bd87c849f592d15d9fb5e492c50328df7"
-    },
-    {
-      "path": "src/features/lessons/api.ts",
-      "sha256": "b6fe473b28fbe01798f42298fa1badbaeddfb860d3e64a754b8014400ff0c34c"
-    },
-    {
-      "path": "tests/unit/enrichment-preview.test.tsx",
-      "sha256": "57393f34b8a61ee4c8dde51d771aa0587a174efc1c282899c7ca7b9bfa717def"
-    },
-    {
-      "path": "tools/estudisc-content-studio/blueprint-sources.ts",
-      "sha256": "aa534abe0851e6871d4c8b2e2d48af793900a405de6299dfea71f2810ae2b1b5"
-    },
-    {
-      "path": "tools/estudisc-content-studio/cli.ts",
-      "sha256": "cf1f81c955eaf578b6cf01b91d162e386f625a344bdde767e4a577f8acf3c3c8"
-    },
-    {
       "path": "src/app/api/import/lesson/handler.ts",
-      "sha256": "7b4824b31088266395cf96899f0b3de2c6eac00ed0371543b38a304becaeb85e"
+      "sha256": "7fdc70dd7bb1e296d77dfc77c6ce2f30999f5b7fb3a434e87e3896dee677e5e0"
     },
     {
       "path": "src/app/api/import/lesson/preview/route.ts",
-      "sha256": "54614b5e162133abff4e6e647768458f4f3ae0569ad668b4bf83a16464a36afe"
+      "sha256": "096131175509afa37ec7f7b7d6da0cb2ca1b94cf6fa775327628389ef0bc2b04"
     },
     {
       "path": "src/app/api/import/lesson/route.ts",
-      "sha256": "2bd9e29b4d38ca1a2206dbc847fdb3ed401841d3b29e7d188e140fc2a7ee4750"
+      "sha256": "2f423ab3c3c656a972d2d32b3e4ba21eb42dee57ef92bbd287c4610bc5807afe"
+    },
+    {
+      "path": "src/app/lessons/[lessonId]/page.tsx",
+      "sha256": "a3870831bc6a36457a7c9f0b91b7723316297c899ee6eaa1a1eb595d7789d9f9"
+    },
+    {
+      "path": "src/db/repositories/catalog-repository.ts",
+      "sha256": "5a94d0a9cbd1382883c3498ec4e855b801a1f52c728f0f7637ff6d9b650fc884"
     },
     {
       "path": "src/db/repositories/lesson-version-import.ts",
-      "sha256": "32f3e9260448cb2b3631e3f45a2d9a44ac25855611c5224a045c3f128ce44d9d"
+      "sha256": "1f1085c58f70f4b2f6ea05188052dfd2dba9370ee933f8f4be21296d2d6ddb6d"
+    },
+    {
+      "path": "src/db/repositories/memory/catalog.ts",
+      "sha256": "d09e7c986e62221cf9617c9da89aceac2e494b25816482f54a9c908160d2d564"
+    },
+    {
+      "path": "src/db/repositories/memory/store.ts",
+      "sha256": "55d9a544e57a85afab35ef3b1be91357379edbf3227e3f924e8b3b95b23da7fd"
+    },
+    {
+      "path": "src/db/repositories/track-import-repository.ts",
+      "sha256": "40690b69cc52803af932de3745cb84b928d390f1a1b7ef60a18dadef56da9b91"
+    },
+    {
+      "path": "src/features/import/api.ts",
+      "sha256": "78d0508d00d42c8a268757958c2885696e8931629aa12663acce6011301ce7f1"
+    },
+    {
+      "path": "src/features/import/application/client-response-contracts.ts",
+      "sha256": "1324a45260d339cec79425ed27b49337ffd5604e3656c0edbcb42e6ad9a18592"
     },
     {
       "path": "src/features/import/application/lesson-version-contracts.ts",
-      "sha256": "575554e020a54156be1ddc9a4cf5425cf26e6fb4f139f0ffe2c04079b3e5cc45"
+      "sha256": "5228ea7d9f3a59375aaf0a8f330365fa218ef9bf7ffd670c6ce76e12135908a2"
     },
     {
       "path": "src/features/import/application/lesson-version-policy.ts",
-      "sha256": "f92d1ff7bd638f81d62e8ee226e53f1a4985dc056e5fac805cc261738d21dc10"
+      "sha256": "ed28b8fd4cc208ae5fbfebd4d7aed4b77248ceaacbe238e7359af35f227789e4"
+    },
+    {
+      "path": "src/features/import/application/track-pack-validation.ts",
+      "sha256": "97bbcbba14683e9488fd74b29dfaec7871951b059161b3b64b111fa774ac9146"
+    },
+    {
+      "path": "src/features/import/components/import-result-panel.tsx",
+      "sha256": "ac2ce15c274dcd6b370f4cbfc7ea2c07485163daa912be01c7a0b68ae06236ad"
+    },
+    {
+      "path": "src/features/import/components/importer-shared.ts",
+      "sha256": "1e0daf768a099fc71894afb47c59dcd68167908cb643bd87274f3dd2d6501a57"
+    },
+    {
+      "path": "src/features/import/hooks/use-track-pack-import.ts",
+      "sha256": "ff36d43f9e0f3e9671e14f2af5dee012e7025b1038f3c4ac5e7ac9e3f2ddacdf"
+    },
+    {
+      "path": "src/features/lessons/api.ts",
+      "sha256": "75f7144b53ee682af19dd83bf32d519c00139ec9167bff29f846e9d60eb74fde"
     },
     {
       "path": "tests/e2e/lesson-version-import.spec.ts",
-      "sha256": "0d9e0f4453024e9ce9b17bf01735d04fe834d6032e8239fbd05eca4423b0f225"
+      "sha256": "c0a3f3e81ccc149f618e490eb0ebfd08edf218b960dec088b8460af3a212ff74"
     },
     {
       "path": "tests/fixtures/lesson-version-import.ts",
-      "sha256": "00e6f13b61d60a63c7c1277721be6264193bd0565c2d6ef18d0d51338ce18eeb"
+      "sha256": "cdf23f568d4967d983c745a05e084b558ea361e9989693f440f66da8731922e9"
     },
     {
       "path": "tests/integration/lesson-version-import.test.ts",
-      "sha256": "3551926b9338eeaf9b285877ecda961e6f94b35f58894a7f859357ce2bfeac79"
+      "sha256": "e50713f4ae1869fcb95cbea272cf24713cb7f6333b25d8e60fecafd8ed47af6e"
+    },
+    {
+      "path": "tests/unit/enrichment-preview.test.tsx",
+      "sha256": "e142dfee6e7809ce550415c8dc6684d8194edf1e2859b82431c516a36ba98c71"
     },
     {
       "path": "tests/unit/lesson-version-route.test.ts",
-      "sha256": "1787787526bed1b2426406f1a45a69d8ccc48cc1c23600bc3e9ccdc668437be6"
+      "sha256": "24c6abf47868de67f6d9b3b0f0f9cf8eefa2029c287a637e123160cf97c015a6"
+    },
+    {
+      "path": "tools/estudisc-content-studio/blueprint-sources.ts",
+      "sha256": "32711b4c1c9055671d8309778e2c00c430335130939896c4eedf5e4941349187"
+    },
+    {
+      "path": "tools/estudisc-content-studio/cli.ts",
+      "sha256": "b4aa32cf217d8b605f7da195d34d1221ef47c3b06e75cbfc368c80331fe3b8db"
     },
     {
       "path": "tools/estudisc-content-studio/lesson-version-export.ts",
-      "sha256": "1293437e62373e0199eb0cc8f5d71a732f4179ef55a4f81d6123da6fc3e0ec42"
+      "sha256": "30b58da4e492c05c9216d15911c698899048b124c0d3579d2771f74d19407d52"
     }
   ],
   "baseline": [
     {
       "path": "tests/unit/enrichment-preview.test.tsx",
       "sha256": "f244ff44284617ffd98e3d5ed8674685af5c2bd6929578ac4c3534d2aa5cf6dd",
-      "currentSha256": "57393f34b8a61ee4c8dde51d771aa0587a174efc1c282899c7ca7b9bfa717def",
+      "currentSha256": "e142dfee6e7809ce550415c8dc6684d8194edf1e2859b82431c516a36ba98c71",
       "changed": true
     },
     {
       "path": "tools/estudisc-content-studio/cli.ts",
       "sha256": "32f68b34c38e6221f80256fc69c7aff29d4e7dc7552900512baae7784b343ed7",
-      "currentSha256": "cf1f81c955eaf578b6cf01b91d162e386f625a344bdde767e4a577f8acf3c3c8",
+      "currentSha256": "b4aa32cf217d8b605f7da195d34d1221ef47c3b06e75cbfc368c80331fe3b8db",
       "changed": true
     },
     {
@@ -178,7 +178,7 @@
     {
       "path": "tools/estudisc-content-studio/blueprint-sources.ts",
       "sha256": "c2de671d91a2b28ef847f9b67881fbaac2691c8e4a73db02177a1d13676ecd70",
-      "currentSha256": "aa534abe0851e6871d4c8b2e2d48af793900a405de6299dfea71f2810ae2b1b5",
+      "currentSha256": "32711b4c1c9055671d8309778e2c00c430335130939896c4eedf5e4941349187",
       "changed": true
     },
     {
@@ -507,11 +507,11 @@
     },
     "nextVersion": 5,
     "questionReferences": 12,
-    "packetPath": "tools/estudisc-content-studio/workspace/enrichment-previews/479ef95b3b7c043185efecee0f63eaac855708a48485d31d1d0cde21bc1d777f/lesson-version.pack.json",
+    "packetPath": "tools/estudisc-content-studio/workspace/enrichment-previews/1edcf4e79ca8de8c916f1e4c5bb8a1c1c27d1ac039c13fe735dd5c563d14d8c1/lesson-version.pack.json",
     "packetHash": "95a5462ef090b8bacf61e08c070e8fe1dc14403f99fc77e768bc746e697b57dc"
   },
   "noDDL": true,
   "noOriginalCorpusImport": true,
   "actualProductionActivation": false,
-  "linksChecked": 84
+  "linksChecked": 91
 }

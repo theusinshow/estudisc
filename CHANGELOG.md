@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-07 — MAT-07 v5 activated in production
+
+- Use the real existing authenticated ADMIN session to preview/import one source/hash-bound lesson version and activate through existing Admin Direct under standing owner authorization. One new published lesson release; no fabricated editorial approvals, credential extraction or corpus-wide import.
+- Verify v4 remains published and v5 is live with one percentage explorer, twelve unchanged Question/answer/hint texts, nineteen unique Mathematics lessons and no draft banner. No learner answers submitted or production migration; actual activation receipts are in docs/estudisc/TARGETED-LESSON-RELEASE.json.
+
+## 2026-10-07 — Verified production code release
+
+- Merge PR #3 after all eight protected engineering checks; main CI also passes. Deploy 7bbab0d to the existing Vercel project and verify READY/actual build commit/unchanged vecta-three.vercel.app alias, public login and authentication guard.
+- Targeted import/evolution code is now in production. Actual enriched lesson import/publication remains pending authenticated ADMIN session; no source corpus re-import, production migration, credential extraction or fabricated review. Exact release receipt: docs/estudisc/TARGETED-LESSON-RELEASE.json.
+
 ## 2026-10-07 — Targeted immutable lesson-version import
 
 - Add explicit caderno.lesson.v2 source/Track/module/version/hash and immutable shared Question reference contract (ADR 0049). Extend existing SQL/memory import adapters to append one draft lesson with unchanged source/evaluator/Question/history, no duplicate collection or new schema migration.

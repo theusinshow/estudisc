@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-07",
+  "implementationCommit": "07f958d90c624c79320f11ee55e2fbd3109de571",
+  "pullRequest": "https://github.com/theusinshow/estudisc/pull/3",
+  "mergeCommit": "7bbab0d3eaf7bd97c8653a263b54d81039e34d4b",
+  "mergedAt": "2026-10-07T17:10:16Z",
+  "pullRequestCi": "https://github.com/theusinshow/estudisc/actions/runs/37655818863",
+  "mainCi": "https://github.com/theusinshow/estudisc/actions/runs/37656992679",
+  "requiredChecks": { "lint": "success", "typecheck": "success", "unit": "success", "build": "success", "integration": "success", "content-qa": "success", "pack-validation": "success", "critical-e2e": "success" },
+  "deployment": { "id": "dpl_D5zF6QE7j3hVbVWsgAaQhgeT4vcV", "url": "https://estudisc-ceme119db-theusinshows-projects.vercel.app", "alias": "https://vecta-three.vercel.app", "state": "READY", "buildCommit": "7bbab0d", "deploymentCompletedAt": "2026-10-07T17:11:13.971Z" },
+  "publicSmoke": { "loginStatus": 200, "estudiscTitle": true, "unauthenticatedTargetedPreviewStatus": 401 },
+  "codeDeployed": true,
+  "productionMigrationExecuted": false,
+  "productionLessonImported": true,
+  "productionLessonPublished": true,
+  "activation": {
+    "verifiedAt": "2026-10-07T20:13:48Z",
+    "authentication": "Existing authenticated ADMIN session in the dedicated Orca project browser; no password/cookie/production secret extracted",
+    "preview": { "httpStatus": 200, "status": "ready", "contentHash": "95a5462ef090b8bacf61e08c070e8fe1dc14403f99fc77e768bc746e697b57dc", "lessonCount": 1, "activityCount": 18, "conceptCount": 6 },
+    "import": { "httpStatus": 201, "status": "imported", "lessonId": "MAT-07", "lessonVersion": 5, "importedLessons": 1, "importedActivities": 18, "trackId": "ifsc-2027-mathematics" },
+    "publication": { "httpStatus": 200, "published": true, "lessons": 1, "newlyPublished": 1, "releases": 13, "mode": "admin_direct", "actualAuthenticatedActorRecorded": true, "independentQaRecorded": false },
+    "preservation": { "oldVersion4HttpStatus": 200, "oldVersion4Status": "published", "newVersion5HttpStatus": 200, "newVersion5Status": "published", "questionsEach": 12, "beforeAndAfterQuestionTextHash": "89454a00876aca865ab931e6d4edd3e80862cf255cd2af38af5db2e662f410ad", "mathematicsUniqueLessonLinks": 19, "mathematicsTotalLessonLinksBeforeAndAfter": 20 },
+    "publishedLessonSmoke": { "httpStatus": 200, "title": "Porcentagem", "numericExplorers": 1, "initialOutput": "16% de 275 = 44", "administrativeDraftBanner": false },
+    "learnerAnswersSubmitted": false,
+    "corpusWideImport": false,
+    "productionMigrationExecuted": false
+  },
+  "remaining": "Phase 9 pilot is live. Continue bounded source/goal/component-defined enrichment after this engineering acceptance; preserve original versions/Questions and use existing Admin Direct standing authorization.",
+  "packetSha256": "95a5462ef090b8bacf61e08c070e8fe1dc14403f99fc77e768bc746e697b57dc"
+}
