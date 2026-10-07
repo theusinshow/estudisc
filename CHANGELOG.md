@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-07 — Verified production code release
+
+- Merge PR #3 after all eight protected engineering checks; main CI also passes. Deploy 7bbab0d to the existing Vercel project and verify READY/actual build commit/unchanged vecta-three.vercel.app alias, public login and authentication guard.
+- Targeted import/evolution code is now in production. Actual enriched lesson import/publication remains pending authenticated ADMIN session; no source corpus re-import, production migration, credential extraction or fabricated review. Exact release receipt: docs/estudisc/TARGETED-LESSON-RELEASE.json.
+
 ## 2026-10-07 — Targeted immutable lesson-version import
 
 - Add explicit caderno.lesson.v2 source/Track/module/version/hash and immutable shared Question reference contract (ADR 0049). Extend existing SQL/memory import adapters to append one draft lesson with unchanged source/evaluator/Question/history, no duplicate collection or new schema migration.

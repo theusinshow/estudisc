@@ -1,5 +1,15 @@
 # Estudisc current plan
 
+## Actual rollout — Targeted importer code deployed (2026-10-07)
+
+Implementation 07f958d and accumulated evolution merged through [PR #3](https://github.com/theusinshow/estudisc/pull/3) as 7bbab0d. PR/main eight protected checks all SUCCESS. Existing Vercel project deployed main successfully: dpl_D5zF6QE7j3hVbVWsgAaQhgeT4vcV READY, existing vecta-three.vercel.app alias verified against that deployment, login 200/Estudisc title, unauthenticated targeted preview 401. No feature env changed, production migration or content import/publication. First branch push failed with GitHub Internal Server Error; verified/retry succeeded. Auto-merge is unavailable; ordinary merge occurred only after all checks passed.
+
+- [x] Implement/validate/checkpoint targeted import and existing UI/CLI integration.
+- [x] Protected PR/main checks, ordinary merge and actual production code deployment/alias/auth smoke.
+- [ ] Actual MAT-07 v5 targeted import and existing Admin Direct publication: authenticated ADMIN session needed; readiness requested asynchronously, no reply/verified session yet. No content/editorial review gate or request to inspect secrets.
+
+NEXT ACTION: obtain/confirm the existing authenticated ADMIN session (or user's explicit approved credential access), use the current exported packet SHA 95a5462e… on /api/import/lesson/preview then /api/import/lesson, activate via existing publish_lessons_direct request and record actual owner/mode/audit/preservation. No full corpus import, fake QA or unauthenticated bypass. Deployment/data/secret boundaries remain distinct. [Actual release receipt](docs/estudisc/TARGETED-LESSON-RELEASE.json); local engineering acceptance below remains valid.
+
 ## Implemented increment — Targeted immutable lesson-version import (2026-10-07)
 
 Base `fd692a8`. User's latest continuation authorizes implementation in the current session/model/effort after the technical handoff; no new agents or editorial permission gate. Social Admin Direct standing release authorization remains effective.

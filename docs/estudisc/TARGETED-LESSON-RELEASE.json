@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-07",
+  "implementationCommit": "07f958d90c624c79320f11ee55e2fbd3109de571",
+  "pullRequest": "https://github.com/theusinshow/estudisc/pull/3",
+  "mergeCommit": "7bbab0d3eaf7bd97c8653a263b54d81039e34d4b",
+  "mergedAt": "2026-10-07T17:10:16Z",
+  "pullRequestCi": "https://github.com/theusinshow/estudisc/actions/runs/37655818863",
+  "mainCi": "https://github.com/theusinshow/estudisc/actions/runs/37656992679",
+  "requiredChecks": { "lint": "success", "typecheck": "success", "unit": "success", "build": "success", "integration": "success", "content-qa": "success", "pack-validation": "success", "critical-e2e": "success" },
+  "deployment": { "id": "dpl_D5zF6QE7j3hVbVWsgAaQhgeT4vcV", "url": "https://estudisc-ceme119db-theusinshows-projects.vercel.app", "alias": "https://vecta-three.vercel.app", "state": "READY", "buildCommit": "7bbab0d", "deploymentCompletedAt": "2026-10-07T17:11:13.971Z" },
+  "publicSmoke": { "loginStatus": 200, "estudiscTitle": true, "unauthenticatedTargetedPreviewStatus": 401 },
+  "codeDeployed": true,
+  "productionMigrationExecuted": false,
+  "productionLessonImported": false,
+  "productionLessonPublished": false,
+  "remaining": "Actual source-bound MAT-07 v5 import and Admin Direct activation require a real authenticated ADMIN session. Session readiness was requested; no password/cookie/production secret was read and no editorial approval is required.",
+  "packetSha256": "95a5462ef090b8bacf61e08c070e8fe1dc14403f99fc77e768bc746e697b57dc"
+}
