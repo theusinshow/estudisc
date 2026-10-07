@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { z } from "zod";
 import { AppShell } from "@/components/layout/app-shell";
+import { getFeatureFlags } from "@/lib/feature-flags";
 import { assessmentRepository } from "@/features/assessments/api";
 import { AssessmentPanel } from "@/features/assessments/assessment-panel";
 import { assessmentKindLabel, subjectLabel } from "@/features/assessments/labels";
@@ -13,7 +14,7 @@ export default async function AssessmentPage({params}:{params:Promise<{assessmen
   const {assessmentId}=await params;if(!z.uuid().safeParse(assessmentId).success)notFound();
   const view=await assessmentRepository().view(await getOwnerId(),assessmentId);if(!view)notFound();
   const result=resultSchema.safeParse(view.result);
-  return <AppShell><article className="foundation-panel content-panel assessment-page">
+  return <AppShell mode={view.status === "ACTIVE" && getFeatureFlags().FEATURE_REAL_EXAM ? "focus" : "page"} exit={{ href: "/assessments", label: "Voltar aos simulados" }}><article className="foundation-panel content-panel assessment-page">
     <p className="eyebrow">{assessmentKindLabel[view.kind]??view.kind}{view.mode==="EXAM"?" · modo prova":""}</p>
     <h1>{view.status==="FINALIZED"?"Seu resultado":"Simulado"}</h1>
     {view.status==="ACTIVE"?<AssessmentPanel view={view} serverNow={view.serverNow}/>:result.success?<>

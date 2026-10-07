@@ -42,4 +42,6 @@ Commercial books may be recommended and cited. Do not copy textbook pages, prote
 
 ## Protected official exams
 
+Teaching-asset reuse inventory (ADR 0045) keeps the existing licence states and does not promote produced/approved candidates automatically. Optional `teachingAsset` metadata records version, source/content hash, subjects/Concepts/tags, dimensions/text equivalent, explicit reuse intent, rights evidence and teaching/protected exposure. A reusable selection rechecks current content/metadata/source/policy hashes; licence withdrawal invalidates an old reference even if bytes match. The local index contains metadata only. Every embedded comparison, hotspot or map source must independently retain produced APPROVED_EMBED rights and attribution; protected Question references never become teaching-library embedding.
+
 Exam assets/text follow Estudisc's provenance and reservation policy. Keep protected sources private. Do not embed reserved historical assets, place them in public static assets, copy official stems into research notes/prompts or export them as generated questions. Historical metadata may guide reasoning style without exposing protected content. Author new transfer problems and label their actual provenance.

@@ -1,4 +1,15 @@
-/* / (Hoje) — pulse line and week strip. The base Today layout stays in globals.css. */
+/* / (Hoje) — pulse line and week strip. Base layout lives in application/interactions.css. */
+
+.today-evolution { gap: var(--estudisc-spacing-12); }
+.today-evolution .study-action-card { padding: var(--estudisc-spacing-10); gap: var(--estudisc-spacing-6); }
+.study-action-card > .study-action-cta { display: flex; align-items: center; justify-content: space-between; gap: var(--estudisc-spacing-4); font-weight: 800; }
+.study-action-cta svg { width: 24px; height: 24px; }
+.study-action-metadata { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-6); font-family: var(--estudisc-typography-technical-family), monospace; font-size: 0.875rem; }
+.study-action-card[data-kind="practice"], .study-action-card[data-kind="quick-review"] { background: var(--estudisc-color-surface-lime); }
+.study-action-card[data-kind="simulation"] { background: var(--estudisc-color-surface-sky); }
+.today-attention ul { list-style: none; padding: 0; }
+.today-attention a { display: flex; align-items: center; justify-content: space-between; gap: var(--estudisc-spacing-6); min-height: var(--estudisc-touch-minimum); padding-block: var(--estudisc-spacing-6); }
+.today-attention svg { width: 20px; height: 20px; }
 
 .today-pulse { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-4); margin: var(--estudisc-spacing-10) 0 0; padding: 0; list-style: none; }
 .today-pulse a {

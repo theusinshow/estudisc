@@ -39,6 +39,8 @@ export type PreviewResult =
 export type ImportResult =
   | Readonly<{
       status: "imported";
+      lessonId?: string;
+      lessonVersion?: number;
       packId: string;
       version: number;
       summary: {

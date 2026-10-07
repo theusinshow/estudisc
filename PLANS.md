@@ -1,4 +1,212 @@
-# Estudisc consolidation plan
+# Estudisc current plan
+
+## Implemented increment — Targeted immutable lesson-version import (2026-10-07)
+
+Base `fd692a8`. User's latest continuation authorizes implementation in the current session/model/effort after the technical handoff; no new agents or editorial permission gate. Social Admin Direct standing release authorization remains effective.
+
+Acceptance: explicit additive targeted v2 import contract with source Track/module/lesson/version/hash identity and existing immutable Question references; append one draft lesson version to the existing module without a new Track/module/Question or corpus re-import. Existing receipts/manifests/lesson versions/Attempts/evidence remain intact. Preview/idempotence/conflicts/concurrent imports/rollback and actual authenticated ADMIN attribution; existing semantic validators/renderers/QA publication. Define current vs frozen/historical projections before writes, with SQL and disposable memory parity. No silent schema mutation; ADR and compatibility/migration plan (prefer no DDL), fixtures and focused integration tests. Complete full gates and actual rollout prerequisites before claiming production success.
+
+- [x] Define ADR 0049, contract/policy and versioned manifest projection strategy.
+- [x] Implement shared validation, SQL/memory targeted append and existing read/publication integration.
+- [x] Add authenticated preview/import route and source-bound pilot exporter; verify rollback/idempotence/old-version/session isolation.
+- [x] Local engineering acceptance, docs/evidence and checkpoint preparation.
+- [ ] Protected remote checks/production code deployment; actual authenticated pilot import/activation.
+
+Local acceptance: 361 tests PASS / three optional real-PostgreSQL SKIP; lint/typecheck/build/packs PASS; full serial default E2E 48 PASS / 18 gated SKIP; post-change targeted UI/old-version URL E2E two PASS / zero SKIP. Migration-backed actual Admin Direct tests preserve original rows, fourteen blocks/eighteen Activities/twelve Question records, no editorial QA fabricated. SQL config/evaluator/Concept link verification; rollback trigger/retry/stale/conflict/32-bit/API permission checks PASS. Initial full browser run exposed memory module-ID scope collisions; scoped descriptors fixed and full rerun passed. Mechanical UI detector no findings, actual mobile/desktop result screenshots inspected. Mathematics CI mirror exact bytes/canonical hash; no original source content, bank, engine, auth, schema, dependency or learner-state changes. [Report/evidence](docs/estudisc/TARGETED-LESSON-IMPORT.md).
+
+NEXT ACTION: current model/effort continuation has resolved the prior technical handoff, no further model/editorial approval wait. Publish this validated code through GitHub's eight protected checks and existing Vercel project, preserving alias/flags. Pilot activation uses existing authenticated ADMIN session and Admin Direct standing authorization; session readiness requested, no raw secret read. Keep actual deployment/import/publication receipts separate; source/CI mirror is not a corpus re-import.
+
+## Completed policy increment — Social-project direct release (2026-10-07)
+
+Base `86b85f9`. User explicitly superseded mandatory editorial/human review for authorized launches: the project is social and users review actual usage/content. Record the policy persistently and use existing Admin Direct, never fabricate independent QA. Previous Phase 9 review-only gates are historical and superseded for this authorized release.
+
+Acceptance: durable policy/ADR and current status; technically validated source-bound MAT-07 v5 candidate can proceed through existing direct release/import boundaries with real owner authorization/reason, preserving old versions/Questions/evidence. No parallel approval mode/engine, no re-import or republication of the existing 132 lessons. Complete scoped and full engineering gates; enable/release completed feature paths within this authorization as concrete mechanisms permit. No extra agents/model change or repeated permission to review.
+
+- [x] Record explicit social/community review and standing direct-release authorization in AGENTS/AUTONOMY.
+- [x] Reconcile Phase 9 preview/blueprint policy; candidate includes existing Admin Direct request and standing owner authorization, without fake QA.
+- [x] Verify source/Question preservation and full engineering acceptance of this policy/candidate change.
+- [x] Update docs/status/changelog/evidence/checkpoint preparation and leave precise rollout status.
+- [ ] Implement compatible targeted v2 lesson import and perform actual production activation; this is a technical prerequisite, not another editorial approval.
+
+Current acceptance: focused 42 PASS; full 355 PASS / three optional real-PostgreSQL SKIP; lint/typecheck/build/packs/schema export PASS; fresh serial default E2E 46 PASS / 18 gated SKIP. Candidate CLI writes four new-generation files then zero, ADMIN_DIRECT_AUTHORIZED/UNREVIEWED editorial evidence/independentQaRecorded=false/valid existing direct-publication request. Actual hash checks: four current code/test hashes, 58 unique prior accepted comparisons, twelve unchanged source documents, four media inputs/four source packs and twelve retained Question references. Source/runtime/engine/auth/Pack/dependency/link/diff PASS. No actual production release; [current report](docs/estudisc/SOCIAL-RELEASE.md).
+
+NEXT ACTION — MODEL ESCALATION REQUIRED: Terra defines/implements targeted persisted v2 lesson-version append into the existing collection, resolving existing Questions/Concepts, version/idempotence and transaction boundaries without a full re-import or duplicate Track. [Compact handoff/exact prompt](docs/estudisc/handoffs/2026-10-07-targeted-enrichment-import.md). Then activate through existing Admin Direct under standing user authorization; no Matheus/independent editorial review gate. No model change/additional agent was performed.
+
+## Completed increment — Phase 9 source-bound enrichment review preparation (2026-10-07)
+
+Phase 8 is checkpointed at `f950593`. Continuous local implementation is authorized; all blueprints remain UNREVIEWED. Implement the smallest reviewable authoring increment, preserving the original corpus and existing Studio review/publication authority. No agents/model changes or fabricated independent approval.
+
+Assumptions: an isolated preview proposal may illustrate a pending blueprint; it cannot be selected/imported/promoted as reviewed enrichment. Choose MAT-07 percentage calculation, source worked example E03 (16% of 275 = 44), explicit existing objective and Concept. One numeric explorer uses the existing schema/renderer. New lesson version is a local review candidate only; unchanged blocks, activities, Questions/versions/answers and source caveats remain intact. No new media or canonical evidence.
+
+Acceptance: generic strict recipe/source/blueprint/Question/policy/asset hash binding; one source-anchored added exploratory block and compatible new-version local preview; deterministic untouched-block/reference preservation and output integrity; explicit seven-dimension independent review request, never an approval report or import-ready Pack. Existing Studio remains the only editorial review/export workflow. Corpus/source drift fails closed. Meaningful rejection/preservation/rendering tests, mobile/keyboard/flags QA in disposable fixtures, full final gates, docs/evidence/checkpoint.
+
+- [x] Define ADR 0047 and a generic bounded preview recipe/contract.
+- [x] Implement source-bound local preview preparation/cache and concrete MAT-07 recipe.
+- [x] Verify preservation/rejection/semantic rendering and disposable mobile/keyboard QA.
+- [x] Complete full gates, docs/status/changelog/evidence and checkpoint preparation.
+
+Final engineering acceptance: 42 focused PASS; 355 full tests PASS / 3 optional real-PostgreSQL SKIP; lint/typecheck/build/packs/CLI/schema export PASS; fresh serial default E2E 46 PASS / 18 gated SKIP; focused foundation/interactive-on E2E two PASS / zero SKIP. Native focus/reduced-motion style diagnostics required polling actual computed transitions; schema export required omitting internal undefined mode from the two-field percentage projection. Post-fix focused tests/typecheck/schema export and changed-target lint PASS. Actual repeated CLI writes zero files; source/runtime/engine/dependency/media/hash/link preservation PASS (7 current hashes / 52 actual prior comparisons / 12 source documents / four media inputs / four source packs; 14 source blocks, 18 activities and 12 Question records retained). [Pilot report](docs/estudisc/ENRICHMENT-PREVIEW.md).
+
+NEXT ACTION: checkpoint the accepted review-preparation increment. Integrate the exact preview/blueprint/source/reference hashes into the existing Studio job/independent review workflow before reviewed draft promotion or batches. No Studio job/reviewer claim/approval was fabricated. Published originals remain selected; source/pedagogy exceptions are routed individually, and production import/publication remains separately authorized.
+
+## Completed increment — Phase 8 local Lesson Blueprint pipeline (2026-10-07)
+
+Phase 7 is checkpointed at `a70b98d`. Continue with the existing Studio catalog, Pack validator, canonical hashes and metadata-only teaching assets. No additional agents or model changes.
+
+Assumptions: use the four local import artifacts identified by the prior production audit, pin their actual bytes/canonical hashes and lesson versions; local `draft` status is preserved and historical publication evidence is clearly distinguished from a fresh production read. Extract lesson teaching text locally without exporting payloads, images, Question stems/answers or reserved assets. Missing objectives remain missing, proposed archetypes/blocks never imply pedagogical approval. All generated blueprints start unreviewed.
+
+Acceptance: 132 unique version-bound summaries/blueprints, deterministic classification/clusters/confidence reasons/component and asset needs; aggregate/exception report; source, dependency, policy and asset hashes invalidate stale artifacts; unchanged inputs skip without timestamp churn; corrupted artifacts regenerate. Outputs stay in ignored Studio sidecars, never rewrite/import/publish content. Focused tests plus full lint/typecheck/test/build/packs/E2E gate, documentation and checkpoint.
+
+- [x] Define ADR 0046, source manifest and compact blueprint contract/rules.
+- [x] Implement local extraction/classification/report/cache through Studio CLI.
+- [x] Verify all 132 versions, deterministic totals, source/asset/policy invalidation and confidentiality.
+- [x] Complete full acceptance, documentation/status/changelog/evidence and checkpoint preparation.
+
+Final local acceptance: 38 focused tests PASS; 351 full tests PASS / 3 optional real-PostgreSQL SKIP; lint/typecheck/build/packs/CLI/schema export PASS; fresh serial default E2E 44 PASS / 18 gated SKIP. Actual CLI repeat generated=0/skipped=132; 113 missing objectives, 117 review findings, zero reusable assets. Initial typecheck caught a fixture using nonexistent `requiredLevel`; corrected to the existing `strength` contract before the green checks. Runtime, corpus, assets, sources, engines and dependencies unchanged; exact commands/evidence: [blueprint report](docs/estudisc/LESSON-BLUEPRINTS.md).
+
+NEXT ACTION: checkpoint this accepted proposal pipeline, then review missing source objectives and exact blueprints for a bounded Phase 9 draft pilot. All proposals remain UNREVIEWED; no independent approval or publication is fabricated. Route only concrete unresolved pedagogical exceptions to Terra; no stronger-model bulk lesson dump.
+
+## Completed increment — Phase 7 teaching-asset metadata (2026-10-07)
+
+Phase 6 core is checkpointed at `57be5e6`; user's latest “continue” preserves continuous local authorization/model/effort and no additional agents. Extend existing Studio media contracts/validation and safe figure boundary; private official Question storage/exposure APIs remain authoritative and unchanged.
+
+Acceptance: version/hash-pinned type/title/subject/Concept/tag/source/license/alt/dimension/reuse metadata; actual declared/reviewed rights govern embedding/reuse, unknown/link-only/review/rejected stay ineligible; protected/reserved Question assets never become teaching-library bytes. Optional metadata preserves existing media artifact normalization/hashes. Registry inventory/export is local and metadata-only, no automatic approval/publication/asset generation. New visual variants must pass existing rights/attribution/provenance validation for every embedded source, including comparison second images and hotspot/map. Meaningful tests, exact source hashes, full final gate; admin read-only search only under existing flag/guard when its data source is concrete.
+
+- [x] Inventory existing sources/media/rights and establish ADR/compatible metadata/reuse contract.
+- [x] Extend media validation and local version/hash index/search with explicit eligibility/reasons and protected-asset exclusions.
+- [x] Integrate a concrete local authoring consumer (assets/search/index/pinned selection); no storage/auth/CSP change or metadata/byte publication. Admin library UI remains a later CONTENT_HEALTH consumer, not claimed implemented.
+- [x] Focused and full validation, docs/status/changelog/evidence and local checkpoint preparation.
+
+Actual local inventory: 19 current Studio jobs, four produced image candidates, two APPROVED_EMBED and two REQUIRES_REVIEW, zero explicitly reusable/interactive-ready; no status changed. ADR 0045 and optional metadata preserve old artifact parsing. CLI assets/assets-index and hash-pinned source revalidation are implemented; visual rights checks cover each primary/secondary/hotspot/map source. Focused tests 36 PASS (including real corpus compatibility). Metadata index is ignored workspace output with no bytes. Full final checks/docs/evidence are next; the stronger storage/provider boundary was not crossed.
+
+Final gate accepted locally: lint/typecheck/build/packs PASS; 346 tests PASS / 3 optional real-PostgreSQL SKIP; default E2E 44 PASS / 18 gated SKIP; adaptive/resume/interactive on 12 PASS / 2 off-case SKIP; foundation/routine/resume/interactive on 18 PASS / 2 off-case SKIP. CLI inventory/search/index and corpus/hash/link/diff PASS; 8 current code hashes, 39 actual prior comparisons, 12 unchanged sources and four actual media-input hashes. Exact commands/limits: [teaching-assets report](docs/estudisc/TEACHING-ASSETS.md).
+
+NEXT ACTION: checkpoint this accepted metadata/authoring increment, then Phase 8 local blueprint extraction/summaries/clustering. Admin asset UI and production distribution are later consumers; no automatic approval, public-byte transfer or corpus publication.
+
+## Completed increment — Phase 6 interactive blocks (2026-10-06–07)
+
+Phase 5 is checkpointed at `2259874`. The user's “pode seguir” authorizes this next local increment with current model/effort and no additional agents. Extend existing block dispatcher, Activity registry and scoped resume; preserve canonical Attempts/evidence/help weighting and immutable published content.
+
+Assumptions: exploratory responses/parameters/help are mutable display state, never graded Attempts or mastery; feedback is derived from approved content after reload, never trusted from snapshot JSON. Old resume snapshots and mutation hashes remain compatible. Existing matching/selects, sorting/buttons and safe embedded figures are retained; no drag dependency. New figure/comparison/hotspot/map capabilities require explicit compatible contracts and text fallback; MapLibre/dependency adoption waits for an actual justified approved blueprint and exposure boundary.
+
+- [x] ADR/contracts/inventory and meaningful compatibility, membership and value fixtures.
+- [x] Typed scoped state for existing prediction/educational/numeric/atom blocks; response/help reload, local feedback and no evidence.
+- [x] Complete supported visual block gaps through the existing dispatcher; safe figures, accessible timeline/comparison/hotspot/slider and documented map pilot boundary.
+- [x] Focused tests per increment; full lint/typecheck/test/build/packs/off/on E2E, mobile/keyboard/reduced-motion/visual and historical hash/source checks.
+- [x] Update docs/status/changelog and local checkpoint preparation; leave exact next action for Phase 7.
+
+Focused contracts/UI/SQL-memory/corpus acceptance PASS; full tests 343 PASS / 3 optional real-PostgreSQL SKIP; default E2E 44 PASS / 18 gated SKIP; combined adaptive/resume/interactive on 12 PASS / 2 off-case SKIP. Final foundation-on/build/typecheck/hash/source acceptance is in progress. Reports/contracts: [core interactive blocks](docs/estudisc/CORE-INTERACTIVE-BLOCKS.md), ADR 0044. No new dependency, migration or published-content change. The geographic MapLibre engine is explicitly deferred to approved blueprint/provider demand; the current map pilot is an authored image/list.
+
+Final gate accepted locally (2026-10-07): lint/typecheck/build/packs and generated geometry check PASS; 343 tests PASS / 3 optional real-PostgreSQL SKIP; default E2E 44 PASS / 18 gated SKIP; combined adaptive/resume/interactive on 12 PASS / 2 off-case SKIP; foundation/routine/resume/interactive on 18 PASS / 2 off-case SKIP. Actual pixel/clipping/zoom, reduced-motion, corpus/hash/link/diff checks PASS. Evidence pins 39 current hashes against 30 actual prior inputs and 12 unchanged sources; CSP, engines, dependencies, migrations and published content remain unchanged.
+
+NEXT ACTION: checkpoint this accepted core increment, then Phase 7 licensed teaching-asset metadata/rights/reuse inventory through the existing asset/Studio boundaries. MapLibre/geographic engine remains explicitly blueprint/provider-dependent. Preserve publication and external/production authorization.
+
+## Completed increment — Phase 5 lesson resume (2026-10-06)
+
+Phase 4 gate passed and is checkpointed at `4557014`. Continue the approved roadmap with owner/version/context-pinned resume through the existing lesson stepper and shared Question UI. No new renderer, evidence rule, Pack schema, published-content transformation or production operation.
+
+Acceptance: compatible additive user-state snapshot; server validates published frozen lesson and ACTIVE owned session membership; step IDs and unsent responses are bounded/validated, never authoritative attempts or grades; independent contexts/versions cannot overwrite one another; persisted answers and assistance remain authoritative on reload. Revision conflicts preserve newer state, stale/removed step IDs recover visibly, elapsed active time is an estimate separate from wall-clock, and accessibility/mobile/keyboard behavior remains. Feature off retains prior readers and routes without writes.
+
+- [x] Record ADR/contract and targeted domain fixtures before persistence/UI.
+- [x] Extend SQL/memory user state and scoped API with revision/owner/version guards.
+- [x] Integrate existing LessonSteps/Stepper/Question registry with explicit save/error/recovery.
+- [x] Focused then full acceptance, docs/hash/source checks and local checkpoint preparation.
+
+Focused acceptance: 8 resume domain/SQL/memory/lifecycle tests PASS; combined adaptive/golden/resume fixtures 20 PASS before the lifecycle additions. Adaptive/resume on E2E 10 PASS. Version-draft scope recovery, idle/non-repeating save and navigation flush guards are covered. Full gates in progress; see [resume report](docs/estudisc/LESSON-RESUME.md). Additive migration 0020 has run only through disposable SQL fixtures; published corpus and canonical grading remain unchanged.
+
+Final gate: lint/typecheck/build/packs PASS; 329 tests PASS / 3 optional real-PostgreSQL SKIP; default E2E 42 PASS / 16 gated SKIP; foundation/routine/resume on 16 PASS; adaptive/resume on 10 PASS. UI/detector/hash/source/link/diff PASS. 30 current hashes and 28 actual prior comparisons; prior migrations and published corpus unchanged. [Exact commands and limits](docs/estudisc/LESSON-RESUME.md).
+
+NEXT ACTION: checkpoint this accepted increment, then Phase 6 typed interactive blocks/contracts and their scoped resume/evaluation/touch/keyboard fixtures in the existing registries. Do not apply 0020 to production or transform existing snapshots/content without authorization.
+
+## Completed task — Phase 4 adaptive sessions (2026-10-06)
+
+The user's latest “pode seguir” authorizes the next Adaptive Session increment in this session; no repeat model-choice question, automatic switch or additional agents. Extend the existing planner, shared Question delivery and session repositories. Preserve production/external boundaries.
+
+Acceptance: default-off FEATURE_ADAPTIVE_SESSION exposes 10/20/30/45; legacy budgets/readers remain. One injected clock; deterministic candidate order/reasons; due review, active mistakes, weaknesses, prerequisite readiness, curriculum importance and saved routine time constraints; completed independent answers are not silently repeated; short budgets deliver questions rather than claiming a whole lesson fits. Actual publication/QA/source caveats remain visible. Version/track/activity/question snapshots are owner-bound and immutable in ACTIVE sessions, including cross-track composition. Factual summary distinguishes estimated, wall-clock and recorded evidence; no new mastery/review/scoring weights or completion-based evidence.
+
+- [x] ADR 0042 and compatible session/candidate contracts; pure selection/readiness/estimate fixtures.
+- [x] Fixed-clock SQL/memory candidate adapters and existing planner integration; guard frozen version/track membership.
+- [x] Adaptive controls and Question/lesson delivery through existing registries; factual summary/reasons and recovery.
+- [x] Owner/exposure/reservation/annulled/short-budget/idempotence/parity/resume tests; required final lint/typecheck/test/build/packs/off/on E2E and UI QA.
+- [x] Accepted locally; checkpoint and resumable next action without production writes or corpus republication.
+
+Focused acceptance: 18 tests PASS for SQL/memory availability, EXAM blocking, independent submit/idempotence, cross-track membership, frozen old versions, budget bounds, readiness/checkpoints and deterministic ordering. Adaptive browser acceptance PASS in desktop/mobile, 320/360/390/430/1280, keyboard/Focus/reload/factual completion and 44px controls. Final full checks are in progress; see [phase report](docs/estudisc/ADAPTIVE-SESSIONS.md). The first browser run caught an incorrect test CSS locator; the existing renderer locator was corrected. One bounded visual correction fixed wrapping and four-option layout.
+
+Final gate: lint/typecheck/build/packs PASS; 319 tests PASS / 3 optional real-PostgreSQL SKIP; default E2E 40 PASS / 12 gated SKIP; foundation/routine on 10 PASS; adaptive on 4 PASS. UI/keyboard/hash/source/link/diff checks PASS. Exact commands and risks: [phase report](docs/estudisc/ADAPTIVE-SESSIONS.md).
+
+NEXT ACTION: checkpoint Phase 4, then continue Phase 5 owner/version/context-bound lesson resume inside existing runtime. No production rollout or corpus publication.
+
+## Completed task — Phase 3 weekly routine (2026-10-06)
+
+The user's “pode seguir” answers the pending choice: authorize this session to resolve and implement the Phase 3 contract. This is an explicit exception to the earlier Terra handoff for this increment; no model switch or additional agent. Local implementation remains authorized; production/external operations remain separate.
+
+Assumptions/acceptance: versioned deterministic time allocation inside the existing study-session/planner feature; owner/timezone-scoped seven-day routine, modes/priorities/manual allocations, dated overrides/focus, review target and simulation time reservation; immutable ACTIVE composition; no missed-day task debt. Preview/apply is explicit, owner/revision/dependency/expiry checked and idempotent. Publication is not readiness certification; existing question/prerequisite/exposure selection rules remain. Additive tables only, no Pack/content/evidence migration.
+
+- [x] ADR 0041, validated contracts, pure calendar/allocation policy and meaningful golden/edge tests.
+- [x] SQL + memory plan/preview persistence, owner isolation/stale preview/idempotence and disposable SQL validation.
+- [x] Owner-scoped API and routine onboarding/week/editor UI with default-off rollout, loading/empty/error recovery.
+- [x] Integrate routine time constraints with existing session planning/start without changing priority weights/mastery; preserve ACTIVE and prepared state on failed replan.
+- [x] Complete final default/on confirmation and documentation/hash/diff acceptance; 38 default and 10 flagged E2E pass.
+- [x] Prepare the accepted Phase 3 checkpoint and resumable Adaptive Session next increment; model-policy and production boundaries preserved.
+
+Current gate evidence: lint/typecheck/build/packs PASS; 299 tests PASS / 3 optional real-PostgreSQL SKIP; flagged E2E 10 PASS / no skips or failures; browser 320/360/390/430/1280, keyboard/preview/apply/reload/day-off/server-budget QA PASS. The first E2E attempt caught a test label locator mismatch; semantic combobox locator fixed it. One later child launch returned exit 1 without a mobile result; direct mobile passed, runner diagnostics were improved, and final combined on run passed. Exact commands/limits: [Phase 3 report](docs/estudisc/WEEKLY-ROUTINE.md).
+
+Phase 3 gate: accepted locally. Default final E2E 38 PASS / 10 intentional gated SKIP; on final E2E 10 PASS / no skips or failures; remaining checks as above. Evidence pins 41 implementation/test hashes and compares the actual 17 prior handoff inputs; previous SQL and 12 source documents unchanged.
+
+NEXT ACTION: Phase 3 is checkpointed and locally accepted. Continue the versioned Adaptive Session contract (10/20/30/45, explicit candidate actions, one clock and readiness reasons) inside existing core modules. Model choice for Phase 3 is resolved; no repeat permission is needed for its fixes. Do not execute migration 0019 against production, deploy or republish content without explicit authorization.
+
+## Completed task — product context refresh and continuation (2026-10-06)
+
+User authorized updating the stale Impeccable context and continuing local implementation. Update existing PRODUCT.md to the current schema using confirmed repository/user facts; remove deprecated Register and add platform, positioning, operating context, constraints, evidence and product principles. Preserve canonical DS authority and do not invent claims or visual direction.
+
+- [x] Refresh PRODUCT.md and recognized DESIGN.md sections; verify confirmed source pointers and current Impeccable schema (`doctor findings=[]`).
+- [x] User authorized this session to resolve the Phase 3 contract and continue; no automatic model switch.
+- [x] Complete context schema/link/hash/diff checks, lint, status and changelog. No runtime/content/dependency changes; prior application acceptance remains valid evidence, not a fresh run claim.
+- [ ] Continue dependent Phase 3 work after the asynchronous model-routing choice; no new algorithm has been implemented while awaiting the answer.
+
+NEXT ACTION: await the already-presented model-routing choice, then continue the Phase 3 contract in the authorized session or preserve the Terra handoff as selected. Context refresh is complete; exact commands/results: [refresh report](docs/estudisc/PRODUCT-CONTEXT-REFRESH.md). No rediscovery or production write.
+
+## Completed increment — authorized evolution foundation (2026-10-06)
+
+The user authorized implementation after the completed audit. Continue local increments automatically; external/production writes and published content changes remain separate boundaries. No additional agents or automatic model switch.
+
+Current increment: Phase 0 compatibility/navigation decision and validated flags; Phase 1 shell/Focus mode, accessible foundation primitives and registry; Phase 2 reusable Today presentation using existing recommendations. Weekly scheduling/readiness and evidence policy decisions remain Terra handoff work.
+
+Assumptions: preserve Design System 4.0.0 values and current engines; new flags default off; `/plan` initially exposes only existing session planning/history, not invented weekly availability; old navigation remains usable with flags off; existing lesson steps are runtime projections, not a new Pack schema. Focus does not abandon or complete a session. Recommendation ordering is unchanged.
+
+Acceptance: flag off/on and invalid configuration tests; real five-destination navigation with secondary actions in the top bar; Focus hides global nav but provides explicit exit; native dialog/sheet focus/escape/return and keyboard tabs/segmented controls; truthful Today counts/durations/reasons; 320/360/390/430px checks, reduced motion, 44px targets; full configured phase gates and immutable-content checks.
+
+- [x] Record ADR 0040 and canonical screen/navigation/compatibility rules.
+- [x] Implement validated flags and compatible shell/Focus/navigation; focused tests.
+- [x] Add native Dialog/Sheet, keyboard Tabs and component registry; unused wrappers deferred to real consumers.
+- [x] Extract Today presentation without domain-policy changes; routine-dependent states remain Phase 3 work.
+- [x] Complete mobile/accessibility/browser QA, lint/typecheck/test/build/full off/on E2E and documentation.
+- [x] Reach the Terra routine/mode/override/rebalance/preview domain-contract boundary and save a compact hash-pinned handoff.
+
+Current increment acceptance: PASS. Lint/typecheck/build/pack validation PASS; tests 275 PASS / 3 optional PostgreSQL SKIP; default E2E 38 PASS / 4 intentional flagged SKIP; separate on E2E 4 PASS / no failures; browser 320/360/390/430/1280, keyboard/modal/Focus/reduced-motion QA PASS. Exact commands: [foundation report](docs/estudisc/EVOLUTION-FOUNDATION.md).
+
+NEXT ACTION — MODEL ESCALATION REQUIRED: Terra must define Phase 3 routine timezone/modes/allocations/overrides, missed-day no-debt recomputation and preview/apply revision semantics, including actual readiness facts. [Compact handoff and exact next prompt](docs/estudisc/handoffs/2026-10-06-planner-routine-terra.md), with 17 input hashes. Local implementation remains authorized after that decision; no repeated approval needed for routine work. This session cannot switch models. Production/external writes remain unapproved.
+
+## Completed task — architecture pack audit (2026-10-06)
+
+User scope for this execution: read `estudisc_codex_pack.zip`, audit the existing implementation, write `docs/estudisc/IMPLEMENTATION-GAP-ANALYSIS.md` and `docs/estudisc/IMPLEMENTATION-PLAN.md`, and route future phases by model. Do not implement the large phases or perform external/production writes.
+
+Assumptions: the pack is an evolution proposal, existing accepted ADRs and immutable published content remain constraints, and example phase lists must be reconciled with actual code. The active session cannot switch its own model; requested future routing is Luna Max → Terra when justified → Sol High exceptionally. No additional agents.
+
+Acceptance: every pack area has code/test evidence or an explicit unverified finding; phases have dependencies, acceptance gates and concrete model-escalation reasons; source provenance and unresolved conflicts are visible; documentation validation and configured final checks have actual results recorded.
+
+- [x] Preserve and read all eleven source-pack documents and manifest; inventory current architecture and relevant ADRs.
+- [x] Audit each requested capability against targeted implementation and tests.
+- [x] Write gap analysis and phased implementation/model-routing plan.
+- [x] Complete documentation hash/link/diff checks and configured final application checks; record results and resumable next action.
+
+Verification: frozen install PASS after initial `ERR_PNPM_ABORTED_REMOVE_MODULES_DIR_NO_TTY`; lint/typecheck/build/pack validation PASS; tests 262 PASS / 3 optional PostgreSQL SKIP; full E2E 38 PASS / 0 FAIL (19 per project). Exact commands and limitations: [audit verification](docs/estudisc/AUDIT-VERIFICATION.md). No runtime implementation, production operation or model switch.
+
+Audit acceptance: complete. Document checks PASS: 94 source/implementation hashes, 12 byte-identical source files, 18 local links, all 16 phases and documentation-only diff; `git diff --check` PASS.
+
+NEXT ACTION: this first-execution audit is complete. Future implementation must be separately authorized and starts with the remaining Phase 0 navigation/flag/compatibility reconciliation using Luna Max. Read [architecture](docs/estudisc/PRODUCT_ARCHITECTURE.md), [gaps](docs/estudisc/IMPLEMENTATION-GAP-ANALYSIS.md), and [plan/model routing](docs/estudisc/IMPLEMENTATION-PLAN.md); use Terra for concrete domain decisions, Sol High exceptionally. Large phases and corpus enrichment remain pending.
+
+## Historical consolidation — complete
 
 Authorized scope: rename, stabilize and consolidate. Preserve 132 published lessons, 1,144 Questions, stable IDs, immutable content, migration hashes and learner state. No re-import, republication or production reset.
 

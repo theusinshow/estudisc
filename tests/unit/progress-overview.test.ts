@@ -1,10 +1,16 @@
 import { describe, expect, it } from "vitest";
 
 import type { ConceptEvidenceRecord } from "@/db/repositories/concept-evidence-repository";
-import { buildProgressOverview } from "@/features/progress/overview";
+import { buildProgressOverview, studyActivityDates } from "@/features/progress/overview";
 
 // 2026-10-01 is a Thursday; 15:00Z is midday in São Paulo.
 const now = new Date("2026-10-01T15:00:00Z");
+
+it("does not count routine configuration as a study day", () => {
+  const eventDates = studyActivityDates([{ type: "study_plan_applied", occurredAt: now }]);
+  expect(buildProgressOverview({ concepts: [], evidence: [], eventDates, now }).activeDaysThisWeek).toBe(0);
+  expect(studyActivityDates([{ type: "study_plan_applied", occurredAt: now }, { type: "review_reflection", occurredAt: now }])).toEqual([now]);
+});
 
 const concepts = [
   { stableId: "fractions", title: "Frações", areaTitles: ["Matemática"] },

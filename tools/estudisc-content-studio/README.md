@@ -1,5 +1,7 @@
 # Estudisc Content Studio
 
+Teaching-asset metadata inventory (ADR 0045): `pnpm estudisc-content assets` lists current candidates without bytes; filter with `--query`, `--subject`, `--concept`, `--type`, `--reuse-only`. `assets-index` writes a metadata-only `.teaching-assets-index.json` inside the existing ignored workspace. It does not approve rights, alter jobs, publish or transfer protected Question assets. Version/content/metadata/source/policy hashes are checked again by `resolveTeachingAsset` before local authoring reuse. Optional `teachingAsset` metadata must record actual rights evidence, teaching exposure and explicit reusable/interactive-ready intent; legacy candidates are not promoted automatically.
+
 Content Studio is Estudisc's local, versioned editorial workspace. Four Maestri terminals research, author, review and coordinate lessons through files. The repository supplies contracts, a CLI, deterministic validation and an export adapter. It calls no model API and needs no API key.
 
 Generation lives outside the student runtime. The Studio imports Estudisc's existing Zod contracts; it does not introduce another Lesson format, renderer, Question engine or mastery policy. A successful export is a **draft Pack v2**, never a published lesson.
@@ -33,6 +35,14 @@ Maestri terminals
 Reviewer `APPROVED` is an editorial recommendation. It stops at `HUMAN_REVIEW_REQUIRED`. Only an explicit human action records local export approval; this does not replace Estudisc publication QA. CLI commands never import, publish, deploy or write a database.
 
 ## Commands
+
+`pnpm estudisc-content enrichment-export --request tools/estudisc-content-studio/recipes/percentage-calculation.v1.json` writes a source-bound caderno.lesson.v2 packet to the current ignored candidate generation. Existing import UI previews/appends one draft version into the existing collection; actual activation uses the authenticated Admin Direct request under standing authorization. No new Track/module/Question or corpus-wide re-import. See [targeted importer](../../docs/estudisc/TARGETED-LESSON-IMPORT.md).
+
+Current release rule: [ADR 0048](../../docs/ADR/0048-social-project-direct-release.md). Estudisc is a social project: launch technically validated authorized features/content via existing Admin Direct and collect user feedback, without requiring Matheus/independent editorial approval. Current enrichment-preview outputs ADMIN_DIRECT_AUTHORIZED and release-request.json with real standing authorization, no fabricated QA. Previous review-only descriptions are historical. Existing published versions remain immutable; compatible targeted import and actual deployment/publication must still execute successfully.
+
+`pnpm estudisc-content enrichment-preview --request tools/estudisc-content-studio/recipes/percentage-calculation.v1.json` prepares MAT-07 v5 as an isolated REVIEW_REQUIRED candidate: one existing percentage explorer after authored example E03, unchanged original lesson/Activity content and twelve hash-bound shared Question references. The request lists all seven existing Studio review dimensions and source caveats. It creates no QA approval or import-ready Pack and does not change role/state/publication authority. See [preview policy](ENRICHMENT-PREVIEW-POLICY.md) and [pilot report](../../docs/estudisc/ENRICHMENT-PREVIEW.md). Only ignored default workspace or `.local/` outputs are permitted.
+
+`pnpm estudisc-content blueprints` extracts the 132 historically audited local lesson versions into ignored, version/hash-bound UNREVIEWED proposals and a compact aggregate/exception report. No full lesson payloads, Question content or image bytes are exported; no source is rewritten/imported/published. Unchanged complete inputs skip; source, curriculum, policy or current asset-rights changes invalidate. See [BLUEPRINT-POLICY.md](BLUEPRINT-POLICY.md) and [local pipeline report](../../docs/estudisc/LESSON-BLUEPRINTS.md). Missing objectives require human source review; confidence never supplies approval. Use only the default ignored workspace or `.local/`.
 
 | Command | Purpose |
 | --- | --- |

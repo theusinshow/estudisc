@@ -1,17 +1,31 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { getTodayDashboard } from "@/features/today/get-today-dashboard";
 import { buildRecommendations } from "@/features/recommendations/recommendation-rules";
 
 const mocks = vi.hoisted(() => ({ inputs: vi.fn(), progress: vi.fn(), sessions: vi.fn(), lessons: vi.fn() }));
+const routine = vi.hoisted(() => vi.fn());
 vi.mock("@/features/auth/owner", () => ({ getOwnerProfile: async () => ({ ownerId: "owner", role: "STUDENT" }) }));
 vi.mock("@/db/connection", () => ({ getDatabaseUrl: () => "memory://local" }));
 vi.mock("@/features/recommendations/api", () => ({ getRecommendationInputs: mocks.inputs }));
 vi.mock("@/features/progress/api", () => ({ getProgressOverview: mocks.progress }));
-vi.mock("@/features/study-sessions/api", () => ({ studySessionRepository: () => ({ list: mocks.sessions }) }));
+vi.mock("@/features/study-sessions/api", () => ({ studySessionRepository: () => ({ list: mocks.sessions, planningFacts: mocks.sessions }) }));
+vi.mock("@/features/study-sessions/routine-api", () => ({ studyPlanRepository: () => ({ getState: routine }) }));
 vi.mock("@/features/recommendations/lesson-candidates", () => ({ listRecommendationLessons: mocks.lessons }));
 
 describe("Today dashboard coordinator", () => {
   beforeEach(() => vi.clearAllMocks());
+  afterEach(() => vi.unstubAllEnvs());
+  it("shares uncapped recent session and subject facts with the routine rather than fetching them twice", async () => {
+    vi.stubEnv("FEATURE_STUDY_PLANNER", "true");
+    mocks.inputs.mockResolvedValue({ dueReviews: [], mistakes: [], tracks: [], projects: [] });
+    mocks.progress.mockResolvedValue({ ladder: [], cooling: [], week: [] });
+    mocks.sessions.mockResolvedValue([]); mocks.lessons.mockResolvedValue([]);
+    routine.mockResolvedValue({ routine: null, subjects: [], week: null });
+    const now = new Date("2026-10-06T15:00:00Z");
+    await getTodayDashboard(now);
+    expect(routine).toHaveBeenCalledWith("owner", now, { subjectCodes: [], sessions: [] });
+    for (const reader of Object.values(mocks)) expect(reader).toHaveBeenCalledTimes(1);
+  });
   it("loads shared recommendation facts once and does not create sessions or mutate progress", async () => {
     mocks.inputs.mockResolvedValue({ dueReviews: [], mistakes: [], tracks: [], projects: [] });
     mocks.progress.mockResolvedValue({ ladder: [], cooling: [], week: [] });

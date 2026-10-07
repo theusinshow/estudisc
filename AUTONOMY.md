@@ -4,6 +4,8 @@ This file defines how Codex and other implementation agents may work with high a
 
 ## Operating mode
 
+Social-project release policy (user instruction, 2026-10-07): user/community feedback replaces mandatory human/independent editorial review before release of authorized features and enrichment. Do not stop for Matheus to review each feature. Complete engineering validation and release directly within scope using actual Admin Direct authorization records, never invented Reviewer/QA approvals. The instruction supplies standing authorization for those releases/publications; unrelated external writes, purchases, real-secret handling, destructive data operations and scope expansion keep their existing boundaries.
+
 Default mode: **HIGH AUTONOMY WITH REPOSITORY GUARDRAILS**.
 
 Once the user authorizes a build, change, fix, or roadmap execution task, the lead agent must continue through the in-scope work without asking for routine confirmation at every step.
@@ -29,7 +31,7 @@ The lead agent may perform these actions without asking again when they are nece
 
 Stop and ask before:
 
-- pushing commits, opening or merging pull requests, deploying, publishing packages, or making any external write;
+- pushing commits, opening or merging pull requests, deploying, publishing packages, or making an external write not already covered by explicit user authorization (including the social-project release policy above);
 - purchasing services or creating paid resources;
 - requesting, reading, transmitting, or changing real credentials or production secrets;
 - destructive or irreversible actions involving non-disposable data;

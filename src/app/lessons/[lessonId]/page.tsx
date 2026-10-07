@@ -1,7 +1,9 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { z } from "zod";
 
 import { AppShell } from "@/components/layout/app-shell";
+import { getFeatureFlags } from "@/lib/feature-flags";
 import { ActivityList } from "@/features/activities/registry";
 import { getLesson } from "@/features/lessons/api";
 import { LessonBlockList } from "@/features/lessons/blocks";
@@ -9,14 +11,19 @@ import { getLessonProgress } from "@/features/progress/api";
 import { LiveLessonProgress } from "@/features/progress/live-progress-summary";
 import { LessonSteps } from "@/features/lessons/lesson-steps";
 import { getTrack } from "@/features/tracks/api";
+import { getLessonResume } from "@/features/lessons/resume-api";
 
 type LessonPageProps = Readonly<{
   params: Promise<{ lessonId: string }>;
+  searchParams?: Promise<{ version?: string | string[] }>;
 }>;
 
-export default async function LessonPage({ params }: LessonPageProps) {
+export default async function LessonPage({ params, searchParams }: LessonPageProps) {
   const { lessonId } = await params;
-  const lesson = await getLesson(lessonId);
+  const query = await searchParams;
+  const requestedVersion = query?.version === undefined ? undefined : typeof query.version === "string" ? z.coerce.number().int().positive().max(2147483647).safeParse(query.version) : { success: false as const };
+  if (requestedVersion && !requestedVersion.success) notFound();
+  const lesson = await getLesson(lessonId, requestedVersion?.success ? requestedVersion.data : undefined);
 
   if (!lesson) {
     notFound();
@@ -33,18 +40,20 @@ export default async function LessonPage({ params }: LessonPageProps) {
   };
   // Study lessons get the one-idea-per-screen flow; programming lessons keep the Lab layout.
   const stepped = !lesson.activities.some(activity => activity.type === "code" || activity.type === "debug");
+  const resumeScope = stepped && getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? lesson.resumeScope : undefined;
+  const resumeSnapshot = await getLessonResume(resumeScope);
 
   return (
-    <AppShell>
+    <AppShell mode={getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? "focus" : "page"} exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha" }}>
       <article className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="lesson-title">
         <p className="eyebrow">{lesson.trackTitle}</p>
         <h1 id="lesson-title">{lesson.title}</h1>
-        {Boolean(lesson.metadata?.kind)&&(!lesson.metadata?.qaReleaseId||lesson.metadata?.status!=="published")&&<p className="learning-hint">Prévia administrativa · conteúdo aguardando QA independente.</p>}
+        {Boolean(lesson.metadata?.kind)&&(!lesson.metadata?.qaReleaseId||lesson.metadata?.status!=="published")&&<p className="learning-hint">Prévia administrativa · versão ainda não publicada.</p>}
         <LiveLessonProgress lessonStableId={lesson.stableId} initial={progress} />
         {!stepped && <LessonSessionCallout progress={progress} />}
 
         {stepped ? (
-          <LessonSteps blocks={lesson.blocks} activities={lesson.activities} completion={completion} />
+          <LessonSteps blocks={lesson.blocks} activities={lesson.activities} completion={completion} resumeScope={resumeScope} resumeSnapshot={resumeSnapshot} />
         ) : (
           <>
         <nav className="lesson-flow-nav" aria-label="Fluxo da aula">

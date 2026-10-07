@@ -1,0 +1,45 @@
+/* Progressive foundation; canonical values remain generated from the Design System. */
+.topbar { justify-content: space-between; gap: var(--estudisc-spacing-4); }
+.sidebar[data-navigation="study"] { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.account-menu-trigger, .dialog-close {
+  display: grid; place-items: center; flex: none;
+  min-width: var(--estudisc-touch-minimum); min-height: var(--estudisc-touch-minimum);
+}
+.account-menu-trigger svg, .dialog-close svg, .focus-exit svg { width: 20px; height: 20px; }
+.focus-exit { display: inline-flex; align-items: center; gap: var(--estudisc-spacing-4); min-height: var(--estudisc-touch-minimum); padding: var(--estudisc-spacing-4); font-weight: 700; }
+.app-shell[data-mode="focus"] { grid-template-columns: minmax(0, 1fr); grid-template-areas: "top" "main"; }
+.app-shell[data-mode="focus"] .main-surface { padding-bottom: calc(var(--estudisc-spacing-12) + env(safe-area-inset-bottom)); }
+.foundation-dialog {
+  color: var(--estudisc-color-ink); background: var(--estudisc-color-paper);
+  border: var(--estudisc-border-rule) solid var(--estudisc-color-ink);
+  border-radius: var(--estudisc-radius-learning-card); box-shadow: var(--estudisc-shadow-raised);
+  width: min(600px, calc(100% - var(--estudisc-spacing-8))); max-height: 85dvh;
+  padding: var(--estudisc-spacing-8); overflow: auto;
+}
+.foundation-dialog::backdrop { background: color-mix(in srgb, var(--estudisc-color-ink) 65%, transparent); }
+.foundation-sheet { margin: auto auto 0; padding-bottom: calc(var(--estudisc-spacing-8) + env(safe-area-inset-bottom)); border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.dialog-heading { display: flex; align-items: start; justify-content: space-between; gap: var(--estudisc-spacing-8); margin-bottom: var(--estudisc-spacing-8); }
+.dialog-heading h2 { margin: 0; font-size: 1.5rem; line-height: 1.15; }
+.secondary-navigation { display: grid; gap: var(--estudisc-spacing-4); }
+.secondary-navigation .nav-link, .secondary-navigation .nav-current { flex-direction: row; justify-content: flex-start; min-height: 48px; gap: var(--estudisc-spacing-6); padding: var(--estudisc-spacing-4) var(--estudisc-spacing-6); font-size: 1rem; }
+.secondary-navigation svg { width: 20px; height: 20px; }
+.secondary-navigation .nav-current { background: var(--estudisc-color-signal); }
+.foundation-tablist { display: flex; gap: var(--estudisc-spacing-4); flex-wrap: wrap; margin-bottom: var(--estudisc-spacing-8); }
+.foundation-tablist [role="tab"] { min-height: var(--estudisc-touch-minimum); }
+.foundation-tablist [aria-selected="true"] { background: var(--estudisc-color-signal); }
+.foundation-tabs [role="tabpanel"] { min-width: 0; }
+.plan-session-list { list-style: none; padding: 0; display: grid; gap: var(--estudisc-spacing-8); }
+.plan-session-list > li { padding-block: var(--estudisc-spacing-8); border-bottom: var(--estudisc-border-hair) solid var(--estudisc-color-ink); }
+.plan-session-list h3 { margin: 0 0 var(--estudisc-spacing-4); }
+.plan-session-list a { display: inline-flex; align-items: center; min-height: var(--estudisc-touch-minimum); }
+.plan-session-list ol { padding-left: var(--estudisc-spacing-10); margin-block: var(--estudisc-spacing-6); }
+.plan-session-list .session-duration { font-family: var(--estudisc-typography-technical-family), monospace; }
+@media (min-width: 900px) {
+  .foundation-sheet { margin: auto; border-radius: var(--estudisc-radius-learning-card); }
+}
+@media (max-width: 359px) {
+  .sidebar[data-navigation="study"] .nav-link, .sidebar[data-navigation="study"] .nav-current { font-size: 0.6875rem; }
+  .sidebar[data-navigation="study"] .nav-icon { width: 44px; }
+  .app-shell[data-mode="focus"] .brand-word { font-size: 1.25rem; }
+  .focus-exit { font-size: 0.875rem; }
+}

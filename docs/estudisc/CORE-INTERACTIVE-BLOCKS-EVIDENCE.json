@@ -1,0 +1,348 @@
+{
+  "date": "2026-10-07",
+  "baseCommit": "2259874",
+  "policy": "exploratory-state.v1",
+  "scope": "Local core increment; geographic MapLibre/provider pending; no independent approval or production publication",
+  "files": [
+    {
+      "path": "src/app/globals.css",
+      "sha256": "ff5a5cc28e6f7e75d8a4331cf343ce8fb0d437ed20f7cf391103dcbc2fc5626d"
+    },
+    {
+      "path": "src/db/repositories/lesson-resume-repository.ts",
+      "sha256": "f2b6c304bb16f24e55a833423be2c6af7a54bfc57cefe8b5bc36fbcb6099053c"
+    },
+    {
+      "path": "src/db/repositories/memory-lesson-resume-repository.ts",
+      "sha256": "eef08e7c3a176ff386822d7912771bc2b76f2a276fb9177122425bb64a9a1c14"
+    },
+    {
+      "path": "src/features/activities/application/educational-activity.ts",
+      "sha256": "3eb06adc3a31d33126b5d5f38e2029a50d6d3c31c8c0d9e68bb62e6eb4d501e6"
+    },
+    {
+      "path": "src/features/activities/components/educational-activity-panel.tsx",
+      "sha256": "2b8e4ede8a526da0a3dacf438305a981b620ab5b7cfc2aca12d23d216289ef6b"
+    },
+    {
+      "path": "src/features/activities/registry/activity-definitions.tsx",
+      "sha256": "ebe7911bf4e1e70be5c1b517d3151df3b6a2a8c7adb62d2208a10f9e2b9569eb"
+    },
+    {
+      "path": "src/features/import/application/track-pack-v2-validation.ts",
+      "sha256": "bb1d05c6e20dd1b908a50086c8579c0fb512c339833f74230374895d03ee1484"
+    },
+    {
+      "path": "src/features/lessons/blocks/atom-model.tsx",
+      "sha256": "320b41e442f7d42dc9ec5bb86362fe2051c307b8904266e04ccad048088bc580"
+    },
+    {
+      "path": "src/features/lessons/blocks/block-schemas.ts",
+      "sha256": "49a934096d39e2bd2d16accd5ec326d75aa3fe01e50b6faedb117121d7294336"
+    },
+    {
+      "path": "src/features/lessons/blocks/lesson-block-renderer.tsx",
+      "sha256": "a2f30910d054eae990ce51201d03c405d046883b7c2ed6057683653ab41d9c0c"
+    },
+    {
+      "path": "src/features/lessons/blocks/numeric-explorer-schema.ts",
+      "sha256": "bb973ae9f09f09e2e70e883c3cf090122d3cfe11c1e5035354292314f1cc81db"
+    },
+    {
+      "path": "src/features/lessons/blocks/numeric-explorer.tsx",
+      "sha256": "aa47b75d0daa85cc86e7b7492f723d07ffb015ca511a8f5e9f68c5d5749d5d80"
+    },
+    {
+      "path": "src/features/lessons/lesson-stepper.tsx",
+      "sha256": "1e699485ae31389334de34793d0469d323287ae02b1b899918a042055df76f84"
+    },
+    {
+      "path": "src/features/lessons/resume-contracts.ts",
+      "sha256": "651edce63498bab3834319588144a67fef7f4598c0765d7a18be8d922cf8254e"
+    },
+    {
+      "path": "src/features/lessons/resume-policy.ts",
+      "sha256": "543317c45084f42425541f63c27bc9ce79dc10678e9d76d50ace173b280fe86c"
+    },
+    {
+      "path": "src/features/lessons/resume-provider.tsx",
+      "sha256": "6c5e6f289bfb6d5117f2f59139512fed0f32e00d447b666d15e42de748e18571"
+    },
+    {
+      "path": "src/styles/application/interactions.css",
+      "sha256": "3e4478c24388a68eb0ac580eba83d46a75822677f258f331ad9d4224fc358b9b"
+    },
+    {
+      "path": "tests/integration/lesson-resume.test.ts",
+      "sha256": "ed60c49a82d941726d6712920f9542081ef3b34bb374fe2f4aed382ef42724c2"
+    },
+    {
+      "path": "tests/unit/content-studio.test.ts",
+      "sha256": "fe566ff921afb143a9be3fff727b29a0fa8dc19a7d5dd48563ece041272134ae"
+    },
+    {
+      "path": "scripts/generate-interaction-geometry.mjs",
+      "sha256": "b81cd4e946711a5530cf8aaee122c46b094355873615e65867dc6b4f552d2fa2"
+    },
+    {
+      "path": "src/features/activities/components/educational-feedback.ts",
+      "sha256": "1b83ca0a0241b62ad5a6215ae40a0392ec1226a419aded6428c41ed0103a07b3"
+    },
+    {
+      "path": "src/features/lessons/blocks/comparison-figure.tsx",
+      "sha256": "760a0724869eca8e1f4e395d374401ebc652f95419abed7db67fa5856e86a7a0"
+    },
+    {
+      "path": "src/features/lessons/blocks/linear-explorer.tsx",
+      "sha256": "936d67b75b41a07f812966f15fc05bbd290ee516fcb0325d16077eefafc33b17"
+    },
+    {
+      "path": "src/features/lessons/blocks/prediction-panel.tsx",
+      "sha256": "2e5740afdd9fbe5996078bab441529a0d35709f1a94d09c620b8c71742aab61b"
+    },
+    {
+      "path": "src/features/lessons/blocks/safe-figure.tsx",
+      "sha256": "1f5f0eeea0947a683a11bfacc871069355544512ee1247f5342d39ac166bba66"
+    },
+    {
+      "path": "src/features/lessons/blocks/visual-interactions-schema.ts",
+      "sha256": "5b3347a570e677600957f42ba8365c4ffee15e19a2a48db18ff1ea88e3ebd52d"
+    },
+    {
+      "path": "src/features/lessons/blocks/visual-locations.tsx",
+      "sha256": "72532abdfe3c1ae792cbb1e00e4a9deeed457b3098b0ff431d97242de353373a"
+    },
+    {
+      "path": "src/features/lessons/interaction-policy.ts",
+      "sha256": "4d44c1a684687783f7218d2f51ffa4b04a9684a4aa461d5beb0539a55fc4b566"
+    },
+    {
+      "path": "src/features/lessons/interaction-state.ts",
+      "sha256": "6b1656ddda54cceafbe0250f8690f2f9144a6b1d93b9629ac17bb5a103f2b18f"
+    },
+    {
+      "path": "src/features/lessons/use-interaction-state.ts",
+      "sha256": "e7e98a8886671b278756f8d4a7f3b4b278e74f831599a7e33a201585369ff508"
+    },
+    {
+      "path": "src/styles/application/interaction-geometry.css",
+      "sha256": "a05c3e98830d92381347e7a91c0320acc7045e4430afbcc942fc78869f0ad830"
+    },
+    {
+      "path": "tests/component/interaction-resume.test.tsx",
+      "sha256": "8a42e4f8bb8c851177bba0c3b3b1ce5b302d5297b6f85c7f60bae85655f4f7aa"
+    },
+    {
+      "path": "tests/component/linear-explorer.test.tsx",
+      "sha256": "79b105033258a5f11ddbe9a9624f424650293b50271bf018c4279e2a030860b2"
+    },
+    {
+      "path": "tests/component/visual-interactions.test.tsx",
+      "sha256": "1097751c6dd99175e62ec62dd0e920bcd25dac6a37ed5ffb80abc18d65283b36"
+    },
+    {
+      "path": "tests/e2e/interactive-blocks.spec.ts",
+      "sha256": "76e6a388dd6dc9fd8a516985400fde9f184845ed2a9cd3d402e0c5692cb1d726"
+    },
+    {
+      "path": "tests/fixtures/interactive-blocks.ts",
+      "sha256": "a3642868f50c971ff2be8d76cb1318fb2c1a0021628cb230bc3d881aeceae229"
+    },
+    {
+      "path": "tests/unit/interaction-state.test.ts",
+      "sha256": "7da4842516c0d264f064de6e5cc0852c04a54bc96edfb5de5905c30922ba81bd"
+    },
+    {
+      "path": "tests/unit/linear-explorer.test.ts",
+      "sha256": "63b1191fa5b95082536909c09791b1332e5bc83dc649e5bd79bf933502135dd5"
+    },
+    {
+      "path": "tests/unit/visual-interactions.test.ts",
+      "sha256": "8123663d5f1363964f970e28e2c44d4a52b271c8eeba23e31425c0f7ebe4383b"
+    }
+  ],
+  "baseline": [
+    {
+      "path": "src/app/lessons/[lessonId]/page.tsx",
+      "sha256": "b40e573eb00edc168bb9833a10598304d4bae6348b7a64ccbe9784b29081bdd1",
+      "currentSha256": "b40e573eb00edc168bb9833a10598304d4bae6348b7a64ccbe9784b29081bdd1",
+      "changed": false
+    },
+    {
+      "path": "src/app/study/[sessionId]/page.tsx",
+      "sha256": "31cc179b0c01cade9853721cd50cb61a82e821ce09d611e2311e567f2b9d13ac",
+      "currentSha256": "31cc179b0c01cade9853721cd50cb61a82e821ce09d611e2311e567f2b9d13ac",
+      "changed": false
+    },
+    {
+      "path": "src/db/migrations/meta/_journal.json",
+      "sha256": "92b40ceb7168a04cdcf9da17f442ddda4ae076df31e277b34921ee3daaf9d6cf",
+      "currentSha256": "92b40ceb7168a04cdcf9da17f442ddda4ae076df31e277b34921ee3daaf9d6cf",
+      "changed": false
+    },
+    {
+      "path": "src/db/repositories/catalog-repository.ts",
+      "sha256": "c19c44f4308027b3ad8383dd08fc2c851a0d6f1f85168056bd64539f6a5d14ae",
+      "currentSha256": "c19c44f4308027b3ad8383dd08fc2c851a0d6f1f85168056bd64539f6a5d14ae",
+      "changed": false
+    },
+    {
+      "path": "src/db/repositories/memory-question-study-repository.ts",
+      "sha256": "d6dbeb7e25c73ff426a5be6a1652f41829a03ec233f4366b1689595da6b7f4da",
+      "currentSha256": "d6dbeb7e25c73ff426a5be6a1652f41829a03ec233f4366b1689595da6b7f4da",
+      "changed": false
+    },
+    {
+      "path": "src/db/repositories/memory/catalog.ts",
+      "sha256": "ca0b41d2662841d40accb133f890922940031d43c2e4e0869206efdd44fe1e56",
+      "currentSha256": "ca0b41d2662841d40accb133f890922940031d43c2e4e0869206efdd44fe1e56",
+      "changed": false
+    },
+    {
+      "path": "src/db/repositories/memory/store.ts",
+      "sha256": "eac2139ae9e02aceba51d2aaa90b41211c6d94d15faf7cf4b10ff7fee389f17d",
+      "currentSha256": "eac2139ae9e02aceba51d2aaa90b41211c6d94d15faf7cf4b10ff7fee389f17d",
+      "changed": false
+    },
+    {
+      "path": "src/db/repositories/question-study-repository.ts",
+      "sha256": "e20d35df0ec311dda8eb1e1b90b6fb5126a420c799f8b39cdb3972aaf990b894",
+      "currentSha256": "e20d35df0ec311dda8eb1e1b90b6fb5126a420c799f8b39cdb3972aaf990b894",
+      "changed": false
+    },
+    {
+      "path": "src/db/schema/index.ts",
+      "sha256": "eae74b15de9a41f7eb940ea8e1e318e100852e2915a1eb03557efea47f41d172",
+      "currentSha256": "eae74b15de9a41f7eb940ea8e1e318e100852e2915a1eb03557efea47f41d172",
+      "changed": false
+    },
+    {
+      "path": "src/features/activities/components/question-activity.tsx",
+      "sha256": "133ab423155132a29bb40ffb09a9d21651f6c48aaf5ac3b31532e7a4d76b854c",
+      "currentSha256": "133ab423155132a29bb40ffb09a9d21651f6c48aaf5ac3b31532e7a4d76b854c",
+      "changed": false
+    },
+    {
+      "path": "src/features/activities/components/question-panel.tsx",
+      "sha256": "b75b442221f9a1fbcb044fbb4e19df6de27ad053646c6cfefc6df81a77b817d8",
+      "currentSha256": "b75b442221f9a1fbcb044fbb4e19df6de27ad053646c6cfefc6df81a77b817d8",
+      "changed": false
+    },
+    {
+      "path": "src/features/lessons/lesson-stepper.tsx",
+      "sha256": "0f4b638b09678ebba1869bf32445a67900631be6af1d25b9f9846cafe0e1d273",
+      "currentSha256": "1e699485ae31389334de34793d0469d323287ae02b1b899918a042055df76f84",
+      "changed": true
+    },
+    {
+      "path": "src/features/lessons/lesson-steps.tsx",
+      "sha256": "a04c290145d9e033a07bfc83a9dcb5770406afe1d9f70994e99613f9c438269e",
+      "currentSha256": "a04c290145d9e033a07bfc83a9dcb5770406afe1d9f70994e99613f9c438269e",
+      "changed": false
+    },
+    {
+      "path": "src/styles/application/interactions.css",
+      "sha256": "928221676b90a0dcb07689d9c135e228090e5bcd5c19221bd1519a001c2a7db6",
+      "currentSha256": "3e4478c24388a68eb0ac580eba83d46a75822677f258f331ad9d4224fc358b9b",
+      "changed": true
+    },
+    {
+      "path": "tests/integration/study-rewards.test.ts",
+      "sha256": "2b459a41fdcb685c8e655309a5e7684db7862532b1214cf766a02d0dc43c74d3",
+      "currentSha256": "2b459a41fdcb685c8e655309a5e7684db7862532b1214cf766a02d0dc43c74d3",
+      "changed": false
+    },
+    {
+      "path": "src/app/api/lesson-resume/route.ts",
+      "sha256": "ced497cc8c7d1e32dcf02e7ad51c469b25fb06eedceb42f282b4f50e464bf714",
+      "currentSha256": "ced497cc8c7d1e32dcf02e7ad51c469b25fb06eedceb42f282b4f50e464bf714",
+      "changed": false
+    },
+    {
+      "path": "src/db/migrations/0020_giant_grey_gargoyle.sql",
+      "sha256": "a4d0be73b10652d90826f5d3f866fffec681c4ea4f15bc792fa7c4de228cc843",
+      "currentSha256": "a4d0be73b10652d90826f5d3f866fffec681c4ea4f15bc792fa7c4de228cc843",
+      "changed": false
+    },
+    {
+      "path": "src/db/migrations/meta/0020_snapshot.json",
+      "sha256": "581e2c27de711622606a3a5348984a9cfd3ee828daaf1f46d05fc723cb838f0e",
+      "currentSha256": "581e2c27de711622606a3a5348984a9cfd3ee828daaf1f46d05fc723cb838f0e",
+      "changed": false
+    },
+    {
+      "path": "src/db/repositories/lesson-resume-repository.ts",
+      "sha256": "9d1d26367ac629acef5b35e1b5b84da3fc40597467085d77db43c2e0debcbc4c",
+      "currentSha256": "f2b6c304bb16f24e55a833423be2c6af7a54bfc57cefe8b5bc36fbcb6099053c",
+      "changed": true
+    },
+    {
+      "path": "src/db/repositories/memory-lesson-resume-repository.ts",
+      "sha256": "29bd3b2283e0abb4235ac3b5da968c24708c7e04ffdff73da89ede492b9c16f4",
+      "currentSha256": "eef08e7c3a176ff386822d7912771bc2b76f2a276fb9177122425bb64a9a1c14",
+      "changed": true
+    },
+    {
+      "path": "src/db/schema/lesson-resumes.ts",
+      "sha256": "def0318ffb650984a90c8e9820b60793c10d6ef98c759e1096583617078d41b8",
+      "currentSha256": "def0318ffb650984a90c8e9820b60793c10d6ef98c759e1096583617078d41b8",
+      "changed": false
+    },
+    {
+      "path": "src/features/lessons/resume-api.ts",
+      "sha256": "fc77a7e4aedd33465df0ca68aa0792ccb6f5d4340e872fb090effe1cad442b5b",
+      "currentSha256": "fc77a7e4aedd33465df0ca68aa0792ccb6f5d4340e872fb090effe1cad442b5b",
+      "changed": false
+    },
+    {
+      "path": "src/features/lessons/resume-contracts.ts",
+      "sha256": "7b210d570bce814377f2243f0ec163f48e4aa39974fd785d52d852b1d9ac56ce",
+      "currentSha256": "651edce63498bab3834319588144a67fef7f4598c0765d7a18be8d922cf8254e",
+      "changed": true
+    },
+    {
+      "path": "src/features/lessons/resume-policy.ts",
+      "sha256": "16e0e64f87a8997e8717d57df99c68c68049ef2990ffc4688e6fd2a7ccf53eea",
+      "currentSha256": "543317c45084f42425541f63c27bc9ce79dc10678e9d76d50ace173b280fe86c",
+      "changed": true
+    },
+    {
+      "path": "src/features/lessons/resume-provider.tsx",
+      "sha256": "73aa8e4d5e982ab67b102d06a1074bdd0cebdaec8909ee76e3696be80fb0e1c1",
+      "currentSha256": "6c5e6f289bfb6d5117f2f59139512fed0f32e00d447b666d15e42de748e18571",
+      "changed": true
+    },
+    {
+      "path": "tests/component/lesson-resume-provider.test.tsx",
+      "sha256": "6ce43882f7f2d7a45ec62cbc72877d30cebaf5cb7e8fddd4918842df1c3bd1e5",
+      "currentSha256": "6ce43882f7f2d7a45ec62cbc72877d30cebaf5cb7e8fddd4918842df1c3bd1e5",
+      "changed": false
+    },
+    {
+      "path": "tests/component/question-resume.test.tsx",
+      "sha256": "cab0013cc6a1c81824e7b965ee8cdf24d43624449ee2cec67c64341a23948ee7",
+      "currentSha256": "cab0013cc6a1c81824e7b965ee8cdf24d43624449ee2cec67c64341a23948ee7",
+      "changed": false
+    },
+    {
+      "path": "tests/e2e/lesson-resume.spec.ts",
+      "sha256": "b7af1511601360abdb156a927a2f9b1c1427efc9842f241a67713a2eab8b5475",
+      "currentSha256": "b7af1511601360abdb156a927a2f9b1c1427efc9842f241a67713a2eab8b5475",
+      "changed": false
+    },
+    {
+      "path": "tests/integration/lesson-resume.test.ts",
+      "sha256": "2732895a0f0ad7b3b1c4a953d97e37d1339ba83be9a530e672c2b0d23a2447ed",
+      "currentSha256": "ed60c49a82d941726d6712920f9542081ef3b34bb374fe2f4aed382ef42724c2",
+      "changed": true
+    },
+    {
+      "path": "tests/unit/lesson-resume.test.ts",
+      "sha256": "72cb222a71ceb0500be7668606eac7657e35d8d225134809a48ba3c7f1d4d594",
+      "currentSha256": "72cb222a71ceb0500be7668606eac7657e35d8d225134809a48ba3c7f1d4d594",
+      "changed": false
+    }
+  ],
+  "sourceFilesUnchanged": 12,
+  "linksChecked": 76
+}

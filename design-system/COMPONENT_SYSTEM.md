@@ -2,6 +2,8 @@
 
 ## Delta IFSC integrado
 
+Current reusable implementations and rollout status: [Component Registry](COMPONENT_REGISTRY.md). Native semantic controls remain preferred when a wrapper adds no behavior. New Sheet/Dialog/Tabs retain canonical tokens and accessible keyboard/focus contracts.
+
 
 Required learning components/variants:
 

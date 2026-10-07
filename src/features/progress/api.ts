@@ -5,7 +5,7 @@ import { getDatabaseUrl } from "@/db/connection";
 import { MemoryConceptEvidenceRepository, MemoryProgressRepository } from "@/db/repositories/memory-store";
 import { calculateVersionedMastery } from "@/features/mastery/mastery-policy-v2";
 import { summarizeConceptMastery, type ConceptMasterySummary } from "./mastery-summary";
-import { buildProgressOverview, type ProgressOverview } from "./overview";
+import { buildProgressOverview, studyActivityDates, type ProgressOverview } from "./overview";
 import { listKnowledgeMapConcepts } from "@/features/concepts/knowledge-map-api";
 import { listHistoryEvents } from "@/features/history/api";
 
@@ -58,5 +58,5 @@ export async function getProgressOverview(now = new Date()): Promise<ProgressOve
     listHistoryEvents()
   ]);
 
-  return buildProgressOverview({ concepts, evidence, eventDates: events.map((event) => event.occurredAt), now });
+  return buildProgressOverview({ concepts, evidence, eventDates: studyActivityDates(events), now });
 }

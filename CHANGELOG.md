@@ -1,5 +1,82 @@
 # Changelog
 
+## 2026-10-07 — Targeted immutable lesson-version import
+
+- Add explicit caderno.lesson.v2 source/Track/module/version/hash and immutable shared Question reference contract (ADR 0049). Extend existing SQL/memory import adapters to append one draft lesson with unchanged source/evaluator/Question/history, no duplicate collection or new schema migration.
+- Add guarded preview/apply endpoints and compatible existing import UI routing/result/error states; Student reads retain old published content until activation, ADMIN previews drafts and explicit historical lesson URLs remain usable. Correct memory Track scoping for equal module IDs and SQL version-specific Activity counts.
+- Add source-bound pilot export, exact-byte generated Mathematics source mirror for CI, migration-backed preservation/rollback/idempotence/permission fixtures and browser workflow QA. Materialized read contexts cannot be replayed as Track imports. Existing authenticated Admin Direct remains the publication path; no fabricated review or implicit production release.
+
+## 2026-10-07 — Social-project direct release rule
+
+- Record the explicit owner instruction in AGENTS/AUTONOMY/ADR 0048: technically validated authorized features/enrichment launch directly; users provide review/feedback, without requiring Matheus or independent editorial approval. Existing Admin Direct/audit actor/reason remains authoritative; no invented Reviewer/QA or new publication mode.
+- Enrichment candidates now carry ADMIN_DIRECT_AUTHORIZED, community feedback status, truthful UNREVIEWED/no-independent-QA metadata and an existing direct-publication request in release-request.json. Complete policy/hash binding preserves previous generations and immutable source/Question records.
+- Retain engineering/security/source/version invariants and unrelated boundaries. Actual activation still needs a compatible targeted v2 lesson-version import; full Track re-import/duplicate collection is not used as a shortcut. Technical handoff is documented, without another editorial review gate or false production-release claim.
+
+## 2026-10-07 — Source-bound enrichment review preview
+
+- Add a generic strict authoring recipe and local review candidate preparation through existing Studio CLI (ADR 0047). The first MAT-07 v5 proposal adds one percentage explorer after authored E03, anchored to the existing goal/Concept and 16% of 275 = 44; preserve original blocks/Activities/Questions/answers and published bytes.
+- Bind source/blueprint/recipe/Question/policy/asset/candidate hashes; reject stale anchors, invented objectives/Concepts, collisions, invalid calculations/models/version rollback and public output. Unchanged proposals skip, tampered review requests repair to REVIEW_REQUIRED; retain generations.
+- Prepare a seven-dimension review request without approval/import-ready Pack or publication. Existing Studio ownership/review/export remains authoritative; actual review and batches are pending. Add preservation/schema/render/cache/rejection fixtures and disposable browser QA; no renderer, evidence, authentication or Pack-schema change.
+
+## 2026-10-07 — Local Lesson Blueprint proposal pipeline
+
+- Extend the existing Studio CLI with `blueprints`: compact metadata/teaching-text counts, deterministic archetypes/clusters, interaction/asset/component needs and explicit confidence/source findings for 132 historically audited import lesson versions (ADR 0046).
+- Keep all proposals UNREVIEWED; retain missing objectives/null learning goals and empty uninferred mistakes. Never export full lesson payloads, Questions/answers, image bytes or reserved assets; no import/publication/runtime/engine change.
+- Bind track/lesson versions, source/corpus/catalog dependency/policy/current asset hashes and artifact hashes. Preserve prior generations; unchanged validated proposals keep timestamps and skip; corrupt or invented approval state regenerates. Changed audited sources fail closed pending explicit reconciliation.
+- Test corpus totals, metadata boundaries, classification/prerequisite findings, independent invalidation, actual cache repair/skip and asset-rights withdrawal. Exact commands, reports and remaining review gates: `docs/estudisc/LESSON-BLUEPRINTS.md`.
+
+## 2026-10-07 — Teaching-asset metadata and local authoring inventory
+
+- Extend existing Studio image candidates with optional version/type/subjects/Concepts/tags/dimensions/text/reuse/rights/exposure metadata (ADR 0045); preserve legacy normalized artifacts and actual license states. No database, learner Pack envelope, protected Question storage or CSP change.
+- Add local assets search/metadata index and hash-pinned source revalidation. Unknown/link-only/review/rejected, unproduced, stale/hash-mismatched and protected candidates are ineligible for reusable embedding; existing candidates are not automatically promoted. Index/export contains no bytes or publication approval.
+- Verify rights, produced source and attribution separately for every figure/comparison/hotspot/map source. Add compatibility/licence withdrawal/hash/search/duplicate/protected/composite fixtures and actual corpus validation. Exact commands/limits: `docs/estudisc/TEACHING-ASSETS.md`. Admin library UI and production distribution remain later consumers.
+
+## 2026-10-06 — Typed exploratory lesson blocks
+
+- Extend existing block/Activity registries and scoped resume with optional typed responses/parameters/check phases/help. Validate actual frozen block/activity/kind/value membership; reject undisplayed blocks in question-only sessions, preserve legacy mutation hashes and retain new state across old-client saves (ADR 0044). No Pack-envelope or database migration.
+- Add predict/observe/explain, persisted guided matching/order/timeline, authored four-stage exploratory help and recomputed correct/incorrect/partial/explanation feedback. Preserve canonical Question assistance/evaluators/evidence weights; exploratory checks do not record Attempts or establish mastery.
+- Add safe comparison figures, zoomable hotspot/list, offline authored map/list and configured bounded linear models alongside legacy percentage explorers. Use keyboard/selects/buttons/text/image fallback, existing image validation and approved DS tokens; malformed image decoding fails safely. MapLibre/geographic services and complex simulations remain explicit blueprint-dependent work.
+- Generate finite geometry CSS for validated data attributes, preserving existing CSP. Verify actual clipping, zoom and point centers; margin-based centering survives reduced-motion transform suppression. No inline-style permission or new CSP allowance.
+- Preserve source bytes, published versions and legacy figure-description markup. Add disposable fixtures, SQL/memory/client/compatibility and mobile/desktop acceptance. Exact commands/limits: `docs/estudisc/CORE-INTERACTIVE-BLOCKS.md`.
+
+## 2026-10-06 — Scoped lesson and shared Question resume
+
+- Add a mutable owner/track/lesson-version/context snapshot and additive empty lesson_resumes table in migration 0020 (ADR 0043). Validate published/frozen owned scope, bounded typed Question drafts, revision conflicts and identical retry. Preserve published content, Pack contracts and append-only learner evidence.
+- Extend existing LessonSteps/Stepper/QuestionPanel with stable-step/expanded-view resume, serialized saves, explicit retry/conflict recovery, bounded navigation flush and visible-page time estimates saved at interaction/manual-save boundaries. Default-off interactive rollout controls new writes; Programming Lab and legacy hash flow retain their existing path.
+- Restore submitted feedback/hints/solution state from actual canonical owner records; draft base-attempt identity prevents pending/old answers from overriding newer submissions. Resume JSON never supplies grades, mastery, official scores or XP.
+- Add lifecycle/SQL/memory/domain and desktop/mobile reload/offline/two-tab coverage. Additional typed interactive-block state and snapshot backup remain separate contracts. Validation/limits: `docs/estudisc/LESSON-RESUME.md`.
+
+## 2026-10-06 — Adaptive sessions and frozen activity membership
+
+- Extend the existing planner with default-off planner.v2 and 10/20/30/45-minute controls, one composition clock, explicit review/remediation/practice/learning reasons and routine time constraints (ADR 0042). Short sessions deliver shared Questions; full lessons require actual independent editorial QA, available checkpoints, prerequisites and a full estimate that fits.
+- Preserve ACTIVE snapshots across track and lesson versions; bind owner/track/version/activity/Question membership before resolving canonical activities. Batch availability reads and exclude independently successful Questions from ordinary practice while retaining due retrieval and canonical exposure guards.
+- Show publication/mapping caveats and factual session summaries: estimates, wall-clock interval including pauses, latest unique answers and actual independent evidence. Planning/completion never creates mastery evidence; shared assistance, evaluators, review and scoring rules remain unchanged.
+- Add SQL/memory, domain and desktop/mobile coverage. No migration, Pack-schema change, published corpus rewrite or production rollout. Acceptance details: `docs/estudisc/ADAPTIVE-SESSIONS.md`.
+
+## 2026-10-06 — Weekly routine and checked plan previews
+
+- Add owner-scoped routine.v1 with timezone/calendar budgets, Automatic/Assisted/Manual distribution, priorities, temporary focus/overrides, review targets and explicit simulation time reservation (ADR 0041). Add two empty user-state tables in migration 0019; no Pack or learner-history transformation.
+- Add onboarding/week/routine editing and server-derived preview/apply with owner/revision/dependency/expiry checks and idempotent audit events. Constrain existing planner/start paths cumulatively by routine time/subject budgets, preserve ACTIVE snapshots and keep prepared sessions on failed replanning.
+- Reuse Today facts, display genuine day-off/budget-used/simulation-reserved states and routine date, exclude configuration from study-day activity, and handle unavailable/generic subject identifiers without hidden invalid selection or inherited object keys. Preserve mastery/review/scoring and published corpus bytes; rollout remains off.
+- Add SQL/memory, domain/API/UI and desktop/mobile acceptance coverage. Surface actual child-launch errors/signals in the serial E2E runner. Exact commands/results/limits: `docs/estudisc/WEEKLY-ROUTINE.md`. Production migration/deployment and routine backup remain separate gates.
+
+## 2026-10-06 — Product/design context refresh
+
+- Update existing PRODUCT.md to the current Impeccable schema using confirmed product constraints and source evidence; remove deprecated Register and record web platform, positioning, operating context and product principles.
+- Organize DESIGN.md into recognized sections and align its navigation/Focus pointers with ADR 0040; retain canonical DS/token authority. Doctor returns no findings; source/hash/link/diff checks and lint pass. No runtime/content changes or inferred workflow defaults. Exact commands: `docs/estudisc/PRODUCT-CONTEXT-REFRESH.md`.
+
+## 2026-10-06 — Progressive study foundation and Today
+
+- Add centrally validated default-off feature flags, compatible five-destination navigation with topbar Sheet, and shared Focus layout for flagged lesson/ACTIVE study/assessment flows. Add native Dialog/Sheet, keyboard Tabs and component registry using unchanged DS 4.0.0 tokens (ADR 0040).
+- Add flagged `/plan` for existing session preparation/history and a reusable Today presentation that places authoritative next action/reason first. Preserve existing recommendation/session/evidence/scoring engines and published Pack contracts/bytes.
+- Validate 275 tests / 3 optional PostgreSQL skips, lint/typecheck/build/pack checks, 38 legacy E2E and 4 flagged E2E, plus mobile/desktop/modal/keyboard/Focus/reduced-motion QA. Save a hash-pinned Terra handoff for weekly routine/overrides/rebalance and preview consistency. Flags remain off; no production operation. Exact commands: `docs/estudisc/EVOLUTION-FOUNDATION.md`.
+
+## 2026-10-06 — Architecture pack audit and model routing
+
+- Preserve the supplied eleven-document architecture pack and manifest with archive/file hashes; audit existing modules against every proposed area without changing runtime code or published content.
+- Add implementation gap analysis, phased dependencies/acceptance/rollback, likely additive migrations and Luna Max → Terra → exceptional Sol High routing. Keep navigation/Pack compatibility, planner-readiness, evidence and publication caveats explicit.
+- Local checks: lint/typecheck/build/pack validation PASS; 262 tests PASS / 3 optional PostgreSQL SKIP; full E2E 38 PASS / 0 FAIL. Initial local dependency mismatch repaired with frozen install. Exact evidence: `docs/estudisc/AUDIT-VERIFICATION.md`. Large phases and production operations remain pending.
+
 ## 2026-10-06 — Estudisc consolidation
 
 - Adopt Estudisc as the current identity; preserve deprecated environment aliases, signed sessions, old backups, immutable Pack IDs, hashes and factual history (ADR 0039).

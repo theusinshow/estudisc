@@ -94,7 +94,7 @@ describe("Estudisc Content Studio", () => {
   it("rejects schema-advertised blocks with no renderer and arbitrary invented blocks", () => {
     const { dir } = authored();
     const lesson = lessonSchema.parse(readJson(join(dir, "author/lesson.json")));
-    lesson.blocks[0].type = "map"; atomicJson(join(dir, "author/lesson.json"), lesson);
+    lesson.blocks[0].type = "graph"; atomicJson(join(dir, "author/lesson.json"), lesson);
     expect(validateJob(dir).issues.some(i => i.message.includes("not registered"))).toBe(true);
     const invalid = { ...lesson, blocks: [{ ...lesson.blocks[0], type: "arbitrary-jsx" }] };
     expect(lessonSchema.safeParse(invalid).success).toBe(false);

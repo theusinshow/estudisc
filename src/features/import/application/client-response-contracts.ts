@@ -7,7 +7,7 @@ export const previewResponseSchema = z.discriminatedUnion("status", [
   z.object({ status: z.literal("conflict"), operation: z.literal("blocked_conflict"), ...identity, message: z.string(), existingContentHash: z.string(), incomingContentHash: z.string(), summary })
 ]);
 export const importResponseSchema = z.discriminatedUnion("status", [
-  z.object({ status: z.literal("imported"), ...identity, summary: z.object({ trackStableId: z.string(), importedLessons: z.number(), importedActivities: z.number() }) }),
+  z.object({ status: z.literal("imported"), ...identity, lessonId: z.string().optional(), lessonVersion: z.number().int().positive().optional(), summary: z.object({ trackStableId: z.string(), importedLessons: z.number(), importedActivities: z.number() }) }),
   z.object({ status: z.literal("already_imported"), ...identity })
 ]);
 export const generatedPreviewResponseSchema = z.object({ status: z.literal("ready_to_preview"), operation: z.literal("validate_only"), schema: z.literal("caderno.lesson.v1"), contentHash: z.string(), summary: z.object({ lessonStableId: z.string(), lessonTitle: z.string(), conceptCount: z.number(), blockCount: z.number(), activityCount: z.number() }) });

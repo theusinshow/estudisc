@@ -7,6 +7,7 @@ import { questionReferenceSchema } from "@/features/activities/application/quest
 import { hashCanonicalJson } from "@/lib/canonical-json";
 import { catalogSchema, lessonGenerationRequestSchema, sourcePackSchema, mediaPackSchema, lessonArchitectureSchema, lessonSchema, questionSetSchema, unsupportedComponentsSchema, type Catalog, type LessonGenerationRequest } from "./contracts";
 import { toEstudiscPack, type DraftArtifacts } from "./adapter";
+import { validateVisualMedia, visualMediaTypes } from "./visual-media-validation";
 
 export type Issue = { code: string; path: string; message: string };
 export type ValidationResult = { ok: boolean; issues: Issue[]; artifacts?: DraftArtifacts };
@@ -105,7 +106,7 @@ export function validateJob(dir: string, stage: "research" | "author" = "author"
     if (p.factual && (!p.sourceIds.length || p.sourceIds.some(id => !factualSources.has(id)))) fail("unverified_fact", p.targetId, "Factual content requires verified evidence in Source Pack");
     for (const id of p.mediaIds) {
       const image = media.images.find(m => m.id === id);
-      if (image && lesson.blocks.some(b => b.id === p.targetId && b.type === "figure") && image.licenseStatus !== "APPROVED_EMBED") fail("media_license", p.targetId, "Embedded image must be APPROVED_EMBED");
+      if (image && lesson.blocks.some(b => b.id === p.targetId && visualMediaTypes.has(b.type)) && image.licenseStatus !== "APPROVED_EMBED") fail("media_license", p.targetId, "Embedded image must be APPROVED_EMBED");
       if (image && !["APPROVED_EMBED", "LINK_ONLY"].includes(image.licenseStatus)) fail("unreviewed_media", p.targetId, "Selected image must be cleared for embedding or link-only use; other states remain candidates");
       if (media.videos.find(v => v.id === id)?.status !== undefined && media.videos.find(v => v.id === id)?.status !== "RECOMMENDED") fail("unverified_video", p.targetId, "Selected video must be verified/recommended");
     }
@@ -119,12 +120,10 @@ export function validateJob(dir: string, stage: "research" | "author" = "author"
   }
   for (const block of lesson.blocks) {
     if (typeof block.payload.type === "string" && block.payload.type !== block.type && block.type !== "timeline") fail("payload_type", block.id, "Payload type must match renderer type");
-    if (block.type === "figure") {
+    if (visualMediaTypes.has(block.type)) {
       const p = architecture.provenance.find(p => p.targetId === block.id);
       const candidates = media.images.filter(m => p?.mediaIds.includes(m.id));
-      if (candidates.length !== 1 || candidates[0].src !== block.payload.src || candidates[0].licenseStatus !== "APPROVED_EMBED") fail("media_reference", block.id, "Figure needs exactly one produced, licensed media candidate matching src");
-      if (!block.payload.alt || !block.payload.credit) fail("media_accessibility", block.id, "Figure needs alt text and credit/attribution");
-      if (candidates.length === 1 && block.payload.credit !== candidates[0].attribution) fail("media_attribution", block.id, "Figure credit must preserve candidate attribution");
+      issues.push(...validateVisualMedia(block, candidates));
     }
   }
   for (const activity of lesson.activities.filter(a => a.type === "question")) {

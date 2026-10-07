@@ -12,12 +12,34 @@ import { hashCanonicalJson } from "@/lib/canonical-json";
 import { evidenceStrengthV2, MASTERY_V2 } from "@/features/mastery/mastery-policy-v2";
 import { scheduleReviewV2, REVIEW_V2 } from "@/features/review/review-policy-v2";
 import { isIndependentQuestionSuccess, QUESTION_SUCCESS_XP, QUESTION_SUCCESS_REASON } from "@/features/gamification/study-rewards";
+import { frozenMember, planningActivityKey } from "@/features/study-sessions/frozen-membership";
 
 type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
 export class QuestionUnavailableError extends Error { constructor(){super("Question unavailable");} }
 export class SubmissionConflictError extends Error { constructor(){super("Submission key conflicts with a previous response");} }
 export class QuestionStudyRepository {
   constructor(private readonly db:Database=getDatabase()){}
+  async planningAvailability(ownerId:string,refs:readonly {trackId:string;lessonId:string;lessonVersion:number;activityId:string;questionId:string;questionVersion:number}[],now:Date){
+    const result=new Map<string,Awaited<ReturnType<DrizzleQuestionRepository["getVersions"]>>[number]>();
+    if(!refs.length)return result;
+    const [exam]=await this.db.select({id:assessmentInstances.id}).from(assessmentInstances).where(and(eq(assessmentInstances.ownerId,ownerId),eq(assessmentInstances.status,"ACTIVE"),eq(assessmentInstances.mode,"EXAM")));
+    if(exam)return result;
+    const [rows,versions,exposures]=await Promise.all([
+      this.db.select({activity:activities,lesson:lessons,trackId:modules.trackId}).from(activities).innerJoin(lessons,eq(lessons.id,activities.lessonId)).innerJoin(modules,eq(modules.id,lessons.moduleId)).where(inArray(activities.stableId,[...new Set(refs.map(ref=>ref.activityId))])),
+      new DrizzleQuestionRepository(this.db).getVersions(refs.map(ref=>({id:ref.questionId,version:ref.questionVersion}))),
+      this.db.select().from(questionExposures).where(eq(questionExposures.ownerId,ownerId))
+    ]);
+    const questionsByKey=new Map(versions.map(version=>[JSON.stringify([version.question.id,version.question.version]),version]));
+    const exposureById=new Map(exposures.map(exposure=>[exposure.questionId,exposure]));
+    for(const ref of refs){
+      const row=rows.find(row=>row.trackId===ref.trackId&&row.lesson.stableId===ref.lessonId&&row.lesson.contentVersion===ref.lessonVersion&&row.activity.stableId===ref.activityId);
+      const config=questionReferenceSchema.safeParse(row?.activity.config),version=questionsByKey.get(JSON.stringify([ref.questionId,ref.questionVersion]));
+      const metadata=row?.lesson.metadata as {status?:string;qaReleaseId?:string}|undefined;
+      if(!row||row.activity.type!=="question"||metadata?.status!=="published"||!metadata.qaReleaseId||!config.success||config.data.questionId!==ref.questionId||config.data.questionVersion!==ref.questionVersion||!version)continue;
+      if(canExposeQuestion(version.question,{now,context:"training",exposure:exposureById.get(version.identityId)}))result.set(planningActivityKey(ref.trackId,ref.lessonId,ref.lessonVersion,ref.activityId),version);
+    }
+    return result;
+  }
   async isAvailable(ownerId:string,activity:string,questionId:string,version:number){
     const ctx=await this.context(ownerId,activity,questionId,version);
     const [identity]=await this.db.select().from(questionVersions).where(eq(questionVersions.id,ctx.versionId));
@@ -26,10 +48,11 @@ export class QuestionStudyRepository {
   }
   private async context(ownerId:string, activityStableId:string, questionId:string, version:number, sessionId?:string) {
     const [exam]=await this.db.select({id:assessmentInstances.id}).from(assessmentInstances).where(and(eq(assessmentInstances.ownerId,ownerId),eq(assessmentInstances.status,"ACTIVE"),eq(assessmentInstances.mode,"EXAM")));if(exam)throw new QuestionUnavailableError();
+    const session=sessionId?(await this.db.select().from(studySessions).where(and(eq(studySessions.id,sessionId),eq(studySessions.ownerId,ownerId))))[0]:undefined;
+    if(sessionId&&(!session||session.status!=="ACTIVE"))throw new QuestionUnavailableError();
     const rows=await this.db.select({activity:activities,lesson:lessons,trackId:modules.trackId}).from(activities).innerJoin(lessons,eq(lessons.id,activities.lessonId)).innerJoin(modules,eq(modules.id,lessons.moduleId)).where(eq(activities.stableId,activityStableId)).orderBy(desc(lessons.contentVersion));
-    const row=rows.find(row=>{const config=questionReferenceSchema.safeParse(row.activity.config);return row.activity.type==="question"&&config.success&&config.data.questionId===questionId&&config.data.questionVersion===version;});
+    const row=rows.find(row=>{const config=questionReferenceSchema.safeParse(row.activity.config);return row.activity.type==="question"&&config.success&&config.data.questionId===questionId&&config.data.questionVersion===version&&(!session||frozenMember(session.items,session.trackId,{lessonId:row.lesson.stableId,version:row.lesson.contentVersion,trackId:row.trackId,activityId:row.activity.stableId,questionId,questionVersion:version}));});
     if(!row)throw new QuestionUnavailableError();
-    if(sessionId){const [session]=await this.db.select().from(studySessions).where(and(eq(studySessions.id,sessionId),eq(studySessions.ownerId,ownerId))); if(!session||session.status!=="ACTIVE"||session.trackId!==row.trackId||!Array.isArray(session.items)||!session.items.some(item=>item.lessonId===row.lesson.stableId&&item.version===row.lesson.contentVersion&&item.activityIds.includes(row.activity.stableId)&&item.questions.some((question:{id:string;version:number})=>question.id===questionId&&question.version===version)))throw new QuestionUnavailableError();}
     const frozen=await new DrizzleQuestionRepository(this.db).getVersion(questionId,version);
     if(!frozen||!canExposeQuestion(frozen.question,{now:new Date(),context:"training"}))throw new QuestionUnavailableError();
     return {...row,...frozen,contextKey:sessionId??`lesson:${row.lesson.id}`,config:questionReferenceSchema.parse(row.activity.config)};
@@ -49,7 +72,9 @@ export class QuestionStudyRepository {
         await tx.insert(questionExposures).values({ownerId,questionId:identity.questionId,firstSeenAt:new Date(),lastSeenAt:new Date(),timesSeen:1,lastContext:"learn"}).onConflictDoUpdate({target:[questionExposures.ownerId,questionExposures.questionId],set:{lastSeenAt:new Date(),timesSeen:sql`${questionExposures.timesSeen}+1`,lastContext:"learn"}});
       }
       const [latest]=await tx.select().from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.questionVersionId,ctx.versionId),sql`${attempts.context}->>'contextKey'=${ctx.contextKey}`)).orderBy(desc(attempts.createdAt)).limit(1);
-      return {question:studentQuestion(ctx.question),hintCount:ctx.config.hints.length,lastAnswer:latest?.response?(latest.response as {answer:unknown}).answer:undefined};
+      return {question:studentQuestion(ctx.question),hintCount:ctx.config.hints.length,lastAnswer:latest?.response?(latest.response as {answer:unknown}).answer:undefined,
+        lastAttempt:latest?{attemptId:latest.id,submissionKey:latest.submissionKey??latest.id,correct:latest.outcome==="passed",explanation:latest.outcome==="passed"?ctx.question.explanation:undefined}:undefined,
+        assistance:{hintLevel:opened?.hintLevel??0,hint:ctx.config.hints[(opened?.hintLevel??0)-1]??"",solutionRevealed:Boolean(opened?.solutionRevealed),explanation:opened?.solutionRevealed?ctx.question.explanation:undefined}};
     });
   }
   async interact(ownerId:string,activity:string,input:{questionId:string;questionVersion:number;action:"submit"|"hint"|"solution";submissionKey:string;response:unknown;sessionId?:string}) {

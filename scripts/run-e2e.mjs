@@ -10,6 +10,8 @@ for (const project of ["chromium", "mobile-chrome"]) {
   const result = spawnSync(process.execPath, [cli, "test", ...process.argv.slice(2), `--project=${project}`, `--output=test-results/${project}`], {
     stdio: "inherit", env: process.env
   });
+  if (result.error) console.error(`[${project}] Playwright could not start: ${result.error.message}`);
+  if (result.signal) console.error(`[${project}] Playwright ended by signal: ${result.signal}`);
   if (result.status !== 0) failed = true;
 }
 process.exitCode = failed ? 1 : 0;

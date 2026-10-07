@@ -43,4 +43,9 @@ export class DrizzleQuestionRepository {
     const [row] = await this.db.select({ versionId: questionVersions.id, content: questionVersions.content,status:questionVersions.status }).from(questionVersions).innerJoin(questions, eq(questions.id, questionVersions.questionId)).where(and(eq(questions.stableId, stableId), eq(questionVersions.version, version)));
     return row ? { versionId: row.versionId, question: questionSchema.parse({...row.content as object,status:row.status}) } : null;
   }
+  async getVersions(refs: readonly { id: string; version: number }[]) {
+    if (!refs.length) return [];
+    const rows = await this.db.select({ identityId: questions.id, stableId: questions.stableId, versionId: questionVersions.id, version: questionVersions.version, content: questionVersions.content, status: questionVersions.status }).from(questionVersions).innerJoin(questions, eq(questions.id, questionVersions.questionId)).where(inArray(questions.stableId, [...new Set(refs.map(ref => ref.id))]));
+    return rows.filter(row => refs.some(ref => ref.id === row.stableId && ref.version === row.version)).map(row => ({ identityId: row.identityId, versionId: row.versionId, question: questionSchema.parse({ ...row.content as object, status: row.status }) }));
+  }
 }

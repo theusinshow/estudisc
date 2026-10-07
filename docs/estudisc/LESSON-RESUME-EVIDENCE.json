@@ -1,0 +1,300 @@
+{
+  "date": "2026-10-06",
+  "baseCommit": "4557014",
+  "policy": "resume.v1",
+  "scope": "Local validation; production migration pending; no independent editorial/model review",
+  "files": [
+    {
+      "path": "src/app/lessons/[lessonId]/page.tsx",
+      "sha256": "b40e573eb00edc168bb9833a10598304d4bae6348b7a64ccbe9784b29081bdd1"
+    },
+    {
+      "path": "src/app/study/[sessionId]/page.tsx",
+      "sha256": "31cc179b0c01cade9853721cd50cb61a82e821ce09d611e2311e567f2b9d13ac"
+    },
+    {
+      "path": "src/db/migrations/meta/_journal.json",
+      "sha256": "92b40ceb7168a04cdcf9da17f442ddda4ae076df31e277b34921ee3daaf9d6cf"
+    },
+    {
+      "path": "src/db/repositories/catalog-repository.ts",
+      "sha256": "c19c44f4308027b3ad8383dd08fc2c851a0d6f1f85168056bd64539f6a5d14ae"
+    },
+    {
+      "path": "src/db/repositories/memory-question-study-repository.ts",
+      "sha256": "d6dbeb7e25c73ff426a5be6a1652f41829a03ec233f4366b1689595da6b7f4da"
+    },
+    {
+      "path": "src/db/repositories/memory/catalog.ts",
+      "sha256": "ca0b41d2662841d40accb133f890922940031d43c2e4e0869206efdd44fe1e56"
+    },
+    {
+      "path": "src/db/repositories/memory/store.ts",
+      "sha256": "eac2139ae9e02aceba51d2aaa90b41211c6d94d15faf7cf4b10ff7fee389f17d"
+    },
+    {
+      "path": "src/db/repositories/question-study-repository.ts",
+      "sha256": "e20d35df0ec311dda8eb1e1b90b6fb5126a420c799f8b39cdb3972aaf990b894"
+    },
+    {
+      "path": "src/db/schema/index.ts",
+      "sha256": "eae74b15de9a41f7eb940ea8e1e318e100852e2915a1eb03557efea47f41d172"
+    },
+    {
+      "path": "src/features/activities/components/question-activity.tsx",
+      "sha256": "133ab423155132a29bb40ffb09a9d21651f6c48aaf5ac3b31532e7a4d76b854c"
+    },
+    {
+      "path": "src/features/activities/components/question-panel.tsx",
+      "sha256": "b75b442221f9a1fbcb044fbb4e19df6de27ad053646c6cfefc6df81a77b817d8"
+    },
+    {
+      "path": "src/features/lessons/lesson-stepper.tsx",
+      "sha256": "0f4b638b09678ebba1869bf32445a67900631be6af1d25b9f9846cafe0e1d273"
+    },
+    {
+      "path": "src/features/lessons/lesson-steps.tsx",
+      "sha256": "a04c290145d9e033a07bfc83a9dcb5770406afe1d9f70994e99613f9c438269e"
+    },
+    {
+      "path": "src/styles/application/interactions.css",
+      "sha256": "928221676b90a0dcb07689d9c135e228090e5bcd5c19221bd1519a001c2a7db6"
+    },
+    {
+      "path": "tests/integration/study-rewards.test.ts",
+      "sha256": "2b459a41fdcb685c8e655309a5e7684db7862532b1214cf766a02d0dc43c74d3"
+    },
+    {
+      "path": "src/app/api/lesson-resume/route.ts",
+      "sha256": "ced497cc8c7d1e32dcf02e7ad51c469b25fb06eedceb42f282b4f50e464bf714"
+    },
+    {
+      "path": "src/db/migrations/0020_giant_grey_gargoyle.sql",
+      "sha256": "a4d0be73b10652d90826f5d3f866fffec681c4ea4f15bc792fa7c4de228cc843"
+    },
+    {
+      "path": "src/db/migrations/meta/0020_snapshot.json",
+      "sha256": "581e2c27de711622606a3a5348984a9cfd3ee828daaf1f46d05fc723cb838f0e"
+    },
+    {
+      "path": "src/db/repositories/lesson-resume-repository.ts",
+      "sha256": "9d1d26367ac629acef5b35e1b5b84da3fc40597467085d77db43c2e0debcbc4c"
+    },
+    {
+      "path": "src/db/repositories/memory-lesson-resume-repository.ts",
+      "sha256": "29bd3b2283e0abb4235ac3b5da968c24708c7e04ffdff73da89ede492b9c16f4"
+    },
+    {
+      "path": "src/db/schema/lesson-resumes.ts",
+      "sha256": "def0318ffb650984a90c8e9820b60793c10d6ef98c759e1096583617078d41b8"
+    },
+    {
+      "path": "src/features/lessons/resume-api.ts",
+      "sha256": "fc77a7e4aedd33465df0ca68aa0792ccb6f5d4340e872fb090effe1cad442b5b"
+    },
+    {
+      "path": "src/features/lessons/resume-contracts.ts",
+      "sha256": "7b210d570bce814377f2243f0ec163f48e4aa39974fd785d52d852b1d9ac56ce"
+    },
+    {
+      "path": "src/features/lessons/resume-policy.ts",
+      "sha256": "16e0e64f87a8997e8717d57df99c68c68049ef2990ffc4688e6fd2a7ccf53eea"
+    },
+    {
+      "path": "src/features/lessons/resume-provider.tsx",
+      "sha256": "73aa8e4d5e982ab67b102d06a1074bdd0cebdaec8909ee76e3696be80fb0e1c1"
+    },
+    {
+      "path": "tests/component/lesson-resume-provider.test.tsx",
+      "sha256": "6ce43882f7f2d7a45ec62cbc72877d30cebaf5cb7e8fddd4918842df1c3bd1e5"
+    },
+    {
+      "path": "tests/component/question-resume.test.tsx",
+      "sha256": "cab0013cc6a1c81824e7b965ee8cdf24d43624449ee2cec67c64341a23948ee7"
+    },
+    {
+      "path": "tests/e2e/lesson-resume.spec.ts",
+      "sha256": "b7af1511601360abdb156a927a2f9b1c1427efc9842f241a67713a2eab8b5475"
+    },
+    {
+      "path": "tests/integration/lesson-resume.test.ts",
+      "sha256": "2732895a0f0ad7b3b1c4a953d97e37d1339ba83be9a530e672c2b0d23a2447ed"
+    },
+    {
+      "path": "tests/unit/lesson-resume.test.ts",
+      "sha256": "72cb222a71ceb0500be7668606eac7657e35d8d225134809a48ba3c7f1d4d594"
+    }
+  ],
+  "baseline": [
+    {
+      "path": "src/app/api/study-sessions/route.ts",
+      "sha256": "be31545c4ccbbf6709c12a55769d54977e40b77795c687f8df3f2fadaff3f2ea",
+      "currentSha256": "be31545c4ccbbf6709c12a55769d54977e40b77795c687f8df3f2fadaff3f2ea",
+      "changed": false
+    },
+    {
+      "path": "src/app/page.tsx",
+      "sha256": "90bfbf21d8ac171967d72ffc9cd77a378c4efc9ac7d7f6e35917153ba5226368",
+      "currentSha256": "90bfbf21d8ac171967d72ffc9cd77a378c4efc9ac7d7f6e35917153ba5226368",
+      "changed": false
+    },
+    {
+      "path": "src/app/plan/page.tsx",
+      "sha256": "b450ef1e26e8e62b4b4c76b31fbd7a1d3fe8f8da8e83010c110a20faea16b76b",
+      "currentSha256": "b450ef1e26e8e62b4b4c76b31fbd7a1d3fe8f8da8e83010c110a20faea16b76b",
+      "changed": false
+    },
+    {
+      "path": "src/app/study/[sessionId]/page.tsx",
+      "sha256": "f48f08a9b7e7b1ff4164906559d8a447344c1ae696f072fcdabd78368096d070",
+      "currentSha256": "31cc179b0c01cade9853721cd50cb61a82e821ce09d611e2311e567f2b9d13ac",
+      "changed": true
+    },
+    {
+      "path": "src/db/repositories/catalog-repository.ts",
+      "sha256": "90f0713ad1b658f3836c0e54e871486a97d671831663e82886ceaf260b80382c",
+      "currentSha256": "c19c44f4308027b3ad8383dd08fc2c851a0d6f1f85168056bd64539f6a5d14ae",
+      "changed": true
+    },
+    {
+      "path": "src/db/repositories/memory-question-study-repository.ts",
+      "sha256": "0d085bce4c93c31d49357a9d9a53a4ade1a32e017fecf3bcb621a3c81e887ebb",
+      "currentSha256": "d6dbeb7e25c73ff426a5be6a1652f41829a03ec233f4366b1689595da6b7f4da",
+      "changed": true
+    },
+    {
+      "path": "src/db/repositories/memory-study-session-repository.ts",
+      "sha256": "1090dffcb95e9568ef41005ba2c9893a436d19af34500b09d19c9cce5b357a50",
+      "currentSha256": "1090dffcb95e9568ef41005ba2c9893a436d19af34500b09d19c9cce5b357a50",
+      "changed": false
+    },
+    {
+      "path": "src/db/repositories/memory/catalog.ts",
+      "sha256": "6a7e86884d5c66069b3950f3754203a9ca94cea7f37f53a528e0ed1e2ef1724d",
+      "currentSha256": "ca0b41d2662841d40accb133f890922940031d43c2e4e0869206efdd44fe1e56",
+      "changed": true
+    },
+    {
+      "path": "src/db/repositories/question-repository.ts",
+      "sha256": "a70dbbc56c072823625f89ef30f4ffbd81f635850e7fdc72aaf11f74763c739b",
+      "currentSha256": "a70dbbc56c072823625f89ef30f4ffbd81f635850e7fdc72aaf11f74763c739b",
+      "changed": false
+    },
+    {
+      "path": "src/db/repositories/question-study-repository.ts",
+      "sha256": "11694c8fd1378c25af152c785a570a89b788c0c37bf72411520bef2d407f1d33",
+      "currentSha256": "e20d35df0ec311dda8eb1e1b90b6fb5126a420c799f8b39cdb3972aaf990b894",
+      "changed": true
+    },
+    {
+      "path": "src/db/repositories/study-session-repository.ts",
+      "sha256": "f77a62b833cc8441a6568d3635977a0ea31140dbb4996bf1ba14f38a43a9fd55",
+      "currentSha256": "f77a62b833cc8441a6568d3635977a0ea31140dbb4996bf1ba14f38a43a9fd55",
+      "changed": false
+    },
+    {
+      "path": "src/features/lessons/api.ts",
+      "sha256": "e700252d14fbec1caa149d78675072cfec9acff930cbeeceaab5a2d05832df39",
+      "currentSha256": "e700252d14fbec1caa149d78675072cfec9acff930cbeeceaab5a2d05832df39",
+      "changed": false
+    },
+    {
+      "path": "src/features/study-sessions/api.ts",
+      "sha256": "eead52c3f8c5d1f0b3ae7c9220bd6a226ca9ef292b3053fd51f53f19207c240b",
+      "currentSha256": "eead52c3f8c5d1f0b3ae7c9220bd6a226ca9ef292b3053fd51f53f19207c240b",
+      "changed": false
+    },
+    {
+      "path": "src/features/study-sessions/contracts.ts",
+      "sha256": "03fb6c6b73a84aae915901813aee8b0db182f3d0be0156c257e7b1de36703bce",
+      "currentSha256": "03fb6c6b73a84aae915901813aee8b0db182f3d0be0156c257e7b1de36703bce",
+      "changed": false
+    },
+    {
+      "path": "src/features/study-sessions/planner-policy.ts",
+      "sha256": "4c14c9966411a9022dd34ee94c08b509e8af2c5117ee8c87800ea27b09899792",
+      "currentSha256": "4c14c9966411a9022dd34ee94c08b509e8af2c5117ee8c87800ea27b09899792",
+      "changed": false
+    },
+    {
+      "path": "src/features/study-sessions/session-controls.tsx",
+      "sha256": "8b36a3507de2fc7d45fa5a9fb02a5c26523040921de27e46dbd23ea925f33aef",
+      "currentSha256": "8b36a3507de2fc7d45fa5a9fb02a5c26523040921de27e46dbd23ea925f33aef",
+      "changed": false
+    },
+    {
+      "path": "src/features/today/today-plan.tsx",
+      "sha256": "cb2964849bc1eb5b0348d898cae3440624738d96a7a7375932547f5112ae27b6",
+      "currentSha256": "cb2964849bc1eb5b0348d898cae3440624738d96a7a7375932547f5112ae27b6",
+      "changed": false
+    },
+    {
+      "path": "src/styles/application/interactions.css",
+      "sha256": "d7f291b2739b8d1920d227f1844ba3213ea34fead0f38fd6032b9bcd74032720",
+      "currentSha256": "928221676b90a0dcb07689d9c135e228090e5bcd5c19221bd1519a001c2a7db6",
+      "changed": true
+    },
+    {
+      "path": "src/db/repositories/adaptive-session-data.ts",
+      "sha256": "e5bab3fc46ccf672645368e6f7b43eae4d56ac6678bef3a137d072878845d1c3",
+      "currentSha256": "e5bab3fc46ccf672645368e6f7b43eae4d56ac6678bef3a137d072878845d1c3",
+      "changed": false
+    },
+    {
+      "path": "src/db/repositories/memory-adaptive-session-data.ts",
+      "sha256": "5769d6c40a957ade20f0328789cf35c4e52c144d2b6b2870143b2150cc1730a4",
+      "currentSha256": "5769d6c40a957ade20f0328789cf35c4e52c144d2b6b2870143b2150cc1730a4",
+      "changed": false
+    },
+    {
+      "path": "src/features/study-sessions/adaptive-candidates.ts",
+      "sha256": "73bb69e1a2ff9d935d515c97a2e07c21cd8f395b91d5b0d539cfc714cd353e64",
+      "currentSha256": "73bb69e1a2ff9d935d515c97a2e07c21cd8f395b91d5b0d539cfc714cd353e64",
+      "changed": false
+    },
+    {
+      "path": "src/features/study-sessions/frozen-membership.ts",
+      "sha256": "045b957f62fe297d1c5619f69d484c9a44c68cd53bc3a3991460a15489b87c9f",
+      "currentSha256": "045b957f62fe297d1c5619f69d484c9a44c68cd53bc3a3991460a15489b87c9f",
+      "changed": false
+    },
+    {
+      "path": "src/features/study-sessions/session-summary.ts",
+      "sha256": "ed9ade3d8a1a857dc701dc058a0957b84f0902478d531d87006a698adb9dd3e2",
+      "currentSha256": "ed9ade3d8a1a857dc701dc058a0957b84f0902478d531d87006a698adb9dd3e2",
+      "changed": false
+    },
+    {
+      "path": "tests/e2e/adaptive-session.spec.ts",
+      "sha256": "d4a18db6634eb791c32377611f709f8bd16f3fee47bb4682d2aa8c7220897789",
+      "currentSha256": "d4a18db6634eb791c32377611f709f8bd16f3fee47bb4682d2aa8c7220897789",
+      "changed": false
+    },
+    {
+      "path": "tests/integration/adaptive-sessions.test.ts",
+      "sha256": "405ae42b4a6d53456ca147fd9bdd01539b5be321783d8f8d8bac26b56d7461fc",
+      "currentSha256": "405ae42b4a6d53456ca147fd9bdd01539b5be321783d8f8d8bac26b56d7461fc",
+      "changed": false
+    },
+    {
+      "path": "tests/unit/adaptive-session-policy.test.ts",
+      "sha256": "3eacd592cca5e46c11b4d636c9dd7a14996bdd6fa49e7fbd9b58e4389cab31f0",
+      "currentSha256": "3eacd592cca5e46c11b4d636c9dd7a14996bdd6fa49e7fbd9b58e4389cab31f0",
+      "changed": false
+    },
+    {
+      "path": "tests/unit/frozen-membership.test.ts",
+      "sha256": "7c052110c10211723f50084341c74afa37980787a8735e0874832caf1d661b41",
+      "currentSha256": "7c052110c10211723f50084341c74afa37980787a8735e0874832caf1d661b41",
+      "changed": false
+    },
+    {
+      "path": "tests/unit/session-summary.test.ts",
+      "sha256": "df8cbb544b577c42c3497fac9a054eda2dbb19b93f09697f9eedf8284ec7695f",
+      "currentSha256": "df8cbb544b577c42c3497fac9a054eda2dbb19b93f09697f9eedf8284ec7695f",
+      "changed": false
+    }
+  ],
+  "sourceFilesUnchanged": 12,
+  "linksChecked": 70
+}
