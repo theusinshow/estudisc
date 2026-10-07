@@ -1,5 +1,16 @@
 # Estudisc current plan
 
+## Completed rollout — MAT-07 v5 live (2026-10-07)
+
+Used the dedicated Orca project browser and existing authenticated ADMIN session, without password/cookie/production secret extraction. Actual production preview 200/ready/exact packet SHA 95a5462e…; targeted import 201/imported/one lesson/eighteen Activities; existing Admin Direct publication 200/published/one newly published release. Real actor/mode recorded, no independent QA fabricated or human content review requested.
+
+Acceptance after activation: old v4 and current v5 both 200/Publicada; twelve Questions each with unchanged before/after rendered content/answer/hint hash 89454a00…; Mathematics nineteen unique lesson links and unchanged twenty total including next shortcut; published lesson 200/one numeric explorer/16% de 275 = 44/no draft banner. No learner answers, full corpus import, Question rewrite or production migration. Local/session/operator receipts are ignored; sanitized factual public receipt: [activation](docs/estudisc/TARGETED-LESSON-RELEASE.json).
+
+- [x] Targeted append implemented and protected code release/alias/main checks completed.
+- [x] Real authenticated pilot preview/import/Admin Direct activation and preservation/learner-view smoke.
+
+NEXT ACTION: Phase 9 pilot is accepted and live. Continue a bounded batch of source-anchored enrichment for actual goals and existing components, preserving original versions/Questions/rights disclosures; only concrete pedagogical/structural exceptions need higher routing. No editorial/user review gate. Publish rollout receipts through protected GitHub documentation checks; previous authentication/deployment/model waits below are historical.
+
 ## Actual rollout — Targeted importer code deployed (2026-10-07)
 
 Implementation 07f958d and accumulated evolution merged through [PR #3](https://github.com/theusinshow/estudisc/pull/3) as 7bbab0d. PR/main eight protected checks all SUCCESS. Existing Vercel project deployed main successfully: dpl_D5zF6QE7j3hVbVWsgAaQhgeT4vcV READY, existing vecta-three.vercel.app alias verified against that deployment, login 200/Estudisc title, unauthenticated targeted preview 401. No feature env changed, production migration or content import/publication. First branch push failed with GitHub Internal Server Error; verified/retry succeeded. Auto-merge is unavailable; ordinary merge occurred only after all checks passed.

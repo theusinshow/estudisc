@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-07 — MAT-07 v5 activated in production
+
+- Use the real existing authenticated ADMIN session to preview/import one source/hash-bound lesson version and activate through existing Admin Direct under standing owner authorization. One new published lesson release; no fabricated editorial approvals, credential extraction or corpus-wide import.
+- Verify v4 remains published and v5 is live with one percentage explorer, twelve unchanged Question/answer/hint texts, nineteen unique Mathematics lessons and no draft banner. No learner answers submitted or production migration; actual activation receipts are in docs/estudisc/TARGETED-LESSON-RELEASE.json.
+
 ## 2026-10-07 — Verified production code release
 
 - Merge PR #3 after all eight protected engineering checks; main CI also passes. Deploy 7bbab0d to the existing Vercel project and verify READY/actual build commit/unchanged vecta-three.vercel.app alias, public login and authentication guard.

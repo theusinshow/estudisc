@@ -11,8 +11,20 @@
   "publicSmoke": { "loginStatus": 200, "estudiscTitle": true, "unauthenticatedTargetedPreviewStatus": 401 },
   "codeDeployed": true,
   "productionMigrationExecuted": false,
-  "productionLessonImported": false,
-  "productionLessonPublished": false,
-  "remaining": "Actual source-bound MAT-07 v5 import and Admin Direct activation require a real authenticated ADMIN session. Session readiness was requested; no password/cookie/production secret was read and no editorial approval is required.",
+  "productionLessonImported": true,
+  "productionLessonPublished": true,
+  "activation": {
+    "verifiedAt": "2026-10-07T20:13:48Z",
+    "authentication": "Existing authenticated ADMIN session in the dedicated Orca project browser; no password/cookie/production secret extracted",
+    "preview": { "httpStatus": 200, "status": "ready", "contentHash": "95a5462ef090b8bacf61e08c070e8fe1dc14403f99fc77e768bc746e697b57dc", "lessonCount": 1, "activityCount": 18, "conceptCount": 6 },
+    "import": { "httpStatus": 201, "status": "imported", "lessonId": "MAT-07", "lessonVersion": 5, "importedLessons": 1, "importedActivities": 18, "trackId": "ifsc-2027-mathematics" },
+    "publication": { "httpStatus": 200, "published": true, "lessons": 1, "newlyPublished": 1, "releases": 13, "mode": "admin_direct", "actualAuthenticatedActorRecorded": true, "independentQaRecorded": false },
+    "preservation": { "oldVersion4HttpStatus": 200, "oldVersion4Status": "published", "newVersion5HttpStatus": 200, "newVersion5Status": "published", "questionsEach": 12, "beforeAndAfterQuestionTextHash": "89454a00876aca865ab931e6d4edd3e80862cf255cd2af38af5db2e662f410ad", "mathematicsUniqueLessonLinks": 19, "mathematicsTotalLessonLinksBeforeAndAfter": 20 },
+    "publishedLessonSmoke": { "httpStatus": 200, "title": "Porcentagem", "numericExplorers": 1, "initialOutput": "16% de 275 = 44", "administrativeDraftBanner": false },
+    "learnerAnswersSubmitted": false,
+    "corpusWideImport": false,
+    "productionMigrationExecuted": false
+  },
+  "remaining": "Phase 9 pilot is live. Continue bounded source/goal/component-defined enrichment after this engineering acceptance; preserve original versions/Questions and use existing Admin Direct standing authorization.",
   "packetSha256": "95a5462ef090b8bacf61e08c070e8fe1dc14403f99fc77e768bc746e697b57dc"
 }
