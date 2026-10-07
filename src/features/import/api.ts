@@ -9,3 +9,6 @@ export { lessonPackSchema } from "./application/lesson-pack-schema";
 export type { LessonPack } from "./application/lesson-pack-schema";
 export { validateLessonPack } from "./application/lesson-pack-validation";
 export { validateTrackPack } from "./application/track-pack-validation";
+export { lessonVersionPackSchema } from "./application/lesson-version-contracts";
+export { importLessonVersion } from "./application/lesson-version-policy";
+export type { LessonVersionPack } from "./application/lesson-version-contracts";

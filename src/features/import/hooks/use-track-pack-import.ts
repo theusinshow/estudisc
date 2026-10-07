@@ -45,7 +45,8 @@ async function previewSource(nextSource = source) {
       setImportResult(null);
       setMessage("Validando Pack...");
 
-      const response = await fetch("/api/import/track/preview", {
+      const endpoint = typeof parsed.value === "object" && parsed.value !== null && "schema" in parsed.value && parsed.value.schema === "caderno.lesson.v2" ? "/api/import/lesson/preview" : "/api/import/track/preview";
+      const response = await fetch(endpoint, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(parsed.value)
@@ -65,6 +66,8 @@ async function previewSource(nextSource = source) {
           ? "Pack já importado. Nenhuma mutação necessária."
           : "Preview válido. Aplicar liberado."
       );
+    } catch {
+      setPreview(null); setError("Não foi possível validar o Pack. Verifique a conexão e tente novamente."); setMessage("Preview falhou.");
     } finally {
       setIsBusy(false);
     }
@@ -84,7 +87,8 @@ async function applySource() {
       setError(null);
       setMessage("Aplicando Pack...");
 
-      const response = await fetch("/api/import/track", {
+      const endpoint = typeof parsed.value === "object" && parsed.value !== null && "schema" in parsed.value && parsed.value.schema === "caderno.lesson.v2" ? "/api/import/lesson" : "/api/import/track";
+      const response = await fetch(endpoint, {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(parsed.value)
@@ -100,6 +104,8 @@ async function applySource() {
       const payload = await readValidatedResponse(response, importResponseSchema);
       setImportResult(payload);
       setMessage(payload.status === "already_imported" ? "Pack já estava importado." : "Pack aplicado ao catálogo.");
+    } catch {
+      setImportResult(null); setError("Não foi possível confirmar a importação. Repita com o mesmo Pack para verificar o resultado."); setMessage("Aplicação não confirmada.");
     } finally {
       setIsBusy(false);
     }

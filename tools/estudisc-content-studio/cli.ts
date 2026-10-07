@@ -11,6 +11,7 @@ import { runBlueprintPipeline } from "./blueprints";
 import { lessonBlueprintSchema } from "./blueprint-contracts";
 import { prepareEnrichmentPreview } from "./enrichment";
 import { enrichmentRecipeSchema } from "./enrichment-contracts";
+import { exportLessonVersion } from "./lesson-version-export";
 
 const { values, positionals } = parseArgs({ allowPositionals: true, options: {
   workspace: { type: "string" }, request: { type: "string" }, owner: { type: "string" }, model: { type: "string" },
@@ -33,6 +34,12 @@ try {
   if (!existsSync(join(root, "AGENTS.md")) || !existsSync(join(root, "tools/estudisc-content-studio/contracts.ts"))) throw new Error("Run from Estudisc repository root");
   const studio = new Studio(root, values.workspace);
   switch (command) {
+    case "enrichment-export": {
+      const result = exportLessonVersion(studio, readJson(resolve(root, required(values.request, "--request RECIPE"))));
+      console.log(`TARGETED LESSON PACK: ${result.packet.lesson.id} v${result.packet.lesson.version}; Question references=${result.packet.questionReferences.length}; written=${result.written}; hash=${result.contentHash}.`);
+      console.log(`File: ${result.file}; import into existing collection, then activate with the existing authenticated Admin Direct request. No actual publication performed by this command.`);
+      break;
+    }
     case "enrichment-preview": {
       const result = prepareEnrichmentPreview(studio, readJson(resolve(root, required(values.request, "--request RECIPE"))));
       console.log(`ENRICHMENT PREVIEW: ${result.preview.lesson.id} v${result.preview.lesson.version}; added blocks=${result.preview.newBlocks.length}; retained Questions=${result.preview.questionReferences.length}; written=${result.written}; ${result.reviewRequest.gate}.`);

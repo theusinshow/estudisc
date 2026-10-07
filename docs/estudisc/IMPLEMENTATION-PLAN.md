@@ -130,6 +130,8 @@ Acceptance: exactly one identified blueprint for each of 132 current lesson vers
 
 ## 12. Phase 9 — Content Enrichment
 
+Targeted import implementation: [TARGETED-LESSON-IMPORT.md](TARGETED-LESSON-IMPORT.md), ADR 0049. Source-bound next-version append now uses existing SQL/memory core and import UI, preserving original collection/Question/history. The earlier Terra handoff is resolved by current-session implementation after user continuation; no model switch claimed. Actual remote deployment/activation and then bounded enrichment batches remain to execute under standing Admin Direct authorization.
+
 Current owner policy: [ADR 0048](../ADR/0048-social-project-direct-release.md) supersedes independent/human editorial release gates. Social/community feedback follows technically validated direct launch using existing Admin Direct with actual authorization/audit records. Missing objective/source/rights facts remain visible; UNREVIEWED is evidence status, not a permission gate. MAT-07 v5 is authorized; compatible targeted lesson-version import is the current engineering prerequisite, documented in [handoff](handoffs/2026-10-07-targeted-enrichment-import.md).
 
 First review-preparation increment: [ENRICHMENT-PREVIEW.md](ENRICHMENT-PREVIEW.md), ADR 0047. A source-bound MAT-07 percentage explorer is illustrated in an isolated next-version candidate; all blueprints/candidates remain UNREVIEWED/REVIEW_REQUIRED. This preparation supplies no approved blueprint, independent factual approval or reviewed batch. Existing Studio review/export remains authoritative.

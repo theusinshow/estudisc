@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-07 — Targeted immutable lesson-version import
+
+- Add explicit caderno.lesson.v2 source/Track/module/version/hash and immutable shared Question reference contract (ADR 0049). Extend existing SQL/memory import adapters to append one draft lesson with unchanged source/evaluator/Question/history, no duplicate collection or new schema migration.
+- Add guarded preview/apply endpoints and compatible existing import UI routing/result/error states; Student reads retain old published content until activation, ADMIN previews drafts and explicit historical lesson URLs remain usable. Correct memory Track scoping for equal module IDs and SQL version-specific Activity counts.
+- Add source-bound pilot export, exact-byte generated Mathematics source mirror for CI, migration-backed preservation/rollback/idempotence/permission fixtures and browser workflow QA. Materialized read contexts cannot be replayed as Track imports. Existing authenticated Admin Direct remains the publication path; no fabricated review or implicit production release.
+
 ## 2026-10-07 — Social-project direct release rule
 
 - Record the explicit owner instruction in AGENTS/AUTONOMY/ADR 0048: technically validated authorized features/enrichment launch directly; users provide review/feedback, without requiring Matheus or independent editorial approval. Existing Admin Direct/audit actor/reason remains authoritative; no invented Reviewer/QA or new publication mode.

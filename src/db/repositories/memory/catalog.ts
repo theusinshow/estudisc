@@ -1,10 +1,27 @@
 import type { AppliedTrackImport, ExistingPackImport, TrackImportRepository } from "@/features/import/application/track-import-service";
 import type { TrackPack } from "@/features/import/application/track-pack-schema";
 import { getMemoryStore, summarizePack } from './store';
+import { resolveLessonVersionContext, targetedResult } from "@/features/import/application/lesson-version-policy";
+import { LessonVersionConflictError, type LessonVersionPack } from "@/features/import/application/lesson-version-contracts";
+import type { LessonDetail } from "../catalog-repository";
 
 
 export class MemoryTrackImportRepository implements TrackImportRepository {
   constructor(private readonly store = getMemoryStore()) {}
+
+  async executeLessonVersion(pack: LessonVersionPack, contentHash: string, preview: boolean) {
+    // No await between validation and append: the process-global disposable store stays atomic.
+    const receipt = this.store.packImports.find(row => row.packId === pack.packId && row.version === pack.version);
+    if (receipt) { if (receipt.contentHash !== contentHash || receipt.manifest?.schema !== "caderno.track.v2" || receipt.manifest.track.metadata.lessonVersionImport === undefined) throw new LessonVersionConflictError("Pack receipt conflict"); return targetedResult(pack, "already_imported"); }
+    if (!this.store.tracks.some(t => t.stableId === pack.target.trackId && t.contentVersion === pack.target.trackVersion)) throw new LessonVersionConflictError("Target Track not found");
+    const manifests = [...this.store.packImports].reverse().flatMap(row => row.manifest ? [row.manifest] : []);
+    const { base, projection } = resolveLessonVersionContext(manifests, pack);
+    if (base.status !== "published") throw new LessonVersionConflictError("Base lesson must be published");
+    if (manifests.some(p => p.schema === "caderno.track.v2" && p.track.modules.some(m => m.lessons.some(l => l.id === pack.lesson.id && l.version === pack.lesson.version)))) throw new LessonVersionConflictError("Lesson version already exists");
+    if (preview) return targetedResult(pack, "ready");
+    this.store.packImports.push({ packId: pack.packId, version: pack.version, contentHash, manifest: projection });
+    return targetedResult(pack, "imported");
+  }
 
   async findPackImport(packId: string, version: number): Promise<ExistingPackImport | null> {
     return this.store.packImports.find((entry) => entry.packId === packId && entry.version === version) ?? null;
@@ -41,6 +58,7 @@ export class MemoryTrackImportRepository implements TrackImportRepository {
       module.lessons.forEach((lesson, lessonIndex) => {
         this.store.lessons.push({
           stableId: lesson.id,
+          trackStableId: pack.track.id,
           moduleStableId: module.id,
           title: lesson.title,
           contentVersion: lesson.version,
@@ -101,7 +119,7 @@ export class MemoryCatalogRepository {
       description: track.description,
       lessonCount: this.store.lessons.filter((lesson) =>
         this.store.modules.some(
-          (module) => module.stableId === lesson.moduleStableId && module.trackStableId === track.stableId
+          (module) => module.stableId === lesson.moduleStableId && module.trackStableId === track.stableId && (!lesson.trackStableId || lesson.trackStableId === track.stableId)
         )
       ).length
     }));
@@ -125,23 +143,30 @@ export class MemoryCatalogRepository {
           stableId: module.stableId,
           title: module.title,
           lessons: this.store.lessons
-            .filter((lesson) => lesson.moduleStableId === module.stableId)
+            .filter((lesson) => lesson.moduleStableId === module.stableId && (!lesson.trackStableId || lesson.trackStableId === module.trackStableId))
             .sort((left, right) => left.orderIndex - right.orderIndex)
             .map((lesson) => ({
               stableId: lesson.stableId,
               title: lesson.title,
-              activityCount: this.store.activities.filter((activity) => activity.lessonStableId === lesson.stableId)
+              activityCount: this.store.activities.filter((activity) => activity.lessonStableId === lesson.stableId && activity.trackStableId === track.stableId)
                 .length
             }))
         }))
     };
   }
 
-  async getLesson(stableId: string, version?:number,trackId?:string) {
+  async getLesson(stableId: string, version?:number,trackId?:string, publishedOnly=false): Promise<LessonDetail|null> {
+    if (version === undefined) {
+      for (const entry of [...this.store.packImports].reverse()) {
+        const pack = entry.manifest; if (pack?.schema !== "caderno.track.v2" || trackId !== undefined && pack.track.id !== trackId) continue;
+        const found = pack.track.modules.flatMap(m => m.lessons).filter(l => l.id === stableId && (!publishedOnly || l.status === "published")).sort((a,b) => b.version-a.version)[0];
+        if (found) return this.getLesson(stableId, found.version, pack.track.id, publishedOnly);
+      }
+    }
     if(version!==undefined){
       for(const entry of [...this.store.packImports].reverse()){
         const pack=entry.manifest;if(pack?.schema!=="caderno.track.v2"||trackId!==undefined&&pack.track.id!==trackId)continue;
-        for(const moduleRecord of pack.track.modules){const lesson=moduleRecord.lessons.find(lesson=>lesson.id===stableId&&lesson.version===version);if(!lesson)continue;
+        for(const moduleRecord of pack.track.modules){const lesson=moduleRecord.lessons.find(lesson=>lesson.id===stableId&&lesson.version===version);if(!lesson || publishedOnly && lesson.status !== "published")continue;
           return {stableId:lesson.id,title:lesson.title,trackStableId:pack.track.id,trackTitle:pack.track.title,metadata:{kind:lesson.kind,status:lesson.status,estimatedMinutes:lesson.estimatedMinutes},resumeScope:lesson.status==="published"?{trackId:pack.track.id,lessonId:lesson.id,version:lesson.version}:undefined,
             concepts:lesson.concepts.map(concept=>({stableId:concept.id,title:concept.title,summary:concept.summary??null})),
             blocks:lesson.blocks.map(block=>({stableId:block.id,type:block.type,payload:block.payload})),

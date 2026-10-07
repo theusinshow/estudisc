@@ -21,6 +21,7 @@ export type MemoryModule = {
 
 export type MemoryLesson = {
   stableId: string;
+  trackStableId?: string;
   moduleStableId: string;
   title: string;
   contentVersion: number;

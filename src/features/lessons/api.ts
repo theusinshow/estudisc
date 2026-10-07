@@ -5,10 +5,13 @@ import { getOwnerProfile } from "@/features/auth/owner";
 
 export async function getLesson(stableId: string,version?:number,trackId?:string):Promise<LessonDetail|null> {
   if (getDatabaseUrl() === "memory://local") {
-    return new MemoryCatalogRepository().getLesson(stableId,version,trackId);
+    const repo = new MemoryCatalogRepository();
+    const lesson = await repo.getLesson(stableId,version,trackId);
+    if (lesson?.metadata?.kind && lesson.metadata.status !== "published" && (await getOwnerProfile()).role !== "ADMIN") return version === undefined ? repo.getLesson(stableId,undefined,trackId,true) : null;
+    return lesson;
   }
 
   const lesson=await withCatalogRepository((repository) => repository.getLesson(stableId,version,trackId));
-  if(lesson?.metadata?.kind&&(lesson.metadata.status!=="published"||!lesson.metadata.qaReleaseId)&&(await getOwnerProfile()).role!=="ADMIN")return null;
+  if(lesson?.metadata?.kind&&(lesson.metadata.status!=="published"||!lesson.metadata.qaReleaseId)&&(await getOwnerProfile()).role!=="ADMIN")return version === undefined ? withCatalogRepository(repository => repository.getLesson(stableId,undefined,trackId,true)) : null;
   return lesson;
 }

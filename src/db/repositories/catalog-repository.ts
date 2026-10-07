@@ -154,20 +154,21 @@ export class CatalogRepository {
         moduleTitle: modules.title,
         lessonStableId: lessons.stableId,
         lessonTitle: lessons.title,
+        lessonVersion: lessons.contentVersion,
         activityStableId: activities.stableId
       })
       .from(modules)
       .leftJoin(lessons, eq(lessons.moduleId, modules.id))
       .leftJoin(activities, eq(activities.lessonId, lessons.id))
       .where(and(eq(modules.trackId, track.id),publishedOnly?sql`(${lessons.metadata}->>'kind' IS NULL OR (${lessons.metadata}->>'status'='published' AND ${lessons.metadata}->>'qaReleaseId' IS NOT NULL))`:undefined))
-      .orderBy(asc(modules.orderIndex), asc(lessons.orderIndex), asc(activities.orderIndex));
+      .orderBy(asc(modules.orderIndex), asc(lessons.orderIndex), desc(lessons.contentVersion), asc(activities.orderIndex));
 
     const moduleMap = new Map<
       string,
       {
         stableId: string;
         title: string;
-        lessonMap: Map<string, { stableId: string; title: string; activityIds: Set<string> }>;
+        lessonMap: Map<string, { stableId: string; title: string; version: number; activityIds: Set<string> }>;
       }
     >();
 
@@ -177,7 +178,7 @@ export class CatalogRepository {
         {
           stableId: row.moduleStableId,
           title: row.moduleTitle,
-          lessonMap: new Map<string, { stableId: string; title: string; activityIds: Set<string> }>()
+          lessonMap: new Map<string, { stableId: string; title: string; version: number; activityIds: Set<string> }>()
         };
 
       if (row.lessonStableId && row.lessonTitle) {
@@ -186,10 +187,11 @@ export class CatalogRepository {
           {
             stableId: row.lessonStableId,
             title: row.lessonTitle,
+            version: row.lessonVersion!,
             activityIds: new Set<string>()
           };
 
-        if (row.activityStableId) {
+        if (row.activityStableId && lessonEntry.version === row.lessonVersion) {
           lessonEntry.activityIds.add(row.activityStableId);
         }
 
@@ -215,7 +217,7 @@ export class CatalogRepository {
     };
   }
 
-  async getLesson(stableId: string, version?:number,trackId?:string): Promise<LessonDetail | null> {
+  async getLesson(stableId: string, version?:number,trackId?:string,publishedOnly=false): Promise<LessonDetail | null> {
     const [lesson] = await this.db
       .select({
         id: lessons.id,
@@ -229,7 +231,7 @@ export class CatalogRepository {
       .from(lessons)
       .innerJoin(modules, eq(modules.id, lessons.moduleId))
       .innerJoin(tracks, eq(tracks.id, modules.trackId))
-      .where(and(eq(lessons.stableId,stableId),version===undefined?undefined:eq(lessons.contentVersion,version),trackId===undefined?undefined:eq(tracks.id,trackId)))
+      .where(and(eq(lessons.stableId,stableId),version===undefined?undefined:eq(lessons.contentVersion,version),trackId===undefined?undefined:eq(tracks.id,trackId),publishedOnly?sql`(${lessons.metadata}->>'kind' IS NULL OR (${lessons.metadata}->>'status'='published' AND ${lessons.metadata}->>'qaReleaseId' IS NOT NULL))`:undefined))
       .orderBy(desc(lessons.contentVersion))
       .limit(1);
 

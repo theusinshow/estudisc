@@ -17,6 +17,8 @@ export function validateTrackPack(input: unknown): TrackPackValidationResult {
   const isV2 = typeof input === "object" && input !== null && "schema" in input && input.schema === "caderno.track.v2";
   const parsed = isV2 ? trackPackV2Schema.safeParse(input) : trackPackSchema.safeParse(input);
 
+  if (parsed.success && parsed.data.schema === "caderno.track.v2" && parsed.data.track.metadata.lessonVersionImport !== undefined) return { ok: false, issues: [{ code: "projection_only", path: "track.metadata.lessonVersionImport", message: "Targeted version read projections cannot be imported as Tracks; replay the caderno.lesson.v2 packet." }] };
+
   if (!parsed.success) {
     return {
       ok: false,

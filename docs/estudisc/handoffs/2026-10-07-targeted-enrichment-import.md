@@ -1,5 +1,7 @@
 # MODEL HANDOFF — Targeted enrichment import
 
+Resolved in the current authorized session (2026-10-07): [targeted implementation/acceptance](../TARGETED-LESSON-IMPORT.md), ADR 0049. No model switch or additional agent. Historical escalation text below no longer blocks implementation or requests user editorial review; protected deployment and actual authenticated activation are the current next steps.
+
 MODEL ESCALATION REQUIRED — new targeted persisted import contract; Terra implementation, not a human editorial review.
 
 Routing: Terra recommended for this new persisted import contract (risk HIGH). No model switch/additional agent was performed.

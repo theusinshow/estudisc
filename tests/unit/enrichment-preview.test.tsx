@@ -1,4 +1,4 @@
-import { mkdtempSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
@@ -63,6 +63,7 @@ describe("source-bound enrichment review preview", () => {
   });
 
   it("retains exact review-request hashes, skips unchanged files and repairs invented review status", () => {
+    mkdirSync(join(root, ".local"), { recursive: true });
     const studio = new Studio(root, mkdtempSync(join(root, ".local/enrichment-tests-")));
     const first = prepareEnrichmentPreview(studio, recipe);
     expect(first.written).toBe(4); expect(first.reviewRequest.gate).toBe("ADMIN_DIRECT_AUTHORIZED");

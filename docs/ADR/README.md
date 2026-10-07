@@ -1,5 +1,7 @@
 # Architecture Decision Records
 
+[ADR 0049](0049-targeted-lesson-version-import.md) adds an exact source/reference-bound targeted lesson-version append, immutable history and compatible read projections, no DDL or parallel engine.
+
 [ADR 0048](0048-social-project-direct-release.md) records the explicit social-project owner instruction: launch technically validated authorized features/content directly through existing Admin Direct; users review usage/content. Human/independent editorial release gates are superseded, never fabricated.
 
 [ADR 0047](0047-source-bound-enrichment-review-previews.md) defines source/hash-bound enrichment review candidates, explicit pending review and preserved original/Question identities without an alternate approval or import path.

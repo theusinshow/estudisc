@@ -1,5 +1,21 @@
 # Estudisc current plan
 
+## Implemented increment — Targeted immutable lesson-version import (2026-10-07)
+
+Base `fd692a8`. User's latest continuation authorizes implementation in the current session/model/effort after the technical handoff; no new agents or editorial permission gate. Social Admin Direct standing release authorization remains effective.
+
+Acceptance: explicit additive targeted v2 import contract with source Track/module/lesson/version/hash identity and existing immutable Question references; append one draft lesson version to the existing module without a new Track/module/Question or corpus re-import. Existing receipts/manifests/lesson versions/Attempts/evidence remain intact. Preview/idempotence/conflicts/concurrent imports/rollback and actual authenticated ADMIN attribution; existing semantic validators/renderers/QA publication. Define current vs frozen/historical projections before writes, with SQL and disposable memory parity. No silent schema mutation; ADR and compatibility/migration plan (prefer no DDL), fixtures and focused integration tests. Complete full gates and actual rollout prerequisites before claiming production success.
+
+- [x] Define ADR 0049, contract/policy and versioned manifest projection strategy.
+- [x] Implement shared validation, SQL/memory targeted append and existing read/publication integration.
+- [x] Add authenticated preview/import route and source-bound pilot exporter; verify rollback/idempotence/old-version/session isolation.
+- [x] Local engineering acceptance, docs/evidence and checkpoint preparation.
+- [ ] Protected remote checks/production code deployment; actual authenticated pilot import/activation.
+
+Local acceptance: 361 tests PASS / three optional real-PostgreSQL SKIP; lint/typecheck/build/packs PASS; full serial default E2E 48 PASS / 18 gated SKIP; post-change targeted UI/old-version URL E2E two PASS / zero SKIP. Migration-backed actual Admin Direct tests preserve original rows, fourteen blocks/eighteen Activities/twelve Question records, no editorial QA fabricated. SQL config/evaluator/Concept link verification; rollback trigger/retry/stale/conflict/32-bit/API permission checks PASS. Initial full browser run exposed memory module-ID scope collisions; scoped descriptors fixed and full rerun passed. Mechanical UI detector no findings, actual mobile/desktop result screenshots inspected. Mathematics CI mirror exact bytes/canonical hash; no original source content, bank, engine, auth, schema, dependency or learner-state changes. [Report/evidence](docs/estudisc/TARGETED-LESSON-IMPORT.md).
+
+NEXT ACTION: current model/effort continuation has resolved the prior technical handoff, no further model/editorial approval wait. Publish this validated code through GitHub's eight protected checks and existing Vercel project, preserving alias/flags. Pilot activation uses existing authenticated ADMIN session and Admin Direct standing authorization; session readiness requested, no raw secret read. Keep actual deployment/import/publication receipts separate; source/CI mirror is not a corpus re-import.
+
 ## Completed policy increment — Social-project direct release (2026-10-07)
 
 Base `86b85f9`. User explicitly superseded mandatory editorial/human review for authorized launches: the project is social and users review actual usage/content. Record the policy persistently and use existing Admin Direct, never fabricate independent QA. Previous Phase 9 review-only gates are historical and superseded for this authorized release.
