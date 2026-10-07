@@ -1,5 +1,7 @@
 # Estudisc — Implementation Gap Analysis
 
+Current deltas: [weekly routine](WEEKLY-ROUTINE.md) and [adaptive sessions](ADAPTIVE-SESSIONS.md). The original gaps below remain the initial audit snapshot; use the reports and current implementation plan for continuation.
+
 Implementation delta: the subsequent authorized Phase 0/1/2 foundation increment is recorded in [EVOLUTION-FOUNDATION.md](EVOLUTION-FOUNDATION.md). Classifications below retain the initial audited checkpoint; use that report and the current plan for implemented flags/navigation/Focus/Today and remaining routine contracts.
 
 Phase 3 delta: [WEEKLY-ROUTINE.md](WEEKLY-ROUTINE.md) records actual routine persistence, onboarding/week/manual/override/focus and checked previews; original gap classifications below remain audit history rather than current implementation status.

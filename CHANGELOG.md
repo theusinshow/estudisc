@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-06 — Adaptive sessions and frozen activity membership
+
+- Extend the existing planner with default-off planner.v2 and 10/20/30/45-minute controls, one composition clock, explicit review/remediation/practice/learning reasons and routine time constraints (ADR 0042). Short sessions deliver shared Questions; full lessons require actual independent editorial QA, available checkpoints, prerequisites and a full estimate that fits.
+- Preserve ACTIVE snapshots across track and lesson versions; bind owner/track/version/activity/Question membership before resolving canonical activities. Batch availability reads and exclude independently successful Questions from ordinary practice while retaining due retrieval and canonical exposure guards.
+- Show publication/mapping caveats and factual session summaries: estimates, wall-clock interval including pauses, latest unique answers and actual independent evidence. Planning/completion never creates mastery evidence; shared assistance, evaluators, review and scoring rules remain unchanged.
+- Add SQL/memory, domain and desktop/mobile coverage. No migration, Pack-schema change, published corpus rewrite or production rollout. Acceptance details: `docs/estudisc/ADAPTIVE-SESSIONS.md`.
+
 ## 2026-10-06 — Weekly routine and checked plan previews
 
 - Add owner-scoped routine.v1 with timezone/calendar budgets, Automatic/Assisted/Manual distribution, priorities, temporary focus/overrides, review targets and explicit simulation time reservation (ADR 0041). Add two empty user-state tables in migration 0019; no Pack or learner-history transformation.

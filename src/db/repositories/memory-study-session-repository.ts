@@ -2,18 +2,30 @@ import { getMemoryStore } from "./memory-store";
 import { SessionStateError, type StudySessionRepository } from "./study-session-repository";
 import { canExposeQuestion } from "@/features/questions/exposure";
 import { questionSchema } from "@/features/questions/contracts";
-import { sessionItemsSchema,type SessionItem } from "@/features/study-sessions/contracts";
+import { sessionItemsSchema,LEGACY_SESSION_BUDGETS,ADAPTIVE_SESSION_BUDGETS,type SessionItem,type SessionBudget } from "@/features/study-sessions/contracts";
 import { planCandidates,examPhase,type PlannerCandidate } from "@/features/study-sessions/planner-policy";
 import { calculateVersionedMastery } from "@/features/mastery/mastery-policy-v2";
 import { memoryRoutineContext } from "./memory-study-plan-repository";
 import { buildRoutineWeek, normalizeRoutine } from "@/features/study-sessions/routine-policy";
 import { assertRoutineBudget, assertRoutineStart } from "@/features/study-sessions/routine-session-constraints";
+import { memoryAdaptiveChoices } from "./memory-adaptive-session-data";
+import { summarizeSession } from "@/features/study-sessions/session-summary";
 export class MemoryStudySessionRepository{
-  constructor(private readonly store=getMemoryStore(),private readonly routineEnabled=false){}
-  private routineWeek(ownerId:string){const row=this.routineEnabled?this.store.studyPlans.find(plan=>plan.ownerId===ownerId):undefined;return row?buildRoutineWeek(normalizeRoutine(row.settings),memoryRoutineContext(this.store,ownerId),new Date()):null;}
-  async plan(ownerId:string,budgetMinutes:15|30|60){
+  constructor(private readonly store=getMemoryStore(),private readonly routineEnabled=false,private readonly adaptiveEnabled=false){}
+  private routineWeek(ownerId:string,now:Date){const row=this.routineEnabled?this.store.studyPlans.find(plan=>plan.ownerId===ownerId):undefined;return row?buildRoutineWeek(normalizeRoutine(row.settings),memoryRoutineContext(this.store,ownerId),now):null;}
+  async plan(ownerId:string,budgetMinutes:SessionBudget,now=new Date()){
+    const allowedBudgets: readonly number[] = [...LEGACY_SESSION_BUDGETS, ...(this.adaptiveEnabled ? ADAPTIVE_SESSION_BUDGETS : [])];
+    if(!allowedBudgets.includes(budgetMinutes))throw new SessionStateError();
     const active=this.store.studySessions.find(row=>row.ownerId===ownerId&&row.status==="ACTIVE");if(active)return active;
-    const subjectLimits=assertRoutineBudget(this.routineWeek(ownerId),budgetMinutes);
+    const subjectLimits=assertRoutineBudget(this.routineWeek(ownerId,now),budgetMinutes);
+    if(this.adaptiveEnabled){
+      const data=memoryAdaptiveChoices(this.store,ownerId,budgetMinutes,subjectLimits,now);
+      const plan=planCandidates(data.choices.map(choice=>choice.candidate),budgetMinutes,"FOUNDATION",data.subjectMinutes,subjectLimits,true);
+      if(!plan.items.length)return null;
+      for(const old of this.store.studySessions.filter(row=>row.ownerId===ownerId&&row.status==="PLANNED")){old.status="ABANDONED";old.endedAt=now;}
+      const items=plan.items.map(candidate=>data.choices.find(choice=>choice.candidate.id===candidate.id)!.item);
+      const row={id:crypto.randomUUID(),ownerId,trackId:items[0].trackId!,status:"PLANNED",budgetMinutes,items,policyVersion:plan.policyVersion,startedAt:null,endedAt:null,createdAt:now};this.store.studySessions.push(row);return row;
+    }
     for(const entry of [...this.store.packImports].reverse()){
       const pack=entry.manifest;if(pack?.schema!=="caderno.track.v2")continue;
       const choices:Array<{candidate:PlannerCandidate;item:SessionItem}>=[];const mastery=(id:string)=>calculateVersionedMastery(this.store.conceptEvidence.filter(item=>item.ownerId===ownerId&&item.conceptStableId===id));
@@ -41,12 +53,18 @@ export class MemoryStudySessionRepository{
   async get(ownerId:string,id:string){return this.store.studySessions.find(row=>row.ownerId===ownerId&&row.id===id)??null;}
   async list(ownerId:string){return this.store.studySessions.filter(row=>row.ownerId===ownerId).slice(-15).reverse();}
   async planningFacts(ownerId:string,now=new Date()){return this.store.studySessions.filter(row=>row.ownerId===ownerId&&(["ACTIVE","PLANNED"].includes(row.status)||row.status==="COMPLETED"&&row.endedAt&&row.endedAt.getTime()>=now.getTime()-9*86400_000)).slice().reverse();}
-  async transition(...[ownerId,id,action]:Parameters<StudySessionRepository["transition"]>){
+  async transition(...[ownerId,id,action,now=new Date()]:Parameters<StudySessionRepository["transition"]>){
     const row=this.store.studySessions.find(row=>row.id===id&&row.ownerId===ownerId);if(!row)throw new SessionStateError();
     const target=action==="start"?"ACTIVE":action==="complete"?"COMPLETED":"ABANDONED";if(row.status===target)return row;
     if(action==="start"?row.status!=="PLANNED":row.status!=="ACTIVE")throw new SessionStateError();
     if(action==="start"&&this.store.studySessions.some(row=>row.ownerId===ownerId&&row.status==="ACTIVE"))throw new SessionStateError();
-    sessionItemsSchema.parse(row.items);if(action==="start")assertRoutineStart(this.routineWeek(ownerId),row.items);row.status=target;if(action==="start")row.startedAt=new Date();else row.endedAt=new Date();return row;
+    sessionItemsSchema.parse(row.items);if(action==="start")assertRoutineStart(this.routineWeek(ownerId,now),row.items);row.status=target;if(action==="start")row.startedAt=now;else row.endedAt=now;return row;
   }
-  async result(ownerId:string,id:string){const session=await this.get(ownerId,id);if(!session)return null;const rows=this.store.attempts.filter(row=>row.ownerId===ownerId&&row.context?.contextKey===id);const unique=new Map(rows.map(row=>[row.activityStableId,row]));return {session,items:sessionItemsSchema.parse(session.items),attempts:rows.length,correct:[...unique.values()].filter(row=>row.outcome==="passed").length,answered:unique.size};}
+  async result(ownerId: string, id: string) {
+    const session = await this.get(ownerId, id); if (!session) return null;
+    const rows = this.store.attempts.filter(row => row.ownerId === ownerId && row.context?.contextKey === id);
+    const evidence = this.store.conceptEvidence.filter(fact => fact.ownerId === ownerId && rows.some(row => row.id === fact.attemptId)).map(fact => ({ conceptId: fact.conceptStableId, title: this.store.concepts.find(concept => concept.stableId === fact.conceptStableId)?.title ?? fact.conceptStableId, strength: fact.strength, conditions: fact.conditions }));
+    const summary = summarizeSession(session, rows.map(row => ({ key: row.context?.questionId ? JSON.stringify([row.context.questionId, row.context.questionVersion]) : row.questionVersionId ?? row.activityStableId, outcome: row.outcome })), evidence);
+    return { session, items: sessionItemsSchema.parse(session.items), attempts: summary.attempts, correct: summary.correct, answered: summary.answered, summary };
+  }
 }

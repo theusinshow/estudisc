@@ -8,14 +8,28 @@ import { questionReferenceSchema } from "@/features/activities/application/quest
 import { evidenceStrengthV2,MASTERY_V2 } from "@/features/mastery/mastery-policy-v2";
 import { scheduleReviewV2,REVIEW_V2 } from "@/features/review/review-policy-v2";
 import { isIndependentQuestionSuccess, QUESTION_SUCCESS_XP, QUESTION_SUCCESS_REASON } from "@/features/gamification/study-rewards";
+import { frozenMember } from "@/features/study-sessions/frozen-membership";
+import { sessionItemsSchema } from "@/features/study-sessions/contracts";
 
 export class MemoryQuestionStudyRepository {
   constructor(private readonly store=getMemoryStore()){}
   private context(ownerId:string,activityId:string,questionId:string,version:number,sessionId?:string){
     if(this.store.assessmentInstances.some(instance=>instance.ownerId===ownerId&&instance.status==="ACTIVE"&&instance.snapshot.mode==="EXAM"))throw new QuestionUnavailableError();
-    const activity=this.store.activities.find(activity=>activity.stableId===activityId);
+    let activity=this.store.activities.find(activity=>activity.stableId===activityId);
+    if(sessionId){
+      const session=this.store.studySessions.find(row=>row.id===sessionId&&row.ownerId===ownerId);
+      if(!session||session.status!=="ACTIVE")throw new QuestionUnavailableError();
+      const item=sessionItemsSchema.parse(session.items).find(item=>item.activityIds.includes(activityId)&&item.questions.some(question=>question.id===questionId&&question.version===version));
+      if(!item)throw new QuestionUnavailableError();
+      const frozen=this.store.packImports.flatMap(entry=>{const pack=entry.manifest;return pack?.schema==="caderno.track.v2"?pack.track.modules.flatMap(module=>module.lessons.map(lesson=>({trackId:pack.track.id,lesson,questions:pack.questions}))):[];}).find(entry=>entry.lesson.id===item.lessonId&&entry.lesson.version===item.version&&entry.trackId===(item.trackId??session.trackId));
+      const definition=frozen?.lesson.activities.find(input=>input.id===activityId&&input.type==="question"&&input.questionId===questionId);
+      const canonicalVersion=frozen?.questions.find(question=>question.id===questionId)?.version;
+      const config=definition?questionReferenceSchema.safeParse({...definition.config,questionId:definition.questionId,questionVersion:definition.config.questionVersion??canonicalVersion}):null;
+      if(!frozen||!definition||!config?.success||config.data.questionVersion!==version||canonicalVersion!==version||!frozenMember(session.items,session.trackId,{lessonId:frozen.lesson.id,version:frozen.lesson.version,trackId:frozen.trackId,activityId,questionId,questionVersion:version}))throw new QuestionUnavailableError();
+      activity={stableId:definition.id,type:"question",prompt:definition.prompt,orderIndex:frozen.lesson.activities.indexOf(definition),config:config.data,trackStableId:frozen.trackId,lessonStableId:frozen.lesson.id,evaluatorVersion:"question.v1"};
+    }
     const config=questionReferenceSchema.safeParse(activity?.config);
-    const input=this.store.packImports.flatMap(entry=>entry.manifest?.schema==="caderno.track.v2"?entry.manifest.questions:[]).find(question=>question.id===questionId&&question.version===version);
+    const input=[...this.store.packImports].reverse().flatMap(entry=>entry.manifest?.schema==="caderno.track.v2"?entry.manifest.questions:[]).find(question=>question.id===questionId&&question.version===version);
     const question=input?questionSchema.parse(input):null;
     if(!activity||activity.type!=="question"||!config.success||config.data.questionId!==questionId||config.data.questionVersion!==version||!question||!canExposeQuestion(question,{now:new Date(),context:"training"}))throw new QuestionUnavailableError();
     if(sessionId){const session=this.store.studySessions.find(session=>session.id===sessionId&&session.ownerId===ownerId);if(!session||session.status!=="ACTIVE"||!Array.isArray(session.items)||!session.items.some(item=>item.lessonId===activity.lessonStableId&&item.activityIds.includes(activity.stableId)&&item.questions.some((question:{id:string;version:number})=>question.id===questionId&&question.version===version)))throw new QuestionUnavailableError();}

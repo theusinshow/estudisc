@@ -3,25 +3,37 @@ import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 import { getDatabase } from "@/db/connection";
 import type * as schema from "@/db/schema";
 import { activities,attempts,lessons,modules,owners,studySessions,tracks,conceptEvidence,lessonConcepts,conceptPrerequisites,trackConceptSettings,reviewSchedules,packImports,concepts } from "@/db/schema";
-import { sessionItemsSchema,type SessionItem } from "@/features/study-sessions/contracts";
+import { sessionItemsSchema,LEGACY_SESSION_BUDGETS,ADAPTIVE_SESSION_BUDGETS,type SessionItem,type SessionBudget } from "@/features/study-sessions/contracts";
 import { questionReferenceSchema } from "@/features/activities/application/question-reference";
 import { QuestionStudyRepository } from "./question-study-repository";
 import { planCandidates,examPhase,type PlannerCandidate } from "@/features/study-sessions/planner-policy";
 import { calculateVersionedMastery } from "@/features/mastery/mastery-policy-v2";
 import { StudyPlanRepository } from "./study-plan-repository";
 import { assertRoutineBudget, assertRoutineStart } from "@/features/study-sessions/routine-session-constraints";
+import { sqlAdaptiveChoices } from "./adaptive-session-data";
+import { summarizeSession } from "@/features/study-sessions/session-summary";
 
 type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
 export class SessionStateError extends Error{constructor(){super("Session state or ownership does not permit this action");}}
 export class StudySessionRepository{
-  constructor(private readonly db:Database=getDatabase(),private readonly routineEnabled=false){}
-  async plan(ownerId:string,budgetMinutes:15|30|60){
+  constructor(private readonly db:Database=getDatabase(),private readonly routineEnabled=false,private readonly adaptiveEnabled=false){}
+  async plan(ownerId:string,budgetMinutes:SessionBudget,now=new Date()){
+    const allowedBudgets: readonly number[] = [...LEGACY_SESSION_BUDGETS, ...(this.adaptiveEnabled ? ADAPTIVE_SESSION_BUDGETS : [])];
+    if(!allowedBudgets.includes(budgetMinutes))throw new SessionStateError();
     return this.db.transaction(async tx=>{
       await tx.insert(owners).values({id:ownerId,displayName:"Private learner"}).onConflictDoNothing();
       await tx.select().from(owners).where(eq(owners.id,ownerId)).for("update");
       const [open]=await tx.select().from(studySessions).where(and(eq(studySessions.ownerId,ownerId),eq(studySessions.status,"ACTIVE")));
       if(open)return open;
-      const subjectLimits=this.routineEnabled?assertRoutineBudget((await new StudyPlanRepository(tx).getState(ownerId)).week,budgetMinutes):undefined;
+      const subjectLimits=this.routineEnabled?assertRoutineBudget((await new StudyPlanRepository(tx).getState(ownerId,now)).week,budgetMinutes):undefined;
+      if(this.adaptiveEnabled){
+        const data=await sqlAdaptiveChoices(tx,ownerId,budgetMinutes,subjectLimits,now);
+        const plan=planCandidates(data.choices.map(choice=>choice.candidate),budgetMinutes,"FOUNDATION",data.subjectMinutes,subjectLimits,true);
+        if(!plan.items.length)return null;
+        const items=plan.items.map(candidate=>data.choices.find(choice=>choice.candidate.id===candidate.id)!.item);
+        await tx.update(studySessions).set({status:"ABANDONED",endedAt:now}).where(and(eq(studySessions.ownerId,ownerId),eq(studySessions.status,"PLANNED")));
+        const [session]=await tx.insert(studySessions).values({ownerId,trackId:items[0].trackId!,budgetMinutes,items,policyVersion:plan.policyVersion,createdAt:now}).returning();return session;
+      }
       const candidateRows=await tx.select({lesson:lessons,subject:modules.subjectCode,trackId:tracks.id,trackStableId:tracks.stableId,packImportId:tracks.packImportId}).from(lessons).innerJoin(modules,eq(modules.id,lessons.moduleId)).innerJoin(tracks,eq(tracks.id,modules.trackId)).where(sql`${lessons.metadata}->>'status' = 'published' AND ${lessons.metadata}->>'qaReleaseId' IS NOT NULL`).orderBy(desc(tracks.contentVersion),lessons.orderIndex);
       const seen=new Set<string>();const candidates=candidateRows.filter(row=>{const key=`${row.trackStableId}:${row.lesson.stableId}`;if(seen.has(key))return false;seen.add(key);return true;});
       const [facts,links,prerequisites,settings,reviews,history,manifests,conceptRows]=await Promise.all([tx.select().from(conceptEvidence).where(eq(conceptEvidence.ownerId,ownerId)),tx.select().from(lessonConcepts),tx.select().from(conceptPrerequisites),tx.select().from(trackConceptSettings),tx.select().from(reviewSchedules).where(eq(reviewSchedules.ownerId,ownerId)),tx.select().from(studySessions).where(and(eq(studySessions.ownerId,ownerId),eq(studySessions.status,"COMPLETED"))),tx.select().from(packImports),tx.select().from(concepts)]);
@@ -63,7 +75,7 @@ export class StudySessionRepository{
   async get(ownerId:string,id:string){const [row]=await this.db.select().from(studySessions).where(and(eq(studySessions.ownerId,ownerId),eq(studySessions.id,id)));return row??null;}
   async list(ownerId:string){return this.db.select().from(studySessions).where(eq(studySessions.ownerId,ownerId)).orderBy(desc(studySessions.createdAt)).limit(15);}
   async planningFacts(ownerId:string,now=new Date()){return this.db.select().from(studySessions).where(and(eq(studySessions.ownerId,ownerId),or(inArray(studySessions.status,["ACTIVE","PLANNED"]),and(eq(studySessions.status,"COMPLETED"),gte(studySessions.endedAt,new Date(now.getTime()-9*86400_000)))))).orderBy(desc(studySessions.createdAt));}
-  async transition(ownerId:string,id:string,action:"start"|"complete"|"abandon"){
+  async transition(ownerId:string,id:string,action:"start"|"complete"|"abandon",now=new Date()){
     return this.db.transaction(async tx=>{
       await tx.select().from(owners).where(eq(owners.id,ownerId)).for("update");
       const [session]=await tx.select().from(studySessions).where(and(eq(studySessions.ownerId,ownerId),eq(studySessions.id,id))).for("update");
@@ -73,14 +85,16 @@ export class StudySessionRepository{
       if(action==="start"?session.status!=="PLANNED":session.status!=="ACTIVE")throw new SessionStateError();
       if(action==="start"){const [active]=await tx.select().from(studySessions).where(and(eq(studySessions.ownerId,ownerId),eq(studySessions.status,"ACTIVE")));if(active)throw new SessionStateError();}
       sessionItemsSchema.parse(session.items);
-      if(action==="start"&&this.routineEnabled)assertRoutineStart((await new StudyPlanRepository(tx).getState(ownerId)).week,session.items);
-      const [updated]=await tx.update(studySessions).set({status:target,...action==="start"?{startedAt:new Date()}:{endedAt:new Date()}}).where(eq(studySessions.id,id)).returning();return updated;
+      if(action==="start"&&this.routineEnabled)assertRoutineStart((await new StudyPlanRepository(tx).getState(ownerId,now)).week,session.items);
+      const [updated]=await tx.update(studySessions).set({status:target,...action==="start"?{startedAt:now}:{endedAt:now}}).where(eq(studySessions.id,id)).returning();return updated;
     });
   }
   async result(ownerId:string,id:string){
     const session=await this.get(ownerId,id);if(!session)return null;
     const rows=await this.db.select().from(attempts).where(and(eq(attempts.ownerId,ownerId),sql`${attempts.context}->>'contextKey' = ${id}`)).orderBy(attempts.createdAt,attempts.attemptNumber);
     const unique=new Map(rows.map(row=>[row.questionVersionId,row]));
-    return {session,items:sessionItemsSchema.parse(session.items),attempts:rows.length,correct:[...unique.values()].filter(row=>row.outcome==="passed").length,answered:unique.size};
+    const evidence=rows.length?await this.db.select({conceptId:concepts.stableId,title:concepts.title,strength:conceptEvidence.strength,conditions:conceptEvidence.conditions}).from(conceptEvidence).innerJoin(concepts,eq(concepts.id,conceptEvidence.conceptId)).where(and(eq(conceptEvidence.ownerId,ownerId),inArray(conceptEvidence.attemptId,rows.map(row=>row.id)))):[];
+    const summary=summarizeSession(session,rows.map(row=>({key:row.questionVersionId??row.activityId??row.id,outcome:row.outcome})),evidence.map(fact=>({...fact,conditions:fact.conditions as Record<string,unknown>})));
+    return {session,items:sessionItemsSchema.parse(session.items),attempts:rows.length,correct:[...unique.values()].filter(row=>row.outcome==="passed").length,answered:unique.size,summary};
   }
 }

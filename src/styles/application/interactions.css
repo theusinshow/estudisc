@@ -268,6 +268,11 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .session-plan li + li { border-top: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }
 .session-plan li::before { content: counter(plan); display: grid; place-items: center; flex: none; width: 30px; height: 30px; border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-signal); font-size: 0.875rem; font-weight: 900; }
 .session-plan small { margin-left: auto; font-family: var(--font-mono), monospace; color: var(--estudisc-color-dim); white-space: nowrap; }
+.session-plan li > span { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.session-plan li > span > small { display: block; margin-top: var(--estudisc-spacing-4); font-family: inherit; font-weight: 400; white-space: normal; }
+.session-plan li > small { flex-shrink: 0; }
+.time-options.is-adaptive { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (min-width: 640px) { .time-options.is-adaptive { grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr)); } }
 .session-lesson { display: grid; gap: var(--estudisc-spacing-10); padding-top: var(--estudisc-spacing-12); border-top: var(--estudisc-border-rule) dashed var(--estudisc-color-ink); }
 .session-lesson > h2 { margin: 0; font-size: clamp(1.625rem, 5vw, 2.25rem); font-weight: 900; line-height: 1.1; }
 .session-result { display: grid; gap: var(--estudisc-spacing-6); justify-items: start; padding: var(--estudisc-spacing-12); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-sheet); background: var(--estudisc-color-surface-lime); box-shadow: var(--estudisc-shadow-raised); }

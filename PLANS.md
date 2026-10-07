@@ -1,6 +1,24 @@
 # Estudisc current plan
 
-## Current task — Phase 3 weekly routine (2026-10-06)
+## Completed task — Phase 4 adaptive sessions (2026-10-06)
+
+The user's latest “pode seguir” authorizes the next Adaptive Session increment in this session; no repeat model-choice question, automatic switch or additional agents. Extend the existing planner, shared Question delivery and session repositories. Preserve production/external boundaries.
+
+Acceptance: default-off FEATURE_ADAPTIVE_SESSION exposes 10/20/30/45; legacy budgets/readers remain. One injected clock; deterministic candidate order/reasons; due review, active mistakes, weaknesses, prerequisite readiness, curriculum importance and saved routine time constraints; completed independent answers are not silently repeated; short budgets deliver questions rather than claiming a whole lesson fits. Actual publication/QA/source caveats remain visible. Version/track/activity/question snapshots are owner-bound and immutable in ACTIVE sessions, including cross-track composition. Factual summary distinguishes estimated, wall-clock and recorded evidence; no new mastery/review/scoring weights or completion-based evidence.
+
+- [x] ADR 0042 and compatible session/candidate contracts; pure selection/readiness/estimate fixtures.
+- [x] Fixed-clock SQL/memory candidate adapters and existing planner integration; guard frozen version/track membership.
+- [x] Adaptive controls and Question/lesson delivery through existing registries; factual summary/reasons and recovery.
+- [x] Owner/exposure/reservation/annulled/short-budget/idempotence/parity/resume tests; required final lint/typecheck/test/build/packs/off/on E2E and UI QA.
+- [x] Accepted locally; checkpoint and resumable next action without production writes or corpus republication.
+
+Focused acceptance: 18 tests PASS for SQL/memory availability, EXAM blocking, independent submit/idempotence, cross-track membership, frozen old versions, budget bounds, readiness/checkpoints and deterministic ordering. Adaptive browser acceptance PASS in desktop/mobile, 320/360/390/430/1280, keyboard/Focus/reload/factual completion and 44px controls. Final full checks are in progress; see [phase report](docs/estudisc/ADAPTIVE-SESSIONS.md). The first browser run caught an incorrect test CSS locator; the existing renderer locator was corrected. One bounded visual correction fixed wrapping and four-option layout.
+
+Final gate: lint/typecheck/build/packs PASS; 319 tests PASS / 3 optional real-PostgreSQL SKIP; default E2E 40 PASS / 12 gated SKIP; foundation/routine on 10 PASS; adaptive on 4 PASS. UI/keyboard/hash/source/link/diff checks PASS. Exact commands and risks: [phase report](docs/estudisc/ADAPTIVE-SESSIONS.md).
+
+NEXT ACTION: checkpoint Phase 4, then continue Phase 5 owner/version/context-bound lesson resume inside existing runtime. No production rollout or corpus publication.
+
+## Completed task — Phase 3 weekly routine (2026-10-06)
 
 The user's “pode seguir” answers the pending choice: authorize this session to resolve and implement the Phase 3 contract. This is an explicit exception to the earlier Terra handoff for this increment; no model switch or additional agent. Local implementation remains authorized; production/external operations remain separate.
 

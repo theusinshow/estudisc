@@ -137,7 +137,19 @@ export class MemoryCatalogRepository {
     };
   }
 
-  async getLesson(stableId: string) {
+  async getLesson(stableId: string, version?:number,trackId?:string) {
+    if(version!==undefined){
+      for(const entry of [...this.store.packImports].reverse()){
+        const pack=entry.manifest;if(pack?.schema!=="caderno.track.v2"||trackId!==undefined&&pack.track.id!==trackId)continue;
+        for(const moduleRecord of pack.track.modules){const lesson=moduleRecord.lessons.find(lesson=>lesson.id===stableId&&lesson.version===version);if(!lesson)continue;
+          return {stableId:lesson.id,title:lesson.title,trackStableId:pack.track.id,trackTitle:pack.track.title,metadata:{kind:lesson.kind,status:lesson.status,estimatedMinutes:lesson.estimatedMinutes},
+            concepts:lesson.concepts.map(concept=>({stableId:concept.id,title:concept.title,summary:concept.summary??null})),
+            blocks:lesson.blocks.map(block=>({stableId:block.id,type:block.type,payload:block.payload})),
+            activities:lesson.activities.map(activity=>({stableId:activity.id,type:activity.type,prompt:activity.prompt,config:activity.type==="question"?{...activity.config,questionId:activity.questionId,questionVersion:activity.config.questionVersion??pack.questions.find(question=>question.id===activity.questionId)?.version}:activity.config}))};
+        }
+      }
+      return null;
+    }
     const lesson = this.store.lessons.find((entry) => entry.stableId === stableId);
     const moduleRecord = lesson ? this.store.modules.find((entry) => entry.stableId === lesson.moduleStableId) : null;
     const track = moduleRecord ? this.store.tracks.find((entry) => entry.stableId === moduleRecord.trackStableId) : null;

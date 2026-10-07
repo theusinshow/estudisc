@@ -4,6 +4,7 @@ import { SessionControls } from "@/features/study-sessions/session-controls";
 import type { getTodayDashboard } from "./get-today-dashboard";
 import type { RoutineState } from "@/features/study-sessions/routine-contracts";
 import { remainingRoutineMinutes } from "@/features/study-sessions/routine-session-constraints";
+import { getFeatureFlags } from "@/lib/feature-flags";
 
 type Sessions = Awaited<ReturnType<typeof getTodayDashboard>>["sessions"];
 
@@ -30,7 +31,7 @@ export function TodayPlan({ sessions, hasNextAction, plannerEnabled, routine }: 
       : hasNextAction ? <>
       <p>Você ainda não preparou uma sessão. Quanto tempo tem para estudar agora?</p>
       {plannerEnabled && !routine?.routine && <p><Link href="/plan">Organizar minha semana</Link></p>}
-      <SessionControls availableMinutes={remainingRoutineMinutes(routine?.week ?? null)} />
+      <SessionControls adaptive={getFeatureFlags().FEATURE_ADAPTIVE_SESSION} availableMinutes={remainingRoutineMinutes(routine?.week ?? null)} />
     </> : <p>Quando houver atividades disponíveis, você poderá preparar uma sessão aqui.</p>}
   </section>;
 }

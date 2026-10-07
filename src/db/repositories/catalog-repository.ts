@@ -214,7 +214,7 @@ export class CatalogRepository {
     };
   }
 
-  async getLesson(stableId: string, version?:number): Promise<LessonDetail | null> {
+  async getLesson(stableId: string, version?:number,trackId?:string): Promise<LessonDetail | null> {
     const [lesson] = await this.db
       .select({
         id: lessons.id,
@@ -227,7 +227,7 @@ export class CatalogRepository {
       .from(lessons)
       .innerJoin(modules, eq(modules.id, lessons.moduleId))
       .innerJoin(tracks, eq(tracks.id, modules.trackId))
-      .where(version===undefined?eq(lessons.stableId, stableId):and(eq(lessons.stableId,stableId),eq(lessons.contentVersion,version)))
+      .where(and(eq(lessons.stableId,stableId),version===undefined?undefined:eq(lessons.contentVersion,version),trackId===undefined?undefined:eq(tracks.id,trackId)))
       .orderBy(desc(lessons.contentVersion))
       .limit(1);
 

@@ -1,5 +1,7 @@
 # Architecture Decision Records
 
+[ADR 0042](0042-adaptive-session-snapshots-and-readiness.md) extends the existing planner with adaptive budgets, actual editorial readiness, frozen cross-track membership and factual summaries without changing evidence rules.
+
 [ADR 0041](0041-weekly-study-routine-and-checked-previews.md) defines owner-scoped weekly time allocation, explicit revision/dependency-checked preview/apply and compatible session limits.
 
 [ADR 0040](0040-evolution-shell-and-runtime-compatibility.md) defines flagged five-destination navigation, shared Focus layout and compatible runtime step projection without changing Pack schemas.
@@ -18,4 +20,4 @@ Status values: Proposed, Accepted, Superseded, Rejected.
 
 Create a new ADR when changing architecture, trust boundaries, persistence, Pack compatibility, runtime isolation, authentication or a major cross-feature contract. Do not rewrite accepted history; supersede it with a new ADR.
 
-[ADR 0037](0037-track-pack-request-limit.md) raises only Track Pack preview/apply body limits to2MiB while preserving other JSON limits and Pack compatibility.
+[ADR 0038](0038-track-pack-request-limit.md) raises only Track Pack preview/apply body limits to 2 MiB while preserving other JSON limits and Pack compatibility.

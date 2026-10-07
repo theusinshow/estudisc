@@ -69,7 +69,7 @@ export default async function HomePage() {
           <h2 id="time-title">Quanto tempo você tem agora?</h2>
           <p>Montamos a sessão com revisões, erros pendentes e a próxima aula.</p>
           <ClickSpark>
-            <SessionControls availableMinutes={dashboard.routine?.week?.activeSessionId ? undefined : remainingRoutineMinutes(dashboard.routine?.week ?? null)} />
+            <SessionControls adaptive={getFeatureFlags().FEATURE_ADAPTIVE_SESSION} availableMinutes={dashboard.routine?.week?.activeSessionId ? undefined : remainingRoutineMinutes(dashboard.routine?.week ?? null)} />
           </ClickSpark>
         </section>}
 

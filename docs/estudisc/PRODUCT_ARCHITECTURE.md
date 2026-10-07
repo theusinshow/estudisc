@@ -4,6 +4,8 @@ Audit date: 2026-10-06. The initial audit/planning execution is complete. The us
 
 Read [the supplied product architecture](source-pack/01_PRODUCT_ARCHITECTURE.md), [the gap analysis](IMPLEMENTATION-GAP-ANALYSIS.md), [the implementation plan](IMPLEMENTATION-PLAN.md), and [model routing](MODEL-ROUTING-POLICY.md). Specialized source documents are preserved unchanged in `source-pack/`; do not duplicate them into competing specifications.
 
+Current implementation deltas: [weekly routine](WEEKLY-ROUTINE.md) and [adaptive sessions](ADAPTIVE-SESSIONS.md). These reports preserve the initial audit as historical evidence and identify the next unmet gate.
+
 Source archive: `C:\Users\Matheus\Downloads\estudisc_codex_pack.zip`.
 SHA-256: `4ccd11ce2fa160b589688082d8e9388e3750d7bde57f87827e50d812a3fae862`.
 The archive contains eleven Markdown documents and its manifest. They were all read during this audit. [Audit evidence](AUDIT-EVIDENCE.json) pins the inspected implementation and source documents by hash.

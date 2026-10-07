@@ -72,6 +72,8 @@ Acceptance: owner isolation and memory/SQL contract parity, availability respect
 
 ## 7. Phase 4 — Adaptive Session
 
+Implementation delta (2026-10-06): ADR 0042 and [ADAPTIVE-SESSIONS.md](ADAPTIVE-SESSIONS.md) record the authorized local implementation and current acceptance. The user's continuation resolves the model handoff for this increment; no model switch or independent review is claimed. Continue Phase 5 after this gate.
+
 Risk HIGH; Terra architecture/selection policy, Luna helpers/UI after contract. Depends on Phase 3 and existing recommendation/review/mastery facts. Flag: `FEATURE_ADAPTIVE_SESSION`.
 
 Targets: `planner-policy.ts`, session contracts/API/controls, SQL and memory study-session repositories, `/study/[sessionId]`, Today inputs and planner/integration tests. Specify policy version, one evaluation clock, candidate/action types, selection reasons, immutable snapshot and 10/20/30/45-minute budgets. Define short-budget/no-fit behavior, explicit reviews/remediation, incomplete activity avoidance, priorities, prerequisites, curriculum-readiness facts, cross-track/date handling and interrupted-session reuse. Current 15/30/60 plus 15-minute minimum cannot simply be renamed.
