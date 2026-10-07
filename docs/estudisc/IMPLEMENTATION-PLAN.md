@@ -132,6 +132,8 @@ Acceptance: exactly one identified blueprint for each of 132 current lesson vers
 
 Pilot accepted/live: actual MAT-07 v5 targeted production append and authenticated Admin Direct activation completed on 2026-10-07; [receipt](TARGETED-LESSON-RELEASE.json). Original v4/Questions and collection size preserved, actual learner-view smoke passed, no false QA. Next: bounded source-defined batches under standing social release authorization. Earlier pending import/deployment/editorial review descriptions are historical.
 
+Next bounded increment accepted/live: MAT-08 v3 adds three source-defined percentage explorers; [actual receipt](PERCENTAGE-APPLICATIONS-RELEASE.json), [behavior and reproduction](PERCENTAGE-APPLICATIONS-ENRICHMENT.md). Original v2/thirteen blocks/fifteen Activities/ten Questions preserved, current outputs and historical access verified. Next: compatible existing linear-model recipes and actual production interaction rollout before broader-domain batches. Phase 9 is ongoing; no missing goals or broader enrichment completion are invented.
+
 Targeted import implementation: [TARGETED-LESSON-IMPORT.md](TARGETED-LESSON-IMPORT.md), ADR 0049. Source-bound next-version append now uses existing SQL/memory core and import UI, preserving original collection/Question/history. The earlier Terra handoff is resolved by current-session implementation after user continuation; no model switch claimed. Actual remote deployment/activation and then bounded enrichment batches remain to execute under standing Admin Direct authorization.
 
 Current owner policy: [ADR 0048](../ADR/0048-social-project-direct-release.md) supersedes independent/human editorial release gates. Social/community feedback follows technically validated direct launch using existing Admin Direct with actual authorization/audit records. Missing objective/source/rights facts remain visible; UNREVIEWED is evidence status, not a permission gate. MAT-07 v5 is authorized; compatible targeted lesson-version import is the current engineering prerequisite, documented in [handoff](handoffs/2026-10-07-targeted-enrichment-import.md).
@@ -207,7 +209,7 @@ Simple additive empty tables: Luna. Existing-data transforms, relation changes, 
 | 6 — Interactive Blocks | Luna Max; Terra for help/evidence policy | Reusable interactions under defined assessment/assistance rules |
 | 7 — Visual Assets | Luna Max; Terra for security/storage changes | Metadata/UI are routine; reserved bytes/exposure are sensitive |
 | 8 — Blueprint Pipeline | Luna Max; Terra exceptions | Local extraction/hashing/classification; ambiguous pedagogy escalates individually |
-| 9 — Content Enrichment | Luna Max; Terra exceptions | Approved blueprints/components; actual independent review still required |
+| 9 — Content Enrichment | Luna Max; Terra exceptions | Source-bound existing components; engineering QA then authorized Admin Direct, community feedback after launch (ADR 0048) |
 | 10 — Review & Mistakes | Terra engine → Luna Max UI | Scheduling, inference/grouping and targeted practice affect evidence |
 | 11 — AI Learning | Terra architecture → Luna Max implementation | Context/cache/fallback/cost and assistance/security boundaries |
 | 12 — Knowledge Map | Terra semantics → Luna Max React Flow UI | Prerequisite interpretation/unlocks vs graph presentation |
@@ -225,4 +227,4 @@ Likely Sol High review points: new Adaptive Session crossing selection/evidence,
 - [x] Implement the first Phase 0/1/2 foundation increment after explicit user authorization; see EVOLUTION-FOUNDATION.md.
 - [ ] Complete routine-dependent Phase 1/2 remainder and Phases 3–15 after their required contracts/model gates.
 
-NEXT ACTION: Phase 0–8 local increments are recorded in their current reports, with later consumers/rollout limitations preserved. Review Phase 8 proposals and actual missing source objectives before Phase 9 draft enrichment. Only reviewed exact blueprints/components may drive enrichment; route precise pedagogical exceptions to Terra. No automatic approval, production write or corpus republication is implied.
+NEXT ACTION: MAT-07 v5 and MAT-08 v3 are live. Extend compatible source-bound recipes for existing linear models and verify their production interaction rollout before broader-domain batches; preserve published originals and Questions. Route concrete pedagogical exceptions to Terra. ADR 0048 authorizes technically validated Admin Direct release without independent editorial review; no fabricated QA or full corpus republication.

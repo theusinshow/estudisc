@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-08",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "2310e82fd345053a4aad8d9aa0895838b877a553cd6aa72880db8eb45986a502",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "BLK-MAT-08-ENR-PERCENT-E01",
+      "afterBlockId": "BLK-MAT-08-E01",
+      "sourceBlockHash": "75824f206a35aa628ce561f41ef3c9995cf6f2211d470810d4f68d123d61f98d",
+      "sourceQuote": "O desconto seguinte é 10% de 280, isto é, R$ 28",
+      "conceptId": "MAT.PCT.SUCCESSIVE",
+      "objective": "Aumentos e descontos sucessivos",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "initialValue": 280,
+        "initialPercentage": 10
+      },
+      "expectedInitialResult": 28
+    },
+    {
+      "newBlockId": "BLK-MAT-08-ENR-PERCENT-E02",
+      "afterBlockId": "BLK-MAT-08-E02",
+      "sourceBlockHash": "7ddf0946c50a94b258a19858f40cd6c8df4c31fe2fc28788f8a2fd26a9f9afd2",
+      "sourceQuote": "18% de 300 são 54; 300 − 54 = 246",
+      "conceptId": "MAT.PCT.REVERSE",
+      "objective": "Encontrar o valor original",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "initialValue": 300,
+        "initialPercentage": 18
+      },
+      "expectedInitialResult": 54
+    },
+    {
+      "newBlockId": "BLK-MAT-08-ENR-PERCENT-E04",
+      "afterBlockId": "BLK-MAT-08-E04",
+      "sourceBlockHash": "b7145a0539386a952d019f6958f908267ef72867d8ff45378b475d1ac547d5dd",
+      "sourceQuote": "1,6% de 1.250 é R$ 20 por mês",
+      "conceptId": "MAT.INTEREST.SIMPLE",
+      "objective": "Juros simples",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "initialValue": 1250,
+        "initialPercentage": 1.6
+      },
+      "expectedInitialResult": 20
+    }
+  ]
+}
