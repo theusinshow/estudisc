@@ -9,7 +9,7 @@ test("reviews the source percentage preview with touch/keyboard and no official 
   const submitted: string[] = [];
   page.on("request", request => { if (request.method() === "POST" && request.url().includes("/api/activities/")) submitted.push(request.url()); });
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.goto("/lessons/ENRICHMENT-PREVIEW-PILOT");
+  await page.goto("/lessons/ENRICHMENT-PREVIEW-MAT-07-V5");
   await page.getByRole("button", { name: "Ver tudo", exact: true }).click();
   const region = page.getByRole("region", { name: "Explore a porcentagem", exact: true });
   await expect(region.getByRole("status")).toHaveText("16% de 275 = 44");

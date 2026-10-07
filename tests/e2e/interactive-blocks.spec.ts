@@ -12,6 +12,15 @@ test("retains a static figure fallback when interactive presentation is disabled
   await expect(page.locator(".lesson-resume-controls")).toHaveCount(0);
   await expect(page.getByText("Descrição do local B na fixture.", { exact: true })).toHaveCount(2);
   await expect(page.getByRole("region", { name: "Explore o modelo linear" }).getByRole("slider")).toHaveCount(0);
+  const writes: string[] = [];
+  page.on("request", request => { if (request.method() === "POST" && /\/api\/(lesson-resume|activities\/)/.test(request.url())) writes.push(request.url()); });
+  const linear = page.getByRole("region", { name: "Explore o modelo linear", exact: true });
+  await linear.getByRole("textbox", { name: "Entrada", exact: true }).fill("4");
+  await expect(linear.getByRole("status")).toHaveText("Resultado: 13");
+  await page.reload();
+  await page.getByRole("button", { name: "Ver tudo", exact: true }).click();
+  await expect(linear.getByRole("status")).toHaveText("Resultado: 7");
+  expect(writes).toEqual([]);
 });
 
 test("explores and resumes typed blocks with keyboard/touch, image fallback and no submitted attempts", async ({ page, request }, testInfo) => {

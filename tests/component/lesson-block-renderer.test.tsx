@@ -4,6 +4,19 @@ import { describe, expect, it } from "vitest";
 import { LessonBlockList, LessonBlockRenderer } from "@/features/lessons/blocks";
 
 describe("LessonBlockRenderer", () => {
+  it.each(["text", "worked-example", "prediction", "summary"])("reads the %s envelope type without rewriting canonical payloads", type => {
+    const payload = Object.freeze({ content: "Canonical authored text" });
+    render(<LessonBlockRenderer block={{ stableId: "outer-typed", type, payload }}/>);
+    expect(screen.getByText("Canonical authored text")).toBeInTheDocument();
+    expect(payload).toEqual({ content: "Canonical authored text" });
+  });
+  it("does not replace an explicitly invalid payload type or missing content", () => {
+    render(<LessonBlockList blocks={[
+      { stableId: "invalid-type", type: "worked-example", payload: { type: 42, content: "Invalid" } },
+      { stableId: "invalid-content", type: "prediction", payload: {} }
+    ]}/>);
+    expect(screen.getAllByRole("region", { name: "Bloco inválido" })).toHaveLength(2);
+  });
   it("renders allowlisted text and code blocks from imported payloads", () => {
     render(
       <LessonBlockList

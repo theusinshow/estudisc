@@ -92,8 +92,11 @@ export function LessonBlockList({ blocks }: Readonly<{ blocks: ReadonlyArray<Imp
 
 export function LessonBlockRenderer({ block }: LessonBlockRendererProps) {
   const renderer = blockRenderers[block.type] ?? renderUnsupportedBlock;
-
-  return renderer(block);
+  const payload = block.payload;
+  const needsEnvelopeType = ["text", "code", "concept", "note", "warning", "example", "worked-example", "prediction", "summary"].includes(block.type);
+  const readable = needsEnvelopeType && payload && typeof payload === "object" && !Array.isArray(payload) && !("type" in payload)
+    ? { ...block, payload: { ...payload, type: block.type } } : block;
+  return renderer(readable);
 }
 
 function renderTextBlock(block: ImportedLessonBlock) {

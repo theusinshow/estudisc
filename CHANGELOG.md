@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-07 — Source-defined baseline linear exploration
+
+- Extend strict source-bound enrichment recipes to the existing bounded linear model while retaining percentage compatibility. Add source-defined ticket/notebook price and copier-rate next-version candidates without changing original content or shared Questions.
+- Make the existing labelled linear input available as local baseline exploration with the flag off; slider and persisted resume remain enhancements, with no Attempt/mastery evidence, new engine, schema or migration.
+- Read missing text-family payload types from canonical V2 envelopes in the existing renderer, preserving original bytes and explicit invalid-field handling. Add real compatibility, saved-state isolation, multiple-control/error/keyboard/mobile regression checks; isolate disposable enrichment fixture identities.
+
 ## 2026-10-07 — MAT-08 percentage applications live
 
 - Publish one immutable MAT-08 v3 via authenticated targeted append and authorized Admin Direct, adding three existing percentage explorers after source examples for successive discount, original-price check and monthly simple interest.
