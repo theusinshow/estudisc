@@ -110,6 +110,8 @@ Acceptance: predict/observe/explain/practice, matching without drag, sorting wit
 
 ## 10. Phase 7 — Visual Asset System
 
+Current metadata/authoring increment: [TEACHING-ASSETS.md](TEACHING-ASSETS.md) and ADR 0045 add optional licensed reuse metadata, local inventory/search/hash-pinned selection and rights checks for every visual source. Actual existing candidates remain unpromoted; index exports metadata only. Admin UI and storage/provider/exposure changes remain distinct later consumers/boundaries.
+
 Risk MEDIUM; Luna Max metadata/UI; Terra for storage/security/exposure changes. Depends on Phases 5–6 contracts. Flag: `FEATURE_INTERACTIVE_LESSONS`; later Admin search under `FEATURE_CONTENT_HEALTH`.
 
 Extend existing question asset and Studio media boundaries into reusable licensed teaching-asset metadata: type/title/subjects/Concepts/tags/source/license/alt/reusable/interactiveReady plus version/hash references. Preserve protected Question storage and official reservations. Safe figure data URIs, size limit and SVG inspection remain supported. Add accessible fallback and missing-asset recovery; no automatic asset generation/purchases.

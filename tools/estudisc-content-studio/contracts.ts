@@ -2,6 +2,8 @@ import { z } from "zod";
 import { trackPackV2Schema } from "@/features/import/application/track-pack-v2-schema";
 import { questionSchema } from "@/features/questions/contracts";
 import { contentSourceSchema, curriculumRequirementSchema, conceptPrerequisiteSchema } from "@/features/curriculum/contracts";
+import { teachingAssetMetadataSchema, licenseStatusSchema } from "@/features/assets/teaching-asset-contracts";
+export { licenseStatusSchema } from "@/features/assets/teaching-asset-contracts";
 
 const id = z.string().trim().min(1).max(160);
 const ids = z.array(id).refine(v => new Set(v).size === v.length, "Duplicate reference");
@@ -41,12 +43,11 @@ export const sourcePackSchema = z.object({
   assertions: z.array(z.object({ id, kind: z.enum(["FACT", "INFERENCE", "EDITORIAL_RECOMMENDATION"]), statement: text, sourceIds: ids }).strict()),
   unresolved: z.array(z.object({ id, status: z.literal("RESEARCH_REQUIRED"), message: text, blocking: z.boolean() }).strict())
 }).strict();
-export const licenseStatusSchema = z.enum(["APPROVED_EMBED", "LINK_ONLY", "REQUIRES_REVIEW", "UNKNOWN", "REJECTED"]);
 export const imageCandidateSchema = z.object({
   id, title: text, sourceType: z.enum(["EXTERNAL", "GENERATED", "HUMAN_CREATED"]), sourceUrl: url.optional(), sourceOrganization: text,
   author: text.optional(), license: text, attribution: text, licenseStatus: licenseStatusSchema,
   recommendedUse: text, altTextDraft: text, verifiedAt: date.optional(), generationPrompt: text.optional(),
-  src: text.optional()
+  src: text.optional(), teachingAsset: teachingAssetMetadataSchema.optional()
 }).strict().superRefine((m, c) => {
   if (m.sourceType === "EXTERNAL" && !m.sourceUrl) c.addIssue({ code: "custom", message: "External image needs source URL" });
   if (m.sourceType === "GENERATED" && !m.generationPrompt) c.addIssue({ code: "custom", message: "Generated image needs prompt/specification" });

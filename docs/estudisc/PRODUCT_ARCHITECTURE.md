@@ -10,6 +10,8 @@ The next authorized runtime increment is [scoped lesson resume](LESSON-RESUME.md
 
 [Core interactive blocks](CORE-INTERACTIVE-BLOCKS.md) extends that scope with typed exploratory state and safe visual/linear presentation. Geographic providers and complex simulation blueprints are explicitly pending.
 
+[Teaching-asset metadata](TEACHING-ASSETS.md) adds local authoring inventory/search and source/hash/rights checks without transferring protected storage or publishing bytes.
+
 Source archive: `C:\Users\Matheus\Downloads\estudisc_codex_pack.zip`.
 SHA-256: `4ccd11ce2fa160b589688082d8e9388e3750d7bde57f87827e50d812a3fae862`.
 The archive contains eleven Markdown documents and its manifest. They were all read during this audit. [Audit evidence](AUDIT-EVIDENCE.json) pins the inspected implementation and source documents by hash.

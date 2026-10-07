@@ -1,5 +1,7 @@
 # Estudisc Content Studio
 
+Teaching-asset metadata inventory (ADR 0045): `pnpm estudisc-content assets` lists current candidates without bytes; filter with `--query`, `--subject`, `--concept`, `--type`, `--reuse-only`. `assets-index` writes a metadata-only `.teaching-assets-index.json` inside the existing ignored workspace. It does not approve rights, alter jobs, publish or transfer protected Question assets. Version/content/metadata/source/policy hashes are checked again by `resolveTeachingAsset` before local authoring reuse. Optional `teachingAsset` metadata must record actual rights evidence, teaching exposure and explicit reusable/interactive-ready intent; legacy candidates are not promoted automatically.
+
 Content Studio is Estudisc's local, versioned editorial workspace. Four Maestri terminals research, author, review and coordinate lessons through files. The repository supplies contracts, a CLI, deterministic validation and an export adapter. It calls no model API and needs no API key.
 
 Generation lives outside the student runtime. The Studio imports Estudisc's existing Zod contracts; it does not introduce another Lesson format, renderer, Question engine or mastery policy. A successful export is a **draft Pack v2**, never a published lesson.

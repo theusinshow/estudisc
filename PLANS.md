@@ -1,5 +1,22 @@
 # Estudisc current plan
 
+## Completed increment — Phase 7 teaching-asset metadata (2026-10-07)
+
+Phase 6 core is checkpointed at `57be5e6`; user's latest “continue” preserves continuous local authorization/model/effort and no additional agents. Extend existing Studio media contracts/validation and safe figure boundary; private official Question storage/exposure APIs remain authoritative and unchanged.
+
+Acceptance: version/hash-pinned type/title/subject/Concept/tag/source/license/alt/dimension/reuse metadata; actual declared/reviewed rights govern embedding/reuse, unknown/link-only/review/rejected stay ineligible; protected/reserved Question assets never become teaching-library bytes. Optional metadata preserves existing media artifact normalization/hashes. Registry inventory/export is local and metadata-only, no automatic approval/publication/asset generation. New visual variants must pass existing rights/attribution/provenance validation for every embedded source, including comparison second images and hotspot/map. Meaningful tests, exact source hashes, full final gate; admin read-only search only under existing flag/guard when its data source is concrete.
+
+- [x] Inventory existing sources/media/rights and establish ADR/compatible metadata/reuse contract.
+- [x] Extend media validation and local version/hash index/search with explicit eligibility/reasons and protected-asset exclusions.
+- [x] Integrate a concrete local authoring consumer (assets/search/index/pinned selection); no storage/auth/CSP change or metadata/byte publication. Admin library UI remains a later CONTENT_HEALTH consumer, not claimed implemented.
+- [x] Focused and full validation, docs/status/changelog/evidence and local checkpoint preparation.
+
+Actual local inventory: 19 current Studio jobs, four produced image candidates, two APPROVED_EMBED and two REQUIRES_REVIEW, zero explicitly reusable/interactive-ready; no status changed. ADR 0045 and optional metadata preserve old artifact parsing. CLI assets/assets-index and hash-pinned source revalidation are implemented; visual rights checks cover each primary/secondary/hotspot/map source. Focused tests 36 PASS (including real corpus compatibility). Metadata index is ignored workspace output with no bytes. Full final checks/docs/evidence are next; the stronger storage/provider boundary was not crossed.
+
+Final gate accepted locally: lint/typecheck/build/packs PASS; 346 tests PASS / 3 optional real-PostgreSQL SKIP; default E2E 44 PASS / 18 gated SKIP; adaptive/resume/interactive on 12 PASS / 2 off-case SKIP; foundation/routine/resume/interactive on 18 PASS / 2 off-case SKIP. CLI inventory/search/index and corpus/hash/link/diff PASS; 8 current code hashes, 39 actual prior comparisons, 12 unchanged sources and four actual media-input hashes. Exact commands/limits: [teaching-assets report](docs/estudisc/TEACHING-ASSETS.md).
+
+NEXT ACTION: checkpoint this accepted metadata/authoring increment, then Phase 8 local blueprint extraction/summaries/clustering. Admin asset UI and production distribution are later consumers; no automatic approval, public-byte transfer or corpus publication.
+
 ## Completed increment — Phase 6 interactive blocks (2026-10-06–07)
 
 Phase 5 is checkpointed at `2259874`. The user's “pode seguir” authorizes this next local increment with current model/effort and no additional agents. Extend existing block dispatcher, Activity registry and scoped resume; preserve canonical Attempts/evidence/help weighting and immutable published content.

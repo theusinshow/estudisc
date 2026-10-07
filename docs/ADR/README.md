@@ -6,6 +6,8 @@
 
 [ADR 0044](0044-typed-exploratory-interactions.md) defines source-bound exploratory state/help, compatible legacy snapshot saves and visual/linear block fallback through the existing registries.
 
+[ADR 0045](0045-teaching-asset-metadata-and-reuse.md) keeps teaching-asset rights/reuse/version hashes in the existing Studio authoring boundary, with metadata-only inventory and per-source visual validation; protected storage is unchanged.
+
 [ADR 0041](0041-weekly-study-routine-and-checked-previews.md) defines owner-scoped weekly time allocation, explicit revision/dependency-checked preview/apply and compatible session limits.
 
 [ADR 0040](0040-evolution-shell-and-runtime-compatibility.md) defines flagged five-destination navigation, shared Focus layout and compatible runtime step projection without changing Pack schemas.

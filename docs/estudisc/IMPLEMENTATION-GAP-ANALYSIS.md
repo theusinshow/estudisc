@@ -6,6 +6,8 @@ Current deltas: [weekly routine](WEEKLY-ROUTINE.md) and [adaptive sessions](ADAP
 
 [Phase 6 core increment](CORE-INTERACTIVE-BLOCKS.md) now provides those typed contracts for the supported exploratory blocks. MapLibre/geographic providers, complex simulation blueprints and actual corpus enrichment remain pending; existing publication is unchanged.
 
+[Phase 7 metadata/authoring](TEACHING-ASSETS.md) provides licensed version/hash inventory, local search/selection and per-source visual rights validation. Admin catalogue UI and distribution/storage remain later consumers; no actual asset was approved or published by this increment.
+
 Implementation delta: the subsequent authorized Phase 0/1/2 foundation increment is recorded in [EVOLUTION-FOUNDATION.md](EVOLUTION-FOUNDATION.md). Classifications below retain the initial audited checkpoint; use that report and the current plan for implemented flags/navigation/Focus/Today and remaining routine contracts.
 
 Phase 3 delta: [WEEKLY-ROUTINE.md](WEEKLY-ROUTINE.md) records actual routine persistence, onboarding/week/manual/override/focus and checked previews; original gap classifications below remain audit history rather than current implementation status.

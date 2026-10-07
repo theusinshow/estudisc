@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-07 — Teaching-asset metadata and local authoring inventory
+
+- Extend existing Studio image candidates with optional version/type/subjects/Concepts/tags/dimensions/text/reuse/rights/exposure metadata (ADR 0045); preserve legacy normalized artifacts and actual license states. No database, learner Pack envelope, protected Question storage or CSP change.
+- Add local assets search/metadata index and hash-pinned source revalidation. Unknown/link-only/review/rejected, unproduced, stale/hash-mismatched and protected candidates are ineligible for reusable embedding; existing candidates are not automatically promoted. Index/export contains no bytes or publication approval.
+- Verify rights, produced source and attribution separately for every figure/comparison/hotspot/map source. Add compatibility/licence withdrawal/hash/search/duplicate/protected/composite fixtures and actual corpus validation. Exact commands/limits: `docs/estudisc/TEACHING-ASSETS.md`. Admin library UI and production distribution remain later consumers.
+
 ## 2026-10-06 — Typed exploratory lesson blocks
 
 - Extend existing block/Activity registries and scoped resume with optional typed responses/parameters/check phases/help. Validate actual frozen block/activity/kind/value membership; reject undisplayed blocks in question-only sessions, preserve legacy mutation hashes and retain new state across old-client saves (ADR 0044). No Pack-envelope or database migration.
