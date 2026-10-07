@@ -2,6 +2,8 @@
 
 ## 2026-10-07 — Source-defined baseline linear exploration
 
+- Release the code through protected PR #6 and the existing production alias, then publish MAT-05/MAT-06 v3 through real authenticated targeted append/Admin Direct: two new lesson releases, three explorers, original v2 versions and eight Questions per lesson preserved. Record actual actor/mode, Question digests, correct live inputs/results and unchanged nineteen Mathematics identities.
+
 - Extend strict source-bound enrichment recipes to the existing bounded linear model while retaining percentage compatibility. Add source-defined ticket/notebook price and copier-rate next-version candidates without changing original content or shared Questions.
 - Make the existing labelled linear input available as local baseline exploration with the flag off; slider and persisted resume remain enhancements, with no Attempt/mastery evidence, new engine, schema or migration.
 - Read missing text-family payload types from canonical V2 envelopes in the existing renderer, preserving original bytes and explicit invalid-field handling. Add real compatibility, saved-state isolation, multiple-control/error/keyboard/mobile regression checks; isolate disposable enrichment fixture identities.

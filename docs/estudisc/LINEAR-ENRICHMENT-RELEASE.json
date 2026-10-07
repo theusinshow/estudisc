@@ -1,0 +1,389 @@
+{
+  "date": "2026-10-07",
+  "implementationCommit": "9efe0ab",
+  "codePullRequest": "https://github.com/theusinshow/estudisc/pull/6",
+  "codeMergeCommit": "c190d5341449f95c6cb7ae2f749c72512f362e31",
+  "codeMergedAt": "2026-10-07T22:25:09Z",
+  "codeCi": "https://github.com/theusinshow/estudisc/actions/runs/37695522237",
+  "requiredChecks": {
+    "lint": "success",
+    "typecheck": "success",
+    "unit": "success",
+    "build": "success",
+    "integration": "success",
+    "content-qa": "success",
+    "pack-validation": "success",
+    "critical-e2e": "success"
+  },
+  "deployment": {
+    "id": "dpl_BrqjcGtsgveeKipcRcJUMM55Xjvm",
+    "url": "https://estudisc-dk2sgse2r-theusinshows-projects.vercel.app",
+    "alias": "https://vecta-three.vercel.app",
+    "state": "READY",
+    "buildCommit": "c190d53",
+    "buildCompletedAt": "2026-10-07T22:25:37.317Z"
+  },
+  "actualProductionActivation": true,
+  "publicationMode": "admin_direct",
+  "actualActorRecorded": true,
+  "independentQaRecorded": false,
+  "standingAuthorization": "ADR 0048 / AUTONOMY.md",
+  "lessons": [
+    {
+      "candidate": {
+        "lessonId": "MAT-05",
+        "baseVersion": 2,
+        "newVersion": 3,
+        "recipeFile": "tools/estudisc-content-studio/recipes/ticket-price-linear.v1.json",
+        "sourceLessonHash": "2495117723605764f8f718880aed3795dade0f5a948b5f8c96463af298e76003",
+        "packetHash": "bf4304276adbb0c2cca6a425662a87f80b0d45c4cbbee6aefd36690bafccab46",
+        "originalBlocks": 12,
+        "addedBlocks": 1,
+        "retainedActivities": 12,
+        "retainedQuestions": 8,
+        "expectedOutputs": [
+          "Preço: 135 reais"
+        ]
+      },
+      "preview": {
+        "data": {
+          "contentHash": "bf4304276adbb0c2cca6a425662a87f80b0d45c4cbbee6aefd36690bafccab46",
+          "lessonId": "MAT-05",
+          "lessonVersion": 3,
+          "operation": "import",
+          "packId": "estudisc.lesson-version.24453998d4c8539ff02024c5.v3",
+          "status": "ready",
+          "summary": {
+            "activityCount": 12,
+            "conceptCount": 4,
+            "lessonCount": 1,
+            "moduleCount": 1,
+            "trackStableId": "ifsc-2027-mathematics",
+            "trackTitle": "Razão e proporção · versão 3"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 200
+      },
+      "imported": {
+        "data": {
+          "lessonId": "MAT-05",
+          "lessonVersion": 3,
+          "packId": "estudisc.lesson-version.24453998d4c8539ff02024c5.v3",
+          "status": "imported",
+          "summary": {
+            "importedActivities": 12,
+            "importedLessons": 1,
+            "trackStableId": "ifsc-2027-mathematics"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 201
+      }
+    },
+    {
+      "candidate": {
+        "lessonId": "MAT-06",
+        "baseVersion": 2,
+        "newVersion": 3,
+        "recipeFile": "tools/estudisc-content-studio/recipes/direct-proportion-linear.v1.json",
+        "sourceLessonHash": "dd304c36ec54ebfcf27c5dab193d7a8de2528fc69f7a4d7e6e8601612fa6432b",
+        "packetHash": "8b31f31a6e28120533ff4c333252a6d85a9095fcb01fb51aa38cc993c80f55f1",
+        "originalBlocks": 12,
+        "addedBlocks": 2,
+        "retainedActivities": 12,
+        "retainedQuestions": 8,
+        "expectedOutputs": [
+          "Preço: 63 reais",
+          "Páginas: 770 páginas"
+        ]
+      },
+      "preview": {
+        "data": {
+          "contentHash": "8b31f31a6e28120533ff4c333252a6d85a9095fcb01fb51aa38cc993c80f55f1",
+          "lessonId": "MAT-06",
+          "lessonVersion": 3,
+          "operation": "import",
+          "packId": "estudisc.lesson-version.bd32af477569a7f7367a8169.v3",
+          "status": "ready",
+          "summary": {
+            "activityCount": 12,
+            "conceptCount": 4,
+            "lessonCount": 1,
+            "moduleCount": 1,
+            "trackStableId": "ifsc-2027-mathematics",
+            "trackTitle": "Regra de três · versão 3"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 200
+      },
+      "imported": {
+        "data": {
+          "lessonId": "MAT-06",
+          "lessonVersion": 3,
+          "packId": "estudisc.lesson-version.bd32af477569a7f7367a8169.v3",
+          "status": "imported",
+          "summary": {
+            "importedActivities": 12,
+            "importedLessons": 1,
+            "trackStableId": "ifsc-2027-mathematics"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 201
+      }
+    }
+  ],
+  "publication": {
+    "data": {
+      "lessons": 2,
+      "newlyPublished": 2,
+      "published": true,
+      "releases": 18
+    },
+    "httpStatus": 200
+  },
+  "before": {
+    "inspectedAt": "2026-10-07T22:03:31.850Z",
+    "lessons": [
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-05?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Razão e proporção"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-05",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Razão e proporção"
+          }
+        ],
+        "lessonId": "MAT-05",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-05 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 8,
+            "questionTextHash": "e8ca2ceb4c8d218559e979e97968ec62e6622828a8f6138ae0c91f4913709bd6",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 404,
+            "independentQaNotProven": false,
+            "questionCount": 0,
+            "questionTextHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-06?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Regra de três"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-06",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Regra de três"
+          }
+        ],
+        "lessonId": "MAT-06",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-06 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 8,
+            "questionTextHash": "631e7c6706a5269faedac905c88824dc6c23a27636ed11b6ea58809f8a59372e",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 404,
+            "independentQaNotProven": false,
+            "questionCount": 0,
+            "questionTextHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "version": 3
+          }
+        ]
+      }
+    ],
+    "origin": "https://vecta-three.vercel.app",
+    "track": {
+      "httpStatus": 200,
+      "totalLessonLinks": 20,
+      "uniqueLessons": 19
+    }
+  },
+  "after": {
+    "inspectedAt": "2026-10-07T22:27:59.083Z",
+    "lessons": [
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-05?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Razão e proporção"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 1,
+            "outputs": [
+              "Preço: 135 reais"
+            ],
+            "path": "/lessons/MAT-05",
+            "sliders": 0,
+            "textInputs": 1,
+            "title": "Razão e proporção"
+          }
+        ],
+        "lessonId": "MAT-05",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-05 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 8,
+            "questionTextHash": "e8ca2ceb4c8d218559e979e97968ec62e6622828a8f6138ae0c91f4913709bd6",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": true,
+            "httpStatus": 200,
+            "independentQaNotProven": true,
+            "meta": "MAT-05 · versão 3 · Publicada",
+            "publicationModeLabel": "Publicação direta por ADMIN",
+            "questionCount": 8,
+            "questionTextHash": "e8ca2ceb4c8d218559e979e97968ec62e6622828a8f6138ae0c91f4913709bd6",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-06?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Regra de três"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 2,
+            "outputs": [
+              "Preço: 63 reais",
+              "Páginas: 770 páginas"
+            ],
+            "path": "/lessons/MAT-06",
+            "sliders": 0,
+            "textInputs": 2,
+            "title": "Regra de três"
+          }
+        ],
+        "lessonId": "MAT-06",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-06 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 8,
+            "questionTextHash": "631e7c6706a5269faedac905c88824dc6c23a27636ed11b6ea58809f8a59372e",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": true,
+            "httpStatus": 200,
+            "independentQaNotProven": true,
+            "meta": "MAT-06 · versão 3 · Publicada",
+            "publicationModeLabel": "Publicação direta por ADMIN",
+            "questionCount": 8,
+            "questionTextHash": "631e7c6706a5269faedac905c88824dc6c23a27636ed11b6ea58809f8a59372e",
+            "version": 3
+          }
+        ]
+      }
+    ],
+    "origin": "https://vecta-three.vercel.app",
+    "track": {
+      "httpStatus": 200,
+      "totalLessonLinks": 20,
+      "uniqueLessons": 19
+    }
+  },
+  "engineeringEvidence": "docs/estudisc/LINEAR-ENRICHMENT-EVIDENCE.json",
+  "productionMigration": false,
+  "newFeatureFlags": false,
+  "sourceCorpusReimported": false,
+  "originalQuestionVersionsRewritten": false,
+  "learnerAnswersSubmitted": false,
+  "rawCredentialsExtracted": false,
+  "liveKeyboard": {
+    "status": "not_verified",
+    "reason": "Existing Orca browser snapshot/compact snapshot returned runtime_unavailable. Actual authenticated API and published-page HTML checks succeeded; keyboard/mobile interaction is verified by local E2E, not inferred in production."
+  },
+  "caveats": [
+    "Publication does not certify source rights/official mapping/planner readiness; UNREVIEWED remains truthful",
+    "ADMIN default draft GET is administrative preview, not a Student-role isolation test",
+    "Existing published v2 and eight Question digests per lesson remain intact; no independent QA fabricated",
+    "Exploration records no official Attempt/mastery; ordinary lesson reads can record exposure events",
+    "Three optional real PostgreSQL tests unavailable locally; migrated PGlite checks pass"
+  ],
+  "nextAction": "Broader source-defined batches with existing compatible models and actual authored goals; keep pedagogical exceptions explicit"
+}
