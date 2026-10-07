@@ -57,7 +57,7 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
       {!showAll && done && (
         <section className="lesson-step lesson-complete" aria-labelledby="lesson-complete-title">
           <h2 id="lesson-complete-title">Você chegou ao fim da aula</h2>
-          <p>As atividades que você acertou já contam como evidência. O domínio de cada conceito cresce quando você acerta de novo, sem dica, em outro dia.</p>
+          <p>O domínio de cada conceito vem das respostas enviadas às questões, da prática sem ajuda e das revisões ao longo do tempo.</p>
           <nav className="lesson-complete-actions" aria-label="Depois da aula">
             {completion?.nextLesson ? (
               <Link className="primary-button" href={completion.nextLesson.href}>Próxima aula: {completion.nextLesson.title}<ArrowRight aria-hidden="true" /></Link>

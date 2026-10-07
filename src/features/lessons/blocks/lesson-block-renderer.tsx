@@ -15,6 +15,12 @@ import { atomModelSchema } from "./atom-model-schema";
 import { numericExplorerSchema } from "./numeric-explorer-schema";
 import { educationalActivitySchema } from "@/features/activities/application/educational-activity";
 import { EducationalActivityPanel } from "@/features/activities/components/educational-activity-panel";
+import { PredictionPanel } from "./prediction-panel";
+import { getFeatureFlags } from "@/lib/feature-flags";
+import { SafeFigure } from "./safe-figure";
+import { ComparisonFigure } from "./comparison-figure";
+import { HotspotImage, AuthoredMap } from "./visual-locations";
+import { hotspotSchema, authoredMapSchema, type HotspotConfig } from "./visual-interactions-schema";
 import type { ImportedLessonBlock, LessonBlockRendererProps } from "@/features/lessons/blocks/types";
 
 type BlockRenderer = (block: ImportedLessonBlock) => React.ReactNode;
@@ -36,9 +42,11 @@ const blockRenderers: Readonly<Record<string, BlockRenderer>> = {
   ordering: renderEducationalBlock,
   matching: renderEducationalBlock
   ,diagram:renderDiagram,timeline:renderTimeline,
-  figure: renderFigureBlock
+  figure: renderFigureBlock,
+  hotspot: renderLocationBlock,
+  map: renderLocationBlock
 };
-function renderDiagram(block:ImportedLessonBlock){const parsed=atomModelSchema.safeParse(block.payload);return parsed.success?<AtomModel {...parsed.data}/>:<InvalidBlock block={block}/>;}
+function renderDiagram(block:ImportedLessonBlock){const parsed=atomModelSchema.safeParse(block.payload);return parsed.success?<AtomModel {...parsed.data} interaction={{target:"block",id:block.stableId}}/>:<InvalidBlock block={block}/>;}
 function renderTimeline(block:ImportedLessonBlock){const raw=typeof block.payload==="object"&&block.payload!==null?block.payload:{};return renderEducationalBlock({...block,payload:{...raw,type:"ordering"}});}
 
 // ADR 0032: the data URI renders through <img>, so SVG scripts can never execute; the text equivalent is a disclosure.
@@ -47,32 +55,29 @@ function renderFigureBlock(block: ImportedLessonBlock) {
   const parsed = figureBlockSchema.safeParse({ type: block.type, ...payload });
   if (!parsed.success) return <InvalidBlock block={block} />;
   const figure = parsed.data;
-  return (
-    <figure className="lesson-figure">
-      {/* eslint-disable-next-line @next/next/no-img-element -- Pack-embedded data URI; next/image cannot optimise it. */}
-      <img src={figure.src} alt={figure.alt} width={figure.width} height={figure.height} loading="lazy" decoding="async" />
-      <figcaption>
-        <span>{figure.caption}</span>
-        {figure.credit ? <small>{figure.credit}</small> : null}
-      </figcaption>
-      {figure.longDescription ? (
-        <details className="lesson-figure-description">
-          <summary>Descrição da imagem</summary>
-          <Paragraphs text={figure.longDescription} />
-        </details>
-      ) : null}
-    </figure>
-  );
+  return figure.comparison && getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? <ComparisonFigure figure={figure} interaction={{ target: "block", id: block.stableId }}/> : <SafeFigure figure={figure}/>;
+}
+function renderLocationBlock(block: ImportedLessonBlock) {
+  const payload = typeof block.payload === "object" && block.payload !== null ? block.payload : {};
+  if (block.type === "map") {
+    const parsed = authoredMapSchema.safeParse({ type: block.type, ...payload }); if (!parsed.success) return <InvalidBlock block={block}/>;
+    return getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? <AuthoredMap config={parsed.data} interaction={{ target: "block", id: block.stableId }}/> : renderLocationFallback(parsed.data);
+  }
+  const parsed = hotspotSchema.safeParse({ type: block.type, ...payload }); if (!parsed.success) return <InvalidBlock block={block}/>;
+  return getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? <HotspotImage config={parsed.data} interaction={{ target: "block", id: block.stableId }}/> : renderLocationFallback(parsed.data);
+}
+function renderLocationFallback(config: HotspotConfig) {
+  return <div><SafeFigure figure={config}/><dl>{config.points.map(point => <div key={point.id}><dt>{point.label}</dt><dd><Paragraphs text={point.description}/></dd></div>)}</dl></div>;
 }
 
 function renderNumericExplorer(block: ImportedLessonBlock) {
   const parsed = numericExplorerSchema.safeParse(block.payload);
-  return parsed.success ? <NumericExplorer {...parsed.data} /> : <InvalidBlock block={block} />;
+  return parsed.success ? <NumericExplorer {...parsed.data} interaction={{ target: "block", id: block.stableId }} enhanced={getFeatureFlags().FEATURE_INTERACTIVE_LESSONS}/> : <InvalidBlock block={block} />;
 }
 function renderEducationalBlock(block: ImportedLessonBlock) {
   const parsed = educationalActivitySchema.safeParse(block.payload);
   const payload = block.payload as { title?: unknown };
-  return parsed.success ? <EducationalActivityPanel prompt={typeof payload.title === "string" ? payload.title : "Pratique este passo"} config={parsed.data} /> : <InvalidBlock block={block} />;
+  return parsed.success ? <EducationalActivityPanel prompt={typeof payload.title === "string" ? payload.title : "Pratique este passo"} config={parsed.data} interaction={{ target: "block", id: block.stableId }} /> : <InvalidBlock block={block} />;
 }
 
 export function LessonBlockList({ blocks }: Readonly<{ blocks: ReadonlyArray<ImportedLessonBlock> }>) {
@@ -139,6 +144,11 @@ function renderExampleBlock(block: ImportedLessonBlock) {
 }
 
 function renderPredictionBlock(block: ImportedLessonBlock) {
+  if (getFeatureFlags().FEATURE_INTERACTIVE_LESSONS) {
+    const parsed = titledTextBlockSchema.safeParse(block.payload), extra = block.payload as { observation?: unknown; explanation?: unknown };
+    if (!parsed.success) return <InvalidBlock block={block}/>;
+    return <PredictionPanel title={parsed.data.title ?? "Antes de observar"} prompt={parsed.data.content} observation={typeof extra.observation === "string" ? extra.observation : undefined} explanation={typeof extra.explanation === "string" ? extra.explanation : undefined} interaction={{ target: "block", id: block.stableId }}/>;
+  }
   return renderTitledTextBlock(block, "Predição", "prediction");
 }
 

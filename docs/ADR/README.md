@@ -4,6 +4,8 @@
 
 [ADR 0043](0043-owner-scoped-lesson-resume.md) separates scoped mutable step/Question drafts from canonical Attempts and assistance, with revision/idempotence and stale-answer guards.
 
+[ADR 0044](0044-typed-exploratory-interactions.md) defines source-bound exploratory state/help, compatible legacy snapshot saves and visual/linear block fallback through the existing registries.
+
 [ADR 0041](0041-weekly-study-routine-and-checked-previews.md) defines owner-scoped weekly time allocation, explicit revision/dependency-checked preview/apply and compatible session limits.
 
 [ADR 0040](0040-evolution-shell-and-runtime-compatibility.md) defines flagged five-destination navigation, shared Focus layout and compatible runtime step projection without changing Pack schemas.

@@ -1,11 +1,13 @@
 import { z } from "zod";
+import { interactionKey, interactionStateSchema } from "./interaction-state";
 
 const id = z.string().trim().min(1).max(160);
 export const resumeScopeSchema = z.object({ trackId: id, lessonId: id, version: z.number().int().positive(), sessionId: z.uuid().optional() }).strict();
 const responseSchema = z.union([z.string().max(2000), z.array(id).max(100), z.record(id, id), z.null()]);
 export const resumeDraftSchema = z.object({ activityId: id, questionId: id, questionVersion: z.number().int().positive(), response: responseSchema, submissionKey: z.uuid(), baseAttemptId: z.uuid().nullable() }).strict();
-export const resumeDataSchema = z.object({ stepId: id.nullable(), completed: z.boolean(), showAll: z.boolean(), elapsedSeconds: z.number().int().min(0).max(604800), drafts: z.array(resumeDraftSchema).max(50) }).strict().superRefine((data, context) => {
+export const resumeDataSchema = z.object({ stepId: id.nullable(), completed: z.boolean(), showAll: z.boolean(), elapsedSeconds: z.number().int().min(0).max(604800), drafts: z.array(resumeDraftSchema).max(50), interactions: z.array(interactionStateSchema).max(100).optional() }).strict().superRefine((data, context) => {
   if (new Set(data.drafts.map(draft => draft.activityId)).size !== data.drafts.length) context.addIssue({ code: "custom", message: "Duplicate draft activity" });
+  if (data.interactions && new Set(data.interactions.map(interactionKey)).size !== data.interactions.length) context.addIssue({ code: "custom", message: "Duplicate interaction target" });
   if (new TextEncoder().encode(JSON.stringify(data)).length > 48000) context.addIssue({ code: "custom", message: "Resume snapshot is too large" });
 });
 export const saveResumeSchema = z.object({ scope: resumeScopeSchema, revision: z.number().int().nonnegative(), mutationId: z.uuid(), data: resumeDataSchema }).strict();

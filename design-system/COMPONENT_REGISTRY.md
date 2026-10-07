@@ -13,10 +13,13 @@ Search existing components/features before adding one. Status describes rollout/
 | Reveal / CountUp / Motion | APPROVED | Existing motion components/screens | Canonical tokens and reduced motion |
 | StudyActionCard | EXPERIMENTAL | `src/features/today/`; FEATURE_NEW_TODAY | Reason, one destination; no invented count/duration; six study variants plus project |
 | TodayPlan | EXPERIMENTAL | `src/features/today/today-plan.tsx` | Real session snapshots, no invented routine/day-off |
-| LessonSteps / LessonStepper | APPROVED | Existing lesson feature | Runtime projection and URL-step resume; completion is not mastery |
+| LessonSteps / LessonStepper | APPROVED | Existing lesson feature | Runtime projection; legacy URL/scoped typed resume; completion is not mastery |
 | LessonBlockRenderer / Activity registry | APPROVED | Existing lesson/activity features | Only learning dispatch extension points |
 | Figure / NumericExplorer / AtomModel | APPROVED | Existing lesson blocks | Image safety/text alternatives; exploration is not an Attempt |
 | Matching / Ordering / Classification | APPROVED | EducationalActivityPanel | Native select/buttons; local feedback; durable assessment separate |
+| Prediction / exploratory assistance | EXPERIMENTAL | Existing prediction/educational paths; ADR 0044 | Predict/observe/explain, explicit authored help, typed owner/version/context state; no canonical evidence |
+| Comparison / Hotspot / AuthoredMap | EXPERIMENTAL | Existing block dispatcher; safe embedded figures | Bounded data-attribute/CSS geometry under unchanged CSP, reduced-motion-safe 44px markers, scoped state and text/list fallback; map diagram only, MapLibre not integrated |
+| Configured linear explorer | EXPERIMENTAL | NumericExplorer linear mode | Bounded authored coefficients/range/step, trusted arithmetic, no arbitrary formula execution or grade |
 | QuestionPanel / ResponseFields / Hints | APPROVED | Shared Question/activity paths | Immutable attempts and recorded assistance/evidence |
 | Mastery / Review / Mistake / Progress views | APPROVED | Existing feature modules | Canonical deterministic policy projections |
 | AssessmentPanel | APPROVED | Existing unified engine | Server deadline, saved responses/flags, delayed result, EXAM blocks tutor |

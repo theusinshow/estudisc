@@ -98,6 +98,8 @@ Acceptance: reload and pause resume sent/unsent state correctly; version mismatc
 
 ## 9. Phase 6 — Core Interactive Blocks
 
+Current increment: [CORE-INTERACTIVE-BLOCKS.md](CORE-INTERACTIVE-BLOCKS.md) and ADR 0044 add typed existing/new exploratory state, visual fallback, configured linear models and an authored offline map/list. MapLibre/geographic workers/tiles/provider boundaries require a real approved blueprint and remain explicitly deferred; no dependency was installed to simulate completion. This local gate preserves the existing canonical evidence policy.
+
 Risk MEDIUM; Luna Max under specified contracts, Terra for evidence/help semantics. Depends on Phase 5; advanced assets resolve with Phase 7. Flag: `FEATURE_INTERACTIVE_LESSONS`.
 
 Order: Prediction → safe Image/figure → Matching → Sorting/ordering → Timeline → Comparison → Hotspot → Slider/NumericExplorer generalization → InteractiveMap pilot. Reuse current dispatch/evaluators/response controls; do not create a parallel block or mastery registry. Consult `source-pack/05_INTERACTIVE_LEARNING.md` only for this phase. Adopt dnd-kit/MapLibre only when a justified pilot needs them; approve dependency/version/license then, not now.

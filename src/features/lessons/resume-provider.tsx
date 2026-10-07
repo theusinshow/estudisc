@@ -2,8 +2,9 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { emptyResume, resumeSnapshotSchema, type ResumeData, type ResumeDraft, type ResumeScope, type ResumeSnapshot, type SaveResume } from "./resume-contracts";
 import { readValidatedResponse } from "@/lib/api-response";
+import { interactionKey, type InteractionState } from "./interaction-state";
 
-type ResumeContext = { data: ResumeData; update: (change: Partial<ResumeData>) => void; setDraft: (draft: ResumeDraft | undefined, activityId: string) => void };
+type ResumeContext = { data: ResumeData; update: (change: Partial<ResumeData>) => void; setDraft: (draft: ResumeDraft | undefined, activityId: string) => void; setInteraction: (value: InteractionState) => void };
 const Context = createContext<ResumeContext | null>(null);
 export const useLessonResume = () => useContext(Context);
 
@@ -21,6 +22,7 @@ export function LessonResumeProvider({ scope, initial, children }: Readonly<{ sc
     setData(current.current); setStatus(conflict.current ? "conflict" : "changed");
   }, [elapsed]);
   const setDraft = useCallback((draft: ResumeDraft | undefined, activityId: string) => update({ drafts: [...current.current.drafts.filter(entry => entry.activityId !== activityId), ...(draft ? [draft] : [])] }), [update]);
+  const setInteraction = useCallback((value: InteractionState) => update({ interactions: [...(current.current.interactions ?? []).filter(entry => interactionKey(entry) !== interactionKey(value)), value] }), [update]);
 
   const save = useCallback(async (keepalive = true, force = false) => {
     if (saving.current || conflict.current) return;
@@ -61,7 +63,7 @@ export function LessonResumeProvider({ scope, initial, children }: Readonly<{ sc
     const timer = setTimeout(() => { void save(); }, 500);
     return () => clearTimeout(timer);
   }, [data, status, save]);
-  const context = useMemo(() => ({ data, update, setDraft }), [data, update, setDraft]);
+  const context = useMemo(() => ({ data, update, setDraft, setInteraction }), [data, update, setDraft, setInteraction]);
   return <Context.Provider value={context}><div className="lesson-resume-controls">
     <p role="status" aria-live="polite">{status === "new" ? "Seu ponto será salvo durante o estudo" : status === "saved" ? "Ponto da aula salvo" : status === "saving" ? "Salvando ponto da aula…" : status === "changed" ? "Há mudanças para salvar" : status === "conflict" ? "Outra aba salvou um ponto mais recente. Recarregue a aula para continuar a partir dele." : "Não foi possível salvar. Mantenha esta página aberta e tente novamente."}</p>
     {status === "conflict" ? <button className="secondary-button" type="button" onClick={() => window.location.reload()}>Recarregar aula</button> : <button className="secondary-button" type="button" disabled={status === "saving"} onClick={() => void save(true, true)}>Salvar ponto da aula</button>}

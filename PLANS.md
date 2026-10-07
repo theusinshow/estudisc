@@ -1,5 +1,23 @@
 # Estudisc current plan
 
+## Completed increment — Phase 6 interactive blocks (2026-10-06–07)
+
+Phase 5 is checkpointed at `2259874`. The user's “pode seguir” authorizes this next local increment with current model/effort and no additional agents. Extend existing block dispatcher, Activity registry and scoped resume; preserve canonical Attempts/evidence/help weighting and immutable published content.
+
+Assumptions: exploratory responses/parameters/help are mutable display state, never graded Attempts or mastery; feedback is derived from approved content after reload, never trusted from snapshot JSON. Old resume snapshots and mutation hashes remain compatible. Existing matching/selects, sorting/buttons and safe embedded figures are retained; no drag dependency. New figure/comparison/hotspot/map capabilities require explicit compatible contracts and text fallback; MapLibre/dependency adoption waits for an actual justified approved blueprint and exposure boundary.
+
+- [x] ADR/contracts/inventory and meaningful compatibility, membership and value fixtures.
+- [x] Typed scoped state for existing prediction/educational/numeric/atom blocks; response/help reload, local feedback and no evidence.
+- [x] Complete supported visual block gaps through the existing dispatcher; safe figures, accessible timeline/comparison/hotspot/slider and documented map pilot boundary.
+- [x] Focused tests per increment; full lint/typecheck/test/build/packs/off/on E2E, mobile/keyboard/reduced-motion/visual and historical hash/source checks.
+- [x] Update docs/status/changelog and local checkpoint preparation; leave exact next action for Phase 7.
+
+Focused contracts/UI/SQL-memory/corpus acceptance PASS; full tests 343 PASS / 3 optional real-PostgreSQL SKIP; default E2E 44 PASS / 18 gated SKIP; combined adaptive/resume/interactive on 12 PASS / 2 off-case SKIP. Final foundation-on/build/typecheck/hash/source acceptance is in progress. Reports/contracts: [core interactive blocks](docs/estudisc/CORE-INTERACTIVE-BLOCKS.md), ADR 0044. No new dependency, migration or published-content change. The geographic MapLibre engine is explicitly deferred to approved blueprint/provider demand; the current map pilot is an authored image/list.
+
+Final gate accepted locally (2026-10-07): lint/typecheck/build/packs and generated geometry check PASS; 343 tests PASS / 3 optional real-PostgreSQL SKIP; default E2E 44 PASS / 18 gated SKIP; combined adaptive/resume/interactive on 12 PASS / 2 off-case SKIP; foundation/routine/resume/interactive on 18 PASS / 2 off-case SKIP. Actual pixel/clipping/zoom, reduced-motion, corpus/hash/link/diff checks PASS. Evidence pins 39 current hashes against 30 actual prior inputs and 12 unchanged sources; CSP, engines, dependencies, migrations and published content remain unchanged.
+
+NEXT ACTION: checkpoint this accepted core increment, then Phase 7 licensed teaching-asset metadata/rights/reuse inventory through the existing asset/Studio boundaries. MapLibre/geographic engine remains explicitly blueprint/provider-dependent. Preserve publication and external/production authorization.
+
 ## Completed increment — Phase 5 lesson resume (2026-10-06)
 
 Phase 4 gate passed and is checkpointed at `4557014`. Continue the approved roadmap with owner/version/context-pinned resume through the existing lesson stepper and shared Question UI. No new renderer, evidence rule, Pack schema, published-content transformation or production operation.

@@ -4,6 +4,8 @@ Current deltas: [weekly routine](WEEKLY-ROUTINE.md) and [adaptive sessions](ADAP
 
 [Scoped lesson resume](LESSON-RESUME.md) closes stable-step/expanded/shared Question draft reload and stale-submission/assistance guards. Typed state for other interactive blocks remains tied to Phase 6 contracts.
 
+[Phase 6 core increment](CORE-INTERACTIVE-BLOCKS.md) now provides those typed contracts for the supported exploratory blocks. MapLibre/geographic providers, complex simulation blueprints and actual corpus enrichment remain pending; existing publication is unchanged.
+
 Implementation delta: the subsequent authorized Phase 0/1/2 foundation increment is recorded in [EVOLUTION-FOUNDATION.md](EVOLUTION-FOUNDATION.md). Classifications below retain the initial audited checkpoint; use that report and the current plan for implemented flags/navigation/Focus/Today and remaining routine contracts.
 
 Phase 3 delta: [WEEKLY-ROUTINE.md](WEEKLY-ROUTINE.md) records actual routine persistence, onboarding/week/manual/override/focus and checked previews; original gap classifications below remain audit history rather than current implementation status.

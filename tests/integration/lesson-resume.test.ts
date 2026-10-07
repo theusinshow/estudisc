@@ -11,6 +11,7 @@ import { MemoryStudySessionRepository } from "@/db/repositories/memory-study-ses
 import { CatalogRepository } from "@/db/repositories/catalog-repository";
 import { MemoryCatalogRepository } from "@/db/repositories/memory/catalog";
 import { emptyResume } from "@/features/lessons/resume-contracts";
+import type { InteractionState } from "@/features/lessons/interaction-state";
 import { sessionItemsSchema } from "@/features/study-sessions/contracts";
 import { attempts, conceptEvidence, lessons, questionVersions } from "@/db/schema";
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
@@ -39,16 +40,29 @@ describe.each(["memory", "sql"] as const)("lesson resume (%s)", kind => {
       await expect(repository.save("learner", { ...input, revision: 1, mutationId: crypto.randomUUID(), data: { ...input.data, drafts: [{ ...input.data.drafts[0], questionId: "outside" }] } })).rejects.toThrow("resume unavailable");
       await expect(repository.get("learner", { ...scope, version: 999 })).rejects.toThrow("resume unavailable");
       expect((await repository.get("learner", scope))?.data).toEqual(input.data);
+      const atom: InteractionState = { target: "block", id: "cie06-atom", kind: "atom", state: { protons: "8", neutrons: "8", electrons: "6", prediction: "2", revealed: true } };
+      const interactive = { ...input, revision: 1, mutationId: crypto.randomUUID(), data: { ...input.data, interactions: [atom] } };
+      const interactiveSaved = await repository.save("learner", interactive);
+      expect(interactiveSaved.data.interactions).toEqual([atom]);
+      expect(await repository.save("learner", interactive)).toEqual(interactiveSaved);
+      await expect(repository.save("learner", { ...interactive, revision: 2, mutationId: crypto.randomUUID(), data: { ...interactive.data, interactions: [{ ...atom, id: "outside" }] } })).rejects.toThrow("resume unavailable");
+      const legacyUpdate = { ...input, revision: 2, mutationId: crypto.randomUUID(), data: { ...input.data, stepId: "cie06-summary" } };
+      const legacyReply = await repository.save("learner", legacyUpdate);
+      expect(Object.hasOwn(legacyReply.data, "interactions")).toBe(false);
+      expect(await repository.save("learner", legacyUpdate)).toEqual(legacyReply);
+      const retained = { ...legacyUpdate.data, interactions: [atom] };
+      expect((await repository.get("learner", scope))?.data).toEqual(retained);
       const sessions = database ? new StudySessionRepository(database.db, false, true) : new MemoryStudySessionRepository(store, false, true);
       const session = (await sessions.plan("learner", 10))!; await sessions.transition("learner", session.id, "start");
       const item = sessionItemsSchema.parse(session.items)[0];
       const sessionScope = { trackId: item.trackId!, lessonId: item.lessonId, version: item.version, sessionId: session.id };
       const sessionInput = { scope: sessionScope, revision: 0, mutationId: crypto.randomUUID(), data: emptyResume() };
       expect((await repository.save("learner", sessionInput)).revision).toBe(1);
+      await expect(repository.save("learner", { ...sessionInput, revision: 1, mutationId: crypto.randomUUID(), data: { ...emptyResume(), interactions: [atom] } })).rejects.toThrow("resume unavailable");
       await expect(repository.get("other", sessionScope)).rejects.toThrow("resume unavailable");
       await sessions.transition("learner", session.id, "complete");
       await expect(repository.save("learner", { ...sessionInput, revision: 1, mutationId: crypto.randomUUID() })).rejects.toThrow("resume unavailable");
-      expect((await repository.get("learner", scope))?.data).toEqual(input.data);
+      expect((await repository.get("learner", scope))?.data).toEqual(retained);
       expect(database ? await database.db.select().from(attempts) : store.attempts).toHaveLength(0);
       expect(database ? await database.db.select().from(conceptEvidence) : store.conceptEvidence).toHaveLength(0);
       const newer = structuredClone(fixture); newer.version = fixture.version + 1;
@@ -56,7 +70,7 @@ describe.each(["memory", "sql"] as const)("lesson resume (%s)", kind => {
       const newImport = await importTrackPack(newer, database ? new DrizzleTrackImportRepository(database.db) : new MemoryTrackImportRepository(store));
       expect(newImport.status, JSON.stringify(newImport)).toBe("imported");
       expect((await catalog.getLesson("CIE-06"))?.resumeScope).toBeUndefined();
-      expect((await repository.get("learner", scope))?.data).toEqual(input.data);
+      expect((await repository.get("learner", scope))?.data).toEqual(retained);
     } finally { await database?.close(); }
   });
 });

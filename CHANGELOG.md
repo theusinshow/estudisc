@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-06 — Typed exploratory lesson blocks
+
+- Extend existing block/Activity registries and scoped resume with optional typed responses/parameters/check phases/help. Validate actual frozen block/activity/kind/value membership; reject undisplayed blocks in question-only sessions, preserve legacy mutation hashes and retain new state across old-client saves (ADR 0044). No Pack-envelope or database migration.
+- Add predict/observe/explain, persisted guided matching/order/timeline, authored four-stage exploratory help and recomputed correct/incorrect/partial/explanation feedback. Preserve canonical Question assistance/evaluators/evidence weights; exploratory checks do not record Attempts or establish mastery.
+- Add safe comparison figures, zoomable hotspot/list, offline authored map/list and configured bounded linear models alongside legacy percentage explorers. Use keyboard/selects/buttons/text/image fallback, existing image validation and approved DS tokens; malformed image decoding fails safely. MapLibre/geographic services and complex simulations remain explicit blueprint-dependent work.
+- Generate finite geometry CSS for validated data attributes, preserving existing CSP. Verify actual clipping, zoom and point centers; margin-based centering survives reduced-motion transform suppression. No inline-style permission or new CSP allowance.
+- Preserve source bytes, published versions and legacy figure-description markup. Add disposable fixtures, SQL/memory/client/compatibility and mobile/desktop acceptance. Exact commands/limits: `docs/estudisc/CORE-INTERACTIVE-BLOCKS.md`.
+
 ## 2026-10-06 — Scoped lesson and shared Question resume
 
 - Add a mutable owner/track/lesson-version/context snapshot and additive empty lesson_resumes table in migration 0020 (ADR 0043). Validate published/frozen owned scope, bounded typed Question drafts, revision conflicts and identical retry. Preserve published content, Pack contracts and append-only learner evidence.

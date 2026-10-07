@@ -6,6 +6,8 @@ import { parseEducationalActivityConfig } from "../application/educational-activ
 import { questionReferenceSchema } from "../application/question-reference";
 import { EducationalActivityPanel } from "../components/educational-activity-panel";
 import { QuestionActivity } from "../components/question-activity";
+import { PredictionPanel } from "@/features/lessons/blocks/prediction-panel";
+import { getFeatureFlags } from "@/lib/feature-flags";
 
 import type { ActivityConfigByType, ActivityDefinition, ExecutableActivityType, KnownActivityType } from "./types";
 
@@ -47,7 +49,7 @@ const predictionActivityDefinition: ActivityDefinition<"prediction"> = {
   type: "prediction",
   label: "Atividade de predição",
   parseConfig: parseStaticActivityConfig,
-  render: ({ activity, config }) => (
+  render: ({ activity, config }) => getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? <PredictionPanel title={activity.prompt} prompt={config.instructions ?? "Antes de conferir, registre sua previsão."} observation={config.answer} explanation={config.explanation} choices={config.choices.map(choice => choice.label)} interaction={{ target: "activity", id: activity.stableId }}/> : (
     <StaticActivityPanel
       activityStableId={activity.stableId}
       activityLabel="Atividade de predição"
@@ -73,7 +75,7 @@ const multipleChoiceActivityDefinition: ActivityDefinition<"multiple-choice"> = 
 
 type EducationalType = "numeric" | "ordering" | "classification" | "matching" | "text-highlight" | "guided-steps";
 function educationalDefinition<Type extends EducationalType>(type: Type): ActivityDefinition<Type> {
-  return { type, label: "Prática guiada", parseConfig: input => parseEducationalActivityConfig({ ...(typeof input === "object" && input !== null ? input : {}), type }), render: ({ activity, config }) => <EducationalActivityPanel prompt={activity.prompt} config={config} /> };
+  return { type, label: "Prática guiada", parseConfig: input => parseEducationalActivityConfig({ ...(typeof input === "object" && input !== null ? input : {}), type }), render: ({ activity, config }) => <EducationalActivityPanel prompt={activity.prompt} config={config} interaction={{ target: "activity", id: activity.stableId }} /> };
 }
 const activityDefinitions = {
   code: codeActivityDefinition,

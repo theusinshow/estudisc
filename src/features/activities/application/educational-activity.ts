@@ -3,7 +3,8 @@ import { parseNumericResponse } from "./numeric-response";
 
 const item = z.object({ id: z.string().min(1), label: z.string().min(1) }).strict();
 const items = z.array(item).min(1).max(60).refine(values => new Set(values.map(item => item.id)).size === values.length, "Duplicate item ID");
-const base = z.object({ instructions: z.string().optional(), hints: z.array(z.string().min(1)).max(3).default([]), explanation: z.string().default("") });
+export const exploratoryAssistanceSchema = z.object({ hint: z.string().min(1).max(2000), recall: z.string().min(1).max(2000), analogousExample: z.string().min(1).max(2000), walkthrough: z.string().min(1).max(2000) }).strict();
+const base = z.object({ instructions: z.string().optional(), hints: z.array(z.string().min(1)).max(3).default([]), explanation: z.string().default(""), assistance: exploratoryAssistanceSchema.optional() });
 export const educationalActivitySchema = z.discriminatedUnion("type", [
   base.extend({ type: z.literal("multiple-choice"), items, expectedChoice: z.string().min(1) }),
   base.extend({ type: z.literal("numeric"), expected: z.number().finite(), tolerance: z.number().finite().nonnegative().default(0) }),
