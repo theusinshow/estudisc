@@ -1,5 +1,7 @@
 # Estudisc — Phase 5 scoped lesson resume
 
+2026-10-08 production delta: migration 0020 actually applied after exact baseline checks; table shape/readiness and idempotent no-op retry verified. Interactive flag active; actual MAT-07 Focus/resume/percentage slider and private backup availability verified, without production answer submission or explicit test-save request. [Actual final receipt](FINAL-EVOLUTION-RELEASE.json). Original local-only/never-production statements below describe the earlier dated implementation.
+
 Date: 2026-10-06. Base: `4557014`. The user authorized continuous local implementation; no model switch, additional agents, independent architectural review, production migration or publication is claimed.
 
 ## Behavior and compatibility

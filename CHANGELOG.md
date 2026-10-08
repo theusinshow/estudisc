@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08 — Production evolution rollout confirmed
+
+- Release final consumers through protected PR #14/main d6a5669, eight PR/main checks and verified READY production deployments with the existing alias.
+- Apply only reviewed additive migrations 0019/0020 through actual authenticated hash-bound ADMIN activation; confirm three exact ready tables and idempotent no-op retry. Enable the four remaining foundation/routine/adaptive/interactive flags and verify live pages/navigation/Focus/resume/catalog/owned backup.
+- Preserve original published content/Questions, canonical evidence/mastery/scoring and real publication audit modes. Record exact release/local acceptance and the distinct remaining content-goal exception handoff; no full-corpus enrichment or independent review claim.
+
 ## 2026-10-08 — Final evolution consumers and checked rollout
 
 - Add searchable source-backed Aprender catalog and actual area filtering, with wide mobile controls and existing Concept/lesson navigation.

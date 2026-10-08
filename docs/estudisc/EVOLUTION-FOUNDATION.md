@@ -1,5 +1,7 @@
 # Evolution foundation — implementation and verification
 
+2026-10-08 production delta: foundation/Today/planner/Focus paths are now active after protected final software release, exact additive-table activation and authenticated page/control verification. [Actual final receipt](FINAL-EVOLUTION-RELEASE.json). The original dated implementation/default-off/local-only statements below remain historical evidence.
+
 Date: 2026-10-06. Base: local audit checkpoint `50cfae4`. User authorized implementation after the initial audit. This report covers the first Phase 0/1/2 increment, not the complete architecture pack.
 
 Implemented:

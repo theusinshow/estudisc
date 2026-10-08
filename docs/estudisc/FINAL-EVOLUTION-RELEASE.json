@@ -1,0 +1,234 @@
+{
+  "date": "2026-10-08",
+  "implementationCommit": "c2513cb",
+  "pullRequest": "https://github.com/theusinshow/estudisc/pull/14",
+  "mergeCommit": "d6a56690d729d00ad6a1b20a45c7a19c6d04d1b5",
+  "mergedAt": "2026-10-08T15:21:29Z",
+  "ci": "https://github.com/theusinshow/estudisc/actions/runs/37799265597",
+  "mainCi": "https://github.com/theusinshow/estudisc/actions/runs/37800097393",
+  "requiredChecksPassed": [
+    "lint",
+    "typecheck",
+    "unit",
+    "build",
+    "integration",
+    "content-qa",
+    "pack-validation",
+    "critical-e2e"
+  ],
+  "codeDeployment": {
+    "id": "dpl_Dwt9bqnux41yTGhc8NfGebyHpchY",
+    "url": "https://estudisc-mem0mci4u-theusinshows-projects.vercel.app",
+    "status": "READY",
+    "buildCommit": "d6a5669",
+    "buildCompletedAt": "2026-10-08T15:22:15.784Z",
+    "alias": "https://vecta-three.vercel.app",
+    "aliasMatches": true
+  },
+  "flagDeployment": {
+    "id": "dpl_88rozsTkLKdPiAbxLye6VXws1Tdz",
+    "url": "https://estudisc-43q9rpmg2-theusinshows-projects.vercel.app",
+    "status": "READY",
+    "buildCommit": "d6a5669",
+    "buildCompletedAt": "2026-10-08T15:26:48.289Z",
+    "alias": "https://vecta-three.vercel.app",
+    "aliasMatches": true
+  },
+  "flagsSetThisRollout": [
+    "FEATURE_NEW_TODAY",
+    "FEATURE_STUDY_PLANNER",
+    "FEATURE_ADAPTIVE_SESSION",
+    "FEATURE_INTERACTIVE_LESSONS"
+  ],
+  "retainedPriorFlags": [
+    "FEATURE_AI_LEARNING",
+    "FEATURE_KNOWLEDGE_MAP",
+    "FEATURE_SMART_MISTAKES",
+    "FEATURE_REAL_EXAM",
+    "FEATURE_CONTENT_HEALTH"
+  ],
+  "localAcceptance": "FINAL-EVOLUTION-LOCAL-ACCEPTANCE.json",
+  "productionAcceptance": {
+    "before": {
+      "data": {
+        "baseline": true,
+        "canApply": true,
+        "hash": "ffd87565c62272ab6cd6641ca36ba21c48bdd29065bd9a724606315f1c33f2ca",
+        "migrationSet": "evolution-user-state.0019-0020",
+        "ready": false,
+        "tables": [
+          {
+            "name": "study_plans",
+            "state": "missing"
+          },
+          {
+            "name": "study_plan_previews",
+            "state": "missing"
+          },
+          {
+            "name": "lesson_resumes",
+            "state": "missing"
+          }
+        ],
+        "target": "vecta-three.vercel.app"
+      },
+      "status": 200
+    },
+    "activation": {
+      "data": {
+        "applied": [
+          "0019_rainy_shooting_star",
+          "0020_giant_grey_gargoyle"
+        ],
+        "baseline": true,
+        "canApply": true,
+        "hash": "ffd87565c62272ab6cd6641ca36ba21c48bdd29065bd9a724606315f1c33f2ca",
+        "migrationSet": "evolution-user-state.0019-0020",
+        "ready": true,
+        "tables": [
+          {
+            "name": "study_plans",
+            "state": "ready"
+          },
+          {
+            "name": "study_plan_previews",
+            "state": "ready"
+          },
+          {
+            "name": "lesson_resumes",
+            "state": "ready"
+          }
+        ],
+        "target": "vecta-three.vercel.app"
+      },
+      "status": 200
+    },
+    "after": {
+      "ready": true,
+      "status": 200,
+      "tables": [
+        {
+          "name": "study_plans",
+          "state": "ready"
+        },
+        {
+          "name": "study_plan_previews",
+          "state": "ready"
+        },
+        {
+          "name": "lesson_resumes",
+          "state": "ready"
+        }
+      ]
+    },
+    "pages": {
+      "backup": {
+        "resumeAvailable": true,
+        "resumeRecords": 0,
+        "routineAvailable": true,
+        "routineRecords": 0,
+        "schema": "estudisc.export.v1",
+        "status": 200
+      },
+      "pages": [
+        {
+          "enhancedToday": true,
+          "path": "/",
+          "status": 200
+        },
+        {
+          "adaptiveTimes": true,
+          "path": "/plan",
+          "routineEditor": true,
+          "status": 200
+        },
+        {
+          "catalogSearch": true,
+          "path": "/tracks",
+          "status": 200
+        },
+        {
+          "path": "/review",
+          "status": 200
+        },
+        {
+          "path": "/mistakes",
+          "status": 200
+        },
+        {
+          "path": "/knowledge-map",
+          "status": 200
+        },
+        {
+          "path": "/assessments",
+          "status": 200
+        },
+        {
+          "path": "/admin/content-studio",
+          "status": 200
+        }
+      ],
+      "routine": {
+        "configured": false,
+        "status": 200,
+        "subjects": 4
+      }
+    },
+    "lesson": {
+      "focus": "focus",
+      "path": "/lessons/MAT-07",
+      "percentageExplorers": 1,
+      "primaryNavigation": 0,
+      "resumeControls": true,
+      "sliders": 1
+    },
+    "boundaries": {
+      "invalidResumeStatus": 400,
+      "invalidSessionStatus": 400,
+      "retryApplied": [],
+      "retryReady": true,
+      "retryStatus": 200
+    },
+    "navigation": {
+      "path": "/plan",
+      "primaryDestinations": [
+        "Hoje",
+        "Plano",
+        "Aprender",
+        "Revisar",
+        "Progresso"
+      ],
+      "timeControls": [
+        "Estudar 10 min",
+        "20 min",
+        "30 min",
+        "45 min"
+      ]
+    },
+    "assets": {
+      "exposure": "unknown",
+      "imageRecords": 1,
+      "kind": "assets",
+      "licenseStatus": "UNKNOWN",
+      "metadataOnly": true,
+      "published": false,
+      "reusable": false,
+      "status": 200
+    }
+  },
+  "preserved": {
+    "actualAuthenticatedAdmin": true,
+    "noRawCredentialExtraction": true,
+    "noExistingContentEvidenceMasteryTransform": true,
+    "noProductionAnswerOrAssessmentSubmission": true,
+    "noProductionStudyRoutineSettingsApplied": true,
+    "noCorpusImportOrPublication": true,
+    "noRealAiProviderCall": true,
+    "noIndependentApprovalFabricated": true,
+    "nativeProductionKeyboardClaimed": false
+  },
+  "diagnostics": [
+    "vercel redeploy rejected unsupported --yes before creating a deployment; verified CLI syntax succeeded.",
+    "Original explorer class probe used the wrong selector; actual labelled percentage region/slider and resume/Focus were independently confirmed."
+  ]
+}
