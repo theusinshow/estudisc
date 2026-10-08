@@ -2,6 +2,14 @@
 
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
+### Active Phase 12 — canonical knowledge-map projection
+
+Phase 11 is live: PR #10/all eight checks PASS/main 3e9512e; deployment dpl_CaMJeQ3XvgWGjTGvsgfrjFbVtdtt READY/commit+existing alias verified. AI flag active; actual MAT-11 200/37 optional controls, malformed request 400 and unavailable owned context 409. No real provider call/credential/migration during acceptance.
+
+Extend existing Concept/catalog/curriculum readers with published membership, owned canonical mastery and actual due schedules. Keep track-scoped required/recommended edges and their direction; do not combine them into global unlock decisions. Map unseen/developing/consolidated/due states from evidence/schedules, not lesson completion. Report existing planner readiness (level >=2) with track/source caveats; map navigation does not change access.
+
+React Flow 12.12.0 is a lazy, read-only presentation; retain the list when disabled/unloaded/failed. Subject filtering, keyboard/touch details sheet and static links; no editable nodes/edges. Reuse cycle validation per track and bounded fallback for aggregate display cycles. No migration, engine or policy weights. Local acceptance: focused twenty-five PASS; full 417 PASS/three optional real-PG SKIP; lint/typecheck/build/packs PASS; full serial browser 58 PASS/twenty-six gated SKIP; flagged map/failure loops four PASS/two flag-off SKIP. Five widths/keyboard/touch/dialog/closed-canvas-load/failure-list checks PASS; bounded visual confirmation/detector [] completed. Corrected read-only node pointer activation and resize fit; closed only a verified orphaned owned 3210 server. Existing wasm peer warnings match the prior lockfile and are outside the added SVG library. NEXT ACTION: protected release/live snapshot/render checks, then Phase 13.
+
 ### Next increment — Phase 11 contextual assistance (2026-10-08)
 
 PR #9 passed all eight required checks and merged as 8cae545; Phase 10 production deployment/actual acceptance is being completed. Continue directly with the existing optional tutor/generation gateway. Implement the five approved AI actions against server-resolved, owner/version-bound Question, published lesson block, factual mistake group, completed session or actual prerequisite relation contexts. AI text never changes canonical evidence, mastery, review, planner, scores or publication.
@@ -18,7 +26,7 @@ Execution order: finish a representative broader Phase 9 batch using actual auth
 
 - [x] Representative broader source-defined enrichment batch and actual release.
 - [x] Review/mistake retrieval, factual grouping and different-question practice.
-- [ ] Optional contextual AI service/limits/cache/fallback with reserved/exam exclusion.
+- [x] Optional contextual AI service/limits/cache/fallback with reserved/exam exclusion.
 - [ ] Prerequisite graph read model and accessible lazy interactive presentation.
 - [ ] Existing real-exam navigation, flags, final review and factual results.
 - [ ] Existing ADMIN authoring/asset/blueprint/health consumers with immutable publication.

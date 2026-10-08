@@ -24,6 +24,7 @@ import { ConceptRelationRepository, MemoryConceptRelationRepository } from "@/db
 import { AIService } from "@/features/ai/ai-service";
 import { aiRequestSchema } from "@/features/ai/contracts";
 import { resolveAiContext } from "@/features/ai/context";
+import { KnowledgeMapRepository,MemoryKnowledgeMapRepository } from "@/db/repositories/knowledge-map-repository";
 
 const now = new Date("2026-10-06T12:00:00Z");
 function fixture(version = 1) {
@@ -56,6 +57,22 @@ async function setup(kind: "memory" | "sql", seed = true, initial = fixture()) {
 }
 
 describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
+  it("reads a published, owned knowledge map without creating evidence or conflating schedules",async()=>{
+    const ctx=await setup(kind);
+    try{
+      const conceptId=source.questions[0].conceptIds[0];
+      if(ctx.database){await ctx.database.db.insert(owners).values({id:"learner",displayName:"Test"}).onConflictDoNothing();const [concept]=await ctx.database.db.select().from(concepts).where(eq(concepts.stableId,conceptId));await ctx.database.db.insert(reviewSchedules).values({ownerId:"learner",conceptId:concept.id,currentMasteryState:"learning",nextReviewAt:now,policyVersion:"review.v2",reviewCount:0,recentQuality:0});}
+      else ctx.store.reviewSchedules.push({ownerId:"learner",conceptStableId:conceptId,currentMasteryState:"learning",lastReviewedAt:null,nextReviewAt:now,reviewCount:0,recentQuality:0,policyVersion:"review.v2",updatedAt:now});
+      const repo=ctx.database?new KnowledgeMapRepository(ctx.database.db):new MemoryKnowledgeMapRepository(ctx.store);
+      const owned=await repo.get("learner",now),foreign=await repo.get("other",now);
+      expect(owned.nodes.find(node=>node.id===conceptId)).toMatchObject({state:"review_due",evidenceCount:0});expect(foreign.nodes.find(node=>node.id===conceptId)).toMatchObject({state:"unseen",reviewAt:null});
+      expect(owned.edges).toContainEqual(expect.objectContaining({conceptId:source.conceptPrerequisites[0].conceptId,prerequisiteId:source.conceptPrerequisites[0].prerequisiteConceptId,strength:source.conceptPrerequisites[0].strength}));
+      expect(ctx.database?(await ctx.database.db.select().from(conceptEvidence)).length:ctx.store.conceptEvidence.length).toBe(0);
+      if(ctx.database)for(const row of await ctx.database.db.select().from(lessons))await ctx.database.db.update(lessons).set({metadata:{...row.metadata as object,status:"draft"}}).where(eq(lessons.id,row.id));
+      else for(const entry of ctx.store.packImports)if(entry.manifest?.schema==="caderno.track.v2")for(const moduleRecord of entry.manifest.track.modules)for(const lesson of moduleRecord.lessons)lesson.status="draft";
+      expect((await repo.get("learner",now)).nodes).toHaveLength(0);
+    }finally{await ctx.database?.close();}
+  });
   it("resolves declared AI prerequisite relations from actually published Concepts without mixing public and internal track IDs",async()=>{
     const ctx=await setup(kind);
     try{

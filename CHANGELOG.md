@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08 — Canonical knowledge-map presentation
+
+- Add a published, owner-scoped map projection using existing mastery and actual review schedules. Preserve prerequisite direction/strength/track context, unavailable references and exact canonical labels; no propagation, access decisions or evidence writes.
+- Add lazy read-only React Flow 12.12.0 with subject filtering, keyboard/touch Concept sheets, resize-aware framing and a complete accessible list when the canvas is closed or fails. Keep approved tokens/CSP and source/mapping caveats.
+- Record full 417-test/58-browser acceptance plus flagged map/failure loops, meaningful migrated SQL/memory publication/ownership cases and the actual prior AI rollout receipt. Preserve existing optional wasm peer warnings rather than update unrelated dependencies.
+
 ## 2026-10-08 — Bounded optional contextual AI
 
 - Add the five approved AI actions using server-resolved published lesson/Question versions, owned factual mistakes/completed sessions and actual curriculum relations. Keep AI outside mastery, retention, planner, scores and publication; exclude reserved Questions and active EXAM use.

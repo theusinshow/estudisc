@@ -1,0 +1,10 @@
+import { z } from "zod";
+const id=z.string().min(1).max(160);
+export const knowledgeNodeSchema=z.object({id,title:z.string(),summary:z.string().nullable(),areas:z.array(z.object({id,title:z.string()})),lessons:z.array(z.object({id,title:z.string(),trackTitle:z.string()})),state:z.enum(["unseen","developing","consolidated","review_due"]),masteryState:z.string(),masteryLabel:z.string(),masteryLevel:z.number().int().min(0).max(5),evidenceCount:z.number().int().nonnegative(),reviewAt:z.iso.datetime().nullable(),reasons:z.array(z.string())});
+export const knowledgeEdgeSchema=z.object({id,trackId:id,trackTitle:z.string(),conceptId:id,prerequisiteId:id,strength:z.enum(["required","recommended"]),ready:z.boolean()});
+export const knowledgeSnapshotSchema=z.object({version:z.literal("knowledge-map.v1"),asOf:z.iso.datetime(),nodes:z.array(knowledgeNodeSchema),edges:z.array(knowledgeEdgeSchema),caveats:z.array(z.string())});
+export type KnowledgeNode=z.infer<typeof knowledgeNodeSchema>;
+export type KnowledgeEdge=z.infer<typeof knowledgeEdgeSchema>;
+export type KnowledgeSnapshot=z.infer<typeof knowledgeSnapshotSchema>;
+export type PublishedConceptLink={id:string;title:string;summary:string|null;areaId:string;areaTitle:string;lessonId:string;lessonTitle:string;trackId:string;trackTitle:string};
+export type DeclaredKnowledgeEdge=Omit<KnowledgeEdge,"id"|"ready">;

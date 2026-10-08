@@ -26,6 +26,7 @@
     "test:e2e:critical": "node scripts/run-e2e.mjs tests/e2e/vertical-slice.spec.ts tests/e2e/import-ui.spec.ts tests/e2e/percentage-study.spec.ts tests/e2e/auth.spec.ts"
   },
   "dependencies": {
+    "@xyflow/react": "12.12.0",
     "drizzle-orm": "0.45.2",
     "lucide-react": "1.28.0",
     "motion": "13.4.6",
