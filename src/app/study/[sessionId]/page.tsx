@@ -12,6 +12,7 @@ import { ActivityList } from "@/features/activities/registry";
 import { getTodayDashboard } from "@/features/today/get-today-dashboard";
 import { getLessonResume } from "@/features/lessons/resume-api";
 import { LessonResumeProvider } from "@/features/lessons/resume-provider";
+import { AiActionControl } from "@/features/ai/action-control";
 export const dynamic="force-dynamic";
 const statusLabel:Record<string,string>={PLANNED:"Pronta para começar",ACTIVE:"Em andamento",COMPLETED:"Concluída",ABANDONED:"Encerrada"};
 export default async function StudyPage({params}:{params:Promise<{sessionId:string}>}){
@@ -26,6 +27,7 @@ export default async function StudyPage({params}:{params:Promise<{sessionId:stri
       {result.summary.independentConcepts.length>0&&<p>Prática independente registrada: {result.summary.independentConcepts.map(concept=>concept.title).join(" · ")}.</p>}
       {result.summary.reviewedConcepts>0&&<p>{result.summary.reviewedConcepts} conceito(s) com recuperação posterior registrada.</p>}
       {next&&<Link className="primary-action" href={next.href}>Próximo passo: {next.title}</Link>}</section>}
+    {completed&&getFeatureFlags().FEATURE_AI_LEARNING&&<AiActionControl label="Resumir sessão com IA" spec={{action:"summarize_session",target:{kind:"session",sessionId:session.id}}}/>}
     {items.length>0&&<ol className="session-plan" aria-label="Roteiro da sessão">{items.map(item=><li key={JSON.stringify([item.trackId,item.lessonId,item.version])}><span>{item.title}{item.reason&&<small>{item.reason}</small>}</span><small>~{item.minutes} min</small></li>)}</ol>}
     {session.status!=="ACTIVE"&&<SessionControls sessionId={session.id} status={session.status} />}
     {session.status==="ACTIVE"&&await Promise.all(items.map(async item=>{const key=JSON.stringify([item.trackId,item.lessonId,item.version]);

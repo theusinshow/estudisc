@@ -1,6 +1,14 @@
 # Changelog
 
+## 2026-10-08 — Bounded optional contextual AI
+
+- Add the five approved AI actions using server-resolved published lesson/Question versions, owned factual mistakes/completed sessions and actual curriculum relations. Keep AI outside mastery, retention, planner, scores and publication; exclude reserved Questions and active EXAM use.
+- Reuse the existing provider gateway with cancellation, 20-second bounds, strict structured output, owner/source/policy/model cache and owner-serialized append-only usage reservations. Apply call/day/in-flight limits, avoid duplicate pending contexts and retain actual assistance attestation on cached responses and provider failures.
+- Extend the existing tutor and optional lesson/mistake/session/relation controls with escaped output, recovery, cancellation and truthful help notices. Preserve authored learning without a provider; use readable history labels while backups retain all ledger events. The E2E server explicitly clears provider keys to prevent real calls.
+
 ## 2026-10-08 — Owned review and factual mistake practice
+
+- Release protected PR #9/main 8cae545 with eight successful required checks; verify production deployment/alias and enable SMART_MISTAKES. Enhanced pages and strict rejection probes passed without production learner answers, content re-import or migration.
 
 - Reuse the existing session composer for 10/15-minute retrieval of owned due Concepts and different-question practice from owned active mistakes. Preserve frozen ACTIVE sessions, original Question exclusion, reservation/exposure rules, EXAM boundaries and canonical policy weights.
 - Group factual mistake records by Concept without diagnosing causes. Add explicitly attributed, idempotent student reflections as append-only StudyEvents; reflection never changes mastery, scores or review schedules. Preserve original records and shared Question submission.

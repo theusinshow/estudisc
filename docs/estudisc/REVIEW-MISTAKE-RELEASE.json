@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-08",
+  "implementationCommit": "748f40a",
+  "pullRequest": "https://github.com/theusinshow/estudisc/pull/9",
+  "mergeCommit": "8cae5458537a157aacdf1d92fc72fb54e28207fd",
+  "mergedAt": "2026-10-08T04:44:45Z",
+  "ci": "https://github.com/theusinshow/estudisc/actions/runs/37728535647",
+  "requiredChecks": {
+    "lint": "SUCCESS", "typecheck": "SUCCESS", "unit": "SUCCESS", "build": "SUCCESS",
+    "integration": "SUCCESS", "content-qa": "SUCCESS", "pack-validation": "SUCCESS", "critical-e2e": "SUCCESS"
+  },
+  "deployment": {
+    "id": "dpl_EqkD4yoqh2i2FMKbzTw5F2r39XQb",
+    "url": "https://estudisc-1xwl7ai4v-theusinshows-projects.vercel.app",
+    "status": "READY", "branch": "main", "buildCommit": "8cae545",
+    "buildCompletedAt": "2026-10-08T04:45:28.867Z",
+    "alias": "https://vecta-three.vercel.app", "aliasDeploymentMatches": true
+  },
+  "feature": {"name": "FEATURE_SMART_MISTAKES", "value": true, "newDatabaseMigration": false},
+  "localAcceptance": {
+    "focusedPassed": 31, "fullTestsPassed": 390, "optionalRealPostgresSkipped": 3,
+    "defaultE2ePassed": 54, "intentionallyGatedE2eSkipped": 20,
+    "flagOnUiLoopPassed": 2, "flagOffAssertionsSkippedInFlagOnRun": 2,
+    "lint": "PASS", "typecheck": "PASS", "build": "PASS", "packs": "PASS",
+    "desktopAnd320pxVisuals": "PASS", "scopedDetectorFindings": 0
+  },
+  "productionAcceptance": {
+    "authenticatedBrowserManagedSession": true,
+    "reviewPage": 200, "enhancedReviewCopy": true, "mistakesPage": 200,
+    "publishedLessonSmoke": {"path": "/lessons/MAT-11", "status": 200, "invalidBlocks": 0},
+    "invalidReflection": {"status": 400, "code": "invalid_request"},
+    "nonDueReview": {"status": 409, "code": "review_not_due"},
+    "unavailableMistake": {"status": 404, "code": "target_unavailable"},
+    "productionQuestionAnswersSubmitted": 0, "contentImportsPerformed": 0,
+    "productionNativeKeyboardVerified": false
+  },
+  "limitations": ["Native production automation bridge unavailable; actual HTTP/read checks are separate from local UI interaction evidence.", "Three optional real-PostgreSQL checks skipped; migrated PGlite/memory parity passed."]
+}

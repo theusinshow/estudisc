@@ -8,6 +8,7 @@ import { TargetedPracticeControls } from "@/features/study-sessions/targeted-pra
 import { getFeatureFlags } from "@/lib/feature-flags";
 import { MistakeReflectionForm } from "@/features/mistakes/reflection-form";
 import { pedagogicalMistakeLabels } from "@/features/mistakes/mistake-patterns";
+import { AiActionControl } from "@/features/ai/action-control";
 
 export const dynamic = "force-dynamic";
 
@@ -25,6 +26,7 @@ export default async function MistakesPage() {
           Erros ficam ligados à tentativa e ao conceito. Quando corrigidos, mudam para resolvido sem
           desaparecer do histórico.
         </p>
+        {getFeatureFlags().FEATURE_AI_LEARNING&&mistakes.length>0&&<details className="activity-technical-details"><summary>Síntese opcional dos registros</summary><p>A IA resume os fatos registrados. Ela não identifica a causa do erro nem muda seu domínio.</p><AiActionControl label="Resumir registros com IA" spec={{action:"analyze_mistakes",target:{kind:"mistakes"}}}/></details>}
 
         {mistakes.length === 0 ? (
           <FirstRunCallout

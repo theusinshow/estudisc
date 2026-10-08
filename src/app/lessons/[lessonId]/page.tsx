@@ -42,6 +42,7 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
   const stepped = !lesson.activities.some(activity => activity.type === "code" || activity.type === "debug");
   const resumeScope = stepped && getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? lesson.resumeScope : undefined;
   const resumeSnapshot = await getLessonResume(resumeScope);
+  const aiScope=getFeatureFlags().FEATURE_AI_LEARNING&&(!lesson.metadata?.kind||lesson.metadata.status==="published")?lesson.resumeScope:undefined;
 
   return (
     <AppShell mode={getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? "focus" : "page"} exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha" }}>
@@ -53,7 +54,7 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
         {!stepped && <LessonSessionCallout progress={progress} />}
 
         {stepped ? (
-          <LessonSteps blocks={lesson.blocks} activities={lesson.activities} completion={completion} resumeScope={resumeScope} resumeSnapshot={resumeSnapshot} />
+          <LessonSteps blocks={lesson.blocks} activities={lesson.activities} completion={completion} resumeScope={resumeScope} resumeSnapshot={resumeSnapshot} aiScope={aiScope}/>
         ) : (
           <>
         <nav className="lesson-flow-nav" aria-label="Fluxo da aula">
