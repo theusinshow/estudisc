@@ -2,7 +2,7 @@ import {spawnSync} from "node:child_process";
 import {createRequire} from "node:module";
 import {mkdirSync,writeFileSync} from "node:fs";
 const cli=createRequire(import.meta.url).resolve("@playwright/test/cli");
-const suites=["foundation-evolution","routine-planner","lesson-resume","adaptive-session","interactive-blocks","review-mistake-loop","ai-learning","knowledge-map","exam-navigation","admin-authoring","learning-catalog","admin-metadata"];
+const suites=["foundation-evolution","routine-planner","lesson-resume","adaptive-session","interactive-blocks","review-mistake-loop","ai-learning","knowledge-map","exam-navigation","admin-authoring","learning-catalog","admin-metadata","source-goal-prediction"];
 const requested=process.argv.slice(2),selected=requested.length?requested:suites;
 if(selected.some(name=>!suites.includes(name)))throw new Error("Unknown rollout suite");
 const flags=Object.fromEntries(["NEW_TODAY","STUDY_PLANNER","ADAPTIVE_SESSION","INTERACTIVE_LESSONS","AI_LEARNING","KNOWLEDGE_MAP","SMART_MISTAKES","REAL_EXAM","CONTENT_HEALTH"].map(name=>[`FEATURE_${name}`,"true"]));

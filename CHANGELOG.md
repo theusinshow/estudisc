@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08 — Explicit source-derived exploratory goals
+
+- Introduce Studio recipe v2 for bounded missing-objective/unmapped-source exceptions; retain exact recipe v1 parsing and numeric output. Preserve absent original goals/links and every original field/Activity/Question.
+- Reuse the existing prediction renderer/resume with visible proposed-goal provenance, actual source quotes and explicitly derived existing-Concept links. Validate anchor/hash/quotes/goal origin before targeted next-version import; no official Attempt/evidence, new Question, media or schema/publisher engine.
+- Prepare CIE-03 thermal-equilibrium and POR-02 reading candidates from real published v2 sources/actual author. Record actual blueprint-binding fix release; original proposal status remains UNREVIEWED, not independent approval.
+
 ## 2026-10-08 — Exact blueprint source binding
 
 - Fix ADMIN blueprint source matching: compare the pipeline's identity/subject/lesson wrapper hash to the actual imported wrapper, preserving the separate raw lesson hash used by immutable targeted imports.

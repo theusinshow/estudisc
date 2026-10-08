@@ -10,6 +10,7 @@ import { lessonBlueprintSchema, type LessonBlueprint } from "./blueprint-contrac
 import { runBlueprintPipeline } from "./blueprints";
 import { loadBlueprintCorpus } from "./blueprint-sources";
 import { directPublicationSchema } from "@/features/content-qa/direct-publication";
+import { validateSourceGoalPrediction } from "@/features/import/application/source-goal-prediction";
 import { socialReleasePolicy, socialPublicationReason } from "./social-release-policy";
 
 const policyFiles = ["tools/estudisc-content-studio/enrichment.ts", "tools/estudisc-content-studio/enrichment-contracts.ts", "tools/estudisc-content-studio/social-release-policy.ts", "docs/ADR/0048-social-project-direct-release.md", "src/features/content-qa/direct-publication.ts", "tools/estudisc-content-studio/ENRICHMENT-PREVIEW-POLICY.md", "tools/estudisc-content-studio/contracts.ts", "src/features/questions/contracts.ts", "src/features/activities/application/question-reference.ts", "src/features/lessons/blocks/numeric-explorer-schema.ts", "src/features/lessons/blocks/numeric-explorer.tsx", "src/features/lessons/blocks/lesson-block-renderer.tsx", "src/features/lessons/interaction-state.ts", "src/features/lessons/interaction-policy.ts"];
@@ -26,8 +27,23 @@ export function createEnrichmentPreview(pack: TrackPackV2, inputBlueprint: Lesso
   const ids = new Set(pack.track.modules.flatMap(m => m.lessons.flatMap(l => [l.id, ...l.concepts.map(c => c.id), ...l.blocks.map(b => b.id), ...l.activities.map(a => a.id)])));
   pack.questions.forEach(q => ids.add(q.id));
   const newBlocks = recipe.additions.map(addition => {
-    const anchor = source.blocks.find(b => b.id === addition.afterBlockId);
+    const anchor = source.blocks.find(b => b.id === (addition.type === "prediction" ? addition.beforeBlockId : addition.afterBlockId));
     if (!anchor || hashCanonicalJson(anchor) !== addition.sourceBlockHash || typeof anchor.payload.content !== "string" || !anchor.payload.content.includes(addition.sourceQuote)) throw new Error("Enrichment source anchor/quote changed");
+    if (addition.type === "prediction") {
+      if (recipe.schemaVersion !== 2) throw new Error("Source-goal exception requires recipe v2");
+      if (ids.has(addition.newBlockId)) throw new Error("Enrichment block identity collision");
+      ids.add(addition.newBlockId);
+      const block = { id: addition.newBlockId, schemaVersion: 1, type: "prediction" as const, conceptIds: [addition.conceptId], payload: {
+        type: "prediction", title: addition.parameters.title,
+        content: `Objetivo proposto desta exploração: ${addition.proposedGoal}\n\n${addition.parameters.promptQuote}`,
+        observation: addition.parameters.observationQuote, explanation: addition.parameters.explanationQuote,
+        contentStudio: { enrichment: { purpose: addition.purpose, sourceBlockId: anchor.id, sourceBlockHash: addition.sourceBlockHash, sourceQuote: addition.sourceQuote, promptQuote: addition.parameters.promptQuote,
+          objective: addition.proposedGoal, objectiveProvenance: addition.goalOrigin, conceptId: addition.conceptId, conceptMappingProvenance: addition.goalOrigin,
+          selectionBasis: recipe.selectionBasis, exceptionReason: recipe.exceptionReason, recipeHash: hashCanonicalJson(recipe), reviewStatus: "community_feedback_pending" } }
+      } };
+      validateSourceGoalPrediction(block, source);
+      return block;
+    }
     if (!source.objectives.includes(addition.objective) || !source.concepts.some(c => c.id === addition.conceptId) || !anchor.conceptIds.includes(addition.conceptId)) throw new Error("Enrichment objective/Concept must exist in the authored source anchor");
     if (!blueprint.recommendedBlocks.includes(addition.type)) throw new Error("Interaction not proposed by the current blueprint");
     if (ids.has(addition.newBlockId)) throw new Error("Enrichment block identity collision");
@@ -41,7 +57,7 @@ export function createEnrichmentPreview(pack: TrackPackV2, inputBlueprint: Lesso
   });
   const original = structuredClone(source);
   const lesson = lessonSchema.parse({ ...original, version: recipe.newVersion, status: "draft",
-    blocks: original.blocks.flatMap(block => [block, ...newBlocks.filter((_, index) => recipe.additions[index].afterBlockId === block.id)]) });
+    blocks: original.blocks.flatMap(block => [...newBlocks.filter((_, index) => { const addition=recipe.additions[index];return addition.type==="prediction"&&addition.beforeBlockId===block.id; }), block, ...newBlocks.filter((_, index) => { const addition=recipe.additions[index];return addition.type==="numeric-explorer"&&addition.afterBlockId===block.id; })]) });
   const questionIds = [...new Set([...source.exitTicketQuestionIds, ...source.activities.flatMap(a => a.questionId ? [a.questionId] : [])])];
   const questionReferences = questionIds.map(id => {
     const question = pack.questions.find(q => q.id === id);
@@ -63,7 +79,7 @@ export function prepareEnrichmentPreview(studio: Studio, inputRecipe: unknown) {
   if (hashCanonicalJson(blueprint) !== entry.blueprintHash) throw new Error("Blueprint changed during preview preparation");
   const corpus = loadBlueprintCorpus(studio.root), source = corpus.find(s => s.pack.track.id === recipe.identity.trackId)!;
   const preview = createEnrichmentPreview(source.pack, blueprint, recipe);
-  const policyHash = hashCanonicalJson(Object.fromEntries([...policyFiles, "docs/ADR/0050-source-bound-linear-enrichment.md", "docs/ADR/0051-explicit-discrete-linear-input.md", "src/features/lessons/blocks/linear-explorer.tsx", "src/features/lessons/use-interaction-state.ts"].map(file => [file, createHash("sha256").update(readFileSync(join(studio.root, file))).digest("hex")])));
+  const policyHash = hashCanonicalJson(Object.fromEntries([...policyFiles, ...(recipe.schemaVersion===2?["docs/ADR/0058-source-derived-proposed-goals-and-prediction-recipes.md","src/features/import/application/source-goal-prediction.ts","src/features/lessons/blocks/prediction-panel.tsx"]:[]), "docs/ADR/0050-source-bound-linear-enrichment.md", "docs/ADR/0051-explicit-discrete-linear-input.md", "src/features/lessons/blocks/linear-explorer.tsx", "src/features/lessons/use-interaction-state.ts"].map(file => [file, createHash("sha256").update(readFileSync(join(studio.root, file))).digest("hex")])));
   const inputHashes = { sourceLesson: preview.sourceLessonHash, sourcePack: source.canonicalHash, blueprint: preview.blueprintHash, blueprintInputs: preview.blueprintInputHash, recipe: preview.recipeHash, questions: preview.questionHash, preview: preview.previewHash, policy: policyHash, assets: pipeline.index.assetHash };
   const key = hashCanonicalJson(inputHashes), rootDirectory = studio.dir("enrichment-previews");
   if (existsSync(join(rootDirectory, "state.json"))) throw new Error("Enrichment directory conflicts with a Studio job");
