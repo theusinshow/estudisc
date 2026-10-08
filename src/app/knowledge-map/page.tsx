@@ -2,11 +2,14 @@ import Link from "next/link";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
-import { listKnowledgeMapConcepts } from "@/features/concepts/knowledge-map-api";
+import { listKnowledgeMapConcepts,getKnowledgeMapSnapshot } from "@/features/concepts/knowledge-map-api";
+import { getFeatureFlags } from "@/lib/feature-flags";
+import { KnowledgeMapView } from "@/features/concepts/knowledge-map-view";
 
 export const dynamic = "force-dynamic";
 
 export default async function KnowledgeMapPage() {
+  if(getFeatureFlags().FEATURE_KNOWLEDGE_MAP){const snapshot=await getKnowledgeMapSnapshot();return <AppShell><section className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="knowledge-map-title"><h1 id="knowledge-map-title">Mapa de conhecimento</h1><KnowledgeMapView snapshot={snapshot}/></section></AppShell>;}
   const concepts = await listKnowledgeMapConcepts();
   const focusedConcepts = concepts.slice(0, 12);
   const hiddenConceptCount = Math.max(concepts.length - focusedConcepts.length, 0);

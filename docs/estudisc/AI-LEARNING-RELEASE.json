@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-08",
+  "implementationCommit": "7148e99",
+  "pullRequest": "https://github.com/theusinshow/estudisc/pull/10",
+  "mergeCommit": "3e9512ea006dec71fb0a885f88eb8cc7045184c6",
+  "mergedAt": "2026-10-08T06:45:44Z",
+  "ci": "https://github.com/theusinshow/estudisc/actions/runs/37738344788",
+  "requiredChecksPassed": ["lint","typecheck","unit","build","integration","content-qa","pack-validation","critical-e2e"],
+  "deployment": {"id":"dpl_CaMJeQ3XvgWGjTGvsgfrjFbVtdtt","url":"https://estudisc-eh5vb3d2a-theusinshows-projects.vercel.app","status":"READY","branch":"main","buildCommit":"3e9512e","buildCompletedAt":"2026-10-08T06:46:37.239Z","alias":"https://vecta-three.vercel.app","aliasMatches":true},
+  "feature": {"name":"FEATURE_AI_LEARNING","value":true},
+  "localAcceptance": {"testsPassed":412,"optionalRealPostgresSkipped":3,"defaultE2ePassed":56,"gatedE2eSkipped":22,"flaggedLoopsPassed":4,"flagOffAssertionsSkipped":4,"lint":"PASS","typecheck":"PASS","build":"PASS","packs":"PASS","fiveViewportBounds":"PASS","scopedDetectorFindings":0},
+  "productionAcceptance": {"publishedLesson":"/lessons/MAT-11","lessonStatus":200,"optionalAiControls":37,"invalidRequestStatus":400,"invalidRequestCode":"invalid_request","unavailableContextStatus":409,"unavailableContextCode":"context_unavailable"},
+  "realProviderCallsPerformed":0,"productionQuestionAnswersSubmitted":0,"productionMigrationPerformed":false,
+  "limitations":["Provider validated with mocks; no paid call during release acceptance.","Native production bridge unavailable; actual read/API checks are distinct from local UI evidence.","Three optional real-PostgreSQL tests skipped; migrated PGlite/memory checks passed."]
+}

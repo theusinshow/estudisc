@@ -268,6 +268,16 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .ai-action-control { margin-block: var(--estudisc-spacing-6); min-width: 0; }
 .ai-action-control button { min-height: var(--estudisc-touch-minimum); max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
 .ai-action-control p { overflow-wrap: anywhere; }
+.knowledge-flow-frame { width: 100%; height: 440px; margin-block: var(--estudisc-spacing-8); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); overflow: hidden; }
+.knowledge-flow-node { width: 210px; background: var(--estudisc-color-paper); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); }
+.knowledge-flow-node button { display: grid; gap: var(--estudisc-spacing-2); width: 100%; min-height: 72px; padding: var(--estudisc-spacing-6); border: 0; background: transparent; color: var(--estudisc-color-ink); text-align: left; font: inherit; cursor: pointer; }
+.knowledge-flow-node span { font-size: .875rem; }
+.knowledge-state-consolidated { background: var(--estudisc-color-surface-lime); }
+.knowledge-state-review_due { background: var(--estudisc-color-surface-orange); }
+.knowledge-edge-recommended path { stroke-dasharray: 5 4; }
+.knowledge-concept-button { min-height: var(--estudisc-touch-minimum); border: 0; padding: var(--estudisc-spacing-4) 0; background: transparent; font: inherit; font-weight: 700; text-align: left; cursor: pointer; color: var(--estudisc-color-ink); }
+.knowledge-flow-frame .react-flow__controls-button { width: 44px; height: 44px; }
+.knowledge-flow-frame .react-flow__attribution a { display: inline-flex; align-items: center; min-height: 44px; }
 
 /* Study session */
 .study-session { width: min(100%, 820px); }

@@ -1,0 +1,9 @@
+# Canonical knowledge-map presentation
+
+[ADR 0054](../ADR/0054-canonical-knowledge-map-read-projection.md) extends existing catalog/curriculum readers. Published membership, owned calculateVersionedMastery results and actual due schedules supply the four display groups; exact canonical labels/reasons remain visible. Lesson completion and neighboring nodes never create mastery/evidence. Relations retain direction, required/recommended strength and source track. Existing planner prerequisite readiness is explained without granting/blocking navigation.
+
+`FEATURE_KNOWLEDGE_MAP` gates the new view; off preserves the old hierarchy. [React Flow](https://reactflow.dev/learn) 12.12.0 loads only after opening the optional map. The diagram shows a bounded thirty-six-node selection; the accessible list contains every published Concept in the selected area. Keyboard/touch sheets show source relations and lessons. Read-only nodes/edges, controls, zero-duration resize fitting, stable positions and a list fallback preserve accessibility and CSP.
+
+Local acceptance: focused twenty-five PASS; full `pnpm test` 417 PASS/three optional real-PG SKIP; lint/typecheck/build/packs PASS; full serial `pnpm test:e2e` 58 PASS/twenty-six gated SKIP; map-on keyboard/touch/chunk-failure loops four PASS/two flag-off SKIP. All five widths, closed-canvas load checks, native Sheet Escape/focus and no-evidence/publication/owner/per-track cases passed. Bounded desktop/mobile visual confirmation and detector `[]` completed. Existing optional wasm peer warnings were present in the prior lockfile; the new SVG library's React peers are satisfied.
+
+Protected CI and actual production activation remain pending. No migration, model call, official-score change or publication pipeline was added.
