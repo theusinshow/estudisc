@@ -1,6 +1,14 @@
 # Changelog
 
+## 2026-10-08 — Owned review and factual mistake practice
+
+- Reuse the existing session composer for 10/15-minute retrieval of owned due Concepts and different-question practice from owned active mistakes. Preserve frozen ACTIVE sessions, original Question exclusion, reservation/exposure rules, EXAM boundaries and canonical policy weights.
+- Group factual mistake records by Concept without diagnosing causes. Add explicitly attributed, idempotent student reflections as append-only StudyEvents; reflection never changes mastery, scores or review schedules. Preserve original records and shared Question submission.
+- Keep navigation hidden while focus moves within study forms so mobile taps are not displaced when leaving an answer or note field. New controls wait for hydration before accepting input.
+
 ## 2026-10-07 — Representative source-defined mathematics
+
+- Deploy protected PR #8/main 7cdc7f6 and activate the six next versions via existing authenticated targeted append/Admin Direct. Preserve 95 Question digests and old versions; verify ten live controls/results, nineteen Mathematics identities and actual integer input recovery/restoration in production.
 
 - Add an optional explicit integer-input constraint to the existing linear explorer for authored count examples, retaining old decimal/time controls, raw display drafts and no canonical Attempt/evidence effects (ADR 0051).
 - Add six source-bound mathematics candidates with ten explorers for decimal/scientific values, fixed-plus-variable price, equation substitution, units/area, prism/capacity and combinations. Preserve original blocks/Activities/Question references and source conditions.

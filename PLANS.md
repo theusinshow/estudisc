@@ -6,7 +6,7 @@ Latest owner instruction: continue everything until finished, without ending exe
 
 Execution order: finish a representative broader Phase 9 batch using actual authored math goals/existing models; then Phase 10 review/mistake loop, Phase 11 optional contextual AI, Phase 12 knowledge-map presentation, Phase 13 exam navigation/review/results, Phase 14 admin authoring/health. Reconcile remaining Phase 0–8 consumers and safe production flags/table readiness before final acceptance. Reuse existing engines and actual accepted contracts; document concrete domain/security exceptions rather than trial-and-error or invented certification.
 
-- [ ] Representative broader source-defined enrichment batch and actual release.
+- [x] Representative broader source-defined enrichment batch and actual release.
 - [ ] Review/mistake retrieval, factual grouping and different-question practice.
 - [ ] Optional contextual AI service/limits/cache/fallback with reserved/exam exclusion.
 - [ ] Prerequisite graph read model and accessible lazy interactive presentation.
@@ -15,7 +15,7 @@ Execution order: finish a representative broader Phase 9 batch using actual auth
 - [ ] Remaining foundation/routine/runtime consumers and verified compatible production rollout.
 - [ ] Final full engineering/production acceptance and current documentation.
 
-Current checkpoint: PR #6 code and PR #7 actual release receipts merged, main 01bbd17 synchronized. MAT-05/MAT-06/MAT-07/MAT-08 enrichment is live; never repeat those version imports/publications. Continue automatically after each technical gate; no editorial review permission.
+Current checkpoint: PR #8 merged/main 7cdc7f6 synchronized. Ten enriched lesson identities/seventeen explorers are live; never repeat those version imports/publications. Phase 10's owned retrieval and factual mistake/reflection loop is implemented locally, with final browser acceptance and protected release pending. Continue automatically after each technical gate; no editorial review permission.
 
 ### Active representative batch
 
@@ -27,7 +27,17 @@ Acceptance: compatible optional field/whole-number bounds, unchanged legacy deci
 
 Local batch acceptance: fifteen focused PASS; full 377 PASS/three optional real-PG SKIP; lint/typecheck/build/packs PASS; full serial 52 E2E PASS/eighteen gated SKIP; focused flags-on four PASS/zero SKIP; screenshot/overflow capture two PASS/zero SKIP. Bounded visual pass/detector [], eighty-eight actual accepted-code comparisons (eighty-three unchanged after line-ending normalization), five original corpus/mirror byte hashes unchanged. All 101 blocks/107 Activities/95 Question references preserved, independent source arithmetic and stable repeat exports. Six actual authenticated production previews 200/ready/exact hashes, bounded gzip transport works. No new-version import/publication yet. [Report](docs/estudisc/REPRESENTATIVE-ENRICHMENT.md), [local evidence](docs/estudisc/REPRESENTATIVE-ENRICHMENT-EVIDENCE.json).
 
-NEXT ACTION: protected code release/deployment for the compatible integer option, then append/activate all six exact candidates under existing Admin Direct. Continue automatically to the review/mistake increment after recording actual preservation/rollout. Missing non-math objectives remain explicit; local author-architecture inventory (213 files) did not reveal declared goal/outcome fields and is not permission to invent original goals.
+Actual representative rollout: PR #8 eight checks passed, main 7cdc7f6, Vercel dpl_H9Dz9aYmTJd29VsJZUAuKsQtLSke READY/commit+existing alias verified. Six exact previews 200, six targeted appends 201, Admin Direct 200/six newly published releases. All 95 Question digests and historical v2 versions retained; current pages have ten correct inputs/outputs, zero draft banners/invalid blocks/sliders, nineteen Mathematics identities unchanged. Production DOM input events verified fractional-count rejection, 4 → 37 reais and restoration 3 → 29 reais; native typing remains unavailable. [Actual receipt](docs/estudisc/REPRESENTATIVE-ENRICHMENT-RELEASE.json). Ten enriched identities/seventeen explorers are live; no false whole-corpus completion.
+
+### Active Phase 10 increment
+
+Implement Quick Review and mistake-driven different-question retrieval through the existing session planner, adaptive choice and canonical Question/evidence paths; no replacement review engine or priority/schedule/mastery-weight changes. Use owner-validated due Concepts or an owned mistake as explicit selection constraints; keep immutable ACTIVE session priority and frozen membership, reserved/exam/exposure restrictions, existing budget/routine limits and SQL/memory parity. Different-question retry excludes the mistake's original Question identity; if no eligible alternative exists, report it without inventing a successful retrieval.
+
+Derive factual mistake groups from existing records/Attempts per Concept and actual category, deduplicating Attempt pointers; keep active/resolved history and uncertainty. Seven pedagogical labels require actual supporting source/student reports, not inference from a wrong answer or elapsed time. Reflection stays distinct from canonical successful retrieval. Extend existing pages with bounded review/practice controls, source/example/explanation access and error recovery, mobile/keyboard behavior; actual answers use existing immutable Attempts/review.v2.
+
+Acceptance: ADR 0052's owner-derived selection and append-only student reports, strict external input, owner/foreign-ID/exam/reserved/no-alternative checks, exact existing policy-version/weights preserved, canonical retry/review loop, memory/migrated SQL parity, targeted then full gates, actual protected release. No extra agents, raw-secret access or editorial permission. Missing non-math goals remain explicit; 213 local author architecture files had no declared goal/outcome keys and cannot be treated as original objectives.
+
+Local acceptance (2026-10-08): focused 31 PASS; full 390 PASS/three optional real-PG SKIP; lint/typecheck/build/packs PASS; full serial E2E 54 PASS/twenty intentionally gated SKIP; SMART_MISTAKES-on full UI loop two PASS/two intentional flag-off SKIP. Initial mobile failures were traced to focus moving from an input to its submit button: the sidebar reappeared and redirected the synthesized click. Fixed stable form focus, hydration readiness and stacked small-screen fields; corrected desktop/320px visuals/overflow and scoped detector [] passed. Non-secret production SMART_MISTAKES=true added for the next deployment. NEXT ACTION: protected code release, actual production acceptance and release receipt, then continue Phase 11.
 
 ## Completed rollout — bounded linear enrichment (2026-10-07)
 

@@ -1,5 +1,7 @@
 # Representative authored mathematics batch
 
+Accepted/live: protected [PR #8](https://github.com/theusinshow/estudisc/pull/8), main 7cdc7f6 and existing production alias READY/commit verified. Six exact preflights/targeted appends and actual authenticated Admin Direct publication completed; [actual receipt](REPRESENTATIVE-ENRICHMENT-RELEASE.json). Historical v2/95 Question digests and nineteen Mathematics identities preserved; ten published fields/results correct, no draft banners. Production DOM input events confirmed the integer error/recovery path and restored the original value; native typing automation remains unavailable.
+
 This continuous-execution increment appends six source-preserving lesson versions with ten existing linear explorers. Combined with the four live pilots, it covers ten lesson identities and seventeen added explorations. It is not a claim that all 132 lessons have objectives or new interaction blocks.
 
 | Source lesson | Source model / initial result | Conditions retained |
