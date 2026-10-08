@@ -1,0 +1,9 @@
+{
+  "date":"2026-10-08","implementationCommit":"ebd6947","pullRequest":"https://github.com/theusinshow/estudisc/pull/17",
+  "mergeCommit":"1b46b928346aa49c6a7b0b05874bd41e79c42209","mergedAt":"2026-10-08T18:49:21Z","ci":"https://github.com/theusinshow/estudisc/actions/runs/37826376482",
+  "requiredChecksPassed":["lint","typecheck","unit","build","integration","content-qa","pack-validation","critical-e2e"],
+  "deployment":{"id":"dpl_ECeKGEuX72k5ccuWcrFiFyF9i77f","url":"https://estudisc-8ocela4i9-theusinshows-projects.vercel.app","status":"READY","buildCommit":"1b46b92","buildCompletedAt":"2026-10-08T18:50:04.733Z","alias":"https://vecta-three.vercel.app"},
+  "localAcceptance":{"testsPassed":445,"optionalRealPostgresSkipped":3,"focusedPassed":13,"defaultE2ePassed":58,"gatedE2eSkipped":38,"predictionResumeEvidenceLoopsPassed":2,"lint":"PASS","typecheck":"PASS","build":"PASS","packs":"PASS","fiveWidthsAndBoundedVisuals":"PASS"},
+  "contentActivation":{"lessons":["CIE-03","POR-02"],"sourceVersion":2,"proposedVersion":3,"imported":false,"published":false,"status":"BLOCKED_EXTERNAL_DATABASE_QUOTA","originalReads":[{"lessonId":"CIE-03","version":2,"httpStatus":500},{"lessonId":"POR-02","version":2,"httpStatus":500}],"postgresCode":"53000","error":"Your account or project has exceeded the quota. Upgrade your plan to increase limits."},
+  "preserved":{"noCorpusReimport":true,"noQuestionRewrite":true,"noProductionAnswerSubmission":true,"noIndependentApprovalFabricated":true,"noRawCredentialExtraction":true,"noPaidServiceAction":true}
+}

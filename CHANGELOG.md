@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08 — Recoverable data-service interruption
+
+- Add a root route error boundary with retry/navigation and a clear unavailable-data message; keep raw SQL/backend/private details out of the interface and preserve the Plan-specific recovery.
+- Use the installed Next `retry` callback to re-fetch/recover, verified against its actual error handler. No fake persistence, memory fallback or polling.
+- Record the external PostgreSQL quota error 53000 discovered before new source-goal activation; candidates remain unpublished and no paid action/credential extraction is authorized.
+
 ## 2026-10-08 — Explicit source-derived exploratory goals
 
 - Introduce Studio recipe v2 for bounded missing-objective/unmapped-source exceptions; retain exact recipe v1 parsing and numeric output. Preserve absent original goals/links and every original field/Activity/Question.
