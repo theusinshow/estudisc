@@ -66,6 +66,9 @@ describe("targeted immutable lesson version", () => {
     const { db, repo, base } = await setup();
     const reader = new AuthoringContextRepository(db as never);
     const source = (await reader.get("fixture-admin", base.id, base.version))!;
+    const binding = (await reader.getBinding("fixture-admin", base.id, base.version))!;
+    expect(binding.subjectCode).toBe("MAT");
+    expect(binding.blueprintSourceHash).toBe(hashCanonicalJson({identity:{trackId:source.target.trackId,trackVersion:source.target.trackVersion,lessonId:base.id,lessonVersion:base.version},subjectCode:"MAT",lesson:base}));
     expect(source.published).toBe(true);
     expect(source.target.baseHash).toBe(hashCanonicalJson(base));
     const originalQuestions = await db.select().from(questionVersions);
