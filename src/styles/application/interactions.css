@@ -278,6 +278,12 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .knowledge-concept-button { min-height: var(--estudisc-touch-minimum); border: 0; padding: var(--estudisc-spacing-4) 0; background: transparent; font: inherit; font-weight: 700; text-align: left; cursor: pointer; color: var(--estudisc-color-ink); }
 .knowledge-flow-frame .react-flow__controls-button { width: 44px; height: 44px; }
 .knowledge-flow-frame .react-flow__attribution a { display: inline-flex; align-items: center; min-height: 44px; }
+.exam-navigation { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-4); margin-block: var(--estudisc-spacing-8); }
+.exam-navigation button { min-width: 44px; min-height: 44px; }
+.exam-navigation button[aria-current="step"] { background: var(--estudisc-color-signal); }
+.exam-navigation button[data-saved="true"] { border-style: solid; }
+.exam-step-controls { margin-block: var(--estudisc-spacing-8); }
+.exam-final-review li { margin-block: var(--estudisc-spacing-4); }
 
 /* Study session */
 .study-session { width: min(100%, 820px); }

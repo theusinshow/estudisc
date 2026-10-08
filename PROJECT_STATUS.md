@@ -33,6 +33,10 @@ Editorial source caveats about rights, official curriculum mapping, pacing and q
 
 ## Current priorities
 
+Phase 13 accepted locally: existing assessment navigation, saved flags/draft preservation, final review/save retry and server-based monotonic display clock; factual Concept results after grading. Full 420 PASS/three optional real-PG SKIP; serial default browser 58 PASS/twenty-eight gated SKIP; EXAM desktop/mobile loop two PASS; clock/retry/evaluator/result focused four PASS. Five widths/visual/detector checks passed. Final technical confirmation/protected release pending; ADMIN authoring and foundation rollout remain.
+
+Phase 12 live: protected PR #11/eight checks PASS/main b734243; Vercel dpl_DRg72jip93FaxGR3xD3nogPzt4aM READY/build commit and alias verified. Actual /knowledge-map 200 with 815 published Concept controls and optional canvas entry. No model call/migration/evidence write. Phase 13 navigation/save/review/results is implemented locally; real EXAM desktop/mobile loop two PASS and clock-skew/save-retry tests PASS. Full Phase 13 gates and later ADMIN/foundation rollout remain pending.
+
 Phase 12 accepted locally: published/owned canonical map projection with per-track relations and due schedules, lazy read-only React Flow, subject/list/sheet navigation and complete-list fallback. Focused twenty-five/full 417 PASS/three optional real-PG SKIP; lint/typecheck/build/packs PASS; serial browser 58 PASS/twenty-six gated SKIP; map/failure loops four PASS/two flag-off SKIP; five widths/keyboard/touch/visual/detector checks passed. Protected release/production map flag pending; Phase 13–14 and remaining consumers stay open.
 
 Phase 11 live: PR #10/eight checks PASS/main 3e9512e; Vercel dpl_CaMJeQ3XvgWGjTGvsgfrjFbVtdtt READY/commit+alias verified. AI flag active, MAT-11 200/37 optional controls, malformed request 400 and unavailable context 409. No real provider calls, credentials or migration during acceptance. [Receipt](docs/estudisc/AI-LEARNING-RELEASE.json). Phase 12's read-only knowledge map is active work; later phases remain open.

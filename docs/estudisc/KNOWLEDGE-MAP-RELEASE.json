@@ -1,0 +1,11 @@
+{
+  "date":"2026-10-08","implementationCommit":"ce05bf7","pullRequest":"https://github.com/theusinshow/estudisc/pull/11",
+  "mergeCommit":"b7342438a7a3e705fb0e27b09c6c57f127e45e66","mergedAt":"2026-10-08T13:32:38Z","ci":"https://github.com/theusinshow/estudisc/actions/runs/37784383544",
+  "requiredChecksPassed":["lint","typecheck","unit","build","integration","content-qa","pack-validation","critical-e2e"],
+  "deployment":{"id":"dpl_DRg72jip93FaxGR3xD3nogPzt4aM","url":"https://estudisc-i866krhaj-theusinshows-projects.vercel.app","status":"READY","buildCommit":"b734243","buildCompletedAt":"2026-10-08T13:33:19.083Z","alias":"https://vecta-three.vercel.app","aliasMatches":true},
+  "feature":{"name":"FEATURE_KNOWLEDGE_MAP","value":true},
+  "localAcceptance":{"testsPassed":417,"optionalRealPostgresSkipped":3,"defaultE2ePassed":58,"gatedE2eSkipped":26,"flaggedMapLoopsPassed":4,"flagOffAssertionsSkipped":2,"focusedPassed":25,"lint":"PASS","typecheck":"PASS","build":"PASS","packs":"PASS","fiveWidthsAndBoundedVisuals":"PASS","detectorFindings":0},
+  "productionAcceptance":{"path":"/knowledge-map","status":200,"publishedConceptControls":815,"optionalCanvasEntryPresent":true,"actualDomOpenClickVerified":true,"canvasCount":1,"canvasNodes":36},
+  "productionEvidenceWritesPerformed":0,"productionMigrationPerformed":false,"modelCallsPerformed":0,
+  "limitations":["Native production bridge unavailable; actual read checks and local keyboard/touch evidence are distinct.","Three optional real-PostgreSQL tests skipped; migrated PGlite/memory parity passed."]
+}
