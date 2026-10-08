@@ -2,6 +2,12 @@
 
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
+### Active Phase 13 — existing assessment presentation
+
+Phase 12 is locally accepted/checkpointed ce05bf7 and protected PR #11 is running. Continue on a separate child branch with FEATURE_REAL_EXAM presentation: numbered navigation, persisted review flags, draft/save indicators, final review and factual post-exam Concept counts. Keep all Question components mounted while switching so unsaved responses survive. Prevent finalize while saving/dirty, keep retry/expiry recovery and use elapsed monotonic time from the server deadline for display; the server remains authoritative.
+
+No scoring, deadline, transaction, snapshot, reservation, help/AI or evidence policy changes. Existing EXAM stays free of hints/tutor/early feedback. All mutations use existing owner-validated save/finalize APIs; no migration. Local acceptance: full 420 PASS/three optional real-PG SKIP; lint/typecheck/build/packs PASS; default serial browser 58 PASS/twenty-eight gated SKIP; actual EXAM loop two PASS; clock-skew/save-retry/evaluator/factual counts four PASS; five widths/visual/detector accepted. Repaired a test-library-only exact-option type mismatch and Portuguese count copy. Phase 12 actual release receipt/read+live canvas confirmation complete (815 list Concepts/36 canvas nodes). NEXT ACTION: protected release/read-only production checks, then Phase 14.
+
 ### Active Phase 12 — canonical knowledge-map projection
 
 Phase 11 is live: PR #10/all eight checks PASS/main 3e9512e; deployment dpl_CaMJeQ3XvgWGjTGvsgfrjFbVtdtt READY/commit+existing alias verified. AI flag active; actual MAT-11 200/37 optional controls, malformed request 400 and unavailable owned context 409. No real provider call/credential/migration during acceptance.
@@ -27,7 +33,7 @@ Execution order: finish a representative broader Phase 9 batch using actual auth
 - [x] Representative broader source-defined enrichment batch and actual release.
 - [x] Review/mistake retrieval, factual grouping and different-question practice.
 - [x] Optional contextual AI service/limits/cache/fallback with reserved/exam exclusion.
-- [ ] Prerequisite graph read model and accessible lazy interactive presentation.
+- [x] Prerequisite graph read model and accessible lazy interactive presentation.
 - [ ] Existing real-exam navigation, flags, final review and factual results.
 - [ ] Existing ADMIN authoring/asset/blueprint/health consumers with immutable publication.
 - [ ] Remaining foundation/routine/runtime consumers and verified compatible production rollout.

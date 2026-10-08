@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-08 — Assessment navigation and final review
+
+- Extend the existing assessment UI with gated numbered navigation, retained unsent drafts, saved/review flags and final review that waits for dirty/saving work. Preserve existing save/finalize APIs and all frozen grading/deadline/exposure rules.
+- Display time from the server timestamp using monotonic elapsed time, and show factual per-Concept counts only after finalization. Deduplicate Concept pointers and separate annulled items without claiming mastery.
+- Record actual prior knowledge-map rollout; validate 28-Question EXAM keyboard/mobile save/resume/review/result flow and clock-skew/save-failure recovery locally. No production assessment answer or finalization during acceptance.
+
 ## 2026-10-08 — Canonical knowledge-map presentation
 
 - Add a published, owner-scoped map projection using existing mastery and actual review schedules. Preserve prerequisite direction/strength/track context, unavailable references and exact canonical labels; no propagation, access decisions or evidence writes.

@@ -6,4 +6,4 @@
 
 Local acceptance: focused twenty-five PASS; full `pnpm test` 417 PASS/three optional real-PG SKIP; lint/typecheck/build/packs PASS; full serial `pnpm test:e2e` 58 PASS/twenty-six gated SKIP; map-on keyboard/touch/chunk-failure loops four PASS/two flag-off SKIP. All five widths, closed-canvas load checks, native Sheet Escape/focus and no-evidence/publication/owner/per-track cases passed. Bounded desktop/mobile visual confirmation and detector `[]` completed. Existing optional wasm peer warnings were present in the prior lockfile; the new SVG library's React peers are satisfied.
 
-Protected CI and actual production activation remain pending. No migration, model call, official-score change or publication pipeline was added.
+Actual release: PR #11/eight checks PASS/main b734243, Vercel dpl_DRg72jip93FaxGR3xD3nogPzt4aM READY/build commit+existing alias verified. /knowledge-map returned 200 with 815 published Concept controls and the optional canvas entry. [Receipt](KNOWLEDGE-MAP-RELEASE.json). No migration, model call, evidence write or publication pipeline was added.
