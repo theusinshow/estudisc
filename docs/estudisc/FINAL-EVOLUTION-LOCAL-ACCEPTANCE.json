@@ -1,0 +1,247 @@
+{
+  "date": "2026-10-08",
+  "fullTests": {
+    "passed": 439,
+    "optionalRealPostgresSkipped": 3
+  },
+  "focusedTestsPassed": 25,
+  "finalPortabilityTestsPassed": 9,
+  "defaultBrowser": {
+    "passed": 58,
+    "gatedSkipped": 34
+  },
+  "allOnBrowser": {
+    "passed": 38,
+    "offAssertionsSkipped": 8,
+    "cases": [
+      {
+        "suite": "foundation-evolution",
+        "project": "chromium",
+        "passed": 2,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "foundation-evolution",
+        "project": "mobile-chrome",
+        "passed": 2,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "routine-planner",
+        "project": "chromium",
+        "passed": 3,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "routine-planner",
+        "project": "mobile-chrome",
+        "passed": 3,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "lesson-resume",
+        "project": "chromium",
+        "passed": 3,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "lesson-resume",
+        "project": "mobile-chrome",
+        "passed": 3,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "adaptive-session",
+        "project": "chromium",
+        "passed": 2,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "adaptive-session",
+        "project": "mobile-chrome",
+        "passed": 2,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "interactive-blocks",
+        "project": "chromium",
+        "passed": 1,
+        "skipped": 1,
+        "status": "PASS"
+      },
+      {
+        "suite": "interactive-blocks",
+        "project": "mobile-chrome",
+        "passed": 1,
+        "skipped": 1,
+        "status": "PASS"
+      },
+      {
+        "suite": "review-mistake-loop",
+        "project": "chromium",
+        "passed": 1,
+        "skipped": 1,
+        "status": "PASS"
+      },
+      {
+        "suite": "review-mistake-loop",
+        "project": "mobile-chrome",
+        "passed": 1,
+        "skipped": 1,
+        "status": "PASS"
+      },
+      {
+        "suite": "ai-learning",
+        "project": "chromium",
+        "passed": 1,
+        "skipped": 1,
+        "status": "PASS"
+      },
+      {
+        "suite": "ai-learning",
+        "project": "mobile-chrome",
+        "passed": 1,
+        "skipped": 1,
+        "status": "PASS"
+      },
+      {
+        "suite": "knowledge-map",
+        "project": "chromium",
+        "passed": 2,
+        "skipped": 1,
+        "status": "PASS"
+      },
+      {
+        "suite": "knowledge-map",
+        "project": "mobile-chrome",
+        "passed": 2,
+        "skipped": 1,
+        "status": "PASS"
+      },
+      {
+        "suite": "exam-navigation",
+        "project": "chromium",
+        "passed": 1,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "exam-navigation",
+        "project": "mobile-chrome",
+        "passed": 1,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "admin-authoring",
+        "project": "chromium",
+        "passed": 1,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "admin-authoring",
+        "project": "mobile-chrome",
+        "passed": 1,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "learning-catalog",
+        "project": "chromium",
+        "passed": 1,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "learning-catalog",
+        "project": "mobile-chrome",
+        "passed": 1,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "admin-metadata",
+        "project": "chromium",
+        "passed": 1,
+        "skipped": 0,
+        "status": "PASS"
+      },
+      {
+        "suite": "admin-metadata",
+        "project": "mobile-chrome",
+        "passed": 1,
+        "skipped": 0,
+        "status": "PASS"
+      }
+    ]
+  },
+  "checks": {
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "build": "PASS",
+    "packs": "PASS",
+    "fiveWidths": "PASS",
+    "boundedVisuals": "PASS",
+    "newComponentDetectorFindings": 0
+  },
+  "commands": [
+    "pnpm lint",
+    "pnpm typecheck",
+    "pnpm test",
+    "pnpm build",
+    "pnpm packs:verify",
+    "pnpm test:e2e",
+    "node scripts/run-e2e-rollout.mjs",
+    "node scripts/run-e2e-rollout.mjs foundation-evolution admin-metadata",
+    "node scripts/run-e2e-rollout.mjs learning-catalog",
+    "node scripts/run-e2e-rollout.mjs admin-metadata",
+    "node scripts/build-evolution-rollout-artifact.mjs"
+  ],
+  "diagnostics": [
+    "Initial combined all-on run exposed process-global fixture contamination; independent suite/browser servers passed.",
+    "Initial isolated foundation assertion expected an obsolete 15-minute button; the final adaptive 20-minute control assertion passed.",
+    "Cold development example preview exceeded the original five-second assertion under parallel CPU load; bounded fifteen-second preview assertion retained actual readiness requirements.",
+    "Scoped mobile search fields and metadata checkbox label meet tested width/touch bounds.",
+    "PG18 redundant NOT NULL catalog rows are excluded; actual required column nullability remains checked through attributes and a drift test."
+  ],
+  "hashNormalization": "CRLF -> LF",
+  "files": {
+    "scripts/run-e2e-rollout.mjs": "0526081e0da772ebaaffc9ea84a3792d4738cbb1cc6dc524eacdebba2825c8e8",
+    "scripts/build-evolution-rollout-artifact.mjs": "c34db056212f2afdd932fbd22eb4254ba7ea3816c3333f8e74eb4161f425eac1",
+    "src/db/evolution-rollout-artifact.json": "b1f34d0e21483ea66894ce9a58e9afbde640bfe71752021fd9b5a682539382d3",
+    "src/db/repositories/evolution-rollout-repository.ts": "ffaa4e4e0a0f1c67b18a6cba30b12555b20aeb77db5bf0cf346babf180ca0ada",
+    "src/db/repositories/learning-state-export-repository.ts": "a9cbb5127675f42295774494f89a76d6913d5c6d888dfde742833211d404b16c",
+    "src/db/repositories/export-repository.ts": "ebb1258dbf191a7340c380dd69857b348bf8335738f3a96e15bf7ac346818018",
+    "src/db/repositories/memory/exports.ts": "0d2d58a9ea2b6efbc12380041cf218ecf3722b8122b6ac6384b31bd035b05d51",
+    "src/app/api/admin/evolution-rollout/route.ts": "6888f92f78c5780bd31be15bbac4dc01009ff8d6efe8c7dabb9aedd9b68e1567",
+    "src/app/tracks/page.tsx": "fb91e7b99cc673381c3aea7dcd2be0f0017ff420fa7f368c6ce70bcbae93317f",
+    "src/features/tracks/learning-catalog.tsx": "da5c190e2085a362d212e2f5eacbdd190e699f68feb07ae92802e15313c4beb1",
+    "src/features/export/export-contracts.ts": "537b2c7937ac391cc9149fba6987086219bee8f4bc184cec56493ce202d54aa7",
+    "src/features/progress/overview.ts": "61439f33293f4e1d8726dab12eb6e6fa0522e47da352a1d98d9bda3513455be0",
+    "src/app/history/page.tsx": "4d2386b28cd6f975693f5f655d90a645e1eeb1984be7077d3e14384a96dc97f3",
+    "src/features/content-qa/metadata-preview.ts": "ac469ffe3a0b0926f5c4e7a85151d3a0e2fdcc4988eafa193f38731017c00e55",
+    "src/features/content-qa/authoring-metadata-view.tsx": "642ab3177f8f500b58f264bd5855a9e1d1c374311cc12de3dd6988aa21275ffb",
+    "src/features/content-qa/authoring-workbench.tsx": "2fad59b1c4a1c4f564865d4576bf29f3cfc50a5c6b0e61eae365805294ad741f",
+    "src/styles/application/interactions.css": "fa2537e8341306db5f16bfc4c870b469054d156556878731e7c681ef787e384b",
+    "tests/integration/evolution-rollout.test.ts": "85717730297d64bd0cc0569681e130f2682b45236fad5f766bf35f6b2c432ed1",
+    "tests/unit/evolution-rollout-route.test.ts": "15d668b92f625237f1aa1698fd8487f743c34c27231b199f23d8c53026b55a14",
+    "tests/unit/export-contracts.test.ts": "29965f30a6968bcdd31ec76c54ca77fe1b5e496ad553056803cf4c879888dac7",
+    "tests/unit/progress-overview.test.ts": "97ec20063a537bd74bb9a91f4c2004237911415ea1e5d5745fd54c4f17daf15c",
+    "tests/component/learning-catalog.test.tsx": "034e5dc9355c9125ff4796226568374db9fdd89e36f270983625eaad03bcd84c",
+    "tests/component/authoring-metadata-view.test.tsx": "71c7398418165ad20d110ff52d68d770ff32801c38ef937c8f086acd365a293e",
+    "tests/e2e/foundation-evolution.spec.ts": "278a7d31d1860b9d02bef54257dc8b1c911c86ee3b119ad2b296d539fbbc2a76",
+    "tests/e2e/import-ui.spec.ts": "b8f4004d81b5e3f3cf253b8ade152a700026edb1e0ab906517940d1df2c797e9",
+    "tests/e2e/learning-catalog.spec.ts": "9a811ef415fc8db50df69b46892b675c64343d0f533bd0b5cbcd240634e9f27d",
+    "tests/e2e/admin-metadata.spec.ts": "cc719f5a69499deaf8e81434f25c672a016f6220e90607b8e619630e5af47d63"
+  },
+  "productionActivated": false
+}

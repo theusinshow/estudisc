@@ -45,7 +45,7 @@ test.describe("flagged study foundation", () => {
     await page.goto("/");
     await expect(page.locator(".study-action-card")).toBeVisible();
     await page.goto("/plan");
-    await page.getByRole("button", { name: "Estudar 15 min" }).click();
+    await page.getByRole("button", { name: process.env.FEATURE_ADAPTIVE_SESSION === "true" ? "20 min" : "Estudar 15 min", exact: true }).click();
     await page.getByRole("button", { name: "Começar sessão" }).click();
     const sessionUrl = page.url();
     await expect(page.getByRole("navigation", { name: "Navegação principal", exact: true })).toHaveCount(0);

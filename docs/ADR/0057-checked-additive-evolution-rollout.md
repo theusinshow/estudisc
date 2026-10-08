@@ -1,0 +1,9 @@
+# ADR 0057 — checked additive evolution rollout and owned backup state
+
+Date: 2026-10-08. Status: Accepted under continuous implementation/direct-release authorization.
+
+The existing weekly routine and lesson resume require migrations 0019/0020. Enable their production flags only after verifying actual database readiness. Reuse existing ADMIN authorization and configured server connection; never export credentials. Provide a bounded operational endpoint accepting only a fixed migration-set identity/hash, no SQL, names, URLs or credentials from clients. Require the declared production hostname and exact schema baseline; serialize with a transaction-level advisory lock. Only the three previously reviewed empty-table additions can be applied. Partial or incompatible existing schemas fail closed without alteration; no content/evidence/mastery/history backfill or destructive operation. Preserve any existing Drizzle migration journal using original hashes/timestamps rather than inventing past migration records. Record actual activation in the existing append-only StudyEvents with the real ADMIN actor.
+
+Extend the existing estudisc.export.v1 backup with optional owner-scoped routine/resume facts and explicit unavailable-state information on a pre-migration database. Old payloads remain valid; there is no restore operation or canonical-state inference. Teacher/progress payloads exclude these private unsent drafts/settings. SQL and memory paths must use the authenticated owner, including generic history events.
+
+Tests cover full and pre-addition disposable schemas, exact shape drift, idempotence, transaction rollback, Student denial, caller identity/hash rejection, owner isolation and old export compatibility. Rollback disables flags and retains compatible user-state tables/history; no DROP or reverse migration is exposed. A production target/partial-schema mismatch stops activation rather than repairing unknown data by trial and error.

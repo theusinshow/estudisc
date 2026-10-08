@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-08 — Final evolution consumers and checked rollout
+
+- Add searchable source-backed Aprender catalog and actual area filtering, with wide mobile controls and existing Concept/lesson navigation.
+- Include optional owned routine/resume state and unsent drafts in private backup; preserve old export compatibility and exclude those facts from progress/Teacher Context. Correct memory history export's owner argument.
+- Provide fixed ADMIN readiness/transactional activation for the three empty user-state tables from migrations 0019/0020, exact hashes/schema/drift checks, actual audit and idempotent retry. Preserve PostgreSQL 17/18 nullability compatibility without changing required constraints; no generic SQL, backfill or historical-content/evidence transform.
+- Add searchable declared asset metadata, reuse exclusion and readable blueprint source/goal findings. Operational configuration/schema/AI-reservation events do not count as study days.
+- Validate all flags together with fresh serial suite/browser servers, preserving actual canonical engines and production data. Record actual protected ADMIN workbench release; production routine/resume activation remains pending engineering gates.
+
 ## 2026-10-08 — Source-bound ADMIN content workbench
 
 - Add gated ADMIN source context, Add Block, validated next-version draft import and exact-version mobile preview using the existing immutable import/publication paths.

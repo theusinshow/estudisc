@@ -1,5 +1,7 @@
 # Estudisc — Implementation Plan
 
+2026-10-08 status: software/runtime/ADMIN increments through Phase 14 have accepted implementations; protected releases for Phases 10–14 are live. Final foundation/routine/resume flags, exact additive-table readiness and owned backup/catalog/metadata consumers are tracked in [FINAL-EVOLUTION-ROLLOUT.md](FINAL-EVOLUTION-ROLLOUT.md) and the top of PLANS.md. Phase 9 has ten released source-defined enriched lesson identities; the remaining content exceptions are not claimed complete. Preserve the historical audit/readiness distinction and Phase 15 deferral.
+
 Date: 2026-10-06. Base: `d38f640`, `main`. Inputs: [architecture](PRODUCT_ARCHITECTURE.md), [gap analysis](IMPLEMENTATION-GAP-ANALYSIS.md), [routing policy](MODEL-ROUTING-POLICY.md), source pack and existing accepted ADRs.
 
 ## 1. Strategy and authorization

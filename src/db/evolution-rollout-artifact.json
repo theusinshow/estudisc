@@ -1,0 +1,266 @@
+{
+  "id": "evolution-user-state.0019-0020",
+  "hash": "ffd87565c62272ab6cd6641ca36ba21c48bdd29065bd9a724606315f1c33f2ca",
+  "shapeSql": "SELECT json_build_object('columns',(SELECT json_agg(json_build_object('name',a.attname,'type',format_type(a.atttypid,a.atttypmod),'notNull',a.attnotnull,'default',pg_get_expr(d.adbin,d.adrelid)) ORDER BY a.attnum) FROM pg_attribute a LEFT JOIN pg_attrdef d ON d.adrelid=a.attrelid AND d.adnum=a.attnum WHERE a.attrelid=to_regclass($1) AND a.attnum>0 AND NOT a.attisdropped),'constraints',(SELECT json_agg(json_build_object('name',conname,'definition',pg_get_constraintdef(oid,true)) ORDER BY conname) FROM pg_constraint WHERE conrelid=to_regclass($1) AND contype<>'n'),'indexes',(SELECT json_agg(json_build_object('name',indexname,'definition',indexdef) ORDER BY indexname) FROM pg_indexes WHERE schemaname='public' AND tablename=$2)) AS shape",
+  "migrations": [
+    {
+      "name": "0019_rainy_shooting_star",
+      "when": 1791314994132,
+      "hash": "faed2d048dbab4a72077588b7c8b41eb83deea4fb3e5c9406554db0dfd8a69c6",
+      "sql": "CREATE TABLE \"study_plan_previews\" (\n\t\"id\" uuid PRIMARY KEY NOT NULL,\n\t\"owner_id\" text NOT NULL,\n\t\"base_revision\" integer NOT NULL,\n\t\"settings\" jsonb NOT NULL,\n\t\"snapshot\" jsonb NOT NULL,\n\t\"dependency_hash\" text NOT NULL,\n\t\"policy_version\" text DEFAULT 'routine.v1' NOT NULL,\n\t\"created_at\" timestamp with time zone NOT NULL,\n\t\"expires_at\" timestamp with time zone NOT NULL,\n\t\"applied_revision\" integer,\n\t\"applied_at\" timestamp with time zone,\n\tCONSTRAINT \"study_plan_previews_revision_nonnegative\" CHECK (\"study_plan_previews\".\"base_revision\" >= 0)\n);\n--> statement-breakpoint\nCREATE TABLE \"study_plans\" (\n\t\"owner_id\" text PRIMARY KEY NOT NULL,\n\t\"revision\" integer NOT NULL,\n\t\"settings\" jsonb NOT NULL,\n\t\"policy_version\" text DEFAULT 'routine.v1' NOT NULL,\n\t\"updated_at\" timestamp with time zone DEFAULT now() NOT NULL,\n\tCONSTRAINT \"study_plans_revision_positive\" CHECK (\"study_plans\".\"revision\" > 0)\n);\n--> statement-breakpoint\nALTER TABLE \"study_plan_previews\" ADD CONSTRAINT \"study_plan_previews_owner_id_owners_id_fk\" FOREIGN KEY (\"owner_id\") REFERENCES \"public\".\"owners\"(\"id\") ON DELETE no action ON UPDATE no action;--> statement-breakpoint\nALTER TABLE \"study_plans\" ADD CONSTRAINT \"study_plans_owner_id_owners_id_fk\" FOREIGN KEY (\"owner_id\") REFERENCES \"public\".\"owners\"(\"id\") ON DELETE no action ON UPDATE no action;--> statement-breakpoint\nCREATE INDEX \"study_plan_previews_owner_created_idx\" ON \"study_plan_previews\" USING btree (\"owner_id\",\"created_at\");",
+      "tables": [
+        "study_plans",
+        "study_plan_previews"
+      ],
+      "shapes": {
+        "study_plans": {
+          "columns": [
+            {
+              "name": "owner_id",
+              "type": "text",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "revision",
+              "type": "integer",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "settings",
+              "type": "jsonb",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "policy_version",
+              "type": "text",
+              "notNull": true,
+              "default": "'routine.v1'::text"
+            },
+            {
+              "name": "updated_at",
+              "type": "timestamp with time zone",
+              "notNull": true,
+              "default": "now()"
+            }
+          ],
+          "constraints": [
+            {
+              "name": "study_plans_owner_id_owners_id_fk",
+              "definition": "FOREIGN KEY (owner_id) REFERENCES owners(id)"
+            },
+            {
+              "name": "study_plans_pkey",
+              "definition": "PRIMARY KEY (owner_id)"
+            },
+            {
+              "name": "study_plans_revision_positive",
+              "definition": "CHECK (revision > 0)"
+            }
+          ],
+          "indexes": [
+            {
+              "name": "study_plans_pkey",
+              "definition": "CREATE UNIQUE INDEX study_plans_pkey ON public.study_plans USING btree (owner_id)"
+            }
+          ]
+        },
+        "study_plan_previews": {
+          "columns": [
+            {
+              "name": "id",
+              "type": "uuid",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "owner_id",
+              "type": "text",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "base_revision",
+              "type": "integer",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "settings",
+              "type": "jsonb",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "snapshot",
+              "type": "jsonb",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "dependency_hash",
+              "type": "text",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "policy_version",
+              "type": "text",
+              "notNull": true,
+              "default": "'routine.v1'::text"
+            },
+            {
+              "name": "created_at",
+              "type": "timestamp with time zone",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "expires_at",
+              "type": "timestamp with time zone",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "applied_revision",
+              "type": "integer",
+              "notNull": false,
+              "default": null
+            },
+            {
+              "name": "applied_at",
+              "type": "timestamp with time zone",
+              "notNull": false,
+              "default": null
+            }
+          ],
+          "constraints": [
+            {
+              "name": "study_plan_previews_owner_id_owners_id_fk",
+              "definition": "FOREIGN KEY (owner_id) REFERENCES owners(id)"
+            },
+            {
+              "name": "study_plan_previews_pkey",
+              "definition": "PRIMARY KEY (id)"
+            },
+            {
+              "name": "study_plan_previews_revision_nonnegative",
+              "definition": "CHECK (base_revision >= 0)"
+            }
+          ],
+          "indexes": [
+            {
+              "name": "study_plan_previews_owner_created_idx",
+              "definition": "CREATE INDEX study_plan_previews_owner_created_idx ON public.study_plan_previews USING btree (owner_id, created_at)"
+            },
+            {
+              "name": "study_plan_previews_pkey",
+              "definition": "CREATE UNIQUE INDEX study_plan_previews_pkey ON public.study_plan_previews USING btree (id)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "0020_giant_grey_gargoyle",
+      "when": 1791331567000,
+      "hash": "a4d0be73b10652d90826f5d3f866fffec681c4ea4f15bc792fa7c4de228cc843",
+      "sql": "CREATE TABLE \"lesson_resumes\" (\n\t\"owner_id\" text NOT NULL,\n\t\"context_key\" text NOT NULL,\n\t\"track_id\" text NOT NULL,\n\t\"lesson_id\" text NOT NULL,\n\t\"version\" integer NOT NULL,\n\t\"revision\" integer NOT NULL,\n\t\"mutation_id\" uuid NOT NULL,\n\t\"mutation_hash\" text NOT NULL,\n\t\"data\" jsonb NOT NULL,\n\t\"updated_at\" timestamp with time zone DEFAULT now() NOT NULL,\n\tCONSTRAINT \"lesson_resumes_owner_id_context_key_track_id_lesson_id_version_pk\" PRIMARY KEY(\"owner_id\",\"context_key\",\"track_id\",\"lesson_id\",\"version\"),\n\tCONSTRAINT \"lesson_resumes_version_revision_positive\" CHECK (\"lesson_resumes\".\"version\" > 0 AND \"lesson_resumes\".\"revision\" > 0)\n);\n--> statement-breakpoint\nALTER TABLE \"lesson_resumes\" ADD CONSTRAINT \"lesson_resumes_owner_id_owners_id_fk\" FOREIGN KEY (\"owner_id\") REFERENCES \"public\".\"owners\"(\"id\") ON DELETE no action ON UPDATE no action;--> statement-breakpoint\nCREATE INDEX \"lesson_resumes_owner_updated_idx\" ON \"lesson_resumes\" USING btree (\"owner_id\",\"updated_at\");",
+      "tables": [
+        "lesson_resumes"
+      ],
+      "shapes": {
+        "lesson_resumes": {
+          "columns": [
+            {
+              "name": "owner_id",
+              "type": "text",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "context_key",
+              "type": "text",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "track_id",
+              "type": "text",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "lesson_id",
+              "type": "text",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "version",
+              "type": "integer",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "revision",
+              "type": "integer",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "mutation_id",
+              "type": "uuid",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "mutation_hash",
+              "type": "text",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "data",
+              "type": "jsonb",
+              "notNull": true,
+              "default": null
+            },
+            {
+              "name": "updated_at",
+              "type": "timestamp with time zone",
+              "notNull": true,
+              "default": "now()"
+            }
+          ],
+          "constraints": [
+            {
+              "name": "lesson_resumes_owner_id_context_key_track_id_lesson_id_version_",
+              "definition": "PRIMARY KEY (owner_id, context_key, track_id, lesson_id, version)"
+            },
+            {
+              "name": "lesson_resumes_owner_id_owners_id_fk",
+              "definition": "FOREIGN KEY (owner_id) REFERENCES owners(id)"
+            },
+            {
+              "name": "lesson_resumes_version_revision_positive",
+              "definition": "CHECK (version > 0 AND revision > 0)"
+            }
+          ],
+          "indexes": [
+            {
+              "name": "lesson_resumes_owner_id_context_key_track_id_lesson_id_version_",
+              "definition": "CREATE UNIQUE INDEX lesson_resumes_owner_id_context_key_track_id_lesson_id_version_ ON public.lesson_resumes USING btree (owner_id, context_key, track_id, lesson_id, version)"
+            },
+            {
+              "name": "lesson_resumes_owner_updated_idx",
+              "definition": "CREATE INDEX lesson_resumes_owner_updated_idx ON public.lesson_resumes USING btree (owner_id, updated_at)"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

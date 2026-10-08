@@ -98,6 +98,14 @@ function createSnapshot(): ExportSnapshot {
 }
 
 describe("export contracts", () => {
+  it("retains old backup compatibility and excludes private routine/drafts from progress and Teacher Context", () => {
+    const old = createSnapshot();
+    expect(buildExportPayload({ kind: "backup", snapshot: old }).payload).toEqual(old);
+    const snapshot = { ...old, learningState: { routineAvailable: true, resumeAvailable: true, routine: [{ private: "routine" }], lessonResumes: [{ unsent: "private answer" }] } };
+    expect(buildExportPayload({ kind: "backup", snapshot }).payload).toMatchObject({ learningState: snapshot.learningState });
+    for (const kind of ["progress", "teacher_context"] as const) expect(buildExportPayload({ kind, snapshot }).payload).not.toHaveProperty("learningState");
+    expect(buildExportPreview("backup", snapshot).categories.find(c=>c.id==="lesson_resumes")).toMatchObject({private:true,count:1});
+  });
   it("previews backup exports with private-data warnings", () => {
     const preview = buildExportPreview("backup", createSnapshot());
 

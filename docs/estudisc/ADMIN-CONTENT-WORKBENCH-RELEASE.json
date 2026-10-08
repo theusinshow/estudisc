@@ -1,0 +1,10 @@
+{
+  "date":"2026-10-08","implementationCommit":"7ee0071","pullRequest":"https://github.com/theusinshow/estudisc/pull/13",
+  "mergeCommit":"d3300f433b772ba9410276b77fada1302a113deb","mergedAt":"2026-10-08T14:31:02Z","ci":"https://github.com/theusinshow/estudisc/actions/runs/37792233282",
+  "requiredChecksPassed":["lint","typecheck","unit","build","integration","content-qa","pack-validation","critical-e2e"],
+  "deployment":{"id":"dpl_AayFF1WuHLxYKfzraWSoc74No6U2","url":"https://estudisc-50hnwh0g8-theusinshows-projects.vercel.app","status":"READY","buildCommit":"d3300f4","buildCompletedAt":"2026-10-08T14:31:53.343Z","alias":"https://vecta-three.vercel.app","aliasMatches":true},
+  "feature":{"name":"FEATURE_CONTENT_HEALTH","value":true},
+  "localAcceptance":{"testsPassed":426,"optionalRealPostgresSkipped":3,"defaultE2ePassed":58,"gatedE2eSkipped":30,"flaggedWorkbenchLoopsPassed":2,"focusedPassed":10,"lint":"PASS","typecheck":"PASS","build":"PASS","packs":"PASS","fiveWidthsAndBoundedVisuals":"PASS","newWorkbenchDetectorFindings":0,"unchangedStepperDetectorFindings":1},
+  "productionAcceptance":{"path":"/admin/content-studio","status":200,"sourceStatus":200,"lessonId":"MAT-07","sourceVersion":5,"published":true,"sourceBlocks":15,"questionReferences":12,"metadataStatus":200,"actualDomSourceLoad":true,"addBlockVisible":true},
+  "preserved":{"noProductionDraftImport":true,"noProductionPublication":true,"noMigration":true,"noIndependentApprovalFabricated":true}
+}

@@ -5,7 +5,7 @@ export const dynamic = "force-dynamic";
 
 export default async function HistoryPage() {
   const events = await safeListEvents();
-  const items=events.items.filter(event=>event.type!=="ai_request");
+  const items=events.items.filter(event=>!["ai_request","evolution_schema_activation"].includes(event.type));
 
   return (
     <AppShell>

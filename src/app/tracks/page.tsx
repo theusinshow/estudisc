@@ -2,12 +2,16 @@ import Link from "next/link";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
-import { listTracks } from "@/features/tracks/api";
+import { listTracks,getTrack } from "@/features/tracks/api";
+import { getFeatureFlags } from "@/lib/feature-flags";
+import { LearningCatalog } from "@/features/tracks/learning-catalog";
 
 export const dynamic = "force-dynamic";
 
 export default async function TracksPage() {
   const tracks = await safeListTracks();
+  const enhanced = getFeatureFlags().FEATURE_STUDY_PLANNER;
+  const details = enhanced ? (await Promise.all(tracks.items.map(track=>getTrack(track.stableId)))).filter((track):track is NonNullable<typeof track>=>track!==null) : [];
 
   return (
     <AppShell>
@@ -21,7 +25,7 @@ export default async function TracksPage() {
             title="Nenhuma trilha importada."
             description="O catálogo fica vazio até você validar e ativar um Pack ou uma lição."
           />
-        ) : (
+        ) : enhanced ? <LearningCatalog tracks={details}/> : (
           <ul className="record-list" aria-label="Trilhas disponíveis">
             {tracks.items.map((track) => (
               <li key={track.stableId}>

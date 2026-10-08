@@ -46,7 +46,7 @@ export function buildExportPreview(kind: ExportKind, snapshot: ExportSnapshot): 
     kind,
     label: getExportLabel(kind),
     categories,
-    warnings: getWarnings(categories),
+    warnings: [...getWarnings(categories),...(kind==="backup"&&snapshot.learningState&&(!snapshot.learningState.routineAvailable||!snapshot.learningState.resumeAvailable)?["Rotina ou retomada ainda indisponível neste banco; estes registros não foram exportados."]:[])],
     approximateRecordCount: categories.reduce((total, category) => total + category.count, 0)
   };
 }
@@ -122,7 +122,11 @@ function getCategories(kind: ExportKind, snapshot: ExportSnapshot): ExportCatego
       count: snapshot.gamification.badgeAwards.length + snapshot.gamification.missionProgress.length,
       private: false
     },
-    { id: "history", label: "Histórico", count: snapshot.events.length, private: true }
+    { id: "history", label: "Histórico", count: snapshot.events.length, private: true },
+    ...(snapshot.learningState ? [
+      { id: "routine", label: "Rotina de estudo privada", count: snapshot.learningState.routine.length, private: true },
+      { id: "lesson_resumes", label: "Retomada e rascunhos não enviados", count: snapshot.learningState.lessonResumes.length, private: true }
+    ] : [])
   ];
 }
 
@@ -178,6 +182,10 @@ function getWarnings(categories: readonly ExportCategoryPreview[]) {
 
   if (categories.some((category) => category.id === "projects")) {
     warnings.add("Inclui contexto de projetos, que pode revelar objetivos pessoais ou profissionais.");
+  }
+
+  if (categories.some((category) => category.id === "lesson_resumes")) {
+    warnings.add("Inclui rascunhos de respostas não enviadas e sua posição privada nas aulas.");
   }
 
   return Array.from(warnings);
