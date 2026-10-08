@@ -2,6 +2,12 @@
 
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
+### Active Phase 14 — existing ADMIN content workbench
+
+Phase 13 is live: PR #12/eight checks PASS/main e628eda; production READY, commit/alias verified and real-exam flag active. Phase 14 extends existing ADMIN/import/review paths with source-bound Add Block, exact-version mobile preview, teaching-asset metadata/readiness viewer, blueprint metadata viewer and factual content-health findings. Keep published source fields, Activities, Concepts and Question hashes unchanged; append a draft next version through existing targeted preview/import, then use existing actual Admin Direct/Editorial paths.
+
+Expand only the existing targeted import's admissible non-assessed, non-media text families using their existing renderer schemas; keep numeric exploration compatibility and prohibit new Questions/Activities/media/inline assessments in this increment. No Pack schema or migration. Assets/blueprints are validated metadata with rights/exposure/source caveats, not invented approval; protected assets remain outside public reuse. All new server reads/actions require actual ADMIN and feature flag; Student denial and original publication invariants remain mandatory. Acceptance: strict source/base/hash binding, meaningful compatibility/ownership tests, preview/import UI recovery, immutable historical versions, mobile/keyboard and full gates. NEXT ACTION: source context reader, narrow compatible block extension and bounded ADMIN consumers; validate and release directly.
+
 ### Active Phase 13 — existing assessment presentation
 
 Phase 12 is locally accepted/checkpointed ce05bf7 and protected PR #11 is running. Continue on a separate child branch with FEATURE_REAL_EXAM presentation: numbered navigation, persisted review flags, draft/save indicators, final review and factual post-exam Concept counts. Keep all Question components mounted while switching so unsaved responses survive. Prevent finalize while saving/dirty, keep retry/expiry recovery and use elapsed monotonic time from the server deadline for display; the server remains authoritative.
@@ -34,7 +40,7 @@ Execution order: finish a representative broader Phase 9 batch using actual auth
 - [x] Review/mistake retrieval, factual grouping and different-question practice.
 - [x] Optional contextual AI service/limits/cache/fallback with reserved/exam exclusion.
 - [x] Prerequisite graph read model and accessible lazy interactive presentation.
-- [ ] Existing real-exam navigation, flags, final review and factual results.
+- [x] Existing real-exam navigation, flags, final review and factual results; actual protected release/production receipt.
 - [ ] Existing ADMIN authoring/asset/blueprint/health consumers with immutable publication.
 - [ ] Remaining foundation/routine/runtime consumers and verified compatible production rollout.
 - [ ] Final full engineering/production acceptance and current documentation.

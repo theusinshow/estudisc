@@ -6,6 +6,8 @@ import { DrizzleTrackImportRepository } from "@/db/repositories/track-import-rep
 import { MemoryTrackImportRepository, MemoryCatalogRepository } from "@/db/repositories/memory-store";
 import { getMemoryStore } from "@/db/repositories/memory/store";
 import { CatalogRepository } from "@/db/repositories/catalog-repository";
+import { AuthoringContextRepository } from "@/db/repositories/authoring-context-repository";
+import { buildAuthoringPacket } from "@/features/content-qa/authoring-contracts";
 import { ContentQaRepository } from "@/db/repositories/content-qa-repository";
 import { importLessonVersion, resolveLessonVersionContext } from "@/features/import/application/lesson-version-policy";
 import { validateTrackPack } from "@/features/import/api";
@@ -58,6 +60,24 @@ describe("targeted immutable lesson version", () => {
     const projected = receipts.find(r => r.schema === "caderno.lesson.v2")!.manifest;
     expect(validateTrackPack(projected).ok).toBe(false);
     await expect(importLessonVersion({ ...packet, packId: "other.receipt" }, repo)).rejects.toThrow("Source lesson");
+  });
+
+  it("reads actual SQL source publication per version and appends a source-bound text draft without rewriting Questions", async () => {
+    const { db, repo, base } = await setup();
+    const reader = new AuthoringContextRepository(db as never);
+    const source = (await reader.get("fixture-admin", base.id, base.version))!;
+    expect(source.published).toBe(true);
+    expect(source.target.baseHash).toBe(hashCanonicalJson(base));
+    const originalQuestions = await db.select().from(questionVersions);
+    const packet = buildAuthoringPacket(source, [{ id: "admin-note", type: "note", schemaVersion: 1, conceptIds: [base.concepts[0].id], payload: { type: "note", content: "Additional source-bound explanation." } }], "fixture.admin.text");
+    expect((await importLessonVersion(packet, repo, true)).status).toBe("ready");
+    expect((await importLessonVersion(packet, repo)).status).toBe("imported");
+    expect((await reader.get("fixture-admin", base.id))?.published).toBe(false);
+    expect((await reader.get("fixture-admin", base.id, base.version))?.published).toBe(true);
+    expect((await reader.get("fixture-admin", base.id, base.version + 1))?.lesson.blocks.at(-1)?.id).toBe("admin-note");
+    expect(await reader.get("fixture-admin", base.id, 999)).toBeNull();
+    expect(await db.select().from(questionVersions)).toEqual(originalQuestions);
+    expect((await new CatalogRepository(db as never).getLesson(base.id, undefined, undefined, true))?.resumeScope?.version).toBe(base.version);
   });
 
   it("fails closed on stale references and rolls back the receipt/lesson after a mid-write database failure", async () => {
