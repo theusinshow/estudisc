@@ -1,5 +1,7 @@
 # Phase 3 — Weekly routine implementation
 
+2026-10-08 production delta: migration 0019 actually applied via the fixed authenticated ADMIN operation; exact table readiness and idempotent retry verified. Planner/Today flags active; /plan and routine reader 200/four actual subjects, without applying invented user settings. [Actual final receipt](FINAL-EVOLUTION-RELEASE.json). Original local-only descriptions below are dated historical evidence.
+
 Date: 2026-10-06. Base: `605b777`. The user answered the pending model-routing choice with “pode seguir”, authorizing this session to resolve and implement the Phase 3 contract. No model switch or additional agent. [ADR 0041](../ADR/0041-weekly-study-routine-and-checked-previews.md) records the durable decisions.
 
 Implemented under `FEATURE_STUDY_PLANNER` (default off):
