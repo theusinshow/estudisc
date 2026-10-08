@@ -1,5 +1,7 @@
 # Estudisc — Implementation Gap Analysis
 
+2026-10-08 delta: existing review/mistake loops, contextual AI, lazy canonical knowledge map, assessment navigation/final review and source-bound ADMIN authoring are now released. Final consumers add catalog search/area filtering, owned routine/resume backup and checked activation of existing additive user-state migrations; see [final rollout](FINAL-EVOLUTION-ROLLOUT.md). Historical gap rows below describe the original audit. Ten source-defined lesson identities/seventeen explorers are live; original-objective, asset-rights and pedagogical exceptions remain factual content findings rather than invented approvals. Offline/geographic provider/unspecified advanced interactions remain outside the detailed accepted contracts.
+
 [Phase 9 review preparation](ENRICHMENT-PREVIEW.md) adds a generic source/blueprint/Question/policy-bound recipe and local MAT-07 exploratory candidate. Original blocks/activities and twelve Questions remain intact. Actual blueprint/pilot review and batch enrichment remain pending; no alternate reviewer state, approval, import or publication is introduced.
 
 Current deltas: [weekly routine](WEEKLY-ROUTINE.md) and [adaptive sessions](ADAPTIVE-SESSIONS.md). The original gaps below remain the initial audit snapshot; use the reports and current implementation plan for continuation.

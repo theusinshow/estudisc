@@ -712,3 +712,13 @@ progress.bar::-moz-progress-bar { background: var(--subject, var(--estudisc-colo
 
 /* Estudisc auth retains the approved motion values with explicit properties. */
 .auth-panel .primary-action { transition-property: background-color, border-color, box-shadow, transform; transition-duration: var(--estudisc-motion-fast); transition-timing-function: var(--estudisc-motion-easing); }
+
+.learning-catalog > .learning-controls { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; align-items: end; }
+.learning-catalog .learning-controls > a { display: flex; align-items: center; min-height: var(--estudisc-touch-minimum); margin-bottom: var(--estudisc-spacing-8); }
+.authoring-workbench .learning-check { display: flex; align-items: center; gap: var(--estudisc-spacing-3); min-height: var(--estudisc-touch-minimum); cursor: pointer; }
+.authoring-workbench .learning-check input { flex: none; width: 22px; height: 22px; accent-color: var(--estudisc-color-ink); }
+@media (max-width: 640px) {
+  .learning-catalog > .learning-controls { grid-template-columns: minmax(0, 1fr); }
+  .learning-catalog .learning-field { margin-block: var(--estudisc-spacing-4); }
+  .learning-catalog .learning-controls > a { margin-bottom: 0; }
+}

@@ -6,8 +6,8 @@ import { buildProgressOverview, studyActivityDates } from "@/features/progress/o
 // 2026-10-01 is a Thursday; 15:00Z is midday in São Paulo.
 const now = new Date("2026-10-01T15:00:00Z");
 
-it("does not count routine configuration as a study day", () => {
-  const eventDates = studyActivityDates([{ type: "study_plan_applied", occurredAt: now }]);
+it("does not count routine configuration, schema operations or AI reservations as a study day", () => {
+  const eventDates = studyActivityDates(["study_plan_applied","evolution_schema_activation","ai_request"].map(type=>({type,occurredAt:now})));
   expect(buildProgressOverview({ concepts: [], evidence: [], eventDates, now }).activeDaysThisWeek).toBe(0);
   expect(studyActivityDates([{ type: "study_plan_applied", occurredAt: now }, { type: "review_reflection", occurredAt: now }])).toEqual([now]);
 });

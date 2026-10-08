@@ -11,6 +11,7 @@ import { ReviewRepository, type DueReview } from "@/db/repositories/review-repos
 import { XpRepository, type XpSummary } from "@/db/repositories/xp-repository";
 import { activities, attempts, conceptEvidence, concepts, packImports,questions,questionVersions } from "@/db/schema";
 import type * as schema from "@/db/schema";
+import { LearningStateExportRepository,type LearningStateExport } from "./learning-state-export-repository";
 
 type ExportDatabase = PgDatabase<PgQueryResultHKT, typeof schema>;
 
@@ -52,6 +53,7 @@ export type ExportSnapshot = Readonly<{
   xpSummary: XpSummary;
   gamification: GamificationPersistenceState;
   events: HistoryEvent[];
+  learningState?: LearningStateExport;
 }>;
 
 export class ExportRepository {
@@ -71,7 +73,8 @@ export class ExportRepository {
       projects,
       xpSummary,
       gamification,
-      events
+      events,
+      learningState
     ] = await Promise.all([
       this.listPackManifests(),
       catalogRepository.listTracks(),
@@ -83,7 +86,8 @@ export class ExportRepository {
       new ProjectRepository(this.db).listProjects(ownerId),
       new XpRepository(this.db).getSummary(ownerId),
       new GamificationRepository(this.db).getState(ownerId),
-      new HistoryRepository(this.db).listEvents(ownerId)
+      new HistoryRepository(this.db).listEvents(ownerId),
+      new LearningStateExportRepository(this.db).get(ownerId)
     ]);
 
     return {
@@ -97,7 +101,8 @@ export class ExportRepository {
       projects,
       xpSummary,
       gamification,
-      events
+      events,
+      learningState
     };
   }
 

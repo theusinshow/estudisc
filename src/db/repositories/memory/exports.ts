@@ -7,6 +7,7 @@ import { MemoryProjectRepository } from './projects';
 import { MemoryXpRepository } from './gamification';
 import { MemoryGamificationRepository } from './gamification';
 import { MemoryHistoryRepository } from './progress';
+import { MemoryLearningStateExportRepository } from '../learning-state-export-repository';
 
 export class MemoryExportRepository {
   constructor(private readonly store = getMemoryStore()) {}
@@ -25,7 +26,8 @@ export class MemoryExportRepository {
       projects: await new MemoryProjectRepository(this.store).listProjects(ownerId),
       xpSummary: await new MemoryXpRepository(this.store).getSummary(ownerId),
       gamification: await new MemoryGamificationRepository(this.store).getState(ownerId),
-      events: await new MemoryHistoryRepository(this.store).listEvents()
+      events: await new MemoryHistoryRepository(this.store).listEvents(ownerId),
+      learningState: await new MemoryLearningStateExportRepository(this.store).get(ownerId)
     };
   }
 

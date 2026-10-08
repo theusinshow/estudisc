@@ -2,6 +2,18 @@
 
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
+### Final rollout increment — existing foundation/routine/runtime consumers
+
+Phase 14 is live: protected PR #13/eight checks PASS/main d3300f4/production READY with actual source/metadata reads and DOM source load. Final consumers are locally accepted: owned optional routine/resume backup, searchable catalog/actual area, readable/searchable ADMIN metadata and exact checked additive migration activation. Full 439 PASS/three optional real-PG SKIP; default browser 58 PASS/thirty-four gated SKIP; final isolated all-on feature checks 38 PASS/eight off assertions SKIP; focused twenty-five and final portability nine PASS; lint/typecheck/build/packs/five-width bounded visual/detector PASS. Initial combined-state/obsolete label/cold preview assertion failures were repaired and the relevant final checks passed.
+
+Verify exact production table readiness before enabling foundation/routine/adaptive/interactive flags. Existing migrations 0019/0020 only create three empty owner-scoped user-state tables; fixed hash-pinned ADMIN operation has read-only readiness, transactional lock, exact schema checks, no caller SQL and no destructive/backfill operation. Nullability remains verified across PostgreSQL 17/18 catalog representations. Keep flags disabled until readiness passes. Existing configured server connection/auth handles the operation without extracting real credentials. Record real activation/actor/hash facts; no fabricated migration/review history. NEXT ACTION: protected final-consumer release, actual production readiness/activation and four remaining flags, production read/control acceptance and final receipt.
+
+Acceptance: owner-isolated SQL/memory backups, older export compatibility and teacher exclusion; migrated/disposable baseline readiness, idempotent additive activation, drift/partial schema rollback and Student denial; full local gates, combined flags-on desktop/mobile loops, protected CI/deployment and actual authenticated production readiness/page controls. Reconcile historical audit gaps against delivered code; source-goal/pedagogical/rights exceptions and deferred offline/geographic demand remain explicit. NEXT ACTION: fixed rollout readiness/activation contract and backup consumers, then actual final rollout and acceptance.
+
+Remaining specified Aprender consumer: searchable existing catalog by track/module/lesson titles and actual area, with source-backed lesson links and Concept-map entry. Reuse current authorized catalog readers and approved controls; no ranking/recommendation/access or mastery change. Gate with existing STUDY_PLANNER rollout; keep the legacy catalog when disabled. Test accent normalization, area filtering, no results/reset and mobile/keyboard navigation.
+
+Finalize the ADMIN metadata consumer with searchable asset cards, factual reuse filtering and readable blueprint/source/goal findings, using the same validated metadata upload. No file bytes/public URLs, protected IDs, insertion or new approval path. Verify empty search/recovery and unknown/protected reuse remains unavailable.
+
 ### Active Phase 14 — existing ADMIN content workbench
 
 Phase 13 is live: PR #12/eight checks PASS/main e628eda; production READY, commit/alias verified and real-exam flag active. Phase 14 extends existing ADMIN/import/review paths with source-bound Add Block, exact-version mobile preview, teaching-asset metadata/readiness viewer, blueprint metadata viewer and factual content-health findings. Keep published source fields, Activities, Concepts and Question hashes unchanged; append a draft next version through existing targeted preview/import, then use existing actual Admin Direct/Editorial paths.
@@ -41,7 +53,7 @@ Execution order: finish a representative broader Phase 9 batch using actual auth
 - [x] Optional contextual AI service/limits/cache/fallback with reserved/exam exclusion.
 - [x] Prerequisite graph read model and accessible lazy interactive presentation.
 - [x] Existing real-exam navigation, flags, final review and factual results; actual protected release/production receipt.
-- [ ] Existing ADMIN authoring/asset/blueprint/health consumers with immutable publication.
+- [x] Existing ADMIN authoring/asset/blueprint/health consumers with immutable publication; protected PR #13/main d3300f4/live ADMIN reads/source load verified.
 - [ ] Remaining foundation/routine/runtime consumers and verified compatible production rollout.
 - [ ] Final full engineering/production acceptance and current documentation.
 

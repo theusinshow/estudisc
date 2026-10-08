@@ -10,7 +10,8 @@ test("imports the bundled example Track Pack through the product surface", async
 
   await page.getByRole("button", { name: "Carregar exemplo" }).click();
   await expect(page.getByRole("status", { name: "Estado da importação" })).toContainText(
-    /Preview válido|Pack já importado/
+    /Preview válido|Pack já importado/,
+    { timeout: 15000 }
   );
   await expect(page.getByRole("region", { name: "Preview" })).toContainText("JavaScript");
 

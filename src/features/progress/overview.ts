@@ -6,7 +6,7 @@ export const masteryOrder: readonly MasteryState[] = ["unseen", "introduced", "u
 
 /** Saving availability is configuration, not evidence that a study day happened. */
 export function studyActivityDates(events: readonly { type: string; occurredAt: Date }[]) {
-  return events.filter(event => event.type !== "study_plan_applied").map(event => event.occurredAt);
+  return events.filter(event => !["study_plan_applied","evolution_schema_activation","ai_request"].includes(event.type)).map(event => event.occurredAt);
 }
 
 export type OverviewConcept = Readonly<{ stableId: string; title: string; areaTitles: readonly string[] }>;
