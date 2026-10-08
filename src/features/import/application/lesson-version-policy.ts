@@ -1,5 +1,6 @@
 import { hashCanonicalJson } from "@/lib/canonical-json";
 import { codeBlockSchema,conceptBlockSchema,textBlockSchema,titledTextBlockSchema } from "@/features/lessons/blocks/block-schemas";
+import { validateSourceGoalPrediction } from "./source-goal-prediction";
 import { trackPackV2Schema, type TrackPackV2 } from "./track-pack-v2-schema";
 import { validateTrackPackV2Semantics } from "./track-pack-v2-validation";
 import { lessonVersionPackSchema, LessonVersionConflictError, type LessonVersionPack, type LessonVersionRepository } from "./lesson-version-contracts";
@@ -20,6 +21,7 @@ export function resolveLessonVersionContext(manifests: readonly unknown[], pack:
   for(const block of additions){
     if(!block.conceptIds.length||block.conceptIds.some(id=>!base.concepts.some(c=>c.id===id)))throw new LessonVersionConflictError("New blocks must use existing source Concepts");
     if(block.type==="numeric-explorer")continue;
+    if(block.type==="prediction"){try{validateSourceGoalPrediction(block,base);}catch(error){throw new LessonVersionConflictError(error instanceof Error?error.message:"Invalid source-goal prediction");}continue;}
     if(block.payload.type!==undefined&&block.payload.type!==block.type)throw new LessonVersionConflictError("Block payload type differs from its envelope");
     if(block.type==="concept"&&block.payload.conceptId!==undefined&&!block.conceptIds.includes(String(block.payload.conceptId)))throw new LessonVersionConflictError("Concept payload must match the source-bound block Concepts");
     const schema=block.type==="code"?codeBlockSchema:block.type==="concept"?conceptBlockSchema:block.type==="text"||block.type==="summary"?textBlockSchema:["note","warning","example","worked-example"].includes(block.type)?titledTextBlockSchema:null;
