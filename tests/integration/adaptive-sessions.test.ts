@@ -17,6 +17,13 @@ import { MemoryAssessmentRepository } from "@/db/repositories/memory-assessment-
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
 import { MistakeRepository } from "@/db/repositories/mistake-repository";
 import { MemoryMistakeRepository } from "@/db/repositories/memory/reviews";
+import { AiLearningRepository, MemoryAiLearningRepository } from "@/db/repositories/ai-learning-repository";
+import { CatalogRepository } from "@/db/repositories/catalog-repository";
+import { MemoryCatalogRepository } from "@/db/repositories/memory-store";
+import { ConceptRelationRepository, MemoryConceptRelationRepository } from "@/db/repositories/concept-relation-repository";
+import { AIService } from "@/features/ai/ai-service";
+import { aiRequestSchema } from "@/features/ai/contracts";
+import { resolveAiContext } from "@/features/ai/context";
 
 const now = new Date("2026-10-06T12:00:00Z");
 function fixture(version = 1) {
@@ -49,6 +56,42 @@ async function setup(kind: "memory" | "sql", seed = true, initial = fixture()) {
 }
 
 describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
+  it("resolves declared AI prerequisite relations from actually published Concepts without mixing public and internal track IDs",async()=>{
+    const ctx=await setup(kind);
+    try{
+      const edge=source.conceptPrerequisites[0];expect(edge).toBeDefined();
+      const relations=ctx.database?new ConceptRelationRepository(ctx.database.db):new MemoryConceptRelationRepository(ctx.store);
+      const input=aiRequestSchema.parse({requestId:crypto.randomUUID(),action:"explain_concept_relation",target:{kind:"relation",conceptId:edge.conceptId,relatedConceptId:edge.prerequisiteConceptId}});
+      const context=await resolveAiContext("learner",input,{catalog:ctx.database?new CatalogRepository(ctx.database.db):new MemoryCatalogRepository(ctx.store),questions:ctx.questions,sessions:ctx.sessions,mistakes:ctx.database?new MistakeRepository(ctx.database.db):new MemoryMistakeRepository(ctx.store),relations});
+      expect(context.facts).toMatchObject({strength:edge.strength,officialMappingCertified:false});expect(context.sourceKey).toMatch(/^[a-f0-9]{64}$/);
+      expect(await relations.list(edge.conceptId)).toContainEqual(expect.objectContaining({prerequisiteConceptId:edge.prerequisiteConceptId,strength:edge.strength}));
+    }finally{await ctx.database?.close();}
+  });
+  it("attests fresh and cached AI guidance through canonical help without creating Attempts or independent success",async()=>{
+    const ctx=await setup(kind);
+    try{
+      const plan=(await ctx.sessions.plan("learner",10,now))!;await ctx.sessions.transition("learner",plan.id,"start",now);
+      const activity=sessionItemsSchema.parse(plan.items)[0].activitySnapshots![0];
+      const input=aiRequestSchema.parse({requestId:crypto.randomUUID(),action:"give_hint",target:{kind:"question",activityId:activity.stableId,questionId:activity.config.questionId,questionVersion:activity.config.questionVersion,sessionId:plan.id}});
+      const context=await resolveAiContext("learner",input,{
+        catalog:ctx.database?new CatalogRepository(ctx.database.db):new MemoryCatalogRepository(ctx.store),questions:ctx.questions,sessions:ctx.sessions,
+        mistakes:ctx.database?new MistakeRepository(ctx.database.db):new MemoryMistakeRepository(ctx.store),relations:ctx.database?new ConceptRelationRepository(ctx.database.db):new MemoryConceptRelationRepository(ctx.store)
+      });
+      let calls=0;
+      const ledger=ctx.database?new AiLearningRepository(ctx.database.db):new MemoryAiLearningRepository(ctx.store);
+      const service=new AIService({id:"mock",model:"small",configured:true,assist:async()=>{calls++;return{ok:true,rawJson:'{"text":"Consulte as partes do todo."}'};}},ledger,()=>now);
+      expect(await service.execute("learner",input,context)).toMatchObject({assisted:true,cached:false});
+      expect(await service.execute("learner",{...input,requestId:crypto.randomUUID()},context)).toMatchObject({assisted:true,cached:true});expect(calls).toBe(1);
+      const view=await ctx.questions.view("learner",activity.stableId,activity.config.questionId,activity.config.questionVersion,plan.id);
+      expect(view.assistance.solutionRevealed).toBe(true);
+      expect(ctx.database?(await ctx.database.db.select().from(conceptEvidence)).length:ctx.store.conceptEvidence.length).toBe(0);
+      const answer=questionSchema.parse(source.questions.find(q=>q.id===activity.config.questionId)).answer;
+      const response=answer.kind==="numeric"?String(answer.value):answer.kind==="multiple_choice"?answer.choiceId:answer.kind==="ordering"?answer.orderedIds:answer.kind==="matching"?answer.pairs:answer.assignments;
+      await ctx.questions.interact("learner",activity.stableId,{action:"submit",questionId:activity.config.questionId,questionVersion:activity.config.questionVersion,sessionId:plan.id,submissionKey:crypto.randomUUID(),response});
+      await ctx.sessions.transition("learner",plan.id,"complete",now);
+      expect((await ctx.sessions.result("learner",plan.id))!.summary).toMatchObject({attempts:1,correct:1,independentConcepts:[]});
+    }finally{await ctx.database?.close();}
+  });
   it("uses actual owned due Concepts for targeted retrieval without changing schedule/evidence",async()=>{
     const ctx=await setup(kind);
     try{
@@ -134,10 +177,17 @@ describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
       const prepared = (await ctx.sessions.plan("learner", 10, now))!;
       const exams = ctx.database ? new AssessmentRepository(ctx.database.db) : new MemoryAssessmentRepository(ctx.store);
       const template = await exams.importTemplate({ id: "adaptive-blocking-exam", version: 1, title: "Simulado de fixture", kind: "FULL_SIMULATION", trackId: input.track.id, durationMinutes: 60, status: "published", items: examQuestions.map(question => ({ id: question.id, version: question.version })) });
+      const ai = ctx.database ? new AiLearningRepository(ctx.database.db) : new MemoryAiLearningRepository(ctx.store);
+      const ticket = await ai.claim("learner", crypto.randomUUID(), "a".repeat(64), now, { provider: "mock", model: "small" });
       await exams.start("learner", template.id, crypto.randomUUID(), now);
       expect(await ctx.sessions.plan("learner", 20, now)).toBeNull();
       await expect(ctx.sessions.plan("learner", 10, now, { kind: "review" })).rejects.toMatchObject({ code: "exam_active" });
       await expect(ctx.sessions.plan("learner", 10, now, { kind: "remediation", mistakeId: crypto.randomUUID() })).rejects.toMatchObject({ code: "exam_active" });
+      await expect(ai.claim("learner", crypto.randomUUID(), "b".repeat(64), now, { provider: "mock", model: "small" })).rejects.toMatchObject({ code: "exam_active" });
+      await expect(ai.complete("learner", ticket.id, { ok: true, output: { text: "A clue." }, cached: false }, now)).rejects.toMatchObject({ code: "exam_active" });
+      await ai.complete("learner", ticket.id, { ok: false, code: "exam_active" }, now);
+      const firstActivity = sessionItemsSchema.parse(prepared.items)[0].activitySnapshots![0];
+      await expect(ctx.questions.aiContext("learner", firstActivity.stableId, firstActivity.config.questionId, firstActivity.config.questionVersion)).rejects.toThrow("Question unavailable");
       expect((await ctx.sessions.get("learner", prepared.id))?.status).toBe("PLANNED");
     } finally { await ctx.database?.close(); }
   });
@@ -161,6 +211,8 @@ describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
       const later = await ctx.sessions.plan("learner", 20, new Date("2026-10-07T12:00:00Z"));
       expect(later).not.toBeNull();
       expect(sessionItemsSchema.parse(later!.items).flatMap(item => item.questions).every(ref => input.questions.find(question => question.id === ref.id)?.exposurePolicy.reservedForAssessment)).toBe(true);
+      const activity = sessionItemsSchema.parse(later!.items)[0].activitySnapshots![0];
+      await expect(ctx.questions.aiContext("learner", activity.stableId, activity.config.questionId, activity.config.questionVersion)).rejects.toMatchObject({ code: "context_unavailable" });
     } finally { await ctx.database?.close(); }
   });
 

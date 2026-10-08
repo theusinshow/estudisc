@@ -5,6 +5,7 @@ export const dynamic = "force-dynamic";
 
 export default async function HistoryPage() {
   const events = await safeListEvents();
+  const items=events.items.filter(event=>event.type!=="ai_request");
 
   return (
     <AppShell>
@@ -13,16 +14,16 @@ export default async function HistoryPage() {
         <h1 id="history-title">Eventos</h1>
         {events.status === "not_configured" ? (
           <p>Configure `DATABASE_URL` ou use `pglite://memory` em desenvolvimento para ler o histórico.</p>
-        ) : events.items.length === 0 ? (
+        ) : items.length === 0 ? (
           <p>Nenhum evento registrado. RUN não cria tentativa; SUBMIT registra a primeira entrada oficial.</p>
         ) : (
           <ol className="record-list" aria-label="Eventos de estudo">
-            {events.items.map((event) => (
+            {items.map((event) => (
               <li key={event.id}>
                 <div>
-                  <strong>{event.type}</strong>
+                  <strong>{event.type==="ai_completion"?"Apoio de IA":event.type==="mistake_reflection"?"Reflexão sobre um erro":event.type}</strong>
                   <span>
-                    {event.entityType}: {event.entityId}
+                    {event.type==="ai_completion"?"Registro da consulta opcional":event.type==="mistake_reflection"?"Percepção informada pelo aluno":`${event.entityType}: ${event.entityId}`}
                   </span>
                   <small>{new Date(event.occurredAt).toLocaleString("pt-BR")}</small>
                 </div>

@@ -2,12 +2,22 @@
 
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
+### Next increment — Phase 11 contextual assistance (2026-10-08)
+
+PR #9 passed all eight required checks and merged as 8cae545; Phase 10 production deployment/actual acceptance is being completed. Continue directly with the existing optional tutor/generation gateway. Implement the five approved AI actions against server-resolved, owner/version-bound Question, published lesson block, factual mistake group, completed session or actual prerequisite relation contexts. AI text never changes canonical evidence, mastery, review, planner, scores or publication.
+
+Assumptions: one existing provider adapter, no automatic expensive-provider escalation, no new credentials/purchases or production migrations. Extend existing append-only StudyEvents for owner-serialized request reservations, bounded usage and short-lived owner/context/policy/model caches. Conservatively attest solution exposure before any Question-related AI output, including a cached response; reject reserved Question contexts and all active EXAM use. No whole-history or asset/auth data goes to the provider. Preserve current tutor compatibility and prevent a legacy endpoint from bypassing controls.
+
+Acceptance: ADR 0053's strict inputs/structured outputs, minimal contexts, provider absence/timeout/cancel/invalid-output recovery, owner/source/policy/model cache and 6/minute/20/day provider reservations, 30 total requests/minute and two pending calls. Preserve fresh/cache/failure assistance attestation, factual usage and SQL/memory parity; do not duplicate an already pending context or renew the original cache lifetime on a hit. Reuse TutorPanel and conditional consumers for all five actions; authored learning remains usable without AI. No new production credentials, provider calls or migration for acceptance.
+
+Local acceptance: Phase 10 receipt complete; Phase 11 service/storage/context/API/tutor and five consumers implemented. Full 412 PASS/three optional real-PG SKIP; lint/typecheck/build/packs PASS; full serial E2E 56 PASS/twenty-two gated SKIP; AI+SMART-on loops four PASS/four flag-off SKIP; all five viewport bounds, bounded visuals and detector [] accepted. Final context/guard thirty-one PASS; failure/ledger fifteen PASS. Corrected publication scope rendering in the memory fixture and SQL relation eligibility's public/internal track-ID mismatch; actual memory/migrated SQL relation cases passed. Failure assistance is disclosed truthfully and identical pending contexts do not trigger duplicate calls. NEXT ACTION: protected release and actual deployment/alias/flag/page/non-provider rejection probes, then Phase 12. No real provider call, raw credential or migration is required for this release.
+
 Latest owner instruction: continue everything until finished, without ending execution at each batch. Complete the approved Phase 0–14 requirements and remaining consumers/production rollout, preserving the standing direct-release policy and current model/effort; no extra agents by default. Phase 15 remains explicitly deferred because its offline/sync scope is undefined. Purchases, destructive non-disposable operations and raw-secret handling keep their distinct boundaries.
 
 Execution order: finish a representative broader Phase 9 batch using actual authored math goals/existing models; then Phase 10 review/mistake loop, Phase 11 optional contextual AI, Phase 12 knowledge-map presentation, Phase 13 exam navigation/review/results, Phase 14 admin authoring/health. Reconcile remaining Phase 0–8 consumers and safe production flags/table readiness before final acceptance. Reuse existing engines and actual accepted contracts; document concrete domain/security exceptions rather than trial-and-error or invented certification.
 
 - [x] Representative broader source-defined enrichment batch and actual release.
-- [ ] Review/mistake retrieval, factual grouping and different-question practice.
+- [x] Review/mistake retrieval, factual grouping and different-question practice.
 - [ ] Optional contextual AI service/limits/cache/fallback with reserved/exam exclusion.
 - [ ] Prerequisite graph read model and accessible lazy interactive presentation.
 - [ ] Existing real-exam navigation, flags, final review and factual results.
@@ -15,7 +25,7 @@ Execution order: finish a representative broader Phase 9 batch using actual auth
 - [ ] Remaining foundation/routine/runtime consumers and verified compatible production rollout.
 - [ ] Final full engineering/production acceptance and current documentation.
 
-Current checkpoint: PR #8 merged/main 7cdc7f6 synchronized. Ten enriched lesson identities/seventeen explorers are live; never repeat those version imports/publications. Phase 10's owned retrieval and factual mistake/reflection loop is implemented locally, with final browser acceptance and protected release pending. Continue automatically after each technical gate; no editorial review permission.
+Current checkpoint: PR #9 merged/main 8cae545 synchronized; eight required checks PASS, Vercel READY/commit+existing alias verified. Phase 10 is live with SMART_MISTAKES=true; actual enhanced review/mistakes pages 200, strict invalid reflection 400, non-due review 409 and unavailable mistake 404. Ten enriched lesson identities/seventeen explorers remain live; never repeat those imports/publications. Continue Phase 11 automatically; no editorial review permission.
 
 ### Active representative batch
 

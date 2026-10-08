@@ -10,9 +10,20 @@ import { scheduleReviewV2,REVIEW_V2 } from "@/features/review/review-policy-v2";
 import { isIndependentQuestionSuccess, QUESTION_SUCCESS_XP, QUESTION_SUCCESS_REASON } from "@/features/gamification/study-rewards";
 import { frozenMember } from "@/features/study-sessions/frozen-membership";
 import { sessionItemsSchema } from "@/features/study-sessions/contracts";
+import { AiLearningError, type AiQuestionSource } from "@/features/ai/contracts";
+import { hashCanonicalJson } from "@/lib/canonical-json";
 
 export class MemoryQuestionStudyRepository {
   constructor(private readonly store=getMemoryStore()){}
+  async aiContext(ownerId:string, activityId:string, questionId:string, version:number, sessionId?:string):Promise<AiQuestionSource>{
+    const ctx=this.context(ownerId,activityId,questionId,version,sessionId);
+    const session=sessionId?this.store.studySessions.find(row=>row.id===sessionId&&row.ownerId===ownerId):undefined;
+    const item=session?sessionItemsSchema.parse(session.items).find(row=>row.activityIds.includes(activityId)):undefined;
+    const source=[...this.store.packImports].reverse().flatMap(entry=>entry.manifest?.schema==="caderno.track.v2"?entry.manifest.track.modules.flatMap(module=>module.lessons.map(lesson=>({lesson,trackId:entry.manifest!.track.id}))):[])
+      .find(row=>row.lesson.id===ctx.activity.lessonStableId&&(!ctx.activity.trackStableId||row.trackId===ctx.activity.trackStableId)&&(!item||row.lesson.version===item.version)&&row.lesson.activities.some(a=>a.id===activityId&&a.questionId===questionId));
+    if(ctx.question.exposurePolicy.reservedForAssessment||!source||source.lesson.status!=="published")throw new AiLearningError("context_unavailable");
+    return {question:ctx.question,hints:ctx.config.hints.slice(0,2),sourceKey:hashCanonicalJson({question:ctx.question,config:ctx.config,lessonId:source.lesson.id,lessonVersion:source.lesson.version,context:ctx.contextKey})};
+  }
   private context(ownerId:string,activityId:string,questionId:string,version:number,sessionId?:string){
     if(this.store.assessmentInstances.some(instance=>instance.ownerId===ownerId&&instance.status==="ACTIVE"&&instance.snapshot.mode==="EXAM"))throw new QuestionUnavailableError();
     let activity=this.store.activities.find(activity=>activity.stableId===activityId);

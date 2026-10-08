@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { getConcept } from "@/features/concepts/api";
+import { getFeatureFlags } from "@/lib/feature-flags";
+import { listPublishedAiRelations } from "@/features/ai/concept-relations";
+import { AiActionControl } from "@/features/ai/action-control";
 
 type ConceptPageProps = Readonly<{
   params: Promise<{ conceptId: string }>;
@@ -15,6 +18,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
   if (!concept) {
     notFound();
   }
+  const relations=getFeatureFlags().FEATURE_AI_LEARNING?await listPublishedAiRelations(conceptId):[];
 
   return (
     <AppShell>
@@ -22,6 +26,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
         <p className="eyebrow">Conceito</p>
         <h1 id="concept-title">{concept.title}</h1>
         <p>{concept.summary ?? "Sem resumo importado."}</p>
+        {relations.length>0&&<section className="module-section" aria-label="Relações curriculares declaradas"><h2>Conceitos que ajudam aqui</h2><p>Estas relações vêm do currículo importado. A IA apenas explica a ligação.</p><ul className="record-list">{relations.map(edge=><li key={edge.prerequisiteConceptId}><div><Link href={`/concepts/${encodeURIComponent(edge.prerequisiteConceptId)}`}>{edge.title}</Link><span>{edge.strength==="required"?"Pré-requisito obrigatório":"Relação recomendada"}</span><AiActionControl label="Explicar esta ligação com IA" spec={{action:"explain_concept_relation",target:{kind:"relation",conceptId,relatedConceptId:edge.prerequisiteConceptId}}}/></div></li>)}</ul></section>}
 
         <section className="module-section" aria-labelledby="concept-lessons-title">
           <h2 id="concept-lessons-title">Onde aparece</h2>

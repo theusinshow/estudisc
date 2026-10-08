@@ -265,6 +265,9 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .targeted-practice-controls .learning-field { margin-bottom: 0; }
 .mistake-reflection-form textarea { font: inherit; color: var(--estudisc-color-ink); background: var(--estudisc-color-paper); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); }
 @media (min-width: 600px) { .targeted-practice-controls { grid-template-columns: minmax(160px, 1fr) auto; } }
+.ai-action-control { margin-block: var(--estudisc-spacing-6); min-width: 0; }
+.ai-action-control button { min-height: var(--estudisc-touch-minimum); max-width: 100%; white-space: normal; overflow-wrap: anywhere; }
+.ai-action-control p { overflow-wrap: anywhere; }
 
 /* Study session */
 .study-session { width: min(100%, 820px); }

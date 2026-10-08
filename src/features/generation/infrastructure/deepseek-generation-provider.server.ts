@@ -32,9 +32,9 @@ export class DeepSeekGenerationProvider implements GenerationProvider {
   ) {}
 
   // Shared server gateway for bounded contextual assistance; UI never calls a provider.
-  async assist(prompt:string):Promise<GenerationProviderResult>{
+  async assist(prompt:string,signal?:AbortSignal):Promise<GenerationProviderResult>{
     if(!this.config.apiKey)return {ok:false,error:{code:"authentication",message:"Tutor is not configured",retryable:false}};
-    return this.callDeepSeek({compiledPrompt:{prompt},model:this.config.defaultModel},768);
+    return this.callDeepSeek({compiledPrompt:{prompt},model:this.config.defaultModel},768,signal);
   }
 
   async generate(request: GenerationProviderRequest): Promise<GenerationProviderResult> {
@@ -78,7 +78,7 @@ export class DeepSeekGenerationProvider implements GenerationProvider {
     };
   }
 
-  private async callDeepSeek(request: Pick<GenerationProviderRequest,"model"> & {compiledPrompt:{prompt:string}},maxTokens?:number): Promise<GenerationProviderResult> {
+  private async callDeepSeek(request: Pick<GenerationProviderRequest,"model"> & {compiledPrompt:{prompt:string}},maxTokens?:number,externalSignal?:AbortSignal): Promise<GenerationProviderResult> {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), this.timeoutMs);
 
@@ -89,7 +89,7 @@ export class DeepSeekGenerationProvider implements GenerationProvider {
           authorization: `Bearer ${this.config.apiKey}`,
           "content-type": "application/json"
         },
-        signal: controller.signal,
+        signal: externalSignal ? AbortSignal.any([externalSignal,controller.signal]) : controller.signal,
         body: JSON.stringify({
           model: request.model,
           response_format: { type: "json_object" },

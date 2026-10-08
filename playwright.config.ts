@@ -20,6 +20,7 @@ export default defineConfig({
       AUTH_SECRET: "test-auth-secret-do-not-use",
       AUTH_TRUST_HOST: "true",
       DATABASE_URL: process.env.DATABASE_URL ?? "memory://local",
+      DEEPSEEK_API_KEY: "",
       ESTUDISC_ALLOWED_GOOGLE_EMAILS: "",
       // Code accounts from .env.local stay off; E2E covers the owner flow without a login.
       ESTUDISC_ACCOUNTS: "",

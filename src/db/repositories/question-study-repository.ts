@@ -13,12 +13,19 @@ import { evidenceStrengthV2, MASTERY_V2 } from "@/features/mastery/mastery-polic
 import { scheduleReviewV2, REVIEW_V2 } from "@/features/review/review-policy-v2";
 import { isIndependentQuestionSuccess, QUESTION_SUCCESS_XP, QUESTION_SUCCESS_REASON } from "@/features/gamification/study-rewards";
 import { frozenMember, planningActivityKey } from "@/features/study-sessions/frozen-membership";
+import { AiLearningError, type AiQuestionSource } from "@/features/ai/contracts";
 
 type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
 export class QuestionUnavailableError extends Error { constructor(){super("Question unavailable");} }
 export class SubmissionConflictError extends Error { constructor(){super("Submission key conflicts with a previous response");} }
 export class QuestionStudyRepository {
   constructor(private readonly db:Database=getDatabase()){}
+  async aiContext(ownerId:string, activityId:string, questionId:string, version:number, sessionId?:string):Promise<AiQuestionSource>{
+    const ctx=await this.context(ownerId,activityId,questionId,version,sessionId);
+    const metadata=ctx.lesson.metadata as Record<string,unknown>|null;
+    if(ctx.question.exposurePolicy.reservedForAssessment || metadata?.kind && (metadata.status!=="published" || !metadata.qaReleaseId))throw new AiLearningError("context_unavailable");
+    return {question:ctx.question,hints:ctx.config.hints.slice(0,2),sourceKey:hashCanonicalJson({question:ctx.question,config:ctx.config,lessonId:ctx.lesson.stableId,lessonVersion:ctx.lesson.contentVersion,context:ctx.contextKey})};
+  }
   async planningAvailability(ownerId:string,refs:readonly {trackId:string;lessonId:string;lessonVersion:number;activityId:string;questionId:string;questionVersion:number}[],now:Date){
     const result=new Map<string,Awaited<ReturnType<DrizzleQuestionRepository["getVersions"]>>[number]>();
     if(!refs.length)return result;

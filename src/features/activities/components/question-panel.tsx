@@ -11,7 +11,7 @@ import { useLessonResume } from "@/features/lessons/resume-provider";
 import { usableDraft } from "@/features/lessons/resume-contracts";
 import { draftResponseMatches } from "@/features/lessons/resume-policy";
 
-export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,lastAnswer,lastAttempt,assistance}:{question:StudentQuestion;activityStableId:string;hintCount?:number;sessionId?:string;lastAnswer?:unknown;lastAttempt?:{attemptId:string;submissionKey:string;correct:boolean;explanation?:string};assistance?:{hintLevel:number;hint:string;solutionRevealed:boolean;explanation?:string}}) {
+export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,lastAnswer,lastAttempt,assistance,aiEnabled=false}:{question:StudentQuestion;activityStableId:string;hintCount?:number;sessionId?:string;aiEnabled?:boolean;lastAnswer?:unknown;lastAttempt?:{attemptId:string;submissionKey:string;correct:boolean;explanation?:string};assistance?:{hintLevel:number;hint:string;solutionRevealed:boolean;explanation?:string}}) {
   const resume=useLessonResume();
   const draft=usableDraft(resume?.data.drafts.find(entry=>entry.activityId===activityStableId&&entry.questionId===question.id&&entry.questionVersion===question.version&&draftResponseMatches(question.type,entry.response)),lastAttempt);
   const id=useId(); const [response,setResponse]=useState(()=>draft?.response??(lastAnswer==null||!draftResponseMatches(question.type,lastAnswer)?initialResponse(question):lastAnswer as QuestionResponse)); const [key,setKey]=useState(()=>draft?.submissionKey??crypto.randomUUID());
@@ -42,6 +42,6 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
       <Link href="/achievements">Ver minhas conquistas</Link>
     </div>}
     {error&&<p role="alert">{error}</p>}
-    <TutorPanel activityId={activityStableId} questionId={question.id} questionVersion={question.version} sessionId={sessionId}/>
+    <TutorPanel activityId={activityStableId} questionId={question.id} questionVersion={question.version} sessionId={sessionId} enhanced={aiEnabled}/>
   </section>;
 }
