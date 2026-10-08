@@ -1,0 +1,1012 @@
+{
+  "date": "2026-10-07",
+  "implementationCommit": "3362d8b",
+  "codePullRequest": "https://github.com/theusinshow/estudisc/pull/8",
+  "codeMergeCommit": "7cdc7f69ef62b11abab67a5077ccd248b3700eb5",
+  "codeMergedAt": "2026-10-07T23:42:31Z",
+  "codeCi": "https://github.com/theusinshow/estudisc/actions/runs/37703268455",
+  "requiredChecks": {
+    "lint": "success",
+    "typecheck": "success",
+    "unit": "success",
+    "build": "success",
+    "integration": "success",
+    "content-qa": "success",
+    "pack-validation": "success",
+    "critical-e2e": "success"
+  },
+  "deployment": {
+    "id": "dpl_H9Dz9aYmTJd29VsJZUAuKsQtLSke",
+    "url": "https://estudisc-qytuozstc-theusinshows-projects.vercel.app",
+    "alias": "https://vecta-three.vercel.app",
+    "state": "READY",
+    "buildCommit": "7cdc7f6",
+    "buildCompletedAt": "2026-10-07T23:43:01.890Z"
+  },
+  "actualProductionActivation": true,
+  "publicationMode": "admin_direct",
+  "actualActorRecorded": true,
+  "independentQaRecorded": false,
+  "lessons": [
+    {
+      "candidate": {
+        "lessonId": "MAT-04",
+        "baseVersion": 2,
+        "newVersion": 3,
+        "recipeFile": "tools/estudisc-content-studio/recipes/decimal-scientific.v1.json",
+        "sourceLessonHash": "0dbc98639b204e9850d66fc007545e5dd5dd41904f28bdb25652232dce03db07",
+        "packetHash": "ac04250a1f1de551ae1fd75dbf69e01eb94f8142b320a2fde8b306c1747cfe0e",
+        "originalBlocks": 15,
+        "addedBlocks": 2,
+        "retainedActivities": 15,
+        "retainedQuestions": 10,
+        "initialOutputs": [
+          "Produto: 0,8",
+          "Número: 360.000"
+        ]
+      },
+      "preview": {
+        "data": {
+          "contentHash": "ac04250a1f1de551ae1fd75dbf69e01eb94f8142b320a2fde8b306c1747cfe0e",
+          "lessonId": "MAT-04",
+          "lessonVersion": 3,
+          "operation": "import",
+          "packId": "estudisc.lesson-version.19c014ba61d4b12c5f32ea56.v3",
+          "status": "ready",
+          "summary": {
+            "activityCount": 15,
+            "conceptCount": 5,
+            "lessonCount": 1,
+            "moduleCount": 1,
+            "trackStableId": "ifsc-2027-mathematics",
+            "trackTitle": "Decimais e notação científica · versão 3"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 200
+      },
+      "imported": {
+        "data": {
+          "lessonId": "MAT-04",
+          "lessonVersion": 3,
+          "packId": "estudisc.lesson-version.19c014ba61d4b12c5f32ea56.v3",
+          "status": "imported",
+          "summary": {
+            "importedActivities": 15,
+            "importedLessons": 1,
+            "trackStableId": "ifsc-2027-mathematics"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 201
+      }
+    },
+    {
+      "candidate": {
+        "lessonId": "MAT-11",
+        "baseVersion": 2,
+        "newVersion": 3,
+        "recipeFile": "tools/estudisc-content-studio/recipes/algebraic-price.v1.json",
+        "sourceLessonHash": "6e79156dafbf3159d7e7e66e1d131462ef0e9d9602d8ab8b0da2bc7fc7c1598f",
+        "packetHash": "c4a150152aae7e99fabe782f5340147fcf82b9af0206510418f8905ed42e5235",
+        "originalBlocks": 13,
+        "addedBlocks": 1,
+        "retainedActivities": 12,
+        "retainedQuestions": 12,
+        "initialOutputs": [
+          "Preço total: 29 reais"
+        ]
+      },
+      "preview": {
+        "data": {
+          "contentHash": "c4a150152aae7e99fabe782f5340147fcf82b9af0206510418f8905ed42e5235",
+          "lessonId": "MAT-11",
+          "lessonVersion": 3,
+          "operation": "import",
+          "packId": "estudisc.lesson-version.9438ac11ccbe71a04ce87ac9.v3",
+          "status": "ready",
+          "summary": {
+            "activityCount": 12,
+            "conceptCount": 6,
+            "lessonCount": 1,
+            "moduleCount": 1,
+            "trackStableId": "ifsc-2027-mathematics",
+            "trackTitle": "Expressões algébricas e monômios · versão 3"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 200
+      },
+      "imported": {
+        "data": {
+          "lessonId": "MAT-11",
+          "lessonVersion": 3,
+          "packId": "estudisc.lesson-version.9438ac11ccbe71a04ce87ac9.v3",
+          "status": "imported",
+          "summary": {
+            "importedActivities": 12,
+            "importedLessons": 1,
+            "trackStableId": "ifsc-2027-mathematics"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 201
+      }
+    },
+    {
+      "candidate": {
+        "lessonId": "MAT-13",
+        "baseVersion": 2,
+        "newVersion": 3,
+        "recipeFile": "tools/estudisc-content-studio/recipes/equation-substitution.v1.json",
+        "sourceLessonHash": "330c50c393e7eb6bd63106d1928e6dc74107ee6563030d3d3af49fba04787c60",
+        "packetHash": "37416d6a04b8d4b247a86af90755cebb8fd19ffffc4eacc0b141b05a6bece016",
+        "originalBlocks": 11,
+        "addedBlocks": 1,
+        "retainedActivities": 10,
+        "retainedQuestions": 10,
+        "initialOutputs": [
+          "Membro esquerdo: 39"
+        ]
+      },
+      "preview": {
+        "data": {
+          "contentHash": "37416d6a04b8d4b247a86af90755cebb8fd19ffffc4eacc0b141b05a6bece016",
+          "lessonId": "MAT-13",
+          "lessonVersion": 3,
+          "operation": "import",
+          "packId": "estudisc.lesson-version.e2727cd17de2d7e6ca8ab223.v3",
+          "status": "ready",
+          "summary": {
+            "activityCount": 10,
+            "conceptCount": 5,
+            "lessonCount": 1,
+            "moduleCount": 1,
+            "trackStableId": "ifsc-2027-mathematics",
+            "trackTitle": "Equações de primeiro grau · versão 3"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 200
+      },
+      "imported": {
+        "data": {
+          "lessonId": "MAT-13",
+          "lessonVersion": 3,
+          "packId": "estudisc.lesson-version.e2727cd17de2d7e6ca8ab223.v3",
+          "status": "imported",
+          "summary": {
+            "importedActivities": 10,
+            "importedLessons": 1,
+            "trackStableId": "ifsc-2027-mathematics"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 201
+      }
+    },
+    {
+      "candidate": {
+        "lessonId": "MAT-16",
+        "baseVersion": 2,
+        "newVersion": 3,
+        "recipeFile": "tools/estudisc-content-studio/recipes/measures-area.v1.json",
+        "sourceLessonHash": "fd2d1de2a2635b8e4cf9af347d08c3cebd4d8502780ff383ef4b5b222e340d42",
+        "packetHash": "c14132989f6b1481a1bd0e8034b999d0599b4b336d18e691b0d6aebe764a6418",
+        "originalBlocks": 24,
+        "addedBlocks": 3,
+        "retainedActivities": 29,
+        "retainedQuestions": 29,
+        "initialOutputs": [
+          "Área convertida: 3.000 cm²",
+          "Capacidade: 4.000 mL",
+          "Área: 28 cm²"
+        ]
+      },
+      "preview": {
+        "data": {
+          "contentHash": "c14132989f6b1481a1bd0e8034b999d0599b4b336d18e691b0d6aebe764a6418",
+          "lessonId": "MAT-16",
+          "lessonVersion": 3,
+          "operation": "import",
+          "packId": "estudisc.lesson-version.8c74a7a359870a8285a03038.v3",
+          "status": "ready",
+          "summary": {
+            "activityCount": 29,
+            "conceptCount": 11,
+            "lessonCount": 1,
+            "moduleCount": 1,
+            "trackStableId": "ifsc-2027-mathematics",
+            "trackTitle": "Unidades, perímetro e área · versão 3"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 200
+      },
+      "imported": {
+        "data": {
+          "lessonId": "MAT-16",
+          "lessonVersion": 3,
+          "packId": "estudisc.lesson-version.8c74a7a359870a8285a03038.v3",
+          "status": "imported",
+          "summary": {
+            "importedActivities": 29,
+            "importedLessons": 1,
+            "trackStableId": "ifsc-2027-mathematics"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 201
+      }
+    },
+    {
+      "candidate": {
+        "lessonId": "MAT-17",
+        "baseVersion": 2,
+        "newVersion": 3,
+        "recipeFile": "tools/estudisc-content-studio/recipes/prism-capacity.v1.json",
+        "sourceLessonHash": "d01e23d1098966347a8fed9897232dc0afcde154ca7116aa86b61b82635409e5",
+        "packetHash": "39572e11b2cc55d9c055a1ff6ce79df20d157516a141dae812130da03573756a",
+        "originalBlocks": 20,
+        "addedBlocks": 2,
+        "retainedActivities": 21,
+        "retainedQuestions": 14,
+        "initialOutputs": [
+          "Volume: 288 cm³",
+          "Capacidade: 2.500 L"
+        ]
+      },
+      "preview": {
+        "data": {
+          "contentHash": "39572e11b2cc55d9c055a1ff6ce79df20d157516a141dae812130da03573756a",
+          "lessonId": "MAT-17",
+          "lessonVersion": 3,
+          "operation": "import",
+          "packId": "estudisc.lesson-version.95e63e1a8140968efb97b7d3.v3",
+          "status": "ready",
+          "summary": {
+            "activityCount": 21,
+            "conceptCount": 7,
+            "lessonCount": 1,
+            "moduleCount": 1,
+            "trackStableId": "ifsc-2027-mathematics",
+            "trackTitle": "Volumes e relações no triângulo retângulo · versão 3"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 200
+      },
+      "imported": {
+        "data": {
+          "lessonId": "MAT-17",
+          "lessonVersion": 3,
+          "packId": "estudisc.lesson-version.95e63e1a8140968efb97b7d3.v3",
+          "status": "imported",
+          "summary": {
+            "importedActivities": 21,
+            "importedLessons": 1,
+            "trackStableId": "ifsc-2027-mathematics"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 201
+      }
+    },
+    {
+      "candidate": {
+        "lessonId": "MAT-18",
+        "baseVersion": 2,
+        "newVersion": 3,
+        "recipeFile": "tools/estudisc-content-studio/recipes/multiplicative-count.v1.json",
+        "sourceLessonHash": "2e99cf64a6345af846b82e2c486b3b3190803046f4176395217082f1c2a7512c",
+        "packetHash": "304d0a26a35179c44e32d6460c9aab43cc3d1b51b68e41108dd8251f5ce90a8a",
+        "originalBlocks": 18,
+        "addedBlocks": 1,
+        "retainedActivities": 20,
+        "retainedQuestions": 20,
+        "initialOutputs": [
+          "Combinações: 6"
+        ]
+      },
+      "preview": {
+        "data": {
+          "contentHash": "304d0a26a35179c44e32d6460c9aab43cc3d1b51b68e41108dd8251f5ce90a8a",
+          "lessonId": "MAT-18",
+          "lessonVersion": 3,
+          "operation": "import",
+          "packId": "estudisc.lesson-version.03fb4e4cc0d3adb662362756.v3",
+          "status": "ready",
+          "summary": {
+            "activityCount": 20,
+            "conceptCount": 7,
+            "lessonCount": 1,
+            "moduleCount": 1,
+            "trackStableId": "ifsc-2027-mathematics",
+            "trackTitle": "Tabelas, gráficos, probabilidade e contagem · versão 3"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 200
+      },
+      "imported": {
+        "data": {
+          "lessonId": "MAT-18",
+          "lessonVersion": 3,
+          "packId": "estudisc.lesson-version.03fb4e4cc0d3adb662362756.v3",
+          "status": "imported",
+          "summary": {
+            "importedActivities": 20,
+            "importedLessons": 1,
+            "trackStableId": "ifsc-2027-mathematics"
+          },
+          "trackId": "ifsc-2027-mathematics",
+          "version": 1
+        },
+        "httpStatus": 201
+      }
+    }
+  ],
+  "publication": {
+    "data": {
+      "lessons": 6,
+      "newlyPublished": 6,
+      "published": true,
+      "releases": 101
+    },
+    "httpStatus": 200
+  },
+  "before": {
+    "inspectedAt": "2026-10-07T23:37:55.280Z",
+    "lessons": [
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-04?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Decimais e notação científica"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-04",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Decimais e notação científica"
+          }
+        ],
+        "lessonId": "MAT-04",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-04 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 10,
+            "questionTextHash": "e158a02b7f8abd31eb841eefe233ebe3454697142b8134a94cb130809fd68a54",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 404,
+            "independentQaNotProven": false,
+            "questionCount": 0,
+            "questionTextHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-11?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Expressões algébricas e monômios"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-11",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Expressões algébricas e monômios"
+          }
+        ],
+        "lessonId": "MAT-11",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-11 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 12,
+            "questionTextHash": "cd37182259a18052b98d999085a6da57e2bfc23fc4fd69331aa7ff08187f5f99",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 404,
+            "independentQaNotProven": false,
+            "questionCount": 0,
+            "questionTextHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-13?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Equações de primeiro grau"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-13",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Equações de primeiro grau"
+          }
+        ],
+        "lessonId": "MAT-13",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-13 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 10,
+            "questionTextHash": "000e9652e0b2aa0af57db438bba0025bba878abffdcfb8106dc9fb75a4936be1",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 404,
+            "independentQaNotProven": false,
+            "questionCount": 0,
+            "questionTextHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-16?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Unidades, perímetro e área"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-16",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Unidades, perímetro e área"
+          }
+        ],
+        "lessonId": "MAT-16",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-16 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 29,
+            "questionTextHash": "0883c4e8b7237fe89cdcf921195afa30303eb2f0b7aee8a089300542adcefe6f",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 404,
+            "independentQaNotProven": false,
+            "questionCount": 0,
+            "questionTextHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-17?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Volumes e relações no triângulo retângulo"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-17",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Volumes e relações no triângulo retângulo"
+          }
+        ],
+        "lessonId": "MAT-17",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-17 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 14,
+            "questionTextHash": "56b8d5ec21a7fc56f21848821ea1e4e84406ec38491e786c3e4cd635d02a87dd",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 404,
+            "independentQaNotProven": false,
+            "questionCount": 0,
+            "questionTextHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-18?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Tabelas, gráficos, probabilidade e contagem"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-18",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Tabelas, gráficos, probabilidade e contagem"
+          }
+        ],
+        "lessonId": "MAT-18",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-18 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 20,
+            "questionTextHash": "8a2232aeeebf1e44e248ad4b99f0575eb871b5cde12ec85e6b93a5d43cc5c00c",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 404,
+            "independentQaNotProven": false,
+            "questionCount": 0,
+            "questionTextHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "version": 3
+          }
+        ]
+      }
+    ],
+    "origin": "https://vecta-three.vercel.app",
+    "track": {
+      "httpStatus": 200,
+      "totalLessonLinks": 20,
+      "uniqueLessons": 19
+    }
+  },
+  "after": {
+    "inspectedAt": "2026-10-07T23:46:58.298Z",
+    "lessons": [
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-04?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Decimais e notação científica"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 2,
+            "outputs": [
+              "Produto: 0,8",
+              "Número: 360.000"
+            ],
+            "path": "/lessons/MAT-04",
+            "sliders": 0,
+            "textInputs": 2,
+            "title": "Decimais e notação científica"
+          }
+        ],
+        "lessonId": "MAT-04",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-04 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 10,
+            "questionTextHash": "e158a02b7f8abd31eb841eefe233ebe3454697142b8134a94cb130809fd68a54",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": true,
+            "httpStatus": 200,
+            "independentQaNotProven": true,
+            "meta": "MAT-04 · versão 3 · Publicada",
+            "publicationModeLabel": "Publicação direta por ADMIN",
+            "questionCount": 10,
+            "questionTextHash": "e158a02b7f8abd31eb841eefe233ebe3454697142b8134a94cb130809fd68a54",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-11?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Expressões algébricas e monômios"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 1,
+            "outputs": [
+              "Preço total: 29 reais"
+            ],
+            "path": "/lessons/MAT-11",
+            "sliders": 0,
+            "textInputs": 1,
+            "title": "Expressões algébricas e monômios"
+          }
+        ],
+        "lessonId": "MAT-11",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-11 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 12,
+            "questionTextHash": "cd37182259a18052b98d999085a6da57e2bfc23fc4fd69331aa7ff08187f5f99",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": true,
+            "httpStatus": 200,
+            "independentQaNotProven": true,
+            "meta": "MAT-11 · versão 3 · Publicada",
+            "publicationModeLabel": "Publicação direta por ADMIN",
+            "questionCount": 12,
+            "questionTextHash": "cd37182259a18052b98d999085a6da57e2bfc23fc4fd69331aa7ff08187f5f99",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-13?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Equações de primeiro grau"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 1,
+            "outputs": [
+              "Membro esquerdo: 39"
+            ],
+            "path": "/lessons/MAT-13",
+            "sliders": 0,
+            "textInputs": 1,
+            "title": "Equações de primeiro grau"
+          }
+        ],
+        "lessonId": "MAT-13",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-13 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 10,
+            "questionTextHash": "000e9652e0b2aa0af57db438bba0025bba878abffdcfb8106dc9fb75a4936be1",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": true,
+            "httpStatus": 200,
+            "independentQaNotProven": true,
+            "meta": "MAT-13 · versão 3 · Publicada",
+            "publicationModeLabel": "Publicação direta por ADMIN",
+            "questionCount": 10,
+            "questionTextHash": "000e9652e0b2aa0af57db438bba0025bba878abffdcfb8106dc9fb75a4936be1",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-16?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Unidades, perímetro e área"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 3,
+            "outputs": [
+              "Área convertida: 3.000 cm²",
+              "Capacidade: 4.000 mL",
+              "Área: 28 cm²"
+            ],
+            "path": "/lessons/MAT-16",
+            "sliders": 0,
+            "textInputs": 3,
+            "title": "Unidades, perímetro e área"
+          }
+        ],
+        "lessonId": "MAT-16",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-16 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 29,
+            "questionTextHash": "0883c4e8b7237fe89cdcf921195afa30303eb2f0b7aee8a089300542adcefe6f",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": true,
+            "httpStatus": 200,
+            "independentQaNotProven": true,
+            "meta": "MAT-16 · versão 3 · Publicada",
+            "publicationModeLabel": "Publicação direta por ADMIN",
+            "questionCount": 29,
+            "questionTextHash": "0883c4e8b7237fe89cdcf921195afa30303eb2f0b7aee8a089300542adcefe6f",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-17?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Volumes e relações no triângulo retângulo"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 2,
+            "outputs": [
+              "Volume: 288 cm³",
+              "Capacidade: 2.500 L"
+            ],
+            "path": "/lessons/MAT-17",
+            "sliders": 0,
+            "textInputs": 2,
+            "title": "Volumes e relações no triângulo retângulo"
+          }
+        ],
+        "lessonId": "MAT-17",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-17 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 14,
+            "questionTextHash": "56b8d5ec21a7fc56f21848821ea1e4e84406ec38491e786c3e4cd635d02a87dd",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": true,
+            "httpStatus": 200,
+            "independentQaNotProven": true,
+            "meta": "MAT-17 · versão 3 · Publicada",
+            "publicationModeLabel": "Publicação direta por ADMIN",
+            "questionCount": 14,
+            "questionTextHash": "56b8d5ec21a7fc56f21848821ea1e4e84406ec38491e786c3e4cd635d02a87dd",
+            "version": 3
+          }
+        ]
+      },
+      {
+        "learner": [
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 0,
+            "outputs": [],
+            "path": "/lessons/MAT-18?version=2",
+            "sliders": 0,
+            "textInputs": 0,
+            "title": "Tabelas, gráficos, probabilidade e contagem"
+          },
+          {
+            "draftBanner": false,
+            "httpStatus": 200,
+            "invalidBlocks": 0,
+            "linearExplorers": 1,
+            "outputs": [
+              "Combinações: 6"
+            ],
+            "path": "/lessons/MAT-18",
+            "sliders": 0,
+            "textInputs": 1,
+            "title": "Tabelas, gráficos, probabilidade e contagem"
+          }
+        ],
+        "lessonId": "MAT-18",
+        "pages": [
+          {
+            "actualActorRecorded": false,
+            "httpStatus": 200,
+            "independentQaNotProven": false,
+            "meta": "MAT-18 · versão 2 · Publicada",
+            "publicationModeLabel": "Revisão editorial",
+            "questionCount": 20,
+            "questionTextHash": "8a2232aeeebf1e44e248ad4b99f0575eb871b5cde12ec85e6b93a5d43cc5c00c",
+            "version": 2
+          },
+          {
+            "actualActorRecorded": true,
+            "httpStatus": 200,
+            "independentQaNotProven": true,
+            "meta": "MAT-18 · versão 3 · Publicada",
+            "publicationModeLabel": "Publicação direta por ADMIN",
+            "questionCount": 20,
+            "questionTextHash": "8a2232aeeebf1e44e248ad4b99f0575eb871b5cde12ec85e6b93a5d43cc5c00c",
+            "version": 3
+          }
+        ]
+      }
+    ],
+    "origin": "https://vecta-three.vercel.app",
+    "track": {
+      "httpStatus": 200,
+      "totalLessonLinks": 20,
+      "uniqueLessons": 19
+    }
+  },
+  "liveInput": {
+    "method": "Actual DOM input events; no official submission",
+    "outputs": [
+      "Informe um número inteiro entre 1 e 20.",
+      "Preço total: 37 reais",
+      "Preço total: 29 reais"
+    ],
+    "restoredValue": "3"
+  },
+  "engineeringEvidence": "docs/estudisc/REPRESENTATIVE-ENRICHMENT-EVIDENCE.json",
+  "preservation": {
+    "originalBlocks": 101,
+    "originalActivities": 107,
+    "existingQuestionReferences": 95,
+    "oldVersionsAccessible": true,
+    "uniqueMathLessons": 19
+  },
+  "productionMigration": false,
+  "newFeatureFlags": false,
+  "originalQuestionVersionsRewritten": false,
+  "rawCredentialsExtracted": false,
+  "learnerAnswersSubmitted": false,
+  "caveats": [
+    "Source rights/official mapping/planner readiness remain uncertified by publication",
+    "Actual DOM input event recovery passed in production; native keyboard bridge remains unavailable, local keyboard/mobile E2E passed",
+    "ADMIN draft/current checks are not Student-role isolation tests; existing tests cover role behavior",
+    "Blueprint metadata remains UNREVIEWED, no independent QA fabricated; lesson reads can record exposure"
+  ],
+  "nextAction": "Continue approved review/mistake, optional AI, graph/exam/ADMIN and remaining rollout/final gates; do not repeat published version imports"
+}

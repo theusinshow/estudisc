@@ -2,6 +2,8 @@ import type { CompletedReview, DueReview } from "@/db/repositories/review-reposi
 import type { MistakeRecord } from "@/db/repositories/mistake-repository";
 import { calculateNextReviewAt, explainDueReview, REVIEW_POLICY_VERSION, type ReviewQuality } from "@/features/review/review-policy";
 import { getMemoryStore } from './store';
+import { randomUUID } from "node:crypto";
+import { mistakeReflectionPayloadSchema, mistakeReflectionSchema, type MistakeReflection, type MistakeReflectionInput } from "@/features/mistakes/reflection-contracts";
 
 
 export class MemoryReviewRepository {
@@ -124,6 +126,16 @@ export class MemoryReviewRepository {
 
 export class MemoryMistakeRepository {
   constructor(private readonly store = getMemoryStore()) {}
+
+  async recordReflection(ownerId:string,input:MistakeReflectionInput){
+    const data=mistakeReflectionSchema.parse(input);
+    if(!this.store.mistakes.some(m=>m.ownerId===ownerId&&m.id===data.mistakeId))throw new Error("Mistake unavailable");
+    const payload={...data,basis:"student_report" as const,canonicalEvidence:false as const};
+    const existing=this.store.events.find(e=>e.ownerId===ownerId&&e.type==="mistake_reflection"&&(e.payload as Record<string,unknown>).mutationId===data.mutationId);
+    if(existing){if(JSON.stringify(mistakeReflectionPayloadSchema.parse(existing.payload))!==JSON.stringify(payload))throw new Error("Reflection conflict");return existing.id;}
+    const id=randomUUID();this.store.events.push({id,ownerId,type:"mistake_reflection",entityType:"mistake",entityId:data.mistakeId,payload,occurredAt:new Date()});return id;
+  }
+  async listReflections(ownerId:string):Promise<MistakeReflection[]>{return this.store.events.filter(e=>e.ownerId===ownerId&&e.type==="mistake_reflection").slice().reverse().flatMap(e=>{const parsed=mistakeReflectionPayloadSchema.safeParse(e.payload);return parsed.success?[{id:e.id,mistakeId:parsed.data.mistakeId,category:parsed.data.category,note:parsed.data.note,createdAt:e.occurredAt}]:[];});}
 
   async listMistakes(ownerId: string): Promise<MistakeRecord[]> {
     return this.store.mistakes

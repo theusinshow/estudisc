@@ -9,12 +9,14 @@ import { StudySessionRepository } from "@/db/repositories/study-session-reposito
 import { MemoryStudySessionRepository } from "@/db/repositories/memory-study-session-repository";
 import { QuestionStudyRepository } from "@/db/repositories/question-study-repository";
 import { MemoryQuestionStudyRepository } from "@/db/repositories/memory-question-study-repository";
-import { lessons, questionVersions } from "@/db/schema";
+import { lessons, questionVersions, concepts, owners, reviewSchedules, mistakes, conceptEvidence } from "@/db/schema";
 import { sessionItemsSchema } from "@/features/study-sessions/contracts";
 import { questionSchema } from "@/features/questions/contracts";
 import { AssessmentRepository } from "@/db/repositories/assessment-repository";
 import { MemoryAssessmentRepository } from "@/db/repositories/memory-assessment-repository";
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
+import { MistakeRepository } from "@/db/repositories/mistake-repository";
+import { MemoryMistakeRepository } from "@/db/repositories/memory/reviews";
 
 const now = new Date("2026-10-06T12:00:00Z");
 function fixture(version = 1) {
@@ -24,7 +26,7 @@ function fixture(version = 1) {
   for (const moduleRecord of result.track.modules) for (const lesson of moduleRecord.lessons) { lesson.status = "published"; lesson.version = version; if (version > 1) lesson.title += " — nova edição"; }
   return result;
 }
-async function setup(kind: "memory" | "sql", seed = true) {
+async function setup(kind: "memory" | "sql", seed = true, initial = fixture()) {
   const database = kind === "sql" ? await createMigratedPgliteTestDatabase() : undefined;
   const store = structuredClone(getMemoryStore());
   store.packImports = []; store.studySessions = []; store.studyPlans = []; store.studyPlanPreviews = []; store.attempts = []; store.conceptEvidence = []; store.questionAssistance = []; store.questionExposures = []; store.assessmentInstances = []; store.reviewSchedules = []; store.mistakes = [];
@@ -40,13 +42,85 @@ async function setup(kind: "memory" | "sql", seed = true) {
       }
     }
   }
-  if (seed) await imported();
+  if (seed) await imported(1,initial);
   return { database, store, imported,
     sessions: database ? new StudySessionRepository(database.db, false, true) : new MemoryStudySessionRepository(store, false, true),
     questions: database ? new QuestionStudyRepository(database.db) : new MemoryQuestionStudyRepository(store) };
 }
 
 describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
+  it("uses actual owned due Concepts for targeted retrieval without changing schedule/evidence",async()=>{
+    const ctx=await setup(kind);
+    try{
+      const conceptId=source.questions[0].conceptIds[0];
+      if(ctx.database){
+        await ctx.database.db.insert(owners).values({id:"learner",displayName:"Test learner"}).onConflictDoNothing();
+        const [concept]=await ctx.database.db.select().from(concepts).where(eq(concepts.stableId,conceptId));
+        await ctx.database.db.insert(reviewSchedules).values({ownerId:"learner",conceptId:concept.id,currentMasteryState:"learning",nextReviewAt:now,policyVersion:"review.v2",reviewCount:0,recentQuality:0});
+      }else ctx.store.reviewSchedules.push({ownerId:"learner",conceptStableId:conceptId,currentMasteryState:"learning",lastReviewedAt:null,nextReviewAt:now,reviewCount:0,recentQuality:0,policyVersion:"review.v2",updatedAt:now});
+      const planner=ctx.database?new StudySessionRepository(ctx.database.db,false,false):new MemoryStudySessionRepository(ctx.store,false,false);
+      const result=await planner.plan("learner",10,now,{kind:"review",conceptId});
+      expect(result).not.toBeNull();const items=sessionItemsSchema.parse(result!.items);
+      expect(items.every(item=>item.intent==="review"&&item.delivery==="questions")).toBe(true);
+      expect(items.flatMap(item=>item.questions).every(ref=>source.questions.find(q=>q.id===ref.id)?.conceptIds.includes(conceptId))).toBe(true);
+      await expect(planner.plan("other",10,now,{kind:"review",conceptId})).rejects.toMatchObject({code:"review_not_due"});
+      if(ctx.database){expect(await ctx.database.db.select().from(conceptEvidence)).toHaveLength(0);expect((await ctx.database.db.select().from(reviewSchedules))[0].reviewCount).toBe(0);}
+      else {expect(ctx.store.conceptEvidence).toHaveLength(0);expect(ctx.store.reviewSchedules[0].reviewCount).toBe(0);}
+      const unlockAt = "2026-10-07T12:00:00Z";
+      if (ctx.database) for (const row of await ctx.database.db.select().from(questionVersions)) {
+        const question = questionSchema.parse(row.content);
+        question.exposurePolicy.reservedForAssessment = true; question.exposurePolicy.unlockAt = unlockAt;
+        await ctx.database.db.update(questionVersions).set({ content: question }).where(eq(questionVersions.id, row.id));
+      }
+      else for (const entry of ctx.store.packImports) if (entry.manifest?.schema === "caderno.track.v2") for (const question of entry.manifest.questions) {
+        question.exposurePolicy.reservedForAssessment = true; question.exposurePolicy.unlockAt = unlockAt;
+      }
+      expect(await planner.plan("learner", 10, now, { kind: "review", conceptId })).toBeNull();
+      expect((await planner.get("learner", result!.id))?.status).toBe("PLANNED");
+      expect(await planner.plan("learner", 10, new Date(unlockAt), { kind: "review", conceptId })).not.toBeNull();
+    }finally{await ctx.database?.close();}
+  });
+  it("validates a recorded mistake before preserving ACTIVE membership and excludes its Question on retry",async()=>{
+    const initial=fixture(), originals=initial.questions.slice();
+    initial.questions.push(...originals.map(q=>({...structuredClone(q),id:`${q.id}-alternate`})));
+    for(const moduleRecord of initial.track.modules)for(const lesson of moduleRecord.lessons){
+      const originalActivities=lesson.activities.slice();
+      lesson.activities.push(...originalActivities.filter(a=>a.type==="question"&&a.questionId).map(a=>({...structuredClone(a),id:`${a.id}-alternate`,questionId:`${a.questionId}-alternate`,config:{...a.config,questionId:`${a.questionId}-alternate`}})));
+    }
+    const ctx=await setup(kind,true,initial);
+    try{
+      const original=(await ctx.sessions.plan("learner",10,now))!;await ctx.sessions.transition("learner",original.id,"start",now);
+      const item=sessionItemsSchema.parse(original.items)[0],activity=item.activitySnapshots![0];
+      const view=await ctx.questions.view("learner",activity.stableId,activity.config.questionId,activity.config.questionVersion,original.id);
+      const canonical=initial.questions.find(q=>q.id===activity.config.questionId)!;
+      const response=canonical.answer.kind==="numeric"?String((canonical.answer.value??0)+999):canonical.answer.kind==="multiple_choice"?canonical.choices!.find(c=>!c.correct)!.id:"invalid-response";
+      expect(await ctx.questions.interact("learner",activity.stableId,{action:"submit",questionId:activity.config.questionId,questionVersion:activity.config.questionVersion,sessionId:original.id,submissionKey:crypto.randomUUID(),response})).toMatchObject({correct:false});
+      expect(view.question.id).toBe(canonical.id);
+      const record=ctx.database?(await ctx.database.db.select().from(mistakes))[0]:ctx.store.mistakes[0];
+      const planner=ctx.database?new StudySessionRepository(ctx.database.db,false,false):new MemoryStudySessionRepository(ctx.store,false,false);
+      const retained=await planner.plan("learner",10,now,{kind:"remediation",mistakeId:record.id});expect(retained!.id).toBe(original.id);expect(retained!.items).toEqual(original.items);
+      await expect(planner.plan("other",10,now,{kind:"remediation",mistakeId:record.id})).rejects.toMatchObject({code:"target_unavailable"});
+      await ctx.sessions.transition("learner",original.id,"abandon",now);
+      const retry=await planner.plan("learner",10,now,{kind:"remediation",mistakeId:record.id});expect(retry).not.toBeNull();
+      const retryItems=sessionItemsSchema.parse(retry!.items);expect(retryItems.every(i=>i.intent==="remediation")).toBe(true);expect(retryItems.flatMap(i=>i.questions).every(q=>q.id!==canonical.id)).toBe(true);
+      const observations=ctx.database?new MistakeRepository(ctx.database.db):new MemoryMistakeRepository(ctx.store);
+      const reflection={mistakeId:record.id,mutationId:crypto.randomUUID(),category:"calculation_error" as const,note:"Percebi um erro na conta."};
+      const beforeEvidence=ctx.database?(await ctx.database.db.select().from(conceptEvidence)).length:ctx.store.conceptEvidence.length;
+      const reflectionId=await observations.recordReflection("learner",reflection);
+      expect(await observations.recordReflection("learner",reflection)).toBe(reflectionId);
+      expect(await observations.listReflections("learner")).toHaveLength(1);
+      expect(await observations.listReflections("other")).toHaveLength(0);
+      await expect(observations.recordReflection("other",reflection)).rejects.toThrow("Mistake unavailable");
+      await expect(observations.recordReflection("learner",{...reflection,note:"Outro texto"})).rejects.toThrow("Reflection conflict");
+      expect(ctx.database?(await ctx.database.db.select().from(conceptEvidence)).length:ctx.store.conceptEvidence.length).toBe(beforeEvidence);
+      if (ctx.database) for (const row of await ctx.database.db.select().from(questionVersions)) {
+        if ((row.content as { id: string }).id !== canonical.id) await ctx.database.db.update(questionVersions).set({ status: "retired" }).where(eq(questionVersions.id, row.id));
+      }
+      else for (const entry of ctx.store.packImports) if (entry.manifest?.schema === "caderno.track.v2") for (const question of entry.manifest.questions) if (question.id !== canonical.id) question.status = "retired";
+      expect(await planner.plan("learner", 10, now, { kind: "remediation", mistakeId: record.id })).toBeNull();
+      expect((await planner.get("learner", retry!.id))?.status).toBe("PLANNED");
+    }finally{await ctx.database?.close();}
+  });
   it("blocks new training composition while an owned EXAM is active", async () => {
     const ctx = await setup(kind, false);
     try {
@@ -62,6 +136,8 @@ describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
       const template = await exams.importTemplate({ id: "adaptive-blocking-exam", version: 1, title: "Simulado de fixture", kind: "FULL_SIMULATION", trackId: input.track.id, durationMinutes: 60, status: "published", items: examQuestions.map(question => ({ id: question.id, version: question.version })) });
       await exams.start("learner", template.id, crypto.randomUUID(), now);
       expect(await ctx.sessions.plan("learner", 20, now)).toBeNull();
+      await expect(ctx.sessions.plan("learner", 10, now, { kind: "review" })).rejects.toMatchObject({ code: "exam_active" });
+      await expect(ctx.sessions.plan("learner", 10, now, { kind: "remediation", mistakeId: crypto.randomUUID() })).rejects.toMatchObject({ code: "exam_active" });
       expect((await ctx.sessions.get("learner", prepared.id))?.status).toBe("PLANNED");
     } finally { await ctx.database?.close(); }
   });
@@ -167,6 +243,7 @@ describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
       if (ctx.database) await ctx.database.db.update(questionVersions).set({ status: "retired" });
       else for (const entry of ctx.store.packImports) if (entry.manifest?.schema === "caderno.track.v2") for (const question of entry.manifest.questions) question.status = "retired";
       expect(await ctx.sessions.plan("learner", 10, now)).toBeNull();
+      expect(await ctx.sessions.plan("learner", 10, now, { kind: "review" })).toBeNull();
       expect((await ctx.sessions.get("learner", prepared.id))?.status).toBe("PLANNED");
       const legacy = ctx.database ? new StudySessionRepository(ctx.database.db) : new MemoryStudySessionRepository(ctx.store);
       await expect(legacy.plan("learner", 10, now)).rejects.toThrow();

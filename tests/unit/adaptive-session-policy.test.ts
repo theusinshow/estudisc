@@ -20,6 +20,15 @@ it("uses question delivery within ten minutes and never clamps a whole lesson es
   expect(adaptiveChoice(lesson({ independentQa: false }), 30)!.item.delivery).toBe("questions");
   expect(adaptiveChoice(lesson({ checkpointIds: ["unavailable"] }), 30)!.item.delivery).toBe("questions");
 });
+it("uses the existing composer for targeted retrieval and excludes original identities across versions",()=>{
+  const input=lesson({due:false,mistake:false,activities:lesson().activities.map(activity=>({...activity,independentSuccess:true}))});
+  const target={kind:"remediation" as const,conceptIds:question.conceptIds,excludedQuestionIds:["q0"],reason:"Outra questão do conceito"};
+  const result=adaptiveChoice(input,10,10,target)!;
+  expect(result.item.intent).toBe("remediation");expect(result.item.delivery).toBe("questions");expect(result.item.questions.map(q=>q.id)).toEqual(["q1","q2"]);
+  expect(result.item.reason).toBe(target.reason);expect(result.item.minutes).toBeLessThanOrEqual(10);
+  expect(adaptiveChoice(input,10,10,{...target,excludedQuestionIds:["q0","q1","q2"]})).toBeNull();
+  expect(adaptiveChoice(input,10,10,{...target,conceptIds:["unrelated"]})).toBeNull();
+});
 it("keeps published-without-QA separate from new-learning readiness and respects prerequisites", () => {
   const practice = adaptiveChoice(lesson({ independentQa: false, objectives: [], levels: [2] }), 20)!;
   expect(practice.item.intent).toBe("practice"); expect(practice.item.caveats?.length).toBeGreaterThan(0);

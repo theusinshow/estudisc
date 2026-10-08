@@ -99,7 +99,7 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .nav-more-panel .nav-link, .nav-more-panel .nav-current { flex-direction: row; justify-content: flex-start; gap: var(--estudisc-spacing-6); min-height: 48px; padding: 0 var(--estudisc-spacing-6); font-size: 0.9375rem; }
 .nav-more-panel .nav-current { background: var(--estudisc-color-signal); }
 .nav-more-panel svg { width: 20px; height: 20px; }
-.app-shell:has(.main-surface textarea:focus, .main-surface input:focus, .activity-panel:focus-within) .sidebar { display: none; }
+.app-shell:has(.main-surface textarea:focus, .main-surface input:focus, .main-surface form:focus-within, .activity-panel:focus-within) .sidebar { display: none; }
 
 @media (min-width: 900px) {
   .app-shell { grid-template-columns: 232px minmax(0, 1fr); grid-template-rows: auto 1fr; grid-template-areas: "top top" "nav main"; }
@@ -261,6 +261,10 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .learning-order { display: grid; gap: var(--estudisc-spacing-6); padding: 0; list-style-position: inside; }
 .learning-order li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--estudisc-spacing-6); margin: 0; padding: var(--estudisc-spacing-6) var(--estudisc-spacing-8); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-paper); }
 .learning-controls { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-6); }
+.targeted-practice-controls, .mistake-reflection-form { display: grid; grid-template-columns: minmax(0, 1fr); align-items: end; }
+.targeted-practice-controls .learning-field { margin-bottom: 0; }
+.mistake-reflection-form textarea { font: inherit; color: var(--estudisc-color-ink); background: var(--estudisc-color-paper); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); }
+@media (min-width: 600px) { .targeted-practice-controls { grid-template-columns: minmax(160px, 1fr) auto; } }
 
 /* Study session */
 .study-session { width: min(100%, 820px); }

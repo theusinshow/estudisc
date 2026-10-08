@@ -6,8 +6,9 @@ import { adaptiveChoice, type AdaptiveActivity } from "@/features/study-sessions
 import { examPhase } from "@/features/study-sessions/planner-policy";
 import { sessionItemsSchema } from "@/features/study-sessions/contracts";
 import { questionReferenceSchema } from "@/features/activities/application/question-reference";
+import type { TargetedSelection } from "@/features/study-sessions/targeted-selection";
 
-export function memoryAdaptiveChoices(store: MemoryStore, ownerId: string, budget: number, limits: Readonly<Record<string, number>> | undefined, now: Date) {
+export function memoryAdaptiveChoices(store: MemoryStore, ownerId: string, budget: number, limits: Readonly<Record<string, number>> | undefined, now: Date, selection?: TargetedSelection) {
   const choices: NonNullable<ReturnType<typeof adaptiveChoice>>[] = [];
   const subjectMinutes: Record<string, number> = Object.create(null);
   for (const session of store.studySessions.filter(row => row.ownerId === ownerId && row.status === "COMPLETED" && row.endedAt && row.endedAt.getTime() >= now.getTime() - 7 * 86400_000)) for (const item of sessionItemsSchema.parse(session.items)) subjectMinutes[item.subjectCode] = (subjectMinutes[item.subjectCode] ?? 0) + item.minutes;
@@ -37,7 +38,7 @@ export function memoryAdaptiveChoices(store: MemoryStore, ownerId: string, budge
       conceptIds: ids, levels: ids.map(id => mastery(id).level), importance: Math.max(1, ...lesson.concepts.map(concept => ({ low: 1, medium: 2, high: 3, critical: 4 }[concept.importance]))), due: due.length > 0,
       dueDays: Math.max(0, ...due.map(review => (now.getTime() - review.nextReviewAt.getTime()) / 86400_000)), mistake: store.mistakes.some(mistake => mistake.ownerId === ownerId && mistake.status === "active" && ids.includes(mistake.conceptStableId)),
       prerequisitesReady: required.every(edge => mastery(edge.prerequisiteConceptId).level >= 2) && lesson.prerequisiteConceptIds.every(id => mastery(id).level >= 2), phase: typeof date === "string" && Number.isFinite(Date.parse(date)) ? examPhase(now, new Date(date)) : "FOUNDATION",
-      objectives: lesson.objectives, sourceIds: lesson.sourceIds, checkpointIds: lesson.exitTicketQuestionIds, independentQa: false, officialMappingVerified: pack.track.metadata.sourceScopeVerified === true && ids.length > 0 && ids.every(id => pack.curriculumRequirements.some(requirement => requirement.status === "validated" && requirement.mappedConceptIds.includes(id))), activities: eligible }, budget, limits ? limits[moduleRecord.subjectCode] ?? 0 : budget);
+      objectives: lesson.objectives, sourceIds: lesson.sourceIds, checkpointIds: lesson.exitTicketQuestionIds, independentQa: false, officialMappingVerified: pack.track.metadata.sourceScopeVerified === true && ids.length > 0 && ids.every(id => pack.curriculumRequirements.some(requirement => requirement.status === "validated" && requirement.mappedConceptIds.includes(id))), activities: eligible }, budget, limits ? limits[moduleRecord.subjectCode] ?? 0 : budget, selection);
     if (choice) choices.push(choice);
   }
   return { choices, subjectMinutes };

@@ -12,22 +12,25 @@ import { StudyPlanRepository } from "./study-plan-repository";
 import { assertRoutineBudget, assertRoutineStart } from "@/features/study-sessions/routine-session-constraints";
 import { sqlAdaptiveChoices } from "./adaptive-session-data";
 import { summarizeSession } from "@/features/study-sessions/session-summary";
+import type { TargetedPracticeRequest } from "@/features/study-sessions/targeted-selection";
+import { sqlTargetedSelection } from "./targeted-session-selection";
 
 type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
 export class SessionStateError extends Error{constructor(){super("Session state or ownership does not permit this action");}}
 export class StudySessionRepository{
   constructor(private readonly db:Database=getDatabase(),private readonly routineEnabled=false,private readonly adaptiveEnabled=false){}
-  async plan(ownerId:string,budgetMinutes:SessionBudget,now=new Date()){
-    const allowedBudgets: readonly number[] = [...LEGACY_SESSION_BUDGETS, ...(this.adaptiveEnabled ? ADAPTIVE_SESSION_BUDGETS : [])];
+  async plan(ownerId:string,budgetMinutes:SessionBudget,now=new Date(),target?:TargetedPracticeRequest){
+    const allowedBudgets: readonly number[] = target ? [10,15] : [...LEGACY_SESSION_BUDGETS, ...(this.adaptiveEnabled ? ADAPTIVE_SESSION_BUDGETS : [])];
     if(!allowedBudgets.includes(budgetMinutes))throw new SessionStateError();
     return this.db.transaction(async tx=>{
       await tx.insert(owners).values({id:ownerId,displayName:"Private learner"}).onConflictDoNothing();
       await tx.select().from(owners).where(eq(owners.id,ownerId)).for("update");
+      const selection=target?await sqlTargetedSelection(tx,ownerId,target,now):undefined;
       const [open]=await tx.select().from(studySessions).where(and(eq(studySessions.ownerId,ownerId),eq(studySessions.status,"ACTIVE")));
       if(open)return open;
       const subjectLimits=this.routineEnabled?assertRoutineBudget((await new StudyPlanRepository(tx).getState(ownerId,now)).week,budgetMinutes):undefined;
-      if(this.adaptiveEnabled){
-        const data=await sqlAdaptiveChoices(tx,ownerId,budgetMinutes,subjectLimits,now);
+      if(this.adaptiveEnabled||selection){
+        const data=await sqlAdaptiveChoices(tx,ownerId,budgetMinutes,subjectLimits,now,selection);
         const plan=planCandidates(data.choices.map(choice=>choice.candidate),budgetMinutes,"FOUNDATION",data.subjectMinutes,subjectLimits,true);
         if(!plan.items.length)return null;
         const items=plan.items.map(candidate=>data.choices.find(choice=>choice.candidate.id===candidate.id)!.item);

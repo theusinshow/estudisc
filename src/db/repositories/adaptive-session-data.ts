@@ -10,10 +10,11 @@ import { adaptiveChoice, type AdaptiveActivity } from "@/features/study-sessions
 import { examPhase } from "@/features/study-sessions/planner-policy";
 import { planningActivityKey } from "@/features/study-sessions/frozen-membership";
 import { sessionItemsSchema } from "@/features/study-sessions/contracts";
+import type { TargetedSelection } from "@/features/study-sessions/targeted-selection";
 
 type Database = PgDatabase<PgQueryResultHKT, typeof schema>;
 
-export async function sqlAdaptiveChoices(db: Database, ownerId: string, budget: number, limits: Readonly<Record<string, number>> | undefined, now: Date) {
+export async function sqlAdaptiveChoices(db: Database, ownerId: string, budget: number, limits: Readonly<Record<string, number>> | undefined, now: Date, selection?: TargetedSelection) {
   const rows = await db.select({ lesson: lessons, subject: modules.subjectCode, trackId: tracks.id, trackStableId: tracks.stableId, packImportId: tracks.packImportId }).from(lessons).innerJoin(modules, eq(modules.id, lessons.moduleId)).innerJoin(tracks, eq(tracks.id, modules.trackId)).where(sql`${lessons.metadata}->>'status' = 'published' AND ${lessons.metadata}->>'qaReleaseId' IS NOT NULL`).orderBy(desc(lessons.contentVersion), desc(tracks.contentVersion), lessons.orderIndex);
   const seen = new Set<string>();
   const candidates = rows.filter(row => { const key = JSON.stringify([row.trackStableId, row.lesson.stableId]); if (seen.has(key)) return false; seen.add(key); return true; });
@@ -55,7 +56,7 @@ export async function sqlAdaptiveChoices(db: Database, ownerId: string, budget: 
       conceptIds, levels: ids.map(id => masteryById.get(id)?.level ?? 0), importance, due: due.length > 0, dueDays: Math.max(0, ...due.map(review => (now.getTime() - review.nextReviewAt.getTime()) / 86400_000)),
       mistake: errors.some(error => ids.includes(error.conceptId)), prerequisitesReady, phase: date && Number.isFinite(Date.parse(date)) ? examPhase(now, new Date(date)) : "FOUNDATION",
       objectives: metadata.objectives ?? [], sourceIds: metadata.sourceIds ?? [], checkpointIds: metadata.exitTicketQuestionIds ?? [], independentQa: publication?.published === true && publication.independentQaRecorded,
-      officialMappingVerified: manifest?.track?.metadata?.sourceScopeVerified === true && ids.length > 0 && ids.every(id => validatedMappings.some(mapping => mapping.trackId === row.trackId && mapping.conceptId === id && manifest.curriculumRequirements?.some(requirement => requirement.id === mapping.requirementId && requirement.status === "validated"))), activities: eligible }, budget, limits ? limits[row.subject ?? ""] ?? 0 : budget);
+      officialMappingVerified: manifest?.track?.metadata?.sourceScopeVerified === true && ids.length > 0 && ids.every(id => validatedMappings.some(mapping => mapping.trackId === row.trackId && mapping.conceptId === id && manifest.curriculumRequirements?.some(requirement => requirement.id === mapping.requirementId && requirement.status === "validated"))), activities: eligible }, budget, limits ? limits[row.subject ?? ""] ?? 0 : budget, selection);
     if (choice) choices.push(choice);
   }
   return { choices, subjectMinutes };
