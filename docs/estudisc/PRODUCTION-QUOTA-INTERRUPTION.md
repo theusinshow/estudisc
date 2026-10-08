@@ -1,5 +1,7 @@
 # Production PostgreSQL quota interruption
 
+Recovery presentation is live: protected PR #18/eight checks/main 56324dd; Vercel production dpl_2Lf4FwqQ5TD91g8d4Ja13uLUk2jN READY, build completed 2026-10-08T19:28:42.161Z, commit/alias verified. Actual CIE-03 page shows the data-unavailable message and retry; raw SQL/private details are absent. This confirms the UI fix, not resolution of the external quota. New content remains unimported/unpublished; free-target evaluation and source account/backup access are still pending prerequisites.
+
 Date: 2026-10-08. Before applying the two source-goal candidates, actual reads of published CIE-03/POR-02 v2 returned HTTP 500. Vercel runtime logs identify PostgreSQL error 53000: `Your account or project has exceeded the quota. Upgrade your plan to increase limits.` The failing operation is an ordinary original lesson SELECT, not a candidate import/publication.
 
 The source-goal reader was accepted by eight required PR checks and deployed (PR #17/main 1b46b9, READY); its two candidates remain local/unpublished. No production source-goal draft import/publication, source/Question rewrite or canonical evidence mutation occurred. Original pre-activation reads failed before those operations. Do not label the data as corrupted or the content as published.
