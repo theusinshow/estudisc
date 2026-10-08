@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-08 — Exact blueprint source binding
+
+- Fix ADMIN blueprint source matching: compare the pipeline's identity/subject/lesson wrapper hash to the actual imported wrapper, preserving the separate raw lesson hash used by immutable targeted imports.
+- Bind exact track/version/lesson/subject and reject stale/foreign hashes; preserve the authoring-context wire response, UNREVIEWED proposal state, missing objectives and publication/approval semantics.
+
 ## 2026-10-08 — Production evolution rollout confirmed
 
 - Release final consumers through protected PR #14/main d6a5669, eight PR/main checks and verified READY production deployments with the existing alias.
