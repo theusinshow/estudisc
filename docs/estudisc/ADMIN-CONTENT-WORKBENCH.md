@@ -1,0 +1,9 @@
+# Source-bound ADMIN content workbench
+
+[ADR 0056](../ADR/0056-source-bound-admin-authoring-consumers.md) extends existing import/review paths at /admin/content-studio, gated by FEATURE_CONTENT_HEALTH. Authenticated ADMIN receives the actual imported lesson definition, source version/hash and immutable Question references. Add Block prepares a draft next version; preview must pass before import. Source fields, blocks, Activities, Concepts and Questions remain unchanged. Existing review/publication pages retain real Editorial Reviewed/Admin Direct records.
+
+Text, note, warning, example, summary, worked-example, concept and code additions use existing renderer schemas; compatible numeric explorers remain supported. Concept payloads must name a source-bound Concept. Media, new Questions/Activities and inline assessments are outside this narrow authoring operation. Old published versions remain accessible. The embedded mobile preview names the actual source or imported next version.
+
+Studio media-pack/blueprint uploads use their existing metadata validators, show source-hash/confidence/review/rights/exposure findings, and never certify independent approval or make protected assets public. All context/metadata endpoints reject STUDENT before accessing source data. SQL publication lookup is bound to the requested lesson version, even after a newer draft exists.
+
+Local checks: source/policy/ADMIN/migrated SQL tests ten PASS; full tests 426 PASS/three optional real-PostgreSQL SKIP; full default serial browser 58 PASS/thirty gated SKIP; flagged actual desktop/mobile workbench loops two PASS; lint/typecheck/build/packs PASS. Five widths and bounded mobile/desktop screenshots inspected. Detector reports one unchanged pre-existing stepper width transition; no finding in the new workbench/page. Protected production release is next. No production content was imported or published during this phase.

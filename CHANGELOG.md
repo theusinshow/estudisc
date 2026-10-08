@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-08 — Source-bound ADMIN content workbench
+
+- Add gated ADMIN source context, Add Block, validated next-version draft import and exact-version mobile preview using the existing immutable import/publication paths.
+- Validate Studio asset/blueprint metadata and display factual source/rights/exposure/content-health caveats; retain Student denial and actual publication audit modes.
+- Admit existing non-assessed text renderer families alongside numeric exploration; bind Concept payloads to source Concepts and look up publication for the requested version.
+- Record actual protected real-exam release and production acceptance.
+
 ## 2026-10-08 — Assessment navigation and final review
 
 - Extend the existing assessment UI with gated numbered navigation, retained unsent drafts, saved/review flags and final review that waits for dirty/saving work. Preserve existing save/finalize APIs and all frozen grading/deadline/exposure rules.

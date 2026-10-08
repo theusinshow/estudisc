@@ -1,5 +1,7 @@
 # Estudisc — Current project status
 
+Phase 14 ADMIN workbench accepted locally (2026-10-08): source-bound draft Add Block/preview/import, version-bound SQL publication status, exact source/Question preservation and Studio asset/blueprint metadata caveats. Focused ten PASS, full 426 PASS/three optional real-PG SKIP; full default serial E2E 58 PASS/thirty gated SKIP; flagged workbench two PASS; lint/typecheck/build/packs and five-width bounded visuals PASS. Detector: new workbench/page zero findings; one pre-existing unchanged stepper transition. Protected release and real ADMIN production reads are next, followed by remaining foundation/routine/runtime rollout and final acceptance. No production content was imported/published in this phase. Phase 13 is actually live (PR #12/main e628eda/READY/alias/flag verified); [receipt](docs/estudisc/REAL-EXAM-RELEASE.json). NEXT ACTION: release Phase 14 directly, then finish scoped rollout rather than stopping after this checkpoint.
+
 ```text
 Product: Estudisc
 Production: live

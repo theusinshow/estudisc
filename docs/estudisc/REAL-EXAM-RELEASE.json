@@ -1,0 +1,10 @@
+{
+  "date":"2026-10-08","implementationCommit":"28a5ee2","pullRequest":"https://github.com/theusinshow/estudisc/pull/12",
+  "mergeCommit":"e628edadbc71e75e5f150ae5c3e1f71fa269de41","mergedAt":"2026-10-08T13:58:27Z","ci":"https://github.com/theusinshow/estudisc/actions/runs/37787743820",
+  "requiredChecksPassed":["lint","typecheck","unit","build","integration","content-qa","pack-validation","critical-e2e"],
+  "deployment":{"id":"dpl_1WrTfhJ3BvaWt8ANcaTc1xNqhwZQ","url":"https://estudisc-jgj16hei7-theusinshows-projects.vercel.app","status":"READY","buildCommit":"e628eda","buildCompletedAt":"2026-10-08T13:58:58.948Z","alias":"https://vecta-three.vercel.app","aliasMatches":true},
+  "feature":{"name":"FEATURE_REAL_EXAM","value":true},
+  "localAcceptance":{"testsPassed":420,"optionalRealPostgresSkipped":3,"defaultE2ePassed":58,"gatedE2eSkipped":28,"actualExamLoopsPassed":2,"focusedPassed":4,"lint":"PASS","typecheck":"PASS","build":"PASS","packs":"PASS","fiveWidthsAndBoundedVisuals":"PASS","detectorFindings":0},
+  "productionAcceptance":{"path":"/assessments","status":200,"heading":"Simulados","assessmentCreated":false,"assessmentFinalized":false,"nativeKeyboardClaimed":false},
+  "preserved":{"originalScoresSnapshotsAndDeadlines":true,"noProductionMigration":true,"noLearnerAnswerSubmission":true}
+}

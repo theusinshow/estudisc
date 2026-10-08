@@ -284,6 +284,10 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .exam-navigation button[data-saved="true"] { border-style: solid; }
 .exam-step-controls { margin-block: var(--estudisc-spacing-8); }
 .exam-final-review li { margin-block: var(--estudisc-spacing-4); }
+.authoring-workbench textarea { width: 100%; font: inherit; min-height: 120px; }
+.authoring-workbench pre { max-width: 100%; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+.authoring-mobile-preview { width: min(100%,390px); margin-block: var(--estudisc-spacing-8); }
+.authoring-mobile-preview iframe { width: 100%; height: 700px; border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }
 
 /* Study session */
 .study-session { width: min(100%, 820px); }

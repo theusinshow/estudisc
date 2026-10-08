@@ -1,4 +1,5 @@
 import { hashCanonicalJson } from "@/lib/canonical-json";
+import { codeBlockSchema,conceptBlockSchema,textBlockSchema,titledTextBlockSchema } from "@/features/lessons/blocks/block-schemas";
 import { trackPackV2Schema, type TrackPackV2 } from "./track-pack-v2-schema";
 import { validateTrackPackV2Semantics } from "./track-pack-v2-validation";
 import { lessonVersionPackSchema, LessonVersionConflictError, type LessonVersionPack, type LessonVersionRepository } from "./lesson-version-contracts";
@@ -16,7 +17,14 @@ export function resolveLessonVersionContext(manifests: readonly unknown[], pack:
   if (hashCanonicalJson(retained) !== hashCanonicalJson(base.blocks) || hashCanonicalJson({ ...pack.lesson, blocks: base.blocks, version: base.version, status: base.status }) !== hashCanonicalJson(base)) throw new LessonVersionConflictError("Source fields/blocks/Activities/Concepts cannot be changed by enrichment");
   if (pack.lesson.blocks.length <= base.blocks.length) throw new LessonVersionConflictError("Enrichment must add at least one block");
   const additions = pack.lesson.blocks.filter(b => !base.blocks.some(old => old.id === b.id));
-  if (additions.some(b => b.type !== "numeric-explorer" || !b.conceptIds.length || b.conceptIds.some(id => !base.concepts.some(c => c.id === id)))) throw new LessonVersionConflictError("Initial targeted import supports only source-Concept numeric exploration; no new media/assessment");
+  for(const block of additions){
+    if(!block.conceptIds.length||block.conceptIds.some(id=>!base.concepts.some(c=>c.id===id)))throw new LessonVersionConflictError("New blocks must use existing source Concepts");
+    if(block.type==="numeric-explorer")continue;
+    if(block.payload.type!==undefined&&block.payload.type!==block.type)throw new LessonVersionConflictError("Block payload type differs from its envelope");
+    if(block.type==="concept"&&block.payload.conceptId!==undefined&&!block.conceptIds.includes(String(block.payload.conceptId)))throw new LessonVersionConflictError("Concept payload must match the source-bound block Concepts");
+    const schema=block.type==="code"?codeBlockSchema:block.type==="concept"?conceptBlockSchema:block.type==="text"||block.type==="summary"?textBlockSchema:["note","warning","example","worked-example"].includes(block.type)?titledTextBlockSchema:null;
+    if(!schema||!schema.safeParse({...block.payload,type:block.type}).success)throw new LessonVersionConflictError("Addition requires an existing non-assessed text renderer; no new media/assessment");
+  }
   const refs = [...new Set([...base.exitTicketQuestionIds, ...base.activities.flatMap(a => a.questionId ? [a.questionId] : [])])];
   if (pack.questionReferences.length !== refs.length || new Set(pack.questionReferences.map(r => r.id)).size !== refs.length) throw new LessonVersionConflictError("Exact unique source Question references required");
   for (const id of refs) {

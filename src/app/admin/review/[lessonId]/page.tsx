@@ -10,6 +10,7 @@ import { getDatabase, getDatabaseUrl } from "@/db/connection";
 import { ContentQaRepository } from "@/db/repositories/content-qa-repository";
 import { AccessDeniedError, requireAdmin } from "@/features/auth/owner";
 import { LessonReviewForm } from "@/features/content-qa/lesson-review-form";
+import { getFeatureFlags } from "@/lib/feature-flags";
 
 export const dynamic = "force-dynamic";
 
@@ -44,6 +45,7 @@ export default async function LessonReviewPage({ params, searchParams }: Props) 
         <Link href="/admin/review" className="editorial-back"><ArrowLeft aria-hidden="true" /> Todas as aulas</Link>
         <header>
           <h1>{lesson.title}</h1>
+          {getFeatureFlags().FEATURE_CONTENT_HEALTH&&<Link className="secondary-action" href={`/admin/content-studio?lessonId=${encodeURIComponent(lesson.id)}`}>Abrir estúdio e saúde do conteúdo</Link>}
           <p className="editorial-meta">{lesson.id} · versão {lesson.version} · <span className="editorial-status" data-status={status}>{statusLabel[status] ?? "Sem registro"}</span></p>
           <Link href={`/lessons/${encodeURIComponent(lesson.id)}`} target="_blank" className="secondary-action editorial-preview">
             Abrir a aula como o aluno vê <ExternalLink aria-hidden="true" />
