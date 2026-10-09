@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-09 — Authorized free PostgreSQL provisioning
+
+- Restore original production database connectivity through the explicitly authorized temporary Neon Launch reactivation; verify the real production database health endpoint and retain a complete private preliminary backup. Aiven migration remains pending target connection and final data validation.
+- Create the empty Aiven service estudisc-postgres under explicit user authorization; the Console confirms Free-1-1gb and zero-cost Free pricing, with DigitalOcean sfo assigned to the selected North America location.
+- Record actual provisioning state and full original-backup prerequisites. Production still uses its original database; this is not a data restore or quota-recovery claim.
+
 ## 2026-10-08 — Recoverable data-service interruption
 
 - Add a root route error boundary with retry/navigation and a clear unavailable-data message; keep raw SQL/backend/private details out of the interface and preserve the Plan-specific recovery.
