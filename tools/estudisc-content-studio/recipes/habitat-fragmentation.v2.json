@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-23",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "a211392b66f198603ef6af529ebe6c3814b2bd180a4b94fb332d47b0e6151320",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-23-source-prediction-v3",
+      "beforeBlockId": "CIE-23-B09",
+      "sourceBlockHash": "5243dacaf2f7bceae4da53fba35b0111dbfe5f563e4233059d7cdb8a877fc3e3",
+      "sourceQuote": "Uma rodovia divide uma floresta contínua em pequenos fragmentos isolados. Qual ameaça aparece de forma direta?\n\n1) Use esta relação: Perda e fragmentação de habitat estão entre as principais ameaças à biodiversidade. 2) Use esta relação: Espécies exóticas invasoras podem alterar relações ecológicas e competir com espécies nativas. 3) Use esta relação: Poluição, exploração excessiva e mudanças climáticas também pressionam populações e ecossistemas. 4) Aplicando essas relações à situação, a conclusão correta é: Fragmentação de habitat, que pode reduzir conectividade entre populações.",
+      "conceptId": "CIE-23-CON-03",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Prever a ameaça diretamente descrita pela divisão de uma floresta, distinguindo fragmentação e conectividade de outras pressões ambientais.",
+      "parameters": {
+        "title": "Preveja a divisão da floresta",
+        "promptQuote": "Uma rodovia divide uma floresta contínua em pequenos fragmentos isolados. Qual ameaça aparece de forma direta?",
+        "observationQuote": "Uma rodovia divide uma floresta contínua em pequenos fragmentos isolados. Qual ameaça aparece de forma direta?\n\n1) Use esta relação: Perda e fragmentação de habitat estão entre as principais ameaças à biodiversidade. 2) Use esta relação: Espécies exóticas invasoras podem alterar relações ecológicas e competir com espécies nativas. 3) Use esta relação: Poluição, exploração excessiva e mudanças climáticas também pressionam populações e ecossistemas. 4) Aplicando essas relações à situação, a conclusão correta é: Fragmentação de habitat, que pode reduzir conectividade entre populações.",
+        "explanationQuote": "1) Use esta relação: Perda e fragmentação de habitat estão entre as principais ameaças à biodiversidade. 2) Use esta relação: Espécies exóticas invasoras podem alterar relações ecológicas e competir com espécies nativas. 3) Use esta relação: Poluição, exploração excessiva e mudanças climáticas também pressionam populações e ecossistemas. 4) Aplicando essas relações à situação, a conclusão correta é: Fragmentação de habitat, que pode reduzir conectividade entre populações."
+      }
+    }
+  ]
+}

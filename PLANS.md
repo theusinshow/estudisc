@@ -2,6 +2,10 @@
 
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
+### Long lesson title mobile overflow — 2026-10-10
+
+Actual CIE-21 v2 and v3 show 378 px document width at a 375 px viewport. Text-range inspection isolates the existing H1 word “Sustentabilidade”, while element boxes fit. Fix only the existing lesson-title wrapping rule, preserving frozen typography/tokens/content and semantic heading. Acceptance: full required local checks and actual 320/375/desktop title/layout verification, protected required CI, authorized production release and renewed environment-batch mobile acceptance before further content publication. Current CIE-21/CIE-23/CIE-35 v3 publications and immutable-data checks passed; do not fabricate a no-overflow receipt until the actual reader fix is verified. Impeccable refinement follows the existing Design System; no redesign.
+
 ### Continuous source-defined batches — 2026-10-10
 
 Second batch complete: CIE-15/CIE-16/CIE-19 v3 are actually LIVE with all per-lesson/source/Question/history comparisons, readers and protected full backup passing. Focused suite 15 PASS, lint/typecheck/packs PASS. Continue CIE-21/CIE-23/CIE-35 with existing source-defined environmental action, habitat fragmentation and random population-reduction scenarios; same recipe and acceptance, no biological simulation or new evaluator. CIE-25/CIE-34 already v3, so exclude their stale local v2. Final full checks after the continuous batches.

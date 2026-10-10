@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-21",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "282249c227339b1b60945daa8fa6478d8ac4cab78665656333e7ab452b7437ba",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-21-source-prediction-v3",
+      "beforeBlockId": "CIE-21-B09",
+      "sourceBlockHash": "85747b3151a2fcbc99ff4f29959632d334729178e698180a33d11e5dda5b5a0f",
+      "sourceQuote": "Uma cidade reduz vazamentos, amplia tratamento de esgoto e recupera mata ciliar. Qual ideia melhor resume essas ações?\n\n1) Use esta relação: Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial. 2) Use esta relação: Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível. 3) Use esta relação: Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo. 4) Aplicando essas relações à situação, a conclusão correta é: São medidas integradas de sustentabilidade e redução de impactos sobre água e ecossistemas.",
+      "conceptId": "CIE-21-CON-01",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Relacionar as ações sobre vazamentos, esgoto e mata ciliar do cenário à redução de impactos sobre água e ecossistemas.",
+      "parameters": {
+        "title": "Antecipe o efeito das ações ambientais",
+        "promptQuote": "Uma cidade reduz vazamentos, amplia tratamento de esgoto e recupera mata ciliar. Qual ideia melhor resume essas ações?",
+        "observationQuote": "Uma cidade reduz vazamentos, amplia tratamento de esgoto e recupera mata ciliar. Qual ideia melhor resume essas ações?\n\n1) Use esta relação: Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial. 2) Use esta relação: Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível. 3) Use esta relação: Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo. 4) Aplicando essas relações à situação, a conclusão correta é: São medidas integradas de sustentabilidade e redução de impactos sobre água e ecossistemas.",
+        "explanationQuote": "1) Use esta relação: Poluição ocorre quando agentes físicos, químicos ou biológicos alteram o ambiente de forma prejudicial. 2) Use esta relação: Poluentes atmosféricos podem afetar saúde, ecossistemas e clima; poluição da água pode reduzir qualidade e oxigênio disponível. 3) Use esta relação: Resíduos exigem redução, reutilização, reciclagem e destinação adequada, além de mudanças na produção e consumo. 4) Aplicando essas relações à situação, a conclusão correta é: São medidas integradas de sustentabilidade e redução de impactos sobre água e ecossistemas."
+      }
+    }
+  ]
+}
