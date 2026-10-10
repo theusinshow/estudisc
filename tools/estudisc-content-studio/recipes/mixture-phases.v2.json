@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-12",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "d81749a8991837fb115b471b7445189b48584b338cf25a58e5f7bf3578aad976",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-12-source-prediction-v3",
+      "beforeBlockId": "CIE-12-B09",
+      "sourceBlockHash": "3eb60e1549f09888056748342f928b8f4fd3cb7d6c1066a723bef44c553683c4",
+      "sourceQuote": "Um recipiente contém água, sal totalmente dissolvido e óleo formando uma camada separada. Quantos componentes e quantas fases há?\n\n1) Use esta relação: Substância pura possui composição química definida; mistura reúne duas ou mais substâncias. 2) Use esta relação: Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada. 3) Use esta relação: Mistura heterogênea apresenta duas ou mais fases distinguíveis. 4) Aplicando essas relações à situação, a conclusão correta é: Três componentes e duas fases.",
+      "conceptId": "CIE-12-CON-04",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Distinguir componentes e fases no sistema de água, sal dissolvido e óleo, usando composição e aspectos visíveis do exemplo.",
+      "parameters": {
+        "title": "Antecipe componentes e fases da mistura",
+        "promptQuote": "Um recipiente contém água, sal totalmente dissolvido e óleo formando uma camada separada. Quantos componentes e quantas fases há?",
+        "observationQuote": "Um recipiente contém água, sal totalmente dissolvido e óleo formando uma camada separada. Quantos componentes e quantas fases há?\n\n1) Use esta relação: Substância pura possui composição química definida; mistura reúne duas ou mais substâncias. 2) Use esta relação: Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada. 3) Use esta relação: Mistura heterogênea apresenta duas ou mais fases distinguíveis. 4) Aplicando essas relações à situação, a conclusão correta é: Três componentes e duas fases.",
+        "explanationQuote": "1) Use esta relação: Substância pura possui composição química definida; mistura reúne duas ou mais substâncias. 2) Use esta relação: Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada. 3) Use esta relação: Mistura heterogênea apresenta duas ou mais fases distinguíveis. 4) Aplicando essas relações à situação, a conclusão correta é: Três componentes e duas fases."
+      }
+    }
+  ]
+}

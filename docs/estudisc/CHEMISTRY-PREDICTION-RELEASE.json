@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-10",
+  "status": "LIVE_SOURCE_DEFINED_BATCH_VERIFIED",
+  "production": "https://vecta-three.vercel.app",
+  "mode": "admin_direct",
+  "applicationRuntimeChanged": false,
+  "lessons": [
+    {
+      "lessonId": "CIE-12",
+      "baseVersion": 2,
+      "newVersion": 3,
+      "sourceHash": "d81749a8991837fb115b471b7445189b48584b338cf25a58e5f7bf3578aad976",
+      "contentHash": "21e9a3539cc99f83c000447a345c9674ea727a8e726294951bca4d2d88502143",
+      "questionReferences": 8,
+      "addedBlocks": 1,
+      "previewHttp": 200,
+      "importHttp": 201,
+      "publicationHttp": 200,
+      "audit": {
+        "lessonId": "CIE-12",
+        "version": 3,
+        "status": "published",
+        "mode": "admin_direct",
+        "createdAt": "2026-10-10T21:31:49.348Z",
+        "editorialReviews": 0,
+        "actorMatchesActualAuthor": true
+      },
+      "mobile": {
+        "path": "/lessons/CIE-12",
+        "viewport": 375,
+        "goalVisible": true,
+        "predictionRegion": true,
+        "label": "Sua previsão",
+        "responseUntouched": true,
+        "overflow": false,
+        "unavailable": false
+      }
+    },
+    {
+      "lessonId": "CIE-13",
+      "baseVersion": 2,
+      "newVersion": 3,
+      "sourceHash": "564111bf692e44102f1a5c916ddc9f69783ceff9603961ac2fb94a4619334871",
+      "contentHash": "e0fc38417b79179fea5b104e7820daba23129d974166ad4fc16ad4bff3cc1c52",
+      "questionReferences": 8,
+      "addedBlocks": 1,
+      "previewHttp": 200,
+      "importHttp": 201,
+      "publicationHttp": 200,
+      "audit": {
+        "lessonId": "CIE-13",
+        "version": 3,
+        "status": "published",
+        "mode": "admin_direct",
+        "createdAt": "2026-10-10T21:32:57.011Z",
+        "editorialReviews": 0,
+        "actorMatchesActualAuthor": true
+      },
+      "mobile": {
+        "path": "/lessons/CIE-13",
+        "viewport": 375,
+        "goalVisible": true,
+        "predictionRegion": true,
+        "label": "Sua previsão",
+        "responseUntouched": true,
+        "overflow": false,
+        "unavailable": false
+      }
+    },
+    {
+      "lessonId": "CIE-14",
+      "baseVersion": 2,
+      "newVersion": 3,
+      "sourceHash": "93daa5c7629d833f74bc16818a60efe0cbe8089bdbe6e0bbcedd8904a39f6408",
+      "contentHash": "c364a9216300628c15a40dfc0c773b7a36a1141d731dbeca0393ca1937c72c16",
+      "questionReferences": 8,
+      "addedBlocks": 1,
+      "previewHttp": 200,
+      "importHttp": 201,
+      "publicationHttp": 200,
+      "audit": {
+        "lessonId": "CIE-14",
+        "version": 3,
+        "status": "published",
+        "mode": "admin_direct",
+        "createdAt": "2026-10-10T21:33:43.419Z",
+        "editorialReviews": 0,
+        "actorMatchesActualAuthor": true
+      },
+      "mobile": {
+        "path": "/lessons/CIE-14",
+        "viewport": 375,
+        "goalVisible": true,
+        "predictionRegion": true,
+        "label": "Sua previsão",
+        "responseUntouched": true,
+        "overflow": false,
+        "unavailable": false
+      }
+    }
+  ],
+  "desktop": {
+    "path": "/lessons/CIE-14",
+    "viewport": 1440,
+    "predictionRegion": true,
+    "overflow": false
+  },
+  "accessibility": {
+    "predictionRegion": true,
+    "keyboardFocusable": true,
+    "responseUntouched": true
+  },
+  "preserved": {
+    "identities": 132,
+    "allHistoricalPayloadsBlocksActivities": true,
+    "questionAndUserStateFingerprints": true,
+    "counts": [
+      {
+        "table": "questions",
+        "count": "1284"
+      },
+      {
+        "table": "question_versions",
+        "count": "1284"
+      },
+      {
+        "table": "attempts",
+        "count": "106"
+      },
+      {
+        "table": "concept_evidence",
+        "count": "127"
+      },
+      {
+        "table": "study_events",
+        "count": "129"
+      }
+    ],
+    "originalMissingObjectivesAndMappings": true,
+    "noResponseSubmitted": true,
+    "noIndependentReviewFabricated": true,
+    "noCorpusReimport": true
+  },
+  "validation": {
+    "focusedTests": 12,
+    "focusedFiles": 3,
+    "focusedLint": "PASS",
+    "typecheck": "PASS",
+    "packs": "PASS",
+    "mobileAndRepresentativeDesktop": "PASS",
+    "boundedVisual": "PASS",
+    "diff": "PASS"
+  },
+  "backup": {
+    "private": true,
+    "complete": true,
+    "sha256": "1fc06afe0878644e68a408d994b45b4f98d7be9b6ae0c1ffd3a5ce4508398b72",
+    "archiveListParsed": true
+  },
+  "remaining": "Whole-corpus enrichment remains partial; no full-topic depth/official mapping or additional scored-question coverage claimed."
+}

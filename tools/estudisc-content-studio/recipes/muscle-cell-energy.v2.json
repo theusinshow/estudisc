@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-16",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "e9c3ecfafffd9defe0ef232082625ab5a31384ecab797906005cc89154bb999a",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-16-source-prediction-v3",
+      "beforeBlockId": "CIE-16-B09",
+      "sourceBlockHash": "58035f1434b84099cdc7fddfcd22065ed940ece76b4b6df222c977751b712282",
+      "sourceQuote": "Uma célula muscular aumenta sua demanda de energia durante exercício. Qual organela e processo estão diretamente relacionados ao fornecimento de ATP em células eucarióticas?\n\n1) Use esta relação: Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente. 2) Use esta relação: Ribossomos atuam na síntese de proteínas. 3) Use esta relação: Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes. 4) Aplicando essas relações à situação, a conclusão correta é: Mitocôndrias e respiração celular.",
+      "conceptId": "CIE-16-CON-04",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Relacionar a demanda de energia da célula muscular à organela e ao processo descritos no exemplo de obtenção de ATP.",
+      "parameters": {
+        "title": "Antecipe como a célula obtém energia",
+        "promptQuote": "Uma célula muscular aumenta sua demanda de energia durante exercício. Qual organela e processo estão diretamente relacionados ao fornecimento de ATP em células eucarióticas?",
+        "observationQuote": "Uma célula muscular aumenta sua demanda de energia durante exercício. Qual organela e processo estão diretamente relacionados ao fornecimento de ATP em células eucarióticas?\n\n1) Use esta relação: Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente. 2) Use esta relação: Ribossomos atuam na síntese de proteínas. 3) Use esta relação: Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes. 4) Aplicando essas relações à situação, a conclusão correta é: Mitocôndrias e respiração celular.",
+        "explanationQuote": "1) Use esta relação: Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente. 2) Use esta relação: Ribossomos atuam na síntese de proteínas. 3) Use esta relação: Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes. 4) Aplicando essas relações à situação, a conclusão correta é: Mitocôndrias e respiração celular."
+      }
+    }
+  ]
+}

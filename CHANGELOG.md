@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-10 — Chemistry and biology source-defined predictions published
+
+- Publish CIE-12/CIE-13/CIE-14 v3 for mixtures/phases, separation and chemical transformation, then CIE-15/CIE-16/CIE-19 v3 for cell type, ATP/respiration and decomposer nutrient recycling.
+- Preserve each historical version, eight Question refs per lesson and complete Question/Attempt/evidence/study-event fingerprints. Verify actual Admin Direct author/audits, mobile readers, representative focus/desktop/visuals and full private backups.
+- Reuse accepted recipe v2 and existing prediction/resume/fallback; original absent goals/links stay absent, with no independent review or mapping invented. Skip stale local CIE-17/CIE-18 v2.
+
 ## 2026-10-10 — Source-defined energy and condensation predictions published
 
 - Publish CIE-05/CIE-08 v3 with one source-quoted proposed-goal prediction each, using the existing recipe and renderer for LED energy transformation and condensation outside a cold glass.

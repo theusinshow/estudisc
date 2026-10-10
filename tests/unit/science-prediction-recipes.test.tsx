@@ -15,7 +15,13 @@ it.each([
  ['inclined-plane.v2.json','CIE-02','distância do percurso','menor força'],
  ['convection.v2.json','CIE-04','mais quente no fundo tende a subir','Convecção térmica'],
  ['led-energy.v2.json','CIE-05','Uma lâmpada LED recebe energia elétrica','a energia total é conservada'],
- ['cold-glass-condensation.v2.json','CIE-08','Gotas aparecem do lado externo','Vapor de água do ar perde energia e condensa']
+ ['cold-glass-condensation.v2.json','CIE-08','Gotas aparecem do lado externo','Vapor de água do ar perde energia e condensa'],
+ ['mixture-phases.v2.json','CIE-12','sal totalmente dissolvido','Três componentes e duas fases'],
+ ['sand-water-separation.v2.json','CIE-13','areia não dissolvida','Filtração'],
+ ['water-electrolysis.v2.json','CIE-14','hidrogênio e oxigênio','reorganizados em novas substâncias'],
+ ['prokaryotic-cell.v2.json','CIE-15','não apresenta núcleo delimitado','Como célula procariótica'],
+ ['muscle-cell-energy.v2.json','CIE-16','demanda de energia durante exercício','Mitocôndrias e respiração celular'],
+ ['decomposer-nutrients.v2.json','CIE-19','decompositoras fossem removidos','prejuízo à reciclagem de nutrientes']
 ])('validates the source-defined prediction and preserved import context: %s',(file,id,observation,conclusion)=>{
  const recipe=predictionEnrichmentRecipeSchema.parse(JSON.parse(readFileSync(`tools/estudisc-content-studio/recipes/${file}`,'utf8')));
  const pack=loadBlueprintCorpus(process.cwd()).map(c=>c.pack).find(p=>p.track.modules.some(m=>m.lessons.some(l=>l.id===id)))!;

@@ -2,6 +2,14 @@
 
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
+### Continuous source-defined batches — 2026-10-10
+
+Second batch complete: CIE-15/CIE-16/CIE-19 v3 are actually LIVE with all per-lesson/source/Question/history comparisons, readers and protected full backup passing. Focused suite 15 PASS, lint/typecheck/packs PASS. Continue CIE-21/CIE-23/CIE-35 with existing source-defined environmental action, habitat fragmentation and random population-reduction scenarios; same recipe and acceptance, no biological simulation or new evaluator. CIE-25/CIE-34 already v3, so exclude their stale local v2. Final full checks after the continuous batches.
+
+Chemistry CIE-12/CIE-13/CIE-14 v3 is now actually LIVE; exact source/Question bindings, per-lesson old/history comparisons, actual mobile/focus/desktop and backup/archive passed. Continue CIE-15/CIE-16/CIE-19 using fresh v2 contexts and source-defined cell classification, ATP/respiration and decomposer nutrient-recycling scenarios. CIE-17/CIE-18 are already v3; do not prepare stale v2 candidates. Same focused/actual acceptance and existing Admin Direct authorization applies.
+
+User authorized continuing as far as safely possible. Start CIE-12/CIE-13/CIE-14 under the accepted recipe v2: distinguish components/phases, select separation from properties and reason about reagent/product reorganization. Fresh actual ADMIN contexts must be latest published v2 with exact source/Question binding. Preserve all historical versions, original goals/links and append-only history; add one ungraded source-quoted prediction per lesson, validate each, publish through actual Admin Direct, inspect real readers and retain updated backups/receipts. Continue to subsequent source-supported cases after each checkpoint; exclude live or stale versions and do not force prediction on unsupported scenarios. Focused checks per batch, full final lint/typecheck/test/packs; no runtime/engine/schema change or re-import of the corpus.
+
 ### Source-defined energy and condensation — 2026-10-10
 
 Concrete continuation: [next bounded batch](docs/estudisc/NEXT-ENRICHMENT-BATCH.md) selects CIE-12/CIE-13/CIE-14 source-defined mixtures/separation/transformation scenarios. Fresh actual source/hash/Question validation remains mandatory; this selection is not publication. Exclude CIE-22's stale historical v2. Preserve the accepted recipe and route only actual unresolved pedagogical/contract exceptions.
