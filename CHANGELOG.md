@@ -1,7 +1,14 @@
 # Changelog
 
+## 2026-10-10 — Production PostgreSQL moved to Aiven Free
+
+- Copy the complete original database through verified logical snapshots to Aiven Free, preserving all 59 tables / 30,091 records, schema, journal, immutable versions and append-only history with the original UTF8/builtin C.UTF-8 settings.
+- Change only the existing server database connection and redeploy the unchanged Git-backed application. Verify live database health, actual target connectivity, rollback-only write and unauthenticated denial.
+- Return the original Neon installation to Free and retain its data read-only plus a protected full backup. Authenticated reader verification and the two prepared content activations remain separate pending steps.
+
 ## 2026-10-09 — Authorized free PostgreSQL provisioning
 
+- Ignore external browser automation snapshots/logs and provide a restricted local connection-file path for the authorized Aiven migration.
 - Restore original production database connectivity through the explicitly authorized temporary Neon Launch reactivation; verify the real production database health endpoint and retain a complete private preliminary backup. Aiven migration remains pending target connection and final data validation.
 - Create the empty Aiven service estudisc-postgres under explicit user authorization; the Console confirms Free-1-1gb and zero-cost Free pricing, with DigitalOcean sfo assigned to the selected North America location.
 - Record actual provisioning state and full original-backup prerequisites. Production still uses its original database; this is not a data restore or quota-recovery claim.
