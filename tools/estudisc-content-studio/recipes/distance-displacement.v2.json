@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-01",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "5b4bef56bef414541a63cdb3fcf70213a73141710eba62f9904088d05be910a7",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-01-source-prediction-v3",
+      "beforeBlockId": "CIE-01-B09",
+      "sourceBlockHash": "e29bcd95f878b85a9e7f47a8ccd611d20db40022757306f6f0727f0899d84fe7",
+      "sourceQuote": "Uma pessoa caminha 100 m para leste e depois retorna 100 m ao ponto inicial. Qual interpretação é correta?\n\n1) Use esta relação: Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo. 2) Use esta relação: Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final. 3) Use esta relação: Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido. 4) Aplicando essas relações à situação, a conclusão correta é: Ela percorreu 200 m, mas seu deslocamento final é zero.",
+      "conceptId": "CIE-01-CON-02",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Distinguir a distância percorrida do deslocamento ao prever o resultado de uma ida e volta ao ponto inicial.",
+      "parameters": {
+        "title": "Preveja o deslocamento da ida e volta",
+        "promptQuote": "Uma pessoa caminha 100 m para leste e depois retorna 100 m ao ponto inicial. Qual interpretação é correta?",
+        "observationQuote": "Uma pessoa caminha 100 m para leste e depois retorna 100 m ao ponto inicial. Qual interpretação é correta?\n\n1) Use esta relação: Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo. 2) Use esta relação: Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final. 3) Use esta relação: Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido. 4) Aplicando essas relações à situação, a conclusão correta é: Ela percorreu 200 m, mas seu deslocamento final é zero.",
+        "explanationQuote": "1) Use esta relação: Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo. 2) Use esta relação: Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final. 3) Use esta relação: Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido. 4) Aplicando essas relações à situação, a conclusão correta é: Ela percorreu 200 m, mas seu deslocamento final é zero."
+      }
+    }
+  ]
+}

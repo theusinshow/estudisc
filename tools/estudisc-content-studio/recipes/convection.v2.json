@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-04",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "ab80d5bec6d7460555e02e509bc608c771b64b01a07395603e2ff0aba9e7b125",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-04-source-prediction-v3",
+      "beforeBlockId": "CIE-04-B09",
+      "sourceBlockHash": "25da12453f5ce4a9e4d63b43dfbc1be5cf60560b256e1cf02d7aa6f8836ad983",
+      "sourceQuote": "Ao aquecer água numa panela, a água mais quente no fundo tende a subir e a mais fria tende a descer. Qual processo domina esse movimento?\n\n1) Use esta relação: Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria. 2) Use esta relação: Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura. 3) Use esta relação: Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material. 4) Aplicando essas relações à situação, a conclusão correta é: Convecção térmica.",
+      "conceptId": "CIE-04-CON-02",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Identificar a convecção ao prever o movimento de porções de água durante o aquecimento na panela.",
+      "parameters": {
+        "title": "Preveja o movimento da água",
+        "promptQuote": "Ao aquecer água numa panela, a água mais quente no fundo tende a subir e a mais fria tende a descer. Qual processo domina esse movimento?",
+        "observationQuote": "Ao aquecer água numa panela, a água mais quente no fundo tende a subir e a mais fria tende a descer. Qual processo domina esse movimento?\n\n1) Use esta relação: Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria. 2) Use esta relação: Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura. 3) Use esta relação: Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material. 4) Aplicando essas relações à situação, a conclusão correta é: Convecção térmica.",
+        "explanationQuote": "1) Use esta relação: Condução é transferência de energia térmica por interações entre partículas, predominando em sólidos sem transporte macroscópico de matéria. 2) Use esta relação: Convecção ocorre em fluidos quando porções do material se deslocam, formando correntes associadas a diferenças de densidade e temperatura. 3) Use esta relação: Radiação térmica ocorre por ondas eletromagnéticas e não necessita de meio material. 4) Aplicando essas relações à situação, a conclusão correta é: Convecção térmica."
+      }
+    }
+  ]
+}

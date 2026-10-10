@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-10",
+  "status": "LIVE_SCIENCE_PREDICTIONS_VERIFIED",
+  "production": "https://vecta-three.vercel.app",
+  "authorization": "Actual authenticated ADMIN Direct under standing social-project release authorization; no independent reviewer claimed.",
+  "applicationRuntimeChanged": false,
+  "lessons": [
+    {
+      "lessonId": "CIE-01",
+      "baseVersion": 2,
+      "newVersion": 3,
+      "sourceHash": "5b4bef56bef414541a63cdb3fcf70213a73141710eba62f9904088d05be910a7",
+      "contentHash": "150d59d2b4e1b5545e562a0c97d92701fd32853624a84672f6ff681c1a9f86a7",
+      "questionReferences": 8,
+      "addedBlocks": 1,
+      "previewHttp": 200,
+      "importHttp": 201,
+      "publicationHttp": 200,
+      "audit": {
+        "lessonId": "CIE-01",
+        "version": 3,
+        "status": "published",
+        "mode": "admin_direct",
+        "createdAt": "2026-10-10T19:15:19.840Z",
+        "editorialReviews": 0,
+        "actorMatchesActualAuthor": true
+      },
+      "reader": {
+        "path": "/lessons/CIE-01",
+        "viewport": 375,
+        "goalVisible": true,
+        "predictionRegion": true,
+        "title": "Preveja o deslocamento da ida e volta",
+        "overflow": false,
+        "unavailable": false
+      }
+    },
+    {
+      "lessonId": "CIE-02",
+      "baseVersion": 2,
+      "newVersion": 3,
+      "sourceHash": "1957dafb1f3f58a090254d8b450ab062a099453bfd0becc595916f5b27a890f3",
+      "contentHash": "7ccffd430ccb165e2475554176b4bbaa19655bfc735d47225486e31bf62f2349",
+      "questionReferences": 8,
+      "addedBlocks": 1,
+      "previewHttp": 200,
+      "importHttp": 201,
+      "publicationHttp": 200,
+      "audit": {
+        "lessonId": "CIE-02",
+        "version": 3,
+        "status": "published",
+        "mode": "admin_direct",
+        "createdAt": "2026-10-10T19:16:39.061Z",
+        "editorialReviews": 0,
+        "actorMatchesActualAuthor": true
+      },
+      "reader": {
+        "path": "/lessons/CIE-02",
+        "viewport": 375,
+        "goalVisible": true,
+        "predictionRegion": true,
+        "title": "Preveja o efeito da rampa",
+        "overflow": false,
+        "unavailable": false
+      }
+    },
+    {
+      "lessonId": "CIE-04",
+      "baseVersion": 2,
+      "newVersion": 3,
+      "sourceHash": "ab80d5bec6d7460555e02e509bc608c771b64b01a07395603e2ff0aba9e7b125",
+      "contentHash": "a1a8df476959dfe999bdd1b16254a511c50b77f62882bc6085554de3e66d79bf",
+      "questionReferences": 8,
+      "addedBlocks": 1,
+      "previewHttp": 200,
+      "importHttp": 201,
+      "publicationHttp": 200,
+      "audit": {
+        "lessonId": "CIE-04",
+        "version": 3,
+        "status": "published",
+        "mode": "admin_direct",
+        "createdAt": "2026-10-10T19:17:27.801Z",
+        "editorialReviews": 0,
+        "actorMatchesActualAuthor": true
+      },
+      "reader": {
+        "path": "/lessons/CIE-04",
+        "viewport": 375,
+        "goalVisible": true,
+        "predictionRegion": true,
+        "title": "Preveja o movimento da água",
+        "overflow": false,
+        "unavailable": false
+      }
+    }
+  ],
+  "preserved": {
+    "lessonIdentities": 132,
+    "originalV2PayloadsBlocksActivities": true,
+    "questionAndUserStateFingerprintsUnchanged": true,
+    "tableCounts": [
+      {
+        "table": "questions",
+        "count": "1284"
+      },
+      {
+        "table": "question_versions",
+        "count": "1284"
+      },
+      {
+        "table": "attempts",
+        "count": "106"
+      },
+      {
+        "table": "concept_evidence",
+        "count": "127"
+      },
+      {
+        "table": "study_events",
+        "count": "129"
+      }
+    ],
+    "noCorpusReimport": true,
+    "noProductionResponseSaved": true,
+    "noOriginalGoalsFabricated": true
+  },
+  "accessibility": {
+    "label": "Sua previsão",
+    "keyboardFocusable": true,
+    "controls": [
+      {
+        "text": "Observar",
+        "disabled": true
+      }
+    ],
+    "responseUntouched": true
+  },
+  "desktop": {
+    "path": "/lessons/CIE-04",
+    "viewport": 1440,
+    "goalVisible": true,
+    "overflow": false
+  },
+  "validation": {
+    "focusedTests": 7,
+    "files": 3,
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "packs": "PASS",
+    "diff": "PASS",
+    "priorFullRuntimeAcceptanceRetained": true
+  },
+  "backup": {
+    "complete": true,
+    "private": true,
+    "sha256": "d73f646c6c1a263a6a24756ce88afba4e6ff07bcac6c06b7515348d3f38e6566",
+    "archiveListParsed": true
+  },
+  "excluded": {
+    "lessonId": "CIE-06",
+    "reason": "Actual production v3 differs from audited local v2; no stale candidate applied."
+  },
+  "remaining": "Broader enrichment partial; continue only source-supported selections."
+}

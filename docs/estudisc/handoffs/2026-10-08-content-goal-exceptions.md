@@ -2,6 +2,8 @@
 
 ## Problem
 
+Follow-up 2026-10-10, next batch: CIE-01/CIE-02/CIE-04 v3 are actually LIVE, source-defined predictions through actual Admin Direct. Reusable recipe v2 files, seven focused tests, exact Question/source bindings, before/after immutable/history fingerprints and mobile/desktop reader checks passed; see ../SCIENCE-PREDICTION-RELEASE.md. Exclude these identities from repeat activation. CIE-06 actual latest is v3 and requires targeted current-source examination; do not build from its historical local v2.
+
 Follow-up 2026-10-10: the reversible proposed-goal contract is defined by ADR 0058 and implemented. CIE-03 v3 and POR-02 v3 are now actually LIVE through Admin Direct, adding one source-bound prediction each. Actual source/author matches, retained originals/Questions/user-state fingerprints, authenticated readers and full private backup passed; see ../SOURCE-GOAL-CONTENT-RELEASE.md. Exclude both from repeat import/publication. Reuse this accepted contract for clearly specified source cases; escalate only concrete unresolved pedagogical selection. The 113 absent original objectives remain historical absences, regardless of proposed goals.
 
 Software/runtime/ADMIN consumers through Phase 14 are implemented and tested. Phase 9 content enrichment is partial: ten identities/seventeen source-defined mathematics explorers are actually released. Do not present these pilots as enrichment of all 132 lessons. Original 132 identities/1,144 shared Questions and published historical versions remain intact.

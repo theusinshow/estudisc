@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-10 — Three source-defined science predictions released
+
+- Publish CIE-01, CIE-02 and CIE-04 v3 through actual Admin Direct, adding one source-quoted proposed-goal prediction per lesson for displacement, inclined planes and convection.
+- Add reusable pinned recipe v2 files and source/import/renderer validation. Verify unchanged original versions, Questions and append-only history after every activation; check actual mobile readers, labels/focus and desktop layout.
+- Exclude CIE-06 after detecting its newer production version. Preserve absent original objectives, provenance caveats and factual independent-review state.
+
 ## 2026-10-10 — Source-derived goals published through Admin Direct
 
 - Publish CIE-03 v3 and POR-02 v3 after actual authenticated preview/import and engineering validation; each adds one source-derived prediction with an explicitly proposed goal.
