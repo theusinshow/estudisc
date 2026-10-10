@@ -1,0 +1,145 @@
+{
+  "date": "2026-10-10",
+  "status": "LIVE_GEOMETRY_TEACHING_COMPLEMENTS_VERIFIED",
+  "production": "https://vecta-three.vercel.app",
+  "mode": "admin_direct",
+  "applicationRuntimeChanged": false,
+  "lessons": [
+    {
+      "lessonId": "MAT-16",
+      "sourceVersion": 3,
+      "newVersion": 4,
+      "sourceHash": "d08fa6c26db06d55ff2e2b19c23346bd720266f48a846dd131919a98758fad97",
+      "contentHash": "d3a404915dd0f4e4808fb6745dfcb5c0aeea5be6b84107aa3dae0a1d100a325f",
+      "configurationHash": "e9bd899c4aee37c40aa9a17902ca3f7fa67ee5971e5420ee0d1f4540322cceec",
+      "addedBlocks": 6,
+      "questionReferences": 29,
+      "previewHttp": 200,
+      "importHttp": 201,
+      "publicationHttp": 200,
+      "audit": {
+        "lessonId": "MAT-16",
+        "version": 4,
+        "status": "published",
+        "mode": "admin_direct",
+        "createdAt": "2026-10-10T20:58:25.575Z",
+        "editorialReviews": 0,
+        "actorMatchesActualAuthor": true
+      },
+      "mobile": {
+        "path": "/lessons/MAT-16",
+        "viewport": 375,
+        "circumferenceConcept": true,
+        "areaConcept": true,
+        "workedArea": true,
+        "workedLength": true,
+        "explorer": true,
+        "output": "Comprimento aproximado: 31,4 cm",
+        "numberLabel": "Raio (cm)",
+        "keyboardFocusable": true,
+        "sliderLabel": "Raio · controle deslizante",
+        "overflow": false,
+        "unavailable": false
+      },
+      "desktop": {
+        "path": "/lessons/MAT-16",
+        "viewport": 1440,
+        "explorer": true,
+        "output": "Comprimento aproximado: 31,4 cm",
+        "overflow": false
+      }
+    },
+    {
+      "lessonId": "MAT-17",
+      "sourceVersion": 3,
+      "newVersion": 4,
+      "sourceHash": "f1ffd38f7a8f475281326d52b1453722a47fc7b84c4c15c6dcbfa1e9d9dc6e6d",
+      "contentHash": "d6908c1bb55b1a1bd577a314def8f8c8f001b56d3abaabc15653cbf9085560a0",
+      "configurationHash": "64eec7c140b1b51340a23140ce94e3ec3a0103c126a13df86001d5d6c362d8ae",
+      "addedBlocks": 1,
+      "questionReferences": 14,
+      "previewHttp": 200,
+      "importHttp": 201,
+      "publicationHttp": 200,
+      "audit": {
+        "lessonId": "MAT-17",
+        "version": 4,
+        "status": "published",
+        "mode": "admin_direct",
+        "createdAt": "2026-10-10T20:59:29.060Z",
+        "editorialReviews": 0,
+        "actorMatchesActualAuthor": true
+      },
+      "mobile": {
+        "path": "/lessons/MAT-17",
+        "viewport": 375,
+        "workedPrism": true,
+        "volume": true,
+        "capacity": true,
+        "overflow": false,
+        "unavailable": false
+      },
+      "desktop": {
+        "path": "/lessons/MAT-17",
+        "viewport": 1440,
+        "prism": true,
+        "overflow": false
+      }
+    }
+  ],
+  "preserved": {
+    "identities": 132,
+    "allPriorVersionsPayloadBlocksActivities": true,
+    "questionAndUserStateFingerprints": true,
+    "counts": [
+      {
+        "table": "questions",
+        "count": "1284"
+      },
+      {
+        "table": "question_versions",
+        "count": "1284"
+      },
+      {
+        "table": "attempts",
+        "count": "106"
+      },
+      {
+        "table": "concept_evidence",
+        "count": "127"
+      },
+      {
+        "table": "study_events",
+        "count": "129"
+      }
+    ],
+    "originalObjectivesAndConcepts": true,
+    "noNewScoredQuestions": true,
+    "noResponseSubmitted": true,
+    "noIndependentReviewFabricated": true
+  },
+  "validation": {
+    "focusedTests": 9,
+    "files": 4,
+    "lint": "PASS",
+    "typecheck": "PASS",
+    "packs": "PASS",
+    "mobileAndDesktop": "PASS",
+    "boundedVisual": "PASS",
+    "diff": "PASS"
+  },
+  "backup": {
+    "private": true,
+    "complete": true,
+    "archiveListParsed": true,
+    "sha256": "743ce5426f634b3567ea0424538799f3260ef506e43a69236f5b8c32c4ade6c3"
+  },
+  "provenance": {
+    "origin": "original_authored_supplement",
+    "referencePurpose": "standard_formula_verification_only",
+    "referenceUrl": "https://openstax.org/books/prealgebra-2e/pages/c-geometric-formulas",
+    "noSourceTextExercisesOrAssetsCopied": true,
+    "officialMappingCertified": false
+  },
+  "remaining": "Broader enrichment and independently scored circular-measure retrieval are not claimed complete."
+}

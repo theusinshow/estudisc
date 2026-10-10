@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "MAT-16",
+  "baseVersion": 3,
+  "baseHash": "d08fa6c26db06d55ff2e2b19c23346bd720266f48a846dd131919a98758fad97",
+  "provenance": {
+    "origin": "original_authored_supplement",
+    "referencePurpose": "formula_verification_only",
+    "referenceUrl": "https://openstax.org/books/prealgebra-2e/pages/c-geometric-formulas",
+    "noSourceTextOrAssetsCopied": true,
+    "officialMappingCertified": false,
+    "independentEditorialReviewRecorded": false
+  },
+  "additions": [
+    {
+      "id": "MAT16-V4-CIRCUMFERENCE-CONCEPT",
+      "schemaVersion": 1,
+      "type": "concept",
+      "conceptIds": ["MAT.GEO.PERIMETER"],
+      "payload": {
+        "type": "concept",
+        "conceptId": "MAT.GEO.PERIMETER",
+        "title": "Circunferência: medir o contorno circular",
+        "content": "A circunferência é o contorno de um círculo. O raio r liga o centro ao contorno; o diâmetro d atravessa o centro de uma borda à outra, e d = 2r. Para medir o comprimento C desse contorno, usamos C = 2πr ou C = πd. O número π relaciona o comprimento da circunferência ao diâmetro.\n\nSe r está em centímetros, C também fica em centímetros. Podemos manter π na resposta exata ou usar a aproximação pedida no enunciado. Usar π ≈ 3,14 produz um resultado aproximado; isso não significa que π seja exatamente 3,14."
+      }
+    },
+    {
+      "id": "MAT16-V4-CIRCUMFERENCE-EXAMPLE",
+      "schemaVersion": 1,
+      "type": "worked-example",
+      "conceptIds": ["MAT.GEO.PERIMETER"],
+      "payload": {
+        "type": "worked-example",
+        "title": "Uma fita em volta de uma peça circular",
+        "content": "Uma peça circular tem raio de 5 cm. Qual comprimento de fita cobre uma volta completa, sem sobreposição? Tente decidir primeiro se precisamos medir o contorno ou a superfície.\n\nPrecisamos do contorno: C = 2π × 5 = 10π cm. Usando π ≈ 3,14, C ≈ 31,4 cm. Conferência: o diâmetro é 10 cm, então C = π × 10 também resulta em 10π cm.\n\nUsar 5 como diâmetro daria 5π cm, metade do comprimento correto. A unidade final é cm, pois a fita mede comprimento, não área."
+      }
+    },
+    {
+      "id": "MAT16-V4-CIRCLE-AREA-CONCEPT",
+      "schemaVersion": 1,
+      "type": "concept",
+      "conceptIds": ["MAT.MEASURE.AREA"],
+      "payload": {
+        "type": "concept",
+        "conceptId": "MAT.MEASURE.AREA",
+        "title": "Área circular: medir a superfície interna",
+        "content": "O círculo inclui a superfície delimitada pela circunferência. Para medir essa superfície, usamos A = πr². O raio aparece ao quadrado porque a área envolve duas dimensões. Se o dado for o diâmetro, obtenha primeiro r = d/2.\n\nCom r em centímetros, A fica em cm². Contorno e superfície respondem a perguntas diferentes: uma fita ao redor usa comprimento; o material para cobrir a peça usa área. Ao dobrar o raio, o comprimento dobra, mas a área fica quatro vezes maior, porque (2r)² = 4r²."
+      }
+    },
+    {
+      "id": "MAT16-V4-CIRCLE-AREA-EXAMPLE",
+      "schemaVersion": 1,
+      "type": "worked-example",
+      "conceptIds": ["MAT.MEASURE.AREA", "MAT.GEO.PERIMETER"],
+      "payload": {
+        "type": "worked-example",
+        "title": "Cobrir uma peça cujo diâmetro foi informado",
+        "content": "Uma peça circular tem diâmetro de 12 cm. Qual é sua área e qual é o comprimento de seu contorno? Use π ≈ 3,14 apenas no resultado aproximado.\n\nPrimeiro, r = 12/2 = 6 cm. Área: A = π × 6² = 36π cm² ≈ 113,04 cm². Contorno: C = π × 12 = 12π cm ≈ 37,68 cm.\n\nConferência: 113,04/36 = 3,14 e 37,68/12 = 3,14. As unidades distinguem as duas respostas. Usar o diâmetro 12 como raio daria 144π cm², quatro vezes a área correta."
+      }
+    },
+    {
+      "id": "MAT16-V4-CIRCUMFERENCE-EXPLORER",
+      "schemaVersion": 1,
+      "type": "numeric-explorer",
+      "conceptIds": ["MAT.GEO.PERIMETER"],
+      "payload": {
+        "mode": "linear",
+        "title": "Explore o comprimento da circunferência",
+        "variableLabel": "Raio",
+        "outputLabel": "Comprimento aproximado",
+        "unit": "cm",
+        "outputUnit": "cm",
+        "min": 0.5,
+        "max": 20,
+        "step": 0.5,
+        "initial": 5,
+        "slope": 6.28,
+        "intercept": 0,
+        "explanation": "Aqui fixamos π ≈ 3,14: C ≈ 2 × 3,14 × r = 6,28r. Compare os raios 5 cm e 10 cm: o comprimento aproximado passa de 31,4 cm para 62,8 cm. A relação é linear para o contorno; ela não calcula a área circular, que depende de r²."
+      }
+    },
+    {
+      "id": "MAT16-V4-CIRCULAR-MEASURES-CHECK",
+      "schemaVersion": 1,
+      "type": "warning",
+      "conceptIds": ["MAT.MEASURE.AREA", "MAT.GEO.PERIMETER"],
+      "payload": {
+        "type": "warning",
+        "title": "Confira raio, medida pedida e unidade",
+        "content": "Antes de calcular, pergunte: o dado é raio ou diâmetro? Preciso do contorno ou da superfície? Qual aproximação de π foi pedida?\n\nCom raio de 5 cm, C = 10π cm e A = 25π cm². Com raio de 10 cm, C = 20π cm e A = 100π cm². O contorno dobrou; a área quadruplicou. Não use uma relação linear para prever a área.\n\nEstes exemplos e a exploração são um complemento didático de medidas. As fórmulas foram conferidas no Apêndice C de Prealgebra 2e, OpenStax; o texto e as situações foram escritos para esta aula."
+      }
+    }
+  ]
+}

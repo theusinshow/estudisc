@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-10 — Geometry teaching complements published
+
+- Publish MAT-16 v4 with circumference and circular-area explanations/worked examples, an explicitly approximate circumference explorer and a units/scaling check; publish MAT-17 v4 with an explicit rectangular-prism volume/capacity example.
+- Retain historical v2/v3 content, all Question refs, original Concepts/objectives and append-only learner state; verify actual Admin Direct audits, mobile/desktop readers and updated private backup.
+- Add original reusable supplement definitions and engineering checks without new runtime/schema/assessment engines or copied source assets. Nine focused tests, lint, typecheck and packs pass.
+
 ## 2026-10-10 — Current IFSC edital coverage checked
 
 - Verify the current official 05/DEING/2027/1 PDF and compare all 24 program groups with the actual 132 latest published lessons and teaching blocks.

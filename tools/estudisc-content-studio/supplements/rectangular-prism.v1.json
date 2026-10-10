@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "MAT-17",
+  "baseVersion": 3,
+  "baseHash": "f1ffd38f7a8f475281326d52b1453722a47fc7b84c4c15c6dcbfa1e9d9dc6e6d",
+  "provenance": {
+    "origin": "original_authored_supplement",
+    "referencePurpose": "formula_verification_only",
+    "referenceUrl": "https://openstax.org/books/prealgebra-2e/pages/c-geometric-formulas",
+    "noSourceTextOrAssetsCopied": true,
+    "officialMappingCertified": false,
+    "independentEditorialReviewRecorded": false
+  },
+  "additions": [
+    {
+      "id": "MAT17-V4-RECTANGULAR-PRISM-EXAMPLE",
+      "schemaVersion": 1,
+      "type": "worked-example",
+      "conceptIds": ["MAT.VOLUME.PRISM", "MAT.VOLUME.UNITS"],
+      "payload": {
+        "type": "worked-example",
+        "title": "Paralelepípedo retângulo: comprimento, largura e altura",
+        "content": "Uma caixa tem formato de paralelepípedo retângulo, com medidas internas de 30 cm de comprimento, 20 cm de largura e 10 cm de altura. Quanto cabe nela, desconsiderando espaço perdido entre objetos?\n\nA base é retangular: A_base = 30 × 20 = 600 cm². O volume é V = A_base × H = 600 × 10 = 6.000 cm³. Neste sólido, podemos escrever diretamente V = comprimento × largura × altura = 30 × 20 × 10.\n\nComo 1.000 cm³ = 1 L, a capacidade interna é 6 L. Conferência: 6.000/10 = 600 cm², a área da base, e 6 × 1.000 = 6.000 cm³. Somar 30 + 20 + 10 dá uma medida linear, não o volume. A capacidade depende das medidas internas; dimensões externas não dão automaticamente o espaço útil.\n\nEste exemplo explicita a aplicação da fórmula de volume de prismas já estudada. A fórmula foi conferida no Apêndice C de Prealgebra 2e, OpenStax; a situação e a resolução foram escritas para esta aula."
+      }
+    }
+  ]
+}

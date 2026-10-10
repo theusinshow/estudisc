@@ -1,5 +1,7 @@
 # Conferência do edital IFSC 2027 com o Estudisc
 
+Atualização posterior à conferência, 10/10/2026: MAT-16 v4 e MAT-17 v4 já estão publicadas com o complemento de ensino abaixo: comprimento da circunferência, área circular, exemplos resolvidos, exploração do contorno e aplicação explícita do paralelepípedo. [Publicação e validação reais](../estudisc/GEOMETRY-COMPLEMENT-RELEASE.md). Os achados descritos a seguir registram a situação anterior à publicação. A etapa acrescentou exemplos/exploração, sem novas questões avaliadas ou certificação formal de todo subtópico.
+
 Conferência em 10/10/2026: os **24 grupos programáticos têm aulas correspondentes publicadas**. Não encontrei uma disciplina ou grupo inteiro ausente. Isso confirma uma base ampla para estudar agora; a análise também encontrou complementos que devem ser feitos antes de afirmar que nenhum subtópico falta.
 
 A referência atual foi obtida diretamente do [portal oficial de editais abertos](https://www.ifsc.edu.br/editais-com-inscricoes-abertas): [Edital 05/DEING/2027/1, técnicos integrados](https://www.ifsc.edu.br/documents/d/ingresso/edital-05_2027_1_tecnico_integrado_prova-ok-1-), publicado em 25/09/2026. O Anexo V está nas páginas físicas 41–43 do PDF de 44 páginas; o índice interno tem paginação desatualizada. Prova em 29/11/2026, às 14h, quatro horas, 28 questões, sete por área. A seleção dos subsequentes é outro edital e não foi usada nesta comparação.
