@@ -1,5 +1,7 @@
 # Estudisc — Implementation Plan
 
+2026-10-10 follow-up: Aiven Free production migration and authenticated reader verification are complete. Source-goal CIE-03/POR-02 v3 and science CIE-01/CIE-02/CIE-04 v3 are actually LIVE through validated Admin Direct. See [source-goal activation](SOURCE-GOAL-CONTENT-RELEASE.md) and [science batch](SCIENCE-PREDICTION-RELEASE.md). Software through Phase 14 remains delivered; broader Phase 9 content enrichment remains partial. Original missing objectives and source/rights/mapping limitations remain factual, not release approval gates. Exclude all these live identities and earlier enriched versions from repeat import/publication.
+
 2026-10-08 status: software/runtime/ADMIN increments through Phase 14 have accepted implementations; protected releases for Phases 10–14 are live. Final foundation/routine/resume flags, exact additive-table readiness and owned backup/catalog/metadata consumers are tracked in [FINAL-EVOLUTION-ROLLOUT.md](FINAL-EVOLUTION-ROLLOUT.md) and the top of PLANS.md. Phase 9 has ten released source-defined enriched lesson identities; the remaining content exceptions are not claimed complete. Preserve the historical audit/readiness distinction and Phase 15 deferral.
 
 Date: 2026-10-06. Base: `d38f640`, `main`. Inputs: [architecture](PRODUCT_ARCHITECTURE.md), [gap analysis](IMPLEMENTATION-GAP-ANALYSIS.md), [routing policy](MODEL-ROUTING-POLICY.md), source pack and existing accepted ADRs.
