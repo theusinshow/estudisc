@@ -2,6 +2,8 @@
 
 ## Problem
 
+Follow-up 2026-10-10: the reversible proposed-goal contract is defined by ADR 0058 and implemented. CIE-03 v3 and POR-02 v3 are now actually LIVE through Admin Direct, adding one source-bound prediction each. Actual source/author matches, retained originals/Questions/user-state fingerprints, authenticated readers and full private backup passed; see ../SOURCE-GOAL-CONTENT-RELEASE.md. Exclude both from repeat import/publication. Reuse this accepted contract for clearly specified source cases; escalate only concrete unresolved pedagogical selection. The 113 absent original objectives remain historical absences, regardless of proposed goals.
+
 Software/runtime/ADMIN consumers through Phase 14 are implemented and tested. Phase 9 content enrichment is partial: ten identities/seventeen source-defined mathematics explorers are actually released. Do not present these pilots as enrichment of all 132 lessons. Original 132 identities/1,144 shared Questions and published historical versions remain intact.
 
 The accepted local extraction of 132 historical source versions reports 113 lessons without declared original objectives, 117 source findings and zero reusable asset matches. All generated sidecars are proposals with factual UNREVIEWED status. The owner's standing social-project instruction waives a human/independent editorial release gate; it does not supply missing source objectives, rights, official mappings or pedagogical decisions.

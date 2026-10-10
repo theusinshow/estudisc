@@ -50,6 +50,8 @@ The unchanged application had already passed the full 447-test, 58-browser-test,
 
 ## Remaining independent work
 
+Follow-up 2026-10-10: normal Matheus ADMIN sign-in and authenticated Home/history/progress/planner/lesson verification now passed. Both prepared CIE-03/POR-02 v3 candidates are actually published through Admin Direct; a full post-publication Aiven backup is verified. See [actual content activation](SOURCE-GOAL-CONTENT-RELEASE.md). The pending-session statements below record the earlier migration checkpoint, not an outstanding blocker.
+
 The fresh browser app tab requires its normal private profile sign-in. Authenticated UI acceptance and the prepared CIE-03/POR-02 Admin Direct activations are pending that session; they are not editorial approval requests. The source-bound candidates were revalidated but have not been imported or published. Broader lesson enrichment remains a distinct unfinished content lane.
 
 Free capacity remains 1 GB / 20 total connections and the provider can power off unused services. Monitor actual activity and connection demand; no SLA or unlimited-capacity promise is made. The pre-existing Aiven Developer service was not modified by this migration. Paid usage accrued during the authorized temporary Neon recovery may still appear in billing; its current plan is Free.

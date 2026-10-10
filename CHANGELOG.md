@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-10 — Source-derived goals published through Admin Direct
+
+- Publish CIE-03 v3 and POR-02 v3 after actual authenticated preview/import and engineering validation; each adds one source-derived prediction with an explicitly proposed goal.
+- Verify actual Admin Direct audits, unchanged historical versions, Question and append-only user-state fingerprints, authenticated lesson/history/progress/planner readers and a complete private post-publication backup.
+- Retain absent original objectives and source/rights/mapping caveats. Broader content enrichment remains partial; no independent editorial review was fabricated.
+
 ## 2026-10-10 — Production PostgreSQL moved to Aiven Free
 
 - Copy the complete original database through verified logical snapshots to Aiven Free, preserving all 59 tables / 30,091 records, schema, journal, immutable versions and append-only history with the original UTF8/builtin C.UTF-8 settings.

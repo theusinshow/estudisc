@@ -11,7 +11,11 @@
     "aliasVerified": true,
     "paused": false,
     "databaseVariable": "DATABASE_URL",
-    "existingVariableTargetsPreserved": ["production", "preview", "development"]
+    "existingVariableTargetsPreserved": [
+      "production",
+      "preview",
+      "development"
+    ]
   },
   "target": {
     "service": "estudisc-postgres",
@@ -32,7 +36,19 @@
     "sourceWritesFrozen": true,
     "sharedExportedSnapshotForDumpAndInventory": true,
     "exactComparison": true,
-    "compared": ["table inventory and row hashes", "columns", "constraints", "indexes", "policies", "sequences", "triggers", "functions", "extensions", "database locale and encoding", "large objects"]
+    "compared": [
+      "table inventory and row hashes",
+      "columns",
+      "constraints",
+      "indexes",
+      "policies",
+      "sequences",
+      "triggers",
+      "functions",
+      "extensions",
+      "database locale and encoding",
+      "large objects"
+    ]
   },
   "verification": {
     "databaseHealthHttp": 200,
@@ -43,7 +59,7 @@
     "targetApplicationConnectionObserved": true,
     "temporaryWriteRolledBack": true,
     "noOfficialAttemptOrEvidenceCreatedByMigration": true,
-    "authenticatedUi": "Awaiting normal profile sign-in; no credential guessing or fabricated acceptance."
+    "authenticatedUi": "Verified 2026-10-10: actual ADMIN profile 200, proposed-goal lesson readers and Home/history/progress/planner 200 without data-unavailable/sign-in errors."
   },
   "sourceRetention": {
     "provider": "Neon",
@@ -57,7 +73,8 @@
   "content": {
     "corpusReimported": false,
     "historicalPublishedVersionsRewritten": false,
-    "pendingPreparedLessons": ["CIE-03", "POR-02"],
-    "preparedCandidatesPublished": false
+    "pendingPreparedLessons": [],
+    "preparedCandidatesPublished": true,
+    "followUpReceipt": "SOURCE-GOAL-CONTENT-RELEASE.json"
   }
 }
