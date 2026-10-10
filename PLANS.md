@@ -2,6 +2,16 @@
 
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
+### Source-defined energy and condensation — 2026-10-10
+
+Concrete continuation: [next bounded batch](docs/estudisc/NEXT-ENRICHMENT-BATCH.md) selects CIE-12/CIE-13/CIE-14 source-defined mixtures/separation/transformation scenarios. Fresh actual source/hash/Question validation remains mandatory; this selection is not publication. Exclude CIE-22's stale historical v2. Preserve the accepted recipe and route only actual unresolved pedagogical/contract exceptions.
+
+Final combined acceptance: full pnpm lint PASS; pnpm test 455 PASS / three optional real-PostgreSQL SKIP (143 files passed); current typecheck/packs and actual mobile/desktop verification PASS. Both increments' production content is already live and full private backups verified. Runtime source is unchanged; no repeat deployment/build/unchanged full browser suite is needed for these data-only activations.
+
+COMPLETED: CIE-05/CIE-08 v3 are LIVE after exact source/author checks, authenticated preview/import/Admin Direct. Immutable old payload/block/Activity/Question and append-only history comparisons passed after each lesson and readers. Actual mobile/representative desktop/label/focus/visual checks, nine focused tests, lint/typecheck/packs and private full backup/archive passed. [Actual receipt](docs/estudisc/SCIENCE-PHENOMENA-RELEASE.md). NEXT ACTION: remaining source/interaction selection from compact summaries/current hashes, exclude all live identities and preserve the explicit exception handoff for unsupported pedagogy; independently scored circle Questions remain a separate existing-contract increment. Do not force prediction into every lesson merely for coverage.
+
+Continue the completed geometry increment with CIE-05/CIE-08, using existing recipe v2 and exact worked examples. CIE-05 anticipates the LED energy transformation/conservation; CIE-08 anticipates condensation outside a cold glass. Fresh source/author/publication binding must match local v2 before preparing each v3. Acceptance: source-derived proposed goal, existing Concept, exact quotes, one prediction per lesson, preserved old content/Question/history fingerprints, focused recipe/import tests, actual mobile readers and Admin Direct audit; updated private backup and receipt. No new pedagogical algorithm, physics simulation, assessed Question or renderer.
+
 ### Geometry teaching complement — 2026-10-10
 
 COMPLETED: MAT-16 v4/MAT-17 v4 imported/published through actual Admin Direct. Source and 29/14 Question refs retained, all old v2/v3 and Question/user-state fingerprints passed after each activation and readers; nine focused tests plus lint/typecheck/packs/diff passed. Actual mobile/desktop examples, labelled/focusable circumference explorer and initial 31.4 cm output verified, private backup/archive passed. [Actual release](docs/estudisc/GEOMETRY-COMPLEMENT-RELEASE.md). NEXT ACTION: bounded source-defined CIE-05/CIE-08 phenomena via the accepted prediction recipe, excluding CIE-07 stale v2. This increment adds solved practice/exploration, not new scored Questions; do not claim all topic retrieval/whole-corpus enrichment complete.

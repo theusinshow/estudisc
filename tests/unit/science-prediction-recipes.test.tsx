@@ -13,7 +13,9 @@ import {sourceGoalPredictionSchema} from '@/features/import/application/source-g
 it.each([
  ['distance-displacement.v2.json','CIE-01','200 m','deslocamento final é zero'],
  ['inclined-plane.v2.json','CIE-02','distância do percurso','menor força'],
- ['convection.v2.json','CIE-04','mais quente no fundo tende a subir','Convecção térmica']
+ ['convection.v2.json','CIE-04','mais quente no fundo tende a subir','Convecção térmica'],
+ ['led-energy.v2.json','CIE-05','Uma lâmpada LED recebe energia elétrica','a energia total é conservada'],
+ ['cold-glass-condensation.v2.json','CIE-08','Gotas aparecem do lado externo','Vapor de água do ar perde energia e condensa']
 ])('validates the source-defined prediction and preserved import context: %s',(file,id,observation,conclusion)=>{
  const recipe=predictionEnrichmentRecipeSchema.parse(JSON.parse(readFileSync(`tools/estudisc-content-studio/recipes/${file}`,'utf8')));
  const pack=loadBlueprintCorpus(process.cwd()).map(c=>c.pack).find(p=>p.track.modules.some(m=>m.lessons.some(l=>l.id===id)))!;

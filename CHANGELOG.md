@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-10 — Source-defined energy and condensation predictions published
+
+- Publish CIE-05/CIE-08 v3 with one source-quoted proposed-goal prediction each, using the existing recipe and renderer for LED energy transformation and condensation outside a cold glass.
+- Preserve original objectives/Concept links, historical blocks, eight Question refs per lesson and all append-only study fingerprints; verify actual Admin Direct audits, mobile readers, representative desktop/focus and updated private backup.
+- Extend the pinned science recipe tests; no new runtime engine or assessment Question is introduced.
+
 ## 2026-10-10 — Geometry teaching complements published
 
 - Publish MAT-16 v4 with circumference and circular-area explanations/worked examples, an explicitly approximate circumference explorer and a units/scaling check; publish MAT-17 v4 with an explicit rectangular-prism volume/capacity example.

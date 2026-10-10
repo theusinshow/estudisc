@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-10",
+  "status": "LIVE_SOURCE_DEFINED_PHENOMENA_VERIFIED",
+  "production": "https://vecta-three.vercel.app",
+  "mode": "admin_direct",
+  "applicationRuntimeChanged": false,
+  "lessons": [
+    {
+      "lessonId": "CIE-05",
+      "baseVersion": 2,
+      "newVersion": 3,
+      "sourceHash": "7e2cc1a654a9270bd24c0e61c188464f35ffb872cb7d3ee4dce60ca028f4592c",
+      "contentHash": "7f9ab2ccd4d77049b516f0b65044c1e404cc6ff1400599e62d729ae313834496",
+      "questionReferences": 8,
+      "addedBlocks": 1,
+      "previewHttp": 200,
+      "importHttp": 201,
+      "publicationHttp": 200,
+      "audit": {
+        "lessonId": "CIE-05",
+        "version": 3,
+        "status": "published",
+        "mode": "admin_direct",
+        "createdAt": "2026-10-10T21:07:18.185Z",
+        "editorialReviews": 0,
+        "actorMatchesActualAuthor": true
+      },
+      "mobile": {
+        "path": "/lessons/CIE-05",
+        "viewport": 375,
+        "goalVisible": true,
+        "predictionRegion": true,
+        "label": "Sua previsão",
+        "responseUntouched": true,
+        "overflow": false,
+        "unavailable": false
+      }
+    },
+    {
+      "lessonId": "CIE-08",
+      "baseVersion": 2,
+      "newVersion": 3,
+      "sourceHash": "e066bd6dfbe49b2fde7f67e7d9aa7d2cca230ced51a072712c54f2bf47b11019",
+      "contentHash": "f8a62f5480cbdfc6295a9fe44edebcb511346ee382bbc708501fec2c44ee5119",
+      "questionReferences": 8,
+      "addedBlocks": 1,
+      "previewHttp": 200,
+      "importHttp": 201,
+      "publicationHttp": 200,
+      "audit": {
+        "lessonId": "CIE-08",
+        "version": 3,
+        "status": "published",
+        "mode": "admin_direct",
+        "createdAt": "2026-10-10T21:08:09.199Z",
+        "editorialReviews": 0,
+        "actorMatchesActualAuthor": true
+      },
+      "mobile": {
+        "path": "/lessons/CIE-08",
+        "viewport": 375,
+        "goalVisible": true,
+        "predictionRegion": true,
+        "label": "Sua previsão",
+        "responseUntouched": true,
+        "keyboardFocusable": true,
+        "overflow": false,
+        "unavailable": false
+      }
+    }
+  ],
+  "desktop": {
+    "path": "/lessons/CIE-08",
+    "viewport": 1440,
+    "predictionRegion": true,
+    "goalVisible": true,
+    "overflow": false
+  },
+  "preserved": {
+    "identities": 132,
+    "historicalPayloadsBlocksActivities": true,
+    "questionAndUserStateFingerprints": true,
+    "counts": [
+      {
+        "table": "questions",
+        "count": "1284"
+      },
+      {
+        "table": "question_versions",
+        "count": "1284"
+      },
+      {
+        "table": "attempts",
+        "count": "106"
+      },
+      {
+        "table": "concept_evidence",
+        "count": "127"
+      },
+      {
+        "table": "study_events",
+        "count": "129"
+      }
+    ],
+    "originalMissingObjectivesAndMappings": true,
+    "noScoredQuestionAdded": true,
+    "noResponseSubmitted": true,
+    "noIndependentReviewFabricated": true
+  },
+  "validation": {
+    "focusedTests": 9,
+    "files": 3,
+    "fullTestsPassed": 455,
+    "optionalRealPostgresSkipped": 3,
+    "fullTestFilesPassed": 143,
+    "fullLint": "PASS",
+    "typecheck": "PASS",
+    "packs": "PASS",
+    "mobileAndRepresentativeDesktop": "PASS",
+    "boundedVisual": "PASS",
+    "diff": "PASS"
+  },
+  "backup": {
+    "complete": true,
+    "private": true,
+    "sha256": "7f37830a844e125240df5992acffd4aa53efce97df1208a214848fd36efda845",
+    "archiveListParsed": true
+  },
+  "remaining": "Remaining content selection/enrichment and independently scored circular retrieval remain partial."
+}
