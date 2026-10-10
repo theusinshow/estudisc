@@ -2,6 +2,12 @@
 
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
+### Current-edition IFSC coverage audit — 2026-10-10
+
+COMPLETED: official open-edital link/current PDF hash/Anexo V verified, read-only actual latest inventory 132/132 published, and all 24 program groups compared with lesson/block evidence. Six lexical misses manually reconciled as equivalent teaching/spelling rather than automatic gaps. Report distinguishes represented groups from exhaustive depth/official QA. [Matrix and concrete complement](docs/ifsc/IFSC-2027-COVERAGE-AUDIT-2026-10-10.md). NEXT ACTION: first add source-supported circumference length/standalone circular-area practice and an explicit rectangular-prism example through compatible additive next-version enrichment; preserve prior versions/Questions and validate engineering before authorized direct release. Broad geometry wording does not explicitly name circle, so the report does not invent a new literal edital item. No data writes were made during this audit.
+
+User requested online discovery of the official 2027 technical-integrated exam edital and comparison against available Estudisc lessons. Read only: verify official publication and current PDF/Anexo V, inventory the four audited source packs and actual latest published lesson statuses, then compare every program item with concrete lesson/block/Question evidence. Distinguish present content, partial/no teaching coverage and unverified formal mapping; do not infer completeness from 132 identities or use historical editions as the current edital. Record a concise coverage matrix and actionable gaps. No content/schema/production publication changes are part of this audit.
+
 ### Next source-defined prediction batch — 2026-10-10
 
 COMPLETED: CIE-01/CIE-02/CIE-04 v3 actually published through real ADMIN preview/import/Admin Direct. Exact source/Question bindings, actual publication audits and normalized historical/user-state fingerprint comparisons passed after each activation and after readers. Three mobile readers and representative desktop/label/focus checks passed; seven focused tests, lint/typecheck/packs/diff passed. [Actual release](docs/estudisc/SCIENCE-PREDICTION-RELEASE.md). NEXT ACTION: compact remaining source selection, reuse accepted recipe v2 where scenarios/conclusions support it, inspect current CIE-06 separately rather than use stale v2, and retain unsupported pedagogical cases for precise routing. This and earlier live identities must not be activated again.

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-10 — Current IFSC edital coverage checked
+
+- Verify the current official 05/DEING/2027/1 PDF and compare all 24 program groups with the actual 132 latest published lessons and teaching blocks.
+- Record broad topic availability without claiming exhaustive depth or formal independent QA. Prioritize explicit circumference teaching/practice and clearer rectangular-prism application; retain the existing circular-base area content.
+- Perform the audit read-only; no lesson, Question, mapping or learner state was modified.
+
 ## 2026-10-10 — Three source-defined science predictions released
 
 - Publish CIE-01, CIE-02 and CIE-04 v3 through actual Admin Direct, adding one source-quoted proposed-goal prediction per lesson for displacement, inclined planes and convection.
