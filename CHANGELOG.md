@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-10 — Gravity and reading predictions complete the continuous batch
+
+- Publish CIE-38/POR-03/POR-13 v3 for mass/weight, inference limits and connector relations, completing four source-defined batches / 12 newly enriched identities in this continuation.
+- Verify actual Admin Direct audits, all historical/Question/study fingerprints, reader labels/focus/layout and full protected backups; final lint/typecheck/packs and 467 tests pass, with three optional real-PostgreSQL skips.
+- Record the next scored-enrichment contract boundary and compact Terra handoff. No editorial review gate or independent approval is fabricated; whole-corpus enrichment remains partial.
+
+## 2026-10-10 — Environmental and evolution predictions activated
+
+- Publish CIE-21/CIE-23/CIE-35 v3 with source-defined proposed-goal predictions for environmental action, habitat fragmentation and random population reduction; preserve the original conditional language.
+- Resolve the pre-existing long-heading overflow through protected PR #20 and verify actual production heading wrapping and renewed environment reader acceptance.
+- Preserve historical/Question/study fingerprints and complete private backup; no numerical biological simulation or new canonical engine.
+
 ## 2026-10-10 — Long lesson titles fit narrow screens
 
 - Allow the existing lesson heading to wrap an overlong word instead of widening the page. Actual CIE-21 title previously produced a 378 px document at 375 px, including its historical v2 reader.

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-03",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "97bf0a525a73066ca2cc4eabbbf096e3f3d007d4ea30c540bebcc8186f4e6c85",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-03-source-prediction-v3",
+      "beforeBlockId": "POR-03-B07",
+      "sourceBlockHash": "37e339a9ee3faafe59165bbabf3c39e05e613c8930098d080983775dbfc96a90",
+      "sourceQuote": "Ao entrar na sala, Caio colocou o guarda-chuva pingando ao lado da porta e disse: “Ainda bem que trouxe outra camiseta na mochila.”\n\nÉ razoável inferir que Caio se molhou ou enfrentou chuva; não se pode concluir onde choveu ou quanto tempo durou.",
+      "conceptId": "por.por-03-c05.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Formular uma inferência apoiada nas pistas do texto, respeitando os limites do que é possível concluir sobre a situação de Caio.",
+      "parameters": {
+        "title": "Antecipe o que as pistas permitem concluir",
+        "promptQuote": "Ao entrar na sala, Caio colocou o guarda-chuva pingando ao lado da porta e disse: “Ainda bem que trouxe outra camiseta na mochila.”",
+        "observationQuote": "Ao entrar na sala, Caio colocou o guarda-chuva pingando ao lado da porta e disse: “Ainda bem que trouxe outra camiseta na mochila.”\n\nÉ razoável inferir que Caio se molhou ou enfrentou chuva; não se pode concluir onde choveu ou quanto tempo durou.",
+        "explanationQuote": "É razoável inferir que Caio se molhou ou enfrentou chuva; não se pode concluir onde choveu ou quanto tempo durou."
+      }
+    }
+  ]
+}

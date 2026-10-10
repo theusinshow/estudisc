@@ -157,5 +157,17 @@
     "sha256": "1fc06afe0878644e68a408d994b45b4f98d7be9b6ae0c1ffd3a5ce4508398b72",
     "archiveListParsed": true
   },
-  "remaining": "Whole-corpus enrichment remains partial; no full-topic depth/official mapping or additional scored-question coverage claimed."
+  "remaining": "Whole-corpus enrichment remains partial; no full-topic depth/official mapping or additional scored-question coverage claimed.",
+  "combinedFinalAcceptance": {
+    "fullLint": "PASS",
+    "typecheck": "PASS",
+    "packs": "PASS",
+    "fullTestsPassed": 467,
+    "optionalRealPostgresSkipped": 3,
+    "fullTestFilesPassed": 143,
+    "runtimeReleaseBuild": "PASS",
+    "runtimeReleaseE2ePassed": 58,
+    "runtimeReleaseFlagGatedE2eSkipped": 38,
+    "lastDataOnlyChangesReusedVerifiedRuntime": true
+  }
 }
