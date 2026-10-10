@@ -2,6 +2,8 @@
 
 Completed database cutover on 2026-10-10. The Estudisc production alias uses the existing application code on Aiven PostgreSQL Free. The original Neon installation was independently verified back on Free; its data and the complete private backup remain intact. [Machine-readable receipt](AIVEN-MIGRATION-RELEASE.json).
 
+The durable hosting choice and scope/limits are recorded in [ADR 0059](../ADR/0059-aiven-free-production-postgresql.md).
+
 The authenticated Aiven Console confirmed estudisc-postgres / Free-1-1gb. It had powered off from initial inactivity; the existing free service was restarted, without a paid upgrade. Its connection was acquired through the authenticated UI directly into the restricted private directory, never into chat/Git. Initial DNS absence cleared when service rebuilding finished.
 
 ## Copy and consistency verification
