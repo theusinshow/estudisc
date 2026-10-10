@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-10 — Long lesson titles fit narrow screens
+
+- Allow the existing lesson heading to wrap an overlong word instead of widening the page. Actual CIE-21 title previously produced a 378 px document at 375 px, including its historical v2 reader.
+- Preserve the approved font, tokens, title text and semantic heading. Full lint/typecheck/464 tests/packs/build passed; browser and production verification are recorded in the subsequent release receipt.
+
 ## 2026-10-10 — Chemistry and biology source-defined predictions published
 
 - Publish CIE-12/CIE-13/CIE-14 v3 for mixtures/phases, separation and chemical transformation, then CIE-15/CIE-16/CIE-19 v3 for cell type, ATP/respiration and decomposer nutrient recycling.
