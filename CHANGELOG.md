@@ -1,5 +1,59 @@
 # Changelog
 
+## 2026-10-10 — Long lesson titles fit narrow screens
+
+- Allow the existing lesson heading to wrap an overlong word instead of widening the page. Actual CIE-21 title previously produced a 378 px document at 375 px, including its historical v2 reader.
+- Preserve the approved font, tokens, title text and semantic heading. Full lint/typecheck/464 tests/packs/build passed; browser and production verification are recorded in the subsequent release receipt.
+
+## 2026-10-10 — Chemistry and biology source-defined predictions published
+
+- Publish CIE-12/CIE-13/CIE-14 v3 for mixtures/phases, separation and chemical transformation, then CIE-15/CIE-16/CIE-19 v3 for cell type, ATP/respiration and decomposer nutrient recycling.
+- Preserve each historical version, eight Question refs per lesson and complete Question/Attempt/evidence/study-event fingerprints. Verify actual Admin Direct author/audits, mobile readers, representative focus/desktop/visuals and full private backups.
+- Reuse accepted recipe v2 and existing prediction/resume/fallback; original absent goals/links stay absent, with no independent review or mapping invented. Skip stale local CIE-17/CIE-18 v2.
+
+## 2026-10-10 — Source-defined energy and condensation predictions published
+
+- Publish CIE-05/CIE-08 v3 with one source-quoted proposed-goal prediction each, using the existing recipe and renderer for LED energy transformation and condensation outside a cold glass.
+- Preserve original objectives/Concept links, historical blocks, eight Question refs per lesson and all append-only study fingerprints; verify actual Admin Direct audits, mobile readers, representative desktop/focus and updated private backup.
+- Extend the pinned science recipe tests; no new runtime engine or assessment Question is introduced.
+
+## 2026-10-10 — Geometry teaching complements published
+
+- Publish MAT-16 v4 with circumference and circular-area explanations/worked examples, an explicitly approximate circumference explorer and a units/scaling check; publish MAT-17 v4 with an explicit rectangular-prism volume/capacity example.
+- Retain historical v2/v3 content, all Question refs, original Concepts/objectives and append-only learner state; verify actual Admin Direct audits, mobile/desktop readers and updated private backup.
+- Add original reusable supplement definitions and engineering checks without new runtime/schema/assessment engines or copied source assets. Nine focused tests, lint, typecheck and packs pass.
+
+## 2026-10-10 — Current IFSC edital coverage checked
+
+- Verify the current official 05/DEING/2027/1 PDF and compare all 24 program groups with the actual 132 latest published lessons and teaching blocks.
+- Record broad topic availability without claiming exhaustive depth or formal independent QA. Prioritize explicit circumference teaching/practice and clearer rectangular-prism application; retain the existing circular-base area content.
+- Perform the audit read-only; no lesson, Question, mapping or learner state was modified.
+
+## 2026-10-10 — Three source-defined science predictions released
+
+- Publish CIE-01, CIE-02 and CIE-04 v3 through actual Admin Direct, adding one source-quoted proposed-goal prediction per lesson for displacement, inclined planes and convection.
+- Add reusable pinned recipe v2 files and source/import/renderer validation. Verify unchanged original versions, Questions and append-only history after every activation; check actual mobile readers, labels/focus and desktop layout.
+- Exclude CIE-06 after detecting its newer production version. Preserve absent original objectives, provenance caveats and factual independent-review state.
+
+## 2026-10-10 — Source-derived goals published through Admin Direct
+
+- Publish CIE-03 v3 and POR-02 v3 after actual authenticated preview/import and engineering validation; each adds one source-derived prediction with an explicitly proposed goal.
+- Verify actual Admin Direct audits, unchanged historical versions, Question and append-only user-state fingerprints, authenticated lesson/history/progress/planner readers and a complete private post-publication backup.
+- Retain absent original objectives and source/rights/mapping caveats. Broader content enrichment remains partial; no independent editorial review was fabricated.
+
+## 2026-10-10 — Production PostgreSQL moved to Aiven Free
+
+- Copy the complete original database through verified logical snapshots to Aiven Free, preserving all 59 tables / 30,091 records, schema, journal, immutable versions and append-only history with the original UTF8/builtin C.UTF-8 settings.
+- Change only the existing server database connection and redeploy the unchanged Git-backed application. Verify live database health, actual target connectivity, rollback-only write and unauthenticated denial.
+- Return the original Neon installation to Free and retain its data read-only plus a protected full backup. Authenticated reader verification and the two prepared content activations remain separate pending steps.
+
+## 2026-10-09 — Authorized free PostgreSQL provisioning
+
+- Ignore external browser automation snapshots/logs and provide a restricted local connection-file path for the authorized Aiven migration.
+- Restore original production database connectivity through the explicitly authorized temporary Neon Launch reactivation; verify the real production database health endpoint and retain a complete private preliminary backup. Aiven migration remains pending target connection and final data validation.
+- Create the empty Aiven service estudisc-postgres under explicit user authorization; the Console confirms Free-1-1gb and zero-cost Free pricing, with DigitalOcean sfo assigned to the selected North America location.
+- Record actual provisioning state and full original-backup prerequisites. Production still uses its original database; this is not a data restore or quota-recovery claim.
+
 ## 2026-10-08 — Recoverable data-service interruption
 
 - Add a root route error boundary with retry/navigation and a clear unavailable-data message; keep raw SQL/backend/private details out of the interface and preserve the Plan-specific recovery.

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-08",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "e066bd6dfbe49b2fde7f67e7d9aa7d2cca230ced51a072712c54f2bf47b11019",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-08-source-prediction-v3",
+      "beforeBlockId": "CIE-08-B09",
+      "sourceBlockHash": "da844b80e59e69f949618bd7e682cedbee8f47aa96194028f3d55f3f8868a83b",
+      "sourceQuote": "Gotas aparecem do lado externo de um copo muito frio. Qual explicação é correta?\n\n1) Use esta relação: Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais. 2) Use esta relação: No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível. 3) Use esta relação: Fusão é a passagem de sólido para líquido; solidificação é o processo inverso. 4) Aplicando essas relações à situação, a conclusão correta é: Vapor de água do ar perde energia e condensa na superfície fria.",
+      "conceptId": "CIE-08-CON-06",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Prever a origem das gotas na superfície de um copo frio a partir da condensação do vapor de água do ar.",
+      "parameters": {
+        "title": "Preveja a origem das gotas no copo frio",
+        "promptQuote": "Gotas aparecem do lado externo de um copo muito frio. Qual explicação é correta?",
+        "observationQuote": "Gotas aparecem do lado externo de um copo muito frio. Qual explicação é correta?\n\n1) Use esta relação: Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais. 2) Use esta relação: No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível. 3) Use esta relação: Fusão é a passagem de sólido para líquido; solidificação é o processo inverso. 4) Aplicando essas relações à situação, a conclusão correta é: Vapor de água do ar perde energia e condensa na superfície fria.",
+        "explanationQuote": "1) Use esta relação: Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais. 2) Use esta relação: No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível. 3) Use esta relação: Fusão é a passagem de sólido para líquido; solidificação é o processo inverso. 4) Aplicando essas relações à situação, a conclusão correta é: Vapor de água do ar perde energia e condensa na superfície fria."
+      }
+    }
+  ]
+}

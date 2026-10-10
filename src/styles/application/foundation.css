@@ -48,6 +48,10 @@ a {
   max-width: none;
 }
 
+.content-panel > #lesson-title {
+  overflow-wrap: anywhere;
+}
+
 .record-list,
 .concept-list {
   display: grid;

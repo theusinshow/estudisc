@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-02",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "1957dafb1f3f58a090254d8b450ab062a099453bfd0becc595916f5b27a890f3",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-02-source-prediction-v3",
+      "beforeBlockId": "CIE-02-B09",
+      "sourceBlockHash": "10d167ac94ceb991debe6a352c6f69a3fbdc121d4a978a7e6820afd37cea8a24",
+      "sourceQuote": "Para colocar uma caixa pesada em um caminhão, uma pessoa usa uma rampa longa. Por que isso ajuda?\n\n1) Use esta relação: Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção. 2) Use esta relação: Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga. 3) Use esta relação: O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior. 4) Aplicando essas relações à situação, a conclusão correta é: A rampa aumenta a distância do percurso e permite realizar a elevação com menor força.",
+      "conceptId": "CIE-02-CON-04",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Relacionar o uso de uma rampa à menor força de elevação e à maior distância percorrida no exemplo original.",
+      "parameters": {
+        "title": "Preveja o efeito da rampa",
+        "promptQuote": "Para colocar uma caixa pesada em um caminhão, uma pessoa usa uma rampa longa. Por que isso ajuda?",
+        "observationQuote": "Para colocar uma caixa pesada em um caminhão, uma pessoa usa uma rampa longa. Por que isso ajuda?\n\n1) Use esta relação: Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção. 2) Use esta relação: Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga. 3) Use esta relação: O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior. 4) Aplicando essas relações à situação, a conclusão correta é: A rampa aumenta a distância do percurso e permite realizar a elevação com menor força.",
+        "explanationQuote": "1) Use esta relação: Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção. 2) Use esta relação: Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga. 3) Use esta relação: O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior. 4) Aplicando essas relações à situação, a conclusão correta é: A rampa aumenta a distância do percurso e permite realizar a elevação com menor força."
+      }
+    }
+  ]
+}

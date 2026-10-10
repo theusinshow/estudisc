@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-10",
+  "status": "LIVE_DATABASE_CUTOVER_VERIFIED",
+  "authorization": "Explicit user approval for temporary paid Neon recovery, private connection handling, complete restore and verified Aiven cutover; standing software release authorization.",
+  "production": {
+    "url": "https://vecta-three.vercel.app",
+    "projectId": "prj_VBKhxBJZnU7BHLSCXeBHloXFxmHr",
+    "deploymentId": "dpl_FTN5bU7Mgb9gynsBxxenDro3dE6H",
+    "gitCommit": "62e6bf1dfb6e8344037c676432c4cf08b5f86bd9",
+    "ready": true,
+    "aliasVerified": true,
+    "paused": false,
+    "databaseVariable": "DATABASE_URL",
+    "existingVariableTargetsPreserved": [
+      "production",
+      "preview",
+      "development"
+    ]
+  },
+  "target": {
+    "service": "estudisc-postgres",
+    "plan": "Free-1-1gb",
+    "database": "estudisc",
+    "postgresql": "18.6",
+    "tlsVerified": true,
+    "maxConnections": 20,
+    "databaseBytesAfterRestore": 30725823,
+    "locale": "C.UTF-8",
+    "localeProvider": "builtin"
+  },
+  "finalSnapshot": {
+    "dumpBytes": 4180972,
+    "sha256": "8c3023bc04f04310c44e5b1de9d81111a0017b6e55ee718271bff36a10ed5964",
+    "tables": 59,
+    "rows": 30091,
+    "sourceWritesFrozen": true,
+    "sharedExportedSnapshotForDumpAndInventory": true,
+    "exactComparison": true,
+    "compared": [
+      "table inventory and row hashes",
+      "columns",
+      "constraints",
+      "indexes",
+      "policies",
+      "sequences",
+      "triggers",
+      "functions",
+      "extensions",
+      "database locale and encoding",
+      "large objects"
+    ]
+  },
+  "verification": {
+    "databaseHealthHttp": 200,
+    "databaseHealthStatus": "ok",
+    "healthAfterNeonDowngrade": "ok",
+    "anonymousProfileHttp": 401,
+    "anonymousProfileCode": "auth_required",
+    "targetApplicationConnectionObserved": true,
+    "temporaryWriteRolledBack": true,
+    "noOfficialAttemptOrEvidenceCreatedByMigration": true,
+    "authenticatedUi": "Verified 2026-10-10: actual ADMIN profile 200, proposed-goal lesson readers and Home/history/progress/planner 200 without data-unavailable/sign-in errors."
+  },
+  "sourceRetention": {
+    "provider": "Neon",
+    "plan": "free_v3",
+    "planIndependentlyVerified": true,
+    "dataRetained": true,
+    "originalRoleReadOnly": true,
+    "privateCompleteBackupRetained": true,
+    "rollbackRequiresReconcilingNewTargetWrites": true
+  },
+  "content": {
+    "corpusReimported": false,
+    "historicalPublishedVersionsRewritten": false,
+    "pendingPreparedLessons": [],
+    "preparedCandidatesPublished": true,
+    "followUpReceipt": "SOURCE-GOAL-CONTENT-RELEASE.json"
+  }
+}

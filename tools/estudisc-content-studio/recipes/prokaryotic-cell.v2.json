@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-15",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "46329287c6512360ab10e259335cac2a6a0f6c534d2c9ac920da5944601ff02a",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-15-source-prediction-v3",
+      "beforeBlockId": "CIE-15-B09",
+      "sourceBlockHash": "7f57e4ca61da5d9561e4292716662c60637691ce5c0f94221c34f1a35a93a85c",
+      "sourceQuote": "Uma célula possui DNA, ribossomos e membrana plasmática, mas não apresenta núcleo delimitado por membrana. Como classificá-la?\n\n1) Use esta relação: A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes. 2) Use esta relação: Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma. 3) Use esta relação: Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas. 4) Aplicando essas relações à situação, a conclusão correta é: Como célula procariótica.",
+      "conceptId": "CIE-15-CON-02",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Distinguir células procarióticas e eucarióticas a partir das estruturas descritas no exemplo, sem confundir presença de DNA com presença de núcleo.",
+      "parameters": {
+        "title": "Antecipe a classificação da célula",
+        "promptQuote": "Uma célula possui DNA, ribossomos e membrana plasmática, mas não apresenta núcleo delimitado por membrana. Como classificá-la?",
+        "observationQuote": "Uma célula possui DNA, ribossomos e membrana plasmática, mas não apresenta núcleo delimitado por membrana. Como classificá-la?\n\n1) Use esta relação: A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes. 2) Use esta relação: Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma. 3) Use esta relação: Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas. 4) Aplicando essas relações à situação, a conclusão correta é: Como célula procariótica.",
+        "explanationQuote": "1) Use esta relação: A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes. 2) Use esta relação: Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma. 3) Use esta relação: Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas. 4) Aplicando essas relações à situação, a conclusão correta é: Como célula procariótica."
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-13",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "564111bf692e44102f1a5c916ddc9f69783ceff9603961ac2fb94a4619334871",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-13-source-prediction-v3",
+      "beforeBlockId": "CIE-13-B09",
+      "sourceBlockHash": "dd567cf6b264a6f1bb961d967aa2944f9e99e24063be5606fc3444fe16840ba5",
+      "sourceQuote": "Qual método é adequado para separar areia não dissolvida da água em uma mistura simples?\n\n1) Use esta relação: Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos. 2) Use esta relação: Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso. 3) Use esta relação: Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis. 4) Aplicando essas relações à situação, a conclusão correta é: Filtração.",
+      "conceptId": "CIE-13-CON-03",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Antecipar um método adequado para separar sólido não dissolvido de líquido, usando as propriedades apresentadas no exemplo.",
+      "parameters": {
+        "title": "Escolha como separar areia e água",
+        "promptQuote": "Qual método é adequado para separar areia não dissolvida da água em uma mistura simples?",
+        "observationQuote": "Qual método é adequado para separar areia não dissolvida da água em uma mistura simples?\n\n1) Use esta relação: Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos. 2) Use esta relação: Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso. 3) Use esta relação: Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis. 4) Aplicando essas relações à situação, a conclusão correta é: Filtração.",
+        "explanationQuote": "1) Use esta relação: Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos. 2) Use esta relação: Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso. 3) Use esta relação: Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis. 4) Aplicando essas relações à situação, a conclusão correta é: Filtração."
+      }
+    }
+  ]
+}

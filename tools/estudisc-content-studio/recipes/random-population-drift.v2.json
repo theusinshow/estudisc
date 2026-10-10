@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-35",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "767357e2eff3f49d7f360b50a7ac695a4ae330b8d7383b7f309a05277af4c5b5",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-35-source-prediction-v3",
+      "beforeBlockId": "CIE-35-B09",
+      "sourceBlockHash": "acaa246065111b4798e751796d0a5fbe3346f9d3dee77c37e820df89be0e8ee9",
+      "sourceQuote": "Uma tempestade reduz ao acaso uma pequena população, e os sobreviventes possuem frequências alélicas diferentes da população original. Qual mecanismo está exemplificado?\n\n1) Use esta relação: Mutação gera novas variantes de DNA e é uma fonte última de novos alelos. 2) Use esta relação: Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas. 3) Use esta relação: Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente. 4) Aplicando essas relações à situação, a conclusão correta é: Deriva genética por efeito aleatório de redução populacional.",
+      "conceptId": "CIE-35-CON-06",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Identificar o papel do acaso na mudança de frequências alélicas do cenário, sem atribuí-la automaticamente à seleção natural.",
+      "parameters": {
+        "title": "Antecipe a mudança após a redução ao acaso",
+        "promptQuote": "Uma tempestade reduz ao acaso uma pequena população, e os sobreviventes possuem frequências alélicas diferentes da população original. Qual mecanismo está exemplificado?",
+        "observationQuote": "Uma tempestade reduz ao acaso uma pequena população, e os sobreviventes possuem frequências alélicas diferentes da população original. Qual mecanismo está exemplificado?\n\n1) Use esta relação: Mutação gera novas variantes de DNA e é uma fonte última de novos alelos. 2) Use esta relação: Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas. 3) Use esta relação: Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente. 4) Aplicando essas relações à situação, a conclusão correta é: Deriva genética por efeito aleatório de redução populacional.",
+        "explanationQuote": "1) Use esta relação: Mutação gera novas variantes de DNA e é uma fonte última de novos alelos. 2) Use esta relação: Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas. 3) Use esta relação: Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente. 4) Aplicando essas relações à situação, a conclusão correta é: Deriva genética por efeito aleatório de redução populacional."
+      }
+    }
+  ]
+}

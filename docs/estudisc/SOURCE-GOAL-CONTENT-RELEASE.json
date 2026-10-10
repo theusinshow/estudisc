@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-10",
+  "status": "LIVE_CONTENT_ACTIVATION_VERIFIED",
+  "publicationMode": "admin_direct",
+  "authorization": "Standing social-project release authorization and continued session authorization, recorded through the actual authenticated ADMIN publisher.",
+  "production": {
+    "url": "https://vecta-three.vercel.app",
+    "deploymentId": "dpl_FTN5bU7Mgb9gynsBxxenDro3dE6H",
+    "gitCommit": "62e6bf1dfb6e8344037c676432c4cf08b5f86bd9",
+    "codeChanged": false
+  },
+  "lessons": [
+    {
+      "lessonId": "CIE-03",
+      "version": 3,
+      "status": "published",
+      "mode": "admin_direct",
+      "actorMatchesActualAuthor": true,
+      "editorialReviews": 0,
+      "createdAt": "2026-10-10T15:29:51.699Z",
+      "verified": true,
+      "sourceVersion": 2,
+      "addedPredictionBlocks": 1,
+      "retainedQuestionReferences": 8,
+      "sourceHash": "442cb4872542723a2db98a03be018b1467832e41f2f81999be2863e922c847c5",
+      "reader": {
+        "path": "/lessons/CIE-03",
+        "sourceGoalVisible": true,
+        "unavailable": false
+      },
+      "contentHash": "226af5d7e3b3917c2434e81a6866b1ac19dd010bec7be798d869f137441c7ed3"
+    },
+    {
+      "lessonId": "POR-02",
+      "version": 3,
+      "status": "published",
+      "mode": "admin_direct",
+      "actorMatchesActualAuthor": true,
+      "editorialReviews": 0,
+      "createdAt": "2026-10-10T15:31:57.231Z",
+      "verified": true,
+      "sourceVersion": 2,
+      "addedPredictionBlocks": 1,
+      "retainedQuestionReferences": 8,
+      "sourceHash": "1d2836f8b322f46d4f9accd3490b64d4d3796a4fb41466a0ddeb9df6372689b2",
+      "reader": {
+        "path": "/lessons/POR-02",
+        "sourceGoalVisible": true,
+        "unavailable": false
+      },
+      "contentHash": "0e975c7443204e20f13b3c284a2dfe238fb70909f9c257725b0fda1b851316eb"
+    }
+  ],
+  "preserved": {
+    "lessonIdentities": 132,
+    "originalPayloadsBlocksActivities": true,
+    "questionAndUserStateFingerprints": true,
+    "tableCounts": [
+      {
+        "table": "questions",
+        "count": "1284"
+      },
+      {
+        "table": "question_versions",
+        "count": "1284"
+      },
+      {
+        "table": "attempts",
+        "count": "106"
+      },
+      {
+        "table": "concept_evidence",
+        "count": "127"
+      },
+      {
+        "table": "study_events",
+        "count": "129"
+      }
+    ],
+    "historicalVersionsImmutable": true,
+    "noCorpusReimport": true,
+    "noOfficialAnswersSubmitted": true,
+    "noIndependentReviewFabricated": true,
+    "originalAbsentGoalsStillAbsent": true
+  },
+  "authenticatedReaders": [
+    {
+      "path": "/",
+      "status": 200,
+      "unavailable": false,
+      "signin": false
+    },
+    {
+      "path": "/history",
+      "status": 200,
+      "unavailable": false,
+      "signin": false
+    },
+    {
+      "path": "/progress",
+      "status": 200,
+      "unavailable": false,
+      "signin": false
+    },
+    {
+      "path": "/plan",
+      "status": 200,
+      "unavailable": false,
+      "signin": false
+    }
+  ],
+  "backup": {
+    "private": true,
+    "completeCustomArchive": true,
+    "archiveListParsed": true,
+    "sha256": "42ea75fe51a08a8936a0bffc693d594537243221b5d3bdaf942616f4a944a236"
+  },
+  "remaining": "Broader bounded content enrichment is partial; original objective/source/rights/mapping absences are not certified by publication."
+}

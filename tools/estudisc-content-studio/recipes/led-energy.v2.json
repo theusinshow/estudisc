@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-05",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "7e2cc1a654a9270bd24c0e61c188464f35ffb872cb7d3ee4dce60ca028f4592c",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-05-source-prediction-v3",
+      "beforeBlockId": "CIE-05-B09",
+      "sourceBlockHash": "cf0100048996e33c51d43e4ad56363ad8aeb9185e9c00da81d1238e697ee1afa",
+      "sourceQuote": "Uma lâmpada LED recebe energia elétrica. Qual descrição é adequada?\n\n1) Use esta relação: Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora. 2) Use esta relação: Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação. 3) Use esta relação: Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada. 4) Aplicando essas relações à situação, a conclusão correta é: Parte vira luz e parte se transforma em energia térmica; a energia total é conservada.",
+      "conceptId": "CIE-05-CON-05",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Prever a transformação da energia elétrica fornecida à lâmpada LED em luz e energia térmica, respeitando a conservação da energia.",
+      "parameters": {
+        "title": "Antecipe as transformações de energia na lâmpada",
+        "promptQuote": "Uma lâmpada LED recebe energia elétrica. Qual descrição é adequada?",
+        "observationQuote": "Uma lâmpada LED recebe energia elétrica. Qual descrição é adequada?\n\n1) Use esta relação: Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora. 2) Use esta relação: Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação. 3) Use esta relação: Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada. 4) Aplicando essas relações à situação, a conclusão correta é: Parte vira luz e parte se transforma em energia térmica; a energia total é conservada.",
+        "explanationQuote": "1) Use esta relação: Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora. 2) Use esta relação: Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação. 3) Use esta relação: Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada. 4) Aplicando essas relações à situação, a conclusão correta é: Parte vira luz e parte se transforma em energia térmica; a energia total é conservada."
+      }
+    }
+  ]
+}
