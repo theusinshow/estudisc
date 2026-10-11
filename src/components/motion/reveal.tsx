@@ -2,13 +2,12 @@
 
 /**
  * Staggered entry adapted from the React Bits AnimatedList item (https://reactbits.dev/components/animated-list),
- * without its scroll container: the element keeps its own semantics and layout, and inline styles are
- * cleared after the entrance so CSS hover/press transforms keep working.
+ * without its scroll container: the element keeps its own semantics and layout. Timing and travel follow the
+ * Design System motion tokens (opacity + 2–4 px, ≤180 ms, no blur).
  */
-import { animate } from "motion/react";
 import { type ReactNode, type RefObject, useRef } from "react";
 
-import { entranceEase, useEntrance } from "./use-entrance";
+import { playEntrance, useEntrance } from "./use-entrance";
 
 type RevealProps = Readonly<{
   as?: "div" | "li" | "section";
@@ -17,28 +16,17 @@ type RevealProps = Readonly<{
   children: ReactNode;
 }> & Readonly<Record<`aria-${string}` | `data-${string}`, string | undefined>>;
 
+const staggerSeconds = 0.03;
+
 export function Reveal({ as = "div", index = 0, className, children, ...attributes }: RevealProps) {
   const ref = useRef<HTMLElement>(null);
 
   useEntrance(ref, {
     hide: (element) => {
       element.style.opacity = "0";
-      element.style.transform = "translateY(14px)";
-      element.style.filter = "blur(4px)";
     },
-    play: (element) => {
-      const controls = animate(
-        element,
-        { opacity: [0, 1], transform: ["translateY(14px)", "translateY(0px)"], filter: ["blur(4px)", "blur(0px)"] },
-        { duration: 0.5, delay: Math.min(index, 8) * 0.06, ease: entranceEase }
-      );
-      void controls.then(() => {
-        element.style.removeProperty("opacity");
-        element.style.removeProperty("transform");
-        element.style.removeProperty("filter");
-      });
-      return () => controls.stop();
-    }
+    // A single element: its list position becomes the delay so siblings still enter in order.
+    play: (element) => playEntrance([element], { stagger: 0, delay: Math.min(index, 8) * staggerSeconds })
   });
 
   const Tag = as;

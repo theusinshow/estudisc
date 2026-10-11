@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { z } from "zod";
+import { useState } from "react";
 import {
   ArrowLeft, BookOpen, CalendarDays, ChartNoAxesColumnIncreasing, ClipboardCheck,
   Database, Download, FolderKanban, History, LogOut, Map, Medal,
@@ -30,31 +29,22 @@ const secondaryNavigationItems = [
   { label: "Exportar", href: "/exports", icon: Download, match: ["/exports"], adminOnly: true },
   { label: "Conquistas", href: "/achievements", icon: Medal, match: ["/achievements"] }
 ];
-const profileSchema = z.object({ role: z.enum(["ADMIN", "STUDENT"]).optional(), name: z.string().nullable().optional(), accountMode: z.boolean().optional() });
-type Profile = z.infer<typeof profileSchema>;
+/** Resolved on the server by AppShell for the current request; never cached across owners. */
+export type ShellProfile = Readonly<{ role: "ADMIN" | "STUDENT"; name: string | null; accountMode: boolean }>;
 
 function isCurrentRoute(pathname: string, matches: string[]) {
   return matches.some(match => match === "/" ? pathname === "/" : pathname.startsWith(match));
 }
 
-/** One profile read serves the topbar and navigation. Focus has no global navigation. */
-export function ShellNavigation({ studyNavigation, focus, exit }: Readonly<{
+/** One server profile read serves the topbar and navigation. Focus has no global navigation. */
+export function ShellNavigation({ studyNavigation, focus, exit, profile = null }: Readonly<{
   studyNavigation: boolean;
   focus: boolean;
   exit?: Readonly<{ href: string; label: string }>;
+  profile?: ShellProfile | null;
 }>) {
-  const [profile, setProfile] = useState<Profile | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname() ?? "/";
-  useEffect(() => {
-    if (focus) return;
-    const controller = new AbortController();
-    void fetch("/api/profile", { signal: controller.signal })
-      .then(async response => response.ok ? profileSchema.safeParse(await response.json()) : null)
-      .then(result => { if (result?.success) setProfile(result.data); }).catch(() => {});
-    return () => controller.abort();
-  }, [focus]);
-
   async function signOut() {
     await fetch("/api/session", { method: "DELETE" }).catch(() => {});
     window.location.replace(new URL("/auth/signin", window.location.origin).href);

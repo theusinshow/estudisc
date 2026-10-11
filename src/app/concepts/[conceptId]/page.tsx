@@ -36,7 +36,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
                 <Link href={`/lessons/${lesson.stableId}`}>
                   <strong>{lesson.title}</strong>
                   <span>{lesson.trackTitle}</span>
-                  <small>{lesson.activityCount} atividade relacionada</small>
+                  <small>{lesson.activityCount} {lesson.activityCount === 1 ? "atividade relacionada" : "atividades relacionadas"}</small>
                 </Link>
               </li>
             ))}
@@ -44,14 +44,14 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
         </section>
 
         <section className="module-section" aria-labelledby="concept-mastery-title">
-          <h2 id="concept-mastery-title">Mastery</h2>
-          <div className="mastery-panel" aria-label="Mastery do conceito">
-            <p className="technical-label">POLICY {concept.mastery.policyVersion}</p>
+          <h2 id="concept-mastery-title">Domínio</h2>
+          <div className="mastery-panel" aria-label="Domínio do conceito">
+            <p className="technical-label">Política {concept.mastery.policyVersion}</p>
             <p className="mastery-score">
               {concept.mastery.label} <span>{concept.mastery.level}/5</span>
             </p>
             <p className="lesson-text">
-              {concept.mastery.evidenceCount} evidência registrada. Força total: {concept.mastery.totalStrength}.
+              {concept.mastery.evidenceCount} {concept.mastery.evidenceCount === 1 ? "evidência registrada" : "evidências registradas"}. Força total: {concept.mastery.totalStrength}.
             </p>
             <ul>
               {concept.mastery.reasons.map((reason) => (

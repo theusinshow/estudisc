@@ -45,7 +45,7 @@
   font-size: var(--estudisc-typography-display-sizes-sm);
   font-weight: var(--estudisc-typography-display-weight);
   letter-spacing: 0;
-  line-height: 0.96;
+  line-height: 1.05; /* room for capital diacritics (É, Ã) on wrapped lines */
 }
 
 .auth-copy p {

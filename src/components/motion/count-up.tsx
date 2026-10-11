@@ -3,14 +3,13 @@
 /**
  * Adapted from React Bits CountUp (https://reactbits.dev/text-animations/count-up): the final value is
  * server-rendered and read by assistive technology; only the visible digits count up, and only when
- * `useEntrance` allows it.
+ * `useEntrance` allows it. A requestAnimationFrame loop replaces the motion library for this number.
  */
-import { animate } from "motion/react";
 import { useRef } from "react";
 
 import "./motion.css";
 
-import { entranceEase, useEntrance } from "./use-entrance";
+import { easeOutExpo, useEntrance } from "./use-entrance";
 
 type CountUpProps = Readonly<{ value: number; delay?: number; duration?: number; className?: string }>;
 
@@ -21,7 +20,7 @@ export function CountUp(props: CountUpProps) {
   return <CountUpDigits key={props.value} {...props} />;
 }
 
-function CountUpDigits({ value, delay = 0, duration = 1.1, className }: CountUpProps) {
+function CountUpDigits({ value, delay = 0, duration = 0.6, className }: CountUpProps) {
   const ref = useRef<HTMLSpanElement>(null);
 
   useEntrance(ref, {
@@ -29,15 +28,18 @@ function CountUpDigits({ value, delay = 0, duration = 1.1, className }: CountUpP
       element.textContent = formatter.format(0);
     },
     play: (element) => {
-      const controls = animate(0, value, {
-        duration,
-        delay,
-        ease: entranceEase,
-        onUpdate: (latest) => {
-          element.textContent = formatter.format(Math.round(latest));
-        }
-      });
-      return () => controls.stop();
+      let frame = 0;
+      const start = performance.now() + delay * 1000;
+      const tick = (now: number) => {
+        const progress = Math.max(0, now - start) / (duration * 1000);
+        element.textContent = formatter.format(Math.round(value * easeOutExpo(progress)));
+        if (progress < 1) frame = requestAnimationFrame(tick);
+      };
+      frame = requestAnimationFrame(tick);
+      return () => {
+        cancelAnimationFrame(frame);
+        element.textContent = formatter.format(value);
+      };
     }
   });
 
