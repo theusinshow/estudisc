@@ -83,6 +83,7 @@ export function RoutinePlanner({ initial }: Readonly<{ initial: RoutineState }>)
         <legend className="visually-hidden">{stepLabels[step]}</legend>
         {step === 0 && <>
           <p>Em quais dias você consegue estudar?</p>
+          {!enabledDays.length && <p>Selecione pelo menos um dia para habilitar Continuar. Você pode abrir a sessão em andamento sem cadastrar a rotina.</p>}
           <div className="routine-days">{draft.days.map(day => <label key={day.weekday}><input type="checkbox" checked={enabledDays.includes(day.weekday)} onChange={event => { setEnabledDays(current => event.target.checked ? [...current, day.weekday] : current.filter(value => value !== day.weekday)); update({ days: draft.days.map(item => item.weekday === day.weekday ? { ...item, minutes: event.target.checked ? 30 : 0 } : item) }); }} />{weekdayLabels[day.weekday]}</label>)}</div>
           <label className="routine-field">Fuso horário<select value={draft.timezone} onChange={event => update({ timezone: event.target.value })}>
             <option value="America/Sao_Paulo">Brasília</option><option value="America/Manaus">Manaus</option><option value="America/Rio_Branco">Rio Branco</option><option value="UTC">UTC</option>

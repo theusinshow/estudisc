@@ -15,12 +15,13 @@ export function StudyActionCard({ variant, title, reason, href, estimatedMinutes
   estimatedMinutes?: number;
   activityCount?: number;
 }>) {
-  return <Link className="next-card study-action-card" data-kind={variant} href={href}>
+  const ActionLink = href.startsWith("/study/") ? "a" : Link;
+  return <ActionLink className="next-card study-action-card" data-kind={variant} href={href}>
     <strong>{title}</strong><span>{reason}</span>
     {(activityCount !== undefined || estimatedMinutes !== undefined) && <span className="study-action-metadata">
       {activityCount !== undefined && <span>{activityCount} {activityCount === 1 ? "atividade" : "atividades"}</span>}
       {estimatedMinutes !== undefined && <span>~{estimatedMinutes} min</span>}
     </span>}
     <span className="study-action-cta">{actionLabels[variant]}<ArrowRight aria-hidden="true" /></span>
-  </Link>;
+  </ActionLink>;
 }

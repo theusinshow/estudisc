@@ -1,5 +1,11 @@
 # Estudisc current plan
 
+## Urgent student session access verification — 2026-10-10
+
+Screenshot follow-up: actual mobile preparation POST 200 while the old Plan remained visible during queued push/refresh; immediate busy reset hides navigation progress. Replace study-session entry with normal document navigation and keep pending feedback until navigation; use native links for saved sessions. Explain the routine wizard's existing disabled Continue prerequisite. Preserve API/ownership/session state. Add focused success/error/resume tests and browser acceptance, then full gates and protected Git-backed release; no production student impersonation or evidence changes.
+
+Public production health/sign-in and actual ADMIN session/pages returned 200. Read-only audit: all 14 saved sessions across two owners parse and retain frozen lesson/activity/Question references; no missing or non-published lesson references. Requested student's 12 sessions include one ACTIVE session. Session/resume/code-account tests 27 PASS; account-route/auth-readiness/dashboard tests 9 PASS. The project alias redirects anonymous users to Vercel login and must not be sent as the student link. [Exact checks and limits](docs/estudisc/SESSION-ACCESS-CHECK-2026-10-10.md). NEXT ACTION: normal Kauã sign-in through the public link; if the specific failure persists, inspect its exact URL/error or reproduce in an actual STUDENT browser session. No reproduced runtime defect, deployment, impersonation or student-state changes.
+
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
 ### Current safe checkpoint and next contract — 2026-10-10

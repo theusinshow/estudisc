@@ -23,7 +23,9 @@ it("keeps edits unsaved until preview and explicit apply; allows clearing/refill
   vi.stubGlobal("fetch", fetch);
   render(<RoutinePlanner initial={initial} />);
   expect(screen.getByRole("button", { name: "Continuar" })).toBeDisabled();
+  expect(screen.getByText(/Selecione pelo menos um dia para habilitar Continuar/)).toBeVisible();
   fireEvent.click(screen.getByRole("checkbox", { name: "Segunda" }));
+  expect(screen.queryByText(/Selecione pelo menos um dia para habilitar Continuar/)).not.toBeInTheDocument();
   fireEvent.click(screen.getByRole("button", { name: "Continuar" }));
   const minutes = screen.getByLabelText("Segunda · minutos");
   fireEvent.change(minutes, { target: { value: "" } });

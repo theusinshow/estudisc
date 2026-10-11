@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-10 — Reliable study session entry
+
+- Open prepared, resumed and transitioned study sessions with fresh document navigation; remove queued push/refresh and retain loading feedback until navigation.
+- Use normal document links for saved sessions on Today and Plan; retain API validation, owner isolation and frozen content.
+- Explain why routine setup Continue stays disabled before selecting a study day and that an existing session opens independently.
+
 ## 2026-10-10 — Gravity and reading predictions complete the continuous batch
 
 - Publish CIE-38/POR-03/POR-13 v3 for mass/weight, inference limits and connector relations, completing four source-defined batches / 12 newly enriched identities in this continuation.
