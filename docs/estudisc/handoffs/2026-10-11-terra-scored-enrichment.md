@@ -1,5 +1,7 @@
 # MODEL HANDOFF — Terra scored enrichment
 
+RESUME CHECKPOINT: isolated checkout `.local/lesson-evolution-finish-20261011`, base accepted main0e2a986 from PR23; READY public alias and actual narrow/mobile/desktop checks verified. Full522 tests,76 browser tests, eight required CI checks green. Post-release docs are retained as a safe local checkpoint; the original main worktree still contains Claude's unrelated changes. Resume here, do not stash/reset/switch the shared tree blindly.
+
 MODEL ESCALATION REQUIRED
 
 ## Current task

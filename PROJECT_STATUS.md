@@ -178,3 +178,5 @@ Preserve the production alias, authentication and existing catalog; use protecte
 ## Next action
 
 Complete the current Phase 3 acceptance evidence, then continue the Adaptive Session contract through existing modules; see [PLANS.md](PLANS.md) and [.estudisc-agent-context/NEXT.md](.estudisc-agent-context/NEXT.md). Do not repeat imports/publication or claim planner-readiness certification from publication. Historical implementation logs are in `docs/history/`.
+
+Verified release (2026-10-11): PR23/eight green required checks/merge0e2a986/READY public alias; actual narrow Question overflow cases resolved at320px, all ten second-batch375px readers and desktop pass. Twenty Portuguese additions and nine mathematics continuations LIVE; original data/history unchanged and backups verified. Next: the user-confirmed Terra scored-enrichment contract. [Actual acceptance](docs/estudisc/LESSON-EVOLUTION-ACCEPTANCE-2026-10-11.md).

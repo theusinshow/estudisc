@@ -1,6 +1,6 @@
 # Estudisc current plan
 
-LIVE: the second Portuguese ten-lesson increment (POR-01/06/08/11/15/18/20/21/22/24 v3), exact originals/80 refs preserved through actual Admin Direct. Both complete backups and publication/history checks passed; final old-Question layout acceptance follows PR23. POR-14 remains excluded from an unresolved local/current-source binding mismatch. User explicitly confirmed Terra for the scored-enrichment contract. NEXT ACTION: eight required checks → protected PR23 merge/READY alias → published POR-04/15/24 and remaining language readers → current Terra handoff. No independent editorial approval is pending.
+COMPLETE / LIVE: twenty Portuguese source-quoted v3 explorations, exact originals/160 refs/history preserved and complete private backups verified. Narrow Question containment/wrapping also LIVE through PR23/eight required green checks/merge0e2a986/READY aliased deployment; actual POR-04/15/24 320px and all second-batch375px readers pass with zero clipping. Full local522 tests/lint/typecheck/packs/build and76 browser tests pass, with three optional PG/38 gated browser skips. User confirmed Terra for the assessed append contract. NEXT ACTION: docs/estudisc/handoffs/2026-10-11-terra-scored-enrichment.md; no remaining layout or editorial approval gate. POR-14 source mismatch remains excluded.
 
 ## Lesson evolution completion — 2026-10-11
 
