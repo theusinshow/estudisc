@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-20",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "f04e44bbac22f9a80a5a8ddf061281f7ef8b12e0285ef37fefdfcbeb0d7ade0a",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-20-source-prediction-v3",
+      "beforeBlockId": "POR-20-B07",
+      "sourceBlockHash": "85d15b95279e080948c675ad0745fd9159f77eababdfa4743a49b0ca7ee8a552",
+      "sourceQuote": "Um texto defende transporte coletivo, passa a explicar uma receita sem relação com o tema e retorna à mobilidade.\n\nA receita pode ser coerente por si, mas é irrelevante no encadeamento e rompe a progressão temática.",
+      "conceptId": "por.por-20-c02.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Distinguir a coerência isolada de um trecho de sua relevância para a progressão do texto sobre mobilidade.",
+      "parameters": {
+        "title": "Antecipe o efeito da receita no encadeamento",
+        "promptQuote": "Um texto defende transporte coletivo, passa a explicar uma receita sem relação com o tema e retorna à mobilidade.",
+        "observationQuote": "Um texto defende transporte coletivo, passa a explicar uma receita sem relação com o tema e retorna à mobilidade.\n\nA receita pode ser coerente por si, mas é irrelevante no encadeamento e rompe a progressão temática.",
+        "explanationQuote": "A receita pode ser coerente por si, mas é irrelevante no encadeamento e rompe a progressão temática."
+      }
+    }
+  ]
+}

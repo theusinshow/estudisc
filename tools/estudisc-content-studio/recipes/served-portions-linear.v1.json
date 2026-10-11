@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-PREREQ",
+    "lessonVersion": 4
+  },
+  "sourceLessonHash": "e265df3f37b54b7b6652ab044d20ea97e0fcdf4f1dba647ce6f0c2eb7babc889",
+  "newVersion": 5,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "MAT-PREREQ-source-linear-v5",
+      "afterBlockId": "BLK-MAT-PREREQ-E01",
+      "sourceBlockHash": "61dede3ee1791cb9830d1eaf98c828649d8bf19c91de5f72d07ea6e439f3a7cb",
+      "sourceQuote": "Uma bandeja foi dividida em 12 porções iguais. Se 5 porções foram servidas, a parte servida é 5/12 do todo. Restam 12−5=7 porções, ou 7/12. Conferência: 5/12+7/12=12/12, a bandeja inteira.",
+      "conceptId": "MAT.FRACTION.MEANING",
+      "objective": "Fração como parte do todo",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore as porções servidas e restantes",
+        "variableLabel": "Porções servidas",
+        "outputLabel": "Porções restantes",
+        "unit": "porções",
+        "outputUnit": "porções",
+        "min": 0,
+        "max": 12,
+        "step": 1,
+        "initial": 5,
+        "slope": -1,
+        "intercept": 12,
+        "explanation": "O todo continua sendo uma bandeja com 12 porções iguais. Se p porções forem servidas, a parte servida é p/12 e a parte restante é (12 − p)/12. O explorador mostra somente a quantidade restante; o denominador das duas frações continua 12. No exemplo inicial, 5 porções servidas deixam 7: 5/12 + 7/12 = 12/12.",
+        "integerInput": true
+      },
+      "expectedInitialResult": 7
+    }
+  ]
+}

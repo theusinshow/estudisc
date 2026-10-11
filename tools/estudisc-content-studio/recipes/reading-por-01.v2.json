@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-01",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "1618722e2bf4b236075993460748fd4f9e7cc9b024165683bbc8bde0fabf27a9",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-01-source-prediction-v3",
+      "beforeBlockId": "POR-01-B07",
+      "sourceBlockHash": "3e79273c3a407bd71f5a165c0c5bbfda3b7cdd30a6a3a26d19fab2ced8a716e2",
+      "sourceQuote": "Em um portal escolar, um texto apresenta título, data, autoria, dados de uma pesquisa e explica o aumento do uso de bicicletas na cidade, sem defender uma posição pessoal.\n\nO conjunto sugere um gênero informativo, como notícia ou reportagem curta: a finalidade é informar e contextualizar dados; a presença de explicação não transforma o gênero em “tipo expositivo” como se isso fosse um gênero.",
+      "conceptId": "por.por-01-c01.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Identificar a finalidade informativa do texto descrito, distinguindo um gênero discursivo da presença de explicação.",
+      "parameters": {
+        "title": "Antecipe o gênero pela finalidade do texto",
+        "promptQuote": "Em um portal escolar, um texto apresenta título, data, autoria, dados de uma pesquisa e explica o aumento do uso de bicicletas na cidade, sem defender uma posição pessoal.",
+        "observationQuote": "Em um portal escolar, um texto apresenta título, data, autoria, dados de uma pesquisa e explica o aumento do uso de bicicletas na cidade, sem defender uma posição pessoal.\n\nO conjunto sugere um gênero informativo, como notícia ou reportagem curta: a finalidade é informar e contextualizar dados; a presença de explicação não transforma o gênero em “tipo expositivo” como se isso fosse um gênero.",
+        "explanationQuote": "O conjunto sugere um gênero informativo, como notícia ou reportagem curta: a finalidade é informar e contextualizar dados; a presença de explicação não transforma o gênero em “tipo expositivo” como se isso fosse um gênero."
+      }
+    }
+  ]
+}

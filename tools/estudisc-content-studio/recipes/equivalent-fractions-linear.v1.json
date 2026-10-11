@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-03",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "0121cbada06782d0df8f2133bb721323d2dfd3078db1ab2f49209d570d9239ba",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "MAT-03-source-linear-v3",
+      "afterBlockId": "BLK-MAT-03-E01",
+      "sourceBlockHash": "ed84eaac19a5c0b6cf67824c409a243d81f062885dd10ed8df873749995f2950",
+      "sourceQuote": "Escreva 7/10 com denominador 30. Como 10×3=30, multiplique também o numerador por 3: 7/10=21/30. Conferência: 7×30=210 e 10×21=210; os produtos cruzados iguais confirmam a equivalência.",
+      "conceptId": "MAT.FRACTION.EQUIVALENCE",
+      "objective": "Frações equivalentes",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore frações equivalentes a 7/10",
+        "variableLabel": "Denominador equivalente",
+        "outputLabel": "Numerador correspondente",
+        "min": 10,
+        "max": 60,
+        "step": 10,
+        "initial": 30,
+        "slope": 0.7,
+        "intercept": 0,
+        "explanation": "Partimos de 7/10. Cada passo de 10 no denominador corresponde a multiplicar os dois termos pelo mesmo fator positivo inteiro: para denominador 10k, o numerador é 7k. O explorador liga essas duas contagens; ele não modifica apenas um termo da fração. No exemplo inicial, denominador 30 e numerador 21 formam 21/30, equivalente a 7/10.",
+        "integerInput": true
+      },
+      "expectedInitialResult": 21
+    }
+  ]
+}

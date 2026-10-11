@@ -1,5 +1,11 @@
 # Estudisc current plan
 
+Next compatible content increment: POR-01/06/08/11/15/18/20/21/22/24 source-quoted language explorations, existing prediction/proposed-goal contract only. Preserve originals and 80 refs; fresh actual author/source binding, focused tests, previews, checkpoint/backup, direct release and all actual readers required. POR-14 is excluded from stale local v2 reuse pending a fresh current-source audit.
+
+## Lesson evolution completion — 2026-10-11
+
+Content continuation is live: MAT-PREREQ v5, MAT-01/02/03/09/10/12/14/15 v3 and POR-04/05/07/09/10/12/16/17/19/23 v3 through authentic Admin Direct. Integrate only dedicated recipes/tests/receipts from the shared tree; preserve the frontend owner's unrelated work. New increment: fix a demonstrated POR-04 Question card overflow (scrollWidth322/clientWidth305 at viewport320) using existing grid containment, preserving DS tokens, authored payloads, grading and history. First run a baseline real-content regression, then the smallest CSS fix, focused checks and full acceptance in this isolated checkout. Required protected checks and Git-backed deployment precede actual live narrow-reader verification. Scored-enrichment contract remains the separate Terra handoff pending the user's routing clarification; do not mark broad Phase9 enrichment complete.
+
 ## Active — frontend refinement, math notation and weight (2026-10-11)
 
 Implemented and locally accepted: math notation contract v1 in the shared Paragraphs/MathText (exponents in Archivo, stacked integer fractions, overlined roots, worked-step lists; exact authored text kept for AT/copy), server-resolved shell profile (−63 KB gzip on Learn/Track/History/Map and other simple screens, −67 KB Progress, −24 KB Today, no per-page /api/profile), DS-compliant WAAPI entrance motion, 320 px reflow with classic scrollbars, Plan order sessions → prepare → routine, sign-in/routine/map/concept fixes, discrete explorer step grid, assessment save-state shapes, interactions.css split by surface (byte-identical cascade). [Inventory, contract, before/after, limitations and log](docs/estudisc/FRONTEND-REFINEMENT-2026-10-11.md). NEXT ACTION: protected PR from an isolated release worktree (only frontend-refinement files), required checks, merge, verify READY production and public alias; then hand MAT-03 v3 manual-input recheck to the content worker.
