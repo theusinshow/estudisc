@@ -1,5 +1,7 @@
 # MODEL HANDOFF — Terra scored enrichment
 
+RECOVERY VERIFIED: the first CLI session hit legacy Windows sandbox setup errors and stopped before repository execution. It was closed. The replacement uses documented native MXC isolation with the same workspace permissions/approval policy; no unsandboxed execution, machine-permission change or sandbox weakening. Managed workspace probe `codex -c windows.sandbox="mxc" sandbox --include-managed-config --permission-profile :workspace -- cmd.exe /d /c echo MXC_OK` passed; actual Terra normal Get-Location/AGENTS/plan/status reads passed and reported READINESS_OK. New terminal: term_cc20a893-2510-4ef2-b549-c732b928f41b. A completion hook reported exit1 after the successful check; investigate it if consequential, do not disable it blindly.
+
 RESUME CHECKPOINT: isolated checkout `.local/lesson-evolution-finish-20261011`, base accepted main0e2a986 from PR23; READY public alias and actual narrow/mobile/desktop checks verified. Full522 tests,76 browser tests, eight required CI checks green. Post-release docs are retained as a safe local checkpoint; the original main worktree still contains Claude's unrelated changes. Resume here, do not stash/reset/switch the shared tree blindly.
 
 MODEL ESCALATION REQUIRED
