@@ -10,4 +10,6 @@ Regression coverage checks successful pending state, error retry, invalid return
 
 Local lint/typecheck/packs/build and 475 tests PASS (three optional real-PostgreSQL SKIP). Flagged Chrome desktop/mobile regression PASS. WebKit public HTTPS profile selection works; optional local WebKit full-flow verification is unavailable because the HTTP dev harness upgrades assets to unavailable HTTPS, and a temporary test-only workaround encounters HMR reloads. No production CSP change or Safari full-flow success is claimed. Initial browser checks also exposed a premature click before hydration; the guard fixed it. Browser-response assertions use status rather than reading a discarded response body after document navigation.
 
+The initial full browser gate exposed the same premature click on the lesson's server-rendered “Ver tudo”; the shared LessonStepper now has the same readiness guard. Its fixture import also needed to match the existing percentage fixture in the process-global memory harness. Those initial failures were repaired before restarting the gate; no production lesson payload changed.
+
 Full serial browser gate and protected Git-backed release remain pending. NEXT ACTION: serial E2E, eight protected CI checks, Git-backed production release and actual public navigation verification. Public link stays https://vecta-three.vercel.app.

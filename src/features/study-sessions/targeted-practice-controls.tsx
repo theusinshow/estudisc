@@ -19,6 +19,7 @@ export function TargetedPracticeControls(props:Props){
     }catch(failure){setError(failure instanceof Error?failure.message:"Falha de conexão. Você pode tentar novamente.");setBusy(false);}
   }
   return <div className="learning-controls targeted-practice-controls" aria-busy={busy}>
+    {!ready&&<p role="status">Carregando controles da sessão…</p>}
     <label className="learning-field" htmlFor={`${id}-minutes`}>Tempo para esta prática<select id={`${id}-minutes`} value={minutes} disabled={!ready || busy} onChange={event=>setMinutes(Number(event.target.value) as 10|15)}><option value={10}>10 minutos</option><option value={15}>15 minutos</option></select></label>
     <button className="primary-button" type="button" disabled={!ready || busy} onClick={()=>void start()}>{busy?"Preparando…":props.label??(props.kind==="review"?"Revisão rápida":"Praticar outra questão")}</button>
     {busy&&<p role="status">Abrindo sessão…</p>}{error&&<p role="alert">{error}</p>}

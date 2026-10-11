@@ -6,7 +6,7 @@ test("opens session mutations as documents and resumes the existing session from
   page.on("pageerror", error => browserErrors.push(error.message));
   const fixture = structuredClone(source);
   fixture.questions.forEach(question => { question.status = "published"; question.exposurePolicy.minimumDaysBetween = 0; });
-  fixture.track.modules.forEach(module => module.lessons.forEach(lesson => { lesson.status = "published"; }));
+  fixture.track.modules[0].lessons.forEach(lesson => { lesson.status = "published"; });
   expect((await request.post("/api/import/track", { data: fixture })).ok()).toBe(true);
   const planner = process.env.FEATURE_STUDY_PLANNER === "true";
   const adaptive = process.env.FEATURE_ADAPTIVE_SESSION === "true";
