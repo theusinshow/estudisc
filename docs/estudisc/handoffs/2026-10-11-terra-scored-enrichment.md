@@ -4,6 +4,8 @@ RESUME CHECKPOINT: isolated checkout `.local/lesson-evolution-finish-20261011`, 
 
 MODEL ESCALATION REQUIRED
 
+Routing resolved: official `gpt-5.6-terra` is present in the current account model cache. The user retained Terra and asked to continue; transfer this one contract task to that exact model, preserving configured effort and the existing subscription/account. No Sol/Astra substitution or parallel recruit is authorized.
+
 ## Current task
 
 Finish Phase9 lesson evolution with independently scored retrieval, starting with circle measures in MAT-16 v4. User explicitly confirmed on 2026-10-11: keep Terra for this contract. No new Questions, grading/evidence rules or persisted authoring contract were implemented by this continuation.
@@ -23,7 +25,7 @@ The current targeted importer deliberately retains every source field, Activity,
 
 All 132 lesson identities remain available. Actual read-only marker audit now finds 58 latest published identities with explicit additive enrichment metadata: MAT19/19, CIE16/40, POR23/24, GH0/49. The other 74 lack that marker; this does not establish missing base content or certify pedagogical adequacy. Original goals remain absent in the 113 non-math source lessons; proposed UI goals do not fabricate original metadata.
 
-This continuation published MAT-PREREQ v5; MAT-01/02/03/09/10/12/14/15 v3; twenty Portuguese v3 source-quoted explorations (all except already-live POR-02/03/13 and unresolved-source POR-14). Original rows/Questions/history and private backups were preserved. Raw persisted counts: Questions/versions1,284 each, Attempts120, evidence141, events146; do not conflate raw historic totals with the 1,144 published curriculum Questions. POR-14 remains published v2, with an unresolved local/current-source hash mismatch; do not reuse its local snapshot blindly.
+This continuation published MAT-PREREQ v5; MAT-01/02/03/09/10/12/14/15 v3; twenty Portuguese v3 source-quoted explorations (all except already-live POR-02/03/13 and unresolved-source POR-14). Original rows/Questions/history and private backups were preserved. Raw persisted counts: Questions/versions1,284 each, Attempts120, evidence141, events146; do not conflate raw historic totals with the 1,144 published curriculum Questions. POR-14 remains published v2. Fresh authenticated API audit in this continuation returned the exact local lesson hash, version2 and eight refs, with no field/block deltas. The earlier inventory exclusion used an older Track import pointer; inspect actual targeted preview/storage readiness before treating this lesson as an exception or republishing anything. Private sanitized audit: `.local/database-migration/private/terra-continuation-20261011/por14-audit.json` in the original workspace. No production change was made.
 
 Frontend PR22 (`59a4f9e`) is live. MAT-03's deployed typed-grid defect was rechecked and its existing draft published without rewrite/re-import. A separate isolated checkout adds only a Question min-content/wrapping fix and real POR-04/POR-15 320/375/1440 px regression; it preserves Claude's original shared-tree edits. Its final release details are recorded in the linked acceptance receipt once verified. Do not assume a branch/deploy is ready without that evidence.
 

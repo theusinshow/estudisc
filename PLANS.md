@@ -1,5 +1,7 @@
 # Estudisc current plan
 
+Current transfer (2026-10-11): Terra resolved to available `gpt-5.6-terra`; prepare one ownership handoff for the assessed append contract in this accepted isolated checkout. Original shared-tree/Claude work remains preserved. POR-14 fresh source binding matches the pinned v2 lesson; inspect actual targeted preview/storage before further content mutation. NEXT ACTION: receiving Terra starts only MAT-16 circle retrieval contract, existing authoring/import/evaluator paths, ADR and compatibility fixtures; then routine implementation. No duplicate worker or claim of architectural completion.
+
 COMPLETE / LIVE: twenty Portuguese source-quoted v3 explorations, exact originals/160 refs/history preserved and complete private backups verified. Narrow Question containment/wrapping also LIVE through PR23/eight required green checks/merge0e2a986/READY aliased deployment; actual POR-04/15/24 320px and all second-batch375px readers pass with zero clipping. Full local522 tests/lint/typecheck/packs/build and76 browser tests pass, with three optional PG/38 gated browser skips. User confirmed Terra for the assessed append contract. NEXT ACTION: docs/estudisc/handoffs/2026-10-11-terra-scored-enrichment.md; no remaining layout or editorial approval gate. POR-14 source mismatch remains excluded.
 
 ## Lesson evolution completion — 2026-10-11
