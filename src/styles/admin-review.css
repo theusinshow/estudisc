@@ -1,7 +1,7 @@
 /* /admin/review — per-lesson editorial review. Tokens only; no inline styles (CSP). */
 
 .editorial-page { display: grid; gap: var(--estudisc-spacing-16); width: min(100%, 760px); margin-inline: auto; }
-.editorial-page h1 { margin: 0; font-size: clamp(2.25rem, 9vw, 3.25rem); font-weight: 900; font-stretch: 125%; line-height: 0.95; }
+.editorial-page h1 { margin: 0; font-size: clamp(2.25rem, 9vw, 3.25rem); font-weight: 900; font-stretch: 125%; line-height: 1.05; }
 .editorial-page h2 { margin: 0 0 var(--estudisc-spacing-6); font-size: 1.375rem; font-weight: 900; }
 .editorial-lede { max-width: 62ch; margin: var(--estudisc-spacing-6) 0 0; color: var(--estudisc-color-dim); font-weight: 500; line-height: 1.5; }
 .editorial-meta { margin: var(--estudisc-spacing-4) 0 var(--estudisc-spacing-8); color: var(--estudisc-color-dim); font-weight: 650; }

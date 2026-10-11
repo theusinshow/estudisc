@@ -1,7 +1,7 @@
 /* /progress — mastery ladder, memory, rhythm, area balance and effort. Tokens only; no inline styles (CSP). */
 
 .progress-page { display: grid; gap: var(--estudisc-spacing-24); width: min(100%, 760px); margin-inline: auto; }
-.progress-head h1 { margin: 0; font-size: clamp(3rem, 12vw, 4.5rem); font-weight: 900; font-stretch: 125%; line-height: 0.9; }
+.progress-head h1 { margin: 0; font-size: clamp(var(--estudisc-typography-display-sizes-md), 12vw, 4.5rem); font-weight: 900; font-stretch: 125%; line-height: 0.9; }
 .progress-lede { max-width: 46ch; margin: var(--estudisc-spacing-8) 0 0; font-size: 1.125rem; font-weight: 500; line-height: 1.45; }
 .progress-section-head { margin-bottom: var(--estudisc-spacing-10); }
 .progress-section-head h2 { margin: 0 0 var(--estudisc-spacing-2); font-size: 1.5rem; font-weight: 900; }
@@ -20,7 +20,7 @@
 .mastery-glyph-check { fill: none; stroke: var(--estudisc-color-signal); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
 /* Ladder: rungs indent as they rise, so the list reads as a staircase. */
-.ladder { --tread: clamp(10px, 3.6vw, 22px); display: grid; gap: var(--estudisc-spacing-10); align-items: start; }
+.ladder { --tread: clamp(6px, 2.6vw, 22px); display: grid; gap: var(--estudisc-spacing-10); align-items: start; }
 .ladder-steps { display: grid; gap: var(--estudisc-spacing-3); margin: 0; padding: 0; list-style: none; }
 .ladder-rung[data-level="1"] { margin-left: calc(1 * var(--tread)); }
 .ladder-rung[data-level="2"] { margin-left: calc(2 * var(--tread)); }
@@ -46,6 +46,7 @@
 .ladder-count { display: inline-flex; align-items: baseline; gap: var(--estudisc-spacing-3); font-variant-numeric: tabular-nums; }
 .ladder-count .count-up { font-size: 1.5rem; font-weight: 900; line-height: 1; }
 .ladder-count small { font-size: 0.75rem; font-weight: 700; }
+@media (max-width: 400px) { .main-surface .ladder-step { padding-inline: var(--estudisc-spacing-6); } }
 
 .ladder-panel { padding: var(--estudisc-spacing-10); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: var(--estudisc-shadow-structural); }
 .ladder-panel h3 { display: flex; align-items: center; gap: var(--estudisc-spacing-4); margin: 0 0 var(--estudisc-spacing-3); font-size: 1.25rem; font-weight: 900; }

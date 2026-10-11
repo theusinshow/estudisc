@@ -4,8 +4,18 @@
 @import "../styles/application/learning.css";
 @import "../styles/application/authentication.css";
 @import "../styles/application/interactions.css";
+/* Surface modules split from interactions.css (2026-10-11), imported in their original cascade order. */
+@import "../styles/application/today-base.css";
+@import "../styles/application/lesson-reading.css";
+@import "../styles/application/study-session.css";
+@import "../styles/application/assessments.css";
+@import "../styles/application/review-queue.css";
+@import "../styles/application/lesson-stepper.css";
+@import "../styles/application/code-slots.css";
+@import "../styles/application/account-sign-in.css";
 @import "../styles/application/interaction-geometry.css";
 @import "../styles/application/shell.css";
 @import "../styles/application/routine.css";
+@import "../styles/application/math-notation.css";
 
 /* Feature styles belong beside their feature or under src/styles; preserve application cascade order. */

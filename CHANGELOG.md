@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-11 — Frontend refinement: math notation, lighter shell and reading fixes
+
+- Render authored math more clearly through the shared Paragraphs/MathText renderer (contract v1): exponents in the reading font instead of mismatched fallback glyphs, stacked integer fractions, overlined square roots and hanging worked-step lists. Exact authored text stays available to screen readers and copy; dates, URLs, units, decimals and year periods stay plain. No content, answer or evaluator changed.
+- Resolve the navigation profile on the server in AppShell (no client `/api/profile` request or schema bundle) and run entrance motion through the Web Animations API with Design System tokens (no blur, ≤180 ms, 2–4 px): −63 KB gzip initial JavaScript on Learn, Track, History, Map and other simple screens, −67 KB on Progress and −24 KB on Today.
+- Show assessment save state as text plus a shape (sem resposta, alterada, salvando, salva, falha).
+- Fix 320 px horizontal scrolling with classic desktop scrollbars (root min-width) and oversized headings on Progress and Map; reorder Plan as sessions → prepare → weekly routine; Portuguese labels and plurals on Concept and Map pages.
+- Fix unstyled sign-in buttons outside the main surface, add a check icon to the selected profile, compact the lesson progress panel on phones, keep lesson titles from breaking at punctuation on 320 px screens and restore link affordance for "Organizar minha semana".
+- Keep discrete linear explorers on their authored step grid for typed values, with explicit recovery feedback; step-1 and continuous models are unchanged.
+- Split `interactions.css` into ordered surface modules (byte-identical cascade) and pluralize the legacy catalog lesson count.
+
 ## 2026-10-10 — Reliable study session entry
 
 - Open prepared, resumed and transitioned study sessions with fresh document navigation; remove queued push/refresh and retain loading feedback until navigation.

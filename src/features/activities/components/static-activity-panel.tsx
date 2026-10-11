@@ -1,3 +1,4 @@
+import { MathText } from "@/components/ui/paragraphs";
 import type { StaticActivityConfig } from "@/features/activities/application/static-activity-config";
 
 type StaticActivityPanelProps = Readonly<{
@@ -15,17 +16,17 @@ export function StaticActivityPanel({ activityStableId, activityLabel, prompt, c
     <section className="activity-panel static-activity-panel" id={`activity-${activityStableId}`} aria-labelledby={`${activityStableId}-title`}>
       <header>
         <p className="eyebrow">{activityLabel}</p>
-        <h3 id={`${activityStableId}-title`}>{prompt}</h3>
+        <h3 id={`${activityStableId}-title`}><MathText text={prompt} /></h3>
       </header>
 
-      {config.instructions ? <p>{config.instructions}</p> : null}
+      {config.instructions ? <p><MathText text={config.instructions} /></p> : null}
 
       {config.choices.length > 0 ? (
         <ol className="activity-choice-list" aria-label="Alternativas">
           {config.choices.map((choice, index) => (
             <li key={`${choice.label}-${index}`}>
               <span className="technical-label">Opção {index + 1}</span>
-              <strong>{choice.label}</strong>
+              <strong><MathText text={choice.label} /></strong>
             </li>
           ))}
         </ol>
@@ -34,7 +35,7 @@ export function StaticActivityPanel({ activityStableId, activityLabel, prompt, c
       {config.hint ? (
         <div className="attempt-feedback">
           <strong>Pista</strong>
-          <span>{config.hint}</span>
+          <span><MathText text={config.hint} /></span>
         </div>
       ) : null}
 
@@ -48,12 +49,12 @@ export function StaticActivityPanel({ activityStableId, activityLabel, prompt, c
           ) : null}
           {config.answer ? (
             <p>
-              <strong>Resposta:</strong> {config.answer}
+              <strong>Resposta:</strong> <MathText text={config.answer} />
             </p>
           ) : null}
           {config.explanation ? (
             <p>
-              <strong>Explicação:</strong> {config.explanation}
+              <strong>Explicação:</strong> <MathText text={config.explanation} />
             </p>
           ) : null}
         </details>

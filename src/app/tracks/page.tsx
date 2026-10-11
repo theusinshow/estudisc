@@ -32,7 +32,7 @@ export default async function TracksPage() {
                 <Link href={`/tracks/${track.stableId}`}>
                   <strong>{track.title}</strong>
                   <span>{track.description ?? "Sem descrição"}</span>
-                  <small>{track.lessonCount} lição importada</small>
+                  <small>{track.lessonCount} {track.lessonCount === 1 ? "lição importada" : "lições importadas"}</small>
                 </Link>
               </li>
             ))}

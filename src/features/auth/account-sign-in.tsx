@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, useSyncExternalStore } from "react";
-import { UserRound } from "lucide-react";
+import { CircleCheck, UserRound } from "lucide-react";
 
 import CodeSlots, { type CodeSlotsStatus } from "@/components/code-slots/code-slots";
 import type { PublicAccount } from "./code-accounts";
@@ -80,7 +80,7 @@ export function AccountSignIn({ accounts, callbackUrl }: Readonly<{ accounts: Pu
             disabled={status === "success"}
             onClick={() => { setSelectedId(account.id); setStatus("idle"); setMessage(null); }}
           >
-            <UserRound aria-hidden="true" />
+            {account.id === selectedId ? <CircleCheck aria-hidden="true" /> : <UserRound aria-hidden="true" />}
             <span>{account.name}</span>
           </button>
         ))}

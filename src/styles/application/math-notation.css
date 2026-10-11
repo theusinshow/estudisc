@@ -1,0 +1,60 @@
+/*
+ * Math notation contract v1 (src/components/ui/math-notation.ts). New classes only, so this module does not
+ * alter the existing cascade. Sizes are relative to the surrounding text; rules use the hairline token.
+ * The visual form is not selectable: copy and assistive technology receive the authored characters.
+ */
+.math-notation { white-space: nowrap; }
+.math-visual { -webkit-user-select: none; user-select: none; }
+/* The authored characters for assistive technology, search and copy. Hidden *inline* on purpose: absolute or
+   inline-block hiding makes accessible-name computation insert spaces ("1/4 ?"). */
+.math-source {
+  clip-path: inset(50%);
+  color: transparent;
+  font-size: 1px;
+  letter-spacing: -1px;
+  line-height: 0;
+  white-space: nowrap;
+}
+
+/* Exponents use the reading font (Archivo) instead of fallback superscript glyphs; line-height 0 keeps the line box. */
+.math-sup {
+  position: relative;
+  inset-block-start: -0.5em;
+  margin-inline-start: 0.04em;
+  font-size: 0.72em;
+  font-weight: inherit;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+.math-frac {
+  display: inline-flex;
+  flex-direction: column;
+  vertical-align: middle;
+  margin-inline: 0.1em;
+  font-size: 0.86em;
+  font-variant-numeric: lining-nums tabular-nums;
+  line-height: 1.12;
+  text-align: center;
+}
+.math-frac-num { padding-inline: 0.16em; border-block-end: var(--estudisc-border-hair) solid currentColor; }
+.math-frac-den { padding-inline: 0.16em; }
+.math-frac .math-sup { inset-block-start: -0.42em; }
+
+.math-root-sign { margin-inline-end: -0.04em; }
+.math-radicand {
+  padding-block-start: 0.06em;
+  padding-inline: 0.1em 0.06em;
+  border-block-start: var(--estudisc-border-hair) solid currentColor;
+}
+
+/* Worked steps: hanging numbers keep each step's wrapped lines aligned. */
+.math-steps {
+  display: grid;
+  gap: var(--estudisc-spacing-3);
+  margin: 0;
+  padding-inline-start: 1.6em;
+  list-style: decimal outside; /* Tailwind preflight removes list markers */
+}
+.math-steps li { padding-inline-start: 0.15em; }
+.math-steps li::marker { font-weight: 700; font-variant-numeric: tabular-nums; }

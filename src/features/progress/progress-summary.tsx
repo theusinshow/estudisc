@@ -40,7 +40,7 @@ export function ProgressSummary({ progress }: ProgressSummaryProps) {
           </dd>
         </div>
         {mastery && (
-          <div>
+          <div className="progress-summary-mastery">
             <dt>Domínio dos conceitos</dt>
             <dd>{mastery.conceptsWithEvidence === 0 ? "Sem evidência ainda" : mastery.weakestLabel}</dd>
             <small>

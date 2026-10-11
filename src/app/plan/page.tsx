@@ -36,14 +36,15 @@ export default async function PlanPage() {
   return <AppShell><article className="foundation-panel content-panel">
     <h1>Plano</h1>
     <p>Escolha o tempo para uma sessão ou retome o estudo que você já preparou.</p>
-    {routineState ? <RoutinePlanner key={routineState.routine?.revision ?? 0} initial={routineState} /> : <p>A rotina persistente está indisponível no momento. Tente novamente mais tarde.</p>}
-    <section aria-labelledby="prepare-session"><h2 id="prepare-session">Preparar uma sessão</h2>
-      <p>As atividades disponíveis são escolhidas com base no seu estudo e nas revisões.</p>
-      <SessionControls adaptive={getFeatureFlags().FEATURE_ADAPTIVE_SESSION} availableMinutes={routineState?.week?.activeSessionId ? undefined : remainingRoutineMinutes(routineState?.week ?? null)} />
-    </section>
+    {/* Sessions first: an existing session opens without routine setup, and the routine wizard's Continue stays apart from session access. */}
     <Tabs label="Suas sessões" tabs={[
       { id: "next", label: "Próximas sessões", content: sessionList(planned, "Nenhuma sessão preparada. Escolha um tempo para começar.") },
       { id: "completed", label: "Concluídas", content: sessionList(completed, "Você ainda não concluiu uma sessão.") }
     ]} />
+    <section className="plan-section" aria-labelledby="prepare-session"><h2 id="prepare-session">Preparar uma sessão</h2>
+      <p>As atividades disponíveis são escolhidas com base no seu estudo e nas revisões.</p>
+      <SessionControls adaptive={getFeatureFlags().FEATURE_ADAPTIVE_SESSION} availableMinutes={routineState?.week?.activeSessionId ? undefined : remainingRoutineMinutes(routineState?.week ?? null)} />
+    </section>
+    {routineState ? <RoutinePlanner key={routineState.routine?.revision ?? 0} initial={routineState} /> : <p>A rotina persistente está indisponível no momento. Tente novamente mais tarde.</p>}
   </article></AppShell>;
 }

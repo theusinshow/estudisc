@@ -1,0 +1,17 @@
+/* Review queue (/review). Split from interactions.css; keep import order in globals.css. */
+/* Review queue */
+.count-chip { justify-self: start; margin: 0; padding: 2px var(--estudisc-spacing-8); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-surface-lime); font-weight: 800; }
+.review-list { display: grid; gap: var(--estudisc-spacing-10); margin: 0; padding: 0; list-style: none; }
+.review-list li { display: grid; gap: var(--estudisc-spacing-4); padding: var(--estudisc-spacing-12); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-sheet); background: var(--estudisc-color-panel); box-shadow: var(--estudisc-shadow-structural); }
+.review-list a { color: inherit; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.review-list strong { font-size: 1.25rem; font-weight: 900; }
+.review-list small { justify-self: start; padding: 1px var(--estudisc-spacing-6); border: var(--estudisc-border-hair) solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-surface-lime); font-weight: 700; }
+.review-list form { margin-top: var(--estudisc-spacing-4); }
+.exam-timer { top: 68px; }
+.exam-timer::before { content: ""; position: absolute; inset: -11px -8px auto; height: 8px; background: var(--estudisc-color-paper); }
+@media (min-width: 900px) { .exam-timer { top: 84px; } .exam-timer::before { inset: -15px -8px auto; height: 12px; } }
+.review-items summary { padding-block: var(--estudisc-spacing-6); }
+.summary-text { display: grid; min-width: 0; }
+.summary-text small { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; color: var(--estudisc-color-dim); font-weight: 500; }
+.review-items details[open] .summary-text small { display: none; }
+

@@ -48,8 +48,12 @@ a {
   max-width: none;
 }
 
+/* Lesson titles: fluid between display tokens so ordinary words fit 320 px; Portuguese hyphenation splits
+   genuinely long words (e.g. "Sustentabilidade") instead of breaking at punctuation. */
 .content-panel > #lesson-title {
-  overflow-wrap: anywhere;
+  font-size: clamp(var(--estudisc-typography-display-sizes-sm), 9.5vw, 3.5rem);
+  hyphens: auto;
+  overflow-wrap: anywhere; /* last resort without a hyphenation dictionary (CIE-21 fix) */
 }
 
 .record-list,
