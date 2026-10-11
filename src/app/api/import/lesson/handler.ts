@@ -7,7 +7,7 @@ import { DrizzleTrackImportRepository } from "@/db/repositories/track-import-rep
 import { readJsonRequestWithLimit, MAX_TRACK_PACK_BYTES } from "@/features/import/api";
 import { importLessonVersion } from "@/features/import/application/lesson-version-policy";
 import { LessonVersionConflictError } from "@/features/import/application/lesson-version-contracts";
-import { lessonVersionPackSchema } from "@/features/import/application/lesson-version-contracts";
+import { lessonVersionPacketSchema } from "@/features/import/application/lesson-version-contracts";
 import { hashCanonicalJson } from "@/lib/canonical-json";
 import { logEvent } from "@/lib/logger";
 export async function handleLessonVersionRequest(request: Request, preview: boolean) {
@@ -17,7 +17,7 @@ export async function handleLessonVersionRequest(request: Request, preview: bool
     if (!parsed.ok) return NextResponse.json({ code: parsed.code }, { status: parsed.code === "payload_too_large" ? 413 : 400 });
     await ensureDatabaseReady();
     const repo = getDatabaseUrl() === "memory://local" ? new MemoryTrackImportRepository() : new DrizzleTrackImportRepository(undefined, actor.ownerId);
-    const packet = lessonVersionPackSchema.parse(parsed.body);
+    const packet = lessonVersionPacketSchema.parse(parsed.body);
     const result = await importLessonVersion(packet, repo, preview);
     if (preview) return NextResponse.json({ ...result, operation: result.status === "already_imported" ? "no_change" : "import", contentHash: hashCanonicalJson(packet),
       summary: { trackStableId: packet.target.trackId, trackTitle: `${packet.lesson.title} · versão ${packet.lesson.version}`, moduleCount: 1, lessonCount: 1, activityCount: packet.lesson.activities.length, conceptCount: packet.lesson.concepts.length } });

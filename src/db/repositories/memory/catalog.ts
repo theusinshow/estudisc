@@ -1,21 +1,21 @@
 import type { AppliedTrackImport, ExistingPackImport, TrackImportRepository } from "@/features/import/application/track-import-service";
 import type { TrackPack } from "@/features/import/application/track-pack-schema";
 import { getMemoryStore, summarizePack } from './store';
-import { resolveLessonVersionContext, targetedResult } from "@/features/import/application/lesson-version-policy";
-import { LessonVersionConflictError, type LessonVersionPack } from "@/features/import/application/lesson-version-contracts";
+import { resolveAssessedLessonVersionContext, resolveLessonVersionContext, targetedResult } from "@/features/import/application/lesson-version-policy";
+import { LessonVersionConflictError, type LessonVersionPacket } from "@/features/import/application/lesson-version-contracts";
 import type { LessonDetail } from "../catalog-repository";
 
 
 export class MemoryTrackImportRepository implements TrackImportRepository {
   constructor(private readonly store = getMemoryStore()) {}
 
-  async executeLessonVersion(pack: LessonVersionPack, contentHash: string, preview: boolean) {
+  async executeLessonVersion(pack: LessonVersionPacket, contentHash: string, preview: boolean) {
     // No await between validation and append: the process-global disposable store stays atomic.
     const receipt = this.store.packImports.find(row => row.packId === pack.packId && row.version === pack.version);
     if (receipt) { if (receipt.contentHash !== contentHash || receipt.manifest?.schema !== "caderno.track.v2" || receipt.manifest.track.metadata.lessonVersionImport === undefined) throw new LessonVersionConflictError("Pack receipt conflict"); return targetedResult(pack, "already_imported"); }
     if (!this.store.tracks.some(t => t.stableId === pack.target.trackId && t.contentVersion === pack.target.trackVersion)) throw new LessonVersionConflictError("Target Track not found");
     const manifests = [...this.store.packImports].reverse().flatMap(row => row.manifest ? [row.manifest] : []);
-    const { base, projection } = resolveLessonVersionContext(manifests, pack);
+    const { base, projection } = pack.schema === "caderno.lesson.v3" ? resolveAssessedLessonVersionContext(manifests, pack) : resolveLessonVersionContext(manifests, pack);
     if (base.status !== "published") throw new LessonVersionConflictError("Base lesson must be published");
     if (manifests.some(p => p.schema === "caderno.track.v2" && p.track.modules.some(m => m.lessons.some(l => l.id === pack.lesson.id && l.version === pack.lesson.version)))) throw new LessonVersionConflictError("Lesson version already exists");
     if (preview) return targetedResult(pack, "ready");

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-11 — Targeted assessed Question append contract
+
+- Add ADR 0060 and `caderno.lesson.v3`: a bounded targeted append of new draft, non-official, non-reserved shared training Questions and one existing-pipeline `question` Activity per Question. v2 and Track imports retain their exact Question/activity preservation guards.
+- Use the existing Question repository, evaluator, Attempt/evidence pipeline and Admin Direct bundle publication. Receipt/idempotence/conflict, SQL/memory parity, source/provenance/exposure/owner boundaries and transactional rollback are covered by compatibility fixtures.
+- Prepare only MAT-16 v4 circle-measure retrieval as a stale-context-safe v5 template; it has not been imported, published, answered or deployed. Source/rights/official-mapping caveats remain intact.
+
 ## 2026-10-11 — Lesson complements and narrow Question containment
 
 - Publish source-bound mathematics explorers/worked examples and ten Portuguese reading explorations through actual Admin Direct; retain original content, Questions and study history. Goals/mappings derived from otherwise missing source metadata remain explicit proposals; exploration is not an official Attempt or mastery evidence. Exact release/backup receipts live in `docs/estudisc/`.

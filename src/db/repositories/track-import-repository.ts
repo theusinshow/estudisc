@@ -25,14 +25,14 @@ import { DrizzleQuestionRepository } from "./question-repository";
 import { releaseAuthor } from "@/features/content-qa/policy";
 import { ContentQaRepository } from "./content-qa-repository";
 import { executeLessonVersion } from "./lesson-version-import";
-import type { LessonVersionPack } from "@/features/import/application/lesson-version-contracts";
+import type { LessonVersionPacket } from "@/features/import/application/lesson-version-contracts";
 
 type TrackImportDatabase = PgDatabase<PgQueryResultHKT, typeof schema>;
 
 export class DrizzleTrackImportRepository implements TrackImportRepository {
   constructor(private readonly db: TrackImportDatabase = getDatabase(),private readonly authorId="unattributed-import") {}
 
-  executeLessonVersion(pack: LessonVersionPack, contentHash: string, preview: boolean) { return executeLessonVersion(this.db, this.authorId, pack, contentHash, preview); }
+  executeLessonVersion(pack: LessonVersionPacket, contentHash: string, preview: boolean) { return executeLessonVersion(this.db, this.authorId, pack, contentHash, preview); }
 
   async findPackImport(packId: string, version: number): Promise<ExistingPackImport | null> {
     const [row] = await this.db
