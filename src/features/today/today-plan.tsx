@@ -21,10 +21,10 @@ export function TodayPlan({ sessions, hasNextAction, plannerEnabled, routine }: 
     <div className="today-week-head"><h2 id="today-plan-title">Suas sessões</h2>{plannerEnabled && <Link href="/plan">Ver plano</Link>}</div>
     {open.length ? <ol>{open.map(session => {
       const items = sessionItemsSchema.parse(session.items);
-      return <li key={session.id}><Link href={`/study/${session.id}`}>
+      return <li key={session.id}><a href={`/study/${session.id}`}>
         <span><strong>{session.status === "ACTIVE" ? "Continuar sessão" : "Sessão preparada"} · {session.budgetMinutes} min</strong>
           <small>{items.map(item => item.title).join(" · ")}</small></span>
-      </Link></li>;
+      </a></li>;
     })}</ol> : today?.status === "DAY_OFF" ? <p>Hoje é dia livre na sua rotina. As revisões continuam disponíveis quando você quiser.</p>
       : today?.status === "BUDGET_USED" ? <p>Você concluiu o tempo planejado de hoje. Confira seu progresso ou ajuste a rotina se quiser continuar.</p>
       : today?.status === "SIMULATION_RESERVED" ? <p>O tempo de hoje está reservado para simulado. <Link href="/assessments">Escolher um simulado</Link></p>

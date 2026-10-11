@@ -1,8 +1,22 @@
 # Estudisc current plan
 
+## Urgent student session access verification — 2026-10-10
+
+Screenshot follow-up: actual mobile preparation POST 200 while the old Plan remained visible during queued push/refresh; immediate busy reset hides navigation progress. Replace study-session entry with normal document navigation and keep pending feedback until navigation; use native links for saved sessions. Explain the routine wizard's existing disabled Continue prerequisite. Preserve API/ownership/session state. Add focused success/error/resume tests and browser acceptance, then full gates and protected Git-backed release; no production student impersonation or evidence changes.
+
+Public production health/sign-in and actual ADMIN session/pages returned 200. Read-only audit: all 14 saved sessions across two owners parse and retain frozen lesson/activity/Question references; no missing or non-published lesson references. Requested student's 12 sessions include one ACTIVE session. Session/resume/code-account tests 27 PASS; account-route/auth-readiness/dashboard tests 9 PASS. The project alias redirects anonymous users to Vercel login and must not be sent as the student link. [Exact checks and limits](docs/estudisc/SESSION-ACCESS-CHECK-2026-10-10.md). NEXT ACTION: normal Kauã sign-in through the public link; if the specific failure persists, inspect its exact URL/error or reproduce in an actual STUDENT browser session. No reproduced runtime defect, deployment, impersonation or student-state changes.
+
 ## Active goal — complete the approved evolution continuously (2026-10-07)
 
+### Current safe checkpoint and next contract — 2026-10-10
+
+COMPLETED: four batches / 12 actual source-defined v3 publications, all source/Question/old-content/study fingerprints and actual reader/audit/backup checks; existing H1 mobile issue fixed, protected PR #20/eight green checks/merge88d8f1f/READY production verified. Final lint/typecheck/packs and 467 tests PASS/three optional real-PG SKIP; runtime build and serial browser 58 PASS/38 gated SKIP passed. [Actual complete checkpoint](docs/estudisc/CONTINUOUS-ENRICHMENT-2026-10-10.md). No new app/runtime changes after the heading release.
+
+NEXT ACTION: MODEL ESCALATION REQUIRED — Terra for the specific persisted scored-enrichment Question/lesson-binding contract; [exact compact handoff](docs/estudisc/handoffs/2026-10-10-scored-enrichment-contract.md). The current importer deliberately rejects changed Activities/Concepts and a Question-ref delta; adding independent circular retrieval must preserve all prior refs/versions, frozen sessions, provenance/exposure/owner and canonical evidence. First inspect existing authoring/import paths; do not invent a new registry, weaken guards or re-import the corpus. This is not an editorial/user permission gate or escalation for task size. After contract/ADR/compatibility definition, Luna Max resumes routine implementation. Remaining clearly source-defined cases may still use accepted recipes, but prediction is not forced across the corpus.
+
 ### Long lesson title mobile overflow — 2026-10-10
+
+RELEASED: protected PR #20 passed all eight required checks on d1d6055, merged 88d8f1f; actual Git-backed production dpl_3SneFiforJZaoWRKfUoWqw34qjbF is READY with correct commit/alias. Fresh real CIE-21 v3 heading has stylesheet wrapping (no inline diagnostic) and measured page width <=320/375/1440. Full lint/typecheck/464 tests (three optional real-PG skips)/packs/build and serial browser 58 PASS/38 gated SKIP passed. Environment CIE-21/CIE-23/CIE-35 v3 acceptance now passes; unchanged historical/Question/user-state fingerprints and protected backup verified. Continue the source-defined CIE-38/POR-03/POR-13 examples after fresh source checks; no new runtime changes.
 
 Actual CIE-21 v2 and v3 show 378 px document width at a 375 px viewport. Text-range inspection isolates the existing H1 word “Sustentabilidade”, while element boxes fit. Fix only the existing lesson-title wrapping rule, preserving frozen typography/tokens/content and semantic heading. Acceptance: full required local checks and actual 320/375/desktop title/layout verification, protected required CI, authorized production release and renewed environment-batch mobile acceptance before further content publication. Current CIE-21/CIE-23/CIE-35 v3 publications and immutable-data checks passed; do not fabricate a no-overflow receipt until the actual reader fix is verified. Impeccable refinement follows the existing Design System; no redesign.
 

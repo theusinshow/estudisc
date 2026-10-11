@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useLessonResume } from "./resume-provider";
@@ -10,6 +10,9 @@ export type LessonStep = { id: string; kind: "intro" | "concept" | "example" | "
 export type LessonCompletion = Readonly<{ trackHref: string; nextLesson?: Readonly<{ href: string; title: string }> }>;
 
 const DONE_HASH = "#concluida";
+const subscribe = () => () => {};
+const clientReady = () => true;
+const serverReady = () => false;
 // The step lives in the URL hash so a reload (or a shared link) reopens the same step.
 function stepFromHash(hash: string, total: number) {
   if (hash === DONE_HASH) return total;
@@ -19,6 +22,7 @@ function stepFromHash(hash: string, total: number) {
 
 /** Shows one step at a time. Every step stays mounted, so answers and feedback survive navigation. */
 export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonStep[]; completion?: LessonCompletion }>) {
+  const ready = useSyncExternalStore(subscribe, clientReady, serverReady);
   const resume = useLessonResume();
   const restored = restoredStep(steps.map(step => step.id), resume?.data.stepId ?? null, resume?.data.completed ?? false);
   const [index, setIndex] = useState(() => restored.index);
@@ -43,10 +47,11 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
 
   return (
     <div className="lesson-stepper" ref={top} data-mode={showAll ? "all" : "step"}>
+      {!ready && <p role="status">Carregando controles da aula…</p>}
       {restored.stale && <p role="status">O passo salvo não está disponível. Retomamos o primeiro passo desta versão.</p>}
       <div className="stepper-head">
         {showAll ? <span className="stepper-count">Aula inteira · {steps.length} partes</span> : <span className="stepper-count" aria-live="polite">{done ? <strong>Aula concluída</strong> : <>Passo {index + 1} de {steps.length} · <strong>{current?.label}</strong></>}</span>}
-        <button type="button" className="stepper-toggle" onClick={() => { setShowAll(!showAll); resume?.update({ showAll: !showAll }); }} aria-pressed={showAll}>{showAll ? "Um passo por vez" : "Ver tudo"}</button>
+        <button type="button" className="stepper-toggle" disabled={!ready} onClick={() => { setShowAll(!showAll); resume?.update({ showAll: !showAll }); }} aria-pressed={showAll}>{showAll ? "Um passo por vez" : "Ver tudo"}</button>
         {!showAll && <progress className="stepper-bar" value={Math.min(index + 1, steps.length)} max={steps.length} aria-label="Progresso da aula" />}
       </div>
       {steps.map((step, position) => (
@@ -71,13 +76,13 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
       )}
       {!showAll && !done && (
         <nav className="stepper-nav" aria-label="Navegação da aula">
-          <button type="button" onClick={() => go(index - 1)} disabled={index === 0}><ArrowLeft aria-hidden="true" />Voltar</button>
-          {last && !completion ? <button type="button" className="primary-button" disabled>Fim desta aula</button> : <button type="button" className="primary-button" onClick={() => go(index + 1)}>{last ? "Concluir aula" : "Próximo"}<ArrowRight aria-hidden="true" /></button>}
+          <button type="button" onClick={() => go(index - 1)} disabled={!ready || index === 0}><ArrowLeft aria-hidden="true" />Voltar</button>
+          {last && !completion ? <button type="button" className="primary-button" disabled>Fim desta aula</button> : <button type="button" className="primary-button" disabled={!ready} onClick={() => go(index + 1)}>{last ? "Concluir aula" : "Próximo"}<ArrowRight aria-hidden="true" /></button>}
         </nav>
       )}
       {!showAll && done && (
         <nav className="stepper-nav" aria-label="Navegação da aula">
-          <button type="button" onClick={() => go(steps.length - 1)}><ArrowLeft aria-hidden="true" />Rever último passo</button>
+          <button type="button" disabled={!ready} onClick={() => go(steps.length - 1)}><ArrowLeft aria-hidden="true" />Rever último passo</button>
         </nav>
       )}
     </div>

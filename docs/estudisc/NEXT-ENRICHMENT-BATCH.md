@@ -1,5 +1,7 @@
 # Next bounded source-defined batch
 
+Superseded selection (2026-10-10): this CIE-12/CIE-13/CIE-14 batch and three subsequent batches are now actually LIVE. See [current continuous checkpoint](CONTINUOUS-ENRICHMENT-2026-10-10.md); do not reactivate these candidates. Current NEXT ACTION is the [scored-enrichment contract handoff](handoffs/2026-10-10-scored-enrichment-contract.md). The selection below is historical, not pending publication.
+
 After LIVE MAT-16/MAT-17 v4 and CIE-05/CIE-08 v3, continue with three existing worked-source cases. This is a selection/implementation plan, not an imported or published result.
 
 | Lesson | Existing worked scenario | Proposed exploration |

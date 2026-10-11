@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-science",
+    "trackVersion": 7,
+    "lessonId": "CIE-38",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "b35c87926315eb32747cf3394d0d2a4890624bfd83e804dc384edbf45d741e62",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "CIE-38-source-prediction-v3",
+      "beforeBlockId": "CIE-38-B09",
+      "sourceBlockHash": "01ba02abf9929152cfb06886d9467a1998b5d0281f92a964a5d1397be2f3597c",
+      "sourceQuote": "Um astronauta vai da Terra para a Lua. O que acontece com massa e peso?\n\n1) Use esta relação: A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite. 2) Use esta relação: A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano. 3) Use esta relação: A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol. 4) Aplicando essas relações à situação, a conclusão correta é: A massa permanece essencialmente a mesma, enquanto o peso diminui por causa da menor gravidade lunar.",
+      "conceptId": "CIE-38-CON-06",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Prever o que acontece com massa e peso na ida da Terra à Lua, distinguindo a quantidade de matéria do efeito da gravidade.",
+      "parameters": {
+        "title": "Preveja massa e peso na Lua",
+        "promptQuote": "Um astronauta vai da Terra para a Lua. O que acontece com massa e peso?",
+        "observationQuote": "Um astronauta vai da Terra para a Lua. O que acontece com massa e peso?\n\n1) Use esta relação: A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite. 2) Use esta relação: A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano. 3) Use esta relação: A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol. 4) Aplicando essas relações à situação, a conclusão correta é: A massa permanece essencialmente a mesma, enquanto o peso diminui por causa da menor gravidade lunar.",
+        "explanationQuote": "1) Use esta relação: A rotação da Terra ocorre em torno de seu eixo e está relacionada à alternância aproximada de dia e noite. 2) Use esta relação: A translação da Terra é sua órbita ao redor do Sol; combinada à inclinação do eixo terrestre, explica as estações do ano. 3) Use esta relação: A Lua orbita a Terra e apresenta fases porque vemos diferentes frações de sua região iluminada pelo Sol. 4) Aplicando essas relações à situação, a conclusão correta é: A massa permanece essencialmente a mesma, enquanto o peso diminui por causa da menor gravidade lunar."
+      }
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-10",
+  "status": "LIVE_TWELVE_LESSON_CONTINUATION_VERIFIED",
+  "lessonIdentitiesNewlyEnriched": 12,
+  "lessonIds": [
+    "CIE-12",
+    "CIE-13",
+    "CIE-14",
+    "CIE-15",
+    "CIE-16",
+    "CIE-19",
+    "CIE-21",
+    "CIE-23",
+    "CIE-35",
+    "CIE-38",
+    "POR-03",
+    "POR-13"
+  ],
+  "receipts": [
+    "CHEMISTRY-PREDICTION-RELEASE.json",
+    "BIOLOGY-PREDICTION-RELEASE.json",
+    "ENVIRONMENT-PREDICTION-RELEASE.json",
+    "READING-GRAVITY-PREDICTION-RELEASE.json"
+  ],
+  "publicationMode": "admin_direct",
+  "actualActorVerified": true,
+  "noIndependentReviewFabricated": true,
+  "originalIdentitiesRetained": 132,
+  "originalQuestionAndStudyFingerprintsPreserved": true,
+  "sourceCorpusReimported": false,
+  "scoredQuestionsAdded": false,
+  "answersSubmitted": false,
+  "privateFullBackupsVerified": true,
+  "lastBackupSha256": "53074a5d9c139483881424fa1ea1c66e0f7ace244fe7b3005e75118292b66a49",
+  "runtimeRelease": {
+    "pullRequest": "https://github.com/theusinshow/estudisc/pull/20",
+    "requiredChecksPassed": [
+      "lint",
+      "typecheck",
+      "unit",
+      "build",
+      "integration",
+      "content-qa",
+      "pack-validation",
+      "critical-e2e"
+    ],
+    "mergeCommit": "88d8f1ff53d1417239adfb9a688e687590003971",
+    "deploymentId": "dpl_3SneFiforJZaoWRKfUoWqw34qjbF",
+    "ready": true,
+    "alias": "https://vecta-three.vercel.app",
+    "headingLayouts": [
+      {
+        "path": "/lessons/CIE-21",
+        "viewport": 320,
+        "scrollWidth": 320,
+        "title": "Sustentabilidade, poluição e impactos ambientais",
+        "wrap": "anywhere",
+        "inlineStyle": null
+      },
+      {
+        "path": "/lessons/CIE-21",
+        "viewport": 375,
+        "scrollWidth": 360,
+        "title": "Sustentabilidade, poluição e impactos ambientais",
+        "wrap": "anywhere",
+        "inlineStyle": null
+      },
+      {
+        "path": "/lessons/CIE-21",
+        "viewport": 1440,
+        "scrollWidth": 1425,
+        "title": "Sustentabilidade, poluição e impactos ambientais",
+        "wrap": "anywhere",
+        "inlineStyle": null
+      }
+    ]
+  },
+  "validation": {
+    "fullLint": "PASS",
+    "typecheck": "PASS",
+    "packs": "PASS",
+    "fullTestsPassed": 467,
+    "optionalRealPostgresSkipped": 3,
+    "fullTestFilesPassed": 143,
+    "runtimeReleaseBuild": "PASS",
+    "runtimeReleaseE2ePassed": 58,
+    "runtimeReleaseFlagGatedE2eSkipped": 38,
+    "lastDataOnlyChangesReusedVerifiedRuntime": true
+  },
+  "next": {
+    "status": "MODEL_ESCALATION_REQUIRED",
+    "recommendedModel": "Terra",
+    "task": "Persisted scored-enrichment Question/lesson-binding contract",
+    "handoff": "handoffs/2026-10-10-scored-enrichment-contract.md",
+    "editorialPermissionPending": false
+  },
+  "wholeCorpusEnrichmentComplete": false
+}

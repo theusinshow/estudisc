@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-13",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "f84865c1fb5e2a0c9c8c9db1c0aac2f83d2a01884538bf4d322adc5963be4c55",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "A meta e o vínculo de conceito são propostas derivadas do cenário e da conclusão do exemplo resolvido preservado; os objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-13-source-prediction-v3",
+      "beforeBlockId": "POR-13-B07",
+      "sourceBlockHash": "f310c8862703d37cd8a6ca3c202b8463d6900527c01b997e148d6c031eb29b59",
+      "sourceQuote": "A escola ampliou o bicicletário porque mais estudantes passaram a pedalar. O número de vagas aumentou; portanto, a fila diminuiu.\n\n“Porque” introduz causa; “portanto” apresenta conclusão/consequência relacionada ao aumento das vagas.",
+      "conceptId": "por.por-13-c01.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Relacionar os conectores do exemplo às ideias de causa e conclusão, justificando a leitura pela conexão entre as duas situações.",
+      "parameters": {
+        "title": "Antecipe a relação entre as ideias",
+        "promptQuote": "A escola ampliou o bicicletário porque mais estudantes passaram a pedalar. O número de vagas aumentou; portanto, a fila diminuiu.",
+        "observationQuote": "A escola ampliou o bicicletário porque mais estudantes passaram a pedalar. O número de vagas aumentou; portanto, a fila diminuiu.\n\n“Porque” introduz causa; “portanto” apresenta conclusão/consequência relacionada ao aumento das vagas.",
+        "explanationQuote": "“Porque” introduz causa; “portanto” apresenta conclusão/consequência relacionada ao aumento das vagas."
+      }
+    }
+  ]
+}

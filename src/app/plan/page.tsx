@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppShell } from "@/components/layout/app-shell";
 import { Tabs } from "@/components/ui/tabs";
@@ -29,7 +28,7 @@ export default async function PlanPage() {
         <h3>{session.status === "ACTIVE" ? "Sessão em andamento" : session.status === "COMPLETED" ? "Sessão concluída" : "Sessão preparada"}</h3>
         <span className="session-duration">{session.budgetMinutes} min planejados</span>
         <ol>{sessionItemsSchema.parse(session.items).map(item => <li key={item.lessonId}>{item.title} · {item.minutes} min</li>)}</ol>
-        <Link href={`/study/${session.id}`}>{session.status === "COMPLETED" ? "Ver resultado" : "Abrir sessão"}</Link>
+        <a href={`/study/${session.id}`}>{session.status === "COMPLETED" ? "Ver resultado" : "Abrir sessão"}</a>
       </li>
     ))}</ul>;
   }
