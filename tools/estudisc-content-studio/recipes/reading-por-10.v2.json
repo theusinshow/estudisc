@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-10",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "affaf652ecc3a7546b40320a70e52317a10906836b19659eccba79753bb9f4e3",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-10-source-prediction-v3",
+      "beforeBlockId": "POR-10-B07",
+      "sourceBlockHash": "40d01647592fcaea448e064635128195f1aaf6ee9f10e5dd1f5211722aa01161",
+      "sourceQuote": "Em “Os resultados da pesquisa mostram uma mudança”, o verbo está no plural por concordar com “resultados”, não com “pesquisa”.\n\nO núcleo do sujeito é “resultados”; “da pesquisa” apenas o especifica.",
+      "conceptId": "por.por-10-c03.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Distinguir resultados de pesquisa como candidato ao núcleo do sujeito e explicar a concordância plural do verbo.",
+      "parameters": {
+        "title": "Antecipe o núcleo que determina a concordância",
+        "promptQuote": "Em “Os resultados da pesquisa mostram uma mudança”",
+        "observationQuote": "Em “Os resultados da pesquisa mostram uma mudança”, o verbo está no plural por concordar com “resultados”, não com “pesquisa”.\n\nO núcleo do sujeito é “resultados”; “da pesquisa” apenas o especifica.",
+        "explanationQuote": "O núcleo do sujeito é “resultados”; “da pesquisa” apenas o especifica."
+      }
+    }
+  ]
+}

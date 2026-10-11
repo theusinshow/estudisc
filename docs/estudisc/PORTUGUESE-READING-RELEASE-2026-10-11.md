@@ -1,0 +1,23 @@
+# Portuguese reading exploration release — 2026-10-11
+
+LIVE through authenticated Admin Direct: POR-04/05/07/09/10/12/16/17/19/23 v3. Ten source-quoted explorations address combined visual/verbal meaning, punctuation, contextual word class, subject identification, agreement, information focus, irony, refutation, referential ambiguity and situational register. All original examples, fields, absent original goals/mappings, Activities/Concepts and 80 Question refs remain exact. New goals and mappings are explicitly SOURCE_DERIVED_PROPOSAL, community feedback pending. No new official Question, evaluator, Attempt, evidence, mastery rule, media or Pack schema.
+
+Actual ADMIN bindings matched current published v2 source/hash/author/Question refs; all previews returned 200/ready/exact packet hashes. All ten imports returned 201. Ten actual administrative draft readers passed empty-response/disabled-Observe/hidden-explanation/proposed-goal/unpublished-disclosure checks. Admin Direct publication returned 200 with ten newly published releases; actual actor matches, mode admin_direct and zero fabricated editorial reviews. Read-only baseline/import/publication/final snapshots preserve original lessons/blocks/Activities, all Questions/versions and frozen session compositions. Final totals: 132 lesson identities, 1,284 Question/version rows, 120 Attempts, 141 evidence records, 146 study events.
+
+All ten actual published mobile readers at 375 px passed content/initial-state checks and 360/360 scroll/client width. POR-23 desktop at 1440 px passed 1425/1425. Actual POR-04 predict → observe → explain passed at 375 px with original quotes and exploration disclosure; only the actual ADMIN's owned exploratory resume was exercised, with no official submission or student impersonation. Mobile/desktop screenshots were inspected. QA now checks the persisted stepper mode before toggling and separates authored math from visual spans. The initial single-call ten-page read exceeded the tool's 120-second timeout; all pages were rechecked in bounded two-page calls, without repeat imports.
+
+320 px exception: POR-04's original Question section with stem beginning “Qual alternativa evita uma generalização inadequada...” reaches right 321.97 while client width is 305, producing scrollWidth 322. The new prediction fits, and the source content is unchanged. This is an existing layout defect identified by expanded-content validation, not a source-data error. An isolated code correction and regression/release check is the next independent increment; do not claim full 320 px acceptance until it passes.
+
+Exact commands:
+
+- `pnpm exec tsx .local/database-migration/private/content-continuation-20261011/inventory.mts` — fresh current-version audit.
+- `pnpm exec tsx .local/database-migration/private/portuguese-reading-20261011/prepare.mts` — ten actual source/author bound packets, 80 unchanged refs.
+- `pnpm exec vitest run tests/unit/portuguese-reading-enrichment.test.ts tests/unit/source-goal-enrichment.test.tsx tests/integration/source-goal-version-import.test.ts` — 14 PASS. An initial fixture Pack ID used uppercase; corrected to the contract's lowercase format before import.
+- `pnpm exec eslint tests/unit/portuguese-reading-enrichment.test.ts` — PASS.
+- `pnpm packs:verify` — PASS.
+- `node .local/database-migration/private/portuguese-reading-20261011/checkpoint.mjs before` (then `after-import`, `after-publication`, `final`) — preserved-state checks PASS.
+- Private `pg_dump.exe --dbname=service=estudisc-final --format=custom --file=<private pre/post path>` and `pg_restore.exe --list <private pre/post path>` — both complete archives validated. Pre SHA256 `b82ac2a108489d125553095fa9be2a94d16464af176daca50d352bebd3665ea0`; post `3017752e1bad567d4f9b519eb35c689a4d42b6dca04d7980d3e102fd3ab6abe2`.
+
+Public selection: `tools/estudisc-content-studio/teaching-complements/portuguese-reading-selection.json`; public recipes: `tools/estudisc-content-studio/recipes/reading-por-*.v2.json`; tests: `tests/unit/portuguese-reading-enrichment.test.ts`. Private receipts/backups/screenshots stay under `.local/database-migration/private/portuguese-reading-20261011/`. No secret/actual actor identity is in public contribution files. No broad frontend build/E2E was run against Claude's shared uncommitted files.
+
+NEXT ACTION: repair the demonstrated narrow Question layout in an isolated code checkout and integrate dedicated content contributions with full final acceptance. Continue compatible enrichment; scored-Question binding remains the separate Terra architectural handoff pending the user's model-routing clarification.

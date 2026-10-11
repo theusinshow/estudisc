@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-05",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "34ce910f1c51ce1ad2d415b3f0b04ea3e183a05925b79f52313f0ffdee197827",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-05-source-prediction-v3",
+      "beforeBlockId": "POR-05-B07",
+      "sourceBlockHash": "9f13417b54742e79f3af88af7a2c13dae0159b432faa3a359bcfb596ca621805",
+      "sourceQuote": "Em “Não, espere.” a vírgula separa a negação do comando. Em “Não espere.” a orientação muda.\n\nA pontuação altera a estrutura e o comando comunicado; não é mero enfeite.",
+      "conceptId": "por.por-05-c03.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Comparar o comando com e sem a vírgula, observando como a pontuação muda o sentido de esperar.",
+      "parameters": {
+        "title": "Antecipe o comando comunicado pela vírgula",
+        "promptQuote": "Em “Não, espere.”",
+        "observationQuote": "Em “Não, espere.” a vírgula separa a negação do comando. Em “Não espere.” a orientação muda.\n\nA pontuação altera a estrutura e o comando comunicado; não é mero enfeite.",
+        "explanationQuote": "A pontuação altera a estrutura e o comando comunicado; não é mero enfeite."
+      }
+    }
+  ]
+}

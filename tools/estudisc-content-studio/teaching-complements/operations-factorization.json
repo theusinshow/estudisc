@@ -1,0 +1,25 @@
+{
+  "purpose": "source_derived_teaching_complement_not_assessed",
+  "templates": [
+    {
+      "lessonId": "MAT-01",
+      "baseVersion": 2,
+      "anchorId": "BLK-MAT-01-E05",
+      "conceptId": "MAT.NUM.EXPRESSIONS",
+      "objective": "Expressões numéricas e ordem das operações",
+      "newBlockId": "MAT-01-complement-equal-priority-v3",
+      "title": "Divisão e multiplicação: da esquerda para a direita",
+      "content": "Calcule 48 ÷ 6 × 2 − 3 × (4 − 1).\n\n1. Resolva o agrupador: 4 − 1 = 3. A expressão fica 48 ÷ 6 × 2 − 3 × 3.\n2. Divisão e multiplicação têm a mesma prioridade. No primeiro trecho, siga da esquerda para a direita: 48 ÷ 6 = 8; depois 8 × 2 = 16.\n3. Calcule o outro produto: 3 × 3 = 9.\n4. Faça a subtração restante: 16 − 9 = 7.\n\nConferência: o primeiro trecho vale 16 e o segundo vale 9; a diferença é 7. Trocar 48 ÷ 6 × 2 por 48 ÷ (6 × 2) daria 4, mas acrescentaria um agrupamento que não existe na expressão original. A regra não manda fazer toda multiplicação antes de qualquer divisão."
+    },
+    {
+      "lessonId": "MAT-12",
+      "baseVersion": 2,
+      "anchorId": "B-MAT-12-mat-factor-common-example",
+      "conceptId": "MAT.FACTOR.COMMON",
+      "objective": "Fatorar polinômios pelo maior fator monomial comum.",
+      "newBlockId": "MAT-12-complement-common-factor-v3",
+      "title": "Fator comum com potência e sinal negativo",
+      "content": "Fatore 10t³ − 15t².\n\n1. O MDC dos coeficientes 10 e 15 é 5. A variável t aparece nos dois termos; o menor expoente é 2. Portanto, o maior fator monomial comum é 5t².\n2. O termo que acompanha esse fator no primeiro produto é 2t, pois 5t² × 2t = 10t³. No segundo, é −3, pois 5t² × (−3) = −15t².\n3. Escreva a forma fatorada: 10t³ − 15t² = 5t²(2t − 3).\n4. Confira pela distributividade: 5t²(2t − 3) = 10t³ − 15t².\n\nPara t = 1, as duas formas valem −5. Para t = 0, as duas valem 0. A fatoração é uma identidade válida também em zero: escrever um fator em evidência não autoriza cancelá-lo em uma equação sem verificar quando ele se anula."
+    }
+  ]
+}

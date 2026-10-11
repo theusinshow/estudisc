@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-16",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "45bb800c3eff75c23138a1f91343164ac44568a68e1a683f6e3a10a3b239d692",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-16-source-prediction-v3",
+      "beforeBlockId": "POR-16-B07",
+      "sourceBlockHash": "52263ab921abac3bd76ae0209ce527ade933485ec08341a68a64b11122902488",
+      "sourceQuote": "Depois de esperar duas horas, alguém diz: “Que atendimento rápido!”.\n\nO contraste entre situação e formulação positiva produz ironia, com efeito crítico/humorístico.",
+      "conceptId": "por.por-16-c04.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Inferir a ironia pelo contraste entre o tempo de espera e a formulação positiva, sem tratar a frase fora do contexto.",
+      "parameters": {
+        "title": "Antecipe o sentido de atendimento rápido",
+        "promptQuote": "Depois de esperar duas horas, alguém diz: “Que atendimento rápido!”.",
+        "observationQuote": "Depois de esperar duas horas, alguém diz: “Que atendimento rápido!”.\n\nO contraste entre situação e formulação positiva produz ironia, com efeito crítico/humorístico.",
+        "explanationQuote": "O contraste entre situação e formulação positiva produz ironia, com efeito crítico/humorístico."
+      }
+    }
+  ]
+}

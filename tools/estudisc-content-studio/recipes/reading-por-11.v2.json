@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-11",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "34990cfda22448fb30cf4c8907aae21d7c5a7ad7d6cb9b9ffea9efb9cc4a8aac",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-11-source-prediction-v3",
+      "beforeBlockId": "POR-11-B07",
+      "sourceBlockHash": "9f0a3216165a94e5262b08b94063bf75d64adb41759f142bba3f92f120b6b364",
+      "sourceQuote": "Compare “O estudante assistiu ao debate” e “O técnico assistiu o paciente”.\n\nNo sentido de ver/presenciar, a norma-padrão tradicional usa “assistir a”; no sentido de prestar assistência, complemento direto.",
+      "conceptId": "por.por-11-c01.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Comparar os sentidos de assistir e seus complementos nos exemplos, respeitando a norma-padrão tradicional apresentada.",
+      "parameters": {
+        "title": "Antecipe a relação entre sentido e complemento",
+        "promptQuote": "Compare “O estudante assistiu ao debate” e “O técnico assistiu o paciente”.",
+        "observationQuote": "Compare “O estudante assistiu ao debate” e “O técnico assistiu o paciente”.\n\nNo sentido de ver/presenciar, a norma-padrão tradicional usa “assistir a”; no sentido de prestar assistência, complemento direto.",
+        "explanationQuote": "No sentido de ver/presenciar, a norma-padrão tradicional usa “assistir a”; no sentido de prestar assistência, complemento direto."
+      }
+    }
+  ]
+}

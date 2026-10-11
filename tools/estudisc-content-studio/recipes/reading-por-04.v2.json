@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-04",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "f5907adfd26b976a1dd170c5013f7d9877486aafc89349bd6442d758b6e3d8d7",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-04-source-prediction-v3",
+      "beforeBlockId": "POR-04-B07",
+      "sourceBlockHash": "fe20f2a7a83d32a3c4af7a5956178ae54d8a5fd27abe58712b294ea0c620cce9",
+      "sourceQuote": "Um cartaz mostra uma torneira aberta sobre um reservatório quase vazio. Ao lado, a frase “Só um minutinho a mais”. A palavra “minutinho” aparece enorme.\n\nO tamanho da palavra e o contraste com o reservatório reforçam a crítica: algo apresentado como pequeno pode ter efeito acumulado relevante.",
+      "conceptId": "por.por-04-c01.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Explicar como o tamanho de uma palavra e o contraste visual contribuem juntos para a crítica no cartaz descrito.",
+      "parameters": {
+        "title": "Antecipe o efeito de combinar palavra e imagem",
+        "promptQuote": "Um cartaz mostra uma torneira aberta sobre um reservatório quase vazio. Ao lado, a frase “Só um minutinho a mais”. A palavra “minutinho” aparece enorme.",
+        "observationQuote": "Um cartaz mostra uma torneira aberta sobre um reservatório quase vazio. Ao lado, a frase “Só um minutinho a mais”. A palavra “minutinho” aparece enorme.\n\nO tamanho da palavra e o contraste com o reservatório reforçam a crítica: algo apresentado como pequeno pode ter efeito acumulado relevante.",
+        "explanationQuote": "O tamanho da palavra e o contraste com o reservatório reforçam a crítica: algo apresentado como pequeno pode ter efeito acumulado relevante."
+      }
+    }
+  ]
+}

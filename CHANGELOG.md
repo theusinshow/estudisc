@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-11 — Lesson complements and narrow Question containment
+
+- Publish source-bound mathematics explorers/worked examples and ten Portuguese reading explorations through actual Admin Direct; retain original content, Questions and study history. Goals/mappings derived from otherwise missing source metadata remain explicit proposals; exploration is not an official Attempt or mastery evidence. Exact release/backup receipts live in `docs/estudisc/`.
+- Keep Question cards, forms and answer fieldsets inside the available lesson column on 320 px screens with classic scrollbars. Existing words, DS tokens, touch targets, keyboard controls and grading remain unchanged. Add a real Portuguese content regression that failed on the prior release and verifies 320/375/1440 px containment, unclipped content and radio focus.
+
 ## 2026-10-11 — Frontend refinement: math notation, lighter shell and reading fixes
 
 - Render authored math more clearly through the shared Paragraphs/MathText renderer (contract v1): exponents in the reading font instead of mismatched fallback glyphs, stacked integer fractions, overlined square roots and hanging worked-step lists. Exact authored text stays available to screen readers and copy; dates, URLs, units, decimals and year periods stay plain. No content, answer or evaluator changed.

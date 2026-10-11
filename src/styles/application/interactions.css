@@ -1,5 +1,8 @@
 /* Mobile learning controls, canonical v3 tokens. */
 .learning-interaction {
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+  overflow-wrap: anywhere;
   padding: var(--estudisc-spacing-8);
   margin-block: var(--estudisc-spacing-8);
   border: var(--estudisc-border-rule) solid var(--estudisc-color-ink);
@@ -9,6 +12,7 @@
   max-width: 72ch;
 }
 .learning-interaction h3 { margin-top: 0; }
+.learning-interaction form, .learning-interaction fieldset { grid-template-columns: minmax(0, 1fr); min-width: 0; }
 .learning-interaction fieldset { border: 0; padding: 0; margin-block: var(--estudisc-spacing-8); }
 .learning-field { display: grid; gap: var(--estudisc-spacing-4); margin-block: var(--estudisc-spacing-8); flex: 1; min-width: 0; }
 .learning-field input, .learning-field select {

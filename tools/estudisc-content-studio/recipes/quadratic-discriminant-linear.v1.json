@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "trackId": "ifsc-2027-mathematics",
+    "trackVersion": 1,
+    "lessonId": "MAT-15",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "7cead1fa6f0d791ebb8f92b44d423acaeb3de5846995223ec293217ceab4b058",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "additions": [
+    {
+      "newBlockId": "MAT-15-source-linear-v3",
+      "afterBlockId": "B-MAT-15-mat-eq2-roots-example",
+      "sourceBlockHash": "b2ce57aa8c858eec50bd7af0a4f12fa153db0ff0b44e56b954da1ae26bfe1544",
+      "sourceQuote": "Em x² − 3x − 10 = 0, Δ=(−3)²−4·1·(−10)=9+40=49>0. Portanto, há duas raízes reais distintas; pela fórmula, elas são 5 e −2.",
+      "conceptId": "MAT.EQ2.ROOTS",
+      "objective": "Classificar raízes reais pelo sinal do discriminante.",
+      "purpose": "exploration",
+      "type": "numeric-explorer",
+      "parameters": {
+        "mode": "linear",
+        "title": "Explore o sinal do discriminante",
+        "variableLabel": "Coeficiente c",
+        "outputLabel": "Discriminante Δ",
+        "min": -10,
+        "max": 5,
+        "step": 0.25,
+        "initial": -10,
+        "slope": -4,
+        "intercept": 9,
+        "explanation": "Mantemos a = 1 e b = −3 na família x² − 3x + c = 0. Assim, Δ = b² − 4ac = 9 − 4c. No exemplo inicial, c = −10 dá Δ = 49 e duas raízes reais distintas, 5 e −2. Em c = 2,25, Δ = 0 e há uma raiz real dupla; para c maior que 2,25, Δ é negativo e não há raízes reais. O explorador calcula apenas o discriminante, não resolve a equação nem registra uma resposta avaliada."
+      },
+      "expectedInitialResult": 49
+    }
+  ]
+}
