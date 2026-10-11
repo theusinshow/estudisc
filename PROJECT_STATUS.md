@@ -1,5 +1,7 @@
 # Estudisc — Current project status
 
+Verified release (2026-10-11): PR23/eight green required checks/merge0e2a986/READY public alias; actual narrow Question overflow cases resolved at320px, all ten second-batch375px readers and desktop pass. Twenty Portuguese additions and nine mathematics continuations LIVE; original data/history unchanged and backups verified. Next: the user-confirmed Terra scored-enrichment contract. [Actual acceptance](docs/estudisc/LESSON-EVOLUTION-ACCEPTANCE-2026-10-11.md).
+
 Latest content continuation (2026-10-11) LIVE: MAT-PREREQ v5, MAT-01/02/03/09/10/12/14/15 v3 and twenty source-quoted Portuguese v3 versions, through actual Admin Direct. Exact source/Question bindings, immutable-history checks and private backups passed. [Mathematics continuation](docs/estudisc/OPERATIONS-FACTORIZATION-RELEASE-2026-10-11.md), [Portuguese release](docs/estudisc/PORTUGUESE-READING-RELEASE-2026-10-11.md). Isolated narrow-Question CSS fix passes the failing real-content regression at 320/375/1440 px; full local acceptance is green (522 tests, lint/typecheck/packs/build, 76 browser tests with 38 gated skips); protected PR23/code release and final live layout checks are in progress. Software through Phase14 is delivered; broad Phase9 enrichment and the new scored-Question binding contract are still partial, not completed by these exploratory additions.
 
 Frontend refinement (2026-10-11) locally accepted: math notation v1, lighter shell (−63 KB gzip on simple screens), DS motion, 320 px reflow, Plan/Concept/Map/sign-in/assessment presentation fixes; no content, grading, mastery or schema change. [Results, measurements and limits](docs/estudisc/FRONTEND-REFINEMENT-2026-10-11.md). NEXT ACTION: protected release of only these files.
@@ -179,4 +181,4 @@ Preserve the production alias, authentication and existing catalog; use protecte
 
 Complete the current Phase 3 acceptance evidence, then continue the Adaptive Session contract through existing modules; see [PLANS.md](PLANS.md) and [.estudisc-agent-context/NEXT.md](.estudisc-agent-context/NEXT.md). Do not repeat imports/publication or claim planner-readiness certification from publication. Historical implementation logs are in `docs/history/`.
 
-Verified release (2026-10-11): PR23/eight green required checks/merge0e2a986/READY public alias; actual narrow Question overflow cases resolved at320px, all ten second-batch375px readers and desktop pass. Twenty Portuguese additions and nine mathematics continuations LIVE; original data/history unchanged and backups verified. Next: the user-confirmed Terra scored-enrichment contract. [Actual acceptance](docs/estudisc/LESSON-EVOLUTION-ACCEPTANCE-2026-10-11.md).
+
