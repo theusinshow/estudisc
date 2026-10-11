@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-08",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "ee2da4fbcd05ca69f505b72e7ac81f567043a01b6a2857139ae53aad4ca12b08",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-08-source-prediction-v3",
+      "beforeBlockId": "POR-08-B07",
+      "sourceBlockHash": "80b65f24573b24b6249d2958a0ac27d373142f81a0d8a46b97817fd188f9dc88",
+      "sourceQuote": "Num cartaz: “Proteja seus dados. Verifique o remetente. Não clique em links suspeitos.”\n\nAs formas orientam o leitor e funcionam como imperativos, com tom de conselho/prevenção.",
+      "conceptId": "por.por-08-c03.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Reconhecer as formas que orientam o leitor como imperativos, relacionando-as ao conselho e à prevenção descritos.",
+      "parameters": {
+        "title": "Antecipe a função das formas verbais no cartaz",
+        "promptQuote": "Num cartaz: “Proteja seus dados. Verifique o remetente. Não clique em links suspeitos.”",
+        "observationQuote": "Num cartaz: “Proteja seus dados. Verifique o remetente. Não clique em links suspeitos.”\n\nAs formas orientam o leitor e funcionam como imperativos, com tom de conselho/prevenção.",
+        "explanationQuote": "As formas orientam o leitor e funcionam como imperativos, com tom de conselho/prevenção."
+      }
+    }
+  ]
+}

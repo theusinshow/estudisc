@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-19",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "4caabac2896b99599c7029992bfb56961e2c10e020b7cda9db41144447c3b0b8",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-19-source-prediction-v3",
+      "beforeBlockId": "POR-19-B07",
+      "sourceBlockHash": "86a0aa5a7a8523dd8ace89331010aa2bfca3a072253005cf203c84503c0821a5",
+      "sourceQuote": "Lia encontrou Marina depois da aula. Ela carregava uma caixa pesada.\n\n“Ela” cria cadeia coesiva, mas o referente é ambíguo porque duas pessoas femininas foram mencionadas.",
+      "conceptId": "por.por-19-c01.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Reconhecer que o pronome cria uma ligação referencial, mas não resolve sozinho a ambiguidade entre Lia e Marina.",
+      "parameters": {
+        "title": "Antecipe a quem o pronome ela se refere",
+        "promptQuote": "Lia encontrou Marina depois da aula. Ela carregava uma caixa pesada.",
+        "observationQuote": "Lia encontrou Marina depois da aula. Ela carregava uma caixa pesada.\n\n“Ela” cria cadeia coesiva, mas o referente é ambíguo porque duas pessoas femininas foram mencionadas.",
+        "explanationQuote": "“Ela” cria cadeia coesiva, mas o referente é ambíguo porque duas pessoas femininas foram mencionadas."
+      }
+    }
+  ]
+}

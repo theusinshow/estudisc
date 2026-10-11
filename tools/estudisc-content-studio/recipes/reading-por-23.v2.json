@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-23",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "979be231e930aa243089ffcefbc5d662778ce9a7615faa20094a11c337310455",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-23-source-prediction-v3",
+      "beforeBlockId": "POR-23-B07",
+      "sourceBlockHash": "40e398d6904d0ee282fdb7733719c2db095a32a16013356eeecdfbafa259a6a0",
+      "sourceQuote": "Uma pessoa escreve “Prezada equipe, solicito informações...” em e-mail formal e envia “me chama quando chegar” a um amigo.\n\nA mudança é situacional; o falante adapta recursos a interlocutor e finalidade.",
+      "conceptId": "por.por-23-c03.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Explicar a mudança de registro pela situação e pelo interlocutor, comparando o e-mail formal com a mensagem ao amigo.",
+      "parameters": {
+        "title": "Antecipe o motivo da mudança de registro",
+        "promptQuote": "Uma pessoa escreve “Prezada equipe, solicito informações...” em e-mail formal e envia “me chama quando chegar” a um amigo.",
+        "observationQuote": "Uma pessoa escreve “Prezada equipe, solicito informações...” em e-mail formal e envia “me chama quando chegar” a um amigo.\n\nA mudança é situacional; o falante adapta recursos a interlocutor e finalidade.",
+        "explanationQuote": "A mudança é situacional; o falante adapta recursos a interlocutor e finalidade."
+      }
+    }
+  ]
+}

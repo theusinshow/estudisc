@@ -43,5 +43,36 @@ export function useEntrance<T extends HTMLElement>(
   }, []);
 }
 
-/** Exponential ease-out shared by the entrance micro-interactions. */
-export const entranceEase = [0.16, 1, 0.3, 1] as const;
+/** Exponential ease-out for value (not position) changes such as CountUp. */
+export const easeOutExpo = (progress: number) => (progress >= 1 ? 1 : 1 - 2 ** (-10 * progress));
+
+function token(name: string, fallback: number) {
+  const value = Number.parseFloat(getComputedStyle(document.documentElement).getPropertyValue(name));
+  return Number.isFinite(value) ? value : fallback;
+}
+
+/**
+ * Design System entrance (MOTION.md): opacity plus a short translate read from the canonical tokens
+ * (slow ≤180 ms, travel 2–4 px), never blur or scale. Uses the Web Animations API, so no motion library
+ * ships for entrances. Inline styles are cleared afterwards so CSS hover/press transforms keep working.
+ */
+export function playEntrance(elements: readonly HTMLElement[], { stagger = 0.03, delay = 0 }: Readonly<{ stagger?: number; delay?: number }> = {}) {
+  if (typeof elements[0]?.animate !== "function") {
+    elements.forEach((element) => { element.style.removeProperty("opacity"); element.style.removeProperty("transform"); });
+    return () => {};
+  }
+  const duration = token("--estudisc-motion-slow", 180);
+  const travel = token("--estudisc-motion-travel-max", 4);
+  const easing = getComputedStyle(document.documentElement).getPropertyValue("--estudisc-motion-easing").trim() || "ease-out";
+  const animations = elements.map((element, index) => {
+    const animation = element.animate(
+      [{ opacity: 0, transform: `translateY(${travel}px)` }, { opacity: 1, transform: "translateY(0)" }],
+      { duration, delay: (delay + Math.min(index, 8) * stagger) * 1000, easing, fill: "backwards" }
+    );
+    // Clear the hidden start state once the animation owns the frames.
+    element.style.removeProperty("opacity");
+    element.style.removeProperty("transform");
+    return animation;
+  });
+  return () => animations.forEach((animation) => animation.cancel());
+}

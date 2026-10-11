@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-24",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "c0961009d0b8a7948bb11e1f0a1aa9f60679380def974ae0326ac45a7d3e6929",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-24-source-prediction-v3",
+      "beforeBlockId": "POR-24-B07",
+      "sourceBlockHash": "8566d7e9987e744e3eab037bb63996e49b927262ff4a58dcdaeaeecc2ecbc278",
+      "sourceQuote": "Uma personagem de romance usa marcas de fala regional para construir pertencimento. “Corrigir” tudo para registro burocrático apagaria parte da caracterização.\n\nA análise deve distinguir representação estilística/variedade de contextos em que a norma-padrão é solicitada.",
+      "conceptId": "por.por-24-c05.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Distinguir a caracterização literária por uma variedade regional dos contextos em que se solicita a norma-padrão.",
+      "parameters": {
+        "title": "Antecipe o efeito de substituir a fala regional",
+        "promptQuote": "Uma personagem de romance usa marcas de fala regional para construir pertencimento.",
+        "observationQuote": "Uma personagem de romance usa marcas de fala regional para construir pertencimento. “Corrigir” tudo para registro burocrático apagaria parte da caracterização.\n\nA análise deve distinguir representação estilística/variedade de contextos em que a norma-padrão é solicitada.",
+        "explanationQuote": "A análise deve distinguir representação estilística/variedade de contextos em que a norma-padrão é solicitada."
+      }
+    }
+  ]
+}

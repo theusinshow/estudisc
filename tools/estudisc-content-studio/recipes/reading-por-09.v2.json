@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-09",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "ff7a957bbf2ac914fc47fd837e6b39de398c94da3f7ab03678f4af0c17587af5",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-09-source-prediction-v3",
+      "beforeBlockId": "POR-09-B07",
+      "sourceBlockHash": "3ef49031d690de1825ccf0010dfbf9088d2f59ada6d8d7768435ad7ded1ec9ae",
+      "sourceQuote": "Em “Chegaram cedo os estudantes do turno da manhã”, o sujeito aparece depois do verbo.\n\n“Os estudantes do turno da manhã” é sujeito porque o verbo concorda com “estudantes”; posição não define função.",
+      "conceptId": "por.por-09-c01.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Localizar o sujeito pelo núcleo e pela concordância, mesmo quando aparece depois do verbo.",
+      "parameters": {
+        "title": "Antecipe quem pratica a ação de chegar",
+        "promptQuote": "Em “Chegaram cedo os estudantes do turno da manhã”",
+        "observationQuote": "Em “Chegaram cedo os estudantes do turno da manhã”, o sujeito aparece depois do verbo.\n\n“Os estudantes do turno da manhã” é sujeito porque o verbo concorda com “estudantes”; posição não define função.",
+        "explanationQuote": "“Os estudantes do turno da manhã” é sujeito porque o verbo concorda com “estudantes”; posição não define função."
+      }
+    }
+  ]
+}

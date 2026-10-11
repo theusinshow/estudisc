@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-22",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "be6c89d1b8660482888753f5c33c20f994aa01aafe26ee528e42e6f878ff5102",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-22-source-prediction-v3",
+      "beforeBlockId": "POR-22-B07",
+      "sourceBlockHash": "aa3e9c24c0ab4366540d3d0a6865c492d0b07e7a5219fe63cd0bbccef3517f1d",
+      "sourceQuote": "“Você já conferiu sua senha hoje?” aparece num anúncio de segurança digital de um banco; numa conversa entre amigos teria outra função provável.\n\nNo anúncio, a pergunta funciona como alerta/convocação à ação, moldada pelo emissor e pelo contexto.",
+      "conceptId": "por.por-22-c01.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Interpretar a pergunta segundo o emissor e o contexto do anúncio, distinguindo essa função de uma conversa entre amigos.",
+      "parameters": {
+        "title": "Antecipe a função da pergunta no anúncio",
+        "promptQuote": "“Você já conferiu sua senha hoje?” aparece num anúncio de segurança digital de um banco; numa conversa entre amigos teria outra função provável.",
+        "observationQuote": "“Você já conferiu sua senha hoje?” aparece num anúncio de segurança digital de um banco; numa conversa entre amigos teria outra função provável.\n\nNo anúncio, a pergunta funciona como alerta/convocação à ação, moldada pelo emissor e pelo contexto.",
+        "explanationQuote": "No anúncio, a pergunta funciona como alerta/convocação à ação, moldada pelo emissor e pelo contexto."
+      }
+    }
+  ]
+}

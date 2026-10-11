@@ -31,3 +31,13 @@
   .routine-days { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .routine-time-row, .routine-subject-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* Routine fields share the learning field vocabulary: visible ink border, paper fill, focus shadow. */
+.routine-field input:not([type="checkbox"]):not([type="radio"]), .routine-field select { padding: 0 var(--estudisc-spacing-8); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-paper); color: var(--estudisc-color-ink); font: inherit; }
+.routine-field input:not([type="checkbox"]):not([type="radio"]):focus, .routine-field select:focus { background: var(--estudisc-color-panel); box-shadow: var(--estudisc-shadow-structural); }
+
+/* /plan: sessions, then preparing one, then the weekly routine below an ink rule so its Continue never reads as session access. */
+.plan-section { display: grid; gap: var(--estudisc-spacing-6); margin-top: var(--estudisc-spacing-16); }
+.plan-section > h2 { margin: 0; font-size: var(--estudisc-typography-body-sizes-lg); font-weight: var(--estudisc-typography-display-weight); line-height: 1.2; }
+.plan-section > p { margin: 0; }
+.content-panel > .routine-planner { margin-top: var(--estudisc-spacing-16); padding-top: var(--estudisc-spacing-12); border-top: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }

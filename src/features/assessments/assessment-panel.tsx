@@ -1,11 +1,12 @@
 "use client";
 import { assessmentFinalizedResponseSchema, assessmentSavedResponseSchema, readValidatedResponse } from "@/lib/api-response";
-import { Paragraphs } from "@/components/ui/paragraphs";
+import { MathText, Paragraphs } from "@/components/ui/paragraphs";
 import { useEffect,useState } from "react";
 import { useRouter } from "next/navigation";
 import type { AssessmentView } from "./api";
 import { initialResponse,ResponseFields,type QuestionResponse } from "@/features/activities/components/response-fields";
 import { QuestionAssets } from "@/features/questions/question-assets";
+import { Circle, CircleAlert, CircleCheck, CircleDot, LoaderCircle } from "lucide-react";
 type QuestionState={dirty:boolean;saving:boolean;answered:boolean;flagged:boolean};
 const answered=(value:unknown)=>typeof value==="string"?value.trim().length>0:Array.isArray(value)?value.length>0:typeof value==="object"&&value!==null?Object.values(value).some(item=>typeof item==="string"&&item.length>0):false;
 export function AssessmentPanel({view,serverNow,enhanced=false}:{view:AssessmentView;serverNow:number;enhanced?:boolean}){
@@ -30,8 +31,16 @@ export function AssessmentPanel({view,serverNow,enhanced=false}:{view:Assessment
   </div>;
 }
 function AssessmentQuestion({item,initial,assessmentId,index,disabled,onState}:{item:AssessmentView["questions"][number];initial?:AssessmentView["responses"][number];assessmentId:string;index:number;disabled:boolean;onState:(state:QuestionState)=>void}){
-  const [response,setResponse]=useState<QuestionResponse>(()=>initial?.response===undefined?initialResponse(item.question):initial.response as QuestionResponse),[flagged,setFlagged]=useState(initial?.flagged??false),[busy,setBusy]=useState(false),[status,setStatus]=useState(initial?"Resposta salva":"");
+  const [response,setResponse]=useState<QuestionResponse>(()=>initial?.response===undefined?initialResponse(item.question):initial.response as QuestionResponse),[flagged,setFlagged]=useState(initial?.flagged??false),[busy,setBusy]=useState(false),[status,setStatus]=useState(initial?"Resposta salva":"Sem resposta salva.");
   const id=`assessment-${item.versionId}`;
   function change(value:QuestionResponse,nextFlag=flagged){setResponse(value);setFlagged(nextFlag);setStatus("Resposta alterada; salve para registrar.");onState({dirty:true,saving:false,answered:false,flagged:nextFlag});}
-  return <section className="learning-interaction exam-question" data-flagged={flagged} aria-labelledby={`${id}-title`}><span className="question-number" aria-hidden="true">{index+1}</span>{item.question.stimulus&&<div className="question-stimulus"><Paragraphs text={item.question.stimulus}/></div>}<h2 id={`${id}-title`}><span className="visually-hidden">Questão {index+1}. </span>{item.question.stem}</h2><QuestionAssets assets={item.question.assets}/><form onSubmit={async event=>{event.preventDefault();setBusy(true);onState({dirty:true,saving:true,answered:false,flagged});try{const result=await fetch(`/api/assessments/${assessmentId}`,{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify({questionVersionId:item.versionId,response,flagged})});if(!result.ok)throw new Error();await readValidatedResponse(result,assessmentSavedResponseSchema);setStatus("Resposta salva");onState({dirty:false,saving:false,answered:answered(response),flagged});}catch{setStatus("Resposta ainda não salva. Confira a conexão e tente novamente.");onState({dirty:true,saving:false,answered:false,flagged});}finally{setBusy(false);}}}><ResponseFields question={item.question} id={id} response={response} disabled={disabled||busy} onChange={value=>change(value)}/><label className="flag-toggle"><input type="checkbox" checked={flagged} disabled={disabled||busy} onChange={event=>change(response,event.target.checked)}/>Revisar depois</label><button className="primary-button" disabled={disabled||busy} type="submit">{busy?"Salvando…":"Salvar resposta"}</button><p className="save-status" role="status" data-saved={status==="Resposta salva"}>{status}</p></form></section>;
+  return <section className="learning-interaction exam-question" data-flagged={flagged} aria-labelledby={`${id}-title`}><span className="question-number" aria-hidden="true">{index+1}</span>{item.question.stimulus&&<div className="question-stimulus"><Paragraphs text={item.question.stimulus}/></div>}<h2 id={`${id}-title`}><span className="visually-hidden">Questão {index+1}. </span><MathText text={item.question.stem}/></h2><QuestionAssets assets={item.question.assets}/><form onSubmit={async event=>{event.preventDefault();setBusy(true);setStatus("Salvando resposta…");onState({dirty:true,saving:true,answered:false,flagged});try{const result=await fetch(`/api/assessments/${assessmentId}`,{method:"PATCH",headers:{"Content-Type":"application/json"},body:JSON.stringify({questionVersionId:item.versionId,response,flagged})});if(!result.ok)throw new Error();await readValidatedResponse(result,assessmentSavedResponseSchema);setStatus("Resposta salva");onState({dirty:false,saving:false,answered:answered(response),flagged});}catch{setStatus("Resposta ainda não salva. Confira a conexão e tente novamente.");onState({dirty:true,saving:false,answered:false,flagged});}finally{setBusy(false);}}}><ResponseFields question={item.question} id={id} response={response} disabled={disabled||busy} onChange={value=>change(value)}/><label className="flag-toggle"><input type="checkbox" checked={flagged} disabled={disabled||busy} onChange={event=>change(response,event.target.checked)}/>Revisar depois</label><button className="primary-button" disabled={disabled||busy} type="submit">{busy?"Salvando…":"Salvar resposta"}</button><SaveStatus status={status}/></form></section>;
+}
+
+// Save state as text plus a shape (not color alone), after the React Bits Status Mark idea but static: no spinning glyph.
+const saveIcons={empty:Circle,dirty:CircleDot,saving:LoaderCircle,saved:CircleCheck,failed:CircleAlert};
+function SaveStatus({status}:{status:string}){
+  const state=status==="Resposta salva"?"saved":status.startsWith("Salvando")?"saving":status.startsWith("Resposta alterada")?"dirty":status.startsWith("Resposta ainda não salva")?"failed":"empty";
+  const Icon=saveIcons[state];
+  return <p className="save-status" role="status" data-state={state} data-saved={state==="saved"}><Icon aria-hidden="true"/>{status}</p>;
 }

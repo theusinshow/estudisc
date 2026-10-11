@@ -87,8 +87,8 @@ test("imports a Track Pack, browses the lesson, runs code, submits and shows his
   await expect(page.getByRole("link", { name: /Logical AND/ })).toBeVisible();
   await page.goto("/concepts/js-logical-and");
   await expect(page.getByRole("heading", { name: "Logical AND" })).toBeVisible();
-  await expect(page.getByLabel("Mastery do conceito")).toContainText("POLICY mastery.v1");
-  await expect(page.getByLabel("Mastery do conceito")).toContainText(/Não visto|Entendido|Praticando/);
+  await expect(page.getByLabel("Domínio do conceito")).toContainText("Política mastery.v1");
+  await expect(page.getByLabel("Domínio do conceito")).toContainText(/Não visto|Entendido|Praticando/);
   await page.getByRole("link", { name: /^Variáveis, tipos e operadores/ }).click();
 
   await expect(page.getByRole("heading", { name: "Variáveis, tipos e operadores" })).toBeVisible();
@@ -150,10 +150,10 @@ test("imports a Track Pack, browses the lesson, runs code, submits and shows his
     .toBe(false);
 
   await page.goto("/concepts/js-logical-and");
-  await expect(page.getByLabel("Mastery do conceito")).toContainText("POLICY mastery.v1");
-  await expect(page.getByLabel("Mastery do conceito")).toContainText(/Entendido|Praticando/);
-  await expect(page.getByLabel("Mastery do conceito")).toContainText(/[23]\/5/);
-  await expect(page.getByLabel("Mastery do conceito")).toContainText("evidência registrada");
+  await expect(page.getByLabel("Domínio do conceito")).toContainText("Política mastery.v1");
+  await expect(page.getByLabel("Domínio do conceito")).toContainText(/Entendido|Praticando/);
+  await expect(page.getByLabel("Domínio do conceito")).toContainText(/[23]\/5/);
+  await expect(page.getByLabel("Domínio do conceito")).toContainText(/evidências? registradas?/);
 
   await page.goto("/tracks/javascript");
   await expect(page.getByLabel("Progresso")).toContainText("Aulas concluídas");

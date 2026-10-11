@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-07",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "9cd2da4a293f6fe3c905e2c829f92e4fe4613c7c4e639acee78e69791bcb8b4d",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-07-source-prediction-v3",
+      "beforeBlockId": "POR-07-B07",
+      "sourceBlockHash": "9e9f29b215af6edad41a108721f5bc0b66f2b8710a19af0906d90ceb2fbe4bf9",
+      "sourceQuote": "Em “O jantar está pronto”, “jantar” funciona como substantivo. Em “Vamos jantar cedo”, funciona como verbo.\n\nA forma é a mesma, mas função e comportamento no enunciado revelam classes diferentes.",
+      "conceptId": "por.por-07-c01.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Identificar o uso de jantar como nome ou ação pelo contexto do enunciado, em vez de classificar a palavra isolada.",
+      "parameters": {
+        "title": "Antecipe a classe de jantar neste enunciado",
+        "promptQuote": "Em “O jantar está pronto”, “jantar”",
+        "observationQuote": "Em “O jantar está pronto”, “jantar” funciona como substantivo. Em “Vamos jantar cedo”, funciona como verbo.\n\nA forma é a mesma, mas função e comportamento no enunciado revelam classes diferentes.",
+        "explanationQuote": "A forma é a mesma, mas função e comportamento no enunciado revelam classes diferentes."
+      }
+    }
+  ]
+}

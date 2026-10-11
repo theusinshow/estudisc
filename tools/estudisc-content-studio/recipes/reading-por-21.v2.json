@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-21",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "67d842a1db122808127f2b0960c6e31e00ee068e1c5381741045f35011ef501f",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-21-source-prediction-v3",
+      "beforeBlockId": "POR-21-B07",
+      "sourceBlockHash": "c2bf7c50318c029e6b6d9eefe081c436fa8d22bb38e5d7867bd2ca5e9143ff1b",
+      "sourceQuote": "Uma campanha ambiental recria a estrutura de um provérbio conhecido, trocando uma palavra para falar de desperdício.\n\nHá retomada deliberada de fórmula conhecida; a mudança produz novo sentido dependente do reconhecimento do original.",
+      "conceptId": "por.por-21-c01.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Reconhecer a retomada de uma fórmula conhecida e relacionar a mudança de palavra à produção de um novo sentido.",
+      "parameters": {
+        "title": "Antecipe o diálogo com uma fórmula conhecida",
+        "promptQuote": "Uma campanha ambiental recria a estrutura de um provérbio conhecido, trocando uma palavra para falar de desperdício.",
+        "observationQuote": "Uma campanha ambiental recria a estrutura de um provérbio conhecido, trocando uma palavra para falar de desperdício.\n\nHá retomada deliberada de fórmula conhecida; a mudança produz novo sentido dependente do reconhecimento do original.",
+        "explanationQuote": "Há retomada deliberada de fórmula conhecida; a mudança produz novo sentido dependente do reconhecimento do original."
+      }
+    }
+  ]
+}

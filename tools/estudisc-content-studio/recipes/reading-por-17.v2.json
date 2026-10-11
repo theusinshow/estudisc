@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-17",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "5e80feddb4de7a3738174fedcaccec137d22a04dca13617329780290499d875c",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-17-source-prediction-v3",
+      "beforeBlockId": "POR-17-B07",
+      "sourceBlockHash": "15cab6540e287421712e6d6a64223360ef9a2e940fa7747280c7f4b8701ef812",
+      "sourceQuote": "Um artigo defende ampliar ciclovias, cita dados de acidentes, compara custos e responde à crítica de que haveria menos espaço para carros.\n\nA defesa da ampliação é tese; dados/comparação sustentam; resposta à crítica é refutação.",
+      "conceptId": "por.por-17-c05.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Distinguir tese, sustentação e refutação no artigo descrito, identificando a função de responder à crítica sobre o espaço para carros.",
+      "parameters": {
+        "title": "Antecipe o papel da resposta à crítica",
+        "promptQuote": "Um artigo defende ampliar ciclovias, cita dados de acidentes, compara custos e responde à crítica de que haveria menos espaço para carros.",
+        "observationQuote": "Um artigo defende ampliar ciclovias, cita dados de acidentes, compara custos e responde à crítica de que haveria menos espaço para carros.\n\nA defesa da ampliação é tese; dados/comparação sustentam; resposta à crítica é refutação.",
+        "explanationQuote": "A defesa da ampliação é tese; dados/comparação sustentam; resposta à crítica é refutação."
+      }
+    }
+  ]
+}

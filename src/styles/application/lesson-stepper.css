@@ -1,0 +1,56 @@
+/* Lesson stepper, native progress bars and the lesson/track progress summary. Split from interactions.css; keep import order in globals.css. */
+/* Lesson stepper: one idea per screen inside study sessions. */
+.lesson-stepper { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--estudisc-spacing-10); scroll-margin-top: 76px; }
+.stepper-head { position: sticky; top: 60px; z-index: 15; display: flex; flex-wrap: wrap; align-items: center; gap: var(--estudisc-spacing-4) var(--estudisc-spacing-8); padding: var(--estudisc-spacing-6) 0; background: var(--estudisc-color-paper); }
+@media (min-width: 900px) { .stepper-head { top: 72px; } .lesson-stepper { scroll-margin-top: 88px; } }
+.stepper-count { font-size: 0.9375rem; }
+.stepper-count strong { font-weight: 800; }
+.stepper-head .stepper-toggle { margin-left: auto; min-height: 36px; padding: 0 var(--estudisc-spacing-8); border-style: dashed; box-shadow: none; font-size: 0.875rem; }
+.stepper-bar { flex-basis: 100%; height: 12px; border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); overflow: hidden; }
+.stepper-bar span { display: block; height: 100%; background: var(--estudisc-color-signal); border-right: var(--estudisc-border-rule) solid var(--estudisc-color-ink); transition: width var(--estudisc-motion-base) var(--estudisc-motion-easing); }
+.lesson-step { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--estudisc-spacing-10); min-height: 40dvh; align-content: start; }
+.lesson-stepper[data-mode="all"] .lesson-step { min-height: 0; }
+.lesson-step[data-kind="check"]::before { content: "Responda antes de seguir"; justify-self: start; padding: 2px var(--estudisc-spacing-6); border: var(--estudisc-border-hair) solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-surface-pink); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+.lesson-step[data-kind="exit"]::before { content: "Desafio final"; justify-self: start; padding: 2px var(--estudisc-spacing-6); border: var(--estudisc-border-hair) solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-signal); font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; }
+.lesson-step .lesson-text p, .lesson-callout p + p { margin-top: var(--estudisc-spacing-6); }
+.lesson-step .learning-interaction { margin-block: 0; }
+.stepper-nav { position: sticky; bottom: calc(84px + env(safe-area-inset-bottom)); z-index: 15; display: grid; grid-template-columns: 1fr 2fr; gap: var(--estudisc-spacing-6); padding: var(--estudisc-spacing-6) 0; background: var(--estudisc-color-paper); }
+@media (min-width: 900px) { .stepper-nav { bottom: 0; } }
+.stepper-nav .primary-button { background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); min-height: 56px; font-size: 1.0625rem; }
+.stepper-nav button { min-height: 56px; }
+.stepper-nav:has(> :only-child) { grid-template-columns: 1fr; }
+/* Inside a lesson step the question card matches the step column instead of a narrower 72ch box. */
+.lesson-step .learning-interaction { max-width: none; }
+.lesson-complete { display: grid; align-content: start; min-height: 0; gap: var(--estudisc-spacing-8); padding: var(--estudisc-spacing-12); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-sheet); background: var(--estudisc-color-panel); box-shadow: var(--estudisc-shadow-raised); }
+.lesson-complete h2 { margin: 0; font-size: 1.5rem; font-weight: 800; line-height: 1.2; }
+.lesson-complete p { margin: 0; line-height: 1.6; }
+.lesson-complete-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--estudisc-spacing-6) var(--estudisc-spacing-10); }
+.lesson-complete-actions .primary-button { display: inline-flex; align-items: center; gap: var(--estudisc-spacing-4); min-height: 56px; padding: 0 var(--estudisc-spacing-10); text-decoration: none; }
+.lesson-step > .lesson-text, .lesson-step .lesson-text { max-width: 65ch; margin: 0; padding: 0; border: 0; background: none; box-shadow: none; font-size: 1.125rem; line-height: 1.65; }
+
+/* Progress bars use native <progress>: the CSP blocks inline style attributes. */
+progress.stepper-bar, progress.bar { -webkit-appearance: none; appearance: none; display: block; width: 100%; height: 14px; border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); color: var(--estudisc-color-signal); overflow: hidden; }
+progress.bar { height: 22px; color: var(--subject, var(--estudisc-color-signal)); }
+progress.stepper-bar { flex-basis: 100%; }
+progress.stepper-bar::-webkit-progress-bar, progress.bar::-webkit-progress-bar { background: var(--estudisc-color-panel); }
+progress.stepper-bar::-webkit-progress-value { background: var(--estudisc-color-signal); border-right: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }
+progress.bar::-webkit-progress-value { background: var(--subject, var(--estudisc-color-signal)); border-right: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }
+progress.stepper-bar::-moz-progress-bar { background: var(--estudisc-color-signal); }
+progress.bar::-moz-progress-bar { background: var(--subject, var(--estudisc-color-signal)); }
+.atom-model-svg { display: block; width: 100%; max-width: 360px; height: 160px; }
+@media (min-width: 900px) { .sidebar { z-index: 20; } .topbar { z-index: 30; } }
+.progress-summary dd { font-size: 1.375rem; line-height: 1.2; }
+.progress-summary { padding: var(--estudisc-spacing-10) var(--estudisc-spacing-12); }
+/* Mastery is a state label, not a counter: reading size beside the counts (full row on phones). */
+@media (min-width: 768px) { .progress-summary dl:has(.progress-summary-mastery) { grid-template-columns: repeat(2, minmax(9rem, 13rem)) minmax(0, 1fr); } }
+.progress-summary .progress-summary-mastery dd { font-size: var(--estudisc-typography-body-sizes-lg); font-weight: 800; line-height: 1.3; overflow-wrap: normal; }
+.progress-summary .progress-summary-mastery small { font-size: var(--estudisc-typography-body-sizes-sm); line-height: 1.45; }
+@media (max-width: 767px) {
+  .progress-summary { gap: var(--estudisc-spacing-3); padding: var(--estudisc-spacing-8); }
+  .progress-summary dl { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--estudisc-spacing-4); }
+  .progress-summary dl > div { padding: var(--estudisc-spacing-5) var(--estudisc-spacing-6); }
+  .progress-summary .progress-summary-mastery { grid-column: 1 / -1; }
+  /* Track summary (counts only): label/value rows instead of an orphaned third card. */
+  .progress-summary dl:not(:has(.progress-summary-mastery)) { grid-template-columns: minmax(0, 1fr); gap: var(--estudisc-spacing-3); }
+  .progress-summary dl:not(:has(.progress-summary-mastery)) > div { display: flex; align-items: baseline; justify-content: space-between; gap: var(--estudisc-spacing-6); }
+}

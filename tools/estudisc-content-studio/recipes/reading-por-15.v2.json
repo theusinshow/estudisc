@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-15",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "7986b56f4a1f7e085d9309a1ba119d4556e6026a3f56fab6d4738d4f9fa7bd3d",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-15-source-prediction-v3",
+      "beforeBlockId": "POR-15-B07",
+      "sourceBlockHash": "4be2b742eec2a7334c380c06bea460db9e3f3716932ae1852246d2d141a865f9",
+      "sourceQuote": "“Vi a professora com o binóculo” pode indicar que quem viu usou o binóculo ou que a professora estava com ele.\n\nA ambiguidade decorre do encaixe de “com o binóculo”; a reescrita deve explicitar quem possui/usa o instrumento.",
+      "conceptId": "por.por-15-c02.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Reconhecer as duas leituras possíveis do encaixe de com o binóculo, identificando o que uma reescrita precisa esclarecer.",
+      "parameters": {
+        "title": "Antecipe quem pode estar com o binóculo",
+        "promptQuote": "“Vi a professora com o binóculo”",
+        "observationQuote": "“Vi a professora com o binóculo” pode indicar que quem viu usou o binóculo ou que a professora estava com ele.\n\nA ambiguidade decorre do encaixe de “com o binóculo”; a reescrita deve explicitar quem possui/usa o instrumento.",
+        "explanationQuote": "A ambiguidade decorre do encaixe de “com o binóculo”; a reescrita deve explicitar quem possui/usa o instrumento."
+      }
+    }
+  ]
+}

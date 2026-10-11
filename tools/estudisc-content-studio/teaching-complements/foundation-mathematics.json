@@ -1,0 +1,35 @@
+{
+  "purpose": "source_derived_teaching_complement_not_assessed",
+  "templates": [
+    {
+      "lessonId": "MAT-02",
+      "baseVersion": 2,
+      "anchorId": "BLK-MAT-02-E06",
+      "conceptId": "MAT.DIV.MODEL",
+      "objective": "Decidir entre MMC e MDC em um problema",
+      "newBlockId": "MAT-02-complement-mmc-mdc-v3",
+      "title": "Mesmos números, perguntas diferentes",
+      "content": "Compare duas situações com 18 e 24.\n\n1. Dois avisos tocam juntos agora e repetem a cada 18 e 24 minutos. A primeira nova coincidência positiva pede o MMC. Como 18 = 2 × 3² e 24 = 2³ × 3, usamos os maiores expoentes: MMC = 2³ × 3² = 72 minutos. Conferência: os múltiplos positivos de 18 até 72 são 18, 36, 54 e 72; os de 24 são 24, 48 e 72. O primeiro comum é 72.\n\n2. Duas fitas medem 18 e 24 cm. Para cortá-las em pedaços do mesmo comprimento, sem sobra e tão grandes quanto possível, precisamos do MDC. Usamos os fatores comuns com os menores expoentes: MDC = 2 × 3 = 6 cm. Conferência: a primeira fita produz 18 ÷ 6 = 3 pedaços; a segunda, 24 ÷ 6 = 4.\n\nA pergunta decide a operação: primeiro tempo positivo comum → MMC; maior tamanho comum sem sobra → MDC. As quantidades iguais não tornam as respostas iguais."
+    },
+    {
+      "lessonId": "MAT-09",
+      "baseVersion": 2,
+      "anchorId": "MAT09-V2-B15-MIXED-EXAMPLE",
+      "conceptId": "MAT.EXPR.MIXED",
+      "objective": "Expressões com potências e radicais",
+      "newBlockId": "MAT-09-complement-grouped-expression-v3",
+      "title": "Agrupamentos, raiz e expoente negativo",
+      "content": "Calcule [(3² − √16) ÷ 5]² + 2⁻¹.\n\n1. Confira as condições: √16 é uma raiz real, pois 16 é não negativo; o divisor 5 e a base 2 são diferentes de zero.\n2. Dentro dos colchetes, 3² = 9 e √16 = 4. Então (9 − 4) ÷ 5 = 5 ÷ 5 = 1.\n3. Eleve o resultado inteiro dos colchetes: 1² = 1.\n4. O expoente negativo indica o inverso: 2⁻¹ = 1/2. Não significa −2.\n5. Some os termos: 1 + 1/2 = 3/2 = 1,5.\n\nConferência: o agrupamento vale 1; seu quadrado continua 1. Acrescentar metade de uma unidade resulta em uma unidade e meia."
+    },
+    {
+      "lessonId": "MAT-10",
+      "baseVersion": 2,
+      "anchorId": "MAT10-V2-B05-SOLVE-EXAMPLE",
+      "conceptId": "MAT.INEQ.SOLVE",
+      "objective": "Resolver inequações do 1º grau",
+      "newBlockId": "MAT-10-complement-inclusive-boundary-v3",
+      "title": "Dividir por negativo e incluir a fronteira",
+      "content": "Resolva −4x + 7 ≤ 23.\n\n1. Subtraia 7 dos dois lados: −4x ≤ 16.\n2. Divida por −4 e inverta o sentido da desigualdade: x ≥ −4.\n3. Confira a fronteira na expressão original: para x = −4, temos −4 × (−4) + 7 = 23. A relação 23 ≤ 23 é verdadeira, então a fronteira está incluída.\n4. Teste um valor de cada lado: x = 0 dá 7 ≤ 23, verdadeiro; x = −5 dá 27 ≤ 23, falso.\n\nConclusão: o conjunto solução é [−4, +∞). A divisão pelo número negativo muda o sentido; o sinal que permite igualdade determina a inclusão da fronteira."
+    }
+  ]
+}

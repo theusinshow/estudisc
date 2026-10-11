@@ -1,0 +1,38 @@
+/* Account sign-in profile picker, question rewards and catalog/authoring control tweaks. Split from interactions.css; keep import order in globals.css. */
+/* Account sign-in (ADR 0031): profile picker + Code Slots. */
+.account-sign-in { display: grid; gap: var(--estudisc-spacing-10); }
+.account-picker { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-6); margin: 0; padding: 0; border: 0; }
+.account-picker legend { margin-bottom: var(--estudisc-spacing-6); font-weight: 800; }
+.account-option { display: inline-flex; align-items: center; gap: var(--estudisc-spacing-4); min-height: var(--estudisc-touch-minimum, 44px); padding: 0 var(--estudisc-spacing-10); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-paper); color: var(--estudisc-color-ink); font: inherit; font-weight: 700; cursor: pointer; }
+.account-option:not([aria-pressed="true"]) { box-shadow: none; }
+.account-option[aria-pressed="true"] { background: var(--estudisc-color-signal); box-shadow: var(--estudisc-shadow-structural); }
+.account-option:focus-visible { outline: 3px solid var(--estudisc-color-ink); outline-offset: 3px; }
+.account-code { display: grid; gap: var(--estudisc-spacing-6); justify-items: start; }
+.account-code > p:first-child { margin: 0; font-weight: 700; }
+.account-code-message { min-height: 1.5em; margin: 0; font-weight: 700; }
+.account-code-message[data-tone="error"] { color: var(--estudisc-color-error); }
+.code-slots.code-slots--compact { --cs-size: 40px; --cs-height: 47px; --cs-gap: 6px; --cs-font: 20px; }
+.code-slots-placeholder { display: inline-flex; gap: 8px; }
+.code-slots-placeholder span { width: 48px; height: 57px; border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: 12px; background: var(--estudisc-color-paper); }
+.nav-account { display: grid; gap: var(--estudisc-spacing-4); margin-top: var(--estudisc-spacing-6); padding-top: var(--estudisc-spacing-6); border-top: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }
+.nav-account > span { padding: 0 var(--estudisc-spacing-6); font-size: 0.875rem; }
+.nav-account button { display: flex; align-items: center; gap: var(--estudisc-spacing-6); width: 100%; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+@media (max-width: 420px) { .code-slots-placeholder { gap: 6px; } .code-slots-placeholder span { width: 40px; height: 47px; } }
+.nav-account button { font-weight: 700; }
+
+.question-study-reward { display: grid; gap: var(--estudisc-spacing-3); margin-top: var(--estudisc-spacing-6); font-size: var(--estudisc-typography-body-sizes-sm); }
+.question-study-reward p { margin: 0; }
+.question-study-reward a { display: inline-flex; align-items: center; min-height: var(--estudisc-touch-minimum); width: fit-content; font-weight: 750; text-underline-offset: var(--estudisc-spacing-2); }
+
+/* Estudisc auth retains the approved motion values with explicit properties. */
+.auth-panel .primary-action { transition-property: background-color, border-color, box-shadow, transform; transition-duration: var(--estudisc-motion-fast); transition-timing-function: var(--estudisc-motion-easing); }
+
+.learning-catalog > .learning-controls { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; align-items: end; }
+.learning-catalog .learning-controls > a { display: flex; align-items: center; min-height: var(--estudisc-touch-minimum); margin-bottom: var(--estudisc-spacing-8); }
+.authoring-workbench .learning-check { display: flex; align-items: center; gap: var(--estudisc-spacing-3); min-height: var(--estudisc-touch-minimum); cursor: pointer; }
+.authoring-workbench .learning-check input { flex: none; width: 22px; height: 22px; accent-color: var(--estudisc-color-ink); }
+@media (max-width: 640px) {
+  .learning-catalog > .learning-controls { grid-template-columns: minmax(0, 1fr); }
+  .learning-catalog .learning-field { margin-block: var(--estudisc-spacing-4); }
+  .learning-catalog .learning-controls > a { margin-bottom: 0; }
+}

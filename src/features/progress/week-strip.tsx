@@ -1,10 +1,9 @@
 "use client";
 
 import { Check } from "lucide-react";
-import { animate, stagger } from "motion/react";
 import { useRef } from "react";
 
-import { useEntrance } from "@/components/motion/use-entrance";
+import { playEntrance, useEntrance } from "@/components/motion/use-entrance";
 import type { ActivityDay } from "./overview";
 
 const weekday = new Intl.DateTimeFormat("pt-BR", { weekday: "short", timeZone: "UTC" });
@@ -24,12 +23,8 @@ export function WeekStrip({ days }: Readonly<{ days: readonly ActivityDay[] }>) 
     hide: (element) => {
       for (const child of element.children) (child as HTMLElement).style.opacity = "0";
     },
-    play: (element) => {
-      const cells = [...element.children] as HTMLElement[];
-      const controls = animate(cells, { opacity: [0, 1], transform: ["scale(0.6)", "scale(1)"] }, { type: "spring", visualDuration: 0.32, bounce: 0.35, delay: stagger(0.05) });
-      void controls.then(() => cells.forEach((cell) => cell.removeAttribute("style")));
-      return () => controls.stop();
-    }
+    // Opacity + short token travel (DS motion); the previous spring scale exceeded 2–4 px and 180 ms.
+    play: (element) => playEntrance([...element.children] as HTMLElement[])
   });
 
   return (

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-18",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "f4e99795b64096dd7dbda7df716442b1ebaf59e7c15f6b55ec6debaab817a55f",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-18-source-prediction-v3",
+      "beforeBlockId": "POR-18-B07",
+      "sourceBlockHash": "1ec8c1d532ff9de5af37945da7b289604c60aa88b85b82cb72652228e70c6ed4",
+      "sourceQuote": "Num conto: “Ele voltou. Outra vez.” A expressão final aparece em período próprio.\n\nA fragmentação destaca a repetição do evento e pode sugerir insistência/cansaço/tensão conforme contexto.",
+      "conceptId": "por.por-18-c03.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Explicar o destaque produzido pelo período separado, mantendo abertas as possibilidades de efeito que dependem do contexto.",
+      "parameters": {
+        "title": "Antecipe o efeito de separar outra vez",
+        "promptQuote": "Num conto: “Ele voltou. Outra vez.” A expressão final aparece em período próprio.",
+        "observationQuote": "Num conto: “Ele voltou. Outra vez.” A expressão final aparece em período próprio.\n\nA fragmentação destaca a repetição do evento e pode sugerir insistência/cansaço/tensão conforme contexto.",
+        "explanationQuote": "A fragmentação destaca a repetição do evento e pode sugerir insistência/cansaço/tensão conforme contexto."
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Paragraphs } from "@/components/ui/paragraphs";
+import { MathText, Paragraphs } from "@/components/ui/paragraphs";
 import { getDatabaseUrl } from "@/db/connection";
 import { QuestionStudyRepository, QuestionUnavailableError } from "@/db/repositories/question-study-repository";
 import { MemoryQuestionStudyRepository } from "@/db/repositories/memory-question-study-repository";
@@ -46,10 +46,10 @@ function DraftPreview({ question }: Readonly<{ question: Question }>) {
       <span className="question-draft-badge">Rascunho · prévia do revisor</span>
       <div className="question-draft-note">O aluno só verá esta questão quando a aula for publicada em <Link href="/admin/review">Revisar aulas</Link>. Aqui não é possível responder.</div>
       {question.stimulus ? <div className="question-stimulus"><Paragraphs text={question.stimulus} /></div> : null}
-      <h3>{question.stem}</h3>
+      <h3><MathText text={question.stem} /></h3>
       {question.choices?.length ? (
         <ol className="question-draft-choices">
-          {question.choices.map(choice => <li key={choice.id} data-correct={choice.correct || undefined}>{choice.content}{choice.correct ? <strong> (gabarito)</strong> : null}</li>)}
+          {question.choices.map(choice => <li key={choice.id} data-correct={choice.correct || undefined}><MathText text={choice.content} />{choice.correct ? <strong> (gabarito)</strong> : null}</li>)}
         </ol>
       ) : question.answer.kind === "numeric" ? (
         <p>Resposta esperada: <strong>{String(question.answer.value).replace(".", ",")}{question.answer.unit ? ` ${question.answer.unit}` : ""}</strong></p>

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "identity": {
+    "trackId": "ifsc-2027-portuguese",
+    "trackVersion": 6,
+    "lessonId": "POR-12",
+    "lessonVersion": 2
+  },
+  "sourceLessonHash": "bc69ce3a66d56c26a5280e1c99a4959315d4ab7ce159e870283a5565acf61ab4",
+  "newVersion": 3,
+  "authorId": "estudisc-content-studio",
+  "selectionBasis": "source_goal_exception",
+  "exceptionReason": "Meta e vínculo são propostas derivadas do cenário e da conclusão do exemplo autoral preservado. O aluno formula uma interpretação antes da observação, sem nota oficial; objetivos originais permanecem ausentes.",
+  "additions": [
+    {
+      "newBlockId": "POR-12-source-prediction-v3",
+      "beforeBlockId": "POR-12-B07",
+      "sourceBlockHash": "b2d3d9f4ba0c38f62082cf50f2aa3a50adb338be155bb15be041f38b1da5f2c1",
+      "sourceQuote": "Compare “A comissão divulgou o resultado”, “O resultado foi divulgado pela comissão” e “O resultado foi divulgado”.\n\nO evento é semelhante, mas o foco muda para “resultado”; na última forma o agente é apagado.",
+      "conceptId": "por.por-12-c05.v1",
+      "purpose": "exploration",
+      "type": "prediction",
+      "goalOrigin": "SOURCE_DERIVED_PROPOSAL",
+      "proposedGoal": "Comparar o foco informacional e a presença do agente nas três formulações sobre a divulgação do resultado.",
+      "parameters": {
+        "title": "Antecipe o foco das três formas do enunciado",
+        "promptQuote": "Compare “A comissão divulgou o resultado”, “O resultado foi divulgado pela comissão” e “O resultado foi divulgado”.",
+        "observationQuote": "Compare “A comissão divulgou o resultado”, “O resultado foi divulgado pela comissão” e “O resultado foi divulgado”.\n\nO evento é semelhante, mas o foco muda para “resultado”; na última forma o agente é apagado.",
+        "explanationQuote": "O evento é semelhante, mas o foco muda para “resultado”; na última forma o agente é apagado."
+      }
+    }
+  ]
+}
