@@ -91,22 +91,22 @@
           {
             "claim": "Analisar intenção é descobrir pensamentos privados do autor.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "A intenção comunicativa é inferida por escolhas observáveis do texto, não por acesso a pensamentos privados. Ex.: Um anúncio com verbos no imperativo e prazo curto busca estimular uma ação rápida."
           },
           {
             "claim": "Contexto nunca muda sentido.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "O contexto de produção e circulação pode alterar a leitura de uma palavra ou enunciado. Ex.: “Reforma” em um cartaz de campanha ganha sentido político no período eleitoral."
           },
           {
             "claim": "Texto jornalístico é neutro por definição.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Notícias fazem escolhas de título, fonte e vocabulário, ainda que adotem procedimentos de apuração. Ex.: “Manifestantes ocupam a praça” e “Manifestantes invadem a praça” enquadram o fato de modos distintos."
           },
           {
             "claim": "Sem conhecer pessoalmente o autor não há posicionamento analisável.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Marcas de avaliação e seleção lexical permitem analisar posicionamento sem conhecer pessoalmente quem escreveu. Ex.: Chamar uma medida de “necessária” manifesta uma avaliação no próprio texto."
           }
         ]
       },

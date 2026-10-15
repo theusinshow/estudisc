@@ -88,22 +88,22 @@
         {
           "claim": "Uma palavra pertence à mesma classe em qualquer contexto.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "A classe da palavra depende do emprego sintático e do sentido no contexto. Ex.: “O jantar esfriou” usa “jantar” como substantivo; “vamos jantar” usa-o como verbo."
         },
         {
           "claim": "Adjetivo é toda palavra depois de substantivo.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "Adjetivos qualificam ou classificam nomes e podem vir antes ou depois deles. Ex.: “Velha casa” e “casa antiga” trazem adjetivos em posições distintas."
         },
         {
           "claim": "Pronomes só substituem nomes de pessoas.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "Pronomes retomam ou apontam pessoas, objetos, ideias e trechos. Ex.: “O livro chegou; ele está na mesa” retoma um objeto."
         },
         {
           "claim": "Conjunções não interferem no sentido.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "Conjunções estabelecem relações como contraste, causa e conclusão. Ex.: “Estudou, mas não passou” contrasta resultados; “portanto” indicaria conclusão."
         }
       ]
     },

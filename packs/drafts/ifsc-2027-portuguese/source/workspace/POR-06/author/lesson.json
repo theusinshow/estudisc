@@ -87,22 +87,22 @@
         {
           "claim": "Cada letra representa sempre um único som.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "A relação entre grafema e fonema não é sempre biunívoca. Ex.: A letra “c” soa /k/ em “casa” e /s/ em “cedo”."
         },
         {
           "claim": "Toda palavra tem o mesmo número de letras e fonemas.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "Dígrafos e letras com mais de um valor fazem a contagem divergir. Ex.: “Chave” tem cinco letras e quatro fonemas."
         },
         {
           "claim": "Um dígrafo representa dois fonemas.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "No dígrafo, duas letras representam um só fonema. Ex.: Em “chave”, “ch” corresponde a um som consonantal."
         },
         {
           "claim": "Pronúncia regional diferente prova erro de escrita.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "Variação de pronúncia não altera a convenção ortográfica da palavra. Ex.: O “r” de “porta” pode variar regionalmente, mas a grafia continua “porta”."
         }
       ]
     },

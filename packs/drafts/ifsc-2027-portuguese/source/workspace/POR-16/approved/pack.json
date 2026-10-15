@@ -89,22 +89,22 @@
           {
             "claim": "Toda frase não literal é metáfora.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "A linguagem figurada inclui processos distintos, como metonímia, hipérbole e personificação. Ex.: “Li Machado de Assis” usa o autor pela obra, não uma metáfora."
           },
           {
             "claim": "Ironia é simplesmente mentira.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Ironia comunica avaliação pela distância entre a expressão e a situação, enquanto mentira afirma algo deliberadamente falso. Ex.: Após um erro, “Que serviço impecável!” pode ser irônico."
           },
           {
             "claim": "Figuras só aparecem em poemas.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Figuras de linguagem também aparecem na fala cotidiana, em notícias e em publicidade. Ex.: A manchete “Preços disparam” usa uma metáfora fora da poesia."
           },
           {
             "claim": "Basta saber o nome da figura.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Nomear a figura não basta: é preciso explicar o efeito que ela produz no contexto. Ex.: “Esperei uma eternidade” exagera a duração e sinaliza impaciência."
           }
         ]
       },

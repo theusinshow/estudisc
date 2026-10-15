@@ -91,22 +91,22 @@
           {
             "claim": "Todo texto narrativo é necessariamente um conto.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "O tipo narrativo aparece em vários gêneros, e o conto é apenas um deles. Ex.: A notícia “O ônibus chegou às 8h” narra um fato."
           },
           {
             "claim": "Gênero textual e tipo textual são sinônimos.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Gênero nomeia uma forma de comunicação; tipo textual descreve sua organização predominante. Ex.: Uma receita é gênero injuntivo, e uma notícia pode combinar narração e exposição."
           },
           {
             "claim": "Um texto só pode apresentar um único tipo textual.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Um texto pode alternar sequências com funções distintas. Ex.: Uma crônica narra um passeio e descreve a praça."
           },
           {
             "claim": "Para descobrir o gênero, basta observar se o texto é curto ou longo.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "O gênero depende de finalidade, interlocução e circulação, além da extensão. Ex.: Um bilhete de uma página continua sendo bilhete se mantém destinatário e função."
           }
         ]
       },

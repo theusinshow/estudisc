@@ -89,22 +89,22 @@
           {
             "claim": "Sinônimos podem ser trocados em qualquer frase.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Sinônimos compartilham sentidos, mas podem diferir em registro, intensidade ou combinações usuais. Ex.: “Rosto alegre” e “rosto feliz” são possíveis, mas não idênticos em todo contexto."
           },
           {
             "claim": "Cada palavra tem um único significado.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "O contexto seleciona a acepção apropriada de uma palavra polissêmica. Ex.: “Sentei no banco” indica assento; “fui ao banco” indica instituição."
           },
           {
             "claim": "Antônimo é sempre negação com “não”.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Antônimos exprimem oposição lexical ou gradual, não apenas a presença de “não”. Ex.: “Quente” opõe-se a “frio”; “não quente” também pode significar morno."
           },
           {
             "claim": "Contexto não interfere no sentido.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "O contexto pode ativar sentido literal ou figurado. Ex.: “Ela é uma fera em matemática” elogia sua habilidade, não a identifica como animal."
           }
         ]
       },
