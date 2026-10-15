@@ -1,0 +1,66 @@
+{
+  "$comment": "Pack content-quality rules (validate-packs.mjs). Known violations live in validate-packs.baseline.json and only warn; anything new fails. Every content phase that fixes a problem must delete its entries from the baseline (or rerun with --write-baseline after the fix) so the problem cannot come back.",
+  "roots": [
+    "packs/drafts",
+    "packs/releases"
+  ],
+  "visibleBlockFields": [
+    "title",
+    "content",
+    "caption",
+    "credit",
+    "alt",
+    "longDescription"
+  ],
+  "rules": {
+    "R1": {
+      "severity": "error",
+      "title": "Editorial/internal text visible to students",
+      "pattern": "\\b(rascunho|pendentes?|crosswalk|desta autoria|cotejo|revisão humana|LOCAL_DETERMINISTIC)\\b|IMG-[A-Z]+-\\d+|\\bnos recortes\\b",
+      "allow": [],
+      "$comment": "Word-bounded on purpose: 'independentes' and the geography term 'recorte do espaço' are legitimate content."
+    },
+    "R2": {
+      "severity": "error",
+      "title": "English enum alone on a line",
+      "pattern": "^\\s*(INCORRECT|CORRECT|TRUE|FALSE|PARTIAL\\w*)\\s*$",
+      "allow": []
+    },
+    "R3": {
+      "severity": "error",
+      "title": "Correct choice is the longest",
+      "maxShare": 0.35,
+      "allow": []
+    },
+    "R4": {
+      "severity": "warn",
+      "title": "Distractor with an absolute term",
+      "pattern": "\\b(sempre|nunca|todos?|todas?|apenas|somente|exatamente|necessariamente|automaticamente)\\b",
+      "maxShare": 0.2,
+      "allow": []
+    },
+    "R5": {
+      "severity": "error",
+      "title": "Answer letter distribution out of range",
+      "minShare": 0.12,
+      "maxShare": 0.28,
+      "minQuestions": 20,
+      "allow": []
+    },
+    "R6": {
+      "severity": "error",
+      "title": "answer.choiceId differs from the correct choice",
+      "allow": []
+    },
+    "R7": {
+      "severity": "error",
+      "title": "Lesson/question id reused by another pack",
+      "allow": []
+    },
+    "R8": {
+      "severity": "error",
+      "title": "Identical stem without stimulus",
+      "allow": []
+    }
+  }
+}

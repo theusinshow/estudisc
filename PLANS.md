@@ -2,6 +2,12 @@
 
 LIVE: the second Portuguese ten-lesson increment (POR-01/06/08/11/15/18/20/21/22/24 v3), exact originals/80 refs preserved through actual Admin Direct. Both complete backups and publication/history checks passed; final old-Question layout acceptance follows PR23. POR-14 remains excluded from an unresolved local/current-source binding mismatch. User explicitly confirmed Terra for the scored-enrichment contract. NEXT ACTION: eight required checks → protected PR23 merge/READY alias → published POR-04/15/24 and remaining language readers → current Terra handoff. No independent editorial approval is pending.
 
+
+## Lesson pack correction plan — phase 0 (2026-10-15, Claude, branch feat/pack-validator-20261015)
+
+Source: user-supplied correction plan (phases 0–5) based on REVISAO-AULAS.md. Phase 0 DONE locally: validator, config, baseline (227 known violations), CI step in `pack-validation`, 11 unit tests. Deviations, all deliberate: R1 is word-bounded (avoids "independentes" and "recorte do espaço"); R4 is warn; R5 skips packs with fewer than 20 questions; the CI step runs in the existing pack-validation job instead of lint.
+Content phases 1–3 go to Codex, one pack per agent. Every fix must ship as new immutable versions through preview, backup and Admin Direct, then remove its baseline entries. Phase 4.2 is reduced to retiring the week-1 track with redirects, without rewriting student data (to be confirmed). Phase 5 (past exams and the mock exam) is prioritized for the 29/11 exam.
+NEXT ACTION: user confirmation to push/PR phase 0; then dispatch phase 1 per pack.
 ## Lesson evolution completion — 2026-10-11
 
 Content continuation is live: MAT-PREREQ v5, MAT-01/02/03/09/10/12/14/15 v3 and POR-04/05/07/09/10/12/16/17/19/23 v3 through authentic Admin Direct. Integrate only dedicated recipes/tests/receipts from the shared tree; preserve the frontend owner's unrelated work. New increment: fix a demonstrated POR-04 Question card overflow (scrollWidth322/clientWidth305 at viewport320) using existing grid containment, preserving DS tokens, authored payloads, grading and history. First run a baseline real-content regression, then the smallest CSS fix, focused checks and full acceptance in this isolated checkout. Required protected checks and Git-backed deployment precede actual live narrow-reader verification. Scored-enrichment contract remains the separate user-confirmed Terra handoff; do not mark broad Phase9 enrichment complete.

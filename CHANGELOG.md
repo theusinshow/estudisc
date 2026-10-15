@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-15 — Pack content-quality gate (phase 0)
+
+- `pnpm validate:packs` (`scripts/validate-packs.mjs`, no new dependencies, ~0.2 s) checks every `caderno.track.v2` pack in `packs/drafts` and `packs/releases`. R1: internal editorial text shown to students. R2: an English enum alone on a line. R3: the correct choice is the longest in more than 35% of questions. R4 (warn): a distractor with an absolute term in more than 20%. R5: answer letters outside 12–28%. R6: `answer.choiceId` differs from the correct choice. R7: lesson or question ids reused by another pack. R8: an identical stem without stimulus.
+- The 227 known violations live in `scripts/validate-packs.baseline.json` and only warn. A new violation, or an aggregate rule that gets worse, fails CI (`pack-validation` job). Each content fix must remove its baseline entries.
+- R1 is word-bounded, so "independentes" and the geography term "recorte do espaço" are not flagged.
+
 ## 2026-10-11 — Lesson complements and narrow Question containment
 
 - Publish source-bound mathematics explorers/worked examples and ten Portuguese reading explorations through actual Admin Direct; retain original content, Questions and study history. Goals/mappings derived from otherwise missing source metadata remain explicit proposals; exploration is not an official Attempt or mastery evidence. Exact release/backup receipts live in `docs/estudisc/`.
