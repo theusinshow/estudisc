@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 // Content-quality gate for caderno.track.v2 packs. Usage:
 //   node scripts/validate-packs.mjs [--json] [--write-baseline] [--no-baseline]
 // Rules and limits: scripts/validate-packs.config.json. Known problems: scripts/validate-packs.baseline.json.
