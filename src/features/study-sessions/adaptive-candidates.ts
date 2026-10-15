@@ -4,7 +4,7 @@ import type { PlannerCandidate, PlannerPhase } from "./planner-policy";
 import type { TargetedSelection } from "./targeted-selection";
 
 export type AdaptiveActivity = { stableId: string; prompt: string; orderIndex: number; config: { questionId: string; questionVersion: number; hints: string[] }; question: Question; independentSuccess: boolean; failedBefore: boolean };
-export type AdaptiveLesson = { id: string; trackId: string; version: number; title: string; subjectCode: string; estimatedMinutes: number; conceptIds: string[]; levels: number[]; importance: number; dueDays: number; due: boolean; mistake: boolean; prerequisitesReady: boolean; phase: PlannerPhase; objectives: string[]; sourceIds: string[]; checkpointIds: string[]; independentQa: boolean; officialMappingVerified: boolean; activities: AdaptiveActivity[] };
+export type AdaptiveLesson = { id: string; trackId: string; version: number; title: string; subjectCode: string; estimatedMinutes: number; conceptIds: string[]; levels: number[]; importance: number; dueDays: number; due: boolean; mistake: boolean; prerequisitesReady: boolean; phase: PlannerPhase; objectives: string[]; sourceIds: string[]; checkpointIds: string[]; independentQa: boolean; adminDirectAuthorized: boolean; officialMappingVerified: boolean; activities: AdaptiveActivity[] };
 export const adaptiveQuestionMinutes = { foundation: 3, direct: 4, applied: 5, ifsc: 6, challenge: 8 } as const;
 
 export function adaptiveChoice(lesson: AdaptiveLesson, budgetMinutes: number, subjectLimit = budgetMinutes, selection?: TargetedSelection): { candidate: PlannerCandidate; item: SessionItem } | null {
@@ -14,7 +14,8 @@ export function adaptiveChoice(lesson: AdaptiveLesson, budgetMinutes: number, su
     ...(!lesson.officialMappingVerified ? ["O mapeamento curricular oficial não foi certificado."] : []),
     ...(!lesson.objectives.length ? ["Os objetivos editoriais desta versão estão incompletos."] : [])
   ];
-  const fullReady = lesson.independentQa && lesson.objectives.length > 0 && lesson.sourceIds.length > 0 && lesson.checkpointIds.length > 0 && lesson.checkpointIds.every(id => lesson.activities.some(activity => activity.question.id === id)) && lesson.conceptIds.length > 0 && lesson.conceptIds.every(id => new Set(lesson.activities.filter(activity => activity.question.conceptIds.includes(id)).map(activity => activity.question.id)).size >= 2);
+  // An authorized Admin Direct release is publication readiness, not independent QA; the QA caveat above stays visible.
+  const fullReady = (lesson.independentQa || lesson.adminDirectAuthorized) && lesson.objectives.length > 0 && lesson.sourceIds.length > 0 && lesson.checkpointIds.length > 0 && lesson.checkpointIds.every(id => lesson.activities.some(activity => activity.question.id === id)) && lesson.conceptIds.length > 0 && lesson.conceptIds.every(id => new Set(lesson.activities.filter(activity => activity.question.conceptIds.includes(id)).map(activity => activity.question.id)).size >= 2);
   const remaining = lesson.activities.filter(activity => (!selection || activity.question.conceptIds.some(id => selection.conceptIds.includes(id)) && !selection.excludedQuestionIds.includes(activity.question.id)) && (selection || lesson.due || !activity.independentSuccess))
     .sort((a, b) => Number(a.failedBefore) - Number(b.failedBefore) || a.orderIndex - b.orderIndex || (a.stableId < b.stableId ? -1 : 1));
   if (!remaining.length || budget < 5) return null;

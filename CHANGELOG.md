@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-15 — Continuous lesson study flow (ADR 0060)
+
+- Today can show **Continuar estudando** (`FEATURE_CONTINUOUS_STUDY=true`): one whole published lesson on the lesson page, no time-budget choice. Leaving mid-way resumes from the lesson-scoped saved step. A lesson counts as done when its lesson resume is completed or 80% of the distinct Questions of its latest version were answered in any version. The next lesson is the most recent unfinished one, otherwise the first unfinished lesson of the subject with the fewest finished lessons; students can also pick a subject. Review and mistakes stay separate. Completion never writes evidence or mastery.
+- Adaptive planner: an authorized Admin Direct publication now counts as publication readiness for new learning (the independent-QA caveat stays visible), and the first fitting new lesson leads a session before review and remediation fill the rest. Before this, a read-only run on production data found zero new-learning candidates, so students only received lesson 01.
+
 ## 2026-10-11 — Lesson complements and narrow Question containment
 
 - Publish source-bound mathematics explorers/worked examples and ten Portuguese reading explorations through actual Admin Direct; retain original content, Questions and study history. Goals/mappings derived from otherwise missing source metadata remain explicit proposals; exploration is not an official Attempt or mastery evidence. Exact release/backup receipts live in `docs/estudisc/`.

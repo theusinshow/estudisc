@@ -17,8 +17,10 @@ export function planCandidates(candidates:readonly PlannerCandidate[],budgetMinu
   const usedQuestions=new Set<string>();
   const priority=(candidate:PlannerCandidate)=>candidatePriority(candidate,candidate.phase??phase,history);
   const tier={review:3,remediation:2,practice:1,learn:0};
+  // The first fitting new lesson leads an adaptive session; review and remediation fill the remaining time.
+  const rank=(candidate:PlannerCandidate)=>candidate.kind==="learn"&&newCount===0?4:tier[candidate.kind];
   while(remaining>0){
-    const next=eligible.filter(candidate=>!used.has(candidate.id)&&candidate.minutes<=remaining&&(!subjectLimits||candidate.minutes+(allocated[candidate.subjectCode]??0)<=(subjectLimits[candidate.subjectCode]??0))&&(!adaptive||!candidate.questionKeys?.some(key=>usedQuestions.has(key)))&&(candidate.kind!=="learn"||newCount<((candidate.phase??phase)==="EXAM_PREP"?0:2))).sort((a,b)=>(adaptive?tier[b.kind]-tier[a.kind]:0)||priority(b)-priority(a)||(a.id<b.id?-1:a.id>b.id?1:0))[0];
+    const next=eligible.filter(candidate=>!used.has(candidate.id)&&candidate.minutes<=remaining&&(!subjectLimits||candidate.minutes+(allocated[candidate.subjectCode]??0)<=(subjectLimits[candidate.subjectCode]??0))&&(!adaptive||!candidate.questionKeys?.some(key=>usedQuestions.has(key)))&&(candidate.kind!=="learn"||newCount<((candidate.phase??phase)==="EXAM_PREP"?0:2))).sort((a,b)=>(adaptive?rank(b)-rank(a):0)||priority(b)-priority(a)||(a.id<b.id?-1:a.id>b.id?1:0))[0];
     if(!next)break;selected.push(next);used.add(next.id);remaining-=next.minutes;if(next.kind==="learn")newCount++;history[next.subjectCode]=(history[next.subjectCode]??0)+next.minutes;allocated[next.subjectCode]=(allocated[next.subjectCode]??0)+next.minutes;
     for(const key of next.questionKeys??[])usedQuestions.add(key);
   }

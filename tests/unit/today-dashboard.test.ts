@@ -11,6 +11,8 @@ vi.mock("@/features/progress/api", () => ({ getProgressOverview: mocks.progress 
 vi.mock("@/features/study-sessions/api", () => ({ studySessionRepository: () => ({ list: mocks.sessions, planningFacts: mocks.sessions }) }));
 vi.mock("@/features/study-sessions/routine-api", () => ({ studyPlanRepository: () => ({ getState: routine }) }));
 vi.mock("@/features/recommendations/lesson-candidates", () => ({ listRecommendationLessons: mocks.lessons }));
+const { flow } = vi.hoisted(() => ({ flow: vi.fn(async () => ({ next: { lesson: { id: "MAT-02", title: "Divisibilidade", subjectCode: "MAT", order: 2, estimatedMinutes: 40, questionIds: ["q"] }, resume: false }, bySubject: [] })) }));
+vi.mock("@/features/study-flow/api", () => ({ getStudyFlow: flow }));
 
 describe("Today dashboard coordinator", () => {
   beforeEach(() => vi.clearAllMocks());
@@ -25,6 +27,15 @@ describe("Today dashboard coordinator", () => {
     await getTodayDashboard(now);
     expect(routine).toHaveBeenCalledWith("owner", now, { subjectCodes: [], sessions: [] });
     for (const reader of Object.values(mocks)) expect(reader).toHaveBeenCalledTimes(1);
+  });
+  it("loads the continuous study flow only when its flag is on and never creates sessions", async () => {
+    vi.stubEnv("FEATURE_CONTINUOUS_STUDY", "false");
+    expect((await getTodayDashboard()).flow).toBeNull();
+    expect(flow).not.toHaveBeenCalled();
+    vi.stubEnv("FEATURE_CONTINUOUS_STUDY", "true");
+    expect((await getTodayDashboard()).flow?.next?.lesson.id).toBe("MAT-02");
+    expect(flow).toHaveBeenCalledWith("owner");
+    vi.unstubAllEnvs();
   });
   it("loads shared recommendation facts once and does not create sessions or mutate progress", async () => {
     mocks.inputs.mockResolvedValue({ dueReviews: [], mistakes: [], tracks: [], projects: [] });
