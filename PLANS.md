@@ -3,7 +3,7 @@
 LIVE: the second Portuguese ten-lesson increment (POR-01/06/08/11/15/18/20/21/22/24 v3), exact originals/80 refs preserved through actual Admin Direct. Both complete backups and publication/history checks passed; final old-Question layout acceptance follows PR23. POR-14 remains excluded from an unresolved local/current-source binding mismatch. User explicitly confirmed Terra for the scored-enrichment contract. NEXT ACTION: eight required checks → protected PR23 merge/READY alias → published POR-04/15/24 and remaining language readers → current Terra handoff. No independent editorial approval is pending.
 
 
-## Continuous lesson study flow — 2026-10-15 (Claude, branch fix/planner-new-content-20261015)
+## Continuous lesson study flow — 2026-10-15 (Claude, branch release/continuous-study-20261015)
 
 Problem: a real student only ever received lesson 01 (read-only planner run on production data: zero `learn` candidates; Admin Direct lessons never `fullReady`; 109/131 lessons lack objectives/exit tickets; review tier crowds out new content). Decision: [ADR 0060](docs/ADR/0060-continuous-lesson-study-flow.md), user-approved.
 
