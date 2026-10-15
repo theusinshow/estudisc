@@ -12,6 +12,21 @@ OUT = ROOT / '.local/science-integration/media'
 OUT.mkdir(parents=True, exist_ok=True)
 QUEUE = json.loads((SOURCE / 'MEDIA-PRODUCTION/DETERMINISTIC-ASSET-QUEUE.json').read_text(encoding='utf-8-sig'))
 REQUESTS = {r['lessonId']: r for r in QUEUE['requests']}
+DIDACTIC_CAPTIONS = {
+    'CIE-06': 'A chave aberta interrompe o circuito; fechada, permite a passagem de corrente.',
+    'CIE-07': 'O consumo em quilowatt-hora é a potência em quilowatts multiplicada pelo tempo em horas.',
+    'CIE-09': 'Novas evidências levaram a diferentes modelos científicos para a estrutura do átomo.',
+    'CIE-10': 'O número atômico conta prótons; o número de massa soma prótons e nêutrons.',
+    'CIE-17': 'Genes são segmentos de DNA, e o DNA associado a proteínas forma cromossomos.',
+    'CIE-18': 'Mitose mantém o número cromossômico; meiose o reduz e contribui para a variabilidade.',
+    'CIE-22': 'O efeito estufa retém parte do infravermelho; a camada de ozônio absorve ultravioleta.',
+    'CIE-25': 'Cada gameta recebe um alelo de cada par; o quadro mostra combinações possíveis.',
+    'CIE-27': 'A classificação organiza seres vivos por características e relações evolutivas.',
+    'CIE-30': 'Vacinas estimulam resposta imune e memória; soros fornecem anticorpos prontos.',
+    'CIE-33': 'Preservativos reduzem o risco de muitas ISTs; outros métodos previnem gravidez.',
+    'CIE-34': 'A seleção natural altera populações ao longo de gerações por diferenças reprodutivas.',
+    'CIE-40': 'A massa inicial influencia a evolução e o destino final de uma estrela.',
+}
 WIDTH = 360
 assets, coverage = [], []
 
@@ -72,15 +87,15 @@ def register(number, drawing, family, limitation=None):
     path.write_text(raw, encoding='utf-8')
     text_equivalent = '\n'.join(drawing.labels)
     assets.append({
-        'requestId': request['id'], 'path': path.relative_to(ROOT).as_posix(),
+        'requestId': request['id'], 'path': f'packs/drafts/ifsc-2027-science/media/{filename}',
         'sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'mime': 'svg+xml',
-        'alt': lesson['title'], 'caption': request['description'] + ' Versão estática em rascunho; revisão humana pendente.',
-        'credit': 'VECTA Science V2 — representação determinística local; revisão humana pendente.',
+        'alt': lesson['title'], 'caption': DIDACTIC_CAPTIONS[lesson_id],
+        'credit': 'Estudisc — diagrama didático.',
         'longDescription': text_equivalent, 'width': WIDTH, 'height': height,
         'status': 'LOCAL_DETERMINISTIC_DRAFT',
     })
     coverage.append({
-        'requestId': request['id'], 'lessonId': lesson_id, 'family': family,
+        'requestId': request['id'], 'path': f'packs/drafts/ifsc-2027-science/media/{filename}',
         'status': 'LOCAL_DETERMINISTIC_DRAFT', 'delivery': 'STATIC_FALLBACK',
         'factualReviewStatus': 'PENDING', 'visualReviewStatus': 'PENDING',
         'sourceRefs': request['sourceRefs'],
