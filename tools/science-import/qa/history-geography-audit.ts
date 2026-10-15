@@ -62,7 +62,7 @@ export function auditGhPack(pack: TrackPackV2) {
       if (source.title === "Erros que custam ponto") {
         const corrections = HISTORY_GEOGRAPHY_MISCONCEPTION_CORRECTIONS[lesson.id];
         assert(source.items && corrections && source.items.length === corrections.length);
-        source.items.forEach((claim, index) => assert(visible.includes(`? ${claim} ? ${corrections[index]}`), `${block.id}: missing factual correction ${index + 1}`));
+        source.items.forEach((claim, index) => assert(visible.includes(`\u274C ${claim}\n\u2705 ${corrections[index]}`), `${block.id}: missing factual correction ${index + 1}`));
       }
     }
     const visibleText = lesson.blocks.map(block => `${String(block.payload.title ?? "")}\n${String(block.payload.content ?? "")}`).join("\n");

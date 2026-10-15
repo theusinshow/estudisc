@@ -82,7 +82,7 @@ export function loadGhInputs(root: string) {
       const sourceHash = hashCanonicalJson(block);
       const sourceItems = block.items;
       const projectedItems = block.id === misconceptionBlock.id
-        ? sourceItems!.map((claim, position) => `? ${claim} ? ${corrections[position]}`)
+        ? sourceItems!.map((claim, position) => `\u274C ${claim}\n\u2705 ${corrections[position]}`)
         : sourceItems;
       return {
         ...block,
