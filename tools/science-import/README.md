@@ -4,7 +4,7 @@ Local, draft-only integration of the supplied `Estudisc-SCIENCE-CONTENT-IFSC-202
 
 ## Inputs and persistent memory
 
-The committed snapshot lives in `packs/drafts/ifsc-2027-science/`: sealed runtime Pack, complete editorial sidecar, all 620 immutable source files and thirteen hash-pinned SVG drafts. Tooling and QA now default to these tracked inputs, so a fresh clone needs no Downloads archive or ignored local Mathematics package. When the local Mathematics candidate exists, the preservation test additionally audits it. `SCIENCE_QA_PACK` still selects an explicit candidate; databases and working outputs remain local and ignored. The draft is deliberately absent from the public Pack catalog.
+The current snapshot lives in `packs/drafts/ifsc-2027-science/`: runtime Pack v8, complete editorial sidecar, 620 tracked source files (including source-checked corrections in 80 lesson records) and thirteen hash-pinned SVG drafts. Tooling and QA default to these tracked inputs, so a fresh clone needs no Downloads archive or ignored local Mathematics package. When the local Mathematics candidate exists, preservation QA additionally audits it. `SCIENCE_QA_PACK` still selects an explicit candidate; databases and working outputs remain local and ignored. The draft is absent from the public Pack catalog.
 
 Optional archive recovery: extract the supplied archive into `.local/science-package/`, producing `.local/science-package/Estudisc-SCIENCE-CONTENT-v2/`. Normal validation uses the committed source copy. Original ZIP SHA-256: `0B382A3D8EA73D4B8CABB36DDCBA9DDF8BC707CE8BDDEB61D1969C5CE2F4A30F`.
 
@@ -12,32 +12,27 @@ Optional archive recovery: extract the supplied archive into `.local/science-pac
 Expand-Archive -LiteralPath 'C:\Users\Matheus\Downloads\Estudisc-SCIENCE-CONTENT-IFSC-2027-1-v2.zip' -DestinationPath '.local/science-package'
 ```
 
-Start resumption with `.estudisc-agent-context/CURRENT-STATUS.md` and `NEXT.md`. The project/content/media/validation contracts and Concept/block maps in that directory contain the one-time architecture discovery. Keep the source package immutable. The QA source baseline pins all 620 source files; stale upstream manifest hashes are disclosed rather than replaced in the source.
+Start resumption with `.estudisc-agent-context/CURRENT-STATUS.md` and `NEXT.md`. The project/content/media/validation contracts and Concept/block maps in that directory contain the one-time architecture discovery. Keep the supplied archive immutable; tracked source edits are intentional, hashed in the QA baseline, and require a new runtime snapshot. The forty stale upstream manifest hashes remain disclosed rather than replaced.
 
 ## Commands and gates
 
 Run commands from the repository root. The owned persistent development database is `.local/science-integration/db`; no production connection or credential is used. Import creates it with the existing migrations, seeds the unchanged full IFSC release and available approved Mathematics pack, and applies Science with the actual core importer.
 
-```text
-node tools/science-import/qa/source-audit.mjs
-pnpm exec tsx tools/science-import/cli.ts preflight --stage pilot
-pnpm exec tsx tools/science-import/cli.ts import --stage pilot
-pnpm exec tsx tools/science-import/cli.ts validate --stage pilot
+```powershell
+python tools/science-import/media/build_assets.py
+node tools/science-import/media/verify_assets.mjs
+Copy-Item -LiteralPath .local/science-integration/media/assets.json -Destination packs/drafts/ifsc-2027-science/media/assets.json -Force
+pnpm exec tsx tools/science-import/critical-cleanup.ts
 ```
 
 The pilot is CIE-04/10/18/22/30/33/38/40: eight lessons, 64 Questions. Independent fidelity, renderer, evaluator, draft visibility, preservation and mobile smoke checks must pass before batching.
 
 For each stage `batch1`, `batch2`, `batch3`, `batch4`, `batch5`, run the same `import` then `validate` commands with that stage. These cumulatively add the requested ranges CIE-01…08, 09…16, 17…24, 25…32, 33…40, retaining already imported pilot lessons. Latest snapshot totals are 15/120, 22/176, 28/224, 35/280 and 40/320 lessons/Questions. Track snapshots are versions 1…6; source Lesson/Question versions remain 2. A successful exact reimport makes no changes; changed content under an existing identity/version fails.
 
-```text
-python tools/science-import/media/build_assets.py
-node tools/science-import/media/verify_assets.mjs
-pnpm exec tsx tools/science-import/cli.ts import --stage media --media .local/science-integration/media/assets.json
-pnpm exec tsx tools/science-import/cli.ts validate --stage media --media .local/science-integration/media/assets.json
-pnpm exec tsx tools/science-import/qa/persistent-receipt-audit.ts
-```
+The prior `cli.ts --stage media` recipe produces historical snapshot 7 and is retained only for reading old receipts; it does not build the cleaned snapshot 8.
+For current content, run the asset builder and `critical-cleanup.ts` command sequence above.
 
-Media uses cumulative snapshot 7. Its 13 figure-bearing lessons use runtime version 3; the other 27 lessons and all 320 Questions retain runtime version 2. Original editorial version 2 remains unchanged in the source and sidecar. Prior lesson versions remain immutable history. Both track and lesson versions must advance when their content changes. Keep pack JSON compact: the complete media candidate is close to the existing 1 MiB importer limit.
+Historical media stage 7 remains an immutable candidate. The cleaned cumulative snapshot 8 is generated by `pnpm exec tsx tools/science-import/critical-cleanup.ts` after the asset builder and manifest copy below. It emits 514 blocks, omits 24 media-only placeholders, versions all 40 runtime lessons to 3 and figure-bearing lessons to 4, and retains all 320 Questions at version 2. Original editorial source version remains 2. Keep each new Track and changed Lesson version immutable; the current Pack stays below the 1 MiB importer limit.
 
 ## QA and artifacts
 
@@ -56,9 +51,9 @@ The browser smoke uses static core SSR and actual application CSS at 344px. It c
 
 All 240 editorial Concepts have explicit mappings: nine existing canonical targets and 231 intentional new targets. Ordered source blocks, original questions/options/answers/explanations, difficulty, source metadata and raw taxonomy are retained. Runtime normalization and integration defaults are disclosed in `CONTENT-SCHEMA.md`; full original records stay in the sidecar. Official curriculum mapping, prerequisite inventory, pacing and upstream name/mastery-target discrepancies remain visible for human review.
 
-The 13 deterministic SVGs are static draft fallbacks with complete text equivalents, not factual approval or completion of requested interactive components. Eleven deterministic requests need exact data, reviewed geometry or licensed inputs. Thirteen generative requests are `ANTIGRAVITY_MANUAL_REQUIRED`; the exact queue and prompt are preserved in `.local/science-integration/antigravity-handoff/`. No image service was invoked. Pending media renders explicit notes; core source text/questions remain available.
+The 13 deterministic SVGs remain static figures with complete text equivalents, not factual approval or completion of requested interactions. The latest snapshot uses concise teaching captions and keeps each removed design brief plus factual/visual review status in the figure editorial metadata; placeholder-only requests remain in the sidecar and are not emitted as lesson blocks. Eleven deterministic requests need exact data, reviewed geometry or licensed inputs. Thirteen generative requests remain `ANTIGRAVITY_MANUAL_REQUIRED`; their queue and prompt are preserved in `.local/science-integration/antigravity-handoff/`. No image service was invoked.
 
-No new Pack schema, learning engine, production migration or public assets are introduced. Every imported Science lesson and Question remains draft. Human editorial/factual/publication review and explicit authorization for external writes remain required.
+No new Pack schema, learning engine, production migration or public assets are introduced. Every imported Science lesson and Question remains draft; official mapping, rights and readiness caveats remain explicit. This task includes no production import, publication or deployment.
 
 ## Portuguese profile
 

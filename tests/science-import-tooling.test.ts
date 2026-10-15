@@ -1,18 +1,19 @@
 import { describe, expect, it } from "vitest";
 import { BATCHES, PILOT, editorialPackSchema, mediaAssetsSchema } from "../tools/science-import/contracts";
 import { buildSciencePack, loadInputs, sha256, validateConceptMap } from "../tools/science-import/mapper";
+import { buildCriticalSciencePack } from "../tools/science-import/critical-cleanup";
 import { MAX_TRACK_PACK_BYTES } from "../src/features/import/application/import-request";
 import { readFileSync } from "node:fs";
 import { hashCanonicalJson } from "../src/lib/canonical-json";
 import { SCIENCE_DRAFT_PACK, SCIENCE_MEDIA_ASSETS } from "../tools/science-import/paths";
 
 describe("Science draft import infrastructure", () => {
-  it("preserves the sealed forty-lesson snapshot without publishing Questions or losing import compatibility", () => {
+  it("pins the cleaned forty-lesson snapshot without publishing Questions or losing import compatibility", () => {
     const bytes = readFileSync(SCIENCE_DRAFT_PACK);
-    expect(sha256(bytes)).toBe("a44180849db02d397efc4da100267889ae5132c39218ea2184e2966ceb3b91e2");
+    expect(sha256(bytes)).toBe("9b7e5ed5f23088843e8f790e44693b5aa169a3092e90cc172e3cbf27e8238bb3");
     expect(bytes.byteLength).toBeLessThanOrEqual(MAX_TRACK_PACK_BYTES);
     const pack = JSON.parse(bytes.toString("utf8"));
-    expect(hashCanonicalJson(pack)).toBe("722f1deeb98c55cb121f988931596830a68c5bd4ab15fcf7754f49ebe574bc27");
+    expect(hashCanonicalJson(pack)).toBe("5393a6926e90910b1d3d93ee002b4db697ac9bce1cdd8d3e6c3479f1daf8239f");
     const lessons = pack.track.modules.flatMap((entry: { lessons: { id: string; status: string }[] }) => entry.lessons);
     expect(lessons.map((lesson: { id: string }) => lesson.id).sort()).toEqual(Array.from({ length: 40 }, (_, index) => `CIE-${String(index + 1).padStart(2, "0")}`));
     expect(lessons.every((lesson: { status: string }) => lesson.status === "draft")).toBe(true);
@@ -43,23 +44,36 @@ describe("Science draft import infrastructure", () => {
     const first = inputs.conceptMap.entries[0];
     expect(() => validateConceptMap({ ...inputs.conceptMap, entries: [{ ...first, disposition: "intentional_new" }, ...inputs.conceptMap.entries.slice(1)] }, ids, existingIds)).toThrow();
   });
-  it("versions only media-changed lessons while preserving all Questions and unchanged lesson content", () => {
+  it("versions the cleaned source snapshot while preserving Questions and figure metadata", () => {
     const ids = [...PILOT, ...BATCHES.flat()];
     const before = buildSciencePack(process.cwd(), ids, 6).pack;
     const media = mediaAssetsSchema.parse(JSON.parse(readFileSync(SCIENCE_MEDIA_ASSETS, "utf8")));
-    const result = buildSciencePack(process.cwd(), ids, 7, undefined, media);
-    expect(result.byteLength + 1).toBeLessThanOrEqual(MAX_TRACK_PACK_BYTES);
+    expect(media.assets).toHaveLength(13);
+    const result = buildCriticalSciencePack();
+    expect(result.byteLength).toBeLessThanOrEqual(MAX_TRACK_PACK_BYTES);
+    expect(result.pack.version).toBe(8);
     expect(result.pack.questions).toEqual(before.questions);
-    const changed = result.pack.track.modules[0].lessons.filter(lesson => lesson.blocks.some(block => block.type === "figure"));
-    expect(changed).toHaveLength(13);
-    for (const lesson of result.pack.track.modules[0].lessons) {
+    const lessons = result.pack.track.modules[0].lessons;
+    const figures = lessons.filter(lesson => lesson.blocks.some(block => block.type === "figure"));
+    expect(figures).toHaveLength(13);
+    for (const lesson of lessons) {
       const original = before.track.modules[0].lessons.find(candidate => candidate.id === lesson.id)!;
-      if (!changed.includes(lesson)) expect(lesson).toEqual(original);
-      else {
-        expect(lesson.version).toBe(3);
-        expect({ ...lesson, version: 2, blocks: original.blocks }).toEqual(original);
-      }
+      expect(lesson.version).toBe(lesson.blocks.some(block => block.type === "figure") ? 4 : 3);
+      expect(lesson.blocks.length).toBeLessThanOrEqual(original.blocks.length);
+      expect(lesson.blocks.every(block => {
+        if (block.type === "figure") return true;
+        const editorial = block.payload.editorial as { type?: string } | undefined;
+        return !["IMAGE_REQUEST", "DETERMINISTIC_COMPONENT_REQUEST"].includes(String(editorial?.type));
+      })).toBe(true);
     }
-    expect(result.pack.track.metadata.scienceIntegration).toMatchObject({ sourceLessonVersion: 2, runtimeMediaLessonVersions: Object.fromEntries(changed.map(lesson => [lesson.id, 3])) });
+    for (const figure of figures.flatMap(lesson => lesson.blocks.filter(block => block.type === "figure"))) {
+      const editorial = figure.payload.editorial as { omittedBriefing?: Record<string, unknown> };
+      expect(editorial.omittedBriefing).toMatchObject({ factualReviewStatus: "PENDING", visualReviewStatus: "PENDING" });
+      expect(editorial.omittedBriefing?.sourceRequest).toBeTruthy();
+    }
+    expect(result.pack.track.metadata.scienceIntegration).toMatchObject({
+      sourceLessonVersion: 2,
+      runtimeMediaLessonVersions: Object.fromEntries(figures.map(lesson => [lesson.id, 4]))
+    });
   });
 });

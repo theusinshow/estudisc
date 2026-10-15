@@ -41,6 +41,7 @@ export function auditAdaptedPack(pack: TrackPackV2) {
   const integration = pack.track.metadata.scienceIntegration as { status: string; sourceLessonVersion: number; runtimeMediaLessonVersions?: Record<string, number>; humanApprovalRecorded: boolean; sourceHashes: Record<string, string> };
   assert.equal(integration.status, "draft");
   assert.equal(integration.humanApprovalRecorded, false);
+  assert.equal(pack.version, 8, "The current critical-cleanup snapshot is version 8");
   assert.equal(integration.sourceLessonVersion, 2);
   assert.equal(pack.conceptPrerequisites.length, 0, "No source prerequisites may be invented");
   assert.equal(pack.questions.length, lessons.length * 8);
@@ -53,25 +54,32 @@ export function auditAdaptedPack(pack: TrackPackV2) {
     assert.equal(lesson.title, source.lesson.title);
     assert.equal(lesson.status, "draft");
     const hasFigure = lesson.blocks.some(block => block.type === "figure");
-    assert.equal(lesson.version, hasFigure ? 3 : 2, `${lesson.id}: immutable runtime lesson version`);
-    if (hasFigure) assert.equal(integration.runtimeMediaLessonVersions?.[lesson.id], 3);
+    assert.equal(lesson.version, hasFigure ? 4 : 3, lesson.id + ": immutable runtime lesson version");
+    if (hasFigure) assert.equal(integration.runtimeMediaLessonVersions?.[lesson.id], 4);
     assert.deepEqual(lesson.prerequisiteConceptIds, []);
     assert.deepEqual(lesson.concepts.map(concept => ({ id: concept.id, title: concept.title, summary: concept.summary })), source.lesson.concepts.map((concept: { id: string; name: string; masteryTarget: string }) => ({ id: canonical(concept.id), title: concept.name, summary: concept.masteryTarget })));
-    assert.equal(lesson.blocks.length, source.lesson.blocks.length);
     for (const sourceBlock of source.lesson.blocks) {
       const block = lesson.blocks.find(candidate => candidate.id === sourceBlock.id);
-      assert(block, `Missing block ${sourceBlock.id}`);
-      assert.deepEqual(block.payload.editorial, { id: sourceBlock.id, type: sourceBlock.type, sourceHash: sha(stableJson(sourceBlock)) }, `${sourceBlock.id}: editorial identity/hash drift`);
-      const text = [sourceBlock.content, ...(sourceBlock.items ?? []), sourceBlock.prompt, sourceBlock.answer, sourceBlock.reasoning, ...(sourceBlock.answerGuide?.mustMention ?? [])].filter((value): value is string => typeof value === "string");
+      const text = [sourceBlock.content, ...(sourceBlock.items ?? []), sourceBlock.prompt, sourceBlock.answer, sourceBlock.reasoning, ...(sourceBlock.answerGuide?.mustMention ?? [])].filter((value): value is string => typeof value === "string" && value.trim().length > 0);
+      if (!block) {
+        assert(["IMAGE_REQUEST", "DETERMINISTIC_COMPONENT_REQUEST"].includes(sourceBlock.type), "Only media placeholders may be omitted: " + lesson.id + "/" + sourceBlock.id);
+        assert.equal(text.length, 0, sourceBlock.id + ": educational content must not be omitted");
+        continue;
+      }
+      const editorial = block.payload.editorial as Record<string, unknown>;
+      assert.equal(editorial.sourceHash, sha(stableJson(sourceBlock)), sourceBlock.id + ": source hash drift");
+      assert.equal(editorial.type, sourceBlock.type, sourceBlock.id + ": source type drift");
+      assert(!Object.hasOwn(block.payload, "id"), sourceBlock.id + ": duplicate payload identity should stay compact");
       if (block.type === "figure") {
         assert(["IMAGE_REQUEST", "DETERMINISTIC_COMPONENT_REQUEST"].includes(sourceBlock.type), "Only media requests become figures");
-        assert(typeof block.payload.alt === "string" && typeof block.payload.longDescription === "string", `${block.id}: figure accessibility`);
+        assert(typeof block.payload.alt === "string" && typeof block.payload.longDescription === "string", block.id + ": figure accessibility");
+        const briefing = editorial.omittedBriefing as Record<string, unknown>;
+        assert(typeof briefing.sourceRequest === "string", block.id + ": source briefing must remain in block metadata");
+        assert(typeof briefing.originalCaption === "string" && typeof briefing.originalCredit === "string", block.id + ": removed caption and credit metadata");
       } else {
         assert.equal(block.payload.title, sourceBlock.title);
-        assert(typeof block.payload.content === "string", `${block.id}: missing rendered content`);
-        for (const paragraph of text) {
-          assert(block.payload.content.includes(paragraph), `${block.id}: missing educational text`);
-        }
+        assert(typeof block.payload.content === "string", block.id + ": missing rendered content");
+        for (const paragraph of text) assert(block.payload.content.includes(paragraph), block.id + ": missing educational text");
       }
     }
     for (const original of source.questions) {
