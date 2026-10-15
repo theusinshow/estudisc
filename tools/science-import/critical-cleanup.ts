@@ -55,7 +55,7 @@ export function buildCriticalSciencePack(root = process.cwd()) {
   for (const source of sources.values()) {
     const misconceptions = source.lesson.blocks.find(block => block.variant === "MISCONCEPTIONS");
     assert.equal(misconceptions?.items?.length, 8, source.lesson.lessonId + ": expected four marked myth/correction pairs");
-    assert(misconceptions?.items?.every(item => item.startsWith("? ")), source.lesson.lessonId + ": every myth and correction must be marked");
+    assert(misconceptions?.items?.every((item, index) => item.startsWith(index % 2 ? "\u2705 " : "\u274C ")), source.lesson.lessonId + ": every myth and correction must be marked");
   }
   const mediaRequests = (readJson(resolve(root, SCIENCE_SOURCE_ROOT, "MEDIA-PRODUCTION/DETERMINISTIC-ASSET-QUEUE.json")) as MediaQueue).requests;
   const requestsById = new Map(mediaRequests.map(request => [request.id, request]));
