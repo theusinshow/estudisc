@@ -61,3 +61,13 @@ it("orders lessons inside a subject by track order, not by id", () => {
   expect(chooseNextLessons(shuffled, empty).next?.lesson.id).toBe("MAT-PREREQ");
   expect(chooseNextLessons(shuffled, { ...empty, completedLessonIds: ["MAT-PREREQ"] }).next?.lesson.id).toBe("MAT-02");
 });
+
+it("ignores a lesson resume from an older pack that reused the same lesson id", async () => {
+  const { progressFromResumes } = await import("@/db/repositories/study-flow-repository");
+  const done = { stepId: null, completed: true, showAll: false, elapsedSeconds: 0, drafts: [] };
+  const progress = progressFromResumes([
+    { lessonId: "CIE-06", trackId: "week-1", data: done, updatedAt: new Date() },
+    { lessonId: "CIE-01", trackId: "science", data: done, updatedAt: new Date() }
+  ], [], new Map([["CIE-06", "science"], ["CIE-01", "science"]]));
+  expect(progress.completedLessonIds).toEqual(["CIE-01"]);
+});
