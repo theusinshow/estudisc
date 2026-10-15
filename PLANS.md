@@ -2,6 +2,20 @@
 
 LIVE: the second Portuguese ten-lesson increment (POR-01/06/08/11/15/18/20/21/22/24 v3), exact originals/80 refs preserved through actual Admin Direct. Both complete backups and publication/history checks passed; final old-Question layout acceptance follows PR23. POR-14 remains excluded from an unresolved local/current-source binding mismatch. User explicitly confirmed Terra for the scored-enrichment contract. NEXT ACTION: eight required checks → protected PR23 merge/READY alias → published POR-04/15/24 and remaining language readers → current Terra handoff. No independent editorial approval is pending.
 
+
+## Continuous lesson study flow — 2026-10-15 (Claude, branch release/continuous-study-20261015)
+
+Problem: a real student only ever received lesson 01 (read-only planner run on production data: zero `learn` candidates; Admin Direct lessons never `fullReady`; 109/131 lessons lack objectives/exit tickets; review tier crowds out new content). Decision: [ADR 0060](docs/ADR/0060-continuous-lesson-study-flow.md), user-approved.
+
+Increments:
+1. DONE — adaptive planner: authorized Admin Direct counts for `learn` readiness; first fitting `learn` leads (tests in tests/unit/adaptive-session-policy.test.ts).
+2. DONE — Next-lesson domain policy (`src/features/study-flow`) + unit tests: in-progress first, 80% done rule across versions, subject rotation, per-subject next.
+3. DONE — Server read model (resumes + attempts + published lessons) and Today primary card “Continuar estudando” behind `FEATURE_CONTINUOUS_STUDY`; session chooser hidden from Today when on.
+4. DONE locally — lint/typecheck PASS; 532 unit PASS/3 optional PG SKIP; build PASS; continuous-study E2E 2/2 PASS on chromium and mobile-chrome (alternate port 3217 because 3210 is held by another local project). Pre-existing: lesson-resume + session-navigation conflict when run in one process (fails without this change too).
+NEXT ACTION: user confirmation to push/PR, merge, deploy and set `FEATURE_CONTINUOUS_STUDY=true` in production. Then read the Codex review, then the SaaS checkout ADR.
+
+Parallel: AI-assisted (Codex gpt-6-luna) review of the 132 published lessons in `.local/lesson-review-20261015/` (not an independent editorial approval). Later: SaaS checkout (R$ 50 one-time until the exam, Mercado Pago) — needs its own ADR (scope expansion beyond ADR 0026).
+
 ## Lesson evolution completion — 2026-10-11
 
 Content continuation is live: MAT-PREREQ v5, MAT-01/02/03/09/10/12/14/15 v3 and POR-04/05/07/09/10/12/16/17/19/23 v3 through authentic Admin Direct. Integrate only dedicated recipes/tests/receipts from the shared tree; preserve the frontend owner's unrelated work. New increment: fix a demonstrated POR-04 Question card overflow (scrollWidth322/clientWidth305 at viewport320) using existing grid containment, preserving DS tokens, authored payloads, grading and history. First run a baseline real-content regression, then the smallest CSS fix, focused checks and full acceptance in this isolated checkout. Required protected checks and Git-backed deployment precede actual live narrow-reader verification. Scored-enrichment contract remains the separate user-confirmed Terra handoff; do not mark broad Phase9 enrichment complete.

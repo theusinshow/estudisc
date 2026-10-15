@@ -8,7 +8,7 @@ import { sessionItemsSchema } from "@/features/study-sessions/contracts";
 const question = questionSchema.parse(source.questions[0]);
 function lesson(patch: Partial<AdaptiveLesson> = {}): AdaptiveLesson {
   return { id: "lesson", trackId: "track", version: 1, title: "Aula", subjectCode: "MAT", estimatedMinutes: 30, conceptIds: question.conceptIds,
-    levels: [0], importance: 1, dueDays: 0, due: false, mistake: false, prerequisitesReady: true, phase: "FOUNDATION", objectives: ["Objetivo"], sourceIds: ["source"], checkpointIds: ["q2"], independentQa: true, officialMappingVerified: false,
+    levels: [0], importance: 1, dueDays: 0, due: false, mistake: false, prerequisitesReady: true, phase: "FOUNDATION", objectives: ["Objetivo"], sourceIds: ["source"], checkpointIds: ["q2"], independentQa: true, adminDirectAuthorized: false, officialMappingVerified: false,
     activities: [0, 1, 2].map(index => ({ stableId: `a${index}`, prompt: "Pratique", orderIndex: index, config: { questionId: `q${index}`, questionVersion: 1, hints: [] }, question: { ...question, id: `q${index}`, difficulty: "foundation" }, independentSuccess: false, failedBefore: false })), ...patch };
 }
 it("uses question delivery within ten minutes and never clamps a whole lesson estimate", () => {
@@ -34,6 +34,22 @@ it("keeps published-without-QA separate from new-learning readiness and respects
   expect(practice.item.intent).toBe("practice"); expect(practice.item.caveats?.length).toBeGreaterThan(0);
   const blocked = adaptiveChoice(lesson({ prerequisitesReady: false }), 30)!;
   expect(planCandidates([blocked.candidate], 30, "FOUNDATION", {}, undefined, true).items).toEqual([]);
+});
+it("treats an authorized Admin Direct publication as new-learning ready and keeps the QA caveat visible", () => {
+  const direct = adaptiveChoice(lesson({ independentQa: false, adminDirectAuthorized: true }), 30)!;
+  expect(direct.item.intent).toBe("learn"); expect(direct.item.delivery).toBe("lesson");
+  expect(direct.item.caveats).toContain("Não há registro completo de QA independente para esta versão.");
+  expect(adaptiveChoice(lesson({ independentQa: false, adminDirectAuthorized: false }), 30)!.item.intent).toBe("practice");
+});
+it("places one fitting new lesson before review and remediation so sessions advance", () => {
+  const fresh = (prefix: string) => lesson().activities.map(a => ({ ...a, question: { ...a.question, id: `${prefix}-${a.question.id}` } }));
+  const review = adaptiveChoice(lesson({ id: "review", due: true, levels: [3], activities: fresh("rv") }), 45)!;
+  const remediate = adaptiveChoice(lesson({ id: "remediate", mistake: true, importance: 4, activities: fresh("rm") }), 45)!;
+  const learn = adaptiveChoice(lesson({ id: "next", checkpointIds: ["nx-q2"], activities: fresh("nx") }), 45)!;
+  expect(learn.candidate.kind).toBe("learn");
+  const plan = planCandidates([review.candidate, remediate.candidate, learn.candidate], 45, "BUILD", {}, undefined, true);
+  expect(plan.items[0].kind).toBe("learn"); expect(plan.usedMinutes).toBeLessThanOrEqual(45);
+  expect(planCandidates([learn.candidate, remediate.candidate, review.candidate], 45, "BUILD", {}, undefined, true)).toEqual(plan);
 });
 it("prioritizes due retrieval, mistakes and weaknesses with stable permutation/budget constraints", () => {
   const review = adaptiveChoice(lesson({ id: "review", due: true, importance: 1, levels: [5] }), 10)!;
