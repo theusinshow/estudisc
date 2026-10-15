@@ -93,22 +93,22 @@
           {
             "claim": "Efeito de sentido é só nome de figura.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "O efeito depende das escolhas linguísticas e do contexto, não apenas do nome da figura. Ex.: “A chuva chegou como alívio” produz efeito de conforto numa seca."
           },
           {
             "claim": "Repetição é sempre erro.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "A repetição pode marcar ênfase, ritmo ou coesão quando é intencional. Ex.: “É urgente, urgente, urgente” intensifica a reivindicação."
           },
           {
             "claim": "Pontuação só marca pausas.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "A pontuação organiza relações sintáticas e pode mudar o sentido, além de sugerir pausas. Ex.: “Vamos comer, crianças” chama as crianças; sem vírgula, a frase muda de sentido."
           },
           {
             "claim": "Em literatura qualquer interpretação vale.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Uma interpretação precisa de pistas do texto e do contexto para ser defendida. Ex.: “Coração de pedra” sugere insensibilidade; uma leitura sem apoio textual não se sustenta."
           }
         ]
       },

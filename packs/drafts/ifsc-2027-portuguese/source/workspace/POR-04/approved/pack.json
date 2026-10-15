@@ -89,22 +89,22 @@
           {
             "claim": "Em charge basta ler a legenda.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "A leitura da charge depende da combinação entre legenda, imagem e situação retratada. Ex.: “Meta cumprida” sobre uma rua alagada cria ironia com a cena."
           },
           {
             "claim": "Imagem em texto jornalístico nunca influencia a interpretação.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Uma fotografia pode confirmar, especificar ou contradizer o texto que a acompanha. Ex.: Uma imagem de rua vazia enfraquece a chamada “Multidão lota a avenida”."
           },
           {
             "claim": "Charge e cartum são sempre idênticos.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Charge costuma comentar fato circunstancial; cartum tende a tratar humor atemporal, embora haja sobreposições. Ex.: Charge sobre votação de hoje depende do acontecimento; cartum sobre fila pode ser atemporal."
           },
           {
             "claim": "Cor e disposição gráfica não constroem sentido.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Cor, tamanho e posição orientam hierarquia e avaliação visual. Ex.: “PERIGO” em vermelho e em letras grandes ganha destaque de alerta."
           }
         ]
       },

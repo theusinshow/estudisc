@@ -90,22 +90,22 @@
           {
             "claim": "Qualquer opinião já é argumento forte.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Uma opinião precisa de razões ou evidências para funcionar como argumento convincente. Ex.: A tese “A biblioteca deve abrir à noite” pode ser apoiada por dados de frequência."
           },
           {
             "claim": "Tese e tema são iguais.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Tema é o assunto geral; tese é a posição defendida sobre esse assunto. Ex.: “Transporte público” é tema, e “a cidade deve ampliar linhas noturnas” é tese."
           },
           {
             "claim": "Citar especialista torna tudo verdadeiro.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "A autoridade de uma fonte não substitui avaliação de contexto, atualidade e evidências. Ex.: Uma citação antiga, sem dados atuais, não comprova sozinha a eficácia de uma política."
           },
           {
             "claim": "Texto argumentativo não pode apresentar fatos.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Um texto argumentativo pode usar fatos como evidência e relacioná-los à tese. Ex.: Um artigo pode defender ciclovias com dados de acidentes."
           }
         ]
       },

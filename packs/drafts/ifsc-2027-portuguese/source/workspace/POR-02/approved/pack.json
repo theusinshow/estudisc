@@ -91,22 +91,22 @@
           {
             "claim": "A ideia principal é sempre a primeira frase.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "A ideia principal pode aparecer no desenvolvimento ou no fecho, então é preciso considerar o parágrafo todo. Ex.: Em “Choveu a semana inteira. Por isso, a partida foi cancelada”, a conclusão pode concentrar o ponto central."
           },
           {
             "claim": "Se a alternativa usa palavras do texto, ela está correta.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "A correspondência lexical precisa preservar o sentido e as relações expressas no texto. Ex.: Se o texto diz “o plano não reduziu as filas”, a alternativa “o plano reduziu as filas” é falsa."
           },
           {
             "claim": "Tema e opinião do leitor são a mesma coisa.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Tema é assunto; opinião é julgamento de alguém sobre esse assunto. Ex.: “Coleta seletiva” é tema, enquanto “ela deve ser obrigatória” expressa uma opinião."
           },
           {
             "claim": "Resumir significa copiar todas as frases importantes.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Resumo seleciona e reformula as ideias centrais, sem reproduzir tudo. Ex.: “O texto relata a reforma da praça” resume várias informações sobre a obra."
           }
         ]
       },

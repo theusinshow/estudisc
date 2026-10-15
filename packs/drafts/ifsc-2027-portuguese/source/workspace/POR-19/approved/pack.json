@@ -93,22 +93,22 @@
           {
             "claim": "Coesão e coerência são idênticas.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Coesão liga partes do texto por recursos linguísticos; coerência diz respeito à construção global de sentido. Ex.: “Ana chegou. Ela se sentou” usa “ela” para retomar a personagem."
           },
           {
             "claim": "Repetir palavra sempre destrói coesão.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "A repetição pode manter o referente claro ou criar ênfase em vez de destruir a coesão. Ex.: “O candidato deve preencher o formulário; o candidato deve assiná-lo” repete o referente em uma instrução."
           },
           {
             "claim": "Todo pronome tem referente evidente.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Pronomes podem retomar mais de um referente possível, por isso o contexto e a redação precisam ser examinados. Ex.: “Marina contou a Paula que ela venceu” deixa o pronome “ela” ambíguo."
           },
           {
             "claim": "Conectores são o único recurso coesivo.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Além de conectores, pronomes, elipses, substituições e retomadas lexicais constroem coesão. Ex.: “O professor chegou. Ele iniciou a aula” liga frases sem conector."
           }
         ]
       },

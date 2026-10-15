@@ -62,7 +62,7 @@ export function loadPortugueseInputs(root: string) {
         if ("items" in block) for (const item of block.items) {
           if (typeof item === "string") paragraphs.push(item);
           else if ("term" in item) { assert(original.lesson.conceptRefs.includes(item.conceptRef)); paragraphs.push(item.term); }
-          else paragraphs.push(item.claim, item.status, item.instruction);
+          else paragraphs.push("❌ " + item.claim, "✅ " + item.instruction);
         }
         return { id: `${lessonId}-B${String(index + 1).padStart(2, "0")}`, type: block.type === "SUMMARY" ? "SUMMARY" as const : block.type === "WORKED_EXAMPLE" ? "WORKED_EXAMPLE" as const : "EXPLANATION" as const, title: "title" in block ? block.title : ({ LEARNING_GOALS: "Objetivos de aprendizagem", KEY_TERMS: "Termos essenciais", MISCONCEPTION_CHECK: "Verificação de concepções", WORKED_EXAMPLE: "Exemplo comentado", IFSC_STRATEGY: "Estratégia para o IFSC", SUMMARY: "Resumo", EXIT_TICKET: "Verificação de aprendizagem" } as Record<string, string>)[block.type], content: paragraphs.join("\n\n") };
       }) },

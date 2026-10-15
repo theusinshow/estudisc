@@ -87,22 +87,22 @@
         {
           "claim": "Toda frase com “ser” está na passiva.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "“Ser” também forma predicados nominais; a passiva exige uma estrutura que receba a ação. Ex.: “Ana é professora” atribui uma profissão, não apresenta uma ação passiva."
         },
         {
           "claim": "A passiva sempre informa quem agiu.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "A voz passiva pode omitir o agente ou identificá-lo com complemento. Ex.: “O prédio foi inaugurado” omite o agente; “pela prefeita” o explicita."
         },
         {
           "claim": "Qualquer verbo aceita passiva.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "A passiva analítica normalmente exige um verbo transitivo direto cujo objeto possa virar sujeito. Ex.: “O bebê dormiu cedo” descreve ação sem objeto direto."
         },
         {
           "claim": "Ativa e passiva têm sempre o mesmo efeito discursivo.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "As duas vozes podem preservar o evento e mudar o foco informativo. Ex.: “A equipe concluiu o relatório” destaca a equipe; “O relatório foi concluído pela equipe” destaca o documento."
         }
       ]
     },

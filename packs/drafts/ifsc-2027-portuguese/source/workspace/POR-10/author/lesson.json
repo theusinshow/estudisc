@@ -87,22 +87,22 @@
         {
           "claim": "O verbo concorda com a palavra imediatamente anterior.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "O verbo concorda com o núcleo do sujeito, ainda que outro substantivo esteja mais próximo. Ex.: “O grupo de atletas chegou” concorda com “grupo”."
         },
         {
           "claim": "Concordância nominal envolve só adjetivos.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "A concordância nominal envolve determinantes, numerais, pronomes e adjetivos ligados ao substantivo. Ex.: “As duas alunas dedicadas chegaram” mostra várias marcas de feminino e plural."
         },
         {
           "claim": "Sujeito distante deixa de controlar concordância.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "Termos intercalados não anulam a relação entre sujeito e verbo. Ex.: “Os resultados da pesquisa chegaram ontem” mantém o verbo no plural."
         },
         {
           "claim": "Uso frequente na fala sempre coincide com norma-padrão escrita.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "A fala cotidiana pode seguir padrões de registro diferentes do padrão formal; cada situação tem exigências próprias. Ex.: Em uma prova escrita, “Os alunos chegaram” atende à concordância formal."
         }
       ]
     },
