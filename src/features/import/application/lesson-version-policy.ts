@@ -67,7 +67,7 @@ export function isLessonVersionProjection(pack: TrackPackV2) { return pack.track
 
 type SourceLesson = ReturnType<typeof resolveLessonVersionContext>["base"];
 /** New or corrected blocks: existing source Concepts and an existing non-assessed renderer only. */
-function validateTextBlock(block: LessonVersionPack["lesson"]["blocks"][number], base: SourceLesson, isAddition: boolean) {
+export function validateTextBlock(block: LessonVersionPack["lesson"]["blocks"][number], base: SourceLesson, isAddition: boolean) {
   if((isAddition&&!block.conceptIds.length)||block.conceptIds.some(id=>!base.concepts.some(c=>c.id===id)))throw new LessonVersionConflictError("New blocks must use existing source Concepts");
   if(block.type==="numeric-explorer")return;
   if(block.type==="prediction"){try{validateSourceGoalPrediction(block,base);}catch(error){throw new LessonVersionConflictError(error instanceof Error?error.message:"Invalid source-goal prediction");}return;}

@@ -3,6 +3,12 @@
 LIVE: the second Portuguese ten-lesson increment (POR-01/06/08/11/15/18/20/21/22/24 v3), exact originals/80 refs preserved through actual Admin Direct. Both complete backups and publication/history checks passed; final old-Question layout acceptance follows PR23. POR-14 remains excluded from an unresolved local/current-source binding mismatch. User explicitly confirmed Terra for the scored-enrichment contract. NEXT ACTION: eight required checks → protected PR23 merge/READY alias → published POR-04/15/24 and remaining language readers → current Terra handoff. No independent editorial approval is pending.
 
 
+## New lessons in a published Track — 2026-10-16 (Claude)
+
+Goal: import the nine new authored lessons as drafts in existing Track versions, then publish them through Admin Direct. Contract: `caderno.lesson-new.v1` ([ADR 0064](docs/ADR/0064-new-lesson-in-published-track.md)).
+Acceptance: the policy refuses existing lesson, Concept or Question ids, official, reserved or published Questions, non-text renderers and an unknown module. The PGlite run covers import, then idempotent re-import, then `publishLessonsDirect`; it checks the catalog and study-flow order and that earlier lessons stay unchanged. The converter is unit-tested.
+Status: implemented and tested locally. NEXT ACTION: PR, then per-lesson conversion against fresh production contexts (preview before import).
+
 ## Lesson pack correction plan — phase 0 (2026-10-15, Claude, branch feat/pack-validator-20261015)
 
 Source: user-supplied correction plan (phases 0–5) based on REVISAO-AULAS.md. Phase 0 DONE locally: validator, config, baseline (227 known violations), CI step in `pack-validation`, 11 unit tests. Deviations, all deliberate: R1 is word-bounded (avoids "independentes" and "recorte do espaço"); R4 is warn; R5 skips packs with fewer than 20 questions; the CI step runs in the existing pack-validation job instead of lint.
