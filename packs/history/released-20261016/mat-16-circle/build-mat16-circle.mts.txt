@@ -1,0 +1,54 @@
+// Append four hand-written circle questions to MAT-16 (ADR 0063 appended Question versions). Read-only against production.
+import fs from "node:fs"; import postgres from "postgres";
+import { hashCanonicalJson } from "../src/lib/canonical-json";
+import { resolveLessonVersionContext } from "../src/features/import/application/lesson-version-policy";
+import { lessonVersionPackSchema } from "../src/features/import/application/lesson-version-contracts";
+import { trackPackV2Schema } from "../src/features/import/application/track-pack-v2-schema";
+const R = "C:/Dev/pessoal/estudisc";
+const wrong = (id: string, content: string, rationale: string, targetsError = "procedural") => ({ id, content, correct: false, rationale, targetsError });
+const right = (id: string, content: string) => ({ id, content, correct: true });
+const PER = "MAT.GEO.PERIMETER", AREA = "MAT.GEO.AREA.OTHER_PLANAR";
+const authored = [
+  { n: 1, concept: PER, extra: [] as string[], difficulty: "direct", stimulus: "Uma pista de corrida tem formato circular, com raio de 20 m.", stem: "Usando π ≈ 3,14, quantos metros percorre quem dá uma volta completa na pista?", answer: "B",
+    choices: [wrong("A", "62,8 m", "62,8 = 3,14 × 20 usa πr e esquece o fator 2 da fórmula C = 2πr."), right("B", "125,6 m"), wrong("C", "1.256 m", "1.256 = 3,14 × 20² calcula a área do círculo (πr²), não o contorno.", "conceptual"), wrong("D", "40 m", "40 m é o diâmetro (2 × 20); falta multiplicar por π."), wrong("E", "251,2 m", "251,2 = 2 × 3,14 × 40 usa o diâmetro no lugar do raio.")],
+    explanation: "A volta completa é o comprimento da circunferência: C = 2πr = 2 × 3,14 × 20 = 125,6 m. Conferência: com o diâmetro, C = πd = 3,14 × 40 = 125,6 m.", hints: ["Uma volta completa mede o contorno, não a superfície.", "Use C = 2πr com r = 20 m.", "Confira com C = πd, usando d = 40 m."] },
+  { n: 2, concept: AREA, extra: [] as string[], difficulty: "applied", stimulus: "Uma mesa redonda tem tampo com 1 m de diâmetro. Será comprada uma toalha que cubra exatamente o tampo.", stem: "Usando π ≈ 3,14, qual é a área do tampo?", answer: "A",
+    choices: [right("A", "0,785 m²"), wrong("B", "3,14 m²", "3,14 = 3,14 × 1² usa o diâmetro (1 m) como se fosse o raio."), wrong("C", "1,57 m²", "1,57 = 3,14 × 0,5 multiplica π pelo raio sem elevá-lo ao quadrado."), wrong("D", "0,25 m²", "0,25 = 0,5² eleva o raio ao quadrado, mas esquece de multiplicar por π."), wrong("E", "6,28 m²", "6,28 = 2 × 3,14 × 1 mistura a fórmula do contorno com o diâmetro; o resultado é um comprimento, não uma área.", "conceptual")],
+    explanation: "Primeiro, r = d ÷ 2 = 0,5 m. Depois, A = πr² = 3,14 × 0,5² = 3,14 × 0,25 = 0,785 m². Conferência: o tampo cabe num quadrado de 1 m², então a área precisa ser menor que 1 m².", hints: ["O dado é o diâmetro; calcule o raio antes.", "Área do círculo: A = πr².", "Compare com o quadrado de 1 m × 1 m que envolve a mesa."] },
+  { n: 3, concept: PER, extra: [AREA], difficulty: "ifsc", stimulus: "Um jardim circular tem raio de 3 m. A prefeitura vai refazê-lo com raio de 6 m.", stem: "O que acontece com o comprimento da borda e com a área do jardim?", answer: "C",
+    choices: [wrong("A", "Os dois dobram.", "O contorno dobra, mas a área depende de r², e (2r)² = 4r²; a área quadruplica.", "conceptual"), wrong("B", "Os dois quadruplicam.", "A área quadruplica, mas o contorno C = 2πr cresce na mesma proporção do raio: apenas dobra.", "conceptual"), right("C", "A borda dobra e a área quadruplica."), wrong("D", "A borda quadruplica e a área dobra.", "Inverte as relações: o contorno é proporcional a r e a área a r².", "conceptual"), wrong("E", "A borda dobra e a área fica oito vezes maior.", "Oito vezes seria o efeito sobre um volume (2³); a área cresce 2² = 4 vezes.", "conceptual")],
+    explanation: "Borda: C = 2π × 3 = 6π m passa a 2π × 6 = 12π m, o dobro. Área: π × 3² = 9π m² passa a π × 6² = 36π m², quatro vezes maior. O contorno acompanha r; a área acompanha r².", hints: ["Calcule C e A para r = 3 m, deixando π indicado.", "Repita para r = 6 m.", "Divida cada novo valor pelo antigo."] },
+  { n: 4, concept: PER, extra: [] as string[], difficulty: "ifsc", stimulus: "A roda de uma bicicleta tem 60 cm de diâmetro. Um ciclista percorre 942 m em linha reta, sem a roda deslizar.", stem: "Usando π ≈ 3,14, quantas voltas completas a roda dá nesse trajeto?", answer: "D",
+    choices: [wrong("A", "250", "250 = 942 ÷ 3,768 usa 2πd (3,768 m), dobrando o contorno da roda."), wrong("B", "1.000", "1.000 = 942 ÷ 0,942 usa πr (94,2 cm), metade do contorno."), wrong("C", "5", "5 = 942 ÷ 188,4 divide metros por centímetros sem converter as unidades.", "calculation"), right("D", "500"), wrong("E", "15,7", "15,7 = 942 ÷ 60 divide a distância pelo diâmetro, sem calcular o contorno, e ainda mistura metros com centímetros.", "conceptual")],
+    explanation: "Em uma volta, a roda avança o comprimento do seu contorno: C = πd = 3,14 × 60 = 188,4 cm = 1,884 m. Número de voltas: 942 ÷ 1,884 = 500. Conferência: 500 × 1,884 = 942 m.", hints: ["Em uma volta, a bicicleta avança o contorno da roda.", "C = πd; converta o resultado para metros.", "Divida a distância total pelo avanço de uma volta."] },
+];
+const sql = postgres(fs.readFileSync(`${R}/.local/database-migration/private/target-final-uri.txt`, "utf8").trim(), { max: 1, prepare: false, onnotice() {} });
+try {
+  const [row] = await sql`select l.content_version, t.content_version tv from lessons l join modules m on m.id=l.module_id join tracks t on t.id=m.track_id where l.stable_id='MAT-16' and l.metadata->>'status'='published' and l.metadata->>'qaReleaseId' is not null order by l.content_version desc, t.content_version desc limit 1`;
+  const ids = await sql`select id from pack_imports where manifest->'track'->>'id'='ifsc-2027-mathematics' and manifest->>'version'=${String(row.tv)} order by imported_at desc, id desc`;
+  let context: any = null;
+  for (const { id } of ids) { const [m] = await sql`select manifest from pack_imports where id=${id}`; const p = trackPackV2Schema.safeParse(m.manifest); if (p.success) { context = p.data; break; } }
+  const moduleRecord = context.track.modules.find((m: any) => m.lessons.some((l: any) => l.id === "MAT-16"));
+  const base = moduleRecord.lessons.find((l: any) => l.id === "MAT-16");
+  if (base.version !== row.content_version) throw new Error(`context v${base.version} != published v${row.content_version}`);
+  const template = base.activities.filter((a: any) => a.questionId).at(-1);
+  const lesson = structuredClone({ ...base, version: base.version + 1, status: "draft" });
+  const fresh = authored.map(q => ({ id: `Q-MAT16-CIRCLE-0${q.n}`, version: 1, status: "draft", type: "multiple_choice", subjectCode: "MAT", stimulus: q.stimulus, stem: q.stem, items: [], assets: [],
+    choices: q.choices, answer: { kind: "multiple_choice", choiceId: q.answer }, explanation: q.explanation, difficulty: q.difficulty,
+    primaryConceptId: q.concept, conceptIds: [q.concept, ...q.extra], sourceIds: ["SRC-MAT-00012"], destinations: [],
+    provenance: { type: "generated", generationRunId: "estudisc-phase3-mat16-circle" }, exposurePolicy: { minimumDaysBetween: 0, reservedForAssessment: false },
+    cognitiveOperations: q.difficulty === "direct" ? ["identify", "calculate"] : ["interpret", "calculate", "apply"] }));
+  for (const [i, q] of fresh.entries()) {
+    if (q.choices.filter(c => c.correct).length !== 1 || q.choices.find(c => c.correct)!.id !== q.answer.choiceId) throw new Error(`key ${q.id}`);
+    lesson.activities.push({ ...structuredClone(template), id: `MAT16-CIRCLE-ACT-0${i + 1}`, questionId: q.id, prompt: authored[i].stem, conceptIds: q.conceptIds,
+      config: { ...template.config, hints: authored[i].hints, questionVersion: 1 } });
+  }
+  const all = [...context.questions, ...fresh];
+  const refs = [...new Set([...lesson.exitTicketQuestionIds, ...lesson.activities.flatMap((a: any) => a.questionId ? [a.questionId] : [])])];
+  const pack = lessonVersionPackSchema.parse({ schema: "caderno.lesson.v2", packId: `estudisc.questions.phase3.mat-16-circle-v${lesson.version}`, version: 1, authorId: "estudisc-phase1-cleanup",
+    target: { trackId: context.track.id, trackVersion: context.version, moduleId: moduleRecord.id, lessonId: "MAT-16", baseVersion: base.version, baseHash: hashCanonicalJson(base) },
+    lesson, questionVersions: fresh, questionReferences: refs.map(id => { const q = all.find((e: any) => e.id === id); return { id, version: q.version, hash: hashCanonicalJson(q) }; }) });
+  resolveLessonVersionContext([context], pack);
+  fs.writeFileSync(`${R}/.local/phase3/publish-mat/MAT-16.json`, JSON.stringify(pack));
+  console.log("ready MAT-16 v" + lesson.version, "activities", lesson.activities.length);
+} finally { await sql.end({ timeout: 2 }); }

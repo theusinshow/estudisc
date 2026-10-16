@@ -1,0 +1,927 @@
+{
+ "schema": "caderno.lesson-new.v1",
+ "packId": "estudisc.new-lesson.por-25",
+ "version": 1,
+ "authorId": "account-matheus",
+ "target": {
+  "trackId": "ifsc-2027-portuguese",
+  "trackVersion": 6,
+  "moduleId": "por"
+ },
+ "lesson": {
+  "id": "POR-25",
+  "version": 1,
+  "title": "Formação de palavras",
+  "kind": "core",
+  "estimatedMinutes": 40,
+  "status": "draft",
+  "concepts": [
+   {
+    "id": "POR-25-C01",
+    "title": "Radical, prefixo, sufixo e família lexical",
+    "summary": "Radical é a base de sentido compartilhada por palavras de uma família lexical, como feliz, infeliz e felicidade.",
+    "importance": "medium"
+   },
+   {
+    "id": "POR-25-C02",
+    "title": "Derivação prefixal, sufixal e parassintética",
+    "summary": "Na derivação prefixal, acrescenta-se um prefixo à base, como em infeliz.",
+    "importance": "medium"
+   },
+   {
+    "id": "POR-25-C03",
+    "title": "Derivação regressiva e imprópria",
+    "summary": "Derivação regressiva ocorre quando uma forma mais curta passa a funcionar como palavra derivada, muito frequentemente um substantivo associado a um verbo, como combate em relação a combater, conforme a análise morfológica tradicional.",
+    "importance": "medium"
+   },
+   {
+    "id": "POR-25-C04",
+    "title": "Composição: justaposição, aglutinação e efeitos de sentido",
+    "summary": "Na composição, duas bases lexicais se unem para formar nova palavra.",
+    "importance": "medium"
+   }
+  ],
+  "prerequisiteConceptIds": [],
+  "objectives": [
+   "Identificar radical e afixos contextualizados.",
+   "Diferenciar derivação prefixal, sufixal e parassintética.",
+   "Reconhecer conversão e regressiva.",
+   "Distinguir justaposição de aglutinação."
+  ],
+  "sourceIds": [
+   "src-new-POR-25",
+   "src-new-POR-25-ref-01",
+   "src-new-POR-25-ref-02",
+   "src-new-POR-25-ref-03"
+  ],
+  "exitTicketQuestionIds": [
+   "POR-25-Q05",
+   "POR-25-Q07"
+  ],
+  "blocks": [
+   {
+    "id": "POR-25-B01",
+    "type": "note",
+    "schemaVersion": 1,
+    "conceptIds": [
+     "POR-25-C01"
+    ],
+    "payload": {
+     "title": "Por que isso importa?",
+     "content": "Uma turma de Itajaí cria títulos para uma campanha de redução de lixo: “reutilizar”, “reaproveitar”, “descarte” e “guarda-chuva”. Alguém percebe que o pedaço re- costuma sugerir repetição, mas outro colega afirma que toda palavra começada por re é derivada com o mesmo prefixo. A escola também recebeu um cartaz com a palavra “amanhecer” e houve dúvida se ela surgiu por prefixo ou pela entrada conjunta de partes. Conhecer a estrutura das palavras ajuda a compreender vocabulário de notícias, publicidade e textos científicos. Como separar uma análise morfológica fundamentada de uma semelhança visual enganosa?"
+    }
+   },
+   {
+    "id": "POR-25-B02",
+    "type": "concept",
+    "schemaVersion": 1,
+    "conceptIds": [
+     "POR-25-C01"
+    ],
+    "payload": {
+     "conceptId": "POR-25-C01",
+     "title": "Radical, prefixo, sufixo e família lexical",
+     "content": "Radical é a base de sentido compartilhada por palavras de uma família lexical, como feliz, infeliz e felicidade. Afixos são elementos acrescentados à base: prefixos antes dela, sufixos depois. Muitos afixos têm valores reconhecíveis, mas seu sentido depende da palavra e do uso. O prefixo re- em refazer sugere repetição, e -mente em calmamente forma advérbio a partir de adjetivo. Nem todo pedaço escrito no início é prefixo; é necessário identificar uma base real e a relação de significado. Também há elementos de ligação e alterações na forma do radical em certas famílias.\n\nExemplo: Em desleal, des- é prefixo e leal funciona como base; em lealdade, -dade forma substantivo a partir do adjetivo.\n\nContraexemplo: A sequência re em rede não permite analisar de- como radical depois de um prefixo: a simples coincidência de letras não prova derivação.\n\nErro a evitar: Não divida palavras apenas pela aparência; procure base, significado e processo reconhecíveis."
+    }
+   },
+   {
+    "id": "POR-25-B03",
+    "type": "concept",
+    "schemaVersion": 1,
+    "conceptIds": [
+     "POR-25-C02"
+    ],
+    "payload": {
+     "conceptId": "POR-25-C02",
+     "title": "Derivação prefixal, sufixal e parassintética",
+     "content": "Na derivação prefixal, acrescenta-se um prefixo à base, como em infeliz. Na sufixal, acrescenta-se sufixo, como em felizmente. Uma forma pode apresentar prefixo e sufixo sem ser parassintética: em infelizmente, existem infeliz e felizmente, mostrando etapas independentes. Na parassíntese, prefixo e sufixo entram conjuntamente e não há, naquele sentido, formas intermediárias usuais com só um dos dois. Exemplos escolares são anoitecer e envelhecer. O procedimento é testar possíveis formas intermediárias reais, não contar simplesmente quantos afixos aparecem. A formação modifica sentido, classe ou função no texto.\n\nExemplo: Em infelizmente, in- e -mente estão presentes, mas “infeliz” e “felizmente” existem; por isso não é derivação parassintética.\n\nContraexemplo: Em anoitecer, “anoite” e “noitecer” não funcionam como etapas equivalentes com o mesmo sentido: a análise escolar é parassintética.\n\nErro a evitar: Não chame todo prefixo + sufixo de parassíntese; verifique a existência das etapas intermediárias."
+    }
+   },
+   {
+    "id": "POR-25-B04",
+    "type": "concept",
+    "schemaVersion": 1,
+    "conceptIds": [
+     "POR-25-C03"
+    ],
+    "payload": {
+     "conceptId": "POR-25-C03",
+     "title": "Derivação regressiva e imprópria",
+     "content": "Derivação regressiva ocorre quando uma forma mais curta passa a funcionar como palavra derivada, muito frequentemente um substantivo associado a um verbo, como combate em relação a combater, conforme a análise morfológica tradicional. O processo não significa que toda palavra curta veio de outra longa: é uma relação histórica e lexical. Derivação imprópria, também chamada conversão, ocorre quando uma palavra muda de classe gramatical sem alteração da forma. Em “o jantar ficou pronto”, jantar é substantivo; em “vamos jantar”, é verbo. O contexto sintático demonstra a mudança de classe. A classificação deve respeitar relações de sentido e uso.\n\nExemplo: Compare “o olhar do artista” com “olhar o quadro”: a forma olhar funciona como substantivo no primeiro caso e verbo no segundo.\n\nContraexemplo: Não classifique “o jantar” como regressiva só porque virou substantivo: não houve redução formal, e o exemplo escolar é de conversão.\n\nErro a evitar: Não confunda redução formal com mudança de classe sem mudança de forma."
+    }
+   },
+   {
+    "id": "POR-25-B05",
+    "type": "concept",
+    "schemaVersion": 1,
+    "conceptIds": [
+     "POR-25-C04"
+    ],
+    "payload": {
+     "conceptId": "POR-25-C04",
+     "title": "Composição: justaposição, aglutinação e efeitos de sentido",
+     "content": "Na composição, duas bases lexicais se unem para formar nova palavra. A justaposição conserva, em geral, a forma reconhecível das bases, como guarda-chuva e passatempo; a presença ou ausência de hífen não é, por si, o critério decisivo. A aglutinação envolve perda ou alteração de segmentos na junção, como planalto (plano + alto) e aguardente (água + ardente). O significado do composto pode ser figurado ou especializado: guarda-chuva não é alguém que guarda uma chuva, mas um objeto que protege dela. Em interpretação, reconhecer a formação permite explicar o efeito de humor, novidade ou especificação.\n\nExemplo: Passatempo junta passa + tempo sem fusão que apague claramente as bases; planalto apresenta alteração da junção de plano e alto.\n\nContraexemplo: Não diga que toda palavra com hífen é aglutinada: o hífen é convenção ortográfica, não prova de perda de sons.\n\nErro a evitar: Não determine o processo pela presença de hífen; observe o que aconteceu às bases."
+    }
+   },
+   {
+    "id": "POR-25-B06",
+    "type": "worked-example",
+    "schemaVersion": 1,
+    "conceptIds": [
+     "POR-25-C01",
+     "POR-25-C04"
+    ],
+    "payload": {
+     "title": "Análise do cartaz",
+     "content": "Classifique “refazer”, “felicidade” e “anoitecer” segundo o processo de formação.\n\n1. Em refazer, re- modifica fazer: derivação prefixal.\n2. Em felicidade, a base feliz recebe -idade: derivação sufixal, com ajuste da base.\n3. Em anoitecer, a- e -ecer atuam conjuntamente sobre noite.\n4. A análise escolar de anoitecer é derivação parassintética.\n\nConferência: Verifique as etapas: refazer preserva fazer; felicidade relaciona-se a feliz; já noitecer/anoite não formam etapas equivalentes do verbo."
+    }
+   },
+   {
+    "id": "POR-25-B07",
+    "type": "worked-example",
+    "schemaVersion": 1,
+    "conceptIds": [
+     "POR-25-C02",
+     "POR-25-C04"
+    ],
+    "payload": {
+     "title": "Comparando compostos",
+     "content": "Uma turma analisou “passatempo” e “planalto”. Em qual processo de composição cada uma se enquadra?\n\n1. Separe passatempo em passa + tempo: as bases continuam perceptíveis.\n2. Classifique-o como justaposição, mesmo escrito numa só palavra.\n3. Separe planalto historicamente em plano + alto.\n4. Houve alteração da forma durante a junção: aglutinação.\n\nConferência: A comparação mostra que não é o espaço ou o hífen que define o processo; é a preservação ou alteração das bases."
+    }
+   },
+   {
+    "id": "POR-25-B08",
+    "type": "warning",
+    "schemaVersion": 1,
+    "conceptIds": [
+     "POR-25-C01",
+     "POR-25-C02",
+     "POR-25-C03",
+     "POR-25-C04"
+    ],
+    "payload": {
+     "title": "Como cai no IFSC",
+     "content": "1. Reconhecer prefixo pela primeira sílaba sem relacionar significado e base.\n\n2. Classificar infelizmente como parassíntese sem testar intermediárias.\n\n3. Confundir mudança de classe com redução de forma.\n\n4. Determinar aglutinação pela ausência de hífen."
+    }
+   },
+   {
+    "id": "POR-25-B09",
+    "type": "summary",
+    "schemaVersion": 1,
+    "conceptIds": [
+     "POR-25-C01",
+     "POR-25-C02",
+     "POR-25-C03",
+     "POR-25-C04"
+    ],
+    "payload": {
+     "title": "Ideias essenciais",
+     "content": "O radical reúne sentidos em famílias de palavras. Prefixos antecedem a base; sufixos vêm depois dela. Parassíntese requer entrada conjunta dos afixos. Conversão muda a classe sem alterar a forma escrita. Regressiva envolve redução de forma em processos lexicais específicos. Composição une bases; justaposição as preserva mais claramente. Aglutinação envolve mudança na forma da junção."
+    }
+   }
+  ],
+  "activities": [
+   {
+    "id": "POR-25-ACT-01",
+    "type": "question",
+    "conceptIds": [
+     "POR-25-C01"
+    ],
+    "prompt": "Responda à checagem rápida.",
+    "questionId": "POR-25-Q01",
+    "config": {
+     "questionVersion": 1,
+     "phase": "guided_practice",
+     "hints": [],
+     "checkpointFor": "POR-25-B02"
+    }
+   },
+   {
+    "id": "POR-25-ACT-02",
+    "type": "question",
+    "conceptIds": [
+     "POR-25-C02"
+    ],
+    "prompt": "Responda à checagem rápida.",
+    "questionId": "POR-25-Q02",
+    "config": {
+     "questionVersion": 1,
+     "phase": "guided_practice",
+     "hints": [],
+     "checkpointFor": "POR-25-B03"
+    }
+   },
+   {
+    "id": "POR-25-ACT-03",
+    "type": "question",
+    "conceptIds": [
+     "POR-25-C03"
+    ],
+    "prompt": "Resolva sem consultar o exemplo.",
+    "questionId": "POR-25-Q03",
+    "config": {
+     "questionVersion": 1,
+     "phase": "independent_practice",
+     "hints": []
+    }
+   },
+   {
+    "id": "POR-25-ACT-04",
+    "type": "question",
+    "conceptIds": [
+     "POR-25-C04"
+    ],
+    "prompt": "Resolva sem consultar o exemplo.",
+    "questionId": "POR-25-Q04",
+    "config": {
+     "questionVersion": 1,
+     "phase": "independent_practice",
+     "hints": []
+    }
+   },
+   {
+    "id": "POR-25-ACT-05",
+    "type": "question",
+    "conceptIds": [
+     "POR-25-C01"
+    ],
+    "prompt": "Desafio final: responda sem consultar a aula.",
+    "questionId": "POR-25-Q05",
+    "config": {
+     "questionVersion": 1,
+     "phase": "exit_ticket",
+     "hints": []
+    }
+   },
+   {
+    "id": "POR-25-ACT-06",
+    "type": "question",
+    "conceptIds": [
+     "POR-25-C02"
+    ],
+    "prompt": "Resolva sem consultar o exemplo.",
+    "questionId": "POR-25-Q06",
+    "config": {
+     "questionVersion": 1,
+     "phase": "independent_practice",
+     "hints": []
+    }
+   },
+   {
+    "id": "POR-25-ACT-07",
+    "type": "question",
+    "conceptIds": [
+     "POR-25-C03"
+    ],
+    "prompt": "Desafio final: responda sem consultar a aula.",
+    "questionId": "POR-25-Q07",
+    "config": {
+     "questionVersion": 1,
+     "phase": "exit_ticket",
+     "hints": []
+    }
+   },
+   {
+    "id": "POR-25-ACT-08",
+    "type": "question",
+    "conceptIds": [
+     "POR-25-C04"
+    ],
+    "prompt": "Aplique o que estudou em uma questão no estilo da prova.",
+    "questionId": "POR-25-Q08",
+    "config": {
+     "questionVersion": 1,
+     "phase": "transfer",
+     "hints": []
+    }
+   }
+  ]
+ },
+ "questions": [
+  {
+   "id": "POR-25-Q01",
+   "version": 1,
+   "subjectCode": "POR",
+   "primaryConceptId": "POR-25-C01",
+   "conceptIds": [
+    "POR-25-C01"
+   ],
+   "type": "multiple_choice",
+   "difficulty": "foundation",
+   "cognitiveOperations": [
+    "identify"
+   ],
+   "stem": "No jornal da escola, uma reportagem descreve uma ação de reaproveitamento de livros usados. A editora estudante sublinhou as palavras “refazer”, “desfazer” e “fazer” e observou que duas delas incluem elementos antes de uma mesma base. Ela quer explicar o sentido das palavras para leitores de turmas mais novas. O texto compara atividades: fazer uma capa pela primeira vez, refazê-la depois de uma rasura e desfazer um encaixe errado. Cada ação tem efeito diferente no objeto.\n\nQue análise explica o funcionamento de “re-” em “refazer”?",
+   "choices": [
+    {
+     "id": "A",
+     "content": "Sufixo que forma substantivo a partir do verbo fazer.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "O elemento aparece antes da base e o resultado é verbo."
+    },
+    {
+     "id": "B",
+     "content": "Radical independente que substitui a base fazer.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "A base fazer permanece perceptível na palavra derivada."
+    },
+    {
+     "id": "C",
+     "content": "Marca de plural para várias capas refeitas.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "O prefixo altera sentido lexical, não número gramatical."
+    },
+    {
+     "id": "D",
+     "content": "Prefixo que indica realizar novamente a ação de fazer.",
+     "correct": true,
+     "rationale": "Correta: A oposição entre fazer pela primeira vez e refazer após rasura indica repetição. Confundir re- com des- altera a ação narrada."
+    },
+    {
+     "id": "E",
+     "content": "Prefixo que elimina a ação, como em desfazer.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Desfazer indica reverter, ao passo que refazer indica repetição."
+    }
+   ],
+   "answer": {
+    "kind": "multiple_choice",
+    "choiceId": "D"
+   },
+   "explanation": "A oposição entre fazer pela primeira vez e refazer após rasura indica repetição. Confundir re- com des- altera a ação narrada.",
+   "sourceIds": [
+    "src-new-POR-25"
+   ],
+   "assets": [],
+   "items": [],
+   "destinations": [],
+   "provenance": {
+    "type": "generated",
+    "generationRunId": "chatgpt-nove-aulas-ifsc-2027-v1"
+   },
+   "exposurePolicy": {
+    "minimumDaysBetween": 0,
+    "reservedForAssessment": false
+   },
+   "status": "draft"
+  },
+  {
+   "id": "POR-25-Q02",
+   "version": 1,
+   "subjectCode": "POR",
+   "primaryConceptId": "POR-25-C02",
+   "conceptIds": [
+    "POR-25-C02"
+   ],
+   "type": "multiple_choice",
+   "difficulty": "foundation",
+   "cognitiveOperations": [
+    "identify"
+   ],
+   "stem": "Para um mural de convivência, a professora escreveu três termos: “leal”, “desleal” e “lealdade”. No texto que acompanha o mural, ela discute respeito aos acordos de um grupo e pede atenção à parte que se repete nas palavras. Uma turma destacou “leal” como base compartilhada, apontou um elemento antes dela em “desleal” e outro depois dela em “lealdade”. O objetivo não é contar sílabas, mas interpretar formação e sentido.\n\nQual decomposição é adequada às duas derivações?",
+   "choices": [
+    {
+     "id": "A",
+     "content": "Desleal com sufixo; lealdade com prefixo.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Des- aparece antes; -dade, depois da base."
+    },
+    {
+     "id": "B",
+     "content": "Desleal com prefixo; lealdade com sufixo.",
+     "correct": true,
+     "rationale": "Correta: Des- aparece antes de leal e -dade aparece depois. A família compartilha a base; não há composição nem conversão."
+    },
+    {
+     "id": "C",
+     "content": "Duas palavras compostas por bases autônomas.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "A formação envolve afixos, não duas bases livres."
+    },
+    {
+     "id": "D",
+     "content": "Radical des em desleal e radical dade em lealdade.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Leal é a base de sentido compartilhada."
+    },
+    {
+     "id": "E",
+     "content": "Duas formações por conversão, sem afixos.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Houve acréscimo de prefixo e sufixo."
+    }
+   ],
+   "answer": {
+    "kind": "multiple_choice",
+    "choiceId": "B"
+   },
+   "explanation": "Des- aparece antes de leal e -dade aparece depois. A família compartilha a base; não há composição nem conversão.",
+   "sourceIds": [
+    "src-new-POR-25"
+   ],
+   "assets": [],
+   "items": [],
+   "destinations": [],
+   "provenance": {
+    "type": "generated",
+    "generationRunId": "chatgpt-nove-aulas-ifsc-2027-v1"
+   },
+   "exposurePolicy": {
+    "minimumDaysBetween": 0,
+    "reservedForAssessment": false
+   },
+   "status": "draft"
+  },
+  {
+   "id": "POR-25-Q03",
+   "version": 1,
+   "subjectCode": "POR",
+   "primaryConceptId": "POR-25-C03",
+   "conceptIds": [
+    "POR-25-C03"
+   ],
+   "type": "multiple_choice",
+   "difficulty": "direct",
+   "cognitiveOperations": [
+    "apply"
+   ],
+   "stem": "Uma oficina de escrita produziu as palavras “infeliz”, “felizmente” e “infelizmente” em cartões separados. Os alunos notaram que “infelizmente” reúne partes que também aparecem nas duas primeiras formas. O orientador pediu classificar o processo sem usar a regra superficial “tem prefixo e sufixo, então é parassíntese”. O grupo consultou as formas existentes e registrou que “infeliz” e “felizmente” são palavras completas e usadas no cotidiano.\n\nQual justificativa impede classificar “infelizmente” como parassíntese?",
+   "choices": [
+    {
+     "id": "A",
+     "content": "Prefixo e sufixo inseridos juntos, sem formas intermediárias.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "O texto confirma a existência das duas formas intermediárias."
+    },
+    {
+     "id": "B",
+     "content": "Radical feliz eliminado por aglutinação.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "O radical feliz permanece na palavra."
+    },
+    {
+     "id": "C",
+     "content": "Derivação imprópria sem alteração da forma escrita.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "A palavra apresenta elementos adicionais."
+    },
+    {
+     "id": "D",
+     "content": "Duas palavras independentes unidas por justaposição.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Não se trata da junção de duas bases livres."
+    },
+    {
+     "id": "E",
+     "content": "Existem as formas intermediárias “infeliz” e “felizmente”.",
+     "correct": true,
+     "rationale": "Correta: Infelizmente pode ser analisada por etapas prefixal e sufixal, pois infeliz e felizmente existem. Parassíntese exige entrada conjunta sem essas intermediárias."
+    }
+   ],
+   "answer": {
+    "kind": "multiple_choice",
+    "choiceId": "E"
+   },
+   "explanation": "Infelizmente pode ser analisada por etapas prefixal e sufixal, pois infeliz e felizmente existem. Parassíntese exige entrada conjunta sem essas intermediárias.",
+   "sourceIds": [
+    "src-new-POR-25"
+   ],
+   "assets": [],
+   "items": [],
+   "destinations": [],
+   "provenance": {
+    "type": "generated",
+    "generationRunId": "chatgpt-nove-aulas-ifsc-2027-v1"
+   },
+   "exposurePolicy": {
+    "minimumDaysBetween": 0,
+    "reservedForAssessment": false
+   },
+   "status": "draft"
+  },
+  {
+   "id": "POR-25-Q04",
+   "version": 1,
+   "subjectCode": "POR",
+   "primaryConceptId": "POR-25-C04",
+   "conceptIds": [
+    "POR-25-C04"
+   ],
+   "type": "multiple_choice",
+   "difficulty": "direct",
+   "cognitiveOperations": [
+    "apply"
+   ],
+   "stem": "Num projeto de observação de fenômenos naturais, estudantes registraram “anoitecer”, “noite”, “anoite” e “noitecer” em uma tabela. As duas últimas formas foram colocadas como hipóteses de etapas intermediárias. Depois, a professora perguntou quais delas são usadas no português contemporâneo com o mesmo valor verbal de “tornar-se noite”. A turma percebeu que a palavra usual incorpora simultaneamente elementos antes e depois da base nominal. O objetivo é compreender o processo escolar de formação.\n\nComo se classifica a formação de “anoitecer”?",
+   "choices": [
+    {
+     "id": "A",
+     "content": "Derivação parassintética da palavra noite.",
+     "correct": true,
+     "rationale": "Correta: A base noite recebe a- e -ecer em conjunto no verbo anoitecer, sem intermediárias equivalentes no português usual. A classificação é parassintética."
+    },
+    {
+     "id": "B",
+     "content": "Derivação prefixal da palavra noite.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "A forma intermediária não desempenha o papel proposto."
+    },
+    {
+     "id": "C",
+     "content": "Derivação sufixal da palavra noite.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "A etapa intermediária não corresponde ao uso descrito."
+    },
+    {
+     "id": "D",
+     "content": "Composição por justaposição de palavras independentes.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "O processo envolve afixos ligados a uma base."
+    },
+    {
+     "id": "E",
+     "content": "Derivação imprópria da palavra noite.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Anoitecer tem alterações formais visíveis."
+    }
+   ],
+   "answer": {
+    "kind": "multiple_choice",
+    "choiceId": "A"
+   },
+   "explanation": "A base noite recebe a- e -ecer em conjunto no verbo anoitecer, sem intermediárias equivalentes no português usual. A classificação é parassintética.",
+   "sourceIds": [
+    "src-new-POR-25"
+   ],
+   "assets": [],
+   "items": [],
+   "destinations": [],
+   "provenance": {
+    "type": "generated",
+    "generationRunId": "chatgpt-nove-aulas-ifsc-2027-v1"
+   },
+   "exposurePolicy": {
+    "minimumDaysBetween": 0,
+    "reservedForAssessment": false
+   },
+   "status": "draft"
+  },
+  {
+   "id": "POR-25-Q05",
+   "version": 1,
+   "subjectCode": "POR",
+   "primaryConceptId": "POR-25-C01",
+   "conceptIds": [
+    "POR-25-C01"
+   ],
+   "type": "multiple_choice",
+   "difficulty": "applied",
+   "cognitiveOperations": [
+    "apply",
+    "interpret"
+   ],
+   "stem": "Na biblioteca da escola, um professor separou frases de um conto: “Vamos jantar depois da reunião” e “O jantar já está servido”. Os alunos sublinharam a mesma sequência de letras e analisaram o papel de cada forma no enunciado. Na primeira frase, a palavra nomeia uma ação verbal desempenhada pelas pessoas; na segunda, com artigo, passa a nomear a refeição. A turma deve decidir se houve acréscimo de prefixo, redução ou troca de classe sem mudar a escrita.\n\nQue processo aparece na mudança de “jantar” entre as frases?",
+   "choices": [
+    {
+     "id": "A",
+     "content": "Derivação regressiva do verbo jantar.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "A palavra não perdeu nenhuma parte."
+    },
+    {
+     "id": "B",
+     "content": "Derivação sufixal do verbo jantar.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Artigo é palavra independente, não sufixo."
+    },
+    {
+     "id": "C",
+     "content": "Derivação imprópria de jantar, sem mudança formal.",
+     "correct": true,
+     "rationale": "Correta: Jantar mantém a forma escrita e passa de verbo a substantivo conforme contexto. Regressiva exigiria redução formal, ausente aqui."
+    },
+    {
+     "id": "D",
+     "content": "Aglutinação do artigo o com a palavra jantar.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "O artigo permanece separado do substantivo."
+    },
+    {
+     "id": "E",
+     "content": "Derivação parassintética do verbo jantar.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Não houve inserção de afixos."
+    }
+   ],
+   "answer": {
+    "kind": "multiple_choice",
+    "choiceId": "C"
+   },
+   "explanation": "Jantar mantém a forma escrita e passa de verbo a substantivo conforme contexto. Regressiva exigiria redução formal, ausente aqui.",
+   "sourceIds": [
+    "src-new-POR-25"
+   ],
+   "assets": [],
+   "items": [],
+   "destinations": [],
+   "provenance": {
+    "type": "generated",
+    "generationRunId": "chatgpt-nove-aulas-ifsc-2027-v1"
+   },
+   "exposurePolicy": {
+    "minimumDaysBetween": 0,
+    "reservedForAssessment": false
+   },
+   "status": "draft"
+  },
+  {
+   "id": "POR-25-Q06",
+   "version": 1,
+   "subjectCode": "POR",
+   "primaryConceptId": "POR-25-C02",
+   "conceptIds": [
+    "POR-25-C02"
+   ],
+   "type": "multiple_choice",
+   "difficulty": "applied",
+   "cognitiveOperations": [
+    "apply",
+    "interpret"
+   ],
+   "stem": "Uma turma de Florianópolis elaborou um glossário para textos jornalísticos. Nele aparecem “combater” e “combate”, usados, respectivamente, numa oração verbal e no título de uma reportagem sobre ações de prevenção. A professora informa que, na tradição escolar, nomes de ação relacionados a certos verbos podem ser classificados como derivados regressivos. Os estudantes comparam a extensão da forma e rejeitam a ideia de que toda palavra mais curta necessariamente deriva da maior.\n\nQual análise corresponde ao caso apresentado na classificação escolar tradicional?",
+   "choices": [
+    {
+     "id": "A",
+     "content": "Combate formado por sufixação de -er.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "-er faz parte da forma verbal combater, não foi acrescido ao nome."
+    },
+    {
+     "id": "B",
+     "content": "Combate como derivação regressiva de combater.",
+     "correct": true,
+     "rationale": "Correta: Na análise tradicional de nomes de ação, combate relaciona-se regressivamente a combater. O distrator de conversão ignora a diferença formal."
+    },
+    {
+     "id": "C",
+     "content": "Combate como conversão, sem mudança formal.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Há redução da forma na relação apresentada."
+    },
+    {
+     "id": "D",
+     "content": "Combate como composição de com e bate.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "A sequência escrita não comprova composição lexical."
+    },
+    {
+     "id": "E",
+     "content": "Combate como derivação parassintética de bater.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "A análise pedida não envolve entrada simultânea de dois afixos."
+    }
+   ],
+   "answer": {
+    "kind": "multiple_choice",
+    "choiceId": "B"
+   },
+   "explanation": "Na análise tradicional de nomes de ação, combate relaciona-se regressivamente a combater. O distrator de conversão ignora a diferença formal.",
+   "sourceIds": [
+    "src-new-POR-25"
+   ],
+   "assets": [],
+   "items": [],
+   "destinations": [],
+   "provenance": {
+    "type": "generated",
+    "generationRunId": "chatgpt-nove-aulas-ifsc-2027-v1"
+   },
+   "exposurePolicy": {
+    "minimumDaysBetween": 0,
+    "reservedForAssessment": false
+   },
+   "status": "draft"
+  },
+  {
+   "id": "POR-25-Q07",
+   "version": 1,
+   "subjectCode": "POR",
+   "primaryConceptId": "POR-25-C03",
+   "conceptIds": [
+    "POR-25-C03"
+   ],
+   "type": "multiple_choice",
+   "difficulty": "ifsc",
+   "cognitiveOperations": [
+    "interpret",
+    "analyze"
+   ],
+   "stem": "Ao planejar uma feira literária, os alunos escolheram as palavras “passatempo” e “planalto” para exercícios de formação de palavras. O primeiro termo nomeia uma atividade recreativa; o segundo aparece numa notícia sobre relevo. O professor lembra que composição é a junção de bases e pede observar se elas permanecem formalmente reconhecíveis. A grafia sem hífen de ambas não resolve a questão, pois a ortografia não determina sozinha a alteração dos componentes.\n\nQual classificação está de acordo com a forma das bases?",
+   "choices": [
+    {
+     "id": "A",
+     "content": "Passatempo por aglutinação; planalto por justaposição.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Planalto mostra alteração de plano + alto."
+    },
+    {
+     "id": "B",
+     "content": "Passatempo e planalto por justaposição.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Aglutinação observa alterações nas bases."
+    },
+    {
+     "id": "C",
+     "content": "Passatempo e planalto por derivação prefixal.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Os elementos não atuam como afixos nesse caso."
+    },
+    {
+     "id": "D",
+     "content": "Passatempo por justaposição; planalto por aglutinação.",
+     "correct": true,
+     "rationale": "Correta: Passatempo reúne passa + tempo preservando as bases; planalto vem de plano + alto com alteração. Não é a ausência de hífen que determina."
+    },
+    {
+     "id": "E",
+     "content": "Passatempo por conversão; planalto por derivação regressiva.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Ambas resultam de composição de bases."
+    }
+   ],
+   "answer": {
+    "kind": "multiple_choice",
+    "choiceId": "D"
+   },
+   "explanation": "Passatempo reúne passa + tempo preservando as bases; planalto vem de plano + alto com alteração. Não é a ausência de hífen que determina.",
+   "sourceIds": [
+    "src-new-POR-25"
+   ],
+   "assets": [],
+   "items": [],
+   "destinations": [],
+   "provenance": {
+    "type": "generated",
+    "generationRunId": "chatgpt-nove-aulas-ifsc-2027-v1"
+   },
+   "exposurePolicy": {
+    "minimumDaysBetween": 0,
+    "reservedForAssessment": false
+   },
+   "status": "draft"
+  },
+  {
+   "id": "POR-25-Q08",
+   "version": 1,
+   "subjectCode": "POR",
+   "primaryConceptId": "POR-25-C04",
+   "conceptIds": [
+    "POR-25-C04"
+   ],
+   "type": "multiple_choice",
+   "difficulty": "ifsc",
+   "cognitiveOperations": [
+    "interpret",
+    "analyze"
+   ],
+   "stem": "Um projeto estudantil criou o slogan “Reaprenda a cuidar do bairro”. A equipe analisa duas escolhas: “reaprender” e “desaprender”. O material não sugere que o aluno deva esquecer a coleta seletiva, mas que retome práticas de cuidado que havia deixado de aplicar. No texto, os dois verbos poderiam aparecer, porém provocariam orientações bem distintas. A redação da campanha foi aprovada por transmitir recuperação de um hábito, não seu abandono.\n\nPor que “reaprender” é mais adequado à campanha descrita?",
+   "choices": [
+    {
+     "id": "A",
+     "content": "Re- comunica retomada da aprendizagem.",
+     "correct": true,
+     "rationale": "Correta: O prefixo re- em reaprender exprime retomada/repetição; des- em desaprender muda a orientação para deixar de saber. A escolha é semântica, não puramente gráfica."
+    },
+    {
+     "id": "B",
+     "content": "Des- comunica retomada da aprendizagem.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Desaprender não expressa a mesma retomada."
+    },
+    {
+     "id": "C",
+     "content": "Re- transforma o verbo em substantivo.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Reaprender continua verbo."
+    },
+    {
+     "id": "D",
+     "content": "Reaprender elimina a referência à aprendizagem.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "A base aprender continua identificável."
+    },
+    {
+     "id": "E",
+     "content": "Des- acrescenta intensidade à aprendizagem.",
+     "correct": false,
+     "targetsError": "unknown",
+     "rationale": "Desaprender sugere perda de aprendizagem, outra orientação."
+    }
+   ],
+   "answer": {
+    "kind": "multiple_choice",
+    "choiceId": "A"
+   },
+   "explanation": "O prefixo re- em reaprender exprime retomada/repetição; des- em desaprender muda a orientação para deixar de saber. A escolha é semântica, não puramente gráfica.",
+   "sourceIds": [
+    "src-new-POR-25"
+   ],
+   "assets": [],
+   "items": [],
+   "destinations": [],
+   "provenance": {
+    "type": "generated",
+    "generationRunId": "chatgpt-nove-aulas-ifsc-2027-v1"
+   },
+   "exposurePolicy": {
+    "minimumDaysBetween": 0,
+    "reservedForAssessment": false
+   },
+   "status": "draft"
+  }
+ ],
+ "sources": [
+  {
+   "id": "src-new-POR-25",
+   "type": "ai_generated",
+   "title": "Estudisc Content Studio — rascunho da nova aula POR-25",
+   "locator": {},
+   "metadata": {
+    "authorRunId": "chatgpt-nove-aulas-ifsc-2027-v1",
+    "reviewStatus": "pending_human_publication_review",
+    "editalItem": "LÍNGUA PORTUGUESA — item 2: “Análise dos diferentes aspectos linguísticos/gramaticais do texto, como: convenções da língua escrita, aspectos fonético-fonológicos (relações fone-fonema-grafema), aspectos morfológicos e sintáticos (flexões, ordem ativa, passiva; regência e concordância) e aspectos semânticos (operadores lógico-discursivos, sinonímia, ambiguidades, figuras de linguagem).” Formação de palavras é aprofundamento morfológico correlato, não nomeado expressamente.",
+    "editalMappingStatus": "author_claim_unverified"
+   }
+  },
+  {
+   "id": "src-new-POR-25-ref-01",
+   "type": "reference",
+   "title": "Base Nacional Comum Curricular",
+   "locator": {
+    "url": "https://basenacionalcomum.mec.gov.br/"
+   },
+   "metadata": {
+    "author": "Ministério da Educação",
+    "accessedAt": "2026-10-16",
+    "usage": "conferência de fatos"
+   }
+  },
+  {
+   "id": "src-new-POR-25-ref-02",
+   "type": "reference",
+   "title": "Vocabulário Ortográfico da Língua Portuguesa, edição digital 2025–2026",
+   "locator": {
+    "url": "https://www.academia.org.br/nossa-lingua/vocabulario-ortografico"
+   },
+   "metadata": {
+    "author": "Academia Brasileira de Letras",
+    "accessedAt": "2026-10-16",
+    "usage": "conferência de fatos"
+   }
+  },
+  {
+   "id": "src-new-POR-25-ref-03",
+   "type": "reference",
+   "title": "Processos de formação de palavras e seus novos sentidos",
+   "locator": {
+    "url": "https://sme.goiania.go.gov.br/conexaoescola/eaja/lingua-portuguesa-processos-de-formacao-de-palavras-e-seus-novos-sentidos/"
+   },
+   "metadata": {
+    "author": "Conexão Escola — SME Goiânia",
+    "accessedAt": "2026-10-16",
+    "usage": "conferência de fatos"
+   }
+  }
+ ]
+}

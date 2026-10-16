@@ -1,0 +1,538 @@
+{
+  "lessonId": "MAT-22",
+  "title": "Média, moda e mediana",
+  "subject": "MAT",
+  "estimatedMinutes": 40,
+  "editalItem": "MATEMÁTICA — item 4. Probabilidade e Estatística: “Leitura e interpretação de tabelas e gráficos. Estimativa de probabilidade por meio de frequência de ocorrências. Princípio multiplicativo da contagem.” Média, moda e mediana não são nomeadas expressamente; aprofundamento correlato de estatística.",
+  "objectives": [
+    "Calcular média simples e ponderada.",
+    "Obter mediana em listas pares e ímpares.",
+    "Identificar moda por frequência.",
+    "Avaliar o efeito de extremos e selecionar medida apropriada."
+  ],
+  "concepts": [
+    {
+      "id": "MAT-22-C01",
+      "title": "Média aritmética simples",
+      "summary": "A média aritmética simples é a soma de todas as observações dividida pelo número de observações: média = soma ÷ quantidade."
+    },
+    {
+      "id": "MAT-22-C02",
+      "title": "Média ponderada e pesos",
+      "summary": "Na média ponderada, cada valor é multiplicado por um peso antes da soma."
+    },
+    {
+      "id": "MAT-22-C03",
+      "title": "Mediana e ordenação",
+      "summary": "Mediana é o valor central quando os dados são colocados em ordem crescente ou decrescente."
+    },
+    {
+      "id": "MAT-22-C04",
+      "title": "Moda, extremos e adequação da medida",
+      "summary": "Moda é o valor com maior frequência."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "MAT-22-B01",
+      "type": "note",
+      "title": "Por que isso importa?",
+      "content": "Uma turma de Criciúma entrevistou colegas sobre quantos minutos levam para chegar à escola. A maioria relatou trajetos de 10 a 25 minutos, mas um estudante mora distante e leva 90 minutos. Ao calcular a média, o grupo achou um tempo acima do trajeto típico de quase todos. A moda e a mediana contaram histórias diferentes. Para decidir quanto tempo reservar para uma atividade de recepção na entrada, qual medida seria mais representativa? E se uma avaliação tivesse pesos diferentes para prova, trabalho e projeto?",
+      "conceptIds": [
+        "MAT-22-C01"
+      ]
+    },
+    {
+      "id": "MAT-22-B02",
+      "type": "concept",
+      "title": "Média aritmética simples",
+      "content": "A média aritmética simples é a soma de todas as observações dividida pelo número de observações: média = soma ÷ quantidade. Ela utiliza cada valor, por isso reage a valores muito altos ou muito baixos. É uma medida útil quando os números têm a mesma importância e a distribuição não apresenta distorções extremas. A média não precisa ser um valor realmente observado: alunos com notas 6 e 8 têm média 7, mesmo sem nota 7 registrada. Para conferir, multiplique a média pela quantidade; deve recuperar a soma.\n\nExemplo: Em quatro deslocamentos de 10, 12, 16 e 18 minutos, a média é (10 + 12 + 16 + 18) ÷ 4 = 14 minutos.\n\nContraexemplo: Somar as medidas e dividir por 3 porque três valores são diferentes está errado: é preciso dividir pelo total de observações, quatro.\n\nErro a evitar: Não confunda quantidade de valores distintos com número de registros.",
+      "conceptIds": [
+        "MAT-22-C01"
+      ]
+    },
+    {
+      "id": "MAT-22-B03",
+      "type": "concept",
+      "title": "Média ponderada e pesos",
+      "content": "Na média ponderada, cada valor é multiplicado por um peso antes da soma. A fórmula é média = (valor₁ × peso₁ + valor₂ × peso₂ + …) ÷ soma dos pesos. Os pesos indicam importância relativa ou frequência, conforme o problema. Quando todos os pesos são iguais, a média ponderada coincide com a simples. Não basta dividir pelo número de atividades quando os pesos diferem. Pesos não precisam somar 10 ou 100, mas o denominador deve ser a soma efetiva deles.\n\nExemplo: Se uma prova nota 8 tem peso 3 e um trabalho nota 6 tem peso 2, a média é (8 × 3 + 6 × 2) ÷ 5 = 7,2.\n\nContraexemplo: Não calcule (8 + 6) ÷ 2 = 7 para esse caso: isso atribui pesos iguais e ignora a regra apresentada.\n\nErro a evitar: Não divida pelos pesos individuais nem pelo número de atividades; use a soma dos pesos.",
+      "conceptIds": [
+        "MAT-22-C02"
+      ]
+    },
+    {
+      "id": "MAT-22-B04",
+      "type": "concept",
+      "title": "Mediana e ordenação",
+      "content": "Mediana é o valor central quando os dados são colocados em ordem crescente ou decrescente. Se há quantidade ímpar de observações, ela é o termo do meio. Se há quantidade par, calcula-se a média dos dois termos centrais. A mediana é menos sensível a um valor extremo do que a média. Porém ela não revela sozinha a dispersão ou o máximo; dois conjuntos podem ter mediana igual e comportamento bem diferente. Em tabelas de frequência, é necessário contar corretamente quantas vezes cada valor aparece antes de localizar a posição central.\n\nExemplo: Para 8, 10, 12, 14 e 40 minutos, a mediana é 12; para 8, 10, 12 e 40, é (10 + 12) ÷ 2 = 11.\n\nContraexemplo: Escolher 12 como mediana do segundo conjunto só por estar próximo do centro é incorreto: há dois termos centrais.\n\nErro a evitar: Não determine a mediana antes de ordenar as observações e contar quantas são.",
+      "conceptIds": [
+        "MAT-22-C03"
+      ]
+    },
+    {
+      "id": "MAT-22-B05",
+      "type": "concept",
+      "title": "Moda, extremos e adequação da medida",
+      "content": "Moda é o valor com maior frequência. Pode haver uma moda, várias modas ou nenhuma moda quando não há frequência superior. Ela é útil em dados categóricos, por exemplo o tamanho de camiseta mais escolhido, em que média e mediana sequer fazem sentido. A média aproveita todos os números, mas pode ser puxada por valores extremos; a mediana descreve melhor o centro de distribuições muito assimétricas. Escolher a medida exige perguntar qual decisão será tomada. Também convém informar amplitude, máximo menos mínimo, para mostrar o espalhamento de dados.\n\nExemplo: Nos tempos 12, 12, 15, 18 e 90, a moda é 12, a mediana é 15 e a média é 29,4; o caso de 90 minutos eleva a média.\n\nContraexemplo: Dizer que 29,4 minutos é a viagem mais comum confunde média com moda, que vale 12.\n\nErro a evitar: Não escolha média como “a melhor” sem verificar extremos e finalidade do resumo.",
+      "conceptIds": [
+        "MAT-22-C04"
+      ]
+    },
+    {
+      "id": "MAT-22-B06",
+      "type": "worked-example",
+      "title": "Chegada à escola",
+      "content": "Os cinco tempos são 10, 12, 12, 16 e 50 minutos. Calcule média, mediana e moda.\n\n1. Soma = 10 + 12 + 12 + 16 + 50 = 100.\n2. Média = 100 ÷ 5 = 20 minutos.\n3. Dados ordenados: o terceiro valor é 12, logo mediana = 12.\n4. O valor mais frequente é 12, então moda = 12.\n\nConferência: 20 × 5 = 100 recupera a soma. O valor extremo de 50 explica por que a média supera a mediana.",
+      "conceptIds": [
+        "MAT-22-C01",
+        "MAT-22-C04"
+      ]
+    },
+    {
+      "id": "MAT-22-B07",
+      "type": "worked-example",
+      "title": "Boletim com pesos",
+      "content": "Um estudante recebeu 7,0 na prova (peso 3), 9,0 no projeto (peso 2) e 8,0 no trabalho (peso 1). Qual a média?\n\n1. Some os produtos: 7 × 3 = 21, 9 × 2 = 18 e 8 × 1 = 8.\n2. Soma ponderada = 21 + 18 + 8 = 47.\n3. Soma dos pesos = 3 + 2 + 1 = 6.\n4. Média ponderada = 47 ÷ 6 ≈ 7,83.\n\nConferência: O resultado deve ficar entre 7 e 9, o que acontece. Como 7 tem maior peso, a média fica mais perto de 7 que de 9.",
+      "conceptIds": [
+        "MAT-22-C02",
+        "MAT-22-C04"
+      ]
+    },
+    {
+      "id": "MAT-22-B08",
+      "type": "warning",
+      "title": "Como cai no IFSC",
+      "content": "1. Confundir moda com mediana quando há repetição de números.\n\n2. Dividir média ponderada pela quantidade de notas, não pela soma dos pesos.\n\n3. Calcular mediana de lista sem ordenar os valores.\n\n4. Apresentar média influenciada por valor extremo como o trajeto típico.",
+      "conceptIds": [
+        "MAT-22-C01",
+        "MAT-22-C02",
+        "MAT-22-C03",
+        "MAT-22-C04"
+      ]
+    },
+    {
+      "id": "MAT-22-B09",
+      "type": "summary",
+      "title": "Ideias essenciais",
+      "content": "Média simples é a soma dividida pelo número de observações. A ponderada combina notas e pesos dividindo pela soma dos pesos. Mediana exige ordenar os dados. Para quantidade par, use a média dos dois valores centrais. Moda é o dado mais frequente. Valores extremos costumam alterar mais a média que a mediana. A pergunta da pesquisa orienta a escolha da medida.",
+      "conceptIds": [
+        "MAT-22-C01",
+        "MAT-22-C02",
+        "MAT-22-C03",
+        "MAT-22-C04"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "MAT-22-Q01",
+      "difficulty": "foundation",
+      "conceptIds": [
+        "MAT-22-C01"
+      ],
+      "stimulus": "Os estudantes de uma escola de Tubarão mediram o tempo de espera pelo ônibus em quatro manhãs: 8, 12, 10 e 14 minutos. A empresa quer uma descrição simples do tempo médio nesse conjunto, atribuindo igual importância a cada dia. Os registros pertencem ao mesmo ponto e ao mesmo horário aproximado de entrada. Uma colega somou corretamente os tempos, mas sugeriu dividir pelo número de valores distintos, sem verificar quantas manhãs tinham sido observadas.",
+      "stem": "Qual foi a média aritmética dos tempos registrados?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Média aritmética: 12 minutos.",
+          "correct": false,
+          "targetsError": "mediana por média",
+          "rationale": "A média utiliza a soma de todos os quatro tempos."
+        },
+        {
+          "id": "B",
+          "content": "Média aritmética de 11 minutos.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: 8 + 12 + 10 + 14 = 44; 44 ÷ 4 = 11. A soma de 44 não é média, pois faltaria dividir."
+        },
+        {
+          "id": "C",
+          "content": "Média aritmética de 10 minutos.",
+          "correct": false,
+          "targetsError": "dado isolado",
+          "rationale": "O cálculo envolve a soma de todas as medições."
+        },
+        {
+          "id": "D",
+          "content": "Média aritmética de 14 minutos.",
+          "correct": false,
+          "targetsError": "máximo por média",
+          "rationale": "O máximo não corresponde à média."
+        },
+        {
+          "id": "E",
+          "content": "Média aritmética de 44 minutos.",
+          "correct": false,
+          "targetsError": "soma por média",
+          "rationale": "A soma deve ser dividida pela quantidade de observações."
+        }
+      ],
+      "explanation": "8 + 12 + 10 + 14 = 44; 44 ÷ 4 = 11. A soma de 44 não é média, pois faltaria dividir."
+    },
+    {
+      "id": "MAT-22-Q02",
+      "difficulty": "foundation",
+      "conceptIds": [
+        "MAT-22-C02"
+      ],
+      "stimulus": "Uma turma registra os tamanhos de camiseta escolhidos para uma atividade escolar: P, M, M, G, M, P, G e GG. O fornecedor pergunta qual tamanho deverá ser comprado em maior quantidade. Como os tamanhos são categorias ordenáveis apenas de modo convencional e não valores numéricos, o grupo decide comparar frequências em vez de fazer contas aritméticas. A lista contém oito solicitações, cada uma correspondente a um estudante.",
+      "stem": "Qual medida é mais útil para responder à encomenda?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Média M para orientar a encomenda.",
+          "correct": false,
+          "targetsError": "média de categoria",
+          "rationale": "Não há valores métricos fornecidos aos tamanhos."
+        },
+        {
+          "id": "B",
+          "content": "Mediana G para orientar a encomenda.",
+          "correct": false,
+          "targetsError": "ordem arbitrária",
+          "rationale": "A necessidade é encontrar o tamanho mais frequente."
+        },
+        {
+          "id": "C",
+          "content": "Moda P para orientar a encomenda.",
+          "correct": false,
+          "targetsError": "posição por frequência",
+          "rationale": "P aparece duas vezes, menos que M."
+        },
+        {
+          "id": "D",
+          "content": "Tamanho GG para orientar a encomenda.",
+          "correct": false,
+          "targetsError": "tamanho por demanda",
+          "rationale": "A quantidade solicitada de GG é uma unidade."
+        },
+        {
+          "id": "E",
+          "content": "Moda M, tamanho que mais aparece.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: M aparece três vezes, P e G duas e GG uma. A moda orienta estoque de uma categoria; média não faz sentido aqui."
+        }
+      ],
+      "explanation": "M aparece três vezes, P e G duas e GG uma. A moda orienta estoque de uma categoria; média não faz sentido aqui."
+    },
+    {
+      "id": "MAT-22-Q03",
+      "difficulty": "direct",
+      "conceptIds": [
+        "MAT-22-C03"
+      ],
+      "stimulus": "Um programa de reforço escolar registrou notas de cinco participantes: 5, 6, 7, 8 e 9. O coordenador quer a mediana, não a média, para apresentar o ponto central da distribuição. A lista já foi organizada em ordem crescente e todos os estudantes participam com uma observação. Uma aluna propôs usar a nota mais frequente, mas nenhuma nota se repete. Outro sugeriu somar e dividir por cinco, uma operação que por acaso produz o mesmo número neste caso.",
+      "stem": "Qual é a mediana correta dessa lista?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Mediana igual a 6.",
+          "correct": false,
+          "targetsError": "posição errada",
+          "rationale": "A posição central de cinco valores é a terceira."
+        },
+        {
+          "id": "B",
+          "content": "Mediana igual a 8.",
+          "correct": false,
+          "targetsError": "ordem deslocada",
+          "rationale": "A terceira posição fica entre duas menores e duas maiores."
+        },
+        {
+          "id": "C",
+          "content": "Mediana igual a 7.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Com cinco observações, (5 + 1) ÷ 2 = 3; a terceira é 7. A média também seria 7, mas não substitui o procedimento pedido."
+        },
+        {
+          "id": "D",
+          "content": "Mediana igual a 9.",
+          "correct": false,
+          "targetsError": "máximo por centro",
+          "rationale": "Mediana não é o valor máximo."
+        },
+        {
+          "id": "E",
+          "content": "Mediana igual a 5.",
+          "correct": false,
+          "targetsError": "mínimo por centro",
+          "rationale": "O primeiro registro não ocupa a posição central."
+        }
+      ],
+      "explanation": "Com cinco observações, (5 + 1) ÷ 2 = 3; a terceira é 7. A média também seria 7, mas não substitui o procedimento pedido."
+    },
+    {
+      "id": "MAT-22-Q04",
+      "difficulty": "direct",
+      "conceptIds": [
+        "MAT-22-C04"
+      ],
+      "stimulus": "Em uma pesquisa sobre distâncias percorridas, seis alunos registraram 2, 3, 3, 4, 7 e 11 quilômetros numa semana. O conjunto está em ordem crescente e o grupo discute como achar o centro sem sofrer tanto efeito do aluno que caminhou 11 km. Duas pessoas escolheram um dos valores centrais; outra lembrou que, por haver número par de observações, é preciso considerar os dois elementos do meio.",
+      "stem": "Qual é a mediana em quilômetros?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Mediana de 3 km.",
+          "correct": false,
+          "targetsError": "centro unilateral",
+          "rationale": "Com seis termos há duas posições centrais."
+        },
+        {
+          "id": "B",
+          "content": "Mediana de 4 km.",
+          "correct": false,
+          "targetsError": "outro centro",
+          "rationale": "É necessário calcular (3 + 4) ÷ 2."
+        },
+        {
+          "id": "C",
+          "content": "Mediana de 5 km.",
+          "correct": false,
+          "targetsError": "centro deslocado",
+          "rationale": "Os valores centrais são 3 e 4."
+        },
+        {
+          "id": "D",
+          "content": "Mediana de 3,5 km.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: As posições centrais são a 3ª e a 4ª: 3 e 4. (3 + 4) ÷ 2 = 3,5 km."
+        },
+        {
+          "id": "E",
+          "content": "Mediana de 11 km.",
+          "correct": false,
+          "targetsError": "máximo por mediana",
+          "rationale": "Mediana depende da posição, não do extremo."
+        }
+      ],
+      "explanation": "As posições centrais são a 3ª e a 4ª: 3 e 4. (3 + 4) ÷ 2 = 3,5 km."
+    },
+    {
+      "id": "MAT-22-Q05",
+      "difficulty": "applied",
+      "conceptIds": [
+        "MAT-22-C01"
+      ],
+      "stimulus": "A direção de uma escola usa pesos diferentes para calcular uma média: prova com nota 6 e peso 3; projeto com nota 9 e peso 2. O regulamento da avaliação está disponível aos alunos e exige divisão pela soma dos pesos. Um estudante obteve 7,5 somando as notas e dividindo por dois, mas esqueceu que a prova tem importância maior. A coordenadora pede o valor que será lançado no boletim, sem arredondamento adicional.",
+      "stem": "Qual média ponderada deve ser registrada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Média ponderada igual a 7,2.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: 6 × 3 + 9 × 2 = 18 + 18 = 36. Dividindo por 5, a média é 7,2. A opção 7,5 seria válida só com pesos iguais."
+        },
+        {
+          "id": "B",
+          "content": "Média ponderada igual a 7,5.",
+          "correct": false,
+          "targetsError": "pesos ignorados",
+          "rationale": "A prova conta três partes; o projeto, duas."
+        },
+        {
+          "id": "C",
+          "content": "Média ponderada igual a 9,0.",
+          "correct": false,
+          "targetsError": "máximo por peso",
+          "rationale": "O peso maior pertence à nota 6, não à 9."
+        },
+        {
+          "id": "D",
+          "content": "Média ponderada igual a 6,6.",
+          "correct": false,
+          "targetsError": "ponderação alterada",
+          "rationale": "Os pesos declarados são 3 e 2."
+        },
+        {
+          "id": "E",
+          "content": "Média ponderada igual a 36.",
+          "correct": false,
+          "targetsError": "divisor ausente",
+          "rationale": "A soma ponderada deve ser dividida por 5."
+        }
+      ],
+      "explanation": "6 × 3 + 9 × 2 = 18 + 18 = 36. Dividindo por 5, a média é 7,2. A opção 7,5 seria válida só com pesos iguais."
+    },
+    {
+      "id": "MAT-22-Q06",
+      "difficulty": "applied",
+      "conceptIds": [
+        "MAT-22-C02"
+      ],
+      "stimulus": "Uma equipe de pesquisa compara dois grupos de tempos de deslocamento escolar. Grupo A: 10, 12, 14, 16 e 18 minutos. Grupo B: 10, 12, 14, 16 e 90 minutos. Os valores estão ordenados e os grupos têm o mesmo tamanho. Um aluno conclui que os centros não mudam porque ambos possuem o mesmo terceiro elemento. Outra estudante separa a mediana da média e chama atenção para o valor extremo de 90.",
+      "stem": "Qual medida permanece igual nos dois grupos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Mediana de ambos os grupos igual.",
+          "correct": false,
+          "targetsError": "extremo ignorado",
+          "rationale": "O último valor altera a soma e, portanto, a média."
+        },
+        {
+          "id": "B",
+          "content": "Amplitude de ambos os grupos igual.",
+          "correct": false,
+          "targetsError": "máximo ignorado",
+          "rationale": "A amplitude do grupo B é muito maior."
+        },
+        {
+          "id": "C",
+          "content": "Máximo de ambos os grupos igual.",
+          "correct": false,
+          "targetsError": "tamanho por máximo",
+          "rationale": "Os máximos são 18 e 90."
+        },
+        {
+          "id": "D",
+          "content": "Soma de ambos os grupos igual.",
+          "correct": false,
+          "targetsError": "soma invariável",
+          "rationale": "A soma do segundo grupo cresce 72 unidades."
+        },
+        {
+          "id": "E",
+          "content": "Mediana de ambos os grupos igual a 14 minutos.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: A mediana é o terceiro termo: 14 em ambas as listas. A média, a amplitude e a soma aumentam com 90."
+        }
+      ],
+      "explanation": "A mediana é o terceiro termo: 14 em ambas as listas. A média, a amplitude e a soma aumentam com 90."
+    },
+    {
+      "id": "MAT-22-Q07",
+      "difficulty": "ifsc",
+      "conceptIds": [
+        "MAT-22-C03"
+      ],
+      "stimulus": "Em duas turmas, as frequências de notas foram analisadas. Turma A: 6, 6, 7, 8 e 9. Turma B: 6, 7, 7, 8 e 9. A coordenação quer comparar o resultado mais frequente, sem sugerir que essa medida resuma a qualidade total do ensino. Nos dois casos, há cinco observações e pequenas diferenças, mas a distribuição de repetições não é idêntica. A apresentação deve identificar corretamente a moda em cada turma.",
+      "stem": "Quais são as modas de A e B, respectivamente?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Modas A/B: 7 e 6.",
+          "correct": false,
+          "targetsError": "grupos trocados",
+          "rationale": "Em A repete 6; em B repete 7."
+        },
+        {
+          "id": "B",
+          "content": "Modas de A e B: 6 e 7.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: A tem dois registros de 6; B, dois de 7. Os demais aparecem uma vez. Mediana não decide moda."
+        },
+        {
+          "id": "C",
+          "content": "Modas de A e B: 7 e 7.",
+          "correct": false,
+          "targetsError": "mediana por moda",
+          "rationale": "A moda de A é 6, seu valor repetido."
+        },
+        {
+          "id": "D",
+          "content": "Modas de A e B: 8 e 8.",
+          "correct": false,
+          "targetsError": "posição por moda",
+          "rationale": "O número 8 aparece uma única vez em cada turma."
+        },
+        {
+          "id": "E",
+          "content": "Modas de A e B: 9 e 9.",
+          "correct": false,
+          "targetsError": "máximo por moda",
+          "rationale": "O maior valor não é o mais frequente."
+        }
+      ],
+      "explanation": "A tem dois registros de 6; B, dois de 7. Os demais aparecem uma vez. Mediana não decide moda."
+    },
+    {
+      "id": "MAT-22-Q08",
+      "difficulty": "ifsc",
+      "conceptIds": [
+        "MAT-22-C04"
+      ],
+      "stimulus": "Uma pesquisa comunitária em Florianópolis levantou rendas mensais fictícias, em reais: 1800, 2000, 2100, 2200 e 14900. A equipe quer descrever a renda central mais representativa da maioria, sem esconder a existência do valor elevado. Um participante calculou a média e anunciou que cada pessoa ganhava aproximadamente aquele valor. Outra pessoa propôs apresentar a mediana e a amplitude juntamente com a média para deixar claro o efeito da assimetria.",
+      "stem": "Qual interpretação é mais responsável para representar a renda típica?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Média de R$ 4.600 como renda de cada entrevistado.",
+          "correct": false,
+          "targetsError": "média como indivíduo",
+          "rationale": "A média não precisa coincidir com a renda de ninguém."
+        },
+        {
+          "id": "B",
+          "content": "Máximo de R$ 14.900 como renda mais representativa.",
+          "correct": false,
+          "targetsError": "máximo por típico",
+          "rationale": "Quatro rendas são próximas de R$ 2.000."
+        },
+        {
+          "id": "C",
+          "content": "Mínimo de R$ 1.800 como renda típica do grupo.",
+          "correct": false,
+          "targetsError": "mínimo por típico",
+          "rationale": "O menor valor não representa a posição central."
+        },
+        {
+          "id": "D",
+          "content": "Mediana de R$ 2.100 e registro do valor extremo.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: A mediana é o terceiro valor, R$ 2.100. Soma = 23.000 e média = 4.600; o último valor eleva a média. O erro tentador é apresentar média como renda de cada pessoa."
+        },
+        {
+          "id": "E",
+          "content": "Moda de R$ 2.200 como renda mais frequente.",
+          "correct": false,
+          "targetsError": "moda inventada",
+          "rationale": "Cada valor ocorre uma vez, sem moda única."
+        }
+      ],
+      "explanation": "A mediana é o terceiro valor, R$ 2.100. Soma = 23.000 e média = 4.600; o último valor eleva a média. O erro tentador é apresentar média como renda de cada pessoa."
+    }
+  ],
+  "exitTicketQuestionIds": [
+    "MAT-22-Q05",
+    "MAT-22-Q07"
+  ],
+  "sources": [
+    {
+      "title": "Base Nacional Comum Curricular",
+      "author": "Ministério da Educação",
+      "url": "https://basenacionalcomum.mec.gov.br/",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    },
+    {
+      "title": "Trocar celular? Trabalhando com frequência, moda, mediana",
+      "author": "IBGE Educa",
+      "url": "https://educa.ibge.gov.br/professores/educa-atividades/20649-trocar-celular-trabalhando-com-frequencia-moda-mediana.html",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    },
+    {
+      "title": "Medidas de tendência central e gráficos de linhas — 9º ano",
+      "author": "Nova Escola",
+      "url": "https://novaescola.org.br/planos-de-aula/fundamental/9ano/matematica/medidas-de-tendencia-central-moda-mediana-e-media-aritmetica-e-graficos-de-linhas/1555",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    },
+    {
+      "title": "Manual do Professor, Matemática 9º ano, PNLD 2024",
+      "author": "Editora Saraiva / PNLD",
+      "url": "https://storage.googleapis.com/edocente-content-production/PNLD/PNLD_2024_OBJETO_1/Saraiva/Matematica/index_matematica_9ano_MP.pdf",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    }
+  ]
+}

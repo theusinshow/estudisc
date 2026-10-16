@@ -1,0 +1,531 @@
+{
+  "lessonId": "GH-51",
+  "title": "Fusos horários e coordenadas geográficas",
+  "subject": "GH",
+  "estimatedMinutes": 40,
+  "editalItem": "GEOGRAFIA E HISTÓRIA — item 1: “Conceitos gerais da Geografia e da História: Espaço geográfico e demais conceitos básicos. Formas de representação e linguagem cartográfica. Linguagem gráfica e iconográfica.” Coordenadas e fusos são desdobramentos cartográficos; fusos não são nomeados expressamente.",
+  "objectives": [
+    "Localizar pontos por latitude e longitude.",
+    "Resolver diferenças de horário teóricas com 15° por hora.",
+    "Converter horários entre fusos legais brasileiros.",
+    "Identificar mudança de data e Linha Internacional da Data."
+  ],
+  "concepts": [
+    {
+      "id": "GH-51-C01",
+      "title": "Latitude, longitude e hemisférios",
+      "summary": "Coordenadas geográficas localizam pontos sobre a Terra por dois ângulos."
+    },
+    {
+      "id": "GH-51-C02",
+      "title": "Movimento da Terra e cálculo teórico de fusos",
+      "summary": "A Terra gira aproximadamente 360° em 24 horas, o que corresponde a 15° de longitude por hora."
+    },
+    {
+      "id": "GH-51-C03",
+      "title": "Quatro fusos oficiais brasileiros",
+      "summary": "O Brasil utiliza quatro referências horárias oficiais em relação ao Tempo Universal Coordenado (UTC): UTC−2 em ilhas oceânicas como Fernando de Noronha; UTC−3 em Santa Catarina, Distrito Federal e grande parte dos estados; UTC−4 em estados como Mato Grosso e Rondônia e na maior parte do Amazonas; UTC−5 no Acre e em parte ocidental do Amazonas."
+    },
+    {
+      "id": "GH-51-C04",
+      "title": "Linha Internacional da Data e virada do calendário",
+      "summary": "A Linha Internacional da Data é uma convenção próxima, em grande parte, ao meridiano de 180°, com desvios para acomodar países e arquipélagos."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "GH-51-B01",
+      "type": "note",
+      "title": "Por que isso importa?",
+      "content": "Uma equipe escolar de Chapecó planeja uma chamada de vídeo com estudantes de Rio Branco, no Acre, e uma transmissão educativa a partir de Fernando de Noronha. Quando o relógio marca 14h em Santa Catarina, os três lugares não mostram a mesma hora. Um aluno calcula as diferenças pela distância em quilômetros; outro usa as referências UTC. Ao marcar as escolas em um globo, surge uma segunda dúvida: latitude é medida na direção norte-sul, mas as linhas de latitude são paralelas ao Equador. Como localizar um ponto e calcular horários sem misturar coordenada angular, deslocamento e hora oficial?",
+      "conceptIds": [
+        "GH-51-C01"
+      ]
+    },
+    {
+      "id": "GH-51-B02",
+      "type": "concept",
+      "title": "Latitude, longitude e hemisférios",
+      "content": "Coordenadas geográficas localizam pontos sobre a Terra por dois ângulos. Latitude mede o afastamento angular em relação ao Equador, de 0° a 90° para norte (N) ou sul (S); sua referência são paralelos, círculos paralelos ao Equador. Longitude mede o afastamento angular em relação ao meridiano de Greenwich, de 0° a 180° para leste (E) ou oeste (O); os meridianos convergem nos polos. Embora os paralelos corram no sentido leste-oeste, eles indicam latitude norte-sul; e meridianos orientados norte-sul indicam longitude leste-oeste. A ordem da coordenada deve ser declarada claramente, por exemplo 27° S, 48° O.\n\nExemplo: Florianópolis fica aproximadamente a 27° S e 48° O; isso a coloca no hemisfério sul e a oeste de Greenwich.\n\nContraexemplo: A marca 48° O não indica altitude nem 48 horas de diferença do horário universal; longitude é ângulo.\n\nErro a evitar: Não confunda direção da linha do mapa com o tipo de afastamento angular que ela mede.",
+      "conceptIds": [
+        "GH-51-C01"
+      ]
+    },
+    {
+      "id": "GH-51-B03",
+      "type": "concept",
+      "title": "Movimento da Terra e cálculo teórico de fusos",
+      "content": "A Terra gira aproximadamente 360° em 24 horas, o que corresponde a 15° de longitude por hora. Em modelos escolares simplificados, deslocar-se 15° para leste equivale a adiantar uma hora; para oeste, atrasar uma hora. Esse cálculo é teórico: países e regiões adotam fusos oficiais por critérios legais e práticos, não somente pelo meridiano exato que passa na cidade. Para exercícios com longitude, determine a diferença angular, divida por 15 e aplique o sentido correto. Horários devem ser associados à data quando o cálculo atravessa meia-noite.\n\nExemplo: Se uma cidade fictícia está a 30° O e outra a 60° O, a primeira está 30° mais a leste. Diferença teórica = 30 ÷ 15 = 2 horas; a primeira está duas horas adiantada.\n\nContraexemplo: Duas cidades em longitudes ligeiramente diferentes podem ter a mesma hora oficial devido à delimitação administrativa do fuso.\n\nErro a evitar: Não equipare longitude real à hora civil oficial sem verificar o fuso adotado.",
+      "conceptIds": [
+        "GH-51-C02"
+      ]
+    },
+    {
+      "id": "GH-51-B04",
+      "type": "concept",
+      "title": "Quatro fusos oficiais brasileiros",
+      "content": "O Brasil utiliza quatro referências horárias oficiais em relação ao Tempo Universal Coordenado (UTC): UTC−2 em ilhas oceânicas como Fernando de Noronha; UTC−3 em Santa Catarina, Distrito Federal e grande parte dos estados; UTC−4 em estados como Mato Grosso e Rondônia e na maior parte do Amazonas; UTC−5 no Acre e em parte ocidental do Amazonas. A divisão foi restabelecida pela Lei nº 12.876/2013, e a distribuição regional precisa ser conferida em referência oficial atual. Uma forma segura de comparar locais é converter primeiro cada hora ao UTC, somando o valor absoluto do deslocamento negativo, e depois subtrair o deslocamento do destino.\n\nExemplo: Às 14h em Florianópolis (UTC−3), são 12h no Acre (UTC−5) e 15h em Fernando de Noronha (UTC−2), no mesmo dia.\n\nContraexemplo: Não afirme que todo o Amazonas está em UTC−4: há uma parte ocidental em UTC−5.\n\nErro a evitar: Não conte diferença de horário por distância percorrida; use os UTC oficiais informados.",
+      "conceptIds": [
+        "GH-51-C03"
+      ]
+    },
+    {
+      "id": "GH-51-B05",
+      "type": "concept",
+      "title": "Linha Internacional da Data e virada do calendário",
+      "content": "A Linha Internacional da Data é uma convenção próxima, em grande parte, ao meridiano de 180°, com desvios para acomodar países e arquipélagos. Ela ajuda a manter consistência do calendário quando se percorrem longitudes. Em regra didática, cruzar a linha para oeste avança uma data; cruzar para leste recua uma data, considerando o sentido de viagem e as zonas vizinhas. Isso não deve ser confundido com a simples soma de horas entre UTCs: datas também podem mudar em qualquer cálculo que atravesse 00h, mesmo sem tocar a linha. Em problemas, acompanhe dia da semana, data e horário, e diferencie fuso legal da hora solar.\n\nExemplo: Se uma transmissão começa segunda às 23h num local e o destino está três horas adiantado, lá já será terça às 02h.\n\nContraexemplo: Uma viagem aérea pode cruzar a Linha Internacional da Data sem que o tempo físico volte; é o calendário local que muda.\n\nErro a evitar: Não ajuste somente as horas e esqueça a data quando ultrapassar meia-noite.",
+      "conceptIds": [
+        "GH-51-C04"
+      ]
+    },
+    {
+      "id": "GH-51-B06",
+      "type": "worked-example",
+      "title": "Reunião interestadual",
+      "content": "O encontro começa às 16h em Florianópolis (UTC−3). Que horas são em Rio Branco (UTC−5) e Fernando de Noronha (UTC−2)?\n\n1. Florianópolis está duas horas à frente do Acre: 16 − 2 = 14h.\n2. Fernando de Noronha está uma hora à frente de SC: 16 + 1 = 17h.\n3. As três referências são UTC−3, UTC−5 e UTC−2.\n4. Como não houve cruzamento de meia-noite, a data permanece a mesma.\n\nConferência: Converta 16h de SC para UTC: 19h. No Acre, 19 − 5 = 14h; em Noronha, 19 − 2 = 17h.",
+      "conceptIds": [
+        "GH-51-C01",
+        "GH-51-C04"
+      ]
+    },
+    {
+      "id": "GH-51-B07",
+      "type": "worked-example",
+      "title": "Meridianos e mudança de dia",
+      "content": "Um exercício fictício dá uma cidade A no UTC−3 e uma B no UTC+2. Em A são 22h de sexta. Determine o horário e o dia em B.\n\n1. Diferença entre +2 e −3 é 5 horas.\n2. Como B está adiantada, some 5h a 22h: 27h.\n3. Subtraia 24h: 03h do dia seguinte.\n4. Resultado: 03h de sábado em B.\n\nConferência: Converta: 22h de sexta em UTC−3 corresponde a 01h de sábado no UTC; somar +2 produz 03h de sábado.",
+      "conceptIds": [
+        "GH-51-C02",
+        "GH-51-C04"
+      ]
+    },
+    {
+      "id": "GH-51-B08",
+      "type": "warning",
+      "title": "Como cai no IFSC",
+      "content": "1. Trocar latitude e longitude porque os paralelos se estendem de leste a oeste.\n\n2. Aplicar a regra 15° = 1 h à hora legal sem verificar fronteiras de fusos.\n\n3. Dizer que todo o Amazonas tem a mesma referência UTC.\n\n4. Esquecer de avançar ou recuar a data ao cruzar 00h.\n\n5. Confundir Linha Internacional da Data com o meridiano de Greenwich.",
+      "conceptIds": [
+        "GH-51-C01",
+        "GH-51-C02",
+        "GH-51-C03",
+        "GH-51-C04"
+      ]
+    },
+    {
+      "id": "GH-51-B09",
+      "type": "summary",
+      "title": "Ideias essenciais",
+      "content": "Latitude é afastamento angular do Equador. Longitude é afastamento angular de Greenwich. A rotação terrestre aproxima 15° por hora para horário solar teórico. Fusos oficiais são convenções administrativas. Santa Catarina adota UTC−3; Acre, UTC−5. Fernando de Noronha adota UTC−2. A Linha Internacional da Data organiza a mudança do calendário entre zonas. Conferir a data é parte obrigatória de qualquer conversão perto da meia-noite.",
+      "conceptIds": [
+        "GH-51-C01",
+        "GH-51-C02",
+        "GH-51-C03",
+        "GH-51-C04"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "GH-51-Q01",
+      "difficulty": "foundation",
+      "conceptIds": [
+        "GH-51-C01"
+      ],
+      "stimulus": "Um mapa escolar apresenta o ponto P em 27° S, 48° O. Uma turma de Palhoça precisa identificar o hemisfério de cada coordenada e explicar por que os dois números não são distâncias em quilômetros. A legenda usa o Equador como referência para a primeira medida e Greenwich como referência para a segunda. O ponto foi colocado no hemisfério sul e na metade ocidental do globo, sem solicitar a localização exata de uma escola.",
+      "stem": "Como interpretar corretamente as coordenadas de P?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Latitude 48° O; longitude 27° S.",
+          "correct": false,
+          "targetsError": "coordenadas invertidas",
+          "rationale": "Latitude usa N/S; longitude, E/O."
+        },
+        {
+          "id": "B",
+          "content": "Latitude 27° sul e longitude 48° oeste.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: 27° S é latitude ao sul do Equador; 48° O é longitude a oeste de Greenwich. As direções das linhas cartográficas não trocam os significados."
+        },
+        {
+          "id": "C",
+          "content": "Latitude 27° oeste e longitude 48° sul.",
+          "correct": false,
+          "targetsError": "direções trocadas",
+          "rationale": "As referências angulares já vêm indicadas."
+        },
+        {
+          "id": "D",
+          "content": "Longitude 27° norte e latitude 48° leste.",
+          "correct": false,
+          "targetsError": "hemisférios invertidos",
+          "rationale": "S e O indicam sul e oeste."
+        },
+        {
+          "id": "E",
+          "content": "Altitude de 27 m e distância de 48 km de Greenwich.",
+          "correct": false,
+          "targetsError": "ângulo por distância",
+          "rationale": "As medidas são graus angulares, não metros."
+        }
+      ],
+      "explanation": "27° S é latitude ao sul do Equador; 48° O é longitude a oeste de Greenwich. As direções das linhas cartográficas não trocam os significados."
+    },
+    {
+      "id": "GH-51-Q02",
+      "difficulty": "foundation",
+      "conceptIds": [
+        "GH-51-C02"
+      ],
+      "stimulus": "Para um exercício teórico, duas cidades fictícias encontram-se exatamente nos meridianos 45° O e 75° O. A escola desconsidera fusos legais e horário de verão, trabalhando só com a rotação da Terra a 15° por hora. Os alunos recebem a informação de que na cidade de 75° O são 09h de uma terça-feira. Eles devem descobrir o horário solar teórico no ponto 45° O, localizado mais a leste. A diferença angular é de 30°.",
+      "stem": "Que horário corresponde ao meridiano 45° O nessa situação?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "07h, terça-feira.",
+          "correct": false,
+          "targetsError": "sentido invertido",
+          "rationale": "Leste fica adiantado em relação a oeste."
+        },
+        {
+          "id": "B",
+          "content": "10h de terça-feira.",
+          "correct": false,
+          "targetsError": "divisão angular",
+          "rationale": "30 ÷ 15 = 2 horas."
+        },
+        {
+          "id": "C",
+          "content": "12h de terça-feira.",
+          "correct": false,
+          "targetsError": "fator incorreto",
+          "rationale": "A diferença é 30°, correspondente a duas horas."
+        },
+        {
+          "id": "D",
+          "content": "09h de quarta-feira.",
+          "correct": false,
+          "targetsError": "data deslocada",
+          "rationale": "A diferença não alcança meia-noite."
+        },
+        {
+          "id": "E",
+          "content": "11h de terça-feira.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: 30° ÷ 15°/h = 2 h. O ponto 45° O fica a leste de 75° O, logo adiantado: 11h da mesma terça."
+        }
+      ],
+      "explanation": "30° ÷ 15°/h = 2 h. O ponto 45° O fica a leste de 75° O, logo adiantado: 11h da mesma terça."
+    },
+    {
+      "id": "GH-51-Q03",
+      "difficulty": "direct",
+      "conceptIds": [
+        "GH-51-C03"
+      ],
+      "stimulus": "Uma sala virtual reúne estudantes de Florianópolis, no fuso UTC−3, e de Rio Branco, no Acre, UTC−5. A reunião está agendada para começar às 16h no relógio da escola catarinense, sem horário de verão. Os organizadores querem escrever o horário correspondente no convite de Rio Branco. A turma foi avisada de que, embora ambas as cidades estejam no Brasil, a hora legal não é necessariamente a mesma. A diferença oficial entre os offsets apresentados é de duas horas.",
+      "stem": "Que horário deve constar no convite para Rio Branco?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "18h, nesse dia.",
+          "correct": false,
+          "targetsError": "sentido do fuso",
+          "rationale": "UTC−5 está duas horas atrás de UTC−3."
+        },
+        {
+          "id": "B",
+          "content": "15h do mesmo dia.",
+          "correct": false,
+          "targetsError": "diferença subestimada",
+          "rationale": "A diferença de offsets é dois."
+        },
+        {
+          "id": "C",
+          "content": "14h do mesmo dia.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Florianópolis UTC−3 está duas horas à frente do Acre UTC−5; 16 − 2 = 14h. A data não muda."
+        },
+        {
+          "id": "D",
+          "content": "16h do mesmo dia.",
+          "correct": false,
+          "targetsError": "fuso único",
+          "rationale": "O Brasil possui quatro referências oficiais."
+        },
+        {
+          "id": "E",
+          "content": "13h do dia anterior.",
+          "correct": false,
+          "targetsError": "data desnecessária",
+          "rationale": "A subtração de duas horas não atravessa meia-noite."
+        }
+      ],
+      "explanation": "Florianópolis UTC−3 está duas horas à frente do Acre UTC−5; 16 − 2 = 14h. A data não muda."
+    },
+    {
+      "id": "GH-51-Q04",
+      "difficulty": "direct",
+      "conceptIds": [
+        "GH-51-C04"
+      ],
+      "stimulus": "Um museu científico catarinense fará transmissão simultânea de Florianópolis (UTC−3) e de Fernando de Noronha (UTC−2). A programação local de Florianópolis informa início às 18h. A produção precisa sincronizar as chamadas sem trocar os horários das duas regiões. O Observatório Nacional registra que as ilhas oceânicas citadas adotam uma hora adiantada em relação à hora de Brasília. A questão não envolve deslocamento de estudantes, mas a comparação de dois relógios num mesmo instante.",
+      "stem": "Em Fernando de Noronha, a transmissão começará às quantas horas?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "17h local em Noronha.",
+          "correct": false,
+          "targetsError": "sentido invertido",
+          "rationale": "UTC−2 fica à frente de UTC−3."
+        },
+        {
+          "id": "B",
+          "content": "18h em Fernando de Noronha.",
+          "correct": false,
+          "targetsError": "fuso ignorado",
+          "rationale": "O offset das ilhas é UTC−2."
+        },
+        {
+          "id": "C",
+          "content": "20h em Fernando de Noronha.",
+          "correct": false,
+          "targetsError": "diferença duplicada",
+          "rationale": "Os offsets diferem por uma hora."
+        },
+        {
+          "id": "D",
+          "content": "19h em Fernando de Noronha.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: 18h em UTC−3 são 21h UTC; em UTC−2 são 19h. Somar duas horas diretamente à hora de SC é usar o offset errado."
+        },
+        {
+          "id": "E",
+          "content": "16h em Fernando de Noronha.",
+          "correct": false,
+          "targetsError": "offset por diferença",
+          "rationale": "−2 é a referência ao UTC, não ao horário de SC."
+        }
+      ],
+      "explanation": "18h em UTC−3 são 21h UTC; em UTC−2 são 19h. Somar duas horas diretamente à hora de SC é usar o offset errado."
+    },
+    {
+      "id": "GH-51-Q05",
+      "difficulty": "applied",
+      "conceptIds": [
+        "GH-51-C01"
+      ],
+      "stimulus": "Em um roteiro fictício de intercâmbio, a cidade A usa UTC−3 e a cidade B usa UTC+2. Um grupo recebe a informação de que em A são 22h de sexta-feira e precisa organizar uma ligação para o mesmo instante em B. A professora insiste em registrar a data porque a diferença pode atravessar a meia-noite. Uma calculadora de fuso mostra diferenças em horas, mas os estudantes devem interpretar se é madrugada do mesmo dia ou do seguinte.",
+      "stem": "Qual data e horário correspondem à cidade B?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "03h de sábado.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: B está 5 horas adiantada: 22h + 5 = 27h = 03h do sábado. O erro de 03h de sexta esquece a virada."
+        },
+        {
+          "id": "B",
+          "content": "03h de sexta-feira.",
+          "correct": false,
+          "targetsError": "data ignorada",
+          "rationale": "22 + 5 ultrapassa 24h."
+        },
+        {
+          "id": "C",
+          "content": "17h de sexta-feira.",
+          "correct": false,
+          "targetsError": "sentido invertido",
+          "rationale": "UTC+2 está à frente de UTC−3."
+        },
+        {
+          "id": "D",
+          "content": "01h de sábado.",
+          "correct": false,
+          "targetsError": "offset isolado",
+          "rationale": "A diferença é +2 − (−3) = 5h."
+        },
+        {
+          "id": "E",
+          "content": "05h de sábado.",
+          "correct": false,
+          "targetsError": "sinal somado",
+          "rationale": "Os offsets têm diferença de cinco horas."
+        }
+      ],
+      "explanation": "B está 5 horas adiantada: 22h + 5 = 27h = 03h do sábado. O erro de 03h de sexta esquece a virada."
+    },
+    {
+      "id": "GH-51-Q06",
+      "difficulty": "applied",
+      "conceptIds": [
+        "GH-51-C02"
+      ],
+      "stimulus": "Em um mapa-múndi didático, um navio cruza a Linha Internacional da Data no oceano Pacífico em sentido oeste. O professor explica que a linha se aproxima do meridiano de 180° mas apresenta desvios para acomodar ilhas e países. A embarcação mantém seu deslocamento físico normal; o exercício discute o calendário local a registrar no diário de bordo ao atravessar a convenção. A turma compara esse marco com Greenwich, usado como referência da longitude zero.",
+      "stem": "Que ajuste de calendário corresponde ao cruzamento para oeste, na regra didática?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Recuar uma data ao cruzar para oeste.",
+          "correct": false,
+          "targetsError": "sentido invertido",
+          "rationale": "Para oeste avança-se um dia na convenção."
+        },
+        {
+          "id": "B",
+          "content": "Manter a data ao chegar a Greenwich.",
+          "correct": false,
+          "targetsError": "linha confundida",
+          "rationale": "A Linha da Data fica próxima de 180°, não de 0°."
+        },
+        {
+          "id": "C",
+          "content": "Avançar uma hora ao cruzar para oeste.",
+          "correct": false,
+          "targetsError": "hora por data",
+          "rationale": "Trata-se de ajuste de data, não de 1h."
+        },
+        {
+          "id": "D",
+          "content": "Recuar uma semana durante a travessia do Pacífico.",
+          "correct": false,
+          "targetsError": "escala absurda",
+          "rationale": "O ajuste é de um dia, não de uma semana."
+        },
+        {
+          "id": "E",
+          "content": "Avançar uma data ao cruzar para oeste.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Na convenção didática, cruzar a Linha Internacional da Data para oeste avança um dia. O tempo físico da viagem não sofre salto."
+        }
+      ],
+      "explanation": "Na convenção didática, cruzar a Linha Internacional da Data para oeste avança um dia. O tempo físico da viagem não sofre salto."
+    },
+    {
+      "id": "GH-51-Q07",
+      "difficulty": "ifsc",
+      "conceptIds": [
+        "GH-51-C03"
+      ],
+      "stimulus": "Um mapa simplificado do Brasil inclui: Santa Catarina UTC−3, Mato Grosso UTC−4, Acre UTC−5 e Fernando de Noronha UTC−2. O professor pede que os estudantes evitem responder usando quilômetros entre estados. Uma turma marca 12h em Florianópolis e precisa ordenar os relógios das demais localidades. O quadro foi construído a partir das referências oficiais, e não requer saber a longitude exata de cada município.",
+      "stem": "Qual sequência dá corretamente as horas no mesmo instante?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "MT 13h, Acre 14h e Noronha 11h.",
+          "correct": false,
+          "targetsError": "fusos invertidos",
+          "rationale": "Offsets mais negativos ficam atrás em relação a SC."
+        },
+        {
+          "id": "B",
+          "content": "MT 11h, Acre 10h e Noronha 13h.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Se em UTC−3 são 12h, UTC é 15h. MT = 11h, Acre = 10h, Noronha = 13h. A conta usa offsets legais."
+        },
+        {
+          "id": "C",
+          "content": "MT 12h, Acre 11h e Noronha 14h.",
+          "correct": false,
+          "targetsError": "offset trocado",
+          "rationale": "MT está em UTC−4 no exercício."
+        },
+        {
+          "id": "D",
+          "content": "MT 10h, Acre 09h e Noronha 13h.",
+          "correct": false,
+          "targetsError": "diferenças infladas",
+          "rationale": "MT difere uma hora de SC e Acre duas."
+        },
+        {
+          "id": "E",
+          "content": "MT 11h, Acre 11h e Noronha 12h.",
+          "correct": false,
+          "targetsError": "fusos fundidos",
+          "rationale": "Acre e Noronha diferem de SC em direções opostas."
+        }
+      ],
+      "explanation": "Se em UTC−3 são 12h, UTC é 15h. MT = 11h, Acre = 10h, Noronha = 13h. A conta usa offsets legais."
+    },
+    {
+      "id": "GH-51-Q08",
+      "difficulty": "ifsc",
+      "conceptIds": [
+        "GH-51-C04"
+      ],
+      "stimulus": "Uma empresa em Chapecó quer marcar conversa com um fornecedor fictício em longitude 60° L. A atividade escolar fornece primeiro um cálculo de hora solar teórica: Chapecó é aproximada por 60° O, e o fornecedor por 60° L. Porém também avisa que os países podem adotar horários legais que não coincidem com esse cálculo. O grupo deve apresentar a diferença angular teórica e registrar a limitação do modelo, sem inventar qual fuso administrativo usa o fornecedor.",
+      "stem": "Qual conclusão respeita o modelo solicitado?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Diferença oficial de 8 horas em qualquer local.",
+          "correct": false,
+          "targetsError": "modelo por lei",
+          "rationale": "A hora legal pode divergir da longitude teórica."
+        },
+        {
+          "id": "B",
+          "content": "Diferença teórica de 4 horas entre os meridianos.",
+          "correct": false,
+          "targetsError": "divisor errado",
+          "rationale": "O modelo usa 15° por hora."
+        },
+        {
+          "id": "C",
+          "content": "Diferença de 0 hora entre longitudes de mesmo módulo.",
+          "correct": false,
+          "targetsError": "hemisfério ignorado",
+          "rationale": "Um está a oeste e outro a leste: separação de 120°."
+        },
+        {
+          "id": "D",
+          "content": "Diferença teórica de 8 horas, sujeita à hora legal.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Entre 60° O e 60° L há 120°. 120 ÷ 15 = 8 horas solares teóricas; horários oficiais exigem consulta separada."
+        },
+        {
+          "id": "E",
+          "content": "Diferença teórica de 12 horas, incluindo Greenwich.",
+          "correct": false,
+          "targetsError": "meridiano extra",
+          "rationale": "Greenwich é referência, não intervalo a somar."
+        }
+      ],
+      "explanation": "Entre 60° O e 60° L há 120°. 120 ÷ 15 = 8 horas solares teóricas; horários oficiais exigem consulta separada."
+    }
+  ],
+  "exitTicketQuestionIds": [
+    "GH-51-Q05",
+    "GH-51-Q07"
+  ],
+  "sources": [
+    {
+      "title": "Base Nacional Comum Curricular",
+      "author": "Ministério da Educação",
+      "url": "https://basenacionalcomum.mec.gov.br/",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    },
+    {
+      "title": "Brasil — Hora Legal Brasileira",
+      "author": "Observatório Nacional / MCTI",
+      "url": "https://www.gov.br/observatorio/pt-br/assuntos/areas-de-atuacao/tempo-e-frequencia/brasil",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    },
+    {
+      "title": "Lei nº 12.876, de 30 de outubro de 2013",
+      "author": "Presidência da República",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12876.htm",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    }
+  ]
+}

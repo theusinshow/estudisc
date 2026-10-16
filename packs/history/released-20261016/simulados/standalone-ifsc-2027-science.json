@@ -1,0 +1,4965 @@
+{
+  "trackId": "ifsc-2027-science",
+  "questions": [
+    {
+      "id": "SIM-CIE-01-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE.MECH.MOTION",
+      "conceptIds": [
+        "CIE.MECH.MOTION"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em uma atividade de educação física, uma ciclista percorreu um caminho plano em dois trechos consecutivos. O primeiro tinha 1,2 km e foi completado em quatro minutos; em seguida, ela percorreu mais 600 m durante três minutos. Não houve pausa entre os trechos, e os tempos informados incluem todo o movimento. Para comparar trajetos com durações diferentes, a turma decidiu usar a razão entre a distância percorrida e o tempo decorrido.",
+      "stem": "Uma ciclista percorre 1,2 km em 4 minutos e depois 600 m em 3 minutos, sem parar. Qual foi sua velocidade escalar média no trajeto completo?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "4,3 m/s, obtidos pela razão entre percurso e duração totais.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "2,9 m/s, usando 1.200 m ao longo dos sete minutos.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "6,0 m/s, usando 1.800 m durante os quatro minutos iniciais.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "3,3 m/s, calculando a média aritmética das duas distâncias.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "5,0 m/s, mantendo a velocidade registrada no primeiro trecho.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A distância total é 1.800 m e o tempo, 420 s; a razão resulta em aproximadamente 4,29 m/s.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-01-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE.MECH.MOTION",
+      "conceptIds": [
+        "CIE.MECH.MOTION"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Em uma pista circular, marcas no chão ajudam a medir o caminho feito por atletas. Um corredor parte de uma marca, percorre uma volta completa e retorna ao mesmo ponto após 100 segundos. O comprimento da pista é 400 metros. Para descrever o movimento, é importante distinguir a extensão do caminho efetivamente percorrido da variação entre as posições inicial e final, pois essas medidas respondem a perguntas diferentes.",
+      "stem": "Um corredor faz uma volta completa de 400 m em pista circular e termina no ponto de partida após 100 s. O que é correto afirmar?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O deslocamento tem módulo de 400 m ao completar a volta.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A velocidade vetorial média tem módulo de 4 m/s no percurso.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A rapidez média é 4 m/s e o deslocamento resultante é zero.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "A velocidade vetorial média é nula porque o atleta ficou parado.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A distância percorrida é zero por causa do ponto de chegada.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "A distância percorrida é 400 m, enquanto o deslocamento total é nulo; a rapidez média vale 4 m/s.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-02-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-02-CON-01",
+      "conceptIds": [
+        "CIE-02-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em uma oficina escolar, duas equipes precisam elevar caixas idênticas até uma plataforma de mesma altura. Uma equipe usa uma rampa longa e outra escolhe uma rampa curta. As superfícies são lisas e o atrito pode ser desprezado, de modo que a comparação se concentra no trabalho mecânico ideal. A rampa altera a força necessária e o comprimento do percurso, mas a carga termina na mesma posição vertical nas duas situações.",
+      "stem": "Duas equipes erguem a mesma carga até a mesma altura: uma usa uma rampa longa e outra, uma rampa curta. Desprezando atrito, qual afirmação sobre a rampa longa é adequada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A rampa longa aumenta o peso da carga durante a elevação.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A carga ganha menos energia potencial ao alcançar a plataforma.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A elevação ocorre sem transferência de energia para a carga.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A rampa reduz força e distância, diminuindo o trabalho necessário.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A força aplicada pode ser menor ao longo de caminho maior.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A rampa longa permite reduzir a força ao distribuí-la por um caminho maior; no modelo ideal, o trabalho não diminui.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-02-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-02-CON-01",
+      "conceptIds": [
+        "CIE-02-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma tesoura pode ser analisada como um conjunto de alavancas articuladas em um eixo. Ao cortar um material, a mão aplica força nos cabos e a lâmina exerce força sobre o papel. A distância entre o ponto de aplicação da força e o eixo influencia o torque produzido. Para a mesma força da mão, alterar a posição do papel nas lâminas muda a força de corte disponível.",
+      "stem": "Uma tesoura corta papel mais facilmente quando ele fica perto do eixo. Qual princípio ajuda a explicar o efeito?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O braço de resistência muda e altera o torque sobre o papel.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A massa do papel diminui quando ele fica perto do eixo.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "O braço da força aplicada deixa de influenciar o corte.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A distância ao eixo altera a vantagem mecânica da tesoura.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O eixo fornece energia extra conforme a posição do papel.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A proximidade do papel ao eixo reduz o braço de resistência e aumenta a vantagem mecânica para uma dada força aplicada.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-03-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-03-CON-01",
+      "conceptIds": [
+        "CIE-03-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em uma demonstração, a professora coloca água a 20 °C e água a 80 °C em um recipiente isolado. As porções são misturadas sem ferver nem congelar, e a massa de cada uma é conhecida. O recipiente impede trocas relevantes de energia com o ambiente. A turma acompanha a mudança de temperatura até que as leituras deixem de variar, usando o caso para discutir o sentido espontâneo da transferência de energia térmica.",
+      "stem": "Dois copos contêm água a 20 °C e 80 °C. Ao misturá-las em recipiente isolado, sem mudança de fase, qual tendência ocorre?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A transferência continua após as duas porções atingirem equilíbrio térmico.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A temperatura final depende pouco das massas das porções misturadas.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Cada porção mantém sua temperatura inicial durante a mistura.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A energia térmica passa da água quente à fria até o equilíbrio.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "A porção fria fornece energia à quente por ter menor temperatura.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "A energia é transferida da água inicialmente mais quente para a mais fria até o equilíbrio térmico.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-03-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-03-CON-01",
+      "conceptIds": [
+        "CIE-03-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma barra metálica e um bloco de madeira ficaram sobre a mesma mesa por várias horas dentro de uma sala. Um termômetro mostra que ambos estão aproximadamente à temperatura ambiente, embora uma pessoa descreva o metal como mais frio ao tocá-lo. A pele também está mais quente que os objetos. A sensação depende da rapidez com que energia passa entre a mão e cada superfície, não apenas da leitura inicial do termômetro.",
+      "stem": "Uma barra metálica e uma peça de madeira permanecem por horas no mesmo ambiente; o metal parece mais frio ao toque. Qual explicação é mais adequada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O metal conduz calor da mão mais rapidamente que a madeira.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A madeira gera energia interna até superar a temperatura ambiente.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "O metal permanece fora do equilíbrio térmico com o ar.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A sensação indica diretamente o calor total guardado no objeto.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O metal tende a parecer mais frio por conduzir calor melhor.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A maior condutividade do metal acelera a transferência de energia da mão, produzindo sensação mais fria apesar da temperatura semelhante.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-04-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-04-CON-01",
+      "conceptIds": [
+        "CIE-04-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Durante o preparo de uma sopa, a chama aquece a panela metálica e a água em seu interior. A parte da água próxima ao fundo se aquece, torna-se menos densa e sobe, enquanto porções mais frias descem. Ao mesmo tempo, a energia se propaga pelo metal e a superfície externa emite energia que pode ser percebida à distância. O exemplo permite distinguir mecanismos de transferência que podem ocorrer no mesmo sistema.",
+      "stem": "Uma panela metálica aquece água; correntes no líquido redistribuem calor e a superfície emite radiação. Qual associação está correta?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Convecção no metal, condução pelo ar e radiação ausente.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Convecção no líquido, condução no metal e radiação da superfície.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Radiação apenas na água, acompanhada de condução sem contato.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Condução na água causada pelo movimento de porções do líquido.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Convecção no metal sólido e radiação restrita ao interior da panela.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "A condução ocorre pelo metal, a convecção movimenta o líquido e a superfície também emite radiação.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-04-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-04-CON-01",
+      "conceptIds": [
+        "CIE-04-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma máquina térmica recebe 800 joules de energia por ciclo na forma de calor. Em cada ciclo completo, parte dessa energia é convertida em trabalho útil, medido em 200 joules. Ao final do ciclo, a máquina retorna ao estado inicial, sem acumular energia internamente de um ciclo para outro. A equipe quer calcular a fração aproveitada e identificar o destino da energia que não virou trabalho.",
+      "stem": "Uma máquina térmica recebe 800 J de energia na forma de calor e realiza 200 J de trabalho por ciclo. Supondo ciclo completo, qual consequência energética é necessária?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A máquina converte 800 J em trabalho e rejeita mais 600 J.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O rendimento é 75%, pois 600 J deixam o sistema.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A máquina acumula 800 J no interior a cada ciclo completo.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "O trabalho produzido soma 1.000 J ao calor que entrou.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Ela rejeita 600 J como calor e apresenta rendimento de 25%.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Em um ciclo, 800 J = 200 J de trabalho + 600 J rejeitados; o rendimento é 200/800 = 25%.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-05-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-05-CON-01",
+      "conceptIds": [
+        "CIE-05-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma placa fotovoltaica recebe luz do Sol e fornece eletricidade a um pequeno ventilador. Durante o funcionamento, as pás giram, o motor aquece um pouco e há ruído no ambiente. A placa e o motor não criam energia: eles transferem e transformam energia entre formas diferentes. A turma quer descrever as principais transformações observáveis e reconhecer que parte da energia também pode se dispersar para o entorno.",
+      "stem": "Uma placa solar fornece energia elétrica para acionar um ventilador. Que sequência descreve transformações relevantes?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O sistema converte som ambiente diretamente em eletricidade útil.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A luz solar origina eletricidade, movimento das pás e calor.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "A eletricidade surge sem fonte e termina integralmente em luz.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "O aquecimento do motor desaparece quando a rotação estabiliza.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O movimento das pás é criado sem transformação energética.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A energia luminosa é convertida em elétrica e, no ventilador, em movimento e também em energia térmica e sonora.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-05-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-05-CON-01",
+      "conceptIds": [
+        "CIE-05-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Um carrinho parte do alto de uma pista e desce até o ponto mais baixo. Em uma previsão simplificada sem forças dissipativas, a energia potencial gravitacional se converteria em energia cinética. Na experiência, porém, o carrinho chega com velocidade menor que a prevista. A pista apresenta atrito e as rodas emitem som; o sistema completo inclui também o carrinho, a pista e o ambiente ao redor.",
+      "stem": "Um carrinho desce uma pista e chega a ponto mais baixo com velocidade menor que a prevista sem atrito. Qual explicação preserva a conservação de energia?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A gravidade deixa de atuar quando a pista muda de inclinação.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A massa do carrinho diminui para conservar a energia total.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A energia mecânica desaparece sem transferência para o ambiente.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Atrito transfere parte da energia mecânica para calor e som.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "A energia potencial permanece igual no ponto mais baixo.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "O atrito transforma parte da energia mecânica em energia térmica e sonora; a energia total do sistema ampliado se conserva.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-06-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-06-CON-01",
+      "conceptIds": [
+        "CIE-06-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em uma montagem de laboratório, duas lâmpadas idênticas são ligadas uma após a outra a uma pilha ideal. Os fios formam um único caminho fechado para a corrente. Durante o teste, o filamento de uma lâmpada se rompe e deixa o circuito aberto. A turma observa a segunda lâmpada e compara o resultado com o que ocorreria se cada componente tivesse seu próprio ramo ligado à fonte.",
+      "stem": "Duas lâmpadas idênticas são conectadas em série a uma pilha ideal. Uma delas queima abrindo o circuito. O que ocorre com a outra?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A outra apaga quando o caminho comum fica interrompido.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A tensão na outra cresce sem limite após a ruptura.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A outra mantém o brilho porque a pilha segue carregada.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A outra conserva um caminho independente até a fonte.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A corrente se divide entre a lâmpada e a pilha.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Em série há um caminho único; a ruptura abre o circuito e interrompe a corrente nas duas lâmpadas.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-06-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-06-CON-01",
+      "conceptIds": [
+        "CIE-06-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Em uma instalação didática, duas lâmpadas são conectadas em ramos paralelos a uma fonte de tensão. Cada ramo possui seu próprio interruptor. Ao abrir um deles, a ligação do segundo ramo continua completa entre os terminais da fonte. A atividade compara essa configuração com uma ligação em série e pede que se considere uma fonte funcionando normalmente e fios em boas condições.",
+      "stem": "Em uma casa, duas lâmpadas estão em paralelo e uma é desligada pelo próprio interruptor. Qual situação é esperada num circuito corretamente ligado?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A tensão da fonte cai a zero ao abrir um dos ramos.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A corrente no ramo aberto permanece igual à corrente anterior.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A lâmpada do outro ramo pode continuar recebendo tensão da fonte.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "O consumo de energia da outra lâmpada dobra automaticamente.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A outra lâmpada apaga porque os ramos compartilham a fonte.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "Abrir um ramo interrompe sua corrente; o outro permanece ligado à fonte e pode continuar aceso.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-07-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-07-CON-01",
+      "conceptIds": [
+        "CIE-07-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma família usa diariamente um aquecedor elétrico cuja potência nominal é 1.500 watts. O aparelho permanece ligado durante 40 minutos em cada dia de uso e esse padrão se repete por 30 dias. A conta de energia registra consumo em quilowatt-hora, que combina potência e duração. Para estimar o gasto, é preciso converter watts em quilowatts e minutos em horas antes de multiplicar.",
+      "stem": "Um aquecedor de 1.500 W é usado por 40 minutos por dia durante 30 dias. Qual consumo mensal aproximado?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "1.500 kWh, pois watts informam o consumo do mês.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "60 kWh, tratando cada minuto de uso como uma hora.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "0,75 kWh, dividindo a potência pelos dias do período.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "45 kWh, multiplicando 1,5 kW pelos minutos de cada dia.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "30 kWh, pois 1,5 kW atuam durante 20 horas.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "O tempo total é 40 min × 30 = 20 h; 1,5 kW × 20 h = 30 kWh.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-07-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-07-CON-01",
+      "conceptIds": [
+        "CIE-07-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Em uma sala de estudos, uma lâmpada de 60 watts é substituída por um modelo de 10 watts. Cada uma iluminaria o espaço por cinco horas ao dia, durante trinta dias. A comparação considera a mesma duração de uso e supõe que a substituição não muda o tempo em que a sala fica iluminada. A economia resulta da diferença entre as potências multiplicada pelo tempo acumulado.",
+      "stem": "Uma lâmpada de 10 W substitui outra de 60 W, ambas usadas 5 h por dia. Em 30 dias, quanto se economiza aproximadamente?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "75 kWh, pois a potência nova é seis vezes menor.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "7,5 kWh, pela diferença de 0,05 kW durante 150 horas.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "0,3 kWh, multiplicando a diferença por seis horas totais.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "1,5 kWh, contando uma hora de uso por dia do mês.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "50 kWh, usando a diferença numérica em watts como energia.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A diferença de potência é 0,05 kW e o uso total é 150 h; a economia é 7,5 kWh.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-08-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-08-CON-01",
+      "conceptIds": [
+        "CIE-08-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em um recipiente fechado há gelo feito de água. Com aquecimento gradual, parte do gelo derrete e depois parte da água líquida passa ao estado gasoso, sem sair do recipiente. A aparência e a organização das moléculas mudam durante essas etapas, mas a composição das moléculas permanece a mesma. A atividade pede distinguir uma transformação física de uma reação que forma substâncias com composição química diferente.",
+      "stem": "Uma amostra de gelo derrete em copo fechado e depois a água evapora, permanecendo no recipiente. Qual afirmação se sustenta?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A evaporação reduz a massa total mesmo com o recipiente fechado.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A fusão produz um elemento novo a partir da água.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A mudança de estado altera a fórmula química das moléculas.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A água pode mudar de estado e continuar sendo H₂O.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Os átomos de hidrogênio se convertem em átomos de oxigênio.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Fusão e evaporação são mudanças físicas; as moléculas continuam sendo H₂O e a massa do sistema fechado se conserva.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-08-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-08-CON-01",
+      "conceptIds": [
+        "CIE-08-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma mistura seca de limalha de ferro e areia foi preparada para uma aula. A professora aproxima um ímã, que atrai parte do material, enquanto os grãos de areia permanecem no recipiente. Os componentes ainda podem ser reconhecidos por propriedades próprias e recuperados sem formar uma nova substância. A demonstração usa a resposta magnética como método de separação física de misturas heterogêneas.",
+      "stem": "Um aluno mistura pó de ferro e areia e depois separa o ferro com ímã. Qual evidência indica que não houve necessariamente transformação química?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Os componentes preservam propriedades que permitem separação física.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A união dos sólidos forma um composto com proporção fixa de componentes.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A separação pelo ímã consome os materiais originais em reação.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A areia se torna metálica ao permanecer perto do ímã.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A mistura passa a ser substância pura após a separação.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A atração magnética separa o ferro; isso indica que os componentes podem ser recuperados sem reação química necessária.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-09-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-09-CON-01",
+      "conceptIds": [
+        "CIE-09-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Modelos científicos representam aspectos de fenômenos que não são observados diretamente em toda a sua complexidade. O desenho de Dalton tratava o átomo como esfera maciça; modelos posteriores incorporaram partículas subatômicas e evidências experimentais. A representação atual descreve elétrons por distribuições de probabilidade. Comparar essas ideias ajuda a entender como a ciência aperfeiçoa explicações sem confundir diagramas didáticos com imagens fotográficas de objetos microscópicos.",
+      "stem": "Um desenho antigo mostra elétrons em órbitas circulares definidas; um modelo atual usa regiões de probabilidade. Qual conclusão sobre modelos atômicos é adequada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Desenhos de átomos funcionam como fotografias de elétrons individuais.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Modelos sucessivos descrevem literalmente a mesma estrutura atômica.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Evidências novas podem levar à revisão de modelos científicos.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Elétrons percorrem órbitas planetárias visíveis em trajetórias definidas.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Um modelo recente pode exigir revisão de resultados experimentais antigos.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "Modelos são representações revisáveis, avaliadas diante das evidências; não são fotografias literais do átomo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-09-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-09-CON-01",
+      "conceptIds": [
+        "CIE-09-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "No experimento de Rutherford, partículas alfa foram lançadas contra uma lâmina muito fina de ouro. A maioria atravessou o material, mas uma pequena fração sofreu desvios acentuados ou retornou. O resultado surpreendeu pesquisadores que esperavam uma distribuição mais espalhada da carga positiva. Para explicar os desvios, o novo modelo precisava dar conta de uma região pequena capaz de concentrar carga e produzir forte repulsão.",
+      "stem": "No experimento clássico de espalhamento de partículas alfa, algumas sofreram grandes desvios. Qual interpretação foi decisiva para a revisão do modelo atômico?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O átomo inteiro é uma esfera maciça que bloqueia partículas.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "As partículas alfa atravessam sem interação com a matéria.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Os elétrons concentram a maior parte da massa do átomo.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A carga positiva ocupa uma região extensa do volume atômico.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Uma região nuclear pequena concentra carga positiva e massa.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Desvios intensos indicam um núcleo muito pequeno e denso, que concentra a carga positiva e grande parte da massa.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-10-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE.ATOM.Z",
+      "conceptIds": [
+        "CIE.ATOM.Z"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "O número atômico identifica o elemento por sua quantidade de prótons. O número de massa corresponde à soma de prótons e nêutrons do núcleo. Em um átomo eletricamente neutro, a quantidade de elétrons iguala a de prótons. Um exercício apresenta uma espécie neutra de número atômico 17 e número de massa 35, permitindo inferir as partículas subatômicas sem consultar outra propriedade.",
+      "stem": "Um átomo neutro tem número atômico 17 e número de massa 35. Quantos prótons, nêutrons e elétrons possui?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "35 prótons, 17 nêutrons e 35 elétrons.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "17 prótons, 18 nêutrons e 17 elétrons.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "18 prótons, 17 nêutrons e 17 elétrons.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "17 prótons, 35 nêutrons e 18 elétrons.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "17 prótons, 18 nêutrons e 35 elétrons.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "Há 17 prótons; 35 − 17 = 18 nêutrons; a neutralidade exige 17 elétrons.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-10-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE.ATOM.Z",
+      "conceptIds": [
+        "CIE.ATOM.Z"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "O magnésio tem número atômico 12, portanto seu núcleo contém 12 prótons. Um átomo neutro desse elemento possui também 12 elétrons na eletrosfera. Em uma reação, ele pode perder dois elétrons da eletrosfera e formar o cátion Mg²⁺. A formação de íons altera a carga elétrica da espécie, enquanto a identidade do elemento depende da quantidade de prótons em seu núcleo.",
+      "stem": "Um átomo neutro de magnésio (Z=12) perde dois elétrons e forma Mg²⁺. O que muda na espécie?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Fica com 12 elétrons e ganha dois nêutrons no núcleo.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Perde dois prótons e passa a ser outro elemento químico.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Passa a ter 14 elétrons e carga positiva de duas unidades.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Fica com 10 elétrons e mantém 12 prótons no núcleo.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Passa a ter 14 prótons e conserva os elétrons anteriores.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Ao perder dois elétrons, o Mg²⁺ fica com 10 elétrons; seus 12 prótons permanecem inalterados.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-11-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-11-CON-01",
+      "conceptIds": [
+        "CIE-11-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "A tabela periódica organiza elementos em linhas e colunas, e a posição de cada elemento está relacionada à sua estrutura eletrônica. Elementos na mesma coluna principal costumam ter o mesmo número de elétrons na camada mais externa, embora possam diferir em massa, tamanho e estado físico. Essas semelhanças ajudam a prever tendências químicas, mas não tornam dois elementos espécies idênticas nem garantem comportamentos iguais em todas as condições.",
+      "stem": "Duas espécies pertencem ao mesmo grupo da tabela periódica e possuem configurações de valência semelhantes. Qual previsão é razoável?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Podem apresentar tendências químicas parecidas em certas reações.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "São isótopos do mesmo elemento por ocuparem a mesma coluna.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Têm massas iguais porque compartilham uma família periódica.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Apresentam o mesmo estado físico em condições ambientais semelhantes.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Possuem igual número de prótons e elétrons por pertencerem ao grupo.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Elementos do mesmo grupo tendem a ter configurações de valência semelhantes e podem apresentar propriedades químicas parecidas.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-11-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-11-CON-01",
+      "conceptIds": [
+        "CIE-11-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "O sódio possui número atômico 11 e apresenta um elétron de valência em sua configuração mais comum. O cloro tem número atômico 17 e tende a completar sua camada externa ao receber um elétron. Na formação de um composto iônico típico, a atração eletrostática entre íons de cargas opostas contribui para a organização do sólido. A questão considera a transferência mais provável entre esses átomos.",
+      "stem": "Na formação de um composto iônico típico, qual transferência de elétrons é esperada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Ambos retêm suas cargas iniciais ao formar uma ligação iônica.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O cloro perde um elétron e o sódio recebe esse elétron.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "O sódio tende a ceder um elétron ao cloro.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Os dois átomos cedem um elétron e formam cátions.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O sódio recebe sete elétrons enquanto o cloro cede sete.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O sódio tende a perder um elétron e formar Na⁺; o cloro tende a recebê-lo e formar Cl⁻.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-12-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-12-CON-01",
+      "conceptIds": [
+        "CIE-12-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em uma cozinha, uma colher de açúcar é misturada a um copo de água e deixa de ser visível após a agitação. Uma amostra retirada do topo tem a mesma aparência e composição geral que outra retirada do fundo, depois de dissolução completa. A transparência, sozinha, não indica se há uma ou várias substâncias. A classificação depende de quantas fases são observadas e de quantos componentes estão presentes.",
+      "stem": "Como a bebida descrita deve ser classificada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Solução gasosa, pois a transparência define o estado físico.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Substância pura, já que os componentes não são visíveis.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Elemento químico, porque o soluto desapareceu durante a mistura.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Mistura heterogênea, pois há mais de uma substância dissolvida.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Mistura homogênea formada por água e açúcar em uma fase.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "O açúcar dissolvido e a água formam uma mistura com uma fase visível: uma solução homogênea.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-12-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-12-CON-01",
+      "conceptIds": [
+        "CIE-12-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Em um recipiente transparente há água líquida e cubos de gelo feitos da mesma água. O recipiente permanece fechado e a temperatura está próxima do ponto de fusão, de modo que as duas formas físicas coexistem. Ao observar o sistema, é possível distinguir regiões sólidas e líquidas, mas a composição química das partículas em ambas continua sendo H₂O. A situação ajuda a separar os conceitos de fase e substância.",
+      "stem": "Um frasco contém água líquida e cubos de gelo da própria água, em equilíbrio. Como classificar sistema e material?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Dois elementos químicos diferentes por terem estados físicos distintos.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Duas fases de uma substância química composta por H₂O.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "Uma mistura homogênea com uma fase sólida e líquida única.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Duas substâncias diferentes porque cada fase tem nome próprio.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Um composto novo formado quando gelo entra em contato com água.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "O sistema apresenta duas fases físicas, sólida e líquida, da mesma substância: água.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-13-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-13-CON-01",
+      "conceptIds": [
+        "CIE-13-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma amostra de laboratório reúne areia, sal de cozinha e água. O sal se dissolve, mas a areia permanece sólida e pode ser retida por um filtro. Depois da filtração, a água atravessa o filtro junto com o sal dissolvido. Se a água for removida por evaporação controlada, cristais de sal podem ser recuperados. A sequência deve separar primeiro o componente insolúvel e depois o soluto.",
+      "stem": "Um laboratório recebe mistura de areia, sal e água. Qual sequência permite obter areia separada e, depois, sal sólido?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Destilar a mistura para evaporar a areia junto com a água.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Decantar o filtrado e obter sal sólido sem remover água.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Evaporar primeiro a água e filtrar o vapor para reter areia.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Filtrar a mistura e evaporar a água que atravessou o filtro.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Usar ímã para separar areia e sal antes de dissolver.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "A filtração retém a areia; a evaporação posterior remove água e recupera o sal dissolvido.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-13-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-13-CON-01",
+      "conceptIds": [
+        "CIE-13-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Após repousar, uma mistura de água e óleo forma duas camadas bem visíveis. Os líquidos não se dissolvem um no outro nas condições do experimento e apresentam densidades diferentes. Um funil com torneira permite liberar primeiro a camada inferior e interromper o escoamento próximo à interface. O método aproveita a separação espontânea das fases, sem exigir aquecimento nem alteração química dos componentes.",
+      "stem": "Para separar água e óleo em camadas estáveis, por que o funil de separação é apropriado?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "As fases imiscíveis se organizam em camadas conforme suas densidades.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A técnica funciona depois de dissolver o óleo na água.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A gravidade transforma quimicamente o óleo em água no funil.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Os dois líquidos evaporam quando a torneira é aberta.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A separação exige que ambos tenham densidades iguais.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "O funil de separação permite escoar uma fase líquida antes da outra, usando imiscibilidade e diferença de densidade.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-14-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-14-CON-01",
+      "conceptIds": [
+        "CIE-14-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Duas soluções aquosas transparentes são colocadas em um béquer. Logo após a mistura, surge um sólido que se deposita no fundo e não se dissolve nas condições do teste. Antes, nenhum sólido era visível nos líquidos separados. A formação de um precipitado pode ser observada como evidência de que partículas dissolvidas interagiram e produziram uma substância pouco solúvel, embora a identificação final dependa de outras análises.",
+      "stem": "Qual interpretação do resultado é mais adequada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O sólido indica cristalização do soluto que estava dissolvido na solução.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O sólido observado pode resultar de interação entre partículas dissolvidas.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A formação do sólido é indício de reação entre componentes dissolvidos.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Uma reação química requer emissão intensa de luz visível.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O precipitado resulta somente de mudança física de um elemento.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O aparecimento de precipitado sugere a formação de um produto pouco solúvel em uma reação química.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-14-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-14-CON-01",
+      "conceptIds": [
+        "CIE-14-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Na equação 2H₂ + O₂ → 2H₂O, os números diante das fórmulas representam quantidades de moléculas, enquanto os índices indicam quantos átomos compõem cada molécula. Em uma transformação química, os átomos são reorganizados e passam a compor produtos diferentes. O balanceamento ajusta os coeficientes para que a quantidade de cada elemento seja igual nos dois lados, sem exigir que o número total de moléculas permaneça constante.",
+      "stem": "Qual afirmação descreve corretamente a conservação dos átomos nessa equação?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A quantidade total de moléculas permanece igual nos dois lados.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Os coeficientes igualam a massa total, mas não a contagem por elemento.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Os átomos de oxigênio deixam de participar da transformação.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Há dois átomos de hidrogênio nos reagentes e quatro nos produtos.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Cada lado contém quatro átomos de H e dois de O.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A equação apresenta quatro átomos de hidrogênio e dois de oxigênio em cada lado.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-15-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-15-CON-01",
+      "conceptIds": [
+        "CIE-15-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma amostra de água de lago é examinada ao microscópio, revelando um organismo composto por uma única célula. Ele absorve nutrientes do meio, transforma matéria e se reproduz. Embora não possua órgãos ou tecidos, suas estruturas celulares realizam as funções necessárias à sua sobrevivência. O caso mostra que tamanho microscópico e organização unicelular não impedem que um ser vivo desempenhe atividades fundamentais.",
+      "stem": "O que se pode concluir sobre esse organismo?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A observação mostra que a célula vive sem membrana plasmática.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Uma única célula pode desempenhar funções essenciais à vida.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "Organismos unicelulares não têm metabolismo nem reprodução celular.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Organismos dependem de órgãos para executar funções vitais.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A célula funciona somente como parte sem atividade própria.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "Em organismos unicelulares, uma célula realiza funções vitais como metabolismo, interação com o meio e reprodução.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-15-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-15-CON-01",
+      "conceptIds": [
+        "CIE-15-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma lâmina preparada com tecido vegetal e outra com tecido animal são observadas ao microscópio. Em ambas, as unidades estão delimitadas por membrana e contêm material genético, mas há diferenças entre estruturas e funções celulares. As células vegetais podem apresentar parede celular e cloroplastos em certos tecidos; células animais não possuem essas estruturas. A comparação oferece evidência de organização celular comum entre grupos distintos.",
+      "stem": "Qual princípio sobre a organização dos seres vivos é reforçado?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Células de plantas e animais não contêm material genético hereditário.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Células vegetais e animais apresentam paredes celulares de composição semelhante.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A movimentação das células serve como critério para classificar um tecido como vivo.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Plantas e animais são formados por células com características próprias.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "A falta de cloroplastos torna os tecidos animais não vivos.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "A observação reforça que plantas e animais são constituídos por células, embora haja diferenças entre elas.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-16-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-16-CON-01",
+      "conceptIds": [
+        "CIE-16-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma fibra muscular consome ATP durante contrações e aumenta a demanda energética quando a pessoa se exercita. Com oxigênio disponível, nutrientes são degradados em processos de respiração celular que liberam energia utilizável pela célula. Diferentes organelas participam de funções como digestão intracelular, síntese de proteínas e processamento de moléculas. Para relacionar estrutura e função, é preciso identificar onde ocorrem etapas centrais da respiração aeróbia.",
+      "stem": "Uma célula muscular aumenta a atividade e necessita produzir mais ATP com oxigênio disponível. Qual organela participa diretamente desse processo?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Mitocôndria, envolvida em etapas da respiração celular aeróbia.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "Complexo golgiense, que converte glicose em ATP durante contrações.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Núcleo, principal local de fosforilação oxidativa na célula.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Ribossomo, que transforma energia luminosa em ATP muscular.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Lisossomo, que armazena oxigênio para a respiração aeróbia.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Mitocôndrias realizam etapas importantes da respiração aeróbia e contribuem para a produção de ATP.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-16-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-16-CON-01",
+      "conceptIds": [
+        "CIE-16-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma planta é mantida sob luz e recebe água e dióxido de carbono. Em suas células, parte do carbono é incorporada a moléculas orgânicas durante a fotossíntese, processo que também pode liberar oxigênio. A luz fornece energia para as reações, e pigmentos fotossintéticos captam parte dessa energia. A questão relaciona a fixação de carbono à estrutura celular vegetal onde se encontra a maquinaria fotossintética.",
+      "stem": "Uma célula vegetal é exposta à luz e fixa carbono na produção de moléculas orgânicas. Qual estrutura atua diretamente nesse processo?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Ribossomo, que capta luz e libera oxigênio na célula.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Parede celular, que converte dióxido de carbono diretamente em glicose.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Cloroplasto, onde ocorrem etapas centrais da fotossíntese.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Mitocôndria, responsável por fabricar glicose a partir de luz.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Membrana nuclear, que concentra clorofila para captar fótons.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "Cloroplastos contêm clorofila e estruturas onde ocorrem as reações fotossintéticas de plantas.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-17-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-17-CON-01",
+      "conceptIds": [
+        "CIE-17-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Células de diferentes tecidos do mesmo organismo geralmente compartilham quase todo o DNA, mas cumprem tarefas distintas. Uma célula muscular produz proteínas associadas à contração, enquanto uma célula da pele produz outras proteínas. Essa especialização não exige que cada tipo celular tenha genes completamente diferentes. O controle da atividade gênica e a disponibilidade de moléculas reguladoras ajudam a explicar por que certos genes são usados mais em alguns tecidos.",
+      "stem": "Qual mecanismo ajuda a explicar a diferença de proteínas produzidas?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Proteínas convertem aminoácidos em genes dentro da célula.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Genes presentes nos tecidos apresentam níveis de atividade semelhantes.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Cada tipo celular altera cromossomos para produzir proteínas específicas.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A diferenciação ocorre quando o DNA perde suas informações genéticas.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A regulação faz genes diferentes serem expressos conforme o tipo celular.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A expressão gênica varia entre células, permitindo que genomas semelhantes sustentem funções celulares especializadas.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-17-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-17-CON-01",
+      "conceptIds": [
+        "CIE-17-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Antes de uma célula se dividir, seu material genético é copiado para que as células resultantes recebam informação hereditária. A duplicação do DNA mantém a ordem de suas bases e antecede a separação dos cromossomos. Esse processo é distinto da transcrição, que produz RNA a partir de um trecho de DNA, e da tradução, na qual ribossomos sintetizam proteínas. A distinção ajuda a interpretar o destino da informação genética.",
+      "stem": "Qual consequência da duplicação é importante para a transmissão genética?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A sequência de bases deixa de transmitir informação hereditária.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A duplicação disponibiliza cópias do DNA às células resultantes.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "O material genético é convertido em proteínas antes da divisão.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Cada cromossomo é substituído por moléculas de RNA nas descendentes.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A cópia do DNA impede alterações futuras na sequência de bases.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A replicação antecede a divisão e permite que as células resultantes recebam cópias da informação genética.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-18-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-18-CON-01",
+      "conceptIds": [
+        "CIE-18-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em uma célula somática, o número diploide é 2n = 8. Antes da divisão, o DNA é replicado, mas a quantidade de cromossomos é contada pelo número de centrômeros. Na mitose, cromátides-irmãs se separam e são distribuídas entre dois núcleos. Considerando uma divisão convencional sem erro, cada célula-filha recebe um conjunto equivalente ao da célula original, mantendo a ploidia característica do tecido.",
+      "stem": "Uma célula somática com 2n=8 cromossomos sofre mitose convencional. Quantos cromossomos terá cada célula-filha ao final?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Quatro cromossomos em cada célula-filha após a divisão.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Dois cromossomos sexuais ficam em cada célula-filha após a mitose.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Dezesseis cromossomos, pois a replicação duplica a contagem final.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Oito cromossomos em cada célula-filha ao fim da mitose.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Seis cromossomos, com perda de dois durante a separação.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "A mitose mantém o número cromossômico; cada célula-filha terá oito cromossomos.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-18-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-18-CON-01",
+      "conceptIds": [
+        "CIE-18-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "A meiose começa com uma célula diploide de 10 cromossomos. Após a replicação do DNA, ocorrem duas divisões celulares: na primeira, separam-se os cromossomos homólogos; na segunda, as cromátides-irmãs. Em condições comuns e sem falhas, o processo produz quatro células com metade do número cromossômico inicial. A questão considera o produto da meiose e não etapas posteriores específicas da formação de gametas em diferentes organismos.",
+      "stem": "Que produto cromossômico é esperado ao final?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Quatro células haploides, cada uma com cinco cromossomos.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "Quatro células diploides, cada uma com vinte cromossomos.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Quatro células haploides que conservam os dez cromossomos originais.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Duas células diploides com dez cromossomos após a primeira divisão.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Uma célula haploide formada ao fim das duas divisões.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A meiose completa produz quatro células haploides, cada uma com cinco cromossomos.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-19-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-19-CON-01",
+      "conceptIds": [
+        "CIE-19-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em um lago, insetos aquáticos servem de alimento a algumas espécies de peixes. Uma alteração na qualidade da água reduz a abundância desses insetos ao longo de semanas, enquanto outras condições do lago permanecem semelhantes. A mudança pode afetar consumidores que dependem dessa presa, embora a intensidade do efeito varie conforme a dieta e a disponibilidade de outros recursos. O caso ilustra como alterações em uma população repercutem numa teia alimentar.",
+      "stem": "Em um lago, houve redução drástica de insetos aquáticos, alimento de certos peixes. Que efeito inicial é ecologicamente plausível?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Predadores dos peixes passam a produzir matéria orgânica como plantas.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "As relações alimentares permanecem iguais porque insetos são invertebrados.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Peixes que consomem esses insetos podem encontrar menos alimento.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Peixes aumentam devido à queda de insetos competidores por oxigênio.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A queda dos insetos reduz a entrada de nutrientes usados pelas algas.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "A redução de uma presa pode diminuir a disponibilidade de alimento para peixes que a consomem.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-19-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-19-CON-01",
+      "conceptIds": [
+        "CIE-19-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Em uma região, uma população de presas cresce durante alguns anos, oferecendo alimento abundante a seus predadores. Com mais alimento disponível, a população de predadores também aumenta. A pressão de consumo sobre as presas se intensifica e, depois de certo tempo, a quantidade delas diminui. Mudanças posteriores na disponibilidade de alimento podem afetar novamente os predadores, criando variações relacionadas entre as duas populações ao longo do tempo.",
+      "stem": "Qual mecanismo pode explicar a relação observada entre as populações?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Mais predadores podem aumentar a disponibilidade de alimento para as presas.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A queda das presas mostra que fatores ambientais não interferem.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Predadores tornam-se produtores quando a presa fica menos abundante.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "As populações não se influenciam quando compartilham o mesmo habitat.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Maior predação pode reduzir presas e contribuir para oscilações populacionais.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A abundância de alimento influencia predadores; o aumento da predação pode reduzir as presas e gerar oscilações.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-20-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-20-CON-01",
+      "conceptIds": [
+        "CIE-20-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "O Cerrado possui estação seca marcada, mosaicos de campos e formações com árvores, além de espécies com características relacionadas às condições locais. O fogo também ocorre em alguns contextos naturais, mas sua frequência, intensidade e época alteram os efeitos ecológicos. A expansão agropecuária converteu grandes áreas e fragmentou habitats, com impactos sobre espécies e recursos hídricos. Avaliar o bioma exige considerar tanto suas adaptações quanto as pressões humanas atuais.",
+      "stem": "Qual avaliação do bioma e de suas pressões é mais adequada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O bioma é uma floresta úmida fechada com pouca sazonalidade.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A vegetação tem adaptações locais e sofre com conversão de habitat.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "O fogo natural torna queimadas manejadas inofensivas para o bioma.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A conversão agrícola eleva a diversidade nativa em algumas áreas.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A estação seca impede árvores e arbustos de crescerem no Cerrado.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "As espécies do Cerrado apresentam adaptações ao ambiente, mas isso não elimina impactos da conversão agrícola.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-20-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-20-CON-01",
+      "conceptIds": [
+        "CIE-20-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Na zona costeira, manguezais recebem água doce de rios e água salgada influenciada pelas marés, formando condições salobras variáveis. Raízes expostas e sedimentos ricos em matéria orgânica abrigam organismos de diferentes grupos. Muitos peixes e invertebrados utilizam esses ambientes em fases iniciais do desenvolvimento, antes de ocupar outros habitats. A função ecológica do manguezal decorre das interações entre vegetação, água, sedimento e espécies costeiras.",
+      "stem": "Qual função ecológica é compatível com esse ambiente?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Manguezais impedem o transporte de matéria entre áreas terrestres e oceânicas.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Manguezais ocupam rios doces conectados a ambientes costeiros marinhos.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Servir de habitat para uma única espécie de árvore costeira.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Oferecer abrigo e áreas de desenvolvimento a organismos costeiros.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Funcionar como deserto sem produtores devido à água salobra.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Manguezais oferecem abrigo e áreas de desenvolvimento para diversos organismos costeiros, incluindo peixes e invertebrados.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-21-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-21-CON-01",
+      "conceptIds": [
+        "CIE-21-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma prefeitura instala pontos para recolher garrafas plásticas em bairros e divulga metas de reciclagem. Depois de alguns meses, uma auditoria mostra que o material recolhido segue misturado a rejeitos e é encaminhado a um aterro, pois o município não tem triagem nem contrato com recicladores. A iniciativa ampliou a coleta, mas a cadeia de gestão ainda precisa transformar o material separado em matéria-prima reaproveitada.",
+      "stem": "Uma cidade coleta garrafas plásticas, mas o material separado é enviado a aterro por falta de triagem. Que fator limita o resultado da política?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A coleta não fecha a cadeia sem triagem e destinação adequadas.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A presença de aterro elimina a utilidade de reduzir resíduos.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Separar garrafas em casa muda sua composição e acelera biodegradação.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "O transporte até o aterro converte os resíduos em recicláveis.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A mistura com rejeitos melhora a qualidade do plástico recuperado.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A coleta isolada não garante reciclagem; triagem, logística e destinação também precisam funcionar.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-21-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-21-CON-01",
+      "conceptIds": [
+        "CIE-21-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Um rio recebe esgoto doméstico rico em matéria orgânica e nutrientes. Nas semanas seguintes, sensores registram aumento de algas durante o dia e queda do oxigênio dissolvido, sobretudo à noite e perto do fundo. A decomposição de organismos mortos consome oxigênio, o que pode afetar peixes e invertebrados. A equipe investiga um processo de enriquecimento da água que altera a disponibilidade de nutrientes e o equilíbrio do ecossistema.",
+      "stem": "Um rio recebe esgoto sem tratamento, ocorre proliferação de algas e diminuição de oxigênio dissolvido. Qual processo é compatível com o quadro?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "As algas removem nutrientes e neutralizam os efeitos do esgoto.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A correnteza impede alterações ecológicas associadas a nutrientes.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "O excesso de nutrientes favorece floração e consumo de oxigênio.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "A perda de oxigênio decorre de menor chuva na bacia hidrográfica.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A decomposição libera oxigênio e sustenta a respiração dos peixes.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O aporte de nutrientes pode causar eutrofização; a decomposição da matéria orgânica consome oxigênio dissolvido.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-22-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-22-CON-01",
+      "conceptIds": [
+        "CIE-22-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "A atmosfera participa de processos diferentes que às vezes são confundidos em reportagens sobre o clima. Gases como dióxido de carbono influenciam a saída de energia térmica da superfície, enquanto o ozônio concentrado na estratosfera absorve parte da radiação ultravioleta solar. Esses fenômenos têm causas e consequências distintas, ainda que ambos envolvam substâncias atmosféricas. Uma explicação precisa identifica qual radiação e qual camada estão relacionadas a cada processo.",
+      "stem": "Qual distinção entre os fenômenos está correta?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O ozônio estratosférico absorve parte da radiação infravermelha terrestre.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Aquecimento global e redução do ozônio designam o mesmo fenômeno.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "O efeito estufa resulta somente do ozônio sobre a Antártida.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Menos ozônio bloqueia a luz visível e resfria o planeta.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Gases estufa influenciam energia térmica; ozônio absorve parte do UV.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Gases de efeito estufa afetam o balanço de energia; o ozônio estratosférico absorve parte da radiação ultravioleta.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-22-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-22-CON-01",
+      "conceptIds": [
+        "CIE-22-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma estufa agrícola de vidro retém calor em parte ao limitar a circulação de ar entre seu interior e o exterior. O efeito estufa atmosférico envolve outro mecanismo: certos gases interagem com a radiação infravermelha emitida pela superfície terrestre. A atmosfera continua permitindo a entrada de grande parte da luz solar, mas a troca de energia térmica é alterada. Comparar os processos evita tratar uma estufa de cultivo como cópia exata da atmosfera.",
+      "stem": "Qual descrição se aplica ao efeito estufa atmosférico?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O dióxido de carbono bloqueia a luz solar antes de chegar ao solo.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Certos gases absorvem e reemitem parte da radiação infravermelha.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "O efeito estufa natural surgiu com as emissões industriais recentes.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Gases atmosféricos absorvem infravermelho com eficiência semelhante.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O aquecimento atmosférico ocorre porque o ar forma uma barreira sólida.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "Alguns gases atmosféricos absorvem e reemitem parte da radiação infravermelha, alterando o balanço energético.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-23-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-23-CON-01",
+      "conceptIds": [
+        "CIE-23-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Duas áreas de floresta separadas por pastagens têm populações pequenas de algumas espécies. Um corredor de vegetação nativa é planejado para conectar os fragmentos. A ligação pode facilitar deslocamentos, acesso a recursos e encontro de indivíduos de populações diferentes. Seus resultados dependem da largura, continuidade, manejo e espécies envolvidas. O corredor é uma ferramenta de conservação da conectividade, não uma restauração instantânea de todo o ecossistema nem uma garantia contra outras ameaças.",
+      "stem": "Dois fragmentos de floresta são ligados por corredor de vegetação. Qual benefício ecológico é esperado?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O corredor bloqueia a entrada de espécies invasoras nos fragmentos.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A conexão impede o movimento de animais entre as áreas.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A vegetação conectada elimina incêndios e doenças sem manejo.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A ligação pode favorecer deslocamento e fluxo gênico entre áreas.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Os fragmentos se tornam florestas maduras logo após a conexão.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Corredores podem aumentar a conectividade e facilitar deslocamento e fluxo gênico, dependendo do contexto ecológico.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-23-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-23-CON-01",
+      "conceptIds": [
+        "CIE-23-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Um programa de conservação mantém alguns indivíduos de uma espécie ameaçada em zoológicos e centros de reprodução. Ao mesmo tempo, a área natural da espécie continua sendo desmatada e os recursos de que ela depende diminuem. A criação em cativeiro pode apoiar pesquisas e preservar uma população temporária, mas a sobrevivência a longo prazo também exige condições adequadas no habitat e planejamento para eventual reintrodução.",
+      "stem": "Uma espécie ameaçada é protegida somente em cativeiro, mas seu habitat continua sendo destruído. Qual limitação existe na estratégia?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A manutenção em cativeiro não recompõe por si só o habitat natural.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "O cuidado ex situ elimina as necessidades ecológicas da espécie.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A reprodução em cativeiro recompõe o habitat degradado da espécie.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A destruição de habitat aumenta a diversidade da população silvestre.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A proteção de espécies torna desnecessárias ações territoriais e públicas.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A conservação ex situ pode ajudar, mas não substitui a proteção do habitat e das condições de vida silvestres.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-24-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-24-CON-01",
+      "conceptIds": [
+        "CIE-24-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma proposta de usina renovável prevê obras próximas a um território ocupado por comunidade tradicional. Moradores relatam dependência da pesca local e preocupações com mudanças no curso d'água e acesso a áreas de uso comum. A análise técnica também estima geração de eletricidade e redução de emissões durante a operação. Uma decisão bem informada precisa reunir esses dados, ouvir as pessoas afetadas e examinar impactos em diferentes etapas do projeto.",
+      "stem": "Qual princípio deve orientar a análise da proposta energética?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A geração prevista deve prevalecer sobre impactos locais na avaliação do projeto.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Comparar a potência instalada deve orientar a decisão junto com aspectos do modo de vida.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Considerar impactos socioambientais e participação das pessoas afetadas.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Classificar uma fonte renovável como isenta de efeitos ecológicos.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Trocar diálogo territorial por imagens gerais da paisagem local.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "A escolha energética deve considerar efeitos ambientais, direitos territoriais e participação informada das comunidades afetadas.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-24-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-24-CON-01",
+      "conceptIds": [
+        "CIE-24-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma empresa chama de “limpa” uma usina porque ela não queima combustível fóssil durante a geração. A obra, porém, altera vazões de um rio e afeta áreas usadas por moradores e espécies aquáticas. O rótulo pode se referir a um aspecto, como emissões operacionais, mas não resume todo o ciclo de vida ou os efeitos locais. Uma avaliação ambiental compara benefícios e custos em escalas distintas.",
+      "stem": "Qual conclusão é adequada sobre o uso do termo “limpa”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O rótulo confirma que a obra não altera habitats locais.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Fontes renováveis se definem somente pelo custo de construção.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Um efeito local transforma a fonte em combustível fóssil.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Mudanças no rio não afetam pessoas que usam suas águas.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Baixas emissões operacionais podem coexistir com impactos locais.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Emissões operacionais reduzidas não significam ausência de impactos ambientais ou sociais locais.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-25-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-25-CON-01",
+      "conceptIds": [
+        "CIE-25-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em ervilhas, uma variante A determina sementes lisas e é dominante sobre a variante a, associada a sementes rugosas. No cruzamento de duas plantas heterozigotas, cada uma produz gametas com uma das duas variantes. A fecundação combina aleatoriamente um gameta de cada progenitor, e o exercício supõe segregação mendeliana e dominância completa. O resultado pode ser previsto organizando as combinações possíveis entre os alelos parentais.",
+      "stem": "Qual é a chance de um descendente apresentar o fenótipo recessivo?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "0%, pois o alelo dominante impede a formação de genótipos aa.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "25%, porque um quarto das combinações resulta em aa.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "100%, pois ambos os progenitores carregam a variante recessiva.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "75%, já que heterozigotos expressam a característica recessiva.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "50%, pela proporção de gametas a produzidos pelos progenitores.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "Aa × Aa produz AA, Aa, Aa e aa; um quarto dos descendentes é aa e apresenta o fenótipo recessivo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-25-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-25-CON-01",
+      "conceptIds": [
+        "CIE-25-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Na formação de gametas, os dois alelos de um par se separam durante a meiose. Um progenitor heterozigoto Aa, portanto, transmite A ou a a cada gameta, mas cada gameta recebe um alelo desse par. Considerando grande quantidade de gametas e segregação mendeliana sem distorções, espera-se proporção semelhante dos dois tipos. A dominância afeta o fenótipo, mas não remove o alelo recessivo dos gametas.",
+      "stem": "Qual distribuição alélica é esperada entre os gametas?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Três quartos com A e um quarto com a.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Metade sem alelos e metade com o par Aa.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A dominância define quais alelos seguem juntos em cada gameta.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Metade contendo A e metade contendo a.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Somente com A, pois dominância elimina o alelo recessivo.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "A segregação do par produz aproximadamente metade dos gametas com A e metade com a.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-26-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-26-CON-01",
+      "conceptIds": [
+        "CIE-26-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em uma espécie de flor, indivíduos de linhagem pura com pétalas vermelhas são cruzados com indivíduos de linhagem pura com pétalas brancas. Na primeira geração, as plantas descendentes apresentam pétalas rosas, sem manchas separadas das duas cores. A observação não define sozinha todos os mecanismos genéticos possíveis, mas indica como o heterozigoto manifesta a característica. Padrões de dominância ajudam a comparar esse resultado com outros tipos de herança.",
+      "stem": "Qual padrão de herança é sugerido pelo resultado?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Dominância incompleta, com heterozigotos de fenótipo intermediário.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "Codominância, com os dois pigmentos distribuídos em setores separados nas pétalas.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Herança ligada ao sexo, determinada por um gene do Y.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Dominância completa da cor branca sobre a vermelha.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Uma mutação nova pode ter originado a diferença de cor na descendência.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "O fenótipo intermediário dos heterozigotos é compatível com dominância incompleta.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-26-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-26-CON-01",
+      "conceptIds": [
+        "CIE-26-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Algumas doenças resultam da interação entre várias variantes genéticas e fatores como alimentação, ambiente e hábitos de vida. Um teste identifica uma variante associada a risco maior em um grupo populacional, mas não avalia todos esses fatores nem prevê o futuro individual com precisão absoluta. A interpretação de resultados depende do contexto clínico, da validade do teste e de orientação profissional, especialmente quando decisões de saúde podem decorrer da informação genética.",
+      "stem": "Qual interpretação do resultado é cientificamente prudente?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O resultado indica uma base genética e pode orientar o diagnóstico clínico por si só.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O resultado torna desnecessária a avaliação clínica do paciente.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A variante pode modificar risco sem determinar o desenvolvimento da doença.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Fatores ambientais deixam de influenciar a condição após o teste.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O resultado prevê com precisão a idade e a gravidade em cada caso.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "Uma variante associada pode alterar a probabilidade, mas não determina isoladamente o surgimento de uma doença multifatorial.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-27-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-27-CON-01",
+      "conceptIds": [
+        "CIE-27-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Na classificação biológica, espécies são agrupadas em categorias hierárquicas, como gênero, família e ordem. Dois organismos colocados no mesmo gênero compartilham características usadas na classificação e são considerados aparentados, mas permanecem em espécies distintas. Isso não garante compatibilidade reprodutiva nem identidade genética. A taxonomia organiza evidências de parentesco e semelhanças, e cada categoria informa um nível de agrupamento mais ou menos específico.",
+      "stem": "O que a classificação permite afirmar sobre os organismos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Apresentam genomas idênticos por pertencerem ao mesmo gênero.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Produzem descendentes férteis em cruzamentos entre as espécies.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Não compartilham ancestralidade por terem nomes de espécie diferentes.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Pertencem a famílias distintas por estarem em espécies diferentes.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Compartilham um agrupamento mais específico que a família, sem serem da mesma espécie.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "O gênero é uma categoria mais específica que a família e pode reunir espécies aparentadas sem torná-las iguais.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-27-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-27-CON-01",
+      "conceptIds": [
+        "CIE-27-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Considere uma árvore filogenética descrita por seus nós: o ramo de A se une ao de B em um nó recente; esse par se conecta ao ramo de C em um nó mais antigo. Os nomes aparecem nas pontas dos ramos, e a posição vertical ou horizontal da página foi escolhida apenas para facilitar a leitura. Em árvores assim, relações de parentesco são inferidas comparando ancestrais comuns compartilhados, não pela posição visual dos nomes.",
+      "stem": "Quais grupos aparecem como parentes evolutivos mais próximos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A posição horizontal dos nomes define qual grupo evoluiu mais.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A e B compartilham um ancestral mais recente entre si.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "O tamanho do nome indica a proximidade evolutiva dos grupos.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A é ancestral direto de B por aparecer ao lado dele.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "C não compartilha ancestralidade com os outros dois grupos.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A e B compartilham entre si um ancestral comum mais recente que aquele compartilhado com C.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-28-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-28-CON-01",
+      "conceptIds": [
+        "CIE-28-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Fungos podem crescer sobre matéria orgânica em decomposição e absorver moléculas simples do ambiente. Diferentemente de plantas fotossintéticas, eles não possuem clorofila para converter energia luminosa em matéria orgânica. Muitos fungos atuam como decompositores, mas há espécies parasitas e mutualistas. A afirmação de que fungos produzem alimento por fotossíntese pode ser avaliada comparando sua forma de nutrição com a presença das estruturas e pigmentos necessários ao processo.",
+      "stem": "Qual característica contraria a afirmação do estudante?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Fungos são bactérias sem núcleo e sem organização eucariótica.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Fungos compartilham cloroplastos funcionais com as plantas.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Fungos não metabolizam matéria orgânica nem obtêm nutrientes.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Fungos são heterotróficos e absorvem nutrientes do ambiente.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "O crescimento junto a árvores permite fotossíntese sem clorofila.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Fungos são heterotróficos; absorvem nutrientes e não produzem alimento por fotossíntese como plantas.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-28-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-28-CON-01",
+      "conceptIds": [
+        "CIE-28-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Bactérias e leveduras podem aparecer juntas em uma amostra de alimento fermentado. Embora ambas sejam microscópicas e possuam material genético, suas células têm organizações diferentes. Bactérias não apresentam núcleo delimitado por membrana; leveduras são fungos e possuem células eucarióticas com núcleo. Identificar essa diferença ajuda a classificar os organismos sem supor que tamanho pequeno determine a presença ou ausência de organelas membranosas.",
+      "stem": "Qual diferença celular ajuda a classificá-las?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Bactérias são procariontes e leveduras são fungos eucariontes.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "Os dois grupos possuem cloroplastos para obter energia luminosa.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Bactérias têm mitocôndrias, enquanto leveduras carecem de DNA.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Leveduras são procariontes e bactérias apresentam núcleo típico.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Bactérias e leveduras possuem material genético sem reprodução celular.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Bactérias são procariontes; leveduras são fungos eucariontes, com núcleo delimitado por membrana.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-29-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-29-CON-01",
+      "conceptIds": [
+        "CIE-29-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Durante corrida, as fibras musculares consomem mais energia e aumentam a produção de dióxido de carbono. O organismo responde elevando a ventilação e a frequência cardíaca. A respiração traz oxigênio aos pulmões e remove parte do CO₂; a circulação transporta gases, nutrientes e resíduos entre pulmões, músculos e demais tecidos. A resposta integrada ajusta a oferta de substâncias às demandas do exercício e ajuda a manter condições adequadas para o metabolismo celular.",
+      "stem": "Qual relação funcional explica essas mudanças?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Os pulmões passam a fabricar hemácias que substituem as do sangue.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A demanda muscular por oxigênio some durante o exercício.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Ventilação e circulação ampliam oferta de O₂ e remoção de CO₂.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "O coração reduz o bombeamento para guardar oxigênio nos músculos.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O sistema digestório assume o transporte sanguíneo durante o esforço.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O aumento da ventilação e do bombeamento contribui para ofertar O₂ e remover CO₂ nos tecidos ativos.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-29-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-29-CON-01",
+      "conceptIds": [
+        "CIE-29-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Em um dia quente, uma pessoa passa várias horas sem beber água e transpira bastante. Sensores do organismo detectam mudanças na concentração do sangue e acionam mecanismos hormonais e renais de equilíbrio hídrico. Os rins ajustam quanto de água retorna à circulação e quanto segue para a urina. A resposta ajuda a limitar perdas adicionais, embora beber água e reduzir a exposição ao calor continuem importantes para recuperar o balanço corporal.",
+      "stem": "Qual resposta fisiológica tende a ajudar na conservação de água?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O suor perdido se converte diretamente em sangue novo.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A filtração renal cessa por completo assim que surge a sede.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A circulação é bloqueada para reduzir a perda de água.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A desidratação eleva a produção de grande volume de urina diluída.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A reabsorção renal de água pode aumentar sob regulação hormonal.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Mecanismos hormonais, incluindo o ADH, podem aumentar a reabsorção renal de água e reduzir perdas urinárias.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-30-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-30-CON-01",
+      "conceptIds": [
+        "CIE-30-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma vacina apresenta ao sistema imune um antígeno ou instruções para produzir um antígeno associado a certo agente. Células de defesa reconhecem essa informação e podem formar células de memória. Se houver exposição posterior ao mesmo agente, a resposta adaptativa tende a ser mais rápida. A proteção varia conforme a vacina e o patógeno; ela não funciona como defesa universal contra microrganismos sem relação com o antígeno apresentado.",
+      "stem": "Qual é o objetivo imunológico central da vacinação?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Gerar resposta imune de intensidade semelhante contra patógenos diversos.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Preparar resposta específica e memória para exposições posteriores.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "Remover o agente logo após contato com o antígeno apresentado.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Substituir de forma permanente as células de defesa do organismo.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Alterar o DNA de células de defesa após a aplicação da vacina.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A vacinação prepara uma resposta adaptativa específica e pode estabelecer memória imunológica contra o agente-alvo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-30-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-30-CON-01",
+      "conceptIds": [
+        "CIE-30-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Em uma comunidade, algumas pessoas não podem receber certa vacina por contraindicação médica. Para uma doença transmissível, a cobertura elevada entre pessoas elegíveis pode reduzir oportunidades de transmissão e oferecer proteção indireta a parte da população vulnerável. O efeito depende da vacina, da duração da proteção, das características do agente e do contato entre pessoas. Por isso, vigilância e outras medidas de saúde pública continuam relevantes mesmo com ampla vacinação.",
+      "stem": "Como a cobertura elevada pode ajudar pessoas vulneráveis?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A cobertura elimina a necessidade de monitoramento de surtos.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Pessoas não vacinadas podem adquirir imunidade celular pela convivência.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Uma vacina contra certa doença protege contra agentes sem relação.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A redução da transmissão pode diminuir a exposição de pessoas vulneráveis.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "A vacinação impede a reprodução de microrganismos fora do corpo.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Cobertura vacinal alta pode reduzir a circulação do agente e, assim, o risco de exposição de pessoas vulneráveis.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-31-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-31-CON-01",
+      "conceptIds": [
+        "CIE-31-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Após consumir uma substância psicoativa, uma pessoa sente sonolência e demora mais para responder a estímulos. Ela pretende dirigir por uma via movimentada com cruzamentos, pedestres e veículos que podem frear de repente. Conduzir exige perceber sinais, avaliar distâncias, decidir e coordenar movimentos em pouco tempo. A alteração do sistema nervoso pode afetar várias dessas etapas, mesmo que a pessoa se considere capaz de controlar o veículo.",
+      "stem": "Qual risco pode aumentar ao dirigir nessas condições?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O tempo de reação pode aumentar e as decisões ficam menos seguras.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A atenção deixa de influenciar os movimentos feitos ao dirigir.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A precisão visual pode aumentar em velocidades moderadas.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A percepção de distância deixa de ser necessária ao volante.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O veículo passa a frear com o dobro da capacidade física.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Substâncias psicoativas podem retardar reflexos e prejudicar julgamento, elevando o risco ao dirigir.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-31-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-31-CON-01",
+      "conceptIds": [
+        "CIE-31-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma pessoa consegue ler com clareza um livro próximo, mas tem dificuldade para reconhecer placas de rua a distância. O exame ocular mede como a luz é focalizada em relação à retina. Em alguns erros refrativos, a imagem de objetos distantes se forma antes da retina, e lentes divergentes podem ajudar a corrigir o foco. Sintomas semelhantes podem ter outras causas, por isso uma avaliação profissional é necessária.",
+      "stem": "Qual condição refrativa é compatível com a dificuldade descrita?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Hipermetropia, com foco de objetos distantes antes da retina.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Presbiopia, causada pela ausência congênita do cristalino.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Miopia, na qual objetos distantes tendem a formar imagem antes da retina.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Daltonismo, que reduz a nitidez de alvos mais afastados.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Astigmatismo tende a distorcer o foco em diferentes direções.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O quadro é compatível com miopia, em que a imagem distante tende a se formar antes da retina.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-32-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-32-CON-01",
+      "conceptIds": [
+        "CIE-32-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Ao longo do ciclo menstrual, hormônios ovarianos e hipofisários variam e afetam tanto a liberação do ovócito quanto o revestimento do útero. A duração do ciclo pode variar entre pessoas e entre ciclos da mesma pessoa. A ovulação costuma ocorrer em uma fase intermediária, mas o dia exato depende da duração e da regularidade do ciclo. Menstruação e ovulação são eventos distintos relacionados por mudanças hormonais.",
+      "stem": "Qual afirmação descreve corretamente ovulação e menstruação?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A ovulação ocorre no décimo quarto dia em ciclos de durações distintas.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O endométrio mantém espessura semelhante ao longo do ciclo menstrual.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A fecundação acontece no útero depois da implantação embrionária.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Menstruação e fecundação são o mesmo evento do ciclo.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Ovulação e menstruação são etapas distintas do ciclo hormonal.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A ovulação e a menstruação são eventos distintos; o momento da ovulação varia com o ciclo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-32-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-32-CON-01",
+      "conceptIds": [
+        "CIE-32-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Na reprodução humana, a união de gametas origina o zigoto. Em geral, esse encontro ocorre enquanto o ovócito se desloca pela tuba uterina. O embrião resultante continua seu percurso em direção ao útero e, alguns dias depois, pode aderir ao revestimento interno uterino. A sequência temporal e a diferença de localização são importantes para compreender o início da gestação e interpretar descrições sobre fecundação e implantação.",
+      "stem": "Qual correção distingue os locais desses processos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A implantação começa antes da união entre os gametas.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A fecundação costuma ocorrer na tuba e a implantação no endométrio.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "Os dois processos acontecem na tuba após o encontro dos gametas.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A implantação ocorre no ovário antes da fecundação.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A fecundação ocorre no colo uterino durante a menstruação.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A fecundação costuma ocorrer na tuba uterina; a implantação acontece no endométrio do útero.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-33-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-33-CON-01",
+      "conceptIds": [
+        "CIE-33-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Um folheto de saúde informa que preservativos reduzem o risco de várias infecções sexualmente transmissíveis e também ajudam a prevenir gravidez. Outros métodos contraceptivos, como pílulas hormonais, atuam sobre a possibilidade de gravidez, mas não formam uma barreira contra agentes infecciosos. A escolha de estratégias depende das necessidades das pessoas e pode combinar medidas. É útil distinguir proteção contra gravidez de redução do risco de ISTs.",
+      "stem": "Qual conclusão decorre das informações do folheto?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Combinar métodos reduz a eficácia de cada um de forma previsível.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Contraceptivos hormonais podem reduzir a transmissão de algumas ISTs.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Métodos contraceptivos oferecem proteção equivalente contra uma variedade de infecções.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A proteção contra ISTs deve ser considerada à parte da prevenção da gravidez.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Preservativos ajudam contra gravidez, mas não reduzem risco de ISTs.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "A prevenção da gravidez e a proteção contra ISTs são objetivos relacionados, mas distintos; nem todo contraceptivo reduz risco de infecção.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-33-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-33-CON-01",
+      "conceptIds": [
+        "CIE-33-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Um casal usa corretamente pílula hormonal para prevenir gravidez, mas também deseja reduzir o risco de infecções sexualmente transmissíveis. A pílula atua por mecanismos hormonais e não funciona como barreira física contra agentes infecciosos. Preservativos e testagem, além de diálogo sobre prevenção e saúde sexual, podem compor estratégias adequadas conforme as circunstâncias. O método adicional precisa estar relacionado diretamente à redução da transmissão durante o contato sexual.",
+      "stem": "Qual medida adicional se relaciona à meta apresentada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Associar preservativo ao método hormonal para reduzir risco de ISTs.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "Usar ausência de sintomas como confirmação de que não há infecção.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Dispensar informação sobre saúde sexual durante o uso da pílula.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Usar calendário menstrual como barreira à transmissão de vírus.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Aumentar a dose hormonal pode bloquear a entrada de microrganismos durante a relação.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "O preservativo acrescenta proteção de barreira contra várias ISTs; a pílula hormonal, isoladamente, não oferece essa proteção.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-34-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-34-CON-01",
+      "conceptIds": [
+        "CIE-34-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em uma população de insetos já existe variação herdável na coloração. Após a fuligem escurecer troncos em uma região, observações ao longo de gerações mostram maior sobrevivência e reprodução de indivíduos mais escuros. As cores não surgem porque os insetos escolhem mudar; variantes hereditárias já presentes deixam números diferentes de descendentes sob novas condições. O processo altera a frequência das características na população ao longo do tempo.",
+      "stem": "Qual processo explica o aumento da coloração na população?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Indivíduos claros mudam seus genes porque precisam sobreviver.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A variação diminui quando indivíduos com cores distintas se reproduzem.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A seleção natural favorece variantes herdáveis com maior reprodução local.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "A cor adquirida durante a vida passa aos filhotes por exposição.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A nova coloração surge em resposta dirigida à mudança ambiental.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "A seleção natural pode aumentar a frequência de variantes herdáveis que favorecem sobrevivência e reprodução naquele ambiente.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-34-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-34-CON-01",
+      "conceptIds": [
+        "CIE-34-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma explicação histórica sobre girafas propõe que ancestrais esticavam o pescoço para alcançar folhas altas e transmitiam aos descendentes o alongamento adquirido durante a vida. Essa narrativa associa necessidade, uso de uma estrutura e herança da característica resultante. A biologia evolutiva contemporânea explica mudanças populacionais considerando variação genética herdável e diferenças de reprodução, mas o exercício pede identificar a ideia histórica descrita no enunciado.",
+      "stem": "A explicação corresponde a qual ideia histórica?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Especiação por isolamento geográfico entre populações de girafas.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Deriva genética causada por variação aleatória na reprodução.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Mutação que antecipa a necessidade futura de alcançar folhas.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Seleção natural agindo sobre diferenças herdáveis anteriores ao esforço.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Herança de mudanças corporais adquiridas durante a vida do indivíduo.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A explicação atribui a transmissão de uma característica adquirida ao uso e à necessidade, ideia associada ao lamarckismo clássico.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-35-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-35-CON-01",
+      "conceptIds": [
+        "CIE-35-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma população de pequenos mamíferos sofre uma tempestade que reduz drasticamente o número de indivíduos. Os sobreviventes representam uma amostra aleatória da população original, e alguns alelos ficam mais comuns entre eles, mesmo sem oferecer vantagem adaptativa. Quando a população cresce de novo, as frequências alélicas permanecem diferentes das observadas antes do evento. Mudanças desse tipo podem ser acentuadas em populações pequenas e isoladas.",
+      "stem": "Que mecanismo pode explicar a alteração observada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A mudança converte ao mesmo tempo genótipos em outra espécie.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Deriva genética após um gargalo pode alterar frequências alélicas.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "A frequência aumenta porque o alelo melhora a aptidão na nova condição.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "O desastre transmite aos descendentes características adquiridas pelo esforço.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A mudança resulta da chegada de muitos indivíduos de outra população.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A redução populacional pode provocar efeito gargalo; a amostragem aleatória altera frequências por deriva genética.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-35-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-35-CON-01",
+      "conceptIds": [
+        "CIE-35-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Duas populações de uma espécie vivem em áreas próximas e indivíduos migram entre elas. Parte dos migrantes se reproduz no novo local e transmite alelos à geração seguinte. A movimentação pode modificar a composição genética das populações e reduzir diferenças que se acumulariam caso permanecessem isoladas. A questão considera que os indivíduos migrantes conseguem reproduzir-se e contribuir com variantes hereditárias para a população que os recebe.",
+      "stem": "Qual processo é favorecido pela situação descrita?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A migração produz isolamento reprodutivo entre as populações conectadas.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A chegada de indivíduos forma espécies novas antes do cruzamento.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "O movimento pode reduzir frequências de alelos locais por acaso.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A reprodução dos migrantes promove fluxo gênico entre populações.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "A troca de indivíduos impede mudanças nas frequências alélicas.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "A migração seguida de reprodução transfere alelos entre populações, processo chamado fluxo gênico.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-36-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-36-CON-01",
+      "conceptIds": [
+        "CIE-36-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma equipe encontra conchas fossilizadas em camadas sedimentares no alto de uma serra distante do litoral atual. A rocha que as contém foi formada quando sedimentos se acumularam, e movimentos tectônicos posteriores elevaram partes da crosta. Fósseis marinhos em regiões altas são registrados em diferentes lugares do mundo e ajudam a reconstruir ambientes antigos. A interpretação precisa relacionar evidências geológicas com mudanças de relevo ao longo de grandes intervalos de tempo.",
+      "stem": "Qual hipótese explica os fósseis encontrados na região?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A região pode ter recebido sedimentos marinhos antes de ser soerguida.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A presença de fósseis marinhos indica que o relevo atual se formou sob o oceano.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "As rochas se formaram em deserto sem contato com água.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Fósseis antigos não fornecem dados sobre ambientes passados.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Animais marinhos chegaram vivos ao topo da serra atual.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A região pode ter sido ambiente marinho durante a deposição e depois elevada por processos geológicos.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-36-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-36-CON-01",
+      "conceptIds": [
+        "CIE-36-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Pesquisadores estudam como moléculas simples da Terra primitiva poderiam ter originado sistemas capazes de replicação e metabolismo. Experimentos investigam etapas químicas possíveis, mas as condições antigas são inferidas a partir de evidências incompletas, como rochas, moléculas e modelos laboratoriais. Existem diferentes hipóteses sobre ambientes e sequências envolvidas. O trabalho científico compara previsões e evidências sem afirmar que cada passo histórico foi observado diretamente ou que todas as questões já estejam resolvidas.",
+      "stem": "Qual avaliação científica é prudente?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Experimentos históricos reproduziram etapas principais da origem da vida.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Hipóteses diferentes têm evidências idênticas e não se comparam.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Há hipóteses em investigação, mas a sequência exata segue incerta.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "A incerteza impede pesquisar processos químicos anteriores aos seres vivos.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Fósseis registram o instante em que surgiu a primeira célula.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "A origem da vida é investigada por hipóteses apoiadas em evidências, mas os detalhes da sequência não estão estabelecidos.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-37-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-37-CON-01",
+      "conceptIds": [
+        "CIE-37-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em um modelo do Sistema Solar, a Terra percorre uma órbita ao redor do Sol, enquanto a Lua percorre uma órbita ao redor da Terra. Em escala maior, o conjunto Terra-Lua também se desloca pelo espaço ao redor do Sol. Os corpos têm naturezas distintas: o Sol é uma estrela, a Terra é um planeta e a Lua é um satélite natural. Modelos de órbitas simplificam movimentos que, na realidade, envolvem gravidade entre vários corpos.",
+      "stem": "Qual distinção entre os movimentos descritos é correta?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O Sol é um planeta de grande porte que orbita a Lua.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A Lua é planeta por acompanhar a Terra em torno do Sol.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A Lua é uma estrela por percorrer uma órbita ao redor da Terra.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Terra e Lua se movem sem influência gravitacional do Sol.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A Terra orbita o Sol e a Lua orbita a Terra.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A descrição distingue a órbita terrestre em torno do Sol da órbita lunar em torno da Terra.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-37-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-37-CON-01",
+      "conceptIds": [
+        "CIE-37-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Mercúrio está muito mais próximo do Sol do que Netuno e percorre uma trajetória orbital menor. Um ano de cada planeta corresponde ao tempo necessário para completar uma revolução ao redor do Sol, enquanto um dia está relacionado à rotação em torno do próprio eixo. A gravidade solar e a distância orbital influenciam o período de revolução. Por isso, comparar anos planetários exige considerar a órbita, sem confundi-la com duração do dia.",
+      "stem": "Por que Mercúrio apresenta ano mais curto que Netuno?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A rotação lenta de Mercúrio define a duração de seu ano.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Sua órbita menor permite completar a revolução em menos tempo.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "O período orbital depende somente da massa do planeta.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Netuno está mais perto do Sol e percorre órbita mais lenta.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O número de satélites determina a duração do ano planetário.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "Mercúrio está mais perto do Sol e percorre uma órbita menor, completando sua revolução em menos tempo que Netuno.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-38-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-38-CON-01",
+      "conceptIds": [
+        "CIE-38-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "A Lua reflete a luz solar e mantém aproximadamente metade de sua superfície iluminada em cada instante. Durante sua órbita, a geometria entre Sol, Terra e Lua muda, alterando quanto dessa metade iluminada é visto por uma pessoa na Terra. A sequência observada ao longo de semanas inclui fases crescentes, cheia e minguantes. Eclipses ocorrem apenas em alinhamentos específicos e não explicam a mudança mensal regular de aparência.",
+      "stem": "Qual é a causa principal das fases lunares?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A Lua emite quantidades variáveis de luz própria a cada semana.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A superfície muda sua composição química durante o mês lunar.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A sombra da Terra cobre a Lua em cada transição entre duas fases.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A porção iluminada visível depende da posição relativa dos corpos.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "A Lua deixa de receber luz ao se aproximar do Sol.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "As fases dependem da fração iluminada da Lua visível da Terra conforme a geometria dos três corpos.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-38-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-38-CON-01",
+      "conceptIds": [
+        "CIE-38-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Quando a Lua está aproximadamente na direção do Sol vista da Terra, a face voltada para a Terra fica pouco iluminada. Essa configuração corresponde a uma fase específica, mas a inclinação da órbita lunar faz com que os três corpos não estejam perfeitamente alinhados em todas as ocasiões. Sem alinhamento, a sombra da Lua pode passar acima ou abaixo da Terra, e não ocorre eclipse solar. A observação continua dependendo da posição relativa dos corpos no céu.",
+      "stem": "Que fase pode ser observada aproximadamente?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Lua nova, fase que pode ocorrer sem eclipse solar.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "Lua cheia, com o hemisfério escuro voltado à Terra.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Quarto minguante, quando a Lua aparece a 90 graus do Sol.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Eclipse lunar, mesmo com os três corpos desalinhados.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A posição relativa dos corpos não altera a fase observada.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A Lua pode estar em fase nova sem eclipse quando a inclinação orbital impede o alinhamento exato.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-39-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-39-CON-01",
+      "conceptIds": [
+        "CIE-39-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "A luz do Sol leva cerca de oito minutos para chegar à Terra. A luz de uma estrela próxima além do Sol pode viajar por mais de quatro anos antes de ser observada aqui. No vácuo, a velocidade da luz é aproximadamente a mesma para ambas as fontes; o tempo maior reflete uma distância maior. Astrônomos usam o tempo de viagem da luz para expressar escalas espaciais difíceis de comparar em quilômetros.",
+      "stem": "O que a diferença no tempo de viagem da luz demonstra?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A observação mostra que o Sol é o objeto mais distante.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A luz da estrela viaja mais devagar que a luz solar.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A distância até a estrela é muito maior que Terra-Sol.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "A velocidade da luz depende principalmente do brilho da fonte.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Oito minutos-luz representam quatro anos de duração terrestre.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O tempo maior de viagem da luz indica que a estrela está muito mais distante que o Sol.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-39-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-39-CON-01",
+      "conceptIds": [
+        "CIE-39-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "No Sistema Solar, as distâncias entre planetas são frequentemente comparadas com a distância média entre Terra e Sol, chamada unidade astronômica. Para estrelas e outros objetos muito distantes, usa-se o ano-luz: a distância que a luz percorre em um ano. Ambas são unidades de comprimento, apesar de seus nomes diferentes. Escolher unidades adequadas torna números astronômicos mais manejáveis e facilita a comparação de escalas espaciais.",
+      "stem": "Qual justificativa para o uso de unidades distintas é adequada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A unidade astronômica descreve principalmente dimensões físicas dos planetas.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A mudança de unidade altera a velocidade da luz no espaço.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Distâncias do Sistema Solar só podem ser descritas em metros.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "O ano-luz mede idade estelar, sem representar uma distância.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Unidades distintas ajudam a expressar escalas espaciais diferentes.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A unidade astronômica é útil em escalas do Sistema Solar e o ano-luz em distâncias interestelares.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-40-NQ01",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-40-CON-01",
+      "conceptIds": [
+        "CIE-40-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma estrela de massa semelhante à do Sol produz energia por fusão nuclear em seu núcleo. Com o passar de bilhões de anos, o hidrogênio central é consumido gradualmente e a composição do núcleo muda. Isso afeta o equilíbrio entre pressão e gravidade e leva a mudanças estruturais, incluindo expansão das camadas externas em uma fase posterior. Estrelas nessa faixa de massa não seguem a mesma evolução de estrelas muito mais massivas.",
+      "stem": "O que marca a transição gradual para estágios posteriores?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Uma estrela semelhante ao Sol explode como supernova após consumir hidrogênio.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O esgotamento gradual do hidrogênio central altera o equilíbrio estelar.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "A massa inteira se transforma de uma vez em luz visível.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "O núcleo acumula hidrogênio sem passar por reações nucleares.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A gravidade desaparece assim que a estrela se forma.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "O consumo gradual do hidrogênio no núcleo altera sua composição e o equilíbrio, levando a expansão das camadas externas.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-CIE-40-NQ02",
+      "version": 1,
+      "subjectCode": "CIE",
+      "primaryConceptId": "CIE-40-CON-01",
+      "conceptIds": [
+        "CIE-40-CON-01"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Estrelas nascem com massas diferentes, e essa propriedade influencia sua luminosidade, ritmo de consumo de combustível e duração das etapas evolutivas. Uma estrela de baixa massa pode permanecer estável por muito tempo e terminar como anã branca após fases posteriores. Uma estrela muito massiva evolui mais rapidamente e pode deixar um remanescente compacto após uma explosão. Detalhes dependem de fatores adicionais, mas a massa inicial é um parâmetro central para prever o destino estelar.",
+      "stem": "Qual previsão sobre os destinos estelares é mais adequada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Estrelas seguem fases semelhantes, com diferenças na duração de cada etapa.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A massa inicial não afeta brilho nem duração da vida estelar.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "O destino final depende só da posição da estrela na galáxia.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A massa inicial influencia a evolução e o remanescente estelar.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Estrelas menos massivas terminam como buracos negros.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "A massa inicial influencia o ritmo de evolução e o tipo de remanescente que a estrela pode deixar.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    }
+  ]
+}

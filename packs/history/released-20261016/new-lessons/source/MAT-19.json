@@ -1,0 +1,524 @@
+{
+  "lessonId": "MAT-19",
+  "title": "Ângulos, retas paralelas e polígonos",
+  "subject": "MAT",
+  "estimatedMinutes": 40,
+  "editalItem": "MATEMÁTICA — item 3. Geometria: “Unidades de Medida: comprimento, área, perímetro, volume, capacidade e tempo; Geometria: ângulos, áreas e perímetros das figuras planas; Volume dos sólidos: cubo, paralelepípedo, cilindro. Relações métricas no triângulo retângulo.” Polígonos regulares e soma de ângulos são desdobramentos dos ângulos e figuras planas.",
+  "objectives": [
+    "Classificar ângulos pela medida.",
+    "Identificar correspondentes, alternos e colaterais internos.",
+    "Calcular ângulos desconhecidos em triângulos e polígonos.",
+    "Distinguir ângulos internos e externos em polígonos regulares."
+  ],
+  "concepts": [
+    {
+      "id": "MAT-19-C01",
+      "title": "Ângulos e relações básicas",
+      "summary": "Ângulo é a abertura entre duas semirretas de mesma origem, o vértice."
+    },
+    {
+      "id": "MAT-19-C02",
+      "title": "Paralelas e transversal",
+      "summary": "Quando duas retas paralelas são atravessadas por uma transversal, determinados pares de ângulos têm a mesma medida."
+    },
+    {
+      "id": "MAT-19-C03",
+      "title": "Triângulos e soma interna de polígonos",
+      "summary": "A soma dos três ângulos internos de qualquer triângulo plano é 180°."
+    },
+    {
+      "id": "MAT-19-C04",
+      "title": "Polígonos regulares e ângulos externos",
+      "summary": "Polígono regular tem lados com a mesma medida e ângulos internos iguais."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "MAT-19-B01",
+      "type": "note",
+      "title": "Por que isso importa?",
+      "content": "Uma equipe de alunos de São José ajuda a desenhar a pintura de um pátio escolar. As faixas precisam ser paralelas; um canteiro triangular ocupará um canto e uma placa terá formato hexagonal regular. Numa folha de anotações, alguém mediu 65° em uma transversal, escreveu 115° no ângulo vizinho e concluiu que os seis cantos do hexágono medem 60° cada. A primeira anotação pode estar coerente, mas a segunda confunde uma figura de seis lados com o triângulo equilátero. Saber ler relações de ângulos reduz desperdício de material e erros de projeto. Como conferir o desenho sem precisar medir cada canto com o transferidor?",
+      "conceptIds": [
+        "MAT-19-C01"
+      ]
+    },
+    {
+      "id": "MAT-19-B02",
+      "type": "concept",
+      "title": "Ângulos e relações básicas",
+      "content": "Ângulo é a abertura entre duas semirretas de mesma origem, o vértice. Uma volta completa mede 360°. Um ângulo agudo mede menos de 90°, um reto mede 90° e um obtuso fica entre 90° e 180°. Ângulos rasos medem 180°. Dois ângulos complementares somam 90° e dois suplementares somam 180°. Ângulos opostos pelo vértice, resultantes do cruzamento de duas retas, têm medidas iguais. Essas relações permitem determinar medidas que não aparecem indicadas no desenho.\n\nExemplo: Se uma dobradiça forma ângulo de 38° com a posição inicial, faltam 52° para completar um reto, porque 90 − 38 = 52. Ao lado de 38° numa linha reta, o ângulo adjacente vale 142°.\n\nContraexemplo: Não chame 38° e 142° de complementares: eles não completam um ângulo reto; são suplementares, pois totalizam 180°.\n\nErro a evitar: Não use “complementar” como sinônimo de “vizinho”; a soma é que decide.",
+      "conceptIds": [
+        "MAT-19-C01"
+      ]
+    },
+    {
+      "id": "MAT-19-B03",
+      "type": "concept",
+      "title": "Paralelas e transversal",
+      "content": "Quando duas retas paralelas são atravessadas por uma transversal, determinados pares de ângulos têm a mesma medida. Correspondentes ocupam a mesma posição relativa nos dois cruzamentos; alternos internos ficam entre as paralelas e em lados opostos da transversal. Ângulos colaterais internos, no mesmo lado da transversal entre as paralelas, somam 180°. A igualdade depende de as retas serem paralelas. Uma boa estratégia é marcar primeiro qual região está entre as paralelas e depois identificar os lados da transversal. Os ângulos opostos pelo vértice são iguais mesmo sem paralelismo.\n\nExemplo: Se um ângulo interno mede 68°, seu alterno interno mede 68°, enquanto o colateral interno mede 112°. Isso combina igualdade e suplemento em uma única configuração.\n\nContraexemplo: Se as ruas se encontram mais adiante, elas não são paralelas; a igualdade dos alternos internos não pode ser assumida com base só em um desenho parecido.\n\nErro a evitar: Não confunda ângulos alternos internos com colaterais internos: um par é igual, o outro é suplementar.",
+      "conceptIds": [
+        "MAT-19-C02"
+      ]
+    },
+    {
+      "id": "MAT-19-B04",
+      "type": "concept",
+      "title": "Triângulos e soma interna de polígonos",
+      "content": "A soma dos três ângulos internos de qualquer triângulo plano é 180°. Para um polígono convexo de n lados, traçar diagonais a partir de um vértice o divide em n − 2 triângulos; por isso S = (n − 2) × 180°, em graus. Um quadrilátero soma 360°, um pentágono soma 540° e um hexágono soma 720°. O raciocínio com triangulação explica a fórmula; não é necessário decorar cada caso. O valor da soma depende do número de lados, não de o polígono ser regular.\n\nExemplo: Um pentágono convexo pode ter ângulos 100°, 105°, 110°, 115° e 110°. A soma é 540°, mesmo que os cinco ângulos sejam diferentes.\n\nContraexemplo: Um hexágono não soma 1080°: essa seria a soma de um octógono, pois 8 − 2 = 6 triângulos.\n\nErro a evitar: Não multiplique n por 180°; subtraia dois lados antes de multiplicar.",
+      "conceptIds": [
+        "MAT-19-C03"
+      ]
+    },
+    {
+      "id": "MAT-19-B05",
+      "type": "concept",
+      "title": "Polígonos regulares e ângulos externos",
+      "content": "Polígono regular tem lados com a mesma medida e ângulos internos iguais. Se for convexo, cada ângulo interno mede S ÷ n = [(n − 2) × 180°] ÷ n. Cada ângulo externo adjacente a um interno completa 180°; portanto, num regular, cada externo mede 360° ÷ n. Uma volta pelos vértices externos de qualquer polígono convexo totaliza 360°. O ângulo externo ajuda a comparar figuras com muitos lados, porque fica menor quando n aumenta. Para verificar a coerência, some um interno e seu externo: devem dar 180°.\n\nExemplo: Num hexágono regular, cada externo mede 360° ÷ 6 = 60°, enquanto cada interno mede 120°. A soma de seis internos é 720°.\n\nContraexemplo: O fato de uma figura ter seis lados não a torna regular: pode haver lados e ângulos de medidas diferentes.\n\nErro a evitar: Não atribua 60° ao ângulo interno do hexágono regular; 60° é o externo.",
+      "conceptIds": [
+        "MAT-19-C04"
+      ]
+    },
+    {
+      "id": "MAT-19-B06",
+      "type": "worked-example",
+      "title": "Canteiro triangular no pátio",
+      "content": "Um canteiro triangular tem dois ângulos internos de 47° e 68°. Qual é o terceiro?\n\n1. Use a propriedade do triângulo: soma interna = 180°.\n2. Some os conhecidos: 47° + 68° = 115°.\n3. Calcule o ausente: 180° − 115° = 65°.\n4. Confira que 47° + 68° + 65° = 180°.\n\nConferência: Como 65° é positivo e menor que 180°, o valor é geometricamente possível; a soma inversa reproduz os 180°.",
+      "conceptIds": [
+        "MAT-19-C01",
+        "MAT-19-C04"
+      ]
+    },
+    {
+      "id": "MAT-19-B07",
+      "type": "worked-example",
+      "title": "Pintura de placa hexagonal",
+      "content": "A placa terá seis lados e seis ângulos internos iguais. Determine o ângulo interno de cada vértice.\n\n1. Um hexágono pode ser dividido em 6 − 2 = 4 triângulos.\n2. Soma interna = 4 × 180° = 720°.\n3. Como é regular, divida por seis: 720° ÷ 6 = 120°.\n4. O externo adjacente mede 180° − 120° = 60°.\n\nConferência: Seis externos de 60° completam uma volta de 360° e seis internos de 120° somam 720°.",
+      "conceptIds": [
+        "MAT-19-C02",
+        "MAT-19-C04"
+      ]
+    },
+    {
+      "id": "MAT-19-B08",
+      "type": "warning",
+      "title": "Como cai no IFSC",
+      "content": "1. Achar que ângulos colaterais internos são iguais, quando devem somar 180°.\n\n2. Usar 360° como soma interna de todo polígono, confundindo-a com volta completa.\n\n3. Aplicar fórmulas de ângulos iguais a qualquer polígono de seis lados, sem verificar regularidade.\n\n4. Tomar como real a aparência de paralelismo num desenho sem indicação geométrica.",
+      "conceptIds": [
+        "MAT-19-C01",
+        "MAT-19-C02",
+        "MAT-19-C03",
+        "MAT-19-C04"
+      ]
+    },
+    {
+      "id": "MAT-19-B09",
+      "type": "summary",
+      "title": "Ideias essenciais",
+      "content": "Ângulos complementares somam 90°; suplementares, 180°. Opostos pelo vértice têm medidas iguais. Paralelas cortadas por transversal criam correspondentes e alternos iguais. Colaterais internos somam 180°. Todo triângulo plano tem 180° internos. Polígono convexo de n lados tem soma (n − 2) × 180°. No regular, interno = [(n − 2) × 180°] ÷ n e externo = 360° ÷ n.",
+      "conceptIds": [
+        "MAT-19-C01",
+        "MAT-19-C02",
+        "MAT-19-C03",
+        "MAT-19-C04"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "MAT-19-Q01",
+      "difficulty": "foundation",
+      "conceptIds": [
+        "MAT-19-C01"
+      ],
+      "stimulus": "Na montagem de um palco em Itajaí, duas peças de madeira formam uma abertura de 36°. Um estudante desenhou um esquadro de 90° e quer completar o canto com outra peça, sem sobrepor as bordas. Ele calcula a abertura restante e depois consulta a equipe para escolher a peça correta. O desenho marca claramente um único ângulo reto e os dois ângulos internos adjacentes. As medidas foram tomadas no mesmo plano, com esquadro conferido.",
+      "stem": "Qual deve ser a abertura da segunda peça para completar o ângulo reto?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Abertura de 144°, ângulo suplementar ao reto.",
+          "correct": false,
+          "targetsError": "suplemento indevido",
+          "rationale": "O enunciado especifica um canto reto, de 90°, e não uma linha de 180°."
+        },
+        {
+          "id": "B",
+          "content": "Abertura de 36°, igual à peça que já está montada.",
+          "correct": false,
+          "targetsError": "igualdade inventada",
+          "rationale": "A decomposição de um reto não exige ângulos iguais."
+        },
+        {
+          "id": "C",
+          "content": "Abertura de 90°, equivalente ao ângulo completo do canto.",
+          "correct": false,
+          "targetsError": "ignorar dado",
+          "rationale": "O complemento é uma parte do ângulo reto e deve considerar os 36°."
+        },
+        {
+          "id": "D",
+          "content": "Abertura de 54°, completando o ângulo reto.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: A soma complementar é 90°. Portanto 90 − 36 = 54°. O erro tentador é usar 180°, apropriado para suplementares, não para este esquadro."
+        },
+        {
+          "id": "E",
+          "content": "Abertura de 126°, medida associada à volta completa.",
+          "correct": false,
+          "targetsError": "volta confundida",
+          "rationale": "Uma volta completa não é a região que será preenchida."
+        }
+      ],
+      "explanation": "A soma complementar é 90°. Portanto 90 − 36 = 54°. O erro tentador é usar 180°, apropriado para suplementares, não para este esquadro."
+    },
+    {
+      "id": "MAT-19-Q02",
+      "difficulty": "foundation",
+      "conceptIds": [
+        "MAT-19-C02"
+      ],
+      "stimulus": "O projeto de uma horta escolar usa duas retas r e s paralelas, ambas atravessadas por uma faixa t. No primeiro cruzamento, o ângulo agudo interno à direita de t mede 72°. O responsável pelo desenho precisa registrar o ângulo interno que fica à esquerda de t no segundo cruzamento. Os lados da transversal estão explicitamente indicados para evitar leitura pela aparência. A equipe quer descobrir a medida sem fazer nova medição, aproveitando uma propriedade geométrica.",
+      "stem": "Qual medida é correta para o ângulo alterno interno procurado?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "108°, medida de um par colateral interno.",
+          "correct": false,
+          "targetsError": "par trocado",
+          "rationale": "O ângulo procurado está no lado oposto da transversal."
+        },
+        {
+          "id": "B",
+          "content": "72°, medida do ângulo alterno interno correspondente.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Alternos internos, em lados opostos da transversal e entre paralelas, são iguais: 72°. A opção 108° corresponderia a um par suplementar, não ao descrito."
+        },
+        {
+          "id": "C",
+          "content": "36°, metade do ângulo no primeiro cruzamento.",
+          "correct": false,
+          "targetsError": "bisseção inexistente",
+          "rationale": "Não há indicação de bissetriz ou divisão em partes iguais."
+        },
+        {
+          "id": "D",
+          "content": "144°, o dobro do ângulo agudo inicial.",
+          "correct": false,
+          "targetsError": "duplicação",
+          "rationale": "A transversal não dobra as medidas dos alternos internos."
+        },
+        {
+          "id": "E",
+          "content": "90°, ângulo reto entre as paralelas e a transversal.",
+          "correct": false,
+          "targetsError": "perpendicularidade",
+          "rationale": "A transversal não foi descrita como perpendicular às paralelas."
+        }
+      ],
+      "explanation": "Alternos internos, em lados opostos da transversal e entre paralelas, são iguais: 72°. A opção 108° corresponderia a um par suplementar, não ao descrito."
+    },
+    {
+      "id": "MAT-19-Q03",
+      "difficulty": "direct",
+      "conceptIds": [
+        "MAT-19-C03"
+      ],
+      "stimulus": "Em uma atividade de desenho geométrico de Criciúma, um triângulo de cartolina precisa encaixar numa moldura. Dois ângulos internos medidos pelos alunos são 53° e 69°. A ponta restante está coberta por uma etiqueta, e a professora pede que a turma determine sua abertura por cálculo. A moldura está sobre uma mesa plana, sem deformações, e todos os ângulos são internos ao mesmo triângulo. A equipe registra a soma antes de recortar.",
+      "stem": "Qual é o terceiro ângulo interno desse triângulo?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "122°, soma dos dois ângulos informados.",
+          "correct": false,
+          "targetsError": "suplemento isolado",
+          "rationale": "O terceiro ângulo depende da soma dos dois já conhecidos."
+        },
+        {
+          "id": "B",
+          "content": "64°, terceiro ângulo interno do triângulo.",
+          "correct": false,
+          "targetsError": "troca de medida",
+          "rationale": "O segundo ângulo conhecido vale 69°, não 53°."
+        },
+        {
+          "id": "C",
+          "content": "48°, terceiro ângulo interno do triângulo.",
+          "correct": false,
+          "targetsError": "ajuste arbitrário",
+          "rationale": "O problema não prevê margem de corte angular."
+        },
+        {
+          "id": "D",
+          "content": "238°, soma interna atribuída ao triângulo.",
+          "correct": false,
+          "targetsError": "soma indevida",
+          "rationale": "Ângulo interno de um triângulo não pode exceder sua soma total."
+        },
+        {
+          "id": "E",
+          "content": "58°, terceiro ângulo interno do triângulo.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: A soma interna é 180°. Como 53 + 69 = 122, resta 180 − 122 = 58°. A alternativa 122° apresenta a soma dos conhecidos, não o restante."
+        }
+      ],
+      "explanation": "A soma interna é 180°. Como 53 + 69 = 122, resta 180 − 122 = 58°. A alternativa 122° apresenta a soma dos conhecidos, não o restante."
+    },
+    {
+      "id": "MAT-19-Q04",
+      "difficulty": "direct",
+      "conceptIds": [
+        "MAT-19-C03"
+      ],
+      "stimulus": "Um designer prepara uma logomarca escolar em forma de pentágono convexo. Ao revisar o arquivo, ele mede quatro de seus ângulos internos: 105°, 112°, 119° e 98°. O quinto canto fica sobre um elemento visual e será calculado. O desenho não é regular; as medidas diferentes foram confirmadas. A turma pretende usar a regra de triangulação para conferir se a peça pode ser construída sem sobreposição nem dobras.",
+      "stem": "Qual é a medida do quinto ângulo interno?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "106°, medida do quinto ângulo interno.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: A soma é (5 − 2) × 180 = 540°. Os quatro conhecidos somam 434°, restando 106°. O erro mais comum é usar 360°, valor de uma volta e de quadriláteros."
+        },
+        {
+          "id": "B",
+          "content": "74°, medida do quinto ângulo interno.",
+          "correct": false,
+          "targetsError": "volta completa",
+          "rationale": "360° não é a soma interna de um pentágono convexo."
+        },
+        {
+          "id": "C",
+          "content": "126°, medida do quinto ângulo interno.",
+          "correct": false,
+          "targetsError": "triangulação incorreta",
+          "rationale": "Um pentágono convexo admite n − 2 = 3 triângulos a partir de um vértice."
+        },
+        {
+          "id": "D",
+          "content": "118°, medida do quinto ângulo interno.",
+          "correct": false,
+          "targetsError": "dado alterado",
+          "rationale": "O ângulo informado é 98°."
+        },
+        {
+          "id": "E",
+          "content": "146°, medida do quinto ângulo interno.",
+          "correct": false,
+          "targetsError": "soma inflada",
+          "rationale": "O total necessário já é fixado por 3 × 180°."
+        }
+      ],
+      "explanation": "A soma é (5 − 2) × 180 = 540°. Os quatro conhecidos somam 434°, restando 106°. O erro mais comum é usar 360°, valor de uma volta e de quadriláteros."
+    },
+    {
+      "id": "MAT-19-Q05",
+      "difficulty": "applied",
+      "conceptIds": [
+        "MAT-19-C02"
+      ],
+      "stimulus": "Para instalar refletores, uma equipe desenhou duas passarelas paralelas cortadas por uma diagonal. Um dos ângulos internos à direita da diagonal mede 117°. O projetista deseja encontrar o ângulo interno do mesmo lado no segundo cruzamento. O desenho indica paralelismo por marcas iguais nas passarelas, e nenhum ângulo reto foi anunciado. A medida será usada numa ficha técnica que não aceita leitura aproximada do desenho.",
+      "stem": "Qual medida deve ser anotada para o ângulo colateral interno?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "117°, ângulo colateral interno correspondente.",
+          "correct": false,
+          "targetsError": "relação trocada",
+          "rationale": "Colaterais internos do mesmo lado são suplementares, não alternos iguais."
+        },
+        {
+          "id": "B",
+          "content": "73°, ângulo colateral interno correspondente.",
+          "correct": false,
+          "targetsError": "base falsa",
+          "rationale": "Uma linha reta equivale a 180°, não 190°."
+        },
+        {
+          "id": "C",
+          "content": "63°, ângulo colateral interno correspondente.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Ângulos colaterais internos somam 180°: 180 − 117 = 63°. Copiar 117° confundiria colaterais com alternos."
+        },
+        {
+          "id": "D",
+          "content": "243°, ângulo colateral interno correspondente.",
+          "correct": false,
+          "targetsError": "volta indevida",
+          "rationale": "O par ocupa uma faixa entre paralelas e soma 180°."
+        },
+        {
+          "id": "E",
+          "content": "27°, ângulo colateral interno correspondente.",
+          "correct": false,
+          "targetsError": "reto indevido",
+          "rationale": "Não foi informada perpendicularidade da transversal."
+        }
+      ],
+      "explanation": "Ângulos colaterais internos somam 180°: 180 − 117 = 63°. Copiar 117° confundiria colaterais com alternos."
+    },
+    {
+      "id": "MAT-19-Q06",
+      "difficulty": "applied",
+      "conceptIds": [
+        "MAT-19-C03"
+      ],
+      "stimulus": "No projeto de uma praça, a área de descanso terá formato de octógono convexo com oito lados. A equipe decidiu não exigir lados iguais, mas precisa conferir a soma de todos os ângulos internos para revisar as peças de revestimento. Um aluno propôs contar triângulos traçando diagonais desde um único vértice. Os outros verificaram que essas diagonais permanecem no interior do octógono convexo. O objetivo é chegar ao total sem medir cada ângulo isoladamente.",
+      "stem": "Quanto somam os ângulos internos do octógono?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "1440°, soma interna do octógono.",
+          "correct": false,
+          "targetsError": "n por 180",
+          "rationale": "A divisão interna produz n − 2 triângulos."
+        },
+        {
+          "id": "B",
+          "content": "1080°, soma interna do octógono.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Para n = 8, S = (8 − 2) × 180° = 1080°. A opção 1440° ignora a subtração de dois triângulos."
+        },
+        {
+          "id": "C",
+          "content": "900°, soma interna do octógono.",
+          "correct": false,
+          "targetsError": "triângulo faltante",
+          "rationale": "No octógono convexo são seis triângulos."
+        },
+        {
+          "id": "D",
+          "content": "360°, soma interna do octógono.",
+          "correct": false,
+          "targetsError": "externo por interno",
+          "rationale": "360° é a soma dos ângulos externos, não internos."
+        },
+        {
+          "id": "E",
+          "content": "1260°, soma interna do octógono.",
+          "correct": false,
+          "targetsError": "triângulo extra",
+          "rationale": "A triangulação dá 8 − 2 = 6, não sete."
+        }
+      ],
+      "explanation": "Para n = 8, S = (8 − 2) × 180° = 1080°. A opção 1440° ignora a subtração de dois triângulos."
+    },
+    {
+      "id": "MAT-19-Q07",
+      "difficulty": "ifsc",
+      "conceptIds": [
+        "MAT-19-C04"
+      ],
+      "stimulus": "Um arquiteto desenhou um painel de formato hexagonal regular numa escola de Lages. As seis bordas têm o mesmo comprimento e os seis cantos internos são congruentes. Para fazer a estrutura, a oficina precisa de uma medida de ângulo interno em cada encontro de barras e outra do ângulo externo adjacente. A equipe sabe que uma volta pelos ângulos externos soma 360° e vai usar essa informação para evitar confundir as duas medidas.",
+      "stem": "Quais são, respectivamente, os ângulos interno e externo de cada vértice?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "60° interno e 120° externo em cada vértice.",
+          "correct": false,
+          "targetsError": "inversão",
+          "rationale": "O ângulo externo é 360° ÷ 6 = 60°, não o interno."
+        },
+        {
+          "id": "B",
+          "content": "90° interno e 90° externo em cada vértice.",
+          "correct": false,
+          "targetsError": "figura trocada",
+          "rationale": "Um hexágono regular não possui ângulos internos retos."
+        },
+        {
+          "id": "C",
+          "content": "108° interno e 72° externo em cada vértice.",
+          "correct": false,
+          "targetsError": "n incorreto",
+          "rationale": "Essas medidas correspondem a cinco lados."
+        },
+        {
+          "id": "D",
+          "content": "120° interno e 60° externo em cada vértice.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Externo = 360° ÷ 6 = 60°. Interno = 180° − 60° = 120°. A inversão 60°/120° é o distrator mais próximo."
+        },
+        {
+          "id": "E",
+          "content": "135° interno e 45° externo em cada vértice.",
+          "correct": false,
+          "targetsError": "lado incorreto",
+          "rationale": "Esses valores seriam de oito lados, não seis."
+        }
+      ],
+      "explanation": "Externo = 360° ÷ 6 = 60°. Interno = 180° − 60° = 120°. A inversão 60°/120° é o distrator mais próximo."
+    },
+    {
+      "id": "MAT-19-Q08",
+      "difficulty": "ifsc",
+      "conceptIds": [
+        "MAT-19-C04"
+      ],
+      "stimulus": "Numa oficina de maquetes, uma estudante propôs usar um quadrilátero para representar o teto de um quiosque. O desenho tem ângulos internos medindo 80°, 90°, 100° e 90°. Outra colega observou que a soma permite um quadrilátero, mas as medidas não tornam o polígono regular. A equipe ainda precisa verificar uma afirmação do relatório, segundo a qual possuir quatro lados bastaria para ter quatro ângulos de 90°.",
+      "stem": "Qual conclusão o conjunto de ângulos permite?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Soma de 360°, mas sem quatro ângulos iguais.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: 80 + 90 + 100 + 90 = 360°, compatível com quadrilátero. Mas os ângulos variam, então não é equiângulo e tampouco regular."
+        },
+        {
+          "id": "B",
+          "content": "Soma de 360° e quadrilátero regular.",
+          "correct": false,
+          "targetsError": "soma como regularidade",
+          "rationale": "A soma não exige igualdade de lados ou ângulos."
+        },
+        {
+          "id": "C",
+          "content": "Soma de 270° nos ângulos internos.",
+          "correct": false,
+          "targetsError": "omissão",
+          "rationale": "Os quatro ângulos internos contam na soma."
+        },
+        {
+          "id": "D",
+          "content": "Soma de 450° nos ângulos internos.",
+          "correct": false,
+          "targetsError": "dupla contagem",
+          "rationale": "Repetição de medida não altera a contagem de vértices."
+        },
+        {
+          "id": "E",
+          "content": "Soma de 540° nos ângulos internos.",
+          "correct": false,
+          "targetsError": "polígono errado",
+          "rationale": "Um quadrilátero tem quatro lados; sua soma é 360°."
+        }
+      ],
+      "explanation": "80 + 90 + 100 + 90 = 360°, compatível com quadrilátero. Mas os ângulos variam, então não é equiângulo e tampouco regular."
+    }
+  ],
+  "exitTicketQuestionIds": [
+    "MAT-19-Q05",
+    "MAT-19-Q07"
+  ],
+  "sources": [
+    {
+      "title": "Base Nacional Comum Curricular",
+      "author": "Ministério da Educação",
+      "url": "https://basenacionalcomum.mec.gov.br/",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    },
+    {
+      "title": "Manual do Professor, Matemática 9º ano, PNLD 2024",
+      "author": "Editora Saraiva / PNLD",
+      "url": "https://storage.googleapis.com/edocente-content-production/PNLD/PNLD_2024_OBJETO_1/Saraiva/Matematica/index_matematica_9ano_MP.pdf",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    }
+  ]
+}
