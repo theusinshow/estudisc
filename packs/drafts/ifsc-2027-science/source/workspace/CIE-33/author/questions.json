@@ -2,139 +2,180 @@
   {
     "id": "CIE-33-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de métodos anticoncepcionais e ists, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Na feira de saúde do campus, Joana anotou duas metas para uma consulta: reduzir a chance de gravidez e conversar sobre prevenção de infecções. No folheto, encontrou preservativo externo, pílula, implante e DIU, mas os quadros de eficácia tratavam de desfechos diferentes. Ela registrou que um teste de gravidez não informa risco de IST e que a equipe sugeriu considerar preferências e acesso com profissional. A folha não comparava taxas numéricas entre métodos nem recomendava uma escolha única.\n\nQual leitura respeita os dois objetivos e as informações consultadas?",
     "options": [
       {
         "key": "A",
-        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+        "text": "A pílula pode ser considerada para contracepção, e a eficácia do folheto orienta a prevenção de IST.",
+        "targetsError": "conceptual",
+        "rationale": "A opção transfere a finalidade contraceptiva da pílula para a prevenção de IST, que o material distingue como outro desfecho."
       },
       {
         "key": "B",
-        "text": "Todos os métodos contraceptivos têm o mesmo mecanismo e a mesma eficácia."
+        "text": "DIU e implante atendem a objetivos contraceptivos, então preferências podem ser discutidas depois.",
+        "targetsError": "interpretation",
+        "rationale": "A alternativa descarta um dado explícito do caso: a equipe pediu que preferências e acesso entrassem na conversa."
       },
       {
         "key": "C",
-        "text": "Somente pessoas com sintomas podem transmitir ISTs."
+        "text": "Para conversar sobre gravidez e IST, ela pode considerar preservativo junto a outro método contraceptivo."
       },
       {
         "key": "D",
-        "text": "Usar dois preservativos ao mesmo tempo aumenta a proteção."
+        "text": "Um teste de gravidez negativo ajuda a avaliar a possibilidade de IST no contato mencionado.",
+        "targetsError": "conceptual",
+        "rationale": "O registro afirma que o teste consultado avalia gravidez; a opção atribui a ele uma informação que não mede."
       },
       {
         "key": "E",
-        "text": "Preservativos funcionam como barreira e também reduzem o risco de transmissão de muitas ISTs quando usados corretamente."
+        "text": "As taxas de eficácia para gravidez também permitem comparar a proteção contra infecções.",
+        "targetsError": "interpretation",
+        "rationale": "A alternativa confunde dois desfechos que o folheto organizou em quadros separados."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Preservativos funcionam como barreira e também reduzem o risco de transmissão de muitas ISTs quando usados corretamente.",
+    "correctOption": "C",
+    "explanation": "O folheto separa desfechos e a estudante quer tratar de gravidez e infecções; por isso, a conversa pode combinar um método contraceptivo com preservativo. Comparar apenas dados de gravidez não responde à segunda meta.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-33-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-33-CON-01"
   },
   {
     "id": "CIE-33-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar métodos anticoncepcionais e ists sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Em uma consulta simulada da turma, Rui contou que usa pílula e pretende manter esse método. Ele e a parceira estavam sem sintomas e, por isso, haviam deixado de conversar sobre testagem e preservativos. A ficha do exercício listava como objetivos evitar gravidez e reduzir exposição a IST. A profissional fictícia pediu que o casal distinguisse os dois objetivos e anotasse dúvidas para uma conversa individual, sem sugerir que interrompessem ou trocassem o método em uso.\n\nQual interpretação dos objetivos é coerente com a situação?",
     "options": [
       {
         "key": "A",
-        "text": "Somente pessoas com sintomas podem transmitir ISTs."
+        "text": "A pílula pode ser discutida para contracepção; sem sintomas, o preservativo pode ser dispensado."
       },
       {
         "key": "B",
-        "text": "Usar dois preservativos ao mesmo tempo aumenta a proteção."
+        "text": "A ausência de sintomas pode ser considerada junto a outros fatores ao conversar sobre testagem.",
+        "targetsError": "interpretation",
+        "rationale": "O caso registra ausência de sintomas, mas não apresenta resultado de teste que permita descartar uma infecção."
       },
       {
         "key": "C",
-        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+        "text": "O implante pode ser comparado ao preservativo para os dois objetivos registrados na ficha.",
+        "targetsError": "conceptual",
+        "rationale": "A opção equipara um método contraceptivo de longa duração a uma barreira relacionada à prevenção de IST."
       },
       {
         "key": "D",
-        "text": "Todos os métodos contraceptivos têm o mesmo mecanismo e a mesma eficácia."
+        "text": "Conversar sobre DIU no lugar da pílula também resolve a questão de prevenção de IST.",
+        "targetsError": "conceptual",
+        "rationale": "A troca entre métodos contraceptivos não responde ao objetivo separado de reduzir exposição a IST."
       },
       {
         "key": "E",
-        "text": "Métodos hormonais atuam principalmente sobre ovulação e muco cervical, mas não protegem de ISTs."
+        "text": "Os dados de eficácia contraceptiva ajudam a estimar a redução de exposição a IST.",
+        "targetsError": "interpretation",
+        "rationale": "A ficha apresenta dois objetivos; uma medida de eficácia para gravidez não pode ser transferida automaticamente para infecções."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Métodos hormonais atuam principalmente sobre ovulação e muco cervical, mas não protegem de ISTs.",
+    "correctOption": "A",
+    "explanation": "A ficha separa gravidez de exposição a IST. A pílula pode ser discutida para contracepção, enquanto o plano de prevenção de infecções precisa considerar uma medida adicional; ausência de sintomas não resolve essa questão.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-33-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-33-CON-02"
   },
   {
     "id": "CIE-33-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em métodos anticoncepcionais e ists?",
+    "stem": "Uma atividade de vigilância fictícia reuniu 30 pessoas que aceitaram fazer exames depois de uma campanha de informação. O relatório didático registrou quatro resultados positivos para uma IST; três dessas pessoas disseram não ter percebido sintomas antes da coleta. A equipe não publicou nomes nem tentou relacionar os resultados a um método contraceptivo específico. Na discussão, os estudantes precisavam avaliar qual conclusão cabia aos dados e qual exigiria informações que o relatório não fornecia.\n\nQual conclusão é sustentada pelo registro?",
     "options": [
       {
         "key": "A",
-        "text": "Usar dois preservativos ao mesmo tempo aumenta a proteção."
+        "text": "O relatório permite relacionar os resultados positivos aos métodos usados pelas pessoas examinadas.",
+        "targetsError": "interpretation",
+        "rationale": "O relatório não informa os métodos usados nem descreve um desenho capaz de estabelecer causa."
       },
       {
         "key": "B",
-        "text": "Somente pessoas com sintomas podem transmitir ISTs."
+        "text": "As quatro pessoas com resultado positivo relataram sinais antes da coleta dos exames.",
+        "targetsError": "interpretation",
+        "rationale": "O texto informa que três das quatro pessoas não haviam percebido sintomas antes do exame."
       },
       {
         "key": "C",
-        "text": "Todos os métodos contraceptivos têm o mesmo mecanismo e a mesma eficácia."
+        "text": "O levantamento ajuda a estimar o risco entre pessoas que não participaram da atividade.",
+        "targetsError": "interpretation",
+        "rationale": "A atividade reuniu um grupo específico que aceitou participar; não há amostragem descrita para representar toda a comunidade."
       },
       {
         "key": "D",
-        "text": "DIU e implante são métodos de longa duração com mecanismos distintos; escolha deve considerar orientação em saúde e preferências da pessoa."
+        "text": "Há resultados positivos entre participantes que não relataram sintomas antes da coleta."
       },
       {
         "key": "E",
-        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+        "text": "A ausência de sintomas torna incerta a identificação dos resultados registrados como positivos.",
+        "targetsError": "interpretation",
+        "rationale": "O registro liga explicitamente resultados positivos a participantes sem sintomas percebidos, contrariando essa leitura."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D é a correta: DIU e implante são métodos de longa duração com mecanismos distintos; escolha deve considerar orientação em saúde e preferências da pessoa.",
+    "explanation": "Há resultados positivos entre participantes sem sintomas relatados, então o caso mostra por que a ausência de sinais não substitui testagem. O relatório não compara métodos e não permite atribuir resultados a um deles.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-33-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-33-CON-03"
   },
   {
     "id": "CIE-33-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma pessoa deseja reduzir ao mesmo tempo o risco de gravidez e de IST. Qual estratégia geral é mais adequada?",
+    "stem": "No roteiro de uma consulta fictícia, Elisa quer conversar sobre métodos de longa duração e também relata preocupação com uma possível exposição a IST. A ficha registra que ela prefere comparar opções antes de decidir e que ainda não conhece os mecanismos do implante e do DIU. A profissional do caso sugere discutir histórico de saúde, dúvidas e acesso, além de separar a conversa sobre gravidez daquela sobre infecções. Nenhuma taxa de eficácia ou indicação individual aparece no roteiro.\n\nQual encaminhamento acompanha melhor as informações da ficha?",
     "options": [
       {
         "key": "A",
-        "text": "Usar apenas antibiótico preventivamente."
+        "text": "Comparar duração e mecanismos pode orientar a conversa antes de considerar dúvidas sobre IST.",
+        "targetsError": "procedural",
+        "rationale": "A ficha não fornece uma comparação de duração nem autoriza encerrar a discussão sobre a exposição relatada."
       },
       {
         "key": "B",
-        "text": "Usar dois preservativos simultaneamente."
+        "text": "Comparar mecanismos e preferências e tratar a prevenção de IST em uma conversa própria."
       },
       {
         "key": "C",
-        "text": "Usar somente método hormonal, pois ele evita ISTs."
+        "text": "Discutir o implante ou o DIU como opções que também reduzem a exposição a IST.",
+        "targetsError": "conceptual",
+        "rationale": "O roteiro trata de métodos de longa duração e de uma preocupação com IST; escolher um método contraceptivo não resolve por si só a segunda questão."
       },
       {
         "key": "D",
-        "text": "Usar preservativo corretamente e, se desejado, associá-lo a outro método contraceptivo apropriado."
+        "text": "Comparar os métodos como se a finalidade contraceptiva implicasse mecanismos iguais.",
+        "targetsError": "interpretation",
+        "rationale": "A ficha destaca que Elisa ainda não conhece os mecanismos; finalidade semelhante não demonstra mecanismo idêntico."
       },
       {
         "key": "E",
-        "text": "Evitar qualquer testagem porque ausência de sintomas garante ausência de IST."
+        "text": "Usar a preferência por longa duração como um dos dados para avaliar proteção contra IST.",
+        "targetsError": "conceptual",
+        "rationale": "Preferência orienta a escolha informada, mas não é um método de prevenção de infecções."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Usar preservativo corretamente e, se desejado, associá-lo a outro método contraceptivo apropriado.",
+    "correctOption": "B",
+    "explanation": "Elisa ainda compara opções e expressa uma segunda preocupação; uma conversa informada pode tratar mecanismos e preferências e incluir preservativo na prevenção de IST. Escolher apenas um método de longa duração não cobre automaticamente a segunda preocupação.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +184,47 @@
       "CIE-33-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-33-CON-01"
   },
   {
     "id": "CIE-33-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Preservativos funcionam como barreira e também reduzem o risco de transmissão de muitas ISTs quando usados corretamente.\nII. Pílula anticoncepcional protege contra HIV e todas as ISTs.\nIII. DIU e implante são métodos de longa duração com mecanismos distintos; escolha deve considerar orientação em saúde e preferências da pessoa.\nIV. Usar dois preservativos ao mesmo tempo aumenta a proteção.\nAssinale a alternativa CORRETA.",
+    "stem": "Em uma roda de conversa, quatro cartazes resumiram dúvidas recebidas pelo posto-escola. Um associava pílula a prevenção de IST; outro tratava implante e DIU como se tivessem o mesmo mecanismo; um terceiro dizia que só quem percebe sintomas poderia transmitir infecção. O último cartaz propunha discutir preservativo, testagem e vacinação disponível no serviço conforme a situação. A turma deveria revisar as frases antes de montar um painel de orientação, sem transformar o exercício em prescrição individual.\n\nQual síntese corrige melhor as dúvidas registradas?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Pílula e implante têm mecanismos distintos, mas podem ser discutidos como barreiras contra IST.",
+        "targetsError": "conceptual",
+        "rationale": "A alternativa atribui a métodos hormonais uma função de barreira que o material não lhes confere."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A ausência de sintomas pode entrar na conversa, embora não substitua prevenção ou testagem.",
+        "targetsError": "interpretation",
+        "rationale": "O caso justamente contesta a conclusão de que a falta de sintomas encerra a avaliação."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "DIU e implante têm mecanismos contraceptivos diferentes, que podem ser comparados conforme o caso.",
+        "targetsError": "conceptual",
+        "rationale": "A dúvida do cartaz é sobre mecanismos distintos; a opção também elimina sem base a preferência individual."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Vacinação disponível no serviço pode ser considerada sem discutir outras formas de prevenção.",
+        "targetsError": "interpretation",
+        "rationale": "O cartaz final combina recursos conforme a situação, em vez de apresentar vacinação como resposta única."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Preservativo, testagem e vacinação disponível podem integrar uma conversa adequada ao caso."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "correctOption": "E",
+    "explanation": "O painel reúne prevenção combinada e informação contextual, enquanto os outros cartazes transferem funções entre métodos ou inferem ausência de risco a partir de sintomas. A decisão individual continua vinculada à conversa de saúde.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +234,150 @@
       "CIE-33-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-33-CON-01"
   },
   {
     "id": "CIE-33-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre métodos anticoncepcionais e ists para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Durante uma ação educativa fictícia, a equipe montou um mural com dúvidas anônimas. Uma pergunta dizia: “Se não percebi alteração no corpo, ainda vale conversar sobre exame?” No verso do cartão, a pessoa contou que um parceiro recente recebeu diagnóstico e que ambos estavam buscando orientação. O mural não informava qual infecção estava envolvida, não incluía resultados laboratoriais e não trazia detalhes sobre o método anticoncepcional de cada participante.\n\nQue resposta educativa respeita os limites do cartão?",
     "options": [
       {
         "key": "A",
-        "text": "Usar dois preservativos ao mesmo tempo aumenta a proteção."
+        "text": "Sem sintomas, a conversa sobre exame pode aguardar até surgir uma alteração percebida.",
+        "targetsError": "interpretation",
+        "rationale": "A pessoa relata uma exposição relevante; a ausência de alteração corporal não fornece o resultado de um exame."
       },
       {
         "key": "B",
-        "text": "ISTs podem ser transmitidas mesmo por pessoas sem sintomas aparentes; testagem, vacinação quando disponível e prevenção combinada são importantes."
+        "text": "O diagnóstico do parceiro torna provável que a pessoa tenha a mesma infecção, mesmo sem sintomas.",
+        "targetsError": "interpretation",
+        "rationale": "O cartão não registra exame da pessoa que escreveu; o resultado de outra pessoa não substitui avaliação própria."
       },
       {
         "key": "C",
-        "text": "Somente pessoas com sintomas podem transmitir ISTs."
+        "text": "A pessoa pode conversar com o serviço sobre testagem diante do contato relatado, mesmo sem sintomas."
       },
       {
         "key": "D",
-        "text": "Todos os métodos contraceptivos têm o mesmo mecanismo e a mesma eficácia."
+        "text": "O método anticoncepcional pode indicar se vale buscar orientação sobre o exame.",
+        "targetsError": "conceptual",
+        "rationale": "Nenhum método é descrito no cartão, e essa informação não substituiria o resultado laboratorial."
       },
       {
         "key": "E",
-        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+        "text": "O cartão permite identificar a infecção a partir do diagnóstico do parceiro, mesmo sem exame.",
+        "targetsError": "interpretation",
+        "rationale": "O próprio texto diz que a infecção não foi identificada no cartão."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: ISTs podem ser transmitidas mesmo por pessoas sem sintomas aparentes; testagem, vacinação quando disponível e prevenção combinada são importantes.",
+    "correctOption": "C",
+    "explanation": "O relato torna pertinente conversar sobre testagem mesmo sem sintomas percebidos, mas não identifica uma infecção nem permite interpretar resultados. A alternativa que transforma ausência de sinais em segurança ignora a pergunta central do cartão.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-33-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-33-CON-05"
   },
   {
     "id": "CIE-33-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre métodos anticoncepcionais e ists?",
+    "stem": "Em um cartaz de treinamento para uso de preservativos, a ilustração mostra duas unidades colocadas uma sobre a outra. Ao lado, a equipe anotou que a atividade serve para revisar dúvidas sobre barreira e conforto, não para medir uma taxa de eficácia. O grupo também recebeu cartões com situações de consulta e deveria propor perguntas para discutir método, preferência e prevenção de infecções. A ilustração não informa marca, material ou condição de armazenamento dos produtos.\n\nQual comentário é mais apropriado para revisar o cartaz?",
     "options": [
       {
         "key": "A",
-        "text": "DIU e implante são métodos de longa duração com mecanismos distintos; escolha deve considerar orientação em saúde e preferências da pessoa."
+        "text": "Rever a imagem e discutir o uso correto de uma unidade por vez junto às dúvidas do grupo."
       },
       {
         "key": "B",
-        "text": "Preservativos funcionam como barreira e também reduzem o risco de transmissão de muitas ISTs quando usados corretamente."
+        "text": "Manter as unidades sobrepostas e conversar sobre conforto para revisar o uso da barreira.",
+        "targetsError": "procedural",
+        "rationale": "A opção repete a prática questionada pelo cartaz em vez de revisar o procedimento mostrado."
       },
       {
         "key": "C",
-        "text": "Métodos hormonais atuam principalmente sobre ovulação e muco cervical, mas não protegem de ISTs."
+        "text": "Comparar marcas no cartaz, pois a ilustração já apresenta dados para avaliar eficácia.",
+        "targetsError": "interpretation",
+        "rationale": "A ficha diz que a atividade não mede eficácia e orienta discutir dúvidas e prevenção."
       },
       {
         "key": "D",
-        "text": "Métodos definitivos, como vasectomia e laqueadura, requerem decisão informada e seguem critérios legais e de saúde."
+        "text": "Aplicar a mesma orientação da imagem a produtos de materiais e condições diferentes.",
+        "targetsError": "interpretation",
+        "rationale": "O texto não informa material ou armazenamento e não sustenta essa conclusão abrangente."
       },
       {
         "key": "E",
-        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+        "text": "Concentrar a revisão em contracepção e deixar dúvidas sobre prevenção de IST para outra atividade.",
+        "targetsError": "procedural",
+        "rationale": "O roteiro inclui prevenção de infecções e perguntas de consulta, além da finalidade contraceptiva."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a incorreta: Pílula anticoncepcional protege contra HIV e todas as ISTs. As demais expressam relações compatíveis com os conceitos da aula.",
+    "correctOption": "A",
+    "explanation": "A proposta pede correção da prática ilustrada e uma conversa sobre uso adequado. Acrescentar outra unidade não é uma conclusão apoiada pelo material; a alternativa sobre barreira também precisa considerar o uso correto.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-33-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-33-CON-01"
   },
   {
     "id": "CIE-33-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em métodos anticoncepcionais e ists?",
+    "stem": "Um formulário de atendimento fictício pergunta quais assuntos a pessoa deseja abordar: contracepção, prevenção de IST, testagem ou vacinação. Caio marcou contracepção e prevenção de IST. Em campo livre, explicou que pretende escolher um método depois de conversar com a equipe e que prefere entender como cada opção se relaciona aos objetivos anotados. A ficha não sugere um produto específico, não registra exposição recente e não contém resultado de exame ou histórico médico.\n\nQual plano de conversa corresponde ao que Caio registrou?",
     "options": [
       {
         "key": "A",
-        "text": "Usar dois preservativos ao mesmo tempo aumenta a proteção."
+        "text": "Começar pela indicação de um método e conversar sobre os objetivos depois da escolha.",
+        "targetsError": "procedural",
+        "rationale": "O formulário não registra preferência por método definitivo e Caio pediu comparação antes de decidir."
       },
       {
         "key": "B",
-        "text": "Pílula anticoncepcional protege contra HIV e todas as ISTs."
+        "text": "Usar as preferências registradas como principal critério para discutir mecanismos e prevenção.",
+        "targetsError": "interpretation",
+        "rationale": "A preferência faz parte da conversa, mas Caio também pediu entender a relação entre opções e objetivos."
       },
       {
         "key": "C",
-        "text": "Dupla proteção combina preservativo com outro método contraceptivo quando se busca prevenção de gravidez e de ISTs."
+        "text": "Tratar a prevenção de IST como objetivo separado e deixar a contracepção para outro atendimento.",
+        "targetsError": "interpretation",
+        "rationale": "O formulário mostra que Caio marcou os dois assuntos, e não uma escolha entre eles."
       },
       {
         "key": "D",
-        "text": "Somente pessoas com sintomas podem transmitir ISTs."
+        "text": "Comparar opções contraceptivas com preservativo considerando os dois objetivos registrados."
       },
       {
         "key": "E",
-        "text": "Todos os métodos contraceptivos têm o mesmo mecanismo e a mesma eficácia."
+        "text": "Usar as respostas do formulário para estimar exposição recente e provável resultado de exame.",
+        "targetsError": "interpretation",
+        "rationale": "A ficha não contém exposição relatada nem dados laboratoriais, então essa conclusão inventaria informação."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Dupla proteção combina preservativo com outro método contraceptivo quando se busca prevenção de gravidez e de ISTs.",
+    "correctOption": "D",
+    "explanation": "Caio pediu informação sobre dois objetivos e ainda quer comparar opções. A conversa pode considerar preservativo e outro método contraceptivo, sem transformar a ficha incompleta em uma recomendação individual.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-33-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-33-CON-06"
   }
 ]

@@ -2,139 +2,180 @@
   {
     "id": "CIE-07-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de consumo e uso consciente de energia elétrica, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Um projetor de 1.200 W ficou ligado por 2 horas durante uma oficina. Para estimar o consumo desse aparelho, considere que sua potência permaneceu estável durante o período.\n\nQual consumo corresponde ao uso registrado?",
     "options": [
       {
         "key": "A",
-        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+        "text": "O projetor consumiu 0,6 kWh no período.",
+        "targetsError": "calculation",
+        "rationale": "Divide potência por tempo em vez de multiplicar após converter."
       },
       {
         "key": "B",
-        "text": "Quanto maior a potência, maior necessariamente a eficiência."
+        "text": "O projetor consumiu 1,2 kWh no período.",
+        "targetsError": "calculation",
+        "rationale": "Desconsidera as duas horas de funcionamento."
       },
       {
         "key": "C",
-        "text": "Quilowatt-hora é unidade de potência."
+        "text": "O projetor consumiu 2,4 kWh no período."
       },
       {
         "key": "D",
-        "text": "Um aparelho desligado sempre consome a mesma energia que ligado."
+        "text": "O projetor consumiu 3,6 kWh no período.",
+        "targetsError": "calculation",
+        "rationale": "Não converte watts para quilowatts antes do cálculo."
       },
       {
         "key": "E",
-        "text": "Potência indica a rapidez com que um aparelho transforma ou transfere energia e é expressa em watts."
+        "text": "O projetor consumiu 4,2 kWh no período.",
+        "targetsError": "procedural",
+        "rationale": "Soma grandezas que devem ser relacionadas por produto."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Potência indica a rapidez com que um aparelho transforma ou transfere energia e é expressa em watts.",
+    "correctOption": "C",
+    "explanation": "Convertem-se 1.200 W em 1,2 kW e calcula-se 1,2 kW × 2 h = 2,4 kWh. A opção de 1,2 kWh considera a potência convertida, mas não as duas horas de uso.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-07-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-07-CON-01"
   },
   {
     "id": "CIE-07-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar consumo e uso consciente de energia elétrica sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Uma bomba de aquário de 800 W funcionou por 3,5 horas durante uma troca de água. Para esta estimativa, considere a potência indicada e conte somente o período em que a bomba ficou ligada.\n\nQual foi o consumo estimado?",
     "options": [
       {
         "key": "A",
-        "text": "Quilowatt-hora é unidade de potência."
+        "text": "A bomba consumiu 2,8 kWh."
       },
       {
         "key": "B",
-        "text": "O consumo de energia depende da potência e do tempo de uso; em contas de eletricidade é comum usar quilowatt-hora."
+        "text": "A bomba consumiu 3,2 kWh.",
+        "targetsError": "procedural",
+        "rationale": "Soma a potência ao tempo em vez de multiplicar."
       },
       {
         "key": "C",
-        "text": "Um aparelho desligado sempre consome a mesma energia que ligado."
+        "text": "A bomba consumiu 4,3 kWh.",
+        "targetsError": "interpretation",
+        "rationale": "Ignora as três horas e meia anotadas."
       },
       {
         "key": "D",
-        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+        "text": "A bomba consumiu 0,8 kWh.",
+        "targetsError": "calculation",
+        "rationale": "Altera o resultado por erro de casa decimal."
       },
       {
         "key": "E",
-        "text": "Quanto maior a potência, maior necessariamente a eficiência."
+        "text": "A bomba consumiu 2,4 kWh.",
+        "targetsError": "calculation",
+        "rationale": "Inverte a operação e deixa de converter a potência."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: O consumo de energia depende da potência e do tempo de uso; em contas de eletricidade é comum usar quilowatt-hora.",
+    "correctOption": "A",
+    "explanation": "A potência de 800 W equivale a 0,8 kW; então, 0,8 kW × 3,5 h = 2,8 kWh. O valor de 0,8 kWh não considera a duração do funcionamento.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-07-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-07-CON-02"
   },
   {
     "id": "CIE-07-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em consumo e uso consciente de energia elétrica?",
+    "stem": "Um secador de bancada utilizou 1,5 kWh em uma demonstração. Para a atividade, a escola adotou uma tarifa didática de R$ 0,90 por kWh e pediu somente o custo variável da energia consumida.\n\nQual custo corresponde ao uso do secador?",
     "options": [
       {
         "key": "A",
-        "text": "Quanto maior a potência, maior necessariamente a eficiência."
+        "text": "O custo estimado é R$ 1,05.",
+        "targetsError": "procedural",
+        "rationale": "Soma valores em vez de calcular custo por consumo."
       },
       {
         "key": "B",
-        "text": "Um aparelho desligado sempre consome a mesma energia que ligado."
+        "text": "O custo estimado é R$ 1,35.",
+        "targetsError": "calculation",
+        "rationale": "Inverte a multiplicação entre tarifa e kWh."
       },
       {
         "key": "C",
-        "text": "Quilowatt-hora é unidade de potência."
+        "text": "O custo estimado é R$ 2,40.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde energia consumida com valor monetário."
       },
       {
         "key": "D",
-        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+        "text": "O custo estimado é R$ 0,90."
       },
       {
         "key": "E",
-        "text": "Para estimar consumo em kWh, converte-se a potência para kW e multiplica-se pelo tempo em horas."
+        "text": "O custo estimado é R$ 1,50.",
+        "targetsError": "calculation",
+        "rationale": "Usa apenas a tarifa por unidade, ignorando 1,5 kWh."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Para estimar consumo em kWh, converte-se a potência para kW e multiplica-se pelo tempo em horas.",
+    "correctOption": "D",
+    "explanation": "O custo variável é 1,5 kWh × R$ 0,90/kWh = R$ 1,35. Considerar apenas R$ 0,90 ignora a quantidade de energia consumida.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-07-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-07-CON-03"
   },
   {
     "id": "CIE-07-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um aparelho de 1.000 W funciona por 2 horas. Desprezando variações, qual consumo de energia corresponde a esse uso?",
+    "stem": "Uma lâmpada de 12 W ficou acesa por 5 horas; um aquecedor de 1.000 W funcionou por 20 minutos. Considere potências estáveis e compare a energia consumida por cada aparelho.\n\nQual par apresenta as estimativas corretas?",
     "options": [
       {
         "key": "A",
-        "text": "0,5 kWh."
+        "text": "Lâmpada: 0,12 kWh; aquecedor: 0,33 kWh.",
+        "targetsError": "interpretation",
+        "rationale": "Compara duração sem levar em conta a diferença de potência."
       },
       {
         "key": "B",
-        "text": "1 kWh."
+        "text": "Lâmpada: 0,06 kWh; aquecedor: 0,33 kWh."
       },
       {
         "key": "C",
-        "text": "2 kW."
+        "text": "Lâmpada: 0,06 kWh; aquecedor: 0,30 kWh.",
+        "targetsError": "calculation",
+        "rationale": "Confunde data de uso com energia total consumida."
       },
       {
         "key": "D",
-        "text": "2 kWh."
+        "text": "Lâmpada: 0,06 kWh; aquecedor: 0,20 kWh.",
+        "targetsError": "calculation",
+        "rationale": "Trata watts como quilowatts e ignora o tempo."
       },
       {
         "key": "E",
-        "text": "2.000 kWh."
+        "text": "Lâmpada: 0,06 kWh; aquecedor: 0,40 kWh.",
+        "targetsError": "interpretation",
+        "rationale": "Considera apenas a duração e não a potência."
       }
     ],
-    "correctOption": "D",
-    "explanation": "2 kWh.",
+    "correctOption": "B",
+    "explanation": "A lâmpada consome 0,012 kW × 5 h = 0,06 kWh. O aquecedor consome 1 kW × 1/3 h, aproximadamente 0,33 kWh. O par com 0,30 kWh para o aquecedor se aproxima, mas não corresponde ao intervalo de 20 minutos.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +184,47 @@
       "CIE-07-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-07-CON-01"
   },
   {
     "id": "CIE-07-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Potência indica a rapidez com que um aparelho transforma ou transfere energia e é expressa em watts.\nII. Potência e energia consumida são exatamente a mesma grandeza.\nIII. Para estimar consumo em kWh, converte-se a potência para kW e multiplica-se pelo tempo em horas.\nIV. Um aparelho desligado sempre consome a mesma energia que ligado.\nAssinale a alternativa CORRETA.",
+    "stem": "Ficha de compra elaborada por Bruna em 30 de setembro de 2026: dois ventiladores foram comparados para uma sala de estudo. O modelo Alfa tinha potência de 60 W e movia mais ar; o modelo Beta tinha 45 W e fornecia vazão suficiente para a sala. A ficha não apresentava medições de consumo ao longo do mês, mas informava o resultado útil esperado para cada opção. O grêmio precisava decidir sem concluir que o número de watts, sozinho, descrevia a eficiência do aparelho.\n\nQual critério é mais adequado para a comparação?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Escolher o Alfa pela vazão maior, sem comparar a energia usada.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde potência alta com eficiência e custo reduzido."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Comparar o gasto mensal, supondo o mesmo tempo de funcionamento.",
+        "targetsError": "interpretation",
+        "rationale": "Deduz resultado útil sem comparar as características fornecidas."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Considerar o Beta mais eficiente somente por ter menor potência nominal.",
+        "targetsError": "attention",
+        "rationale": "Ignora o serviço útil que a ficha descreve para cada modelo."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Somar as potências para estimar o serviço dos dois ventiladores.",
+        "targetsError": "procedural",
+        "rationale": "Soma potências em vez de comparar serviço e energia."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Relacionar a vazão necessária com a energia usada por cada modelo."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "correctOption": "E",
+    "explanation": "A comparação precisa considerar o serviço de ventilação desejado e a energia necessária para fornecê-lo. A menor potência nominal do Beta, isoladamente, não informa se ele atende melhor à sala nem sua eficiência.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +234,150 @@
       "CIE-07-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-07-CON-01"
   },
   {
     "id": "CIE-07-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre consumo e uso consciente de energia elétrica para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Uma fatura registrou 186 kWh em agosto e 154 kWh em setembro. A tarifa didática não mudou. Em agosto, a família recebeu visitas e usou mais a secadora, mas o resumo não traz leituras separadas por aparelho.\n\nO que se pode concluir sobre os registros?",
     "options": [
       {
         "key": "A",
-        "text": "Quilowatt-hora é unidade de potência."
+        "text": "A diferença entre os meses foi de R$ 32 na conta.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde a variação de energia com o valor monetário."
       },
       {
         "key": "B",
-        "text": "Um aparelho desligado sempre consome a mesma energia que ligado."
+        "text": "Setembro registrou 32 kWh a mais que agosto.",
+        "targetsError": "calculation",
+        "rationale": "Inverte a ordem dos meses e o sinal da diferença."
       },
       {
         "key": "C",
-        "text": "Reduzir tempo de uso e escolher equipamentos eficientes pode diminuir consumo sem eliminar a função do aparelho."
+        "text": "Setembro registrou 32 kWh a menos que agosto."
       },
       {
         "key": "D",
-        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+        "text": "A secadora causou uma redução de 32 kWh em setembro.",
+        "targetsError": "interpretation",
+        "rationale": "Atribui causalidade sem uma medição por aparelho."
       },
       {
         "key": "E",
-        "text": "Quanto maior a potência, maior necessariamente a eficiência."
+        "text": "A tarifa estável indica consumo igual nos dois meses.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde preço unitário constante com energia consumida."
       }
     ],
     "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Reduzir tempo de uso e escolher equipamentos eficientes pode diminuir consumo sem eliminar a função do aparelho.",
+    "explanation": "A diferença é 186 − 154 = 32 kWh, com consumo menor em setembro. Como o resumo não separa os aparelhos, ele não permite atribuir essa variação à secadora ou a outro hábito específico.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-07-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-07-CON-05"
   },
   {
     "id": "CIE-07-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre consumo e uso consciente de energia elétrica?",
+    "stem": "Um computador de 150 W fica ligado por 4 horas em uma tarde. A biblioteca planeja reduzir em 1 hora o uso sem estudantes, durante 20 tardes, mantendo as demais atividades iguais.\n\nQual economia de energia essa mudança estima?",
     "options": [
       {
         "key": "A",
-        "text": "Um aparelho de maior potência não é automaticamente mais eficiente; eficiência compara resultado útil e energia utilizada."
+        "text": "A economia estimada é 2,4 kWh."
       },
       {
         "key": "B",
-        "text": "Para estimar consumo em kWh, converte-se a potência para kW e multiplica-se pelo tempo em horas."
+        "text": "A economia estimada é 3 kWh.",
+        "targetsError": "calculation",
+        "rationale": "Usa watts como quilowatts e ignora o tempo reduzido."
       },
       {
         "key": "C",
-        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+        "text": "A economia estimada é 4 kWh.",
+        "targetsError": "calculation",
+        "rationale": "Divide por dias em vez de multiplicar a energia por tarde."
       },
       {
         "key": "D",
-        "text": "O consumo de energia depende da potência e do tempo de uso; em contas de eletricidade é comum usar quilowatt-hora."
+        "text": "A economia estimada é 6 kWh.",
+        "targetsError": "procedural",
+        "rationale": "Trata a quantidade de dias como valor de energia."
       },
       {
         "key": "E",
-        "text": "Potência indica a rapidez com que um aparelho transforma ou transfere energia e é expressa em watts."
+        "text": "A economia estimada é 0,15 kWh.",
+        "targetsError": "interpretation",
+        "rationale": "Calcula as quatro horas de uso, não a hora evitada."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a incorreta: Potência e energia consumida são exatamente a mesma grandeza. As demais expressam relações compatíveis com os conceitos da aula.",
+    "correctOption": "A",
+    "explanation": "A opção de 0,15 kWh considera somente uma tarde: 0,15 kW × 1 h. Para as 20 tardes, a economia é 3 kWh.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-07-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-07-CON-01"
   },
   {
     "id": "CIE-07-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em consumo e uso consciente de energia elétrica?",
+    "stem": "Comunicado do conselho escolar escrito por Afonso em 9 de outubro de 2026: após observar a fatura, a equipe propôs instalar lâmpadas adequadas às salas, apagar luzes em espaços vazios e revisar a vedação da geladeira da cantina. A nota explicou que a geração de eletricidade também produz impactos ambientais e que o uso responsável considera hábitos, manutenção e função dos equipamentos. O comunicado não prometeu uma porcentagem de economia antes de medir os resultados.\n\nQual encaminhamento corresponde ao comunicado?",
     "options": [
       {
         "key": "A",
-        "text": "Quilowatt-hora é unidade de potência."
+        "text": "Trocar a geladeira sem comparar o consumo e a necessidade da cantina.",
+        "targetsError": "interpretation",
+        "rationale": "Contraria a ação de apagar luzes em espaços vazios."
       },
       {
         "key": "B",
-        "text": "Quanto maior a potência, maior necessariamente a eficiência."
+        "text": "Estimar a economia pelas lâmpadas sem verificar a iluminação das salas.",
+        "targetsError": "attention",
+        "rationale": "Ignora a necessidade e o uso do equipamento."
       },
       {
         "key": "C",
-        "text": "Potência e energia consumida são exatamente a mesma grandeza."
+        "text": "Focar no tempo das luzes e adiar a revisão da vedação da geladeira.",
+        "targetsError": "calculation",
+        "rationale": "Apresenta um resultado numérico sem medição."
       },
       {
         "key": "D",
-        "text": "Uso consciente também considera horários, hábitos, manutenção e impactos da geração de eletricidade."
+        "text": "Combinar manutenção e hábitos e medir os efeitos antes de quantificá-los."
       },
       {
         "key": "E",
-        "text": "Um aparelho desligado sempre consome a mesma energia que ligado."
+        "text": "Atribuir à troca das lâmpadas toda mudança observada na fatura.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde potência com adequação e eficiência do serviço."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Uso consciente também considera horários, hábitos, manutenção e impactos da geração de eletricidade.",
+    "explanation": "O comunicado reúne adequação dos equipamentos, hábitos e manutenção, e propõe medir os resultados antes de informar uma economia. Atribuir toda variação da fatura às lâmpadas não considera os demais fatores da proposta.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-07-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-07-CON-06"
   }
 ]

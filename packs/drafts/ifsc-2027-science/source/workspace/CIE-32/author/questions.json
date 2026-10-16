@@ -2,294 +2,295 @@
   {
     "id": "CIE-32-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de reprodução humana, ciclo menstrual e fecundação, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Gráfico de acompanhamento escolar, estudo de 5 out. 2026. Uma estudante acompanhou, por três meses, exames simulados que mostravam mudanças no tamanho de uma estrutura ovariana e na espessura do revestimento uterino. As medições ocorreram em datas diferentes, e as anotações hormonais também mudaram ao longo do período. O grupo comparou os registros entre meses, que não tinham os mesmos intervalos, e preparou um gráfico sem atribuir um dia fixo a cada evento.\n\nQual interpretação relaciona melhor as observações do gráfico?",
     "options": [
       {
         "key": "A",
-        "text": "Menstruação é a liberação do ovócito pelo ovário."
+        "text": "As mudanças do endométrio determinam as alterações ovarianas, enquanto os sinais hormonais apenas acompanham o ciclo."
       },
       {
         "key": "B",
-        "text": "Ovulação ocorre obrigatoriamente no 14º dia de qualquer ciclo."
+        "text": "A data do sangramento, combinada às medições, permite fixar o dia da ovulação em cada mês."
       },
       {
         "key": "C",
-        "text": "Todos os ciclos menstruais têm exatamente a mesma duração."
+        "text": "A espessura variável do endométrio mostra que essa estrutura não responde às mudanças hormonais."
       },
       {
         "key": "D",
-        "text": "O ciclo menstrual envolve alterações nos ovários e no endométrio reguladas por hormônios, e sua duração varia entre pessoas e entre ciclos."
+        "text": "O ciclo relaciona mudanças no ovário e no endométrio a sinais hormonais, com duração variável."
       },
       {
         "key": "E",
-        "text": "Fecundação ocorre normalmente dentro do útero depois da implantação."
+        "text": "O sangramento e a liberação do ovócito são etapas consecutivas do mesmo evento ovariano."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D é a correta: O ciclo menstrual envolve alterações nos ovários e no endométrio reguladas por hormônios, e sua duração varia entre pessoas e entre ciclos.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "UNDERSTAND",
+    "explanation": "O esquema relaciona mudanças no ovário e no endométrio a sinais hormonais, enquanto as datas variam entre os registros. O sangramento não é a ovulação; são eventos distintos do ciclo.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-32-CON-01"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "cycle_events_and_regulation",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-32-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar reprodução humana, ciclo menstrual e fecundação sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Calendários fictícios de uma oficina, observação de 6 out. 2026. Em uma oficina, duas pessoas apresentaram calendários com intervalos de 26, 30 e 35 dias em meses diferentes. Uma delas havia marcado um possível período fértil contando sempre a mesma quantidade de dias desde o início do sangramento. A educadora pediu que a turma comparasse as datas anotadas com os intervalos reais e evitasse transformar a marcação do calendário em confirmação clínica.\n\nQual conclusão sobre a ovulação é mais cuidadosa?",
     "options": [
       {
         "key": "A",
-        "text": "Ovulação é a liberação de um ovócito pelo ovário e não ocorre obrigatoriamente no mesmo dia em todos os ciclos."
+        "text": "A ovulação libera um ovócito, mas sua data pode variar entre ciclos de durações diferentes."
       },
       {
         "key": "B",
-        "text": "Fecundação ocorre normalmente dentro do útero depois da implantação."
+        "text": "A ovulação tende a ocorrer no mesmo dia do calendário quando os ciclos começam juntos."
       },
       {
         "key": "C",
-        "text": "Ovulação ocorre obrigatoriamente no 14º dia de qualquer ciclo."
+        "text": "O intervalo maior indica que a data de ovulação prevista deve ser deslocada pelo mesmo número de dias."
       },
       {
         "key": "D",
-        "text": "Menstruação é a liberação do ovócito pelo ovário."
+        "text": "Contar os dias desde o sangramento define a data da ovulação mesmo com intervalos variados."
       },
       {
         "key": "E",
-        "text": "Todos os ciclos menstruais têm exatamente a mesma duração."
+        "text": "A duração do ciclo permite prever em qual região ocorrerá uma possível fecundação."
       }
     ],
     "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Ovulação é a liberação de um ovócito pelo ovário e não ocorre obrigatoriamente no mesmo dia em todos os ciclos.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "UNDERSTAND",
+    "explanation": "Os registros mostram ciclos com intervalos diferentes, por isso não sustentam um dia universal para a ovulação. A ovulação é a liberação de um ovócito, e o calendário tem limites para prever quando ocorre.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
-      "CIE-32-CON-02"
+      "CIE-32-CON-02",
+      "CIE-32-CON-06"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "ovulation_fixed_day",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-32-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em reprodução humana, ciclo menstrual e fecundação?",
+    "stem": "Imagem de acompanhamento ovariano, aula de 7 out. 2026. Em um modelo de acompanhamento ovariano, uma imagem inicial mostrou uma estrutura arredondada em crescimento. Alguns dias depois, a imagem correspondente já não aparecia e o registro indicava uma alteração no ovário. A ficha não acompanhou a trajetória de uma possível célula reprodutiva nem apresentou dados sobre implantação. A turma precisava identificar qual evento poderia ter ocorrido entre as observações.\n\nQue evento é compatível com as alterações registradas?",
     "options": [
       {
         "key": "A",
-        "text": "Fecundação ocorre normalmente dentro do útero depois da implantação."
+        "text": "Implantação, quando o ovócito liberado passa a se desenvolver no revestimento do útero."
       },
       {
         "key": "B",
-        "text": "Todos os ciclos menstruais têm exatamente a mesma duração."
+        "text": "Fecundação, quando o ovócito é liberado do ovário e segue para a tuba."
       },
       {
         "key": "C",
-        "text": "Ovulação ocorre obrigatoriamente no 14º dia de qualquer ciclo."
+        "text": "Menstruação, quando a alteração no ovário desencadeia diretamente a liberação do ovócito."
       },
       {
         "key": "D",
-        "text": "Fecundação geralmente ocorre na tuba uterina quando um espermatozoide se une ao ovócito, formando o zigoto."
+        "text": "Maturação folicular, que corresponde à saída do ovócito do ovário para a tuba."
       },
       {
         "key": "E",
-        "text": "Menstruação é a liberação do ovócito pelo ovário."
+        "text": "Ovulação, que corresponde à liberação de um ovócito pelo ovário."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Fecundação geralmente ocorre na tuba uterina quando um espermatozoide se une ao ovócito, formando o zigoto.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "E",
+    "explanation": "O cartão descreve a liberação de uma célula pelo ovário, que corresponde à ovulação. Fecundação e implantação são eventos posteriores e distintos, e a liberação por si não confirma gestação.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-32-CON-03"
     ],
-    "targetedError": "relationship",
+    "targetedError": "ovulation_fertilization_menstruation",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-32-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Onde normalmente ocorre a fecundação humana?",
+    "stem": "Modelo anatômico apresentado em aula, exemplo de 8 out. 2026. Em um modelo de sala, uma equipe acompanhou o percurso de um ovócito depois de sua liberação e o trajeto de espermatozoides após a entrada no sistema reprodutor. O grupo marcou uma região estreita entre o ovário e o útero e depois identificou uma célula formada após a união das células reprodutivas. A professora pediu que os estudantes nomeassem o local e o resultado inicial desse encontro.\n\nOnde ocorre geralmente a fecundação humana e qual célula se forma nesse evento?",
     "options": [
       {
         "key": "A",
-        "text": "No endométrio depois da implantação."
+        "text": "No endométrio, onde o espermatozoide se une ao ovócito e forma o zigoto."
       },
       {
         "key": "B",
-        "text": "No ovário durante a menstruação."
+        "text": "Na tuba uterina, onde a união do espermatozoide e do ovócito forma o zigoto."
       },
       {
         "key": "C",
-        "text": "Na vagina após o embrião estar formado."
+        "text": "No ovário, onde o ovócito se une ao espermatozoide antes de seguir para a tuba."
       },
       {
         "key": "D",
-        "text": "Na tuba uterina, antes da implantação no útero."
+        "text": "No útero, onde o espermatozoide e o ovócito se encontram durante a implantação."
       },
       {
         "key": "E",
-        "text": "Na bexiga urinária."
+        "text": "Na vagina, onde se forma o zigoto antes de percorrer o colo do útero."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Na tuba uterina, antes da implantação no útero.",
-    "difficulty": "APPLIED",
+    "correctOption": "B",
+    "explanation": "O modelo situa o encontro na região entre ovário e útero, correspondente à tuba uterina, e mostra a união que forma o zigoto. A implantação ocorre depois, no endométrio.",
+    "difficulty": "DIRECT",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-32-CON-01",
-      "CIE-32-CON-02",
-      "CIE-32-CON-03"
+      "CIE-32-CON-04"
     ],
-    "targetedError": "application",
+    "targetedError": "fertilization_site_and_product",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-32-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. O ciclo menstrual envolve alterações nos ovários e no endométrio reguladas por hormônios, e sua duração varia entre pessoas e entre ciclos.\nII. Ovulação ocorre obrigatoriamente no 14º dia de qualquer ciclo.\nIII. Fecundação geralmente ocorre na tuba uterina quando um espermatozoide se une ao ovócito, formando o zigoto.\nIV. Fecundação ocorre normalmente dentro do útero depois da implantação.\nAssinale a alternativa CORRETA.",
+    "stem": "Sequência ilustrada em exposição escolar, ficha de 9 out. 2026. Uma exposição escolar apresentou uma sequência ilustrada de desenvolvimento inicial. Primeiro, a legenda mostrava a união de duas células reprodutivas; depois, desenhos registravam divisões sucessivas enquanto a estrutura seguia em direção ao útero. Na imagem final, o conjunto de células estava em contato com o revestimento uterino. A equipe explicou que a sequência era um modelo simplificado e não uma contagem de dias igual para todas as gestações.\n\nQual evento corresponde ao contato final mostrado na exposição?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Ovulação, quando o embrião inicial deixa o endométrio e segue para a tuba."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Menstruação, quando o conjunto celular chega ao útero e se fixa no revestimento."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Implantação do embrião no endométrio depois de divisões celulares iniciais."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Fecundação, que ocorre após as divisões e o contato do embrião com o endométrio."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Liberação do ovócito, que acontece quando o conjunto celular alcança o útero."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-    "difficulty": "IFSC",
+    "correctOption": "C",
+    "explanation": "A sequência já mostra a união das células e divisões antes de o embrião chegar ao revestimento uterino. Esse contato é a implantação; a fecundação aparece antes na exposição.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-32-CON-01",
-      "CIE-32-CON-02",
-      "CIE-32-CON-03",
       "CIE-32-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "fertilization_vs_implantation",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-32-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre reprodução humana, ciclo menstrual e fecundação para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Amostras de endométrio comparadas em laboratório, 10 out. 2026. Um laboratório escolar comparou duas amostras do revestimento interno do útero em momentos diferentes. Na segunda, coletada depois de um sangramento, havia perda de parte da camada superficial. A ficha da atividade registrava que não houve continuidade de gestação naquele intervalo e pedia aos estudantes que distinguissem o achado de uma imagem ovariana feita em outro momento.\n\nQual processo corresponde à alteração observada na amostra?",
     "options": [
       {
         "key": "A",
-        "text": "Todos os ciclos menstruais têm exatamente a mesma duração."
+        "text": "A liberação do ovócito, que pode ocorrer em outro momento do ciclo."
       },
       {
         "key": "B",
-        "text": "Fecundação ocorre normalmente dentro do útero depois da implantação."
+        "text": "A implantação de um embrião no endométrio, acompanhada pela perda da camada superficial."
       },
       {
         "key": "C",
-        "text": "Menstruação é a liberação do ovócito pelo ovário."
+        "text": "A fecundação na tuba uterina, que provoca diretamente a descamação observada."
       },
       {
         "key": "D",
-        "text": "Ovulação ocorre obrigatoriamente no 14º dia de qualquer ciclo."
+        "text": "A descamação do endométrio após sangramento em um ciclo sem manutenção da gestação."
       },
       {
         "key": "E",
-        "text": "Menstruação corresponde à descamação do endométrio quando não ocorre manutenção de uma gestação, dentro do funcionamento típico do ciclo."
+        "text": "A redução de sinais hormonais ovarianos, que corresponde à união das células reprodutivas."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Menstruação corresponde à descamação do endométrio quando não ocorre manutenção de uma gestação, dentro do funcionamento típico do ciclo.",
-    "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "correctOption": "D",
+    "explanation": "O diagrama associa o sangramento à alteração e descamação do endométrio quando não há manutenção da gestação. A ovulação é a liberação do ovócito, um evento diferente do processo descrito.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-32-CON-05"
     ],
-    "targetedError": "transfer",
+    "targetedError": "menstruation_vs_ovulation",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-32-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre reprodução humana, ciclo menstrual e fecundação?",
+    "stem": "Calendário de saúde descrito em oficina, 11 out. 2026. Uma pessoa anotou datas de início do ciclo por seis meses: os intervalos foram 27, 29, 34, 28 e 32 dias. Em uma folha separada, marcou uma previsão de ovulação baseada no mesmo dia após cada início. A turma comparou a previsão com a variação dos registros e observou que nenhum exame de imagem ou de hormônios havia sido incluído no acompanhamento.\n\nQual inferência sobre a previsão feita apenas com calendário é sustentada pelo caso?",
     "options": [
       {
         "key": "A",
-        "text": "Ovulação é a liberação de um ovócito pelo ovário e não ocorre obrigatoriamente no mesmo dia em todos os ciclos."
+        "text": "A previsão baseada só no calendário é limitada quando os intervalos dos ciclos variam."
       },
       {
         "key": "B",
-        "text": "O ciclo menstrual envolve alterações nos ovários e no endométrio reguladas por hormônios, e sua duração varia entre pessoas e entre ciclos."
+        "text": "Os registros indicam uma data provável, portanto confirmam que a ovulação ocorreu nesse dia."
       },
       {
         "key": "C",
-        "text": "Ovulação ocorre obrigatoriamente no 14º dia de qualquer ciclo."
+        "text": "A variação entre ciclos sugere que a ovulação deixou de ocorrer nos meses mais longos."
       },
       {
         "key": "D",
-        "text": "Após divisões iniciais, o embrião pode chegar ao útero e implantar-se no endométrio."
+        "text": "A data observada em um ciclo permite estabelecer a ovulação nos ciclos seguintes."
       },
       {
         "key": "E",
-        "text": "Fecundação geralmente ocorre na tuba uterina quando um espermatozoide se une ao ovócito, formando o zigoto."
+        "text": "O primeiro dia do sangramento permite localizar quando ocorreu a fecundação."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a incorreta: Ovulação ocorre obrigatoriamente no 14º dia de qualquer ciclo. As demais expressam relações compatíveis com os conceitos da aula.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "A",
+    "explanation": "A estudante encontrou intervalos diferentes, e a profissional explicou que isso limita previsões feitas apenas pelo calendário. Um registro pode ajudar a observar padrões, mas não fixa a ovulação futura.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
-      "CIE-32-CON-01"
+      "CIE-32-CON-06"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "calendar_prediction_limits",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-32-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em reprodução humana, ciclo menstrual e fecundação?",
+    "stem": "Ficha de observações reprodutivas, estudo de aula de 12 out. 2026. Uma ficha de estudo descreveu quatro achados em uma sequência de acompanhamento: mudança observada no ovário; presença de uma célula após encontro de células reprodutivas; imagem posterior de um conjunto celular em contato com o revestimento uterino; e perda de parte desse revestimento em outro intervalo sem continuidade de gestação. Os estudantes receberam as observações sem nomes de processos e precisavam relacioná-las.\n\nQual sequência associa corretamente os achados aos eventos reprodutivos?",
     "options": [
       {
         "key": "A",
-        "text": "Menstruação é a liberação do ovócito pelo ovário."
+        "text": "Ovulação libera o ovócito; menstruação corresponde à formação do zigoto na tuba."
       },
       {
         "key": "B",
-        "text": "Fecundação ocorre normalmente dentro do útero depois da implantação."
+        "text": "Fecundação é a fixação do embrião; implantação é a união das células reprodutivas."
       },
       {
         "key": "C",
-        "text": "Todos os ciclos menstruais têm exatamente a mesma duração."
+        "text": "Implantação ocorre no endométrio antes da ovulação e da liberação do ovócito."
       },
       {
         "key": "D",
-        "text": "Conhecer o ciclo ajuda a compreender reprodução, mas prever dias férteis apenas por calendário tem limitações porque ciclos variam."
+        "text": "Ovulação e fecundação designam a liberação do ovócito em momentos diferentes."
       },
       {
         "key": "E",
-        "text": "Ovulação ocorre obrigatoriamente no 14º dia de qualquer ciclo."
+        "text": "Ovulação libera o ovócito; fecundação forma o zigoto; implantação ocorre no endométrio."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Conhecer o ciclo ajuda a compreender reprodução, mas prever dias férteis apenas por calendário tem limitações porque ciclos variam.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "correctOption": "E",
+    "explanation": "A sequência separa a liberação do ovócito, sua união com o espermatozoide e a chegada do embrião ao endométrio. Menstruação descreve a descamação do revestimento uterino em outro contexto do ciclo.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
+      "CIE-32-CON-01",
+      "CIE-32-CON-02",
+      "CIE-32-CON-03",
+      "CIE-32-CON-04",
+      "CIE-32-CON-05",
       "CIE-32-CON-06"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "reproductive_event_sequence",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]
