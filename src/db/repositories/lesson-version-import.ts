@@ -66,7 +66,10 @@ export async function executeLessonVersion(db: Database, actorId: string, pack: 
     for (const activity of base.activities) {
       const stored = sourceActivities.find(row => row.stableId === activity.id)!;
       const expected = JSON.parse(JSON.stringify({ ...activity.config, ...activity, questionVersion: activity.questionId ? context.questions.find(question => question.id === activity.questionId)?.version : undefined }));
-      if (hashCanonicalJson(stored.config) !== hashCanonicalJson(expected)) throw new LessonVersionConflictError("Stored source Activity config differs from immutable context");
+      // A rebound Activity (ADR 0063) keeps its stored row and only updates the top-level questionVersion,
+      // so the nested source config's questionVersion is not part of the comparison.
+      const comparable = (config: unknown) => { const row = structuredClone(config) as { config?: Record<string, unknown> }; if (row?.config && typeof row.config === "object") delete row.config.questionVersion; return row; };
+      if (hashCanonicalJson(comparable(stored.config)) !== hashCanonicalJson(comparable(expected))) throw new LessonVersionConflictError("Stored source Activity config differs from immutable context");
     }
     if (preview) return targetedResult(pack, "ready");
     // Track lock serializes its snapshots; timestamp is assigned after locking, not at transaction start.

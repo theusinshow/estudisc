@@ -51,4 +51,16 @@ it("imports and publishes lesson-bound Question versions without moving the publ
   expect((await configOf(base.version, activity.id))?.questionVersion).toBe(old.version);
   expect((await configOf(lesson.version, activity.id))?.questionVersion).toBe(bumped.version);
   expect((await configOf(lesson.version, "ACT-BINDING-NEW-1"))?.questionVersion).toBe(1);
+
+  // A text correction over the rebound version: carried Activities keep their stored rows.
+  const correctedLesson = structuredClone({ ...pack.lesson, version: pack.lesson.version + 1, status: "draft" as const });
+  const target = correctedLesson.blocks.find(block => typeof block.payload.content === "string" && ["note", "text", "summary", "worked-example"].includes(block.type))!;
+  const oldHash = hashCanonicalJson(pack.lesson.blocks.find(block => block.id === target.id));
+  target.payload = { ...target.payload, content: "Texto corrigido depois da troca de questão." };
+  const correction = lessonVersionPackSchema.parse({ ...pack, packId: "estudisc.binding.correction", lesson: correctedLesson, questionVersions: undefined,
+    target: { ...pack.target, baseVersion: pack.lesson.version, baseHash: hashCanonicalJson(pack.lesson) },
+    corrections: { reason: "Correct lesson text after a Question version change", blocks: [{ blockId: target.id, action: "replace", baseBlockHash: oldHash }] } });
+  expect((await importLessonVersion(correction, repo, true)).status).toBe("ready");
+  expect((await importLessonVersion(correction, repo)).status).toBe("imported");
+  expect((await configOf(correctedLesson.version, activity.id))?.questionVersion).toBe(bumped.version);
 });
