@@ -25,3 +25,7 @@ Earlier versions, Attempts, evidence and frozen session snapshots are untouched:
 - Phases 1–3 of the lesson correction plan can publish Question changes through the reviewed import path, with provenance kept.
 - Questions shared by several lessons still cannot get a new version through this path. A future shared-Question release would need snapshots that hold more than one version per id.
 - Official exam Questions never enter through this path.
+
+## Amendment 2026-10-16: interactive Questions
+
+Appended Questions may use any shared Question type, including `ordering`, `classification` and `matching`, evaluated by `question.v1`. `tools/estudisc-content-studio/interaction-batch.ts` turns plain authored interactions (labels only) into such Questions and lesson versions; it shows ordering items in a deterministic scrambled order that never equals the answer, so no item is pre-solved. Covered by `tests/unit/interaction-batch.test.ts` and `tests/integration/lesson-interaction-import.test.ts`.

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-16 — Interactive Questions for published lessons
+
+- New Content Studio builder `interaction-batch.ts`: authored ordering, classification and matching interactions become new lesson-bound Questions in a lesson version (ADR 0063 amendment). Ordering items never start in the correct order.
+
 ## 2026-10-16 — More interactive free lessons
 
 - Free sample lessons are now MAT-07 Porcentagem, CIE-01 Movimento, POR-03 Inferência and GH-51 Fusos horários, chosen as the most interactive published lesson per subject.
