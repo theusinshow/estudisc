@@ -1,4 +1,4 @@
-import {desc} from "drizzle-orm";
+import {desc,sql} from "drizzle-orm";
 import {packImports} from "@/db/schema";
 import {trackPackV2Schema} from "@/features/import/application/track-pack-v2-schema";
 import {getDatabase} from "@/db/connection";
@@ -8,7 +8,8 @@ import {readPublicationDetails,readOnePublicationDetail} from "./publication-rea
 export class ContentBundleResolver {constructor(protected readonly db:ContentDatabase=getDatabase()){}
 async lessonBundle(stableId:string,version:number){
 
-    const packs=await this.db.select().from(packImports).orderBy(desc(packImports.importedAt));
+    // Only snapshots holding this lesson version qualify; filtering in SQL avoids transferring every manifest.
+    const packs=await this.db.select().from(packImports).where(sql`jsonb_path_exists(${packImports.manifest}, '$.track.modules[*].lessons[*] ? (@.id == $id && @.version == $version)', jsonb_build_object('id', ${stableId}::text, 'version', ${version}::int))`).orderBy(desc(packImports.importedAt));
 
     for(const row of packs){const parsed=trackPackV2Schema.safeParse(row.manifest);if(!parsed.success)continue;
 

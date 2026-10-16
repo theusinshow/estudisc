@@ -20,7 +20,10 @@ export async function executeLessonVersion(db: Database, actorId: string, pack: 
     const [track] = preview ? await query : await query.for("update");
     if (!track) throw new LessonVersionConflictError("Target Track not found");
     if (await receipt()) return targetedResult(pack, "already_imported");
-    const contexts = await tx.select({ manifest: packImports.manifest }).from(packImports).orderBy(desc(packImports.importedAt), desc(packImports.id));
+    // Only snapshots of the target Track version can be the context; filtering in SQL avoids transferring every manifest.
+    const contexts = await tx.select({ manifest: packImports.manifest }).from(packImports)
+      .where(sql`${packImports.manifest}->'track'->>'id' = ${pack.target.trackId} and ${packImports.manifest}->>'version' = ${String(pack.target.trackVersion)}`)
+      .orderBy(desc(packImports.importedAt), desc(packImports.id));
     const { base, projection } = resolveLessonVersionContext(contexts.map(row => row.manifest), pack);
     const [moduleRow] = await tx.select().from(modules).where(and(eq(modules.trackId, track.id), eq(modules.stableId, pack.target.moduleId)));
     if (!moduleRow) throw new LessonVersionConflictError("Target module not found");
