@@ -29,6 +29,14 @@ Corrections in the product are metadata corrections or a new representation vers
 
 2026.2 remains hidden until the final benchmark and is never used earlier as training.
 
+## Answer-sheet catalog 2022.1–2026.2
+
+`packs/past-exams/ifsc-integrado-2022-2026.catalog.json` lists 11 Integrated editions (including the 2024.1 Itajaí variant). For each one it has metadata, the definitive answer key, annulled items (2022.2 Q11/Q19, 2023.2 Q6, 2025.1 Q15) and official links. It contains no question text or PDFs.
+
+- `/past-exams` serves these editions as `PAST_EXAM_SHEET` assessments (ADR 0066).
+- The reservation above is unchanged: 2026.1 and 2026.2 carry `availableAt` from `packs/past-exams/releases.json`. Before that date they cannot start and their links are not shown.
+- Formats differ (20/24/28 items, different area layouts), so the product does not force 2022–2024 into the current four-area pattern.
+
 ## Annulled item
 
 2025.1 Q15:

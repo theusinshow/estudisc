@@ -1,4 +1,12 @@
 # Estudisc — Current project status
+Past exams answer sheet (2026-10-16, branch `feat/past-exams-20261016`, local only: not pushed, deployed or published). [ADR 0066](docs/ADR/0066-answer-sheet-past-exams.md) adds `/past-exams` with the 11 IFSC Integrated editions from 2022.1 to 2026.2:
+- digital A–E answer sheet next to the official PDF link, with server-side correction;
+- no learning evidence from these attempts;
+- 2026.1 and 2026.2 reserved until 2026-11-09 and 2026-11-22.
+
+Validation (2026-10-16): pnpm lint PASS; pnpm typecheck PASS; pnpm test 614 passed / 4 skipped (first run had one content-studio flake that passed alone and on a full rerun); pnpm build PASS (/past-exams route); full E2E 39 passed / 21 skipped in chromium and in mobile-chrome. The cross-check against the private official bank was skipped because the bank is absent on this machine. E2E ran on port 3211 through an uncommitted config override, because port 3210 was held by another local project.
+NEXT ACTION: user approval for push/PR, deploy and the production template import (PLANS.md).
+
 Content release 2026-10-16 (night) LIVE, each step after its own pg_dump in `.local/database-migration/private/` (pre-depth, pre-mat16-circle, pre-simulados, pre-new-lessons):
 - Phase 2 questions for GH (49) and CIE (40) published; `--verify` shows every lesson at its latest version.
 - Phase 3 deeper lesson text published as ADR 0062 correction versions: GH 49, POR 24, CIE 13 (PR #37). PR #38 fixed corrections over lessons with rebound Questions.
