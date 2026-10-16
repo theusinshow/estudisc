@@ -1,0 +1,69 @@
+/* ==========================================================================
+   ADR 0067 "Caderno de prova" foundation. Every value comes from the canonical
+   tokens; screens opt in through these classes instead of re-declaring chrome.
+   ========================================================================== */
+
+/* Elevation: three levels and nothing else.
+   1 structure = a 2px rule, no shadow (lists, sections, dividers).
+   2 surface   = border + 4px solid shadow (interactive blocks, examples).
+   3 action    = 3px border + 6px solid shadow + mechanical press (the dominant action). */
+.elev-structure { border: 0; border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); box-shadow: var(--estudisc-elevation-structure-shadow); }
+.elev-surface { border: var(--estudisc-elevation-surface-border) solid var(--estudisc-color-ink); box-shadow: var(--estudisc-elevation-surface-shadow); }
+.elev-action {
+  border: var(--estudisc-elevation-action-border) solid var(--estudisc-color-ink);
+  box-shadow: var(--estudisc-elevation-action-shadow);
+  transition: transform var(--estudisc-motion-press) var(--estudisc-motion-ease-out), box-shadow var(--estudisc-motion-press) var(--estudisc-motion-ease-out);
+}
+.elev-action:is(a, button):not(:disabled):active,
+.elev-action:has(> :is(a, button):active) {
+  transform: translate(var(--estudisc-elevation-action-press-travel), var(--estudisc-elevation-action-press-travel));
+  box-shadow: var(--estudisc-elevation-action-pressed-shadow);
+}
+
+/* Type scale with strong contrast. Expanded width (wdth axis) only for screen titles and big numbers. */
+.type-hero, .type-display, .type-title { font-weight: var(--estudisc-typography-display-weight); font-stretch: var(--estudisc-typography-width-expanded); letter-spacing: var(--estudisc-typography-display-tracking); line-height: 1.02; text-wrap: balance; }
+.type-hero { font-size: clamp(var(--estudisc-typography-scale-display), 11vw, var(--estudisc-typography-scale-hero)); }
+.type-display { font-size: clamp(var(--estudisc-typography-scale-title), 8vw, var(--estudisc-typography-scale-display)); }
+.type-title { font-size: clamp(var(--estudisc-typography-scale-lead), 6vw, var(--estudisc-typography-scale-title)); letter-spacing: -0.02em; line-height: 1.1; }
+.type-lead { font-size: var(--estudisc-typography-scale-lead); font-stretch: var(--estudisc-typography-width-normal); line-height: 1.35; }
+.type-meta {
+  font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace;
+  font-size: var(--estudisc-typography-scale-meta);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* Reading column: 17px mobile / 18px wide, 1.55 leading, 60–70ch measure. */
+.reading-column { max-width: var(--estudisc-typography-reading-measure); font-size: var(--estudisc-typography-scale-body); line-height: var(--estudisc-typography-reading-leading); }
+@media (min-width: 768px) { .reading-column { font-size: var(--estudisc-typography-scale-body-wide); } }
+
+/* Exam-grid paper: only for exercise and worked-example areas. Opacity stays at the token (≤ 6%). */
+.exam-grid {
+  background-color: var(--estudisc-color-panel);
+  background-image:
+    linear-gradient(var(--estudisc-pattern-grid-color) var(--estudisc-pattern-grid-line), transparent var(--estudisc-pattern-grid-line)),
+    linear-gradient(90deg, var(--estudisc-pattern-grid-color) var(--estudisc-pattern-grid-line), transparent var(--estudisc-pattern-grid-line));
+  background-size: var(--estudisc-pattern-grid-cell) var(--estudisc-pattern-grid-cell);
+}
+
+/* Layout grid: 4 columns with a 20px margin on phones; 12 columns with a notebook margin on desktop. */
+.caderno-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--estudisc-layout-grid-mobile-columns), minmax(0, 1fr));
+  column-gap: var(--estudisc-layout-grid-gutter);
+  padding-inline: var(--estudisc-layout-grid-mobile-margin);
+}
+.caderno-grid > * { grid-column: 1 / -1; min-width: 0; }
+@media (min-width: 1200px) {
+  .caderno-grid { grid-template-columns: repeat(var(--estudisc-layout-grid-desktop-columns), minmax(0, 1fr)); column-gap: var(--estudisc-layout-grid-desktop-gutter); padding-inline: 0; }
+  .caderno-grid > * { grid-column: 3 / span 8; }
+  .caderno-grid > .caderno-margin { grid-column: 1 / span 2; grid-row: 1 / span 20; align-self: start; position: sticky; top: var(--estudisc-spacing-24); }
+}
+
+/* A 2px-ruled editorial list: rows, not cards. */
+.ruled-list { display: grid; margin: 0; padding: 0; list-style: none; border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+.ruled-list > li { border-bottom: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); padding-block: var(--estudisc-spacing-8); min-width: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .elev-action { transition: none; }
+}

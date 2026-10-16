@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-16 — Caderno de prova, phase 0: tokens and foundation (ADR 0067)
+
+- Design tokens 4.1.0 (additive): three elevation levels, a contrasted type scale with the Archivo `wdth` axis, reading measure, exam-grid pattern, layout grid and state-communicating motion tokens. Focus ring tokens now match the rendered 3px.
+- New opt-in foundation classes in `src/styles/application/caderno.css`; buttons press 4px to zero shadow in 90ms. No content, domain, route or contract change.
+
 ## 2026-10-16 — Interactive Questions for published lessons
 
 - New Content Studio builder `interaction-batch.ts`: authored ordering, classification and matching interactions become new lesson-bound Questions in a lesson version (ADR 0063 amendment). Ordering items never start in the correct order.

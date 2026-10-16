@@ -10,7 +10,8 @@ Search existing components/features before adding one. Status describes rollout/
 | Dialog / Sheet | FOUNDATION | `src/components/ui/dialog.tsx`; topbar menu | Native modal, title, Escape, focus containment/return |
 | Tabs | FOUNDATION | `src/components/ui/tabs.tsx`; `/plan` | Manual activation, arrows/Home/End, Enter/Space, labeled panels |
 | SegmentedControl | EXPERIMENTAL | Not implemented | Add for a concrete routine-form need; prefer native radio semantics |
-| Reveal / CountUp / Motion | APPROVED | Existing motion components/screens | Canonical tokens and reduced motion |
+| Reveal / CountUp / Motion | APPROVED | Existing motion components/screens | Canonical tokens and reduced motion; ClickSpark only on achievements (ADR 0067) |
+| Caderno foundation classes | APPROVED | `src/styles/application/caderno.css` | `elev-structure/surface/action`, `type-*`, `reading-column`, `exam-grid`, `caderno-grid`, `ruled-list`; ADR 0067 tokens only |
 | StudyActionCard | EXPERIMENTAL | `src/features/today/`; FEATURE_NEW_TODAY | Reason, one destination; no invented count/duration; six study variants plus project |
 | TodayPlan | EXPERIMENTAL | `src/features/today/today-plan.tsx` | Real session snapshots, no invented routine/day-off |
 | LessonSteps / LessonStepper | APPROVED | Existing lesson feature | Runtime projection; legacy URL/scoped typed resume; completion is not mastery |

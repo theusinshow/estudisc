@@ -100,8 +100,8 @@ migração e atualização do changelog.
 4. **Uma CTA primária por contexto de decisão visível.** Regiões independentes, drawers ou modais podem ter sua própria CTA, desde que não concorram dentro do mesmo fluxo.
 5. **RUN nunca registra tentativa. SUBMIT SOLUTION sempre registra.** Possuem rótulos completos, atalhos distintos e separação visual.
 6. **Superfície escura significa que a máquina executa ou representa saída técnica.** Usar em editor, terminal, testes, saída, code blocks, preview técnico e tooltip. Não existe dark mode completo.
-7. **Raio base entre 0 e 4px; superfícies de aprendizagem e sheets usam os tokens canônicos de 12–18px. Sombra sólida.** Gradiente, blur, glassmorphism e sombra difusa são proibidos.
-8. **Movimento de interface usa no máximo 180ms e deslocamento de 2–4px.** Nenhuma animação contínua decorativa.
+7. **Três níveis de elevação (ADR 0067): estrutura (regra 2px, sem sombra), superfície (borda + sombra 4px) e ação (borda 3px + sombra 6px + pressão).** Parágrafo não recebe borda. **Raio base entre 0 e 4px; superfícies de aprendizagem e sheets usam os tokens canônicos de 12–18px. Sombra sólida.** Gradiente, blur, glassmorphism e sombra difusa são proibidos.
+8. **Movimento de interface usa no máximo 180ms e deslocamento de 2–4px.** Nenhuma animação contínua decorativa. Exceções escopadas pelo [ADR 0067](../docs/ADR/0067-caderno-de-prova-visual-evolution.md): pressão (90ms), bolha/carimbo de resposta (200ms, −6°), transição entre questões (24px, ≤250ms) e crescimento da régua de progresso — só `transform`/`opacity`, estado final imediato em reduced motion.
 9. **Tipografia: Archivo + JetBrains Mono.** Mono para código, saída técnica e metadados; Archivo para leitura e interface.
 10. **Alvo de toque mínimo abaixo de 1200px: 44px.** Densidade compacta é desativada abaixo de 768px.
 11. **Emoji é proibido como iconografia.** Lucide é a biblioteca base em sua geometria original. Símbolos proprietários Estudisc podem usar cantos retos.
