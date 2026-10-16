@@ -10,6 +10,7 @@ import { MasteryGlyph } from "@/features/progress/mastery-glyph";
 import { MasteryLadder } from "@/features/progress/mastery-ladder";
 import { masteryOrder } from "@/features/progress/overview";
 import { AreaBalanceChart, RhythmChart } from "@/features/progress/progress-charts";
+import { ReportCard, RhythmTable } from "@/features/progress/report-card";
 
 export const dynamic = "force-dynamic";
 
@@ -38,6 +39,16 @@ export default async function ProgressPage() {
                 : `${plural(overview.totalConcepts, "conceito espera", "conceitos esperam")} pela sua primeira resposta.`}
           </p>
         </header>
+
+        {overview.areas.length > 0 ? (
+          <section className="progress-section report-card-section" aria-labelledby="report-title">
+            <div className="progress-section-head">
+              <h2 id="report-title">Boletim por área</h2>
+              <p>O domínio sobe com respostas independentes, em dias e questões diferentes. Concluir aula não muda o boletim.</p>
+            </div>
+            <ReportCard areas={overview.areas} />
+          </section>
+        ) : null}
 
         <section className="progress-section" aria-labelledby="ladder-title">
           <div className="progress-section-head">
@@ -100,6 +111,7 @@ export default async function ProgressPage() {
             </p>
           </div>
           <RhythmChart days={overview.activity} />
+          <RhythmTable days={overview.activity} />
         </section>
 
         {showBalance ? (
@@ -110,17 +122,7 @@ export default async function ProgressPage() {
             </div>
             <div className="balance">
               <AreaBalanceChart areas={overview.areas} />
-              <dl className="balance-list">
-                {overview.areas.map((area) => (
-                  <div key={area.title}>
-                    <dt>{area.title}</dt>
-                    <dd>
-                      <progress value={area.averageLevel} max={5} aria-hidden="true" />
-                      <span>{area.practicedCount}/{area.conceptCount} praticados</span>
-                    </dd>
-                  </div>
-                ))}
-              </dl>
+              <p className="chart-legend">Cada eixo é uma área; quanto mais longe do centro, maior o domínio médio (0 a 5). Os mesmos valores estão no boletim acima, em tabela.</p>
             </div>
           </section>
         ) : null}

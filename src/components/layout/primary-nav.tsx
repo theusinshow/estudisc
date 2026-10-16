@@ -58,6 +58,11 @@ export function ShellNavigation({ studyNavigation, focus, exit, profile = null }
   );
   const hasSecondaryCurrent = secondaryItems.some(item => isCurrentRoute(pathname, item.match));
   const secondaryLinks = <>
+    {profile?.accountMode && <section className="nav-account" aria-label="Perfil">
+      <p className="nav-account-title">Perfil</p>
+      <span>Conectado como <strong>{profile.name}</strong></span>
+      <button type="button" className="nav-link" onClick={() => void signOut()}><LogOut aria-hidden="true" /><span>Sair</span></button>
+    </section>}
     {secondaryItems.map(item => {
       const Icon = item.icon;
       const current = isCurrentRoute(pathname, item.match);
@@ -66,10 +71,6 @@ export function ShellNavigation({ studyNavigation, focus, exit, profile = null }
         <Icon aria-hidden="true" /><span>{item.label}</span>
       </Link>;
     })}
-    {profile?.accountMode && <div className="nav-account">
-      <span>Conectado como <strong>{profile.name}</strong></span>
-      <button type="button" className="nav-link" onClick={() => void signOut()}><LogOut aria-hidden="true" /><span>Sair</span></button>
-    </div>}
   </>;
 
   return <>

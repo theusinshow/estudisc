@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-16 — Caderno de prova, phase 4: progress report card, profile and QA (ADR 0067)
+
+- Progress opens with a "Boletim por área": a real table of average mastery per area on the 0–5 scale in ink marks plus text ("2,4 de 5 · entendido em média") and practiced counts; it recomposes into blocks below 1200px. The radar gains a legend pointing to the table; the rhythm heatmap gains a "Ver os dias em tabela" alternative.
+- The account sheet shows a titled "Perfil" block first (name and sign-out, when account mode is on); no new route.
+- QA: a unit test fixes WCAG AA contrast for every ADR 0067 text pairing; Lighthouse mobile on a production build: /conheca 95/100/93 (performance/accessibility/best practices), /auth/signin 92/100/93, CLS 0.
+
 ## 2026-10-16 — Caderno de prova, phase 3: landing and sign-in (ADR 0067)
 
 - `/conheca`: asymmetric hero (expanded H1, one yellow CTA, real countdown to the exam day from `PAID_ACCESS_ENDS_AT`) beside a real published question from a free sample lesson, solvable on the page with answer-sheet bubbles and stamp (nothing is recorded). Only published, non-official, non-reserved, single-answer questions qualify; without a persistent catalog no sample is shown. Stats become a mono list, "Como funciona" a ruled sheet, the price a receipt with the real deadline and the withdrawal right; legal texts are verbatim and "Antes de comprar" moves above the price.

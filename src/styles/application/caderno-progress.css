@@ -1,0 +1,35 @@
+/* ==========================================================================
+   ADR 0067 phase 4: progress "boletim" and profile section.
+   Mastery 0–5 in ink marks plus text; charts keep a legend and a table.
+   ========================================================================== */
+
+.report-card { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.report-card caption { padding-bottom: var(--estudisc-spacing-6); color: var(--estudisc-color-dim); font-size: var(--estudisc-typography-scale-meta); text-align: left; caption-side: top; }
+.report-card thead th { padding: var(--estudisc-spacing-4) var(--estudisc-spacing-4) var(--estudisc-spacing-4) 0; border-bottom: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-size: var(--estudisc-typography-scale-meta); font-weight: var(--estudisc-typography-technical-weights-bold); text-align: left; text-transform: uppercase; }
+.report-card tbody th, .report-card td { padding: var(--estudisc-spacing-8) var(--estudisc-spacing-4) var(--estudisc-spacing-8) 0; border-bottom: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); text-align: left; vertical-align: middle; }
+.report-card tbody th { font-size: var(--estudisc-typography-scale-body); font-weight: 800; }
+.report-card tbody th::before { content: ""; display: inline-block; width: var(--estudisc-spacing-4); height: 1em; margin-right: var(--estudisc-spacing-6); border: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); background: var(--subject, var(--estudisc-color-panel)); vertical-align: -0.15em; }
+.report-card td:first-of-type { display: grid; gap: var(--estudisc-spacing-3); }
+.report-card-level strong { font-size: var(--estudisc-typography-scale-lead); font-stretch: var(--estudisc-typography-width-expanded); font-weight: var(--estudisc-typography-display-weight); }
+.mastery-scale { display: inline-grid; grid-template-columns: repeat(5, var(--estudisc-spacing-12)); gap: var(--estudisc-spacing-2); }
+.mastery-scale span { height: var(--estudisc-spacing-6); border: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); background: var(--estudisc-color-panel); }
+.mastery-scale span[data-filled] { background: var(--estudisc-color-ink); }
+
+/* Below 1200px the table recomposes into blocks (DESIGN_SYSTEM_INDEX rule 13). */
+@media (max-width: 1199px) {
+  .report-card thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .report-card, .report-card caption, .report-card tbody, .report-card tr, .report-card th, .report-card td { display: block; }
+  .report-card tr { padding: var(--estudisc-spacing-8) 0; border-bottom: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+  .report-card tbody th, .report-card td { padding: 0 0 var(--estudisc-spacing-3); border: 0; }
+  .report-card td:last-of-type::before { content: "Praticados: "; }
+}
+
+.chart-legend { margin: var(--estudisc-spacing-6) 0 0; color: var(--estudisc-color-dim); font-size: var(--estudisc-typography-scale-meta); max-width: 60ch; }
+.chart-alternative { margin-top: var(--estudisc-spacing-6); }
+.chart-alternative summary { display: inline-flex; align-items: center; min-height: var(--estudisc-touch-minimum); font-weight: var(--estudisc-typography-body-weights-bold); text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.chart-alternative table { border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.chart-alternative th, .chart-alternative td { padding: var(--estudisc-spacing-3) var(--estudisc-spacing-10) var(--estudisc-spacing-3) 0; border-bottom: var(--estudisc-border-hair) solid var(--estudisc-color-ink); text-align: left; }
+
+/* Profile block first in the account sheet. */
+.nav-account:first-child { margin-top: 0; padding-top: 0; border-top: 0; padding-bottom: var(--estudisc-spacing-6); margin-bottom: var(--estudisc-spacing-6); border-bottom: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+.nav-account-title { margin: 0; padding: 0 var(--estudisc-spacing-6); font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-size: var(--estudisc-typography-scale-meta); font-weight: var(--estudisc-typography-technical-weights-bold); text-transform: uppercase; }
