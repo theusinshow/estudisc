@@ -10,7 +10,7 @@ const letters = ["A", "B", "C", "D", "E"];
 /** Balanced, clean question: equal-length choices, no absolute terms, rotating answer letter. */
 function question(index: number, patch: Record<string, unknown> = {}) {
   const answer = letters[index % 5];
-  const choices: Choice[] = letters.map(id => ({ id, content: `Opção ${id} com tamanho igual`, correct: id === answer }));
+  const choices: Choice[] = letters.map(id => ({ id, content: `Opção ${id} da questão ${index}`, correct: id === answer }));
   return { id: `Q-${index}`, stem: `Enunciado número ${index}?`, choices, answer: { kind: "multiple_choice", choiceId: answer }, explanation: "Explicação.", assets: [] as unknown[], ...patch };
 }
 function pack(questions: ReturnType<typeof question>[], content = "Texto didático limpo.", packId = "pack-a", lessonId = "L-01", title = "Aula") {
@@ -86,5 +86,25 @@ describe("validate-packs baseline", () => {
   it("fails again when an aggregate rule gets worse than its baseline", () => {
     const worse = applyBaseline([{ file: "p.json", rule: "R3", id: "*", value: 0.7 }], baseline, config)[0];
     expect(worse.severity).toBe("error"); expect(worse.regressed).toBe(true);
+  });
+});
+
+describe("validate-packs templating rules", () => {
+  it("R9 flags a choice reused across many questions", () => {
+    const boiler = clean().map((entry, index) => ({ ...entry, choices: entry.choices.map(choice => choice.correct || choice.id !== letters[(index + 1) % 5] ? choice : { ...choice, content: "A leitura toma a palavra isolada como pista" }) }));
+    expect(validatePack(pack(boiler), config).some((violation: Violation) => violation.rule === "R9")).toBe(true);
+  });
+
+  it("R10 flags templated stem openings", () => {
+    const templated = clean().map(entry => ({ ...entry, stem: `Como o contexto esclarece ${entry.id}?` }));
+    expect(validatePack(pack(templated), config).some((violation: Violation) => violation.rule === "R10")).toBe(true);
+  });
+
+  it("R11 flags identical choice sets that always share the same answer", () => {
+    const set = ["I e III", "I", "II e IV", "I, II e III", "I, II, III e IV"];
+    const predictable = clean().slice(0, 6).map((entry, index) => ({ ...entry, stem: `Proposições sobre tema ${index}?`, choices: set.map((content, i) => ({ id: letters[i], content, correct: i === 0 })), answer: { kind: "multiple_choice", choiceId: "A" } }));
+    expect(validatePack(pack(predictable), config).filter((violation: Violation) => violation.rule === "R11")).toHaveLength(1);
+    const varied = predictable.map((entry, index) => ({ ...entry, choices: entry.choices.map((choice, i) => ({ ...choice, correct: i === index % 5 })), answer: { kind: "multiple_choice", choiceId: letters[index % 5] } }));
+    expect(validatePack(pack(varied), config).filter((violation: Violation) => violation.rule === "R11")).toHaveLength(0);
   });
 });
