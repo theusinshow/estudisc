@@ -143,11 +143,29 @@
       "variant": "IFSC_STRATEGY",
       "title": "Como isso costuma aparecer em prova",
       "items": [
-        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
-        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
-        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de propriedades, estados e mudanças da matéria.",
-        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        "Densidade compara massa e volume: d = m/V; massa sozinha não determina se um objeto afunda.",
+        "Use unidades compatíveis: g com cm³ resulta em g/cm³; kg com m³ resulta em kg/m³.",
+        "Na comparação com um líquido, considere as densidades e as condições do problema; objetos ocos podem ter densidade média menor que a do material de que são feitos."
       ]
+    },
+    {
+      "id": "CIE-08-B15",
+      "type": "EXPLANATION",
+      "title": "Densidade: relação entre massa e volume",
+      "content": "Densidade é uma propriedade que relaciona quanta massa ocupa certo volume.",
+      "items": [
+        "d = m / V",
+        "d é a densidade; m é a massa; V é o volume. Unidades comuns são g/cm³ e kg/m³.",
+        "Se m estiver em gramas e V em cm³, d sai em g/cm³. Não misture unidades sem conversão."
+      ]
+    },
+    {
+      "id": "CIE-08-B16",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo de cálculo passo a passo",
+      "prompt": "Um bloco tem massa de 180 g e volume de 60 cm³. Qual é sua densidade?",
+      "answer": "A densidade é 3 g/cm³.",
+      "reasoning": "1) Anote os dados: m = 180 g e V = 60 cm³.\n\n2) Use d = m/V: d = 180 g / 60 cm³.\n\n3) Divida: d = 3 g/cm³.\n\nConferência: 3 g/cm³ × 60 cm³ = 180 g, recuperando a massa informada."
     },
     {
       "id": "CIE-08-B11",

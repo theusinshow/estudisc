@@ -140,11 +140,29 @@
       "variant": "IFSC_STRATEGY",
       "title": "Como isso costuma aparecer em prova",
       "items": [
-        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
-        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
-        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de movimento.",
-        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        "Distância é o comprimento total do caminho; deslocamento compara apenas as posições inicial e final e tem direção e sentido.",
+        "Se o móvel retorna ao ponto de partida, o deslocamento é zero, mesmo que a distância percorrida seja grande.",
+        "Para converter m/s em km/h, multiplique por 3,6; no sentido inverso, divida por 3,6."
       ]
+    },
+    {
+      "id": "CIE-01-B15",
+      "type": "EXPLANATION",
+      "title": "Rapidez média e conversão de unidades",
+      "content": "Para calcular a rapidez média, divida a distância percorrida pelo tempo decorrido. A velocidade média também informa a direção e o sentido do deslocamento.",
+      "items": [
+        "v = Δs / Δt",
+        "v é a rapidez média, em m/s ou km/h; Δs é a distância percorrida, em m ou km; Δt é o intervalo de tempo, em s ou h.",
+        "Para converter: km/h para m/s, divida por 3,6; m/s para km/h, multiplique por 3,6."
+      ]
+    },
+    {
+      "id": "CIE-01-B16",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo de cálculo passo a passo",
+      "prompt": "Uma ciclista percorre 180 m em 60 s, mantendo a mesma rapidez. Qual é sua rapidez em m/s e em km/h?",
+      "answer": "3 m/s, que correspondem a 10,8 km/h.",
+      "reasoning": "1) Identifique os dados: Δs = 180 m e Δt = 60 s.\n\n2) Use v = Δs / Δt: v = 180 m / 60 s = 3 m/s.\n\n3) Converta para km/h: 3 × 3,6 = 10,8 km/h.\n\nConferência: 10,8 ÷ 3,6 = 3 m/s, igual ao valor calculado a partir da distância e do tempo."
     },
     {
       "id": "CIE-01-B11",

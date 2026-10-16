@@ -141,11 +141,29 @@
         "variant": "IFSC_STRATEGY",
         "title": "Como isso costuma aparecer em prova",
         "items": [
-          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
-          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
-          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de calor, temperatura e equilíbrio térmico.",
-          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+          "Calor é energia transferida por diferença de temperatura; temperatura não é uma quantidade de calor armazenada no corpo.",
+          "Na fórmula, ΔT = temperatura final − temperatura inicial. Uma variação de 10 °C tem o mesmo tamanho numérico que 10 K.",
+          "A fórmula Q = m · c · ΔT vale aqui para aquecimento ou resfriamento sem mudança de estado; durante a mudança de estado, use outro modelo."
         ]
+      },
+      {
+        "id": "CIE-03-B15",
+        "type": "EXPLANATION",
+        "title": "Calor sensível e variação de temperatura",
+        "content": "Quando uma substância aquece ou esfria sem mudar de estado físico, estimamos a energia térmica transferida com:",
+        "items": [
+          "Q = m · c · ΔT",
+          "Q é a energia transferida, em joules (J); m é a massa, em quilogramas (kg); c é o calor específico, em J/(kg·°C); ΔT = Tf − Ti é a variação de temperatura, em °C.",
+          "Para a água, neste exemplo, use c = 4.200 J/(kg·°C). O sinal de Q depende da convenção adotada; abaixo calculamos a quantidade de energia recebida."
+        ]
+      },
+      {
+        "id": "CIE-03-B16",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo de cálculo passo a passo",
+        "prompt": "Que energia é necessária para aquecer 0,50 kg de água de 20 °C para 30 °C? Considere c = 4.200 J/(kg·°C).",
+        "answer": "São necessários 21.000 J (21 kJ) de energia térmica recebida pela água.",
+        "reasoning": "1) Calcule a variação: ΔT = 30 − 20 = 10 °C.\n\n2) Substitua na relação: Q = 0,50 × 4.200 × 10.\n\n3) Multiplique: Q = 21.000 J.\n\nConferência: 0,50 kg × 4.200 J/(kg·°C) equivale a 2.100 J/°C; ao elevar a temperatura em 10 °C, são 21.000 J."
       },
       {
         "id": "CIE-03-B11",
