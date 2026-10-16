@@ -2,175 +2,232 @@
   {
     "id": "GH-43-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Primeira Guerra Mundial, qual afirmação está correta?",
+    "stem": "Um cartão registra disputas por influência no norte da África; outro descreve a competição por armamentos entre governos europeus; um terceiro resume alianças diplomáticas. O quarto traz a notícia do atentado de Sarajevo, em junho de 1914. Na exposição, o guia deixa os cartões visíveis para que visitantes percebam que a notícia dramática ocorreu dentro de um quadro político mais amplo. A sequência inclui decisões tomadas por governos diferentes.\n\nQual leitura da linha do tempo é mais consistente com os cartões?",
     "options": [
       {
         "key": "A",
-        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+        "text": "O atentado explica a escalada diplomática, enquanto os cartões anteriores funcionam como contexto sem relação com ela.",
+        "targetsError": "conceptual",
+        "rationale": "A linha do tempo não separa as disputas anteriores da escalada diplomática que veio depois."
       },
       {
         "key": "B",
-        "text": "Rivalidades imperialistas, nacionalismos, corrida armamentista e sistemas de alianças contribuíram para a crise que levou à guerra em 1914."
+        "text": "O atentado aparece como estopim em um cenário de rivalidades e alianças já construído.",
+        "rationale": "A sequência mostra tensões anteriores e o acontecimento de Sarajevo."
       },
       {
         "key": "C",
-        "text": "Todos os combates ocorreram somente em trincheiras na França."
+        "text": "A disputa por armamentos compõe o cenário, mas não restringe a crise ao norte da África.",
+        "targetsError": "interpretation",
+        "rationale": "A competição por armamentos e as alianças ampliam o quadro para além da disputa colonial."
       },
       {
         "key": "D",
-        "text": "O conflito não alterou fronteiras políticas."
+        "text": "As alianças condicionavam relações, sem eliminar as decisões dos governos.",
+        "targetsError": "procedural",
+        "rationale": "A exposição menciona decisões de governos diferentes."
       },
       {
         "key": "E",
-        "text": "Tratado de Versalhes encerrou definitivamente tensões europeias."
+        "text": "Os cartões situam disputas, armamentos e alianças antes do atentado.",
+        "targetsError": "memory",
+        "rationale": "A cronologia coloca os cartões de rivalidades antes de junho de 1914."
       }
     ],
     "correctOption": "B",
-    "explanation": "Rivalidades imperialistas, nacionalismos, corrida armamentista e sistemas de alianças contribuíram para a crise que levou à guerra em 1914.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "explanation": "Os cartões situam Sarajevo ao lado de disputas e alianças anteriores; a hipótese de que tudo começou com o atentado ignora essa sequência.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-43-CON-01"
     ],
-    "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "single-cause",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-43-CON-01"
   },
   {
     "id": "GH-43-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “A guerra ocorreu apenas por causa do assassinato em Sarajevo.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Uma notícia de junho de 1914 relata o assassinato do arquiduque Francisco Ferdinando em Sarajevo e registra reações oficiais em Viena. Uma carta diplomática escrita meses depois comenta fronteiras nos Bálcãs, compromissos entre governos e negociações em andamento. No mural, as duas fontes estão separadas por uma linha do tempo que inclui anos anteriores ao atentado. A turma deve escrever uma legenda que indique o que cada documento acrescenta ao outro.\n\nQual conclusão distingue melhor o atentado do contexto político descrito?",
     "options": [
       {
         "key": "A",
-        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+        "text": "A carta contextualiza as decisões posteriores, mas não permite atribuir a elas uma causa única.",
+        "targetsError": "interpretation",
+        "rationale": "A notícia e a carta mostram aspectos relacionados da crise, sem provar uma causa exclusiva."
       },
       {
         "key": "B",
-        "text": "Todos os combates ocorreram somente em trincheiras na França."
+        "text": "O nacionalismo ajuda a contextualizar disputas, sem explicar sozinho todas as decisões.",
+        "targetsError": "conceptual",
+        "rationale": "O mural inclui fronteiras, compromissos e negociações além das ligações nacionalistas."
       },
       {
         "key": "C",
-        "text": "O conflito não alterou fronteiras políticas."
+        "text": "A reação em Viena não determina por si só o papel das alianças na escalada.",
+        "targetsError": "attention",
+        "rationale": "A carta acrescenta negociações e compromissos ao relato da reação em Viena."
       },
       {
         "key": "D",
-        "text": "O assassinato do arquiduque Francisco Ferdinando foi o estopim, não a única causa da guerra."
+        "text": "O assassinato precipitou a crise, enquanto disputas regionais e alianças ajudam a explicar sua ampliação.",
+        "rationale": "A sequência temporal distingue o atentado de fatores que ampliaram a crise."
       },
       {
         "key": "E",
-        "text": "Tratado de Versalhes encerrou definitivamente tensões europeias."
+        "text": "A carta registra negociações durante a crise, não após seu encerramento.",
+        "targetsError": "memory",
+        "rationale": "As negociações são descritas como em andamento durante a crise."
       }
     ],
     "correctOption": "D",
-    "explanation": "O assassinato do arquiduque Francisco Ferdinando foi o estopim, não a única causa da guerra.",
-    "difficulty": "DIRECT",
+    "explanation": "O relato separa o atentado de junho das tensões regionais e conversas diplomáticas; atribuir a guerra apenas ao grupo citado na notícia não explica esse contexto.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-43-CON-02"
     ],
-    "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "trigger-cause-confusion",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-43-CON-02"
   },
   {
     "id": "GH-43-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: A Primeira Guerra Mundial resultou de tensões acumuladas e transformou a política mundial. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Durante a noite, trens chegam com caixas de munição, peças para consertar equipamentos e alimentos. Pela manhã, a artilharia dispara por horas; depois, equipes atravessam áreas expostas para levar feridos ao posto médico. Ela anota que o terreno ficou coberto de lama e que os ruídos impediam conversas. Em outro parágrafo, menciona jornais que pedem novas contribuições civis para sustentar a produção industrial. O registro mostra tarefas militares e civis conectadas.\n\nQue relação entre tecnologia e guerra é melhor apoiada pelo caderno?",
     "options": [
       {
         "key": "A",
-        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+        "text": "Trens, artilharia e produção fabril conectavam logística militar e mobilização civil.",
+        "rationale": "O caderno aproxima tarefas civis e militares, além de registrar condições do front."
       },
       {
         "key": "B",
-        "text": "Todos os combates ocorreram somente em trincheiras na França."
+        "text": "A chegada de trens reduziu a dependência da produção civil para abastecer as forças no front.",
+        "targetsError": "attention",
+        "rationale": "O relato menciona pedidos civis para sustentar a produção industrial usada na guerra."
       },
       {
         "key": "C",
-        "text": "Frentes de trincheiras, artilharia, metralhadoras, gases e mobilização industrial marcaram o conflito."
+        "text": "O relato destaca a logística organizada, deixando em segundo plano a participação de equipes individuais.",
+        "targetsError": "interpretation",
+        "rationale": "Trens, reparos e suprimentos são apoio logístico, e as equipes também aparecem no relato."
       },
       {
         "key": "D",
-        "text": "O conflito não alterou fronteiras políticas."
+        "text": "Os pedidos de contribuição aproximam fábrica e guerra, mas sugerem que a produção civil era independente das necessidades militares.",
+        "targetsError": "conceptual",
+        "rationale": "Os pedidos de contribuição relacionam a produção civil às necessidades da guerra."
       },
       {
         "key": "E",
-        "text": "Tratado de Versalhes encerrou definitivamente tensões europeias."
+        "text": "O emprego de artilharia deslocou parte do abastecimento para o transporte ferroviário e os reparos.",
+        "targetsError": "memory",
+        "rationale": "O caderno descreve trens e artilharia em funções distintas, sem mostrar substituição."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Frentes de trincheiras, artilharia, metralhadoras, gases e mobilização industrial marcaram o conflito.",
+    "correctOption": "A",
+    "explanation": "O caderno aproxima munição, trens, artilharia e fábrica; atribuir às armas uma mudança que eliminasse os riscos da frente contradiz o relato da enfermeira.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-43-CON-03"
     ],
-    "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "technology-as-solution",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-43-CON-03"
   },
   {
     "id": "GH-43-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Primeira Guerra Mundial por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Um mapa de 1914 colore extensas áreas sob os impérios Alemão, Austro-Húngaro, Otomano e Russo. Ao lado, um mapa produzido após a guerra mostra novas fronteiras e Estados na Europa central e oriental. A legenda informa que os limites foram negociados em meio a disputas e que populações com diferentes línguas e histórias ficaram distribuídas entre países recém-criados e vizinhos. Uma ficha de visita registra perguntas sobre quem passou a governar as cidades e sobre as minorias em cada território.\n\nQual conclusão relaciona com mais cuidado o conflito às mudanças políticas do mapa?",
     "options": [
       {
         "key": "A",
-        "text": "A guerra provocou milhões de mortes, queda de impérios e criação de novos Estados."
+        "text": "Os mapas registram a substituição dos impérios por novos Estados e fronteiras.",
+        "targetsError": "interpretation",
+        "rationale": "Os mapas mostram novos Estados e fronteiras, não preservação territorial dos antigos impérios."
       },
       {
         "key": "B",
-        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+        "text": "Novas fronteiras não demonstram que disputas locais tenham desaparecido.",
+        "targetsError": "conceptual",
+        "rationale": "A ficha registra questões sobre minorias e disputas no novo contexto."
       },
       {
         "key": "C",
-        "text": "Todos os combates ocorreram somente em trincheiras na França."
+        "text": "As novas fronteiras reorganizaram o governo, ainda que a exposição registre populações diversas.",
+        "targetsError": "attention",
+        "rationale": "A legenda destaca populações diversas distribuídas entre os novos Estados e países vizinhos."
       },
       {
         "key": "D",
-        "text": "O conflito não alterou fronteiras políticas."
+        "text": "A comparação relaciona a guerra à queda dos impérios e à criação de Estados.",
+        "targetsError": "unknown",
+        "rationale": "Os dois mapas permitem relacionar a guerra à reorganização política."
       },
       {
         "key": "E",
-        "text": "Tratado de Versalhes encerrou definitivamente tensões europeias."
+        "text": "A derrota de impérios e a criação de novos Estados alteraram fronteiras sem apagar tensões sociais.",
+        "rationale": "A comparação inclui mudanças territoriais e a permanência de populações diversas."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A guerra provocou milhões de mortes, queda de impérios e criação de novos Estados.",
+    "correctOption": "E",
+    "explanation": "A comparação registra queda de impérios, novos Estados e populações diversas; tratar a mudança de fronteira como solução para diferenças excede o que a exposição mostra.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-43-CON-04"
     ],
-    "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "map-as-resolution",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-43-CON-04"
   },
   {
     "id": "GH-43-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Rivalidades imperialistas, nacionalismos, corrida armamentista e sistemas de alianças contribuíram para a crise que levou à guerra em 1914.\nII. A guerra ocorreu apenas por causa do assassinato em Sarajevo.\nIII. Frentes de trincheiras, artilharia, metralhadoras, gases e mobilização industrial marcaram o conflito.\nIV. Todos os combates ocorreram somente em trincheiras na França.\nAssinale a alternativa CORRETA.",
+    "stem": "O primeiro informa que operários passaram a fabricar materiais para o exército; o segundo descreve racionamento de alimentos em bairros próximos às fábricas; o terceiro relata a chegada de famílias deslocadas e a falta de moradias. Na última página, uma anotação de 1919 menciona negociações sobre novas fronteiras e a volta de soldados. Cada página traz data e autoria diferentes.\n\nQue síntese explica melhor os registros reunidos no catálogo?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Os registros aproximam mobilização, vida cotidiana e negociações políticas do pós-guerra.",
+        "targetsError": "conceptual",
+        "rationale": "A anotação política vem após registros de trabalho e deslocamento no período da guerra."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "O racionamento evidencia efeitos no consumo urbano, enquanto trabalho e moradia aparecem como aspectos secundários.",
+        "targetsError": "interpretation",
+        "rationale": "O catálogo inclui produção fabril, deslocamento e moradia além do consumo de alimentos."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "As mudanças de produção e moradia refletem efeitos sociais de um conflito com consequências políticas.",
+        "rationale": "A síntese reúne os registros sociais e a consequência política posterior."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "A anotação de 1919 é posterior ao racionamento registrado entre 1914 e 1918.",
+        "targetsError": "memory",
+        "rationale": "A cronologia não permite explicar problemas anteriores por um retorno posterior."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Os registros de 1914–1918 antecedem as negociações mencionadas para 1919.",
+        "targetsError": "attention",
+        "rationale": "A mobilização civil aparece antes da anotação de 1919."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "C",
+    "explanation": "A sequência conecta fábrica, racionamento, deslocamentos e negociações do pós-guerra; restringir o impacto ao consumo apaga as demais experiências documentadas.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -179,37 +236,49 @@
       "GH-43-CON-03",
       "GH-43-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "single-dimension",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-43-CON-01"
   },
   {
     "id": "GH-43-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Primeira Guerra Mundial. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Uma carta assinada por Luís Andrade, soldado de infantaria, em 7 de agosto de 1916, conta que ele aguardava água numa trincheira e ouvia explosões durante a madrugada. O envelope não informa a unidade completa nem o setor da frente. Um livro de registro do mesmo acervo confirma que Luís serviu naquele ano, mas não descreve a situação do terreno. Em atividade de leitura, uma estudante usa a carta para imaginar a rotina do remetente e depois compara a hipótese com outros documentos.\n\nQual uso da carta respeita melhor os limites dessa fonte?",
     "options": [
       {
         "key": "A",
-        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
+        "text": "A carta sugere aspectos de uma experiência individual, sem estabelecer padrão geral.",
+        "targetsError": "interpretation",
+        "rationale": "Um relato individual não basta para caracterizar toda a frente ocidental."
       },
       {
         "key": "B",
-        "text": "Todos os combates ocorreram somente em trincheiras na França."
+        "text": "O relato informa aspectos da experiência do autor, mas precisa de outras fontes para generalizações.",
+        "rationale": "A carta descreve a experiência do remetente e requer comparação para generalizar."
       },
       {
         "key": "C",
-        "text": "O conflito não alterou fronteiras políticas."
+        "text": "A falta do setor limita a localização precisa, mas não elimina o valor do relato.",
+        "targetsError": "conceptual",
+        "rationale": "A data e a assinatura sustentam o uso da carta apesar da localização incompleta."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "As explosões relatadas permitem identificar o tipo de armamento empregado naquele setor.",
+        "targetsError": "attention",
+        "rationale": "O documento não identifica a origem das explosões."
       },
       {
         "key": "E",
-        "text": "Separar causas estruturais, estopim e consequências ao interpretar uma cronologia."
+        "text": "O registro de serviço confirma que as condições do terreno eram as mesmas descritas na carta.",
+        "targetsError": "procedural",
+        "rationale": "O livro confirma o serviço, mas não as condições de terreno relatadas."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Separar causas estruturais, estopim e consequências ao interpretar uma cronologia.",
+    "correctOption": "B",
+    "explanation": "A assinatura, a data e o relato sustentam uma leitura sobre a experiência de Luís; inferir o armamento específico a partir de ruídos vai além da evidência disponível.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -220,79 +289,50 @@
       "GH-43-CON-05",
       "GH-43-CON-06"
     ],
-    "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source-overreach",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-43-CON-01"
   },
   {
     "id": "GH-43-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Primeira Guerra Mundial?",
+    "stem": "Um painel sobre o Tratado de Versalhes inclui uma notícia publicada em 1919, um mapa com mudanças de fronteira e um recorte de jornal de alguns anos depois. No caderno de visita, um estudante sublinha as condições impostas à Alemanha; outro marca disputas políticas posteriores em um calendário separado. A equipe de mediação pede que os grupos organizem as fontes por data e indiquem quais afirmações podem ser sustentadas por cada documento.\n\nQual interpretação evita uma conclusão excessiva sobre o Tratado?",
     "options": [
       {
         "key": "A",
-        "text": "Rivalidades imperialistas, nacionalismos, corrida armamentista e sistemas de alianças contribuíram para a crise que levou à guerra em 1914."
+        "text": "As condições do acordo tiveram pouca influência sobre as tensões posteriores, diante de outros fatores históricos.",
+        "targetsError": "conceptual",
+        "rationale": "O painel permite considerar influência do acordo, mas não medir que ela tenha sido pequena."
       },
       {
         "key": "B",
-        "text": "O assassinato do arquiduque Francisco Ferdinando foi o estopim, não a única causa da guerra."
+        "text": "A notícia informa condições de 1919 que podem ser relacionadas a disputas posteriores com outras fontes.",
+        "targetsError": "interpretation",
+        "rationale": "O painel reúne documentos do acordo e de disputas posteriores."
       },
       {
         "key": "C",
-        "text": "O Tratado de Versalhes impôs condições duras à Alemanha e contribuiu para tensões do período entre-guerras."
+        "text": "A cronologia permite relacionar o tratado às disputas posteriores, mas não às tensões anteriores à assinatura.",
+        "targetsError": "memory",
+        "rationale": "A cronologia apresentada situa a assinatura antes das disputas posteriores."
       },
       {
         "key": "D",
-        "text": "O conflito não alterou fronteiras políticas."
+        "text": "As condições do acordo contribuíram para tensões posteriores, junto a outros fatores históricos.",
+        "rationale": "Essa leitura considera contribuição sem tratar o tratado como causa única."
       },
       {
         "key": "E",
-        "text": "A guerra provocou milhões de mortes, queda de impérios e criação de novos Estados."
+        "text": "O painel sugere que as disputas entre governos diminuíram após a assinatura, embora não tenham desaparecido.",
+        "targetsError": "attention",
+        "rationale": "O recorte posterior não sustenta que as disputas tenham sido abandonadas."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
-    "conceptIds": [
-      "GH-43-CON-01",
-      "GH-43-CON-02",
-      "GH-43-CON-03",
-      "GH-43-CON-04",
-      "GH-43-CON-05",
-      "GH-43-CON-06"
-    ],
-    "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-  },
-  {
-    "id": "GH-43-Q008",
-    "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Primeira Guerra Mundial, qual conclusão final é sustentável?",
-    "options": [
-      {
-        "key": "A",
-        "text": "A guerra ocorreu apenas por causa do assassinato em Sarajevo."
-      },
-      {
-        "key": "B",
-        "text": "Todos os combates ocorreram somente em trincheiras na França."
-      },
-      {
-        "key": "C",
-        "text": "O Tratado de Versalhes impôs condições duras à Alemanha e contribuiu para tensões do período entre-guerras."
-      },
-      {
-        "key": "D",
-        "text": "O conflito não alterou fronteiras políticas."
-      },
-      {
-        "key": "E",
-        "text": "Tratado de Versalhes encerrou definitivamente tensões europeias."
-      }
-    ],
-    "correctOption": "C",
-    "explanation": "O Tratado de Versalhes impôs condições duras à Alemanha e contribuiu para tensões do período entre-guerras.",
-    "difficulty": "IFSC",
+    "explanation": "O painel reconhece condições duras e relaciona ressentimentos ao período seguinte; a explicação exclusiva atribuída ao tratado ignora os demais fatores históricos.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "GH-43-CON-01",
@@ -302,7 +342,63 @@
       "GH-43-CON-05",
       "GH-43-CON-06"
     ],
-    "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "single-cause-afterwar",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-43-CON-05"
+  },
+  {
+    "id": "GH-43-Q008",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "No fim de uma exposição, os visitantes recebem quatro cartões: “alianças e rivalidades antes de 1914”, “combates entre 1914 e 1918”, “queda de impérios” e “tratado assinado em 1919”. Uma ficha de observação registra que jovens discutiram como decisões diplomáticas, tecnologia militar, mobilização das sociedades e mudanças de fronteira aparecem em salas diferentes. O relatório não traz números totais de vítimas e recomenda consultar fontes específicas para estatísticas. A turma precisa escolher a síntese que abrange melhor os cartões e mantém as relações temporais visíveis.\n\nQual frase atende melhor a esse propósito?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A guerra combinou tensões anteriores, mobilização e combates, e deixou mudanças políticas e sociais.",
+        "rationale": "A frase integra antecedentes, guerra e consequências presentes nos cartões."
+      },
+      {
+        "key": "B",
+        "text": "O tratado de 1919 encerrou as causas que haviam aproximado os governos europeus.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório não apresenta o tratado como encerramento das causas da crise."
+      },
+      {
+        "key": "C",
+        "text": "As mudanças políticas descritas ocorreram antes das alianças registradas na primeira sala.",
+        "targetsError": "memory",
+        "rationale": "A sequência coloca alianças e rivalidades antes das mudanças políticas."
+      },
+      {
+        "key": "D",
+        "text": "A exposição atribui às decisões diplomáticas influência menor que à tecnologia militar.",
+        "targetsError": "interpretation",
+        "rationale": "A ficha não hierarquiza diplomacia e tecnologia militar."
+      },
+      {
+        "key": "E",
+        "text": "A falta de estatísticas limita o cálculo de vítimas; os cartões sugerem que o tratado explica principalmente as mudanças políticas.",
+        "targetsError": "attention",
+        "rationale": "O relatório não atribui às condições do tratado a explicação principal das mudanças políticas."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "Os cartões organizam antecedentes, guerra e consequências em sequência; a ausência de estatísticas limita números, não a síntese política e social da exposição.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "TRANSFER",
+    "conceptIds": [
+      "GH-43-CON-01",
+      "GH-43-CON-02",
+      "GH-43-CON-03",
+      "GH-43-CON-04",
+      "GH-43-CON-05",
+      "GH-43-CON-06"
+    ],
+    "targetedError": "evidence-boundary",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-43-CON-03"
   }
 ]

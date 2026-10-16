@@ -1,176 +1,231 @@
 [
   {
     "id": "GH-06-Q001",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina, qual afirmação está correta?",
+    "stem": "Um arquivo de uma vila catarinense imaginária guardou livros de contas de uma propriedade entre 1854 e 1870. As páginas mencionam trabalhadores escravizados em tarefas de cultivo, transporte e manutenção, além de pagamentos feitos a fornecedores. A catalogação não informa a origem de cada pessoa, e parte das folhas está danificada. A professora escolheu o conjunto para discutir como registros locais podem ampliar a pesquisa sobre a escravidão no estado e pediu que os estudantes anotassem o que a fonte não revela.\n\nQue afirmação está apoiada pelo registro descrito?",
     "options": [
       {
         "key": "A",
-        "text": "Santa Catarina não utilizou trabalho escravizado africano."
+        "text": "Os livros identificam a origem de cada pessoa escravizada na propriedade.",
+        "targetsError": "inferir_origem_de_fonte_incompleta",
+        "rationale": "O texto informa que a origem individual não foi registrada."
       },
       {
         "key": "B",
-        "text": "A escravidão de africanos e afrodescendentes fez parte da história de Santa Catarina e não foi exclusiva das grandes áreas escravistas do Sudeste e Nordeste."
+        "text": "A propriedade utilizava trabalho escravizado em atividades diferentes.",
+        "rationale": "O registro menciona cultivo, transporte e manutenção."
       },
       {
         "key": "C",
-        "text": "Quilombo significa apenas esconderijo de escravizados fugitivos e não possui continuidade territorial."
+        "text": "A vila era a principal área escravista de Santa Catarina.",
+        "targetsError": "generalizar_fonte_local",
+        "rationale": "Um arquivo de uma vila não compara todas as regiões."
       },
       {
         "key": "D",
-        "text": "A presença negra em Santa Catarina começou apenas depois da abolição."
+        "text": "Os registros permitem estudar tarefas na propriedade, mas não bastam para comparar regiões.",
+        "targetsError": "reduzir_escala_da_escravidao",
+        "rationale": "O conjunto descreve uma propriedade, sem dados comparativos de outras regiões."
       },
       {
         "key": "E",
-        "text": "Questões étnico-raciais não fazem parte da formação regional catarinense."
+        "text": "As páginas danificadas indicam que as tarefas registradas se ligavam ao cultivo.",
+        "targetsError": "interpretar_lacuna_como_prova",
+        "rationale": "Danos no papel não mudam o conteúdo das entradas preservadas."
       }
     ],
     "correctOption": "B",
-    "explanation": "A escravidão de africanos e afrodescendentes fez parte da história de Santa Catarina e não foi exclusiva das grandes áreas escravistas do Sudeste e Nordeste.",
+    "explanation": "Os livros registram trabalho escravizado em tarefas distintas; por ser um acervo local e incompleto, não identificam origens individuais nem permitem comparar o estado todo.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "RECALL",
     "conceptIds": [
       "GH-06-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-06-Q002",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Santa Catarina não utilizou trabalho escravizado africano.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Em uma reunião de uma comunidade quilombola imaginária, moradores organizaram um mutirão para recuperar um arquivo familiar e conversar sobre a manutenção de um caminho usado entre casas e áreas de cultivo. Jovens sugeriram gravar relatos de pessoas mais velhas; outras pessoas pediram que qualquer material público fosse conferido antes de circular. A ata também registra uma oficina sobre documentos de reconhecimento e uma proposta de atividade para crianças. Não há lista de propriedades individuais nem descrição de uma única origem para todas as famílias.\n\nQue leitura melhor expressa o papel da comunidade no relato?",
     "options": [
       {
         "key": "A",
-        "text": "Santa Catarina não utilizou trabalho escravizado africano."
+        "text": "O grupo combina memória, organização coletiva e decisões sobre seu espaço vivido.",
+        "rationale": "O mutirão, os relatos e o caminho aparecem como atividades atuais."
       },
       {
         "key": "B",
-        "text": "Quilombo significa apenas esconderijo de escravizados fugitivos e não possui continuidade territorial."
+        "text": "A ata reduz a comunidade a um esconderijo criado no passado.",
+        "targetsError": "reduzir_quilombo_a_passado",
+        "rationale": "O documento descreve ações, decisões e gerações no presente."
       },
       {
         "key": "C",
-        "text": "A presença negra em Santa Catarina começou apenas depois da abolição."
+        "text": "O arquivo familiar elimina a necessidade de consultar os moradores.",
+        "targetsError": "substituir_comunidade_por_documento",
+        "rationale": "A ata prevê conferência comunitária do material público."
       },
       {
         "key": "D",
-        "text": "Comunidades quilombolas constituem territórios de memória, pertencimento, resistência e reprodução social."
+        "text": "A ata registra iniciativas comuns sem afirmar uma origem única para as famílias.",
+        "targetsError": "homogeneizar_trajetorias_familiares",
+        "rationale": "O documento descreve ações compartilhadas, não uma origem comum das famílias."
       },
       {
         "key": "E",
-        "text": "Questões étnico-raciais não fazem parte da formação regional catarinense."
+        "text": "O caminho de cultivo pertence a uma família específica segundo a ata.",
+        "targetsError": "inventar_propriedade_individual",
+        "rationale": "A ata fala de uso do caminho sem atribuir propriedade."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Comunidades quilombolas constituem territórios de memória, pertencimento, resistência e reprodução social.",
+    "correctOption": "A",
+    "explanation": "A ata registra trabalho coletivo, memória e uso atual do espaço; reduzi-la a um refúgio do passado apaga as ações descritas.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-06-CON-02"
     ],
-    "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "quilombola_territory",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-06-Q003",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: A formação de Santa Catarina também inclui trabalho, cultura e resistência de africanos e afrodescendentes. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Uma exposição sobre uma cidade catarinense imaginária apresenta fichas de pessoas negras que trabalharam como artesãos, carregadores, cozinheiras, músicos e comerciantes em diferentes períodos. O mapa situa oficinas, espaços de encontro e uma rua de mercado, mas a legenda avisa que os endereços foram aproximados a partir de fontes variadas. A curadoria inclui anúncios, registros de ofício e depoimentos recentes de moradores. O texto de parede ressalta que a exposição é um recorte construído a partir do material disponível.\n\nQual interpretação o conjunto permite sustentar?",
     "options": [
       {
         "key": "A",
-        "text": "Santa Catarina não utilizou trabalho escravizado africano."
+        "text": "As fichas descrevem uma profissão associada à população negra da cidade.",
+        "targetsError": "homogeneizar_ocupacoes",
+        "rationale": "Os registros listam ofícios e atividades diferentes."
       },
       {
         "key": "B",
-        "text": "Quilombo significa apenas esconderijo de escravizados fugitivos e não possui continuidade territorial."
+        "text": "O mapa localiza com precisão as residências das pessoas fichadas.",
+        "targetsError": "exagerar_precisao_cartografica",
+        "rationale": "A legenda informa que os endereços são aproximados."
       },
       {
         "key": "C",
-        "text": "A população negra participou da formação econômica, cultural e urbana catarinense em diferentes atividades."
+        "text": "Os depoimentos recentes substituem os documentos de ofício mais antigos.",
+        "targetsError": "trocar_fontes_em_vez_de_comparar",
+        "rationale": "A exposição reúne os dois tipos de fonte."
       },
       {
         "key": "D",
-        "text": "A presença negra em Santa Catarina começou apenas depois da abolição."
+        "text": "O conjunto documenta atividades urbanas diversas, sem permitir concluir sobre a participação rural.",
+        "targetsError": "contradizer_contexto_urbano",
+        "rationale": "As fontes citadas descrevem espaços e ofícios urbanos, sem abordar a participação rural."
       },
       {
         "key": "E",
-        "text": "Questões étnico-raciais não fazem parte da formação regional catarinense."
+        "text": "Pessoas negras participaram de atividades econômicas e culturais variadas na cidade.",
+        "rationale": "Os ofícios e espaços reunidos mostram participação em setores diversos."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A população negra participou da formação econômica, cultural e urbana catarinense em diferentes atividades.",
+    "correctOption": "E",
+    "explanation": "Os registros de ofícios e espaços urbanos mostram atividades variadas; os endereços aproximados não permitem localizar todas as residências.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-06-CON-03"
     ],
-    "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "black_presence_in_city",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-06-Q004",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "O rascunho de uma mostra municipal apresenta uma linha do tempo com edifícios públicos e nomes de comerciantes, mas não inclui registros da associação negra local. Durante a revisão, estudantes encontram um livro de atas da associação, um jornal comunitário e relatos de famílias sobre festas e mobilizações no mesmo período. A curadora anota que a primeira seleção privilegiou documentos guardados no arquivo da prefeitura e solicita uma busca em outros acervos antes de fechar os painéis.\n\nQual problema a revisão procura enfrentar?",
     "options": [
       {
         "key": "A",
-        "text": "O racismo e a invisibilização histórica ajudam a explicar por que essa presença foi muitas vezes minimizada em narrativas regionais."
+        "text": "A falta de registros municipais comprova que a associação não atuou naquele período.",
+        "targetsError": "tomar_arquivo_oficial_como_totalidade",
+        "rationale": "Outras fontes foram localizadas e apontam atividades da associação."
       },
       {
         "key": "B",
-        "text": "Santa Catarina não utilizou trabalho escravizado africano."
+        "text": "Os jornais comunitários devem ser retirados por apresentarem opiniões locais.",
+        "targetsError": "desqualificar_fonte_comunitaria",
+        "rationale": "O ponto é ampliar a busca e contextualizar as fontes."
       },
       {
         "key": "C",
-        "text": "Quilombo significa apenas esconderijo de escravizados fugitivos e não possui continuidade territorial."
+        "text": "O recorte inicial pode invisibilizar experiências por limitar a pesquisa a um arquivo.",
+        "rationale": "A mostra selecionou documentos municipais e deixou outros acervos de fora."
       },
       {
         "key": "D",
-        "text": "A presença negra em Santa Catarina começou apenas depois da abolição."
+        "text": "A linha do tempo precisa trocar edifícios públicos por festas familiares.",
+        "targetsError": "substituir_uma_memoria_por_outra",
+        "rationale": "A curadora busca ampliar os registros, não inverter o recorte."
       },
       {
         "key": "E",
-        "text": "Questões étnico-raciais não fazem parte da formação regional catarinense."
+        "text": "A seleção inicial pode ter produzido uma lacuna, embora as fontes não permitam determinar a intenção de quem a organizou.",
+        "targetsError": "atribuir_intencao_sem_apuracao",
+        "rationale": "A curadora reconhece um recorte limitado, mas não atribui intenção a quem o organizou."
       }
     ],
-    "correctOption": "A",
-    "explanation": "O racismo e a invisibilização histórica ajudam a explicar por que essa presença foi muitas vezes minimizada em narrativas regionais.",
+    "correctOption": "C",
+    "explanation": "A seleção baseada no arquivo municipal deixou de fora registros da associação e de famílias; a revisão amplia fontes sem presumir intenção individual.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-06-CON-04"
     ],
-    "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "historical_invisibility",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-06-Q005",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. A escravidão de africanos e afrodescendentes fez parte da história de Santa Catarina e não foi exclusiva das grandes áreas escravistas do Sudeste e Nordeste.\nII. Santa Catarina não utilizou trabalho escravizado africano.\nIII. A população negra participou da formação econômica, cultural e urbana catarinense em diferentes atividades.\nIV. Quilombo significa apenas esconderijo de escravizados fugitivos e não possui continuidade territorial.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma associação de uma comunidade quilombola imaginária decidiu organizar fotografias de família, atas de reuniões e gravações autorizadas de relatos orais. A equipe marcou no calendário uma conversa sobre como descrever os documentos e convidou estudantes para pesquisar as mudanças no entorno. Uma pessoa sugeriu publicar todo o material na internet; outra pediu que cada família revisasse o que pode ser divulgado. A proposta final prevê uma cópia comunitária e uma exposição com trechos escolhidos em conjunto.\n\nQual prática melhor combina preservação e participação comunitária?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Publicar o acervo sem revisão para que visitantes definam seu sentido.",
+        "targetsError": "ignorar_autorizacao_comunitaria",
+        "rationale": "A proposta registra consulta e escolhas sobre divulgação."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Organizar fontes com participação das famílias e registrar limites de divulgação.",
+        "rationale": "A equipe combina preservação, revisão comunitária e seleção compartilhada."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Restringir a pesquisa às fotografias e descartar atas e relatos orais.",
+        "targetsError": "reduzir_variedade_de_fontes",
+        "rationale": "O projeto prevê três tipos de registro."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Retirar os estudantes para evitar que a comunidade trate do próprio passado.",
+        "targetsError": "desconsiderar_producao_comunitaria_de_memoria",
+        "rationale": "A proposta inclui pesquisa estudantil com participação local."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "A exposição pode aproximar fontes distintas, desde que não as trate como equivalentes em finalidade ou alcance.",
+        "targetsError": "apagar_contexto_e_finalidade_das_fontes",
+        "rationale": "Fotografias, atas e relatos têm finalidades e alcances diferentes no projeto."
       }
     ],
     "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "explanation": "A cópia comunitária e a exposição escolhida em conjunto equilibram preservação e participação; publicação irrestrita ignoraria os pedidos de revisão.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -179,37 +234,48 @@
       "GH-06-CON-03",
       "GH-06-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "heritage_and_rights",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-06-Q006",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Uma turma lê um anúncio antigo de emprego doméstico, um registro de pagamento de uma oficina e um depoimento contemporâneo sobre discriminação numa fila de serviço público. A professora pede que os grupos anotem quem produziu cada documento, qual período ele aborda e que pergunta pode ser respondida com ele. Um estudante observa que a palavra usada no anúncio aparece em uma placa atual, mas a turma ainda precisa descobrir se os contextos de uso são iguais. O plano é conversar sobre continuidades e diferenças.\n\nQual abordagem atende melhor à proposta de comparação?",
     "options": [
       {
         "key": "A",
-        "text": "Santa Catarina não utilizou trabalho escravizado africano."
+        "text": "Tratar os três documentos como evidência de uma experiência idêntica.",
+        "targetsError": "homogeneizar_periodos_e_experiencias",
+        "rationale": "Os documentos têm autoria, época e finalidade distintas."
       },
       {
         "key": "B",
-        "text": "Quilombo significa apenas esconderijo de escravizados fugitivos e não possui continuidade territorial."
+        "text": "Usar o depoimento atual para explicar as relações de trabalho antigas.",
+        "targetsError": "projetar_experiencia_atual_no_passado",
+        "rationale": "O depoimento registra outro contexto e precisa ser situado."
       },
       {
         "key": "C",
-        "text": "A presença negra em Santa Catarina começou apenas depois da abolição."
+        "text": "A recorrência da palavra orienta uma pergunta de pesquisa, mas não demonstra continuidade por si só.",
+        "targetsError": "confundir_repeticao_vocabular_com_continuidade_social",
+        "rationale": "A palavra repetida precisa ser contextualizada antes de sustentar uma continuidade."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Situar cada fonte e comparar o que revela sobre trabalho e desigualdade.",
+        "rationale": "A proposta pede autoria, período, pergunta e relação entre registros."
       },
       {
         "key": "E",
-        "text": "Confrontar narrativas de homogeneidade regional com evidências históricas e territoriais de diversidade."
+        "text": "Descartar o anúncio por não ter sido escrito pela pessoa empregada.",
+        "targetsError": "descartar_fonte_por_posicao_de_autoria",
+        "rationale": "A autoria limita o olhar do anúncio, mas também informa relações de poder."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Confrontar narrativas de homogeneidade regional com evidências históricas e territoriais de diversidade.",
+    "correctOption": "D",
+    "explanation": "Os registros abordam períodos e posições diferentes; contextualizá-los permite comparar trabalho e desigualdade sem tratar uma palavra repetida como prova suficiente.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -219,37 +285,48 @@
       "GH-06-CON-04",
       "GH-06-CON-05"
     ],
-    "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-06-Q007",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina?",
+    "stem": "Uma comunidade quilombola imaginária criou um mapa para preparar uma caminhada de memória. Os participantes escolheram marcar uma antiga área de trabalho, a sede de uma associação, uma escola atual e o caminho até uma fonte de água. Uma nota identifica o mapa como resultado de uma oficina recente e informa que alguns nomes foram substituídos por descrições gerais, a pedido das famílias. A equipe da exposição pretende explicar que o material registra escolhas de seus autores, sem funcionar como levantamento cadastral.\n\nQual legenda interpretaria melhor o material?",
     "options": [
       {
         "key": "A",
-        "text": "A escravidão de africanos e afrodescendentes fez parte da história de Santa Catarina e não foi exclusiva das grandes áreas escravistas do Sudeste e Nordeste."
+        "text": "O mapa reúne lugares de memória e usos atuais selecionados pelos participantes.",
+        "rationale": "A oficina incluiu referências históricas e equipamentos usados hoje."
       },
       {
         "key": "B",
-        "text": "Comunidades quilombolas constituem territórios de memória, pertencimento, resistência e reprodução social."
+        "text": "O desenho apresenta uma divisão oficial das propriedades familiares.",
+        "targetsError": "confundir_mapa_de_memoria_com_cadastro",
+        "rationale": "A nota esclarece que não se trata de levantamento cadastral."
       },
       {
         "key": "C",
-        "text": "Fontes locais, registros de comunidades e políticas de reconhecimento permitem reconstruir trajetórias afro-catarinenses."
+        "text": "Os nomes ausentes mostram que as famílias desconhecem esses locais.",
+        "targetsError": "ler_protecao_como_desconhecimento",
+        "rationale": "A substituição de nomes foi uma escolha de divulgação."
       },
       {
         "key": "D",
-        "text": "A presença negra em Santa Catarina começou apenas depois da abolição."
+        "text": "A escola atual integra o recorte da oficina, sem encerrar a história da comunidade.",
+        "targetsError": "encerrar_historia_no_presente",
+        "rationale": "A presença da escola atual não significa que a história da comunidade terminou."
       },
       {
         "key": "E",
-        "text": "O racismo e a invisibilização histórica ajudam a explicar por que essa presença foi muitas vezes minimizada em narrativas regionais."
+        "text": "A fonte de água explica a localização das demais referências.",
+        "targetsError": "reduzir_mapa_a_causa_natural",
+        "rationale": "A oficina inclui também associação, escola e memória de trabalho."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "A",
+    "explanation": "A caminhada reúne memória de trabalho, associação, escola e fonte de água; nomes generalizados atendem a um pedido de proteção, não à falta de conhecimento.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -259,37 +336,48 @@
       "GH-06-CON-04",
       "GH-06-CON-05"
     ],
-    "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-06-Q008",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina, qual conclusão final é sustentável?",
+    "stem": "Uma família negra de uma cidade catarinense imaginária guardou uma carta de 1932 sobre o trabalho de um parente em uma oficina e um caderno recente de uma associação cultural. A carta menciona longas jornadas e uma rua de comércio; o caderno registra ensaios, reuniões e projetos para jovens. Um pesquisador anotou que as fontes têm finalidades diferentes e não permitem reconstruir sozinhas toda a história da cidade. A família autorizou usar trechos selecionados numa exposição escolar.\n\nQue relação entre as fontes pode ser apresentada com responsabilidade?",
     "options": [
       {
         "key": "A",
-        "text": "Santa Catarina não utilizou trabalho escravizado africano."
+        "text": "A associação cultural atual continua a oficina descrita na carta familiar.",
+        "targetsError": "confundir_organizacao_com_local_de_trabalho",
+        "rationale": "O caderno registra atividades culturais, não a continuidade da oficina."
       },
       {
         "key": "B",
-        "text": "Quilombo significa apenas esconderijo de escravizados fugitivos e não possui continuidade territorial."
+        "text": "A carta documenta uma experiência familiar específica que pode ser relacionada, com cautela, ao contexto local.",
+        "targetsError": "generalizar_registro_familiar",
+        "rationale": "Uma carta familiar não descreve, sozinha, a trajetória de toda a população negra local."
       },
       {
         "key": "C",
-        "text": "Fontes locais, registros de comunidades e políticas de reconhecimento permitem reconstruir trajetórias afro-catarinenses."
+        "text": "Os ensaios atuais provam que as jornadas de trabalho antigas eram curtas.",
+        "targetsError": "inferir_condicao_passada_por_atividade_atual",
+        "rationale": "O caderno recente não mede jornadas registradas em 1932."
       },
       {
         "key": "D",
-        "text": "A presença negra em Santa Catarina começou apenas depois da abolição."
+        "text": "A rua de comércio indica que a oficina era propriedade da família.",
+        "targetsError": "inferir_titularidade_por_localizacao",
+        "rationale": "A carta menciona trabalho na oficina, sem indicar propriedade."
       },
       {
         "key": "E",
-        "text": "Questões étnico-raciais não fazem parte da formação regional catarinense."
+        "text": "As fontes registram experiências distintas e podem compor uma história local mais ampla.",
+        "rationale": "A carta e o caderno mostram contextos familiares e coletivos diferentes."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Fontes locais, registros de comunidades e políticas de reconhecimento permitem reconstruir trajetórias afro-catarinenses.",
+    "correctOption": "E",
+    "explanation": "A carta e o caderno documentam experiências de épocas e finalidades distintas; a autorização e a seleção de trechos delimitam o uso público.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -299,7 +387,7 @@
       "GH-06-CON-04",
       "GH-06-CON-05"
     ],
-    "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   }
 ]

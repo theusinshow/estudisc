@@ -204,175 +204,175 @@
     {
       "id": "GH-16-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Independência do Brasil, qual afirmação está correta?",
+      "stem": "Um painel de uma mostra escolar apresenta um mapa da viagem da corte portuguesa ao Rio de Janeiro em 1808 e uma lista de mudanças na administração colonial feitas depois da chegada. Ao lado, há uma nota de um comerciante que descreve novas oportunidades de negócio, mas não diz que a população local passou a decidir as regras do governo. Os estudantes assinalam que o mapa mostra deslocamento da corte e que a lista reúne transformações institucionais.\n\nQual inferência combina melhor as duas peças?",
       "options": [
         {
           "key": "A",
-          "text": "A Independência foi um ato instantâneo e sem conflitos."
+          "text": "A chegada da corte alterou instituições e relações coloniais, sem eliminar desigualdades."
         },
         {
           "key": "B",
-          "text": "A transferência da corte portuguesa para o Rio de Janeiro em 1808 alterou instituições, comércio e relações políticas na colônia."
+          "text": "As novas oportunidades comerciais ampliaram a influência de negociantes locais sobre decisões da corte."
         },
         {
           "key": "C",
-          "text": "Em 1822 o Brasil tornou-se uma república democrática."
+          "text": "A mudança da corte encerrou as relações coloniais no momento em que a viagem começou."
         },
         {
           "key": "D",
-          "text": "A escravidão terminou junto com a independência."
+          "text": "A chegada teve efeito limitado ao comércio e deixou a administração sem alterações."
         },
         {
           "key": "E",
-          "text": "Todas as províncias aceitaram imediatamente o novo governo."
+          "text": "A instalação da corte abriu espaço para maior negociação política entre grupos locais e autoridades portuguesas."
         }
       ],
-      "correctOption": "B",
-      "explanation": "A transferência da corte portuguesa para o Rio de Janeiro em 1808 alterou instituições, comércio e relações políticas na colônia.",
-      "difficulty": "FOUNDATION",
-      "cognitiveOperation": "RECALL",
+      "correctOption": "A",
+      "explanation": "O mapa e a lista associam a chegada da corte a mudanças na administração e nas relações coloniais. A oportunidade comercial não demonstra que a população local passou a governar nem que as desigualdades desapareceram.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-16-CON-01"
       ],
-      "targetedError": "foundation",
+      "targetedError": "contextual_inference",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-16-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “A Independência foi um ato instantâneo e sem conflitos.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "stem": "Uma cronista escolar escreve sobre a Revolução Liberal do Porto de 1820. Em sua síntese, as lideranças portuguesas exigiam o retorno de D. João VI e propunham reorganizar os vínculos entre Portugal e Brasil. Uma carta enviada do Rio de Janeiro naquele período demonstra preocupação com a possibilidade de decisões políticas voltarem a ser tomadas em Lisboa. A cronista observa que o debate ocorreu depois de mudanças administrativas iniciadas com a corte no Brasil.\n\nQue tensão política aparece nas fontes descritas?",
       "options": [
         {
           "key": "A",
-          "text": "A Independência foi um ato instantâneo e sem conflitos."
+          "text": "As Cortes pediam o retorno do rei e maior controle de Lisboa sobre o Brasil."
         },
         {
           "key": "B",
-          "text": "Em 1822 o Brasil tornou-se uma república democrática."
+          "text": "As Cortes buscavam manter o rei no Rio enquanto negociavam a autonomia das províncias brasileiras."
         },
         {
           "key": "C",
-          "text": "A escravidão terminou junto com a independência."
+          "text": "A carta prova que as províncias já tinham formado um governo independente."
         },
         {
           "key": "D",
-          "text": "A Revolução Liberal do Porto de 1820 pressionou pelo retorno de D. João VI e pela recolonização política do Brasil."
+          "text": "A mudança administrativa de 1808 tornou desnecessário negociar relações com Portugal."
         },
         {
           "key": "E",
-          "text": "Todas as províncias aceitaram imediatamente o novo governo."
+          "text": "As Cortes propunham preservar a autonomia política do Brasil sob uma monarquia constitucional comum."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A Revolução Liberal do Porto de 1820 pressionou pelo retorno de D. João VI e pela recolonização política do Brasil.",
+      "correctOption": "A",
+      "explanation": "A demanda pelo retorno de D. João VI e a preocupação com decisões deslocadas para Lisboa apontam uma disputa sobre o controle político do Brasil. A leitura republicana desloca para 1820 uma proposta que não aparece nas fontes descritas.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-16-CON-02"
       ],
-      "targetedError": "concept_discrimination",
+      "targetedError": "political_relationships",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-16-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: A Independência de 1822 rompeu vínculos políticos com Portugal, mas preservou várias estruturas sociais. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "stem": "Em uma simulação de arquivo, estudantes comparam mapas autorais de deslocamentos militares durante as disputas pela Independência. Um deles mostra posições portuguesas na Bahia; outro registra forças organizadas em apoio ao novo governo do Rio. As anotações de catalogação indicam que os confrontos continuaram depois do anúncio de 7 de Setembro de 1822, mas não descrevem a experiência de cada província. A legenda da exposição adverte que o gesto de D. Pedro não encerrou, por si só, as disputas locais.\n\nQual interpretação é apoiada pelo conjunto?",
       "options": [
         {
           "key": "A",
-          "text": "A Independência foi um ato instantâneo e sem conflitos."
+          "text": "Os mapas sugerem que os confrontos tiveram duração semelhante nas áreas representadas."
         },
         {
           "key": "B",
-          "text": "Em 1822 o Brasil tornou-se uma república democrática."
+          "text": "A resistência militar foi um conflito sem relação com as decisões políticas do Rio."
         },
         {
           "key": "C",
-          "text": "A Independência envolveu disputas regionais e conflitos armados, não apenas o episódio simbólico do 7 de Setembro."
+          "text": "O anúncio de setembro marca o começo de uma independência pacífica e consensual."
         },
         {
           "key": "D",
-          "text": "A escravidão terminou junto com a independência."
+          "text": "As forças portuguesas na Bahia resistiam ao novo governo sediado no Rio."
         },
         {
           "key": "E",
-          "text": "Todas as províncias aceitaram imediatamente o novo governo."
+          "text": "A Independência envolveu disputas regionais que continuaram após o anúncio de 1822."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A Independência envolveu disputas regionais e conflitos armados, não apenas o episódio simbólico do 7 de Setembro.",
-      "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "correctOption": "E",
+      "explanation": "A continuidade dos confrontos depois de 7 de Setembro mostra que a independência envolveu disputas regionais além do episódio simbólico. A ideia de consenso pacífico ignora a presença de forças em posições opostas no mapa da Bahia.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-16-CON-03"
       ],
-      "targetedError": "relationship",
+      "targetedError": "regional_conflict",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-16-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Independência do Brasil por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "stem": "No museu de uma escola, estudantes expõem uma página da Constituição de 1824 ao lado de uma linha do tempo. A ficha explica que, após a Independência, o Brasil adotou uma monarquia constitucional; os registros de propriedade e de trabalho da época mantêm referências à escravidão e à influência de grandes proprietários. A equipe seleciona essas peças para discutir o que mudou com a separação política e o que permaneceu nas relações sociais.\n\nQue síntese respeita os indícios apresentados?",
       "options": [
         {
           "key": "A",
-          "text": "O novo Estado manteve a monarquia, a escravidão e forte poder das elites proprietárias."
+          "text": "A Constituição ampliou a participação política, embora mantivesse diferenças entre grupos."
         },
         {
           "key": "B",
-          "text": "A Independência foi um ato instantâneo e sem conflitos."
+          "text": "O Estado independente manteve a monarquia e a escravidão, sob influência de proprietários."
         },
         {
           "key": "C",
-          "text": "Em 1822 o Brasil tornou-se uma república democrática."
+          "text": "A separação de Portugal encerrou as hierarquias sociais herdadas da colônia."
         },
         {
           "key": "D",
-          "text": "A escravidão terminou junto com a independência."
+          "text": "A presença de uma Constituição mostra que o Brasil já se organizava como república."
         },
         {
           "key": "E",
-          "text": "Todas as províncias aceitaram imediatamente o novo governo."
+          "text": "A escravidão permaneceu, enquanto a separação reorganizou o governo e seus vínculos externos."
         }
       ],
-      "correctOption": "A",
-      "explanation": "O novo Estado manteve a monarquia, a escravidão e forte poder das elites proprietárias.",
+      "correctOption": "B",
+      "explanation": "A ficha apresenta uma monarquia constitucional e os documentos sociais mantêm referências à escravidão e à influência proprietária. A interpretação que confunde Constituição com república troca a forma de governo descrita pelo museu.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-16-CON-04"
       ],
-      "targetedError": "application",
+      "targetedError": "political_and_social_change",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-16-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. A transferência da corte portuguesa para o Rio de Janeiro em 1808 alterou instituições, comércio e relações políticas na colônia.\nII. A Independência foi um ato instantâneo e sem conflitos.\nIII. A Independência envolveu disputas regionais e conflitos armados, não apenas o episódio simbólico do 7 de Setembro.\nIV. Em 1822 o Brasil tornou-se uma república democrática.\nAssinale a alternativa CORRETA.",
+      "stem": "Um jornal estudantil apresenta três quadros: a chegada da corte ao Rio em 1808; as exigências da Revolução do Porto, em 1820; e as disputas entre forças portuguesas e partidárias da separação nos anos seguintes. No rodapé, os editores lembram que a Independência manteve o Brasil como monarquia e não extinguiu a escravidão. As imagens são reproduções didáticas e a redação não afirma que representam todas as experiências locais.\n\nQual conclusão reúne melhor essas informações?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "Em 1822, o Brasil tornou-se uma república com igualdade social."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "A transferência da corte resolveu as disputas políticas que surgiram em 1820."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "A Independência envolveu disputas e preservou estruturas sociais importantes."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "O episódio de 7 de Setembro oferece um retrato completo dos processos provinciais."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "A pressão das Cortes perdeu força antes da chegada da corte ao Rio."
         }
       ],
-      "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "correctOption": "C",
+      "explanation": "Os quadros mostram mudanças de contexto, pressão de Lisboa e conflito, enquanto o rodapé registra permanências sociais e monárquicas. A leitura de uma transformação social completa não se sustenta porque a escravidão permaneceu.",
       "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -381,39 +381,39 @@
         "GH-16-CON-03",
         "GH-16-CON-04"
       ],
-      "targetedError": "multi_statement_reasoning",
+      "targetedError": "historical_synthesis",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-16-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Independência do Brasil. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "stem": "Um exercício autoral propõe a leitura de um abaixo-assinado fictício de moradores de uma vila nos anos posteriores a 1822. Os signatários pedem que autoridades reconheçam a nova administração e reclamam que as decisões seguem concentradas em proprietários locais. A folha não informa quantas pessoas apoiavam o pedido nem a posição de trabalhadores escravizados. A pesquisadora acompanha o documento com a observação de que a mudança de soberania e a distribuição de poder dentro da sociedade são questões diferentes.\n\nQue uso do abaixo-assinado é mais responsável?",
       "options": [
         {
           "key": "A",
-          "text": "A Independência foi um ato instantâneo e sem conflitos."
+          "text": "Ler a petição como sinal de apoio amplo de diferentes grupos ao novo governo."
         },
         {
           "key": "B",
-          "text": "Em 1822 o Brasil tornou-se uma república democrática."
+          "text": "Concluir que a independência política não alterou a organização do governo no Brasil."
         },
         {
           "key": "C",
-          "text": "A escravidão terminou junto com a independência."
+          "text": "Relacionar o reconhecimento do governo à concentração local de poder."
         },
         {
           "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+          "text": "Usá-la como indício de que a mudança política também encerrou a escravidão."
         },
         {
           "key": "E",
-          "text": "Distinguir símbolos comemorativos do processo histórico mais amplo e de suas continuidades."
+          "text": "Descartá-lo porque petições não registram experiências políticas de moradores."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Distinguir símbolos comemorativos do processo histórico mais amplo e de suas continuidades.",
-      "difficulty": "IFSC",
-      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "correctOption": "C",
+      "explanation": "A folha registra reconhecimento da nova administração e concentração de decisões entre proprietários. A leitura que confunde signatários com toda a sociedade ignora quem não aparece no abaixo-assinado e a limitação anotada pela pesquisadora.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "EVALUATE",
       "conceptIds": [
         "GH-16-CON-01",
         "GH-16-CON-02",
@@ -422,78 +422,37 @@
         "GH-16-CON-05",
         "GH-16-CON-06"
       ],
-      "targetedError": "source_interpretation",
+      "targetedError": "social_participation",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-16-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Independência do Brasil?",
+      "stem": "Durante uma visita a um arquivo, uma turma encontra registros de pessoas escravizadas que participaram de atividades econômicas e cartas de proprietários que discutiam a ruptura com Portugal. Os documentos foram criados para finalidades distintas e não apresentam uma assembleia com representantes de todos os grupos. A turma organiza as peças sem atribuir a elas uma voz única e formula perguntas sobre quem podia decidir os rumos do novo Estado.\n\nQual leitura da exposição é mais consistente?",
       "options": [
         {
           "key": "A",
-          "text": "A transferência da corte portuguesa para o Rio de Janeiro em 1808 alterou instituições, comércio e relações políticas na colônia."
+          "text": "A Independência política não assegurou participação ampla nem igualdade social."
         },
         {
           "key": "B",
-          "text": "A Revolução Liberal do Porto de 1820 pressionou pelo retorno de D. João VI e pela recolonização política do Brasil."
+          "text": "A atividade econômica indica que pessoas escravizadas também integravam a vida material da época."
         },
         {
           "key": "C",
-          "text": "A independência política não significou igualdade social nem participação política ampla."
+          "text": "As cartas de proprietários permitem deduzir a opinião dos habitantes do Brasil."
         },
         {
           "key": "D",
-          "text": "A escravidão terminou junto com a independência."
+          "text": "A ausência de uma assembleia representativa limita o que se pode afirmar sobre participação política."
         },
         {
           "key": "E",
-          "text": "O novo Estado manteve a monarquia, a escravidão e forte poder das elites proprietárias."
+          "text": "As diferenças entre as fontes impedem uma pergunta sobre a distribuição do poder."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
-      "difficulty": "DIRECT",
-      "cognitiveOperation": "ANALYZE",
-      "conceptIds": [
-        "GH-16-CON-01",
-        "GH-16-CON-02",
-        "GH-16-CON-03",
-        "GH-16-CON-04",
-        "GH-16-CON-05",
-        "GH-16-CON-06"
-      ],
-      "targetedError": "misconception_identification",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-    },
-    {
-      "id": "GH-16-Q008",
-      "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Independência do Brasil, qual conclusão final é sustentável?",
-      "options": [
-        {
-          "key": "A",
-          "text": "A Independência foi um ato instantâneo e sem conflitos."
-        },
-        {
-          "key": "B",
-          "text": "Em 1822 o Brasil tornou-se uma república democrática."
-        },
-        {
-          "key": "C",
-          "text": "A independência política não significou igualdade social nem participação política ampla."
-        },
-        {
-          "key": "D",
-          "text": "A escravidão terminou junto com a independência."
-        },
-        {
-          "key": "E",
-          "text": "Todas as províncias aceitaram imediatamente o novo governo."
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "A independência política não significou igualdade social nem participação política ampla.",
+      "correctOption": "A",
+      "explanation": "A variedade de documentos e a ausência de representação de todos os grupos permitem questionar a distribuição do poder. A atividade econômica de pessoas escravizadas, por si só, não demonstra participação nas decisões do Estado.",
       "difficulty": "IFSC",
       "cognitiveOperation": "EVALUATE",
       "conceptIds": [
@@ -504,7 +463,48 @@
         "GH-16-CON-05",
         "GH-16-CON-06"
       ],
-      "targetedError": "synthesis",
+      "targetedError": "participation_and_equality",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-16-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma estudante escreve uma crônica de pesquisa sobre uma família de comerciantes que viveu durante a Independência. O caderno familiar registra mudanças nas taxas e nos cargos administrativos após a corte portuguesa se instalar no Rio, depois a preocupação com as decisões de Lisboa em 1820 e, por fim, a manutenção da monarquia após a separação política. A autora não encontrou cartas de trabalhadores da mesma região e indica essa ausência na nota de pesquisa.\n\nQual afirmação respeita o alcance do caderno?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A família comprova que as mudanças administrativas não afetaram as relações coloniais."
+        },
+        {
+          "key": "B",
+          "text": "O caderno permite reconstruir experiências de trabalhadores sem registros escritos próprios."
+        },
+        {
+          "key": "C",
+          "text": "A continuidade da monarquia adiou a Independência para outro momento."
+        },
+        {
+          "key": "D",
+          "text": "A sequência permite investigar mudanças políticas pelas fontes preservadas."
+        },
+        {
+          "key": "E",
+          "text": "A preocupação com Lisboa mostra que o novo Estado garantiu igualdade entre grupos sociais."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "O caderno permite acompanhar mudanças administrativas e disputas com Lisboa, mas não contém as vozes de trabalhadores que não deixaram cartas preservadas. A leitura que usa a família como retrato de todos ignora a ausência anotada pela autora.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-16-CON-01",
+        "GH-16-CON-02",
+        "GH-16-CON-03",
+        "GH-16-CON-04",
+        "GH-16-CON-05",
+        "GH-16-CON-06"
+      ],
+      "targetedError": "source_scope",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     }
   ]

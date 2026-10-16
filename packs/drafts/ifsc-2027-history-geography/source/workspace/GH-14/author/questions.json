@@ -2,175 +2,227 @@
   {
     "id": "GH-14-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Escravidão no Brasil: sistema, trabalho e violência, qual afirmação está correta?",
+    "stem": "Um mapa de sala acompanha rotas forçadas da África para diferentes áreas das Américas e mostra o Atlântico como espaço de travessia. Ao lado, uma legenda explica que as pessoas transportadas eram submetidas à escravidão. A ficha não transforma os trajetos em escolha de viagem nem reduz as histórias individuais a uma rota. A professora pede que os estudantes descrevam o que o mapa evidencia sobre a formação do sistema escravista nas Américas. Texto autoral para esta atividade, 16 out. 2026.\n\nQual leitura corresponde melhor ao mapa e à legenda?",
     "options": [
       {
         "key": "A",
-        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+        "text": "A travessia forçada ligou o tráfico atlântico à escravização de africanos nas Américas."
       },
       {
         "key": "B",
-        "text": "Milhões de africanos foram forçados a atravessar o Atlântico e submetidos à escravidão nas Américas."
+        "text": "As rotas mostram deslocamentos para as Américas, mas o mapa não informa as condições de cada travessia.",
+        "targetsError": "confunde deslocamento forçado com migração escolhida",
+        "rationale": "A legenda identifica transporte forçado e escravização nas Américas."
       },
       {
         "key": "C",
-        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+        "text": "O mapa registra comércio entre portos sem incluir pessoas submetidas à escravidão.",
+        "targetsError": "apaga as pessoas indicadas na legenda do mapa",
+        "rationale": "A ficha nomeia africanos forçados a atravessar o Atlântico."
       },
       {
         "key": "D",
-        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+        "text": "A presença do Atlântico mostra que a escravidão se desenvolveu fora das Américas.",
+        "targetsError": "separa a rota de travessia do destino indicado",
+        "rationale": "A legenda situa a escravização nas Américas."
       },
       {
         "key": "E",
-        "text": "A escravidão existiu somente em grandes plantações."
+        "text": "As rotas evidenciam a coerção e permitem comparar a escala do tráfico entre diferentes portos.",
+        "targetsError": "descreve a travessia sem o caráter forçado destacado",
+        "rationale": "A legenda identifica o transporte como forçado, e não como escolha de percurso."
       }
     ],
-    "correctOption": "B",
-    "explanation": "Milhões de africanos foram forçados a atravessar o Atlântico e submetidos à escravidão nas Américas.",
+    "correctOption": "A",
+    "explanation": "O mapa une rotas atlânticas à legenda sobre transporte forçado e escravização nas Américas; interpretar os trajetos como migração voluntária apaga a coerção documentada.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "RECALL",
     "conceptIds": [
       "GH-14-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-14-CON-01"
   },
   {
     "id": "GH-14-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “A escravidão brasileira foi branda e baseada em relações harmoniosas.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Uma exposição reúne imagens de um canavial, de uma área de mineração, de uma oficina urbana e de uma cozinha doméstica. Cada legenda identifica trabalho realizado por pessoas escravizadas em um contexto diferente do Brasil. A turma percebe que o sistema aparece em espaços rurais e urbanos, com tarefas variadas. O mediador pede uma síntese que não confunda a atividade retratada com o único lugar em que o trabalho escravizado existiu. Texto autoral para esta atividade, 16 out. 2026.\n\nQual síntese representa melhor as imagens da exposição?",
     "options": [
       {
         "key": "A",
-        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+        "text": "O canavial é um dos contextos retratados, ao lado da mineração e de atividades urbanas.",
+        "targetsError": "restringe o conjunto a uma imagem rural",
+        "rationale": "As outras legendas mostram mineração, oficina e trabalho doméstico."
       },
       {
         "key": "B",
-        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+        "text": "As cenas urbanas indicam que alguns serviços também podiam estar ligados ao trabalho escravizado.",
+        "targetsError": "desconecta ofícios e serviços urbanos do trabalho escravizado",
+        "rationale": "As legendas identificam pessoas escravizadas na oficina e na cozinha."
       },
       {
         "key": "C",
-        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+        "text": "Pessoas escravizadas trabalharam no campo, na mineração, em ofícios e em serviços."
       },
       {
         "key": "D",
-        "text": "No Brasil, pessoas escravizadas trabalharam em atividades rurais, mineração, serviços urbanos, ofícios e trabalho doméstico."
+        "text": "A mineração substituiu o trabalho doméstico e as atividades de oficina.",
+        "targetsError": "trata experiências retratadas em locais distintos como etapas excludentes",
+        "rationale": "A exposição apresenta os quatro espaços como contextos de trabalho."
       },
       {
         "key": "E",
-        "text": "A escravidão existiu somente em grandes plantações."
+        "text": "As imagens urbanas sugerem tarefas que exigiam habilidades específicas, além do esforço físico e da coerção.",
+        "targetsError": "deduz condições de trabalho a partir da localização da atividade",
+        "rationale": "As legendas identificam trabalhos em áreas urbanas dentro do sistema escravista."
       }
     ],
-    "correctOption": "D",
-    "explanation": "No Brasil, pessoas escravizadas trabalharam em atividades rurais, mineração, serviços urbanos, ofícios e trabalho doméstico.",
+    "correctOption": "C",
+    "explanation": "As legendas incluem canavial, mineração, oficina e cozinha; restringir o sistema ao trabalho rural ignora atividades urbanas e domésticas mostradas.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-14-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-14-CON-02"
   },
   {
     "id": "GH-14-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: A escravidão foi um sistema econômico, social, jurídico e político sustentado por violência e desumanização. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Um arquivo didático compara uma norma de propriedade, anotações sobre castigos e cartas enviadas por pessoas escravizadas a familiares. As peças têm autores e objetivos distintos, mas o conjunto mostra controle sobre a vida e o trabalho, além de experiências de violência e sofrimento. A turma precisa explicar por que os registros não podem ser lidos como incidentes isolados de uma única fazenda. A professora pede uma conclusão que relacione as peças ao funcionamento do sistema, sem igualar todas as experiências. Texto autoral para esta atividade, 16 out. 2026.\n\nQual conclusão é mais coerente com o arquivo?",
     "options": [
       {
         "key": "A",
-        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+        "text": "As anotações registram episódios de violência que devem ser relacionados às regras e práticas do sistema.",
+        "targetsError": "isola castigos dos registros legais e de trabalho",
+        "rationale": "O arquivo reúne normas, controle do trabalho e relatos de violência."
       },
       {
         "key": "B",
-        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+        "text": "As cartas indicam que pessoas escravizadas podiam enfrentar formas semelhantes de sofrimento em propriedades diferentes.",
+        "targetsError": "generaliza experiências descritas em fontes localizadas",
+        "rationale": "A tarefa pede relacionar as peças sem igualar as experiências."
       },
       {
         "key": "C",
-        "text": "A violência física e psicológica era estrutural ao sistema escravista, embora as experiências variassem conforme tempo e lugar."
+        "text": "A norma de propriedade explica a violência sem considerar as relações cotidianas.",
+        "targetsError": "separa a regra legal da prática e dos relatos pessoais",
+        "rationale": "O arquivo aproxima norma, castigos e correspondência familiar."
       },
       {
         "key": "D",
-        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+        "text": "A violência física e psicológica integrou estruturalmente o sistema escravista."
       },
       {
         "key": "E",
-        "text": "A escravidão existiu somente em grandes plantações."
+        "text": "As cartas tornam desnecessário analisar o controle sobre trabalho e propriedade.",
+        "targetsError": "usa relatos pessoais para descartar outras dimensões do arquivo",
+        "rationale": "As normas e anotações oferecem evidências distintas das cartas familiares."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A violência física e psicológica era estrutural ao sistema escravista, embora as experiências variassem conforme tempo e lugar.",
+    "correctOption": "D",
+    "explanation": "A reunião de norma, controle do trabalho, castigos e cartas familiares aponta para relações estruturais; tratar os registros como casos privados ignora a conexão entre as peças.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-14-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-14-CON-03"
   },
   {
     "id": "GH-14-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Escravidão no Brasil: sistema, trabalho e violência por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Uma curadora organiza uma sala com registros sobre famílias, práticas religiosas, redes de ajuda e formas de resistência de pessoas escravizadas. Em uma das vitrines, um objeto cotidiano aparece ao lado de um texto sobre vínculos familiares que atravessavam espaços de trabalho. A curadora evita apresentar essas experiências como simples reflexo das ordens dos senhores. Os visitantes devem escrever uma legenda que reconheça a vida social construída por pessoas submetidas à escravidão. Texto autoral para esta atividade, 16 out. 2026.\n\nQual legenda preserva melhor o sentido da sala?",
     "options": [
       {
         "key": "A",
-        "text": "Pessoas escravizadas formaram famílias, redes culturais, religiosas e estratégias de sobrevivência e resistência."
+        "text": "Os vínculos familiares eram condicionados pelo trabalho, mas também envolviam escolhas e estratégias.",
+        "targetsError": "reduz vínculos a determinações externas",
+        "rationale": "A sala destaca redes e práticas organizadas por pessoas escravizadas."
       },
       {
         "key": "B",
-        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+        "text": "Redes religiosas coexistiam com relações familiares e podiam apoiar estratégias cotidianas.",
+        "targetsError": "apresenta formas de vida como alternativas excludentes",
+        "rationale": "A curadora reúne famílias, religião, ajuda e resistência."
       },
       {
         "key": "C",
-        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+        "text": "A resistência aparece sem relação com práticas culturais ou redes de apoio.",
+        "targetsError": "isola a resistência das experiências expostas",
+        "rationale": "A sala coloca estratégias de resistência junto a redes familiares e religiosas."
       },
       {
         "key": "D",
-        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+        "text": "Os objetos provam que as pessoas escravizadas aceitaram as condições impostas.",
+        "targetsError": "infere consentimento a partir de objetos cotidianos",
+        "rationale": "A curadora apresenta objetos em contexto de vínculos e estratégias próprias."
       },
       {
         "key": "E",
-        "text": "A escravidão existiu somente em grandes plantações."
+        "text": "Pessoas escravizadas formaram famílias, redes culturais e estratégias de resistência."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Pessoas escravizadas formaram famílias, redes culturais, religiosas e estratégias de sobrevivência e resistência.",
+    "correctOption": "E",
+    "explanation": "A sala reúne vínculos familiares, práticas religiosas, ajuda e resistência; interpretar os objetos como sinal de aceitação apaga as relações sociais que a curadora destaca.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-14-CON-04"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-14-CON-04"
   },
   {
     "id": "GH-14-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Milhões de africanos foram forçados a atravessar o Atlântico e submetidos à escravidão nas Américas.\nII. A escravidão brasileira foi branda e baseada em relações harmoniosas.\nIII. A violência física e psicológica era estrutural ao sistema escravista, embora as experiências variassem conforme tempo e lugar.\nIV. A violência ocorria apenas quando um senhor individual perdia o controle.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma pesquisadora consulta um livro de contas produzido por um proprietário rural. As páginas listam pessoas escravizadas como bens, anotam transferências e registram despesas de trabalho, mas quase não incluem relatos em primeira pessoa. No arquivo, a pesquisadora encontra também cartas e registros de associações religiosas. Ela precisa explicar o que o livro revela sobre a economia e quais perguntas exigem outras fontes. Texto autoral para esta atividade, 16 out. 2026.\n\nQual procedimento interpreta melhor o livro de contas?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "As contas ajudam a acompanhar transações e podem oferecer indícios indiretos sobre o cotidiano do trabalho.",
+        "targetsError": "toma a perspectiva do proprietário como descrição integral",
+        "rationale": "O livro registra contas e transferências, mas quase não traz vozes em primeira pessoa."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Analisar o registro econômico e compará-lo a fontes que tragam outras perspectivas."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "O livro registra relações econômicas, mas oferece poucos dados para reconstruir vínculos familiares e religiosos.",
+        "targetsError": "confunde perspectiva parcial com inutilidade documental",
+        "rationale": "As contas ainda revelam classificações e operações econômicas do proprietário."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Tratar as despesas como evidência direta de vínculos familiares e religiosos.",
+        "targetsError": "atribui ao livro informações encontradas em outras fontes",
+        "rationale": "O relato informa que os temas aparecem nas cartas e registros de associações."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "A lista de bens permite reconstituir alguns aspectos do trabalho, embora não registre a voz das pessoas listadas.",
+        "targetsError": "confunde quem produziu a fonte com as pessoas mencionadas",
+        "rationale": "O livro é identificado como registro do proprietário rural."
       }
     ],
     "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "explanation": "O livro permite estudar classificação e operações econômicas, mas sua autoria e ausência de relatos pessoais limitam o que revela; descartá-lo por ser parcial desperdiça evidência útil.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -180,36 +232,47 @@
       "GH-14-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-14-CON-01"
   },
   {
     "id": "GH-14-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Escravidão no Brasil: sistema, trabalho e violência. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Um painel de trabalho apresenta pessoas escravizadas em uma lavoura, em uma área de mineração e em serviços de cidade. A legenda ressalta que as tarefas e condições variavam conforme lugar e período. Em debate, um estudante afirma que a presença urbana mostra o fim da exploração; outra colega aponta que o sistema ligava trabalho e coerção em atividades diversas. A turma deve escolher uma leitura que considere os espaços diferentes sem perder de vista o sistema que os conectava. Texto autoral para esta atividade, 16 out. 2026.\n\nQual leitura está de acordo com o painel?",
     "options": [
       {
         "key": "A",
-        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+        "text": "A exploração do trabalho escravizado ocorreu em áreas rurais e urbanas, com experiências variadas."
       },
       {
         "key": "B",
-        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+        "text": "A mineração podia reunir trabalho e coerção em espaços que não eram lavouras.",
+        "targetsError": "desvincula a atividade mineral do sistema indicado no painel",
+        "rationale": "A legenda identifica pessoas escravizadas também na área de mineração."
       },
       {
         "key": "C",
-        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+        "text": "Serviços urbanos também podiam se organizar sob coerção, apesar de ocorrerem fora das lavouras.",
+        "targetsError": "restringe a coerção a um espaço de trabalho",
+        "rationale": "O painel situa trabalho escravizado em lavoura, mineração e serviços urbanos."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "As tarefas variavam, o que dificulta comparar condições, embora permaneçam ligadas ao sistema escravista.",
+        "targetsError": "confunde diversidade de experiências com sistemas separados",
+        "rationale": "A legenda reúne as tarefas sob trabalho escravizado, embora reconheça variações."
       },
       {
         "key": "E",
-        "text": "Combinar texto, imagem e contexto para reconhecer mecanismos estruturais do sistema escravista."
+        "text": "A legenda apresenta condições de trabalho uniformes nos espaços retratados.",
+        "targetsError": "apaga as variações destacadas por lugar e período",
+        "rationale": "A legenda afirma que tarefas e condições variavam."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Combinar texto, imagem e contexto para reconhecer mecanismos estruturais do sistema escravista.",
+    "correctOption": "A",
+    "explanation": "A lavoura, a mineração e os serviços urbanos aparecem sob o mesmo sistema, com variações de tarefa e condição; interpretar presença urbana como fim da exploração contradiz a legenda.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -221,36 +284,47 @@
       "GH-14-CON-06"
     ],
     "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-14-CON-01"
   },
   {
     "id": "GH-14-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Escravidão no Brasil: sistema, trabalho e violência?",
+    "stem": "Em uma roda de leitura, a turma compara documentos do período escravista com registros produzidos depois da abolição. Os textos mostram a mudança jurídica do sistema e também diferenças persistentes no acesso a trabalho, moradia e reconhecimento social. A professora pede uma conclusão que separe o fim legal da escravidão de outras mudanças que não ocorreram automaticamente com a nova situação. Texto autoral para esta atividade, 16 out. 2026.\n\nQual conclusão acompanha melhor os documentos comparados?",
     "options": [
       {
         "key": "A",
-        "text": "Milhões de africanos foram forçados a atravessar o Atlântico e submetidos à escravidão nas Américas."
+        "text": "A mudança jurídica alterou a condição legal, embora os documentos posteriores revelem diferenças persistentes de acesso.",
+        "targetsError": "trata mudança legal como desaparecimento automático de desigualdades",
+        "rationale": "Os registros posteriores ainda mostram diferenças de acesso e reconhecimento."
       },
       {
         "key": "B",
-        "text": "No Brasil, pessoas escravizadas trabalharam em atividades rurais, mineração, serviços urbanos, ofícios e trabalho doméstico."
+        "text": "A persistência de desigualdades não permite, por si só, avaliar a mudança da condição legal.",
+        "targetsError": "confunde continuidade social com ausência de mudança jurídica",
+        "rationale": "A atividade distingue a alteração legal das desigualdades que persistiram."
       },
       {
         "key": "C",
-        "text": "A escravidão moldou desigualdades sociais e raciais que não desapareceram automaticamente com a abolição."
+        "text": "Os documentos posteriores repetem as mesmas regras do sistema escravista.",
+        "targetsError": "projeta a condição legal anterior sobre registros de outro período",
+        "rationale": "A roda identifica uma mudança jurídica entre os conjuntos de documentos."
       },
       {
         "key": "D",
-        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+        "text": "A moradia participa das desigualdades, que também aparecem no acesso ao trabalho e ao reconhecimento social.",
+        "targetsError": "separa temas que aparecem juntos nos registros posteriores",
+        "rationale": "Os textos citam trabalho, moradia e reconhecimento social."
       },
       {
         "key": "E",
-        "text": "Pessoas escravizadas formaram famílias, redes culturais, religiosas e estratégias de sobrevivência e resistência."
+        "text": "O fim legal da escravidão não apagou automaticamente desigualdades sociais e raciais."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "E",
+    "explanation": "Os documentos mostram mudança jurídica e diferenças persistentes de acesso; concluir que a mudança legal tornou as desigualdades irrelevantes confunde dois processos.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -262,36 +336,47 @@
       "GH-14-CON-06"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-14-CON-01"
   },
   {
     "id": "GH-14-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Escravidão no Brasil: sistema, trabalho e violência, qual conclusão final é sustentável?",
+    "stem": "No encerramento de um projeto, estudantes ligam um mapa do tráfico atlântico a imagens de trabalho rural e urbano, cartas familiares, registros de controle e documentos posteriores à abolição. A linha de apresentação começa com deslocamento forçado, passa pelo cotidiano e pelas formas de resistência, e termina com desigualdades que continuaram presentes. A turma precisa escrever uma síntese que reconheça coerção e ação das pessoas escravizadas, sem reduzir a experiência a um único espaço ou período. Texto autoral para esta atividade, 16 out. 2026.\n\nQual síntese final preserva melhor as relações do projeto?",
     "options": [
       {
         "key": "A",
-        "text": "A escravidão brasileira foi branda e baseada em relações harmoniosas."
+        "text": "O tráfico atlântico condicionou os espaços de trabalho, que variaram conforme lugar e período.",
+        "targetsError": "limita a história ao deslocamento forçado inicial",
+        "rationale": "O projeto inclui trabalho, vida familiar e estratégias de resistência."
       },
       {
         "key": "B",
-        "text": "A violência ocorria apenas quando um senhor individual perdia o controle."
+        "text": "A vida familiar coexistiu com formas de coerção e violência.",
+        "targetsError": "confunde relações sociais com ausência de violência estrutural",
+        "rationale": "O projeto reúne cartas familiares e registros de controle e violência."
       },
       {
         "key": "C",
-        "text": "A escravidão moldou desigualdades sociais e raciais que não desapareceram automaticamente com a abolição."
+        "text": "As diferenças de trabalho impedem reconhecer uma estrutura escravista comum.",
+        "targetsError": "interpreta variações de experiência como sistemas sem relação",
+        "rationale": "O projeto conecta lavoura, serviços urbanos, controle e tráfico."
       },
       {
         "key": "D",
-        "text": "Pessoas escravizadas não possuíam vida social ou formas de resistência."
+        "text": "A escravidão envolveu coerção e trabalho, enquanto pessoas escravizadas formaram redes e resistiram."
       },
       {
         "key": "E",
-        "text": "A escravidão existiu somente em grandes plantações."
+        "text": "A abolição mudou a condição jurídica, enquanto os documentos posteriores registram desigualdades sociais persistentes.",
+        "targetsError": "trata mudança legal como fim imediato de desigualdades",
+        "rationale": "Os registros finais do projeto mostram desigualdades após a abolição."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A escravidão moldou desigualdades sociais e raciais que não desapareceram automaticamente com a abolição.",
+    "correctOption": "D",
+    "explanation": "O projeto relaciona tráfico, trabalho, controle, família, resistência e desigualdades posteriores; reduzir a história ao tráfico deixaria de fora os demais registros.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -303,6 +388,9 @@
       "GH-14-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-14-CON-01"
   }
 ]
