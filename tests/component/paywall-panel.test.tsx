@@ -22,16 +22,16 @@ describe("PaywallPanel component", () => {
       "href",
       "/lessons/MAT-07"
     );
-    expect(screen.getByRole("link", { name: /Ciências · Circuitos elétricos/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /Ciências · Movimento/i })).toHaveAttribute(
       "href",
-      "/lessons/CIE-06"
+      "/lessons/CIE-01"
     );
     expect(
-      screen.getByRole("link", { name: /Português · Gêneros do discurso, tipos textuais e modalidades/i })
-    ).toHaveAttribute("href", "/lessons/POR-01");
+      screen.getByRole("link", { name: /Português · Inferência, implícitos, pressupostos e leitura de contexto/i })
+    ).toHaveAttribute("href", "/lessons/POR-03");
     expect(
-      screen.getByRole("link", { name: /Geografia e História · Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina/i })
-    ).toHaveAttribute("href", "/lessons/GH-06");
+      screen.getByRole("link", { name: /Geografia e História · Fusos horários e coordenadas geográficas/i })
+    ).toHaveAttribute("href", "/lessons/GH-51");
 
     // Scholarship / cohort invite input is accessible
     expect(screen.getByLabelText("Código de convite")).toBeInTheDocument();
