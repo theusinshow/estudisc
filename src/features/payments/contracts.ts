@@ -8,7 +8,7 @@ export const LIFETIME_PRICE_CENTS = 5000 as const;
 export const LIFETIME_PRICE_BRL = 50 as const;
 export const LIFETIME_CURRENCY = "BRL" as const;
 
-export const FREE_SAMPLE_LESSON_IDS = ["MAT-07", "CIE-06", "POR-01", "GH-06"] as const;
+export const FREE_SAMPLE_LESSON_IDS = ["MAT-07", "CIE-01", "POR-03", "GH-51"] as const;
 
 export type FreeSampleLessonId = (typeof FREE_SAMPLE_LESSON_IDS)[number];
 
@@ -23,25 +23,25 @@ export const FREE_SAMPLE_LESSONS: ReadonlyArray<{
     id: "MAT-07",
     subject: "Matemática",
     title: "Porcentagem",
-    interactiveFeature: "Explorador numérico + passos guiados + 12 questões"
+    interactiveFeature: "Explorador numérico + 6 passos guiados + 12 questões"
   },
   {
-    id: "CIE-06",
+    id: "CIE-01",
     subject: "Ciências",
-    title: "Circuitos elétricos",
-    interactiveFeature: "Esquema de circuito + 8 questões"
+    title: "Movimento",
+    interactiveFeature: "Previsão guiada + 2 exemplos resolvidos + 8 questões"
   },
   {
-    id: "POR-01",
+    id: "POR-03",
     subject: "Português",
-    title: "Gêneros do discurso, tipos textuais e modalidades",
-    interactiveFeature: "Previsão guiada + 8 questões"
+    title: "Inferência, implícitos, pressupostos e leitura de contexto",
+    interactiveFeature: "Previsão guiada + exemplo resolvido + 8 questões"
   },
   {
-    id: "GH-06",
+    id: "GH-51",
     subject: "Geografia e História",
-    title: "Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina",
-    interactiveFeature: "Exemplo comentado + 8 questões"
+    title: "Fusos horários e coordenadas geográficas",
+    interactiveFeature: "2 exemplos resolvidos com cálculo + 8 questões"
   }
 ];
 

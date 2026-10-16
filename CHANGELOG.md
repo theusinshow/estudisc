@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-16 — More interactive free lessons
+
+- Free sample lessons are now MAT-07 Porcentagem, CIE-01 Movimento, POR-03 Inferência and GH-51 Fusos horários, chosen as the most interactive published lesson per subject.
+
 ## 2026-10-16 — Free sample lesson titles
 
 - The paywall and `/conheca` listed old titles for the free lessons ("Estrutura atômica", "Compreensão e inferência", "Escravidão, resistência e abolição"). They now match the published lessons that actually open for free: Porcentagem, Circuitos elétricos, Gêneros do discurso, tipos textuais e modalidades, and Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina, with accurate feature descriptions.

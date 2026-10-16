@@ -57,7 +57,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
   });
 
   it("allows the 4 flagship interactive lessons in free preview and locks non-sample lessons until entitled", async () => {
-    expect(FREE_SAMPLE_LESSON_IDS).toEqual(["MAT-07", "CIE-06", "POR-01", "GH-06"]);
+    expect(FREE_SAMPLE_LESSON_IDS).toEqual(["MAT-07", "CIE-01", "POR-03", "GH-51"]);
     for (const sampleId of FREE_SAMPLE_LESSON_IDS) {
       expect(isFreeSampleLessonId(sampleId)).toBe(true);
     }
@@ -77,9 +77,9 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
     expect(previewAccess.source).toBe("free_preview");
 
     expect(canAccessLesson("MAT-07", previewAccess)).toBe(true);
-    expect(canAccessLesson("CIE-06", previewAccess)).toBe(true);
-    expect(canAccessLesson("POR-01", previewAccess)).toBe(true);
-    expect(canAccessLesson("GH-06", previewAccess)).toBe(true);
+    expect(canAccessLesson("CIE-01", previewAccess)).toBe(true);
+    expect(canAccessLesson("POR-03", previewAccess)).toBe(true);
+    expect(canAccessLesson("GH-51", previewAccess)).toBe(true);
     expect(canAccessLesson("MAT-01", previewAccess)).toBe(false);
 
     const allowlistedProfile = profileForEmail("kaua@example.com", saasEnv);

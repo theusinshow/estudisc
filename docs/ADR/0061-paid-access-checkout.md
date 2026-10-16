@@ -52,3 +52,5 @@ The owner confirmed that a single payment of R$ 50 gives access **until the end 
 - Published content counts for these pages and the paywall live in `src/features/public-site/content-summary.ts`.
 
 - 2026-10-16: `/suporte` and `/pais-e-escolas` joined `PUBLIC_SITE_PATHS`; `robots.txt`, `sitemap.xml` and `/opengraph-image*` are public so crawlers and link previews work without a session.
+
+- 2026-10-16: free sample lessons changed to the most interactive published lesson per subject (read-only production audit of interactive blocks and activities): `MAT-07` Porcentagem (numeric explorer + guided steps), `CIE-01` Movimento (prediction), `POR-03` Inferência (prediction), `GH-51` Fusos horários (worked calculations; no Geography/History lesson has interactive blocks yet).
