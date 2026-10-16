@@ -6,7 +6,7 @@ import { useState } from "react";
 import {
   ArrowLeft, BookOpen, CalendarDays, ChartNoAxesColumnIncreasing, ClipboardCheck,
   Database, Download, FileText, FolderKanban, History, LogOut, Map, Medal,
-  MoreHorizontal, RotateCcw, Sun, TriangleAlert, Upload, UserRound
+  LifeBuoy, MoreHorizontal, RotateCcw, Sun, TriangleAlert, Upload, UserRound
 } from "lucide-react";
 import { BrandLockup } from "@/components/brand/brand-lockup";
 import { Sheet } from "@/components/ui/dialog";
@@ -28,7 +28,8 @@ const secondaryNavigationItems = [
   { label: "Projetos", href: "/projects", icon: FolderKanban, match: ["/projects"], adminOnly: true },
   { label: "Mapa", href: "/knowledge-map", icon: Map, match: ["/knowledge-map"] },
   { label: "Exportar", href: "/exports", icon: Download, match: ["/exports"], adminOnly: true },
-  { label: "Conquistas", href: "/achievements", icon: Medal, match: ["/achievements"] }
+  { label: "Conquistas", href: "/achievements", icon: Medal, match: ["/achievements"] },
+  { label: "Suporte", href: "/suporte", icon: LifeBuoy, match: ["/suporte"] }
 ];
 /** Resolved on the server by AppShell for the current request; never cached across owners. */
 export type ShellProfile = Readonly<{ role: "ADMIN" | "STUDENT"; name: string | null; accountMode: boolean }>;

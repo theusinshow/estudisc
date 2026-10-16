@@ -50,3 +50,5 @@ The owner confirmed that a single payment of R$ 50 gives access **until the end 
 - Seller identity on the legal pages comes from `ESTUDISC_SELLER_NAME`, `ESTUDISC_SELLER_DOCUMENT` and `ESTUDISC_SELLER_EMAIL`; until all three are set the pages say the data will be published before sales start.
 - Hybrid sign-in: when code accounts (ADR 0031), Google OAuth and `FEATURE_PAID_ACCESS` are all configured, the proxy and `getOwnerProfile` accept a valid account cookie or a Google session. The sign-in page shows Google first; code profiles stay behind "Tenho um perfil com código", so profile names are not shown to visitors. Without all three, behaviour is unchanged.
 - Published content counts for these pages and the paywall live in `src/features/public-site/content-summary.ts`.
+
+- 2026-10-16: `/suporte` and `/pais-e-escolas` joined `PUBLIC_SITE_PATHS`; `robots.txt`, `sitemap.xml` and `/opengraph-image*` are public so crawlers and link previews work without a session.

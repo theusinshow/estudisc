@@ -51,7 +51,7 @@ export default function PrivacidadePage() {
         <p>Os dados de estudo ficam guardados enquanto a conta existir ou até você pedir a exclusão. Registros de pagamento são mantidos pelo prazo exigido pela legislação fiscal. Cópias de segurança podem manter dados por um período limitado antes de serem substituídas.</p>
 
         <h2>7. Seus direitos</h2>
-        <p>Você pode pedir a confirmação do tratamento, o acesso, a correção, a cópia (portabilidade) e a exclusão dos seus dados, além de informações sobre o compartilhamento. Dentro da plataforma é possível exportar o seu histórico de estudo. Para os demais pedidos, escreva para o contato indicado acima; respondemos em até 15 dias. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+        <p>Você pode pedir a confirmação do tratamento, o acesso, a correção, a cópia (portabilidade) e a exclusão dos seus dados, além de informações sobre o compartilhamento. Para qualquer um desses pedidos, inclusive uma cópia do seu histórico de estudo, escreva para o contato indicado acima; respondemos em até 15 dias. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).</p>
 
         <h2>8. Segurança</h2>
         <p>Usamos conexão criptografada, acesso restrito aos dados e contas separadas por estudante. Nenhum sistema é totalmente imune a falhas; se ocorrer um incidente relevante, avisaremos os afetados e a ANPD, como manda a lei.</p>

@@ -3,7 +3,9 @@ import { expect, test } from "@playwright/test";
 const pages = [
   { path: "/conheca", heading: /prova do IFSC/ },
   { path: "/termos", heading: "Termos de uso" },
-  { path: "/privacidade", heading: "Política de privacidade" }
+  { path: "/privacidade", heading: "Política de privacidade" },
+  { path: "/suporte", heading: "Como podemos ajudar?" },
+  { path: "/pais-e-escolas", heading: /plano de estudo para a prova do IFSC/ }
 ];
 
 test("public sales and legal pages render with landmarks and fit a 320 px screen", async ({ page }) => {
@@ -22,4 +24,26 @@ test("public sales and legal pages render with landmarks and fit a 320 px screen
   await page.getByRole("navigation", { name: "Informações legais" }).getByRole("link", { name: "Termos de uso" }).click();
   await expect(page).toHaveURL(/\/termos$/);
   await expect(page.getByText(/serão publicados aqui antes do início das vendas/)).toBeVisible();
+});
+
+test("support explains a question report, FAQ answers open, and crawler files list only public pages", async ({ page, request }) => {
+  await page.goto("/suporte?erro=MAT-01-Q01%20v2");
+  await expect(page.getByRole("heading", { name: "Avisar um erro na questão" })).toBeVisible();
+  await expect(page.getByText("MAT-01-Q01 v2")).toBeVisible();
+  await page.getByText("Posso desistir da compra?").click();
+  await expect(page.getByText(/Em até 7 dias corridos/)).toBeVisible();
+  await page.goto("/suporte?erro=%3Cscript%3E");
+  await expect(page.getByRole("heading", { name: "Avisar um erro na questão" })).toHaveCount(0);
+
+  const robots = await (await request.get("/robots.txt")).text();
+  expect(robots).toContain("Allow: /conheca");
+  expect(robots).toContain("Disallow: /");
+  const sitemap = await (await request.get("/sitemap.xml")).text();
+  for (const path of ["/conheca", "/termos", "/privacidade", "/suporte", "/pais-e-escolas"]) expect(sitemap).toContain(path);
+  const image = await request.get("/opengraph-image");
+  expect(image.headers()["content-type"]).toContain("image/png");
+
+  const missing = await page.goto("/pagina-que-nao-existe");
+  expect(missing?.status()).toBe(404);
+  await expect(page.getByRole("heading", { name: "Esta página não existe" })).toBeVisible();
 });

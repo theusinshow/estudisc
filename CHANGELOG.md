@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — Support, parents page and sharing
+
+- Public `/suporte` (FAQ on account, payment, refund, study and data; e-mail contact) and `/pais-e-escolas` (what the student gets, how to follow progress, safety, price, class access codes).
+- Each answered question links to `/suporte?erro=<id> v<version>`, which prepares an e-mail identifying the question. Support is also in the app menu.
+- Link previews (`opengraph-image`), `robots.txt` and `sitemap.xml` cover only the public pages; a 404 page replaces the default one.
+- The privacy page no longer says students can export data themselves (export is admin-only in the menu); copies are requested by e-mail.
+
 ## 2026-10-16 — Public sales and legal pages
 
 - New public pages: `/conheca` (what the course offers, free sample lessons, price R$ 50 until 29/11/2026, 7-day withdrawal), `/termos` and `/privacidade` (LGPD, minors, third parties). Visitors without a session who open `/` see `/conheca`.
