@@ -7,7 +7,7 @@ type Block = Lesson["blocks"][number];
 type Question = TrackPackV2["questions"][number];
 
 export type CorrectionOutcome =
-  | { status: "ready"; lessonId: string; pack: LessonVersionPack; replaced: number; removed: number; questions: number }
+  | { status: "ready"; lessonId: string; pack: LessonVersionPack; replaced: number; removed: number; added: number; questions: number }
   | { status: "unchanged"; lessonId: string }
   | { status: "skipped"; lessonId: string; reason: string };
 
@@ -32,7 +32,8 @@ export function buildCorrection(input: {
     return !next || hashCanonicalJson(next) !== hashCanonicalJson(block);
   });
   const added = after.blocks.filter(block => !before.blocks.some(old => old.id === block.id));
-  if (added.length) return { status: "skipped", lessonId: base.id, reason: `cleanup adds blocks (${added.map(block => block.id).join(", ")}); use an enrichment` };
+  const baseIds = new Set(base.blocks.map(block => block.id));
+  if (added.some(block => baseIds.has(block.id))) return { status: "skipped", lessonId: base.id, reason: "an added block id already exists in the published lesson" };
 
   const changes: NonNullable<LessonVersionPack["corrections"]>["blocks"] = [];
   const blocks: Block[] = [];
@@ -48,6 +49,14 @@ export function buildCorrection(input: {
     pending.delete(block.id);
   }
   if (pending.size) return { status: "skipped", lessonId: base.id, reason: `published base lacks ${[...pending.keys()].join(", ")}` };
+  // Added source blocks go right after the nearest preceding source block that the published lesson still has
+  // (enrichment blocks stay where they are); with no such block they open the lesson.
+  for (const block of added) {
+    const position = after.blocks.indexOf(block);
+    const anchor = after.blocks.slice(0, position).reverse().find(previous => blocks.some(kept => kept.id === previous.id));
+    const index = anchor ? blocks.findIndex(kept => kept.id === anchor.id) + 1 : 0;
+    blocks.splice(index, 0, structuredClone(block));
+  }
 
   const questionIds = [...new Set([...base.exitTicketQuestionIds, ...base.activities.flatMap(activity => activity.questionId ? [activity.questionId] : [])])];
   const published = new Map(questionIds.map(id => {
@@ -60,7 +69,7 @@ export function buildCorrection(input: {
     const current = published.get(reviewed.id);
     if (current && questionBody(reviewed) !== questionBody(current)) updates.set(reviewed.id, { ...structuredClone(reviewed), version: current.version + 1, status: "draft" });
   }
-  if (!changes.length && !updates.size) return { status: "unchanged", lessonId: base.id };
+  if (!changes.length && !updates.size && !added.length) return { status: "unchanged", lessonId: base.id };
 
   const activities = base.activities.map(activity => {
     const update = activity.questionId ? updates.get(activity.questionId) : undefined;
@@ -78,5 +87,5 @@ export function buildCorrection(input: {
     ...(changes.length ? { corrections: { reason: input.reason, blocks: changes } } : {}),
     ...(updates.size ? { questionVersions: [...updates.values()] } : {})
   });
-  return { status: "ready", lessonId: base.id, pack, replaced: changes.filter(change => change.action === "replace").length, removed: changes.filter(change => change.action === "remove").length, questions: updates.size };
+  return { status: "ready", lessonId: base.id, pack, replaced: changes.filter(change => change.action === "replace").length, removed: changes.filter(change => change.action === "remove").length, added: added.length, questions: updates.size };
 }
