@@ -11,6 +11,19 @@ Phase 1 DONE in content/phase1-integrated-20261015 (local): R1/R2 zero in the 4 
 Recipes now bind to frozen pre-cleanup packs in packs/history/pre-phase1-20261015 (unit suite 534 PASS).
 BLOCKER 2: lesson-version import (lesson-version-policy.ts) is append-only: retained blocks must be byte-identical and at least one block must be added. Block edits/removals (all of phase 1) have no import path, and new Question versions (MAT shuffle, MAT-09) wait for the pending Question/lesson-binding contract (Terra handoff). MAT-15 is NOT wrong in production (C = x³ − x = 0); the Codex review misread it.
 NEXT ACTION: user decision on a correction-version contract (ADR) that allows hash-bound block replacement/removal on top of the published version, keeping enrichments and Question references.
+## Continuous lesson study flow — 2026-10-15 (Claude, branch release/continuous-study-20261015)
+
+Problem: a real student only ever received lesson 01 (read-only planner run on production data: zero `learn` candidates; Admin Direct lessons never `fullReady`; 109/131 lessons lack objectives/exit tickets; review tier crowds out new content). Decision: [ADR 0060](docs/ADR/0060-continuous-lesson-study-flow.md), user-approved.
+
+Increments:
+1. DONE — adaptive planner: authorized Admin Direct counts for `learn` readiness; first fitting `learn` leads (tests in tests/unit/adaptive-session-policy.test.ts).
+2. DONE — Next-lesson domain policy (`src/features/study-flow`) + unit tests: in-progress first, 80% done rule across versions, subject rotation, per-subject next.
+3. DONE — Server read model (resumes + attempts + published lessons) and Today primary card “Continuar estudando” behind `FEATURE_CONTINUOUS_STUDY`; session chooser hidden from Today when on.
+4. DONE locally — lint/typecheck PASS; 532 unit PASS/3 optional PG SKIP; build PASS; continuous-study E2E 2/2 PASS on chromium and mobile-chrome (alternate port 3217 because 3210 is held by another local project). Pre-existing: lesson-resume + session-navigation conflict when run in one process (fails without this change too).
+NEXT ACTION: user confirmation to push/PR, merge, deploy and set `FEATURE_CONTINUOUS_STUDY=true` in production. Then read the Codex review, then the SaaS checkout ADR.
+
+Parallel: AI-assisted (Codex gpt-6-luna) review of the 132 published lessons in `.local/lesson-review-20261015/` (not an independent editorial approval). Later: SaaS checkout (R$ 50 one-time until the exam, Mercado Pago) — needs its own ADR (scope expansion beyond ADR 0026).
+
 ## Lesson evolution completion — 2026-10-11
 
 Content continuation is live: MAT-PREREQ v5, MAT-01/02/03/09/10/12/14/15 v3 and POR-04/05/07/09/10/12/16/17/19/23 v3 through authentic Admin Direct. Integrate only dedicated recipes/tests/receipts from the shared tree; preserve the frontend owner's unrelated work. New increment: fix a demonstrated POR-04 Question card overflow (scrollWidth322/clientWidth305 at viewport320) using existing grid containment, preserving DS tokens, authored payloads, grading and history. First run a baseline real-content regression, then the smallest CSS fix, focused checks and full acceptance in this isolated checkout. Required protected checks and Git-backed deployment precede actual live narrow-reader verification. Scored-enrichment contract remains the separate user-confirmed Terra handoff; do not mark broad Phase9 enrichment complete.

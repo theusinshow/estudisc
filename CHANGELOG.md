@@ -5,6 +5,10 @@
 - `pnpm validate:packs` (`scripts/validate-packs.mjs`, no new dependencies, ~0.2 s) checks every `caderno.track.v2` pack in `packs/drafts` and `packs/releases`. R1: internal editorial text shown to students. R2: an English enum alone on a line. R3: the correct choice is the longest in more than 35% of questions. R4 (warn): a distractor with an absolute term in more than 20%. R5: answer letters outside 12–28%. R6: `answer.choiceId` differs from the correct choice. R7: lesson or question ids reused by another pack. R8: an identical stem without stimulus.
 - The 227 known violations live in `scripts/validate-packs.baseline.json` and only warn. A new violation, or an aggregate rule that gets worse, fails CI (`pack-validation` job). Each content fix must remove its baseline entries.
 - R1 is word-bounded, so "independentes" and the geography term "recorte do espaço" are not flagged.
+## 2026-10-15 — Continuous lesson study flow (ADR 0060)
+
+- Today can show **Continuar estudando** (`FEATURE_CONTINUOUS_STUDY=true`): one whole published lesson on the lesson page, no time-budget choice. Leaving mid-way resumes from the lesson-scoped saved step. A lesson counts as done when its lesson resume is completed or 80% of the distinct Questions of its latest version were answered in any version. The next lesson is the most recent unfinished one, otherwise the first unfinished lesson of the subject with the fewest finished lessons; students can also pick a subject. Review and mistakes stay separate. Completion never writes evidence or mastery.
+- Adaptive planner: an authorized Admin Direct publication now counts as publication readiness for new learning (the independent-QA caveat stays visible), and the first fitting new lesson leads a session before review and remediation fill the rest. Before this, a read-only run on production data found zero new-learning candidates, so students only received lesson 01.
 
 ## 2026-10-11 — Lesson complements and narrow Question containment
 

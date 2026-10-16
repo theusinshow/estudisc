@@ -8,6 +8,7 @@ const flag = z.preprocess(
 export const featureFlagsSchema = z.object({
   FEATURE_NEW_TODAY: flag,
   FEATURE_STUDY_PLANNER: flag,
+  FEATURE_CONTINUOUS_STUDY: flag,
   FEATURE_ADAPTIVE_SESSION: flag,
   FEATURE_INTERACTIVE_LESSONS: flag,
   FEATURE_AI_LEARNING: flag,

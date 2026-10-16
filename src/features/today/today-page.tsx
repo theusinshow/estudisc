@@ -8,6 +8,7 @@ import { StudyActionCard } from "./study-action-card";
 import { TodayPlan } from "./today-plan";
 import type { getTodayDashboard } from "./get-today-dashboard";
 import { formatTodayDate } from "./today-date";
+import { ContinueStudy } from "@/features/study-flow/continue-study";
 
 type Dashboard = Awaited<ReturnType<typeof getTodayDashboard>>;
 
@@ -21,12 +22,15 @@ export function TodayPage({ dashboard }: Readonly<{ dashboard: Dashboard }>) {
       <p className="today-date">{formatTodayDate(dashboard.routine?.week?.today)}</p>
       <h1>Hoje</h1>
     </header>
+    {/* ADR 0060: the continuous flow replaces the next action and the session chooser on Today. */}
+    {dashboard.flow ? <ContinueStudy next={dashboard.flow.next} bySubject={dashboard.flow.bySubject} /> : <>
     <section className="today-next" aria-labelledby="next-title">
       <h2 id="next-title">Próxima ação</h2>
       {next ? <StudyActionCard variant={next.kind === "mistake" ? "practice" : next.kind}
         title={next.title} reason={next.reason} href={next.href} estimatedMinutes={session?.budgetMinutes} /> : <FirstRunCallout />}
     </section>
     <TodayPlan sessions={dashboard.sessions} hasNextAction={Boolean(next)} plannerEnabled={getFeatureFlags().FEATURE_STUDY_PLANNER} routine={dashboard.routine} />
+    </>}
     {(dashboard.dueReviews.length > 0 || activeMistakes > 0) && <section className="today-attention" aria-labelledby="attention-title">
       <h2 id="attention-title">Precisa da sua atenção</h2>
       <ul>
@@ -34,7 +38,7 @@ export function TodayPage({ dashboard }: Readonly<{ dashboard: Dashboard }>) {
         {activeMistakes > 0 && <li><Link href="/mistakes">{activeMistakes} {activeMistakes === 1 ? "erro para retomar" : "erros para retomar"}<ArrowRight aria-hidden="true" /></Link></li>}
       </ul>
     </section>}
-    {dashboard.queue.length > 0 && <section className="today-queue" aria-labelledby="queue-title">
+    {!dashboard.flow && dashboard.queue.length > 0 && <section className="today-queue" aria-labelledby="queue-title">
       <h2 id="queue-title">Depois disso</h2><ol>{dashboard.queue.map(action => <li key={action.id}>
         <Link href={action.href} data-kind={action.kind}><span><strong>{action.title}</strong><small>{action.reason}</small></span></Link>
       </li>)}</ol>
@@ -42,7 +46,7 @@ export function TodayPage({ dashboard }: Readonly<{ dashboard: Dashboard }>) {
     <section className="today-week" aria-labelledby="week-title">
       <div className="today-week-head"><h2 id="week-title">Sua semana</h2><Link href="/progress">Ver progresso<ArrowRight aria-hidden="true" /></Link></div>
       <WeekStrip days={overview.week} />
-      <p>{overview.activeDaysThisWeek === 0 ? "Nenhum dia com estudo ainda nesta semana. Uma sessão curta já marca o dia."
+      <p>{overview.activeDaysThisWeek === 0 ? `Nenhum dia com estudo ainda nesta semana. ${dashboard.flow ? "Uma aula" : "Uma sessão curta"} já marca o dia.`
         : `${overview.activeDaysThisWeek} ${overview.activeDaysThisWeek === 1 ? "dia com estudo" : "dias com estudo"} nesta semana.`}</p>
     </section>
   </div></AppShell>;
