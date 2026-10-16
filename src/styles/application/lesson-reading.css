@@ -87,7 +87,9 @@
 .learning-feedback p { margin: var(--estudisc-spacing-4) 0 0; }
 .learning-feedback small { display: block; margin-top: var(--estudisc-spacing-4); color: var(--estudisc-color-dim); }
 .learning-order { display: grid; gap: var(--estudisc-spacing-6); padding: 0; list-style-position: inside; }
-.learning-order li { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--estudisc-spacing-6); margin: 0; padding: var(--estudisc-spacing-6) var(--estudisc-spacing-8); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-paper); }
+.learning-order li { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: center; gap: var(--estudisc-spacing-4); margin: 0; padding: var(--estudisc-spacing-6) var(--estudisc-spacing-8); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-paper); }
+/* Compact arrow buttons keep each item on one row at 320 px; the accessible name stays "Mover … para cima/baixo". */
+.learning-order li > button { min-width: 48px; min-height: 48px; padding: 0; font-size: var(--estudisc-typography-body-sizes-lg); }
 .learning-controls { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-6); }
 .targeted-practice-controls, .mistake-reflection-form { display: grid; grid-template-columns: minmax(0, 1fr); align-items: end; }
 .targeted-practice-controls .learning-field { margin-bottom: 0; }
