@@ -6,6 +6,7 @@ import type * as schema from "@/db/schema";
 import { assessmentInstances,questionAssets,questionAssistance,questionVersions } from "@/db/schema";
 import { DrizzleQuestionRepository } from "./question-repository";
 import { assessmentSnapshotSchema } from "@/features/assessments/contracts";
+import { isSheetSnapshot } from "@/features/assessments/sheet-contracts";
 import { questionSchema } from "@/features/questions/contracts";
 import { canExposeQuestion } from "@/features/questions/exposure";
 type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
@@ -21,7 +22,7 @@ export class QuestionAssetRepository{
   async readAuthorized(id:string,profile:{ownerId:string;role:"ADMIN"|"STUDENT"}){
     const [row]=await this.db.select().from(questionAssets).where(eq(questionAssets.id,id));if(!row)return null;if(profile.role==="ADMIN")return row;
     const instances=await this.db.select({snapshot:assessmentInstances.snapshot}).from(assessmentInstances).where(eq(assessmentInstances.ownerId,profile.ownerId));
-    if(instances.some(instance=>assessmentSnapshotSchema.parse(instance.snapshot).questions.some(item=>item.versionId===row.questionVersionId)))return row;
+    if(instances.some(instance=>!isSheetSnapshot(instance.snapshot)&&assessmentSnapshotSchema.parse(instance.snapshot).questions.some(item=>item.versionId===row.questionVersionId)))return row;
     const [version]=await this.db.select().from(questionVersions).where(eq(questionVersions.id,row.questionVersionId));if(!version)return null;
     const question=questionSchema.parse({...version.content as object,status:version.status});if(!canExposeQuestion(question,{now:new Date(),context:"training"}))return null;
     const [access]=await this.db.select({id:questionAssistance.id}).from(questionAssistance).where(and(eq(questionAssistance.ownerId,profile.ownerId),eq(questionAssistance.questionVersionId,row.questionVersionId)));return access?row:null;
