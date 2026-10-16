@@ -33,19 +33,24 @@ export function resolveLessonVersionContext(manifests: readonly unknown[], pack:
   }
   const retained = pack.lesson.blocks.filter(b => base.blocks.some(old => old.id === b.id));
   const expected = base.blocks.filter(b => changes.get(b.id)?.action !== "remove").map(b => changes.get(b.id)?.action === "replace" ? pack.lesson.blocks.find(next => next.id === b.id)! : b);
-  if (hashCanonicalJson(retained) !== hashCanonicalJson(expected) || hashCanonicalJson({ ...pack.lesson, blocks: base.blocks, version: base.version, status: base.status }) !== hashCanonicalJson(base)) throw new LessonVersionConflictError("Retained blocks and lesson fields must match the source, except declared corrections");
-  if (!pack.corrections && pack.lesson.blocks.length <= base.blocks.length) throw new LessonVersionConflictError("Enrichment must add at least one block");
+  if (hashCanonicalJson(retained) !== hashCanonicalJson(expected) || hashCanonicalJson({ ...pack.lesson, blocks: base.blocks, activities: base.activities, version: base.version, status: base.status }) !== hashCanonicalJson(base)) throw new LessonVersionConflictError("Retained blocks and lesson fields must match the source, except declared corrections");
+  if (!pack.corrections && !pack.questionVersions?.length && pack.lesson.blocks.length <= base.blocks.length) throw new LessonVersionConflictError("Enrichment must add at least one block");
   const additions = pack.lesson.blocks.filter(b => !base.blocks.some(old => old.id === b.id));
   for (const block of additions) validateTextBlock(block, base, true);
-  const refs = [...new Set([...base.exitTicketQuestionIds, ...base.activities.flatMap(a => a.questionId ? [a.questionId] : [])])];
+  const newQuestions = validateQuestionVersions(context, base, pack);
+  validateActivities(base, pack, newQuestions);
+  const refs = [...new Set([...pack.lesson.exitTicketQuestionIds, ...pack.lesson.activities.flatMap(a => a.questionId ? [a.questionId] : [])])];
   if (pack.questionReferences.length !== refs.length || new Set(pack.questionReferences.map(r => r.id)).size !== refs.length) throw new LessonVersionConflictError("Exact unique source Question references required");
   for (const id of refs) {
-    const question = context.questions.find(q => q.id === id), ref = pack.questionReferences.find(r => r.id === id);
+    const question = newQuestions.get(id) ?? context.questions.find(q => q.id === id), ref = pack.questionReferences.find(r => r.id === id);
     if (!question || !ref || question.version !== ref.version || hashCanonicalJson(question) !== ref.hash) throw new LessonVersionConflictError("Immutable Question reference/hash changed");
   }
+  for (const id of newQuestions.keys()) if (!refs.includes(id)) throw new LessonVersionConflictError(`Question version ${id} is unused by the lesson`);
   const projection = structuredClone(context);
   projection.packId = pack.packId;
   projection.track.modules.find(m => m.id === pack.target.moduleId)!.lessons.splice(moduleRecord!.lessons.indexOf(base), 1, structuredClone(pack.lesson));
+  // One version per Question id in a snapshot: a lesson-owned Question is replaced by its next version.
+  projection.questions = [...projection.questions.filter(q => !newQuestions.has(q.id)), ...structuredClone([...newQuestions.values()])];
   projection.track.metadata = { ...projection.track.metadata, lessonVersionImport: { packet: pack, sourceManifestHash: hashCanonicalJson(context) } };
   const issues = validateTrackPackV2Semantics(projection);
   if (issues.length) throw new LessonVersionConflictError(`Invalid enriched context: ${issues[0].path}: ${issues[0].message}`);
@@ -70,4 +75,56 @@ function validateTextBlock(block: LessonVersionPack["lesson"]["blocks"][number],
   if(block.type==="concept"&&block.payload.conceptId!==undefined&&!block.conceptIds.includes(String(block.payload.conceptId)))throw new LessonVersionConflictError("Concept payload must match the source-bound block Concepts");
   const schema=block.type==="code"?codeBlockSchema:block.type==="concept"?conceptBlockSchema:block.type==="text"||block.type==="summary"?textBlockSchema:["note","warning","example","worked-example"].includes(block.type)?titledTextBlockSchema:null;
   if(!schema||!schema.safeParse({...block.payload,type:block.type}).success)throw new LessonVersionConflictError("Addition requires an existing non-assessed text renderer; no new media/assessment");
+}
+
+type Context = ReturnType<typeof resolveLessonVersionContext>["context"];
+type ContextQuestion = Context["questions"][number];
+const questionIdsOf = (lesson: { exitTicketQuestionIds: string[]; activities: { questionId?: string }[] }) => new Set([...lesson.exitTicketQuestionIds, ...lesson.activities.flatMap(a => a.questionId ? [a.questionId] : [])]);
+
+/** ADR 0063: new versions only for lesson-owned Questions, new Questions only with unused ids; all draft, non-official, unreserved. */
+function validateQuestionVersions(context: Context, base: SourceLesson, pack: LessonVersionPack) {
+  const result = new Map<string, ContextQuestion>();
+  const owned = questionIdsOf(base);
+  const elsewhere = new Set(context.track.modules.flatMap(m => m.lessons.filter(l => l.id !== base.id).flatMap(l => [...questionIdsOf(l)])));
+  const concepts = new Set(base.concepts.map(c => c.id));
+  for (const question of pack.questionVersions ?? []) {
+    if (result.has(question.id)) throw new LessonVersionConflictError(`Question ${question.id} listed twice`);
+    const current = context.questions.find(q => q.id === question.id);
+    if (current) {
+      if (!owned.has(question.id)) throw new LessonVersionConflictError(`Question ${question.id} is not referenced by this lesson`);
+      if (elsewhere.has(question.id)) throw new LessonVersionConflictError(`Question ${question.id} is referenced by another lesson`);
+      if (question.version !== current.version + 1) throw new LessonVersionConflictError(`Question ${question.id} must be the next version`);
+    } else if (question.version !== 1) throw new LessonVersionConflictError(`New Question ${question.id} must start at version 1`);
+    if (question.status !== "draft") throw new LessonVersionConflictError(`Question ${question.id} must be a draft`);
+    if (question.provenance.type === "official_exam") throw new LessonVersionConflictError(`Official Question ${question.id} cannot enter through a lesson version`);
+    if (question.exposurePolicy.reservedForAssessment) throw new LessonVersionConflictError(`Question ${question.id} is reserved for assessment`);
+    if (question.conceptIds.some(id => !concepts.has(id))) throw new LessonVersionConflictError(`Question ${question.id} uses a Concept outside the lesson`);
+    result.set(question.id, question as ContextQuestion);
+  }
+  return result;
+}
+
+/** Activities stay as published except rebinding to the next version of their own Question, or appended question Activities for new Questions. */
+function validateActivities(base: SourceLesson, pack: LessonVersionPack, questions: ReadonlyMap<string, ContextQuestion>) {
+  const next = pack.lesson.activities;
+  if (next.length < base.activities.length) throw new LessonVersionConflictError("Activities cannot be removed");
+  const bound = new Set<string>();
+  base.activities.forEach((old, index) => {
+    const activity = next[index];
+    const { config: oldConfig, ...oldRest } = old, { config: newConfig, ...newRest } = activity;
+    if (hashCanonicalJson(oldRest) !== hashCanonicalJson(newRest)) throw new LessonVersionConflictError("Activities may only rebind their Question version");
+    const oldVersion = (oldConfig as { questionVersion?: number }).questionVersion, newVersion = (newConfig as { questionVersion?: number }).questionVersion;
+    if (hashCanonicalJson({ ...oldConfig, questionVersion: null }) !== hashCanonicalJson({ ...newConfig, questionVersion: null })) throw new LessonVersionConflictError("Activities may only rebind their Question version");
+    if (oldVersion === newVersion) return;
+    const question = activity.questionId ? questions.get(activity.questionId) : undefined;
+    if (!question || question.version !== newVersion) throw new LessonVersionConflictError(`Activity ${activity.id} is not bound to a listed Question version`);
+    bound.add(question.id);
+  });
+  for (const activity of next.slice(base.activities.length)) {
+    const question = activity.questionId ? questions.get(activity.questionId) : undefined;
+    if (activity.type !== "question" || !question || question.version !== 1 || (activity.config as { questionVersion?: number }).questionVersion !== 1) throw new LessonVersionConflictError("Appended Activities must ask a new Question");
+    if (base.activities.some(old => old.id === activity.id) || next.filter(other => other.id === activity.id).length > 1) throw new LessonVersionConflictError(`Activity ${activity.id} is not unique`);
+    bound.add(question.id);
+  }
+  for (const id of questions.keys()) if (!bound.has(id) && !pack.lesson.exitTicketQuestionIds.includes(id)) throw new LessonVersionConflictError(`Question version ${id} is not bound to an Activity`);
 }

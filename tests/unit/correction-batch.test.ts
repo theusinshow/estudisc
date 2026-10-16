@@ -47,3 +47,18 @@ it("reports unchanged lessons and refuses cleanups that add blocks", () => {
   expect(buildCorrection({ context, moduleId: "mat", base, before: base, after: grown, ...meta })).toMatchObject({ status: "skipped" });
   expect(hashCanonicalJson(base)).toBe(hashCanonicalJson(lessonVersionFixture().base));
 });
+
+it("turns reviewed Question changes into lesson-bound next versions and rebinds Activities", () => {
+  const { context, base } = lessonVersionFixture();
+  const activity = base.activities.find(entry => entry.type === "question")!;
+  const original = context.questions.find(question => question.id === activity.questionId)!;
+  const reviewed = { ...structuredClone(original), version: 99, status: "published" as const, choices: [...(original.choices ?? [])].reverse() };
+  const outcome = buildCorrection({ context, moduleId: "mat", base, before: base, after: structuredClone(base), ...meta, reviewedQuestions: [reviewed, structuredClone(original)] });
+  expect(outcome.status).toBe("ready");
+  if (outcome.status !== "ready") return;
+  expect(outcome.questions).toBe(1);
+  expect(outcome.pack.questionVersions?.[0]).toMatchObject({ id: original.id, version: original.version + 1, status: "draft" });
+  expect(outcome.pack.corrections).toBeUndefined();
+  expect(outcome.pack.lesson.activities.find(entry => entry.id === activity.id)?.config).toMatchObject({ questionVersion: original.version + 1 });
+  expect(resolveLessonVersionContext([context], outcome.pack).projection.questions.find(question => question.id === original.id)?.version).toBe(original.version + 1);
+});
