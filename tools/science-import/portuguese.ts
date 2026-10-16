@@ -12,6 +12,11 @@ export const PORTUGUESE_PILOT = ["POR-01", "POR-08", "POR-11", "POR-13", "POR-16
 export const PORTUGUESE_BATCHES = Array.from({ length: 4 }, (_, batch) => Array.from({ length: 6 }, (_, index) => `POR-${String(batch * 6 + index + 1).padStart(2, "0")}`));
 export const PORTUGUESE_PROFILE: EditorialProfile = { trackId: "ifsc-2027-portuguese", trackTitle: "IFSC 2027 - Língua Portuguesa", moduleId: "por", moduleTitle: "Língua Portuguesa", subjectCode: "POR", packId: "vecta.ifsc-2027.portuguese.local-v1", contentVersion: 2, questionVersion: 1, editorialSourceVersion: 1, generationRunId: "vecta.portuguese.editorial-v1", officialSourceId: "POR-SRC-001", metadataKey: "portugueseIntegration", sourceMetadataKey: "portugueseEditorialSource", estimatedMinutesIsIntegrationDefault: false };
 const text = z.string().min(1);
+const optionError = z.enum(["conceptual", "procedural", "calculation", "interpretation", "prerequisite", "distractor", "attention", "memory", "unknown"]);
+const sourceOptionSchema = z.object({ id: z.enum(["A", "B", "C", "D", "E"]), text, targetsError: optionError.optional(), rationale: text.optional() }).strict();
+const sourceQuestionSchema = z.object({ id: text, lessonId: text, version: z.number().int().positive().optional(), type: z.literal("MCQ"), stimulus: text.optional(), stem: text, options: z.array(sourceOptionSchema).length(5), correctOption: z.enum(["A", "B", "C", "D", "E"]), explanation: text, difficulty: z.enum(["foundation", "direct", "applied", "ifsc"]), cognitiveOperation: z.enum(["recognize", "understand", "discriminate", "analyze", "apply", "evaluate", "diagnose_error", "analyze_context"]), concepts: z.array(text).min(1), targetedError: text, provenance: z.literal("VECTA_ORIGINAL") }).strict();
+const authoredQuestionsSchema = z.object({ lessonId: text, count: z.literal(8), questions: z.array(sourceQuestionSchema).length(8) }).strict();
+const stimulusRegistrySchema = z.object({ version: z.literal(1), stimuli: z.array(z.object({ id: text, lessonId: text, questionId: text, license: z.literal("autoral-estudisc"), text }).strict()).length(24) }).strict();
 const blockSchema = z.discriminatedUnion("type", [
   z.object({ type: z.literal("HOOK"), title: text, content: text }).strict(),
   z.object({ type: z.literal("LEARNING_GOALS"), items: z.array(text).min(1) }).strict(),
@@ -26,8 +31,8 @@ const blockSchema = z.discriminatedUnion("type", [
 ]);
 const conceptSchema = z.object({ editorialConceptId: text, lessonId: text, name: text, masteryTarget: text, status: z.literal("EDITORIAL") }).strict();
 export const portuguesePackSchema = z.object({
-  lesson: z.object({ id: z.string().regex(/^POR-\d{2}$/), subject: z.literal("POR"), title: text, module: text, priority: z.enum(["P0", "P1", "P2"]), status: z.literal("IMPORT_READY"), estimatedMinutes: z.number().int().positive(), masteryTarget: text, sourceRefs: z.array(text), conceptRefs: z.array(text).length(6), blocks: z.array(blockSchema).min(1), media: z.object({ deterministicAssetRefs: z.array(text), antigravityRefs: z.array(text), authenticMediaRefs: z.array(text) }).strict() }).strict(),
-  questions: z.array(z.object({ id: text, lessonId: text, type: z.literal("MCQ"), stimulus: text.optional(), stem: text, options: z.array(z.object({ id: z.enum(["A", "B", "C", "D", "E"]), text }).strict()).length(5), correctOption: z.enum(["A", "B", "C", "D", "E"]), explanation: text, difficulty: z.enum(["foundation", "direct", "applied", "ifsc"]), cognitiveOperation: z.enum(["recognize", "understand", "discriminate", "analyze", "apply", "evaluate", "diagnose_error", "analyze_context"]), concepts: z.array(text).min(1), targetedError: text, provenance: z.literal("VECTA_ORIGINAL") }).strict()).length(8),
+  lesson: z.object({ id: z.string().regex(/^POR-\d{2}$/), version: z.number().int().positive().optional(), subject: z.literal("POR"), title: text, module: text, priority: z.enum(["P0", "P1", "P2"]), status: z.literal("IMPORT_READY"), estimatedMinutes: z.number().int().positive(), masteryTarget: text, sourceRefs: z.array(text), conceptRefs: z.array(text).length(6), blocks: z.array(blockSchema).min(1), media: z.object({ deterministicAssetRefs: z.array(text), antigravityRefs: z.array(text), authenticMediaRefs: z.array(text) }).strict() }).strict(),
+  questions: z.array(sourceQuestionSchema).length(8),
   concepts: z.array(conceptSchema).length(6),
   qa: z.object({ lessonId: text, status: z.literal("PASS"), checks: z.object({ sourceRefsResolve: z.boolean(), questionCount: z.literal(8), eachQuestionHasFiveOptions: z.boolean(), originalCoreContent: z.boolean() }).strict(), editorialCautions: z.array(text) }).strict()
 }).strict();
@@ -36,20 +41,45 @@ export type PortuguesePack = z.infer<typeof portuguesePackSchema>;
 
 export function loadPortugueseInputs(root: string) {
   const sourceRoot = resolve(root, PORTUGUESE_SOURCE);
+  const stimuli = stimulusRegistrySchema.parse(readJson(resolve(sourceRoot, "STIMULI.json"))).stimuli;
+  const stimuliByQuestion = new Map(stimuli.map(stimulus => [stimulus.questionId, stimulus]));
+  assert.equal(stimuliByQuestion.size, stimuli.length, "Duplicate stimulus questionId");
   const concepts = conceptsSchema.parse(readJson(resolve(sourceRoot, "PORTUGUESE-CONCEPTS.json"))).concepts;
   const originals = Array.from({ length: 24 }, (_, index) => {
     const lessonId = `POR-${String(index + 1).padStart(2, "0")}`;
     const bytes = readFileSync(resolve(sourceRoot, `workspace/${lessonId}/approved/pack.json`));
     const original = portuguesePackSchema.parse(JSON.parse(bytes.toString("utf8")));
+    const authorBytes = readFileSync(resolve(sourceRoot, "workspace/" + lessonId + "/author/questions.json"));
+    const authored = authoredQuestionsSchema.parse(JSON.parse(authorBytes.toString("utf8")));
     assert.equal(original.lesson.id, lessonId);
     const targets = concepts.filter(concept => concept.lessonId === lessonId);
     assert.deepEqual(original.concepts, targets, "Pack Concepts differ from source registry");
     assert.deepEqual(targets.map(concept => concept.editorialConceptId), original.lesson.conceptRefs);
+    assert.equal(authored.lessonId, lessonId);
+    assert.deepEqual(authored.questions.map(question => question.id), original.questions.map(question => question.id));
     for (const question of original.questions) {
       assert.equal(question.lessonId, lessonId);
       assert.deepEqual(new Set(question.options.map(option => option.id)), new Set(["A", "B", "C", "D", "E"]));
       assert.equal(question.options.filter(option => option.id === question.correctOption).length, 1);
       assert(question.concepts.every(id => original.lesson.conceptRefs.includes(id)), `Unknown Concept in ${question.id}`);
+    }
+    for (const question of original.questions) {
+      const authoredQuestion = authored.questions.find(row => row.id === question.id)!;
+      const registered = stimuliByQuestion.get(question.id);
+      if (question.version === 2) {
+        assert.equal(authoredQuestion.version, 2, "Authored Question version missing for " + question.id);
+        assert.equal(authoredQuestion.stimulus, question.stimulus, "Author/source stimulus mismatch for " + question.id);
+        assert(registered, "Missing STIMULI.json record for " + question.id);
+        assert.equal(registered.lessonId, lessonId);
+        assert.equal(registered.text, authoredQuestion.stimulus, "Stimulus registry mismatch for " + question.id);
+        assert.deepEqual(authoredQuestion.options.map(option => ({ id: option.id, text: option.text })), question.options);
+        assert.equal(authoredQuestion.correctOption, question.correctOption);
+        assert.equal(authoredQuestion.explanation, question.explanation);
+        assert.equal(authoredQuestion.options.filter(option => option.id !== authoredQuestion.correctOption && option.targetsError && option.rationale).length, 4, "Each distractor needs its own error and rationale: " + question.id);
+        const correct = authoredQuestion.options.find(option => option.id === authoredQuestion.correctOption)!;
+        assert.equal(correct.targetsError, undefined, "Correct choice cannot carry a distractor error: " + question.id);
+        assert.equal(correct.rationale, undefined, "Correct choice cannot carry a distractor rationale: " + question.id);
+      } else assert.equal(registered, undefined, "Unexpected registry record for " + question.id);
     }
     const pack: ProjectedPack = {
       lesson: { title: original.lesson.title, estimatedMinutes: original.lesson.estimatedMinutes, concepts: targets.map(concept => ({ id: concept.editorialConceptId, name: concept.name, masteryTarget: concept.masteryTarget })), sourceRefs: original.lesson.sourceRefs, mediaRefs: [], blocks: original.lesson.blocks.map((block, index) => {
@@ -68,14 +98,38 @@ export function loadPortugueseInputs(root: string) {
       }) },
       questions: original.questions.map(question => ({ id: question.id, type: "MULTIPLE_CHOICE_SINGLE", stem: question.stimulus ? `${question.stimulus}\n\n${question.stem}` : question.stem, options: question.options.map(option => ({ key: option.id, text: option.text })), correctOption: question.correctOption, explanation: question.explanation, difficulty: question.difficulty.toUpperCase() as "FOUNDATION" | "DIRECT" | "APPLIED" | "IFSC", cognitiveOperation: ({ recognize: "UNDERSTAND", understand: "UNDERSTAND", discriminate: "ANALYZE", analyze: "ANALYZE", apply: "APPLY", evaluate: "EVALUATE", diagnose_error: "ANALYZE", analyze_context: "ANALYZE" } as const)[question.cognitiveOperation], conceptIds: question.concepts, targetedError: question.targetedError, provenance: "ORIGINAL_VECTA_GROUNDED_V2" }))
     };
-    return { lessonId, sourceHash: sha256(bytes), pack, original };
+    return { lessonId, sourceHash: sha256(bytes), authorHash: sha256(authorBytes), pack, original, authored };
   });
   const inputs: EditorialInputs = { sourceRoot, packs: originals, library: sourceLibrarySchema.parse(readJson(resolve(sourceRoot, "PORTUGUESE-SOURCE-LIBRARY.json"))), conceptMap: conceptMapSchema.parse(readJson(resolve(root, PORTUGUESE_MAP))) };
-  return { inputs, originals, concepts };
+  assert.equal(stimuli.length, 24, "Expected exactly 24 hand-authored stimuli");
+  return { inputs, originals, concepts, stimuli };
 }
 export function buildPortuguesePack(root: string, lessonIds: string[], snapshotVersion: number) {
-  const { inputs, originals, concepts } = loadPortugueseInputs(root);
+  const { inputs, originals, concepts, stimuli } = loadPortugueseInputs(root);
   const result = buildEditorialPack(root, lessonIds, snapshotVersion, inputs, PORTUGUESE_PROFILE);
+  const originalQuestions = new Map(originals.flatMap(row => row.authored.questions.map(question => [question.id, question] as const)));
+  for (const question of result.pack.questions) {
+    const source = originalQuestions.get(question.id);
+    assert(source, "Missing original Question " + question.id);
+    if (source.version !== undefined) question.version = source.version;
+    const sourceOptions = new Map<string, typeof source.options[number]>(source.options.map(option => [option.id, option] as const));
+    question.choices = (question.choices ?? []).map(choice => {
+      const authored = sourceOptions.get(choice.id);
+      assert(authored, "Missing authored option " + choice.id + " in " + question.id);
+      return { ...choice, ...(authored.targetsError ? { targetsError: authored.targetsError } : {}), ...(authored.rationale ? { rationale: authored.rationale } : {}) };
+    });
+    const stimulus = stimuli.find(row => row.questionId === question.id);
+    if (stimulus) question.sourceIds = [...new Set([...(question.sourceIds ?? []), stimulus.id])];
+  }
+  for (const lesson of result.pack.track.modules[0].lessons) {
+    const source = originals.find(row => row.lessonId === lesson.id)?.original;
+    assert(source, "Missing source Lesson " + lesson.id);
+    if (source.lesson.version !== undefined) lesson.version = source.lesson.version;
+  }
+  result.pack.sources.push(...stimuli.filter(stimulus => lessonIds.includes(stimulus.lessonId)).map(stimulus => ({
+    id: stimulus.id, type: "human_created" as const, title: "Estímulo autoral " + stimulus.questionId,
+    locator: { localRef: PORTUGUESE_SOURCE + "/STIMULI.json#" + stimulus.id }, metadata: { license: stimulus.license, authoringStatus: "original" }
+  })));
   // Hash original editorial blocks, preserving their original types and complete sidecar records.
   for (const lesson of result.pack.track.modules[0].lessons) {
     const original = originals.find(row => row.lessonId === lesson.id)!.original;

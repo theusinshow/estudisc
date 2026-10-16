@@ -13,11 +13,17 @@ describe("Portuguese editorial integration", () => {
   const ids = [...new Set([...PORTUGUESE_PILOT, ...PORTUGUESE_BATCHES.flat()])].sort();
   it("preserves all24source lessons/192keys/144targets and deduplicates cumulative pilot batches", () => {
     const result = buildPortuguesePack(process.cwd(), ids, 6);
-    expect(auditPortuguesePack(result.pack)).toMatchObject({ lessons: 24, questions: 192, concepts: 144, blocks: 264, sourceFilesUnchanged: 164 });
+    expect(auditPortuguesePack(result.pack)).toMatchObject({ lessons: 24, questions: 192, concepts: 144, blocks: 264, sourceFilesUnchanged: 165 });
     const existing = JSON.parse(readFileSync(".estudisc-agent-context/EXISTING-CONCEPTS.json", "utf8")) as { id: string }[];
     expect(() => validateConceptMap(result.inputs.conceptMap, result.concepts.map(row => row.editorialConceptId), new Set(existing.map(row => row.id)))).not.toThrow();
-    expect(result.pack.track.modules[0].lessons.every(lesson => lesson.version === 2)).toBe(true);
-    expect(result.pack.questions.every(question => question.version === 1)).toBe(true);
+    const revisedLessonIds = new Set(["POR-01", "POR-02", "POR-03"]);
+    expect(result.pack.track.modules[0].lessons.every(lesson => lesson.version === (revisedLessonIds.has(lesson.id) ? 3 : 2))).toBe(true);
+    const revisedQuestions = result.pack.questions.filter(question => question.id.startsWith("POR-01-Q") || question.id.startsWith("POR-02-Q") || question.id.startsWith("POR-03-Q"));
+    const revisedQuestionIds = new Set(revisedQuestions.map(question => question.id));
+    expect(revisedQuestions).toHaveLength(24);
+    expect(result.pack.questions.every(question => question.version === (revisedQuestionIds.has(question.id) ? 2 : 1))).toBe(true);
+    expect(revisedQuestions.every(question => question.choices?.filter(choice => !choice.correct && choice.targetsError && choice.rationale).length === 4)).toBe(true);
+    expect(result.pack.sources.filter(source => source.metadata.license === "autoral-estudisc")).toHaveLength(24);
     expect(result.pack.track.metadata.portugueseIntegration).toMatchObject({ sourceLessonVersion: 1, humanApprovalRecorded: false, officialMappingVerified: false, estimatedMinutesIsIntegrationDefault: false });
     expect(result.pack.curriculumRequirements).toEqual([]);
     expect(result.pack.conceptPrerequisites).toEqual([]);

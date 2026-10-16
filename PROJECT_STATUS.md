@@ -1,4 +1,8 @@
 # Estudisc — Current project status
+POR-01..03 hand-written question pilot (2026-10-16) complete locally on content/por-pilot-20261016. The 24 existing Question IDs now have individual authorial stimuli, question-specific alternatives, distractor error metadata and explanations; all are v2 and draft. POR-01, POR-02 and POR-03 are v3; the complete Portuguese Pack is v7. All 21 other lessons and 168 Questions match the original Pack exactly. Source registry: 24 texts, license autoral-estudisc. Review: `.local/task/PILOT-REVIEW.md`. No import or publication was performed.
+
+Validation: offline frozen-lockfile install, lint, typecheck and content-QA passed (17 tests across 7 files). The pack validator exits 1 only for the remaining R11 repeated-choice group at POR-04-Q07 (21 unchanged Questions; the original 24-question group also included POR-01-Q07). No R3/R8/R9/R10/R11 finding identifies the new Questions. NEXT ACTION: keep the candidate in draft; publication is outside this task.
+
 
 Phase 0+1 and correction versions (2026-10-15) accepted locally on content/phase1-integrated-20261015: pack validator in CI, cleaned packs, ADR 0062 correction contract, and 118 correction versions generated and checked read-only against production with the real import policy (14 lessons have only Question changes, which wait for the Question/lesson-binding contract). NEXT ACTION: PR/deploy, then backup, then import and Admin Direct publication of the 118 corrections.
 
