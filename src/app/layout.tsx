@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Archivo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { siteUrl } from "@/features/public-site/site-url";
 // Private owner state is always request-scoped, never a shared prerendered page.
 export const dynamic="force-dynamic";
 
@@ -8,12 +9,15 @@ export const dynamic="force-dynamic";
 const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-archivo", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
-export const metadata: Metadata = {
-  title: "Estudisc",
-  description: "Estudo para o IFSC com aulas, prática e revisão baseadas em evidências.",
-  applicationName: "Estudisc",
-  openGraph: { title: "Estudisc", description: "Estudo, prática e revisão para o IFSC.", siteName: "Estudisc", locale: "pt_BR", type: "website" }
-};
+export function generateMetadata(): Metadata {
+  return {
+    metadataBase: new URL(siteUrl()),
+    title: "Estudisc",
+    description: "Preparação para a prova do IFSC 2027 com aulas, questões explicadas, simulados e provas anteriores.",
+    applicationName: "Estudisc",
+    openGraph: { title: "Estudisc — preparação para o IFSC 2027", description: "Aulas, questões explicadas, simulados e provas anteriores do IFSC.", siteName: "Estudisc", locale: "pt_BR", type: "website" }
+  };
+}
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

@@ -42,6 +42,7 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
       <Link href="/achievements">Ver minhas conquistas</Link>
     </div>}
     {error&&<p role="alert">{error}</p>}
+    {feedback&&<p className="question-report"><Link href={`/suporte?erro=${encodeURIComponent(`${question.id} v${question.version}`)}`}>Achou um erro nesta questão? Avise</Link></p>}
     <TutorPanel activityId={activityStableId} questionId={question.id} questionVersion={question.version} sessionId={sessionId} enhanced={aiEnabled}/>
   </section>;
 }

@@ -17,6 +17,8 @@ export function PublicLayout({ children, labelledBy }: Readonly<{ children: Reac
       <footer className="public-footer">
         <nav aria-label="Informações legais">
           <Link href="/conheca">Conheça</Link>
+          <Link href="/suporte">Suporte</Link>
+          <Link href="/pais-e-escolas">Pais e escolas</Link>
           <Link href="/termos">Termos de uso</Link>
           <Link href="/privacidade">Privacidade</Link>
         </nav>

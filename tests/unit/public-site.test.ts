@@ -12,8 +12,8 @@ const accounts = JSON.stringify([{ id: "account-owner", name: "Dono", role: "ADM
 
 describe("public sales and legal pages", () => {
   it("lets visitors open the sales and legal pages without a session", () => {
-    for (const path of ["/conheca", "/termos", "/privacidade"]) expect(isPublicRuntimePath(path)).toBe(true);
-    for (const path of ["/", "/upgrade", "/conheca/x", "/termos-extra"]) expect(isPublicRuntimePath(path)).toBe(false);
+    for (const path of ["/conheca", "/termos", "/privacidade", "/suporte", "/pais-e-escolas", "/robots.txt", "/sitemap.xml", "/opengraph-image", "/opengraph-image-1a2b3c"]) expect(isPublicRuntimePath(path)).toBe(true);
+    for (const path of ["/", "/upgrade", "/conheca/x", "/termos-extra", "/suporte/admin", "/lessons/MAT-01"]) expect(isPublicRuntimePath(path)).toBe(false);
   });
 
   it("shows the last access day as the exam day in Brasília time", () => {

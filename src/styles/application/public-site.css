@@ -48,3 +48,15 @@
 .auth-surface > .auth-legal { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--estudisc-spacing-8); padding-top: var(--estudisc-spacing-6); }
 .auth-legal a, .auth-alternate a { min-height: 44px; display: inline-flex; align-items: center; color: var(--estudisc-color-ink); text-underline-offset: 3px; }
 .auth-alternate { margin: 0; }
+
+/* Support FAQ: native disclosure, full-width touch target. */
+.public-faq details { border-top: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }
+.public-faq details:last-child { border-bottom: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }
+.public-faq summary { min-height: 48px; display: flex; align-items: center; padding: var(--estudisc-spacing-4) 0; font-weight: 700; cursor: pointer; }
+.public-faq summary:focus-visible { outline: 3px solid var(--estudisc-color-ink); outline-offset: 2px; }
+.public-faq details p { padding-bottom: var(--estudisc-spacing-6); }
+.public-section .primary-action, .public-section .secondary-action { justify-self: start; max-width: 100%; overflow-wrap: anywhere; }
+
+/* "Report a problem" link under a question result. */
+.question-report { margin: 0; font-size: var(--estudisc-typography-body-sizes-sm); }
+.question-report a { min-height: 44px; display: inline-flex; align-items: center; color: var(--estudisc-color-ink); text-underline-offset: 3px; }
