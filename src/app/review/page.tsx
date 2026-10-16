@@ -10,6 +10,9 @@ import { TargetedPracticeControls } from "@/features/study-sessions/targeted-pra
 
 export const dynamic = "force-dynamic";
 
+const dayMonth = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit" });
+const reviewDue = (date: Date) => `${date.getTime() <= Date.now() ? "venceu em" : "vence em"} ${dayMonth.format(date)}`;
+
 async function completeReviewAction(formData: FormData) {
   "use server";
 
@@ -41,13 +44,15 @@ export default async function ReviewPage() {
           </div>
         ) : (
           <>
-            <p className="count-chip">{dueReviews.length === 1 ? "1 conceito" : `${dueReviews.length} conceitos`} para revisar</p>
-            {enhanced&&<TargetedPracticeControls kind="review" label="Começar revisão rápida"/>}
+            <div className="queue-head">
+              <p className="queue-count"><strong>{dueReviews.length}</strong> <span>{dueReviews.length === 1 ? "conceito na fila" : "conceitos na fila"}</span></p>
+              {enhanced&&<TargetedPracticeControls kind="review" label="Começar revisão rápida"/>}
+            </div>
             <ol className="review-list" aria-label="Revisões vencidas">
               {dueReviews.map((review) => (
                 <li key={review.conceptStableId}>
                   <Link href={`/concepts/${review.conceptStableId}`}><strong>{review.conceptTitle}</strong></Link>
-                  <span>{review.reason}</span>
+                  <span><time className="type-meta" dateTime={review.nextReviewAt.toISOString()}>{reviewDue(review.nextReviewAt)}</time> · {review.reason}</span>
                   <small>
                     {masteryStateLabels[review.currentMasteryState as MasteryState] ?? review.currentMasteryState} · {review.reviewCount === 1 ? "1 revisão" : `${review.reviewCount} revisões`}
                   </small>

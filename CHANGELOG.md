@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-16 — Caderno de prova, phase 2: Today and review queues (ADR 0067)
+
+- Today has one dominant action (level 3 elevation, the only signal-yellow CTA) with its real reason, subject tab and mono metadata; the legacy session chooser takes that role when it is shown. The pulse counts become a typographic mono line; queue, plan and attention become 2px-ruled editorial lists. ClickSpark, Reveal and the pulse CountUp leave Today.
+- Review shows the real queue count in large type and, per item, the actual due date ("venceu em dd/mm") from the schedule; mistakes show their registration date. Rows replace cards. No count, duration or date is invented.
+
 ## 2026-10-16 — Caderno de prova, phase 1: question session and lesson (ADR 0067)
 
 - Multiple-choice Questions render as an answer sheet: bubble A–E plus text, 56px rows, the native radio covering the row; keys A–E and 1–5 mark a choice while focus is inside the Question, Enter submits. Choice accessible names stay the choice text.
