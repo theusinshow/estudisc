@@ -42,12 +42,13 @@ it("renders unchanged GH text and Questions with core evaluators, without exposi
     expect(lesson.blocks.map(b => b.id)).toEqual(original.lesson.blocks.map(b => runtimeId(b.id)));
     const html = renderToStaticMarkup(<LessonBlockList blocks={lesson.blocks.map(b => ({ stableId: b.id, type: b.type, payload: b.payload }))}/>);
     const document = new DOMParser().parseFromString(html, "text/html");
+    document.querySelectorAll(".math-visual").forEach(node => node.remove()); // compare authored source text
     const text = document.body.textContent!;
     expect(text).not.toMatch(/Bloco inválido|Conteúdo inválido|ainda não possui renderer aprovado/i);
     for (const block of original.lesson.blocks) {
       const guide = typeof block.answerGuide === "string" ? [block.answerGuide] : block.answerGuide?.mustMention ?? [];
       const reasoning = Array.isArray(block.reasoning) ? block.reasoning : [block.reasoning];
-      for (const value of [block.title, block.content, ...(block.items ?? []), block.prompt, block.answer, ...reasoning, ...guide].filter((v): v is string => !!v)) expect(text, block.id).toContain(value);
+      for (const value of [block.title, block.content, ...(block.items ?? []), block.prompt, block.answer, ...reasoning, ...guide].filter((v): v is string => !!v)) expect(text.replace(/\s+/g, ""), block.id).toContain(value.replace(/\s+/g, "")); // single line breaks render as separate lines
       expect(lesson.blocks.find(b => b.id === runtimeId(block.id))).toBeDefined();
     }
     for (const originalQuestion of original.questions) {
