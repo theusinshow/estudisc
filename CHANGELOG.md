@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-16 — Production moved to Railway
+
+- The app and its Postgres now run together on Railway (project `estudisc`). The database was copied from Aiven with per-table row counts compared (52 tables identical). The old Vercel address redirects (temporary 307) every path to the Railway URL until the custom domain is connected.
+
 ## 2026-10-16 — Vercel functions next to the database
 
 - Vercel functions ran in `iad1` (Washington) while the Aiven database is in Santa Clara, California, so every query crossed the US and logged-in pages took seconds. `vercel.json` pins functions to `sfo1` (San Francisco).
