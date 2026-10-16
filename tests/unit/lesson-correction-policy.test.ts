@@ -66,6 +66,22 @@ describe("lesson correction versions", () => {
     expect(() => resolveLessonVersionContext([noop.context], noop.pack)).toThrow(/does not change/);
   });
 
+  it("corrects figure text but never swaps the image", () => {
+    const { context, base, packet } = lessonVersionFixture();
+    const contextWithFigure = structuredClone(context);
+    const published = contextWithFigure.track.modules[0].lessons.find(entry => entry.id === base.id)!;
+    const figure = { id: "FIG-1", schemaVersion: 1, type: "figure", conceptIds: [], payload: { type: "figure", src: "data:image/png;base64,iVBORw0KGgo=", alt: "Circuito simples", caption: "Versão estática em rascunho", width: 10, height: 10 } };
+    published.blocks.push(figure as never);
+    const make = (payload: Record<string, unknown>) => {
+      const lesson = structuredClone({ ...published, version: published.version + 1, status: "draft" as const });
+      const target = lesson.blocks.find(entry => entry.id === "FIG-1")!; target.payload = { ...target.payload, ...payload };
+      return lessonVersionPackSchema.parse({ ...packet, target: { ...packet.target, baseHash: hashCanonicalJson(published) }, lesson,
+        corrections: { reason: "Remove the internal figure briefing", blocks: [{ blockId: "FIG-1", action: "replace", baseBlockHash: hashCanonicalJson(figure) }] } });
+    };
+    expect(() => resolveLessonVersionContext([contextWithFigure], make({ caption: "Circuito com chave fechada." }))).not.toThrow();
+    expect(() => resolveLessonVersionContext([contextWithFigure], make({ src: "data:image/png;base64,AAAA" }))).toThrow(/keep its image/);
+  });
+
   it("keeps the append-only rule when no correction is declared", () => {
     const { context, base, packet } = lessonVersionFixture();
     const unchanged = lessonVersionPackSchema.parse({ ...packet, lesson: { ...structuredClone(base), version: base.version + 1, status: "draft" } });

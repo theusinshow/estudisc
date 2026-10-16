@@ -69,7 +69,7 @@ export function auditAdaptedPack(pack: TrackPackV2) {
       const editorial = block.payload.editorial as Record<string, unknown>;
       assert.equal(editorial.sourceHash, sha(stableJson(sourceBlock)), sourceBlock.id + ": source hash drift");
       assert.equal(editorial.type, sourceBlock.type, sourceBlock.id + ": source type drift");
-      assert(!Object.hasOwn(block.payload, "id"), sourceBlock.id + ": duplicate payload identity should stay compact");
+      assert.equal(editorial.id, sourceBlock.id, sourceBlock.id + ": editorial identity drift");
       if (block.type === "figure") {
         assert(["IMAGE_REQUEST", "DETERMINISTIC_COMPONENT_REQUEST"].includes(sourceBlock.type), "Only media requests become figures");
         assert(typeof block.payload.alt === "string" && typeof block.payload.longDescription === "string", block.id + ": figure accessibility");

@@ -88,8 +88,6 @@ export function buildCriticalSciencePack(root = process.cwd()) {
       factualReviewStatus: "PENDING",
       visualReviewStatus: "PENDING"
     };
-    delete payload.id;
-    delete editorial.id;
     const index = lesson.blocks.findIndex(block => block.id === figure.id);
     assert(index >= 0, "Missing figure replacement target " + figure.id);
     lesson.blocks[index] = figure;
@@ -111,10 +109,6 @@ export function buildCriticalSciencePack(root = process.cwd()) {
         });
         return false;
       }
-      const payload = payloadRecord(block);
-      delete payload.id;
-      const editorial = payload.editorial as Record<string, unknown> | undefined;
-      if (editorial) delete editorial.id;
       return true;
     });
     if (lesson.version !== MEDIA_LESSON_VERSION) lesson.version = LESSON_VERSION;

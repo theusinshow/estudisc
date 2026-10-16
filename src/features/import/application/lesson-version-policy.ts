@@ -1,5 +1,5 @@
 import { hashCanonicalJson } from "@/lib/canonical-json";
-import { codeBlockSchema,conceptBlockSchema,textBlockSchema,titledTextBlockSchema } from "@/features/lessons/blocks/block-schemas";
+import { codeBlockSchema,conceptBlockSchema,figureBlockSchema,textBlockSchema,titledTextBlockSchema } from "@/features/lessons/blocks/block-schemas";
 import { validateSourceGoalPrediction } from "./source-goal-prediction";
 import { trackPackV2Schema, type TrackPackV2 } from "./track-pack-v2-schema";
 import { validateTrackPackV2Semantics } from "./track-pack-v2-validation";
@@ -25,7 +25,10 @@ export function resolveLessonVersionContext(manifests: readonly unknown[], pack:
       if (next.type !== old.type) throw new LessonVersionConflictError("A corrected block must keep its block type");
       if (hashCanonicalJson(next) === hashCanonicalJson(old)) throw new LessonVersionConflictError("Correction does not change the block");
       if (hashCanonicalJson(next.conceptIds) !== hashCanonicalJson(old.conceptIds)) throw new LessonVersionConflictError("A corrected block must keep its Concepts");
-      validateTextBlock(next, base, false);
+      // A corrected figure may only change its text (caption, credit, descriptions); its image stays the same.
+      if (next.type === "figure") {
+        if (next.payload.src !== old.payload.src || !figureBlockSchema.safeParse({ ...next.payload, type: next.type }).success) throw new LessonVersionConflictError("A corrected figure must keep its image and stay valid");
+      } else validateTextBlock(next, base, false);
     }
   }
   const retained = pack.lesson.blocks.filter(b => base.blocks.some(old => old.id === b.id));
