@@ -16,6 +16,12 @@ A decisão está congelada para implementação V1.
 - labels técnicas podem usar uppercase, mas textos de ação permanecem legíveis;
 - números de rank podem usar display; métricas técnicas usam mono quando necessário.
 
+## Escala (ADR 0067)
+
+`typography.scale`: 14 (meta) / 17 (corpo; 18 em telas largas) / 22 (lead) / 32 (título) / 48 (display) / 72 (hero).
+Eixo `wdth` do Archivo (`typography.width.expanded`) só em títulos de tela e números grandes. Leitura com
+`typography.readingMeasure` (66ch) e `typography.readingLeading` (1.55). Mono para tempo, nº da questão e data.
+
 ## Alternativas avaliadas
 
 1. Archivo + JetBrains Mono — selecionada por personalidade editorial e clareza técnica.

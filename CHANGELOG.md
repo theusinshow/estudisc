@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-16 — Caderno de prova, phase 0: tokens and foundation (ADR 0067)
+
+- Design tokens 4.1.0 (additive): three elevation levels, a contrasted type scale with the Archivo `wdth` axis, reading measure, exam-grid pattern, layout grid and state-communicating motion tokens. Focus ring tokens now match the rendered 3px.
+- New opt-in foundation classes in `src/styles/application/caderno.css`; buttons press 4px to zero shadow in 90ms. No content, domain, route or contract change.
+
 ## 2026-10-16 — Production moved to Railway
 
 - The app and its Postgres now run together on Railway (project `estudisc`). The database was copied from Aiven with per-table row counts compared (52 tables identical). The old Vercel address redirects (temporary 307) every path to the Railway URL until the custom domain is connected.

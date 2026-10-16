@@ -1,4 +1,16 @@
 # Estudisc current plan
+## Caderno de prova front evolution — ADR 0067 (2026-10-16, Claude)
+
+Scope: presentation only (UI components, CSS, tokens). No change to packs/, content, domain logic, routes, server actions, DB schema, auth, payments, flags or `src/features/*/contracts`. One PR per phase, stacked branches; no merge/deploy.
+
+Phases and acceptance:
+0. Tokens + foundation (`feat/front-caderno-de-prova`): elevation/type/pattern/layout/motion tokens in the canonical JSON, regenerated; tests green.
+1. Session + lesson (`feat/front-caderno-de-prova-f1`): answer-sheet bubbles, A–E/1–5 keys, explicit confirm, aria-live stamp, hint/solution disclosures, reading column; reduced motion; session e2e green.
+2. Today + review (`-f2`): one dominant yellow action with the real reason; ruled editorial lists; real queue counts.
+3. Landing + sign-in (`-f3`): asymmetric hero with a solvable real sample question; mono stat line; receipt-style price with real deadline; countdown from accessLastDay.
+4. Progress/profile + QA (`-f4`): report card by subject (mastery 0–5 ink + label), charts with table alternative; contrast/focus audit; screenshots 390/1440.
+
+Status: phase 0 in progress. NEXT ACTION: open PR 1, then start phase 1 on a stacked branch.
 ## Past exams answer sheet — ADR 0066 (2026-10-16, Claude, branch feat/past-exams-20261016)
 
 Spec: `docs/superpowers/specs/2026-10-16-past-exams-answer-sheet-design.md`. Plan: `docs/superpowers/plans/2026-10-16-past-exams-answer-sheet.md`. Tasks 1–6 are implemented and committed locally (contracts and scorer, SQL repository and migration 0022, memory parity, API and card DTO, catalog and converter, UI). Task 7 covers docs and full gates.

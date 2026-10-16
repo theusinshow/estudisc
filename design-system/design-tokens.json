@@ -2,6 +2,13 @@
   "$schema": "https://design-tokens.github.io/community-group/format/",
   "$changelog": [
     {
+      "version": "4.1.0",
+      "date": "2026-10-16",
+      "changes": [
+        "ADR 0067 Caderno de prova: three elevation levels (structure/surface/action), contrasted type scale with Archivo wdth axis, reading measure, exam-grid pattern, layout grid and state-communicating motion tokens (UI 150–250 ms, press 90 ms, stamp, question slide); focus ring 3px as already rendered"
+      ]
+    },
+    {
       "version": "4.0.0",
       "date": "2026-10-01",
       "changes": [
@@ -99,8 +106,8 @@
     "defaultNonColorChannels": 1
   },
   "focus": {
-    "width": "2px",
-    "offset": "2px",
+    "width": "3px",
+    "offset": "3px",
     "style": "solid",
     "color": "{color.info}",
     "machineColor": "{color.signal}"
@@ -149,7 +156,24 @@
       "family": "JetBrains Mono",
       "size": "14px",
       "leading": 1.7
-    }
+    },
+    "scale": {
+      "meta": "14px",
+      "body": "17px",
+      "bodyWide": "18px",
+      "lead": "22px",
+      "title": "32px",
+      "display": "48px",
+      "hero": "72px"
+    },
+    "width": {
+      "normal": "100%",
+      "semi": "112%",
+      "expanded": "125%"
+    },
+    "displayWeight": 900,
+    "readingMeasure": "66ch",
+    "readingLeading": 1.55
   },
   "spacing": {
     "1": "2px",
@@ -193,7 +217,15 @@
     "easing": "cubic-bezier(0.22, 1, 0.36, 1)",
     "linear": "linear",
     "travelMin": "2px",
-    "travelMax": "4px"
+    "travelMax": "4px",
+    "uiFast": "150ms",
+    "ui": "200ms",
+    "uiSlow": "250ms",
+    "press": "90ms",
+    "stamp": "200ms",
+    "stampRotation": "-6deg",
+    "questionTravel": "24px",
+    "easeOut": "cubic-bezier(0.2, 0.8, 0.2, 1)"
   },
   "breakpoint": {
     "mobile": "0px",
@@ -286,5 +318,38 @@
   },
   "navigation": {
     "mobileBottomHeight": "64px"
+  },
+  "elevation": {
+    "structure": {
+      "border": "2px",
+      "shadow": "none"
+    },
+    "surface": {
+      "border": "2px",
+      "shadow": "4px 4px 0 {color.ink}"
+    },
+    "action": {
+      "border": "3px",
+      "shadow": "6px 6px 0 {color.ink}",
+      "pressTravel": "4px",
+      "pressedShadow": "0 0 0 {color.ink}"
+    }
+  },
+  "pattern": {
+    "grid": {
+      "cell": "24px",
+      "line": "1px",
+      "color": "rgba(23,20,31,0.06)"
+    }
+  },
+  "layout": {
+    "grid": {
+      "mobileColumns": 4,
+      "mobileMargin": "20px",
+      "desktopColumns": 12,
+      "gutter": "16px",
+      "desktopGutter": "24px",
+      "marginColumn": "220px"
+    }
   }
 }
