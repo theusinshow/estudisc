@@ -25,6 +25,11 @@ The result is the next draft version, stored by the existing repository and publ
 - New Question versions (reordered choices, edited stems) are still out of scope. They need the separate Question/lesson-binding contract.
 - Enrichment recipes bind to the frozen pre-cleanup sources in `packs/history/pre-phase1-20261015/`.
 
+## Amendment 2026-10-16: added visuals
+
+- A lesson version may append `figure`, `hotspot` and `map` blocks. Each must pass its renderer schema (embedded SVG/PNG/WebP/JPEG data URI up to 200 KB, no scripts, handlers or external references in SVG), with alt text, caption, `credit` and `longDescription`. Published figures still change only their text; visuals are never replaced through a correction.
+- Covered by `tests/unit/lesson-version-visual-addition.test.ts`.
+
 ## Validation
 
 `tests/unit/lesson-correction-policy.test.ts` covers replace, remove, unlisted change, stale hash, type change, no-op and append-only compatibility. `tests/integration/lesson-correction-import.test.ts` runs import plus Admin Direct publication on a migrated database.
