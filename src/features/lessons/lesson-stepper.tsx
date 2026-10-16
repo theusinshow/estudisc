@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useLessonResume } from "./resume-provider";
 import { restoredStep } from "./resume-contracts";
+import { playStepTransition } from "@/components/motion/step-transition";
 
 export type LessonStep = { id: string; kind: "intro" | "concept" | "example" | "warning" | "summary" | "check" | "practice" | "exit" | "interaction" | "figure" | "prediction"; label: string; node: ReactNode };
 export type LessonCompletion = Readonly<{ trackHref: string; nextLesson?: Readonly<{ href: string; title: string }> }>;
@@ -33,8 +34,12 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
   // Read after hydration: the server always renders step 1, so the hidden attributes match.
   // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time sync from the URL, not derived state
   useEffect(() => { if (ownsUrl && window.location.hash) setIndex(stepFromHash(window.location.hash, steps.length)); }, [ownsUrl, steps.length]);
+  const stepRefs = useRef<Array<HTMLElement | null>>([]);
   const go = (next: number) => {
+    const direction = next >= index ? 1 : -1;
     setIndex(next);
+    // The target step is mounted (hidden); reveal it, then slide it in from the side of travel.
+    requestAnimationFrame(() => playStepTransition(next >= steps.length ? top.current?.querySelector<HTMLElement>(".lesson-complete") : stepRefs.current[next], direction));
     resume?.update({ stepId: steps[next]?.id ?? null, completed: next >= steps.length });
     if (ownsUrl) window.history.replaceState(null, "", next >= steps.length ? DONE_HASH : `#passo-${next + 1}`);
     // Scroll the window (not an inner container) only when the step start left the viewport.
@@ -47,6 +52,11 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
 
   return (
     <div className="lesson-stepper" ref={top} data-mode={showAll ? "all" : "step"}>
+      {/* Notebook margin (desktop only): every part of the lesson, free navigation, current step marked. */}
+      {steps.length > 1 && <ol className="stepper-outline" aria-label="Partes da aula">
+        {steps.map((step, position) => <li key={step.id}><button type="button" disabled={!ready} aria-current={!done && position === index ? "step" : undefined} data-done={position < index || undefined} onClick={() => go(position)}><span>{String(position + 1).padStart(2, "0")}</span><span>{step.label}</span></button></li>)}
+      </ol>}
+      <div className="stepper-main">
       {!ready && <p role="status">Carregando controles da aula…</p>}
       {restored.stale && <p role="status">O passo salvo não está disponível. Retomamos o primeiro passo desta versão.</p>}
       <div className="stepper-head">
@@ -55,7 +65,7 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
         {!showAll && <progress className="stepper-bar" value={Math.min(index + 1, steps.length)} max={steps.length} aria-label="Progresso da aula" />}
       </div>
       {steps.map((step, position) => (
-        <section className="lesson-step" data-kind={step.kind} key={step.id} hidden={!showAll && position !== index} aria-label={step.label}>
+        <section className="lesson-step" data-kind={step.kind} key={step.id} hidden={!showAll && position !== index} aria-label={step.label} ref={element => { stepRefs.current[position] = element; }}>
           {step.node}
         </section>
       ))}
@@ -85,6 +95,7 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
           <button type="button" disabled={!ready} onClick={() => go(steps.length - 1)}><ArrowLeft aria-hidden="true" />Rever último passo</button>
         </nav>
       )}
+      </div>
     </div>
   );
 }

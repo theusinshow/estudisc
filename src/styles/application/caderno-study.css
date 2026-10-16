@@ -1,0 +1,241 @@
+/* ==========================================================================
+   ADR 0067 phase 1: question session and lesson reading.
+   Answer sheet (bubble + text), correction stamp, progressive help and the
+   lesson reading column. Values come from the canonical tokens only.
+   ========================================================================== */
+
+/* Question: a surface (level 2), not a raised window. */
+.learning-interaction.question-sheet {
+  border-width: var(--estudisc-elevation-surface-border);
+  box-shadow: var(--estudisc-elevation-surface-shadow);
+}
+.question-sheet h3 { font-size: var(--estudisc-typography-scale-lead); line-height: 1.3; }
+.question-sheet .answer-keys-hint { font-weight: 500; }
+@media (hover: none) { .question-sheet .answer-keys-hint { display: none; } }
+
+/* Answer sheet row: the native radio covers the whole row (click, touch, arrows) and stays invisible. */
+.learning-answer.answer-row {
+  position: relative;
+  gap: var(--estudisc-spacing-8);
+  min-height: var(--estudisc-size-answer-min-height);
+  border-width: var(--estudisc-elevation-surface-border);
+  background: var(--estudisc-color-paper);
+  font-size: var(--estudisc-typography-scale-body);
+  line-height: 1.4;
+}
+.learning-answer.answer-row input {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.answer-row .answer-text { min-width: 0; overflow-wrap: anywhere; }
+.answer-bubble {
+  position: relative;
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: var(--estudisc-spacing-20);
+  height: var(--estudisc-spacing-20);
+  border: var(--estudisc-elevation-surface-border) solid var(--estudisc-color-ink);
+  border-radius: 50%;
+  background: var(--estudisc-color-panel);
+}
+.answer-bubble-fill {
+  position: absolute;
+  inset: var(--estudisc-spacing-1);
+  border-radius: 50%;
+  background: var(--estudisc-color-ink);
+  transform: scale(0);
+  transition: transform var(--estudisc-motion-ui) var(--estudisc-motion-ease-out);
+}
+.answer-bubble-letter {
+  position: relative;
+  font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace;
+  font-size: var(--estudisc-typography-scale-meta);
+  font-weight: var(--estudisc-typography-technical-weights-bold);
+}
+.learning-answer.answer-row:has(input:checked) {
+  background: var(--estudisc-color-panel);
+  box-shadow: var(--estudisc-elevation-surface-shadow);
+  font-weight: var(--estudisc-typography-body-weights-bold);
+}
+.answer-row:has(input:checked) .answer-bubble-fill { transform: scale(1); }
+.answer-row:has(input:checked) .answer-bubble-letter { color: var(--estudisc-color-paper); }
+.answer-row:has(input:focus-visible) {
+  outline: var(--estudisc-focus-width) var(--estudisc-focus-style) var(--estudisc-focus-color);
+  outline-offset: var(--estudisc-focus-offset);
+}
+.answer-sheet-field:disabled .answer-row { cursor: progress; }
+
+/* Explicit confirmation is the dominant action of the question (level 3). */
+.question-sheet form > .primary-button {
+  border-width: var(--estudisc-elevation-action-border);
+  box-shadow: var(--estudisc-elevation-action-shadow);
+}
+
+/* Correction stamp: text + icon, never color alone. */
+.question-sheet .learning-feedback {
+  position: relative;
+  display: grid;
+  gap: var(--estudisc-spacing-2);
+  border-width: var(--estudisc-elevation-surface-border);
+  background: var(--estudisc-color-panel);
+  box-shadow: var(--estudisc-elevation-surface-shadow);
+  animation: none;
+}
+.question-sheet .learning-feedback strong::before { content: none; }
+.question-sheet .learning-feedback p { margin: 0; }
+.answer-stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  gap: var(--estudisc-spacing-3);
+  margin-bottom: var(--estudisc-spacing-4);
+  padding: var(--estudisc-spacing-2) var(--estudisc-spacing-6);
+  border: var(--estudisc-elevation-action-border) solid currentColor;
+  border-radius: var(--estudisc-radius-sm);
+  color: var(--estudisc-color-info);
+  font-size: var(--estudisc-typography-scale-lead);
+  font-stretch: var(--estudisc-typography-width-expanded);
+  font-weight: var(--estudisc-typography-display-weight);
+  letter-spacing: 0.04em;
+  line-height: 1;
+  text-transform: uppercase;
+  transform: rotate(var(--estudisc-motion-stamp-rotation));
+  animation: estudisc-stamp var(--estudisc-motion-stamp) var(--estudisc-motion-ease-out);
+}
+.answer-stamp svg { width: var(--estudisc-icon-lg); height: var(--estudisc-icon-lg); stroke-width: 3; }
+.answer-stamp[data-result="correct"] { color: var(--estudisc-color-success); }
+.answer-stamp[data-result="incorrect"] { color: var(--estudisc-color-warning); }
+@keyframes estudisc-stamp {
+  from { opacity: 0; transform: rotate(0deg) scale(1.2); }
+  to { opacity: 1; transform: rotate(var(--estudisc-motion-stamp-rotation)) scale(1); }
+}
+
+/* Progressive help disclosures. */
+.question-sheet .question-aids { display: grid; gap: var(--estudisc-spacing-6); justify-items: start; }
+.aid-disclosure { display: grid; gap: var(--estudisc-spacing-4); justify-self: stretch; }
+.question-sheet .question-aids .aid-toggle {
+  justify-content: flex-start;
+  width: 100%;
+  min-height: var(--estudisc-touch-minimum);
+  border: 0;
+  border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink);
+  border-radius: 0;
+  padding-inline: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.question-sheet .question-aids .aid-toggle:not(:disabled):hover,
+.question-sheet .question-aids .aid-toggle:not(:disabled):active { transform: none; box-shadow: none; }
+.aid-chevron { margin-left: auto; transition: transform var(--estudisc-motion-ui-fast) var(--estudisc-motion-ease-out); }
+.aid-disclosure[data-open] .aid-chevron { transform: rotate(180deg); }
+.question-sheet .learning-hint {
+  border: 0;
+  border-left: var(--estudisc-elevation-action-border) solid var(--estudisc-color-ink);
+  border-radius: 0;
+  background: var(--estudisc-color-panel);
+}
+.question-sheet .question-aids svg { width: var(--estudisc-icon-md); height: var(--estudisc-icon-md); }
+
+/* Lesson: subject identification tab, large title, reading column. */
+.lesson-article .subject-tab {
+  border-width: var(--estudisc-elevation-surface-border);
+  border-radius: var(--estudisc-radius-sm) var(--estudisc-radius-sm) 0 0;
+  background: var(--subject, var(--estudisc-color-panel));
+}
+.lesson-article #lesson-title { font-stretch: var(--estudisc-typography-width-expanded); font-weight: var(--estudisc-typography-display-weight); }
+.lesson-step > .lesson-text, .lesson-step .lesson-text {
+  max-width: var(--estudisc-typography-reading-measure);
+  font-size: var(--estudisc-typography-scale-body);
+  line-height: var(--estudisc-typography-reading-leading);
+}
+@media (min-width: 768px) { .lesson-step > .lesson-text, .lesson-step .lesson-text { font-size: var(--estudisc-typography-scale-body-wide); } }
+
+/* Callouts: concept and summary are structure (a rule, no box); examples sit on exam-grid paper. */
+.lesson-step .lesson-callout[data-variant="concept"],
+.lesson-step .lesson-callout[data-variant="summary"],
+.lesson-step .lesson-callout[data-variant="note"] {
+  max-width: var(--estudisc-typography-reading-measure);
+  padding: var(--estudisc-spacing-8) 0 0;
+  border: 0;
+  border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink);
+  border-radius: 0;
+  background: none;
+  box-shadow: var(--estudisc-elevation-structure-shadow);
+}
+.lesson-step .lesson-callout[data-variant="example"],
+.lesson-step .lesson-callout[data-variant="worked-example"] {
+  border-width: var(--estudisc-elevation-surface-border);
+  box-shadow: var(--estudisc-elevation-surface-shadow);
+  background-color: var(--estudisc-color-panel);
+  background-image:
+    linear-gradient(var(--estudisc-pattern-grid-color) var(--estudisc-pattern-grid-line), transparent var(--estudisc-pattern-grid-line)),
+    linear-gradient(90deg, var(--estudisc-pattern-grid-color) var(--estudisc-pattern-grid-line), transparent var(--estudisc-pattern-grid-line));
+  background-size: var(--estudisc-pattern-grid-cell) var(--estudisc-pattern-grid-cell);
+}
+.lesson-step .lesson-callout[data-variant="warning"] {
+  border-width: var(--estudisc-elevation-surface-border);
+  background: var(--estudisc-color-panel);
+  box-shadow: inset var(--estudisc-border-accent) 0 0 var(--estudisc-color-warning), var(--estudisc-elevation-surface-shadow);
+}
+.lesson-step .lesson-callout p { line-height: var(--estudisc-typography-reading-leading); }
+
+/* Stepper: thin bar on top (mobile), notebook margin outline on desktop. */
+progress.stepper-bar { height: var(--estudisc-spacing-4); border-width: var(--estudisc-elevation-structure-border); }
+.stepper-count { font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-size: var(--estudisc-typography-scale-meta); font-variant-numeric: tabular-nums; }
+.stepper-count strong { font-family: var(--font-archivo), "Archivo", system-ui, sans-serif; }
+.stepper-outline { display: none; }
+.stepper-main { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--estudisc-spacing-10); min-width: 0; }
+@media (min-width: 1200px) {
+  .lesson-stepper[data-mode="step"]:has(> .stepper-outline) { grid-template-columns: var(--estudisc-layout-grid-margin-column) minmax(0, 1fr); column-gap: var(--estudisc-layout-grid-desktop-gutter); align-items: start; }
+  .lesson-stepper[data-mode="step"] > .stepper-outline {
+    position: sticky;
+    top: var(--estudisc-spacing-32);
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink);
+  }
+  .lesson-stepper[data-mode="step"]:has(> .stepper-outline) progress.stepper-bar { display: none; }
+}
+.stepper-outline button {
+  display: grid;
+  grid-template-columns: var(--estudisc-spacing-16) minmax(0, 1fr);
+  align-items: center;
+  width: 100%;
+  min-height: var(--estudisc-touch-minimum);
+  padding: 0;
+  border: 0;
+  border-bottom: var(--estudisc-border-hair) solid var(--estudisc-color-ink);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--estudisc-color-ink);
+  font: inherit;
+  font-size: var(--estudisc-typography-scale-meta);
+  font-weight: var(--estudisc-typography-body-weights-semibold);
+  text-align: left;
+  cursor: pointer;
+}
+.stepper-outline button:not(:disabled):hover, .stepper-outline button:not(:disabled):active { transform: none; box-shadow: none; text-decoration: underline; }
+.stepper-outline button > span:first-child { font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+.stepper-outline button[aria-current="step"] { font-weight: var(--estudisc-typography-display-weight); }
+.stepper-outline button[aria-current="step"] { box-shadow: inset var(--estudisc-border-nav-active) 0 0 var(--estudisc-color-ink); padding-left: var(--estudisc-spacing-4); }
+.stepper-outline button[data-done] { color: var(--estudisc-color-dim); }
+
+/* Session result: a real tally (answers, corrects) and what comes back for review. */
+.session-tally { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-8) var(--estudisc-spacing-16); margin: 0; padding: 0; list-style: none; font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-size: var(--estudisc-typography-scale-meta); }
+.session-tally li { display: grid; gap: var(--estudisc-spacing-1); }
+.session-result .session-tally strong { font-family: var(--font-archivo), "Archivo", system-ui, sans-serif; font-size: var(--estudisc-typography-scale-display); font-stretch: var(--estudisc-typography-width-expanded); font-weight: var(--estudisc-typography-display-weight); line-height: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .answer-bubble-fill, .aid-chevron { transition: none; }
+  .answer-stamp { animation: none; }
+}

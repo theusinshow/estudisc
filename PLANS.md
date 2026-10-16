@@ -10,7 +10,7 @@ Phases and acceptance:
 3. Landing + sign-in (`-f3`): asymmetric hero with a solvable real sample question; mono stat line; receipt-style price with real deadline; countdown from accessLastDay.
 4. Progress/profile + QA (`-f4`): report card by subject (mastery 0–5 ink + label), charts with table alternative; contrast/focus audit; screenshots 390/1440.
 
-Status: phase 0 in progress. NEXT ACTION: open PR 1, then start phase 1 on a stacked branch.
+Status: phase 0 PR #50; phase 1 implemented on `feat/front-caderno-de-prova-f1`. Known pre-existing failure: rollout suite `review-mistake-loop` fails identically on the phase-0 base (alternate Question textbox empty after fill). NEXT ACTION: phase 2 (Today + review).
 ## Past exams answer sheet — ADR 0066 (2026-10-16, Claude, branch feat/past-exams-20261016)
 
 Spec: `docs/superpowers/specs/2026-10-16-past-exams-answer-sheet-design.md`. Plan: `docs/superpowers/plans/2026-10-16-past-exams-answer-sheet.md`. Tasks 1–6 are implemented and committed locally (contracts and scorer, SQL repository and migration 0022, memory parity, API and card DTO, catalog and converter, UI). Task 7 covers docs and full gates.

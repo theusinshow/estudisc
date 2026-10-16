@@ -13,16 +13,18 @@ import { getTodayDashboard } from "@/features/today/get-today-dashboard";
 import { getLessonResume } from "@/features/lessons/resume-api";
 import { LessonResumeProvider } from "@/features/lessons/resume-provider";
 import { AiActionControl } from "@/features/ai/action-control";
+import { CountUp } from "@/components/motion/count-up";
 export const dynamic="force-dynamic";
 const statusLabel:Record<string,string>={PLANNED:"Pronta para começar",ACTIVE:"Em andamento",COMPLETED:"Concluída",ABANDONED:"Encerrada"};
 export default async function StudyPage({params}:{params:Promise<{sessionId:string}>}){
   const {sessionId}=await params;if(!z.uuid().safeParse(sessionId).success)notFound();
   const result=await studySessionRepository().result(await getOwnerId(),sessionId);if(!result)notFound();
   const {session,items}=result;const completed=session.status==="COMPLETED";
-  const next=completed?(await getTodayDashboard()).nextAction:undefined;
+  const today=completed?await getTodayDashboard():undefined;const next=today?.nextAction;const dueReviews=today?.dueReviews.length??0;
   return <AppShell mode={session.status === "ACTIVE" && getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? "focus" : "page"} exit={{ href: "/", label: "Voltar para Hoje" }}><article className="foundation-panel content-panel study-session" data-status={session.status}>
     <header className="study-header"><p className="eyebrow">Sessão de {session.budgetMinutes} min · {statusLabel[session.status]??session.status}</p><h1>{completed?"Seu estudo de hoje":"Vamos estudar"}</h1></header>
-    {completed&&<section className="session-result" aria-label="Resultado da sessão"><p><strong>{result.answered} {result.answered===1?"questão respondida":"questões respondidas"}</strong> · {result.correct} {result.correct===1?"correta":"corretas"} · {result.attempts} {result.attempts===1?"tentativa":"tentativas"}.</p><p>Concluir registra sua participação. O domínio de cada conceito vem das suas respostas ao longo das revisões.</p><Link className="primary-action" href="/review">Conferir revisões</Link></section>}
+    {completed&&<section className="session-result" aria-label="Resultado da sessão"><ul className="session-tally"><li><strong><CountUp value={result.answered}/></strong> {result.answered===1?"questão respondida":"questões respondidas"}</li><li><strong><CountUp value={result.correct}/></strong> {result.correct===1?"correta":"corretas"}</li><li><strong><CountUp value={result.attempts}/></strong> {result.attempts===1?"tentativa":"tentativas"}</li></ul>
+      <p>{dueReviews>0?`Voltam para revisão agora: ${dueReviews} ${dueReviews===1?"conceito":"conceitos"}.`:"Nenhum conceito com revisão pendente agora."}</p><p>Concluir registra sua participação. O domínio de cada conceito vem das suas respostas ao longo das revisões.</p><Link className="primary-action" href="/review">Conferir revisões</Link></section>}
     {completed&&<section className="session-facts" aria-label="Resumo factual"><p>{result.summary.plannedMinutes} min estimados de atividades · orçamento de {result.summary.budgetMinutes} min.</p>{result.summary.wallMinutes!==null&&<p>{Math.round(result.summary.wallMinutes)} min entre início e fim, incluindo pausas.</p>}
       {result.summary.independentConcepts.length>0&&<p>Prática independente registrada: {result.summary.independentConcepts.map(concept=>concept.title).join(" · ")}.</p>}
       {result.summary.reviewedConcepts>0&&<p>{result.summary.reviewedConcepts} conceito(s) com recuperação posterior registrada.</p>}
