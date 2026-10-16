@@ -4,10 +4,14 @@
   "private": true,
   "description": "Estudisc — Evidence-based learning and IFSC preparation",
   "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "estudisc-content": "tsx tools/estudisc-content-studio/cli.ts",
     "vecta-content": "tsx tools/vecta-content-studio/cli.ts",
     "dev": "next dev",
+    "start": "next start",
     "validate:packs": "node scripts/validate-packs.mjs",
     "packs:verify": "node scripts/verify-pack-catalog.mjs",
     "generate:tokens": "node scripts/generate-design-tokens.mjs",
