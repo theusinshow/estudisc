@@ -12,6 +12,8 @@ import { LiveLessonProgress } from "@/features/progress/live-progress-summary";
 import { LessonSteps } from "@/features/lessons/lesson-steps";
 import { getTrack } from "@/features/tracks/api";
 import { getLessonResume } from "@/features/lessons/resume-api";
+import { canAccessLesson, resolveAccessState } from "@/features/payments/access-guard";
+import { PaywallPanel } from "@/features/payments/paywall-panel";
 
 type LessonPageProps = Readonly<{
   params: Promise<{ lessonId: string }>;
@@ -23,10 +25,20 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
   const query = await searchParams;
   const requestedVersion = query?.version === undefined ? undefined : typeof query.version === "string" ? z.coerce.number().int().positive().max(2147483647).safeParse(query.version) : { success: false as const };
   if (requestedVersion && !requestedVersion.success) notFound();
-  const lesson = await getLesson(lessonId, requestedVersion?.success ? requestedVersion.data : undefined);
+  const [lesson, access] = await Promise.all([
+    getLesson(lessonId, requestedVersion?.success ? requestedVersion.data : undefined),
+    resolveAccessState()
+  ]);
 
   if (!lesson) {
     notFound();
+  }
+  if (!canAccessLesson(lesson.stableId, access)) {
+    return (
+      <AppShell mode="page" exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha" }}>
+        <PaywallPanel lockedLessonTitle={lesson.title} />
+      </AppShell>
+    );
   }
   const [progress, track] = await Promise.all([
     getLessonProgress(lesson.stableId, lesson.concepts.map((concept) => concept.stableId)),

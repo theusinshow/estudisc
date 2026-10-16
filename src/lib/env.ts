@@ -49,6 +49,8 @@ export const serverEnvSchema = z.object({
   ESTUDISC_ACCOUNTS: optionalSecret,
   ESTUDISC_RUN_REAL_POSTGRES_TESTS: z.enum(["0", "1"]).optional(),
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
+  MERCADOPAGO_ACCESS_TOKEN: optionalSecret,
+  MERCADOPAGO_WEBHOOK_SECRET: optionalSecret,
   ...featureFlagsSchema.shape
 });
 
@@ -81,6 +83,8 @@ export function getServerEnv(source: Record<string, string | undefined> = proces
     ESTUDISC_ACCOUNTS: source.ESTUDISC_ACCOUNTS ?? source.KNOW_OS_ACCOUNTS,
     ESTUDISC_RUN_REAL_POSTGRES_TESTS: source.ESTUDISC_RUN_REAL_POSTGRES_TESTS ?? source.KNOW_OS_RUN_REAL_POSTGRES_TESTS,
     LOG_LEVEL: source.LOG_LEVEL,
+    MERCADOPAGO_ACCESS_TOKEN: source.MERCADOPAGO_ACCESS_TOKEN,
+    MERCADOPAGO_WEBHOOK_SECRET: source.MERCADOPAGO_WEBHOOK_SECRET,
     ...Object.fromEntries(Object.keys(featureFlagsSchema.shape).map(name => [name, source[name]]))
   });
 }

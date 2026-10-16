@@ -15,7 +15,8 @@ export const featureFlagsSchema = z.object({
   FEATURE_KNOWLEDGE_MAP: flag,
   FEATURE_SMART_MISTAKES: flag,
   FEATURE_REAL_EXAM: flag,
-  FEATURE_CONTENT_HEALTH: flag
+  FEATURE_CONTENT_HEALTH: flag,
+  FEATURE_PAID_ACCESS: flag
 });
 
 export type FeatureFlags = z.infer<typeof featureFlagsSchema>;
