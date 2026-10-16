@@ -3,6 +3,7 @@ import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 import type * as schema from "@/db/schema";
 import { activities, concepts, contentBlocks, contentReleases, lessonConcepts, lessons, modules, packImports, questionVersions, questions, tracks } from "@/db/schema";
 import { resolveLessonVersionContext, targetedResult } from "@/features/import/application/lesson-version-policy";
+import { trackPackV2Schema } from "@/features/import/application/track-pack-v2-schema";
 import { LessonVersionConflictError, type LessonVersionPack } from "@/features/import/application/lesson-version-contracts";
 import { hashCanonicalJson } from "@/lib/canonical-json";
 type Database = PgDatabase<PgQueryResultHKT, typeof schema>;
@@ -21,10 +22,17 @@ export async function executeLessonVersion(db: Database, actorId: string, pack: 
     if (!track) throw new LessonVersionConflictError("Target Track not found");
     if (await receipt()) return targetedResult(pack, "already_imported");
     // Only snapshots of the target Track version can be the context; filtering in SQL avoids transferring every manifest.
-    const contexts = await tx.select({ manifest: packImports.manifest }).from(packImports)
+    // Only snapshots of the target Track version qualify. List their ids newest first and load manifests one at a
+    // time: every import adds a snapshot, so loading them all would grow the transfer with each lesson version.
+    const candidates = await tx.select({ id: packImports.id }).from(packImports)
       .where(sql`${packImports.manifest}->'track'->>'id' = ${pack.target.trackId} and ${packImports.manifest}->>'version' = ${String(pack.target.trackVersion)}`)
       .orderBy(desc(packImports.importedAt), desc(packImports.id));
-    const { base, projection } = resolveLessonVersionContext(contexts.map(row => row.manifest), pack);
+    const contexts: unknown[] = [];
+    for (const candidate of candidates) {
+      const [row] = await tx.select({ manifest: packImports.manifest }).from(packImports).where(eq(packImports.id, candidate.id));
+      if (trackPackV2Schema.safeParse(row?.manifest).success) { contexts.push(row.manifest); break; }
+    }
+    const { base, projection } = resolveLessonVersionContext(contexts, pack);
     const [moduleRow] = await tx.select().from(modules).where(and(eq(modules.trackId, track.id), eq(modules.stableId, pack.target.moduleId)));
     if (!moduleRow) throw new LessonVersionConflictError("Target module not found");
     const [source] = await tx.select().from(lessons).where(and(eq(lessons.moduleId, moduleRow.id), eq(lessons.stableId, base.id), eq(lessons.contentVersion, base.version)));
