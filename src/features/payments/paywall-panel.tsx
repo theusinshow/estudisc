@@ -25,7 +25,7 @@ export function PaywallPanel({
     initialStatus === "confirming"
       ? {
           tone: "info",
-          text: "Confirmando seu pagamento no Mercado Pago. Assim que o Pix ou cartão for aprovado, seu acesso vitalício será liberado automaticamente."
+          text: "Confirmando seu pagamento no Mercado Pago. Assim que o Pix ou cartão for aprovado, seu acesso até a prova será liberado automaticamente."
         }
       : initialStatus === "failure"
         ? {
@@ -102,7 +102,7 @@ export function PaywallPanel({
       if (response.ok) {
         setFeedback({
           tone: "success",
-          text: "Acesso vitalício liberado em modo de teste! Redirecionando..."
+          text: "Acesso liberado em modo de teste! Redirecionando..."
         });
         navigateTo("/plan");
         return;
@@ -137,7 +137,7 @@ export function PaywallPanel({
       }
       setFeedback({
         tone: "success",
-        text: "Bolsa / convite ativado com sucesso! Todas as aulas e questões foram liberadas para sempre."
+        text: "Bolsa / convite ativado com sucesso! Todas as aulas e questões foram liberadas até a prova."
       });
       navigateTo("/plan");
     } catch {
@@ -149,7 +149,7 @@ export function PaywallPanel({
 
   return (
     <section className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="paywall-title">
-      <p className="eyebrow">Acesso Completo Vitalício · Projeto Social Estudisc</p>
+      <p className="eyebrow">Acesso completo até a prova · Projeto social Estudisc</p>
       <h1 id="paywall-title">
         {lockedLessonTitle
           ? `Desbloqueie "${lockedLessonTitle}" e todo o curso IFSC`
@@ -157,7 +157,7 @@ export function PaywallPanel({
       </h1>
       <p>
         Pagamento único de <strong>R$ {LIFETIME_PRICE_BRL},00</strong> via <strong>Pix ou cartão no Mercado Pago</strong>.
-        Sem mensalidade e sem cobranças recorrentes: você paga uma única vez e tem acesso completo para sempre.
+        Sem mensalidade e sem cobranças recorrentes: você paga uma única vez e tem acesso completo até o dia da prova (29/11/2026).
       </p>
 
       {feedback ? (
@@ -173,7 +173,7 @@ export function PaywallPanel({
           disabled={busy}
           onClick={startCheckout}
         >
-          {busy ? "Abrindo Mercado Pago..." : `Liberar acesso vitalício por R$ ${LIFETIME_PRICE_BRL} (Pix ou Cartão)`}
+          {busy ? "Abrindo Mercado Pago..." : `Liberar acesso até a prova por R$ ${LIFETIME_PRICE_BRL} (Pix ou cartão)`}
         </button>
         {initialStatus === "sandbox" && sandboxRef ? (
           <button

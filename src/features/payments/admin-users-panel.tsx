@@ -125,7 +125,7 @@ export function AdminUsersPanel({
       setReason("");
       setFeedback(
         targetAction === "grant"
-          ? "Acesso vitalício concedido com sucesso."
+          ? "Acesso até a prova concedido com sucesso."
           : "Acesso revogado no registro append-only."
       );
       await refreshData();
@@ -147,7 +147,7 @@ export function AdminUsersPanel({
       <section className="foundation-panel" aria-labelledby="saas-summary-title">
         <h2 id="saas-summary-title">Resumo de Alunos e Bolsas</h2>
         <p>
-          Perfis registrados: <strong>{users.length}</strong> · Com acesso vitalício ativo:{" "}
+          Perfis registrados: <strong>{users.length}</strong> · Com acesso ativo:{" "}
           <strong>{entitledCount}</strong> · Códigos de bolsa criados: <strong>{invites.length}</strong>
         </p>
       </section>
@@ -224,7 +224,7 @@ export function AdminUsersPanel({
             value={targetAction}
             onChange={(e) => setTargetAction(e.target.value as "grant" | "revoke")}
           >
-            <option value="grant">Liberar acesso vitalício</option>
+            <option value="grant">Liberar acesso até a prova</option>
             <option value="revoke">Revogar acesso</option>
           </select>
           <label htmlFor="admin-target-reason">Motivo auditado</label>

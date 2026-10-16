@@ -23,7 +23,7 @@ export default async function AdminUsersPage() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <h1>Alunos, Bolsas e Acesso Vitalício (R$ 50)</h1>
+        <h1>Alunos, bolsas e acesso até a prova (R$ 50)</h1>
         <Link href="/admin">Voltar à administração</Link>
         <Link href="/">Abrir visão do aluno</Link>
       </header>
