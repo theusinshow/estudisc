@@ -33,7 +33,7 @@ Sheet template fields:
 
 - `id`, `version`, `title`, `kind`, `trackId` (`ifsc-2027`), `status` (`draft|published|retired`), `durationMinutes` (5–240), `availableAt?`;
 - `exam`: `{ examId, edition, year, variant, appliedOn, examType, publisher }`. Example `examId`: `ifsc-integrado-2025-1`, `ifsc-integrado-2024-1-itajai`;
-- `sheet.items`: `[{ position, subject?, key }]`. `position` runs 1..N with no gaps, N ∈ {20, 24, 28}. `key` ∈ `A|B|C|D|E|ANNULLED`;
+- `items`: `[{ position, key }]`; an item's subject is derived from `subjects`. `position` runs 1..N with no gaps, N ∈ {20, 24, 28}. `key` ∈ `A|B|C|D|E|ANNULLED`;
 - `subjects?`: `[{ name, start, end }]`, non-overlapping and inside 1..N. It is present only when the catalog defines ranges. 2022–2024 must not be forced into the current four-area pattern;
 - `links`: `{ examUrl, answerKeyUrl, sourcePage }`. Each host must be `www.ifsc.edu.br`;
 - `provenance`: `{ catalogDataset, catalogVerifiedAt, catalogSha256, transcriptionNote }`.
@@ -48,12 +48,13 @@ The snapshot schema becomes a discriminated union on `kind`. The existing Questi
 
 ### Responses
 
-Migration on `assessment_responses`:
+`assessment_responses` has the primary key `(instance_id, question_version_id)`, so `question_version_id` cannot become nullable without replacing the key. Sheet answers therefore use a sibling table, `assessment_sheet_responses`:
 
-- add nullable `item_position integer`;
-- make `question_version_id` nullable;
-- add a CHECK constraint so exactly one of `question_version_id` / `item_position` is set;
-- add a unique index on `(instance_id, item_position)` where it is not null.
+- columns `(instance_id → assessment_instances, position integer, answer text null, flagged, first_answered_at, updated_at)`;
+- primary key `(instance_id, position)`;
+- CHECK `answer` ∈ A–E or null.
+
+The existing table is untouched. Instances, templates, the one-ACTIVE-instance-per-owner rule and finalization remain shared.
 
 `save` validates that the position exists in the snapshot, that the value is `A–E` or null (clear), and that the instance is ACTIVE and before its deadline. Flagging ("marcar para revisar") reuses the existing `flagged` flag.
 
@@ -65,6 +66,11 @@ Migration on `assessment_responses`:
 - the result is stored in `assessment_instances.result`: `{ correct, scorable, annulled, blank, bySubject?, byPosition:[{position, answer, key, outcome}] }`;
 - the existing `assessment_finalized` study event is emitted;
 - it creates **no Attempt, no ConceptEvidence and no mastery/review change**. The finalized instance is the immutable attempt record.
+
+### Shared-engine consequences
+
+- A sheet instance uses `mode: "EXAM"`. While it is ACTIVE, the existing EXAM guards block tutor, practice and targeted sessions, which is the intended exam condition. The owner can have only one ACTIVE instance across all kinds, so the start button must explain a 409.
+- `question-asset-repository.ts` parses every owner snapshot as a Question snapshot. It must skip sheet snapshots, or a sheet instance would break asset access.
 
 ### ADR 0066 — Answer-sheet assessments for past exams
 
@@ -103,7 +109,7 @@ It complements ADR 0023 and does not supersede it.
 ### Answer sheet
 
 - Header: timer, an "18/28 respondidas" counter and "Abrir caderno" (new tab; no iframe).
-- Each row has the question number and an A–E radio group. Touch targets are ≥ 44px. Arrow keys change the letter and Tab moves to the next row. Activating the selected letter again clears it. A "marcar para revisar" toggle is available.
+- Each row has the question number and an A–E radio group. Touch targets are ≥ 44px. Each row is a native radio group (fieldset/legend), so arrow keys change the letter and Tab moves to the next row. An explicit "Limpar" button clears the row. A "marcar para revisar" toggle is available.
 - Subject separators appear when `subjects` exists.
 - Each change is saved through the engine's `save`. Reload resumes from the server state.
 - "Finalizar" opens a confirmation listing blank and flagged items. Nothing is corrected before finalization.
