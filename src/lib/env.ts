@@ -51,6 +51,9 @@ export const serverEnvSchema = z.object({
   LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
   MERCADOPAGO_ACCESS_TOKEN: optionalSecret,
   MERCADOPAGO_WEBHOOK_SECRET: optionalSecret,
+  ESTUDISC_SELLER_NAME: optionalSecret,
+  ESTUDISC_SELLER_DOCUMENT: optionalSecret,
+  ESTUDISC_SELLER_EMAIL: z.preprocess((value) => (value === "" ? undefined : value), z.email().optional()),
   ...featureFlagsSchema.shape
 });
 
@@ -85,6 +88,9 @@ export function getServerEnv(source: Record<string, string | undefined> = proces
     LOG_LEVEL: source.LOG_LEVEL,
     MERCADOPAGO_ACCESS_TOKEN: source.MERCADOPAGO_ACCESS_TOKEN,
     MERCADOPAGO_WEBHOOK_SECRET: source.MERCADOPAGO_WEBHOOK_SECRET,
+    ESTUDISC_SELLER_NAME: source.ESTUDISC_SELLER_NAME,
+    ESTUDISC_SELLER_DOCUMENT: source.ESTUDISC_SELLER_DOCUMENT,
+    ESTUDISC_SELLER_EMAIL: source.ESTUDISC_SELLER_EMAIL,
     ...Object.fromEntries(Object.keys(featureFlagsSchema.shape).map(name => [name, source[name]]))
   });
 }

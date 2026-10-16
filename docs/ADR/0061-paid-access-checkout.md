@@ -43,3 +43,10 @@ The owner approved evolving Estudisc into a popular-price social SaaS: **R$ 50,0
 ## Amendment — access until the exam (2026-10-16)
 
 The owner confirmed that a single payment of R$ 50 gives access **until the end of the IFSC 2027/1 exam day** (29/11/2026, Brasília), not lifetime access. Every grant (Mercado Pago payment, scholarship invite, admin grant) records `ends_at = PAID_ACCESS_ENDS_AT` (`2026-11-30T03:00:00Z`) unless a caller passes an explicit end. The product id is `ifsc-2027-1-full`. No entitlements existed yet, so no data migration is needed. A later cohort gets a new product and end date.
+
+## Amendment — public pages and hybrid sign-in (2026-10-16)
+
+- `/conheca` (sales), `/termos` and `/privacidade` are public (`PUBLIC_SITE_PATHS`). A visitor without a session who opens `/` is sent to `/conheca` instead of the sign-in form. While `FEATURE_PAID_ACCESS` is off, the sales page says enrolment opens soon and offers no purchase button.
+- Seller identity on the legal pages comes from `ESTUDISC_SELLER_NAME`, `ESTUDISC_SELLER_DOCUMENT` and `ESTUDISC_SELLER_EMAIL`; until all three are set the pages say the data will be published before sales start.
+- Hybrid sign-in: when code accounts (ADR 0031), Google OAuth and `FEATURE_PAID_ACCESS` are all configured, the proxy and `getOwnerProfile` accept a valid account cookie or a Google session. The sign-in page shows Google first; code profiles stay behind "Tenho um perfil com código", so profile names are not shown to visitors. Without all three, behaviour is unchanged.
+- Published content counts for these pages and the paywall live in `src/features/public-site/content-summary.ts`.

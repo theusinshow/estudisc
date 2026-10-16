@@ -5,7 +5,7 @@ import { getAuthGuardDecision, isPublicRuntimePath,isAdminRuntimePath } from "@/
 import { isGoogleAuthConfigured } from "@/features/auth/auth-readiness";
 import { getServerEnv } from "@/lib/env";
 import { isAllowedMutationOrigin } from "@/features/auth/mutation-origin";
-import { getAccountConfig } from "@/features/auth/account-mode";
+import { getAccountConfig, isHybridSignIn } from "@/features/auth/account-mode";
 import { readAccountSessionFromCookies } from "@/features/auth/code-accounts";
 import {
   applyBaseSecurityHeaders,
@@ -79,10 +79,14 @@ const authProxy = auth((request: AuthenticatedRequest) => {
       }
       return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
     }
-    if (pathname.startsWith("/api/")) return secureResponse(NextResponse.json({ code: "auth_required", message: "Entre com sua conta para continuar." }, { status: 401 }), contentSecurityPolicy);
-    const accountSignInUrl = new URL("/auth/signin", request.url);
-    accountSignInUrl.searchParams.set("callbackUrl", `${request.nextUrl.pathname}${request.nextUrl.search}`);
-    return secureResponse(NextResponse.redirect(accountSignInUrl), contentSecurityPolicy);
+    // Hybrid sign-in (ADR 0061): without an account cookie, fall through to the Google session check below.
+    if (!isHybridSignIn(getServerEnv())) {
+      if (pathname.startsWith("/api/")) return secureResponse(NextResponse.json({ code: "auth_required", message: "Entre com sua conta para continuar." }, { status: 401 }), contentSecurityPolicy);
+      if (pathname === "/") return secureResponse(NextResponse.redirect(new URL("/conheca", request.url)), contentSecurityPolicy);
+      const accountSignInUrl = new URL("/auth/signin", request.url);
+      accountSignInUrl.searchParams.set("callbackUrl", `${request.nextUrl.pathname}${request.nextUrl.search}`);
+      return secureResponse(NextResponse.redirect(accountSignInUrl), contentSecurityPolicy);
+    }
   }
 
   const decision = process.env.NODE_ENV==="production"&&!isGoogleAuthConfigured(getServerEnv())?"forbidden":getAuthGuardDecision(request.auth?.user?.email, getServerEnv());
@@ -109,6 +113,8 @@ const authProxy = auth((request: AuthenticatedRequest) => {
     );
   }
 
+  // Visitors without a session who open the home page see the sales page instead of the sign-in form.
+  if (pathname === "/") return secureResponse(NextResponse.redirect(new URL("/conheca", request.url)), contentSecurityPolicy);
   const signInUrl = new URL("/auth/signin", request.url);
   signInUrl.searchParams.set("callbackUrl", request.nextUrl.href);
   return secureResponse(NextResponse.redirect(signInUrl), contentSecurityPolicy);
