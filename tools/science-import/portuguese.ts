@@ -48,7 +48,11 @@ export function loadPortugueseInputs(root: string) {
   const originals = Array.from({ length: 24 }, (_, index) => {
     const lessonId = `POR-${String(index + 1).padStart(2, "0")}`;
     const bytes = readFileSync(resolve(sourceRoot, `workspace/${lessonId}/approved/pack.json`));
-    const original = portuguesePackSchema.parse(JSON.parse(bytes.toString("utf8")));
+    const { raw, blockIds } = splitBlockIds(JSON.parse(bytes.toString("utf8")));
+    const pinned = blockIds.filter((id): id is string => id !== undefined);
+    assert(pinned.length === 0 || pinned.length === blockIds.length, `Pin every block id or none in ${lessonId}`);
+    assert(pinned.every(id => id.startsWith(`${lessonId}-B`)) && new Set(pinned).size === pinned.length, `Invalid block ids in ${lessonId}`);
+    const original = portuguesePackSchema.parse(raw);
     const authorBytes = readFileSync(resolve(sourceRoot, "workspace/" + lessonId + "/author/questions.json"));
     const authored = authoredQuestionsSchema.parse(JSON.parse(authorBytes.toString("utf8")));
     assert.equal(original.lesson.id, lessonId);
@@ -94,7 +98,7 @@ export function loadPortugueseInputs(root: string) {
           else if ("term" in item) { assert(original.lesson.conceptRefs.includes(item.conceptRef)); paragraphs.push(item.term); }
           else paragraphs.push("❌ " + item.claim, "✅ " + item.instruction);
         }
-        return { id: `${lessonId}-B${String(index + 1).padStart(2, "0")}`, type: block.type === "SUMMARY" ? "SUMMARY" as const : block.type === "WORKED_EXAMPLE" ? "WORKED_EXAMPLE" as const : "EXPLANATION" as const, title: "title" in block ? block.title : ({ LEARNING_GOALS: "Objetivos de aprendizagem", KEY_TERMS: "Termos essenciais", MISCONCEPTION_CHECK: "Verificação de concepções", WORKED_EXAMPLE: "Exemplo comentado", IFSC_STRATEGY: "Estratégia para o IFSC", SUMMARY: "Resumo", EXIT_TICKET: "Verificação de aprendizagem" } as Record<string, string>)[block.type], content: paragraphs.join("\n\n") };
+        return { id: blockIds[index] ?? `${lessonId}-B${String(index + 1).padStart(2, "0")}`, type: block.type === "SUMMARY" ? "SUMMARY" as const : block.type === "WORKED_EXAMPLE" ? "WORKED_EXAMPLE" as const : "EXPLANATION" as const, title: "title" in block ? block.title : ({ LEARNING_GOALS: "Objetivos de aprendizagem", KEY_TERMS: "Termos essenciais", MISCONCEPTION_CHECK: "Verificação de concepções", WORKED_EXAMPLE: "Exemplo comentado", IFSC_STRATEGY: "Estratégia para o IFSC", SUMMARY: "Resumo", EXIT_TICKET: "Verificação de aprendizagem" } as Record<string, string>)[block.type], content: paragraphs.join("\n\n") };
       }) },
       questions: original.questions.map(question => ({ id: question.id, type: "MULTIPLE_CHOICE_SINGLE", stem: question.stimulus ? `${question.stimulus}\n\n${question.stem}` : question.stem, options: question.options.map(option => ({ key: option.id, text: option.text })), correctOption: question.correctOption, explanation: question.explanation, difficulty: question.difficulty.toUpperCase() as "FOUNDATION" | "DIRECT" | "APPLIED" | "IFSC", cognitiveOperation: ({ recognize: "UNDERSTAND", understand: "UNDERSTAND", discriminate: "ANALYZE", analyze: "ANALYZE", apply: "APPLY", evaluate: "EVALUATE", diagnose_error: "ANALYZE", analyze_context: "ANALYZE" } as const)[question.cognitiveOperation], conceptIds: question.concepts, targetedError: question.targetedError, provenance: "ORIGINAL_VECTA_GROUNDED_V2" }))
     };
@@ -105,6 +109,12 @@ export function loadPortugueseInputs(root: string) {
   assert.equal(stimuli.length, originals.flatMap(row => row.original.questions).filter(question => question.version === 2).length, "Expected one hand-authored stimulus per rewritten Question");
   return { inputs, originals, concepts, stimuli };
 }
+/** A source block may pin its published id (kept when blocks are inserted); otherwise ids follow block order. */
+export function splitBlockIds(raw: { lesson: { blocks: { id?: string }[] } }) {
+  const blockIds = raw.lesson.blocks.map(block => { const id = block.id; delete block.id; return id; });
+  return { raw, blockIds };
+}
+
 export function buildPortuguesePack(root: string, lessonIds: string[], snapshotVersion: number) {
   const { inputs, originals, concepts, stimuli } = loadPortugueseInputs(root);
   const result = buildEditorialPack(root, lessonIds, snapshotVersion, inputs, PORTUGUESE_PROFILE);
