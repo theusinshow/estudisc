@@ -7,7 +7,12 @@ export const lessonVersionPackSchema = z.object({
   authorId: id,
   target: z.object({ trackId: id, trackVersion: version, moduleId: id, lessonId: id, baseVersion: version, baseHash: hash }).strict(),
   lesson: trackPackV2Schema.shape.track.shape.modules.element.shape.lessons.element.extend({ version }),
-  questionReferences: z.array(z.object({ id, version, hash }).strict()).max(200)
+  questionReferences: z.array(z.object({ id, version, hash }).strict()).max(200),
+  // ADR 0062: optional correction of listed published blocks; absent means append-only enrichment.
+  corrections: z.object({
+    reason: z.string().trim().min(10).max(500),
+    blocks: z.array(z.object({ blockId: id, action: z.enum(["replace", "remove"]), baseBlockHash: hash }).strict()).min(1).max(200)
+  }).strict().optional()
 }).strict();
 export type LessonVersionPack = z.infer<typeof lessonVersionPackSchema>;
 export class LessonVersionConflictError extends Error { constructor(message: string) { super(message); this.name = "LessonVersionConflictError"; } }
