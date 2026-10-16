@@ -6,299 +6,378 @@
       "id": "POR-12-Q01",
       "lessonId": "POR-12",
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Voz ativa, passiva e foco da informação em uso real da língua?",
+      "stem": "Na frase sobre a revisão, qual termo ocupa a posição de sujeito e realiza a ação?",
       "options": [
         {
           "id": "A",
-          "text": "A passiva sempre informa quem agiu."
+          "text": "Os painéis, núcleo paciente que recebeu a revisão da equipe.",
+          "targetsError": "conceptual",
+          "rationale": "Os painéis recebem a ação e são objeto direto; equipe realiza a revisão."
         },
         {
           "id": "B",
-          "text": "Qualquer verbo aceita passiva."
+          "text": "A equipe, grupo que revisou os painéis antes da chegada das famílias."
         },
         {
           "id": "C",
-          "text": "Ativa e passiva têm sempre o mesmo efeito discursivo."
+          "text": "A equipe de estudantes, sujeito que revisou os painéis antes da chegada.",
+          "targetsError": "attention",
+          "rationale": "Os estudantes realizam outras ações; o sujeito de revisou é a equipe."
         },
         {
           "id": "D",
-          "text": "Na voz ativa, o sujeito gramatical geralmente corresponde ao participante apresentado como agente em verbos compatíveis."
+          "text": "A professora, sujeito que revisou os painéis ao lado da porta.",
+          "targetsError": "interpretation",
+          "rationale": "A professora confere a iluminação em outra oração; equipe é sujeito de revisou."
         },
         {
           "id": "E",
-          "text": "Toda frase com “ser” está na passiva."
+          "text": "As famílias, sujeito que chegou antes da revisão e organizou a abertura.",
+          "targetsError": "attention",
+          "rationale": "As famílias são mencionadas como visitantes esperadas, não como agentes da revisão."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Na voz ativa, o sujeito gramatical geralmente corresponde ao participante apresentado como agente em verbos compatíveis.",
+      "correctOption": "B",
+      "explanation": "A equipe realiza a revisão e aparece como sujeito de revisou. Os painéis são o que foi revisado; confundir o participante afetado com quem executa a ação muda a relação entre os termos da frase.",
       "difficulty": "foundation",
       "cognitiveOperation": "recognize",
       "concepts": [
         "POR-12-C01"
       ],
-      "targetedError": "Toda frase com “ser” está na passiva.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Trocar o participante afetado pela ação por quem a executou.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Notícia fictícia do mural da Escola dos Ventos, escrita por Sérgio Paiva em 10 de março de 2026: a equipe revisou os painéis da exposição antes da chegada das famílias. Os estudantes verificaram as legendas, limparam as molduras e alinharam as mesas no salão. A professora conferiu a iluminação ao lado da porta, enquanto dois monitores distribuíam mapas do percurso. A abertura ocorreu às dez, e a direção registrou a presença de visitantes de três bairros."
     },
     {
       "id": "POR-12-Q02",
       "lessonId": "POR-12",
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Voz ativa, passiva e foco da informação, qual princípio deve orientar a análise?",
+      "stem": "Na primeira frase, que papel sintático tem o resultado do concurso?",
       "options": [
         {
           "id": "A",
-          "text": "Na passiva analítica, o participante afetado pode ocupar a posição de sujeito, com auxiliar “ser” e particípio."
+          "text": "Ele é o agente da passiva, indicado pelo grupo pela comissão.",
+          "targetsError": "conceptual",
+          "rationale": "Pela comissão identifica o agente; o resultado é o sujeito que recebe a ação."
         },
         {
           "id": "B",
-          "text": "Qualquer verbo aceita passiva."
+          "text": "Ele é adjunto temporal, enquanto terça-feira funciona como sujeito da divulgação.",
+          "targetsError": "interpretation",
+          "rationale": "Terça-feira marca o tempo; o resultado do concurso é o sujeito paciente."
         },
         {
           "id": "C",
-          "text": "Ativa e passiva têm sempre o mesmo efeito discursivo."
+          "text": "Ele é objeto direto da forma ativa divulgou, com a comissão como sujeito.",
+          "targetsError": "procedural",
+          "rationale": "A oração está na passiva: o resultado ocupa a posição de sujeito."
         },
         {
           "id": "D",
-          "text": "Toda frase com “ser” está na passiva."
+          "text": "Ele ocupa a posição de sujeito na passiva e recebe a ação de divulgar."
         },
         {
           "id": "E",
-          "text": "A passiva sempre informa quem agiu."
+          "text": "Ele é predicativo do objeto resultado, atribuído pela comissão após a divulgação.",
+          "targetsError": "attention",
+          "rationale": "Resultado do concurso é sujeito paciente de foi divulgado, não predicativo do objeto."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Na passiva analítica, o participante afetado pode ocupar a posição de sujeito, com auxiliar “ser” e particípio.",
+      "correctOption": "D",
+      "explanation": "Na frase, o resultado foi divulgado, e o particípio foi divulgado se ajusta ao grupo singular que recebe a ação. A comissão aparece introduzida por pela, como agente; terça-feira marca o momento em que a divulgação ocorreu.",
       "difficulty": "direct",
       "cognitiveOperation": "understand",
       "concepts": [
         "POR-12-C02"
       ],
-      "targetedError": "A passiva sempre informa quem agiu.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Manter a análise ativa de objeto direto após a mudança para a passiva.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Comunicado fictício da comissão de eventos da Escola do Pinhal, assinado por Rita Melo em 18 de abril de 2026: o resultado do concurso foi divulgado pela comissão na manhã de terça-feira. A lista ficou disponível no portal e também foi afixada perto da secretaria. Os estudantes podem consultar a pontuação por categoria e solicitar uma cópia impressa até sexta. Na cerimônia da semana seguinte, os trabalhos escolhidos serão apresentados no auditório, com presença das famílias e dos professores orientadores."
     },
     {
       "id": "POR-12-Q03",
       "lessonId": "POR-12",
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Voz ativa, passiva e foco da informação?",
+      "stem": "Na primeira oração, como se organiza a informação em divulgam-se os horários?",
       "options": [
         {
           "id": "A",
-          "text": "Ativa e passiva têm sempre o mesmo efeito discursivo."
+          "text": "Os horários são objeto direto, e o portal funciona como agente não expresso.",
+          "targetsError": "conceptual",
+          "rationale": "No portal indica lugar; horários é sujeito paciente de divulgam-se."
         },
         {
           "id": "B",
-          "text": "Toda frase com “ser” está na passiva."
+          "text": "Os horários são objeto direto de divulgam, com a escola como agente implícito.",
+          "targetsError": "procedural",
+          "rationale": "Na passiva sintética, horários é sujeito paciente e determina o plural de divulgam."
         },
         {
           "id": "C",
-          "text": "O agente da passiva pode ser omitido quando desconhecido, irrelevante ou discursivamente apagado."
+          "text": "Os horários ocupam a posição de sujeito paciente, com agente não indicado."
         },
         {
           "id": "D",
-          "text": "A passiva sempre informa quem agiu."
+          "text": "A coordenação é sujeito oculto de divulgam-se, recuperado da frase seguinte.",
+          "targetsError": "attention",
+          "rationale": "A coordenação é sujeito de reorganizou em outra oração, não de divulgam-se."
         },
         {
           "id": "E",
-          "text": "Qualquer verbo aceita passiva."
+          "text": "No portal é sujeito posposto, e horários funciona como adjunto de divulgam.",
+          "targetsError": "conceptual",
+          "rationale": "No portal é adjunto de lugar; horários é o sujeito paciente posposto."
         }
       ],
       "correctOption": "C",
-      "explanation": "O agente da passiva pode ser omitido quando desconhecido, irrelevante ou discursivamente apagado.",
+      "explanation": "A forma divulgam-se concorda com os horários, que recebem a ação de divulgar e aparecem sem um agente expresso. No portal informa onde isso ocorre; a coordenação é sujeito de outro verbo, em uma frase posterior.",
       "difficulty": "applied",
       "cognitiveOperation": "discriminate",
       "concepts": [
         "POR-12-C03"
       ],
-      "targetedError": "Qualquer verbo aceita passiva.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Interpretar a construção com se como ação de um agente não mencionado no texto.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Orientação fictícia para a oficina de teatro, preparada por Ana Rios em 3 de junho de 2026: divulgam-se os horários das apresentações no portal da escola, enquanto os nomes das equipes ficam no mural do corredor. Cada grupo deverá chegar vinte minutos antes do ensaio e retirar uma ficha junto à recepção. A coordenação reorganizou a ordem das peças para acomodar uma turma que terá aula no laboratório. A programação impressa será entregue aos responsáveis na entrada do auditório."
     },
     {
       "id": "POR-12-Q04",
       "lessonId": "POR-12",
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Voz ativa, passiva e foco da informação?",
+      "stem": "Qual versão na voz passiva preserva o tempo, o participante que recebe os certificados e o agente da entrega?",
       "options": [
         {
           "id": "A",
-          "text": "Toda frase com “ser” está na passiva."
+          "text": "Os certificados serão entregues pela comissão aos concluintes na sexta-feira."
         },
         {
           "id": "B",
-          "text": "A passiva sempre informa quem agiu."
+          "text": "Os concluintes entregarão os certificados à comissão na sexta-feira.",
+          "targetsError": "conceptual",
+          "rationale": "A transformação troca o agente e o destinatário, além de manter a voz ativa."
         },
         {
           "id": "C",
-          "text": "Qualquer verbo aceita passiva."
+          "text": "Os certificados foram entregues pela comissão aos concluintes na sexta-feira.",
+          "targetsError": "attention",
+          "rationale": "A frase conserva os participantes, mas muda o futuro para o passado."
         },
         {
           "id": "D",
-          "text": "Ativa e passiva têm sempre o mesmo efeito discursivo."
+          "text": "Os certificados serão entregues pelos concluintes à comissão na sexta-feira.",
+          "targetsError": "interpretation",
+          "rationale": "A forma mantém o futuro, mas inverte quem entrega e quem recebe."
         },
         {
           "id": "E",
-          "text": "Transformar ativa em passiva exige preservar tempo verbal, relações semânticas e concordância."
+          "text": "A comissão será entregue aos concluintes pelos certificados na sexta-feira.",
+          "targetsError": "conceptual",
+          "rationale": "A construção troca os papéis dos participantes e transforma certificados em agente."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Transformar ativa em passiva exige preservar tempo verbal, relações semânticas e concordância.",
+      "correctOption": "A",
+      "explanation": "A frase mantém o futuro em serão entregues, coloca os certificados como participante afetado e conserva a comissão como agente introduzido por pela. As versões com passado alteram o momento e aquelas que trocam os participantes mudam quem recebe e quem entrega.",
       "difficulty": "ifsc",
       "cognitiveOperation": "apply",
       "concepts": [
         "POR-12-C04"
       ],
-      "targetedError": "Ativa e passiva têm sempre o mesmo efeito discursivo.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Mudar o tempo ou inverter os participantes ao converter a frase para a passiva.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Roteiro fictício da cerimônia de formatura, elaborado por Luísa Teles em 14 de julho de 2026: a comissão entregará os certificados aos concluintes na sexta-feira, depois da apresentação musical. Cada turma terá um representante para receber os envelopes e confirmar os nomes no palco. Os familiares poderão aguardar no pátio coberto, onde haverá cadeiras numeradas. A escola preparou uma lista para orientar a entrada e pediu que todos mantenham livres as duas portas laterais durante a cerimônia."
     },
     {
       "id": "POR-12-Q05",
       "lessonId": "POR-12",
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Voz ativa, passiva e foco da informação?",
+      "stem": "Na primeira frase, por que não se forma uma passiva com ao museu como sujeito paciente?",
       "options": [
         {
           "id": "A",
-          "text": "A passiva sempre informa quem agiu."
+          "text": "O passado de chegou impede a passiva porque o tempo não pode ser alterado.",
+          "targetsError": "conceptual",
+          "rationale": "O tempo não impede a passiva; chegar, nesse uso, não tem objeto direto."
         },
         {
           "id": "B",
-          "text": "Nem toda oração admite transformação passiva; a estrutura do verbo é decisiva."
+          "text": "A passiva exigiria singular porque delegação designa um grupo de pessoas.",
+          "targetsError": "procedural",
+          "rationale": "O número pode ser preservado na passiva; a restrição decorre da ausência de objeto direto."
         },
         {
           "id": "C",
-          "text": "Qualquer verbo aceita passiva."
+          "text": "Ao museu é agente da chegada e poderia aparecer como sujeito paciente.",
+          "targetsError": "interpretation",
+          "rationale": "Ao museu indica destino, não agente nem participante que receba a ação."
         },
         {
           "id": "D",
-          "text": "Ativa e passiva têm sempre o mesmo efeito discursivo."
+          "text": "O museu é objeto direto de chegou, embora venha introduzido por preposição.",
+          "targetsError": "conceptual",
+          "rationale": "Ao museu é complemento preposicionado de destino, não objeto direto."
         },
         {
           "id": "E",
-          "text": "Toda frase com “ser” está na passiva."
+          "text": "Chegou é intransitivo nesse uso, e ao museu marca o destino do grupo."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Nem toda oração admite transformação passiva; a estrutura do verbo é decisiva.",
+      "correctOption": "E",
+      "explanation": "A delegação chegou a um destino, e ao museu indica esse destino com preposição. Não há objeto direto na frase que possa passar à posição de sujeito paciente; o tempo verbal não é a causa da restrição.",
       "difficulty": "applied",
       "cognitiveOperation": "evaluate",
       "concepts": [
         "POR-12-C05"
       ],
-      "targetedError": "Toda frase com “ser” está na passiva.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tratar o destino introduzido por preposição como objeto direto de chegar.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Diário fictício de uma visita ao planetário municipal, escrito por Otávio Reis em 2 de agosto de 2026: a delegação chegou ao museu às nove e guardou os casacos num armário perto da entrada. Depois, os alunos acompanharam uma sessão sobre fases da Lua e registraram dúvidas num formulário. A monitora explicou o funcionamento do projetor e conduziu o grupo até a sala de experimentos. Antes da saída, cada estudante devolveu o crachá e recebeu um mapa dos próximos eventos do centro cultural."
     },
     {
       "id": "POR-12-Q06",
       "lessonId": "POR-12",
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Voz ativa, passiva e foco da informação, qual análise está correta?",
+      "stem": "Ao comparar as duas formulações sobre a publicação dos horários, que efeito permanece e que efeito muda?",
       "options": [
         {
           "id": "A",
-          "text": "Qualquer verbo aceita passiva."
+          "text": "A diretoria deixa de ser mencionada e as datas passam a ser outras.",
+          "targetsError": "interpretation",
+          "rationale": "A diretoria continua indicada por pela; o texto também diz que as datas permaneceram iguais."
         },
         {
           "id": "B",
-          "text": "Ativa e passiva têm sempre o mesmo efeito discursivo."
+          "text": "O evento continua atribuído à diretoria, enquanto os horários recebem mais destaque como sujeito."
         },
         {
           "id": "C",
-          "text": "Toda frase com “ser” está na passiva."
+          "text": "A secretaria vira agente da publicação e a diretoria passa a receber o aviso.",
+          "targetsError": "attention",
+          "rationale": "A secretaria atualiza salas em outro trecho; a passiva mantém a diretoria como agente."
         },
         {
           "id": "D",
-          "text": "A escolha entre ativa e passiva altera o foco informacional, embora possa manter o evento básico."
+          "text": "A frase ativa relata uma previsão e a passiva confirma o cancelamento dos exames.",
+          "targetsError": "interpretation",
+          "rationale": "As duas formulações relatam a publicação já ocorrida; não há cancelamento."
         },
         {
           "id": "E",
-          "text": "A passiva sempre informa quem agiu."
+          "text": "A frase passiva muda o foco para as salas e retira os horários do assunto.",
+          "targetsError": "conceptual",
+          "rationale": "Os horários continuam como tema e passam a ocupar a posição de sujeito na passiva."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A escolha entre ativa e passiva altera o foco informacional, embora possa manter o evento básico.",
+      "correctOption": "B",
+      "explanation": "As duas frases relatam a publicação feita pela diretoria e preservam as datas. Na passiva, os horários ocupam a posição de sujeito e viram o foco inicial, mas o grupo pela diretoria mantém expresso quem publicou.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze",
       "concepts": [
         "POR-12-C06"
       ],
-      "targetedError": "A passiva sempre informa quem agiu.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir mudança de foco com mudança do agente ou do conteúdo do evento.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Registro fictício da secretaria acadêmica, assinado por Elisa Barros em 12 de setembro de 2026: na segunda-feira, a diretoria publicou os horários dos exames no mural principal. No dia seguinte, a secretaria atualizou a sala de duas avaliações e fixou uma nova lista na porta do laboratório. O aviso da coordenação resumiu a mudança com outra formulação: os horários dos exames foram publicados no mural pela diretoria. As datas permaneceram iguais, e os estudantes receberam a atualização por mensagem."
     },
     {
       "id": "POR-12-Q07",
       "lessonId": "POR-12",
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Toda frase com “ser” está na passiva.”. Qual é a melhor correção?",
+      "stem": "Na primeira frase, como funciona a forma é?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "Ela é auxiliar de uma passiva em que a sala recebe uma ação.",
+          "targetsError": "conceptual",
+          "rationale": "A sala é ligada às características silenciosa e ampla; não recebe ação."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Ela funciona como auxiliar de uma ação praticada pelas janelas do jardim.",
+          "targetsError": "attention",
+          "rationale": "Janelas aparece depois; é liga sala a suas características."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "Ela é auxiliar do particípio montada, com a sala como agente no passado.",
+          "targetsError": "interpretation",
+          "rationale": "A frase não contém particípio nem narra uma ação passada; descreve a sala no presente."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "Ela liga sala a duas características, silenciosa e ampla."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Ela é verbo de ação que indica que a sala praticou o ato de ampliar.",
+          "targetsError": "conceptual",
+          "rationale": "É é verbo de ligação; silenciosa e ampla são predicativos de sala."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Na voz ativa, o sujeito gramatical geralmente corresponde ao participante apresentado como agente em verbos compatíveis.",
+      "correctOption": "D",
+      "explanation": "A forma é liga o sujeito sala às características silenciosa e ampla. A frase não apresenta ação executada pela sala nem um evento que ela tenha sofrido; as janelas são descritas depois, em outro segmento.",
       "difficulty": "applied",
       "cognitiveOperation": "diagnose_error",
       "concepts": [
         "POR-12-C01"
       ],
-      "targetedError": "Toda frase com “ser” está na passiva.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Classificar toda ocorrência de ser como auxiliar de uma passiva.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Crônica fictícia do clube de leitura, escrita por Mário Vidal em 20 de outubro de 2026: a sala de leitura é silenciosa e ampla, com duas janelas voltadas para o jardim. Uma estante baixa separa os livros de consulta dos romances emprestados aos estudantes. Naquela tarde, a bibliotecária deixou um bilhete sobre a mesa e convidou a turma para uma conversa com uma autora local. O encontro começou depois do intervalo e terminou com uma lista de títulos sugeridos pelos participantes."
     },
     {
       "id": "POR-12-Q08",
       "lessonId": "POR-12",
       "type": "MCQ",
-      "stimulus": "Compare “A comissão divulgou o resultado”, “O resultado foi divulgado pela comissão” e “O resultado foi divulgado”.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Na primeira frase, o que o texto permite concluir sobre quem arquivou os formulários?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Os formulários recebem a ação, mas o trecho não informa quem os arquivou."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "A coordenação arquivou os formulários, pois registrará os pedidos no relatório.",
+          "targetsError": "attention",
+          "rationale": "O texto associa a coordenação ao relatório futuro, sem atribuir a ela o arquivamento."
         },
         {
           "id": "C",
-          "text": "O evento é semelhante, mas o foco muda para “resultado”; na última forma o agente é apagado."
+          "text": "A equipe arquivou os formulários, pois organizou a tabela de consulta.",
+          "targetsError": "conceptual",
+          "rationale": "A equipe organizou a tabela; o trecho não a identifica como agente do arquivo."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "Os estudantes arquivaram os formulários após corrigirem os dados na secretaria.",
+          "targetsError": "interpretation",
+          "rationale": "O aviso pede que estudantes corrijam dados, sem dizer que arquivaram os formulários."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "A secretaria arquivou os formulários, pois conferiu os nomes e as datas.",
+          "targetsError": "attention",
+          "rationale": "A conferência é indicada como momento da ação, sem nomear quem a realizou."
         }
       ],
-      "correctOption": "C",
-      "explanation": "O evento é semelhante, mas o foco muda para “resultado”; na última forma o agente é apagado.",
+      "correctOption": "A",
+      "explanation": "Os formulários aparecem como participantes afetados pela ação de arquivar, mas nenhuma expressão identifica o agente na frase. A equipe e a coordenação aparecem em outras tarefas; atribuir o arquivamento a uma delas vai além do que o relato diz.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-12-C01",
         "POR-12-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Atribuir a ação a um grupo citado em outro contexto, sem apoio da oração.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Relato fictício do arquivo da Escola do Vale, produzido por Soraia Reis em 30 de novembro de 2026: os formulários de matrícula foram arquivados depois da conferência dos nomes e das datas. A sala recebeu três caixas identificadas por ano, e a equipe deixou uma tabela de consulta sobre a mesa. No relatório de dezembro, a coordenação registrará quantos pedidos foram recebidos em cada turno. O aviso aos estudantes recomenda procurar a secretaria para corrigir dados antes do fechamento do semestre."
     }
   ]
 }

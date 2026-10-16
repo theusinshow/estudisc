@@ -210,308 +210,290 @@
     {
       "id": "GH-29-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Capitalismo: formação, fases e organização do espaço, qual afirmação está correta?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Capitalismo significa ausência completa do Estado."
-        },
-        {
-          "key": "B",
-          "text": "Capitalismo baseia-se em propriedade privada predominante dos meios de produção, produção para mercados, trabalho assalariado e acumulação de capital, embora existam diferentes formas históricas e forte atuação estatal."
-        },
-        {
-          "key": "C",
-          "text": "Trabalho assalariado existiu somente depois da internet."
-        },
-        {
-          "key": "D",
-          "text": "Capitalismo comercial, industrial e financeiro nunca coexistem."
-        },
-        {
-          "key": "E",
-          "text": "O capitalismo distribui riqueza de forma automaticamente igual."
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Capitalismo baseia-se em propriedade privada predominante dos meios de produção, produção para mercados, trabalho assalariado e acumulação de capital, embora existam diferentes formas históricas e forte atuação estatal.",
+      "stem": "Um livro de contas registra que, em três viagens, comerciantes compraram açúcar e tecidos em diferentes portos e pagaram a construção de dois navios. A Coroa cobrou uma taxa sobre cada carga; parte do crédito veio de uma associação de mercadores. No retorno, os produtos foram vendidos em feiras do interior por valores maiores que os anotados na partida. O escrivão também registrou perdas em uma travessia e a divisão dos custos entre os financiadores.\n\nQue aspecto da organização econômica aparece com mais força no inventário?",
+      "correctOption": "D",
+      "explanation": "A associação de mercadores financiou embarcações cujas cargas foram vendidas em feiras distantes, o que evidencia expansão comercial e busca de mercados. A cobrança da Coroa poderia sugerir controle estatal completo, mas o registro atribui o financiamento aos comerciantes.",
       "difficulty": "FOUNDATION",
-      "cognitiveOperation": "RECALL",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-29-CON-01"
       ],
       "targetedError": "foundation",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A cobrança de taxas mostra que a Coroa coordenava diretamente as compras e as vendas."
+        },
+        {
+          "key": "B",
+          "text": "A diferença de preços indica que os ganhos vinham sobretudo da produção nas feiras do interior."
+        },
+        {
+          "key": "C",
+          "text": "A associação financiava a navegação, mas mantinha os produtos restritos aos portos de partida."
+        },
+        {
+          "key": "D",
+          "text": "O crédito dos mercadores ajudava a levar produtos a novos compradores e ampliar as vendas."
+        },
+        {
+          "key": "E",
+          "text": "As perdas registradas sugerem que as viagens serviam ao abastecimento local, sem buscar outros mercados."
+        }
+      ]
     },
     {
       "id": "GH-29-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “Capitalismo significa ausência completa do Estado.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Capitalismo significa ausência completa do Estado."
-        },
-        {
-          "key": "B",
-          "text": "Trabalho assalariado existiu somente depois da internet."
-        },
-        {
-          "key": "C",
-          "text": "Capitalismo comercial, industrial e financeiro nunca coexistem."
-        },
-        {
-          "key": "D",
-          "text": "Capitalismo comercial se relacionou à expansão mercantil e colonial; capitalismo industrial ganhou força com a mecanização e as fábricas."
-        },
-        {
-          "key": "E",
-          "text": "O capitalismo distribui riqueza de forma automaticamente igual."
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Capitalismo comercial se relacionou à expansão mercantil e colonial; capitalismo industrial ganhou força com a mecanização e as fábricas.",
+      "stem": "No bairro do rio, uma antiga oficina familiar produzia poucas peças por encomenda. Depois da instalação de uma fábrica, três máquinas passaram a cortar e prensar metal em sequência. A empresa contratou moradores para jornadas regulares, abriu um depósito ao lado dos trilhos e passou a enviar lotes maiores a outras cidades. Artesãos do bairro ainda mantiveram encomendas próprias, embora tenham reduzido o volume de peças que faziam em casa.\n\nQual transformação ajuda a explicar o crescimento da produção descrita?",
+      "correctOption": "A",
+      "explanation": "A sequência de máquinas, a contratação para jornadas regulares e os lotes maiores indicam produção mecanizada concentrada na fábrica. A permanência de artesãos é um detalhe importante, mas não desfaz a mudança principal relatada.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-29-CON-02"
       ],
       "targetedError": "concept_discrimination",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "Máquinas reunidas na fábrica permitiram ampliar a produção e organizar etapas em sequência."
+        },
+        {
+          "key": "B",
+          "text": "A fábrica elevou o volume ao transferir as principais etapas para as oficinas dos artesãos."
+        },
+        {
+          "key": "C",
+          "text": "O depósito junto aos trilhos, por si só, explica o aumento da quantidade produzida."
+        },
+        {
+          "key": "D",
+          "text": "Os artesãos ampliaram as encomendas domésticas e passaram a fornecer a maior parte dos lotes enviados."
+        },
+        {
+          "key": "E",
+          "text": "O envio para outras cidades ocorreu porque as encomendas locais deixaram de ser atendidas."
+        }
+      ]
     },
     {
       "id": "GH-29-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: O capitalismo transformou formas de produzir, trabalhar, circular mercadorias e organizar territórios. Qual ideia estudada oferece a melhor chave de interpretação?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Capitalismo significa ausência completa do Estado."
-        },
-        {
-          "key": "B",
-          "text": "Trabalho assalariado existiu somente depois da internet."
-        },
-        {
-          "key": "C",
-          "text": "O capitalismo financeiro e informacional ampliou a importância de bancos, mercados de capitais, tecnologia, dados e redes globais."
-        },
-        {
-          "key": "D",
-          "text": "Capitalismo comercial, industrial e financeiro nunca coexistem."
-        },
-        {
-          "key": "E",
-          "text": "O capitalismo distribui riqueza de forma automaticamente igual."
-        }
-      ],
+      "stem": "A empresa Rota Sul mantém depósitos em quatro cidades e recebe pedidos por um aplicativo. Um banco oferece crédito para comprar caminhões, enquanto analistas acompanham diariamente os preços de combustível e o movimento das encomendas. Parte dos investidores vive em outros países. A equipe local relata que uma falha no sistema de dados atrasou a entrega de alimentos, mesmo com os veículos disponíveis e as estradas abertas.\n\nQue elemento do relato mostra uma forma recente de organizar os negócios?",
       "correctOption": "C",
-      "explanation": "O capitalismo financeiro e informacional ampliou a importância de bancos, mercados de capitais, tecnologia, dados e redes globais.",
+      "explanation": "O aplicativo, o crédito e a presença de investidores articulam informação, logística e finanças. A falha de dados atrasou uma entrega, mas isso não significa que a atividade comercial tenha sido abandonada.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-29-CON-03"
       ],
       "targetedError": "relationship",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "Os depósitos e os caminhões organizam os negócios, enquanto os dados servem apenas para divulgar produtos."
+        },
+        {
+          "key": "B",
+          "text": "A empresa usa dados para receber pedidos, mas o crédito não participa das decisões sobre sua logística."
+        },
+        {
+          "key": "C",
+          "text": "Informação e financiamento podem orientar decisões sobre transporte e circulação das mercadorias."
+        },
+        {
+          "key": "D",
+          "text": "A falha mostra que a logística dependia apenas do aplicativo, apesar dos veículos e das estradas disponíveis."
+        },
+        {
+          "key": "E",
+          "text": "A presença de investidores de fora indica que as decisões financeiras ocorrem sem acompanhar o mercado local."
+        }
+      ]
     },
     {
       "id": "GH-29-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Capitalismo: formação, fases e organização do espaço por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Mudanças de fase não apagam completamente formas anteriores: comércio, indústria e finanças coexistem."
-        },
-        {
-          "key": "B",
-          "text": "Capitalismo significa ausência completa do Estado."
-        },
-        {
-          "key": "C",
-          "text": "Trabalho assalariado existiu somente depois da internet."
-        },
-        {
-          "key": "D",
-          "text": "Capitalismo comercial, industrial e financeiro nunca coexistem."
-        },
-        {
-          "key": "E",
-          "text": "O capitalismo distribui riqueza de forma automaticamente igual."
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Mudanças de fase não apagam completamente formas anteriores: comércio, indústria e finanças coexistem.",
+      "stem": "A família de Joana vende pães numa banca que existe há décadas. Ela também fornece farinha a uma pequena fábrica de massas, que usa esteiras para embalar produtos. No último ano, a família tomou empréstimo em um banco e passou a receber pedidos por uma plataforma de compras. No sábado, porém, Joana ainda negociou pessoalmente com os feirantes e anotou as vendas em um caderno.\n\nComo interpretar as atividades descritas na crônica?",
+      "correctOption": "E",
+      "explanation": "A mesma família combina feira, fornecimento à fábrica, empréstimo e pedidos pela plataforma. O uso de tecnologia não apagou a banca presencial, como mostra a negociação de sábado.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-29-CON-04"
       ],
       "targetedError": "application",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A plataforma passou a concentrar os pedidos, enquanto a banca manteve as vendas da feira."
+        },
+        {
+          "key": "B",
+          "text": "A fábrica e a família participam de etapas diferentes de uma cadeia de fornecimento local."
+        },
+        {
+          "key": "C",
+          "text": "O empréstimo pode financiar a atividade, mas não altera quem administra a feira."
+        },
+        {
+          "key": "D",
+          "text": "O caderno registra vendas presenciais ao lado de pedidos feitos por meios digitais."
+        },
+        {
+          "key": "E",
+          "text": "A família combina canais de venda, financiamento e produção na economia local."
+        }
+      ]
     },
     {
       "id": "GH-29-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Capitalismo baseia-se em propriedade privada predominante dos meios de produção, produção para mercados, trabalho assalariado e acumulação de capital, embora existam diferentes formas históricas e forte atuação estatal.\nII. Capitalismo significa ausência completa do Estado.\nIII. O capitalismo financeiro e informacional ampliou a importância de bancos, mercados de capitais, tecnologia, dados e redes globais.\nIV. Trabalho assalariado existiu somente depois da internet.\nAssinale a alternativa CORRETA.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Apenas I está correta."
-        },
-        {
-          "key": "B",
-          "text": "Apenas I e III estão corretas."
-        },
-        {
-          "key": "C",
-          "text": "Apenas II e IV estão corretas."
-        },
-        {
-          "key": "D",
-          "text": "Apenas I, II e III estão corretas."
-        },
-        {
-          "key": "E",
-          "text": "Todas estão corretas."
-        }
-      ],
+      "stem": "O aviso oferece doze postos para operar prensas e conferir embalagens durante cinco dias por semana. A empresa informa o valor do pagamento mensal, o horário dos turnos e o endereço da fábrica. Também explica que as máquinas, o galpão e a matéria-prima pertencem à companhia. Os candidatos devem apresentar documentos e participar de uma conversa com a supervisora; os produtos acabados serão vendidos a lojas da região.\n\nQue vínculo de trabalho o anúncio apresenta?",
       "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "explanation": "O anúncio oferece postos com jornada e pagamento mensal, enquanto a empresa possui os meios e vende os produtos. A existência de supervisão e turnos torna mais tentadora a ideia de participação na propriedade, que o texto atribui à companhia.",
       "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-29-CON-01",
-        "GH-29-CON-02",
-        "GH-29-CON-03",
-        "GH-29-CON-04"
+        "GH-29-CON-05"
       ],
       "targetedError": "multi_statement_reasoning",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "O pagamento varia conforme o número de embalagens produzidas em cada turno."
+        },
+        {
+          "key": "B",
+          "text": "Os contratados oferecem seu trabalho à empresa e recebem o valor periódico anunciado."
+        },
+        {
+          "key": "C",
+          "text": "Os lojistas adiantam recursos à fábrica e recebem parte da propriedade das máquinas."
+        },
+        {
+          "key": "D",
+          "text": "Os trabalhadores operam equipamentos próprios e entregam embalagens prontas à companhia."
+        },
+        {
+          "key": "E",
+          "text": "Os contratados participam da supervisão e definem com a empresa os preços de venda."
+        }
+      ]
     },
     {
       "id": "GH-29-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Capitalismo: formação, fases e organização do espaço. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Capitalismo significa ausência completa do Estado."
-        },
-        {
-          "key": "B",
-          "text": "Trabalho assalariado existiu somente depois da internet."
-        },
-        {
-          "key": "C",
-          "text": "Capitalismo comercial, industrial e financeiro nunca coexistem."
-        },
-        {
-          "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
-        },
-        {
-          "key": "E",
-          "text": "Relacionar mudanças tecnológicas, formas de trabalho e organização territorial sem tratar fases como caixas isoladas."
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Relacionar mudanças tecnológicas, formas de trabalho e organização territorial sem tratar fases como caixas isoladas.",
+      "stem": "Uma cooperativa do Vale produz algodão e o envia a uma tecelagem próxima. O tecido segue para uma confecção na capital, onde equipes recebem por peça; o desenho da coleção e a publicidade são contratados em outra cidade. O relatório municipal mostra que o armazém e a loja virtual ficam numa região com mais empregos de tecnologia. Trabalhadores do Vale pedem melhores salários e transporte para chegar às fábricas.\n\nQual leitura relaciona produção e organização do espaço sem reduzir o caso a uma única etapa?",
+      "correctOption": "D",
+      "explanation": "Algodão, tecido, costura, desenho e venda aparecem em lugares distintos; as demandas do Vale e a localização dos empregos técnicos mostram resultados desiguais. A venda virtual, sozinha, não prova que a renda ficou na região produtora.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-29-CON-01",
-        "GH-29-CON-02",
-        "GH-29-CON-03",
-        "GH-29-CON-04",
-        "GH-29-CON-05",
         "GH-29-CON-06"
       ],
       "targetedError": "source_interpretation",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A distribuição das etapas faz com que empregos e ganhos se concentrem igualmente em cada lugar."
+        },
+        {
+          "key": "B",
+          "text": "A loja virtual aproxima a venda do Vale e concentra na cooperativa os empregos de tecnologia."
+        },
+        {
+          "key": "C",
+          "text": "Como as etapas dependem de transporte, salários e condições de trabalho ficam semelhantes entre cidades."
+        },
+        {
+          "key": "D",
+          "text": "A cadeia conecta lugares, mas os tipos de emprego e os ganhos se distribuem de forma desigual."
+        },
+        {
+          "key": "E",
+          "text": "As demandas por salários e transporte indicam que o Vale participa apenas da venda final da roupa."
+        }
+      ]
     },
     {
       "id": "GH-29-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Capitalismo: formação, fases e organização do espaço?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Capitalismo baseia-se em propriedade privada predominante dos meios de produção, produção para mercados, trabalho assalariado e acumulação de capital, embora existam diferentes formas históricas e forte atuação estatal."
-        },
-        {
-          "key": "B",
-          "text": "Capitalismo comercial se relacionou à expansão mercantil e colonial; capitalismo industrial ganhou força com a mecanização e as fábricas."
-        },
-        {
-          "key": "C",
-          "text": "O desenvolvimento capitalista produz integração espacial e também desigualdades entre grupos e territórios."
-        },
-        {
-          "key": "D",
-          "text": "Capitalismo comercial, industrial e financeiro nunca coexistem."
-        },
-        {
-          "key": "E",
-          "text": "Mudanças de fase não apagam completamente formas anteriores: comércio, indústria e finanças coexistem."
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "stem": "Em 1998, a gráfica comprou uma impressora maior com parte do dinheiro obtido na venda de cartazes. Anos depois, a dona usou a renda de contratos com escolas para financiar um sistema de pedidos pela internet. Os equipamentos antigos continuam imprimindo folhetos em tiragens curtas, enquanto a nova máquina atende encomendas grandes. O caderno de contas separa custos, receitas e valores reservados para futuras compras.\n\nO que o caderno permite observar sobre a expansão do negócio?",
+      "correctOption": "A",
+      "explanation": "As anotações ligam receitas anteriores a compras de equipamentos e a um canal digital, mostrando reinvestimento no negócio. A máquina nova não eliminou as antigas, que ainda atendem tiragens curtas.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-29-CON-01",
-        "GH-29-CON-02",
-        "GH-29-CON-03",
-        "GH-29-CON-04",
-        "GH-29-CON-05",
         "GH-29-CON-06"
       ],
       "targetedError": "misconception_identification",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "Receitas do negócio ajudam a financiar equipamentos e formas de receber novas encomendas."
+        },
+        {
+          "key": "B",
+          "text": "A gráfica separa as receitas dos cartazes e dos contratos, sem relacioná-las às compras posteriores."
+        },
+        {
+          "key": "C",
+          "text": "Os contratos com escolas mantêm a produção, mas não se convertem em investimento no negócio."
+        },
+        {
+          "key": "D",
+          "text": "A compra da impressora maior antecedeu a venda de cartazes que pagou sua aquisição."
+        },
+        {
+          "key": "E",
+          "text": "O sistema de pedidos ampliou as vendas ao substituir os registros de custos e receitas."
+        }
+      ]
     },
     {
       "id": "GH-29-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Capitalismo: formação, fases e organização do espaço, qual conclusão final é sustentável?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Capitalismo significa ausência completa do Estado."
-        },
-        {
-          "key": "B",
-          "text": "Trabalho assalariado existiu somente depois da internet."
-        },
-        {
-          "key": "C",
-          "text": "O desenvolvimento capitalista produz integração espacial e também desigualdades entre grupos e territórios."
-        },
-        {
-          "key": "D",
-          "text": "Capitalismo comercial, industrial e financeiro nunca coexistem."
-        },
-        {
-          "key": "E",
-          "text": "O capitalismo distribui riqueza de forma automaticamente igual."
-        }
-      ],
+      "stem": "O conselho municipal aprovou a reforma do cais e estabeleceu regras ambientais para o descarte de resíduos. Duas empresas privadas solicitaram espaço para instalar armazéns; uma delas prometeu contratar trabalhadores locais. A ata registra que o município discutiu a obra com comerciantes, pescadores e moradores, e que os contratos ainda dependeriam de licenças. O porto deverá receber cargas destinadas a mercados de outros estados.\n\nQue interpretação sobre o papel do poder público e das empresas é apoiada pela ata?",
       "correctOption": "C",
-      "explanation": "O desenvolvimento capitalista produz integração espacial e também desigualdades entre grupos e territórios.",
+      "explanation": "A ata reúne propostas privadas e decisões públicas sobre obra, regras ambientais e licenças. A promessa de contratação não equivale à aprovação do contrato, que ainda aguarda autorização.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "EVALUATE",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-29-CON-01",
-        "GH-29-CON-02",
-        "GH-29-CON-03",
-        "GH-29-CON-04",
-        "GH-29-CON-05",
         "GH-29-CON-06"
       ],
       "targetedError": "synthesis",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "As regras municipais passaram a valer apenas depois que as empresas instalaram os armazéns."
+        },
+        {
+          "key": "B",
+          "text": "A discussão pública da obra deixou às empresas a decisão final sobre licenças ambientais."
+        },
+        {
+          "key": "C",
+          "text": "Propostas empresariais podem coexistir com decisões públicas sobre obras e autorizações."
+        },
+        {
+          "key": "D",
+          "text": "A promessa de contratação permite iniciar a instalação antes da análise dos contratos."
+        },
+        {
+          "key": "E",
+          "text": "O destino das cargas tornou desnecessária a consulta a pescadores e moradores."
+        }
+      ]
     }
   ]
 }

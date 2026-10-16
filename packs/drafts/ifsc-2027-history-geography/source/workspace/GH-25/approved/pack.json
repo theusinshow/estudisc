@@ -207,33 +207,33 @@
     {
       "id": "GH-25-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Modernização do campo brasileiro, qual afirmação está correta?",
+      "stem": "Em uma propriedade fictícia do oeste catarinense, a família instalou um sistema de irrigação, trocou sementes e alugou uma colheitadeira para a safra. O caderno registra que o trabalho de colheita levou três dias, contra uma semana no ciclo anterior, e anota gasto maior com combustível. A área plantada permaneceu igual; não há dados sobre preços de venda nem sobre o número de trabalhadores contratados na região.\n\nQue mudança o caderno permite identificar?",
       "options": [
         {
           "key": "A",
-          "text": "Modernização do campo significa apenas uso de tratores."
+          "text": "A irrigação reduziu o custo de combustível e aumentou a área cultivada."
         },
         {
           "key": "B",
-          "text": "Mecanização, fertilizantes, sementes melhoradas, irrigação e outras tecnologias transformaram a produção agrícola brasileira."
+          "text": "Tecnologias e insumos alteraram a organização da produção rural."
         },
         {
           "key": "C",
-          "text": "Agricultura familiar produz exclusivamente para autoconsumo."
+          "text": "A colheitadeira reduziu os empregos rurais na região."
         },
         {
           "key": "D",
-          "text": "Tecnologia agrícola elimina automaticamente conflitos por terra."
+          "text": "A mudança de sementes explica a redução do tempo de colheita."
         },
         {
           "key": "E",
-          "text": "Toda modernização agrícola reduz impactos ambientais."
+          "text": "A produção foi convertida de agricultura familiar para atividade industrial."
         }
       ],
       "correctOption": "B",
-      "explanation": "Mecanização, fertilizantes, sementes melhoradas, irrigação e outras tecnologias transformaram a produção agrícola brasileira.",
+      "explanation": "O caderno registra irrigação, sementes novas e uso de colheitadeira, junto a menor duração da colheita e maior gasto com combustível. Atribuir a mudança exclusivamente às sementes não é possível porque várias tecnologias foram adotadas.",
       "difficulty": "FOUNDATION",
-      "cognitiveOperation": "RECALL",
+      "cognitiveOperation": "APPLY",
       "conceptIds": [
         "GH-25-CON-01"
       ],
@@ -243,31 +243,31 @@
     {
       "id": "GH-25-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “Modernização do campo significa apenas uso de tratores.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "stem": "Quatro produtores de grãos com áreas e equipamentos diferentes entregam parte da colheita a um armazém comum. O relatório indica que a produtividade média subiu após a compra coletiva de sementes e a ampliação da irrigação; uma agroindústria regional passou a processar mais matéria-prima para vender no mercado interno e enviar parte dos produtos a compradores externos. Os custos e os ganhos não foram iguais entre as propriedades.\n\nQual interpretação combina melhor os registros?",
       "options": [
         {
           "key": "A",
-          "text": "Modernização do campo significa apenas uso de tratores."
+          "text": "A cooperação encerrou as diferenças de escala e renda entre produtores."
         },
         {
           "key": "B",
-          "text": "Agricultura familiar produz exclusivamente para autoconsumo."
+          "text": "A venda externa passou a ocupar a maior parte da produção, deixando o mercado interno em posição secundária."
         },
         {
           "key": "C",
-          "text": "Tecnologia agrícola elimina automaticamente conflitos por terra."
+          "text": "A produtividade maior indica que os produtores adotaram tecnologias semelhantes."
         },
         {
           "key": "D",
-          "text": "A modernização favoreceu aumento de produtividade e expansão de cadeias agroindustriais voltadas ao mercado interno e externo."
+          "text": "A produção mais eficiente se conecta a cadeias agroindustriais e a mercados diversos."
         },
         {
           "key": "E",
-          "text": "Toda modernização agrícola reduz impactos ambientais."
+          "text": "A irrigação transformou a cooperativa em proprietária da maior parte das terras."
         }
       ],
       "correctOption": "D",
-      "explanation": "A modernização favoreceu aumento de produtividade e expansão de cadeias agroindustriais voltadas ao mercado interno e externo.",
+      "explanation": "A nota combina aumento médio de produtividade com processamento agroindustrial e destinos variados de venda. A afirmação de que o mercado interno foi substituído ignora que o relatório menciona os dois mercados.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -279,33 +279,33 @@
     {
       "id": "GH-25-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: A modernização agrícola elevou produtividade e integração aos mercados, mas seus efeitos sociais e ambientais são desiguais. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "stem": "Em uma zona de cultivo, duas propriedades ampliaram máquinas e passaram a concentrar áreas antes arrendadas por famílias menores. A colheita agora exige menos trabalhadores por hectare durante alguns meses; parte dos antigos arrendatários mudou para a sede municipal em busca de serviços e empregos. A reportagem entrevista quatro famílias e observa que outras continuam trabalhando na região em atividades de transporte e manutenção.\n\nQual relação é apoiada pela reportagem?",
       "options": [
         {
           "key": "A",
-          "text": "Modernização do campo significa apenas uso de tratores."
+          "text": "A mudança de emprego ocorreu sem ligação com a organização das propriedades."
         },
         {
           "key": "B",
-          "text": "Agricultura familiar produz exclusivamente para autoconsumo."
+          "text": "As atividades de transporte mantiveram as famílias na área rural."
         },
         {
           "key": "C",
-          "text": "Mecanização e concentração de terras contribuíram para deslocamentos populacionais e mudanças no emprego rural."
+          "text": "A mecanização aumentou o número de trabalhadores necessários por hectare."
         },
         {
           "key": "D",
-          "text": "Tecnologia agrícola elimina automaticamente conflitos por terra."
+          "text": "A concentração de terras garantiu ocupação estável aos arrendatários entrevistados."
         },
         {
           "key": "E",
-          "text": "Toda modernização agrícola reduz impactos ambientais."
+          "text": "Máquinas e concentração contribuíram para mudanças no emprego e no deslocamento rural."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Mecanização e concentração de terras contribuíram para deslocamentos populacionais e mudanças no emprego rural.",
+      "correctOption": "E",
+      "explanation": "A reportagem liga máquinas e áreas concentradas a menor demanda sazonal, enquanto relata a mudança de algumas famílias. Concluir que as novas atividades impediram todo deslocamento contradiz as entrevistas.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-25-CON-03"
       ],
@@ -315,33 +315,33 @@
     {
       "id": "GH-25-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Modernização do campo brasileiro por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "stem": "O mapa da feira mostra três expositores familiares que vendem hortaliças e queijos em pequenas quantidades, uma cooperativa que reúne dezenas de sítios e uma empresa que processa grãos em grande escala. Alguns produtos seguem para mercados próximos; outros entram em redes de distribuição maiores. Os organizadores anotam diferenças de área, trabalho e comercialização, mas também encontram técnicas compartilhadas entre produtores de tamanhos distintos.\n\nQue conclusão respeita essa variedade?",
       "options": [
         {
           "key": "A",
-          "text": "Agronegócio e agricultura familiar possuem escalas, produtos e formas de organização diversas; ambos são internamente heterogêneos."
+          "text": "Agricultura familiar e agronegócio incluem organizações e escalas diversas."
         },
         {
           "key": "B",
-          "text": "Modernização do campo significa apenas uso de tratores."
+          "text": "A cooperativa uniformizou as condições de produção entre os expositores."
         },
         {
           "key": "C",
-          "text": "Agricultura familiar produz exclusivamente para autoconsumo."
+          "text": "A venda em rede maior converteu parte da produção familiar em atividade industrial."
         },
         {
           "key": "D",
-          "text": "Tecnologia agrícola elimina automaticamente conflitos por terra."
+          "text": "Os produtos de pequena escala não participam de circuitos de mercado."
         },
         {
           "key": "E",
-          "text": "Toda modernização agrícola reduz impactos ambientais."
+          "text": "As técnicas compartilhadas indicam que os expositores cultivam produtos semelhantes."
         }
       ],
       "correctOption": "A",
-      "explanation": "Agronegócio e agricultura familiar possuem escalas, produtos e formas de organização diversas; ambos são internamente heterogêneos.",
+      "explanation": "A feira reúne pequenas propriedades, uma cooperativa e uma empresa de grande escala, com circuitos de venda distintos e algumas técnicas comuns. Tratar todos como uma única estrutura ignora as diferenças que o mapa registra.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-25-CON-04"
       ],
@@ -351,33 +351,33 @@
     {
       "id": "GH-25-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Mecanização, fertilizantes, sementes melhoradas, irrigação e outras tecnologias transformaram a produção agrícola brasileira.\nII. Modernização do campo significa apenas uso de tratores.\nIII. Mecanização e concentração de terras contribuíram para deslocamentos populacionais e mudanças no emprego rural.\nIV. Agricultura familiar produz exclusivamente para autoconsumo.\nAssinale a alternativa CORRETA.",
+      "stem": "Uma tabela acompanha a expansão de lavouras durante seis anos: a produção colhida cresceu, o número de máquinas registradas aumentou e a área de vegetação próxima diminuiu. No mesmo período, um levantamento de emprego apresenta postos temporários na colheita e serviços de manutenção. As planilhas serão discutidas em uma audiência rural, e os organizadores pediram cópias dos registros de uso de água e posse de terra.\n\nQual leitura é mais responsável diante da tabela?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "O aumento de máquinas comprova que a distribuição de terras ficou mais equilibrada."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "A queda de postos sazonais acompanhou a redução da vegetação."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "A produtividade cresceu sem mudanças no emprego ou no ambiente."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "A expansão agrícola garantiu a recuperação das fontes de água usadas na região."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "Ler produção junto a trabalho e ambiente, buscando dados que faltam sobre terra e água."
         }
       ],
-      "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "correctOption": "E",
+      "explanation": "A tabela reúne mais colheita, máquinas, perda de vegetação e mudança no emprego, mas não traz posse da terra ou água. Uma conclusão sobre distribuição fundiária ou recursos hídricos exigiria dados adicionais.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "ANALYZE",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
       "conceptIds": [
         "GH-25-CON-01",
         "GH-25-CON-02",
@@ -390,31 +390,31 @@
     {
       "id": "GH-25-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Modernização do campo brasileiro. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "stem": "Em uma bacia fictícia, uma camada mostra limites de propriedades, outra marca áreas de plantio e uma terceira localiza pontos de captação de água. Sobre o mapa, moradores assinalam locais onde sentiram deriva de pulverização; ao lado, uma tabela lista o ano de abertura de uma estrada. A turma vai preparar uma apresentação sobre as mudanças no uso da terra e os relatos da comunidade.\n\nQual caminho de análise atende melhor à tarefa?",
       "options": [
         {
           "key": "A",
-          "text": "Modernização do campo significa apenas uso de tratores."
+          "text": "A proximidade dos pontos identifica a origem das reclamações registradas."
         },
         {
           "key": "B",
-          "text": "Agricultura familiar produz exclusivamente para autoconsumo."
+          "text": "Comparar a área plantada sem incluir os limites das propriedades na análise."
         },
         {
           "key": "C",
-          "text": "Tecnologia agrícola elimina automaticamente conflitos por terra."
+          "text": "Conferir datas e cruzar uso, estrutura fundiária e relatos socioambientais."
         },
         {
           "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+          "text": "Somar os pontos de captação como se fossem a quantidade total de água usada."
         },
         {
           "key": "E",
-          "text": "Interpretar dados de produção sem ignorar estrutura fundiária, trabalho e impactos socioambientais."
+          "text": "Tratar a estrada como causa principal das mudanças de uso do solo."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Interpretar dados de produção sem ignorar estrutura fundiária, trabalho e impactos socioambientais.",
+      "correctOption": "C",
+      "explanation": "O mapa traz camadas com datas e variáveis diferentes; cruzá-las permite formular hipóteses sem confundir proximidade com prova causal. Somar pontos de captação não mede o volume de água usado.",
       "difficulty": "IFSC",
       "cognitiveOperation": "SOURCE_ANALYSIS",
       "conceptIds": [
@@ -431,33 +431,33 @@
     {
       "id": "GH-25-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Modernização do campo brasileiro?",
+      "stem": "Uma fazenda mecanizada compra equipamento novo e anuncia que espera colher mais hectares por dia. Na estrada próxima, famílias que ocupam lotes vizinhos pedem regularização e uma associação apresenta fotos de árvores removidas junto a um córrego. Os proprietários afirmam que o investimento trará empregos na manutenção. A ata registra os argumentos, mas não informa o resultado do processo fundiário nem a qualidade da água.\n\nQual resposta corrige a ideia de que a tecnologia encerra os conflitos?",
       "options": [
         {
           "key": "A",
-          "text": "Mecanização, fertilizantes, sementes melhoradas, irrigação e outras tecnologias transformaram a produção agrícola brasileira."
+          "text": "As vagas de manutenção encerram a disputa entre famílias e proprietários."
         },
         {
           "key": "B",
-          "text": "A modernização favoreceu aumento de produtividade e expansão de cadeias agroindustriais voltadas ao mercado interno e externo."
+          "text": "A inovação pode elevar a produção, enquanto conflitos e impactos exigem análise própria."
         },
         {
           "key": "C",
-          "text": "Expansão agrícola pode estar ligada a conflitos fundiários, desmatamento, uso de água e agrotóxicos, exigindo análise territorial."
+          "text": "As fotos do córrego mostram que a mecanização não foi adotada na fazenda."
         },
         {
           "key": "D",
-          "text": "Tecnologia agrícola elimina automaticamente conflitos por terra."
+          "text": "A mecanização resolve disputas sobre posse e disponibilidade de água."
         },
         {
           "key": "E",
-          "text": "Agronegócio e agricultura familiar possuem escalas, produtos e formas de organização diversas; ambos são internamente heterogêneos."
+          "text": "A colheita por dia comprova que o processo de regularização terminou."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "correctOption": "B",
+      "explanation": "O caso apresenta aumento esperado de produtividade e, paralelamente, reivindicações sobre terra e água. O investimento tecnológico não informa nem resolve o processo de regularização citado na audiência.",
       "difficulty": "DIRECT",
-      "cognitiveOperation": "ANALYZE",
+      "cognitiveOperation": "APPLY",
       "conceptIds": [
         "GH-25-CON-01",
         "GH-25-CON-02",
@@ -472,31 +472,31 @@
     {
       "id": "GH-25-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Modernização do campo brasileiro, qual conclusão final é sustentável?",
+      "stem": "A expansão de uma lavoura elevou o volume transportado por caminhões e abriu novos postos em um armazém. Moradores de duas comunidades relatam redução de água em poços rasos durante a estiagem; uma associação questiona a retirada de vegetação e solicita dados sobre aplicação de defensivos. O relatório também reconhece que a atividade gera renda para famílias locais e recomenda acompanhar a bacia em diferentes estações do ano.\n\nQue procedimento de avaliação é mais consistente com a recomendação do relatório?",
       "options": [
         {
           "key": "A",
-          "text": "Modernização do campo significa apenas uso de tratores."
+          "text": "Usar a renda e os empregos como indicadores do resultado econômico da expansão."
         },
         {
           "key": "B",
-          "text": "Agricultura familiar produz exclusivamente para autoconsumo."
+          "text": "Encerrar a avaliação com os relatos dos moradores, sem novas coletas na bacia ao longo do ano."
         },
         {
           "key": "C",
-          "text": "Expansão agrícola pode estar ligada a conflitos fundiários, desmatamento, uso de água e agrotóxicos, exigindo análise territorial."
+          "text": "Relacionar a redução nos poços à aplicação de defensivos antes de obter os dados solicitados."
         },
         {
           "key": "D",
-          "text": "Tecnologia agrícola elimina automaticamente conflitos por terra."
+          "text": "Avaliar produção e renda junto com água, vegetação e uso de insumos."
         },
         {
           "key": "E",
-          "text": "Toda modernização agrícola reduz impactos ambientais."
+          "text": "Tomar o aumento do transporte como indício de recuperação da vegetação."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Expansão agrícola pode estar ligada a conflitos fundiários, desmatamento, uso de água e agrotóxicos, exigindo análise territorial.",
+      "correctOption": "D",
+      "explanation": "O relatório recomenda acompanhar a bacia em diferentes estações e reúne informações econômicas com relatos sobre água, vegetação e defensivos. Relacionar a redução nos poços a um insumo antes de obter os dados solicitados anteciparia uma conclusão.",
       "difficulty": "IFSC",
       "cognitiveOperation": "EVALUATE",
       "conceptIds": [

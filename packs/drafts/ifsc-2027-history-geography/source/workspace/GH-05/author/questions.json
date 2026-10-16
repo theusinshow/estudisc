@@ -1,176 +1,231 @@
 [
   {
     "id": "GH-05-Q001",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Povos originários e populações tradicionais de Santa Catarina, qual afirmação está correta?",
+    "stem": "Uma biblioteca municipal criou uma estante com livros de autores Guarani, Kaingang e Laklãnõ/Xokleng. A turma também recebeu um convite para conversar com uma pesquisadora indígena que mora na cidade e participa de um projeto de leitura. No catálogo, as obras estão organizadas por autoria, tema e idioma, e a bibliotecária anotou que novas publicações podem ser incluídas a cada semestre. O painel da estante traz imagens atuais de capas e informa que a seleção foi feita com consulta a educadores locais.\n\nQue conclusão a atividade sustenta sobre os povos indígenas em Santa Catarina?",
     "options": [
       {
         "key": "A",
-        "text": "Os povos indígenas desapareceram de Santa Catarina após a colonização."
+        "text": "As obras mostram produção indígena em mais de um idioma, sem permitir generalizar práticas culturais.",
+        "targetsError": "homogeneizar_povos_indigenas",
+        "rationale": "O catálogo registra idiomas e autoria, mas não descreve práticas culturais dos povos."
       },
       {
         "key": "B",
-        "text": "Guarani, Kaingang e Laklãnõ/Xokleng estão entre os povos indígenas com presença histórica e contemporânea em Santa Catarina."
+        "text": "A pesquisadora representa a experiência indígena da cidade.",
+        "targetsError": "generalizar_uma_trajetoria",
+        "rationale": "O convite apresenta uma participante, sem atribuir fala coletiva."
       },
       {
         "key": "C",
-        "text": "Todos os povos indígenas possuem a mesma língua e cultura."
+        "text": "A presença indígena se expressa também por autoria e participação contemporâneas.",
+        "rationale": "O catálogo inclui publicações atuais e uma pesquisadora residente na cidade."
       },
       {
         "key": "D",
-        "text": "Indígenas vivem apenas em áreas rurais isoladas."
+        "text": "Os livros do acervo comprovam a quantidade de falantes de cada idioma.",
+        "targetsError": "inferir_populacao_a_partir_de_catalogo",
+        "rationale": "A estante lista publicações, não apresenta contagens linguísticas."
       },
       {
         "key": "E",
-        "text": "A história catarinense começa com a imigração europeia."
+        "text": "A seleção bibliográfica substitui o diálogo com educadores locais.",
+        "targetsError": "separar_acervo_de_participacao",
+        "rationale": "O painel informa consulta a educadores na escolha dos títulos."
       }
     ],
-    "correctOption": "B",
-    "explanation": "Guarani, Kaingang e Laklãnõ/Xokleng estão entre os povos indígenas com presença histórica e contemporânea em Santa Catarina.",
+    "correctOption": "C",
+    "explanation": "Os livros atuais e a participação da pesquisadora mostram autoria e presença no presente; o catálogo não mede o número de falantes.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "RECALL",
     "conceptIds": [
       "GH-05-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-05-Q002",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Os povos indígenas desapareceram de Santa Catarina após a colonização.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Uma escola convidou duas educadoras Kaingang para comentar materiais usados numa unidade sobre história local. Uma sugeriu incluir a autoria indígena junto a cada texto; outra pediu que os estudantes distinguissem fontes produzidas por comunidades de resumos escritos por terceiros. A coordenação anotou as duas propostas e decidiu consultar também famílias e professores antes de revisar a unidade. O plano não descreve práticas culturais específicas nem afirma que as convidadas tenham a mesma opinião sobre todos os temas.\n\nQual decisão pedagógica responde melhor às contribuições recebidas?",
     "options": [
       {
         "key": "A",
-        "text": "Os povos indígenas desapareceram de Santa Catarina após a colonização."
+        "text": "Usar uma fala como exemplo situado e identificar sua autoria, sem tratá-la como modelo de todo o povo.",
+        "targetsError": "tomar_uma_fala_como_representativa",
+        "rationale": "Uma fala individual não representa todas as produções Kaingang."
       },
       {
         "key": "B",
-        "text": "Todos os povos indígenas possuem a mesma língua e cultura."
+        "text": "Retirar textos de autoria indígena para evitar diferenças de perspectiva.",
+        "targetsError": "apagar_autoria_e_perspectiva",
+        "rationale": "Uma das propostas pede justamente identificar cada autoria."
       },
       {
         "key": "C",
-        "text": "Indígenas vivem apenas em áreas rurais isoladas."
+        "text": "Classificar os materiais de acordo com a idade presumida de cada tradição.",
+        "targetsError": "atribuir_criterio_sem_evidencia",
+        "rationale": "O plano não usa idade ou antiguidade como critério."
       },
       {
         "key": "D",
-        "text": "Povos indígenas não pertencem apenas ao passado: mantêm comunidades, identidades, línguas, direitos e relações urbanas e rurais no presente."
+        "text": "Manter o capítulo sem mudanças até que as convidadas concordem em tudo.",
+        "targetsError": "exigir_consenso_total",
+        "rationale": "A escola pode registrar contribuições diferentes e seguir consultando."
       },
       {
         "key": "E",
-        "text": "A história catarinense começa com a imigração europeia."
+        "text": "Reconhecer as autorias e comparar perspectivas com participação de outras pessoas.",
+        "rationale": "A decisão acolhe as propostas e amplia a consulta prevista."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Povos indígenas não pertencem apenas ao passado: mantêm comunidades, identidades, línguas, direitos e relações urbanas e rurais no presente.",
+    "correctOption": "E",
+    "explanation": "As sugestões destacam autoria e diferenças entre fontes; exigir acordo completo ou escolher uma voz única apagaria as próprias contribuições.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-05-CON-02"
     ],
-    "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-05-Q003",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: Santa Catarina é território de povos indígenas antes, durante e depois da colonização europeia. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Em uma atividade com participação de representantes Laklãnõ/Xokleng, um grupo desenhou pontos de encontro, caminhos usados em visitas, um curso de água e áreas que precisam de cuidado. A folha também registra lugares de memória e anota que a versão pública foi simplificada para não divulgar informações consideradas sensíveis pelos participantes. O mapa não reproduz limites de lotes privados nem pretende funcionar como cadastro de propriedade. A equipe responsável incluiu a data e o propósito do material.\n\nQue aspecto do mapa precisa orientar sua interpretação?",
     "options": [
       {
         "key": "A",
-        "text": "Os povos indígenas desapareceram de Santa Catarina após a colonização."
+        "text": "O desenho equivale a um cadastro de terrenos e deve definir a propriedade de cada área.",
+        "targetsError": "reduzir_mapa_comunitario_a_registro_fundiario",
+        "rationale": "O grupo registrou caminhos e referências, sem delimitar lotes."
       },
       {
         "key": "B",
-        "text": "Todos os povos indígenas possuem a mesma língua e cultura."
+        "text": "Os caminhos e lugares de memória expressam relações territoriais além de limites de propriedade.",
+        "rationale": "O mapa reúne usos, encontros e referências escolhidas pelos participantes."
       },
       {
         "key": "C",
-        "text": "Território indígena envolve dimensões materiais, culturais, espirituais e políticas, não apenas propriedade individual da terra."
+        "text": "A ausência de pontos sensíveis prova que eles não fazem parte do espaço representado.",
+        "targetsError": "interpretar_omissao_como_inexistencia",
+        "rationale": "A nota explica que certas informações foram resguardadas."
       },
       {
         "key": "D",
-        "text": "Indígenas vivem apenas em áreas rurais isoladas."
+        "text": "A simplificação limita o que pode ser inferido da versão pública, conforme as escolhas dos participantes.",
+        "targetsError": "confundir_protecao_com_desconhecimento",
+        "rationale": "O desenho público não permite concluir que o grupo desconheça os lugares omitidos."
       },
       {
         "key": "E",
-        "text": "A história catarinense começa com a imigração europeia."
+        "text": "A data do desenho permite determinar quando começaram as relações com o curso de água.",
+        "targetsError": "inferir_inicio_historico_por_data_de_producao",
+        "rationale": "A data situa o mapa, não o início dos usos registrados."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Território indígena envolve dimensões materiais, culturais, espirituais e políticas, não apenas propriedade individual da terra.",
+    "correctOption": "B",
+    "explanation": "O desenho registra caminhos, encontros e memórias e também protege informações; reduzi-lo a cadastro de propriedade ignora esses usos.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-05-CON-03"
     ],
-    "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "territoriality",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-05-Q004",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Povos originários e populações tradicionais de Santa Catarina por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Uma comunidade indígena pediu revisão do traçado de uma estrada planejada perto de áreas de moradia e de circulação. A equipe técnica apresentou três rotas possíveis; os representantes questionaram os efeitos sobre acesso a serviços, indicaram um trecho que deveria ser estudado com mais cuidado e solicitaram outra visita de campo. A prefeitura adiou a decisão e registrou o pedido de nova análise no documento. A ata não diz que a obra foi cancelada nem informa qual rota será escolhida.\n\nQual leitura descreve com precisão o processo registrado?",
     "options": [
       {
         "key": "A",
-        "text": "A expansão colonial e econômica provocou conflitos, expropriações e deslocamentos, mas também houve diversas formas de resistência e negociação."
+        "text": "A prefeitura adiou a escolha para examinar os efeitos das rotas após as objeções apresentadas.",
+        "targetsError": "confundir_pedido_com_decisao_final",
+        "rationale": "A escolha foi adiada para estudar os impactos; o texto não diz que as alternativas foram eliminadas."
       },
       {
         "key": "B",
-        "text": "Os povos indígenas desapareceram de Santa Catarina após a colonização."
+        "text": "A equipe técnica manteve o primeiro traçado sem ouvir os representantes.",
+        "targetsError": "contradizer_a_ata",
+        "rationale": "O registro inclui perguntas e pedido de nova visita."
       },
       {
         "key": "C",
-        "text": "Todos os povos indígenas possuem a mesma língua e cultura."
+        "text": "A nova visita transfere a propriedade das áreas para a prefeitura.",
+        "targetsError": "confundir_consulta_com_titularidade",
+        "rationale": "A ata trata do estudo de rotas, não de transferência de propriedade."
       },
       {
         "key": "D",
-        "text": "Indígenas vivem apenas em áreas rurais isoladas."
+        "text": "O planejamento envolve conflito de interesses e negociação sobre os efeitos da obra.",
+        "rationale": "Rotas alternativas, questionamentos e adiamento indicam uma negociação aberta."
       },
       {
         "key": "E",
-        "text": "A história catarinense começa com a imigração europeia."
+        "text": "O mapa técnico basta para escolher a rota sem considerar os usos locais.",
+        "targetsError": "privilegiar_uma_fonte_de_decisao",
+        "rationale": "A ata registra a solicitação de outra visita e de análise dos efeitos."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A expansão colonial e econômica provocou conflitos, expropriações e deslocamentos, mas também houve diversas formas de resistência e negociação.",
+    "correctOption": "D",
+    "explanation": "A decisão foi adiada após perguntas e pedido de nova visita; o registro mostra negociação, sem confirmar cancelamento ou escolha de rota.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-05-CON-04"
     ],
-    "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "conflict_and_negotiation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-05-Q005",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Guarani, Kaingang e Laklãnõ/Xokleng estão entre os povos indígenas com presença histórica e contemporânea em Santa Catarina.\nII. Os povos indígenas desapareceram de Santa Catarina após a colonização.\nIII. Território indígena envolve dimensões materiais, culturais, espirituais e políticas, não apenas propriedade individual da terra.\nIV. Todos os povos indígenas possuem a mesma língua e cultura.\nAssinale a alternativa CORRETA.",
+    "stem": "Para montar uma linha do tempo sobre uma região catarinense, uma turma encontrou um mapa antigo de caminhos, uma notícia sobre uma escola de língua indígena em funcionamento e relatos recentes de moradores Guarani, Kaingang e Laklãnõ/Xokleng. A professora pediu que os grupos anotassem quem produziu cada fonte, quando e para qual finalidade. Uma equipe sugeriu apresentar os povos indígenas apenas no começo da linha do tempo, antes da colonização, mas outra lembrou que a notícia e os relatos tratam de experiências atuais.\n\nQual organização aproveita melhor as fontes reunidas?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Relacionar fontes de épocas distintas e mostrar experiências indígenas no passado e no presente.",
+        "rationale": "O mapa, a notícia e os relatos tratam de períodos e situações diversos."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Integrar os relatos atuais à linha do tempo, distinguindo seus temas e contextos de produção.",
+        "targetsError": "separar_presenca_atual_do_passado",
+        "rationale": "Os relatos atuais abordam experiências próprias e não devem ser reduzidos a um apêndice sem relação."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Usar a notícia como prova de que os três povos têm experiências iguais.",
+        "targetsError": "homogeneizar_experiencias",
+        "rationale": "Uma notícia sobre uma escola não descreve trajetórias de todos."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Ordenar as fontes pela qualidade da impressão, sem registrar autoria.",
+        "targetsError": "ignorar_proveniencia",
+        "rationale": "A professora pediu autoria, data e finalidade para cada item."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Tratar o mapa antigo como relato direto das comunidades atuais.",
+        "targetsError": "confundir_periodos_e_autorias",
+        "rationale": "O mapa não é contemporâneo aos relatos reunidos."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "A",
+    "explanation": "A notícia e os relatos documentam participação atual, enquanto o mapa oferece outra referência temporal; separá-los apagaria essa relação.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -179,37 +234,48 @@
       "GH-05-CON-03",
       "GH-05-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-05-Q006",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Povos originários e populações tradicionais de Santa Catarina. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Um livro de uma escola imaginária traz uma ilustração genérica de uma aldeia e uma legenda no passado. Durante a revisão, estudantes encontram entrevistas atuais com lideranças indígenas, um calendário escolar organizado com participação de educadores e uma notícia sobre moradores indígenas que vivem em área urbana. A equipe decide substituir a legenda e incluir autoria, local e data nas novas fontes. O grupo também anota que esses materiais não representam, sozinhos, todos os povos e situações do estado.\n\nQual alteração corrige melhor o problema identificado no livro?",
     "options": [
       {
         "key": "A",
-        "text": "Os povos indígenas desapareceram de Santa Catarina após a colonização."
+        "text": "Manter a ilustração e trocar o título para uma expressão mais abrangente.",
+        "targetsError": "manter_representacao_unica",
+        "rationale": "A revisão precisa incluir as fontes atuais encontradas."
       },
       {
         "key": "B",
-        "text": "Todos os povos indígenas possuem a mesma língua e cultura."
+        "text": "Apresentar fontes atuais de contextos distintos, sem sugerir que uma delas represente todos os povos.",
+        "targetsError": "homogeneizar_representacao",
+        "rationale": "Uma cena comum não substitui a identificação de diferenças de contexto entre os povos."
       },
       {
         "key": "C",
-        "text": "Indígenas vivem apenas em áreas rurais isoladas."
+        "text": "Incluir fontes atuais com autoria e contexto e registrar a diversidade de experiências.",
+        "rationale": "A proposta usa os materiais encontrados e declara seus limites."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Retirar a notícia urbana porque a escola trabalha com território rural.",
+        "targetsError": "excluir_presenca_urbana",
+        "rationale": "A notícia amplia as situações abordadas pelo material."
       },
       {
         "key": "E",
-        "text": "Reconhecer diversidade, protagonismo e continuidade histórica dos povos indígenas em fontes e mapas."
+        "text": "Substituir as entrevistas por um resumo que não identifique quem falou.",
+        "targetsError": "apagar_autoria_indigena",
+        "rationale": "A revisão prevê autoria e contexto para as novas fontes."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Reconhecer diversidade, protagonismo e continuidade histórica dos povos indígenas em fontes e mapas.",
+    "correctOption": "C",
+    "explanation": "A ilustração isolada não representa as experiências atuais encontradas; atribuir autoria e contexto às novas fontes amplia o material sem universalizá-las.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -220,37 +286,48 @@
       "GH-05-CON-05",
       "GH-05-CON-06"
     ],
-    "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "representation_and_diversity",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-05-Q007",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Povos originários e populações tradicionais de Santa Catarina?",
+    "stem": "Uma reunião organizada por uma escola inclui uma associação indígena urbana, uma comunidade rural, estudantes e servidores municipais. A pauta contém transporte até a escola, acesso a documentos e a proposta de uma mostra de trabalhos feitos por jovens. Os participantes pediram que a ata identifique quem apresentou cada sugestão e que a versão pública seja enviada para conferência antes da divulgação. O documento não afirma que todas as pessoas presentes tenham os mesmos objetivos ou vivam a mesma experiência.\n\nQual conclusão é apoiada pela agenda?",
     "options": [
       {
         "key": "A",
-        "text": "Guarani, Kaingang e Laklãnõ/Xokleng estão entre os povos indígenas com presença histórica e contemporânea em Santa Catarina."
+        "text": "A associação urbana substitui a participação de comunidades em áreas rurais.",
+        "targetsError": "contrapor_presenca_urbana_e_rural",
+        "rationale": "A pauta inclui os dois grupos no encontro."
       },
       {
         "key": "B",
-        "text": "Povos indígenas não pertencem apenas ao passado: mantêm comunidades, identidades, línguas, direitos e relações urbanas e rurais no presente."
+        "text": "A pauta reúne demandas diferentes, sem indicar que já houve acordo sobre como atendê-las.",
+        "targetsError": "misturar_itens_da_pauta",
+        "rationale": "A pauta registra propostas, mas não informa que houve consenso ou implementação."
       },
       {
         "key": "C",
-        "text": "Estudar povos indígenas exige evitar tratá-los como um grupo único e homogêneo."
+        "text": "O registro da autoria das falas elimina a necessidade de conferência comunitária.",
+        "targetsError": "confundir_identificacao_com_validacao",
+        "rationale": "Os participantes pedem conferência da versão pública."
       },
       {
         "key": "D",
-        "text": "Indígenas vivem apenas em áreas rurais isoladas."
+        "text": "A presença dos servidores torna a reunião uma política de reconhecimento concluída.",
+        "targetsError": "confundir_reuniao_com_resultado_institucional",
+        "rationale": "A pauta registra conversas, não uma política aprovada."
       },
       {
         "key": "E",
-        "text": "A expansão colonial e econômica provocou conflitos, expropriações e deslocamentos, mas também houve diversas formas de resistência e negociação."
+        "text": "A participação ocorre em contextos urbanos e rurais, com propostas diversas.",
+        "rationale": "A agenda reúne participantes e temas distintos sem presumir identidade única."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "E",
+    "explanation": "A agenda mostra participação urbana e rural e pede identificação das propostas e conferência; ela não registra consenso nem política concluída.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -261,37 +338,48 @@
       "GH-05-CON-05",
       "GH-05-CON-06"
     ],
-    "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "contemporary_presence",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-05-Q008",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Povos originários e populações tradicionais de Santa Catarina, qual conclusão final é sustentável?",
+    "stem": "Uma pesquisadora compara o mapa cadastral de uma prefeitura com um mapa elaborado em oficina por moradores indígenas. O primeiro mostra lotes, estradas e serviços públicos; o segundo acrescenta caminhos de visita, locais de encontro e anotações sobre áreas que precisam de proteção. Cada mapa tem uma data e um propósito diferentes. A pesquisadora registra que alguns elementos do segundo material não foram publicados a pedido dos participantes e planeja discutir as escolhas de representação com quem participou da oficina.\n\nComo os mapas devem ser usados na pesquisa?",
     "options": [
       {
         "key": "A",
-        "text": "Os povos indígenas desapareceram de Santa Catarina após a colonização."
+        "text": "Usar o mapa cadastral para questões de lotes e serviços e discutir separadamente os propósitos do mapa comunitário.",
+        "targetsError": "privilegiar_autoridade_institucional",
+        "rationale": "O mapa cadastral informa lotes e serviços, mas não responde sozinho às perguntas comunitárias."
       },
       {
         "key": "B",
-        "text": "Todos os povos indígenas possuem a mesma língua e cultura."
+        "text": "Comparar propósitos e informações dos dois materiais junto aos participantes.",
+        "rationale": "A autoria e a finalidade ajudam a interpretar o que cada mapa registra."
       },
       {
         "key": "C",
-        "text": "Estudar povos indígenas exige evitar tratá-los como um grupo único e homogêneo."
+        "text": "Sobrepor elementos públicos e privados sem discutir as omissões.",
+        "targetsError": "desconsiderar_restricao_de_divulgacao",
+        "rationale": "A nota informa que alguns elementos foram resguardados a pedido."
       },
       {
         "key": "D",
-        "text": "Indígenas vivem apenas em áreas rurais isoladas."
+        "text": "Usar o mapa comunitário para substituir dados sobre estradas e serviços.",
+        "targetsError": "atribuir_a_uma_fonte_o_escopo_de_outra",
+        "rationale": "O primeiro mapa contém dados cadastrais que o segundo pode não priorizar."
       },
       {
         "key": "E",
-        "text": "A história catarinense começa com a imigração europeia."
+        "text": "Tratar as duas datas como prova de que um mapa corrigiu o anterior.",
+        "targetsError": "inventar_revisao_entre_fontes",
+        "rationale": "Os materiais têm propósitos diferentes, sem relação de correção registrada."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Estudar povos indígenas exige evitar tratá-los como um grupo único e homogêneo.",
+    "correctOption": "B",
+    "explanation": "Cada mapa seleciona informações segundo seu propósito, e parte do conteúdo foi resguardada; comparar materiais com os participantes respeita esses limites.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -302,7 +390,7 @@
       "GH-05-CON-05",
       "GH-05-CON-06"
     ],
-    "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   }
 ]

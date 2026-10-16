@@ -2,175 +2,227 @@
   {
     "id": "GH-24-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Ambiente e transformação das paisagens brasileiras, qual afirmação está correta?",
+    "stem": "Uma equipe compara seis áreas brasileiras indicadas no mapa por cores diferentes: Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa. Nas fichas de campo, os estudantes registram variações de vegetação, regime de chuvas, relevo e presença de água. A professora observa que a fronteira política de um estado pode atravessar mais de uma dessas áreas, por isso a turma evita colorir o mapa segundo divisões estaduais.\n\nQue leitura dos dados ambientais é mais adequada?",
     "options": [
       {
         "key": "A",
-        "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        "text": "As cores representam faixas de chuva, cada uma correspondente a uma fronteira estadual.",
+        "targetsError": "cartography",
+        "rationale": "O mapa representa biomas, não faixas de chuva nem fronteiras estaduais."
       },
       {
         "key": "B",
-        "text": "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas."
+        "text": "Caatinga e Pantanal podem ser agrupados porque uma mesma divisão política define seus critérios ambientais.",
+        "targetsError": "cartography",
+        "rationale": "A legenda e as fichas tratam biomas como unidades ambientais, não como grupos definidos por divisão política."
       },
       {
         "key": "C",
-        "text": "Queimadas afetam apenas a área imediatamente queimada."
+        "text": "Os biomas correspondem a unidades ambientais distintas dentro do território brasileiro."
       },
       {
         "key": "D",
-        "text": "Urbanização não interfere em rios e drenagem."
+        "text": "As diferenças de relevo e água permitem usar a fronteira estadual como limite dos biomas.",
+        "targetsError": "cartography",
+        "rationale": "As fichas registram variações ambientais, enquanto o texto distingue os limites de biomas das fronteiras estaduais."
       },
       {
         "key": "E",
-        "text": "Conservação significa necessariamente impedir qualquer presença humana."
+        "text": "As fronteiras estaduais e os limites dos biomas representam informações diferentes.",
+        "targetsError": "cartography",
+        "rationale": "O texto mantém as diferenças ambientais apesar das divisões políticas."
       }
     ],
-    "correctOption": "B",
-    "explanation": "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas.",
+    "correctOption": "C",
+    "explanation": "A legenda separa seis áreas ambientais e as fichas registram diferenças de vegetação, chuva, relevo e água. Agrupá-las por fronteira estadual confunde uma divisão administrativa com a diversidade observada.",
     "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-24-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-24-CON-01"
   },
   {
     "id": "GH-24-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Todos os biomas brasileiros possuem a mesma vegetação e clima.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Em uma bacia fictícia, uma equipe compara duas imagens feitas com quatro anos de intervalo. Na mais recente, uma faixa de vegetação foi removida e há marcas escuras de queima; depois de uma chuva forte, o riacho aparece turvo e parte do solo descoberto foi levada para a margem. Moradores relatam que peixes diminuíram naquele trecho, mas a equipe ainda não mediu a qualidade da água em toda a bacia.\n\nQual hipótese é compatível com as observações?",
     "options": [
       {
         "key": "A",
-        "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        "text": "A remoção de vegetação indica que a cobertura nativa foi substituída por lavoura no trecho observado.",
+        "targetsError": "interpretation",
+        "rationale": "O caderno registra retirada de vegetação e marcas de queima, mas não identifica lavoura no trecho."
       },
       {
         "key": "B",
-        "text": "Queimadas afetam apenas a área imediatamente queimada."
+        "text": "A turbidez parece ligada à chuva, sem indício de relação com a retirada de vegetação e o solo exposto.",
+        "targetsError": "causality",
+        "rationale": "O caderno registra solo descoberto levado até a margem, indício que a hipótese desconsidera."
       },
       {
         "key": "C",
-        "text": "Urbanização não interfere em rios e drenagem."
+        "text": "A comparação registra chuva forte no período recente, sem indicar mudança no regime de chuvas.",
+        "targetsError": "evidence",
+        "rationale": "As imagens e o relato não demonstram que a chuva tenha deixado de ocorrer."
       },
       {
         "key": "D",
-        "text": "Queimadas e desmatamento alteram vegetação, biodiversidade, solos, ciclos de água e emissões de gases de efeito estufa."
+        "text": "O uso do fogo alterou a paisagem e pode estar relacionado à erosão observada."
       },
       {
         "key": "E",
-        "text": "Conservação significa necessariamente impedir qualquer presença humana."
+        "text": "A redução de peixes foi relatada naquele trecho, sem medição em outros pontos da bacia.",
+        "targetsError": "generalization",
+        "rationale": "O relato local não comprova que o impacto se repita em áreas distantes."
       }
     ],
     "correctOption": "D",
-    "explanation": "Queimadas e desmatamento alteram vegetação, biodiversidade, solos, ciclos de água e emissões de gases de efeito estufa.",
+    "explanation": "As imagens mostram remoção de vegetação, marcas de queima e solo levado à margem após a chuva. Esses indícios sustentam uma hipótese de alteração da paisagem e possível erosão, sem provar efeitos em toda a bacia.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-24-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-24-CON-02"
   },
   {
     "id": "GH-24-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: A transformação das paisagens brasileiras combina expansão urbana, agricultura, infraestrutura, mineração e conservação. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Uma equipe mede duas ruas antes e depois da construção de um estacionamento asfaltado. No primeiro levantamento, a área tinha árvores, canteiros permeáveis e uma vala que recebia a água da chuva; no segundo, aumentaram as poças na esquina e a temperatura registrada à tarde ficou mais alta. O consumo de água dos prédios próximos também cresceu durante o verão, segundo as contas apresentadas pelos moradores.\n\nQual interpretação conecta melhor as mudanças descritas?",
     "options": [
       {
         "key": "A",
-        "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        "text": "A impermeabilização pode alterar a drenagem e o calor urbano, além de elevar a demanda por água."
       },
       {
         "key": "B",
-        "text": "Queimadas afetam apenas a área imediatamente queimada."
+        "text": "O asfalto explica as poças, enquanto a temperatura mais alta não se relaciona às mudanças na superfície.",
+        "targetsError": "interpretation",
+        "rationale": "O asfalto e o calor aparecem junto às mudanças na superfície; o relato não separa a temperatura delas."
       },
       {
         "key": "C",
-        "text": "Urbanização modifica drenagem, impermeabilização do solo, ilhas de calor e demanda por água e energia."
+        "text": "A temperatura mais alta foi registrada junto a maior consumo de água, sem indicar queda desse consumo.",
+        "targetsError": "evidence",
+        "rationale": "Os dados apresentados apontam aumento do consumo no verão."
       },
       {
         "key": "D",
-        "text": "Urbanização não interfere em rios e drenagem."
+        "text": "As árvores são o principal fator de drenagem; a pavimentação afeta sobretudo a circulação de veículos.",
+        "targetsError": "causality",
+        "rationale": "A rua reúne asfalto e vegetação reduzida; o texto não atribui a drenagem somente às árvores."
       },
       {
         "key": "E",
-        "text": "Conservação significa necessariamente impedir qualquer presença humana."
+        "text": "O estacionamento explica as poças, enquanto o consumo de água provavelmente explica a alta de temperatura.",
+        "targetsError": "interpretation",
+        "rationale": "O consumo de água aumentou no verão, mas o relato não o identifica como causa da elevação térmica."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Urbanização modifica drenagem, impermeabilização do solo, ilhas de calor e demanda por água e energia.",
+    "correctOption": "A",
+    "explanation": "O estacionamento substituiu áreas permeáveis por asfalto; o relato registra mais poças, temperatura mais alta e maior consumo de água no verão. A interpretação adequada conecta esses sinais sem atribuir a temperatura ao consumo residencial.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-24-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-24-CON-03"
   },
   {
     "id": "GH-24-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Ambiente e transformação das paisagens brasileiras por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "O projeto de uma barragem prevê energia para novas atividades industriais e contratação de trabalhadores durante a obra. Técnicos também estimam que a área do reservatório cobrirá lugares usados por famílias ribeirinhas, alterará áreas de pesca e exigirá mudança de moradia para parte da população. Representantes locais pedem um mapa das comunidades e garantias de consulta antes da decisão. O relatório não calcula todos os efeitos futuros.\n\nQual encaminhamento considera as informações sem reduzir o debate a um único efeito?",
     "options": [
       {
         "key": "A",
-        "text": "Grandes obras, mineração e expansão agropecuária podem gerar benefícios econômicos e também conflitos e impactos territoriais."
+        "text": "A geração de energia e as vagas da obra podem orientar a decisão, com impactos avaliados em etapa posterior.",
+        "targetsError": "evaluation",
+        "rationale": "O projeto prevê impactos territoriais e consulta antes da decisão, não uma avaliação posterior desses efeitos."
       },
       {
         "key": "B",
-        "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        "text": "Analisar impactos territoriais e consulta agora, deixando energia e emprego para uma etapa posterior.",
+        "targetsError": "evaluation",
+        "rationale": "A avaliação deve comparar impactos territoriais com energia e emprego previstos no projeto."
       },
       {
         "key": "C",
-        "text": "Queimadas afetam apenas a área imediatamente queimada."
+        "text": "As vagas temporárias não esclarecem se famílias precisarão mudar de moradia.",
+        "targetsError": "evidence",
+        "rationale": "O relatório prevê deslocamento para parte da população, independentemente das vagas da obra."
       },
       {
         "key": "D",
-        "text": "Urbanização não interfere em rios e drenagem."
+        "text": "Comparar energia e emprego com impactos, consulta e mudanças no território."
       },
       {
         "key": "E",
-        "text": "Conservação significa necessariamente impedir qualquer presença humana."
+        "text": "O relatório estima alguns efeitos e deixa outros futuros sem cálculo completo.",
+        "targetsError": "evidence",
+        "rationale": "A estimativa parcial não confirma que os principais efeitos já estejam mensurados."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Grandes obras, mineração e expansão agropecuária podem gerar benefícios econômicos e também conflitos e impactos territoriais.",
+    "correctOption": "D",
+    "explanation": "O projeto apresenta benefícios econômicos e possíveis deslocamentos e alterações da pesca, enquanto o relatório reconhece limites. A contratação de trabalhadores não elimina a necessidade de avaliar os efeitos territoriais descritos.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "GH-24-CON-04"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-24-CON-04"
   },
   {
     "id": "GH-24-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas.\nII. Todos os biomas brasileiros possuem a mesma vegetação e clima.\nIII. Urbanização modifica drenagem, impermeabilização do solo, ilhas de calor e demanda por água e energia.\nIV. Queimadas afetam apenas a área imediatamente queimada.\nAssinale a alternativa CORRETA.",
+    "stem": "Em três pontos de uma região fictícia, técnicos registraram alterações em anos diferentes: área A, onde a lavoura cresceu, tem menos vegetação nativa; área B, junto a uma cidade que se expandiu, apresenta mais pavimento e poças após a chuva; área C, perto de uma mineração, teve queixas sobre o curso de um córrego. O boletim inclui fotografias, mapas e uma tabela com as datas de cada registro.\n\nQual leitura é sustentada pelo boletim?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Comparar as datas e propor que a pavimentação em B contribuiu para a perda de vegetação em A.",
+        "targetsError": "causality",
+        "rationale": "Os registros se referem a locais diferentes e não demonstram uma relação entre a pavimentação em B e a vegetação em A."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Mudanças de uso da terra podem afetar vegetação, drenagem e recursos hídricos."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A queixa em C permite concluir que a mineração alterou córregos em outras cidades da região.",
+        "targetsError": "generalization",
+        "rationale": "A queixa em um córrego não fornece dados de outros municípios nem identifica por si só a causa."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O boletim registra expansão da lavoura em A, mas não identifica sua causa como urbana.",
+        "targetsError": "causality",
+        "rationale": "Os pontos e datas distintos não sustentam essa relação causal."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "As fotos e mapas permitem formular perguntas que novas medições podem esclarecer.",
+        "targetsError": "methodology",
+        "rationale": "O boletim não considera encerrada a investigação; as fontes não dispensam novas medições."
       }
     ],
     "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "explanation": "Os registros associam lavoura à perda de vegetação, expansão urbana a pavimentação e poças, e mineração a queixas sobre um córrego. Como são pontos e datas distintos, o boletim não demonstra que uma mudança tenha causado outra.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -180,36 +232,47 @@
       "GH-24-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-24-CON-02"
   },
   {
     "id": "GH-24-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Ambiente e transformação das paisagens brasileiras. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Um mapa mostra limites de biomas e outro indica áreas de agricultura, mineração e cidades. Uma notícia local informa que a abertura de uma estrada aumentou o acesso a um trecho de mata próximo a um rio. A estrada aparece no mapa viário com a data de inauguração; nos mapas temáticos, as áreas de uso da terra têm legenda própria. A turma prepara uma legenda para a exposição de mapas.\n\nQual estratégia responde melhor ao exercício?",
     "options": [
       {
         "key": "A",
-        "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        "text": "Cruzar os mapas com a notícia e localizar sobreposições antes de formular hipóteses."
       },
       {
         "key": "B",
-        "text": "Queimadas afetam apenas a área imediatamente queimada."
+        "text": "Usar o mapa de cidades para estimar limites de biomas e conferir essa estimativa depois no mapa temático.",
+        "targetsError": "source_use",
+        "rationale": "O mapa urbano não contém os critérios ambientais para estimar limites de biomas."
       },
       {
         "key": "C",
-        "text": "Urbanização não interfere em rios e drenagem."
+        "text": "Atribuir a estrada ao desmatamento se sua inauguração anteceder as imagens, sem conferir a sobreposição espacial.",
+        "targetsError": "methodology",
+        "rationale": "A ordem temporal ajuda a formular uma hipótese, mas não comprova causalidade sem verificar a localização e as demais evidências."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Distinguir as classes de uso da terra indicadas na legenda dos mapas.",
+        "targetsError": "cartography",
+        "rationale": "Agricultura, mineração e cidades aparecem como categorias diferentes."
       },
       {
         "key": "E",
-        "text": "Cruzar mapa de biomas, uso da terra e texto contextual para identificar causas e consequências territoriais."
+        "text": "Combinar mapa de biomas e notícia basta para estabelecer que a estrada causou perda de mata.",
+        "targetsError": "source_use",
+        "rationale": "A notícia informa maior acesso, mas não registra perda de mata nem prova que a estrada a tenha causado."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Cruzar mapa de biomas, uso da terra e texto contextual para identificar causas e consequências territoriais.",
+    "correctOption": "A",
+    "explanation": "Os dois mapas apresentam camadas diferentes, enquanto a notícia acrescenta uma situação localizada e datada. Usar somente o mapa urbano não permite conferir biomas nem usos do solo.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -221,36 +284,47 @@
       "GH-24-CON-06"
     ],
     "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-24-CON-05"
   },
   {
     "id": "GH-24-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Ambiente e transformação das paisagens brasileiras?",
+    "stem": "Após a construção de novos prédios, parte de uma rua foi coberta por concreto e a vegetação ao redor de um córrego diminuiu. Em dias de chuva forte, a água passou a subir mais depressa perto das casas; no verão, os moradores registraram tardes mais quentes e maior uso de ventiladores. A associação apresenta fotos de diferentes anos, mas ainda não tem medição de vazão do córrego.\n\nQual hipótese explica melhor os sinais observados?",
     "options": [
       {
         "key": "A",
-        "text": "O Brasil possui seis biomas continentais — Amazônia, Cerrado, Mata Atlântica, Caatinga, Pantanal e Pampa — com dinâmicas ambientais distintas."
+        "text": "Os prédios podem explicar as tardes mais quentes; sem medir vazão, não é possível relacionar a chuva à subida da água.",
+        "targetsError": "relationship",
+        "rationale": "A associação observou subida mais rápida da água após a chuva; a falta de vazão medida limita a quantificação, não apaga esse registro."
       },
       {
         "key": "B",
-        "text": "Queimadas e desmatamento alteram vegetação, biodiversidade, solos, ciclos de água e emissões de gases de efeito estufa."
+        "text": "A cobertura de concreto pode reduzir infiltração e elevar o escoamento superficial."
       },
       {
         "key": "C",
-        "text": "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas."
+        "text": "As tardes mais quentes são um indício urbano, mas não medem a vazão na estação seca.",
+        "targetsError": "evidence",
+        "rationale": "O relato não apresenta medições sazonais de vazão."
       },
       {
         "key": "D",
-        "text": "Urbanização não interfere em rios e drenagem."
+        "text": "O uso de ventiladores acompanha o calor relatado, sem explicar a subida da água após a chuva.",
+        "targetsError": "causality",
+        "rationale": "A subida é associada às chuvas e às mudanças na superfície, não aos aparelhos."
       },
       {
         "key": "E",
-        "text": "Grandes obras, mineração e expansão agropecuária podem gerar benefícios econômicos e também conflitos e impactos territoriais."
+        "text": "A redução da vegetação pode elevar o calor, enquanto a subida rápida do córrego depende da intensidade da chuva.",
+        "targetsError": "interpretation",
+        "rationale": "O relato liga a subida rápida à chuva e às mudanças de superfície, sem atribuí-la somente à intensidade da chuva."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "B",
+    "explanation": "O relato relaciona a cobertura de concreto e a redução de vegetação com água subindo mais rápido após a chuva. A hipótese de maior infiltração contradiz a substituição de superfícies permeáveis por pavimento.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -262,36 +336,47 @@
       "GH-24-CON-06"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-24-CON-03"
   },
   {
     "id": "GH-24-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Ambiente e transformação das paisagens brasileiras, qual conclusão final é sustentável?",
+    "stem": "Uma área protegida inclui trechos de mata, nascentes e lugares de uso de uma comunidade local. A proposta prevê monitorar espécies, manter caminhos de acesso a atividades tradicionais e apoiar uma feira de produtos da região. O grupo técnico também recomenda consulta pública, orçamento de fiscalização e revisão periódica do plano caso novos dados de água ou biodiversidade apareçam.\n\nQual princípio orienta essa proposta de conservação?",
     "options": [
       {
         "key": "A",
-        "text": "Todos os biomas brasileiros possuem a mesma vegetação e clima."
+        "text": "O plano pode manter atividades comunitárias, deixando o monitoramento de espécies a cargo da feira local.",
+        "targetsError": "interpretation",
+        "rationale": "O plano atribui o monitoramento à equipe técnica, enquanto a feira é uma atividade econômica local."
       },
       {
         "key": "B",
-        "text": "Queimadas afetam apenas a área imediatamente queimada."
+        "text": "A feira pode integrar a economia local, enquanto o monitoramento se limita às espécies mais procuradas.",
+        "targetsError": "interpretation",
+        "rationale": "A proposta não restringe o monitoramento às espécies procuradas na feira."
       },
       {
         "key": "C",
-        "text": "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas."
+        "text": "A fiscalização pode priorizar os limites da área, revendo o acesso comunitário em etapa posterior.",
+        "targetsError": "interpretation",
+        "rationale": "A fiscalização não substitui os caminhos de acesso comunitário previstos no plano."
       },
       {
         "key": "D",
-        "text": "Urbanização não interfere em rios e drenagem."
+        "text": "A revisão dos limites pode aguardar a conclusão do monitoramento, antes de iniciar consulta pública.",
+        "targetsError": "methodology",
+        "rationale": "A proposta prevê consulta pública e revisão periódica, sem exigir que a consulta espere o fim do monitoramento."
       },
       {
         "key": "E",
-        "text": "Conservação significa necessariamente impedir qualquer presença humana."
+        "text": "Considerar biodiversidade, população local, economia e política pública em conjunto."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Conservação ambiental exige considerar biodiversidade, populações locais, atividades econômicas e políticas públicas.",
+    "correctOption": "E",
+    "explanation": "A proposta combina proteção de espécies, acesso e atividades comunitárias, feira local, consulta, fiscalização e revisão do plano. O princípio de manejo integrado considera essas dimensões em conjunto.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -303,6 +388,9 @@
       "GH-24-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-24-CON-05"
   }
 ]

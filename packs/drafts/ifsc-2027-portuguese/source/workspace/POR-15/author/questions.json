@@ -5,300 +5,380 @@
     {
       "id": "POR-15-Q01",
       "lessonId": "POR-15",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Ambiguidade, duplo sentido e desambiguação em uso real da língua?",
+      "stem": "Qual ponto da mensagem permite interpretações diferentes?",
       "options": [
         {
           "id": "A",
-          "text": "Se há duas leituras nenhuma pode ser defendida."
+          "text": "A expressão “antes de subir” pode indicar dois andares diferentes do prédio.",
+          "targetsError": "interpretation",
+          "rationale": "O texto não informa quantos andares existem nem usa essa expressão para nomear o objeto procurado."
         },
         {
           "id": "B",
-          "text": "Ambiguidade só vem de palavras polissêmicas."
+          "text": "A mensagem orienta levar as cadeiras ao andar superior antes do ensaio começar.",
+          "targetsError": "conceptual",
+          "rationale": "A frase dá uma instrução de trajeto, mas não explica por que uma pessoa buscou a chave no chaveiro e outra na caixa de ferramentas."
         },
         {
           "id": "C",
-          "text": "Literatura deve eliminar duplo sentido."
+          "text": "O grupo não sabe se as cadeiras pertencem à oficina de teatro.",
+          "targetsError": "attention",
+          "rationale": "A mensagem menciona as cadeiras como contexto da ferramenta, mas não questiona quem é seu dono."
         },
         {
           "id": "D",
-          "text": "Ambiguidade ocorre quando um enunciado admite mais de uma interpretação relevante."
+          "text": "“Chave” pode nomear tanto a peça da porta quanto a ferramenta que ajusta as cadeiras."
         },
         {
           "id": "E",
-          "text": "Toda ambiguidade é erro gramatical."
+          "text": "A palavra “ensaio” pode indicar uma tentativa de ajuste das cadeiras.",
+          "targetsError": "memory",
+          "rationale": "No relato, o ensaio é a atividade de teatro que aguardava a equipe, não uma etapa de manutenção."
         }
       ],
       "correctOption": "D",
-      "explanation": "Ambiguidade ocorre quando um enunciado admite mais de uma interpretação relevante.",
-      "difficulty": "foundation",
-      "cognitiveOperation": "recognize",
+      "explanation": "O armário guardava tanto a chave da sala quanto uma chave inglesa, e a mensagem usa somente “a chave”. A hipótese sobre o balcão não resolve a dúvida, pois o texto já situa ali o ponto de retirada.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-15-C01"
       ],
-      "targetedError": "Toda ambiguidade é erro gramatical.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Atribuir a dúvida a uma expressão de lugar, embora ela recaia sobre o nome do objeto.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Mensagem no grupo da oficina de teatro, 6 de março — “Deixei a chave no balcão da portaria; pegue antes de subir.” Naquele dia, a equipe guardava no mesmo armário a chave da sala e uma chave inglesa usada para ajustar as cadeiras. A pessoa que escreveu a mensagem não acompanhou a montagem e saiu antes de responder às dúvidas. Quando duas pessoas chegaram ao balcão, uma procurou no chaveiro e a outra abriu a caixa de ferramentas. O ensaio começou atrasado enquanto o grupo tentava descobrir qual objeto havia sido deixado."
     },
     {
       "id": "POR-15-Q02",
       "lessonId": "POR-15",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Ambiguidade, duplo sentido e desambiguação, qual princípio deve orientar a análise?",
+      "stem": "Qual reescrita esclarece que o professor usou o telescópio?",
       "options": [
         {
           "id": "A",
-          "text": "Ela pode surgir de polissemia, posição de termos, referência pronominal, adjuntos ou estrutura sintática."
+          "text": "Usando o telescópio, o professor observou o cometa com a turma no terraço."
         },
         {
           "id": "B",
-          "text": "Ambiguidade só vem de palavras polissêmicas."
+          "text": "O professor observou o cometa que estava com o telescópio no terraço.",
+          "targetsError": "conceptual",
+          "rationale": "A construção aproxima o instrumento do cometa e deixa sem indicação quem o utilizou."
         },
         {
           "id": "C",
-          "text": "Literatura deve eliminar duplo sentido."
+          "text": "O cometa foi observado pelo professor, pelo telescópio e pelos estudantes.",
+          "targetsError": "interpretation",
+          "rationale": "A frase enumera o aparelho como se fosse observador e não esclarece sua relação com a ação."
         },
         {
           "id": "D",
-          "text": "Toda ambiguidade é erro gramatical."
+          "text": "A estudante usou o telescópio quando o professor observou o cometa.",
+          "targetsError": "attention",
+          "rationale": "Essa versão atribui o instrumento à estudante, contrariando a informação que a questão quer preservar."
         },
         {
           "id": "E",
-          "text": "Se há duas leituras nenhuma pode ser defendida."
+          "text": "O professor e o telescópio observaram o cometa ao lado dos alunos.",
+          "targetsError": "prerequisite",
+          "rationale": "O sujeito composto muda o papel do aparelho e mantém a construção sem indicar seu uso pelo professor."
         }
       ],
       "correctOption": "A",
-      "explanation": "Ela pode surgir de polissemia, posição de termos, referência pronominal, adjuntos ou estrutura sintática.",
-      "difficulty": "direct",
-      "cognitiveOperation": "understand",
+      "explanation": "A oração inicial “Usando o telescópio” associa o instrumento à ação do professor, que continua sendo quem observa o cometa. A alternativa que coloca o aparelho junto ao cometa conserva a ligação incerta da frase original.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-15-C02"
       ],
-      "targetedError": "Se há duas leituras nenhuma pode ser defendida.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Deixar o adjunto ligado ao nome mais próximo em vez de explicitar quem utiliza o instrumento.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Relato da observação do céu no terraço, 18 de abril — Durante a atividade, a estudante anotou: “O professor observou o cometa com o telescópio.” A turma havia levado um aparelho para a sessão, e o professor o ajustara antes da chegada dos alunos. No fim do encontro, uma fotografia mostrou a estudante ao lado do tripé, enquanto o professor apontava para o céu. O relatório será enviado às famílias, que não viram a imagem. A professora de português pediu uma frase que deixe claro quem manuseava o instrumento durante a observação."
     },
     {
       "id": "POR-15-Q03",
       "lessonId": "POR-15",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Ambiguidade, duplo sentido e desambiguação?",
+      "stem": "Que recurso ajuda o cartaz a ligar o local da feira à ideia de leitura?",
       "options": [
         {
           "id": "A",
-          "text": "Literatura deve eliminar duplo sentido."
+          "text": "A frase informa que os ônibus continuarão circulando durante a feira.",
+          "targetsError": "interpretation",
+          "rationale": "O cartaz usa o ponto final como referência espacial, mas não apresenta horário ou serviço de transporte."
         },
         {
           "id": "B",
-          "text": "Toda ambiguidade é erro gramatical."
+          "text": "O desenho transforma a troca de livros em uma atividade de embarque.",
+          "targetsError": "attention",
+          "rationale": "A pilha de romances e a recomendação escrita apontam para leitura e circulação de obras, não para passageiros."
         },
         {
           "id": "C",
-          "text": "Em humor e publicidade, duplo sentido pode ser intencional e produzir efeito."
+          "text": "A chamada aproxima o ponto final da linha de ônibus do fechamento de um livro."
         },
         {
           "id": "D",
-          "text": "Se há duas leituras nenhuma pode ser defendida."
+          "text": "A frase anuncia que a última página da feira será impressa no terminal.",
+          "targetsError": "conceptual",
+          "rationale": "A leitura continua na tenda; o cartaz não prevê uma publicação nem uma página produzida ali."
         },
         {
           "id": "E",
-          "text": "Ambiguidade só vem de palavras polissêmicas."
+          "text": "O título condiciona o início da feira ao momento em que um ônibus chega ao terminal.",
+          "targetsError": "procedural",
+          "rationale": "A cena do ônibus contribui para o jogo verbal, mas não condiciona o horário do evento."
         }
       ],
       "correctOption": "C",
-      "explanation": "Em humor e publicidade, duplo sentido pode ser intencional e produzir efeito.",
+      "explanation": "A imagem do ônibus situa a feira no terminal, enquanto a referência ao fim de um texto conversa com os romances e as recomendações. A leitura de uma instrução de trânsito falha porque o cartaz não fornece horário nem ordem de embarque.",
       "difficulty": "applied",
-      "cognitiveOperation": "discriminate",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-15-C03"
       ],
-      "targetedError": "Ambiguidade só vem de palavras polissêmicas.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler a chamada como aviso literal de transporte e perder a aproximação com o universo dos livros.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Cartaz da Feira do Livro da Estação, 10 de maio — “No ponto final, a leitura continua.” A frase foi impressa ao lado de uma ilustração de ônibus parado e de uma pilha de romances sobre o banco da praça. O evento ocorre perto do terminal, onde várias linhas encerram o trajeto; dentro da tenda, leitores podem trocar livros e escrever uma recomendação para a próxima pessoa. Os organizadores escolheram o título depois de ouvir uma conversa sobre o fim de uma viagem e o momento em que se fecha um livro."
     },
     {
       "id": "POR-15-Q04",
       "lessonId": "POR-15",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Ambiguidade, duplo sentido e desambiguação?",
+      "stem": "Qual alteração deixa explícito que Denise conferiu os valores?",
       "options": [
         {
           "id": "A",
-          "text": "Toda ambiguidade é erro gramatical."
+          "text": "Marina entregou a pasta a Denise após ela conferir os valores arrecadados.",
+          "targetsError": "attention",
+          "rationale": "A forma “ela” continua podendo retomar Marina ou Denise."
         },
         {
           "id": "B",
-          "text": "Se há duas leituras nenhuma pode ser defendida."
+          "text": "Depois da conferência, a pasta foi entregue durante a quermesse às duas estudantes.",
+          "targetsError": "interpretation",
+          "rationale": "A ata situa a entrega após a conferência, mas não diz que ocorreu durante a festa nem que ambas receberam a pasta."
         },
         {
           "id": "C",
-          "text": "Ambiguidade só vem de palavras polissêmicas."
+          "text": "A tesoureira entregou a pasta a Denise, que guardou os recibos da barraca de suco.",
+          "targetsError": "memory",
+          "rationale": "A ata atribui a entrega a Marina e menciona recibos de duas barracas; essa versão troca a agente e reduz o registro."
         },
         {
           "id": "D",
-          "text": "Literatura deve eliminar duplo sentido."
+          "text": "Marina entregou os valores a Denise depois de conferir a pasta arrecadada.",
+          "targetsError": "conceptual",
+          "rationale": "A troca de nomes dos objetos altera o que foi conferido e o que passou de uma estudante a outra."
         },
         {
           "id": "E",
-          "text": "Em textos informativos/jurídicos/instrucionais, ambiguidade não planejada pode prejudicar clareza."
+          "text": "Após conferir os valores, Denise recebeu de Marina a pasta com os recibos."
         }
       ],
       "correctOption": "E",
-      "explanation": "Em textos informativos/jurídicos/instrucionais, ambiguidade não planejada pode prejudicar clareza.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "apply",
+      "explanation": "A nova frase nomeia Denise como quem confere e Marina como quem entrega a pasta. Manter o pronome “ela” deixaria em aberto qual das duas estudantes verificou os valores.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-15-C04"
       ],
-      "targetedError": "Literatura deve eliminar duplo sentido.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Preservar um pronome cujo referente pode ser qualquer uma das duas participantes mencionadas.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Trecho da ata do grêmio, 21 de junho — Marina entregou a pasta a Denise depois que ela conferiu os valores arrecadados na quermesse. O documento registra que as duas estudantes participaram da contagem e que Denise ficou responsável por guardar os recibos. Na revisão, o secretário percebeu que leitores que não acompanharam a reunião talvez não saibam quem verificou os números. A pasta contém comprovantes das barracas de suco e artesanato, e a tesoureira precisa apresentar o total na reunião de segunda-feira."
     },
     {
       "id": "POR-15-Q05",
       "lessonId": "POR-15",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Ambiguidade, duplo sentido e desambiguação?",
+      "stem": "Que leitura a frase inicial pode provocar e por que a revisão é necessária?",
       "options": [
         {
           "id": "A",
-          "text": "Se há duas leituras nenhuma pode ser defendida."
+          "text": "Ela pode soar como se ninguém tivesse recebido, apesar de parte ter recebido."
         },
         {
           "id": "B",
-          "text": "Desambiguar exige reescrever para tornar explícita a relação pretendida."
+          "text": "Ela indica que cada família recebeu dois e-mails, mas a secretaria enviou um só.",
+          "targetsError": "interpretation",
+          "rationale": "A frase não informa quantidade de mensagens por pessoa; o problema está no alcance de “não” em relação a “todos”."
         },
         {
           "id": "C",
-          "text": "Ambiguidade só vem de palavras polissêmicas."
+          "text": "Ela descreve que as famílias recusaram a autorização depois de abrir o arquivo.",
+          "targetsError": "attention",
+          "rationale": "A secretaria relata uma falha no envio, sem mencionar uma recusa por parte dos responsáveis."
         },
         {
           "id": "D",
-          "text": "Literatura deve eliminar duplo sentido."
+          "text": "Ela confirma que a lista de contatos ficou vazia antes do disparo.",
+          "targetsError": "memory",
+          "rationale": "A mensagem informa que algumas pessoas receberam o documento, portanto havia endereços atendidos."
         },
         {
           "id": "E",
-          "text": "Toda ambiguidade é erro gramatical."
+          "text": "Ela associa o envio às famílias presentes na reunião, critério ausente do aviso.",
+          "targetsError": "conceptual",
+          "rationale": "O texto fala de inscritos e recebimento desigual, sem vincular a entrega à presença no encontro."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Desambiguar exige reescrever para tornar explícita a relação pretendida.",
+      "correctOption": "A",
+      "explanation": "Com “todos” antes de “não”, a frase pode soar como negação do recebimento pelo conjunto inteiro, embora a secretaria relate que parte recebeu. A revisão precisa colocar em palavras a intenção de comunicar que alguns inscritos ainda não tiveram acesso ao documento.",
       "difficulty": "applied",
-      "cognitiveOperation": "evaluate",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-15-C05"
       ],
-      "targetedError": "Toda ambiguidade é erro gramatical.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ignorar que a posição da negação pode ampliar seu alcance sobre o grupo mencionado.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Mensagem enviada aos responsáveis, 2 de agosto — “Todos os inscritos não receberam a autorização por e-mail.” A secretaria publicou a frase depois de uma falha na lista de contatos. Na manhã seguinte, algumas famílias disseram que receberam o documento, enquanto outras procuraram a secretaria para pedir uma cópia. A responsável pela comunicação explicou que pretendia informar que parte dos inscritos ainda não havia recebido a autorização. A mensagem original será substituída antes da próxima reunião, para que as famílias entendam quem precisa conferir a caixa de entrada."
     },
     {
       "id": "POR-15-Q06",
       "lessonId": "POR-15",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Ambiguidade, duplo sentido e desambiguação, qual análise está correta?",
+      "stem": "Qual versão elimina a dúvida de ligação da expressão “com o guarda-chuva amarelo”?",
       "options": [
         {
           "id": "A",
-          "text": "Ambiguidade só vem de palavras polissêmicas."
+          "text": "No pátio, a fotógrafa registrou a professora ao lado do guarda-chuva, sem identificar quem o segurava.",
+          "targetsError": "interpretation",
+          "rationale": "A frase reúne os dois elementos fotografados sem dizer quem segurava o objeto."
         },
         {
           "id": "B",
-          "text": "Literatura deve eliminar duplo sentido."
+          "text": "A professora, com seu guarda-chuva amarelo, foi fotografada pela fotógrafa no pátio."
         },
         {
           "id": "C",
-          "text": "Toda ambiguidade é erro gramatical."
+          "text": "A fotógrafa usou uma câmera no pátio para registrar a professora entrevistada.",
+          "targetsError": "attention",
+          "rationale": "Essa versão inclui a câmera, mas deixa de mencionar o guarda-chuva cuja posição motivou a revisão."
         },
         {
           "id": "D",
-          "text": "Nem toda multiplicidade de interpretação é erro; gênero e intenção determinam se o recurso é produtivo."
+          "text": "A professora fotografou a estudante com o guarda-chuva amarelo durante a entrevista no pátio.",
+          "targetsError": "memory",
+          "rationale": "A troca de papéis faz da professora a fotógrafa, embora a nota atribua a foto à estudante."
         },
         {
           "id": "E",
-          "text": "Se há duas leituras nenhuma pode ser defendida."
+          "text": "O guarda-chuva amarelo registrou a professora e a fotógrafa durante a entrevista.",
+          "targetsError": "conceptual",
+          "rationale": "O objeto não é o agente da fotografia; a construção desloca indevidamente o papel de quem fez o registro."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Nem toda multiplicidade de interpretação é erro; gênero e intenção determinam se o recurso é produtivo.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "analyze",
+      "correctOption": "B",
+      "explanation": "A expressão entre vírgulas liga o guarda-chuva à professora, e “foi fotografada” mantém a fotógrafa como agente da imagem. A primeira reescrita não esclarece quem segurava o objeto, pois apenas o coloca entre os itens registrados.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-15-C06"
       ],
-      "targetedError": "Se há duas leituras nenhuma pode ser defendida.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Reorganizar a frase sem estabelecer a relação entre o objeto citado e sua possuidora.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Nota de edição do jornal estudantil, 15 de setembro — A legenda enviada à gráfica diz: “A fotógrafa registrou a professora no pátio com o guarda-chuva amarelo.” O texto de apoio confirma que a professora segurava o guarda-chuva durante a entrevista; a fotógrafa usava uma câmera pendurada no ombro. A imagem será impressa em preto e branco e não permitirá distinguir a cor do objeto. Para não depender da fotografia, o editor pediu uma legenda que mantenha a informação sobre quem estava com o guarda-chuva e preserve o local do encontro."
     },
     {
       "id": "POR-15-Q07",
       "lessonId": "POR-15",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Toda ambiguidade é erro gramatical.”. Qual é a melhor correção?",
+      "stem": "Qual revisão preserva a cena descrita e remove a dúvida sintática?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "Na reserva técnica, a curadora encontrou a restauradora que segurava o catálogo."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "A curadora encontrou o catálogo na reserva técnica com a restauradora.",
+          "targetsError": "conceptual",
+          "rationale": "A expressão final ainda pode caracterizar o encontro ou o local, sem dizer quem segurava o catálogo."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "O catálogo encontrou a curadora enquanto a restauradora estava na reserva técnica.",
+          "targetsError": "attention",
+          "rationale": "A frase atribui ao catálogo uma ação e altera a sequência registrada no bilhete."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "A restauradora encontrou a curadora com o catálogo da reserva técnica.",
+          "targetsError": "interpretation",
+          "rationale": "A nova ordem atribui a iniciativa à restauradora e pode tratar o catálogo como material da sala."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Com o catálogo, a curadora e a restauradora foram encontradas na reserva técnica.",
+          "targetsError": "memory",
+          "rationale": "A voz passiva não identifica quem carregava o objeto nem quem localizou as duas profissionais."
         }
       ],
       "correctOption": "A",
-      "explanation": "Ambiguidade ocorre quando um enunciado admite mais de uma interpretação relevante.",
+      "explanation": "A oração “que segurava o catálogo” retoma a restauradora e explicita o vínculo descrito pela equipe. A alternativa que desloca “com a restauradora” para o fim mantém dúvida sobre quem portava o documento.",
       "difficulty": "applied",
-      "cognitiveOperation": "diagnose_error",
-      "concepts": [
-        "POR-15-C01"
-      ],
-      "targetedError": "Toda ambiguidade é erro gramatical.",
-      "provenance": "VECTA_ORIGINAL"
-    },
-    {
-      "id": "POR-15-Q08",
-      "lessonId": "POR-15",
-      "type": "MCQ",
-      "stimulus": "“Vi a professora com o binóculo” pode indicar que quem viu usou o binóculo ou que a professora estava com ele.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
-      "options": [
-        {
-          "id": "A",
-          "text": "O trecho não permite nenhuma análise."
-        },
-        {
-          "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
-        },
-        {
-          "id": "C",
-          "text": "A ambiguidade decorre do encaixe de “com o binóculo”; a reescrita deve explicitar quem possui/usa o instrumento."
-        },
-        {
-          "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
-        },
-        {
-          "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "A ambiguidade decorre do encaixe de “com o binóculo”; a reescrita deve explicitar quem possui/usa o instrumento.",
-      "difficulty": "ifsc",
       "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-15-C01",
         "POR-15-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Manter uma expressão preposicionada cuja ligação pode recair sobre dois participantes da cena.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Bilhete de entrega da exposição, 3 de outubro — “A curadora encontrou a restauradora com o catálogo na reserva técnica.” A equipe registrou que a restauradora estava segurando o catálogo quando foi chamada para conferir a etiqueta de uma peça. No primeiro rascunho, ninguém incluiu essa informação porque todos tinham visto a cena. Agora o bilhete acompanhará uma caixa de documentos enviada a outro campus, onde os leitores não conhecem as participantes nem o trabalho de montagem. A curadora quer manter o lugar do encontro e indicar claramente quem carregava o catálogo."
+    },
+    {
+      "id": "POR-15-Q08",
+      "lessonId": "POR-15",
+      "version": 2,
+      "type": "MCQ",
+      "stem": "Qual interpretação contempla os dois sentidos mobilizados pela chamada?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O centro terá uma sessão dedicada a relatos sobre mudança de endereço.",
+          "targetsError": "interpretation",
+          "rationale": "O texto não prevê um tema específico sobre moradia ou deslocamento de participantes."
+        },
+        {
+          "id": "B",
+          "text": "A frase descreve o espaço entre as cadeiras e desconsidera a oficina de escrita anunciada.",
+          "targetsError": "attention",
+          "rationale": "A roda retratada sugere a sala, mas a programação também convida pessoas a ler relatos."
+        },
+        {
+          "id": "C",
+          "text": "“Espaço” aponta para a sala preparada e para a oportunidade de compartilhar histórias na oficina."
+        },
+        {
+          "id": "D",
+          "text": "O cartaz promete que os mapas dos moradores serão publicados em um livro.",
+          "targetsError": "memory",
+          "rationale": "A exposição é citada como parte do centro cultural, sem anúncio de edição ou publicação."
+        },
+        {
+          "id": "E",
+          "text": "A oficina substituirá a exposição por um conjunto maior de cadeiras.",
+          "targetsError": "conceptual",
+          "rationale": "A frase relaciona espaço à sala e à participação; não anuncia mudança na exposição ou no mobiliário."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A fotografia mostra espaço físico preparado para o grupo, e a programação abre lugar para participantes apresentarem relatos. A leitura restrita às cadeiras deixa de considerar a atividade de escrita anunciada na página.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
+      "concepts": [
+        "POR-15-C03",
+        "POR-15-C06"
+      ],
+      "targetedError": "Escolher apenas a referência espacial e ignorar a oportunidade de participação sugerida pela chamada.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Página de divulgação do Centro Cultural do Mercado, 12 de novembro — “A oficina de escrita abre espaço para novas histórias.” O texto aparece ao lado de uma fotografia da sala recém-reformada, com cadeiras afastadas para formar uma roda. A programação informa que cada participante poderá levar um relato curto para leitura coletiva e que há vinte lugares disponíveis. O espaço também abriga uma pequena exposição de mapas desenhados por moradores. Ao fim da reunião, a equipe aprovou a arte para ser afixada na entrada e no mural de avisos."
     }
   ]
 }

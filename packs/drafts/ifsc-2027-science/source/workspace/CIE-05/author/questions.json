@@ -2,139 +2,180 @@
   {
     "id": "CIE-05-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de fontes, transformações e conservação de energia, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Registro de pedalada feito por Isabela em 2 de agosto de 2026: em uma subida curta, ela sentiu esforço nas pernas e observou a roda traseira girar. Ao parar no topo, a bicicleta estava mais alta que no início, e os freios ficaram mornos após a descida. A equipe não mediu calor nem velocidade; anotou as formas de energia que ajudam a descrever o alimento utilizado pelo corpo, o movimento da bicicleta e o aquecimento dos freios.\n\nQual sequência representa melhor as transformações observadas?",
     "options": [
       {
         "key": "A",
-        "text": "Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora."
+        "text": "A energia térmica dos freios vira energia química armazenada na subida.",
+        "targetsError": "conceptual",
+        "rationale": "Inverte a sequência entre esforço, movimento e aquecimento."
       },
       {
         "key": "B",
-        "text": "Conservação de energia significa que toda energia continua igualmente útil."
+        "text": "A bicicleta converte a energia cinética da roda em matéria para subir.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde transformação de energia com produção de matéria."
       },
       {
         "key": "C",
-        "text": "Energia é criada sempre que um aparelho é ligado."
+        "text": "O movimento aparece sem relação com o alimento usado pelo organismo.",
+        "targetsError": "interpretation",
+        "rationale": "Ignora a fonte química descrita no registro."
       },
       {
         "key": "D",
-        "text": "Energia térmica não participa de transformações em equipamentos elétricos."
+        "text": "O atrito dos freios transforma calor em energia química que eleva a bicicleta.",
+        "targetsError": "conceptual",
+        "rationale": "Inverte a transformação e trata o calor dos freios como fonte química da subida."
       },
       {
         "key": "E",
-        "text": "Toda fonte renovável é isenta de impactos ambientais."
+        "text": "A energia química ajuda no movimento, com parte transferida aos freios como calor."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora.",
+    "correctOption": "E",
+    "explanation": "A energia química do organismo participa do movimento da bicicleta, e parte se dissipa como energia térmica nos freios. A opção que diz que o calor desaparece não representa a transferência observada.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-05-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-05-CON-01"
   },
   {
     "id": "CIE-05-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar fontes, transformações e conservação de energia sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Relato da oficina de brinquedos de Gustavo, de 5 de agosto de 2026: uma pilha foi instalada em uma lanterna pequena. Ao fechar o interruptor, a lâmpada acendeu e a carcaça ficou levemente aquecida depois de alguns minutos. A turma comparou a situação com a mesma lanterna desligada, guardada na gaveta. O professor pediu que registrassem as formas de energia antes e durante o funcionamento, sem afirmar que a pilha produziu luz diretamente ou que toda energia recebida teve um único destino.\n\nQual transformação está de acordo com a observação?",
     "options": [
       {
         "key": "A",
-        "text": "Toda fonte renovável é isenta de impactos ambientais."
+        "text": "A lanterna transforma luz ambiente em energia química enquanto o interruptor está fechado.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte a fonte e o sentido de funcionamento descritos."
       },
       {
         "key": "B",
-        "text": "Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação."
+        "text": "A pilha converte energia térmica da carcaça em energia elétrica que alimenta a lâmpada.",
+        "targetsError": "conceptual",
+        "rationale": "Toma o aquecimento observado como fonte elétrica da lanterna."
       },
       {
         "key": "C",
-        "text": "Energia é criada sempre que um aparelho é ligado."
+        "text": "O interruptor cria energia luminosa quando encosta nos contatos da pilha.",
+        "targetsError": "conceptual",
+        "rationale": "Atribui ao controle a função da fonte de energia."
       },
       {
         "key": "D",
-        "text": "Conservação de energia significa que toda energia continua igualmente útil."
+        "text": "A energia química participa do circuito e aparece como luz e aquecimento."
       },
       {
         "key": "E",
-        "text": "Energia térmica não participa de transformações em equipamentos elétricos."
+        "text": "A lanterna usa energia sonora da pilha para aquecer sua carcaça e acender.",
+        "targetsError": "conceptual",
+        "rationale": "Introduz energia sonora sem indício no experimento."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação.",
+    "correctOption": "D",
+    "explanation": "A pilha fornece energia química que participa do circuito elétrico; a lâmpada emite luz e também há aquecimento. A leitura que atribui toda a energia apenas à luz deixa de explicar a carcaça morna.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-05-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-05-CON-02"
   },
   {
     "id": "CIE-05-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em fontes, transformações e conservação de energia?",
+    "stem": "Nota de manutenção assinada por Davi em 8 de agosto de 2026: um pequeno ventilador funcionou durante uma atividade de sala. A hélice moveu o ar, o motor produziu um ruído baixo e a grade ficou um pouco aquecida. O grupo repetiu o uso por períodos iguais e percebeu que parte da energia era direcionada ao movimento desejado, enquanto outros efeitos também apareciam. A professora pediu que distinguissem a saída útil do aparelho das transferências que se espalham pelo entorno.\n\nQual interpretação descreve melhor esses efeitos?",
     "options": [
       {
         "key": "A",
-        "text": "Energia é criada sempre que um aparelho é ligado."
+        "text": "Parte da energia chega ao movimento do ar, e parte aparece como som e calor."
       },
       {
         "key": "B",
-        "text": "Toda fonte renovável é isenta de impactos ambientais."
+        "text": "O ruído mostra que a hélice converteu a energia do motor em matéria.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde uma forma de energia com produção de matéria."
       },
       {
         "key": "C",
-        "text": "Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada."
+        "text": "O aquecimento da grade é a principal saída útil do ventilador nesta situação.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde um efeito térmico secundário com a função de movimentar o ar."
       },
       {
         "key": "D",
-        "text": "Conservação de energia significa que toda energia continua igualmente útil."
+        "text": "O aparelho retém energia no motor e não transfere nada ao ambiente.",
+        "targetsError": "interpretation",
+        "rationale": "Ignora movimento, som e aquecimento anotados."
       },
       {
         "key": "E",
-        "text": "Energia térmica não participa de transformações em equipamentos elétricos."
+        "text": "O movimento do ar elimina a energia que antes estava no circuito.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde transformação com desaparecimento."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada.",
+    "correctOption": "A",
+    "explanation": "O ventilador transfere energia para o movimento do ar e também para som e aquecimento. A alternativa que considera útil somente a luz acrescenta uma saída que o registro não apresenta.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-05-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-05-CON-03"
   },
   {
     "id": "CIE-05-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma lâmpada LED recebe energia elétrica. Qual descrição é adequada?",
+    "stem": "Caderno de passeio de Pedro, datado de 11 de agosto de 2026: uma bola foi solta do alto de uma rampa de madeira e rolou até uma região plana. Durante a descida, ela ficou mais rápida; no trecho plano, percorreu algum espaço antes de parar. O grupo observou que a superfície tinha pequenas irregularidades e que a bola não voltou à altura inicial. A atividade pedia uma explicação qualitativa das mudanças de energia, sem tratar o brinquedo como sistema perfeitamente isolado.\n\nQual descrição acompanha melhor o percurso da bola?",
     "options": [
       {
         "key": "A",
-        "text": "Toda energia vira luz, sem aquecimento."
+        "text": "A energia cinética da bola se transforma em energia química da madeira.",
+        "targetsError": "conceptual",
+        "rationale": "Atribui ao contato uma forma química não indicada."
       },
       {
         "key": "B",
-        "text": "A lâmpada cria energia luminosa do nada."
+        "text": "A bola aumenta a rapidez porque a rampa acrescenta energia sem alterar sua altura.",
+        "targetsError": "interpretation",
+        "rationale": "Ignora a posição mais alta no início do trajeto."
       },
       {
         "key": "C",
-        "text": "A energia elétrica desaparece depois de usada."
+        "text": "Energia potencial participa do movimento, com transferências ao contato e ao som."
       },
       {
         "key": "D",
-        "text": "Parte vira luz e parte se transforma em energia térmica; a energia total é conservada."
+        "text": "No trecho plano, a energia cinética diminui e fica armazenada como energia química no carrinho pelo atrito.",
+        "targetsError": "conceptual",
+        "rationale": "Atribui ao atrito uma conversão em energia química que o relato não indica."
       },
       {
         "key": "E",
-        "text": "LED transforma luz em eletricidade durante o uso comum."
+        "text": "A superfície devolve à bola energia suficiente para ela retornar à altura da rampa.",
+        "targetsError": "interpretation",
+        "rationale": "Contradiz a parada observada no trecho plano."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Parte vira luz e parte se transforma em energia térmica; a energia total é conservada.",
+    "correctOption": "C",
+    "explanation": "Na descida, energia potencial gravitacional participa do aumento da energia cinética; parte também é transferida como calor e som por interações com a superfície. A opção que afirma conversão integral ignora a parada.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +184,47 @@
       "CIE-05-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-05-CON-01"
   },
   {
     "id": "CIE-05-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora.\nII. Energia é criada sempre que um aparelho é ligado.\nIII. Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada.\nIV. Conservação de energia significa que toda energia continua igualmente útil.\nAssinale a alternativa CORRETA.",
+    "stem": "Painel de propostas do grêmio, preparado por Renan em 14 de agosto de 2026: três grupos apresentaram ideias para fornecer eletricidade a um evento escolar. Um sugeriu painéis solares sobre a cobertura, outro propôs um gerador a combustível e o terceiro recomendou reduzir o horário de iluminação. A equipe anotou que cada proposta tinha limites de disponibilidade, custo, impacto no entorno e confiabilidade. O painel não trouxe medições locais nem orçamento aprovado; convidava os estudantes a comparar critérios antes de escolher uma alternativa.\n\nQue procedimento combina com o objetivo do painel?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Escolher o gerador porque a combustão transforma energia diretamente em eletricidade limpa.",
+        "targetsError": "interpretation",
+        "rationale": "Supõe uma avaliação ambiental ausente do painel."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Comparar os recursos e os efeitos locais antes de recomendar uma proposta."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Recomendar os painéis porque a exposição solar basta para garantir custo e fornecimento confiáveis.",
+        "targetsError": "interpretation",
+        "rationale": "Trata a exposição solar como suficiente para avaliar custo e confiabilidade."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Descartar a redução de iluminação porque hábitos não influenciam o consumo.",
+        "targetsError": "interpretation",
+        "rationale": "Ignora que o tempo de uso é um critério prático."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Escolher pela potência nominal sem considerar custo, disponibilidade ou impacto.",
+        "targetsError": "attention",
+        "rationale": "Seleciona um único dado e deixa de lado os critérios da proposta."
       }
     ],
     "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "explanation": "A escolha deve comparar disponibilidade, custos, impactos, confiabilidade e eficiência no contexto da escola. A opção que declara uma fonte sem impacto ignora os critérios listados.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +234,150 @@
       "CIE-05-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-05-CON-01"
   },
   {
     "id": "CIE-05-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre fontes, transformações e conservação de energia para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Relato de horta escolar escrito por Marina em 17 de agosto de 2026: uma pequena bomba elétrica levou água de um reservatório para uma caixa elevada, usando eletricidade fornecida por uma bateria recarregável. Durante o trabalho, a bomba vibrou e esquentou levemente. A turma comparou a energia armazenada na bateria com a elevação da água e com os efeitos percebidos no motor. O professor pediu que descrevessem as conversões sem afirmar que a bomba aumentou a quantidade total de energia do sistema.\n\nQual sequência é coerente com o relato?",
     "options": [
       {
         "key": "A",
-        "text": "Energia é criada sempre que um aparelho é ligado."
+        "text": "A água elevada devolve energia química à bateria enquanto o motor vibra.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte a transferência de energia descrita na horta."
       },
       {
         "key": "B",
-        "text": "Toda fonte renovável é isenta de impactos ambientais."
+        "text": "A bomba converte energia sonora em água armazenada na caixa superior.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde vibração com a fonte principal do funcionamento."
       },
       {
         "key": "C",
-        "text": "Energia térmica não participa de transformações em equipamentos elétricos."
+        "text": "A vibração prova que a energia elétrica deixou de circular pelo motor.",
+        "targetsError": "interpretation",
+        "rationale": "Toma um efeito do funcionamento como interrupção do circuito."
       },
       {
         "key": "D",
-        "text": "Conservação de energia significa que toda energia continua igualmente útil."
+        "text": "A bateria recebe energia química da água elevada enquanto o motor vibra.",
+        "targetsError": "conceptual",
+        "rationale": "Inverte o sentido da transferência e atribui armazenamento químico à água elevada."
       },
       {
         "key": "E",
-        "text": "Avaliar uma fonte de energia exige considerar disponibilidade, custo, impacto socioambiental, confiabilidade e eficiência."
+        "text": "A bateria fornece energia ao motor, que eleva água e transfere parte ao entorno."
       }
     ],
     "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Avaliar uma fonte de energia exige considerar disponibilidade, custo, impacto socioambiental, confiabilidade e eficiência.",
+    "explanation": "A energia armazenada quimicamente na bateria participa do circuito; a bomba transfere energia para elevar a água, com vibração e aquecimento. A opção que diz que a bateria recebe energia da água inverte o processo.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-05-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-05-CON-05"
   },
   {
     "id": "CIE-05-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre fontes, transformações e conservação de energia?",
+    "stem": "Descrição de uma visita ao laboratório, registrada por André em 20 de agosto de 2026: um carrinho de brinquedo desceu uma pista inclinada e entrou em uma faixa rugosa. A equipe marcou a altura inicial, observou o aumento da velocidade na descida e ouviu um ruído leve quando as rodas passaram pela faixa. O carrinho parou alguns metros depois. A professora pediu que os alunos explicassem por que a energia associada ao movimento diminuiu sem afirmar que ela foi destruída.\n\nQual explicação respeita a conservação de energia?",
     "options": [
       {
         "key": "A",
-        "text": "Energia é criada sempre que um aparelho é ligado."
+        "text": "O carrinho perde energia porque a faixa rugosa remove parte de sua massa.",
+        "targetsError": "interpretation",
+        "rationale": "Atribui a parada a uma mudança de massa não observada."
       },
       {
         "key": "B",
-        "text": "Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora."
+        "text": "O carrinho converte toda a energia potencial em energia sonora antes de chegar à faixa plana.",
+        "targetsError": "conceptual",
+        "rationale": "Atribui toda a transformação a uma única forma e ignora o movimento observado."
       },
       {
         "key": "C",
-        "text": "Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada."
+        "text": "O ruído mantém a energia cinética do carrinho após ele parar.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde energia sonora com movimento persistente do carrinho."
       },
       {
         "key": "D",
-        "text": "Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação."
+        "text": "Interações com a faixa transferem parte da energia para o entorno como calor e som."
       },
       {
         "key": "E",
-        "text": "Fontes renováveis são repostas em escalas humanas de tempo, enquanto fontes não renováveis dependem de reservas finitas ou de reposição muito lenta."
+        "text": "A energia associada ao carrinho desaparece quando as rodas deixam de girar.",
+        "targetsError": "conceptual",
+        "rationale": "Trata a parada como desaparecimento de energia."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a incorreta: Energia é criada sempre que um aparelho é ligado. As demais expressam relações compatíveis com os conceitos da aula.",
+    "correctOption": "D",
+    "explanation": "Ao longo do movimento, parte da energia é transferida para o ambiente como calor e som, enquanto outras formas participam do percurso. A opção que diz que a energia desaparece confunde dissipação com perda total.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-05-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-05-CON-01"
   },
   {
     "id": "CIE-05-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em fontes, transformações e conservação de energia?",
+    "stem": "Ficha de observação assinada por Sofia em 23 de agosto de 2026: um painel fotovoltaico de demonstração foi ligado a uma pequena lâmpada e exposto à luz de uma janela. A lâmpada acendeu enquanto o painel recebia iluminação; quando uma cartolina opaca foi colocada entre a janela e o painel, o brilho diminuiu. A equipe não mediu potência nem eficiência, mas anotou que a energia luminosa incidente participava do funcionamento do circuito.\n\nQue transformação explica o acendimento da lâmpada?",
     "options": [
       {
         "key": "A",
-        "text": "Na bicicleta, energia química do organismo pode transformar-se em energia mecânica e cinética, com dissipação térmica."
+        "text": "A energia luminosa participa da geração elétrica que alimenta a lâmpada."
       },
       {
         "key": "B",
-        "text": "Energia é criada sempre que um aparelho é ligado."
+        "text": "A lâmpada envia energia elétrica ao painel para produzir a iluminação da janela.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte a direção da transferência entre painel e lâmpada."
       },
       {
         "key": "C",
-        "text": "Toda fonte renovável é isenta de impactos ambientais."
+        "text": "A cartolina reduz o brilho porque converte eletricidade em energia sonora.",
+        "targetsError": "conceptual",
+        "rationale": "Atribui um efeito sonoro sem evidência no ensaio."
       },
       {
         "key": "D",
-        "text": "Energia térmica não participa de transformações em equipamentos elétricos."
+        "text": "O painel armazena a luz como energia química antes de acender a lâmpada.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde a conversão fotovoltaica observada com armazenamento químico."
       },
       {
         "key": "E",
-        "text": "Conservação de energia significa que toda energia continua igualmente útil."
+        "text": "A iluminação da janela alimenta a lâmpada por aquecimento do vidro.",
+        "targetsError": "interpretation",
+        "rationale": "Ignora o painel conectado ao circuito."
       }
     ],
     "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Na bicicleta, energia química do organismo pode transformar-se em energia mecânica e cinética, com dissipação térmica.",
+    "explanation": "O painel converte parte da energia luminosa recebida em energia elétrica, que alimenta a lâmpada. A alternativa que diz que o painel transforma luz em energia química não corresponde ao equipamento observado.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-05-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-05-CON-06"
   }
 ]

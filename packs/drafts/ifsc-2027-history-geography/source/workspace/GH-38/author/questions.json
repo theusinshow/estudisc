@@ -2,175 +2,232 @@
   {
     "id": "GH-38-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Conquista e colonização europeia nas Américas, qual afirmação está correta?",
+    "stem": "Um mapa autoral de uma exposição escolar reúne três áreas das Américas antes da conquista europeia. Em uma, aparecem centros urbanos ligados por caminhos; em outra, aldeias próximas a campos cultivados; numa terceira, registros de mercados e autoridades locais. A legenda usa cores diferentes para indicar modos de organização e informa que o desenho é esquemático, sem delimitar fronteiras exatas. Ao lado do mapa, três fichas de visitantes descrevem costumes e línguas distintos. A exposição não apresenta as áreas como partes de um único Estado.\n\nQual leitura é mais consistente com o material?",
     "options": [
       {
         "key": "A",
-        "text": "A conquista ocorreu porque europeus eram biologicamente superiores."
+        "text": "As três áreas respondiam à mesma autoridade central no continente.",
+        "targetsError": "interpretation",
+        "rationale": "A legenda não as apresenta como partes de um único Estado."
       },
       {
         "key": "B",
-        "text": "Impérios e sociedades americanas possuíam formas políticas, econômicas e culturais diversas antes da conquista europeia."
+        "text": "As sociedades americanas apresentavam formas políticas e culturais variadas.",
+        "correct": true
       },
       {
         "key": "C",
-        "text": "Povos americanos formavam uma única civilização."
+        "text": "Os caminhos sugerem que centros urbanos coordenavam mercados e áreas de cultivo.",
+        "targetsError": "attention",
+        "rationale": "A legenda registra caminhos, mas não informa quem controlava mercados ou áreas rurais."
       },
       {
         "key": "D",
-        "text": "Doenças não tiveram papel demográfico importante."
+        "text": "As cores parecem indicar limites territoriais definidos entre as três áreas.",
+        "targetsError": "interpretation",
+        "rationale": "O mapa usa cores para diferenciar organizações, sem delimitar fronteiras precisas."
       },
       {
         "key": "E",
-        "text": "Colonização eliminou toda resistência indígena e africana."
+        "text": "As diferenças de língua surgiram depois da chegada europeia.",
+        "targetsError": "interpretation",
+        "rationale": "As fichas descrevem diferenças entre as áreas anteriores à conquista."
       }
     ],
     "correctOption": "B",
-    "explanation": "Impérios e sociedades americanas possuíam formas políticas, econômicas e culturais diversas antes da conquista europeia.",
+    "explanation": "As fichas e a legenda registram diversidade política e cultural; caminhos e cores, por si, não revelam uma autoridade comum nem fronteiras exatas.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "RECALL",
     "conceptIds": [
       "GH-38-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-38-CON-01"
   },
   {
     "id": "GH-38-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “A conquista ocorreu porque europeus eram biologicamente superiores.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Um relato didático sobre a conquista de uma cidade americana apresenta a chegada de um grupo europeu com armas e cavalos. O documento também registra que habitantes de localidades submetidas por aquela cidade forneceram guias e mantimentos aos recém-chegados, esperando alterar relações de poder regionais. A narrativa menciona doenças que se espalharam em seguida, mas não mede seu efeito separado de guerras e deslocamentos. A ficha informa que o texto foi criado para a aula e não descreve uma batalha real específica.\n\nQual explicação evita reduzir a conquista a uma causa única?",
     "options": [
       {
         "key": "A",
-        "text": "A conquista ocorreu porque europeus eram biologicamente superiores."
+        "text": "O apoio de habitantes locais parece ter pesado mais que armas e doenças no resultado.",
+        "targetsError": "attention",
+        "rationale": "O relato registra guias e mantimentos, mas não compara o peso desses fatores."
       },
       {
         "key": "B",
-        "text": "Povos americanos formavam uma única civilização."
+        "text": "As epidemias parecem explicar a maior parte da queda, com guerras e deslocamentos em segundo plano.",
+        "targetsError": "conceptual",
+        "rationale": "A narrativa menciona doenças, guerras e deslocamentos, sem medir a contribuição de cada fator."
       },
       {
         "key": "C",
-        "text": "Doenças não tiveram papel demográfico importante."
+        "text": "A vantagem militar ajuda a entender o episódio, enquanto alianças e epidemias compõem o contexto.",
+        "targetsError": "interpretation",
+        "rationale": "A narrativa não estabelece a vantagem militar como explicação principal do resultado."
       },
       {
         "key": "D",
-        "text": "Conquistadores exploraram rivalidades locais e alianças indígenas, além de vantagem militar em situações específicas."
+        "text": "Alianças e circunstâncias militares se combinaram a epidemias e conflitos.",
+        "correct": true
       },
       {
         "key": "E",
-        "text": "Colonização eliminou toda resistência indígena e africana."
+        "text": "Armas e cavalos parecem ter sido o fator de maior peso naquele episódio.",
+        "targetsError": "conceptual",
+        "rationale": "O relato não compara a vantagem militar com alianças e doenças."
       }
     ],
     "correctOption": "D",
-    "explanation": "Conquistadores exploraram rivalidades locais e alianças indígenas, além de vantagem militar em situações específicas.",
+    "explanation": "O relato reúne apoio local, vantagem militar, epidemias e conflitos; as fontes não permitem hierarquizar esses fatores nem atribuir o resultado a uma característica biológica.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-38-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-38-CON-02"
   },
   {
     "id": "GH-38-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: A colonização europeia nas Américas ocorreu sobre territórios povoados e envolveu conquista, alianças e resistência. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Uma atividade apresenta uma tabela fictícia sobre uma região chamada Vale das Três Lagoas. O índice populacional está marcado como 100 no primeiro registro, 68 no segundo e 44 no terceiro, feito décadas depois. Notas laterais mencionam períodos de doença, combates e deslocamentos, sem separar o peso de cada fator. A professora esclarece que os números foram inventados para exercitar a leitura de tendências e não correspondem a uma população histórica específica. A turma deve comparar as datas e as observações antes de propor uma interpretação.\n\nQual conclusão é prudente diante da tabela?",
     "options": [
       {
         "key": "A",
-        "text": "A conquista ocorreu porque europeus eram biologicamente superiores."
+        "text": "A redução populacional pode estar associada a doenças, guerras e deslocamentos.",
+        "correct": true
       },
       {
         "key": "B",
-        "text": "Povos americanos formavam uma única civilização."
+        "text": "Os combates podem ter contribuído para a queda, embora as notas citem outros fatores.",
+        "targetsError": "interpretation",
+        "rationale": "A tabela não permite afirmar que os combates tiveram maior peso que doenças ou deslocamentos."
       },
       {
         "key": "C",
-        "text": "Doenças afro-eurasianas provocaram colapso demográfico em muitas populações americanas sem imunidade prévia."
+        "text": "As doenças podem ter influído no índice, mas a tabela não estima sua parcela.",
+        "targetsError": "calculation",
+        "rationale": "As notas mencionam doenças, mas não isolam seu efeito demográfico."
       },
       {
         "key": "D",
-        "text": "Doenças não tiveram papel demográfico importante."
+        "text": "A sequência indica redução entre registros, sem identificar uma causa específica.",
+        "targetsError": "interpretation",
+        "rationale": "Os índices mostram tendência, mas as notas não atribuem a queda a uma causa única."
       },
       {
         "key": "E",
-        "text": "Colonização eliminou toda resistência indígena e africana."
+        "text": "O Vale das Três Lagoas representa uma cidade histórica da América espanhola.",
+        "targetsError": "attention",
+        "rationale": "A professora identifica a região como cenário fictício."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Doenças afro-eurasianas provocaram colapso demográfico em muitas populações americanas sem imunidade prévia.",
+    "correctOption": "A",
+    "explanation": "Os índices caem e as notas mencionam doenças, combates e deslocamentos; a série associa a queda a esses períodos, mas não permite comparar o peso de cada fator.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-38-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-38-CON-03"
   },
   {
     "id": "GH-38-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Conquista e colonização europeia nas Américas por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Um arquivo comunitário exibe uma ordem colonial fictícia que distribui lotes agrícolas, determina turnos de trabalho e reserva uma área para uma construção religiosa. Em outra página, uma lista registra categorias sociais usadas por funcionários para organizar direitos e obrigações. A curadora lembra que esses papéis mostram a visão das autoridades que os produziram e não contam, por si sós, como cada família viveu a imposição. No rodapé, uma anotação descreve que os registros foram preparados para uma oficina sobre colonização ibérica.\n\nQue aspecto do processo colonial aparece nos documentos?",
     "options": [
       {
         "key": "A",
-        "text": "Colonização implantou formas de exploração da terra e do trabalho, evangelização e hierarquias raciais."
+        "text": "A distribuição de lotes e turnos ocorria separada das categorias sociais da lista.",
+        "targetsError": "attention",
+        "rationale": "O material não estabelece essa relação entre os elementos registrados."
       },
       {
         "key": "B",
-        "text": "A conquista ocorreu porque europeus eram biologicamente superiores."
+        "text": "A área religiosa aparece ao lado de regras de trabalho e categorias sociais.",
+        "targetsError": "conceptual",
+        "rationale": "A reserva religiosa não substitui as categorias e obrigações registradas."
       },
       {
         "key": "C",
-        "text": "Povos americanos formavam uma única civilização."
+        "text": "A colonização articulou exploração da terra e do trabalho com evangelização e hierarquias.",
+        "correct": true
       },
       {
         "key": "D",
-        "text": "Doenças não tiveram papel demográfico importante."
+        "text": "Os lotes e turnos revelam relações administrativas desiguais, não uma troca entre iguais.",
+        "targetsError": "interpretation",
+        "rationale": "A ordem estabelece obrigações coloniais, não uma relação comercial entre grupos equivalentes."
       },
       {
         "key": "E",
-        "text": "Colonização eliminou toda resistência indígena e africana."
+        "text": "A reserva religiosa substituía as regras de trabalho na organização das comunidades.",
+        "targetsError": "interpretation",
+        "rationale": "O material não estabelece essa relação entre os elementos registrados."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Colonização implantou formas de exploração da terra e do trabalho, evangelização e hierarquias raciais.",
+    "correctOption": "C",
+    "explanation": "A ordem articula terra, trabalho e espaço religioso, e a lista registra categorias sociais; esses papéis mostram práticas administrativas sem narrar a experiência de uma família.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-38-CON-04"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-38-CON-04"
   },
   {
     "id": "GH-38-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Impérios e sociedades americanas possuíam formas políticas, econômicas e culturais diversas antes da conquista europeia.\nII. A conquista ocorreu porque europeus eram biologicamente superiores.\nIII. Doenças afro-eurasianas provocaram colapso demográfico em muitas populações americanas sem imunidade prévia.\nIV. Povos americanos formavam uma única civilização.\nAssinale a alternativa CORRETA.",
+    "stem": "Um dossiê produzido para uma aula reúne quatro peças. O mapa apresenta formas distintas de organização em áreas americanas; a narrativa descreve habitantes de localidades submetidas que forneceram guias durante um conflito. Uma tabela fictícia acompanha índices populacionais em três momentos e anota períodos de doença e guerra. Uma ordem colonial distribui lotes e turnos de trabalho, enquanto relatos de comunidades mencionam negociações e práticas culturais preservadas. As peças foram reunidas para uma exposição escolar e não descrevem uma única região ou família.\n\nAnalise as afirmações:\nI. Sociedades americanas apresentavam formas políticas e culturais diversas.\nII. Alianças locais podiam influenciar conflitos da conquista.\nIII. A tabela associa a queda dos índices a períodos com doenças e guerras.\nIV. A ordem colonial descreve as escolhas e respostas de cada comunidade.\n\nAssinale a alternativa que reúne as afirmações sustentadas pelo dossiê.",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "I e IV: diversidade e respostas comunitárias descritas pela ordem.",
+        "targetsError": "interpretation",
+        "rationale": "A ordem registra decisões administrativas, não as respostas de cada comunidade."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "II e IV: alianças locais e experiências comunitárias detalhadas na ordem.",
+        "targetsError": "conceptual",
+        "rationale": "A ordem não descreve as respostas comunitárias."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "I e III: diversidade e associação entre queda populacional, doenças e guerras.",
+        "targetsError": "attention",
+        "rationale": "A narrativa também afirma que alianças locais podiam influenciar conflitos."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "III e IV: tendências demográficas e escolhas comunitárias registradas na ordem.",
+        "targetsError": "interpretation",
+        "rationale": "O dossiê associa índices a períodos, mas não atribui escolhas às comunidades."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "I, II e III: diversidade, alianças e associação entre índices e períodos de doença e guerra.",
+        "correct": true
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "E",
+    "explanation": "O mapa, a narrativa e a tabela sustentam as três primeiras afirmações; a ordem registra decisões administrativas, sem revelar as respostas de cada comunidade.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -180,36 +237,48 @@
       "GH-38-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 4,
+    "status": "draft",
+    "primaryConceptId": "GH-38-CON-01"
   },
   {
     "id": "GH-38-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Conquista e colonização europeia nas Américas. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Uma transcrição fictícia reúne a fala de uma liderança indígena que conversa com funcionários coloniais sobre a permanência de uma feira local. A pessoa relata que aceitou uma condição de troca, recusou outra exigência e pediu tempo para consultar parentes. A ficha informa que a fala foi criada para discutir escolhas sob pressão, não representa todos os povos e não revela o resultado de outras negociações. A turma deve distinguir as ações registradas do que não é possível concluir a partir delas.\n\nQual síntese respeita o alcance da transcrição?",
     "options": [
       {
         "key": "A",
-        "text": "A conquista ocorreu porque europeus eram biologicamente superiores."
+        "text": "A condição aceita mostra que a liderança concordou com as exigências coloniais.",
+        "targetsError": "attention",
+        "rationale": "A fala também registra a recusa de uma exigência."
       },
       {
         "key": "B",
-        "text": "Povos americanos formavam uma única civilização."
+        "text": "Povos indígenas podiam negociar e resistir sob a pressão colonial.",
+        "correct": true
       },
       {
         "key": "C",
-        "text": "Doenças não tiveram papel demográfico importante."
+        "text": "A feira permaneceu inalterada em outras localidades após a conversa.",
+        "targetsError": "interpretation",
+        "rationale": "A transcrição descreve um caso e não compara localidades."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "A consulta aos parentes indica que a negociação terminou com uma vitória local.",
+        "targetsError": "interpretation",
+        "rationale": "A ficha não informa o desfecho da conversa."
       },
       {
         "key": "E",
-        "text": "Confrontar narrativa de “descobrimento” com evidências de sociedades preexistentes e relações de poder."
+        "text": "A fala sugere que negociar foi uma resposta comum entre povos indígenas.",
+        "targetsError": "conceptual",
+        "rationale": "A ficha limita o relato a um caso e não mede a frequência dessa resposta."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Confrontar narrativa de “descobrimento” com evidências de sociedades preexistentes e relações de poder.",
+    "correctOption": "B",
+    "explanation": "A transcrição registra aceitação de uma condição e recusa de outra, evidenciando ação indígena no caso narrado; ela não informa o resultado nem permite generalizar a experiência.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -221,36 +290,48 @@
       "GH-38-CON-06"
     ],
     "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-38-CON-01"
   },
   {
     "id": "GH-38-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Conquista e colonização europeia nas Américas?",
+    "stem": "Um painel de pesquisa escolar reúne uma lista de regras de trabalho, uma narrativa sobre confronto e um relato de preservação de uma prática cultural. Na conversa, estudantes observam que os registros foram produzidos em situações diferentes e que cada um mostra um aspecto das relações coloniais. A professora pede que a turma avalie o alcance da negociação mencionada no conjunto, sem tratar um caso como retrato de todas as comunidades.\n\nQual afirmação vai além do que os registros permitem concluir?",
     "options": [
       {
         "key": "A",
-        "text": "Impérios e sociedades americanas possuíam formas políticas, econômicas e culturais diversas antes da conquista europeia."
+        "text": "As regras de trabalho expressam tentativas de controle colonial.",
+        "targetsError": "attention",
+        "rationale": "A lista apresenta regras impostas por autoridades coloniais."
       },
       {
         "key": "B",
-        "text": "Conquistadores exploraram rivalidades locais e alianças indígenas, além de vantagem militar em situações específicas."
+        "text": "A preservação cultural aparece junto a mudanças na vida comunitária.",
+        "targetsError": "attention",
+        "rationale": "O painel registra a prática preservada em contexto de mudança."
       },
       {
         "key": "C",
-        "text": "Povos indígenas e africanos resistiram, negociaram, adaptaram práticas e preservaram elementos culturais."
+        "text": "A narrativa associa a conquista a confronto entre grupos.",
+        "targetsError": "attention",
+        "rationale": "O material descreve um episódio de conflito."
       },
       {
         "key": "D",
-        "text": "Doenças não tiveram papel demográfico importante."
+        "text": "Uma negociação descrita permite caracterizar a resposta das comunidades como aceitação do novo domínio.",
+        "correct": true
       },
       {
         "key": "E",
-        "text": "Colonização implantou formas de exploração da terra e do trabalho, evangelização e hierarquias raciais."
+        "text": "As ações de resistência não se limitavam ao confronto armado.",
+        "targetsError": "conceptual",
+        "rationale": "A negociação e a preservação cultural também aparecem no painel."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "explanation": "A negociação é uma ação registrada em um contexto específico; junto aos relatos de confronto e preservação, ela não prova aceitação coletiva nem resume a experiência de todas as comunidades.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -262,36 +343,48 @@
       "GH-38-CON-06"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-38-CON-01"
   },
   {
     "id": "GH-38-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Conquista e colonização europeia nas Américas, qual conclusão final é sustentável?",
+    "stem": "Uma exposição organiza o tema da colonização em cinco vitrines: sociedades americanas diversas, alianças durante conflitos, doenças e mudanças demográficas, regras sobre terra e trabalho, e práticas de resistência e adaptação. Cada vitrine usa documentos de tipos diferentes, e a exposição identifica quando uma tabela é hipotética ou quando uma fala foi criada para a atividade. Na parede final, o visitante encontra a pergunta sobre como explicar o processo sem apagar a agência indígena e africana nem ignorar as estruturas coloniais.\n\nQual síntese responde melhor à pergunta da exposição?",
     "options": [
       {
         "key": "A",
-        "text": "A conquista ocorreu porque europeus eram biologicamente superiores."
+        "text": "A colonização transformou sociedades diversas por conflito e exploração, diante de resistências e negociações.",
+        "correct": true
       },
       {
         "key": "B",
-        "text": "Povos americanos formavam uma única civilização."
+        "text": "Alianças e doenças ajudam a explicar a conquista, enquanto terra e trabalho aparecem em registros coloniais.",
+        "targetsError": "attention",
+        "rationale": "A síntese deixa de relacionar esses fatores às práticas de resistência e adaptação também expostas."
       },
       {
         "key": "C",
-        "text": "Povos indígenas e africanos resistiram, negociaram, adaptaram práticas e preservaram elementos culturais."
+        "text": "As regras de trabalho mostram controle colonial, e práticas preservadas indicam respostas comunitárias.",
+        "targetsError": "conceptual",
+        "rationale": "A exposição inclui também conflitos, alianças e mudanças demográficas, que essa leitura deixa de integrar."
       },
       {
         "key": "D",
-        "text": "Doenças não tiveram papel demográfico importante."
+        "text": "A administração colonial alterou territórios sem reorganizar o trabalho.",
+        "targetsError": "attention",
+        "rationale": "Há uma vitrine específica sobre regras de terra e trabalho."
       },
       {
         "key": "E",
-        "text": "Colonização eliminou toda resistência indígena e africana."
+        "text": "A preservação de práticas sugere que estruturas coloniais tiveram alcance limitado.",
+        "targetsError": "interpretation",
+        "rationale": "A exposição registra agência e resistência, mas também estruturas coloniais de exploração."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Povos indígenas e africanos resistiram, negociaram, adaptaram práticas e preservaram elementos culturais.",
+    "correctOption": "A",
+    "explanation": "As vitrines articulam diversidade, conquista, exploração e agência; a síntese precisa relacionar esses aspectos sem reduzir o processo a uma causa ou a uma única resposta.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -303,6 +396,9 @@
       "GH-38-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-38-CON-01"
   }
 ]

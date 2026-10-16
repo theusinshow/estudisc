@@ -209,256 +209,215 @@
     {
       "id": "GH-15-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Resistência negra, quilombos, abolicionismo e pós-abolição, qual afirmação está correta?",
+      "stem": "Em uma exposição didática fictícia, a turma examina um caderno de contas de uma propriedade rural do século XIX e um mapa desenhado décadas depois. A anotação lista ferramentas extraviadas, dias de roça e uma trilha para um mato próximo; não informa quem escolheu aquele caminho nem o que encontrou. A turma compara o registro com relatos de comunidades negras sobre redes de abrigo e cultivo. A curadoria pede aos visitantes que observem que documentos foram produzidos por pessoas em posições diferentes e preservam interesses distintos.\n\nQue leitura da pista sobre a trilha é mais cuidadosa?",
       "options": [
         {
           "key": "A",
-          "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
+          "text": "O caderno prova que o administrador organizou a fuga e escolheu o destino dos moradores."
         },
         {
           "key": "B",
-          "text": "Resistências à escravidão ocorreram durante todo o período escravista por fugas, quilombos, revoltas, negociações, ações culturais e outras estratégias."
+          "text": "O registro permite investigar deslocamentos e resistência, mas precisa ser comparado com outras vozes."
         },
         {
           "key": "C",
-          "text": "Quilombos surgiram apenas no final do século XIX."
+          "text": "O mapa posterior substitui o caderno, pois foi produzido quando os caminhos já eram conhecidos."
         },
         {
           "key": "D",
-          "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
+          "text": "A anotação permite supor que o caminho era usado para circulação regular entre a propriedade e a mata."
         },
         {
           "key": "E",
-          "text": "As próprias pessoas escravizadas tiveram pouca participação no processo abolicionista."
+          "text": "A data do registro ajuda a investigar a trilha, mas não torna dispensáveis relatos comunitários."
         }
       ],
       "correctOption": "B",
-      "explanation": "Resistências à escravidão ocorreram durante todo o período escravista por fugas, quilombos, revoltas, negociações, ações culturais e outras estratégias.",
-      "difficulty": "FOUNDATION",
-      "cognitiveOperation": "RECALL",
+      "explanation": "A anotação registra uma trilha e perdas de ferramentas, mas deixa sem resposta quem a usou e por quê. A interpretação que atribui ao administrador a organização da saída excede o que esse caderno informa; o confronto com outros relatos amplia a leitura.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-15-CON-01"
-      ],
-      "targetedError": "foundation",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-    },
-    {
-      "id": "GH-15-Q002",
-      "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
-      "options": [
-        {
-          "key": "A",
-          "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
-        },
-        {
-          "key": "B",
-          "text": "Quilombos surgiram apenas no final do século XIX."
-        },
-        {
-          "key": "C",
-          "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
-        },
-        {
-          "key": "D",
-          "text": "O movimento abolicionista reuniu pessoas escravizadas, libertas, negras livres e aliados de diferentes grupos sociais."
-        },
-        {
-          "key": "E",
-          "text": "As próprias pessoas escravizadas tiveram pouca participação no processo abolicionista."
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "O movimento abolicionista reuniu pessoas escravizadas, libertas, negras livres e aliados de diferentes grupos sociais.",
-      "difficulty": "DIRECT",
-      "cognitiveOperation": "ANALYZE",
-      "conceptIds": [
-        "GH-15-CON-02"
-      ],
-      "targetedError": "concept_discrimination",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-    },
-    {
-      "id": "GH-15-Q003",
-      "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: A abolição não foi presente concedido de cima para baixo; foi resultado de conflitos, resistências e mobilização social. Qual ideia estudada oferece a melhor chave de interpretação?",
-      "options": [
-        {
-          "key": "A",
-          "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
-        },
-        {
-          "key": "B",
-          "text": "Quilombos surgiram apenas no final do século XIX."
-        },
-        {
-          "key": "C",
-          "text": "Leis como Eusébio de Queirós, Ventre Livre e Sexagenários integraram um processo gradual e conflituoso que culminou na Lei Áurea em 1888."
-        },
-        {
-          "key": "D",
-          "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
-        },
-        {
-          "key": "E",
-          "text": "As próprias pessoas escravizadas tiveram pouca participação no processo abolicionista."
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "Leis como Eusébio de Queirós, Ventre Livre e Sexagenários integraram um processo gradual e conflituoso que culminou na Lei Áurea em 1888.",
-      "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
-      "conceptIds": [
-        "GH-15-CON-03"
-      ],
-      "targetedError": "relationship",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-    },
-    {
-      "id": "GH-15-Q004",
-      "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Resistência negra, quilombos, abolicionismo e pós-abolição por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
-      "options": [
-        {
-          "key": "A",
-          "text": "A Lei Áurea extinguiu juridicamente a escravidão, mas não criou políticas amplas de terra, educação, renda e inclusão para a população liberta."
-        },
-        {
-          "key": "B",
-          "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
-        },
-        {
-          "key": "C",
-          "text": "Quilombos surgiram apenas no final do século XIX."
-        },
-        {
-          "key": "D",
-          "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
-        },
-        {
-          "key": "E",
-          "text": "As próprias pessoas escravizadas tiveram pouca participação no processo abolicionista."
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "A Lei Áurea extinguiu juridicamente a escravidão, mas não criou políticas amplas de terra, educação, renda e inclusão para a população liberta.",
-      "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
-      "conceptIds": [
-        "GH-15-CON-04"
-      ],
-      "targetedError": "application",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-    },
-    {
-      "id": "GH-15-Q005",
-      "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Resistências à escravidão ocorreram durante todo o período escravista por fugas, quilombos, revoltas, negociações, ações culturais e outras estratégias.\nII. A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel.\nIII. Leis como Eusébio de Queirós, Ventre Livre e Sexagenários integraram um processo gradual e conflituoso que culminou na Lei Áurea em 1888.\nIV. Quilombos surgiram apenas no final do século XIX.\nAssinale a alternativa CORRETA.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Apenas I está correta."
-        },
-        {
-          "key": "B",
-          "text": "Apenas I e III estão corretas."
-        },
-        {
-          "key": "C",
-          "text": "Apenas II e IV estão corretas."
-        },
-        {
-          "key": "D",
-          "text": "Apenas I, II e III estão corretas."
-        },
-        {
-          "key": "E",
-          "text": "Todas estão corretas."
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
-      "difficulty": "IFSC",
-      "cognitiveOperation": "ANALYZE",
-      "conceptIds": [
-        "GH-15-CON-01",
-        "GH-15-CON-02",
-        "GH-15-CON-03",
-        "GH-15-CON-04"
-      ],
-      "targetedError": "multi_statement_reasoning",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-    },
-    {
-      "id": "GH-15-Q006",
-      "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Resistência negra, quilombos, abolicionismo e pós-abolição. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
-      "options": [
-        {
-          "key": "A",
-          "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
-        },
-        {
-          "key": "B",
-          "text": "Quilombos surgiram apenas no final do século XIX."
-        },
-        {
-          "key": "C",
-          "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
-        },
-        {
-          "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
-        },
-        {
-          "key": "E",
-          "text": "Reconhecer processos de longa duração e protagonismos diversos em vez de buscar um único herói causal."
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Reconhecer processos de longa duração e protagonismos diversos em vez de buscar um único herói causal.",
-      "difficulty": "IFSC",
-      "cognitiveOperation": "SOURCE_ANALYSIS",
-      "conceptIds": [
-        "GH-15-CON-01",
-        "GH-15-CON-02",
-        "GH-15-CON-03",
-        "GH-15-CON-04",
-        "GH-15-CON-05",
-        "GH-15-CON-06"
       ],
       "targetedError": "source_interpretation",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
-      "id": "GH-15-Q007",
+      "id": "GH-15-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Resistência negra, quilombos, abolicionismo e pós-abolição?",
+      "stem": "Em um exercício autoral, a pesquisadora analisa três cartas hipotéticas de uma associação abolicionista. Em uma, uma mulher liberta organiza uma coleta para ajudar pessoas a obter cartas de alforria; em outra, um trabalhador escravizado avisa sobre a rota de uma mobilização; na terceira, um tipógrafo branco oferece papel para imprimir um jornal. A equipe não consegue confirmar se todas as ações tiveram o resultado esperado. O catálogo registra datas diferentes e anota que os remetentes tinham condições jurídicas e sociais distintas.\n\nQual conclusão sobre a mobilização é sustentada por esse conjunto?",
       "options": [
         {
           "key": "A",
-          "text": "Resistências à escravidão ocorreram durante todo o período escravista por fugas, quilombos, revoltas, negociações, ações culturais e outras estratégias."
+          "text": "O movimento reuniu participantes negros com experiências diversas e aliados em frentes distintas."
         },
         {
           "key": "B",
-          "text": "O movimento abolicionista reuniu pessoas escravizadas, libertas, negras livres e aliados de diferentes grupos sociais."
+          "text": "As cartas mostram frentes distintas, mas não permitem concluir como se coordenavam nem quais resultados alcançaram."
         },
         {
           "key": "C",
-          "text": "O pós-abolição continuou marcado por racismo, desigualdade e luta por cidadania."
+          "text": "A contribuição do tipógrafo explica sozinha a atuação das pessoas escravizadas."
         },
         {
           "key": "D",
-          "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
+          "text": "A falta de recibos dificulta medir o resultado da coleta, embora não esclareça o grau de participação de quem a organizou."
         },
         {
           "key": "E",
-          "text": "A Lei Áurea extinguiu juridicamente a escravidão, mas não criou políticas amplas de terra, educação, renda e inclusão para a população liberta."
+          "text": "As condições jurídicas distintas podem ter influenciado as tarefas assumidas pelos remetentes."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "correctOption": "A",
+      "explanation": "As cartas registram coleta organizada por uma mulher liberta, aviso enviado por um trabalhador escravizado e apoio material de um tipógrafo. A leitura que reduz o processo ao aliado branco não explica a iniciativa das pessoas negras descrita nos outros documentos.",
       "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-15-CON-02"
+      ],
+      "targetedError": "agency_and_evidence",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-15-Q003",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Em uma oficina de história, estudantes organizam cartões com medidas aprovadas durante o Império. O primeiro registra a Lei Eusébio de Queirós, de 1850, que proibiu o tráfico atlântico de pessoas escravizadas; o segundo identifica a Lei do Ventre Livre, de 1871; o terceiro traz a Lei dos Sexagenários, de 1885; e o último anota a Lei Áurea, de 1888. No verso, a turma escreve perguntas sobre quem ganhou liberdade, quem continuou submetido à escravidão e como as mudanças foram disputadas.\n\nQue interpretação da sequência é mais consistente?",
+      "options": [
+        {
+          "key": "A",
+          "text": "As medidas foram aprovadas em momentos distintos e tiveram efeitos jurídicos diferentes."
+        },
+        {
+          "key": "B",
+          "text": "A Lei de 1871 encerrou juridicamente a escravidão antes da Lei Áurea."
+        },
+        {
+          "key": "C",
+          "text": "A lista revela mudanças graduais e conflitivas que antecederam a extinção jurídica em 1888."
+        },
+        {
+          "key": "D",
+          "text": "A participação de pessoas escravizadas nas disputas é possível, mas a cronologia das leis não permite identificá-la."
+        },
+        {
+          "key": "E",
+          "text": "O encadeamento mostra que as normas garantiram terra e renda à população liberta."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "As datas de 1850, 1871, 1885 e 1888 mostram uma sucessão de medidas. A hipótese de encerramento em 1871 não se ajusta ao próprio cartão que registra a Lei Áurea como marco de 1888; a sequência também não informa políticas de terra ou renda.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-15-CON-03"
+      ],
+      "targetedError": "chronology_and_scope",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-15-Q004",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma ficha de arquivo identifica a Lei nº 3.353, assinada pela princesa regente Isabel em 13 de maio de 1888, e registra o nome usado por seus contemporâneos. Em outra mesa, estudantes leem anúncios de emprego e pedidos de matrícula produzidos décadas depois; as peças mostram pessoas negras buscando trabalho e escolarização em meio a barreiras sociais. Os documentos foram reunidos para uma exposição, e a ficha legal não acompanha os anúncios nem explica as decisões dos empregadores.\n\nQual conclusão respeita essa comparação?",
+      "options": [
+        {
+          "key": "A",
+          "text": "As dificuldades de acesso indicam que as buscas por cidadania começaram antes da lei."
+        },
+        {
+          "key": "B",
+          "text": "As dificuldades posteriores mostram que a mudança jurídica não garantiu inclusão social."
+        },
+        {
+          "key": "C",
+          "text": "A declaração legal instituiu programas de ocupação profissional e matrícula escolar para pessoas libertas."
+        },
+        {
+          "key": "D",
+          "text": "A assinatura da regente tornou a mudança visível como ato político, sem explicar por si só os processos sociais posteriores."
+        },
+        {
+          "key": "E",
+          "text": "A lei aboliu juridicamente a escravidão, enquanto os registros posteriores evidenciam disputas por inclusão."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "A identificação da Lei nº 3.353 situa o marco legal de 1888; os anúncios e pedidos posteriores mostram barreiras de trabalho e estudo. A leitura que transforma esse marco em garantia de emprego e matrícula não encontra esses programas na ficha.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-15-CON-04"
+      ],
+      "targetedError": "legal_scope",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-15-Q005",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um mural de pesquisa começa com relatos de fuga e redes de abrigo, segue com notícias sobre reuniões abolicionistas e termina com cartões das leis de 1850, 1871, 1885 e 1888. No espaço final, a equipe deixa uma pergunta em aberto: como a população liberta enfrentou as desigualdades depois da mudança legal? O material combina registros administrativos, relatos de pessoas negras e normas do Império. A legenda adverte que cada peça foi produzida em circunstâncias próprias e que a ordem do mural foi criada pelos estudantes.\n\nQual síntese interpreta melhor a montagem?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A sequência retrata resistência e mobilização social dentro de um processo legal disputado."
+        },
+        {
+          "key": "B",
+          "text": "A montagem reúne ações de diferentes agentes e etapas, sem demonstrar condução uniforme pelas autoridades."
+        },
+        {
+          "key": "C",
+          "text": "A desigualdade persistente pode indicar limites da inclusão, mesmo após a mudança jurídica de 1888."
+        },
+        {
+          "key": "D",
+          "text": "A ordem do mural reproduz uma cronologia completa elaborada pelos participantes do século XIX."
+        },
+        {
+          "key": "E",
+          "text": "Os relatos de pessoas negras acrescentam experiências que as normas do Império não registram."
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "A montagem aproxima fuga, abrigo, reuniões e mudanças legais, permitindo ler a abolição como processo com mobilização social. A ordem é uma escolha dos estudantes, então não pode ser tratada como cronologia produzida pelos próprios participantes do século XIX.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-15-CON-01",
+        "GH-15-CON-02",
+        "GH-15-CON-03",
+        "GH-15-CON-04"
+      ],
+      "targetedError": "historical_synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-15-Q006",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um exercício autoral simula a transcrição de uma entrevista gravada em 1987 com uma moradora negra de uma cidade do interior. Ela conta que seu avô reuniu parentes para procurar moradia e trabalho depois de 1888, e que sua mãe participou de uma associação que reivindicava escola para as crianças do bairro. A entrevistada distingue o que ouviu de familiares daquilo que encontrou em atas da associação. O catálogo explica que a entrevista é uma memória produzida no presente da gravação e deve ser relacionada a outras fontes.\n\nQual uso do depoimento é mais adequado?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A lembrança contribui para compreender a trajetória familiar, mas não representa toda a experiência nem dispensa comparação."
+        },
+        {
+          "key": "B",
+          "text": "A entrevista tem limites de memória e pode ser confrontada com as atas para situar os relatos."
+        },
+        {
+          "key": "C",
+          "text": "Relacionar memória familiar e atas para investigar desigualdade e ação por cidadania."
+        },
+        {
+          "key": "D",
+          "text": "Usar a associação como prova de que as dificuldades de moradia haviam sido resolvidas."
+        },
+        {
+          "key": "E",
+          "text": "Atribuir à entrevistada a autoria das experiências vividas por seu avô."
+        }
+      ],
+      "correctOption": "C",
+      "explanation": "A entrevistada distingue memória transmitida de atas produzidas pela associação. Essa separação ajuda a investigar experiências do pós-abolição e reivindicações por cidadania; a hipótese de que as fontes provam a solução dos desafios extrapola o conteúdo das atas.",
+      "difficulty": "APPLIED",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-15-CON-01",
@@ -468,39 +427,80 @@
         "GH-15-CON-05",
         "GH-15-CON-06"
       ],
-      "targetedError": "misconception_identification",
+      "targetedError": "source_synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-15-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Ao preparar um mapa de trajetórias familiares, uma estudante ouve depoimentos sobre moradia, trabalho e participação em associações no fim do século XIX e começo do XX. Um registro menciona uma mudança de bairro após a abolição; outro conta a busca de vaga numa escola; uma ata mostra moradores debatendo como apresentar uma reivindicação à prefeitura. As fontes foram recolhidas em anos distintos e não cobrem toda a cidade. O grupo anota essa limitação antes de comparar as experiências.\n\nQue interpretação das fontes é mais sustentada?",
+      "options": [
+        {
+          "key": "A",
+          "text": "As trajetórias indicam mudanças no cotidiano, embora não permitam medir como variaram em toda a cidade."
+        },
+        {
+          "key": "B",
+          "text": "As diferenças entre documentos exigem cautela, mas permitem comparar aspectos específicos de cidadania."
+        },
+        {
+          "key": "C",
+          "text": "A ata municipal torna dispensáveis as vozes das famílias entrevistadas."
+        },
+        {
+          "key": "D",
+          "text": "As fontes sugerem continuidades de desigualdade e busca coletiva por direitos."
+        },
+        {
+          "key": "E",
+          "text": "O mapa permite visualizar percursos das famílias documentadas e formular perguntas sobre outros moradores."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "A procura por moradia e escola, junto à ata de reivindicação, permite observar desigualdade e ação coletiva no período posterior à abolição. A coleção é parcial, por isso não pode ser convertida em retrato de todos os moradores da cidade.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-15-CON-01",
+        "GH-15-CON-02",
+        "GH-15-CON-03",
+        "GH-15-CON-04",
+        "GH-15-CON-05",
+        "GH-15-CON-06"
+      ],
+      "targetedError": "historical_inference",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-15-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Resistência negra, quilombos, abolicionismo e pós-abolição, qual conclusão final é sustentável?",
+      "stem": "Em uma roda de leitura, estudantes comparam uma ficha da Lei Áurea, que identifica a assinatura da princesa regente Isabel e a data de 13 de maio de 1888, com um conjunto de cartas familiares das décadas seguintes. As cartas registram pedidos de emprego, mudanças de endereço e tentativas de matricular crianças. Os autores não formam um grupo homogêneo, e o arquivo conserva parte da correspondência. A professora pede uma leitura que considere o registro legal e as experiências narradas depois.\n\nQual comparação mantém esses limites em vista?",
       "options": [
         {
           "key": "A",
-          "text": "A abolição aconteceu exclusivamente pela decisão benevolente da princesa Isabel."
+          "text": "As cartas registram dificuldades posteriores, sem alterar o marco jurídico estabelecido pela lei."
         },
         {
           "key": "B",
-          "text": "Quilombos surgiram apenas no final do século XIX."
+          "text": "A lei encerra a escravidão juridicamente, enquanto as cartas mostram desafios de inclusão."
         },
         {
           "key": "C",
-          "text": "O pós-abolição continuou marcado por racismo, desigualdade e luta por cidadania."
+          "text": "A seleção parcial de cartas exige cautela ao generalizar experiências de trabalho e escolarização."
         },
         {
           "key": "D",
-          "text": "Após 1888, a igualdade racial foi imediatamente alcançada."
+          "text": "A mudança de endereço prova que as famílias deixaram de enfrentar racismo."
         },
         {
           "key": "E",
-          "text": "As próprias pessoas escravizadas tiveram pouca participação no processo abolicionista."
+          "text": "A ficha da lei explica sozinha os pedidos de trabalho e escola das décadas seguintes."
         }
       ],
-      "correctOption": "C",
-      "explanation": "O pós-abolição continuou marcado por racismo, desigualdade e luta por cidadania.",
-      "difficulty": "IFSC",
-      "cognitiveOperation": "EVALUATE",
+      "correctOption": "B",
+      "explanation": "Os pedidos de emprego e escola, em cartas posteriores à assinatura de 1888, mostram experiências que a ficha legal não descreve. A hipótese de inclusão garantida não pode ser deduzida da autoria e da data da norma nem da correspondência preservada.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-15-CON-01",
         "GH-15-CON-02",

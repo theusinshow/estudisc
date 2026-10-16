@@ -4,6 +4,12 @@
 
 - New import schema `caderno.lesson-new.v1` adds one new draft lesson (version 1) at the end of an existing module of an imported Track version. The lesson brings its own new Concepts, new draft Questions (non-official, not reserved) and sources. Blocks use only the existing text renderers. `POST /api/import/lesson` and its preview accept it. Re-importing the same pack is idempotent, and conflicting packs are refused. Publication goes through the unchanged Admin Direct path.
 - `tools/estudisc-content-studio/new-lesson-from-authoring.ts` turns one authored lesson file into this pack. Nothing is imported or published by this change.
+## 2026-10-16 — Hand-written questions for Portuguese, History-Geography and Science
+
+- 904 questions rewritten by hand with an authored stimulus each (Portuguese 192, History-Geography 392, Science 320). Science adds calculation items in the quantitative lessons.
+- A first automated rewrite was rejected for templating. Each question was then solved blind by an independent reviewer, who matched the answer key in 98.7% of cases (all mismatches checked), and the distractors flagged as guessable were reinforced.
+- Internal source labels ("Texto autoral editorial Estudisc", "didática ficcional") were removed from stems. The validator reports 0 errors; known violations went from 841 to 347, all of them in Mathematics numeric answers and the legacy packs.
+- Published in production through ADR 0063 lesson-bound Question versions (Admin Direct, with audit events, after backups).
 
 ## 2026-10-16 — Paid access until the exam; phase 1 corrections live
 

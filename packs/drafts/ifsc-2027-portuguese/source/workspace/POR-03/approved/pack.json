@@ -151,306 +151,322 @@
         "POR-MEDIA-01",
         "POR-MEDIA-02"
       ]
-    }
+    },
+    "version": 3
   },
   "questions": [
     {
       "id": "POR-03-Q01",
       "lessonId": "POR-03",
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Inferência, implícitos, pressupostos e leitura de contexto em uso real da língua?",
+      "stem": "Que conclusão sobre a preparação da apresentação é apoiada pelos detalhes do texto?",
       "options": [
         {
           "id": "A",
-          "text": "Toda informação implícita é subjetiva."
+          "text": "A diretora cancelou o ensaio e pediu que a equipe escondesse as caixas no auditório."
         },
         {
           "id": "B",
-          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+          "text": "Estudantes prepararam a apresentação após o ensaio sem avisar a diretora."
         },
         {
           "id": "C",
-          "text": "Se não está escrito literalmente, não pode ser cobrado."
+          "text": "O zelador recortou as estrelas enquanto apagava as luzes do pátio."
         },
         {
           "id": "D",
-          "text": "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente."
+          "text": "As famílias já assistiram à peça antes de receberem o convite sobre a mesa."
         },
         {
           "id": "E",
-          "text": "Inferir é escolher a interpretação mais criativa."
+          "text": "A sala de artes foi transformada em auditório porque o pátio ficou indisponível."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente.",
-      "difficulty": "foundation",
-      "cognitiveOperation": "recognize",
+      "correctOption": "B",
+      "explanation": "As caixas foram levadas depois do ensaio, as estrelas apareceram no dia seguinte e a diretora diz que só então soube do convite. Esses indícios sustentam uma preparação feita pelos estudantes sem aviso prévio; o fato de o convite estar sobre a mesa não indica que ela o tenha organizado.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-03-C01"
       ],
-      "targetedError": "Inferir é escolher a interpretação mais criativa.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Como a diretora assinou o convite, ela organizou a surpresa do grupo.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A equipe de teatro da escola ensaiou no pátio até o fim da tarde. Quando o zelador apagou as luzes, três estudantes ainda carregavam caixas de papelão para a sala de artes. No dia seguinte, a porta do auditório amanheceu coberta por estrelas recortadas, e um cartaz novo avisava que a apresentação seria aberta às famílias. A diretora disse que soube da surpresa apenas quando encontrou um convite sobre a mesa, assinado pelo grupo."
     },
     {
       "id": "POR-03-Q02",
       "lessonId": "POR-03",
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Inferência, implícitos, pressupostos e leitura de contexto, qual princípio deve orientar a análise?",
+      "stem": "Mesmo sem declarar o horário de fechamento, o texto leva o leitor a entender que:",
       "options": [
         {
           "id": "A",
-          "text": "Informações implícitas podem resultar de ações, escolhas lexicais, relações causais, ironia, omissões ou conhecimento compartilhado."
+          "text": "A atendente recusou o pedido porque o cliente não tinha dinheiro para pagar."
         },
         {
           "id": "B",
-          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+          "text": "A limpeza da manhã seguinte obrigaria o café a fechar durante toda a semana."
         },
         {
           "id": "C",
-          "text": "Se não está escrito literalmente, não pode ser cobrado."
+          "text": "O salão já estava encerrando o atendimento naquela tarde."
         },
         {
           "id": "D",
-          "text": "Inferir é escolher a interpretação mais criativa."
+          "text": "A vitrine foi coberta para esconder tortas que estavam estragadas pelo calor."
         },
         {
           "id": "E",
-          "text": "Toda informação implícita é subjetiva."
+          "text": "O letreiro apagado anuncia que o estabelecimento mudou de endereço."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Informações implícitas podem resultar de ações, escolhas lexicais, relações causais, ironia, omissões ou conhecimento compartilhado.",
-      "difficulty": "direct",
-      "cognitiveOperation": "understand",
+      "correctOption": "C",
+      "explanation": "Cadeiras empilhadas, máquina lavada e letreiro apagado convergem para o encerramento do atendimento naquela tarde. O aviso da porta se refere à manhã seguinte; ele não determina o que ocorreu às seis.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-03-C02"
       ],
-      "targetedError": "Toda informação implícita é subjetiva.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O aviso de limpeza explica por que o café não abre mais às seis da tarde.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Às cinco e meia, o Café Estação ainda tinha uma fila curta no balcão. A atendente empilhou as cadeiras das mesas do fundo e colocou um pano sobre a vitrine de tortas. Na porta, um papel avisava que na manhã seguinte o salão abriria mais tarde por causa da limpeza. Um cliente pediu outro café, mas a atendente apontou para a máquina já lavada e ofereceu água. Do lado de fora, o letreiro luminoso se apagou antes de o relógio marcar seis."
     },
     {
       "id": "POR-03-Q03",
       "lessonId": "POR-03",
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Inferência, implícitos, pressupostos e leitura de contexto?",
+      "stem": "Na pergunta “Você voltou a tocar?”, a palavra “voltou” pressupõe que Lia:",
       "options": [
         {
           "id": "A",
-          "text": "Se não está escrito literalmente, não pode ser cobrado."
+          "text": "Tocou a mesma partitura em todos os ensaios realizados no ano anterior."
         },
         {
           "id": "B",
-          "text": "Inferir é escolher a interpretação mais criativa."
+          "text": "Nunca havia aprendido música e precisaria começar do zero naquele dia."
         },
         {
           "id": "C",
-          "text": "Pressupostos tendem a permanecer mesmo quando a frase é negada; “João parou de correr” pressupõe que João corria antes."
+          "text": "Já havia decidido abandonar a flauta antes do encerramento das aulas."
         },
         {
           "id": "D",
-          "text": "Toda informação implícita é subjetiva."
+          "text": "Tocava flauta em algum período anterior ao da pergunta."
         },
         {
           "id": "E",
-          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+          "text": "O professor a proibiu de usar o piano durante o primeiro encontro."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Pressupostos tendem a permanecer mesmo quando a frase é negada; “João parou de correr” pressupõe que João corria antes.",
-      "difficulty": "applied",
-      "cognitiveOperation": "discriminate",
+      "correctOption": "D",
+      "explanation": "“Voltou” apresenta a ação como retomada; a resposta de Lia e sua chegada posterior com uma partitura reforçam essa leitura. O texto não descreve o repertório antigo, por isso não se pode concluir que ela tocava uma peça específica.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
       "concepts": [
         "POR-03-C03"
       ],
-      "targetedError": "Pressuposto e opinião do leitor são a mesma coisa.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A pergunta indica que Lia nunca tocou flauta antes.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "No primeiro dia de aula, o professor de música abriu a caixa dos instrumentos e encontrou a flauta de Lia no mesmo estojo em que ela a havia guardado em dezembro. “Você voltou a tocar?”, perguntou. Lia respondeu que ainda não, mas levou o instrumento para casa naquela tarde. Na semana seguinte, chegou ao ensaio com uma partitura dobrada e sentou-se ao lado de duas colegas. O professor não comentou a mudança; apenas deixou a estante livre perto do piano."
     },
     {
       "id": "POR-03-Q04",
       "lessonId": "POR-03",
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Inferência, implícitos, pressupostos e leitura de contexto?",
+      "stem": "Ao perguntar se Joana ainda usa a mesa, Mauro provavelmente:",
       "options": [
         {
           "id": "A",
-          "text": "Inferir é escolher a interpretação mais criativa."
+          "text": "Pretende impedir que Joana saia antes do início da reunião na biblioteca."
         },
         {
           "id": "B",
-          "text": "Toda informação implícita é subjetiva."
+          "text": "Precisa confirmar se a mesa está quebrada antes de levar seus cadernos à biblioteca."
         },
         {
           "id": "C",
-          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+          "text": "Está avisando que o grupo de estudo mudou das quatro para as cinco horas."
         },
         {
           "id": "D",
-          "text": "Se não está escrito literalmente, não pode ser cobrado."
+          "text": "Deseja que Joana leve os cadernos até a janela enquanto ele guarda o estojo."
         },
         {
           "id": "E",
-          "text": "Subentendidos dependem mais da situação comunicativa e podem ser negados pelo falante com maior facilidade."
+          "text": "Quer saber se ela terminou a atividade e pode liberar o lugar para ele estudar."
         }
       ],
       "correctOption": "E",
-      "explanation": "Subentendidos dependem mais da situação comunicativa e podem ser negados pelo falante com maior facilidade.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "apply",
+      "explanation": "Mauro está com cadernos e olha para uma mesa vazia quando pergunta se Joana ainda a usa. O contexto torna provável que queira ocupar o lugar, e a resposta de Joana encerrando a atividade confirma que ela pode liberá-lo.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze",
       "concepts": [
         "POR-03-C04"
       ],
-      "targetedError": "Se não está escrito literalmente, não pode ser cobrado.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Mauro pergunta pela mesa para avisar que ela precisa ser retirada da biblioteca.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "— Você ainda está usando a mesa perto da janela? — perguntou Mauro, parado com uma pilha de cadernos na mão.\n— Terminei por aqui — respondeu Joana, fechando o estojo.\nMauro olhou para os cadernos, depois para a mesa vazia ao lado dela. Joana juntou as folhas e colocou a mochila no ombro.\n— A bibliotecária disse que o grupo de estudo começa às quatro — comentou ele.\n— Então ainda dá tempo de escolher um lugar — disse Joana, já caminhando para a porta."
     },
     {
       "id": "POR-03-Q05",
       "lessonId": "POR-03",
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Inferência, implícitos, pressupostos e leitura de contexto?",
+      "stem": "Qual inferência se apoia melhor nas pistas sobre o armário e a lista?",
       "options": [
         {
           "id": "A",
-          "text": "Toda informação implícita é subjetiva."
+          "text": "Os moradores estão tentando organizar o compartilhamento de ferramentas e pequenos reparos."
         },
         {
           "id": "B",
-          "text": "Uma inferência válida precisa ser compatível com todas as informações relevantes do texto."
+          "text": "O síndico vendeu as ferramentas e usou a lista para divulgar os preços no salão."
         },
         {
           "id": "C",
-          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+          "text": "A caixa foi abandonada porque os vizinhos deixaram de precisar consertar objetos domésticos."
         },
         {
           "id": "D",
-          "text": "Se não está escrito literalmente, não pode ser cobrado."
+          "text": "A porta destrancada prova que ferramentas foram furtadas durante a reunião de sábado."
         },
         {
           "id": "E",
-          "text": "Inferir é escolher a interpretação mais criativa."
+          "text": "O prédio contratou um eletricista para substituir todos os puxadores do salão."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Uma inferência válida precisa ser compatível com todas as informações relevantes do texto.",
-      "difficulty": "applied",
+      "correctOption": "A",
+      "explanation": "A lista identifica vizinhos que precisam de pequenos reparos, o bilhete pede devolução e a reunião vai organizar turnos de empréstimo. Embora o armário estivesse aberto, nenhuma ferramenta sumiu; concluir furto contradiz a informação explícita.",
+      "difficulty": "ifsc",
       "cognitiveOperation": "evaluate",
       "concepts": [
         "POR-03-C05"
       ],
-      "targetedError": "Inferir é escolher a interpretação mais criativa.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O armário aberto indica que as ferramentas desapareceram durante a semana.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "O grupo de moradores instalou uma pequena caixa de ferramentas no salão do prédio. Na primeira semana, apareceram uma chave de fenda, fita isolante e um bilhete: “devolva depois de usar”. No sábado, o síndico encontrou o armário aberto, mas nenhuma ferramenta havia sumido; alguém deixara uma lista com os nomes dos vizinhos que precisavam consertar tomadas e puxadores. A reunião seguinte foi marcada para organizar turnos de empréstimo. A porta do salão agora permanece destrancada durante a tarde."
     },
     {
       "id": "POR-03-Q06",
       "lessonId": "POR-03",
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Inferência, implícitos, pressupostos e leitura de contexto, qual análise está correta?",
+      "stem": "Na frase “Ela anotou o número do equipamento”, o pronome retoma:",
       "options": [
         {
           "id": "A",
-          "text": "Pressuposto e opinião do leitor são a mesma coisa."
+          "text": "A técnica Paula, que estava conferindo a lista de materiais da caixa."
         },
         {
           "id": "B",
-          "text": "Se não está escrito literalmente, não pode ser cobrado."
+          "text": "A professora Marta, que registrou o microscópio no caderno de manutenção."
         },
         {
           "id": "C",
-          "text": "Inferir é escolher a interpretação mais criativa."
+          "text": "A turma seguinte, que ficou responsável por fechar o laboratório naquela saída."
         },
         {
           "id": "D",
-          "text": "O sentido de uma palavra desconhecida pode muitas vezes ser inferido pelas palavras vizinhas e pela situação apresentada."
+          "text": "A coordenação, que entregou a chave antes de receber o aviso da lâmpada."
         },
         {
           "id": "E",
-          "text": "Toda informação implícita é subjetiva."
+          "text": "A lâmpada queimada, cujo número foi escrito na caixa do microscópio."
         }
       ],
-      "correctOption": "D",
-      "explanation": "O sentido de uma palavra desconhecida pode muitas vezes ser inferido pelas palavras vizinhas e pela situação apresentada.",
-      "difficulty": "ifsc",
+      "correctOption": "B",
+      "explanation": "A ordem das ações atribui primeiro à professora a conferência do microscópio e a anotação; depois, Paula verifica a lista. A menção de Paula na frase anterior pode atrair a leitura, mas a sequência e a função descrita sustentam Marta como referente.",
+      "difficulty": "direct",
       "cognitiveOperation": "analyze",
       "concepts": [
         "POR-03-C06"
       ],
-      "targetedError": "Toda informação implícita é subjetiva.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O pronome aponta para Paula porque ela é citada na oração anterior.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A professora Marta entregou a chave do laboratório à técnica Paula depois de confirmar que o microscópio estava guardado. Ela anotou o número do equipamento no caderno de manutenção e deixou a porta aberta para a turma seguinte. Paula verificou a lista de materiais antes de fechar a caixa. Na saída, a professora pediu que a técnica avisasse a coordenação sobre a lâmpada queimada; a chave ficou com Paula até o início da aula de quinta-feira."
     },
     {
       "id": "POR-03-Q07",
       "lessonId": "POR-03",
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Inferir é escolher a interpretação mais criativa.”. Qual é a melhor correção?",
+      "stem": "A fala final do servidor é irônica porque:",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "Ele informa que o reparo foi concluído e que a sala será reaberta ao público."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Ele acredita que o arquivo municipal precisa instalar uma atração turística aquática."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "Ele elogia uma situação que o vazamento e os baldes mostram ser problemática."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "Ele comemora que os documentos molhados serão substituídos por cópias digitais."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Ele prevê uma tempestade que começará antes do horário do almoço."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Inferir é construir uma conclusão apoiada por pistas do texto e pelo contexto, não adivinhar livremente.",
+      "correctOption": "C",
+      "explanation": "A goteira já molhou documentos e levou à colocação de baldes; chamar isso de “previsão excelente” contrasta com o problema e critica a demora do reparo. A palavra cachoeira intensifica o sarcasmo, não descreve uma atração real.",
       "difficulty": "applied",
-      "cognitiveOperation": "diagnose_error",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
-        "POR-03-C01"
+        "POR-03-C02"
       ],
-      "targetedError": "Inferir é escolher a interpretação mais criativa.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O servidor está satisfeito porque a sala pode receber uma cachoeira de verdade.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A chuva entrou pela janela do arquivo municipal e molhou duas caixas de documentos. Na visita da manhã, o secretário colocou baldes sob as goteiras e pediu que os funcionários afastassem as estantes da parede. O aviso de manutenção estava preso à porta desde a semana anterior. Quando o repórter perguntou se o reparo começaria naquele dia, o servidor olhou para o teto e respondeu: “A previsão é excelente: talvez a sala ganhe outra cachoeira antes do almoço”."
     },
     {
       "id": "POR-03-Q08",
       "lessonId": "POR-03",
       "type": "MCQ",
-      "stimulus": "Ao entrar na sala, Caio colocou o guarda-chuva pingando ao lado da porta e disse: “Ainda bem que trouxe outra camiseta na mochila.”",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stimulus": "No mural do condomínio, o aviso sobre a troca do elevador dizia que o serviço começaria na segunda-feira. Na terça, caixas de ferramentas ainda estavam no corredor, e a síndica respondeu a um morador que a equipe aguardava uma peça. Na quarta à tarde, o elevador voltou a funcionar; um cartaz novo pediu que objetos grandes fossem levados pela escada até sexta. O zelador contou que alguns apartamentos receberam compras de móveis naquele período, mas não soube dizer se houve atraso nas entregas.",
+      "stem": "Qual conclusão é mais segura a partir das pistas sobre o elevador?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "O cartaz de sexta informa que o elevador voltará a parar naquele dia para outra manutenção."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "Todos os moradores receberam seus móveis com atraso por causa da troca da peça."
         },
         {
           "id": "C",
-          "text": "É razoável inferir que Caio se molhou ou enfrentou chuva; não se pode concluir onde choveu ou quanto tempo durou."
+          "text": "A equipe concluiu o serviço na segunda, mas a síndica manteve o elevador desligado até quarta."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "O equipamento ficou indisponível por algum tempo e foi liberado antes de sexta-feira."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "A troca da peça foi cancelada e os moradores passaram a usar apenas as escadas."
         }
       ],
-      "correctOption": "C",
-      "explanation": "É razoável inferir que Caio se molhou ou enfrentou chuva; não se pode concluir onde choveu ou quanto tempo durou.",
+      "correctOption": "D",
+      "explanation": "O aviso anuncia o serviço, as ferramentas e a espera por uma peça indicam interrupção, e a quarta-feira confirma a retomada do elevador. O período exato de indisponibilidade não é detalhado, e o zelador não confirma atrasos nas entregas.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-03-C01",
         "POR-03-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "As caixas no corredor provam que todas as entregas de móveis atrasaram.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2
     }
   ],
   "concepts": [

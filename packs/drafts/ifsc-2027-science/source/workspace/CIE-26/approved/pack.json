@@ -196,294 +196,292 @@
     {
       "id": "CIE-26-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Durante uma revisão de interações alélicas, genética aplicada e biotecnologia, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "stem": "Relatório de jardim experimental, hipótese de 2 set. 2026. No jardim experimental da escola, a turma cruzou flores de linhagem vermelha com flores de linhagem branca. As oito plantas da primeira geração produziram flores de tom rosa, e a equipe registrou a intensidade de pigmento em uma escala de 1 a 5. Na geração seguinte, apareceram flores vermelhas, rosas e brancas. Os estudantes mantiveram a mesma iluminação e fotografaram cada vaso no mesmo horário para comparar as tonalidades.\n\nQual padrão de interação alélica é compatível com as observações da primeira geração?",
       "options": [
         {
           "key": "A",
-          "text": "Se uma técnica é cientificamente possível, sua aplicação é automaticamente ética."
+          "text": "Dominância completa, pois o heterozigoto expressa a cor de uma das linhagens parentais."
         },
         {
           "key": "B",
-          "text": "Na dominância incompleta, o heterozigoto apresenta fenótipo intermediário em relação aos homozigotos em exemplos clássicos."
+          "text": "Codominância, se cada flor rosa apresentar regiões distintas com pigmentos vermelhos e brancos."
         },
         {
           "key": "C",
-          "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+          "text": "Dominância incompleta, em que o heterozigoto pode apresentar tonalidade entre as dos parentais."
         },
         {
           "key": "D",
-          "text": "Dados genéticos não trazem qualquer questão de privacidade."
+          "text": "Variação ambiental, já que diferenças de pigmento podem surgir durante o crescimento das flores."
         },
         {
           "key": "E",
-          "text": "Biotecnologia é apenas manipulação genética de seres humanos."
+          "text": "Herança sem padrão definido, porque a geração seguinte incluiu três tonalidades de flor."
         }
       ],
-      "correctOption": "B",
-      "explanation": "A alternativa B é a correta: Na dominância incompleta, o heterozigoto apresenta fenótipo intermediário em relação aos homozigotos em exemplos clássicos.",
-      "difficulty": "FOUNDATION",
-      "cognitiveOperation": "UNDERSTAND",
+      "correctOption": "C",
+      "explanation": "A equipe observou flores rosas entre parentais vermelhos e brancos, um resultado intermediário compatível com dominância incompleta. A hipótese de codominância falha porque o relato descreve uma tonalidade intermediária, não duas regiões de cor distintas.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "CIE-26-CON-01"
       ],
-      "targetedError": "core_concept",
+      "targetedError": "incomplete_dominance_vs_codominance",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-26-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante precisa explicar interações alélicas, genética aplicada e biotecnologia sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "stem": "Fotoficha da fazenda-escola, observação de 3 set. 2026. Os grupos X e Y eram linhagens homozigotas para variantes distintas de um mesmo gene: X tinha pelos escuros e Y, pelos claros. Nos descendentes heterozigotos de um cruzamento entre essas linhagens, a pesquisadora contou pelos das duas cores em pequenas áreas lado a lado, sem notar uma tonalidade única entre elas. Ela anexou uma fotografia de cada animal e indicou a região em que fez a contagem.\n\nQual interpretação descreve melhor o fenótipo dos descendentes observados?",
       "options": [
         {
           "key": "A",
-          "text": "Dados genéticos não trazem qualquer questão de privacidade."
+          "text": "A variante para pelos claros pode mascarar a escura, produzindo um fenótipo semelhante ao grupo Y."
         },
         {
           "key": "B",
-          "text": "Na codominância, dois alelos podem contribuir de forma detectável para o fenótipo do heterozigoto."
+          "text": "A observação é compatível com expressão detectável das duas variantes no fenótipo heterozigoto."
         },
         {
           "key": "C",
-          "text": "Biotecnologia é apenas manipulação genética de seres humanos."
+          "text": "A presença das duas cores indica que cada descendente recebeu duas cópias da variante escura."
         },
         {
           "key": "D",
-          "text": "Se uma técnica é cientificamente possível, sua aplicação é automaticamente ética."
+          "text": "Os pelos lado a lado representam uma tonalidade intermediária produzida pela mistura dos pigmentos."
         },
         {
           "key": "E",
-          "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+          "text": "A distribuição registrada pode refletir variação entre regiões da pelagem, sem indicar o mecanismo genético."
         }
       ],
       "correctOption": "B",
-      "explanation": "A alternativa B é a correta: Na codominância, dois alelos podem contribuir de forma detectável para o fenótipo do heterozigoto.",
+      "explanation": "A contagem encontrou pelos claros e escuros distintos em regiões próximas. Esse registro é compatível com codominância; uma mistura em tom intermediário não corresponde ao padrão observado.",
       "difficulty": "DIRECT",
-      "cognitiveOperation": "UNDERSTAND",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "CIE-26-CON-02"
       ],
-      "targetedError": "concept_discrimination",
+      "targetedError": "codominance_as_blending",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-26-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em interações alélicas, genética aplicada e biotecnologia?",
+      "stem": "Caderno de padaria didática, caso fictício de 4 set. 2026. Uma equipe de tecnologia de alimentos acompanhou um processo piloto em que células de levedura eram usadas para transformar uma mistura de açúcares em um ingrediente destinado a testes de panificação. O caderno descreveu a origem das células, a temperatura do tanque e a quantidade de ingrediente obtida em cada lote. A equipe comparou o processo com uma etapa feita por enzimas isoladas e anotou diferenças de tempo e rendimento, sem apresentar o produto como tratamento médico.\n\nPor que o processo descrito se enquadra em biotecnologia?",
       "options": [
         {
           "key": "A",
-          "text": "Se uma técnica é cientificamente possível, sua aplicação é automaticamente ética."
+          "text": "Porque medir o rendimento permite que a equipe substitua as células por um processo não biológico."
         },
         {
           "key": "B",
-          "text": "Dados genéticos não trazem qualquer questão de privacidade."
+          "text": "Porque o ingrediente será usado em panificação e, por isso, precisa envolver genes humanos."
         },
         {
           "key": "C",
-          "text": "Biotecnologia usa organismos, células ou moléculas biológicas para desenvolver produtos e processos."
+          "text": "Porque a transformação de açúcares pode ser explicada sem participação de recursos biológicos."
         },
         {
           "key": "D",
-          "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+          "text": "Porque recursos biológicos participam da conversão de matérias-primas em produtos de interesse."
         },
         {
           "key": "E",
-          "text": "Biotecnologia é apenas manipulação genética de seres humanos."
+          "text": "Porque a comparação do rendimento comprova que as leveduras sofreram alteração genética."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A alternativa C é a correta: Biotecnologia usa organismos, células ou moléculas biológicas para desenvolver produtos e processos.",
-      "difficulty": "DIRECT",
-      "cognitiveOperation": "ANALYZE",
+      "correctOption": "D",
+      "explanation": "O registro menciona células de levedura e também uma etapa com enzimas, ambos recursos biológicos aplicados à produção. O uso de biotecnologia não depende de manipulação de genes humanos.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
         "CIE-26-CON-03"
       ],
-      "targetedError": "relationship",
+      "targetedError": "biotechnology_scope",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-26-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em um sistema de codominância, o que pode ocorrer no heterozigoto?",
+      "stem": "Ata de reunião de cooperativa escolar, cenário de 5 set. 2026. Um grupo de agricultores avaliou uma variedade de milho desenvolvida para reduzir danos de um inseto que afetava as espigas na região. Em duas áreas de tamanho semelhante, a equipe anotou danos, rendimento e presença de insetos ao longo da estação. A proposta também previa monitorar espécies não alvo e discutir acesso às sementes com cooperativas locais. Antes de ampliar o plantio, os participantes pediram mais dados sobre efeitos ambientais e custos para propriedades menores.\n\nQual encaminhamento considera de modo mais adequado os benefícios e os limites da aplicação?",
       "options": [
         {
           "key": "A",
-          "text": "Um dos alelos é obrigatoriamente destruído."
+          "text": "Confrontar os resultados produtivos com efeitos ambientais e condições de acesso antes de ampliar o uso."
         },
         {
           "key": "B",
-          "text": "Os dois alelos deixam de ser expressos."
+          "text": "Usar o rendimento medido como referência inicial, reconhecendo diferenças entre regiões agrícolas."
         },
         {
           "key": "C",
-          "text": "O indivíduo passa a ter apenas um alelo."
+          "text": "Priorizar os registros ambientais e deixar a análise agronômica para uma etapa posterior."
         },
         {
           "key": "D",
-          "text": "Os produtos ou efeitos associados aos dois alelos podem ser detectados simultaneamente."
+          "text": "Comparar as espigas colhidas para estimar efeitos sobre insetos e custos de produção."
         },
         {
           "key": "E",
-          "text": "O DNA deixa de participar do fenótipo."
+          "text": "Ampliar o plantio na próxima etapa e usar os dados ambientais para orientar ajustes posteriores."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Os produtos ou efeitos associados aos dois alelos podem ser detectados simultaneamente.",
-      "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "correctOption": "A",
+      "explanation": "O estudo já registra danos e rendimento, mas propõe monitorar espécies não alvo e discutir acesso e custos. Uma única área não resolve essas questões nem garante que o resultado se repita em outros contextos.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
       "conceptIds": [
-        "CIE-26-CON-01",
-        "CIE-26-CON-02",
-        "CIE-26-CON-03"
+        "CIE-26-CON-04",
+        "CIE-26-CON-05"
       ],
-      "targetedError": "application",
+      "targetedError": "benefit_risk_tradeoff",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-26-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Na dominância incompleta, o heterozigoto apresenta fenótipo intermediário em relação aos homozigotos em exemplos clássicos.\nII. Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante.\nIII. Biotecnologia usa organismos, células ou moléculas biológicas para desenvolver produtos e processos.\nIV. Biotecnologia é apenas manipulação genética de seres humanos.\nAssinale a alternativa CORRETA.",
+      "stem": "Ficha de orientação simulada, escrita para aula de 6 set. 2026. Uma estudante recebeu de uma clínica um resultado de teste genético solicitado por sua família. O arquivo continha informações sobre variantes associadas a certas condições de saúde. Ao oferecer uma vaga de estágio, uma empresa pediu que todos os candidatos enviassem documentos médicos e mencionou que pretendia selecionar pessoas com menor probabilidade de faltar. A estudante perguntou à orientadora quais dados eram necessários para avaliar suas habilidades para a vaga.\n\nQue preocupação bioética aparece com mais clareza nessa situação?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "O resultado pode ser considerado ao estimar a adequação da estudante às tarefas profissionais."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "O arquivo pode ajudar a comparar candidatos se os dados forem mantidos em ambiente restrito."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "O acesso precisa ter finalidade e consentimento claros, com proteção contra discriminação."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "A clínica pode decidir o compartilhamento porque foi responsável pela realização do teste."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "O pedido de dados torna o resultado genético um indicador complementar de aptidão profissional."
         }
       ],
-      "correctOption": "B",
-      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-      "difficulty": "IFSC",
-      "cognitiveOperation": "ANALYZE",
+      "correctOption": "C",
+      "explanation": "O pedido de dados de saúde para selecionar candidatos cria risco de perda de privacidade e discriminação. O relato não apresenta o teste como medida de capacidade para o trabalho.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "EVALUATE",
       "conceptIds": [
-        "CIE-26-CON-01",
-        "CIE-26-CON-02",
-        "CIE-26-CON-03",
-        "CIE-26-CON-04"
+        "CIE-26-CON-06"
       ],
-      "targetedError": "multi_statement_reasoning",
+      "targetedError": "genetic_privacy_and_discrimination",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-26-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Ao transferir o que foi estudado sobre interações alélicas, genética aplicada e biotecnologia para uma situação nova, qual conclusão permanece válida?",
+      "stem": "Proposta de comitê fictícia, estudo de caso de 7 set. 2026. Um hospital propôs testar uma terapia baseada em genes para um grupo de pacientes com uma condição rara. A equipe preparou um protocolo com etapas de consentimento, acompanhamento de efeitos adversos e critérios de inclusão. Uma associação de pacientes pediu explicações em linguagem acessível e perguntou como as vagas seriam distribuídas se houvesse mais interessados do que participantes. O comitê também solicitou dados sobre benefícios esperados e incertezas antes de avaliar o estudo.\n\nQual decisão combina melhor a análise científica com a responsabilidade bioética?",
       "options": [
         {
           "key": "A",
-          "text": "Dados genéticos não trazem qualquer questão de privacidade."
+          "text": "Iniciar o estudo e usar o acompanhamento para resolver eventuais dúvidas sobre os riscos."
         },
         {
           "key": "B",
-          "text": "Se uma técnica é cientificamente possível, sua aplicação é automaticamente ética."
+          "text": "Apresentar o benefício esperado como provável, desde que a equipe monitore os participantes."
         },
         {
           "key": "C",
-          "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+          "text": "Considerar o consentimento dispensável quando o protocolo prevê critérios de inclusão clínica."
         },
         {
           "key": "D",
-          "text": "Bioética discute valores e responsabilidades em decisões envolvendo vida, saúde, tecnologia e ambiente."
+          "text": "Distribuir as vagas por ordem de inscrição e explicar as incertezas após a seleção."
         },
         {
           "key": "E",
-          "text": "Biotecnologia é apenas manipulação genética de seres humanos."
+          "text": "Submeter o protocolo à avaliação, com consentimento informado e critérios transparentes de participação."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D é a correta: Bioética discute valores e responsabilidades em decisões envolvendo vida, saúde, tecnologia e ambiente.",
-      "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "correctOption": "E",
+      "explanation": "O protocolo prevê incertezas e o comitê ainda precisa avaliar dados. Consentimento informado e critérios claros respondem às preocupações dos pacientes; a promessa de benefício não equivale a um resultado comprovado.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "EVALUATE",
       "conceptIds": [
         "CIE-26-CON-05"
       ],
-      "targetedError": "transfer",
+      "targetedError": "scientific_possibility_as_ethical_permission",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-26-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre interações alélicas, genética aplicada e biotecnologia?",
+      "stem": "Folheto simulado de laboratório, exemplo de 8 set. 2026. Um laboratório ofereceu um painel de DNA que estima a presença de variantes relacionadas a algumas condições hereditárias. O folheto informava que o resultado dependia do conjunto de variantes analisadas e da história familiar. Uma pessoa queria enviar a amostra, mas ainda não sabia por quanto tempo o laboratório guardaria os dados nem se poderia apagá-los depois. Ela também perguntou se um resultado sem variantes listadas encerraria a investigação clínica.\n\nQual leitura do folheto e das dúvidas é cientificamente e eticamente cuidadosa?",
       "options": [
         {
           "key": "A",
-          "text": "Na dominância incompleta, o heterozigoto apresenta fenótipo intermediário em relação aos homozigotos em exemplos clássicos."
+          "text": "Um resultado sem variantes no painel pode orientar o encerramento da conversa sobre histórico familiar."
         },
         {
           "key": "B",
-          "text": "Testes genéticos, organismos geneticamente modificados e terapias baseadas em genes são exemplos de aplicações que exigem análise de benefícios, riscos e limites."
+          "text": "Antes de enviar a amostra, convém entender o alcance do painel e as regras de guarda dos dados."
         },
         {
           "key": "C",
-          "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+          "text": "Resultados de painéis diferentes podem ser comparados sem considerar quais variantes cada um cobre."
         },
         {
           "key": "D",
-          "text": "Na codominância, dois alelos podem contribuir de forma detectável para o fenótipo do heterozigoto."
+          "text": "Ao coletar a amostra, o laboratório passa a definir como os dados pessoais serão utilizados."
         },
         {
           "key": "E",
-          "text": "Biotecnologia usa organismos, células ou moléculas biológicas para desenvolver produtos e processos."
+          "text": "A presença de uma variante no painel indica que a condição associada vai se manifestar."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A alternativa C é a incorreta: Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante. As demais expressam relações compatíveis com os conceitos da aula.",
-      "difficulty": "DIRECT",
-      "cognitiveOperation": "ANALYZE",
+      "correctOption": "B",
+      "explanation": "O folheto delimita as variantes analisadas, e a pessoa ainda não recebeu informação sobre armazenamento ou exclusão. Esses limites justificam perguntas sobre consentimento e privacidade; um resultado negativo não encerra, por si só, uma avaliação clínica.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "EVALUATE",
       "conceptIds": [
-        "CIE-26-CON-01"
+        "CIE-26-CON-04",
+        "CIE-26-CON-06"
       ],
-      "targetedError": "misconception_identification",
+      "targetedError": "genetic_test_scope_and_data_use",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-26-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em interações alélicas, genética aplicada e biotecnologia?",
+      "stem": "Ata de planejamento agrícola escolar, hipótese de 9 set. 2026. Uma cooperativa recebeu sementes de uma variedade geneticamente modificada e organizou uma reunião antes do plantio. Os agricultores analisaram um relatório de produtividade de outra região, uma previsão de custo local e um plano de acompanhamento de polinizadores. Também pediram informações sobre armazenamento das sementes, dependência de fornecedores e regras de comercialização. A ata registra que o grupo queria decidir depois de comparar os dados e ouvir moradores próximos às áreas de cultivo.\n\nQual procedimento representa melhor uma análise bioética e socioambiental da proposta?",
       "options": [
         {
           "key": "A",
-          "text": "Biotecnologia é apenas manipulação genética de seres humanos."
+          "text": "Tomar o relatório de outra região como base principal e consultar os dados locais depois."
         },
         {
           "key": "B",
-          "text": "Se uma técnica é cientificamente possível, sua aplicação é automaticamente ética."
+          "text": "Comparar a procedência das sementes com o custo, deixando os efeitos locais para o monitoramento."
         },
         {
           "key": "C",
-          "text": "Informação genética é sensível e levanta questões de privacidade, discriminação e consentimento."
+          "text": "Priorizar os dados de polinizadores e avaliar os demais registros após o plantio inicial."
         },
         {
           "key": "D",
-          "text": "Dados genéticos não trazem qualquer questão de privacidade."
+          "text": "Reunir evidências do cultivo e da cadeia de sementes, considerando os grupos afetados antes de decidir."
         },
         {
           "key": "E",
-          "text": "Todo heterozigoto sempre apresenta o mesmo fenótipo de um alelo dominante."
+          "text": "Adotar a variedade e usar os resultados posteriores para ajustar as regras de comercialização."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A alternativa C é a correta: Informação genética é sensível e levanta questões de privacidade, discriminação e consentimento.",
+      "correctOption": "D",
+      "explanation": "A ata reúne dados agronômicos, custos, polinizadores, acesso às sementes e participação local. Uma análise responsável considera esse conjunto; a origem genética, sozinha, não decide o impacto social ou ambiental.",
       "difficulty": "IFSC",
       "cognitiveOperation": "EVALUATE",
       "conceptIds": [
-        "CIE-26-CON-06"
+        "CIE-26-CON-04",
+        "CIE-26-CON-05"
       ],
-      "targetedError": "synthesis",
+      "targetedError": "socioenvironmental_impact_analysis",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     }
   ]

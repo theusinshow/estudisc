@@ -158,300 +158,315 @@
     {
       "id": "POR-16-Q01",
       "lessonId": "POR-16",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Figuras de linguagem e efeitos de sentido em uso real da língua?",
+      "stem": "Que impressão a imagem “um relógio sem ponteiros” transmite sobre a tarde?",
       "options": [
         {
           "id": "A",
-          "text": "Ironia é simplesmente mentira."
+          "text": "O relógio da sala perdeu uma peça durante a atividade de leitura."
         },
         {
           "id": "B",
-          "text": "Figuras só aparecem em poemas."
+          "text": "A turma fez uma medição do tempo sem usar instrumentos."
         },
         {
           "id": "C",
-          "text": "Basta saber o nome da figura."
+          "text": "A espera pareceu arrastada, como se o tempo não avançasse para Pedro."
         },
         {
           "id": "D",
-          "text": "Metáfora aproxima campos de sentido implicitamente; comparação explicita a relação com marcas comparativas."
+          "text": "A professora pediu que os estudantes desenhassem mostradores para o diário."
         },
         {
           "id": "E",
-          "text": "Toda frase não literal é metáfora."
+          "text": "A leitura terminou antes que os ponteiros começassem a girar."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Metáfora aproxima campos de sentido implicitamente; comparação explicita a relação com marcas comparativas.",
-      "difficulty": "foundation",
-      "cognitiveOperation": "recognize",
+      "correctOption": "C",
+      "explanation": "Pedro chama a tarde de relógio sem ponteiros depois da espera pela chave, e o encerramento revela que pouco tempo havia passado durante a leitura. A leitura de um aparelho quebrado falha porque a frase está no diário como imagem da experiência, não como registro de manutenção.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-16-C01"
       ],
-      "targetedError": "Toda frase não literal é metáfora.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Interpretar uma imagem figurada como relato literal de um objeto danificado.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Crônica autoral de Lúcia Prado, mural do clube de leitura, 16 de março — A turma esperou a chave da sala enquanto o relógio da secretaria avançava. Quando finalmente entraram, a professora pediu que cada grupo escolhesse um livro e registrasse uma frase no quadro. Pedro olhou para as páginas ainda fechadas e escreveu no diário: “A tarde era um relógio sem ponteiros.” Depois, sentou-se perto da janela e leu até o sinal. No fim do encontro, o relógio da parede marcava apenas dez minutos desde a distribuição dos livros, embora a espera tivesse parecido longa para quem aguardava."
     },
     {
       "id": "POR-16-Q02",
       "lessonId": "POR-16",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Figuras de linguagem e efeitos de sentido, qual princípio deve orientar a análise?",
+      "stem": "O que a comparação de Bia destaca na movimentação dos passes?",
       "options": [
         {
           "id": "A",
-          "text": "Metonímia substitui um termo por outro associado por proximidade de sentido."
+          "text": "A equipe percorreu a quadra em direções distintas, sem convergir para a lateral."
         },
         {
           "id": "B",
-          "text": "Figuras só aparecem em poemas."
+          "text": "Os jogadores fizeram deslocamentos curtos que se juntavam perto da lateral."
         },
         {
           "id": "C",
-          "text": "Basta saber o nome da figura."
+          "text": "Bia descreve uma sequência de passes longos que atravessou a quadra em direção ao gol."
         },
         {
           "id": "D",
-          "text": "Toda frase não literal é metáfora."
+          "text": "O treinador pediu que os atletas se concentrassem em chutes feitos de longe."
         },
         {
           "id": "E",
-          "text": "Ironia é simplesmente mentira."
+          "text": "A rodada terminou com os atletas correndo em direções sem relação entre si."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Metonímia substitui um termo por outro associado por proximidade de sentido.",
-      "difficulty": "direct",
-      "cognitiveOperation": "understand",
+      "correctOption": "B",
+      "explanation": "A comparação reúne a repetição de movimentos curtos e sua convergência para um ponto, como os passes descritos perto da lateral. A leitura literal das migalhas ignora que Bia usa a imagem para representar a jogada, não para relatar algo na quadra.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-16-C02"
       ],
-      "targetedError": "Ironia é simplesmente mentira.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tomar a cena comparativa como acontecimento concreto em vez de observar a semelhança com a jogada narrada.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Relato do treino de futsal, 28 de abril — Na última rodada, a equipe perdeu por um gol e voltou à quadra para praticar passes curtos. O treinador pediu que os jogadores se aproximassem antes de receber a bola. Bia descreveu a movimentação no caderno: “Os passes corriam como formigas levando migalhas para o mesmo canto.” O grupo riu da comparação e repetiu a jogada mais devagar. Na versão final do relato, Bia manteve a frase porque a imagem mostrava muitos deslocamentos pequenos que convergiam para o espaço perto da lateral, onde o colega aguardava."
     },
     {
       "id": "POR-16-Q03",
       "lessonId": "POR-16",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Figuras de linguagem e efeitos de sentido?",
+      "stem": "Quem ou o que é nomeado pela palavra “salão” nessa frase?",
       "options": [
         {
           "id": "A",
-          "text": "Basta saber o nome da figura."
+          "text": "O edifício inteiro, incluindo os quartos e as salas fechadas do centro."
         },
         {
           "id": "B",
-          "text": "Toda frase não literal é metáfora."
+          "text": "A equipe responsável por montar o microfone antes do sarau."
         },
         {
           "id": "C",
-          "text": "Hipérbole intensifica por exagero; eufemismo atenua formulação potencialmente dura."
+          "text": "O poema que Dandara escreveu para a avó e leu no palco."
         },
         {
           "id": "D",
-          "text": "Ironia é simplesmente mentira."
+          "text": "As pessoas reunidas no espaço, mencionadas pelo nome do lugar em que estavam."
         },
         {
           "id": "E",
-          "text": "Figuras só aparecem em poemas."
+          "text": "As cadeiras vazias que foram retiradas após a leitura."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Hipérbole intensifica por exagero; eufemismo atenua formulação potencialmente dura.",
-      "difficulty": "applied",
-      "cognitiveOperation": "discriminate",
+      "correctOption": "D",
+      "explanation": "O programa atribui o aplauso ao público reunido no salão, e não às paredes ou ao edifício. A leitura de que “salão” designa toda a equipe de organização falha porque o texto distingue os agradecidos da plateia que reagiu ao poema.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-16-C03"
       ],
-      "targetedError": "Figuras só aparecem em poemas.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Atribuir a ação ao espaço físico, sem recuperar as pessoas reunidas nele.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Nota do sarau no centro comunitário, 19 de maio — No final da apresentação, o texto do programa dizia: “O salão aplaudiu a leitura de Dandara.” As cadeiras estavam ocupadas por famílias e estudantes, e o som dos aplausos veio de todos os lados da sala. Dandara leu um poema que havia escrito para a avó, depois agradeceu às pessoas que ajudaram a preparar o microfone. A equipe guardou a frase no registro do evento porque ela resumiu a reação do público sem listar cada participante que bateu palmas."
     },
     {
       "id": "POR-16-Q04",
       "lessonId": "POR-16",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Figuras de linguagem e efeitos de sentido?",
+      "stem": "Como a frase sobre a “sorte” deve ser entendida no contexto?",
       "options": [
         {
           "id": "A",
-          "text": "Toda frase não literal é metáfora."
+          "text": "Como ironia: a frase elogia a sorte, mas o problema mostra que o dia foi inconveniente."
         },
         {
           "id": "B",
-          "text": "Ironia é simplesmente mentira."
+          "text": "Como aviso de que a horta ficará sem irrigação durante as férias escolares."
         },
         {
           "id": "C",
-          "text": "Figuras só aparecem em poemas."
+          "text": "Como notícia de uma pausa programada no funcionamento da horta."
         },
         {
           "id": "D",
-          "text": "Basta saber o nome da figura."
+          "text": "Como agradecimento à direção por ter substituído a peça pela manhã."
         },
         {
           "id": "E",
-          "text": "Ironia pode produzir sentido oposto/crítico ao literal e depende fortemente do contexto."
+          "text": "Como justificativa de que a comissão suspendeu a irrigação para economizar água."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Ironia pode produzir sentido oposto/crítico ao literal e depende fortemente do contexto.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "apply",
+      "correctOption": "A",
+      "explanation": "A mensagem chama o dia de “sorte” enquanto relata uma falha de água e baldes vazios, criando uma distância entre elogio e situação. O pedido de conserto e a troca da peça indicam que a interrupção não foi uma pausa programada.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-16-C04"
       ],
-      "targetedError": "Basta saber o nome da figura.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler o elogio como aprovação sincera, sem considerar a situação adversa relatada junto dele.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Mensagem publicada pela comissão da horta, 4 de julho — Depois de três semanas sem chuva, os canteiros receberam água trazida em baldes pelos estudantes. No dia seguinte, um problema na torneira interrompeu a irrigação durante a manhã. A comissão registrou no mural: “Que sorte a nossa: a torneira resolveu tirar férias justamente hoje.” A mensagem veio acompanhada de uma fotografia dos baldes vazios e de um pedido para que a direção verificasse o encanamento. A turma reabriu a torneira à tarde, após a troca de uma peça."
     },
     {
       "id": "POR-16-Q05",
       "lessonId": "POR-16",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Figuras de linguagem e efeitos de sentido?",
+      "stem": "O que a expressão “trezentos anos” comunica nesse relato?",
       "options": [
         {
           "id": "A",
-          "text": "Ironia é simplesmente mentira."
+          "text": "Que a viagem começou no século anterior à abertura da feira."
         },
         {
           "id": "B",
-          "text": "Personificação atribui características ou ações humanas a seres não humanos ou abstratos."
+          "text": "Que o ônibus percorreu a serra em trezentas etapas medidas pela família."
         },
         {
           "id": "C",
-          "text": "Figuras só aparecem em poemas."
+          "text": "Que a estrada permaneceu em obras por três séculos antes da viagem da família."
         },
         {
           "id": "D",
-          "text": "Basta saber o nome da figura."
+          "text": "Que a barraca de canecas permaneceu fechada por três séculos."
         },
         {
           "id": "E",
-          "text": "Toda frase não literal é metáfora."
+          "text": "Que o grupo esperou por um período que Samuel apresenta como enorme."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Personificação atribui características ou ações humanas a seres não humanos ou abstratos.",
+      "correctOption": "E",
+      "explanation": "A viagem ocorre no mesmo dia e o relato segue com a chegada à feira e o encontro com a prima; por isso, “trezentos anos” amplia de modo expressivo a sensação de espera. A interpretação de impaciência é próxima, mas o trecho não descreve uma reação de irritação, somente uma duração sentida como enorme.",
       "difficulty": "applied",
-      "cognitiveOperation": "evaluate",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-16-C05"
       ],
-      "targetedError": "Toda frase não literal é metáfora.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tratar uma duração exagerada como cronologia literal ou atribuir emoção não declarada ao narrador.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Diário de viagem de Samuel, 23 de julho — A família saiu de casa antes do amanhecer para visitar a feira de cerâmica do outro lado da serra. A estrada ficou parada por causa de uma manutenção, e o ônibus avançou poucos metros em vários minutos. Samuel escreveu no celular: “Esperei trezentos anos para chegar à barraca de canecas.” Quando finalmente desceu, viu que ainda faltavam duas horas para o almoço e encontrou a prima perto da entrada. O diário continua com uma descrição das peças azuis e do cheiro de pão que vinha da praça."
     },
     {
       "id": "POR-16-Q06",
       "lessonId": "POR-16",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Figuras de linguagem e efeitos de sentido, qual análise está correta?",
+      "stem": "Que recurso aparece quando o portão “reclama” na crônica?",
       "options": [
         {
           "id": "A",
-          "text": "Figuras só aparecem em poemas."
+          "text": "Uma comparação entre a caixa pesada e o barulho das dobradiças."
         },
         {
           "id": "B",
-          "text": "Basta saber o nome da figura."
+          "text": "Um dado literal que confirma a presença de um funcionário dentro do portão."
         },
         {
           "id": "C",
-          "text": "Toda frase não literal é metáfora."
+          "text": "Uma ação humana atribuída ao objeto, que sugere resistência ao movimento."
         },
         {
           "id": "D",
-          "text": "Em prova, é essencial relacionar a figura ao efeito: humor, crítica, intensificação, suavização, aproximação ou estranhamento."
+          "text": "Uma troca de assunto que interrompe o relato da mudança para narrar um recreio."
         },
         {
           "id": "E",
-          "text": "Ironia é simplesmente mentira."
+          "text": "Uma instrução para que a equipe converse com o portão antes de abrir."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Em prova, é essencial relacionar a figura ao efeito: humor, crítica, intensificação, suavização, aproximação ou estranhamento.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "analyze",
+      "correctOption": "C",
+      "explanation": "O rangido das dobradiças dá base à imagem de um portão que reclama, enquanto “cedeu passagem” apresenta a abertura como resposta. A leitura de uma fala literal não encontra personagem no portão nem no restante da cena.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-16-C06"
       ],
-      "targetedError": "Ironia é simplesmente mentira.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Atribuir voz real ao objeto em vez de relacionar o ruído descrito à imagem criada pelo cronista.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Crônica de Rafael Nunes, jornal do bairro, 1º de setembro — Na manhã da mudança, a equipe carregou caixas da antiga sala de música para o prédio novo. O caminhão ficou parado diante do portão enquanto os funcionários procuravam a lista de entrega. No caderno, Rafael escreveu: “O portão reclamou quando empurramos a última caixa, mas cedeu passagem antes do recreio.” A frase apareceu no texto ao lado do relato de que as dobradiças rangiam e precisavam de óleo. À tarde, a turma instalou no espaço novo uma estante com partituras e instrumentos de percussão."
     },
     {
       "id": "POR-16-Q07",
       "lessonId": "POR-16",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Toda frase não literal é metáfora.”. Qual é a melhor correção?",
+      "stem": "Que efeito a frase do cartaz atribui à circulação da notícia?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "Que a troca de livros levou os estudantes a conversar e participar das atividades."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Que a notícia despertou interesse e animou a convivência dos estudantes no corredor."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "Que a campanha transferiu os empréstimos da biblioteca para o mural da escola."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "Que a luminária recém-trocada passou a iluminar as conversas sobre os livros."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Que os estudantes deixaram de sugerir títulos após o anúncio do encontro."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Metáfora aproxima campos de sentido implicitamente; comparação explicita a relação com marcas comparativas.",
+      "correctOption": "B",
+      "explanation": "A roda no corredor, o aumento dos empréstimos e as sugestões de novos participantes mostram que a divulgação animou o espaço e mobilizou estudantes. A leitura ligada à luminária falha porque o texto separa a troca do equipamento da repercussão da campanha.",
       "difficulty": "applied",
-      "cognitiveOperation": "diagnose_error",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-16-C01"
       ],
-      "targetedError": "Toda frase não literal é metáfora.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler como acontecimento físico uma imagem que expressa o efeito da divulgação no ambiente.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Relato autoral do jornal do grêmio, 8 de maio — Na terça-feira, o clube de leitura anunciou uma troca de livros durante o intervalo. Antes do primeiro sinal, poucas pessoas paravam diante do mural; depois que a notícia foi compartilhada nas salas, formou-se uma roda no corredor para combinar os títulos e os horários. A biblioteca registrou mais empréstimos naquela semana, e estudantes que ainda não participavam do clube deixaram sugestões para o próximo encontro. No cartaz, a equipe resumiu a repercussão com a frase “A notícia acendeu o corredor”. Uma luminária havia sido trocada no mês anterior, mas continuou funcionando normalmente durante a campanha."
     },
     {
       "id": "POR-16-Q08",
       "lessonId": "POR-16",
+      "version": 2,
       "type": "MCQ",
-      "stimulus": "Depois de esperar duas horas, alguém diz: “Que atendimento rápido!”.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Que aspecto da pista a comparação com um “espelho quebrado” põe em destaque?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Que a pista foi pavimentada com pequenos fragmentos de vidro."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "Que as fitas vermelhas se partiram durante a corrida."
         },
         {
           "id": "C",
-          "text": "O contraste entre situação e formulação positiva produz ironia, com efeito crítico/humorístico."
+          "text": "Que o grupo usou o reflexo para calcular a velocidade de cada corredora."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "Que as poças refletiam a luz em partes irregulares sobre o chão."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "Que a corrida foi interrompida porque o sol deixou de aparecer."
         }
       ],
-      "correctOption": "C",
-      "explanation": "O contraste entre situação e formulação positiva produz ironia, com efeito crítico/humorístico.",
-      "difficulty": "ifsc",
+      "correctOption": "D",
+      "explanation": "A chuva deixou poças e o sol refletiu nelas, formando pontos brilhantes e descontínuos no terreno. A leitura literal de fragmentos de vidro não é apoiada pelo relato e não explica a orientação para reduzir o passo por causa do piso molhado.",
+      "difficulty": "applied",
       "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-16-C01",
         "POR-16-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Converter a imagem de reflexão irregular em descrição material de vidro espalhado na pista.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Relato de uma corrida de orientação, 2 de novembro — A chuva fina havia parado pouco antes da largada, mas deixou poças ao longo da pista de terra. No trecho aberto, o sol apareceu por entre as nuvens e refletiu na água perto das fitas vermelhas que marcavam o caminho. Lia anotou no caderno: “O chão brilhava como um espelho quebrado.” A equipe diminuiu o passo para não escorregar e seguiu as marcações até a chegada, onde a organização distribuiu toalhas e água."
     }
   ],
   "concepts": [

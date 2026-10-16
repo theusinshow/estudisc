@@ -2,294 +2,291 @@
   {
     "id": "CIE-25-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de mendel e a 1ª lei, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Registro de estufa escolar, hipótese de 15 ago. 2026. Na estufa da escola, a turma acompanhou duas linhagens de ervilhas por três colheitas. Uma produzia sementes amarelas e a outra, sementes verdes. Após polinização controlada entre as linhagens, as 46 plantas da primeira geração produziram sementes amarelas. Os vasos receberam etiquetas individuais, e a equipe repetiu o cruzamento em duas bancadas, obtendo o mesmo padrão visual. O caderno de campo registra ainda que as plantas parentais continuaram disponíveis para comparação ao fim do experimento.\n\nQual interpretação é compatível com esse resultado, considerando dominância completa?",
     "options": [
       {
         "key": "A",
-        "text": "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        "text": "A linhagem verde deixou de contribuir para a constituição hereditária das plantas observadas."
       },
       {
         "key": "B",
-        "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        "text": "A cor amarela surgiu porque as plantas da primeira geração receberam dois alelos iguais."
       },
       {
         "key": "C",
-        "text": "Cada gameta recebe os dois alelos de um par."
+        "text": "As plantas da primeira geração podem ter recebido alelos distintos e exibido a característica amarela."
       },
       {
         "key": "D",
-        "text": "Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides."
+        "text": "As sementes verdes foram produzidas por um efeito ambiental restrito à primeira geração."
       },
       {
         "key": "E",
-        "text": "Fenótipo e genótipo são sinônimos."
+        "text": "A uniformidade entre bancadas permite atribuir o resultado ao manejo comum, sem relacioná-lo ao cruzamento entre as linhagens."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "UNDERSTAND",
+    "correctOption": "C",
+    "explanation": "A primeira geração manteve a aparência amarela após o cruzamento de linhagens contrastantes. Isso é compatível com plantas heterozigotas que manifestam o fenótipo dominante; a uniformidade visual não demonstra que receberam dois alelos iguais.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-25-CON-01"
+      "CIE-25-CON-01",
+      "CIE-25-CON-04"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "dominance_inference",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-25-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar mendel e a 1ª lei sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Caderno de observação didática, caso de 16 ago. 2026. Duas mudas de feijão foram selecionadas de uma mesma família e identificadas com o mesmo genótipo para um locus relacionado ao pigmento das folhas. A muda 1 ficou por 18 dias junto à janela, recebendo luz intensa; a muda 2 permaneceu sob uma tela sombreada durante o mesmo período. Ao final, a equipe mediu folhas mais escuras na primeira muda, mas encontrou a mesma combinação de alelos nos registros de origem. A temperatura e a quantidade de água foram mantidas próximas nas duas bancadas.\n\nO que o registro permite distinguir entre genótipo e fenótipo?",
     "options": [
       {
         "key": "A",
-        "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        "text": "Os alelos anotados descrevem a constituição genética; a diferença de cor observada entre as mudas é uma característica visível."
       },
       {
         "key": "B",
-        "text": "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        "text": "A exposição à luz pode ter alterado um alelo, mesmo sem que a equipe atualizasse o registro de origem."
       },
       {
         "key": "C",
-        "text": "Fenótipo e genótipo são sinônimos."
+        "text": "Como as duas mudas têm alelos iguais, a diferença de tonalidade deve resultar de uma medição imprecisa."
       },
       {
         "key": "D",
-        "text": "Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente."
+        "text": "A sombra pode influenciar a cor das folhas, que passa a compor a combinação de alelos da muda."
       },
       {
         "key": "E",
-        "text": "Cada gameta recebe os dois alelos de um par."
+        "text": "A anotação de alelos registra a aparência inicial; a medição posterior revela a constituição genética."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "UNDERSTAND",
+    "correctOption": "A",
+    "explanation": "Os registros de origem descrevem a combinação de alelos, enquanto a cor medida é uma característica observável. A luz ajuda a explicar a diferença fenotípica; a observação não indica troca dos alelos anotados.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-25-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "genotype_phenotype_confusion",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-25-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em mendel e a 1ª lei?",
+    "stem": "Ficha de microscopia escolar, cenário de 17 ago. 2026. Na bancada de microscopia, estudantes identificaram uma planta de ervilha marcada Aa e recolheram uma amostra de 160 gametas reprodutivos. As células foram registradas em uma tabela sem separar os tipos, pois a lâmina não permitia distinguir os alelos. A turma usou o caso para comparar previsões entre equipes, mantendo o mesmo total de 160 unidades em cada cálculo. O relatório não incluía cruzamento com outra planta.\n\nQual estimativa corresponde ao modelo para essa amostra de 160 gametas?",
     "options": [
       {
         "key": "A",
-        "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        "text": "120 gametas A e 40 gametas a, pois a dominância de A também altera a proporção durante a formação dos gametas."
       },
       {
         "key": "B",
-        "text": "Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par."
+        "text": "160 gametas Aa, porque a planta transmite o par completo a cada célula reprodutiva."
       },
       {
         "key": "C",
-        "text": "Cada gameta recebe os dois alelos de um par."
+        "text": "40 gametas A e 120 gametas a, como uma possível variação na segregação deste indivíduo."
       },
       {
         "key": "D",
-        "text": "Fenótipo e genótipo são sinônimos."
+        "text": "80 gametas A e 80 gametas a, cada gameta levando uma cópia do par."
       },
       {
         "key": "E",
-        "text": "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        "text": "80 gametas A e 80 gametas a, mas somente os gametas A participam da fecundação por serem dominantes."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "D",
+    "explanation": "A planta Aa produz gametas com um alelo por par. No modelo de segregação, metade recebe A e metade recebe a: 160 ÷ 2 = 80 gametas de cada tipo. A opção que mantém Aa em cada gameta confunde a célula diploide com o gameta.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
       "CIE-25-CON-03"
     ],
-    "targetedError": "relationship",
+    "targetedError": "gamete_segregation_calculation",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-25-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em um cruzamento Aa × Aa com dominância completa, qual proporção genotípica esperada aparece no modelo mendeliano simples?",
+    "stem": "Relatório de cruzamento hipotético da turma, 18 ago. 2026. Uma equipe cruzou duas plantas de flores roxas e acompanhou 64 descendentes em vasos separados. Ao florescer, 48 apresentaram pétalas roxas e 16, pétalas brancas. A anotação da geração anterior indicava que as plantas cruzadas tinham origem em linhagens contrastantes. A equipe fotografou as flores e conferiu a identificação antes de montar a tabela, sem observar diferenças de irrigação entre os grupos.\n\nQual explicação relaciona os dados à dominância completa sem afirmar que um alelo foi eliminado?",
     "options": [
       {
         "key": "A",
-        "text": "4 AA : 0 Aa : 0 aa."
+        "text": "A maior frequência de flores roxas indica que os dois parentais transmitiram o alelo associado a essa cor a cada descendente roxo."
       },
       {
         "key": "B",
-        "text": "1 AA : 1 Aa : 2 aa."
+        "text": "O alelo para flores brancas pode permanecer em plantas roxas e reaparecer em parte da descendência."
       },
       {
         "key": "C",
-        "text": "2 AA : 2 aa, sem heterozigotos."
+        "text": "A diferença de cor pode ter surgido por variações locais de irrigação nos vasos com flores brancas."
       },
       {
         "key": "D",
-        "text": "1 AA : 2 Aa : 1 aa."
+        "text": "A maioria roxa sugere que os descendentes com essa cor transmitem apenas alelos para pétalas roxas."
       },
       {
         "key": "E",
-        "text": "Todos os descendentes são Aa."
+        "text": "Os dois padrões de pétalas podem representar variedades distintas dentro da mesma espécie."
       }
     ],
-    "correctOption": "D",
-    "explanation": "1 AA : 2 Aa : 1 aa.",
-    "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "correctOption": "B",
+    "explanation": "Os 16 descendentes brancos são compatíveis com a combinação de dois alelos recessivos. Plantas roxas heterozigotas podem conservar o alelo recessivo, que reaparece quando os dois gametas o transmitem.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-25-CON-01",
-      "CIE-25-CON-02",
-      "CIE-25-CON-03"
+      "CIE-25-CON-04"
     ],
-    "targetedError": "application",
+    "targetedError": "recessive_allele_disappearance",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-25-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides.\nII. Alelos recessivos desaparecem quando há um alelo dominante.\nIII. Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par.\nIV. Fenótipo e genótipo são sinônimos.\nAssinale a alternativa CORRETA.",
+    "stem": "Tabela de viveiro descrita em atividade escolar, 19 ago. 2026. No viveiro municipal, duas plantas Aa foram cruzadas sob as mesmas condições de cultivo. Para um lote de 80 sementes viáveis, o quadro de registro da equipe marcou 20 combinações AA, 40 Aa e 20 aa como expectativa do modelo, antes da germinação. Um segundo lote maior seria usado na aula seguinte para comparar previsão e observação. A pergunta da ficha pede uma projeção para 140 sementes no mesmo tipo de cruzamento, não uma contagem garantida de uma família pequena.\n\nQuantas plantas heterozigotas são esperadas entre 140 descendentes, segundo esse modelo?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "35 descendentes Aa, aplicando ao lote a proporção de um quarto registrada para AA."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "140 descendentes Aa, pois cada parental heterozigoto pode fornecer os dois tipos de alelo."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "105 descendentes Aa, usando três quartos como a fração esperada para o genótipo heterozigoto."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "20 descendentes Aa, mantendo no novo lote a contagem registrada para as 80 sementes."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "70 descendentes Aa, com uma fração esperada de metade do lote."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "E",
+    "explanation": "O registro atribui metade dos descendentes a Aa. Para 140 sementes, 140 × 1/2 = 70 heterozigotas esperadas. Repetir a contagem de um lote de 80 ignora a mudança no tamanho da amostra.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-25-CON-01",
-      "CIE-25-CON-02",
-      "CIE-25-CON-03",
-      "CIE-25-CON-04"
+      "CIE-25-CON-05"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "punnett_ratio_scaling",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-25-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre mendel e a 1ª lei para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Simulação de probabilidade em laboratório escolar, 20 ago. 2026. Um casal de plantas heterozigotas foi usado em uma simulação com três sementes escolhidas de forma independente. A ficha considerou o fenótipo recessivo como resultado de interesse e usou a chance prevista em cada fecundação para calcular o resultado conjunto. No relatório, a equipe distinguiu probabilidade de uma contagem real: uma repetição futura poderia produzir outro número de sementes com o mesmo fenótipo, mesmo mantendo os parentais e as condições.\n\nQual é a probabilidade de surgir pelo menos uma semente com fenótipo recessivo entre as três?",
     "options": [
       {
         "key": "A",
-        "text": "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        "text": "27/64, a chance de as três sementes apresentarem o fenótipo recessivo ao mesmo tempo."
       },
       {
         "key": "B",
-        "text": "Cruzamentos simples podem ser representados por quadros de Punnett para visualizar probabilidades de combinações."
+        "text": "3/4, pois essa é a chance de uma semente não apresentar o fenótipo recessivo."
       },
       {
         "key": "C",
-        "text": "Fenótipo e genótipo são sinônimos."
+        "text": "37/64, pois é mais simples subtrair de 1 a chance de nenhuma das três ser recessiva."
       },
       {
         "key": "D",
-        "text": "Cada gameta recebe os dois alelos de um par."
+        "text": "1/4, já que a chance em cada fecundação também representa a probabilidade do grupo."
       },
       {
         "key": "E",
-        "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        "text": "3/16, somando as chances individuais e descontando uma ocorrência repetida."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Cruzamentos simples podem ser representados por quadros de Punnett para visualizar probabilidades de combinações.",
+    "correctOption": "C",
+    "explanation": "A ficha trata cada semente como evento independente. Em Aa × Aa, P(recessiva) = 1/4 e P(não recessiva) = 3/4; logo, P(pelo menos uma) = 1 − (3/4)³ = 37/64, aproximadamente 57,8%. O produto (1/4)³ contaria o caso em que as três sementes são recessivas, não o evento pedido.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-25-CON-05"
+      "CIE-25-CON-06"
     ],
-    "targetedError": "transfer",
+    "targetedError": "independent_probability",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-25-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre mendel e a 1ª lei?",
+    "stem": "Caderno de horta escolar, situação fictícia de 21 ago. 2026. Em uma horta, a turma polinizou uma planta de sementes amarelas de linhagem AA com outra de sementes verdes de linhagem aa. As etiquetas foram conferidas antes da transferência de pólen, e 38 sementes da geração seguinte foram separadas para observação. Quando germinaram, as plantas apresentaram o mesmo padrão de cor nas sementes produzidas. A ficha não descreve uma nova polinização entre descendentes; registra somente o cruzamento inicial entre os parentais identificados.\n\nQue combinação é prevista para a geração obtida desse cruzamento?",
     "options": [
       {
         "key": "A",
-        "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        "text": "A descendência recebe A de um parental e a do outro, formando genótipo Aa."
       },
       {
         "key": "B",
-        "text": "Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par."
+        "text": "Metade da descendência fica AA e metade aa, pois cada parental transmite seu par de alelos completo."
       },
       {
         "key": "C",
-        "text": "Em dominância completa, heterozigotos apresentam o fenótipo associado ao alelo dominante, mas o alelo recessivo continua presente."
+        "text": "A geração recebe metade dos alelos A e metade a, e cada planta forma gametas antes de se desenvolver."
       },
       {
         "key": "D",
-        "text": "Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente."
+        "text": "A descendência tende a ser aa porque o parental verde transmite o alelo recessivo com maior frequência."
       },
       {
         "key": "E",
-        "text": "Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides."
+        "text": "As combinações AA e aa se alternam conforme a posição das sementes na bancada."
       }
     ],
     "correctOption": "A",
-    "explanation": "A alternativa A é a incorreta: Alelos recessivos desaparecem quando há um alelo dominante. As demais expressam relações compatíveis com os conceitos da aula.",
+    "explanation": "O parental AA fornece gametas A e o parental aa fornece gametas a. Cada descendente desse cruzamento reúne um alelo de cada parental e fica Aa; os pares AA e aa não passam juntos ao descendente.",
     "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-25-CON-01"
+      "CIE-25-CON-01",
+      "CIE-25-CON-03"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "allele_pair_transmission",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-25-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em mendel e a 1ª lei?",
+    "stem": "Diário de mudas da turma, exemplo criado em 22 ago. 2026. Uma família acompanhou quatro mudas de uma mesma espécie em vasos iguais. As etiquetas registraram o cruzamento Aa × Aa feito para um caráter com dominância completa, e a equipe marcou no diário as aparências observadas depois do crescimento. A previsão estatística foi preparada antes da germinação e apresentada como proporção para um conjunto grande de descendentes. Na pequena bandeja, a contagem observada ficou diferente da proporção prevista, embora os rótulos e as condições fossem mantidos.\n\nComo interpretar a diferença entre a previsão e as quatro mudas observadas?",
     "options": [
       {
         "key": "A",
-        "text": "Cada gameta recebe os dois alelos de um par."
+        "text": "A razão 3:1 deve ser convertida em contagem exata antes de comparar qualquer grupo de quatro mudas."
       },
       {
         "key": "B",
-        "text": "Uma probabilidade de 25% significa que exatamente um em cada quatro filhos de toda família terá obrigatoriamente o fenótipo."
+        "text": "A proporção descreve uma tendência do conjunto, que deve aparecer na mesma sequência em cada família."
       },
       {
         "key": "C",
-        "text": "Alelos recessivos desaparecem quando há um alelo dominante."
+        "text": "As aparências observadas permitem substituir os genótipos parentais ao calcular a previsão do cruzamento."
       },
       {
         "key": "D",
-        "text": "Probabilidade genética indica chance esperada em muitos eventos e não garante o resultado de uma família pequena."
+        "text": "A diferença pode refletir variação amostral; a razão prevista tende a se aproximar em muitas fecundações."
       },
       {
         "key": "E",
-        "text": "Fenótipo e genótipo são sinônimos."
+        "text": "O desvio indica que ao menos uma muda recebeu os dois alelos juntos no mesmo gameta."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Probabilidade genética indica chance esperada em muitos eventos e não garante o resultado de uma família pequena.",
-    "difficulty": "IFSC",
+    "explanation": "A proporção mendeliana descreve chances esperadas em muitos eventos, não uma sequência fixa para quatro mudas. Uma amostra curta pode variar; essa diferença isolada não mostra que a segregação falhou.",
+    "difficulty": "DIRECT",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-25-CON-06"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "probability_as_guarantee",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]

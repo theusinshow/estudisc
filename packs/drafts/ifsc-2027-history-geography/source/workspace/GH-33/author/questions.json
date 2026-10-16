@@ -2,307 +2,377 @@
   {
     "id": "GH-33-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Idade Média e expansão islâmica, qual afirmação está correta?",
+    "stem": "Depois que a autoridade romana deixou de administrar a região, a crônica descreve várias comunidades ligadas a senhores locais. Camponeses cultivavam parcelas próximas às moradias e levavam parte da colheita a um depósito. Um mercado reunia viajantes em datas específicas; em outra aldeia, os moradores usavam moedas com imagens diferentes. O narrador menciona alianças e disputas entre grupos vizinhos, sem apresentar um governo único para todo o território.\n\nQue característica da formação do mundo medieval o relato destaca?",
     "options": [
       {
         "key": "A",
-        "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        "text": "O relato descreve poderes locais sem uma autoridade única.",
+        "targetsError": "interpretation",
+        "rationale": "A crônica cita senhores locais, alianças e disputas sem descrever essa centralização."
       },
       {
         "key": "B",
-        "text": "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval."
+        "text": "O mercado reunia viajantes enquanto persistiam atividades rurais.",
+        "targetsError": "interpretation",
+        "rationale": "Camponeses seguem cultivando parcelas próximas às moradias."
       },
       {
         "key": "C",
-        "text": "O mundo islâmico permaneceu isolado da Europa."
+        "text": "Moedas distintas sugerem diversidade, mas não medem o alcance comercial.",
+        "targetsError": "interpretation",
+        "rationale": "O mercado reunia viajantes, indicando contatos além das diferenças monetárias."
       },
       {
         "key": "D",
-        "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        "text": "A mudança ocorreu após Roma deixar de administrar a região.",
+        "targetsError": "conceptual",
+        "rationale": "A crônica situa o relato depois do fim daquela administração regional."
       },
       {
         "key": "E",
-        "text": "Islã e árabe são sinônimos étnicos e religiosos."
+        "text": "A vida política se organizava entre poderes locais e relações variadas."
       }
     ],
-    "correctOption": "B",
-    "explanation": "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval.",
+    "correctOption": "E",
+    "explanation": "A crônica apresenta poderes locais, alianças e disputas depois que a administração romana deixou de atuar na região. Mercados e atividades rurais continuaram presentes em meio a essa organização diversa.",
     "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-33-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-33-CON-01"
   },
   {
     "id": "GH-33-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “A Idade Média foi um período sem cidades, comércio ou conhecimento.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "O administrador informa que as famílias do entorno cultivam parcelas e entregam parte da colheita ao senhor da terra. Em troca, recebem o direito de permanecer e buscam proteção quando ocorrem conflitos na estrada. A carta menciona obrigações diferentes entre duas aldeias e diz que a visita do senhor foi adiada por causa de uma disputa. Nada no documento afirma que a mesma regra se aplicava a todas as regiões europeias.\n\nQue relação social a carta permite identificar?",
     "options": [
       {
         "key": "A",
-        "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        "text": "As famílias cultivavam parcelas e entregavam parte da colheita ao senhor.",
+        "targetsError": "conceptual",
+        "rationale": "O documento atribui a terra ao senhor e registra entregas feitas pelas famílias."
       },
       {
         "key": "B",
-        "text": "O mundo islâmico permaneceu isolado da Europa."
+        "text": "Terra, proteção e obrigações estruturavam relações entre senhores e camponeses."
       },
       {
         "key": "C",
-        "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        "text": "As obrigações variavam entre as aldeias descritas.",
+        "targetsError": "interpretation",
+        "rationale": "A carta diferencia obrigações entre aldeias e não cita governo central."
       },
       {
         "key": "D",
-        "text": "O chamado feudalismo descreve formas de organização social e econômica de partes da Europa e não um modelo idêntico em todo lugar e período."
+        "text": "A carta menciona disputa, mas não afirma que cessou a produção ou o vínculo.",
+        "targetsError": "interpretation",
+        "rationale": "A produção e as entregas seguem descritas apesar da disputa."
       },
       {
         "key": "E",
-        "text": "Islã e árabe são sinônimos étnicos e religiosos."
+        "text": "As famílias cultivavam e recebiam o direito de permanecer na terra.",
+        "targetsError": "conceptual",
+        "rationale": "As famílias continuam cultivando e entregando parte da colheita."
       }
     ],
-    "correctOption": "D",
-    "explanation": "O chamado feudalismo descreve formas de organização social e econômica de partes da Europa e não um modelo idêntico em todo lugar e período.",
+    "correctOption": "B",
+    "explanation": "A carta relaciona o cultivo das parcelas, a entrega de parte da colheita e a busca de proteção. As obrigações variam entre aldeias, por isso o documento não sustenta uma regra uniforme para toda a Europa.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-33-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-33-CON-02"
   },
   {
     "id": "GH-33-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: A Idade Média europeia coexistiu com sociedades islâmicas dinâmicas e intensas redes de comércio e conhecimento. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "O inventário registra uma sala de leitura, instrumentos de escrita e cadernos usados para copiar trechos de livros. Um monge anotou comentários à margem de uma obra religiosa e de um texto antigo sobre plantas. Visitantes entregavam alimentos ao mosteiro e alguns aprendizes praticavam a leitura junto aos copistas. A ficha não descreve escolas em outras partes da região nem informa quantas pessoas sabiam ler fora daquele espaço.\n\nO que a ficha sugere sobre a cultura medieval?",
     "options": [
       {
         "key": "A",
-        "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        "text": "A ficha reúne texto religioso e texto antigo sobre plantas.",
+        "targetsError": "conceptual",
+        "rationale": "O inventário inclui uma obra religiosa junto ao texto sobre plantas."
       },
       {
         "key": "B",
-        "text": "O mundo islâmico permaneceu isolado da Europa."
+        "text": "Os instrumentos documentam leitura no mosteiro, sem informar sua frequência entre a população.",
+        "targetsError": "interpretation",
+        "rationale": "A ficha cita aprendizes e visitantes, sem dimensionar toda a população."
       },
       {
         "key": "C",
-        "text": "O Islã surgiu no século VII na Península Arábica e expandiu-se por vastas áreas da África, Ásia e Europa."
+        "text": "A cópia preservava textos de temas distintos.",
+        "targetsError": "interpretation",
+        "rationale": "Um dos textos copiados trata justamente de plantas."
       },
       {
         "key": "D",
-        "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        "text": "Instituições religiosas podiam participar da leitura e da preservação de textos."
       },
       {
         "key": "E",
-        "text": "Islã e árabe são sinônimos étnicos e religiosos."
+        "text": "A ficha documenta leitura no mosteiro, sem compará-lo a outros centros.",
+        "targetsError": "interpretation",
+        "rationale": "O inventário descreve um espaço, sem compará-lo com outros centros."
       }
     ],
-    "correctOption": "C",
-    "explanation": "O Islã surgiu no século VII na Península Arábica e expandiu-se por vastas áreas da África, Ásia e Europa.",
+    "correctOption": "D",
+    "explanation": "A sala de leitura, os copistas e os aprendizes mostram que o mosteiro participava de práticas de leitura e cópia. A ficha não permite concluir que esse espaço era o único centro de conhecimento.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-33-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-33-CON-03"
   },
   {
     "id": "GH-33-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Idade Média e expansão islâmica por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "O livro de taxas lista vendedores de tecido, ferramentas, frutas e sal. Artesãos de duas cidades próximas reservaram bancas; marinheiros chegaram com mercadorias e notícias sobre rotas. Um grupo de aprendizes levou pedidos de uma oficina urbana, enquanto camponeses trouxeram excedentes da colheita. O registro marca datas de feira em diferentes estações e anota que alguns compradores voltaram para retirar encomendas semanas depois.\n\nQue aspecto da vida urbana e comercial aparece no registro?",
     "options": [
       {
         "key": "A",
-        "text": "Sociedades islâmicas desenvolveram centros urbanos, comércio, ciência, filosofia e circulação de conhecimentos."
+        "text": "Feiras conectavam produtores, artesãos e viajantes em trocas entre cidade e campo."
       },
       {
         "key": "B",
-        "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        "text": "O registro não diz que camponeses abandonaram o cultivo.",
+        "targetsError": "conceptual",
+        "rationale": "O registro identifica camponeses trazendo excedentes da colheita."
       },
       {
         "key": "C",
-        "text": "O mundo islâmico permaneceu isolado da Europa."
+        "text": "O livro anota taxas e a chegada de mercadorias e notícias.",
+        "targetsError": "interpretation",
+        "rationale": "O livro registra vendedores, mercadorias e notícias circulando no local."
       },
       {
         "key": "D",
-        "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        "text": "Compradores voltavam para retirar encomendas de oficinas.",
+        "targetsError": "interpretation",
+        "rationale": "Compradores retornaram à feira para retirar pedidos feitos a oficinas."
       },
       {
         "key": "E",
-        "text": "Islã e árabe são sinônimos étnicos e religiosos."
+        "text": "O registro relaciona artesãos, oficinas, excedentes rurais e viajantes.",
+        "targetsError": "conceptual",
+        "rationale": "O registro inclui encomendas de oficinas e vendedores de cidades próximas."
       }
     ],
     "correctOption": "A",
-    "explanation": "Sociedades islâmicas desenvolveram centros urbanos, comércio, ciência, filosofia e circulação de conhecimentos.",
+    "explanation": "O registro aproxima produtos do campo, oficinas urbanas, marinheiros e compradores em feiras recorrentes. A presença de encomendas e notícias mostra que a troca envolvia mais do que a venda imediata de alimentos.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-33-CON-04"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-33-CON-04"
   },
   {
     "id": "GH-33-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval.\nII. A Idade Média foi um período sem cidades, comércio ou conhecimento.\nIII. O Islã surgiu no século VII na Península Arábica e expandiu-se por vastas áreas da África, Ásia e Europa.\nIV. O mundo islâmico permaneceu isolado da Europa.\nAssinale a alternativa CORRETA.",
+    "stem": "O mapa assinala Meca e Medina na Península Arábica e indica rotas que, em momentos posteriores, chegaram a regiões do norte da África, da Ásia e da Europa. Em cada área, a legenda identifica cidades, comunidades e trajetos comerciais. Uma nota de curadoria alerta que a expansão política não fez desaparecer as diferenças entre povos, línguas e práticas locais.\n\nQue leitura do mapa é mais adequada?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Rotas alcançaram outras regiões em momentos posteriores.",
+        "targetsError": "interpretation",
+        "rationale": "O mapa indica trajetos em regiões da África, Ásia e Europa."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A nota destaca diferenças linguísticas persistentes.",
+        "targetsError": "interpretation",
+        "rationale": "A nota da curadoria destaca diferenças de línguas e práticas locais."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "O Islã surgiu na Península Arábica e se expandiu por regiões de três continentes."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O mapa não estabelece precedência cronológica das cidades europeias.",
+        "targetsError": "conceptual",
+        "rationale": "As rotas partem da Península Arábica e alcançam outras regiões posteriormente."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Rotas comerciais coexistiam com diferenças culturais locais.",
+        "targetsError": "interpretation",
+        "rationale": "A curadoria afirma que diferenças locais permaneceram."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "C",
+    "explanation": "O mapa localiza Meca e Medina na Península Arábica e apresenta rotas posteriores por áreas africanas, asiáticas e europeias. A expansão não apagou as diferenças locais indicadas na legenda.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-33-CON-01",
-      "GH-33-CON-02",
-      "GH-33-CON-03",
-      "GH-33-CON-04"
+      "GH-33-CON-05"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-33-CON-05"
   },
   {
     "id": "GH-33-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Idade Média e expansão islâmica. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "A etiqueta descreve um texto sobre astronomia escrito em árabe e preservado numa cidade portuária. Anotações posteriores, feitas em outra língua, aparecem nas margens. O catálogo informa que mercadores transportavam livros, professores visitavam a cidade e copistas produziam novas versões do manuscrito. A equipe não conseguiu identificar todos os caminhos percorridos pelo volume, mas confirmou que mais de uma comunidade teve contato com ele.\n\nO que a etiqueta permite inferir sobre as redes mediterrâneas?",
     "options": [
       {
         "key": "A",
-        "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        "text": "A etiqueta não informa onde o manuscrito foi produzido nem quando chegaram os professores.",
+        "targetsError": "interpretation",
+        "rationale": "A etiqueta informa que o volume foi preservado na cidade, não onde foi produzido."
       },
       {
         "key": "B",
-        "text": "O mundo islâmico permaneceu isolado da Europa."
+        "text": "As anotações em outra língua coexistiram com o texto árabe preservado.",
+        "targetsError": "interpretation",
+        "rationale": "A etiqueta descreve anotações marginais sem dizer que o texto original desapareceu."
       },
       {
         "key": "C",
-        "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        "text": "Mercadores, professores e copistas participavam da circulação de livros.",
+        "targetsError": "conceptual",
+        "rationale": "O catálogo atribui transporte a mercadores e cópia a copistas."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Houve contato entre comunidades, mas nem todos os caminhos foram identificados.",
+        "targetsError": "interpretation",
+        "rationale": "A equipe não identificou todos os caminhos do manuscrito."
       },
       {
         "key": "E",
-        "text": "Evitar o rótulo simplista de “Idade das Trevas” e observar diversidade e intercâmbios."
+        "text": "Comércio, cópia e leitura podiam fazer circular conhecimentos entre comunidades."
       }
     ],
     "correctOption": "E",
-    "explanation": "Evitar o rótulo simplista de “Idade das Trevas” e observar diversidade e intercâmbios.",
+    "explanation": "O catálogo relaciona mercadores, professores, copistas e anotações em mais de uma língua, indicando circulação de conhecimento entre comunidades. Como os caminhos não foram todos identificados, não cabe atribuí-la a uma rota única.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-33-CON-01",
-      "GH-33-CON-02",
-      "GH-33-CON-03",
-      "GH-33-CON-04",
-      "GH-33-CON-05",
       "GH-33-CON-06"
     ],
     "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-33-CON-06"
   },
   {
     "id": "GH-33-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Idade Média e expansão islâmica?",
+    "stem": "O painel reúne registros de uma cidade europeia, de um centro de estudos do norte da África e de uma escola ligada a uma mesquita. Os documentos tratam de astronomia, medicina, poesia e comentários religiosos em diferentes séculos. Um bilhete de curadoria avisa que as fontes pertencem a lugares específicos e não representam todas as comunidades daquele período. O painel também lembra que o rótulo Idade das Trevas simplifica experiências muito diversas.\n\nQue leitura das fontes o painel favorece?",
     "options": [
       {
         "key": "A",
-        "text": "Após a fragmentação do Império Romano do Ocidente, diferentes reinos e relações de dependência rural se desenvolveram na Europa medieval."
+        "text": "A variedade de temas documenta centros distintos, sem provar semelhança cultural.",
+        "targetsError": "interpretation",
+        "rationale": "O painel registra diferenças entre lugares, temas e períodos."
       },
       {
         "key": "B",
-        "text": "O chamado feudalismo descreve formas de organização social e econômica de partes da Europa e não um modelo idêntico em todo lugar e período."
+        "text": "Produção intelectual ocorreu em diferentes centros e não cabe num rótulo uniforme."
       },
       {
         "key": "C",
-        "text": "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais."
+        "text": "Os documentos incluem temas científicos e religiosos.",
+        "targetsError": "conceptual",
+        "rationale": "O painel cita comentários religiosos junto aos demais assuntos."
       },
       {
         "key": "D",
-        "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        "text": "O painel situa registros do norte da África em um centro daquela região.",
+        "targetsError": "conceptual",
+        "rationale": "O painel distingue o centro africano da cidade europeia."
       },
       {
         "key": "E",
-        "text": "Sociedades islâmicas desenvolveram centros urbanos, comércio, ciência, filosofia e circulação de conhecimentos."
+        "text": "A curadoria alerta que o rótulo Idade das Trevas simplifica experiências diversas.",
+        "targetsError": "interpretation",
+        "rationale": "O bilhete de curadoria critica esse rótulo por simplificar experiências diversas."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "B",
+    "explanation": "As fontes apresentam temas e centros diferentes na Europa e no norte da África, e o bilhete alerta sobre seus limites. Esse conjunto contraria a ideia de que um único rótulo descreva todas as sociedades medievais.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-33-CON-01",
-      "GH-33-CON-02",
-      "GH-33-CON-03",
-      "GH-33-CON-04",
-      "GH-33-CON-05",
-      "GH-33-CON-06"
+      "GH-33-CON-03"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-33-CON-03"
   },
   {
     "id": "GH-33-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Idade Média e expansão islâmica, qual conclusão final é sustentável?",
+    "stem": "O escrivão relata que navios de duas cidades chegaram para trocar cerâmica, azeite e tecidos. Na mesma semana, soldados fecharam uma estrada depois de um confronto entre grupos rivais. A carta informa que o mercado reabriu quando os comerciantes combinaram um novo local de encontro, mas os guardas seguiram controlando a entrada do cais. A próxima embarcação deveria pagar uma taxa antes de descarregar.\n\nO que o documento sugere sobre as relações entre os grupos?",
     "options": [
       {
         "key": "A",
-        "text": "A Idade Média foi um período sem cidades, comércio ou conhecimento."
+        "text": "O mercado reabriu após negociação, enquanto guardas seguiram controlando o cais.",
+        "targetsError": "interpretation",
+        "rationale": "Guardas continuaram no cais depois da reabertura do mercado."
       },
       {
         "key": "B",
-        "text": "O mundo islâmico permaneceu isolado da Europa."
+        "text": "O confronto fechou uma estrada, mas o mercado reabriu em outro local e o cais seguiu ativo.",
+        "targetsError": "interpretation",
+        "rationale": "Navios chegaram e o mercado reabriu depois de um acordo."
       },
       {
         "key": "C",
-        "text": "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais."
+        "text": "A taxa era cobrada antes do descarregamento.",
+        "targetsError": "conceptual",
+        "rationale": "A carta atribui o controle da entrada a guardas."
       },
       {
         "key": "D",
-        "text": "Feudalismo existiu de forma idêntica em todo o planeta."
+        "text": "Conflitos e negociações comerciais podiam ocorrer no mesmo espaço e período."
       },
       {
         "key": "E",
-        "text": "Islã e árabe são sinônimos étnicos e religiosos."
+        "text": "O fechamento da estrada não impediu a chegada de navios nem a reabertura do mercado.",
+        "targetsError": "interpretation",
+        "rationale": "Os navios continuaram chegando por mar e o mercado reabriu."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Europa cristã e mundo islâmico tiveram conflitos, mas também comércio, traduções e intercâmbios culturais.",
+    "correctOption": "D",
+    "explanation": "A carta registra confronto e controle de guardas junto com a chegada de navios e a retomada do mercado. Comércio e conflito coexistem no relato, sem que um processo elimine o outro.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-33-CON-01",
-      "GH-33-CON-02",
-      "GH-33-CON-03",
-      "GH-33-CON-04",
-      "GH-33-CON-05",
       "GH-33-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-33-CON-06"
   }
 ]

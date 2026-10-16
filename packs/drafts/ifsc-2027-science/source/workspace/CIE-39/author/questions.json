@@ -2,139 +2,180 @@
   {
     "id": "CIE-39-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de escalas e ordem de grandeza astronômica, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Um centro de divulgação preparou uma placa com a distância de um objeto distante em notação científica: 2,8 × 10⁸ km. A guia da visita explicou que a atividade não exige recuperar o valor exato em quilômetros; os grupos devem registrar a potência de dez que melhor representa a escala do número e usar a mesma convenção ao comparar outros objetos. A placa não informa o tempo de viagem nem a posição do objeto em relação à Terra.\n\nQual ordem de grandeza deve aparecer no registro da turma?",
     "options": [
       {
         "key": "A",
-        "text": "Ordem de grandeza permite comparar escalas aproximando valores a potências de dez."
+        "text": "A distância está na ordem de 10⁷ km.",
+        "targetsError": "calculation",
+        "rationale": "A opção reduz em dez vezes o valor, embora a notação fornecida tenha expoente 8."
       },
       {
         "key": "B",
-        "text": "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia."
+        "text": "A distância está na ordem de 10⁸ km."
       },
       {
         "key": "C",
-        "text": "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala."
+        "text": "A distância está na ordem de 10⁹ km.",
+        "targetsError": "calculation",
+        "rationale": "O coeficiente 2,8 não exige elevar a potência de dez na aproximação indicada."
       },
       {
         "key": "D",
-        "text": "Ordem de grandeza serve apenas para números menores que um."
+        "text": "A distância está na ordem de 10⁶ km.",
+        "targetsError": "calculation",
+        "rationale": "A resposta desloca o expoente duas casas abaixo do número apresentado."
       },
       {
         "key": "E",
-        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+        "text": "A distância está na ordem de 10¹⁰ km.",
+        "targetsError": "calculation",
+        "rationale": "A alternativa amplia o valor por duas potências sem relação com o registro."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Ordem de grandeza permite comparar escalas aproximando valores a potências de dez.",
+    "correctOption": "B",
+    "explanation": "O coeficiente 2,8 mantém a potência em 10⁸ na aproximação pedida; a escala é da ordem de 10⁸ km. Trocar para 10⁹ elevaria o valor por um fator dez sem apoio no arredondamento do número dado.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-39-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-39-CON-01"
   },
   {
     "id": "CIE-39-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar escalas e ordem de grandeza astronômica sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Uma oficina de astronomia fixou a unidade de referência para os cálculos da atividade: 1 unidade astronômica corresponde a 150 milhões de quilômetros. Um equipamento de uma sonda indicou uma separação de 2,4 UA entre dois pontos de sua rota planetária. O painel pede que os visitantes convertam o valor para quilômetros e mantenham duas casas significativas, sem ajustar a distância média de referência fornecida.\n\nQual valor deve ser anotado no painel?",
     "options": [
       {
         "key": "A",
-        "text": "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia."
+        "text": "3,6 × 10⁷ km, deslocando uma casa a potência ao converter milhões para notação científica.",
+        "targetsError": "calculation",
+        "rationale": "A conversão deve multiplicar 2,4 UA por 150 milhões de quilômetros por UA."
       },
       {
         "key": "B",
-        "text": "Ordem de grandeza serve apenas para números menores que um."
+        "text": "1,5 × 10⁸ km, usando apenas a distância de referência de uma UA.",
+        "targetsError": "calculation",
+        "rationale": "A conversão deve multiplicar 2,4 UA por 150 milhões de quilômetros por UA."
       },
       {
         "key": "C",
-        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+        "text": "6,25 × 10⁷ km, dividindo 150 milhões de quilômetros por 2,4.",
+        "targetsError": "calculation",
+        "rationale": "A conversão deve multiplicar 2,4 UA por 150 milhões de quilômetros por UA."
       },
       {
         "key": "D",
-        "text": "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala."
+        "text": "3,4 × 10⁸ km, usando 150 milhões de quilômetros por UA, mas errando o produto por arredondamento.",
+        "targetsError": "calculation",
+        "rationale": "A conversão deve multiplicar 2,4 UA por 150 milhões de quilômetros por UA."
       },
       {
         "key": "E",
-        "text": "Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários."
+        "text": "3,6 × 10⁸ km, pois 2,4 × 150 milhões resulta em 360 milhões."
       }
     ],
     "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários.",
+    "explanation": "Multiplicando 2,4 UA por 150 milhões de km/UA, obtemos 360 milhões de km, ou 3,6 × 10⁸ km. A opção com 36 milhões desloca a vírgula uma casa e reduz o resultado por dez.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-39-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-39-CON-02"
   },
   {
     "id": "CIE-39-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em escalas e ordem de grandeza astronômica?",
+    "stem": "Em uma ficha de observação, uma estrela aparece a 4,2 anos-luz da Terra. Para os cálculos daquela exposição, a turma usará 1 ano-luz = 9,5 × 10¹² km; esse número já está impresso ao lado da ficha. Os estudantes devem estimar a distância em quilômetros, registrando duas casas significativas. A atividade distingue distância de duração de viagem e não pede calcular quanto tempo uma nave levaria para chegar à estrela.\n\nQual distância aproximada corresponde ao dado da ficha?",
     "options": [
       {
         "key": "A",
-        "text": "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala."
+        "text": "1,4 × 10¹³ km, somando os coeficientes 4,2 e 9,5 antes de aplicar a potência.",
+        "targetsError": "calculation",
+        "rationale": "Ano-luz é unidade de distância; multiplica-se 4,2 pela equivalência fornecida e arredonda-se a duas casas significativas."
       },
       {
         "key": "B",
-        "text": "Ordem de grandeza serve apenas para números menores que um."
+        "text": "4,0 × 10¹² km, considerando o produto dos coeficientes e reduzindo uma casa no expoente.",
+        "targetsError": "conceptual",
+        "rationale": "Ano-luz é unidade de distância; multiplica-se 4,2 pela equivalência fornecida e arredonda-se a duas casas significativas."
       },
       {
         "key": "C",
-        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+        "text": "Aproximadamente 4,0 × 10¹³ km, após multiplicar o valor em anos-luz pela conversão dada."
       },
       {
         "key": "D",
-        "text": "Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano."
+        "text": "9,5 × 10¹² km, usando a equivalência de um ano-luz sem multiplicar por 4,2.",
+        "targetsError": "calculation",
+        "rationale": "Ano-luz é unidade de distância; multiplica-se 4,2 pela equivalência fornecida e arredonda-se a duas casas significativas."
       },
       {
         "key": "E",
-        "text": "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia."
+        "text": "4,0 × 10¹⁴ km, elevando uma casa a potência ao normalizar o resultado.",
+        "targetsError": "calculation",
+        "rationale": "Ano-luz é unidade de distância; multiplica-se 4,2 pela equivalência fornecida e arredonda-se a duas casas significativas."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano.",
+    "correctOption": "C",
+    "explanation": "A conta é 4,2 × 9,5 × 10¹² km = 39,9 × 10¹² km = 3,99 × 10¹³ km, aproximadamente 4,0 × 10¹³ km. O ano-luz funciona como unidade de distância, não como tempo de viagem.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-39-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-39-CON-03"
   },
   {
     "id": "CIE-39-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual unidade é mais adequada para expressar a distância entre estrelas próximas em linguagem escolar de Astronomia?",
+    "stem": "Uma equipe está montando uma faixa de papel para representar distâncias em um sistema planetário. Por conveniência, decidiu que cada unidade astronômica será mostrada por 2 milímetros; para esta atividade, a órbita de Netuno será posicionada a 30 UA do Sol. A folha informa que o desenho é um modelo de distância e que as esferas usadas para os planetas terão tamanhos ilustrativos. Os estudantes precisam marcar a posição de Netuno sem converter unidades astronômicas para quilômetros.\n\nA que distância do Sol a marca deve ficar na faixa?",
     "options": [
       {
         "key": "A",
-        "text": "Quilograma."
+        "text": "A marca fica a 60 mm do Sol, isto é, 6 cm na faixa."
       },
       {
         "key": "B",
-        "text": "Watt."
+        "text": "A marca fica a 30 mm, usando 1 mm por UA em vez da escala indicada.",
+        "targetsError": "calculation",
+        "rationale": "A distância na faixa resulta de aplicar 2 mm por UA às 30 UA informadas."
       },
       {
         "key": "C",
-        "text": "Grau Celsius."
+        "text": "A marca fica a 32 mm, somando uma única vez o fator de 2 mm às 30 UA.",
+        "targetsError": "calculation",
+        "rationale": "A distância na faixa resulta de aplicar 2 mm por UA às 30 UA informadas."
       },
       {
         "key": "D",
-        "text": "Ano-luz."
+        "text": "A marca fica a 15 mm, dividindo a distância pelo fator da escala.",
+        "targetsError": "calculation",
+        "rationale": "A distância na faixa resulta de aplicar 2 mm por UA às 30 UA informadas."
       },
       {
         "key": "E",
-        "text": "Litro."
+        "text": "A marca fica a 60 cm, mantendo o produto numérico, mas trocando milímetros por centímetros.",
+        "targetsError": "calculation",
+        "rationale": "A distância na faixa resulta de aplicar 2 mm por UA às 30 UA informadas."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Ano-luz.",
+    "correctOption": "A",
+    "explanation": "A escala indica 2 mm para cada UA. Para 30 UA, a marca fica a 60 mm do Sol, equivalentes a 6 cm; multiplicar pela escala preserva a unidade usada na faixa.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +184,47 @@
       "CIE-39-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-39-CON-01"
   },
   {
     "id": "CIE-39-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Ordem de grandeza permite comparar escalas aproximando valores a potências de dez.\nII. Ano-luz é uma unidade de tempo usada para idade das estrelas.\nIII. Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano.\nIV. Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia.\nAssinale a alternativa CORRETA.",
+    "stem": "Um guia de visita mostra dois mapas em páginas seguidas. No primeiro, o Sistema Solar cabe em um quadro pequeno com órbitas planetárias; no segundo, a Via Láctea aparece ocupando a página, com o ponto do Sol indicado em uma de suas regiões. Uma terceira página apresenta outras galáxias como estruturas muito além do mapa anterior. As figuras são esquemáticas e não tentam mostrar cada estrela ou sistema planetário em escala.\n\nQual relação entre essas escalas o guia pretende comunicar?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "O Sistema Solar e a Via Láctea são estruturas de escala comparável mostradas em recortes diferentes.",
+        "targetsError": "conceptual",
+        "rationale": "As páginas apresentam o Sistema Solar dentro da Via Láctea e a galáxia entre outras."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A Via Láctea é uma entre muitas galáxias, e o Sistema Solar fica fora dela.",
+        "targetsError": "conceptual",
+        "rationale": "As páginas apresentam o Sistema Solar dentro da Via Láctea e a galáxia entre outras."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A Via Láctea contém o Sistema Solar, e as demais galáxias também pertencem a ela.",
+        "targetsError": "conceptual",
+        "rationale": "As páginas apresentam o Sistema Solar dentro da Via Láctea e a galáxia entre outras."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O Sistema Solar é uma pequena parte da Via Láctea, que integra um Universo com muitas galáxias."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "O ponto do Sol no mapa mostra que a Via Láctea termina nas órbitas planetárias.",
+        "targetsError": "interpretation",
+        "rationale": "O guia marca a posição do Sol dentro da galáxia, sem indicar que ela termine ali."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "correctOption": "D",
+    "explanation": "As páginas situam o Sistema Solar dentro da Via Láctea e mostram a galáxia entre outras galáxias. O ponto solar dentro de uma região da página não significa que o Sistema Solar contenha a galáxia inteira.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +234,150 @@
       "CIE-39-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-39-CON-01"
   },
   {
     "id": "CIE-39-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre escalas e ordem de grandeza astronômica para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Uma ficha de laboratório usa a distância de 5.400.000.000 km para uma simulação de rota entre corpos. A professora pede que os estudantes escrevam o valor em notação científica, deixando um algarismo diferente de zero antes da vírgula. O exercício não pede arredondamento e inclui espaço para a unidade após a potência de dez. A ficha compara esse número com outras distâncias e pede que os grupos mantenham quilômetros para facilitar a leitura lado a lado.\n\nComo a distância deve ser registrada?",
     "options": [
       {
         "key": "A",
-        "text": "Notação científica facilita escrever e comparar números muito grandes ou muito pequenos em Astronomia."
+        "text": "5,4 × 10⁸ km.",
+        "targetsError": "calculation",
+        "rationale": "A notação solicitada exige um algarismo não nulo antes da vírgula e preservar o valor em quilômetros."
       },
       {
         "key": "B",
-        "text": "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia."
+        "text": "5,4 × 10⁹ km."
       },
       {
         "key": "C",
-        "text": "Ordem de grandeza serve apenas para números menores que um."
+        "text": "5,4 × 10¹⁰ km.",
+        "targetsError": "calculation",
+        "rationale": "A notação solicitada exige um algarismo não nulo antes da vírgula e preservar o valor em quilômetros."
       },
       {
         "key": "D",
-        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+        "text": "5,04 × 10⁹ km.",
+        "targetsError": "calculation",
+        "rationale": "A notação solicitada exige um algarismo não nulo antes da vírgula e preservar o valor em quilômetros."
       },
       {
         "key": "E",
-        "text": "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala."
+        "text": "54 × 10⁸ km.",
+        "targetsError": "calculation",
+        "rationale": "A notação solicitada exige um algarismo não nulo antes da vírgula e preservar o valor em quilômetros."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Notação científica facilita escrever e comparar números muito grandes ou muito pequenos em Astronomia.",
+    "correctOption": "B",
+    "explanation": "Para escrever 5.400.000.000 com um algarismo não nulo antes da vírgula, deslocamos a vírgula nove casas: 5,4 × 10⁹ km. A alternativa 54 × 10⁸ mantém o valor, mas não segue a forma normalizada solicitada.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-39-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-39-CON-05"
   },
   {
     "id": "CIE-39-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre escalas e ordem de grandeza astronômica?",
+    "stem": "Um aplicativo compara dois registros de distância: um objeto está a 0,0046 ano-luz e outro a 290 UA. Para esta atividade, a tela adota 1 ano-luz = 63.000 UA; o valor é aproximado e suficiente para comparar os registros. Um estudante conclui que o primeiro objeto está muito mais distante porque o número 0,0046 parece pequeno em comparação com 290. A equipe precisa converter antes de decidir se a comparação está correta.\n\nQual resultado da conversão é mais adequado?",
     "options": [
       {
         "key": "A",
-        "text": "Unidade astronômica (UA) corresponde aproximadamente à distância média entre Terra e Sol e é útil dentro de sistemas planetários."
+        "text": "0,0046 UA, mantendo o número original ao trocar o nome da unidade.",
+        "targetsError": "calculation",
+        "rationale": "A conversão compara 0,0046 ano-luz com o fator de 63.000 UA por ano-luz."
       },
       {
         "key": "B",
-        "text": "Ano-luz é unidade de distância: a distância percorrida pela luz no vácuo em um ano."
+        "text": "63.000 UA, usando o fator de conversão sem considerar o valor em anos-luz.",
+        "targetsError": "calculation",
+        "rationale": "A conversão compara 0,0046 ano-luz com o fator de 63.000 UA por ano-luz."
       },
       {
         "key": "C",
-        "text": "Ordem de grandeza permite comparar escalas aproximando valores a potências de dez."
+        "text": "Cerca de 29 UA, deslocando uma casa a vírgula do resultado da conversão.",
+        "targetsError": "calculation",
+        "rationale": "A conversão compara 0,0046 ano-luz com o fator de 63.000 UA por ano-luz."
       },
       {
         "key": "D",
-        "text": "O Sistema Solar é muito menor que a Via Láctea; a galáxia contém enorme quantidade de estrelas e sistemas planetários."
+        "text": "Cerca de 2.900 UA, deslocando uma casa a vírgula após converter a distância.",
+        "targetsError": "calculation",
+        "rationale": "A conversão compara 0,0046 ano-luz com o fator de 63.000 UA por ano-luz."
       },
       {
         "key": "E",
-        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+        "text": "Cerca de 290 UA, valor próximo ao segundo registro após converter a unidade."
       }
     ],
     "correctOption": "E",
-    "explanation": "A alternativa E é a incorreta: Ano-luz é uma unidade de tempo usada para idade das estrelas. As demais expressam relações compatíveis com os conceitos da aula.",
+    "explanation": "0,0046 × 63.000 UA = 289,8 UA, aproximadamente 290 UA. Os dois registros representam distâncias muito próximas no nível de precisão usado, embora estejam em unidades diferentes.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-39-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-39-CON-01"
   },
   {
     "id": "CIE-39-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em escalas e ordem de grandeza astronômica?",
+    "stem": "Um livro apresenta um desenho com o Sol, oito planetas e algumas luas distribuídos ao longo de uma faixa curta. A legenda avisa que os planetas foram ampliados para aparecer na página e que as distâncias entre órbitas foram reduzidas de modo diferente para caber no espaço. Em outro quadro, uma escala numérica compara distâncias aproximadas entre o Sol e os planetas. Um estudante quer usar o desenho como régua para estimar onde ficaria cada planeta.\n\nQual orientação deve acompanhar a ilustração?",
     "options": [
       {
         "key": "A",
-        "text": "Modelos gráficos do Sistema Solar frequentemente distorcem simultaneamente tamanhos e distâncias; é preciso informar quando uma representação não está em escala."
+        "text": "Usar o tamanho desenhado dos planetas como medida, pois as distâncias foram alteradas.",
+        "targetsError": "interpretation",
+        "rationale": "O desenho distorce tamanhos e distâncias; a escala numérica deve orientar comparações quantitativas."
       },
       {
         "key": "B",
-        "text": "Uma unidade astronômica é a distância entre a Via Láctea e outra galáxia."
+        "text": "Comparar os intervalos do desenho entre órbitas como se mantivessem a proporção real.",
+        "targetsError": "interpretation",
+        "rationale": "O desenho distorce tamanhos e distâncias; a escala numérica deve orientar comparações quantitativas."
       },
       {
         "key": "C",
-        "text": "Ordem de grandeza serve apenas para números menores que um."
+        "text": "Usar a escala numérica para estimar distâncias e o desenho apenas para reconhecer a disposição dos corpos."
       },
       {
         "key": "D",
-        "text": "Desenhos do Sistema Solar em livros normalmente mostram tamanhos e distâncias perfeitamente na mesma escala."
+        "text": "Usar a escala numérica para distâncias e supor que o desenho mantém os diâmetros em proporção.",
+        "targetsError": "conceptual",
+        "rationale": "A opção usa uma relação possível, mas ela não explica os dados específicos apresentados na situação."
       },
       {
         "key": "E",
-        "text": "Ano-luz é uma unidade de tempo usada para idade das estrelas."
+        "text": "Usar a escala numérica para distâncias e considerar proporcionais os tamanhos dos planetas no desenho.",
+        "targetsError": "procedural",
+        "rationale": "A legenda informa que os planetas foram ampliados, então seus tamanhos desenhados não estão proporcionais."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Modelos gráficos do Sistema Solar frequentemente distorcem simultaneamente tamanhos e distâncias; é preciso informar quando uma representação não está em escala.",
+    "correctOption": "C",
+    "explanation": "O aviso informa que tamanhos e intervalos foram alterados, então o desenho comunica a organização geral, não medidas proporcionais. A estimativa de posição deve usar a escala numérica, não os espaços desenhados.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-39-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-39-CON-06"
   }
 ]

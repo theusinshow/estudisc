@@ -215,31 +215,31 @@
     {
       "id": "GH-03-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Leitura de mapas, gráficos, imagens e linguagem iconográfica, qual afirmação está correta?",
+      "stem": "Um atlas escolar comparou a cobertura de árvores em três distritos imaginários durante o ano de 2024. A legenda informa percentuais calculados sobre a área de cada distrito: Centro, 12%; Norte, 29%; Sul, 21%. O mapa usa tons mais escuros para percentuais maiores e registra como fonte um levantamento de campo feito por uma equipe municipal. A ficha técnica avisa que a comparação descreve a cobertura naquele ano, sem indicar a idade das árvores nem explicar como cada setor chegou à sua proporção.\n\nQual afirmação está apoiada diretamente pelo mapa?",
       "options": [
         {
           "key": "A",
-          "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+          "text": "O distrito Norte possui árvores mais antigas que os demais setores."
         },
         {
           "key": "B",
-          "text": "Gráficos e mapas temáticos devem ser lidos observando título, legenda, unidade, período e fonte."
+          "text": "A equipe municipal plantou a maior parte das árvores do distrito Norte."
         },
         {
           "key": "C",
-          "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+          "text": "O Centro perdeu árvores entre 2023 e 2024, segundo o atlas."
         },
         {
           "key": "D",
-          "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+          "text": "O distrito Norte teve a maior proporção de área coberta por árvores em 2024."
         },
         {
           "key": "E",
-          "text": "Charge deve ser lida apenas de forma literal."
+          "text": "A cobertura vegetal do Centro explica a temperatura média registrada no mapa."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Gráficos e mapas temáticos devem ser lidos observando título, legenda, unidade, período e fonte.",
+      "correctOption": "D",
+      "explanation": "A legenda e os percentuais permitem comparar a cobertura em 2024; a hipótese sobre idade das árvores não é respondida pelo mapa.",
       "difficulty": "FOUNDATION",
       "cognitiveOperation": "RECALL",
       "conceptIds": [
@@ -251,139 +251,139 @@
     {
       "id": "GH-03-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “Imagem histórica prova sozinha tudo o que aconteceu.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "stem": "A biblioteca de um bairro contou empréstimos de livros durante três meses seguidos. A tabela informa 86 empréstimos em março, 102 em abril e 97 em maio. Uma nota explica que os números representam livros retirados, e não pessoas diferentes, porque um leitor pode levar mais de um volume. O boletim não informa quantos empréstimos foram renovados, nem compara esses meses com o ano anterior. O conselho da biblioteca pretende usar a tabela para decidir quando organizar uma feira de troca.\n\nQual leitura descreve corretamente os dados apresentados?",
       "options": [
         {
           "key": "A",
-          "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+          "text": "O número de pessoas leitoras cresceu nos três meses consecutivos."
         },
         {
           "key": "B",
-          "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+          "text": "Maio registrou o maior total porque incluiu renovação de empréstimos."
         },
         {
           "key": "C",
-          "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+          "text": "Os empréstimos subiram de março para abril e recuaram em maio."
         },
         {
           "key": "D",
-          "text": "Uma fotografia ou gravura é uma fonte produzida em determinado contexto e não uma janela neutra para o passado."
+          "text": "A tabela demonstra que a feira de troca causou o aumento de abril."
         },
         {
           "key": "E",
-          "text": "Charge deve ser lida apenas de forma literal."
+          "text": "O total de maio ficou abaixo do de março, conforme os valores."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Uma fotografia ou gravura é uma fonte produzida em determinado contexto e não uma janela neutra para o passado.",
+      "correctOption": "C",
+      "explanation": "A sequência 86, 102 e 97 mostra aumento seguido de queda; a tabela mede livros retirados, não leitores distintos.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-03-CON-02"
       ],
-      "targetedError": "concept_discrimination",
+      "targetedError": "graph_table_reading",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-03-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: O IFSC costuma combinar mapas, gráficos, fotografias, charges e textos. Ler a fonte visual é parte do conteúdo. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "stem": "Em dois quadros, uma personagem instala um aparelho de ar-condicionado na calçada e aponta para o anúncio: “Conforto imediato para a cidade”. No quadro seguinte, a máquina sopra ar quente sobre um grupo que espera o ônibus, enquanto a personagem senta diante de uma janela fechada. A legenda escrita pelo cartunista é “O problema saiu de casa”. A publicação apareceu no jornal escolar durante uma discussão sobre ilhas de calor e sobre o uso de espaços públicos. Não há dados de temperatura nem identificação de uma rua real.\n\nQue crítica a charge comunica por meio da situação?",
       "options": [
         {
           "key": "A",
-          "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+          "text": "A personagem desloca o incômodo para a calçada e mantém o conforto dentro de casa."
         },
         {
           "key": "B",
-          "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+          "text": "O aparelho comprova que as calçadas ficam mais quentes em dias úteis."
         },
         {
           "key": "C",
-          "text": "Charges e tirinhas usam seleção, exagero, ironia ou contraste e exigem interpretação do contexto."
+          "text": "O jornal recomenda instalar aparelhos de ar-condicionado nos pontos de ônibus."
         },
         {
           "key": "D",
-          "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+          "text": "A espera do ônibus explica por que a personagem fechou a janela."
         },
         {
           "key": "E",
-          "text": "Charge deve ser lida apenas de forma literal."
+          "text": "A calçada deixou de ser pública quando a máquina foi ligada."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Charges e tirinhas usam seleção, exagero, ironia ou contraste e exigem interpretação do contexto.",
+      "correctOption": "A",
+      "explanation": "A legenda e o contraste entre o interior confortável e a calçada aquecida indicam crítica; a charge não mede temperatura nem propõe instalar máquinas.",
       "difficulty": "APPLIED",
       "cognitiveOperation": "APPLY",
       "conceptIds": [
         "GH-03-CON-03"
       ],
-      "targetedError": "relationship",
+      "targetedError": "literal_reading",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-03-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Leitura de mapas, gráficos, imagens e linguagem iconográfica por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "stem": "Um arquivo escolar reuniu duas fotos de uma mesma praça, uma feita em janeiro e outra em julho. A primeira mostra bancos vazios, árvores com copa cheia e uma barraca ao fundo; a segunda registra os bancos ocupados, folhas no chão e a barraca fechada. A ficha diz que o fotógrafo permaneceu perto do portão nas duas ocasiões, mas não informa a hora nem o clima de cada dia. A turma foi convidada a comparar as imagens antes de escrever uma legenda sobre o uso da praça.\n\nQual conclusão mantém atenção aos limites das fotografias?",
       "options": [
         {
           "key": "A",
-          "text": "Duas representações do mesmo fenômeno podem destacar aspectos diferentes e produzir leituras distintas."
+          "text": "A barraca fechou por causa da redução de folhas nas árvores da praça."
         },
         {
           "key": "B",
-          "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+          "text": "A segunda fotografia prova que moradores do bairro passaram a usar a praça."
         },
         {
           "key": "C",
-          "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+          "text": "O fotógrafo mudou de posição e isso produziu a diferença de ocupação."
         },
         {
           "key": "D",
-          "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+          "text": "As imagens registram a mesma quantidade de visitantes em estações diferentes."
         },
         {
           "key": "E",
-          "text": "Charge deve ser lida apenas de forma literal."
+          "text": "As fotos mostram usos distintos da praça, sem explicar por si o motivo da mudança."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Duas representações do mesmo fenômeno podem destacar aspectos diferentes e produzir leituras distintas.",
+      "correctOption": "E",
+      "explanation": "As imagens registram cenas diferentes, mas não dão hora, clima ou depoimentos; atribuir o fechamento da barraca às árvores seria inventar uma causa.",
       "difficulty": "APPLIED",
       "cognitiveOperation": "TRANSFER",
       "conceptIds": [
         "GH-03-CON-04"
       ],
-      "targetedError": "application",
+      "targetedError": "photo_source_limits",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-03-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Gráficos e mapas temáticos devem ser lidos observando título, legenda, unidade, período e fonte.\nII. Imagem histórica prova sozinha tudo o que aconteceu.\nIII. Charges e tirinhas usam seleção, exagero, ironia ou contraste e exigem interpretação do contexto.\nIV. Um gráfico pode ser interpretado sem observar unidade e período.\nAssinale a alternativa CORRETA.",
+      "stem": "Uma associação de moradores publicou um mapa com a localização de pontos de ônibus e anexou uma tabela de embarques em três paradas durante o mesmo mês. A parada da Rua das Palmeiras fica mais perto do centro, mas teve 48 embarques por dia; a da Avenida do Campo, mais distante, registrou 73; e a do Mercado, 66. O texto explica que as contagens foram feitas em dias úteis, entre 7 e 9 horas. O painel não descreve os trajetos dos passageiros nem os horários do restante do dia.\n\nQual síntese combina corretamente o mapa e a tabela?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "A proximidade do centro determina a quantidade diária de embarques."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "Entre as paradas medidas, a Avenida do Campo teve mais embarques pela manhã."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "Os passageiros da Rua das Palmeiras percorrem trajetos mais curtos."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "A parada do Mercado recebe mais usuários durante a noite."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "A tabela revela a preferência dos moradores pelo ônibus na cidade."
         }
       ],
       "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "explanation": "A tabela compara 73, 66 e 48 embarques no intervalo informado; a localização no mapa não revela distâncias percorridas pelos passageiros.",
       "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -392,37 +392,37 @@
         "GH-03-CON-03",
         "GH-03-CON-04"
       ],
-      "targetedError": "multi_statement_reasoning",
+      "targetedError": "source_integration",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-03-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Leitura de mapas, gráficos, imagens e linguagem iconográfica. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "stem": "Um cartaz de feira científica representa cada garrafa reutilizada por um ícone azul. A legenda diz que um ícone equivale a dez garrafas recolhidas no pátio; aparecem seis ícones azuis e dois cinzas, que representam garrafas encontradas no corredor. O cartaz informa que a coleta ocorreu numa manhã de sexta-feira, com participação de duas turmas. A equipe não pesou o material e não registrou quantos recipientes já haviam sido reutilizados antes da atividade. O texto ao lado convida outras turmas a organizar uma coleta semelhante.\n\nQuantas garrafas recolhidas no pátio os ícones azuis representam?",
       "options": [
         {
           "key": "A",
-          "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+          "text": "Seis, pois cada desenho corresponde a uma unidade de garrafa."
         },
         {
           "key": "B",
-          "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+          "text": "Oito, agrupando os ícones azuis e cinzas numa categoria comum."
         },
         {
           "key": "C",
-          "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+          "text": "Vinte, porque há dois ícones cinzas no corredor."
         },
         {
           "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+          "text": "Sessenta, pois seis ícones azuis representam seis grupos de dez garrafas."
         },
         {
           "key": "E",
-          "text": "Distinguir evidência visível, contexto da fonte e inferência histórica/geográfica."
+          "text": "Oitenta, ao multiplicar por dez os ícones azuis e cinzas do cartaz."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Distinguir evidência visível, contexto da fonte e inferência histórica/geográfica.",
+      "correctOption": "D",
+      "explanation": "A legenda estabelece dez garrafas por ícone; seis símbolos azuis representam 6 × 10 = 60 garrafas do pátio.",
       "difficulty": "IFSC",
       "cognitiveOperation": "SOURCE_ANALYSIS",
       "conceptIds": [
@@ -433,37 +433,37 @@
         "GH-03-CON-05",
         "GH-03-CON-06"
       ],
-      "targetedError": "source_interpretation",
+      "targetedError": "infographic_scale",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-03-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Leitura de mapas, gráficos, imagens e linguagem iconográfica?",
+      "stem": "Uma reprodução de gravura mostra um pequeno cais, duas embarcações e pessoas descarregando caixas. A etiqueta da exposição informa que a imagem foi impressa em 1898 e integra um álbum de paisagens; o nome do artista está legível, mas não há indicação de quem encomendou a obra. Uma legenda posterior acrescenta que o cais ficava perto de uma vila pesqueira. A turma quer usar a imagem em uma pesquisa sobre o trabalho portuário, mas o arquivo não possui registro de salários, volume de carga ou depoimentos de trabalhadores.\n\nQual procedimento aproveita a gravura sem ultrapassar o que ela documenta?",
       "options": [
         {
           "key": "A",
-          "text": "Gráficos e mapas temáticos devem ser lidos observando título, legenda, unidade, período e fonte."
+          "text": "Descrever o cais e as pessoas visíveis e buscar outras fontes sobre trabalho e carga."
         },
         {
           "key": "B",
-          "text": "Uma fotografia ou gravura é uma fonte produzida em determinado contexto e não uma janela neutra para o passado."
+          "text": "Calcular o volume de mercadorias pelo tamanho desenhado das caixas."
         },
         {
           "key": "C",
-          "text": "Uma boa interpretação separa o que a fonte mostra diretamente do que precisa ser inferido com conhecimento prévio."
+          "text": "Afirmar que o artista trabalhava no cais por conhecer a cena local."
         },
         {
           "key": "D",
-          "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+          "text": "Concluir que a composição informa quantos trabalhadores havia no porto."
         },
         {
           "key": "E",
-          "text": "Duas representações do mesmo fenômeno podem destacar aspectos diferentes e produzir leituras distintas."
+          "text": "Tratar a legenda posterior como prova da intenção original do artista."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "correctOption": "A",
+      "explanation": "A gravura permite descrever a cena representada; salários e carga precisam de registros próprios, e a legenda não prova a intenção artística.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -474,37 +474,37 @@
         "GH-03-CON-05",
         "GH-03-CON-06"
       ],
-      "targetedError": "misconception_identification",
+      "targetedError": "source_analysis",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-03-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Leitura de mapas, gráficos, imagens e linguagem iconográfica, qual conclusão final é sustentável?",
+      "stem": "Uma comissão comparou um mapa de pontos de alagamento com uma tabela de chamados recebidos pela prefeitura. O mapa marca quatro cruzamentos próximos ao arroio; a tabela registra 18 chamados nesses locais durante um mês chuvoso e 11 no mês seguinte. Uma fotografia feita após o primeiro mês mostra folhas acumuladas em uma boca de lobo, mas foi tirada em apenas um dos cruzamentos. O relatório diz que a equipe ainda não verificou a drenagem dos outros pontos e que os chamados podem incluir relatos repetidos sobre o mesmo episódio.\n\nQual afirmação é mais bem sustentada pelo conjunto?",
       "options": [
         {
           "key": "A",
-          "text": "Imagem histórica prova sozinha tudo o que aconteceu."
+          "text": "As folhas acumuladas explicam os 18 chamados registrados nos cruzamentos."
         },
         {
           "key": "B",
-          "text": "Um gráfico pode ser interpretado sem observar unidade e período."
+          "text": "A queda de chamados prova que a drenagem foi corrigida no segundo mês."
         },
         {
           "key": "C",
-          "text": "Uma boa interpretação separa o que a fonte mostra diretamente do que precisa ser inferido com conhecimento prévio."
+          "text": "Os chamados diminuíram no mês seguinte, mas os dados não identificam a causa."
         },
         {
           "key": "D",
-          "text": "Mapas temáticos mostram todas as características de um território ao mesmo tempo."
+          "text": "Cada chamado corresponde a uma enchente distinta em um cruzamento diferente."
         },
         {
           "key": "E",
-          "text": "Charge deve ser lida apenas de forma literal."
+          "text": "O mapa representa com exatidão o nível da água nos quatro cruzamentos."
         }
       ],
       "correctOption": "C",
-      "explanation": "Uma boa interpretação separa o que a fonte mostra diretamente do que precisa ser inferido com conhecimento prévio.",
+      "explanation": "A tabela mostra redução de 18 para 11, mas admite relatos repetidos e não registra intervenções; a fotografia isolada não explica todos os pontos.",
       "difficulty": "IFSC",
       "cognitiveOperation": "EVALUATE",
       "conceptIds": [
@@ -515,7 +515,7 @@
         "GH-03-CON-05",
         "GH-03-CON-06"
       ],
-      "targetedError": "synthesis",
+      "targetedError": "source_analysis",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     }
   ]

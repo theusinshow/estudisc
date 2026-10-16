@@ -6,299 +6,377 @@
       "id": "POR-01-Q01",
       "lessonId": "POR-01",
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Gêneros do discurso, tipos textuais e modalidades em uso real da língua?",
+      "stem": "Considerando a data, o local e o relato das ações, a finalidade principal do texto é:",
       "options": [
         {
           "id": "A",
-          "text": "Gênero textual e tipo textual são sinônimos."
+          "text": "Convocar famílias a se inscreverem na horta antes da feira de sábado.",
+          "targetsError": "interpretation",
+          "rationale": "Transforma a visita anunciada em inscrição, embora o texto não abra cadastro."
         },
         {
           "id": "B",
-          "text": "Um texto só pode apresentar um único tipo textual."
+          "text": "Informar a comunidade sobre a abertura da horta e seus próximos passos."
         },
         {
           "id": "C",
-          "text": "Para descobrir o gênero, basta observar se o texto é curto ou longo."
+          "text": "Defender que a escola substitua a quadra inteira por canteiros de verduras.",
+          "targetsError": "interpretation",
+          "rationale": "Amplia o projeto para uma troca da quadra que não aparece no relato."
         },
         {
           "id": "D",
-          "text": "Um gênero textual é uma forma socialmente reconhecida de comunicação, ligada a finalidade, interlocutores, suporte e contexto de circulação."
+          "text": "Ensinar às famílias como montar um sistema doméstico de captação de chuva.",
+          "targetsError": "procedural",
+          "rationale": "Lê a menção à água reaproveitada como instrução, mas nenhuma etapa é ensinada."
         },
         {
           "id": "E",
-          "text": "Todo texto narrativo é necessariamente um conto."
+          "text": "Relembrar a infância de uma estudante que plantava temperos no quintal da avó.",
+          "targetsError": "conceptual",
+          "rationale": "Atribui ao texto uma memória pessoal sem narrador ou lembrança individual."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Um gênero textual é uma forma socialmente reconhecida de comunicação, ligada a finalidade, interlocutores, suporte e contexto de circulação.",
-      "difficulty": "foundation",
-      "cognitiveOperation": "recognize",
+      "correctOption": "B",
+      "explanation": "O texto reúne quando e onde a horta foi aberta, informa como o projeto começou e apresenta a colheita e a visita futuras. A visita de sábado pode sugerir um convite, mas não há inscrição: a finalidade é atualizar a comunidade sobre o projeto.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-01-C01"
       ],
-      "targetedError": "Todo texto narrativo é necessariamente um conto.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A notícia anuncia um cadastro para participar da horta.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Na manhã de terça-feira, estudantes da Escola Municipal Aurora abriram ao lado da biblioteca uma horta com temperos e hortaliças. A atividade começou em março, quando duas turmas pediram à direção um espaço para reaproveitar a água da chuva. Segundo a coordenadora, a primeira colheita será usada na merenda em novembro. As famílias poderão visitar o canteiro no sábado, durante a feira de ciências. A escola informou que pretende ampliar o projeto no próximo ano."
     },
     {
       "id": "POR-01-Q02",
       "lessonId": "POR-01",
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Gêneros do discurso, tipos textuais e modalidades, qual princípio deve orientar a análise?",
+      "stem": "Na carta, a lembrança da espera na chuva e o pedido à empresa contribuem para:",
       "options": [
         {
           "id": "A",
-          "text": "Tipo textual é uma organização linguística predominante, como narração, descrição, exposição, argumentação ou injunção; um mesmo gênero pode combinar mais de um tipo."
+          "text": "Montar uma cena ficcional em que passageiros disputam o último ônibus da noite.",
+          "targetsError": "conceptual",
+          "rationale": "Toma o relato situado como enredo inventado, embora a carta se dirija à redação e à empresa."
         },
         {
           "id": "B",
-          "text": "Um texto só pode apresentar um único tipo textual."
+          "text": "Apresentar instruções para que cada trabalhador consulte os horários no celular.",
+          "targetsError": "procedural",
+          "rationale": "Não há passos de consulta; a autora pede mudança na tabela publicada."
         },
         {
           "id": "C",
-          "text": "Para descobrir o gênero, basta observar se o texto é curto ou longo."
+          "text": "Sustentar uma reclamação com um episódio concreto e cobrar revisão do serviço."
         },
         {
           "id": "D",
-          "text": "Todo texto narrativo é necessariamente um conto."
+          "text": "Descrever somente a aparência do abrigo, sem avaliar a frequência dos coletivos.",
+          "targetsError": "attention",
+          "rationale": "A chuva aparece como experiência que apoia a crítica, não como descrição isolada do ponto."
         },
         {
           "id": "E",
-          "text": "Gênero textual e tipo textual são sinônimos."
+          "text": "Listar dados neutros sobre o transporte, sem defender qualquer alteração na linha.",
+          "targetsError": "interpretation",
+          "rationale": "Ignora o pedido final e o contraste explícito com a justificativa da prefeitura."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Tipo textual é uma organização linguística predominante, como narração, descrição, exposição, argumentação ou injunção; um mesmo gênero pode combinar mais de um tipo.",
-      "difficulty": "direct",
-      "cognitiveOperation": "understand",
+      "correctOption": "C",
+      "explanation": "A autora liga a frequência de quarenta minutos a uma espera vivida e termina pedindo revisão da tabela e divulgação dos dados. O trecho pode parecer um informe de horários, mas o pedido e a crítica à justificativa municipal deixam clara a posição defendida.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze",
       "concepts": [
         "POR-01-C02"
       ],
-      "targetedError": "Gênero textual e tipo textual são sinônimos.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O texto apenas informa horários e não apresenta uma posição.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "À redação do Jornal do Bairro: a linha de ônibus 412 passa a cada quarenta minutos depois das oito da noite, justamente quando muitos trabalhadores deixam o comércio. Na semana passada, esperei com outras seis pessoas sob a chuva; dois moradores acabaram pagando carro por aplicativo. A prefeitura diz que a procura cai nesse horário, mas a fila que se forma no ponto mostra outra realidade. Peço que a empresa reveja a tabela e publique os dados usados para reduzir as viagens."
     },
     {
       "id": "POR-01-Q03",
       "lessonId": "POR-01",
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Gêneros do discurso, tipos textuais e modalidades?",
+      "stem": "No cartaz, a frase “Comece o passeio pelo cheiro do pão” procura:",
       "options": [
         {
           "id": "A",
-          "text": "Para descobrir o gênero, basta observar se o texto é curto ou longo."
+          "text": "Associar o passeio de domingo à visita e ao novo horário da padaria."
         },
         {
           "id": "B",
-          "text": "Todo texto narrativo é necessariamente um conto."
+          "text": "Avisar que o forno ficará desligado depois das seis da manhã no restante da semana.",
+          "targetsError": "interpretation",
+          "rationale": "O cartaz informa uma abertura dominical, sem anunciar restrição de forno em outros dias."
         },
         {
           "id": "C",
-          "text": "Notícia, reportagem, artigo de opinião, crônica, charge, tirinha, poema, carta, receita e lei são gêneros, não tipos textuais."
+          "text": "Ensinar uma família a preparar pão de milho antes de sair de casa.",
+          "targetsError": "procedural",
+          "rationale": "A frase sugere uma visita à loja; não oferece receita nem sequência de preparo."
         },
         {
           "id": "D",
-          "text": "Gênero textual e tipo textual são sinônimos."
+          "text": "Relatar uma lembrança de infância vivida pelo padeiro na praça do bairro.",
+          "targetsError": "conceptual",
+          "rationale": "A imagem familiar não transforma o anúncio comercial em memória autobiográfica."
         },
         {
           "id": "E",
-          "text": "Um texto só pode apresentar um único tipo textual."
+          "text": "Criticar moradores que preferem tomar café em casa em vez de caminhar pela praça.",
+          "targetsError": "interpretation",
+          "rationale": "Não há censura a hábitos domésticos; o enunciado propõe uma experiência de compra."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Notícia, reportagem, artigo de opinião, crônica, charge, tirinha, poema, carta, receita e lei são gêneros, não tipos textuais.",
-      "difficulty": "applied",
-      "cognitiveOperation": "discriminate",
+      "correctOption": "A",
+      "explanation": "O novo horário, os produtos e o endereço aparecem junto de um convite sensorial para iniciar o passeio na loja. A palavra “passeio” pode fazer pensar numa atividade organizada pelo estabelecimento, mas o cartaz apenas incentiva uma visita.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
       "concepts": [
         "POR-01-C03"
       ],
-      "targetedError": "Um texto só pode apresentar um único tipo textual.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O cartaz descreve um passeio real organizado pela padaria.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A padaria Pão da Praça anunciou um novo horário para as manhãs de domingo. A partir do dia 12, a loja abrirá às seis, com café coado, pão de milho recém-saído do forno e mesas na calçada. O cartaz traz uma fotografia de uma família dividindo uma cesta e o endereço da unidade. No rodapé, lê-se: “Comece o passeio pelo cheiro do pão”. O estabelecimento não informou alterações nos preços nem no funcionamento durante a semana."
     },
     {
       "id": "POR-01-Q04",
       "lessonId": "POR-01",
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Gêneros do discurso, tipos textuais e modalidades?",
+      "stem": "Ao dizer que “a janela acendeu seu quadrado amarelo”, o poema:",
       "options": [
         {
           "id": "A",
-          "text": "Todo texto narrativo é necessariamente um conto."
+          "text": "Registra o momento exato em que um morador troca uma lâmpada queimada.",
+          "targetsError": "interpretation",
+          "rationale": "Lê a imagem poética como relato técnico, embora não haja conserto descrito."
         },
         {
           "id": "B",
-          "text": "Gênero textual e tipo textual são sinônimos."
+          "text": "Anuncia que a iluminação pública será ampliada em toda a rua alagada.",
+          "targetsError": "interpretation",
+          "rationale": "O verso mostra uma janela iluminada e não apresenta plano da prefeitura."
         },
         {
           "id": "C",
-          "text": "Um texto só pode apresentar um único tipo textual."
+          "text": "Atribui à janela uma ação humana e faz a luz compor a cena noturna."
         },
         {
           "id": "D",
-          "text": "Para descobrir o gênero, basta observar se o texto é curto ou longo."
+          "text": "Explica por que o ônibus precisou reduzir a velocidade perto do portão.",
+          "targetsError": "interpretation",
+          "rationale": "A chuva ajuda a compor a cena, mas o verso não explica decisão do motorista."
         },
         {
           "id": "E",
-          "text": "A identificação de um gênero depende do conjunto de características e da situação comunicativa, não de uma palavra isolada ou do tamanho do texto."
+          "text": "Descreve a forma de um prédio para orientar o leitor até uma parada.",
+          "targetsError": "conceptual",
+          "rationale": "Não há instrução de percurso; a imagem contribui para a atmosfera do poema."
         }
       ],
-      "correctOption": "E",
-      "explanation": "A identificação de um gênero depende do conjunto de características e da situação comunicativa, não de uma palavra isolada ou do tamanho do texto.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "apply",
+      "correctOption": "C",
+      "explanation": "A ação de “acender” é atribuída à janela, enquanto o quadrado amarelo se liga às luzes que aparecem no vidro e no asfalto. A leitura literal como registro de manutenção perde a imagem que organiza o poema.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze",
       "concepts": [
-        "POR-01-C04"
+        "POR-01-C06"
       ],
-      "targetedError": "Para descobrir o gênero, basta observar se o texto é curto ou longo.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A janela é apenas um detalhe arquitetônico sem efeito na cena.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Quando a chuva fechou a rua,\na janela acendeu seu quadrado amarelo.\nO ônibus passou lento, carregando\num rumor de vozes e guarda-chuvas.\nNo vidro, meu rosto se misturou\nàs luzes que tremiam no asfalto.\nO vento recolheu um papel da calçada.\nA noite não disse que estava triste;\napenas deixou duas gotas\ncorrendo juntas pela calçada,\naté sumirem atrás do portão."
     },
     {
       "id": "POR-01-Q05",
       "lessonId": "POR-01",
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Gêneros do discurso, tipos textuais e modalidades?",
+      "stem": "A sequência de verbos dirigida ao leitor faz o texto funcionar principalmente como:",
       "options": [
         {
           "id": "A",
-          "text": "Gênero textual e tipo textual são sinônimos."
+          "text": "Uma narrativa sobre como a turma distribui o lanche depois da aula.",
+          "targetsError": "conceptual",
+          "rationale": "A última frase menciona a turma, mas o corpo organiza ações para preparar a receita."
         },
         {
           "id": "B",
-          "text": "A modalidade pode envolver linguagem oral, escrita, verbal, visual ou multissemiótica; muitos gêneros digitais combinam vários modos."
+          "text": "Um roteiro de preparo que ordena ações e indica quantidades para a merenda."
         },
         {
           "id": "C",
-          "text": "Um texto só pode apresentar um único tipo textual."
+          "text": "Uma avaliação pessoal que compara o bolinho da escola com doces de uma feira.",
+          "targetsError": "interpretation",
+          "rationale": "O texto recomenda etapas, sem emitir opinião comparativa sobre outras comidas."
         },
         {
           "id": "D",
-          "text": "Para descobrir o gênero, basta observar se o texto é curto ou longo."
+          "text": "Uma notícia sobre a mudança do forno e do cardápio no refeitório municipal.",
+          "targetsError": "conceptual",
+          "rationale": "Não há acontecimento noticiado, data ou fonte institucional; há instruções culinárias."
         },
         {
           "id": "E",
-          "text": "Todo texto narrativo é necessariamente um conto."
+          "text": "Um retrato detalhado do sabor e do cheiro que ficam no corredor da escola.",
+          "targetsError": "attention",
+          "rationale": "A receita cita ingredientes, porém não constrói uma descrição sensorial do corredor."
         }
       ],
       "correctOption": "B",
-      "explanation": "A modalidade pode envolver linguagem oral, escrita, verbal, visual ou multissemiótica; muitos gêneros digitais combinam vários modos.",
+      "explanation": "Amasse, junte, acrescente, coloque e espere organizam o preparo em etapas, com medidas e tempo de forno. A menção aos atrasados é um detalhe de uso da merenda, mas não muda a finalidade instrucional do conjunto.",
       "difficulty": "applied",
-      "cognitiveOperation": "evaluate",
+      "cognitiveOperation": "apply",
       "concepts": [
-        "POR-01-C05"
+        "POR-01-C02"
       ],
-      "targetedError": "Todo texto narrativo é necessariamente um conto.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A frase sobre as crianças transforma a receita em uma história da turma.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Para preparar o bolinho de chuva da merenda, amasse duas bananas maduras com um garfo. Junte um ovo, meia xícara de leite e farinha aos poucos, até a massa cair da colher sem escorrer. A cozinheira recomenda acrescentar canela no final. Com uma colher, coloque pequenas porções em uma assadeira untada e leve ao forno já aquecido por vinte minutos. Espere esfriar antes de servir às crianças; a turma costuma separar algumas unidades para quem chega atrasado."
     },
     {
       "id": "POR-01-Q06",
       "lessonId": "POR-01",
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Gêneros do discurso, tipos textuais e modalidades, qual análise está correta?",
+      "stem": "A avaliação do filme aparece com mais clareza quando o autor:",
       "options": [
         {
           "id": "A",
-          "text": "Um texto só pode apresentar um único tipo textual."
+          "text": "Informa apenas o endereço, a duração e o horário em que a sessão começa.",
+          "targetsError": "attention",
+          "rationale": "Esses dados localizam a sessão, enquanto a avaliação está nos elogios e ressalvas."
         },
         {
           "id": "B",
-          "text": "Para descobrir o gênero, basta observar se o texto é curto ou longo."
+          "text": "Dá uma ordem ao leitor para levar um caderno e desenhar o caminho até o cinema.",
+          "targetsError": "procedural",
+          "rationale": "O caderno pertence à cena do filme; o texto não orienta o público a desenhar."
         },
         {
           "id": "C",
-          "text": "Todo texto narrativo é necessariamente um conto."
+          "text": "Compara o preço do ingresso com o custo do transporte até o terminal.",
+          "targetsError": "interpretation",
+          "rationale": "O terminal integra uma cena; não há qualquer comparação de preços."
         },
         {
           "id": "D",
-          "text": "Finalidade e circulação ajudam a distinguir gêneros próximos: uma notícia prioriza informar um fato; um artigo de opinião assume e sustenta um ponto de vista."
+          "text": "Destaca a cena final e critica repetições que enfraquecem o roteiro."
         },
         {
           "id": "E",
-          "text": "Gênero textual e tipo textual são sinônimos."
+          "text": "Conta uma experiência própria de infância vivida ao lado do pai no mercado.",
+          "targetsError": "conceptual",
+          "rationale": "O pai e o mercado são elementos do enredo, não uma lembrança pessoal do crítico."
         }
       ],
       "correctOption": "D",
-      "explanation": "Finalidade e circulação ajudam a distinguir gêneros próximos: uma notícia prioriza informar um fato; um artigo de opinião assume e sustenta um ponto de vista.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "analyze",
+      "explanation": "“Gostei” e “pudesse confiar mais” marcam apreciação e crítica, sustentadas por cenas e repetições do roteiro. A sinopse ocupa as primeiras linhas, mas a ressalva final mostra que o texto também avalia a obra.",
+      "difficulty": "applied",
+      "cognitiveOperation": "evaluate",
       "concepts": [
-        "POR-01-C06"
+        "POR-01-C05"
       ],
-      "targetedError": "Gênero textual e tipo textual são sinônimos.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O texto só resume a história e não expressa julgamento sobre o filme.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A sessão de “O mapa das nuvens”, no Cine Aurora, dura pouco mais de uma hora e acompanha uma menina que desenha o trajeto do pai até o trabalho. As cenas do mercado e do terminal são bonitas, mas o roteiro repete a mesma explicação em três momentos. No fim, a menina deixa o caderno aberto sobre a mesa; gostei do silêncio dessa cena, que diz mais do que o diálogo anterior. É um filme delicado, embora pudesse confiar mais na atenção de quem assiste."
     },
     {
       "id": "POR-01-Q07",
       "lessonId": "POR-01",
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Todo texto narrativo é necessariamente um conto.”. Qual é a melhor correção?",
+      "stem": "A pequena conversa no ponto contribui para a crônica ao:",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "Aproximar duas pessoas durante uma espera cotidiana com um gesto cordial."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Ensinar aos passageiros a calcular o atraso de cada linha antes de sair de casa.",
+          "targetsError": "procedural",
+          "rationale": "O cálculo é preocupação da personagem, não uma orientação ao leitor."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "Provar que todo bolo deixa apresentações públicas mais seguras e bem-sucedidas.",
+          "targetsError": "interpretation",
+          "rationale": "Uma oferta cordial não demonstra uma regra geral sobre apresentações."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "Divulgar uma encomenda de confeitaria com telefone e preço para novos clientes.",
+          "targetsError": "conceptual",
+          "rationale": "O bolo movimenta a cena, mas não há dados comerciais ou convite à compra."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Descrever tecnicamente a rota do ônibus entre a esquina e o terminal central.",
+          "targetsError": "attention",
+          "rationale": "A esquina localiza a chegada; o percurso do coletivo não é detalhado."
         }
       ],
       "correctOption": "A",
-      "explanation": "Um gênero textual é uma forma socialmente reconhecida de comunicação, ligada a finalidade, interlocutores, suporte e contexto de circulação.",
-      "difficulty": "applied",
-      "cognitiveOperation": "diagnose_error",
+      "explanation": "A oferta e a brincadeira aproximam Célia e o rapaz durante a espera, um episódio simples que sustenta o tom da crônica. A fala bem-humorada não promete resultado; ela é um gesto de acolhimento, e a resposta do rapaz confirma a aproximação.",
+      "difficulty": "ifsc",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
-        "POR-01-C01"
+        "POR-01-C04"
       ],
-      "targetedError": "Todo texto narrativo é necessariamente um conto.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A fala sobre a fatia promete melhorar o desempenho do rapaz.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Dona Célia chegou ao ponto com um bolo embrulhado em pano azul. O ônibus atrasava, e ela calculava se ainda daria tempo de entregar a encomenda antes do almoço. Ao lado, um rapaz ensaiava uma apresentação, movendo os lábios sem som. Quando o veículo enfim dobrou a esquina, Célia ofereceu a ele uma fatia: “Vai que a fala fica mais doce”. O rapaz riu, guardou o papel no bolso e subiu primeiro, ainda repetindo as primeiras palavras."
     },
     {
       "id": "POR-01-Q08",
       "lessonId": "POR-01",
       "type": "MCQ",
-      "stimulus": "Em um portal escolar, um texto apresenta título, data, autoria, dados de uma pesquisa e explica o aumento do uso de bicicletas na cidade, sem defender uma posição pessoal.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stimulus": "O perfil da Feira do Troca publicou uma fotografia de um casaco infantil sobre uma mesa, ao lado de uma etiqueta: “leva tamanho 8, deixa outro em bom estado”. A legenda informa que a feira acontece no ginásio da escola, domingo, das nove às onze. No áudio anexado, uma estudante explica que não é preciso levar peça para entrar, mas que cada participante pode escolher somente uma por vez. O post termina com o mapa do portão lateral.",
+      "stem": "Para orientar a participação, o post combina fotografia, legenda, áudio e mapa de modo que:",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "A fotografia substitui todos os horários e regras descritos nas outras partes da publicação.",
+          "targetsError": "attention",
+          "rationale": "A imagem mostra uma peça, mas horário, condição de entrada e acesso estão em outros elementos."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "O áudio transforma a feira em uma venda que exige pagamento antes da entrada.",
+          "targetsError": "interpretation",
+          "rationale": "A estudante diz que não é preciso levar peça para entrar e não menciona cobrança."
         },
         {
           "id": "C",
-          "text": "O conjunto sugere um gênero informativo, como notícia ou reportagem curta: a finalidade é informar e contextualizar dados; a presença de explicação não transforma o gênero em “tipo expositivo” como se isso fosse um gênero."
+          "text": "O mapa comprova que todas as roupas disponíveis terão exatamente tamanho infantil oito.",
+          "targetsError": "interpretation",
+          "rationale": "O tamanho aparece na etiqueta de um casaco, enquanto o mapa indica o portão."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "A fotografia, a legenda e o áudio cumprem a mesma função de repetir a data do evento.",
+          "targetsError": "attention",
+          "rationale": "Cada parte apresenta pistas diferentes: peça, horário, regra de troca e localização."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "Cada recurso acrescenta uma pista prática sobre o que levar, quando ir e por onde entrar."
         }
       ],
-      "correctOption": "C",
-      "explanation": "O conjunto sugere um gênero informativo, como notícia ou reportagem curta: a finalidade é informar e contextualizar dados; a presença de explicação não transforma o gênero em “tipo expositivo” como se isso fosse um gênero.",
+      "correctOption": "E",
+      "explanation": "A etiqueta mostra a lógica da troca, a legenda dá local e horário, o áudio explica a entrada e o limite por vez, e o mapa aponta o portão. A fotografia isolada não contém as regras necessárias para participar.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze_context",
       "concepts": [
-        "POR-01-C01",
-        "POR-01-C02"
+        "POR-01-C06"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Como o post tem imagem, ele dispensa a leitura da legenda e do áudio.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2
     }
   ]
 }
