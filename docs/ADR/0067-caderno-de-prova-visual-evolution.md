@@ -23,6 +23,11 @@ Evolve the canonical tokens to version 4.1.0 (additive; no token removed or rena
 
 Shared opt-in classes live in `src/styles/application/caderno.css`. Screens adopt them in later increments (session/lesson, Today/review, landing/sign-in, progress).
 
+## Implementation notes
+
+- Question/step transitions use the Web Animations API on the step that becomes visible instead of `AnimatePresence`: lesson steps stay mounted so answers and feedback survive navigation, so there is no exit to animate, and no motion code ships for it.
+- Answer bubbles and the stamp are CSS (transform/opacity) in `caderno-study.css`.
+
 ## Consequences
 
 - No Pack, schema, route, server action, domain rule or feature-flag change.

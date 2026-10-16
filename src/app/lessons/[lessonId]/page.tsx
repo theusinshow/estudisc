@@ -14,6 +14,7 @@ import { getTrack } from "@/features/tracks/api";
 import { getLessonResume } from "@/features/lessons/resume-api";
 import { canAccessLesson, resolveAccessState } from "@/features/payments/access-guard";
 import { PaywallPanel } from "@/features/payments/paywall-panel";
+import { subjectCodeFromTitle } from "@/components/ui/subject";
 
 type LessonPageProps = Readonly<{
   params: Promise<{ lessonId: string }>;
@@ -58,8 +59,8 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
 
   return (
     <AppShell mode={getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? "focus" : "page"} exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha" }}>
-      <article className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="lesson-title">
-        <p className="eyebrow">{lesson.trackTitle}</p>
+      <article className="foundation-panel content-panel accent-panel accent-learn lesson-article" aria-labelledby="lesson-title" data-subject={subjectCodeFromTitle(lesson.trackTitle)}>
+        <p className="eyebrow subject-tab">{lesson.trackTitle}</p>
         <h1 id="lesson-title">{lesson.title}</h1>
         {Boolean(lesson.metadata?.kind)&&(!lesson.metadata?.qaReleaseId||lesson.metadata?.status!=="published")&&<p className="learning-hint">Prévia administrativa · versão ainda não publicada.</p>}
         <LiveLessonProgress lessonStableId={lesson.stableId} initial={progress} />

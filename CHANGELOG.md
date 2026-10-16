@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-16 — Caderno de prova, phase 1: question session and lesson (ADR 0067)
+
+- Multiple-choice Questions render as an answer sheet: bubble A–E plus text, 56px rows, the native radio covering the row; keys A–E and 1–5 mark a choice while focus is inside the Question, Enter submits. Choice accessible names stay the choice text.
+- The result is announced through a live region that exists before the answer and carries a correction stamp ("Certo" / "Revise" / "Solução") with icon and text; the stamp enters rotated −6° in 200ms, static under reduced motion.
+- Hint and solution become progressive disclosures; requests are still recorded as assistance exactly as before.
+- Lessons: subject identification tab, expanded title, reading column (17/18px, 1.55, 66ch); concept/summary blocks become ruled structure, examples sit on exam-grid paper; a desktop notebook-margin outline of the lesson parts; a thin progress bar on phones; steps slide in 24px horizontally (Web Animations, steps stay mounted so answers survive).
+- Session result shows the real tally and how many concepts are due for review now.
+
 ## 2026-10-16 — Caderno de prova, phase 0: tokens and foundation (ADR 0067)
 
 - Design tokens 4.1.0 (additive): three elevation levels, a contrasted type scale with the Archivo `wdth` axis, reading measure, exam-grid pattern, layout grid and state-communicating motion tokens. Focus ring tokens now match the rendered 3px.
