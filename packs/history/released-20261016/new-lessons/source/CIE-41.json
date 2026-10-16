@@ -1,0 +1,531 @@
+{
+  "lessonId": "CIE-41",
+  "title": "Ondas, som e luz",
+  "subject": "CIE",
+  "estimatedMinutes": 40,
+  "editalItem": "CIÊNCIAS — item 1. Matéria e Energia, em especial 1.2: “Fontes e tipos de energia. Transformação de energia. Conservação de energia”, e item 2.5: “Órgãos dos sentidos. Condições que afetam a visão.” Ondas, v = λ·f e refração não aparecem explicitamente no edital: aula complementar correlata.",
+  "objectives": [
+    "Distinguir ondas mecânicas e eletromagnéticas.",
+    "Reconhecer amplitude, frequência e comprimento de onda.",
+    "Calcular velocidade de propagação e distância de eco.",
+    "Explicar reflexão, refração e espectro visível."
+  ],
+  "concepts": [
+    {
+      "id": "CIE-41-C01",
+      "title": "Onda e transporte de energia",
+      "summary": "Uma onda é uma perturbação que se propaga e transporta energia, sem carregar matéria do ponto de origem ao destino como um objeto lançado."
+    },
+    {
+      "id": "CIE-41-C02",
+      "title": "Amplitude, frequência e comprimento de onda",
+      "summary": "Amplitude é o maior afastamento em relação à posição de equilíbrio; pode estar ligada à intensidade da perturbação, conforme o tipo de onda."
+    },
+    {
+      "id": "CIE-41-C03",
+      "title": "Velocidade de onda e som",
+      "summary": "Para ondas periódicas que se propagam em um meio, a velocidade de propagação é v = λ × f."
+    },
+    {
+      "id": "CIE-41-C04",
+      "title": "Reflexão, refração e espectro da luz",
+      "summary": "Reflexão é o retorno de uma onda ao encontrar uma superfície ou fronteira; nos espelhos, a luz pode refletir de forma organizada."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "CIE-41-B01",
+      "type": "note",
+      "title": "Por que isso importa?",
+      "content": "Num dia de vento em Florianópolis, uma escola organiza um experimento: dois alunos agitam uma corda, outro observa ondulações numa bacia de água, e uma turma acompanha a voz de um colega através de uma caixa de som. À tarde, um prisma divide a luz branca em várias cores. Tudo parece ser “onda”, mas os fenômenos não precisam do mesmo meio para se propagar. Uma corda transmite uma perturbação por suas partículas; a luz do Sol chega até nós pelo espaço. Como distinguir as ondas, prever sua velocidade e explicar o que acontece quando encontram outra superfície?",
+      "conceptIds": [
+        "CIE-41-C01"
+      ]
+    },
+    {
+      "id": "CIE-41-B02",
+      "type": "concept",
+      "title": "Onda e transporte de energia",
+      "content": "Uma onda é uma perturbação que se propaga e transporta energia, sem carregar matéria do ponto de origem ao destino como um objeto lançado. Numa corda, cada trecho oscila perto de sua posição enquanto a perturbação avança. Ondas mecânicas precisam de um meio material: água, metal, ar ou corda. Ondas eletromagnéticas, como luz visível e ondas de rádio, podem se propagar no vácuo. As categorias descrevem o mecanismo de propagação; não significam que toda onda mecânica seja audível ou que toda eletromagnética seja visível.\n\nExemplo: Uma boia sobe e desce quando passa uma onda superficial, mas não acompanha a crista da praia até o alto-mar. A energia se propaga; o movimento local da boia é oscilatório.\n\nContraexemplo: Som não viaja pelo espaço vazio entre o Sol e a Terra, pois precisa de meio material; luz solar consegue atravessar o vácuo.\n\nErro a evitar: Não confunda transporte de energia com deslocamento permanente de toda a matéria do meio.",
+      "conceptIds": [
+        "CIE-41-C01"
+      ]
+    },
+    {
+      "id": "CIE-41-B03",
+      "type": "concept",
+      "title": "Amplitude, frequência e comprimento de onda",
+      "content": "Amplitude é o maior afastamento em relação à posição de equilíbrio; pode estar ligada à intensidade da perturbação, conforme o tipo de onda. Frequência f é o número de oscilações por segundo, medida em hertz (Hz). O período T é o tempo de uma oscilação, em segundos: T = 1/f. Comprimento de onda λ é a distância entre dois pontos equivalentes consecutivos, como duas cristas de uma onda periódica, medido em metros. Frequência e amplitude não são a mesma propriedade: aumentar o volume de um som não exige alterar sua frequência, e por isso não muda necessariamente sua altura musical.\n\nExemplo: Uma corda completa 5 oscilações em 1 segundo: f = 5 Hz, T = 0,2 s. Se a crista se distancia 0,8 m da seguinte, λ = 0,8 m.\n\nContraexemplo: Dois sons podem ter a mesma frequência e amplitudes diferentes; um pode ser mais intenso sem ser mais agudo.\n\nErro a evitar: Não troque amplitude por frequência nem interprete hertz como unidade de velocidade.",
+      "conceptIds": [
+        "CIE-41-C02"
+      ]
+    },
+    {
+      "id": "CIE-41-B04",
+      "type": "concept",
+      "title": "Velocidade de onda e som",
+      "content": "Para ondas periódicas que se propagam em um meio, a velocidade de propagação é v = λ × f. Use λ em metros, f em hertz e v em m/s. A velocidade depende das propriedades do meio; ao passar para outro meio, a frequência imposta pela fonte costuma se manter, enquanto velocidade e comprimento de onda podem mudar. Som é onda mecânica que se propaga por variações de pressão. No ar a temperatura ambiente, uma aproximação útil é 340 m/s; o valor real varia com a temperatura e outras condições. Um eco se forma quando uma onda sonora refletida retorna ao observador.\n\nExemplo: Se um pulso periódico apresenta λ = 2 m e f = 170 Hz, sua velocidade é 2 × 170 = 340 m/s.\n\nContraexemplo: Não some λ com f e não use a velocidade do som no ar como se fosse igual na água ou no aço.\n\nErro a evitar: Na fórmula, multiplique comprimento de onda pela frequência; a unidade final deve ser m/s.",
+      "conceptIds": [
+        "CIE-41-C03"
+      ]
+    },
+    {
+      "id": "CIE-41-B05",
+      "type": "concept",
+      "title": "Reflexão, refração e espectro da luz",
+      "content": "Reflexão é o retorno de uma onda ao encontrar uma superfície ou fronteira; nos espelhos, a luz pode refletir de forma organizada. Refração ocorre quando a luz passa entre meios de propriedades ópticas diferentes e sua velocidade muda; ao entrar obliquamente, em geral também muda de direção. Incidência perpendicular pode mudar velocidade sem curvar o caminho. A luz branca contém uma faixa de comprimentos de onda percebidos como cores; um prisma pode separá-los por dispersão. O visível é só uma parte do espectro eletromagnético, que também inclui infravermelho e ultravioleta.\n\nExemplo: A imagem num espelho exemplifica reflexão; uma colher vista num copo d’água aparentar “quebrar” está ligada à refração da luz que sai da água para o ar.\n\nContraexemplo: A luz ultravioleta não é uma cor visível entre violeta e azul; está fora da faixa perceptível aos olhos humanos.\n\nErro a evitar: Não diga que a luz deixa de refratar se incidir perpendicularmente: pode mudar a velocidade sem mudar direção.",
+      "conceptIds": [
+        "CIE-41-C04"
+      ]
+    },
+    {
+      "id": "CIE-41-B06",
+      "type": "worked-example",
+      "title": "Ondas na corda",
+      "content": "Uma perturbação periódica apresenta comprimento de onda de 1,5 m e frequência de 4 Hz. Determine sua velocidade.\n\n1. Identifique λ = 1,5 m e f = 4 Hz.\n2. Aplique v = λ × f.\n3. Calcule 1,5 × 4 = 6.\n4. Escreva v = 6 m/s, pois m × s⁻¹ = m/s.\n\nConferência: Em 1 segundo passam quatro comprimentos de onda, cada um com 1,5 m; isso corresponde a 6 m.",
+      "conceptIds": [
+        "CIE-41-C01",
+        "CIE-41-C04"
+      ]
+    },
+    {
+      "id": "CIE-41-B07",
+      "type": "worked-example",
+      "title": "Eco na quadra",
+      "content": "Um estudante bate palmas perto de uma parede e ouve o eco 0,5 s depois. Considere o som a 340 m/s. Estime a distância à parede.\n\n1. O som percorre ida e volta; o trajeto total é 2d.\n2. Calcule distância total: 340 × 0,5 = 170 m.\n3. Divida por 2: d = 170 ÷ 2 = 85 m.\n4. A parede fica aproximadamente a 85 m.\n\nConferência: Se a parede está a 85 m, a viagem de 170 m dura 170 ÷ 340 = 0,5 s.",
+      "conceptIds": [
+        "CIE-41-C02",
+        "CIE-41-C04"
+      ]
+    },
+    {
+      "id": "CIE-41-B08",
+      "type": "warning",
+      "title": "Como cai no IFSC",
+      "content": "1. Dizer que som e luz precisam igualmente de ar para propagação.\n\n2. Chamar som mais forte de necessariamente mais agudo.\n\n3. Usar v = λ ÷ f no lugar de multiplicação.\n\n4. Calcular distância do eco sem dividir o percurso de ida e volta por dois.\n\n5. Tratar ultravioleta como cor da faixa visível.",
+      "conceptIds": [
+        "CIE-41-C01",
+        "CIE-41-C02",
+        "CIE-41-C03",
+        "CIE-41-C04"
+      ]
+    },
+    {
+      "id": "CIE-41-B09",
+      "type": "summary",
+      "title": "Ideias essenciais",
+      "content": "Ondas transferem energia por perturbações. Ondas mecânicas precisam de meio; eletromagnéticas podem viajar no vácuo. Frequência mede oscilações por segundo e comprimento de onda mede distância entre ciclos. A relação v = λ × f usa m, Hz e m/s. Som é mecânico e pode produzir eco por reflexão. Luz pode refletir, refratar e dispersar em cores. O espectro visível ocupa uma parte do eletromagnético.",
+      "conceptIds": [
+        "CIE-41-C01",
+        "CIE-41-C02",
+        "CIE-41-C03",
+        "CIE-41-C04"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "CIE-41-Q01",
+      "difficulty": "foundation",
+      "conceptIds": [
+        "CIE-41-C01"
+      ],
+      "stimulus": "Em uma aula de Ciências em Jaraguá do Sul, um estudante agitou a ponta de uma corda presa à parede. O movimento produziu uma perturbação que viajou até a outra extremidade, embora um pedaço de fita colado no meio apenas subisse e descesse perto do mesmo lugar. Em seguida, o grupo comparou esse resultado a ondas de rádio recebidas pelo celular. A professora pediu reconhecer o que as ondas transportam e se precisam ou não de matéria para avançar.",
+      "stem": "Qual comparação expressa a diferença essencial entre os dois casos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A corda se propaga como objeto rígido; o rádio existe no ar.",
+          "correct": false,
+          "targetsError": "matéria transportada",
+          "rationale": "A fita mostra oscilação local, e rádio é eletromagnético."
+        },
+        {
+          "id": "B",
+          "content": "As duas ondas precisam de um meio material para se propagar.",
+          "correct": false,
+          "targetsError": "meio universal",
+          "rationale": "Ondas eletromagnéticas propagam-se sem meio material."
+        },
+        {
+          "id": "C",
+          "content": "A corda exige meio material; ondas de rádio podem viajar no vácuo.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Corda transmite energia num meio; rádio é onda eletromagnética que pode existir no vácuo. A fita evidencia oscilação local sem transporte da matéria inteira."
+        },
+        {
+          "id": "D",
+          "content": "A corda transporta matéria até a parede; o rádio transporta matéria.",
+          "correct": false,
+          "targetsError": "energia por massa",
+          "rationale": "A perturbação da corda não carrega a corda até a parede."
+        },
+        {
+          "id": "E",
+          "content": "O rádio é uma onda sonora mecânica, como a perturbação na corda.",
+          "correct": false,
+          "targetsError": "som por rádio",
+          "rationale": "Ondas de rádio são eletromagnéticas."
+        }
+      ],
+      "explanation": "Corda transmite energia num meio; rádio é onda eletromagnética que pode existir no vácuo. A fita evidencia oscilação local sem transporte da matéria inteira."
+    },
+    {
+      "id": "CIE-41-Q02",
+      "difficulty": "foundation",
+      "conceptIds": [
+        "CIE-41-C02"
+      ],
+      "stimulus": "Na quadra de uma escola de Palhoça, dois alto-falantes reproduzem a mesma nota musical em frequências iguais, mas um está com volume mais elevado. Um aplicativo mostra que o sinal do aparelho mais forte tem amplitude maior, enquanto os dois completam a mesma quantidade de ciclos por segundo. A turma deve explicar por que o som mais intenso não virou necessariamente mais agudo. Os microfones e o ambiente foram mantidos iguais durante o teste, para facilitar a comparação.",
+      "stem": "Qual propriedade mudou diretamente no experimento descrito?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A amplitude aumentou, e o som foi percebido como mais intenso.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: A alteração é de amplitude/intensidade, mantendo a frequência. Som mais alto no volume não implica tom mais agudo."
+        },
+        {
+          "id": "B",
+          "content": "A frequência aumentou, e o som ficou mais agudo.",
+          "correct": false,
+          "targetsError": "volume por agudo",
+          "rationale": "O texto informa frequências iguais."
+        },
+        {
+          "id": "C",
+          "content": "O comprimento de onda caiu à metade com o aumento da potência.",
+          "correct": false,
+          "targetsError": "frequência por potência",
+          "rationale": "Não há mudança de frequência nem de meio indicada."
+        },
+        {
+          "id": "D",
+          "content": "A velocidade do som duplicou quando o volume do aparelho mudou.",
+          "correct": false,
+          "targetsError": "velocidade por amplitude",
+          "rationale": "Velocidade depende principalmente do meio e condições."
+        },
+        {
+          "id": "E",
+          "content": "O período dobrou, e o aparelho passou a emitir mais energia.",
+          "correct": false,
+          "targetsError": "período confundido",
+          "rationale": "Períodos permanecem iguais quando frequências iguais são mantidas."
+        }
+      ],
+      "explanation": "A alteração é de amplitude/intensidade, mantendo a frequência. Som mais alto no volume não implica tom mais agudo."
+    },
+    {
+      "id": "CIE-41-Q03",
+      "difficulty": "direct",
+      "conceptIds": [
+        "CIE-41-C03"
+      ],
+      "stimulus": "Um tanque experimental contém um gerador de ondas periódicas em água. A distância entre cristas consecutivas é de 0,80 m, e quatro cristas passam por uma marca fixa a cada segundo em regime regular. Um grupo estima a velocidade medindo o deslocamento de uma crista; outro prefere a relação entre frequência e comprimento de onda. O tanque é homogêneo no trecho observado, e a turma assume que a frequência vale 4 Hz.",
+      "stem": "Qual é a velocidade de propagação indicada pelos dados?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "5,0 m/s.",
+          "correct": false,
+          "targetsError": "f por lambda",
+          "rationale": "A fórmula é v = λ × f, não f/λ."
+        },
+        {
+          "id": "B",
+          "content": "0,20 m/s.",
+          "correct": false,
+          "targetsError": "lambda por f",
+          "rationale": "Essa operação não dá a velocidade descrita."
+        },
+        {
+          "id": "C",
+          "content": "4,8 m/s.",
+          "correct": false,
+          "targetsError": "soma de unidades",
+          "rationale": "Metros e hertz não são parcelas somáveis para velocidade."
+        },
+        {
+          "id": "D",
+          "content": "3,2 m/s.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: v = λf = 0,80 m × 4 s⁻¹ = 3,2 m/s. Dividir λ por f daria unidade m·s, não m/s."
+        },
+        {
+          "id": "E",
+          "content": "0,80 m/s.",
+          "correct": false,
+          "targetsError": "frequência omitida",
+          "rationale": "É preciso incorporar quatro oscilações por segundo."
+        }
+      ],
+      "explanation": "v = λf = 0,80 m × 4 s⁻¹ = 3,2 m/s. Dividir λ por f daria unidade m·s, não m/s."
+    },
+    {
+      "id": "CIE-41-Q04",
+      "difficulty": "direct",
+      "conceptIds": [
+        "CIE-41-C04"
+      ],
+      "stimulus": "Um instrumento produz oito vibrações completas em dois segundos. Os estudantes medem a frequência e o período para ajustar um experimento com mola; o número de ciclos foi contado a partir de imagens captadas em câmera lenta. Um aluno usou oito hertz por considerar que o registro contém oito movimentos, mas o intervalo de observação durou dois segundos. Outro sugeriu que período deve ser expresso em segundos por oscilação, não em oscilações por segundo.",
+      "stem": "Qual par apresenta frequência e período corretos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "8 Hz e período de 0,125 s.",
+          "correct": false,
+          "targetsError": "tempo omitido",
+          "rationale": "A frequência é número de ciclos dividido pelo tempo."
+        },
+        {
+          "id": "B",
+          "content": "2 Hz e período de 0,50 s.",
+          "correct": false,
+          "targetsError": "ciclos invertidos",
+          "rationale": "Foram oito ciclos em dois segundos."
+        },
+        {
+          "id": "C",
+          "content": "16 Hz e período de 0,0625 s.",
+          "correct": false,
+          "targetsError": "produto errado",
+          "rationale": "A operação correta é 8 ÷ 2, não 8 × 2."
+        },
+        {
+          "id": "D",
+          "content": "4 Hz e período de 4 s.",
+          "correct": false,
+          "targetsError": "unidade inversa",
+          "rationale": "Período é o inverso de frequência, em segundos."
+        },
+        {
+          "id": "E",
+          "content": "4 Hz e período de 0,25 s.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: f = 8 ÷ 2 = 4 Hz; T = 1/4 = 0,25 s. O erro de 8 Hz ignora a duração observada."
+        }
+      ],
+      "explanation": "f = 8 ÷ 2 = 4 Hz; T = 1/4 = 0,25 s. O erro de 8 Hz ignora a duração observada."
+    },
+    {
+      "id": "CIE-41-Q05",
+      "difficulty": "applied",
+      "conceptIds": [
+        "CIE-41-C01"
+      ],
+      "stimulus": "Na feira de ciências de Joinville, um grupo lança pulsos sonoros em direção a uma parede afastada. Um microfone registra eco 0,6 s depois da emissão. Os estudantes adotam 340 m/s para a velocidade do som no ar e querem estimar a distância até a parede. O aparelho registra o intervalo total entre emissão e retorno, e não o tempo de ida. A turma desenhou o percurso com uma seta de ida e outra de volta.",
+      "stem": "Qual é a distância aproximada até a parede?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "204 m até a parede.",
+          "correct": false,
+          "targetsError": "ida sem volta",
+          "rationale": "340 × 0,6 é o trajeto total da onda."
+        },
+        {
+          "id": "B",
+          "content": "102 m até a parede.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Percurso total = 340 × 0,6 = 204 m. Como o eco viajou em dois sentidos, distância da parede = 204 ÷ 2 = 102 m."
+        },
+        {
+          "id": "C",
+          "content": "56,7 m até a parede.",
+          "correct": false,
+          "targetsError": "divisão indevida",
+          "rationale": "Distância é velocidade vezes tempo, com ajuste por dois."
+        },
+        {
+          "id": "D",
+          "content": "170 m até a parede.",
+          "correct": false,
+          "targetsError": "metade do termo errado",
+          "rationale": "É a distância total que deve ser dividida por dois."
+        },
+        {
+          "id": "E",
+          "content": "340 m até a parede.",
+          "correct": false,
+          "targetsError": "tempo ignorado",
+          "rationale": "Uma velocidade em m/s exige multiplicação pelo intervalo."
+        }
+      ],
+      "explanation": "Percurso total = 340 × 0,6 = 204 m. Como o eco viajou em dois sentidos, distância da parede = 204 ÷ 2 = 102 m."
+    },
+    {
+      "id": "CIE-41-Q06",
+      "difficulty": "applied",
+      "conceptIds": [
+        "CIE-41-C02"
+      ],
+      "stimulus": "Em um laboratório escolar, uma estudante ilumina um espelho e observa um feixe voltar ao ambiente. Em outro experimento, coloca uma haste em um copo com água e vê a parte submersa parecer deslocada. A turma mantém a fonte de luz fixa e distingue os dois efeitos pela fronteira encontrada: no espelho há retorno para o meio original; na água o feixe atravessa a superfície e muda de velocidade. O registro é feito com diagramas simples, sem equipamento de medição de ângulos.",
+      "stem": "Quais fenômenos explicam, respectivamente, os dois experimentos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Reflexão no espelho e refração na interface ar–água.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Espelho provoca reflexão; aparente desvio da haste tem origem na refração. Trocar os fenômenos confunde retorno com passagem entre meios."
+        },
+        {
+          "id": "B",
+          "content": "Refração no espelho e reflexão na superfície da água.",
+          "correct": false,
+          "targetsError": "fenômenos trocados",
+          "rationale": "O espelho devolve luz; a água a transmite com mudança de meio."
+        },
+        {
+          "id": "C",
+          "content": "Dispersão no espelho e polarização no copo com água.",
+          "correct": false,
+          "targetsError": "fenômenos inventados",
+          "rationale": "O experimento não relata separação de cores nem polarização."
+        },
+        {
+          "id": "D",
+          "content": "Absorção da luz nos dois experimentos.",
+          "correct": false,
+          "targetsError": "absorção geral",
+          "rationale": "Os efeitos observados são retorno e desvio aparente."
+        },
+        {
+          "id": "E",
+          "content": "Difração no espelho e interferência na água.",
+          "correct": false,
+          "targetsError": "processos sem evidência",
+          "rationale": "Não foram descritas aberturas nem superposição de ondas."
+        }
+      ],
+      "explanation": "Espelho provoca reflexão; aparente desvio da haste tem origem na refração. Trocar os fenômenos confunde retorno com passagem entre meios."
+    },
+    {
+      "id": "CIE-41-Q07",
+      "difficulty": "ifsc",
+      "conceptIds": [
+        "CIE-41-C03"
+      ],
+      "stimulus": "Uma equipe usa um prisma para observar faixas de cores projetadas de luz branca. No relatório, separa o que o olho vê das outras radiações eletromagnéticas que usam comprimentos de onda fora da faixa visível. Um aluno afirma que ultravioleta é o último tom visível do arco-íris; outro explica que essa radiação fica além do violeta e não é percebida como cor a olho nu. A professora pede associar dispersão do prisma à composição da luz incidente.",
+      "stem": "Qual conclusão é sustentada pelo experimento?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O ultravioleta é uma faixa visível depois do violeta.",
+          "correct": false,
+          "targetsError": "UV como cor",
+          "rationale": "Ultravioleta está fora da percepção visual humana."
+        },
+        {
+          "id": "B",
+          "content": "O prisma cria frequências novas a partir de luz monocromática.",
+          "correct": false,
+          "targetsError": "criação de cor",
+          "rationale": "A luz branca contém componentes espectrais antes da dispersão."
+        },
+        {
+          "id": "C",
+          "content": "A luz branca contém componentes visíveis que o prisma dispersa.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: O prisma separa componentes espectrais da luz branca. O ultravioleta não aparece como uma cor visível extra."
+        },
+        {
+          "id": "D",
+          "content": "O feixe é refletido pelo prisma, sem atravessá-lo.",
+          "correct": false,
+          "targetsError": "monocromia por branco",
+          "rationale": "Verde não equivale à mistura completa de luz branca."
+        },
+        {
+          "id": "E",
+          "content": "O feixe é refletido pelo prisma, sem atravessá-lo.",
+          "correct": false,
+          "targetsError": "passagem negada",
+          "rationale": "A luz atravessa e refrata/dispersa no prisma."
+        }
+      ],
+      "explanation": "O prisma separa componentes espectrais da luz branca. O ultravioleta não aparece como uma cor visível extra."
+    },
+    {
+      "id": "CIE-41-Q08",
+      "difficulty": "ifsc",
+      "conceptIds": [
+        "CIE-41-C04"
+      ],
+      "stimulus": "Um aluno observa uma luz atravessar perpendicularmente a superfície plana de um recipiente transparente com água. A direção do feixe, desenhada em relação à normal, parece permanecer a mesma. Ele conclui que não ocorreu refração porque não viu desvio de direção. Outra estudante lembra que a luz muda de velocidade ao passar do ar para a água, ainda que a direção não se incline nessa incidência. A turma compara a descrição com outro caso em que o feixe entra obliquamente.",
+      "stem": "Qual avaliação é fisicamente correta para a incidência perpendicular?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A velocidade da luz permanece igual porque o raio segue reto.",
+          "correct": false,
+          "targetsError": "direção por velocidade",
+          "rationale": "Mudança de meio altera velocidade óptica, mesmo sem curvatura."
+        },
+        {
+          "id": "B",
+          "content": "A luz precisa de som para se propagar dentro da água.",
+          "correct": false,
+          "targetsError": "mecanismo trocado",
+          "rationale": "A luz continua eletromagnética na água."
+        },
+        {
+          "id": "C",
+          "content": "A luz deixa de ter frequência ao alcançar a água.",
+          "correct": false,
+          "targetsError": "frequência perdida",
+          "rationale": "A frequência da onda permanece definida."
+        },
+        {
+          "id": "D",
+          "content": "O feixe refletido é o mesmo que atravessa a água.",
+          "correct": false,
+          "targetsError": "reflexão por transmissão",
+          "rationale": "O feixe transmitido não é o feixe que retorna."
+        },
+        {
+          "id": "E",
+          "content": "A velocidade pode mudar sem desvio da direção do raio.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Refração envolve mudança de velocidade ao mudar de meio; em incidência normal não há desvio angular. O erro tentador é equiparar refração a curvatura visível."
+        }
+      ],
+      "explanation": "Refração envolve mudança de velocidade ao mudar de meio; em incidência normal não há desvio angular. O erro tentador é equiparar refração a curvatura visível."
+    }
+  ],
+  "exitTicketQuestionIds": [
+    "CIE-41-Q05",
+    "CIE-41-Q07"
+  ],
+  "sources": [
+    {
+      "title": "Base Nacional Comum Curricular",
+      "author": "Ministério da Educação",
+      "url": "https://basenacionalcomum.mec.gov.br/",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    },
+    {
+      "title": "Wave Behaviors",
+      "author": "NASA Science",
+      "url": "https://science.nasa.gov/ems/03_behaviors/",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    },
+    {
+      "title": "Chapter 6: Electromagnetics",
+      "author": "NASA Science",
+      "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter6-2/",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    }
+  ]
+}

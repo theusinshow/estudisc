@@ -1,0 +1,524 @@
+{
+  "lessonId": "MAT-20",
+  "title": "Semelhança de triângulos e Teorema de Tales",
+  "subject": "MAT",
+  "estimatedMinutes": 40,
+  "editalItem": "MATEMÁTICA — item 3. Geometria: “Unidades de Medida: comprimento, área, perímetro, volume, capacidade e tempo; Geometria: ângulos, áreas e perímetros das figuras planas; Volume dos sólidos: cubo, paralelepípedo, cilindro. Relações métricas no triângulo retângulo.” Semelhança e Teorema de Tales não são nomeados expressamente e entram como aprofundamento correlato.",
+  "objectives": [
+    "Determinar razão de semelhança.",
+    "Aplicar os critérios AA, LAL e LLL.",
+    "Resolver proporções de Tales.",
+    "Estimar alturas a partir de sombras."
+  ],
+  "concepts": [
+    {
+      "id": "MAT-20-C01",
+      "title": "Semelhança e razão de escala",
+      "summary": "Triângulos semelhantes têm ângulos correspondentes iguais e lados correspondentes proporcionais."
+    },
+    {
+      "id": "MAT-20-C02",
+      "title": "Critérios AA, LAL e LLL",
+      "summary": "O critério AA garante semelhança quando dois ângulos correspondentes de dois triângulos são iguais; o terceiro acompanha porque a soma interna vale 180°."
+    },
+    {
+      "id": "MAT-20-C03",
+      "title": "Teorema de Tales",
+      "summary": "Quando um feixe de retas paralelas é cortado por duas transversais, os segmentos correspondentes determinados pelas paralelas são proporcionais."
+    },
+    {
+      "id": "MAT-20-C04",
+      "title": "Sombras, alturas e limites da medição",
+      "summary": "Sombras permitem estimar alturas usando triângulos semelhantes em condições controladas: objeto vertical, chão aproximadamente plano, medidas simultâneas e raios solares praticamente paralelos para objetos próximos."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "MAT-20-B01",
+      "type": "note",
+      "title": "Por que isso importa?",
+      "content": "Em uma feira de ciências em Tubarão, estudantes querem descobrir a altura aproximada de uma árvore do pátio sem subir nela. Medem a sombra da árvore e a sombra de uma haste vertical no mesmo instante. A ideia parece simples: usar proporções. Mas isso só funciona quando os raios de sol podem ser tratados como paralelos e quando as duas hastes estão perpendiculares ao chão plano. Um colega propõe somar sombras e alturas; outro sugere comparar razões de comprimentos correspondentes. Qual procedimento pode transformar medidas acessíveis em uma altura confiável?",
+      "conceptIds": [
+        "MAT-20-C01"
+      ]
+    },
+    {
+      "id": "MAT-20-B02",
+      "type": "concept",
+      "title": "Semelhança e razão de escala",
+      "content": "Triângulos semelhantes têm ângulos correspondentes iguais e lados correspondentes proporcionais. A razão de semelhança k é a medida de um lado de um triângulo dividida pela medida do lado correspondente no outro, usando a mesma unidade. Se k = 2, todos os comprimentos correspondentes são duplicados; perímetros também duplicam, mas áreas ficam quatro vezes maiores. Semelhança não é igualdade de tamanho: figuras semelhantes podem ter dimensões diferentes. A correspondência entre vértices é decisiva; comparar lados que não ocupam posições equivalentes gera contas erradas.\n\nExemplo: Um triângulo tem lados 3, 4 e 5 cm; outro, 6, 8 e 10 cm. As três razões são 2, portanto eles são semelhantes com k = 2 do menor para o maior.\n\nContraexemplo: Os triângulos 3-4-5 e 6-7-10 não são semelhantes; as três razões não coincidem, embora dois lados pareçam próximos.\n\nErro a evitar: Não some lados para decidir semelhança: compare razões de lados correspondentes.",
+      "conceptIds": [
+        "MAT-20-C01"
+      ]
+    },
+    {
+      "id": "MAT-20-B03",
+      "type": "concept",
+      "title": "Critérios AA, LAL e LLL",
+      "content": "O critério AA garante semelhança quando dois ângulos correspondentes de dois triângulos são iguais; o terceiro acompanha porque a soma interna vale 180°. No critério LAL, dois pares de lados são proporcionais e o ângulo entre eles é igual. Em LLL, as razões dos três pares de lados correspondentes são iguais. Esses critérios permitem demonstrar semelhança sem conhecer todas as medidas. Para usar LAL corretamente, o ângulo igual tem de estar entre os dois lados comparados. Não confunda os critérios de semelhança com os de congruência: congruência exige também igualdade de tamanho.\n\nExemplo: Se um triângulo tem ângulos 42° e 73° e outro tem 42° e 73°, eles são semelhantes por AA, ainda que um seja maior.\n\nContraexemplo: Ter somente um ângulo igual e dois lados quaisquer não basta para concluir semelhança: a posição do ângulo importa em LAL.\n\nErro a evitar: Não use qualquer par de lados em LAL; eles devem cercar o ângulo correspondente.",
+      "conceptIds": [
+        "MAT-20-C02"
+      ]
+    },
+    {
+      "id": "MAT-20-B04",
+      "type": "concept",
+      "title": "Teorema de Tales",
+      "content": "Quando um feixe de retas paralelas é cortado por duas transversais, os segmentos correspondentes determinados pelas paralelas são proporcionais. É o Teorema de Tales. Em um triângulo, uma reta paralela a um dos lados pode formar um triângulo menor semelhante ao original, o que explica as proporções. A comparação deve manter a ordem e a correspondência: segmento superior com superior, inferior com inferior ou parte com todo, sem misturar relações. Multiplicar em cruz é apenas um procedimento algébrico; a justificativa vem da geometria.\n\nExemplo: Se segmentos sucessivos de uma transversal medem 4 cm e 6 cm, e os correspondentes na outra medem 10 cm e x, a relação 4/6 = 10/x dá x = 15 cm.\n\nContraexemplo: Se a reta intermediária não é paralela às outras, a divisão proporcional não está garantida, mesmo que as linhas pareçam quase paralelas.\n\nErro a evitar: Não misture parte com todo de um lado e parte com parte do outro; conserve a mesma correspondência.",
+      "conceptIds": [
+        "MAT-20-C03"
+      ]
+    },
+    {
+      "id": "MAT-20-B05",
+      "type": "concept",
+      "title": "Sombras, alturas e limites da medição",
+      "content": "Sombras permitem estimar alturas usando triângulos semelhantes em condições controladas: objeto vertical, chão aproximadamente plano, medidas simultâneas e raios solares praticamente paralelos para objetos próximos. A razão altura/sombra da haste deve coincidir com altura/sombra da árvore. Uma sombra medida em horário diferente muda o ângulo do sol e invalida a comparação direta. Também é importante medir desde a base até a ponta real da sombra, usando unidades iguais. Estimativa não é medição exata: irregularidade do terreno e copa da árvore podem aumentar a incerteza.\n\nExemplo: Uma haste de 1,5 m produz sombra de 2 m, enquanto uma árvore produz 8 m. A altura estimada é 1,5 × 8 ÷ 2 = 6 m.\n\nContraexemplo: Se uma haste for medida ao meio-dia e a árvore ao fim da tarde, as proporções não correspondem ao mesmo ângulo solar.\n\nErro a evitar: Não use sombras de horários distintos; medições simultâneas são requisito do modelo.",
+      "conceptIds": [
+        "MAT-20-C04"
+      ]
+    },
+    {
+      "id": "MAT-20-B06",
+      "type": "worked-example",
+      "title": "Estimativa da árvore",
+      "content": "Uma haste vertical de 1,2 m projeta sombra de 1,6 m; no mesmo instante, a sombra da árvore mede 6 m. Estime a altura.\n\n1. Os dois triângulos são semelhantes pelas condições de observação.\n2. Forme altura/sombra: 1,2/1,6 = H/6.\n3. Multiplique: H = 6 × 1,2 ÷ 1,6 = 4,5 m.\n4. Compare: a árvore tem sombra 3,75 vezes maior e altura 3,75 vezes maior.\n\nConferência: A razão H/6 = 0,75 coincide com 1,2/1,6 = 0,75; as unidades são metros.",
+      "conceptIds": [
+        "MAT-20-C01",
+        "MAT-20-C04"
+      ]
+    },
+    {
+      "id": "MAT-20-B07",
+      "type": "worked-example",
+      "title": "Tales em planta",
+      "content": "Três retas paralelas cruzam dois caminhos. Num caminho, os segmentos sucessivos são 5 m e 8 m. No outro, são 7,5 m e x. Ache x.\n\n1. Associe os segmentos na mesma ordem.\n2. Escreva 5/8 = 7,5/x.\n3. Multiplique em cruz: 5x = 8 × 7,5 = 60.\n4. Divida por 5: x = 12 m.\n\nConferência: As proporções 7,5/5 = 1,5 e 12/8 = 1,5 são iguais; o segundo caminho foi ampliado uniformemente.",
+      "conceptIds": [
+        "MAT-20-C02",
+        "MAT-20-C04"
+      ]
+    },
+    {
+      "id": "MAT-20-B08",
+      "type": "warning",
+      "title": "Como cai no IFSC",
+      "content": "1. Comparar lados não correspondentes, criando uma razão sem sentido geométrico.\n\n2. Acreditar que um ângulo igual garante semelhança entre triângulos.\n\n3. Aplicar Tales sem paralelismo indicado no problema.\n\n4. Medir sombra em horários diferentes e manter a mesma razão.",
+      "conceptIds": [
+        "MAT-20-C01",
+        "MAT-20-C02",
+        "MAT-20-C03",
+        "MAT-20-C04"
+      ]
+    },
+    {
+      "id": "MAT-20-B09",
+      "type": "summary",
+      "title": "Ideias essenciais",
+      "content": "Semelhança preserva ângulos e razões entre lados correspondentes. AA, LAL e LLL são critérios de semelhança. Razão de semelhança multiplica comprimentos correspondentes. Tales exige um feixe de paralelas e segmentos bem pareados. Sombras simultâneas podem estimar alturas por proporção. A unidade e as condições de medição devem ser conferidas.",
+      "conceptIds": [
+        "MAT-20-C01",
+        "MAT-20-C02",
+        "MAT-20-C03",
+        "MAT-20-C04"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "MAT-20-Q01",
+      "difficulty": "foundation",
+      "conceptIds": [
+        "MAT-20-C01"
+      ],
+      "stimulus": "Um clube de robótica de Blumenau imprime duas placas triangulares para um protótipo. A primeira tem lados de 3 cm, 4 cm e 5 cm; a segunda, 6 cm, 8 cm e 10 cm. Antes de montar, o grupo precisa decidir se uma peça reproduz a forma da outra numa escala uniforme. A comparação deve associar lado menor ao menor, intermediário ao intermediário e maior ao maior. Os recortes foram medidos com a mesma régua e não sofreram deformação.",
+      "stem": "Qual é a relação geométrica entre os dois triângulos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Triângulos congruentes, com mesma forma e tamanho.",
+          "correct": false,
+          "targetsError": "congruência indevida",
+          "rationale": "Congruência exigiria lados de mesmo comprimento."
+        },
+        {
+          "id": "B",
+          "content": "Triângulos semelhantes, com escala 3.",
+          "correct": false,
+          "targetsError": "escala por lado",
+          "rationale": "Escala é razão entre lados correspondentes."
+        },
+        {
+          "id": "C",
+          "content": "Triângulos sem semelhança entre si.",
+          "correct": false,
+          "targetsError": "semelhança como igualdade",
+          "rationale": "Semelhantes podem ter tamanhos distintos."
+        },
+        {
+          "id": "D",
+          "content": "Triângulos sem semelhança e com perímetros distintos.",
+          "correct": false,
+          "targetsError": "perímetro indevido",
+          "rationale": "Perímetros também crescem na escala e não precisam ser iguais."
+        },
+        {
+          "id": "E",
+          "content": "Triângulos semelhantes, com escala 2.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: As razões 6/3, 8/4 e 10/5 são iguais a 2. Logo há semelhança LLL, embora não congruência."
+        }
+      ],
+      "explanation": "As razões 6/3, 8/4 e 10/5 são iguais a 2. Logo há semelhança LLL, embora não congruência."
+    },
+    {
+      "id": "MAT-20-Q02",
+      "difficulty": "foundation",
+      "conceptIds": [
+        "MAT-20-C02"
+      ],
+      "stimulus": "Dois jardins triangulares têm as seguintes medidas angulares: jardim A, 41°, 68° e um terceiro ângulo; jardim B, 41°, 68° e seu terceiro ângulo. Uma empresa sugere que os jardins possam ter escalas diferentes, mas formato igual. O desenho é plano e os ângulos informados ocupam vértices correspondentes. O funcionário quer saber se é preciso medir os três lados ou se os dois pares de ângulos já resolvem a questão.",
+      "stem": "Qual critério sustenta a conclusão sobre os triângulos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Critério LAL, com lados proporcionais e ângulo incluído igual.",
+          "correct": false,
+          "targetsError": "critério sem dados",
+          "rationale": "O enunciado não informa comprimentos de lados."
+        },
+        {
+          "id": "B",
+          "content": "Critério LLL, com três pares de lados proporcionais.",
+          "correct": false,
+          "targetsError": "lado presumido",
+          "rationale": "Não há medidas laterais apresentadas."
+        },
+        {
+          "id": "C",
+          "content": "Critério AA, com dois pares de ângulos correspondentes iguais.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Dois ângulos correspondentes iguais garantem semelhança por AA. A congruência não segue dessa informação."
+        },
+        {
+          "id": "D",
+          "content": "Congruência, com ângulos iguais e lados de mesmo tamanho.",
+          "correct": false,
+          "targetsError": "congruência indevida",
+          "rationale": "AA garante semelhança, não igualdade de tamanhos."
+        },
+        {
+          "id": "E",
+          "content": "Semelhança, baseada em um único ângulo correspondente.",
+          "correct": false,
+          "targetsError": "um ângulo insuficiente",
+          "rationale": "A igualdade de só um ângulo não bastaria."
+        }
+      ],
+      "explanation": "Dois ângulos correspondentes iguais garantem semelhança por AA. A congruência não segue dessa informação."
+    },
+    {
+      "id": "MAT-20-Q03",
+      "difficulty": "direct",
+      "conceptIds": [
+        "MAT-20-C03"
+      ],
+      "stimulus": "Uma oficina montou uma armação triangular cortada por uma barra paralela à base. No lado esquerdo, o trecho acima da barra mede 4 cm e o trecho abaixo mede 6 cm. No lado direito, os trechos correspondentes são 10 cm e x. As duas laterais são transversais a três linhas paralelas: topo projetado, barra e base. O desenho fornece explicitamente a correspondência dos segmentos, para evitar mistura entre parte e total.",
+      "stem": "Qual valor deve ser atribuído a x?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "x = 15 cm.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: 4x = 6 × 10 = 60, então x = 15 cm. Confira 10/4 = 15/6 = 2,5."
+        },
+        {
+          "id": "B",
+          "content": "x: 16 cm.",
+          "correct": false,
+          "targetsError": "diferença constante",
+          "rationale": "Tales relaciona razões, não soma fixa entre segmentos."
+        },
+        {
+          "id": "C",
+          "content": "x = 12 cm.",
+          "correct": false,
+          "targetsError": "razão invertida",
+          "rationale": "A correspondência correta é 4:6 e 10:x."
+        },
+        {
+          "id": "D",
+          "content": "x = 20 cm.",
+          "correct": false,
+          "targetsError": "escala parcial",
+          "rationale": "O fator do lado direito é 10/4 = 2,5."
+        },
+        {
+          "id": "E",
+          "content": "x = 24 cm.",
+          "correct": false,
+          "targetsError": "produto solto",
+          "rationale": "Não há regra geométrica de produto entre segmentos sucessivos."
+        }
+      ],
+      "explanation": "4x = 6 × 10 = 60, então x = 15 cm. Confira 10/4 = 15/6 = 2,5."
+    },
+    {
+      "id": "MAT-20-Q04",
+      "difficulty": "direct",
+      "conceptIds": [
+        "MAT-20-C04"
+      ],
+      "stimulus": "Uma turma de São José mediu a sombra de uma haste de 1,6 m: ela tinha 2,0 m ao meio-dia da atividade. No mesmo minuto, uma árvore próxima projetava sombra de 7,5 m no mesmo chão plano. A turma anotou que haste e tronco estavam verticais e que os raios solares podiam ser considerados paralelos. A tarefa é estimar a altura até o ponto da copa que determinou a ponta observada da sombra.",
+      "stem": "Qual altura aproximada o modelo de semelhança fornece?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Altura aproximada de 9,375 m.",
+          "correct": false,
+          "targetsError": "razão invertida",
+          "rationale": "A altura/sombra da haste vale 1,6/2 = 0,8."
+        },
+        {
+          "id": "B",
+          "content": "Altura aproximada de 6,0 m.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: H/7,5 = 1,6/2 = 0,8; H = 6 m. O erro próximo é igualar sombra à altura sem ângulo de 45°."
+        },
+        {
+          "id": "C",
+          "content": "Altura aproximada de 5,9 m.",
+          "correct": false,
+          "targetsError": "diferença indevida",
+          "rationale": "Semelhança exige multiplicação proporcional."
+        },
+        {
+          "id": "D",
+          "content": "Altura aproximada de 7,5 m.",
+          "correct": false,
+          "targetsError": "igualdade falsa",
+          "rationale": "O ângulo do Sol não foi informado como 45°."
+        },
+        {
+          "id": "E",
+          "content": "Altura aproximada de 4,8 m.",
+          "correct": false,
+          "targetsError": "fator invertido",
+          "rationale": "A árvore tem sombra maior, proporcionalmente à haste."
+        }
+      ],
+      "explanation": "H/7,5 = 1,6/2 = 0,8; H = 6 m. O erro próximo é igualar sombra à altura sem ângulo de 45°."
+    },
+    {
+      "id": "MAT-20-Q05",
+      "difficulty": "applied",
+      "conceptIds": [
+        "MAT-20-C01"
+      ],
+      "stimulus": "Para ampliar uma imagem de um escudo escolar, dois triângulos de contorno são semelhantes. O menor tem lados 4 cm, 5 cm e 6 cm; o maior foi feito com razão de semelhança k = 1,5. O grupo vai calcular o perímetro ampliado antes de comprar a fita de acabamento e também estimar a mudança de área da superfície triangular. As medidas se referem a lados correspondentes e não há corte ou perda de material no desenho.",
+      "stem": "Como variam perímetro e área nessa ampliação?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Perímetro 1,5 vez maior e área 1,5 vez maior.",
+          "correct": false,
+          "targetsError": "área linear",
+          "rationale": "Área responde ao quadrado da escala."
+        },
+        {
+          "id": "B",
+          "content": "Perímetro 2,25 vezes maior e área 1,5 vez maior.",
+          "correct": false,
+          "targetsError": "troca de potências",
+          "rationale": "Os fatores de comprimento e área foram invertidos."
+        },
+        {
+          "id": "C",
+          "content": "Perímetro igual e área 2,25 vezes maior.",
+          "correct": false,
+          "targetsError": "perímetro fixo",
+          "rationale": "Semelhança não mantém o comprimento das bordas."
+        },
+        {
+          "id": "D",
+          "content": "Perímetro 1,5 vez maior e área 2,25 vezes maior.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: Comprimentos e perímetro multiplicam por 1,5; áreas por 1,5² = 2,25. A escala linear não pode ser aplicada diretamente à área."
+        },
+        {
+          "id": "E",
+          "content": "Perímetro 3 vezes maior e área 4,5 vezes maior.",
+          "correct": false,
+          "targetsError": "soma de escalas",
+          "rationale": "O fator de ampliação é multiplicativo e uniforme."
+        }
+      ],
+      "explanation": "Comprimentos e perímetro multiplicam por 1,5; áreas por 1,5² = 2,25. A escala linear não pode ser aplicada diretamente à área."
+    },
+    {
+      "id": "MAT-20-Q06",
+      "difficulty": "applied",
+      "conceptIds": [
+        "MAT-20-C02"
+      ],
+      "stimulus": "Numa maquete para feira técnica, dois triângulos têm dois lados correspondentes de 6 cm e 9 cm no primeiro e 8 cm e 12 cm no segundo. O ângulo incluído pelos lados informados é de 50° nos dois. Um estudante duvida que a terceira medida seja necessária para decidir sobre a semelhança. A professora pede identificar o critério adequado, usando só informações declaradas e sem supor outros ângulos nem lados.",
+      "stem": "Qual conclusão é autorizada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Triângulos congruentes pelo critério LAL.",
+          "correct": false,
+          "targetsError": "congruência",
+          "rationale": "Os lados são proporcionais, mas não iguais."
+        },
+        {
+          "id": "B",
+          "content": "Semelhança que exige conhecer também o terceiro lado.",
+          "correct": false,
+          "targetsError": "critério negado",
+          "rationale": "LAL é critério válido para semelhança."
+        },
+        {
+          "id": "C",
+          "content": "Triângulos semelhantes pelo critério LAL.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: As razões 8/6 e 12/9 são ambas 4/3; o ângulo compreendido é igual. Logo aplica-se LAL para semelhança."
+        },
+        {
+          "id": "D",
+          "content": "Razão 3/2 entre lado menor e lado correspondente maior.",
+          "correct": false,
+          "targetsError": "razão trocada",
+          "rationale": "A razão do primeiro para o segundo é 8/6 = 4/3."
+        },
+        {
+          "id": "E",
+          "content": "Triângulos sem semelhança e com lados de medidas distintas.",
+          "correct": false,
+          "targetsError": "igualdade indevida",
+          "rationale": "Semelhança pede proporção, não igualdade."
+        }
+      ],
+      "explanation": "As razões 8/6 e 12/9 são ambas 4/3; o ângulo compreendido é igual. Logo aplica-se LAL para semelhança."
+    },
+    {
+      "id": "MAT-20-Q07",
+      "difficulty": "ifsc",
+      "conceptIds": [
+        "MAT-20-C03"
+      ],
+      "stimulus": "Um levantamento topográfico escolar traça três caminhos paralelos e duas ruas transversais. Na primeira rua, entre os caminhos, há segmentos de 3 m e 5 m. Na segunda rua, o primeiro segmento correspondente mede 9 m. A turma propõe um segundo segmento de 11 m porque cada passagem seria seis metros maior. Porém o mapa está em escala uniforme e as divisões seguem a mesma configuração de paralelas.",
+      "stem": "Qual é a medida do segundo segmento na outra rua?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Segundo segmento de 11 m.",
+          "correct": false,
+          "targetsError": "diferença uniforme",
+          "rationale": "Tales pede razões iguais, não acréscimos iguais."
+        },
+        {
+          "id": "B",
+          "content": "Segundo segmento de 6 m.",
+          "correct": false,
+          "targetsError": "divisão solta",
+          "rationale": "O fator é 9/3 = 3, não um quociente de 5/3 invertido."
+        },
+        {
+          "id": "C",
+          "content": "Segundo segmento de 12 m.",
+          "correct": false,
+          "targetsError": "fator parcial",
+          "rationale": "A correspondência dos segmentos exige multiplicar 5 por 3."
+        },
+        {
+          "id": "D",
+          "content": "Segundo segmento de 18 m.",
+          "correct": false,
+          "targetsError": "fator dobrado",
+          "rationale": "Somar fatores não preserva a proporção das paralelas."
+        },
+        {
+          "id": "E",
+          "content": "Segundo segmento de 15 m.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: O fator de 3 para 9 é 3; portanto 5 × 3 = 15 m. A ideia de diferença constante levaria a 11 m, que quebra a proporção."
+        }
+      ],
+      "explanation": "O fator de 3 para 9 é 3; portanto 5 × 3 = 15 m. A ideia de diferença constante levaria a 11 m, que quebra a proporção."
+    },
+    {
+      "id": "MAT-20-Q08",
+      "difficulty": "ifsc",
+      "conceptIds": [
+        "MAT-20-C04"
+      ],
+      "stimulus": "Durante uma campanha de arborização em Lages, os alunos mediram a sombra de um poste às 10h e a de uma árvore às 16h. O poste tinha 3 m de altura, sombra de 2 m, e a árvore apresentava sombra de 6 m quando medida. Um grupo calculou 9 m para a árvore por proporção. Uma estudante discordou: entre as medições, a posição aparente do Sol mudou consideravelmente. A equipe não possui o ângulo solar em nenhum dos dois horários.",
+      "stem": "Qual é a avaliação mais rigorosa para a estimativa de 9 m?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Estimativa exata de 9 m para a árvore.",
+          "correct": false,
+          "targetsError": "proporção sem hipótese",
+          "rationale": "O ângulo do Sol mudou entre as medições."
+        },
+        {
+          "id": "B",
+          "content": "Estimativa não justificada sem a mesma condição de iluminação.",
+          "correct": true,
+          "targetsError": null,
+          "rationale": "Correta: O cálculo 6 ÷ 2 × 3 é aritmeticamente correto, mas falta a semelhança geométrica porque as sombras foram medidas em horários diferentes."
+        },
+        {
+          "id": "C",
+          "content": "Altura de 9 m, dada pelo cálculo apresentado.",
+          "correct": false,
+          "targetsError": "conta como prova",
+          "rationale": "A conta não substitui a hipótese geométrica ausente."
+        },
+        {
+          "id": "D",
+          "content": "Estimativa válida após alterar o horário anotado.",
+          "correct": false,
+          "targetsError": "registro como medida",
+          "rationale": "Alterar o papel não reproduz a geometria do Sol."
+        },
+        {
+          "id": "E",
+          "content": "Altura impossível de estimar por meio de sombras.",
+          "correct": false,
+          "targetsError": "negação do método",
+          "rationale": "O método funciona em condições geométricas adequadas."
+        }
+      ],
+      "explanation": "O cálculo 6 ÷ 2 × 3 é aritmeticamente correto, mas falta a semelhança geométrica porque as sombras foram medidas em horários diferentes."
+    }
+  ],
+  "exitTicketQuestionIds": [
+    "MAT-20-Q05",
+    "MAT-20-Q07"
+  ],
+  "sources": [
+    {
+      "title": "Base Nacional Comum Curricular",
+      "author": "Ministério da Educação",
+      "url": "https://basenacionalcomum.mec.gov.br/",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    },
+    {
+      "title": "Manual do Professor, Matemática 9º ano, PNLD 2024",
+      "author": "Editora Saraiva / PNLD",
+      "url": "https://storage.googleapis.com/edocente-content-production/PNLD/PNLD_2024_OBJETO_1/Saraiva/Matematica/index_matematica_9ano_MP.pdf",
+      "accessedAt": "2026-10-16",
+      "usage": "conferência de fatos"
+    }
+  ]
+}

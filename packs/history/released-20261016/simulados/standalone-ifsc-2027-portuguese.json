@@ -1,0 +1,2981 @@
+{
+  "trackId": "ifsc-2027-portuguese",
+  "questions": [
+    {
+      "id": "SIM-POR-01-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-01-c01.v1",
+      "conceptIds": [
+        "por.por-01-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "O boletim do conselho de bairro descreve a reabertura de uma biblioteca após reforma. A equipe registrou a data, conversou com usuários e consultou o livro de empréstimos do mês. O texto informa os horários e reúne declarações de uma bibliotecária e de um morador. Não apresenta recomendação sobre orçamento, nem procura convencer o leitor a apoiar uma proposta. A publicação aparece na seção de notícias do portal comunitário.",
+      "stem": "Um portal publica um texto assinado que relata a abertura de uma biblioteca, apresenta data, entrevistas e números de empréstimos, sem recomendar uma medida. Qual característica melhor orienta a classificação do gênero?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Os números de empréstimos definem o texto como estudo acadêmico de circulação restrita.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Predomina o relato informativo, apoiado em dados e falas de pessoas envolvidas.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "As entrevistas fazem da publicação uma defesa explícita de uma proposta municipal.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A assinatura desloca o foco para a experiência pessoal de quem escreveu o texto.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A sequência de acontecimentos aproxima o texto de uma memória ficcional do bairro.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "O propósito e a circulação ajudam a reconhecer a notícia; dados e entrevistas são recursos de apuração.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-01-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-01-c01.v1",
+      "conceptIds": [
+        "por.por-01-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma associação de moradores preparou peças para discutir o uso das calçadas. A imagem central mostra um carro estacionado sobre o piso tátil; ao lado, uma frase curta convoca o público a pensar em quem circula a pé. A campanha foi impressa em cartazes e publicada nas redes da prefeitura. A frase expressa um argumento, enquanto a composição visual participa da construção da mensagem.",
+      "stem": "Uma campanha municipal apresenta a frase “A rua também é de quem anda” ao lado de desenho de uma calçada ocupada por carros. Um aluno classifica a peça apenas como texto argumentativo. Qual ajuste torna sua análise mais precisa?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A frase conduz a leitura, e a ilustração funciona como elemento secundário de ambientação.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O gênero se define pela quantidade de períodos e pela extensão do texto verbal.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Campanha designa o tema defendido, enquanto argumentação identifica o suporte impresso.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A campanha é o gênero, e a organização argumentativa combina linguagem verbal e visual.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "A imagem transforma a peça em narrativa sequencial, mesmo sem apresentar uma história.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Campanha é o gênero situado; argumentação é uma organização discursiva que pode combinar modos semióticos.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-02-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-02-c01.v1",
+      "conceptIds": [
+        "por.por-02-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "A direção de uma escola anunciou uma experiência para aproximar o espaço escolar da comunidade. Em dois fins de semana de cada mês, os moradores poderão usar a quadra, seguindo horários definidos pela equipe. Ao final de dois meses, a direção vai examinar despesas de manutenção e manifestações de usuários antes de tomar uma decisão. O aviso não informa qual será o resultado dessa avaliação.",
+      "stem": "Uma escola abriu a quadra aos moradores nos fins de semana. A medida começou como teste de dois meses e será revista após análise de custos e reclamações. Qual síntese respeita as informações do aviso?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A escola testa a abertura comunitária e avaliará os resultados antes de decidir sua continuidade.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A direção confirmou que a quadra continuará aberta e incorporará outras atividades depois do teste.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Os moradores assumirão a organização dos horários e a manutenção do espaço esportivo.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A abertura ficaria condicionada ao custeio integral pelos moradores.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A equipe encerrou a experiência após receber reclamações durante as primeiras semanas.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "O aviso apresenta uma experiência temporária sujeita a avaliação, sem antecipar a decisão.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-02-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-02-c01.v1",
+      "conceptIds": [
+        "por.por-02-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma reportagem acompanhou a instalação de bebedouros em prédios de uma instituição. No prédio A, a equipe comparou o consumo de copos descartáveis em períodos equivalentes antes e depois da mudança e encontrou uma queda de 35%. O levantamento nos outros prédios ainda não foi concluído. Por isso, a matéria descreve o dado localizado e evita atribuir a mesma variação ao conjunto da instituição.",
+      "stem": "Uma reportagem afirma: “Após a instalação de bebedouros, o consumo de copos descartáveis caiu 35% no prédio A. Nos demais prédios, ainda não há medição.” Qual interpretação é fiel ao alcance do dado?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A diferença observada indica que o prédio A já tinha menor consumo no período inicial.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A instituição observou queda semelhante nos outros prédios, segundo o levantamento.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A medição aponta queda no prédio A; os demais ainda não permitem uma conclusão.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Os prédios sem resultado devem ser considerados iguais ao prédio que foi medido.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O levantamento confirma que os copos deixaram de ser usados no prédio A.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O resultado medido é localizado; a falta de dados dos outros prédios impede generalização.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-03-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-03-c01.v1",
+      "conceptIds": [
+        "por.por-03-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "O setor de transporte de uma escola comunicou uma alteração de horário em uma linha que atende vários bairros. Em um bilhete, uma estudante relaciona a mudança ao momento em que passou a chegar antes do sinal. O verbo escolhido permite recuperar uma situação anterior, mas não identifica quem pediu a alteração nem explica por que o serviço mudou. A análise deve partir do valor aspectual dessa forma verbal.",
+      "stem": "“Desde que o ônibus mudou de horário, Ana voltou a chegar antes do sinal”, diz um bilhete. Qual informação está pressuposta pela escolha de “voltou a”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Ana já chegava antes do sinal durante o período em que estudava em outra escola.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A escola ajustou o horário do sinal em resposta aos pedidos das famílias.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A estudante participou da reunião que definiu o novo trajeto da linha.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "O ônibus passou a chegar no mesmo instante em que começam as aulas.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A estudante já tinha vivido um período em que chegava antes do sinal.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "“Voltou a” pressupõe a ocorrência anterior do comportamento, sem determinar a causa da mudança.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-03-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-03-c01.v1",
+      "conceptIds": [
+        "por.por-03-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Na narrativa de uma caminhada, a autora descreve uma manhã clara e bancos que secaram depois da chuva. Ao chegar à praça, encontra o espaço vazio e comenta que esperava ver crianças e pessoas idosas aproveitando o tempo agradável. A frase contrapõe condições que poderiam atrair frequentadores ao resultado observado. O conectivo usado sinaliza que a segunda informação contraria essa expectativa, sem explicar a ausência.",
+      "stem": "Um estudante lê: “A praça estava vazia, embora os bancos estivessem secos e o céu aberto”. O que a conjunção permite inferir sobre a expectativa do narrador?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O céu aberto tornava impossível que a praça permanecesse sem visitantes.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "As condições pareciam convidativas, mas o espaço vazio contrariou a expectativa.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "A praça costuma encher nos dias em que o tempo permanece aberto.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Os bancos tinham sido molhados novamente pouco antes da caminhada.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A falta de frequentadores foi causada pelo estado de conservação dos bancos.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "“Embora” introduz contraste entre condições favoráveis e o resultado observado, sem estabelecer sua causa.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-04-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-04-c01.v1",
+      "conceptIds": [
+        "por.por-04-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma organização de saúde criou uma peça para incentivar o uso responsável da água. No centro há o desenho de um reservatório quase vazio, visto de longe; acima dele, lê-se uma frase que trata um banho prolongado como se fosse um gesto insignificante. A campanha circula durante um período de estiagem, quando os níveis dos reservatórios preocupam a cidade. O efeito depende de interpretar conjuntamente a imagem e a formulação verbal.",
+      "stem": "Um cartaz mostra um copo quase vazio e, acima, a frase “É só mais um banho demorado”. O copo representa o reservatório da cidade. Que leitura depende da combinação entre imagem e texto?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A peça associa a falta de água ao uso de copos descartáveis nas residências.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O desenho permite estimar o volume de água gasto em um banho doméstico.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A frase transforma o banho prolongado em prática recomendada durante a estiagem.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A formulação minimiza um hábito que a imagem relaciona à redução da reserva.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "A ilustração indica que o abastecimento local comporta banhos mais demorados.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "A expressão minimizadora contrasta com o reservatório quase vazio, sugerindo crítica ao consumo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-04-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-04-c01.v1",
+      "conceptIds": [
+        "por.por-04-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma tirinha de jornal acompanha uma reunião de moradores. No primeiro quadro, a coordenadora afirma que todos poderão opinar sobre a nova praça. Nos quadros seguintes, cada participante tenta falar, mas um megafone ocupa o espaço visual e encobre os balões dos demais. O desenho não explica quem está usando o aparelho; a organização das falas e da imagem, porém, põe em dúvida a promessa inicial de participação.",
+      "stem": "Em uma tirinha original, o primeiro quadro mostra alguém dizendo “Aqui todos têm voz”; no último, um megafone cobre os balões de fala dos demais. Qual operação produz a crítica?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A oposição entre a promessa de participação e a cena de silenciamento constrói a crítica.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A sequência sugere que o grupo concluiu a reunião antes de discutir a proposta.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "O megafone identifica qual participante recebeu a tarefa de registrar as opiniões.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A disposição dos balões indica que os moradores falam em momentos diferentes.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A fala inicial sugere que os demais aceitaram o encaminhamento e aprovaram a proposta por consenso.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A ironia nasce do contraste entre a promessa verbal de participação e o silenciamento mostrado.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-05-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-05-c01.v1",
+      "conceptIds": [
+        "por.por-05-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "A equipe de uma biblioteca escolar revisou avisos que orientam estudantes durante uma evacuação. Um rascunho dizia “Não, espere a autorização” como resposta a alguém que já se preparava para sair; outro, “Não espere a autorização”, foi entendido como instrução para não aguardar. A coordenação pediu que a pontuação fosse examinada junto à estrutura do comando, pois a pausa e a negação organizam sentidos diferentes.",
+      "stem": "Compare “Não, espere a autorização” com “Não espere a autorização”. Qual análise explica a diferença de sentido?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A vírgula marca uma pausa de leitura e conserva a instrução de não aguardar.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A primeira forma é indicativa, e a segunda apresenta um verbo no subjuntivo.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Com a vírgula, a fala orienta a aguardar; sem ela, manda não esperar.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "O ponto final determina a ação e neutraliza a diferença criada pela vírgula.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "As duas formas autorizam a saída imediata porque compartilham o mesmo verbo.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "A pontuação separa a resposta negativa da instrução; sem a pausa, “não” modifica “espere”.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-05-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-05-c01.v1",
+      "conceptIds": [
+        "por.por-05-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Em um conto contemporâneo, uma personagem retorna à antiga estação depois de muitos anos. Ao reconhecer uma pessoa que acreditava distante, ela interrompe o gesto de guardar a mala e pronuncia uma pergunta curta, com pausas assinaladas por reticências. A cena não informa se a hesitação vem de surpresa, dúvida ou emoção acumulada, mas o contexto de reencontro orienta a leitura da fala.",
+      "stem": "Em um conto, uma personagem escreve “Você... voltou?” ao reconhecer alguém inesperado. Por que as reticências são relevantes?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Indicam uma pausa expressiva que prepara uma pergunta marcada por espanto.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Sinalizam que o editor retirou um trecho mais longo da fala da personagem.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Apresentam “voltou” como forma nominal sem conexão com um sujeito.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Mostram que a personagem perdeu a lembrança da palavra que pretendia usar.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Ajudam a representar hesitação e surpresa diante do reencontro inesperado.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "No contexto de reconhecimento inesperado, as reticências podem marcar hesitação e construir a surpresa.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-06-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-06-c01.v1",
+      "conceptIds": [
+        "por.por-06-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma turma compara o registro escrito e a realização sonora de palavras comuns. Em “chave”, as letras iniciais “ch” formam um dígrafo; em “casa” e “cena”, a letra “c” representa sons distintos conforme a vogal seguinte. Os exemplos mostram por que a escrita não pode ser convertida em uma sequência de sons pela simples contagem de letras. A análise deve considerar unidades e contexto.",
+      "stem": "Em “chave”, duas letras iniciais representam um único fonema; em “casa” e “cena”, a mesma letra inicial não tem o mesmo som. O que o conjunto evidencia?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A letra costuma corresponder a um som próprio na escrita do português.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A relação entre letras e sons varia conforme a combinação e o contexto lexical.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "Os dígrafos representam sons ligados, mas distinguíveis em algumas pronúncias.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Palavras iniciadas pela mesma letra compartilham o mesmo som inicial.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A quantidade de fonemas pode ser estimada pela contagem de letras pronunciadas.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "Dígrafos e valores contextuais mostram que a correspondência entre grafemas e fonemas não é de um para um.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-06-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-06-c01.v1",
+      "conceptIds": [
+        "por.por-06-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Na aula de fonologia, a professora apresenta pares de palavras que diferem por um único som. Ao trocar o som inicial de “faca” pelo de “vaca”, a palavra muda; a divisão em duas sílabas, por outro lado, permanece igual. O grupo precisa escolher um procedimento que identifique a diferença responsável pela mudança de significado, distinguindo a análise sonora da contagem silábica ou da observação da grafia.",
+      "stem": "Um estudante afirma que “faca” e “vaca” têm o mesmo início porque ambas possuem duas sílabas. Qual procedimento contesta a afirmação?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Usar o significado para decidir quais letras aparecem no início das palavras.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Contar as sílabas e tratar palavras com a mesma divisão como iguais.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Examinar a letra final para identificar a oposição sonora que inicia o par.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Comparar os sons iniciais, cuja substituição distingue uma palavra da outra.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Consultar o acento gráfico para determinar se a consoante é pronunciada.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "O par mínimo mostra que os sons iniciais /f/ e /v/ distinguem palavras, independentemente do número de sílabas.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-07-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-07-c01.v1",
+      "conceptIds": [
+        "por.por-07-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Um mural da escola traz exemplos em que uma mesma forma pode ocupar funções diferentes. A equipe escolheu a palavra “jantar” porque aparece como assunto de uma conversa em uma frase e como ação planejada em outra. Os alunos devem observar os termos que acompanham cada ocorrência e a função que a palavra exerce na construção, em vez de classificar pelo significado isolado ou pela aparência gráfica.",
+      "stem": "Compare “O jantar atrasou” e “Vamos jantar depois”. O que explica a classificação diferente de “jantar”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A função gramatical de “jantar” depende da estrutura em que a palavra aparece.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A palavra funciona como verbo nas duas frases porque pode nomear uma ação.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A grafia idêntica favorece a classificação de “jantar” como substantivo nas duas frases.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A palavra nomeia uma refeição nas duas frases, sem mudança de função.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O artigo transforma “jantar” em forma verbal e altera seu tempo.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Na primeira frase “jantar” é substantivo; na segunda, integra uma locução verbal no infinitivo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-07-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-07-c01.v1",
+      "conceptIds": [
+        "por.por-07-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Durante a revisão de uma notícia escolar, uma editora percebeu que o segundo período repete o nome de um equipamento já mencionado. Para melhorar a fluidez, a equipe substituiu o substantivo por um pronome e conferiu se a concordância deixava claro o referente. A análise considera a relação entre os períodos e os antecedentes possíveis, pois um pronome pode retomar um termo anterior sem repetir sua forma completa.",
+      "stem": "No trecho “A equipe testou o sistema, mas ele falhou durante a demonstração”, que relação “ele” estabelece?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Apresenta uma pessoa que passa a participar da demonstração do sistema.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Conecta as orações com valor adversativo, sem apontar um referente anterior.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Retoma “sistema” e evita repetir o substantivo no período seguinte.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Antecipa “demonstração”, que passa a ser explicada depois do pronome.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Retoma “equipe”, por ser o primeiro nome mencionado na frase.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O pronome masculino singular retoma “sistema”, mantendo a continuidade referencial.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-08-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-08-c01.v1",
+      "conceptIds": [
+        "por.por-08-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma campanha estudantil orienta a publicação de fotografias feitas em atividades coletivas. O texto recomenda verificar se as pessoas retratadas concordam com a divulgação, antes de postar a imagem. A equipe escolheu uma forma verbal que fala diretamente com o leitor, mas não pretende ameaçá-lo nem relatar uma ação já concluída. O contexto e a posição da frase no aviso ajudam a reconhecer o valor dessa forma.",
+      "stem": "Um comunicado orienta: “Antes de publicar a foto, confira se todos concordam com a divulgação”. Como se interpreta “confira”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Forma do subjuntivo que descreve a impossibilidade de obter autorização.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Nome de uma etapa do procedimento, sem dirigir uma ação ao leitor.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Forma passada que relata uma conferência feita pela equipe da campanha.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Forma indicativa que apresenta como concluída uma verificação anterior.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Imperativo usado como orientação preventiva dirigida ao leitor do aviso.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "“Confira” atua como imperativo de orientação, funcionando como conselho antes de publicar.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-08-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-08-c01.v1",
+      "conceptIds": [
+        "por.por-08-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "A coordenação de uma escola publicou um aviso sobre o uso do pátio em dias de chuva. A decisão depende da melhora do tempo, e a mensagem informa que os estudantes poderão ocupar o espaço se essa condição se realizar. O enunciado combina uma oração que expressa possibilidade com outra que anuncia uma consequência futura. Para interpretar a relação, é preciso considerar a dependência entre as duas ações.",
+      "stem": "“Se a chuva diminuir, os alunos poderão usar o pátio.” Qual relação os verbos constroem?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A primeira oração apresenta uma informação sem vínculo com a atividade anunciada.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O subjuntivo formula a condição, e o futuro apresenta a ação dependente dela.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "O futuro transmite uma ordem, e o subjuntivo indica sujeito desconhecido.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "O subjuntivo relata chuva encerrada, seguida por uma ação no passado.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Os dois verbos registram situações simultâneas que já foram confirmadas.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A oração com “se” apresenta condição possível; a ação futura depende de sua realização.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-09-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-09-c01.v1",
+      "conceptIds": [
+        "por.por-09-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em uma nota sobre a feira de ciências, a equipe informa que os relatórios chegaram no começo do expediente. A frase foi organizada para destacar o momento em que os documentos foram recebidos, deixando o termo que funciona como sujeito para depois do verbo. Na revisão, um estudante suspeitou que a posição inicial do verbo alterava a identificação do sujeito; a análise deve verificar concordância e função sintática.",
+      "stem": "Em “Chegaram cedo os relatórios da equipe”, qual é o sujeito do verbo “chegaram”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Não há sujeito expresso, pois o verbo aparece antes dos demais termos.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "“Cedo” funciona como sujeito por estar próximo da forma verbal.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "“Da equipe” indica quem executou o deslocamento dos documentos.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "“Os relatórios da equipe” é sujeito posposto de “chegaram”.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "“A equipe” é sujeito porque designa pessoas envolvidas no relato.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "O núcleo plural “relatórios” concorda com “chegaram”; o sujeito pode vir depois do verbo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-09-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-09-c01.v1",
+      "conceptIds": [
+        "por.por-09-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma comissão organizadora publicou duas versões de uma nota sobre uma feira comunitária. Em uma delas, o lugar é apresentado logo no início para orientar o leitor; na outra, a frase começa pelas pessoas que fizeram o evento. As duas versões descrevem a mesma atividade e os mesmos participantes. A equipe quer saber se a mudança de ordem dos termos alterou as relações sintáticas ou apenas o destaque dado à informação espacial.",
+      "stem": "Compare “Na praça, os jovens organizaram a feira” e “Os jovens organizaram a feira na praça”. O que se preserva?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "As funções centrais permanecem, com maior destaque para o local na primeira versão.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "“Os jovens” passa de sujeito a complemento quando a frase é reorganizada.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "O verbo perde seu objeto direto quando o adjunto é deslocado ao início.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "“O local” assume a função de sujeito por ocupar a primeira posição da frase.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A forma verbal muda do passado para o presente com a mudança de ordem.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A antecipação do adjunto altera o foco informativo, sem mudar sujeito e objeto.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-10-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-10-c01.v1",
+      "conceptIds": [
+        "por.por-10-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "A secretaria escolar preparou um aviso sobre uma relação de obras indicadas pelos professores. Na revisão, o grupo discutiu se o verbo deveria concordar com o nome plural mais próximo ou com o núcleo do sujeito, que é singular. Também verificaram a flexão do predicativo, pois ele deve acompanhar o núcleo pertinente nessa construção. A frase final informa aos estudantes onde consultar a lista e seu estado.",
+      "stem": "“A lista dos livros indicados ______ na secretaria.” Qual preenchimento atende à concordância padrão?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "“Estão disponíveis”, por concordar com o termo plural mais próximo do verbo.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "“Está disponíveis”, porque a lista inclui títulos de mais de um autor.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "“Está disponível”, pois “lista” é o núcleo singular do sujeito.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "“Estiveram disponível”, já que os livros foram indicados antes do aviso.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "“Estão disponível”, por concordar o verbo com “livros” e o predicativo com “lista”.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O núcleo singular “lista” controla a concordância do verbo e do predicativo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-10-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-10-c01.v1",
+      "conceptIds": [
+        "por.por-10-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "A secretaria de cultura anunciou uma apresentação pública do regulamento revisado. O sujeito da frase reúne uma pessoa responsável pela direção e várias professoras, ligadas pela conjunção “e”. O anúncio informa que a apresentação ocorrerá no dia seguinte à reunião da comissão. Como o sujeito composto está antes do verbo, a redação segue a concordância padrão, mantendo a flexão verbal compatível com os dois núcleos.",
+      "stem": "“O diretor e as professoras ______ o regulamento revisado.” Qual forma é adequada ao sujeito composto anteposto?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "“apresentava”, no singular, porque o complemento aparece no masculino.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "“apresentarão”, com flexão plural adequada ao sujeito composto.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "“apresentou”, concordando com o primeiro núcleo da expressão.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "“apresentariam”, pois o evento depende da presença de convidados.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "“apresentou-se”, forma que indica a participação conjunta dos núcleos.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Os dois núcleos do sujeito anteposto formam uma expressão plural e pedem verbo plural.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-11-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-11-c01.v1",
+      "conceptIds": [
+        "por.por-11-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma reportagem sobre uma sessão pública relata dois acontecimentos da mesma comissão. Primeiro, os integrantes acompanharam um debate sobre o orçamento; depois, ajudaram uma estudante que se feriu durante a atividade. Na edição, a equipe precisa escolher as preposições e os complementos de acordo com o sentido de cada ocorrência do verbo “assistir”. A frase reúne os dois usos para que o leitor compare sua regência.",
+      "stem": "Um relatório registra “A comissão assistiu ___ debate e depois assistiu ___ estudante ferido”. Qual opção segue a regência padrão nos sentidos de presenciar e prestar assistência?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "“ao; ao”, já que o verbo seleciona a mesma preposição nos dois sentidos.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "“ao; o”, pois presenciar e prestar auxílio admitem complementos distintos.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "“o; ao”, com objeto direto para acompanhar e indireto para ajudar.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "“a; a”, mantendo a mesma construção verbal em ambas as situações.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "“do; o”, porque “assistir” se liga ao debate e à estudante por posse.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "No sentido de presenciar, usa-se “assistir a”; no sentido de prestar auxílio, o verbo é transitivo direto.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-11-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-11-c01.v1",
+      "conceptIds": [
+        "por.por-11-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Um setor de atendimento instalou uma placa que orienta visitantes a entrar na biblioteca pela porta lateral. A equipe revisou a expressão nominal “acesso à biblioteca” e discutiu por que aparece o acento grave diante do nome feminino. A explicação envolve a regência do substantivo “acesso” e a presença do artigo que determina “biblioteca”. A placa é um exemplo de crase resultante da junção de dois elementos.",
+      "stem": "Na norma-padrão, a placa “Acesso ___ biblioteca pela lateral” deve receber “à”. Qual justificativa está correta?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O sinal marca encontro de vogais dentro da palavra “biblioteca”.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A presença de um nome feminino basta para justificar o acento grave.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A preposição pedida por “acesso” é “de”, fundida ao artigo feminino.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A regência de “acesso” pede “a”, que se combina ao artigo “a”.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "O acento é opcional porque a expressão não inclui um verbo.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "O substantivo rege a preposição “a”, que se funde com o artigo feminino de “biblioteca”.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-12-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-12-c01.v1",
+      "conceptIds": [
+        "por.por-12-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Um boletim municipal conta que a equipe responsável concluiu uma reforma no mês de maio. Na frase seguinte, o texto coloca a obra no início e não identifica diretamente quem executou o serviço. O acontecimento e a referência temporal permanecem, mas a organização da informação muda. O leitor deve observar o foco da construção passiva e o papel do agente, sem deduzir responsabilidades ou mudanças de tempo que o texto não apresenta.",
+      "stem": "Uma notícia registra “A equipe concluiu a reforma em maio” e depois “A reforma foi concluída em maio”. Qual efeito da mudança de voz é mais relevante?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A reforma passa ao foco da frase, e o agente não precisa ser mencionado.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A forma passiva atribui o serviço a uma equipe diferente da original.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A ação deixa de estar no passado e passa a indicar uma obra planejada.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A conclusão da reforma se perde porque a passiva descreve inatividade.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A informação vira hipótese sobre uma obra que poderá acontecer depois de nova etapa administrativa.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A passiva destaca o paciente e permite omitir o agente, sem alterar o evento ou seu tempo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-12-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-12-c01.v1",
+      "conceptIds": [
+        "por.por-12-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma equipe de pesquisa publicou um resumo dos procedimentos realizados durante um estudo de campo. Na frase ativa, os pesquisadores aparecem como agentes e as amostras como aquilo que foi analisado. A comissão editorial propôs passar a frase para a voz passiva sem alterar quem realizou a análise nem quando o trabalho ocorreu. Para conferir a transformação, é necessário preservar participantes, tempo verbal e relação entre ação e paciente.",
+      "stem": "Qual transformação preserva a informação de “Os pesquisadores analisaram as amostras”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "As amostras analisarão os pesquisadores antes da próxima etapa.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "As amostras serão analisadas pelos pesquisadores na próxima etapa.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "As amostras foram analisadas pelos pesquisadores durante o estudo.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Os pesquisadores foram analisados pelas amostras ao fim do trabalho.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "As amostras são analisadas pelos pesquisadores durante as etapas do estudo.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "A forma passiva mantém os participantes e o passado, com as amostras como sujeito paciente.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-13-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-13-c01.v1",
+      "conceptIds": [
+        "por.por-13-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "O departamento de trânsito instalou ciclovias em algumas avenidas de um bairro. Meses depois, uma equipe divulgou que o número de acidentes ainda não havia caído, embora a obra tenha melhorado as condições de deslocamento para ciclistas. A notícia não afirma que as novas vias causaram acidentes nem apresenta uma explicação completa para o resultado. O conectivo ajuda a relacionar a mudança realizada e a expectativa sobre seus efeitos.",
+      "stem": "“O bairro ganhou ciclovias, mas o número de acidentes ainda não caiu.” Qual sentido é estabelecido por “mas”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A ausência de acidentes explica por que o município construiu as novas vias.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A demora da obra provocou a queda esperada no número de ocorrências.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A infraestrutura implantada convive com um resultado que ainda não apareceu.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A construção teve como objetivo encerrar o problema de segurança no bairro.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A medida adotada ainda não veio acompanhada da redução esperada.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "“Mas” marca oposição entre a melhoria implementada e o resultado que ainda não foi observado.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-13-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-13-c01.v1",
+      "conceptIds": [
+        "por.por-13-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Um grupo de técnicos repetiu a medição de uma amostra em três rodadas, seguindo o mesmo procedimento. As leituras ficaram próximas entre si, mas uma falha no equipamento de referência impediu a confirmação do valor final. O relatório, por isso, não apresenta uma conclusão definitiva. A equipe compara conectivos para verificar se expressam consequência ou uma expectativa que não se concretizou, mantendo a forma verbal compatível com a oração subordinada.",
+      "stem": "“Embora a equipe tenha repetido a medição três vezes, o resultado continua inconclusivo.” Que relação expressa “embora” nesse período?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Uma conclusão que decorre diretamente da repetição do procedimento técnico.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Uma concessão: a repetição ocorreu, mas não garantiu conclusão segura.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "Uma condição que precisa ocorrer antes da análise dos resultados.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Uma explicação que apresenta a causa da falha no equipamento de referência.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Uma consequência que confirma a validade das leituras já obtidas.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "“Embora” introduz concessão: a repetição é reconhecida, mas o resultado permanece inconclusivo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-14-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-14-c01.v1",
+      "conceptIds": [
+        "por.por-14-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "A equipe de pesquisa acompanhou o desenvolvimento de uma solução para reaproveitar água da chuva. Em uma nota de acompanhamento, a autora afirma que o trabalho teve avanços, apesar de alguns obstáculos técnicos. Nesse contexto, o verbo não descreve o movimento físico dos pesquisadores de um lugar para outro, nem afirma que a pesquisa terminou. A substituição adequada deve manter a ideia de progresso do projeto, preservando o sentido figurado selecionado pelo contexto.",
+      "stem": "Em uma reportagem lê-se “A equipe avançou na pesquisa, apesar de obstáculos”. Qual substituição preserva melhor o sentido de “avançou”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "“aproximou-se”, indicando que o grupo reduziu a distância até o local.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "“insistiu”, destacando persistência sem afirmar que houve progresso.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "“deslocou-se”, descrevendo a mudança física de lugar da equipe.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "“progrediu”, indicando desenvolvimento do trabalho realizado.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "“antecipou-se”, afirmando que o projeto terminou antes do prazo.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "O contexto seleciona “avançar” no sentido de progredir no desenvolvimento da pesquisa.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-14-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-14-c01.v1",
+      "conceptIds": [
+        "por.por-14-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Ao revisar um relatório, uma professora encontrou a expressão “falha grave” na avaliação de um procedimento. Ela sugeriu trocar o adjetivo por “pequena” para tornar a descrição proporcional ao problema observado. A alteração conserva o substantivo e a estrutura sintática, mas modifica a escala de avaliação atribuída à falha. A turma deve identificar que dimensão semântica muda com a substituição, sem inferir alterações na ação ou nos participantes.",
+      "stem": "Em “A professora destacou uma falha grave no relatório”, a troca por “pequena falha” alteraria principalmente qual aspecto?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A intensidade da avaliação atribuída ao problema identificado.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A referência de “professora”, que passa a indicar o relatório lido.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A transitividade de “destacar”, que deixa de admitir complemento.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A classe gramatical de “falha”, que passa a funcionar como verbo.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O tempo da ação, que deixa de se referir a uma situação passada.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A troca de “grave” por “pequena” reduz a intensidade da avaliação, sem mudar a estrutura.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-15-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-15-c01.v1",
+      "conceptIds": [
+        "por.por-15-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma equipe de comunicação descreve uma fotografia feita durante uma inspeção aérea. A frase informa que alguém fotografou um técnico usando um drone, mas não esclarece se o aparelho serviu para produzir a imagem ou se estava junto do profissional retratado. Como a expressão “com o drone” pode se ligar a constituintes diferentes, o leitor encontra duas interpretações sintáticas. A ambiguidade não depende do gênero dos nomes nem do tempo verbal.",
+      "stem": "“O supervisor fotografou o técnico com o drone.” O texto admite duas leituras. Onde está a ambiguidade?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Se “supervisor” identifica a pessoa que pilotou o equipamento usado.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Se “fotografou” descreve uma ação ou nomeia uma atividade profissional.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Se o drone era instrumento de quem fotografou ou estava com o técnico.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Se “técnico” se refere a um profissional ou a um grupo de especialistas.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Se a fotografia foi feita no presente ou durante uma inspeção passada.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O adjunto “com o drone” pode modificar a ação de fotografar ou caracterizar o técnico.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-15-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-15-c01.v1",
+      "conceptIds": [
+        "por.por-15-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "A comissão de uma mostra tecnológica divulgou os requisitos para selecionar participantes. O edital inicial mencionava experiência em robótica e programação avançada, mas não deixava evidente se o adjetivo se aplicava somente à programação ou às duas áreas. Como a experiência em cada área será avaliada separadamente, a redação precisa repetir o núcleo que define o requisito e preservar o sentido pretendido, sem alterar o nível de exigência.",
+      "stem": "Qual reescrita deixa explícita a exigência de experiência nas duas áreas, com nível avançado em programação?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Serão selecionados estudantes avançados com experiência em robótica e programação.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Serão selecionados estudantes com experiência em robótica ou programação avançada.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Serão selecionados estudantes com experiência avançada em robótica e programação.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Serão selecionados estudantes com experiência em robótica e experiência em programação avançada.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Serão selecionados estudantes com experiência avançada em robótica ou programação.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A repetição de “experiência” deixa claro que ela é exigida nas duas áreas; “avançada” qualifica a programação.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-16-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-16-c01.v1",
+      "conceptIds": [
+        "por.por-16-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma pessoa relata que esperou três horas para ser atendida em um posto. Ao sair, comenta com um colega que o serviço foi “rapidíssimo, como sempre”. O interlocutor conhece o tempo de espera e percebe que a avaliação positiva não corresponde ao ocorrido. A interpretação depende da discrepância entre a duração relatada e o adjetivo empregado, bem como da recorrência sugerida pela expressão final.",
+      "stem": "Após três horas na fila, alguém comenta: “Foi rapidíssimo, como sempre”. Qual análise melhor explica o efeito da fala?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A pessoa procura amenizar o tempo de espera e evita avaliar o atendimento.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O elogio aparente contrasta com a demora e comunica crítica irônica.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "O superlativo mede com precisão o tempo efetivo do atendimento.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A fala apresenta uma descrição neutra de um serviço já concluído.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A comparação identifica outro atendimento recente de duração menor.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A avaliação positiva incompatível com a espera extensa permite reconhecer ironia crítica.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-16-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-16-c01.v1",
+      "conceptIds": [
+        "por.por-16-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma notícia comunitária informa que a informação sobre a nova feira circulou depressa entre ruas do bairro. A autora escolheu um verbo que costuma descrever o movimento de uma pessoa ou objeto pelo espaço, mas o sujeito da frase é uma informação. A combinação cria uma imagem para representar a velocidade da divulgação, sem afirmar que a notícia seja um ser vivo ou que tenha percorrido fisicamente o bairro.",
+      "stem": "Em “A notícia atravessou o bairro em poucos minutos”, que efeito predomina no verbo “atravessou”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Contrapõe duas mensagens com sentidos opostos na mesma notícia.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Exagera uma medida exata de tempo com intenção de convencer o leitor.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Suaviza a divulgação de um assunto que causou preocupação no bairro.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Representa a circulação da informação como deslocamento pelo espaço.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Transforma a notícia em pessoa que conversa com moradores da região.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "O verbo atribui à circulação de informação uma imagem espacial, construindo uma metáfora.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-17-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-17-c01.v1",
+      "conceptIds": [
+        "por.por-17-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "A associação de estudantes publicou um artigo sobre a abertura da biblioteca em horários noturnos. A autora começa descrevendo a fila que se forma no fim das aulas e apresenta uma pesquisa respondida por estudantes que trabalham durante o dia. Na conclusão, defende que a biblioteca amplie seu funcionamento até as oito da noite. A turma analisa qual ideia expressa a posição principal sustentada pelos dados e exemplos ao longo do texto.",
+      "stem": "Qual ideia funciona como tese do artigo?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A biblioteca deve ampliar o atendimento noturno para responder à demanda dos estudantes.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "A fila se forma perto da entrada quando terminam as aulas do turno da tarde.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A pesquisa foi respondida por estudantes que trabalham durante o dia.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A associação consultou alunos para conhecer a rotina da biblioteca escolar.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O horário atual termina antes que alguns estudantes possam fazer empréstimos durante o turno noturno.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "A tese é a posição defendida: ampliar o horário; a fila e a pesquisa funcionam como apoio.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-17-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-17-c01.v1",
+      "conceptIds": [
+        "por.por-17-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Um conselho de bairro avalia uma proposta para construir uma ciclovia. Parte dos moradores teme que a obra retire vagas de estacionamento. Em resposta, uma pesquisa de circulação indica que a maioria das pessoas que frequenta a região chega a pé ou de transporte coletivo. O artigo apresenta o dado como parte de uma discussão, sem detalhar o projeto viário nem calcular quantas vagas serão afetadas. A turma examina o papel desse argumento.",
+      "stem": "“Alguns dizem que uma ciclovia tiraria vagas; porém, os levantamentos indicam que a maioria chega à área a pé.” Qual estratégia aparece depois de “porém”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Uma concessão que encerra a discussão sem examinar a objeção apresentada.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Uma opinião de especialista baseada na reputação de quem foi entrevistado.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Um dado que reduz a força da objeção sobre a necessidade de vagas.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "Uma confirmação de que a proposta depende da preservação de vagas na região.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Uma mudança de assunto para discutir os meios de transporte da região.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "O dado empírico enfraquece a premissa de que a maioria depende de vagas, sem provar o efeito da obra.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-18-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-18-c01.v1",
+      "conceptIds": [
+        "por.por-18-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em um conto sobre despedidas, a narradora acredita que uma pessoa próxima deixou a cidade e não pretende voltar. Depois de afirmar que ela não retornaria, a narradora coloca uma palavra curta sozinha na linha seguinte. A pausa visual destaca a conclusão emocional e dá à leitura um ritmo mais marcado. A escolha não muda a pessoa a que o pronome se refere nem transforma a frase em outro tempo verbal.",
+      "stem": "Em um conto, após dizer “Ela não voltaria”, o narrador acrescenta em linha isolada: “Nunca.” Qual efeito essa escolha pode produzir?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O ponto final converte a afirmação em pergunta dirigida à personagem.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A palavra isolada passa a retomar a narradora, em vez da pessoa ausente.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A frase troca o futuro do pretérito por uma forma do presente.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "O isolamento substitui a narração por uma passagem cômica sobre a despedida.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "O destaque visual reforça a ideia de ausência e marca o ritmo da frase.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A palavra isolada intensifica o sentido de ausência e recebe destaque rítmico.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-18-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-18-c01.v1",
+      "conceptIds": [
+        "por.por-18-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma campanha de vacinação foi divulgada durante a semana anterior ao encerramento de uma etapa. Em vários cartazes, uma frase lembra que ainda é possível procurar um posto naquele dia; a peça final acrescenta que a oportunidade futura é incerta. A repetição chama atenção para o momento presente, enquanto a mudança entre “hoje” e “amanhã” faz o leitor perceber uma janela de ação que pode se fechar.",
+      "stem": "Uma campanha repete três vezes “Hoje ainda dá tempo” e termina “Amanhã talvez não”. Qual articulação constrói urgência?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Uma ordem cronológica que comprova mudança na agenda dos postos.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A repetição do presente junto à incerteza futura cria senso de urgência.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "A sequência apresenta a mesma informação temporal sem mudar o foco.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A ausência de um destinatário aproxima a peça de um registro administrativo.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A narrativa resume acontecimentos da semana que já terminou.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A repetição valoriza a oportunidade presente, contrastando-a com a incerteza do dia seguinte.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-19-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-19-c01.v1",
+      "conceptIds": [
+        "por.por-19-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma notícia escolar relata a compra de um microscópio para uso em atividades de laboratório. Na frase seguinte, a redação evita repetir o nome inteiro do aparelho e emprega uma expressão mais abrangente para retomá-lo. A mudança lexical mantém a continuidade do assunto sem apresentar um segundo equipamento. O leitor deve observar o referente retomado e a função de coesão estabelecida entre as duas sentenças.",
+      "stem": "“O laboratório recebeu um microscópio novo. O equipamento ficará disponível às turmas.” Qual função exerce “O equipamento”?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Opõe a aquisição do aparelho à possibilidade de usá-lo em atividades.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "Retoma o laboratório, local em que as turmas vão visitar as aulas.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Antecipa as turmas, que aparecem como assunto no segundo período.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Retoma o microscópio com expressão geral e mantém o mesmo referente.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Apresenta um segundo aparelho, diferente daquele mencionado antes.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "“O equipamento” retoma “microscópio novo” por uma expressão lexical mais geral.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-19-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-19-c01.v1",
+      "conceptIds": [
+        "por.por-19-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma bibliotecária conta que Lia levou um livro até a casa de Marina. A frase original menciona que uma delas chegou naquele momento, mas o pronome “ela” pode se referir a qualquer uma das duas mulheres. Para a ficha de empréstimo, é importante registrar que Marina foi quem chegou e recebeu o livro. A reescrita precisa deixar explícita essa informação, sem depender da posição do pronome ou da interpretação do leitor.",
+      "stem": "“Lia entregou o livro a Marina quando ela chegou.” Qual reescrita desambigua quem chegou, caso a intenção seja indicar Marina?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "“Quando Marina chegou, Lia lhe entregou o livro.”",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "“Lia entregou o livro a Marina porque ela chegou ao local.”",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "“Lia, quando ela chegou, entregou o livro a Marina.”",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "“O livro foi entregue a Marina por Lia quando ela chegou.”",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "“Quando ela chegou, Lia entregou o livro a Marina.”",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Nomear Marina na oração temporal elimina a ambiguidade sobre quem chegou.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-20-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-20-c01.v1",
+      "conceptIds": [
+        "por.por-20-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Um relatório escolar descreve a implantação de novas lixeiras para separar materiais recicláveis. Primeiro, apresenta dados sobre o volume recolhido e comenta a adesão das turmas. No meio do texto, surge uma receita de bolo sem ligação com a coleta ou com a rotina da escola. A conclusão propõe ampliar atividades de educação ambiental. O leitor avalia como a inserção do trecho culinário afeta a continuidade do tema e a organização das ideias.",
+      "stem": "Um texto sobre coleta seletiva traz dados de reciclagem, depois uma receita de bolo sem ligação com o tema, e encerra com uma proposta de educação ambiental. Qual problema textual ocorre?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A proposta final transforma a receita em comparação com a coleta seletiva.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A alternância de tempos verbais impede a leitura das informações ambientais.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "O trecho culinário interrompe a progressão temática sem contribuir para o assunto.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "A receita rompe a referência entre as frases, mas preserva o foco do relatório.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Os dados de reciclagem perdem validade após a mudança de tópico.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "A receita sem relação com o assunto rompe a progressão temática do relatório.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-20-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-20-c01.v1",
+      "conceptIds": [
+        "por.por-20-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Um relatório registra que o laboratório escolar ficou sem acesso à rede durante setembro, pois o equipamento de conexão estava em manutenção. Em seguida, apresenta uma tabela sem novos dados e conclui que o número de acessos de estudantes à rede aumentou nesse mês. O documento não explica uma mudança de sistema, uma rede alternativa nem outra origem para os acessos. O leitor deve avaliar se a conclusão se apoia nas informações apresentadas.",
+      "stem": "Qual problema de coerência aparece entre o registro e a conclusão?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "O registro de falha não permite saber quantos estudantes visitaram o laboratório.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A tabela não identifica a pessoa que conferiu os equipamentos no início do mês.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A conclusão atribui aumento de acessos à rede sem apresentar evidência compatível.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A menção à manutenção explica por que os estudantes mudaram de atividade.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A informação sobre setembro deveria aparecer antes da referência ao laboratório.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A conclusão de aumento de acessos à rede não se sustenta no registro de indisponibilidade e na falta de novos dados.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-21-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-21-c01.v1",
+      "conceptIds": [
+        "por.por-21-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma campanha de economia de água adapta um provérbio conhecido. Mantém o ritmo e a forma reconhecível da expressão, mas substitui uma palavra central por outra ligada ao consumo que pretende discutir. O público consegue perceber a referência e comparar o sentido conhecido com a nova formulação. A alteração convida a reler o dito em função do tema ambiental; não é uma transcrição histórica nem uma reprodução neutra de sua mensagem original.",
+      "stem": "Uma campanha altera um provérbio conhecido, mantendo seu ritmo, mas trocando “tempo” por “água” para discutir desperdício. O que caracteriza o recurso?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Reprodução documental que serve para demonstrar a origem histórica do provérbio.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A campanha transforma uma referência conhecida para produzir novo sentido crítico.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "Paráfrase que conserva a ideia original sem alterar a perspectiva do leitor.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Citação literal que repete o provérbio e mantém seu significado habitual.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Referência temática sem diálogo com formulações anteriores conhecidas.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A campanha mobiliza um texto reconhecível e o altera para criar um efeito relacionado ao desperdício.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-21-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-21-c01.v1",
+      "conceptIds": [
+        "por.por-21-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Um cartaz de uma mostra literária apresenta uma frase retirada de um poema conhecido. As palavras aparecem entre aspas, e o nome da autora está indicado no rodapé. Em seguida, o cartaz relaciona a frase a uma discussão sobre espaços públicos. O texto do poema é mantido, mas agora integra outra peça e serve a um propósito comunicativo diferente. A turma analisa como essa retomada funciona no novo contexto.",
+      "stem": "Um cartaz reproduz entre aspas uma frase de um poema e atribui autoria no rodapé; em seguida comenta a frase. Como se caracteriza a relação entre textos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A indicação de autoria separa a frase do diálogo com o poema original.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A referência funciona como alusão, já que o cartaz a incorpora a outra discussão.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Uma paródia, já que o cartaz modifica o tom do poema para fazer humor.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A frase do poema é incorporada como apoio a uma nova argumentação.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "Uma paráfrase que reconta a ideia sem reproduzir palavras da fonte.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "As aspas e a autoria identificam uma citação que assume função no novo contexto argumentativo.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-22-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-22-c01.v1",
+      "conceptIds": [
+        "por.por-22-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Uma organização comunitária criou uma campanha sobre segurança digital depois de receber relatos de links falsos em grupos de mensagens. Os cartazes usam perguntas diretas para convidar o público a rever hábitos antes de compartilhar informações. Um deles pergunta se a pessoa conferiu os dados antes de enviar. A peça não apresenta números de pesquisa nem narra uma conversa privada; seu objetivo pode ser inferido da circulação e do conjunto da campanha.",
+      "stem": "A pergunta “Você conferiu os dados antes de enviar?” aparece em uma campanha de segurança digital. Qual finalidade é mais plausível nesse contexto?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Convidar o público a verificar informações antes de compartilhá-las.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "Registrar uma conversa particular entre duas pessoas já identificadas.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Relatar os resultados de um estudo sobre hábitos de navegação.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Atribuir aos usuários a responsabilidade por fraudes já ocorridas.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Anunciar uma proibição geral ao envio de informações digitais.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "No contexto de campanha, a pergunta funciona como incentivo à verificação antes do compartilhamento.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-22-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-22-c01.v1",
+      "conceptIds": [
+        "por.por-22-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma notícia informa que os critérios de seleção foram publicados na tarde anterior. No mesmo jornal, um editorial discute o procedimento e afirma que a divulgação dos critérios é indispensável para dar transparência à seleção. A turma compara os gêneros e observa os verbos, os tempos e a avaliação presente em cada frase. A leitura deve distinguir o relato de uma ocorrência do juízo sobre a importância de uma medida.",
+      "stem": "Um editorial afirma “É indispensável divulgar os critérios de seleção”, enquanto uma notícia relata “Os critérios foram divulgados ontem”. Qual distinção se sustenta?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A notícia apresenta uma tese porque descreve uma ação na voz passiva.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "O editorial não avalia a medida por iniciar com uma forma impessoal.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "O editorial julga a medida, enquanto a notícia relata um acontecimento.",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "As duas frases registram fatos verificáveis sem sugerir avaliação.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A primeira relata fato passado, e a segunda recomenda ação futura.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "“Indispensável” exprime avaliação no editorial; a notícia relata que os critérios foram divulgados.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-23-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-23-c01.v1",
+      "conceptIds": [
+        "por.por-23-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Em uma feira gastronômica, visitantes conversam sobre alimentos conhecidos em suas regiões. Ao identificar uma raiz usada em pratos semelhantes, algumas pessoas dizem “aipim”, outras “mandioca” e outras “macaxeira”. As diferenças aparecem em conversas cotidianas e em placas de receitas. A equipe da feira quer explicar por que a variação regional do vocabulário não indica, por si, diferenças de inteligência, qualidade ou domínio da língua.",
+      "stem": "Em uma feira, visitantes de regiões distintas chamam o mesmo alimento de “aipim”, “mandioca” ou “macaxeira”. O exemplo permite afirmar que:",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A forma preferida pelo maior grupo deveria substituir as outras nos registros.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A diferença de nomes pode refletir variações de pronúncia do mesmo termo.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "As denominações refletem variação lexical regional sem hierarquia intrínseca.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Uma das formas precisa ser considerada incorreta fora de sua região.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Os nomes diferentes revelam que as comunidades usam línguas distintas.",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "A língua apresenta variação lexical regional, sem que uma forma seja intrinsecamente mais correta que as demais.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-23-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-23-c01.v1",
+      "conceptIds": [
+        "por.por-23-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma estudante escreve um requerimento dirigido à comissão de uma escola e, mais tarde, envia uma mensagem breve a uma colega. No documento formal, usa uma saudação e formula um pedido completo; na conversa entre amigas, escreve de modo coloquial e direto. As duas mensagens foram produzidas pela mesma pessoa em contextos diferentes. A professora pede que a turma interprete a alternância considerando interlocutores, gêneros e expectativas de comunicação.",
+      "stem": "Uma estudante escreve “Prezada comissão, solicito revisão” em requerimento e “me chama depois” em mensagem a colega. O que a alternância mostra?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A estudante demonstra dificuldade para manter um repertório linguístico estável.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A escolha de registro acompanha interlocutores e situações comunicativas distintas.",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "A alternância mostra preferência por linguagem informal nas duas situações.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "A diferença de estilo decorre de uma mudança de região entre mensagens.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "A mudança comprova uma transformação histórica da língua em curto prazo.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "A estudante adequa o registro às situações e aos interlocutores de cada mensagem.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-24-NQ01",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-24-c01.v1",
+      "conceptIds": [
+        "por.por-24-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "apply"
+      ],
+      "stimulus": "Durante uma apresentação, um aluno usa marcas de sua variedade regional e explica com clareza os resultados de um trabalho. Os colegas acompanham a exposição, fazem perguntas sobre o conteúdo e entendem as respostas. Depois, uma pessoa comenta que a pronúncia revelaria falta de inteligência. A turma é convidada a examinar o comentário, separando a avaliação do conteúdo apresentado do julgamento feito sobre uma característica linguística do falante.",
+      "stem": "Um aluno usa marcas de fala regional em apresentação oral; a turma compreende a exposição, mas alguém diz que sua pronúncia revela falta de inteligência. Qual análise é adequada?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "A origem regional, em contexto formal, poderia afetar a clareza da pronúncia.",
+          "correct": false
+        },
+        {
+          "id": "B",
+          "content": "A compreensão da apresentação depende de apagar marcas de origem regional.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "A formalidade da situação torna inadequadas as variedades geográficas.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "O comentário converte uma diferença linguística em julgamento sobre a pessoa.",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "A avaliação da fala pode considerar sua aproximação das convenções da escrita.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "O comentário atribui valor pessoal negativo a uma diferença de pronúncia, caracterizando preconceito linguístico.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-POR-24-NQ02",
+      "version": 1,
+      "subjectCode": "POR",
+      "primaryConceptId": "por.por-24-c01.v1",
+      "conceptIds": [
+        "por.por-24-c01.v1"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "challenge",
+      "cognitiveOperations": [
+        "analyze",
+        "evaluate"
+      ],
+      "stimulus": "Uma escola ensina os formatos de textos formais usados em inscrições, requerimentos e relatórios. Nas aulas, os professores explicam convenções da escrita e discutem quando cada registro é adequado. Também acolhem as formas de falar que os alunos trazem de casa, sem ridicularizá-las ou tratá-las como defeitos. A coordenação quer avaliar se o ensino de uma variedade formal pode coexistir com o respeito à diversidade linguística dos estudantes.",
+      "stem": "Uma escola ensina a redação formal sem ridicularizar a fala cotidiana dos alunos. Como avaliar a abordagem?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "Ensina convenções formais e amplia repertórios sem desvalorizar falas familiares.",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "Trata os enunciados como igualmente adequados sem considerar gênero e interlocutor.",
+          "correct": false
+        },
+        {
+          "id": "C",
+          "content": "Abandona convenções da escrita ao reconhecer diferentes registros de fala.",
+          "correct": false
+        },
+        {
+          "id": "D",
+          "content": "Dificulta a comunicação institucional ao acolher variedades dos estudantes.",
+          "correct": false
+        },
+        {
+          "id": "E",
+          "content": "Reserva legitimidade linguística à variedade usada em documentos formais.",
+          "correct": false
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Ensinar convenções amplia as possibilidades de uso sem desqualificar as variedades familiares.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    }
+  ]
+}

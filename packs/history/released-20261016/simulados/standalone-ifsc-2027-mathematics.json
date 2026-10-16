@@ -1,0 +1,1500 @@
+{
+  "trackId": "ifsc-2027-mathematics",
+  "questions": [
+    {
+      "id": "SIM-MAT-01",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PROPORTION.CONTEXT",
+      "conceptIds": [
+        "MAT.PROPORTION.CONTEXT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Uma pequena propriedade de Santo Amaro da Imperatriz prepara a alimentação de cabras usando uma mistura de grãos. A anotação do responsável informa que cinco animais consomem juntos 750 gramas dessa mistura por dia, mantendo a mesma porção para cada cabra. Na semana de uma feira rural, oito cabras ficarão no espaço de exposição durante seis dias, e a equipe quer separar a quantidade necessária antes da abertura. Considere que não haverá sobras nem mudança na porção diária. A mistura é comprada em sacos, mas a resposta deve ser dada em quilogramas.",
+      "stem": "Quantos quilogramas da mistura serão necessários para alimentar as oito cabras durante os seis dias?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "7,2 kg",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "4,5 kg",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Multiplica 0,75 kg por seis dias, mantendo o grupo de cinco animais."
+        },
+        {
+          "id": "C",
+          "content": "1,2 kg",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "0,75 × 8 ÷ 5 = 1,2 kg por dia, sem multiplicar pela duração."
+        },
+        {
+          "id": "D",
+          "content": "2,1 kg",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "A operação indevida 0,75 × (8 + 6) ÷ 5 resulta em 2,1."
+        },
+        {
+          "id": "E",
+          "content": "2,8 kg",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "0,75 × 5 ÷ 8 × 6 = 2,8125 kg, aproximadamente 2,8 kg."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Conferência 1: cada cabra consome 0,75 ÷ 5 = 0,15 kg por dia; então 8 × 6 × 0,15 = 7,2 kg. Conferência 2: para cinco cabras por seis dias seriam 0,75 × 6 = 4,5 kg; oito cabras representam 8/5 desse grupo, logo 4,5 × 8/5 = 7,2 kg.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-02",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PCT.SUCCESSIVE",
+      "conceptIds": [
+        "MAT.PCT.SUCCESSIVE"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Uma loja de artigos para trilhas em Lages anunciou uma mochila por R$ 240,00. Durante uma campanha, primeiro aplica um desconto de 15% sobre o preço anunciado. Quem paga pelo aplicativo da loja recebe, depois desse desconto, mais 10% de abatimento sobre o valor já reduzido. Uma estudante que vai participar de uma caminhada escolar quer saber o preço final antes de confirmar a compra. Considere que os descontos são sucessivos, sem taxas adicionais e sem arredondamento intermediário; os valores estão em reais.",
+      "stem": "Qual é o preço final da mochila após os dois descontos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "R$ 180,00",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "240 × 0,75 = R$ 180,00, embora os descontos sejam sucessivos."
+        },
+        {
+          "id": "B",
+          "content": "R$ 204,00",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "240 × 0,85 = R$ 204,00; falta aplicar o desconto do aplicativo."
+        },
+        {
+          "id": "C",
+          "content": "R$ 200,40",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "10% de R$ 36,00 são R$ 3,60; subtrair isso de R$ 204,00 dá R$ 200,40."
+        },
+        {
+          "id": "D",
+          "content": "R$ 216,00",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "240 × 0,90 = R$ 216,00, sem o desconto inicial de 15%."
+        },
+        {
+          "id": "E",
+          "content": "R$ 183,60",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Conferência 1: 15% de 240 é 36, então o primeiro preço é R$ 204; 10% de 204 é R$ 20,40 e o saldo é R$ 183,60. Conferência 2: os fatores sucessivos são 0,85 × 0,90 = 0,765; 240 × 0,765 = R$ 183,60.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-03",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.DECIMAL.OPERATIONS",
+      "conceptIds": [
+        "MAT.DECIMAL.OPERATIONS"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Um grupo de estudantes de Joinville vai montar kits para uma oficina de robótica. Cada kit usa 0,35 metro de fio flexível, pois essa medida permite ligar os componentes sem deixar uma sobra excessiva. A escola recebeu um rolo novo com 16 metros e decidiu usar apenas esse rolo para preparar os kits da primeira turma. Os pedaços devem ter todos o mesmo comprimento, e não é permitido emendar sobras para completar um kit. A coordenação quer saber quantos kits completos pode organizar.",
+      "stem": "Quantos kits completos podem ser preparados com os 16 metros de fio?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "44 kits",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Com 45 kits usam-se 15,75 m e sobram 0,25 m; a sobra não impede o 45º kit de ficar completo."
+        },
+        {
+          "id": "B",
+          "content": "45 kits",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "46 kits",
+          "correct": false,
+          "targetsError": "calculation",
+          "rationale": "46 × 0,35 = 16,1 m, acima dos 16 m disponíveis."
+        },
+        {
+          "id": "D",
+          "content": "4,6 kits",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "16 ÷ 3,5 = 4,57..., aproximadamente 4,6, mas a capacidade por kit é 0,35 m."
+        },
+        {
+          "id": "E",
+          "content": "64 kits",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "16 ÷ 0,25 = 64, mas cada kit usa 0,35 m."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "Conferência 1: 16 ÷ 0,35 = 1600 ÷ 35 = 45,714..., portanto só cabem 45 kits completos. Conferência 2: 45 × 0,35 = 15,75 m, sobrando 0,25 m; para 46 seriam necessários 16,10 m, mais do que o rolo contém.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-04",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.EQ1.CONTEXT",
+      "conceptIds": [
+        "MAT.EQ1.CONTEXT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Na feira de uma escola de Criciúma, a equipe da cantina vende sanduíches naturais por R$ 12,00 e copos de suco por R$ 5,00. Para uma encomenda de uma reunião, foram pedidos três copos de suco a mais do que sanduíches. O total pago foi R$ 100,00, sem taxa de entrega ou desconto. A equipe deseja reconstruir a quantidade de sanduíches registrada no pedido para conferir a lista de preparo. Todos os itens foram vendidos pelos preços indicados.",
+      "stem": "Quantos sanduíches foram pedidos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "4",
+          "correct": false,
+          "targetsError": "calculation",
+          "rationale": "A equação incorreta 17x + 25 = 100 dá x = 75/17 ≈ 4,4, arredondado para 4."
+        },
+        {
+          "id": "B",
+          "content": "8",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "8 = x + 3 é o número de copos de suco; a pergunta pede os sanduíches."
+        },
+        {
+          "id": "C",
+          "content": "6",
+          "correct": false,
+          "targetsError": "calculation",
+          "rationale": "Sem os R$ 15, a conta incorreta 17x = 100 dá x ≈ 5,9, arredondado para 6."
+        },
+        {
+          "id": "D",
+          "content": "5",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "13",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "5 sanduíches + 8 sucos = 13 itens; a pergunta pede só os sanduíches."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Conferência 1: chamando de x o número de sanduíches, 12x + 5(x + 3) = 100; então 17x + 15 = 100, 17x = 85 e x = 5. Conferência 2: 5 sanduíches custam 60 e 8 sucos custam 40, totalizando R$ 100,00.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-05",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.SYSTEM.CONTEXT",
+      "conceptIds": [
+        "MAT.SYSTEM.CONTEXT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Uma apresentação estudantil em Chapecó vendeu ingressos inteiros para adultos e estudantes. Ao fim da primeira noite, o caixa registrou 14 ingressos vendidos e R$ 154,00 arrecadados. Cada ingresso adulto custava R$ 13,00 e cada ingresso estudantil custava R$ 9,00; não houve meia-entrada, cortesias ou taxas. A organização quer conferir o número de ingressos de cada tipo antes de calcular a lotação da sessão seguinte. Considere que todos os valores foram recebidos integralmente.",
+      "stem": "Quantos ingressos adultos foram vendidos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "7",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "6",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "Seis adultos e oito estudantes renderiam 150 reais, quatro a menos que o caixa."
+        },
+        {
+          "id": "C",
+          "content": "8",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "Oito adultos e seis estudantes renderiam 158 reais."
+        },
+        {
+          "id": "D",
+          "content": "14",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "14 ingressos adultos renderiam 14 × 13 = R$ 182,00, acima do valor registrado."
+        },
+        {
+          "id": "E",
+          "content": "5",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "Cinco adultos e nove estudantes somariam R$ 146,00, não R$ 154,00."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Conferência 1: se todos fossem estudantes, a arrecadação seria 14 × 9 = 126 reais. O excedente de 28 reais vem dos adultos, cada qual acrescentando 13 − 9 = 4 reais; 28 ÷ 4 = 7 adultos. Conferência 2: pelo sistema a + e = 14 e 13a + 9e = 154. Substituindo e = 14 − a: 13a + 126 − 9a = 154; 4a = 28; a = 7.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-06",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.RIGHTTRI.PYTHAGORAS",
+      "conceptIds": [
+        "MAT.RIGHTTRI.PYTHAGORAS"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Durante a montagem de uma cobertura para uma horta comunitária em Blumenau, dois suportes formam um ângulo reto com o chão e com uma travessa horizontal. A distância horizontal entre os pontos de apoio é de 9 decímetros, e a altura da ponta da cobertura é de 12 decímetros. A equipe vai cortar uma barra diagonal que ligará esses dois pontos, sem considerar a espessura da madeira. O desenho da estrutura forma um triângulo retângulo, e todas as medidas foram anotadas na mesma unidade.",
+      "stem": "Qual deve ser o comprimento da barra diagonal?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "12 dm",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "A hipotenusa deve ser maior que cada cateto; 12 dm não pode ser a diagonal."
+        },
+        {
+          "id": "B",
+          "content": "15 dm",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "8 dm",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "√(12² − 9²) = √63 ≈ 7,94 dm, que pode ser arredondado para 8 dm."
+        },
+        {
+          "id": "D",
+          "content": "21 dm",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "9 + 12 = 21 dm é a soma dos catetos, não a hipotenusa."
+        },
+        {
+          "id": "E",
+          "content": "20 dm",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "9 + 12 − 1 = 20 dm, mas a diagonal não é obtida por essa operação."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "Conferência 1: pelo teorema de Pitágoras, d² = 9² + 12² = 81 + 144 = 225; como d é positivo, d = 15 dm. Conferência 2: reconhecendo a proporção 3-4-5, os catetos 9 e 12 são 3 × 3 e 4 × 3; a hipotenusa correspondente é 5 × 3 = 15 dm.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-07",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PROB.FREQUENCY",
+      "conceptIds": [
+        "MAT.PROB.FREQUENCY"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Para uma atividade de matemática em uma escola de Itajaí, a turma preparou uma caixa com cartões de três cores. Há 6 cartões azuis, 4 vermelhos e 5 verdes; cada cartão tem o mesmo tamanho e fica dobrado de modo que a cor não possa ser escolhida de propósito. Uma pessoa retira um cartão sem olhar e registra a cor antes de devolvê-lo à caixa. A professora pergunta sobre a chance de sair uma cor que não seja vermelha em uma retirada. Considere todos os cartões igualmente prováveis.",
+      "stem": "Qual é a probabilidade de retirar um cartão azul ou verde?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "11/15",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "4/15",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Quatro cartões correspondem ao evento vermelho, que é o evento complementar."
+        },
+        {
+          "id": "C",
+          "content": "6/15",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "O evento também inclui os cinco cartões verdes."
+        },
+        {
+          "id": "D",
+          "content": "10/15",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "Azuis e vermelhos somam 6 + 4 = 10, mas o evento pedido é azul ou verde."
+        },
+        {
+          "id": "E",
+          "content": "11/14",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "O total antes da retirada é 6 + 4 + 5 = 15 cartões."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Conferência 1: há 6 + 5 = 11 cartões azuis ou verdes entre 15; a probabilidade é 11/15. Conferência 2: o único resultado desfavorável é vermelho, com chance 4/15; pelo complementar, 1 − 4/15 = 11/15.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-08",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.FRACTION.DECIMAL.CONVERT",
+      "conceptIds": [
+        "MAT.FRACTION.DECIMAL.CONVERT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Uma trilha escolar no Parque Estadual da Serra do Tabuleiro foi dividida em trechos para que os grupos façam pausas em pontos seguros. Uma turma percorreu 3/5 do trajeto pela manhã e mais 1,8 quilômetro depois do almoço. Ao chegar ao segundo ponto de apoio, o professor informou que ainda faltavam 1,4 quilômetro para completar o percurso de 8 quilômetros. Os estudantes querem conferir se as distâncias registradas são compatíveis com o total previsto. Considere o mesmo trajeto para todos os grupos.",
+      "stem": "Quantos quilômetros a turma percorreu pela manhã?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "2,2 km",
+          "correct": false,
+          "targetsError": "conceptual",
+          "rationale": "Os 1,4 km são explicitamente o trecho ainda não percorrido."
+        },
+        {
+          "id": "B",
+          "content": "2,4 km",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "3/10 de 8 é 2,4 km, mas a fração informada é 3/5."
+        },
+        {
+          "id": "C",
+          "content": "6,6 km",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "8 − 1,4 = 6,6 km inclui indevidamente o trecho de 1,8 km percorrido depois do almoço."
+        },
+        {
+          "id": "D",
+          "content": "3,2 km",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "1,8 + 1,4 = 3,2 km, mas essa soma representa os trechos posteriores."
+        },
+        {
+          "id": "E",
+          "content": "4,8 km",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Conferência 1: 3/5 de 8 km = 24/5 = 4,8 km. Conferência 2: o trecho depois do almoço e a parte restante somam 1,8 + 1,4 = 3,2 km; portanto, 8 − 3,2 = 4,8 km pela manhã.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-09",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.RULE3.DIRECT",
+      "conceptIds": [
+        "MAT.RULE3.DIRECT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Uma cooperativa de produtores de maçã de São Joaquim prepara caixas para uma feira de inverno. Em um lote, 4 caixas iguais acomodam 18 quilogramas de frutas, sem deixar espaço livre significativo. Para outra encomenda, a equipe usará caixas do mesmo modelo e distribuirá as maçãs com a mesma massa por caixa. O pedido da feira solicita 63 quilogramas. Antes de começar a embalagem, o grupo precisa determinar quantas caixas cheias serão necessárias, sem considerar caixas parcialmente ocupadas.",
+      "stem": "Quantas caixas cheias serão necessárias para acomodar 63 quilogramas?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "3 caixas",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "63 ÷ 18 = 3,5, mas 18 kg é a massa das quatro caixas do lote inicial, não de uma."
+        },
+        {
+          "id": "B",
+          "content": "7 caixas",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "18 ÷ 2 = 9 kg e 63 ÷ 9 = 7; a capacidade real é 4,5 kg por caixa."
+        },
+        {
+          "id": "C",
+          "content": "16 caixas",
+          "correct": false,
+          "targetsError": "calculation",
+          "rationale": "63 ÷ 4 = 15,75; arredondar para cima dá 16, embora a capacidade real seja 4,5 kg."
+        },
+        {
+          "id": "D",
+          "content": "14 caixas",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "21 caixas",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "63 ÷ 3 = 21, mas a capacidade calculada com os dados é 4,5 kg por caixa."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Conferência 1: cada caixa comporta 18 ÷ 4 = 4,5 kg; logo 63 ÷ 4,5 = 14 caixas. Conferência 2: 63 kg são 63/18 = 3,5 vezes 18 kg; mantendo a proporção, 4 × 3,5 = 14 caixas.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-10",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.PCT.CALCULATE",
+      "conceptIds": [
+        "MAT.PCT.CALCULATE"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Um clube de leitura de Florianópolis organizou uma venda de livros usados para arrecadar dinheiro para uma visita técnica. No primeiro sábado, vendeu 40 livros. No sábado seguinte, vendeu 25% a mais do que no primeiro, pois mais famílias participaram da feira. Todos os livros foram contabilizados individualmente, sem vendas por lote ou devoluções. A equipe quer comparar a quantidade dos dois dias e precisa registrar um número inteiro de exemplares para o relatório. A variação percentual é calculada sobre a quantidade do primeiro sábado.",
+      "stem": "Quantos livros foram vendidos no segundo sábado?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "50 livros",
+          "correct": true
+        },
+        {
+          "id": "B",
+          "content": "48 livros",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "20% de 40 é 8, mas o aumento solicitado é 25%."
+        },
+        {
+          "id": "C",
+          "content": "45 livros",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "A base percentual do enunciado é a venda inicial de 40 livros."
+        },
+        {
+          "id": "D",
+          "content": "60 livros",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "50% de 40 é 20; somar esse aumento resulta em 60 livros."
+        },
+        {
+          "id": "E",
+          "content": "65 livros",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "Confunde o símbolo percentual com o número 25 absoluto."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "A"
+      },
+      "explanation": "Conferência 1: 25% de 40 = 0,25 × 40 = 10; portanto 40 + 10 = 50 livros. Conferência 2: um aumento de 25% equivale a multiplicar por 1,25; 40 × 1,25 = 50.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-11",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.EQ2.CONTEXT",
+      "conceptIds": [
+        "MAT.EQ2.CONTEXT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Uma horta retangular em uma escola de Rio do Sul será cercada com uma faixa de proteção. O lado maior terá 3 metros a mais que o lado menor, e a área interna planejada é de 70 metros quadrados. Para economizar material, a equipe quer descobrir as dimensões exatas antes de comprar a faixa. Os lados devem ter medidas positivas inteiras, e a faixa não altera a área útil do canteiro. A planta não inclui corredores entre as fileiras de cultivo.",
+      "stem": "Qual é o comprimento do lado menor da horta?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "5 m",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Embora o produto seja 70, a diferença entre 14 e 5 é 9 m."
+        },
+        {
+          "id": "B",
+          "content": "6 m",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "6 × 9 = 54, não 70."
+        },
+        {
+          "id": "C",
+          "content": "10 m",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "10 × 13 = 130 m², acima da área planejada."
+        },
+        {
+          "id": "D",
+          "content": "8 m",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "8 × 11 = 88 m²."
+        },
+        {
+          "id": "E",
+          "content": "7 m",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Conferência 1: se o lado menor é x, então x(x + 3) = 70; x² + 3x − 70 = 0 = (x + 10)(x − 7). A solução positiva é x = 7. Conferência 2: procuramos fatores de 70 cuja diferença seja 3; 7 × 10 = 70 e 10 − 7 = 3, então o lado menor mede 7 m.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-12",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.SYSTEM.CONTEXT",
+      "conceptIds": [
+        "MAT.SYSTEM.CONTEXT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Em uma oficina de bicicletas de São José, dois mecânicos registraram quantos pneus revisaram durante uma manhã. Cada bicicleta comum tem dois pneus e cada triciclo de carga tem três. Ao todo, foram atendidos 11 veículos, correspondendo a 26 pneus revisados. Nenhum veículo estava sem pneu, e cada pneu foi contado uma única vez. A oficina quer separar o registro por tipo de veículo para planejar a compra de câmaras de reposição. Considere apenas esses dois modelos.",
+      "stem": "Quantos triciclos de carga foram atendidos?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "3",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Com três triciclos, seriam 8 bicicletas e 25 pneus, não 26."
+        },
+        {
+          "id": "B",
+          "content": "5",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Cinco triciclos e seis bicicletas somariam 27 pneus, não 26."
+        },
+        {
+          "id": "C",
+          "content": "4",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "6",
+          "correct": false,
+          "targetsError": "calculation",
+          "rationale": "26 ÷ 4 = 6,5, aproximadamente seis; esse cálculo não representa a diferença de pneus entre veículos."
+        },
+        {
+          "id": "E",
+          "content": "7",
+          "correct": false,
+          "targetsError": "conceptual",
+          "rationale": "O par compatível com os dados é 7 bicicletas e 4 triciclos."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "Conferência 1: se todos os 11 veículos fossem bicicletas, haveria 22 pneus. Os 4 pneus excedentes indicam 4 triciclos (cada um tem um pneu a mais que uma bicicleta). Conferência 2: b + t = 11 e 2b + 3t = 26; substituindo b = 11 − t, 22 − 2t + 3t = 26, portanto t = 4. ",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-13",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.GEO.AREA.RECTANGLE",
+      "conceptIds": [
+        "MAT.GEO.AREA.RECTANGLE"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Uma associação de moradores de Palhoça reservou um espaço retangular para montar uma pequena praça de convivência. O desenho aprovado indica 4,8 metros de comprimento por 3,5 metros de largura. A área será coberta com placas quadradas, mas a equipe primeiro precisa estimar quantos metros quadrados devem ser comprados. As placas podem ser cortadas nas bordas, então não é necessário arredondar a área para uma quantidade inteira de placas. Desconsidere perdas de material e caminhos fora do retângulo.",
+      "stem": "Qual é a área da praça retangular?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "17,3 m²",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "A área é o produto das medidas, sem parcela adicional."
+        },
+        {
+          "id": "B",
+          "content": "8,3 m²",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "4,8 + 3,5 = 8,3 m, que é uma soma de comprimentos, não uma área."
+        },
+        {
+          "id": "C",
+          "content": "16,6 m²",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "O perímetro é 2 × (4,8 + 3,5) = 16,6 m, uma medida linear."
+        },
+        {
+          "id": "D",
+          "content": "16,8 m²",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "18,6 m²",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "O produto 16,8 pode ser anotado incorretamente como 18,6 ao trocar a ordem dos algarismos."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Conferência 1: área = comprimento × largura = 4,8 × 3,5 = 16,8 m². Conferência 2: 48 décimos × 35 décimos = 1680 centésimos = 16,8 unidades quadradas; o resultado também fica entre 4,8×3=14,4 e 4,8×4=19,2, como esperado.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-14",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.DATA.INFER",
+      "conceptIds": [
+        "MAT.DATA.INFER"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Uma equipe de estudantes de Tubarão anotou quantos quilômetros percorreu em cinco treinos preparatórios para uma caminhada. Os registros foram 3, 4, 5, 6 e 7 quilômetros, um valor para cada dia. A professora quer usar a média diária para comparar o ritmo do grupo com o de outra turma, sem descartar nenhum treino. Os dados não incluem pausas nem deslocamentos até o ponto de encontro. Considere que todos os cinco dias têm o mesmo peso no cálculo da média.",
+      "stem": "Qual foi a distância média percorrida por dia?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "3 km",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "3 km é a distância de um treino, mas a média considera os cinco valores."
+        },
+        {
+          "id": "B",
+          "content": "6,25 km",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "25 ÷ 4 = 6,25; o divisor deve ser a quantidade de dias registrados."
+        },
+        {
+          "id": "C",
+          "content": "4,17 km",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "25 ÷ 6 = 4,166..., arredondado para 4,17 km."
+        },
+        {
+          "id": "D",
+          "content": "7 km",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "7 km é a maior distância diária, não a média dos cinco treinos."
+        },
+        {
+          "id": "E",
+          "content": "5 km",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Conferência 1: (3 + 4 + 5 + 6 + 7) ÷ 5 = 25 ÷ 5 = 5 km. Conferência 2: os valores formam pares simétricos em torno de 5 (3 e 7; 4 e 6), além do próprio 5; logo a média também é 5 km.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-15",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.EXPR.ORDER",
+      "conceptIds": [
+        "MAT.EXPR.ORDER",
+        "MAT.POWER.CONCEPT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Um laboratório escolar de Jaraguá do Sul organizou caixas pequenas para guardar sensores usados em uma atividade de ciências. Em cada caixa há 2 bandejas, cada bandeja comporta 2 fileiras e cada fileira tem 2 sensores. Para separar o material de quatro equipes, a professora preparou 5 caixas iguais. Os sensores são contados individualmente e nenhuma bandeja fica vazia. A turma está praticando a escrita de multiplicações repetidas como potências e quer determinar o total de sensores separados.",
+      "stem": "Quantos sensores há nas cinco caixas?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "15",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "Três sensores por cinco caixas dariam 15 sensores."
+        },
+        {
+          "id": "B",
+          "content": "16",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "2⁴ = 16 sensores por caixa, mas cada caixa tem 2 × 2 × 2 = 8."
+        },
+        {
+          "id": "C",
+          "content": "125",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "5³ = 125, embora a estrutura de cada caixa seja 2³ sensores."
+        },
+        {
+          "id": "D",
+          "content": "80",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "A quantidade por caixa é 8; 5 caixas totalizam 40."
+        },
+        {
+          "id": "E",
+          "content": "40",
+          "correct": true
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "E"
+      },
+      "explanation": "Conferência 1: cada caixa tem 2 × 2 × 2 = 8 sensores; em cinco caixas, 5 × 8 = 40. Conferência 2: a estrutura é 5 × 2³ = 5 × 8 = 40; contando em grupos, 2 bandejas × 2 fileiras × 2 sensores × 5 caixas também resulta em 40.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-16",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.FRACTION.CONTEXT",
+      "conceptIds": [
+        "MAT.FRACTION.CONTEXT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Um centro comunitário de Itapema recebeu 84 mudas de hortaliças para distribuir entre três canteiros. A equipe decidiu que 2/7 das mudas serão alface, e o restante será dividido igualmente entre couve e rúcula. As mudas são separadas uma a uma, sem perdas, e cada espécie deve ocupar uma área sinalizada. Os voluntários querem confirmar primeiro a quantidade de alfaces para preparar as etiquetas corretas. A fração indicada se refere ao total de mudas recebidas.",
+      "stem": "Quantas mudas de alface devem ser separadas?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "12",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "84 ÷ 7 = 12 é uma sétima parte; são necessárias duas partes."
+        },
+        {
+          "id": "B",
+          "content": "21",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "84 ÷ 4 = 21, mas a fração pedida corresponde a 2 × (84 ÷ 7)."
+        },
+        {
+          "id": "C",
+          "content": "24",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "36",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "A fração solicitada é 2/7, menor que 1/2."
+        },
+        {
+          "id": "E",
+          "content": "60",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "84 − 24 = 60 representa as mudas que não são alface."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "Conferência 1: 84 ÷ 7 = 12 mudas por sétimo; 2 × 12 = 24 mudas de alface. Conferência 2: 2/7 × 84 = (2 × 84) ÷ 7 = 168 ÷ 7 = 24.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-17",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.RATIO.INTERPRET",
+      "conceptIds": [
+        "MAT.RATIO.INTERPRET"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Um ônibus escolar saiu de Concórdia para uma visita a um museu em Joaçaba. Em um trecho contínuo da viagem, percorreu 72 quilômetros em 1 hora e 30 minutos, mantendo a mesma velocidade média durante esse período. O motorista registrou o tempo em horas para comparar o percurso com outra rota da região. Para este problema, não conte paradas nem mudanças de velocidade em outros trechos. A turma quer expressar a distância percorrida por hora nesse trecho da viagem.",
+      "stem": "Qual foi a velocidade média do ônibus nesse trecho, em quilômetros por hora?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "36 km/h",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "O tempo é 1,5 hora, não 2 horas."
+        },
+        {
+          "id": "B",
+          "content": "48 km/h",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "54 km/h",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "A duração registrada é 1 hora e 30 minutos, ou 1,5 hora."
+        },
+        {
+          "id": "D",
+          "content": "72 km/h",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "A divisão deve considerar também os 30 minutos adicionais."
+        },
+        {
+          "id": "E",
+          "content": "108 km/h",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Velocidade média é distância dividida pelo tempo, não o produto."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "Conferência 1: 1 h 30 min = 1,5 h; velocidade média = 72 ÷ 1,5 = 48 km/h. Conferência 2: em 1,5 h a 48 km/h, a distância é 48 × 1,5 = 72 km, confirmando o valor.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-18",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.ALG.EXPRESSION",
+      "conceptIds": [
+        "MAT.ALG.EXPRESSION",
+        "MAT.EQ1.MODEL"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Uma turma de Brusque está arrecadando dinheiro para comprar materiais de desenho. No primeiro dia, vendeu alguns blocos de papel por R$ 8,00 cada. No segundo dia, vendeu a mesma quantidade de blocos e recebeu também uma doação fixa de R$ 20,00. Somando as vendas e a doação do segundo dia, a arrecadação foi de R$ 100,00. Não houve outros custos nem entradas. A equipe precisa descobrir quantos blocos foram vendidos em cada dia para registrar a prestação de contas.",
+      "stem": "Quantos blocos de papel foram vendidos em cada dia?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "20",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "10 blocos em cada dia somam 20 no total; a pergunta pede a quantidade de cada dia."
+        },
+        {
+          "id": "B",
+          "content": "9",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Não há uma segunda parcela de R$ 8 além das vendas descritas."
+        },
+        {
+          "id": "C",
+          "content": "12",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "(100 − 4) ÷ 8 = 12 blocos, mas a doação registrada é R$ 20,00."
+        },
+        {
+          "id": "D",
+          "content": "10",
+          "correct": true
+        },
+        {
+          "id": "E",
+          "content": "13",
+          "correct": false,
+          "targetsError": "calculation",
+          "rationale": "80 ÷ 6 ≈ 13,3, arredondado para 13; o preço do bloco é R$ 8,00."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "D"
+      },
+      "explanation": "Conferência 1: a venda do segundo dia arrecadou 100 − 20 = R$ 80; a R$ 8 por bloco, foram 80 ÷ 8 = 10 blocos. Conferência 2: substituindo x = 10 na expressão 8x + 20, obtemos 8 × 10 + 20 = 100, que confere com o total informado.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-19",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.EQ2.CONTEXT",
+      "conceptIds": [
+        "MAT.EQ2.CONTEXT"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Um painel retangular para uma exposição de ciências em Florianópolis terá área de 96 decímetros quadrados. Para caber em um suporte já instalado, seu comprimento precisa ser 4 decímetros maior que sua largura. A equipe vai encomendar uma placa rígida sob medida e, antes disso, quer encontrar as duas dimensões. O painel será usado na orientação horizontal, mas a área não depende dessa posição. Considere dimensões positivas e desconsidere a espessura do material.",
+      "stem": "Qual é a largura do painel?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "6 dm",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "6 × 10 = 60, não 96."
+        },
+        {
+          "id": "B",
+          "content": "7 dm",
+          "correct": false,
+          "targetsError": "distractor",
+          "rationale": "7 × 11 = 77 dm²."
+        },
+        {
+          "id": "C",
+          "content": "8 dm",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "12 dm",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "O lado maior mede 12 dm; a largura é o lado menor."
+        },
+        {
+          "id": "E",
+          "content": "10 dm",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "√96 ≈ 9,8 dm, aproximadamente 10, mas isso não leva em conta que os lados diferem em 4 dm."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "Conferência 1: se a largura é x, x(x + 4) = 96; x² + 4x − 96 = 0 = (x + 12)(x − 8), então a dimensão positiva é x = 8 dm. Conferência 2: fatores de 96 com diferença 4 são 8 e 12; logo a largura, que é a menor dimensão, mede 8 dm.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-20",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.GEO.PERIMETER",
+      "conceptIds": [
+        "MAT.GEO.PERIMETER",
+        "MAT.GEO.ANGLES"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "applied",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Uma placa triangular de sinalização será pintada por estudantes em uma escola de Mafra. O molde tem lados de 7 centímetros, 9 centímetros e 12 centímetros; o desenho foi conferido para garantir que essas medidas formem um triângulo. Uma fita será colada ao longo de toda a borda, sem sobreposição, para destacar o contorno. O grupo comprou a fita em centímetros e quer saber quanto será usado em uma placa. Não é necessário acrescentar material para prender a fita.",
+      "stem": "Qual é o comprimento de fita necessário para contornar uma placa?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "16 cm",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "7 + 9 = 16 cm; o contorno também inclui o lado de 12 cm."
+        },
+        {
+          "id": "B",
+          "content": "19 cm",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Todos os três lados fazem parte do perímetro."
+        },
+        {
+          "id": "C",
+          "content": "28 cm",
+          "correct": true
+        },
+        {
+          "id": "D",
+          "content": "26 cm",
+          "correct": false,
+          "targetsError": "calculation",
+          "rationale": "Substituir 12 por 10 e somar 7 + 9 + 10 dá 26 cm; o perímetro usa as medidas exatas."
+        },
+        {
+          "id": "E",
+          "content": "25 cm",
+          "correct": false,
+          "targetsError": "calculation",
+          "rationale": "Arredondar 7, 9 e 12 para 5, 10 e 10 dá 25 cm, embora se devam somar as medidas exatas."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "C"
+      },
+      "explanation": "Conferência 1: perímetro = 7 + 9 + 12 = 28 cm. Conferência 2: agrupe os lados 7 + 9 = 16 e some o terceiro lado, 16 + 12 = 28 cm; a fita contorna os três lados uma vez cada.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    },
+    {
+      "id": "SIM-MAT-21",
+      "version": 1,
+      "subjectCode": "MAT",
+      "primaryConceptId": "MAT.DATA.TABLE.READ",
+      "conceptIds": [
+        "MAT.DATA.TABLE.READ",
+        "MAT.PROB.FREQUENCY"
+      ],
+      "type": "multiple_choice",
+      "difficulty": "ifsc",
+      "cognitiveOperations": [
+        "interpret",
+        "calculate",
+        "apply"
+      ],
+      "stimulus": "Para uma pesquisa sobre transporte escolar em Gaspar, uma turma registrou as respostas de 30 estudantes em uma tabela: 12 vão de ônibus, 9 são levados de carro, 6 caminham e 3 chegam de bicicleta. A professora vai sortear uma pessoa entre as que responderam, usando papéis idênticos com os nomes de todos os estudantes. Cada nome aparece uma única vez. O sorteio é feito sem olhar, e a turma quer calcular a chance de a pessoa sorteada caminhar até a escola. Considere que todos os participantes têm a mesma chance.",
+      "stem": "Qual é a probabilidade de sortear um estudante que caminha até a escola?",
+      "choices": [
+        {
+          "id": "A",
+          "content": "1/10",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Há três estudantes de bicicleta, mas seis que caminham."
+        },
+        {
+          "id": "B",
+          "content": "1/5",
+          "correct": true
+        },
+        {
+          "id": "C",
+          "content": "1/4",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "6 ÷ 24 = 1/4, mas todos os 30 estudantes fazem parte do sorteio."
+        },
+        {
+          "id": "D",
+          "content": "2/5",
+          "correct": false,
+          "targetsError": "conceptual",
+          "rationale": "12 de 30 usam ônibus, o que dá 2/5, mas o evento pedido tem seis caminhantes."
+        },
+        {
+          "id": "E",
+          "content": "6/27",
+          "correct": false,
+          "targetsError": "procedural",
+          "rationale": "Sem excluir participantes, o denominador do sorteio continua sendo 30."
+        }
+      ],
+      "answer": {
+        "kind": "multiple_choice",
+        "choiceId": "B"
+      },
+      "explanation": "Conferência 1: há 6 caminhantes entre 30 estudantes; 6/30 simplifica para 1/5. Conferência 2: 30 ÷ 6 = 5, então os casos favoráveis formam uma de cinco partes iguais do grupo; a chance é 1/5.",
+      "sourceIds": [],
+      "assets": [],
+      "items": [],
+      "destinations": [],
+      "provenance": {
+        "type": "generated",
+        "generationRunId": "chatgpt-simulados-2026-10"
+      },
+      "exposurePolicy": {
+        "minimumDaysBetween": 0,
+        "reservedForAssessment": false
+      },
+      "status": "draft"
+    }
+  ]
+}
