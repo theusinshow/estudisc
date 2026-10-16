@@ -1,4 +1,4 @@
-import {desc,sql} from "drizzle-orm";
+import {desc,eq,sql} from "drizzle-orm";
 import {packImports} from "@/db/schema";
 import {trackPackV2Schema} from "@/features/import/application/track-pack-v2-schema";
 import {getDatabase} from "@/db/connection";
@@ -9,9 +9,10 @@ export class ContentBundleResolver {constructor(protected readonly db:ContentDat
 async lessonBundle(stableId:string,version:number){
 
     // Only snapshots holding this lesson version qualify; filtering in SQL avoids transferring every manifest.
-    const packs=await this.db.select().from(packImports).where(sql`jsonb_path_exists(${packImports.manifest}, '$.track.modules[*].lessons[*] ? (@.id == $id && @.version == $version)', jsonb_build_object('id', ${stableId}::text, 'version', ${version}::int))`).orderBy(desc(packImports.importedAt));
+    const candidates=await this.db.select({id:packImports.id}).from(packImports).where(sql`jsonb_path_exists(${packImports.manifest}, '$.track.modules[*].lessons[*] ? (@.id == $id && @.version == $version)', jsonb_build_object('id', ${stableId}::text, 'version', ${version}::int))`).orderBy(desc(packImports.importedAt));
 
-    for(const row of packs){const parsed=trackPackV2Schema.safeParse(row.manifest);if(!parsed.success)continue;
+    // Load manifests one at a time, newest first: later snapshots of the Track also contain this version.
+    for(const candidate of candidates){const [row]=await this.db.select().from(packImports).where(eq(packImports.id,candidate.id));const parsed=trackPackV2Schema.safeParse(row?.manifest);if(!parsed.success)continue;
 
       const lesson=parsed.data.track.modules.flatMap(m=>m.lessons).find(l=>l.id===stableId&&l.version===version);if(!lesson)continue;
 
