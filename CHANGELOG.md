@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-16 — Vercel functions next to the database
+
+- Vercel functions ran in `iad1` (Washington) while the Aiven database is in Santa Clara, California, so every query crossed the US and logged-in pages took seconds. `vercel.json` pins functions to `sfo1` (San Francisco).
+
 ## 2026-10-16 — Visuals can be added to published lessons
 
 - Lesson versions may append safe embedded figures, hotspots and interactive maps with credit and long description (ADR 0062 amendment).
