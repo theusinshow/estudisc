@@ -3,6 +3,11 @@
 LIVE: the second Portuguese ten-lesson increment (POR-01/06/08/11/15/18/20/21/22/24 v3), exact originals/80 refs preserved through actual Admin Direct. Both complete backups and publication/history checks passed; final old-Question layout acceptance follows PR23. POR-14 remains excluded from an unresolved local/current-source binding mismatch. User explicitly confirmed Terra for the scored-enrichment contract. NEXT ACTION: eight required checks → protected PR23 merge/READY alias → published POR-04/15/24 and remaining language readers → current Terra handoff. No independent editorial approval is pending.
 
 
+## IFSC simulados with standalone Questions — ADR 0065 (2026-10-16, Claude)
+
+Goal: full IFSC simulados (28 Questions, 7 per area, 240 min) built from new Questions that no lesson contains. Assumptions: subject content lives in per-subject Tracks; templates use the combined `ifsc-2027` Track plus `scopeTrackIds`. Acceptance: ADMIN-only import of standalone drafts and release registration, Admin Direct publication with audit events, no exposure in practice/review/planner, FULL_SIMULATION composition refusals, student start → answer → finish → per-area result. Done locally: contracts, repository, publication method, admin API, template scope union, converters/builder/prepare CLI, unit + PGlite tests.
+NEXT ACTION: when MAT-SIM.json is valid JSON, run `simulado-prepare.ts`, confirm live Track stable ids, then (with user authorization) take a backup, import and publish the standalone sets, and import templates 1–3.
+
 ## Lesson pack correction plan — phase 0 (2026-10-15, Claude, branch feat/pack-validator-20261015)
 
 Source: user-supplied correction plan (phases 0–5) based on REVISAO-AULAS.md. Phase 0 DONE locally: validator, config, baseline (227 known violations), CI step in `pack-validation`, 11 unit tests. Deviations, all deliberate: R1 is word-bounded (avoids "independentes" and "recorte do espaço"); R4 is warn; R5 skips packs with fewer than 20 questions; the CI step runs in the existing pack-validation job instead of lint.

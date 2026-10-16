@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — Standalone simulado Questions (ADR 0065)
+
+- New ADMIN-only path for standalone assessment Questions: import new draft Questions bound to a Track's Concepts and register their releases (`StandaloneQuestionRepository.importSet`), then publish them through Admin Direct with one audit event each (`ContentPublicationService.publishStandaloneQuestionsDirect`). They are never attached to a lesson. Exposed at `POST /api/admin/standalone-questions`.
+- Re-running an import is idempotent. Changed content, official or reserved provenance, and ids already used by a Pack, an activity or an exit ticket are refused. Practice, review and the planner never offer these Questions.
+- Assessment templates accept an optional `scopeTrackIds`, so one FULL_SIMULATION can use Concepts from all subject Tracks. Existing templates are unchanged.
+- Content Studio: `simulado-questions.ts` converts the ChatGPT and Codex mathematics formats (documented topic→Concept table, `SIM-` ids), `simulado-builder.ts` builds `Simulado IFSC <n>` templates (28 Questions, 7 per area, 240 min) checked by the engine's composition rules, and `simulado-prepare.ts` writes import files offline.
+
 ## 2026-10-16 — Paid access until the exam; phase 1 corrections live
 
 - Paid access (ADR 0061, still behind `FEATURE_PAID_ACCESS`): one R$ 50 payment now gives access until the end of the IFSC 2027/1 exam day (29/11/2026, Brasília) instead of lifetime access. Payments, scholarship invites and admin grants record that end, and the texts no longer promise lifetime access.
