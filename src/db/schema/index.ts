@@ -8,3 +8,4 @@ export * from "./lesson-resumes";
 export * from "./assessments";
 export * from "./question-assets";
 export * from "./content-qa";
+export * from "./billing";
