@@ -87,22 +87,22 @@
         {
           "claim": "Sujeito é sempre quem pratica ação.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "O sujeito é um termo sintático, não necessariamente o agente da ação. Ex.: Em “O muro foi pintado por Ana”, “o muro” é sujeito e Ana é agente."
         },
         {
           "claim": "O primeiro termo é sempre sujeito.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "A posição inicial pode ser ocupada por adjunto ou complemento, e o sujeito pode vir depois do verbo. Ex.: Em “Ontem chegaram os convidados”, “os convidados” é sujeito."
         },
         {
           "claim": "Todo termo depois do verbo é objeto direto.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "Termos pós-verbais podem exercer funções diversas conforme a regência e a estrutura. Ex.: Em “Ela gosta de música”, “de música” complementa o verbo com preposição."
         },
         {
           "claim": "Se a ordem muda, a função muda automaticamente.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "A posição pode mudar sem alterar a função sintática, embora altere o foco. Ex.: “Ontem, a turma leu o texto” mantém “ontem” como adjunto adverbial."
         }
       ]
     },

@@ -89,22 +89,22 @@
         {
           "claim": "Conectores são enfeites removíveis.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "Conectores explicitam relações, e sua retirada pode deixar o vínculo lógico obscuro ou alterá-lo. Ex.: “Choveu; portanto, o jogo foi adiado” marca consequência."
         },
         {
           "claim": "Todo “pois” tem o mesmo valor.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "O valor de “pois” depende da posição e do contexto: pode explicar causa ou introduzir conclusão. Ex.: “Feche a janela, pois está frio” explica; “Está frio; devemos, pois, fechar a janela” conclui."
         },
         {
           "claim": "“Mas” e “portanto” são trocáveis.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "“Mas” introduz contraste e “portanto” apresenta consequência, de modo que não são intercambiáveis. Ex.: “Queria sair, mas choveu” contrasta; “Choveu; portanto, fiquei em casa” conclui."
         },
         {
           "claim": "Duas conjunções são sempre sinônimas.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "Conjunções próximas podem expressar relações diferentes, como causa e concessão. Ex.: “Ficou em casa porque chovia” não equivale a “Ficou em casa embora chovesse”."
         }
       ]
     },

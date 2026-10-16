@@ -90,22 +90,22 @@
           {
             "claim": "Inferir é escolher a interpretação mais criativa.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Inferência válida combina pistas do texto e conhecimento compartilhado, sem inventar uma história. Ex.: “João entrou com o guarda-chuva pingando” permite inferir que choveu."
           },
           {
             "claim": "Toda informação implícita é subjetiva.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Uma informação implícita pode ser sustentada por marcas linguísticas objetivas. Ex.: “Lia voltou a estudar” pressupõe que ela estudava antes."
           },
           {
             "claim": "Pressuposto e opinião do leitor são a mesma coisa.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Pressuposto é acionado por uma expressão, ao passo que opinião manifesta uma avaliação. Ex.: “Ana parou de fumar” pressupõe que fumava; “prefiro chá” é opinião."
           },
           {
             "claim": "Se não está escrito literalmente, não pode ser cobrado.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "O texto pode pressupor ou sugerir dados sem declará-los literalmente. Ex.: “Pedro deixou de atrasar” indica que ele se atrasava."
           }
         ]
       },

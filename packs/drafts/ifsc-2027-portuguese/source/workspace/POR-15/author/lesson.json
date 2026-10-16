@@ -86,22 +86,22 @@
         {
           "claim": "Toda ambiguidade é erro gramatical.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "Ambiguidade pode ser recurso expressivo ou efeito da estrutura, sem constituir erro obrigatório. Ex.: “Vi o homem com o binóculo” permite duas ligações sintáticas."
         },
         {
           "claim": "Se há duas leituras nenhuma pode ser defendida.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "As pistas do enunciado podem sustentar uma das leituras, mesmo que a frase isolada permita duas. Ex.: “A professora falou com a aluna nervosa” pode descrever a professora ou a aluna."
         },
         {
           "claim": "Ambiguidade só vem de palavras polissêmicas.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "A estrutura sintática e o escopo de pronomes também criam ambiguidade, sem depender de polissemia lexical. Ex.: “Vi a irmã da médica que chegou” deixa incerto quem chegou."
         },
         {
           "claim": "Literatura deve eliminar duplo sentido.",
           "status": "INCORRECT",
-          "instruction": "Explique por que a generalização falha."
+          "instruction": "O duplo sentido pode ser intencional e contribuir para humor, ironia ou poesia. Ex.: “Fim de linha” pode nomear o término de uma rota e o limite de uma situação."
         }
       ]
     },

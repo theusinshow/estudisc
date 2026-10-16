@@ -8,6 +8,7 @@
     "estudisc-content": "tsx tools/estudisc-content-studio/cli.ts",
     "vecta-content": "tsx tools/vecta-content-studio/cli.ts",
     "dev": "next dev",
+    "validate:packs": "node scripts/validate-packs.mjs",
     "packs:verify": "node scripts/verify-pack-catalog.mjs",
     "generate:tokens": "node scripts/generate-design-tokens.mjs",
     "lint": "eslint .",

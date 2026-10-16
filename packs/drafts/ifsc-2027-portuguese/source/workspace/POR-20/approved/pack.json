@@ -90,22 +90,22 @@
           {
             "claim": "Muitos conectores garantem coerência.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Conectores só ajudam quando a relação expressa combina com as ideias relacionadas. Ex.: “A sala está vazia; portanto, todos estão sentados em seus lugares” cria uma conclusão incompatível com a premissa."
           },
           {
             "claim": "Coerência é não cometer erro gramatical.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Coerência global não é o mesmo que correção gramatical; frases corretas podem não formar uma sequência de sentido. Ex.: “O gato dormia no sofá. Por isso, a eleição ocorreu terça-feira” não explicita relação lógica."
           },
           {
             "claim": "Todo parágrafo deve repetir a tese.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "A progressão desenvolve a tese com razões, dados e consequências, sem repetir a mesma frase. Ex.: Um texto sobre ônibus pode avançar da tese para dados de frequência e relatos de passageiros."
           },
           {
             "claim": "Qualquer informação verdadeira melhora o texto.",
             "status": "INCORRECT",
-            "instruction": "Explique por que a generalização falha."
+            "instruction": "Uma informação verdadeira ainda pode ser irrelevante ao assunto em desenvolvimento. Ex.: Num parágrafo sobre o horário da biblioteca, “Júpiter tem luas” não amplia o tema."
           }
         ]
       },
