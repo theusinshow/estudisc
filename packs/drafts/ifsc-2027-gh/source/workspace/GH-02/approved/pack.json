@@ -126,13 +126,14 @@
         "id": "GH-02-B09",
         "type": "WORKED_EXAMPLE",
         "title": "Como resolver uma questão",
-        "prompt": "No mapa, dois pontos estão separados por 4 cm. A escala numérica é 1:50.000. Qual é a distância real em linha reta?",
-        "answer": "1 cm representa 50.000 cm. Então 4 × 50.000 = 200.000 cm; como 100.000 cm = 1 km, a distância real é 2 km. Conferência:",
+        "prompt": "Uma questão apresenta uma fonte relacionada a Cartografia: mapas, orientação, coordenadas e escala. Como decidir entre alternativas plausíveis?",
+        "answer": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica.",
         "reasoning": [
-          "Leia a escala: cada unidade no mapa representa 50.000 unidades iguais no terreno.",
-          "Multiplique a distância do mapa pelo denominador: 4 × 50.000 = 200.000 cm.",
-          "Converta centímetros em quilômetros dividindo por 100.000.",
-          "Confira a ordem de grandeza e mantenha a unidade pedida."
+          "Leia primeiro o comando da questão e identifique o que precisa ser decidido.",
+          "Extraia da fonte apenas as evidências explícitas.",
+          "Ative o conceito da aula que explica a evidência.",
+          "Elimine alternativas absolutas, anacrônicas ou que contradigam fonte e contexto.",
+          "Escolha a alternativa que combina evidência e conhecimento histórico/geográfico sem extrapolar."
         ]
       },
       {
@@ -141,9 +142,9 @@
         "variant": "IFSC_STRATEGY",
         "title": "Estratégia IFSC",
         "items": [
-          "Latitude mede posição norte-sul; longitude, leste-oeste — nenhuma delas indica altitude.",
-          "Em 1:50.000, 1 cm representa 50.000 cm no terreno; confira a conversão antes de comparar distâncias.",
-          "Escala 1:10.000 é maior e mostra mais detalhe que 1:1.000.000."
+          "O IFSC frequentemente usa uma situação real, texto, mapa, charge, fotografia ou documento antes da pergunta.",
+          "Não procure apenas uma palavra igual à aula: teste cada alternativa contra fonte e contexto.",
+          "Cuidado com alternativas com 'sempre', 'apenas', 'todos', 'nunca' quando o processo histórico/geográfico é mais complexo."
         ]
       },
       {
