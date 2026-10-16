@@ -12,6 +12,7 @@ export const FREE_SAMPLE_LESSON_IDS = ["MAT-07", "CIE-06", "POR-01", "GH-06"] as
 
 export type FreeSampleLessonId = (typeof FREE_SAMPLE_LESSON_IDS)[number];
 
+/** Titles mirror the published lessons that open for free (latest version of each stable id). */
 export const FREE_SAMPLE_LESSONS: ReadonlyArray<{
   id: FreeSampleLessonId;
   subject: string;
@@ -21,26 +22,26 @@ export const FREE_SAMPLE_LESSONS: ReadonlyArray<{
   {
     id: "MAT-07",
     subject: "Matemática",
-    title: "Porcentagem: parte, desconto e preço final",
-    interactiveFeature: "Explorador numérico de descontos + passos guiados"
+    title: "Porcentagem",
+    interactiveFeature: "Explorador numérico + passos guiados + 12 questões"
   },
   {
     id: "CIE-06",
     subject: "Ciências",
-    title: "Estrutura atômica: partículas, massa e íons",
-    interactiveFeature: "Simulador interativo 'Monte um átomo' + classificação"
+    title: "Circuitos elétricos",
+    interactiveFeature: "Esquema de circuito + 8 questões"
   },
   {
     id: "POR-01",
     subject: "Português",
-    title: "Compreensão e inferência: o texto sustenta sua leitura?",
-    interactiveFeature: "Predição guiada + destaque de evidências no texto"
+    title: "Gêneros do discurso, tipos textuais e modalidades",
+    interactiveFeature: "Previsão guiada + 8 questões"
   },
   {
     id: "GH-06",
     subject: "Geografia e História",
-    title: "Escravidão, resistência e abolição como processo",
-    interactiveFeature: "Linha do tempo interativa + classificação histórica"
+    title: "Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina",
+    interactiveFeature: "Exemplo comentado + 8 questões"
   }
 ];
 

@@ -18,19 +18,19 @@ describe("PaywallPanel component", () => {
     ).toBeInTheDocument();
 
     // All 4 flagship interactive sample lessons are listed with links
-    expect(screen.getByRole("link", { name: /Matemática · Porcentagem: parte, desconto e preço final/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /Matemática · Porcentagem/i })).toHaveAttribute(
       "href",
       "/lessons/MAT-07"
     );
-    expect(screen.getByRole("link", { name: /Ciências · Estrutura atômica: partículas, massa e íons/i })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /Ciências · Circuitos elétricos/i })).toHaveAttribute(
       "href",
       "/lessons/CIE-06"
     );
     expect(
-      screen.getByRole("link", { name: /Português · Compreensão e inferência: o texto sustenta sua leitura\?/i })
+      screen.getByRole("link", { name: /Português · Gêneros do discurso, tipos textuais e modalidades/i })
     ).toHaveAttribute("href", "/lessons/POR-01");
     expect(
-      screen.getByRole("link", { name: /Geografia e História · Escravidão, resistência e abolição como processo/i })
+      screen.getByRole("link", { name: /Geografia e História · Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina/i })
     ).toHaveAttribute("href", "/lessons/GH-06");
 
     // Scholarship / cohort invite input is accessible

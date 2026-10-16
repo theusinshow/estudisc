@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-16 — Free sample lesson titles
+
+- The paywall and `/conheca` listed old titles for the free lessons ("Estrutura atômica", "Compreensão e inferência", "Escravidão, resistência e abolição"). They now match the published lessons that actually open for free: Porcentagem, Circuitos elétricos, Gêneros do discurso, tipos textuais e modalidades, and Africanos, afrodescendentes e comunidades quilombolas em Santa Catarina, with accurate feature descriptions.
+
 ## 2026-10-16 — Support, parents page and sharing
 
 - Public `/suporte` (FAQ on account, payment, refund, study and data; e-mail contact) and `/pais-e-escolas` (what the student gets, how to follow progress, safety, price, class access codes).
