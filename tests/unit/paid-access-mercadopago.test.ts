@@ -9,8 +9,7 @@ import {
   evaluateEntitlementAccess,
   FREE_SAMPLE_LESSON_IDS,
   isFreeSampleLessonId,
-  LIFETIME_PRODUCT_ID
-} from "@/features/payments/contracts";
+  LIFETIME_PRODUCT_ID, PAID_ACCESS_ENDS_AT } from "@/features/payments/contracts";
 import {
   buildExternalReference,
   computeMercadoPagoSignatureManifest,
@@ -105,7 +104,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
     const granted = await repo.redeemInviteCode(ownerId, "ifsc-bolsa-2027", new Date("2026-10-15T12:00:00Z"), "Maria");
     expect(granted.status).toBe("granted");
     expect(granted.source).toBe("invite_code");
-    expect(granted.endsAt).toBeNull();
+    expect(granted.endsAt?.toISOString()).toBe(PAID_ACCESS_ENDS_AT);
 
     // Idempotent if same already-entitled owner redeems again
     const repeat = await repo.redeemInviteCode(ownerId, "IFSC-BOLSA-2027", new Date("2026-10-15T12:01:00Z"), "Maria");
@@ -188,7 +187,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
     if (firstResult.action === "granted") {
       expect(firstResult.created).toBe(true);
       expect(firstResult.record.amountCents).toBe(5000);
-      expect(firstResult.record.endsAt).toBeNull();
+      expect(firstResult.record.endsAt?.toISOString()).toBe(PAID_ACCESS_ENDS_AT);
     }
 
     // 2. Replay of the exact same webhook is idempotent
@@ -275,7 +274,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
         const body = JSON.parse(String(init?.body));
         expect(body.items[0].unit_price).toBe(50);
         expect(body.items[0].currency_id).toBe("BRL");
-        expect(body.external_reference).toBe("google-live-user:estudisc-lifetime-full:livenonce");
+        expect(body.external_reference).toBe("google-live-user:ifsc-2027-1-full:livenonce");
         return new Response(
           JSON.stringify({
             id: "pref-999",

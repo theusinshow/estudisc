@@ -13,8 +13,7 @@ import {
   type EntitlementRecord,
   type EntitlementSource,
   type EntitlementStatus,
-  type InviteCodeRecord
-} from "@/features/payments/contracts";
+  type InviteCodeRecord, paidAccessEndsAt } from "@/features/payments/contracts";
 import { getMemoryStore, type MemoryStore } from "./memory/store";
 
 type Database = PgDatabase<PgQueryResultHKT, typeof schema>;
@@ -147,7 +146,7 @@ export class DrizzleEntitlementRepository implements EntitlementRepository {
           amountCents: input.amountCents ?? 0,
           currency: input.currency ?? LIFETIME_CURRENCY,
           startsAt: input.startsAt ?? now,
-          endsAt: input.endsAt ?? null,
+          endsAt: input.endsAt ?? paidAccessEndsAt(),
           metadata: input.metadata ?? {},
           createdAt: now
         })
@@ -249,7 +248,7 @@ export class DrizzleEntitlementRepository implements EntitlementRepository {
           amountCents: 0,
           currency: LIFETIME_CURRENCY,
           startsAt: now,
-          endsAt: null,
+          endsAt: paidAccessEndsAt(),
           metadata: { inviteCode: normalized, inviteId: invite.id, label: invite.label },
           createdAt: now
         })
@@ -353,7 +352,7 @@ export class MemoryEntitlementRepository implements EntitlementRepository {
       amountCents: input.amountCents ?? 0,
       currency: input.currency ?? LIFETIME_CURRENCY,
       startsAt: input.startsAt ?? now,
-      endsAt: input.endsAt ?? null,
+      endsAt: input.endsAt ?? paidAccessEndsAt(),
       metadata: { ...(input.metadata ?? {}), ...(input.displayName ? { displayName: input.displayName } : {}) },
       createdAt: now
     };
@@ -429,7 +428,7 @@ export class MemoryEntitlementRepository implements EntitlementRepository {
       amountCents: 0,
       currency: LIFETIME_CURRENCY,
       startsAt: now,
-      endsAt: null,
+      endsAt: paidAccessEndsAt(),
       metadata: { inviteCode: normalized, inviteId: invite.id, label: invite.label },
       createdAt: now
     });

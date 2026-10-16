@@ -14,7 +14,7 @@ describe("PaywallPanel component", () => {
       screen.getByRole("heading", { name: /Desbloqueie "Equações do 1º grau" e todo o curso IFSC/i })
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("button", { name: /Liberar acesso vitalício por R\$ 50 \(Pix ou Cartão\)/i })
+      screen.getByRole("button", { name: /Liberar acesso até a prova por R\$ 50 \(Pix ou cartão\)/i })
     ).toBeInTheDocument();
 
     // All 4 flagship interactive sample lessons are listed with links

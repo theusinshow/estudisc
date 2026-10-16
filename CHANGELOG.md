@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-16 — Paid access until the exam; phase 1 corrections live
+
+- Paid access (ADR 0061, still behind `FEATURE_PAID_ACCESS`): one R$ 50 payment now gives access until the end of the IFSC 2027/1 exam day (29/11/2026, Brasília) instead of lifetime access. Payments, scholarship invites and admin grants record that end, and the texts no longer promise lifetime access.
+- Phase 1 lesson corrections are live: 118 correction versions published through Admin Direct with audit events. No internal editorial text or "INCORRECT" remains in any student-visible field of the latest published lessons.
+
 ## 2026-10-15 — Correction versions and phase 1 lesson cleanup (ADR 0062)
 
 - `caderno.lesson.v2` accepts optional `corrections`: hash-bound replace/remove of listed published blocks, on top of the published (enriched) version. Block type and Concepts are kept, text uses the existing renderers, and figures may change only their text, never the image. Without `corrections`, imports stay append-only.

@@ -3,6 +3,7 @@ import { z } from "zod";
 import { getEntitlementRepository, type EntitlementRepository } from "@/db/repositories/entitlement-repository";
 import {
   LIFETIME_CURRENCY,
+  paidAccessEndsAt,
   LIFETIME_PRICE_BRL,
   LIFETIME_PRICE_CENTS,
   LIFETIME_PRODUCT_ID,
@@ -134,8 +135,8 @@ export async function createMercadoPagoCheckoutPreference(params: {
       items: [
         {
           id: LIFETIME_PRODUCT_ID,
-          title: "Estudisc — Acesso Completo Vitalício (IFSC)",
-          description: "Acesso completo para sempre a todas as 132 aulas interativas, 1.144 questões e simulados.",
+          title: "Estudisc — Acesso completo até a prova do IFSC 2027/1",
+          description: "Acesso completo a todas as aulas, questões e revisões até o dia da prova (29/11/2026).",
           quantity: 1,
           currency_id: LIFETIME_CURRENCY,
           unit_price: LIFETIME_PRICE_BRL
@@ -267,7 +268,7 @@ export async function processMercadoPagoWebhook(params: {
       amountCents,
       currency: payment.currency_id,
       startsAt: params.now ?? new Date(),
-      endsAt: null,
+      endsAt: paidAccessEndsAt(),
       metadata: {
         nonce: reference.nonce,
         paymentTypeId: payment.payment_type_id ?? null,
@@ -288,7 +289,7 @@ export async function processMercadoPagoWebhook(params: {
       amountCents,
       currency: payment.currency_id,
       startsAt: params.now ?? new Date(),
-      endsAt: null,
+      endsAt: paidAccessEndsAt(),
       metadata: { nonce: reference.nonce },
       createdAt: params.now ?? new Date()
     });
@@ -305,7 +306,7 @@ export async function processMercadoPagoWebhook(params: {
       amountCents,
       currency: payment.currency_id,
       startsAt: params.now ?? new Date(),
-      endsAt: null,
+      endsAt: paidAccessEndsAt(),
       metadata: { nonce: reference.nonce, reason: "charged_back" },
       createdAt: params.now ?? new Date()
     });

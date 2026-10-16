@@ -18,7 +18,7 @@ export default async function UpgradePage({ searchParams }: UpgradePageProps) {
       <AppShell mode="page">
         <article className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="entitled-title">
           <p className="eyebrow">Acesso Completo Ativo</p>
-          <h1 id="entitled-title">Seu acesso completo vitalício está liberado!</h1>
+          <h1 id="entitled-title">Seu acesso completo até a prova está liberado!</h1>
           <p>
             Você tem acesso irrestrito a todas as 132 aulas, 1.144 questões, simulados e plano de estudos do Estudisc.
           </p>

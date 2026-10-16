@@ -39,3 +39,7 @@ The owner approved evolving Estudisc into a popular-price social SaaS: **R$ 50,0
 7. **Feature Flag & Secrets.**
    - Guarded by `FEATURE_PAID_ACCESS` (default `false`).
    - `MERCADOPAGO_ACCESS_TOKEN` and `MERCADOPAGO_WEBHOOK_SECRET` live only in server environment variables.
+
+## Amendment — access until the exam (2026-10-16)
+
+The owner confirmed that a single payment of R$ 50 gives access **until the end of the IFSC 2027/1 exam day** (29/11/2026, Brasília), not lifetime access. Every grant (Mercado Pago payment, scholarship invite, admin grant) records `ends_at = PAID_ACCESS_ENDS_AT` (`2026-11-30T03:00:00Z`) unless a caller passes an explicit end. The product id is `ifsc-2027-1-full`. No entitlements existed yet, so no data migration is needed. A later cohort gets a new product and end date.
