@@ -1,257 +1,281 @@
 [
   {
     "id": "GH-21-Q001",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Ditadura militar no Brasil, qual afirmação está correta?",
+    "stem": "Um roteiro autoral de exposição organiza fotografias de Brasília em 1964, recortes de jornais sobre a deposição de João Goulart e uma sequência de presidentes militares até 1985. Uma nota informa que a mudança de governo foi acompanhada por restrições à competição política e a direitos civis. As imagens foram selecionadas para situar o início e a duração do regime; os jornais mostram como a ruptura foi noticiada por diferentes grupos.\n\nQual leitura interpreta o conjunto?",
     "options": [
       {
         "key": "A",
-        "text": "O regime de 1964 manteve eleições presidenciais diretas e plena liberdade partidária."
+        "text": "A sucessão militar limitou a disputa política, embora mantivesse eleições diretas para a Presidência ao longo do período.",
+        "targetsError": "authoritarian_regime_as_pluralism",
+        "rationale": "A nota informa restrições à competição política, incompatíveis com eleições presidenciais diretas ao longo do regime."
       },
       {
         "key": "B",
-        "text": "O golpe de 1964 derrubou João Goulart e inaugurou um regime autoritário dirigido por governos militares até 1985."
+        "text": "O golpe derrubou João Goulart e abriu um regime autoritário dirigido por governos militares até 1985."
       },
       {
         "key": "C",
-        "text": "O AI-5 ampliou direitos civis e liberdade de imprensa."
+        "text": "A deposição de Goulart iniciou uma transição breve, com alternância entre governos civis e militares até 1985.",
+        "targetsError": "chronology_reversal",
+        "rationale": "O roteiro acompanha governos militares até 1985 e relaciona 1964 a restrições políticas."
       },
       {
         "key": "D",
-        "text": "Não houve resistência social à ditadura."
+        "text": "A ruptura alterou direitos civis, mas preservou a competição partidária em condições semelhantes às anteriores.",
+        "targetsError": "political_continuity_overreach",
+        "rationale": "A nota registra restrições à competição e aos direitos civis após a mudança de governo."
       },
       {
         "key": "E",
-        "text": "Crescimento do PIB prova que não existiram violações políticas ou desigualdade."
+        "text": "A sequência de governos militares mostra que a mudança de 1964 não afetou o calendário eleitoral.",
+        "targetsError": "election_mechanism_invention",
+        "rationale": "A sequência acompanha governos militares, e a nota destaca mudanças na competição política."
       }
     ],
     "correctOption": "B",
-    "explanation": "O golpe de 1964 derrubou João Goulart e inaugurou um regime autoritário dirigido por governos militares até 1985.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "explanation": "A sequência situa a deposição de João Goulart em 1964 e acompanha governos militares até 1985, junto a restrições políticas. A interpretação de continuidade eleitoral contradiz a nota sobre competição limitada.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-21-CON-01"
     ],
-    "targetedError": "foundation",
+    "primaryConceptId": "GH-21-CON-01",
+    "targetedError": "regime_and_timeline",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-21-Q002",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “O regime de 1964 manteve eleições presidenciais diretas e plena liberdade partidária.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Uma ficha didática compara atos institucionais promulgados durante a ditadura. Ela identifica o AI-5, de 1968, como marco de endurecimento e traz ao lado relatos de cassações e interrupção de garantias políticas. A turma observa que a medida não foi apresentada como emenda constitucional aprovada em debate aberto, mas como instrumento imposto pelo regime. O exercício pede que os alunos relacionem a data da medida às mudanças no exercício do poder.\n\nQual interpretação é apoiada pela ficha?",
     "options": [
       {
         "key": "A",
-        "text": "O regime de 1964 manteve eleições presidenciais diretas e plena liberdade partidária."
+        "text": "O AI-5 fortaleceu o Executivo, mas preservou as garantias políticas para os opositores atingidos por cassações.",
+        "targetsError": "act_effect_reversal",
+        "rationale": "A ficha associa o AI-5 à interrupção de garantias e a cassações, não à sua preservação."
       },
       {
         "key": "B",
-        "text": "O AI-5 ampliou direitos civis e liberdade de imprensa."
+        "text": "O AI-5 aprofundou a concentração de poder e restringiu garantias políticas."
       },
       {
         "key": "C",
-        "text": "Não houve resistência social à ditadura."
+        "text": "O ato foi promulgado pelo Congresso como resposta a negociações de abertura durante o regime.",
+        "targetsError": "institutional_origin_and_period",
+        "rationale": "A medida é descrita como instrumento imposto pelo regime, e não como decisão parlamentar negociada."
       },
       {
         "key": "D",
-        "text": "Atos Institucionais alteraram a ordem jurídica; o AI-5, de 1968, marcou forte endurecimento repressivo."
+        "text": "As cassações retiraram mandatos de adversários e ampliaram a competição entre os partidos restantes.",
+        "targetsError": "repression_as_pluralism",
+        "rationale": "As cassações restringiram a atividade política, em vez de ampliar a competição."
       },
       {
         "key": "E",
-        "text": "Crescimento do PIB prova que não existiram violações políticas ou desigualdade."
+        "text": "A medida endureceu o regime, mantendo sem alteração a ordem constitucional anterior.",
+        "targetsError": "chronology_reversal",
+        "rationale": "A ficha relaciona a medida a mudanças no exercício do poder e na ordem jurídica."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Atos Institucionais alteraram a ordem jurídica; o AI-5, de 1968, marcou forte endurecimento repressivo.",
-    "difficulty": "DIRECT",
+    "correctOption": "B",
+    "explanation": "A ficha data o AI-5 em 1968 e o associa ao endurecimento, às cassações e à interrupção de garantias. A leitura de ampliação de liberdades contradiz os efeitos registrados.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-21-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "primaryConceptId": "GH-21-CON-02",
+    "targetedError": "institutional_act_and_repression",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-21-Q003",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: A ditadura iniciada em 1964 restringiu direitos políticos e utilizou repressão e censura para manter o regime. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Uma atividade de arquivo compara uma matéria de jornal antes e depois de cortes feitos por órgãos do regime. O dossiê também reúne referências a prisões e denúncias de tortura, mortes e desaparecimentos. A equipe observa que a versão publicada não recupera tudo o que foi retirado e que os documentos preservados registram experiências diferentes.\n\nQual afirmação respeita o que o dossiê permite concluir?",
     "options": [
       {
         "key": "A",
-        "text": "O regime de 1964 manteve eleições presidenciais diretas e plena liberdade partidária."
+        "text": "A comparação das versões permite reconstruir integralmente o conteúdo retirado pelos censores.",
+        "targetsError": "censorship_as_freedom",
+        "rationale": "A equipe afirma que a versão publicada não permite recuperar tudo o que foi retirado."
       },
       {
         "key": "B",
-        "text": "O AI-5 ampliou direitos civis e liberdade de imprensa."
+        "text": "As denúncias mostram repressão apenas contra opositores organizados, sem atingir outros grupos sociais.",
+        "targetsError": "source_variation_as_disproof",
+        "rationale": "O dossiê cita grupos sociais diversos e não restringe as denúncias a opositores organizados."
       },
       {
         "key": "C",
-        "text": "Censura, cassações, prisões, tortura, mortes e desaparecimentos atingiram opositores e diferentes grupos da sociedade."
+        "text": "As denúncias documentam formas de repressão que atingiram opositores e outros grupos sociais."
       },
       {
         "key": "D",
-        "text": "Não houve resistência social à ditadura."
+        "text": "A ausência de trechos na versão publicada torna incerta a ocorrência das prisões citadas em outros registros.",
+        "targetsError": "censorship_as_event_denial",
+        "rationale": "As prisões também aparecem em referências independentes dos trechos censurados."
       },
       {
         "key": "E",
-        "text": "Crescimento do PIB prova que não existiram violações políticas ou desigualdade."
+        "text": "Os relatos de violência permitem tratar as experiências das pessoas presas como equivalentes.",
+        "targetsError": "individual_experience_generalization",
+        "rationale": "A equipe ressalta que os documentos preservam experiências diferentes."
       }
     ],
     "correctOption": "C",
-    "explanation": "Censura, cassações, prisões, tortura, mortes e desaparecimentos atingiram opositores e diferentes grupos da sociedade.",
-    "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "explanation": "A comparação das versões documenta a intervenção dos censores, enquanto as referências a prisões e denúncias registram formas de repressão. O material não permite reconstruir todo o conteúdo retirado nem uniformizar as experiências descritas.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-21-CON-03"
     ],
-    "targetedError": "relationship",
+    "primaryConceptId": "GH-21-CON-03",
+    "targetedError": "repression_and_censorship",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-21-Q004",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Ditadura militar no Brasil por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Uma curadora reúne canções de protesto, atas de centros acadêmicos, panfletos sindicais e documentos de organizações clandestinas da ditadura. As peças foram produzidas por grupos diferentes e em anos distintos, e não há evidência de coordenação entre todos eles.\n\nO que a seleção permite afirmar sobre as formas de resistência?",
     "options": [
       {
         "key": "A",
-        "text": "Existiram variadas formas de resistência, incluindo movimentos estudantis, culturais, políticos, sindicais e organizações clandestinas."
+        "text": "O acervo indica repertórios diversos, sem demonstrar uma direção unificada entre os grupos."
       },
       {
         "key": "B",
-        "text": "O regime de 1964 manteve eleições presidenciais diretas e plena liberdade partidária."
+        "text": "A variedade de registros sugere colaboração recorrente entre os grupos durante todo o regime.",
+        "targetsError": "coordination_as_support",
+        "rationale": "As peças são de anos e grupos distintos, sem evidência de coordenação recorrente entre todos."
       },
       {
         "key": "C",
-        "text": "O AI-5 ampliou direitos civis e liberdade de imprensa."
+        "text": "Os centros acadêmicos coordenaram as ações sindicais, culturais e clandestinas documentadas na mesa.",
+        "targetsError": "actor_conflation",
+        "rationale": "A curadora não identifica os centros acadêmicos como coordenadores dos demais grupos."
       },
       {
         "key": "D",
-        "text": "Não houve resistência social à ditadura."
+        "text": "A seleção destaca atividades culturais e estudantis, com pouca evidência de resistência política organizada.",
+        "targetsError": "cultural_resistance_denial",
+        "rationale": "A mesa também inclui panfletos sindicais e documentos de organizações clandestinas."
       },
       {
         "key": "E",
-        "text": "Crescimento do PIB prova que não existiram violações políticas ou desigualdade."
+        "text": "A diversidade de iniciativas resultou do apoio do Estado a grupos que toleravam a crítica.",
+        "targetsError": "source_purpose_reversal",
+        "rationale": "A descrição não associa as iniciativas de resistência ao apoio do Estado."
       }
     ],
     "correctOption": "A",
-    "explanation": "Existiram variadas formas de resistência, incluindo movimentos estudantis, culturais, políticos, sindicais e organizações clandestinas.",
+    "explanation": "As peças registram repertórios culturais, estudantis, sindicais e políticos. Como foram produzidas por grupos distintos e não demonstram uma direção unificada, não sustentam atribuir a coordenação a uma organização específica.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-21-CON-04"
     ],
-    "targetedError": "application",
+    "primaryConceptId": "GH-21-CON-04",
+    "targetedError": "resistance_forms",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-21-Q005",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. O golpe de 1964 derrubou João Goulart e inaugurou um regime autoritário dirigido por governos militares até 1985.\nII. O regime de 1964 manteve eleições presidenciais diretas e plena liberdade partidária.\nIII. Censura, cassações, prisões, tortura, mortes e desaparecimentos atingiram opositores e diferentes grupos da sociedade.\nIV. O AI-5 ampliou direitos civis e liberdade de imprensa.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma exposição apresenta um gráfico que registra crescimento econômico em parte da ditadura, um quadro sobre endividamento e concentração de renda e documentos sobre censura e repressão. Os curadores explicam que cada material mede ou descreve uma dimensão diferente, e que o aumento da produção não informa, por si só, como renda e direitos foram distribuídos. A visita termina com uma pergunta sobre como interpretar indicadores econômicos junto às fontes políticas.\n\nQual síntese responde melhor à proposta?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "O crescimento econômico foi acompanhado por abertura gradual da participação política em parte do regime.",
+        "targetsError": "growth_as_rights_measure",
+        "rationale": "As fontes políticas da exposição registram censura e repressão, não abertura gradual de participação."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "O endividamento reduziu a produção industrial durante todo o período apresentado no gráfico.",
+        "targetsError": "debt_as_growth_denial",
+        "rationale": "O gráfico registra crescimento em parte do período, sem sustentar uma retração industrial durante todo ele."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Indicadores de crescimento coexistiram com concentração de renda e restrição de direitos."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "As ações de censura explicam diretamente a concentração de renda registrada no quadro.",
+        "targetsError": "causal_category_error",
+        "rationale": "As fontes sobre censura descrevem controle político, mas não explicam diretamente a distribuição de renda."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "O crescimento em parte do período eliminou a concentração de renda registrada no quadro.",
+        "targetsError": "growth_benefit_uniformity",
+        "rationale": "O quadro registra concentração de renda junto ao crescimento, não sua eliminação."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "C",
+    "explanation": "O gráfico mostra crescimento em parte do período, enquanto o quadro registra concentração de renda e os documentos mostram restrição de direitos. O indicador econômico não demonstra ampliação política nem distribuição igual dos benefícios.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "ANALYZE",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "GH-21-CON-01",
       "GH-21-CON-02",
       "GH-21-CON-03",
       "GH-21-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "primaryConceptId": "GH-21-CON-01",
+    "targetedError": "economy_and_rights_synthesis",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-21-Q006",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Ditadura militar no Brasil. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Uma simulação de arquivo apresenta um jornal estudantil em duas versões: a prova original menciona uma manifestação contra o governo, e o texto publicado substitui partes por espaços e frases neutras. Um registro do arquivo informa que a redação também evitava divulgar certos nomes por receio de perseguição. A equipe alerta que a autocensura e a intervenção oficial podem deixar rastros diferentes no mesmo documento.\n\nQual interpretação do material é a mais adequada?",
     "options": [
       {
         "key": "A",
-        "text": "O regime de 1964 manteve eleições presidenciais diretas e plena liberdade partidária."
+        "text": "A versão publicada mostra que a redação concordava com as mudanças introduzidas pelos censores.",
+        "targetsError": "censored_text_as_support",
+        "rationale": "A diferença entre a prova original e a versão publicada mostra alteração, não concordância da redação."
       },
       {
         "key": "B",
-        "text": "O AI-5 ampliou direitos civis e liberdade de imprensa."
+        "text": "As versões sugerem intervenção oficial e cautela da redação, sem revelar tudo o que foi omitido."
       },
       {
         "key": "C",
-        "text": "Não houve resistência social à ditadura."
+        "text": "A comparação identifica com segurança quais cortes vieram dos censores e quais foram feitos pela redação.",
+        "targetsError": "absence_as_event_denial",
+        "rationale": "A equipe alerta que censura e autocensura podem deixar rastros diferentes, sem permitir atribuir cada corte com segurança."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "A omissão de nomes comprova que a equipe apoiava o governo e suas medidas.",
+        "targetsError": "author_intent_overreach",
+        "rationale": "O receio de perseguição explica a cautela, mas não comprova apoio ao governo."
       },
       {
         "key": "E",
-        "text": "Analisar documentos e propaganda do período distinguindo discurso oficial, experiência social e evidências de repressão."
+        "text": "A autocensura resultou de decisões editoriais individuais, sem relação com o ambiente político.",
+        "targetsError": "political_context_omission",
+        "rationale": "A nota relaciona a omissão de nomes ao receio de perseguição no período."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Analisar documentos e propaganda do período distinguindo discurso oficial, experiência social e evidências de repressão.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "SOURCE_ANALYSIS",
-    "conceptIds": [
-      "GH-21-CON-01",
-      "GH-21-CON-02",
-      "GH-21-CON-03",
-      "GH-21-CON-04",
-      "GH-21-CON-05",
-      "GH-21-CON-06"
-    ],
-    "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-  },
-  {
-    "id": "GH-21-Q007",
-    "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Ditadura militar no Brasil?",
-    "options": [
-      {
-        "key": "A",
-        "text": "O golpe de 1964 derrubou João Goulart e inaugurou um regime autoritário dirigido por governos militares até 1985."
-      },
-      {
-        "key": "B",
-        "text": "Atos Institucionais alteraram a ordem jurídica; o AI-5, de 1968, marcou forte endurecimento repressivo."
-      },
-      {
-        "key": "C",
-        "text": "Crescimento econômico em parte do período coexistiu com concentração de renda, endividamento e restrição de direitos."
-      },
-      {
-        "key": "D",
-        "text": "Não houve resistência social à ditadura."
-      },
-      {
-        "key": "E",
-        "text": "Existiram variadas formas de resistência, incluindo movimentos estudantis, culturais, políticos, sindicais e organizações clandestinas."
-      }
-    ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
-    "difficulty": "DIRECT",
+    "correctOption": "B",
+    "explanation": "A prova original, a versão publicada e a nota sobre o receio de perseguição permitem investigar intervenção oficial e cautela editorial. O arquivo não identifica com segurança a origem de cada corte nem recupera todo o conteúdo omitido.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-21-CON-01",
@@ -261,37 +285,48 @@
       "GH-21-CON-05",
       "GH-21-CON-06"
     ],
-    "targetedError": "misconception_identification",
+    "primaryConceptId": "GH-21-CON-01",
+    "targetedError": "censorship_interpretation",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
-    "id": "GH-21-Q008",
+    "id": "GH-21-Q007",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Ditadura militar no Brasil, qual conclusão final é sustentável?",
+    "stem": "Uma tabela de leitura preparada para a aula coloca lado a lado dados resumidos sobre produção, endividamento e concentração de renda durante a ditadura. O mesmo painel inclui recortes sobre censura e relatos de movimentos estudantis e sindicais. A turma nota que o indicador de produção melhora em parte do período, mas que isso não esclarece quem recebeu os ganhos nem quais grupos podiam expressar oposição.\n\nQual conclusão acompanha os limites do painel?",
     "options": [
       {
         "key": "A",
-        "text": "O regime de 1964 manteve eleições presidenciais diretas e plena liberdade partidária."
+        "text": "A melhora da produção sugere crescimento sem custos econômicos relevantes, apesar do endividamento citado.",
+        "targetsError": "economic_indicator_as_substitute",
+        "rationale": "O painel registra endividamento e concentração de renda junto à melhora da produção."
       },
       {
         "key": "B",
-        "text": "O AI-5 ampliou direitos civis e liberdade de imprensa."
+        "text": "Os movimentos estudantis e sindicais concentraram sua atuação na distribuição de renda, com pouca contestação à censura.",
+        "targetsError": "resistance_as_economic_control",
+        "rationale": "Os relatos mencionam mobilização social e censura, mas não atribuem aos movimentos esse foco ou alcance exclusivo."
       },
       {
         "key": "C",
-        "text": "Crescimento econômico em parte do período coexistiu com concentração de renda, endividamento e restrição de direitos."
+        "text": "A concentração de renda decorreu diretamente dos movimentos de resistência, e não das políticas econômicas.",
+        "targetsError": "inequality_as_measurement_error",
+        "rationale": "O painel não apresenta evidência de que os movimentos causaram a concentração de renda."
       },
       {
         "key": "D",
-        "text": "Não houve resistência social à ditadura."
+        "text": "Os dados econômicos não substituem a análise das restrições políticas e da distribuição dos ganhos."
       },
       {
         "key": "E",
-        "text": "Crescimento do PIB prova que não existiram violações políticas ou desigualdade."
+        "text": "A melhora do indicador representa as condições de renda das famílias ao longo de todo o período.",
+        "targetsError": "aggregate_to_household",
+        "rationale": "A tabela resume produção e não descreve a renda das famílias ao longo do período."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Crescimento econômico em parte do período coexistiu com concentração de renda, endividamento e restrição de direitos.",
+    "correctOption": "D",
+    "explanation": "O painel apresenta melhora de produção em parte do período junto a endividamento, concentração de renda, censura e mobilização social. A produção agregada não informa como os ganhos foram repartidos nem substitui a análise dos direitos.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -302,7 +337,60 @@
       "GH-21-CON-05",
       "GH-21-CON-06"
     ],
-    "targetedError": "synthesis",
+    "primaryConceptId": "GH-21-CON-01",
+    "targetedError": "economic_growth_and_inequality",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-21-Q008",
+    "version": 2,
+    "status": "draft",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma estudante monta um dossiê sobre o período de 1964 a 1985 com documentos de atos institucionais, páginas de jornal alteradas por censura, registros de mobilização e uma tabela de crescimento e endividamento. Ela escreve que cada documento responde a perguntas diferentes e que o dossiê não é uma contagem completa de todas as experiências. A turma precisa formular uma conclusão que considere poder, resistência e economia sem usar um indicador como resposta para os demais.\n\nQual conclusão é mais defensável?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A atuação dos grupos de resistência modificou as políticas repressivas em todo o período.",
+        "targetsError": "resistance_as_repression_denial",
+        "rationale": "O dossiê registra resistência, mas não mede seus efeitos sobre as políticas repressivas."
+      },
+      {
+        "key": "B",
+        "text": "O crescimento econômico favoreceu a estabilidade política e reduziu a necessidade de controle estatal.",
+        "targetsError": "growth_as_rights_exoneration",
+        "rationale": "O crescimento econômico não elimina os registros de repressão e censura presentes no dossiê."
+      },
+      {
+        "key": "C",
+        "text": "As páginas censuradas indicam que a repressão à imprensa começou apenas no encerramento do regime.",
+        "targetsError": "censorship_chronology",
+        "rationale": "Os documentos situam a censura dentro do período de 1964 a 1985."
+      },
+      {
+        "key": "D",
+        "text": "A diversidade dos movimentos resultou de uma estratégia comum em resposta ao crescimento econômico.",
+        "targetsError": "resistance_uniformity",
+        "rationale": "A estudante ressalta que o conjunto não representa todas as experiências nem demonstra estratégia comum."
+      },
+      {
+        "key": "E",
+        "text": "Repressão e restrição de direitos coexistiram com resistências diversas e crescimento econômico desigual."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "O dossiê reúne repressão, censura, mobilização e indicadores econômicos, permitindo uma síntese com dimensões distintas. A ideia de que crescimento elimina evidências de violações usa o indicador econômico para responder a uma questão que ele não mede.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-21-CON-01",
+      "GH-21-CON-02",
+      "GH-21-CON-03",
+      "GH-21-CON-04",
+      "GH-21-CON-05",
+      "GH-21-CON-06"
+    ],
+    "primaryConceptId": "GH-21-CON-01",
+    "targetedError": "historical_synthesis",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   }
 ]

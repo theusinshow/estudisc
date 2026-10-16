@@ -2,307 +2,377 @@
   {
     "id": "GH-35-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Formação dos Estados Nacionais e absolutismo, qual afirmação está correta?",
+    "stem": "O livro reúne ordens emitidas em cidades diferentes, uma lista de tributos destinados à construção de pontes e recibos de pagamento a soldados. Em várias páginas, representantes locais pedem prazo para cumprir as cobranças e solicitam que costumes da região sejam mantidos. O escrivão anota que a equipe do rei retornará para conferir as contas depois da colheita.\n\nQue processo político é possível reconhecer no registro?",
     "options": [
       {
         "key": "A",
-        "text": "Estados nacionais surgiram instantaneamente com fronteiras atuais."
+        "text": "As ordens e a fiscalização indicam presença régia, embora representantes locais pedissem prazo.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "B",
-        "text": "Reis europeus ampliaram tributação, burocracias, exércitos e leis, reduzindo parte da fragmentação política medieval."
+        "text": "Os pedidos locais mostram negociação sobre a cobrança, não sua suspensão já decidida.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "C",
-        "text": "Absolutismo significa que o rei não enfrentava qualquer limite real."
+        "text": "A construção de pontes aparece como prioridade, enquanto as tropas eram pagas à parte.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "D",
-        "text": "Burgueses sempre foram inimigos da centralização monárquica."
+        "text": "Tributos, ordens e tropas mostram uma administração régia em expansão negociada."
       },
       {
         "key": "E",
-        "text": "Mercantilismo defendia livre-comércio irrestrito em todos os casos."
+        "text": "A fiscalização continuava ligada ao rei, mesmo com pedidos locais de prazo e preservação de costumes.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       }
     ],
-    "correctOption": "B",
-    "explanation": "Reis europeus ampliaram tributação, burocracias, exércitos e leis, reduzindo parte da fragmentação política medieval.",
+    "correctOption": "D",
+    "explanation": "Tributos, ordens da chancelaria, fiscalização e pagamento de soldados mostram a ampliação da atuação da Coroa. Os pedidos locais revelam que essa expansão também envolvia negociações.",
     "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-35-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-35-CON-01"
   },
   {
     "id": "GH-35-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Estados nacionais surgiram instantaneamente com fronteiras atuais.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Os comerciantes pedem ao rei que reforme uma estrada usada por carroças e reduza as taxas cobradas em três portões. Em troca, oferecem empréstimo para a obra e prometem transportar grãos até a capital. Um anexo informa que algumas cidades desejam conservar seus direitos de feira e que a resposta real ainda não foi enviada. A associação reúne famílias com interesses diferentes em rotas e produtos.\n\nQue interpretação da carta é mais adequada?",
     "options": [
       {
         "key": "A",
-        "text": "Estados nacionais surgiram instantaneamente com fronteiras atuais."
+        "text": "O pedido por uma estrada sugere que os mercadores queriam conduzir as obras sem participação régia.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "B",
-        "text": "Absolutismo significa que o rei não enfrentava qualquer limite real."
+        "text": "Parte dos mercadores apoiava medidas régias quando elas podiam favorecer rotas e negócios."
       },
       {
         "key": "C",
-        "text": "Burgueses sempre foram inimigos da centralização monárquica."
+        "text": "O empréstimo oferecido financiaria a estrada, sem conceder autoridade legislativa à associação.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "D",
-        "text": "Burguesias urbanas frequentemente apoiaram centralização quando ela favorecia mercados e segurança, mas as alianças variavam."
+        "text": "As cidades buscavam preservar direitos de feira enquanto negociavam melhorias nas rotas.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "E",
-        "text": "Mercantilismo defendia livre-comércio irrestrito em todos os casos."
+        "text": "A associação ofereceu apoio à obra, mas aguardava a resposta do rei.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Burguesias urbanas frequentemente apoiaram centralização quando ela favorecia mercados e segurança, mas as alianças variavam.",
+    "correctOption": "B",
+    "explanation": "A associação pede ao rei estrada e redução de taxas, oferecendo empréstimo para a obra; o apoio está ligado aos interesses comerciais. A carta ainda não foi respondida e algumas cidades buscam preservar direitos próprios.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-35-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-35-CON-02"
   },
   {
     "id": "GH-35-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: A formação de monarquias nacionais concentrou poder em processos longos e negociados. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Um representante do rei afirmou que a autoridade monárquica deveria orientar as decisões do reino. Na mesma reunião, nobres pediram que certos privilégios fossem mantidos e conselheiros solicitaram recursos para uma guerra. Um grupo de cidades ofereceu empréstimo, mas condicionou a ajuda à revisão de uma cobrança sobre o comércio. A ata registra que o rei ouviu os pedidos antes de responder.\n\nO que a ata revela sobre a ideia de absolutismo?",
     "options": [
       {
         "key": "A",
-        "text": "Estados nacionais surgiram instantaneamente com fronteiras atuais."
+        "text": "Os privilégios pedidos pelos nobres mostram que seus interesses seguiam em negociação.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "B",
-        "text": "Absolutismo significa que o rei não enfrentava qualquer limite real."
+        "text": "As cidades condicionaram o empréstimo, sem retirar a autoridade do rei sobre o reino.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "C",
-        "text": "Absolutismo defendia forte autoridade monárquica, embora nenhum rei governasse sem limites sociais, econômicos e institucionais."
+        "text": "O pedido de recursos mostra que as necessidades de guerra prevaleciam sobre as demais negociações.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "D",
-        "text": "Burgueses sempre foram inimigos da centralização monárquica."
+        "text": "A cobrança sobre o comércio foi objeto de condição proposta pelas cidades.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "E",
-        "text": "Mercantilismo defendia livre-comércio irrestrito em todos os casos."
+        "text": "A pretensão monárquica convivia com interesses e negociações de outros grupos."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Absolutismo defendia forte autoridade monárquica, embora nenhum rei governasse sem limites sociais, econômicos e institucionais.",
+    "correctOption": "E",
+    "explanation": "A defesa da autoridade do rei aparece na mesma ata que registra privilégios nobres, necessidade de recursos e condições de empréstimo. Essa combinação mostra que a ideia de poder forte não eliminava limites e negociações.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-35-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-35-CON-03"
   },
   {
     "id": "GH-35-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Formação dos Estados Nacionais e absolutismo por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "O documento pede ao rei a padronização dos pesos usados em dois portos e a proteção de uma rota contra ataques. O comerciante aceita pagar uma taxa sobre as mercadorias que embarcar, desde que o valor seja anunciado antes da viagem. Na margem, um conselheiro anota que outros vendedores questionaram a medida porque atuam em mercados menores.\n\nQue interesse aparece no pedido do comerciante?",
     "options": [
       {
         "key": "A",
-        "text": "Mercantilismo reuniu políticas de fortalecimento estatal, comércio externo, metais e proteção de atividades econômicas."
+        "text": "Padronização e proteção podiam facilitar negócios, embora envolvessem custos e efeitos desiguais."
       },
       {
         "key": "B",
-        "text": "Estados nacionais surgiram instantaneamente com fronteiras atuais."
+        "text": "A taxa previsível atendia ao comerciante, mas a nota registra divergência entre vendedores.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "C",
-        "text": "Absolutismo significa que o rei não enfrentava qualquer limite real."
+        "text": "O pedido de pesos comuns sugere que o comerciante buscava administrar os dois portos.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "D",
-        "text": "Burgueses sempre foram inimigos da centralização monárquica."
+        "text": "A proteção buscada era para a rota; o documento não restringe o transporte marítimo.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "E",
-        "text": "Mercantilismo defendia livre-comércio irrestrito em todos os casos."
+        "text": "Vendedores de mercados menores questionaram a medida, sem registrar aprovação prévia.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       }
     ],
     "correctOption": "A",
-    "explanation": "Mercantilismo reuniu políticas de fortalecimento estatal, comércio externo, metais e proteção de atividades econômicas.",
+    "explanation": "O comerciante aceita uma taxa previsível em troca de pesos padronizados e proteção da rota. A nota sobre vendedores de mercados menores mostra que a medida podia favorecer alguns interesses sem agradar a todos.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-35-CON-04"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-35-CON-04"
   },
   {
     "id": "GH-35-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Reis europeus ampliaram tributação, burocracias, exércitos e leis, reduzindo parte da fragmentação política medieval.\nII. Estados nacionais surgiram instantaneamente com fronteiras atuais.\nIII. Absolutismo defendia forte autoridade monárquica, embora nenhum rei governasse sem limites sociais, econômicos e institucionais.\nIV. Absolutismo significa que o rei não enfrentava qualquer limite real.\nAssinale a alternativa CORRETA.",
+    "stem": "O cronista descreve a chegada de soldados pagos pelo rei, acompanhados por peças de artilharia transportadas em carroças. A cidade recebeu uma ordem para recolher tributos destinados à manutenção das tropas e ao reparo da estrada. Alguns moradores temeram a cobrança, enquanto comerciantes esperavam que a passagem dos soldados reduzisse ataques a caravanas. O cronista não informa se a segurança melhorou depois da ordem.\n\nQue relação entre exército e administração aparece na crônica?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A arrecadação se destinava ao reparo da estrada, enquanto a Coroa custeava as tropas.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Os comerciantes esperavam proteção, mas o relato não lhes atribui comando militar.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A manutenção do exército ligava despesas militares à arrecadação e às obras da vila."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O receio dos moradores não informa se as caravanas deixaram de circular.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "A crônica menciona tropas e tributos, sem descrever mudanças na administração local.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "C",
+    "explanation": "A ordem de arrecadação destina recursos às tropas e ao reparo da estrada, ligando força militar e administração fiscal. A expectativa dos comerciantes não prova que os ataques tenham cessado.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-35-CON-01",
-      "GH-35-CON-02",
-      "GH-35-CON-03",
-      "GH-35-CON-04"
+      "GH-35-CON-05"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-35-CON-05"
   },
   {
     "id": "GH-35-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Formação dos Estados Nacionais e absolutismo. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "A circular concede a uma associação o direito de exportar tecidos por um porto durante três anos. Cargas de tecidos estrangeiros pagarão uma tarifa maior, e navios da Coroa escoltarão algumas viagens. Uma tabela estima a entrada de moedas e o custo de manter as embarcações. O documento prevê nova avaliação ao fim do prazo e não informa como os artesãos serão pagos.\n\nQue política econômica a circular exemplifica?",
     "options": [
       {
         "key": "A",
-        "text": "Estados nacionais surgiram instantaneamente com fronteiras atuais."
+        "text": "A Coroa autorizou exportações, mas deixou a proteção das viagens a cargo dos comerciantes.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "B",
-        "text": "Absolutismo significa que o rei não enfrentava qualquer limite real."
+        "text": "A tarifa incidia sobre tecidos estrangeiros dentro de uma política comercial régia.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "C",
-        "text": "Burgueses sempre foram inimigos da centralização monárquica."
+        "text": "A tabela estima receitas e custos navais, sem indicar pagamento aos artesãos.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Tarifas, autorização de exportação e escolta associavam comércio e arrecadação régia."
       },
       {
         "key": "E",
-        "text": "Relacionar centralização política a interesses fiscais, militares e comerciais."
+        "text": "A associação recebeu direito temporário de exportar, sujeito a nova avaliação da Coroa.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Relacionar centralização política a interesses fiscais, militares e comerciais.",
+    "correctOption": "D",
+    "explanation": "A circular combina autorização de exportação, tarifa sobre tecidos estrangeiros, escolta naval e expectativa de entrada de moedas. Ela apresenta uma política estatal de apoio ao comércio, sem informar o pagamento dos artesãos.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-35-CON-01",
-      "GH-35-CON-02",
-      "GH-35-CON-03",
-      "GH-35-CON-04",
-      "GH-35-CON-05",
       "GH-35-CON-06"
     ],
     "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-35-CON-06"
   },
   {
     "id": "GH-35-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Formação dos Estados Nacionais e absolutismo?",
+    "stem": "Dois mapas da mesma região, separados por algumas gerações, mostram fronteiras diferentes. Um deles identifica comunidades com línguas e costumes variados; o outro destaca estradas reais, postos de cobrança e novas divisões administrativas. O museu informa que os nomes e limites foram definidos em períodos distintos por acordos, guerras e decisões de governantes. A legenda não apresenta essas fronteiras como naturais ou imutáveis.\n\nQue perspectiva histórica a legenda propõe?",
     "options": [
       {
         "key": "A",
-        "text": "Reis europeus ampliaram tributação, burocracias, exércitos e leis, reduzindo parte da fragmentação política medieval."
+        "text": "Os mapas registram diversidade de línguas e mudanças administrativas em períodos distintos.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "B",
-        "text": "Burguesias urbanas frequentemente apoiaram centralização quando ela favorecia mercados e segurança, mas as alianças variavam."
+        "text": "Fronteiras e Estados refletiam decisões, conflitos e acordos de diferentes épocas."
       },
       {
         "key": "C",
-        "text": "Estados nacionais modernos foram construções históricas e não comunidades naturais existentes desde sempre."
+        "text": "Os postos de cobrança aparecem em um mapa, enquanto os limites variam entre períodos.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "D",
-        "text": "Burgueses sempre foram inimigos da centralização monárquica."
+        "text": "As comunidades diversas aparecem no primeiro mapa, mas a legenda não informa seu destino posterior.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "E",
-        "text": "Mercantilismo reuniu políticas de fortalecimento estatal, comércio externo, metais e proteção de atividades econômicas."
+        "text": "A legenda associa as divisões a conflitos, acordos e decisões de governantes.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "B",
+    "explanation": "Os mapas mostram fronteiras distintas em períodos diferentes e a legenda relaciona as mudanças a acordos, guerras e decisões políticas. A diversidade de línguas e costumes permaneceu parte da história regional.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-35-CON-01",
-      "GH-35-CON-02",
-      "GH-35-CON-03",
-      "GH-35-CON-04",
-      "GH-35-CON-05",
-      "GH-35-CON-06"
+      "GH-35-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-35-CON-01"
   },
   {
     "id": "GH-35-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Formação dos Estados Nacionais e absolutismo, qual conclusão final é sustentável?",
+    "stem": "A Coroa autorizou uma companhia de comerciantes a vender ferramentas e tecidos em um território ultramarino. Em contrapartida, a companhia paga uma taxa, transporta funcionários do governo e usa navios protegidos pela frota real. O relatório contabiliza mercadorias, despesas de escolta e moedas arrecadadas. Uma carta de artesãos pergunta se os pedidos de ferramentas aumentarão a produção local.\n\nComo interpretar a relação entre Estado e comércio no relatório?",
     "options": [
       {
         "key": "A",
-        "text": "Estados nacionais surgiram instantaneamente com fronteiras atuais."
+        "text": "A companhia atuava no comércio, enquanto as funções políticas cabiam exclusivamente aos funcionários régios.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "B",
-        "text": "Absolutismo significa que o rei não enfrentava qualquer limite real."
+        "text": "A frota escoltava navios; o relatório não concede terras à companhia.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "C",
-        "text": "Estados nacionais modernos foram construções históricas e não comunidades naturais existentes desde sempre."
+        "text": "A carta pergunta sobre efeitos possíveis dos pedidos, sem afirmar que a produção terminou.",
+        "targetsError": "conceptual",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "D",
-        "text": "Burgueses sempre foram inimigos da centralização monárquica."
+        "text": "A taxa compunha as relações com a Coroa enquanto a companhia seguia comerciando.",
+        "targetsError": "interpretation",
+        "rationale": "O registro oferece uma pista mais específica que limita essa interpretação."
       },
       {
         "key": "E",
-        "text": "Mercantilismo defendia livre-comércio irrestrito em todos os casos."
+        "text": "A Coroa articulava atividade comercial, receita e presença de seus funcionários no território."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Estados nacionais modernos foram construções históricas e não comunidades naturais existentes desde sempre.",
+    "correctOption": "E",
+    "explanation": "A companhia vende mercadorias, paga uma taxa e utiliza navios reais para atuar no território, enquanto transporta funcionários do governo. O relatório combina objetivos comerciais, receita estatal e presença política.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-35-CON-01",
-      "GH-35-CON-02",
-      "GH-35-CON-03",
-      "GH-35-CON-04",
-      "GH-35-CON-05",
       "GH-35-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-35-CON-06"
   }
 ]

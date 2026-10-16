@@ -207,175 +207,175 @@
     {
       "id": "GH-19-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Era Vargas, qual afirmação está correta?",
+      "stem": "Um painel autoral de história apresenta manchetes de 1930 sobre a contestação eleitoral, a movimentação de grupos armados em diferentes estados e a chegada de Getúlio Vargas ao governo. Um quadro lembra a influência das oligarquias estaduais na República Velha. A seleção destaca mudanças políticas, mas não descreve toda a população nem todas as causas do movimento.\n\nQue interpretação é sustentada pelo conjunto?",
       "options": [
         {
           "key": "A",
-          "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+          "text": "A crise eleitoral expôs disputas entre grupos políticos e abriu caminho a uma mudança no governo."
         },
         {
           "key": "B",
-          "text": "A Revolução de 1930 encerrou a ordem política da República Velha e levou Getúlio Vargas ao governo."
+          "text": "A ruptura substituiu a influência das oligarquias por um sistema parlamentar, sem alterar a forma republicana."
         },
         {
           "key": "C",
-          "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+          "text": "A crise de 1930 encerrou o arranjo da República Velha e colocou Vargas à frente do governo."
         },
         {
           "key": "D",
-          "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+          "text": "A mobilização armada ampliou a crise, embora o painel não indique mudança na chefia do governo."
         },
         {
           "key": "E",
-          "text": "Direitos trabalhistas significaram autonomia sindical completa."
+          "text": "A contestação eleitoral, por si só, explica a chegada de Vargas, sem relação com a movimentação armada."
         }
       ],
-      "correctOption": "B",
-      "explanation": "A Revolução de 1930 encerrou a ordem política da República Velha e levou Getúlio Vargas ao governo.",
-      "difficulty": "FOUNDATION",
-      "cognitiveOperation": "RECALL",
+      "correctOption": "C",
+      "explanation": "A contestação eleitoral, a mobilização armada e a chegada de Vargas indicam uma ruptura na ordem política. O painel não permite atribuir o movimento a uma única causa.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-19-CON-01"
       ],
-      "targetedError": "foundation",
+      "targetedError": "political_transition",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-19-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “Toda a Era Vargas foi uma democracia liberal contínua.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "stem": "Em um exercício autoral, a turma compara cartazes de divulgação do governo Vargas, relatórios de uma fábrica apoiada pelo Estado e registros de uma associação de trabalhadores. Os cartazes celebram obras e liderança nacional; os relatórios descrevem expansão da produção; a associação registra pedidos sobre condições de trabalho. Uma nota informa que o Estado também regulava relações trabalhistas. O arquivo mostra áreas distintas de atuação estatal e a construção da imagem pública do governo.\n\nQual interpretação integra melhor os materiais?",
       "options": [
         {
           "key": "A",
-          "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+          "text": "A publicidade do governo foi sobretudo resposta à expansão industrial, sem constituir uma ação política própria."
         },
         {
           "key": "B",
-          "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+          "text": "As obras divulgadas explicam sozinhas as mudanças econômicas e as relações de trabalho."
         },
         {
           "key": "C",
-          "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+          "text": "Os registros da associação indicam que as políticas trabalhistas se desenvolveram sem controle estatal."
         },
         {
           "key": "D",
-          "text": "O período varguista combinou centralização estatal, industrialização, legislação trabalhista e construção de uma imagem pública do governo."
+          "text": "A expansão da fábrica demonstra que os trabalhadores produziram os cartazes oficiais."
         },
         {
           "key": "E",
-          "text": "Direitos trabalhistas significaram autonomia sindical completa."
+          "text": "O governo articulou industrialização, regulação do trabalho e construção de imagem pública."
         }
       ],
-      "correctOption": "D",
-      "explanation": "O período varguista combinou centralização estatal, industrialização, legislação trabalhista e construção de uma imagem pública do governo.",
-      "difficulty": "DIRECT",
+      "correctOption": "E",
+      "explanation": "Os cartazes mostram a imagem pública do governo, os relatórios registram expansão industrial e a associação documenta reivindicações trabalhistas. Em conjunto, as peças apontam diferentes frentes de atuação estatal.",
+      "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-19-CON-02"
       ],
-      "targetedError": "concept_discrimination",
+      "targetedError": "state_and_society",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-19-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: Entre 1930 e 1945, Vargas governou em fases diferentes, incluindo uma ditadura entre 1937 e 1945. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "stem": "Uma linha do tempo reúne uma reprodução da Constituição de 1934 e um decreto de fechamento do Congresso produzido após o golpe de 1937, que instaurou o Estado Novo. As legendas situam os documentos em momentos políticos diferentes.\n\nO que a mudança entre as peças permite inferir sobre a ordem política?",
       "options": [
         {
           "key": "A",
-          "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+          "text": "A Constituição de 1934 continuou como base institucional, mesmo após o fechamento do Congresso."
         },
         {
           "key": "B",
-          "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+          "text": "A Constituição de 1934 não impediu uma ruptura posterior: o golpe de 1937 instaurou o Estado Novo."
         },
         {
           "key": "C",
-          "text": "A Constituição de 1934 foi seguida pelo golpe de 1937, que instaurou o Estado Novo autoritário."
+          "text": "A concentração de poderes no Executivo conviveu com a manutenção das instituições constitucionais de 1934."
         },
         {
           "key": "D",
-          "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+          "text": "O fechamento do Congresso alterou o funcionamento político sem romper a ordem constitucional vigente."
         },
         {
           "key": "E",
-          "text": "Direitos trabalhistas significaram autonomia sindical completa."
+          "text": "A mudança de 1937 foi uma transição dentro da ordem constitucional, sem ruptura institucional."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A Constituição de 1934 foi seguida pelo golpe de 1937, que instaurou o Estado Novo autoritário.",
+      "correctOption": "B",
+      "explanation": "As datas posicionam a Constituição em 1934 e o golpe em 1937, quando o Estado Novo foi instaurado. A interpretação de continuidade constitucional contradiz o fechamento do Congresso e a interrupção indicada.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-19-CON-03"
       ],
-      "targetedError": "relationship",
+      "targetedError": "constitutional_break_and_sequence",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-19-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Era Vargas por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "stem": "Uma atividade autoral de leitura reúne um boletim de rádio oficial, uma lista de jornais impedidos de circular e um pedido de familiares sobre a prisão de um opositor durante o Estado Novo. A ficha de catalogação mostra que os materiais têm origens distintas: o boletim divulga a versão do governo, enquanto os outros registros apontam limites à circulação de ideias e à atuação política. A turma compara o que cada peça permite afirmar.\n\nQual interpretação é mais bem apoiada?",
       "options": [
         {
           "key": "A",
-          "text": "No Estado Novo houve censura, propaganda oficial, perseguição a opositores e restrição de partidos e liberdades."
+          "text": "O governo articulou comunicação oficial, controle da imprensa e repressão a opositores."
         },
         {
           "key": "B",
-          "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+          "text": "O boletim revela a narrativa oficial, mas a lista de jornais não permite reconhecer controle da imprensa."
         },
         {
           "key": "C",
-          "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+          "text": "O pedido sobre a prisão registra um caso individual, sem relação possível com a atuação política do regime."
         },
         {
           "key": "D",
-          "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+          "text": "A lista de jornais aponta censura, enquanto o boletim mostra uma versão oficial dos acontecimentos."
         },
         {
           "key": "E",
-          "text": "Direitos trabalhistas significaram autonomia sindical completa."
+          "text": "A existência de propaganda oficial sugere que havia competição partidária ampla apesar das restrições."
         }
       ],
       "correctOption": "A",
-      "explanation": "No Estado Novo houve censura, propaganda oficial, perseguição a opositores e restrição de partidos e liberdades.",
+      "explanation": "O boletim registra comunicação oficial, a lista aponta censura e o pedido familiar documenta a prisão de um opositor. As peças permitem distinguir propaganda, controle da imprensa e repressão política.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-19-CON-04"
       ],
-      "targetedError": "application",
+      "targetedError": "authoritarianism_and_sources",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-19-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. A Revolução de 1930 encerrou a ordem política da República Velha e levou Getúlio Vargas ao governo.\nII. Toda a Era Vargas foi uma democracia liberal contínua.\nIII. A Constituição de 1934 foi seguida pelo golpe de 1937, que instaurou o Estado Novo autoritário.\nIV. O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa.\nAssinale a alternativa CORRETA.",
+      "stem": "Um mural sobre Vargas começa com a mudança política de 1930, mostra a Constituição de 1934, apresenta documentos do Estado Novo e termina com registros de legislação trabalhista e expansão industrial. Ao lado dos decretos, há recortes de propaganda e uma carta de trabalhadores sobre organização sindical. A professora explica que as imagens são uma seleção didática e pede que os grupos relacionem mudança de governo, autoritarismo e atuação do Estado na economia e no trabalho.\n\nQual síntese atende melhor à proposta?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "A legislação trabalhista acompanhou mudanças sociais, sem por si só indicar a abertura política do Estado Novo."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "A industrialização ganhou destaque, enquanto a propaganda e a organização dos trabalhadores tiveram papel secundário."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "A trajetória varguista articulou centralização estatal, modernização econômica e regulação do trabalho sob governos distintos."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "A Constituição de 1934 inaugurou uma estabilidade institucional que se manteve até o fim do período varguista."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "A carta de trabalhadores permite estender suas posições às organizações sindicais de todo o país."
         }
       ],
-      "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "correctOption": "C",
+      "explanation": "O mural reúne centralização política, propaganda, expansão industrial e legislação trabalhista. A leitura que separa a industrialização das políticas estatais não corresponde à combinação de documentos escolhida.",
       "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -384,120 +384,38 @@
         "GH-19-CON-03",
         "GH-19-CON-04"
       ],
-      "targetedError": "multi_statement_reasoning",
+      "targetedError": "historical_synthesis",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-19-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Era Vargas. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "stem": "Uma comissão escolar compara um registro de normas trabalhistas com atas de um sindicato ligado a uma fábrica. A legislação define direitos formais para trabalhadores, enquanto as atas mostram que representantes precisavam negociar reuniões e que decisões do governo interferiam na organização sindical. O arquivo não permite concluir que cada categoria profissional viveu a mesma experiência. Os estudantes anotam que direitos legais e autonomia de organização são questões relacionadas, mas não idênticas.\n\nQual conclusão é sustentada pela comparação?",
       "options": [
         {
           "key": "A",
-          "text": "Toda a Era Vargas foi uma democracia liberal contínua."
+          "text": "A regulamentação formal garantiu independência sindical completa aos trabalhadores."
         },
         {
           "key": "B",
-          "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
+          "text": "A legislação tratou de questões administrativas, sem prever direitos para trabalhadores."
         },
         {
           "key": "C",
-          "text": "A industrialização brasileira não teve relação com políticas estatais no período."
+          "text": "O Estado ampliou direitos formais e também procurou controlar a organização sindical."
         },
         {
           "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+          "text": "As atas de uma fábrica indicam a relação entre sindicatos de outros setores e o governo."
         },
         {
           "key": "E",
-          "text": "Distinguir fases do período e avaliar simultaneamente políticas sociais, econômicas e autoritárias."
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Distinguir fases do período e avaliar simultaneamente políticas sociais, econômicas e autoritárias.",
-      "difficulty": "IFSC",
-      "cognitiveOperation": "SOURCE_ANALYSIS",
-      "conceptIds": [
-        "GH-19-CON-01",
-        "GH-19-CON-02",
-        "GH-19-CON-03",
-        "GH-19-CON-04",
-        "GH-19-CON-05",
-        "GH-19-CON-06"
-      ],
-      "targetedError": "source_interpretation",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-    },
-    {
-      "id": "GH-19-Q007",
-      "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Era Vargas?",
-      "options": [
-        {
-          "key": "A",
-          "text": "A Revolução de 1930 encerrou a ordem política da República Velha e levou Getúlio Vargas ao governo."
-        },
-        {
-          "key": "B",
-          "text": "O período varguista combinou centralização estatal, industrialização, legislação trabalhista e construção de uma imagem pública do governo."
-        },
-        {
-          "key": "C",
-          "text": "A legislação trabalhista ampliou direitos formais ao mesmo tempo em que o Estado buscou controlar a organização sindical."
-        },
-        {
-          "key": "D",
-          "text": "A industrialização brasileira não teve relação com políticas estatais no período."
-        },
-        {
-          "key": "E",
-          "text": "No Estado Novo houve censura, propaganda oficial, perseguição a opositores e restrição de partidos e liberdades."
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
-      "difficulty": "DIRECT",
-      "cognitiveOperation": "ANALYZE",
-      "conceptIds": [
-        "GH-19-CON-01",
-        "GH-19-CON-02",
-        "GH-19-CON-03",
-        "GH-19-CON-04",
-        "GH-19-CON-05",
-        "GH-19-CON-06"
-      ],
-      "targetedError": "misconception_identification",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-    },
-    {
-      "id": "GH-19-Q008",
-      "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Era Vargas, qual conclusão final é sustentável?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Toda a Era Vargas foi uma democracia liberal contínua."
-        },
-        {
-          "key": "B",
-          "text": "O Estado Novo ampliou o multipartidarismo e a liberdade de imprensa."
-        },
-        {
-          "key": "C",
-          "text": "A legislação trabalhista ampliou direitos formais ao mesmo tempo em que o Estado buscou controlar a organização sindical."
-        },
-        {
-          "key": "D",
-          "text": "A industrialização brasileira não teve relação com políticas estatais no período."
-        },
-        {
-          "key": "E",
-          "text": "Direitos trabalhistas significaram autonomia sindical completa."
+          "text": "A interferência estatal converteu as proteções trabalhistas previstas em lei em formalidade."
         }
       ],
       "correctOption": "C",
-      "explanation": "A legislação trabalhista ampliou direitos formais ao mesmo tempo em que o Estado buscou controlar a organização sindical.",
-      "difficulty": "IFSC",
+      "explanation": "A legislação registra direitos formais, enquanto as atas mostram interferência estatal na organização sindical. A ideia de autonomia completa ignora essa interferência e confunde a existência de direitos com liberdade organizativa irrestrita.",
+      "difficulty": "APPLIED",
       "cognitiveOperation": "EVALUATE",
       "conceptIds": [
         "GH-19-CON-01",
@@ -507,7 +425,89 @@
         "GH-19-CON-05",
         "GH-19-CON-06"
       ],
-      "targetedError": "synthesis",
+      "targetedError": "labor_rights_and_control",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-19-Q007",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Um cenário didático reúne um relatório de fábrica estatal, um anúncio oficial sobre empregos e uma notícia sobre trabalhadores que reivindicam melhores condições. O relatório registra aumento da produção; o anúncio apresenta a industrialização como sinal de progresso; a notícia descreve desacordo entre empregados e direção. O professor pergunta se crescimento industrial e conflitos de trabalho podem aparecer na mesma análise histórica.\n\nQual interpretação responde à pergunta com base nas peças?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O aumento da produção pode ter ampliado empregos e reduzido parte das tensões entre trabalhadores e direção."
+        },
+        {
+          "key": "B",
+          "text": "A narrativa oficial de progresso permite tomar as reivindicações como sinal de que as políticas de emprego foram atendidas."
+        },
+        {
+          "key": "C",
+          "text": "A notícia sobre desacordo impede que os dados de produção sejam usados para estudar a industrialização."
+        },
+        {
+          "key": "D",
+          "text": "Produção industrial, ação estatal e conflito trabalhista podem ser analisados em conjunto."
+        },
+        {
+          "key": "E",
+          "text": "A expansão da fábrica indica que os trabalhadores participaram dos resultados, embora o relatório não detalhe seu poder de decisão."
+        }
+      ],
+      "correctOption": "D",
+      "explanation": "O relatório, o anúncio e a notícia permitem analisar produção industrial, ação estatal e reivindicações no mesmo contexto. Os dados não demonstram que o aumento da produção tenha resolvido as tensões ou definido a distribuição dos resultados.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-19-CON-01",
+        "GH-19-CON-02",
+        "GH-19-CON-03",
+        "GH-19-CON-04",
+        "GH-19-CON-05",
+        "GH-19-CON-06"
+      ],
+      "targetedError": "industrialization_and_labor",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    },
+    {
+      "id": "GH-19-Q008",
+      "type": "MULTIPLE_CHOICE_SINGLE",
+      "stem": "Uma pesquisadora lê cartazes do Departamento de Imprensa e Propaganda, relatórios de obras e cartas de trabalhadores. Os cartazes apresentam Vargas como líder próximo da população; os relatórios registram ações estatais de infraestrutura e indústria; as cartas discutem reivindicações e relações sindicais. A coleção não representa todos os setores sociais.\n\nQual pergunta cruza os três conjuntos sem generalizar para grupos não documentados?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Que relação o governo buscava estabelecer entre sua imagem pública, suas políticas econômicas e a organização do trabalho?"
+        },
+        {
+          "key": "B",
+          "text": "Como os cartazes representavam Vargas e as obras públicas em diferentes momentos do governo?"
+        },
+        {
+          "key": "C",
+          "text": "Que reivindicações aparecem nas cartas e quais limites existem para generalizar essas experiências?"
+        },
+        {
+          "key": "D",
+          "text": "Como a industrialização transferiu do Estado para empresas privadas a condução da economia?"
+        },
+        {
+          "key": "E",
+          "text": "Como os cartazes permitem avaliar a competição entre partidos durante o período?"
+        }
+      ],
+      "correctOption": "A",
+      "explanation": "O acervo cruza a imagem pública do governo com registros de ações estatais e de relações de trabalho. Perguntas limitadas aos cartazes ou às cartas aproveitam apenas parte desse conjunto.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "EVALUATE",
+      "conceptIds": [
+        "GH-19-CON-01",
+        "GH-19-CON-02",
+        "GH-19-CON-03",
+        "GH-19-CON-04",
+        "GH-19-CON-05",
+        "GH-19-CON-06"
+      ],
+      "targetedError": "source_synthesis",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     }
   ]

@@ -2,214 +2,278 @@
   {
     "id": "GH-44-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Entre-guerras e totalitarismos, qual afirmação está correta?",
+    "stem": "No primeiro, oficinas de montagem pedem trabalhadores para ampliar turnos; dois anos depois, o jornal registra redução de encomendas, demissões em algumas fábricas e filas maiores no posto de auxílio. Uma coluna cita comerciantes e agricultores da região, e o arquivo guarda recortes de outras cidades para comparação. O boletim não inclui uma tabela comum para medir os efeitos em todos esses lugares.\n\nQual síntese é mais compatível com o boletim?",
     "options": [
       {
         "key": "A",
-        "text": "Nazismo era um movimento democrático pluralista."
+        "text": "Os anúncios de emprego mostram estabilidade nas oficinas enquanto os pedidos agrícolas recuavam.",
+        "targetsError": "interpretation",
+        "rationale": "A coleção registra contratação antes da queda, sem dado agrícola comparável."
       },
       {
         "key": "B",
-        "text": "A Crise de 1929 provocou desemprego e instabilidade em várias economias, embora seus efeitos variassem entre países."
+        "text": "As demissões urbanas explicam as dificuldades dos comerciantes e agricultores da região.",
+        "targetsError": "attention",
+        "rationale": "O editor cita experiências setoriais distintas, não uma causa comum."
       },
       {
         "key": "C",
-        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+        "text": "A crise aparece ligada a desemprego e instabilidade, com impactos diferentes entre setores e lugares."
       },
       {
         "key": "D",
-        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+        "text": "O recuo das encomendas ocorreu enquanto os anúncios de emprego ainda indicavam ampliação dos turnos.",
+        "targetsError": "conceptual",
+        "rationale": "Os anúncios de expansão são de 1928; o recuo das encomendas aparece no registro de 1930."
       },
       {
         "key": "E",
-        "text": "Crise de 1929 foi a única causa do nazismo."
+        "text": "A diferença entre os anúncios mostra recuperação do emprego industrial em 1930.",
+        "targetsError": "memory",
+        "rationale": "O exemplar de 1930 registra cortes de vagas e filas."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A Crise de 1929 provocou desemprego e instabilidade em várias economias, embora seus efeitos variassem entre países.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "correctOption": "C",
+    "explanation": "O boletim contrasta contratação em 1928 com cortes e filas em 1930; a ideia de trajetórias setoriais iguais contradiz a observação do editor sobre lugares e ramos.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "GH-44-CON-01"
     ],
-    "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "uniform-crisis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-44-CON-01"
   },
   {
     "id": "GH-44-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Nazismo era um movimento democrático pluralista.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Uma sala de exposição apresenta um cartaz italiano com o retrato ampliado de um líder e uma fotografia de desfile; uma vitrine alemã reúne símbolos nacionais e uma circular do partido. Outra ficha menciona documentos oficiais que classificavam famílias por critérios raciais e restringiam a vida pública de pessoas judias. As legendas indicam cidades e anos de circulação. Visitantes comparam as imagens com registros de reuniões políticas e organizações de massa.\n\nQue leitura comparativa preserva as semelhanças e diferenças descritas?",
     "options": [
       {
         "key": "A",
-        "text": "Nazismo era um movimento democrático pluralista."
+        "text": "Os movimentos compartilharam traços autoritários, embora o nazismo incorporasse racismo e antissemitismo como eixos ideológicos."
       },
       {
         "key": "B",
-        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+        "text": "A presença de símbolos nacionais permite comparar a mobilização política, mas não basta para concluir que os programas eram equivalentes.",
+        "targetsError": "conceptual",
+        "rationale": "A ficha apresenta diferenças de contexto, ênfase e política."
       },
       {
         "key": "C",
-        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+        "text": "A recusa da democracia liberal dificulta comparar as duas experiências históricas.",
+        "targetsError": "interpretation",
+        "rationale": "A legenda oferece elementos comuns para uma comparação."
       },
       {
         "key": "D",
-        "text": "Fascismo italiano e nazismo alemão rejeitavam democracia liberal, valorizavam liderança autoritária, nacionalismo e mobilização política."
+        "text": "A exposição atribui a mesma ênfase ao antissemitismo nos dois movimentos.",
+        "targetsError": "attention",
+        "rationale": "A ficha destaca essa característica na ideologia nazista."
       },
       {
         "key": "E",
-        "text": "Crise de 1929 foi a única causa do nazismo."
+        "text": "A diferença entre países torna os cartazes incapazes de revelar traços políticos.",
+        "targetsError": "memory",
+        "rationale": "As peças mostram autoridade, nacionalismo e ação de massa."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Fascismo italiano e nazismo alemão rejeitavam democracia liberal, valorizavam liderança autoritária, nacionalismo e mobilização política.",
-    "difficulty": "DIRECT",
+    "correctOption": "A",
+    "explanation": "A legenda registra nacionalismo e autoridade em ambos, mas destaca características específicas do nazismo; a semelhança visual não sustenta programas equivalentes.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-44-CON-02"
     ],
-    "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "false-equivalence",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-44-CON-02"
   },
   {
     "id": "GH-44-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: Crise econômica, medo político e fragilidade democrática criaram condições para regimes autoritários no entre-guerras. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Uma mostra sobre o governo alemão dos anos 1930 reúne um cartaz que define quem seria considerado parte da comunidade nacional e um formulário escolar que pede a classificação de famílias segundo critérios raciais. Ao lado estão depoimentos de pessoas perseguidas, além de registros com datas, órgão emissor e local de circulação. Uma ficha de sala informa que os documentos vieram de escolas e repartições públicas, enquanto os testemunhos foram doados por familiares.\n\nO que a organização dos documentos permite concluir?",
     "options": [
       {
         "key": "A",
-        "text": "Nazismo era um movimento democrático pluralista."
+        "text": "A classificação escolar mostra que a exclusão era conduzida fora das instituições públicas.",
+        "targetsError": "interpretation",
+        "rationale": "A curadoria situa o formulário na atuação de uma instituição."
       },
       {
         "key": "B",
-        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+        "text": "Os depoimentos situam o início do antissemitismo depois das medidas do governo.",
+        "targetsError": "memory",
+        "rationale": "O cartaz registra ideias usadas no contexto político descrito."
       },
       {
         "key": "C",
-        "text": "O nazismo incorporou racismo biológico e antissemitismo como elementos centrais de sua ideologia e política de Estado."
+        "text": "A mostra descreve racismo como preconceito privado sem vínculo com decisões estatais.",
+        "targetsError": "attention",
+        "rationale": "A ficha relaciona documentos oficiais e medidas públicas."
       },
       {
         "key": "D",
-        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+        "text": "O formulário permite observar como uma instituição classificava famílias, mas não reconstituir sozinho a trajetória de cada perseguido.",
+        "targetsError": "unknown",
+        "rationale": "O registro classifica famílias, mas não narra trajetórias pessoais."
       },
       {
         "key": "E",
-        "text": "Crise de 1929 foi a única causa do nazismo."
+        "text": "Racismo e antissemitismo aparecem incorporados à ideologia e às políticas do Estado nazista."
       }
     ],
-    "correctOption": "C",
-    "explanation": "O nazismo incorporou racismo biológico e antissemitismo como elementos centrais de sua ideologia e política de Estado.",
+    "correctOption": "E",
+    "explanation": "Cartaz, formulário e curadoria ligam ideias racistas a instituições públicas; tratar os documentos como reflexos de opiniões particulares ignora o caráter estatal indicado.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-44-CON-03"
     ],
-    "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "private-bias-only",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-44-CON-03"
   },
   {
     "id": "GH-44-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Entre-guerras e totalitarismos por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Um visitante descreve quatro recursos apresentados numa sala sobre regimes autoritários: transmissões de rádio com discursos de líderes, reuniões de organizações juvenis, vigilância de opositores e notícias que repetem a mesma imagem do país. Na saída, o guia informa que esses registros foram produzidos por instituições diferentes e tinham públicos variados. A turma compara a programação de rádio com relatos de pessoas detidas e nota que as mensagens públicas conviviam com repressão. O painel pede que cada grupo explique como esses instrumentos alteravam a vida política.\n\nQual conclusão articula melhor os recursos descritos?",
     "options": [
       {
         "key": "A",
-        "text": "Propaganda, organizações de massa, repressão e violência foram instrumentos de consolidação de regimes totalitários."
+        "text": "As transmissões substituíram as organizações juvenis na mobilização dos apoiadores.",
+        "targetsError": "interpretation",
+        "rationale": "A sala apresenta rádio e organizações como recursos concomitantes."
       },
       {
         "key": "B",
-        "text": "Nazismo era um movimento democrático pluralista."
+        "text": "Propaganda, organizações coletivas e repressão podiam atuar de modo combinado na consolidação do regime."
       },
       {
         "key": "C",
-        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+        "text": "Os relatos de detenções indicam que os discursos de rádio tiveram pouco alcance.",
+        "targetsError": "attention",
+        "rationale": "A presença da repressão não mede quem ouviu as mensagens."
       },
       {
         "key": "D",
-        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+        "text": "A variedade de instituições aponta para debate aberto entre oposição e governo.",
+        "targetsError": "conceptual",
+        "rationale": "Vigilância e detenções registram limites à oposição."
       },
       {
         "key": "E",
-        "text": "Crise de 1929 foi a única causa do nazismo."
+        "text": "Os registros mostram instrumentos distintos que podiam afetar a vida política em conjunto.",
+        "targetsError": "memory",
+        "rationale": "O painel relaciona esses recursos à organização do regime."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Propaganda, organizações de massa, repressão e violência foram instrumentos de consolidação de regimes totalitários.",
-    "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "correctOption": "B",
+    "explanation": "Rádio, organizações juvenis e vigilância aparecem lado a lado; interpretar a propaganda como substituta das organizações deixa de fora a combinação descrita.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-44-CON-04"
     ],
-    "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "single-instrument",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-44-CON-04"
   },
   {
     "id": "GH-44-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. A Crise de 1929 provocou desemprego e instabilidade em várias economias, embora seus efeitos variassem entre países.\nII. Nazismo era um movimento democrático pluralista.\nIII. O nazismo incorporou racismo biológico e antissemitismo como elementos centrais de sua ideologia e política de Estado.\nIV. O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma turma monta uma linha do tempo com a crise econômica iniciada em 1929, a ampliação do apoio eleitoral a partidos radicais na Alemanha e mudanças políticas em 1933. Nos anos seguintes, documentos registram restrições à imprensa, perseguição de opositores e alterações no funcionamento do parlamento. Outra ficha traz discursos de campanha e uma notícia sobre a nomeação de integrantes do governo. Os cartões foram organizados por data e instituição responsável.\n\nQue interpretação respeita a sequência apresentada?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A crise econômica afastou partidos radicais das disputas eleitorais alemãs.",
+        "targetsError": "memory",
+        "rationale": "A linha do tempo registra crescimento do apoio eleitoral."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "O apoio eleitoral cresceu antes das mudanças institucionais e foi seguido por restrições à imprensa e à oposição.",
+        "targetsError": "interpretation",
+        "rationale": "A segunda parte lista medidas que enfraqueceram instituições."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A repressão a opositores antecede as mudanças políticas registradas em 1933.",
+        "targetsError": "conceptual",
+        "rationale": "A linha do tempo situa essas medidas depois das mudanças."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "A ascensão nazista usou mecanismos políticos que depois serviram à destruição da democracia."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "A entrada no governo manteve a imprensa independente das decisões posteriores.",
+        "targetsError": "attention",
+        "rationale": "A sequência menciona medidas que restringiram a imprensa."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "D",
+    "explanation": "A sequência separa a chegada ao governo das medidas posteriores; interpretar a participação eleitoral como garantia democrática ignora as restrições listadas.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-44-CON-01",
       "GH-44-CON-02",
       "GH-44-CON-03",
-      "GH-44-CON-04"
+      "GH-44-CON-04",
+      "GH-44-CON-05"
     ],
-    "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "electoral-means-equals-democracy",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-44-CON-05"
   },
   {
     "id": "GH-44-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Entre-guerras e totalitarismos. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Um cartaz de campanha mostra uma multidão em marcha atrás de um líder, com bandeiras e uma frase que promete restaurar a grandeza nacional. O catálogo identifica o partido responsável, o público pretendido e o contexto de disputa por apoio eleitoral. Uma estudante observa que a composição oferece uma imagem ordenada e grandiosa, mas não informa como os opositores eram tratados nem quais grupos ficavam excluídos da comunidade imaginada. A professora pede uma inferência sobre a função do cartaz, sem usá-lo como fotografia neutra da sociedade.\n\nQual inferência considera melhor a autoria e a finalidade do cartaz?",
     "options": [
       {
         "key": "A",
-        "text": "Nazismo era um movimento democrático pluralista."
+        "text": "A imagem expressa a unidade que a campanha pretendia projetar, sem medir por si só o apoio de cada grupo.",
+        "targetsError": "interpretation",
+        "rationale": "Uma peça de campanha não mede opiniões nem votos efetivos."
       },
       {
         "key": "B",
-        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+        "text": "A promessa impressa indica que a recuperação econômica já estava em curso.",
+        "targetsError": "interpretation",
+        "rationale": "O slogan registra uma proposta, não um resultado econômico."
       },
       {
         "key": "C",
-        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+        "text": "A peça tenta mobilizar apoio com símbolos nacionais e uma imagem idealizada de unidade."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "A composição permite identificar as medidas aplicadas aos grupos excluídos.",
+        "targetsError": "attention",
+        "rationale": "O cartaz não descreve políticas contra esses grupos."
       },
       {
         "key": "E",
-        "text": "Diferenciar nome de partido, propaganda e características efetivas do regime."
+        "text": "O catálogo atribui a marcha a adversários do partido que produziu o cartaz.",
+        "targetsError": "memory",
+        "rationale": "A ficha identifica o partido responsável pela peça."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Diferenciar nome de partido, propaganda e características efetivas do regime.",
+    "correctOption": "C",
+    "explanation": "O catálogo identifica partido, público e contexto eleitoral; a promessa é um recurso de mobilização, não comprovação de recuperação econômica.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -220,80 +284,99 @@
       "GH-44-CON-05",
       "GH-44-CON-06"
     ],
-    "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "propaganda-as-photograph",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-44-CON-06"
   },
   {
     "id": "GH-44-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Entre-guerras e totalitarismos?",
+    "stem": "Uma ficha de uma exposição escolar descreve um cartaz político alemão com retrato destacado de um dirigente, bandeiras e uma frase que associa unidade nacional à liderança. O catálogo atribui a peça à propaganda partidária nazista e situa sua circulação em reuniões públicas durante a década de 1930. A ficha informa que o material buscava persuadir espectadores, mas não registra tiragem, quantidade de presentes nem opiniões coletadas depois do evento. Em outro painel, relatos e documentos administrativos aparecem separadamente para discutir como propaganda, repressão e exclusão racial coexistiam no período. A equipe pede que estudantes escrevam uma legenda que contextualize o cartaz e indique os limites do que ele permite afirmar.\n\nQual legenda interpreta a fonte com mais cuidado?",
     "options": [
       {
         "key": "A",
-        "text": "A Crise de 1929 provocou desemprego e instabilidade em várias economias, embora seus efeitos variassem entre países."
+        "text": "A peça permite estimar quantos espectadores passaram a apoiar o programa do partido.",
+        "targetsError": "propaganda-as-survey",
+        "rationale": "A ficha não informa dados de recepção ou mudança de opinião."
       },
       {
         "key": "B",
-        "text": "Fascismo italiano e nazismo alemão rejeitavam democracia liberal, valorizavam liderança autoritária, nacionalismo e mobilização política."
+        "text": "O retrato e as bandeiras registram a variedade de opiniões presentes nas reuniões.",
+        "targetsError": "propaganda-as-census",
+        "rationale": "A composição descreve uma mensagem visual, não as opiniões dos presentes."
       },
       {
         "key": "C",
-        "text": "A ascensão nazista ocorreu por mecanismos eleitorais e políticos que depois foram usados para destruir instituições democráticas."
+        "text": "O cartaz documenta diretamente a aplicação de medidas administrativas contra grupos excluídos.",
+        "targetsError": "source-function-confusion",
+        "rationale": "A ficha situa os documentos administrativos em outro painel."
       },
       {
         "key": "D",
-        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+        "text": "A peça pode ser contextualizada como propaganda partidária, sem tomá-la como medida da adesão pública.",
+        "targetsError": null,
+        "rationale": null
       },
       {
         "key": "E",
-        "text": "Propaganda, organizações de massa, repressão e violência foram instrumentos de consolidação de regimes totalitários."
+        "text": "A intenção de persuadir confirma que a mensagem foi aceita por quem assistiu ao evento.",
+        "targetsError": "intention-as-effect",
+        "rationale": "A finalidade declarada não comprova como o público recebeu a mensagem."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "explanation": "O catálogo identifica a peça como propaganda partidária e informa sua finalidade; como não registra tiragem nem opiniões dos espectadores, a imagem não mede a adesão pública.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
-      "GH-44-CON-01",
-      "GH-44-CON-02",
-      "GH-44-CON-03",
-      "GH-44-CON-04",
-      "GH-44-CON-05",
       "GH-44-CON-06"
     ],
-    "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "propaganda-as-public-opinion",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-44-CON-06"
   },
   {
     "id": "GH-44-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Entre-guerras e totalitarismos, qual conclusão final é sustentável?",
+    "stem": "Em uma apresentação, quatro estudantes dividem o período entre guerras em partes: instabilidade econômica após 1929, crescimento de movimentos autoritários, uso de propaganda e medidas de repressão. O grupo inclui recortes de jornais, um cartaz de comício, uma notícia sobre mudanças no parlamento e relatos de pessoas perseguidas. Cada material tem uma data e uma finalidade próprias. A última lâmina reúne as fontes sem incluir uma legenda explicativa.\n\nQual síntese responde melhor à pergunta do grupo?",
     "options": [
       {
         "key": "A",
-        "text": "Nazismo era um movimento democrático pluralista."
+        "text": "A crise econômica contribuiu para a consolidação, em interação com ideologia, propaganda e decisões institucionais.",
+        "targetsError": "conceptual",
+        "rationale": "O grupo pergunta como os fatores se relacionaram no processo."
       },
       {
         "key": "B",
-        "text": "O nome “nacional-socialista” torna o nazismo equivalente ao socialismo marxista."
+        "text": "A propaganda cresceu depois que as instituições democráticas foram fortalecidas.",
+        "targetsError": "interpretation",
+        "rationale": "O resumo situa propaganda junto ao enfraquecimento institucional."
       },
       {
         "key": "C",
-        "text": "A ascensão nazista ocorreu por mecanismos eleitorais e políticos que depois foram usados para destruir instituições democráticas."
+        "text": "O nacionalismo tomou o lugar do racismo e da repressão na análise do grupo.",
+        "targetsError": "attention",
+        "rationale": "A lâmina inclui esses fatores na mesma pergunta."
       },
       {
         "key": "D",
-        "text": "Toda a sociedade alemã apoiou unanimemente Hitler."
+        "text": "O apoio popular descrito aparece após a erosão das instituições democráticas.",
+        "targetsError": "memory",
+        "rationale": "A apresentação registra crescimento autoritário antes das medidas repressivas."
       },
       {
         "key": "E",
-        "text": "Crise de 1929 foi a única causa do nazismo."
+        "text": "Crise, ideologia e decisões institucionais se combinaram num processo de erosão democrática."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A ascensão nazista ocorreu por mecanismos eleitorais e políticos que depois foram usados para destruir instituições democráticas.",
+    "correctOption": "E",
+    "explanation": "O grupo articula instabilidade, propaganda, racismo, repressão e instituições; uma causa econômica isolada não corresponde ao conjunto apresentado.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-44-CON-01",
       "GH-44-CON-02",
@@ -302,7 +385,10 @@
       "GH-44-CON-05",
       "GH-44-CON-06"
     ],
-    "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "monocausal-rise",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-44-CON-01"
   }
 ]

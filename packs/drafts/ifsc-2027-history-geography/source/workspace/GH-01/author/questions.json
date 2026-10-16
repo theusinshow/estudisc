@@ -1,176 +1,231 @@
 [
   {
     "id": "GH-01-Q001",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Espaço geográfico e conceitos básicos da Geografia, qual afirmação está correta?",
+    "stem": "No bairro fictício de Pedra Clara, moradores compararam duas plantas municipais feitas com trinta anos de intervalo. A primeira mostrava uma estrada de terra, hortas e um córrego sinuoso. Na segunda, o leito do córrego estava canalizado, a estrada havia recebido asfalto e surgira um conjunto de casas. O relatório de campo também registrou que a chuva escoava mais depressa perto das novas calçadas e que agricultores passaram a vender em uma feira aberta junto ao terminal de ônibus. A equipe reuniu mapas, entrevistas e observações em campo.\n\nQue leitura geográfica explica melhor as mudanças registradas?",
     "options": [
       {
         "key": "A",
-        "text": "Espaço geográfico é apenas o espaço natural sem ação humana."
+        "text": "A diferença entre as plantas indica que a natureza local ficou fora das decisões da comunidade.",
+        "targetsError": "separar_sociedade_e_natureza",
+        "rationale": "O relatório liga obras, chuva, produção agrícola e circulação de moradores."
       },
       {
         "key": "B",
-        "text": "O espaço geográfico resulta da interação histórica entre sociedades e natureza e está em transformação contínua."
+        "text": "A feira transforma o bairro em uma região definida pela venda de alimentos.",
+        "targetsError": "confundir_lugar_com_regiao",
+        "rationale": "A feira é uma atividade, mas o conjunto de mudanças é mais amplo."
       },
       {
         "key": "C",
-        "text": "Território é sinônimo de país e nunca existe em outras escalas."
+        "text": "O caso mostra alterações ligadas entre si na organização material e social do bairro.",
+        "rationale": "A canalização, o asfalto, as casas e a feira aparecem no mesmo processo."
       },
       {
         "key": "D",
-        "text": "Paisagem mostra somente elementos naturais."
+        "text": "As entrevistas descrevem uma paisagem sem relação com os mapas municipais.",
+        "targetsError": "desconectar_fontes",
+        "rationale": "As entrevistas foram reunidas com mapas e observações do terreno."
       },
       {
         "key": "E",
-        "text": "Regiões são divisões eternas e independentes do critério usado."
+        "text": "O terminal e a feira explicam a circulação, enquanto o córrego segue um processo separado.",
+        "targetsError": "confundir_territorio_com_infraestrutura",
+        "rationale": "O texto não atribui ao terminal autoridade sobre o curso d’água."
       }
     ],
-    "correctOption": "B",
-    "explanation": "O espaço geográfico resulta da interação histórica entre sociedades e natureza e está em transformação contínua.",
+    "correctOption": "C",
+    "explanation": "A equipe relaciona obras, moradia, escoamento da chuva e produção; a hipótese de que a feira define sozinha o recorte não explica todo o processo.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "RECALL",
     "conceptIds": [
       "GH-01-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-01-Q002",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Espaço geográfico é apenas o espaço natural sem ação humana.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "A imagem da rua da Estação, em Vale do Cedro, enquadra um prédio baixo com janelas altas, uma parada coberta de ônibus e placas novas de ciclovia. No canto direito aparece um muro de pedra parcialmente coberto por cartazes de um festival recente. A ficha informa que a fotografia foi feita em abril, às 16 horas, durante a reforma da calçada. Uma moradora reconheceu o prédio como antiga oficina ferroviária; o fotógrafo, porém, não entrou no edifício nem registrou o que existe em seu interior. A imagem foi escolhida para uma exposição sobre o bairro.\n\nO que a fotografia permite observar com mais segurança?",
     "options": [
       {
         "key": "A",
-        "text": "Espaço geográfico é apenas o espaço natural sem ação humana."
+        "text": "O enquadramento reúne vestígios de épocas distintas na aparência atual da rua.",
+        "rationale": "A oficina, a parada, a ciclovia e o muro aparecem no mesmo recorte."
       },
       {
         "key": "B",
-        "text": "Território é sinônimo de país e nunca existe em outras escalas."
+        "text": "A oficina manteve a função ferroviária depois da instalação da ciclovia.",
+        "targetsError": "inferir_funcao_sem_evidencia",
+        "rationale": "O relato da moradora menciona o passado do prédio, não seu uso atual."
       },
       {
         "key": "C",
-        "text": "Paisagem mostra somente elementos naturais."
+        "text": "O festival foi responsável pela construção do muro de pedra retratado.",
+        "targetsError": "confundir_coexistencia_com_causalidade",
+        "rationale": "Os cartazes são recentes, mas a origem do muro não foi investigada."
       },
       {
         "key": "D",
-        "text": "Paisagem é aquilo que pode ser percebido em um recorte do espaço e guarda marcas de diferentes tempos."
+        "text": "A imagem sugere uma rotina semelhante nas ruas próximas do município.",
+        "targetsError": "generalizar_recorte_visual",
+        "rationale": "Uma fotografia localizada não descreve o município inteiro."
       },
       {
         "key": "E",
-        "text": "Regiões são divisões eternas e independentes do critério usado."
+        "text": "O horário da foto comprova que a parada recebe passageiros durante a tarde.",
+        "targetsError": "extrapolar_instante_fotografado",
+        "rationale": "A ficha informa o horário, sem registrar o movimento de passageiros."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Paisagem é aquilo que pode ser percebido em um recorte do espaço e guarda marcas de diferentes tempos.",
+    "correctOption": "A",
+    "explanation": "A fotografia mostra simultaneamente elementos antigos e recentes, mas não prova a função atual da oficina nem a rotina do município.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-01-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-01-Q003",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: Uma avenida, uma área rural e uma floresta podem pertencer ao mesmo espaço geográfico, mas são produzidas e usadas de modos diferentes. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Em um projeto escolar, Joana contou que conhece os atalhos entre a escola e a casa da avó, cumprimenta quem trabalha na padaria e costuma parar diante de um ipê plantado por sua turma. Ela guarda um desenho do caminho feito quando era menor e percebe que a praça ganhou bancos desde então. No mapa do projeto, Joana marcou a rua onde brincava e escreveu os apelidos que os vizinhos usam para alguns cantos do bairro. O mapa não mostra limites administrativos nem regras de acesso aos terrenos.\n\nQual dimensão do espaço aparece com maior força no relato de Joana?",
     "options": [
       {
         "key": "A",
-        "text": "Espaço geográfico é apenas o espaço natural sem ação humana."
+        "text": "A região, pois Joana agrupou ruas por um critério administrativo estadual.",
+        "targetsError": "confundir_lugar_com_regiao",
+        "rationale": "O mapa registra vínculos e lembranças, não uma divisão administrativa."
       },
       {
         "key": "B",
-        "text": "Território é sinônimo de país e nunca existe em outras escalas."
+        "text": "O território, porque os apelidos das ruas indicam controle sobre os acessos do bairro.",
+        "targetsError": "atribuir_poder_sem_evidencia",
+        "rationale": "O texto não relata disputa, autoridade ou controle de acesso."
       },
       {
         "key": "C",
-        "text": "Lugar enfatiza vivência, identidade e pertencimento; território envolve relações de poder e apropriação do espaço."
+        "text": "A paisagem, pois a memória da avó torna invisíveis as mudanças da praça.",
+        "targetsError": "reduzir_relato_a_elementos_visiveis",
+        "rationale": "A entrevista destaca relações cotidianas e pertencimento, além da praça."
       },
       {
         "key": "D",
-        "text": "Paisagem mostra somente elementos naturais."
+        "text": "A rede urbana, porque o desenho classifica os serviços por hierarquia regional.",
+        "targetsError": "confundir_rotina_com_hierarquia_urbana",
+        "rationale": "Padaria e escola aparecem como referências do caminho, sem hierarquia."
       },
       {
         "key": "E",
-        "text": "Regiões são divisões eternas e independentes do critério usado."
+        "text": "O lugar vivido, construído por experiências, lembranças e relações cotidianas.",
+        "rationale": "Os atalhos, vizinhos e lembranças dão sentido pessoal ao bairro."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Lugar enfatiza vivência, identidade e pertencimento; território envolve relações de poder e apropriação do espaço.",
+    "correctOption": "E",
+    "explanation": "Os vínculos de Joana com o caminho, os vizinhos e a praça sustentam a leitura; a hipótese de controle territorial não aparece no relato.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-01-CON-03"
     ],
-    "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-01-Q004",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Espaço geográfico e conceitos básicos da Geografia por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Pescadores e comerciantes de um distrito discutiram o uso de um atracadouro à margem do rio. Uma associação pediu que as embarcações pequenas tivessem prioridade pela manhã; uma empresa de passeio solicitou horários para seus barcos turísticos. A prefeitura apresentou uma proposta de cadastro e de faixas de embarque, enquanto moradores questionaram quem fiscalizaria as regras. O documento registra argumentos, assinaturas e uma votação adiada para a semana seguinte. Um mapa anexo mostra o atracadouro, a rua de acesso e áreas privadas próximas, sem desenhar uma nova divisa municipal.\n\nQue aspecto da situação é central para compreender o espaço em disputa?",
     "options": [
       {
         "key": "A",
-        "text": "Região é um recorte construído a partir de critérios escolhidos, como clima, economia, cultura ou administração."
+        "text": "A paisagem ribeirinha, formada pelo atracadouro e pela vegetação da margem.",
+        "targetsError": "confundir_cenario_com_relacao_de_poder",
+        "rationale": "O cenário importa, mas a reunião discute quem define o uso."
       },
       {
         "key": "B",
-        "text": "Espaço geográfico é apenas o espaço natural sem ação humana."
+        "text": "Relações de poder e apropriação ligadas ao uso e à regulação da margem.",
+        "rationale": "Associação, empresa e prefeitura negociam regras de acesso e prioridade."
       },
       {
         "key": "C",
-        "text": "Território é sinônimo de país e nunca existe em outras escalas."
+        "text": "O recorte hidrográfico organiza horários de saída e entrada dos barcos.",
+        "targetsError": "confundir_criterio_de_regiao",
+        "rationale": "Os horários são objeto de negociação, não um critério hidrográfico."
       },
       {
         "key": "D",
-        "text": "Paisagem mostra somente elementos naturais."
+        "text": "O atracadouro funciona como ponto de encontro cotidiano dos usuários da margem.",
+        "targetsError": "trocar_memoria_por_disputa_de_uso",
+        "rationale": "O anexo não destaca nomes afetivos nem lembranças locais."
       },
       {
         "key": "E",
-        "text": "Regiões são divisões eternas e independentes do critério usado."
+        "text": "A proximidade entre o atracadouro e os terrenos privados explica o debate sobre horários.",
+        "targetsError": "reduzir_conflito_a_distancia",
+        "rationale": "A ata trata de regras, representação e autoridade sobre o atracadouro."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Região é um recorte construído a partir de critérios escolhidos, como clima, economia, cultura ou administração.",
+    "correctOption": "B",
+    "explanation": "A votação adiada e as propostas concorrentes revelam disputa sobre decisões e acesso; a leitura apenas da paisagem deixa esse conflito de fora.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-01-CON-04"
     ],
-    "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "territorio_como_relacao_de_poder",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-01-Q005",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. O espaço geográfico resulta da interação histórica entre sociedades e natureza e está em transformação contínua.\nII. Espaço geográfico é apenas o espaço natural sem ação humana.\nIII. Lugar enfatiza vivência, identidade e pertencimento; território envolve relações de poder e apropriação do espaço.\nIV. Território é sinônimo de país e nunca existe em outras escalas.\nAssinale a alternativa CORRETA.",
+    "stem": "A equipe de Vale do Cedro estudou os deslocamentos feitos em uma semana por estudantes e trabalhadores. Três bairros de margens opostas do rio enviaram muitos passageiros ao mesmo terminal de ônibus, embora tenham parques, histórias e padrões de moradia diferentes. Para organizar horários de novas linhas, a equipe desenhou um recorte que reuniu os bairros ligados ao terminal e deixou de fora uma área próxima cujos moradores usam outra estação. O boletim explica que o mapa foi criado para responder à pergunta sobre deslocamentos diários.\n\nQual interpretação melhor explica o recorte adotado pela equipe?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "O recorte torna os três bairros um lugar de pertencimento compartilhado.",
+        "targetsError": "confundir_regiao_com_lugar",
+        "rationale": "O boletim agrupou fluxos, não descreveu identidade comum."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A fronteira do mapa prova que os bairros formam uma unidade política independente.",
+        "targetsError": "tomar_recorte_analitico_por_divisao_politica",
+        "rationale": "O desenho foi feito para planejar linhas de ônibus."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "As diferenças de moradia impedem que os bairros sejam estudados em conjunto.",
+        "targetsError": "negar_criterio_funcional",
+        "rationale": "A equipe os reuniu por uma conexão de transporte compartilhada."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O agrupamento usa a ligação com o terminal como critério para construir uma região de análise.",
+        "rationale": "O objetivo e a seleção dos bairros seguem o padrão de deslocamentos."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "A proximidade no mapa explica por que a área excluída usa outra estação.",
+        "targetsError": "confundir_distancia_com_fluxo",
+        "rationale": "A justificativa apresentada é o destino dos passageiros, não proximidade."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "D",
+    "explanation": "A equipe selecionou bairros conforme os fluxos ao terminal e declarou a finalidade do mapa; a fronteira desenhada não cria uma unidade política.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -179,37 +234,48 @@
       "GH-01-CON-03",
       "GH-01-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "concept_discrimination",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-01-Q006",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Espaço geográfico e conceitos básicos da Geografia. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Na encosta do Morro da Figueira, uma equipe marcou em duas visitas os caminhos de pedestres, as casas, uma nascente e as áreas de cultivo. Depois de uma chuva intensa, moradores relataram que a água barrenta chegou à quadra recém-pavimentada; a equipe também observou que o canal construído para escoamento terminava perto da nascente. Um grupo de moradores pediu que a prefeitura explicasse o projeto e sugeriu preservar um trecho de mata usado como atalho até a escola. O relatório traz fotos, um croqui e datas das visitas.\n\nQual conclusão articula melhor as evidências reunidas?",
     "options": [
       {
         "key": "A",
-        "text": "Espaço geográfico é apenas o espaço natural sem ação humana."
+        "text": "A presença da nascente torna as obras secundárias na explicação do barro.",
+        "targetsError": "atribuir_causa_unica",
+        "rationale": "O croqui registra canal e pavimentação junto à área da nascente."
       },
       {
         "key": "B",
-        "text": "Território é sinônimo de país e nunca existe em outras escalas."
+        "text": "A mata organiza uma região escolar definida pelos trajetos dos estudantes.",
+        "targetsError": "confundir_reivindicacao_com_regionalizacao",
+        "rationale": "A fala reivindica cuidado com um trecho, sem propor esse recorte."
       },
       {
         "key": "C",
-        "text": "Paisagem mostra somente elementos naturais."
+        "text": "O caso reúne mudanças visíveis, usos cotidianos e decisões que afetam a relação com a encosta.",
+        "rationale": "Fotos, trajeto escolar, obras e pedido comunitário se conectam."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "A mata funciona como limite administrativo entre casas e quadra.",
+        "targetsError": "inventar_fronteira_administrativa",
+        "rationale": "O relatório registra um atalho, não uma divisão oficial."
       },
       {
         "key": "E",
-        "text": "Identificar qual conceito geográfico melhor explica uma situação, justificando com elementos do texto, mapa ou imagem."
+        "text": "As datas das visitas mostram que o canal foi construído depois da chuva.",
+        "targetsError": "inverter_sequencia_temporal",
+        "rationale": "As datas indicam visitas, sem estabelecer a época da obra."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Identificar qual conceito geográfico melhor explica uma situação, justificando com elementos do texto, mapa ou imagem.",
+    "correctOption": "C",
+    "explanation": "O relatório combina obras, água, rotina dos moradores e reivindicação local; as datas das visitas não comprovam quando o canal foi construído.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -220,37 +286,48 @@
       "GH-01-CON-05",
       "GH-01-CON-06"
     ],
-    "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-01-Q007",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Espaço geográfico e conceitos básicos da Geografia?",
+    "stem": "A agricultora Lia descreve que a nova estrada facilita levar verduras à feira, mas cortou um caminho usado por crianças para chegar ao campo de futebol. Ela relata que, após a drenagem de uma vala, a água passou a alcançar duas hortas mais cedo no verão. No mapa enviado junto à carta, o trajeto antigo aparece tracejado e a área de cultivo aparece sombreada. Lia pede uma passagem segura e uma vistoria no ponto de drenagem. A carta foi escrita para solicitar providências, e não para registrar todas as atividades do bairro.\n\nQual leitura respeita melhor o alcance dessa fonte?",
     "options": [
       {
         "key": "A",
-        "text": "O espaço geográfico resulta da interação histórica entre sociedades e natureza e está em transformação contínua."
+        "text": "A carta relaciona infraestrutura, produção, circulação e efeitos percebidos pela moradora.",
+        "rationale": "Lia descreve a estrada, a feira, o caminho das crianças e as hortas."
       },
       {
         "key": "B",
-        "text": "Paisagem é aquilo que pode ser percebido em um recorte do espaço e guarda marcas de diferentes tempos."
+        "text": "A estrada dissolveu os vínculos de vizinhança ao aproximar a feira.",
+        "targetsError": "concluir_desagregacao_sem_evidencia",
+        "rationale": "A carta menciona um caminho interrompido, não relações de vizinhança."
       },
       {
         "key": "C",
-        "text": "Os conceitos geográficos não são sinônimos: cada um destaca uma dimensão diferente do espaço."
+        "text": "O trajeto tracejado comprova que o município reconheceu uma servidão pública.",
+        "targetsError": "confundir_mapa_anexo_com_ato_legal",
+        "rationale": "A carta não apresenta documento de reconhecimento oficial."
       },
       {
         "key": "D",
-        "text": "Paisagem mostra somente elementos naturais."
+        "text": "A drenagem indica que a área de cultivo foi planejada para receber mais água.",
+        "targetsError": "inverter_efeito_da_intervencao",
+        "rationale": "Lia pede vistoria porque percebeu mudança no escoamento."
       },
       {
         "key": "E",
-        "text": "Região é um recorte construído a partir de critérios escolhidos, como clima, economia, cultura ou administração."
+        "text": "A feira define o território de Lia, embora a carta trate de pedidos à prefeitura.",
+        "targetsError": "reduzir_territorio_a_destino_comercial",
+        "rationale": "O documento evidencia solicitações sobre caminhos e água."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "A",
+    "explanation": "A autora conecta efeitos da estrada e da drenagem a atividades diárias; por ser uma carta de solicitação, o mapa não vale como ato legal.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -261,37 +338,48 @@
       "GH-01-CON-05",
       "GH-01-CON-06"
     ],
-    "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-01-Q008",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Espaço geográfico e conceitos básicos da Geografia, qual conclusão final é sustentável?",
+    "stem": "Moradores de uma vila costeira discutiram a abertura de uma área pública junto à praia. O projeto prevê um caminho de madeira para evitar pisoteio sobre a vegetação e um espaço de pesca artesanal com horários combinados. Alguns participantes lembraram que usam aquela entrada há décadas; outros perguntaram como será garantido o acesso de pessoas com mobilidade reduzida. A secretaria informou que ainda vai consultar as famílias que vivem nas ruas próximas e revisar a posição dos bancos. A ata registra opiniões diferentes e não apresenta a versão final do projeto.\n\nQual interpretação é mais consistente com a reunião descrita?",
     "options": [
       {
         "key": "A",
-        "text": "Espaço geográfico é apenas o espaço natural sem ação humana."
+        "text": "O caminho de madeira indica que o acesso já contempla necessidades de mobilidade.",
+        "targetsError": "atribuir_efeito_total_a_obra",
+        "rationale": "A ata registra dúvidas de acesso ainda sem solução final."
       },
       {
         "key": "B",
-        "text": "Território é sinônimo de país e nunca existe em outras escalas."
+        "text": "A memória dos moradores permite prever a quantidade de visitantes da praia.",
+        "targetsError": "usar_memoria_como_medida_estatistica",
+        "rationale": "A reunião não apresenta contagem de visitantes."
       },
       {
         "key": "C",
-        "text": "Os conceitos geográficos não são sinônimos: cada um destaca uma dimensão diferente do espaço."
+        "text": "A madeira resolve o acesso à praia e encerra a discussão entre moradores.",
+        "rationale": "A ata registra perguntas ainda pendentes sobre o acesso.",
+        "targetsError": "ignorar_debate_de_acessibilidade"
       },
       {
         "key": "D",
-        "text": "Paisagem mostra somente elementos naturais."
+        "text": "O projeto transforma a entrada e as ruas próximas numa área de pesca artesanal delimitada.",
+        "targetsError": "confundir_proximidade_com_apropriacao",
+        "rationale": "Os horários se referem ao espaço de pesca junto à praia."
       },
       {
         "key": "E",
-        "text": "Regiões são divisões eternas e independentes do critério usado."
+        "text": "As opiniões divergentes mostram que a proposta permanece em negociação.",
+        "rationale": "A secretaria ainda consultará famílias e revisará os bancos."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Os conceitos geográficos não são sinônimos: cada um destaca uma dimensão diferente do espaço.",
+    "correctOption": "E",
+    "explanation": "A revisão anunciada e as opiniões distintas mostram que a decisão não está concluída; a memória de uso não fornece uma estimativa de visitantes.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -302,7 +390,7 @@
       "GH-01-CON-05",
       "GH-01-CON-06"
     ],
-    "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   }
 ]

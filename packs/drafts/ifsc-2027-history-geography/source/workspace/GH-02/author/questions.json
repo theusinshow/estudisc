@@ -1,176 +1,231 @@
 [
   {
     "id": "GH-02-Q001",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Cartografia: mapas, orientação, coordenadas e escala, qual afirmação está correta?",
+    "stem": "A Defesa Civil de Vila das Pontes preparou um mapa para orientar famílias durante uma cheia. O desenho destaca escolas que podem funcionar como abrigo, trechos de rua com interrupção provável e telefones dos postos de atendimento. Uma área verde extensa aparece sem árvores individuais, e nomes de restaurantes foram retirados para que os símbolos de emergência fiquem legíveis. No rodapé, o aviso informa que a escala foi reduzida para caber numa folha e recomenda conferir a situação por telefone antes de sair de casa.\n\nPor que alguns elementos foram destacados e outros ficaram de fora?",
     "options": [
       {
         "key": "A",
-        "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        "text": "O mapa registra os elementos do terreno em proporção igual, mas muda seus símbolos.",
+        "targetsError": "confundir_mapa_com_reproducao_integral",
+        "rationale": "A equipe selecionou abrigos, vias e contatos para uma finalidade de emergência."
       },
       {
         "key": "B",
-        "text": "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade."
+        "text": "A seleção atende à orientação de deslocamento e à comunicação durante a cheia.",
+        "rationale": "Os itens destacados ajudam a localizar abrigo, bloqueio e atendimento."
       },
       {
         "key": "C",
-        "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        "text": "A retirada dos restaurantes indica que estabelecimentos comerciais não existem na vila.",
+        "targetsError": "interpretar_omissao_como_inexistencia",
+        "rationale": "O aviso explica que nomes foram removidos para ganhar legibilidade."
       },
       {
         "key": "D",
-        "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        "text": "A escala reduzida permite localizar cada árvore e cada imóvel com mais detalhe.",
+        "targetsError": "inverter_efeito_da_escala",
+        "rationale": "O mapa generaliza detalhes para caber na folha."
       },
       {
         "key": "E",
-        "text": "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        "text": "A lista de telefones substitui a necessidade de conferir as condições locais.",
+        "targetsError": "ignorar_limite_da_fonte",
+        "rationale": "O aviso recomenda telefonar porque a situação pode mudar."
       }
     ],
     "correctOption": "B",
-    "explanation": "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade.",
+    "explanation": "O aviso declara uma finalidade de emergência e explica a retirada de nomes; a omissão melhora a leitura, sem significar que restaurantes não existam.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "RECALL",
     "conceptIds": [
       "GH-02-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-02-Q002",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Latitude e longitude medem exatamente a altitude de um lugar.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Um folheto comunitário colore setores de um vale conforme a profundidade estimada da água em uma enchente simulada. A legenda associa amarelo a até 20 centímetros, laranja a mais de 20 até 50 centímetros e roxo a mais de 50 centímetros. O setor da escola está laranja e o da praça está amarelo. O título esclarece que o mapa representa a simulação de sábado, enquanto a nota de fonte informa que os dados vieram de medições feitas por estudantes com réguas e depois conferidas por um técnico municipal.\n\nO que o setor da escola indica segundo a legenda?",
     "options": [
       {
         "key": "A",
-        "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        "text": "A água passou de cinquenta centímetros na escola durante uma enchente real.",
+        "targetsError": "trocar_simulacao_por_evento_observado",
+        "rationale": "O título identifica uma simulação, não uma enchente ocorrida."
       },
       {
         "key": "B",
-        "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        "text": "A profundidade estimada ali ficou na faixa indicada pela cor roxa.",
+        "targetsError": "associar_cor_a_classe_errada",
+        "rationale": "Roxo corresponde ao intervalo mais alto da legenda."
       },
       {
         "key": "C",
-        "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        "text": "A escola está em uma área mais seca que a praça na simulação.",
+        "targetsError": "inverter_ordem_das_classes",
+        "rationale": "A cor laranja representa intervalo acima do amarelo."
       },
       {
         "key": "D",
-        "text": "Latitude indica a posição ao norte ou ao sul do Equador; longitude indica a posição a leste ou oeste do meridiano de Greenwich."
+        "text": "A estimativa para a escola é maior que 20 e chega a 50 centímetros.",
+        "rationale": "O setor laranja corresponde ao intervalo descrito na legenda."
       },
       {
         "key": "E",
-        "text": "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        "text": "A nota de fonte transforma as medidas estudantis em previsões definitivas.",
+        "targetsError": "exagerar_grau_de_certeza",
+        "rationale": "A nota registra conferência, enquanto o título mantém caráter simulado."
       }
     ],
     "correctOption": "D",
-    "explanation": "Latitude indica a posição ao norte ou ao sul do Equador; longitude indica a posição a leste ou oeste do meridiano de Greenwich.",
+    "explanation": "O título situa os dados em uma simulação e a legenda define o intervalo laranja; interpretar a cor como roxa troca as faixas.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-02-CON-02"
     ],
-    "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "legend_misread",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-02-Q003",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: Um mapa reduz o mundo real. Para usá-lo corretamente, é preciso entender orientação, coordenadas, legenda e escala. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "No mapa do campus do Cedro, uma seta com a letra N aponta para a margem superior da folha. A biblioteca está no centro do desenho, a quadra aparece à direita e o ambulatório fica acima da biblioteca. Uma estudante anotou que a equipe de primeiros socorros partiria da biblioteca e seguiria primeiro até o ambulatório. A planta contém ainda linhas de quadras e nomes de prédios, mas não informa a distância entre eles nem sugere uma rota acessível.\n\nEm que direção cardeal fica o ambulatório em relação à biblioteca?",
     "options": [
       {
         "key": "A",
-        "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        "text": "Ao norte, pois o ambulatório está acima da biblioteca na orientação indicada.",
+        "rationale": "A seta N confirma que a margem superior corresponde ao norte."
       },
       {
         "key": "B",
-        "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        "text": "Ao sul, porque o destino da equipe fica abaixo da quadra.",
+        "targetsError": "trocar_referencia_por_ponto_secundario",
+        "rationale": "A relação pedida é com a biblioteca, não com a quadra."
       },
       {
         "key": "C",
-        "text": "A escala relaciona uma medida no mapa à distância correspondente no terreno."
+        "text": "A leste, já que o ambulatório está no lado direito da planta.",
+        "targetsError": "ignorar_seta_de_norte",
+        "rationale": "O desenho posiciona o ambulatório acima, não à direita."
       },
       {
         "key": "D",
-        "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        "text": "A oeste, considerando que a margem superior representa o poente.",
+        "targetsError": "confundir_pontos_cardinais",
+        "rationale": "A seta identifica norte no topo da folha."
       },
       {
         "key": "E",
-        "text": "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        "text": "A direção não pode ser identificada sem medir a distância.",
+        "targetsError": "confundir_orientacao_com_escala",
+        "rationale": "A posição relativa aparece mesmo sem uma medida de distância."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A escala relaciona uma medida no mapa à distância correspondente no terreno.",
+    "correctOption": "A",
+    "explanation": "A seta identifica o norte no alto e o ambulatório está acima da biblioteca; a falta de escala não impede reconhecer a direção.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-02-CON-03"
     ],
-    "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "orientation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-02-Q004",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Cartografia: mapas, orientação, coordenadas e escala por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Um guia impresso para uma trilha foi diagramado de lado para aproveitar melhor a página. Na margem, a rosa dos ventos indica N em direção ao canto inferior direito e W em direção ao canto superior esquerdo; o ponto de partida está perto de uma ponte, e o mirante fica a oeste do ponto onde a trilha cruza um córrego. A legenda usa pequenos triângulos para indicar os marcos. Uma visitante pensou em seguir pela borda esquerda da página, mas a equipe recomenda conferir os símbolos da rosa antes de sair.\n\nEm que direção indicada na página a visitante deve seguir para chegar ao mirante?",
     "options": [
       {
         "key": "A",
-        "text": "Quanto maior o denominador de uma escala numérica, menor é a escala e maior tende a ser a área representada com menos detalhe."
+        "text": "Pela borda esquerda da página, que representa o mesmo lado em qualquer diagrama.",
+        "targetsError": "assumir_norte_no_alto",
+        "rationale": "O guia foi rotacionado e a rosa aponta outra orientação."
       },
       {
         "key": "B",
-        "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        "text": "Pelo caminho mais curto entre a ponte e o mirante.",
+        "targetsError": "trocar_direcao_por_distancia",
+        "rationale": "O relato não compara o comprimento dos caminhos."
       },
       {
         "key": "C",
-        "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        "text": "Seguindo a indicação W, que aponta para o canto superior esquerdo da página.",
+        "rationale": "A orientação da página não altera os pontos cardeais assinalados."
       },
       {
         "key": "D",
-        "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        "text": "Pelo triângulo de maior tamanho, sem considerar a seta cardinal.",
+        "targetsError": "confundir_simbolo_de_marco_com_orientacao",
+        "rationale": "Os triângulos marcam pontos, enquanto a rosa orienta o mapa."
       },
       {
         "key": "E",
-        "text": "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        "text": "Pelo lado do córrego que acompanha o limite inferior da folha.",
+        "targetsError": "inferir_orientacao_por_elemento_local",
+        "rationale": "O córrego é referência da trilha, não da orientação do papel."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Quanto maior o denominador de uma escala numérica, menor é a escala e maior tende a ser a área representada com menos detalhe.",
+    "correctOption": "C",
+    "explanation": "A rosa indica W no canto superior esquerdo, mesmo com a página rotacionada; seguir a borda esquerda confundiria direção cardinal com posição no papel.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-02-CON-04"
     ],
-    "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "compass_orientation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-02-Q005",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade.\nII. Latitude e longitude medem exatamente a altitude de um lugar.\nIII. A escala relaciona uma medida no mapa à distância correspondente no terreno.\nIV. Escala 1:10.000 representa menos detalhe que 1:1.000.000.\nAssinale a alternativa CORRETA.",
+    "stem": "Um grupo de moradores desenhou um caminho entre a parada de ônibus e a unidade de saúde. A folha traz seta de norte, símbolos para passarelas, uma legenda que diferencia calçadas pavimentadas de trechos de terra e a indicação da escala gráfica. O desenho foi preparado para uma caminhada de reconhecimento, não para orientar ambulâncias em tempo real. Uma das passarelas estava em manutenção na semana em que o mapa foi entregue, informação anotada no verso. A equipe pretende revisar a rota depois de conversar com usuários de cadeira de rodas.\n\nQual uso do mapa está mais de acordo com as informações apresentadas?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Usá-lo como registro atual do trajeto, mesmo com a passarela em manutenção.",
+        "targetsError": "tomar_mapa_como_completo_e_atual",
+        "rationale": "O verso registra manutenção e a equipe planeja revisão."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Ignorar a legenda porque símbolos cartográficos têm sentido universal.",
+        "targetsError": "desconsiderar_legenda",
+        "rationale": "A legenda define a diferença entre os tipos de calçada."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Tomar a escala gráfica como medida de tempo entre os pontos.",
+        "targetsError": "confundir_distancia_com_duracao",
+        "rationale": "A escala relaciona comprimentos no desenho ao terreno."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Usar o caminho para qualquer veículo, mesmo com a passarela em obras.",
+        "targetsError": "ignorar_condicao_temporal_da_fonte",
+        "rationale": "A nota registra manutenção e o material não é para emergências."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Planejar a caminhada e conferir a atualização da passarela e da acessibilidade.",
+        "rationale": "A finalidade e as ressalvas indicam uso acompanhado de verificação."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "E",
+    "explanation": "A caminhada de reconhecimento combina com a finalidade declarada, mas a anotação sobre a passarela pede atualização antes do uso.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -179,37 +234,48 @@
       "GH-02-CON-03",
       "GH-02-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-02-Q006",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Cartografia: mapas, orientação, coordenadas e escala. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Para uma caminhada escolar, o professor mediu no mapa a distância entre o portão e o centro comunitário: 3,2 centímetros. A legenda informa escala numérica de 1:25.000, e a folha não foi ampliada nem reduzida depois da impressão. O professor pede que os estudantes registrem a distância em metros, arredondando apenas se necessário. A rota passa por duas quadras e por uma ponte; essas referências servem para conferir se o trajeto escolhido no mapa corresponde ao caminho mostrado no campo.\n\nQual distância aproximada corresponde ao trecho no terreno?",
     "options": [
       {
         "key": "A",
-        "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        "text": "80 metros, obtidos ao dividir 25.000 por 3,2 centímetros.",
+        "targetsError": "inverter_proporcao_da_escala",
+        "rationale": "A razão indica multiplicar a medida do mapa pelo denominador."
       },
       {
         "key": "B",
-        "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        "text": "800 metros, pois 3,2 × 25.000 = 80.000 centímetros = 800 metros.",
+        "rationale": "A multiplicação e a conversão de centímetros resultam em 800 metros."
       },
       {
         "key": "C",
-        "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        "text": "8 quilômetros, convertendo 80.000 centímetros diretamente em quilômetros.",
+        "targetsError": "errar_conversao_de_centimetros",
+        "rationale": "80.000 centímetros correspondem a 800 metros, não 8 quilômetros."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "3,2 quilômetros, porque a medida do papel conserva o valor numérico.",
+        "targetsError": "transferir_valor_sem_aplicar_escala",
+        "rationale": "A distância real precisa considerar a escala 1:25.000."
       },
       {
         "key": "E",
-        "text": "Ler mapa e legenda antes de inferir localização, distância, direção ou distribuição espacial."
+        "text": "25 metros, tomando o denominador como medida direta no terreno.",
+        "targetsError": "ler_denominador_como_distancia",
+        "rationale": "O denominador é uma razão, não o comprimento do trajeto."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Ler mapa e legenda antes de inferir localização, distância, direção ou distribuição espacial.",
+    "correctOption": "B",
+    "explanation": "Multiplicando 3,2 cm por 25.000 obtêm-se 80.000 cm, equivalentes a 800 m; dividir pela escala inverte a relação.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -220,37 +286,48 @@
       "GH-02-CON-05",
       "GH-02-CON-06"
     ],
-    "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "scale_calculation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-02-Q007",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Cartografia: mapas, orientação, coordenadas e escala?",
+    "stem": "Uma equipe de saneamento registrou em um croqui o trecho entre a caixa d’água e o reservatório do bairro. A distância desenhada mede 4,4 centímetros. No canto da folha consta escala numérica 1:50.000; a equipe confirma que a impressão saiu no tamanho original. Antes de transportar os equipamentos, os técnicos querem estimar a distância do percurso em quilômetros. O croqui também marca uma curva da estrada e um riacho, mas nenhum desses símbolos altera a relação definida pela escala.\n\nQual estimativa corresponde à distância entre os pontos?",
     "options": [
       {
         "key": "A",
-        "text": "Mapas são representações seletivas do espaço: mostram alguns elementos e omitem outros conforme sua finalidade."
+        "text": "220 metros, convertendo 220.000 centímetros com fator 1.000.",
+        "targetsError": "converter_centimetros_com_fator_incompleto",
+        "rationale": "De centímetros para metros, divide-se por 100; o resultado é 2.200 m."
       },
       {
         "key": "B",
-        "text": "Latitude indica a posição ao norte ou ao sul do Equador; longitude indica a posição a leste ou oeste do meridiano de Greenwich."
+        "text": "22 quilômetros, convertendo 220.000 centímetros com fator 10.000.",
+        "targetsError": "converter_metros_em_quilometros_incorretamente",
+        "rationale": "De centímetros para quilômetros, divide-se por 100.000, não por 10.000."
       },
       {
         "key": "C",
-        "text": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica."
+        "text": "4,4 quilômetros, usando a medida do desenho como distância real.",
+        "targetsError": "ignorar_denominador_da_escala",
+        "rationale": "A medida desenhada precisa ser multiplicada pela escala para representar o terreno."
       },
       {
         "key": "D",
-        "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        "text": "2,2 quilômetros no percurso entre os dois pontos.",
+        "rationale": "A distância real corresponde a 2.200 m, ou 2,2 km."
       },
       {
         "key": "E",
-        "text": "Quanto maior o denominador de uma escala numérica, menor é a escala e maior tende a ser a área representada com menos detalhe."
+        "text": "22 metros, dividindo os centímetros por 10.000.",
+        "targetsError": "confundir_razao_com_medida_absoluta",
+        "rationale": "Dividir por 10.000 dá 22, mas esse não é o fator de centímetros para metros."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "explanation": "A conta é 4,4 × 50.000 = 220.000 cm, ou 2.200 m = 2,2 km; o denominador não é uma distância pronta.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -261,37 +338,48 @@
       "GH-02-CON-05",
       "GH-02-CON-06"
     ],
-    "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "scale_calculation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-02-Q008",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Cartografia: mapas, orientação, coordenadas e escala, qual conclusão final é sustentável?",
+    "stem": "Uma estudante mediu com régua o percurso entre a biblioteca do bairro e uma praça: 2,6 centímetros. O mapa tem escala 1:10.000, a impressão foi feita no tamanho original e o exercício pede o resultado em metros. A estudante anotou no caderno que cada centímetro do mapa corresponde a dez mil centímetros no terreno. Ela planeja conferir o resultado convertendo primeiro para centímetros reais e depois para metros, sem estimar o tempo de caminhada.\n\nQual é a distância representada pelo percurso?",
     "options": [
       {
         "key": "A",
-        "text": "Latitude e longitude medem exatamente a altitude de um lugar."
+        "text": "260 metros no percurso representado pelo mapa.",
+        "rationale": "26.000 cm correspondem a 260 m após a conversão por 100."
       },
       {
         "key": "B",
-        "text": "Escala 1:10.000 representa menos detalhe que 1:1.000.000."
+        "text": "26 metros, convertendo 26.000 centímetros com fator 1.000.",
+        "targetsError": "perder_casa_decimal_na_conversao",
+        "rationale": "De centímetros para metros, divide-se por 100; o resultado é 260 m."
       },
       {
         "key": "C",
-        "text": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica."
+        "text": "2.600 metros, convertendo 26.000 centímetros com fator 10.",
+        "targetsError": "usar_medida_do_papel_como_medida_real",
+        "rationale": "Dividir por 10 não converte centímetros em metros; o divisor é 100."
       },
       {
         "key": "D",
-        "text": "Todo mapa é uma cópia neutra e completa da realidade."
+        "text": "2,6 metros, convertendo 26.000 centímetros com fator 10.000.",
+        "targetsError": "ler_escala_como_distancia_total",
+        "rationale": "Dividir por 10.000 reduz o valor a 2,6, mas a conversão pede divisor 100."
       },
       {
         "key": "E",
-        "text": "O norte precisa obrigatoriamente estar na parte superior de qualquer mapa."
+        "text": "26.000 metros, mantendo o valor em centímetros e trocando a unidade.",
+        "targetsError": "aplicar_fator_de_conversao_inadequado",
+        "rationale": "O valor em centímetros precisa ser dividido por 100 para obter metros."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Legenda, orientação, título, fonte e escala ajudam a interpretar corretamente uma representação cartográfica.",
+    "correctOption": "A",
+    "explanation": "2,6 cm × 10.000 = 26.000 cm; dividindo por 100, obtêm-se 260 m. O comprimento do desenho não é o comprimento real.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -302,7 +390,7 @@
       "GH-02-CON-05",
       "GH-02-CON-06"
     ],
-    "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "scale_calculation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   }
 ]

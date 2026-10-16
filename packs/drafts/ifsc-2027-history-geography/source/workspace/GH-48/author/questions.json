@@ -1,215 +1,281 @@
 [
   {
     "id": "GH-48-Q001",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-48-CON-01",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Imperialismos nos séculos XX e XXI e movimentos de resistência, qual afirmação está correta?",
+    "stem": "Um relatório de uma cidade costeira registra a construção de um terminal portuário por uma empresa estrangeira, a assinatura de um acordo militar de cooperação e a instalação de cabos de comunicação operados por fornecedores de outros países. O governo local negocia tarifas, empregos e regras de acesso ao porto. Moradores discutem se os novos contratos ampliam oportunidades econômicas ou deixam decisões importantes fora do país. O relatório identifica os participantes e os termos conhecidos, mas não atribui uma intenção única às partes.\n\nQue dimensão do caso merece ser analisada?",
     "options": [
       {
         "key": "A",
-        "text": "Imperialismo contemporâneo exige sempre anexação formal de território."
+        "text": "A construção do porto comprova a anexação política do território pela empresa.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório descreve contratos e operação, sem transferência territorial."
       },
       {
         "key": "B",
-        "text": "No século XX e XXI, relações de poder podem envolver bases militares, intervenções, controle de recursos, dependência financeira, tecnologia e influência política."
+        "text": "Os acordos indicam cooperação militar sem relação com acesso a recursos ou infraestrutura.",
+        "targetsError": "interpretation",
+        "rationale": "Porto, cabos e cooperação aparecem no mesmo caso."
       },
       {
         "key": "C",
-        "text": "Todo investimento estrangeiro é automaticamente imperialismo."
+        "text": "Relações de poder podem envolver infraestrutura, segurança, tecnologia e negociação econômica."
       },
       {
         "key": "D",
-        "text": "Movimentos de resistência possuem sempre os mesmos objetivos e métodos."
+        "text": "A negociação de tarifas e empregos sugere que o investimento estrangeiro ampliou oportunidades sem restringir decisões do governo.",
+        "targetsError": "attention",
+        "rationale": "A ficha registra empresas e fornecedores externos."
       },
       {
         "key": "E",
-        "text": "Geopolítica contemporânea pode ser explicada por um único país ou recurso."
+        "text": "O debate dos moradores comprova que os contratos não geraram atividade econômica.",
+        "targetsError": "unknown",
+        "rationale": "O relatório não apresenta dados sobre resultados do investimento."
       }
     ],
-    "correctOption": "B",
-    "explanation": "No século XX e XXI, relações de poder podem envolver bases militares, intervenções, controle de recursos, dependência financeira, tecnologia e influência política.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "correctOption": "C",
+    "explanation": "O relatório reúne porto, acordo de segurança, cabos e negociação de tarifas; reduzir o caso à anexação territorial ignora as formas de influência descritas.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-48-CON-01"
     ],
-    "targetedError": "foundation",
+    "targetedError": "imperialism-as-annexation-only",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-48-Q002",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-48-CON-02",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Imperialismo contemporâneo exige sempre anexação formal de território.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Três décadas após a independência formal, um país exporta minério bruto para compradores de várias regiões e importa equipamentos processados. Uma empresa estrangeira participa da extração; o governo arrecada impostos e tenta renegociar o contrato para incluir etapas de beneficiamento local. Sindicatos pedem treinamento profissional, enquanto comunidades próximas querem transparência sobre o uso da água. O relatório inclui as posições dos diferentes participantes e compara o caso com outro setor econômico do mesmo país.\n\nComo o conceito de neocolonialismo pode ser usado neste caso?",
     "options": [
       {
         "key": "A",
-        "text": "Imperialismo contemporâneo exige sempre anexação formal de território."
+        "text": "Como hipótese sobre dependências persistentes, examinada com evidências e participantes do caso."
       },
       {
         "key": "B",
-        "text": "Todo investimento estrangeiro é automaticamente imperialismo."
+        "text": "A exportação de minério bruto sugere dependência persistente, o que basta para classificar o caso como neocolonial.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório registra mudanças e tentativas de renegociação."
       },
       {
         "key": "C",
-        "text": "Movimentos de resistência possuem sempre os mesmos objetivos e métodos."
+        "text": "Como sinônimo de investimento estrangeiro, sem distinguir suas condições e seus efeitos.",
+        "targetsError": "interpretation",
+        "rationale": "A hipótese exige analisar as condições concretas do contrato."
       },
       {
         "key": "D",
-        "text": "O conceito de neocolonialismo é usado para analisar dependências que persistem após independência formal, mas deve ser aplicado a casos concretos."
+        "text": "Como explicação centrada na empresa, sem considerar governo e comunidades.",
+        "targetsError": "attention",
+        "rationale": "O relatório identifica posições de vários participantes."
       },
       {
         "key": "E",
-        "text": "Geopolítica contemporânea pode ser explicada por um único país ou recurso."
+        "text": "Como descrição de um processo encerrado com a transferência formal de soberania.",
+        "targetsError": "memory",
+        "rationale": "O caso discute relações econômicas posteriores à independência."
       }
     ],
-    "correctOption": "D",
-    "explanation": "O conceito de neocolonialismo é usado para analisar dependências que persistem após independência formal, mas deve ser aplicado a casos concretos.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "A",
+    "explanation": "A ficha apresenta dependências comerciais e também renegociação; aplicar o conceito como rótulo automático ignora as mudanças e atores registrados.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "GH-48-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "neocolonialism-as-label",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-48-Q003",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-48-CON-03",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: Imperialismo contemporâneo pode assumir formas diferentes do colonialismo territorial direto do século XIX. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Um arquivo comunitário reúne fotografias de uma associação indígena que pede consulta sobre uma estrada, panfletos de um sindicato que reivindica melhores condições de trabalho e gravações de estudantes que protestam contra uma decisão municipal. As peças foram produzidas em anos e lugares diferentes. Uma ficha de cada coleção identifica os organizadores, suas demandas e o público a quem se dirigiam. A equipe de pesquisa não agrupou os materiais por método, mas por seus vínculos com disputas sobre território, trabalho e participação política.\n\nQual interpretação dos movimentos de resistência é apoiada pelo arquivo?",
     "options": [
       {
         "key": "A",
-        "text": "Imperialismo contemporâneo exige sempre anexação formal de território."
+        "text": "As três organizações responderam a disputas sobre acesso à mesma estrada.",
+        "rationale": "The file links the road to one association, while the other claims concern work and participation.",
+        "targetsError": "conceptual"
       },
       {
         "key": "B",
-        "text": "Todo investimento estrangeiro é automaticamente imperialismo."
+        "text": "A associação indígena e o sindicato disputavam decisões sobre o uso de recursos locais.",
+        "targetsError": "attention",
+        "rationale": "As fichas descrevem demandas sobre estrada e trabalho."
       },
       {
         "key": "C",
-        "text": "Movimentos de resistência podem ser nacionais, sociais, indígenas, anticoloniais, culturais ou políticos e possuem objetivos distintos."
+        "text": "As gravações estudantis explicam as decisões tomadas pelas outras organizações.",
+        "targetsError": "interpretation",
+        "rationale": "Cada coleção identifica seus próprios organizadores e demandas."
       },
       {
         "key": "D",
-        "text": "Movimentos de resistência possuem sempre os mesmos objetivos e métodos."
+        "text": "Métodos diferentes limitaram o alcance político das três ações.",
+        "targetsError": "interpretation",
+        "rationale": "The archive records their aims and methods but no measure of public reach."
       },
       {
         "key": "E",
-        "text": "Geopolítica contemporânea pode ser explicada por um único país ou recurso."
+        "text": "Os grupos atuaram com objetivos próprios e repertórios variados de resistência."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Movimentos de resistência podem ser nacionais, sociais, indígenas, anticoloniais, culturais ou políticos e possuem objetivos distintos.",
+    "correctOption": "E",
+    "explanation": "As fichas identificam demandas distintas ligadas a território, trabalho e participação; tratar os grupos como uma organização uniforme apaga os objetivos específicos do arquivo.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-48-CON-03"
     ],
-    "targetedError": "relationship",
+    "targetedError": "resistance-as-uniform",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-48-Q004",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-48-CON-04",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Imperialismos nos séculos XX e XXI e movimentos de resistência por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Uma tabela acompanha a extração de um mineral estratégico, o transporte por ferrovia até um porto e o embarque para três mercados. Em uma margem, técnicos anotam que a rota alternativa passaria por dois países vizinhos; uma segunda coluna registra negociações sobre taxas de passagem e prazos de concessão. Um mapa mostra a posição de instalações militares próximas à costa, sem afirmar que elas controlam o comércio. A turma precisa explicar por que infraestrutura e acordos aparecem juntos no relatório.\n\nQue conclusão geopolítica é mais adequada?",
     "options": [
       {
         "key": "A",
-        "text": "Disputas por petróleo, minerais estratégicos, rotas comerciais e tecnologia têm dimensão geopolítica contemporânea."
+        "text": "A localização das instalações confirma que o mineral foi extraído para uso militar.",
+        "targetsError": "interpretation",
+        "rationale": "O mapa não informa o destino final do minério."
       },
       {
         "key": "B",
-        "text": "Imperialismo contemporâneo exige sempre anexação formal de território."
+        "text": "Recursos, rotas comerciais e infraestrutura estratégica podem se relacionar a disputas de poder."
       },
       {
         "key": "C",
-        "text": "Todo investimento estrangeiro é automaticamente imperialismo."
+        "text": "As taxas de passagem mostram que a rota alternativa já está operando.",
+        "targetsError": "memory",
+        "rationale": "A tabela registra uma possibilidade em negociação."
       },
       {
         "key": "D",
-        "text": "Movimentos de resistência possuem sempre os mesmos objetivos e métodos."
+        "text": "A presença de mercados externos eliminou a participação dos países de trânsito.",
+        "targetsError": "conceptual",
+        "rationale": "Os vizinhos aparecem nas negociações de passagem."
       },
       {
         "key": "E",
-        "text": "Geopolítica contemporânea pode ser explicada por um único país ou recurso."
+        "text": "A proximidade das instalações militares indica que as forças controlavam a circulação do mineral pela rota.",
+        "targetsError": "interpretation",
+        "rationale": "O mapa não informa como os compradores escolheram o minério."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Disputas por petróleo, minerais estratégicos, rotas comerciais e tecnologia têm dimensão geopolítica contemporânea.",
-    "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "correctOption": "B",
+    "explanation": "A tabela liga extração, rotas, mercados e taxas, enquanto o mapa oferece contexto estratégico; atribuir o destino do recurso às instalações ultrapassa os dados.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-48-CON-04"
     ],
-    "targetedError": "application",
+    "targetedError": "resource-as-single-cause",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-48-Q005",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-48-CON-01",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. No século XX e XXI, relações de poder podem envolver bases militares, intervenções, controle de recursos, dependência financeira, tecnologia e influência política.\nII. Imperialismo contemporâneo exige sempre anexação formal de território.\nIII. Movimentos de resistência podem ser nacionais, sociais, indígenas, anticoloniais, culturais ou políticos e possuem objetivos distintos.\nIV. Todo investimento estrangeiro é automaticamente imperialismo.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma reportagem sobre um projeto de energia descreve uma empresa estrangeira que financiou a construção, um governo que concedeu acesso a terras e uma cooperativa local que questiona as tarifas. O acordo também menciona treinamento de trabalhadores e impostos destinados ao município. Em uma entrevista, uma liderança comunitária pede que a discussão considere quem decide os preços e como os benefícios são distribuídos. A reportagem apresenta documentos do contrato e respostas dos participantes, mas não oferece um veredito pronto.\n\nQue caminho de análise é mais consistente com o caso?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Classificar o investimento pela origem da empresa sem examinar o acordo ou seus efeitos.",
+        "targetsError": "procedural",
+        "rationale": "A reportagem fornece termos e respostas para análise."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Usar a fala da cooperativa para inferir as intenções de outros participantes.",
+        "targetsError": "interpretation",
+        "rationale": "A entrevista apresenta a posição de uma liderança comunitária."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Os impostos e o treinamento previstos indicam benefícios para a comunidade, mesmo sem detalhar quem decide preços e tarifas.",
+        "targetsError": "interpretation",
+        "rationale": "O contrato informa destinação, não a distribuição final."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Comparar contrato, interesses, decisões locais e efeitos antes de avaliar relações de poder."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Tratar a concessão como sinal de que a empresa controla o governo municipal.",
+        "targetsError": "conceptual",
+        "rationale": "O texto descreve um acordo, não controle institucional."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "D",
+    "explanation": "A reportagem oferece contrato, imposto e posições de participantes; concluir que a concessão prova controle político excede as evidências e ignora as demais vozes.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "ANALYZE",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "GH-48-CON-01",
       "GH-48-CON-02",
       "GH-48-CON-03",
       "GH-48-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "slogan-over-evidence",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-48-Q006",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-48-CON-05",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Imperialismos nos séculos XX e XXI e movimentos de resistência. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Um folheto de uma organização local diz que uma potência estrangeira controla os recursos do país. O arquivo guarda também um contrato de concessão, uma tabela de exportações e a resposta do ministério responsável. O contrato distribui obrigações entre governo e empresa; a tabela indica quais produtos foram vendidos e a resposta descreve uma renegociação em andamento. As margens dos documentos contêm notas de estudantes, algumas com perguntas e outras com interpretações diferentes sobre o caso.\n\nQual procedimento sustenta melhor uma análise do folheto?",
     "options": [
       {
         "key": "A",
-        "text": "Imperialismo contemporâneo exige sempre anexação formal de território."
+        "text": "Aceitar o slogan porque ele expressa a posição da organização local.",
+        "targetsError": "interpretation",
+        "rationale": "A posição é relevante, mas não comprova cada afirmação factual."
       },
       {
         "key": "B",
-        "text": "Todo investimento estrangeiro é automaticamente imperialismo."
+        "text": "Confrontar o folheto com a resposta ministerial permite resolver a alegação, usando contrato e dados apenas para completar o contexto.",
+        "targetsError": "attention",
+        "rationale": "A resposta registra a posição do órgão responsável."
       },
       {
         "key": "C",
-        "text": "Movimentos de resistência possuem sempre os mesmos objetivos e métodos."
+        "text": "Comparar a afirmação com o contrato, os dados e a posição dos participantes."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Descartar o folheto porque sua linguagem procura influenciar leitores.",
+        "targetsError": "conceptual",
+        "rationale": "A campanha também é fonte sobre uma disputa e seus argumentos."
       },
       {
         "key": "E",
-        "text": "Avaliar um caso por mecanismos concretos de poder e dependência, não apenas pelo rótulo utilizado."
+        "text": "Tratar a tabela de exportações como confirmação de quem controla o governo.",
+        "targetsError": "interpretation",
+        "rationale": "Dados comerciais não demonstram controle governamental."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Avaliar um caso por mecanismos concretos de poder e dependência, não apenas pelo rótulo utilizado.",
+    "correctOption": "C",
+    "explanation": "O folheto revela uma posição política, enquanto contrato, tabela e resposta permitem verificar partes da afirmação; descartar a peça inteira perde uma fonte sobre a disputa.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -220,38 +286,49 @@
       "GH-48-CON-05",
       "GH-48-CON-06"
     ],
-    "targetedError": "source_interpretation",
+    "targetedError": "slogan-as-fact",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-48-Q007",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-48-CON-04",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Imperialismos nos séculos XX e XXI e movimentos de resistência?",
+    "stem": "Um consórcio propõe construir uma ferrovia para transportar minério de uma área interiorana até um porto. O documento estima o custo, identifica os países de trânsito e descreve uma audiência pública com moradores e representantes de empresas. Uma ficha registra que uma concessão anterior foi renegociada após mudanças nas taxas de uso da infraestrutura. O relatório apresenta os argumentos de cada parte e separa previsões de impacto das condições já observadas, para que leitores avaliem a disputa com base em evidências.\n\nQual afirmação é apoiada pelos dados do relatório?",
     "options": [
       {
         "key": "A",
-        "text": "No século XX e XXI, relações de poder podem envolver bases militares, intervenções, controle de recursos, dependência financeira, tecnologia e influência política."
+        "text": "A proposta envolve extração de recursos, rotas comerciais e negociações entre diferentes participantes."
       },
       {
         "key": "B",
-        "text": "O conceito de neocolonialismo é usado para analisar dependências que persistem após independência formal, mas deve ser aplicado a casos concretos."
+        "text": "A renegociação anterior sugere que a ferrovia proposta pode ser construída, embora não prove que já esteja em operação.",
+        "targetsError": "memory",
+        "rationale": "O relatório descreve uma proposta em análise."
       },
       {
         "key": "C",
-        "text": "Analisar imperialismo atual exige diferenciar fatos verificáveis de slogans políticos e considerar múltiplos atores."
+        "text": "Os países de trânsito não participam das condições de transporte.",
+        "targetsError": "interpretation",
+        "rationale": "A ficha identifica esses países no trajeto previsto."
       },
       {
         "key": "D",
-        "text": "Movimentos de resistência possuem sempre os mesmos objetivos e métodos."
+        "text": "A audiência pública decidiu a localização final do porto.",
+        "targetsError": "attention",
+        "rationale": "A audiência registrou argumentos, não a decisão final."
       },
       {
         "key": "E",
-        "text": "Disputas por petróleo, minerais estratégicos, rotas comerciais e tecnologia têm dimensão geopolítica contemporânea."
+        "text": "A construção causará deslocamento de moradores segundo dados já observados.",
+        "targetsError": "procedural",
+        "rationale": "O relatório separa previsões de observações concluídas."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
-    "difficulty": "DIRECT",
+    "correctOption": "A",
+    "explanation": "O relatório lista minério, rota, países de trânsito e participantes; tratar previsões como fatos observados confunde uma proposta com resultados já medidos.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-48-CON-01",
@@ -261,39 +338,50 @@
       "GH-48-CON-05",
       "GH-48-CON-06"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "forecast-as-fact",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-48-Q008",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "GH-48-CON-06",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Imperialismos nos séculos XX e XXI e movimentos de resistência, qual conclusão final é sustentável?",
+    "stem": "Uma exposição reúne um contrato de concessão mineral, uma carta de uma associação comunitária, um mapa de rotas comerciais e um registro de reuniões entre governos. Os documentos foram produzidos em períodos diferentes, trazem objetivos que nem sempre coincidem e identificam participantes de setores distintos. Nas legendas, a curadoria registra a data, o local e o órgão que preservou cada item. O termo imperialismo aparece em títulos de duas reportagens incluídas na exposição.\n\nQual síntese respeita melhor a proposta da exposição?",
     "options": [
       {
         "key": "A",
-        "text": "Imperialismo contemporâneo exige sempre anexação formal de território."
+        "text": "O mapa de rotas explica a posição da associação comunitária sobre o contrato.",
+        "targetsError": "interpretation",
+        "rationale": "A carta precisa ser lida como fonte própria da associação."
       },
       {
         "key": "B",
-        "text": "Todo investimento estrangeiro é automaticamente imperialismo."
+        "text": "O uso do termo imperialismo nas reportagens confirma que a concessão expressa uma relação imperialista neste caso.",
+        "targetsError": "conceptual",
+        "rationale": "Os documentos não descrevem uma intervenção armada."
       },
       {
         "key": "C",
-        "text": "Analisar imperialismo atual exige diferenciar fatos verificáveis de slogans políticos e considerar múltiplos atores."
+        "text": "Os governos reunidos tinham interesses idênticos aos da empresa concessionária.",
+        "targetsError": "attention",
+        "rationale": "A curadoria destaca objetivos que não coincidem."
       },
       {
         "key": "D",
-        "text": "Movimentos de resistência possuem sempre os mesmos objetivos e métodos."
+        "text": "O contrato encerra as perguntas sobre como o recurso será usado.",
+        "targetsError": "memory",
+        "rationale": "A ficha final registra questões ainda sem resposta."
       },
       {
         "key": "E",
-        "text": "Geopolítica contemporânea pode ser explicada por um único país ou recurso."
+        "text": "A análise deve comparar evidências, atores e formas de influência em cada contexto."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Analisar imperialismo atual exige diferenciar fatos verificáveis de slogans políticos e considerar múltiplos atores.",
+    "correctOption": "E",
+    "explanation": "A ficha pede que fatos, interesses e lacunas sejam distinguidos; tratar um termo de debate como prova de uma intervenção ignora o conjunto documental.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-48-CON-01",
       "GH-48-CON-02",
@@ -302,7 +390,7 @@
       "GH-48-CON-05",
       "GH-48-CON-06"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "term-as-conclusion",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   }
 ]

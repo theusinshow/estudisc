@@ -217,308 +217,290 @@
     {
       "id": "GH-30-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Mundialização, globalização e geopolítica contemporânea, qual afirmação está correta?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Globalização eliminou todas as fronteiras nacionais."
-        },
-        {
-          "key": "B",
-          "text": "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais."
-        },
-        {
-          "key": "C",
-          "text": "Todos os países se beneficiam igualmente das redes globais."
-        },
-        {
-          "key": "D",
-          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
-        },
-        {
-          "key": "E",
-          "text": "Geopolítica deixou de existir com a internet."
-        }
-      ],
+      "stem": "Na semana da safra, uma cooperativa enviou pescado refrigerado ao mercado de outra região e recebeu pagamentos por transferência bancária. Pelo celular, a equipe consultou a previsão do tempo e avisou os compradores sobre um atraso no cais. Dois parentes que trabalham fora do país acompanharam a venda por chamada de vídeo. O caminhão levou a carga, enquanto mensagens, dinheiro e pessoas circularam por meios diferentes.\n\nQue leitura dos fluxos descritos é mais adequada?",
       "correctOption": "B",
-      "explanation": "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais.",
+      "explanation": "A carga segue por caminhão, o pagamento por transferência e as informações por celular; a chamada conecta familiares em outro país. O atraso no cais afeta o transporte, mas não apaga os demais fluxos.",
       "difficulty": "FOUNDATION",
-      "cognitiveOperation": "RECALL",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-30-CON-01"
       ],
       "targetedError": "foundation",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "O caminhão reuniu o transporte, os pagamentos e as mensagens em um mesmo fluxo."
+        },
+        {
+          "key": "B",
+          "text": "Diferentes meios conectaram carga, pagamentos, informações e contatos pessoais."
+        },
+        {
+          "key": "C",
+          "text": "O uso do celular substituiu o transporte refrigerado e levou o pescado aos compradores."
+        },
+        {
+          "key": "D",
+          "text": "A chamada de vídeo serviu para autorizar a venda e definir os procedimentos do cais."
+        },
+        {
+          "key": "E",
+          "text": "O atraso no cais encerrou a comunicação com compradores e parentes que moram fora."
+        }
+      ]
     },
     {
       "id": "GH-30-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “Globalização eliminou todas as fronteiras nacionais.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Globalização eliminou todas as fronteiras nacionais."
-        },
-        {
-          "key": "B",
-          "text": "Todos os países se beneficiam igualmente das redes globais."
-        },
-        {
-          "key": "C",
-          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
-        },
-        {
-          "key": "D",
-          "text": "Empresas transnacionais organizam etapas de produção em diferentes países e conectam territórios por cadeias globais."
-        },
-        {
-          "key": "E",
-          "text": "Geopolítica deixou de existir com a internet."
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Empresas transnacionais organizam etapas de produção em diferentes países e conectam territórios por cadeias globais.",
+      "stem": "O projeto do quadro foi feito em Curitiba; peças eletrônicas vêm de uma fábrica na Coreia do Sul; os pneus são produzidos no México. A montagem final ocorre no Paraguai e as bicicletas são vendidas em lojas de vários países. Uma consultoria contratada pela marca compara custos de transporte e prazos de entrega antes de escolher onde montar cada lote. A reportagem informa que a marca mantém escritórios em quatro países.\n\nQue característica da empresa a matéria evidencia?",
+      "correctOption": "E",
+      "explanation": "O projeto, os componentes, a montagem e as vendas estão distribuídos por países distintos, como também os escritórios. A produção no Paraguai não concentra todas as etapas na mesma cidade.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-30-CON-02"
       ],
       "targetedError": "concept_discrimination",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A montagem final reuniu no Paraguai o projeto, a fabricação das peças e as vendas."
+        },
+        {
+          "key": "B",
+          "text": "As vendas externas coexistem com etapas de projeto e fornecimento concentradas no Paraguai."
+        },
+        {
+          "key": "C",
+          "text": "A comparação de prazos afeta a entrega, mas deixa inalterada a escolha do local de montagem."
+        },
+        {
+          "key": "D",
+          "text": "Os fornecedores de pneus e componentes passaram a decidir a marca e sua estratégia comercial."
+        },
+        {
+          "key": "E",
+          "text": "A empresa distribui etapas do produto e da comercialização por diferentes países."
+        }
+      ]
     },
     {
       "id": "GH-30-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: Globalização intensifica conexões, mas não torna fronteiras e desigualdades irrelevantes. Qual ideia estudada oferece a melhor chave de interpretação?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Globalização eliminou todas as fronteiras nacionais."
-        },
-        {
-          "key": "B",
-          "text": "Todos os países se beneficiam igualmente das redes globais."
-        },
-        {
-          "key": "C",
-          "text": "Fronteiras tornam-se mais permeáveis para alguns fluxos e permanecem seletivas para outros, especialmente migração humana."
-        },
-        {
-          "key": "D",
-          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
-        },
-        {
-          "key": "E",
-          "text": "Geopolítica deixou de existir com a internet."
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "Fronteiras tornam-se mais permeáveis para alguns fluxos e permanecem seletivas para outros, especialmente migração humana.",
+      "stem": "A empresa recebe encomendas em três cidades e encaminha as caixas a um terminal rodoviário central. De lá, caminhões seguem por uma estrada que atravessa dois vales. Quando uma ponte ficou interditada, as entregas de uma cidade próxima atrasaram, embora os depósitos e os pedidos digitais continuassem funcionando. Técnicos sugeriram criar um segundo terminal para reduzir a dependência daquele trecho.\n\nO que a interdição da ponte revela sobre a rede descrita?",
+      "correctOption": "A",
+      "explanation": "A interdição de uma ponte atrasou entregas de cidades que dependiam daquele trajeto, mesmo com pedidos e depósitos ativos. Criar um segundo terminal busca acrescentar uma conexão à rede.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-30-CON-03"
       ],
       "targetedError": "relationship",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A interrupção de um trajeto pode afetar entregas mesmo com pedidos e depósitos ativos."
+        },
+        {
+          "key": "B",
+          "text": "Os pedidos digitais mantêm o prazo de entrega quando uma ponte bloqueia a passagem dos caminhões."
+        },
+        {
+          "key": "C",
+          "text": "O fechamento da ponte levou a empresa a suspender o funcionamento dos depósitos da região."
+        },
+        {
+          "key": "D",
+          "text": "A sugestão de outro terminal aponta que as cidades próximas deixaram de trocar mercadorias."
+        },
+        {
+          "key": "E",
+          "text": "A concentração das encomendas no terminal eliminou a dependência de rotas rodoviárias."
+        }
+      ]
     },
     {
       "id": "GH-30-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Mundialização, globalização e geopolítica contemporânea por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Recursos estratégicos, tecnologia, logística e controle de cadeias produtivas possuem importância geopolítica."
-        },
-        {
-          "key": "B",
-          "text": "Globalização eliminou todas as fronteiras nacionais."
-        },
-        {
-          "key": "C",
-          "text": "Todos os países se beneficiam igualmente das redes globais."
-        },
-        {
-          "key": "D",
-          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
-        },
-        {
-          "key": "E",
-          "text": "Geopolítica deixou de existir com a internet."
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Recursos estratégicos, tecnologia, logística e controle de cadeias produtivas possuem importância geopolítica.",
+      "stem": "O município de Baía recebe navios de cruzeiro e inaugurou um centro de serviços para turistas. Na região de Serra Clara, moradores cultivam frutas que seguem para a Baía em caminhões, mas a estrada tem trechos sem pavimentação. Um estudo local registra aumento de vendas no porto e reclamações de produtores sobre perdas durante o transporte. As duas localidades participam do mesmo circuito de turismo e abastecimento, embora com infraestrutura distinta.\n\nQue conclusão considera melhor a diferença entre as localidades?",
+      "correctOption": "D",
+      "explanation": "Os dois municípios integram o circuito de turismo e abastecimento, mas o porto amplia serviços enquanto a estrada dificulta o escoamento das frutas. A conexão não garante resultados equivalentes.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-30-CON-04"
       ],
       "targetedError": "application",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "O crescimento dos serviços turísticos interrompeu o envio de frutas entre as localidades."
+        },
+        {
+          "key": "B",
+          "text": "A integração ao mesmo circuito distribuiu benefícios equivalentes ao porto e aos produtores."
+        },
+        {
+          "key": "C",
+          "text": "As falhas na estrada reduziram a facilidade de transporte sem retirar Serra Clara do circuito."
+        },
+        {
+          "key": "D",
+          "text": "Uma rede compartilhada pode oferecer oportunidades diferentes conforme as condições locais."
+        },
+        {
+          "key": "E",
+          "text": "O aumento das vendas no porto mostra que os produtores passaram a controlar os serviços turísticos."
+        }
+      ]
     },
     {
       "id": "GH-30-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais.\nII. Globalização eliminou todas as fronteiras nacionais.\nIII. Fronteiras tornam-se mais permeáveis para alguns fluxos e permanecem seletivas para outros, especialmente migração humana.\nIV. Todos os países se beneficiam igualmente das redes globais.\nAssinale a alternativa CORRETA.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Apenas I está correta."
-        },
-        {
-          "key": "B",
-          "text": "Apenas I e III estão corretas."
-        },
-        {
-          "key": "C",
-          "text": "Apenas II e IV estão corretas."
-        },
-        {
-          "key": "D",
-          "text": "Apenas I, II e III estão corretas."
-        },
-        {
-          "key": "E",
-          "text": "Todas estão corretas."
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "stem": "Em uma manhã, caminhões de uma empresa atravessaram o posto após apresentar documentos eletrônicos de carga e pagar uma tarifa. Na mesma fila, uma família que pretendia morar no país vizinho foi encaminhada a uma entrevista sobre visto e autorização de residência. O informe conta que a equipe da alfândega processou as mercadorias em poucas horas, enquanto os pedidos de residência exigiam análise de vários documentos.\n\nO informe mostra que a fronteira funciona de que maneira?",
+      "correctOption": "C",
+      "explanation": "A alfândega liberou cargas por um procedimento comercial, enquanto a família passou por análise migratória. O prazo diferente mostra que as regras dependem do tipo de fluxo e do documento apresentado.",
       "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-30-CON-01",
-        "GH-30-CON-02",
-        "GH-30-CON-03",
-        "GH-30-CON-04"
+        "GH-30-CON-05"
       ],
       "targetedError": "multi_statement_reasoning",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "O pagamento da tarifa comercial também iniciou a análise do pedido de residência."
+        },
+        {
+          "key": "B",
+          "text": "A documentação eletrônica tornou mais demorado o fluxo de caminhões do que a análise migratória."
+        },
+        {
+          "key": "C",
+          "text": "A exigência documental e o tempo de atendimento variam conforme o tipo de fluxo."
+        },
+        {
+          "key": "D",
+          "text": "A entrevista migratória substituiu os procedimentos alfandegários para as cargas da empresa."
+        },
+        {
+          "key": "E",
+          "text": "A liberação rápida das cargas impediu que a família solicitasse autorização de residência."
+        }
+      ]
     },
     {
       "id": "GH-30-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Mundialização, globalização e geopolítica contemporânea. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Globalização eliminou todas as fronteiras nacionais."
-        },
-        {
-          "key": "B",
-          "text": "Todos os países se beneficiam igualmente das redes globais."
-        },
-        {
-          "key": "C",
-          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
-        },
-        {
-          "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
-        },
-        {
-          "key": "E",
-          "text": "Interpretar casos contemporâneos distinguindo integração econômica, fronteiras seletivas e relações de poder."
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Interpretar casos contemporâneos distinguindo integração econômica, fronteiras seletivas e relações de poder.",
+      "stem": "Um consórcio de municípios encontrou lítio em uma área próxima a uma nascente. Uma fábrica de baterias propôs construir uma estrada para transportar o minério até o porto. Moradores pediram estudos sobre água e emprego, enquanto o governo regional abriu negociações com compradores de outros países. A nota não informa se a mina será autorizada; registra apenas que as conversas envolvem licenças, preços e a localização da infraestrutura.\n\nPor que a decisão sobre a área pode adquirir importância geopolítica?",
+      "correctOption": "B",
+      "explanation": "A possível mina envolve minério, transporte, licenças, água e compradores externos, elementos que podem afetar cadeias de produção e negociações. A ocorrência do recurso, por si só, não dá aos municípios controle dos preços mundiais.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-30-CON-01",
-        "GH-30-CON-02",
-        "GH-30-CON-03",
-        "GH-30-CON-04",
-        "GH-30-CON-05",
         "GH-30-CON-06"
       ],
       "targetedError": "source_interpretation",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A nascente torna inviável o uso do lítio na cadeia de produção de baterias."
+        },
+        {
+          "key": "B",
+          "text": "A localização do minério pode ligar infraestrutura, licenças e negociações da cadeia produtiva."
+        },
+        {
+          "key": "C",
+          "text": "As conversas internacionais transferiram aos compradores a decisão sobre a nascente."
+        },
+        {
+          "key": "D",
+          "text": "A estrada proposta dispensa estudos sobre os efeitos da mineração para moradores."
+        },
+        {
+          "key": "E",
+          "text": "A presença do minério permite aos municípios definir o preço das baterias no mercado mundial."
+        }
+      ]
     },
     {
       "id": "GH-30-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Mundialização, globalização e geopolítica contemporânea?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Globalização envolve intensificação de fluxos de mercadorias, capitais, informações, tecnologias e pessoas em redes mundiais."
-        },
-        {
-          "key": "B",
-          "text": "Empresas transnacionais organizam etapas de produção em diferentes países e conectam territórios por cadeias globais."
-        },
-        {
-          "key": "C",
-          "text": "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes."
-        },
-        {
-          "key": "D",
-          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
-        },
-        {
-          "key": "E",
-          "text": "Recursos estratégicos, tecnologia, logística e controle de cadeias produtivas possuem importância geopolítica."
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "stem": "A cozinheira Mariela enviou parte do salário a parentes em outro país usando um serviço bancário pelo celular. Na mesma semana, um colega dela tentou visitar a família e precisou reunir comprovantes para solicitar um visto. O aplicativo mostrou a cotação da moeda e a tarifa da transferência; a companhia aérea alterou o horário do voo por causa do clima. Mariela comparou os dois processos antes de planejar a viagem.\n\nQue comparação é sustentada pela crônica?",
+      "correctOption": "E",
+      "explanation": "A transferência bancária ocorreu pelo celular, enquanto o colega precisou solicitar visto e organizar a viagem. A cotação e a tarifa financeira não substituem as exigências migratórias.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-30-CON-01",
-        "GH-30-CON-02",
-        "GH-30-CON-03",
-        "GH-30-CON-04",
-        "GH-30-CON-05",
-        "GH-30-CON-06"
+        "GH-30-CON-01"
       ],
       "targetedError": "misconception_identification",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A transferência pelo aplicativo substituiu o pedido de visto para visitar parentes."
+        },
+        {
+          "key": "B",
+          "text": "A mudança do voo alterou as regras bancárias usadas para enviar dinheiro ao exterior."
+        },
+        {
+          "key": "C",
+          "text": "A necessidade de visto impediu que Mariela transferisse parte do salário à família."
+        },
+        {
+          "key": "D",
+          "text": "A tarifa da remessa e os documentos de viagem fazem parte de uma mesma autorização."
+        },
+        {
+          "key": "E",
+          "text": "Transferências financeiras e viagens de pessoas seguem condições e procedimentos distintos."
+        }
+      ]
     },
     {
       "id": "GH-30-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Mundialização, globalização e geopolítica contemporânea, qual conclusão final é sustentável?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Globalização eliminou todas as fronteiras nacionais."
-        },
-        {
-          "key": "B",
-          "text": "Todos os países se beneficiam igualmente das redes globais."
-        },
-        {
-          "key": "C",
-          "text": "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes."
-        },
-        {
-          "key": "D",
-          "text": "Fluxo de capitais e fluxo de pessoas enfrentam exatamente as mesmas barreiras."
-        },
-        {
-          "key": "E",
-          "text": "Geopolítica deixou de existir com a internet."
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "A integração global é desigual: lugares participam das redes com capacidades e benefícios diferentes.",
+      "stem": "Duas cidades compartilham um reservatório que abastece residências e pequenas lavouras. A cidade situada a montante instalou comportas para guardar água durante a estiagem; a cidade a jusante pediu um calendário de liberação. A reunião contou com representantes dos serviços de água, agricultores e uma empresa de energia, que propôs financiar sensores. O acordo foi adiado até que os participantes revisassem dados de consumo.\n\nQue aspecto de poder e integração aparece na ata?",
+      "correctOption": "A",
+      "explanation": "As cidades compartilham o reservatório, mas a posição a montante e as necessidades de cada grupo influenciam a negociação. A proposta de sensores não transferiu à empresa a gestão do recurso.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "EVALUATE",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-30-CON-01",
-        "GH-30-CON-02",
-        "GH-30-CON-03",
-        "GH-30-CON-04",
-        "GH-30-CON-05",
         "GH-30-CON-06"
       ],
       "targetedError": "synthesis",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "O reservatório compartilhado exige conciliar demandas de cidades e grupos com posições distintas."
+        },
+        {
+          "key": "B",
+          "text": "A oferta de sensores deu à empresa de energia a decisão sobre a liberação da água."
+        },
+        {
+          "key": "C",
+          "text": "A posição a jusante retirou da outra cidade a possibilidade de negociar o uso do reservatório."
+        },
+        {
+          "key": "D",
+          "text": "O adiamento da reunião encerrou o compartilhamento de água entre as duas cidades."
+        },
+        {
+          "key": "E",
+          "text": "A instalação dos sensores tornou desnecessário acompanhar o consumo de água."
+        }
+      ]
     }
   ]
 }

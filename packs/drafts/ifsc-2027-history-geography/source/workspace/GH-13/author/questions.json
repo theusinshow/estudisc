@@ -2,175 +2,227 @@
   {
     "id": "GH-13-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Colonização portuguesa e povos originários, qual afirmação está correta?",
+    "stem": "Uma equipe prepara uma linha do tempo visual sobre o início da colonização portuguesa. As fichas relacionam busca por recursos e comércio, ocupação de áreas, atividades de evangelização e formas de trabalho impostas às populações locais. Em uma reunião, os estudantes observam que os registros falam de objetivos e práticas diferentes, ainda que façam parte do mesmo processo histórico. A professora pede uma frase que reúna essas dimensões sem apresentar uma delas como explicação completa. Texto autoral para esta atividade, 16 out. 2026.\n\nQual frase interpreta melhor as fichas da linha do tempo?",
     "options": [
       {
         "key": "A",
-        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+        "text": "A evangelização foi um objetivo central da ocupação e influenciou as formas de trabalho descritas.",
+        "targetsError": "usa uma dimensão religiosa para explicar objetivos distintos",
+        "rationale": "As fichas registram comércio, ocupação e trabalho além da evangelização."
       },
       {
         "key": "B",
-        "text": "A colonização portuguesa combinou interesses econômicos, ocupação territorial, evangelização e exploração do trabalho."
+        "text": "A colonização articulou interesses econômicos, ocupação, evangelização e exploração do trabalho."
       },
       {
         "key": "C",
-        "text": "Povos indígenas não tiveram agência no período colonial."
+        "text": "A procura por recursos orientou a ocupação, sem explicar sozinha as demais práticas.",
+        "targetsError": "separa interesses econômicos das formas de controle do espaço",
+        "rationale": "As fichas relacionam comércio e ocupação na mesma linha do tempo."
       },
       {
         "key": "D",
-        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+        "text": "As atividades de trabalho ocorreram sem relação com os objetivos portugueses.",
+        "targetsError": "desvincula exploração do trabalho dos interesses coloniais",
+        "rationale": "A atividade pede comparar objetivos e práticas registrados nas fichas."
       },
       {
         "key": "E",
-        "text": "A colonização portuguesa ocorreu sem exploração de trabalho indígena."
+        "text": "A linha do tempo descreve uma ação sem objetivos econômicos ou territoriais.",
+        "targetsError": "ignora as duas dimensões destacadas no material",
+        "rationale": "As fichas mencionam busca por recursos, comércio e ocupação."
       }
     ],
     "correctOption": "B",
-    "explanation": "A colonização portuguesa combinou interesses econômicos, ocupação territorial, evangelização e exploração do trabalho.",
+    "explanation": "As fichas apresentam comércio, ocupação, evangelização e exploração do trabalho; fazer da evangelização uma explicação completa ignora os objetivos econômicos e territoriais anotados.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "RECALL",
     "conceptIds": [
       "GH-13-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-13-CON-01"
   },
   {
     "id": "GH-13-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “O contato entre portugueses e indígenas foi sempre pacífico e harmonioso.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Uma atividade reúne cartões sobre diferentes contatos entre portugueses e povos originários. Um descreve trocas e alianças, outro registra conflitos e escravização, e um terceiro mostra negociação e resistência em situações locais. A turma nota que os cartões não narram uma relação igual em todas as regiões ou momentos. O professor pede uma conclusão que reconheça os tipos de contato apresentados e evite transformar um exemplo em retrato de todos os encontros. Texto autoral para esta atividade, 16 out. 2026.\n\nQual conclusão preserva melhor a variedade dos cartões?",
     "options": [
       {
         "key": "A",
-        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+        "text": "As trocas registradas sugerem que o comércio orientou boa parte dos contatos, embora os cartões também indiquem conflitos.",
+        "targetsError": "generaliza uma modalidade de contato para apagar outras",
+        "rationale": "Os cartões também registram conflitos e escravização."
       },
       {
         "key": "B",
-        "text": "Povos indígenas não tiveram agência no período colonial."
+        "text": "A resistência registrada tornou desnecessárias alianças e negociações locais.",
+        "targetsError": "trata formas de ação como incompatíveis entre si",
+        "rationale": "O material apresenta resistência, alianças e negociação em situações distintas."
       },
       {
         "key": "C",
-        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+        "text": "Os cartões sugerem que alianças e conflitos coexistiram em alguns contextos, sem indicar como variaram.",
+        "targetsError": "uniformiza situações variadas em períodos e lugares diferentes",
+        "rationale": "A turma observa que os registros não narram a mesma relação em todos os casos."
       },
       {
         "key": "D",
-        "text": "As relações entre colonizadores e povos originários incluíram alianças, trocas, guerras, escravização, resistência e negociação."
+        "text": "As relações incluíram trocas, alianças, conflitos, escravização e resistência."
       },
       {
         "key": "E",
-        "text": "A colonização portuguesa ocorreu sem exploração de trabalho indígena."
+        "text": "A negociação registrada equivale à aceitação das imposições coloniais.",
+        "targetsError": "confunde negociação com consentimento pleno",
+        "rationale": "O cartão separa negociação de resistência e de escravização."
       }
     ],
     "correctOption": "D",
-    "explanation": "As relações entre colonizadores e povos originários incluíram alianças, trocas, guerras, escravização, resistência e negociação.",
+    "explanation": "Os cartões registram formas distintas de contato; interpretar uma troca como sinal de ausência de coerção ignora os exemplos de conflito e escravização presentes no conjunto.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-13-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-13-CON-02"
   },
   {
     "id": "GH-13-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: O encontro de 1500 não foi um contato entre uma sociedade ativa e uma terra vazia. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Um caderno escolar acompanha uma comunidade indígena em três situações: representantes discutem uma aliança com colonizadores, famílias mudam de local diante de uma ameaça e moradores mantêm práticas próprias em um espaço de missão. As cenas são descritas como escolhas e respostas situadas, não como ações iguais para toda comunidade. A turma precisa explicar por que essas páginas mostram que os povos originários participaram das decisões e dos conflitos do período colonial. Texto autoral para esta atividade, 16 out. 2026.\n\nQual interpretação é sustentada pelas três cenas?",
     "options": [
       {
         "key": "A",
-        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+        "text": "Povos indígenas agiram e tomaram decisões em contextos coloniais variados."
       },
       {
         "key": "B",
-        "text": "Povos indígenas não tiveram agência no período colonial."
+        "text": "A missão alterou as condições de ação dos moradores.",
+        "targetsError": "apaga práticas próprias registradas na terceira cena",
+        "rationale": "O caderno descreve moradores mantendo práticas no espaço da missão."
       },
       {
         "key": "C",
-        "text": "Povos indígenas tomaram decisões e participaram ativamente da história colonial; não foram apenas vítimas passivas."
+        "text": "A mudança de local demonstra que as famílias não tiveram escolhas ou estratégias.",
+        "targetsError": "trata deslocamento como prova de passividade",
+        "rationale": "O caderno apresenta a mudança como resposta a uma ameaça."
       },
       {
         "key": "D",
-        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+        "text": "A aliança mostra que os representantes deixaram de negociar em situações posteriores.",
+        "targetsError": "deduz relações posteriores a partir de uma aliança específica",
+        "rationale": "A cena não informa como os representantes agiram em outros momentos."
       },
       {
         "key": "E",
-        "text": "A colonização portuguesa ocorreu sem exploração de trabalho indígena."
+        "text": "As cenas mostram respostas distintas dentro de uma comunidade em situações específicas.",
+        "targetsError": "uniformiza respostas distintas em contextos diferentes",
+        "rationale": "As páginas descrevem negociação, deslocamento e práticas próprias em situações variadas."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Povos indígenas tomaram decisões e participaram ativamente da história colonial; não foram apenas vítimas passivas.",
+    "correctOption": "A",
+    "explanation": "As cenas mostram negociação, resposta a ameaças e manutenção de práticas próprias; lê-las como passividade ignora as decisões registradas em cada contexto.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-13-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-13-CON-03"
   },
   {
     "id": "GH-13-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Colonização portuguesa e povos originários por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Um painel de saúde histórica compara relatos sobre epidemias introduzidas após o início da colonização com anotações sobre violência e deslocamentos. A ficha informa que essas mudanças afetaram a população indígena, mas não fornece uma contagem para cada comunidade nem separa o peso de cada causa. Na revisão, a turma deve escrever uma conclusão compatível com a evidência sem inventar números ou transformar um processo complexo em uma única explicação. Texto autoral para esta atividade, 16 out. 2026.\n\nQual conclusão respeita melhor os limites do painel?",
     "options": [
       {
         "key": "A",
-        "text": "Doenças introduzidas pelos europeus provocaram grande impacto demográfico, além da violência e dos deslocamentos."
+        "text": "As epidemias podem explicar os deslocamentos do painel sem considerar outros processos.",
+        "targetsError": "atribui deslocamentos a um fator sem análise das outras evidências",
+        "rationale": "O painel registra violência e deslocamentos junto às doenças."
       },
       {
         "key": "B",
-        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+        "text": "Sem contagens, o painel não permite estimar a dimensão do impacto das doenças em cada comunidade.",
+        "targetsError": "interpreta ausência de número como ausência de impacto",
+        "rationale": "A ficha afirma impacto demográfico, embora não detalhe uma contagem."
       },
       {
         "key": "C",
-        "text": "Povos indígenas não tiveram agência no período colonial."
+        "text": "A violência explica o impacto das epidemias sem relação com saúde.",
+        "targetsError": "mistura efeitos da violência com os registros de doença",
+        "rationale": "O painel separa epidemias, violência e deslocamentos como processos relacionados."
       },
       {
         "key": "D",
-        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+        "text": "A concentração de relatos sobre epidemias sugere que seus efeitos variaram conforme a proximidade dos assentamentos.",
+        "targetsError": "inventa um número que as fontes não fornecem",
+        "rationale": "A ficha não apresenta contagens para comunidades específicas."
       },
       {
         "key": "E",
-        "text": "A colonização portuguesa ocorreu sem exploração de trabalho indígena."
+        "text": "Doenças introduzidas, violência e deslocamentos contribuíram para mudanças demográficas."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Doenças introduzidas pelos europeus provocaram grande impacto demográfico, além da violência e dos deslocamentos.",
+    "correctOption": "E",
+    "explanation": "O painel registra impacto das doenças junto a violência e deslocamentos, sem quantificar cada fator; atribuir todos os movimentos a uma epidemia ultrapassa a evidência.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-13-CON-04"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-13-CON-04"
   },
   {
     "id": "GH-13-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. A colonização portuguesa combinou interesses econômicos, ocupação territorial, evangelização e exploração do trabalho.\nII. O contato entre portugueses e indígenas foi sempre pacífico e harmonioso.\nIII. Povos indígenas tomaram decisões e participaram ativamente da história colonial; não foram apenas vítimas passivas.\nIV. Povos indígenas não tiveram agência no período colonial.\nAssinale a alternativa CORRETA.",
+    "stem": "Um mural de aula coloca lado a lado um registro de trabalho indígena, uma ficha sobre missões e relatos de resistência. Na apresentação, a turma destaca que os documentos foram produzidos em situações coloniais específicas e que seus autores tinham posições próprias. O mural não trata as comunidades como um grupo com respostas idênticas. A professora pede que os estudantes escolham uma síntese que preserve tanto as formas de exploração quanto as possibilidades de ação e negociação presentes nos materiais. Texto autoral para esta atividade, 16 out. 2026.\n\nQual síntese representa melhor o mural?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A presença das missões pode ter alterado algumas relações de trabalho, sem eliminar conflitos.",
+        "targetsError": "usa uma instituição para apagar outras experiências coloniais",
+        "rationale": "O mural também inclui trabalho indígena e relatos de resistência."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A resistência mostra que as relações de trabalho também foram negociadas em alguns contextos.",
+        "targetsError": "separa resistência dos processos de exploração registrados",
+        "rationale": "O mural aproxima resistência e trabalho indígena no mesmo contexto colonial."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Os documentos descrevem decisões indígenas sem considerar seus autores.",
+        "targetsError": "ignora a posição dos produtores das fontes",
+        "rationale": "A apresentação destaca que cada documento foi produzido em situação específica."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O trabalho indígena aparece sem vínculo com a evangelização ou a ocupação.",
+        "targetsError": "desconecta práticas que o mural contextualiza juntas",
+        "rationale": "As fichas reúnem trabalho, missões e ocupação no período colonial."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Exploração, missão, resistência e negociação coexistiram em contextos coloniais distintos."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "E",
+    "explanation": "O mural combina trabalho, missões e resistência e chama atenção para a posição de cada autor; ignorar o contexto da fonte pode transformar registros parciais em descrição completa.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -180,36 +232,47 @@
       "GH-13-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-13-CON-01"
   },
   {
     "id": "GH-13-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Colonização portuguesa e povos originários. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Em uma oficina de fontes, estudantes observam um fac-símile da carta de Pero Vaz de Caminha, de 1500, acompanhado por uma ficha contemporânea de museu. A carta descreve o encontro a partir da posição de um escrivão português e de seus destinatários. A ficha explica que o documento não reúne as falas nem os pontos de vista de todos os povos presentes. A turma precisa decidir como usar a carta para estudar o início da colonização sem tratá-la como relato neutro de todos os lados. Texto autoral para esta atividade, 16 out. 2026.\n\nQual procedimento de leitura é mais adequado?",
     "options": [
       {
         "key": "A",
-        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+        "text": "Usar a carta como descrição representativa das sociedades indígenas encontradas, considerando os costumes que ela registra.",
+        "targetsError": "toma a perspectiva de um autor como retrato integral de outros grupos",
+        "rationale": "A ficha ressalta que o documento não reúne os pontos de vista de todos os povos."
       },
       {
         "key": "B",
-        "text": "Povos indígenas não tiveram agência no período colonial."
+        "text": "Considerar autoria, data e posição do escrivão ao interpretar o documento."
       },
       {
         "key": "C",
-        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+        "text": "A posição colonial do escrivão limita os pontos de vista presentes, mas não elimina o valor documental da carta.",
+        "targetsError": "confunde perspectiva parcial com inutilidade documental",
+        "rationale": "A oficina usa a posição do autor para contextualizar o registro, não para descartá-lo."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Ler a carta como testemunho escrito por representantes indígenas.",
+        "targetsError": "atribui a autoria a um grupo diferente do indicado na ficha",
+        "rationale": "O fac-símile é identificado como carta de Pero Vaz de Caminha."
       },
       {
         "key": "E",
-        "text": "Ler documentos coloniais como fontes produzidas por agentes com interesses e perspectivas específicos."
+        "text": "Tratar a ficha do museu como parte original da carta de 1500.",
+        "targetsError": "confunde comentário contemporâneo com fonte histórica",
+        "rationale": "A oficina distingue o fac-símile da ficha produzida pelo museu."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Ler documentos coloniais como fontes produzidas por agentes com interesses e perspectivas específicos.",
+    "correctOption": "B",
+    "explanation": "A identificação de Pero Vaz de Caminha e a data de 1500 ajudam a situar a perspectiva do documento; tratá-lo como visão completa dos povos indígenas ignora a posição do autor e a ausência de outras vozes.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -221,36 +284,47 @@
       "GH-13-CON-06"
     ],
     "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-13-CON-01"
   },
   {
     "id": "GH-13-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Colonização portuguesa e povos originários?",
+    "stem": "Em uma roda de conversa, alunos comparam três registros sobre o período colonial: um relato europeu, uma narrativa de deslocamento e um texto sobre alianças locais. Um grupo diz que o relato europeu representa todos os povos; outro lembra que os demais registros trazem experiências diferentes. A professora pede uma conclusão apoiada no conjunto e alerta que cada documento foi produzido por agentes com interesses e posições específicos. Texto autoral para esta atividade, 16 out. 2026.\n\nQual conclusão usa as fontes com maior cuidado?",
     "options": [
       {
         "key": "A",
-        "text": "A colonização portuguesa combinou interesses econômicos, ocupação territorial, evangelização e exploração do trabalho."
+        "text": "Um relato europeu oferece uma base para inferir costumes de comunidades vizinhas quando faltam registros locais.",
+        "targetsError": "generaliza a perspectiva de um agente para comunidades diferentes",
+        "rationale": "Os outros registros apresentam experiências distintas e a professora ressalta a autoria."
       },
       {
         "key": "B",
-        "text": "As relações entre colonizadores e povos originários incluíram alianças, trocas, guerras, escravização, resistência e negociação."
+        "text": "As alianças locais mostram que os deslocamentos descritos não ocorreram.",
+        "targetsError": "trata registros distintos como mutuamente excludentes",
+        "rationale": "A roda reúne fontes sobre experiências diferentes do período colonial."
       },
       {
         "key": "C",
-        "text": "Fontes como a Carta de Caminha mostram o olhar europeu e precisam ser lidas considerando autoria, contexto e finalidade."
+        "text": "A posição de quem produziu a fonte ajuda a avaliar o que ela revela."
       },
       {
         "key": "D",
-        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+        "text": "Os interesses dos autores exigem comparar o documento com outras fontes antes de generalizar.",
+        "targetsError": "confunde análise crítica com rejeição da fonte",
+        "rationale": "A professora pede considerar posições para interpretar, não para descartar os registros."
       },
       {
         "key": "E",
-        "text": "Doenças introduzidas pelos europeus provocaram grande impacto demográfico, além da violência e dos deslocamentos."
+        "text": "A narrativa de deslocamento pode indicar que grupos vizinhos passaram por experiências parecidas.",
+        "targetsError": "estende uma narrativa localizada a grupos não descritos",
+        "rationale": "O conjunto não atribui a narrativa a comunidades ausentes da fonte."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "C",
+    "explanation": "A autoria e a posição contextualizam o que um documento permite conhecer; rejeitar as fontes por seus interesses impediria a comparação que a professora propôs.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -262,36 +336,47 @@
       "GH-13-CON-06"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-13-CON-01"
   },
   {
     "id": "GH-13-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Colonização portuguesa e povos originários, qual conclusão final é sustentável?",
+    "stem": "Uma turma encerra um projeto com cartões sobre comércio, ocupação, trabalho, missões, alianças, conflitos, doenças e resistência. Cada cartão foi elaborado a partir de uma perspectiva ou de um processo distinto. No mural, os estudantes conectam as peças por datas e lugares, mas evitam descrever os povos originários como espectadores sem ação. A síntese final deve explicar a colonização como processo com múltiplos agentes e consequências, sem apagar diferenças entre as experiências. Texto autoral para esta atividade, 16 out. 2026.\n\nQual conclusão final reúne melhor os cartões?",
     "options": [
       {
         "key": "A",
-        "text": "O contato entre portugueses e indígenas foi sempre pacífico e harmonioso."
+        "text": "A evangelização organizou parte do contato e pode ter influenciado algumas práticas indígenas.",
+        "targetsError": "minimiza a agência indígena ao apresentar escolhas como mera reação",
+        "rationale": "Os cartões incluem alianças e resistência como ações dos povos originários."
       },
       {
         "key": "B",
-        "text": "Povos indígenas não tiveram agência no período colonial."
+        "text": "A colonização alterou certas formas de trabalho, enquanto alianças locais variaram conforme o contexto.",
+        "targetsError": "separa diversidade de contato da exploração registrada",
+        "rationale": "O mural inclui cartões sobre trabalho indígena e ocupação."
       },
       {
         "key": "C",
-        "text": "Fontes como a Carta de Caminha mostram o olhar europeu e precisam ser lidas considerando autoria, contexto e finalidade."
+        "text": "A chegada portuguesa produziu mudanças amplas, vividas de modos distintos.",
+        "targetsError": "uniformiza consequências em contextos distintos",
+        "rationale": "Os cartões foram organizados por perspectivas, lugares e processos diferentes."
       },
       {
         "key": "D",
-        "text": "A Carta de Caminha é uma descrição neutra e completa dos povos encontrados."
+        "text": "A colonização reuniu exploração e controle, enquanto povos indígenas também agiram e resistiram."
       },
       {
         "key": "E",
-        "text": "A colonização portuguesa ocorreu sem exploração de trabalho indígena."
+        "text": "As alianças locais retiram do processo colonial as relações de conflito.",
+        "targetsError": "usa uma forma de contato para apagar conflitos e coerção",
+        "rationale": "O mural inclui cartões sobre conflitos, trabalho e deslocamentos."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Fontes como a Carta de Caminha mostram o olhar europeu e precisam ser lidas considerando autoria, contexto e finalidade.",
+    "correctOption": "D",
+    "explanation": "Os cartões registram exploração e controle junto a alianças, decisões e resistência; interpretar as alianças como ausência de conflito reduz experiências diversas a uma só.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -303,6 +388,9 @@
       "GH-13-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-13-CON-01"
   }
 ]
