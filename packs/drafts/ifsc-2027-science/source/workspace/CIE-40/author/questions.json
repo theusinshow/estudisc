@@ -2,139 +2,180 @@
   {
     "id": "CIE-40-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de evolução estelar, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Uma equipe observou uma nuvem molecular em imagens feitas com diferentes comprimentos de onda. Em algumas regiões, o material parecia mais concentrado; meses depois, medições indicaram aumento de temperatura e brilho em pequenos núcleos. O relatório ainda não registrava uma estrela estável, mas descrevia matéria em contração e sinais de aquecimento. A turma recebeu as imagens para ordenar o início de uma trajetória estelar sem assumir que o núcleo já estivesse em equilíbrio.\n\nQual processo explica melhor essa etapa?",
     "options": [
       {
         "key": "A",
-        "text": "Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear."
+        "text": "A região já é uma estrela estável que perdeu camadas externas e começa a esfriar.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório acompanha regiões de uma nuvem molecular e não descreve uma anã branca."
       },
       {
         "key": "B",
-        "text": "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida."
+        "text": "A contração aquece o núcleo e inicia fusão; a estrela estável já está formada.",
+        "targetsError": "conceptual",
+        "rationale": "A equipe ainda não registrou uma estrela estável e observa concentração de material."
       },
       {
         "key": "C",
-        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+        "text": "A gravidade concentra o gás da nuvem e o aquecimento acompanha a formação do núcleo estelar."
       },
       {
         "key": "D",
-        "text": "O Sol já é uma anã branca na fase atual."
+        "text": "A radiação de estrelas próximas aquece a nuvem, enquanto o gás se dispersa pelo espaço.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório registra concentração e contração, sem indicar aquecimento por uma estrela externa."
       },
       {
         "key": "E",
-        "text": "Estrelas queimam por combustão química semelhante a uma fogueira."
+        "text": "A luz de estrelas próximas aquece os grãos, enquanto a gravidade não concentra o gás observado.",
+        "targetsError": "conceptual",
+        "rationale": "A descrição acompanha núcleos em formação estelar, não a formação de planetas."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear.",
+    "correctOption": "C",
+    "explanation": "A concentração e o aquecimento de uma região de nuvem são compatíveis com colapso gravitacional durante a formação estelar. O relatório ainda não descreve uma estrela estável na sequência principal.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-40-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-40-CON-01"
   },
   {
     "id": "CIE-40-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar evolução estelar sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Um observatório acompanhou por anos uma estrela semelhante ao Sol e percebeu que seu brilho permaneceu relativamente estável. Análises da luz indicaram mudanças compatíveis com a transformação gradual de hidrogênio em hélio nas regiões centrais, enquanto as camadas externas não mostraram uma expansão semelhante à de uma gigante. A equipe classificou o objeto como pertencente a uma etapa duradoura de sua trajetória, sem estimar a idade exata.\n\nQual fonte de energia caracteriza essa etapa?",
     "options": [
       {
         "key": "A",
-        "text": "O Sol já é uma anã branca na fase atual."
+        "text": "A fusão de hélio no núcleo sustenta o brilho durante a etapa estável observada.",
+        "targetsError": "conceptual",
+        "rationale": "A análise aponta para transformação nuclear no núcleo, não combustão química nas camadas externas."
       },
       {
         "key": "B",
-        "text": "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida."
+        "text": "A contração gravitacional ainda fornece a maior parte da energia nessa etapa estável.",
+        "targetsError": "conceptual",
+        "rationale": "O relato descreve uma estrela estável com atividade no núcleo, não apenas uma nuvem em contração."
       },
       {
         "key": "C",
-        "text": "Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida."
+        "text": "A fusão de hidrogênio nas camadas externas mantém o núcleo em equilíbrio térmico.",
+        "targetsError": "interpretation",
+        "rationale": "A equipe não registra planetas em colisão nem reposição de combustível."
       },
       {
         "key": "D",
-        "text": "Estrelas queimam por combustão química semelhante a uma fogueira."
+        "text": "Reações no núcleo liberam energia ao transformar hidrogênio em hélio durante a etapa estável."
       },
       {
         "key": "E",
-        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+        "text": "O transporte de energia pelas camadas externas produz o brilho sem reações no núcleo.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório descreve uma estrela semelhante ao Sol em uma etapa estável, não uma anã branca."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida.",
+    "correctOption": "D",
+    "explanation": "O relato descreve uma estrela estável e conversão de hidrogênio em hélio no núcleo, característica da sequência principal. Uma reação química como combustão não explicaria a fonte nuclear indicada.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-40-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-40-CON-02"
   },
   {
     "id": "CIE-40-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em evolução estelar?",
+    "stem": "Uma turma recebeu duas trilhas produzidas por um modelo estelar. A estrela P começou com massa maior que a estrela Q; no esquema, P aparece mais luminosa e percorre sua etapa estável em menos tempo. O professor destaca que são resultados de modelos para comparação, e não medidas de duas estrelas observadas diretamente. As trilhas não incluem valores numéricos nem descrevem a composição química inicial.\n\nQual papel da massa inicial está representado?",
     "options": [
       {
         "key": "A",
-        "text": "O Sol já é uma anã branca na fase atual."
+        "text": "O modelo associa maior massa a mais luminosidade, menor duração estável e outro percurso evolutivo."
       },
       {
         "key": "B",
-        "text": "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida."
+        "text": "O modelo associa maior massa a mais luminosidade, mas a duração estável não muda.",
+        "targetsError": "conceptual",
+        "rationale": "O modelo compara explicitamente luminosidade e tempo da etapa estável."
       },
       {
         "key": "C",
-        "text": "A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela."
+        "text": "A estrela mais massiva usa seu combustível mais lentamente e prolonga a etapa estável.",
+        "targetsError": "conceptual",
+        "rationale": "A trilha de P, que tem maior massa, mostra menor duração da etapa estável."
       },
       {
         "key": "D",
-        "text": "Estrelas queimam por combustão química semelhante a uma fogueira."
+        "text": "Sem composição inicial, o modelo não permite relacionar massa às trajetórias das estrelas.",
+        "targetsError": "conceptual",
+        "rationale": "A atividade pergunta pelo papel da massa e o esquema diferencia as trajetórias sem exigir composição."
       },
       {
         "key": "E",
-        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+        "text": "A massa inicial altera a luminosidade, enquanto o destino depende apenas da massa atual.",
+        "targetsError": "conceptual",
+        "rationale": "O enunciado compara especificamente as massas iniciais das estrelas P e Q."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela.",
+    "correctOption": "A",
+    "explanation": "No modelo apresentado, a estrela de maior massa inicial é mais luminosa e passa menos tempo na etapa estável. A conclusão é contextual ao esquema; não depende de atribuir uma duração numérica que ele não fornece.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-40-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-40-CON-03"
   },
   {
     "id": "CIE-40-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual fator tem papel decisivo no caminho evolutivo e destino final de uma estrela?",
+    "stem": "Um painel de planetário acompanha uma estrela com massa inicial semelhante à do Sol. No primeiro quadro, ela aparece estável; nos seguintes, suas camadas externas se expandem e ficam mais frias, enquanto o núcleo passa por mudanças. O último quadro mostra a perda das camadas externas e um objeto compacto remanescente. A legenda evita comparar esse caminho com estrelas muito mais massivas e pede que os visitantes organizem os estágios da estrela descrita.\n\nQual sequência corresponde ao painel?",
     "options": [
       {
         "key": "A",
-        "text": "A existência de oceanos em planetas próximos."
+        "text": "Sequência principal, gigante vermelha, supernova e estrela de nêutrons.",
+        "targetsError": "conceptual",
+        "rationale": "O painel parte de uma estrela estável e não apresenta supernova nem retorno a uma fase jovem."
       },
       {
         "key": "B",
-        "text": "A fase da Lua observada da Terra."
+        "text": "Sequência principal, gigante vermelha, nebulosa planetária e estrela de nêutrons.",
+        "targetsError": "conceptual",
+        "rationale": "A anã branca aparece como remanescente final, depois da expansão e perda de camadas."
       },
       {
         "key": "C",
-        "text": "A quantidade de oxigênio da atmosfera terrestre."
+        "text": "Sequência principal, anã branca, expansão das camadas e nebulosa planetária.",
+        "targetsError": "conceptual",
+        "rationale": "A sequência combina etapas e destino de estrelas muito massivas, não o caminho descrito."
       },
       {
         "key": "D",
-        "text": "Sua massa inicial."
+        "text": "Sequência principal, supergigante vermelha, perda de camadas e anã branca.",
+        "targetsError": "conceptual",
+        "rationale": "O painel termina em objeto compacto após perda de camadas e não identifica buraco negro."
       },
       {
         "key": "E",
-        "text": "A posição do observador na superfície da Terra."
+        "text": "A estrela segue a sequência principal, expande-se como gigante vermelha, perde camadas e deixa uma anã branca."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Sua massa inicial.",
+    "correctOption": "E",
+    "explanation": "Para uma estrela semelhante ao Sol, o painel indica expansão para gigante vermelha, perda de camadas externas e remanescente anã branca. Uma supernova não aparece nesse caminho de massa semelhante ao Sol.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +184,47 @@
       "CIE-40-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-40-CON-01"
   },
   {
     "id": "CIE-40-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear.\nII. Todas as estrelas terminam obrigatoriamente como buracos negros.\nIII. A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela.\nIV. Estrelas queimam por combustão química semelhante a uma fogueira.\nAssinale a alternativa CORRETA.",
+    "stem": "Um telescópio registrou uma estrela muito massiva que ficou mais brilhante por um período curto e depois desapareceu da imagem direta. Os observatórios detectaram material expelido ao redor do local e sinais de um remanescente compacto. A equipe ainda compara os dados para distinguir entre tipos possíveis de remanescente, e o comunicado não informa uma massa exata para o núcleo. A turma deve escolher uma interpretação que preserve essa incerteza.\n\nQual cenário evolutivo é compatível com as observações?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A explosão pode deixar uma anã branca após expelir as camadas externas da estrela.",
+        "targetsError": "conceptual",
+        "rationale": "O caso identifica uma estrela muito massiva e um evento explosivo, não o caminho semelhante ao Sol."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "O colapso do núcleo e a supernova podem deixar estrela de nêutrons ou buraco negro."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A supernova dispersa material, mas os sinais não permitem considerar um remanescente compacto.",
+        "targetsError": "conceptual",
+        "rationale": "A equipe detectou remanescente compacto e o processo estelar não é combustão química."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O remanescente compacto indica uma estrela de nêutrons, apesar da análise ainda em andamento.",
+        "targetsError": "conceptual",
+        "rationale": "A descrição trata de uma estrela muito massiva e de material expelido no evento final."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "O desaparecimento da imagem direta permite classificar o remanescente como buraco negro.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório identifica sinais de remanescente compacto após evento estelar, não formação de planeta."
       }
     ],
     "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "explanation": "O brilho breve e o material expelido são compatíveis com uma supernova de estrela muito massiva; o remanescente pode ser uma estrela de nêutrons ou, em certas condições, um buraco negro. A massa exata não foi dada para escolher entre eles.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +234,150 @@
       "CIE-40-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-40-CON-01"
   },
   {
     "id": "CIE-40-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre evolução estelar para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Após uma explosão estelar observada por um telescópio, uma nuvem de gás se expandiu pelo espaço. Anos depois, espectros da região mostraram elementos que também aparecem em amostras de poeira cósmica recolhidas por outro instrumento. Os pesquisadores não afirmaram que cada elemento surgiu exclusivamente naquele evento; compararam o material com processos de diferentes fases estelares. A turma precisa interpretar como esse tipo de dado conecta estrelas à composição de corpos posteriores.\n\nQual conclusão é mais compatível com o relatório?",
     "options": [
       {
         "key": "A",
-        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+        "text": "A explosão observada é suficiente para explicar a origem dos elementos nas duas amostras.",
+        "targetsError": "interpretation",
+        "rationale": "O relatório compara elementos da nuvem e de poeira e discute processos estelares."
       },
       {
         "key": "B",
-        "text": "Estrelas queimam por combustão química semelhante a uma fogueira."
+        "text": "A explosão observada produziu os elementos da nuvem, embora outras fases também ocorram.",
+        "targetsError": "interpretation",
+        "rationale": "A equipe explicitamente compara processos de diferentes fases e não atribui tudo a um evento."
       },
       {
         "key": "C",
-        "text": "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida."
+        "text": "Diferentes processos estelares contribuem com elementos que podem integrar nuvens e corpos posteriores."
       },
       {
         "key": "D",
-        "text": "O Sol já é uma anã branca na fase atual."
+        "text": "Os elementos da poeira se formaram nos planetas e depois foram liberados para a nuvem observada.",
+        "targetsError": "interpretation",
+        "rationale": "O relatório descreve gás e poeira, sem detectar planetas na região."
       },
       {
         "key": "E",
-        "text": "Estrelas muito massivas podem sofrer colapso do núcleo e explosão de supernova, deixando estrela de nêutrons ou, em certos casos, buraco negro."
+        "text": "A correspondência entre amostras permite atribuir os elementos ao mesmo tipo de processo estelar.",
+        "targetsError": "conceptual",
+        "rationale": "O espectro foi usado para identificar elementos, não para datar individualmente cada grão."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Estrelas muito massivas podem sofrer colapso do núcleo e explosão de supernova, deixando estrela de nêutrons ou, em certos casos, buraco negro.",
+    "correctOption": "C",
+    "explanation": "O material observado liga processos estelares e eventos associados à presença de elementos que podem integrar poeira e corpos futuros. O relatório não atribui a origem de cada elemento a uma única explosão.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-40-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-40-CON-05"
   },
   {
     "id": "CIE-40-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre evolução estelar?",
+    "stem": "Um observatório comparou duas estrelas em etapas finais. A primeira tinha massa inicial próxima à do Sol e seu registro mostrava uma fase de expansão seguida por perda de camadas. A segunda começou muito mais massiva e seu histórico incluía uma explosão, além de um remanescente compacto ainda em análise. Os estudantes devem evitar usar a palavra “morte” como se todas as estrelas terminassem do mesmo modo e prever o que os dados permitem.\n\nQual comparação respeita os históricos apresentados?",
     "options": [
       {
         "key": "A",
-        "text": "A massa inicial é um fator central que determina luminosidade, duração da vida e destino evolutivo da estrela."
+        "text": "A estrela semelhante ao Sol pode deixar uma anã branca, e a mais massiva também pode seguir esse caminho.",
+        "targetsError": "interpretation",
+        "rationale": "O histórico da primeira estrela é semelhante ao solar e não apresenta colapso de estrela muito massiva."
       },
       {
         "key": "B",
-        "text": "Durante a sequência principal, estrelas como o Sol fundem hidrogênio em hélio no núcleo por grande parte de sua vida."
+        "text": "A primeira pode deixar uma estrela de nêutrons, enquanto a segunda perde camadas sem explosão.",
+        "targetsError": "conceptual",
+        "rationale": "O primeiro histórico descreve expansão e perda de camadas sem evento de supernova."
       },
       {
         "key": "C",
-        "text": "Estrelas formam-se quando regiões de nuvens moleculares colapsam gravitacionalmente e aquecem até iniciar fusão nuclear."
+        "text": "A segunda percorre as mesmas etapas da primeira, mas a maior massa encurta a duração.",
+        "targetsError": "conceptual",
+        "rationale": "O segundo histórico inclui explosão e remanescente compacto, enquanto o primeiro não."
       },
       {
         "key": "D",
-        "text": "Estrelas de massa semelhante à do Sol evoluem para gigante vermelha e terminam como anã branca após perder camadas externas."
+        "text": "A massa inicial ajuda a distinguir o caminho até anã branca daquele que inclui supernova."
       },
       {
         "key": "E",
-        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+        "text": "A expansão da primeira indica uma supernova, enquanto o remanescente da segunda ainda é incerto.",
+        "targetsError": "conceptual",
+        "rationale": "A estrela de nêutrons é um possível remanescente de estrela muito massiva após colapso."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a incorreta: Todas as estrelas terminam obrigatoriamente como buracos negros. As demais expressam relações compatíveis com os conceitos da aula.",
+    "correctOption": "D",
+    "explanation": "Os dados indicam caminhos diferentes associados à massa inicial: uma estrela semelhante ao Sol pode deixar anã branca, enquanto uma muito massiva pode terminar em supernova e remanescente compacto. A expressão “todas do mesmo modo” ignora essa distinção.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-40-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-40-CON-01"
   },
   {
     "id": "CIE-40-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em evolução estelar?",
+    "stem": "Uma amostra de rocha planetária contém elementos que também aparecem em espectros de nuvens interestelares e em material ejetado por estrelas. No seminário, uma estudante propôs que os planetas produziram todos esses elementos depois de formados; outro grupo comparou essa hipótese com modelos de evolução estelar e com a presença dos elementos em material anterior à formação do sistema planetário. A atividade pede uma explicação que conecte as evidências sem atribuir cada átomo a uma estrela específica.\n\nQual síntese é mais consistente com os dados?",
     "options": [
       {
         "key": "A",
-        "text": "Elementos químicos mais pesados são produzidos por processos estelares e eventos associados, conectando evolução estelar à composição do Universo e dos planetas."
+        "text": "Elementos produzidos por processos estelares podem integrar nuvens e, depois, corpos planetários."
       },
       {
         "key": "B",
-        "text": "Estrelas queimam por combustão química semelhante a uma fogueira."
+        "text": "A formação dos planetas produziu os elementos da rocha sem contribuição de material anterior.",
+        "targetsError": "conceptual",
+        "rationale": "O seminário registra os elementos em material interestelar anterior ao sistema planetário."
       },
       {
         "key": "C",
-        "text": "O Sol já é uma anã branca na fase atual."
+        "text": "A semelhança dos espectros permite associar os elementos da rocha a uma estrela específica.",
+        "targetsError": "interpretation",
+        "rationale": "Os dados identificam elementos compartilhados, mas não rastreiam cada átomo até uma estrela específica."
       },
       {
         "key": "D",
-        "text": "Quanto maior a massa inicial de uma estrela, necessariamente maior sua duração de vida."
+        "text": "As estrelas incorporaram os elementos depois de eles terem sido produzidos nos planetas.",
+        "targetsError": "conceptual",
+        "rationale": "A atividade relata elementos em material anterior à formação do sistema planetário."
       },
       {
         "key": "E",
-        "text": "Todas as estrelas terminam obrigatoriamente como buracos negros."
+        "text": "A correspondência entre amostras permite atribuir sua produção ao mesmo tipo de evento estelar.",
+        "targetsError": "conceptual",
+        "rationale": "A comparação inclui material ejetado por estrelas e elementos em nuvens e rochas."
       }
     ],
     "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Elementos químicos mais pesados são produzidos por processos estelares e eventos associados, conectando evolução estelar à composição do Universo e dos planetas.",
+    "explanation": "A presença dos elementos em material interestelar anterior ao sistema planetário é compatível com processos estelares que enriquecem o meio de formação. Os dados não identificam uma estrela específica como origem de cada átomo.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-40-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-40-CON-06"
   }
 ]

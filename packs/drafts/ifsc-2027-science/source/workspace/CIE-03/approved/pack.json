@@ -200,31 +200,31 @@
     {
       "id": "CIE-03-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Durante uma revisão de calor, temperatura e equilíbrio térmico, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "stem": "Folha de bancada preparada por Joana em 10 de junho de 2026: um bloco de 250 g foi aquecido em um equipamento escolar de baixa potência. A ficha de calibração da atividade atribuiu ao bloco uma capacidade térmica específica de 0,50 J/(g·°C). A temperatura inicial foi 20 °C e, após o aquecimento, o termômetro marcou 28 °C. O grupo anotou a variação e pediu a energia térmica recebida pelo bloco, sem considerar perdas para a bancada ou para o ar.\n\nQuanta energia o bloco recebeu nesse modelo?",
       "options": [
         {
           "key": "A",
-          "text": "Um isolante térmico mantém a temperatura para sempre."
+          "text": "A energia recebida foi 500 J no aquecimento descrito."
         },
         {
           "key": "B",
-          "text": "Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura."
+          "text": "O bloco recebeu 1.400 J ao alcançar a temperatura final."
         },
         {
           "key": "C",
-          "text": "O frio flui espontaneamente do corpo frio para o quente."
+          "text": "A energia transferida foi 3.500 J para o bloco de 250 g."
         },
         {
           "key": "D",
-          "text": "Calor e temperatura são a mesma grandeza."
+          "text": "O bloco recebeu 1.000 J para a elevação registrada de temperatura."
         },
         {
           "key": "E",
-          "text": "No equilíbrio térmico os corpos deixam de possuir energia interna."
+          "text": "A energia recebida foi 4.000 J ao final do aquecimento."
         }
       ],
-      "correctOption": "B",
-      "explanation": "A alternativa B é a correta: Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura.",
+      "correctOption": "D",
+      "explanation": "A temperatura variou 28 °C − 20 °C = 8 °C. Aplicando Q = mcΔT, obtém-se 250 g × 0,50 J/(g·°C) × 8 °C = 1.000 J.",
       "difficulty": "FOUNDATION",
       "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
@@ -236,31 +236,31 @@
     {
       "id": "CIE-03-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante precisa explicar calor, temperatura e equilíbrio térmico sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "stem": "Registro de aquecimento de água assinado por Yuri em 13 de junho de 2026: uma amostra de 120 g começou a 15 °C e foi aquecida até 25 °C em um recipiente de laboratório. Para este exercício, a ficha fornece a capacidade térmica específica de 4,2 J/(g·°C), e o grupo despreza a energia absorvida pelo recipiente. O experimento durou alguns minutos e não teve evaporação observável. A turma deveria calcular a energia transferida para a água e registrar a resposta em joules.\n\nQual energia foi transferida à amostra?",
       "options": [
         {
           "key": "A",
-          "text": "No equilíbrio térmico os corpos deixam de possuir energia interna."
+          "text": "A amostra recebeu 4.200 J durante o aquecimento."
         },
         {
           "key": "B",
-          "text": "Calor e temperatura são a mesma grandeza."
+          "text": "A energia transferida foi 5.040 J no intervalo medido."
         },
         {
           "key": "C",
-          "text": "Espontaneamente, energia térmica é transferida do corpo de maior temperatura para o de menor temperatura."
+          "text": "O resultado é 12.600 J para a água da amostra."
         },
         {
           "key": "D",
-          "text": "O frio flui espontaneamente do corpo frio para o quente."
+          "text": "A amostra recebeu 2.520 J ao chegar a 25 °C."
         },
         {
           "key": "E",
-          "text": "Um isolante térmico mantém a temperatura para sempre."
+          "text": "A energia transferida à água foi 50.400 J."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A alternativa C é a correta: Espontaneamente, energia térmica é transferida do corpo de maior temperatura para o de menor temperatura.",
+      "correctOption": "B",
+      "explanation": "A amostra variou 25 °C − 15 °C = 10 °C. Portanto, Q = mcΔT = 120 g × 4,2 J/(g·°C) × 10 °C = 5.040 J.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
@@ -272,31 +272,31 @@
     {
       "id": "CIE-03-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em calor, temperatura e equilíbrio térmico?",
+      "stem": "Caderno de calorimetria escolar, assinado por Bia em 16 de junho de 2026: dois blocos iguais do mesmo material foram colocados juntos dentro de um recipiente isolado. Cada bloco tinha massa de 100 g e a ficha da atividade indicava capacidade térmica específica de 0,50 J/(g·°C). Um começou a 60 °C e o outro a 20 °C; depois do contato, o termômetro estabilizou em 40 °C. A equipe desconsiderou a energia absorvida pelo recipiente e precisava estimar a transferência ocorrida no bloco inicialmente mais quente.\n\nQual energia saiu do bloco quente até o equilíbrio?",
       "options": [
         {
           "key": "A",
-          "text": "Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica."
+          "text": "O bloco quente transferiu 500 J até o equilíbrio."
         },
         {
           "key": "B",
-          "text": "No equilíbrio térmico os corpos deixam de possuir energia interna."
+          "text": "A energia cedida foi 400 J durante o contato dos blocos."
         },
         {
           "key": "C",
-          "text": "O frio flui espontaneamente do corpo frio para o quente."
+          "text": "O bloco quente cedeu 4.000 J até atingir 40 °C."
         },
         {
           "key": "D",
-          "text": "Calor e temperatura são a mesma grandeza."
+          "text": "O bloco quente transferiu 1.500 J durante o contato."
         },
         {
           "key": "E",
-          "text": "Um isolante térmico mantém a temperatura para sempre."
+          "text": "A transferência estimada do bloco quente foi 1.000 J."
         }
       ],
-      "correctOption": "A",
-      "explanation": "A alternativa A é a correta: Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica.",
+      "correctOption": "E",
+      "explanation": "O bloco quente passou de 60 °C para 40 °C, uma queda de 20 °C. Assim, Q = 100 g × 0,50 J/(g·°C) × 20 °C = 1.000 J.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -308,31 +308,31 @@
     {
       "id": "CIE-03-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma lata gelada é colocada em uma sala quente e deixada por bastante tempo. O que tende a ocorrer?",
+      "stem": "Comparação de recipientes feita por Luiza em 19 de junho de 2026: duas garrafas receberam água a 80 °C. Uma ficou sem revestimento; a outra foi envolvida por uma camada de material isolante. Após o mesmo intervalo, a garrafa aberta marcou 48 °C e a revestida marcou 65 °C. Os recipientes foram mantidos lado a lado na mesma sala, e a equipe anotou que a camada não aquecia a água, apenas alterava a rapidez com que a energia deixava o conteúdo.\n\nQue interpretação é compatível com os resultados?",
       "options": [
         {
           "key": "A",
-          "text": "Ela produz frio e resfria indefinidamente a sala."
+          "text": "O revestimento retardou a perda de energia térmica da água."
         },
         {
           "key": "B",
-          "text": "A sala recebe calor da lata até a lata ficar ainda mais fria."
+          "text": "A água da garrafa sem revestimento trocou energia mais lentamente."
         },
         {
           "key": "C",
-          "text": "Nada muda porque metal não troca calor."
+          "text": "A diferença final pode decorrer de volumes distintos, sem mudança na taxa de troca pelo revestimento."
         },
         {
           "key": "D",
-          "text": "Ela recebe energia térmica do ambiente até se aproximar da temperatura do ambiente."
+          "text": "A garrafa revestida perdeu menos temperatura no intervalo observado."
         },
         {
           "key": "E",
-          "text": "A lata perde toda a sua energia interna."
+          "text": "As duas garrafas trocaram energia na mesma taxa por estarem lado a lado."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Ela recebe energia térmica do ambiente até se aproximar da temperatura do ambiente.",
+      "correctOption": "A",
+      "explanation": "A água revestida terminou a 65 °C, mais próxima dos 80 °C iniciais que a água sem revestimento, a 48 °C. Isso é compatível com uma perda de energia mais lenta.",
       "difficulty": "APPLIED",
       "cognitiveOperation": "APPLY",
       "conceptIds": [
@@ -346,31 +346,31 @@
     {
       "id": "CIE-03-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura.\nII. Calor e temperatura são a mesma grandeza.\nIII. Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica.\nIV. O frio flui espontaneamente do corpo frio para o quente.\nAssinale a alternativa CORRETA.",
+      "stem": "Diário sensorial de Mateus, de 22 de junho de 2026: uma colher de metal e uma espátula de madeira ficaram sobre a mesma bancada durante toda a manhã. Um termômetro indicou 23 °C nos dois objetos. Ao segurá-los, Mateus descreveu a colher como mais fria. A professora explicou que a sala não mudou de temperatura e pediu uma hipótese que relacionasse a sensação ao modo como cada material troca energia com a mão, sem afirmar que as leituras do termômetro eram diferentes.\n\nQual explicação preserva a distinção entre sensação térmica e temperatura?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "Os objetos podem estar a 23 °C, mas a madeira retira energia da mão mais depressa."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "O metal conduz energia mais lentamente, fazendo a colher parecer mais fria."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "O metal pode retirar energia da mão mais rapidamente embora ambos indiquem 23 °C."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "Como as temperaturas são iguais, a mão deve perceber os dois objetos da mesma forma."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "A sensação mais fria indica que a colher estava abaixo de 23 °C apesar da leitura."
         }
       ],
-      "correctOption": "B",
-      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+      "correctOption": "C",
+      "explanation": "Os dois objetos estavam a 23 °C, mas o metal conduz energia da mão mais rapidamente e pode parecer mais frio. Sensação térmica e temperatura medida descrevem aspectos diferentes.",
       "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -385,31 +385,31 @@
     {
       "id": "CIE-03-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Ao transferir o que foi estudado sobre calor, temperatura e equilíbrio térmico para uma situação nova, qual conclusão permanece válida?",
+      "stem": "Bilhete de manutenção escrito por Carlos em 25 de junho de 2026: uma equipe comparou uma caixa térmica fechada e uma caixa de papelão com a mesma garrafa de água morna dentro. A garrafa da caixa térmica manteve a temperatura por mais tempo, embora ambas as caixas tenham permanecido na mesma sala. O grupo observou o revestimento, o espaço entre as paredes e a tampa. O bilhete registrou que o projeto reduz trocas por mais de um caminho, sem isolar perfeitamente o conteúdo da vizinhança.\n\nQue conclusão o bilhete sustenta?",
       "options": [
         {
           "key": "A",
-          "text": "Sensação térmica não é sinônimo de temperatura: materiais à mesma temperatura podem parecer diferentes ao toque por conduzirem calor de modos diferentes."
+          "text": "A caixa de papelão conservou a água por mais tempo porque suas paredes reduziram melhor as trocas."
         },
         {
           "key": "B",
-          "text": "No equilíbrio térmico os corpos deixam de possuir energia interna."
+          "text": "O espaço entre as paredes acelera correntes de ar e anula o efeito do revestimento."
         },
         {
           "key": "C",
-          "text": "Calor e temperatura são a mesma grandeza."
+          "text": "Por estarem na mesma sala, as duas garrafas deveriam alcançar a temperatura ambiente no mesmo intervalo."
         },
         {
           "key": "D",
-          "text": "O frio flui espontaneamente do corpo frio para o quente."
+          "text": "O arranjo retarda a troca térmica por mais de um mecanismo."
         },
         {
           "key": "E",
-          "text": "Um isolante térmico mantém a temperatura para sempre."
+          "text": "A tampa reduz a troca pelo topo, enquanto as paredes ainda permitem outras trocas."
         }
       ],
-      "correctOption": "A",
-      "explanation": "A alternativa A é a correta: Sensação térmica não é sinônimo de temperatura: materiais à mesma temperatura podem parecer diferentes ao toque por conduzirem calor de modos diferentes.",
+      "correctOption": "D",
+      "explanation": "A caixa térmica manteve a água morna por mais tempo, e o registro associa esse efeito ao revestimento, ao espaço entre paredes e à tampa. O projeto reduz diferentes trocas sem eliminá-las.",
       "difficulty": "APPLIED",
       "cognitiveOperation": "TRANSFER",
       "conceptIds": [
@@ -421,31 +421,31 @@
     {
       "id": "CIE-03-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre calor, temperatura e equilíbrio térmico?",
+      "stem": "Relato de excursão de Helena, anotado em 28 de junho de 2026: ao sair de uma sala aquecida para um corredor mais frio, os estudantes tocaram uma maçaneta de metal e um painel de madeira. Os dois objetos estavam no corredor havia horas, e um termômetro de contato marcou 20 °C em cada superfície. Vários alunos disseram que a maçaneta parecia mais fria. A guia pediu que comparassem a sensação com a troca de energia entre a mão e os materiais, sem transformar impressão tátil em medida.\n\nQual interpretação explica o relato?",
       "options": [
         {
           "key": "A",
-          "text": "Espontaneamente, energia térmica é transferida do corpo de maior temperatura para o de menor temperatura."
+          "text": "A madeira parece mais fria porque conduz energia da mão com maior rapidez."
         },
         {
           "key": "B",
-          "text": "Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura."
+          "text": "A maçaneta pode parecer mais fria por conduzir energia da mão mais depressa."
         },
         {
           "key": "C",
-          "text": "Um isolante térmico reduz a taxa de transferência de calor, mas não 'produz frio' nem impede a troca para sempre."
+          "text": "A leitura de 20 °C indica que o metal está mais frio que o painel."
         },
         {
           "key": "D",
-          "text": "Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica."
+          "text": "A mão transfere energia ao metal mais lentamente, produzindo sensação de frio."
         },
         {
           "key": "E",
-          "text": "Calor e temperatura são a mesma grandeza."
+          "text": "Com a mesma temperatura, os dois materiais retiram energia da mão no mesmo ritmo."
         }
       ],
-      "correctOption": "E",
-      "explanation": "A alternativa E é a incorreta: Calor e temperatura são a mesma grandeza. As demais expressam relações compatíveis com os conceitos da aula.",
+      "correctOption": "B",
+      "explanation": "O termômetro indicou 20 °C nos dois materiais. A maçaneta de metal pode parecer mais fria porque conduz energia da mão mais rapidamente que a madeira.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -457,31 +457,31 @@
     {
       "id": "CIE-03-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em calor, temperatura e equilíbrio térmico?",
+      "stem": "Caderno de observação de Rafael, datado de 1º de julho de 2026: uma colher fria foi colocada em uma tigela de sopa morna e deixada sem mexer. No início, o cabo e a sopa tinham leituras diferentes; mais tarde, os termômetros mostraram valores iguais dentro da precisão dos instrumentos. A tigela ficou coberta e o ensaio ocorreu longe da janela. Rafael anotou que o contato modificou ambas as leituras e perguntou o que a igualdade final indica sobre o processo.\n\nQual conclusão descreve o estado observado ao final?",
       "options": [
         {
           "key": "A",
-          "text": "Um isolante térmico mantém a temperatura para sempre."
+          "text": "A colher continua mais fria que a sopa por ser metálica, apesar das leituras finais iguais."
         },
         {
           "key": "B",
-          "text": "Caixas e garrafas térmicas funcionam dificultando diferentes mecanismos de transferência de energia térmica."
+          "text": "A colher cedeu energia à sopa até que as duas leituras se igualassem."
         },
         {
           "key": "C",
-          "text": "No equilíbrio térmico os corpos deixam de possuir energia interna."
+          "text": "A colher e a sopa igualaram as leituras apenas por influência do ar da sala."
         },
         {
           "key": "D",
-          "text": "O frio flui espontaneamente do corpo frio para o quente."
+          "text": "As leituras iguais demonstram que sopa e colher não trocaram energia desde o início."
         },
         {
           "key": "E",
-          "text": "Calor e temperatura são a mesma grandeza."
+          "text": "A colher e a sopa atingiram equilíbrio térmico nas condições do ensaio."
         }
       ],
-      "correctOption": "B",
-      "explanation": "A alternativa B é a correta: Caixas e garrafas térmicas funcionam dificultando diferentes mecanismos de transferência de energia térmica.",
+      "correctOption": "E",
+      "explanation": "As duas leituras ficaram iguais dentro da precisão dos instrumentos após ambas mudarem. Isso indica equilíbrio térmico macroscópico entre a colher e a sopa nas condições descritas.",
       "difficulty": "IFSC",
       "cognitiveOperation": "EVALUATE",
       "conceptIds": [

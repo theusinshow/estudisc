@@ -2,139 +2,139 @@
   {
     "id": "CIE-20-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de ecossistemas brasileiros, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Um boletim municipal fictício reuniu imagens de uma área do norte do Brasil tomadas em duas estações. A primeira mostrava uma faixa extensa de floresta contínua; a segunda registrava clareiras próximas a estradas e fumaça em alguns pontos. Em visitas de campo, a equipe encontrou comunidades ribeirinhas, árvores de diferentes portes e trechos alterados para atividades econômicas. O relatório comparou os mapas sem afirmar que todo o território havia sido transformado.\n\nQual leitura sobre a região é mais compatível com o boletim?",
     "options": [
       {
         "key": "A",
-        "text": "A Mata Atlântica mantém praticamente toda sua cobertura original intacta."
+        "text": "As clareiras próximas às estradas podem fragmentar a floresta, embora o boletim não permita medir a conectividade."
       },
       {
         "key": "B",
-        "text": "O Pampa brasileiro ocorre principalmente na Amazônia."
+        "text": "A fumaça confirma que a região deixou de apresentar biodiversidade e passou a ser um ambiente uniforme."
       },
       {
         "key": "C",
-        "text": "A Amazônia possui extensa floresta tropical e grande biodiversidade, mas sofre pressões como desmatamento, queimadas e expansão de atividades econômicas."
+        "text": "A presença de estradas situa o recorte na Mata Atlântica, pois esse domínio acompanha áreas costeiras ocupadas."
       },
       {
         "key": "D",
-        "text": "A Amazônia não sofre impactos humanos relevantes por ser muito extensa."
+        "text": "As imagens descrevem um ambiente semiárido cuja vegetação acompanha longos períodos sem chuva."
       },
       {
         "key": "E",
-        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+        "text": "O cenário é compatível com a Amazônia, que reúne floresta extensa e enfrenta pressões de desmatamento e queimadas."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: A Amazônia possui extensa floresta tropical e grande biodiversidade, mas sofre pressões como desmatamento, queimadas e expansão de atividades econômicas.",
+    "correctOption": "E",
+    "explanation": "As imagens mostram uma grande área florestal e, ao mesmo tempo, clareiras, queimadas e ocupação econômica. A leitura tentadora usa a extensão para descartar impactos; o relatório registra pressões reais dentro de um ecossistema muito diverso.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-20-CON-01"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "confundir grande extensão com ausência de pressão humana",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-20-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar ecossistemas brasileiros sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Uma equipe fictícia percorreu áreas de chapada no Brasil central e marcou pontos onde rios começavam em nascentes. No trajeto, observou vegetação nativa intercalada com grandes áreas convertidas para cultivo e pastagem. Moradores relataram que a mudança no uso da terra avançou em etapas, acompanhada de abertura de estradas locais. O mapa escolar mostrava que vários rios importantes recebem água de regiões altas próximas.\n\nQue bioma corresponde melhor ao conjunto de observações?",
     "options": [
       {
         "key": "A",
-        "text": "A Mata Atlântica mantém praticamente toda sua cobertura original intacta."
+        "text": "A Mata Atlântica, descrita pelo relatório como uma faixa pouco fragmentada do litoral."
       },
       {
         "key": "B",
-        "text": "O Cerrado apresenta grande biodiversidade e importância para nascentes e bacias hidrográficas, sofrendo forte conversão de habitat."
+        "text": "O Pampa, reconhecido pelos campos do Rio Grande do Sul e por chapadas do centro do país."
       },
       {
         "key": "C",
-        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+        "text": "O Cerrado, associado à biodiversidade do Brasil central, a nascentes e à conversão de habitat."
       },
       {
         "key": "D",
-        "text": "A Amazônia não sofre impactos humanos relevantes por ser muito extensa."
+        "text": "A Caatinga é a identificação mais provável, pois chapadas e atividades agropecuárias também ocorrem no Brasil central."
       },
       {
         "key": "E",
-        "text": "O Pampa brasileiro ocorre principalmente na Amazônia."
+        "text": "O Pantanal, pois rios e pastagens indicam uma planície sujeita a inundações sazonais."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: O Cerrado apresenta grande biodiversidade e importância para nascentes e bacias hidrográficas, sofrendo forte conversão de habitat.",
+    "correctOption": "C",
+    "explanation": "O caderno situa a área no Brasil central, registra vegetação nativa e conversão de habitat, além de nascentes ligadas a bacias hidrográficas. A hipótese mais tentadora desloca esse conjunto para a floresta amazônica sem considerar a localização indicada.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-20-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "atribuir nascentes e conversão de habitat a outra região",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-20-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em ecossistemas brasileiros?",
+    "stem": "Um grupo de cartografia escolar analisou um trecho da costa brasileira, onde remanescentes de floresta apareciam separados por bairros, rodovias e lavouras. Em uma visita, estudantes registraram espécies de plantas observadas em uma encosta próxima ao mar; parte delas não foi encontrada nas listas de outras regiões comparadas. No mapa, as manchas verdes eram pequenas e descontínuas, embora o conjunto ocupasse uma área importante da paisagem local.\n\nQual interpretação combina melhor a localização, os registros e a imagem?",
     "options": [
       {
         "key": "A",
-        "text": "A Mata Atlântica acompanha grande parte do litoral brasileiro e possui alto endemismo, porém está muito fragmentada."
+        "text": "O mapa representa uma área pouco alterada da Amazônia, sem relação com o litoral brasileiro."
       },
       {
         "key": "B",
-        "text": "A Mata Atlântica mantém praticamente toda sua cobertura original intacta."
+        "text": "O trecho é compatível com a Mata Atlântica, marcada por endemismo e forte fragmentação."
       },
       {
         "key": "C",
-        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+        "text": "A imagem mostra o Pampa, com campos predominantes em trechos importantes do litoral brasileiro."
       },
       {
         "key": "D",
-        "text": "A Amazônia não sofre impactos humanos relevantes por ser muito extensa."
+        "text": "O trecho corresponde ao Cerrado, pois manchas de vegetação nativa também ocorrem em áreas costeiras."
       },
       {
         "key": "E",
-        "text": "O Pampa brasileiro ocorre principalmente na Amazônia."
+        "text": "O registro é compatível com a Caatinga, com espécies adaptadas a condições semiáridas do Nordeste."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: A Mata Atlântica acompanha grande parte do litoral brasileiro e possui alto endemismo, porém está muito fragmentada.",
+    "correctOption": "B",
+    "explanation": "A paisagem costeira apresenta remanescentes separados e espécies de distribuição restrita. A hipótese tentadora supõe uma cobertura contínua ainda preservada; os mapas mostram fragmentação de um domínio com alto endemismo.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-20-CON-03"
     ],
-    "targetedError": "relationship",
+    "targetedError": "presumir cobertura intacta da Mata Atlântica",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-20-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual bioma brasileiro é frequentemente associado ao 'berço das águas' por abrigar nascentes importantes e sofre forte pressão da expansão agropecuária?",
+    "stem": "Em um roteiro de campo no interior do Nordeste, estudantes observaram a paisagem no fim de uma estação seca e retornaram após as primeiras chuvas. Em alguns locais, plantas tinham perdido folhas; em outros, surgiram brotos e flores. O grupo registrou répteis, aves e espécies vegetais diferentes entre os dois períodos, além de relatos sobre uso de água em pequenas comunidades. O caderno não comparou a área com florestas úmidas.\n\nQual conclusão evita um estereótipo sobre o ambiente visitado?",
     "options": [
       {
         "key": "A",
-        "text": "Pampa."
+        "text": "A Caatinga tem biodiversidade própria e organismos adaptados às condições semiáridas."
       },
       {
         "key": "B",
-        "text": "Pantanal."
+        "text": "A área integra o Cerrado, e a perda de folhas na seca é suficiente para distingui-lo da Caatinga."
       },
       {
         "key": "C",
-        "text": "Caatinga exclusivamente."
+        "text": "A área integra o Pantanal, cujas mudanças sazonais incluem fases de cheia e vazante."
       },
       {
         "key": "D",
-        "text": "Cerrado."
+        "text": "Os registros apontam para a Mata Atlântica, com espécies em remanescentes florestais do litoral nordestino."
       },
       {
         "key": "E",
-        "text": "Mata de araucária como bioma oficial separado."
+        "text": "A estação seca prova que o local integra campos temperados do extremo sul brasileiro."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Cerrado.",
+    "correctOption": "A",
+    "explanation": "As observações sazonais mostram variação de organismos e respostas às condições de chuva. A ideia tentadora reduz a Caatinga a um espaço biologicamente pobre; o registro aponta biodiversidade própria e adaptação ao semiárido.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -142,37 +142,37 @@
       "CIE-20-CON-02",
       "CIE-20-CON-03"
     ],
-    "targetedError": "application",
+    "targetedError": "tratar a Caatinga como ambiente sem biodiversidade própria",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-20-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. A Amazônia possui extensa floresta tropical e grande biodiversidade, mas sofre pressões como desmatamento, queimadas e expansão de atividades econômicas.\nII. A Caatinga é uma floresta úmida típica do Sudeste.\nIII. A Mata Atlântica acompanha grande parte do litoral brasileiro e possui alto endemismo, porém está muito fragmentada.\nIV. O Pampa brasileiro ocorre principalmente na Amazônia.\nAssinale a alternativa CORRETA.",
+    "stem": "Um diário fictício de pesquisa descreveu uma área extensa do Mato Grosso do Sul. Em meses mais chuvosos, a água avançou sobre campos e matas próximas a rios; em outra visita, os pesquisadores encontraram trechos expostos e marcas de inundação no solo. A equipe mapeou aves aquáticas, peixes e áreas de pastagem natural, anotando que a duração da cheia variava de um setor para outro.\n\nQue característica do ecossistema o diário destaca?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Uma floresta costeira fragmentada que acompanha grande parte do litoral brasileiro."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Um domínio semiárido em que a chuva sazonal determina a brotação de cactos."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Uma floresta tropical extensa com clareiras abertas ao longo de estradas amazônicas."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "A planície inundável do Pantanal, com áreas alagadas que variam entre estações e setores."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Campos do Pampa, cuja dinâmica hídrica explica as inundações sazonais descritas."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "correctOption": "D",
+    "explanation": "O avanço sazonal da água sobre uma grande planície é a pista principal, junto à fauna associada aos ambientes alagados. A confusão mais atraente classifica a paisagem como campo sulino; os registros descrevem o Pantanal.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -181,115 +181,115 @@
       "CIE-20-CON-03",
       "CIE-20-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "confundir campos sulinos com planície inundável",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-20-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre ecossistemas brasileiros para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Uma turma comparou imagens de municípios do sul do Rio Grande do Sul. As áreas abertas mostravam campos contínuos, manchas de vegetação associadas e atividades rurais distribuídas entre propriedades. Em uma saída de campo, os estudantes registraram gramíneas, aves de campo e cursos de água estreitos; não observaram o padrão de inundação extensa usado em outra unidade do curso. O professor pediu que localizassem corretamente esse conjunto no mapa brasileiro.\n\nQual identificação geográfica e ecológica se ajusta ao material?",
     "options": [
       {
         "key": "A",
-        "text": "Pantanal é uma grande planície inundável; Pampa predomina no sul do Rio Grande do Sul com campos e formações associadas."
+        "text": "Caatinga, com vegetação adaptada ao semiárido nordestino e estações chuvosas curtas."
       },
       {
         "key": "B",
-        "text": "A Amazônia não sofre impactos humanos relevantes por ser muito extensa."
+        "text": "Cerrado, com áreas de chapada e nascentes descritas no Brasil central."
       },
       {
         "key": "C",
-        "text": "O Pampa brasileiro ocorre principalmente na Amazônia."
+        "text": "Pantanal, com campos e cursos d’água no sul do Brasil, embora sem inundação extensa neste registro."
       },
       {
         "key": "D",
-        "text": "A Mata Atlântica mantém praticamente toda sua cobertura original intacta."
+        "text": "Mata Atlântica, com remanescentes florestais fragmentados no litoral e serras próximas."
       },
       {
         "key": "E",
-        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+        "text": "Pampa, formado por campos e formações associadas no extremo sul do país."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Pantanal é uma grande planície inundável; Pampa predomina no sul do Rio Grande do Sul com campos e formações associadas.",
+    "correctOption": "E",
+    "explanation": "As imagens e anotações situam os campos no sul do Rio Grande do Sul e não registram a dinâmica de uma planície amplamente inundada. A hipótese mais tentadora desloca essa formação para a Amazônia; o conjunto corresponde ao Pampa.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-20-CON-05"
     ],
-    "targetedError": "transfer",
+    "targetedError": "localizar o Pampa fora do sul do Rio Grande do Sul",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-20-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre ecossistemas brasileiros?",
+    "stem": "Um atlas escolar comparou mapas de cobertura vegetal de Santa Catarina e mostrou manchas florestais em serras, vales e áreas próximas ao litoral. As legendas também marcavam ambientes associados a rios e restingas. Em uma atividade de leitura, os estudantes receberam a tarefa de identificar o domínio predominante no estado, sem concluir que cada município possui a mesma cobertura ou que os remanescentes estão preservados em igual proporção.\n\nQual resposta interpreta adequadamente o atlas?",
     "options": [
       {
         "key": "A",
-        "text": "A Amazônia possui extensa floresta tropical e grande biodiversidade, mas sofre pressões como desmatamento, queimadas e expansão de atividades econômicas."
+        "text": "O estado integra principalmente o Pantanal, pois rios e restingas são ambientes associados a esse domínio."
       },
       {
         "key": "B",
-        "text": "A Caatinga é adaptada ao clima semiárido e possui biodiversidade própria, não sendo um ambiente biologicamente pobre."
+        "text": "O Pampa cobre a maior parte de Santa Catarina por causa de seus campos no litoral."
       },
       {
         "key": "C",
-        "text": "O Cerrado apresenta grande biodiversidade e importância para nascentes e bacias hidrográficas, sofrendo forte conversão de habitat."
+        "text": "Santa Catarina está predominantemente no domínio da Mata Atlântica e de ecossistemas associados."
       },
       {
         "key": "D",
-        "text": "A Mata Atlântica acompanha grande parte do litoral brasileiro e possui alto endemismo, porém está muito fragmentada."
+        "text": "A Caatinga predomina nas serras catarinenses devido à variação de umidade entre vales."
       },
       {
         "key": "E",
-        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+        "text": "A Amazônia representa a cobertura principal do estado em função de seus remanescentes florestais."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a incorreta: A Caatinga é uma floresta úmida típica do Sudeste. As demais expressam relações compatíveis com os conceitos da aula.",
+    "correctOption": "C",
+    "explanation": "O mapa reúne formações costeiras, serranas e associadas em Santa Catarina. A interpretação tentadora identifica o estado com campos do extremo sul; o domínio predominante indicado pela fonte é a Mata Atlântica e seus ecossistemas associados.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-20-CON-01"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "desconsiderar ecossistemas associados da Mata Atlântica em Santa Catarina",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-20-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em ecossistemas brasileiros?",
+    "stem": "Um relatório escolar sobre a Amazônia reuniu dados de comunidades, áreas de floresta e zonas convertidas ao longo de corredores de transporte. A equipe verificou que a região permanece extensa e abriga muitos ambientes, mas também encontrou focos de queimadas e trechos de habitat alterado. Os estudantes discutiram propostas que combinavam monitoramento, proteção de áreas e diálogo com moradores. O texto não dizia que uma medida isolada resolveria todos os problemas.\n\nQual conclusão é mais compatível com o relatório?",
     "options": [
       {
         "key": "A",
-        "text": "O Pampa brasileiro ocorre principalmente na Amazônia."
+        "text": "A dimensão da Amazônia convive com desmatamento e queimadas, por isso a proteção requer ações situadas."
       },
       {
         "key": "B",
-        "text": "Santa Catarina está inserida predominantemente no domínio da Mata Atlântica e seus ecossistemas associados."
+        "text": "A presença de comunidades locais explica os focos de queimadas e torna secundário monitorar os corredores de transporte."
       },
       {
         "key": "C",
-        "text": "A Caatinga é uma floresta úmida típica do Sudeste."
+        "text": "Os corredores de transporte podem alterar a conectividade, mas o relatório não informa se isso ocorreu em todos os trechos."
       },
       {
         "key": "D",
-        "text": "A Amazônia não sofre impactos humanos relevantes por ser muito extensa."
+        "text": "A extensão territorial prova que impactos de atividades econômicas não alcançam o ecossistema."
       },
       {
         "key": "E",
-        "text": "A Mata Atlântica mantém praticamente toda sua cobertura original intacta."
+        "text": "A floresta extensa permite concentrar ações em áreas remotas e deixar de acompanhar locais alterados."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Santa Catarina está inserida predominantemente no domínio da Mata Atlântica e seus ecossistemas associados.",
+    "correctOption": "A",
+    "explanation": "O relatório combina grande extensão e biodiversidade com impactos localizados, além de propor mais de uma resposta. A suposição mais tentadora usa o tamanho da região como garantia de proteção; as evidências apontam pressões que demandam ações contínuas.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-20-CON-06"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "tratar a extensão amazônica como proteção suficiente contra impactos",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]

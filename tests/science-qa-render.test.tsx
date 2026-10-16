@@ -58,10 +58,16 @@ describe("independent Science adapted pack QA", () => {
     for (const question of pack.questions) {
       const markup = renderToStaticMarkup(<QuestionPanel question={studentQuestion(question)} activityStableId={`${question.id}-ACT`}/>);
       const document = new DOMParser().parseFromString(markup, "text/html");
-      expect(document.body.textContent, question.id).toContain(question.stem);
+      // The math renderer (contract v1) keeps the authored digit for screen readers next to the visual superscript ("cm3³").
+      const superscripts: Record<string, string> = { "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹" };
+      const visible = (document.body.textContent ?? "").replace(/(\d+)([¹²³⁰⁴-⁹]+)/g, (match, digits: string, sups: string) => {
+        const spoken = [...sups].map(sup => Object.keys(superscripts).find(digit => superscripts[digit] === sup)).join("");
+        return digits.endsWith(spoken) ? digits.slice(0, -spoken.length) + sups : match;
+      });
+      expect(visible, question.id).toContain(question.stem);
       expect(document.querySelectorAll('input[type="radio"]'), question.id).toHaveLength(5);
       for (const choice of question.choices ?? []) {
-        expect(document.body.textContent, question.id).toContain(choice.content);
+        expect(visible, question.id).toContain(choice.content);
         expect(evaluateQuestion(question, choice.id)).toMatchObject({ correct: choice.correct, evidenceEligible: true });
       }
       expect(canExposeQuestion(question, { now: new Date("2026-10-05"), context: "training" })).toBe(false);

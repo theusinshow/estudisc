@@ -2,294 +2,291 @@
   {
     "id": "CIE-15-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de teoria celular e tipos de célula, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Uma estudante observou ao microscópio uma película retirada da parte interna da bochecha e uma amostra fina de folha. As imagens mostraram pequenos compartimentos com formatos variados; a equipe comparou os registros com fotografias de microrganismos vistos em outra aula. O relatório da atividade reunia organismos distintos e pedia uma conclusão sobre a organização básica dos seres vivos a partir das observações.\n\nQual conclusão se apoia no conjunto de imagens?",
     "options": [
       {
         "key": "A",
-        "text": "Células vegetais não possuem membrana plasmática."
+        "text": "As diferenças de formato mostram que cada amostra possui um tipo celular exclusivo."
       },
       {
         "key": "B",
-        "text": "Todas as células possuem núcleo delimitado por membrana."
+        "text": "A semelhança de formato seria necessária para reconhecer células em organismos diferentes."
       },
       {
         "key": "C",
-        "text": "A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes."
+        "text": "A observação de células em organismos distintos é compatível com a teoria celular."
       },
       {
         "key": "D",
-        "text": "Bactérias não possuem material genético."
+        "text": "As imagens mostram células, mas indicam que elas não compartilham nenhuma organização básica."
       },
       {
         "key": "E",
-        "text": "Todo ser vivo é formado por muitas células."
+        "text": "Os compartimentos são unidades observadas em escala microscópica, sem representar órgãos completos."
       }
     ],
     "correctOption": "C",
-    "explanation": "A alternativa C é a correta: A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes.",
+    "explanation": "A pista é a presença de células em amostras de organismos distintos; isso é compatível com a teoria celular. A afirmação de que somente animais têm unidades microscópicas falha porque o relatório também registra uma amostra de folha.",
     "difficulty": "FOUNDATION",
-    "cognitiveOperation": "UNDERSTAND",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-15-CON-01"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "A [molecule/cell confusion]: substitui a organização celular por moléculas isoladas; B [animal-only assumption]: ignora a amostra vegetal; D [spontaneous-generation misconception]: atribui a origem das células à iluminação; E [scale confusion]: confunde células com órgãos.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-15-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar teoria celular e tipos de célula sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Em uma amostra de água de lago, uma equipe encontrou células pequenas com membrana, material genético e ribossomos. Nas imagens ampliadas, o material genético aparecia numa região do citoplasma, sem um compartimento central delimitado por membrana. Os estudantes anotaram essas características e compararam a preparação com uma célula de levedura vista em outra lâmina. Duas equipes revisaram os desenhos antes de registrar a classificação.\n\nComo classificar a célula da amostra do lago?",
     "options": [
       {
         "key": "A",
-        "text": "Todo ser vivo é formado por muitas células."
+        "text": "Eucariótica, pois o material genético aparece associado a estruturas do citoplasma."
       },
       {
         "key": "B",
-        "text": "Bactérias não possuem material genético."
+        "text": "Animal, porque a célula tem membrana e material genético no citoplasma."
       },
       {
         "key": "C",
-        "text": "Células vegetais não possuem membrana plasmática."
+        "text": "Eucariótica, já que a presença de ribossomos é compatível com esse tipo celular."
       },
       {
         "key": "D",
-        "text": "Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma."
+        "text": "Procariótica, com DNA em região do citoplasma e sem núcleo delimitado."
       },
       {
         "key": "E",
-        "text": "Todas as células possuem núcleo delimitado por membrana."
+        "text": "Vegetal, pois a ausência de núcleo delimitado permite essa classificação."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma.",
+    "explanation": "O registro destaca DNA numa região do citoplasma e ausência de núcleo delimitado por membrana, combinação característica de célula procariótica. A presença de ribossomos não sustenta a classificação eucariótica, pois eles também aparecem na amostra descrita.",
     "difficulty": "DIRECT",
-    "cognitiveOperation": "UNDERSTAND",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
       "CIE-15-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "A [ribosome/nucleus confusion]: usa ribossomos como evidência de núcleo; B [cell-type overreach]: infere célula animal sem dados do organismo; C [plant/prokaryote confusion]: trata ausência de núcleo como traço vegetal; E [size/membrane misconception]: nega estruturas presentes no registro.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-15-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em teoria celular e tipos de célula?",
+    "stem": "Uma lâmina de tecido foi preparada para observar células com membrana, citoplasma e estruturas internas separadas por membranas. A imagem também mostra um núcleo envolvido por seu próprio limite, com material genético no interior. A turma recebeu a tarefa de classificar a organização celular sem decidir se o organismo é planta, animal ou fungo com base em uma única imagem.\n\nQue classificação corresponde às estruturas observadas?",
     "options": [
       {
         "key": "A",
-        "text": "Células vegetais não possuem membrana plasmática."
+        "text": "Eucariótica, pois há núcleo delimitado e organelas membranosas."
       },
       {
         "key": "B",
-        "text": "Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas."
+        "text": "Procariótica, porque o citoplasma também contém material genético em células sem núcleo."
       },
       {
         "key": "C",
-        "text": "Todas as células possuem núcleo delimitado por membrana."
+        "text": "Eucariótica, pois a membrana plasmática envolve o material genético observado."
       },
       {
         "key": "D",
-        "text": "Bactérias não possuem material genético."
+        "text": "Procariótica, já que estruturas internas podem aparecer sem um núcleo delimitado."
       },
       {
         "key": "E",
-        "text": "Todo ser vivo é formado por muitas células."
+        "text": "A classificação depende do tipo de organismo, não das estruturas celulares observadas."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "A",
+    "explanation": "A imagem mostra núcleo delimitado e estruturas internas membranosas, características de célula eucariótica. A leitura como procariótica falha porque o material genético não está apenas numa região do citoplasma: há um compartimento nuclear explícito.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-15-CON-03"
     ],
-    "targetedError": "relationship",
+    "targetedError": "B [nucleus-location error]: ignora o compartimento nuclear observado; C [membrane/nucleus confusion]: usa a membrana celular para negar o núcleo; D [cell/organ scale confusion]: exige um órgão para reconhecer célula; E [cell/virus confusion]: interpreta material genético como prova de organização viral.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-15-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma célula possui DNA, ribossomos e membrana plasmática, mas não apresenta núcleo delimitado por membrana. Como classificá-la?",
+    "stem": "Uma turma comparou desenhos de células de uma folha e de uma mucosa animal. Os dois esquemas mostravam membrana plasmática, citoplasma e núcleo; o desenho da folha também incluía uma parede externa rígida, estruturas verdes e uma grande região central preenchida. Os alunos deveriam apontar quais características ajudam a reconhecer a célula vegetal no modelo apresentado. O desenho foi feito em papel quadriculado.\n\nQue conjunto de estruturas diferencia a célula vegetal descrita?",
     "options": [
       {
         "key": "A",
-        "text": "Como célula eucariótica vegetal obrigatoriamente."
+        "text": "Membrana plasmática, citoplasma e núcleo, estruturas presentes nos dois esquemas."
       },
       {
         "key": "B",
-        "text": "Como vírus."
+        "text": "Parede celular, cloroplastos e grande vacúolo central."
       },
       {
         "key": "C",
-        "text": "Como célula sem material genético."
+        "text": "Parede celular, citoplasma e ribossomos, estruturas que também podem aparecer em outros tipos celulares."
       },
       {
         "key": "D",
-        "text": "Como célula procariótica."
+        "text": "Núcleo, mitocôndrias e parede celular, sem incluir os cloroplastos do modelo."
       },
       {
         "key": "E",
-        "text": "Como organela celular."
+        "text": "Cloroplastos, núcleo e ribossomos, sem considerar a parede e a grande região central."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Como célula procariótica.",
+    "correctOption": "B",
+    "explanation": "A pista está nas estruturas adicionais do desenho vegetal: parede celular, cloroplastos e grande vacúolo central. Membrana, citoplasma e núcleo também aparecem no esquema animal, por isso esse conjunto não explica a diferença entre as duas imagens.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-15-CON-01",
-      "CIE-15-CON-02",
-      "CIE-15-CON-03"
+      "CIE-15-CON-05"
     ],
-    "targetedError": "application",
+    "targetedError": "A [shared-feature/difference confusion]: lista componentes observados nos dois esquemas; C [common-structure substitution]: usa estruturas compartilhadas como traço exclusivo; D [organelle overgeneralization]: mistura organelas sem explicar a diferença; E [nuclear-detail mismatch]: não inclui as estruturas distintivas mostradas.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-15-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes.\nII. Todas as células possuem núcleo delimitado por membrana.\nIII. Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas.\nIV. Bactérias não possuem material genético.\nAssinale a alternativa CORRETA.",
+    "stem": "Em uma atividade com microscopia, a turma registrou uma bactéria e uma célula de planta. A primeira imagem não mostrava núcleo delimitado; a segunda apresentava um compartimento nuclear e várias estruturas internas. A professora pediu que a equipe usasse a organização visual para comparar os tipos celulares, sem deduzir que a bactéria não tivesse material genético ou que a célula vegetal fosse formada por uma única estrutura.\n\nQual comparação está correta?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A bactéria guarda o DNA numa região do citoplasma, mas possui núcleo delimitado como a célula vegetal."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A bactéria e a célula vegetal são eucarióticas, mas diferem no tamanho do núcleo."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "As duas são procarióticas, pois apresentam membrana plasmática e material genético."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "A bactéria é procariótica; a célula vegetal também, pois possui parede celular."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "A bactéria é procariótica; a célula vegetal é eucariótica."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-    "difficulty": "IFSC",
+    "correctOption": "E",
+    "explanation": "A imagem da bactéria não mostra núcleo delimitado, enquanto a célula vegetal apresenta esse compartimento; a comparação corresponde a procarionte e eucarionte. A conclusão de que a bactéria não tem DNA falha porque a ausência de núcleo não implica ausência de material genético.",
+    "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-15-CON-01",
       "CIE-15-CON-02",
       "CIE-15-CON-03",
       "CIE-15-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "A [DNA/nucleus misconception]: trata falta de núcleo como falta de DNA; B [size/type confusion]: usa o tamanho para classificar organização celular; C [membrane/nucleus confusion]: considera membrana prova de procarionte; D [wall/nucleus confusion]: confunde parede celular com ausência de núcleo.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-15-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre teoria celular e tipos de célula para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Uma ficha descreve uma célula alongada que se contrai após receber um sinal e participa do movimento de um braço. Em outra página, uma célula com prolongamentos compridos aparece junto a um esquema de transmissão de sinais. Os estudantes compararam as formas com as tarefas indicadas e discutiram como a organização de uma célula pode favorecer o trabalho que ela realiza no organismo.\n\nQual inferência relaciona estrutura e função sem extrapolar os registros?",
     "options": [
       {
         "key": "A",
-        "text": "Todo ser vivo é formado por muitas células."
+        "text": "A forma alongada pode favorecer a contração, enquanto os prolongamentos sustentam a estrutura do braço."
       },
       {
         "key": "B",
-        "text": "Bactérias não possuem material genético."
+        "text": "Células com formas distintas podem se especializar para tarefas diferentes."
       },
       {
         "key": "C",
-        "text": "Células animais e vegetais compartilham várias estruturas, mas células vegetais apresentam parede celular, cloroplastos e grande vacúolo central como características comuns."
+        "text": "As duas células podem participar do movimento, embora tenham formas e tarefas distintas."
       },
       {
         "key": "D",
-        "text": "Células vegetais não possuem membrana plasmática."
+        "text": "As formas sugerem tarefas distintas, mas não permitem relacionar nenhuma estrutura à função."
       },
       {
         "key": "E",
-        "text": "Todas as células possuem núcleo delimitado por membrana."
+        "text": "Prolongamentos podem ampliar a superfície celular e garantir a transmissão de sinais por todo o organismo."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Células animais e vegetais compartilham várias estruturas, mas células vegetais apresentam parede celular, cloroplastos e grande vacúolo central como características comuns.",
+    "correctOption": "B",
+    "explanation": "Os registros associam formatos diferentes a contração e transmissão de sinais; isso sustenta relação entre estrutura e função e possível especialização. A ideia de que a forma determina sozinha todos os processos falha porque a descrição relaciona forma a tarefas sem explicar o funcionamento completo do organismo.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
-      "CIE-15-CON-05"
+      "CIE-15-CON-06"
     ],
-    "targetedError": "transfer",
+    "targetedError": "A [function mismatch]: associa contração a clorofila sem apoio; C [same-organism generalization]: confunde organismo comum com função idêntica; D [single-factor determinism]: transforma uma relação em explicação total; E [structure omission]: interpreta prolongamentos como ausência de membrana.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-15-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre teoria celular e tipos de célula?",
+    "stem": "Um painel de laboratório reúne fotografias de bactéria, fungo, folha e tecido animal. Em cada amostra, os estudantes anotaram características celulares próprias; as observações também mostraram que a aparência e o número de células variam entre organismos. A equipe deve escolher uma frase de síntese que preserve as diferenças entre procariontes e eucariontes sem reduzir a organização celular a uma única forma.\n\nQual síntese está de acordo com os registros?",
     "options": [
       {
         "key": "A",
-        "text": "Células eucarióticas possuem núcleo delimitado por membrana e organelas membranosas."
+        "text": "Bactérias são procariontes; fungos, plantas e animais são eucariontes, e todas essas células possuem núcleo."
       },
       {
         "key": "B",
-        "text": "Bactérias são exemplos de organismos procariontes; animais, plantas, fungos e protistas são eucariontes."
+        "text": "Bactérias e fungos são procariontes; plantas e animais são eucariontes."
       },
       {
         "key": "C",
-        "text": "Todas as células possuem núcleo delimitado por membrana."
+        "text": "Bactérias são procariontes; fungos, plantas e animais são eucariontes."
       },
       {
         "key": "D",
-        "text": "Células procarióticas não possuem núcleo delimitado por membrana; seu DNA fica em uma região do citoplasma."
+        "text": "Bactérias e plantas são procariontes; fungos e animais são eucariontes."
       },
       {
         "key": "E",
-        "text": "A teoria celular afirma, em síntese, que seres vivos são constituídos por células e que novas células surgem de células preexistentes."
+        "text": "Todos os quatro grupos são eucariontes, embora apenas alguns tenham mais de uma célula."
       }
     ],
     "correctOption": "C",
-    "explanation": "A alternativa C é a incorreta: Todas as células possuem núcleo delimitado por membrana. As demais expressam relações compatíveis com os conceitos da aula.",
-    "difficulty": "DIRECT",
+    "explanation": "O painel inclui uma bactéria como exemplo procarionte e fungo, planta e animal como grupos eucariontes. A classificação de plantas como procariontes falha porque células vegetais apresentam núcleo delimitado e organelas membranosas.",
+    "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-15-CON-01"
+      "CIE-15-CON-04"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "A [group classification error]: classifica plantas como procariontes; B [fungus/cell misconception]: nega organização celular a fungos; D [size-based classification]: usa escala da foto como critério de núcleo; E [shared-structure error]: nega membrana a um dos tipos celulares.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-15-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em teoria celular e tipos de célula?",
+    "stem": "Em um modelo de tecido em crescimento, as imagens de segunda-feira e quinta-feira mostram células novas próximas de células já existentes. A turma acompanhou a sequência por vários dias e anotou quando uma célula se dividia e quando as células-filhas aumentavam de tamanho. A atividade não registrou formação de células a partir de matéria sem vida; o objetivo era descrever a continuidade observada no conjunto.\n\nQual princípio da teoria celular é ilustrado pela sequência?",
     "options": [
       {
         "key": "A",
-        "text": "Todas as células possuem núcleo delimitado por membrana."
+        "text": "A formação de novas células a partir de células existentes acompanha a continuidade observada no tecido."
       },
       {
         "key": "B",
-        "text": "Bactérias não possuem material genético."
+        "text": "O aumento do tecido pode ser explicado pelo crescimento das células existentes, sem depender da divisão registrada."
       },
       {
         "key": "C",
-        "text": "Células vegetais não possuem membrana plasmática."
+        "text": "As células compartilham componentes básicos, ainda que variem em forma e função."
       },
       {
         "key": "D",
-        "text": "Todo ser vivo é formado por muitas células."
+        "text": "Os organismos multicelulares são formados por células organizadas em tecidos."
       },
       {
         "key": "E",
-        "text": "Estrutura e função estão relacionadas: diferentes células podem especializar-se para realizar tarefas distintas."
+        "text": "As células realizam funções que contribuem para a atividade do tecido."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Estrutura e função estão relacionadas: diferentes células podem especializar-se para realizar tarefas distintas.",
+    "correctOption": "A",
+    "explanation": "A sequência mostra células-filhas próximas de células que se dividiram, ilustrando a origem de novas células a partir de preexistentes. A hipótese de surgimento espontâneo falha porque o registro acompanha a divisão celular ao longo do tempo.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-15-CON-06"
+      "CIE-15-CON-01"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "B [spontaneous-generation misconception]: ignora a sequência de divisão observada; C [cell-growth omission]: exclui as unidades registradas; D [scale/category confusion]: substitui células por órgãos; E [cell/matter confusion]: transforma divisão em perda da organização.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]

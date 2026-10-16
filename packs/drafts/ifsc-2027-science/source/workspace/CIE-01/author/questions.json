@@ -1,140 +1,179 @@
 [
   {
-    "id": "CIE-01-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de movimento, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Registro de pista, elaborado por Bruno em 14 de abril de 2026: durante a aula de educação física, a turma marcou um trecho reto de 240 m no pátio. Júlia partiu da linha inicial, correu até a marca final e levou 80 s, medidos pelo cronômetro de um colega. Ela parou sobre a marca, sem retornar ao ponto de partida. O professor pediu que a equipe anotasse o referencial usado e calculasse uma medida que resumisse o percurso nesse intervalo, registrando o resultado em metros por segundo.\n\nQual foi a rapidez média de Júlia no trecho?",
     "options": [
       {
         "key": "A",
-        "text": "Se a velocidade é constante, o corpo obrigatoriamente está parado."
+        "text": "A rapidez média foi 2,5 m/s no trecho registrado.",
+        "targetsError": "calculation",
+        "rationale": "Atribui ao percurso uma duração menor que a indicada."
       },
       {
         "key": "B",
-        "text": "Movimento é uma propriedade absoluta e independe do observador."
+        "text": "Júlia avançou, em média, 3 m a cada segundo do trecho."
       },
       {
         "key": "C",
-        "text": "Um objeto só pode se mover se houver uma força atuando continuamente na mesma direção."
+        "text": "A rapidez média foi 1,5 m/s ao longo do percurso.",
+        "targetsError": "interpretation",
+        "rationale": "Considera apenas parte do trajeto ao estimar a rapidez."
       },
       {
         "key": "D",
-        "text": "Trajetória e deslocamento são sempre iguais."
+        "text": "A rapidez média foi 4 m/s durante a corrida.",
+        "targetsError": "calculation",
+        "rationale": "Usa um intervalo menor do que os 80 s anotados."
       },
       {
         "key": "E",
-        "text": "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo."
+        "text": "A rapidez média foi 0,3 m/s no trecho de 240 m.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde a comparação entre distância e tempo ao determinar a taxa."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo.",
+    "explanation": "A equipe anotou 240 m em 80 s; a razão entre essas medidas é 3 m/s. As demais estimativas não correspondem à distância e ao intervalo registrados.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-01-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-01-CON-01",
+    "id": "CIE-01-Q001",
+    "correctOption": "B"
   },
   {
-    "id": "CIE-01-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar movimento sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "No diário de observação de Camila, datado de 18 de abril de 2026, um robô de brinquedo saiu da marca zero de uma faixa no chão. Ele percorreu 150 m no sentido norte para alcançar um sensor e depois recuou 40 m no sentido sul, parando junto a uma caixa azul. A equipe registrou o trajeto inteiro com setas e conferiu a posição final em relação à marca inicial. A professora pediu duas medidas distintas: o comprimento do caminho feito pelo robô e a variação entre suas posições de partida e chegada.\n\nQuais valores descrevem a distância percorrida e o deslocamento final?",
     "options": [
       {
         "key": "A",
-        "text": "Um objeto só pode se mover se houver uma força atuando continuamente na mesma direção."
+        "text": "A distância é 110 m e o deslocamento é 150 m para o norte.",
+        "targetsError": "interpretation",
+        "rationale": "Usa a posição final como se fosse o caminho inteiro."
       },
       {
         "key": "B",
-        "text": "Se a velocidade é constante, o corpo obrigatoriamente está parado."
+        "text": "A distância é 150 m e o deslocamento é 190 m para o norte.",
+        "targetsError": "calculation",
+        "rationale": "Soma o retorno ao deslocamento orientado."
       },
       {
         "key": "C",
-        "text": "Trajetória e deslocamento são sempre iguais."
+        "text": "A distância é 190 m e o deslocamento é 190 m para o norte.",
+        "targetsError": "conceptual",
+        "rationale": "Trata o percurso com retorno como uma única direção."
       },
       {
         "key": "D",
-        "text": "Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final."
+        "text": "A distância é 40 m e o deslocamento é 110 m para o sul.",
+        "targetsError": "interpretation",
+        "rationale": "Considera somente o segundo trecho e inverte o sentido final."
       },
       {
         "key": "E",
-        "text": "Movimento é uma propriedade absoluta e independe do observador."
+        "text": "A distância é 190 m e o deslocamento é 110 m para o norte."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final.",
+    "explanation": "O caminho soma 150 m e 40 m, enquanto a posição final fica 110 m ao norte do início. A alternativa tentadora que iguala os dois valores ignora o retorno.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-01-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-01-CON-02",
+    "id": "CIE-01-Q002",
+    "correctOption": "E"
   },
   {
-    "id": "CIE-01-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em movimento?",
+    "stem": "Relato de pedalada de Nara, registrado em 22 de abril de 2026: para comparar dois percursos do bairro, ela marcou no aplicativo uma rota plana de 6 km entre a praça e a biblioteca. O cronômetro indicou 24 minutos de movimento contínuo, sem parada para descanso. Nara explicou que queria comparar a rapidez média desse trecho com outra atividade anotada em quilômetros por hora, e por isso converteria primeiro o tempo para horas. O mapa também mostrava que a rota seguia para leste, embora o cálculo solicitado fosse uma medida escalar.\n\nQual rapidez média, em quilômetros por hora, corresponde ao percurso?",
     "options": [
       {
         "key": "A",
-        "text": "Movimento é uma propriedade absoluta e independe do observador."
+        "text": "Nesse ritmo, Nara percorreu 15 km em cada hora de movimento."
       },
       {
         "key": "B",
-        "text": "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido."
+        "text": "A rapidez média foi 14,4 km/h para a rota plana.",
+        "targetsError": "calculation",
+        "rationale": "Converte o intervalo para horas com uma aproximação inadequada."
       },
       {
         "key": "C",
-        "text": "Um objeto só pode se mover se houver uma força atuando continuamente na mesma direção."
+        "text": "A rapidez média foi 12 km/h entre a praça e a biblioteca.",
+        "targetsError": "procedural",
+        "rationale": "Usa uma duração maior que os 24 minutos medidos."
       },
       {
         "key": "D",
-        "text": "Se a velocidade é constante, o corpo obrigatoriamente está parado."
+        "text": "A rapidez média foi 9,6 km/h durante a pedalada.",
+        "targetsError": "calculation",
+        "rationale": "Combina a distância com uma conversão incorreta do intervalo."
       },
       {
         "key": "E",
-        "text": "Trajetória e deslocamento são sempre iguais."
+        "text": "A rapidez média foi 18 km/h no percurso anotado.",
+        "targetsError": "calculation",
+        "rationale": "Subestima o tempo de movimento ao comparar a rota."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido.",
+    "explanation": "Os 24 minutos correspondem a 0,4 hora; percorrer 6 km nesse intervalo equivale a 15 km por hora. A direção leste não altera a rapidez média escalar.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-01-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-01-CON-03",
+    "id": "CIE-01-Q003",
+    "correctOption": "A"
   },
   {
-    "id": "CIE-01-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma pessoa caminha 100 m para leste e depois retorna 100 m ao ponto inicial. Qual interpretação é correta?",
+    "stem": "Na saída do colégio, o caderno de observações de Davi, de 25 de abril de 2026, compara dois pontos de vista. Ele permaneceu sentado em um ônibus parado no terminal e descreveu o banco ao seu lado como imóvel. Uma colega, em pé na calçada, viu o ônibus sair e afirmou que Davi se deslocava junto com o veículo. Os dois apontaram o mesmo passageiro e o mesmo minuto; a diferença estava no objeto escolhido para comparação. A professora pediu que a turma explicasse por que as descrições não se anulam.\n\nQual conclusão interpreta corretamente as duas observações?",
     "options": [
       {
         "key": "A",
-        "text": "Ela percorreu 100 m e seu deslocamento é 100 m."
+        "text": "Davi fica em repouso junto ao banco e também junto à calçada durante a saída.",
+        "targetsError": "conceptual",
+        "rationale": "Estende a observação local ao referencial da calçada."
       },
       {
         "key": "B",
-        "text": "Distância e deslocamento são ambos 200 m."
+        "text": "A colega vê Davi mudar de posição em relação ao banco, mas não à calçada.",
+        "targetsError": "interpretation",
+        "rationale": "Troca o referencial associado à observação de cada pessoa."
       },
       {
         "key": "C",
-        "text": "O deslocamento é 200 m para leste."
+        "text": "O estado de movimento descrito depende de comparar Davi ao banco ou à calçada."
       },
       {
         "key": "D",
-        "text": "Ela percorreu 200 m, mas seu deslocamento final é zero."
+        "text": "A observação de Davi vale enquanto o ônibus para, e a da colega descreve a saída.",
+        "targetsError": "conceptual",
+        "rationale": "Atribui as descrições a instantes diferentes, embora o relato fixe o mesmo minuto."
       },
       {
         "key": "E",
-        "text": "Como voltou ao início, a distância percorrida é zero."
+        "text": "Davi muda de posição em relação ao banco enquanto permanece junto à calçada.",
+        "targetsError": "interpretation",
+        "rationale": "Atribui a mudança de posição ao referencial oposto ao descrito pela colega."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Ela percorreu 200 m, mas seu deslocamento final é zero.",
+    "explanation": "No mesmo instante, Davi não muda de posição em relação ao banco, mas muda em relação à calçada quando o ônibus parte. Cada descrição depende do referencial adotado.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +182,47 @@
       "CIE-01-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-01-CON-01",
+    "id": "CIE-01-Q004",
+    "correctOption": "C"
   },
   {
-    "id": "CIE-01-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo.\nII. Movimento é uma propriedade absoluta e independe do observador.\nIII. Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido.\nIV. Trajetória e deslocamento são sempre iguais.\nAssinale a alternativa CORRETA.",
+    "stem": "Em uma caminhada monitorada por Lia em 28 de abril de 2026, um estudante percorreu 75 m pelo corredor até o laboratório e voltou 15 m para buscar o caderno esquecido. O cronômetro registrou 2 minutos desde a saída até a parada. O ponto inicial foi a porta da sala, e a direção do laboratório foi definida como positiva. Para preencher a ficha, Lia precisava registrar o caminho total, o deslocamento e a rapidez média, usando unidades coerentes.\n\nQue conjunto de resultados corresponde à ficha?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "O registro é 90 m de caminho, 75 m de deslocamento e 0,75 m/s de rapidez.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde a distância do segundo trecho com a posição final."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "O registro é 90 m de caminho, 60 m de deslocamento e 0,5 m/s de rapidez.",
+        "targetsError": "conceptual",
+        "rationale": "Usa um intervalo de tempo maior do que o cronômetro registrou."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "O registro é 75 m de caminho, 60 m de deslocamento e 0,75 m/s de rapidez.",
+        "targetsError": "calculation",
+        "rationale": "Deixa de incluir o trecho de retorno no caminho total."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O registro é 90 m de caminho, 60 m de deslocamento e 0,75 m/s de rapidez."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "O registro é 90 m de caminho, 60 m de deslocamento e 1,25 m/s de rapidez.",
+        "targetsError": "calculation",
+        "rationale": "Calcula a taxa com um tempo menor que os 120 s medidos."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "explanation": "O estudante percorreu 75 m na ida e 15 m na volta: são 90 m de caminho e deslocamento de 60 m no sentido positivo. Em 120 s, a rapidez média é 0,75 m/s.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +232,152 @@
       "CIE-01-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-01-CON-01",
+    "id": "CIE-01-Q005",
+    "correctOption": "D"
   },
   {
-    "id": "CIE-01-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre movimento para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Nota de oficina de Miguel, de 2 de maio de 2026: dois carrinhos idênticos foram soltos do mesmo ponto, sem empurrão adicional. Um percorreu uma faixa lisa até parar após certa distância; o outro avançou sobre um tapete áspero e parou antes. A equipe repetiu a observação usando a mesma inclinação de partida e anotou que o contato com o tapete produzia maior resistência ao deslizamento. Miguel perguntou se seria preciso continuar empurrando o primeiro carrinho para que ele mantivesse o movimento.\n\nQual explicação é compatível com o registro?",
     "options": [
       {
         "key": "A",
-        "text": "Um objeto só pode se mover se houver uma força atuando continuamente na mesma direção."
+        "text": "O atrito do tapete reduz mais o movimento, enquanto a faixa lisa oferece menor oposição."
       },
       {
         "key": "B",
-        "text": "Se a velocidade é constante, o corpo obrigatoriamente está parado."
+        "text": "A resistência maior do tapete atua somente no instante em que o carrinho começa a se mover.",
+        "targetsError": "interpretation",
+        "rationale": "Limita o efeito do contato ao início, embora a resistência esteja presente durante o trajeto."
       },
       {
         "key": "C",
-        "text": "Trajetória e deslocamento são sempre iguais."
+        "text": "Na faixa lisa, o carrinho conserva melhor o movimento depois de ser solto.",
+        "targetsError": "conceptual",
+        "rationale": "Desconsidera que a resistência restante também altera o movimento do carrinho."
       },
       {
         "key": "D",
-        "text": "Movimento é uma propriedade absoluta e independe do observador."
+        "text": "A inclinação inicial explica a diferença, pois o atrito não altera a distância de parada.",
+        "targetsError": "interpretation",
+        "rationale": "Desconsidera o efeito do atrito que a equipe comparou entre as superfícies."
       },
       {
         "key": "E",
-        "text": "Forças podem alterar o estado de movimento; o atrito é uma interação importante em situações cotidianas."
+        "text": "A faixa lisa dissipa mais energia no contato com as rodas que o tapete áspero.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte a comparação entre as resistências anotadas pela equipe."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Forças podem alterar o estado de movimento; o atrito é uma interação importante em situações cotidianas.",
+    "explanation": "Com a mesma inclinação inicial, o carrinho sobre o tapete áspero parou antes, compatível com a maior resistência ao deslizamento anotada. A faixa lisa oferece menor oposição ao movimento.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-01-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-01-CON-05",
+    "id": "CIE-01-Q006",
+    "correctOption": "A"
   },
   {
-    "id": "CIE-01-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre movimento?",
+    "stem": "Carta de campo escrita por Renata em 5 de maio de 2026: durante uma viagem, ela observou a Lua pela janela e viu árvores passando no sentido contrário ao ônibus. Seu irmão, sentado ao lado, apontou para o banco e disse que ambos continuavam parados. Na conversa, Renata anotou os objetos usados para comparar as posições: o banco, a estrada e a Lua. Ela queria relacionar a experiência cotidiana com a ideia de que a superfície terrestre também participa de movimentos em escala maior.\n\nQual inferência respeita os referenciais descritos?",
     "options": [
       {
         "key": "A",
-        "text": "Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final."
+        "text": "A Lua acompanha o ônibus porque as árvores parecem deslocar-se pela janela.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde a mudança aparente das árvores com um movimento compartilhado pela Lua."
       },
       {
         "key": "B",
-        "text": "Um mesmo objeto pode estar em repouso para um observador e em movimento para outro."
+        "text": "A Lua parece acompanhar o ônibus porque ambos são observados pela mesma janela.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde alinhamento visual durante a viagem com movimento compartilhado."
       },
       {
         "key": "C",
-        "text": "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo."
+        "text": "Renata está em repouso em relação ao banco e à estrada durante todo o trajeto.",
+        "targetsError": "conceptual",
+        "rationale": "Toma o repouso em relação ao banco como repouso em qualquer referencial."
       },
       {
         "key": "D",
-        "text": "Movimento é uma propriedade absoluta e independe do observador."
+        "text": "Os irmãos ficam em repouso em relação à estrada e se movem junto ao banco.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte as relações entre os passageiros e os referenciais citados."
       },
       {
         "key": "E",
-        "text": "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido."
+        "text": "O repouso junto ao banco não impede que os irmãos se movam em relação à estrada."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a incorreta: Movimento é uma propriedade absoluta e independe do observador. As demais expressam relações compatíveis com os conceitos da aula.",
+    "explanation": "Os irmãos mantêm a posição em relação ao banco, mas viajam com o ônibus em relação à estrada. A janela também permite observar a Lua, sem tornar seu movimento o mesmo do veículo.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-01-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-01-CON-01",
+    "id": "CIE-01-Q007",
+    "correctOption": "E"
   },
   {
-    "id": "CIE-01-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em movimento?",
+    "stem": "Relato do clube de astronomia, assinado por Elisa em 9 de maio de 2026: a turma marcou uma árvore no pátio e acompanhou a sombra ao longo da manhã. Os estudantes permaneceram sobre o solo, mas compararam o local com a posição aparente do Sol e com as estrelas vistas em uma atividade noturna. O registro não tentou medir distâncias astronômicas; queria discutir por que uma pessoa que está em pé na Terra pode dizer que está parada no pátio e, ainda assim, participar de movimentos maiores.\n\nQue síntese responde ao objetivo do clube?",
     "options": [
       {
         "key": "A",
-        "text": "Um objeto só pode se mover se houver uma força atuando continuamente na mesma direção."
+        "text": "A pessoa acompanha a rotação da Terra, mas não participa do movimento ao redor do Sol.",
+        "targetsError": "interpretation",
+        "rationale": "Distingue movimentos terrestres, mas conclui incorretamente que a pessoa não participa da translação."
       },
       {
         "key": "B",
-        "text": "Os movimentos da Terra mostram que estar 'parado' na superfície não significa estar parado no espaço."
+        "text": "Estar em repouso no pátio é compatível com participar dos movimentos terrestres."
       },
       {
         "key": "C",
-        "text": "Trajetória e deslocamento são sempre iguais."
+        "text": "A mudança aparente da sombra mostra o movimento da pessoa em relação à árvore.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde a variação da sombra com uma mudança da posição da pessoa no pátio."
       },
       {
         "key": "D",
-        "text": "Se a velocidade é constante, o corpo obrigatoriamente está parado."
+        "text": "Como o Sol muda de posição aparente no pátio, a Terra não pode estar girando.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde a observação aparente do Sol com a rotação terrestre."
       },
       {
         "key": "E",
-        "text": "Movimento é uma propriedade absoluta e independe do observador."
+        "text": "A pessoa acompanha a Terra em relação ao Sol, mas permanece em repouso em qualquer escala.",
+        "targetsError": "conceptual",
+        "rationale": "Generaliza o repouso observado localmente para outros referenciais."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Os movimentos da Terra mostram que estar 'parado' na superfície não significa estar parado no espaço.",
+    "explanation": "A pessoa permanece em repouso em relação ao pátio, enquanto participa dos movimentos da Terra. A observação local da sombra não transforma esse referencial em uma descrição universal.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-01-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-01-CON-06",
+    "id": "CIE-01-Q008",
+    "correctOption": "B"
   }
 ]
