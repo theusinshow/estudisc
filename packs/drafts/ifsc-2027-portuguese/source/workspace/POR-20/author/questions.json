@@ -6,299 +6,378 @@
       "id": "POR-20-Q01",
       "lessonId": "POR-20",
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Coerência, progressão temática e relações entre ideias em uso real da língua?",
+      "stem": "Como as informações avançam em torno do tema principal?",
       "options": [
         {
           "id": "A",
-          "text": "Coerência é não cometer erro gramatical."
+          "text": "A nota acompanha a sala desde a abertura até os dados de procura e as formas de acesso."
         },
         {
           "id": "B",
-          "text": "Todo parágrafo deve repetir a tese."
+          "text": "A nota parte da abertura e acrescenta como a equipe organizou o atendimento aos estudantes.",
+          "targetsError": "interpretation",
+          "rationale": "O boletim informa mesas e horário, mas também registra procura e uso do espaço."
         },
         {
           "id": "C",
-          "text": "Qualquer informação verdadeira melhora o texto."
+          "text": "A nota relaciona a procura inicial ao horário ampliado durante o período de provas.",
+          "targetsError": "attention",
+          "rationale": "O texto não afirma que a procura motivou a ampliação do horário; apresenta os dados em sequência."
         },
         {
           "id": "D",
-          "text": "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto."
+          "text": "A nota substitui os dados sobre o serviço por comentários pessoais sem relação com a sala.",
+          "targetsError": "conceptual",
+          "rationale": "Os relatos dos estudantes se relacionam ao uso da sala; não substituem nem invalidam os demais dados."
         },
         {
           "id": "E",
-          "text": "Muitos conectores garantem coerência."
+          "text": "A nota abandona o serviço da biblioteca para divulgar a reunião do conselho como evento principal.",
+          "targetsError": "memory",
+          "rationale": "A reunião aparece no fechamento como informação de contato, após a apresentação do serviço."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto.",
+      "correctOption": "A",
+      "explanation": "A sequência anuncia a sala, mostra sua estrutura, registra procura e efeito para estudantes e informa como reservar. A reunião do conselho pode chamar atenção por estar no final, mas ocupa apenas uma função de serviço dentro da notícia sobre o espaço de estudo.",
       "difficulty": "foundation",
       "cognitiveOperation": "recognize",
       "concepts": [
         "POR-20-C01"
       ],
-      "targetedError": "Muitos conectores garantem coerência.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Cada detalhe amplia a informação sobre abertura, uso ou acesso à sala.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "No boletim de 12 de março de 2026, a biblioteca do bairro anuncia que abriu uma sala de estudo no antigo depósito. A equipe informa que instalou oito mesas, recebeu 46 inscrições na primeira semana e ampliará o horário até as 20 horas durante o período de provas. Dois estudantes entrevistados dizem que agora conseguem estudar depois do trabalho. A nota termina com o telefone para reservar uma mesa e a data da próxima reunião do conselho.\nBoletim autoral da biblioteca, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-20-Q02",
       "lessonId": "POR-20",
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Coerência, progressão temática e relações entre ideias, qual princípio deve orientar a análise?",
+      "stem": "Qual detalhe daria continuidade ao desenvolvimento dessa proposta?",
       "options": [
         {
           "id": "A",
-          "text": "Progressão temática exige acrescentar informações relacionadas, não apenas repetir a mesma ideia."
+          "text": "Um registro de como as caixas foram distribuídas entre as turmas participantes.",
+          "targetsError": "interpretation",
+          "rationale": "A atividade descrita não acrescenta dados sobre a coleta de papel ou seu acompanhamento."
         },
         {
           "id": "B",
-          "text": "Todo parágrafo deve repetir a tese."
+          "text": "Uma observação sobre quais folhas foram escolhidas para os exercícios da estudante.",
+          "targetsError": "conceptual",
+          "rationale": "A meta já está apresentada; a proposta pede um novo dado sobre a coleta."
         },
         {
           "id": "C",
-          "text": "Qualquer informação verdadeira melhora o texto."
+          "text": "Uma comparação entre o volume recolhido e a estimativa feita pelas turmas."
         },
         {
           "id": "D",
-          "text": "Muitos conectores garantem coerência."
+          "text": "Uma descrição de como a equipe pretende separar o material recebido para reutilização.",
+          "targetsError": "attention",
+          "rationale": "A proposta trata de folhas para reutilização, não de armazenamento de livros novos."
         },
         {
           "id": "E",
-          "text": "Coerência é não cometer erro gramatical."
+          "text": "Um comentário sobre o horário de saída das turmas que participaram da publicação.",
+          "targetsError": "prerequisite",
+          "rationale": "O horário escolar não acrescenta informação sobre a coleta ou seu resultado."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Progressão temática exige acrescentar informações relacionadas, não apenas repetir a mesma ideia.",
+      "correctOption": "C",
+      "explanation": "A notícia já apresenta uma meta, ações iniciais e um pedido de acompanhamento. Comparar o resultado reunido com a expectativa acrescentaria informação ligada à coleta. Repetir a meta parece manter o assunto, mas não traz novo passo para a progressão.",
       "difficulty": "direct",
       "cognitiveOperation": "understand",
       "concepts": [
         "POR-20-C02"
       ],
-      "targetedError": "Coerência é não cometer erro gramatical.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O texto pode avançar com dados de acompanhamento da coleta.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Em 8 de abril de 2026, o grêmio publicou uma proposta para reduzir o desperdício de papel na escola. O texto apresenta a meta de reutilizar folhas com um lado livre, informa que três turmas já montaram caixas de coleta e cita a fala de uma estudante que usa os rascunhos em exercícios. No encerramento, o grêmio convida outras turmas a medir o volume recolhido até o fim do mês e enviar os resultados.\nProposta autoral do grêmio, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-20-Q03",
       "lessonId": "POR-20",
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Coerência, progressão temática e relações entre ideias?",
+      "stem": "Que problema de consistência aparece entre os dois avisos?",
       "options": [
         {
           "id": "A",
-          "text": "Qualquer informação verdadeira melhora o texto."
+          "text": "O texto informa horários diferentes para a abertura da sala em cada estação do ano.",
+          "targetsError": "attention",
+          "rationale": "Os avisos não mencionam estações ou mudança sazonal de horário."
         },
         {
           "id": "B",
-          "text": "Muitos conectores garantem coerência."
+          "text": "O segundo aviso amplia o primeiro ao incluir a manutenção após o encerramento diário.",
+          "targetsError": "interpretation",
+          "rationale": "A manutenção é indicada para terça-feira, dentro do período declarado de funcionamento."
         },
         {
           "id": "C",
-          "text": "Contradições não explicadas podem romper a coerência global."
+          "text": "O texto apresenta um contraste intencional entre a leitura de sábado e a manutenção de terça.",
+          "targetsError": "conceptual",
+          "rationale": "Os dias não se opõem no sentido apresentado; a divergência ocorre no funcionamento às terças."
         },
         {
           "id": "D",
-          "text": "Coerência é não cometer erro gramatical."
+          "text": "A informação sobre manutenção esclarece por que a sala abre às nove horas.",
+          "targetsError": "prerequisite",
+          "rationale": "O aviso não explica a hora de abertura; ele conflita com o funcionamento anunciado para terça."
         },
         {
           "id": "E",
-          "text": "Todo parágrafo deve repetir a tese."
+          "text": "A página declara que a sala funciona às terças e também que fica fechada nesse dia."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Contradições não explicadas podem romper a coerência global.",
+      "correctOption": "E",
+      "explanation": "O primeiro quadro inclui terça-feira entre os dias de funcionamento, enquanto o aviso seguinte informa que a sala fica fechada nesse mesmo dia. A manutenção poderia explicar uma exceção, mas a página não a limita a horários ou datas específicos.",
       "difficulty": "applied",
       "cognitiveOperation": "discriminate",
       "concepts": [
         "POR-20-C03"
       ],
-      "targetedError": "Todo parágrafo deve repetir a tese.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Os avisos são incompatíveis quanto ao funcionamento de terça-feira.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A página de serviços do Centro Cultural do Lago foi revisada em 17 de maio de 2026. No quadro “Horários”, lê-se: “A sala de leitura funciona de terça a sábado, das 9h às 18h”. Um aviso abaixo informa: “Às terças, a sala permanece fechada para manutenção”. A publicação não apresenta exceção por semana, nem explica se o segundo aviso se refere a uma sala diferente.\nPágina autoral do centro cultural, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-20-Q04",
       "lessonId": "POR-20",
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Coerência, progressão temática e relações entre ideias?",
+      "stem": "Qual continuação preserva a continuidade temática e acrescenta informação ao relato?",
       "options": [
         {
           "id": "A",
-          "text": "Muitos conectores garantem coerência."
+          "text": "A agenda da reunião aberta e a divisão das tarefas entre os moradores.",
+          "targetsError": "interpretation",
+          "rationale": "A reportagem cita a reunião, mas não a apresenta como continuação da medição de consumo."
         },
         {
           "id": "B",
-          "text": "Coerência é não cometer erro gramatical."
+          "text": "Os registros das quatro semanas e a avaliação do efeito do reservatório no consumo."
         },
         {
           "id": "C",
-          "text": "Todo parágrafo deve repetir a tese."
+          "text": "A rotina de rega dos canteiros antes da instalação do reservatório.",
+          "targetsError": "conceptual",
+          "rationale": "A limitação da mangueira já foi descrita; a continuação anunciada é medir o consumo após a mudança."
         },
         {
           "id": "D",
-          "text": "Qualquer informação verdadeira melhora o texto."
+          "text": "A opinião de moradores sobre o uso das verduras colhidas na horta da rua.",
+          "targetsError": "attention",
+          "rationale": "A matéria não liga receitas ou verduras à avaliação do reservatório."
         },
         {
           "id": "E",
-          "text": "Informações verdadeiras podem ser irrelevantes ao objetivo e prejudicar a progressão."
+          "text": "Uma notícia sobre o fechamento da rua para a feira de livros da cidade.",
+          "targetsError": "prerequisite",
+          "rationale": "O fechamento da rua não se conecta à instalação do reservatório nem ao consumo de água."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Informações verdadeiras podem ser irrelevantes ao objetivo e prejudicar a progressão.",
+      "correctOption": "B",
+      "explanation": "O relato descreve uma dificuldade de irrigação, uma mudança feita pelos moradores e uma medição prevista para quatro semanas. Apresentar os resultados dessa medição desenvolveria o mesmo assunto; repetir o alcance da mangueira não acrescentaria o dado anunciado.",
       "difficulty": "ifsc",
       "cognitiveOperation": "apply",
       "concepts": [
         "POR-20-C04"
       ],
-      "targetedError": "Qualquer informação verdadeira melhora o texto.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Os resultados de consumo completariam a etapa de acompanhamento anunciada.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A reportagem de 4 de junho de 2026 acompanha a horta comunitária da Rua das Acácias. Primeiro, o grupo registrou que a mangueira alcançava apenas dois canteiros; em seguida, moradores instalaram um reservatório perto do portão. A equipe informa que o novo ponto facilita regar as mudas e que a próxima etapa será medir o consumo durante quatro semanas. A publicação também traz o horário da reunião aberta, marcada para a quarta-feira seguinte.\nReportagem autoral de bairro, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-20-Q05",
       "lessonId": "POR-20",
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Coerência, progressão temática e relações entre ideias?",
+      "stem": "Por que a frase sobre as partidas interrompe o desenvolvimento do relato?",
       "options": [
         {
           "id": "A",
-          "text": "Coerência é não cometer erro gramatical."
+          "text": "Ela contextualiza a redução da fila ao apresentar outra atividade da escola.",
+          "targetsError": "interpretation",
+          "rationale": "As partidas não explicam a fila nem o efeito da troca da torneira."
         },
         {
           "id": "B",
-          "text": "Conhecimento de mundo participa da coerência, mas não autoriza ignorar o que o texto estabelece."
+          "text": "Ela esclarece que as medições do fluxo foram feitas durante os dias das partidas.",
+          "targetsError": "conceptual",
+          "rationale": "O texto não relaciona o calendário das partidas ao período das medições."
         },
         {
           "id": "C",
-          "text": "Todo parágrafo deve repetir a tese."
+          "text": "Ela associa a equipe que cuidou do bebedouro ao grupo do clube de xadrez.",
+          "targetsError": "attention",
+          "rationale": "O relato não atribui a troca da torneira e a organização do clube ao mesmo grupo."
         },
         {
           "id": "D",
-          "text": "Qualquer informação verdadeira melhora o texto."
+          "text": "Ela apresenta um dado sobre outro tema sem contribuir para a discussão do bebedouro."
         },
         {
           "id": "E",
-          "text": "Muitos conectores garantem coerência."
+          "text": "Ela antecipa a comunicação à coordenação ao indicar uma atividade ocorrida na semana.",
+          "targetsError": "memory",
+          "rationale": "O pedido final se refere ao fluxo do bebedouro, não à atividade do clube."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Conhecimento de mundo participa da coerência, mas não autoriza ignorar o que o texto estabelece.",
+      "correctOption": "D",
+      "explanation": "A maior parte do relato acompanha a troca da torneira, o fluxo e o tamanho da fila. O número de partidas pode ser verdadeiro dentro do cenário, mas não ajuda a explicar esses acontecimentos. A frase final recupera o tema do bebedouro.",
       "difficulty": "applied",
       "cognitiveOperation": "evaluate",
       "concepts": [
         "POR-20-C05"
       ],
-      "targetedError": "Muitos conectores garantem coerência.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O dado sobre partidas não se relaciona com a questão do bebedouro.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Em 29 de julho de 2026, uma aluna escreveu sobre o bebedouro do bloco B. Ela relata que a torneira foi substituída na segunda-feira, que a equipe mediu o fluxo durante três dias e que a fila diminuiu no intervalo. Entre esses dados, o texto acrescenta: “O clube de xadrez realizou doze partidas na mesma semana”. A conclusão volta ao bebedouro e pede que estudantes avisem a coordenação se o fluxo voltar a falhar.\nRelato autoral para o mural escolar, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-20-Q06",
       "lessonId": "POR-20",
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Coerência, progressão temática e relações entre ideias, qual análise está correta?",
+      "stem": "O que impede que “Portanto” produza uma conclusão compatível com os dados?",
       "options": [
         {
           "id": "A",
-          "text": "Todo parágrafo deve repetir a tese."
+          "text": "A conclusão entra em conflito com o registro inicial de que a escola recebeu 24 mudas."
         },
         {
           "id": "B",
-          "text": "Qualquer informação verdadeira melhora o texto."
+          "text": "A soma das mudas plantadas e reservadas não corresponde ao total entregue.",
+          "targetsError": "attention",
+          "rationale": "A soma de 18 e seis coincide com as 24 mudas entregues, reforçando o conflito da conclusão."
         },
         {
           "id": "C",
-          "text": "Muitos conectores garantem coerência."
+          "text": "A ata não esclarece se as mudas destinadas aos vasos chegaram a ser plantadas.",
+          "targetsError": "conceptual",
+          "rationale": "A destinação aos vasos não altera o registro explícito da entrega à escola."
         },
         {
           "id": "D",
-          "text": "Conectores ajudam a explicitar relações, porém não consertam ideias logicamente incompatíveis."
+          "text": "A reserva para os vasos é apresentada antes da indicação do local de plantio.",
+          "targetsError": "procedural",
+          "rationale": "A ordem das informações não impede a conclusão; o problema é a negação do dado inicial."
         },
         {
           "id": "E",
-          "text": "Coerência é não cometer erro gramatical."
+          "text": "O registro não informa quando as mudas serão regadas depois do plantio.",
+          "targetsError": "prerequisite",
+          "rationale": "A rega futura não muda a contagem nem a informação sobre a entrega."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Conectores ajudam a explicitar relações, porém não consertam ideias logicamente incompatíveis.",
+      "correctOption": "A",
+      "explanation": "A ata informa que as 24 mudas foram entregues e depois distribui a quantidade entre o muro e os vasos. A conclusão nega a entrega sem apresentar qualquer revisão ou devolução, então o conector não torna as duas afirmações compatíveis.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze",
       "concepts": [
         "POR-20-C06"
       ],
-      "targetedError": "Coerência é não cometer erro gramatical.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A conclusão contradiz a entrega de mudas registrada no início.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A ata da associação, escrita em 10 de agosto de 2026, registra que 24 mudas foram entregues à escola para a praça. O grupo plantou 18 perto do muro e reservou seis para os vasos da entrada. A última frase diz: “Portanto, nenhuma muda foi entregue à escola”. A ata não informa que o material foi devolvido nem apresenta mudança posterior na contagem.\nAta autoral da associação, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-20-Q07",
       "lessonId": "POR-20",
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Muitos conectores garantem coerência.”. Qual é a melhor correção?",
+      "stem": "Que correção responde melhor à afirmação de que muitos conectores garantem a coerência?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "É preciso rever a afirmação sobre a entrada no arquivo, pois ela contradiz o percurso descrito."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Convém escolher conectores que indiquem a sequência entre as três salas visitadas.",
+          "targetsError": "procedural",
+          "rationale": "A sequência já está indicada; variar conectores não corrige a afirmação incompatível sobre a entrada."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "A sequência pode ser mantida se a frase final esclarecer que o grupo não entrará no acervo.",
+          "targetsError": "interpretation",
+          "rationale": "A questão não é esclarecer o acervo, mas corrigir a afirmação de que ninguém entrará no arquivo."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "A sequência pode ser mantida se a revisão escolher conectores que marquem a ordem das etapas.",
+          "targetsError": "conceptual",
+          "rationale": "A ordem entre as salas não resolve a afirmação contraditória sobre ninguém entrar no arquivo."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "É necessário conferir se cada conector expressa a relação pretendida entre as etapas.",
+          "targetsError": "attention",
+          "rationale": "A escolha de conectores variados não altera o conflito entre as duas afirmações finais."
         }
       ],
       "correctOption": "A",
-      "explanation": "Coerência é construção de unidade de sentido compatível entre partes do texto e contexto.",
+      "explanation": "O texto fornece etapas de visita e depois afirma que ninguém entrará no arquivo, embora a visita comece nele. A variedade de conectores parece uma revisão formal, mas a contradição continua e precisa ser corrigida no conteúdo.",
       "difficulty": "applied",
       "cognitiveOperation": "diagnose_error",
       "concepts": [
         "POR-20-C01"
       ],
-      "targetedError": "Muitos conectores garantem coerência.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A revisão precisa compatibilizar as ideias antes de escolher conectores.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Em 22 de setembro de 2026, uma equipe divulgou um percurso de visita ao arquivo municipal. O texto informa que o grupo começará pela sala de mapas, seguirá para o acervo de jornais e terminará no espaço de conservação. Um estudante acrescentou conectores a cada frase: “Além disso”, “Por outro lado” e “Portanto”. Mesmo assim, a versão final afirma que a visita começa no arquivo e que nenhum participante entrará nele.\nNota autoral de revisão, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-20-Q08",
       "lessonId": "POR-20",
       "type": "MCQ",
-      "stimulus": "Um texto defende transporte coletivo, passa a explicar uma receita sem relação com o tema e retorna à mobilidade.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Qual análise identifica melhor o efeito do trecho sobre o lanche?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Ele situa o encontro em que trabalhadores discutiram os horários do ônibus.",
+          "targetsError": "interpretation",
+          "rationale": "A receita não situa os trabalhadores nem explica os horários do transporte."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "Ele explica como as assinaturas foram reunidas durante a preparação da reunião.",
+          "targetsError": "attention",
+          "rationale": "O texto não informa que as assinaturas foram recolhidas enquanto preparavam o lanche."
         },
         {
           "id": "C",
-          "text": "A receita pode ser coerente por si, mas é irrelevante no encadeamento e rompe a progressão temática."
+          "text": "Ele contrasta a chegada dos trabalhadores com a data prevista para protocolar o pedido.",
+          "targetsError": "conceptual",
+          "rationale": "A receita não cria uma oposição entre o horário relatado e o protocolo futuro."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "Ele acrescenta uma informação sobre a reunião em que a associação organizou a campanha.",
+          "targetsError": "procedural",
+          "rationale": "O lanche integra a reunião, mas não acrescenta informação à reivindicação sobre o ônibus."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "Ele desvia o foco da reivindicação sobre o transporte para um detalhe da reunião."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A receita pode ser coerente por si, mas é irrelevante no encadeamento e rompe a progressão temática.",
+      "correctOption": "E",
+      "explanation": "Os relatos de trabalhadores, as assinaturas e o protocolo desenvolvem a reivindicação sobre o horário do ônibus. A receita da reunião pode ser uma informação real, mas não explica essa reivindicação; a leitura do cardápio como parte do pedido não encontra apoio no texto.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-20-C01",
         "POR-20-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A receita não contribui para o tema do horário do ônibus.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A notícia de 2 de outubro de 2026 acompanha a campanha para ampliar o horário do ônibus entre os bairros Alto e Centro. O primeiro parágrafo apresenta relatos de trabalhadores que chegam depois das 22 horas; o seguinte informa que a associação reuniu 83 assinaturas. Um trecho curto, entre esses dados, descreve a receita escolhida para o lanche da reunião. No encerramento, o texto registra que o pedido será protocolado na semana seguinte.\nNotícia autoral da associação, Equipe Estudisc, 2026."
     }
   ]
 }

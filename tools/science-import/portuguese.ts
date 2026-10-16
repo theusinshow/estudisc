@@ -16,7 +16,7 @@ const optionError = z.enum(["conceptual", "procedural", "calculation", "interpre
 const sourceOptionSchema = z.object({ id: z.enum(["A", "B", "C", "D", "E"]), text, targetsError: optionError.optional(), rationale: text.optional() }).strict();
 const sourceQuestionSchema = z.object({ id: text, lessonId: text, version: z.number().int().positive().optional(), type: z.literal("MCQ"), stimulus: text.optional(), stem: text, options: z.array(sourceOptionSchema).length(5), correctOption: z.enum(["A", "B", "C", "D", "E"]), explanation: text, difficulty: z.enum(["foundation", "direct", "applied", "ifsc"]), cognitiveOperation: z.enum(["recognize", "understand", "discriminate", "analyze", "apply", "evaluate", "diagnose_error", "analyze_context"]), concepts: z.array(text).min(1), targetedError: text, provenance: z.literal("VECTA_ORIGINAL") }).strict();
 const authoredQuestionsSchema = z.object({ lessonId: text, count: z.literal(8), questions: z.array(sourceQuestionSchema).length(8) }).strict();
-const stimulusRegistrySchema = z.object({ version: z.literal(1), stimuli: z.array(z.object({ id: text, lessonId: text, questionId: text, license: z.literal("autoral-estudisc"), text }).strict()).length(24) }).strict();
+const stimulusRegistrySchema = z.object({ version: z.literal(1), stimuli: z.array(z.object({ id: text, lessonId: text, questionId: text, license: z.literal("autoral-estudisc"), text }).strict()).min(1).max(400) }).strict();
 const blockSchema = z.discriminatedUnion("type", [
   z.object({ type: z.literal("HOOK"), title: text, content: text }).strict(),
   z.object({ type: z.literal("LEARNING_GOALS"), items: z.array(text).min(1) }).strict(),
@@ -101,7 +101,8 @@ export function loadPortugueseInputs(root: string) {
     return { lessonId, sourceHash: sha256(bytes), authorHash: sha256(authorBytes), pack, original, authored };
   });
   const inputs: EditorialInputs = { sourceRoot, packs: originals, library: sourceLibrarySchema.parse(readJson(resolve(sourceRoot, "PORTUGUESE-SOURCE-LIBRARY.json"))), conceptMap: conceptMapSchema.parse(readJson(resolve(root, PORTUGUESE_MAP))) };
-  assert.equal(stimuli.length, 24, "Expected exactly 24 hand-authored stimuli");
+  // Every rewritten (version 2) Question carries exactly one registered hand-authored stimulus.
+  assert.equal(stimuli.length, originals.flatMap(row => row.original.questions).filter(question => question.version === 2).length, "Expected one hand-authored stimulus per rewritten Question");
   return { inputs, originals, concepts, stimuli };
 }
 export function buildPortuguesePack(root: string, lessonIds: string[], snapshotVersion: number) {

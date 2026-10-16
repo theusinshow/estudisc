@@ -5,300 +5,379 @@
     {
       "id": "POR-07-Q01",
       "lessonId": "POR-07",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Classes de palavras, flexões e função no texto em uso real da língua?",
+      "stem": "Como as palavras destacadas funcionam nos dois trechos?",
       "options": [
         {
           "id": "A",
-          "text": "Adjetivo é toda palavra depois de substantivo."
+          "text": "“Ensaio” nomeia o horário, e “ensaiaram” caracteriza o auditório preparado.",
+          "targetsError": "conceptual",
+          "rationale": "“Ensaio” não indica horário; a hora aparece em “às 18h”. “Ensaiaram” expressa uma ação dos estudantes."
         },
         {
           "id": "B",
-          "text": "Pronomes só substituem nomes de pessoas."
+          "text": "“Ensaio” apresenta a atividade marcada, e “ensaiaram” indica quando será a apresentação.",
+          "targetsError": "interpretation",
+          "rationale": "A apresentação está marcada para sábado; “ensaiaram” relata o que os estudantes fizeram depois da aula."
         },
         {
           "id": "C",
-          "text": "Conjunções não interferem no sentido."
+          "text": "“Ensaio” nomeia a atividade, e “ensaiaram” expressa uma ação feita pelos estudantes."
         },
         {
           "id": "D",
-          "text": "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto."
+          "text": "“Ensaio” retoma a professora no bilhete, e “ensaiaram” retoma a apresentação no relato.",
+          "targetsError": "conceptual",
+          "rationale": "As formas não retomam referentes: uma nomeia a atividade, e a outra expressa uma ação."
         },
         {
           "id": "E",
-          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+          "text": "“Ensaio” nomeia a atividade, e “ensaiaram” indica o local onde ela ocorreu.",
+          "targetsError": "conceptual",
+          "rationale": "“No auditório” informa o local; “ensaiaram” é a ação feita pelos estudantes."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto.",
-      "difficulty": "foundation",
-      "cognitiveOperation": "recognize",
+      "correctOption": "C",
+      "explanation": "No bilhete, “ensaio” nomeia a atividade marcada para quinta-feira; no relato, “ensaiaram” é a ação realizada pelos estudantes. O auditório e o sábado aparecem como informações de lugar e data, não como função dessas duas formas.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-07-C01"
       ],
-      "targetedError": "Uma palavra pertence à mesma classe em qualquer contexto.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Classificar a forma nominal e a forma verbal como se cumprissem a mesma função sintática.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "O grupo de teatro anunciou um ensaio aberto para as famílias na quinta-feira. No bilhete, a professora escreveu que o ensaio começaria às 18h; no relato enviado ao jornal escolar, contou que os estudantes ensaiaram no auditório depois da aula. Uma aluna marcou as duas formas verbais e nominais com cores diferentes, mas outro colega disse que “ensaio” e “ensaiaram” faziam o mesmo trabalho na frase. O texto também informa que a apresentação ocorrerá no sábado e que o público poderá entrar pelo portão lateral."
     },
     {
       "id": "POR-07-Q02",
       "lessonId": "POR-07",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Classes de palavras, flexões e função no texto, qual princípio deve orientar a análise?",
+      "stem": "Qual leitura distingue a característica indicada por “estreitos” da informação em “de manjericão”?",
       "options": [
         {
           "id": "A",
-          "text": "Substantivos nomeiam entidades/conceitos/eventos; adjetivos atribuem características ou relações a substantivos."
+          "text": "“Estreitos” informa uma característica dos canteiros, e “de manjericão” identifica a variedade de tempero plantada.",
+          "targetsError": "conceptual",
+          "rationale": "A largura é uma característica do espaço; a expressão com “de” especifica o que cresce nele."
         },
         {
           "id": "B",
-          "text": "Pronomes só substituem nomes de pessoas."
+          "text": "“Estreitos” atribui uma característica a “canteiros”, e a expressão “de manjericão” informa o que cresce nos menores."
         },
         {
           "id": "C",
-          "text": "Conjunções não interferem no sentido."
+          "text": "“Estreitos” caracteriza as plantas, enquanto “canteiros” nomeia os temperos cultivados.",
+          "targetsError": "conceptual",
+          "rationale": "O mapa associa manjericão aos canteiros menores; “canteiros” nomeia o espaço e “estreitos” sua largura."
         },
         {
           "id": "D",
-          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+          "text": "“Estreitos” indica o tamanho dos canteiros, e “de manjericão” informa quando ocorreu o plantio.",
+          "targetsError": "conceptual",
+          "rationale": "A expressão identifica o cultivo, não o momento; o texto não informa quando o manjericão foi semeado."
         },
         {
           "id": "E",
-          "text": "Adjetivo é toda palavra depois de substantivo."
+          "text": "“Estreitos” descreve a largura dos canteiros, e “de manjericão” indica a composição do solo.",
+          "targetsError": "conceptual",
+          "rationale": "A expressão se refere ao que cresce nos menores, conforme o mapa, e não ao material do solo."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Substantivos nomeiam entidades/conceitos/eventos; adjetivos atribuem características ou relações a substantivos.",
+      "correctOption": "B",
+      "explanation": "“Estreitos” caracteriza os canteiros, e “de manjericão” especifica o que há nos menores. A alternativa que troca o papel de “canteiros” e “estreitos” confunde o espaço nomeado com a característica atribuída a ele.",
       "difficulty": "direct",
       "cognitiveOperation": "understand",
       "concepts": [
         "POR-07-C02"
       ],
-      "targetedError": "Adjetivo é toda palavra depois de substantivo.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tratar o adjetivo que caracteriza os canteiros como se nomeasse a planta ou uma ação.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Na placa da horta, a turma escreveu “canteiros estreitos” ao lado de uma fotografia das fileiras recém-plantadas. Em outra versão, alguém sugeriu “canteiros estreitos de manjericão”, porque o grupo também havia semeado temperos naquele espaço. A equipe conferiu o mapa da horta: havia alface nos canteiros maiores e manjericão nos menores. A professora pediu que os estudantes observassem quais palavras davam características ao nome “canteiros” e se o texto permitia identificar o tipo de planta em cada fileira."
     },
     {
       "id": "POR-07-Q03",
       "lessonId": "POR-07",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Classes de palavras, flexões e função no texto?",
+      "stem": "Qual referente é retomado por “ela” nesse trecho?",
       "options": [
         {
           "id": "A",
-          "text": "Conjunções não interferem no sentido."
+          "text": "A leitora que perguntou sobre o pronome e acompanhou a atividade no pátio.",
+          "targetsError": "conceptual",
+          "rationale": "A leitora aparece no fim como quem faz a pergunta; a ação de deixar o volume é atribuída a Sônia."
         },
         {
           "id": "B",
-          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+          "text": "A iniciativa de leitura itinerante, que será repetida na sexta-feira se o tempo permitir.",
+          "targetsError": "attention",
+          "rationale": "A iniciativa é mencionada como atividade; quem deixou o volume perto do banco foi Sônia."
         },
         {
           "id": "C",
-          "text": "Pronomes podem retomar, antecipar ou apontar referentes e são importantes para a coesão."
+          "text": "A estudante que escolheu um título, mencionada na explicação sobre o uso dos livros.",
+          "targetsError": "conceptual",
+          "rationale": "O trecho diz que os estudantes escolheriam um título, mas atribui a ação de deixar o volume à professora."
         },
         {
           "id": "D",
-          "text": "Adjetivo é toda palavra depois de substantivo."
+          "text": "A professora Sônia, que levou e deixou o volume perto do banco."
         },
         {
           "id": "E",
-          "text": "Pronomes só substituem nomes de pessoas."
+          "text": "A leitora que perguntou sobre o pronome, personagem que deixou os livros no pátio.",
+          "targetsError": "interpretation",
+          "rationale": "A leitora faz a pergunta no fim; a ação de deixar o volume é atribuída antes a Sônia."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Pronomes podem retomar, antecipar ou apontar referentes e são importantes para a coesão.",
-      "difficulty": "applied",
-      "cognitiveOperation": "discriminate",
+      "correctOption": "D",
+      "explanation": "A primeira frase apresenta a professora Sônia como agente que levou o volume; na segunda, “ela” retoma essa pessoa, que o deixou perto do banco. O volume é o objeto da ação e tem gênero gramatical masculino.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze",
       "concepts": [
         "POR-07-C03"
       ],
-      "targetedError": "Pronomes só substituem nomes de pessoas.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Associar o pronome à caixa mencionada no mesmo período, embora ela seja o objeto deixado.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "O jornal da escola publicou uma nota sobre a atividade de leitura itinerante. Primeiro, informou que a professora Sônia levou um volume de livros ao pátio; depois, explicou que ela deixou o volume perto do banco para que os estudantes pudessem escolher um título. A fotografia mostra Sônia ao lado dos livros, e a legenda identifica o local como pátio coberto. No fim, o texto diz que a iniciativa será repetida na sexta-feira se houver tempo seco. Uma leitora perguntou a quem o pronome “ela” se referia na segunda frase."
     },
     {
       "id": "POR-07-Q04",
       "lessonId": "POR-07",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Classes de palavras, flexões e função no texto?",
+      "stem": "Qual forma verbal apresenta a etapa prevista para depois do mutirão?",
       "options": [
         {
           "id": "A",
-          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+          "text": "“Separaram”, pois a forma situa no passado a etapa de organização das ferramentas.",
+          "targetsError": "attention",
+          "rationale": "A separação ocorreu na sexta-feira; a etapa posterior é indicada por “divulgará”."
         },
         {
           "id": "B",
-          "text": "Adjetivo é toda palavra depois de substantivo."
+          "text": "“Confere”, pois apresenta no presente a tarefa da equipe neste sábado.",
+          "targetsError": "conceptual",
+          "rationale": "A forma descreve a tarefa em andamento no sábado, não a divulgação planejada para segunda."
         },
         {
           "id": "C",
-          "text": "Pronomes só substituem nomes de pessoas."
+          "text": "“Aparecem”, pois informa o que está registrado no quadro de tarefas.",
+          "targetsError": "interpretation",
+          "rationale": "“Aparecem” descreve os nomes no quadro; o resultado ainda será divulgado."
         },
         {
           "id": "D",
-          "text": "Conjunções não interferem no sentido."
+          "text": "“Pediu”, pois relata a revisão feita antes de a contagem das mudas terminar.",
+          "targetsError": "attention",
+          "rationale": "O pedido de correção já ocorreu; a divulgação está planejada para depois da contagem."
         },
         {
           "id": "E",
-          "text": "Verbos flexionam-se em pessoa, número, tempo e modo e organizam temporalidade/modalidade."
+          "text": "“Divulgará”, pois situa a publicação do resultado na segunda-feira."
         }
       ],
       "correctOption": "E",
-      "explanation": "Verbos flexionam-se em pessoa, número, tempo e modo e organizam temporalidade/modalidade.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "apply",
+      "explanation": "“Divulgará” se refere à publicação marcada para segunda-feira, depois das tarefas de sexta e sábado. A forma no passado da primeira versão foi corrigida porque o resultado ainda não estava pronto.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze",
       "concepts": [
         "POR-07-C04"
       ],
-      "targetedError": "Conjunções não interferem no sentido.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir a ação futura prevista para segunda com uma tarefa concluída antes do mutirão.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "O boletim da associação registrou três etapas do mutirão: os voluntários separaram ferramentas na sexta-feira, a equipe confere os canteiros neste sábado e a coordenação divulgará o resultado na segunda. A primeira versão do texto dizia “a coordenação divulgou”, mas a responsável pediu uma correção porque o relatório será publicado somente depois da contagem das mudas. No quadro de tarefas, os nomes dos responsáveis aparecem ao lado de cada verbo. A revisão precisa manter a sequência entre o que já aconteceu, o que está em andamento e o que ainda está planejado."
     },
     {
       "id": "POR-07-Q05",
       "lessonId": "POR-07",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Classes de palavras, flexões e função no texto?",
+      "stem": "Que efeito tem “bem” na expressão “bem cedo”?",
       "options": [
         {
           "id": "A",
-          "text": "Adjetivo é toda palavra depois de substantivo."
+          "text": "Intensifica a indicação de que a equipe chegou cedo."
         },
         {
           "id": "B",
-          "text": "Advérbios e locuções adverbiais modificam sobretudo verbos, adjetivos, outros advérbios ou o enunciado."
+          "text": "Acrescenta à palavra “cedo” o sentido de que os estudantes chegaram bem-dispostos.",
+          "targetsError": "conceptual",
+          "rationale": "O contexto registra o horário de chegada; “bem” modifica “cedo”, não o estado dos estudantes."
         },
         {
           "id": "C",
-          "text": "Pronomes só substituem nomes de pessoas."
+          "text": "Indica que a chegada ocorreu pouco antes da tentativa marcada para a tarde.",
+          "targetsError": "conceptual",
+          "rationale": "“Bem” intensifica “cedo”; a nova tentativa é uma informação separada sobre a tarde."
         },
         {
           "id": "D",
-          "text": "Conjunções não interferem no sentido."
+          "text": "Refere-se à qualidade do trabalho de organização feito antes da chegada da professora.",
+          "targetsError": "interpretation",
+          "rationale": "A organização é mencionada depois; na expressão destacada, “bem” reforça o horário."
         },
         {
           "id": "E",
-          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+          "text": "Atribui ao primeiro comando do carrinho a qualidade de ter sido executado corretamente.",
+          "targetsError": "conceptual",
+          "rationale": "O carrinho respondeu ao comando em outra frase; “bem” acompanha “cedo”."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Advérbios e locuções adverbiais modificam sobretudo verbos, adjetivos, outros advérbios ou o enunciado.",
-      "difficulty": "applied",
-      "cognitiveOperation": "evaluate",
+      "correctOption": "A",
+      "explanation": "Em “bem cedo”, “bem” reforça a ideia expressa por “cedo”, situando a chegada antes do horário de abertura. A leitura sobre saúde não encontra apoio na frase, que informa o horário e a organização do laboratório.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
       "concepts": [
         "POR-07-C05"
       ],
-      "targetedError": "Uma palavra pertence à mesma classe em qualquer contexto.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler o modificador de horário como uma característica física dos estudantes.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "A equipe de robótica chegou bem cedo ao laboratório para testar um carrinho. O aviso da escola dizia que o portão abriria às oito, mas os estudantes apareceram às sete e meia e organizaram as ferramentas antes da chegada da professora. Na ficha de acompanhamento, o coordenador escreveu “bem cedo” para registrar o horário do grupo. Outra linha anota que o carrinho respondeu rapidamente ao primeiro comando, embora tenha parado perto da faixa azul. A turma guardou o equipamento e deixou uma nova tentativa marcada para a tarde."
     },
     {
       "id": "POR-07-Q06",
       "lessonId": "POR-07",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Classes de palavras, flexões e função no texto, qual análise está correta?",
+      "stem": "Que relação a palavra “mas” estabelece na primeira frase?",
       "options": [
         {
           "id": "A",
-          "text": "Pronomes só substituem nomes de pessoas."
+          "text": "Explica por que a equipe preparou a sala antes de a chuva começar.",
+          "targetsError": "conceptual",
+          "rationale": "A frase não relaciona a chuva à preparação da sala; “mas” introduz o obstáculo ao acesso."
         },
         {
           "id": "B",
-          "text": "Conjunções não interferem no sentido."
+          "text": "Acrescenta uma informação sobre a chuva, mantendo a mesma expectativa criada pela sala pronta.",
+          "targetsError": "conceptual",
+          "rationale": "A passagem alagada contrasta com a sala já preparada, em vez de apenas acrescentar uma informação."
         },
         {
           "id": "C",
-          "text": "Uma palavra pertence à mesma classe em qualquer contexto."
+          "text": "Contrasta a sala preparada com o problema de acesso provocado pela chuva."
         },
         {
           "id": "D",
-          "text": "Conjunções e outros conectores estabelecem relações entre termos, orações e partes do texto."
+          "text": "Indica que o alagamento levou a coordenação a cancelar o encontro.",
+          "targetsError": "interpretation",
+          "rationale": "A equipe abriu outra entrada e manteve a conversa às 16h; não houve cancelamento."
         },
         {
           "id": "E",
-          "text": "Adjetivo é toda palavra depois de substantivo."
+          "text": "Conclui que os serviços da biblioteca seriam interrompidos por causa do encontro.",
+          "targetsError": "attention",
+          "rationale": "O aviso informa que os serviços normais seriam mantidos."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Conjunções e outros conectores estabelecem relações entre termos, orações e partes do texto.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "analyze",
+      "correctOption": "C",
+      "explanation": "A sala pronta cria uma expectativa favorável, e “mas” introduz o obstáculo inesperado no caminho de entrada. O encontro não foi cancelado: o texto indica outro portão e mantém o horário da conversa.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-07-C06"
       ],
-      "targetedError": "Adjetivo é toda palavra depois de substantivo.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Interpretar o conector de contraste como anúncio de cancelamento ou causa.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "No aviso do clube de leitura, a coordenação explicou que a sala ficou pronta para o encontro, mas a chuva alagou a passagem até a entrada principal. A equipe abriu o portão lateral e colocou placas para orientar os visitantes. Um parágrafo informa que a conversa sobre o romance começará às 16h; outro lembra que a biblioteca mantém seus serviços normais durante a atividade. A comissão precisou organizar as cadeiras em um espaço menor, e o aviso termina agradecendo a quem confirmou presença apesar da mudança de acesso."
     },
     {
       "id": "POR-07-Q07",
       "lessonId": "POR-07",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Uma palavra pertence à mesma classe em qualquer contexto.”. Qual é a melhor correção?",
+      "stem": "Como “jantar” funciona nas duas frases?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "Na primeira, “jantar” é uma ação futura; na segunda, nomeia a refeição servida às 19h.",
+          "targetsError": "conceptual",
+          "rationale": "No cardápio, “jantar” nomeia a refeição; no recado, integra a ação que o grupo fará."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Na primeira, nomeia a refeição; na segunda, integra a ação que o grupo fará."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "Na primeira, “jantar” nomeia uma refeição; na segunda, liga o grupo à reunião.",
+          "targetsError": "conceptual",
+          "rationale": "A segunda frase fala da ação de jantar após a reunião; a palavra não funciona como conector."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "Na primeira, indica uma refeição prevista; na segunda, descreve o que será servido no cardápio.",
+          "targetsError": "interpretation",
+          "rationale": "A segunda frase fala do que o grupo fará, enquanto os itens servidos aparecem em outra linha."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Nas duas, nomeia a refeição que a equipe servirá às famílias.",
+          "targetsError": "conceptual",
+          "rationale": "Na segunda frase, “jantar” integra a ação do grupo, não nomeia o serviço do cardápio."
         }
       ],
-      "correctOption": "A",
-      "explanation": "A classe de uma palavra depende de seu funcionamento no enunciado; algumas formas mudam de classe conforme o contexto.",
+      "correctOption": "B",
+      "explanation": "No cardápio, “jantar” nomeia a refeição marcada para as 19h; no recado, integra o verbo da ação que o grupo fará depois da reunião. A forma escrita se mantém, mas o contexto mostra funções diferentes.",
       "difficulty": "applied",
-      "cognitiveOperation": "diagnose_error",
+      "cognitiveOperation": "analyze",
       "concepts": [
-        "POR-07-C01"
+        "POR-07-C01",
+        "POR-07-C04"
       ],
-      "targetedError": "Uma palavra pertence à mesma classe em qualquer contexto.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Supor que a mesma forma escrita mantém a mesma classe e função nos dois enunciados.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "No cardápio da cantina, uma linha dizia “O jantar será servido às 19h”. No recado enviado às famílias, a mesma equipe escreveu “Vamos jantar depois da reunião”. A cozinheira leu as duas frases durante o planejamento e notou que o horário do cardápio descrevia uma refeição; no recado, a palavra aparecia ligada ao que o grupo faria. O restante do cardápio listava sopa, pão e fruta, enquanto o aviso explicava que a reunião terminaria antes do serviço. A equipe manteve as duas frases porque atendiam a objetivos diferentes."
     },
     {
       "id": "POR-07-Q08",
       "lessonId": "POR-07",
+      "version": 2,
       "type": "MCQ",
-      "stimulus": "Em “O jantar está pronto”, “jantar” funciona como substantivo. Em “Vamos jantar cedo”, funciona como verbo.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Que relação “porque” estabelece na primeira frase?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Apresenta a falta de energia como resultado do adiamento da entrega.",
+          "targetsError": "conceptual",
+          "rationale": "A frase apresenta a falta de energia como motivo do adiamento, não como consequência."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "Explica por que as bandejas foram levadas para a sala de ciências.",
+          "targetsError": "attention",
+          "rationale": "A transferência é explicada depois por “por isso”; “porque” liga a energia ao adiamento."
         },
         {
           "id": "C",
-          "text": "A forma é a mesma, mas função e comportamento no enunciado revelam classes diferentes."
+          "text": "Contrasta o adiamento da entrega com a previsão de reabrir os pedidos.",
+          "targetsError": "conceptual",
+          "rationale": "A previsão aparece em outra etapa; “porque” explica o adiamento pela falta de energia."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "Explica que a entrega foi adiada em razão da falta de energia na estufa."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "Indica a finalidade do pedido para que os estudantes consultem o mural.",
+          "targetsError": "interpretation",
+          "rationale": "O pedido aparece no fim do texto; a oração com “porque” explica o adiamento."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A forma é a mesma, mas função e comportamento no enunciado revelam classes diferentes.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "analyze_context",
+      "correctOption": "D",
+      "explanation": "“Porque” introduz a causa informada para o adiamento: a estufa ficou sem energia. A temperatura e a transferência das bandejas são fatos apresentados depois, sem substituir a explicação ligada à entrega.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze",
       "concepts": [
-        "POR-07-C01",
-        "POR-07-C02"
+        "POR-07-C06"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler o conector causal como contraste ou como informação de outra parte do aviso.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "O informativo do viveiro escolar explica a falta de mudas de manjericão. “A equipe adiou a entrega porque a estufa ficou sem energia durante a noite”, registra o primeiro parágrafo. Mais abaixo, o texto acrescenta: “A temperatura subiu; por isso, as bandejas foram levadas para a sala de ciências”. A equipe prevê reabrir os pedidos na semana seguinte, depois de conferir as plantas. O desenho mostra as bandejas junto à janela da sala, e a legenda identifica as mudas que foram transferidas. A coordenação pede que os estudantes consultem o mural antes de buscar novos exemplares."
     }
   ]
 }

@@ -154,300 +154,314 @@
     {
       "id": "POR-06-Q01",
       "lessonId": "POR-06",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Fonema, grafema e relações entre fala e escrita em uso real da língua?",
+      "stem": "O que o contraste entre “faca” e “vaca” mostra?",
       "options": [
         {
           "id": "A",
-          "text": "Toda palavra tem o mesmo número de letras e fonemas."
+          "text": "A troca do fonema inicial distingue as palavras, embora a grafia da consoante permaneça igual."
         },
         {
           "id": "B",
-          "text": "Um dígrafo representa dois fonemas."
+          "text": "A oposição entre as palavras está no som final, apesar de as duas terminarem em “a”."
         },
         {
           "id": "C",
-          "text": "Pronúncia regional diferente prova erro de escrita."
+          "text": "A troca do som inicial distingue duas palavras e altera o referente."
         },
         {
           "id": "D",
-          "text": "Fonema é unidade sonora distintiva: trocar um fonema pode produzir outra palavra, como em “faca” e “vaca”."
+          "text": "A troca de “f” por “v” altera a grafia, mas mantém o mesmo referente."
         },
         {
           "id": "E",
-          "text": "Cada letra representa sempre um único som."
+          "text": "A diferença entre as palavras está no número de sílabas, embora ambas tenham duas."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Fonema é unidade sonora distintiva: trocar um fonema pode produzir outra palavra, como em “faca” e “vaca”.",
-      "difficulty": "foundation",
-      "cognitiveOperation": "recognize",
+      "correctOption": "C",
+      "explanation": "A gravação destaca a diferença entre os sons iniciais de “faca” e “vaca”, que identifica palavras distintas. A quantidade de letras e de sílabas é igual nos exemplos; o contraste relevante está no primeiro fonema.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
       "concepts": [
         "POR-06-C01"
       ],
-      "targetedError": "Cada letra representa sempre um único som.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Atribuir a mudança de sentido ao número de letras ou sílabas, não ao som inicial.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Na oficina de teatro, a professora separou duas fotografias para um exercício de leitura. Em uma, havia uma faca sobre a mesa; na outra, uma vaca aparecia perto do portão da fazenda cenográfica. A legenda de cada imagem trazia a palavra correspondente, e os estudantes gravaram as duas frases em voz alta. Ao comparar os áudios, perceberam que as palavras começavam com sons diferentes, embora tivessem o mesmo número de letras. A professora pediu que explicassem por que trocar uma parte sonora alterava o nome do objeto ou animal."
     },
     {
       "id": "POR-06-Q02",
       "lessonId": "POR-06",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Fonema, grafema e relações entre fala e escrita, qual princípio deve orientar a análise?",
+      "stem": "Que contagem corresponde à palavra “ninho” nesse exercício?",
       "options": [
         {
           "id": "A",
-          "text": "Grafema é representação escrita; letras ou combinações de letras podem representar fonemas."
+          "text": "Cinco letras e quatro fonemas, pois nh representa um som nessa palavra."
         },
         {
           "id": "B",
-          "text": "Um dígrafo representa dois fonemas."
+          "text": "Quatro letras e cinco fonemas, porque a pronúncia acrescenta um som ao desenho."
         },
         {
           "id": "C",
-          "text": "Pronúncia regional diferente prova erro de escrita."
+          "text": "O h de “ninho” tem som próprio entre o n e a vogal o."
         },
         {
           "id": "D",
-          "text": "Cada letra representa sempre um único som."
+          "text": "Quatro letras e quatro fonemas, pois o h não aparece na escrita da palavra."
         },
         {
           "id": "E",
-          "text": "Toda palavra tem o mesmo número de letras e fonemas."
+          "text": "Cinco letras e três fonemas, porque as duas sílabas compartilham a vogal i."
         }
       ],
       "correctOption": "A",
-      "explanation": "Grafema é representação escrita; letras ou combinações de letras podem representar fonemas.",
+      "explanation": "A palavra tem cinco letras impressas, mas n e h são pronunciados juntos como um único fonema; os sons vocálicos e o n inicial completam quatro. Contar cada sinal como som independente não corresponde ao que a turma ouviu.",
+      "difficulty": "direct",
+      "cognitiveOperation": "apply",
+      "concepts": [
+        "POR-06-C04"
+      ],
+      "targetedError": "Contar cada letra do dígrafo nh como um fonema separado.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Na ficha de leitura de um ninho desenhado por uma criança, a professora escreveu a palavra “ninho” e pediu que a turma separasse letras e sons. Um estudante contou cinco sinais no papel: n, i, n, h, o. Ao pronunciar a palavra, ele não fez uma pausa entre n e h; o grupo ouviu uma sequência fluida e comparou o registro com palavras como “nada” e “hoje”. A ficha também trazia um desenho de dois filhotes, para que a turma relacionasse a palavra ao objeto retratado."
+    },
+    {
+      "id": "POR-06-Q03",
+      "lessonId": "POR-06",
+      "version": 2,
+      "type": "MCQ",
+      "stem": "Que observação explica o contraste ouvido nos cartões?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A letra c tem som de /s/ nas duas palavras, mas a gravação altera o volume."
+        },
+        {
+          "id": "B",
+          "text": "A letra c representa sons diferentes antes de a e de i nos exemplos."
+        },
+        {
+          "id": "C",
+          "text": "A palavra “cinema” começa com o dígrafo ci, que representa um único fonema."
+        },
+        {
+          "id": "D",
+          "text": "A diferença vem do número de sílabas, pois “casa” tem uma sílaba a mais."
+        },
+        {
+          "id": "E",
+          "text": "A seta do mural muda o valor sonoro da letra que inicia cada espaço."
+        }
+      ],
+      "correctOption": "B",
+      "explanation": "O início de “casa” tem som /k/, enquanto o de “cinema” tem som /s/, apesar da mesma letra c. A quantidade de sílabas varia entre as palavras, mas não explica a diferença ouvida no fonema inicial.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze",
+      "concepts": [
+        "POR-06-C03"
+      ],
+      "targetedError": "Supor que a mesma letra inicial mantém um único som nos dois contextos.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Uma turma montou cartões com os nomes dos espaços da escola. Em um cartão lia-se “casa de leitura”, usado para a sala de convivência; em outro, “cinema”, que aparecia no cartaz de uma sessão estudantil. O grupo gravou os nomes e comparou o primeiro som de cada palavra. Uma aluna observou que a letra inicial era a mesma, mas o áudio não começava com o mesmo som. O mural permaneceu com a grafia convencional nas duas placas e recebeu uma seta para cada espaço."
+    },
+    {
+      "id": "POR-06-Q04",
+      "lessonId": "POR-06",
+      "version": 2,
+      "type": "MCQ",
+      "stem": "Que relação entre escrita e pronúncia aparece em “chuva”?",
+      "options": [
+        {
+          "id": "A",
+          "text": "O h da palavra é pronunciado como uma pausa antes do som de u."
+        },
+        {
+          "id": "B",
+          "text": "As letras c e h indicam duas sílabas, pois ficam no começo da palavra."
+        },
+        {
+          "id": "C",
+          "text": "A letra c representa o som de /k/ e h funciona como vogal muda."
+        },
+        {
+          "id": "D",
+          "text": "Na gravação, o h acrescenta um som entre o c e o u."
+        },
+        {
+          "id": "E",
+          "text": "As duas letras ch representam juntas um fonema no início da palavra."
+        }
+      ],
+      "correctOption": "E",
+      "explanation": "Na palavra “chuva”, ch aparece como duas letras e corresponde a um fonema inicial. O áudio confirma que a sequência não é pronunciada com pausa entre c e h; por isso a contagem não equivale a cinco sons.",
       "difficulty": "direct",
       "cognitiveOperation": "understand",
       "concepts": [
         "POR-06-C02"
       ],
-      "targetedError": "Toda palavra tem o mesmo número de letras e fonemas.",
-      "provenance": "VECTA_ORIGINAL"
-    },
-    {
-      "id": "POR-06-Q03",
-      "lessonId": "POR-06",
-      "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Fonema, grafema e relações entre fala e escrita?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Pronúncia regional diferente prova erro de escrita."
-        },
-        {
-          "id": "B",
-          "text": "Cada letra representa sempre um único som."
-        },
-        {
-          "id": "C",
-          "text": "Uma mesma letra pode representar sons diferentes, e um mesmo fonema pode receber grafias diferentes."
-        },
-        {
-          "id": "D",
-          "text": "Toda palavra tem o mesmo número de letras e fonemas."
-        },
-        {
-          "id": "E",
-          "text": "Um dígrafo representa dois fonemas."
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "Uma mesma letra pode representar sons diferentes, e um mesmo fonema pode receber grafias diferentes.",
-      "difficulty": "applied",
-      "cognitiveOperation": "discriminate",
-      "concepts": [
-        "POR-06-C03"
-      ],
-      "targetedError": "Um dígrafo representa dois fonemas.",
-      "provenance": "VECTA_ORIGINAL"
-    },
-    {
-      "id": "POR-06-Q04",
-      "lessonId": "POR-06",
-      "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Fonema, grafema e relações entre fala e escrita?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Cada letra representa sempre um único som."
-        },
-        {
-          "id": "B",
-          "text": "Toda palavra tem o mesmo número de letras e fonemas."
-        },
-        {
-          "id": "C",
-          "text": "Um dígrafo representa dois fonemas."
-        },
-        {
-          "id": "D",
-          "text": "Pronúncia regional diferente prova erro de escrita."
-        },
-        {
-          "id": "E",
-          "text": "Dígrafos são combinações de duas letras que representam um único fonema em determinados contextos."
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Dígrafos são combinações de duas letras que representam um único fonema em determinados contextos.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "apply",
-      "concepts": [
-        "POR-06-C04"
-      ],
-      "targetedError": "Pronúncia regional diferente prova erro de escrita.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Separar as letras do dígrafo ch em dois sons na palavra registrada.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "No relatório de uma horta escolar, o grupo descreveu a chuva que atingiu os canteiros durante a noite. Na legenda da fotografia, escreveu “A chuva molhou as folhas novas”; em outra linha, a equipe anotou que os estudantes recolheram galhos caídos antes do início da aula. Uma aluna circulou as duas letras do início de “chuva” e perguntou se cada uma correspondia a um som separado. O áudio da leitura mostrava uma sequência contínua, sem pausa entre c e h. A professora pediu que usassem esse exemplo para revisar a legenda."
     },
     {
       "id": "POR-06-Q05",
       "lessonId": "POR-06",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Fonema, grafema e relações entre fala e escrita?",
+      "stem": "O que o par “passo” e “paço” evidencia?",
       "options": [
         {
           "id": "A",
-          "text": "Toda palavra tem o mesmo número de letras e fonemas."
+          "text": "A palavra “paço” tem um som a mais porque o cedilha precisa ser pronunciado."
         },
         {
           "id": "B",
-          "text": "Número de letras e número de fonemas não precisam coincidir."
+          "text": "As duas formas têm o mesmo sentido, já que compartilham o som de /s/."
         },
         {
           "id": "C",
-          "text": "Um dígrafo representa dois fonemas."
+          "text": "A palavra “passo” tem seis letras, porque ss deve ser contado duas vezes."
         },
         {
           "id": "D",
-          "text": "Pronúncia regional diferente prova erro de escrita."
+          "text": "O ss e o ç representam o mesmo fonema /s/ nas palavras do mural."
         },
         {
           "id": "E",
-          "text": "Cada letra representa sempre um único som."
+          "text": "O ç de “paço” substitui duas letras e torna a palavra maior que “passo”."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Número de letras e número de fonemas não precisam coincidir.",
+      "correctOption": "D",
+      "explanation": "Nos dois contextos, o som /s/ aparece escrito com sequências diferentes: ss em “passo” e ç em “paço”. O significado não é o mesmo, pois as frases mostram uma pegada e um edifício, respectivamente.",
       "difficulty": "applied",
-      "cognitiveOperation": "evaluate",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-06-C05"
       ],
-      "targetedError": "Cada letra representa sempre um único som.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tratar grafias distintas do som /s/ como se mudassem a contagem sonora ou apagassem o contexto lexical.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "No mural de vocabulário, a professora colocou dois cartões: “O passo ficou marcado na areia” e “O paço abriu as portas ao público”. Em seguida, mostrou que as palavras tinham cinco letras e ocupavam o mesmo espaço nas fichas, mas se referiam a coisas diferentes. A turma comparou a pronúncia das consoantes destacadas e percebeu que o som /s/ aparecia nas duas formas, embora uma usasse ss e a outra ç. A atividade pedia que os estudantes mantivessem o contexto para não trocar as palavras ao copiar as frases."
     },
     {
       "id": "POR-06-Q06",
       "lessonId": "POR-06",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Fonema, grafema e relações entre fala e escrita, qual análise está correta?",
+      "stem": "Qual conclusão é apoiada pelo relato?",
       "options": [
         {
           "id": "A",
-          "text": "Um dígrafo representa dois fonemas."
+          "text": "A forma escrita acompanha a pronúncia mais frequente entre os seis estudantes."
         },
         {
           "id": "B",
-          "text": "Pronúncia regional diferente prova erro de escrita."
+          "text": "As variações regionais de pronúncia não demonstram, por si, erro na grafia “porta”."
         },
         {
           "id": "C",
-          "text": "Cada letra representa sempre um único som."
+          "text": "A pronúncia breve mostra que o r de “porta” deixou de ser pronunciado nas gravações."
         },
         {
           "id": "D",
-          "text": "Pronúncias regionais diferentes não significam automaticamente erro ortográfico."
+          "text": "A diferença ouvida indica que parte do grupo escreveu “porta” com outra quantidade de letras."
         },
         {
           "id": "E",
-          "text": "Toda palavra tem o mesmo número de letras e fonemas."
+          "text": "A equipe precisa escolher uma pronúncia e alterar o título da peça em cada legenda."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Pronúncias regionais diferentes não significam automaticamente erro ortográfico.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "analyze",
+      "correctOption": "B",
+      "explanation": "O grupo registra a mesma palavra em todas as legendas, embora o r tenha realizações distintas nas gravações. A diferença de pronúncia descrita não altera, sozinha, a grafia convencional nem o título da peça.",
+      "difficulty": "direct",
+      "cognitiveOperation": "evaluate",
       "concepts": [
         "POR-06-C06"
       ],
-      "targetedError": "Toda palavra tem o mesmo número de letras e fonemas.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tratar uma variação regional de pronúncia como evidência suficiente de erro ortográfico.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "No projeto de rádio, seis estudantes gravaram a mesma frase para anunciar a peça “A porta do pátio”. Nas gravações, o r inicial de “porta” soava de modos diferentes: alguns prolongavam o ruído, outros faziam uma vibração breve. Ao revisar as legendas, a equipe escreveu a palavra com a mesma grafia em todas as versões. A orientadora pediu que ninguém alterasse o texto só por causa da pronúncia ouvida; o nome da peça e a palavra registrada continuavam iguais no roteiro. O grupo guardou os áudios para comparar as vozes em outra atividade."
     },
     {
       "id": "POR-06-Q07",
       "lessonId": "POR-06",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Cada letra representa sempre um único som.”. Qual é a melhor correção?",
+      "stem": "O que os exemplos mostram sobre a letra g?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "A letra g tem o mesmo som nas duas palavras, mas os desenhos mudam sua pronúncia."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "“Gelo” começa com j e “galo” com g, apesar da escrita no quadro."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "A letra g representa sons diferentes conforme a vogal que vem depois."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "O g de “galo” forma um dígrafo com a letra a."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "A diferença depende do número de letras, pois “gelo” tem um g a mais."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Fonema é unidade sonora distintiva: trocar um fonema pode produzir outra palavra, como em “faca” e “vaca”.",
-      "difficulty": "applied",
-      "cognitiveOperation": "diagnose_error",
+      "correctOption": "C",
+      "explanation": "O g tem som /ʒ/ em “gelo” e /g/ em “galo”, em função da vogal seguinte. As ilustrações distinguem os referentes, mas não mudam a pronúncia; a comparação relevante está nas duas palavras escritas.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze",
       "concepts": [
-        "POR-06-C01"
+        "POR-06-C03"
       ],
-      "targetedError": "Cada letra representa sempre um único som.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Supor que a letra g mantém o mesmo fonema diante de vogais diferentes.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Durante uma caça-palavras, a equipe encontrou “gelo” no cardápio da cantina e “galo” no texto de uma cantiga. A professora destacou a primeira letra das duas palavras e pediu que os estudantes repetissem os sons iniciais. O grupo notou que o g de “gelo” não soava como o de “galo”, embora a grafia começasse com o mesmo sinal. No quadro, as palavras estavam acompanhadas de pequenas ilustrações: um cubo frio e uma ave no quintal. A turma usou os desenhos para confirmar que eram itens diferentes."
     },
     {
       "id": "POR-06-Q08",
       "lessonId": "POR-06",
+      "version": 2,
       "type": "MCQ",
-      "stimulus": "Em “casa” e “cela”, a letra c não representa o mesmo som. O som inicial de “sapo” também pode aparecer com outras grafias em palavras diferentes.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Que observação linguística a comparação permite fazer?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "A mesma letra x pode corresponder a valores sonoros diferentes em palavras distintas."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "Em “exame”, o x tem som de /ks/, como em “táxi”."
         },
         {
           "id": "C",
-          "text": "A relação som-escrita é sistemática, mas não de um para um; contexto ortográfico importa."
+          "text": "Em “táxi”, o x tem som de /s/, enquanto em “exame” representa /z/."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "O x mantém o mesmo som nas duas palavras, e a diferença ouvida vem das vogais."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "A posição do x no roteiro, junto ao laboratório ou ao transporte, determina seu som."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A relação som-escrita é sistemática, mas não de um para um; contexto ortográfico importa.",
-      "difficulty": "ifsc",
+      "correctOption": "A",
+      "explanation": "A ficha compara o x de “exame”, com som semelhante a z, e o de “táxi”, cuja pronúncia envolve outra sequência. O tema do laboratório ou do transporte não altera o grafema; o valor sonoro varia entre as palavras.",
+      "difficulty": "applied",
       "cognitiveOperation": "analyze_context",
       "concepts": [
-        "POR-06-C01",
         "POR-06-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Pressupor uma correspondência única entre a letra x e um som, sem observar as palavras.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "No roteiro da visita ao laboratório, a turma encontrou duas palavras em uma ficha: “exame”, na descrição de uma análise de água, e “táxi”, em uma nota sobre o transporte dos convidados. O professor leu cada item em voz alta e pediu que os estudantes observassem a letra x. No primeiro caso, ela tinha som parecido com z; no segundo, a leitura trazia uma sequência de sons diferente. A ficha mantinha a grafia das duas palavras e explicava por que cada uma aparecia no roteiro. A turma marcou o x com lápis colorido."
     }
   ],
   "concepts": [

@@ -18,12 +18,11 @@ describe("Portuguese editorial integration", () => {
     expect(() => validateConceptMap(result.inputs.conceptMap, result.concepts.map(row => row.editorialConceptId), new Set(existing.map(row => row.id)))).not.toThrow();
     const revisedLessonIds = new Set(["POR-01", "POR-02", "POR-03"]);
     expect(result.pack.track.modules[0].lessons.every(lesson => lesson.version === (revisedLessonIds.has(lesson.id) ? 3 : 2))).toBe(true);
-    const revisedQuestions = result.pack.questions.filter(question => question.id.startsWith("POR-01-Q") || question.id.startsWith("POR-02-Q") || question.id.startsWith("POR-03-Q"));
-    const revisedQuestionIds = new Set(revisedQuestions.map(question => question.id));
-    expect(revisedQuestions).toHaveLength(24);
-    expect(result.pack.questions.every(question => question.version === (revisedQuestionIds.has(question.id) ? 2 : 1))).toBe(true);
-    expect(revisedQuestions.every(question => question.choices?.filter(choice => !choice.correct && choice.targetsError && choice.rationale).length === 4)).toBe(true);
-    expect(result.pack.sources.filter(source => source.metadata.license === "autoral-estudisc")).toHaveLength(24);
+    // All 192 Questions were rewritten by hand with a registered authored stimulus (2026-10-16).
+    expect(result.pack.questions).toHaveLength(192);
+    expect(result.pack.questions.every(question => question.version === 2)).toBe(true);
+    expect(result.pack.questions.every(question => question.choices?.filter(choice => !choice.correct && choice.targetsError && choice.rationale).length === 4)).toBe(true);
+    expect(result.pack.sources.filter(source => source.metadata.license === "autoral-estudisc")).toHaveLength(192);
     expect(result.pack.track.metadata.portugueseIntegration).toMatchObject({ sourceLessonVersion: 1, humanApprovalRecorded: false, officialMappingVerified: false, estimatedMinutesIsIntegrationDefault: false });
     expect(result.pack.curriculumRequirements).toEqual([]);
     expect(result.pack.conceptPrerequisites).toEqual([]);
