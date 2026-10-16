@@ -5,6 +5,8 @@ import { AppShell } from "@/components/layout/app-shell";
 import { getFeatureFlags } from "@/lib/feature-flags";
 import { assessmentRepository } from "@/features/assessments/api";
 import { AssessmentPanel } from "@/features/assessments/assessment-panel";
+import { AnswerSheetPanel } from "@/features/assessments/answer-sheet-panel";
+import { PastExamResult } from "@/features/assessments/past-exam-result";
 import { assessmentKindLabel, subjectLabel } from "@/features/assessments/labels";
 import { getOwnerId } from "@/features/auth/owner";
 import { summarizeAssessmentConcepts } from "@/features/assessments/result-summary";
@@ -14,7 +16,13 @@ const resultSchema=z.object({correct:z.number(),scored:z.number(),total:z.number
 const outcomeLabel=(outcome:string)=>outcome==="passed"?"Acertou":outcome==="annulled"?"Anulada":"Revisar";
 export default async function AssessmentPage({params}:{params:Promise<{assessmentId:string}>}){
   const {assessmentId}=await params;if(!z.uuid().safeParse(assessmentId).success)notFound();
-  const view=await assessmentRepository().view(await getOwnerId(),assessmentId);if(!view)notFound();
+  const repo=assessmentRepository(),ownerId=await getOwnerId();
+  const sheet=await repo.sheetView(ownerId,assessmentId);
+  if(sheet)return <AppShell mode={sheet.status==="ACTIVE"?"focus":"page"} exit={{href:"/past-exams",label:"Voltar às provas anteriores"}}><article className="foundation-panel content-panel assessment-page">
+    <p className="eyebrow">{assessmentKindLabel.PAST_EXAM_SHEET} · modo prova</p><h1>{sheet.status==="FINALIZED"?"Seu resultado":sheet.title}</h1>
+    {sheet.status==="ACTIVE"?<AnswerSheetPanel view={sheet}/>:<PastExamResult view={sheet}/>}
+  </article></AppShell>;
+  const view=await repo.view(ownerId,assessmentId);if(!view)notFound();
   const result=resultSchema.safeParse(view.result);
   const conceptScores=result.success&&getFeatureFlags().FEATURE_REAL_EXAM?summarizeAssessmentConcepts(result.data.items):[];
   const names=conceptScores.length?new Map((await listKnowledgeMapConcepts()).map(concept=>[concept.stableId,concept.title])):new Map<string,string>();

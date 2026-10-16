@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import {
   ArrowLeft, BookOpen, CalendarDays, ChartNoAxesColumnIncreasing, ClipboardCheck,
-  Database, Download, FolderKanban, History, LogOut, Map, Medal,
+  Database, Download, FileText, FolderKanban, History, LogOut, Map, Medal,
   MoreHorizontal, RotateCcw, Sun, TriangleAlert, Upload, UserRound
 } from "lucide-react";
 import { BrandLockup } from "@/components/brand/brand-lockup";
@@ -19,6 +19,7 @@ const plan = { label: "Plano", href: "/plan", icon: CalendarDays, match: ["/plan
 const secondaryNavigationItems = [
   review,
   { label: "Simulados", href: "/assessments", icon: BookOpen, match: ["/assessments"] },
+  { label: "Provas anteriores", href: "/past-exams", icon: FileText, match: ["/past-exams"] },
   { label: "Importar", href: "/import", icon: Upload, match: ["/import"], adminOnly: true },
   { label: "Revisar aulas", href: "/admin/review", icon: ClipboardCheck, match: ["/admin/review"], adminOnly: true },
   { label: "Administração", href: "/admin", icon: Database, match: ["/admin"], adminOnly: true },
