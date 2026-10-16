@@ -4,7 +4,8 @@ export const assessmentKindLabel: Record<string, string> = {
   MINI_SIMULATION: "Minissimulado",
   SUBJECT_SIMULATION: "Simulado por área",
   FULL_SIMULATION: "Simulado completo",
-  OFFICIAL_EXAM: "Prova anterior"
+  OFFICIAL_EXAM: "Prova anterior",
+  PAST_EXAM_SHEET: "Prova anterior · cartão-resposta"
 };
 
 export const subjectLabel: Record<string, string> = { MAT: "Matemática", POR: "Português", CIE: "Ciências", GH: "Geografia e História" };

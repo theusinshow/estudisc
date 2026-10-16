@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-16 — Past exams answer sheet (ADR 0066)
+
+- New page `/past-exams` ("Provas anteriores") with the 11 IFSC Integrated editions from 2022.1 to 2026.2. The student opens the official booklet on the IFSC site and answers on a digital A–E answer sheet:
+  - the sheet has a timer, resume, flags for review and a clear button, and each mark is saved;
+  - after finalization, the result shows the score per area and per question, plus progress across editions.
+- New assessment kind `PAST_EXAM_SHEET` in the existing engine, with a new table `assessment_sheet_responses` (migration 0022):
+  - the answer key stays on the server until the student's instance is finalized;
+  - finalization creates no Attempt, evidence, review or mistake;
+  - annulled items do not count.
+- 2026.1 and 2026.2 stay reserved until 2026-11-09 and 2026-11-22 (`packs/past-exams/releases.json`). Booklets and answer keys are links to the IFSC site and are never re-hosted.
+- `scripts/build-past-exam-templates.ts` turns the committed catalog into templates and checks them against the private official bank when it is present. Nothing is published by this change.
+
 ## 2026-10-16 — Content release: depth, simulados and nine new lessons
 
 - Production now has 141 lessons and 1,220 lesson Questions, plus 247 standalone simulado Questions and 3 full simulation templates.

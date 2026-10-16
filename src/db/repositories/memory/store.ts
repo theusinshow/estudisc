@@ -3,6 +3,7 @@ import type { AppliedTrackImport, ExistingPackImport } from "@/features/import/a
 import type { TrackPack, TrackPackLesson, TrackPackActivity } from "@/features/import/application/track-pack-schema";
 import type { JavaScriptEvaluationResult } from "@/runtime/javascript/api";
 import type { AssessmentTemplate, AssessmentSnapshot } from "@/features/assessments/contracts";
+import type { PastExamSheetTemplate, SheetAnswer, SheetSnapshot } from "@/features/assessments/sheet-contracts";
 import type { ResumeScope, ResumeSnapshot } from "@/features/lessons/resume-contracts";
 
 export type MemoryTrack = {
@@ -173,9 +174,10 @@ export type MemoryStore = {
   inviteCodes?: InviteCodeRecord[];
   lessonResumes: Array<ResumeSnapshot & { ownerId: string; scope: ResumeScope; mutationId: string; mutationHash: string }>;
   questionAssets:Array<{id:string;questionId:string;version:number;bytes:Buffer;contentHash:string;mimeType:string}>;
-  assessmentTemplates:Array<{id:string;definition:AssessmentTemplate;contentHash:string}>;
-  assessmentInstances:Array<{id:string;ownerId:string;templateId:string;startKey:string;status:string;snapshot:AssessmentSnapshot;startedAt:Date;deadlineAt:Date;finalizedAt:Date|null;result:unknown}>;
+  assessmentTemplates:Array<{id:string;definition:AssessmentTemplate|PastExamSheetTemplate;contentHash:string}>;
+  assessmentInstances:Array<{id:string;ownerId:string;templateId:string;startKey:string;status:string;snapshot:AssessmentSnapshot|SheetSnapshot;startedAt:Date;deadlineAt:Date;finalizedAt:Date|null;result:unknown}>;
   assessmentResponses:Array<{instanceId:string;versionId:string;response:unknown;flagged:boolean}>;
+  assessmentSheetResponses:Array<{instanceId:string;position:number;answer:SheetAnswer;flagged:boolean}>;
   questionAssistance: Array<{ownerId:string;questionId:string;version:number;contextKey:string;hintLevel:number;solutionRevealed:boolean}>;
   questionExposures: Array<{ownerId:string;questionId:string;lastSeenAt:Date;timesSeen:number}>;
   studySessions:Array<{id:string;ownerId:string;trackId:string;status:string;budgetMinutes:number;items:unknown;policyVersion:string;startedAt:Date|null;endedAt:Date|null;createdAt:Date}>;
@@ -212,7 +214,7 @@ export function getMemoryStore() {
     inviteCodes: [],
     lessonResumes: [],
     questionAssets:[],
-    assessmentTemplates:[],assessmentInstances:[],assessmentResponses:[],
+    assessmentTemplates:[],assessmentInstances:[],assessmentResponses:[],assessmentSheetResponses:[],
     questionAssistance:[],questionExposures:[],studySessions:[],
     studyPlans:[],studyPlanPreviews:[],
     packImports: [],

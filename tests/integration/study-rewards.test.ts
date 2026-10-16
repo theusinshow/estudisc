@@ -15,7 +15,7 @@ describe.each(["memory", "persistent"] as const)("Question rewards (%s)", storeK
     // Isolated disposable store, without resetting any shared development process.
     const store: ReturnType<typeof getMemoryStore> = {
       lessonResumes: [],
-      questionAssets: [], assessmentTemplates: [], assessmentInstances: [], assessmentResponses: [],
+      questionAssets: [], assessmentTemplates: [], assessmentInstances: [], assessmentResponses: [], assessmentSheetResponses: [],
       questionAssistance: [], questionExposures: [], studySessions: [], studyPlans: [], studyPlanPreviews: [], packImports: [], tracks: [],
       modules: [], lessons: [], concepts: [], blocks: [], activities: [], attempts: [], conceptEvidence: [],
       reviewSchedules: [], mistakes: [], projects: [], xpTransactions: [], badgeAwards: [],

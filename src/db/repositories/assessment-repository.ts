@@ -3,7 +3,7 @@ import { and,desc,eq,inArray,sql } from "drizzle-orm";
 import type { PgDatabase,PgQueryResultHKT } from "drizzle-orm/pg-core";
 import { getDatabase } from "@/db/connection";
 import type * as schema from "@/db/schema";
-import { assessmentInstances,assessmentResponses,assessmentTemplates,attempts,conceptEvidence,concepts,mistakes,owners,questionExposures,questionVersions,reviewSchedules,studyEvents,tracks,trackConceptSettings } from "@/db/schema";
+import { assessmentInstances,assessmentResponses,assessmentSheetResponses,assessmentTemplates,attempts,conceptEvidence,concepts,mistakes,owners,questionExposures,questionVersions,reviewSchedules,studyEvents,tracks,trackConceptSettings } from "@/db/schema";
 import { assessmentSnapshotSchema,assessmentTemplateSchema,ASSESSMENT_POLICY,validateAssessmentComposition } from "@/features/assessments/contracts";
 import { scoreAssessment,assessmentFeedback,diagnosticSignals } from "@/features/assessments/scoring";
 import { studentQuestion } from "@/features/questions/student-view";
@@ -11,6 +11,10 @@ import { evidenceStrengthV2,MASTERY_V2 } from "@/features/mastery/mastery-policy
 import { REVIEW_V2,scheduleReviewV2 } from "@/features/review/review-policy-v2";
 import { hashCanonicalJson } from "@/lib/canonical-json";
 import { DrizzleQuestionRepository } from "./question-repository";
+import { buildSheetSnapshot,isSheetDefinition,isSheetSnapshot,pastExamSheetTemplateSchema,PAST_EXAM_SHEET,sheetAnswerSchema,sheetSnapshotSchema,SHEET_POLICY,type PastExamSheetTemplate,type SheetAnswer } from "@/features/assessments/sheet-contracts";
+import { scoreSheet } from "@/features/assessments/sheet-scoring";
+import { toSheetView } from "@/features/assessments/sheet-view";
+import type { AssessmentTemplate } from "@/features/assessments/contracts";
 
 type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
 export class AssessmentStateError extends Error {constructor(){super("Assessment unavailable or closed");}}
@@ -19,10 +23,14 @@ export class AssessmentRepository{
   // ADR 0065: a cross-subject simulado may list scope Tracks; each must exist and every Concept must belong to one of them.
   private async assertTrackScope(trackId:string,conceptIds:readonly string[],scopeTrackIds:readonly string[]=[]){const trackIds=[...new Set([trackId,...scopeTrackIds])];const known=await this.db.select({stableId:tracks.stableId}).from(tracks).where(inArray(tracks.stableId,trackIds));if(trackIds.some(id=>!known.some(row=>row.stableId===id)))throw new AssessmentStateError();const members=await this.db.select({stableId:concepts.stableId}).from(trackConceptSettings).innerJoin(tracks,eq(tracks.id,trackConceptSettings.trackId)).innerJoin(concepts,eq(concepts.id,trackConceptSettings.conceptId)).where(inArray(tracks.stableId,trackIds));const ids=new Set(members.map(row=>row.stableId));if(conceptIds.some(id=>!ids.has(id)))throw new AssessmentStateError();}
   async importTemplate(input:unknown){
+    if(isSheetDefinition(input)){const sheet=pastExamSheetTemplateSchema.parse(input);await this.assertTrackScope(sheet.trackId,[]);return this.storeTemplate(sheet);}
     const template=assessmentTemplateSchema.parse(input);const questions=[];
     for(const ref of template.items){const item=await new DrizzleQuestionRepository(this.db).getVersion(ref.id,ref.version);if(!item)throw new AssessmentStateError();questions.push(item.question);}
     validateAssessmentComposition(template,questions);
     await this.assertTrackScope(template.trackId,questions.flatMap(question=>question.conceptIds),template.scopeTrackIds);
+    return this.storeTemplate(template);
+  }
+  private async storeTemplate(template:AssessmentTemplate|PastExamSheetTemplate){
     const contentHash=hashCanonicalJson(template);
     const [created]=await this.db.insert(assessmentTemplates).values({stableId:template.id,version:template.version,kind:template.kind,status:template.status,contentHash,definition:template}).onConflictDoNothing().returning();
     if(created)return created;
@@ -30,7 +38,7 @@ export class AssessmentRepository{
     if(existing?.contentHash!==contentHash)throw new Error("Assessment template version conflict");return existing;
   }
   async listTemplates(){return this.db.select({id:assessmentTemplates.id,stableId:assessmentTemplates.stableId,version:assessmentTemplates.version,kind:assessmentTemplates.kind,definition:assessmentTemplates.definition}).from(assessmentTemplates).where(eq(assessmentTemplates.status,"published")).orderBy(assessmentTemplates.stableId,desc(assessmentTemplates.version));}
-  async list(ownerId:string){return this.db.select({id:assessmentInstances.id,status:assessmentInstances.status,mode:assessmentInstances.mode,startedAt:assessmentInstances.startedAt,deadlineAt:assessmentInstances.deadlineAt,result:assessmentInstances.result}).from(assessmentInstances).where(eq(assessmentInstances.ownerId,ownerId)).orderBy(desc(assessmentInstances.startedAt)).limit(20);}
+  async list(ownerId:string){return this.db.select({id:assessmentInstances.id,templateId:assessmentInstances.templateId,kind:sql<string>`${assessmentInstances.snapshot}->>'kind'`,status:assessmentInstances.status,mode:assessmentInstances.mode,startedAt:assessmentInstances.startedAt,deadlineAt:assessmentInstances.deadlineAt,result:assessmentInstances.result}).from(assessmentInstances).where(eq(assessmentInstances.ownerId,ownerId)).orderBy(desc(assessmentInstances.startedAt)).limit(20);}
   async start(ownerId:string,templateId:string,startKey:string,now=new Date()){
     return this.db.transaction(async tx=>{
       await tx.insert(owners).values({id:ownerId,displayName:"Private learner"}).onConflictDoNothing();
@@ -40,6 +48,7 @@ export class AssessmentRepository{
       const [active]=await tx.select().from(assessmentInstances).where(and(eq(assessmentInstances.ownerId,ownerId),eq(assessmentInstances.status,"ACTIVE")));
       if(active){if(active.templateId!==templateId)throw new AssessmentStateError();return {id:active.id};}
       const [row]=await tx.select().from(assessmentTemplates).where(eq(assessmentTemplates.id,templateId));if(!row||row.status!=="published")throw new AssessmentStateError();
+      if(row.kind===PAST_EXAM_SHEET){const sheet=pastExamSheetTemplateSchema.parse(row.definition);if(sheet.availableAt&&now.getTime()<Date.parse(sheet.availableAt))throw new AssessmentStateError();const sheetId=randomUUID();await tx.insert(assessmentInstances).values({id:sheetId,ownerId,templateId,startKey,mode:"EXAM",snapshot:buildSheetSnapshot(sheet),startedAt:now,deadlineAt:new Date(now.getTime()+sheet.durationMinutes*60000)});return {id:sheetId};}
       const template=assessmentTemplateSchema.parse(row.definition);if(template.availableAt&&now.getTime()<Date.parse(template.availableAt))throw new AssessmentStateError();
       const id=randomUUID();const frozen=[];
       for(const ref of template.items){const bank=await new DrizzleQuestionRepository(tx).getVersion(ref.id,ref.version);if(!bank)throw new AssessmentStateError();
@@ -57,7 +66,7 @@ export class AssessmentRepository{
     });
   }
   async view(ownerId:string,id:string){
-    const [instance]=await this.db.select().from(assessmentInstances).where(and(eq(assessmentInstances.id,id),eq(assessmentInstances.ownerId,ownerId)));if(!instance)return null;
+    const [instance]=await this.db.select().from(assessmentInstances).where(and(eq(assessmentInstances.id,id),eq(assessmentInstances.ownerId,ownerId)));if(!instance||isSheetSnapshot(instance.snapshot))return null;
     const snapshot=assessmentSnapshotSchema.parse(instance.snapshot);const responses=await this.db.select().from(assessmentResponses).where(eq(assessmentResponses.instanceId,id));
     return {serverNow:Date.now(),id:instance.id,status:instance.status,mode:snapshot.mode,kind:snapshot.kind,startedAt:instance.startedAt.toISOString(),deadlineAt:instance.deadlineAt.toISOString(),questions:snapshot.questions.map(item=>{const question=studentQuestion(item.question);return {versionId:item.versionId,question:{...question,choices:question.choices?[...question.choices].sort((a,b)=>item.choiceOrder.indexOf(a.id)-item.choiceOrder.indexOf(b.id)):undefined}};}),responses:responses.map(row=>({versionId:row.questionVersionId,response:(row.response as {answer:unknown}).answer,flagged:row.flagged===1})),result:instance.status==="FINALIZED"?instance.result:null};
   }
@@ -65,6 +74,7 @@ export class AssessmentRepository{
     return this.db.transaction(async tx=>{
       const [instance]=await tx.select().from(assessmentInstances).where(and(eq(assessmentInstances.id,id),eq(assessmentInstances.ownerId,ownerId))).for("update");
       if(!instance||instance.status!=="ACTIVE"||now.getTime()>instance.deadlineAt.getTime())throw new AssessmentStateError();
+      if(isSheetSnapshot(instance.snapshot))throw new AssessmentStateError();
       const snapshot=assessmentSnapshotSchema.parse(instance.snapshot);if(!snapshot.questions.some(item=>item.versionId===versionId))throw new AssessmentStateError();
       await tx.insert(assessmentResponses).values({instanceId:id,questionVersionId:versionId,response:{answer:response},flagged:flagged?1:0,firstAnsweredAt:now,updatedAt:now}).onConflictDoUpdate({target:[assessmentResponses.instanceId,assessmentResponses.questionVersionId],set:{response:{answer:response},flagged:flagged?1:0,updatedAt:now}});return {saved:true};
     });
@@ -74,6 +84,7 @@ export class AssessmentRepository{
       await tx.select().from(owners).where(eq(owners.id,ownerId)).for("update");
       const [instance]=await tx.select().from(assessmentInstances).where(and(eq(assessmentInstances.id,id),eq(assessmentInstances.ownerId,ownerId))).for("update");if(!instance)throw new AssessmentStateError();if(instance.status==="FINALIZED")return instance.result;
       if(instance.status!=="ACTIVE")throw new AssessmentStateError();
+      if(isSheetSnapshot(instance.snapshot))return new AssessmentRepository(tx).finalizeSheetLocked(ownerId,instance,now);
       const snapshot=assessmentSnapshotSchema.parse(instance.snapshot);const responses=await tx.select().from(assessmentResponses).where(eq(assessmentResponses.instanceId,id));
       const scored=scoreAssessment(snapshot,new Map(responses.map(row=>[row.questionVersionId,(row.response as {answer:unknown}).answer])));
       const conceptRows=await tx.select().from(concepts).where(inArray(concepts.stableId,scored.items.flatMap(item=>item.question.conceptIds)));
@@ -96,5 +107,28 @@ export class AssessmentRepository{
       await tx.update(assessmentInstances).set({status:"FINALIZED",result,finalizedAt:now}).where(eq(assessmentInstances.id,id));
       await tx.insert(studyEvents).values({ownerId,type:"assessment_finalized",entityType:"assessment",entityId:id,payload:{correct:result.correct,scored:result.scored,policyVersion:ASSESSMENT_POLICY}});return result;
     });
+  }
+  async listSheetInstances(ownerId:string){return this.db.select({id:assessmentInstances.id,templateId:assessmentInstances.templateId,status:assessmentInstances.status,startedAt:assessmentInstances.startedAt,deadlineAt:assessmentInstances.deadlineAt,finalizedAt:assessmentInstances.finalizedAt,result:assessmentInstances.result}).from(assessmentInstances).where(and(eq(assessmentInstances.ownerId,ownerId),sql`${assessmentInstances.snapshot}->>'kind'=${PAST_EXAM_SHEET}`)).orderBy(desc(assessmentInstances.startedAt));}
+  private async sheetTemplate(templateId:string){const [row]=await this.db.select({definition:assessmentTemplates.definition}).from(assessmentTemplates).where(eq(assessmentTemplates.id,templateId));if(!row)throw new AssessmentStateError();return pastExamSheetTemplateSchema.parse(row.definition);}
+  async sheetView(ownerId:string,id:string){
+    const [instance]=await this.db.select().from(assessmentInstances).where(and(eq(assessmentInstances.id,id),eq(assessmentInstances.ownerId,ownerId)));if(!instance||!isSheetSnapshot(instance.snapshot))return null;
+    const responses=await this.db.select().from(assessmentSheetResponses).where(eq(assessmentSheetResponses.instanceId,id));
+    return toSheetView({instance,snapshot:sheetSnapshotSchema.parse(instance.snapshot),template:await this.sheetTemplate(instance.templateId),responses:responses.map(row=>({position:row.position,answer:row.answer as SheetAnswer,flagged:row.flagged===1}))});
+  }
+  async saveSheet(ownerId:string,id:string,position:number,answer:SheetAnswer,flagged:boolean,now=new Date()){
+    return this.db.transaction(async tx=>{
+      const [instance]=await tx.select().from(assessmentInstances).where(and(eq(assessmentInstances.id,id),eq(assessmentInstances.ownerId,ownerId))).for("update");
+      if(!instance||instance.status!=="ACTIVE"||now.getTime()>instance.deadlineAt.getTime()||!isSheetSnapshot(instance.snapshot)||!sheetSnapshotSchema.parse(instance.snapshot).items.some(item=>item.position===position))throw new AssessmentStateError();
+      const value=sheetAnswerSchema.parse(answer);
+      await tx.insert(assessmentSheetResponses).values({instanceId:id,position,answer:value,flagged:flagged?1:0,firstAnsweredAt:now,updatedAt:now}).onConflictDoUpdate({target:[assessmentSheetResponses.instanceId,assessmentSheetResponses.position],set:{answer:value,flagged:flagged?1:0,updatedAt:now}});return {saved:true as const};
+    });
+  }
+  // ADR 0066: called inside finalize's transaction (this.db is the tx); emits no Attempt, evidence, review or mistake.
+  async finalizeSheetLocked(ownerId:string,instance:typeof assessmentInstances.$inferSelect,now:Date){
+    const template=await this.sheetTemplate(instance.templateId);if(sheetSnapshotSchema.parse(instance.snapshot).templateVersion!==template.version)throw new AssessmentStateError();
+    const responses=await this.db.select().from(assessmentSheetResponses).where(eq(assessmentSheetResponses.instanceId,instance.id));
+    const result=scoreSheet(template,new Map(responses.map(row=>[row.position,row.answer as SheetAnswer])),now.getTime()>instance.deadlineAt.getTime());
+    await this.db.update(assessmentInstances).set({status:"FINALIZED",result,finalizedAt:now}).where(eq(assessmentInstances.id,instance.id));
+    await this.db.insert(studyEvents).values({ownerId,type:"assessment_finalized",entityType:"assessment",entityId:instance.id,payload:{correct:result.correct,scored:result.scored,policyVersion:SHEET_POLICY}});return result;
   }
 }
