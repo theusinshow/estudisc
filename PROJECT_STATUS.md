@@ -1,4 +1,8 @@
 # Estudisc — Current project status
+POR-01..03 hand-written question pilot (2026-10-16) complete locally on content/por-pilot-20261016. The 24 existing Question IDs now have individual authorial stimuli, question-specific alternatives, distractor error metadata and explanations; all are v2 and draft. POR-01, POR-02 and POR-03 are v3; the complete Portuguese Pack is v7. All 21 other lessons and 168 Questions match the original Pack exactly. Source registry: 24 texts, license autoral-estudisc. Review: `.local/task/PILOT-REVIEW.md`. No import or publication was performed.
+
+Validation: offline frozen-lockfile install, lint, typecheck and content-QA passed (17 tests across 7 files). The pack validator exits 1 only for the remaining R11 repeated-choice group at POR-04-Q07 (21 unchanged Questions; the original 24-question group also included POR-01-Q07). No R3/R8/R9/R10/R11 finding identifies the new Questions. NEXT ACTION: keep the candidate in draft; publication is outside this task.
+
 
 Phase 1 corrections RELEASED (2026-10-16): pre-release pg_dump 18.6 backup (.local/database-migration/private/pre-phase1-corrections-20261015.dump, 10.4 MB, 59 tables), 118 lesson correction versions imported and published via Admin Direct (118 audit events, actor account-matheus); read-only check: all 118 at the new latest version, 0 visible internal-text/INCORRECT leaks. Import transfer fixed (PRs #26/#28). Question-binding contract merged (PR #27, ADR 0063). Paid access from PR #29 (Antigravity, session closed) adopted; access changed to until the exam. NEXT ACTION: Mathematics Question versions through ADR 0063, then integrate the Codex phase 2/3 rewrites, then the mock exam.
 

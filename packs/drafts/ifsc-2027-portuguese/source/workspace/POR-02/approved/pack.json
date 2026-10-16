@@ -149,306 +149,322 @@
       "deterministicAssetRefs": [],
       "antigravityRefs": [],
       "authenticMediaRefs": []
-    }
+    },
+    "version": 3
   },
   "questions": [
     {
       "id": "POR-02-Q01",
       "lessonId": "POR-02",
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Compreensão global, tema, ideia principal e informação explícita em uso real da língua?",
+      "stem": "O tema que reúne as informações sobre a coleta e as entregas é:",
       "options": [
         {
           "id": "A",
-          "text": "Se a alternativa usa palavras do texto, ela está correta."
+          "text": "A escolha das frutas mais bonitas para as prateleiras dos mercados do Jardim do Sol."
         },
         {
           "id": "B",
-          "text": "Tema e opinião do leitor são a mesma coisa."
+          "text": "A promessa de que todas as casas da cidade receberão cestas em poucas semanas."
         },
         {
           "id": "C",
-          "text": "Resumir significa copiar todas as frases importantes."
+          "text": "A decisão dos mercados de encerrar as vendas de frutas no período da tarde."
         },
         {
           "id": "D",
-          "text": "Informação explícita é aquela apresentada diretamente no texto e pode ser localizada sem inferência adicional."
+          "text": "A iniciativa local reaproveita alimentos e entrega cestas a famílias do bairro."
         },
         {
           "id": "E",
-          "text": "A ideia principal é sempre a primeira frase."
+          "text": "O preço do transporte refrigerado para levar caixas entre diferentes postos de saúde."
         }
       ],
       "correctOption": "D",
-      "explanation": "Informação explícita é aquela apresentada diretamente no texto e pode ser localizada sem inferência adicional.",
-      "difficulty": "foundation",
-      "cognitiveOperation": "recognize",
+      "explanation": "As caixas, a associação e as cestas mostram uma iniciativa de aproveitamento e distribuição de alimentos, que cresceu de doze para quarenta e duas casas. O transporte refrigerado é uma necessidade futura, mas ocupa apenas uma parte do relato.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-02-C01"
       ],
-      "targetedError": "A ideia principal é sempre a primeira frase.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A notícia trata principalmente da compra de um veículo refrigerado.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "No Jardim do Sol, três mercados passaram a separar frutas que perderam a aparência de venda, mas continuam próprias para consumo. Uma associação de moradores recolhe as caixas no fim da tarde e monta cestas para famílias indicadas pelo posto de saúde. O projeto começou com doze entregas por semana; agora atende quarenta e duas casas. A coordenadora diz que o grupo ainda precisa de transporte refrigerado e que pretende conversar com outros bairros antes de ampliar a coleta."
     },
     {
       "id": "POR-02-Q02",
       "lessonId": "POR-02",
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Compreensão global, tema, ideia principal e informação explícita, qual princípio deve orientar a análise?",
+      "stem": "Segundo o aviso, em que dia da semana ocorrem os encontros da oficina?",
       "options": [
         {
           "id": "A",
-          "text": "O tema é o assunto geral; a ideia principal é o que o texto afirma de mais relevante sobre esse assunto."
+          "text": "Às terças-feiras, depois da caminhada pela praça em frente ao prédio."
         },
         {
           "id": "B",
-          "text": "Tema e opinião do leitor são a mesma coisa."
+          "text": "Aos sábados, durante a caminhada fotográfica pelo centro cultural."
         },
         {
           "id": "C",
-          "text": "Resumir significa copiar todas as frases importantes."
+          "text": "Nas tardes de agosto, sempre que houver tripés disponíveis na recepção."
         },
         {
           "id": "D",
-          "text": "A ideia principal é sempre a primeira frase."
+          "text": "No dia 28, data prevista para a última reunião com os jovens inscritos."
         },
         {
           "id": "E",
-          "text": "Se a alternativa usa palavras do texto, ela está correta."
+          "text": "Às quartas-feiras, no intervalo entre o fim das aulas e o jantar."
         }
       ],
-      "correctOption": "A",
-      "explanation": "O tema é o assunto geral; a ideia principal é o que o texto afirma de mais relevante sobre esse assunto.",
-      "difficulty": "direct",
-      "cognitiveOperation": "understand",
+      "correctOption": "E",
+      "explanation": "O aviso informa que os encontros serão às quartas-feiras, das 17h às 18h30. O dia 28 aparece como limite para inscrição, não como data de reunião.",
+      "difficulty": "foundation",
+      "cognitiveOperation": "recognize",
       "concepts": [
-        "POR-02-C02"
+        "POR-02-C03"
       ],
-      "targetedError": "Se a alternativa usa palavras do texto, ela está correta.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O prazo de inscrição também indica quando começa a oficina.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A oficina gratuita de fotografia do Centro Cultural Limoeiro terá encontros às quartas-feiras, das 17h às 18h30, durante o mês de agosto. As vagas são destinadas a jovens de 13 a 17 anos e as inscrições devem ser feitas na recepção até o dia 28. Cada participante precisa levar um celular com câmera; o centro emprestará tripés e cartões de memória. A primeira atividade será uma caminhada fotográfica pela praça em frente ao prédio."
     },
     {
       "id": "POR-02-Q03",
       "lessonId": "POR-02",
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Compreensão global, tema, ideia principal e informação explícita?",
+      "stem": "Qual ideia principal organiza a notícia sobre a passarela?",
       "options": [
         {
           "id": "A",
-          "text": "Resumir significa copiar todas as frases importantes."
+          "text": "A passarela reabriu após reparos e voltou a encurtar trajetos de moradores."
         },
         {
           "id": "B",
-          "text": "A ideia principal é sempre a primeira frase."
+          "text": "As inspeções mensais vão encerrar o trajeto até o posto antes do fim do semestre."
         },
         {
           "id": "C",
-          "text": "Uma boa síntese preserva as relações essenciais do texto e elimina exemplos ou detalhes secundários."
+          "text": "Os moradores preferem caminhar vinte minutos a mais para evitar usar corrimãos."
         },
         {
           "id": "D",
-          "text": "Se a alternativa usa palavras do texto, ela está correta."
+          "text": "A prefeitura iniciou a construção de uma escola ao lado do arroio do Cedro."
         },
         {
           "id": "E",
-          "text": "Tema e opinião do leitor são a mesma coisa."
+          "text": "O aplicativo municipal substituiu as vistorias feitas pelos técnicos na passarela."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Uma boa síntese preserva as relações essenciais do texto e elimina exemplos ou detalhes secundários.",
+      "correctOption": "A",
+      "explanation": "O fato que abre e estrutura o texto é a reabertura depois da troca do piso e da instalação de corrimãos; a utilidade para os moradores e as inspeções completam a notícia. O aplicativo aparece apenas como canal para comunicar problemas.",
       "difficulty": "applied",
-      "cognitiveOperation": "discriminate",
+      "cognitiveOperation": "analyze",
       "concepts": [
-        "POR-02-C03"
+        "POR-02-C02"
       ],
-      "targetedError": "Tema e opinião do leitor são a mesma coisa.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A notícia é principalmente sobre o aplicativo de serviços da prefeitura.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A passarela sobre o arroio do Cedro ficou interditada por cinco meses depois que uma vistoria encontrou tábuas soltas. Na sexta-feira, a prefeitura liberou a travessia após substituir o piso e instalar corrimãos nos dois lados. Moradores do loteamento vizinho dizem que o caminho encurta em quase vinte minutos o trajeto até a escola e o posto de saúde. A administração informou que fará inspeções mensais durante o primeiro semestre e pediu que problemas sejam comunicados pelo aplicativo municipal."
     },
     {
       "id": "POR-02-Q04",
       "lessonId": "POR-02",
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Compreensão global, tema, ideia principal e informação explícita?",
+      "stem": "Qual alternativa sintetiza melhor a mudança relatada na escola?",
       "options": [
         {
           "id": "A",
-          "text": "A ideia principal é sempre a primeira frase."
+          "text": "A nutricionista retirou arroz e feijão para que nenhuma bandeja retorne com sobras."
         },
         {
           "id": "B",
-          "text": "Se a alternativa usa palavras do texto, ela está correta."
+          "text": "A escola ajustou as porções com os alunos e quer tratar o desperdício sem castigos."
         },
         {
           "id": "C",
-          "text": "Tema e opinião do leitor são a mesma coisa."
+          "text": "A turma passou a pesar cada estudante para definir quanto ele pode comer no almoço."
         },
         {
           "id": "D",
-          "text": "Resumir significa copiar todas as frases importantes."
+          "text": "As famílias decidiram substituir o cardápio escolar por refeições preparadas em casa."
         },
         {
           "id": "E",
-          "text": "O título pode orientar a leitura, mas deve ser confirmado pelo desenvolvimento do texto."
+          "text": "A campanha proibiu que os estudantes repitam quando sentirem fome depois da primeira porção."
         }
       ],
-      "correctOption": "E",
-      "explanation": "O título pode orientar a leitura, mas deve ser confirmado pelo desenvolvimento do texto.",
+      "correctOption": "B",
+      "explanation": "A equipe ajustou o tamanho da porção com participação dos estudantes, manteve a possibilidade de repetir e pretende conversar com as famílias sem punir. A observação da nutricionista sobre o valor das refeições impede concluir que houve perda nutricional.",
       "difficulty": "ifsc",
-      "cognitiveOperation": "apply",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-02-C04"
       ],
-      "targetedError": "Resumir significa copiar todas as frases importantes.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A redução das sobras foi obtida diminuindo o valor nutritivo das refeições.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Na Escola Horizonte, a sobra de arroz e feijão do almoço diminuiu depois que a equipe passou a medir o prato mais pedido por cada turma. Os estudantes ajudaram a comparar a quantidade servida com o que voltava às bandejas e sugeriram manter uma opção menor, com possibilidade de repetir. A nutricionista afirma que a mudança não reduziu o valor das refeições. O próximo passo é conversar com as famílias sobre o desperdício também em casa, sem transformar a campanha em punição para quem deixa comida."
     },
     {
       "id": "POR-02-Q05",
       "lessonId": "POR-02",
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Compreensão global, tema, ideia principal e informação explícita?",
+      "stem": "Onde será realizado o encontro presencial do clube?",
       "options": [
         {
           "id": "A",
-          "text": "Se a alternativa usa palavras do texto, ela está correta."
+          "text": "No mural da associação, que substitui o salão para quem chega depois da semana seguinte."
         },
         {
           "id": "B",
-          "text": "Parafrasear é reformular uma informação mantendo seu sentido central, sem acrescentar uma opinião nova."
+          "text": "Na biblioteca municipal, entre as estantes onde ficam os exemplares emprestados."
         },
         {
           "id": "C",
-          "text": "Tema e opinião do leitor são a mesma coisa."
+          "text": "No segundo andar do salão do Mercado Velho, aos sábados pela manhã."
         },
         {
           "id": "D",
-          "text": "Resumir significa copiar todas as frases importantes."
+          "text": "Na página da associação de moradores, durante o preenchimento do formulário gratuito."
         },
         {
           "id": "E",
-          "text": "A ideia principal é sempre a primeira frase."
+          "text": "No térreo do Mercado Velho, junto ao balcão que distribui os romances escolhidos."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Parafrasear é reformular uma informação mantendo seu sentido central, sem acrescentar uma opinião nova.",
-      "difficulty": "applied",
-      "cognitiveOperation": "evaluate",
+      "correctOption": "C",
+      "explanation": "O aviso diz que o encontro será no salão do segundo andar do Mercado Velho. A biblioteca aparece como lugar de empréstimo do livro, uma atividade diferente da reunião.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
       "concepts": [
-        "POR-02-C05"
+        "POR-02-C03"
       ],
-      "targetedError": "A ideia principal é sempre a primeira frase.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O endereço de retirada do livro é também o local da reunião.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "O Clube de Leitura do Mercado Velho receberá novos participantes no salão do segundo andar, aos sábados, às dez da manhã. O grupo vai começar pelo romance “A casa do vento”, de Marina Lobo, e cada pessoa pode retirar um exemplar emprestado na biblioteca municipal. Quem não conseguir comparecer ao primeiro encontro poderá entrar na conversa pelo mural do clube até a semana seguinte. A inscrição é gratuita e pode ser feita pelo formulário disponível na página da associação de moradores."
     },
     {
       "id": "POR-02-Q06",
       "lessonId": "POR-02",
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Compreensão global, tema, ideia principal e informação explícita, qual análise está correta?",
+      "stem": "Qual posição o artigo defende em relação ao projeto da avenida?",
       "options": [
         {
           "id": "A",
-          "text": "Tema e opinião do leitor são a mesma coisa."
+          "text": "A prefeitura deve retirar as árvores logo, pois os comerciantes já aprovaram a mudança."
         },
         {
           "id": "B",
-          "text": "Resumir significa copiar todas as frases importantes."
+          "text": "O estacionamento precisa ocupar a calçada para liberar espaço exclusivo aos ônibus."
         },
         {
           "id": "C",
-          "text": "A ideia principal é sempre a primeira frase."
+          "text": "As diferenças de temperatura do verão justificam encerrar o comércio na avenida."
         },
         {
           "id": "D",
-          "text": "Em questões de compreensão, alternativas podem ser falsas por exagerar, restringir ou inverter uma informação verdadeira do texto."
+          "text": "A decisão deve ser testada e debatida antes de remover árvores e mudar a circulação."
         },
         {
           "id": "E",
-          "text": "Se a alternativa usa palavras do texto, ela está correta."
+          "text": "Os bancos devem ser instalados apenas depois que todas as vagas para carros estiverem prontas."
         }
       ],
       "correctOption": "D",
-      "explanation": "Em questões de compreensão, alternativas podem ser falsas por exagerar, restringir ou inverter uma informação verdadeira do texto.",
+      "explanation": "A proposta final pede testar uma alternativa, ouvir usuários e divulgar resultados antes de qualquer corte; o contraste entre sombra coletiva e vagas para poucos carros reforça essa posição. O texto menciona o projeto de estacionamento para questioná-lo, não para apoiá-lo.",
       "difficulty": "ifsc",
-      "cognitiveOperation": "analyze",
+      "cognitiveOperation": "evaluate",
       "concepts": [
-        "POR-02-C06"
+        "POR-02-C02"
       ],
-      "targetedError": "Se a alternativa usa palavras do texto, ela está correta.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O artigo apoia a retirada imediata das árvores para aumentar o estacionamento.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A proposta de retirar as árvores da avenida Central para abrir mais vagas de estacionamento parece prática, mas troca uma sombra compartilhada por uma facilidade reservada a poucos carros. No verão passado, a temperatura junto às fachadas ficou mais alta do que nas ruas arborizadas do entorno. Comerciantes temem perder clientes, enquanto pedestres e usuários do ônibus pedem bancos e travessias seguras. A prefeitura deveria testar primeiro a redução de uma faixa, ouvir quem usa a avenida e publicar os resultados antes de cortar qualquer árvore."
     },
     {
       "id": "POR-02-Q07",
       "lessonId": "POR-02",
       "type": "MCQ",
-      "stem": "Um estudante afirma: “A ideia principal é sempre a primeira frase.”. Qual é a melhor correção?",
+      "stem": "Qual título expressaria melhor o assunto que atravessa o texto inteiro?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "Placas novas ensinam a atravessar durante uma tempestade com segurança."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Defesa civil fecha definitivamente a ponte após a maior cheia da história local."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "Escola inaugura exposição permanente de fotografias sobre pontes do país."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "Voluntários constroem uma barreira para impedir que o Rio Pequeno chegue às casas."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Moradores cuidam da ponte e registram sinais do rio para orientar o bairro."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Informação explícita é aquela apresentada diretamente no texto e pode ser localizada sem inferência adicional.",
+      "correctOption": "E",
+      "explanation": "O texto combina cuidado com a ponte, observação de marcas da água e orientação para moradores, sem anunciar fechamento ou obra contra enchentes. O aviso recomenda evitar a travessia quando a água sobe, o que torna inadequada a ideia de atravessar durante o temporal.",
       "difficulty": "applied",
-      "cognitiveOperation": "diagnose_error",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
-        "POR-02-C01"
+        "POR-02-C01",
+        "POR-02-C05"
       ],
-      "targetedError": "A ideia principal é sempre a primeira frase.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "As placas novas convidam as pessoas a atravessar durante a cheia.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A ponte de madeira que atravessa o Rio Pequeno ganhou corrimão e placas novas depois de uma ação organizada por moradores. Além de recolher galhos presos nas margens, o grupo fotografou marcas antigas de cheia e pediu que a defesa civil instalasse um aviso de nível da água. A associação pretende reunir as imagens em uma exposição na escola do bairro. A ponte continuará aberta, mas os voluntários recomendam que ninguém atravesse durante temporais ou quando a água cobrir o primeiro degrau."
     },
     {
       "id": "POR-02-Q08",
       "lessonId": "POR-02",
       "type": "MCQ",
-      "stimulus": "A biblioteca do bairro ampliou o horário aos sábados depois de uma pesquisa mostrar que estudantes não conseguiam frequentá-la durante a semana. Nos dois primeiros meses, o movimento de sábado duplicou.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stimulus": "O ônibus-biblioteca começou a parar nas comunidades do Morro Alto duas vezes por semana. A equipe leva livros, revistas e um computador para consulta de catálogo, mas não faz empréstimos de equipamentos. A bibliotecária conta que crianças que antes precisavam caminhar até o centro agora escolhem títulos perto de casa. Para manter as visitas, o projeto depende de uma garagem coberta e de uma pessoa da comunidade que ajude a divulgar os horários. No próximo mês, a rota será avaliada com os moradores.",
+      "stem": "Qual frase parafraseia corretamente a informação sobre o acesso aos livros?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Os livros chegam perto das crianças, que antes precisavam ir ao centro para escolhê-los."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "A equipe empresta computadores para que as crianças pesquisem em casa durante a semana."
         },
         {
           "id": "C",
-          "text": "Tema: acesso à biblioteca. Ideia principal: a ampliação do horário atendeu uma demanda e aumentou a frequência aos sábados; não se pode afirmar que o movimento total duplicou."
+          "text": "A rota já foi encerrada porque as comunidades não divulgaram os dias de visita."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "Os moradores decidiram trocar a garagem coberta por uma sala de leitura no centro."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "O ônibus circula diariamente por todas as comunidades e oferece internet gratuita aos adultos."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Tema: acesso à biblioteca. Ideia principal: a ampliação do horário atendeu uma demanda e aumentou a frequência aos sábados; não se pode afirmar que o movimento total duplicou.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "analyze_context",
+      "correctOption": "A",
+      "explanation": "O texto afirma que as crianças agora podem escolher livros perto de casa, evitando a caminhada até o centro. O computador está no ônibus para consulta de catálogo e não sai emprestado com os títulos.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
       "concepts": [
-        "POR-02-C01",
-        "POR-02-C02"
+        "POR-02-C06"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O computador embarcado é emprestado às famílias junto com os livros.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2
     }
   ],
   "concepts": [

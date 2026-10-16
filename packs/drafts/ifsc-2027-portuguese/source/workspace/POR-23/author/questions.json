@@ -6,299 +6,378 @@
       "id": "POR-23-Q01",
       "lessonId": "POR-23",
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Variedades do português brasileiro: região, grupo, tempo e situação em uso real da língua?",
+      "stem": "Que leitura dos registros é mais adequada?",
       "options": [
         {
           "id": "A",
-          "text": "Variação é sinônimo de erro."
+          "text": "As formas registradas correspondem a pronúncias de uma única palavra, sem diferenças de vocabulário.",
+          "targetsError": "conceptual",
+          "rationale": "Os cartões apresentam nomes distintos para o mesmo doce, além de alguns exemplos de pronúncia."
         },
         {
           "id": "B",
-          "text": "Pessoa pertence a uma única variedade fixa."
+          "text": "As respostas indicam que pronúncia e vocabulário podem variar entre falantes e lugares."
         },
         {
           "id": "C",
-          "text": "Só o vocabulário varia."
+          "text": "As diferenças vocabulares aparecem nos cartões, mas os exemplos de pronúncia são dados independentes do levantamento.",
+          "targetsError": "attention",
+          "rationale": "O formulário reúne as palavras e os exemplos de pronúncia no mesmo registro."
         },
         {
           "id": "D",
-          "text": "Línguas variam sistematicamente segundo região, grupo social, época, situação comunicativa e outras dimensões."
+          "text": "A forma mais frequente pode servir de referência comum para os materiais de todas as cidades.",
+          "targetsError": "interpretation",
+          "rationale": "A equipe não escolheu uma forma como correta para todas as cidades."
         },
         {
           "id": "E",
-          "text": "Cada região fala outra língua."
+          "text": "Os cartões associam todas as respostas a um único município de aprendizagem.",
+          "targetsError": "memory",
+          "rationale": "O formulário inclui pessoas de três municípios e registra o lugar de aprendizagem."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Línguas variam sistematicamente segundo região, grupo social, época, situação comunicativa e outras dimensões.",
+      "correctOption": "B",
+      "explanation": "O formulário reúne palavras diferentes para o mesmo doce e também registra exemplos de pronúncia. A maior frequência não transforma uma forma em modelo para todas as cidades, pois a equipe documentou escolhas de participantes em diferentes lugares.",
       "difficulty": "foundation",
       "cognitiveOperation": "recognize",
       "concepts": [
         "POR-23-C01"
       ],
-      "targetedError": "Cada região fala outra língua.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Os cartões registram diferenças de vocabulário e pronúncia entre falantes.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "No formulário do encontro de leitores de 13 de março de 2026, 24 participantes registraram palavras que usam para nomear o mesmo doce de feira. Pessoas de três municípios anotaram “cuca”, “bolo de farofa” e “bolo colonial”; algumas respostas vieram acompanhadas de exemplos de pronúncia. A equipe guardou os cartões com o lugar onde cada pessoa aprendeu a palavra, mas não pediu que alguém escolhesse uma forma como correta para todas as cidades.\nRelato autoral do encontro, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-23-Q02",
       "lessonId": "POR-23",
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Variedades do português brasileiro: região, grupo, tempo e situação, qual princípio deve orientar a análise?",
+      "stem": "Que dimensão da variação aparece com mais destaque na expressão compartilhada pelo grupo?",
       "options": [
         {
           "id": "A",
-          "text": "Variação regional pode aparecer em pronúncia, vocabulário e construções sem implicar inferioridade linguística."
+          "text": "A expressão circula numa rede de atividade e ganha sentido compartilhado entre participantes."
         },
         {
           "id": "B",
-          "text": "Pessoa pertence a uma única variedade fixa."
+          "text": "A expressão mostra como a maneira de remar se transformou entre gerações do clube.",
+          "targetsError": "interpretation",
+          "rationale": "A ata descreve um uso atual, sem comparação histórica."
         },
         {
           "id": "C",
-          "text": "Só o vocabulário varia."
+          "text": "A expressão identifica uma pronúncia local compartilhada por moradores de municípios diferentes.",
+          "targetsError": "attention",
+          "rationale": "O registro situa a expressão na atividade do clube e não compara pronúncias ou municípios."
         },
         {
           "id": "D",
-          "text": "Cada região fala outra língua."
+          "text": "O uso da expressão acompanha uma escolaridade comum entre os participantes do clube.",
+          "targetsError": "conceptual",
+          "rationale": "A ata menciona idades e ocupações variadas e não relaciona o uso à escolaridade."
         },
         {
           "id": "E",
-          "text": "Variação é sinônimo de erro."
+          "text": "A expressão substitui a orientação escrita que o clube envia aos serviços municipais.",
+          "targetsError": "procedural",
+          "rationale": "A ata registra o uso na conversa do clube, sem mencionar comunicação com serviços públicos."
         }
       ],
       "correctOption": "A",
-      "explanation": "Variação regional pode aparecer em pronúncia, vocabulário e construções sem implicar inferioridade linguística.",
+      "explanation": "A expressão aparece numa prática compartilhada do clube e é compreendida pelo grupo durante a atividade. A hipótese de diferença regional não encontra apoio: o texto registra uma rede de participantes no mesmo espaço, sem comparar falares de cidades.",
       "difficulty": "direct",
       "cognitiveOperation": "understand",
       "concepts": [
         "POR-23-C02"
       ],
-      "targetedError": "Variação é sinônimo de erro.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A escolha se relaciona ao grupo e à atividade descritos na ata.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "A ata do clube de canoagem de 22 de abril de 2026 registra que participantes de idades e ocupações variadas usam a expressão “volta curta” para um percurso feito antes do trabalho. Na conversa do clube, quem chega pela primeira vez pergunta onde fica a boia azul; os veteranos respondem apontando uma curva do lago. A ata anota essas falas sem relacionar a escolha das palavras ao nível de escolaridade dos participantes.\nAta autoral do clube, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-23-Q03",
       "lessonId": "POR-23",
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Variedades do português brasileiro: região, grupo, tempo e situação?",
+      "stem": "Que aspecto ajuda a explicar a diferença entre as duas mensagens?",
       "options": [
         {
           "id": "A",
-          "text": "Só o vocabulário varia."
+          "text": "A diferença entre os textos decorre de Joana ter escrito em cidades diferentes.",
+          "targetsError": "interpretation",
+          "rationale": "Os dois contatos acontecem no mesmo dia e o registro situa a mudança no interlocutor e no objetivo."
         },
         {
           "id": "B",
-          "text": "Cada região fala outra língua."
+          "text": "A idade dos interlocutores explica a escolha de uma forma mais ou menos formal.",
+          "targetsError": "conceptual",
+          "rationale": "O texto não compara idades; distingue os destinatários e as finalidades das mensagens."
         },
         {
           "id": "C",
-          "text": "Variação social relaciona-se a redes, grupos, profissões, idade e trajetórias, não apenas escolaridade."
+          "text": "Joana adapta o registro ao interlocutor, ao propósito e ao meio da comunicação."
         },
         {
           "id": "D",
-          "text": "Variação é sinônimo de erro."
+          "text": "A mensagem ao colega preserva uma forma antiga que a coordenação deixou de usar.",
+          "targetsError": "attention",
+          "rationale": "Os dois textos são do mesmo dia e não há comparação histórica."
         },
         {
           "id": "E",
-          "text": "Pessoa pertence a uma única variedade fixa."
+          "text": "A conversa não segue convenções porque não se destina à coordenação do teatro.",
+          "targetsError": "memory",
+          "rationale": "A conversa cumpre um objetivo entre colegas; a diferença de gênero não significa ausência de convenções."
         }
       ],
       "correctOption": "C",
-      "explanation": "Variação social relaciona-se a redes, grupos, profissões, idade e trajetórias, não apenas escolaridade.",
+      "explanation": "Joana conversa com um colega sobre a fila e escreve à coordenação para explicar e pedir uma remarcação. O objetivo, o destinatário e o meio ajudam a entender as escolhas de cada mensagem; a diferença não decorre de uma mudança de época ou cidade.",
       "difficulty": "applied",
       "cognitiveOperation": "discriminate",
       "concepts": [
         "POR-23-C03"
       ],
-      "targetedError": "Pessoa pertence a uma única variedade fixa.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O registro varia conforme o interlocutor e a finalidade de cada mensagem.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Em 6 de maio de 2026, Joana mandou ao colega uma mensagem: “Chego depois do ensaio; segura meu lugar na fila”. À noite, escreveu à coordenação do teatro para explicar o atraso e solicitar a remarcação do horário. A mensagem formal informa o nome da apresentação, pede confirmação da nova data e agradece pela atenção. Joana usa os dois textos no mesmo dia, para interlocutores e objetivos distintos.\nRegistro autoral de comunicação, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-23-Q04",
       "lessonId": "POR-23",
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Variedades do português brasileiro: região, grupo, tempo e situação?",
+      "stem": "Que observação sobre a mudança no tempo é apoiada pela comparação?",
       "options": [
         {
           "id": "A",
-          "text": "Cada região fala outra língua."
+          "text": "O cartão antigo usa uma instrução inadequada, substituída por um procedimento mais correto.",
+          "targetsError": "conceptual",
+          "rationale": "A comparação mostra meios diferentes, sem julgar o convite de 1988 como erro."
         },
         {
           "id": "B",
-          "text": "Variação é sinônimo de erro."
+          "text": "O convite antigo não informava os detalhes necessários para localizar a sessão.",
+          "targetsError": "attention",
+          "rationale": "O arquivo registra nome do filme, sala e data nas duas peças."
         },
         {
           "id": "C",
-          "text": "Pessoa pertence a uma única variedade fixa."
+          "text": "A adoção do aplicativo eliminou a influência da situação sobre a linguagem dos convites.",
+          "targetsError": "interpretation",
+          "rationale": "A comparação trata de época e meio, sem afirmar que outras dimensões deixaram de variar."
         },
         {
           "id": "D",
-          "text": "Só o vocabulário varia."
+          "text": "As diferenças refletem escolhas ligadas a épocas e meios de comunicação distintos."
         },
         {
           "id": "E",
-          "text": "Variação situacional envolve adequar registro, vocabulário e formalidade às condições de interação."
+          "text": "A mensagem digital conserva o texto do cartão e troca somente o modo de responder.",
+          "targetsError": "memory",
+          "rationale": "O arquivo descreve orientações diferentes: telefonar ao ramal ou responder pelo aplicativo."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Variação situacional envolve adequar registro, vocabulário e formalidade às condições de interação.",
+      "correctOption": "D",
+      "explanation": "O convite antigo menciona telefone e ramal; a mensagem atual usa aplicativo. A comparação relaciona as escolhas às épocas e aos meios indicados, sem classificar a forma anterior como erro ou concluir que outras dimensões da variação desapareceram.",
       "difficulty": "ifsc",
       "cognitiveOperation": "apply",
       "concepts": [
         "POR-23-C04"
       ],
-      "targetedError": "Só o vocabulário varia.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "As formas acompanham os meios e os momentos indicados no arquivo.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "O arquivo do clube de cinema comparou dois convites para a mesma sessão. O cartão guardado na pasta de 1988 pede que o público “telefone ao ramal da portaria para reservar assento”. A mensagem digital de 2026 orienta a “enviar uma resposta pelo aplicativo até o meio-dia”. As duas peças incluem o nome do filme, a sala e a data, mas foram preparadas para meios de comunicação usados em momentos diferentes.\nNota autoral do arquivo do clube, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-23-Q05",
       "lessonId": "POR-23",
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Variedades do português brasileiro: região, grupo, tempo e situação?",
+      "stem": "O que os cartões permitem afirmar sobre o uso das duas palavras?",
       "options": [
         {
           "id": "A",
-          "text": "Variação é sinônimo de erro."
+          "text": "A forma mais frequente na feira mostra que as demais não são escolhas do português.",
+          "targetsError": "conceptual",
+          "rationale": "O painel mantém as duas palavras e não transforma a frequência em regra."
         },
         {
           "id": "B",
-          "text": "Variação histórica explica por que formas mudam, surgem ou deixam de circular ao longo do tempo."
+          "text": "A amostra documenta duas escolhas lexicais e registra de quais lugares vieram as respostas."
         },
         {
           "id": "C",
-          "text": "Pessoa pertence a uma única variedade fixa."
+          "text": "Os cartões indicam que o significado de “menta” muda conforme o município.",
+          "targetsError": "interpretation",
+          "rationale": "Os cartões registram nomes e procedências, sem atribuir sentidos diferentes à palavra."
         },
         {
           "id": "D",
-          "text": "Só o vocabulário varia."
+          "text": "A frequência da amostra permite concluir que “hortelã” é a forma mais usada em toda a região.",
+          "targetsError": "attention",
+          "rationale": "A contagem descreve 18 cartões da feira e não permite generalizar para toda a região."
         },
         {
           "id": "E",
-          "text": "Cada região fala outra língua."
+          "text": "Os cartões mostram que a escolha das palavras foi determinada pelo ensino escolar.",
+          "targetsError": "prerequisite",
+          "rationale": "Alguns participantes anotaram o termo ouvido em casa; não há dado sobre determinação escolar."
         }
       ],
       "correctOption": "B",
-      "explanation": "Variação histórica explica por que formas mudam, surgem ou deixam de circular ao longo do tempo.",
+      "explanation": "Os cartões mostram duas palavras para a erva e guardam os municípios informados pelos participantes. A contagem descreve a amostra de 18 respostas; ela não permite projetar a preferência observada para toda a população regional.",
       "difficulty": "applied",
       "cognitiveOperation": "evaluate",
       "concepts": [
         "POR-23-C05"
       ],
-      "targetedError": "Cada região fala outra língua.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O painel documenta variantes lexicais dentro da amostra recolhida.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Na feira de palavras de 27 de junho de 2026, a turma registrou como participantes nomeiam uma erva usada em infusões. Entre 18 cartões, apareceram “hortelã” em doze respostas e “menta” em seis; alguns participantes anotaram qual termo ouviam em casa. O painel manteve as duas palavras e identifica cada cartão por município, sem transformar a quantidade de respostas em regra para toda a região.\nPainel autoral da feira, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-23-Q06",
       "lessonId": "POR-23",
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Variedades do português brasileiro: região, grupo, tempo e situação, qual análise está correta?",
+      "stem": "Que leitura descreve melhor o contraste entre os dois registros?",
       "options": [
         {
           "id": "A",
-          "text": "Pessoa pertence a uma única variedade fixa."
+          "text": "A mensagem formal mostra que Mauro deixou de usar as formas da conversa cotidiana.",
+          "targetsError": "interpretation",
+          "rationale": "O registro apresenta duas mensagens do mesmo dia, adequadas a destinatários e objetivos diferentes."
         },
         {
           "id": "B",
-          "text": "Só o vocabulário varia."
+          "text": "A conversa entre amigos pertence a uma fase anterior da língua, embora ocorra no mesmo dia.",
+          "targetsError": "attention",
+          "rationale": "O relato não compara períodos históricos."
         },
         {
           "id": "C",
-          "text": "Cada região fala outra língua."
+          "text": "A diferença entre as mensagens reflete a origem regional dos dois grupos de destinatários.",
+          "targetsError": "conceptual",
+          "rationale": "O texto atribui a diferença ao contexto de comunicação, sem indicar variação regional."
         },
         {
           "id": "D",
-          "text": "Uma mesma pessoa utiliza repertórios diferentes conforme interlocutor, objetivo e contexto."
+          "text": "A escolha do destinatário ajuda a explicar por que um contato é breve e o outro reúne dados da visita."
         },
         {
           "id": "E",
-          "text": "Variação é sinônimo de erro."
+          "text": "O e-mail reorganiza a conversa como um relato formal da mesma combinação de encontro.",
+          "targetsError": "memory",
+          "rationale": "O e-mail pede confirmação à organização, enquanto a conversa propõe um encontro a amigos."
         }
       ],
       "correctOption": "D",
-      "explanation": "Uma mesma pessoa utiliza repertórios diferentes conforme interlocutor, objetivo e contexto.",
+      "explanation": "A mensagem aos amigos combina uma proposta breve de encontro; o e-mail solicita confirmação à organização. O fato de ambos tratarem da visita não os torna paráfrases, pois cada um atende a um interlocutor e a um objetivo diferente.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze",
       "concepts": [
         "POR-23-C06"
       ],
-      "targetedError": "Variação é sinônimo de erro.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O falante adapta o registro às condições de cada interação.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Em 10 de agosto de 2026, Mauro gravou duas mensagens sobre a visita ao museu. No grupo de amigos, escreveu “bora encontrar na porta às três?”. No e-mail enviado à organização, informou o número de participantes, pediu confirmação da entrada e agradeceu o retorno. A gravação da conversa e o e-mail foram produzidos no mesmo dia por Mauro; a diferença está no destinatário e no objetivo de cada contato.\nRelato autoral de comunicação, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-23-Q07",
       "lessonId": "POR-23",
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Cada região fala outra língua.”. Qual é a melhor correção?",
+      "stem": "Que explicação considera com mais cuidado a diferença entre os bilhetes?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "As escolhas podem refletir época, canal e relação entre quem convida e quem recebe."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "A forma de indicar as horas revela menor domínio da língua no texto antigo.",
+          "targetsError": "conceptual",
+          "rationale": "A oficina não relaciona a escolha mais formal a maior ou menor domínio da língua."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "A mensagem atual não vale como convite porque omite o nome completo do salão.",
+          "targetsError": "interpretation",
+          "rationale": "O relato informa que ela se refere ao mesmo encontro, sem apontar a ausência como problema."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "As escolhas de palavras variam sem relação com o canal ou com os leitores de cada convite.",
+          "targetsError": "attention",
+          "rationale": "A mediadora registra leitores e canais diferentes, fatores relevantes para comparar as peças."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Para preservar a memória do encontro, os convites atuais deveriam repetir a formulação antiga.",
+          "targetsError": "procedural",
+          "rationale": "A atividade compara escolhas e não recomenda adotar uma formulação de outra época."
         }
       ],
       "correctOption": "A",
-      "explanation": "Línguas variam sistematicamente segundo região, grupo social, época, situação comunicativa e outras dimensões.",
+      "explanation": "A oficina compara textos do mesmo encontro em épocas e canais diferentes, dirigidos a leitores distintos. A forma mais formal pode parecer mais correta, mas os dados não associam as escolhas a maior domínio; eles permitem considerar época, interlocução e meio.",
       "difficulty": "applied",
       "cognitiveOperation": "diagnose_error",
       "concepts": [
         "POR-23-C01"
       ],
-      "targetedError": "Cada região fala outra língua.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A comparação envolve tempo, canal e relação entre interlocutores.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Em uma oficina de memória de 15 de setembro de 2026, moradores levaram bilhetes guardados em casa. Um convite de 1985 pede que as pessoas “compareçam ao salão às dezenove horas”; uma mensagem de 2026 diz “passa lá às sete, perto da quadra”. A mediadora anota que os dois textos se referem ao mesmo encontro comunitário, mas foram escritos para leitores e canais diferentes.\nRegistro autoral da oficina, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-23-Q08",
       "lessonId": "POR-23",
       "type": "MCQ",
-      "stimulus": "Uma pessoa escreve “Prezada equipe, solicito informações...” em e-mail formal e envia “me chama quando chegar” a um amigo.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Qual conclusão reúne adequadamente as dimensões presentes no registro?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Os exemplos da praça indicam uma variedade regional diferente das usadas em casa e no pedido.",
+          "targetsError": "prerequisite",
+          "rationale": "O registro não associa a situação da praça a uma região específica."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "A palavra aprendida com a avó mostra que a pessoa não domina a escrita formal.",
+          "targetsError": "conceptual",
+          "rationale": "O pedido formal inclui prazo e endereço, sem evidência de dificuldade de escrita."
         },
         {
           "id": "C",
-          "text": "A mudança é situacional; o falante adapta recursos a interlocutor e finalidade."
+          "text": "A pessoa mantém uma única forma de falar, apesar de mudar de interlocutor e tarefa.",
+          "targetsError": "interpretation",
+          "rationale": "A pesquisadora registra escolhas distintas em três situações."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "A mudança para um pedido formal documenta uma transformação histórica ocorrida naquela semana.",
+          "targetsError": "attention",
+          "rationale": "O relato observa situações atuais, não uma mudança histórica da língua."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "A pessoa utiliza repertórios diversos e ajusta escolhas a interlocutores e situações."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A mudança é situacional; o falante adapta recursos a interlocutor e finalidade.",
+      "correctOption": "E",
+      "explanation": "A observação mostra uma única pessoa usando repertórios em família, na praça e num pedido formal. As diferenças estão relacionadas a interlocutores e objetivos; o registro não apresenta uma mudança histórica ou um contraste regional específico.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-23-C01",
         "POR-23-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O falante alterna recursos conforme os contextos descritos.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "No registro de 29 de outubro de 2026, uma pesquisadora ouviu a mesma pessoa apresentar um projeto na praça, conversar com familiares e escrever à secretaria. Na conversa familiar, ela usou uma palavra aprendida com a avó; na praça, explicou o projeto com exemplos; no pedido formal, incluiu o prazo e o endereço. A pesquisadora anotou que a pessoa circula entre essas situações ao longo da semana.\nRelato autoral de observação, Equipe Estudisc, 2026."
     }
   ]
 }

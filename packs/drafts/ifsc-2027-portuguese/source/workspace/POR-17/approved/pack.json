@@ -156,300 +156,316 @@
     {
       "id": "POR-17-Q01",
       "lessonId": "POR-17",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Tese, argumentos e estratégias argumentativas em uso real da língua?",
+      "stem": "Qual posição central Júlia sustenta no artigo?",
       "options": [
         {
           "id": "A",
-          "text": "Tese e tema são iguais."
+          "text": "A sala de leitura tem mesas vazias antes do fim da tarde."
         },
         {
           "id": "B",
-          "text": "Citar especialista torna tudo verdadeiro."
+          "text": "Os alunos noturnos esperam o ônibus no pátio após a aula."
         },
         {
           "id": "C",
-          "text": "Texto argumentativo não pode apresentar fatos."
+          "text": "A consulta aos usuários deve acontecer depois de um mês de teste."
         },
         {
           "id": "D",
-          "text": "Tese é a posição central defendida; argumento é a razão/evidência usada para sustentá-la."
+          "text": "A equipe precisa avaliar quem usa as mesas no começo da noite."
         },
         {
           "id": "E",
-          "text": "Qualquer opinião já é argumento forte."
+          "text": "A biblioteca deveria abrir até as 20h em duas noites da semana."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Tese é a posição central defendida; argumento é a razão/evidência usada para sustentá-la.",
-      "difficulty": "foundation",
-      "cognitiveOperation": "recognize",
+      "correctOption": "E",
+      "explanation": "A proposta de manter a biblioteca aberta até as 20h em duas noites aparece como recomendação da autora e orienta os exemplos e o teste sugerido. A informação sobre as mesas vazias contribui para a justificativa, mas não é a posição que o artigo defende.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-17-C01"
       ],
-      "targetedError": "Qualquer opinião já é argumento forte.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir uma observação usada no texto com a posição que organiza a proposta da autora.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Artigo de opinião de Júlia Reis, jornal do campus, 7 de março — A biblioteca fecha às 17h, justamente quando termina a última aula de vários cursos noturnos. A estudante defende que o espaço permaneça aberto até as 20h em duas noites da semana. Ela relata que, nesses dias, parte dos alunos espera o ônibus no pátio sem lugar para estudar e que a sala de leitura já conta com mesas vazias no início da noite. O texto termina sugerindo um teste de um mês, seguido de consulta aos usuários e avaliação da equipe."
     },
     {
       "id": "POR-17-Q02",
       "lessonId": "POR-17",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Tese, argumentos e estratégias argumentativas, qual princípio deve orientar a análise?",
+      "stem": "Qual informação funciona como razão para apoiar a proposta da carta?",
       "options": [
         {
           "id": "A",
-          "text": "Dados, exemplos, comparações, causa/consequência e falas de especialistas podem funcionar como estratégias argumentativas."
+          "text": "A carta foi encaminhada ao conselho de mobilidade em 12 de abril pelos moradores do Alto da Serra."
         },
         {
           "id": "B",
-          "text": "Citar especialista torna tudo verdadeiro."
+          "text": "A empresa poderá divulgar o número de embarques ao fim das quatro semanas propostas."
         },
         {
           "id": "C",
-          "text": "Texto argumentativo não pode apresentar fatos."
+          "text": "A sugestão prevê um teste curto antes de decidir se o trajeto noturno será mantido."
         },
         {
           "id": "D",
-          "text": "Qualquer opinião já é argumento forte."
+          "text": "A parada atual fica a vinte minutos do posto, e o turno dos três trabalhadores acaba tarde."
         },
         {
           "id": "E",
-          "text": "Tese e tema são iguais."
+          "text": "A carta propõe publicar os registros de embarque antes que o conselho escolha manter a linha."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Dados, exemplos, comparações, causa/consequência e falas de especialistas podem funcionar como estratégias argumentativas.",
-      "difficulty": "direct",
-      "cognitiveOperation": "understand",
+      "correctOption": "D",
+      "explanation": "A caminhada de vinte minutos até a parada e o término tardio do trabalho mostram dificuldades de acesso que sustentam a viagem noturna. O teste de quatro semanas é uma etapa de avaliação da proposta, não a razão pela qual os moradores a solicitaram.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-17-C02"
       ],
-      "targetedError": "Tese e tema são iguais.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tratar um procedimento de avaliação como se fosse a justificativa da proposta.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Carta enviada ao conselho de mobilidade, 12 de abril — Moradores do Alto da Serra pedem que a linha de ônibus passe pelo bairro depois das 21h. A carta menciona que a parada atual fica a vinte minutos a pé do posto de saúde e que três trabalhadores da padaria encerram o turno nesse horário. A autora relata que um vizinho perdeu duas consultas no mês anterior porque não conseguiu voltar para casa a tempo. Ela sugere que a empresa teste uma viagem noturna por quatro semanas e publique os registros de embarque antes de decidir se mantém o trajeto."
     },
     {
       "id": "POR-17-Q03",
       "lessonId": "POR-17",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Tese, argumentos e estratégias argumentativas?",
+      "stem": "Qual conclusão é sustentada diretamente pelos dados apresentados?",
       "options": [
         {
           "id": "A",
-          "text": "Texto argumentativo não pode apresentar fatos."
+          "text": "Estudantes de outras turmas também evitam o bebedouro do corredor leste por causa da fila."
         },
         {
           "id": "B",
-          "text": "Qualquer opinião já é argumento forte."
+          "text": "Entre os 28 respondentes, 17 relataram levar garrafa por causa da fila no corredor leste."
         },
         {
           "id": "C",
-          "text": "Argumento de autoridade é forte quando a fonte é pertinente e a fala realmente sustenta a tese."
+          "text": "A instalação de outro bebedouro eliminaria a espera em cada intervalo."
         },
         {
           "id": "D",
-          "text": "Tese e tema são iguais."
+          "text": "Os oito estudantes que usam o equipamento sem demora formam a maioria da turma."
         },
         {
           "id": "E",
-          "text": "Citar especialista torna tudo verdadeiro."
+          "text": "A turma escolheu responder porque a aula de geografia foi cancelada."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Argumento de autoridade é forte quando a fonte é pertinente e a fala realmente sustenta a tese.",
+      "correctOption": "B",
+      "explanation": "O formulário informa que 17 dos 28 respondentes da turma disseram levar garrafa por causa da fila naquele bebedouro. A generalização para todo o campus extrapolaria uma consulta voluntária limitada a uma turma e a um equipamento.",
       "difficulty": "applied",
-      "cognitiveOperation": "discriminate",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-17-C03"
       ],
-      "targetedError": "Citar especialista torna tudo verdadeiro.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ampliar uma amostra local e voluntária para pessoas e equipamentos que não foram consultados.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Registro da consulta feita pela turma do 1º B, 5 de maio — Vinte e oito estudantes responderam a um formulário sobre o bebedouro do corredor leste. Dezessete disseram que costumam levar garrafa de casa porque encontram fila no intervalo; oito afirmaram usar o equipamento sem demora; três marcaram “não sei”. O representante apresentou os dados em reunião e sugeriu instalar outro ponto de água no prédio. A pesquisa foi divulgada apenas na turma, que escolheu responder voluntariamente durante a aula de geografia."
     },
     {
       "id": "POR-17-Q04",
       "lessonId": "POR-17",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Tese, argumentos e estratégias argumentativas?",
+      "stem": "Que papel a fala de Marina desempenha na argumentação?",
       "options": [
         {
           "id": "A",
-          "text": "Qualquer opinião já é argumento forte."
+          "text": "Ela confirma que o conselho já separou verba para a compra de mudas e aprovou a despesa."
         },
         {
           "id": "B",
-          "text": "Tese e tema são iguais."
+          "text": "Ela substitui a proposta de arborização por uma recomendação de retirar a fiação."
         },
         {
           "id": "C",
-          "text": "Citar especialista torna tudo verdadeiro."
+          "text": "Ela oferece orientação técnica pertinente para planejar o plantio no pátio descrito."
         },
         {
           "id": "D",
-          "text": "Texto argumentativo não pode apresentar fatos."
+          "text": "Ela assegura que a espécie escolhida já se adapta às raízes e à fiação baixa."
         },
         {
           "id": "E",
-          "text": "Refutação responde a posição contrária; negociação reconhece parcialmente outra perspectiva para reorganizar a defesa."
+          "text": "Ela relata que o conselho escolar já fez a vistoria do canteiro."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Refutação responde a posição contrária; negociação reconhece parcialmente outra perspectiva para reorganizar a defesa.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "apply",
+      "correctOption": "C",
+      "explanation": "A técnica relaciona o plantio a condições concretas do pátio, como espaço para raízes e proximidade dos cabos, oferecendo orientação ligada à decisão discutida. A fala não aprova qualquer muda nem substitui a proposta por uma ordem de retirada da fiação.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-17-C04"
       ],
-      "targetedError": "Texto argumentativo não pode apresentar fatos.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tratar a citação especializada como aprovação irrestrita ou como prova de uma ação já realizada.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Trecho do artigo “Uma sombra no pátio”, de Nádia Lopes, 18 de junho — A autora pede que a escola plante árvores junto às mesas externas. Ela cita a fala de Marina Alves, técnica de arborização do município: “Antes da escolha, é preciso conferir o espaço para as raízes e a distância dos cabos.” Em seguida, Nádia observa que a orientação se aplica ao pátio mostrado nas fotografias, onde há fiação baixa ao lado de um canteiro estreito. O artigo propõe chamar a equipe técnica antes de comprar mudas e informa que o conselho escolar discutirá o orçamento na semana seguinte."
     },
     {
       "id": "POR-17-Q05",
       "lessonId": "POR-17",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Tese, argumentos e estratégias argumentativas?",
+      "stem": "Como o editorial responde à preocupação com a limpeza?",
       "options": [
         {
           "id": "A",
-          "text": "Tese e tema são iguais."
+          "text": "Reconhece o custo apontado e propõe um teste acompanhado para avaliar a viabilidade."
         },
         {
           "id": "B",
-          "text": "Modalizadores indicam grau de certeza, possibilidade, obrigação ou avaliação e revelam postura do enunciador."
+          "text": "Desconsidera o custo e afirma que a equipe consegue cuidar da limpeza dentro do turno previsto."
         },
         {
           "id": "C",
-          "text": "Citar especialista torna tudo verdadeiro."
+          "text": "Troca a proposta de horário estendido por uma reforma da sala de leitura."
         },
         {
           "id": "D",
-          "text": "Texto argumentativo não pode apresentar fatos."
+          "text": "Atribui à resposta enviada à direção a decisão de fechar a sala mais cedo."
         },
         {
           "id": "E",
-          "text": "Qualquer opinião já é argumento forte."
+          "text": "Usa o número de usuários como comprovação de que a limpeza já foi resolvida."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Modalizadores indicam grau de certeza, possibilidade, obrigação ou avaliação e revelam postura do enunciador.",
+      "correctOption": "A",
+      "explanation": "O texto acolhe a objeção sobre limpeza e responde com um período de teste, escala de organização e possibilidade de revisão. A leitura de que a autora nega o trabalho adicional falha porque a escala é justamente uma medida para acompanhá-lo.",
       "difficulty": "applied",
-      "cognitiveOperation": "evaluate",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-17-C05"
       ],
-      "targetedError": "Qualquer opinião já é argumento forte.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir reconhecimento da objeção com abandono da proposta ou negação do custo apontado.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Editorial do boletim escolar, 9 de agosto — O texto defende manter a sala de leitura aberta até as 19h às quartas-feiras, quando estudantes aguardam atividades esportivas. Uma resposta enviada à direção questiona o custo de limpeza no fim do dia. A autora reconhece a preocupação e sugere iniciar o horário estendido por seis semanas, com uma escala voluntária de organização e registro do número de usuários. Se a procura for baixa ou a equipe não conseguir cumprir a escala, o conselho poderá rever a experiência. A decisão será discutida em assembleia aberta às famílias."
     },
     {
       "id": "POR-17-Q06",
       "lessonId": "POR-17",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Tese, argumentos e estratégias argumentativas, qual análise está correta?",
+      "stem": "O que o uso de “talvez” e “possa” comunica nessa recomendação?",
       "options": [
         {
           "id": "A",
-          "text": "Citar especialista torna tudo verdadeiro."
+          "text": "Que o novo horário já foi adotado de manhã e está disponível durante as semanas de projeto."
         },
         {
           "id": "B",
-          "text": "Texto argumentativo não pode apresentar fatos."
+          "text": "Que o laboratório fechará uma hora mais cedo durante os projetos."
         },
         {
           "id": "C",
-          "text": "Qualquer opinião já é argumento forte."
+          "text": "Que o conselho considera encerrada a conversa sobre a equipe técnica."
         },
         {
           "id": "D",
-          "text": "Um texto pode informar e argumentar ao mesmo tempo; é preciso observar se há posição defendida."
+          "text": "Que a diretora deve aplicar imediatamente um novo horário de atendimento."
         },
         {
           "id": "E",
-          "text": "Tese e tema são iguais."
+          "text": "Que a abertura antecipada é uma proposta possível, ainda dependente de avaliação."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Um texto pode informar e argumentar ao mesmo tempo; é preciso observar se há posição defendida.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "analyze",
+      "correctOption": "E",
+      "explanation": "“Talvez” e “possa” apresentam a abertura antecipada como possibilidade, coerente com a consulta ainda pendente sobre equipe e segurança. A leitura de uma ordem imediata não combina com a minuta, que será enviada à diretora para análise.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-17-C06"
       ],
-      "targetedError": "Tese e tema são iguais.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler uma proposta modalizada como decisão obrigatória já em vigor.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Minuta de recomendação do conselho de estudantes, 11 de setembro — “Talvez o laboratório possa abrir uma hora antes nas semanas de projeto.” A frase foi incluída depois que grupos relataram dificuldade para terminar experiências antes do início das aulas. A minuta propõe conversar com a equipe responsável e verificar se há técnico disponível no primeiro horário; a diretora ainda não recebeu o documento. O conselho evitou registrar uma ordem porque não administra o laboratório e quer apresentar a ideia como possibilidade sujeita à análise de recursos e segurança."
     },
     {
       "id": "POR-17-Q07",
       "lessonId": "POR-17",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Qualquer opinião já é argumento forte.”. Qual é a melhor correção?",
+      "stem": "Qual acréscimo daria apoio mais concreto à proposta da autora?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "Repetir que a autora gostou da mostra de arte exibida no corredor."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Listar as cores preferidas pelos colegas para a parede do refeitório."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "Afirmar que a pintura deixaria o refeitório mais bonito para quem almoça."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "Consultar os usuários sobre o mural e indicar quem pode fazer a pintura."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Informar quantos visitantes de outra série passaram pela mostra no corredor."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Tese é a posição central defendida; argumento é a razão/evidência usada para sustentá-la.",
+      "correctOption": "D",
+      "explanation": "Uma consulta aos usuários poderia mostrar interesse em expor trabalhos no refeitório, e indicar responsáveis tornaria a proposta mais verificável. Repetir que o mural seria bonito mantém a opinião, mas não acrescenta evidência ou plano de realização.",
       "difficulty": "applied",
-      "cognitiveOperation": "diagnose_error",
+      "cognitiveOperation": "evaluate",
       "concepts": [
-        "POR-17-C01"
+        "POR-17-C01",
+        "POR-17-C03"
       ],
-      "targetedError": "Qualquer opinião já é argumento forte.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tomar a repetição de uma preferência pessoal como sustentação adicional da proposta.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Carta de um estudante ao jornal da escola, 22 de outubro — “A parede do refeitório deveria receber um mural; o desenho deixaria o lugar mais bonito.” O texto foi enviado depois que a turma visitou uma mostra de arte no corredor. A autora diz que colegas costumam permanecer no refeitório por cerca de vinte minutos e que não há trabalhos estudantis expostos naquele ambiente. A edição aceita cartas breves e pede que propostas de mudança indiquem como poderiam ser executadas e que necessidade atenderiam."
     },
     {
       "id": "POR-17-Q08",
       "lessonId": "POR-17",
+      "version": 2,
       "type": "MCQ",
-      "stimulus": "Um artigo defende ampliar ciclovias, cita dados de acidentes, compara custos e responde à crítica de que haveria menos espaço para carros.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Como o coletivo organiza sua defesa diante da preocupação apresentada?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Troca a proposta por uma campanha para que moradores deixem de usar bicicletas."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "Reconhece a chuva como dificuldade e propõe testar o abrigo com acompanhamento."
         },
         {
           "id": "C",
-          "text": "A defesa da ampliação é tese; dados/comparação sustentam; resposta à crítica é refutação."
+          "text": "Usa a opinião dos comerciantes como prova de que o abrigo já foi construído."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "Afirma que a praça permanecerá seca durante os três meses de observação."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "Conclui que as bicicletas devem ficar dentro do mercado durante temporais."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A defesa da ampliação é tese; dados/comparação sustentam; resposta à crítica é refutação.",
-      "difficulty": "ifsc",
+      "correctOption": "B",
+      "explanation": "O coletivo admite a preocupação com chuva e passagem, mas mantém a proposta por meio de um teste monitorado e de uma alternativa de localização. A leitura de abandono da ideia falha porque o texto descreve como ajustá-la, não substituí-la.",
+      "difficulty": "applied",
       "cognitiveOperation": "analyze_context",
       "concepts": [
-        "POR-17-C01",
-        "POR-17-C02"
+        "POR-17-C05",
+        "POR-17-C03"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir concessão de uma preocupação com desistência da posição defendida.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Texto para o fórum do bairro, 30 de novembro — O coletivo de ciclistas pede a instalação de um abrigo para bicicletas perto do mercado. O texto reconhece que a praça fica molhada durante temporais e que alguns moradores preferem guardar a bicicleta em casa. Em seguida, propõe testar o abrigo por três meses em uma área já pavimentada, medir quantas pessoas o utilizam e ouvir comerciantes da rua. Se a estrutura atrapalhar a passagem, o grupo sugere deslocá-la para a lateral do mercado."
     }
   ],
   "concepts": [
