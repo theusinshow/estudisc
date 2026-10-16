@@ -8,6 +8,8 @@ import { getDatabase } from "@/db/connection";
 import type { ContentDatabase } from "./types";
 import {ContentReleaseRepository} from "./release-repository";
 import {ContentBundleResolver} from "./bundle-resolver";
+import {assertStandaloneQuestions} from "./standalone-question-repository";
+import {standaloneQuestionPublicationSchema} from "@/features/questions/standalone-set";
 
 export class ContentPublicationService{constructor(protected readonly db:ContentDatabase=getDatabase()){}
 async publish(releaseId:string,actorId?:string){return this.publishRelease(releaseId,undefined,actorId);}
@@ -41,6 +43,34 @@ private async publishRelease(releaseId:string,direct?:Readonly<{actorId:string;r
     else if(editorialActorId)await tx.insert(contentPublicationEvents).values({releaseId,actorId:editorialActorId,mode:"editorial_reviewed",reason:"Published after four recorded independent editorial approvals and structural checks."});
     return {published:true};
   });}
+/** Admin Direct publication of standalone assessment Questions (ADR 0065); never attaches them to a lesson. */
+async publishStandaloneQuestionsDirect(actor:OwnerProfile,input:unknown){
+    if(actor.role!=="ADMIN"||!actor.ownerId.trim())throw new AccessDeniedError();
+    const request=standaloneQuestionPublicationSchema.parse(input);
+    return this.db.transaction(async tx=>{
+      await assertStandaloneQuestions(tx,request.questions.map(ref=>ref.id));
+      const releases=await new ContentReleaseRepository(tx).list();
+      const bundle=request.questions.map(ref=>{
+        const release=releases.find(row=>row.targetType==="question"&&row.stableId===ref.id&&row.version===ref.version);
+        if(!release)throw new Error(`Release not registered: question ${ref.id} v${ref.version}`);
+        return release;
+      });
+      const locked=[];
+      for(const release of [...bundle].sort((a,b)=>a.id.localeCompare(b.id))){
+        const [current]=await tx.select().from(contentReleases).where(eq(contentReleases.id,release.id)).for("update");
+        if(!current)throw new Error("Release not found");
+        if(current.status==="retired")throw new Error("Retired version requires a new content version");
+        locked.push(current);
+      }
+      const repo=new ContentPublicationService(tx);
+      for(const release of bundle){
+        const bank=await new DrizzleQuestionRepository(tx).getVersion(release.stableId,release.version);
+        if(!bank||bank.question.provenance.type==="official_exam"||bank.question.exposurePolicy.reservedForAssessment)throw new Error(`Not a standalone assessment Question: ${release.stableId}`);
+        await repo.publishRelease(release.id,{actorId:actor.ownerId,reason:request.reason});
+      }
+      return {published:true,releases:bundle.length,newlyPublished:locked.filter(row=>row.status!=="published").length};
+    });
+  }
 async publishLessonsDirect(actor:OwnerProfile,input:unknown){
     if(actor.role!=="ADMIN"||!actor.ownerId.trim())throw new AccessDeniedError();
     const request=directPublicationSchema.parse(input);

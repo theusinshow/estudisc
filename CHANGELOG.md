@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-16 — Standalone simulado Questions (ADR 0065)
+
+- New ADMIN-only path for standalone assessment Questions: import new draft Questions bound to a Track's Concepts and register their releases (`StandaloneQuestionRepository.importSet`), then publish them through Admin Direct with one audit event each (`ContentPublicationService.publishStandaloneQuestionsDirect`). They are never attached to a lesson. Exposed at `POST /api/admin/standalone-questions`.
+- Re-running an import is idempotent. Changed content, official or reserved provenance, and ids already used by a Pack, an activity or an exit ticket are refused. Practice, review and the planner never offer these Questions.
+- Assessment templates accept an optional `scopeTrackIds`, so one FULL_SIMULATION can use Concepts from all subject Tracks. Existing templates are unchanged.
+- Content Studio: `simulado-questions.ts` converts the ChatGPT and Codex mathematics formats (documented topic→Concept table, `SIM-` ids), `simulado-builder.ts` builds `Simulado IFSC <n>` templates (28 Questions, 7 per area, 240 min) checked by the engine's composition rules, and `simulado-prepare.ts` writes import files offline.
 ## 2026-10-16 — New lessons in a published Track (ADR 0064)
 
 - New import schema `caderno.lesson-new.v1` adds one new draft lesson (version 1) at the end of an existing module of an imported Track version. The lesson brings its own new Concepts, new draft Questions (non-official, not reserved) and sources. Blocks use only the existing text renderers. `POST /api/import/lesson` and its preview accept it. Re-importing the same pack is idempotent, and conflicting packs are refused. Publication goes through the unchanged Admin Direct path.
