@@ -108,3 +108,8 @@ describe("validate-packs templating rules", () => {
     expect(validatePack(pack(varied), config).filter((violation: Violation) => violation.rule === "R11")).toHaveLength(0);
   });
 });
+
+it("R9 ignores short numeric answers that repeat naturally", () => {
+  const numeric = clean().map(entry => ({ ...entry, choices: entry.choices.map(choice => choice.id === "E" ? { ...choice, content: "12 cm" } : choice) }));
+  expect(validatePack(pack(numeric), config).some((violation: Violation) => violation.rule === "R9")).toBe(false);
+});
