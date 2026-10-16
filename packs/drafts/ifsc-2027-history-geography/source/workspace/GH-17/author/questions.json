@@ -1,176 +1,230 @@
 [
   {
     "id": "GH-17-Q001",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Brasil Monárquico, qual afirmação está correta?",
+    "stem": "Uma professora projeta uma reprodução da Constituição de 1824 e pede que a turma observe como o texto organiza os poderes. No quadro, os estudantes anotam que o documento nomeia quatro funções políticas e inclui uma associada diretamente ao imperador. Uma ficha de contexto informa que a Carta foi outorgada por D. Pedro I depois da independência. A atividade não compara ainda os direitos de voto nem o funcionamento de cada instituição.\n\nQue aspecto da organização política o material evidencia?",
     "options": [
       {
         "key": "A",
-        "text": "A Constituição de 1824 transformou o Brasil em república."
+        "text": "A Constituição incluiu um poder exercido pelo imperador."
       },
       {
         "key": "B",
-        "text": "A Constituição de 1824 foi outorgada e instituiu quatro poderes, incluindo o Poder Moderador do imperador."
+        "text": "O Congresso exercia a função chamada Poder Moderador.",
+        "targetsError": "institutional_actor_swap",
+        "rationale": "A anotação associa uma das funções ao imperador, não ao Congresso."
       },
       {
         "key": "C",
-        "text": "O Poder Moderador era exercido pelo Congresso."
+        "text": "A Carta manteve a monarquia e definiu os poderes do Estado.",
+        "targetsError": "regime_confusion",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       },
       {
         "key": "D",
-        "text": "O período regencial foi politicamente estável e sem revoltas."
+        "text": "A divisão em quatro funções eliminou disputas entre os grupos políticos.",
+        "targetsError": "institutional_effect_overreach",
+        "rationale": "A reprodução descreve a organização do poder, não o fim das disputas."
       },
       {
         "key": "E",
-        "text": "O Segundo Reinado aboliu a escravidão logo no início."
+        "text": "A outorga definiu regras políticas sem participação direta da população na redação.",
+        "targetsError": "authorship_confusion",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A Constituição de 1824 foi outorgada e instituiu quatro poderes, incluindo o Poder Moderador do imperador.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "correctOption": "A",
+    "explanation": "A lista inclui uma função associada ao imperador, mostrando que ele ocupava posição própria na arquitetura constitucional. A interpretação que atribui o Poder Moderador ao Congresso troca o ator indicado na ficha.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-17-CON-01"
     ],
-    "targetedError": "foundation",
+    "primaryConceptId": "GH-17-CON-01",
+    "targetedError": "constitutional_structure",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-17-Q002",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “A Constituição de 1824 transformou o Brasil em república.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Em uma simulação autoral de leitura de jornal, uma notícia ambientada em 1831 descreve disputas no Rio e a renúncia de D. Pedro I ao trono. Um segundo recorte informa que o herdeiro era uma criança e reproduz a reação de comerciantes preocupados com a continuidade do governo. A turma recebe um cartão cronológico sem o nome do arranjo político que veio em seguida. O conjunto é uma composição didática, não a transcrição de edições históricas reais.\n\nQual consequência política decorre dessa sequência?",
     "options": [
       {
         "key": "A",
-        "text": "A Constituição de 1824 transformou o Brasil em república."
+        "text": "A abdicação abriu uma crise de sucessão dentro da monarquia.",
+        "targetsError": "regime_change_invention",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       },
       {
         "key": "B",
-        "text": "O Poder Moderador era exercido pelo Congresso."
+        "text": "A abdicação foi seguida pela coroação imediata do filho como adulto governante.",
+        "targetsError": "age_and_regency_error",
+        "rationale": "O texto informa que o herdeiro ainda era criança."
       },
       {
         "key": "C",
-        "text": "O período regencial foi politicamente estável e sem revoltas."
+        "text": "A saída de Pedro I eliminou as disputas que atravessavam o governo imperial.",
+        "targetsError": "conflict_resolution_overreach",
+        "rationale": "A sequência registra a mudança de governante, mas não declara o fim das disputas."
       },
       {
         "key": "D",
-        "text": "O Primeiro Reinado enfrentou conflitos políticos e terminou com a abdicação de D. Pedro I em 1831."
+        "text": "A abdicação levou o herdeiro ao trono e iniciou a Regência."
       },
       {
         "key": "E",
-        "text": "O Segundo Reinado aboliu a escravidão logo no início."
+        "text": "A Regência começou antes da abdicação e terminou com a saída de Pedro I.",
+        "targetsError": "chronology_reversal",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       }
     ],
     "correctOption": "D",
-    "explanation": "O Primeiro Reinado enfrentou conflitos políticos e terminou com a abdicação de D. Pedro I em 1831.",
-    "difficulty": "DIRECT",
+    "explanation": "A notícia simula a abdicação e apresenta o herdeiro como criança, o que indica a necessidade de um governo regencial. A hipótese republicana não se ajusta à transferência do trono para o sucessor de D. Pedro I.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-17-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "primaryConceptId": "GH-17-CON-02",
+    "targetedError": "first_reign_transition",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-17-Q003",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: O Império brasileiro combinou instituições constitucionais, monarquia e uma sociedade escravista. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Um atlas de sala reúne notícias de revoltas ocorridas em diferentes províncias durante a Regência. Ao lado de cada região, há uma anotação sobre debates entre quem defendia maior autonomia provincial e quem apoiava um governo central mais forte. As notícias não apresentam uma única pauta para todos os movimentos. Na legenda, a equipe explica que os mapas indicam onde ocorreram conflitos, enquanto as notas políticas resumem desacordos sobre a organização do Império.\n\nQual leitura relaciona melhor o mapa e as anotações?",
     "options": [
       {
         "key": "A",
-        "text": "A Constituição de 1824 transformou o Brasil em república."
+        "text": "As revoltas expressavam demandas provinciais que nem sempre coincidiam.",
+        "targetsError": "revolt_uniformity",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       },
       {
         "key": "B",
-        "text": "O Poder Moderador era exercido pelo Congresso."
+        "text": "As revoltas pressionaram o governo central, que continuou atuando durante a Regência.",
+        "targetsError": "conflict_as_state_collapse",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       },
       {
         "key": "C",
-        "text": "O período regencial teve disputas sobre centralização e autonomia e foi marcado por revoltas em várias províncias."
+        "text": "A Regência reuniu revoltas provinciais e debates sobre autonomia e centralização."
       },
       {
         "key": "D",
-        "text": "O período regencial foi politicamente estável e sem revoltas."
+        "text": "As discussões sobre autonomia começaram após a coroação de D. Pedro II.",
+        "targetsError": "period_boundary_error",
+        "rationale": "As peças situam os debates dentro do período regencial."
       },
       {
         "key": "E",
-        "text": "O Segundo Reinado aboliu a escravidão logo no início."
+        "text": "Os mapas atribuem uma causa política comum às revoltas registradas.",
+        "targetsError": "single_cause_generalization",
+        "rationale": "A coleção não identifica uma causa única para movimentos com pautas diferentes."
       }
     ],
     "correctOption": "C",
-    "explanation": "O período regencial teve disputas sobre centralização e autonomia e foi marcado por revoltas em várias províncias.",
-    "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "explanation": "O atlas apresenta revoltas em várias províncias e registra desacordos sobre autonomia e centralização. A interpretação de uma causa uniforme não se sustenta, pois a própria legenda destaca pautas distintas.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-17-CON-03"
     ],
-    "targetedError": "relationship",
+    "primaryConceptId": "GH-17-CON-03",
+    "targetedError": "regional_conflict_and_autonomy",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-17-Q004",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Brasil Monárquico por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Uma exposição sobre o Segundo Reinado coloca lado a lado um mapa de expansão das áreas de café e registros de fazendas que utilizavam trabalho escravizado. Outra ficha marca a Lei Áurea, de 1888, como o momento em que a escravidão foi extinta juridicamente. Os curadores observam que a produção cafeeira se expandiu ao longo do período, enquanto as relações de trabalho foram objeto de conflitos e mudanças.\n\nQue conclusão é apoiada pelas peças?",
     "options": [
       {
         "key": "A",
-        "text": "O Segundo Reinado consolidou o poder imperial, expandiu a economia cafeeira e manteve a escravidão até 1888."
+        "text": "A produção de café avançou enquanto fazendas ainda utilizavam trabalho escravizado.",
+        "targetsError": "labor_transition_timing",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       },
       {
         "key": "B",
-        "text": "A Constituição de 1824 transformou o Brasil em república."
+        "text": "O café se expandiu durante a escravidão, abolida legalmente em 1888."
       },
       {
         "key": "C",
-        "text": "O Poder Moderador era exercido pelo Congresso."
+        "text": "A Lei Áurea descreve o início da economia cafeeira no Império.",
+        "targetsError": "document_scope",
+        "rationale": "A ficha identifica a lei como marco da extinção jurídica da escravidão."
       },
       {
         "key": "D",
-        "text": "O período regencial foi politicamente estável e sem revoltas."
+        "text": "A presença de registros de fazenda comprova que o café era produzido sem conflitos sociais.",
+        "targetsError": "economic_sanitization",
+        "rationale": "Os curadores registram disputas e mudanças nas relações de trabalho."
       },
       {
         "key": "E",
-        "text": "O Segundo Reinado aboliu a escravidão logo no início."
+        "text": "A escravidão foi abolida antes de o café se expandir nas áreas indicadas.",
+        "targetsError": "chronology_reversal",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       }
     ],
-    "correctOption": "A",
-    "explanation": "O Segundo Reinado consolidou o poder imperial, expandiu a economia cafeeira e manteve a escravidão até 1888.",
+    "correctOption": "B",
+    "explanation": "O mapa de café e os registros de trabalho escravizado coexistem na exposição, que localiza a extinção jurídica em 1888. A alternativa que antecipa o fim da escravidão não corresponde à ficha da Lei Áurea.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-17-CON-04"
     ],
-    "targetedError": "application",
+    "primaryConceptId": "GH-17-CON-04",
+    "targetedError": "economic_and_social_change",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-17-Q005",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. A Constituição de 1824 foi outorgada e instituiu quatro poderes, incluindo o Poder Moderador do imperador.\nII. A Constituição de 1824 transformou o Brasil em república.\nIII. O período regencial teve disputas sobre centralização e autonomia e foi marcado por revoltas em várias províncias.\nIV. O Poder Moderador era exercido pelo Congresso.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma linha do tempo preparada por um centro cultural começa com a outorga da Constituição de 1824, passa pela abdicação de D. Pedro I em 1831, destaca revoltas durante a Regência e termina com o crescimento do café no Segundo Reinado. Na margem, estudantes anotam que a escravidão persistiu até 1888 e que, nos anos finais do Império, diferentes tensões se acumularam. O material é apresentado como síntese de processos, não como lista completa de acontecimentos.\n\nQual leitura reúne os períodos sem apagar suas diferenças?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A Regência e o Segundo Reinado tiveram a mesma estabilidade e as mesmas pautas políticas.",
+        "targetsError": "period_flattening",
+        "rationale": "A linha do tempo destaca revoltas na Regência e mudanças posteriores."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A Constituição de 1824 organizou uma monarquia que mais tarde expandiu a produção cafeeira.",
+        "targetsError": "regime_anachronism",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A escravidão foi abolida durante a Regência e não continuou no Segundo Reinado.",
+        "targetsError": "abolition_chronology",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O Império passou por fases distintas, manteve a escravidão e enfrentou tensões."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "O crescimento do café explica sozinho as revoltas e a crise final da monarquia.",
+        "targetsError": "economic_monocausality",
+        "rationale": "A linha do tempo lista processos políticos e sociais além da economia cafeeira."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "D",
+    "explanation": "A sequência diferencia Primeiro Reinado, Regência e Segundo Reinado e registra a escravidão até 1888. Reduzir revoltas e crise a uma única causa econômica deixa de fora os processos políticos e sociais indicados.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -179,120 +233,49 @@
       "GH-17-CON-03",
       "GH-17-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "primaryConceptId": "GH-17-CON-01",
+    "targetedError": "historical_synthesis",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-17-Q006",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Brasil Monárquico. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Uma pesquisadora simula a organização de três conjuntos documentais dos anos finais do Império: debates públicos sobre a abolição, cartas de oficiais insatisfeitos com o governo e textos republicanos de grupos políticos. As fontes foram escritas por pessoas com posições diferentes e em anos distintos. Na introdução, a pesquisadora explica que nenhuma carta, isoladamente, representa o país inteiro; o objetivo é observar como várias tensões se aproximaram no fim da monarquia.\n\nQual conclusão é mais compatível com o arquivo?",
     "options": [
       {
         "key": "A",
-        "text": "A Constituição de 1824 transformou o Brasil em república."
+        "text": "A crise final reuniu tensões sociais, militares e republicanas durante o desgaste do Império."
       },
       {
         "key": "B",
-        "text": "O Poder Moderador era exercido pelo Congresso."
+        "text": "O republicanismo ganhou força após uma carta militar expressar oposição ao governo.",
+        "targetsError": "single_document_causation",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       },
       {
         "key": "C",
-        "text": "O período regencial foi politicamente estável e sem revoltas."
+        "text": "As cartas de oficiais descrevem as posições de grupos sociais nos anos finais do Império.",
+        "targetsError": "source_to_population",
+        "rationale": "A introdução ressalva que uma carta não representa o país inteiro."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Os debates abolicionistas começaram após a derrubada da monarquia.",
+        "targetsError": "chronology_inversion",
+        "rationale": "O arquivo situa os debates entre as tensões dos anos finais do Império."
       },
       {
         "key": "E",
-        "text": "Relacionar instituições políticas, economia e conflitos sociais ao analisar a monarquia."
+        "text": "Os textos republicanos mostram que a monarquia perdeu apoio entre diversos grupos.",
+        "targetsError": "political_opinion_generalization",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Relacionar instituições políticas, economia e conflitos sociais ao analisar a monarquia.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "SOURCE_ANALYSIS",
-    "conceptIds": [
-      "GH-17-CON-01",
-      "GH-17-CON-02",
-      "GH-17-CON-03",
-      "GH-17-CON-04",
-      "GH-17-CON-05",
-      "GH-17-CON-06"
-    ],
-    "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-  },
-  {
-    "id": "GH-17-Q007",
-    "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Brasil Monárquico?",
-    "options": [
-      {
-        "key": "A",
-        "text": "A Constituição de 1824 foi outorgada e instituiu quatro poderes, incluindo o Poder Moderador do imperador."
-      },
-      {
-        "key": "B",
-        "text": "O Primeiro Reinado enfrentou conflitos políticos e terminou com a abdicação de D. Pedro I em 1831."
-      },
-      {
-        "key": "C",
-        "text": "A crise final do Império envolveu mudanças sociais, abolição, tensões militares, republicanismo e desgaste político."
-      },
-      {
-        "key": "D",
-        "text": "O período regencial foi politicamente estável e sem revoltas."
-      },
-      {
-        "key": "E",
-        "text": "O Segundo Reinado consolidou o poder imperial, expandiu a economia cafeeira e manteve a escravidão até 1888."
-      }
-    ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
-    "conceptIds": [
-      "GH-17-CON-01",
-      "GH-17-CON-02",
-      "GH-17-CON-03",
-      "GH-17-CON-04",
-      "GH-17-CON-05",
-      "GH-17-CON-06"
-    ],
-    "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-  },
-  {
-    "id": "GH-17-Q008",
-    "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Brasil Monárquico, qual conclusão final é sustentável?",
-    "options": [
-      {
-        "key": "A",
-        "text": "A Constituição de 1824 transformou o Brasil em república."
-      },
-      {
-        "key": "B",
-        "text": "O Poder Moderador era exercido pelo Congresso."
-      },
-      {
-        "key": "C",
-        "text": "A crise final do Império envolveu mudanças sociais, abolição, tensões militares, republicanismo e desgaste político."
-      },
-      {
-        "key": "D",
-        "text": "O período regencial foi politicamente estável e sem revoltas."
-      },
-      {
-        "key": "E",
-        "text": "O Segundo Reinado aboliu a escravidão logo no início."
-      }
-    ],
-    "correctOption": "C",
-    "explanation": "A crise final do Império envolveu mudanças sociais, abolição, tensões militares, republicanismo e desgaste político.",
-    "difficulty": "IFSC",
+    "correctOption": "A",
+    "explanation": "A pesquisa aproxima debates abolicionistas, descontentamento militar e textos republicanos, apoiando uma leitura de tensões combinadas. A hipótese de uma única carta como causa ignora os outros conjuntos documentais descritos.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "GH-17-CON-01",
@@ -302,7 +285,112 @@
       "GH-17-CON-05",
       "GH-17-CON-06"
     ],
-    "targetedError": "synthesis",
+    "primaryConceptId": "GH-17-CON-01",
+    "targetedError": "causal_synthesis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-17-Q007",
+    "version": 2,
+    "status": "draft",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Em uma atividade de leitura, os grupos recebem uma notícia sobre debate abolicionista, uma carta de um militar insatisfeito e um panfleto republicano do final do Império. A notícia não informa como a abolição afetou cada região; a carta fala da experiência de seu autor; o panfleto apresenta a proposta de seus redatores. Os estudantes devem usar os três documentos para explicar por que a crise monárquica não pode ser reduzida a uma só disputa.\n\nQual interpretação atende melhor à tarefa?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A carta militar demonstra que a crise se limitava às relações entre oficiais e governo.",
+        "targetsError": "single_source_scope",
+        "rationale": "A notícia e o panfleto documentam outros temas e grupos políticos."
+      },
+      {
+        "key": "B",
+        "text": "O panfleto apresenta uma proposta republicana de mudança do regime.",
+        "targetsError": "pamphlet_to_population",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
+      },
+      {
+        "key": "C",
+        "text": "A notícia torna desnecessário considerar as outras tensões reunidas no exercício.",
+        "targetsError": "single_issue_reduction",
+        "rationale": "A tarefa apresenta documentos distintos justamente para comparar disputas."
+      },
+      {
+        "key": "D",
+        "text": "Os documentos foram produzidos por autores distintos e não registram um acordo formal.",
+        "targetsError": "coordination_invention",
+        "rationale": "O material não registra contato ou acordo entre os produtores das fontes."
+      },
+      {
+        "key": "E",
+        "text": "O conjunto relaciona abolição, insatisfação militar e republicanismo sem presumir unidade."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "Os documentos tratam de abolição, insatisfação militar e republicanismo, permitindo relacionar diferentes tensões. A leitura de uma aliança formal acrescenta um vínculo que o exercício não documenta.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-17-CON-01",
+      "GH-17-CON-02",
+      "GH-17-CON-03",
+      "GH-17-CON-04",
+      "GH-17-CON-05",
+      "GH-17-CON-06"
+    ],
+    "primaryConceptId": "GH-17-CON-01",
+    "targetedError": "plural_causation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-17-Q008",
+    "version": 2,
+    "status": "draft",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Um arquivo municipal reúne anúncios de café, registros de trabalho escravizado, notícias sobre a abolição e correspondência de militares e republicanos dos últimos anos do Império. A catalogadora observa que os documentos cobrem décadas diferentes e foram produzidos para finalidades distintas. Em vez de montar uma narrativa de causa única, ela propõe perguntas sobre economia, relações de trabalho e disputas políticas.\n\nQue hipótese de pesquisa aproveita melhor esse arquivo?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Investigar como mudanças econômicas e conflitos se relacionaram à crise do Império."
+      },
+      {
+        "key": "B",
+        "text": "Os anúncios de café ajudam a contextualizar a economia junto aos registros de trabalho e política.",
+        "targetsError": "economic_monocausality",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
+      },
+      {
+        "key": "C",
+        "text": "A abolição e o republicanismo foram articulados por grupos políticos em diálogo.",
+        "targetsError": "actor_conflation",
+        "rationale": "A fonte permite essa hipótese, mas não demonstra a relação apresentada."
+      },
+      {
+        "key": "D",
+        "text": "Ignorar a diferença de datas e interpretar as peças como se fossem simultâneas.",
+        "targetsError": "temporal_flattening",
+        "rationale": "A catalogadora informa que os documentos cobrem décadas diferentes."
+      },
+      {
+        "key": "E",
+        "text": "Usar a correspondência de militares como retrato completo da sociedade imperial.",
+        "targetsError": "source_to_society",
+        "rationale": "A coleção reúne fontes de temas e produtores diferentes da correspondência militar."
+      }
+    ],
+    "correctOption": "A",
+    "explanation": "A coleção permite investigar relações entre economia, trabalho e disputas políticas, respeitando datas e finalidades diversas. A hipótese de causa exclusivamente cafeeira não contempla os demais documentos descritos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "EVALUATE",
+    "conceptIds": [
+      "GH-17-CON-01",
+      "GH-17-CON-02",
+      "GH-17-CON-03",
+      "GH-17-CON-04",
+      "GH-17-CON-05",
+      "GH-17-CON-06"
+    ],
+    "primaryConceptId": "GH-17-CON-01",
+    "targetedError": "historical_inquiry",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   }
 ]

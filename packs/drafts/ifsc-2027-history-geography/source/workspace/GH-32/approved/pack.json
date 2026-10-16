@@ -208,308 +208,290 @@
     {
       "id": "GH-32-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Primeiras sociedades e Antiguidade, qual afirmação está correta?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Todas as sociedades antigas evoluíram pela mesma sequência."
-        },
-        {
-          "key": "B",
-          "text": "A agricultura e a sedentarização contribuíram para crescimento de aldeias e cidades em várias regiões, mas não foram processos idênticos em todo o mundo."
-        },
-        {
-          "key": "C",
-          "text": "Democracia ateniense incluía igualmente toda a população."
-        },
-        {
-          "key": "D",
-          "text": "Egito antigo ficava na Europa."
-        },
-        {
-          "key": "E",
-          "text": "Roma permaneceu com o mesmo sistema político durante toda sua história."
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "A agricultura e a sedentarização contribuíram para crescimento de aldeias e cidades em várias regiões, mas não foram processos idênticos em todo o mundo.",
+      "stem": "A equipe encontrou casas reconstruídas no mesmo terreno, fragmentos de vasos, sementes carbonizadas e um espaço usado para guardar grãos. As camadas se acumulam umas sobre as outras, mas ainda não foi possível estimar quanto tempo cada moradia permaneceu ocupada. O sítio fica perto de um curso d’água; os arqueólogos registraram ferramentas de pedra e marcas de cultivo, sem localizar documentos escritos.\n\nQual interpretação das evidências é mais cuidadosa?",
+      "correctOption": "A",
+      "explanation": "As casas reconstruídas, as sementes e o espaço de armazenamento apontam para ocupação repetida e cultivo naquela comunidade. A ausência de escrita não apaga as evidências materiais de produção de alimentos.",
       "difficulty": "FOUNDATION",
-      "cognitiveOperation": "RECALL",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-32-CON-01"
       ],
       "targetedError": "foundation",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "Moradias repetidas e grãos guardados sugerem permanência e práticas agrícolas nesse sítio."
+        },
+        {
+          "key": "B",
+          "text": "A ausência de escrita limita o que se pode concluir sobre a produção de alimentos."
+        },
+        {
+          "key": "C",
+          "text": "A proximidade do rio pode ter favorecido atividades cotidianas, sem provar uma forma de governo."
+        },
+        {
+          "key": "D",
+          "text": "Ferramentas de pedra podem ter sido usadas em diferentes momentos."
+        },
+        {
+          "key": "E",
+          "text": "O armazenamento sugere planejamento, mas não demonstra comércio de longa distância."
+        }
+      ]
     },
     {
       "id": "GH-32-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “Todas as sociedades antigas evoluíram pela mesma sequência.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Todas as sociedades antigas evoluíram pela mesma sequência."
-        },
-        {
-          "key": "B",
-          "text": "Democracia ateniense incluía igualmente toda a população."
-        },
-        {
-          "key": "C",
-          "text": "Egito antigo ficava na Europa."
-        },
-        {
-          "key": "D",
-          "text": "Mesopotâmia e Egito desenvolveram Estados, escrita, especialização do trabalho e sistemas religiosos e políticos próprios."
-        },
-        {
-          "key": "E",
-          "text": "Roma permaneceu com o mesmo sistema político durante toda sua história."
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Mesopotâmia e Egito desenvolveram Estados, escrita, especialização do trabalho e sistemas religiosos e políticos próprios.",
+      "stem": "Uma maquete mostra casas, oficinas, um templo e um canal que leva água aos campos próximos. Uma placa informa que grãos eram armazenados em depósitos e que escribas registravam entregas e impostos em tabuletas. No mapa da exposição, caminhos ligam a cidade a outras povoações do vale. A guia comenta que escavações ainda discutem quem controlava cada área e como os moradores organizavam o trabalho.\n\nO que os objetos da exposição permitem analisar?",
+      "correctOption": "C",
+      "explanation": "A exposição reúne oficinas, canal, depósitos e registros de entrega e impostos, evidências de produção e administração urbana. Os caminhos indicam contato com outras povoações, mas não provam que a cidade controlava todo o vale.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-32-CON-02"
       ],
       "targetedError": "concept_discrimination",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "As tabuletas registram entregas e impostos, sem identificar quem controlava cada área."
+        },
+        {
+          "key": "B",
+          "text": "O canal indica irrigação, mas não revela quem administrava depósitos e impostos."
+        },
+        {
+          "key": "C",
+          "text": "A cidade articulava produção, registros e obras de irrigação em uma sociedade organizada."
+        },
+        {
+          "key": "D",
+          "text": "Oficinas indicam produção especializada, sem esclarecer a produção de alimentos."
+        },
+        {
+          "key": "E",
+          "text": "Os caminhos conectavam povoados, mas não informam se havia cobrança de impostos."
+        }
+      ]
     },
     {
       "id": "GH-32-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: As primeiras sociedades urbanas surgiram em diferentes regiões e não formaram uma única linha de evolução. Qual ideia estudada oferece a melhor chave de interpretação?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Todas as sociedades antigas evoluíram pela mesma sequência."
-        },
-        {
-          "key": "B",
-          "text": "Democracia ateniense incluía igualmente toda a população."
-        },
-        {
-          "key": "C",
-          "text": "Grécia antiga reuniu várias pólis; democracia ateniense era limitada e excluía mulheres, pessoas escravizadas e estrangeiros."
-        },
-        {
-          "key": "D",
-          "text": "Egito antigo ficava na Europa."
-        },
-        {
-          "key": "E",
-          "text": "Roma permaneceu com o mesmo sistema político durante toda sua história."
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "Grécia antiga reuniu várias pólis; democracia ateniense era limitada e excluía mulheres, pessoas escravizadas e estrangeiros.",
+      "stem": "O painel apresenta um mapa entre os rios Tigre e Eufrates e uma tabuleta com sinais usados para registrar quantidades de cevada. Ao lado, há um desenho de canais e uma lista de trabalhadores ligados a um armazém. A equipe do museu explica que a peça foi encontrada em uma área urbana e que o registro não informa a língua falada por todas as pessoas que viveram na região.\n\nQue inferência se apoia melhor na etiqueta?",
+      "correctOption": "E",
+      "explanation": "A tabuleta registra quantidades de cevada e foi encontrada junto a referências a canais, trabalhadores e armazém. Esse conjunto sugere uso da escrita na administração de recursos, não que ela tenha substituído o cultivo.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-32-CON-03"
       ],
       "targetedError": "relationship",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A etiqueta não determina a língua de todos os habitantes."
+        },
+        {
+          "key": "B",
+          "text": "Registros escritos podiam coexistir com atividades agrícolas."
+        },
+        {
+          "key": "C",
+          "text": "A lista identifica trabalhadores, mas não mede a distribuição das ocupações."
+        },
+        {
+          "key": "D",
+          "text": "A localização urbana não informa a distância até rios nem o uso de rotas marítimas."
+        },
+        {
+          "key": "E",
+          "text": "Registros escritos podiam apoiar a administração de produtos e trabalho na cidade."
+        }
+      ]
     },
     {
       "id": "GH-32-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Primeiras sociedades e Antiguidade por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Roma passou por monarquia, república e império e expandiu-se por grande parte do Mediterrâneo."
-        },
-        {
-          "key": "B",
-          "text": "Todas as sociedades antigas evoluíram pela mesma sequência."
-        },
-        {
-          "key": "C",
-          "text": "Democracia ateniense incluía igualmente toda a população."
-        },
-        {
-          "key": "D",
-          "text": "Egito antigo ficava na Europa."
-        },
-        {
-          "key": "E",
-          "text": "Roma permaneceu com o mesmo sistema político durante toda sua história."
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Roma passou por monarquia, república e império e expandiu-se por grande parte do Mediterrâneo.",
+      "stem": "O guia apresenta mapas de aldeias distribuídas ao longo do rio e recipientes que guardavam sementes e alimentos. Uma inscrição descreve a organização de canais e o recolhimento de parte da produção para os depósitos do governante. Outra sala exibe ferramentas usadas por artesãos e registros de escribas. O roteiro observa que as cheias variavam e que as comunidades também precisavam manter plantações e moradias em diferentes trechos do vale.\n\nQue relação entre o rio e a organização social aparece no roteiro?",
+      "correctOption": "B",
+      "explanation": "O roteiro relaciona aldeias do vale, cultivo, canais, depósitos e registros da administração. A variação das cheias não eliminou a necessidade de organizar água e produção.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-32-CON-04"
       ],
       "targetedError": "application",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A variação das cheias exigia adaptação do cultivo e dos canais."
+        },
+        {
+          "key": "B",
+          "text": "O vale do Nilo sustentava comunidades e uma administração ligada à produção agrícola."
+        },
+        {
+          "key": "C",
+          "text": "Artesãos e escribas exerciam atividades especializadas junto à produção agrícola."
+        },
+        {
+          "key": "D",
+          "text": "A inscrição destaca governante e escribas, além de canais e produção comunitária."
+        },
+        {
+          "key": "E",
+          "text": "As aldeias se distribuíam ao longo do rio."
+        }
+      ]
     },
     {
       "id": "GH-32-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. A agricultura e a sedentarização contribuíram para crescimento de aldeias e cidades em várias regiões, mas não foram processos idênticos em todo o mundo.\nII. Todas as sociedades antigas evoluíram pela mesma sequência.\nIII. Grécia antiga reuniu várias pólis; democracia ateniense era limitada e excluía mulheres, pessoas escravizadas e estrangeiros.\nIV. Democracia ateniense incluía igualmente toda a população.\nAssinale a alternativa CORRETA.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Apenas I está correta."
-        },
-        {
-          "key": "B",
-          "text": "Apenas I e III estão corretas."
-        },
-        {
-          "key": "C",
-          "text": "Apenas II e IV estão corretas."
-        },
-        {
-          "key": "D",
-          "text": "Apenas I, II e III estão corretas."
-        },
-        {
-          "key": "E",
-          "text": "Todas estão corretas."
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "stem": "A ata registra a escolha de responsáveis por obras e o debate sobre gastos da cidade. Uma lista separada informa quem podia participar da reunião: homens reconhecidos como cidadãos atenienses. Mulheres, pessoas escravizadas e estrangeiros residentes aparecem em outros registros da casa e do mercado, mas não na lista dos votantes. A exposição não afirma que as regras de Atenas valessem para todas as cidades gregas.\n\nO que a ata permite concluir sobre a participação política?",
+      "correctOption": "D",
+      "explanation": "A lista de votantes inclui homens cidadãos, enquanto mulheres, pessoas escravizadas e estrangeiros aparecem fora dela. Isso mostra uma participação restrita em Atenas; a exposição também adverte contra generalizar essa regra para toda cidade grega.",
       "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-32-CON-01",
-        "GH-32-CON-02",
-        "GH-32-CON-03",
-        "GH-32-CON-04"
+        "GH-32-CON-05"
       ],
       "targetedError": "multi_statement_reasoning",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A lista distingue votantes de outros moradores, sem esclarecer todos os direitos destes."
+        },
+        {
+          "key": "B",
+          "text": "A reunião escolhia responsáveis por obras e debatia gastos."
+        },
+        {
+          "key": "C",
+          "text": "A ata descreve Atenas e não permite generalizar suas regras."
+        },
+        {
+          "key": "D",
+          "text": "A participação em Atenas era restrita a uma parcela dos moradores."
+        },
+        {
+          "key": "E",
+          "text": "A presença de pessoas escravizadas nos registros não lhes assegurava participação política."
+        }
+      ]
     },
     {
       "id": "GH-32-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Primeiras sociedades e Antiguidade. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Todas as sociedades antigas evoluíram pela mesma sequência."
-        },
-        {
-          "key": "B",
-          "text": "Democracia ateniense incluía igualmente toda a população."
-        },
-        {
-          "key": "C",
-          "text": "Egito antigo ficava na Europa."
-        },
-        {
-          "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
-        },
-        {
-          "key": "E",
-          "text": "Comparar sociedades antigas sem transformar diferenças históricas em hierarquia civilizacional."
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Comparar sociedades antigas sem transformar diferenças históricas em hierarquia civilizacional.",
+      "stem": "Três painéis apresentam períodos identificados como Monarquia, República e Império. Um mapa mostra que a cidade ampliou seu domínio por diferentes áreas do Mediterrâneo; outro registra estradas, cobrança de tributos e a presença de soldados em regiões distantes. Uma legenda explica que as instituições políticas mudaram ao longo do tempo, embora conflitos e disputas internas também tenham ocorrido em cada etapa.\n\nQual leitura integra as informações dos painéis?",
+      "correctOption": "A",
+      "explanation": "A linha do tempo mostra mudanças entre Monarquia, República e Império, enquanto o mapa registra expansão, estradas, tributos e tropas. A presença de disputas internas impede concluir que a mudança de regime encerrou os conflitos.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-32-CON-01",
-        "GH-32-CON-02",
-        "GH-32-CON-03",
-        "GH-32-CON-04",
-        "GH-32-CON-05",
         "GH-32-CON-06"
       ],
       "targetedError": "source_interpretation",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "Roma mudou suas formas políticas enquanto ampliava domínio e administração territorial."
+        },
+        {
+          "key": "B",
+          "text": "Estradas podiam facilitar circulação entre Roma e regiões distantes."
+        },
+        {
+          "key": "C",
+          "text": "A linha do tempo não indica que os conflitos terminaram no Império."
+        },
+        {
+          "key": "D",
+          "text": "Os painéis indicam mudanças institucionais ao longo do tempo."
+        },
+        {
+          "key": "E",
+          "text": "Soldados em regiões distantes são compatíveis com administração territorial."
+        }
+      ]
     },
     {
       "id": "GH-32-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Primeiras sociedades e Antiguidade?",
-      "options": [
-        {
-          "key": "A",
-          "text": "A agricultura e a sedentarização contribuíram para crescimento de aldeias e cidades em várias regiões, mas não foram processos idênticos em todo o mundo."
-        },
-        {
-          "key": "B",
-          "text": "Mesopotâmia e Egito desenvolveram Estados, escrita, especialização do trabalho e sistemas religiosos e políticos próprios."
-        },
-        {
-          "key": "C",
-          "text": "Estudar Antiguidade exige reconhecer sociedades africanas e asiáticas e evitar tratar Grécia e Roma como única origem da humanidade."
-        },
-        {
-          "key": "D",
-          "text": "Egito antigo ficava na Europa."
-        },
-        {
-          "key": "E",
-          "text": "Roma passou por monarquia, república e império e expandiu-se por grande parte do Mediterrâneo."
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "stem": "A primeira página reúne mapas de povoados que cresceram perto de rios em regiões diferentes. Uma página posterior registra muralhas, oficinas e áreas de armazenamento em alguns desses lugares; em outros, os vestígios apontam para aldeias menores e rotas de troca. O caderno observa que agricultura, comércio e autoridade se organizaram em ritmos variados, sem apresentar uma sequência única que todas as comunidades teriam seguido.\n\nQue ideia o caderno ajuda a evitar?",
+      "correctOption": "C",
+      "explanation": "O caderno reúne vestígios de aldeias, cidades e rotas em regiões diferentes, e ressalta ritmos variados. Não há base para transformar esses casos em uma sequência única de evolução.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-32-CON-01",
-        "GH-32-CON-02",
-        "GH-32-CON-03",
-        "GH-32-CON-04",
-        "GH-32-CON-05",
-        "GH-32-CON-06"
+        "GH-32-CON-02"
       ],
       "targetedError": "misconception_identification",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "Os mapas não estabelecem se urbanização precedeu agricultura."
+        },
+        {
+          "key": "B",
+          "text": "Rotas de troca podiam conectar e favorecer o crescimento de povoados."
+        },
+        {
+          "key": "C",
+          "text": "As primeiras sociedades passaram por uma trajetória idêntica até formar cidades e Estados."
+        },
+        {
+          "key": "D",
+          "text": "Muralhas podem indicar defesa, mas não bastam para identificar autoridade central."
+        },
+        {
+          "key": "E",
+          "text": "Armazenamento podia reunir excedentes e apoiar trocas."
+        }
+      ]
     },
     {
       "id": "GH-32-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Primeiras sociedades e Antiguidade, qual conclusão final é sustentável?",
+      "stem": "O mapa situa comunidades urbanas da Mesopotâmia junto aos rios Tigre e Eufrates, centros egípcios ao longo do Nilo, cidades gregas no Mediterrâneo e assentamentos romanos na península Itálica. Pequenas notas indicam escrita, construção de canais, comércio e diferentes formas de governo. A curadoria incluiu também referências a outros povos africanos e asiáticos, cujas histórias aparecem em salas vizinhas da exposição.\n\nQue perspectiva a legenda propõe para estudar a Antiguidade?",
+      "correctOption": "E",
+      "explanation": "A legenda localiza comunidades antigas em regiões africanas, asiáticas e europeias e apresenta práticas diversas. Isso evita tratar Grécia e Roma como únicas origens da história humana.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "ANALYZE",
+      "conceptIds": [
+        "GH-32-CON-02"
+      ],
+      "targetedError": "synthesis",
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
       "options": [
         {
           "key": "A",
-          "text": "Todas as sociedades antigas evoluíram pela mesma sequência."
+          "text": "A legenda não estabelece a ordem de surgimento da escrita."
         },
         {
           "key": "B",
-          "text": "Democracia ateniense incluía igualmente toda a população."
+          "text": "O Egito integra a história africana."
         },
         {
           "key": "C",
-          "text": "Estudar Antiguidade exige reconhecer sociedades africanas e asiáticas e evitar tratar Grécia e Roma como única origem da humanidade."
+          "text": "Comércio e formas de governo aparecem como aspectos coexistentes."
         },
         {
           "key": "D",
-          "text": "Egito antigo ficava na Europa."
+          "text": "O mapa não permite atribuir pioneirismo geral às cidades gregas."
         },
         {
           "key": "E",
-          "text": "Roma permaneceu com o mesmo sistema político durante toda sua história."
+          "text": "A Antiguidade reúne sociedades africanas, asiáticas e europeias com trajetórias próprias."
         }
-      ],
-      "correctOption": "C",
-      "explanation": "Estudar Antiguidade exige reconhecer sociedades africanas e asiáticas e evitar tratar Grécia e Roma como única origem da humanidade.",
-      "difficulty": "IFSC",
-      "cognitiveOperation": "EVALUATE",
-      "conceptIds": [
-        "GH-32-CON-01",
-        "GH-32-CON-02",
-        "GH-32-CON-03",
-        "GH-32-CON-04",
-        "GH-32-CON-05",
-        "GH-32-CON-06"
-      ],
-      "targetedError": "synthesis",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      ]
     }
   ]
 }

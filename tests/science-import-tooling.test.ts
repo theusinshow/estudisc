@@ -10,10 +10,10 @@ import { SCIENCE_DRAFT_PACK, SCIENCE_MEDIA_ASSETS } from "../tools/science-impor
 describe("Science draft import infrastructure", () => {
   it("pins the cleaned forty-lesson snapshot without publishing Questions or losing import compatibility", () => {
     const bytes = readFileSync(SCIENCE_DRAFT_PACK);
-    expect(sha256(bytes)).toBe("1110ef3297c782180c03304f6d475d2db6e593c492f18cdce7385d8b62ee392b");
+    expect(sha256(bytes)).toBe("562522f20559b9677f7828f7d91c47b506ed7458057590ad6a7a39d5b9d86f3d");
     expect(bytes.byteLength).toBeLessThanOrEqual(MAX_TRACK_PACK_BYTES);
     const pack = JSON.parse(bytes.toString("utf8"));
-    expect(hashCanonicalJson(pack)).toBe("93cee161cf05fee57aadba0ae238a60a67ec98feb2644c4803c04c9c9188c2be");
+    expect(hashCanonicalJson(pack)).toBe("186067ba85d5d165ac6f0e5386b2f629cea6782be29f13053edb4b969bd013ba");
     const lessons = pack.track.modules.flatMap((entry: { lessons: { id: string; status: string }[] }) => entry.lessons);
     expect(lessons.map((lesson: { id: string }) => lesson.id).sort()).toEqual(Array.from({ length: 40 }, (_, index) => `CIE-${String(index + 1).padStart(2, "0")}`));
     expect(lessons.every((lesson: { status: string }) => lesson.status === "draft")).toBe(true);

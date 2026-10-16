@@ -2,294 +2,302 @@
   {
     "id": "CIE-12-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de substâncias puras, misturas, fases e componentes, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Água e sal foram colocados em um copo; após a dissolução, observa-se uma única região líquida uniforme. Quantos componentes e fases há no sistema?",
     "options": [
       {
         "key": "A",
-        "text": "Fase e componente significam sempre a mesma coisa."
+        "text": "Um componente e duas fases, pois o sal não está visível."
       },
       {
         "key": "B",
-        "text": "Substância pura é formada obrigatoriamente por um único elemento químico."
+        "text": "Dois componentes e uma fase, em uma mistura homogênea."
       },
       {
         "key": "C",
-        "text": "Uma solução de sal em água é heterogênea porque contém duas substâncias."
+        "text": "Dois componentes e duas fases, uma para cada material inicial."
       },
       {
         "key": "D",
-        "text": "Substância pura possui composição química definida; mistura reúne duas ou mais substâncias."
+        "text": "Uma substância composta e uma fase, formada pela união química."
       },
       {
         "key": "E",
-        "text": "Toda mistura possui exatamente duas fases."
+        "text": "Três componentes e uma fase, contando o sal dissolvido duas vezes."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Substância pura possui composição química definida; mistura reúne duas ou mais substâncias.",
+    "correctOption": "B",
+    "explanation": "Água e sal são dois componentes. Como a solução apresenta uma única região uniforme, há uma fase e o sistema é uma mistura homogênea.",
     "difficulty": "FOUNDATION",
-    "cognitiveOperation": "UNDERSTAND",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-12-CON-01"
+      "CIE-12-CON-01",
+      "CIE-12-CON-02",
+      "CIE-12-CON-04"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "A [mixture/pure-substance confusion]: ignora os dois materiais dissolvidos; C [phase reversal]: chama de heterogêneo um aspecto uniforme e inventa contagem; D [chemical-change assumption]: confunde dissolução com formação de nova substância; E [component inflation]: conta a água e o sal dissolvido como três componentes.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-12-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar substâncias puras, misturas, fases e componentes sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Um frasco contém água e óleo. Após repousar, são observadas duas camadas líquidas. Quantos componentes e fases há?",
     "options": [
       {
         "key": "A",
-        "text": "Toda mistura possui exatamente duas fases."
+        "text": "Dois componentes e duas fases, uma camada para cada líquido."
       },
       {
         "key": "B",
-        "text": "Substância pura é formada obrigatoriamente por um único elemento químico."
+        "text": "Um componente e duas fases, pois a separação elimina um material."
       },
       {
         "key": "C",
-        "text": "Fase e componente significam sempre a mesma coisa."
+        "text": "Dois componentes e uma fase, já que ambos são líquidos."
       },
       {
         "key": "D",
-        "text": "Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada."
+        "text": "Três componentes e uma fase, contando as duas camadas."
       },
       {
         "key": "E",
-        "text": "Uma solução de sal em água é heterogênea porque contém duas substâncias."
+        "text": "Um componente e uma fase, pois o frasco ficou em repouso."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada.",
+    "correctOption": "A",
+    "explanation": "Água e óleo são os dois componentes, e as duas camadas observadas correspondem a duas fases. O estado líquido dos materiais não determina que ocupem uma só fase.",
     "difficulty": "DIRECT",
-    "cognitiveOperation": "UNDERSTAND",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-12-CON-02"
+      "CIE-12-CON-03",
+      "CIE-12-CON-04",
+      "CIE-12-CON-05"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "B [component/phase conflation]: transforma separação em perda de componente; C [state/phase confusion]: usa o estado líquido para ignorar camadas; D [double counting]: soma substâncias e fases como componentes; E [resting-state shortcut]: toma o repouso como critério de fase única.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-12-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em substâncias puras, misturas, fases e componentes?",
+    "stem": "Uma amostra contém H₂O apenas, parte sólida e parte líquida. Como se classificam seus componentes e fases?",
     "options": [
       {
         "key": "A",
-        "text": "Toda mistura possui exatamente duas fases."
+        "text": "Mistura heterogênea com dois componentes e duas fases."
       },
       {
         "key": "B",
-        "text": "Mistura heterogênea apresenta duas ou mais fases distinguíveis."
+        "text": "Substância composta com dois componentes e uma fase."
       },
       {
         "key": "C",
-        "text": "Substância pura é formada obrigatoriamente por um único elemento químico."
+        "text": "Substância pura com um componente e duas fases."
       },
       {
         "key": "D",
-        "text": "Fase e componente significam sempre a mesma coisa."
+        "text": "Mistura homogênea com um componente e uma fase."
       },
       {
         "key": "E",
-        "text": "Uma solução de sal em água é heterogênea porque contém duas substâncias."
+        "text": "Substância pura com dois componentes e uma fase."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Mistura heterogênea apresenta duas ou mais fases distinguíveis.",
-    "difficulty": "DIRECT",
+    "correctOption": "C",
+    "explanation": "Há um componente, H₂O, em duas fases: sólida e líquida. A mudança de estado não altera a identidade da substância.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-12-CON-03"
+      "CIE-12-CON-01",
+      "CIE-12-CON-04",
+      "CIE-12-CON-05"
     ],
-    "targetedError": "relationship",
+    "targetedError": "A [state-change/mixture confusion]: converte fases da mesma substância em componentes diferentes; B [formula/substance count error]: usa os átomos da fórmula como componentes; D [phase undercount]: ignora a porção sólida visível; E [component/phase reversal]: atribui duas substâncias e uma fase.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-12-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um recipiente contém água, sal totalmente dissolvido e óleo formando uma camada separada. Quantos componentes e quantas fases há?",
+    "stem": "Água e açúcar foram misturados até formar um líquido uniforme, sem sólido depositado. Como registrar componentes e fases observadas?",
     "options": [
       {
         "key": "A",
-        "text": "Duas componentes e três fases."
+        "text": "Um componente e duas fases, pois o açúcar deixou de ser visível."
       },
       {
         "key": "B",
-        "text": "Três componentes e três fases."
+        "text": "Três componentes e uma fase, contando também a solução."
       },
       {
         "key": "C",
-        "text": "Uma componente e duas fases."
+        "text": "Dois componentes e duas fases, pois os materiais continuam distintos."
       },
       {
         "key": "D",
-        "text": "Três componentes e duas fases."
+        "text": "Dois componentes e uma fase, em uma mistura homogênea."
       },
       {
         "key": "E",
-        "text": "Duas componentes e uma fase."
+        "text": "Uma substância pura e uma fase, pois o líquido está uniforme."
       }
     ],
     "correctOption": "D",
-    "explanation": "Três componentes e duas fases.",
-    "difficulty": "APPLIED",
+    "explanation": "Água e açúcar são dois componentes, e o aspecto uniforme corresponde a uma fase. A dissolução não transforma a mistura em substância pura.",
+    "difficulty": "DIRECT",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-12-CON-01",
       "CIE-12-CON-02",
-      "CIE-12-CON-03"
+      "CIE-12-CON-04",
+      "CIE-12-CON-05"
     ],
-    "targetedError": "application",
+    "targetedError": "A [visibility/component confusion]: supõe que invisibilidade elimina o soluto; B [solution double count]: trata a solução como terceiro componente; C [component/phase confusion]: usa dois materiais para inferir duas fases; E [appearance/purity confusion]: toma transparência como evidência de pureza.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-12-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Substância pura possui composição química definida; mistura reúne duas ou mais substâncias.\nII. Toda mistura possui exatamente duas fases.\nIII. Mistura heterogênea apresenta duas ou mais fases distinguíveis.\nIV. Fase e componente significam sempre a mesma coisa.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma amostra contém areia, sal e água. Após repouso, a areia fica depositada e a solução de sal ocupa a região líquida. Quantos componentes e fases há?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Dois componentes e três fases, contando cada material separadamente."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Três componentes e duas fases, uma sólida e outra líquida."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Um componente e duas fases, pois o sal se dissolveu."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Três componentes e três fases, uma para cada material usado."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Dois componentes e uma fase, pois o líquido é uniforme."
       }
     ],
     "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "explanation": "Areia, sal e água são três componentes. Após o repouso, há uma fase sólida de areia e uma fase líquida de solução; o sal dissolvido não forma uma fase separada.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-12-CON-01",
-      "CIE-12-CON-02",
       "CIE-12-CON-03",
-      "CIE-12-CON-04"
+      "CIE-12-CON-04",
+      "CIE-12-CON-05"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "A [component/phase reversal]: subtrai componente e acrescenta fase sem base; C [invisible-solute error]: remove o sal da contagem; D [material/phase equivalence]: presume uma fase por ingrediente; E [phase undercount]: desconsidera o depósito sólido.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-12-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre substâncias puras, misturas, fases e componentes para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Em um recipiente, observam-se óleo, gelo e água líquida. O gelo e a água vieram do mesmo material. Quantos componentes e fases há?",
     "options": [
       {
         "key": "A",
-        "text": "Fase e componente significam sempre a mesma coisa."
+        "text": "Três componentes e três fases, pois cada região é uma substância."
       },
       {
         "key": "B",
-        "text": "Toda mistura possui exatamente duas fases."
+        "text": "Dois componentes e três fases: gelo, água líquida e óleo."
       },
       {
         "key": "C",
-        "text": "Uma solução de sal em água é heterogênea porque contém duas substâncias."
+        "text": "Dois componentes e duas fases, pois gelo e água são fases iguais."
       },
       {
         "key": "D",
-        "text": "Número de componentes e número de fases não precisam ser iguais."
+        "text": "Um componente e três fases, já que a água ocupa a maior parte."
       },
       {
         "key": "E",
-        "text": "Substância pura é formada obrigatoriamente por um único elemento químico."
+        "text": "Três componentes e duas fases, contando o gelo como ingrediente."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Número de componentes e número de fases não precisam ser iguais.",
+    "correctOption": "B",
+    "explanation": "Água e óleo são dois componentes. A água aparece em duas fases, gelo e líquido, e o óleo compõe a terceira fase.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
+      "CIE-12-CON-04",
       "CIE-12-CON-05"
     ],
-    "targetedError": "transfer",
+    "targetedError": "A [phase/component conflation]: trata cada região como substância nova; C [same-component phase erasure]: funde gelo e água em uma única fase observada; D [component omission]: exclui o óleo da contagem; E [state/ingredient confusion]: transforma um estado da água em ingrediente.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-12-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre substâncias puras, misturas, fases e componentes?",
+    "stem": "Uma amostra de ar contém nitrogênio, oxigênio, argônio e vapor de água distribuídos uniformemente, sem gotículas ou partículas suspensas. Que classificação se aplica?",
     "options": [
       {
         "key": "A",
-        "text": "Componente é cada substância presente na mistura; fase é cada porção visualmente uniforme do sistema."
+        "text": "Quatro componentes e uma fase gasosa."
       },
       {
         "key": "B",
-        "text": "Substância pura possui composição química definida; mistura reúne duas ou mais substâncias."
+        "text": "Uma substância pura e quatro fases gasosas."
       },
       {
         "key": "C",
-        "text": "Toda mistura possui exatamente duas fases."
+        "text": "Quatro componentes e quatro fases, uma para cada gás."
       },
       {
         "key": "D",
-        "text": "Mistura homogênea apresenta uma única fase visível em escala macroscópica considerada."
+        "text": "Um componente e uma fase, pois os gases ocupam o mesmo espaço."
       },
       {
         "key": "E",
-        "text": "Mistura heterogênea apresenta duas ou mais fases distinguíveis."
+        "text": "Dois componentes e uma fase, contando apenas os gases mais abundantes."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a incorreta: Toda mistura possui exatamente duas fases. As demais expressam relações compatíveis com os conceitos da aula.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "A",
+    "explanation": "A amostra lista quatro componentes e apresenta uma única fase gasosa uniforme. Gases misturados na mesma região não formam fases distintas apenas por serem substâncias diferentes.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-12-CON-01"
+      "CIE-12-CON-02",
+      "CIE-12-CON-04",
+      "CIE-12-CON-05"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "B [mixture/purity confusion]: ignora a lista de gases distintos; C [component/phase conflation]: associa cada componente a uma fase separada; D [component omission]: usa a fase única para apagar substâncias presentes; E [selective counting]: descarta componentes informados.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-12-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em substâncias puras, misturas, fases e componentes?",
+    "stem": "Água e óleo foram observados logo após agitação, com gotas dispersas, e novamente após repouso, com camadas distintas. O que pode mudar entre as observações?",
     "options": [
       {
         "key": "A",
-        "text": "Toda mistura possui exatamente duas fases."
+        "text": "O repouso cria um terceiro componente na camada superior."
       },
       {
         "key": "B",
-        "text": "Fase e componente significam sempre a mesma coisa."
+        "text": "A lista de componentes muda quando as gotas se juntam."
       },
       {
         "key": "C",
-        "text": "A classificação depende das condições e da escala de observação adotada em Ciências escolares."
+        "text": "O sistema passa a ter um componente quando o óleo se separa."
       },
       {
         "key": "D",
-        "text": "Uma solução de sal em água é heterogênea porque contém duas substâncias."
+        "text": "Cada camada passa a ser uma substância pura diferente."
       },
       {
         "key": "E",
-        "text": "Substância pura é formada obrigatoriamente por um único elemento químico."
+        "text": "A quantidade de fases percebidas pode depender da condição e da escala de observação."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: A classificação depende das condições e da escala de observação adotada em Ciências escolares.",
+    "correctOption": "E",
+    "explanation": "Água e óleo continuam sendo os mesmos dois componentes nas duas observações. A dispersão de gotas e a formação posterior de camadas podem alterar as fases percebidas sem criar componentes.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-12-CON-06"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "A [phase-as-component error]: transforma uma camada em substância nova; B [coalescence misconception]: supõe que reunir gotas altera a lista química; C [component deletion]: remove o óleo após a separação; D [purity inference]: deduz pureza de cada porção sem dados de composição.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]

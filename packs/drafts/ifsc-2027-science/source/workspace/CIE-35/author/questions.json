@@ -2,139 +2,180 @@
   {
     "id": "CIE-35-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de teoria sintética e fatores evolutivos, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Uma equipe de laboratório escolar comparou sequências de DNA de duas colônias de levedura arquivadas em momentos diferentes. Em um ponto de uma sequência recente apareceu uma letra que não constava nas amostras antigas; a equipe repetiu a leitura para descartar erro técnico. O relatório não associou a diferença a uma necessidade das células nem mostrou se ela alterou crescimento ou reprodução. Os estudantes receberam o caso para distinguir a origem de uma variante de seu possível efeito.\n\nQual interpretação cabe aos dados apresentados?",
     "options": [
       {
         "key": "A",
-        "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        "text": "A colônia pode ter alterado seu DNA porque precisava crescer mais depressa no recipiente.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório não identifica uma necessidade como causa da alteração e sequer mede velocidade de crescimento."
       },
       {
         "key": "B",
-        "text": "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo."
+        "text": "A diferença de sequência pode resultar de recombinação durante reprodução sexuada.",
+        "targetsError": "conceptual",
+        "rationale": "O caso descreve uma diferença em uma sequência, sem dados sobre reprodução sexuada ou recombinação."
       },
       {
         "key": "C",
-        "text": "Mutação gera novas variantes de DNA e é uma fonte última de novos alelos."
+        "text": "A diferença é compatível com mutação e pode originar uma variante genética."
       },
       {
         "key": "D",
-        "text": "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        "text": "A variante pode ter ficado mais frequente porque a amostra antiga foi arquivada.",
+        "targetsError": "interpretation",
+        "rationale": "A comparação de sequências não traz contagens de indivíduos nem mudança de frequência populacional."
       },
       {
         "key": "E",
-        "text": "Deriva genética é uma forma de seleção consciente."
+        "text": "A alteração pode conferir vantagem à levedura em diferentes condições de cultivo.",
+        "targetsError": "interpretation",
+        "rationale": "O relatório não mede crescimento, reprodução ou desempenho em ambientes diferentes."
       }
     ],
     "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Mutação gera novas variantes de DNA e é uma fonte última de novos alelos.",
+    "explanation": "A comparação indica uma nova variante na sequência, compatível com mutação; o caso não mostra que ela surgiu para atender a uma necessidade nem informa seu efeito reprodutivo.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-35-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-35-CON-01"
   },
   {
     "id": "CIE-35-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar teoria sintética e fatores evolutivos sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Em uma atividade de genética, uma linhagem parental carregava os haplótipos XY e xy nos cromossomos analisados. Entre os descendentes, a equipe encontrou também combinações Xy e xY. Os quatro marcadores já estavam presentes nas amostras parentais, e a análise não detectou alteração nova nas sequências. A ficha registrou os cruzamentos em condições iguais, sem medir diferenças de sobrevivência ou reprodução entre as combinações. A turma deve explicar a origem dos arranjos observados.\n\nQual processo corresponde ao padrão descrito?",
     "options": [
       {
         "key": "A",
-        "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        "text": "A recombinação pode reunir variantes parentais em novas combinações nos descendentes."
       },
       {
         "key": "B",
-        "text": "Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas."
+        "text": "Uma mutação pode explicar cada marcador que aparece em associação diferente.",
+        "targetsError": "conceptual",
+        "rationale": "O texto afirma que os marcadores já estavam nos parentais e não relata surgimento de variantes."
       },
       {
         "key": "C",
-        "text": "Deriva genética é uma forma de seleção consciente."
+        "text": "A seleção pode ter favorecido as novas combinações durante a reprodução dos indivíduos.",
+        "targetsError": "interpretation",
+        "rationale": "A ficha apresenta combinações genéticas, mas não compara sucesso reprodutivo entre descendentes."
       },
       {
         "key": "D",
-        "text": "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        "text": "A deriva pode ter mudado a associação entre marcadores nas amostras observadas.",
+        "targetsError": "conceptual",
+        "rationale": "O caso descreve a associação de variantes existentes, não mudança aleatória de frequências populacionais."
       },
       {
         "key": "E",
-        "text": "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo."
+        "text": "O fluxo gênico pode ter introduzido combinações vindas de outra população.",
+        "targetsError": "conceptual",
+        "rationale": "Não há migração ou entrada de gametas de outra população no relato."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas.",
+    "correctOption": "A",
+    "explanation": "Os marcadores parentais foram combinados em descendentes com novas associações, sem indicação de variantes novas; isso é compatível com recombinação. Uma mutação criaria uma variante, o que o enunciado não registrou.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-35-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-35-CON-02"
   },
   {
     "id": "CIE-35-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em teoria sintética e fatores evolutivos?",
+    "stem": "Em um ensaio agrícola fictício, 200 besouros foram identificados antes de uma aplicação controlada de defensivo. A variante de resistência estava presente em 10 indivíduos da amostra inicial. Doze besouros sobreviveram, e a genotipagem encontrou a variante em nove deles. Na geração seguinte, a equipe observou proporção maior dessa variante entre os descendentes. O experimento ocorreu em um único talhão e por pouco tempo; o relatório pede uma interpretação sem generalizar para outras espécies.\n\nQual mecanismo explica melhor a mudança registrada?",
     "options": [
       {
         "key": "A",
-        "text": "Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente."
+        "text": "O defensivo pode ter provocado a variante de resistência nos besouros expostos.",
+        "targetsError": "conceptual",
+        "rationale": "O enunciado informa que a variante já aparecia na amostra anterior à aplicação."
       },
       {
         "key": "B",
-        "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        "text": "A recombinação pode ter deixado os sobreviventes com perfis genéticos muito parecidos.",
+        "targetsError": "conceptual",
+        "rationale": "O estudo registra uma proporção maior de uma variante, não uniformidade genética nem recombinação medida."
       },
       {
         "key": "C",
-        "text": "Deriva genética é uma forma de seleção consciente."
+        "text": "A migração pode ter contribuído para a presença da variante no talhão.",
+        "targetsError": "conceptual",
+        "rationale": "O relato não descreve entrada ou saída de indivíduos durante o ensaio."
       },
       {
         "key": "D",
-        "text": "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo."
+        "text": "A deriva pode ter alterado a frequência da variante durante o ensaio.",
+        "targetsError": "conceptual",
+        "rationale": "O agente ambiental foi aplicado de modo controlado e a variante se associou à sobrevivência observada."
       },
       {
         "key": "E",
-        "text": "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        "text": "A seleção pode elevar a frequência de variante herdável ligada à sobrevivência no ensaio."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente.",
+    "correctOption": "E",
+    "explanation": "A variante já aparecia antes da aplicação, e o grupo sobrevivente deixou uma proporção maior dela na geração seguinte; isso é compatível com seleção natural naquele contexto. O estudo não sustenta uma regra para outras espécies.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-35-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-35-CON-03"
   },
   {
     "id": "CIE-35-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma tempestade reduz ao acaso uma pequena população, e os sobreviventes possuem frequências alélicas diferentes da população original. Qual mecanismo está exemplificado?",
+    "stem": "Após uma tempestade, biólogos encontraram uma população de pequenos lagartos reduzida de 120 para 18 indivíduos. Antes do evento, uma marca genética aparecia em cerca de metade das amostras; entre os sobreviventes, ela apareceu em 13. As fichas não mostraram diferença de cor, velocidade ou reprodução entre portadores e não portadores antes da tempestade. A equipe repetiu a amostragem na estação seguinte e pediu aos alunos que distinguissem acaso demográfico de vantagem adaptativa observada.\n\nQual interpretação é mais cautelosa para essa mudança?",
     "options": [
       {
         "key": "A",
-        "text": "Seleção artificial planejada."
+        "text": "Portadores da marca podem ter sobrevivido mais por uma diferença de desempenho na tempestade.",
+        "targetsError": "interpretation",
+        "rationale": "O relato não mediu corrida e diz que não encontrou diferenças de desempenho antes do evento."
       },
       {
         "key": "B",
-        "text": "Uso e desuso lamarckista."
+        "text": "A redução populacional pode ter alterado ao acaso a frequência da marca entre sobreviventes."
       },
       {
         "key": "C",
-        "text": "Fotossíntese."
+        "text": "As condições da tempestade podem ter induzido novas marcas nos lagartos sobreviventes.",
+        "targetsError": "conceptual",
+        "rationale": "O texto compara uma marca já presente antes do evento e não mede mutações causadas pela tempestade."
       },
       {
         "key": "D",
-        "text": "Deriva genética por efeito aleatório de redução populacional."
+        "text": "A proporção entre sobreviventes indica vantagem adaptativa dos portadores durante o evento.",
+        "targetsError": "interpretation",
+        "rationale": "Uma diferença de frequência, sem vantagem herdável medida, não basta para identificar seleção."
       },
       {
         "key": "E",
-        "text": "Fecundação independente de genética populacional."
+        "text": "A chegada de lagartos de outra população pode ter alterado a frequência observada.",
+        "targetsError": "conceptual",
+        "rationale": "Não há observação de migração de outra população no relatório."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Deriva genética por efeito aleatório de redução populacional.",
+    "correctOption": "B",
+    "explanation": "A população ficou pequena por um evento que não foi associado a uma vantagem dos portadores; a mudança pode refletir deriva genética. A sobrevivência maior de portadores, por si, não prova seleção quando o relatório não identifica diferença de desempenho.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +184,47 @@
       "CIE-35-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-35-CON-01"
   },
   {
     "id": "CIE-35-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Mutação gera novas variantes de DNA e é uma fonte última de novos alelos.\nII. Toda mutação ocorre porque o organismo precisa adaptar-se.\nIII. Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente.\nIV. Deriva genética é uma forma de seleção consciente.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma ilha de pesquisa recebeu cinco roedores vindos de uma ilha vizinha, e a equipe analisou marcadores genéticos nos dois locais antes e depois da chegada. Meses depois, variantes antes registradas só na origem também apareceram em parte dos descendentes do novo local. As condições ambientais e os números de sobreviventes não foram comparados; o relatório limita a conclusão à circulação de indivíduos férteis entre populações.\n\nQual fator evolutivo é diretamente ilustrado pelo registro?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A deriva pode ter alterado a frequência das variantes locais após a chegada dos roedores.",
+        "targetsError": "interpretation",
+        "rationale": "O relatório registra algumas variantes de origem nos descendentes, mas não informa se a frequência das variantes locais diminuiu."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A seleção pode ter favorecido variantes que já eram comuns na ilha de origem.",
+        "targetsError": "conceptual",
+        "rationale": "As variantes já estavam registradas na população de origem e não houve comparação de condições ou sobrevivência."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A recombinação pode ter formado variantes nos indivíduos antes da mudança de ilha.",
+        "targetsError": "conceptual",
+        "rationale": "O caso informa deslocamento de indivíduos existentes, não a origem dos cinco animais."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "A reprodução dos recém-chegados pode ter transferido variantes entre as populações."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "A mutação pode ter aproximado as frequências genéticas das duas ilhas.",
+        "targetsError": "interpretation",
+        "rationale": "O relatório observa algumas variantes compartilhadas, sem indicar identidade entre as populações."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "correctOption": "D",
+    "explanation": "Indivíduos que chegaram e deixaram descendentes levaram variantes entre populações, situação compatível com fluxo gênico. O relatório não apresenta comparação de sobrevivência para concluir seleção.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +234,150 @@
       "CIE-35-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-35-CON-01"
   },
   {
     "id": "CIE-35-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre teoria sintética e fatores evolutivos para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Em uma atividade de genética de populações, sementes de duas áreas próximas foram coletadas durante a floração. Os alunos marcaram variantes em um gene e observaram pólen levado pelo vento de uma área à outra. No ciclo seguinte, parte das plantas jovens da área receptora apresentava combinações associadas às amostras da origem. A ficha informa que não houve seleção artificial no jardim experimental e não compara o sucesso reprodutivo dos grupos.\n\nQual leitura explica a presença de variantes entre as áreas?",
     "options": [
       {
         "key": "A",
-        "text": "Fluxo gênico ocorre quando indivíduos ou gametas se deslocam entre populações e levam alelos de uma população a outra."
+        "text": "A deriva pode ter alterado frequências enquanto as sementes eram transportadas pelo vento.",
+        "targetsError": "conceptual",
+        "rationale": "O vento transportou pólen no relato; deriva genética não descreve esse deslocamento."
       },
       {
         "key": "B",
-        "text": "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo."
+        "text": "A seleção artificial pode ter favorecido combinações trazidas de uma das áreas.",
+        "targetsError": "conceptual",
+        "rationale": "A ficha informa que não houve seleção artificial no jardim."
       },
       {
         "key": "C",
-        "text": "Deriva genética é uma forma de seleção consciente."
+        "text": "O pólen entre as áreas pode levar variantes e contribuir para o fluxo gênico."
       },
       {
         "key": "D",
-        "text": "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        "text": "A proximidade pode ter provocado mutações semelhantes nas plantas das duas áreas.",
+        "targetsError": "conceptual",
+        "rationale": "O texto rastreia variantes presentes na área de origem e não relata mudanças de sequência."
       },
       {
         "key": "E",
-        "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        "text": "A floração no mesmo período pode aproximar as frequências genéticas entre as áreas.",
+        "targetsError": "interpretation",
+        "rationale": "A atividade registra algumas variantes em parte das plantas, não igualdade de frequências."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Fluxo gênico ocorre quando indivíduos ou gametas se deslocam entre populações e levam alelos de uma população a outra.",
+    "correctOption": "C",
+    "explanation": "O caso documenta pólen cruzando o limite entre áreas e variantes aparecendo em plantas jovens do local receptor, compatível com fluxo gênico. Sem dados de reprodução diferencial, a alternativa baseada em seleção acrescenta uma causa não medida.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-35-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-35-CON-05"
   },
   {
     "id": "CIE-35-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre teoria sintética e fatores evolutivos?",
+    "stem": "Em um arquivo de sementes, uma equipe guardou amostras de uma população de feijoeiros antes de um surto de fungo. Ao comparar as sequências, encontrou uma variante rara em poucas sementes antigas; no plantio posterior, algumas plantas com essa variante tiveram menor dano. O arquivo não demonstra qual processo originou a alteração nem prova que ela apareceu em resposta ao fungo. O grupo precisa separar a origem da variante de seu possível efeito no novo ambiente.\n\nQual conclusão é compatível com o arquivo?",
     "options": [
       {
         "key": "A",
-        "text": "Recombinação durante reprodução sexuada reorganiza alelos existentes e aumenta combinações genéticas."
+        "text": "A variante já aparecia antes do surto e pode estar relacionada ao menor dano observado."
       },
       {
         "key": "B",
-        "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        "text": "O fungo pode ter induzido a variante nas plantas que precisavam resistir ao surto.",
+        "targetsError": "conceptual",
+        "rationale": "A variante consta do arquivo anterior ao surto e não foi mostrada como produzida pela exposição."
       },
       {
         "key": "C",
-        "text": "Seleção natural altera frequências quando variantes herdáveis afetam sobrevivência ou reprodução em determinado ambiente."
+        "text": "O menor dano nas plantas indica que a presença do fungo terminou no cultivo.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório descreve menor dano em algumas plantas, sem afirmar que o fungo deixou de ocorrer."
       },
       {
         "key": "D",
-        "text": "Deriva genética é mudança aleatória nas frequências alélicas, com efeitos especialmente importantes em populações pequenas."
+        "text": "A variante pode ter se tornado a mais frequente na população após o plantio.",
+        "targetsError": "interpretation",
+        "rationale": "O texto fala em poucas sementes e algumas plantas, sem relatar fixação populacional."
       },
       {
         "key": "E",
-        "text": "Mutação gera novas variantes de DNA e é uma fonte última de novos alelos."
+        "text": "A recombinação pode explicar a origem do fungo observado nas plantas cultivadas.",
+        "targetsError": "conceptual",
+        "rationale": "A sequência analisada pertence às sementes; o caso não descreve criação do fungo."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a incorreta: Toda mutação ocorre porque o organismo precisa adaptar-se. As demais expressam relações compatíveis com os conceitos da aula.",
+    "correctOption": "A",
+    "explanation": "A variante já aparece em amostras anteriores ao surto, e o plantio posterior relaciona sua presença a menor dano. A necessidade do ambiente não explica seu surgimento; o arquivo tampouco identifica o mecanismo exato da origem.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-35-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-35-CON-01"
   },
   {
     "id": "CIE-35-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em teoria sintética e fatores evolutivos?",
+    "stem": "Um laboratório didático comparou amostras genéticas de moradores de regiões distintas e registrou várias variantes compartilhadas, além de frequências que variavam gradualmente entre amostras próximas. Os pesquisadores explicaram que as coletas eram limitadas e que categorias sociais usadas no formulário não separavam perfeitamente a diversidade biológica observada. A turma deveria escrever uma conclusão sem transformar diferenças de frequência em uma escala de valor entre pessoas ou grupos.\n\nQual conclusão respeita melhor os dados e o limite ético da atividade?",
     "options": [
       {
         "key": "A",
-        "text": "Evolução biológica permite classificar populações humanas em níveis de superioridade."
+        "text": "Frequências distintas podem refletir adaptação local, mesmo sem dados sobre função ou ambiente.",
+        "targetsError": "interpretation",
+        "rationale": "Frequências de variantes não demonstram adaptação local sem dados funcionais ou ambientais, nem medem valor biológico de grupos."
       },
       {
         "key": "B",
-        "text": "Fluxo gênico sempre reduz a quantidade total de variação genética no mundo."
+        "text": "As categorias do formulário podem representar conjuntos com perfis genéticos distintos.",
+        "targetsError": "interpretation",
+        "rationale": "A ficha informa que as categorias sociais não separaram perfeitamente a diversidade observada."
       },
       {
         "key": "C",
-        "text": "A diversidade humana não sustenta hierarquias biológicas de 'raças superiores'; variação é distribuída de modo complexo e populações compartilham ancestralidade recente."
+        "text": "Variantes compartilhadas podem coexistir com diferenças de frequência entre as amostras.",
+        "targetsError": "interpretation",
+        "rationale": "O relato menciona tanto compartilhamento quanto variação gradual entre frequências."
       },
       {
         "key": "D",
-        "text": "Deriva genética é uma forma de seleção consciente."
+        "text": "As frequências observadas podem formar uma escala de proximidade a um padrão humano.",
+        "targetsError": "interpretation",
+        "rationale": "O estudo não define padrão ideal e não sustenta ordenar pessoas ou regiões por valor."
       },
       {
         "key": "E",
-        "text": "Toda mutação ocorre porque o organismo precisa adaptar-se."
+        "text": "A variação humana é complexa e não estabelece uma hierarquia biológica entre grupos."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: A diversidade humana não sustenta hierarquias biológicas de 'raças superiores'; variação é distribuída de modo complexo e populações compartilham ancestralidade recente.",
+    "correctOption": "E",
+    "explanation": "As variantes compartilhadas e as frequências graduais mostram uma diversidade complexa, sem formar uma escala de superioridade. Categorias sociais do formulário não autorizam hierarquias biológicas nem substituem a análise das amostras.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-35-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-35-CON-06"
   }
 ]

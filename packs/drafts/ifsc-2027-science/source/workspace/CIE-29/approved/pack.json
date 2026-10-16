@@ -207,294 +207,293 @@
     {
       "id": "CIE-29-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Durante uma revisão de corpo humano: sistemas, estrutura e funcionamento, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "stem": "Registro de refeição simulada, atividade escolar de 3 out. 2026. Após uma refeição simulada, uma equipe acompanhou esferas coloridas passando por um modelo de tubo digestório. Uma amostra do sangue de demonstração mudou de cor após a etapa intestinal, e a mesma cor apareceu depois em um modelo de músculo do braço. Os estudantes registraram os pontos de coleta e compararam o percurso dos marcadores. O exercício não indicava qual sistema deveria receber crédito por cada etapa.\n\nQual sequência representa melhor a cooperação envolvida no percurso observado?",
       "options": [
         {
           "key": "A",
-          "text": "Homeostase significa manter todas as variáveis internas absolutamente fixas, sem qualquer oscilação."
+          "text": "O alimento é transportado pelo sangue até os músculos, onde ocorre a digestão antes da absorção dos nutrientes."
         },
         {
           "key": "B",
-          "text": "O sistema circulatório produz todo o oxigênio usado pelas células."
+          "text": "Após a absorção intestinal, nutrientes entram na circulação e alcançam tecidos como os músculos."
         },
         {
           "key": "C",
-          "text": "Cada sistema do corpo funciona isoladamente dos demais."
+          "text": "A digestão libera nutrientes, mas sua absorção ocorre no sangue antes de chegarem ao intestino."
         },
         {
           "key": "D",
-          "text": "Sistema digestório transforma alimentos e absorve nutrientes; sistema circulatório distribui substâncias pelo corpo."
+          "text": "O sistema circulatório transporta substâncias, enquanto a digestão ocorre no estômago e nos intestinos."
         },
         {
           "key": "E",
-          "text": "Rins fazem parte do sistema digestório."
+          "text": "O sangue distribui nutrientes absorvidos, mas a refeição é transformada durante o processo digestório."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D é a correta: Sistema digestório transforma alimentos e absorve nutrientes; sistema circulatório distribui substâncias pelo corpo.",
-      "difficulty": "FOUNDATION",
-      "cognitiveOperation": "UNDERSTAND",
+      "correctOption": "B",
+      "explanation": "A ficha descreve digestão e absorção no sistema digestório, seguidas do transporte pelo sangue. A alternativa que atribui a digestão ao sangue troca as funções observadas no relato.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "CIE-29-CON-01"
       ],
-      "targetedError": "core_concept",
+      "targetedError": "digestive_circulatory_roles",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-29-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante precisa explicar corpo humano: sistemas, estrutura e funcionamento sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "stem": "Relatório de caminhada, coleta didática de 4 out. 2026. Em uma caminhada rápida, um estudante passou a respirar com maior frequência. Uma equipe escolar comparou uma amostra de ar inspirado com outra de ar expirado e registrou mudanças na quantidade de oxigênio e dióxido de carbono. O relatório relacionou a entrada de oxigênio com o sangue que circulava pelos pulmões e descreveu a saída de dióxido de carbono na expiração. A medição foi feita após esforço leve e repouso.\n\nQual função do sistema respiratório explica os dados?",
       "options": [
         {
           "key": "A",
-          "text": "O sistema circulatório produz todo o oxigênio usado pelas células."
+          "text": "O sistema respiratório recebe oxigênio, enquanto o dióxido de carbono é produzido no metabolismo celular."
         },
         {
           "key": "B",
-          "text": "Homeostase significa manter todas as variáveis internas absolutamente fixas, sem qualquer oscilação."
+          "text": "O ar chega aos pulmões, e o sangue realiza as trocas gasosas nos alvéolos antes de distribuir os gases."
         },
         {
           "key": "C",
-          "text": "Sistema respiratório realiza trocas gasosas entre organismo e ambiente, fornecendo oxigênio e eliminando dióxido de carbono."
+          "text": "Os pulmões mantêm uma reserva temporária de ar, enquanto as trocas gasosas ocorrem entre alvéolos e sangue."
         },
         {
           "key": "D",
-          "text": "Cada sistema do corpo funciona isoladamente dos demais."
+          "text": "O sistema urinário regula água e sais, enquanto os pulmões realizam trocas entre ar e sangue."
         },
         {
           "key": "E",
-          "text": "Rins fazem parte do sistema digestório."
+          "text": "Nos alvéolos, parte do oxigênio passa ao sangue e o dióxido de carbono segue para o ar expirado."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A alternativa C é a correta: Sistema respiratório realiza trocas gasosas entre organismo e ambiente, fornecendo oxigênio e eliminando dióxido de carbono.",
+      "correctOption": "E",
+      "explanation": "A comparação registra oxigênio no ar inspirado e dióxido de carbono no expirado. O sistema respiratório realiza essas trocas; o coração participa do transporte do sangue, não da troca gasosa pulmonar.",
       "difficulty": "DIRECT",
-      "cognitiveOperation": "UNDERSTAND",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "CIE-29-CON-02"
       ],
-      "targetedError": "concept_discrimination",
+      "targetedError": "respiratory_exchange_vs_transport",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-29-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em corpo humano: sistemas, estrutura e funcionamento?",
+      "stem": "Diário de treino e hidratação, caso de estudo de 5 out. 2026. Depois de uma tarde quente, uma estudante percebeu que produziu menos urina do que em uma manhã fria. O diário também registrou maior transpiração durante o treino e ingestão de água após a atividade. Uma enfermeira explicou que rins e outros mecanismos do corpo acompanham água e sais no sangue. O registro não comparou a estudante com outras pessoas nem tratou a diferença de volume como diagnóstico de doença.\n\nQual interpretação corresponde ao papel do sistema urinário?",
       "options": [
         {
           "key": "A",
-          "text": "O sistema circulatório produz todo o oxigênio usado pelas células."
+          "text": "Os rins excretam substâncias e regulam a quantidade de água e sais."
         },
         {
           "key": "B",
-          "text": "Rins fazem parte do sistema digestório."
+          "text": "A reabsorção de água nos rins acompanha a transpiração e devolve o suor ao sangue para formar urina."
         },
         {
           "key": "C",
-          "text": "Cada sistema do corpo funciona isoladamente dos demais."
+          "text": "O volume de urina varia com a regulação de água e sais, sem indicar diretamente a oxigenação pulmonar."
         },
         {
           "key": "D",
-          "text": "Homeostase significa manter todas as variáveis internas absolutamente fixas, sem qualquer oscilação."
+          "text": "A transpiração e a função renal participam do equilíbrio hídrico, sendo o suor uma etapa da filtração renal."
         },
         {
           "key": "E",
-          "text": "Sistema urinário participa da excreção e do controle de água, sais e composição do sangue."
+          "text": "A variação observada pode acompanhar mudanças de hidratação, sugerindo uma alteração renal que precisa ser confirmada."
         }
       ],
-      "correctOption": "E",
-      "explanation": "A alternativa E é a correta: Sistema urinário participa da excreção e do controle de água, sais e composição do sangue.",
-      "difficulty": "DIRECT",
-      "cognitiveOperation": "ANALYZE",
+      "correctOption": "A",
+      "explanation": "O diário relaciona calor, transpiração, água ingerida e variação de urina. O sistema urinário ajuda a excretar substâncias e regular água e sais; a observação isolada não estabelece um diagnóstico.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "EVALUATE",
       "conceptIds": [
         "CIE-29-CON-03"
       ],
-      "targetedError": "relationship",
+      "targetedError": "urinary_homeostasis_and_diagnosis",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-29-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Durante exercício, respiração e frequência cardíaca aumentam. Qual explicação integra os sistemas?",
+      "stem": "Notas de demonstração e crescimento vegetal, 6 out. 2026. Durante uma demonstração, uma estudante afastou a mão logo após ouvir uma campainha inesperada. Em outra atividade, a turma acompanhou mudanças graduais no crescimento de mudas ao longo de várias semanas. Os dois registros foram colocados lado a lado para que os grupos comparassem a duração das respostas e identificassem quais órgãos poderiam participar de cada situação. A ficha não nomeava os sistemas responsáveis pelas observações.\n\nQual comparação entre sistemas explica melhor os dois registros?",
       "options": [
         {
           "key": "A",
-          "text": "O coração passa a produzir oxigênio."
+          "text": "O sistema endócrino coordena o gesto rápido, enquanto hormônios podem influenciar mudanças graduais."
         },
         {
           "key": "B",
-          "text": "O sistema digestório substitui o sistema respiratório."
+          "text": "O sistema nervoso processa o som, mas a resposta rápida da mão depende principalmente de hormônios circulantes."
         },
         {
           "key": "C",
-          "text": "Os rins assumem a função dos músculos."
+          "text": "A resposta rápida envolve sinais nervosos, enquanto o crescimento ocorre sem participação de regulação hormonal."
         },
         {
           "key": "D",
-          "text": "Maior atividade muscular aumenta demandas metabólicas, e sistemas respiratório e circulatório ajustam trocas e transporte de gases e nutrientes."
+          "text": "O sistema nervoso coordena respostas rápidas, e o endócrino regula processos por hormônios."
         },
         {
           "key": "E",
-          "text": "Os sistemas deixam de interagir durante o exercício."
+          "text": "Sinais nervosos e hormônios podem interagir, mas os hormônios coordenam o gesto imediato e os nervos regulam o crescimento."
         }
       ],
       "correctOption": "D",
-      "explanation": "Maior atividade muscular aumenta demandas metabólicas, e sistemas respiratório e circulatório ajustam trocas e transporte de gases e nutrientes.",
+      "explanation": "A retirada rápida da mão envolve coordenação nervosa, enquanto a discussão do crescimento destaca regulação hormonal. A circulação pode transportar hormônios, mas não substitui o processamento nervoso do som.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "CIE-29-CON-01",
-        "CIE-29-CON-02",
-        "CIE-29-CON-03"
+        "CIE-29-CON-04"
       ],
-      "targetedError": "application",
+      "targetedError": "nervous_endocrine_coordination",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-29-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Sistema digestório transforma alimentos e absorve nutrientes; sistema circulatório distribui substâncias pelo corpo.\nII. Cada sistema do corpo funciona isoladamente dos demais.\nIII. Sistema urinário participa da excreção e do controle de água, sais e composição do sangue.\nIV. O sistema circulatório produz todo o oxigênio usado pelas células.\nAssinale a alternativa CORRETA.",
+      "stem": "Ficha de aula de movimento, exemplo de 7 out. 2026. Em uma aula de movimento, uma turma observou uma pessoa levantar uma mochila do chão e colocá-la sobre uma mesa. O registro descreveu flexão do cotovelo, mudança na posição dos ossos do braço e contração dos músculos próximos à articulação. A professora pediu aos estudantes que comparassem as imagens antes e depois do movimento e identificassem a contribuição de cada estrutura na sustentação e deslocamento do braço.\n\nQual interpretação integra corretamente os componentes do sistema locomotor?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "Os ossos geram a força que move o braço, e a contração muscular apenas estabiliza a articulação."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "A articulação produz a força, enquanto músculos e ossos orientam a direção do movimento."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "Músculos, ossos e articulações cooperam para sustentar e movimentar o braço."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "O sistema respiratório produz a força do movimento, enquanto músculos e ossos apenas acompanham a inspiração."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "O cotovelo permite movimento entre ossos, e os tendões, em vez dos músculos, produzem a força observada."
         }
       ],
-      "correctOption": "B",
-      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-      "difficulty": "IFSC",
-      "cognitiveOperation": "ANALYZE",
+      "correctOption": "C",
+      "explanation": "As imagens mostram mudança na posição dos ossos e contração de músculos ao redor do cotovelo. O sistema locomotor combina músculos, ossos e articulações; a inspiração acompanha a atividade, mas não explica a flexão.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "APPLY",
       "conceptIds": [
-        "CIE-29-CON-01",
-        "CIE-29-CON-02",
-        "CIE-29-CON-03",
-        "CIE-29-CON-04"
+        "CIE-29-CON-05"
       ],
-      "targetedError": "multi_statement_reasoning",
+      "targetedError": "locomotor_component_roles",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-29-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Ao transferir o que foi estudado sobre corpo humano: sistemas, estrutura e funcionamento para uma situação nova, qual conclusão permanece válida?",
+      "stem": "Medições de exercício e repouso, quadro escolar de 8 out. 2026. Após correr por alguns minutos, um estudante registrou temperatura de 36,7 °C, respiração acelerada e suor. Depois de repousar e beber água, a temperatura anotada se aproximou de 36,8 °C e a respiração diminuiu. A turma comparou as medidas feitas em momentos diferentes e observou que o organismo ajustou sua condição durante e depois do exercício, sem manter os números idênticos.\n\nQue ideia sobre a regulação do meio interno é apoiada pelos registros?",
       "options": [
         {
           "key": "A",
-          "text": "O sistema circulatório produz todo o oxigênio usado pelas células."
+          "text": "A variação entre esforço e repouso é compatível com ajustes que ajudam a manter o equilíbrio interno."
         },
         {
           "key": "B",
-          "text": "Cada sistema do corpo funciona isoladamente dos demais."
+          "text": "A temperatura registrada indica que o organismo priorizou uma única variável e deixou de ajustar outras condições internas."
         },
         {
           "key": "C",
-          "text": "Rins fazem parte do sistema digestório."
+          "text": "A respiração acelerada pode ser interpretada separadamente, pois a medição não se relaciona com a temperatura corporal."
         },
         {
           "key": "D",
-          "text": "Sistema locomotor envolve ossos, articulações e músculos na sustentação e movimento."
+          "text": "O suor reduz a temperatura, enquanto a sede indica reposição imediata; juntos, esses sinais dispensam ajustes do organismo."
         },
         {
           "key": "E",
-          "text": "Homeostase significa manter todas as variáveis internas absolutamente fixas, sem qualquer oscilação."
+          "text": "A circulação transporta substâncias, mas seus ajustes não participam da manutenção do meio interno durante exercício."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D é a correta: Sistema locomotor envolve ossos, articulações e músculos na sustentação e movimento.",
+      "correctOption": "A",
+      "explanation": "As medidas mudaram durante o exercício e se aproximaram dos valores anteriores durante o repouso. Homeostase é dinâmica: o organismo ajusta condições internas, em vez de manter cada variável absolutamente fixa.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "cognitiveOperation": "EVALUATE",
       "conceptIds": [
-        "CIE-29-CON-05"
+        "CIE-29-CON-06"
       ],
-      "targetedError": "transfer",
+      "targetedError": "homeostasis_as_fixed_values",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-29-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre corpo humano: sistemas, estrutura e funcionamento?",
+      "stem": "Planilha de escadas, relato elaborado em 9 out. 2026. Um grupo acompanhou uma aluna durante uma subida de escadas. A frequência respiratória e os batimentos cardíacos aumentaram, e os músculos das pernas trabalharam com mais intensidade. Após alguns minutos sentada, as medidas diminuíram. O relatório registrou as observações sem atribuir o aumento a um único órgão e destacou que o sangue transporta substâncias entre pulmões, coração e tecidos.\n\nQual explicação integra melhor os dados da subida?",
       "options": [
         {
           "key": "A",
-          "text": "Sistema digestório transforma alimentos e absorve nutrientes; sistema circulatório distribui substâncias pelo corpo."
+          "text": "O coração aumenta o fluxo sanguíneo; o oxigênio que chega aos tecidos foi obtido nas trocas pulmonares."
         },
         {
           "key": "B",
-          "text": "Sistema urinário participa da excreção e do controle de água, sais e composição do sangue."
+          "text": "Com o esforço, a ventilação e o fluxo sanguíneo podem aumentar para atender à demanda dos músculos e transportar gases."
         },
         {
           "key": "C",
-          "text": "Sistema nervoso recebe, processa e coordena informações rapidamente; sistema endócrino usa hormônios para regular processos."
+          "text": "Os rins regulam água e sais, enquanto músculos utilizam energia e recebem substâncias pela circulação."
         },
         {
           "key": "D",
-          "text": "Cada sistema do corpo funciona isoladamente dos demais."
+          "text": "A atividade muscular eleva a demanda por oxigênio, mas o aumento dos batimentos reduz o fluxo de sangue aos músculos."
         },
         {
           "key": "E",
-          "text": "Sistema respiratório realiza trocas gasosas entre organismo e ambiente, fornecendo oxigênio e eliminando dióxido de carbono."
+          "text": "Respiração e batimentos podem acompanhar o esforço, embora outros fatores também influenciem essas medidas."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D é a incorreta: Cada sistema do corpo funciona isoladamente dos demais. As demais expressam relações compatíveis com os conceitos da aula.",
-      "difficulty": "DIRECT",
+      "correctOption": "B",
+      "explanation": "A subida exigiu trabalho muscular, e o relatório observa mudanças simultâneas na respiração e nos batimentos. Os pulmões realizam trocas gasosas e a circulação transporta substâncias; o coração não produz oxigênio.",
+      "difficulty": "APPLIED",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "CIE-29-CON-01"
+        "CIE-29-CON-01",
+        "CIE-29-CON-02",
+        "CIE-29-CON-04",
+        "CIE-29-CON-05"
       ],
-      "targetedError": "misconception_identification",
+      "targetedError": "exercise_system_integration",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-29-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em corpo humano: sistemas, estrutura e funcionamento?",
+      "stem": "Ficha de consulta simulada, estudo de caso de 10 out. 2026. Em uma consulta simulada, um paciente relatou desconforto abdominal e mudança na quantidade de urina. A ficha da equipe incluiu amostras de sangue, uma medição de absorção de nutrientes após refeição e uma observação da composição urinária. Os estudantes receberam os resultados sem indicação do órgão associado a cada medição e precisavam classificar os processos antes de sugerir quais sistemas poderiam participar.\n\nQual relação entre rins, sangue e digestão corresponde aos resultados?",
       "options": [
         {
           "key": "A",
-          "text": "Rins fazem parte do sistema digestório."
+          "text": "Os rins filtram nutrientes absorvidos no intestino e os devolvem diretamente ao sistema digestório."
         },
         {
           "key": "B",
-          "text": "Homeostase significa manter todas as variáveis internas absolutamente fixas, sem qualquer oscilação."
+          "text": "A absorção intestinal leva nutrientes à circulação, que filtra o sangue e forma urina nos rins."
         },
         {
           "key": "C",
-          "text": "O sistema circulatório produz todo o oxigênio usado pelas células."
+          "text": "A composição urinária informa sobre a excreção, mas não localiza sozinha uma alteração digestiva."
         },
         {
           "key": "D",
-          "text": "Homeostase descreve manutenção dinâmica de condições internas compatíveis com o funcionamento das células, com cooperação entre sistemas."
+          "text": "Os rins filtram o sangue no sistema urinário, e a absorção de nutrientes ocorre no sistema digestório."
         },
         {
           "key": "E",
-          "text": "Cada sistema do corpo funciona isoladamente dos demais."
+          "text": "O sangue transporta nutrientes e resíduos, enquanto a urina segue dos rins ao sistema urinário para eliminação."
         }
       ],
       "correctOption": "D",
-      "explanation": "A alternativa D é a correta: Homeostase descreve manutenção dinâmica de condições internas compatíveis com o funcionamento das células, com cooperação entre sistemas.",
-      "difficulty": "IFSC",
-      "cognitiveOperation": "EVALUATE",
+      "explanation": "A ficha distingue absorção intestinal e filtração renal. Os rins pertencem ao sistema urinário e filtram o sangue; a frequência urinária, isoladamente, não identifica uma etapa digestiva alterada.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "CIE-29-CON-06"
+        "CIE-29-CON-01",
+        "CIE-29-CON-03"
       ],
-      "targetedError": "synthesis",
+      "targetedError": "organ_system_membership",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     }
   ]

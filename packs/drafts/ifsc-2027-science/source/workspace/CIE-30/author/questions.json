@@ -2,294 +2,293 @@
   {
     "id": "CIE-30-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de vacinas, imunidade e doenças dos sistemas, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Cartão usado em aula de saúde, exemplo de 9 out. 2026. Em uma aula, a equipe acompanhou uma personagem que recebeu uma dose antes de participar de um acampamento. Amostras simuladas de sangue foram coletadas em dias diferentes e comparadas quanto a marcadores associados a um alvo específico. Após o acampamento, a personagem não apresentou o quadro que o material ilustrava, mas a ficha não comparava esse caso com outras pessoas nem avaliava a causa de eventuais sintomas.\n\nQual interpretação é mais compatível com o registro de vacinação?",
     "options": [
       {
         "key": "A",
-        "text": "Memória imunológica significa que o organismo nunca mais pode ser infectado por nenhum agente."
+        "text": "A dose pode induzir resposta específica, o que corresponde à imunização passiva por transferência de anticorpos."
       },
       {
         "key": "B",
-        "text": "Vacina fornece sempre anticorpos prontos e por isso é igual a soro."
+        "text": "A dose aplicada antes do acampamento tratou uma infecção que ainda não apresentava sintomas."
       },
       {
         "key": "C",
-        "text": "Antibióticos tratam qualquer infecção viral."
+        "text": "A proteína reconhecida pelo sistema imune exerce, no organismo, função de antibiótico contra o alvo viral."
       },
       {
         "key": "D",
-        "text": "Vacinas apresentam antígenos ou instruções que induzem uma resposta imunológica específica sem causar a doença da mesma forma que uma infecção natural típica."
+        "text": "A presença de marcadores específicos demonstra que a dose eliminou contatos prévios com o mesmo agente."
       },
       {
         "key": "E",
-        "text": "Vacinas servem apenas para tratar uma doença depois que sintomas graves aparecem."
+        "text": "A dose pode preparar o sistema imune para reconhecer um alvo, sem garantir que toda exposição resulte em proteção completa."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Vacinas apresentam antígenos ou instruções que induzem uma resposta imunológica específica sem causar a doença da mesma forma que uma infecção natural típica.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "UNDERSTAND",
+    "correctOption": "E",
+    "explanation": "O cartão descreve instruções para produção de uma proteína reconhecida pelo sistema imune e vacinação anterior aos sintomas. Isso corresponde a uma medida preventiva; anticorpos prontos descrevem outra forma de imunização.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-30-CON-01"
+      "CIE-30-CON-01",
+      "CIE-30-CON-03"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "vaccine_as_treatment_or_passive_antibody",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-30-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar vacinas, imunidade e doenças dos sistemas sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Quadro comparativo de resposta imune, aula de 10 out. 2026. Em uma aula, uma pesquisadora comparou a resposta de duas personagens fictícias após receberem uma vacina e encontrarem o mesmo agente em ocasiões diferentes. No segundo contato, os registros indicavam reconhecimento mais rápido do alvo por células do sistema imune. O quadro não mostrava uma garantia de ausência de infecção, mas descrevia uma resposta adaptativa mais ágil em comparação com a primeira exposição.\n\nQue processo ajuda a explicar essa diferença entre os contatos?",
     "options": [
       {
         "key": "A",
-        "text": "Memória imunológica significa que o organismo nunca mais pode ser infectado por nenhum agente."
+        "text": "A resposta primária tende a ser mais rápida no segundo contato, enquanto a memória se forma depois dele."
       },
       {
         "key": "B",
-        "text": "Antibióticos tratam qualquer infecção viral."
+        "text": "Após uma exposição anterior, células de memória podem reconhecer o antígeno e contribuir para uma resposta mais rápida."
       },
       {
         "key": "C",
-        "text": "Vacina fornece sempre anticorpos prontos e por isso é igual a soro."
+        "text": "Células de memória convertem anticorpos do primeiro contato em antibióticos que circulam no sangue."
       },
       {
         "key": "D",
-        "text": "A resposta adaptativa pode gerar células de memória, permitindo resposta mais rápida em exposições futuras."
+        "text": "O reconhecimento mais rápido no segundo contato decorre de uma mudança do agente que preservou o mesmo alvo."
       },
       {
         "key": "E",
-        "text": "Vacinas servem apenas para tratar uma doença depois que sintomas graves aparecem."
+        "text": "A vacinação pode favorecer memória específica, mas ela não participa do reconhecimento do antígeno em exposições posteriores."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: A resposta adaptativa pode gerar células de memória, permitindo resposta mais rápida em exposições futuras.",
+    "correctOption": "B",
+    "explanation": "O quadro registra reconhecimento mais rápido em um contato posterior, compatível com células de memória. A vacinação não transforma células em antibióticos; antibióticos são medicamentos usados contra bactérias sensíveis.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-30-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "immune_memory_mechanism",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-30-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em vacinas, imunidade e doenças dos sistemas?",
+    "stem": "Três prontuários para simulação clínica, 11 out. 2026. Uma simulação de atendimento apresentou três prontuários: uma pessoa com uma dose registrada antes de uma viagem, outra que recebeu uma preparação de anticorpos depois de um acidente e uma terceira cuja amostra clínica indicou bactéria sensível a um medicamento. A turma organizou os prontuários em uma tabela com data, condição observada e conduta descrita, sem classificar previamente cada ação como prevenção, imunização ou tratamento.\n\nQual comparação entre as condutas corresponde aos prontuários?",
     "options": [
       {
         "key": "A",
-        "text": "Antibióticos tratam qualquer infecção viral."
+        "text": "O soro fornece anticorpos prontos, e antibióticos atuam contra bactérias sensíveis mesmo sem avaliar o agente."
       },
       {
         "key": "B",
-        "text": "Vacinação é principalmente medida preventiva; não deve ser confundida com antibióticos nem com soros que fornecem anticorpos prontos."
+        "text": "A vacina estimula resposta do organismo e o soro fornece anticorpos prontos; ambos conferem proteção preventiva duradoura."
       },
       {
         "key": "C",
-        "text": "Memória imunológica significa que o organismo nunca mais pode ser infectado por nenhum agente."
+        "text": "Vacinação pode prevenir, soro oferece anticorpos prontos e antibiótico pode agir contra bactéria sensível."
       },
       {
         "key": "D",
-        "text": "Vacina fornece sempre anticorpos prontos e por isso é igual a soro."
+        "text": "A vacinação é uma medida preventiva; antibióticos têm uso relacionado a determinadas infecções bacterianas."
       },
       {
         "key": "E",
-        "text": "Vacinas servem apenas para tratar uma doença depois que sintomas graves aparecem."
+        "text": "Os prontuários descrevem estratégias distintas, mas vacina e antibiótico são usados após o início da infecção."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Vacinação é principalmente medida preventiva; não deve ser confundida com antibióticos nem com soros que fornecem anticorpos prontos.",
-    "difficulty": "DIRECT",
+    "correctOption": "C",
+    "explanation": "Os cartões distinguem vacinação preventiva, anticorpos prontos no soro e antibiótico para bactéria sensível. A troca entre vacina e soro confunde uma resposta estimulada pelo organismo com imunização passiva.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-30-CON-03"
+      "CIE-30-CON-03",
+      "CIE-30-CON-06"
     ],
-    "targetedError": "relationship",
+    "targetedError": "vaccine_serum_antibiotic_distinction",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-30-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Após vacinação, qual resposta explica a proteção futura de forma geral?",
+    "stem": "Ficha de acompanhamento de caso didático, 12 out. 2026. Em uma atividade, os estudantes acompanharam uma doença que começou com tosse e febre em uma personagem e depois exigiu avaliação de hidratação e circulação. O relatório explicou que o agente afetava principalmente o sistema respiratório, mas os sintomas e cuidados podiam envolver outras funções do corpo. A professora pediu que a turma evitasse transformar o caso em uma lista de doenças e observasse como sistemas interagem durante um problema de saúde.\n\nQual leitura é mais compatível com o caso descrito?",
     "options": [
       {
         "key": "A",
-        "text": "A vacina transforma bactérias em vírus."
+        "text": "O acompanhamento de sintomas respiratórios pode incluir atenção a hidratação e circulação, sem indicar origem nesses sistemas."
       },
       {
         "key": "B",
-        "text": "O corpo recebe antibióticos que ficam armazenados para sempre."
+        "text": "Tosse e febre permitem inferir que os pulmões produziram anticorpos específicos contra o agente."
       },
       {
         "key": "C",
-        "text": "Todos os microrganismos são eliminados do ambiente."
+        "text": "A avaliação de hidratação indica que o sistema urinário foi o local de origem da doença respiratória."
       },
       {
         "key": "D",
-        "text": "O sistema imune desenvolve resposta específica e pode formar memória imunológica contra o antígeno alvo."
+        "text": "A circulação pode transportar substâncias, mas esse transporte fica suspenso durante uma doença respiratória."
       },
       {
         "key": "E",
-        "text": "A vacina impede qualquer resposta imunológica futura."
+        "text": "Uma doença respiratória pode repercutir em outras funções, mostrando que todos os sistemas foram igualmente afetados."
       }
     ],
-    "correctOption": "D",
-    "explanation": "O sistema imune desenvolve resposta específica e pode formar memória imunológica contra o antígeno alvo.",
+    "correctOption": "A",
+    "explanation": "O caso começa com sinais respiratórios e inclui avaliação de hidratação e circulação. Doenças podem repercutir em mais de um sistema; a presença desses cuidados não identifica outro local de origem do agente.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-30-CON-01",
-      "CIE-30-CON-02",
-      "CIE-30-CON-03"
+      "CIE-30-CON-04"
     ],
-    "targetedError": "application",
+    "targetedError": "disease_system_interaction",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-30-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Vacinas apresentam antígenos ou instruções que induzem uma resposta imunológica específica sem causar a doença da mesma forma que uma infecção natural típica.\nII. Vacina fornece sempre anticorpos prontos e por isso é igual a soro.\nIII. Vacinação é principalmente medida preventiva; não deve ser confundida com antibióticos nem com soros que fornecem anticorpos prontos.\nIV. Antibióticos tratam qualquer infecção viral.\nAssinale a alternativa CORRETA.",
+    "stem": "Roteiro de semana de saúde escolar, 13 out. 2026. Uma escola organizou uma semana de saúde com um calendário de vacinação, uma visita para observar o sistema local de água tratada e uma roda de conversa com profissionais. Os estudantes receberam situações diferentes: uma dúvida sobre doses registradas, uma pergunta sobre qualidade da água e uma preocupação individual de saúde. A equipe pediu propostas para encaminhar cada situação sem substituir avaliação profissional ou alterar medicamentos por conta própria.\n\nQual plano usa adequadamente os recursos da semana?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A dúvida sobre doses pode ser conferida no calendário, que também permite avaliar a qualidade da água tratada."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A qualidade da água pode ser verificada pelo calendário vacinal, pois as duas medidas previnem doenças da mesma forma."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "O calendário de vacinação pode identificar a causa dos sintomas individuais quando mostra as doses recebidas."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "A dúvida individual pode ser encaminhada a profissionais, e o calendário vacinal serve para verificar a qualidade do saneamento."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "O calendário, a observação do saneamento e a conversa com profissionais atendem dúvidas de naturezas distintas."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "E",
+    "explanation": "O cartaz reúne vacinação, água tratada e orientação profissional como medidas com objetivos diferentes. Antibiótico guardado em casa não substitui prevenção nem avaliação clínica.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-30-CON-01",
-      "CIE-30-CON-02",
-      "CIE-30-CON-03",
-      "CIE-30-CON-04"
+      "CIE-30-CON-05"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "prevention_measures_and_self_medication",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-30-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre vacinas, imunidade e doenças dos sistemas para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Prontuário simulado de consulta, caso de 14 out. 2026. Uma pessoa com sintomas respiratórios perguntou em uma consulta simulada se poderia usar um antibiótico que havia sobrado em casa. O teste descrito no prontuário identificou um agente viral, e a ficha não continha prescrição nem recomendação de dose. A profissional da atividade pediu que os estudantes explicassem o que o resultado laboratorial permite concluir sobre o medicamento, sem substituir uma avaliação clínica.\n\nQual interpretação respeita o alcance do antibiótico descrito no conteúdo da aula?",
     "options": [
       {
         "key": "A",
-        "text": "Antibióticos tratam qualquer infecção viral."
+        "text": "Antibióticos podem agir contra bactérias sensíveis, e vacinas tratam o vírus identificado depois do início dos sintomas."
       },
       {
         "key": "B",
-        "text": "Vacinas servem apenas para tratar uma doença depois que sintomas graves aparecem."
+        "text": "Vírus não são alvo de antibióticos, mas sintomas iniciais bastam para concluir que surgiu uma infecção bacteriana secundária."
       },
       {
         "key": "C",
-        "text": "Memória imunológica significa que o organismo nunca mais pode ser infectado por nenhum agente."
+        "text": "O resultado viral não informa sensibilidade bacteriana, então a avaliação profissional pode ser dispensada."
       },
       {
         "key": "D",
-        "text": "Prevenção inclui vacinação, saneamento, hábitos de saúde, proteção individual e acompanhamento médico conforme o problema."
+        "text": "Esse medicamento tem alvo bacteriano e não constitui tratamento geral para quadros causados por vírus."
       },
       {
         "key": "E",
-        "text": "Vacina fornece sempre anticorpos prontos e por isso é igual a soro."
+        "text": "Vacinas e antibióticos têm objetivos distintos, mas ambos tratam diretamente a infecção viral descrita."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Prevenção inclui vacinação, saneamento, hábitos de saúde, proteção individual e acompanhamento médico conforme o problema.",
+    "explanation": "A ficha descreve antibióticos para bactérias sensíveis e pede distinção de causas. O fato de sintomas começarem não transforma uma infecção viral em alvo de antibiótico; a avaliação profissional continua relevante.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-30-CON-05"
+      "CIE-30-CON-06"
     ],
-    "targetedError": "transfer",
+    "targetedError": "antibiotic_for_viral_infection",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-30-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre vacinas, imunidade e doenças dos sistemas?",
+    "stem": "Estudo de caso discutido em aula, 15 out. 2026. Uma personagem recebeu uma vacina e, meses depois, apresentou sintomas após contato com um agente relacionado ao alvo da dose. A ficha informou que houve resposta imune específica após a vacinação, mas não comparou a personagem com um grupo sem vacina nem avaliou a causa dos sintomas. O professor pediu que a turma evitasse concluir, a partir de um caso individual, que a vacina não produziu resposta ou que a pessoa estava protegida contra qualquer infecção.\n\nQual conclusão é mais cuidadosa diante desses dados?",
     "options": [
       {
         "key": "A",
-        "text": "Doenças podem afetar sistemas específicos, mas muitos agentes e condições repercutem em vários sistemas do corpo."
+        "text": "A resposta específica após a dose demonstra que os sintomas foram causados por outro agente."
       },
       {
         "key": "B",
-        "text": "Vacinas apresentam antígenos ou instruções que induzem uma resposta imunológica específica sem causar a doença da mesma forma que uma infecção natural típica."
+        "text": "Sem grupo de comparação, não é possível concluir se a vacina produziu qualquer resposta imune na personagem."
       },
       {
         "key": "C",
-        "text": "Vacinação é principalmente medida preventiva; não deve ser confundida com antibióticos nem com soros que fornecem anticorpos prontos."
+        "text": "O registro mostra uma resposta específica após a dose; os dados não permitem atribuir os sintomas a uma causa determinada."
       },
       {
         "key": "D",
-        "text": "A resposta adaptativa pode gerar células de memória, permitindo resposta mais rápida em exposições futuras."
+        "text": "A resposta ao alvo vacinal permite inferir proteção contra doenças causadas por agentes do mesmo grupo."
       },
       {
         "key": "E",
-        "text": "Vacina fornece sempre anticorpos prontos e por isso é igual a soro."
+        "text": "Os sintomas após o contato demonstram que houve resposta de memória, embora a proteção tenha sido incompleta."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a incorreta: Vacina fornece sempre anticorpos prontos e por isso é igual a soro. As demais expressam relações compatíveis com os conceitos da aula.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "C",
+    "explanation": "A ficha confirma uma resposta específica, mas não investigou a causa dos sintomas nem comparou grupos. Um caso isolado não permite medir proteção contra outros agentes ou concluir que não houve resposta imune.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
-      "CIE-30-CON-01"
+      "CIE-30-CON-01",
+      "CIE-30-CON-02"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "vaccine_response_as_guarantee",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-30-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em vacinas, imunidade e doenças dos sistemas?",
+    "stem": "Relatório de laboratório escolar, cenário de 16 out. 2026. Em uma atividade de vigilância, um laboratório identificou uma bactéria sensível a determinado antibiótico em uma amostra clínica. A equipe explicou que a escolha do tratamento dependia da avaliação do profissional e das características do agente encontrado. O relatório separou esse caso de uma notícia sobre infecção viral e pediu aos estudantes que não transferissem a conclusão de um microrganismo para outro sem evidências.\n\nQual inferência corresponde ao alcance da análise laboratorial?",
     "options": [
       {
         "key": "A",
-        "text": "Memória imunológica significa que o organismo nunca mais pode ser infectado por nenhum agente."
+        "text": "A sensibilidade da bactéria permite prever a resposta de vírus com características semelhantes."
       },
       {
         "key": "B",
-        "text": "Antibióticos atuam contra bactérias sensíveis e não tratam infecções virais de forma geral."
+        "text": "A notícia sobre infecção viral permite aplicar a esse caso o resultado positivo obtido para a bactéria."
       },
       {
         "key": "C",
-        "text": "Vacina fornece sempre anticorpos prontos e por isso é igual a soro."
+        "text": "A sensibilidade da bactéria no teste permite definir o tratamento sem avaliação do profissional responsável."
       },
       {
         "key": "D",
-        "text": "Antibióticos tratam qualquer infecção viral."
+        "text": "O teste descreve a resposta da bactéria analisada ao antibiótico, dentro das condições do exame."
       },
       {
         "key": "E",
-        "text": "Vacinas servem apenas para tratar uma doença depois que sintomas graves aparecem."
+        "text": "A diferença entre bactéria e vírus não altera a interpretação de um resultado de sensibilidade a antibiótico."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Antibióticos atuam contra bactérias sensíveis e não tratam infecções virais de forma geral.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "correctOption": "D",
+    "explanation": "O laboratório testou uma bactéria e registrou sensibilidade a um antibiótico específico. Esse resultado não pode ser transferido a um vírus; a avaliação clínica continua fazendo parte da decisão sobre tratamento.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
+      "CIE-30-CON-03",
       "CIE-30-CON-06"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "antibiotic_scope_from_lab_result",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]

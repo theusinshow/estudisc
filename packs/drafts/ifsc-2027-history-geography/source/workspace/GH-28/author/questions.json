@@ -2,175 +2,227 @@
   {
     "id": "GH-28-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Culturas, identidades e territorialidades no Brasil, qual afirmação está correta?",
+    "stem": "A vitrine reúne um cesto trançado por uma artesã indígena, uma fotografia de uma roda de samba organizada por moradores afrodescendentes, cartas de uma família de origem japonesa e um mapa de sobrenomes de diferentes regiões. Nas entrevistas, cada participante descreve lembranças, escolhas e vínculos com a cidade. A equipe registra os nomes dos objetos, as datas e as histórias contadas pelos visitantes.\n\nQual leitura do catálogo é mais adequada?",
     "options": [
       {
         "key": "A",
-        "text": "Existe uma única identidade cultural brasileira."
+        "text": "Uma origem cultural compartilhada ajuda a explicar a identidade brasileira.",
+        "targetsError": "conceptual",
+        "rationale": "A vitrine reúne trajetórias, origens e práticas diversas."
       },
       {
         "key": "B",
-        "text": "A identidade brasileira é plural e foi formada por povos indígenas, africanos e afrodescendentes, europeus, asiáticos e múltiplos fluxos migratórios."
+        "text": "As entrevistas provam que as identidades permaneceram iguais entre gerações.",
+        "targetsError": "interpretation",
+        "rationale": "As pessoas descrevem escolhas e vínculos próprios, sem afirmar imobilidade."
       },
       {
         "key": "C",
-        "text": "Territorialidade só pode ser exercida por Estados nacionais."
+        "text": "A fotografia expressa experiências afrodescendentes em diferentes regiões do país.",
+        "targetsError": "conceptual",
+        "rationale": "Uma roda de moradores não resume as trajetórias de um grupo amplo."
       },
       {
         "key": "D",
-        "text": "Cultura permanece inalterada ao longo do tempo."
+        "text": "O conjunto evidencia uma identidade brasileira plural e formada por muitos povos."
       },
       {
         "key": "E",
-        "text": "Diversidade cultural elimina conflitos e desigualdades automaticamente."
+        "text": "As cartas demonstram que migrações recentes substituíram as culturas anteriores.",
+        "targetsError": "conceptual",
+        "rationale": "A presença de uma família migrante não apaga as demais histórias da vitrine."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A identidade brasileira é plural e foi formada por povos indígenas, africanos e afrodescendentes, europeus, asiáticos e múltiplos fluxos migratórios.",
+    "correctOption": "D",
+    "explanation": "O catálogo reúne objetos, migrações e lembranças de diferentes grupos, incluindo relatos individuais. Tomar uma fotografia como retrato de todas as experiências de um grupo contraria a orientação da curadora.",
     "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-28-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-28-CON-01"
   },
   {
     "id": "GH-28-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Existe uma única identidade cultural brasileira.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Em uma cidade fictícia, uma comunidade quilombola realiza encontros em uma área reconhecida pelos moradores, enquanto famílias indígenas mantêm atividades culturais em outro espaço e migrantes organizam uma feira próxima ao terminal. O mapa também marca ruas comerciais e uma praça usada por grupos juvenis. Na legenda, os autores anotam os sentidos atribuídos a cada lugar, além de registrar limites e reivindicações apresentados em reuniões.\n\nO que o mapa permite compreender?",
     "options": [
       {
         "key": "A",
-        "text": "Existe uma única identidade cultural brasileira."
+        "text": "A feira reúne grupos, então os demais espaços perderam significado comunitário.",
+        "targetsError": "conceptual",
+        "rationale": "O mapa mostra usos simultâneos em lugares diferentes, sem indicar substituição."
       },
       {
         "key": "B",
-        "text": "Territorialidade só pode ser exercida por Estados nacionais."
+        "text": "Diferentes coletividades constroem vínculos e territorialidades em seus espaços."
       },
       {
         "key": "C",
-        "text": "Cultura permanece inalterada ao longo do tempo."
+        "text": "A praça comercial atende sobretudo moradores que vivem em seu entorno.",
+        "targetsError": "conceptual",
+        "rationale": "O mapa registra usos comunitários variados, sem limitar a territorialidade à residência próxima."
       },
       {
         "key": "D",
-        "text": "Territorialidades podem ser construídas por comunidades indígenas, quilombolas, grupos urbanos, migrantes e outras coletividades."
+        "text": "As reuniões deram aos lugares funções semelhantes na vida comunitária.",
+        "targetsError": "conceptual",
+        "rationale": "A legenda identifica atividades e reivindicações distintas em cada local."
       },
       {
         "key": "E",
-        "text": "Diversidade cultural elimina conflitos e desigualdades automaticamente."
+        "text": "O terminal determina que migrantes não participem de outros espaços urbanos.",
+        "targetsError": "interpretation",
+        "rationale": "A fonte registra a feira perto do terminal, mas não restringe os demais vínculos."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Territorialidades podem ser construídas por comunidades indígenas, quilombolas, grupos urbanos, migrantes e outras coletividades.",
+    "correctOption": "B",
+    "explanation": "O mapa registra sentidos, atividades e reivindicações de diferentes grupos em lugares distintos. Interpretar a feira como substituição de todos os outros espaços ignora a convivência de territorialidades no mesmo município.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-28-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-28-CON-02"
   },
   {
     "id": "GH-28-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: Territorialidade conecta identidade, pertencimento, práticas culturais e controle ou uso do espaço. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Uma estudante anota que a apresentação deste ano combinou instrumentos trazidos por famílias migrantes, canções conhecidas pelos moradores antigos e letras novas compostas por jovens da escola. Depois do evento, algumas pessoas discutem quais músicas deveriam representar a festa; outras sugerem incluir mais grupos no próximo programa. A estudante compara as gravações de dois anos e encontra mudanças nos arranjos e nos participantes.\n\nQual interpretação acompanha as observações?",
     "options": [
       {
         "key": "A",
-        "text": "Existe uma única identidade cultural brasileira."
+        "text": "As novas canções apagaram as contribuições dos moradores mais antigos.",
+        "targetsError": "conceptual",
+        "rationale": "A apresentação combinou canções antigas, instrumentos e composições novas."
       },
       {
         "key": "B",
-        "text": "Territorialidade só pode ser exercida por Estados nacionais."
+        "text": "A discussão indica que a festa deixou de possuir significado cultural.",
+        "targetsError": "interpretation",
+        "rationale": "O debate sobre representação mostra que o significado continua sendo disputado."
       },
       {
         "key": "C",
-        "text": "Cultura não é estática: práticas e identidades mudam, misturam-se e também são disputadas."
+        "text": "Os instrumentos migrantes aproximaram práticas familiares e reduziram suas diferenças.",
+        "targetsError": "conceptual",
+        "rationale": "O caderno registra participantes e práticas diversos, sem apontar essa redução."
       },
       {
         "key": "D",
-        "text": "Cultura permanece inalterada ao longo do tempo."
+        "text": "A gravação de dois anos demonstra que as músicas permaneceram inalteradas.",
+        "targetsError": "memory",
+        "rationale": "A estudante observou mudanças nos arranjos e nos participantes."
       },
       {
         "key": "E",
-        "text": "Diversidade cultural elimina conflitos e desigualdades automaticamente."
+        "text": "A cultura local pode incorporar práticas e permanecer em transformação."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Cultura não é estática: práticas e identidades mudam, misturam-se e também são disputadas.",
+    "correctOption": "E",
+    "explanation": "As gravações mostram alterações e combinações de práticas, enquanto a discussão sobre o programa indica disputa de significados. A leitura de que as músicas não mudaram contradiz a comparação feita pela estudante.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-28-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-28-CON-03"
   },
   {
     "id": "GH-28-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Culturas, identidades e territorialidades no Brasil por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Uma estudante recém-chegada relata que colegas ridicularizaram seu sotaque e não a incluíram em uma visita ao centro histórico. A turma consulta o regulamento da escola e propõe ouvir os envolvidos e rever o modo como o mural apresenta os grupos da comunidade. A ata registra o episódio, a data da visita e os nomes das atividades em que a estudante queria participar.\n\nQual interpretação explica melhor a situação?",
     "options": [
       {
         "key": "A",
-        "text": "Racismo, xenofobia e outras formas de discriminação influenciam quem pode acessar espaços, direitos e reconhecimento."
+        "text": "A dificuldade de participar pode ser explicada pela distância entre casa e escola.",
+        "targetsError": "interpretation",
+        "rationale": "A ata descreve discriminação e exclusão de uma atividade, não uma barreira de transporte."
       },
       {
         "key": "B",
-        "text": "Existe uma única identidade cultural brasileira."
+        "text": "A representação do mural substitui a necessidade de enfrentar o preconceito.",
+        "targetsError": "conceptual",
+        "rationale": "A ata propõe rever o mural e tratar a exclusão vivida pela estudante."
       },
       {
         "key": "C",
-        "text": "Territorialidade só pode ser exercida por Estados nacionais."
+        "text": "A discriminação pode afetar acesso a espaços, direitos e reconhecimento."
       },
       {
         "key": "D",
-        "text": "Cultura permanece inalterada ao longo do tempo."
+        "text": "O sotaque comprova que a estudante não pertence à comunidade escolar.",
+        "targetsError": "conceptual",
+        "rationale": "O sotaque é alvo de preconceito, não um critério legítimo de pertencimento."
       },
       {
         "key": "E",
-        "text": "Diversidade cultural elimina conflitos e desigualdades automaticamente."
+        "text": "A visita ao centro histórico não tem relação com a participação da turma.",
+        "targetsError": "interpretation",
+        "rationale": "A ata cita a visita como atividade da qual a estudante foi excluída."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Racismo, xenofobia e outras formas de discriminação influenciam quem pode acessar espaços, direitos e reconhecimento.",
+    "correctOption": "C",
+    "explanation": "A estudante foi alvo de ridicularização e excluída de uma visita, e o conselho registra efeitos sobre convivência e reconhecimento. Atribuir a exclusão ao sotaque como sinal de não pertencimento reproduz o preconceito em vez de analisá-lo.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-28-CON-04"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-28-CON-04"
   },
   {
     "id": "GH-28-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. A identidade brasileira é plural e foi formada por povos indígenas, africanos e afrodescendentes, europeus, asiáticos e múltiplos fluxos migratórios.\nII. Existe uma única identidade cultural brasileira.\nIII. Cultura não é estática: práticas e identidades mudam, misturam-se e também são disputadas.\nIV. Territorialidade só pode ser exercida por Estados nacionais.\nAssinale a alternativa CORRETA.",
+    "stem": "O grupo reúne relatos de moradores indígenas, descendentes de africanos, famílias europeias e migrantes recentes. Um mapa marca locais de encontro e caminhos usados por diferentes comunidades; as entrevistas contam práticas que mudaram entre gerações e apresentam reivindicações distintas sobre o uso de uma praça. Os registros foram organizados em uma pasta para que representantes locais escolham trechos a serem exibidos na próxima reunião do museu.\n\nQual síntese combina melhor os materiais?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Identidade plural, territorialidades diversas e práticas culturais em transformação."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A praça tem sentido parecido para os participantes porque aparece nas entrevistas.",
+        "targetsError": "conceptual",
+        "rationale": "Os relatos apresentam reivindicações diferentes sobre o mesmo lugar."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "As práticas que mudaram entre gerações deixaram de pertencer à cultura local.",
+        "targetsError": "conceptual",
+        "rationale": "A mudança é descrita como parte das histórias e escolhas das comunidades."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "A equipe pode substituir os relatos por uma interpretação oficial da história local.",
+        "targetsError": "interpretation",
+        "rationale": "O projeto preserva perspectivas diversas e afirma que não fala por todos."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Os caminhos do mapa demonstram que os grupos vivem sem contato entre si.",
+        "targetsError": "conceptual",
+        "rationale": "O mapa registra usos distintos, mas não descreve isolamento entre comunidades."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "A",
+    "explanation": "Os relatos apresentam origens, usos da praça e práticas que mudam, sem pretensão de representar todos. Atribuir um significado único ao lugar ignora justamente as reivindicações diferentes documentadas.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -180,38 +232,49 @@
       "GH-28-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-28-CON-01"
   },
   {
     "id": "GH-28-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Culturas, identidades e territorialidades no Brasil. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "A prefeitura propõe reformar uma praça usada por moradores antigos, vendedores ambulantes e jovens que praticam música. O mapa do projeto prevê retirar bancos de uma área e instalar um estacionamento; em reunião, alguns participantes dizem que isso facilita o trânsito, enquanto outros temem perder um local de encontro. A equipe técnica recebe os comentários e publica uma nova versão do desenho da praça para consulta.\n\nQual pergunta ajuda a analisar identidade e poder no território?",
     "options": [
       {
         "key": "A",
-        "text": "Existe uma única identidade cultural brasileira."
+        "text": "Quantos carros cabem no estacionamento sem comparar os usos atuais da praça?",
+        "targetsError": "interpretation",
+        "rationale": "Essa medida não examina quem utiliza o lugar nem como o projeto redistribui acesso."
       },
       {
         "key": "B",
-        "text": "Territorialidade só pode ser exercida por Estados nacionais."
+        "text": "Qual grupo tem mais seguidores nas redes sociais da prefeitura?",
+        "targetsError": "interpretation",
+        "rationale": "Popularidade digital não indica, por si, os direitos e usos territoriais envolvidos."
       },
       {
         "key": "C",
-        "text": "Cultura permanece inalterada ao longo do tempo."
+        "text": "Qual atividade cultural deve ser considerada menos importante na decisão?",
+        "targetsError": "conceptual",
+        "rationale": "A pergunta já hierarquiza grupos sem investigar seus vínculos ou acesso ao espaço."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Quem usa os espaços, quais sentidos atribui a eles e quem decide as regras?"
       },
       {
         "key": "E",
-        "text": "Identificar como identidade e poder aparecem em usos, disputas e significados do território."
+        "text": "A praça deve manter os usos atuais sem ouvir os participantes da consulta.",
+        "targetsError": "procedural",
+        "rationale": "A consulta existe justamente para ouvir os grupos que utilizam o local."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Identificar como identidade e poder aparecem em usos, disputas e significados do território.",
+    "correctOption": "D",
+    "explanation": "O projeto redistribui bancos, estacionamento e locais de encontro, e os participantes apresentam interesses distintos. Perguntar quem usa o espaço e quem define as regras permite examinar poder e territorialidade sem presumir uma resposta.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "GH-28-CON-01",
       "GH-28-CON-02",
@@ -221,36 +284,47 @@
       "GH-28-CON-06"
     ],
     "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-28-CON-03"
   },
   {
     "id": "GH-28-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Culturas, identidades e territorialidades no Brasil?",
+    "stem": "Três gerações de uma família descrevem uma festa comunitária: a avó recorda cantos que aprendeu com parentes; a mãe relata que acrescentou instrumentos usados em eventos da cidade; e uma adolescente apresenta uma versão gravada com arranjos novos. Os relatos também mencionam um período em que algumas práticas foram pouco realizadas e um reencontro recente de antigos participantes. A gravação será exibida ao lado das entrevistas.\n\nQual leitura corrige a ideia de que a cultura permanece parada?",
     "options": [
       {
         "key": "A",
-        "text": "A identidade brasileira é plural e foi formada por povos indígenas, africanos e afrodescendentes, europeus, asiáticos e múltiplos fluxos migratórios."
+        "text": "A versão gravada reduziu o valor das práticas anteriores para a família.",
+        "targetsError": "conceptual",
+        "rationale": "A gravação acrescenta uma forma nova, mas os relatos anteriores continuam presentes."
       },
       {
         "key": "B",
-        "text": "Territorialidades podem ser construídas por comunidades indígenas, quilombolas, grupos urbanos, migrantes e outras coletividades."
+        "text": "A tradição pode continuar reconhecível enquanto incorpora mudanças e retomadas."
       },
       {
         "key": "C",
-        "text": "Reconhecer diversidade não significa tratar grupos como homogêneos nem transformar cultura em folclore congelado."
+        "text": "A prática é associada principalmente à geração que primeiro a registrou.",
+        "targetsError": "conceptual",
+        "rationale": "As três gerações descrevem participação e transformação da mesma festa."
       },
       {
         "key": "D",
-        "text": "Cultura permanece inalterada ao longo do tempo."
+        "text": "O pouco uso em um período demonstra que a festa desapareceu definitivamente.",
+        "targetsError": "conceptual",
+        "rationale": "A exposição informa que algumas práticas foram retomadas depois."
       },
       {
         "key": "E",
-        "text": "Racismo, xenofobia e outras formas de discriminação influenciam quem pode acessar espaços, direitos e reconhecimento."
+        "text": "Os novos instrumentos indicam que a família deixou de compartilhar referências.",
+        "targetsError": "interpretation",
+        "rationale": "Os relatos mostram mudanças dentro de uma mesma história familiar."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "B",
+    "explanation": "As três gerações mantêm vínculos com a festa enquanto introduzem formas novas e retomam práticas. A ideia de desaparecimento definitivo não se sustenta porque a exposição registra uma retomada.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -262,36 +336,47 @@
       "GH-28-CON-06"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-28-CON-03"
   },
   {
     "id": "GH-28-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Culturas, identidades e territorialidades no Brasil, qual conclusão final é sustentável?",
+    "stem": "Representantes de uma comunidade quilombola revisam o roteiro de uma exposição e apresentam fotografias de atividades atuais, documentos ligados à luta por direitos e relatos sobre celebrações. Eles apontam diferenças entre bairros, gerações e formas de trabalho, e selecionam em conjunto materiais para a mostra. A equipe registra as decisões e prepara uma versão do roteiro para nova consulta aos participantes antes da inauguração.\n\nQual decisão respeita melhor a proposta dos representantes?",
     "options": [
       {
         "key": "A",
-        "text": "Existe uma única identidade cultural brasileira."
+        "text": "Apresentar a comunidade como um grupo sem diferenças internas ou mudanças.",
+        "targetsError": "conceptual",
+        "rationale": "Os representantes destacam diferenças entre bairros, gerações e atividades."
       },
       {
         "key": "B",
-        "text": "Territorialidade só pode ser exercida por Estados nacionais."
+        "text": "Priorizar celebrações e deixar em segundo plano as questões atuais.",
+        "targetsError": "interpretation",
+        "rationale": "A proposta inclui atividades atuais e documentos de luta por direitos, além das celebrações."
       },
       {
         "key": "C",
-        "text": "Reconhecer diversidade não significa tratar grupos como homogêneos nem transformar cultura em folclore congelado."
+        "text": "Substituir as escolhas comunitárias por imagens genéricas de um passado rural.",
+        "targetsError": "conceptual",
+        "rationale": "A comunidade quer selecionar materiais próprios e mostrar sua vida contemporânea."
       },
       {
         "key": "D",
-        "text": "Cultura permanece inalterada ao longo do tempo."
+        "text": "Retirar documentos de direitos porque cultura e política não se relacionam.",
+        "targetsError": "conceptual",
+        "rationale": "A proposta conecta história comunitária e reivindicação de direitos."
       },
       {
         "key": "E",
-        "text": "Diversidade cultural elimina conflitos e desigualdades automaticamente."
+        "text": "Mostrar diversidade interna e práticas atuais sem congelar a cultura em folclore."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Reconhecer diversidade não significa tratar grupos como homogêneos nem transformar cultura em folclore congelado.",
+    "correctOption": "E",
+    "explanation": "Os representantes pedem mostrar diferenças internas, atividades atuais e luta por direitos, participando da escolha dos materiais. Limitar a exposição a celebrações e roupas antigas apagaria as formas contemporâneas e plurais da comunidade.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -303,6 +388,9 @@
       "GH-28-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-28-CON-05"
   }
 ]

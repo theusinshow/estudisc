@@ -2,139 +2,180 @@
   {
     "id": "CIE-08-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de propriedades, estados e mudanças da matéria, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Uma amostra sólida tem massa de 180 g e ocupa 60 cm³ em uma proveta. A atividade pede a densidade em gramas por centímetro cúbico para comparar essa amostra com outras da coleção.\n\nQual densidade corresponde à amostra?",
     "options": [
       {
         "key": "A",
-        "text": "Gases não possuem massa."
+        "text": "A densidade é 2,5 g/cm³.",
+        "targetsError": "procedural",
+        "rationale": "Soma grandezas em vez de dividir massa por volume."
       },
       {
         "key": "B",
-        "text": "Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais."
+        "text": "A densidade é 3 g/cm³.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde volume com razão entre massa e volume."
       },
       {
         "key": "C",
-        "text": "Derreter gelo forma uma nova substância."
+        "text": "A densidade é 3,3 g/cm³.",
+        "targetsError": "calculation",
+        "rationale": "Inverte o quociente solicitado."
       },
       {
         "key": "D",
-        "text": "Evaporação e ebulição são fenômenos totalmente sem relação."
+        "text": "A densidade é 4 g/cm³."
       },
       {
         "key": "E",
-        "text": "Na condensação, o líquido transforma-se em gás."
+        "text": "A densidade é 6 g/cm³.",
+        "targetsError": "conceptual",
+        "rationale": "Usa a massa como densidade sem considerar o volume."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais.",
+    "correctOption": "D",
+    "explanation": "A densidade é a massa dividida pelo volume: 180 g ÷ 60 cm³ = 3 g/cm³. O valor de 6 g/cm³ corresponde a dividir a massa por 30, que não é o volume informado.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-08-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-08-CON-01"
   },
   {
     "id": "CIE-08-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar propriedades, estados e mudanças da matéria sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Um fragmento metálico tem massa de 240 g. A etiqueta da coleção informa densidade de 8 g/cm³ para o material. Considere o fragmento uniforme e estime o volume em centímetros cúbicos.\n\nQual volume é compatível com os dados?",
     "options": [
       {
         "key": "A",
-        "text": "Derreter gelo forma uma nova substância."
+        "text": "O fragmento ocupa 24 cm³.",
+        "targetsError": "procedural",
+        "rationale": "Subtrai grandezas que entram em uma razão."
       },
       {
         "key": "B",
-        "text": "Gases não possuem massa."
+        "text": "O fragmento ocupa 30 cm³."
       },
       {
         "key": "C",
-        "text": "Evaporação e ebulição são fenômenos totalmente sem relação."
+        "text": "O fragmento ocupa 32 cm³.",
+        "targetsError": "calculation",
+        "rationale": "Multiplica os dados em vez de dividir a massa pela densidade."
       },
       {
         "key": "D",
-        "text": "Na condensação, o líquido transforma-se em gás."
+        "text": "O fragmento ocupa 36 cm³.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde densidade com o volume procurado."
       },
       {
         "key": "E",
-        "text": "No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível."
+        "text": "O fragmento ocupa 40 cm³.",
+        "targetsError": "procedural",
+        "rationale": "Soma quantidades com unidades incompatíveis."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível.",
+    "correctOption": "B",
+    "explanation": "Isolando o volume, calcula-se massa ÷ densidade: 240 g ÷ 8 g/cm³ = 30 cm³. O valor de 32 cm³ fica próximo, mas não resulta da relação entre os dados fornecidos.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-08-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-08-CON-02"
   },
   {
     "id": "CIE-08-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em propriedades, estados e mudanças da matéria?",
+    "stem": "Registro de descongelamento escrito por Marina em 18 de outubro de 2026: um pedaço de gelo com massa de 45 g foi colocado em um frasco fechado e isolado para uma demonstração. Depois de algum tempo, todo o gelo havia se tornado água líquida, e a turma voltou a pesar o conteúdo do frasco sem abrir a tampa. O recipiente não apresentou vazamento nem aderência de material do lado de fora. A atividade pedia a massa da água formada, sem incluir a massa do vidro.\n\nQue massa de água líquida deve ser registrada?",
     "options": [
       {
         "key": "A",
-        "text": "Gases não possuem massa."
+        "text": "A água formada terá massa de 42 g.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde mudança de estado com acréscimo de matéria."
       },
       {
         "key": "B",
-        "text": "Fusão é a passagem de sólido para líquido; solidificação é o processo inverso."
+        "text": "A água formada terá massa de 45 g.",
+        "targetsError": "interpretation",
+        "rationale": "Troca a unidade de massa pela de volume."
       },
       {
         "key": "C",
-        "text": "Evaporação e ebulição são fenômenos totalmente sem relação."
+        "text": "A água formada terá massa de 48 g.",
+        "targetsError": "interpretation",
+        "rationale": "Supõe perda de material apesar do frasco fechado."
       },
       {
         "key": "D",
-        "text": "Na condensação, o líquido transforma-se em gás."
+        "text": "A água formada terá massa de 50 g.",
+        "targetsError": "conceptual",
+        "rationale": "Trata o estado sólido como desaparecimento da substância."
       },
       {
         "key": "E",
-        "text": "Derreter gelo forma uma nova substância."
+        "text": "A água formada terá massa de 54 g."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Fusão é a passagem de sólido para líquido; solidificação é o processo inverso.",
+    "correctOption": "E",
+    "explanation": "No frasco fechado, sem vazamento, a fusão não altera a massa da amostra: os 45 g de gelo passam a 45 g de água líquida. A mudança de estado não acrescenta nem retira matéria do conteúdo.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-08-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-08-CON-03"
   },
   {
     "id": "CIE-08-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Gotas aparecem do lado externo de um copo muito frio. Qual explicação é correta?",
+    "stem": "Em uma tarde úmida, gotas apareceram na parte externa de uma garrafa gelada retirada da geladeira. A tampa estava fechada e, depois de secar a superfície, novas gotas se formaram.\n\nQual processo explica melhor a formação das gotas?",
     "options": [
       {
         "key": "A",
-        "text": "A água atravessa o vidro por poros invisíveis."
+        "text": "Água líquida do interior atravessou a parede por pequenos poros."
       },
       {
         "key": "B",
-        "text": "O vidro fabrica água."
+        "text": "Vapor de água do ambiente passou ao estado líquido na superfície fria.",
+        "targetsError": "interpretation",
+        "rationale": "Supõe passagem pelo recipiente apesar das observações de vedação."
       },
       {
         "key": "C",
-        "text": "A água líquida do ar sofre fusão."
+        "text": "A umidade líquida do ambiente aderiu à garrafa sem mudar de estado.",
+        "targetsError": "conceptual",
+        "rationale": "Fusão descreve sólido passando a líquido, não vapor condensando."
       },
       {
         "key": "D",
-        "text": "Vapor de água do ar perde energia e condensa na superfície fria."
+        "text": "Uma camada de água da superfície evaporou e formou novas gotas.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde mudança de estado com formação de nova substância."
       },
       {
         "key": "E",
-        "text": "O copo libera hidrogênio e oxigênio que formam as gotas."
+        "text": "O vapor do ambiente congelou na garrafa e derreteu antes da observação.",
+        "targetsError": "interpretation",
+        "rationale": "Ignora que a condensação reaparece do lado externo após a secagem."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Vapor de água do ar perde energia e condensa na superfície fria.",
+    "correctOption": "A",
+    "explanation": "A superfície fria resfria o vapor de água presente no ar próximo, que passa ao estado líquido por condensação. A hipótese de água do interior não explica bem o reaparecimento das gotas após secar a garrafa fechada.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +184,47 @@
       "CIE-08-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-08-CON-01"
   },
   {
     "id": "CIE-08-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais.\nII. Derreter gelo forma uma nova substância.\nIII. Fusão é a passagem de sólido para líquido; solidificação é o processo inverso.\nIV. Gases não possuem massa.\nAssinale a alternativa CORRETA.",
+    "stem": "Nota de experiência preparada por Alice em 24 de outubro de 2026: um frasco transparente e fechado continha 20 g de gelo e 80 g de água líquida. O conjunto foi deixado sobre uma bancada até o gelo derreter, sem entrada de matéria e sem vazamento. O grupo pesou o conteúdo antes e depois, separando a massa do frasco nas duas medições. A ficha pedia o total de água no interior após a fusão e lembrava que as porções iniciais eram da mesma substância.\n\nQual massa total de água deve aparecer depois da fusão?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "O conteúdo terá massa total de 80 g.",
+        "targetsError": "interpretation",
+        "rationale": "Desconsidera a massa da porção que derreteu."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "O conteúdo terá massa total de 90 g.",
+        "targetsError": "calculation",
+        "rationale": "Soma uma mudança de estado como se fosse massa adicional."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "O conteúdo terá massa total de 100 g."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O conteúdo terá massa total de 105 g.",
+        "targetsError": "interpretation",
+        "rationale": "Ignora os 80 g de água líquida já presentes."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "O conteúdo terá massa total de 120 g.",
+        "targetsError": "calculation",
+        "rationale": "Apresenta volume quando a balança registra massa."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "correctOption": "C",
+    "explanation": "A massa inicial de água é 20 g + 80 g = 100 g. Como o frasco permanece fechado e não há vazamento, a fusão muda o estado físico, mas conserva a massa total da água.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +234,150 @@
       "CIE-08-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-08-CON-01"
   },
   {
     "id": "CIE-08-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre propriedades, estados e mudanças da matéria para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Relato de experimento de Gustavo em 27 de outubro de 2026: uma pequena quantidade de água foi colocada em uma forma no congelador. No início, o líquido se ajustava ao formato do recipiente; algumas horas depois, havia uma peça sólida que mantinha a forma ao ser retirada. A atividade não incluiu mistura com outra substância nem reação química. A professora pediu que os alunos identificassem a mudança de estado observada e comparassem o processo com o derretimento de um cubo de gelo.\n\nComo se chama a passagem observada na forma?",
     "options": [
       {
         "key": "A",
-        "text": "Evaporação e ebulição são fenômenos totalmente sem relação."
+        "text": "A passagem de líquido para gás é chamada vaporização.",
+        "targetsError": "conceptual",
+        "rationale": "Vaporização leva líquido a gás, não a sólido."
       },
       {
         "key": "B",
-        "text": "Gases não possuem massa."
+        "text": "A passagem de gás para líquido é chamada condensação.",
+        "targetsError": "conceptual",
+        "rationale": "Condensação descreve a passagem de gás para líquido."
       },
       {
         "key": "C",
-        "text": "Derreter gelo forma uma nova substância."
+        "text": "A passagem de sólido para gás é chamada sublimação.",
+        "targetsError": "conceptual",
+        "rationale": "Sublimação é uma passagem direta entre sólido e gás."
       },
       {
         "key": "D",
-        "text": "Na condensação, o líquido transforma-se em gás."
+        "text": "A passagem de líquido para sólido é chamada solidificação."
       },
       {
         "key": "E",
-        "text": "Sublimação é a passagem direta entre sólido e gás em determinadas condições."
+        "text": "A passagem de sólido para líquido é chamada fusão.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte o sentido da mudança associada à fusão."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Sublimação é a passagem direta entre sólido e gás em determinadas condições.",
+    "correctOption": "D",
+    "explanation": "A água passou do estado líquido ao sólido no congelador, processo chamado solidificação. Fusão é a mudança inversa, do sólido para o líquido.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-08-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-08-CON-05"
   },
   {
     "id": "CIE-08-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre propriedades, estados e mudanças da matéria?",
+    "stem": "Caderno de cozinha científica de Natália, de 30 de outubro de 2026: uma poça pequena deixada em uma bandeja aberta diminuiu ao longo da tarde, sem atingir uma fervura visível. Em outra demonstração, água em uma chaleira formou bolhas em toda a massa do líquido quando aquecida. As duas atividades ocorreram em recipientes diferentes, e a equipe acompanhou a mudança pelo nível da água e pela formação de bolhas. A professora pediu uma comparação entre os processos que levam água líquida ao estado gasoso.\n\nQual comparação está de acordo com as observações?",
     "options": [
       {
         "key": "A",
-        "text": "Propriedades gerais, como massa e volume, são comuns à matéria; propriedades específicas ajudam a identificar materiais."
+        "text": "A poça ferve pela superfície; a chaleira evapora sem bolhas.",
+        "targetsError": "conceptual",
+        "rationale": "Associa nomes de mudanças com sentidos diferentes do observado."
       },
       {
         "key": "B",
-        "text": "Derreter gelo forma uma nova substância."
+        "text": "A poça evapora pela superfície; a chaleira apresenta ebulição."
       },
       {
         "key": "C",
-        "text": "Fusão é a passagem de sólido para líquido; solidificação é o processo inverso."
+        "text": "A poça condensa ao ar livre; a chaleira sofre solidificação.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde mudança do recipiente com vaporização da água."
       },
       {
         "key": "D",
-        "text": "No estado sólido, partículas mantêm organização mais restrita; líquidos fluem mantendo volume aproximadamente definido; gases ocupam o recipiente disponível."
+        "text": "A poça sublima durante a tarde; a chaleira apresenta condensação.",
+        "targetsError": "conceptual",
+        "rationale": "Sublimação não descreve líquido passando a gás."
       },
       {
         "key": "E",
-        "text": "Vaporização leva líquido a gás e condensação leva gás a líquido."
+        "text": "A poça e a chaleira apresentam ebulição quando a água vira gás.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte os sinais registrados nas duas atividades."
       }
     ],
     "correctOption": "B",
-    "explanation": "A alternativa B é a incorreta: Derreter gelo forma uma nova substância. As demais expressam relações compatíveis com os conceitos da aula.",
+    "explanation": "A poça diminui sem fervura visível, compatível com evaporação pela superfície; as bolhas em toda a chaleira indicam ebulição. Os dois processos são formas de vaporização, mas ocorrem em condições diferentes.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-08-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-08-CON-01"
   },
   {
     "id": "CIE-08-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em propriedades, estados e mudanças da matéria?",
+    "stem": "Relato de câmara fria escrito por Raul em 2 de novembro de 2026: uma placa metálica retirada do congelador foi levada para uma sala úmida. Depois de alguns minutos, uma película de água apareceu sobre a face externa da placa. A superfície estava fria ao toque e a equipe não derramou líquido sobre ela. Um estudante sugeriu que o metal se dissolvia, mas a professora pediu que observassem o ar ao redor e identificassem a mudança de estado compatível com a película.\n\nQual interpretação explica melhor a água formada na placa?",
     "options": [
       {
         "key": "A",
-        "text": "Mudança de estado físico não implica, por si só, formação de uma nova substância."
+        "text": "A placa liberou água líquida que estava retida em sua superfície.",
+        "targetsError": "conceptual",
+        "rationale": "Trata o metal como se fosse água congelada."
       },
       {
         "key": "B",
-        "text": "Evaporação e ebulição são fenômenos totalmente sem relação."
+        "text": "O vapor de água do ar condensou sobre a placa fria.",
+        "targetsError": "interpretation",
+        "rationale": "Supõe água interna sem evidência de vazamento."
       },
       {
         "key": "C",
-        "text": "Na condensação, o líquido transforma-se em gás."
+        "text": "A umidade da sala se depositou como gelo e derreteu na placa.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde a passagem direta ou sólida com condensação."
       },
       {
         "key": "D",
-        "text": "Derreter gelo forma uma nova substância."
+        "text": "A água evaporada do metal se condensou ao tocar o ar da sala.",
+        "targetsError": "interpretation",
+        "rationale": "Atribui à placa a origem de uma película aquosa."
       },
       {
         "key": "E",
-        "text": "Gases não possuem massa."
+        "text": "A água líquida do ambiente aderiu à placa sem mudança de estado."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Mudança de estado físico não implica, por si só, formação de uma nova substância.",
+    "correctOption": "E",
+    "explanation": "O vapor de água presente no ar perde energia junto à placa fria e se torna líquido, formando condensação. Uma película de água não indica que o metal tenha se dissolvido ou liberado água de seu interior.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-08-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-08-CON-06"
   }
 ]

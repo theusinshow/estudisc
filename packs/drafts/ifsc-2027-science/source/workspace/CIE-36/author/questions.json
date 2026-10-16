@@ -2,139 +2,180 @@
   {
     "id": "CIE-36-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de registro fóssil e origem da vida, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Durante uma escavação escolar em uma antiga pedreira, a equipe encontrou uma impressão de folha em uma placa de rocha e pequenos tubos ramificados preenchidos por minerais em outra. Não havia tecido vivo no local, mas as marcas repetiam formas reconhecíveis e estavam cobertas por camadas posteriores. O relatório fotográfico registrou posição, tipo de rocha e medidas de cada achado, sem atribuir uma idade numérica nem identificar as espécies com certeza.\n\nComo esses achados podem ser classificados no estudo do passado?",
     "options": [
       {
         "key": "A",
-        "text": "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula."
+        "text": "São evidências fósseis, como uma impressão e um vestígio preservados em rocha."
       },
       {
         "key": "B",
-        "text": "Todo organismo que viveu no passado deixou fóssil."
+        "text": "São organismos atuais preservados dentro das rochas desde a escavação.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório descreve marcas mineralizadas cobertas por rocha, não organismos vivos recuperados."
       },
       {
         "key": "C",
-        "text": "Fósseis provam que espécies sempre permaneceram exatamente iguais."
+        "text": "As marcas registram a idade numérica das espécies encontradas na pedreira.",
+        "targetsError": "interpretation",
+        "rationale": "O registro fotográfico não traz data numérica nem método absoluto de datação."
       },
       {
         "key": "D",
-        "text": "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        "text": "As formas encontradas em rochas distintas pertencem à mesma espécie.",
+        "targetsError": "interpretation",
+        "rationale": "A equipe não identificou as espécies com certeza e os achados vieram de rochas distintas."
       },
       {
         "key": "E",
-        "text": "Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos."
+        "text": "As estruturas mineralizadas não permitem investigar organismos do passado.",
+        "targetsError": "interpretation",
+        "rationale": "As formas foram descritas como impressão de folha e tubos ramificados associados a marcas biológicas."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos.",
+    "correctOption": "A",
+    "explanation": "O registro contém impressões e estruturas mineralizadas preservadas em rocha, exemplos de restos ou vestígios de organismos antigos. A idade e a identificação taxonômica não foram fornecidas e não devem ser deduzidas das fotografias.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-36-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-36-CON-01"
   },
   {
     "id": "CIE-36-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar registro fóssil e origem da vida sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Em uma parede de rocha sem sinais de dobra, a equipe de campo marcou três camadas horizontais. A camada C está na base, B no meio e A no topo. Uma impressão de concha foi encontrada em C e marcas de folhas em A; o caderno não apresenta data radiométrica nem informa se os organismos viveram no mesmo ambiente. A turma recebeu o desenho para ordenar os achados no tempo relativo, usando apenas a posição descrita.\n\nQual conclusão é permitida pelo perfil apresentado?",
     "options": [
       {
         "key": "A",
-        "text": "Fósseis provam que espécies sempre permaneceram exatamente iguais."
+        "text": "A folha em A tem idade absoluta maior que a concha encontrada em C.",
+        "targetsError": "conceptual",
+        "rationale": "O perfil não apresenta valores absolutos, e a posição de A é superior à de C."
       },
       {
         "key": "B",
-        "text": "Todo organismo que viveu no passado deixou fóssil."
+        "text": "Os organismos de A e C viveram no mesmo período por estarem no mesmo perfil.",
+        "targetsError": "interpretation",
+        "rationale": "Estar no mesmo afloramento não demonstra convivência, e as camadas ocupam posições diferentes."
       },
       {
         "key": "C",
-        "text": "A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos."
+        "text": "A posição intermediária de B indica que essa camada se formou primeiro.",
+        "targetsError": "interpretation",
+        "rationale": "O desenho localiza B entre A e C, sem colocá-la abaixo da base C."
       },
       {
         "key": "D",
-        "text": "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        "text": "No perfil descrito, o achado em C é relativamente mais antigo que o de A."
       },
       {
         "key": "E",
-        "text": "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula."
+        "text": "A concha em C permite estimar sua idade exata em anos.",
+        "targetsError": "interpretation",
+        "rationale": "Nenhum método ou dado de datação absoluta foi incluído no caderno."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos.",
+    "correctOption": "D",
+    "explanation": "Como as camadas foram descritas como horizontais e sem perturbação, a posição inferior de C sustenta uma idade relativa anterior à camada A. Isso não fornece uma idade em anos nem prova que os organismos conviveram.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-36-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-36-CON-02"
   },
   {
     "id": "CIE-36-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em registro fóssil e origem da vida?",
+    "stem": "Um museu comunitário recebeu rochas com conchas e ossos de um antigo leito aquático. No mesmo conjunto de camadas, havia poucas marcas atribuídas a organismos de corpo mole, embora registros atuais indiquem que formas desse tipo viviam na região. A curadora anotou que correntezas, decomposição e cobertura de sedimentos variaram entre pontos da escavação. O catálogo ainda está incompleto e não permite estimar quantas espécies existiram ali.\n\nQual interpretação evita uma conclusão excessiva sobre o registro fóssil?",
     "options": [
       {
         "key": "A",
-        "text": "Fósseis provam que espécies sempre permaneceram exatamente iguais."
+        "text": "A falta de marcas de corpo mole sugere que esses organismos chegaram depois ao local.",
+        "targetsError": "interpretation",
+        "rationale": "O catálogo é incompleto e descreve condições que podem alterar a preservação."
       },
       {
         "key": "B",
-        "text": "O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados."
+        "text": "A preservação desigual pode deixar lacunas no registro fóssil disponível."
       },
       {
         "key": "C",
-        "text": "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        "text": "As conchas e os ossos catalogados representam a diversidade completa do local.",
+        "targetsError": "interpretation",
+        "rationale": "A curadora afirma que o catálogo não permite estimar toda a diversidade passada."
       },
       {
         "key": "D",
-        "text": "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula."
+        "text": "As diferenças entre pontos indicam que as marcas foram transportadas por correntezas.",
+        "targetsError": "interpretation",
+        "rationale": "Os processos variaram, mas o texto não associa cada fóssil a um transporte específico."
       },
       {
         "key": "E",
-        "text": "Todo organismo que viveu no passado deixou fóssil."
+        "text": "A presença de conchas sugere que as espécies mantiveram as mesmas características.",
+        "targetsError": "conceptual",
+        "rationale": "O catálogo trata de preservação em camadas, não de permanência das espécies através do tempo."
       }
     ],
     "correctOption": "B",
-    "explanation": "A alternativa B é a correta: O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados.",
+    "explanation": "O acervo registra preservação desigual e processos diferentes entre pontos, portanto a falta de marcas de corpo mole não demonstra ausência antiga desses organismos. A quantidade catalogada também não mede diretamente toda a diversidade passada.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-36-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-36-CON-03"
   },
   {
     "id": "CIE-36-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Por que o registro fóssil possui lacunas?",
+    "stem": "Um painel de ciências organiza duas perguntas em salas diferentes. A primeira sala apresenta modelos de reações químicas em ambientes antigos e discute como poderiam surgir sistemas capazes de se replicar. A segunda acompanha populações já formadas, comparando características de organismos em camadas geológicas de idades distintas. Os visitantes registram que ambas tratam de longos períodos, mas os objetos de estudo e os tipos de evidência exibidos não são os mesmos.\n\nQual distinção entre as perguntas está correta?",
     "options": [
       {
         "key": "A",
-        "text": "Porque organismos antigos não possuíam estruturas corporais."
+        "text": "As duas salas investigam principalmente como se formaram as camadas de rocha.",
+        "targetsError": "conceptual",
+        "rationale": "O painel descreve reações químicas e mudanças em populações, não só datação de rochas."
       },
       {
         "key": "B",
-        "text": "Porque fósseis surgem apenas de animais atuais."
+        "text": "A comparação de populações pode explicar as etapas anteriores à primeira vida.",
+        "targetsError": "conceptual",
+        "rationale": "A segunda sala começa com populações existentes e não apresenta a etapa inicial da vida."
       },
       {
         "key": "C",
-        "text": "Porque camadas geológicas não registram tempo."
+        "text": "Os modelos químicos mostram a descendência de espécies atuais a partir de fósseis.",
+        "targetsError": "interpretation",
+        "rationale": "A primeira sala aborda reações e sistemas replicantes, não linhagens fósseis de espécies atuais."
       },
       {
         "key": "D",
-        "text": "Porque fossilização é rara e depende de condições de preservação, além de erosão e limites de amostragem."
+        "text": "Fósseis ajudam a explicar a origem da vida, enquanto química mede mudanças populacionais.",
+        "targetsError": "conceptual",
+        "rationale": "O texto associa modelos químicos à primeira pergunta e comparação de populações à segunda."
       },
       {
         "key": "E",
-        "text": "Porque todo fóssil desaparece depois de um ano."
+        "text": "A origem da vida trata das etapas iniciais; evolução acompanha mudanças após a vida surgir."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Porque fossilização é rara e depende de condições de preservação, além de erosão e limites de amostragem.",
+    "correctOption": "E",
+    "explanation": "A sala inicial investiga etapas que poderiam levar ao surgimento da vida; a outra analisa mudanças em populações que já existiam. A proximidade temporal dos temas não os torna a mesma questão científica.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +184,47 @@
       "CIE-36-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-36-CON-01"
   },
   {
     "id": "CIE-36-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos.\nII. Todo organismo que viveu no passado deixou fóssil.\nIII. O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados.\nIV. Fósseis provam que espécies sempre permaneceram exatamente iguais.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma equipe de laboratório montou recipientes com água, gases escolhidos para uma simulação e diferentes fontes de energia. Em uma série, surgiram moléculas orgânicas simples após alguns dias; em outra, a proporção de produtos mudou quando a composição gasosa foi alterada. O relatório inclui controles sem descarga elétrica e recomendações para repetir a análise com outros cenários. Nenhum recipiente apresentou células ou organismos, e os pesquisadores não afirmam que uma única mistura represente com certeza a Terra antiga.\n\nQual tipo de conclusão combina com esse trabalho?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A mistura testada representa a composição mais provável da atmosfera terrestre antiga.",
+        "targetsError": "conceptual",
+        "rationale": "O relatório recomenda cenários alternativos e não afirma que a mistura seja uma reconstrução definitiva."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "As moléculas simples observadas correspondem a células que iniciaram uma população.",
+        "targetsError": "conceptual",
+        "rationale": "O texto informa que não surgiram células nem organismos nos recipientes."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A simulação testa hipóteses químicas sob condições definidas, sem explicar toda a origem."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Um controle sem descarga pode tornar inconclusiva a comparação com as outras séries.",
+        "targetsError": "interpretation",
+        "rationale": "O controle oferece comparação; o relatório não diz que ele anulou as outras séries."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "A mudança na mistura indica que a sequência também ocorreu em outros ambientes antigos.",
+        "targetsError": "interpretation",
+        "rationale": "Os produtos variaram com a composição e as condições da simulação."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "correctOption": "C",
+    "explanation": "Os resultados ajudam a testar etapas químicas sob condições simuladas e mostram dependência das condições escolhidas. Eles não estabelecem uma receita única para a Terra antiga nem demonstram a formação de organismos.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +234,150 @@
       "CIE-36-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-36-CON-01"
   },
   {
     "id": "CIE-36-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre registro fóssil e origem da vida para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Um grupo de pesquisa montou dois modelos de condições que poderiam existir em ambientes antigos. Um recipiente foi mantido em água morna com minerais; outro recebeu ciclos de evaporação e exposição à luz. Depois de vários ensaios, cada arranjo gerou conjuntos diferentes de moléculas orgânicas simples. Um levantamento de rochas de uma região fictícia sugeriu disponibilidade alternada de água e minerais, mas não identificou qual ambiente prevaleceu em toda a Terra. A equipe quer decidir qual evidência coletar em seguida.\n\nQual investigação ajudaria a comparar as hipóteses?",
     "options": [
       {
         "key": "A",
-        "text": "Todo organismo que viveu no passado deixou fóssil."
+        "text": "Comparar condições geológicas possíveis com as previsões feitas por cada modelo."
       },
       {
         "key": "B",
-        "text": "Fósseis provam que espécies sempre permaneceram exatamente iguais."
+        "text": "Usar o recipiente com mais moléculas como evidência de que esse cenário ocorreu.",
+        "targetsError": "conceptual",
+        "rationale": "O volume de produtos em um modelo não demonstra que aquele ambiente prevaleceu na Terra antiga."
       },
       {
         "key": "C",
-        "text": "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        "text": "Considerar que os dois ambientes simulados coexistiram em épocas distintas.",
+        "targetsError": "interpretation",
+        "rationale": "O levantamento regional não identifica em quais períodos cada ambiente prevaleceu."
       },
       {
         "key": "D",
-        "text": "Hipóteses científicas sobre origem da vida buscam explicar etapas químicas e ambientais compatíveis com evidências disponíveis."
+        "text": "Priorizar os resultados do laboratório ao avaliar evidências geológicas disponíveis.",
+        "targetsError": "interpretation",
+        "rationale": "Comparar condições de laboratório com evidências ambientais é justamente o passo proposto pela equipe."
       },
       {
         "key": "E",
-        "text": "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula."
+        "text": "Buscar fósseis de células completas nos recipientes usados na simulação.",
+        "targetsError": "conceptual",
+        "rationale": "O ensaio observa moléculas em modelos químicos; não contém organismos nem vestígios fósseis."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Hipóteses científicas sobre origem da vida buscam explicar etapas químicas e ambientais compatíveis com evidências disponíveis.",
+    "correctOption": "A",
+    "explanation": "Evidências geológicas sobre água, minerais e ciclos ambientais podem ser comparadas às previsões de cada modelo. A produção de compostos em laboratório, isoladamente, não escolhe qual cenário ocorreu na Terra antiga.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-36-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-36-CON-05"
   },
   {
     "id": "CIE-36-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre registro fóssil e origem da vida?",
+    "stem": "Em um corte de barranco, paleontólogos desenharam duas camadas sem sinais de mistura. Na inferior, identificaram marcas de organismos com determinada forma corporal; na superior, as mesmas estruturas apareceram com diferenças e junto a outras formas. As fichas incluem fotografias e posição, mas não uma sequência contínua entre os achados. A equipe pediu que o relatório distinguisse evidência de mudança ao longo do tempo de uma afirmação sobre parentesco direto.\n\nQual conclusão permanece dentro do que o corte mostra?",
     "options": [
       {
         "key": "A",
-        "text": "O registro fóssil é incompleto porque fossilização exige condições específicas e muitos organismos não deixam vestígios preservados."
+        "text": "As formas da camada inferior deram origem direta a cada organismo da camada superior.",
+        "targetsError": "interpretation",
+        "rationale": "O corte não apresenta sequência contínua nem dados suficientes para afirmar descendência direta."
       },
       {
         "key": "B",
-        "text": "Fósseis são restos, vestígios ou marcas de organismos do passado preservados em contextos geológicos."
+        "text": "Há diferenças entre organismos preservados em camadas de idades relativas distintas."
       },
       {
         "key": "C",
-        "text": "Todo organismo que viveu no passado deixou fóssil."
+        "text": "As diferenças podem ter surgido porque as camadas se misturaram na escavação.",
+        "targetsError": "conceptual",
+        "rationale": "A equipe descreveu as camadas como sem sinais de mistura."
       },
       {
         "key": "D",
-        "text": "Origem da vida e evolução biológica são problemas relacionados, mas diferentes: evolução descreve mudanças em populações após a existência de sistemas vivos replicantes."
+        "text": "Estruturas semelhantes indicam que as formas permaneceram sem mudanças relevantes.",
+        "targetsError": "interpretation",
+        "rationale": "O relatório registra diferenças junto às estruturas compartilhadas."
       },
       {
         "key": "E",
-        "text": "A posição relativa em camadas geológicas pode indicar sequência temporal, embora datações absolutas usem outros métodos."
+        "text": "As imagens permitem ordenar as espécies segundo uma complexidade crescente.",
+        "targetsError": "interpretation",
+        "rationale": "O corte documenta diferenças, sem propor uma escala de complexidade ou progresso."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a incorreta: Todo organismo que viveu no passado deixou fóssil. As demais expressam relações compatíveis com os conceitos da aula.",
+    "correctOption": "B",
+    "explanation": "Diferenças entre conjuntos de camadas apoiam a análise de mudanças no registro ao longo do tempo, mas a falta de uma sequência contínua impede afirmar uma relação direta entre formas específicas.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-36-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-36-CON-01"
   },
   {
     "id": "CIE-36-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em registro fóssil e origem da vida?",
+    "stem": "Em uma atividade inspirada no experimento de Miller e Urey, estudantes aqueceram água, fizeram circular uma mistura gasosa e aplicaram descargas em um circuito fechado. Depois de vários ciclos, detectaram moléculas orgânicas na amostra. O relatório separa três itens: a composição dos gases escolhidos, os compostos encontrados e a ausência de membranas ou células no aparelho. A turma recebeu a tarefa de redigir uma frase curta que não ultrapasse esses resultados.\n\nQual frase faz essa síntese com precisão?",
     "options": [
       {
         "key": "A",
-        "text": "Experimentos clássicos, como Miller-Urey, mostraram que moléculas orgânicas podem formar-se em certas condições simuladas, mas não 'criaram vida'."
+        "text": "A experiência formou células ao detectar moléculas orgânicas após os ciclos.",
+        "targetsError": "conceptual",
+        "rationale": "A detecção de moléculas não equivale à observação de células, que o relatório diz estarem ausentes."
       },
       {
         "key": "B",
-        "text": "Fósseis provam que espécies sempre permaneceram exatamente iguais."
+        "text": "A mistura gasosa reproduz com precisão a atmosfera da Terra antiga.",
+        "targetsError": "conceptual",
+        "rationale": "A atividade apresenta gases escolhidos para simulação, sem evidência de que representem com precisão todo o ambiente antigo."
       },
       {
         "key": "C",
-        "text": "O experimento de Miller-Urey produziu organismos completos em laboratório."
+        "text": "O ensaio formou moléculas orgânicas em modelo simulado, sem gerar organismos."
       },
       {
         "key": "D",
-        "text": "Todo organismo que viveu no passado deixou fóssil."
+        "text": "A falta de membranas indica que os compostos detectados não eram orgânicos.",
+        "targetsError": "interpretation",
+        "rationale": "A análise identificou compostos orgânicos; a ausência de membranas diz respeito à formação de células."
       },
       {
         "key": "E",
-        "text": "Darwin propôs uma explicação detalhada e comprovada para a origem da primeira célula."
+        "text": "O circuito reproduziu a sequência completa que levou às primeiras populações vivas.",
+        "targetsError": "interpretation",
+        "rationale": "O aparelho mediu produtos de uma simulação química, sem acompanhar uma sequência completa até populações."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Experimentos clássicos, como Miller-Urey, mostraram que moléculas orgânicas podem formar-se em certas condições simuladas, mas não 'criaram vida'.",
+    "correctOption": "C",
+    "explanation": "A atividade demonstra a formação de compostos orgânicos em um modelo experimental, com composição gasosa definida; como não houve membranas ou células, não se pode dizer que o aparelho criou vida.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-36-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 2,
+    "status": "draft",
+    "primaryConceptId": "CIE-36-CON-06"
   }
 ]

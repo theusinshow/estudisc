@@ -1,140 +1,179 @@
 [
   {
-    "id": "CIE-02-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de máquinas simples, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Folha de montagem de uma gangorra de oficina, preenchida por Ivo em 12 de maio de 2026: uma caixa exerce força de 240 N sobre uma extremidade, a 0,20 m do apoio. Para erguer a caixa, o grupo aplicou força do outro lado, a 0,80 m do mesmo ponto. A montagem foi considerada ideal, com a barra leve e sem atrito relevante no apoio. O instrutor pediu que calculassem a força aplicada, comparando os efeitos de rotação dos dois lados, e anotassem o resultado em newtons.\n\nQual força equilibraria a caixa nessa montagem?",
     "options": [
       {
         "key": "A",
-        "text": "Um plano inclinado diminui simultaneamente a força e a distância percorrida."
+        "text": "A força aplicada seria 120 N no braço de 0,80 m.",
+        "targetsError": "calculation",
+        "rationale": "Subestima a vantagem proporcionada pela diferença entre os braços."
       },
       {
         "key": "B",
-        "text": "Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção."
+        "text": "A pessoa precisa exercer 240 N para equilibrar a caixa na gangorra.",
+        "targetsError": "procedural",
+        "rationale": "Considera as forças iguais sem levar em conta onde atuam."
       },
       {
         "key": "C",
-        "text": "Toda roldana reduz obrigatoriamente a força pela metade."
+        "text": "Uma força de 60 N produz o mesmo efeito de rotação indicado na ficha."
       },
       {
         "key": "D",
-        "text": "Máquinas simples produzem energia adicional."
+        "text": "A força necessária seria 80 N no lado mais distante do apoio.",
+        "targetsError": "calculation",
+        "rationale": "Estima a redução da força sem equilibrar os momentos dos dois lados."
       },
       {
         "key": "E",
-        "text": "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        "text": "A força aplicada seria 30 N para manter a barra em equilíbrio.",
+        "targetsError": "calculation",
+        "rationale": "Supõe uma vantagem mecânica maior do que a razão entre os braços permite."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção.",
+    "explanation": "A caixa produz momento de 240 N × 0,20 m = 48 N·m. No braço de 0,80 m, uma força de 60 N produz o mesmo momento e equilibra a barra.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-02-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-02-CON-01",
+    "id": "CIE-02-Q001",
+    "correctOption": "C"
   },
   {
-    "id": "CIE-02-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar máquinas simples sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "No registro do laboratório escolar, datado de 15 de maio de 2026, uma alavanca apoiada sobre um bloco sustentou um recipiente de 300 N. O recipiente ficou a 0,30 m do ponto de apoio; uma aluna pressionou a outra extremidade, situada a 1,50 m. A professora observou que a barra não acelerava e pediu o valor da força aplicada em uma situação ideal. O exercício destacou que a medida do braço é a distância perpendicular entre o apoio e a linha de ação da força, e não o comprimento total da bancada.\n\nQual força equilibraria o recipiente?",
     "options": [
       {
         "key": "A",
-        "text": "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        "text": "Uma força de 60 N na extremidade longa equilibra o recipiente de 300 N."
       },
       {
         "key": "B",
-        "text": "Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga."
+        "text": "A força aplicada seria 150 N no braço de 1,50 m.",
+        "targetsError": "calculation",
+        "rationale": "Usa a razão entre os braços ao contrário ao comparar seus efeitos."
       },
       {
         "key": "C",
-        "text": "Toda roldana reduz obrigatoriamente a força pela metade."
+        "text": "A aluna aplicaria 300 N, igualando a força ao peso sustentado.",
+        "targetsError": "conceptual",
+        "rationale": "Ignora que a extremidade longa pode produzir momento maior com força menor."
       },
       {
         "key": "D",
-        "text": "Máquinas simples produzem energia adicional."
+        "text": "Uma força de 75 N na extremidade longa equilibraria a carga.",
+        "targetsError": "calculation",
+        "rationale": "Calcula uma redução da força que não corresponde à razão dos braços."
       },
       {
         "key": "E",
-        "text": "Um plano inclinado diminui simultaneamente a força e a distância percorrida."
+        "text": "A força necessária seria 50 N para sustentar o recipiente.",
+        "targetsError": "procedural",
+        "rationale": "Subestima o momento necessário para equilibrar a carga no apoio."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga.",
+    "explanation": "O recipiente produz momento de 300 N × 0,30 m = 90 N·m. Dividindo esse valor pelo braço de 1,50 m, a força aplicada é 60 N.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-02-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-02-CON-02",
+    "id": "CIE-02-Q002",
+    "correctOption": "A"
   },
   {
-    "id": "CIE-02-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em máquinas simples?",
+    "stem": "Bilhete de manutenção escrito por Pedro em 19 de maio de 2026: no depósito da escola, uma roldana móvel ideal sustentava uma caixa de 200 N. A corda passava por dois trechos que apoiavam a roldana, e o grupo puxava a ponta livre para cima. Desprezando o peso da roldana e o atrito, a carga ficava repartida entre os dois segmentos de corda. A equipe registrou a força em newtons e comparou o resultado com a força necessária ao erguer a mesma caixa sem o conjunto.\n\nDesprezando o peso da roldana e o atrito, qual é a tração em cada um dos dois segmentos de corda que sustentam a roldana móvel?",
     "options": [
       {
         "key": "A",
-        "text": "Um plano inclinado diminui simultaneamente a força e a distância percorrida."
+        "text": "Cada segmento precisa ter 200 N de tração para sustentar a caixa.",
+        "targetsError": "calculation",
+        "rationale": "Atribui a cada trecho a força total exercida pelo peso da caixa."
       },
       {
         "key": "B",
-        "text": "Toda roldana reduz obrigatoriamente a força pela metade."
+        "text": "A tração em cada trecho seria 150 N no modelo ideal.",
+        "targetsError": "conceptual",
+        "rationale": "Não reparte a carga igualmente entre os dois segmentos de apoio."
       },
       {
         "key": "C",
-        "text": "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        "text": "A tração em cada trecho seria 50 N durante a elevação.",
+        "targetsError": "calculation",
+        "rationale": "Subestima a força necessária para que os dois segmentos sustentem a carga."
       },
       {
         "key": "D",
-        "text": "Máquinas simples produzem energia adicional."
+        "text": "A tração é de 100 N em cada segmento que apoia a roldana."
       },
       {
         "key": "E",
-        "text": "O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior."
+        "text": "A tração em cada trecho seria 75 N com a roldana móvel.",
+        "targetsError": "interpretation",
+        "rationale": "Supõe uma divisão maior da carga do que os dois segmentos permitem."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior.",
+    "explanation": "No modelo ideal, os dois segmentos sustentam igualmente a caixa de 200 N. Assim, a tração em cada um é 200 N ÷ 2 = 100 N.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-02-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-02-CON-03",
+    "id": "CIE-02-Q003",
+    "correctOption": "D"
   },
   {
-    "id": "CIE-02-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Para colocar uma caixa pesada em um caminhão, uma pessoa usa uma rampa longa. Por que isso ajuda?",
+    "stem": "Relato de acessibilidade elaborado por Sara em 22 de maio de 2026: para levar um carrinho de ferramentas a uma plataforma de 0,60 m, a equipe comparou duas rampas. A primeira tinha 1,2 m de extensão; a segunda, 3,0 m. As rampas terminavam na mesma altura e usavam a mesma superfície, e o grupo movimentou o mesmo carrinho em ambas. A força necessária foi menor no caminho longo, embora o carrinho percorresse uma distância maior. A professora pediu que a turma interpretasse esse resultado sem dizer que a máquina criou energia.\n\nQual explicação combina com a comparação?",
     "options": [
       {
         "key": "A",
-        "text": "A rampa elimina o peso da caixa."
+        "text": "A rampa longa reduz a força porque transforma a plataforma em uma altura menor.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde o comprimento do caminho com a altura final comum."
       },
       {
         "key": "B",
-        "text": "A rampa reduz a distância e a força ao mesmo tempo."
+        "text": "A extensão maior permite subir com menos força ao longo de uma distância maior."
       },
       {
         "key": "C",
-        "text": "A rampa cria energia mecânica."
+        "text": "As duas rampas exigem a mesma força porque terminam na mesma plataforma.",
+        "targetsError": "conceptual",
+        "rationale": "Ignora o efeito do comprimento do plano inclinado."
       },
       {
         "key": "D",
-        "text": "A rampa aumenta a distância do percurso e permite realizar a elevação com menor força."
+        "text": "A rampa curta reduz o trabalho ao aumentar a distância percorrida pelo carrinho.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte a comparação entre as extensões medidas."
       },
       {
         "key": "E",
-        "text": "A rampa impede qualquer ação do atrito."
+        "text": "A rampa mais longa acrescenta energia ao carrinho durante a subida.",
+        "targetsError": "conceptual",
+        "rationale": "Interpreta a vantagem de força como criação de energia."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A rampa aumenta a distância do percurso e permite realizar a elevação com menor força.",
+    "explanation": "A rampa mais longa distribui a elevação por um percurso maior e reduz a força necessária no modelo descrito. A opção tentadora diz que a distância também diminui, contrariando as medidas.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +182,47 @@
       "CIE-02-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-02-CON-01",
+    "id": "CIE-02-Q004",
+    "correctOption": "B"
   },
   {
-    "id": "CIE-02-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção.\nII. Máquinas simples produzem energia adicional.\nIII. O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior.\nIV. Toda roldana reduz obrigatoriamente a força pela metade.\nAssinale a alternativa CORRETA.",
+    "stem": "Registro de aula prática de Marina, em 25 de maio de 2026: a turma comparou uma tesoura de escritório e um quebra-nozes de duas hastes. Na tesoura, o parafuso central une as lâminas; os dedos pressionam os cabos e o papel oferece resistência perto das pontas. No quebra-nozes, a articulação fica numa extremidade, a mão aperta as hastes na outra e a noz fica entre a articulação e a região apertada. A professora pediu que os grupos identificassem o princípio mecânico presente nos dois utensílios, mesmo com a posição relativa do apoio, do esforço e da resistência diferente.\n\nQue princípio aparece nos dois utensílios?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A tesoura funciona como alavanca de terceira classe, com o esforço entre apoio e resistência.",
+        "targetsError": "conceptual",
+        "rationale": "Classifica incorretamente a posição relativa dos pontos na tesoura."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "O quebra-nozes funciona como alavanca de primeira classe, com o apoio entre mão e noz.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde a posição da resistência no quebra-nozes com a de um apoio central."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A tesoura é uma alavanca, enquanto o quebra-nozes funciona como roda e eixo em torno da articulação.",
+        "targetsError": "conceptual",
+        "rationale": "Identifica a alavanca em um utensílio, mas confunde a articulação do outro com um eixo de roda."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O quebra-nozes é uma alavanca de terceira classe, pois a mão fica entre a articulação e a noz.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte a posição da mão e da noz descrita no registro."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Em ambos, a articulação é o apoio de uma alavanca, embora esforço e resistência ocupem posições distintas."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "explanation": "A tesoura e o quebra-nozes têm hastes que giram em torno de uma articulação, que funciona como apoio de alavanca. A posição da resistência e do esforço difere entre os utensílios.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +232,152 @@
       "CIE-02-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 4,
+    "status": "draft",
+    "primaryConceptId": "CIE-02-CON-01",
+    "id": "CIE-02-Q005",
+    "correctOption": "E"
   },
   {
-    "id": "CIE-02-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre máquinas simples para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Em uma demonstração registrada por Luan em 28 de maio de 2026, um carrinho de carga tinha uma roda de raio maior ligada ao eixo menor. A equipe segurou o conjunto pelo eixo e tentou girar uma carga presa à roda, depois repetiu a atividade usando a roda como ponto de aplicação. Os estudantes perceberam que os dois raios influenciavam a força e o movimento, embora o arranjo não eliminasse o peso da carga. O professor pediu que relacionassem essa observação ao uso de manivelas e volantes.\n\nQue ideia explica a função do sistema roda e eixo?",
     "options": [
       {
         "key": "A",
-        "text": "Toda roldana reduz obrigatoriamente a força pela metade."
+        "text": "A roda maior reduz o torque produzido pela mesma força aplicada em seu aro.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte a relação entre o raio maior e o torque produzido pela mesma força."
       },
       {
         "key": "B",
-        "text": "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        "text": "Ao aplicar força na roda maior, o raio menor do eixo fornece o braço mais longo.",
+        "targetsError": "conceptual",
+        "rationale": "Inverte qual dos dois raios forma o braço maior no conjunto descrito."
       },
       {
         "key": "C",
-        "text": "Um plano inclinado diminui simultaneamente a força e a distância percorrida."
+        "text": "Os raios diferentes alteram a relação entre força aplicada e rotação."
       },
       {
         "key": "D",
-        "text": "Máquinas simples produzem energia adicional."
+        "text": "Para a mesma força, aplicar o esforço no eixo produz mais torque que aplicá-lo na roda maior.",
+        "targetsError": "conceptual",
+        "rationale": "Inverte o efeito do raio sobre o torque produzido pela mesma força."
       },
       {
         "key": "E",
-        "text": "A vantagem mecânica não significa criar energia; em condições ideais, ganhar em força implica compensar em distância."
+        "text": "Os raios alteram o deslocamento da carga, mas não a força necessária para girar.",
+        "targetsError": "conceptual",
+        "rationale": "Desconsidera que a distância ao eixo também afeta o torque e a força aplicada."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: A vantagem mecânica não significa criar energia; em condições ideais, ganhar em força implica compensar em distância.",
+    "explanation": "Os raios da roda e do eixo influenciam o torque produzido e a força necessária para girar o conjunto. O mecanismo facilita a aplicação da força, sem retirar o peso da carga.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-02-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-02-CON-05",
+    "id": "CIE-02-Q006",
+    "correctOption": "C"
   },
   {
-    "id": "CIE-02-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre máquinas simples?",
+    "stem": "Anotação de visita ao laboratório, de Felipe em 1º de junho de 2026: no torno manual, um estudante aplicou força na extremidade de um cabo e fez girar um eixo que enrolava um fio. Ao mover a mão para mais longe do eixo, ele conseguiu girá-lo com menor esforço, mas percorreu um arco maior. O professor interrompeu a atividade para que todos observassem o ponto de rotação e comparassem o cabo a uma barra. A anotação registrou que o mecanismo não removeu a carga suspensa.\n\nQual princípio está em evidência?",
     "options": [
       {
         "key": "A",
-        "text": "Máquinas simples produzem energia adicional."
+        "text": "Aumentar o braço de aplicação pode reduzir o esforço e ampliar o percurso da mão."
       },
       {
         "key": "B",
-        "text": "Roda e eixo facilitam movimentos ao combinar dois raios diferentes em um mesmo sistema."
+        "text": "A mão percorre um arco maior e, por isso, a carga suspensa perde parte do peso.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde o percurso maior da mão com uma redução da força peso da carga."
       },
       {
         "key": "C",
-        "text": "Roldanas podem mudar a direção da força e, em conjuntos adequados, reduzir a força necessária para elevar uma carga."
+        "text": "Afastar a mão do eixo reduz o esforço e encurta o arco necessário para girá-lo.",
+        "targetsError": "interpretation",
+        "rationale": "Relaciona o braço maior a menor esforço, mas inverte a relação com o percurso."
       },
       {
         "key": "D",
-        "text": "O plano inclinado permite elevar um objeto com força menor ao longo de uma distância maior."
+        "text": "O fio que enrola no eixo multiplica a força aplicada sem alterar o movimento da mão.",
+        "targetsError": "conceptual",
+        "rationale": "Desconsidera a compensação entre força aplicada e deslocamento ao girar o cabo."
       },
       {
         "key": "E",
-        "text": "Alavancas giram em torno de um ponto de apoio e podem aumentar a força efetiva ou mudar sua direção."
+        "text": "A mão mais distante do eixo precisa exercer mais força, embora percorra um arco maior.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte o efeito do braço maior sobre a força aplicada."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a incorreta: Máquinas simples produzem energia adicional. As demais expressam relações compatíveis com os conceitos da aula.",
+    "explanation": "Ao afastar a mão do eixo, aumenta-se o braço de aplicação e pode-se girar com menor esforço. A mão percorre um arco maior, como registrado na demonstração.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-02-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-02-CON-01",
+    "id": "CIE-02-Q007",
+    "correctOption": "A"
   },
   {
-    "id": "CIE-02-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em máquinas simples?",
+    "stem": "Comunicado do clube de ciências, escrito por Marília em 4 de junho de 2026: para mover uma caixa de livros até uma mesa, o grupo testou um carrinho de mão e uma pequena rampa. No carrinho, a roda sustentava parte da carga e o estudante aplicava força nos cabos. Na rampa, a caixa subiu gradualmente por uma superfície inclinada. A turma registrou que cada recurso tornou uma tarefa mais manejável, mas nenhum deles alterou a quantidade de livros. O comunicado convidava os colegas a identificar os dispositivos presentes em casa.\n\nQual síntese relaciona corretamente os exemplos observados?",
     "options": [
       {
         "key": "A",
-        "text": "Toda roldana reduz obrigatoriamente a força pela metade."
+        "text": "A rampa é um plano inclinado; no carrinho, a roda gira sem ligação com o eixo.",
+        "targetsError": "conceptual",
+        "rationale": "Identifica a rampa, mas separa componentes que formam juntos o mecanismo do carrinho."
       },
       {
         "key": "B",
-        "text": "Um plano inclinado diminui simultaneamente a força e a distância percorrida."
+        "text": "O carrinho usa roda e eixo, enquanto a rampa atua como uma alavanca apoiada na mesa.",
+        "targetsError": "interpretation",
+        "rationale": "Reconhece o mecanismo do carrinho, mas confunde a superfície inclinada com uma barra articulada."
       },
       {
         "key": "C",
-        "text": "O ponto de apoio de uma alavanca nunca influencia seu funcionamento."
+        "text": "A rampa e o carrinho facilitam o transporte, embora a roda funcione como roldana móvel.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde a roda presa ao eixo do carrinho com uma roldana que sustenta uma corda."
       },
       {
         "key": "D",
-        "text": "Máquinas simples produzem energia adicional."
+        "text": "Roda e eixo no carrinho e plano inclinado na rampa facilitam tarefas distintas."
       },
       {
         "key": "E",
-        "text": "Tesoura, abridor, rampa, carrinho de mão e roldanas são aplicações de princípios de máquinas simples."
+        "text": "O carrinho usa um plano inclinado nas rodas, e a rampa funciona como roda e eixo.",
+        "targetsError": "conceptual",
+        "rationale": "Inverte os dispositivos simples presentes em cada recurso."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Tesoura, abridor, rampa, carrinho de mão e roldanas são aplicações de princípios de máquinas simples.",
+    "explanation": "O carrinho de mão combina roda e eixo, enquanto a rampa é uma superfície inclinada. Os dois recursos facilitam a tarefa de maneiras diferentes, sem alterar a carga.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-02-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-02-CON-06",
+    "id": "CIE-02-Q008",
+    "correctOption": "D"
   }
 ]

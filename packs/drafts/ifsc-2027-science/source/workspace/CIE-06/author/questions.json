@@ -2,139 +2,180 @@
   {
     "id": "CIE-06-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de circuitos elétricos, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Folha de montagem assinada por Paulo em 26 de agosto de 2026: em um circuito de bancada alimentado por uma fonte de 9 V, uma lâmpada de demonstração foi representada por um resistor de 3 Ω. A equipe fechou a chave, conferiu os contatos e mediu a corrente no ramo principal com um amperímetro. O experimento usou apenas baixa tensão e componentes isolados. A professora pediu que os alunos aplicassem a relação entre tensão, resistência e corrente, mantendo as unidades no cálculo.\n\nQual corrente corresponde ao modelo indicado?",
     "options": [
       {
         "key": "A",
-        "text": "Curto-circuito é uma forma segura de economizar energia."
+        "text": "A corrente é 27 A, multiplicando 9 V por 3 Ω.",
+        "targetsError": "calculation",
+        "rationale": "Multiplica em vez de dividir a tensão pela resistência."
       },
       {
         "key": "B",
-        "text": "Todo material é igualmente condutor."
+        "text": "A corrente calculada é 3 A para 9 V sobre 3 Ω."
       },
       {
         "key": "C",
-        "text": "Uma lâmpada acende mesmo com o circuito aberto se a bateria for forte."
+        "text": "A corrente vale 6 A, subtraindo a resistência da tensão.",
+        "targetsError": "procedural",
+        "rationale": "Subtrai grandezas elétricas em lugar de usar a relação indicada."
       },
       {
         "key": "D",
-        "text": "Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado."
+        "text": "A corrente fica em 0,33 A, dividindo a resistência pela tensão.",
+        "targetsError": "calculation",
+        "rationale": "Inverte a divisão entre tensão e resistência."
       },
       {
         "key": "E",
-        "text": "Corrente elétrica é consumida completamente pelo primeiro componente do circuito."
+        "text": "A corrente é 6 A, tomando como 1,5 Ω a resistência equivalente do modelo.",
+        "targetsError": "calculation",
+        "rationale": "Usa uma resistência equivalente diferente dos 3 Ω informados no modelo."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado.",
+    "correctOption": "B",
+    "explanation": "Pela relação U = R × i, a corrente é 9 V ÷ 3 Ω = 3 A. A resposta que multiplica tensão e resistência usa a relação no sentido errado.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-06-CON-01"
     ],
     "targetedError": "core_concept",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-06-CON-01"
   },
   {
     "id": "CIE-06-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar circuitos elétricos sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Diário de circuito de Alice, datado de 29 de agosto de 2026: uma fonte de 12 V foi conectada a um resistor de 6 Ω por fios e uma chave. Com a chave aberta, o amperímetro indicou zero; depois de fechar a chave, o instrumento indicou uma corrente estável. A equipe verificou que os contatos estavam firmes e que a resistência representava o receptor da montagem. O professor pediu que calculassem a leitura esperada no estado fechado, antes de compará-la com o instrumento.\n\nQual corrente o modelo prevê com a chave fechada?",
     "options": [
       {
         "key": "A",
-        "text": "Uma lâmpada acende mesmo com o circuito aberto se a bateria for forte."
+        "text": "O circuito fechado apresenta 72 A, pelo produto de 12 e 6.",
+        "targetsError": "calculation",
+        "rationale": "Multiplica tensão por resistência para obter corrente."
       },
       {
         "key": "B",
-        "text": "Corrente elétrica é consumida completamente pelo primeiro componente do circuito."
+        "text": "A corrente calculada é 18 A, somando 12 V e 6 Ω.",
+        "targetsError": "procedural",
+        "rationale": "Soma valores de grandezas diferentes."
       },
       {
         "key": "C",
-        "text": "Curto-circuito é uma forma segura de economizar energia."
+        "text": "Com a chave fechada, a corrente permanece zero porque a chave aberta interrompe o caminho.",
+        "targetsError": "interpretation",
+        "rationale": "Aplica ao estado fechado a leitura observada antes, quando a chave estava aberta."
       },
       {
         "key": "D",
-        "text": "Uma chave aberta interrompe o caminho e uma chave fechada permite continuidade elétrica."
+        "text": "A corrente é 0,5 A, dividindo a resistência pela tensão.",
+        "targetsError": "calculation",
+        "rationale": "Inverte a relação entre tensão e resistência."
       },
       {
         "key": "E",
-        "text": "Todo material é igualmente condutor."
+        "text": "A leitura esperada no ramo fechado é 2 A."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Uma chave aberta interrompe o caminho e uma chave fechada permite continuidade elétrica.",
+    "correctOption": "E",
+    "explanation": "Com caminho fechado, U = R × i dá i = 12 V ÷ 6 Ω = 2 A. A leitura de zero descreve a chave aberta, não o estado que a pergunta solicita.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-06-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-06-CON-02"
   },
   {
     "id": "CIE-06-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em circuitos elétricos?",
+    "stem": "Registro de teste de Beatriz, de 1º de setembro de 2026: um pequeno receptor de bancada operou com corrente de 0,5 A e resistência de 8 Ω, segundo os dados fornecidos pelo fabricante para a atividade. O circuito foi montado com uma fonte regulável e uma chave, e o professor pediu para estimar a tensão antes de ligar a fonte. A turma usou um modelo simples, sem tratar o aparelho como uma instalação doméstica, e registrou a resposta em volts.\n\nQue tensão corresponde aos dados do receptor?",
     "options": [
       {
         "key": "A",
-        "text": "Curto-circuito é uma forma segura de economizar energia."
+        "text": "A tensão é 16 V, dividindo 8 Ω por 0,5 A.",
+        "targetsError": "calculation",
+        "rationale": "Aplica divisão onde o modelo pede produto."
       },
       {
         "key": "B",
-        "text": "Uma lâmpada acende mesmo com o circuito aberto se a bateria for forte."
+        "text": "A tensão vale 8,5 V, somando resistência e corrente.",
+        "targetsError": "procedural",
+        "rationale": "Soma unidades diferentes em vez de usar a relação."
       },
       {
         "key": "C",
-        "text": "Corrente elétrica é consumida completamente pelo primeiro componente do circuito."
+        "text": "A fonte deve fornecer 4 V para os valores registrados."
       },
       {
         "key": "D",
-        "text": "Todo material é igualmente condutor."
+        "text": "A tensão fica em 0,0625 V, dividindo corrente pela resistência.",
+        "targetsError": "calculation",
+        "rationale": "Inverte os termos e não obtém volts."
       },
       {
         "key": "E",
-        "text": "Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas."
+        "text": "A tensão calculada é 0,25 V, usando 0,5 Ω como resistência do receptor.",
+        "targetsError": "calculation",
+        "rationale": "Substitui os 8 Ω informados por uma resistência de 0,5 Ω."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas.",
+    "correctOption": "C",
+    "explanation": "U = R × i; 8 Ω × 0,5 A = 4 V. A resposta que divide resistência por corrente inverte a relação indicada no modelo.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-06-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-06-CON-03"
   },
   {
     "id": "CIE-06-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma pilha, fios e uma lâmpada estão conectados, mas um dos fios está desconectado. O que ocorre?",
+    "stem": "Relato de montagem de Cíntia em 4 de setembro de 2026: uma pilha, fios, um interruptor e uma lâmpada foram conectados em série sobre uma placa. A lâmpada acendeu quando o interruptor foi fechado. Depois, a equipe soltou uma das extremidades de um fio e observou que a lâmpada apagou, embora a pilha permanecesse encaixada. A professora pediu aos estudantes que identificassem o que mudou no caminho elétrico entre a primeira e a segunda observação.\n\nQual interpretação explica o apagamento da lâmpada?",
     "options": [
       {
         "key": "A",
-        "text": "A lâmpada acende com metade do brilho automaticamente."
+        "text": "O fio solto abriu o circuito e interrompeu a corrente pelo receptor."
       },
       {
         "key": "B",
-        "text": "A corrente salta pelo ar em qualquer distância."
+        "text": "A pilha perdeu sua energia química no instante em que o fio saiu.",
+        "targetsError": "interpretation",
+        "rationale": "Atribui à fonte uma mudança que o relato não mediu."
       },
       {
         "key": "C",
-        "text": "A pilha deixa de possuir energia química."
+        "text": "A lâmpada continua recebendo corrente pelo espaço entre os contatos.",
+        "targetsError": "conceptual",
+        "rationale": "Supõe um caminho condutor onde o fio foi desconectado."
       },
       {
         "key": "D",
-        "text": "O circuito está aberto e não há corrente contínua pelo caminho completo; a lâmpada não acende."
+        "text": "O interruptor fechou o circuito quando o fio se separou da placa.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte a condição descrita para os dois momentos."
       },
       {
         "key": "E",
-        "text": "O fio desconectado vira um isolante permanente."
+        "text": "A corrente continua circulando pelo trecho conectado, mesmo sem fechar o circuito pela lâmpada.",
+        "targetsError": "conceptual",
+        "rationale": "Supõe que a corrente percorre um ramo incompleto após a desconexão do fio."
       }
     ],
-    "correctOption": "D",
-    "explanation": "O circuito está aberto e não há corrente contínua pelo caminho completo; a lâmpada não acende.",
+    "correctOption": "A",
+    "explanation": "Ao soltar o fio, a equipe abriu o caminho e interrompeu a corrente do circuito. A alternativa que diz que a pilha ficou sem energia não é apoiada pela mudança observada.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -143,36 +184,47 @@
       "CIE-06-CON-03"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-06-CON-01"
   },
   {
     "id": "CIE-06-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado.\nII. Uma lâmpada acende mesmo com o circuito aberto se a bateria for forte.\nIII. Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas.\nIV. Corrente elétrica é consumida completamente pelo primeiro componente do circuito.\nAssinale a alternativa CORRETA.",
+    "stem": "Anotação de segurança feita por Mauro em 7 de setembro de 2026: durante uma atividade de baixa tensão, os alunos compararam um fio metálico revestido por plástico com uma lâmina de metal sem revestimento. O multímetro indicou passagem de corrente pelo fio quando integrado ao circuito, enquanto a lâmina foi usada como contato de teste sobre uma placa isolante. A professora explicou que os materiais respondiam de modo diferente nas condições observadas e pediu uma escolha segura para cobrir as partes que poderiam ser tocadas.\n\nQual conclusão se ajusta ao teste?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A placa isolante deve fechar o circuito porque impede o movimento de cargas.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde interrupção do circuito com condução elétrica."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "O plástico transmite mais corrente que a lâmina metálica nas condições medidas.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte a diferença de condução indicada pela comparação dos materiais."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A cobertura metálica protege melhor porque conduz corrente para a mão.",
+        "targetsError": "interpretation",
+        "rationale": "Apresenta condução como proteção contra contato."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O revestimento plástico dificulta o contato elétrico com o fio condutor."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "O multímetro indica que os dois materiais conduzem do mesmo modo.",
+        "targetsError": "interpretation",
+        "rationale": "Apaga a diferença descrita nas medições."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "correctOption": "D",
+    "explanation": "O metal conduziu corrente no circuito, enquanto o plástico atua como isolante na montagem; isso apoia o uso do revestimento para reduzir contato acidental. A opção que trata os materiais como equivalentes contradiz o teste.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -182,114 +234,150 @@
       "CIE-06-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-06-CON-01"
   },
   {
     "id": "CIE-06-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre circuitos elétricos para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Ficha de ocorrência simulada elaborada por Clara em 10 de setembro de 2026: um fio de bancada encostou diretamente nos dois terminais de uma fonte de baixa tensão, sem passar por lâmpada ou resistor. O cabo começou a aquecer e a professora desligou a fonte imediatamente. A turma registrou que a ligação criou um caminho de resistência muito baixa e interrompeu a atividade antes de qualquer dano. O caso foi usado para revisar por que uma conexão desse tipo exige proteção e supervisão.\n\nQual avaliação de segurança corresponde ao registro?",
     "options": [
       {
         "key": "A",
-        "text": "Todo material é igualmente condutor."
+        "text": "A ligação reduz o aquecimento porque a corrente evita os terminais da fonte.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte o efeito registrado no fio conectado diretamente."
       },
       {
         "key": "B",
-        "text": "Curto-circuito é uma forma segura de economizar energia."
+        "text": "O contato direto pode causar corrente intensa e aquecer o fio de forma perigosa."
       },
       {
         "key": "C",
-        "text": "Uma lâmpada acende mesmo com o circuito aberto se a bateria for forte."
+        "text": "O fio virou um receptor que converte energia em iluminação para a turma.",
+        "targetsError": "conceptual",
+        "rationale": "Atribui uma função luminosa que o caso não observou."
       },
       {
         "key": "D",
-        "text": "Corrente elétrica é consumida completamente pelo primeiro componente do circuito."
+        "text": "A fonte deixou de fornecer energia por causa da tampa da bancada.",
+        "targetsError": "interpretation",
+        "rationale": "Introduz uma causa ausente no registro."
       },
       {
         "key": "E",
-        "text": "Curto-circuito é uma conexão de resistência muito baixa que pode produzir correntes intensas e aquecimento perigoso."
+        "text": "A ligação protege a fonte porque o fio mantém alta resistência no caminho.",
+        "targetsError": "conceptual",
+        "rationale": "Inverte a resistência baixa registrada para a ligação direta."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Curto-circuito é uma conexão de resistência muito baixa que pode produzir correntes intensas e aquecimento perigoso.",
+    "correctOption": "B",
+    "explanation": "O caminho de resistência muito baixa pode produzir corrente intensa e aquecimento; desligar a fonte foi uma resposta apropriada. A alternativa que trata o curto como economia ignora o risco anotado.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-06-CON-05"
     ],
     "targetedError": "transfer",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-06-CON-05"
   },
   {
     "id": "CIE-06-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre circuitos elétricos?",
+    "stem": "Rascunho de diagrama feito por Felipe em 13 de setembro de 2026: uma pilha foi desenhada ligada por fios a uma lâmpada e a um interruptor. A equipe escolheu símbolos padronizados para cada componente e usou linhas para representar as conexões. Ao comparar o desenho com a montagem real, os alunos perceberam que não precisavam desenhar os objetos na escala ou no formato físico exato para mostrar o caminho elétrico. A professora pediu que apontassem a vantagem desse tipo de representação.\n\nQual função do diagrama está descrita no rascunho?",
     "options": [
       {
         "key": "A",
-        "text": "Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado."
+        "text": "O desenho substitui a pilha e fornece energia ao circuito montado.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde representação gráfica com fonte elétrica real."
       },
       {
         "key": "B",
-        "text": "Uma lâmpada acende mesmo com o circuito aberto se a bateria for forte."
+        "text": "As linhas do esquema indicam o material exato de cada componente.",
+        "targetsError": "interpretation",
+        "rationale": "Atribui às linhas uma informação que o rascunho não codifica."
       },
       {
         "key": "C",
-        "text": "Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas."
+        "text": "O diagrama informa a corrente medida sem incluir instrumentos ou valores.",
+        "targetsError": "attention",
+        "rationale": "Confunde representação de conexões com resultado de medição."
       },
       {
         "key": "D",
-        "text": "Materiais condutores permitem movimento de cargas com maior facilidade que isolantes nas condições usuais."
+        "text": "Os símbolos mostram a forma e o tamanho físicos dos componentes na bancada.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde a representação padronizada com uma ilustração em escala dos objetos."
       },
       {
         "key": "E",
-        "text": "Uma chave aberta interrompe o caminho e uma chave fechada permite continuidade elétrica."
+        "text": "Os símbolos permitem comunicar componentes e conexões sem desenhá-los em escala."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a incorreta: Uma lâmpada acende mesmo com o circuito aberto se a bateria for forte. As demais expressam relações compatíveis com os conceitos da aula.",
+    "correctOption": "E",
+    "explanation": "Símbolos padronizados representam componentes e conexões de forma legível, mesmo sem reproduzir seu aspecto físico. A opção que exige desenhos em escala confunde diagrama com ilustração realista.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-06-CON-01"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-06-CON-01"
   },
   {
     "id": "CIE-06-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em circuitos elétricos?",
+    "stem": "Descrição de ensaio assinada por Teresa em 16 de setembro de 2026: uma pilha conectada a uma campainha fez o dispositivo tocar quando a chave foi fechada. A equipe percebeu que a campainha vibrou e emitiu som, enquanto os fios e a fonte permaneceram no circuito. A professora pediu que os estudantes relacionassem a função da fonte à do receptor e identificassem a forma de energia percebida no resultado, sem dizer que a corrente desapareceu dentro da campainha.\n\nQual interpretação descreve a função da campainha no circuito?",
     "options": [
       {
         "key": "A",
-        "text": "Todo material é igualmente condutor."
+        "text": "A campainha gera a pilha e devolve energia química aos fios.",
+        "targetsError": "interpretation",
+        "rationale": "Inverte a função da fonte e do receptor."
       },
       {
         "key": "B",
-        "text": "Corrente elétrica é consumida completamente pelo primeiro componente do circuito."
+        "text": "A chave produz som ao interromper o caminho entre os contatos.",
+        "targetsError": "interpretation",
+        "rationale": "A campainha, não a chave, foi o componente que tocou."
       },
       {
         "key": "C",
-        "text": "Curto-circuito é uma forma segura de economizar energia."
+        "text": "O receptor transforma energia elétrica em vibração e som durante o funcionamento."
       },
       {
         "key": "D",
-        "text": "Diagramas elétricos usam símbolos padronizados para representar componentes e conexões."
+        "text": "A corrente é consumida pela campainha e deixa de existir no restante do circuito.",
+        "targetsError": "conceptual",
+        "rationale": "Confunde a transformação de energia no receptor com o desaparecimento da corrente."
       },
       {
         "key": "E",
-        "text": "Uma lâmpada acende mesmo com o circuito aberto se a bateria for forte."
+        "text": "A pilha funciona como isolante porque a campainha está ligada aos fios.",
+        "targetsError": "conceptual",
+        "rationale": "Troca a função da fonte pela de um material isolante."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Diagramas elétricos usam símbolos padronizados para representar componentes e conexões.",
+    "correctOption": "C",
+    "explanation": "A pilha fornece diferença de potencial e a campainha, como receptor, transforma energia elétrica em vibração e som. A alternativa que trata corrente como algo consumido confunde fluxo elétrico com transformação de energia.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-06-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "CIE-06-CON-06"
   }
 ]

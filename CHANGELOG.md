@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-16 — Hand-written questions for Portuguese, History-Geography and Science
+
+- 904 questions rewritten by hand with an authored stimulus each (Portuguese 192, History-Geography 392, Science 320). Science adds calculation items in the quantitative lessons.
+- A first automated rewrite was rejected for templating. Each question was then solved blind by an independent reviewer, who matched the answer key in 98.7% of cases (all mismatches checked), and the distractors flagged as guessable were reinforced.
+- Internal source labels ("Texto autoral editorial Estudisc", "didática ficcional") were removed from stems. The validator reports 0 errors; known violations went from 841 to 347, all of them in Mathematics numeric answers and the legacy packs.
+- Published in production through ADR 0063 lesson-bound Question versions (Admin Direct, with audit events, after backups).
+
 ## 2026-10-16 — Paid access until the exam; phase 1 corrections live
 
 - Paid access (ADR 0061, still behind `FEATURE_PAID_ACCESS`): one R$ 50 payment now gives access until the end of the IFSC 2027/1 exam day (29/11/2026, Brasília) instead of lifetime access. Payments, scholarship invites and admin grants record that end, and the texts no longer promise lifetime access.
