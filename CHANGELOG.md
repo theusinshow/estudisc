@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-16 — Visuals can be added to published lessons
+
+- Lesson versions may append safe embedded figures, hotspots and interactive maps with credit and long description (ADR 0062 amendment).
+
 ## 2026-10-16 — Interactive Questions for published lessons
 
 - New Content Studio builder `interaction-batch.ts`: authored ordering, classification and matching interactions become new lesson-bound Questions in a lesson version (ADR 0063 amendment). Ordering items never start in the correct order.
