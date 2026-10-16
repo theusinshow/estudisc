@@ -6,10 +6,10 @@ import { hashCanonicalJson } from "@/lib/canonical-json";
 
 /** Local import artifacts matched by the historical production audit, not a fresh production query. */
 export const blueprintSources = [
-  { path: "packs/drafts/ifsc-2027-mathematics/mathematics.pack.json", canonicalHash: "bcf7c8ffa90dea94bcfaa4b52494fe291de6d22a8a6133fa33bcf06eb18af056", lessons: 19 },
-  { path: "packs/drafts/ifsc-2027-science/science.pack.json", canonicalHash: "722f1deeb98c55cb121f988931596830a68c5bd4ab15fcf7754f49ebe574bc27", lessons: 40 },
-  { path: "packs/drafts/ifsc-2027-history-geography/history-geography.pack.json", canonicalHash: "9443099ce452556ee2053ce479bbf12faf266b46336eab3cbc298a3aa20604a7", lessons: 49 },
-  { path: "packs/drafts/ifsc-2027-portuguese/portuguese.pack.json", canonicalHash: "4c5c598e32df714456a7dc0cd3761ad0dec09b50a645702f81575338beb120f3", lessons: 24 }
+  { path: "packs/drafts/ifsc-2027-mathematics/mathematics.pack.json", canonicalHash: "6bdf9a7ee01b053f4a1c1ead741f62e34aab2098acb53ce1b436e8d1e09c4fb0", lessons: 19 },
+  { path: "packs/drafts/ifsc-2027-science/science.pack.json", canonicalHash: "5393a6926e90910b1d3d93ee002b4db697ac9bce1cdd8d3e6c3479f1daf8239f", lessons: 40 },
+  { path: "packs/drafts/ifsc-2027-history-geography/history-geography.pack.json", canonicalHash: "d04ca07d0707fba96731e6913acac8ff86483748b783b5f3ab3b36c6d79f5b28", lessons: 49 },
+  { path: "packs/drafts/ifsc-2027-portuguese/portuguese.pack.json", canonicalHash: "941938d8f08dc148b4db0ed4f5031207a26edd8d7e511a4359187814665de391", lessons: 24 }
 ] as const;
 
 export function loadBlueprintCorpus(root: string) {
