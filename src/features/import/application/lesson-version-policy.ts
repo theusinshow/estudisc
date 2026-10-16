@@ -1,5 +1,6 @@
 import { hashCanonicalJson } from "@/lib/canonical-json";
 import { codeBlockSchema,conceptBlockSchema,figureBlockSchema,textBlockSchema,titledTextBlockSchema } from "@/features/lessons/blocks/block-schemas";
+import { authoredMapSchema, hotspotSchema } from "@/features/lessons/blocks/visual-interactions-schema";
 import { validateSourceGoalPrediction } from "./source-goal-prediction";
 import { trackPackV2Schema, type TrackPackV2 } from "./track-pack-v2-schema";
 import { validateTrackPackV2Semantics } from "./track-pack-v2-validation";
@@ -74,6 +75,13 @@ const TEXT_BLOCK_TYPES: readonly string[] = ["text", "summary", "concept", "note
 export function validateTextBlock(block: LessonVersionPack["lesson"]["blocks"][number], base: SourceLesson, isAddition: boolean, conceptsOptional = false) {
   if((isAddition&&!conceptsOptional&&!block.conceptIds.length)||block.conceptIds.some(id=>!base.concepts.some(c=>c.id===id)))throw new LessonVersionConflictError("New blocks must use existing source Concepts");
   if(block.type==="numeric-explorer")return;
+  // Added visuals (figure, hotspot, map): a safe embedded image that passes its renderer schema, with credit and a long description.
+  if(block.type==="figure"||block.type==="hotspot"||block.type==="map"){
+    const schema=block.type==="figure"?figureBlockSchema:block.type==="hotspot"?hotspotSchema:authoredMapSchema;
+    const payload={...block.payload,type:block.type} as {credit?:unknown;longDescription?:unknown};
+    if(!isAddition||!schema.safeParse(payload).success||typeof payload.credit!=="string"||typeof payload.longDescription!=="string")throw new LessonVersionConflictError("An added visual needs a safe image, alt text, caption, credit and long description");
+    return;
+  }
   if(block.type==="prediction"){try{validateSourceGoalPrediction(block,base);}catch(error){throw new LessonVersionConflictError(error instanceof Error?error.message:"Invalid source-goal prediction");}return;}
   if(block.payload.type!==undefined&&block.payload.type!==block.type)throw new LessonVersionConflictError("Block payload type differs from its envelope");
   if(block.type==="concept"&&block.payload.conceptId!==undefined&&!block.conceptIds.includes(String(block.payload.conceptId)))throw new LessonVersionConflictError("Concept payload must match the source-bound block Concepts");
