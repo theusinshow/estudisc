@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-16 — Content release: depth, simulados and nine new lessons
+
+- Production now has 141 lessons and 1,220 lesson Questions, plus 247 standalone simulado Questions and 3 full simulation templates.
+- Deeper lesson text is live for History-Geography (49), Portuguese (24) and Science (13) as correction versions. MAT-16 gains four circle and circumference Questions.
+- Nine new lessons: waves, sound and light; climate, relief and hydrography of Brazil and SC; time zones and coordinates; angles and polygons; similarity and Thales; Cartesian plane and graphs; mean, mode and median; word formation; language functions and pronoun placement.
+
 ## 2026-10-16 — Standalone simulado Questions (ADR 0065)
 
 - New ADMIN-only path for standalone assessment Questions: import new draft Questions bound to a Track's Concepts and register their releases (`StandaloneQuestionRepository.importSet`), then publish them through Admin Direct with one audit event each (`ContentPublicationService.publishStandaloneQuestionsDirect`). They are never attached to a lesson. Exposed at `POST /api/admin/standalone-questions`.

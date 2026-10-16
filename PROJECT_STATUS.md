@@ -1,4 +1,12 @@
 # Estudisc — Current project status
+Content release 2026-10-16 (night) LIVE, each step after its own pg_dump in `.local/database-migration/private/` (pre-depth, pre-mat16-circle, pre-simulados, pre-new-lessons):
+- Phase 2 questions for GH (49) and CIE (40) published; `--verify` shows every lesson at its latest version.
+- Phase 3 deeper lesson text published as ADR 0062 correction versions: GH 49, POR 24, CIE 13 (PR #37). PR #38 fixed corrections over lessons with rebound Questions.
+- MAT-16 v6 adds four hand-written circle and circumference Questions (ADR 0063).
+- Simulados (ADR 0065): 247 standalone Questions and 3 templates; 26 GH distractors with absolute words were rewritten first (validator 0 violations).
+- Nine new lessons (ADR 0064): CIE-41, GH-50, GH-51, MAT-19..22, POR-25, POR-26; keys and calculations spot-checked; edital mapping kept as an unverified author claim.
+- Internal labels remain only in non-rendered editorial metadata (48 blocks); none in visible fields.
+NEXT ACTION (owner): public `/termos` and `/privacidade` pages with seller data, Google OAuth client, Mercado Pago account and webhook, then `FEATURE_PAID_ACCESS`. Legal pages do not exist yet and all pages currently require sign-in.
 POR-01..03 hand-written question pilot (2026-10-16) complete locally on content/por-pilot-20261016. The 24 existing Question IDs now have individual authorial stimuli, question-specific alternatives, distractor error metadata and explanations; all are v2 and draft. POR-01, POR-02 and POR-03 are v3; the complete Portuguese Pack is v7. All 21 other lessons and 168 Questions match the original Pack exactly. Source registry: 24 texts, license autoral-estudisc. Review: `.local/task/PILOT-REVIEW.md`. No import or publication was performed.
 
 Validation: offline frozen-lockfile install, lint, typecheck and content-QA passed (17 tests across 7 files). The pack validator exits 1 only for the remaining R11 repeated-choice group at POR-04-Q07 (21 unchanged Questions; the original 24-question group also included POR-01-Q07). No R3/R8/R9/R10/R11 finding identifies the new Questions. NEXT ACTION: keep the candidate in draft; publication is outside this task.
@@ -109,11 +117,13 @@ Next.js, Drizzle, Neon, Vercel and Auth.js remain a modular monolith with privat
 
 | Subject | Published lessons | Questions |
 |---|---:|---:|
-| Mathematics | 19 | 240 |
-| Science | 40 | 320 |
-| History / Geography | 49 | 392 |
-| Portuguese | 24 | 192 |
-| Total | 132 | 1,144 |
+| Mathematics | 23 | 276 |
+| Science | 41 | 328 |
+| History / Geography | 51 | 408 |
+| Portuguese | 26 | 208 |
+| Total | 141 | 1,220 |
+
+Plus 247 standalone simulado Questions (POR 48, GH 98, CIE 80, MAT 21) and 3 FULL_SIMULATION templates (`ifsc-simulado-1..3`, 28 Questions, 240 minutes). Read-only audit 2026-10-16: every lesson Concept has at least one Question; only MAT-PREREQ (preparation) has fewer than 8.
 
 Do not repeat content imports or publication. Stable IDs, versions, source files, hashes and learner state remain unchanged.
 
