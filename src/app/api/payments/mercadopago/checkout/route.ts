@@ -3,7 +3,7 @@ import { z } from "zod";
 import { getEntitlementRepository } from "@/db/repositories/entitlement-repository";
 import { AccessDeniedError, getOwnerProfile } from "@/features/auth/owner";
 import { resolveAccessState } from "@/features/payments/access-guard";
-import { LIFETIME_CURRENCY, LIFETIME_PRICE_CENTS } from "@/features/payments/contracts";
+import { LIFETIME_CURRENCY, LIFETIME_PRICE_CENTS, paidAccessEndsAt } from "@/features/payments/contracts";
 import {
   createMercadoPagoCheckoutPreference,
   MercadoPagoError,
@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
         providerPaymentId: `sandbox-${ref.nonce}`,
         amountCents: LIFETIME_PRICE_CENTS,
         currency: LIFETIME_CURRENCY,
-        endsAt: null,
+        endsAt: paidAccessEndsAt(),
         metadata: { sandbox: true, nonce: ref.nonce }
       });
       return NextResponse.json({ alreadyEntitled: true, checkoutUrl: "/plan", sandboxMode: true }, { status: 200 });

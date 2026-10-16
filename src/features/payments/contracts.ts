@@ -1,6 +1,9 @@
 import { z } from "zod";
 
-export const LIFETIME_PRODUCT_ID = "estudisc-lifetime-full" as const;
+export const LIFETIME_PRODUCT_ID = "ifsc-2027-1-full" as const;
+/** Owner decision (2026-10-16): one payment gives access until the end of the IFSC 2027/1 exam day (29/11/2026, Brasília). */
+export const PAID_ACCESS_ENDS_AT = "2026-11-30T03:00:00.000Z" as const;
+export function paidAccessEndsAt(): Date { return new Date(PAID_ACCESS_ENDS_AT); }
 export const LIFETIME_PRICE_CENTS = 5000 as const;
 export const LIFETIME_PRICE_BRL = 50 as const;
 export const LIFETIME_CURRENCY = "BRL" as const;

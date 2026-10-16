@@ -6,8 +6,7 @@ import {
   adminGrantEntitlementSchema,
   createInviteCodeSchema,
   LIFETIME_CURRENCY,
-  LIFETIME_PRODUCT_ID
-} from "@/features/payments/contracts";
+  LIFETIME_PRODUCT_ID, paidAccessEndsAt } from "@/features/payments/contracts";
 
 const adminMutationSchema = z.discriminatedUnion("kind", [
   z.object({
@@ -74,7 +73,7 @@ export async function POST(request: NextRequest) {
       source: "admin_grant",
       amountCents: 0,
       currency: LIFETIME_CURRENCY,
-      endsAt: null,
+      endsAt: paidAccessEndsAt(),
       metadata: {
         adminOwnerId: admin.ownerId,
         reason: parsed.data.reason
