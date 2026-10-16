@@ -5,7 +5,7 @@ Spec: `docs/superpowers/specs/2026-10-16-past-exams-answer-sheet-design.md`. Pla
 
 Assumptions: catalog keys are a transcription, and the IFSC definitive key prevails on any conflict. The private bank is absent on this machine, so its cross-check was skipped. Release dates follow the benchmark plan.
 
-NEXT ACTION: user confirmation is needed for push/PR. After deploy, run the authorized production import: `pnpm tsx scripts/build-past-exam-templates.ts "<actual authorization>"`, then POST each template to `/api/admin/assessment-templates` as ADMIN.
+Status: LIVE in production (PR #40, c04eeea; migrations 0021 and 0022 applied after a pg_dump; 11 templates imported). NEXT ACTION: cross-check the keys against the private official bank where it exists.
 ## POR-01..03 hand-written question pilot (2026-10-16)
 
 Scope: replace the 24 draft Questions for POR-01, POR-02 and POR-03 with individually authored, text-grounded MCQs. Keep all Question IDs, increment these Question versions and the three Lesson versions by one, keep draft status, and increment the complete Portuguese Pack version once. Record each original stimulus and its authorial license in source/STIMULI.json. Preserve the other 21 lessons and 168 Questions.

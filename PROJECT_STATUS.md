@@ -1,11 +1,11 @@
 # Estudisc — Current project status
-Past exams answer sheet (2026-10-16, branch `feat/past-exams-20261016`, local only: not pushed, deployed or published). [ADR 0066](docs/ADR/0066-answer-sheet-past-exams.md) adds `/past-exams` with the 11 IFSC Integrated editions from 2022.1 to 2026.2:
+Past exams answer sheet LIVE (2026-10-16): PR #40 merged as c04eeea and deployed to production (vecta-three.vercel.app, health 200). Before migrating, a pg_dump was taken: `.local/database-migration/private/pre-past-exams-20261016.dump` (59 tables). `pnpm db:migrate` then applied the pending 0021 (ADR 0061 entitlements/invite_codes, additive and empty) and 0022 (assessment_sheet_responses); production is now at 23/23. The 11 templates were imported with Admin Direct provenance; a read-only check confirmed 11 cards, 2026.1 and 2026.2 RESERVED without links, and no key leak. [ADR 0066](docs/ADR/0066-answer-sheet-past-exams.md) adds `/past-exams` with the 11 IFSC Integrated editions from 2022.1 to 2026.2:
 - digital A–E answer sheet next to the official PDF link, with server-side correction;
 - no learning evidence from these attempts;
 - 2026.1 and 2026.2 reserved until 2026-11-09 and 2026-11-22.
 
 Validation (2026-10-16): pnpm lint PASS; pnpm typecheck PASS; pnpm test 614 passed / 4 skipped (first run had one content-studio flake that passed alone and on a full rerun); pnpm build PASS (/past-exams route); full E2E 39 passed / 21 skipped in chromium and in mobile-chrome. The cross-check against the private official bank was skipped because the bank is absent on this machine. E2E ran on port 3211 through an uncommitted config override, because port 3210 was held by another local project.
-NEXT ACTION: user approval for push/PR, deploy and the production template import (PLANS.md).
+Remaining risk: answer keys are not yet cross-checked against the private official bank (absent on this machine); run `pnpm vitest run tests/unit/past-exam-catalog.test.ts` where the bank exists.
 
 Content release 2026-10-16 (night) LIVE, each step after its own pg_dump in `.local/database-migration/private/` (pre-depth, pre-mat16-circle, pre-simulados, pre-new-lessons):
 - Phase 2 questions for GH (49) and CIE (40) published; `--verify` shows every lesson at its latest version.
