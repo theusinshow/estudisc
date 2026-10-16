@@ -1,4 +1,5 @@
 import type { ServerEnv } from "@/lib/env";
+import { isGoogleAuthConfigured } from "./auth-readiness";
 import { parseCodeAccounts, type CodeAccount } from "./code-accounts";
 
 export class AccountConfigurationError extends Error {
@@ -13,4 +14,12 @@ export function getAccountConfig(env: ServerEnv): AccountConfig | null {
   if (!accounts) return null;
   if (!env.AUTH_SECRET || env.AUTH_SECRET.length < 32) throw new AccountConfigurationError("ESTUDISC_ACCOUNTS requires AUTH_SECRET with at least 32 characters.");
   return { accounts, secret: env.AUTH_SECRET };
+}
+
+/**
+ * Paid access (ADR 0061) opens Google sign-up while code accounts keep working: with accounts, Google OAuth and
+ * FEATURE_PAID_ACCESS all configured, a valid account cookie or a Google session is accepted.
+ */
+export function isHybridSignIn(env: ServerEnv) {
+  return env.FEATURE_PAID_ACCESS && isGoogleAuthConfigured(env) && getAccountConfig(env) !== null;
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AppShell } from "@/components/layout/app-shell";
 import { resolveAccessState } from "@/features/payments/access-guard";
 import { PaywallPanel } from "@/features/payments/paywall-panel";
+import { CONTENT_SUMMARY, formatCount } from "@/features/public-site/content-summary";
 
 type UpgradePageProps = Readonly<{
   searchParams?: Promise<{ status?: string; ref?: string; lesson?: string }>;
@@ -20,7 +21,7 @@ export default async function UpgradePage({ searchParams }: UpgradePageProps) {
           <p className="eyebrow">Acesso Completo Ativo</p>
           <h1 id="entitled-title">Seu acesso completo até a prova está liberado!</h1>
           <p>
-            Você tem acesso irrestrito a todas as 132 aulas, 1.144 questões, simulados e plano de estudos do Estudisc.
+            Você tem acesso irrestrito a todas as {formatCount(CONTENT_SUMMARY.lessons)} aulas, {formatCount(CONTENT_SUMMARY.lessonQuestions)} questões, simulados, provas anteriores e plano de estudos do Estudisc.
           </p>
           <div className="learning-controls">
             <Link href="/plan" className="primary-action">

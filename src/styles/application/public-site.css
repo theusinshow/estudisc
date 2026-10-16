@@ -1,0 +1,50 @@
+/* Public sales and legal pages (/conheca, /termos, /privacidade). Visitors open them without signing in. */
+.public-site { min-height: 100dvh; display: grid; grid-template-rows: auto 1fr auto; background: var(--estudisc-color-paper); color: var(--estudisc-color-ink); }
+.public-header { display: flex; align-items: center; justify-content: space-between; gap: var(--estudisc-spacing-6); min-height: 60px; padding: var(--estudisc-spacing-4) var(--estudisc-spacing-8); border-bottom: var(--estudisc-border-rule) solid var(--estudisc-color-ink); background: var(--estudisc-color-panel); }
+.public-header .secondary-action { display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--estudisc-spacing-8); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); font-weight: 700; text-decoration: none; box-shadow: var(--estudisc-shadow-structural); }
+.public-main.auth-surface { min-height: 0; align-items: start; justify-items: center; gap: var(--estudisc-spacing-12); padding: var(--estudisc-spacing-12) var(--estudisc-spacing-8); }
+.public-main > * { width: min(100%, 760px); }
+
+.public-hero { display: grid; gap: var(--estudisc-spacing-6); padding-top: var(--estudisc-spacing-6); }
+.public-hero h1, .public-legal h1 { margin: 0; font-family: var(--estudisc-typography-display-family), Arial, sans-serif; font-size: var(--estudisc-typography-display-sizes-sm); font-weight: var(--estudisc-typography-display-weight); line-height: 1.08; }
+.public-hero p { margin: 0; max-width: 60ch; font-size: var(--estudisc-typography-body-sizes-lg); }
+
+.public-section { display: grid; gap: var(--estudisc-spacing-6); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); background: var(--estudisc-color-panel); box-shadow: var(--estudisc-shadow-structural); padding: var(--estudisc-spacing-10); }
+.public-section h2, .public-legal h2 { margin: 0; font-size: var(--estudisc-typography-body-sizes-lg); }
+.public-section p { margin: 0; max-width: 64ch; }
+
+.public-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--estudisc-spacing-6); margin: 0; padding: 0; list-style: none; }
+.public-stats li { display: grid; gap: var(--estudisc-spacing-2); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); background: var(--estudisc-color-paper); padding: var(--estudisc-spacing-6); }
+.public-stats strong { font-family: var(--estudisc-typography-display-family), Arial, sans-serif; font-size: var(--estudisc-typography-display-sizes-sm); line-height: 1; }
+
+.public-steps, .public-list { display: grid; gap: var(--estudisc-spacing-4); margin: 0; padding-left: var(--estudisc-spacing-10); }
+.public-price { box-shadow: var(--estudisc-shadow-window); }
+.public-price-value { font-size: var(--estudisc-typography-body-sizes-lg); }
+.public-price-value strong { font-family: var(--estudisc-typography-display-family), Arial, sans-serif; font-size: var(--estudisc-typography-display-sizes-md); }
+.public-note { margin: 0; border-left: var(--estudisc-spacing-2) solid var(--estudisc-color-signal); padding-left: var(--estudisc-spacing-6); font-weight: 700; }
+
+.public-legal { display: grid; gap: var(--estudisc-spacing-6); }
+.public-legal p, .public-legal ul { margin: 0; max-width: 70ch; }
+.public-legal ul { display: grid; gap: var(--estudisc-spacing-3); padding-left: var(--estudisc-spacing-10); }
+.public-legal h2 { margin-top: var(--estudisc-spacing-6); }
+.public-seller { display: grid; gap: var(--estudisc-spacing-3); margin: 0; border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); background: var(--estudisc-color-panel); padding: var(--estudisc-spacing-6); }
+.public-seller div { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-4); }
+.public-seller dt { font-weight: 700; }
+.public-seller dd { margin: 0; overflow-wrap: anywhere; }
+
+.public-footer { display: grid; gap: var(--estudisc-spacing-4); padding: var(--estudisc-spacing-10) var(--estudisc-spacing-8); border-top: var(--estudisc-border-rule) solid var(--estudisc-color-ink); background: var(--estudisc-color-panel); font-size: var(--estudisc-typography-body-sizes-sm); }
+.public-footer nav { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-8); }
+.public-footer a, .public-legal a, .public-seller a { color: var(--estudisc-color-ink); text-underline-offset: 3px; }
+.public-footer a { min-height: 44px; display: inline-flex; align-items: center; }
+.public-footer p { margin: 0; max-width: 70ch; }
+
+@media (max-width: 767px) {
+  .public-main.auth-surface { padding: var(--estudisc-spacing-8) var(--estudisc-spacing-6); gap: var(--estudisc-spacing-8); }
+  .public-section { padding: var(--estudisc-spacing-8); }
+  .public-hero .auth-actions > * { flex: 1 1 100%; }
+}
+
+/* Sign-in page links to the public pages and, in hybrid sign-in, to the other method. */
+.auth-surface > .auth-legal { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--estudisc-spacing-8); padding-top: var(--estudisc-spacing-6); }
+.auth-legal a, .auth-alternate a { min-height: 44px; display: inline-flex; align-items: center; color: var(--estudisc-color-ink); text-underline-offset: 3px; }
+.auth-alternate { margin: 0; }

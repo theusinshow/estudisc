@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-16 — Public sales and legal pages
+
+- New public pages: `/conheca` (what the course offers, free sample lessons, price R$ 50 until 29/11/2026, 7-day withdrawal), `/termos` and `/privacidade` (LGPD, minors, third parties). Visitors without a session who open `/` see `/conheca`.
+- Seller data comes from `ESTUDISC_SELLER_*` environment variables. Hybrid sign-in lets Google buyers and existing code profiles coexist once paid access is on (ADR 0061 amendment).
+- The paywall and `/upgrade` show the current content counts (141 lessons, 1,220 questions).
+
 ## 2026-10-16 — Past exams answer sheet (ADR 0066)
 
 - New page `/past-exams` ("Provas anteriores") with the 11 IFSC Integrated editions from 2022.1 to 2026.2. The student opens the official booklet on the IFSC site and answers on a digital A–E answer sheet:

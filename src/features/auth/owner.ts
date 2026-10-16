@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import { getServerEnv } from "@/lib/env";
 import { isAllowedGoogleEmail, isGoogleAuthConfigured, isLegacyAllowlistedGoogleEmail } from "./auth-readiness";
-import { getAccountConfig } from "./account-mode";
+import { getAccountConfig, isHybridSignIn } from "./account-mode";
 import { readAccountSessionFromCookies } from "./code-accounts";
 
 export class AccessDeniedError extends Error {
@@ -35,8 +35,8 @@ export async function getOwnerProfile(): Promise<OwnerProfile> {
   if (accountConfig) {
     const { cookies } = await import("next/headers");
     const account = readAccountSessionFromCookies(await cookies(), accountConfig.accounts, accountConfig.secret);
-    if (!account) throw new AccessDeniedError();
-    return { ownerId: account.id, role: account.role, name: account.name, allowlisted: true };
+    if (account) return { ownerId: account.id, role: account.role, name: account.name, allowlisted: true };
+    if (!isHybridSignIn(env)) throw new AccessDeniedError();
   }
   if (!isGoogleAuthConfigured(env)) {
     if (process.env.NODE_ENV === "production") throw new AccessDeniedError();

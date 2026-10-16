@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FREE_SAMPLE_LESSONS, LIFETIME_PRICE_BRL } from "./contracts";
+import { CONTENT_SUMMARY, formatCount } from "@/features/public-site/content-summary";
 
 export type PaywallPanelProps = Readonly<{
   lockedLessonTitle?: string;
@@ -153,7 +154,7 @@ export function PaywallPanel({
       <h1 id="paywall-title">
         {lockedLessonTitle
           ? `Desbloqueie "${lockedLessonTitle}" e todo o curso IFSC`
-          : `Desbloqueie todas as 132 aulas e 1.144 questões por R$ ${LIFETIME_PRICE_BRL}`}
+          : `Desbloqueie todas as ${formatCount(CONTENT_SUMMARY.lessons)} aulas e ${formatCount(CONTENT_SUMMARY.lessonQuestions)} questões por R$ ${LIFETIME_PRICE_BRL}`}
       </h1>
       <p>
         Pagamento único de <strong>R$ {LIFETIME_PRICE_BRL},00</strong> via <strong>Pix ou cartão no Mercado Pago</strong>.
