@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-15 — Correction versions and phase 1 lesson cleanup (ADR 0062)
+
+- `caderno.lesson.v2` accepts optional `corrections`: hash-bound replace/remove of listed published blocks, on top of the published (enriched) version. Block type and Concepts are kept, text uses the existing renderers, and figures may change only their text, never the image. Without `corrections`, imports stay append-only.
+- `tools/estudisc-content-studio/correction-batch.ts` turns a source cleanup into correction versions. It skips any lesson whose published block no longer matches the pre-cleanup source.
+- Phase 1 cleanup in the four subject packs: internal editorial text removed (R1 = 0), the 24 Portuguese "INCORRECT" blocks rewritten as ❌ myth / ✅ why it fails with real examples (R2 = 0), misconceptions marked false with a specific correction in Science (160) and History-Geography (196), and the mathematics answer key balanced (R5 = 0, choice texts and correct answers unchanged). Validator violations went from 227 to 100.
+- Enrichment recipes bind to frozen pre-cleanup sources in `packs/history/pre-phase1-20261015/`.
+
 ## 2026-10-15 — Pack content-quality gate (phase 0)
 
 - `pnpm validate:packs` (`scripts/validate-packs.mjs`, no new dependencies, ~0.2 s) checks every `caderno.track.v2` pack in `packs/drafts` and `packs/releases`. R1: internal editorial text shown to students. R2: an English enum alone on a line. R3: the correct choice is the longest in more than 35% of questions. R4 (warn): a distractor with an absolute term in more than 20%. R5: answer letters outside 12–28%. R6: `answer.choiceId` differs from the correct choice. R7: lesson or question ids reused by another pack. R8: an identical stem without stimulus.
