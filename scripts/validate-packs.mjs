@@ -71,6 +71,28 @@ export function validatePack(pack, config) {
     stems.set(key, [...(stems.get(key) ?? []), question.id]);
   }
   for (const [stem, ids] of stems) if (ids.length > 1) for (const id of ids) out.push({ rule: "R8", id, detail: `same stem as ${ids.filter(other => other !== id).join(", ")}: “${stem.slice(0, 70)}”` });
+  // Templating guards: generated questions that satisfy R3–R5 by reusing boilerplate are still guessable.
+  const normalize = value => text(value).toLowerCase().replace(/\s+/g, " ").trim();
+  if (rules.R9) {
+    const uses = new Map();
+    for (const question of choice) for (const entry of new Set(question.choices.map(option => normalize(option.content)))) if (entry) uses.set(entry, [...(uses.get(entry) ?? []), question.id]);
+    for (const [entry, ids] of uses) if (ids.length > rules.R9.maxQuestions) out.push({ rule: "R9", id: entry.slice(0, 60), value: ids.length, detail: `choice used in ${ids.length} questions (limit ${rules.R9.maxQuestions}), e.g. ${ids.slice(0, 3).join(", ")}` });
+  }
+  if (rules.R10 && choice.length) {
+    const openings = new Map();
+    for (const question of choice) { const key = normalize(question.stem).split(" ").slice(0, rules.R10.words).join(" "); if (key) openings.set(key, (openings.get(key) ?? 0) + 1); }
+    const limit = Math.max(rules.R10.minCount, Math.ceil(choice.length * rules.R10.maxShare));
+    for (const [opening, count] of openings) if (count > limit) out.push({ rule: "R10", id: opening, value: count, detail: `${count} stems open with “${opening}” (limit ${limit})` });
+  }
+  if (rules.R11) {
+    const groups = new Map();
+    for (const question of choice) { const key = question.choices.map(option => normalize(option.content)).sort().join("|"); groups.set(key, [...(groups.get(key) ?? []), question]); }
+    for (const members of groups.values()) {
+      if (members.length < rules.R11.minGroup) continue;
+      const answers = new Set(members.map(question => normalize(question.choices.find(option => option.correct)?.content)));
+      if (answers.size === 1) out.push({ rule: "R11", id: members[0].id, value: members.length, detail: `${members.length} questions share the same choices and the same correct one: “${[...answers][0].slice(0, 60)}”` });
+    }
+  }
   return out;
 }
 

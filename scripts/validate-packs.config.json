@@ -61,6 +61,26 @@
       "severity": "error",
       "title": "Identical stem without stimulus",
       "allow": []
+    },
+    "R9": {
+      "severity": "error",
+      "title": "Boilerplate choice reused across questions",
+      "maxQuestions": 3,
+      "allow": []
+    },
+    "R10": {
+      "severity": "error",
+      "title": "Templated stem openings",
+      "words": 4,
+      "maxShare": 0.08,
+      "minCount": 6,
+      "allow": []
+    },
+    "R11": {
+      "severity": "error",
+      "title": "Predictable answer across identical choice sets",
+      "minGroup": 5,
+      "allow": []
     }
   }
 }
