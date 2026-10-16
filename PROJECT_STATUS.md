@@ -6,6 +6,13 @@ Validation: offline frozen-lockfile install, lint, typecheck and content-QA pass
 
 New lessons in a published Track (2026-10-16, branch from main): `caderno.lesson-new.v1` import + authoring converter, [ADR 0064](docs/ADR/0064-new-lesson-in-published-track.md). Unit and PGlite integration tests cover import, idempotence, Admin Direct publication and study-flow order. Nothing was imported or published. NEXT ACTION: PR review, then convert the nine authored lessons (MAT-19..22, CIE-41, POR-25/26, GH-50/51) against fresh production contexts, preview, import as drafts, then Admin Direct.
 
+IFSC simulados (2026-10-16), accepted locally, not deployed. [ADR 0065](docs/ADR/0065-standalone-assessment-questions.md) adds:
+- standalone assessment Questions: ADMIN import of drafts and releases, plus Admin Direct publication with audit events, never bound to a lesson;
+- an optional `scopeTrackIds` on assessment templates, for cross-subject FULL_SIMULATION templates;
+- authoring converters, a simulado template builder and an offline prepare CLI.
+
+Tests prove a standalone Question is never offered in practice, review or the planner. NEXT ACTION: convert MAT-SIM.json once it is valid, then back up, import and publish the sets and import templates 1–3 in production (needs user authorization).
+
 Phase 1 corrections RELEASED (2026-10-16): pre-release pg_dump 18.6 backup (.local/database-migration/private/pre-phase1-corrections-20261015.dump, 10.4 MB, 59 tables), 118 lesson correction versions imported and published via Admin Direct (118 audit events, actor account-matheus); read-only check: all 118 at the new latest version, 0 visible internal-text/INCORRECT leaks. Import transfer fixed (PRs #26/#28). Question-binding contract merged (PR #27, ADR 0063). Paid access from PR #29 (Antigravity, session closed) adopted; access changed to until the exam. NEXT ACTION: Mathematics Question versions through ADR 0063, then integrate the Codex phase 2/3 rewrites, then the mock exam.
 
 Phase 0+1 and correction versions (2026-10-15) accepted locally on content/phase1-integrated-20261015: pack validator in CI, cleaned packs, ADR 0062 correction contract, and 118 correction versions generated and checked read-only against production with the real import policy (14 lessons have only Question changes, which wait for the Question/lesson-binding contract). NEXT ACTION: PR/deploy, then backup, then import and Admin Direct publication of the 118 corrections.

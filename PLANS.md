@@ -20,6 +20,10 @@ NEXT ACTION: keep this candidate as a draft; import and publication were not par
 LIVE: the second Portuguese ten-lesson increment (POR-01/06/08/11/15/18/20/21/22/24 v3), exact originals/80 refs preserved through actual Admin Direct. Both complete backups and publication/history checks passed; final old-Question layout acceptance follows PR23. POR-14 remains excluded from an unresolved local/current-source binding mismatch. User explicitly confirmed Terra for the scored-enrichment contract. NEXT ACTION: eight required checks → protected PR23 merge/READY alias → published POR-04/15/24 and remaining language readers → current Terra handoff. No independent editorial approval is pending.
 
 
+## IFSC simulados with standalone Questions — ADR 0065 (2026-10-16, Claude)
+
+Goal: full IFSC simulados (28 Questions, 7 per area, 240 min) built from new Questions that no lesson contains. Assumptions: subject content lives in per-subject Tracks; templates use the combined `ifsc-2027` Track plus `scopeTrackIds`. Acceptance: ADMIN-only import of standalone drafts and release registration, Admin Direct publication with audit events, no exposure in practice/review/planner, FULL_SIMULATION composition refusals, student start → answer → finish → per-area result. Done locally: contracts, repository, publication method, admin API, template scope union, converters/builder/prepare CLI, unit + PGlite tests.
+NEXT ACTION: when MAT-SIM.json is valid JSON, run `simulado-prepare.ts`, confirm live Track stable ids, then (with user authorization) take a backup, import and publish the standalone sets, and import templates 1–3.
 ## New lessons in a published Track — 2026-10-16 (Claude)
 
 Goal: import the nine new authored lessons as drafts in existing Track versions, then publish them through Admin Direct. Contract: `caderno.lesson-new.v1` ([ADR 0064](docs/ADR/0064-new-lesson-in-published-track.md)).

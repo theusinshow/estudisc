@@ -16,12 +16,13 @@ type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
 export class AssessmentStateError extends Error {constructor(){super("Assessment unavailable or closed");}}
 export class AssessmentRepository{
   constructor(private readonly db:Database=getDatabase()){}
-  private async assertTrackScope(trackId:string,conceptIds:readonly string[]){const members=await this.db.select({stableId:concepts.stableId}).from(trackConceptSettings).innerJoin(tracks,eq(tracks.id,trackConceptSettings.trackId)).innerJoin(concepts,eq(concepts.id,trackConceptSettings.conceptId)).where(eq(tracks.stableId,trackId));const ids=new Set(members.map(row=>row.stableId));if(conceptIds.some(id=>!ids.has(id)))throw new AssessmentStateError();}
+  // ADR 0065: a cross-subject simulado may list scope Tracks; each must exist and every Concept must belong to one of them.
+  private async assertTrackScope(trackId:string,conceptIds:readonly string[],scopeTrackIds:readonly string[]=[]){const trackIds=[...new Set([trackId,...scopeTrackIds])];const known=await this.db.select({stableId:tracks.stableId}).from(tracks).where(inArray(tracks.stableId,trackIds));if(trackIds.some(id=>!known.some(row=>row.stableId===id)))throw new AssessmentStateError();const members=await this.db.select({stableId:concepts.stableId}).from(trackConceptSettings).innerJoin(tracks,eq(tracks.id,trackConceptSettings.trackId)).innerJoin(concepts,eq(concepts.id,trackConceptSettings.conceptId)).where(inArray(tracks.stableId,trackIds));const ids=new Set(members.map(row=>row.stableId));if(conceptIds.some(id=>!ids.has(id)))throw new AssessmentStateError();}
   async importTemplate(input:unknown){
     const template=assessmentTemplateSchema.parse(input);const questions=[];
     for(const ref of template.items){const item=await new DrizzleQuestionRepository(this.db).getVersion(ref.id,ref.version);if(!item)throw new AssessmentStateError();questions.push(item.question);}
     validateAssessmentComposition(template,questions);
-    await this.assertTrackScope(template.trackId,questions.flatMap(question=>question.conceptIds));
+    await this.assertTrackScope(template.trackId,questions.flatMap(question=>question.conceptIds),template.scopeTrackIds);
     const contentHash=hashCanonicalJson(template);
     const [created]=await this.db.insert(assessmentTemplates).values({stableId:template.id,version:template.version,kind:template.kind,status:template.status,contentHash,definition:template}).onConflictDoNothing().returning();
     if(created)return created;
@@ -49,7 +50,7 @@ export class AssessmentRepository{
         await tx.insert(questionExposures).values({ownerId,questionId:identity.questionId,firstSeenAt:now,lastSeenAt:now,timesSeen:1,lastContext:"assessment"}).onConflictDoUpdate({target:[questionExposures.ownerId,questionExposures.questionId],set:{lastSeenAt:now,timesSeen:sql`${questionExposures.timesSeen}+1`,lastContext:"assessment"}});
       }
       validateAssessmentComposition(template,frozen.map(item=>item.question),true);
-      await new AssessmentRepository(tx).assertTrackScope(template.trackId,frozen.flatMap(item=>item.question.conceptIds));
+      await new AssessmentRepository(tx).assertTrackScope(template.trackId,frozen.flatMap(item=>item.question.conceptIds),template.scopeTrackIds);
       const mode=template.kind==="FULL_SIMULATION"||template.kind==="OFFICIAL_EXAM"?"EXAM":"ASSESSMENT";
       const snapshot=assessmentSnapshotSchema.parse({kind:template.kind,mode,questions:frozen,durationMinutes:template.durationMinutes,policyVersion:ASSESSMENT_POLICY,masteryPolicy:MASTERY_V2,reviewPolicy:REVIEW_V2});
       await tx.insert(assessmentInstances).values({id,ownerId,templateId,startKey,mode,snapshot,startedAt:now,deadlineAt:new Date(now.getTime()+template.durationMinutes*60000)});return {id};
