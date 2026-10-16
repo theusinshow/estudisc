@@ -40,6 +40,9 @@ test("support explains a question report, FAQ answers open, and crawler files li
   expect(robots).toContain("Disallow: /");
   const sitemap = await (await request.get("/sitemap.xml")).text();
   for (const path of ["/conheca", "/termos", "/privacidade", "/suporte", "/pais-e-escolas"]) expect(sitemap).toContain(path);
+  // Without APP_URL, absolute links follow the host that served the request, never a hard-coded localhost.
+  const origin = new URL(page.url()).origin;
+  expect(sitemap).toContain(`<loc>${origin}/conheca</loc>`);
   const image = await request.get("/opengraph-image");
   expect(image.headers()["content-type"]).toContain("image/png");
 

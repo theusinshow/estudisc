@@ -9,9 +9,9 @@ export const dynamic="force-dynamic";
 const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-archivo", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
-export function generateMetadata(): Metadata {
+export async function generateMetadata(): Promise<Metadata> {
   return {
-    metadataBase: new URL(siteUrl()),
+    metadataBase: new URL(await siteUrl()),
     title: "Estudisc",
     description: "Preparação para a prova do IFSC 2027 com aulas, questões explicadas, simulados e provas anteriores.",
     applicationName: "Estudisc",
