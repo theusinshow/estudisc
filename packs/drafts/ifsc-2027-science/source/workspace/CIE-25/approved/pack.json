@@ -143,11 +143,29 @@
         "variant": "IFSC_STRATEGY",
         "title": "Como isso costuma aparecer em prova",
         "items": [
-          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
-          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
-          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de mendel e a 1ª lei.",
-          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+          "Cada gameta recebe apenas um alelo do par: um indivíduo Aa produz gametas A e a em proporções iguais no modelo simples.",
+          "Em Aa × Aa, a proporção genotípica esperada é 1 AA : 2 Aa : 1 aa; com dominância completa, a fenotípica é 3 dominante : 1 recessivo.",
+          "As proporções indicam probabilidades esperadas em muitos descendentes; não garantem que uma família pequena terá exatamente esses números."
         ]
+      },
+      {
+        "id": "CIE-25-B15",
+        "type": "EXPLANATION",
+        "title": "Quadro de Punnett e proporções mendelianas",
+        "content": "No cruzamento entre dois heterozigotos (Aa × Aa), cada genitor pode formar gametas A ou a. Combine um gameta de cada genitor no quadro para prever os genótipos.",
+        "items": [
+          "Aa × Aa → AA, Aa, Aa, aa: proporção genotípica 1 : 2 : 1.",
+          "A é o alelo dominante e a é o recessivo neste exemplo; AA e Aa mostram o fenótipo dominante, enquanto aa mostra o recessivo.",
+          "Com dominância completa, a proporção fenotípica esperada é 3 : 1. Não há unidade de medida: são proporções de chance, não contagens garantidas."
+        ]
+      },
+      {
+        "id": "CIE-25-B16",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo de cálculo passo a passo",
+        "prompt": "Em Aa × Aa, considerando dominância completa, qual proporção genotípica e qual proporção fenotípica são esperadas?",
+        "answer": "Genótipos: 1 AA : 2 Aa : 1 aa. Fenótipos: 3 dominantes : 1 recessivo.",
+        "reasoning": "1) Cada genitor Aa forma gametas A e a.\n\n2) Combine-os: A×A = AA; A×a = Aa; a×A = Aa; a×a = aa.\n\n3) Conte os quatro resultados: 1 AA, 2 Aa e 1 aa. Como AA e Aa têm fenótipo dominante, três dos quatro resultados são dominantes e um é recessivo.\n\nConferência: 1 + 2 + 1 = 4 combinações; 3 combinações dominantes + 1 recessiva também totalizam 4. A proporção é uma previsão, não uma garantia para quatro filhos."
       },
       {
         "id": "CIE-25-B11",

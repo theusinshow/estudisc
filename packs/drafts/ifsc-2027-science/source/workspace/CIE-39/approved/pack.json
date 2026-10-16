@@ -142,10 +142,20 @@
         "variant": "IFSC_STRATEGY",
         "title": "Como isso costuma aparecer em prova",
         "items": [
-          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
-          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
-          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de escalas e ordem de grandeza astronômica.",
-          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+          "Ano-luz mede distância, não tempo: é a distância que a luz percorre em um ano.",
+          "1 UA ≈ 150 milhões de km; 1 ano-luz ≈ 9,46 trilhões de km. São aproximações úteis, não números exatos para qualquer cálculo.",
+          "Ao converter, acompanhe as unidades e multiplique pelo fator correspondente; não compare apenas os números antes de escrever a mesma unidade."
+        ]
+      },
+      {
+        "id": "CIE-39-B15",
+        "type": "EXPLANATION",
+        "title": "Converter entre escalas astronômicas",
+        "content": "A unidade astronômica (UA) é aproximadamente a distância média entre a Terra e o Sol: 150 milhões de quilômetros. O ano-luz é uma unidade de distância, aproximadamente 9,46 trilhões de quilômetros. Para converter para quilômetros, multiplique o número de unidades pelo valor aproximado de uma unidade.",
+        "items": [
+          "2 UA ≈ 2 × 150 milhões de km = 300 milhões de km.",
+          "4 anos-luz ≈ 4 × 9,46 trilhões de km = 37,84 trilhões de km, ou 3,784 × 10^13 km.",
+          "Use UA para distâncias dentro de sistemas planetários e anos-luz para distâncias entre estrelas. Ao usar valores aproximados, arredonde o resultado de modo compatível."
         ]
       },
       {

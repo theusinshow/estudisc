@@ -141,11 +141,29 @@
         "variant": "IFSC_STRATEGY",
         "title": "Como isso costuma aparecer em prova",
         "items": [
-          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
-          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
-          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de transformações e reações químicas.",
-          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+          "Em sistema fechado, a massa total dos reagentes é igual à massa total dos produtos; em sistema aberto, gases podem entrar ou sair da medição.",
+          "Ao balancear uma equação, altere os coeficientes na frente das fórmulas, nunca os índices que formam cada substância.",
+          "Confira cada elemento nos dois lados: conservar o número de átomos não significa que as moléculas permaneçam iguais."
         ]
+      },
+      {
+        "id": "CIE-14-B15",
+        "type": "EXPLANATION",
+        "title": "Conservação da massa e balanceamento",
+        "content": "Na transformação química, os átomos dos reagentes se reorganizam para formar produtos. Em um sistema fechado, a massa total se conserva.",
+        "items": [
+          "Massa total dos reagentes = massa total dos produtos (sistema fechado).",
+          "Ao balancear, escolha coeficientes para que o número de átomos de cada elemento seja igual nos dois lados.",
+          "Exemplo de forma: 2 H2 + O2 → 2 H2O. Os números pequenos nas fórmulas são índices e não devem ser alterados."
+        ]
+      },
+      {
+        "id": "CIE-14-B16",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo de cálculo passo a passo",
+        "prompt": "Balanceie a formação de água: H2 + O2 → H2O. Depois confira a conservação dos átomos.",
+        "answer": "2 H2 + O2 → 2 H2O.",
+        "reasoning": "1) Conte antes de ajustar: à esquerda há 2 H e 2 O; à direita há 2 H e 1 O.\n\n2) Coloque 2 antes de H2O para igualar o oxigênio: H2 + O2 → 2 H2O. Agora há 4 H à direita.\n\n3) Coloque 2 antes de H2: 2 H2 + O2 → 2 H2O.\n\nConferência: à esquerda há 4 átomos de H e 2 de O; à direita, 2 × H2O = 4 H e 2 O. Cada elemento conserva sua quantidade."
       },
       {
         "id": "CIE-14-B11",
