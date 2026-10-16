@@ -20,7 +20,7 @@ export default function ConhecaPage() {
       <section className="public-hero">
         <p className="eyebrow">IFSC 2027/1 · ensino técnico integrado</p>
         <h1 id="conheca-title">Estude para a prova do IFSC com um plano que diz o que fazer hoje</h1>
-        <p>Aulas curtas, questões com explicação de cada alternativa, simulados no formato da prova e as provas anteriores do IFSC, tudo em um só lugar e pensado para estudar pelo celular.</p>
+        <p>Aulas curtas, questões com solução comentada, simulados no formato da prova e as provas anteriores do IFSC, tudo em um só lugar e pensado para estudar pelo celular.</p>
         <div className="auth-actions">
           {salesOpen ? (
             <>
@@ -38,7 +38,7 @@ export default function ConhecaPage() {
         <h2 id="conteudo-title">O que você encontra</h2>
         <ul className="public-stats">
           <li><strong>{formatCount(c.lessons)}</strong><span>aulas cobrindo os conteúdos do edital</span></li>
-          <li><strong>{formatCount(c.lessonQuestions)}</strong><span>questões com explicação de cada alternativa</span></li>
+          <li><strong>{formatCount(c.lessonQuestions)}</strong><span>questões com dica e solução comentada</span></li>
           <li><strong>{c.simulationTemplates}</strong><span>simulados completos no formato da prova</span></li>
           <li><strong>{c.pastExams}</strong><span>provas anteriores do IFSC com correção pelo gabarito oficial</span></li>
         </ul>
@@ -49,7 +49,7 @@ export default function ConhecaPage() {
         <h2 id="como-title">Como funciona</h2>
         <ol className="public-steps">
           <li><strong>Continuar estudando.</strong> Um botão abre a próxima aula. Se você parar no meio, ele volta de onde parou.</li>
-          <li><strong>Praticar com explicação.</strong> Cada erro mostra por que a alternativa está errada e qual ideia revisar.</li>
+          <li><strong>Praticar com explicação.</strong> Errou? Tente de novo, peça uma dica ou veja a solução comentada.</li>
           <li><strong>Revisar no tempo certo.</strong> O que você erra volta para revisão nos dias seguintes.</li>
           <li><strong>Treinar como na prova.</strong> Simulados no formato da prova e provas anteriores mostram como você está.</li>
         </ol>

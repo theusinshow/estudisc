@@ -26,7 +26,7 @@ export default function PaisEEscolasPage() {
         <h2 id="o-que-title">O que o estudante recebe</h2>
         <ul className="public-list">
           <li><strong>{formatCount(c.lessons)} aulas</strong> de {c.subjects.join(", ")}, organizadas pelos conteúdos do edital.</li>
-          <li><strong>{formatCount(c.lessonQuestions)} questões</strong> em que cada alternativa errada mostra o erro de raciocínio que leva a ela.</li>
+          <li><strong>{formatCount(c.lessonQuestions)} questões</strong> com dicas e solução comentada; as que o estudante erra voltam na revisão.</li>
           <li><strong>Revisão automática:</strong> o que o estudante erra volta nos dias seguintes.</li>
           <li><strong>{c.simulationTemplates} simulados</strong> no formato da prova e <strong>{c.pastExams} provas anteriores</strong> do IFSC, corrigidas pelo gabarito oficial.</li>
           <li><strong>Um botão para continuar:</strong> o estudante abre a próxima aula sem precisar decidir por onde ir, e retoma de onde parou.</li>
