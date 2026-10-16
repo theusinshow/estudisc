@@ -140,11 +140,29 @@
       "variant": "IFSC_STRATEGY",
       "title": "Como isso costuma aparecer em prova",
       "items": [
-        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
-        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
-        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de interações alélicas, genética aplicada e biotecnologia.",
-        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        "Na dominância incompleta, o heterozigoto pode ter fenótipo intermediário; na codominância, as duas manifestações são detectáveis.",
+        "No cruzamento entre dois heterozigotos, a proporção genotípica pode ser 1 : 2 : 1; com três fenótipos distinguíveis, a proporção fenotípica também é 1 : 2 : 1.",
+        "A proporção fenotípica 3 : 1 corresponde ao modelo de dominância completa em Aa × Aa; não a aplique automaticamente à codominância ou à dominância incompleta."
       ]
+    },
+    {
+      "id": "CIE-26-B15",
+      "type": "EXPLANATION",
+      "title": "Quadro de Punnett: genótipos e fenótipos",
+      "content": "No cruzamento entre dois heterozigotos, cada um fornece um dos alelos ao descendente. O quadro de Punnett organiza as combinações possíveis.",
+      "items": [
+        "Exemplo de dominância incompleta: C1 e C2 são alelos distintos do mesmo gene; C1C2 × C1C2 → C1C1, C1C2, C1C2, C2C2.",
+        "A proporção genotípica é 1 : 2 : 1. Se os três genótipos tiverem fenótipos distintos, a proporção fenotípica também é 1 : 2 : 1.",
+        "Na dominância completa, o heterozigoto tem o fenótipo dominante e a proporção fenotípica passa a 3 : 1. São proporções sem unidade e probabilísticas."
+      ]
+    },
+    {
+      "id": "CIE-26-B16",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo de cálculo passo a passo",
+      "prompt": "Em uma planta com dominância incompleta, C1C1 é vermelha, C1C2 é rosa e C2C2 é branca. Qual proporção é esperada no cruzamento C1C2 × C1C2?",
+      "answer": "1 vermelha : 2 rosas : 1 branca; a proporção genotípica também é 1 C1C1 : 2 C1C2 : 1 C2C2.",
+      "reasoning": "1) Cada planta C1C2 forma gametas C1 e C2.\n\n2) Combine os gametas: C1C1, C1C2, C2C1 e C2C2.\n\n3) Como C1C2 e C2C1 representam o mesmo genótipo heterozigoto, conte 1 C1C1, 2 C1C2 e 1 C2C2. Traduza para os fenótipos: 1 vermelha, 2 rosas e 1 branca.\n\nConferência: as quatro combinações somam 1 + 2 + 1; cada genótipo corresponde ao fenótipo informado. Se fosse dominância completa, os dois heterozigotos teriam o fenótipo dominante e a proporção fenotípica seria 3 : 1."
     },
     {
       "id": "CIE-26-B11",

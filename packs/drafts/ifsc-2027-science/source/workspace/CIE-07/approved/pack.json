@@ -142,11 +142,29 @@
         "variant": "IFSC_STRATEGY",
         "title": "Como isso costuma aparecer em prova",
         "items": [
-          "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
-          "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
-          "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de consumo e uso consciente de energia elétrica.",
-          "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+          "Converta watts para quilowatts dividindo por 1.000 antes de multiplicar pelo tempo em horas para obter kWh.",
+          "kW é unidade de potência; kWh é unidade de energia. O número de horas deve corresponder ao tempo efetivo de funcionamento.",
+          "O custo estimado é consumo em kWh × tarifa em R$/kWh; a conta real pode incluir impostos, bandeiras e cobranças fixas."
         ]
+      },
+      {
+        "id": "CIE-07-B15",
+        "type": "EXPLANATION",
+        "title": "Energia elétrica consumida e custo",
+        "content": "O consumo de energia depende da potência do aparelho e do tempo ligado. Para chegar ao consumo usado na conta de luz, trabalhe em quilowatts e horas.",
+        "items": [
+          "E = P · t",
+          "E é a energia; P é a potência e t é o tempo. Se P estiver em kW e t em h, E sai em kWh. Se P estiver em W e t em h, E sai em Wh.",
+          "1 kW = 1.000 W e 1 kWh = 1.000 Wh. Custo estimado = E (kWh) × tarifa (R$/kWh)."
+        ]
+      },
+      {
+        "id": "CIE-07-B16",
+        "type": "WORKED_EXAMPLE",
+        "title": "Exemplo de cálculo passo a passo",
+        "prompt": "Um aquecedor de 1.500 W fica ligado por 4 h. Se a tarifa simplificada for R$ 0,80 por kWh, qual é o consumo e o custo estimado?",
+        "answer": "O consumo é 6 kWh e o custo estimado é R$ 4,80.",
+        "reasoning": "1) Converta a potência: 1.500 W ÷ 1.000 = 1,5 kW.\n\n2) Calcule a energia: E = 1,5 kW × 4 h = 6 kWh.\n\n3) Estime o custo: 6 kWh × R$ 0,80/kWh = R$ 4,80.\n\nConferência: em Wh, 1.500 W × 4 h = 6.000 Wh; como 1.000 Wh = 1 kWh, isso equivale a 6 kWh."
       },
       {
         "id": "CIE-07-B11",

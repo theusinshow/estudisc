@@ -4,7 +4,7 @@ import { resolve } from "node:path";
 import type { TrackPackV2 } from "../../../src/features/import/application/track-pack-v2-schema";
 import { validateTrackPack } from "../../../src/features/import/application/track-pack-validation";
 import { hashCanonicalJson } from "../../../src/lib/canonical-json";
-import { PORTUGUESE_SOURCE, portuguesePackSchema } from "../portuguese";
+import { PORTUGUESE_SOURCE, portuguesePackSchema, splitBlockIds } from "../portuguese";
 import { readJson, sha256 } from "../mapper";
 
 const normalizeSearch = (text: string) => text.normalize("NFD").replace(/\p{M}/gu, "").toLocaleLowerCase("pt-BR");
@@ -22,7 +22,7 @@ export function auditPortuguesePack(pack: TrackPackV2) {
   const lessons = pack.track.modules.flatMap(module => module.lessons);
   let blocks = 0;
   for (const lesson of lessons) {
-    const source = portuguesePackSchema.parse(readJson(`${PORTUGUESE_SOURCE}/workspace/${lesson.id}/approved/pack.json`));
+    const source = portuguesePackSchema.parse(splitBlockIds(readJson(`${PORTUGUESE_SOURCE}/workspace/${lesson.id}/approved/pack.json`) as Parameters<typeof splitBlockIds>[0]).raw);
     assert.equal(lesson.title, source.lesson.title);
     assert.equal(lesson.estimatedMinutes, source.lesson.estimatedMinutes);
     assert.equal(lesson.status, "draft");

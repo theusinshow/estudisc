@@ -24,11 +24,13 @@
     ],
     "blocks": [
       {
+        "id": "POR-05-B01",
         "type": "HOOK",
         "title": "Leia como a prova lê",
         "content": "Em “Não, espere.” a vírgula separa a negação do comando. Em “Não espere.” a orientação muda."
       },
       {
+        "id": "POR-05-B02",
         "type": "LEARNING_GOALS",
         "items": [
           "Reconhecer convenções ortográficas e usar pontuação como estrutura e recurso de sentido.",
@@ -37,6 +39,7 @@
         ]
       },
       {
+        "id": "POR-05-B03",
         "type": "EXPLANATION",
         "title": "Ideias essenciais — parte 1",
         "paragraphs": [
@@ -46,6 +49,7 @@
         ]
       },
       {
+        "id": "POR-05-B12",
         "type": "EXPLANATION",
         "title": "Ideias essenciais — parte 2",
         "paragraphs": [
@@ -55,6 +59,22 @@
         ]
       },
       {
+        "id": "POR-05-B04",
+        "type": "EXPLANATION",
+        "title": "Casos que caem",
+        "paragraphs": [
+          "✅ A lâmpada do corredor queimou.\n❌ A lampada do corredor queimou.\nRegra: “Lâmpada” é proparoxítona; todas as proparoxítonas são acentuadas.",
+          "✅ O ônibus passa perto da escola.\n❌ O onibus passa perto da escola.\nRegra: “Ônibus” é proparoxítona e recebe acento.",
+          "✅ Peguei o lápis na mochila.\n❌ Peguei o lapis na mochila.\nRegra: “Lápis” é paroxítona terminada em -is e recebe acento.",
+          "✅ Coloquei açúcar no café.\n❌ Coloquei açucar no café.\nRegra: “Açúcar” é paroxítona terminada em -r e recebe acento.",
+          "✅ Vou também ao mercado.\n❌ Vou tambem ao mercado.\nRegra: “Também” é oxítona terminada em -em e recebe acento.",
+          "✅ A turma visitou o museu.\n❌ A turma visitou, o museu.\nRegra: não se separa o verbo de seu complemento com vírgula.",
+          "✅ Ana, feche a janela, por favor.\n❌ Ana feche a janela, por favor.\nRegra: o vocativo “Ana” deve ser separado por vírgula.",
+          "✅ Comprei arroz, feijão e legumes.\n❌ Comprei arroz feijão e legumes.\nRegra: os itens de uma enumeração são separados por vírgulas; antes do “e” final, em geral, não se usa vírgula."
+        ]
+      },
+      {
+        "id": "POR-05-B05",
         "type": "KEY_TERMS",
         "items": [
           {
@@ -84,6 +104,7 @@
         ]
       },
       {
+        "id": "POR-05-B06",
         "type": "MISCONCEPTION_CHECK",
         "items": [
           {
@@ -109,11 +130,13 @@
         ]
       },
       {
+        "id": "POR-05-B07",
         "type": "WORKED_EXAMPLE",
         "stimulus": "Em “Não, espere.” a vírgula separa a negação do comando. Em “Não espere.” a orientação muda.",
         "analysis": "A pontuação altera a estrutura e o comando comunicado; não é mero enfeite."
       },
       {
+        "id": "POR-05-B08",
         "type": "ACTIVE_LEARNING",
         "title": "Atividade de aplicação",
         "steps": [
@@ -124,10 +147,12 @@
         "evidence": "Resposta curta ou classificação justificada."
       },
       {
+        "id": "POR-05-B09",
         "type": "IFSC_STRATEGY",
         "content": "Pergunte o que o sinal organiza/destaca e qual efeito produz no trecho."
       },
       {
+        "id": "POR-05-B10",
         "type": "SUMMARY",
         "items": [
           "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável.",
@@ -139,6 +164,7 @@
         ]
       },
       {
+        "id": "POR-05-B11",
         "type": "EXIT_TICKET",
         "prompt": "Explique o princípio mais importante de Convenções da escrita: ortografia, acentuação e pontuação com sentido e crie um exemplo próprio."
       }

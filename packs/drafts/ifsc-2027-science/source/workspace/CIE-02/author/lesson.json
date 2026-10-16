@@ -141,11 +141,29 @@
       "variant": "IFSC_STRATEGY",
       "title": "Como isso costuma aparecer em prova",
       "items": [
-        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
-        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
-        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de máquinas simples.",
-        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        "Em uma alavanca ideal em equilíbrio, compare os momentos: força aplicada × seu braço = resistência × braço da resistência.",
+        "Braço de alavanca é a distância perpendicular ao ponto de apoio; não é necessariamente o comprimento total da barra.",
+        "Vantagem mecânica maior reduz a força necessária no modelo ideal, mas exige deslocamento maior e não cria energia."
       ]
+    },
+    {
+      "id": "CIE-02-B15",
+      "type": "EXPLANATION",
+      "title": "Alavancas e vantagem mecânica",
+      "content": "Em uma alavanca ideal em equilíbrio, os momentos em torno do ponto de apoio se compensam.",
+      "items": [
+        "F · d = R · r",
+        "F é a força aplicada, em newtons (N); d é seu braço, em metros (m); R é a resistência ou carga, em N; r é o braço da resistência, em m.",
+        "Vantagem mecânica ideal = R / F = d / r; é uma razão sem unidade."
+      ]
+    },
+    {
+      "id": "CIE-02-B16",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo de cálculo passo a passo",
+      "prompt": "Uma pessoa aplica 40 N a 0,60 m do apoio de uma alavanca. A carga está a 0,20 m do apoio. Qual carga pode ser equilibrada no modelo ideal e qual é a vantagem mecânica?",
+      "answer": "A carga é 120 N e a vantagem mecânica é 3.",
+      "reasoning": "1) Identifique: F = 40 N, d = 0,60 m e r = 0,20 m.\n\n2) Use F · d = R · r: 40 × 0,60 = R × 0,20.\n\n3) Calcule: R = 24 / 0,20 = 120 N.\n\n4) Calcule a vantagem: R / F = 120 / 40 = 3.\n\nConferência: os dois momentos valem 24 N·m (40 × 0,60 e 120 × 0,20), portanto se equilibram."
     },
     {
       "id": "CIE-02-B11",

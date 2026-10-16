@@ -38,6 +38,8 @@ describe("independent Science adapted pack QA", () => {
       const sourceBlocks = jsonFile(`${SOURCE_ROOT}/workspace/${lesson.id}/approved/pack.json`).lesson.blocks;
       const markup = renderToStaticMarkup(<LessonBlockList blocks={lesson.blocks.map(block => ({ stableId: block.id, type: block.type, payload: block.payload }))}/>);
       const document = new DOMParser().parseFromString(markup, "text/html");
+      // Compare authored text: math notation adds an aria-hidden visual form before the original source text.
+      document.querySelectorAll(".math-visual").forEach(node => node.remove());
       expect(document.body.textContent, lesson.id).not.toMatch(/ainda não possui renderer aprovado|Conteúdo inválido|Bloco inválido/i);
       for (const block of lesson.blocks) {
         if (block.type === "figure") {
@@ -51,19 +53,16 @@ describe("independent Science adapted pack QA", () => {
         } else {
           expect(document.body.textContent, block.id).toContain(block.payload.title);
           const editorial = sourceBlocks.find((candidate: { id: string }) => candidate.id === block.id) as { content?: string; items?: string[]; prompt?: string; answer?: string; reasoning?: string; answerGuide?: { mustMention: string[] } };
-          for (const text of [editorial.content, ...(editorial.items ?? []), editorial.prompt, editorial.answer, editorial.reasoning, ...(editorial.answerGuide?.mustMention ?? [])].filter(Boolean)) expect(document.body.textContent, block.id).toContain(text);
+          for (const text of [editorial.content, ...(editorial.items ?? []), editorial.prompt, editorial.answer, editorial.reasoning, ...(editorial.answerGuide?.mustMention ?? [])].filter(Boolean)) expect((document.body.textContent ?? "").replace(/\s+/g, ""), block.id).toContain(String(text).replace(/\s+/g, "")); // single line breaks render as separate lines
         }
       }
     }
     for (const question of pack.questions) {
       const markup = renderToStaticMarkup(<QuestionPanel question={studentQuestion(question)} activityStableId={`${question.id}-ACT`}/>);
       const document = new DOMParser().parseFromString(markup, "text/html");
-      // The math renderer (contract v1) keeps the authored digit for screen readers next to the visual superscript ("cm3³").
-      const superscripts: Record<string, string> = { "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹" };
-      const visible = (document.body.textContent ?? "").replace(/(\d+)([¹²³⁰⁴-⁹]+)/g, (match, digits: string, sups: string) => {
-        const spoken = [...sups].map(sup => Object.keys(superscripts).find(digit => superscripts[digit] === sup)).join("");
-        return digits.endsWith(spoken) ? digits.slice(0, -spoken.length) + sups : match;
-      });
+      // Compare authored text: math notation adds an aria-hidden visual form before the original source text.
+      document.querySelectorAll(".math-visual").forEach(node => node.remove());
+      const visible = document.body.textContent ?? "";
       expect(visible, question.id).toContain(question.stem);
       expect(document.querySelectorAll('input[type="radio"]'), question.id).toHaveLength(5);
       for (const choice of question.choices ?? []) {

@@ -36,7 +36,10 @@ export function resolveLessonVersionContext(manifests: readonly unknown[], pack:
   if (hashCanonicalJson(retained) !== hashCanonicalJson(expected) || hashCanonicalJson({ ...pack.lesson, blocks: base.blocks, activities: base.activities, version: base.version, status: base.status }) !== hashCanonicalJson(base)) throw new LessonVersionConflictError("Retained blocks and lesson fields must match the source, except declared corrections");
   if (!pack.corrections && !pack.questionVersions?.length && pack.lesson.blocks.length <= base.blocks.length) throw new LessonVersionConflictError("Enrichment must add at least one block");
   const additions = pack.lesson.blocks.filter(b => !base.blocks.some(old => old.id === b.id));
-  for (const block of additions) validateTextBlock(block, base, true);
+  // An added text block may omit Concepts only when none of the published lesson's text blocks is bound to Concepts
+  // (interactive blocks such as predictions keep their own bindings).
+  const conceptsOptional = base.blocks.filter(block => TEXT_BLOCK_TYPES.includes(block.type)).every(block => !block.conceptIds.length);
+  for (const block of additions) validateTextBlock(block, base, true, conceptsOptional);
   const newQuestions = validateQuestionVersions(context, base, pack);
   validateActivities(base, pack, newQuestions);
   const refs = [...new Set([...pack.lesson.exitTicketQuestionIds, ...pack.lesson.activities.flatMap(a => a.questionId ? [a.questionId] : [])])];
@@ -66,9 +69,10 @@ export async function importLessonVersion(input: unknown, repository: LessonVers
 export function isLessonVersionProjection(pack: TrackPackV2) { return pack.track.metadata.lessonVersionImport !== undefined; }
 
 type SourceLesson = ReturnType<typeof resolveLessonVersionContext>["base"];
+const TEXT_BLOCK_TYPES: readonly string[] = ["text", "summary", "concept", "note", "warning", "example", "worked-example"];
 /** New or corrected blocks: existing source Concepts and an existing non-assessed renderer only. */
-export function validateTextBlock(block: LessonVersionPack["lesson"]["blocks"][number], base: SourceLesson, isAddition: boolean) {
-  if((isAddition&&!block.conceptIds.length)||block.conceptIds.some(id=>!base.concepts.some(c=>c.id===id)))throw new LessonVersionConflictError("New blocks must use existing source Concepts");
+export function validateTextBlock(block: LessonVersionPack["lesson"]["blocks"][number], base: SourceLesson, isAddition: boolean, conceptsOptional = false) {
+  if((isAddition&&!conceptsOptional&&!block.conceptIds.length)||block.conceptIds.some(id=>!base.concepts.some(c=>c.id===id)))throw new LessonVersionConflictError("New blocks must use existing source Concepts");
   if(block.type==="numeric-explorer")return;
   if(block.type==="prediction"){try{validateSourceGoalPrediction(block,base);}catch(error){throw new LessonVersionConflictError(error instanceof Error?error.message:"Invalid source-goal prediction");}return;}
   if(block.payload.type!==undefined&&block.payload.type!==block.type)throw new LessonVersionConflictError("Block payload type differs from its envelope");

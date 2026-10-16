@@ -140,11 +140,30 @@
       "variant": "IFSC_STRATEGY",
       "title": "Como isso costuma aparecer em prova",
       "items": [
-        "Leia primeiro o contexto e sublinhe mentalmente o fenômeno ou relação que está sendo testado.",
-        "Em itens com afirmações I, II, III e IV, julgue cada afirmação separadamente antes de olhar as combinações de alternativas.",
-        "Desconfie de palavras absolutas como “sempre”, “nunca”, “todo” ou “apenas” quando elas contradizem as condições científicas de circuitos elétricos.",
-        "Quando houver dado numérico, escreva a relação usada e a unidade antes de escolher a alternativa."
+        "Em série, a corrente é a mesma em todos os resistores e as resistências se somam: Req = R1 + R2 + …",
+        "Em paralelo, a tensão é a mesma nos ramos e as correntes dos ramos se somam: 1/Req = 1/R1 + 1/R2 + …",
+        "A lei de Ohm U = R · i relaciona tensão, resistência e corrente para um resistor ôhmico; não confunda A (corrente) com V (tensão)."
       ]
+    },
+    {
+      "id": "CIE-06-B15",
+      "type": "EXPLANATION",
+      "title": "Lei de Ohm e associações simples",
+      "content": "Para um resistor ôhmico, a tensão entre seus terminais é proporcional à corrente. Resistores podem ser associados em série ou em paralelo.",
+      "items": [
+        "U = R · i",
+        "U é a tensão elétrica, em volts (V); R é a resistência, em ohms (Ω); i é a corrente elétrica, em amperes (A).",
+        "Em série: Req = R1 + R2 + …; a corrente é igual em todos.",
+        "Em paralelo: 1/Req = 1/R1 + 1/R2 + …; a tensão é igual nos ramos."
+      ]
+    },
+    {
+      "id": "CIE-06-B16",
+      "type": "WORKED_EXAMPLE",
+      "title": "Exemplo de cálculo passo a passo",
+      "prompt": "Dois resistores de 6 Ω e 3 Ω estão em paralelo com uma fonte de 12 V. Qual é a resistência equivalente e a corrente total fornecida pela fonte?",
+      "answer": "Req = 2 Ω e a corrente total é 6 A.",
+      "reasoning": "1) Para o paralelo: 1/Req = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2; portanto Req = 2 Ω.\n\n2) Aplique a lei de Ohm ao circuito equivalente: i = U / R = 12 / 2 = 6 A.\n\nConferência: os ramos recebem 12 V; passam 12/6 = 2 A no resistor de 6 Ω e 12/3 = 4 A no de 3 Ω. A soma das correntes é 2 + 4 = 6 A."
     },
     {
       "id": "CIE-06-B11",
