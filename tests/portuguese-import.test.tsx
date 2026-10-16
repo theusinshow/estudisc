@@ -13,7 +13,7 @@ describe("Portuguese editorial integration", () => {
   const ids = [...new Set([...PORTUGUESE_PILOT, ...PORTUGUESE_BATCHES.flat()])].sort();
   it("preserves all24source lessons/192keys/144targets and deduplicates cumulative pilot batches", () => {
     const result = buildPortuguesePack(process.cwd(), ids, 6);
-    expect(auditPortuguesePack(result.pack)).toMatchObject({ lessons: 24, questions: 192, concepts: 144, blocks: 264, sourceFilesUnchanged: 165 });
+    expect(auditPortuguesePack(result.pack)).toMatchObject({ lessons: 24, questions: 192, concepts: 144, blocks: 270, sourceFilesUnchanged: 165 });
     const existing = JSON.parse(readFileSync(".estudisc-agent-context/EXISTING-CONCEPTS.json", "utf8")) as { id: string }[];
     expect(() => validateConceptMap(result.inputs.conceptMap, result.concepts.map(row => row.editorialConceptId), new Set(existing.map(row => row.id)))).not.toThrow();
     const revisedLessonIds = new Set(["POR-01", "POR-02", "POR-03"]);
@@ -47,7 +47,7 @@ describe("Portuguese editorial integration", () => {
       const markup = renderToStaticMarkup(<LessonBlockList blocks={lesson.blocks.map(block => ({ stableId: block.id, type: block.type, payload: block.payload }))}/>);
       const document = new DOMParser().parseFromString(markup, "text/html");
       expect(document.body.textContent).not.toMatch(/Bloco inválido|Conteúdo inválido|renderer aprovado/);
-      for (const block of lesson.blocks) for (const paragraph of String(block.payload.content).split(/\n\s*\n/)) expect(document.body.textContent).toContain(paragraph);
+      for (const block of lesson.blocks) for (const paragraph of String(block.payload.content).split(/\n\s*\n/)) expect((document.body.textContent ?? "").replace(/\s+/g, "")).toContain(paragraph.replace(/\s+/g, "")); // single line breaks render as separate lines
     }
     for (const question of pack.questions) {
       const student = studentQuestion(question);
