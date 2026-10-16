@@ -3,5 +3,12 @@
   "framework": "nextjs",
   "regions": [
     "sfo1"
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://app-production-57fba.up.railway.app/:path*",
+      "permanent": false
+    }
   ]
 }
