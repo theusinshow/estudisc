@@ -1,0 +1,150 @@
+/* ==========================================================================
+   ADR 0067 phase 2: Today and the review/mistake queues.
+   One dominant action (level 3, the only signal yellow); everything else is
+   an editorial list with 2px rules, not a grid of cards.
+   ========================================================================== */
+
+/* Dominant action: paper surface, subject tab, expanded title, yellow CTA bar. */
+.today .next-card,
+.today .next-card[data-kind] {
+  grid-template-columns: minmax(0, 1fr);
+  --card-pad: var(--estudisc-spacing-12);
+  --card-pad-end: var(--estudisc-spacing-12);
+  gap: var(--estudisc-spacing-4);
+  padding: var(--card-pad) var(--card-pad-end) var(--card-pad) var(--card-pad);
+  border-width: var(--estudisc-elevation-action-border);
+  border-radius: var(--estudisc-radius-learning-card);
+  background: var(--estudisc-color-panel);
+  box-shadow: var(--estudisc-elevation-action-shadow);
+  transition: transform var(--estudisc-motion-press) var(--estudisc-motion-ease-out), box-shadow var(--estudisc-motion-press) var(--estudisc-motion-ease-out);
+}
+.today .next-card:not(.study-action-card) { --card-pad-end: var(--estudisc-spacing-24); }
+.today .next-card:hover { transform: none; box-shadow: var(--estudisc-elevation-action-shadow); }
+.today .next-card:active {
+  transform: translate(var(--estudisc-elevation-action-press-travel), var(--estudisc-elevation-action-press-travel));
+  box-shadow: var(--estudisc-elevation-action-pressed-shadow);
+}
+.today .next-card::before {
+  content: "";
+  height: var(--estudisc-spacing-4);
+  margin: calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad-end)) var(--estudisc-spacing-6) calc(-1 * var(--card-pad));
+  border-bottom: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink);
+  border-radius: var(--estudisc-radius-learning-card) var(--estudisc-radius-learning-card) 0 0;
+  background: var(--subject, var(--kind, var(--estudisc-color-panel)));
+}
+.today .next-card strong {
+  min-width: 0;
+  font-size: clamp(var(--estudisc-typography-scale-lead), 7vw, var(--estudisc-typography-scale-title));
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  font-stretch: var(--estudisc-typography-width-expanded);
+  font-weight: var(--estudisc-typography-display-weight);
+  letter-spacing: -0.02em;
+  line-height: 1.08;
+}
+.today .next-card > span:not(.kind-chip):not(.study-action-cta):not(.study-action-metadata) { font-size: var(--estudisc-typography-scale-body); line-height: var(--estudisc-typography-reading-leading); }
+.today .study-action-metadata { font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-size: var(--estudisc-typography-scale-meta); font-variant-numeric: tabular-nums; }
+.today .study-action-card > .study-action-cta {
+  margin: var(--estudisc-spacing-6) calc(-1 * var(--estudisc-spacing-6)) calc(-1 * var(--estudisc-spacing-6));
+  min-height: var(--estudisc-size-primary-mobile-button);
+  padding: 0 var(--estudisc-spacing-8);
+  border: var(--estudisc-elevation-surface-border) solid var(--estudisc-color-ink);
+  border-radius: var(--estudisc-radius-interactive);
+  background: var(--estudisc-color-signal);
+  color: var(--estudisc-color-signal-ink);
+  font-size: var(--estudisc-typography-scale-body);
+}
+.today .kind-chip { border-radius: var(--estudisc-radius-sm); font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; }
+
+/* Legacy Today: the session chooser is the dominant action; the next card becomes a surface. */
+.today .time-card {
+  border-width: var(--estudisc-elevation-action-border);
+  border-radius: var(--estudisc-radius-learning-card);
+  background: var(--estudisc-color-panel);
+  box-shadow: var(--estudisc-elevation-action-shadow);
+}
+.today .time-card .time-option.is-primary { background: var(--estudisc-color-signal); color: var(--estudisc-color-signal-ink); }
+.today:has(.time-card) .next-card { border-width: var(--estudisc-elevation-surface-border); box-shadow: var(--estudisc-elevation-surface-shadow); }
+.today .resume-card {
+  border-width: var(--estudisc-elevation-surface-border);
+  border-radius: var(--estudisc-radius-learning-card);
+  background: var(--estudisc-color-panel);
+  box-shadow: var(--estudisc-elevation-surface-shadow);
+}
+.today .resume-icon { background: var(--estudisc-color-panel); }
+
+/* Pulse: a typographic mono line, not pills. */
+.today { grid-template-columns: minmax(0, 1fr); }
+.today .today-pulse { gap: 0; margin-top: var(--estudisc-spacing-8); border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+.today .today-pulse li { flex: 1 1 12rem; min-width: 0; border-bottom: var(--estudisc-border-hair) solid var(--estudisc-color-ink); }
+.today .today-pulse a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--estudisc-spacing-4);
+  padding: var(--estudisc-spacing-4) var(--estudisc-spacing-2);
+  border: 0;
+  border-radius: 0;
+  background: none;
+  font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace;
+  font-size: var(--estudisc-typography-scale-meta);
+  font-weight: var(--estudisc-typography-body-weights-semibold);
+}
+.today .today-pulse a:hover, .today .today-pulse a:active { transform: none; box-shadow: none; text-decoration: underline; }
+.today .today-pulse strong { font-family: var(--font-archivo), "Archivo", system-ui, sans-serif; font-size: var(--estudisc-typography-scale-lead); font-stretch: var(--estudisc-typography-width-expanded); font-weight: var(--estudisc-typography-display-weight); font-variant-numeric: tabular-nums; }
+
+/* Editorial lists: queue, plan, attention. Rules of 2px, rows not cards. */
+.today .today-queue ol,
+.today .today-attention ul { margin: 0; padding: 0; list-style: none; border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+.today .today-queue li,
+.today .today-attention li { border-bottom: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+.today .today-queue li > a { min-height: var(--estudisc-size-answer-min-height); }
+.today .today-queue li > a[data-subject]::before {
+  content: "";
+  flex: none;
+  align-self: stretch;
+  width: var(--estudisc-spacing-4);
+  border: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink);
+  background: var(--subject);
+}
+.today .today-attention a { color: var(--estudisc-color-ink); font-weight: var(--estudisc-typography-body-weights-bold); text-decoration: none; }
+.today .today-attention a:hover { text-decoration: underline; }
+.today .kind-dot { border-width: var(--estudisc-elevation-structure-border); }
+
+/* Week: studied days in ink with a check, never color alone. */
+.today .week-mark { border-width: var(--estudisc-elevation-structure-border); }
+.today .week-strip [data-studied] .week-mark { background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); box-shadow: none; }
+.today .week-strip [data-today]:not([data-studied]) .week-mark { background: var(--estudisc-color-panel); border-width: var(--estudisc-elevation-action-border); }
+
+/* Review and mistake queues: a real counter and one ruled row per item. */
+.queue-head { display: grid; gap: var(--estudisc-spacing-8); justify-items: start; }
+.queue-count { display: flex; align-items: baseline; gap: var(--estudisc-spacing-4); margin: 0; }
+.queue-count strong { font-size: var(--estudisc-typography-scale-display); font-stretch: var(--estudisc-typography-width-expanded); font-weight: var(--estudisc-typography-display-weight); font-variant-numeric: tabular-nums; line-height: 1; }
+.queue-count span { font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-size: var(--estudisc-typography-scale-meta); }
+.review-list { gap: 0; border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+.review-list li {
+  padding: var(--estudisc-spacing-10) 0;
+  border: 0;
+  border-bottom: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+.review-list small { border-radius: var(--estudisc-radius-sm); }
+.review-list .primary-button { background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); }
+.review-list time, .mistake-queue time { font-weight: var(--estudisc-typography-body-weights-bold); }
+.record-list.mistake-queue { gap: 0; border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+.record-list.mistake-queue li > div,
+.record-list.mistake-queue li:nth-child(n) > a {
+  padding: var(--estudisc-spacing-10) 0;
+  border: 0;
+  border-bottom: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+.record-list.mistake-queue .primary-button { background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  .today .next-card { transition: none; }
+}

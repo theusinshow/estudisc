@@ -3,9 +3,6 @@ import { ArrowRight, Play } from "lucide-react";
 
 import "@/styles/today.css";
 import { AppShell } from "@/components/layout/app-shell";
-import { ClickSpark } from "@/components/motion/click-spark";
-import { CountUp } from "@/components/motion/count-up";
-import { Reveal } from "@/components/motion/reveal";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
 import { WeekStrip } from "@/features/progress/week-strip";
 import { getTodayDashboard } from "@/features/today/get-today-dashboard";
@@ -45,8 +42,7 @@ export default async function HomePage() {
             {pulse.map(item => (
               <li key={item.href}>
                 <Link href={item.href} data-pulse={item.kind} data-zero={item.count === 0 || undefined}>
-                  <CountUp value={item.count} />
-                  <span>{item.label}</span>
+                  <strong>{item.count}</strong> <span>{item.label}</span>
                 </Link>
               </li>
             ))}
@@ -68,9 +64,7 @@ export default async function HomePage() {
         {primaryRecommendation && <section className="time-card" aria-labelledby="time-title">
           <h2 id="time-title">Quanto tempo você tem agora?</h2>
           <p>Montamos a sessão com revisões, erros pendentes e a próxima aula.</p>
-          <ClickSpark>
-            <SessionControls adaptive={getFeatureFlags().FEATURE_ADAPTIVE_SESSION} availableMinutes={dashboard.routine?.week?.activeSessionId ? undefined : remainingRoutineMinutes(dashboard.routine?.week ?? null)} />
-          </ClickSpark>
+          <SessionControls adaptive={getFeatureFlags().FEATURE_ADAPTIVE_SESSION} availableMinutes={dashboard.routine?.week?.activeSessionId ? undefined : remainingRoutineMinutes(dashboard.routine?.week ?? null)} />
         </section>}
 
         <section className="today-next" aria-labelledby="next-title">
@@ -91,8 +85,8 @@ export default async function HomePage() {
           <section className="today-queue" aria-labelledby="queue-title">
             <h2 id="queue-title">Depois disso</h2>
             <ol>
-              {queue.map((recommendation, index) => (
-                <Reveal as="li" index={index} key={recommendation.id}>
+              {queue.map((recommendation) => (
+                <li key={recommendation.id}>
                   <Link href={recommendation.href} data-kind={recommendation.kind}>
                     <span className="kind-dot" aria-hidden="true" />
                     <span>
@@ -100,7 +94,7 @@ export default async function HomePage() {
                       <small>{kindLabel[recommendation.kind]} · {recommendation.reason}</small>
                     </span>
                   </Link>
-                </Reveal>
+                </li>
               ))}
             </ol>
           </section>

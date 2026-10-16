@@ -12,6 +12,8 @@ import { AiActionControl } from "@/features/ai/action-control";
 
 export const dynamic = "force-dynamic";
 
+const dayMonth = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit" });
+
 export default async function MistakesPage() {
   const mistakes = await listMistakes();
   const enhanced=getFeatureFlags().FEATURE_SMART_MISTAKES,groups=enhanced?groupMistakeObservations(mistakes):[];
@@ -37,7 +39,7 @@ export default async function MistakesPage() {
           />
         ) : enhanced ? <>
           <p>O agrupamento mostra registros do mesmo conceito. Recorrência não é um diagnóstico da causa.</p>
-          <ol className="record-list" aria-label="Padrões observados por conceito">{groups.map(group=><li key={group.conceptId}>
+          <ol className="record-list mistake-queue" aria-label="Padrões observados por conceito">{groups.map(group=><li key={group.conceptId}>
             <div><Link href={`/concepts/${encodeURIComponent(group.conceptId)}`}><strong>{group.conceptTitle}</strong></Link>
               <span>{group.recurring?"Tentativas recorrentes":"Uma tentativa observada"}</span><p>{group.explanation}</p>
               <small>{group.resolvedCount} {group.resolvedCount===1?"registro resolvido":"registros resolvidos"} · causa ainda não estabelecida</small>
@@ -49,14 +51,14 @@ export default async function MistakesPage() {
             </div>
           </li>)}</ol>
         </> : (
-          <ol className="record-list" aria-label="Erros categorizados">
+          <ol className="record-list mistake-queue" aria-label="Erros categorizados">
             {mistakes.map((mistake) => (
               <li key={mistake.id}>
                 <div>
                   <Link href={`/concepts/${mistake.conceptStableId}`}>
                     <strong>{mistake.conceptTitle}</strong>
                   </Link>
-                  <span>{mistake.summary}</span>
+                  <span><time className="type-meta" dateTime={mistake.createdAt.toISOString()}>registrado em {dayMonth.format(mistake.createdAt)}</time> · {mistake.summary}</span>
                   <small>
                     {mistake.category} · {mistake.status}
                   </small>
