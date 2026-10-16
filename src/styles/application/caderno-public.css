@@ -1,0 +1,95 @@
+/* ==========================================================================
+   ADR 0067 phase 3: landing (/conheca) and sign-in.
+   Asymmetric hero with a solvable real sample question, a mono stat line,
+   a ruled "how it works" sheet and a receipt-style price.
+   ========================================================================== */
+
+/* The landing gets a wider measure for the two-column hero; every other section keeps the column. */
+.public-main > .caderno-hero { width: min(100%, 1120px); }
+.caderno-hero { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--estudisc-spacing-16); align-items: start; padding-top: var(--estudisc-spacing-8); }
+@media (min-width: 1024px) {
+  .caderno-hero[data-sample] { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+}
+.hero-copy { display: grid; gap: var(--estudisc-spacing-8); justify-items: start; min-width: 0; }
+.public-hero.caderno-hero h1 { margin: 0; font-size: clamp(var(--estudisc-typography-scale-title), 8vw, var(--estudisc-typography-scale-display)); font-stretch: var(--estudisc-typography-width-expanded); font-weight: var(--estudisc-typography-display-weight); line-height: 1.02; hyphens: auto; overflow-wrap: anywhere; }
+.caderno-hero .hero-lead { max-width: 52ch; font-size: var(--estudisc-typography-scale-body); line-height: var(--estudisc-typography-reading-leading); }
+@media (min-width: 768px) { .caderno-hero .hero-lead { font-size: var(--estudisc-typography-scale-body-wide); } }
+.caderno-hero .hero-kicker { margin: 0; text-transform: uppercase; }
+.caderno-hero .auth-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--estudisc-spacing-10); }
+.caderno-hero .primary-action { min-height: var(--estudisc-size-primary-mobile-button); padding-inline: var(--estudisc-spacing-12); font-size: var(--estudisc-typography-scale-body); }
+.caderno-hero .text-link { display: inline-flex; align-items: center; min-height: var(--estudisc-touch-minimum); color: var(--estudisc-color-ink); font-weight: var(--estudisc-typography-body-weights-bold); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.caderno-hero .hero-countdown { margin: 0; font-size: var(--estudisc-typography-scale-meta); padding-top: var(--estudisc-spacing-6); border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+
+/* The sample question is a real exercise: a surface on exam-grid paper. */
+.caderno-hero .sample-question {
+  margin: 0;
+  max-width: none;
+  border-radius: var(--estudisc-radius-learning-card);
+  background-color: var(--estudisc-color-panel);
+  background-image:
+    linear-gradient(var(--estudisc-pattern-grid-color) var(--estudisc-pattern-grid-line), transparent var(--estudisc-pattern-grid-line)),
+    linear-gradient(90deg, var(--estudisc-pattern-grid-color) var(--estudisc-pattern-grid-line), transparent var(--estudisc-pattern-grid-line));
+  background-size: var(--estudisc-pattern-grid-cell) var(--estudisc-pattern-grid-cell);
+}
+.sample-question .sample-question-source { margin: 0; padding: 0; background: none; }
+.sample-question .sample-question-stem { margin: 0; font-size: var(--estudisc-typography-scale-lead); font-weight: 800; line-height: 1.3; }
+.sample-question form > .sample-question-check { background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); }
+
+/* Sections: structure, not boxes. */
+.public-section.caderno-plain,
+.public-section.public-honest { padding: var(--estudisc-spacing-10) 0 0; border: 0; border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); background: none; box-shadow: none; }
+.public-main .public-section h2 { font-size: var(--estudisc-typography-scale-lead); font-stretch: var(--estudisc-typography-width-semi); font-weight: 800; }
+
+/* Stats as one typographic mono line. */
+.public-stats.stat-line { display: grid; gap: var(--estudisc-spacing-2); }
+.public-stats.stat-line li { display: grid; grid-template-columns: 4.5em minmax(0, 1fr); align-items: baseline; padding: var(--estudisc-spacing-3) 0; border: 0; border-bottom: var(--estudisc-border-hair) dashed var(--estudisc-color-ink); background: none; box-shadow: none; }
+.public-stats.stat-line strong { font-family: var(--font-archivo), "Archivo", system-ui, sans-serif; font-size: var(--estudisc-typography-scale-lead); font-stretch: var(--estudisc-typography-width-expanded); font-weight: var(--estudisc-typography-display-weight); }
+.public-stats.stat-line strong { text-align: right; padding-right: var(--estudisc-spacing-6); }
+
+/* "How it works" as a ruled sheet: four lines with a notebook margin number. */
+.public-steps.ruled-sheet { gap: 0; padding: 0; list-style: none; counter-reset: step; border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+.public-steps.ruled-sheet li {
+  display: grid;
+  grid-template-columns: var(--estudisc-spacing-24) minmax(0, 1fr);
+  padding: var(--estudisc-spacing-8) 0;
+  border-bottom: var(--estudisc-border-hair) solid var(--estudisc-color-ink);
+  counter-increment: step;
+  line-height: var(--estudisc-typography-reading-leading);
+}
+.public-steps.ruled-sheet li::before { content: counter(step, decimal-leading-zero); font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-size: var(--estudisc-typography-scale-meta); font-weight: var(--estudisc-typography-technical-weights-bold); }
+
+/* Honest notice: visible, ruled and in reading size, not a footnote. */
+.public-honest .public-list { font-size: var(--estudisc-typography-scale-body); line-height: var(--estudisc-typography-reading-leading); }
+
+/* Price as a receipt: dashed tear lines, mono labels, the real deadline and the withdrawal right. */
+.public-section.receipt {
+  gap: var(--estudisc-spacing-8);
+  border-width: var(--estudisc-elevation-surface-border);
+  border-style: dashed solid;
+  background: var(--estudisc-color-panel);
+  box-shadow: var(--estudisc-elevation-surface-shadow);
+}
+.receipt-lines { display: grid; margin: 0; border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+.receipt-lines > div { display: grid; gap: var(--estudisc-spacing-2); padding: var(--estudisc-spacing-6) 0; border-bottom: var(--estudisc-border-hair) dashed var(--estudisc-color-ink); }
+@media (min-width: 640px) { .receipt-lines > div { grid-template-columns: 9rem minmax(0, 1fr); gap: var(--estudisc-spacing-8); } }
+.receipt-lines dt { font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-size: var(--estudisc-typography-scale-meta); text-transform: uppercase; }
+.receipt-lines dd { margin: 0; max-width: 60ch; }
+.receipt .public-price-value strong { font-stretch: var(--estudisc-typography-width-expanded); }
+.receipt .secondary-action { justify-self: start; }
+
+/* Sign-in: the form and a real countdown side by side on wide screens. */
+.auth-split { justify-items: center; align-content: center; gap: var(--estudisc-spacing-12); }
+@media (min-width: 1024px) {
+  .auth-split { grid-template-columns: minmax(0, 720px) minmax(0, 320px); justify-content: center; align-items: stretch; }
+  .auth-split > .auth-legal { grid-column: 1 / -1; }
+}
+.auth-split .auth-panel { box-shadow: var(--estudisc-elevation-surface-shadow); border-width: var(--estudisc-elevation-surface-border); }
+.auth-countdown { display: grid; align-content: start; gap: var(--estudisc-spacing-6); width: min(100%, 720px); padding: var(--estudisc-spacing-10) 0; border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
+@media (min-width: 1024px) { .auth-countdown { padding: var(--estudisc-spacing-4) 0 0 var(--estudisc-spacing-12); border-top: 0; border-left: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); } }
+.auth-countdown p { margin: 0; }
+.auth-countdown-days { display: flex; align-items: baseline; gap: var(--estudisc-spacing-4); }
+.auth-countdown-days strong { font-size: var(--estudisc-typography-scale-hero); font-stretch: var(--estudisc-typography-width-expanded); font-weight: var(--estudisc-typography-display-weight); font-variant-numeric: tabular-nums; line-height: 0.9; }
+.auth-countdown-days span { font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-size: var(--estudisc-typography-scale-meta); }
+.auth-pending:empty { display: none; }
+.auth-pending { font-size: var(--estudisc-typography-scale-meta); }
+.auth-primary-action:disabled { cursor: progress; }

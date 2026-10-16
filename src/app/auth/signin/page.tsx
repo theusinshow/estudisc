@@ -7,6 +7,9 @@ import Link from "next/link";
 import { getAccountConfig, isHybridSignIn } from "@/features/auth/account-mode";
 import { publicAccounts } from "@/features/auth/code-accounts";
 import { AccountSignIn } from "@/features/auth/account-sign-in";
+import { GoogleSubmitButton } from "@/features/auth/google-submit-button";
+import { daysUntilExam, examCountdownLabel } from "@/features/public-site/countdown";
+import { accessLastDay } from "@/features/public-site/content-summary";
 
 type SignInPageProps = {
   searchParams?: Promise<{
@@ -101,7 +104,7 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
   }
 
   return (
-    <main className="auth-surface" aria-labelledby="signin-title">
+    <main className="auth-surface auth-split" aria-labelledby="signin-title">
       <section className="auth-panel">
         <div className="auth-panel-header">
 <BrandLockup priority />
@@ -119,13 +122,12 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
           <p className="auth-error" role="alert">
             <strong>Acesso não concluído.</strong>
             <span>{errorMessage}</span>
+            <span>Seu progresso continua salvo. Tente de novo pelo botão abaixo.</span>
           </p>
         ) : null}
 
         <form action={signInWithGoogle} className="auth-actions">
-          <button type="submit" className="primary-action auth-primary-action">
-            Continuar com Google
-          </button>
+          <GoogleSubmitButton />
         </form>
 
         <dl className="auth-status" aria-label="Regras de acesso">
@@ -144,8 +146,22 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
         </dl>
         {hybrid ? <p className="auth-alternate"><Link href={withCallback({ perfil: "1" })}>Tenho um perfil com código</Link></p> : null}
       </section>
+      <ExamCountdown />
       <LegalLinks />
     </main>
+  );
+}
+
+/** Real countdown to the exam day (the last day of paid access); hidden once the date has passed. */
+function ExamCountdown() {
+  const days = daysUntilExam();
+  if (days === null) return null;
+  return (
+    <aside className="auth-countdown" aria-label="Contagem para a prova">
+      <p className="auth-countdown-days"><strong>{days}</strong> <span>{days === 1 ? "dia" : "dias"}</span></p>
+      <p className="type-meta">{examCountdownLabel(days)} · {accessLastDay()}</p>
+      <p>Ao entrar, o Hoje mostra a próxima aula e o que voltou para revisão.</p>
+    </aside>
   );
 }
 

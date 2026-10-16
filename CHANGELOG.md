@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-16 — Caderno de prova, phase 3: landing and sign-in (ADR 0067)
+
+- `/conheca`: asymmetric hero (expanded H1, one yellow CTA, real countdown to the exam day from `PAID_ACCESS_ENDS_AT`) beside a real published question from a free sample lesson, solvable on the page with answer-sheet bubbles and stamp (nothing is recorded). Only published, non-official, non-reserved, single-answer questions qualify; without a persistent catalog no sample is shown. Stats become a mono list, "Como funciona" a ruled sheet, the price a receipt with the real deadline and the withdrawal right; legal texts are verbatim and "Antes de comprar" moves above the price.
+- Sign-in: two zones (form + real countdown), an announced pending state while the Google redirect starts and a recovery line on errors. There is no e-mail link flow, so no "link sent" state exists.
+
 ## 2026-10-16 — Caderno de prova, phase 2: Today and review queues (ADR 0067)
 
 - Today has one dominant action (level 3 elevation, the only signal-yellow CTA) with its real reason, subject tab and mono metadata; the legacy session chooser takes that role when it is shown. The pulse counts become a typographic mono line; queue, plan and attention become 2px-ruled editorial lists. ClickSpark, Reveal and the pulse CountUp leave Today.
