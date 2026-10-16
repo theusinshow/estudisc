@@ -166,7 +166,11 @@ export type MemoryPackImport = ExistingPackImport & {
   manifest?: TrackPack;
 };
 
+import type { EntitlementRecord, InviteCodeRecord } from "@/features/payments/contracts";
+
 export type MemoryStore = {
+  entitlements?: EntitlementRecord[];
+  inviteCodes?: InviteCodeRecord[];
   lessonResumes: Array<ResumeSnapshot & { ownerId: string; scope: ResumeScope; mutationId: string; mutationHash: string }>;
   questionAssets:Array<{id:string;questionId:string;version:number;bytes:Buffer;contentHash:string;mimeType:string}>;
   assessmentTemplates:Array<{id:string;definition:AssessmentTemplate;contentHash:string}>;
@@ -204,6 +208,8 @@ const globalStore = globalThis as typeof globalThis & {
 
 export function getMemoryStore() {
   globalStore.__estudiscMemoryStore ??= {
+    entitlements: [],
+    inviteCodes: [],
     lessonResumes: [],
     questionAssets:[],
     assessmentTemplates:[],assessmentInstances:[],assessmentResponses:[],
@@ -230,6 +236,8 @@ export function getMemoryStore() {
     trackProgressCount: 0
   };
 
+  globalStore.__estudiscMemoryStore.entitlements ??= [];
+  globalStore.__estudiscMemoryStore.inviteCodes ??= [];
   globalStore.__estudiscMemoryStore.studyPlans ??= [];
   globalStore.__estudiscMemoryStore.studyPlanPreviews ??= [];
   return globalStore.__estudiscMemoryStore;
