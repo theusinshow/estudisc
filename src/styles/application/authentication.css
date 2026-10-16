@@ -278,3 +278,33 @@
     transform: none !important;
   }
 }
+
+/* Paid access (ADR 0061): offer list, legal note and legal pages reuse the auth surface. */
+.subscribe-list {
+  display: grid;
+  gap: var(--estudisc-spacing-4);
+  margin: 0;
+  padding-left: var(--estudisc-spacing-8);
+}
+
+.subscribe-legal {
+  margin: 0;
+  color: var(--estudisc-color-dim);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.legal-section {
+  display: grid;
+  gap: var(--estudisc-spacing-4);
+}
+
+.legal-section h2 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.legal-section p {
+  margin: 0;
+  line-height: 1.55;
+}

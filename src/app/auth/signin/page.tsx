@@ -4,6 +4,7 @@ import { signIn } from "@/auth";
 import { googleAuthorizationParams } from "@/features/auth/google-oauth";
 import { getServerEnv } from "@/lib/env";
 import { getAccountConfig } from "@/features/auth/account-mode";
+import { isPaidAccessEnabled } from "@/features/billing/paid-access";
 import { publicAccounts } from "@/features/auth/code-accounts";
 import { AccountSignIn } from "@/features/auth/account-sign-in";
 
@@ -64,6 +65,15 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
   const callbackUrl = normalizeCallbackUrl(params?.callbackUrl);
   const errorMessage = getErrorMessage(params?.error);
   const accountConfig = getAccountConfig(getServerEnv());
+  async function signInWithGoogle() {
+    "use server";
+
+    await signIn(
+      "google",
+      { redirectTo: callbackUrl },
+      googleAuthorizationParams
+    );
+  }
 
   if (accountConfig) {
     return (
@@ -78,18 +88,12 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
             <p>Cada perfil guarda o próprio progresso.</p>
           </div>
           <AccountSignIn accounts={publicAccounts(accountConfig.accounts)} callbackUrl={callbackUrl} />
+          {isPaidAccessEnabled(getServerEnv()) ? <form action={signInWithGoogle} className="auth-actions">
+            <p>Comprou o acesso ou quer assinar? Entre com a sua conta Google.</p>
+            <button type="submit" className="secondary-action">Continuar com Google</button>
+          </form> : null}
         </section>
       </main>
-    );
-  }
-
-  async function signInWithGoogle() {
-    "use server";
-
-    await signIn(
-      "google",
-      { redirectTo: callbackUrl },
-      googleAuthorizationParams
     );
   }
 

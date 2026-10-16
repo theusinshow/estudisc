@@ -1,6 +1,6 @@
 # ADR 0061 — Paid access: R$ 50 one-time checkout via Mercado Pago
 
-Status: Proposed (needs the owner's answers in "Open decisions" before implementation)
+Status: Accepted (2026-10-16, owner granted full autonomy). Shipped behind `FEATURE_PAID_ACCESS`, off by default; launch checklist in docs/estudisc/PAID-ACCESS-LAUNCH.md
 Date: 2026-10-15
 Supersedes (when accepted): the "private allowlisted product" part of ADR 0026. Its roles and per-identity owners stay.
 
@@ -20,7 +20,14 @@ Today access is private: Google sign-in is allowed only for emails in `ESTUDISC_
 6. **Secrets** (`MERCADOPAGO_ACCESS_TOKEN`, `MERCADOPAGO_WEBHOOK_SECRET`) live only in Vercel env. The owner creates and stores them. Agents never handle real values.
 7. Everything ships behind `FEATURE_PAID_ACCESS`, off by default, first with Mercado Pago test credentials.
 
-## Open decisions (owner)
+## Implementation decisions (2026-10-16)
+
+- **Accounts:** customers sign in with Google. Email verification and recovery stay with Google, and no password is stored. Code accounts (ADR 0031) keep working for family and admin and take precedence. In paid mode, a visitor without a code-account cookie continues to Google sign-in.
+- **Gate:** the proxy (Node runtime) lets a Google customer in only with an active entitlement. A signed 10-minute cookie caches the database answer. Admin and allowlisted e-mails are always open. Pages without access redirect to `/assinar`; APIs answer 402.
+- **Payment:** a checkout row is created for the signed-in owner, and its id is the preference `external_reference`. The webhook verifies `x-signature`, reads the payment from the API and grants only an approved 5000 BRL payment for that checkout. Re-delivery is idempotent through a unique `(source, payment id, status)`. Refunds and chargebacks append `refunded` or `revoked`.
+- **Minors and LGPD:** the purchase must be made by an adult or with the guardian's authorization. This is stated on `/assinar`, in the terms and in the privacy policy (art. 14); the owner reviews these texts before launch.
+
+## Open decisions (owner, before turning the flag on)
 
 - **Minors and LGPD:** students are 14–15. The purchase must be made by a parent or guardian, and the privacy policy needs a guardian-consent clause (LGPD art. 14). Who signs the account: the student's Google or the parent's?
 - **Content rights for sale:** lessons cite third-party sources and the IFSC edital. Before charging, confirm that the published lessons only quote within fair-use limits and that no reserved official question is exposed. The AI-assisted review of 2026-10-15 checks quality, not rights.
