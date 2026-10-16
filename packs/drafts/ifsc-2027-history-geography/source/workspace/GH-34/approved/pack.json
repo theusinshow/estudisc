@@ -197,308 +197,290 @@
     {
       "id": "GH-34-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Renascimento e Modernidade, qual afirmação está correta?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Renascimento eliminou a religião da sociedade europeia."
-        },
-        {
-          "key": "B",
-          "text": "Humanismo valorizou estudo de textos clássicos e capacidades humanas sem significar abandono automático da religião."
-        },
-        {
-          "key": "C",
-          "text": "Todas as transformações renascentistas começaram no mesmo ano."
-        },
-        {
-          "key": "D",
-          "text": "A imprensa reduziu a circulação de ideias."
-        },
-        {
-          "key": "E",
-          "text": "Modernidade é uma etapa idêntica vivida simultaneamente por todos os povos."
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "Humanismo valorizou estudo de textos clássicos e capacidades humanas sem significar abandono automático da religião.",
+      "stem": "O inventário lista cópias de autores latinos, comentários sobre retórica e cartas de um grupo de estudiosos. Na mesma sala, uma família patrona mantinha livros de devoção e financiava uma capela. Um caderno de empréstimos mostra que aprendizes discutiam gramática e história enquanto ajudavam a organizar cerimônias religiosas. O catálogo registra os materiais encontrados, mas não atribui a eles uma mudança igual em todas as cidades.\n\nQue leitura do humanismo combina melhor com os itens do catálogo?",
+      "correctOption": "C",
+      "explanation": "Autores latinos e retórica aparecem no mesmo espaço que livros devocionais, capela e cerimônias. A presença de estudos clássicos, portanto, não permite concluir que a religião tenha sido abandonada.",
       "difficulty": "FOUNDATION",
-      "cognitiveOperation": "RECALL",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-34-CON-01"
       ],
       "targetedError": "foundation",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "Os textos clássicos parecem ter circulado sobretudo entre aprendizes ligados à biblioteca."
+        },
+        {
+          "key": "B",
+          "text": "A capela sugere que a patronagem religiosa também orientava parte das atividades de estudo."
+        },
+        {
+          "key": "C",
+          "text": "O estudo de autores clássicos podia dividir espaço com práticas e instituições religiosas."
+        },
+        {
+          "key": "D",
+          "text": "O catálogo permite supor que a mesma combinação de estudos ocorria em outras cidades."
+        },
+        {
+          "key": "E",
+          "text": "Os empréstimos parecem ter servido principalmente à preparação das cerimônias religiosas."
+        }
+      ]
     },
     {
       "id": "GH-34-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “Renascimento eliminou a religião da sociedade europeia.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Renascimento eliminou a religião da sociedade europeia."
-        },
-        {
-          "key": "B",
-          "text": "Todas as transformações renascentistas começaram no mesmo ano."
-        },
-        {
-          "key": "C",
-          "text": "A imprensa reduziu a circulação de ideias."
-        },
-        {
-          "key": "D",
-          "text": "Artistas renascentistas exploraram perspectiva, anatomia, proporção e novas formas de representação."
-        },
-        {
-          "key": "E",
-          "text": "Modernidade é uma etapa idêntica vivida simultaneamente por todos os povos."
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "Artistas renascentistas exploraram perspectiva, anatomia, proporção e novas formas de representação.",
+      "stem": "Um aprendiz desenhou uma praça com linhas que convergem perto de uma porta ao fundo. Em outra folha, mediu braços, mãos e rostos de modelos para preparar uma cena. O mestre pediu que a luz incidisse de um lado e que os objetos próximos parecessem maiores. A encomenda seria exposta na casa de um comerciante, mas o caderno não registra se o artista terminou a obra.\n\nQue escolha técnica a anotação descreve?",
+      "correctOption": "A",
+      "explanation": "Linhas que convergem, objetos em escalas diferentes e medidas do corpo indicam busca de profundidade e proporção. A encomenda de um comerciante não impediu a observação técnica dos modelos.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-34-CON-02"
       ],
       "targetedError": "concept_discrimination",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "O estudo do corpo e das linhas organiza uma representação de volume e espaço."
+        },
+        {
+          "key": "B",
+          "text": "A praça indica que o aprendiz estudava proporções humanas para compor a arquitetura."
+        },
+        {
+          "key": "C",
+          "text": "A luz lateral sugere uma técnica de pintura, embora a encomenda não indique o suporte final."
+        },
+        {
+          "key": "D",
+          "text": "As linhas convergentes indicam profundidade, enquanto o estudo do corpo orienta as figuras."
+        },
+        {
+          "key": "E",
+          "text": "O pedido do comerciante pode ter influenciado o tema, sem definir como a cena foi estudada."
+        }
+      ]
     },
     {
       "id": "GH-34-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: O Renascimento recuperou referências antigas e criou novas linguagens em cidades europeias conectadas por comércio e circulação cultural. Qual ideia estudada oferece a melhor chave de interpretação?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Renascimento eliminou a religião da sociedade europeia."
-        },
-        {
-          "key": "B",
-          "text": "Todas as transformações renascentistas começaram no mesmo ano."
-        },
-        {
-          "key": "C",
-          "text": "Imprensa de tipos móveis facilitou circulação de textos e debates em escala inédita na Europa."
-        },
-        {
-          "key": "D",
-          "text": "A imprensa reduziu a circulação de ideias."
-        },
-        {
-          "key": "E",
-          "text": "Modernidade é uma etapa idêntica vivida simultaneamente por todos os povos."
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "Imprensa de tipos móveis facilitou circulação de textos e debates em escala inédita na Europa.",
+      "stem": "Um ateliê recebeu pedidos de retratos de comerciantes, professoras e integrantes de uma irmandade religiosa. Os artistas registraram roupas, gestos e expressões de cada pessoa; em uma pintura encomendada pela irmandade, as figuras aparecem em primeiro plano diante de um cenário arquitetônico. A oficina guarda esboços com estudos de rosto e mãos, além de contratos que identificam quem pagou cada trabalho.\n\nQue tendência de representação pode ser percebida na nota?",
+      "correctOption": "E",
+      "explanation": "Os esboços registram rostos, mãos e expressões de indivíduos, e a encomenda da irmandade mantém uma temática religiosa. O destaque à figura humana não implica o desaparecimento de patronos religiosos.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-34-CON-03"
       ],
       "targetedError": "relationship",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "Os contratos sugerem que a condição dos clientes definia como cada pessoa era retratada."
+        },
+        {
+          "key": "B",
+          "text": "A encomenda religiosa combinava figuras em destaque com cenário arquitetônico."
+        },
+        {
+          "key": "C",
+          "text": "A presença de comerciantes sugere que parte dos retratos atendia a clientes urbanos."
+        },
+        {
+          "key": "D",
+          "text": "O cenário arquitetônico participava da composição sem substituir as pessoas retratadas."
+        },
+        {
+          "key": "E",
+          "text": "Os retratos destacavam características individuais e também atendiam a uma irmandade religiosa."
+        }
+      ]
     },
     {
       "id": "GH-34-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Renascimento e Modernidade por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Renascimento ocorreu em ritmos e lugares diferentes e se conectou a mudanças urbanas, comerciais e intelectuais."
-        },
-        {
-          "key": "B",
-          "text": "Renascimento eliminou a religião da sociedade europeia."
-        },
-        {
-          "key": "C",
-          "text": "Todas as transformações renascentistas começaram no mesmo ano."
-        },
-        {
-          "key": "D",
-          "text": "A imprensa reduziu a circulação de ideias."
-        },
-        {
-          "key": "E",
-          "text": "Modernidade é uma etapa idêntica vivida simultaneamente por todos os povos."
-        }
-      ],
-      "correctOption": "A",
-      "explanation": "Renascimento ocorreu em ritmos e lugares diferentes e se conectou a mudanças urbanas, comerciais e intelectuais.",
+      "stem": "A equipe prepara páginas com tipos móveis e consegue montar várias cópias de um pequeno manual em poucas semanas. O livreiro separa exemplares para três cidades e recebe pedidos de professores e comerciantes. Algumas pessoas que visitaram a oficina ainda não sabem ler, por isso um mestre oferece leituras públicas em dias de feira. O registro não informa quantos livros chegaram a cada família.\n\nQue consequência da impressão o documento permite identificar?",
+      "correctOption": "B",
+      "explanation": "A oficina preparou cópias com tipos móveis e encaminhou exemplares para três cidades, ampliando a circulação dos textos. A presença de visitantes que não sabiam ler mostra que imprimir mais livros não significava alfabetização universal.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-34-CON-04"
       ],
       "targetedError": "application",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A produção em série ampliou exemplares, embora o registro não conte seus leitores."
+        },
+        {
+          "key": "B",
+          "text": "A impressão favoreceu a circulação, sem assegurar que todos pudessem ler os livros."
+        },
+        {
+          "key": "C",
+          "text": "As leituras públicas complementavam o uso dos impressos entre visitantes não alfabetizados."
+        },
+        {
+          "key": "D",
+          "text": "Os pedidos de comerciantes indicam que os professores receberam exemplares apenas em leituras públicas."
+        },
+        {
+          "key": "E",
+          "text": "A circulação para três cidades indica alcance além da própria oficina."
+        }
+      ]
     },
     {
       "id": "GH-34-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Humanismo valorizou estudo de textos clássicos e capacidades humanas sem significar abandono automático da religião.\nII. Renascimento eliminou a religião da sociedade europeia.\nIII. Imprensa de tipos móveis facilitou circulação de textos e debates em escala inédita na Europa.\nIV. Todas as transformações renascentistas começaram no mesmo ano.\nAssinale a alternativa CORRETA.",
-      "options": [
-        {
-          "key": "A",
-          "text": "Apenas I está correta."
-        },
-        {
-          "key": "B",
-          "text": "Apenas I e III estão corretas."
-        },
-        {
-          "key": "C",
-          "text": "Apenas II e IV estão corretas."
-        },
-        {
-          "key": "D",
-          "text": "Apenas I, II e III estão corretas."
-        },
-        {
-          "key": "E",
-          "text": "Todas estão corretas."
-        }
-      ],
-      "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "stem": "A guilda de pintores recebeu pedidos de comerciantes que haviam retornado de viagens e de uma irmandade ligada a uma igreja. O registro informa que o pagamento veio de diferentes fontes e que os trabalhos foram entregues em oficinas próximas ao mercado. Na mesma rua, livreiros anunciavam textos recém-impressos e aprendizes transportavam materiais entre o porto e os ateliês.\n\nQue relação entre cidade, comércio e produção artística aparece no livro?",
+      "correctOption": "D",
+      "explanation": "O livro aproxima clientes comerciais e religiosos, oficinas, livreiros e rotas urbanas. Essas atividades conectam o comércio da cidade à produção artística e à circulação de textos.",
       "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-34-CON-01",
-        "GH-34-CON-02",
-        "GH-34-CON-03",
-        "GH-34-CON-04"
+        "GH-34-CON-05"
       ],
       "targetedError": "multi_statement_reasoning",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A irmandade e os comerciantes aparecem como clientes de uma mesma guilda."
+        },
+        {
+          "key": "B",
+          "text": "A presença de livros impressos levou as oficinas a reduzir encomendas de pintura."
+        },
+        {
+          "key": "C",
+          "text": "A rua ligava transporte e comércio, enquanto oficinas e livreiros ficavam em outros bairros."
+        },
+        {
+          "key": "D",
+          "text": "Clientes diversos e redes urbanas aproximavam encomendas artísticas e circulação de textos."
+        },
+        {
+          "key": "E",
+          "text": "Os registros identificam clientes e entregas, mas não detalham como cada obra foi concebida."
+        }
+      ]
     },
     {
       "id": "GH-34-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Renascimento e Modernidade. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Renascimento eliminou a religião da sociedade europeia."
-        },
-        {
-          "key": "B",
-          "text": "Todas as transformações renascentistas começaram no mesmo ano."
-        },
-        {
-          "key": "C",
-          "text": "A imprensa reduziu a circulação de ideias."
-        },
-        {
-          "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
-        },
-        {
-          "key": "E",
-          "text": "Ler obra de arte ou texto identificando contexto, técnicas e valores sem tratá-los como ruptura absoluta."
-        }
-      ],
-      "correctOption": "E",
-      "explanation": "Ler obra de arte ou texto identificando contexto, técnicas e valores sem tratá-los como ruptura absoluta.",
+      "stem": "Uma exposição reúne calendários, mapas e livros feitos em diferentes regiões da Europa, da África e da Ásia. As peças foram produzidas em épocas próximas, mas registram práticas religiosas, científicas e políticas distintas. Uma etiqueta chama um conjunto de “moderno”; outra informa que essa palavra foi escolhida por curadores para organizar a exposição, não pelos autores das peças. O catálogo recomenda observar a data e o lugar de cada objeto.\n\nQue cuidado de interpretação a ficha propõe?",
+      "correctOption": "C",
+      "explanation": "A ficha mostra objetos próximos no tempo, mas diferentes em lugar e prática, e informa que “moderno” é uma categoria curatorial. O contexto de cada peça precisa ser considerado antes de generalizar o termo.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-34-CON-01",
-        "GH-34-CON-02",
-        "GH-34-CON-03",
-        "GH-34-CON-04",
-        "GH-34-CON-05",
         "GH-34-CON-06"
       ],
       "targetedError": "source_interpretation",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "O rótulo “moderno” reúne as peças como expressão de uma experiência histórica comum."
+        },
+        {
+          "key": "B",
+          "text": "A proximidade cronológica ajuda a comparar peças sem torná-las parte de uma só cultura."
+        },
+        {
+          "key": "C",
+          "text": "A categoria “moderno” deve ser lida junto ao lugar e à época de cada objeto."
+        },
+        {
+          "key": "D",
+          "text": "A escolha curatorial organiza a exposição, sem revelar os termos usados pelos autores."
+        },
+        {
+          "key": "E",
+          "text": "Calendários e mapas oferecem registros que precisam ser interpretados em seu contexto."
+        }
+      ]
     },
     {
       "id": "GH-34-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Renascimento e Modernidade?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Humanismo valorizou estudo de textos clássicos e capacidades humanas sem significar abandono automático da religião."
-        },
-        {
-          "key": "B",
-          "text": "Artistas renascentistas exploraram perspectiva, anatomia, proporção e novas formas de representação."
-        },
-        {
-          "key": "C",
-          "text": "A ideia de modernidade deve ser usada criticamente para evitar tratar a história europeia como medida universal de todas as sociedades."
-        },
-        {
-          "key": "D",
-          "text": "A imprensa reduziu a circulação de ideias."
-        },
-        {
-          "key": "E",
-          "text": "Renascimento ocorreu em ritmos e lugares diferentes e se conectou a mudanças urbanas, comerciais e intelectuais."
-        }
-      ],
-      "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "stem": "O documento registra que a irmandade solicitou uma cena religiosa e aceitou uma proposta que usava linhas de profundidade, estudos de luz e figuras com proporções observadas em modelos. O artista recebeu adiantamento para comprar pigmentos e contratou dois ajudantes. Em outro contrato da mesma rua, uma família pediu o retrato de uma criança. Os temas e os pagadores diferiam, mas os ateliês compartilhavam técnicas.\n\nQue interpretação sobre as mudanças artísticas é apoiada pelos contratos?",
+      "correctOption": "A",
+      "explanation": "A irmandade encomendou uma cena religiosa com técnicas de perspectiva, luz e proporção, enquanto outra família pediu um retrato. A renovação de técnicas não exigiu abandonar temas religiosos.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-34-CON-01",
-        "GH-34-CON-02",
-        "GH-34-CON-03",
-        "GH-34-CON-04",
-        "GH-34-CON-05",
-        "GH-34-CON-06"
+        "GH-34-CON-02"
       ],
       "targetedError": "misconception_identification",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "Técnicas de representação circulavam entre encomendas religiosas e retratos familiares."
+        },
+        {
+          "key": "B",
+          "text": "O tema religioso orientava a encomenda, mas não a escolha dos recursos de composição."
+        },
+        {
+          "key": "C",
+          "text": "Os contratos mostram financiadores distintos para a capela e o retrato familiar."
+        },
+        {
+          "key": "D",
+          "text": "A contratação de ajudantes indica colaboração na execução, sem registrar difusão entre oficinas."
+        },
+        {
+          "key": "E",
+          "text": "O estudo de proporções orientava a representação das figuras, sem definir quem eram os modelos."
+        }
+      ]
     },
     {
       "id": "GH-34-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Renascimento e Modernidade, qual conclusão final é sustentável?",
-      "options": [
-        {
-          "key": "A",
-          "text": "Renascimento eliminou a religião da sociedade europeia."
-        },
-        {
-          "key": "B",
-          "text": "Todas as transformações renascentistas começaram no mesmo ano."
-        },
-        {
-          "key": "C",
-          "text": "A ideia de modernidade deve ser usada criticamente para evitar tratar a história europeia como medida universal de todas as sociedades."
-        },
-        {
-          "key": "D",
-          "text": "A imprensa reduziu a circulação de ideias."
-        },
-        {
-          "key": "E",
-          "text": "Modernidade é uma etapa idêntica vivida simultaneamente por todos os povos."
-        }
-      ],
-      "correctOption": "C",
-      "explanation": "A ideia de modernidade deve ser usada criticamente para evitar tratar a história europeia como medida universal de todas as sociedades.",
+      "stem": "A professora anotou que os alunos liam textos antigos e comentários religiosos copiados à mão, enquanto um impressor ofereceu um manual recém-produzido para a turma. A escola manteve aulas de gramática e acrescentou exercícios de desenho com perspectiva. No registro de despesas, aparecem pagamentos a um copista, a uma oficina de impressão e a um mestre de desenho em anos próximos.\n\nQue conclusão sobre as transformações descritas é mais adequada?",
+      "correctOption": "E",
+      "explanation": "O diário registra a continuidade da cópia manual e da gramática junto à impressão e aos exercícios de perspectiva. A escola combina práticas em vez de trocar todo o ensino de uma vez.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "EVALUATE",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "GH-34-CON-01",
-        "GH-34-CON-02",
-        "GH-34-CON-03",
-        "GH-34-CON-04",
-        "GH-34-CON-05",
         "GH-34-CON-06"
       ],
       "targetedError": "synthesis",
-      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+      "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+      "options": [
+        {
+          "key": "A",
+          "text": "A escola passou a privilegiar manuais impressos, mantendo a cópia manual só para textos religiosos."
+        },
+        {
+          "key": "B",
+          "text": "A temática religiosa convivia com novos exercícios de desenho na rotina escolar."
+        },
+        {
+          "key": "C",
+          "text": "Os registros mostram despesas paralelas com impressão, cópia e ensino de desenho."
+        },
+        {
+          "key": "D",
+          "text": "O manual impresso integrou o ensino, mas não substituiu as aulas já registradas."
+        },
+        {
+          "key": "E",
+          "text": "Novos materiais e exercícios foram incorporados junto a práticas anteriores de ensino."
+        }
+      ]
     }
   ]
 }

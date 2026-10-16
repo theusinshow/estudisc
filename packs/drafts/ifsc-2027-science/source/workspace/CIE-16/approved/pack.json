@@ -192,294 +192,292 @@
     {
       "id": "CIE-16-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Durante uma revisão de estruturas celulares, bioquímica e metabolismo, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "stem": "Em uma prática, células vegetais foram colocadas em uma solução diluída de corante. A intensidade da cor no interior mudou durante alguns minutos, mas o contorno celular permaneceu visível. O grupo comparou amostras em intervalos regulares e registrou que a concentração no meio também variava.\n\nQual função da membrana ajuda a interpretar essas observações?",
       "options": [
         {
           "key": "A",
-          "text": "Ribossomos armazenam toda a informação genética da célula."
+          "text": "Guardar as instruções hereditárias que orientam a atividade celular."
         },
         {
           "key": "B",
-          "text": "Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente."
+          "text": "Produzir proteínas a partir das moléculas que chegam do ambiente."
         },
         {
           "key": "C",
-          "text": "Mitocôndrias produzem matéria do nada."
+          "text": "Transformar os nutrientes externos em energia sem outras estruturas."
         },
         {
           "key": "D",
-          "text": "Fotossíntese ocorre em todas as células animais."
+          "text": "Delimitar a célula e regular a passagem de substâncias entre meios."
         },
         {
           "key": "E",
-          "text": "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+          "text": "Armazenar o corante no lugar do citoplasma durante a observação."
         }
       ],
-      "correctOption": "B",
-      "explanation": "A alternativa B é a correta: Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente.",
+      "correctOption": "D",
+      "explanation": "A mudança de concentração entre o interior e o meio é compatível com a permeabilidade seletiva da membrana. A hipótese de que ela armazena as instruções hereditárias confunde a fronteira celular com o material genético.",
       "difficulty": "FOUNDATION",
-      "cognitiveOperation": "UNDERSTAND",
+      "cognitiveOperation": "APPLY",
       "conceptIds": [
         "CIE-16-CON-01"
       ],
-      "targetedError": "core_concept",
+      "targetedError": "A [membrane/nucleus confusion]: atribui armazenamento genético à fronteira; B [organelle/function mix-up]: combina síntese proteica e produção energética com a membrana; C [biomolecule transformation error]: inventa conversão química; E [boundary/replacement confusion]: trata troca como remoção do citoplasma.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-16-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante precisa explicar estruturas celulares, bioquímica e metabolismo sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "stem": "Uma ficha de laboratório registra açúcares, óleos e proteínas em amostras usadas para estudar células. Os estudantes precisam relacionar cada componente à sua classe química, sem inferir que uma amostra isolada represente toda a composição celular.\n\nQual associação está correta?",
       "options": [
         {
           "key": "A",
-          "text": "Mitocôndrias produzem matéria do nada."
+          "text": "Açúcares são lipídios, e óleos são carboidratos."
         },
         {
           "key": "B",
-          "text": "Ribossomos armazenam toda a informação genética da célula."
+          "text": "Açúcares são carboidratos, óleos são lipídios e proteínas pertencem a outra classe."
         },
         {
           "key": "C",
-          "text": "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+          "text": "Proteínas são ácidos nucleicos, e açúcares são sais minerais."
         },
         {
           "key": "D",
-          "text": "Ribossomos atuam na síntese de proteínas."
+          "text": "Óleos são proteínas, enquanto água forma os ácidos nucleicos."
         },
         {
           "key": "E",
-          "text": "Fotossíntese ocorre em todas as células animais."
+          "text": "Sais minerais são carboidratos, e proteínas são organelas."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D é a correta: Ribossomos atuam na síntese de proteínas.",
+      "correctOption": "B",
+      "explanation": "A ficha distingue açúcares, óleos e proteínas como componentes de classes químicas diferentes. A troca entre açúcares e lipídios é plausível por ambos aparecerem em alimentos, mas os termos designam grupos distintos.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
-        "CIE-16-CON-02"
+        "CIE-16-CON-05"
       ],
-      "targetedError": "concept_discrimination",
+      "targetedError": "A [carbohydrate/lipid reversal]: troca as categorias de açúcar e óleo; C [molecule/mineral confusion]: atribui classes incompatíveis à água e aos sais; D [protein/nucleic-acid confusion]: desloca a informação hereditária; E [component/organelle confusion]: trata componentes químicos como estruturas celulares.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-16-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em estruturas celulares, bioquímica e metabolismo?",
+      "stem": "Em uma preparação, um marcador se ligou a uma proteína recém-formada e apareceu em pequenos grânulos no citoplasma, alguns associados a membranas internas. A equipe comparou as imagens antes e depois da marcação.\n\nQue atividade está relacionada aos grânulos destacados?",
       "options": [
         {
           "key": "A",
-          "text": "Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes."
+          "text": "Montagem de proteínas nos ribossomos."
         },
         {
           "key": "B",
-          "text": "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+          "text": "Conversão de luz em energia pelas mitocôndrias."
         },
         {
           "key": "C",
-          "text": "Mitocôndrias produzem matéria do nada."
+          "text": "Armazenamento de sais no núcleo celular."
         },
         {
           "key": "D",
-          "text": "Fotossíntese ocorre em todas as células animais."
+          "text": "Controle de trocas pela parede de células animais."
         },
         {
           "key": "E",
-          "text": "Ribossomos armazenam toda a informação genética da célula."
+          "text": "Produção de DNA por cloroplastos em qualquer tecido."
         }
       ],
       "correctOption": "A",
-      "explanation": "A alternativa A é a correta: Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes.",
-      "difficulty": "DIRECT",
+      "explanation": "O marcador acompanhou uma proteína recém-formada nos grânulos citoplasmáticos, compatíveis com ribossomos. A alternativa sobre mitocôndrias confunde estruturas e processos: elas participam da respiração celular, não da fotossíntese.",
+      "difficulty": "APPLIED",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "CIE-16-CON-03"
+        "CIE-16-CON-02"
       ],
-      "targetedError": "relationship",
+      "targetedError": "B [organelle/process reversal]: troca respiração e fotossíntese; C [structure/function mismatch]: atribui armazenamento nuclear às estruturas do citoplasma; D [animal-cell structure error]: inventa parede celular animal e outra função; E [organelle overgeneralization]: atribui DNA e cloroplastos a qualquer tecido.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-16-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma célula muscular aumenta sua demanda de energia durante exercício. Qual organela e processo estão diretamente relacionados ao fornecimento de ATP em células eucarióticas?",
+      "stem": "Após uma corrida, uma equipe mediu o consumo de oxigênio em células musculares e comparou imagens dessas células. Entre as estruturas observadas estavam mitocôndrias.\n\nQual processo celular se relaciona à demanda de energia registrada?",
       "options": [
         {
           "key": "A",
-          "text": "Cloroplastos e fotossíntese em células musculares."
+          "text": "Síntese de proteínas nos ribossomos a partir de luz."
         },
         {
           "key": "B",
-          "text": "Núcleo e filtração do sangue."
+          "text": "Fotossíntese em cloroplastos presentes nas fibras musculares."
         },
         {
           "key": "C",
-          "text": "Ribossomos e digestão extracelular."
+          "text": "Armazenamento de nutrientes no interior do núcleo."
         },
         {
           "key": "D",
-          "text": "Mitocôndrias e respiração celular."
+          "text": "Passagem de substâncias pela parede celular do músculo."
         },
         {
           "key": "E",
-          "text": "Parede celular e transpiração."
+          "text": "Respiração celular, que participa da obtenção de energia utilizável."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Mitocôndrias e respiração celular.",
-      "difficulty": "APPLIED",
+      "correctOption": "E",
+      "explanation": "O consumo de oxigênio e a presença de mitocôndrias são compatíveis com respiração celular e obtenção de energia utilizável. A hipótese de fotossíntese confunde o processo com a respiração e não corresponde ao tecido muscular descrito.",
+      "difficulty": "FOUNDATION",
       "cognitiveOperation": "APPLY",
       "conceptIds": [
-        "CIE-16-CON-01",
-        "CIE-16-CON-02",
         "CIE-16-CON-03"
       ],
-      "targetedError": "application",
+      "targetedError": "A [organelle/process mix-up]: associa ribossomos à fotossíntese; B [cell-type and process confusion]: atribui cloroplastos a músculo; C [nucleus/function overreach]: concentra metabolismo na membrana nuclear; D [structure/energy confusion]: inventa parede celular em músculo.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-16-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente.\nII. Mitocôndrias produzem matéria do nada.\nIII. Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes.\nIV. Ribossomos armazenam toda a informação genética da célula.\nAssinale a alternativa CORRETA.",
+      "stem": "Em uma horta, estudantes observaram células de folhas expostas à luz e identificaram estruturas verdes. Também registraram a produção de matéria orgânica na folha.\n\nQue associação corresponde aos dados?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "Ribossomos e respiração estimulada por pigmentos verdes."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "Mitocôndrias e produção de matéria orgânica a partir da luz."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "Cloroplastos e fotossíntese nas células vegetais que os possuem."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "Núcleo e produção de matéria orgânica sem reações químicas."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "Membrana e fabricação de carboidratos por filtragem."
         }
       ],
-      "correctOption": "B",
-      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-      "difficulty": "IFSC",
+      "correctOption": "C",
+      "explanation": "As estruturas verdes nas células da folha e a produção de matéria orgânica com luz apontam para cloroplastos e fotossíntese. A alternativa que atribui esse processo às mitocôndrias troca as funções dessas organelas.",
+      "difficulty": "APPLIED",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "CIE-16-CON-01",
-        "CIE-16-CON-02",
-        "CIE-16-CON-03",
         "CIE-16-CON-04"
       ],
-      "targetedError": "multi_statement_reasoning",
+      "targetedError": "A [ribosome/process confusion]: desloca fotossíntese e respiração; B [mitochondrion/chloroplast reversal]: troca a organela; D [nucleus/metabolism mismatch]: atribui respiração ao núcleo e nega reações; E [membrane/process confusion]: associa filtragem à síntese de carboidratos.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-16-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Ao transferir o que foi estudado sobre estruturas celulares, bioquímica e metabolismo para uma situação nova, qual conclusão permanece válida?",
+      "stem": "Uma ficha de composição celular lista água, sais minerais, carboidratos, lipídios, proteínas e ácidos nucleicos. Em uma atividade, os estudantes devem distinguir substâncias e classes químicas de estruturas observadas ao microscópio.\n\nComo interpretar os itens da ficha?",
       "options": [
         {
           "key": "A",
-          "text": "Água, sais minerais, carboidratos, lipídios, proteínas e ácidos nucleicos são componentes químicos importantes das células."
+          "text": "Como organelas com dimensões e formas equivalentes."
         },
         {
           "key": "B",
-          "text": "Fotossíntese ocorre em todas as células animais."
+          "text": "Como estruturas membranosas que transportam água."
         },
         {
           "key": "C",
-          "text": "Mitocôndrias produzem matéria do nada."
+          "text": "Como tipos de núcleo presentes em diferentes células."
         },
         {
           "key": "D",
-          "text": "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+          "text": "Como componentes químicos encontrados nas células."
         },
         {
           "key": "E",
-          "text": "Ribossomos armazenam toda a informação genética da célula."
+          "text": "Como organelas cuja função comum é produzir água."
         }
       ],
-      "correctOption": "A",
-      "explanation": "A alternativa A é a correta: Água, sais minerais, carboidratos, lipídios, proteínas e ácidos nucleicos são componentes químicos importantes das células.",
-      "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "correctOption": "D",
+      "explanation": "A ficha reúne água, sais minerais e classes de biomoléculas como componentes químicos celulares. A leitura dos itens como organelas confunde substâncias com estruturas delimitadas da célula.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
         "CIE-16-CON-05"
       ],
-      "targetedError": "transfer",
+      "targetedError": "A [molecule/structure confusion]: trata componentes químicos como estruturas uniformes; B [substance/organelle confusion]: transforma água e sais em organelas; C [biomolecule/nucleus confusion]: atribui aos nutrientes a forma de um núcleo; E [nucleic-acid/organelle confusion]: troca moléculas por estruturas produtoras.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-16-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre estruturas celulares, bioquímica e metabolismo?",
+      "stem": "Em uma cultura celular, um conjunto de reações aumentou moléculas maiores a partir de unidades menores; outro conjunto degradou moléculas armazenadas. Ambos ocorreram nas células.\n\nQue conceito abrange as reações observadas?",
       "options": [
         {
           "key": "A",
-          "text": "Cloroplastos realizam fotossíntese em células de plantas e algas que os possuem."
+          "text": "Metabolismo, que inclui reações celulares de construção e degradação."
         },
         {
           "key": "B",
-          "text": "Ribossomos atuam na síntese de proteínas."
+          "text": "Digestão, restrita à quebra de alimentos no tubo digestório."
         },
         {
           "key": "C",
-          "text": "Mitocôndrias produzem matéria do nada."
+          "text": "Transporte, que desloca substâncias sem transformações químicas."
         },
         {
           "key": "D",
-          "text": "Mitocôndrias participam da respiração celular e da obtenção de energia utilizável pela célula em eucariontes."
+          "text": "Respiração, nome dado a toda reação de construção celular."
         },
         {
           "key": "E",
-          "text": "Membrana plasmática delimita a célula e participa do controle de trocas com o ambiente."
+          "text": "Fotossíntese, processo que reúne todas as reações de degradação."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A alternativa C é a incorreta: Mitocôndrias produzem matéria do nada. As demais expressam relações compatíveis com os conceitos da aula.",
-      "difficulty": "DIRECT",
+      "correctOption": "A",
+      "explanation": "Os dois conjuntos mostram transformações químicas celulares, algumas de construção e outras de degradação; em conjunto, são parte do metabolismo. A alternativa que limita o conceito à digestão não inclui as reações observadas na cultura.",
+      "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "CIE-16-CON-01"
+        "CIE-16-CON-06"
       ],
-      "targetedError": "misconception_identification",
+      "targetedError": "B [cellular/systemic scope confusion]: limita metabolismo à digestão; C [reaction-absence misconception]: contradiz as mudanças registradas; D [transport/metabolism confusion]: reduz reações a passagem de nutrientes; E [single-organelle reduction]: restringe processos celulares a uma estrutura.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-16-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em estruturas celulares, bioquímica e metabolismo?",
+      "stem": "Uma célula de folha contém cloroplastos, mitocôndrias e ribossomos. Com luz, há produção de matéria orgânica; a célula também utiliza moléculas para manter suas atividades.\n\nQual síntese relaciona corretamente as estruturas e os processos?",
       "options": [
         {
           "key": "A",
-          "text": "Mitocôndrias produzem matéria do nada."
+          "text": "Cloroplastos e mitocôndrias realizam a mesma etapa da síntese proteica."
         },
         {
           "key": "B",
-          "text": "Ribossomos armazenam toda a informação genética da célula."
+          "text": "Ribossomos produzem pigmentos, enquanto o núcleo conduz a respiração."
         },
         {
           "key": "C",
-          "text": "Metabolismo significa apenas digestão de alimentos no sistema digestório."
+          "text": "A membrana converte luz em energia e substitui as reações metabólicas."
         },
         {
           "key": "D",
-          "text": "Fotossíntese ocorre em todas as células animais."
+          "text": "A presença de luz interrompe a respiração celular na folha."
         },
         {
           "key": "E",
-          "text": "Metabolismo é o conjunto de reações químicas celulares; inclui processos de construção e de degradação de moléculas."
+          "text": "Cloroplastos participam da fotossíntese, mitocôndrias da respiração e ribossomos da síntese proteica."
         }
       ],
       "correctOption": "E",
-      "explanation": "A alternativa E é a correta: Metabolismo é o conjunto de reações químicas celulares; inclui processos de construção e de degradação de moléculas.",
+      "explanation": "Os três componentes têm funções distintas: fotossíntese, respiração celular e síntese proteica. A hipótese de que a luz interrompe a respiração confunde processos que podem ocorrer na mesma célula.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "EVALUATE",
+      "cognitiveOperation": "TRANSFER",
       "conceptIds": [
+        "CIE-16-CON-02",
+        "CIE-16-CON-03",
+        "CIE-16-CON-04",
         "CIE-16-CON-06"
       ],
-      "targetedError": "synthesis",
+      "targetedError": "A [organelle-function conflation]: trata organelas diferentes como equivalentes; B [structure/process mismatch]: atribui fotossíntese ao núcleo e ribossomo; C [membrane/metabolism confusion]: inventa conversão energética pela membrana; D [single-process assumption]: exclui as demais reações celulares.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     }
   ]

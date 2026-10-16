@@ -1,176 +1,231 @@
 [
   {
     "id": "GH-04-Q001",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a História, historiografia, tempo, memória e fontes, qual afirmação está correta?",
+    "stem": "Uma pesquisa sobre a inauguração de uma ponte em 1912 reuniu um recibo de compra de madeira, uma carta de comerciante e um mapa feito décadas depois. O recibo traz nomes e valores, mas não descreve a cerimônia; a carta reclama que a obra desviou carroças para outra rua. O mapa mostra a ponte em posição aproximada e não informa quem o desenhou. A equipe pretende comparar os documentos antes de escrever um texto sobre a construção e seus efeitos para os moradores.\n\nQual procedimento é mais adequado para iniciar a investigação?",
     "options": [
       {
         "key": "A",
-        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+        "text": "Comparar o mapa com a carta para estimar a posição da ponte, registrando a incerteza sobre autoria e data.",
+        "targetsError": "confundir_data_da_fonte_com_data_do_evento",
+        "rationale": "A comparação pode estimar a posição, mas a carta não fornece autoria nem data do mapa."
       },
       {
         "key": "B",
-        "text": "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado."
+        "text": "Desconsiderar a carta por expressar a opinião de um comerciante.",
+        "targetsError": "descartar_fonte_por_posicionamento",
+        "rationale": "A posição do autor é relevante para interpretar, não para apagar a fonte."
       },
       {
         "key": "C",
-        "text": "Memória e História são exatamente a mesma coisa."
+        "text": "Tratar o recibo como evidência de que a obra beneficiou os moradores do distrito.",
+        "targetsError": "generalizar_registro_administrativo",
+        "rationale": "A compra de madeira não registra os efeitos sobre cada morador."
       },
       {
         "key": "D",
-        "text": "Uma fonte fala por si e dispensa contexto."
+        "text": "Concluir que o desvio das carroças ocorreu no ano em que o mapa foi produzido.",
+        "targetsError": "inverter_relacao_temporal",
+        "rationale": "A reclamação está na carta, não na produção do mapa posterior."
       },
       {
         "key": "E",
-        "text": "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+        "text": "Identificar data, autoria, finalidade e conteúdo de cada registro e cruzar suas pistas.",
+        "rationale": "Os documentos oferecem informações diferentes e têm limites próprios."
       }
     ],
-    "correctOption": "B",
-    "explanation": "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado.",
+    "correctOption": "E",
+    "explanation": "O recibo, a carta e o mapa não respondem à mesma pergunta; usar autoria, data e finalidade evita tratar uma fonte como relato completo.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "RECALL",
     "conceptIds": [
       "GH-04-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-04-Q002",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Historiadores trabalham somente com documentos escritos oficiais.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "O arquivo de um município imaginário registra três intervenções junto ao rio: um cais de madeira construído em 1935, uma passarela de concreto instalada em 1980 e uma reforma com rampas e iluminação feita em 2025. A equipe de história organizou os cartões pelo ano de cada obra e anotou que o rio permaneceu como ponto de travessia durante todo o período. Não há informações sobre o tempo de construção de cada intervenção ou sobre quantas pessoas a utilizaram em cada década.\n\nQual leitura combina a ordem cronológica e a informação sobre permanência?",
     "options": [
       {
         "key": "A",
-        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+        "text": "A reforma de 2025 ocorreu antes da instalação da passarela de concreto.",
+        "targetsError": "inverter_ordem_cronologica",
+        "rationale": "Os anos registrados colocam 1980 antes de 2025."
       },
       {
         "key": "B",
-        "text": "Memória e História são exatamente a mesma coisa."
+        "text": "As estruturas mudaram, enquanto a travessia do rio continuou relevante no registro.",
+        "rationale": "A linha do tempo altera os materiais e mantém a função de passagem."
       },
       {
         "key": "C",
-        "text": "Uma fonte fala por si e dispensa contexto."
+        "text": "O cais de madeira e as rampas foram construídos no mesmo ano.",
+        "targetsError": "fundir_marcos_temporais",
+        "rationale": "A linha do tempo separa as intervenções em 1935 e 2025."
       },
       {
         "key": "D",
-        "text": "Fonte histórica é todo vestígio que pode ser analisado para responder perguntas sobre sociedades no tempo."
+        "text": "A passarela de concreto antecedeu o cais de madeira registrado em 1935.",
+        "targetsError": "confundir_substituicao_com_instalacao",
+        "rationale": "O registro descreve a instalação da passarela, posterior ao cais."
       },
       {
         "key": "E",
-        "text": "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+        "text": "O registro permite afirmar que houve três intervenções, mas não comparar o número de usuários em cada período.",
+        "targetsError": "inferir_duracao_sem_dados",
+        "rationale": "A linha do tempo não apresenta dados sobre a quantidade de usuários."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Fonte histórica é todo vestígio que pode ser analisado para responder perguntas sobre sociedades no tempo.",
+    "correctOption": "B",
+    "explanation": "Os marcos de 1935, 1980 e 2025 ordenam mudanças nas estruturas, enquanto a função de travessia aparece como continuidade; a duração das obras não foi registrada.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-04-CON-02"
     ],
-    "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "chronology",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-04-Q003",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: Uma carta, um objeto, uma fotografia, um depoimento e um mapa podem ser fontes históricas, mas precisam ser interrogados. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Entrevistas de memória didáticas ficcionais — Para uma exposição sobre a festa da praça, estudantes ouviram três moradores. Uma costureira recordou os preparativos das roupas, um músico falou das apresentações e uma antiga feirante contou que as barracas mudaram de lado depois de uma reforma. As entrevistas foram gravadas no mesmo mês, mas cada pessoa escolheu lembranças diferentes para começar. O grupo também encontrou uma fotografia da praça sem data precisa e um aviso municipal com as regras de uso da área. A exposição pretende representar experiências variadas.\n\nComo a equipe pode interpretar essas lembranças?",
     "options": [
       {
         "key": "A",
-        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+        "text": "Como versões que devem ser fundidas em um relato idêntico antes da exposição.",
+        "targetsError": "apagar_diferencas_da_memoria",
+        "rationale": "A escolha de lembranças distintas é parte do material de pesquisa."
       },
       {
         "key": "B",
-        "text": "Memória e História são exatamente a mesma coisa."
+        "text": "Como relatos que permitem reconstruir a sequência completa da festa, mesmo sem confronto com outras fontes.",
+        "targetsError": "confundir_memoria_com_registro_neutro",
+        "rationale": "As entrevistas destacam lembranças diferentes e devem ser confrontadas com outras fontes."
       },
       {
         "key": "C",
-        "text": "Memória é seletiva e está ligada a experiências e identidades; não é idêntica à historiografia."
+        "text": "Como memórias situadas, úteis para estudar sentidos diferentes atribuídos à festa.",
+        "rationale": "Cada morador destacou experiências ligadas à sua participação."
       },
       {
         "key": "D",
-        "text": "Uma fonte fala por si e dispensa contexto."
+        "text": "Como prova de que a reforma alterou a festa de maneira semelhante para os participantes.",
+        "targetsError": "generalizar_experiencias_individuais",
+        "rationale": "As entrevistas indicam vivências diversas, sem medir efeitos gerais."
       },
       {
         "key": "E",
-        "text": "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+        "text": "Como depoimentos sem valor, porque foram gravados no mesmo mês.",
+        "targetsError": "descartar_fonte_oral_por_data_de_coleta",
+        "rationale": "A data da entrevista não elimina as lembranças sobre o passado."
       }
     ],
     "correctOption": "C",
-    "explanation": "Memória é seletiva e está ligada a experiências e identidades; não é idêntica à historiografia.",
+    "explanation": "As entrevistas preservam perspectivas diferentes sobre a festa; a fotografia e o aviso podem acrescentar outras pistas, sem transformar as lembranças em uma versão única.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-04-CON-03"
     ],
-    "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "memory_history_distinction",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-04-Q004",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar História, historiografia, tempo, memória e fontes por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Um livro escolar antigo afirmava que a feira da cidade surgiu em torno da estação de trem. Durante a catalogação, pesquisadores localizaram atas de uma associação de agricultores que citam encontros mensais na praça quatro anos antes da estação funcionar. As atas não provam que ali já havia uma feira regular, mas registram troca de sementes e venda de excedentes. Uma nova edição do livro apresenta as atas, explica suas limitações e discute como a pergunta de pesquisa mudou após o achado.\n\nO que a revisão da narrativa histórica demonstra?",
     "options": [
       {
         "key": "A",
-        "text": "Tempo histórico envolve cronologia, duração, mudanças, permanências e simultaneidades."
+        "text": "Uma interpretação pode ser revista quando novas fontes sustentam perguntas diferentes.",
+        "rationale": "As atas acrescentam evidências e também deixam dúvidas que a equipe declara."
       },
       {
         "key": "B",
-        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+        "text": "A versão antiga deve ser mantida porque livros escolares encerram o debate.",
+        "targetsError": "tratar_historiografia_como_fixa",
+        "rationale": "O achado documental permite reexaminar a explicação existente."
       },
       {
         "key": "C",
-        "text": "Memória e História são exatamente a mesma coisa."
+        "text": "As atas deslocam a hipótese sobre os encontros, mas não bastam para confirmar uma feira regular.",
+        "targetsError": "extrapolar_pistas_da_fonte",
+        "rationale": "As atas registram encontros e trocas, sem confirmar uma feira regular."
       },
       {
         "key": "D",
-        "text": "Uma fonte fala por si e dispensa contexto."
+        "text": "A nova edição falsifica o passado ao mudar a pergunta inicial.",
+        "targetsError": "confundir_revisao_com_falsificacao",
+        "rationale": "A pesquisa informa as fontes e os limites usados na revisão."
       },
       {
         "key": "E",
-        "text": "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+        "text": "O livro antigo registra a estação como origem dos encontros.",
+        "targetsError": "tomar_narrativa_como_fonte_independente",
+        "rationale": "A narrativa anterior é justamente o ponto reavaliado."
       }
     ],
     "correctOption": "A",
-    "explanation": "Tempo histórico envolve cronologia, duração, mudanças, permanências e simultaneidades.",
+    "explanation": "As atas levam a revisar a explicação, mas não provam a existência de uma feira regular; apresentar essa ressalva mantém a interpretação ligada às evidências.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-04-CON-04"
     ],
-    "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "historiography",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-04-Q005",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado.\nII. Historiadores trabalham somente com documentos escritos oficiais.\nIII. Memória é seletiva e está ligada a experiências e identidades; não é idêntica à historiografia.\nIV. Memória e História são exatamente a mesma coisa.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma turma investigou o fechamento de uma pequena fábrica em 1978. O caderno de produção registra redução de pedidos nos meses anteriores; uma fotografia mostra o portão fechado; uma entrevista feita quarenta anos depois afirma que a decisão pegou trabalhadores de surpresa. O arquivo da empresa não foi localizado, e a fotografia não tem data exata. Os estudantes anotaram as diferenças entre os registros e planejam entrevistar mais pessoas antes de concluir o trabalho.\n\nQual próximo passo responde melhor às lacunas identificadas?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Considerar a fotografia suficiente para datar o fechamento no mês em que foi tirada.",
+        "targetsError": "atribuir_data_sem_metadados",
+        "rationale": "A imagem não tem data precisa."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Descartar a entrevista porque foi realizada décadas após o fechamento.",
+        "targetsError": "rejeitar_memoria_por_distancia_temporal",
+        "rationale": "A distância no tempo pede contextualização, não descarte automático."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Investigar se a queda de pedidos antecedeu o fechamento sem tratá-la, por si só, como causa.",
+        "targetsError": "confundir_sequencia_com_causa",
+        "rationale": "A sequência registrada não explica, por si só, a decisão de fechar a fábrica."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Buscar outros relatos e registros para comparar datas, experiências e explicações possíveis.",
+        "rationale": "A equipe pode cruzar novas fontes antes de concluir a pesquisa."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Unificar os três registros como se tivessem a mesma autoria e finalidade.",
+        "targetsError": "apagar_diferencas_entre_fontes",
+        "rationale": "Caderno, foto e entrevista foram produzidos em contextos diferentes."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "D",
+    "explanation": "A própria turma reconhece data incerta, arquivo ausente e memória posterior; cruzar novas fontes pode testar explicações sem antecipar uma causa.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -179,37 +234,48 @@
       "GH-04-CON-03",
       "GH-04-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-04-Q006",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre História, historiografia, tempo, memória e fontes. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Um conjunto de cadernos lista quem pesava os produtos, quem anotava pagamentos e quem fazia a limpeza do galpão entre 1960 e 1990. Nos primeiros cadernos, esses registros aparecem sem nomes; em fichas posteriores, aparecem nomes de mulheres que também participavam das reuniões. As atas de reunião registram mudanças nos horários de entrega, mas não explicam por que as tarefas foram distribuídas daquele modo. A equipe decidiu consultar antigos trabalhadores e comparar os cadernos antes de escrever o painel da exposição.\n\nQue escolha amplia a investigação sobre os sujeitos históricos?",
     "options": [
       {
         "key": "A",
-        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+        "text": "Concentrar a análise nos dirigentes, já que os cadernos mencionam suas decisões.",
+        "targetsError": "restringir_sujeitos_a_cargos_formais",
+        "rationale": "Os registros também apontam tarefas e participantes além da direção."
       },
       {
         "key": "B",
-        "text": "Memória e História são exatamente a mesma coisa."
+        "text": "Atribuir a mudança de horários à entrada das mulheres nas reuniões.",
+        "targetsError": "inferir_causa_de_um_registro",
+        "rationale": "As atas não explicam a causa da mudança."
       },
       {
         "key": "C",
-        "text": "Uma fonte fala por si e dispensa contexto."
+        "text": "Ignorar as tarefas sem nome porque não pertencem à história da cooperativa.",
+        "targetsError": "desconsiderar_trabalho_sem_identificacao",
+        "rationale": "A organização do trabalho faz parte da investigação proposta."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Tratar os nomes como evidência de participação registrada, sem inferir quando as mulheres começaram a atuar.",
+        "targetsError": "confundir_registro_com_inicio_da_participacao",
+        "rationale": "A ausência de nomes nos cadernos antigos não informa quando começou a participação."
       },
       {
         "key": "E",
-        "text": "Perguntar quem produziu a fonte, quando, para quem, com qual finalidade e quais limites ela possui."
+        "text": "Ouvir antigos trabalhadores e investigar como tarefas e registros se modificaram.",
+        "rationale": "Os cadernos mostram lacunas e mudanças que depoimentos podem contextualizar."
       }
     ],
     "correctOption": "E",
-    "explanation": "Perguntar quem produziu a fonte, quando, para quem, com qual finalidade e quais limites ela possui.",
+    "explanation": "Os nomes aparecem nos registros de modos diferentes, e as atas não explicam a distribuição das tarefas; entrevistas podem ampliar a análise sem atribuir uma causa pronta.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -220,37 +286,48 @@
       "GH-04-CON-05",
       "GH-04-CON-06"
     ],
-    "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "invisible_historical_actors",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-04-Q007",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar História, historiografia, tempo, memória e fontes?",
+    "stem": "Relato oral e fotografia didáticos ficcionais — Um antigo barqueiro descreveu que atravessava o arroio em uma canoa nos anos 1960 e que, mais tarde, passou a operar uma embarcação motorizada. A fotografia da família mostra a canoa ao lado de uma rampa de concreto, mas não traz data. Um registro da prefeitura indica que a rampa foi reformada em 1984. Na entrevista, o barqueiro disse que a travessia continuou sendo usada para chegar ao mercado, embora o tempo de percurso tenha diminuído depois da troca da embarcação.\n\nQual leitura articula mudança e permanência no relato?",
     "options": [
       {
         "key": "A",
-        "text": "História é produzida a partir de perguntas, fontes e métodos; não é simples reprodução automática do passado."
+        "text": "A canoa e a embarcação motorizada foram usadas no mesmo período registrado.",
+        "targetsError": "fundir_tempos_de_uso",
+        "rationale": "O relato situa a troca da embarcação em um momento posterior."
       },
       {
         "key": "B",
-        "text": "Fonte histórica é todo vestígio que pode ser analisado para responder perguntas sobre sociedades no tempo."
+        "text": "O meio de transporte mudou, enquanto a travessia manteve uma função cotidiana.",
+        "rationale": "O depoimento relata outra embarcação e o mesmo destino ao mercado."
       },
       {
         "key": "C",
-        "text": "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates."
+        "text": "A fotografia comprova que a rampa foi construída em 1984.",
+        "targetsError": "confundir_reforma_com_construcao",
+        "rationale": "O registro informa uma reforma, e a foto não tem data."
       },
       {
         "key": "D",
-        "text": "Uma fonte fala por si e dispensa contexto."
+        "text": "O mercado deixou de ser acessível quando a canoa foi substituída.",
+        "targetsError": "contradizer_o_depoimento",
+        "rationale": "O barqueiro relata que continuou atravessando para chegar ao mercado."
       },
       {
         "key": "E",
-        "text": "Tempo histórico envolve cronologia, duração, mudanças, permanências e simultaneidades."
+        "text": "Relacionar a troca da embarcação à redução do tempo de percurso, sem concluir que mudou o uso geral do arroio.",
+        "targetsError": "generalizar_memoria_individual",
+        "rationale": "O relato menciona a travessia ao mercado, mas não descreve o uso geral do arroio."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "B",
+    "explanation": "O depoimento descreve mudança no meio e continuidade do trajeto ao mercado; a reforma da rampa não indica quando a fotografia foi feita.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -261,37 +338,48 @@
       "GH-04-CON-05",
       "GH-04-CON-06"
     ],
-    "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "change_continuity",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   },
   {
     "id": "GH-04-Q008",
+    "version": 3,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de História, historiografia, tempo, memória e fontes, qual conclusão final é sustentável?",
+    "stem": "Uma placa numa praça atribui a fundação do mercado a um único comerciante. Um jornal local publicado três anos depois da data gravada na placa fala de uma comissão de vendedores, e uma entrevista recente menciona uma quitandeira que organizava as primeiras bancas. A equipe ainda não encontrou a ata original da comissão. O curador propôs apresentar as três fontes lado a lado, com notas sobre suas datas e autoria, e convidar visitantes a enviar outros documentos familiares.\n\nQual decisão editorial é mais coerente com as evidências do dossiê?",
     "options": [
       {
         "key": "A",
-        "text": "Historiadores trabalham somente com documentos escritos oficiais."
+        "text": "Manter a placa como fonte principal por trazer uma inscrição antiga.",
+        "targetsError": "hierarquizar_fontes_sem_criterio",
+        "rationale": "A placa não elimina o valor dos registros e das memórias."
       },
       {
         "key": "B",
-        "text": "Memória e História são exatamente a mesma coisa."
+        "text": "Apresentar a entrevista como indício sobre as primeiras bancas e buscar confirmação independente.",
+        "targetsError": "trocar_uma_fonte_por_outra_sem_analise",
+        "rationale": "A lembrança é um indício, mas não confirma sozinha quando surgiram as primeiras bancas."
       },
       {
         "key": "C",
-        "text": "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates."
+        "text": "Apresentar as fontes, explicitar divergências e procurar a ata mencionada.",
+        "rationale": "A proposta preserva autoria e data e reconhece uma lacuna."
       },
       {
         "key": "D",
-        "text": "Uma fonte fala por si e dispensa contexto."
+        "text": "Concluir que a entrevista confirma a existência da comissão de vendedores.",
+        "targetsError": "fundir_depoimentos_e_registros",
+        "rationale": "A entrevista menciona outra participante, não a ata da comissão."
       },
       {
         "key": "E",
-        "text": "Mudar uma interpretação histórica significa necessariamente falsificar o passado."
+        "text": "Afirmar que o comerciante não participou da fundação do mercado.",
+        "targetsError": "negar_parte_da_narrativa_sem_prova",
+        "rationale": "As fontes questionam uma autoria única, sem excluir o comerciante."
       }
     ],
     "correctOption": "C",
-    "explanation": "Historiografia é a produção de interpretações históricas e pode mudar quando surgem novas perguntas, fontes e debates.",
+    "explanation": "O jornal e a entrevista ampliam a narrativa da placa, mas a ata ainda falta; apresentar as divergências mantém visível o estado da pesquisa.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -302,7 +390,7 @@
       "GH-04-CON-05",
       "GH-04-CON-06"
     ],
-    "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "targetedError": "source_analysis",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V3"
   }
 ]

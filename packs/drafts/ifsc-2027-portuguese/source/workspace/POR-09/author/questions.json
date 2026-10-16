@@ -6,299 +6,378 @@
       "id": "POR-09-Q01",
       "lessonId": "POR-09",
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Sintaxe: sujeito, predicado, complementos e ordem dos termos em uso real da língua?",
+      "stem": "Na oração que relata a chegada, qual grupo nominal funciona como sujeito de chegaram?",
       "options": [
         {
           "id": "A",
-          "text": "O primeiro termo é sempre sujeito."
+          "text": "As famílias que chegaram à mostra e seguiram até o pátio.",
+          "targetsError": "interpretation",
+          "rationale": "As famílias são visitantes em outra informação; o grupo que chegou está nomeado na oração."
         },
         {
           "id": "B",
-          "text": "Todo termo depois do verbo é objeto direto."
+          "text": "Os grupos que dispuseram as mesas sob a cobertura.",
+          "targetsError": "conceptual",
+          "rationale": "Os grupos aparecem na oração seguinte; “chegaram” concorda com o grupo que vem depois do verbo."
         },
         {
           "id": "C",
-          "text": "Se a ordem muda, a função muda automaticamente."
+          "text": "Os estudantes do 2º ano que organizaram a exposição."
         },
         {
           "id": "D",
-          "text": "Sujeito é o termo com o qual o verbo estabelece relação de concordância em estruturas pessoais, não simplesmente “quem faz a ação”."
+          "text": "A equipe da escola que recebeu os visitantes na entrada.",
+          "targetsError": "interpretation",
+          "rationale": "A professora recebe as famílias na frase seguinte; não é o grupo que chegou ao pátio."
         },
         {
           "id": "E",
-          "text": "Sujeito é sempre quem pratica ação."
+          "text": "Os objetos antigos que foram levados para a mostra.",
+          "targetsError": "attention",
+          "rationale": "Os objetos são tema da exposição, mas a oração atribui a chegada aos estudantes."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Sujeito é o termo com o qual o verbo estabelece relação de concordância em estruturas pessoais, não simplesmente “quem faz a ação”.",
+      "correctOption": "C",
+      "explanation": "A oração combina o verbo plural chegaram com o grupo os estudantes do 2º ano, retomado pela informação de que organizaram a exposição. O pátio é o destino introduzido por ao, por isso a proximidade com o verbo não o torna sujeito.",
       "difficulty": "foundation",
       "cognitiveOperation": "recognize",
       "concepts": [
         "POR-09-C01"
       ],
-      "targetedError": "Sujeito é sempre quem pratica ação.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tomar o lugar indicado por ao pátio como quem realizou a chegada.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "No boletim fictício da Escola Horizonte, redigido pela estudante Lia Nunes em 18 de março de 2026, a equipe registra a abertura da mostra de objetos antigos. No fim da tarde, chegaram ao pátio os estudantes do 2º ano que organizaram a exposição. Os grupos dispuseram seis mesas sob a cobertura e deixaram o corredor livre. A professora Lina recebeu as famílias na entrada. A comissão anotou 42 visitantes na primeira hora e planejou outra visita para sexta-feira."
     },
     {
       "id": "POR-09-Q02",
       "lessonId": "POR-09",
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Sintaxe: sujeito, predicado, complementos e ordem dos termos, qual princípio deve orientar a análise?",
+      "stem": "Na primeira frase, qual segmento apresenta o que se declara sobre a comissão de leitura?",
       "options": [
         {
           "id": "A",
-          "text": "Predicado reúne o que se declara sobre o sujeito ou a estrutura verbal da oração."
+          "text": "A comissão de leitura, grupo sobre o qual a frase faz uma declaração.",
+          "targetsError": "conceptual",
+          "rationale": "Esse grupo é o tema da declaração; as ações atribuídas a ele aparecem no predicado."
         },
         {
           "id": "B",
-          "text": "Todo termo depois do verbo é objeto direto."
+          "text": "Às oito e no primeiro intervalo, os momentos em que as ações ocorreram.",
+          "targetsError": "attention",
+          "rationale": "Os horários são circunstâncias; não reúnem as ações declaradas sobre a comissão."
         },
         {
           "id": "C",
-          "text": "Se a ordem muda, a função muda automaticamente."
+          "text": "Três turmas, grupo que participou da abertura e foi recebido pela comissão.",
+          "targetsError": "conceptual",
+          "rationale": "As turmas completam a ação de receber; a frase também declara que a comissão abriu a sala."
         },
         {
           "id": "D",
-          "text": "Sujeito é sempre quem pratica ação."
+          "text": "A sala aberta e as três turmas recebidas, os elementos envolvidos nas ações.",
+          "targetsError": "interpretation",
+          "rationale": "Esses grupos participam das ações, mas o segmento não apresenta o que se declara sobre a comissão."
         },
         {
           "id": "E",
-          "text": "O primeiro termo é sempre sujeito."
+          "text": "Abriu a sala às oito e recebeu três turmas no primeiro intervalo."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Predicado reúne o que se declara sobre o sujeito ou a estrutura verbal da oração.",
+      "correctOption": "E",
+      "explanation": "A frase atribui à comissão duas ações, abrir a sala e receber as turmas, além de informar quando ocorreram. O horário é somente uma circunstância temporal; o segmento com os dois verbos apresenta a declaração completa sobre o grupo.",
       "difficulty": "direct",
       "cognitiveOperation": "understand",
       "concepts": [
         "POR-09-C02"
       ],
-      "targetedError": "O primeiro termo é sempre sujeito.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir uma circunstância temporal com toda a informação atribuída ao sujeito.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Crônica escolar fictícia de Rui Tavares, datada de 21 de maio de 2026: a comissão de leitura abriu a sala às oito e recebeu três turmas no primeiro intervalo. A mesa de novidades ficou perto da janela, enquanto os livros de aventura ocuparam o armário azul. Uma aluna perguntou se poderia levar dois títulos para casa; a bibliotecária explicou o prazo de devolução no balcão. Ao meio-dia, a equipe registrou onze empréstimos e guardou as fichas numa caixa de papelão."
     },
     {
       "id": "POR-09-Q03",
       "lessonId": "POR-09",
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Sintaxe: sujeito, predicado, complementos e ordem dos termos?",
+      "stem": "Ao resumir a informação principal sobre o envio às famílias, qual segmento nomeia o conteúdo encaminhado?",
       "options": [
         {
           "id": "A",
-          "text": "Se a ordem muda, a função muda automaticamente."
+          "text": "A secretaria, responsável por encaminhar a programação revisada.",
+          "targetsError": "conceptual",
+          "rationale": "A secretaria realiza a ação de enviar; o segmento pedido é o conteúdo que ela encaminhou."
         },
         {
           "id": "B",
-          "text": "Sujeito é sempre quem pratica ação."
+          "text": "O cronograma atualizado, com horários, salas e duração das oficinas."
         },
         {
           "id": "C",
-          "text": "Objetos completam verbos transitivos; o indireto é introduzido por preposição exigida pelo verbo."
+          "text": "Às famílias, grupo que recebeu a mensagem pelo aplicativo da escola.",
+          "targetsError": "procedural",
+          "rationale": "O segmento identifica os destinatários, não o conteúdo encaminhado."
         },
         {
           "id": "D",
-          "text": "O primeiro termo é sempre sujeito."
+          "text": "Na quinta-feira, momento em que a secretaria distribuiu a programação.",
+          "targetsError": "attention",
+          "rationale": "O segmento informa quando ocorreu o envio, não o que foi encaminhado."
         },
         {
           "id": "E",
-          "text": "Todo termo depois do verbo é objeto direto."
+          "text": "Pelo aplicativo, meio usado para transmitir o aviso aos responsáveis.",
+          "targetsError": "interpretation",
+          "rationale": "O aplicativo é o meio de envio; o conteúdo é o cronograma."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Objetos completam verbos transitivos; o indireto é introduzido por preposição exigida pelo verbo.",
+      "correctOption": "B",
+      "explanation": "O documento é o que a secretaria enviou, e o verbo se liga diretamente a esse termo. Às famílias identifica os destinatários e o aplicativo indica o meio; esses detalhes podem parecer complementos próximos, mas não são o conteúdo transmitido.",
       "difficulty": "applied",
       "cognitiveOperation": "discriminate",
       "concepts": [
         "POR-09-C03"
       ],
-      "targetedError": "Todo termo depois do verbo é objeto direto.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Trocar o conteúdo enviado pelos destinatários da mensagem.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Aviso fictício redigido por Caio Mendes para o mural da Escola das Palmeiras em 9 de junho de 2026: na quinta-feira, a secretaria enviou o cronograma atualizado às famílias por meio do aplicativo. O documento reúne os horários das apresentações, os nomes das salas e a duração prevista de cada oficina. A coordenação pediu que os responsáveis confirmassem o recebimento até o fim do dia. Na semana seguinte, os estudantes receberão uma cópia impressa na entrada, junto com um mapa dos corredores."
     },
     {
       "id": "POR-09-Q04",
       "lessonId": "POR-09",
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Sintaxe: sujeito, predicado, complementos e ordem dos termos?",
+      "stem": "Qual trecho nomeia quem recebeu o agradecimento, em vez de indicar o motivo da ação?",
       "options": [
         {
           "id": "A",
-          "text": "Sujeito é sempre quem pratica ação."
+          "text": "A diretora, que reconheceu o trabalho das equipes da feira.",
+          "targetsError": "conceptual",
+          "rationale": "A diretora realiza o agradecimento; o trecho não nomeia quem o recebeu."
         },
         {
           "id": "B",
-          "text": "O primeiro termo é sempre sujeito."
+          "text": "Pela organização das barracas, motivo pelo qual a diretora agradeceu.",
+          "targetsError": "interpretation",
+          "rationale": "Esse trecho indica o motivo; a pergunta pede as pessoas que receberam o agradecimento."
         },
         {
           "id": "C",
-          "text": "Todo termo depois do verbo é objeto direto."
+          "text": "Depois de duas horas de montagem, momento anterior à abertura da feira.",
+          "targetsError": "attention",
+          "rationale": "O trecho situa o relato no tempo, sem identificar quem recebeu o agradecimento."
         },
         {
           "id": "D",
-          "text": "Se a ordem muda, a função muda automaticamente."
+          "text": "Aos voluntários que prepararam os setores da feira."
         },
         {
           "id": "E",
-          "text": "Adjuntos acrescentam circunstâncias ou caracterizações e não têm a mesma função de complementos exigidos."
+          "text": "A organização das barracas, trabalho reconhecido pela diretora.",
+          "targetsError": "conceptual",
+          "rationale": "Esse trecho nomeia aquilo pelo qual a diretora agradeceu, não os destinatários."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Adjuntos acrescentam circunstâncias ou caracterizações e não têm a mesma função de complementos exigidos.",
+      "correctOption": "D",
+      "explanation": "A oração separa quem agradeceu, o grupo a quem o agradecimento se dirige e o motivo indicado por pela organização. O segmento aos voluntários é o que se conecta ao verbo com a preposição a; confundi-lo com a causa apaga a diferença entre as duas relações.",
       "difficulty": "ifsc",
       "cognitiveOperation": "apply",
       "concepts": [
         "POR-09-C04"
       ],
-      "targetedError": "Se a ordem muda, a função muda automaticamente.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir o motivo do agradecimento com as pessoas a quem ele se dirige.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Relato fictício da feira do bairro, assinado por Marina Alves em 3 de agosto de 2026: depois de duas horas de montagem, a diretora agradeceu aos voluntários pela organização das barracas. As equipes haviam separado frutas, livros usados e peças de artesanato em setores diferentes. No fim da manhã, uma chuva curta levou os visitantes para o salão comunitário, onde a apresentação de um grupo de cordas continuou. A diretora também entregou aos cozinheiros uma lista com os horários de reposição dos alimentos."
     },
     {
       "id": "POR-09-Q05",
       "lessonId": "POR-09",
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Sintaxe: sujeito, predicado, complementos e ordem dos termos?",
+      "stem": "Na frase sobre as caixas de som, qual trecho informa especificamente a posição em que foram instaladas?",
       "options": [
         {
           "id": "A",
-          "text": "O primeiro termo é sempre sujeito."
+          "text": "Ao lado do palco, ponto escolhido para posicionar as caixas de som."
         },
         {
           "id": "B",
-          "text": "A ordem direta sujeito-verbo-complementos é frequente, mas inversões podem produzir foco, ritmo ou estilo."
+          "text": "No pátio coberto, espaço previsto para as demonstrações da mostra.",
+          "targetsError": "conceptual",
+          "rationale": "O anúncio associa o pátio às demonstrações; a posição indicada para as caixas é ao lado do palco."
         },
         {
           "id": "C",
-          "text": "Todo termo depois do verbo é objeto direto."
+          "text": "Durante a montagem, período em que os estudantes prepararam os espaços.",
+          "targetsError": "conceptual",
+          "rationale": "O trecho informa quando a instalação ocorreu, não a posição das caixas."
         },
         {
           "id": "D",
-          "text": "Se a ordem muda, a função muda automaticamente."
+          "text": "Entre as mesas, trecho da frase que localiza o corredor deixado pelos estudantes.",
+          "targetsError": "attention",
+          "rationale": "A expressão localiza o corredor, enquanto a pergunta trata da posição das caixas."
         },
         {
           "id": "E",
-          "text": "Sujeito é sempre quem pratica ação."
+          "text": "No saguão, área reservada para a exposição dos painéis.",
+          "targetsError": "interpretation",
+          "rationale": "O texto prevê os painéis no saguão; as caixas foram instaladas ao lado do palco."
         }
       ],
-      "correctOption": "B",
-      "explanation": "A ordem direta sujeito-verbo-complementos é frequente, mas inversões podem produzir foco, ritmo ou estilo.",
+      "correctOption": "A",
+      "explanation": "O segmento ao lado do palco responde onde as caixas foram instaladas e acrescenta uma localização à ação. Durante a montagem é uma circunstância temporal; a proximidade entre as expressões no relato não altera o valor de cada uma.",
       "difficulty": "applied",
       "cognitiveOperation": "evaluate",
       "concepts": [
         "POR-09-C05"
       ],
-      "targetedError": "Sujeito é sempre quem pratica ação.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler uma marcação de tempo como se indicasse a posição do equipamento.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Anúncio fictício da Mostra de Ciências da Escola do Lago, redigido por Pedro Reis em 14 de setembro de 2026: os painéis ficarão no saguão, e as experiências serão demonstradas no pátio coberto. Durante a montagem, estudantes instalaram caixas de som ao lado do palco e deixaram um corredor amplo entre as mesas. A equipe de apoio recebeu uma planta do espaço com as saídas marcadas. A visita das famílias começará às nove, com uma pausa para a apresentação do coral."
     },
     {
       "id": "POR-09-Q06",
       "lessonId": "POR-09",
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Sintaxe: sujeito, predicado, complementos e ordem dos termos, qual análise está correta?",
+      "stem": "Na primeira frase, como o grupo que concorda com estavam se relaciona à ordem da oração?",
       "options": [
         {
           "id": "A",
-          "text": "Todo termo depois do verbo é objeto direto."
+          "text": "“O corredor principal” é o sujeito, e o plural do verbo se explica pela proximidade de “mapas”.",
+          "targetsError": "conceptual",
+          "rationale": "O verbo concorda com o grupo plural “os mapas”; o corredor indica lugar."
         },
         {
           "id": "B",
-          "text": "Se a ordem muda, a função muda automaticamente."
+          "text": "“A placa” é o sujeito, pois nomeia o elemento que identifica os mapas na frase seguinte.",
+          "targetsError": "attention",
+          "rationale": "A placa aparece em outra oração e não controla a concordância de “estavam”."
         },
         {
           "id": "C",
-          "text": "Sujeito é sempre quem pratica ação."
+          "text": "Os mapas desenhados pelos antigos ferroviários são o sujeito posposto ao verbo."
         },
         {
           "id": "D",
-          "text": "Identificar funções sintáticas exige relações entre termos, não apenas posição."
+          "text": "“A monitora” é o sujeito porque explica a origem das peças expostas.",
+          "targetsError": "attention",
+          "rationale": "A monitora aparece depois e pratica outra ação; o verbo plural concorda com os mapas."
         },
         {
           "id": "E",
-          "text": "O primeiro termo é sempre sujeito."
+          "text": "“Três bancos” é o sujeito posposto, e “os mapas” indica o lugar da exposição.",
+          "targetsError": "interpretation",
+          "rationale": "Os bancos aparecem em outra frase; “os mapas” é o grupo que concorda com “estavam”."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Identificar funções sintáticas exige relações entre termos, não apenas posição.",
+      "correctOption": "C",
+      "explanation": "A expressão os mapas desenhados pelos antigos ferroviários concorda no plural com estavam expostos e nomeia o que se encontrava no corredor. O grupo do corredor marca o lugar e aparece antes do verbo, mas essa posição inicial não o transforma no sujeito.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze",
       "concepts": [
         "POR-09-C06"
       ],
-      "targetedError": "O primeiro termo é sempre sujeito.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Atribuir função de sujeito ao termo locativo por causa de sua posição inicial.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Nota fictícia de visita ao Museu da Estação, escrita por Nara Lopes em 2 de outubro de 2026: no corredor principal, estavam expostos os mapas desenhados pelos antigos ferroviários. Uma placa identificava a origem de cada folha, e a monitora explicou que algumas peças vieram de oficinas realizadas no bairro. Perto da janela, três bancos permitiam uma pausa entre as salas. Ao final do percurso, os visitantes registraram perguntas num caderno e devolveram os fones usados na gravação."
     },
     {
       "id": "POR-09-Q07",
       "lessonId": "POR-09",
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Sujeito é sempre quem pratica ação.”. Qual é a melhor correção?",
+      "stem": "Na primeira frase, qual termo é o sujeito da forma permaneceu, embora não pratique uma ação intencional?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "A chuva da madrugada, elemento que aparece no início da frase como causa da condição.",
+          "targetsError": "attention",
+          "rationale": "A chuva é uma circunstância temporal; a janela é o elemento descrito como fechada."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Durante a pintura, período em que a janela permaneceu fechada.",
+          "targetsError": "interpretation",
+          "rationale": "Esse trecho informa quando a janela permaneceu fechada, não o que permaneceu."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "O zelador, que realizou tarefas de manutenção na sala.",
+          "targetsError": "conceptual",
+          "rationale": "O zelador age na frase seguinte; a primeira atribui o estado de fechado à janela."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "A sala 4, espaço em que a janela permaneceu fechada durante a pintura.",
+          "targetsError": "conceptual",
+          "rationale": "A sala indica o local; o termo descrito como fechado é a janela."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "A janela da sala 4, descrita como fechada após a chuva."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Sujeito é o termo com o qual o verbo estabelece relação de concordância em estruturas pessoais, não simplesmente “quem faz a ação”.",
+      "correctOption": "E",
+      "explanation": "A primeira frase atribui o estado de permanecer fechada à janela, que controla a forma singular permaneceu. O zelador pratica as ações de retirar e cobrir em outra oração; essa diferença mostra por que o sujeito não precisa ser um agente intencional.",
       "difficulty": "applied",
       "cognitiveOperation": "diagnose_error",
       "concepts": [
         "POR-09-C01"
       ],
-      "targetedError": "Sujeito é sempre quem pratica ação.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Supor que o sujeito precisa ser quem executa uma ação voluntária.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Registro fictício de manutenção da Escola Ipê, assinado por Joana Cruz em 11 de novembro de 2026: após a chuva da madrugada, a janela da sala 4 permaneceu fechada durante a pintura. O zelador retirou duas mesas, cobriu os livros com uma lona e deixou um aviso na porta. No dia seguinte, a turma usou a sala de leitura para concluir um cartaz sobre economia de água. A direção informou que o conserto da janela será feito antes das férias, quando a equipe poderá trabalhar sem móveis no caminho."
     },
     {
       "id": "POR-09-Q08",
       "lessonId": "POR-09",
       "type": "MCQ",
-      "stimulus": "Em “Chegaram cedo os estudantes do turno da manhã”, o sujeito aparece depois do verbo.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Na frase sobre o mapa, qual análise distingue corretamente os dois complementos de entregou?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Um mapa das salas é o objeto indireto, e aos visitantes identifica quem recebeu a entrega.",
+          "targetsError": "conceptual",
+          "rationale": "O mapa nomeia o conteúdo entregue; aos visitantes indica quem recebeu esse conteúdo."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "Um mapa das salas é o objeto direto; aos visitantes identifica quem o recebeu."
         },
         {
           "id": "C",
-          "text": "“Os estudantes do turno da manhã” é sujeito porque o verbo concorda com “estudantes”; posição não define função."
+          "text": "A guia é o objeto direto, e um mapa das salas indica a quem a entrega foi feita.",
+          "targetsError": "procedural",
+          "rationale": "A guia realiza a ação; o mapa é o conteúdo, e os visitantes são os destinatários."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "Aos visitantes funciona como objeto direto, e um mapa das salas é o complemento com preposição.",
+          "targetsError": "conceptual",
+          "rationale": "Os papéis estão invertidos: os visitantes recebem o mapa, que é o conteúdo entregue."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "A ordem do percurso é o conteúdo entregue, enquanto o mapa indica o local da entrega.",
+          "targetsError": "interpretation",
+          "rationale": "A frase diz que a guia entregou um mapa e, em outra ação, indicou a ordem do percurso."
         }
       ],
-      "correctOption": "C",
-      "explanation": "“Os estudantes do turno da manhã” é sujeito porque o verbo concorda com “estudantes”; posição não define função.",
+      "correctOption": "B",
+      "explanation": "A guia entregou o quê: um mapa das salas; entregou a quem: aos visitantes. O grupo preposicionado indica os destinatários, enquanto um mapa nomeia o conteúdo transferido. A guia pratica a ação, portanto não é um dos complementos.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-09-C01",
         "POR-09-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Inverter o conteúdo transferido e o grupo que recebe esse conteúdo.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Relato fictício de uma visita ao arquivo municipal, produzido por Elisa Prado em 6 de dezembro de 2026: durante a recepção, a guia entregou aos visitantes um mapa das salas e indicou a ordem do percurso. O grupo começou pela coleção de fotografias, onde encontrou imagens da antiga estação. Depois, os alunos fizeram perguntas sobre as datas escritas nas legendas. Antes da saída, a monitora recolheu os crachás e deixou um folheto com o horário de atendimento para as famílias."
     }
   ]
 }

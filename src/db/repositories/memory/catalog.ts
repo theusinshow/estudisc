@@ -3,6 +3,8 @@ import type { TrackPack } from "@/features/import/application/track-pack-schema"
 import { getMemoryStore, summarizePack } from './store';
 import { resolveLessonVersionContext, targetedResult } from "@/features/import/application/lesson-version-policy";
 import { LessonVersionConflictError, type LessonVersionPack } from "@/features/import/application/lesson-version-contracts";
+import type { NewLessonPack } from "@/features/import/application/new-lesson-contracts";
+import { newLessonResult, resolveNewLessonContext } from "@/features/import/application/new-lesson-policy";
 import type { LessonDetail } from "../catalog-repository";
 
 
@@ -21,6 +23,19 @@ export class MemoryTrackImportRepository implements TrackImportRepository {
     if (preview) return targetedResult(pack, "ready");
     this.store.packImports.push({ packId: pack.packId, version: pack.version, contentHash, manifest: projection });
     return targetedResult(pack, "imported");
+  }
+
+  async executeNewLesson(pack: NewLessonPack, contentHash: string, preview: boolean) {
+    // ADR 0064 in the disposable store: same policy and receipt rules; no await between validation and append.
+    const receipt = this.store.packImports.find(row => row.packId === pack.packId && row.version === pack.version);
+    if (receipt) { if (receipt.contentHash !== contentHash || receipt.manifest?.schema !== "caderno.track.v2" || receipt.manifest.track.metadata.newLessonImport === undefined) throw new LessonVersionConflictError("Pack receipt conflict"); return newLessonResult(pack, "already_imported"); }
+    if (!this.store.tracks.some(t => t.stableId === pack.target.trackId && t.contentVersion === pack.target.trackVersion)) throw new LessonVersionConflictError("Target Track not found");
+    const manifests = [...this.store.packImports].reverse().flatMap(row => row.manifest ? [row.manifest] : []);
+    const { projection } = resolveNewLessonContext(manifests, pack);
+    if (manifests.some(p => p.schema === "caderno.track.v2" && p.track.modules.some(m => m.lessons.some(l => l.id === pack.lesson.id)))) throw new LessonVersionConflictError("Lesson already exists");
+    if (preview) return newLessonResult(pack, "ready");
+    this.store.packImports.push({ packId: pack.packId, version: pack.version, contentHash, manifest: projection });
+    return newLessonResult(pack, "imported");
   }
 
   async findPackImport(packId: string, version: number): Promise<ExistingPackImport | null> {

@@ -2,294 +2,292 @@
   {
     "id": "CIE-28-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de animais, plantas, fungos e microrganismos, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Diário de caminhada no parque, exemplo criado em 22 set. 2026. Em um parque, a equipe acompanhou uma aranha que capturava pequenos insetos entre folhas. O registro descreveu patas articuladas, ausência de cloroplastos nas células observadas e consumo de presas. Em outra área, os estudantes viram uma planta recebendo luz junto ao lago. A ficha da aranha foi comparada com as de outros animais encontrados na mesma trilha, sem concluir que os organismos eram iguais por viverem perto uns dos outros.\n\nQual interpretação caracteriza melhor a aranha observada?",
     "options": [
       {
         "key": "A",
-        "text": "Plantas obtêm todo seu alimento pronto do solo."
+        "text": "É um animal vertebrado, pois a ficha descreve patas articuladas e captura de presas."
       },
       {
         "key": "B",
-        "text": "Todo microrganismo causa doença."
+        "text": "É um animal endotérmico, pois capturar insetos indica regulação própria da temperatura."
       },
       {
         "key": "C",
-        "text": "Animais são organismos eucarióticos heterotróficos e apresentam grande diversidade de formas e estratégias de vida."
+        "text": "É um animal eucariótico heterotrófico que obtém alimento de outros organismos."
       },
       {
         "key": "D",
-        "text": "Animais são o único grupo importante para o funcionamento dos ecossistemas."
+        "text": "É um artrópode, mas as patas articuladas mostram que pertence ao grupo dos insetos."
       },
       {
         "key": "E",
-        "text": "Todos os fungos são plantas."
+        "text": "É heterotrófica, mas a ausência de cloroplastos permite classificá-la como fungo."
       }
     ],
     "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Animais são organismos eucarióticos heterotróficos e apresentam grande diversidade de formas e estratégias de vida.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "UNDERSTAND",
+    "explanation": "A ficha registra captura de insetos e características de um animal, apoiando a classificação da aranha como eucariótica e heterotrófica. O local próximo a folhas ou água não muda esse conjunto de evidências.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-28-CON-01"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "animal_group_characteristics",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-28-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar animais, plantas, fungos e microrganismos sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Caderno da restauração escolar, atividade de 23 set. 2026. Uma turma comparou dois canteiros de restauração durante oito semanas. No canteiro com mais plantas nativas, a equipe anotou aumento de matéria vegetal e observou insetos, aves e fungos usando o espaço. No outro, havia solo exposto e menos cobertura verde. O relatório descreveu as plantas como parte da base de alimento e abrigo para outras espécies, mas não mediu a produção de todos os organismos do parque.\n\nQue papel das plantas é sustentado pelos dados do canteiro?",
     "options": [
       {
         "key": "A",
-        "text": "Plantas obtêm todo seu alimento pronto do solo."
+        "text": "A cobertura vegetal participa da produção primária e oferece habitat e recursos a outros organismos."
       },
       {
         "key": "B",
-        "text": "Todo microrganismo causa doença."
+        "text": "O aumento de matéria indica produção primária local, mas os dados não permitem associá-la às plantas do canteiro."
       },
       {
         "key": "C",
-        "text": "Todos os fungos são plantas."
+        "text": "A presença de insetos, aves e fungos mostra que a cobertura serviu apenas de abrigo, sem oferecer recursos alimentares."
       },
       {
         "key": "D",
-        "text": "Plantas são eucarióticas e, em sua maioria, realizam fotossíntese; são fundamentais na produção primária e em habitats terrestres."
+        "text": "Os dados descrevem aumento de matéria vegetal, sem indicar relação possível entre cobertura e organismos observados."
       },
       {
         "key": "E",
-        "text": "Animais são o único grupo importante para o funcionamento dos ecossistemas."
+        "text": "A área de solo exposto contribuiu mais para a produção primária, embora tivesse menos cobertura verde."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Plantas são eucarióticas e, em sua maioria, realizam fotossíntese; são fundamentais na produção primária e em habitats terrestres.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "UNDERSTAND",
+    "correctOption": "A",
+    "explanation": "O relatório associa maior cobertura vegetal a recursos e abrigo usados por outros organismos. As plantas contribuem para a produção primária; a observação não exclui a participação de fungos e animais no canteiro.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
       "CIE-28-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "plant_role_in_ecosystem",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-28-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em animais, plantas, fungos e microrganismos?",
+    "stem": "Registro do tronco e da massa, relato de aula de 24 set. 2026. Depois de uma chuva, uma equipe registrou cogumelos sobre um tronco caído. Ao lado, havia sinais de decomposição da madeira e pequenos organismos usando o material em transformação. Em outra bancada, estudantes observaram leveduras em uma massa de pão que cresceu após algumas horas. O relatório comparou esses exemplos e descreveu os fungos como parte de processos ecológicos e de atividades humanas, sem afirmar que todos tinham a mesma função.\n\nQual conclusão integra corretamente os dois registros?",
     "options": [
       {
         "key": "A",
-        "text": "Todo microrganismo causa doença."
+        "text": "Os fungos participam da decomposição do tronco, enquanto a levedura da massa atua como produtora de alimento por fotossíntese."
       },
       {
         "key": "B",
-        "text": "Animais são o único grupo importante para o funcionamento dos ecossistemas."
+        "text": "A levedura participa da fermentação da massa, e os cogumelos do tronco são bactérias decompositoras."
       },
       {
         "key": "C",
-        "text": "Fungos são eucarióticos heterotróficos por absorção e incluem decompositores, simbiontes e espécies usadas em alimentos e medicamentos."
+        "text": "Fungos do tronco participam da decomposição, e leveduras obtêm alimento por ingestão de pedaços da massa."
       },
       {
         "key": "D",
-        "text": "Plantas obtêm todo seu alimento pronto do solo."
+        "text": "A levedura pode atuar na produção de alimentos, mas o registro do tronco não permite associar fungos a processos ecológicos."
       },
       {
         "key": "E",
-        "text": "Todos os fungos são plantas."
+        "text": "Fungos podem decompor matéria e também ser usados em processos de produção de alimentos."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Fungos são eucarióticos heterotróficos por absorção e incluem decompositores, simbiontes e espécies usadas em alimentos e medicamentos.",
-    "difficulty": "DIRECT",
+    "correctOption": "E",
+    "explanation": "A madeira em decomposição e a massa fermentada mostram funções distintas de fungos: participação ecológica e uso na produção de alimento. A levedura não é bactéria nem planta.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-28-CON-03"
+      "CIE-28-CON-03",
+      "CIE-28-CON-05"
     ],
-    "targetedError": "relationship",
+    "targetedError": "fungus_roles_and_classification",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-28-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Leveduras usadas na produção de pães pertencem a qual grupo?",
+    "stem": "Caderno de padaria de bairro, simulação de 25 set. 2026. Uma padaria de bairro manteve um caderno de produção para comparar massas preparadas com fermento biológico e sem fermento. Na primeira, a massa aumentou de volume durante o repouso; na segunda, ficou mais compacta. A equipe explicou que o ingrediente ativo continha leveduras e registrou a temperatura e o tempo de cada fornada. As duas amostras foram assadas pelo mesmo período antes de serem comparadas.\n\nA qual grupo pertencem as leveduras usadas na primeira massa?",
     "options": [
       {
         "key": "A",
-        "text": "Plantas."
+        "text": "Ao grupo das plantas, pois o fermento biológico contém organismos que crescem na massa."
       },
       {
         "key": "B",
-        "text": "Animais."
+        "text": "Ao grupo dos fungos, embora a fermentação descrita seja realizada por bactérias do fermento."
       },
       {
         "key": "C",
-        "text": "Vírus obrigatoriamente."
+        "text": "Ao grupo dos animais, pois a levedura obtém energia de matéria orgânica durante a fermentação."
       },
       {
         "key": "D",
-        "text": "Fungos."
+        "text": "Ao grupo dos fungos, que inclui leveduras aplicadas à fermentação de alimentos."
       },
       {
         "key": "E",
-        "text": "Algas macroscópicas exclusivamente."
+        "text": "Ao grupo das bactérias, pois o fermento biológico contém microrganismos unicelulares que fermentam açúcares."
       }
     ],
     "correctOption": "D",
-    "explanation": "Fungos.",
-    "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "explanation": "O caderno identifica leveduras no fermento biológico; leveduras são fungos usados em processos de fermentação. O crescimento da massa é compatível com essa aplicação e não transforma o organismo em planta ou bactéria.",
+    "difficulty": "FOUNDATION",
+    "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
-      "CIE-28-CON-01",
-      "CIE-28-CON-02",
-      "CIE-28-CON-03"
+      "CIE-28-CON-03",
+      "CIE-28-CON-05"
     ],
-    "targetedError": "application",
+    "targetedError": "yeast_classification",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-28-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Animais são organismos eucarióticos heterotróficos e apresentam grande diversidade de formas e estratégias de vida.\nII. Todos os fungos são plantas.\nIII. Fungos são eucarióticos heterotróficos por absorção e incluem decompositores, simbiontes e espécies usadas em alimentos e medicamentos.\nIV. Todo microrganismo causa doença.\nAssinale a alternativa CORRETA.",
+    "stem": "Ficha de horta comunitária, observação hipotética de 26 set. 2026. Em uma horta comunitária, estudantes coletaram amostras de solo e observaram bactérias e fungos em microscópio. Parte das amostras foi usada em uma atividade sobre decomposição; outra parte veio de uma área onde plantas cresciam junto a microrganismos associados às raízes. O relatório anotou que os grupos encontrados tinham funções diferentes e que a presença de um microrganismo não indicava, por si, que uma planta estivesse doente.\n\nQual leitura é coerente com esse levantamento?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A associação de microrganismos às raízes pode ocorrer mesmo sem evidência de doença na planta."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Microrganismos de grupos distintos podem atuar em decomposição e em associações com plantas."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "As bactérias observadas junto às raízes realizam a absorção de água e sais no lugar das estruturas vegetais."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Microrganismos associados às raízes podem participar do ambiente do solo, enquanto a planta absorve água e sais por suas estruturas."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "A microscopia permite observar microrganismos, mas não determina sozinha quais nutrientes a planta utiliza."
       }
     ],
     "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-    "difficulty": "IFSC",
+    "explanation": "O relatório descreve bactérias e fungos em papéis distintos no solo e junto às raízes. Encontrar microrganismos não basta para concluir que há doença; a função depende do organismo e da interação.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-28-CON-01",
-      "CIE-28-CON-02",
-      "CIE-28-CON-03",
       "CIE-28-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "microbes_as_pathogens_only",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-28-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre animais, plantas, fungos e microrganismos para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Relatório de mata urbana, estudo didático de 27 set. 2026. Uma equipe acompanhou a decomposição de folhas em uma área de mata urbana e anotou a presença de fungos, bactérias, tatuzinhos e minhocas. O grupo não encontrou um produto comercial ligado à área, mas observou que a matéria vegetal desaparecia gradualmente e que o solo recebia novos fragmentos finos. O caderno registrou as interações como parte de um processo ecológico, sem medir benefícios econômicos para moradores próximos.\n\nComo avaliar a importância ecológica das interações descritas?",
     "options": [
       {
         "key": "A",
-        "text": "Todo microrganismo causa doença."
+        "text": "O levantamento descreve decomposição, mas não permite avaliar sozinho todos os efeitos para a comunidade."
       },
       {
         "key": "B",
-        "text": "Animais são o único grupo importante para o funcionamento dos ecossistemas."
+        "text": "O registro permite atribuir a ciclagem principalmente a fungos e bactérias; a participação dos animais não está evidenciada."
       },
       {
         "key": "C",
-        "text": "Plantas obtêm todo seu alimento pronto do solo."
+        "text": "A atividade de fungos, bactérias e animais contribui para a ciclagem de matéria no ambiente."
       },
       {
         "key": "D",
-        "text": "Todos os fungos são plantas."
+        "text": "Fragmentos finos podem resultar de ação física, por isso o registro não demonstra a transformação da matéria."
       },
       {
         "key": "E",
-        "text": "Microrganismos participam de fermentação, ciclagem de nutrientes, microbiotas e processos industriais, embora alguns causem doenças."
+        "text": "A falta de benefício econômico medido sugere que a ciclagem de matéria na área é reduzida."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Microrganismos participam de fermentação, ciclagem de nutrientes, microbiotas e processos industriais, embora alguns causem doenças.",
+    "correctOption": "C",
+    "explanation": "A equipe registra vários organismos durante a decomposição de folhas, um processo ligado à ciclagem de matéria. A ausência de produto comercial não elimina a importância ecológica dessas interações.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
-      "CIE-28-CON-05"
+      "CIE-28-CON-06"
     ],
-    "targetedError": "transfer",
+    "targetedError": "human_utility_as_ecological_measure",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-28-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre animais, plantas, fungos e microrganismos?",
+    "stem": "Planilha de estação de tratamento, tarefa de 28 set. 2026. Uma estação de tratamento comparou dois tanques durante a limpeza de água usada. No primeiro, a equipe mediu bactérias com cerca de 2 micrômetros e observou transformação de compostos orgânicos; no segundo, registrou algas microscópicas e pequenos protistas, com células de formatos variados. Os estudantes notaram que organismos de grupos diferentes podiam ser menores que a espessura de um fio de cabelo e prepararam uma classificação das amostras.\n\nQual conclusão respeita os dados de tamanho e características observadas?",
     "options": [
       {
         "key": "A",
-        "text": "Plantas são eucarióticas e, em sua maioria, realizam fotossíntese; são fundamentais na produção primária e em habitats terrestres."
+        "text": "Bactérias e algas podem ter tamanhos semelhantes, embora pertençam a grupos com organização celular distinta."
       },
       {
         "key": "B",
-        "text": "Fungos são eucarióticos heterotróficos por absorção e incluem decompositores, simbiontes e espécies usadas em alimentos e medicamentos."
+        "text": "A mobilidade pode ser observada em alguns protistas, mas não basta para classificá-los como animais."
       },
       {
         "key": "C",
-        "text": "Animais são organismos eucarióticos heterotróficos e apresentam grande diversidade de formas e estratégias de vida."
+        "text": "A transformação de compostos por bactérias não determina que tenham a mesma organização celular das algas."
       },
       {
         "key": "D",
-        "text": "Todos os fungos são plantas."
+        "text": "O tamanho microscópico descreve a escala, mas os organismos pertencem a grupos diversos."
       },
       {
         "key": "E",
-        "text": "Microrganismos incluem organismos e entidades de grupos distintos; bactérias, muitos fungos e protistas microscópicos têm papéis ecológicos variados."
+        "text": "Organismos de grupos diferentes podem participar do tratamento, sem que isso os torne decompositores."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D é a incorreta: Todos os fungos são plantas. As demais expressam relações compatíveis com os conceitos da aula.",
-    "difficulty": "DIRECT",
+    "explanation": "O técnico separa a escala microscópica da classificação dos organismos. Bactérias, algas e protistas não passam a pertencer ao mesmo grupo por serem pequenos ou participarem de tanques de tratamento.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-28-CON-01"
+      "CIE-28-CON-04",
+      "CIE-28-CON-05"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "microorganism_as_taxonomic_group",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-28-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em animais, plantas, fungos e microrganismos?",
+    "stem": "Painel de associação de moradores, cenário de 29 set. 2026. Uma associação de moradores montou um painel com registros de árvores, insetos, aves, fungos do solo e bactérias de uma nascente. Alguns participantes perguntaram quais espécies tinham utilidade imediata para a comunidade; outros destacaram sombra, decomposição, polinização e qualidade da água. O grupo decidiu manter todas as observações no painel para planejar uma trilha educativa, sem limitar o levantamento às espécies usadas como alimento ou remédio.\n\nQual síntese combina melhor com a decisão do grupo?",
     "options": [
       {
         "key": "A",
-        "text": "Animais são o único grupo importante para o funcionamento dos ecossistemas."
+        "text": "A diversidade registrada permite discutir relações ecológicas e diferentes formas de interação com a comunidade."
       },
       {
         "key": "B",
-        "text": "Plantas obtêm todo seu alimento pronto do solo."
+        "text": "Fungos e bactérias podem ter papel no ambiente mesmo quando não são observados diretamente na trilha."
       },
       {
         "key": "C",
-        "text": "Todos os fungos são plantas."
+        "text": "Usos humanos ajudam a descrever algumas relações, mas não definem por si só a função ecológica de um organismo."
       },
       {
         "key": "D",
-        "text": "Todo microrganismo causa doença."
+        "text": "Sombra e polinização apontam interações distintas, que podem envolver plantas e animais na área."
       },
       {
         "key": "E",
-        "text": "Importância ecológica não depende de utilidade direta para humanos; espécies mantêm interações e processos do ecossistema."
+        "text": "Alimento e remédio são exemplos de usos, enquanto outros registros também ajudam a caracterizar o ecossistema."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Importância ecológica não depende de utilidade direta para humanos; espécies mantêm interações e processos do ecossistema.",
-    "difficulty": "IFSC",
+    "correctOption": "A",
+    "explanation": "O painel inclui processos e organismos que ajudam a descrever o ecossistema, mesmo quando não há uso humano imediato. A trilha educativa pode apresentar essa diversidade sem restringir o levantamento a espécies de alimento ou remédio.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-28-CON-06"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "ecological_value_and_human_use",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]

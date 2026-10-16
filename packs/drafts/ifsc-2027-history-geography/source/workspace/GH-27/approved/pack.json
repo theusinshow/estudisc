@@ -222,33 +222,33 @@
     {
       "id": "GH-27-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Dinâmica populacional brasileira, qual afirmação está correta?",
+      "stem": "Dois municípios fictícios aparecem na tabela com a mesma população, 150 mil habitantes. Alto tem área de 500 km² e Vale ocupa 1.500 km². No mapa, os moradores de Alto se concentram perto de uma rodovia, enquanto em Vale as localidades ficam mais espalhadas. A secretaria municipal estuda onde instalar uma nova unidade de saúde e anexou a tabela ao relatório.\n\nQual cálculo interpreta corretamente a tabela?",
       "options": [
         {
           "key": "A",
-          "text": "População absoluta e densidade demográfica são a mesma medida."
+          "text": "Alto tem 300 habitantes por km² e Vale tem 100 habitantes por km²."
         },
         {
           "key": "B",
-          "text": "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região."
+          "text": "Vale é mais denso porque sua área é três vezes maior."
         },
         {
           "key": "C",
-          "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+          "text": "Os dois municípios têm a mesma densidade porque compartilham 150 mil habitantes."
         },
         {
           "key": "D",
-          "text": "Transição demográfica significa apenas aumento da população."
+          "text": "Alto tem 100 habitantes por km² e Vale tem 300 habitantes por km²."
         },
         {
           "key": "E",
-          "text": "Uma região pouco povoada é necessariamente pouco urbanizada."
+          "text": "Alto é mais denso porque seus moradores se concentram perto da rodovia."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região.",
+      "correctOption": "A",
+      "explanation": "Densidade é calculada dividindo população pela área: Alto, 150.000 ÷ 500 = 300 habitantes/km²; Vale, 150.000 ÷ 1.500 = 100 habitantes/km². A área maior de Vale reduz sua densidade, apesar do mesmo total de moradores.",
       "difficulty": "FOUNDATION",
-      "cognitiveOperation": "RECALL",
+      "cognitiveOperation": "APPLY",
       "conceptIds": [
         "GH-27-CON-01"
       ],
@@ -258,31 +258,31 @@
     {
       "id": "GH-27-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “População absoluta e densidade demográfica são a mesma medida.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "stem": "Em uma região, a taxa de mortalidade caiu de 28 para 15 por mil entre duas décadas; alguns anos depois, a taxa de natalidade começou a diminuir em ritmo mais lento. A proporção de crianças mudou e a parcela de adultos e idosos aumentou no mesmo período. Uma equipe de estudantes prepara um gráfico comparativo para a mostra anual de ciências humanas.\n\nQual interpretação acompanha os dados?",
       "options": [
         {
           "key": "A",
-          "text": "População absoluta e densidade demográfica são a mesma medida."
+          "text": "A redução da natalidade ocorreu antes da queda da mortalidade na região."
         },
         {
           "key": "B",
-          "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+          "text": "A população parou de crescer no mesmo ano em que a mortalidade caiu."
         },
         {
           "key": "C",
-          "text": "Transição demográfica significa apenas aumento da população."
+          "text": "A mudança nas taxas não alterou a composição etária da região."
         },
         {
           "key": "D",
-          "text": "Transição demográfica envolve queda das taxas de mortalidade e, posteriormente, de natalidade, alterando crescimento e estrutura etária."
+          "text": "A transição demográfica envolve mudanças de mortalidade, natalidade e estrutura etária."
         },
         {
           "key": "E",
-          "text": "Uma região pouco povoada é necessariamente pouco urbanizada."
+          "text": "A queda da mortalidade comprova que a natalidade aumentará continuamente."
         }
       ],
       "correctOption": "D",
-      "explanation": "Transição demográfica envolve queda das taxas de mortalidade e, posteriormente, de natalidade, alterando crescimento e estrutura etária.",
+      "explanation": "A série mostra mortalidade caindo antes de a natalidade diminuir e registra mudanças na composição etária. A hipótese de aumento contínuo dos nascimentos não pode ser tirada de dados históricos sem projeção.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -294,33 +294,33 @@
     {
       "id": "GH-27-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: População deve ser analisada por distribuição, estrutura, movimentos e condições de vida, não apenas por total de habitantes. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "stem": "Uma escola compara mapas populacionais de diferentes décadas do século XX e um quadro recente de deslocamentos internos. As setas mudam de direção e tamanho entre as versões, e as cidades que recebem moradores também variam. A professora anota que oportunidades de trabalho, mecanização rural e redes de transporte aparecem em documentos de períodos distintos, mas pede que a turma não trate o fluxo antigo como retrato permanente do presente.\n\nQual leitura respeita a série temporal?",
       "options": [
         {
           "key": "A",
-          "text": "População absoluta e densidade demográfica são a mesma medida."
+          "text": "As migrações internas mantiveram direção semelhante ao longo do século."
         },
         {
           "key": "B",
-          "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+          "text": "O quadro recente comprova que os deslocamentos do século passado não ocorreram."
         },
         {
           "key": "C",
-          "text": "Migrações internas modificaram a distribuição da população brasileira ao longo do século XX e continuam mudando de direção e intensidade."
+          "text": "A distribuição populacional mudou com fluxos internos que variaram no tempo."
         },
         {
           "key": "D",
-          "text": "Transição demográfica significa apenas aumento da população."
+          "text": "A mecanização rural explica boa parte das migrações representadas."
         },
         {
           "key": "E",
-          "text": "Uma região pouco povoada é necessariamente pouco urbanizada."
+          "text": "Os mapas mostram mudanças de fronteiras, não de localização dos moradores."
         }
       ],
       "correctOption": "C",
-      "explanation": "Migrações internas modificaram a distribuição da população brasileira ao longo do século XX e continuam mudando de direção e intensidade.",
+      "explanation": "As setas e cidades receptoras mudam entre as décadas, enquanto a legenda reúne fatores de diferentes períodos. Supor uma direção única transforma um fluxo histórico em regra permanente e contradiz os mapas.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-27-CON-03"
       ],
@@ -330,33 +330,33 @@
     {
       "id": "GH-27-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Dinâmica populacional brasileira por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "stem": "O painel anual registra idade dos moradores, número de nascimentos, óbitos por faixa etária e mudanças de endereço dentro da cidade. Em dez anos, cresce a participação de pessoas idosas; o número de nascimentos varia entre bairros e as mudanças de endereço aparecem em duas colunas, chegada e saída. O observatório divulga séries separadas por ano e região administrativa para consulta pública.\n\nQual procedimento ajuda a interpretar as tendências descritas?",
       "options": [
         {
           "key": "A",
-          "text": "Indicadores como idade, fecundidade, mortalidade e migração ajudam a interpretar tendências populacionais."
+          "text": "Usar o total de nascimentos para interpretar mudanças entre bairros."
         },
         {
           "key": "B",
-          "text": "População absoluta e densidade demográfica são a mesma medida."
+          "text": "Tratar mudança de endereço como prova de crescimento natural da população."
         },
         {
           "key": "C",
-          "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+          "text": "Ignorar a idade porque os óbitos ajudam a estimar a estrutura etária."
         },
         {
           "key": "D",
-          "text": "Transição demográfica significa apenas aumento da população."
+          "text": "Tomar o aumento de idosos como confirmação de que a cidade perdeu moradores."
         },
         {
           "key": "E",
-          "text": "Uma região pouco povoada é necessariamente pouco urbanizada."
+          "text": "Cruzar idade, fecundidade, mortalidade e migração com seus recortes temporais."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Indicadores como idade, fecundidade, mortalidade e migração ajudam a interpretar tendências populacionais.",
+      "correctOption": "E",
+      "explanation": "O painel apresenta indicadores diferentes e registra variação entre bairros e períodos; cruzá-los permite comparar tendências sem confundir conceitos. O aumento da participação idosa, por si só, não informa que a população total diminuiu.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
       "conceptIds": [
         "GH-27-CON-04"
       ],
@@ -366,31 +366,31 @@
     {
       "id": "GH-27-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região.\nII. População absoluta e densidade demográfica são a mesma medida.\nIII. Migrações internas modificaram a distribuição da população brasileira ao longo do século XX e continuam mudando de direção e intensidade.\nIV. Migração sempre ocorre de áreas pobres para áreas ricas.\nAssinale a alternativa CORRETA.",
+      "stem": "A professora apresenta a planta de um estado fictício com uma capital muito povoada, municípios extensos com poucas localidades e cidades médias que receberam moradores novos. Uma tabela mostra taxas de natalidade e mortalidade em anos diferentes; um gráfico divide habitantes por idade. As três fontes serão usadas por grupos distintos para escrever uma legenda destinada ao mural da escola.\n\nQual conclusão usa adequadamente as três fontes?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "A cidade com maior população também apresenta a maior densidade em sua região."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "Mapas, taxas e idades descrevem aspectos diferentes da dinâmica populacional."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "A taxa de mortalidade permite localizar os bairros mais extensos do estado."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "O crescimento das cidades médias coincide com queda da natalidade no estado."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "A estrutura etária substitui a necessidade de observar migrações internas."
         }
       ],
       "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "explanation": "A planta representa distribuição no território, as taxas tratam de natalidade e mortalidade, e o gráfico mostra composição por idade. Usar mortalidade para inferir a extensão de municípios mistura variáveis sem relação direta.",
       "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -405,33 +405,33 @@
     {
       "id": "GH-27-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Dinâmica populacional brasileira. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "stem": "O município A registra 40 mil pessoas com 65 anos ou mais entre um milhão de habitantes. O município B tem 30 mil pessoas nessa faixa etária em uma população de 300 mil. Um painel da prefeitura exibe os números de cada município e apresenta os dados totais e populacionais em quadros separados. A equipe de saúde usa o material para planejar visitas domiciliares.\n\nQual comparação percentual está correta?",
       "options": [
         {
           "key": "A",
-          "text": "População absoluta e densidade demográfica são a mesma medida."
+          "text": "A proporção é 4% em A e 10% em B, maior em B."
         },
         {
           "key": "B",
-          "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+          "text": "A proporção é 10% em A e 4% em B, maior em A."
         },
         {
           "key": "C",
-          "text": "Transição demográfica significa apenas aumento da população."
+          "text": "A proporção é 40% em A e 30% em B, maior em A."
         },
         {
           "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+          "text": "A proporção é igual nos dois municípios porque A tem mais idosos em número absoluto."
         },
         {
           "key": "E",
-          "text": "Ler taxas e mapas distinguindo valores absolutos, proporções e densidades."
+          "text": "A proporção é 7% em A e 7% em B após somar os totais."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Ler taxas e mapas distinguindo valores absolutos, proporções e densidades.",
+      "correctOption": "A",
+      "explanation": "Em A, 40.000 ÷ 1.000.000 = 0,04 = 4%; em B, 30.000 ÷ 300.000 = 0,10 = 10%. Embora A tenha mais idosos em números absolutos, a parcela da população é maior em B.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "SOURCE_ANALYSIS",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-27-CON-01",
         "GH-27-CON-02",
@@ -446,31 +446,31 @@
     {
       "id": "GH-27-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Dinâmica populacional brasileira?",
+      "stem": "Em um gráfico fictício, a taxa de mortalidade começa a cair em uma década, enquanto os nascimentos seguem elevados por algum tempo. Mais tarde, a taxa de natalidade também diminui, e a proporção de adultos e idosos aumenta. Um estudante escreve no caderno que a população está “crescendo sem parar” e leva a anotação para uma conversa com a professora no fim da aula.\n\nQual correção interpreta melhor o gráfico?",
       "options": [
         {
           "key": "A",
-          "text": "Densidade demográfica relaciona população e área e pode variar muito dentro de uma mesma região."
+          "text": "O aumento total de habitantes é a principal mudança indicada pelo gráfico."
         },
         {
           "key": "B",
-          "text": "Transição demográfica envolve queda das taxas de mortalidade e, posteriormente, de natalidade, alterando crescimento e estrutura etária."
+          "text": "A natalidade caiu antes de a mortalidade apresentar alteração na região."
         },
         {
           "key": "C",
-          "text": "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho."
+          "text": "A proporção de idosos diminuiu junto com a queda dos nascimentos."
         },
         {
           "key": "D",
-          "text": "Transição demográfica significa apenas aumento da população."
+          "text": "O processo envolve etapas diferentes e altera a composição etária."
         },
         {
           "key": "E",
-          "text": "Indicadores como idade, fecundidade, mortalidade e migração ajudam a interpretar tendências populacionais."
+          "text": "A redução dos nascimentos interrompeu imediatamente o crescimento populacional."
         }
       ],
       "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+      "explanation": "A curva mostra mortalidade caindo primeiro, natalidade diminuindo depois e alterações na estrutura etária. Resumir o processo a crescimento contínuo deixa de lado as mudanças de taxas e composição que o gráfico registra.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
@@ -487,31 +487,31 @@
     {
       "id": "GH-27-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Dinâmica populacional brasileira, qual conclusão final é sustentável?",
+      "stem": "Uma projeção indica que a participação de moradores idosos deve crescer ao longo de vinte anos. O grupo de trabalho recebe pedidos de unidades de saúde, propõe ampliar calçadas acessíveis e discute formação para pessoas que permanecem no mercado de trabalho por mais tempo. A ata também prevê rever as medidas conforme os dados de renda, deslocamento e atendimento forem atualizados.\n\nQual resposta pública acompanha melhor a projeção?",
       "options": [
         {
           "key": "A",
-          "text": "População absoluta e densidade demográfica são a mesma medida."
+          "text": "Reduzir serviços de saúde porque a mudança etária diminui a necessidade de atendimento."
         },
         {
           "key": "B",
-          "text": "Migração sempre ocorre de áreas pobres para áreas ricas."
+          "text": "Priorizar a previdência e deixar saúde, acessibilidade e organização do trabalho fora do plano."
         },
         {
           "key": "C",
-          "text": "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho."
+          "text": "Ajustar políticas para responder às novas demandas associadas ao envelhecimento."
         },
         {
           "key": "D",
-          "text": "Transição demográfica significa apenas aumento da população."
+          "text": "Concentrar investimentos em calçadas e suspender a atualização dos demais dados."
         },
         {
           "key": "E",
-          "text": "Uma região pouco povoada é necessariamente pouco urbanizada."
+          "text": "A projeção indica uma trajetória parecida para a maior parte dos moradores."
         }
       ],
       "correctOption": "C",
-      "explanation": "Envelhecimento populacional cria novas demandas por saúde, previdência, acessibilidade e organização do trabalho.",
+      "explanation": "A projeção é acompanhada por pedidos de saúde, acessibilidade e organização do trabalho, com revisão conforme novos dados. Reduzir atendimento contradiz as demandas registradas pelas unidades.",
       "difficulty": "IFSC",
       "cognitiveOperation": "EVALUATE",
       "conceptIds": [

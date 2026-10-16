@@ -2,294 +2,292 @@
   {
     "id": "CIE-14-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de transformações e reações químicas, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Em uma aula prática, os estudantes colocaram cubos de gelo em um béquer e registraram a temperatura da sala. Depois de alguns minutos, o material virou água líquida; a ficha ainda identificava a amostra como água antes e depois da mudança. O grupo comparou esse procedimento a outro experimento que produziu bolhas e um material diferente, e precisava distinguir mudança física de transformação química.\n\nComo classificar o derretimento descrito?",
     "options": [
       {
         "key": "A",
-        "text": "Reagentes são sempre gases e produtos são sempre sólidos."
+        "text": "Transformação física, porque a amostra continuou sendo água, embora tenha mudado de estado."
       },
       {
         "key": "B",
-        "text": "Qualquer mudança de cor prova sozinha, em qualquer situação, que ocorreu reação química."
+        "text": "Transformação física, pois mudou o estado sem evidência de nova substância."
       },
       {
         "key": "C",
-        "text": "Transformação química produz novas substâncias por reorganização dos átomos."
+        "text": "Transformação física, pois a temperatura ambiente pode alterar o estado sem mudar a composição."
       },
       {
         "key": "D",
-        "text": "Numa reação química, átomos desaparecem e são substituídos por novos átomos."
+        "text": "Transformação química, se a mudança de estado vier acompanhada de evidências de novas substâncias."
       },
       {
         "key": "E",
-        "text": "Toda mudança de estado físico é uma reação química."
+        "text": "Transformação química, pois a mudança de estado altera as interações entre as moléculas da amostra."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Transformação química produz novas substâncias por reorganização dos átomos.",
+    "correctOption": "B",
+    "explanation": "A ficha identifica água antes e depois, e o dado observado é a mudança de estado; isso sustenta uma transformação física. A interpretação como reação falha porque a mudança de estado, sozinha, não mostra formação de nova substância.",
     "difficulty": "FOUNDATION",
-    "cognitiveOperation": "UNDERSTAND",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-14-CON-01"
+      "CIE-14-CON-01",
+      "CIE-14-CON-05"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "A [state-change/reaction conflation]: toma mudança física como prova de reação; C [temperature-causation error]: considera aquecimento evidência suficiente; D [scale confusion]: confunde rearranjo físico com transformação nuclear; E [component inflation]: trata fases de uma substância como mistura.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-14-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar transformações e reações químicas sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Uma turma misturou dois líquidos transparentes em um tubo e observou o aparecimento de bolhas e uma mudança de temperatura. Em outro tubo, a equipe apenas aqueceu água até que ela fervesse e condensasse numa superfície fria. Os registros foram feitos em paralelo para que os estudantes comparassem pistas, sem decidir sobre uma reação química por um único sinal isolado.\n\nQual interpretação das observações é mais cuidadosa?",
     "options": [
       {
         "key": "A",
-        "text": "Mudança de cor, formação de gás, precipitado, luz ou variação de temperatura podem ser evidências de reação, mas devem ser interpretadas no contexto."
+        "text": "Bolhas e variação térmica podem ser evidências de reação; é preciso considerar o contexto."
       },
       {
         "key": "B",
-        "text": "Numa reação química, átomos desaparecem e são substituídos por novos átomos."
+        "text": "Como a fervura também produz bolhas, as bolhas no primeiro tubo indicam uma mudança física."
       },
       {
         "key": "C",
-        "text": "Qualquer mudança de cor prova sozinha, em qualquer situação, que ocorreu reação química."
+        "text": "A variação de temperatura permite descartar reação quando não há mudança visível de cor."
       },
       {
         "key": "D",
-        "text": "Toda mudança de estado físico é uma reação química."
+        "text": "A transparência inicial indica que os líquidos não reagiram ao serem misturados."
       },
       {
         "key": "E",
-        "text": "Reagentes são sempre gases e produtos são sempre sólidos."
+        "text": "A condensação é evidência de que os reagentes foram consumidos ao formar gás."
       }
     ],
     "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Mudança de cor, formação de gás, precipitado, luz ou variação de temperatura podem ser evidências de reação, mas devem ser interpretadas no contexto.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "UNDERSTAND",
+    "explanation": "O primeiro tubo apresenta bolhas e variação térmica, sinais que podem apoiar a hipótese de reação, mas devem ser avaliados junto aos materiais e ao processo. A conclusão de que qualquer bolha prova reação falha diante da água que ferve e condensa sem, por isso, demonstrar nova substância.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
+      "CIE-14-CON-01",
       "CIE-14-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "B [phase-change/reaction confusion]: interpreta fervura como produção química; C [evidence exclusion]: trata variação térmica como incompatível com reação; D [appearance-based inference]: usa transparência para negar transformação; E [process misattribution]: associa condensação ao consumo de reagentes.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-14-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em transformações e reações químicas?",
+    "stem": "Em um relatório, uma equipe descreveu a reação entre duas soluções. No início, o frasco continha solução P e solução Q; ao final, o registro identificava a solução R e um sólido S. O grupo usou cartões coloridos para representar o momento anterior à mistura e o estado observado depois, sem tentar explicar o mecanismo microscópico em detalhes. As anotações foram conferidas por uma dupla.\n\nComo nomear corretamente as substâncias nos dois momentos?",
     "options": [
       {
         "key": "A",
-        "text": "Reagentes são as substâncias presentes no início de uma reação e produtos são as substâncias formadas."
+        "text": "R e S são reagentes, enquanto P e Q são produtos da transformação descrita."
       },
       {
         "key": "B",
-        "text": "Toda mudança de estado físico é uma reação química."
+        "text": "P e R são reagentes; Q e S são produtos, conforme a ordem em que aparecem no relato."
       },
       {
         "key": "C",
-        "text": "Qualquer mudança de cor prova sozinha, em qualquer situação, que ocorreu reação química."
+        "text": "P e Q são produtos; R e S são reagentes consumidos durante a reação."
       },
       {
         "key": "D",
-        "text": "Reagentes são sempre gases e produtos são sempre sólidos."
+        "text": "P e Q são reagentes; R e S são produtos formados."
       },
       {
         "key": "E",
-        "text": "Numa reação química, átomos desaparecem e são substituídos por novos átomos."
+        "text": "P, Q, R e S podem ser reagentes ou produtos conforme o momento em que aparecem."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Reagentes são as substâncias presentes no início de uma reação e produtos são as substâncias formadas.",
+    "correctOption": "D",
+    "explanation": "O relato localiza P e Q no início e R e S depois da transformação; portanto, P e Q são reagentes e R e S são produtos. A alternativa que inverte os dois grupos falha porque ignora a sequência temporal explicitada no relatório.",
     "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-14-CON-03"
     ],
-    "targetedError": "relationship",
+    "targetedError": "A [timeline reversal]: chama de reagentes as substâncias finais; B [role confusion]: troca a posição de P e Q e amplia o grupo inicial; C [before/after inversion]: inverte os nomes dos dois momentos; E [recording/role confusion]: usa presença no relatório como critério de produto.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-14-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Na eletrólise da água, moléculas de água originam hidrogênio e oxigênio. Qual interpretação é correta?",
+    "stem": "Uma atividade de sistema fechado pesou os materiais reagentes, sem incluir o frasco: juntos somavam 17,0 g antes da reação. Depois, uma pequena quantidade de gás foi recolhida dentro do próprio aparato e os produtos líquidos restantes somaram 15,2 g. A equipe verificou a balança e confirmou que o recipiente não perdeu material durante a transformação. A escala mostrava décimos de grama.\n\nQual massa corresponde ao gás recolhido, considerando o total informado?",
     "options": [
       {
         "key": "A",
-        "text": "Átomos de hidrogênio são criados pela corrente elétrica."
+        "text": "1,8 g, pois 17,0 g − 15,2 g = 1,8 g."
       },
       {
         "key": "B",
-        "text": "O oxigênio desaparece durante a reação."
+        "text": "2,2 g, ao calcular a diferença entre o total inicial e a massa líquida final."
       },
       {
         "key": "C",
-        "text": "Água apenas muda de estado físico."
+        "text": "1,2 g, considerando que o gás corresponde à parte não registrada como líquido."
       },
       {
         "key": "D",
-        "text": "Os átomos presentes nos reagentes são reorganizados em novas substâncias nos produtos."
+        "text": "15,2 g, usando a massa líquida como referência para estimar o produto gasoso."
       },
       {
         "key": "E",
-        "text": "Os produtos contêm elementos que não existiam nos reagentes."
+        "text": "1,7 g, arredondando a diferença para a precisão indicada pela balança."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Os átomos presentes nos reagentes são reorganizados em novas substâncias nos produtos.",
-    "difficulty": "APPLIED",
+    "correctOption": "A",
+    "explanation": "No aparato fechado, a massa dos produtos registrados soma o total inicial: 17,0 g − 15,2 g = 1,8 g de gás. A soma de 32,2 g falha porque adiciona a massa inicial à massa de um produto final, contando o mesmo sistema em momentos diferentes.",
+    "difficulty": "IFSC",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-14-CON-01",
-      "CIE-14-CON-02",
-      "CIE-14-CON-03"
+      "CIE-14-CON-04"
     ],
-    "targetedError": "application",
+    "targetedError": "B [addition/subtraction reversal]: soma o total e a parte conhecida; C [part/whole confusion]: toma a massa líquida como total final; D [whole-as-part error]: confunde massa do sistema com a do gás; E [double counting]: soma momentos distintos do mesmo aparato.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-14-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Transformação química produz novas substâncias por reorganização dos átomos.\nII. Toda mudança de estado físico é uma reação química.\nIII. Reagentes são as substâncias presentes no início de uma reação e produtos são as substâncias formadas.\nIV. Numa reação química, átomos desaparecem e são substituídos por novos átomos.\nAssinale a alternativa CORRETA.",
+    "stem": "Em uma simulação de reação, o caderno registra 5,6 g de um material metálico e 3,2 g de outro sólido antes da mistura. A equipe aqueceu o conjunto em um recipiente fechado e, depois do resfriamento, mediu o produto formado como uma única amostra sólida. Para comparar a descrição com o modelo de conservação da matéria, os estudantes devem calcular a massa total inicialmente colocada no sistema.\n\nQual massa total foi registrada antes do aquecimento?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "2,4 g, pela diferença entre as massas dos dois materiais."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "8,2 g, somando os valores e ajustando o resultado à casa decimal mais próxima."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "8,8 g, pela soma de 5,6 g e 3,2 g."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "5,6 g, usando a massa do material de maior quantidade como total aproximado."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "9,8 g, somando as massas e incluindo novamente uma parte do material menor."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "C",
+    "explanation": "A massa inicial total é 5,6 g + 3,2 g = 8,8 g. A diferença de 2,4 g é uma operação tentadora, mas falha porque a pergunta solicita a massa conjunta dos dois reagentes, não a distância entre suas medidas.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-14-CON-01",
-      "CIE-14-CON-02",
-      "CIE-14-CON-03",
       "CIE-14-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "A [difference-for-total]: subtrai as massas quando se pede a soma; B [operation misuse]: multiplica medidas sem relação com a massa conjunta; D [partial total]: considera somente um reagente; E [partial total]: escolhe apenas o outro reagente.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-14-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre transformações e reações químicas para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Um segundo experimento começou com 12,0 g de reagentes em um recipiente fechado. Ao final, uma equipe mediu 8,7 g de material líquido e 2,5 g de resíduo sólido; um coletor acoplado reteve o produto gasoso, ainda sem massa anotada. O recipiente permaneceu lacrado durante a reação, e todos os produtos foram mantidos no aparato para completar o balanço. Os valores ficaram na mesma tabela.\n\nQual massa deve ser anotada para o gás retido?",
     "options": [
       {
         "key": "A",
-        "text": "Toda mudança de estado físico é uma reação química."
+        "text": "11,2 g, somando o líquido e o resíduo já medidos como produtos."
       },
       {
         "key": "B",
-        "text": "Reagentes são sempre gases e produtos são sempre sólidos."
+        "text": "3,3 g, subtraindo do total inicial apenas a massa líquida."
       },
       {
         "key": "C",
-        "text": "Qualquer mudança de cor prova sozinha, em qualquer situação, que ocorreu reação química."
+        "text": "9,5 g, subtraindo do total inicial apenas a massa do resíduo."
       },
       {
         "key": "D",
-        "text": "Uma mudança física, como fusão, altera estado ou forma sem necessariamente formar nova substância."
+        "text": "21,2 g, somando o total inicial às massas dos produtos já medidos."
       },
       {
         "key": "E",
-        "text": "Numa reação química, átomos desaparecem e são substituídos por novos átomos."
+        "text": "0,8 g, pois 12,0 g − 8,7 g − 2,5 g = 0,8 g."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Uma mudança física, como fusão, altera estado ou forma sem necessariamente formar nova substância.",
-    "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "correctOption": "E",
+    "explanation": "A massa faltante é 12,0 g − 8,7 g − 2,5 g = 0,8 g, mantendo a soma dos produtos igual à dos reagentes no sistema fechado. A soma de 10,0 g contabiliza apenas líquido e resíduo, deixando de fora o gás que o enunciado pede.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-14-CON-05"
+      "CIE-14-CON-04"
     ],
-    "targetedError": "transfer",
+    "targetedError": "A [known-products-only]: soma a parte líquida e o resíduo, mas omite a massa restante; B [part/whole confusion]: repete a massa de um único produto; C [part/whole confusion]: usa somente a fração líquida; D [double counting]: acrescenta o total inicial às massas de produtos.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-14-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre transformações e reações químicas?",
+    "stem": "Uma oficina comparou dois registros: uma barra de cera foi aquecida até amolecer e depois resfriada, enquanto uma amostra metálica permaneceu exposta ao ar úmido e mudou de aparência com a formação de uma camada diferente. As fichas preservaram as observações e os materiais de partida para que o grupo não classificasse uma mudança só pelo fato de haver cor ou temperatura envolvida.\n\nQual contraste interpreta melhor os dois casos?",
     "options": [
       {
         "key": "A",
-        "text": "Transformação química produz novas substâncias por reorganização dos átomos."
+        "text": "A cera mudou fisicamente ao amolecer; a camada metálica pode resultar de uma reação."
       },
       {
         "key": "B",
-        "text": "Toda mudança de estado físico é uma reação química."
+        "text": "A cera sofreu mudança física; a camada diferente pode indicar transformação química."
       },
       {
         "key": "C",
-        "text": "Em modelos de partículas, átomos são reorganizados; em reações químicas usuais eles não são criados nem destruídos."
+        "text": "A cera e o metal podem ter sofrido transformações químicas, mas as evidências são diferentes."
       },
       {
         "key": "D",
-        "text": "Mudança de cor, formação de gás, precipitado, luz ou variação de temperatura podem ser evidências de reação, mas devem ser interpretadas no contexto."
+        "text": "A cera sofreu transformação química ao amolecer; a camada metálica pode indicar reação se houver nova substância."
       },
       {
         "key": "E",
-        "text": "Reagentes são as substâncias presentes no início de uma reação e produtos são as substâncias formadas."
+        "text": "A cera mudou de consistência e o metal de aparência; esses registros, sozinhos, não indicam formação de gás."
       }
     ],
     "correctOption": "B",
-    "explanation": "A alternativa B é a incorreta: Toda mudança de estado físico é uma reação química. As demais expressam relações compatíveis com os conceitos da aula.",
-    "difficulty": "DIRECT",
+    "explanation": "A cera muda de consistência por aquecimento e resfriamento, enquanto a camada formada no metal pode indicar nova substância; a classificação deve considerar as evidências e o contexto. A conclusão de que qualquer mudança visual prova reação falha porque a cera também altera a aparência sem evidência de nova substância.",
+    "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-14-CON-01"
+      "CIE-14-CON-01",
+      "CIE-14-CON-05"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "A [physical/chemical reversal]: inverte a interpretação dos casos; C [starting-state bias]: usa o estado inicial para ignorar possíveis produtos; D [appearance-only inference]: trata qualquer mudança visual como prova suficiente; E [gas-evidence invention]: afirma gás sem observação.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-14-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em transformações e reações químicas?",
+    "stem": "Um conjunto de cartões representa uma reação entre moléculas de hidrogênio e oxigênio. No lado inicial, há quatro átomos de hidrogênio e dois de oxigênio; no lado final, a turma pretende montar moléculas de água usando todas as peças. Os estudantes precisam conferir se cada tipo e quantidade de átomo permanece igual nos dois lados, ajustando a quantidade de moléculas representadas.\n\nQual montagem conserva a contagem apresentada?",
     "options": [
       {
         "key": "A",
-        "text": "Toda mudança de estado físico é uma reação química."
+        "text": "Uma molécula de água, que usa dois hidrogênios e um oxigênio das peças disponíveis."
       },
       {
         "key": "B",
-        "text": "Numa reação química, átomos desaparecem e são substituídos por novos átomos."
+        "text": "Duas moléculas de água, com quatro hidrogênios e dois oxigênios."
       },
       {
         "key": "C",
-        "text": "Equações e modelos devem conservar os tipos e a quantidade de átomos envolvidos quando corretamente balanceados."
+        "text": "Duas moléculas de água e uma molécula de hidrogênio, totalizando seis H e dois O."
       },
       {
         "key": "D",
-        "text": "Reagentes são sempre gases e produtos são sempre sólidos."
+        "text": "Duas moléculas de água, representadas com dois H e quatro O no total."
       },
       {
         "key": "E",
-        "text": "Qualquer mudança de cor prova sozinha, em qualquer situação, que ocorreu reação química."
+        "text": "Uma molécula de água e uma de oxigênio, preservando parte das peças sem formar água com todo o H."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Equações e modelos devem conservar os tipos e a quantidade de átomos envolvidos quando corretamente balanceados.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "correctOption": "B",
+    "explanation": "Cada molécula de água contém dois hidrogênios e um oxigênio; duas moléculas totalizam quatro H e dois O, exatamente as peças iniciais. A opção de uma molécula falha porque deixaria dois átomos de hidrogênio sem representação no lado dos produtos.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
       "CIE-14-CON-06"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "A [coefficient undercount]: conserva o oxigênio, mas deixa hidrogênio sem destino; C [coefficient overcount]: duplica as contagens iniciais; D [formula-subscripting error]: troca as quantidades de H e O; E [unreacted-particle assumption]: mantém moléculas iniciais sem correspondência com a montagem pedida.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]

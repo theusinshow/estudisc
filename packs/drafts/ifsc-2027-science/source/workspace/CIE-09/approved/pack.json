@@ -209,294 +209,291 @@
     {
       "id": "CIE-09-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Durante uma revisão de modelos atômicos e partículas subatômicas, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "stem": "Na feira de ciências, quatro grupos montaram modelos com materiais simples. O primeiro representou uma esfera sem detalhes internos; o segundo distribuiu bolinhas pequenas pelo interior; o terceiro prendeu uma esfera central a uma área ampla; o quarto desenhou trajetórias circulares em faixas. Na exposição, visitantes compararam os cartazes e perguntaram por que as imagens não eram iguais. A turma consultou novamente as anotações dos experimentos que motivaram cada representação.\n\nQue conclusão sobre o desenvolvimento dos modelos atômicos é mais compatível com esse relato?",
       "options": [
         {
           "key": "A",
-          "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+          "text": "As propostas foram revistas conforme observações levantavam novas questões."
         },
         {
           "key": "B",
-          "text": "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem."
+          "text": "Os modelos mudaram porque os materiais usados nos cartazes eram diferentes."
         },
         {
           "key": "C",
-          "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+          "text": "O modelo mais recente recuperou todos os detalhes do primeiro desenho."
         },
         {
           "key": "D",
-          "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+          "text": "As trajetórias ilustradas registram percursos observados diretamente no átomo."
         },
         {
           "key": "E",
-          "text": "Todos os modelos atômicos históricos são idênticos."
+          "text": "As diferenças entre cartazes decorrem de estilos de desenho, sem relação com experimentos."
         }
       ],
-      "correctOption": "B",
-      "explanation": "A alternativa B é a correta: Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem.",
+      "correctOption": "A",
+      "explanation": "As anotações de experimentos ajudam a explicar por que surgiram representações diferentes: modelos científicos são elaborados e revistos para interpretar evidências. As diferenças não se explicam somente pelo estilo gráfico dos cartazes.",
       "difficulty": "FOUNDATION",
-      "cognitiveOperation": "UNDERSTAND",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "CIE-09-CON-01"
       ],
-      "targetedError": "core_concept",
+      "targetedError": "B [anachronism]: atribui estrutura interna ao modelo sem esse detalhe; C [chronology]: inverte a relação entre evidência e proposta; D [literal reading]: transforma um desenho explicativo em observação direta; E [model equivalence]: apaga diferenças entre representações.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-09-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante precisa explicar modelos atômicos e partículas subatômicas sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "stem": "Durante uma aula de história da ciência, a professora entregou a cada dupla um cartão com uma representação antiga do átomo e outro com um resultado experimental posterior. Um cartão mostrava a matéria como pequenas unidades esféricas; o segundo descrevia partículas carregadas desviadas por placas elétricas. Os estudantes deveriam escrever uma legenda para cada imagem, sem afirmar que um desenho reproduzia uma fotografia ampliada do interior da matéria.\n\nQual legenda interpreta melhor a representação de Dalton?",
       "options": [
         {
           "key": "A",
-          "text": "Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente."
+          "text": "O átomo tem elétrons distribuídos em uma esfera de carga positiva."
         },
         {
           "key": "B",
-          "text": "Todos os modelos atômicos históricos são idênticos."
+          "text": "O átomo é representado como unidade sem estrutura interna nesse modelo."
         },
         {
           "key": "C",
-          "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+          "text": "O átomo reúne carga positiva em um núcleo e espaço ao redor."
         },
         {
           "key": "D",
-          "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+          "text": "Os elétrons ocupam níveis de energia definidos em torno do núcleo."
         },
         {
           "key": "E",
-          "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+          "text": "Os elétrons percorrem órbitas ao redor de uma região central positiva."
         }
       ],
-      "correctOption": "A",
-      "explanation": "A alternativa A é a correta: Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente.",
+      "correctOption": "B",
+      "explanation": "A representação de Dalton descreve a matéria por unidades atômicas sem estrutura interna no modelo histórico. A opção que distribui elétrons em uma esfera positiva corresponde a uma proposta posterior, associada a resultados sobre partículas carregadas.",
       "difficulty": "DIRECT",
       "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
         "CIE-09-CON-02"
       ],
-      "targetedError": "concept_discrimination",
+      "targetedError": "A [chronological mix-up]: transfere uma partícula descoberta em outro modelo para Dalton; C [model swap]: atribui a Dalton a estrutura nuclear de Rutherford; D [unsupported structure]: introduz partículas e órbitas ausentes do cartão; E [scope error]: relaciona o desenho a espectros e níveis energéticos.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-09-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em modelos atômicos e partículas subatômicas?",
+      "stem": "Um grupo usou um tubo de descarga em uma demonstração didática. Quando aproximou uma placa carregada, o feixe observado mudou de direção; a equipe repetiu o procedimento invertendo a polaridade das placas e anotou a mudança oposta. No relatório, os estudantes compararam essa observação com a antiga figura de uma esfera uniforme e discutiram qual característica do átomo precisava entrar em um novo modelo para explicar o comportamento do feixe.\n\nQual interpretação corresponde à contribuição de Thomson?",
       "options": [
         {
           "key": "A",
-          "text": "Todos os modelos atômicos históricos são idênticos."
+          "text": "A mudança do feixe confirma uma esfera atômica sem partes internas."
         },
         {
           "key": "B",
-          "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+          "text": "A resposta elétrica indica nêutrons distribuídos na superfície do átomo."
         },
         {
           "key": "C",
-          "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+          "text": "A resposta do feixe levou à inclusão de elétrons e estrutura interna."
         },
         {
           "key": "D",
-          "text": "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna."
+          "text": "O desvio mostra que um núcleo positivo ocupa quase todo o átomo."
         },
         {
           "key": "E",
-          "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+          "text": "A mudança de direção identifica níveis de energia circulares no átomo."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D é a correta: Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna.",
-      "difficulty": "DIRECT",
+      "correctOption": "C",
+      "explanation": "O feixe muda de direção quando a polaridade das placas é invertida, evidência ligada a partículas carregadas. Thomson incorporou elétrons e estrutura interna ao modelo; esse resultado não determinava o tamanho do núcleo.",
+      "difficulty": "APPLIED",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "CIE-09-CON-03"
       ],
-      "targetedError": "relationship",
+      "targetedError": "A [failure to revise]: mantém a ideia de esfera sem partes apesar do desvio; B [charge confusion]: atribui carga elétrica ao nêutron; D [evidence overreach]: usa o comportamento do feixe para concluir o volume nuclear; E [model attribution]: associa a demonstração à proposta de níveis de Bohr.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-09-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um experimento indica que a carga positiva do átomo está concentrada em uma região muito pequena. A qual ideia isso se relaciona diretamente?",
+      "stem": "Em uma simulação de espalhamento, uma turma lançou cinco mil bolinhas pequenas contra uma folha muito fina. A maioria atravessou sem mudar de direção; algumas desviaram bastante e uma voltou quase pelo caminho de chegada. A professora explicou que a atividade não reproduz cada detalhe de um átomo, mas ajuda a comparar padrões de passagem e colisão. Os grupos registraram quantas bolinhas seguiram cada trajetória antes de discutir a estrutura sugerida pelo conjunto.\n\nQual modelo explica melhor esse padrão de espalhamento?",
       "options": [
         {
           "key": "A",
-          "text": "Ao átomo indivisível de Dalton como descrição final."
+          "text": "A carga positiva fica espalhada, produzindo desvios pequenos em muitas trajetórias."
         },
         {
           "key": "B",
-          "text": "À ausência completa de partículas subatômicas."
+          "text": "Um núcleo positivo ocupa grande parte do volume e altera muitas trajetórias."
         },
         {
           "key": "C",
-          "text": "À localização dos elétrons dentro do núcleo."
+          "text": "A massa do átomo está distribuída por igual, sem região de concentração."
         },
         {
           "key": "D",
-          "text": "À existência de um núcleo atômico pequeno e positivo, associada ao modelo de Rutherford."
+          "text": "Um núcleo pequeno e positivo fica rodeado por uma região de grande volume."
         },
         {
           "key": "E",
-          "text": "À ideia de que toda a massa está uniformemente espalhada sem núcleo."
+          "text": "Elétrons compactos formam a região central que rebate as bolinhas incidentes."
         }
       ],
       "correctOption": "D",
-      "explanation": "À existência de um núcleo atômico pequeno e positivo, associada ao modelo de Rutherford.",
-      "difficulty": "APPLIED",
+      "explanation": "A maioria das bolinhas passa sem grande desvio, enquanto poucas retornam ou mudam bastante de direção. Esse padrão é compatível com uma região nuclear pequena e concentrada, não com carga ou massa distribuída uniformemente por todo o átomo.",
+      "difficulty": "IFSC",
       "cognitiveOperation": "APPLY",
       "conceptIds": [
-        "CIE-09-CON-01",
-        "CIE-09-CON-02",
-        "CIE-09-CON-03"
+        "CIE-09-CON-04"
       ],
-      "targetedError": "application",
+      "targetedError": "A [Thomson model carry-over]: espalha carga positiva sem concentrá-la; B [uniformity assumption]: não explica a passagem predominante nem os raros retornos; C [scale inversion]: faz a eletrosfera bloquear quase todos os projéteis; E [absolute reflection]: contradiz as trajetórias observadas.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-09-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem.\nII. Todos os modelos atômicos históricos são idênticos.\nIII. Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna.\nIV. Elétrons ficam dentro do núcleo junto com prótons e nêutrons.\nAssinale a alternativa CORRETA.",
+      "stem": "Uma lâmpada de descarga produziu linhas coloridas separadas sobre uma tela. Ao variar a energia fornecida ao gás, a equipe registrou mudanças no padrão e comparou as observações com representações de elétrons no átomo.\n\nQue aspecto do modelo de Bohr ajuda a interpretar essas linhas?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "Elétrons podem ocupar estados de energia definidos no modelo."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "O núcleo muda de carga para produzir cada cor observada."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "Partículas neutras emitem luz ao circular fora do átomo."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "A matéria é descrita como esfera sem divisões internas."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "Cada linha indica que um elétron permanece dentro do núcleo."
         }
       ],
-      "correctOption": "B",
-      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-      "difficulty": "IFSC",
+      "correctOption": "A",
+      "explanation": "As linhas separadas do espectro podem ser interpretadas no modelo escolar de Bohr por estados de energia definidos para os elétrons. A observação não indica que a carga do núcleo varie a cada cor.",
+      "difficulty": "APPLIED",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "CIE-09-CON-01",
-        "CIE-09-CON-02",
-        "CIE-09-CON-03",
-        "CIE-09-CON-04"
+        "CIE-09-CON-05"
       ],
-      "targetedError": "multi_statement_reasoning",
+      "targetedError": "B [nucleus-energy confusion]: atribui ao núcleo a mudança observada no espectro; C [particle identity]: troca elétrons por nêutrons e lhes atribui emissão; D [obsolete model]: retorna à esfera sem estrutura; E [location error]: coloca o elétron dentro do núcleo.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-09-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Ao transferir o que foi estudado sobre modelos atômicos e partículas subatômicas para uma situação nova, qual conclusão permanece válida?",
+      "stem": "Uma ficha de laboratório descreve um átomo neutro com onze prótons, doze nêutrons e onze elétrons. A ficha também mostra três regiões desenhadas: uma pequena área central e pontos em uma área externa. A estudante precisa conferir se os rótulos das partículas e as cargas anotadas combinam com a contagem registrada antes de montar um modelo para a exposição da escola.\n\nQual anotação revisada mantém corretas a localização e a carga das partículas?",
       "options": [
         {
           "key": "A",
-          "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+          "text": "Prótons positivos ficam fora do núcleo; elétrons negativos ficam no centro."
         },
         {
           "key": "B",
-          "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+          "text": "Prótons positivos e nêutrons neutros ficam no núcleo; elétrons positivos ficam ao redor."
         },
         {
           "key": "C",
-          "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+          "text": "Elétrons negativos e nêutrons neutros ficam no núcleo; prótons positivos ficam fora."
         },
         {
           "key": "D",
-          "text": "Todos os modelos atômicos históricos são idênticos."
+          "text": "Prótons positivos e nêutrons neutros ficam no núcleo; elétrons negativos ficam ao redor."
         },
         {
           "key": "E",
-          "text": "No modelo de Bohr, elétrons ocupam níveis de energia definidos, uma simplificação útil no nível escolar."
+          "text": "Prótons positivos e nêutrons negativos ficam no núcleo; elétrons negativos ficam ao redor."
         }
       ],
-      "correctOption": "E",
-      "explanation": "A alternativa E é a correta: No modelo de Bohr, elétrons ocupam níveis de energia definidos, uma simplificação útil no nível escolar.",
-      "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "correctOption": "D",
+      "explanation": "A anotação correta combina a localização e a carga de cada partícula: prótons positivos e nêutrons neutros no núcleo, elétrons negativos ao redor. A opção com elétrons positivos localiza as partículas adequadamente, mas troca o sinal da carga eletrônica.",
+      "difficulty": "FOUNDATION",
+      "cognitiveOperation": "APPLY",
       "conceptIds": [
-        "CIE-09-CON-05"
+        "CIE-09-CON-06"
       ],
-      "targetedError": "transfer",
+      "targetedError": "A [charge reversal]: troca os sinais do próton e do elétron; B [particle relocation]: desloca elétrons ao núcleo e atribui carga ao nêutron; C [identity swap]: confunde nêutrons com elétrons e inverte sinais; E [charge and region mix-up]: altera a carga do nêutron e move-o para fora do núcleo.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-09-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre modelos atômicos e partículas subatômicas?",
+      "stem": "Uma linha do tempo de modelos atômicos reúne uma esfera sem detalhes, resultados de feixes desviados, espalhamento e linhas luminosas. A estudante observa que cada representação procurou explicar resultados que as propostas anteriores não acomodavam.\n\nQue princípio sobre a revisão de modelos científicos esse percurso ilustra?",
       "options": [
         {
           "key": "A",
-          "text": "Modelos científicos são representações usadas para explicar evidências; eles podem ser modificados quando novos dados aparecem."
+          "text": "Os modelos são revistos quando muda a linguagem usada nas aulas."
         },
         {
           "key": "B",
-          "text": "Todos os modelos atômicos históricos são idênticos."
+          "text": "Modelos podem ser ajustados quando evidências mostram limites explicativos."
         },
         {
           "key": "C",
-          "text": "Rutherford propôs um núcleo pequeno e positivo, com a maior parte do volume atômico sendo espaço ao redor do núcleo."
+          "text": "A representação mais recente é válida por ser visualmente mais detalhada."
         },
         {
           "key": "D",
-          "text": "Thomson incorporou elétrons e mostrou que o átomo tinha estrutura interna."
+          "text": "As diferenças entre propostas refletem escolhas gráficas dos pesquisadores."
         },
         {
           "key": "E",
-          "text": "Dalton descreveu átomos como unidades esféricas sem estrutura interna no modelo histórico correspondente."
+          "text": "A sequência histórica depende da ordem em que os modelos foram ensinados."
         }
       ],
       "correctOption": "B",
-      "explanation": "A alternativa B é a incorreta: Todos os modelos atômicos históricos são idênticos. As demais expressam relações compatíveis com os conceitos da aula.",
-      "difficulty": "DIRECT",
-      "cognitiveOperation": "ANALYZE",
+      "explanation": "O percurso descrito relaciona novas evidências a revisões nas explicações: modelos podem ser ajustados quando deixam de acomodar resultados. Uma representação mais detalhada ou ensinada depois não ganha validade apenas por sua aparência ou posição na sequência.",
+      "difficulty": "IFSC",
+      "cognitiveOperation": "TRANSFER",
       "conceptIds": [
         "CIE-09-CON-01"
       ],
-      "targetedError": "misconception_identification",
+      "targetedError": "A [fixed-model belief]: impede revisão diante de evidência; C [literal representation]: confunde modelo com registro fotográfico; D [overcorrection]: descarta resultados anteriores em vez de reinterpretá-los; E [evidence denial]: separa experimentos da construção de explicações.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-09-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em modelos atômicos e partículas subatômicas?",
+      "stem": "Em uma revisão, duplas receberam cartões com uma partícula positiva, uma neutra, uma negativa e círculos que representavam níveis. A tarefa era montar uma descrição do átomo usando as indicações de cada cartão.\n\nQual síntese é compatível com essa representação escolar?",
       "options": [
         {
           "key": "A",
-          "text": "Rutherford concluiu que o átomo era uma esfera maciça sem espaço interno."
+          "text": "As partículas neutras definem sozinhas a carga do núcleo."
         },
         {
           "key": "B",
-          "text": "Nêutrons têm carga elétrica positiva igual à dos prótons."
+          "text": "Os círculos indicam trilhas materiais visíveis dos elétrons."
         },
         {
           "key": "C",
-          "text": "Todos os modelos atômicos históricos são idênticos."
+          "text": "Os níveis representados eliminam diferenças entre modelos históricos."
         },
         {
           "key": "D",
-          "text": "Elétrons ficam dentro do núcleo junto com prótons e nêutrons."
+          "text": "Prótons e nêutrons ocupam juntos uma órbita da região externa."
         },
         {
           "key": "E",
-          "text": "Prótons têm carga positiva, nêutrons são eletricamente neutros e elétrons têm carga negativa."
+          "text": "O esquema organiza partículas e níveis como representação do átomo."
         }
       ],
       "correctOption": "E",
-      "explanation": "A alternativa E é a correta: Prótons têm carga positiva, nêutrons são eletricamente neutros e elétrons têm carga negativa.",
+      "explanation": "Os cartões organizam partículas por carga e região e mostram níveis como parte de um esquema escolar. Os círculos ajudam a representar o modelo; não são observações diretas de trilhas materiais percorridas por elétrons.",
       "difficulty": "IFSC",
       "cognitiveOperation": "EVALUATE",
       "conceptIds": [
+        "CIE-09-CON-04",
+        "CIE-09-CON-05",
         "CIE-09-CON-06"
       ],
-      "targetedError": "synthesis",
+      "targetedError": "A [historical flattening]: encobre diferenças entre propostas; B [literal-orbit misconception]: transforma o esquema em trajetória fotografada; C [charge confusion]: atribui ao nêutron a carga nuclear positiva; D [region confusion]: desloca prótons e nêutrons para a região externa.",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     }
   ]

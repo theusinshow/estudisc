@@ -6,6 +6,7 @@ import { MemoryTrackImportRepository } from "@/db/repositories/memory-store";
 import { hashCanonicalJson } from "@/lib/canonical-json";
 import { MAX_TRACK_PACK_BYTES } from "@/features/import/api";
 import { lessonVersionFixture } from "../fixtures/lesson-version-import";
+import { newLessonFixture } from "../fixtures/new-lesson-import";
 const state = vi.hoisted(() => ({ student: false }));
 vi.mock("@/db/connection", () => ({ ensureDatabaseReady: async () => {}, getDatabaseUrl: () => "memory://local" }));
 vi.mock("@/features/auth/owner", async original => {
@@ -32,5 +33,15 @@ describe("targeted import ADMIN boundary and compatible UI responses", () => {
       expect((await route(request({ ...lessonVersionFixture(true).packet, version: 2147483648 }))).status).toBe(400);
       expect((await route(new Request("http://localhost", { method: "POST", body: JSON.stringify("x".repeat(MAX_TRACK_PACK_BYTES)) }))).status).toBe(413);
     }
+  });
+  it("routes caderno.lesson-new.v1 to the new-lesson import (ADR 0064)", async () => {
+    const { context, pack } = newLessonFixture(true);
+    await new MemoryTrackImportRepository().applyTrackPack(context, hashCanonicalJson(context));
+    const checked = await preview(request(pack));
+    expect(checked.status).toBe(200); expect(await checked.json()).toMatchObject({ status: "ready", lessonId: "MAT-NEW-FIX", summary: { lessonCount: 1, activityCount: 3 } });
+    expect((await apply(request(pack))).status).toBe(201);
+    expect((await apply(request(pack))).status).toBe(200);
+    expect((await apply(request({ ...pack, packId: "estudisc.new-lesson.other" }))).status).toBe(409);
+    expect((await apply(request({ schema: "caderno.lesson-new.v1" }))).status).toBe(400);
   });
 });

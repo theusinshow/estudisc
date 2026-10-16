@@ -6,299 +6,378 @@
       "id": "POR-11-Q01",
       "lessonId": "POR-11",
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Regência verbal e nominal, preposição e crase em uso real da língua?",
+      "stem": "Na primeira frase, que relação é expressa pelo trecho ao debate em relação ao verbo assistiu?",
       "options": [
         {
           "id": "A",
-          "text": "Regência é só lista de preposições."
+          "text": "O debate é o objeto acompanhado pela turma e sujeito de apresentou.",
+          "targetsError": "conceptual",
+          "rationale": "A mediadora é quem apresentou as propostas; ao debate completa assistiu."
         },
         {
           "id": "B",
-          "text": "Todo verbo exige objeto direto."
+          "text": "Ao debate indica o destino para o qual a turma se deslocou no auditório.",
+          "targetsError": "interpretation",
+          "rationale": "O trecho descreve acompanhar uma discussão; o auditório é o lugar do evento."
         },
         {
           "id": "C",
-          "text": "Uso comum na fala sempre coincide com norma-padrão."
+          "text": "Ao debate completa assistir no sentido de acompanhar uma discussão."
         },
         {
           "id": "D",
-          "text": "Regência descreve a relação entre termo regente e complemento, incluindo a preposição exigida quando houver."
+          "text": "Ao debate completa o substantivo apresentação, que pede esse complemento.",
+          "targetsError": "attention",
+          "rationale": "Na frase, a expressão liga-se ao verbo assistiu, não ao substantivo apresentação."
         },
         {
           "id": "E",
-          "text": "Antes de toda palavra feminina há crase."
+          "text": "Ao debate funciona como complemento nominal de propostas, com valor de tema.",
+          "targetsError": "conceptual",
+          "rationale": "A expressão aparece ligada ao verbo assistiu; propostas pertence à oração seguinte."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Regência descreve a relação entre termo regente e complemento, incluindo a preposição exigida quando houver.",
+      "correctOption": "C",
+      "explanation": "A turma acompanhou uma discussão, e ao debate completa o verbo assistir nesse sentido de presenciar. O auditório indica o lugar do evento; confundir o local com o complemento do verbo não explica a preposição presente na frase.",
       "difficulty": "foundation",
       "cognitiveOperation": "recognize",
       "concepts": [
         "POR-11-C01"
       ],
-      "targetedError": "Antes de toda palavra feminina há crase.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler o evento acompanhado como se fosse a localização física da turma.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Crítica fictícia do jornal estudantil, assinada por Rebeca Lima em 13 de março de 2026: a turma assistiu ao debate sobre transporte público no auditório da escola. A mediadora apresentou três propostas de trajeto, e os convidados explicaram como a mudança afetaria os horários de saída. No encerramento, os alunos preencheram uma ficha sobre os pontos discutidos e deixaram perguntas numa caixa ao lado da porta. A edição seguinte do jornal publicará um resumo da conversa e o calendário de reuniões do grêmio."
     },
     {
       "id": "POR-11-Q02",
       "lessonId": "POR-11",
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Regência verbal e nominal, preposição e crase, qual princípio deve orientar a análise?",
+      "stem": "Na primeira frase, qual trecho completa o sentido do adjetivo favorável?",
       "options": [
         {
           "id": "A",
-          "text": "Verbos podem mudar de regência e sentido conforme o uso; é preciso analisar a construção inteira."
+          "text": "À diretora, complemento de favorável que identifica quem apresentou o tema.",
+          "targetsError": "conceptual",
+          "rationale": "A diretora é agente de apresentou; o adjetivo favorável relaciona-se à criação."
         },
         {
           "id": "B",
-          "text": "Todo verbo exige objeto direto."
+          "text": "Aos estudantes, complemento de favorável que indica os beneficiários da proposta.",
+          "targetsError": "attention",
+          "rationale": "Estudantes são beneficiários mencionados no contexto, não o complemento de favorável."
         },
         {
           "id": "C",
-          "text": "Uso comum na fala sempre coincide com norma-padrão."
+          "text": "À biblioteca, complemento de favorável que localiza a avaliação do espaço.",
+          "targetsError": "interpretation",
+          "rationale": "A biblioteca é referência de lugar; o complemento do adjetivo é à criação."
         },
         {
           "id": "D",
-          "text": "Antes de toda palavra feminina há crase."
+          "text": "À ampliação, complemento de favorável que retoma a quantidade de cadeiras.",
+          "targetsError": "attention",
+          "rationale": "O trecho indicado nomeia a proposta de criar uma sala, não ampliar cadeiras."
         },
         {
           "id": "E",
-          "text": "Regência é só lista de preposições."
+          "text": "À criação de uma sala de descanso para os estudantes da escola."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Verbos podem mudar de regência e sentido conforme o uso; é preciso analisar a construção inteira.",
+      "correctOption": "E",
+      "explanation": "A expressão à criação informa a que proposta a diretora se mostra favorável e completa o adjetivo. A sala perto da biblioteca é descrita como local do projeto, mas não é o segmento ligado diretamente à avaliação registrada na ata.",
       "difficulty": "direct",
       "cognitiveOperation": "understand",
       "concepts": [
         "POR-11-C02"
       ],
-      "targetedError": "Regência é só lista de preposições.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir o local do projeto com aquilo que recebe a avaliação favorável.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Ata fictícia do conselho da Escola das Fontes, redigida por Fábio Duarte em 25 de abril de 2026: a diretora declarou-se favorável à criação de uma sala de descanso para estudantes que aguardam transporte. O grupo avaliou o espaço perto da biblioteca e estimou que doze cadeiras caberiam sem bloquear a saída. A proposta prevê uma escala de uso no contraturno e um mural com os horários dos ônibus. Na próxima reunião, os representantes apresentarão uma planta com as medidas e os custos de pintura."
     },
     {
       "id": "POR-11-Q03",
       "lessonId": "POR-11",
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Regência verbal e nominal, preposição e crase?",
+      "stem": "Na agenda, o que explica a presença do acento grave em às nove?",
       "options": [
         {
           "id": "A",
-          "text": "Uso comum na fala sempre coincide com norma-padrão."
+          "text": "A indicação de horário reúne a preposição exigida pela expressão e o artigo que acompanha nove."
         },
         {
           "id": "B",
-          "text": "Antes de toda palavra feminina há crase."
+          "text": "O artigo de nove recebe acento por vir depois da preposição a.",
+          "targetsError": "memory",
+          "rationale": "O acento marca a contração da preposição a com o artigo feminino as em às nove."
         },
         {
           "id": "C",
-          "text": "A crase gráfica marca, em casos regulares, a fusão da preposição “a” com artigo “a/as” ou certos demonstrativos."
+          "text": "A palavra exposição exige a preposição a antes da indicação de horário, formando às nove.",
+          "targetsError": "conceptual",
+          "rationale": "O nome exposição não exige essa preposição; às resulta da preposição da indicação de horário com o artigo."
         },
         {
           "id": "D",
-          "text": "Regência é só lista de preposições."
+          "text": "O acento distingue duas exposições e indica plural no horário abreviado.",
+          "targetsError": "attention",
+          "rationale": "Às marca a hora; o plural do artigo se refere às horas, não a exposições."
         },
         {
           "id": "E",
-          "text": "Todo verbo exige objeto direto."
+          "text": "O sinal separa a visita de domingo da abertura de sábado na agenda.",
+          "targetsError": "interpretation",
+          "rationale": "O acento grave assinala a contração exigida na indicação de horário às nove."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A crase gráfica marca, em casos regulares, a fusão da preposição “a” com artigo “a/as” ou certos demonstrativos.",
+      "correctOption": "A",
+      "explanation": "A agenda marca um horário e escreve às antes de nove. A preposição da indicação temporal encontra o artigo que acompanha o numeral; o acento não pertence à palavra nove nem serve para diferenciar os dias do evento.",
       "difficulty": "applied",
       "cognitiveOperation": "discriminate",
       "concepts": [
         "POR-11-C03"
       ],
-      "targetedError": "Todo verbo exige objeto direto.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Atribuir o acento à grafia do numeral em vez da junção indicada pela expressão de hora.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Agenda fictícia do centro cultural do bairro, publicada por Heloísa Campos em 9 de maio de 2026: a exposição abre às nove no sábado, e a visita comentada começa às onze. A equipe montará as fotografias no salão do térreo e reservará uma bancada para o catálogo. No domingo, uma oficina de desenho ocorrerá no jardim, caso o tempo permita. O aviso recomenda chegar dez minutos antes para retirar a pulseira de identificação e consultar o mapa das salas."
     },
     {
       "id": "POR-11-Q04",
       "lessonId": "POR-11",
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Regência verbal e nominal, preposição e crase?",
+      "stem": "Na expressão retornou à biblioteca, que elementos se encontram reunidos pela crase?",
       "options": [
         {
           "id": "A",
-          "text": "Antes de toda palavra feminina há crase."
+          "text": "A preposição a e o artigo feminino a, formando à biblioteca.",
+          "targetsError": "conceptual",
+          "rationale": "A contração envolve uma preposição exigida por retornou e o artigo de biblioteca."
         },
         {
           "id": "B",
-          "text": "Regência é só lista de preposições."
+          "text": "A preposição de retornou e o artigo feminino que inicia biblioteca.",
+          "targetsError": "procedural",
+          "rationale": "O verbo, nesse uso, rege a preposição a; com o artigo, forma à biblioteca."
         },
         {
           "id": "C",
-          "text": "Todo verbo exige objeto direto."
+          "text": "A preposição indicada pelo verbo e o artigo feminino que determina biblioteca."
         },
         {
           "id": "D",
-          "text": "Uso comum na fala sempre coincide com norma-padrão."
+          "text": "O artigo definido a e a preposição para, contraídos antes de biblioteca.",
+          "targetsError": "memory",
+          "rationale": "Para não participa da expressão; a contração reúne a preposição a e o artigo a."
         },
         {
           "id": "E",
-          "text": "Não há crase apenas porque a palavra seguinte é feminina; é preciso verificar exigência de preposição e presença de determinante compatível."
+          "text": "A preposição a e o artigo feminino de entregar, formando à biblioteca.",
+          "targetsError": "attention",
+          "rationale": "A forma à biblioteca está ligada a retornou; entregar aparece em outra oração."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Não há crase apenas porque a palavra seguinte é feminina; é preciso verificar exigência de preposição e presença de determinante compatível.",
+      "correctOption": "C",
+      "explanation": "No bilhete, retornar liga-se à biblioteca por meio da preposição a, e o substantivo aparece com artigo feminino a. O encontro dessas duas formas está marcado em à; o verbo não se funde com o artigo, e a preposição para pertence a outra oração.",
       "difficulty": "ifsc",
       "cognitiveOperation": "apply",
       "concepts": [
         "POR-11-C04"
       ],
-      "targetedError": "Uso comum na fala sempre coincide com norma-padrão.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Contar o artigo do substantivo sem considerar a preposição ligada ao verbo.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Bilhete fictício de devolução de livros, escrito por Luana Vidal em 17 de junho de 2026: depois da aula, Pedro retornou à biblioteca para entregar dois romances e renovar o prazo de um atlas. A atendente conferiu as capas, registrou a devolução e pediu que ele deixasse o atlas sobre a mesa azul. No corredor, um cartaz informava que a sala de leitura fecharia mais cedo na sexta-feira. Pedro anotou o novo horário no caderno e seguiu para a oficina de música."
     },
     {
       "id": "POR-11-Q05",
       "lessonId": "POR-11",
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Regência verbal e nominal, preposição e crase?",
+      "stem": "No trecho confiança nos registros, que papel desempenha o grupo iniciado por nos?",
       "options": [
         {
           "id": "A",
-          "text": "Regência é só lista de preposições."
+          "text": "Indica o agente que depositou os registros na confiança da equipe.",
+          "targetsError": "attention",
+          "rationale": "A expressão completa o substantivo confiança e indica aquilo em que ela se apoia."
         },
         {
           "id": "B",
-          "text": "Regência nominal envolve nomes que selecionam complementos preposicionados."
+          "text": "Completa o sentido do substantivo confiança, indicando aquilo em que ela se apoia."
         },
         {
           "id": "C",
-          "text": "Todo verbo exige objeto direto."
+          "text": "Indica o lugar em que a equipe encontrou confiança durante a campanha.",
+          "targetsError": "interpretation",
+          "rationale": "Nos registros completa confiança; não localiza a ação de encontrar."
         },
         {
           "id": "D",
-          "text": "Uso comum na fala sempre coincide com norma-padrão."
+          "text": "Completa o verbo confiar, como objeto direto da conferência dos formulários.",
+          "targetsError": "conceptual",
+          "rationale": "A expressão está ligada ao nome confiança, não a um verbo da oração."
         },
         {
           "id": "E",
-          "text": "Antes de toda palavra feminina há crase."
+          "text": "Modifica formulários e informa que eles foram produzidos nos registros.",
+          "targetsError": "attention",
+          "rationale": "Nos registros completa o substantivo confiança, não formulários."
         }
       ],
       "correctOption": "B",
-      "explanation": "Regência nominal envolve nomes que selecionam complementos preposicionados.",
+      "explanation": "O substantivo confiança relaciona-se ao grupo nos registros, que indica em que a equipe deposita sua confiança. As salas são os locais da conferência; ler nos registros como indicação de lugar apagaria o vínculo entre o nome e seu complemento.",
       "difficulty": "applied",
       "cognitiveOperation": "evaluate",
       "concepts": [
         "POR-11-C05"
       ],
-      "targetedError": "Antes de toda palavra feminina há crase.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Interpretar o complemento de confiança como circunstância espacial da coleta.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Relato fictício da comissão de dados da Escola Central, assinado por Tainá Rocha em 28 de julho de 2026: a equipe demonstrou confiança nos registros coletados durante a campanha de vacinação. Os formulários foram conferidos em duas salas, e os horários foram organizados numa tabela comum. Um representante pediu revisão de três fichas que apresentavam datas ilegíveis. No encerramento, a diretora agradeceu a colaboração das turmas e encaminhou o relatório à unidade de saúde do bairro."
     },
     {
       "id": "POR-11-Q06",
       "lessonId": "POR-11",
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Regência verbal e nominal, preposição e crase, qual análise está correta?",
+      "stem": "Na frase sobre a escolha, como o grupo ao caminho se relaciona ao verbo preferiram?",
       "options": [
         {
           "id": "A",
-          "text": "Todo verbo exige objeto direto."
+          "text": "Ele é complemento nominal de trajeto e nomeia a rota escolhida pela associação.",
+          "targetsError": "conceptual",
+          "rationale": "Ao caminho relaciona-se a preferiram e apresenta a segunda opção da comparação."
         },
         {
           "id": "B",
-          "text": "Uso comum na fala sempre coincide com norma-padrão."
+          "text": "Ele é complemento nominal de preferência e nomeia o destino do trajeto.",
+          "targetsError": "interpretation",
+          "rationale": "A expressão liga-se ao verbo preferiram e apresenta a segunda opção comparada."
         },
         {
           "id": "C",
-          "text": "Antes de toda palavra feminina há crase."
+          "text": "Ele apresenta a segunda opção da preferência, ligada ao verbo pela preposição a."
         },
         {
           "id": "D",
-          "text": "Substituir uma preposição pode alterar norma, sentido ou ambos."
+          "text": "Ele é sujeito posposto de preferiram, atraído pelo artigo masculino.",
+          "targetsError": "attention",
+          "rationale": "O sujeito é a associação; ao caminho integra a construção de preferência do verbo."
         },
         {
           "id": "E",
-          "text": "Regência é só lista de preposições."
+          "text": "Ele é adjunto adnominal de praça e localiza a fonte de água.",
+          "targetsError": "interpretation",
+          "rationale": "Ao caminho completa a relação com preferiram; praça aparece em outro trecho."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Substituir uma preposição pode alterar norma, sentido ou ambos.",
+      "correctOption": "C",
+      "explanation": "A ata compara o trajeto pela praça com o caminho do viaduto, e a preposição a introduz a segunda alternativa ligada a preferiram. O grupo não expressa um destino nem controla o verbo; os participantes são quem escolheu entre os percursos.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze",
       "concepts": [
         "POR-11-C06"
       ],
-      "targetedError": "Regência é só lista de preposições.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler o segundo termo da preferência como direção de deslocamento em vez de opção comparada.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Ata fictícia da associação de ciclistas do bairro, preparada por Murilo Braga em 6 de agosto de 2026: na reunião, os participantes preferiram o trajeto pela praça ao caminho que passa junto ao viaduto. A primeira opção tem iluminação nova e uma fonte de água perto do portão. O segundo percurso é mais curto, mas cruza uma avenida em obras. A associação pedirá à prefeitura uma faixa de travessia e divulgará o mapa revisado depois da vistoria marcada para terça-feira."
     },
     {
       "id": "POR-11-Q07",
       "lessonId": "POR-11",
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Antes de toda palavra feminina há crase.”. Qual é a melhor correção?",
+      "stem": "Na primeira frase, por que a expressão a galeria não recebe acento grave?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "A expressão não leva acento porque galeria é singular e o artigo está ausente.",
+          "targetsError": "conceptual",
+          "rationale": "O singular admite artigo; a ausência de crase decorre de visitar ligar-se diretamente ao nome."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "O artigo definido a é dispensado porque mercado aparece depois na frase.",
+          "targetsError": "attention",
+          "rationale": "A palavra mercado não determina o artigo de galeria; o verbo visitar não rege preposição a nesse uso."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "O artigo a está presente, mas o acento é dispensado por se tratar de um horário.",
+          "targetsError": "interpretation",
+          "rationale": "Sábado marca a ocasião; não há preposição a antes de galeria exigida pelo verbo."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "O verbo visitar liga-se diretamente ao nome nesse uso, sem exigir a preposição a."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "A marca de crase depende de galeria ser substantivo abstrato e singular.",
+          "targetsError": "memory",
+          "rationale": "Galeria é concreta e singular, mas o ponto decisivo é a ausência de preposição exigida por visitar."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Regência descreve a relação entre termo regente e complemento, incluindo a preposição exigida quando houver.",
+      "correctOption": "D",
+      "explanation": "A turma visitou o quê: a galeria. Nesse uso, o complemento vem diretamente após visitar, com o artigo feminino a, sem a preposição exigida para formar a crase. A menção a sábado não muda a relação do verbo com o nome.",
       "difficulty": "applied",
       "cognitiveOperation": "diagnose_error",
       "concepts": [
         "POR-11-C01"
       ],
-      "targetedError": "Antes de toda palavra feminina há crase.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Supor que o artigo feminino sozinho já pede o acento grave.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Nota fictícia do guia de exposições da cidade, escrita por Beatriz Salles em 15 de setembro de 2026: a turma visitou a galeria do antigo mercado na manhã de sábado e fotografou os painéis de azulejo. Depois, os estudantes caminharam até a praça para registrar a feira de produtores locais. Uma monitora explicou as datas de restauração das paredes e indicou um catálogo que pode ser consultado na recepção. O grupo devolveu as câmeras antes do almoço e seguiu para a estação de ônibus."
     },
     {
       "id": "POR-11-Q08",
       "lessonId": "POR-11",
       "type": "MCQ",
-      "stimulus": "Compare “O estudante assistiu ao debate” e “O técnico assistiu o paciente”.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "No primeiro período, que análise descreve a expressão à decisão?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Ela combina a preposição ligada a referir-se com o artigo feminino de decisão."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "Ela introduz o complemento exigido por referir-se e localiza a equipe na recepção.",
+          "targetsError": "interpretation",
+          "rationale": "A recepção indica lugar; à decisão completa o verbo referir-se."
         },
         {
           "id": "C",
-          "text": "No sentido de ver/presenciar, a norma-padrão tradicional usa “assistir a”; no sentido de prestar assistência, complemento direto."
+          "text": "Ela é sujeito de reuniu e concorda com o verbo no singular.",
+          "targetsError": "conceptual",
+          "rationale": "O sujeito de reuniu é equipe; à decisão é complemento ligado a referir-se."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "Ela identifica os estudantes, que são o complemento de referir-se.",
+          "targetsError": "attention",
+          "rationale": "À decisão nomeia o assunto referido; estudantes aparecem como autores dos comentários."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "Ela indica o período em que a decisão foi tomada pela equipe.",
+          "targetsError": "interpretation",
+          "rationale": "A expressão completa referir-se, não marca quando a equipe reuniu os comentários."
         }
       ],
-      "correctOption": "C",
-      "explanation": "No sentido de ver/presenciar, a norma-padrão tradicional usa “assistir a”; no sentido de prestar assistência, complemento direto.",
+      "correctOption": "A",
+      "explanation": "O relatório se referiu a algo, e esse algo é a decisão, determinada pelo artigo feminino a. A expressão reúne a preposição pedida pela construção referir-se a e o artigo do nome; ela não marca local nem data.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-11-C01",
         "POR-11-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tomar o nome que completa referiu-se como uma circunstância temporal ou espacial.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Resumo fictício do conselho de saúde da Escola Maré, redigido por Iara Nogueira em 22 de outubro de 2026: o relatório se referiu à decisão de ampliar o horário da sala de atendimento e reuniu comentários de estudantes e funcionários. A equipe comparou o número de visitas em abril e maio e encontrou maior procura no início da tarde. O aviso final recomenda que os alunos se dirijam à recepção para consultar a escala e encaminhem dúvidas à coordenação pelo formulário eletrônico."
     }
   ]
 }

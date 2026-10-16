@@ -2,139 +2,139 @@
   {
     "id": "CIE-23-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de biodiversidade, ameaças, conservação e preservação, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Uma equipe escolar comparou três áreas de mata próximas a um rio. Em cada ponto, registrou espécies de plantas, insetos, aves e fungos, além de diferenças entre populações da mesma planta e entre ambientes de encosta e várzea. O levantamento não encontrou os mesmos organismos em todas as parcelas. Para apresentar os resultados, os estudantes discutiram se bastava contar os animais maiores ou se outras dimensões precisavam entrar no relatório.\n\nQual abordagem representa melhor o que a equipe chamou de biodiversidade?",
     "options": [
       {
         "key": "A",
-        "text": "Perda e fragmentação de habitat estão entre as principais ameaças à biodiversidade."
+        "text": "Contar aves de grande porte e usar o número como retrato completo das três áreas."
       },
       {
         "key": "B",
-        "text": "Espécies exóticas nunca causam impacto em ecossistemas."
+        "text": "Descrever o rio sem registrar organismos, pois a água resume a variedade de vida local."
       },
       {
         "key": "C",
-        "text": "Criar uma área protegida resolve automaticamente todos os problemas de conservação."
+        "text": "Listar plantas adultas e excluir insetos, fungos e diferenças entre populações."
       },
       {
         "key": "D",
-        "text": "Conservação e preservação significam explorar recursos sem qualquer limite."
+        "text": "Considerar variedade de organismos, variação entre populações e diversidade de ambientes."
       },
       {
         "key": "E",
-        "text": "Biodiversidade significa apenas contar grandes animais."
+        "text": "Agrupar as três parcelas em uma amostra combinada, já que pertencem ao mesmo município."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Perda e fragmentação de habitat estão entre as principais ameaças à biodiversidade.",
+    "correctOption": "D",
+    "explanation": "O levantamento inclui espécies, diferenças entre populações e ambientes distintos. A redução mais tentadora considera somente animais grandes; biodiversidade abrange variedade de organismos e variação nos níveis genético e ecossistêmico.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-23-CON-01"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "reduzir biodiversidade à contagem de animais grandes",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-23-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar biodiversidade, ameaças, conservação e preservação sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Um município planejou uma estrada que atravessaria uma área de floresta usada por anfíbios, aves e pequenos mamíferos. Antes da obra, pesquisadores registraram locais de alimentação, abrigo e reprodução de diferentes espécies. O traçado proposto eliminaria parte da vegetação e substituiria o solo natural por pavimento e estruturas de drenagem. A prefeitura pediu aos grupos que previssem quais componentes do ambiente seriam alterados diretamente pela intervenção.\n\nQual efeito inicial deve ser considerado na avaliação?",
     "options": [
       {
         "key": "A",
-        "text": "Criar uma área protegida resolve automaticamente todos os problemas de conservação."
+        "text": "A nova via ampliará a área de abrigo por criar superfícies pavimentadas junto à floresta."
       },
       {
         "key": "B",
-        "text": "Biodiversidade significa apenas contar grandes animais."
+        "text": "A perda de habitat pode reduzir recursos e locais essenciais para populações que usam a área."
       },
       {
         "key": "C",
-        "text": "Conservação e preservação significam explorar recursos sem qualquer limite."
+        "text": "A drenagem deve manter as condições de reprodução, mesmo quando a estrada remover parte da vegetação."
       },
       {
         "key": "D",
-        "text": "Espécies exóticas nunca causam impacto em ecossistemas."
+        "text": "A estrada transforma as espécies observadas em consumidores de um nível trófico diferente."
       },
       {
         "key": "E",
-        "text": "Espécies exóticas invasoras podem alterar relações ecológicas e competir com espécies nativas."
+        "text": "O pavimento pode funcionar como faixa de passagem entre os trechos de mata separados pela obra."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Espécies exóticas invasoras podem alterar relações ecológicas e competir com espécies nativas.",
+    "correctOption": "B",
+    "explanation": "A estrada removeria vegetação que serve a alimentação, abrigo e reprodução, alterando condições do habitat. A leitura tentadora considera a obra uma mudança de paisagem sem efeito sobre populações; os registros mostram dependência de áreas específicas.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-23-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "tratar a perda de habitat como mudança sem efeito populacional",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-23-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em biodiversidade, ameaças, conservação e preservação?",
+    "stem": "Um levantamento por imagens mostrou uma mata contínua dividida em cinco manchas menores após a abertura de uma estrada e de áreas de cultivo. Em visitas de campo, a equipe encontrou animais em ambos os lados, porém registrou poucos cruzamentos em trechos movimentados. O relatório não concluiu que todas as populações haviam desaparecido; recomendou monitorar deslocamentos e avaliar passagens de fauna e faixas de vegetação conectando as manchas.\n\nQual problema ecológico o relatório procura compreender?",
     "options": [
       {
         "key": "A",
-        "text": "Poluição, exploração excessiva e mudanças climáticas também pressionam populações e ecossistemas."
+        "text": "A expansão do habitat, que aproximou os organismos antes separados pela cobertura contínua."
       },
       {
         "key": "B",
-        "text": "Espécies exóticas nunca causam impacto em ecossistemas."
+        "text": "A dispersão de sementes, que impede a formação de manchas isoladas na paisagem."
       },
       {
         "key": "C",
-        "text": "Criar uma área protegida resolve automaticamente todos os problemas de conservação."
+        "text": "A fragmentação, que pode dificultar deslocamentos e diminuir a conexão entre populações."
       },
       {
         "key": "D",
-        "text": "Conservação e preservação significam explorar recursos sem qualquer limite."
+        "text": "A sucessão ecológica, que pode recuperar gradualmente a cobertura vegetal nas bordas da estrada."
       },
       {
         "key": "E",
-        "text": "Biodiversidade significa apenas contar grandes animais."
+        "text": "A polinização contribui para a reprodução vegetal, mas não conecta os fragmentos ocupados pelos animais."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Poluição, exploração excessiva e mudanças climáticas também pressionam populações e ecossistemas.",
+    "correctOption": "C",
+    "explanation": "A mata permanece em manchas, mas a estrada dificulta deslocamentos entre elas. A interpretação tentadora descreve uma perda completa da floresta; o cenário é fragmentação, que pode reduzir conectividade entre populações.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-23-CON-03"
     ],
-    "targetedError": "relationship",
+    "targetedError": "confundir fragmentação com perda uniforme de toda a floresta",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-23-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma rodovia divide uma floresta contínua em pequenos fragmentos isolados. Qual ameaça aparece de forma direta?",
+    "stem": "Em uma bacia hidrográfica, imagens de dez anos mostraram que parte da mata foi substituída por lavouras e que as áreas restantes ficaram separadas por estradas e pastagens. Os registros de campo indicaram menos pontos de reprodução para algumas espécies e maior distância entre grupos observados. A equipe comparou a situação com outra bacia que mantinha faixas de vegetação entre áreas de mata e recomendou acompanhar a conectividade ao longo do tempo.\n\nQual interpretação relaciona melhor os dados de paisagem e de campo?",
     "options": [
       {
         "key": "A",
-        "text": "Aumento automático da diversidade genética."
+        "text": "Perda e fragmentação de habitat podem atuar juntas, reduzindo recursos e conectividade entre populações."
       },
       {
         "key": "B",
-        "text": "Formação de uma nova camada de ozônio."
+        "text": "As pastagens restauraram a mata porque permitiram que os animais ocupassem uma área maior."
       },
       {
         "key": "C",
-        "text": "Eliminação de qualquer efeito de borda."
+        "text": "A distância entre grupos indica aumento de intercâmbio por causa das estradas e lavouras."
       },
       {
         "key": "D",
-        "text": "Fragmentação de habitat, que pode reduzir conectividade entre populações."
+        "text": "As mudanças registradas são de clima, sem relação com cobertura ou organização da paisagem."
       },
       {
         "key": "E",
-        "text": "Conversão de todos os consumidores em decompositores."
+        "text": "As faixas de vegetação compensam a distância entre remanescentes e aceleram a recuperação do habitat."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Fragmentação de habitat, que pode reduzir conectividade entre populações.",
+    "correctOption": "A",
+    "explanation": "Os dados mostram redução da área de mata e separação dos remanescentes, acompanhadas de menos pontos de reprodução. A leitura tentadora considera só a área total perdida; avaliar também a fragmentação explica a dificuldade de conexão entre grupos.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
@@ -142,37 +142,37 @@
       "CIE-23-CON-02",
       "CIE-23-CON-03"
     ],
-    "targetedError": "application",
+    "targetedError": "ignorar os efeitos combinados de perda e fragmentação de habitat",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-23-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Perda e fragmentação de habitat estão entre as principais ameaças à biodiversidade.\nII. Biodiversidade significa apenas contar grandes animais.\nIII. Poluição, exploração excessiva e mudanças climáticas também pressionam populações e ecossistemas.\nIV. Espécies exóticas nunca causam impacto em ecossistemas.\nAssinale a alternativa CORRETA.",
+    "stem": "Após chuvas fortes, uma escola coletou amostras em um córrego acima e abaixo de uma área de descarte irregular. No trecho inferior, a água tinha mais partículas em suspensão e os estudantes observaram menos larvas de insetos sensíveis. A turma não identificou a origem de cada substância nem mediu efeitos em todos os grupos de organismos. O relatório sugeriu análises químicas e a retirada segura dos resíduos antes de afirmar qual impacto ocorreria a longo prazo.\n\nQual conclusão é sustentada pelas observações disponíveis?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A água abaixo do descarte mostra que partículas suspensas melhoram o habitat das larvas."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "As diferenças identificam a substância responsável e permitem prever o efeito em cada grupo do córrego."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "As partículas suspensas aumentaram a diversidade aquática ao fornecer alimento adicional às larvas."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O trecho inferior teve menos organismos porque a coleta foi feita depois de uma chuva."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Os registros sugerem alteração associada ao descarte, embora a origem e os efeitos exijam novas análises."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
+    "correctOption": "E",
+    "explanation": "Há diferença de partículas e de organismos entre os pontos, associada à proximidade do descarte, embora a causa exata ainda precise de análise. A hipótese tentadora descarta qualquer efeito da poluição; os dados justificam investigação e prevenção.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -181,115 +181,115 @@
       "CIE-23-CON-03",
       "CIE-23-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "negar efeitos da poluição sobre organismos e ecossistemas",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-23-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre biodiversidade, ameaças, conservação e preservação para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Moradores de uma lagoa identificaram peixes de uma espécie originária de outro continente após a soltura de animais de aquário. Em dois anos, pescadores relataram queda na captura de peixes nativos pequenos; uma equipe também observou que os recém-chegados consumiam parte dos mesmos invertebrados. O estudo ainda avaliava outros fatores, como qualidade da água e pesca, antes de atribuir a mudança a uma causa única.\n\nQue hipótese merece ser testada no monitoramento da lagoa?",
     "options": [
       {
         "key": "A",
-        "text": "Espécies exóticas nunca causam impacto em ecossistemas."
+        "text": "A queda dos peixes nativos coincide com maior esforço de pesca, enquanto os novos peixes permanecem perto de aquários."
       },
       {
         "key": "B",
-        "text": "Conservação e preservação significam explorar recursos sem qualquer limite."
+        "text": "A espécie recém-chegada ocupa outro nível trófico e, por isso, não compartilha recursos com peixes locais."
       },
       {
         "key": "C",
-        "text": "Biodiversidade significa apenas contar grandes animais."
+        "text": "A espécie introduzida pode ser visitante sazonal, sem formar uma população estabelecida na lagoa."
       },
       {
         "key": "D",
-        "text": "Unidades de conservação são uma estratégia, mas conectividade, fiscalização, restauração e participação social também importam."
+        "text": "A espécie exótica pode competir com peixes nativos por recursos e alterar relações da lagoa."
       },
       {
         "key": "E",
-        "text": "Criar uma área protegida resolve automaticamente todos os problemas de conservação."
+        "text": "A pesca e a qualidade da água deixam de importar porque há uma espécie nova no ambiente."
       }
     ],
     "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Unidades de conservação são uma estratégia, mas conectividade, fiscalização, restauração e participação social também importam.",
+    "explanation": "A espécie introduzida consome recursos usados por peixes nativos, o que sugere competição, embora outras causas também estejam em estudo. A ideia tentadora presume ausência de impacto por origem externa; os dados justificam testar efeitos ecológicos.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "CIE-23-CON-05"
     ],
-    "targetedError": "transfer",
+    "targetedError": "supor que espécie exótica não altera relações ecológicas",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-23-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre biodiversidade, ameaças, conservação e preservação?",
+    "stem": "Uma pesquisa em pequenas propriedades comparou canteiros de morango com diferentes faixas de vegetação nativa próximas. Onde havia mais flores e insetos visitantes, os técnicos registraram maior proporção de frutos bem formados em parte dos canteiros. A equipe também observou diferenças de solo e irrigação, então não atribuiu toda a variação a um único fator. Na devolutiva, discutiu benefícios ecológicos que podem apoiar a produção de alimentos.\n\nQual serviço ecossistêmico é compatível com a relação discutida?",
     "options": [
       {
         "key": "A",
-        "text": "Conservação busca manter biodiversidade e permitir uso compatível com sua manutenção; preservação enfatiza proteção contra interferências degradadoras."
+        "text": "A remoção de carbono por máquinas agrícolas como resultado da visita de insetos."
       },
       {
         "key": "B",
-        "text": "Espécies exóticas invasoras podem alterar relações ecológicas e competir com espécies nativas."
+        "text": "A polinização, que pode contribuir para a formação de frutos em plantas cultivadas."
       },
       {
         "key": "C",
-        "text": "Poluição, exploração excessiva e mudanças climáticas também pressionam populações e ecossistemas."
+        "text": "A maior formação de frutos decorre da irrigação, e a presença de insetos visitantes é incidental."
       },
       {
         "key": "D",
-        "text": "Biodiversidade significa apenas contar grandes animais."
+        "text": "A proporção de frutos cresceu porque flores caídas se decompuseram após a visita dos insetos."
       },
       {
         "key": "E",
-        "text": "Perda e fragmentação de habitat estão entre as principais ameaças à biodiversidade."
+        "text": "A presença de insetos visitantes não se relaciona à formação dos frutos observados nos canteiros."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a incorreta: Biodiversidade significa apenas contar grandes animais. As demais expressam relações compatíveis com os conceitos da aula.",
+    "correctOption": "B",
+    "explanation": "A presença de insetos visitantes junto a mais frutos bem formados é compatível com polinização, embora o relatório considere outros fatores. A interpretação tentadora reduz a biodiversidade a uma lista de espécies e ignora funções ecológicas relevantes.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-23-CON-01"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "desconsiderar serviços ecossistêmicos associados à biodiversidade",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-23-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em biodiversidade, ameaças, conservação e preservação?",
+    "stem": "Um parque serrano acompanhou a época de floração de plantas e a presença de aves que se alimentavam de seus frutos. Ao longo de vários anos, os registros indicaram mudanças graduais no calendário de floração e nas faixas de altitude em que algumas espécies eram observadas. A equipe não encontrou o mesmo padrão em todas as plantas e anotou variações de chuva e temperatura. O relatório recomendou séries longas antes de concluir como as populações responderiam.\n\nQual interpretação considera adequadamente a possível pressão climática?",
     "options": [
       {
         "key": "A",
-        "text": "Conservação e preservação significam explorar recursos sem qualquer limite."
+        "text": "As diferenças de floração provam que as aves controlam a temperatura e a chuva da serra."
       },
       {
         "key": "B",
-        "text": "Biodiversidade significa apenas contar grandes animais."
+        "text": "A altitude observada demonstra que cada espécie mudou de ambiente por causa da poluição da água."
       },
       {
         "key": "C",
-        "text": "Criar uma área protegida resolve automaticamente todos os problemas de conservação."
+        "text": "Mudanças climáticas podem alterar condições e distribuição de espécies, com respostas distintas entre populações."
       },
       {
         "key": "D",
-        "text": "Espécies exóticas nunca causam impacto em ecossistemas."
+        "text": "As plantas mantiveram a mesma época de floração, pois os registros vieram de anos diferentes."
       },
       {
         "key": "E",
-        "text": "Proteger biodiversidade ajuda a manter serviços ecossistêmicos como polinização, regulação hídrica e ciclagem de nutrientes."
+        "text": "A presença de aves frugívoras elimina a necessidade de acompanhar temperatura e precipitação."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Proteger biodiversidade ajuda a manter serviços ecossistêmicos como polinização, regulação hídrica e ciclagem de nutrientes.",
+    "correctOption": "C",
+    "explanation": "As observações apontam alterações temporais e altitudinais junto a variações de temperatura e chuva, mas o relatório mantém a incerteza. A hipótese tentadora supõe que o clima não afeta distribuições; mudanças climáticas podem pressionar populações de modo desigual.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-23-CON-06"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "desconsiderar mudanças climáticas como pressão sobre populações",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]

@@ -1,4 +1,10 @@
 # Estudisc — Current project status
+POR-01..03 hand-written question pilot (2026-10-16) complete locally on content/por-pilot-20261016. The 24 existing Question IDs now have individual authorial stimuli, question-specific alternatives, distractor error metadata and explanations; all are v2 and draft. POR-01, POR-02 and POR-03 are v3; the complete Portuguese Pack is v7. All 21 other lessons and 168 Questions match the original Pack exactly. Source registry: 24 texts, license autoral-estudisc. Review: `.local/task/PILOT-REVIEW.md`. No import or publication was performed.
+
+Validation: offline frozen-lockfile install, lint, typecheck and content-QA passed (17 tests across 7 files). The pack validator exits 1 only for the remaining R11 repeated-choice group at POR-04-Q07 (21 unchanged Questions; the original 24-question group also included POR-01-Q07). No R3/R8/R9/R10/R11 finding identifies the new Questions. NEXT ACTION: keep the candidate in draft; publication is outside this task.
+
+
+New lessons in a published Track (2026-10-16, branch from main): `caderno.lesson-new.v1` import + authoring converter, [ADR 0064](docs/ADR/0064-new-lesson-in-published-track.md). Unit and PGlite integration tests cover import, idempotence, Admin Direct publication and study-flow order. Nothing was imported or published. NEXT ACTION: PR review, then convert the nine authored lessons (MAT-19..22, CIE-41, POR-25/26, GH-50/51) against fresh production contexts, preview, import as drafts, then Admin Direct.
 
 IFSC simulados (2026-10-16), accepted locally, not deployed. [ADR 0065](docs/ADR/0065-standalone-assessment-questions.md) adds:
 - standalone assessment Questions: ADMIN import of drafts and releases, plus Admin Direct publication with audit events, never bound to a lesson;

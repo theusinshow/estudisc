@@ -2,175 +2,227 @@
   {
     "id": "GH-26-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Industrialização e urbanização do Brasil, qual afirmação está correta?",
+    "stem": "A exposição reúne três mapas do Brasil: um registra poucas fábricas no começo do século XX, outro marca crescimento industrial a partir da década de 1930, e o terceiro mostra pontos de produção em diferentes regiões. Uma tabela ao lado discrimina quantidade de estabelecimentos por estado e período. As fichas de catalogação foram preenchidas por equipes diferentes e aguardam um texto comum antes de abrir a mostra ao público.\n\nQual síntese é sustentada pelas informações dos mapas?",
     "options": [
       {
         "key": "A",
-        "text": "Urbanização brasileira começou apenas no século XXI."
+        "text": "Os registros mostram presença industrial em várias regiões já no começo do século XX.",
+        "targetsError": "memory",
+        "rationale": "O texto não informa em quais regiões estavam as poucas fábricas do começo do século."
       },
       {
         "key": "B",
-        "text": "A industrialização brasileira ganhou força principalmente a partir da década de 1930 e se concentrou inicialmente no Sudeste."
+        "text": "O crescimento industrial dos anos 1930 ocorreu depois da expansão urbana em várias regiões.",
+        "targetsError": "causal",
+        "rationale": "Os mapas não relacionam a expansão urbana ao crescimento industrial."
       },
       {
         "key": "C",
-        "text": "Industrialização ocorreu de maneira uniforme em todo o território."
+        "text": "A presença de fábricas em diferentes regiões indica expansão em ritmo semelhante entre elas.",
+        "targetsError": "conceptual",
+        "rationale": "A presença em diferentes regiões não demonstra que a expansão ocorreu em ritmo semelhante."
       },
       {
         "key": "D",
-        "text": "Êxodo rural não tem relação com mecanização do campo."
+        "text": "A tabela por estado permite concluir que a expansão ocorreu no mesmo ritmo em todas as regiões.",
+        "targetsError": "interpretation",
+        "rationale": "A tabela discrimina estabelecimentos por estado e período, mas não sustenta um ritmo regional uniforme."
       },
       {
         "key": "E",
-        "text": "Crescimento urbano é sinônimo de urbanização planejada."
+        "text": "O crescimento industrial se intensificou a partir dos anos 1930, com presença em diferentes regiões."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A industrialização brasileira ganhou força principalmente a partir da década de 1930 e se concentrou inicialmente no Sudeste.",
+    "correctOption": "E",
+    "explanation": "O texto informa crescimento industrial a partir da década de 1930 e registra pontos de produção em diferentes regiões. Ele não localiza as poucas fábricas do começo do século XX, por isso a síntese se limita ao crescimento e à presença regional descritos.",
     "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-26-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-26-CON-01"
   },
   {
     "id": "GH-26-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Urbanização brasileira começou apenas no século XXI.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Uma tabela fictícia compara uma comunidade rural e duas cidades em 1980 e 2000. A população urbana das duas cidades cresce; no campo, novas máquinas reduzem o tempo de algumas tarefas agrícolas. A cidade com mais fábricas também amplia lojas, transportadoras e serviços de manutenção. Uma coluna de observações registra famílias que partiram da área rural, mas não acompanha individualmente o destino de cada uma.\n\nQue interpretação considera os elementos da tabela?",
     "options": [
       {
         "key": "A",
-        "text": "Urbanização brasileira começou apenas no século XXI."
+        "text": "As máquinas rurais aumentaram a população do campo e reduziram os serviços urbanos.",
+        "targetsError": "interpretation",
+        "rationale": "A tabela mostra crescimento das cidades e não descreve aumento da população rural."
       },
       {
         "key": "B",
-        "text": "Industrialização ocorreu de maneira uniforme em todo o território."
+        "text": "O crescimento urbano ocorreu sem relação com indústria, serviços ou mudanças no campo.",
+        "targetsError": "conceptual",
+        "rationale": "A tabela aproxima expansão urbana, emprego e mecanização agrícola."
       },
       {
         "key": "C",
-        "text": "Êxodo rural não tem relação com mecanização do campo."
+        "text": "Indústria e serviços atraíram moradores, enquanto a mecanização também estimulou saídas do campo."
       },
       {
         "key": "D",
-        "text": "Indústrias e expansão do setor de serviços atraíram população para cidades, enquanto mecanização do campo também estimulou êxodo rural."
+        "text": "A tabela demonstra que a maioria das famílias rurais foi para a cidade com mais fábricas.",
+        "targetsError": "conceptual",
+        "rationale": "O levantamento não acompanha o destino de cada família e não fornece essa proporção."
       },
       {
         "key": "E",
-        "text": "Crescimento urbano é sinônimo de urbanização planejada."
+        "text": "A mecanização substituiu o trabalho agrícola por serviços de transporte no campo.",
+        "targetsError": "conceptual",
+        "rationale": "A tabela registra serviços urbanos como setor adicional, não como substituição da atividade agrícola."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Indústrias e expansão do setor de serviços atraíram população para cidades, enquanto mecanização do campo também estimulou êxodo rural.",
+    "correctOption": "C",
+    "explanation": "A tabela registra crescimento das cidades, expansão industrial e de serviços, além de mecanização no campo e partidas rurais. Atribuir a cada família o mesmo destino não é sustentado porque o levantamento não acompanha indivíduos.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-26-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-26-CON-02"
   },
   {
     "id": "GH-26-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: Industrialização e urbanização brasileiras se intensificaram juntas no século XX. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Uma equipe percorre um município fictício e registra que moradores de pequenas localidades vão à cidade média para consultas e compras. De lá, ônibus seguem para a capital regional, onde há universidade e atendimento especializado; uma metrópole próxima recebe viagens para feiras e órgãos públicos. O repórter desenha as rotas em um mapa e anota a distância percorrida em cada trajeto antes de publicar a matéria.\n\nQue leitura do mapa é mais adequada?",
     "options": [
       {
         "key": "A",
-        "text": "Urbanização brasileira começou apenas no século XXI."
+        "text": "A metrópole centraliza os principais serviços disponíveis aos demais lugares.",
+        "targetsError": "conceptual",
+        "rationale": "O texto mostra consultas e compras na cidade média e outros serviços em centros distintos."
       },
       {
         "key": "B",
-        "text": "Industrialização ocorreu de maneira uniforme em todo o território."
+        "text": "A rede urbana reúne centros com funções diferentes e fluxos entre localidades."
       },
       {
         "key": "C",
-        "text": "A rede urbana brasileira inclui metrópoles, capitais regionais, cidades médias e centros locais com diferentes funções."
+        "text": "A cidade média não participa da rede porque seus moradores viajam para comprar.",
+        "targetsError": "interpretation",
+        "rationale": "As consultas e compras atraem habitantes de pequenas localidades para esse centro."
       },
       {
         "key": "D",
-        "text": "Êxodo rural não tem relação com mecanização do campo."
+        "text": "As setas indicam que as cidades têm população e influência de tamanho parecido.",
+        "targetsError": "conceptual",
+        "rationale": "Os fluxos descritos diferenciam funções e alcance entre os centros."
       },
       {
         "key": "E",
-        "text": "Crescimento urbano é sinônimo de urbanização planejada."
+        "text": "A capital regional passou a comandar decisões públicas importantes do município.",
+        "targetsError": "conceptual",
+        "rationale": "O relato menciona discussões em mais de um centro, sem indicar que um substituiu o outro."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A rede urbana brasileira inclui metrópoles, capitais regionais, cidades médias e centros locais com diferentes funções.",
+    "correctOption": "B",
+    "explanation": "O percurso apresenta pequenas localidades, cidade média, capital regional e metrópole com funções e alcances distintos. Interpretar as setas como prova de influência igual apagaria as diferenças registradas pela equipe.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-26-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-26-CON-03"
   },
   {
     "id": "GH-26-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Industrialização e urbanização do Brasil por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Um conjunto habitacional foi construído longe das principais linhas de ônibus; moradores levam mais tempo para chegar ao trabalho e crianças atravessam uma avenida sem faixa segura para alcançar a escola. O bairro cresceu rapidamente, mas a rede de saneamento e as áreas de lazer avançaram em ritmo menor. Em outra parte da cidade, novos edifícios ficam perto de empregos e serviços, e o relatório apresenta esse contraste entre regiões.\n\nQual processo ajuda a explicar os problemas listados?",
     "options": [
       {
         "key": "A",
-        "text": "Crescimento urbano rápido e desigual contribuiu para déficit de moradia, segregação socioespacial, mobilidade precária e pressão sobre infraestrutura."
+        "text": "A expansão urbana garantiu acesso semelhante a moradia, transporte e saneamento.",
+        "targetsError": "conceptual",
+        "rationale": "O relato contrasta bairros com condições diferentes de infraestrutura e acesso."
       },
       {
         "key": "B",
-        "text": "Urbanização brasileira começou apenas no século XXI."
+        "text": "A distância da escola está ligada ao surgimento de novos empregos no bairro.",
+        "targetsError": "conceptual",
+        "rationale": "O relato relaciona a escola à mobilidade, mas não à criação de postos de trabalho."
       },
       {
         "key": "C",
-        "text": "Industrialização ocorreu de maneira uniforme em todo o território."
+        "text": "A concentração de serviços elimina a necessidade de transporte público.",
+        "targetsError": "conceptual",
+        "rationale": "Moradores dependem de ônibus para alcançar locais de trabalho e estudo."
       },
       {
         "key": "D",
-        "text": "Êxodo rural não tem relação com mecanização do campo."
+        "text": "O crescimento urbano desigual pressionou moradia, mobilidade e infraestrutura."
       },
       {
         "key": "E",
-        "text": "Crescimento urbano é sinônimo de urbanização planejada."
+        "text": "A rede de saneamento se expandiu antes de a ocupação do bairro acelerar.",
+        "targetsError": "memory",
+        "rationale": "O relatório indica que a infraestrutura avançou em ritmo menor que a ocupação."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Crescimento urbano rápido e desigual contribuiu para déficit de moradia, segregação socioespacial, mobilidade precária e pressão sobre infraestrutura.",
+    "correctOption": "D",
+    "explanation": "O bairro cresceu antes de receber infraestrutura suficiente, enquanto outra área concentra serviços e empregos. A leitura de acesso igual contradiz o tempo de deslocamento e o contraste descritos na assembleia.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-26-CON-04"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-26-CON-04"
   },
   {
     "id": "GH-26-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. A industrialização brasileira ganhou força principalmente a partir da década de 1930 e se concentrou inicialmente no Sudeste.\nII. Urbanização brasileira começou apenas no século XXI.\nIII. A rede urbana brasileira inclui metrópoles, capitais regionais, cidades médias e centros locais com diferentes funções.\nIV. Industrialização ocorreu de maneira uniforme em todo o território.\nAssinale a alternativa CORRETA.",
+    "stem": "Um painel reúne uma fotografia de fábrica do Sudeste, cartas de famílias que se mudaram para cidades e um mapa atual com polos industriais em diferentes regiões. Em outra vitrine, uma colheitadeira antiga aparece ao lado de ferramentas manuais e de um anúncio de curso de manutenção. As peças foram produzidas em épocas diferentes e vieram de acervos escolares e familiares.\n\nQual síntese combina os documentos?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "A indústria e os serviços atraíram moradores, e mudanças no campo também impulsionaram migrações."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "As cartas relacionam a migração ao deslocamento de fábricas para outras regiões.",
+        "targetsError": "memory",
+        "rationale": "O painel registra migração e desconcentração, mas não estabelece essa relação para as cartas."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A distribuição atual mostra que as diferenças territoriais diminuíram a níveis semelhantes.",
+        "targetsError": "conceptual",
+        "rationale": "A legenda afirma que as oportunidades e a infraestrutura continuam desiguais."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "A mecanização rural pode ser vista como resultado da migração para as cidades.",
+        "targetsError": "conceptual",
+        "rationale": "O painel identifica mudanças no campo como um fator que também estimula deslocamentos."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "As cartas descrevem fluxos de famílias entre metrópoles.",
+        "targetsError": "interpretation",
+        "rationale": "O painel inclui movimentos do campo para a cidade, além de outros deslocamentos."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "A",
+    "explanation": "A fotografia, as cartas e o mapa registram atração urbana, mudanças no trabalho rural e polos industriais em mais regiões, com desigualdades ainda presentes. A distribuição atual não é prova de que as diferenças territoriais tenham acabado.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -180,36 +232,47 @@
       "GH-26-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-26-CON-02"
   },
   {
     "id": "GH-26-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Industrialização e urbanização do Brasil. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Os estudantes recebem três tabelas fictícias: habitantes urbanos em quatro municípios, localização de fábricas em dois períodos e origem de novos moradores. Uma cidade média ganha população e indústrias, enquanto o maior polo mantém mais empregos especializados; parte das fábricas aparece em municípios que antes tinham poucos registros. As tabelas não incluem renda, moradia ou qualidade do transporte.\n\nQual conclusão respeita o alcance dos dados?",
     "options": [
       {
         "key": "A",
-        "text": "Urbanização brasileira começou apenas no século XXI."
+        "text": "A cidade média já oferece serviços especializados em nível próximo ao maior polo.",
+        "targetsError": "conceptual",
+        "rationale": "As tabelas não medem serviços e ainda registram mais empregos especializados no polo maior."
       },
       {
         "key": "B",
-        "text": "Industrialização ocorreu de maneira uniforme em todo o território."
+        "text": "A instalação de fábricas fora do polo acompanhou melhorias de transporte nos municípios citados.",
+        "targetsError": "conceptual",
+        "rationale": "As fontes não incluem dados de transporte."
       },
       {
         "key": "C",
-        "text": "Êxodo rural não tem relação com mecanização do campo."
+        "text": "Os dados sugerem crescimento e desconcentração parcial, embora não avaliem renda e moradia."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "A origem dos novos moradores revela sua renda e condição habitacional.",
+        "targetsError": "interpretation",
+        "rationale": "A tabela registra origem, mas não informa renda nem moradia."
       },
       {
         "key": "E",
-        "text": "Relacionar tabelas de população urbana, localização industrial e fluxos migratórios."
+        "text": "A presença de fábricas fora do polo anulou sua importância econômica.",
+        "targetsError": "conceptual",
+        "rationale": "O maior polo ainda reúne mais empregos especializados segundo a tabela."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Relacionar tabelas de população urbana, localização industrial e fluxos migratórios.",
+    "correctOption": "C",
+    "explanation": "As tabelas mostram fábricas em novos municípios, crescimento de uma cidade média e concentração de empregos especializados no maior polo. A fonte sugere desconcentração parcial, mas não fornece medidas de renda, moradia ou transporte.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -221,36 +284,47 @@
       "GH-26-CON-06"
     ],
     "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-26-CON-05"
   },
   {
     "id": "GH-26-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Industrialização e urbanização do Brasil?",
+    "stem": "Um trabalhador conta que, quando a colheita de uma fazenda era feita manualmente, havia equipes maiores durante alguns meses. Depois que máquinas foram introduzidas, parte dessas tarefas diminuiu; alguns antigos trabalhadores passaram a atuar em manutenção e outros se mudaram para localidades próximas. A entrevista descreve a experiência de uma comunidade, sem afirmar que todas as áreas rurais tiveram o mesmo percurso.\n\nQual interpretação corrige a ideia de que as máquinas não influenciam o êxodo rural?",
     "options": [
       {
         "key": "A",
-        "text": "A industrialização brasileira ganhou força principalmente a partir da década de 1930 e se concentrou inicialmente no Sudeste."
+        "text": "A entrevista confirma que as tarefas de colheita permaneceram iguais após a mecanização.",
+        "targetsError": "memory",
+        "rationale": "O entrevistado compara equipes maiores antes das máquinas com redução de tarefas depois."
       },
       {
         "key": "B",
-        "text": "Indústrias e expansão do setor de serviços atraíram população para cidades, enquanto mecanização do campo também estimulou êxodo rural."
+        "text": "A mudança para localidades próximas ocorreu antes da introdução de máquinas.",
+        "targetsError": "memory",
+        "rationale": "A sequência do relato coloca os deslocamentos após a mudança no trabalho."
       },
       {
         "key": "C",
-        "text": "A indústria se desconcentrou parcialmente ao longo do tempo, mas desigualdades territoriais permanecem."
+        "text": "A equipe de manutenção absorveu a maior parte das pessoas que deixaram a colheita manual.",
+        "targetsError": "conceptual",
+        "rationale": "O entrevistado relata que parte foi para manutenção e parte mudou de localidade."
       },
       {
         "key": "D",
-        "text": "Êxodo rural não tem relação com mecanização do campo."
+        "text": "A mecanização é o principal fator que provoca deslocamento populacional.",
+        "targetsError": "conceptual",
+        "rationale": "A entrevista apresenta um fator nesse caso, sem excluir outras causas de migração."
       },
       {
         "key": "E",
-        "text": "Crescimento urbano rápido e desigual contribuiu para déficit de moradia, segregação socioespacial, mobilidade precária e pressão sobre infraestrutura."
+        "text": "A mecanização pode alterar ocupações rurais e contribuir para deslocamentos."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "E",
+    "explanation": "A entrevista descreve menos tarefas manuais após a mecanização e mudanças de ocupação ou localidade. A manutenção absorveu apenas parte dos trabalhadores; por isso, ela não elimina o vínculo entre mudanças rurais e deslocamento.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -262,36 +336,47 @@
       "GH-26-CON-06"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-26-CON-02"
   },
   {
     "id": "GH-26-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Industrialização e urbanização do Brasil, qual conclusão final é sustentável?",
+    "stem": "Um levantamento mostra que algumas indústrias transferiram setores de produção para cidades médias, enquanto atividades de pesquisa e sedes administrativas continuaram concentradas em grandes centros. O mapa também registra diferenças no acesso a rodovias, cursos técnicos e serviços de saúde entre as regiões. A equipe propõe atualizar os dados antes de anunciar que a mudança das fábricas tornou o território equilibrado.\n\nQual conclusão combina com o levantamento?",
     "options": [
       {
         "key": "A",
-        "text": "Urbanização brasileira começou apenas no século XXI."
+        "text": "A transferência de setores aproximou as condições econômicas entre várias regiões.",
+        "targetsError": "conceptual",
+        "rationale": "O levantamento ainda identifica diferenças de infraestrutura e serviços."
       },
       {
         "key": "B",
-        "text": "Industrialização ocorreu de maneira uniforme em todo o território."
+        "text": "A indústria se dispersou em parte, mas desigualdades territoriais continuam."
       },
       {
         "key": "C",
-        "text": "A indústria se desconcentrou parcialmente ao longo do tempo, mas desigualdades territoriais permanecem."
+        "text": "A permanência das sedes administrativas indica que a localização industrial permaneceu estável.",
+        "targetsError": "interpretation",
+        "rationale": "O texto diferencia setores transferidos de funções que permaneceram concentradas."
       },
       {
         "key": "D",
-        "text": "Êxodo rural não tem relação com mecanização do campo."
+        "text": "Os cursos técnicos foram um fator decisivo na localização das indústrias.",
+        "targetsError": "conceptual",
+        "rationale": "O mapa apresenta vários fatores e não estabelece uma causa principal para cada localização."
       },
       {
         "key": "E",
-        "text": "Crescimento urbano é sinônimo de urbanização planejada."
+        "text": "Cidades médias passaram a concentrar atividades de pesquisa junto à produção.",
+        "targetsError": "memory",
+        "rationale": "O levantamento mantém pesquisa e sedes administrativas concentradas em grandes centros."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A indústria se desconcentrou parcialmente ao longo do tempo, mas desigualdades territoriais permanecem.",
+    "correctOption": "B",
+    "explanation": "O caderno identifica transferência parcial da produção e concentração de outras funções, ao lado de diferenças de infraestrutura e serviços. A mudança industrial não autoriza concluir que as desigualdades regionais tenham sido eliminadas.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -303,6 +388,9 @@
       "GH-26-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-26-CON-05"
   }
 ]

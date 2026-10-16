@@ -74,8 +74,10 @@ export function validatePack(pack, config) {
   // Templating guards: generated questions that satisfy R3–R5 by reusing boilerplate are still guessable.
   const normalize = value => text(value).toLowerCase().replace(/\s+/g, " ").trim();
   if (rules.R9) {
+    // Short numeric answers ("4", "12 cm", "3,5 km") repeat naturally across Mathematics questions.
+    const shortValue = /^[-−+]?[\d.,/ ]+\s*[a-zà-ú%°³²]{0,4}\.?$/i;
     const uses = new Map();
-    for (const question of choice) for (const entry of new Set(question.choices.map(option => normalize(option.content)))) if (entry) uses.set(entry, [...(uses.get(entry) ?? []), question.id]);
+    for (const question of choice) for (const entry of new Set(question.choices.map(option => normalize(option.content)))) if (entry && !shortValue.test(entry)) uses.set(entry, [...(uses.get(entry) ?? []), question.id]);
     for (const [entry, ids] of uses) if (ids.length > rules.R9.maxQuestions) out.push({ rule: "R9", id: entry.slice(0, 60), value: ids.length, detail: `choice used in ${ids.length} questions (limit ${rules.R9.maxQuestions}), e.g. ${ids.slice(0, 3).join(", ")}` });
   }
   if (rules.R10 && choice.length) {

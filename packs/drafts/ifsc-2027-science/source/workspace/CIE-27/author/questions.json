@@ -2,294 +2,290 @@
   {
     "id": "CIE-27-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de classificação dos seres vivos, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Relatório de campo didático, observações de 12 set. 2026. Em uma saída de campo perto de uma lagoa, estudantes registraram formato das folhas, tipo de fruto e sequência de um pequeno trecho de DNA em seis plantas. Duas amostras tinham folhas parecidas, mas diferiam no fruto e em vários pontos do trecho genético. Outras duas pareciam distintas à primeira vista, embora compartilhassem mais características e semelhanças moleculares. A equipe organizou as fichas e pediu ajuda para revisar os agrupamentos provisórios.\n\nQual critério atende melhor ao objetivo de uma classificação biológica moderna?",
     "options": [
       {
         "key": "A",
-        "text": "Classificação biológica nunca muda depois de criada."
+        "text": "Agrupar primeiro pelas folhas semelhantes e usar os demais registros para confirmar a divisão."
       },
       {
         "key": "B",
-        "text": "Seres parecidos externamente são sempre os parentes evolutivos mais próximos."
+        "text": "Manter cada amostra em grupo próprio enquanto houver diferenças em qualquer característica."
       },
       {
         "key": "C",
-        "text": "Todos os microrganismos pertencem ao mesmo grupo taxonômico."
+        "text": "Combinar características comparáveis e estimativas de ancestralidade compartilhada entre organismos."
       },
       {
         "key": "D",
-        "text": "Classificação biológica organiza organismos em grupos com base em características e, na sistemática moderna, relações evolutivas."
+        "text": "Usar o ambiente da lagoa para separar grupos e depois comparar os registros biológicos."
       },
       {
         "key": "E",
-        "text": "Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade."
+        "text": "Dar prioridade à aparência e reservar os dados moleculares para uma revisão futura."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Classificação biológica organiza organismos em grupos com base em características e, na sistemática moderna, relações evolutivas.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "UNDERSTAND",
+    "correctOption": "C",
+    "explanation": "As fichas trazem características observáveis e dados moleculares que podem ajudar a avaliar parentesco evolutivo. A semelhança de folhas, sozinha, não explica as diferenças encontradas nas demais evidências.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-27-CON-01"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "classification_by_single_trait",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-27-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar classificação dos seres vivos sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Caderno de pesquisa insular, cenário de 13 set. 2026. Biólogos acompanharam duas populações de pequenos sapos em ilhas separadas por um canal. As gravações de vocalização tinham padrões diferentes, e os registros mostraram épocas de reprodução parcialmente distintas. Em uma tentativa controlada, alguns indivíduos das populações produziram descendentes, mas a equipe não avaliou outras combinações nem a viabilidade em diferentes ambientes. O relatório recomendou ampliar a amostragem antes de propor uma revisão taxonômica.\n\nQual conclusão respeita melhor os limites desses dados sobre espécie?",
     "options": [
       {
         "key": "A",
-        "text": "Seres parecidos externamente são sempre os parentes evolutivos mais próximos."
+        "text": "Adiar a delimitação e reunir evidências acústicas, reprodutivas e populacionais em mais condições."
       },
       {
         "key": "B",
-        "text": "Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade."
+        "text": "Considerar as vocalizações um indício suficiente de separação, ainda que faltem outras combinações."
       },
       {
         "key": "C",
-        "text": "Espécie é uma categoria básica de classificação; definições de espécie variam conforme o grupo e o problema científico."
+        "text": "Tomar os descendentes produzidos como sinal de proximidade, sem avaliar sua viabilidade em outros ambientes."
       },
       {
         "key": "D",
-        "text": "Todos os microrganismos pertencem ao mesmo grupo taxonômico."
+        "text": "Relacionar a distância entre as ilhas às diferenças vocais e reprodutivas antes de ampliar os cruzamentos."
       },
       {
         "key": "E",
-        "text": "Classificação biológica nunca muda depois de criada."
+        "text": "Registrar a diferença de época como critério principal enquanto a amostragem é ampliada."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Espécie é uma categoria básica de classificação; definições de espécie variam conforme o grupo e o problema científico.",
-    "difficulty": "DIRECT",
-    "cognitiveOperation": "UNDERSTAND",
+    "correctOption": "A",
+    "explanation": "Há diferenças de vocalização e época, mas a tentativa de cruzamento foi limitada e não avaliou outras condições. O relato sustenta nova investigação; um único critério não resolve a delimitação em todos os grupos.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
       "CIE-27-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "single_species_criterion",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-27-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em classificação dos seres vivos?",
+    "stem": "Etiqueta taxonômica do museu escolar, exemplo de 14 set. 2026. Um museu organizou fichas de três animais encontrados em uma região costeira. Para cada exemplar, os pesquisadores registraram espécie, gênero, família, ordem, classe, filo e reino, seguindo a mesma sequência de categorias no banco de dados. Uma estagiária recebeu a tarefa de revisar uma etiqueta e precisava identificar qual categoria reunia organismos mais amplamente do que o gênero, mas ainda ficava abaixo da ordem na lista usada pelo museu.\n\nQual categoria deve aparecer nessa posição intermediária?",
     "options": [
       {
         "key": "A",
-        "text": "Seres parecidos externamente são sempre os parentes evolutivos mais próximos."
+        "text": "Espécie, o nível que reúne organismos mais específicos dentro de um gênero."
       },
       {
         "key": "B",
-        "text": "Todos os microrganismos pertencem ao mesmo grupo taxonômico."
+        "text": "Filo, uma categoria que pode agrupar várias classes de organismos aparentados."
       },
       {
         "key": "C",
-        "text": "Classificação biológica nunca muda depois de criada."
+        "text": "Classe, que reúne ordens e fica acima da família na hierarquia tradicional."
       },
       {
         "key": "D",
-        "text": "Categorias taxonômicas são hierárquicas, como espécie, gênero, família, ordem, classe, filo e reino em uma apresentação escolar tradicional."
+        "text": "Gênero, a categoria imediatamente mais abrangente que espécie no esquema."
       },
       {
         "key": "E",
-        "text": "Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade."
+        "text": "Família, que reúne gêneros relacionados e permanece abaixo de ordem na hierarquia."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Categorias taxonômicas são hierárquicas, como espécie, gênero, família, ordem, classe, filo e reino em uma apresentação escolar tradicional.",
+    "correctOption": "E",
+    "explanation": "Na sequência indicada, gênero é seguido por família e depois por ordem. Espécie é mais específica que gênero, enquanto classe e filo aparecem em posições mais abrangentes.",
     "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-27-CON-03"
     ],
-    "targetedError": "relationship",
+    "targetedError": "taxonomic_rank_order",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-27-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Por que nomes científicos são úteis?",
+    "stem": "Ficha de herbário para uma feira escolar, 15 set. 2026. Em uma feira de ciências, estudantes compararam uma planta conhecida localmente como “erva-de-santa-luzia” em três comunidades. O mesmo nome popular era usado para plantas de aparência diferente, e uma espécie tinha nomes distintos entre as comunidades. Na etiqueta de uma coleção, o exemplar foi registrado como *Commelina erecta*, com local e data de coleta. A turma debateu como evitar trocas ao compartilhar os dados com pesquisadores de outras regiões.\n\nPor que a identificação científica da etiqueta é útil nesse intercâmbio?",
     "options": [
       {
         "key": "A",
-        "text": "Porque cada país cria um nome científico diferente para a mesma espécie."
+        "text": "Porque o binômio resume características ecológicas que podem ser comparadas entre locais."
       },
       {
         "key": "B",
-        "text": "Porque substituem toda necessidade de estudar características."
+        "text": "Porque os nomes locais permitem associar com segurança a mesma espécie entre comunidades."
       },
       {
         "key": "C",
-        "text": "Porque são sempre escritos na língua local."
+        "text": "Porque a designação padronizada torna dispensáveis as informações de coleta da etiqueta."
       },
       {
         "key": "D",
-        "text": "Porque seguem convenções compartilhadas e reduzem ambiguidades entre diferentes nomes populares."
+        "text": "Porque o binômio padronizado facilita relacionar registros apesar das diferenças de idioma e uso local."
       },
       {
         "key": "E",
-        "text": "Porque indicam obrigatoriamente o habitat de cada organismo."
+        "text": "Porque nomes científicos diferentes confirmam que plantas de aparência distinta pertencem a espécies separadas."
       }
     ],
     "correctOption": "D",
-    "explanation": "Porque seguem convenções compartilhadas e reduzem ambiguidades entre diferentes nomes populares.",
+    "explanation": "O relato mostra que o nome popular varia entre comunidades e pode apontar para plantas diferentes. A convenção científica oferece uma referência mais estável para comunicação, mas não descreve toda a ecologia nem substitui os dados da coleta.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-27-CON-01",
-      "CIE-27-CON-02",
-      "CIE-27-CON-03"
+      "CIE-27-CON-04"
     ],
-    "targetedError": "application",
+    "targetedError": "common_name_ambiguity",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-27-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Classificação biológica organiza organismos em grupos com base em características e, na sistemática moderna, relações evolutivas.\nII. Classificação biológica nunca muda depois de criada.\nIII. Categorias taxonômicas são hierárquicas, como espécie, gênero, família, ordem, classe, filo e reino em uma apresentação escolar tradicional.\nIV. Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade.\nAssinale a alternativa CORRETA.",
+    "stem": "Planilha de laboratório com amostras didáticas, 16 set. 2026. Um laboratório escolar recebeu quatro amostras: uma folha com cloroplastos, uma pequena larva, um bolor crescendo sobre pão e uma cultura microscópica de bactérias. Os grupos anotaram tamanho, tipo celular e o modo como cada amostra obtinha matéria e energia. A professora pediu que as fichas fossem usadas para comparar grupos, sem transformar “microscópico” em uma categoria taxonômica única.\n\nQual organização interpreta melhor as amostras da atividade?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Agrupar folha e larva pela organização multicelular e depois comparar seus modos de nutrição."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Aproximar bolor e bactéria pelo modo de vida, verificando em seguida suas diferenças celulares."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Usar o tamanho observado para reunir as amostras pequenas antes de classificá-las por outros dados."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Tratar a presença de cloroplastos como suficiente para aproximar a folha do grupo animal."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Manter a identidade de cada grupo considerando características celulares e modo de vida em conjunto."
       }
     ],
-    "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "ANALYZE",
+    "correctOption": "E",
+    "explanation": "A atividade distingue uma planta, um animal, um fungo e bactérias usando características celulares e ecológicas. O fato de duas amostras serem pequenas ou crescerem sobre uma superfície não as torna o mesmo grupo.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-27-CON-01",
-      "CIE-27-CON-02",
-      "CIE-27-CON-03",
-      "CIE-27-CON-04"
+      "CIE-27-CON-05"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "grouping_by_size_or_location",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-27-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre classificação dos seres vivos para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Nota de revisão de coleção, cenário hipotético de 17 set. 2026. Uma coleção universitária mantinha duas espécies de insetos no mesmo gênero havia décadas. Uma nova análise de DNA, feita com amostras de diferentes regiões, indicou que uma delas compartilhava mais variantes com outro gênero do que com o grupo em que estava antes. A equipe revisou também características das asas e publicou a hipótese com os dados e os limites da amostragem, mantendo as etiquetas antigas em um registro histórico.\n\nQual consequência científica é compatível com a nova evidência?",
     "options": [
       {
         "key": "A",
-        "text": "Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade."
+        "text": "Tratar a classificação como hipótese revisável diante de evidências moleculares e morfológicas."
       },
       {
         "key": "B",
-        "text": "Seres parecidos externamente são sempre os parentes evolutivos mais próximos."
+        "text": "Manter as etiquetas antigas apenas como identificação vigente, sem necessidade de comparação."
       },
       {
         "key": "C",
-        "text": "Animais, plantas, fungos e diversos grupos de microrganismos apresentam características celulares e ecológicas distintas."
+        "text": "Dar preferência à classificação histórica até que todos os exemplares tenham novo nome."
       },
       {
         "key": "D",
-        "text": "Classificação biológica nunca muda depois de criada."
+        "text": "Interpretar a proximidade molecular como indicação de que as amostras pertencem à mesma espécie."
       },
       {
         "key": "E",
-        "text": "Todos os microrganismos pertencem ao mesmo grupo taxonômico."
+        "text": "Deixar de comparar asas porque a análise molecular oferece uma linha independente de evidência."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a correta: Animais, plantas, fungos e diversos grupos de microrganismos apresentam características celulares e ecológicas distintas.",
+    "correctOption": "A",
+    "explanation": "A nova análise sugere uma relação diferente e pode sustentar uma revisão da hipótese taxonômica. Manter o registro histórico ajuda a acompanhar a mudança; evidências moleculares não apagam os dados morfológicos.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "EVALUATE",
     "conceptIds": [
-      "CIE-27-CON-05"
+      "CIE-27-CON-06"
     ],
-    "targetedError": "transfer",
+    "targetedError": "classification_as_fixed",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-27-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre classificação dos seres vivos?",
+    "stem": "Diário de campo em cavernas, situação simulada de 18 set. 2026. Em uma pesquisa de cavernas, dois peixes sem pigmentação e com olhos reduzidos foram fotografados em locais separados por centenas de quilômetros. Uma comparação inicial das formas sugeriu proximidade, mas análises de DNA e de outras estruturas indicaram que cada população estava mais relacionada a peixes pigmentados de sua própria região. Os autores do relatório apontaram que a vida em cavernas poderia explicar parte da semelhança externa.\n\nQual interpretação melhor considera as evidências descritas?",
     "options": [
       {
         "key": "A",
-        "text": "Categorias taxonômicas são hierárquicas, como espécie, gênero, família, ordem, classe, filo e reino em uma apresentação escolar tradicional."
+        "text": "A semelhança externa pode indicar proximidade, mesmo quando outros caracteres sugerem relações regionais."
       },
       {
         "key": "B",
-        "text": "Classificação biológica organiza organismos em grupos com base em características e, na sistemática moderna, relações evolutivas."
+        "text": "A redução de pigmento e olhos pode orientar a classificação sem depender de comparações genéticas."
       },
       {
         "key": "C",
-        "text": "Classificação biológica nunca muda depois de criada."
+        "text": "A distância entre cavernas pode ajudar a interpretar os padrões de parentesco das populações."
       },
       {
         "key": "D",
-        "text": "Nomes científicos seguem convenções internacionais para reduzir ambiguidades entre idiomas e nomes populares."
+        "text": "Condições parecidas podem produzir semelhanças; DNA e estruturas apontam relações regionais distintas."
       },
       {
         "key": "E",
-        "text": "Espécie é uma categoria básica de classificação; definições de espécie variam conforme o grupo e o problema científico."
+        "text": "A diferença de habitat torna menos relevante a relação sugerida com peixes pigmentados próximos."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A alternativa C é a incorreta: Classificação biológica nunca muda depois de criada. As demais expressam relações compatíveis com os conceitos da aula.",
-    "difficulty": "DIRECT",
+    "correctOption": "D",
+    "explanation": "O relato apresenta semelhança externa, mas DNA e outras estruturas aproximam cada população de peixes regionais diferentes. A vida em cavernas pode produzir características parecidas sem indicar parentesco mais próximo.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-27-CON-01"
+      "CIE-27-CON-01",
+      "CIE-27-CON-06"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "similarity_as_kinship",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-27-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em classificação dos seres vivos?",
+    "stem": "Arquivo fictício de biodiversidade, preparado em 19 set. 2026. Um arquivo de biodiversidade recebeu três etiquetas para aves: *Turdus rufiventris*, sabiá-laranjeira e sabiá. As fichas traziam fotografias, município e data; duas comunidades usavam “sabiá” para aves diferentes. O curador preservou o nome registrado na coleção e acrescentou os nomes locais em um campo separado para facilitar buscas. Uma pesquisadora de outra região pediu uma forma de comparar os registros sem confundir os exemplares.\n\nQual uso dos campos da etiqueta atende melhor a esse pedido?",
     "options": [
       {
         "key": "A",
-        "text": "Seres parecidos externamente são sempre os parentes evolutivos mais próximos."
+        "text": "Usar o nome local mais difundido e registrar o binômio apenas como referência de coleção."
       },
       {
         "key": "B",
-        "text": "Classificações científicas podem mudar quando novas evidências, sobretudo moleculares, modificam hipóteses de parentesco."
+        "text": "Adotar o binômio na comparação entre regiões e indexar nomes locais como termos adicionais de busca."
       },
       {
         "key": "C",
-        "text": "Todos os microrganismos pertencem ao mesmo grupo taxonômico."
+        "text": "Interpretar cada nome popular como evidência de uma espécie diferente antes de comparar as fichas."
       },
       {
         "key": "D",
-        "text": "Nome popular é suficiente para identificar qualquer espécie no mundo inteiro sem ambiguidade."
+        "text": "Reunir as etiquetas com base na semelhança das fotografias e manter um único nome de busca."
       },
       {
         "key": "E",
-        "text": "Classificação biológica nunca muda depois de criada."
+        "text": "Priorizar o nome científico e resumir município e data para simplificar a consulta."
       }
     ],
     "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Classificações científicas podem mudar quando novas evidências, sobretudo moleculares, modificam hipóteses de parentesco.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "explanation": "O mesmo nome popular pode ter sentidos diferentes entre comunidades, enquanto o registro científico ajuda na comparação entre regiões. Os nomes locais continuam úteis como informação adicional, e local e data preservam o contexto da coleta.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-27-CON-06"
+      "CIE-27-CON-04"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "scientific_and_common_names",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]

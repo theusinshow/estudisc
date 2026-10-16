@@ -1,4 +1,21 @@
 # Estudisc current plan
+## POR-01..03 hand-written question pilot (2026-10-16)
+
+Scope: replace the 24 draft Questions for POR-01, POR-02 and POR-03 with individually authored, text-grounded MCQs. Keep all Question IDs, increment these Question versions and the three Lesson versions by one, keep draft status, and increment the complete Portuguese Pack version once. Record each original stimulus and its authorial license in source/STIMULI.json. Preserve the other 21 lessons and 168 Questions.
+
+Increments:
+1. Inspect current source, Pack shape and Portuguese importer; baseline worktree and current IDs.
+2. Write 24 distinct 60–180 word stimuli and question-specific stems, options, distractor error tags/rationales and explanations by hand; record them in author source and the imported source snapshots.
+3. Extend only tools/science-import/portuguese.ts to validate the stimulus registry and carry the existing Question-choice feedback fields and explicit version overrides into the generated Pack.
+4. Regenerate the full draft Pack through buildPortuguesePack at Pack version 7; create .local/task/PILOT-REVIEW.md by hand.
+5. Check UTF-8/no U+FFFD, exact changed scope, versions/IDs/status, no repeated alternatives, all stimulus lengths, then run the requested pack validator, lint, typecheck and content-QA suite. Commit locally on this branch with the requested message and co-author trailer; do not push.
+
+Acceptance: 24 unique, text-specific stimuli of 60–180 words; varied and precise questions; five plausible alternatives per Question; each distractor has its own targetsError and rationale; explanations cite text evidence and address a tempting error without option letters; only POR-01..03 and their 24 existing Question identities are versioned; all remain drafts; no R3/R8/R9/R10/R11 validator findings for the three Lessons; full technical checks pass. Review document lists each ID, stimulus opening sentence, stem, all marked choices and each distractor's error.
+
+Completed locally: 24 hand-written Questions and original stimuli; POR-01..03 are v3, the 24 existing Question IDs are v2, and the complete Pack is v7. All remain drafts. The 21 other lessons and 168 Questions compare exactly with the original Pack. Stimulus license records and source integrity pins are current. Manual review: `.local/task/PILOT-REVIEW.md`.
+Validation: `pnpm install --frozen-lockfile --offline`, `pnpm lint`, `pnpm typecheck` and `pnpm test:content-qa` pass (17 tests / 7 files). The pack validator exits 1 for the residual R11 group at POR-04-Q07 (21 unchanged legacy Questions; the original group had 24 and included POR-01-Q07). No R3/R8/R9/R10/R11 finding identifies a new Question.
+NEXT ACTION: keep this candidate as a draft; import and publication were not part of this task.
+
 
 LIVE: the second Portuguese ten-lesson increment (POR-01/06/08/11/15/18/20/21/22/24 v3), exact originals/80 refs preserved through actual Admin Direct. Both complete backups and publication/history checks passed; final old-Question layout acceptance follows PR23. POR-14 remains excluded from an unresolved local/current-source binding mismatch. User explicitly confirmed Terra for the scored-enrichment contract. NEXT ACTION: eight required checks → protected PR23 merge/READY alias → published POR-04/15/24 and remaining language readers → current Terra handoff. No independent editorial approval is pending.
 
@@ -7,6 +24,11 @@ LIVE: the second Portuguese ten-lesson increment (POR-01/06/08/11/15/18/20/21/22
 
 Goal: full IFSC simulados (28 Questions, 7 per area, 240 min) built from new Questions that no lesson contains. Assumptions: subject content lives in per-subject Tracks; templates use the combined `ifsc-2027` Track plus `scopeTrackIds`. Acceptance: ADMIN-only import of standalone drafts and release registration, Admin Direct publication with audit events, no exposure in practice/review/planner, FULL_SIMULATION composition refusals, student start → answer → finish → per-area result. Done locally: contracts, repository, publication method, admin API, template scope union, converters/builder/prepare CLI, unit + PGlite tests.
 NEXT ACTION: when MAT-SIM.json is valid JSON, run `simulado-prepare.ts`, confirm live Track stable ids, then (with user authorization) take a backup, import and publish the standalone sets, and import templates 1–3.
+## New lessons in a published Track — 2026-10-16 (Claude)
+
+Goal: import the nine new authored lessons as drafts in existing Track versions, then publish them through Admin Direct. Contract: `caderno.lesson-new.v1` ([ADR 0064](docs/ADR/0064-new-lesson-in-published-track.md)).
+Acceptance: the policy refuses existing lesson, Concept or Question ids, official, reserved or published Questions, non-text renderers and an unknown module. The PGlite run covers import, then idempotent re-import, then `publishLessonsDirect`; it checks the catalog and study-flow order and that earlier lessons stay unchanged. The converter is unit-tested.
+Status: implemented and tested locally. NEXT ACTION: PR, then per-lesson conversion against fresh production contexts (preview before import).
 
 ## Lesson pack correction plan — phase 0 (2026-10-15, Claude, branch feat/pack-validator-20261015)
 

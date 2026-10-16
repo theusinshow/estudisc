@@ -2,175 +2,232 @@
   {
     "id": "GH-36-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Reforma Protestante e Contrarreforma Católica, qual afirmação está correta?",
+    "stem": "Em uma mostra escolar, a equipe expõe duas cópias de um folheto religioso do século XVI. A mais antiga tem anotações de um copista; a segunda foi impressa em várias folhas e apresenta pequenas diferenças entre exemplares. Uma carta de leitor, criada para a atividade, relata que ele levou uma cópia a uma reunião em outra cidade e encontrou pessoas discutindo o texto. O catálogo registra pontos de circulação, como feiras e casas de leitura, mas não informa quantos leitores aceitaram as ideias do autor.\n\nQue conclusão a comparação entre as cópias e a carta permite sustentar?",
     "options": [
       {
         "key": "A",
-        "text": "A Reforma foi causada por uma única questão religiosa."
+        "text": "O impresso confirma que leitores de cidades diferentes adotaram uma mesma doutrina.",
+        "targetsError": "interpretation",
+        "rationale": "Confunde circulação do folheto com adesão coletiva às ideias."
       },
       {
         "key": "B",
-        "text": "Martinho Lutero criticou práticas da Igreja e defendeu princípios que contribuíram para a formação de igrejas protestantes."
+        "text": "As anotações do copista mostram que a primeira versão foi escrita por Lutero.",
+        "targetsError": "attention",
+        "rationale": "A mostra não atribui a cópia manuscrita a Lutero."
       },
       {
         "key": "C",
-        "text": "Todas as igrejas protestantes possuem a mesma doutrina."
+        "text": "A reprodução em várias folhas favoreceu a circulação de debates religiosos entre lugares.",
+        "correct": true
       },
       {
         "key": "D",
-        "text": "A Igreja Católica não reagiu às Reformas."
+        "text": "A reunião ocorreu porque a Igreja restringiu a leitura a espaços religiosos.",
+        "targetsError": "interpretation",
+        "rationale": "A carta não menciona proibição nem controle de locais de leitura."
       },
       {
         "key": "E",
-        "text": "Conflitos religiosos não tiveram dimensão política."
+        "text": "O catálogo permite calcular quantos moradores apoiaram o autor do folheto.",
+        "targetsError": "interpretation",
+        "rationale": "O registro descreve circulação, sem medir opiniões dos moradores."
       }
     ],
-    "correctOption": "B",
-    "explanation": "Martinho Lutero criticou práticas da Igreja e defendeu princípios que contribuíram para a formação de igrejas protestantes.",
+    "correctOption": "C",
+    "explanation": "A carta descreve uma cópia impressa levada a outra cidade e discutida em grupo; isso indica circulação ampliada, sem provar que os leitores aderiram à proposta.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "RECALL",
     "conceptIds": [
       "GH-36-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-36-CON-01"
   },
   {
     "id": "GH-36-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “A Reforma foi causada por uma única questão religiosa.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Uma exposição reúne três cartões didáticos sobre comunidades cristãs surgidas no século XVI. Um cartão descreve a crítica de um reformador a práticas e autoridades da Igreja; outro compara a organização de uma comunidade francesa; o terceiro apresenta uma disputa entre governantes e autoridades religiosas na Inglaterra. As fichas têm datas e vocabulários diferentes, e a curadoria deixa espaços para que visitantes anotem semelhanças e diferenças. Nenhuma delas afirma que as três comunidades combinaram suas decisões ou compartilharam uma liderança.\n\nQual alternativa sintetiza as três fichas, considerando em conjunto os diferentes contextos apresentados?",
     "options": [
       {
         "key": "A",
-        "text": "A Reforma foi causada por uma única questão religiosa."
+        "text": "As tradições protestantes se formaram por caminhos próprios e não são cópias idênticas.",
+        "correct": true
       },
       {
         "key": "B",
-        "text": "Todas as igrejas protestantes possuem a mesma doutrina."
+        "text": "O cartão inglês relaciona uma mudança religiosa à autoridade de um rei.",
+        "targetsError": "conceptual",
+        "rationale": "Uma ficha sobre a Inglaterra não explica todas as reformas."
       },
       {
         "key": "C",
-        "text": "A Igreja Católica não reagiu às Reformas."
+        "text": "As diferenças de vocabulário indicam que as comunidades não tiveram relação com a Igreja.",
+        "targetsError": "conceptual",
+        "rationale": "As fichas partem de debates cristãos e de práticas e autoridades eclesiásticas."
       },
       {
         "key": "D",
-        "text": "Calvinismo e Anglicanismo tiveram trajetórias e doutrinas próprias e não foram simples cópias do luteranismo."
+        "text": "A curadoria reuniu três nomes para apresentar uma única liderança reformadora.",
+        "targetsError": "attention",
+        "rationale": "O texto distingue cartões, contextos e organizações."
       },
       {
         "key": "E",
-        "text": "Conflitos religiosos não tiveram dimensão política."
+        "text": "As datas distintas mostram que os conflitos ocorreram em épocas sem conexão.",
+        "targetsError": "interpretation",
+        "rationale": "Diferença de data não elimina vínculos históricos entre processos."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Calvinismo e Anglicanismo tiveram trajetórias e doutrinas próprias e não foram simples cópias do luteranismo.",
+    "correctOption": "A",
+    "explanation": "Os cartões mostram trajetórias situadas em contextos diferentes; agrupá-las como cópias de uma só doutrina apagaria as diferenças registradas.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-36-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-36-CON-02"
   },
   {
     "id": "GH-36-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: As Reformas religiosas do século XVI mudaram a unidade religiosa da Europa ocidental e se conectaram à política e à imprensa. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "No roteiro de uma visita, uma turma encontra quatro registros sobre a resposta católica às reformas do século XVI: uma reunião de dirigentes religiosos, a revisão de orientações para a formação do clero, a criação de novas comunidades e textos que reafirmam ensinamentos. A legenda informa que os registros foram reunidos por uma biblioteca para mostrar mudanças institucionais ao longo de décadas. O roteiro não detalha cada decisão nem apresenta uma lista completa de participantes. Ao lado, um mapa assinala cidades em que as disputas confessionais também envolveram autoridades políticas.\n\nQual processo histórico combina melhor com esse conjunto de registros?",
     "options": [
       {
         "key": "A",
-        "text": "A Reforma foi causada por uma única questão religiosa."
+        "text": "A expansão de uma única igreja protestante por decisão de autoridades locais.",
+        "targetsError": "conceptual",
+        "rationale": "A legenda identifica uma resposta institucional católica."
       },
       {
         "key": "B",
-        "text": "Todas as igrejas protestantes possuem a mesma doutrina."
+        "text": "A interrupção das reformas por falta de interesse religioso nas cidades.",
+        "targetsError": "interpretation",
+        "rationale": "Os registros mostram mudanças organizadas, não abandono dos debates."
       },
       {
         "key": "C",
-        "text": "A Reforma Católica incluiu o Concílio de Trento, reorganização interna, novas ordens e reafirmação doutrinária."
+        "text": "A reunião descrita transferiu a formação do clero a conselhos políticos.",
+        "targetsError": "conceptual",
+        "rationale": "A revisão da formação do clero aponta continuidade institucional."
       },
       {
         "key": "D",
-        "text": "A Igreja Católica não reagiu às Reformas."
+        "text": "A redução das divergências religiosas a disputas por território.",
+        "targetsError": "conceptual",
+        "rationale": "O roteiro também menciona ensinamentos e organização religiosa."
       },
       {
         "key": "E",
-        "text": "Conflitos religiosos não tiveram dimensão política."
+        "text": "A Reforma Católica, com reorganização interna e reafirmação doutrinária.",
+        "correct": true
       }
     ],
-    "correctOption": "C",
-    "explanation": "A Reforma Católica incluiu o Concílio de Trento, reorganização interna, novas ordens e reafirmação doutrinária.",
+    "correctOption": "E",
+    "explanation": "A reunião, a formação do clero e as novas comunidades indicam uma resposta institucional católica; o roteiro também registra reafirmação de ensinamentos.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
       "GH-36-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-36-CON-03"
   },
   {
     "id": "GH-36-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Reforma Protestante e Contrarreforma Católica por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Uma ata fictícia de conselho municipal registra que moradores discutiam o uso de uma capela enquanto dois grupos nobres disputavam a escolha de um novo administrador. O documento menciona que a decisão afetaria taxas cobradas no mercado e a relação do município com a monarquia. Na margem, um escrivão anota que os participantes citavam argumentos religiosos diferentes. O texto foi preparado para uma atividade, sem reproduzir uma ata histórica específica, e mostra apenas a reunião daquela cidade.\n\nQue interpretação relaciona os elementos da ata sem transformar o caso em regra para toda a Europa?",
     "options": [
       {
         "key": "A",
-        "text": "Conflitos religiosos se combinaram a disputas políticas entre monarquias, nobres e cidades."
+        "text": "O conselho discutia crenças sem que a decisão interferisse na vida política local.",
+        "targetsError": "conceptual",
+        "rationale": "Taxas e vínculo com a monarquia aparecem entre os efeitos da escolha."
       },
       {
         "key": "B",
-        "text": "A Reforma foi causada por uma única questão religiosa."
+        "text": "Debates religiosos podiam se combinar a interesses de nobres, cidades e monarquias.",
+        "correct": true
       },
       {
         "key": "C",
-        "text": "Todas as igrejas protestantes possuem a mesma doutrina."
+        "text": "A ata mostra o mesmo procedimento de escolha religiosa em cidades próximas.",
+        "targetsError": "conceptual",
+        "rationale": "Um registro local não documenta decisões de outras cidades."
       },
       {
         "key": "D",
-        "text": "A Igreja Católica não reagiu às Reformas."
+        "text": "A disputa por taxas explica por completo as diferenças entre as igrejas.",
+        "targetsError": "conceptual",
+        "rationale": "O documento mostra interesses econômicos e religiosos, sem reduzir um ao outro."
       },
       {
         "key": "E",
-        "text": "Conflitos religiosos não tiveram dimensão política."
+        "text": "A reunião mostra controle monárquico direto sobre as capelas citadas.",
+        "targetsError": "interpretation",
+        "rationale": "A ata cita relação com a monarquia, não controle direto de todas as capelas."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Conflitos religiosos se combinaram a disputas políticas entre monarquias, nobres e cidades.",
+    "correctOption": "B",
+    "explanation": "A ata liga a escolha religiosa a taxas, nobres e monarquia; a hipótese de uma disputa apenas espiritual não explica esses interesses políticos.",
     "difficulty": "APPLIED",
     "cognitiveOperation": "TRANSFER",
     "conceptIds": [
       "GH-36-CON-04"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-36-CON-04"
   },
   {
     "id": "GH-36-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Martinho Lutero criticou práticas da Igreja e defendeu princípios que contribuíram para a formação de igrejas protestantes.\nII. A Reforma foi causada por uma única questão religiosa.\nIII. A Reforma Católica incluiu o Concílio de Trento, reorganização interna, novas ordens e reafirmação doutrinária.\nIV. Todas as igrejas protestantes possuem a mesma doutrina.\nAssinale a alternativa CORRETA.",
+    "stem": "Em uma atividade de leitura, a turma consulta um painel autoral com exemplos de circulação de folhetos, críticas a práticas eclesiásticas, debates entre comunidades cristãs e mudanças institucionais na Igreja Católica. O painel reúne informações de momentos e lugares diversos e pede que cada afirmação seja conferida contra os registros, em vez de tratada como resumo de uma causa isolada. Não há no material uma lista de igrejas com doutrinas idênticas nem indicação de que as disputas políticas tenham desaparecido.\n\nAnalise as afirmações:\nI. As críticas de Lutero contribuíram para a formação de igrejas protestantes.\nII. Calvinismo e Anglicanismo tiveram a mesma trajetória do luteranismo.\nIII. A Reforma Católica envolveu mudanças internas e reafirmação de ensinamentos.\nIV. A imprensa concentrou a circulação de textos religiosos nos centros urbanos.\n\nAssinale a alternativa que reúne as afirmações sustentadas pelo painel.",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "As afirmações II e IV, porque as reformas permaneceram uniformes e locais.",
+        "targetsError": "conceptual",
+        "rationale": "A alternativa transforma diferenças e circulação em uniformidade e restrição."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "As afirmações I e II, porque as críticas deram origem a uma doutrina comum.",
+        "targetsError": "conceptual",
+        "rationale": "O painel diferencia tradições protestantes em vez de reuni-las numa doutrina comum."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "As afirmações II e III, porque a Igreja Católica copiou propostas luteranas.",
+        "targetsError": "conceptual",
+        "rationale": "As mudanças católicas descritas são resposta própria, não cópia indicada no texto."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "As afirmações I e III, sobre críticas e reorganização católica.",
+        "correct": true
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "As afirmações I e IV, pois a imprensa manteve o debate em escala local.",
+        "targetsError": "interpretation",
+        "rationale": "A atividade inclui circulação de folhetos e debates em diferentes contextos."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "D",
+    "explanation": "O painel sustenta as críticas de Lutero e as mudanças católicas; as descrições de cópia idêntica e circulação restrita contradizem os registros.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -180,36 +237,48 @@
       "GH-36-CON-04"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-36-CON-01"
   },
   {
     "id": "GH-36-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Reforma Protestante e Contrarreforma Católica. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Uma carta fictícia, atribuída a um impressor de uma cidade europeia do século XVI, informa que uma oficina recebeu pedidos de cópias de um texto religioso após sua leitura em uma praça. O autor comenta que pessoas fizeram perguntas e que um conselho local pediu uma versão para consulta. A carta não informa se os leitores concordaram, se o conselho adotou a proposta ou quantas oficinas trabalhavam com o mesmo tema. A ficha da atividade identifica o documento como criação didática, não como fonte de arquivo.\n\nQual conclusão permanece dentro do que a carta permite afirmar?",
     "options": [
       {
         "key": "A",
-        "text": "A Reforma foi causada por uma única questão religiosa."
+        "text": "A circulação impressa podia ampliar a exposição de debates religiosos.",
+        "correct": true
       },
       {
         "key": "B",
-        "text": "Todas as igrejas protestantes possuem a mesma doutrina."
+        "text": "O conselho local adotou a proposta apresentada pelo impressor.",
+        "targetsError": "interpretation",
+        "rationale": "A carta diz que o conselho pediu consulta, não que aprovou a proposta."
       },
       {
         "key": "C",
-        "text": "A Igreja Católica não reagiu às Reformas."
+        "text": "A maioria dos habitantes da cidade passou a defender a nova comunidade.",
+        "targetsError": "interpretation",
+        "rationale": "Pedidos de cópia não medem a opinião de toda a população."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "A oficina do impressor foi a única a publicar textos religiosos na região.",
+        "targetsError": "interpretation",
+        "rationale": "O documento não compara oficinas nem descreve toda a região."
       },
       {
         "key": "E",
-        "text": "Comparar propostas religiosas sem reduzir o processo a personagens isolados."
+        "text": "A leitura na praça encerrou a disputa sobre as práticas da Igreja.",
+        "targetsError": "conceptual",
+        "rationale": "A carta relata perguntas, sem mencionar o fim do debate."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Comparar propostas religiosas sem reduzir o processo a personagens isolados.",
+    "correctOption": "A",
+    "explanation": "Pedidos de cópias e leitura pública sustentam a circulação do texto; a carta não comprova adesão dos leitores nem uma decisão institucional.",
     "difficulty": "IFSC",
     "cognitiveOperation": "SOURCE_ANALYSIS",
     "conceptIds": [
@@ -221,36 +290,48 @@
       "GH-36-CON-06"
     ],
     "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-36-CON-01"
   },
   {
     "id": "GH-36-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Reforma Protestante e Contrarreforma Católica?",
+    "stem": "Durante uma oficina, quatro grupos observam um mural com folhetos, decisões de uma reunião religiosa e anotações de conselhos municipais. Um grupo registra que as propostas reformadoras se diversificaram; outro nota que a Igreja Católica também reorganizou suas instituições. Um terceiro destaca disputas entre autoridades locais e monarquias. O último afirma que, como os folhetos circularam, todos os leitores passaram a apoiar a mesma proposta. O mural não informa a opinião de cada pessoa que teve contato com os textos.\n\nQual anotação extrapola o que o mural permite concluir?",
     "options": [
       {
         "key": "A",
-        "text": "Martinho Lutero criticou práticas da Igreja e defendeu princípios que contribuíram para a formação de igrejas protestantes."
+        "text": "As reformas envolveram debates religiosos e rearranjos institucionais.",
+        "targetsError": "interpretation",
+        "rationale": "Essa anotação reúne dados descritos no mural."
       },
       {
         "key": "B",
-        "text": "Calvinismo e Anglicanismo tiveram trajetórias e doutrinas próprias e não foram simples cópias do luteranismo."
+        "text": "O contato com folhetos demonstra apoio uniforme entre leitores de cidades diferentes.",
+        "correct": true
       },
       {
         "key": "C",
-        "text": "A imprensa ampliou a circulação de textos religiosos e polêmicas."
+        "text": "As disputas políticas locais aparecem junto às divergências religiosas.",
+        "targetsError": "attention",
+        "rationale": "O mural menciona conselhos, monarquias e debate religioso."
       },
       {
         "key": "D",
-        "text": "A Igreja Católica não reagiu às Reformas."
+        "text": "A resposta católica também produziu mudanças na organização da Igreja.",
+        "targetsError": "attention",
+        "rationale": "O registro da reunião e da reorganização sustenta essa observação."
       },
       {
         "key": "E",
-        "text": "Conflitos religiosos se combinaram a disputas políticas entre monarquias, nobres e cidades."
+        "text": "As propostas reformadoras não seguiram uma única trajetória.",
+        "targetsError": "conceptual",
+        "rationale": "O mural apresenta propostas e contextos diversos."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "B",
+    "explanation": "O mural indica circulação e debates, mas não mede a opinião de cada leitor; transformar contato em apoio uniforme é a extrapolação.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -262,36 +343,48 @@
       "GH-36-CON-06"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-36-CON-01"
   },
   {
     "id": "GH-36-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Reforma Protestante e Contrarreforma Católica, qual conclusão final é sustentável?",
+    "stem": "Uma equipe prepara uma linha do tempo para explicar as reformas religiosas a visitantes. Em vez de separar o tema em uma lista de personagens, ela marca a circulação de textos, as diferenças entre tradições protestantes, as mudanças da Igreja Católica e decisões de autoridades políticas. Um grupo de leitores revisa a linha do tempo e encontra registros que apoiam cada eixo, mas percebe que o material não acompanha a opinião de cada pessoa nem descreve todas as regiões europeias. A curadoria pede uma conclusão que conecte esses aspectos sem ampliar o alcance das fontes.\n\nQual síntese atende ao pedido da curadoria?",
     "options": [
       {
         "key": "A",
-        "text": "A Reforma foi causada por uma única questão religiosa."
+        "text": "A imprensa explica sozinha as reformas e torna dispensável observar instituições.",
+        "targetsError": "conceptual",
+        "rationale": "A linha do tempo também registra mudanças e decisões institucionais."
       },
       {
         "key": "B",
-        "text": "Todas as igrejas protestantes possuem a mesma doutrina."
+        "text": "As tradições protestantes surgiram sob doutrinas compartilhadas entre suas comunidades.",
+        "targetsError": "conceptual",
+        "rationale": "O material marca diferenças entre tradições protestantes."
       },
       {
         "key": "C",
-        "text": "A imprensa ampliou a circulação de textos religiosos e polêmicas."
+        "text": "As respostas católicas ficaram fora das transformações religiosas do período.",
+        "targetsError": "attention",
+        "rationale": "A curadoria inclui mudanças da Igreja Católica na linha do tempo."
       },
       {
         "key": "D",
-        "text": "A Igreja Católica não reagiu às Reformas."
+        "text": "As reformas combinaram circulação de ideias, respostas institucionais e disputas políticas.",
+        "correct": true
       },
       {
         "key": "E",
-        "text": "Conflitos religiosos não tiveram dimensão política."
+        "text": "Os registros representam as opiniões de leitores que visitaram a exposição.",
+        "targetsError": "interpretation",
+        "rationale": "O material não acompanha as opiniões individuais da população."
       }
     ],
-    "correctOption": "C",
-    "explanation": "A imprensa ampliou a circulação de textos religiosos e polêmicas.",
+    "correctOption": "D",
+    "explanation": "A linha do tempo reúne circulação, diversidade religiosa, resposta católica e política; a opção escolhida mantém o alcance sem supor unanimidade.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -303,6 +396,9 @@
       "GH-36-CON-06"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-36-CON-01"
   }
 ]

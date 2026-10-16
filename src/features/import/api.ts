@@ -12,3 +12,6 @@ export { validateTrackPack } from "./application/track-pack-validation";
 export { lessonVersionPackSchema } from "./application/lesson-version-contracts";
 export { importLessonVersion } from "./application/lesson-version-policy";
 export type { LessonVersionPack } from "./application/lesson-version-contracts";
+export { newLessonPackSchema } from "./application/new-lesson-contracts";
+export { importNewLesson } from "./application/new-lesson-policy";
+export type { NewLessonPack } from "./application/new-lesson-contracts";

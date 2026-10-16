@@ -210,214 +210,215 @@
     {
       "id": "GH-45-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Em relação a Segunda Guerra Mundial e Holocausto, qual afirmação está correta?",
+      "stem": "Uma parede de museu mostra dois mapas. O primeiro marca a invasão alemã da Polônia em setembro de 1939 e as campanhas seguintes na Europa. O segundo reúne rotas de navios e frentes de combate na Ásia e no Pacífico. Uma linha do tempo prolonga-se até 1945, quando o Japão se rendeu após ofensivas aliadas e o uso de bombas atômicas em Hiroshima e Nagasaki. Visitantes anotam que a exposição distribui os episódios em regiões distintas e acompanha a guerra por vários anos.\n\nQual leitura identifica o marco que o primeiro mapa associa ao início das campanhas europeias e relaciona essa frente à extensão mundial do conflito até 1945?",
       "options": [
         {
           "key": "A",
-          "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+          "text": "A guerra começou na Europa em 1939 e também se desenvolveu na Ásia e no Pacífico até 1945."
         },
         {
           "key": "B",
-          "text": "A guerra começou na Europa em 1939 com a invasão alemã da Polônia e envolveu conflitos em várias regiões do mundo."
+          "text": "As rotas do Pacífico começaram depois que o conflito europeu terminou."
         },
         {
           "key": "C",
-          "text": "A guerra aconteceu somente na Europa."
+          "text": "A invasão da Polônia iniciou a guerra na Europa, que se expandiu por outras regiões até 1945."
         },
         {
           "key": "D",
-          "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+          "text": "A rendição japonesa encerrou campanhas sem relação com o conflito mundial."
         },
         {
           "key": "E",
-          "text": "A ONU foi criada antes da Primeira Guerra Mundial."
+          "text": "A cronologia coloca o uso das bombas atômicas antes das ofensivas no Pacífico."
         }
       ],
-      "correctOption": "B",
-      "explanation": "A guerra começou na Europa em 1939 com a invasão alemã da Polônia e envolveu conflitos em várias regiões do mundo.",
-      "difficulty": "FOUNDATION",
-      "cognitiveOperation": "RECALL",
+      "correctOption": "C",
+      "explanation": "A legenda conecta a invasão da Polônia, frentes europeias e campanhas no Pacífico; restringir o conflito à Europa não corresponde aos dois mapas.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
         "GH-45-CON-01"
       ],
-      "targetedError": "foundation",
+      "targetedError": "europe-only",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-45-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante diz: “Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+      "stem": "Um jornal de 1942 descreve como empresas reorganizaram turnos para produzir equipamentos militares. Em outra página, há fotografias de mulheres em oficinas, mapas com movimentos de tropas e avisos de racionamento distribuídos a moradores. Uma nota registra que os portos receberam cargas destinadas a diferentes frentes e que a produção civil foi acompanhada por repartições públicas. Os editores conservaram os avisos, mapas e anúncios na mesma edição para documentar mudanças vividas durante a guerra.\n\nQual alternativa articula os três efeitos da mobilização destacados pelo jornal: produção militar, trabalho civil e abastecimento?",
       "options": [
         {
           "key": "A",
-          "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+          "text": "A mobilização militar envolveu produção econômica, trabalho civil e mudanças no abastecimento."
         },
         {
           "key": "B",
-          "text": "A guerra aconteceu somente na Europa."
+          "text": "O racionamento mostra que o abastecimento civil foi reorganizado durante a mobilização para a guerra."
         },
         {
           "key": "C",
-          "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+          "text": "As fotografias indicam que as frentes de combate dependiam de voluntários civis."
         },
         {
           "key": "D",
-          "text": "As potências do Eixo enfrentaram os Aliados em guerra de enorme mobilização militar, econômica e civil."
+          "text": "O avanço de tropas encerrou a participação econômica das populações urbanas."
         },
         {
           "key": "E",
-          "text": "A ONU foi criada antes da Primeira Guerra Mundial."
+          "text": "Os avisos de abastecimento explicam por que as alianças mudaram de lado."
         }
       ],
-      "correctOption": "D",
-      "explanation": "As potências do Eixo enfrentaram os Aliados em guerra de enorme mobilização militar, econômica e civil.",
-      "difficulty": "DIRECT",
+      "correctOption": "A",
+      "explanation": "Oficinas, trabalho civil, tropas e racionamento aparecem na mesma seção; separar a economia civil das necessidades militares ignora os registros de produção.",
+      "difficulty": "APPLIED",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-45-CON-02"
       ],
-      "targetedError": "concept_discrimination",
+      "targetedError": "civil-military-separation",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-45-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Considere a situação de partida da aula: A Segunda Guerra foi guerra total e incluiu genocídio sistemático promovido pela Alemanha nazista e seus colaboradores. Qual ideia estudada oferece a melhor chave de interpretação?",
+      "stem": "Uma equipe reúne listas de deportação, documentos administrativos e testemunhos de sobreviventes numa sala sobre perseguições durante o regime nazista. Nas páginas aparecem famílias judias retiradas de comunidades europeias e registros sobre outros grupos perseguidos. Uma ficha demográfica estima em cerca de seis milhões o número de judeus europeus assassinados no Holocausto. Em outra atividade, estudantes comparam essas fontes com mapas de batalhas e relatos de civis mortos em diferentes frentes da guerra.\n\nQual distinção conceitual é mais adequada?",
       "options": [
         {
           "key": "A",
-          "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+          "text": "Os mapas de batalha substituem os registros de deportação ao estudar a perseguição promovida pelo regime."
         },
         {
           "key": "B",
-          "text": "A guerra aconteceu somente na Europa."
+          "text": "A estimativa apresentada refere-se aos judeus europeus assassinados no Holocausto, não ao conjunto de civis mortos em combate."
         },
         {
           "key": "C",
-          "text": "O Holocausto foi a perseguição e assassinato sistemático de cerca de seis milhões de judeus europeus pelo regime nazista e seus aliados e colaboradores, além da perseguição de outros grupos."
+          "text": "Os testemunhos situam as famílias judias descritas fora das comunidades europeias registradas."
         },
         {
           "key": "D",
-          "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+          "text": "Os materiais reúnem mortes da guerra sem indicar política de perseguição sistemática."
         },
         {
           "key": "E",
-          "text": "A ONU foi criada antes da Primeira Guerra Mundial."
+          "text": "O Holocausto foi genocídio de judeus europeus promovido pelo nazismo, com perseguição a outros grupos."
         }
       ],
-      "correctOption": "C",
-      "explanation": "O Holocausto foi a perseguição e assassinato sistemático de cerca de seis milhões de judeus europeus pelo regime nazista e seus aliados e colaboradores, além da perseguição de outros grupos.",
+      "correctOption": "E",
+      "explanation": "A ficha delimita uma perseguição organizada e estima suas vítimas judias; equipará-la a todas as mortes da guerra apaga o recorte indicado pelos documentos.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
         "GH-45-CON-03"
       ],
-      "targetedError": "relationship",
+      "targetedError": "war-holocaust-equivalence",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-45-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "O IFSC pode apresentar Segunda Guerra Mundial e Holocausto por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+      "stem": "Um catálogo sobre o Pacífico coloca, na mesma sequência, o avanço de forças aliadas, os bombardeios atômicos de Hiroshima e Nagasaki e a rendição japonesa em 1945. A ficha informa que diferentes territórios da região haviam sido ocupados e que batalhas envolveram soldados e populações civis. Um comentário de visitante pergunta se a rendição decorreu de uma única ação militar. A curadora explica que a exposição organiza os eventos finais em ordem cronológica e recomenda comparar as campanhas com os documentos de rendição.\n\nQue leitura da sequência final é apoiada pelo catálogo?",
       "options": [
         {
           "key": "A",
-          "text": "A guerra no Pacífico terminou após ofensivas aliadas, bombas atômicas em Hiroshima e Nagasaki e rendição japonesa em 1945."
+          "text": "Os bombardeios ocorreram antes do avanço aliado descrito na ficha."
         },
         {
           "key": "B",
-          "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+          "text": "Campanhas aliadas e bombas atômicas antecederam a rendição japonesa em 1945."
         },
         {
           "key": "C",
-          "text": "A guerra aconteceu somente na Europa."
+          "text": "A rendição encerrou uma campanha restrita a territórios europeus."
         },
         {
           "key": "D",
-          "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+          "text": "A ficha coloca campanhas aliadas e bombas antes da rendição, mas não atribui o desfecho a uma única causa."
         },
         {
           "key": "E",
-          "text": "A ONU foi criada antes da Primeira Guerra Mundial."
+          "text": "Os bombardeios ocorreram depois da assinatura da rendição japonesa."
         }
       ],
-      "correctOption": "A",
-      "explanation": "A guerra no Pacífico terminou após ofensivas aliadas, bombas atômicas em Hiroshima e Nagasaki e rendição japonesa em 1945.",
+      "correctOption": "B",
+      "explanation": "A nota situa ofensivas, bombas atômicas e rendição japonesa numa mesma sequência; atribuir o desfecho a um ato isolado ignora as campanhas e documentos citados.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-45-CON-04"
       ],
-      "targetedError": "application",
+      "targetedError": "single-event-ending",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-45-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. A guerra começou na Europa em 1939 com a invasão alemã da Polônia e envolveu conflitos em várias regiões do mundo.\nII. Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra.\nIII. O Holocausto foi a perseguição e assassinato sistemático de cerca de seis milhões de judeus europeus pelo regime nazista e seus aliados e colaboradores, além da perseguição de outros grupos.\nIV. A guerra aconteceu somente na Europa.\nAssinale a alternativa CORRETA.",
+      "stem": "Uma linha do tempo começa com a rendição japonesa em 1945 e continua com reuniões entre governos para criar uma organização internacional. Na sala ao lado, um mapa político traz mudanças de fronteira e uma legenda identifica Estados Unidos e União Soviética entre as potências com influência ampliada. A ficha de catálogo registra a data de fundação da ONU e o nome dos governos participantes das reuniões. Os visitantes comparam os documentos institucionais com as mudanças apresentadas no mapa.\n\nQual alternativa retoma diretamente a criação da ONU e a ascensão das duas potências, sem acrescentar uma relação não registrada pelo painel?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "A organização internacional surgiu antes do conflito e conduziu as campanhas aliadas."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "O mapa mostra que Estados Unidos e União Soviética perderam influência no pós-guerra."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "A criação da ONU e a ascensão das duas potências ocorreram no cenário do pós-guerra, sem eliminar as relações de poder entre Estados."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "O pós-guerra combinou a criação da ONU com a ascensão de Estados Unidos e União Soviética."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "A organização foi criada por uma das duas potências para governar os demais países."
         }
       ],
-      "correctOption": "B",
-      "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+      "correctOption": "D",
+      "explanation": "A sequência reúne a fundação da ONU e a ascensão de duas potências; tratar a organização como instrumento de um único Estado contraria a descrição das reuniões.",
       "difficulty": "IFSC",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
         "GH-45-CON-01",
         "GH-45-CON-02",
         "GH-45-CON-03",
-        "GH-45-CON-04"
+        "GH-45-CON-04",
+        "GH-45-CON-05"
       ],
-      "targetedError": "multi_statement_reasoning",
+      "targetedError": "single-actor-postwar",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-45-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma fonte foi apresentada numa questão sobre Segunda Guerra Mundial e Holocausto. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+      "stem": "Um acervo escolar cataloga um folheto sem assinatura, encontrado entre papéis doados por uma família. O documento, datado de 1943 pela própria coleção, convoca moradores a esconder pessoas ameaçadas e a compartilhar notícias proibidas pelo ocupante. A ficha registra que o lugar de produção ainda não foi identificado e que não há dados sobre quantas pessoas receberam o papel. Em outra estante, há documentos de oposição encontrados em regiões diferentes e catalogados em épocas distintas.\n\nQual uso desse folheto respeita melhor o que a fonte permite afirmar?",
       "options": [
         {
           "key": "A",
-          "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+          "text": "O folheto documenta uma forma de resistência, mas não permite afirmar em quais países a rede atuou."
         },
         {
           "key": "B",
-          "text": "A guerra aconteceu somente na Europa."
+          "text": "A data de 1943 confirma que a família doadora imprimiu o documento."
         },
         {
           "key": "C",
-          "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+          "text": "O folheto oferece evidência de uma forma de resistência, a comparar com fontes de outros locais."
         },
         {
           "key": "D",
-          "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+          "text": "A falta de assinatura dificulta relacionar o folheto a uma ação de oposição."
         },
         {
           "key": "E",
-          "text": "Usar documentos e mapas para distinguir guerra militar, ocupação, perseguição racial e genocídio."
+          "text": "A mensagem permite estimar quantos moradores seguiram as instruções."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Usar documentos e mapas para distinguir guerra militar, ocupação, perseguição racial e genocídio.",
+      "correctOption": "C",
+      "explanation": "O folheto registra um chamado de oposição, mas a falta de local e dados de circulação limita conclusões sobre alcance; comparar outros testemunhos evita generalizar.",
       "difficulty": "IFSC",
       "cognitiveOperation": "SOURCE_ANALYSIS",
       "conceptIds": [
@@ -428,39 +429,39 @@
         "GH-45-CON-05",
         "GH-45-CON-06"
       ],
-      "targetedError": "source_interpretation",
+      "targetedError": "source-as-representative",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-45-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Segunda Guerra Mundial e Holocausto?",
+      "stem": "Uma sala apresenta um diário de uma sobrevivente judia, uma lista de deportação e um relatório militar sobre uma cidade bombardeada. As legendas trazem autoria, data, finalidade e contexto de produção. Um grupo observa que o diário expressa a experiência de uma pessoa, a lista resulta da burocracia de perseguição e o relatório foi elaborado para informar uma unidade militar. A professora pede que os estudantes comparem as fontes antes de escrever uma conclusão sobre a guerra e sobre as pessoas atingidas.\n\nQual procedimento ajuda a evitar uma leitura imprecisa desse conjunto?",
       "options": [
         {
           "key": "A",
-          "text": "A guerra começou na Europa em 1939 com a invasão alemã da Polônia e envolveu conflitos em várias regiões do mundo."
+          "text": "Considerar autoria, data e finalidade ao relacionar experiências individuais e registros institucionais."
         },
         {
           "key": "B",
-          "text": "As potências do Eixo enfrentaram os Aliados em guerra de enorme mobilização militar, econômica e civil."
+          "text": "O diário informa uma experiência individual; deve ser comparado às demais fontes, sem servir como medida de todas as perseguições."
         },
         {
           "key": "C",
-          "text": "O pós-guerra levou à criação da ONU e a uma nova ordem internacional marcada pela ascensão de EUA e URSS."
+          "text": "Ler a lista administrativa como descrição completa da vida das pessoas deportadas."
         },
         {
           "key": "D",
-          "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+          "text": "Tratar o relatório militar como testemunho direto de moradores da cidade."
         },
         {
           "key": "E",
-          "text": "A guerra no Pacífico terminou após ofensivas aliadas, bombas atômicas em Hiroshima e Nagasaki e rendição japonesa em 1945."
+          "text": "Desconsiderar a autoria porque as fontes apresentam acontecimentos violentos."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
-      "difficulty": "DIRECT",
-      "cognitiveOperation": "ANALYZE",
+      "correctOption": "A",
+      "explanation": "As legendas distinguem experiência pessoal, documento administrativo e relatório militar; tomar um desses registros como retrato das demais pessoas ultrapassa sua finalidade.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "SOURCE_ANALYSIS",
       "conceptIds": [
         "GH-45-CON-01",
         "GH-45-CON-02",
@@ -469,39 +470,39 @@
         "GH-45-CON-05",
         "GH-45-CON-06"
       ],
-      "targetedError": "misconception_identification",
+      "targetedError": "source-conflation",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     },
     {
       "id": "GH-45-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Depois de comparar conceitos, evidências e erros frequentes de Segunda Guerra Mundial e Holocausto, qual conclusão final é sustentável?",
+      "stem": "Uma exposição reúne mapas de batalhas em várias regiões, documentos sobre deportações, registros da mobilização industrial e atas da criação da ONU. Na saída, a turma registra que a guerra começou na Europa em 1939, teve alcance mundial e terminou em 1945. Uma ficha sobre o pós-guerra menciona a ascensão de Estados Unidos e União Soviética. A curadoria organiza os materiais em salas diferentes porque cada conjunto responde a perguntas próprias sobre combate, perseguição, sociedade e relações internacionais.\n\nQual conclusão mantém em vista a diversidade dos temas reunidos?",
       "options": [
         {
           "key": "A",
-          "text": "Holocausto é sinônimo de todas as mortes ocorridas na Segunda Guerra."
+          "text": "Os documentos de deportação ajudam a explicar como ocorreram as batalhas nos mapas."
         },
         {
           "key": "B",
-          "text": "A guerra aconteceu somente na Europa."
+          "text": "A mobilização industrial encerrou as disputas internacionais no pós-guerra."
         },
         {
           "key": "C",
-          "text": "O pós-guerra levou à criação da ONU e a uma nova ordem internacional marcada pela ascensão de EUA e URSS."
+          "text": "A ONU foi criada no pós-guerra, depois da rendição japonesa em 1945."
         },
         {
           "key": "D",
-          "text": "Nazismo perseguiu apenas adversários militares estrangeiros."
+          "text": "Os mapas descrevem uma guerra regional sem consequências para a ordem internacional."
         },
         {
           "key": "E",
-          "text": "A ONU foi criada antes da Primeira Guerra Mundial."
+          "text": "A guerra mundial envolveu combate, perseguição e mobilização social, seguida por mudanças internacionais."
         }
       ],
-      "correctOption": "C",
-      "explanation": "O pós-guerra levou à criação da ONU e a uma nova ordem internacional marcada pela ascensão de EUA e URSS.",
+      "correctOption": "E",
+      "explanation": "Mapas, documentos de perseguição, registros industriais e atas institucionais respondem a dimensões diferentes; reduzi-los a uma só experiência deixa de fora os efeitos descritos.",
       "difficulty": "IFSC",
-      "cognitiveOperation": "EVALUATE",
+      "cognitiveOperation": "TRANSFER",
       "conceptIds": [
         "GH-45-CON-01",
         "GH-45-CON-02",
@@ -510,7 +511,7 @@
         "GH-45-CON-05",
         "GH-45-CON-06"
       ],
-      "targetedError": "synthesis",
+      "targetedError": "single-dimension-war",
       "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
     }
   ]

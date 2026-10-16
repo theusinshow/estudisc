@@ -9,6 +9,21 @@ import { hashCanonicalJson } from "@/lib/canonical-json";
 import { DrizzleQuestionRepository } from "./question-repository";
 type Database = PgDatabase<PgQueryResultHKT, typeof schema>;
 
+/**
+ * Newest imported v2 snapshot of one Track version (at most one element). Only snapshots of that version qualify;
+ * ids are listed newest first and manifests loaded one at a time, because every targeted import adds a snapshot.
+ */
+export async function loadTrackContext(tx: Database, trackId: string, trackVersion: number) {
+  const candidates = await tx.select({ id: packImports.id }).from(packImports)
+    .where(sql`${packImports.manifest}->'track'->>'id' = ${trackId} and ${packImports.manifest}->>'version' = ${String(trackVersion)}`)
+    .orderBy(desc(packImports.importedAt), desc(packImports.id));
+  for (const candidate of candidates) {
+    const [row] = await tx.select({ manifest: packImports.manifest }).from(packImports).where(eq(packImports.id, candidate.id));
+    if (trackPackV2Schema.safeParse(row?.manifest).success) return [row.manifest] as unknown[];
+  }
+  return [] as unknown[];
+}
+
 export async function executeLessonVersion(db: Database, actorId: string, pack: LessonVersionPack, contentHash: string, preview: boolean) {
   return db.transaction(async tx => {
     const receipt = async () => {
@@ -22,17 +37,7 @@ export async function executeLessonVersion(db: Database, actorId: string, pack: 
     const [track] = preview ? await query : await query.for("update");
     if (!track) throw new LessonVersionConflictError("Target Track not found");
     if (await receipt()) return targetedResult(pack, "already_imported");
-    // Only snapshots of the target Track version can be the context; filtering in SQL avoids transferring every manifest.
-    // Only snapshots of the target Track version qualify. List their ids newest first and load manifests one at a
-    // time: every import adds a snapshot, so loading them all would grow the transfer with each lesson version.
-    const candidates = await tx.select({ id: packImports.id }).from(packImports)
-      .where(sql`${packImports.manifest}->'track'->>'id' = ${pack.target.trackId} and ${packImports.manifest}->>'version' = ${String(pack.target.trackVersion)}`)
-      .orderBy(desc(packImports.importedAt), desc(packImports.id));
-    const contexts: unknown[] = [];
-    for (const candidate of candidates) {
-      const [row] = await tx.select({ manifest: packImports.manifest }).from(packImports).where(eq(packImports.id, candidate.id));
-      if (trackPackV2Schema.safeParse(row?.manifest).success) { contexts.push(row.manifest); break; }
-    }
+    const contexts = await loadTrackContext(tx, pack.target.trackId, pack.target.trackVersion);
     const { context, base, projection } = resolveLessonVersionContext(contexts, pack);
     const [moduleRow] = await tx.select().from(modules).where(and(eq(modules.trackId, track.id), eq(modules.stableId, pack.target.moduleId)));
     if (!moduleRow) throw new LessonVersionConflictError("Target module not found");

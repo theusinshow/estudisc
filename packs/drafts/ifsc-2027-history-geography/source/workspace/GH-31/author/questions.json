@@ -2,307 +2,377 @@
   {
     "id": "GH-31-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Desigualdade social e mundo do trabalho, qual afirmação está correta?",
+    "stem": "Pequenos sítios da Serra colhem os grãos e os enviam a uma cooperativa do vale. Na cidade industrial, uma torrefadora embala o café e contrata operadores de máquinas; na capital, uma agência cria a marca e organiza a publicidade. O mapa da reportagem mostra que os sítios dependem de uma estrada com poucos horários de ônibus, enquanto a agência fica perto de universidades e serviços financeiros.\n\nO que o trajeto revela sobre a divisão territorial do trabalho?",
     "options": [
       {
         "key": "A",
-        "text": "Automação elimina necessariamente todos os empregos humanos."
+        "text": "A proximidade da agência com serviços financeiros concentra também a colheita na capital.",
+        "targetsError": "conceptual",
+        "rationale": "O cultivo ocorre nos sítios da Serra, longe da agência na capital."
       },
       {
         "key": "B",
-        "text": "Desigualdade social envolve diferenças de renda, patrimônio, acesso a serviços, oportunidades, poder e condições de vida."
+        "text": "A cooperativa reúne cultivo, torrefação e publicidade porque recebe os grãos no vale.",
+        "targetsError": "interpretation",
+        "rationale": "O mapa distribui essas etapas entre sítios, torrefadora e agência."
       },
       {
         "key": "C",
-        "text": "Desigualdade depende apenas do esforço individual."
+        "text": "A produção se organiza por etapas em lugares com atividades e condições diferentes."
       },
       {
         "key": "D",
-        "text": "Tecnologia afeta somente trabalhos manuais industriais."
+        "text": "A dificuldade de transporte retirou os sítios da cadeia de abastecimento da torrefadora.",
+        "targetsError": "interpretation",
+        "rationale": "Os grãos continuam seguindo dos sítios à cooperativa."
       },
       {
         "key": "E",
-        "text": "Todos os trabalhadores sofrem os mesmos efeitos de uma mudança econômica."
+        "text": "A criação da marca na capital reduziu a necessidade de operadores na cidade industrial.",
+        "targetsError": "interpretation",
+        "rationale": "A cidade industrial mantém uma torrefadora com operadores de máquinas."
       }
     ],
-    "correctOption": "B",
-    "explanation": "Desigualdade social envolve diferenças de renda, patrimônio, acesso a serviços, oportunidades, poder e condições de vida.",
+    "correctOption": "C",
+    "explanation": "A reportagem distribui cultivo, torrefação e publicidade por três lugares com condições distintas. O problema de transporte é uma barreira para os moradores da Serra, mas não apagou sua participação produtiva.",
     "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-31-CON-01"
     ],
     "targetedError": "foundation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-31-CON-01"
   },
   {
     "id": "GH-31-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Automação elimina necessariamente todos os empregos humanos.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Antes da reforma, seis funcionários separavam pacotes manualmente por rua. A empresa instalou leitores automáticos que identificam etiquetas e enviam as caixas a esteiras diferentes. Dois postos de triagem foram fechados; quatro trabalhadores receberam treinamento para revisar falhas do sistema e cuidar dos equipamentos. A gerente informa que o volume diário de entregas aumentou, mas parte da equipe ainda aguarda uma nova função.\n\nQual efeito da tecnologia a crônica apresenta?",
     "options": [
       {
         "key": "A",
-        "text": "Automação elimina necessariamente todos os empregos humanos."
+        "text": "A tecnologia reorganizou tarefas e ocupações, com efeitos distintos para os trabalhadores."
       },
       {
         "key": "B",
-        "text": "Desigualdade depende apenas do esforço individual."
+        "text": "Os leitores automáticos mantiveram a triagem manual como principal tarefa da equipe.",
+        "targetsError": "interpretation",
+        "rationale": "A crônica descreve leitores que direcionam as caixas automaticamente às esteiras."
       },
       {
         "key": "C",
-        "text": "Tecnologia afeta somente trabalhos manuais industriais."
+        "text": "O aumento do volume mostra que os postos fechados foram convertidos em funções equivalentes.",
+        "targetsError": "interpretation",
+        "rationale": "A gerente relata postos fechados e trabalhadores ainda sem nova função."
       },
       {
         "key": "D",
-        "text": "Tecnologias e automação eliminam algumas tarefas, transformam profissões e criam novas atividades, com efeitos diferentes entre setores e trabalhadores."
+        "text": "A instalação do sistema encerrou as entregas e eliminou o trabalho de triagem.",
+        "targetsError": "interpretation",
+        "rationale": "O volume diário de entregas aumentou após a mudança."
       },
       {
         "key": "E",
-        "text": "Todos os trabalhadores sofrem os mesmos efeitos de uma mudança econômica."
+        "text": "O treinamento permitiu dispensar a manutenção e a revisão dos equipamentos automáticos.",
+        "targetsError": "conceptual",
+        "rationale": "Quatro trabalhadores foram treinados para revisar falhas e cuidar do sistema."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Tecnologias e automação eliminam algumas tarefas, transformam profissões e criam novas atividades, com efeitos diferentes entre setores e trabalhadores.",
+    "correctOption": "A",
+    "explanation": "Os leitores automáticos substituíram parte da triagem manual e a empresa criou tarefas de manutenção e revisão. O aumento de entregas não mostra que os efeitos foram iguais para a equipe.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-31-CON-02"
     ],
     "targetedError": "concept_discrimination",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-31-CON-02"
   },
   {
     "id": "GH-31-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: Tecnologia pode substituir tarefas, criar ocupações e reorganizar o trabalho sem produzir um único resultado para todos. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "A empresa oferece entregas em motocicleta com pagamento por corrida concluída. O entregador escolhe quando abrir o aplicativo, mas recebe mais pedidos nos horários de chuva e não sabe quantas corridas terá na semana seguinte. O anúncio informa que combustível, manutenção e telefone são pagos pelo próprio trabalhador. Na reunião do bairro, alguns entregadores pediram uma regra para compensar cancelamentos feitos depois que já haviam iniciado a viagem.\n\nQue condição de trabalho está sugerida pelo anúncio e pela reunião?",
     "options": [
       {
         "key": "A",
-        "text": "Automação elimina necessariamente todos os empregos humanos."
+        "text": "O pagamento mensal fixo cobre os custos do veículo e do telefone do entregador.",
+        "targetsError": "interpretation",
+        "rationale": "O anúncio prevê pagamento por corrida e atribui custos ao entregador."
       },
       {
         "key": "B",
-        "text": "Desigualdade depende apenas do esforço individual."
+        "text": "O entregador define o valor por corrida e distribui os pedidos entre os clientes.",
+        "targetsError": "conceptual",
+        "rationale": "A empresa organiza pedidos e o anúncio não informa que entregadores definem tarifas."
       },
       {
         "key": "C",
-        "text": "Precarização pode envolver instabilidade, baixa proteção social, jornadas imprevisíveis e transferência de riscos ao trabalhador."
+        "text": "A remuneração por viagem permite prever quantos pedidos haverá nas semanas seguintes.",
+        "targetsError": "interpretation",
+        "rationale": "O trabalhador não sabe quantas corridas receberá na semana seguinte."
       },
       {
         "key": "D",
-        "text": "Tecnologia afeta somente trabalhos manuais industriais."
+        "text": "A escolha dos horários garante uma renda estável mesmo quando há cancelamentos.",
+        "targetsError": "interpretation",
+        "rationale": "A quantidade de corridas varia e os custos são assumidos pelo trabalhador."
       },
       {
         "key": "E",
-        "text": "Todos os trabalhadores sofrem os mesmos efeitos de uma mudança econômica."
+        "text": "Custos próprios e número incerto de corridas podem tornar a renda instável."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Precarização pode envolver instabilidade, baixa proteção social, jornadas imprevisíveis e transferência de riscos ao trabalhador.",
+    "correctOption": "E",
+    "explanation": "A renda depende de corridas variáveis, enquanto o entregador paga despesas e pode perder viagens canceladas. A flexibilidade de horário não garante renda previsível nem cobre os custos.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-31-CON-03"
     ],
     "targetedError": "relationship",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-31-CON-03"
   },
   {
     "id": "GH-31-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Desigualdade social e mundo do trabalho por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "A direção instalou um braço mecânico para cortar placas de madeira e reduziu de dez para seis as vagas de corte. No mesmo período, anunciou duas vagas para programar a máquina e uma para conferir a qualidade. O sindicato registrou pedidos de seguro-desemprego de quatro antigos operadores, enquanto a escola técnica local abriu um curso noturno de manutenção industrial. A fábrica ainda busca candidatos para as novas funções.\n\nQual interpretação considera o conjunto das informações?",
     "options": [
       {
         "key": "A",
-        "text": "Gênero, raça, território e escolaridade influenciam oportunidades e remuneração no mercado de trabalho."
+        "text": "O curso noturno assegurou uma vaga técnica a cada antigo operador da fábrica.",
+        "targetsError": "interpretation",
+        "rationale": "A abertura do curso não informa quem será contratado."
       },
       {
         "key": "B",
-        "text": "Automação elimina necessariamente todos os empregos humanos."
+        "text": "A automação diminuiu vagas de corte e abriu postos que pedem novas qualificações."
       },
       {
         "key": "C",
-        "text": "Desigualdade depende apenas do esforço individual."
+        "text": "A máquina elevou o número de postos de corte para acompanhar a produção das placas.",
+        "targetsError": "interpretation",
+        "rationale": "A direção reduziu de dez para seis os postos de corte."
       },
       {
         "key": "D",
-        "text": "Tecnologia afeta somente trabalhos manuais industriais."
+        "text": "Os pedidos de seguro-desemprego vieram dos trabalhadores contratados para programar a máquina.",
+        "targetsError": "conceptual",
+        "rationale": "O registro associa pedidos a quatro antigos operadores, não aos novos candidatos."
       },
       {
         "key": "E",
-        "text": "Todos os trabalhadores sofrem os mesmos efeitos de uma mudança econômica."
+        "text": "As vagas técnicas tornaram desnecessária a formação em manutenção industrial.",
+        "targetsError": "interpretation",
+        "rationale": "O curso noturno foi aberto para preparar pessoas para manutenção industrial."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Gênero, raça, território e escolaridade influenciam oportunidades e remuneração no mercado de trabalho.",
+    "correctOption": "B",
+    "explanation": "O boletim aponta redução nos postos de corte e abertura de vagas técnicas, ao mesmo tempo que registra pedidos de seguro-desemprego. A existência do curso oferece formação, mas não garante contratação automática.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-31-CON-04"
     ],
     "targetedError": "application",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-31-CON-04"
   },
   {
     "id": "GH-31-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Desigualdade social envolve diferenças de renda, patrimônio, acesso a serviços, oportunidades, poder e condições de vida.\nII. Automação elimina necessariamente todos os empregos humanos.\nIII. Precarização pode envolver instabilidade, baixa proteção social, jornadas imprevisíveis e transferência de riscos ao trabalhador.\nIV. Desigualdade depende apenas do esforço individual.\nAssinale a alternativa CORRETA.",
+    "stem": "A oficina comparou salários de pessoas com a mesma função, tempo de experiência e jornada. Na equipe de mecânica, a média mensal das mulheres foi de R$ 2.480 e a dos homens, de R$ 2.760. As avaliações de desempenho ficaram em faixas semelhantes. A gerente informou que a empresa está revendo promoções e escalas; o relatório não apresenta dados sobre formação, faltas ou responsabilidades de cuidado dos funcionários.\n\nQual conclusão é mais cuidadosa diante dos dados apresentados?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "As avaliações semelhantes explicam por completo por que as médias salariais diferem.",
+        "targetsError": "interpretation",
+        "rationale": "A diferença continua visível mesmo com avaliações em faixas semelhantes."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A gerente atribuiu a diferença observada ao desempenho de cada grupo.",
+        "targetsError": "interpretation",
+        "rationale": "As avaliações ficaram em faixas semelhantes, e o relatório não explica a diferença."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "A revisão anunciada já igualou as médias salariais da equipe de mecânica.",
+        "targetsError": "conceptual",
+        "rationale": "A gerente diz que a revisão ainda está em andamento."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Os dados mostram uma diferença que merece análise, sem determinar todas as suas causas."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "A comparação indica que mulheres e homens exercem funções diferentes na oficina.",
+        "targetsError": "interpretation",
+        "rationale": "A tabela compara pessoas da mesma função e experiência."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "D",
+    "explanation": "A tabela mostra médias diferentes entre pessoas da mesma função, experiência e jornada, por isso a diferença merece investigação. O documento ainda não apresenta dados para identificar todas as causas.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-31-CON-01",
-      "GH-31-CON-02",
-      "GH-31-CON-03",
-      "GH-31-CON-04"
+      "GH-31-CON-05"
     ],
     "targetedError": "multi_statement_reasoning",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-31-CON-05"
   },
   {
     "id": "GH-31-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Desigualdade social e mundo do trabalho. Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "A fazenda contratou trabalhadores que chegaram de outros estados para a temporada. O ônibus da empresa os leva ao pomar, e um alojamento foi preparado perto das plantações. Alguns trabalhadores enviam parte do pagamento às famílias e usam mensagens de voz para acompanhar os filhos. A associação local informa que parte da equipe ainda busca orientação para entender os contratos e os serviços de saúde disponíveis durante a safra.\n\nQue relação entre migração e trabalho o relato permite reconhecer?",
     "options": [
       {
         "key": "A",
-        "text": "Automação elimina necessariamente todos os empregos humanos."
+        "text": "A contratação temporária afastou os trabalhadores dos vínculos e responsabilidades familiares.",
+        "targetsError": "interpretation",
+        "rationale": "O relato menciona remessas de dinheiro e contato por mensagens."
       },
       {
         "key": "B",
-        "text": "Desigualdade depende apenas do esforço individual."
+        "text": "O alojamento próximo às plantações assegurou acesso aos serviços de saúde da cidade.",
+        "targetsError": "interpretation",
+        "rationale": "A associação informa que parte da equipe busca orientação sobre esses serviços."
       },
       {
         "key": "C",
-        "text": "Tecnologia afeta somente trabalhos manuais industriais."
+        "text": "A demanda sazonal atrai trabalhadores que mantêm laços familiares e enfrentam desafios de acesso."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "Os valores enviados às famílias foram destinados ao pagamento dos serviços de saúde locais.",
+        "targetsError": "interpretation",
+        "rationale": "O relato não diz que a fazenda retém ou encaminha salários para clínicas."
       },
       {
         "key": "E",
-        "text": "Relacionar uma situação de trabalho a processos estruturais sem ignorar escolhas e contextos individuais."
+        "text": "A contratação de pessoas de outros estados reduziu a necessidade de colher maçãs.",
+        "targetsError": "interpretation",
+        "rationale": "Eles foram contratados justamente para trabalhar no pomar durante a safra."
       }
     ],
-    "correctOption": "E",
-    "explanation": "Relacionar uma situação de trabalho a processos estruturais sem ignorar escolhas e contextos individuais.",
+    "correctOption": "C",
+    "explanation": "A fazenda contrata trabalhadores de outros estados para uma atividade sazonal, e eles mantêm vínculos com as famílias. As dúvidas sobre contrato e saúde mostram desafios de acesso que o alojamento não resolve por si só.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "SOURCE_ANALYSIS",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-31-CON-01",
-      "GH-31-CON-02",
-      "GH-31-CON-03",
-      "GH-31-CON-04",
-      "GH-31-CON-05",
       "GH-31-CON-06"
     ],
     "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-31-CON-06"
   },
   {
     "id": "GH-31-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Desigualdade social e mundo do trabalho?",
+    "stem": "A clínica instalou um sistema que organiza consultas e confirma horários por mensagem. As recepcionistas passaram a dedicar menos tempo a ligações repetidas e mais tempo a orientar pacientes com dificuldade de leitura. Um técnico foi contratado para corrigir falhas do programa, enquanto a equipe médica continuou atendendo presencialmente. A direção ainda compara o número de faltas antes e depois da instalação, sem afirmar que o sistema resolveu todos os problemas.\n\nQue mudança no trabalho está descrita na notícia?",
     "options": [
       {
         "key": "A",
-        "text": "Desigualdade social envolve diferenças de renda, patrimônio, acesso a serviços, oportunidades, poder e condições de vida."
+        "text": "A ferramenta redistribuiu tarefas administrativas e criou demanda por suporte técnico."
       },
       {
         "key": "B",
-        "text": "Tecnologias e automação eliminam algumas tarefas, transformam profissões e criam novas atividades, com efeitos diferentes entre setores e trabalhadores."
+        "text": "As mensagens transferiram as consultas da equipe médica para os próprios pacientes.",
+        "targetsError": "interpretation",
+        "rationale": "A equipe médica segue realizando atendimentos presenciais."
       },
       {
         "key": "C",
-        "text": "Indicadores sociais precisam ser analisados com contexto e não usados para explicar desigualdade como resultado de mérito individual isolado."
+        "text": "O suporte do técnico retirou das recepcionistas a tarefa de orientar pacientes.",
+        "targetsError": "interpretation",
+        "rationale": "As recepcionistas passaram a dedicar mais tempo a essa orientação."
       },
       {
         "key": "D",
-        "text": "Tecnologia afeta somente trabalhos manuais industriais."
+        "text": "A comparação dos indicadores já demonstrou que o sistema resolveu as faltas.",
+        "targetsError": "interpretation",
+        "rationale": "A direção ainda compara resultados e não atribui uma solução ao sistema."
       },
       {
         "key": "E",
-        "text": "Gênero, raça, território e escolaridade influenciam oportunidades e remuneração no mercado de trabalho."
+        "text": "As confirmações digitais reduziram as consultas e substituíram os atendimentos presenciais.",
+        "targetsError": "interpretation",
+        "rationale": "A notícia diz que a equipe médica continua atendendo presencialmente."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
+    "correctOption": "A",
+    "explanation": "O sistema automatiza confirmações e reorganiza o trabalho das recepcionistas, enquanto cria demanda de suporte técnico. A clínica ainda avalia os resultados e mantém consultas presenciais.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-31-CON-01",
-      "GH-31-CON-02",
-      "GH-31-CON-03",
-      "GH-31-CON-04",
-      "GH-31-CON-05",
-      "GH-31-CON-06"
+      "GH-31-CON-02"
     ],
     "targetedError": "misconception_identification",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-31-CON-02"
   },
   {
     "id": "GH-31-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Desigualdade social e mundo do trabalho, qual conclusão final é sustentável?",
+    "stem": "O painel compara três bairros. No Centro, a renda média familiar é de R$ 4.100 e 96% das casas têm coleta de esgoto. No Alto, os valores são R$ 2.300 e 61%; no Novo Horizonte, R$ 1.950 e 48%. A escola municipal informa que os tempos de deslocamento até os empregos também diferem. O painel não traz dados de idade, escolaridade ou tamanho das famílias.\n\nQual leitura respeita os limites dos indicadores?",
     "options": [
       {
         "key": "A",
-        "text": "Automação elimina necessariamente todos os empregos humanos."
+        "text": "A renda média explica por que as famílias escolheram cada um dos bairros.",
+        "targetsError": "interpretation",
+        "rationale": "O painel apresenta médias, sem dados sobre decisões residenciais individuais."
       },
       {
         "key": "B",
-        "text": "Desigualdade depende apenas do esforço individual."
+        "text": "A coleta de esgoto não ajuda a descrever diferenças nas condições entre bairros.",
+        "targetsError": "conceptual",
+        "rationale": "O indicador registra uma diferença de acesso a serviço básico entre bairros."
       },
       {
         "key": "C",
-        "text": "Indicadores sociais precisam ser analisados com contexto e não usados para explicar desigualdade como resultado de mérito individual isolado."
+        "text": "Os tempos de deslocamento mostram que a maioria dos empregos fica dentro dos bairros.",
+        "targetsError": "interpretation",
+        "rationale": "O painel registra trajetos até empregos, mas não indica onde eles se localizam."
       },
       {
         "key": "D",
-        "text": "Tecnologia afeta somente trabalhos manuais industriais."
+        "text": "As médias de renda demonstram que a escolaridade causou as diferenças observadas.",
+        "targetsError": "interpretation",
+        "rationale": "O painel não apresenta dados de escolaridade para avaliar essa hipótese."
       },
       {
         "key": "E",
-        "text": "Todos os trabalhadores sofrem os mesmos efeitos de uma mudança econômica."
+        "text": "Os indicadores mostram diferenças entre bairros, mas não isolam suas causas."
       }
     ],
-    "correctOption": "C",
-    "explanation": "Indicadores sociais precisam ser analisados com contexto e não usados para explicar desigualdade como resultado de mérito individual isolado.",
+    "correctOption": "E",
+    "explanation": "Renda, coleta de esgoto e deslocamento variam entre os bairros, evidenciando condições diferentes. Como escolaridade, idade e composição familiar não foram registradas, o painel não identifica sozinho as causas.",
     "difficulty": "IFSC",
-    "cognitiveOperation": "EVALUATE",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "GH-31-CON-01",
-      "GH-31-CON-02",
-      "GH-31-CON-03",
-      "GH-31-CON-04",
-      "GH-31-CON-05",
-      "GH-31-CON-06"
+      "GH-31-CON-01"
     ],
     "targetedError": "synthesis",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2",
+    "version": 3,
+    "status": "draft",
+    "primaryConceptId": "GH-31-CON-01"
   }
 ]

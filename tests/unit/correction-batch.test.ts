@@ -43,8 +43,9 @@ it("skips a lesson whose published block no longer matches the pre-cleanup sourc
 it("reports unchanged lessons and refuses cleanups that add blocks", () => {
   const { context, base } = lessonVersionFixture();
   expect(buildCorrection({ context, moduleId: "mat", base, before: base, after: structuredClone(base), ...meta }).status).toBe("unchanged");
-  const grown = structuredClone(base); grown.blocks.push({ ...structuredClone(base.blocks[0]), id: "NEW" });
-  expect(buildCorrection({ context, moduleId: "mat", base, before: base, after: grown, ...meta })).toMatchObject({ status: "skipped" });
+  const published = structuredClone(base); published.blocks.push({ ...structuredClone(base.blocks[0]), id: "ENRICHMENT-ONLY" });
+  const grown = structuredClone(base); grown.blocks.push({ ...structuredClone(base.blocks[0]), id: "ENRICHMENT-ONLY" });
+  expect(buildCorrection({ context, moduleId: "mat", base: published, before: base, after: grown, ...meta })).toMatchObject({ status: "skipped" });
   expect(hashCanonicalJson(base)).toBe(hashCanonicalJson(lessonVersionFixture().base));
 });
 
@@ -61,4 +62,20 @@ it("turns reviewed Question changes into lesson-bound next versions and rebinds 
   expect(outcome.pack.corrections).toBeUndefined();
   expect(outcome.pack.lesson.activities.find(entry => entry.id === activity.id)?.config).toMatchObject({ questionVersion: original.version + 1 });
   expect(resolveLessonVersionContext([context], outcome.pack).projection.questions.find(question => question.id === original.id)?.version).toBe(original.version + 1);
+});
+
+it("places a new source block after its preceding source block and passes the import policy", () => {
+  const { context, base } = lessonVersionFixture();
+  const after = structuredClone(base);
+  const anchor = after.blocks.find(block => typeof block.payload.content === "string" && ["note", "text", "summary", "worked-example"].includes(block.type))!;
+  const conceptId = base.concepts[0].id;
+  const added = { ...structuredClone(anchor), id: "CASES-THAT-FALL", conceptIds: [conceptId], payload: { ...anchor.payload, title: "Casos que caem", content: "✅ Fui à feira. ❌ Fui a feira." } };
+  after.blocks.splice(after.blocks.indexOf(anchor) + 1, 0, added);
+  const outcome = buildCorrection({ context, moduleId: "mat", base, before: base, after, ...meta });
+  expect(outcome.status).toBe("ready");
+  if (outcome.status !== "ready") return;
+  expect(outcome.added).toBe(1);
+  const ids = outcome.pack.lesson.blocks.map(block => block.id);
+  expect(ids.indexOf("CASES-THAT-FALL")).toBe(ids.indexOf(anchor.id) + 1);
+  expect(resolveLessonVersionContext([context], outcome.pack).base.id).toBe(base.id);
 });

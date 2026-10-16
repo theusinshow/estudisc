@@ -209,294 +209,292 @@
     {
       "id": "CIE-31-Q001",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Durante uma revisão de substâncias psicoativas, sentidos e visão, qual afirmação apresenta corretamente uma ideia fundamental?",
+      "stem": "Registro de oficina sensorial, exemplo escolar de 1 out. 2026. Durante uma oficina, uma estudante encostou o dedo em uma superfície fria e afastou a mão. Em outra mesa, colegas ouviram um tom breve e localizaram a caixa de som. A turma registrou o estímulo percebido e a parte do corpo que primeiro entrou em contato com ele. Depois, os grupos compararam as anotações de temperatura e som para discutir como as informações chegam ao sistema nervoso.\n\nQual função dos receptores sensoriais é ilustrada pelos registros?",
       "options": [
         {
           "key": "A",
-          "text": "O cérebro recebe imagens prontas projetadas fora do sistema nervoso."
+          "text": "Detectar apenas estímulos que entram em contato direto com a pele."
         },
         {
           "key": "B",
-          "text": "Toda substância psicoativa produz exatamente o mesmo efeito em qualquer pessoa."
+          "text": "Detectar estímulos e enviar comandos diretamente aos músculos, sem passar pelo sistema nervoso."
         },
         {
           "key": "C",
-          "text": "Receptores sensoriais detectam estímulos como luz, som, substâncias químicas, pressão e temperatura."
+          "text": "Identificar conscientemente o estímulo antes de iniciar qualquer sinal nervoso."
         },
         {
           "key": "D",
-          "text": "Órgãos dos sentidos funcionam sem participação do sistema nervoso."
+          "text": "Detectar temperatura e som e iniciar sinais que seguem para o sistema nervoso."
         },
         {
           "key": "E",
-          "text": "Miopia e hipermetropia são exatamente o mesmo problema óptico."
+          "text": "Registrar o estímulo no órgão sensorial, sem convertê-lo em sinais nervosos."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A alternativa C é a correta: Receptores sensoriais detectam estímulos como luz, som, substâncias químicas, pressão e temperatura.",
-      "difficulty": "FOUNDATION",
+      "correctOption": "D",
+      "explanation": "A superfície fria e o tom são estímulos de naturezas diferentes detectados por receptores sensoriais. Os receptores iniciam sinais para o sistema nervoso; não enviam imagens prontas ao cérebro.",
+      "difficulty": "DIRECT",
       "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
         "CIE-31-CON-01"
       ],
-      "targetedError": "core_concept",
+      "targetedError": "sensory_receptor_function",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-31-Q002",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Um estudante precisa explicar substâncias psicoativas, sentidos e visão sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+      "stem": "Notas de conversa de orientação, estudo de 2 out. 2026. Em uma conversa de orientação, Lara contou que teve dificuldade para se concentrar após uma noite mal dormida e uma situação estressante. Caio descreveu sonolência em outro dia, após usar uma medicação prescrita. A equipe não registrou doses, horários completos ou outros fatores de saúde e pediu que ninguém atribuísse os dois relatos a uma causa idêntica.\n\nQue informação ajudaria a interpretar essas experiências com mais cuidado?",
       "options": [
         {
           "key": "A",
-          "text": "Toda substância psicoativa produz exatamente o mesmo efeito em qualquer pessoa."
+          "text": "Considerar dose, frequência, contexto e características individuais em cada relato."
         },
         {
           "key": "B",
-          "text": "O cérebro recebe imagens prontas projetadas fora do sistema nervoso."
+          "text": "Comparar o horário dos relatos antes de reunir informações sobre as situações."
         },
         {
           "key": "C",
-          "text": "Órgãos dos sentidos funcionam sem participação do sistema nervoso."
+          "text": "Relacionar a dificuldade de concentração ao sono e a sonolência à medicação, sem investigar outros fatores."
         },
         {
           "key": "D",
-          "text": "Miopia e hipermetropia são exatamente o mesmo problema óptico."
+          "text": "Usar a resposta observada como principal medida para comparar os efeitos relatados."
         },
         {
           "key": "E",
-          "text": "Na visão, córnea e cristalino ajudam a focalizar luz na retina, onde fotorreceptores transformam estímulo luminoso em sinais nervosos."
+          "text": "Considerar o motivo do uso da medicação, deixando de lado dose e frequência."
         }
       ],
-      "correctOption": "E",
-      "explanation": "A alternativa E é a correta: Na visão, córnea e cristalino ajudam a focalizar luz na retina, onde fotorreceptores transformam estímulo luminoso em sinais nervosos.",
-      "difficulty": "DIRECT",
-      "cognitiveOperation": "UNDERSTAND",
+      "correctOption": "A",
+      "explanation": "O relatório não identifica a substância nem reúne dose, frequência e contexto. Esses fatores e características individuais influenciam os efeitos; uma resposta observada não explica sozinha todas as experiências.",
+      "difficulty": "APPLIED",
+      "cognitiveOperation": "EVALUATE",
       "conceptIds": [
-        "CIE-31-CON-02"
+        "CIE-31-CON-05",
+        "CIE-31-CON-06"
       ],
-      "targetedError": "concept_discrimination",
+      "targetedError": "psychoactive_effects_as_uniform",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-31-Q003",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em substâncias psicoativas, sentidos e visão?",
+      "stem": "Esquema de óptica para aula, atividade de 3 out. 2026. Em uma aula de óptica, os estudantes acompanharam o caminho de um feixe de luz que entrava no olho de uma pessoa olhando para uma placa colorida. O esquema do professor mostrava a passagem pela córnea e pelo cristalino antes de alcançar uma camada no fundo do olho. A turma anotou que células sensíveis à luz transformavam o estímulo em sinais nervosos, que seguiriam por vias até o sistema nervoso central.\n\nEm qual estrutura os fotorreceptores citados no esquema estão localizados?",
       "options": [
         {
           "key": "A",
-          "text": "Órgãos dos sentidos funcionam sem participação do sistema nervoso."
+          "text": "Na córnea, onde células sensíveis à luz identificam as cores antes da focalização."
         },
         {
           "key": "B",
-          "text": "Toda substância psicoativa produz exatamente o mesmo efeito em qualquer pessoa."
+          "text": "Na retina, onde células especializadas iniciam sinais nervosos a partir da luz."
         },
         {
           "key": "C",
-          "text": "O cérebro recebe imagens prontas projetadas fora do sistema nervoso."
+          "text": "No cristalino, onde a imagem focalizada é convertida em sinais para o cérebro."
         },
         {
           "key": "D",
-          "text": "Miopia e hipermetropia são exatamente o mesmo problema óptico."
+          "text": "Na íris, que regula a entrada de luz e transforma cores em sinais nervosos."
         },
         {
           "key": "E",
-          "text": "Miopia costuma envolver formação da imagem antes da retina para objetos distantes e é corrigida com lentes divergentes; hipermetropia pode formar imagem atrás da retina e é corrigida com lentes convergentes em casos típicos."
+          "text": "No nervo óptico, que contém as células que captam a luz antes de ela alcançar o fundo do olho."
         }
       ],
-      "correctOption": "E",
-      "explanation": "A alternativa E é a correta: Miopia costuma envolver formação da imagem antes da retina para objetos distantes e é corrigida com lentes divergentes; hipermetropia pode formar imagem atrás da retina e é corrigida com lentes convergentes em casos típicos.",
+      "correctOption": "B",
+      "explanation": "O esquema coloca os fotorreceptores na camada do fundo do olho alcançada pela luz após córnea e cristalino: a retina. O cristalino ajuda a focalizar, mas não interpreta a imagem.",
       "difficulty": "DIRECT",
-      "cognitiveOperation": "ANALYZE",
+      "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
-        "CIE-31-CON-03"
+        "CIE-31-CON-02"
       ],
-      "targetedError": "relationship",
+      "targetedError": "retina_and_focusing_structures",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-31-Q004",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Uma pessoa vê bem de perto, mas objetos distantes ficam desfocados porque a imagem tende a se formar antes da retina. Qual condição é compatível com a descrição?",
+      "stem": "Diagrama de consulta simulada, exercício de 4 out. 2026. Uma aluna via com nitidez o quadro próximo à carteira, mas as letras projetadas no fundo da sala ficavam desfocadas. Em uma consulta simulada, o diagrama óptico indicou que os raios de um objeto distante convergiam antes de alcançar a retina. A ficha da aula comparou diferentes lentes corretivas e pediu que a turma identificasse o tipo que desloca o foco na direção adequada para a visão de longe.\n\nQual alternativa apresenta a correção e a justificativa óptica compatíveis com a situação descrita?",
       "options": [
         {
           "key": "A",
-          "text": "Hipermetropia exclusivamente."
+          "text": "Lente convergente, pois aumentaria a convergência dos raios antes de chegarem à retina."
         },
         {
           "key": "B",
-          "text": "Surdez."
+          "text": "Lente plana, pois a nitidez de perto indica que basta aumentar a luminosidade."
         },
         {
           "key": "C",
-          "text": "Daltonismo como explicação para foco."
+          "text": "Lente divergente, que espalha um pouco os raios e desloca para trás o foco formado antes da retina."
         },
         {
           "key": "D",
-          "text": "Miopia."
+          "text": "Lente cilíndrica, pois a distância do quadro altera a direção dos raios em um dos eixos."
         },
         {
           "key": "E",
-          "text": "Astigmatismo obrigatoriamente, sem outras possibilidades."
+          "text": "Lente convergente, que aproxima da frente da retina o foco dos objetos distantes."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Miopia.",
+      "correctOption": "C",
+      "explanation": "O diagrama descreve foco antes da retina para objetos distantes, compatível com miopia. Lentes divergentes ajudam a corrigir esse foco; uma lente convergente não corresponde ao problema apresentado.",
       "difficulty": "APPLIED",
-      "cognitiveOperation": "APPLY",
+      "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "CIE-31-CON-01",
-        "CIE-31-CON-02",
         "CIE-31-CON-03"
       ],
-      "targetedError": "application",
+      "targetedError": "myopia_lens_direction",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-31-Q005",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Analise as afirmações a seguir:\nI. Receptores sensoriais detectam estímulos como luz, som, substâncias químicas, pressão e temperatura.\nII. O cérebro recebe imagens prontas projetadas fora do sistema nervoso.\nIII. Miopia costuma envolver formação da imagem antes da retina para objetos distantes e é corrigida com lentes divergentes; hipermetropia pode formar imagem atrás da retina e é corrigida com lentes convergentes em casos típicos.\nIV. Miopia e hipermetropia são exatamente o mesmo problema óptico.\nAssinale a alternativa CORRETA.",
+      "stem": "Ficha de avaliação visual, exemplo de 5 out. 2026. Em outra ficha de óptica, uma pessoa lia com facilidade um texto distante, mas precisava afastar um livro para enxergar as letras de perto. O desenho da equipe representava a imagem tendendo a se formar atrás da retina quando o objeto estava próximo. A aula apresentou lentes corretivas e pediu que os estudantes relacionassem o sentido do foco com a condição descrita, sem fazer um diagnóstico a partir do relato.\n\nQual alternativa relaciona corretamente a condição e o tipo de lente?",
       "options": [
         {
           "key": "A",
-          "text": "Apenas I está correta."
+          "text": "Miopia com lente divergente, pois o foco de objetos próximos tende a ficar atrás da retina."
         },
         {
           "key": "B",
-          "text": "Apenas I e III estão corretas."
+          "text": "Miopia com lente convergente, pois o foco de objetos próximos tende a ficar atrás da retina."
         },
         {
           "key": "C",
-          "text": "Apenas II e IV estão corretas."
+          "text": "Hipermetropia com lente divergente, que pode deslocar para frente o foco de objetos próximos."
         },
         {
           "key": "D",
-          "text": "Apenas I, II e III estão corretas."
+          "text": "Astigmatismo com lente plana, pois afastar o livro identifica a curvatura irregular da córnea."
         },
         {
           "key": "E",
-          "text": "Todas estão corretas."
+          "text": "Hipermetropia com lente convergente, compatível com o foco atrás da retina para objetos próximos."
         }
       ],
-      "correctOption": "B",
-      "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-      "difficulty": "IFSC",
+      "correctOption": "E",
+      "explanation": "O relato aponta dificuldade para perto e foco atrás da retina, compatíveis com hipermetropia em exemplos típicos. A lente convergente ajuda a trazer o foco para a retina; miopia envolve uma situação distinta.",
+      "difficulty": "APPLIED",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "CIE-31-CON-01",
-        "CIE-31-CON-02",
-        "CIE-31-CON-03",
-        "CIE-31-CON-04"
+        "CIE-31-CON-03"
       ],
-      "targetedError": "multi_statement_reasoning",
+      "targetedError": "hyperopia_lens_direction",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-31-Q006",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Ao transferir o que foi estudado sobre substâncias psicoativas, sentidos e visão para uma situação nova, qual conclusão permanece válida?",
+      "stem": "Caderno de ensaio musical, situação de 6 out. 2026. Durante um ensaio musical, uma estudante ouviu um tambor e virou a cabeça na direção do som. Um microfone registrou as vibrações produzidas pelo instrumento e o esquema do ouvido separou estruturas externas, médias e internas. A turma comparou o registro físico do som com a resposta da estudante e procurou explicar como um estímulo do ambiente pode ser percebido.\n\nQual processo participa da transformação do som em informação para o sistema nervoso?",
       "options": [
         {
           "key": "A",
-          "text": "O cérebro recebe imagens prontas projetadas fora do sistema nervoso."
+          "text": "O tímpano inicia as vibrações do tambor antes de o som alcançar o ouvido."
         },
         {
           "key": "B",
-          "text": "Órgãos dos sentidos funcionam sem participação do sistema nervoso."
+          "text": "O ouvido externo focaliza as ondas sonoras na retina para reconhecer o instrumento."
         },
         {
           "key": "C",
-          "text": "Substâncias psicoativas alteram atividade do sistema nervoso e podem modificar percepção, humor, coordenação, atenção e comportamento."
+          "text": "A cóclea transforma sinais nervosos em vibrações que percorrem o canal auditivo."
         },
         {
           "key": "D",
-          "text": "Miopia e hipermetropia são exatamente o mesmo problema óptico."
+          "text": "Estruturas sensoriais do ouvido interno convertem vibrações em sinais nervosos."
         },
         {
           "key": "E",
-          "text": "Toda substância psicoativa produz exatamente o mesmo efeito em qualquer pessoa."
+          "text": "O pavilhão da orelha interpreta o padrão musical antes de o som chegar ao ouvido interno."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A alternativa C é a correta: Substâncias psicoativas alteram atividade do sistema nervoso e podem modificar percepção, humor, coordenação, atenção e comportamento.",
-      "difficulty": "APPLIED",
-      "cognitiveOperation": "TRANSFER",
+      "correctOption": "D",
+      "explanation": "O esquema localiza no ouvido interno células sensoriais que convertem vibrações em sinais nervosos. A interpretação do som envolve o sistema nervoso, mas não ocorre no pavilhão da orelha.",
+      "difficulty": "DIRECT",
+      "cognitiveOperation": "UNDERSTAND",
       "conceptIds": [
-        "CIE-31-CON-05"
+        "CIE-31-CON-04"
       ],
-      "targetedError": "transfer",
+      "targetedError": "auditory_transduction",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-31-Q007",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre substâncias psicoativas, sentidos e visão?",
+      "stem": "Relato de percepção visual, experimento de 7 out. 2026. Quatro estudantes observaram por alguns segundos uma figura com linhas sobrepostas e depois descreveram detalhes diferentes. A professora repetiu a atividade com outra imagem e pediu que cada pessoa anotasse primeiro o que percebeu, antes de conversar com o grupo. As respostas variaram, embora a figura estivesse exposta sob a mesma iluminação e pelo mesmo tempo para todos os participantes.\n\nQual sequência explica melhor como a informação visual participa dessas respostas?",
       "options": [
         {
           "key": "A",
-          "text": "O cérebro recebe imagens prontas projetadas fora do sistema nervoso."
+          "text": "A luz alcança fotorreceptores, que iniciam sinais processados por vias do sistema nervoso."
         },
         {
           "key": "B",
-          "text": "Na visão, córnea e cristalino ajudam a focalizar luz na retina, onde fotorreceptores transformam estímulo luminoso em sinais nervosos."
+          "text": "A luz forma uma imagem pronta no cérebro, que depois a encaminha aos receptores da retina."
         },
         {
           "key": "C",
-          "text": "Audição envolve vibrações que são convertidas em sinais nervosos no ouvido interno."
+          "text": "A retina interpreta a figura e envia aos olhos a decisão sobre o que foi observado."
         },
         {
           "key": "D",
-          "text": "Receptores sensoriais detectam estímulos como luz, som, substâncias químicas, pressão e temperatura."
+          "text": "A luz ativa os músculos das mãos, que transmitem a figura ao sistema nervoso."
         },
         {
           "key": "E",
-          "text": "Miopia costuma envolver formação da imagem antes da retina para objetos distantes e é corrigida com lentes divergentes; hipermetropia pode formar imagem atrás da retina e é corrigida com lentes convergentes em casos típicos."
+          "text": "A córnea registra a interpretação visual para que o cérebro a compare entre estudantes."
         }
       ],
       "correctOption": "A",
-      "explanation": "A alternativa A é a incorreta: O cérebro recebe imagens prontas projetadas fora do sistema nervoso. As demais expressam relações compatíveis com os conceitos da aula.",
-      "difficulty": "DIRECT",
+      "explanation": "A atividade separa estímulo visual, detecção por receptores e processamento nervoso. A retina transforma luz em sinais, mas a interpretação não é uma fotografia pronta enviada ao cérebro.",
+      "difficulty": "APPLIED",
       "cognitiveOperation": "ANALYZE",
       "conceptIds": [
-        "CIE-31-CON-01"
+        "CIE-31-CON-01",
+        "CIE-31-CON-02"
       ],
-      "targetedError": "misconception_identification",
+      "targetedError": "perception_as_ready_image",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     },
     {
       "id": "CIE-31-Q008",
       "type": "MULTIPLE_CHOICE_SINGLE",
-      "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em substâncias psicoativas, sentidos e visão?",
+      "stem": "Cartaz de campanha escolar, exemplo de 8 out. 2026. Em uma conversa de saúde, duas pessoas descreveram mudanças de atenção após situações diferentes. Uma havia dormido pouco e relatou estresse no dia; a outra comentou o uso de um medicamento prescrito em período de doença. A equipe não comparou quantidade, frequência, idade ou interações entre os casos. Os estudantes precisavam evitar rótulos e decidir quais perguntas seriam úteis antes de interpretar os relatos.\n\nQual abordagem é mais cuidadosa diante das informações disponíveis?",
       "options": [
         {
           "key": "A",
-          "text": "Toda substância psicoativa produz exatamente o mesmo efeito em qualquer pessoa."
+          "text": "Comparar os casos pela aparência das pessoas antes de perguntar sobre o contexto."
         },
         {
           "key": "B",
-          "text": "Efeitos e riscos dependem da substância, dose, frequência, contexto, idade, interações e características individuais; classificações simplistas não substituem informação de saúde."
+          "text": "Tratar respostas parecidas como sinal de que os fatores envolvidos também foram iguais."
         },
         {
           "key": "C",
-          "text": "O cérebro recebe imagens prontas projetadas fora do sistema nervoso."
+          "text": "Considerar condições individuais e contexto e procurar orientação de saúde confiável."
         },
         {
           "key": "D",
-          "text": "Órgãos dos sentidos funcionam sem participação do sistema nervoso."
+          "text": "Investigar primeiro a medicação e deixar sono e estresse fora da análise do outro relato."
         },
         {
           "key": "E",
-          "text": "Miopia e hipermetropia são exatamente o mesmo problema óptico."
+          "text": "Usar a coordenação motora como medida principal para interpretar mudanças de atenção."
         }
       ],
-      "correctOption": "B",
-      "explanation": "A alternativa B é a correta: Efeitos e riscos dependem da substância, dose, frequência, contexto, idade, interações e características individuais; classificações simplistas não substituem informação de saúde.",
+      "correctOption": "C",
+      "explanation": "O material enumera substância, dose, frequência, idade, contexto e interações como fatores relevantes. Uma aparência ou mudança isolada não identifica a causa nem substitui informação confiável de saúde.",
       "difficulty": "IFSC",
       "cognitiveOperation": "EVALUATE",
       "conceptIds": [
+        "CIE-31-CON-05",
         "CIE-31-CON-06"
       ],
-      "targetedError": "synthesis",
+      "targetedError": "psychoactive_risk_generalization",
       "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
     }
   ]

@@ -5,300 +5,378 @@
     {
       "id": "POR-05-Q01",
       "lessonId": "POR-05",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Convenções da escrita: ortografia, acentuação e pontuação com sentido em uso real da língua?",
+      "stem": "Qual par de formas corrige a faixa de acordo com as atividades descritas?",
       "options": [
         {
           "id": "A",
-          "text": "Toda palavra pronunciada com força recebe acento."
+          "text": "Anunciar o conserto da banda e o concerto dos violões durante a oficina.",
+          "targetsError": "conceptual",
+          "rationale": "A banda fará uma apresentação, e a oficina fará reparos nos violões; as formas ficam trocadas."
         },
         {
           "id": "B",
-          "text": "Reticências sempre significam tristeza."
+          "text": "Anunciar o concerto da banda e o conserto de violões durante a oficina."
         },
         {
           "id": "C",
-          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+          "text": "Usar “concerto” para os reparos dos violões e “conserto” para a apresentação da banda.",
+          "targetsError": "attention",
+          "rationale": "A opção mantém a troca entre a forma da apresentação e a forma do reparo."
         },
         {
           "id": "D",
-          "text": "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável."
+          "text": "Escrever “conserto” nas duas linhas, pois ambas as atividades envolvem instrumentos musicais.",
+          "targetsError": "interpretation",
+          "rationale": "A oficina envolve reparos, mas a apresentação da banda é um concerto."
         },
         {
           "id": "E",
-          "text": "Usa-se vírgula sempre que há pausa na fala."
+          "text": "Usar “concerto” para a oficina de reparos e “conserto” para a banda que tocará no pátio.",
+          "targetsError": "conceptual",
+          "rationale": "A programação associa a oficina à manutenção e a banda à apresentação musical."
         }
       ],
-      "correctOption": "D",
-      "explanation": "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável.",
-      "difficulty": "foundation",
-      "cognitiveOperation": "recognize",
+      "correctOption": "B",
+      "explanation": "A programação separa a apresentação musical dos reparos feitos na oficina. “Concerto” nomeia a apresentação da banda; “conserto” cabe ao trabalho de manutenção dos violões. A primeira versão da faixa trocou justamente essas duas palavras.",
+      "difficulty": "direct",
+      "cognitiveOperation": "apply",
       "concepts": [
         "POR-05-C01"
       ],
-      "targetedError": "Usa-se vírgula sempre que há pausa na fala.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Trocar as grafias de concerto musical e conserto de instrumento.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "O grêmio preparou uma faixa para a manhã cultural. Na primeira versão, anunciou “conserto de violões no pátio” ao lado da foto de uma banda afinando instrumentos; em outra linha, prometeu um “concerto das cadeiras” para quem trouxesse móveis quebrados. A professora pediu que a equipe revisasse as duas palavras antes de imprimir. A programação confirma que a banda tocará às dez horas e que uma oficina fará reparos em instrumentos durante a tarde. Não haverá serviço de manutenção de móveis."
     },
     {
       "id": "POR-05-Q02",
       "lessonId": "POR-05",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Convenções da escrita: ortografia, acentuação e pontuação com sentido, qual princípio deve orientar a análise?",
+      "stem": "Que papel tem o acento em “pôde” na primeira frase?",
       "options": [
         {
           "id": "A",
-          "text": "A acentuação gráfica segue regras convencionais e não corresponde simplesmente à intensidade percebida na fala."
+          "text": "Indica que o eletricista recebeu uma ordem para testar o painel, em vez de relatar uma possibilidade passada.",
+          "targetsError": "interpretation",
+          "rationale": "A frase registra uma possibilidade no passado; não formula uma ordem."
         },
         {
           "id": "B",
-          "text": "Reticências sempre significam tristeza."
+          "text": "Distingue a medição já concluída na terça da medição prevista para quarta.",
+          "targetsError": "attention",
+          "rationale": "O cabeçalho indica que a medição está prevista para quarta-feira."
         },
         {
           "id": "C",
-          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+          "text": "Mostra que “pôde” está no plural para incluir os demais integrantes da equipe.",
+          "targetsError": "conceptual",
+          "rationale": "O sujeito é “o eletricista”, no singular; o acento não marca plural."
         },
         {
           "id": "D",
-          "text": "Usa-se vírgula sempre que há pausa na fala."
+          "text": "Distingue a possibilidade passada de testar o painel da possibilidade presente de medir a carga."
         },
         {
           "id": "E",
-          "text": "Toda palavra pronunciada com força recebe acento."
+          "text": "Indica que o eletricista talvez consiga testar o painel no futuro, sem situar a ação no passado.",
+          "targetsError": "conceptual",
+          "rationale": "A frase usa “pôde” para a possibilidade passada, em contraste com “pode” no presente."
         }
       ],
-      "correctOption": "A",
-      "explanation": "A acentuação gráfica segue regras convencionais e não corresponde simplesmente à intensidade percebida na fala.",
+      "correctOption": "D",
+      "explanation": "O cabeçalho situa o teste na terça e a medição na quarta; “pôde” marca a possibilidade realizada no passado, enquanto “pode” se refere ao presente. A leitura de que a medição já ocorreu ignora a data futura indicada no relatório.",
       "difficulty": "direct",
-      "cognitiveOperation": "understand",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-05-C02"
       ],
-      "targetedError": "Toda palavra pronunciada com força recebe acento.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler pôde e pode como formas sem distinção temporal no contexto do relatório.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "No relatório da oficina, a monitora registrou: “Ontem, o eletricista pôde testar o painel; hoje, pode medir a carga com o equipamento novo”. A equipe comparou a anotação com um bilhete antigo, no qual alguém escrevera “O eletricista pode testar o painel ontem”. A data no cabeçalho confirma que a primeira ação aconteceu na terça-feira e que a medição está prevista para quarta. O responsável revisou o texto para separar o que já foi possível fazer do que ainda está programado."
     },
     {
       "id": "POR-05-Q03",
       "lessonId": "POR-05",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Convenções da escrita: ortografia, acentuação e pontuação com sentido?",
+      "stem": "Que diferença de sentido a vírgula cria entre os dois rascunhos?",
       "options": [
         {
           "id": "A",
-          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+          "text": "Na segunda versão, “não” responde a uma fala anterior e “espere” orienta a pessoa a aguardar."
         },
         {
           "id": "B",
-          "text": "Usa-se vírgula sempre que há pausa na fala."
+          "text": "A primeira versão pede que a equipe espere no portão, e a segunda cancela essa espera.",
+          "targetsError": "interpretation",
+          "rationale": "O comando da primeira é não esperar; na segunda, a pausa separa a resposta negativa do pedido para aguardar."
         },
         {
           "id": "C",
-          "text": "A vírgula organiza estruturas sintáticas e não deve ser explicada apenas como pausa para respirar."
+          "text": "A vírgula indica que o portão fica fechado durante a saída de campo.",
+          "targetsError": "interpretation",
+          "rationale": "Os rascunhos não informam o estado do portão; a mudança ocorre na orientação verbal."
         },
         {
           "id": "D",
-          "text": "Toda palavra pronunciada com força recebe acento."
+          "text": "A segunda versão transforma “equipe” em quem dá a instrução para esperar.",
+          "targetsError": "conceptual",
+          "rationale": "“Equipe” continua como complemento relacionado a “espere”; o sujeito não é alterado dessa forma."
         },
         {
           "id": "E",
-          "text": "Reticências sempre significam tristeza."
+          "text": "A primeira versão anuncia que a van chegará antes das mensagens.",
+          "targetsError": "attention",
+          "rationale": "A ordem de chegada da van e das mensagens não depende da vírgula nos rascunhos."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A vírgula organiza estruturas sintáticas e não deve ser explicada apenas como pausa para respirar.",
+      "correctOption": "A",
+      "explanation": "Sem vírgula, “não espere” forma uma orientação negativa. Com a pausa, “Não” pode responder a algo dito antes, e “espere” passa a pedir que a pessoa aguarde. A hipótese sobre a van não aparece em nenhuma das duas construções.",
       "difficulty": "applied",
-      "cognitiveOperation": "discriminate",
+      "cognitiveOperation": "analyze",
       "concepts": [
         "POR-05-C03"
       ],
-      "targetedError": "Reticências sempre significam tristeza.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler as duas versões como a mesma ordem negativa apesar da pausa marcada.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Antes da saída de campo, a professora deixou dois rascunhos no quadro. O primeiro dizia “Não espere a equipe no portão”; no outro, ela respondia a uma família: “Não, espere a equipe no portão”. A família tinha perguntado pelo celular se deveria sair sem o grupo, e a professora orientou que aguardasse a van. Um estudante perguntou por que uma vírgula tão pequena mudava a orientação. A turma precisava escolher qual versão usar no aviso final, pois havia pessoas chegando em horários diferentes."
     },
     {
       "id": "POR-05-Q04",
       "lessonId": "POR-05",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Convenções da escrita: ortografia, acentuação e pontuação com sentido?",
+      "stem": "O que os dois-pontos anunciam nessa frase da ata?",
       "options": [
         {
           "id": "A",
-          "text": "Usa-se vírgula sempre que há pausa na fala."
+          "text": "Uma explicação da secretária sobre por que a equipe escolheu aquele salão.",
+          "targetsError": "interpretation",
+          "rationale": "Depois dos dois-pontos aparece a relação de materiais, não o motivo da escolha do salão."
         },
         {
           "id": "B",
-          "text": "Toda palavra pronunciada com força recebe acento."
+          "text": "Uma consequência da confirmação da data: a exposição receberá oito painéis e duas mesas.",
+          "targetsError": "interpretation",
+          "rationale": "Os itens listados são materiais separados; a frase não os apresenta como consequência da data."
         },
         {
           "id": "C",
-          "text": "Reticências sempre significam tristeza."
+          "text": "Um esclarecimento de que os objetos foram separados para uma atividade no salão.",
+          "targetsError": "attention",
+          "rationale": "A frase apresenta os objetos em enumeração, sem explicar uma dúvida sobre sua separação."
         },
         {
           "id": "D",
-          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+          "text": "Uma síntese das decisões tomadas pelo conselho durante a reunião.",
+          "targetsError": "interpretation",
+          "rationale": "Os dois-pontos introduzem os materiais separados, não um resumo de todas as decisões."
         },
         {
           "id": "E",
-          "text": "Dois-pontos podem anunciar explicação, enumeração, fala ou consequência explicitada."
+          "text": "A enumeração dos objetos separados para montar a exposição no salão."
         }
       ],
       "correctOption": "E",
-      "explanation": "Dois-pontos podem anunciar explicação, enumeração, fala ou consequência explicitada.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "apply",
+      "explanation": "Depois dos dois-pontos vêm painéis, mesas e projetor, itens separados para o salão. A referência à professora aparece em outra frase e não é uma fala anunciada por esse sinal.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
       "concepts": [
         "POR-05-C04"
       ],
-      "targetedError": "A ortografia pode ser decidida apenas pela pronúncia.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tratar a enumeração de materiais como fala ou explicação de outra decisão.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "A ata do conselho de classe registra os preparativos para a exposição de trabalhos. Depois de confirmar a data, a secretária escreveu: “Para o salão, a equipe separou: oito painéis, duas mesas e um projetor”. Em seguida, anotou que a professora de artes entregaria as etiquetas na sexta-feira e que os estudantes fariam a montagem na manhã seguinte. A lista ajudou a direção a conferir o material antes de abrir as portas às famílias. O restante da ata descreve as decisões tomadas na reunião."
     },
     {
       "id": "POR-05-Q05",
       "lessonId": "POR-05",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Convenções da escrita: ortografia, acentuação e pontuação com sentido?",
+      "stem": "Que efeito as aspas produzem em “tranquilo” nesse trecho?",
       "options": [
         {
           "id": "A",
-          "text": "Toda palavra pronunciada com força recebe acento."
+          "text": "Registram a fala exata do convidado para comprovar que ele organizou a feira.",
+          "targetsError": "interpretation",
+          "rationale": "O texto esclarece que a palavra não é apresentada como uma fala pronunciada no evento."
         },
         {
           "id": "B",
-          "text": "Reticências, exclamação, interrogação, aspas e travessões podem produzir hesitação, ênfase, dúvida, distanciamento ou marcação de voz."
+          "text": "Indicam o título de um livro que não aparece no restante da resenha.",
+          "targetsError": "attention",
+          "rationale": "A palavra descreve o auditório e não é identificada como título de obra."
         },
         {
           "id": "C",
-          "text": "Reticências sempre significam tristeza."
+          "text": "Criam distanciamento da descrição e sugerem que a tranquilidade está sendo questionada."
         },
         {
           "id": "D",
-          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+          "text": "Mostram que a estudante esqueceu de terminar uma citação direta.",
+          "targetsError": "conceptual",
+          "rationale": "A frase completa envolve a palavra e prossegue com o comentário da resenhista."
         },
         {
           "id": "E",
-          "text": "Usa-se vírgula sempre que há pausa na fala."
+          "text": "Transformam a palavra em instrução para que os visitantes falem baixo.",
+          "targetsError": "interpretation",
+          "rationale": "A resenha avalia a descrição do espaço e não dá uma orientação ao público."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Reticências, exclamação, interrogação, aspas e travessões podem produzir hesitação, ênfase, dúvida, distanciamento ou marcação de voz.",
+      "correctOption": "C",
+      "explanation": "As aspas afastam a resenhista da descrição “tranquilo”, que entra em tensão com microfones, filas e avisos de mudança. A palavra não funciona como citação literal, pois o próprio trecho informa que não reproduz uma fala do convidado.",
       "difficulty": "applied",
-      "cognitiveOperation": "evaluate",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-05-C05"
       ],
-      "targetedError": "Usa-se vírgula sempre que há pausa na fala.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir o uso avaliativo das aspas com a transcrição de uma fala do convidado.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Na resenha da feira de livros, uma estudante escreveu que o autor convidado chamou o auditório de “tranquilo”. No parágrafo seguinte, descreveu a conversa interrompida por três microfones, duas filas no corredor e avisos de mudança de sala. O texto mantém a palavra entre aspas e comenta que a escolha dela “pede uma segunda leitura”. A estudante não transcreve uma fala completa do convidado nem indica que ele tenha pronunciado aquela palavra durante o evento; ela avalia o modo como o espaço foi apresentado."
     },
     {
       "id": "POR-05-Q06",
       "lessonId": "POR-05",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Convenções da escrita: ortografia, acentuação e pontuação com sentido, qual análise está correta?",
+      "stem": "Que leitura das reticências combina com a cena?",
       "options": [
         {
           "id": "A",
-          "text": "Reticências sempre significam tristeza."
+          "text": "Indicam que Joana abandonou o assunto antes de explicar o que faria com o cartaz.",
+          "targetsError": "interpretation",
+          "rationale": "Joana retoma a fala e explica a solução encontrada."
         },
         {
           "id": "B",
-          "text": "A ortografia pode ser decidida apenas pela pronúncia."
+          "text": "Elas registram a suspensão e a hesitação de Joana antes de ela continuar."
         },
         {
           "id": "C",
-          "text": "Usa-se vírgula sempre que há pausa na fala."
+          "text": "Marcam uma informação retirada pela repórter e retomada em outra parte da entrevista.",
+          "targetsError": "attention",
+          "rationale": "O relato associa a pausa à hesitação de Joana, sem indicar trecho suprimido."
         },
         {
           "id": "D",
-          "text": "Mudanças de pontuação podem alterar relação sintática e sentido."
+          "text": "Sinalizam que Joana decidiu não contar como resolveu o problema.",
+          "targetsError": "interpretation",
+          "rationale": "Ela continua a fala e conta que encontrou outro modo de prender o cartaz."
         },
         {
           "id": "E",
-          "text": "Toda palavra pronunciada com força recebe acento."
+          "text": "Encerram a fala de Joana com uma dúvida que permanece sem resposta.",
+          "targetsError": "attention",
+          "rationale": "A estudante retoma a fala e apresenta uma solução."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Mudanças de pontuação podem alterar relação sintática e sentido.",
-      "difficulty": "ifsc",
+      "correctOption": "B",
+      "explanation": "A pausa ocorre no meio da fala; depois dela, Joana respira e continua até explicar sua solução. O contexto não indica cancelamento ou despedida, por isso as reticências marcam uma suspensão momentânea.",
+      "difficulty": "direct",
       "cognitiveOperation": "analyze",
       "concepts": [
         "POR-05-C06"
       ],
-      "targetedError": "Toda palavra pronunciada com força recebe acento.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Atribuir às reticências um encerramento definitivo apesar da continuação do relato.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "No fim da entrevista para o jornal da escola, Joana contou que quase desistiu de apresentar seu experimento. Ela olhou para a mesa, começou a dizer “eu pensei que talvez...” e fez uma pausa. Depois respirou, retomou a frase e explicou que encontrou outro modo de prender o cartaz. A repórter registrou as reticências nesse ponto e encerrou o parágrafo com a solução encontrada. O relato não descreve uma perda nem uma despedida; mostra uma fala que demora a se completar antes de seguir."
     },
     {
       "id": "POR-05-Q07",
       "lessonId": "POR-05",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Usa-se vírgula sempre que há pausa na fala.”. Qual é a melhor correção?",
+      "stem": "Qual função tem a vírgula depois de “Lia” no bilhete?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "Separa o nome “Lia” do pedido como se fossem duas ações realizadas pela estudante.",
+          "targetsError": "conceptual",
+          "rationale": "O bilhete traz um vocativo seguido de um pedido, não duas ações realizadas."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Isola “partituras” como a pessoa a quem o pedido é dirigido.",
+          "targetsError": "attention",
+          "rationale": "A frase dirige o pedido a Lia; “partituras” é o objeto a ser guardado."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "Separa o sujeito “Lia” do verbo “guarde” para marcar uma pausa na leitura.",
+          "targetsError": "interpretation",
+          "rationale": "A vírgula depois de Lia isola o vocativo, não separa sujeito e verbo."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "Isola o nome da pessoa a quem o pedido é dirigido."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Indica que “Lia” é o nome da pasta em que as partituras devem ser guardadas.",
+          "targetsError": "interpretation",
+          "rationale": "O texto identifica Lia como estudante e a pasta como azul."
         }
       ],
-      "correctOption": "A",
-      "explanation": "A ortografia padroniza a forma escrita das palavras; dúvidas devem ser verificadas em referência lexical confiável.",
-      "difficulty": "applied",
-      "cognitiveOperation": "diagnose_error",
+      "correctOption": "D",
+      "explanation": "O nome chama diretamente a estudante antes do pedido “guarde as partituras”. A leitura da pasta como “Lia” falha porque o contexto identifica Lia como pessoa e a pasta como azul.",
+      "difficulty": "direct",
+      "cognitiveOperation": "understand",
       "concepts": [
-        "POR-05-C01"
+        "POR-05-C03"
       ],
-      "targetedError": "Usa-se vírgula sempre que há pausa na fala.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler o nome usado para chamar a estudante como parte da instrução sobre as partituras.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Uma mensagem no mural da sala de música dizia: “Lia, guarde as partituras na pasta azul”. Na primeira cópia, a vírgula depois do nome ficou apagada. Dois colegas leram a frase em voz alta: um entendeu que Lia era chamada antes do pedido; o outro achou que “Lia guarde” nomeava uma peça do repertório. A professora recolocou a pontuação e explicou que o bilhete fora escrito para uma estudante chamada Lia, que deveria organizar as folhas depois do ensaio. A pasta azul estava sobre o piano."
     },
     {
       "id": "POR-05-Q08",
       "lessonId": "POR-05",
+      "version": 2,
       "type": "MCQ",
-      "stimulus": "Em “Não, espere.” a vírgula separa a negação do comando. Em “Não espere.” a orientação muda.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Qual versão expressa a intenção descrita pela coordenadora?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "A versão interrogativa, pois a equipe ainda precisa confirmar se a revisão aconteceu."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "A versão com ponto final, pois informa que a gráfica já recebeu o arquivo.",
+          "targetsError": "interpretation",
+          "rationale": "O ponto final pode registrar uma afirmação, mas o texto diz que falta a confirmação."
         },
         {
           "id": "C",
-          "text": "A pontuação altera a estrutura e o comando comunicado; não é mero enfeite."
+          "text": "A versão exclamativa, pois demonstra que a comissão já aprovou o cartaz.",
+          "targetsError": "interpretation",
+          "rationale": "A comissão ainda aguarda uma resposta e não declara aprovação."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "A versão com ponto final, pois transforma a frase em pedido de revisão para a equipe.",
+          "targetsError": "conceptual",
+          "rationale": "O ponto final encerra uma declaração; a pergunta é que solicita confirmação do fato."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "A versão exclamativa, pois substitui a pergunta por uma orientação de envio.",
+          "targetsError": "conceptual",
+          "rationale": "A exclamação pode marcar ênfase, mas não converte a frase em instrução de envio."
         }
       ],
-      "correctOption": "C",
-      "explanation": "A pontuação altera a estrutura e o comando comunicado; não é mero enfeite.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "analyze_context",
+      "correctOption": "A",
+      "explanation": "A coordenadora precisa saber se a revisão foi feita, e a equipe ainda não respondeu; a forma interrogativa corresponde a esse pedido de confirmação. O ponto final poderia registrar uma informação já confirmada, mas não resolve a dúvida atual.",
+      "difficulty": "direct",
+      "cognitiveOperation": "apply",
       "concepts": [
-        "POR-05-C01",
-        "POR-05-C02"
+        "POR-05-C06"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Escolher uma declaração ou exclamação quando o contexto ainda pede confirmação.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "A comissão organizadora recebeu três versões do aviso para a entrega de trabalhos. Uma dizia “Vocês revisaram o cartaz.”, outra “Vocês revisaram o cartaz?” e a última “Vocês revisaram o cartaz!”. A coordenadora queria confirmar se a revisão já havia ocorrido antes de enviar o arquivo à gráfica. Um estudante sugeriu manter o ponto de interrogação porque ainda esperava a resposta da equipe; outro preferia o ponto final para registrar a tarefa concluída. A comissão ainda não tinha recebido a confirmação."
     }
   ]
 }

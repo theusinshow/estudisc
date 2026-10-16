@@ -1,176 +1,230 @@
 [
   {
     "id": "GH-20-Q001",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Em relação a Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964), qual afirmação está correta?",
+    "stem": "Uma ficha de exposição registra o fim do Estado Novo em 1945, a Constituição de 1946 e a retomada de eleições nacionais. Um caderno de votação documenta a disputa por cargos, enquanto uma nota lembra que desigualdades e debates sobre desenvolvimento continuaram.\n\nO que a sequência sugere sobre a reorganização política do pós-guerra?",
     "options": [
       {
         "key": "A",
-        "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        "text": "A Constituição de 1946 reorganizou o Estado Novo e adiou a retomada das eleições nacionais.",
+        "targetsError": "regime_continuity_error",
+        "rationale": "A ficha situa o fim do Estado Novo antes da Constituição e da retomada eleitoral."
       },
       {
         "key": "B",
-        "text": "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas."
+        "text": "A abertura eleitoral encerrou as desigualdades econômicas e os debates sobre desenvolvimento.",
+        "targetsError": "political_social_equivalence",
+        "rationale": "A nota registra que as desigualdades e os debates de desenvolvimento persistiram."
       },
       {
         "key": "C",
-        "text": "Brasília foi construída durante o governo de D. Pedro II."
+        "text": "A transição reabriu a disputa eleitoral e estabeleceu uma nova ordem constitucional, sem resolver desigualdades."
       },
       {
         "key": "D",
-        "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        "text": "A Constituição retomou as eleições, mas manteve inalterado o regime político do Estado Novo.",
+        "targetsError": "period_anachronism",
+        "rationale": "O fim do Estado Novo marca uma reorganização política, não sua continuidade sem mudanças."
       },
       {
         "key": "E",
-        "text": "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        "text": "As eleições documentadas antecederam a queda do Estado Novo e prepararam a Constituição de 1946.",
+        "targetsError": "chronology_reversal",
+        "rationale": "A ordem dos registros coloca as eleições depois do fim do Estado Novo."
       }
     ],
-    "correctOption": "B",
-    "explanation": "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas.",
-    "difficulty": "FOUNDATION",
-    "cognitiveOperation": "RECALL",
+    "correctOption": "C",
+    "explanation": "A sequência da ficha liga o fim do Estado Novo à Constituição de 1946 e à retomada de eleições. A interpretação de igualdade econômica não se sustenta porque a anotação registra desigualdades e disputas persistentes.",
+    "difficulty": "DIRECT",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-20-CON-01"
     ],
-    "targetedError": "foundation",
+    "primaryConceptId": "GH-20-CON-01",
+    "targetedError": "democratic_transition",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-20-Q002",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante diz: “Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo.” Qual alternativa apresenta informação que ajuda a corrigir essa interpretação?",
+    "stem": "Uma mostra sobre o segundo governo Vargas apresenta discursos de defesa do controle nacional sobre recursos econômicos, anúncios de políticas voltadas a trabalhadores e recortes de jornais que registram intensa disputa entre grupos políticos. A equipe coloca as peças em sequência, mas deixa claro que elas foram produzidas por atores com interesses diferentes. O guia pede ao visitante que observe como propostas de desenvolvimento e conflito político apareceram juntas naquele governo.\n\nQual conclusão é mais compatível com a mostra?",
     "options": [
       {
         "key": "A",
-        "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        "text": "Nacionalismo econômico e políticas trabalhistas coexistiram com disputa entre grupos políticos."
       },
       {
         "key": "B",
-        "text": "Brasília foi construída durante o governo de D. Pedro II."
+        "text": "As medidas trabalhistas reduziram tensões, embora os jornais continuassem registrando divergências.",
+        "targetsError": "labor_policy_as_consensus",
+        "rationale": "A coleção registra disputas intensas, sem indicar que as políticas trabalhistas as reduziram."
       },
       {
         "key": "C",
-        "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        "text": "A defesa de recursos nacionais deslocou para os sindicatos a decisão sobre a política econômica.",
+        "targetsError": "nationalism_as_union_transfer",
+        "rationale": "Os discursos defendem controle nacional, mas não atribuem a decisão econômica aos sindicatos."
       },
       {
         "key": "D",
-        "text": "O segundo governo Vargas combinou nacionalismo econômico, políticas trabalhistas e intensos conflitos políticos."
+        "text": "Os jornais mostram que os grupos disputavam o governo, mas pouco discutiam os rumos econômicos.",
+        "targetsError": "conflict_erasure",
+        "rationale": "Os discursos sobre recursos econômicos são parte central das peças da mostra."
       },
       {
         "key": "E",
-        "text": "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        "text": "O segundo governo Vargas recuperou instituições do Estado Novo e manteve o mesmo arranjo político.",
+        "targetsError": "period_conflation",
+        "rationale": "A mostra situa o segundo governo Vargas em um contexto de disputa, sem dizer que manteve o arranjo do Estado Novo."
       }
     ],
-    "correctOption": "D",
-    "explanation": "O segundo governo Vargas combinou nacionalismo econômico, políticas trabalhistas e intensos conflitos políticos.",
-    "difficulty": "DIRECT",
+    "correctOption": "A",
+    "explanation": "A mostra aproxima discursos nacionalistas, políticas trabalhistas e jornais sobre conflitos. A leitura de consenso provocado pela legislação ignora que a própria coleção registra disputas políticas intensas.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-20-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "primaryConceptId": "GH-20-CON-02",
+    "targetedError": "political_and_economic_context",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-20-Q003",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Considere a situação de partida da aula: De 1945 a 1964, o Brasil viveu democracia eleitoral com forte urbanização, industrialização e conflitos políticos. Qual ideia estudada oferece a melhor chave de interpretação?",
+    "stem": "Um jornal escolar descreve o programa de governo de Juscelino Kubitschek por meio de mapas de rodovias, fotografias de obras e notícias sobre a construção de Brasília. Em uma coluna lateral, a equipe registra que a industrialização e a infraestrutura exigiram investimentos elevados, enquanto novas áreas urbanas cresceram. Os editores não apresentam um cálculo de dívida nem comparam o custo de cada projeto, e pedem que a turma avalie os efeitos combinados do programa.\n\nQual leitura se ajusta às evidências?",
     "options": [
       {
         "key": "A",
-        "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        "text": "Brasília foi construída como parte de um projeto de infraestrutura e desenvolvimento econômico no século XX.",
+        "targetsError": "period_and_project_error",
+        "rationale": "O jornal situa Brasília entre as obras de desenvolvimento do período, não em outro século."
       },
       {
         "key": "B",
-        "text": "Brasília foi construída durante o governo de D. Pedro II."
+        "text": "A expansão rodoviária favoreceu a integração territorial e reduziu custos de deslocamento nas novas áreas urbanas.",
+        "targetsError": "development_cost_erasure",
+        "rationale": "O material não informa efeitos de redução de custos nem compara meios de transporte."
       },
       {
         "key": "C",
-        "text": "O governo JK priorizou industrialização, infraestrutura e a construção de Brasília, ampliando também endividamento e transformações urbanas."
+        "text": "O programa priorizou indústria e infraestrutura, ao mesmo tempo que exigiu investimentos e acompanhou mudanças urbanas."
       },
       {
         "key": "D",
-        "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        "text": "As mudanças urbanas decorreram sobretudo da construção de Brasília, sem relação com a expansão industrial.",
+        "targetsError": "development_policy_omission",
+        "rationale": "A coluna relaciona industrialização, infraestrutura, investimentos e crescimento urbano."
       },
       {
         "key": "E",
-        "text": "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        "text": "O registro de investimentos elevados permite estimar que cada obra aumentou a dívida na mesma proporção.",
+        "targetsError": "evidence_as_quantification",
+        "rationale": "A equipe não apresenta cálculo de dívida nem dados para atribuir valores a cada projeto."
       }
     ],
     "correctOption": "C",
-    "explanation": "O governo JK priorizou industrialização, infraestrutura e a construção de Brasília, ampliando também endividamento e transformações urbanas.",
-    "difficulty": "APPLIED",
-    "cognitiveOperation": "APPLY",
+    "explanation": "O jornal reúne obras, industrialização e infraestrutura e registra investimentos elevados e mudanças urbanas. As imagens não fornecem números para calcular a dívida por projeto, por isso essa conclusão não é possível.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-20-CON-03"
     ],
-    "targetedError": "relationship",
+    "primaryConceptId": "GH-20-CON-03",
+    "targetedError": "development_and_costs",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-20-Q004",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "O IFSC pode apresentar Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964) por meio de texto, mapa ou imagem. Qual relação deve permanecer válida mesmo quando o contexto muda?",
+    "stem": "Uma coluna autoral acompanha a renúncia de Jânio Quadros e a posse de João Goulart em meio a debates da Guerra Fria. A redação reúne manifestações favoráveis a projetos sociais, críticas de adversários e notícias de interferências internacionais. O conjunto não reduz a sociedade a dois blocos sem diferenças internas.\n\nQue leitura considera tanto a disputa interna quanto o contexto externo?",
     "options": [
       {
         "key": "A",
-        "text": "Os governos Jânio Quadros e João Goulart ocorreram em ambiente de polarização social e internacional da Guerra Fria."
+        "text": "As disputas brasileiras se explicam por fatores internos; as referências à Guerra Fria servem apenas de contexto jornalístico.",
+        "targetsError": "international_context_omission",
+        "rationale": "A coluna inclui notícias de interferências internacionais, além das disputas internas."
       },
       {
         "key": "B",
-        "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        "text": "A renúncia de Jânio levou a uma transição negociada que preservou o mesmo arranjo político e os mesmos grupos no poder.",
+        "targetsError": "period_confusion",
+        "rationale": "O conjunto registra conflitos e divergências durante a mudança de governo, não a preservação do mesmo arranjo."
       },
       {
         "key": "C",
-        "text": "Brasília foi construída durante o governo de D. Pedro II."
+        "text": "A posse de Goulart reduziu a polarização ao incorporar os grupos rivais a um acordo sobre reformas.",
+        "targetsError": "polarization_erasure",
+        "rationale": "A redação apresenta críticas e disputas, sem indicar acordo entre os grupos rivais."
       },
       {
         "key": "D",
-        "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        "text": "A crise política brasileira foi atravessada por disputas internas e por referências e pressões da Guerra Fria."
       },
       {
         "key": "E",
-        "text": "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        "text": "A influência da Guerra Fria sobre a política brasileira se limitou a discursos, sem interferência internacional.",
+        "targetsError": "cold_war_chronology",
+        "rationale": "As notícias mencionam interferências internacionais, não apenas discursos locais."
       }
     ],
-    "correctOption": "A",
-    "explanation": "Os governos Jânio Quadros e João Goulart ocorreram em ambiente de polarização social e internacional da Guerra Fria.",
+    "correctOption": "D",
+    "explanation": "A coluna cita disputas nacionais e interferências internacionais enquanto aborda a Guerra Fria. A leitura de isolamento internacional deixa de lado a relação expressa entre os debates brasileiros e o contexto externo.",
     "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-20-CON-04"
     ],
-    "targetedError": "application",
+    "primaryConceptId": "GH-20-CON-04",
+    "targetedError": "domestic_and_international_polarization",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-20-Q005",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas.\nII. Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo.\nIII. O governo JK priorizou industrialização, infraestrutura e a construção de Brasília, ampliando também endividamento e transformações urbanas.\nIV. Brasília foi construída durante o governo de D. Pedro II.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma linha do tempo sobre 1945 a 1964 reúne a retomada das eleições, políticas nacionalistas do segundo governo Vargas, obras de JK, a renúncia de Jânio e os debates durante a presidência de João Goulart. No fechamento, o grupo situa o golpe de 1964 como ruptura da ordem democrática. As legendas mencionam industrialização, urbanização e polarização, sem afirmar que os governos tiveram as mesmas propostas ou os mesmos apoiadores.\n\nQual síntese acompanha melhor o material?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "O período combinou eleições e projetos de desenvolvimento, mas as disputas políticas terminaram em ruptura democrática."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "A retomada eleitoral consolidou estabilidade institucional até 1964, apesar das divergências sobre desenvolvimento.",
+        "targetsError": "authoritarian_continuity",
+        "rationale": "A linha do tempo registra crises e polarização antes de 1964, não estabilidade consolidada."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Os projetos de desenvolvimento ampliaram o debate econômico e reduziram a polarização política entre os grupos.",
+        "targetsError": "development_as_consensus",
+        "rationale": "As legendas destacam polarização, sem indicar que os projetos a reduziram."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "O golpe de 1964 encerrou a experiência democrática, mas preservou a disputa eleitoral para a Presidência.",
+        "targetsError": "rupture_denial",
+        "rationale": "O golpe é apresentado como ruptura da ordem democrática, e não como manutenção de disputa eleitoral presidencial."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "As obras de infraestrutura foram o principal fator da crise política que antecedeu o golpe.",
+        "targetsError": "chronology_anachronism",
+        "rationale": "A seleção relaciona desenvolvimento e conflito, mas não atribui a crise principalmente às obras."
       }
     ],
-    "correctOption": "B",
-    "explanation": "I e III estão corretas; II e IV reproduzem erros conceituais que a aula procura evitar.",
+    "correctOption": "A",
+    "explanation": "A linha do tempo reúne retomada eleitoral, projetos de desenvolvimento e polarização antes do golpe de 1964. A sequência permite relacionar essas experiências sem supor estabilidade contínua nem atribuir a ruptura a uma única causa.",
     "difficulty": "IFSC",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
@@ -179,79 +233,49 @@
       "GH-20-CON-03",
       "GH-20-CON-04"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "primaryConceptId": "GH-20-CON-01",
+    "targetedError": "historical_synthesis",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
     "id": "GH-20-Q006",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Uma fonte foi apresentada numa questão sobre Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964). Qual procedimento evita extrapolar o que a fonte realmente permite concluir?",
+    "stem": "Uma pesquisadora compara anúncios de emprego industrial, fotografias de bairros recém-expandidos e relatos de famílias que se mudaram para a cidade durante os anos 1950. Os materiais mostram novas oportunidades e crescimento urbano, mas a coleção também registra moradias precárias e serviços insuficientes em algumas áreas. A equipe não possui dados para calcular quantas pessoas viveram cada situação e trata os relatos como experiências localizadas.\n\nQue conclusão é mais adequada à coleção?",
     "options": [
       {
         "key": "A",
-        "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        "text": "O material sugere que empregos e serviços urbanos acompanharam a expansão de forma semelhante entre os bairros.",
+        "targetsError": "urban_benefit_uniformity",
+        "rationale": "A coleção registra serviços insuficientes e moradias precárias em algumas áreas, sem indicar distribuição semelhante."
       },
       {
         "key": "B",
-        "text": "Brasília foi construída durante o governo de D. Pedro II."
+        "text": "Os relatos de migração mostram que oportunidades de emprego estiveram entre os fatores da mudança para as cidades.",
+        "targetsError": "migration_reversal",
+        "rationale": "A observação é possível, mas não integra os desafios desiguais também registrados na coleção."
       },
       {
         "key": "C",
-        "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        "text": "As fotografias permitem comparar áreas urbanas, mas não dimensionam sozinhas as condições de moradia.",
+        "targetsError": "visual_evidence_as_census",
+        "rationale": "A equipe não dispõe de dados para quantificar quantas pessoas viveram cada situação."
       },
       {
         "key": "D",
-        "text": "Ignorar autoria, data, legenda e contexto da fonte e usar apenas uma impressão inicial."
+        "text": "As dificuldades de alguns bairros tiveram pouca relação com a industrialização e se limitaram à infraestrutura local.",
+        "targetsError": "inequality_as_change_denial",
+        "rationale": "Os relatos situam as dificuldades em cidades que também cresciam com a industrialização."
       },
       {
         "key": "E",
-        "text": "Relacionar desenvolvimento econômico, mobilização social e Guerra Fria sem reduzir o período a uma causa única."
+        "text": "O crescimento urbano e industrial criou oportunidades e desafios que se distribuíram de forma desigual."
       }
     ],
     "correctOption": "E",
-    "explanation": "Relacionar desenvolvimento econômico, mobilização social e Guerra Fria sem reduzir o período a uma causa única.",
-    "difficulty": "IFSC",
-    "cognitiveOperation": "SOURCE_ANALYSIS",
-    "conceptIds": [
-      "GH-20-CON-01",
-      "GH-20-CON-02",
-      "GH-20-CON-03",
-      "GH-20-CON-04",
-      "GH-20-CON-05",
-      "GH-20-CON-06"
-    ],
-    "targetedError": "source_interpretation",
-    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
-  },
-  {
-    "id": "GH-20-Q007",
-    "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO que deve ser evitado ao estudar Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964)?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Após o fim do Estado Novo, uma nova Constituição foi promulgada em 1946 e eleições nacionais foram retomadas."
-      },
-      {
-        "key": "B",
-        "text": "O segundo governo Vargas combinou nacionalismo econômico, políticas trabalhistas e intensos conflitos políticos."
-      },
-      {
-        "key": "C",
-        "text": "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente."
-      },
-      {
-        "key": "D",
-        "text": "A Guerra Fria não influenciou debates políticos brasileiros."
-      },
-      {
-        "key": "E",
-        "text": "Os governos Jânio Quadros e João Goulart ocorreram em ambiente de polarização social e internacional da Guerra Fria."
-      }
-    ],
-    "correctOption": "D",
-    "explanation": "A alternativa D reproduz um erro conceitual. As demais são compatíveis com a aula.",
-    "difficulty": "DIRECT",
+    "explanation": "A coleção registra oportunidades de emprego e expansão, assim como moradia precária e falta de serviços em algumas áreas. A leitura de benefícios iguais apaga as diferenças entre os bairros documentados.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "GH-20-CON-01",
@@ -261,37 +285,48 @@
       "GH-20-CON-05",
       "GH-20-CON-06"
     ],
-    "targetedError": "misconception_identification",
+    "primaryConceptId": "GH-20-CON-01",
+    "targetedError": "urban_and_economic_change",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   },
   {
-    "id": "GH-20-Q008",
+    "id": "GH-20-Q007",
+    "version": 2,
+    "status": "draft",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Depois de comparar conceitos, evidências e erros frequentes de Brasil pós-guerras: democracia, desenvolvimento e crise (1945–1964), qual conclusão final é sustentável?",
+    "stem": "Em um exercício autoral, um grupo compara recortes simulados de jornais com orientações políticas distintas durante os governos de Jânio Quadros e João Goulart. Um editorial apoia propostas de mudança social, outro teme a expansão do comunismo, e uma reportagem menciona pressões de governos estrangeiros no cenário da Guerra Fria. Os estudantes anotam que cada publicação selecionou fatos e argumentos de acordo com seu posicionamento.\n\nQual leitura crítica é mais sustentada?",
     "options": [
       {
         "key": "A",
-        "text": "Entre 1945 e 1964 o Brasil permaneceu sob Estado Novo."
+        "text": "As diferenças editoriais mostram que os jornais refletiam de modo representativo as posições de toda a sociedade.",
+        "targetsError": "press_as_absent",
+        "rationale": "A equipe ressalta que cada jornal selecionava argumentos conforme seu posicionamento; isso não representa toda a sociedade."
       },
       {
         "key": "B",
-        "text": "Brasília foi construída durante o governo de D. Pedro II."
+        "text": "A polarização brasileira foi atravessada por disputas e referências internacionais da Guerra Fria."
       },
       {
         "key": "C",
-        "text": "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente."
+        "text": "As pressões internacionais tiveram peso decisivo, enquanto os atores nacionais influenciaram pouco os acontecimentos.",
+        "targetsError": "external_determinism",
+        "rationale": "Os editoriais registram atores nacionais com posições distintas, além das referências externas."
       },
       {
         "key": "D",
-        "text": "A Guerra Fria não influenciou debates políticos brasileiros."
+        "text": "Os editoriais permitem identificar as posições de seus autores, mas não as opiniões de todos os leitores.",
+        "targetsError": "editorial_to_audience",
+        "rationale": "A ressalva sobre os leitores é válida, mas não articula as disputas internas ao contexto internacional, como pede a pergunta."
       },
       {
         "key": "E",
-        "text": "O golpe de 1964 manteve sem ruptura todas as instituições democráticas."
+        "text": "Apesar das diferenças de orientação, as publicações indicam acordo entre as correntes sobre as reformas sociais.",
+        "targetsError": "consensus_invention",
+        "rationale": "Os recortes apresentam posições divergentes sobre as propostas e o comunismo."
       }
     ],
-    "correctOption": "C",
-    "explanation": "O período terminou com o golpe de 1964, que rompeu a ordem democrática vigente.",
+    "correctOption": "B",
+    "explanation": "Os recortes mostram posições internas distintas e referências à pressão internacional, permitindo relacionar a polarização brasileira à Guerra Fria. A reportagem não elimina a atuação de grupos nacionais documentada pelos editoriais.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
@@ -302,7 +337,60 @@
       "GH-20-CON-05",
       "GH-20-CON-06"
     ],
-    "targetedError": "synthesis",
+    "primaryConceptId": "GH-20-CON-01",
+    "targetedError": "cold_war_source_interpretation",
+    "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
+  },
+  {
+    "id": "GH-20-Q008",
+    "version": 2,
+    "status": "draft",
+    "type": "MULTIPLE_CHOICE_SINGLE",
+    "stem": "Uma aula de síntese acompanha a retomada eleitoral depois de 1945, a expansão de infraestrutura e indústria e a crise política do governo João Goulart. Uma nota situa o golpe de 1964 como ruptura da ordem democrática. As imagens de fábricas e estradas aparecem junto aos registros dos conflitos políticos.\n\nQue conclusão relaciona desenvolvimento e mudança de regime sem confundir as duas dimensões?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A industrialização foi o principal fator do golpe, tornando secundários os conflitos políticos registrados.",
+        "targetsError": "economic_as_political_substitute",
+        "rationale": "A aula registra conflitos políticos junto às imagens de desenvolvimento, sem atribuir o golpe a uma causa única."
+      },
+      {
+        "key": "B",
+        "text": "A continuidade eleitoral após 1945 manteve a democracia sem interrupções até a década de 1980.",
+        "targetsError": "democratic_continuity_overreach",
+        "rationale": "A nota identifica o golpe de 1964 como interrupção da ordem democrática."
+      },
+      {
+        "key": "C",
+        "text": "A crise política que levou ao golpe se formou antes do governo Goulart e pouco se relacionou a seus debates.",
+        "targetsError": "chronology_reversal",
+        "rationale": "A sequência situa a crise política também durante o governo Goulart."
+      },
+      {
+        "key": "D",
+        "text": "A ruptura de 1964 encerrou uma fase de desenvolvimento econômico sem conflitos sociais relevantes.",
+        "targetsError": "conflict_erasure",
+        "rationale": "Os registros de conflito aparecem ao longo da sequência, junto à discussão sobre desenvolvimento."
+      },
+      {
+        "key": "E",
+        "text": "O golpe interrompeu uma experiência democrática atravessada por disputas sobre os rumos do desenvolvimento."
+      }
+    ],
+    "correctOption": "E",
+    "explanation": "A sequência relaciona desenvolvimento a uma crise política e identifica o golpe de 1964 como ruptura da ordem democrática. Tratar o período como desenvolvimento sem conflito apaga a crise que a aula também registra.",
+    "difficulty": "APPLIED",
+    "cognitiveOperation": "ANALYZE",
+    "conceptIds": [
+      "GH-20-CON-01",
+      "GH-20-CON-02",
+      "GH-20-CON-03",
+      "GH-20-CON-04",
+      "GH-20-CON-05",
+      "GH-20-CON-06"
+    ],
+    "primaryConceptId": "GH-20-CON-01",
+    "targetedError": "democracy_and_development_synthesis",
     "provenance": "ORIGINAL_VECTA_GROUNDED_GH_V2"
   }
 ]

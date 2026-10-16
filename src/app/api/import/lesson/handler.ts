@@ -8,6 +8,8 @@ import { readJsonRequestWithLimit, MAX_TRACK_PACK_BYTES } from "@/features/impor
 import { importLessonVersion } from "@/features/import/application/lesson-version-policy";
 import { LessonVersionConflictError } from "@/features/import/application/lesson-version-contracts";
 import { lessonVersionPackSchema } from "@/features/import/application/lesson-version-contracts";
+import { newLessonPackSchema } from "@/features/import/application/new-lesson-contracts";
+import { importNewLesson } from "@/features/import/application/new-lesson-policy";
 import { hashCanonicalJson } from "@/lib/canonical-json";
 import { logEvent } from "@/lib/logger";
 export async function handleLessonVersionRequest(request: Request, preview: boolean) {
@@ -17,6 +19,14 @@ export async function handleLessonVersionRequest(request: Request, preview: bool
     if (!parsed.ok) return NextResponse.json({ code: parsed.code }, { status: parsed.code === "payload_too_large" ? 413 : 400 });
     await ensureDatabaseReady();
     const repo = getDatabaseUrl() === "memory://local" ? new MemoryTrackImportRepository() : new DrizzleTrackImportRepository(undefined, actor.ownerId);
+    if ((parsed.body as { schema?: unknown } | null)?.schema === "caderno.lesson-new.v1") {
+      // ADR 0064: a new draft lesson appended to an imported Track version.
+      const packet = newLessonPackSchema.parse(parsed.body);
+      const result = await importNewLesson(packet, repo, preview);
+      if (preview) return NextResponse.json({ ...result, operation: result.status === "already_imported" ? "no_change" : "import", contentHash: hashCanonicalJson(packet),
+        summary: { trackStableId: packet.target.trackId, trackTitle: `${packet.lesson.title} · nova aula`, moduleCount: 1, lessonCount: 1, activityCount: packet.lesson.activities.length, conceptCount: packet.lesson.concepts.length } });
+      return NextResponse.json({ ...result, summary: { trackStableId: packet.target.trackId, importedLessons: 1, importedActivities: packet.lesson.activities.length } }, { status: result.status === "imported" ? 201 : 200 });
+    }
     const packet = lessonVersionPackSchema.parse(parsed.body);
     const result = await importLessonVersion(packet, repo, preview);
     if (preview) return NextResponse.json({ ...result, operation: result.status === "already_imported" ? "no_change" : "import", contentHash: hashCanonicalJson(packet),

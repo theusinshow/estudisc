@@ -6,299 +6,378 @@
       "id": "POR-13-Q01",
       "lessonId": "POR-13",
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Operadores lógico-discursivos, conjunções e advérbios em uso real da língua?",
+      "stem": "Na primeira frase, que relação o conector porque estabelece entre as duas informações?",
       "options": [
         {
           "id": "A",
-          "text": "Todo “pois” tem o mesmo valor."
+          "text": "A chuva anterior apresenta a causa da decisão de cobrir os canteiros."
         },
         {
           "id": "B",
-          "text": "“Mas” e “portanto” são trocáveis."
+          "text": "A cobertura dos canteiros é uma conclusão sobre a visita ao viveiro.",
+          "targetsError": "conceptual",
+          "rationale": "A visita ocorre depois e não é apresentada como resultado da cobertura."
         },
         {
           "id": "C",
-          "text": "Duas conjunções são sempre sinônimas."
+          "text": "O corredor é uma condição para que as sementes se espalhem pela escola.",
+          "targetsError": "attention",
+          "rationale": "O corredor aparece no relato do espalhamento, mas não é introduzido como hipótese."
         },
         {
           "id": "D",
-          "text": "Conectores não apenas unem trechos: explicitam relações de sentido."
+          "text": "A turma cobre os canteiros com a finalidade de molhar as etiquetas.",
+          "targetsError": "interpretation",
+          "rationale": "As etiquetas ficaram molhadas pela chuva; o texto não atribui esse objetivo à cobertura."
         },
         {
           "id": "E",
-          "text": "Conectores são enfeites removíveis."
+          "text": "A professora usa porque para acrescentar uma ação simultânea à varrição.",
+          "targetsError": "conceptual",
+          "rationale": "A varrição ocorre depois do intervalo, enquanto porque liga a decisão à situação anterior."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Conectores não apenas unem trechos: explicitam relações de sentido.",
+      "correctOption": "A",
+      "explanation": "A frase informa que a equipe cobriu os canteiros e, em seguida, apresenta a chuva da semana anterior como motivo. O conector não introduz a finalidade de molhar etiquetas; essa leitura inverte a relação com os fatos narrados.",
       "difficulty": "foundation",
       "cognitiveOperation": "recognize",
       "concepts": [
         "POR-13-C01"
       ],
-      "targetedError": "Conectores são enfeites removíveis.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler a causa como objetivo da ação descrita na oração principal.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Crônica fictícia do jornal da Escola do Campo, escrita por Paulo Neves em 11 de março de 2026: a equipe cobriu os canteiros porque a previsão indicava chuva forte durante a noite. Depois do intervalo, três estudantes varreram a área e recolheram as etiquetas molhadas. A professora registrou o ocorrido num caderno e pediu novas placas de madeira para indicar cada espécie. Na sexta-feira, a turma fará uma visita ao viveiro municipal e levará uma lista dos materiais que ainda faltam."
     },
     {
       "id": "POR-13-Q02",
       "lessonId": "POR-13",
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Operadores lógico-discursivos, conjunções e advérbios, qual princípio deve orientar a análise?",
+      "stem": "Na frase sobre os participantes, o que o conector mas destaca?",
       "options": [
         {
           "id": "A",
-          "text": "“Mas”, “porém” e “contudo” costumam introduzir oposição ou contraste."
+          "text": "A quantidade de inscrições explica por que a oficina recebeu quatro participantes.",
+          "targetsError": "interpretation",
+          "rationale": "O texto distingue dezoito inscrições de quatro chegadas tardias, não apresenta uma explicação causal."
         },
         {
           "id": "B",
-          "text": "“Mas” e “portanto” são trocáveis."
+          "text": "A professora retoma as instruções para que as duplas escolham uma fotografia.",
+          "targetsError": "conceptual",
+          "rationale": "A finalidade da retomada não é a relação marcada por mas na frase das inscrições."
         },
         {
           "id": "C",
-          "text": "Duas conjunções são sempre sinônimas."
+          "text": "O atraso de quatro pessoas contrasta com a quantidade inicial de inscritos."
         },
         {
           "id": "D",
-          "text": "Conectores são enfeites removíveis."
+          "text": "A exposição no corredor ocorre ao mesmo tempo que a inscrição na oficina.",
+          "targetsError": "attention",
+          "rationale": "A exposição aparece no fim da tarde, depois das etapas de desenho."
         },
         {
           "id": "E",
-          "text": "Todo “pois” tem o mesmo valor."
+          "text": "Os formatos de moldura mostram uma consequência da chegada tardia dos participantes.",
+          "targetsError": "conceptual",
+          "rationale": "A distribuição das folhas é uma etapa da oficina, sem ligação de consequência indicada no relato."
         }
       ],
-      "correctOption": "A",
-      "explanation": "“Mas”, “porém” e “contudo” costumam introduzir oposição ou contraste.",
+      "correctOption": "C",
+      "explanation": "O informe aproxima o total de inscrições do dado de que quatro pessoas chegaram depois da explicação. Mas marca o contraste entre adesão inicial e atraso; a retomada das instruções é narrada como ação posterior da professora.",
       "difficulty": "direct",
       "cognitiveOperation": "understand",
       "concepts": [
         "POR-13-C02"
       ],
-      "targetedError": "Todo “pois” tem o mesmo valor.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir a oposição entre dois dados com uma explicação causal.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Informe fictício da oficina de desenho da Escola das Águas, redigido por Júlia Mendes em 22 de abril de 2026: Dezoito participantes chegaram no horário, mas quatro outros chegaram depois da explicação inicial. A professora retomou as instruções e distribuiu folhas com três formatos de moldura. Cada dupla escolheu uma fotografia do bairro como referência e começou a desenhar casas, árvores e placas de rua. No fim da tarde, a turma expôs os trabalhos no corredor e deixou os nomes dos autores ao lado das imagens."
     },
     {
       "id": "POR-13-Q03",
       "lessonId": "POR-13",
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Operadores lógico-discursivos, conjunções e advérbios?",
+      "stem": "No relato, que relação a expressão por isso estabelece?",
       "options": [
         {
           "id": "A",
-          "text": "Duas conjunções são sempre sinônimas."
+          "text": "A separação dos resíduos explica por que a lixeira enchia antes do intervalo.",
+          "targetsError": "interpretation",
+          "rationale": "A separação é descrita depois da instalação dos coletores, enquanto o recipiente cheio motivou a mudança."
         },
         {
           "id": "B",
-          "text": "Conectores são enfeites removíveis."
+          "text": "A conversa com as turmas leva os funcionários a registrar o acúmulo no pátio.",
+          "targetsError": "attention",
+          "rationale": "O registro foi conferido na reunião de terça-feira; a conversa foi marcada depois, para a semana seguinte."
         },
         {
           "id": "C",
-          "text": "“Portanto”, “logo” e “por isso” podem marcar consequência ou conclusão conforme a construção."
+          "text": "O recolhimento no fim do turno é apresentado como condição para a reunião de terça-feira.",
+          "targetsError": "conceptual",
+          "rationale": "A equipe combinou o recolhimento após instalar os coletores, sem relacioná-lo à reunião já realizada."
         },
         {
           "id": "D",
-          "text": "Todo “pois” tem o mesmo valor."
+          "text": "A expressão compara a quantidade de resíduos com a posição dos coletores.",
+          "targetsError": "conceptual",
+          "rationale": "O trecho apresenta uma sequência de motivo e ação, sem comparar quantidades ou locais."
         },
         {
           "id": "E",
-          "text": "“Mas” e “portanto” são trocáveis."
+          "text": "A instalação dos coletores é apresentada como consequência do problema registrado no pátio."
         }
       ],
-      "correctOption": "C",
-      "explanation": "“Portanto”, “logo” e “por isso” podem marcar consequência ou conclusão conforme a construção.",
+      "correctOption": "E",
+      "explanation": "O recipiente enchia antes do fim do intervalo, e o grêmio instalou coletores adicionais em resposta a esse problema. A conversa com as turmas aparece como iniciativa posterior, não como motivo da instalação.",
       "difficulty": "applied",
       "cognitiveOperation": "discriminate",
       "concepts": [
         "POR-13-C03"
       ],
-      "targetedError": "“Mas” e “portanto” são trocáveis.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir a consequência da situação descrita com uma ação posterior do relato.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Relato fictício do grêmio da Escola Horizonte, escrito por Ana Lima em 14 de agosto de 2026: durante quatro dias, os estudantes encontraram papéis e copos descartáveis acumulados junto à única lixeira do pátio. Na reunião de terça-feira, a equipe conferiu o registro feito pelos funcionários e percebeu que o recipiente enchia antes do fim do intervalo. Por isso, o grêmio instalou três coletores identificados perto das mesas e combinou recolher os materiais ao final de cada turno. Na semana seguinte, o mural informou que os estudantes passaram a separar papel, embalagens e restos de lanche. A direção também marcou uma conversa com as turmas sobre o destino dos resíduos."
     },
     {
       "id": "POR-13-Q04",
       "lessonId": "POR-13",
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Operadores lógico-discursivos, conjunções e advérbios?",
+      "stem": "Na primeira oração, qual informação é introduzida por como?",
       "options": [
         {
           "id": "A",
-          "text": "Conectores são enfeites removíveis."
+          "text": "O horário da conversa, marcado para depois da retirada das senhas.",
+          "targetsError": "attention",
+          "rationale": "O horário aparece mais tarde na nota e não é a informação ligada por como."
         },
         {
           "id": "B",
-          "text": "Todo “pois” tem o mesmo valor."
+          "text": "A reforma do auditório, apresentada como razão para mudar a sala do encontro."
         },
         {
           "id": "C",
-          "text": "“Mas” e “portanto” são trocáveis."
+          "text": "A leitura, que constitui a finalidade da reforma realizada no centro.",
+          "targetsError": "conceptual",
+          "rationale": "A leitura faz parte da atividade, enquanto a reforma explica a mudança de local."
         },
         {
           "id": "D",
-          "text": "Duas conjunções são sempre sinônimas."
+          "text": "A sala 12, que causa o fechamento temporário do auditório central.",
+          "targetsError": "interpretation",
+          "rationale": "A sala é o novo espaço da conversa; o texto informa que a reforma é do auditório."
         },
         {
           "id": "E",
-          "text": "“Porque”, “pois” e locuções causais podem apresentar justificativa ou causa; o valor depende de posição e contexto."
+          "text": "As perguntas do público, que ocorrerão antes do início da atividade.",
+          "targetsError": "attention",
+          "rationale": "A agenda prevê perguntas durante a conversa e não as apresenta como causa da mudança de sala."
         }
       ],
-      "correctOption": "E",
-      "explanation": "“Porque”, “pois” e locuções causais podem apresentar justificativa ou causa; o valor depende de posição e contexto.",
+      "correctOption": "B",
+      "explanation": "A nota começa pela informação de que o auditório está em reforma e a conecta à realização da conversa em outra sala. O horário e as perguntas pertencem à programação, mas não explicam a troca de espaço.",
       "difficulty": "ifsc",
       "cognitiveOperation": "apply",
       "concepts": [
         "POR-13-C04"
       ],
-      "targetedError": "Duas conjunções são sempre sinônimas.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir o local escolhido com a causa da mudança de sala.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Nota fictícia da agenda do Centro de Artes do Sol, escrita por Celina Paes em 17 de julho de 2026: como o auditório está em reforma, a conversa com a ilustradora será realizada na sala 12, no térreo. A programação inclui uma leitura de vinte minutos e perguntas do público. Os organizadores reservaram quarenta lugares e colocaram uma mesa de livros perto da entrada. A atividade começa às quinze horas; quem chegar antes poderá retirar uma senha e consultar a lista de obras recomendadas."
     },
     {
       "id": "POR-13-Q05",
       "lessonId": "POR-13",
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Operadores lógico-discursivos, conjunções e advérbios?",
+      "stem": "Na primeira frase, que relação é introduzida por se?",
       "options": [
         {
           "id": "A",
-          "text": "Todo “pois” tem o mesmo valor."
+          "text": "A entrada leste causa a abertura do tempo antes do início da visita.",
+          "targetsError": "interpretation",
+          "rationale": "A entrada é o local previsto; o texto não a apresenta como causa das condições do tempo."
         },
         {
           "id": "B",
-          "text": "Conectores condicionais, temporais e finalísticos orientam hipótese, sequência e objetivo."
+          "text": "O grupo ficará na sala de mapas como resultado certo da visita ao jardim.",
+          "targetsError": "conceptual",
+          "rationale": "A sala é a alternativa caso a chuva continue, não uma consequência da visita externa."
         },
         {
           "id": "C",
-          "text": "“Mas” e “portanto” são trocáveis."
+          "text": "A organização prepara os cadernos com a finalidade de alterar a previsão do tempo.",
+          "targetsError": "interpretation",
+          "rationale": "As capas já foram separadas para os materiais, sem relação causal com a previsão."
         },
         {
           "id": "D",
-          "text": "Duas conjunções são sempre sinônimas."
+          "text": "A realização da visita externa depende da mudança nas condições do tempo."
         },
         {
           "id": "E",
-          "text": "Conectores são enfeites removíveis."
+          "text": "A família receberá a confirmação durante a entrada dos visitantes no parque.",
+          "targetsError": "attention",
+          "rationale": "O aviso informa que a confirmação será enviada pela manhã, antes do passeio."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Conectores condicionais, temporais e finalísticos orientam hipótese, sequência e objetivo.",
+      "correctOption": "D",
+      "explanation": "A visita pela entrada leste ocorrerá se o tempo abrir antes de certo horário; a sala de mapas é a alternativa se a chuva continuar. A condição define em que situação a atividade externa acontece, não o horário de envio da confirmação.",
       "difficulty": "applied",
       "cognitiveOperation": "evaluate",
       "concepts": [
         "POR-13-C05"
       ],
-      "targetedError": "Conectores são enfeites removíveis.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tratar a alternativa prevista para chuva como resultado da visita ao jardim.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Aviso fictício da trilha do Parque das Pedras, assinado por Vânia Costa em 6 de agosto de 2026: se o tempo abrir antes das treze horas, a visita ao jardim ocorrerá pela entrada leste. Caso a chuva continue, o grupo ficará na sala de mapas e analisará fotografias das espécies locais. A organização já separou capas para os cadernos, garrafas de água e uma lista de pontos de encontro. A confirmação será enviada pelo aplicativo às famílias na manhã do passeio."
     },
     {
       "id": "POR-13-Q06",
       "lessonId": "POR-13",
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Operadores lógico-discursivos, conjunções e advérbios, qual análise está correta?",
+      "stem": "Qual alternativa substitui por isso sem alterar a relação indicada no registro?",
       "options": [
         {
           "id": "A",
-          "text": "“Mas” e “portanto” são trocáveis."
+          "text": "Os voluntários recolheram as caixas, logo a passagem ficou livre durante a feira."
         },
         {
           "id": "B",
-          "text": "Duas conjunções são sempre sinônimas."
+          "text": "A passagem ficou livre porque os voluntários recolheriam as caixas na semana seguinte.",
+          "targetsError": "procedural",
+          "rationale": "A substituição muda o tempo da ação e apresenta o resultado como causa da coleta."
         },
         {
           "id": "C",
-          "text": "Conectores são enfeites removíveis."
+          "text": "Os voluntários recolheram as caixas, contudo a passagem ficou livre durante a feira.",
+          "targetsError": "conceptual",
+          "rationale": "Contudo introduz contraste, ao passo que o registro relaciona a coleta ao resultado obtido."
         },
         {
           "id": "D",
-          "text": "Trocar um conector exige preservar a relação lógico-discursiva, não apenas a classe gramatical."
+          "text": "Os voluntários recolheram as caixas enquanto a passagem ficou livre durante a feira.",
+          "targetsError": "interpretation",
+          "rationale": "Enquanto aproxima as ações no tempo e não explicita a relação entre a retirada e a passagem livre."
         },
         {
           "id": "E",
-          "text": "Todo “pois” tem o mesmo valor."
+          "text": "Os voluntários recolheram as caixas para que a passagem ficasse livre na semana seguinte.",
+          "targetsError": "procedural",
+          "rationale": "A alternativa muda o momento do resultado e apresenta uma finalidade futura, em vez do efeito registrado."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Trocar um conector exige preservar a relação lógico-discursiva, não apenas a classe gramatical.",
+      "correctOption": "A",
+      "explanation": "A retirada das caixas é seguida pela passagem livre durante a feira, e logo conserva a relação de consequência apresentada por por isso. Contudo sugeriria oposição, enquanto a redação original liga as duas informações como ação e resultado.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze",
       "concepts": [
         "POR-13-C06"
       ],
-      "targetedError": "Todo “pois” tem o mesmo valor.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Substituir o conector de consequência por um marcador de contraste.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Registro fictício da biblioteca comunitária, elaborado por Otávia Pires em 14 de setembro de 2026: os voluntários recolheram as caixas do corredor antes da chegada das turmas; por isso, a passagem ficou livre durante a feira de troca. No salão, uma mesa recebeu revistas, outra reuniu livros infantis e uma terceira foi reservada para mapas do bairro. A equipe anotou o movimento a cada meia hora e separou os materiais que serão encaminhados a uma escola rural na semana seguinte."
     },
     {
       "id": "POR-13-Q07",
       "lessonId": "POR-13",
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Conectores são enfeites removíveis.”. Qual é a melhor correção?",
+      "stem": "Na frase inicial, o que a combinação entre a chuva e a manutenção da exposição mostra?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "A chuva foi a finalidade escolhida para transferir os painéis ao pátio.",
+          "targetsError": "interpretation",
+          "rationale": "A chuva atrasou a entrega, mas não é apresentada como objetivo da mudança de espaço."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "A exposição dependeu da chuva para que os grupos terminassem os protótipos.",
+          "targetsError": "conceptual",
+          "rationale": "O relato indica que a turma manteve a programação apesar do atraso, não graças a ele."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "A decisão de expor os trabalhos contrariou a dificuldade causada pelo atraso."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "A entrega dos painéis ocorreu depois das apresentações das quatro horas.",
+          "targetsError": "attention",
+          "rationale": "O texto informa atraso na entrega, sem afirmar que ela ocorreu após a exposição."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "A equipe mudou a exposição porque as famílias chegaram com crianças.",
+          "targetsError": "conceptual",
+          "rationale": "As famílias chegaram para acompanhar a atividade, não como motivo da decisão de mantê-la."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Conectores não apenas unem trechos: explicitam relações de sentido.",
+      "correctOption": "C",
+      "explanation": "A oração introduzida por embora reconhece uma dificuldade, e a oração principal informa que a turma manteve a exposição. A chuva atrasou os painéis, mas não impediu o evento; as famílias aparecem apenas depois, como visitantes.",
       "difficulty": "applied",
       "cognitiveOperation": "diagnose_error",
       "concepts": [
         "POR-13-C01"
       ],
-      "targetedError": "Conectores são enfeites removíveis.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Interpretar a dificuldade reconhecida como causa da decisão de manter o evento.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Crônica fictícia da feira de invenções da Escola da Mata, escrita por Érica Lima em 21 de outubro de 2026: embora a chuva tenha atrasado a entrega dos painéis, a turma manteve a exposição no pátio coberto. Os grupos terminaram os títulos à mão e organizaram os protótipos numa fila junto à parede. Uma estudante levou extensões elétricas da sala de informática, e o zelador conferiu as tomadas antes da abertura. Às quatro, as famílias chegaram com crianças de várias idades e acompanharam as apresentações."
     },
     {
       "id": "POR-13-Q08",
       "lessonId": "POR-13",
       "type": "MCQ",
-      "stimulus": "A escola ampliou o bicicletário porque mais estudantes passaram a pedalar. O número de vagas aumentou; portanto, a fila diminuiu.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Qual conector pode substituir contudo e preservar a relação entre a ampliação e a necessidade que permanece?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Porque, pois a necessidade de iluminação explica a decisão de ampliar o laboratório.",
+          "targetsError": "interpretation",
+          "rationale": "O texto menciona a necessidade depois da ampliação, sem indicar que ela provocou a mudança de lugares."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "Assim, para apresentar a iluminação como resultado direto da ampliação do espaço.",
+          "targetsError": "conceptual",
+          "rationale": "A necessidade de iluminação permanece apesar da ampliação, não aparece como resultado dela."
         },
         {
           "id": "C",
-          "text": "“Porque” introduz causa; “portanto” apresenta conclusão/consequência relacionada ao aumento das vagas."
+          "text": "Quando, para situar a avaliação das mesas na mesma ocasião da ampliação.",
+          "targetsError": "attention",
+          "rationale": "A avaliação está prevista para dezembro; a frase não situa as duas informações no mesmo momento."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "Para que, indicando que a sala foi ampliada com o objetivo de manter a iluminação atual.",
+          "targetsError": "interpretation",
+          "rationale": "O objetivo da ampliação não é informado, e a iluminação ainda precisa ser reforçada."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "Porém, pois conserva a oposição entre o aumento de lugares e a limitação descrita."
         }
       ],
-      "correctOption": "C",
-      "explanation": "“Porque” introduz causa; “portanto” apresenta conclusão/consequência relacionada ao aumento das vagas.",
+      "correctOption": "E",
+      "explanation": "O informe apresenta uma melhoria, a ampliação dos lugares, e em seguida ressalta uma necessidade que ainda existe. Porém conserva esse contraste; assim sugeriria um resultado, e porque daria à iluminação o papel de causa.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-13-C01",
         "POR-13-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Trocar o contraste entre melhoria e limitação por uma relação de causa ou resultado.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Informe fictício do laboratório de ciências da Escola Aurora, redigido por Sandro Vale em 29 de novembro de 2026: o espaço ampliou de vinte para trinta lugares de estudo. Contudo, as mesas do fundo ainda precisam de iluminação mais forte para as atividades de leitura. A equipe trocou duas lâmpadas, marcou no chão a distância entre as cadeiras e instalou uma prateleira para lupas e réguas. A coordenação fará uma nova avaliação em dezembro, depois de ouvir os estudantes que usam a sala no contraturno."
     }
   ]
 }

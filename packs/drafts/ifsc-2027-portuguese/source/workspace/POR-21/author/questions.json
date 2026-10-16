@@ -6,299 +6,378 @@
       "id": "POR-21-Q01",
       "lessonId": "POR-21",
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Intertextualidade: citação, paráfrase, paródia e diálogo entre textos em uso real da língua?",
+      "stem": "Que relação entre os dois textos o cartaz constrói?",
       "options": [
         {
           "id": "A",
-          "text": "Paródia e paráfrase são iguais."
+          "text": "A notícia das doações explica a origem dos romances, mas não estabelece relação com o caderno.",
+          "targetsError": "attention",
+          "rationale": "As doações explicam a montagem do espaço; a formulação do cartaz também dialoga com o verso."
         },
         {
           "id": "B",
-          "text": "Citação com fonte não é intertextualidade."
+          "text": "O cartaz adapta o verso para outro idioma e mantém a imagem do banco vazio.",
+          "targetsError": "conceptual",
+          "rationale": "As duas formulações estão em português; o cartaz adapta a ideia para outro contexto."
         },
         {
           "id": "C",
-          "text": "Sem conhecer a obra inteira nada pode ser analisado."
+          "text": "O cartaz retoma a ideia de guardar lugar e a relaciona à chegada de leitores com livros."
         },
         {
           "id": "D",
-          "text": "Intertextualidade ocorre quando um texto retoma, transforma, cita ou dialoga com outro texto/discurso reconhecível."
+          "text": "O cartaz desloca a atenção do verso para a data de publicação do caderno.",
+          "targetsError": "interpretation",
+          "rationale": "A data situa a publicação do caderno, mas a peça não trata da biografia da autora."
         },
         {
           "id": "E",
-          "text": "Intertextualidade só existe com cópia literal."
+          "text": "O cartaz substitui o poema por uma instrução para reservar o banco da sala de leitura.",
+          "targetsError": "procedural",
+          "rationale": "A frase apresenta o espaço de leitura, sem instruir uma reserva de assento."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Intertextualidade ocorre quando um texto retoma, transforma, cita ou dialoga com outro texto/discurso reconhecível.",
+      "correctOption": "C",
+      "explanation": "A formulação do cartaz retoma a ideia de guardar lugar para alguém que chega e a adapta à sala de leitura. A menção às doações é um dado do projeto, mas a semelhança entre as frases mostra o diálogo com o caderno de 2024.",
       "difficulty": "foundation",
       "cognitiveOperation": "recognize",
       "concepts": [
         "POR-21-C01"
       ],
-      "targetedError": "Intertextualidade só existe com cópia literal.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O cartaz retoma e adapta a imagem de acolhimento do caderno.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "No caderno autoral “Banco de praça”, publicado por Luana Mota em 2024, uma personagem diz que guarda lugar para quem ainda vai chegar. Dois anos depois, o coletivo da escola prepara um cartaz para a sala de leitura: “Guardamos um lugar para quem chega com um livro”. A imagem mostra um banco vazio ao lado de uma pilha de romances emprestados. A legenda informa que estudantes montaram o espaço com doações recebidas no início do semestre.\nNota autoral de apresentação, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-21-Q02",
       "lessonId": "POR-21",
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Intertextualidade: citação, paráfrase, paródia e diálogo entre textos, qual princípio deve orientar a análise?",
+      "stem": "Como o relatório incorpora a frase do bilhete?",
       "options": [
         {
           "id": "A",
-          "text": "Citação explicita material de outro texto; paráfrase reformula uma ideia mantendo seu núcleo."
+          "text": "Ele apresenta uma citação direta, marcada como fala de Paulo Neri e identificada pela fonte."
         },
         {
           "id": "B",
-          "text": "Citação com fonte não é intertextualidade."
+          "text": "Ele cria uma paródia do bilhete ao inverter o sentido da frase sobre estantes.",
+          "targetsError": "interpretation",
+          "rationale": "A frase aparece sem alteração e não há inversão ou efeito humorístico descrito."
         },
         {
           "id": "C",
-          "text": "Sem conhecer a obra inteira nada pode ser analisado."
+          "text": "Ele faz uma paráfrase que substitui as palavras do bilhete por uma explicação equivalente.",
+          "targetsError": "conceptual",
+          "rationale": "O relatório conserva a formulação original entre aspas, em vez de reescrevê-la."
         },
         {
           "id": "D",
-          "text": "Intertextualidade só existe com cópia literal."
+          "text": "Ele alude ao bilhete sem identificar o texto ou quem escreveu a frase retomada.",
+          "targetsError": "attention",
+          "rationale": "O nome de Paulo e o título do bilhete aparecem junto à frase citada."
         },
         {
           "id": "E",
-          "text": "Paródia e paráfrase são iguais."
+          "text": "Ele transforma o bilhete em instrução técnica para distribuir livros entre as salas.",
+          "targetsError": "procedural",
+          "rationale": "O relato informa a distribuição, mas a frase retomada não fornece passos técnicos."
         }
       ],
       "correctOption": "A",
-      "explanation": "Citação explicita material de outro texto; paráfrase reformula uma ideia mantendo seu núcleo.",
+      "explanation": "A frase é reproduzida com aspas e atribuída a Paulo Neri e ao bilhete “Primeira prateleira”. A paráfrase parece possível porque a aluna segue com um relato próprio, mas o trecho entre aspas preserva a formulação da fonte.",
       "difficulty": "direct",
       "cognitiveOperation": "understand",
       "concepts": [
         "POR-21-C02"
       ],
-      "targetedError": "Paródia e paráfrase são iguais.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A frase aparece literalmente e com identificação da fonte.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Em 11 de março de 2026, uma aluna redigiu um relatório sobre o mutirão de livros. Ela incluiu a frase de um bilhete anterior: “Cada estante começa com uma escolha”, escrita por Paulo Neri em 2025. No relatório, a frase aparece entre aspas, acompanhada do nome do autor e do título do bilhete, “Primeira prateleira”. Depois, a aluna conta que a turma separou volumes para três salas e registrou as caixas entregues.\nRelatório autoral de Clara Reis, 2026."
     },
     {
       "id": "POR-21-Q03",
       "lessonId": "POR-21",
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Intertextualidade: citação, paráfrase, paródia e diálogo entre textos?",
+      "stem": "Que operação o jornal realiza ao reapresentar a orientação do mural?",
       "options": [
         {
           "id": "A",
-          "text": "Sem conhecer a obra inteira nada pode ser analisado."
+          "text": "Ele faz uma citação direta, pois conserva o mesmo enunciado entre aspas no jornal.",
+          "targetsError": "attention",
+          "rationale": "A nota não mantém as mesmas palavras nem usa aspas para indicar reprodução literal."
         },
         {
           "id": "B",
-          "text": "Intertextualidade só existe com cópia literal."
+          "text": "Ele cria uma paródia, pois ridiculariza a troca de livros e sua organização no pátio.",
+          "targetsError": "interpretation",
+          "rationale": "O texto informa alterações na feira sem ridicularizar o aviso anterior."
         },
         {
           "id": "C",
-          "text": "Paródia retoma forma/texto para transformá-lo, frequentemente com humor, crítica ou mudança de perspectiva."
+          "text": "Ele faz uma alusão indireta ao mural, sem retomar a finalidade ou os procedimentos da troca.",
+          "targetsError": "conceptual",
+          "rationale": "A nota repete a ação de levar e escolher livros, além de indicar local e novos detalhes."
         },
         {
           "id": "D",
-          "text": "Paródia e paráfrase são iguais."
+          "text": "Ele substitui a troca por uma campanha de arrecadação permanente para a biblioteca.",
+          "targetsError": "memory",
+          "rationale": "O texto preserva a escolha de outro livro durante a feira e não anuncia uma campanha permanente."
         },
         {
           "id": "E",
-          "text": "Citação com fonte não é intertextualidade."
+          "text": "Ele parafraseia a orientação com outra redação e acrescenta dados da edição atual."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Paródia retoma forma/texto para transformá-lo, frequentemente com humor, crítica ou mudança de perspectiva.",
+      "correctOption": "E",
+      "explanation": "A notícia reapresenta com outras palavras a mesma ação central de levar um livro e escolher outro. A nova mesa e a data de coleta são informações adicionais da edição de 2026; por isso, a retomada não é uma reprodução literal.",
       "difficulty": "applied",
       "cognitiveOperation": "discriminate",
       "concepts": [
         "POR-21-C03"
       ],
-      "targetedError": "Citação com fonte não é intertextualidade.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A orientação é reformulada e recebe detalhes da nova edição.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "O mural da Escola do Pinhal apresentou em 2024 uma nota: “A turma organizará uma troca de livros no pátio; cada participante pode levar um volume em bom estado”. Em 2026, o jornal da escola escreveu: “Alunos e famílias poderão deixar um livro conservado no pátio e escolher outro durante a feira”. A nova nota informa que a equipe acrescentou uma mesa infantil e que a coleta de volumes começa na segunda-feira.\nComparação autoral de textos escolares, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-21-Q04",
       "lessonId": "POR-21",
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Intertextualidade: citação, paráfrase, paródia e diálogo entre textos?",
+      "stem": "O que a peça altera ao retomar o aviso do corredor?",
       "options": [
         {
           "id": "A",
-          "text": "Intertextualidade só existe com cópia literal."
+          "text": "Ela preserva o aviso como regra dirigida aos estudantes durante as atividades.",
+          "targetsError": "procedural",
+          "rationale": "A peça desloca a cobrança para o alto-falante, em vez de registrar uma regra técnica para o aparelho."
         },
         {
           "id": "B",
-          "text": "Paródia e paráfrase são iguais."
+          "text": "Ela desloca a cobrança do estudante para a fonte dos anúncios e critica o ruído com humor."
         },
         {
           "id": "C",
-          "text": "Citação com fonte não é intertextualidade."
+          "text": "Ela mantém o pedido de silêncio e apenas troca o local em que ele deve ser seguido.",
+          "targetsError": "interpretation",
+          "rationale": "O rodapé muda o alvo do aviso e questiona o ruído, em vez de preservar seu pedido original."
         },
         {
           "id": "D",
-          "text": "Sem conhecer a obra inteira nada pode ser analisado."
+          "text": "Ela usa o aviso para lembrar o período de provas, sem comentar os anúncios do corredor.",
+          "targetsError": "attention",
+          "rationale": "A legenda relaciona a peça aos ruídos do bloco; não se limita a situar o período de provas."
         },
         {
           "id": "E",
-          "text": "Alusão é referência menos explícita que depende do repertório do leitor."
+          "text": "Ela resume a programação do alto-falante para orientar estudantes sobre o horário do recreio.",
+          "targetsError": "conceptual",
+          "rationale": "Os anúncios exemplificam o ruído criticado, não compõem uma agenda para estudantes."
         }
       ],
-      "correctOption": "E",
-      "explanation": "Alusão é referência menos explícita que depende do repertório do leitor.",
+      "correctOption": "B",
+      "explanation": "A peça preserva a forma curta do aviso e altera seu alvo: em vez de repreender leitores, chama atenção para o alto-falante que interrompe a leitura. A citação parece adequada porque há uma frase repetida, mas a mudança de sentido e o efeito crítico caracterizam a paródia.",
       "difficulty": "ifsc",
       "cognitiveOperation": "apply",
       "concepts": [
         "POR-21-C04"
       ],
-      "targetedError": "Sem conhecer a obra inteira nada pode ser analisado.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O aviso é transformado para produzir humor e crítica ao ruído.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Em 9 de junho de 2026, o jornal da escola publicou uma peça inspirada no formato do aviso “Silêncio durante a prova”. A imagem mostra um estudante tentando ler enquanto o alto-falante anuncia a hora do recreio, uma reunião e o treino. No rodapé, lê-se: “Silêncio durante a prova? Primeiro, avisem o alto-falante”. A legenda informa que o grupo quer discutir os ruídos no bloco de estudos.\nCrônica autoral de Tiago Nunes, 2026."
     },
     {
       "id": "POR-21-Q05",
       "lessonId": "POR-21",
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Intertextualidade: citação, paráfrase, paródia e diálogo entre textos?",
+      "stem": "Que pista permite reconhecer uma referência indireta ao caderno?",
       "options": [
         {
           "id": "A",
-          "text": "Paródia e paráfrase são iguais."
+          "text": "O cartaz reproduz literalmente a fala da personagem, destacada entre aspas.",
+          "targetsError": "attention",
+          "rationale": "O cartaz não reproduz uma fala da personagem; a pista descrita é visual."
         },
         {
           "id": "B",
-          "text": "O efeito intertextual depende da relação entre texto novo e texto-fonte, não apenas de palavras iguais."
+          "text": "A legenda informa o título e o autor do caderno que inspirou a campanha.",
+          "targetsError": "conceptual",
+          "rationale": "O trecho diz que o cartaz não informa o título nem o nome do autor anterior."
         },
         {
           "id": "C",
-          "text": "Citação com fonte não é intertextualidade."
+          "text": "A peça mantém a personagem e a sequência de escolhas descritas na história.",
+          "targetsError": "procedural",
+          "rationale": "A peça retoma elementos visuais, mas não apresenta personagens ou a sequência do enredo."
         },
         {
           "id": "D",
-          "text": "Sem conhecer a obra inteira nada pode ser analisado."
+          "text": "A imagem retoma elementos da narrativa — chave e porta — sem identificar a obra."
         },
         {
           "id": "E",
-          "text": "Intertextualidade só existe com cópia literal."
+          "text": "A resenhista cria uma paródia ao reproduzir o enredo completo da história anterior.",
+          "targetsError": "interpretation",
+          "rationale": "O cartaz aproveita uma imagem, sem ridicularizar a história nem reconstruir seu enredo."
         }
       ],
-      "correctOption": "B",
-      "explanation": "O efeito intertextual depende da relação entre texto novo e texto-fonte, não apenas de palavras iguais.",
+      "correctOption": "D",
+      "explanation": "O caderno associa uma escolha de chaves a portas; o cartaz retoma essa imagem em sua própria cena, sem indicar o título ou o autor. A resenhista descreve o eco visual, não uma cópia integral do enredo nem uma instrução para abrir uma sala real.",
       "difficulty": "applied",
       "cognitiveOperation": "evaluate",
       "concepts": [
         "POR-21-C05"
       ],
-      "targetedError": "Intertextualidade só existe com cópia literal.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O cartaz retoma a imagem de chaves e porta sem identificar diretamente o caderno.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "No catálogo de 18 de julho de 2026, a resenhista compara o cartaz de uma campanha com o caderno “O moinho e a ponte”, criado por Celso Moraes em 2022. Na história, uma personagem deixa três chaves em potes para que visitantes escolham qual porta abrir. O cartaz mostra uma criança segurando uma chave de metal diante de uma porta pintada e convida o público a escolher uma história. A peça não informa o título nem o nome do autor anterior.\nResenha autoral de Elisa Ramos, 2026."
     },
     {
       "id": "POR-21-Q06",
       "lessonId": "POR-21",
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Intertextualidade: citação, paráfrase, paródia e diálogo entre textos, qual análise está correta?",
+      "stem": "Que papel o poema de Rosa Lima desempenha na leitura da peça estudantil?",
       "options": [
         {
           "id": "A",
-          "text": "Citação com fonte não é intertextualidade."
+          "text": "Ele oferece uma referência para ler a janela iluminada como sinal de acolhimento."
         },
         {
           "id": "B",
-          "text": "Sem conhecer a obra inteira nada pode ser analisado."
+          "text": "Ele registra uma ideia que a biblioteca já aplicava antes da publicação do poema.",
+          "targetsError": "interpretation",
+          "rationale": "A ficha informa a inspiração da peça, mas não diz que o plantão existia em 2023."
         },
         {
           "id": "C",
-          "text": "Intertextualidade só existe com cópia literal."
+          "text": "Ele fornece uma orientação para escolher a lâmpada usada no corredor.",
+          "targetsError": "procedural",
+          "rationale": "O poema inspira a imagem; não fornece instruções para instalar uma lâmpada."
         },
         {
           "id": "D",
-          "text": "Reconhecer o texto-fonte amplia a interpretação, mas a questão deve fornecer pistas suficientes para a relação cobrada."
+          "text": "Ele substitui a peça estudantil e torna desnecessária a informação sobre o plantão.",
+          "targetsError": "conceptual",
+          "rationale": "A ficha apresenta as duas peças e o plantão atual, sem substituir uma pela outra."
         },
         {
           "id": "E",
-          "text": "Paródia e paráfrase são iguais."
+          "text": "Ele identifica quem preparou o anúncio do plantão de leitura.",
+          "targetsError": "attention",
+          "rationale": "Rosa Lima é autora do poema citado; o texto não a identifica como autora do anúncio."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Reconhecer o texto-fonte amplia a interpretação, mas a questão deve fornecer pistas suficientes para a relação cobrada.",
+      "correctOption": "A",
+      "explanation": "A ficha declara que a imagem estudantil foi inspirada no poema e aproxima a janela iluminada da ideia de acolhimento. A data anterior do poema pode sugerir que o plantão também existia naquela época, mas o catálogo só registra a inspiração da peça recente.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze",
       "concepts": [
         "POR-21-C06"
       ],
-      "targetedError": "Paródia e paráfrase são iguais.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O poema ajuda a interpretar a imagem sem comprovar a existência antiga do plantão.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "No catálogo de 4 de agosto de 2026, a equipe da biblioteca apresenta duas peças sobre o mesmo projeto. A primeira é um poema de Rosa Lima, “Luz na janela”, publicado no caderno local em 2023. A segunda, feita por estudantes, mostra uma janela acesa no corredor e anuncia o início de um plantão de leitura. A ficha informa que a nova imagem foi inspirada no poema e que o plantão recebeu o título “Uma luz para quem chega”.\nFicha autoral do catálogo, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-21-Q07",
       "lessonId": "POR-21",
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Intertextualidade só existe com cópia literal.”. Qual é a melhor correção?",
+      "stem": "Qual interpretação considera o diálogo entre o poema e a coluna?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "A coluna descreve a mesa como novo cenário sem preservar imagem ou ideia do poema.",
+          "targetsError": "attention",
+          "rationale": "A coluna transforma a imagem da ponte do poema; não a ignora."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "A coluna conserva a imagem da ponte e mantém o percurso solitário do poema.",
+          "targetsError": "conceptual",
+          "rationale": "O novo texto muda o percurso solitário para a participação coletiva de leitores."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "A coluna retoma a ponte de páginas e a desloca para uma criação coletiva de leitores."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "A coluna cita o poema literalmente e acrescenta os dados de sua publicação.",
+          "targetsError": "interpretation",
+          "rationale": "A coluna identifica a fonte, mas descreve uma transformação em vez de reproduzir sua formulação."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "A coluna associa os finais diferentes à recepção do poema no semestre anterior.",
+          "targetsError": "memory",
+          "rationale": "Os finais diferentes aparecem na coluna atual, sem evidência de escolha igual no semestre anterior."
         }
       ],
-      "correctOption": "A",
-      "explanation": "Intertextualidade ocorre quando um texto retoma, transforma, cita ou dialoga com outro texto/discurso reconhecível.",
+      "correctOption": "C",
+      "explanation": "A coluna retoma a imagem da ponte feita de páginas e desloca o sentido para uma mesa de criação compartilhada. A identificação do poema ajuda a reconhecer a fonte, mas não torna a coluna uma citação literal nem prova que o grupo já trabalhava junto no semestre anterior.",
       "difficulty": "applied",
       "cognitiveOperation": "diagnose_error",
       "concepts": [
         "POR-21-C01"
       ],
-      "targetedError": "Intertextualidade só existe com cópia literal.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "A coluna reconhece a fonte e transforma sua imagem para outro efeito.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "No jornal da feira de 19 de setembro de 2026, os estudantes publicaram uma coluna sobre um poema criado por sua turma no semestre anterior. O novo texto retoma a imagem de uma ponte montada com páginas, mas troca o caminho solitário do poema por uma mesa coletiva onde leitores acrescentam finais diferentes. A coluna informa quem escreveu o poema, quando ele foi apresentado e como a turma transformou a imagem para falar de leitura em grupo.\nColuna autoral do jornal da feira, Equipe Estudisc, 2026."
     },
     {
       "id": "POR-21-Q08",
       "lessonId": "POR-21",
       "type": "MCQ",
-      "stimulus": "Uma campanha ambiental recria a estrutura de um provérbio conhecido, trocando uma palavra para falar de desperdício.",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Qual leitura é mais bem sustentada sobre a possível relação com outros textos?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "O blog confirma a cópia de uma obra específica porque menciona histórias de viagem.",
+          "targetsError": "interpretation",
+          "rationale": "O texto não nomeia uma obra nem fornece trecho que comprove reprodução."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "O mural é uma citação direta, pois a comparação entre rua e página aparece no blog.",
+          "targetsError": "conceptual",
+          "rationale": "O blog não atribui a frase a uma fonte anterior ou a apresenta como reprodução literal."
         },
         {
           "id": "C",
-          "text": "Há retomada deliberada de fórmula conhecida; a mudança produz novo sentido dependente do reconhecimento do original."
+          "text": "A relação depende de localizar uma obra conhecida antes de ler a frase do mural.",
+          "targetsError": "prerequisite",
+          "rationale": "A imagem pode ser interpretada pelo próprio texto, sem exigir a identificação de uma obra externa."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "As cartas de arquivo fazem o mural funcionar como documento histórico do bairro.",
+          "targetsError": "attention",
+          "rationale": "As cartas são uma possível fonte; o texto não apresenta o mural como documento histórico do bairro."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "O trecho permite notar ecos de imagens de viagem, mas não afirmar uma fonte específica."
         }
       ],
-      "correctOption": "C",
-      "explanation": "Há retomada deliberada de fórmula conhecida; a mudança produz novo sentido dependente do reconhecimento do original.",
+      "correctOption": "E",
+      "explanation": "O blog menciona histórias de viagem e uma imagem de rua e página, mas não identifica um título ou autor que prove uma retomada determinada. A hipótese de cópia parece tentadora por causa da referência ao arquivo, porém o texto só informa que a equipe pediu autorização para usar cartas.",
       "difficulty": "ifsc",
       "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-21-C01",
         "POR-21-C02"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "O texto sugere um repertório, mas não identifica uma obra-fonte comprovável.",
+      "provenance": "VECTA_ORIGINAL",
+      "version": 2,
+      "stimulus": "Em 7 de outubro de 2026, o blog da escola divulgou uma campanha chamada “A cidade lê”. O texto descreve um mural com frases curtas de estudantes e informa que a equipe pediu autorização para usar trechos de cartas guardadas no arquivo familiar. Uma das frases do mural compara uma rua vazia a uma página em branco; o blog não identifica nenhuma obra literária específica, mas diz que a imagem foi escolhida após uma conversa sobre histórias de viagem.\nTexto autoral do blog escolar, Equipe Estudisc, 2026."
     }
   ]
 }

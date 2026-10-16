@@ -5,300 +5,379 @@
     {
       "id": "POR-08-Q01",
       "lessonId": "POR-08",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual afirmação descreve corretamente Tempos e modos verbais: indicativo, subjuntivo e imperativo em uso real da língua?",
+      "stem": "Qual conclusão sobre as plantas é sustentada pelo registro do sensor?",
       "options": [
         {
           "id": "A",
-          "text": "Subjuntivo sempre indica ação impossível."
+          "text": "O registro informa aumento de umidade na estufa, mas a condição de cada planta ainda precisa ser verificada."
         },
         {
           "id": "B",
-          "text": "Indicativo significa verdade científica."
+          "text": "Transforma a nova medição do meio-dia em uma ordem dirigida aos estudantes.",
+          "targetsError": "conceptual",
+          "rationale": "A medição futura é descrita como procedimento da equipe, não como ordem ao público."
         },
         {
           "id": "C",
-          "text": "Tempo verbal pode ser interpretado sem contexto."
+          "text": "Marca uma hipótese de que talvez o sensor tenha sido instalado na estufa.",
+          "targetsError": "interpretation",
+          "rationale": "A frase relata um resultado registrado, e a instalação não aparece como dúvida."
         },
         {
           "id": "D",
-          "text": "O indicativo costuma apresentar fatos, estados ou eventos como constatados ou assumidos pelo enunciador."
+          "text": "O registro confirma que todos os vasos estão encharcados, pois o sensor detectou umidade.",
+          "targetsError": "conceptual",
+          "rationale": "O aumento medido na estufa não confirma por si só a condição de cada vaso."
         },
         {
           "id": "E",
-          "text": "Imperativo serve apenas para ordens agressivas."
+          "text": "A equipe já concluiu a inspeção e identificou quais plantas precisam de água.",
+          "targetsError": "interpretation",
+          "rationale": "A nova medição e a verificação dos vasos ainda estão planejadas."
         }
       ],
-      "correctOption": "D",
-      "explanation": "O indicativo costuma apresentar fatos, estados ou eventos como constatados ou assumidos pelo enunciador.",
-      "difficulty": "foundation",
-      "cognitiveOperation": "recognize",
+      "correctOption": "A",
+      "explanation": "“Apontou” relata o que o sensor registrou. A forma indicativa apresenta esse conteúdo como informação do boletim, mas a própria técnica separa o registro da verificação individual dos vasos.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
         "POR-08-C01"
       ],
-      "targetedError": "Imperativo serve apenas para ordens agressivas.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Tomar o relato indicativo de uma medição como comprovação de uma conclusão mais ampla.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "A nota do grêmio registra que o sensor do laboratório apontou aumento de umidade na estufa durante a madrugada. A técnica responsável diz que a equipe fará uma nova medição ao meio-dia, quando abrir as janelas para a inspeção. No quadro, o texto distingue o registro obtido pelo aparelho do procedimento que ainda será feito. Uma estudante sugeriu que a frase “o sensor apontou aumento” provava por si só que todas as plantas estavam encharcadas; a técnica respondeu que o boletim descrevia um dado e que a equipe ainda precisava verificar os vasos."
     },
     {
       "id": "POR-08-Q02",
       "lessonId": "POR-08",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Em uma questão contextualizada sobre Tempos e modos verbais: indicativo, subjuntivo e imperativo, qual princípio deve orientar a análise?",
+      "stem": "O que as formas “pare” e “permaneça” expressam nessa mensagem?",
       "options": [
         {
           "id": "A",
-          "text": "O subjuntivo aparece frequentemente em hipótese, possibilidade, desejo, condição ou avaliação não apresentada como fato certo."
+          "text": "Uma solicitação para que os responsáveis impeçam a chuva antes da apresentação.",
+          "targetsError": "conceptual",
+          "rationale": "A mensagem expressa o que a coordenadora espera; não atribui aos responsáveis o controle do tempo."
         },
         {
           "id": "B",
-          "text": "Indicativo significa verdade científica."
+          "text": "A confirmação de que a chuva vai parar e o palco permanecerá seco.",
+          "targetsError": "interpretation",
+          "rationale": "“Espero que” apresenta essas condições como desejo, não como resultado confirmado."
         },
         {
           "id": "C",
-          "text": "Tempo verbal pode ser interpretado sem contexto."
+          "text": "Um desejo de que as condições previstas se realizem, ainda sem tratá-las como fato."
         },
         {
           "id": "D",
-          "text": "Imperativo serve apenas para ordens agressivas."
+          "text": "A decisão de realizar a apresentação no salão, independentemente do tempo.",
+          "targetsError": "attention",
+          "rationale": "O salão está reservado como alternativa, e o local ainda será confirmado."
         },
         {
           "id": "E",
-          "text": "Subjuntivo sempre indica ação impossível."
+          "text": "A previsão de que as capas separadas já foram colocadas nos instrumentos.",
+          "targetsError": "interpretation",
+          "rationale": "O texto diz que as capas foram separadas, mas não afirma que foram colocadas."
         }
       ],
-      "correctOption": "A",
-      "explanation": "O subjuntivo aparece frequentemente em hipótese, possibilidade, desejo, condição ou avaliação não apresentada como fato certo.",
+      "correctOption": "C",
+      "explanation": "“Espero que” enquadra “pare” e “permaneça” como algo desejado, e o restante do aviso mostra que o local ainda será confirmado. A leitura como fato consumado falha porque a coordenação mantém um plano alternativo.",
       "difficulty": "direct",
-      "cognitiveOperation": "understand",
+      "cognitiveOperation": "analyze",
       "concepts": [
         "POR-08-C02"
       ],
-      "targetedError": "Subjuntivo sempre indica ação impossível.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Interpretar uma expectativa com subjuntivo como relato de uma condição já confirmada.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "A coordenadora enviou uma mensagem às famílias antes da apresentação de sexta-feira: “Espero que a chuva pare até o fim da tarde e que o palco permaneça seco”. No parágrafo seguinte, ela informa que a equipe já separou as capas para os instrumentos e reservou o salão como alternativa. O aviso não afirma que a chuva cessou; descreve uma expectativa e apresenta um plano caso o tempo continue instável. Na conversa do grupo, alguns responsáveis perguntaram se deveriam levar guarda-chuvas, e a coordenação respondeu que confirmaria o local perto do horário de abertura."
     },
     {
       "id": "POR-08-Q03",
       "lessonId": "POR-08",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual alternativa evita uma generalização inadequada sobre Tempos e modos verbais: indicativo, subjuntivo e imperativo?",
+      "stem": "Qual função têm as formas verbais “guarde” e “retire” no aviso?",
       "options": [
         {
           "id": "A",
-          "text": "Tempo verbal pode ser interpretado sem contexto."
+          "text": "Relatam o que a equipe fez antes da chegada das turmas.",
+          "targetsError": "interpretation",
+          "rationale": "O aviso orienta as turmas sobre ações a realizar ao entrar."
         },
         {
           "id": "B",
-          "text": "Imperativo serve apenas para ordens agressivas."
+          "text": "Pedem que os visitantes escolham entre o armário e o balcão.",
+          "targetsError": "conceptual",
+          "rationale": "As formas indicam duas ações no percurso: guardar a mochila e retirar o bilhete."
         },
         {
           "id": "C",
-          "text": "O imperativo orienta a ação do interlocutor e pode expressar ordem, pedido, conselho, convite, instrução ou proibição."
+          "text": "Apresentam recomendações facultativas para quem quiser registrar a visita.",
+          "targetsError": "interpretation",
+          "rationale": "O aviso dá instruções de entrada; o registro é uma razão para retirar o bilhete."
         },
         {
           "id": "D",
-          "text": "Subjuntivo sempre indica ação impossível."
+          "text": "Comunicam o que a professora pretende fazer depois da visita.",
+          "targetsError": "interpretation",
+          "rationale": "As ações são dirigidas às turmas visitantes, não à professora."
         },
         {
           "id": "E",
-          "text": "Indicativo significa verdade científica."
+          "text": "Orientam os visitantes sobre ações a realizar, com tom de instrução cordial."
         }
       ],
-      "correctOption": "C",
-      "explanation": "O imperativo orienta a ação do interlocutor e pode expressar ordem, pedido, conselho, convite, instrução ou proibição.",
-      "difficulty": "applied",
-      "cognitiveOperation": "discriminate",
+      "correctOption": "E",
+      "explanation": "As formas se dirigem às turmas que chegam e indicam o que fazer com a mochila e o bilhete. A expressão “por favor” e a explicação da monitora situam o aviso como orientação cordial, não como relato de ações passadas.",
+      "difficulty": "direct",
+      "cognitiveOperation": "apply",
       "concepts": [
         "POR-08-C03"
       ],
-      "targetedError": "Indicativo significa verdade científica.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler orientações dirigidas ao visitante como relato passado ou desejo da equipe.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Na entrada do museu escolar, a equipe colocou um aviso para as turmas visitantes: “Por favor, guarde a mochila no armário e retire o bilhete antes de entrar na sala”. Embaixo, havia uma seta até o balcão e o horário da próxima visita guiada. A monitora explicou que o armário ficava disponível para quem quisesse acompanhar a exposição com as mãos livres; a retirada do bilhete ajudava a equipe a registrar o número de visitantes. O tom do aviso era cordial, e a professora acompanhou a turma até a porta."
     },
     {
       "id": "POR-08-Q04",
       "lessonId": "POR-08",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual explicação é linguisticamente mais adequada ao estudar Tempos e modos verbais: indicativo, subjuntivo e imperativo?",
+      "stem": "Que leitura do modo verbal combina com a situação narrada?",
       "options": [
         {
           "id": "A",
-          "text": "Imperativo serve apenas para ordens agressivas."
+          "text": "Relatam que os participantes já escolheram a bancada e testaram a argila.",
+          "targetsError": "interpretation",
+          "rationale": "O recado abre a oficina e orienta ações que ainda serão realizadas."
         },
         {
           "id": "B",
-          "text": "Subjuntivo sempre indica ação impossível."
+          "text": "A artista usa o imperativo para convidar os participantes a experimentar a atividade."
         },
         {
           "id": "C",
-          "text": "Indicativo significa verdade científica."
+          "text": "Afirmam que testar a argila garante domínio da modelagem.",
+          "targetsError": "conceptual",
+          "rationale": "A artista convida a uma primeira experiência e oferece ajuda, sem afirmar domínio."
         },
         {
           "id": "D",
-          "text": "Tempo verbal pode ser interpretado sem contexto."
+          "text": "Apresentam uma condição para que a artista permita o uso das ferramentas.",
+          "targetsError": "conceptual",
+          "rationale": "O texto apresenta ferramentas disponíveis e um convite, sem estabelecer essa condição."
         },
         {
           "id": "E",
-          "text": "O valor do modo depende do contexto; imperativo não significa necessariamente autoritarismo."
+          "text": "Indicam que os participantes devem testar a argila antes de a artista explicar a atividade.",
+          "targetsError": "interpretation",
+          "rationale": "A ordem das ações é indicada, mas a situação dá às formas tom de convite, conforme a intenção narrada."
         }
       ],
-      "correctOption": "E",
-      "explanation": "O valor do modo depende do contexto; imperativo não significa necessariamente autoritarismo.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "apply",
+      "correctOption": "B",
+      "explanation": "“Escolha” e “experimente” orientam ações que os participantes ainda podem realizar. O relato acrescenta que a artista queria convidá-los e ofereceria ajuda; por isso, o imperativo não assume tom autoritário.",
+      "difficulty": "applied",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
-        "POR-08-C04"
+        "POR-08-C05"
       ],
-      "targetedError": "Tempo verbal pode ser interpretado sem contexto.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Associar automaticamente o imperativo a uma ordem autoritária e ignorar o convite descrito.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "No início de uma oficina de cerâmica, a artista recebeu os participantes com o recado “Escolha uma bancada e experimente a argila antes de começar o desenho”. Em seguida, explicou que havia ferramentas no centro da mesa e que qualquer pessoa poderia pedir ajuda para preparar o barro. Um participante comentou que a frase parecia uma ordem; a artista respondeu que queria convidar o grupo a testar o material sem medo de errar. O aviso foi lido em voz alta com sorriso, e a turma começou a atividade conversando entre si."
     },
     {
       "id": "POR-08-Q05",
       "lessonId": "POR-08",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Qual critério é seguro para resolver uma questão sobre Tempos e modos verbais: indicativo, subjuntivo e imperativo?",
+      "stem": "Que relação temporal a forma “havia pendurado” apresenta?",
       "options": [
         {
           "id": "A",
-          "text": "Subjuntivo sempre indica ação impossível."
+          "text": "A equipe vai pendurar as placas depois que a monitora chegar.",
+          "targetsError": "interpretation",
+          "rationale": "O relato informa que as placas já estavam penduradas na chegada."
         },
         {
           "id": "B",
-          "text": "Tempos verbais situam eventos em relação ao momento da fala ou a outros eventos e podem produzir efeitos narrativos."
+          "text": "A monitora pendurou as placas enquanto chegava ao pátio.",
+          "targetsError": "attention",
+          "rationale": "A equipe é o sujeito de “havia pendurado”, e a ação antecede a chegada."
         },
         {
           "id": "C",
-          "text": "Indicativo significa verdade científica."
+          "text": "A equipe costuma pendurar placas antes de receber monitoras em diferentes eventos.",
+          "targetsError": "conceptual",
+          "rationale": "O relatório ordena etapas desta feira, não descreve um hábito geral."
         },
         {
           "id": "D",
-          "text": "Tempo verbal pode ser interpretado sem contexto."
+          "text": "A ação de pendurar ocorreu antes da chegada da monitora."
         },
         {
           "id": "E",
-          "text": "Imperativo serve apenas para ordens agressivas."
+          "text": "A monitora chegou antes de a equipe concluir a colocação das placas.",
+          "targetsError": "interpretation",
+          "rationale": "“Já havia pendurado” indica que a colocação foi concluída antes da chegada."
         }
       ],
-      "correctOption": "B",
-      "explanation": "Tempos verbais situam eventos em relação ao momento da fala ou a outros eventos e podem produzir efeitos narrativos.",
-      "difficulty": "applied",
-      "cognitiveOperation": "evaluate",
+      "correctOption": "D",
+      "explanation": "“Havia pendurado” apresenta a colocação das placas como concluída antes de a monitora chegar. O relatório reforça essa ordem ao dizer que os voluntários já tinham testado os microfones antes da chegada dela.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze",
       "concepts": [
-        "POR-08-C05"
+        "POR-08-C04"
       ],
-      "targetedError": "Imperativo serve apenas para ordens agressivas.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Colocar no mesmo momento ou depois da chegada uma ação que o texto situa antes dela.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Quando a nova monitora chegou ao pátio, a equipe já havia pendurado as placas que indicavam o percurso da feira. Ela conferiu os mapas sobre a mesa, perguntou pelo responsável pelo som e recebeu a lista de expositores. O relatório registra que, antes da chegada dela, os voluntários haviam testado os microfones e colocado as caixas perto do palco. Depois, a monitora caminhou pelo trajeto e encontrou uma placa virada para a parede. A coordenação anotou o problema para corrigir a sinalização antes da abertura."
     },
     {
       "id": "POR-08-Q06",
       "lessonId": "POR-08",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Ao comparar alternativas sobre Tempos e modos verbais: indicativo, subjuntivo e imperativo, qual análise está correta?",
+      "stem": "Qual forma verbal mostra uma ação em andamento no momento descrito?",
       "options": [
         {
           "id": "A",
-          "text": "Indicativo significa verdade científica."
+          "text": "“Estava montando”, que apresenta a montagem como atividade em curso às dez horas."
         },
         {
           "id": "B",
-          "text": "Tempo verbal pode ser interpretado sem contexto."
+          "text": "“Vai receber”, que apresenta a pintura como atividade em curso às dez horas.",
+          "targetsError": "conceptual",
+          "rationale": "A tinta será aplicada depois da secagem; a montagem é que estava em andamento às dez."
         },
         {
           "id": "C",
-          "text": "Imperativo serve apenas para ordens agressivas."
+          "text": "“Seriam usadas”, que descreve o teste que a equipe planejava fazer com as peças.",
+          "targetsError": "interpretation",
+          "rationale": "A forma apresenta um uso previsto, não a ação em curso às dez horas."
         },
         {
           "id": "D",
-          "text": "Locuções verbais combinam auxiliar e forma nominal para expressar tempo, aspecto ou modalidade."
+          "text": "“Pretende apresentar”, que indica um plano para sexta-feira condicionado à cola.",
+          "targetsError": "conceptual",
+          "rationale": "A apresentação é um plano futuro condicionado, não a atividade em curso no horário citado."
         },
         {
           "id": "E",
-          "text": "Subjuntivo sempre indica ação impossível."
+          "text": "“Esteja firme”, que expressa a condição para a apresentação planejada.",
+          "targetsError": "attention",
+          "rationale": "A forma indica uma condição futura; a atividade em andamento é a montagem."
         }
       ],
-      "correctOption": "D",
-      "explanation": "Locuções verbais combinam auxiliar e forma nominal para expressar tempo, aspecto ou modalidade.",
-      "difficulty": "ifsc",
+      "correctOption": "A",
+      "explanation": "“Estava montando” combina o auxiliar com a forma nominal e descreve uma atividade em curso às dez horas. “Vai receber” aponta para uma etapa posterior, enquanto a apresentação depende de a cola ficar firme.",
+      "difficulty": "applied",
       "cognitiveOperation": "analyze",
       "concepts": [
         "POR-08-C06"
       ],
-      "targetedError": "Subjuntivo sempre indica ação impossível.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir a locução que descreve a montagem em curso com etapas futuras ou condicionais.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "O diário do laboratório descreve a preparação de uma maquete para a mostra de ciências. Às dez horas, a equipe estava montando a ponte de papelão e já tinha separado as peças que seriam usadas no teste. A professora avisou que o modelo vai receber uma camada de tinta depois da secagem. No fim do registro, um estudante escreveu que o grupo pretende apresentar a maquete na sexta-feira, desde que a cola esteja firme. O caderno traz uma fotografia do trabalho incompleto, com as ferramentas ainda sobre a mesa."
     },
     {
       "id": "POR-08-Q07",
       "lessonId": "POR-08",
+      "version": 2,
       "type": "MCQ",
-      "stem": "Um estudante afirma: “Imperativo serve apenas para ordens agressivas.”. Qual é a melhor correção?",
+      "stem": "Por que “abrir” aparece nessa condição?",
       "options": [
         {
           "id": "A",
-          "text": "A análise deve rejeitar a generalização e voltar às relações entre forma, contexto e sentido."
+          "text": "Para afirmar que a sessão certamente ocorrerá no pátio às seis.",
+          "targetsError": "conceptual",
+          "rationale": "A comissão prevê uma alternativa se a condição não se cumprir."
         },
         {
           "id": "B",
-          "text": "A generalização deve ser aceita sem verificar contexto."
+          "text": "Para registrar o estado do céu observado pela manhã.",
+          "targetsError": "attention",
+          "rationale": "A observação da manhã aparece em outra oração; “abrir” faz parte da condição para a sessão."
         },
         {
           "id": "C",
-          "text": "A melhor estratégia é decorar a frase."
+          "text": "Para apresentar uma possibilidade que precisa se cumprir para a sessão ocorrer no pátio."
         },
         {
           "id": "D",
-          "text": "Não há critério linguístico para avaliar a afirmação."
+          "text": "Para instruir a equipe a abrir a sala de vídeo antes do início.",
+          "targetsError": "interpretation",
+          "rationale": "O verbo se refere ao céu na condição, não à abertura da sala."
         },
         {
           "id": "E",
-          "text": "Basta escolher a alternativa mais longa."
+          "text": "Para indicar que o filme ao ar livre foi exibido em uma sessão anterior.",
+          "targetsError": "interpretation",
+          "rationale": "O aviso trata do planejamento da sessão atual e não relata uma anterior."
         }
       ],
-      "correctOption": "A",
-      "explanation": "O indicativo costuma apresentar fatos, estados ou eventos como constatados ou assumidos pelo enunciador.",
+      "correctOption": "C",
+      "explanation": "A construção com “se” deixa a sessão no pátio condicionada ao tempo até as seis; a possibilidade de chuva e a sala alternativa mostram que o resultado ainda não está confirmado. A frase sobre o céu claro descreve outra observação, feita pela manhã.",
       "difficulty": "applied",
-      "cognitiveOperation": "diagnose_error",
+      "cognitiveOperation": "analyze_context",
       "concepts": [
-        "POR-08-C01"
+        "POR-08-C02",
+        "POR-08-C05"
       ],
-      "targetedError": "Imperativo serve apenas para ordens agressivas.",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Ler a condição com subjuntivo como garantia de que o evento ocorrerá no pátio.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "A comissão que organiza a sessão ao ar livre publicou duas informações no mural. A primeira dizia “O céu está claro nesta manhã”, depois da observação feita às nove horas. A segunda anotava “Se o céu abrir até as seis, a sessão começará no pátio”; caso contrário, o filme seria exibido na sala de vídeo. A previsão do tempo ainda indicava possibilidade de chuva à tarde, e a equipe reservou cadeiras para os dois espaços. A comissão prometeu confirmar o local por mensagem antes do início da sessão."
     },
     {
       "id": "POR-08-Q08",
       "lessonId": "POR-08",
+      "version": 2,
       "type": "MCQ",
-      "stimulus": "Num cartaz: “Proteja seus dados. Verifique o remetente. Não clique em links suspeitos.”",
-      "stem": "A partir do trecho, qual análise é a mais adequada?",
+      "stem": "Que efeito têm as formas verbais no cartaz?",
       "options": [
         {
           "id": "A",
-          "text": "O trecho não permite nenhuma análise."
+          "text": "Relatam o que os visitantes fizeram na troca anterior.",
+          "targetsError": "interpretation",
+          "rationale": "O cartaz dirige as ações a quem chega para a troca de livros."
         },
         {
           "id": "B",
-          "text": "A única tarefa é classificar todas as palavras."
+          "text": "Apresentam uma possibilidade de deixar as caixas no corredor.",
+          "targetsError": "conceptual",
+          "rationale": "O aviso orienta a escolha, a conferência e a devolução da caixa ao balcão."
         },
         {
           "id": "C",
-          "text": "As formas orientam o leitor e funcionam como imperativos, com tom de conselho/prevenção."
+          "text": "Descrevem a sequência que a bibliotecária seguiu para organizar o espaço.",
+          "targetsError": "attention",
+          "rationale": "A bibliotecária escreveu o cartaz; as formas se dirigem aos visitantes."
         },
         {
           "id": "D",
-          "text": "A análise depende apenas do tamanho do trecho."
+          "text": "Pedem que os visitantes deixem os títulos no balcão antes de escolher.",
+          "targetsError": "interpretation",
+          "rationale": "O texto orienta a devolução da caixa depois da leitura, não antes da escolha."
         },
         {
           "id": "E",
-          "text": "Qualquer interpretação é igualmente válida."
+          "text": "Orientam a sequência de ações do visitante com instruções de uso do espaço."
         }
       ],
-      "correctOption": "C",
-      "explanation": "As formas orientam o leitor e funcionam como imperativos, com tom de conselho/prevenção.",
-      "difficulty": "ifsc",
-      "cognitiveOperation": "analyze_context",
+      "correctOption": "E",
+      "explanation": "“Escolha”, “confira” e “devolva” organizam ações do visitante durante a troca. O agradecimento e o tom de acolhimento situam as formas como instruções de uso do espaço, e não como ordens agressivas ou relatos passados.",
+      "difficulty": "direct",
+      "cognitiveOperation": "analyze",
       "concepts": [
-        "POR-08-C01",
-        "POR-08-C02"
+        "POR-08-C03"
       ],
-      "targetedError": "interpretação sem apoio textual ou análise puramente mecânica",
-      "provenance": "VECTA_ORIGINAL"
+      "targetedError": "Confundir orientações ao visitante com relato de ações já concluídas pela bibliotecária.",
+      "provenance": "VECTA_ORIGINAL",
+      "stimulus": "Na biblioteca do bairro, um cartaz recebe as pessoas que chegam para a troca de livros. O texto diz: “Escolha um título, confira a etiqueta e devolva a caixa ao balcão depois da leitura”. Em seguida, informa que os exemplares podem ser levados por duas semanas e que há um caderno para registrar as trocas. A bibliotecária escreveu o aviso depois de observar que alguns visitantes deixavam as caixas no corredor; ela também agradece a colaboração de quem participa. O cartaz fica ao lado de uma mesa baixa, acessível a crianças e adultos."
     }
   ]
 }

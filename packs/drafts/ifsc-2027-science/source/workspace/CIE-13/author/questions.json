@@ -2,294 +2,292 @@
   {
     "id": "CIE-13-Q001",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Durante uma revisão de separação de misturas, qual afirmação apresenta corretamente uma ideia fundamental?",
+    "stem": "Na cozinha de uma escola, uma turma encontrou feijões misturados a pequenos pedaços de palha depois de uma atividade de plantio. Os materiais eram sólidos, podiam ser vistos separadamente e tinham tamanhos parecidos, mas as palhas podiam ser retiradas com os dedos sem danificar os grãos. A equipe precisava escolher uma ação simples para limpar a amostra antes de guardá-la.\n\nQual procedimento aproveita melhor a diferença descrita?",
     "options": [
       {
         "key": "A",
-        "text": "Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos."
+        "text": "Separar os componentes com uma peneira, aproveitando uma diferença de tamanho entre eles."
       },
       {
         "key": "B",
-        "text": "Decantação exige que todos os componentes tenham a mesma densidade."
+        "text": "Usar uma corrente de ar para deslocar a palha, se a diferença de massa facilitar a separação."
       },
       {
         "key": "C",
-        "text": "Um único método de separação funciona para qualquer mistura."
+        "text": "Adicionar água e retirar os feijões da mistura depois que a palha ficar na superfície."
       },
       {
         "key": "D",
-        "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        "text": "Retirar manualmente os pedaços de palha, usando catação."
       },
       {
         "key": "E",
-        "text": "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente."
+        "text": "Espalhar a amostra e separar as palhas por catação antes de guardar os grãos."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a correta: Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos.",
+    "correctOption": "D",
+    "explanation": "O relato destaca sólidos visíveis que podem ser reconhecidos e retirados à mão, característica adequada à catação. A filtração é tentadora por ser um método comum, mas falha porque não é a diferença de tamanho em relação a um meio poroso que orienta essa separação.",
     "difficulty": "FOUNDATION",
-    "cognitiveOperation": "UNDERSTAND",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
       "CIE-13-CON-01"
     ],
-    "targetedError": "core_concept",
+    "targetedError": "A [method mismatch]: propõe aquecimento para materiais sólidos visíveis; B [phase-change confusion]: adiciona líquido sem necessidade; C [filter misuse]: escolhe um meio poroso para objetos grandes e distinguíveis; E [irrelevant property]: usa cor ou rotação sem relação com a separação manual.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-13-Q002",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Um estudante precisa explicar separação de misturas sem recorrer a uma regra decorada. Qual alternativa está cientificamente adequada?",
+    "stem": "Na oficina de jardinagem, areia fina e pedrinhas foram reunidas em um balde para preparar o fundo de vasos. O grupo despejou uma porção em uma peneira; as partículas menores atravessaram os orifícios, enquanto as maiores permaneceram acima. A monitora pede que os alunos expliquem por que o utensílio funciona para essa amostra e qual característica dos sólidos está sendo explorada.\n\nQual método descreve a operação observada?",
     "options": [
       {
         "key": "A",
-        "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        "text": "Peneiração, que separa sólidos de tamanhos diferentes."
       },
       {
         "key": "B",
-        "text": "Decantação exige que todos os componentes tenham a mesma densidade."
+        "text": "Catação, escolhendo manualmente as partículas maiores que aparecem na mistura."
       },
       {
         "key": "C",
-        "text": "Um único método de separação funciona para qualquer mistura."
+        "text": "Decantação, deixando os componentes se acomodarem antes de transferir uma parte."
       },
       {
         "key": "D",
-        "text": "Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso."
+        "text": "Filtração, usando um meio poroso para reter partículas sólidas em suspensão."
       },
       {
         "key": "E",
-        "text": "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente."
+        "text": "Centrifugação, acelerando a separação de partículas com comportamentos diferentes."
       }
     ],
-    "correctOption": "D",
-    "explanation": "A alternativa D é a correta: Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso.",
+    "correctOption": "A",
+    "explanation": "As partículas pequenas passam pelos orifícios e as maiores ficam retidas; a peneiração usa a diferença de tamanho entre sólidos. A catação falha como descrição da operação porque o relato mostra uma peneira realizando a separação em conjunto.",
     "difficulty": "DIRECT",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
       "CIE-13-CON-02"
     ],
-    "targetedError": "concept_discrimination",
+    "targetedError": "B [tool/operation mismatch]: descreve retirada manual que não ocorreu; C [phase mismatch]: inventa líquido e suspensão; D [process confusion]: atribui mudanças de estado a sólidos que não foram aquecidos; E [dissolved/undissolved confusion]: desloca o caso para um soluto em fluido.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-13-Q003",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa estabelece uma relação correta entre ideias estudadas em separação de misturas?",
+    "stem": "Um filtro de papel foi colocado sobre um funil para limpar água barrenta coletada em um recipiente. Depois da passagem, partículas sólidas ficaram no papel e o líquido saiu para um copo abaixo. Em uma segunda bancada, havia água com sal dissolvido e sem grãos visíveis. A professora pede que a turma compare os dois casos antes de escolher um procedimento para cada mistura.\n\nQual conclusão sobre a primeira amostra é adequada?",
     "options": [
       {
         "key": "A",
-        "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        "text": "A decantação também pode clarificar água barrenta após as partículas se depositarem."
       },
       {
         "key": "B",
-        "text": "Um único método de separação funciona para qualquer mistura."
+        "text": "A peneiração separa partículas sólidas quando seus tamanhos permitem a retenção na malha."
       },
       {
         "key": "C",
-        "text": "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente."
+        "text": "A filtração reteve sólido não dissolvido ao usar um meio poroso."
       },
       {
         "key": "D",
-        "text": "Decantação exige que todos os componentes tenham a mesma densidade."
+        "text": "A sedimentação pode concentrar o barro no fundo antes da retirada da água superior."
       },
       {
         "key": "E",
-        "text": "Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis."
+        "text": "A centrifugação pode acelerar a separação de partículas suspensas no líquido."
       }
     ],
-    "correctOption": "E",
-    "explanation": "A alternativa E é a correta: Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis.",
-    "difficulty": "DIRECT",
+    "correctOption": "C",
+    "explanation": "A pista é o material sólido que ficou no papel enquanto o líquido atravessou; a filtração separa sólido não dissolvido de um fluido em condições adequadas. A alternativa sobre sal dissolvido falha porque partículas dissolvidas atravessam os poros junto com a água.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
       "CIE-13-CON-03"
     ],
-    "targetedError": "relationship",
+    "targetedError": "A [dissolved-particle misconception]: trata soluto dissolvido como grão retido; B [method/process confusion]: atribui vaporização à sedimentação; D [phase-change confusion]: troca o papel da evaporação e inventa coleta de solvente; E [apparatus confusion]: confunde filtração com condensação.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-13-Q004",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual método é adequado para separar areia não dissolvida da água em uma mistura simples?",
+    "stem": "Depois de misturar terra com água em um pote alto, uma equipe deixou o recipiente parado por alguns minutos. Parte do material sólido se acumulou no fundo e a camada superior ficou mais clara. Os estudantes planejaram transferir cuidadosamente a porção líquida para outro pote, mantendo o depósito no recipiente inicial. A ficha de observação informa que a separação ocorre após repouso.\n\nQual método corresponde à etapa planejada?",
     "options": [
       {
         "key": "A",
-        "text": "Sublimação."
+        "text": "Peneiração, usando uma malha que retenha partículas maiores da mistura."
       },
       {
         "key": "B",
-        "text": "Fusão."
+        "text": "Filtração, fazendo a água atravessar um meio que retenha partículas de terra."
       },
       {
         "key": "C",
-        "text": "Eletrólise."
+        "text": "Evaporação, retirando água para deixar o material sólido no recipiente."
       },
       {
         "key": "D",
-        "text": "Filtração."
+        "text": "Centrifugação, acelerando a concentração do sólido no fundo do recipiente."
       },
       {
         "key": "E",
-        "text": "Magnetização, se a areia não for magnética."
+        "text": "Decantação, aproveitando a sedimentação e o vertimento cuidadoso."
       }
     ],
-    "correctOption": "D",
-    "explanation": "Filtração.",
-    "difficulty": "APPLIED",
+    "correctOption": "E",
+    "explanation": "O depósito no fundo e a transferência cuidadosa da camada superior caracterizam a decantação após sedimentação. A evaporação não corresponde porque o plano é verter o líquido para outro pote, sem remover o solvente por aquecimento.",
+    "difficulty": "DIRECT",
     "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-13-CON-01",
-      "CIE-13-CON-02",
-      "CIE-13-CON-03"
+      "CIE-13-CON-04"
     ],
-    "targetedError": "application",
+    "targetedError": "A [size/color distraction]: escolhe peneiração sem malha ou sólidos separados por tamanho; B [manual-removal mismatch]: ignora a suspensão e o repouso; C [solvent recovery confusion]: atribui coleta por condensação a um vertimento; D [equipment mismatch]: menciona rotação ausente do procedimento.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-13-Q005",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Analise as afirmações a seguir:\nI. Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos.\nII. Filtração separa sal dissolvido da água de forma eficiente.\nIII. Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis.\nIV. Decantação exige que todos os componentes tenham a mesma densidade.\nAssinale a alternativa CORRETA.",
+    "stem": "Uma amostra de água turva foi colocada em pequenos tubos equilibrados dentro de um equipamento que gira rapidamente. Ao final, os registros mostram que a parte mais densa se concentrou no fundo dos tubos, enquanto o líquido ficou acima. Os alunos comparam a observação com um pote deixado em repouso e discutem como o movimento do equipamento influenciou a separação dos componentes.\n\nQue técnica foi utilizada nessa bancada?",
     "options": [
       {
         "key": "A",
-        "text": "Apenas I está correta."
+        "text": "Sedimentação, deixando a amostra em repouso para concentrar o material mais denso."
       },
       {
         "key": "B",
-        "text": "Apenas I e III estão corretas."
+        "text": "Centrifugação, que acelera a separação de materiais com densidades diferentes."
       },
       {
         "key": "C",
-        "text": "Apenas II e IV estão corretas."
+        "text": "Decantação, retirando a camada líquida depois que parte do sólido se deposita."
       },
       {
         "key": "D",
-        "text": "Apenas I, II e III estão corretas."
+        "text": "Filtração, conduzindo a suspensão por um meio que retenha partículas sólidas."
       },
       {
         "key": "E",
-        "text": "Todas estão corretas."
+        "text": "Evaporação, removendo parte do líquido para concentrar os componentes restantes."
       }
     ],
     "correctOption": "B",
-    "explanation": "As afirmações I e III estão corretas; II e IV reproduzem erros conceituais comuns.",
-    "difficulty": "IFSC",
+    "explanation": "Os tubos giraram rapidamente e a parte mais densa se concentrou no fundo, descrição de centrifugação. A decantação por repouso é uma comparação plausível, mas falha como identificação porque a técnica observada empregou rotação acelerada.",
+    "difficulty": "APPLIED",
     "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-13-CON-01",
-      "CIE-13-CON-02",
-      "CIE-13-CON-03",
-      "CIE-13-CON-04"
+      "CIE-13-CON-05"
     ],
-    "targetedError": "multi_statement_reasoning",
+    "targetedError": "A [tool mismatch]: atribui pinça ao processo mecanizado; C [phase-change confusion]: introduz resfriamento e condensação que não ocorreram; D [apparatus invention]: supõe papel de filtro ausente; E [solvent-removal confusion]: trata separação por giro como vaporização.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-13-Q006",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Ao transferir o que foi estudado sobre separação de misturas para uma situação nova, qual conclusão permanece válida?",
+    "stem": "Em uma estação de cristalização, uma solução de sal foi aquecida em uma placa até que a água diminuísse e cristais permanecessem no recipiente. A turma registrou que o sólido podia ser recolhido, mas o vapor não foi conduzido a um condensador nem armazenado em outro frasco. O objetivo era decidir se o procedimento recuperava um ou os dois componentes originais da solução.\n\nQual avaliação corresponde ao que foi observado?",
     "options": [
       {
         "key": "A",
-        "text": "Decantação exige que todos os componentes tenham a mesma densidade."
+        "text": "A placa favoreceu a cristalização do sal; como o vapor não foi coletado, só o soluto ficou disponível."
       },
       {
         "key": "B",
-        "text": "Destilação simples combina vaporização e condensação e pode recuperar solvente de uma solução em casos adequados."
+        "text": "A destilação poderia recuperar a água se o vapor fosse conduzido a um condensador e coletado."
       },
       {
         "key": "C",
-        "text": "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente."
+        "text": "A filtração poderia reter cristais já formados, mas não separa diretamente o sal ainda dissolvido."
       },
       {
         "key": "D",
-        "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        "text": "A decantação poderia separar fases após repouso, caso a mistura apresentasse camadas distintas."
       },
       {
         "key": "E",
-        "text": "Um único método de separação funciona para qualquer mistura."
+        "text": "A catação retirou os cristais antes que a solução fosse aquecida."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: Destilação simples combina vaporização e condensação e pode recuperar solvente de uma solução em casos adequados.",
-    "difficulty": "APPLIED",
-    "cognitiveOperation": "TRANSFER",
+    "correctOption": "A",
+    "explanation": "Os cristais permaneceram após a água diminuir, mas não houve condensador ou frasco de coleta para o vapor; a evaporação recuperou o soluto, não o solvente. A destilação é tentadora porque pode recuperar água, porém exige condensação que não aparece no relato.",
+    "difficulty": "IFSC",
+    "cognitiveOperation": "ANALYZE",
     "conceptIds": [
-      "CIE-13-CON-05"
+      "CIE-13-CON-06"
     ],
-    "targetedError": "transfer",
+    "targetedError": "B [distillation/evaporation confusion]: afirma recuperação de solvente sem condensador; C [dissolution/filter confusion]: usa filtração para um soluto dissolvido; D [phase-change mismatch]: atribui coleta de vapor à decantação; E [sequence error]: coloca retirada manual antes da cristalização.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-13-Q007",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual alternativa contém um ERRO conceitual que deve ser evitado ao responder questões sobre separação de misturas?",
+    "stem": "Uma equipe montou um aparato com um balão de destilação, um tubo resfriado e um frasco receptor. A solução salgada foi aquecida; o líquido que se formou no tubo chegou ao frasco, enquanto o material dissolvido permaneceu no balão. O caderno mostra o caminho do vapor e sua volta ao estado líquido, e a turma precisa nomear o processo observado.\n\nQue separação ocorreu no aparato?",
     "options": [
       {
         "key": "A",
-        "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        "text": "Peneiração poderia separar sólidos de granulometrias diferentes antes de dissolver o sal."
       },
       {
         "key": "B",
-        "text": "Decantação explora diferenças de densidade e pode separar sólido sedimentado de líquido ou líquidos imiscíveis."
+        "text": "Decantação poderia separar fases que formassem camadas e fossem vertidas com cuidado."
       },
       {
         "key": "C",
-        "text": "Evaporação pode recuperar um soluto sólido ao remover o solvente, mas não recupera o solvente."
+        "text": "Catação poderia retirar sólidos visíveis e separáveis manualmente de uma mistura."
       },
       {
         "key": "D",
-        "text": "Filtração separa, em situações adequadas, sólido não dissolvido de um fluido usando um meio poroso."
+        "text": "O vapor passou ao tubo resfriado e foi recolhido como líquido, enquanto o sal ficou no balão."
       },
       {
         "key": "E",
-        "text": "Catação e peneiração exploram diferenças visíveis ou de tamanho entre sólidos."
+        "text": "Filtração poderia reter partículas sólidas suspensas, mas não recolher o vapor condensado."
       }
     ],
-    "correctOption": "A",
-    "explanation": "A alternativa A é a incorreta: Filtração separa sal dissolvido da água de forma eficiente. As demais expressam relações compatíveis com os conceitos da aula.",
+    "correctOption": "D",
+    "explanation": "O líquido foi aquecido, passou pelo tubo resfriado e chegou ao receptor como líquido; essa sequência é destilação simples e permite recuperar solvente em casos adequados. A filtração falha porque o sal dissolvido não é retido como partículas pelo tubo de condensação.",
     "difficulty": "DIRECT",
-    "cognitiveOperation": "ANALYZE",
+    "cognitiveOperation": "APPLY",
     "conceptIds": [
-      "CIE-13-CON-01"
+      "CIE-13-CON-05",
+      "CIE-13-CON-06"
     ],
-    "targetedError": "misconception_identification",
+    "targetedError": "A [particle-size mismatch]: aplica peneiração a íons dissolvidos; B [immiscibility assumption]: inventa duas camadas líquidas; C [manual-separation mismatch]: ignora o aparato térmico; E [filter/condensation confusion]: trata o condensador como meio poroso.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   },
   {
     "id": "CIE-13-Q008",
     "type": "MULTIPLE_CHOICE_SINGLE",
-    "stem": "Qual síntese final é compatível com o conjunto de conceitos estudados em separação de misturas?",
+    "stem": "Em uma bandeja de triagem, há pequenos pedaços de folhas, areia e água. Os pedaços de folha são visíveis e podem ser retirados com uma pinça; depois, a areia permanece no filtro quando a água passa pelo papel. O grupo também discute uma solução de sal em água, observando que o mesmo papel não retém os cristais quando já não estão visíveis como sólidos. A equipe registrou a sequência no caderno de laboratório.\n\nQual plano atende à sequência descrita para a bandeja inicial?",
     "options": [
       {
         "key": "A",
-        "text": "Evaporação recupera simultaneamente e sem perdas o soluto e o solvente."
+        "text": "Retirar as folhas com pinça e evaporar a água para deixar a areia no recipiente."
       },
       {
         "key": "B",
-        "text": "A escolha do método depende das propriedades da mistura; não existe um processo universal para toda mistura."
+        "text": "Peneirar a mistura para separar folhas e areia, usando aberturas adequadas aos sólidos."
       },
       {
         "key": "C",
-        "text": "Filtração separa sal dissolvido da água de forma eficiente."
+        "text": "A seleção manual dos fragmentos visíveis seguida da retenção da areia em meio poroso combina os dois procedimentos observados."
       },
       {
         "key": "D",
-        "text": "Decantação exige que todos os componentes tenham a mesma densidade."
+        "text": "Deixar a areia sedimentar, verter a água e então filtrar o líquido para reter partículas restantes."
       },
       {
         "key": "E",
-        "text": "Um único método de separação funciona para qualquer mistura."
+        "text": "Filtrar primeiro a suspensão e usar catação para retirar as folhas que ficarem retidas."
       }
     ],
-    "correctOption": "B",
-    "explanation": "A alternativa B é a correta: A escolha do método depende das propriedades da mistura; não existe um processo universal para toda mistura.",
+    "correctOption": "C",
+    "explanation": "A observação propõe retirar primeiro os pedaços de folha com pinça e depois reter areia não dissolvida no filtro; a sequência combina catação e filtração. A hipótese de filtrar o sal dissolvido falha porque o soluto em solução acompanha a água através do papel.",
     "difficulty": "IFSC",
     "cognitiveOperation": "EVALUATE",
     "conceptIds": [
+      "CIE-13-CON-01",
+      "CIE-13-CON-03",
       "CIE-13-CON-06"
     ],
-    "targetedError": "synthesis",
+    "targetedError": "A [method-order error]: escolhe aquecimento sem relação com a propriedade magnética; B [state-change invention]: transforma sólidos em vapores sem aquecimento; D [dissolved-solid filter error]: confunde solução com suspensão; E [mechanical-process confusion]: supõe que giro faça a limalha atravessar o filtro.",
     "provenance": "ORIGINAL_VECTA_GROUNDED_V2"
   }
 ]
