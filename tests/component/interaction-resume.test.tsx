@@ -13,7 +13,7 @@ it("restores a wrong-but-valid matching response and recomputes local feedback/h
   render(<LessonResumeProvider scope={{ trackId: "track", lessonId: "lesson", version: 1 }} initial={{ revision: 1, updatedAt: "2026-10-06T12:00:00Z", data: { ...emptyResume(), interactions: [{ target: "block", id: "pair", kind: "educational", state: { response: { a: "y", b: "y" }, helpLevel: 4, checked: true } }] } }}>
     <EducationalActivityPanel prompt="Relacione" config={config} interaction={{ target: "block", id: "pair" }}/>
   </LessonResumeProvider>);
-  expect(screen.getByLabelText("A")).toHaveValue("y");
+  expect(screen.getByRole("button", { name: "A, revise, toque para devolver" }).closest(".place-box")).toHaveTextContent("Y");
   expect(screen.getByText("Passo a passo")).toBeVisible();
   expect(screen.getByText("Confira cada relação")).toBeVisible();
   expect(screen.getByText("Parte do raciocínio está no caminho")).toBeVisible();

@@ -5,7 +5,8 @@ import { educationalFeedback } from "./educational-feedback";
 import { exploratoryHelp, validEducationalResponse } from "@/features/lessons/interaction-policy";
 import { useInteractionState } from "@/features/lessons/use-interaction-state";
 import { MathText } from "@/components/ui/paragraphs";
-import { ItemMark } from "./response-fields";
+import { OrderingField } from "./ordering-field";
+import { PlacementField } from "./placement-field";
 import type { InteractionTarget, StateFor } from "@/features/lessons/interaction-state";
 
 export function EducationalActivityPanel({ prompt, config, interaction }: { prompt: string; config: EducationalActivityConfig; interaction?: InteractionTarget }) {
@@ -17,7 +18,6 @@ export function EducationalActivityPanel({ prompt, config, interaction }: { prom
   const assignments = typeof value.response === "object" && !Array.isArray(value.response) ? value.response : Object.create(null) as Record<string, string>;
   const feedback = value.checked ? educationalFeedback(config, value.response) : null;
   const respond = (response: StateFor<"educational">["response"]) => update({ ...value, response, checked: false });
-  const move = (index: number, offset: number) => { const next = [...order]; [next[index], next[index + offset]] = [next[index + offset], next[index]]; respond(next); };
   const assigned = (key: string) => Object.hasOwn(assignments, key) ? assignments[key] : "";
   return <section className="learning-interaction" aria-label={prompt}>
     <h3 id={`${id}-title`}><MathText text={prompt} /></h3>
@@ -26,9 +26,9 @@ export function EducationalActivityPanel({ prompt, config, interaction }: { prom
     <form onSubmit={event => { event.preventDefault(); update({ ...value, checked: true }); }}>
       {config.type === "numeric" && <label className="learning-field">Sua resposta<input maxLength={2000} inputMode="decimal" autoComplete="off" value={numeric} onChange={event => respond(event.target.value)} required /></label>}
       {config.type === "multiple-choice" && <fieldset><legend>Escolha uma alternativa</legend>{config.items.map(item => <label className="learning-answer" key={item.id}><input type="radio" name={id} value={item.id} checked={numeric === item.id} required onChange={() => respond(item.id)} /><span><MathText text={item.label} /></span></label>)}</fieldset>}
-      {config.type === "ordering" && <ol className="learning-order">{order.map((itemId, index) => <li key={itemId}><span><MathText text={config.items.find(item => item.id === itemId)?.label ?? ""} /></span><div className="learning-controls"><button type="button" onClick={() => move(index, -1)} disabled={index === 0} aria-label={`Mover ${config.items.find(item => item.id === itemId)?.label} para cima`}>Subir</button><button type="button" onClick={() => move(index, 1)} disabled={index === order.length - 1} aria-label={`Mover ${config.items.find(item => item.id === itemId)?.label} para baixo`}>Descer</button></div></li>)}</ol>}
-      {config.type === "text-highlight" && <fieldset><legend>Selecione os trechos que sustentam sua resposta</legend>{config.items.map(item => <button className="learning-answer" type="button" aria-pressed={order.includes(item.id)} key={item.id} onClick={() => respond(order.includes(item.id) ? order.filter(key => key !== item.id) : [...order, item.id])}>{order.includes(item.id) ? "Selecionado: " : ""}{item.label}</button>)}</fieldset>}
-      {(config.type === "classification" || config.type === "matching") && config.items.map(item => <label className="learning-field" key={item.id}><span><span id={`${id}-${item.id}-name`}>{item.label}</span> <ItemMark id={`${id}-${item.id}-mark`} correct={feedback?.marks?.[item.id]} /></span><select aria-labelledby={`${id}-${item.id}-name`} aria-describedby={feedback?.marks?.[item.id] === undefined ? undefined : `${id}-${item.id}-mark`} value={assigned(item.id)} required onChange={event => respond({ ...assignments, [item.id]: event.target.value })}><option value="">Selecione…</option>{config.destinations.map(destination => <option value={destination.id} key={destination.id}>{destination.label}</option>)}</select></label>)}
+      {config.type === "ordering" && <OrderingField name={id} items={config.items} response={order} onChange={respond} marks={feedback?.marks} />}
+      {config.type === "text-highlight" && <fieldset className="highlight-field"><legend>Toque nos trechos que sustentam sua resposta</legend><p className="highlight-passage">{config.items.map(item => <button className="highlight-chunk" type="button" aria-pressed={order.includes(item.id)} data-correct={feedback?.marks?.[item.id]} key={item.id} onClick={() => respond(order.includes(item.id) ? order.filter(key => key !== item.id) : [...order, item.id])}><span className="highlight-ink" aria-hidden="true" /><span className="highlight-text"><MathText text={item.label} /></span></button>)}</p></fieldset>}
+      {(config.type === "classification" || config.type === "matching") && <PlacementField name={id} items={config.items} destinations={config.destinations} response={assignments} onChange={respond} marks={feedback?.marks} />}
       {config.type === "guided-steps" && config.steps.map((step, index) => <label className="learning-field" key={step.id}>{index + 1}. <MathText text={step.prompt} /><input maxLength={2000} value={assigned(step.id)} required inputMode={typeof step.expected === "number" ? "decimal" : "text"} onChange={event => respond({ ...assignments, [step.id]: event.target.value })} /></label>)}
       <button className="primary-button" type="submit">Conferir resposta</button>
     </form>

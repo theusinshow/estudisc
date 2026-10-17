@@ -36,8 +36,10 @@ test("explores and resumes typed blocks with keyboard/touch, image fallback and 
   await page.getByRole("button", { name: "Conferir explicação", exact: true }).click();
   await page.getByRole("button", { name: "Ver tudo", exact: true }).click();
   const matching = page.getByRole("region", { name: "Relacione os locais" });
-  await matching.getByRole("combobox", { name: "Primeiro local", exact: true }).selectOption("y");
-  await matching.getByRole("combobox", { name: "Segundo local", exact: true }).selectOption("y");
+  for (const piece of ["Primeiro local", "Segundo local"]) {
+    await matching.getByRole("button", { name: `Pegar ${piece}`, exact: true }).click();
+    await matching.getByRole("button", { name: "Local B", exact: true }).click();
+  }
   await matching.getByRole("button", { name: "Conferir resposta", exact: true }).click();
   for (const label of ["Dica", "Recordar o conceito", "Exemplo semelhante", "Passo a passo"]) await matching.getByRole("button", { name: `Estou travado · ${label}`, exact: true }).click();
   const timeline = page.getByRole("region", { name: "Ordene a sequência" });

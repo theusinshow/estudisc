@@ -78,6 +78,7 @@
 /* Reading stays calm: a white sheet, larger and heavier body text. */
 [data-theme="vibrante"] .lesson-article,
 [data-theme="vibrante"] .reading-column { background: var(--estudisc-color-panel); border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-sheet); padding: var(--estudisc-spacing-16); }
+@media (max-width: 480px) { [data-theme="vibrante"] :is(.lesson-article, .reading-column) { padding: var(--estudisc-spacing-10) var(--estudisc-spacing-8); } }
 [data-theme="vibrante"] .lesson-article p,
 [data-theme="vibrante"] .reading-column p { font-size: 1.0625rem; line-height: 1.6; }
 

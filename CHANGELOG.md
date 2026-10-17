@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-17 — Tactile lesson activities (ADR 0069, F5 stage A)
+
+- Ordering: solution steps drag by the grip (the page still scrolls under the text) or move with arrows; short word lists become "tap the words to build the sentence" with a Recomeçar button. Each position is marked after checking. Response shape unchanged.
+- Classification and matching: tap a piece, then its box (the piece flies in; tap it to send it back). Long sentences or more than six items switch to one card per item with the destinations as pills. Scored and practice activities share both renderers; the "every item placed" rule is kept.
+- Evidence highlight (text-highlight): passages are marked like a marker pen; extra picks turn pink and right picks green after checking.
+- Phones: the lesson sheet has less side padding so activities keep a readable width.
+
 ## 2026-10-17 — Study tools and app interactions (ADR 0069, F3–F4)
 
 - Lessons and questions: answers as 3D keys, result banner and hint pills; the wrong tint appears only once the key is shown. Track lessons and Today's action card are sticker cards with the subject color (getTrack now returns each module's subjectCode).
