@@ -21,6 +21,8 @@ export type TrackDetail = Readonly<{
   modules: ReadonlyArray<{
     stableId: string;
     title: string;
+    /** Subject of the module (e.g. MAT), when the Pack declares one; drives the subject color. */
+    subjectCode?: string | null;
     lessons: ReadonlyArray<{
       stableId: string;
       title: string;
@@ -152,6 +154,7 @@ export class CatalogRepository {
         moduleId: modules.id,
         moduleStableId: modules.stableId,
         moduleTitle: modules.title,
+        moduleSubjectCode: modules.subjectCode,
         lessonStableId: lessons.stableId,
         lessonTitle: lessons.title,
         lessonVersion: lessons.contentVersion,
@@ -168,6 +171,7 @@ export class CatalogRepository {
       {
         stableId: string;
         title: string;
+        subjectCode?: string | null;
         lessonMap: Map<string, { stableId: string; title: string; version: number; activityIds: Set<string> }>;
       }
     >();
@@ -178,6 +182,7 @@ export class CatalogRepository {
         {
           stableId: row.moduleStableId,
           title: row.moduleTitle,
+          subjectCode: row.moduleSubjectCode,
           lessonMap: new Map<string, { stableId: string; title: string; version: number; activityIds: Set<string> }>()
         };
 
@@ -208,6 +213,7 @@ export class CatalogRepository {
       modules: Array.from(moduleMap.values()).map((module) => ({
         stableId: module.stableId,
         title: module.title,
+        subjectCode: module.subjectCode,
         lessons: Array.from(module.lessonMap.values()).map((lesson) => ({
           stableId: lesson.stableId,
           title: lesson.title,

@@ -153,3 +153,26 @@ html[data-theme="vibrante"] body .public-steps.ruled-sheet li::before { font-fam
 [data-theme="vibrante"] .question-aids button { min-height: 44px; padding: 0 18px; border: 3px dashed var(--estudisc-color-ink); border-radius: 999px; background: #FFF4B0; box-shadow: none; font-weight: 800; }
 [data-theme="vibrante"] .question-aids button:hover { background: var(--estudisc-color-signal); transform: none; box-shadow: none; }
 @media (prefers-reduced-motion: reduce) { [data-theme="vibrante"] .learning-answer.answer-row { transition: none; } }
+
+/* Lesson lists (track page): white sticker cards with the subject color as a side tab, not rotating colors. */
+[data-theme="vibrante"] .record-list { gap: 12px; }
+[data-theme="vibrante"] .record-list li > a,
+[data-theme="vibrante"] .record-list li:nth-child(n) > a {
+  position: relative; display: grid; gap: 2px; padding: 14px 16px 14px 26px; border: 3px solid var(--estudisc-color-ink);
+  border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-panel); color: var(--estudisc-color-ink);
+  box-shadow: 4px 4px 0 var(--estudisc-color-ink); text-decoration: none; overflow: hidden;
+  transition: transform 120ms var(--estudisc-motion-easing), box-shadow 120ms var(--estudisc-motion-easing);
+}
+[data-theme="vibrante"] .record-list li > a::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 10px; border-right: 3px solid var(--estudisc-color-ink); background: var(--subject, var(--estudisc-color-signal)); }
+[data-theme="vibrante"] .record-list li > a:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--estudisc-color-ink); }
+[data-theme="vibrante"] .record-list li > a:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--estudisc-color-ink); }
+[data-theme="vibrante"] .record-list li > a strong { font-weight: 800; }
+[data-theme="vibrante"] .record-list li > a span { color: var(--estudisc-color-dim); font-weight: 600; font-size: 0.875rem; }
+[data-theme="vibrante"] .record-list li > a[data-complete] { background: #C9F7D5; }
+[data-theme="vibrante"] .record-list li > a[data-complete] strong::after { content: " ✓"; color: #0E7A43; }
+
+/* Today's action card: sticker card with the subject tab; one clear action. */
+[data-theme="vibrante"] .study-action-card { position: relative; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 5px 5px 0 var(--estudisc-color-ink); overflow: hidden; }
+[data-theme="vibrante"] .study-action-card[data-subject] { padding-left: 26px; }
+[data-theme="vibrante"] .study-action-card[data-subject]::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 12px; border-right: 3px solid var(--estudisc-color-ink); background: var(--subject); }
+@media (prefers-reduced-motion: reduce) { [data-theme="vibrante"] .record-list li > a { transition: none; } }

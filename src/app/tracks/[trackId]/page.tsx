@@ -45,7 +45,7 @@ export default async function TrackPage({ params }: TrackPageProps) {
 
         <div className="module-stack" aria-label="Módulos da trilha">
           {track.modules.map((module, moduleIndex) => (
-            <details key={module.stableId} className="module-section module-disclosure" open={moduleIndex === 0}>
+            <details key={module.stableId} className="module-section module-disclosure" data-subject={module.subjectCode ?? undefined} open={moduleIndex === 0}>
               <summary aria-labelledby={`module-${module.stableId}`}>
                 <span className="technical-label">Módulo {moduleIndex + 1}</span>
                 <h2 id={`module-${module.stableId}`}>{module.title}</h2>

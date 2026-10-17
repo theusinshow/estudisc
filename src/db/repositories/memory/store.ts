@@ -17,6 +17,7 @@ export type MemoryModule = {
   stableId: string;
   trackStableId: string;
   title: string;
+  subjectCode?: string | null;
   orderIndex: number;
 };
 

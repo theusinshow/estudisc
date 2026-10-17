@@ -67,6 +67,7 @@ export class MemoryTrackImportRepository implements TrackImportRepository {
         stableId: module.id,
         trackStableId: pack.track.id,
         title: module.title,
+        subjectCode: "subjectCode" in module ? (module.subjectCode as string | undefined) ?? null : null,
         orderIndex: moduleIndex
       });
 
@@ -157,6 +158,7 @@ export class MemoryCatalogRepository {
         .map((module) => ({
           stableId: module.stableId,
           title: module.title,
+          subjectCode: module.subjectCode ?? null,
           lessons: this.store.lessons
             .filter((lesson) => lesson.moduleStableId === module.stableId && (!lesson.trackStableId || lesson.trackStableId === module.trackStableId))
             .sort((left, right) => left.orderIndex - right.orderIndex)
