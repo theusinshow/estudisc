@@ -135,7 +135,7 @@
         "title": "Exemplo resolvido passo a passo",
         "prompt": "Em um cruzamento Aa × Aa com dominância completa, qual proporção genotípica esperada aparece no modelo mendeliano simples?",
         "answer": "1 AA : 2 Aa : 1 aa.",
-        "reasoning": "1) Use esta relação: Alelos são versões de um gene e podem formar diferentes combinações em indivíduos diploides. 2) Use esta relação: Genótipo descreve a constituição genética em um locus considerado; fenótipo é a característica observável resultante da interação de genótipo e ambiente. 3) Use esta relação: Na 1ª Lei de Mendel, os dois alelos de um par segregam durante a formação dos gametas, que recebem um alelo de cada par. 4) Aplicando essas relações à situação, a conclusão correta é: 1 AA : 2 Aa : 1 aa."
+        "reasoning": "Cada pai Aa forma dois tipos de gameta, na mesma proporção: A e a.\n\nNo quadro de cruzamento, as combinações possíveis são AA, Aa, aA e aa. Aa e aA são o mesmo genótipo.\n\nA proporção genotípica esperada é 1 AA : 2 Aa : 1 aa."
       },
       {
         "id": "CIE-25-B10",

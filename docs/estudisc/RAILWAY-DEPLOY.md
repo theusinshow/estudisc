@@ -1,6 +1,6 @@
 # Railway deployment
 
-The app runs on Railway as one Node service (`railway.json`: Railpack build, `pnpm build`, `pnpm start`, health check on the public `/conheca` page) plus a Railway Postgres service in the same project.
+The app runs on Railway as one Node service (Railpack build, `pnpm build`, `pnpm start`, health check on the public `/conheca` page with a 120 s timeout, restart on failure up to 5 times). These settings live on the `app` service in Railway since 2026-10-17: Railway deprecated `railway.json` (Config as Code, read until 2026-12-01), and its replacement `.railway/railway.ts` would add the `railway` package without expressing the restart policy plus a Railway Postgres service in the same project.
 
 ## Required variables (app service)
 

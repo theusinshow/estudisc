@@ -133,7 +133,7 @@
         "title": "Exemplo resolvido passo a passo",
         "prompt": "Uma lata gelada é colocada em uma sala quente e deixada por bastante tempo. O que tende a ocorrer?",
         "answer": "Ela recebe energia térmica do ambiente até se aproximar da temperatura do ambiente.",
-        "reasoning": "1) Use esta relação: Temperatura indica o estado térmico de um corpo; calor é energia transferida por diferença de temperatura. 2) Use esta relação: Espontaneamente, energia térmica é transferida do corpo de maior temperatura para o de menor temperatura. 3) Use esta relação: Equilíbrio térmico ocorre quando corpos em contato térmico atingem a mesma temperatura macroscópica. 4) Aplicando essas relações à situação, a conclusão correta é: Ela recebe energia térmica do ambiente até se aproximar da temperatura do ambiente."
+        "reasoning": "A lata está mais fria que o ar da sala. Energia térmica passa sempre, espontaneamente, do mais quente para o mais frio.\n\nEntão a lata recebe energia do ambiente e sua temperatura sobe aos poucos. A troca vai diminuindo à medida que as temperaturas ficam parecidas.\n\nDepois de bastante tempo, a lata chega perto da temperatura da sala: é o equilíbrio térmico."
       },
       {
         "id": "CIE-03-B10",

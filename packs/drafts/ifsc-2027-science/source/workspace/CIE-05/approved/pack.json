@@ -136,7 +136,7 @@
         "title": "Exemplo resolvido passo a passo",
         "prompt": "Uma lâmpada LED recebe energia elétrica. Qual descrição é adequada?",
         "answer": "Parte vira luz e parte se transforma em energia térmica; a energia total é conservada.",
-        "reasoning": "1) Use esta relação: Energia pode aparecer em formas como cinética, potencial, química, elétrica, térmica, luminosa e sonora. 2) Use esta relação: Transformações de energia mudam a forma em que a energia se manifesta sem violar o princípio de conservação. 3) Use esta relação: Na prática, parte da energia frequentemente se dispersa como energia térmica, reduzindo a fração útil para a função desejada. 4) Aplicando essas relações à situação, a conclusão correta é: Parte vira luz e parte se transforma em energia térmica; a energia total é conservada."
+        "reasoning": "A lâmpada LED recebe energia elétrica e a transforma. A forma útil é a luz.\n\nMas nenhuma transformação aproveita tudo: uma parte vira energia térmica, e por isso a lâmpada esquenta um pouco.\n\nSomando a luz e o calor, a quantidade de energia é a mesma que entrou. Parte vira luz, parte vira energia térmica, e a energia total se conserva."
       },
       {
         "id": "CIE-05-B10",

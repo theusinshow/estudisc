@@ -1,7 +1,7 @@
 "use client";
 import { useId, useState, type KeyboardEvent } from "react";
 import Link from "next/link";
-import { BookOpen, Check, ChevronDown, Lightbulb, RotateCcw } from "lucide-react";
+import { BookOpen, Check, ChevronDown, Lightbulb } from "lucide-react";
 import type { StudentQuestion } from "@/features/questions/student-view";
 import { initialResponse, ResponseFields,type QuestionResponse,type ResponseReview } from "./response-fields";
 import type { AnswerKey, ItemResult } from "@/features/questions/answer-feedback";
@@ -64,7 +64,8 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
     {/* The live wrapper exists before any answer, so screen readers announce the stamp when it appears. */}
     <div className="answer-result" aria-live="polite" aria-atomic="true">
       {feedback&&result&&<div role="status" aria-live="off" aria-label="Resultado da resposta" className="learning-feedback" data-result={result} key={feedback.attemptId??"solution"}>
-        <span className="answer-stamp" data-result={result} aria-hidden="true">{result==="correct"?<Check/>:result==="incorrect"?<RotateCcw/>:<BookOpen/>}{result==="correct"?"Certo":result==="incorrect"?"Revise":"Solução"}</span>
+        {/* A wrong answer gets no shouted stamp: "Ainda não" and the explanation below carry it. */}
+        {result!=="incorrect"&&<span className="answer-stamp" data-result={result} aria-hidden="true">{result==="correct"?<Check/>:<BookOpen/>}{result==="correct"?"Certo":"Solução"}</span>}
         <strong>{feedback.attemptId?(feedback.correct?"Resposta correta":"Ainda não"):"Solução consultada"}</strong>
         {feedback.attemptId&&!feedback.correct&&<p><MathText text={wrongMessage(feedback)}/></p>}
         {(feedback.correct||!feedback.attemptId||feedback.solutionShown)&&feedback.explanation&&<p>{feedback.solutionShown&&<strong className="solution-label">Como resolver: </strong>}<MathText text={feedback.explanation}/></p>}

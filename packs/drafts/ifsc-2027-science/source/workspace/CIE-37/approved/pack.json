@@ -133,7 +133,7 @@
         "title": "Exemplo resolvido passo a passo",
         "prompt": "Qual sequência contém apenas planetas rochosos?",
         "answer": "Mercúrio, Vênus, Terra e Marte.",
-        "reasoning": "1) Use esta relação: O Sol concentra a maior parte da massa do Sistema Solar e sua gravidade domina as órbitas planetárias. 2) Use esta relação: Mercúrio, Vênus, Terra e Marte são planetas rochosos; Júpiter e Saturno são gigantes gasosos, enquanto Urano e Netuno são gigantes de gelo na classificação moderna. 3) Use esta relação: Planetas anões orbitam o Sol e são aproximadamente esféricos, mas não limparam sua vizinhança orbital segundo a definição da IAU. 4) Aplicando essas relações à situação, a conclusão correta é: Mercúrio, Vênus, Terra e Marte."
+        "reasoning": "Os planetas rochosos são os quatro mais próximos do Sol, com superfície sólida.\n\nJúpiter e Saturno são gigantes gasosos; Urano e Netuno, gigantes de gelo. Qualquer sequência com um deles não serve.\n\nA sequência só de planetas rochosos é Mercúrio, Vênus, Terra e Marte."
       },
       {
         "id": "CIE-37-B10",

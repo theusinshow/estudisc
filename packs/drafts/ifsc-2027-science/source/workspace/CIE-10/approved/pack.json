@@ -134,7 +134,7 @@
         "title": "Exemplo resolvido passo a passo",
         "prompt": "Um átomo neutro possui Z = 15 e A = 31. Quantos prótons, nêutrons e elétrons ele possui?",
         "answer": "15 prótons, 16 nêutrons e 15 elétrons.",
-        "reasoning": "1) Use esta relação: Número atômico Z é o número de prótons no núcleo e identifica o elemento químico. 2) Use esta relação: Número de massa A é a soma de prótons e nêutrons do núcleo de um átomo ou isótopo. 3) Use esta relação: O número de nêutrons pode ser obtido por A − Z quando A representa um número de massa inteiro. 4) Aplicando essas relações à situação, a conclusão correta é: 15 prótons, 16 nêutrons e 15 elétrons."
+        "reasoning": "Z é o número de prótons: o átomo tem 15 prótons.\n\nA é a soma de prótons e nêutrons. Então os nêutrons são A − Z = 31 − 15 = 16.\n\nComo o átomo é neutro, tem tantos elétrons quanto prótons: 15. Resposta: 15 prótons, 16 nêutrons e 15 elétrons."
       },
       {
         "id": "CIE-10-B10",
