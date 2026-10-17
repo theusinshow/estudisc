@@ -14,6 +14,12 @@
 .lab-subjects { display: grid; gap: var(--estudisc-spacing-4); grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
 .lab-subject { padding: var(--estudisc-spacing-6); border: 2px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); color: var(--estudisc-color-ink); }
 .lab-subject h3 { margin: 4px 0; }
+/* The CSP blocks inline style attributes, so subject colors come from data attributes. */
+.lab-gallery .lab-subject[data-subject="mathematics"] { background: var(--estudisc-color-subject-accent-mathematics); }
+.lab-gallery .lab-subject[data-subject="science"] { background: var(--estudisc-color-subject-accent-science); }
+.lab-gallery .lab-subject[data-subject="portuguese"] { background: var(--estudisc-color-subject-accent-portuguese); }
+.lab-gallery .lab-subject[data-subject="history-geography"] { background: var(--estudisc-color-subject-accent-history-geography); }
+.lab-report-section { display: grid; gap: var(--estudisc-spacing-4); padding: 0 var(--estudisc-spacing-8); }
 .lab-empty { display: grid; justify-items: center; gap: var(--estudisc-spacing-4); padding: var(--estudisc-spacing-8); text-align: center; }
 .lab-illustration { width: 120px; height: 120px; border: 3px dashed var(--estudisc-color-ink); border-radius: 50%; }
 .lab-report td, .lab-report th { padding: 4px 8px; text-align: left; }

@@ -27,7 +27,7 @@ export function LabGallery({ sample }: Readonly<{ sample: SampleQuestionData | n
         <h2 className="type-title">Matérias</h2>
         <div className="lab-subjects">
           {SUBJECTS.map((subject) => (
-            <article key={subject.token} className="lab-subject elev-surface" style={{ background: `var(--estudisc-color-subject-accent-${subject.token})` }}>
+            <article key={subject.token} className="lab-subject elev-surface" data-subject={subject.token}>
               <p className="type-meta">{subject.name}</p>
               <h3>{subject.lesson}</h3>
               <p>Aula 3 de 12 · 8 min</p>

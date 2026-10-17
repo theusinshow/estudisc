@@ -5,10 +5,9 @@
 [data-theme="vibrante"] { font-weight: var(--estudisc-typography-body-weights-regular); }
 
 /* Pills: actions and chips. */
-[data-theme="vibrante"] .primary-action,
-[data-theme="vibrante"] .secondary-action { border-radius: 999px; font-weight: 800; letter-spacing: 0.01em; }
-[data-theme="vibrante"] .primary-action { background: var(--estudisc-color-signal); color: var(--estudisc-color-signal-ink); }
-[data-theme="vibrante"] .secondary-action { background: var(--estudisc-color-panel); }
+[data-theme="vibrante"] :is(.primary-action, .secondary-action, .primary-button, .secondary-button) { border-radius: 999px; font-weight: 800; letter-spacing: 0.01em; }
+[data-theme="vibrante"] :is(.primary-action, .primary-button) { background: var(--estudisc-color-signal); color: var(--estudisc-color-signal-ink); }
+[data-theme="vibrante"] :is(.secondary-action, .secondary-button) { background: var(--estudisc-color-panel); }
 
 /* Surfaces: white sheets with a black outline on a colored frame. */
 [data-theme="vibrante"] .elev-surface,
