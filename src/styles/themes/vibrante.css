@@ -105,3 +105,51 @@ html[data-theme="vibrante"] body .public-steps.ruled-sheet li::before { font-fam
 [data-theme="vibrante"] .public-stats.stat-line li { display: grid; grid-template-columns: minmax(0, 1fr); align-content: start; gap: 4px; padding: 14px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 4px 4px 0 var(--estudisc-color-ink); }
 [data-theme="vibrante"] .public-stats.stat-line strong { padding: 0; text-align: left; font-size: 2rem; font-weight: 900; line-height: 1; }
 [data-theme="vibrante"] .public-stats.stat-line span { font-size: 0.875rem; font-weight: 700; line-height: 1.3; text-transform: none; letter-spacing: 0; }
+
+/* Answers as 3D keys (lab 4.1): press sinks the key; selected is yellow; after checking, the key answer turns green
+   and a wrong pick turns pink only once the key is shown ([data-key] present), never while the answer is still saving. */
+[data-theme="vibrante"] .learning-answer.answer-row {
+  border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive);
+  margin-bottom: 4px; background: var(--estudisc-color-panel); box-shadow: 0 6px 0 var(--estudisc-color-ink);
+  font-weight: 600; transform: none; outline: none;
+  transition: transform var(--estudisc-motion-press) ease-out, box-shadow var(--estudisc-motion-press) ease-out, background-color 120ms linear;
+}
+[data-theme="vibrante"] .learning-answer.answer-row:hover { transform: translateY(-1px); box-shadow: 0 7px 0 var(--estudisc-color-ink); }
+[data-theme="vibrante"] .learning-answer.answer-row:active,
+[data-theme="vibrante"] .learning-answer.answer-row:has(input:checked) { transform: translateY(4px); box-shadow: 0 2px 0 var(--estudisc-color-ink); }
+[data-theme="vibrante"] .learning-answer.answer-row:has(input:checked) { background: var(--estudisc-color-signal); font-weight: 700; }
+[data-theme="vibrante"] .answer-row .answer-bubble { width: 38px; height: 38px; border: 3px solid var(--estudisc-color-ink); border-radius: 10px; background: var(--estudisc-color-panel); }
+[data-theme="vibrante"] .answer-row .answer-bubble-fill { inset: 0; border-radius: 6px; }
+[data-theme="vibrante"] .answer-row .answer-bubble-letter { font-size: 1rem; font-weight: 900; }
+[data-theme="vibrante"] .answer-row:has(input:checked) .answer-bubble-letter { color: var(--estudisc-color-signal); }
+[data-theme="vibrante"] .answer-row:has(input:focus-visible) { outline: 3px solid var(--estudisc-color-info); outline-offset: 3px; }
+[data-theme="vibrante"] .learning-answer.answer-row[data-key] { background: #C9F7D5; transform: translateY(4px); box-shadow: 0 2px 0 var(--estudisc-color-ink); }
+[data-theme="vibrante"] .learning-answer.answer-row[data-key] .answer-bubble { border-color: #0B5A33; background: var(--estudisc-color-success); }
+[data-theme="vibrante"] .learning-answer.answer-row[data-key] .answer-bubble-letter { color: #FFFFFF; }
+[data-theme="vibrante"] fieldset:has(.answer-row[data-key]) .learning-answer.answer-row:has(input:checked):not([data-key]) { background: #FFDCD4; }
+[data-theme="vibrante"] fieldset:has(.answer-row[data-key]) .learning-answer.answer-row:has(input:checked):not([data-key]) .answer-bubble { border-color: #7A1A0E; }
+[data-theme="vibrante"] fieldset:has(.answer-row[data-key]) .learning-answer.answer-row:has(input:checked):not([data-key]) .answer-bubble-fill { background: var(--estudisc-color-error); }
+[data-theme="vibrante"] fieldset:disabled .learning-answer.answer-row { cursor: default; }
+[data-theme="vibrante"] .answer-keys-hint { display: none; }
+@media (hover: hover) and (pointer: fine) { [data-theme="vibrante"] .answer-keys-hint { display: inline; } }
+
+/* Result as a banner (lab 4.3): tinted sheet, round icon badge, thick bottom edge. */
+[data-theme="vibrante"] .learning-feedback { position: relative; padding: 16px 16px 16px 68px; border: 3px solid var(--estudisc-color-ink); border-bottom-width: 6px; border-radius: var(--estudisc-radius-learning-card); }
+[data-theme="vibrante"] .learning-feedback strong { display: block; font-size: 1.25rem; font-weight: 900; }
+[data-theme="vibrante"] .learning-feedback strong::before {
+  position: absolute; left: 14px; top: 14px; display: grid; place-items: center; width: 40px; height: 40px; margin: 0;
+  border: 3px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); font-size: 1.25rem; line-height: 1;
+}
+[data-theme="vibrante"] .learning-feedback[data-result="correct"] { background: #C9F7D5; }
+[data-theme="vibrante"] .learning-feedback[data-result="correct"] strong { color: #0E7A43; }
+[data-theme="vibrante"] .learning-feedback[data-result="correct"] strong::before { background: #0E7A43; color: #FFFFFF; }
+[data-theme="vibrante"] .learning-feedback[data-result="incorrect"] { background: #FFDCD4; }
+[data-theme="vibrante"] .learning-feedback[data-result="incorrect"] strong { color: #B4291A; }
+[data-theme="vibrante"] .learning-feedback[data-result="incorrect"] strong::before { background: #B4291A; color: #FFFFFF; }
+[data-theme="vibrante"] .learning-feedback:is([data-result="solution"], [data-result="partial"], [data-result="explanation"]) { background: #FFF4B0; }
+[data-theme="vibrante"] .learning-feedback:is([data-result="solution"], [data-result="partial"], [data-result="explanation"]) strong::before { content: "💡"; background: var(--estudisc-color-signal); }
+
+/* Hints and help (lab 4.4): calm dashed pills that never look like the main action. */
+[data-theme="vibrante"] .question-aids button { min-height: 44px; padding: 0 18px; border: 3px dashed var(--estudisc-color-ink); border-radius: 999px; background: #FFF4B0; box-shadow: none; font-weight: 800; }
+[data-theme="vibrante"] .question-aids button:hover { background: var(--estudisc-color-signal); transform: none; box-shadow: none; }
+@media (prefers-reduced-motion: reduce) { [data-theme="vibrante"] .learning-answer.answer-row { transition: none; } }
