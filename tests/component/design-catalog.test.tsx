@@ -13,7 +13,7 @@ it("renders every catalog block with addressable item codes", () => {
   for (const title of ["Fundamentos", "Controles", "Cards", "Questão e resposta", "Feedback e navegação", "Movimento"]) {
     expect(screen.getByRole("heading", { level: 2, name: new RegExp(title) })).toBeTruthy();
   }
-  for (const code of ["1.1", "1.10", "2.6", "3-A", "3-D", "4-A", "4-D", "4.6", "5.7", "6.1", "6.8"]) {
+  for (const code of ["1.1", "1.10", "2.6", "3.1", "3.2", "4.1", "4.4", "5.7", "6.1", "6.8"]) {
     expect(screen.getByText(code, { selector: ".dc-code" })).toBeTruthy();
   }
 });

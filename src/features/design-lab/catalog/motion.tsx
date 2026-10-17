@@ -8,10 +8,11 @@ function Replay({ code, title, note, children }: Readonly<{ code: string; title:
   const [run, setRun] = useState(1);
   return (
     <article className="dc-item" id={`item-${code}`} aria-labelledby={`item-${code}-title`}>
-      <header className="dc-item-head"><span className="dc-code">{code}</span><h3 id={`item-${code}-title`}>{title}</h3></header>
+      <header className="dc-item-head"><span className="dc-code">{code}</span><h3 id={`item-${code}-title`}>{title}</h3>
+        <button type="button" className="dc-replay" onClick={() => setRun((value) => value + 1)}><RotateCcw aria-hidden="true" />Repetir</button>
+      </header>
       {note ? <p className="dc-note">{note}</p> : null}
       <div className="dc-item-body dc-motion-stage" key={run}>{children(run)}</div>
-      <button type="button" className="text-button" onClick={() => setRun((value) => value + 1)}><RotateCcw aria-hidden="true" /> Repetir</button>
     </article>
   );
 }

@@ -4,10 +4,64 @@
 [data-theme="vibrante"] body { background: var(--estudisc-color-paper); }
 [data-theme="vibrante"] { font-weight: var(--estudisc-typography-body-weights-regular); }
 
-/* Pills: actions and chips. */
-[data-theme="vibrante"] :is(.primary-action, .secondary-action, .primary-button, .secondary-button) { border-radius: 999px; font-weight: 800; letter-spacing: 0.01em; }
+/* Buttons: one pill vocabulary. 52px tall, 3px ink outline, 4px hard shadow that collapses on press. */
+[data-theme="vibrante"] :is(.primary-action, .secondary-action, .primary-button, .secondary-button) {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  min-height: 52px; padding: 0 26px; border: 3px solid var(--estudisc-color-ink); border-radius: 999px;
+  font: inherit; font-size: 1rem; font-weight: 800; letter-spacing: 0.01em; line-height: 1.1; text-decoration: none; white-space: nowrap;
+  box-shadow: 4px 4px 0 var(--estudisc-color-ink); cursor: pointer;
+  transition: transform 120ms var(--estudisc-motion-easing), box-shadow 120ms var(--estudisc-motion-easing), background-color 120ms linear;
+}
 [data-theme="vibrante"] :is(.primary-action, .primary-button) { background: var(--estudisc-color-signal); color: var(--estudisc-color-signal-ink); }
-[data-theme="vibrante"] :is(.secondary-action, .secondary-button) { background: var(--estudisc-color-panel); }
+[data-theme="vibrante"] :is(.secondary-action, .secondary-button) { background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); }
+[data-theme="vibrante"] :is(.primary-action, .secondary-action, .primary-button, .secondary-button) svg { width: 20px; height: 20px; stroke-width: 2.5; flex: none; }
+[data-theme="vibrante"] :is(.primary-action, .secondary-action, .primary-button, .secondary-button):not(:disabled):hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--estudisc-color-ink); }
+[data-theme="vibrante"] :is(.primary-action, .secondary-action, .primary-button, .secondary-button):not(:disabled):active { transform: translate(4px, 4px); box-shadow: 0 0 0 var(--estudisc-color-ink); }
+[data-theme="vibrante"] :is(.primary-action, .secondary-action, .primary-button, .secondary-button):disabled,
+[data-theme="vibrante"] :is(.primary-action, .secondary-action, .primary-button, .secondary-button)[aria-disabled="true"] {
+  opacity: 1; background: #ECECEC; color: #6B6675; border-style: dashed; border-color: #8E8898; box-shadow: none; cursor: not-allowed;
+}
+/* Text button: no box, just a bold underlined label (resets the global button box). */
+[data-theme="vibrante"] .text-button {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 6px; border: 0; border-radius: 10px;
+  background: transparent; box-shadow: none; color: var(--estudisc-color-ink); font: inherit; font-weight: 800;
+  text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 5px; cursor: pointer; transform: none;
+}
+[data-theme="vibrante"] .text-button:hover { background: rgba(23, 20, 31, 0.08); transform: none; box-shadow: none; }
+[data-theme="vibrante"] .text-button svg { width: 18px; height: 18px; stroke-width: 2.5; }
+
+/* Focus: shadowed controls turn their outline and shadow blue (stays aligned with the shape); others get a ring. */
+[data-theme="vibrante"] :focus-visible { outline: 3px solid var(--estudisc-color-info); outline-offset: 3px; }
+[data-theme="vibrante"] :is(.primary-action, .secondary-action, .primary-button, .secondary-button):focus-visible {
+  outline: none; border-color: var(--estudisc-color-info); box-shadow: 4px 4px 0 var(--estudisc-color-info), 0 0 0 3px #FFFFFF inset;
+}
+
+/* Fields: 52px, 3px outline, 16px corners, blue focus, red error with tinted background. */
+[data-theme="vibrante"] :is(input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]), select, textarea) {
+  min-height: 52px; padding: 12px 16px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive);
+  background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); font: inherit; font-weight: 500;
+  transition: border-color 120ms linear, box-shadow 120ms linear;
+}
+[data-theme="vibrante"] :is(input, select, textarea)::placeholder { color: #77727F; }
+[data-theme="vibrante"] :is(input:not([type="checkbox"], [type="radio"]), select, textarea):focus-visible { outline: none; border-color: var(--estudisc-color-info); box-shadow: 0 0 0 4px rgba(58, 79, 224, 0.25); }
+[data-theme="vibrante"] :is(input, select, textarea)[aria-invalid="true"] { border-color: var(--estudisc-color-error); background: #FFF1EE; }
+[data-theme="vibrante"] select { appearance: none; padding-right: 48px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2317141F' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; cursor: pointer; }
+
+/* Checkbox and radio: 26px, 3px outline; checked fills with ink and shows a yellow mark. */
+[data-theme="vibrante"] :is(input[type="checkbox"], input[type="radio"]) {
+  appearance: none; display: inline-grid; place-items: center; flex: none; width: 26px; height: 26px; margin: 0;
+  border: 3px solid var(--estudisc-color-ink); background: var(--estudisc-color-panel); cursor: pointer;
+  transition: background-color 120ms linear, transform 120ms var(--estudisc-motion-easing);
+}
+[data-theme="vibrante"] input[type="checkbox"] { border-radius: 8px; }
+[data-theme="vibrante"] input[type="radio"] { border-radius: 999px; }
+[data-theme="vibrante"] :is(input[type="checkbox"], input[type="radio"]):checked { background: var(--estudisc-color-ink); }
+[data-theme="vibrante"] input[type="checkbox"]:checked::after { content: ""; width: 7px; height: 13px; margin-top: -3px; border: solid var(--estudisc-color-signal); border-width: 0 3px 3px 0; transform: rotate(45deg); }
+[data-theme="vibrante"] input[type="radio"]:checked::after { content: ""; width: 10px; height: 10px; border-radius: 999px; background: var(--estudisc-color-signal); }
+[data-theme="vibrante"] :is(input[type="checkbox"], input[type="radio"]):active { transform: scale(0.9); }
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="vibrante"] :is(.primary-action, .secondary-action, .primary-button, .secondary-button, input) { transition: none; }
+}
 
 /* Surfaces: white sheets with a black outline on a colored frame. */
 [data-theme="vibrante"] .elev-surface,

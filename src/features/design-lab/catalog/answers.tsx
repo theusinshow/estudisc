@@ -1,4 +1,4 @@
-import { Check, Lightbulb, X } from "lucide-react";
+import { Check, ChevronRight, Lightbulb, X } from "lucide-react";
 
 import { CatalogBlock, CatalogItem } from "./item";
 
@@ -11,51 +11,51 @@ const CHOICES = [
 
 const STATE_LABEL = { idle: "", selected: "marcada", correct: "certa", wrong: "errada" } as const;
 
-function AnswerVariant({ variant }: Readonly<{ variant: "pill" | "tile" | "key" | "sheet" }>) {
-  return (
-    <ul className="dc-answers" data-variant={variant}>
-      {CHOICES.map((choice) => (
-        <li key={choice.letter} className="dc-answer" data-state={choice.state}>
-          <span className="dc-letter" aria-hidden="true">{choice.letter}</span>
-          <span className="dc-answer-text">{choice.text}</span>
-          {choice.state === "correct" ? <Check className="dc-answer-icon" aria-hidden="true" /> : null}
-          {choice.state === "wrong" ? <X className="dc-answer-icon" aria-hidden="true" /> : null}
-          {STATE_LABEL[choice.state] ? <span className="visually-hidden">({STATE_LABEL[choice.state]})</span> : null}
-        </li>
-      ))}
-    </ul>
-  );
-}
-
 export function AnswersBlock() {
   return (
     <CatalogBlock id="questao" number={4} title="Questão e resposta">
-      <CatalogItem code="4-A" title="Linhas em pílula" note="Estados mostrados: A normal, B certa, C errada, D marcada.">
-        <AnswerVariant variant="pill" />
+      <CatalogItem code="4.1" title="Alternativas · tecla 3D (escolhida)" note="Afunda ao tocar. Estados: A normal, B certa, C errada, D marcada.">
+        <ul className="dc-answers" data-variant="key">
+          {CHOICES.map((choice) => (
+            <li key={choice.letter} className="dc-answer" data-state={choice.state}>
+              <span className="dc-letter" aria-hidden="true">{choice.letter}</span>
+              <span className="dc-answer-text">{choice.text}</span>
+              {choice.state === "correct" ? <Check className="dc-answer-icon" aria-hidden="true" /> : null}
+              {choice.state === "wrong" ? <X className="dc-answer-icon" aria-hidden="true" /> : null}
+              {STATE_LABEL[choice.state] ? <span className="visually-hidden">({STATE_LABEL[choice.state]})</span> : null}
+            </li>
+          ))}
+        </ul>
       </CatalogItem>
-      <CatalogItem code="4-B" title="Ladrilhos (2 colunas)" note="Letra grande, área de toque generosa.">
-        <AnswerVariant variant="tile" />
-      </CatalogItem>
-      <CatalogItem code="4-C" title="Tecla 3D" note="Afunda ao tocar, como uma tecla.">
-        <AnswerVariant variant="key" />
-      </CatalogItem>
-      <CatalogItem code="4-D" title="Folha de prova colorida" note="Bolinha de marcar como no gabarito do IFSC.">
-        <AnswerVariant variant="sheet" />
-      </CatalogItem>
-      <CatalogItem code="4.5" title="Resultado: carimbo">
-        <div className="dc-result" data-style="stamp">
+      <CatalogItem code="4.2" title="Resultado: carimbo">
+        <div className="dc-result">
           <span className="dc-stamp" data-result="correct"><Check aria-hidden="true" />Acertou!</span>
           <span className="dc-stamp" data-result="wrong"><X aria-hidden="true" />Ainda não</span>
         </div>
       </CatalogItem>
-      <CatalogItem code="4.6" title="Resultado: faixa inferior" note="Como apps de idioma: a faixa sobe com a explicação e o botão de seguir.">
-        <div className="dc-result" data-style="banner">
-          <div className="dc-banner" data-result="correct"><strong><Check aria-hidden="true" /> Muito bem!</strong><p>29% significa 29 em cada 100.</p><span className="primary-button">Continuar</span></div>
-          <div className="dc-banner" data-result="wrong"><strong><X aria-hidden="true" /> Ainda não</strong><p>“Vezes o total” seria multiplicar, não uma parte de 100.</p><span className="secondary-button">Tentar de novo</span></div>
+      <CatalogItem code="4.3" title="Resultado: faixa inferior" note="Sobe da base da tela com o resultado, a explicação e o próximo passo.">
+        <div className="dc-banners">
+          <section className="dc-banner" data-result="correct" aria-label="Exemplo de acerto">
+            <span className="dc-banner-icon"><Check aria-hidden="true" /></span>
+            <div className="dc-banner-copy"><strong>Muito bem!</strong><p>29% significa 29 em cada 100.</p></div>
+            <button type="button" className="dc-banner-button">Continuar <ChevronRight aria-hidden="true" /></button>
+          </section>
+          <section className="dc-banner" data-result="wrong" aria-label="Exemplo de erro">
+            <span className="dc-banner-icon"><X aria-hidden="true" /></span>
+            <div className="dc-banner-copy"><strong>Ainda não</strong><p>“Vezes o total” seria multiplicar; porcentagem é uma parte de 100.</p></div>
+            <button type="button" className="dc-banner-button">Tentar de novo</button>
+          </section>
         </div>
       </CatalogItem>
-      <CatalogItem code="4.7" title="Dica">
-        <aside className="dc-hint"><Lightbulb aria-hidden="true" /><div><strong>Dica 1 de 2</strong><p>Porcentagem compara uma parte com 100.</p></div></aside>
+      <CatalogItem code="4.4" title="Dica" note="Abre sob demanda; mostra quantas dicas existem.">
+        <aside className="dc-hint" aria-label="Dica 1 de 2">
+          <span className="dc-hint-icon"><Lightbulb aria-hidden="true" /></span>
+          <div className="dc-hint-copy">
+            <span className="dc-hint-count">Dica 1 de 2</span>
+            <p>Porcentagem compara uma parte com 100. Pense em “a cada 100 bilhetes”.</p>
+            <button type="button" className="text-button">Ver próxima dica</button>
+          </div>
+        </aside>
       </CatalogItem>
     </CatalogBlock>
   );

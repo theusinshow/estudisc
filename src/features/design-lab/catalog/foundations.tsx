@@ -71,26 +71,34 @@ export function FoundationsBlock() {
           {Object.entries(tokens.spacing).map(([key, value]) => <li key={key}><span className="dc-bar" data-space={key} />{key} · {value}</li>)}
         </ul>
       </CatalogItem>
-      <CatalogItem code="1.7" title="Cantos">
-        <div className="dc-radii">
-          {(["sm", "md", "interactive", "learning-card", "sheet"] as const).map((key) => <span key={key} className="dc-radius" data-radius={key}>{key}</span>)}
-          <span className="dc-radius" data-radius="pill">pílula</span>
-        </div>
-      </CatalogItem>
-      <CatalogItem code="1.8" title="Elevação e sombras" note="Estrutura (só linha), superfície (sombra 4px) e ação (sombra 6px, afunda ao pressionar).">
-        <div className="dc-elevation">
-          <span className="elev-structure dc-elev">Estrutura</span>
-          <span className="elev-surface dc-elev">Superfície</span>
-          <span className="elev-action dc-elev">Ação</span>
-        </div>
-      </CatalogItem>
-      <CatalogItem code="1.9" title="Ícones" note="Lucide, traço 2px, tamanhos 16 / 20 / 24.">
-        <ul className="dc-icons">
-          {ICONS.map(([Icon, label]) => <li key={label}><Icon aria-hidden="true" />{label}</li>)}
+      <CatalogItem code="1.7" title="Cantos" note="Escala com saltos claros; cada nível tem um uso.">
+        <ul className="dc-radii">
+          {([["sm", "8px", "Etiquetas e caixas de seleção"], ["md", "12px", "Ícones em bloco"], ["interactive", "16px", "Campos e alternativas"], ["learning-card", "24px", "Cards"], ["sheet", "32px", "Folhas e diálogos"], ["pill", "999px", "Botões, filtros e barra inferior"]] as const).map(([key, size, use]) => (
+            <li key={key} className="dc-radius-row"><span className="dc-radius" data-radius={key} /><span><strong>{size}</strong><small>{use}</small></span></li>
+          ))}
         </ul>
       </CatalogItem>
-      <CatalogItem code="1.10" title="Foco do teclado" note="Anel visível em todo elemento interativo.">
-        <div className="dc-row"><button type="button" className="secondary-button dc-focus-demo">Elemento focado</button></div>
+      <CatalogItem code="1.8" title="Elevação e sombras" note="Sombra dura sempre para baixo-direita; quanto mais alto, mais clicável.">
+        <ul className="dc-elevation">
+          {([["0", "Plano", "Só contorno · fundo de seções"], ["1", "Elevado", "Sombra 4px · cards e folhas"], ["2", "Destaque", "Sombra 6px · hover e diálogos"], ["p", "Pressionado", "Sem sombra, desce 4px · toque"]] as const).map(([level, name, use]) => (
+            <li key={level} className="dc-elev-row"><span className="dc-elev" data-level={level}>{name}</span><small>{use}</small></li>
+          ))}
+        </ul>
+      </CatalogItem>
+      <CatalogItem code="1.9" title="Ícones" note="Lucide com traço 2,5px; em bloco quando são o destaque, soltos ao lado de texto.">
+        <ul className="dc-icons">
+          {ICONS.map(([Icon, label]) => <li key={label}><span className="dc-icon-tile"><Icon aria-hidden="true" /></span>{label}</li>)}
+        </ul>
+        <div className="dc-icon-sizes" aria-label="Tamanhos">
+          <span><BookOpen aria-hidden="true" data-size="16" />16</span><span><BookOpen aria-hidden="true" data-size="20" />20</span><span><BookOpen aria-hidden="true" data-size="24" />24</span><span><BookOpen aria-hidden="true" data-size="32" />32</span>
+        </div>
+      </CatalogItem>
+      <CatalogItem code="1.10" title="Foco do teclado" note="Botões com sombra: contorno e sombra ficam azuis, alinhados à forma. Demais elementos: anel azul com folga de 3px.">
+        <div className="dc-row">
+          <button type="button" className="primary-button dc-focus-demo">Botão focado</button>
+          <a href="#item-1.10" className="dc-focus-link dc-focus-demo">Link focado</a>
+          <input className="dc-focus-demo" aria-label="Campo focado" defaultValue="Campo focado" />
+        </div>
       </CatalogItem>
     </CatalogBlock>
   );
