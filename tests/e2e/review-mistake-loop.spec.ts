@@ -21,9 +21,12 @@ test("observes a mistake, records an attributed reflection, retries another Ques
   if (testInfo.project.use.isMobile) await saveReflection.tap(); else await saveReflection.click();
   await expect(page.getByText(/Percepção registrada como relato seu/)).toBeVisible();
   await page.getByRole("button",{name:"Praticar outra questão",exact:true}).click();await page.waitForURL(/\/study\//);await page.getByRole("button",{name:"Começar sessão",exact:true}).click();
+  // Starting reloads /study/:id; wait for the ACTIVE document to hydrate (controls stay disabled until then).
+  await expect(page.getByRole("button",{name:"Concluir sessão",exact:true})).toBeEnabled();
   await expect(page.getByRole("heading",{name:"Quanto é 2 + 3 nesta fixture?",exact:true})).toHaveCount(0);
   const alternate=page.locator("section.learning-interaction").filter({has:page.getByRole("heading",{name:"Quanto é 3 + 4 nesta fixture?",exact:true})});
   await alternate.getByRole("textbox").fill("7");await alternate.getByRole("button",{name:"Enviar resposta",exact:true}).click();await expect(alternate.getByRole("status",{name:"Resultado da resposta"})).toContainText("Resposta correta");
-  await page.goto("/mistakes");await expect(page.getByText(/Falta corrigir 1\./)).toBeVisible();await page.getByText("Ver cada erro",{exact:true}).click();await expect(page.getByText(/· para corrigir/).first()).toBeVisible();
+  // An independent correct answer on the same Concept resolves the active mistake (CHANGELOG: Review); the attempt stays in history.
+  await page.goto("/mistakes");await expect(page.getByText(/Você errou 1 vez neste assunto\. Já está corrigido\./)).toBeVisible();await page.getByText("Ver cada erro",{exact:true}).click();await expect(page.getByText(/· corrigido/).first()).toBeVisible();await expect(page.getByText(/· para corrigir/)).toHaveCount(0);
   for(const width of [320,1280]){await page.setViewportSize({width,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:testInfo.outputPath(`mistake-loop-${width}.png`),fullPage:true});}
 });
