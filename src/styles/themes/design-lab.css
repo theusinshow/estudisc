@@ -1,0 +1,19 @@
+/* /admin/lab layout only (design lab). */
+.lab-page { display: grid; gap: var(--estudisc-spacing-6); padding-bottom: var(--estudisc-spacing-32); }
+.lab-controls { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-6); align-items: end; padding: var(--estudisc-spacing-8) var(--estudisc-spacing-8) 0; }
+.lab-controls select { margin-left: var(--estudisc-spacing-2); padding: 8px 10px; border: 2px solid var(--estudisc-color-ink); border-radius: 10px; background: var(--estudisc-color-panel); }
+.lab-columns { display: grid; gap: var(--estudisc-spacing-8); grid-template-columns: minmax(0, 1fr); padding: 0 var(--estudisc-spacing-8); }
+@media (min-width: 1100px) { .lab-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.lab-column { min-width: 0; padding: var(--estudisc-spacing-8); border: 2px solid var(--estudisc-color-ink); border-radius: 16px; background: var(--estudisc-color-paper); color: var(--estudisc-color-ink); font-weight: var(--estudisc-typography-body-weights-regular); }
+.lab-gallery { display: grid; gap: var(--estudisc-spacing-12); }
+.lab-gallery section { display: grid; gap: var(--estudisc-spacing-4); }
+.lab-row { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-4); align-items: center; }
+.lab-chip { padding: 6px 14px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); font-weight: 700; }
+.lab-field { display: grid; gap: 4px; font-weight: 700; }
+.lab-field input { padding: 10px 12px; border: 2px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-panel); font: inherit; }
+.lab-subjects { display: grid; gap: var(--estudisc-spacing-4); grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+.lab-subject { padding: var(--estudisc-spacing-6); border: 2px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); color: var(--estudisc-color-ink); }
+.lab-subject h3 { margin: 4px 0; }
+.lab-empty { display: grid; justify-items: center; gap: var(--estudisc-spacing-4); padding: var(--estudisc-spacing-8); text-align: center; }
+.lab-illustration { width: 120px; height: 120px; border: 3px dashed var(--estudisc-color-ink); border-radius: 50%; }
+.lab-report td, .lab-report th { padding: 4px 8px; text-align: left; }
