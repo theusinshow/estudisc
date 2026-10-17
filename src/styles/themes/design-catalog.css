@@ -284,3 +284,60 @@
   .dc *, .dc *::before, .dc *::after { animation: none !important; transition: none !important; }
   .dc-card[data-variant="c"], .dc-card[data-variant="c"]:nth-child(even) { transform: none; }
 }
+
+/* 7 · Live interactions */
+.dc-item-wide { grid-column: 1 / -1; }
+@media (min-width: 1100px) { .dc-item-wide { grid-column: span 2; } }
+.dc .dc-sound { display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0 14px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); font: inherit; font-size: 0.8125rem; font-weight: 800; box-shadow: none; transform: none; cursor: pointer; }
+.dc .dc-sound[aria-pressed="true"] { background: var(--estudisc-color-ink); color: var(--estudisc-color-signal); }
+.dc-sound svg { width: 18px; height: 18px; }
+.dc-lesson { display: grid; gap: var(--estudisc-spacing-8); padding: var(--estudisc-spacing-8); border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-sheet); background: #FAFFF0; overflow: hidden; }
+.dc-lesson-top { display: flex; align-items: center; gap: var(--estudisc-spacing-6); }
+.dc-segments { display: grid; flex: 1; grid-auto-flow: column; gap: 6px; }
+.dc-segments li { height: 16px; border: 3px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); transition: background-color 220ms linear; }
+.dc-segments li[data-state="current"] { background: repeating-linear-gradient(-45deg, var(--estudisc-color-signal) 0 6px, var(--estudisc-color-panel) 6px 12px); }
+.dc-segments li[data-state="right"] { background: var(--estudisc-color-subject-accent-science); }
+.dc-segments li[data-state="retry"] { background: var(--estudisc-color-subject-accent-mathematics); }
+.dc-question, .dc-summary { display: grid; gap: var(--estudisc-spacing-8); }
+.dc-question h4 { font-size: 1.375rem; }
+.dc-question .dc-answer { user-select: none; }
+.dc-question .dc-answer[aria-disabled="true"] { cursor: default; }
+.dc-question .dc-answer:focus-visible { outline: 3px solid var(--estudisc-color-info); outline-offset: 3px; }
+.dc-hint-inline { align-items: center; overflow: hidden; }
+.dc-hint-inline p { margin: 0; font-weight: 600; }
+.dc-summary { justify-items: center; text-align: center; padding: var(--estudisc-spacing-8) 0; }
+.dc-summary h4 { font-size: 1.75rem; }
+.dc-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--estudisc-spacing-6); width: 100%; }
+.dc-stat { display: grid; justify-items: center; gap: 2px; padding: var(--estudisc-spacing-8) 6px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 4px 4px 0 var(--estudisc-color-ink); }
+.dc-stat svg { width: 24px; height: 24px; stroke-width: 2.5; }
+.dc-stat strong { font-size: 1.75rem; font-weight: 900; line-height: 1; }
+.dc-stat small { font-weight: 700; color: var(--estudisc-color-dim); }
+.dc-streak { display: grid; gap: var(--estudisc-spacing-8); }
+.dc-streak-head { display: flex; align-items: center; gap: 12px; }
+.dc-streak-head strong { display: block; font-size: 1.25rem; font-weight: 900; }
+.dc-streak-head small { color: var(--estudisc-color-dim); font-weight: 700; }
+.dc-week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; text-align: center; font-weight: 800; font-size: 0.8125rem; }
+.dc-week li { display: grid; justify-items: center; gap: 4px; }
+.dc-week li > span:first-child { display: grid; place-items: center; width: 36px; height: 36px; border: 3px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); }
+.dc-week li > span:first-child svg { width: 18px; height: 18px; stroke-width: 3.5; }
+.dc-week li[data-state="done"] > span:first-child { background: var(--estudisc-color-signal); }
+.dc-week li[data-state="off"] > span:first-child { background: var(--estudisc-color-subject-accent-portuguese); }
+.dc-week li[data-state="today"] > span:first-child { border-style: dashed; }
+.dc-rings { display: flex; flex-wrap: wrap; justify-content: space-around; gap: var(--estudisc-spacing-8); }
+.dc-ring { position: relative; display: grid; place-items: center; width: 132px; margin: 0; }
+.dc-ring svg { width: 132px; height: 132px; transform: rotate(-90deg); }
+.dc-ring-track { fill: none; stroke: #ECEFE0; stroke-width: 14; }
+.dc-ring-edge { fill: none; stroke: var(--estudisc-color-ink); stroke-width: 3; }
+.dc-ring-fill { fill: none; stroke: var(--dc-subject); stroke-width: 11; stroke-linecap: round; }
+.dc-ring figcaption { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; }
+.dc-ring strong { font-size: 1.5rem; font-weight: 900; line-height: 1; }
+.dc-ring small { font-size: 0.75rem; font-weight: 800; }
+.dc-toasts { display: grid; gap: 8px; min-height: 160px; align-content: start; }
+.dc-tilt { max-width: 260px; justify-self: center; margin-top: 16px; cursor: pointer; will-change: transform; }
+.dc-slide { position: relative; display: flex; align-items: center; height: 62px; padding: 3px; border: 3px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); overflow: hidden; }
+.dc-slide-fill { position: absolute; inset: 0 auto 0 0; background: var(--estudisc-color-signal); border-radius: 999px; }
+.dc-slide[data-done="true"] .dc-slide-fill { background: var(--estudisc-color-subject-accent-science); }
+.dc-slide-label { position: relative; flex: 1; text-align: center; font-weight: 900; pointer-events: none; }
+.dc .dc-slide-knob { position: absolute; left: 3px; top: 3px; display: grid; place-items: center; width: 50px; height: 50px; min-height: 0; padding: 0; border: 3px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-ink); color: var(--estudisc-color-signal); box-shadow: none; cursor: grab; touch-action: none; }
+.dc .dc-slide-knob:hover { transform: none; box-shadow: none; }
+.dc-slide-knob svg { width: 24px; height: 24px; stroke-width: 3; }

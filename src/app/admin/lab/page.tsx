@@ -8,6 +8,7 @@ import { CardsBlock } from "@/features/design-lab/catalog/cards";
 import { ControlsBlock } from "@/features/design-lab/catalog/controls";
 import { FeedbackBlock } from "@/features/design-lab/catalog/feedback";
 import { FoundationsBlock } from "@/features/design-lab/catalog/foundations";
+import { InteractiveBlock } from "@/features/design-lab/catalog/interactive";
 import { MotionBlock } from "@/features/design-lab/catalog/motion";
 import { contrastReport } from "@/features/design-lab/contrast";
 import { parseThemeCookie, THEME_COOKIE } from "@/features/design-lab/theme-cookie";
@@ -21,7 +22,8 @@ const BLOCKS = [
   ["cards", "3 Cards"],
   ["questao", "4 Questão"],
   ["feedback", "5 Feedback"],
-  ["movimento", "6 Movimento"]
+  ["movimento", "6 Movimento"],
+  ["interacoes", "7 Interações"]
 ] as const;
 
 /** Design catalog: every design-system piece in the chosen theme (vibrante · limão · Archivo), reviewed by code. */
@@ -56,6 +58,7 @@ export default async function DesignLabPage() {
           <AnswersBlock />
           <FeedbackBlock />
           <MotionBlock />
+          <InteractiveBlock />
           <section className="dc-block" aria-labelledby="contraste-title">
             <h2 id="contraste-title" className="type-title">Contraste (WCAG AA)</h2>
             <table className="lab-report">

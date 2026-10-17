@@ -37,13 +37,13 @@ export function AnswersBlock() {
         <div className="dc-banners">
           <section className="dc-banner" data-result="correct" aria-label="Exemplo de acerto">
             <span className="dc-banner-icon"><Check aria-hidden="true" /></span>
-            <div className="dc-banner-copy"><strong>Muito bem!</strong><p>29% significa 29 em cada 100.</p></div>
+            <div className="dc-banner-copy"><strong>Certo!</strong><p>29% significa 29 em cada 100.</p></div>
             <button type="button" className="dc-banner-button">Continuar <ChevronRight aria-hidden="true" /></button>
           </section>
           <section className="dc-banner" data-result="wrong" aria-label="Exemplo de erro">
             <span className="dc-banner-icon"><X aria-hidden="true" /></span>
-            <div className="dc-banner-copy"><strong>Ainda não</strong><p>“Vezes o total” seria multiplicar; porcentagem é uma parte de 100.</p></div>
-            <button type="button" className="dc-banner-button">Tentar de novo</button>
+            <div className="dc-banner-copy"><strong>Quase… Resposta: B</strong><p>“Vezes o total” seria multiplicar; porcentagem é uma parte de 100.</p></div>
+            <button type="button" className="dc-banner-button">Continuar <ChevronRight aria-hidden="true" /></button>
           </section>
         </div>
       </CatalogItem>
