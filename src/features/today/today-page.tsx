@@ -49,7 +49,7 @@ export function TodayPage({ dashboard }: Readonly<{ dashboard: Dashboard }>) {
     <section className="today-week" aria-labelledby="week-title">
       <div className="today-week-head"><h2 id="week-title">Sua semana</h2><Link href="/progress">Ver progresso<ArrowRight aria-hidden="true" /></Link></div>
       <WeekStrip days={overview.week} />
-      <p>{overview.activeDaysThisWeek === 0 ? `Nenhum dia com estudo ainda nesta semana. ${dashboard.flow ? "Uma aula" : "Uma sessão curta"} já marca o dia.`
+      <p>{overview.activeDaysThisWeek === 0 ? "Nenhum dia com estudo ainda nesta semana. Responder uma questão já marca o dia."
         : `${overview.activeDaysThisWeek} ${overview.activeDaysThisWeek === 1 ? "dia com estudo" : "dias com estudo"} nesta semana.`}</p>
     </section>
   </div></AppShell>;

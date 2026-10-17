@@ -5,12 +5,15 @@ import "@/styles/progress.css";
 import { AppShell } from "@/components/layout/app-shell";
 import { CountUp } from "@/components/motion/count-up";
 import { getXpSummary } from "@/features/gamification/api";
+import { calculateRank } from "@/features/gamification/gamification-rules";
+import { xpReasonLabel } from "@/features/gamification/study-rewards";
+import { getDueReviews } from "@/features/review/api";
 import { getProgressOverview } from "@/features/progress/api";
 import { MasteryGlyph } from "@/features/progress/mastery-glyph";
 import { MasteryLadder } from "@/features/progress/mastery-ladder";
 import { masteryOrder } from "@/features/progress/overview";
 import { AreaBalanceChart, RhythmChart } from "@/features/progress/progress-charts";
-import { ReportCard, RhythmTable } from "@/features/progress/report-card";
+import { ReportCard, RhythmTable } from "@/features/progress/report-card";
 import { studentConceptLabel } from "@/features/concepts/student-label";
 
 export const dynamic = "force-dynamic";
@@ -22,24 +25,58 @@ function plural(count: number, one: string, many: string) {
 }
 
 export default async function ProgressPage() {
-  const [overview, xp] = await Promise.all([getProgressOverview(), getXpSummary()]);
+  const [overview, xp, dueReviews] = await Promise.all([getProgressOverview(), getXpSummary(), getDueReviews()]);
   const hasConcepts = overview.totalConcepts > 0;
   const hasEvidence = overview.conceptsWithEvidence > 0;
   const showBalance = overview.areas.length >= 3 && overview.areas.length <= 8;
+  const rank = calculateRank(xp.totalXp);
+  // The same numbers as Hoje: concepts queued for review, and how many of them come from a mistake.
+  const withMistakes = dueReviews.filter((review) => review.hasActiveMistake).length;
+  const next = withMistakes > 0
+    ? { href: "/review", label: "Revisar meus erros" }
+    : dueReviews.length > 0 ? { href: "/review", label: "Revisar agora" } : { href: "/tracks", label: "Continuar estudando" };
 
   return (
     <AppShell>
       <div className="progress-page">
         <header className="progress-head">
           <h1>Progresso</h1>
+        </header>
+
+        <section className="progress-stats" aria-label="Resumo">
+          <div className="progress-stat">
+            <span className="progress-stat-value"><CountUp value={overview.streakDays} /></span>
+            <span className="progress-stat-label">{overview.streakDays === 1 ? "dia seguido" : "dias seguidos"}</span>
+            <small>{overview.streakDays === 0 ? "Responda uma questão hoje para começar." : "Conta quem responde pelo menos uma questão no dia."}</small>
+          </div>
+          <div className="progress-stat">
+            <span className="progress-stat-value"><CountUp value={xp.totalXp} /> XP</span>
+            <span className="progress-stat-label">{rank.label}</span>
+            {rank.nextRankAt !== null ? <>
+              <progress value={rank.currentXp - rank.startsAt} max={rank.nextRankAt - rank.startsAt} aria-label={`Nível ${rank.label}`} />
+              <small>Faltam {rank.nextRankAt - rank.currentXp} XP para {rank.nextLabel}.</small>
+            </> : <small>Você chegou ao nível mais alto.</small>}
+          </div>
+          <div className="progress-stat">
+            <span className="progress-stat-value"><CountUp value={withMistakes} /></span>
+            <span className="progress-stat-label">{withMistakes === 1 ? "erro para revisar" : "erros para revisar"}</span>
+            <small>{dueReviews.length === 0 ? "Nada para revisar agora." : `${plural(dueReviews.length, "conceito", "conceitos")} na revisão de hoje.`}</small>
+          </div>
+        </section>
+        <nav className="progress-next" aria-label="Próximo passo">
+          <Link href={next.href} className="primary-action">{next.label} <ArrowRight aria-hidden="true" /></Link>
+          {next.href !== "/tracks" && <Link href="/tracks" className="effort-link">Continuar estudando <ArrowRight aria-hidden="true" /></Link>}
+        </nav>
+
+        <details className="progress-details">
+          <summary>Ver detalhes do progresso</summary>
           <p className="progress-lede">
             {!hasConcepts
               ? "Assim que houver aulas liberadas, cada conceito aparece aqui no degrau em que está."
               : hasEvidence
-                ? `${overview.conceptsWithEvidence} de ${plural(overview.totalConcepts, "conceito já tem", "conceitos já têm")} evidência nas suas respostas. ${plural(overview.practicingOrAbove, "está", "estão")} em prática ou acima.`
+                ? `Você já respondeu questões de ${overview.conceptsWithEvidence} dos ${plural(overview.totalConcepts, "conceito", "conceitos")}. ${plural(overview.practicingOrAbove, "está", "estão")} em prática ou acima.`
                 : `${plural(overview.totalConcepts, "conceito espera", "conceitos esperam")} pela sua primeira resposta.`}
           </p>
-        </header>
 
         {overview.areas.length > 0 ? (
           <section className="progress-section report-card-section" aria-labelledby="report-title">
@@ -145,17 +182,17 @@ export default async function ProgressPage() {
                 {xp.transactions.slice(0, 10).map((transaction) => (
                   <li key={transaction.id}>
                     <strong>+{transaction.amount} XP</strong>
-                    <span>{transaction.reason}</span>
+                    <span>{xpReasonLabel(transaction.reason)}</span>
                   </li>
                 ))}
               </ol>
             </details>
           )}
           <Link href="/achievements" className="effort-link">
-            Rank, badges e missões <ArrowRight aria-hidden="true" />
+            Nível, medalhas e missões <ArrowRight aria-hidden="true" />
           </Link>
         </section>
-        <Link href="/tracks" className="effort-link">Continuar estudando <ArrowRight aria-hidden="true" /></Link>
+        </details>
       </div>
     </AppShell>
   );

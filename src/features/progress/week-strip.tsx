@@ -35,7 +35,7 @@ export function WeekStrip({ days }: Readonly<{ days: readonly ActivityDay[] }>) 
           <li key={day.date} data-studied={day.count > 0 || undefined} data-today={day.isToday || undefined} data-future={day.isFuture || undefined}>
             <span className="week-day" aria-hidden="true">{weekday.format(date).replace(".", "")}</span>
             <span className="week-mark" aria-hidden="true">{day.count > 0 ? <Check /> : null}</span>
-            <span className="sr-only">{`${fullDay.format(date)}: ${dayState(day)}`}</span>
+            <span className="visually-hidden">{`${fullDay.format(date)}: ${dayState(day)}`}</span>
           </li>
         );
       })}

@@ -1,4 +1,5 @@
 import type { XpSummary } from "@/db/repositories/xp-repository";
+import { answeredQuestions, studyDayKey } from "@/features/progress/study-days";
 import type { DueReview } from "@/db/repositories/review-repository";
 import type { MistakeRecord } from "@/db/repositories/mistake-repository";
 import type { ConceptEvidenceRecord } from "@/db/repositories/concept-evidence-repository";
@@ -69,13 +70,8 @@ export function buildGamificationSummary({ xp, dueReviews, mistakes, evidence = 
   now?: Date;
   timeZone?: string;
 }>): GamificationSummary {
-  // One answer can emit evidence for several Concepts. Count the Attempt once.
-  // Neither self-ratings nor diagnostic seed evidence constitute answered questions.
-  const answers = [...new Map(evidence.filter(item =>
-    item.attemptId && typeof item.conditions.questionId === "string" &&
-    ["question_result", "assessment_result"].includes(item.type) &&
-    ["passed", "failed"].includes(String(item.conditions.outcome)) && item.createdAt <= now
-  ).map(item => [item.attemptId!, item])).values()].sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime());
+  // The shared study-day rule: each answered Attempt once (see progress/study-days).
+  const answers = answeredQuestions(evidence, now);
   const independent = answers.filter(item => isIndependentQuestionSuccess(item.conditions));
   const solved = new Set(independent.map(item => item.conditions.questionId)).size;
   const reviews = new Set(evidence.filter(item =>
@@ -137,17 +133,13 @@ export function attachGamificationPersistence(summary: GamificationSummary, pers
   };
 }
 
-function calculateRank(totalXp: number): RankSummary {
+export function calculateRank(totalXp: number): RankSummary {
   const current = [...rankThresholds].reverse().find(rank => totalXp >= rank.xp) ?? rankThresholds[0];
   const next = rankThresholds.find(rank => rank.xp > totalXp);
   return { label: current.label, currentXp: totalXp, startsAt: current.xp, nextRankAt: next?.xp ?? null, nextLabel: next?.label ?? null, explanation: "XP reconhece sua prática. O que você aprendeu aparece no Progresso." };
 }
 
-function dateKey(date: Date, timeZone: string) {
-  const parts = new Intl.DateTimeFormat("en", { timeZone, year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(date);
-  const part = (type: string) => parts.find(item => item.type === type)!.value;
-  return `${part("year")}-${part("month")}-${part("day")}`;
-}
+const dateKey = studyDayKey;
 
 function buildStudyWeek(dates: readonly Date[], now: Date, timeZone: string): StudyWeek {
   const today = dateKey(now, timeZone);
