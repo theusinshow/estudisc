@@ -3,6 +3,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import { auth } from "@/auth";
 import { getAuthGuardDecision, isPublicRuntimePath,isAdminRuntimePath } from "@/features/auth/session-guard";
 import { isGoogleAuthConfigured } from "@/features/auth/auth-readiness";
+import { getCanonicalRedirectUrl } from "@/lib/canonical-host";
 import { getServerEnv } from "@/lib/env";
 import { isAllowedMutationOrigin } from "@/features/auth/mutation-origin";
 import { getAccountConfig, isHybridSignIn } from "@/features/auth/account-mode";
@@ -57,6 +58,9 @@ function nextSecureResponse(request: NextRequest, contentSecurityPolicy: string,
 const authProxy = auth((request: AuthenticatedRequest) => {
   const { pathname } = request.nextUrl;
   const { contentSecurityPolicy, requestHeaders } = createSecurityContext(request);
+
+  const canonicalUrl = process.env.NODE_ENV === "production" ? getCanonicalRedirectUrl(request.headers, request.nextUrl, getServerEnv().APP_URL) : null;
+  if (canonicalUrl) return secureResponse(NextResponse.redirect(canonicalUrl, 308), contentSecurityPolicy);
 
   if (isPublicRuntimePath(pathname)) {
     return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);

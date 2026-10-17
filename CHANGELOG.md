@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-17 — Canonical host and sales opened
+
+- In production the proxy answers 308 from alias hosts (Railway service domain, bare `estudisc.com.br`) to the `APP_URL` host, keeping path and query; the Railway health check host and local hosts are exempt. One origin keeps cookies, Auth.js callbacks and the mutation-origin check consistent.
+- Railway `app`: `AUTH_URL` is set explicitly (Auth.js behind the proxy resolved `localhost:8080` as the Google redirect URI) and `FEATURE_PAID_ACCESS=true`. Code-profile accounts stay allowlisted.
+- `main` no longer requires PRs or status checks; CI still runs on push.
+
 ## 2026-10-17 — Follow-ups: narrated Science worked examples, no REVISE stamp
 
 - CIE-02…40: the template worked examples ("1) Use esta relação: …", often citing unrelated relations) are rewritten by hand as short narrated solutions that start from the situation and end in the answer. Sources edited in author/ and approved/, Science pack regenerated, pins updated; IDs unchanged.
