@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-16 — Student experience: review loop, errors that teach, student-facing text (branch fix/student-experience)
+
+- Review: a wrong answer makes its Concept reviewable the same day; Hoje, /review and targeted practice read the same queue (due schedules plus Concepts with an active mistake); an independent correct answer resolves them. Diagnosis in `docs/estudisc/DIAGNOSTICO-REVISAO.md`.
+- Sessions: a targeted practice never reopens an unrelated ACTIVE session silently; the student chooses "Continuar a sessão" or "Começar esta prática" (the old one becomes ABANDONED only then).
+- Errors: the chosen option's rationale on a wrong answer, per-part marks for matching/classification/ordering, the solution and answer key from the second failure; full XP only on a first independent try, +10 XP labelled "Acertou depois de revisar" after a mistake or hint; validator rule R12 warns on wrong choices without a rationale; end-of-lesson list of open mistakes.
+- Student text: recall notes (EXIT_TICKET) keep the expected ideas closed until "Conferir" and never show rubric criteria; open activities get a text field; read-only steps are "Leitura"; base text is no longer a heading; bare URLs become links; AI help only with a configured provider; mastery, concept and /mistakes copy for students; authoring placeholders and scope notes hidden at display. CI: `scripts/student-copy-blacklist.json` checked against every draft lesson, question and student UI file.
+- Content: POR-01 genre/type fix; CIE-01 delta-s as displacement, narrated worked example, Q001 choices, recall model answer and a trajectory × displacement SVG; Science now carries the 512 authored distractor rationales (Question version 3, IDs unchanged); three template filler sentences removed from 39 Science lessons. Packs regenerated; not published.
+- Progress: one study-day rule (a day with an answered question, America/Sao_Paulo) for Hoje, Progresso and achievements; "Português" reads as "Língua Portuguesa"; numbers were shown twice because `.sr-only` had no CSS; the page opens with streak, XP/level and mistakes to review plus the next step.
+- Landing and sign-in: no profile names for visitors (profile name + 6-digit code, with help), "Entrar" as a label, centered card, "Peça acesso" instead of a free-account promise while sign-up is closed, teaching sample question.
+
 ## 2026-10-16 — Lesson step controls rest on the bottom edge in Focus mode
 
 - The sticky Voltar/Próximo bar kept an 84px offset reserved for the bottom navigation even in Focus mode (and while typing hides the navigation), so it floated mid-screen on phones. It now rests on the bottom edge there, with the safe-area inset. Regression e2e: `stepper-nav-focus` (rollout suite).

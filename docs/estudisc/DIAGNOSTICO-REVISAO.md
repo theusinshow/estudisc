@@ -74,3 +74,10 @@ Um dia em que o aluno só leu a aula conta no Progresso e não conta em Hoje.
 Só Português diverge, porque a trilha antiga `ifsc-2027` (semana 1) chama o módulo de "Português".
 
 **Direção da correção (Fase 5):** agrupar áreas por `subject_code` com um rótulo canônico (`POR → Língua Portuguesa`), normalizando na leitura, sem reescrever dados.
+
+## O que foi corrigido (mesma branch)
+
+- **1:** erro deixa o conceito revisável no mesmo dia (`next_review_at = now`), e `/review`, Hoje e "Revisar agora" leem a mesma fila: conceitos vencidos **mais** conceitos com erro ativo. A leitura cobre os dados antigos, então não foi preciso backfill. Hoje mostra "N conceitos para revisar (X com erro)". Um acerto independente resolve os erros do conceito.
+- **2:** pedido dirigido com sessão aberta devolve 409 e o aluno escolhe entre continuar e começar de novo; a antiga só vira `ABANDONED` depois que a nova tem questões.
+- **3:** dia estudado = dia com questão respondida, no fuso America/Sao_Paulo, em Hoje, Progresso e conquistas (`src/features/progress/study-days.ts`). O "0/100" não foi reproduzido, mas os números duplicados tinham causa: `CountUp` e a faixa da semana usavam a classe `.sr-only`, que não existe no CSS, e a cópia para leitor de tela aparecia na tela.
+- **4:** áreas normalizadas na leitura (`src/features/progress/subject-alias.ts`).
