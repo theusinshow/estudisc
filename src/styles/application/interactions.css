@@ -81,7 +81,12 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .brand-link { display: inline-flex; padding: var(--estudisc-spacing-2); border-radius: var(--estudisc-radius-sm); }
 .brand-link { color: var(--estudisc-color-ink); text-decoration: none; }
 .brand-lockup { display: inline-flex; align-items: center; gap: var(--estudisc-spacing-5); }
-.brand-lockup img { display: block; height: 30px; width: auto; }
+.brand-mark { display: block; height: 30px; width: 30px; flex: none; color: var(--estudisc-color-ink); overflow: visible; }
+.brand-mark-page { transform-box: view-box; transform-origin: 32px 0; animation: brand-page-turn 900ms ease-in-out 300ms 1 both; }
+.brand-link:hover .brand-mark-page, .brand-link:focus-visible .brand-mark-page { animation: brand-page-turn-again 900ms ease-in-out 1 both; }
+@keyframes brand-page-turn { from { transform: scaleX(1); } to { transform: scaleX(-1); } }
+@keyframes brand-page-turn-again { from { transform: scaleX(1); } to { transform: scaleX(-1); } }
+@media (prefers-reduced-motion: reduce) { .brand-mark-page, .brand-link:hover .brand-mark-page, .brand-link:focus-visible .brand-mark-page { animation: none; } }
 .brand-word { font-size: 1.625rem; font-weight: 900; font-stretch: 125%; line-height: 1; letter-spacing: -0.03em; color: var(--estudisc-color-ink); }
 .main-surface { min-width: 0; padding: var(--estudisc-spacing-12) var(--estudisc-spacing-8) calc(112px + env(safe-area-inset-bottom)); }
 .main-surface:focus { outline: none; }
@@ -107,7 +112,7 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 @media (min-width: 900px) {
   .app-shell { grid-template-columns: 232px minmax(0, 1fr); grid-template-rows: auto 1fr; grid-template-areas: "top top" "nav main"; }
   .topbar { grid-area: top; min-height: 72px; padding: 0 var(--estudisc-spacing-12); }
-  .brand-lockup img { height: 36px; }
+  .brand-mark { height: 36px; width: 36px; }
   .brand-word { font-size: 1.875rem; }
   .sidebar { grid-area: nav; position: sticky; top: 72px; align-self: start; display: flex; flex-direction: column; gap: var(--estudisc-spacing-4); height: calc(100dvh - 72px); padding: var(--estudisc-spacing-10) var(--estudisc-spacing-8); border-top: 0; border-right: var(--estudisc-border-rule) solid var(--estudisc-color-ink); background: var(--estudisc-color-paper); }
   .nav-link, .nav-current, .nav-more summary { flex-direction: row; justify-content: flex-start; gap: var(--estudisc-spacing-6); min-height: 52px; padding: 0 var(--estudisc-spacing-6); border: var(--estudisc-border-rule) solid transparent; font-size: 1rem; }

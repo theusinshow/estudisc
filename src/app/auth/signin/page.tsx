@@ -77,7 +77,7 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
       <main className="auth-surface" aria-labelledby="signin-title">
         <section className="auth-panel">
           <div className="auth-panel-header">
-            <BrandLockup priority />
+            <BrandLockup />
             <p className="auth-kicker">Entrar</p>
           </div>
           <div className="auth-copy">
@@ -106,7 +106,7 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
     <main className="auth-surface auth-split" aria-labelledby="signin-title">
       <section className="auth-panel">
         <div className="auth-panel-header">
-<BrandLockup priority />
+<BrandLockup />
           <p className="auth-kicker">{env.FEATURE_PAID_ACCESS ? "Entrar" : "Acesso do proprietário"}</p>
         </div>
 

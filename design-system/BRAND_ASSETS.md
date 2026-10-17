@@ -6,9 +6,9 @@ O nome atual é **Estudisc**. O símbolo geométrico já usado pelo aplicativo p
 
 | Arquivo | Uso |
 |---|---|
-| `assets/estudisc-mark.svg` | símbolo geométrico atual |
+| `assets/estudisc-mark.svg` | livro aberto sobre o bloco amarelo (2026-10-17) |
 | `assets/estudisc-mark-mono.svg` | versão monocromática |
-| `public/branding/estudisc-mark.svg` | asset usado pelo `BrandLockup` |
+| `public/branding/estudisc-mark.svg` | asset estático; o `BrandLockup` desenha a mesma geometria inline (`BrandMark`) com a página virando |
 | `src/app/icon.svg` | ícone vetorial da aplicação |
 | `src/app/apple-icon.png` | ícone Apple existente |
 

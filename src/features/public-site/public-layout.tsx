@@ -8,7 +8,7 @@ export function PublicLayout({ children, labelledBy }: Readonly<{ children: Reac
     <div className="public-site">
       <a className="skip-link" href="#public-main">Pular para o conteúdo</a>
       <header className="public-header">
-        <Link href="/conheca" className="brand-link" aria-label="Estudisc — página inicial"><BrandLockup priority /></Link>
+        <Link href="/conheca" className="brand-link" aria-label="Estudisc — página inicial"><BrandLockup /></Link>
         <nav aria-label="Site">
           <Link href="/auth/signin" className="secondary-action">Entrar</Link>
         </nav>

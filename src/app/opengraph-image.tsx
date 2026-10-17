@@ -20,7 +20,7 @@ export default function OpenGraphImage() {
     (
       <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", background: paper, color: ink, padding: 64, border: `12px solid ${ink}` }}>
         <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-          <div style={{ width: 72, height: 72, display: "flex", alignItems: "center", justifyContent: "center", background: signal, border: `5px solid ${ink}`, borderRadius: 16, fontSize: 48, fontWeight: 800 }}>V</div>
+          <svg width="80" height="80" viewBox="0 0 64 64"><rect x="2" y="2" width="60" height="60" rx="14" fill={signal} stroke={ink} strokeWidth="4" /><path d="M32 20 Q23 15 12 18 V46 Q23 43 32 48 Z" fill={panel} stroke={ink} strokeWidth="3.5" strokeLinejoin="round" /><path d="M32 20 Q41 15 52 18 V46 Q41 43 32 48 Z" fill={panel} stroke={ink} strokeWidth="3.5" strokeLinejoin="round" /><path d="M17.5 26.5 Q22 25 27 27 M17.5 33 Q22 31.5 27 33.5" fill="none" stroke={ink} strokeWidth="2.5" strokeLinecap="round" /></svg>
           <div style={{ fontSize: 56, fontWeight: 800 }}>Estudisc</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
