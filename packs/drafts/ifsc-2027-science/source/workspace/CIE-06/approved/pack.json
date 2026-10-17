@@ -133,7 +133,7 @@
         "title": "Exemplo resolvido passo a passo",
         "prompt": "Uma pilha, fios e uma lâmpada estão conectados, mas um dos fios está desconectado. O que ocorre?",
         "answer": "O circuito está aberto e não há corrente contínua pelo caminho completo; a lâmpada não acende.",
-        "reasoning": "1) Use esta relação: Circuito elétrico é um caminho pelo qual pode haver corrente elétrica quando existe fonte e percurso condutor fechado. 2) Use esta relação: Uma chave aberta interrompe o caminho e uma chave fechada permite continuidade elétrica. 3) Use esta relação: Geradores fornecem diferença de potencial; receptores transformam energia elétrica em outras formas. 4) Aplicando essas relações à situação, a conclusão correta é: O circuito está aberto e não há corrente contínua pelo caminho completo; a lâmpada não acende."
+        "reasoning": "Para a lâmpada acender, a corrente precisa sair da pilha, passar pela lâmpada e voltar à pilha por um caminho fechado de condutores.\n\nCom um fio solto, esse caminho está interrompido, como uma chave aberta.\n\nO circuito fica aberto, não há corrente pelo caminho completo e a lâmpada não acende."
       },
       {
         "id": "CIE-06-B10",

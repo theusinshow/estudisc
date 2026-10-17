@@ -133,7 +133,7 @@
       "title": "Exemplo resolvido passo a passo",
       "prompt": "Um aparelho de 1.000 W funciona por 2 horas. Desprezando variações, qual consumo de energia corresponde a esse uso?",
       "answer": "2 kWh.",
-      "reasoning": "1) Use esta relação: Potência indica a rapidez com que um aparelho transforma ou transfere energia e é expressa em watts. 2) Use esta relação: O consumo de energia depende da potência e do tempo de uso; em contas de eletricidade é comum usar quilowatt-hora. 3) Use esta relação: Para estimar consumo em kWh, converte-se a potência para kW e multiplica-se pelo tempo em horas. 4) Aplicando essas relações à situação, a conclusão correta é: 2 kWh."
+      "reasoning": "O consumo depende da potência do aparelho e do tempo de uso. Na conta de luz, ele aparece em quilowatt-hora (kWh).\n\nPrimeiro, passe a potência para quilowatts: 1.000 W = 1 kW. Depois, multiplique pelo tempo em horas: 1 kW × 2 h = 2 kWh.\n\nO consumo é de 2 kWh."
     },
     {
       "id": "CIE-07-B10",
