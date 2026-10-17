@@ -9,6 +9,7 @@ import { ControlsBlock } from "@/features/design-lab/catalog/controls";
 import { FeedbackBlock } from "@/features/design-lab/catalog/feedback";
 import { FoundationsBlock } from "@/features/design-lab/catalog/foundations";
 import { IdeasBlock } from "@/features/design-lab/catalog/ideas/block";
+import { IdeasTwoBlock } from "@/features/design-lab/catalog/ideas2/block";
 import { InteractiveBlock } from "@/features/design-lab/catalog/interactive";
 import { MotionBlock } from "@/features/design-lab/catalog/motion";
 import { contrastReport } from "@/features/design-lab/contrast";
@@ -25,7 +26,8 @@ const BLOCKS = [
   ["feedback", "5 Feedback"],
   ["movimento", "6 Movimento"],
   ["interacoes", "7 Interações"],
-  ["estudar-mexendo", "8 Estudar mexendo"]
+  ["estudar-mexendo", "8 Estudar mexendo"],
+  ["mais-ideias", "9 Mais ideias"]
 ] as const;
 
 /** Design catalog: every design-system piece in the chosen theme (vibrante · limão · Archivo), reviewed by code. */
@@ -62,6 +64,7 @@ export default async function DesignLabPage() {
           <MotionBlock />
           <InteractiveBlock />
           <IdeasBlock />
+          <IdeasTwoBlock />
           <section className="dc-block" aria-labelledby="contraste-title">
             <h2 id="contraste-title" className="type-title">Contraste (WCAG AA)</h2>
             <table className="lab-report">
