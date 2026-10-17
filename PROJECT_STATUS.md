@@ -213,6 +213,10 @@ Remaining contracts: weekly routine/override semantics, version-compatible persi
 
 Preserve the production alias, authentication and existing catalog; use protected main for future authorized evolution. Current Design System version is defined only in `design-system/VERSION` (4.0.0).
 
+## Caderno de prova front evolution (ADR 0067, 2026-10-16)
+
+Presentation-only evolution in five stacked PRs (#50 tokens, #52 session/lesson, #53 Today/review, #54 landing/sign-in, phase 4 progress/QA). Not merged or deployed. Known pre-existing rollout e2e failures: `review-mistake-loop` (fails on the base) and intermittent `knowledge-map`.
+
 ## Next action
 
 Complete the current Phase 3 acceptance evidence, then continue the Adaptive Session contract through existing modules; see [PLANS.md](PLANS.md) and [.estudisc-agent-context/NEXT.md](.estudisc-agent-context/NEXT.md). Do not repeat imports/publication or claim planner-readiness certification from publication. Historical implementation logs are in `docs/history/`.
