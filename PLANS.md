@@ -1,20 +1,4 @@
 # Estudisc current plan
-## Email code sign-in — ADR 0068 (2026-10-17, Claude)
-
-Scope: auth only (`src/features/auth`, `src/auth.ts`, new auth tables/migration, sign-in route API). The sign-in UI change is limited to adding the email option to the existing form, coordinated with the parallel front session (ADR 0067 phase 3 owns landing + sign-in visuals). Approved by the owner: Google primary, email 6-digit code alternative, passkeys later, no class-code sign-in, no password, no SMS.
-
-Increments and acceptance:
-1. Schema + migration: `email_login_codes`, `auth_rate_events`; drizzle migration generated; repository with memory + Postgres implementations; unit tests.
-2. Domain: issue/verify (HMAC code hash, 10-min expiry, 5 attempts, single use, constant-time compare), Postgres rate limits, no-enumeration response; unit tests.
-3. Delivery: `EmailSender` port, Resend adapter, in-memory test sender; env vars `RESEND_API_KEY`, `ESTUDISC_EMAIL_FROM`, `FEATURE_EMAIL_CODE_SIGNIN`.
-4. Session: Auth.js provider accepting only a consumed code → same `ownerId` as Google for the email; `getOwnerProfile` unchanged path; tests that Google and email identities converge.
-5. UI + e2e: email field → code slots on `/auth/signin` behind the flag; Playwright flow with in-memory sender; mobile 390px check.
-6. Docs: CHANGELOG, PROJECT_STATUS, env example. Production: migration after pg_dump, Resend domain + secrets — needs owner confirmation.
-
-Open items: LGPD export/deletion and minors' consent (separate increment); Resend sending domain.
-
-Status: increments 1–6 implemented on `feat/email-code-signin` (increment 5 verified in a dev browser instead of Playwright: the E2E harness keeps auth off). NEXT ACTION: owner merge + production steps in PROJECT_STATUS.
-
 ## Caderno de prova front evolution — ADR 0067 (2026-10-16, Claude)
 
 Scope: presentation only (UI components, CSS, tokens). No change to packs/, content, domain logic, routes, server actions, DB schema, auth, payments, flags or `src/features/*/contracts`. One PR per phase, stacked branches; no merge/deploy.

@@ -1,11 +1,11 @@
 import type { ServerEnv } from "@/lib/env";
 
-import { isAllowedGoogleEmail, isSessionAuthConfigured } from "./auth-readiness";
+import { isAllowedGoogleEmail, isGoogleAuthConfigured } from "./auth-readiness";
 
 export type AuthGuardDecision = "allow" | "unauthenticated" | "forbidden";
 
 export function getAuthGuardDecision(email: string | null | undefined, env: ServerEnv): AuthGuardDecision {
-  if (!isSessionAuthConfigured(env)) {
+  if (!isGoogleAuthConfigured(env)) {
     return "allow";
   }
 

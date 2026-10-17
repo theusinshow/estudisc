@@ -1,11 +1,5 @@
 # Changelog
 
-## 2026-10-17 — Email code sign-in (ADR 0068, behind a flag)
-
-- Sign-in offers "Ou entre com um código no seu e-mail" under the Google button when `FEATURE_EMAIL_CODE_SIGNIN=true`: email → 6-digit code (10 min, single use, 5 attempts) → same `ownerId` as Google for that email, so progress and paid access are shared across methods.
-- New tables `email_login_codes` and `auth_rate_events` (migration 0023) store only keyed hashes; rate limits per email (3/10 min, 10/day) and per IP (20/hour) live in Postgres. The answer never reveals whether an address is accepted.
-- Resend sends the email (`RESEND_API_KEY`, `ESTUDISC_EMAIL_FROM`); without it, non-production prints the code to the terminal and production hides the option.
-
 ## 2026-10-17 — Design lab and vibrante theme (ADMIN preview)
 
 - `/admin/lab` compares the current look with a vibrant neo-brutalist theme (palettes Limão/Lavanda/Pêssego, Archivo or rounded Fredoka titles, one color per subject) and shows a WCAG contrast report; "Ver o app inteiro neste tema" previews real screens through an ADMIN-only cookie (`estudisc_theme`). Students never see it.
