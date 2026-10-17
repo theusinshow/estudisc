@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-17 — Model explorers in lessons (ADR 0070, F5 stage B)
+
+- Four new `numeric-explorer` modes, exploration only (no Attempt, evidence or score): `percent-grid` (paint a 10×10 grid, same value as %, /100 and decimal), `number-line` (place a value such as 3/4 on a divided line), `balance` (remove equal weights from both sides, divide, try values of x) and `time-zones` (move the UTC hour and see local times, day/night and date change). Touch and keyboard, no inline styles, reduced motion respected.
+- Lesson resume stores explorer progress under a new `explorer` interaction kind; older snapshots stay valid.
+- The interaction release tool also inserts explorers at the end of their Concept's section in the same next lesson version. The F5 draft batch adds explorers to MAT-03, MAT-07, MAT-13 and GH-51.
+
 ## 2026-10-17 — Tactile lesson activities (ADR 0069, F5 stage A)
 
 - Ordering: solution steps drag by the grip (the page still scrolls under the text) or move with arrows; short word lists become "tap the words to build the sentence" with a Recomeçar button. Each position is marked after checking. Response shape unchanged.

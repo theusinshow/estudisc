@@ -5,10 +5,18 @@ import { useInteractionState } from "../use-interaction-state";
 import type { InteractionTarget } from "../interaction-state";
 import { numericExplorerSchema, type NumericExplorerConfig } from "./numeric-explorer-schema";
 import { LinearExplorer } from "./linear-explorer";
+import { EquationBalance, NumberLine, PercentGrid, TimeZones } from "./model-explorers";
 
 type ExplorerProps = NumericExplorerConfig & { interaction?: InteractionTarget; enhanced?: boolean };
 export function NumericExplorer(props: ExplorerProps) {
-  return props.mode === "linear" ? <LinearExplorer {...props}/> : <PercentageExplorer {...props}/>;
+  switch (props.mode) {
+    case "linear": return <LinearExplorer {...props}/>;
+    case "percent-grid": return <PercentGrid {...props}/>;
+    case "number-line": return <NumberLine {...props}/>;
+    case "balance": return <EquationBalance {...props}/>;
+    case "time-zones": return <TimeZones {...props}/>;
+    default: return <PercentageExplorer {...props}/>;
+  }
 }
 function PercentageExplorer({ initialValue, initialPercentage, interaction, enhanced = false }: Extract<ExplorerProps, { mode?: undefined }>) {
   const id = useId();

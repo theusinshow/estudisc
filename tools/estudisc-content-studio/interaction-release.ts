@@ -6,13 +6,14 @@ import { loadTrackContext } from "@/db/repositories/lesson-version-import";
 import { DrizzleTrackImportRepository } from "@/db/repositories/track-import-repository";
 import { importLessonVersion } from "@/features/import/application/lesson-version-policy";
 import { trackPackV2Schema } from "@/features/import/application/track-pack-v2-schema";
-import { appendInteractions, interactionAuthoringSchema } from "./interaction-batch";
+import { appendInteractions, explorerAuthoringSchema, interactionAuthoringSchema } from "./interaction-batch";
 
 type Database = NonNullable<ConstructorParameters<typeof DrizzleTrackImportRepository>[0]> & NonNullable<ConstructorParameters<typeof ContentQaRepository>[0]>;
 
 export const interactionBatchFileSchema = z.object({
-  batchId: z.string().regex(/^[a-z0-9-]+$/), note: z.string().optional(), interactions: z.array(interactionAuthoringSchema).min(1)
-}).strict();
+  batchId: z.string().regex(/^[a-z0-9-]+$/), note: z.string().optional(),
+  interactions: z.array(interactionAuthoringSchema).default([]), explorers: z.array(explorerAuthoringSchema).default([])
+}).strict().refine(batch => batch.interactions.length + batch.explorers.length > 0, "Empty batch");
 
 /** Newest published version of a lesson with its Track/module identity, read from the content tables. */
 async function publishedBase(db: Database, lessonId: string) {
@@ -30,17 +31,17 @@ async function publishedBase(db: Database, lessonId: string) {
  */
 export async function releaseInteractions(db: Database, input: { batch: unknown; actor: { ownerId: string; role: "ADMIN" }; reason: string; publish: boolean }) {
   const batch = interactionBatchFileSchema.parse(input.batch);
-  const byLesson = new Map<string, typeof batch.interactions>();
-  for (const entry of batch.interactions) byLesson.set(entry.lessonId, [...(byLesson.get(entry.lessonId) ?? []), entry]);
+  const lessonIds = [...new Set([...batch.interactions, ...batch.explorers].map(entry => entry.lessonId))];
   const repo = new DrizzleTrackImportRepository(db, input.actor.ownerId), qa = new ContentQaRepository(db);
-  const results: { lessonId: string; from: number; to: number; questions: string[]; status: string }[] = [];
-  for (const [lessonId, authored] of byLesson) {
+  const results: { lessonId: string; from: number; to: number; questions: string[]; blocks: string[]; status: string }[] = [];
+  for (const lessonId of lessonIds) {
+    const authored = batch.interactions.filter(entry => entry.lessonId === lessonId), explorers = batch.explorers.filter(entry => entry.lessonId === lessonId);
     const target = await publishedBase(db, lessonId);
     const [manifest] = await loadTrackContext(db as never, target.trackId, target.trackVersion);
     const context = trackPackV2Schema.parse(manifest);
     const base = context.track.modules.find(entry => entry.id === target.moduleId)?.lessons.find(entry => entry.id === lessonId);
     if (!base || base.version !== target.version) throw new Error(`${lessonId}: imported context has v${base?.version}, published is v${target.version}`);
-    const pack = appendInteractions({ context, moduleId: target.moduleId, base, authored, packId: `estudisc.interactions.${batch.batchId}.${lessonId.toLowerCase()}`, authorId: input.actor.ownerId, generationRunId: batch.batchId });
+    const pack = appendInteractions({ context, moduleId: target.moduleId, base, authored, packId: `estudisc.interactions.${batch.batchId}.${lessonId.toLowerCase()}`, authorId: input.actor.ownerId, generationRunId: batch.batchId, explorers });
     const preview = await importLessonVersion(pack, repo, true);
     let status: string = preview.status;
     if (input.publish && status === "ready") {
@@ -48,7 +49,7 @@ export async function releaseInteractions(db: Database, input: { batch: unknown;
       await qa.publishLessonsDirect(input.actor, { lessons: [{ lessonId, version: pack.lesson.version }], reason: input.reason });
       status = `${status}+published`;
     }
-    results.push({ lessonId, from: base.version, to: pack.lesson.version, questions: (pack.questionVersions ?? []).map(question => question.id), status });
+    results.push({ lessonId, from: base.version, to: pack.lesson.version, questions: (pack.questionVersions ?? []).map(question => question.id), blocks: pack.lesson.blocks.filter(block => !base.blocks.some(old => old.id === block.id)).map(block => block.id), status });
   }
   return results;
 }

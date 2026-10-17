@@ -3,6 +3,7 @@ import { hashCanonicalJson } from "../../src/lib/canonical-json";
 import { questionSchema, type Question } from "../../src/features/questions/contracts";
 import type { TrackPackV2 } from "../../src/features/import/application/track-pack-v2-schema";
 import { lessonVersionPackSchema, type LessonVersionPack } from "../../src/features/import/application/lesson-version-contracts";
+import { equationBalanceSchema, numberLineSchema, percentGridSchema, timeZonesSchema } from "../../src/features/lessons/blocks/numeric-explorer-schema";
 
 type Lesson = TrackPackV2["track"]["modules"][number]["lessons"][number];
 const label = z.string().trim().min(1).max(160);
@@ -36,6 +37,22 @@ export const interactionAuthoringSchema = z.object({
   if (value.type === "classification" && new Set(Object.values(answer)).size < 2) fail("Classification must use at least two destinations");
 });
 export type InteractionAuthoring = z.infer<typeof interactionAuthoringSchema>;
+
+/** One ADR 0070 model explorer to insert at the end of its Concept's section of the lesson. */
+export const explorerAuthoringSchema = z.object({
+  lessonId: z.string().regex(/^[A-Z]+-[A-Z0-9]+$/), conceptId: z.string().min(1),
+  payload: z.union([percentGridSchema, numberLineSchema, equationBalanceSchema, timeZonesSchema])
+}).strict();
+export type ExplorerAuthoring = z.infer<typeof explorerAuthoringSchema>;
+
+const SECTION_BREAKS = new Set(["concept", "summary", "prediction"]);
+function insertExplorer(blocks: Lesson["blocks"], explorer: ExplorerAuthoring, id: string) {
+  const start = blocks.findIndex(block => block.type === "concept" && block.conceptIds.includes(explorer.conceptId));
+  const next = start < 0 ? -1 : blocks.findIndex((block, index) => index > start && SECTION_BREAKS.has(block.type));
+  const summary = blocks.findIndex(block => block.type === "summary");
+  const at = start >= 0 ? (next >= 0 ? next : blocks.length) : summary >= 0 ? summary : blocks.length;
+  blocks.splice(at, 0, { id, type: "numeric-explorer", schemaVersion: 1, conceptIds: [explorer.conceptId], payload: explorer.payload as Record<string, unknown> });
+}
 
 const OPERATIONS: Record<InteractionAuthoring["type"], Question["cognitiveOperations"]> = {
   ordering: ["analyze", "apply"], classification: ["identify", "compare"], matching: ["identify", "compare"]
@@ -79,13 +96,13 @@ export function buildInteractionQuestion(authored: InteractionAuthoring, options
 /** Next lesson version that keeps every published block and Activity and appends one question Activity per interaction. */
 export function appendInteractions(input: {
   context: TrackPackV2; moduleId: string; base: Lesson; authored: readonly InteractionAuthoring[];
-  packId: string; authorId: string; generationRunId: string;
+  packId: string; authorId: string; generationRunId: string; explorers?: readonly ExplorerAuthoring[];
 }): LessonVersionPack {
   const { context, base } = input;
   const concepts = new Set(base.concepts.map(concept => concept.id));
   const template = base.activities.find(activity => activity.type === "question" && activity.questionId);
-  if (!template) throw new Error(`${base.id} has no question Activity to follow`);
-  const subjectCode = context.questions.find(question => question.id === template.questionId)?.subjectCode ?? base.id.split("-")[0];
+  if (!template && input.authored.length) throw new Error(`${base.id} has no question Activity to follow`);
+  const subjectCode = context.questions.find(question => question.id === template?.questionId)?.subjectCode ?? base.id.split("-")[0];
   const taken = new Set([...context.questions.map(question => question.id), ...base.activities.map(activity => activity.id)]);
   const lesson = structuredClone({ ...base, version: base.version + 1, status: "draft" as const });
   const fresh: Question[] = [];
@@ -102,8 +119,17 @@ export function appendInteractions(input: {
     const question = buildInteractionQuestion(authored, { questionId, subjectCode, generationRunId: input.generationRunId });
     fresh.push(question);
     // The template's hints belong to its own Question; interactions start without hints.
-    const config = Object.fromEntries(Object.entries(template.config as Record<string, unknown>).filter(([key]) => key !== "hints"));
-    lesson.activities.push({ ...structuredClone(template), id: activityId, questionId, prompt: authored.stem, conceptIds: [authored.conceptId], config: { ...config, questionVersion: 1 } });
+    const config = Object.fromEntries(Object.entries(template!.config as Record<string, unknown>).filter(([key]) => key !== "hints"));
+    lesson.activities.push({ ...structuredClone(template!), id: activityId, questionId, prompt: authored.stem, conceptIds: [authored.conceptId], config: { ...config, questionVersion: 1 } });
+  });
+  const blockIds = new Set(base.blocks.map(block => block.id));
+  (input.explorers ?? []).forEach((explorer, index) => {
+    if (explorer.lessonId !== base.id) throw new Error(`Explorer for ${explorer.lessonId} given to ${base.id}`);
+    if (!concepts.has(explorer.conceptId)) throw new Error(`${explorer.conceptId} is not a Concept of ${base.id}`);
+    let n = index + 1, id = `BLK-${base.id}-EXP${String(n).padStart(2, "0")}`;
+    while (blockIds.has(id)) id = `BLK-${base.id}-EXP${String(++n).padStart(2, "0")}`;
+    blockIds.add(id);
+    insertExplorer(lesson.blocks, explorer, id);
   });
   const all = [...context.questions, ...fresh];
   const refs = [...new Set([...lesson.exitTicketQuestionIds, ...lesson.activities.flatMap(activity => activity.questionId ? [activity.questionId] : [])])];

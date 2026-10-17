@@ -1,6 +1,6 @@
 {
   "batchId": "f5a-20261017",
-  "note": "Hand-written practice interactions (ADR 0063 builder). Ordering items are listed in the correct order; the builder scrambles them. Provenance: generated (authored in-session), not official IFSC questions. Portuguese entries are only sentence-building orderings, a format those lessons did not have yet.",
+  "note": "Hand-written practice interactions (ADR 0063 builder). Ordering items are listed in the correct order; the builder scrambles them. Provenance: generated (authored in-session), not official IFSC questions. Portuguese entries are only sentence-building orderings, a format those lessons did not have yet. Explorers (ADR 0070) are exploration only and record no evidence.",
   "interactions": [
     {
       "lessonId": "MAT-07",
@@ -213,6 +213,96 @@
         "na véspera"
       ],
       "explanation": "Na passiva analítica, o objeto direto da ativa (o bolo) vira sujeito paciente; o verbo vira locução com ser + particípio (foi preparado), no mesmo tempo da ativa; quem praticou a ação vira agente da passiva, introduzido por “por” (pela avó). O adjunto de tempo (na véspera) não muda de função."
+    }
+  ],
+  "explorers": [
+    {
+      "lessonId": "MAT-07",
+      "conceptId": "MAT.PCT.CONCEPT",
+      "payload": {
+        "mode": "percent-grid",
+        "title": "Pinte a porcentagem",
+        "initial": 20,
+        "target": 35,
+        "explanation": "Porcentagem é uma parte de 100. Na grade, cada quadradinho vale 1%: pintar 35 quadradinhos é mostrar 35%, que também se escreve 35/100 ou 0,35."
+      }
+    },
+    {
+      "lessonId": "MAT-03",
+      "conceptId": "MAT.FRACTION.COMPARE",
+      "payload": {
+        "mode": "number-line",
+        "title": "Frações na reta numérica",
+        "min": 0,
+        "max": 1,
+        "divisions": 8,
+        "initial": 1,
+        "target": 6,
+        "targetLabel": "3/4",
+        "ticks": [
+          {
+            "at": 0,
+            "label": "0"
+          },
+          {
+            "at": 4,
+            "label": "1/2"
+          },
+          {
+            "at": 8,
+            "label": "1"
+          }
+        ],
+        "explanation": "A reta de 0 a 1 está dividida em 8 partes iguais, então cada marca vale 1/8. Como 3/4 = 6/8, ele fica na sexta marca: depois de 1/2 (4/8) e antes de 1. Em decimal, 3/4 = 0,75."
+      }
+    },
+    {
+      "lessonId": "MAT-13",
+      "conceptId": "MAT.EQ1.SOLVE",
+      "payload": {
+        "mode": "balance",
+        "title": "A balança da equação",
+        "coefficient": 2,
+        "constant": 3,
+        "result": 11,
+        "explanation": "Uma equação é uma balança em equilíbrio: o que você fizer de um lado precisa fazer do outro. Tirando 3 pesos de cada lado, 2x + 3 = 11 vira 2x = 8; dividindo os dois lados por 2, x = 4. Conferindo: 2 · 4 + 3 = 11."
+      }
+    },
+    {
+      "lessonId": "GH-51",
+      "conceptId": "GH-51-C03",
+      "payload": {
+        "mode": "time-zones",
+        "title": "Que horas são em cada fuso?",
+        "initialUtc": 15,
+        "places": [
+          {
+            "label": "Greenwich (Londres)",
+            "offset": 0
+          },
+          {
+            "label": "Fernando de Noronha",
+            "offset": -2
+          },
+          {
+            "label": "Brasília",
+            "offset": -3
+          },
+          {
+            "label": "Manaus",
+            "offset": -4
+          },
+          {
+            "label": "Rio Branco",
+            "offset": -5
+          },
+          {
+            "label": "Tóquio",
+            "offset": 9
+          }
+        ],
+        "explanation": "A Terra gira 360° em 24 horas, então cada fuso teórico tem 15° de longitude e vale 1 hora. A oeste de Greenwich as horas são menores; a leste, maiores. O Brasil tem quatro fusos oficiais, de UTC−2 a UTC−5. Alguns países adotam horário de verão em parte do ano, o que muda a diferença; aqui os fusos são os padrão."
+      }
     }
   ]
 }

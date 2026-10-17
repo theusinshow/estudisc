@@ -9,6 +9,8 @@ export const interactionStateSchema = z.discriminatedUnion("kind", [
   z.object({ ...target, kind: z.literal("prediction"), state: z.object({ response: text, phase: z.enum(["predict", "observe", "explain"]) }).strict() }).strict(),
   z.object({ ...target, kind: z.literal("numeric-explorer"), state: z.object({ base: z.string().max(64), percentage: z.string().max(64) }).strict() }).strict(),
   z.object({ ...target, kind: z.literal("linear-explorer"), state: z.object({ input: z.string().max(64) }).strict() }).strict(),
+  // ADR 0070 model explorers: one position (painted cells, line division, x guess or UTC hour), a step count and a check flag.
+  z.object({ ...target, kind: z.literal("explorer"), state: z.object({ position: z.number().int().min(-100).max(100), step: z.number().int().min(0).max(40), checked: z.boolean() }).strict() }).strict(),
   z.object({ ...target, kind: z.literal("atom"), state: z.object({ protons: z.string().max(64), neutrons: z.string().max(64), electrons: z.string().max(64), prediction: z.string().max(64), revealed: z.boolean() }).strict() }).strict(),
   z.object({ ...target, kind: z.literal("comparison"), state: z.object({ position: z.number().int().min(0).max(100) }).strict() }).strict(),
   z.object({ ...target, kind: z.literal("hotspot"), state: z.object({ selectedId: id.nullable(), zoom: z.number().min(1).max(3).multipleOf(0.25) }).strict() }).strict(),

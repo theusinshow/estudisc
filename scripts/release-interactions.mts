@@ -15,7 +15,7 @@ try {
   const batch = JSON.parse(readFileSync(values.batch, "utf8"));
   const reason = `Admin Direct under the standing owner authorization (AGENTS.md, ADR 0048) after engineering validation: hand-written practice interactions batch ${batch.batchId}. No independent editorial review recorded.`;
   const results = await releaseInteractions(drizzle(client, { schema }) as never, { batch, actor: { ownerId: values.actor, role: "ADMIN" }, reason, publish: values.publish });
-  for (const row of results) console.log(`${row.lessonId} v${row.from} -> v${row.to} ${row.status} ${row.questions.join(",")}`);
+  for (const row of results) console.log(`${row.lessonId} v${row.from} -> v${row.to} ${row.status} ${[...row.questions, ...row.blocks].join(",")}`);
   if (!values.publish) console.log("Preview only: nothing written.");
 } finally {
   await client.end();
