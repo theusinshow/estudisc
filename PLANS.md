@@ -1,4 +1,10 @@
 # Estudisc current plan
+## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
+
+Owner decisions: Google + passwordless e-mail code, Resend, guardian declaration for minors, existing profiles link e-mail later.
+Increments: (1) schema + migration + repository (Drizzle + memory) with PGlite tests; (2) user session token + owner resolution + proxy; (3) e-mail code APIs + Resend delivery + throttles; (4) Google mapping to linked identities; (5) UI: sign-in, /auth/cadastro, link e-mail on the profile; (6) docs, CHANGELOG, status.
+Acceptance: account-matheus/account-kaua keep their ownerId and progress after a code sign-in and after linking an e-mail; sign-up creates a STUDENT account only with FEATURE_OPEN_SIGNUP; codes are single use, expire in 10 min, 5 attempts; no account enumeration; lint/typecheck/tests green; nothing deployed before owner review and Resend setup.
+
 ## Caderno de prova front evolution — ADR 0067 (2026-10-16, Claude)
 
 Scope: presentation only (UI components, CSS, tokens). No change to packs/, content, domain logic, routes, server actions, DB schema, auth, payments, flags or `src/features/*/contracts`. One PR per phase, stacked branches; no merge/deploy.
