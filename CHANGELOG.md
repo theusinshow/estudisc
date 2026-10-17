@@ -3,6 +3,7 @@
 ## 2026-10-17 — Follow-ups: narrated Science worked examples, no REVISE stamp
 
 - CIE-02…40: the template worked examples ("1) Use esta relação: …", often citing unrelated relations) are rewritten by hand as short narrated solutions that start from the situation and end in the answer. Sources edited in author/ and approved/, Science pack regenerated, pins updated; IDs unchanged.
+- Deploy: `railway.json` (deprecated Config as Code) is removed; the same build, start, health check and restart settings are stored on the Railway `app` service.
 - A wrong answer inside the lesson no longer shows the uppercase "REVISE" stamp; "Ainda não" and the explanation carry the result.
 
 ## 2026-10-16 — Student experience: review loop, errors that teach, student-facing text (branch fix/student-experience)
