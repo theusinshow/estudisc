@@ -7,7 +7,8 @@ import { studentQuestion } from "@/features/questions/student-view";
 import { questionReferenceSchema } from "@/features/activities/application/question-reference";
 import { evidenceStrengthV2,MASTERY_V2 } from "@/features/mastery/mastery-policy-v2";
 import { scheduleReviewV2,REVIEW_V2 } from "@/features/review/review-policy-v2";
-import { isIndependentQuestionSuccess, QUESTION_SUCCESS_XP, QUESTION_SUCCESS_REASON } from "@/features/gamification/study-rewards";
+import { questionReward, QUESTION_ASSISTED_REASON, QUESTION_ASSISTED_XP, QUESTION_SUCCESS_XP, QUESTION_SUCCESS_REASON } from "@/features/gamification/study-rewards";
+import { answerKey, itemResults, wrongAnswerFeedback } from "@/features/questions/answer-feedback";
 import { frozenMember } from "@/features/study-sessions/frozen-membership";
 import { sessionItemsSchema } from "@/features/study-sessions/contracts";
 import { AiLearningError, type AiQuestionSource } from "@/features/ai/contracts";
@@ -65,11 +66,12 @@ export class MemoryQuestionStudyRepository {
     const assistance=this.store.questionAssistance.find(item=>item.ownerId===ownerId&&item.questionId===input.questionId&&item.version===input.questionVersion&&item.contextKey===ctx.contextKey);
     if(!assistance)throw new QuestionUnavailableError();
     if(input.action==="hint"){assistance.hintLevel=Math.min(ctx.config.hints.length,assistance.hintLevel+1);return {hintLevel:assistance.hintLevel,hint:ctx.config.hints[assistance.hintLevel-1]};}
-    if(input.action==="solution"){assistance.solutionRevealed=true;return {correct:false,explanation:ctx.question.explanation};}
+    if(input.action==="solution"){assistance.solutionRevealed=true;return {correct:false,explanation:ctx.question.explanation,answerKey:answerKey(ctx.question)};}
     const previous=this.store.attempts.find(attempt=>attempt.ownerId===ownerId&&attempt.submissionKey===input.submissionKey);
     if(previous){if(previous.activityStableId!==activityId||JSON.stringify(previous.response)!==JSON.stringify(input.response))throw new SubmissionConflictError();return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:previous.outcome==="passed"?ctx.question.explanation:undefined,xpAwarded:0};}
     const evaluation=evaluateQuestion(ctx.question,input.response); if(!evaluation.evidenceEligible)throw new QuestionUnavailableError();
     const id=crypto.randomUUID();const now=new Date();
+    const failedBefore=this.store.attempts.filter(item=>item.ownerId===ownerId&&item.outcome==="failed"&&(item.context as Record<string,unknown>|undefined)?.questionId===ctx.question.id).length;
     const conditions={policyVersion:MASTERY_V2,outcome:evaluation.outcome,hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed,difficulty:ctx.question.difficulty,mode:"learn",questionId:ctx.question.id,questionVersion:ctx.question.version,contextKey:ctx.contextKey};
     this.store.attempts.push({id,ownerId,activityStableId:activityId,attemptNumber:this.store.attempts.filter(item=>item.ownerId===ownerId&&item.activityStableId===activityId).length+1,outcome:evaluation.correct?"passed":"failed",source:JSON.stringify(input.response),response:input.response,submissionKey:input.submissionKey,context:conditions,createdAt:now,tests:[],output:{status:"completed",stdout:[],stderr:[],result:null,runtimeVersion:"question.v1",limits:{timeoutMs:0,outputLimit:0},capabilities:{dom:false,network:false,ambientSecrets:false}}});
     for(const conceptStableId of ctx.question.conceptIds){
@@ -79,18 +81,24 @@ export class MemoryQuestionStudyRepository {
       const mode=delayedRetrieval?"review" as const:"learn" as const;
       this.store.conceptEvidence.push({id:crypto.randomUUID(),ownerId,conceptStableId,attemptId:id,type:"question_result",strength:evidenceStrengthV2({correct:evaluation.correct,difficulty:ctx.question.difficulty,mode,hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed,questionId:ctx.question.id,delayedRetrieval,transfer,createdAt:now}),sourceType:"question_attempt",sourceId:id,conditions:{...conditions,mode,delayedRetrieval,transfer},createdAt:now});
       const review=this.store.reviewSchedules.find(item=>item.ownerId===ownerId&&item.conceptStableId===conceptStableId);
-      const schedule=delayedRetrieval?scheduleReviewV2({correct:evaluation.correct,independent:!assistance.hintLevel&&!assistance.solutionRevealed,stage:review?.metadata?.stage??0,reviewedAt:now}):{stage:0,stabilityDays:1,nextReviewAt:new Date(now.getTime()+86400000),policyVersion:REVIEW_V2};
+      const scheduled=delayedRetrieval?scheduleReviewV2({correct:evaluation.correct,independent:!assistance.hintLevel&&!assistance.solutionRevealed,stage:review?.metadata?.stage??0,reviewedAt:now}):{stage:0,stabilityDays:1,nextReviewAt:new Date(now.getTime()+86400000),policyVersion:REVIEW_V2};
+      // Same rule as the SQL repository: a wrong answer is reviewable now; a correct one keeps the spaced schedule.
+      const schedule=evaluation.correct?scheduled:{...scheduled,nextReviewAt:now};
       if(review){review.nextReviewAt=schedule.nextReviewAt;review.policyVersion=REVIEW_V2;review.metadata={stage:schedule.stage,stabilityDays:schedule.stabilityDays};if(delayedRetrieval){review.lastReviewedAt=now;review.reviewCount++;}}
       else this.store.reviewSchedules.push({ownerId,conceptStableId,currentMasteryState:evaluation.correct?"understood":"introduced",lastReviewedAt:null,nextReviewAt:schedule.nextReviewAt,reviewCount:0,recentQuality:evaluation.correct?3:1,policyVersion:REVIEW_V2,updatedAt:now,metadata:{stage:schedule.stage,stabilityDays:schedule.stabilityDays}});
+      if(evaluation.correct&&!assistance.hintLevel&&!assistance.solutionRevealed)for(const mistake of this.store.mistakes)if(mistake.ownerId===ownerId&&mistake.conceptStableId===conceptStableId&&mistake.status==="active"){mistake.status="resolved";mistake.resolvedAt=now;}
       if(!evaluation.correct)this.store.mistakes.push({id:crypto.randomUUID(),ownerId,conceptStableId,attemptId:id,category:ctx.question.type==="numeric"?"CALCULATION":"INTERPRETATION",summary:"Rever o raciocínio desta questão.",status:"active",createdAt:now,resolvedAt:null});
     }
     let xpAwarded = 0;
-    if (isIndependentQuestionSuccess(conditions) && !this.store.xpTransactions.some(item => item.ownerId === ownerId && item.reason === QUESTION_SUCCESS_REASON && item.sourceType === "question" && item.sourceId === ctx.question.id)) {
-      this.store.xpTransactions.push({ id: crypto.randomUUID(), ownerId, amount: QUESTION_SUCCESS_XP, reason: QUESTION_SUCCESS_REASON, sourceType: "question", sourceId: ctx.question.id, createdAt: now });
-      xpAwarded = QUESTION_SUCCESS_XP;
+    let reward = questionReward(conditions, failedBefore);
+    if (reward && this.store.xpTransactions.some(item => item.ownerId === ownerId && [QUESTION_SUCCESS_REASON, QUESTION_ASSISTED_REASON].includes(item.reason) && item.sourceType === "question" && item.sourceId === ctx.question.id)) reward = undefined;
+    if (reward) {
+      xpAwarded = reward === "first_try" ? QUESTION_SUCCESS_XP : QUESTION_ASSISTED_XP;
+      this.store.xpTransactions.push({ id: crypto.randomUUID(), ownerId, amount: xpAwarded, reason: reward === "first_try" ? QUESTION_SUCCESS_REASON : QUESTION_ASSISTED_REASON, sourceType: "question", sourceId: ctx.question.id, createdAt: now });
     }
-    // A wrong answer does not show the worked solution, so a retry still counts as independent evidence.
-    if(evaluation.correct)assistance.solutionRevealed=true;
-    return {attemptId:id,correct:evaluation.correct,explanation:evaluation.correct?ctx.question.explanation:undefined,xpAwarded};
+    // The first wrong answer explains the chosen option only, so a retry still counts as independent evidence; the second opens the solution.
+    const feedback=evaluation.correct?undefined:wrongAnswerFeedback(ctx.question,input.response,failedBefore+1);
+    if(evaluation.correct||feedback?.solutionShown)assistance.solutionRevealed=true;
+    return evaluation.correct?{attemptId:id,correct:true,explanation:ctx.question.explanation,itemResults:itemResults(ctx.question,input.response),xpAwarded,reward}:{attemptId:id,correct:false,...feedback,xpAwarded};
   }
 }

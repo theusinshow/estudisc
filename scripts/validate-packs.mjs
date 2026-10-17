@@ -95,6 +95,10 @@ export function validatePack(pack, config) {
       if (answers.size === 1) out.push({ rule: "R11", id: members[0].id, value: members.length, detail: `${members.length} questions share the same choices and the same correct one: “${[...answers][0].slice(0, 60)}”` });
     }
   }
+  if (rules.R12) for (const question of choice) {
+    const missing = question.choices.filter(option => !option.correct && !option.rationale?.trim()).length;
+    if (missing) out.push({ rule: "R12", id: question.id, value: missing, detail: `${missing} of ${question.choices.length - 1} wrong choices have no rationale` });
+  }
   return out;
 }
 

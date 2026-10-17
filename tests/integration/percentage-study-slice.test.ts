@@ -29,11 +29,11 @@ it("completes the percentage slice, deduplicates retries and isolates owners",as
     expect(wrong).toMatchObject({correct:false,xpAwarded:0});expect(wrong.explanation).toBeUndefined();
     expect(await database.db.select().from(xpTransactions)).toHaveLength(0);
     const input={questionId:"Q-MAT-GOLDEN-3",questionVersion:1,action:"submit" as const,submissionKey:crypto.randomUUID(),response:"30 %",sessionId:session!.id};
-    const first=await questions.interact("student-a","mat07-q3",input);expect(first).toMatchObject({correct:true,xpAwarded:20});expect(first.explanation).toBeTruthy();
+    const first=await questions.interact("student-a","mat07-q3",input);expect(first).toMatchObject({correct:true,xpAwarded:10,reward:"assisted"});expect(first.explanation).toBeTruthy();
     const passedEvidence=(await database.db.select().from(conceptEvidence)).filter(item=>item.sourceType==="question_attempt"&&(item.conditions as Record<string,unknown>).outcome==="passed");
     expect(passedEvidence.length).toBeGreaterThan(0);expect(passedEvidence.every(item=>(item.conditions as Record<string,unknown>).solutionRevealed===false)).toBe(true);
-    expect(await questions.interact("student-a","mat07-q3",input)).toEqual({...first,xpAwarded:0});
-    expect(await database.db.select().from(xpTransactions)).toMatchObject([{ownerId:"student-a",amount:20,sourceType:"question",sourceId:"Q-MAT-GOLDEN-3"}]);
+    expect(await questions.interact("student-a","mat07-q3",input)).toMatchObject({attemptId:first.attemptId,correct:true,explanation:first.explanation,xpAwarded:0});
+    expect(await database.db.select().from(xpTransactions)).toMatchObject([{ownerId:"student-a",amount:10,reason:"question_assisted_success",sourceType:"question",sourceId:"Q-MAT-GOLDEN-3"}]);
     await expect(questions.interact("student-a","mat07-q3",{...input,response:"31"})).rejects.toThrow("Submission key");
     await expect(questions.interact("student-b","mat07-q3",input)).rejects.toThrow("unavailable");
     expect(await database.db.select().from(attempts)).toHaveLength(2);

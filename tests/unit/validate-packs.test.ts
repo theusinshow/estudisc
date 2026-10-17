@@ -3,14 +3,14 @@ import config from "../../scripts/validate-packs.config.json";
 // @ts-expect-error -- plain ESM script without type declarations
 import { applyBaseline, validateAcrossPacks, validatePack } from "../../scripts/validate-packs.mjs";
 
-type Choice = { id: string; content: string; correct: boolean };
+type Choice = { id: string; content: string; correct: boolean; rationale?: string };
 type Violation = { rule: string; id: string; value?: number; file?: string };
 const letters = ["A", "B", "C", "D", "E"];
 
 /** Balanced, clean question: equal-length choices, no absolute terms, rotating answer letter. */
 function question(index: number, patch: Record<string, unknown> = {}) {
   const answer = letters[index % 5];
-  const choices: Choice[] = letters.map(id => ({ id, content: `Opção ${id} da questão ${index}`, correct: id === answer }));
+  const choices: Choice[] = letters.map(id => ({ id, content: `Opção ${id} da questão ${index}`, correct: id === answer, ...(id === answer ? {} : { rationale: `Por que ${id} não serve.` }) }));
   return { id: `Q-${index}`, stem: `Enunciado número ${index}?`, choices, answer: { kind: "multiple_choice", choiceId: answer }, explanation: "Explicação.", assets: [] as unknown[], ...patch };
 }
 function pack(questions: ReturnType<typeof question>[], content = "Texto didático limpo.", packId = "pack-a", lessonId = "L-01", title = "Aula") {
@@ -47,7 +47,7 @@ describe("validate-packs rules", () => {
   });
 
   it("R5 flags an unbalanced answer key", () => {
-    const allA = clean().map(entry => ({ ...entry, choices: entry.choices.map(choice => ({ ...choice, correct: choice.id === "A" })), answer: { kind: "multiple_choice", choiceId: "A" } }));
+    const allA = clean().map(entry => ({ ...entry, choices: entry.choices.map(choice => ({ ...choice, correct: choice.id === "A", rationale: "Motivo." })), answer: { kind: "multiple_choice", choiceId: "A" } }));
     expect(rules(validatePack(pack(allA), config))).toEqual(["R5"]);
   });
 
@@ -98,6 +98,12 @@ describe("validate-packs templating rules", () => {
   it("R10 flags templated stem openings", () => {
     const templated = clean().map(entry => ({ ...entry, stem: `Como o contexto esclarece ${entry.id}?` }));
     expect(validatePack(pack(templated), config).some((violation: Violation) => violation.rule === "R10")).toBe(true);
+  });
+
+  it("R12 warns when a wrong choice has no explanation for the student", () => {
+    const missing = clean().map((entry, index) => index ? entry : { ...entry, choices: entry.choices.map(choice => ({ id: choice.id, content: choice.content, correct: choice.correct })) });
+    expect(validatePack(pack(missing), config).filter((violation: Violation) => violation.rule === "R12")).toMatchObject([{ id: "Q-0", value: 4 }]);
+    expect(config.rules.R12.severity).toBe("warn");
   });
 
   it("R11 flags identical choice sets that always share the same answer", () => {

@@ -1,8 +1,9 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it } from "vitest";
 
 import { LessonStepper } from "@/features/lessons/lesson-stepper";
+import { ATTEMPT_RECORDED_EVENT } from "@/features/progress/live-progress-summary";
 
 const steps = [
   { id: "a", kind: "intro" as const, label: "Para começar", node: <p>Primeiro</p> },
@@ -12,6 +13,17 @@ const completion = { trackHref: "/tracks/t", nextLesson: { href: "/lessons/next"
 
 describe("LessonStepper", () => {
   afterEach(() => window.history.replaceState(null, "", "/"));
+
+  it("lists the questions still wrong at the end of the lesson, with a way to review them", () => {
+    window.history.replaceState(null, "", "/lessons/x#concluida");
+    render(<LessonStepper steps={steps} completion={completion} />);
+    const answer = (questionId: string, correct: boolean) => act(() => { window.dispatchEvent(new CustomEvent(ATTEMPT_RECORDED_EVENT, { detail: { questionId, stem: `Enunciado ${questionId}`, correct } })); });
+    answer("q1", false); answer("q2", false); answer("q2", true);
+    expect(screen.getByText("1 questão ficou com erro", { exact: false })).toBeVisible();
+    expect(screen.getByText("Enunciado q1")).toBeVisible();
+    expect(screen.queryByText("Enunciado q2")).toBeNull();
+    expect(screen.getByRole("link", { name: "Revisar meus erros" })).toHaveAttribute("href", "/review");
+  });
 
   it("reopens the step stored in the URL hash", () => {
     window.history.replaceState(null, "", "/lessons/x#passo-2");

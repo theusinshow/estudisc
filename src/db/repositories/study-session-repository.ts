@@ -12,7 +12,7 @@ import { StudyPlanRepository } from "./study-plan-repository";
 import { assertRoutineBudget, assertRoutineStart } from "@/features/study-sessions/routine-session-constraints";
 import { sqlAdaptiveChoices } from "./adaptive-session-data";
 import { summarizeSession } from "@/features/study-sessions/session-summary";
-import type { TargetedPracticeRequest } from "@/features/study-sessions/targeted-selection";
+import { OpenSessionError, type TargetedPracticeRequest } from "@/features/study-sessions/targeted-selection";
 import { sqlTargetedSelection } from "./targeted-session-selection";
 
 type Database=PgDatabase<PgQueryResultHKT,typeof schema>;
@@ -27,12 +27,15 @@ export class StudySessionRepository{
       await tx.select().from(owners).where(eq(owners.id,ownerId)).for("update");
       const selection=target?await sqlTargetedSelection(tx,ownerId,target,now):undefined;
       const [open]=await tx.select().from(studySessions).where(and(eq(studySessions.ownerId,ownerId),eq(studySessions.status,"ACTIVE")));
-      if(open)return open;
+      if(open&&!target)return open;
+      if(open&&!target?.startNew)throw new OpenSessionError(open.id);
       const subjectLimits=this.routineEnabled?assertRoutineBudget((await new StudyPlanRepository(tx).getState(ownerId,now)).week,budgetMinutes):undefined;
       if(this.adaptiveEnabled||selection){
         const data=await sqlAdaptiveChoices(tx,ownerId,budgetMinutes,subjectLimits,now,selection);
         const plan=planCandidates(data.choices.map(choice=>choice.candidate),budgetMinutes,"FOUNDATION",data.subjectMinutes,subjectLimits,true);
         if(!plan.items.length)return null;
+        // The learner chose to start anew: the open session ends only once the new one is ready.
+        if(open)await tx.update(studySessions).set({status:"ABANDONED",endedAt:now}).where(eq(studySessions.id,open.id));
         const items=plan.items.map(candidate=>data.choices.find(choice=>choice.candidate.id===candidate.id)!.item);
         await tx.update(studySessions).set({status:"ABANDONED",endedAt:now}).where(and(eq(studySessions.ownerId,ownerId),eq(studySessions.status,"PLANNED")));
         const [session]=await tx.insert(studySessions).values({ownerId,trackId:items[0].trackId!,budgetMinutes,items,policyVersion:plan.policyVersion,createdAt:now}).returning();return session;

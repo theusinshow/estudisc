@@ -16,7 +16,8 @@ import { AssessmentRepository } from "@/db/repositories/assessment-repository";
 import { MemoryAssessmentRepository } from "@/db/repositories/memory-assessment-repository";
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
 import { MistakeRepository } from "@/db/repositories/mistake-repository";
-import { MemoryMistakeRepository } from "@/db/repositories/memory/reviews";
+import { MemoryMistakeRepository, MemoryReviewRepository } from "@/db/repositories/memory/reviews";
+import { ReviewRepository } from "@/db/repositories/review-repository";
 import { AiLearningRepository, MemoryAiLearningRepository } from "@/db/repositories/ai-learning-repository";
 import { CatalogRepository } from "@/db/repositories/catalog-repository";
 import { MemoryCatalogRepository } from "@/db/repositories/memory-store";
@@ -140,7 +141,7 @@ describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
       expect(await planner.plan("learner", 10, new Date(unlockAt), { kind: "review", conceptId })).not.toBeNull();
     }finally{await ctx.database?.close();}
   });
-  it("validates a recorded mistake before preserving ACTIVE membership and excludes its Question on retry",async()=>{
+  it("never reuses an open session for a mistake practice silently, starts anew on request, and excludes its Question on retry",async()=>{
     const initial=fixture(), originals=initial.questions.slice();
     initial.questions.push(...originals.map(q=>({...structuredClone(q),id:`${q.id}-alternate`})));
     for(const moduleRecord of initial.track.modules)for(const lesson of moduleRecord.lessons){
@@ -158,10 +159,15 @@ describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
       expect(view.question.id).toBe(canonical.id);
       const record=ctx.database?(await ctx.database.db.select().from(mistakes))[0]:ctx.store.mistakes[0];
       const planner=ctx.database?new StudySessionRepository(ctx.database.db,false,false):new MemoryStudySessionRepository(ctx.store,false,false);
-      const retained=await planner.plan("learner",10,now,{kind:"remediation",mistakeId:record.id});expect(retained!.id).toBe(original.id);expect(retained!.items).toEqual(original.items);
+      // A wrong answer puts its Concept on the review queue right away (one source for Today and /review).
+      const reviews=ctx.database?new ReviewRepository(ctx.database.db):new MemoryReviewRepository(ctx.store);
+      const queued=await reviews.listDueReviews("learner",now);
+      expect(queued.some(review=>review.hasActiveMistake)).toBe(true);
+      // The open session is not returned in place of the practice: the learner chooses.
+      await expect(planner.plan("learner",10,now,{kind:"remediation",mistakeId:record.id})).rejects.toMatchObject({sessionId:original.id});
       await expect(planner.plan("other",10,now,{kind:"remediation",mistakeId:record.id})).rejects.toMatchObject({code:"target_unavailable"});
-      await ctx.sessions.transition("learner",original.id,"abandon",now);
-      const retry=await planner.plan("learner",10,now,{kind:"remediation",mistakeId:record.id});expect(retry).not.toBeNull();
+      const retry=await planner.plan("learner",10,now,{kind:"remediation",mistakeId:record.id,startNew:true});expect(retry).not.toBeNull();
+      expect((await planner.get("learner",original.id))?.status).toBe("ABANDONED");expect(retry!.id).not.toBe(original.id);
       const retryItems=sessionItemsSchema.parse(retry!.items);expect(retryItems.every(i=>i.intent==="remediation")).toBe(true);expect(retryItems.flatMap(i=>i.questions).every(q=>q.id!==canonical.id)).toBe(true);
       const observations=ctx.database?new MistakeRepository(ctx.database.db):new MemoryMistakeRepository(ctx.store);
       const reflection={mistakeId:record.id,mutationId:crypto.randomUUID(),category:"calculation_error" as const,note:"Percebi um erro na conta."};
@@ -181,6 +187,35 @@ describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
       expect((await planner.get("learner", retry!.id))?.status).toBe("PLANNED");
     }finally{await ctx.database?.close();}
   });
+  it("resolves a Concept's mistakes after an independent correct answer and drops it from the review queue",async()=>{
+    const initial=fixture(), originals=initial.questions.slice();
+    initial.questions.push(...originals.map(q=>({...structuredClone(q),id:`${q.id}-alternate`})));
+    for(const moduleRecord of initial.track.modules)for(const lesson of moduleRecord.lessons){
+      const originalActivities=lesson.activities.slice();
+      lesson.activities.push(...originalActivities.filter(a=>a.type==="question"&&a.questionId).map(a=>({...structuredClone(a),id:`${a.id}-alternate`,questionId:`${a.questionId}-alternate`,config:{...a.config,questionId:`${a.questionId}-alternate`}})));
+    }
+    const ctx=await setup(kind,true,initial);
+    try{
+      const session=(await ctx.sessions.plan("learner",10,now))!;await ctx.sessions.transition("learner",session.id,"start",now);
+      const activity=sessionItemsSchema.parse(session.items)[0].activitySnapshots![0];
+      const canonical=initial.questions.find(q=>q.id===activity.config.questionId)!;
+      const wrong=canonical.answer.kind==="numeric"?String((canonical.answer.value??0)+999):canonical.answer.kind==="multiple_choice"?canonical.choices!.find(c=>!c.correct)!.id:"invalid-response";
+      const right=canonical.answer.kind==="numeric"?String(canonical.answer.value):canonical.answer.kind==="multiple_choice"?canonical.answer.choiceId:null;
+      if(right===null)return;
+      await ctx.questions.view("learner",activity.stableId,canonical.id,activity.config.questionVersion,session.id);
+      await ctx.questions.interact("learner",activity.stableId,{action:"submit",questionId:canonical.id,questionVersion:activity.config.questionVersion,sessionId:session.id,submissionKey:crypto.randomUUID(),response:wrong});
+      const reviews=ctx.database?new ReviewRepository(ctx.database.db):new MemoryReviewRepository(ctx.store);
+      const concept=canonical.primaryConceptId;
+      expect((await reviews.listDueReviews("learner",now)).some(review=>review.conceptStableId===concept&&review.hasActiveMistake)).toBe(true);
+      // Another Question of the same Concept, answered right without help.
+      await ctx.questions.view("learner",`${activity.stableId}-alternate`,`${canonical.id}-alternate`,activity.config.questionVersion);
+      await ctx.questions.interact("learner",`${activity.stableId}-alternate`,{action:"submit",questionId:`${canonical.id}-alternate`,questionVersion:activity.config.questionVersion,submissionKey:crypto.randomUUID(),response:right});
+      const active=ctx.database?(await ctx.database.db.select().from(mistakes)).filter(row=>row.status==="active"):ctx.store.mistakes.filter(row=>row.status==="active");
+      expect(active).toHaveLength(0);
+      expect((await reviews.listDueReviews("learner",now)).some(review=>review.conceptStableId===concept)).toBe(false);
+    }finally{await ctx.database?.close();}
+  });
+
   it("blocks new training composition while an owned EXAM is active", async () => {
     const ctx = await setup(kind, false);
     try {

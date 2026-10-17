@@ -89,6 +89,11 @@
       "title": "Predictable answer across identical choice sets",
       "minGroup": 5,
       "allow": []
+    },
+    "R12": {
+      "severity": "warn",
+      "title": "Wrong choice without a student-facing rationale (the error cannot teach)",
+      "allow": []
     }
   }
 }

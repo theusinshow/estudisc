@@ -15,6 +15,9 @@ type Dashboard = Awaited<ReturnType<typeof getTodayDashboard>>;
 export function TodayPage({ dashboard }: Readonly<{ dashboard: Dashboard }>) {
   const next = dashboard.nextAction;
   const activeMistakes = dashboard.mistakes.filter(mistake => mistake.status === "active").length;
+  // One count for Today and /review: Concepts due by schedule or with an active mistake.
+  const toReview = dashboard.dueReviews.length;
+  const withMistakes = dashboard.dueReviews.filter(review => review.hasActiveMistake).length;
   const session = next?.id.startsWith("session:") ? dashboard.sessions.find(row => `session:${row.id}` === next.id) : undefined;
   const overview = dashboard.progress;
   return <AppShell><div className="today today-evolution">
@@ -31,11 +34,11 @@ export function TodayPage({ dashboard }: Readonly<{ dashboard: Dashboard }>) {
     </section>
     <TodayPlan sessions={dashboard.sessions} hasNextAction={Boolean(next)} plannerEnabled={getFeatureFlags().FEATURE_STUDY_PLANNER} routine={dashboard.routine} />
     </>}
-    {(dashboard.dueReviews.length > 0 || activeMistakes > 0) && <section className="today-attention" aria-labelledby="attention-title">
+    {(toReview > 0 || activeMistakes > 0) && <section className="today-attention" aria-labelledby="attention-title">
       <h2 id="attention-title">Precisa da sua atenção</h2>
       <ul>
-        {dashboard.dueReviews.length > 0 && <li><Link href="/review">{dashboard.dueReviews.length} {dashboard.dueReviews.length === 1 ? "conceito para revisar" : "conceitos para revisar"}<ArrowRight aria-hidden="true" /></Link></li>}
-        {activeMistakes > 0 && <li><Link href="/mistakes">{activeMistakes} {activeMistakes === 1 ? "erro para retomar" : "erros para retomar"}<ArrowRight aria-hidden="true" /></Link></li>}
+        {toReview > 0 && <li><Link href="/review">{toReview} {toReview === 1 ? "conceito para revisar" : "conceitos para revisar"}{withMistakes > 0 ? ` (${withMistakes} com erro)` : ""}<ArrowRight aria-hidden="true" /></Link></li>}
+        {activeMistakes > 0 && <li><Link href="/mistakes">Ver meus erros<ArrowRight aria-hidden="true" /></Link></li>}
       </ul>
     </section>}
     {!dashboard.flow && dashboard.queue.length > 0 && <section className="today-queue" aria-labelledby="queue-title">

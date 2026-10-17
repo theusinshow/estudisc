@@ -10,8 +10,10 @@ export class MemoryReviewRepository {
   constructor(private readonly store = getMemoryStore()) {}
 
   async listDueReviews(ownerId: string, now = new Date()): Promise<DueReview[]> {
+    // Same rule as ReviewRepository: due by schedule, or the Concept has an active mistake.
+    const withMistake = (conceptStableId: string) => this.store.mistakes.some((mistake) => mistake.ownerId === ownerId && mistake.conceptStableId === conceptStableId && mistake.status === "active");
     return this.store.reviewSchedules
-      .filter((schedule) => schedule.ownerId === ownerId && schedule.nextReviewAt.getTime() <= now.getTime())
+      .filter((schedule) => schedule.ownerId === ownerId && (schedule.nextReviewAt.getTime() <= now.getTime() || withMistake(schedule.conceptStableId)))
       .sort((left, right) => left.nextReviewAt.getTime() - right.nextReviewAt.getTime())
       .map((schedule) => {
         const concept = this.store.concepts.find((entry) => entry.stableId === schedule.conceptStableId);
@@ -23,7 +25,8 @@ export class MemoryReviewRepository {
           nextReviewAt: schedule.nextReviewAt,
           reviewCount: schedule.reviewCount,
           recentQuality: schedule.recentQuality,
-          reason: explainDueReview(schedule.nextReviewAt, now)
+          hasActiveMistake: withMistake(schedule.conceptStableId),
+          reason: withMistake(schedule.conceptStableId) ? "Você errou uma questão deste conceito. Praticar agora ajuda a fixar." : explainDueReview(schedule.nextReviewAt, now)
         };
       });
   }

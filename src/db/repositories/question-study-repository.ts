@@ -11,7 +11,8 @@ import { questionReferenceSchema } from "@/features/activities/application/quest
 import { hashCanonicalJson } from "@/lib/canonical-json";
 import { evidenceStrengthV2, MASTERY_V2 } from "@/features/mastery/mastery-policy-v2";
 import { scheduleReviewV2, REVIEW_V2 } from "@/features/review/review-policy-v2";
-import { isIndependentQuestionSuccess, QUESTION_SUCCESS_XP, QUESTION_SUCCESS_REASON } from "@/features/gamification/study-rewards";
+import { questionReward, QUESTION_ASSISTED_REASON, QUESTION_ASSISTED_XP, QUESTION_SUCCESS_XP, QUESTION_SUCCESS_REASON } from "@/features/gamification/study-rewards";
+import { answerKey, itemResults, wrongAnswerFeedback } from "@/features/questions/answer-feedback";
 import { frozenMember, planningActivityKey } from "@/features/study-sessions/frozen-membership";
 import { AiLearningError, type AiQuestionSource } from "@/features/ai/contracts";
 
@@ -107,24 +108,28 @@ export class QuestionStudyRepository {
         const hintLevel=input.action==="hint"?Math.min(assistance.hintLevel+1,ctx.config.hints.length):assistance.hintLevel;
         await tx.update(questionAssistance).set({hintLevel,solutionRevealed:input.action==="solution"?1:assistance.solutionRevealed,updatedAt:new Date()}).where(where);
         await tx.insert(studyEvents).values({ownerId,type:"question_assistance",entityType:"question",entityId:ctx.question.id,payload:{version:ctx.question.version,action:input.action,hintLevel,contextKey:ctx.contextKey}});
-        return input.action==="hint"?{hintLevel,hint:ctx.config.hints[hintLevel-1]}:{correct:false,explanation:ctx.question.explanation??"Solução ainda não disponível."};
+        return input.action==="hint"?{hintLevel,hint:ctx.config.hints[hintLevel-1]}:{correct:false,explanation:ctx.question.explanation??"Solução ainda não disponível.",answerKey:answerKey(ctx.question)};
       }
       const [previous]=await tx.select().from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.submissionKey,input.submissionKey)));
       if(previous){if(previous.activityId!==ctx.activity.id||hashCanonicalJson(previous.response)!==hashCanonicalJson({answer:input.response}))throw new SubmissionConflictError();return {attemptId:previous.id,correct:previous.outcome==="passed",explanation:previous.outcome==="passed"?ctx.question.explanation:undefined};}
       const evaluation=evaluateQuestion(ctx.question,input.response);
       if(!evaluation.evidenceEligible)throw new QuestionUnavailableError();
       const [number]=await tx.select({value:count()}).from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.activityId,ctx.activity.id)));
+      const [failed]=await tx.select({value:count()}).from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.outcome,"failed"),sql`${attempts.context}->>'questionId' = ${ctx.question.id}`));
       const now=new Date();
       const conditions={policyVersion:MASTERY_V2,outcome:evaluation.outcome,difficulty:ctx.question.difficulty,mode:"learn",hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed===1,questionId:ctx.question.id,questionVersion:ctx.question.version,contextKey:ctx.contextKey};
       const [attempt]=await tx.insert(attempts).values({ownerId,activityId:ctx.activity.id,attemptNumber:number.value+1,response:{answer:input.response},outcome:evaluation.outcome,output:evaluation,evaluatorVersion:QUESTION_EVALUATOR_VERSION,submissionKey:input.submissionKey,questionVersionId:ctx.versionId,context:conditions}).returning();
       // Atomic with the Attempt, once per stable Question across versions/activities/sessions.
+      // Full XP only for a first-try independent answer; a recovery after a mistake or hint earns a smaller, distinct reward.
       let xpAwarded = 0;
-      if (isIndependentQuestionSuccess(conditions)) {
+      let reward = questionReward(conditions, failed.value);
+      if (reward) {
         // The owner row is locked above: concurrent submissions cannot both award XP.
-        const [reward] = await tx.select({ id: xpTransactions.id }).from(xpTransactions).where(and(eq(xpTransactions.ownerId, ownerId), eq(xpTransactions.reason, QUESTION_SUCCESS_REASON), eq(xpTransactions.sourceType, "question"), eq(xpTransactions.sourceId, ctx.question.id)));
-        if (!reward) {
-          await tx.insert(xpTransactions).values({ ownerId, amount: QUESTION_SUCCESS_XP, reason: QUESTION_SUCCESS_REASON, sourceType: "question", sourceId: ctx.question.id });
-          xpAwarded = QUESTION_SUCCESS_XP;
+        const [earlier] = await tx.select({ id: xpTransactions.id }).from(xpTransactions).where(and(eq(xpTransactions.ownerId, ownerId), inArray(xpTransactions.reason, [QUESTION_SUCCESS_REASON, QUESTION_ASSISTED_REASON]), eq(xpTransactions.sourceType, "question"), eq(xpTransactions.sourceId, ctx.question.id)));
+        if (earlier) reward = undefined;
+        else {
+          xpAwarded = reward === "first_try" ? QUESTION_SUCCESS_XP : QUESTION_ASSISTED_XP;
+          await tx.insert(xpTransactions).values({ ownerId, amount: xpAwarded, reason: reward === "first_try" ? QUESTION_SUCCESS_REASON : QUESTION_ASSISTED_REASON, sourceType: "question", sourceId: ctx.question.id });
         }
       }
       const mapped=await tx.select().from(concepts).where(inArray(concepts.stableId,ctx.question.conceptIds));
@@ -138,14 +143,19 @@ export class QuestionStudyRepository {
         await tx.insert(conceptEvidence).values({ownerId,conceptId:concept.id,attemptId:attempt.id,type:"question_result",strength,sourceType:"question_attempt",sourceId:attempt.id,conditions:event});
         const [previousReview]=await tx.select().from(reviewSchedules).where(and(eq(reviewSchedules.ownerId,ownerId),eq(reviewSchedules.conceptId,concept.id)));
         const stage=previousReview?.policyVersion===REVIEW_V2?Number((previousReview.metadata as Record<string,unknown>).stage??0):0;
-        const schedule=delayedRetrieval?scheduleReviewV2({correct:evaluation.correct,independent:!assistance.hintLevel&&!assistance.solutionRevealed,stage,reviewedAt:now}):{stage:0,stabilityDays:1,nextReviewAt:new Date(now.getTime()+86400000),policyVersion:REVIEW_V2};
+        const scheduled=delayedRetrieval?scheduleReviewV2({correct:evaluation.correct,independent:!assistance.hintLevel&&!assistance.solutionRevealed,stage,reviewedAt:now}):{stage:0,stabilityDays:1,nextReviewAt:new Date(now.getTime()+86400000),policyVersion:REVIEW_V2};
+        // A wrong answer makes the Concept reviewable right away; a correct one keeps the spaced schedule.
+        const schedule=evaluation.correct?scheduled:{...scheduled,nextReviewAt:now};
         await tx.insert(reviewSchedules).values({ownerId,conceptId:concept.id,currentMasteryState:evaluation.correct?"understood":"introduced",nextReviewAt:schedule.nextReviewAt,recentQuality:evaluation.correct?3:1,policyVersion:REVIEW_V2,metadata:{stage:schedule.stage,stabilityDays:schedule.stabilityDays}}).onConflictDoUpdate({target:[reviewSchedules.ownerId,reviewSchedules.conceptId],set:{nextReviewAt:schedule.nextReviewAt,lastReviewedAt:delayedRetrieval?now:previousReview?.lastReviewedAt,reviewCount:delayedRetrieval?sql`${reviewSchedules.reviewCount}+1`:sql`${reviewSchedules.reviewCount}`,recentQuality:evaluation.correct?3:1,policyVersion:REVIEW_V2,metadata:{stage:schedule.stage,stabilityDays:schedule.stabilityDays},updatedAt:now}});
+        // An independent correct answer closes the Concept's open mistakes (history is kept with resolvedAt).
+        if(evaluation.correct&&!assistance.hintLevel&&!assistance.solutionRevealed)await tx.update(mistakes).set({status:"resolved",resolvedAt:now}).where(and(eq(mistakes.ownerId,ownerId),eq(mistakes.conceptId,concept.id),eq(mistakes.status,"active")));
         if(!evaluation.correct)await tx.insert(mistakes).values({ownerId,conceptId:concept.id,attemptId:attempt.id,category:ctx.question.type==="numeric"?"CALCULATION":"INTERPRETATION",summary:"Rever o raciocínio desta questão."});
       }
       await tx.insert(studyEvents).values({ownerId,type:"activity_submitted",entityType:"activity",entityId:ctx.activity.stableId,payload:{attemptId:attempt.id,outcome:evaluation.outcome,sessionId:input.sessionId??null}});
-      // A wrong answer does not show the worked solution, so a retry still counts as independent evidence.
-      if(evaluation.correct)await tx.update(questionAssistance).set({solutionRevealed:1,updatedAt:new Date()}).where(where);
-      return {attemptId:attempt.id,correct:evaluation.correct,explanation:evaluation.correct?ctx.question.explanation:undefined,xpAwarded};
+      // The first wrong answer explains the chosen option only, so a retry still counts as independent evidence; the second opens the solution.
+      const feedback=evaluation.correct?undefined:wrongAnswerFeedback(ctx.question,input.response,failed.value+1);
+      if(evaluation.correct||feedback?.solutionShown)await tx.update(questionAssistance).set({solutionRevealed:1,updatedAt:new Date()}).where(where);
+      return evaluation.correct?{attemptId:attempt.id,correct:true,explanation:ctx.question.explanation,itemResults:itemResults(ctx.question,input.response),xpAwarded,reward}:{attemptId:attempt.id,correct:false,...feedback,xpAwarded};
     });
   }
 }

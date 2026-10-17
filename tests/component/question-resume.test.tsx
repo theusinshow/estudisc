@@ -17,7 +17,7 @@ it("restores a draft and actual revealed assistance together without inventing s
   expect(screen.getByText("Ajuda registrada")).toBeVisible();
   expect(screen.getByRole("status", { name: "Resultado da resposta" })).toHaveTextContent("Solução consultada");
   expect(screen.getByRole("button", { name: "Enviar resposta" })).toBeEnabled();
-  expect(screen.queryByText("Tentativa registrada. Domínio depende de prática e revisão.")).toBeNull();
+  expect(screen.queryByText(/Tente de novo/)).toBeNull();
 });
 it("recovers wrong-shaped externally recorded responses before rendering ordering controls", () => {
   const question = studentQuestion(questionSchema.parse({ ...source.questions[0], type: "ordering", items: [{ id: "a", label: "A" }, { id: "b", label: "B" }], answer: { kind: "ordering", orderedIds: ["a", "b"] } }));

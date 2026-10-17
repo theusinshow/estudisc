@@ -33,10 +33,10 @@ export function calculateNextReviewAt({
 
 export function explainDueReview(nextReviewAt: Date, now: Date) {
   if (nextReviewAt.getTime() <= now.getTime()) {
-    return "A revisão está vencida pela agenda determinística.";
+    return "Está na hora de revisar este conceito.";
   }
 
-  return "A revisão ainda não venceu.";
+  return "A revisão deste conceito ainda não chegou.";
 }
 
 function addDays(date: Date, days: number) {
