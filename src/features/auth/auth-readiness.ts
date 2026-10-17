@@ -26,3 +26,16 @@ export function isAllowedGoogleEmail(email: string | null | undefined, env: Serv
 
   return env.ESTUDISC_ALLOWED_GOOGLE_EMAILS.includes(email.trim().toLowerCase());
 }
+
+export const EMAIL_CODE_PROVIDER_ID = "email-code";
+
+/** Email one-time codes (ADR 0068): flag on, a strong AUTH_SECRET, and Resend in production. */
+export function isEmailCodeSignInConfigured(env: ServerEnv, nodeEnv = process.env.NODE_ENV) {
+  if (!env.FEATURE_EMAIL_CODE_SIGNIN || !env.AUTH_SECRET || env.AUTH_SECRET.length < 32) return false;
+  return nodeEnv !== "production" || Boolean(env.RESEND_API_KEY && env.ESTUDISC_EMAIL_FROM);
+}
+
+/** An Auth.js session provider (Google or email code) is configured, so private routes require sign-in. */
+export function isSessionAuthConfigured(env: ServerEnv) {
+  return isGoogleAuthConfigured(env) || isEmailCodeSignInConfigured(env);
+}

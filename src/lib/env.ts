@@ -54,6 +54,8 @@ export const serverEnvSchema = z.object({
   ESTUDISC_SELLER_NAME: optionalSecret,
   ESTUDISC_SELLER_DOCUMENT: optionalSecret,
   ESTUDISC_SELLER_EMAIL: z.preprocess((value) => (value === "" ? undefined : value), z.email().optional()),
+  RESEND_API_KEY: optionalSecret,
+  ESTUDISC_EMAIL_FROM: optionalSecret,
   ...featureFlagsSchema.shape
 });
 
@@ -91,6 +93,8 @@ export function getServerEnv(source: Record<string, string | undefined> = proces
     ESTUDISC_SELLER_NAME: source.ESTUDISC_SELLER_NAME,
     ESTUDISC_SELLER_DOCUMENT: source.ESTUDISC_SELLER_DOCUMENT,
     ESTUDISC_SELLER_EMAIL: source.ESTUDISC_SELLER_EMAIL,
+    RESEND_API_KEY: source.RESEND_API_KEY,
+    ESTUDISC_EMAIL_FROM: source.ESTUDISC_EMAIL_FROM,
     ...Object.fromEntries(Object.keys(featureFlagsSchema.shape).map(name => [name, source[name]]))
   });
 }

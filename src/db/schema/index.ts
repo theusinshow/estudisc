@@ -9,3 +9,4 @@ export * from "./assessments";
 export * from "./question-assets";
 export * from "./content-qa";
 export * from "./entitlements";
+export * from "./auth";

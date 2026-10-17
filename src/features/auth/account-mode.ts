@@ -1,5 +1,5 @@
 import type { ServerEnv } from "@/lib/env";
-import { isGoogleAuthConfigured } from "./auth-readiness";
+import { isSessionAuthConfigured } from "./auth-readiness";
 import { parseCodeAccounts, type CodeAccount } from "./code-accounts";
 
 export class AccountConfigurationError extends Error {
@@ -21,5 +21,5 @@ export function getAccountConfig(env: ServerEnv): AccountConfig | null {
  * FEATURE_PAID_ACCESS all configured, a valid account cookie or a Google session is accepted.
  */
 export function isHybridSignIn(env: ServerEnv) {
-  return env.FEATURE_PAID_ACCESS && isGoogleAuthConfigured(env) && getAccountConfig(env) !== null;
+  return env.FEATURE_PAID_ACCESS && isSessionAuthConfigured(env) && getAccountConfig(env) !== null;
 }

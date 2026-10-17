@@ -39,3 +39,11 @@
 .account-profile input { max-width: 22rem; }
 .account-help { margin: 0; max-width: 36rem; color: var(--estudisc-color-dim); }
 .account-help a { text-decoration: underline; font-weight: 700; color: var(--estudisc-color-ink); }
+
+/* Email one-time code sign-in (ADR 0068). */
+.email-code-sign-in { display: grid; gap: var(--estudisc-spacing-6); justify-items: start; }
+.email-code-sign-in .learning-field { width: 100%; max-width: 22rem; }
+.email-code-sign-in input[name="code"] { font-variant-numeric: tabular-nums; letter-spacing: 0.3em; }
+.email-code-sign-in .text-action { min-height: 44px; padding: 0; border: 0; background: transparent; box-shadow: none; color: var(--estudisc-color-ink); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+.email-code-sign-in .text-action:not(:disabled):hover, .email-code-sign-in .text-action:not(:disabled):active { transform: none; box-shadow: none; }
+.auth-divider { margin: 0; color: var(--estudisc-color-dim); font-weight: 700; }

@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { getServerEnv } from "@/lib/env";
-import { isAllowedGoogleEmail, isGoogleAuthConfigured, isLegacyAllowlistedGoogleEmail } from "./auth-readiness";
+import { isAllowedGoogleEmail, isLegacyAllowlistedGoogleEmail, isSessionAuthConfigured } from "./auth-readiness";
 import { getAccountConfig, isHybridSignIn } from "./account-mode";
 import { readAccountSessionFromCookies } from "./code-accounts";
 
@@ -38,7 +38,7 @@ export async function getOwnerProfile(): Promise<OwnerProfile> {
     if (account) return { ownerId: account.id, role: account.role, name: account.name, allowlisted: true };
     if (!isHybridSignIn(env)) throw new AccessDeniedError();
   }
-  if (!isGoogleAuthConfigured(env)) {
+  if (!isSessionAuthConfigured(env)) {
     if (process.env.NODE_ENV === "production") throw new AccessDeniedError();
     return { ownerId: env.ESTUDISC_OWNER_ID, role: "ADMIN" as const, allowlisted: true };
   }

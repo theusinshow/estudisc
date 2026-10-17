@@ -7,6 +7,8 @@ import Link from "next/link";
 import { getAccountConfig, isHybridSignIn } from "@/features/auth/account-mode";
 import { AccountSignIn } from "@/features/auth/account-sign-in";
 import { GoogleSubmitButton } from "@/features/auth/google-submit-button";
+import { EmailCodeSignIn } from "@/features/auth/email-code-sign-in";
+import { isEmailCodeSignInConfigured } from "@/features/auth/auth-readiness";
 import { daysUntilExam, examCountdownLabel } from "@/features/public-site/countdown";
 import { accessLastDay } from "@/features/public-site/content-summary";
 
@@ -70,6 +72,7 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
   const env = getServerEnv();
   const accountConfig = getAccountConfig(env);
   const hybrid = isHybridSignIn(env);
+  const emailCode = isEmailCodeSignInConfigured(env);
   const withCallback = (extra: Record<string, string>) => `/auth/signin?${new URLSearchParams({ callbackUrl, ...extra })}`;
 
   if (accountConfig && (!hybrid || params?.perfil === "1")) {
@@ -129,10 +132,17 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
           <GoogleSubmitButton />
         </form>
 
+        {emailCode ? (
+          <section className="email-code-sign-in" aria-labelledby="email-code-title">
+            <p id="email-code-title" className="auth-divider">Ou entre com um código no seu e-mail</p>
+            <EmailCodeSignIn callbackUrl={callbackUrl} />
+          </section>
+        ) : null}
+
         <dl className="auth-status" aria-label="Regras de acesso">
           <div>
             <dt>Conta</dt>
-            <dd>Google OAuth com seleção manual.</dd>
+            <dd>{emailCode ? "Google ou código enviado por e-mail; o mesmo e-mail abre a mesma conta." : "Google OAuth com seleção manual."}</dd>
           </div>
           <div>
             <dt>Escopo</dt>
