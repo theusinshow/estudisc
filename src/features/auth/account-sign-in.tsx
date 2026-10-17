@@ -1,10 +1,16 @@
 "use client";
 
 import { useRef, useState, useSyncExternalStore } from "react";
-import { CircleCheck, UserRound } from "lucide-react";
 
 import CodeSlots, { type CodeSlotsStatus } from "@/components/code-slots/code-slots";
-import type { PublicAccount } from "./code-accounts";
+
+/** Same slug rule as scripts/create-account.mjs: "Kauã" -> "account-kaua". Unknown profiles fail like a wrong code. */
+export function profileAccountId(profile: string) {
+  const value = profile.trim().toLowerCase();
+  if (value.startsWith("account-")) return value;
+  const slug = value.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  return slug ? `account-${slug}` : "";
+}
 
 const CODE_LENGTH = 6;
 const noSubscription = () => () => {};
@@ -16,19 +22,20 @@ const subscribeCompact = (onChange: () => void) => {
   return () => query.removeEventListener("change", onChange);
 };
 
-/** Profile picker + Code Slots. The slots render only on the client: their motion styles are applied
+/** Profile name + Code Slots. Profile names are never listed to signed-out visitors: the student types their own.
+ *  The slots render only on the client: their motion styles are applied
  *  through CSSOM, which our CSP allows, while server-rendered style attributes would be blocked.
  *  The input is never disabled while submitting: that would drop focus and swallow the next digits;
  *  submit() ignores overlapping requests instead. */
-export function AccountSignIn({ accounts, callbackUrl }: Readonly<{ accounts: PublicAccount[]; callbackUrl: string }>) {
+export function AccountSignIn({ callbackUrl }: Readonly<{ callbackUrl: string }>) {
   const mounted = useSyncExternalStore(noSubscription, () => true, () => false);
   const compact = useSyncExternalStore(subscribeCompact, () => window.matchMedia(COMPACT_QUERY).matches, () => false);
-  const [selectedId, setSelectedId] = useState(accounts.length === 1 ? accounts[0]!.id : "");
+  const [profile, setProfile] = useState("");
   const [status, setStatus] = useState<CodeSlotsStatus>("idle");
   const [message, setMessage] = useState<{ text: string; tone: "error" | "success" } | null>(null);
   const [busy, setBusy] = useState(false);
   const resetTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
-  const selected = accounts.find((account) => account.id === selectedId);
+  const accountId = profileAccountId(profile);
 
   function fail(text: string) {
     setStatus("error");
@@ -39,18 +46,19 @@ export function AccountSignIn({ accounts, callbackUrl }: Readonly<{ accounts: Pu
   }
 
   async function submit(code: string) {
-    if (!selected || busy) return;
+    if (!accountId || busy) return;
     setBusy(true);
     setMessage(null);
     try {
       const response = await fetch("/api/session", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ accountId: selected.id, code })
+        body: JSON.stringify({ accountId, code })
       });
       if (response.ok) {
         setStatus("success");
-        setMessage({ text: `Bem-vindo, ${selected.name}!`, tone: "success" });
+        const body = (await response.json().catch(() => ({}))) as { name?: string };
+        setMessage({ text: body.name ? `Bem-vindo, ${body.name}!` : "Bem-vindo!", tone: "success" });
         setTimeout(() => window.location.assign(callbackUrl), 700);
         return;
       }
@@ -58,7 +66,7 @@ export function AccountSignIn({ accounts, callbackUrl }: Readonly<{ accounts: Pu
         const body = (await response.json().catch(() => ({}))) as { retryAfter?: number };
         fail(`Muitas tentativas. Espere ${Math.max(1, Math.ceil((body.retryAfter ?? 60) / 60))} min e tente de novo.`);
       } else {
-        fail("Código incorreto. Tente de novo.");
+        fail("Nome do perfil ou código não confere. Tente de novo.");
       }
     } catch {
       fail("Sem conexão com o servidor. Tente de novo.");
@@ -69,37 +77,37 @@ export function AccountSignIn({ accounts, callbackUrl }: Readonly<{ accounts: Pu
 
   return (
     <div className="account-sign-in">
-      <fieldset className="account-picker">
-        <legend>Quem vai estudar?</legend>
-        {accounts.map((account) => (
-          <button
-            type="button"
-            key={account.id}
-            className="account-option"
-            aria-pressed={account.id === selectedId}
-            disabled={status === "success"}
-            onClick={() => { setSelectedId(account.id); setStatus("idle"); setMessage(null); }}
-          >
-            {account.id === selectedId ? <CircleCheck aria-hidden="true" /> : <UserRound aria-hidden="true" />}
-            <span>{account.name}</span>
-          </button>
-        ))}
-      </fieldset>
+      <label className="learning-field account-profile">
+        Nome do perfil
+        <input
+          type="text"
+          autoComplete="username"
+          autoCapitalize="none"
+          spellCheck={false}
+          maxLength={64}
+          value={profile}
+          disabled={status === "success"}
+          aria-describedby="account-help"
+          onChange={(event) => { setProfile(event.target.value); setStatus("idle"); setMessage(null); }}
+        />
+      </label>
+      <p id="account-help" className="account-help">
+        É o nome que está no seu perfil, como foi combinado com quem criou o acesso. O código de 6 dígitos também vem dessa pessoa.
+        Não tem um código? <a href="/suporte?acesso=1">Peça acesso</a>.
+      </p>
 
-      {selected ? (
+      {accountId ? (
         <div className="account-code">
-          <p id="account-code-label">Código de {selected.name}</p>
+          <p id="account-code-label">Código de 6 dígitos</p>
           {mounted ? (
             <CodeSlots
-              key={selected.id}
               length={CODE_LENGTH}
               slotSize={compact ? 40 : 48}
               gap={compact ? 6 : 8}
               className={compact ? "code-slots--compact" : ""}
               mask
-              autoFocus
               status={status}
-              ariaLabel={`Código de acesso de ${selected.name}, ${CODE_LENGTH} dígitos`}
+              ariaLabel={`Código de acesso, ${CODE_LENGTH} dígitos`}
               onChange={() => { if (status === "error") setStatus("idle"); }}
               onComplete={(code) => void submit(code)}
             />

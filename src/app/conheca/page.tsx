@@ -34,10 +34,13 @@ export default async function ConhecaPage() {
                 <a href="#preco" className="text-link">Ver preço</a>
               </>
             ) : (
-              <Link href="/auth/signin" className="secondary-action">Já tenho conta</Link>
+              <>
+                <Link href="/suporte?acesso=1" className="primary-action elev-action">Peça acesso</Link>
+                <Link href="/auth/signin" className="text-link">Já tenho conta</Link>
+              </>
             )}
           </div>
-          {!salesOpen ? <p className="public-note" role="status">As inscrições abrem em breve.</p> : null}
+          {!salesOpen ? <p className="public-note" role="status">O cadastro aberto ainda não começou. Por enquanto, o acesso é por convite.</p> : null}
           {days !== null ? <p className="type-meta hero-countdown"><strong>{examCountdownLabel(days)}</strong> · prova em {lastDay}</p> : null}
         </div>
         {sample ? <SampleQuestion question={sample} /> : null}
@@ -66,7 +69,7 @@ export default async function ConhecaPage() {
 
       <section className="public-section caderno-plain" aria-labelledby="gratis-title">
         <h2 id="gratis-title">Experimente antes de pagar</h2>
-        <p>Com uma conta gratuita você faz uma aula completa de cada matéria:</p>
+        <p>{salesOpen ? "Com uma conta gratuita você faz uma aula completa de cada matéria:" : "Quem recebe acesso começa por uma aula completa de cada matéria:"}</p>
         <ul className="public-list">
           {FREE_SAMPLE_LESSONS.map(lesson => <li key={lesson.id}><strong>{lesson.subject}:</strong> {lesson.title}</li>)}
         </ul>
@@ -88,7 +91,7 @@ export default async function ConhecaPage() {
           <div><dt>Validade</dt><dd>Acesso completo até {lastDay}, o dia da prova. Sem mensalidade e sem renovação automática. Pagamento por Pix ou cartão pelo Mercado Pago.</dd></div>
           <div><dt>Arrependimento</dt><dd>Você pode desistir em até 7 dias após a compra e receber o valor de volta, como prevê o Código de Defesa do Consumidor.</dd></div>
         </dl>
-        {salesOpen ? <Link href="/auth/signin?callbackUrl=%2Fupgrade" className="secondary-action">Criar conta e comprar</Link> : <p className="public-note">As inscrições abrem em breve.</p>}
+        {salesOpen ? <Link href="/auth/signin?callbackUrl=%2Fupgrade" className="secondary-action">Criar conta e comprar</Link> : <p className="public-note">As inscrições abrem em breve. <Link href="/suporte?acesso=1">Peça acesso</Link> enquanto isso.</p>}
       </section>
     </PublicLayout>
   );

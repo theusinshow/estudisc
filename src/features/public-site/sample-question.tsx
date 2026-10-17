@@ -1,14 +1,14 @@
 "use client";
 
 import { useId, useState, type KeyboardEvent } from "react";
-import { Check, RotateCcw } from "lucide-react";
+import { Check } from "lucide-react";
 import { MathText } from "@/components/ui/paragraphs";
 
 export type SampleQuestionData = Readonly<{
   lessonTitle: string;
   subject: string;
   stem: string;
-  choices: ReadonlyArray<{ id: string; content: string }>;
+  choices: ReadonlyArray<{ id: string; content: string; rationale?: string }>;
   correctChoiceId: string;
   explanation?: string;
 }>;
@@ -23,6 +23,7 @@ export function SampleQuestion({ question }: Readonly<{ question: SampleQuestion
   const id = useId();
   const [choice, setChoice] = useState("");
   const [checked, setChecked] = useState(false);
+  const [misses, setMisses] = useState(0);
   const correct = checked && choice === question.correctChoiceId;
   function pickByKey(event: KeyboardEvent<HTMLElement>) {
     if (event.altKey || event.ctrlKey || event.metaKey) return;
@@ -35,7 +36,7 @@ export function SampleQuestion({ question }: Readonly<{ question: SampleQuestion
   return <section className="sample-question learning-interaction question-sheet" aria-labelledby={`${id}-stem`} onKeyDown={pickByKey}>
     <p className="sample-question-source type-meta">Questão de amostra · {question.subject} · aula “{question.lessonTitle}”</p>
     <h2 id={`${id}-stem`} className="sample-question-stem"><MathText text={question.stem} /></h2>
-    <form onSubmit={event => { event.preventDefault(); if (choice) setChecked(true); }}>
+    <form onSubmit={event => { event.preventDefault(); if (!choice) return; setChecked(true); if (choice !== question.correctChoiceId) setMisses(count => count + 1); }}>
       <fieldset className="answer-sheet-field"><legend>Sua resposta<span className="answer-keys-hint"> · teclas A–E marcam; Enter confere</span></legend>
         {question.choices.map((entry, index) => <label className="learning-answer answer-row" key={entry.id}>
           <input type="radio" name={id} checked={choice === entry.id} required onChange={() => { setChoice(entry.id); setChecked(false); }} />
@@ -47,9 +48,11 @@ export function SampleQuestion({ question }: Readonly<{ question: SampleQuestion
     </form>
     <div className="answer-result" aria-live="polite" aria-atomic="true">
       {checked && <div role="status" aria-live="off" aria-label="Resultado da amostra" className="learning-feedback" data-result={correct ? "correct" : "incorrect"}>
-        <span className="answer-stamp" data-result={correct ? "correct" : "incorrect"} aria-hidden="true">{correct ? <Check /> : <RotateCcw />}{correct ? "Certo" : "Revise"}</span>
+        {correct ? <span className="answer-stamp" data-result="correct" aria-hidden="true"><Check />Certo</span> : null}
         <strong>{correct ? "Resposta correta" : "Ainda não"}</strong>
-        <p>{correct ? (question.explanation ? <MathText text={question.explanation} /> : null) : "Releia o enunciado e tente outra alternativa. Na aula completa, você pode pedir uma dica."}</p>
+        {/* Same rule as the lessons: why the chosen option fails first, the full explanation from the second miss. */}
+        {!correct && <p><MathText text={question.choices.find(entry => entry.id === choice)?.rationale ?? "Releia o enunciado e tente outra alternativa."} /></p>}
+        {(correct || misses >= 2) && question.explanation ? <p>{!correct && <strong>Como resolver: </strong>}<MathText text={question.explanation} /></p> : null}
       </div>}
     </div>
   </section>;

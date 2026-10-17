@@ -37,7 +37,8 @@ export async function loadSampleQuestion(): Promise<SampleQuestionData | null> {
           lessonTitle: sample.title,
           subject: sample.subject,
           stem: found.question.stem,
-          choices: choices.map(choice => ({ id: choice.id, content: choice.content })),
+          // Distractor rationales are public teaching text; the correct flag never leaves the server.
+          choices: choices.map(choice => ({ id: choice.id, content: choice.content, ...(!choice.correct && choice.rationale ? { rationale: choice.rationale } : {}) })),
           correctChoiceId: choices.find(choice => choice.correct)!.id,
           explanation: found.question.explanation
         };

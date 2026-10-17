@@ -18,3 +18,17 @@ it("is solvable with keys and confirms explicitly, announcing a stamped result w
   fireEvent.click(screen.getByRole("button", { name: "Conferir resposta" }));
   expect(screen.getByRole("status", { name: "Resultado da amostra" })).toHaveTextContent(/Certo.*Resposta correta.*35\/100/);
 });
+
+it("explains a wrong choice, opens the full explanation on the second miss, and never shouts REVISE", () => {
+  const taught = { ...question, choices: question.choices.map(choice => choice.id === "b" ? { ...choice, rationale: "20% seria 4/20." } : choice) };
+  render(<SampleQuestion question={taught} />);
+  fireEvent.click(screen.getByRole("radio", { name: "20%" }));
+  fireEvent.click(screen.getByRole("button", { name: "Conferir resposta" }));
+  const result = screen.getByRole("status", { name: "Resultado da amostra" });
+  expect(result).toHaveTextContent(/20% seria/);
+  expect(result).not.toHaveTextContent(/Como resolver/);
+  expect(result).not.toHaveTextContent(/revise/i);
+  fireEvent.click(screen.getByRole("radio", { name: "70%" }));
+  fireEvent.click(screen.getByRole("button", { name: "Conferir resposta" }));
+  expect(screen.getByRole("status", { name: "Resultado da amostra" })).toHaveTextContent(/Como resolver:.*35\/100/); // fractions also render a visual form
+});
