@@ -8,11 +8,11 @@ const SPRING = { type: "spring", stiffness: 420, damping: 30 } as const;
 
 /* 8.9 — Concept map: mastering a concept draws its link and lights the node. */
 const NODES = [
-  { id: "frac", label: "Frações", x: 60, y: 60 },
-  { id: "dec", label: "Decimais", x: 220, y: 40 },
-  { id: "pct", label: "Porcentagem", x: 150, y: 150 },
-  { id: "desc", label: "Descontos", x: 300, y: 160 },
-  { id: "juros", label: "Juros", x: 240, y: 250 }
+  { id: "frac", label: "Frações", x: 70, y: 50 },
+  { id: "dec", label: "Decimais", x: 270, y: 50 },
+  { id: "pct", label: "Porcentagem", x: 170, y: 150 },
+  { id: "desc", label: "Descontos", x: 80, y: 250 },
+  { id: "juros", label: "Juros", x: 270, y: 250 }
 ];
 const EDGES = [["frac", "pct"], ["dec", "pct"], ["pct", "desc"], ["desc", "juros"]] as const;
 
@@ -22,7 +22,7 @@ export function ConceptMap() {
   const isOn = (id: string) => NODES.findIndex((n) => n.id === id) < mastered;
   return (
     <div className="ix-map">
-      <svg viewBox="0 0 360 300" className="ix-map-svg" role="img" aria-label={`Mapa de conceitos: ${mastered} de ${NODES.length} dominados`}>
+      <svg viewBox="0 0 340 310" className="ix-map-svg" role="img" aria-label={`Mapa de conceitos: ${mastered} de ${NODES.length} dominados`}>
         {EDGES.map(([a, b]) => (
           <g key={`${a}-${b}`}>
             <line x1={pos[a].x} y1={pos[a].y} x2={pos[b].x} y2={pos[b].y} className="ix-edge-base" />
@@ -32,7 +32,7 @@ export function ConceptMap() {
         {NODES.map((n) => (
           <g key={n.id}>
             <motion.circle cx={n.x} cy={n.y} r={22} className="ix-node" data-on={isOn(n.id)} initial={false} animate={{ scale: isOn(n.id) ? [1, 1.25, 1] : 1 }} transition={{ duration: 0.45 }} />
-            <text x={n.x} y={n.y + 40} textAnchor="middle" className="ix-node-label">{n.label}</text>
+            <text x={n.x} y={n.y + 44} textAnchor="middle" className="ix-node-label">{n.label}</text>
           </g>
         ))}
       </svg>
@@ -132,12 +132,12 @@ export function FocusTimer() {
           <circle cx="60" cy="60" r="50" className="ix-focus-track" />
           <motion.circle cx="60" cy="60" r="50" className="ix-focus-fill" style={{ pathLength: progress }} />
         </svg>
-        <div className="ix-focus-center" aria-live="polite">
+        <div className="ix-focus-center">
           {finished ? <motion.span className="ix-breathe" animate={{ scale: [1, 1.18, 1] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}>Respire</motion.span>
             : <><strong>{String(left).padStart(2, "0")}:00</strong><small>{running ? "focado" : "pausado"}</small></>}
         </div>
       </div>
-      <p className="dc-note">{finished ? "Pausa de 5 minutos. Inspire quando o círculo crescer." : "Demonstração acelerada: 1 segundo = 1 minuto."}</p>
+      <p className="dc-note" role="status">{finished ? "Pausa de 5 minutos. Inspire quando o círculo crescer." : "Demonstração acelerada: 1 segundo = 1 minuto."}</p>
       <div className="dc-row">
         <button type="button" className="primary-button" disabled={finished} onClick={() => setRunning((r) => !r)}>{running ? <><Pause aria-hidden="true" />Pausar</> : <><Play aria-hidden="true" />Começar</>}</button>
         <button type="button" className="text-button" onClick={() => { setRunning(false); setLeft(total); }}><RotateCcw aria-hidden="true" />Reiniciar</button>

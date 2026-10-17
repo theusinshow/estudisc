@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowDown, ArrowUp, Check, GripVertical, RotateCcw, Undo2, X } from "lucide-react";
-import { animate, AnimatePresence, LayoutGroup, motion, Reorder, useMotionValue, useTransform } from "motion/react";
+import { animate, AnimatePresence, LayoutGroup, motion, Reorder, useDragControls, useMotionValue, useTransform } from "motion/react";
 import { useState } from "react";
 
 const SPRING = { type: "spring", stiffness: 500, damping: 32 } as const;
@@ -15,6 +15,24 @@ const STEPS = [
 ];
 const SHUFFLED = [STEPS[2], STEPS[0], STEPS[3], STEPS[1]];
 
+type Step = (typeof STEPS)[number];
+
+/** Only the grip starts a drag, so a finger on the step text still scrolls the page on phones. */
+function StepItem({ item, index, count, state, onMove }: Readonly<{ item: Step; index: number; count: number; state: string; onMove: (index: number, delta: number) => void }>) {
+  const controls = useDragControls();
+  return (
+    <Reorder.Item value={item} dragListener={false} dragControls={controls} className="ix-step" data-state={state} whileDrag={{ scale: 1.03, boxShadow: "8px 8px 0 #17141F", zIndex: 2 }}>
+      <span className="ix-grip" aria-hidden="true" onPointerDown={(event) => controls.start(event)}><GripVertical /></span>
+      <span className="ix-step-n">{index + 1}</span>
+      <span className="ix-step-text">{item.text}</span>
+      <span className="ix-step-moves">
+        <button type="button" className="dc-icon-button" aria-label={`Subir: ${item.text}`} disabled={index === 0} onClick={() => onMove(index, -1)}><ArrowUp aria-hidden="true" /></button>
+        <button type="button" className="dc-icon-button" aria-label={`Descer: ${item.text}`} disabled={index === count - 1} onClick={() => onMove(index, 1)}><ArrowDown aria-hidden="true" /></button>
+      </span>
+    </Reorder.Item>
+  );
+}
+
 export function OrderSteps() {
   const [items, setItems] = useState(SHUFFLED);
   const [checked, setChecked] = useState(false);
@@ -26,15 +44,8 @@ export function OrderSteps() {
     <div className="ix-order">
       <Reorder.Group axis="y" values={items} onReorder={(next) => { setItems(next); setChecked(false); }} className="ix-order-list">
         {items.map((item, index) => (
-          <Reorder.Item key={item.id} value={item} className="ix-step" data-state={checked ? (item.id === STEPS[index].id ? "right" : "wrong") : "idle"} whileDrag={{ scale: 1.03, boxShadow: "8px 8px 0 #17141F" }}>
-            <GripVertical className="ix-grip" aria-hidden="true" />
-            <span className="ix-step-n">{index + 1}</span>
-            <span className="ix-step-text">{item.text}</span>
-            <span className="ix-step-moves">
-              <button type="button" className="dc-icon-button" aria-label={`Subir: ${item.text}`} disabled={index === 0} onClick={() => move(index, -1)}><ArrowUp aria-hidden="true" /></button>
-              <button type="button" className="dc-icon-button" aria-label={`Descer: ${item.text}`} disabled={index === items.length - 1} onClick={() => move(index, 1)}><ArrowDown aria-hidden="true" /></button>
-            </span>
-          </Reorder.Item>
+          <StepItem key={item.id} item={item} index={index} count={items.length} onMove={move}
+            state={checked ? (item.id === STEPS[index].id ? "right" : "wrong") : "idle"} />
         ))}
       </Reorder.Group>
       <div className="dc-row">
@@ -148,38 +159,51 @@ export function ReviewDeck() {
 /* 8.6 — Confidence before checking: calibrates the feedback (metacognition). */
 const LEVELS = [["guess", "Chutei"], ["think", "Acho que sim"], ["sure", "Tenho certeza"]] as const;
 type Level = (typeof LEVELS)[number][0];
+const PROMPTS = [
+  { stem: "Qual é maior: 0,5 ou 0,45?", choices: ["0,45", "0,5", "São iguais"], answer: 1 },
+  { stem: "1/4 de 80 é…", choices: ["4", "20", "40"], answer: 1 },
+  { stem: "“Choveu muito.” tem sujeito?", choices: ["Sim, oculto", "Não, é oração sem sujeito", "Sim, “muito”"], answer: 1 }
+];
 
 export function ConfidenceCheck() {
+  const [round, setRound] = useState(0);
   const [choice, setChoice] = useState<number | null>(null);
   const [level, setLevel] = useState<Level | null>(null);
   const [checked, setChecked] = useState(false);
-  const correct = choice === 1;
+  const prompt = PROMPTS[round % PROMPTS.length];
+  const correct = choice === prompt.answer;
   const message = !checked || level === null ? null
     : correct && level === "sure" ? "Certo e com certeza: conceito firme."
-    : correct && level === "guess" ? "Acertou no chute. Ele volta em breve para confirmar."
+    : correct && level === "guess" ? "Acertou no chute. Ela volta em breve para confirmar."
     : correct ? "Certo! Mais um passo para a certeza."
     : level === "sure" ? "Ponto cego encontrado: você tinha certeza, então isso vai para a revisão prioritária. Ótimo achado."
     : "Ainda não, e tudo bem: você já desconfiava. Vamos rever.";
+  function next() { setRound((r) => r + 1); setChoice(null); setLevel(null); setChecked(false); }
   return (
     <div className="ix-confidence">
-      <h4>Qual é maior: 0,5 ou 0,45?</h4>
-      <div className="dc-row" role="radiogroup" aria-label="Resposta">
-        {["0,45", "0,5", "São iguais"].map((label, i) => (
-          <button key={label} type="button" role="radio" aria-checked={choice === i} className="dc-pill" data-on={choice === i} onClick={() => { setChoice(i); setChecked(false); }}>{label}</button>
+      <p className="type-meta">Pergunta {(round % PROMPTS.length) + 1} de {PROMPTS.length}</p>
+      <h4>{prompt.stem}</h4>
+      <div className="ix-choices" role="radiogroup" aria-label="Resposta">
+        {prompt.choices.map((label, i) => (
+          <button key={label} type="button" role="radio" aria-checked={choice === i} className="dc-pill" data-on={choice === i}
+            data-result={checked ? (i === prompt.answer ? "correct" : i === choice ? "wrong" : undefined) : undefined}
+            disabled={checked} onClick={() => setChoice(i)}>{label}</button>
         ))}
       </div>
       <p className="type-meta">Quanto você tem certeza?</p>
-      <LayoutGroup>
+      <LayoutGroup id={`levels-${round}`}>
         <div className="ix-levels" role="radiogroup" aria-label="Confiança">
           {LEVELS.map(([key, label]) => (
-            <button key={key} type="button" role="radio" aria-checked={level === key} className="ix-level" onClick={() => { setLevel(key); setChecked(false); }}>
+            <button key={key} type="button" role="radio" aria-checked={level === key} className="ix-level" disabled={checked} onClick={() => setLevel(key)}>
               {level === key ? <motion.span layoutId="ix-level-pill" className="ix-level-pill" transition={SPRING} /> : null}
               <span className="ix-level-text">{label}</span>
             </button>
           ))}
         </div>
       </LayoutGroup>
-      <button type="button" className="primary-button" disabled={choice === null || level === null} onClick={() => setChecked(true)}>Conferir</button>
+      {checked
+        ? <button type="button" className="secondary-button" onClick={next}>Próxima pergunta</button>
+        : <button type="button" className="primary-button" disabled={choice === null || level === null} onClick={() => setChecked(true)}>Conferir</button>}
       <AnimatePresence>
         {message ? (
           <motion.p key={message} className="ix-calibrate" data-result={correct ? "correct" : "wrong"} role="status" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.22 }}>

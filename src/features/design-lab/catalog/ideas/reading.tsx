@@ -13,18 +13,19 @@ const EVIDENCE = new Set([4, 5, 6, 7, 9, 10, 11, 12, 15, 16, 17, 18, 19, 20]);
 export function EvidenceHighlighter() {
   const [marked, setMarked] = useState<Set<number>>(new Set());
   const [checked, setChecked] = useState(false);
+  const [reveal, setReveal] = useState(false);
   const hits = [...marked].filter((i) => EVIDENCE.has(i)).length;
   const extras = marked.size - hits;
   function toggle(i: number) {
     setMarked((current) => { const next = new Set(current); if (next.has(i)) next.delete(i); else next.add(i); return next; });
-    setChecked(false);
+    setChecked(false); setReveal(false);
   }
   return (
     <div className="ix-highlight">
       <h4>Que trechos mostram que Ana estava atrasada?</h4>
       <p className="ix-passage" aria-label="Texto: toque nas palavras para marcar">
         {WORDS.map((word, i) => (
-          <button key={i} type="button" className="ix-word" aria-pressed={marked.has(i)} data-state={checked && marked.has(i) ? (EVIDENCE.has(i) ? "right" : "extra") : "idle"} onClick={() => toggle(i)}>
+          <button key={i} type="button" className="ix-word" aria-pressed={marked.has(i)} data-state={checked && marked.has(i) ? (EVIDENCE.has(i) ? "right" : "extra") : "idle"} data-evidence={reveal && EVIDENCE.has(i)} onClick={() => toggle(i)}>
             <motion.span className="ix-ink" aria-hidden="true" initial={false} animate={{ scaleX: marked.has(i) ? 1 : 0 }} transition={{ duration: 0.18, ease: [0.22, 1, 0.36, 1] }} />
             <span className="ix-word-text">{word}</span>
           </button>
@@ -32,7 +33,8 @@ export function EvidenceHighlighter() {
       </p>
       <div className="dc-row">
         <button type="button" className="primary-button" disabled={marked.size === 0} onClick={() => setChecked(true)}>Conferir</button>
-        <button type="button" className="text-button" onClick={() => { setMarked(new Set()); setChecked(false); }}><RotateCcw aria-hidden="true" />Limpar</button>
+        {checked && !reveal ? <button type="button" className="secondary-button" onClick={() => setReveal(true)}>Mostrar as pistas</button> : null}
+        <button type="button" className="text-button" onClick={() => { setMarked(new Set()); setChecked(false); setReveal(false); }}><RotateCcw aria-hidden="true" />Limpar</button>
       </div>
       <p role="status" className="ix-feedback">
         {checked ? (hits >= 8 && extras <= 2 ? "Boa leitura! Correr, sair sem café e o ônibus indo embora são as pistas." : hits > 0 ? `Você achou parte das pistas (${hits} palavras). Procure ações apressadas.` : "Procure o que Ana fez com pressa.") : " "}
@@ -49,7 +51,7 @@ const EVENTS = [
   { year: 1889, title: "República", note: "Fim do Império." },
   { year: 1988, title: "Constituição Cidadã", note: "Constituição atual do Brasil." }
 ];
-const STEP = 180;
+const STEP = 120;
 
 export function DraggableTimeline() {
   const x = useMotionValue(0);
