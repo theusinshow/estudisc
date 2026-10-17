@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-17 — Open-book mark, E2E fixes, answer-key check
+
+- Brand: the vector-V mark is replaced by an open book on the yellow tile in the favicon, app/apple icons, branding assets (deprecated aliases included), link preview and header lockup. The header draws it inline; the right page turns on load and hover, off with reduced motion.
+- E2E: `review-mistake-loop` and `knowledge-map` wait for hydration before typing/pressing, and the review loop expects the current "Já está corrigido" copy.
+- Past exams: all 11 answer keys were checked question by question against the official IFSC PDFs (annulled questions included); no mismatch.
+
 ## 2026-10-17 — Paid access enforced in the APIs, free-preview home, funnel events
 
 - Without full access, `/api/tutor` (legacy AI route), new study sessions and questions outside the four free sample lessons answer 403 `paid_access_required`. Before, only the lesson page checked, so a free account could reach the AI provider and every question through the APIs.
