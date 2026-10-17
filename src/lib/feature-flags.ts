@@ -16,7 +16,9 @@ export const featureFlagsSchema = z.object({
   FEATURE_SMART_MISTAKES: flag,
   FEATURE_REAL_EXAM: flag,
   FEATURE_CONTENT_HEALTH: flag,
-  FEATURE_PAID_ACCESS: flag
+  FEATURE_PAID_ACCESS: flag,
+  /** ADR 0068: self-service sign-up at /auth/cadastro. */
+  FEATURE_OPEN_SIGNUP: flag
 });
 
 export type FeatureFlags = z.infer<typeof featureFlagsSchema>;

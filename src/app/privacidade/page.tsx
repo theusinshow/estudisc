@@ -18,7 +18,7 @@ export default function PrivacidadePage() {
 
         <h2>1. Dados que tratamos</h2>
         <ul>
-          <li><strong>Conta:</strong> nome e e-mail da sua conta Google, usados para identificar você. Não recebemos sua senha.</li>
+          <li><strong>Conta:</strong> nome e e-mail, informados no cadastro ou vindos da sua conta Google, usados para identificar você; se você tem menos de 18 anos, a declaração de que seu responsável autorizou o uso, com a data; e a data em que você aceitou os termos. Não usamos senha: para entrar, mandamos um código de 6 dígitos para o seu e-mail, guardado de forma protegida e válido por 10 minutos.</li>
           <li><strong>Estudo:</strong> respostas, acertos e erros, aulas iniciadas e concluídas, revisões, simulados e anotações. É o que permite continuar de onde você parou e montar a revisão.</li>
           <li><strong>Pagamento:</strong> identificador, situação e valor do pagamento informados pelo Mercado Pago. Os dados de cartão e de Pix ficam com o Mercado Pago; o Estudisc não os recebe.</li>
           <li><strong>Técnicos:</strong> registros de funcionamento e segurança (por exemplo, data e hora de acesso e erros), mantidos pelo tempo necessário para operar e proteger o serviço.</li>
@@ -33,13 +33,14 @@ export default function PrivacidadePage() {
         <p>Não vendemos seus dados, não exibimos anúncios e não usamos ferramentas de rastreamento publicitário.</p>
 
         <h2>3. Crianças e adolescentes</h2>
-        <p>O Estudisc é usado por estudantes que, em geral, têm menos de 18 anos. Nesse caso, a conta deve ser criada e a compra feita com o consentimento do pai, da mãe ou do responsável legal, conforme o artigo 14 da LGPD. Tratamos apenas os dados necessários para o estudo.</p>
+        <p>O Estudisc é usado por estudantes que, em geral, têm menos de 18 anos. Nesse caso, a conta deve ser criada e a compra feita com o consentimento do pai, da mãe ou do responsável legal, conforme o artigo 14 da LGPD. No cadastro, quem tem menos de 18 anos declara que o responsável autorizou o uso, e guardamos essa declaração com a data. Tratamos apenas os dados necessários para o estudo.</p>
 
         <h2>4. Com quem compartilhamos</h2>
         <ul>
           <li><strong>Google:</strong> para o login.</li>
           <li><strong>Mercado Pago:</strong> para processar o pagamento.</li>
-          <li><strong>Hospedagem e banco de dados:</strong> provedores de nuvem (Vercel e Aiven) que guardam os dados por nossa conta, inclusive em servidores fora do Brasil, com proteções contratuais.</li>
+          <li><strong>Resend:</strong> para enviar os e-mails com o código de acesso.</li>
+          <li><strong>Hospedagem e banco de dados:</strong> provedores de nuvem (Railway, com DNS da Cloudflare) que guardam os dados por nossa conta, inclusive em servidores fora do Brasil, com proteções contratuais.</li>
           <li><strong>Ajuda com inteligência artificial:</strong> quando esse recurso opcional estiver disponível e você pedir ajuda, o conteúdo da questão e o seu pedido são enviados a um provedor de IA (DeepSeek) apenas para gerar a resposta.</li>
         </ul>
         <p>Também podemos fornecer dados quando a lei ou uma ordem judicial exigir.</p>

@@ -61,6 +61,7 @@ export function ShellNavigation({ studyNavigation, focus, exit, profile = null }
     {profile?.accountMode && <section className="nav-account" aria-label="Perfil">
       <p className="nav-account-title">Perfil</p>
       <span>Conectado como <strong>{profile.name}</strong></span>
+      <Link className="nav-link" href="/conta" onClick={() => setMenuOpen(false)}><span>Minha conta</span></Link>
       <button type="button" className="nav-link" onClick={() => void signOut()}><LogOut aria-hidden="true" /><span>Sair</span></button>
     </section>}
     {secondaryItems.map(item => {

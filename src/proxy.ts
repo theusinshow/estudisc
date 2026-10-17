@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { readUserSession, USER_SESSION_COOKIE } from "@/features/auth/user-session";
 
 import { auth } from "@/auth";
 import { getAuthGuardDecision, isPublicRuntimePath,isAdminRuntimePath } from "@/features/auth/session-guard";
@@ -68,6 +69,17 @@ const authProxy = auth((request: AuthenticatedRequest) => {
 
   if(pathname.startsWith("/api/")&&!["GET","HEAD","OPTIONS"].includes(request.method)){
     if(!isAllowedMutationOrigin(request.headers,request.nextUrl,getServerEnv().APP_URL))return secureResponse(NextResponse.json({code:"origin_rejected"},{status:403}),contentSecurityPolicy);
+  }
+
+  // ADR 0068: an account session (e-mail, Google or linked code profile). Signature and expiry here;
+  // the server also checks account status and session version when it resolves the owner.
+  const userSession = readUserSession(request.cookies.get(USER_SESSION_COOKIE)?.value, getServerEnv().AUTH_SECRET);
+  if (userSession) {
+    if (isAdminRuntimePath(pathname) && userSession.role !== "ADMIN") {
+      if (pathname.startsWith("/api/")) return secureResponse(NextResponse.json({ code: "admin_required", message: "Esta ação requer perfil de administrador." }, { status: 403 }), contentSecurityPolicy);
+      return secureResponse(NextResponse.redirect(new URL("/", request.url)), contentSecurityPolicy);
+    }
+    return nextSecureResponse(request, contentSecurityPolicy, requestHeaders);
   }
 
   // Accounts mode (ADR 0031): a signed session cookie replaces the Google check, also in production.

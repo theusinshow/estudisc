@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-10-17 — Accounts, passwordless e-mail sign-in and sign-up (ADR 0068)
+
+- New additive tables `user_accounts`, `account_identities` and `email_login_codes` (migration 0023), keyed by the existing `ownerId`, so learning state is never rewritten.
+- Passwordless e-mail sign-in: a 6-digit code by e-mail (Resend), stored only as an HMAC, valid 10 minutes, 5 attempts, single use, 5 sends per hour per e-mail and 20 per hour per IP; starting a sign-in never reveals whether the e-mail has an account.
+- Sign-up at `/auth/cadastro` behind `FEATURE_OPEN_SIGNUP` (off by default): name, age band, guardian declaration for under 18, terms acceptance with version.
+- Existing code profiles keep their id: a code sign-in creates their account record; `/conta` links an e-mail, after which e-mail or Google sign-in lands on the same progress.
+- Google sign-in maps to a linked account first, otherwise keeps the ADR 0061 `google-` id.
+- One signed account session cookie (`estudisc_user`); disabling an account or bumping its session version signs it out everywhere.
+- Privacy policy and terms describe e-mail sign-in, the guardian declaration and Resend; hosting now says Railway.
+
 ## 2026-10-17 — Design lab and vibrante theme (ADMIN preview)
 
 - `/admin/lab` compares the current look with a vibrant neo-brutalist theme (palettes Limão/Lavanda/Pêssego, Archivo or rounded Fredoka titles, one color per subject) and shows a WCAG contrast report; "Ver o app inteiro neste tema" previews real screens through an ADMIN-only cookie (`estudisc_theme`). Students never see it.

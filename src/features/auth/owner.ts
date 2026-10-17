@@ -31,6 +31,13 @@ export type OwnerProfile = Readonly<{
 
 export async function getOwnerProfile(): Promise<OwnerProfile> {
   const env = getServerEnv();
+  // ADR 0068: an account session (e-mail, Google or a linked code profile) resolves to its ownerId first.
+  if (env.AUTH_SECRET) {
+    const { cookies } = await import("next/headers");
+    const { readSignedInAccount } = await import("./accounts");
+    const account = await readSignedInAccount(await cookies(), env);
+    if (account) return { ownerId: account.id, role: account.role, name: account.name, ...(account.email ? { email: account.email } : {}), allowlisted: account.id.startsWith("account-") || isLegacyAllowlistedGoogleEmail(account.email, env) };
+  }
   const accountConfig = getAccountConfig(env);
   if (accountConfig) {
     const { cookies } = await import("next/headers");

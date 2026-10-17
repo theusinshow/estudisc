@@ -1,4 +1,6 @@
 import { logEvent } from "@/lib/logger";
+import { recordLegacyAccount } from "@/features/auth/accounts";
+import { USER_SESSION_COOKIE } from "@/features/auth/user-session";
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { getServerEnv } from "@/lib/env";
@@ -25,6 +27,8 @@ export async function POST(request:Request){
     return NextResponse.json({code:"invalid_code"},{status:401,headers:noStore});
   }
   clearLoginFailures(key);
+  // ADR 0068: the profile gets its account record with the same ownerId; sign-in never depends on it.
+  await recordLegacyAccount({ id: account.id, name: account.name, role: account.role });
   const response=NextResponse.json({name:account.name,role:account.role},{headers:noStore});
   response.cookies.set(ACCOUNT_SESSION_COOKIE,createAccountSession(account,config.secret),accountSessionCookieOptions(process.env.NODE_ENV==="production"));
   response.cookies.delete(LEGACY_ACCOUNT_SESSION_COOKIE);
@@ -34,5 +38,6 @@ export async function DELETE(){
   const response=NextResponse.json({ok:true},{headers:noStore});
   response.cookies.delete(ACCOUNT_SESSION_COOKIE);
   response.cookies.delete(LEGACY_ACCOUNT_SESSION_COOKIE);
+  response.cookies.delete(USER_SESSION_COOKIE);
   return response;
 }

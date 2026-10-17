@@ -1,5 +1,7 @@
 
 import { BrandLockup } from "@/components/brand/brand-lockup";
+import { getDatabaseUrl } from "@/db/connection";
+import { EmailSignIn } from "@/features/auth/email-account-forms";
 import { signIn } from "@/auth";
 import { googleAuthorizationParams } from "@/features/auth/google-oauth";
 import { getServerEnv } from "@/lib/env";
@@ -71,6 +73,9 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
   const accountConfig = getAccountConfig(env);
   const hybrid = isHybridSignIn(env);
   const withCallback = (extra: Record<string, string>) => `/auth/signin?${new URLSearchParams({ callbackUrl, ...extra })}`;
+  // ADR 0068: e-mail sign-in needs the session secret and a database.
+  const emailSignIn = Boolean(env.AUTH_SECRET && getDatabaseUrl());
+  const signupOpen = emailSignIn && env.FEATURE_OPEN_SIGNUP;
 
   if (accountConfig && (!hybrid || params?.perfil === "1")) {
     return (
@@ -81,9 +86,12 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
             <p className="auth-kicker">Entrar</p>
           </div>
           <div className="auth-copy">
-            <h1 id="signin-title">Entre no seu perfil</h1>
-            <p>Digite o nome do seu perfil e o código de 6 dígitos. Cada perfil guarda o próprio progresso.</p>
+            <h1 id="signin-title">{emailSignIn ? "Entrar no Estudisc" : "Entre no seu perfil"}</h1>
+            <p>{emailSignIn ? "Entre com o e-mail da sua conta. Mandamos um código de 6 dígitos; você não precisa de senha." : "Digite o nome do seu perfil e o código de 6 dígitos. Cada perfil guarda o próprio progresso."}</p>
           </div>
+          {emailSignIn ? <EmailSignIn callbackUrl={callbackUrl} signupOpen={signupOpen} /> : null}
+          {signupOpen ? <p className="auth-alternate">Ainda não tem conta? <Link href="/auth/cadastro">Criar conta</Link></p> : null}
+          {emailSignIn ? <h2 className="auth-subtitle">Ou entre com seu perfil e código</h2> : null}
           <AccountSignIn callbackUrl={callbackUrl} />
           {hybrid ? <p className="auth-alternate"><Link href={withCallback({})}>Entrar com conta Google</Link></p> : null}
         </section>
@@ -128,6 +136,8 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
         <form action={signInWithGoogle} className="auth-actions">
           <GoogleSubmitButton />
         </form>
+        {emailSignIn ? <><h2 className="auth-subtitle">Ou entre com seu e-mail</h2><EmailSignIn callbackUrl={callbackUrl} signupOpen={signupOpen} /></> : null}
+        {signupOpen ? <p className="auth-alternate">Ainda não tem conta? <Link href="/auth/cadastro">Criar conta</Link></p> : null}
 
         <dl className="auth-status" aria-label="Regras de acesso">
           <div>

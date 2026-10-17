@@ -23,7 +23,7 @@ export default function TermosPage() {
         <p>O Estudisc é uma plataforma on-line de estudo para a prova de ingresso do IFSC 2027/1. Oferece aulas, questões com explicação, revisão, simulados e folhas de resposta para provas anteriores. É um material independente e não tem vínculo com o Instituto Federal de Santa Catarina.</p>
 
         <h2>2. Conta</h2>
-        <p>Para usar o Estudisc é preciso entrar com uma conta Google. A conta é pessoal: não compartilhe o acesso. Menores de 18 anos só podem usar o serviço com autorização do pai, da mãe ou do responsável legal, que deve fazer a compra.</p>
+        <p>Para usar o Estudisc é preciso ter uma conta: você entra com o seu e-mail, recebendo um código de 6 dígitos, ou com uma conta Google. A conta é pessoal: não compartilhe o acesso. Menores de 18 anos só podem usar o serviço com autorização do pai, da mãe ou do responsável legal, que deve fazer a compra.</p>
 
         <h2>3. Acesso gratuito e acesso completo</h2>
         <p>Sem pagamento, a conta dá acesso ao catálogo, ao diagnóstico e a uma aula de demonstração por matéria. O acesso completo custa R$ {LIFETIME_PRICE_BRL},00, em pagamento único, processado pelo Mercado Pago (Pix ou cartão). Ele vale até as 23h59 de {lastDay} (horário de Brasília), o dia da prova, e não se renova automaticamente.</p>

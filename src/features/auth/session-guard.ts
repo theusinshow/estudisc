@@ -29,6 +29,7 @@ export function isPublicRuntimePath(pathname: string) {
     pathname.startsWith("/api/auth") ||
     pathname === "/api/payments/mercadopago/webhook" ||
     pathname === "/auth/signin" ||
+    pathname === "/auth/cadastro" ||
     isPublicSitePath(pathname) ||
     pathname === "/api/health/db" ||
     pathname.startsWith("/branding/") ||

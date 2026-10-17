@@ -10,7 +10,7 @@ import { getServerEnv } from "@/lib/env";
 async function readShellProfile(): Promise<ShellProfile | null> {
   try {
     const profile = await getOwnerProfile();
-    return { role: profile.role, name: profile.name ?? null, accountMode: Boolean(getAccountConfig(getServerEnv())) };
+    return { role: profile.role, name: profile.name ?? null, accountMode: Boolean(getAccountConfig(getServerEnv()) || profile.email) };
   } catch {
     return null;
   }

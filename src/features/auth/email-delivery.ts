@@ -26,7 +26,11 @@ export class ResendEmailSender implements EmailSender {
 /** Development and tests: messages stay in memory; production without RESEND_API_KEY refuses to send. */
 export const memoryOutbox: OutgoingEmail[] = [];
 export class MemoryEmailSender implements EmailSender {
-  async send(message: OutgoingEmail) { memoryOutbox.push(message); }
+  async send(message: OutgoingEmail) {
+    memoryOutbox.push(message);
+    // Local development only (this sender is never used in production): the subject carries the code.
+    if (process.env.NODE_ENV === "development") console.info(`[dev e-mail] ${message.to}: ${message.subject}`);
+  }
 }
 
 export function createEmailSender(env: Readonly<{ RESEND_API_KEY?: string; EMAIL_FROM?: string }>, production = process.env.NODE_ENV === "production"): EmailSender {

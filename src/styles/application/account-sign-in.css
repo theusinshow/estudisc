@@ -39,3 +39,15 @@
 .account-profile input { max-width: 22rem; }
 .account-help { margin: 0; max-width: 36rem; color: var(--estudisc-color-dim); }
 .account-help a { text-decoration: underline; font-weight: 700; color: var(--estudisc-color-ink); }
+.auth-subtitle { margin: 0; font-size: 1rem; font-weight: 800; }
+.email-code-step, .signup-form { display: grid; gap: var(--estudisc-spacing-6); }
+.auth-form { display: grid; gap: var(--estudisc-spacing-6); justify-items: start; }
+.auth-form input { min-width: min(100%, 22rem); }
+.signup-age { display: grid; gap: var(--estudisc-spacing-4); margin: 0; padding: 0; border: 0; }
+.signup-age legend { font-weight: 700; margin-bottom: var(--estudisc-spacing-4); }
+.signup-age label, .signup-check { display: flex; gap: var(--estudisc-spacing-4); align-items: flex-start; min-height: 44px; }
+.signup-check a { text-decoration: underline; }
+.account-facts { display: grid; gap: var(--estudisc-spacing-4); margin: var(--estudisc-spacing-8) 0; }
+.account-facts div { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-4); }
+.account-facts dt { font-weight: 800; min-width: 5rem; }
+.account-facts dd { margin: 0; }
