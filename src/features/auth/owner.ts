@@ -1,4 +1,4 @@
-import { createHash } from "node:crypto";
+import { legacyGoogleOwnerId } from "./account-service";
 import { getServerEnv } from "@/lib/env";
 import { isAllowedGoogleEmail, isGoogleAuthConfigured, isLegacyAllowlistedGoogleEmail } from "./auth-readiness";
 import { getAccountConfig, isHybridSignIn } from "./account-mode";
@@ -14,7 +14,7 @@ export function profileForEmail(email: string, env = getServerEnv()) {
   const normalized = email.trim().toLowerCase();
   if (!isAllowedGoogleEmail(normalized, env)) throw new AccessDeniedError();
   return {
-    ownerId: `google-${createHash("sha256").update(normalized).digest("hex")}`,
+    ownerId: legacyGoogleOwnerId(normalized),
     role: env.ESTUDISC_ADMIN_GOOGLE_EMAILS.includes(normalized) ? ("ADMIN" as const) : ("STUDENT" as const),
     email: normalized,
     allowlisted: isLegacyAllowlistedGoogleEmail(normalized, env)

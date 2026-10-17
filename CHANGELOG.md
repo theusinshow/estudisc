@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-17 — Accounts fix: e-mail code reuses the Google account
+
+- Signing in or signing up by e-mail code with an address that already uses Google now lands on that same account (and its progress) instead of "no account" or a new empty account. `linkEmail` also accepts the account's own e-mail.
+
 ## 2026-10-17 — Vibrante theme for everyone and tab navigation (ADR 0069)
 
 - Theme: vibrante (lime frame, white sheets, ink outlines, one color per subject, Archivo heavy) is the default for all users; pill buttons, fields, checkbox/radio and blue focus come from the theme; buttons may wrap so nothing overflows at 320 px.

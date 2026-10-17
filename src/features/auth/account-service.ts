@@ -1,9 +1,14 @@
-import { createHmac, randomInt, timingSafeEqual } from "node:crypto";
+import { createHash, createHmac, randomInt, timingSafeEqual } from "node:crypto";
 import { z } from "zod";
 import type { AccountRecord, AccountRole, AccountStore, CodeIntent, GuardianDeclaration } from "@/db/repositories/account-repository";
 import { signInCodeEmail, type EmailSender } from "./email-delivery";
 
 /** Bump when /termos changes materially; stored with each sign-up. */
+/** The ADR 0061 ownerId of a Google sign-in; an e-mail verified by code maps to the same learner. */
+export function legacyGoogleOwnerId(email: string) {
+  return `google-${createHash("sha256").update(email.trim().toLowerCase()).digest("hex")}`;
+}
+
 export const TERMS_VERSION = "2026-10-17";
 export const CODE_TTL_MS = 10 * 60 * 1000;
 export const MAX_CODE_ATTEMPTS = 5;
@@ -71,6 +76,13 @@ export class AccountService {
 
     const existing = await this.deps.store.findByIdentity("email", email);
     if (existing) return this.signIn(existing, now);
+    // The verified e-mail already signs in with Google (ADR 0061 ownerId): same person, so link it instead of
+    // creating a second, empty account that would also capture later Google sign-ins.
+    const google = await this.googleAccountFor(email, open.payload as { name?: string });
+    if (google) {
+      if (!await this.deps.store.linkEmail(google.id, email)) return { status: "email_taken" };
+      return this.signIn(google, now);
+    }
     if (open.intent === "signin") return { status: "no_account" };
     if (!this.deps.signupOpen) return { status: "signup_closed" };
     const signup = open.payload as { name?: string; minor?: boolean; guardianAuthorized?: boolean; termsVersion?: string };
@@ -79,6 +91,15 @@ export class AccountService {
     const role: AccountRole = this.deps.adminEmails.includes(email) ? "ADMIN" : "STUDENT";
     const created = await this.deps.store.createAccount({ id: this.deps.newId?.() ?? `user-${crypto.randomUUID()}`, email, name: signup.name, role, termsVersion: signup.termsVersion, termsAcceptedAt: now, guardianDeclaration });
     return created ? this.signIn(created, now) : { status: "email_taken" };
+  }
+
+  private async googleAccountFor(email: string, signup: { name?: string }) {
+    const linked = await this.deps.store.findByIdentity("google", email);
+    if (linked) return linked;
+    const legacyId = legacyGoogleOwnerId(email);
+    if (!await this.deps.store.ownerExists(legacyId)) return null;
+    const role: AccountRole = this.deps.adminEmails.includes(email) ? "ADMIN" : "STUDENT";
+    return this.deps.store.ensureGoogleAccount({ id: legacyId, email, name: signup.name?.trim() || email.split("@")[0]!, role });
   }
 
   private async signIn(account: AccountRecord, now: Date): Promise<VerifyResult> {

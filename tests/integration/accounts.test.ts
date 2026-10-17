@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it } from "vitest";
 import { DrizzleAccountRepository, MemoryAccountRepository, type AccountStore } from "@/db/repositories/account-repository";
-import { AccountService, MAX_CODE_ATTEMPTS, type AccountServiceDeps } from "@/features/auth/account-service";
+import { AccountService, legacyGoogleOwnerId, MAX_CODE_ATTEMPTS, type AccountServiceDeps } from "@/features/auth/account-service";
 import type { OutgoingEmail } from "@/features/auth/email-delivery";
 import { attempts, owners, xpTransactions } from "@/db/schema";
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
@@ -23,6 +23,29 @@ async function setup(kind: "memory" | "persistent", overrides: Partial<AccountSe
 }
 
 describe.each(["memory", "persistent"] as const)("accounts and e-mail sign-in (%s)", kind => {
+  it("signs a Google user in by e-mail code on the same account instead of creating a new one", async () => {
+    const { store, service } = await setup(kind);
+    const google = await store.ensureGoogleAccount({ id: legacyGoogleOwnerId("ana@example.com"), email: "ana@example.com", name: "Ana", role: "STUDENT" });
+    await service.startEmailCode("ana@example.com", "signin");
+    expect(await service.verifyEmailCode("ana@example.com", "111111")).toMatchObject({ status: "signed_in", account: { id: google.id } });
+    expect((await store.findByIdentity("email", "ana@example.com"))?.id).toBe(google.id);
+  });
+
+  it("keeps a pre-account Google learner on the ADR 0061 ownerId when they sign up by e-mail", async () => {
+    const { store, db, service } = await setup(kind);
+    const legacyId = legacyGoogleOwnerId("bia@example.com");
+    if (db) await db.insert(owners).values({ id: legacyId, displayName: "Bia" });
+    else await store.ensureGoogleAccount({ id: legacyId, email: "bia@example.com", name: "Bia", role: "STUDENT" });
+    await service.startEmailCode("bia@example.com", "signup", { signup: { name: "Bia", minor: false, guardianAuthorized: false, acceptTerms: true } });
+    expect(await service.verifyEmailCode("bia@example.com", "111111")).toMatchObject({ status: "signed_in", account: { id: legacyId } });
+  });
+
+  it("still reports no account for an unknown e-mail on sign-in", async () => {
+    const { service } = await setup(kind);
+    await service.startEmailCode("nova@example.com", "signin");
+    expect(await service.verifyEmailCode("nova@example.com", "111111")).toEqual({ status: "no_account" });
+  });
+
   it("keeps an existing code profile on its ownerId and progress when it links an e-mail", async () => {
     const { store, db, service } = await setup(kind);
     if (db) {

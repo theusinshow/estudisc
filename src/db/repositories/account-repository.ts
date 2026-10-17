@@ -33,6 +33,8 @@ export interface AccountStore {
   createAccount(input: NewAccount): Promise<AccountRecord | null>;
   /** Adds an e-mail identity to an existing account; false when the e-mail belongs to another account. */
   linkEmail(accountId: string, email: string): Promise<boolean>;
+  /** Whether learning state already exists for this ownerId (e.g. an ADR 0061 Google user without an account row). */
+  ownerExists(id: string): Promise<boolean>;
   /** The ADR 0061 Google account, created on first sign-in with the same id as before. */
   ensureGoogleAccount(input: Readonly<{ id: string; email: string; name: string; role: AccountRole }>): Promise<AccountRecord>;
   touchSignIn(id: string, now: Date): Promise<void>;
@@ -92,12 +94,17 @@ export class DrizzleAccountRepository implements AccountStore {
     return this.db.transaction(async (tx) => {
       const [existing] = await tx.select().from(accountIdentities).where(and(eq(accountIdentities.provider, "email"), eq(accountIdentities.subject, email)));
       if (existing) return existing.accountId === accountId;
-      const [owner] = await tx.select({ email: userAccounts.email }).from(userAccounts).where(eq(userAccounts.email, email));
-      if (owner) return false;
+      const [owner] = await tx.select({ id: userAccounts.id }).from(userAccounts).where(eq(userAccounts.email, email));
+      if (owner && owner.id !== accountId) return false;
       await tx.insert(accountIdentities).values({ accountId, provider: "email", subject: email });
       await tx.update(userAccounts).set({ email }).where(and(eq(userAccounts.id, accountId), isNull(userAccounts.email)));
       return true;
     });
+  }
+
+  async ownerExists(id: string) {
+    const [row] = await this.db.select({ id: owners.id }).from(owners).where(eq(owners.id, id));
+    return Boolean(row);
   }
 
   async ensureGoogleAccount(input: Readonly<{ id: string; email: string; name: string; role: AccountRole }>) {
@@ -142,7 +149,7 @@ export class DrizzleAccountRepository implements AccountStore {
   }
 }
 
-type MemoryAccounts = { accounts: Map<string, AccountRecord & { lastSignInAt: Date | null }>; identities: { accountId: string; provider: IdentityProvider; subject: string }[]; codes: EmailCodeRecord[] };
+type MemoryAccounts = { owners?: Set<string>; accounts: Map<string, AccountRecord & { lastSignInAt: Date | null }>; identities: { accountId: string; provider: IdentityProvider; subject: string }[]; codes: EmailCodeRecord[] };
 const memoryKey = Symbol.for("estudisc.memory-accounts");
 export function memoryAccountState(): MemoryAccounts {
   const holder = globalThis as unknown as Record<symbol, MemoryAccounts | undefined>;
@@ -179,12 +186,14 @@ export class MemoryAccountRepository implements AccountStore {
   async linkEmail(accountId: string, email: string) {
     const existing = this.state.identities.find(entry => entry.provider === "email" && entry.subject === email);
     if (existing) return existing.accountId === accountId;
-    if ([...this.state.accounts.values()].some(account => account.email === email)) return false;
+    if ([...this.state.accounts.values()].some(account => account.email === email && account.id !== accountId)) return false;
     this.state.identities.push({ accountId, provider: "email", subject: email });
     const account = this.state.accounts.get(accountId);
     if (account && !account.email) this.state.accounts.set(accountId, { ...account, email });
     return true;
   }
+
+  async ownerExists(id: string) { return this.state.accounts.has(id) || Boolean(this.state.owners?.has(id)); }
 
   async ensureGoogleAccount(input: Readonly<{ id: string; email: string; name: string; role: AccountRole }>) {
     if (!this.state.accounts.has(input.id)) {
