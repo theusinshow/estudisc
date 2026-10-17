@@ -216,3 +216,40 @@
   --estudisc-z-index-toast: 60;
   --estudisc-z-index-tooltip: 70;
 }
+[data-theme="vibrante"] {
+  --estudisc-color-desk: #C2F03A;
+  --estudisc-color-dim: #3A3544;
+  --estudisc-color-dimmed-paper: #E6FF99;
+  --estudisc-color-panel: #FFFFFF;
+  --estudisc-color-paper: #D4FF4F;
+  --estudisc-color-signal: #FFE135;
+  --estudisc-color-signal-ink: #17141F;
+  --estudisc-color-subject-accent-history-geography: #FFD12E;
+  --estudisc-color-subject-accent-mathematics: #FF7357;
+  --estudisc-color-subject-accent-portuguese: #B08CFF;
+  --estudisc-color-subject-accent-science: #4CC96B;
+  --estudisc-color-surface-lime: #D4FF4F;
+  --estudisc-color-surface-orange: #FF9E5E;
+  --estudisc-color-surface-pink: #FF9AD5;
+  --estudisc-color-surface-sky: #7FD6FF;
+  --estudisc-color-surface-violet: #B08CFF;
+  --estudisc-radius-interactive: 16px;
+  --estudisc-radius-learning-card: 24px;
+  --estudisc-radius-md: 14px;
+  --estudisc-radius-sheet: 28px;
+  --estudisc-radius-sm: 10px;
+  --estudisc-typography-body-weights-bold: 800;
+  --estudisc-typography-body-weights-regular: 500;
+  --estudisc-typography-body-weights-semibold: 700;
+  --estudisc-typography-display-weight: 900;
+}
+[data-theme="vibrante"][data-palette="b"] {
+  --estudisc-color-desk: #B6A0FF;
+  --estudisc-color-dimmed-paper: #E2D8FF;
+  --estudisc-color-paper: #C9B8FF;
+}
+[data-theme="vibrante"][data-palette="c"] {
+  --estudisc-color-desk: #FFAF85;
+  --estudisc-color-dimmed-paper: #FFE0CF;
+  --estudisc-color-paper: #FFC2A1;
+}

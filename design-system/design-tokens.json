@@ -351,5 +351,68 @@
       "desktopGutter": "24px",
       "marginColumn": "220px"
     }
+  },
+  "themes": {
+    "vibrante": {
+      "base": {
+        "color": {
+          "paper": "#D4FF4F",
+          "dimmedPaper": "#E6FF99",
+          "desk": "#C2F03A",
+          "panel": "#FFFFFF",
+          "dim": "#3A3544",
+          "signal": "#FFE135",
+          "signalInk": "#17141F",
+          "subjectAccent": {
+            "mathematics": "#FF7357",
+            "science": "#4CC96B",
+            "portuguese": "#B08CFF",
+            "historyGeography": "#FFD12E"
+          },
+          "surface": {
+            "lime": "#D4FF4F",
+            "pink": "#FF9AD5",
+            "sky": "#7FD6FF",
+            "orange": "#FF9E5E",
+            "violet": "#B08CFF"
+          }
+        },
+        "radius": {
+          "sm": "10px",
+          "md": "14px",
+          "interactive": "16px",
+          "learningCard": "24px",
+          "sheet": "28px"
+        },
+        "typography": {
+          "display": {
+            "weight": 900
+          },
+          "body": {
+            "weights": {
+              "regular": 500,
+              "semibold": 700,
+              "bold": 800
+            }
+          }
+        }
+      },
+      "palettes": {
+        "b": {
+          "color": {
+            "paper": "#C9B8FF",
+            "dimmedPaper": "#E2D8FF",
+            "desk": "#B6A0FF"
+          }
+        },
+        "c": {
+          "color": {
+            "paper": "#FFC2A1",
+            "dimmedPaper": "#FFE0CF",
+            "desk": "#FFAF85"
+          }
+        }
+      }
+    }
   }
 }

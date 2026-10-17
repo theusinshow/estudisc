@@ -33,4 +33,24 @@ describe("design token generator", () => {
       await rm(tempDir, { recursive: true, force: true });
     }
   });
+
+  it("emits the vibrante theme as attribute-scoped overrides", async () => {
+    const tempDir = await mkdtemp(path.join(os.tmpdir(), "estudisc-tokens-"));
+    const output = path.join(tempDir, "tokens.css");
+    try {
+      await generateDesignTokenCss({ output });
+      const css = await readFile(output, "utf8");
+      expect(css).toContain('[data-theme="vibrante"] {');
+      expect(css).toContain('[data-theme="vibrante"][data-palette="b"] {');
+      expect(css).toContain('[data-theme="vibrante"][data-palette="c"] {');
+      expect(css).toMatch(/\[data-theme="vibrante"\] \{[^}]*--estudisc-color-paper: #D4FF4F;/);
+      expect(css).toMatch(/\[data-theme="vibrante"\] \{[^}]*--estudisc-color-subject-accent-mathematics: #FF7357;/);
+      // The default theme is untouched and `themes` never leaks into :root.
+      expect(css).toMatch(/:root \{[^}]*--estudisc-color-paper: #FFF4E0;/);
+      expect(css).not.toContain("--estudisc-themes-");
+    } finally {
+      await rm(tempDir, { recursive: true, force: true });
+    }
+  });
 });
+
