@@ -2,9 +2,9 @@ import { expect, test } from "@playwright/test";
 
 test("admin compares themes in the design lab and previews the whole app", async ({ page }) => {
   test.setTimeout(90000);
-  await page.goto("/admin/lab?palette=b&type=rounded");
+  await page.goto("/admin/lab");
   await expect(page.getByRole("heading", { name: "Lab de design" })).toBeVisible();
-  await expect(page.locator('[data-theme="vibrante"][data-palette="b"][data-type="rounded"]')).toBeVisible();
+  await expect(page.locator(".dc[data-theme=\"vibrante\"]")).toBeVisible();
   await expect(page.locator(".lab-report").getByText("Falha")).toHaveCount(0);
   for (const width of [320, 1280]) {
     await page.setViewportSize({ width, height: 900 });
