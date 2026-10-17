@@ -16,6 +16,9 @@
 .lesson-step .learning-interaction { margin-block: 0; }
 .stepper-nav { position: sticky; bottom: calc(84px + env(safe-area-inset-bottom)); z-index: 15; display: grid; grid-template-columns: 1fr 2fr; gap: var(--estudisc-spacing-6); padding: var(--estudisc-spacing-6) 0; background: var(--estudisc-color-paper); }
 @media (min-width: 900px) { .stepper-nav { bottom: 0; } }
+/* Without the bottom navigation (Focus mode, or while typing hides it) the step controls rest on the bottom edge. */
+.app-shell[data-mode="focus"] .stepper-nav,
+.app-shell:has(.main-surface textarea:focus, .main-surface input:focus, .main-surface form:focus-within, .activity-panel:focus-within) .stepper-nav { bottom: 0; padding-bottom: calc(var(--estudisc-spacing-6) + env(safe-area-inset-bottom)); }
 .stepper-nav .primary-button { background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); min-height: 56px; font-size: 1.0625rem; }
 .stepper-nav button { min-height: 56px; }
 .stepper-nav:has(> :only-child) { grid-template-columns: 1fr; }

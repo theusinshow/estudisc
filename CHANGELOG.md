@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-16 — Lesson step controls rest on the bottom edge in Focus mode
+
+- The sticky Voltar/Próximo bar kept an 84px offset reserved for the bottom navigation even in Focus mode (and while typing hides the navigation), so it floated mid-screen on phones. It now rests on the bottom edge there, with the safe-area inset. Regression e2e: `stepper-nav-focus` (rollout suite).
+
 ## 2026-10-16 — Caderno de prova, phase 4: progress report card, profile and QA (ADR 0067)
 
 - Progress opens with a "Boletim por área": a real table of average mastery per area on the 0–5 scale in ink marks plus text ("2,4 de 5 · entendido em média") and practiced counts; it recomposes into blocks below 1200px. The radar gains a legend pointing to the table; the rhythm heatmap gains a "Ver os dias em tabela" alternative.
