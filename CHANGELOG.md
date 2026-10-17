@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-17 — Design lab and vibrante theme (ADMIN preview)
+
+- `/admin/lab` compares the current look with a vibrant neo-brutalist theme (palettes Limão/Lavanda/Pêssego, Archivo or rounded Fredoka titles, one color per subject) and shows a WCAG contrast report; "Ver o app inteiro neste tema" previews real screens through an ADMIN-only cookie (`estudisc_theme`). Students never see it.
+- Tokens: `themes.vibrante` in design-tokens.json is emitted as `[data-theme="vibrante"]` overrides; component treatments live in src/styles/themes/vibrante.css. Spec and plan in docs/superpowers/.
+
 ## 2026-10-17 — Open-book mark, E2E fixes, answer-key check
 
 - Brand: the vector-V mark is replaced by an open book on the yellow tile in the favicon, app/apple icons, branding assets (deprecated aliases included), link preview and header lockup. The header draws it inline; the right page turns on load and hover, off with reduced motion.

@@ -132,3 +132,5 @@ migração e atualização do changelog.
 - App icon e lockup aprovados e documentados em `BRAND_ASSETS.md`.
 - Schema de conteúdo dos Learning Packs é arquitetura de produto, fora deste Design System.
 - Sonorização está fora de escopo; o produto é silencioso.
+
+- Vibrante theme lab (2026-10-17, ADMIN preview at /admin/lab): docs/superpowers/specs/2026-10-17-vibrant-theme-lab-design.md
