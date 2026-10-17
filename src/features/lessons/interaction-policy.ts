@@ -5,6 +5,7 @@ import { numericExplorerSchema } from "./blocks/numeric-explorer-schema";
 import { figureBlockSchema, titledTextBlockSchema } from "./blocks/block-schemas";
 import { hotspotSchema, authoredMapSchema } from "./blocks/visual-interactions-schema";
 import type { InteractionState, InteractionTarget } from "./interaction-state";
+import { writtenNoteRole } from "./blocks/written-note";
 
 export type InteractionSource = InteractionTarget & { type: string; config: unknown };
 const record = (input: unknown): Record<string, unknown> => typeof input === "object" && input !== null && !Array.isArray(input) ? input as Record<string, unknown> : {};
@@ -44,6 +45,7 @@ export function validInteractionState(source: InteractionSource, interaction: In
     const state = interaction.state;
     return !state.revealed || [state.protons, state.neutrons, state.electrons].every(value => value.trim() !== "") && atomModelSchema.safeParse({ kind: "atom", protons: Number(state.protons), neutrons: Number(state.neutrons), electrons: Number(state.electrons) }).success;
   }
+  if (source.type === "note") return interaction.kind === "written" && writtenNoteRole(payload) !== undefined && (!interaction.state.checked || interaction.state.response.trim() !== "");
   if (source.type === "figure") return interaction.kind === "comparison" && Boolean(figureBlockSchema.safeParse({ type: "figure", ...payload }).data?.comparison);
   if (source.type === "hotspot" || source.type === "map") {
     const parsed = (source.type === "hotspot" ? hotspotSchema : authoredMapSchema).safeParse({ type: source.type, ...payload });

@@ -13,7 +13,7 @@ test("observes a mistake, records an attributed reflection, retries another Ques
   const firstSubmit = first.getByRole("button", { name: "Enviar resposta", exact: true });
   if (testInfo.project.use.isMobile) await firstSubmit.tap(); else await firstSubmit.press("Enter");
   await expect(first.getByRole("status",{name:"Resultado da resposta"})).toContainText("Ainda não");
-  await page.goto("/mistakes");await expect(page.getByText("Uma tentativa observada",{exact:true})).toBeVisible();await expect(page.getByText(/A resposta incorreta, sozinha, não identifica a causa/)).toBeVisible();
+  await page.goto("/mistakes");await expect(page.getByText("Errou uma vez",{exact:true})).toBeVisible();await expect(page.getByText(/Você errou 1 vez neste assunto/)).toBeVisible();
   await page.getByText("Registrar minha percepção",{exact:true}).click();
   await page.getByRole("combobox",{name:"O que você percebeu?"}).selectOption("calculation_error");
   await page.getByRole("textbox",{name:"Anotação opcional"}).fill("Somei sem conferir.");
@@ -24,6 +24,6 @@ test("observes a mistake, records an attributed reflection, retries another Ques
   await expect(page.getByRole("heading",{name:"Quanto é 2 + 3 nesta fixture?",exact:true})).toHaveCount(0);
   const alternate=page.locator("section.learning-interaction").filter({has:page.getByRole("heading",{name:"Quanto é 3 + 4 nesta fixture?",exact:true})});
   await alternate.getByRole("textbox").fill("7");await alternate.getByRole("button",{name:"Enviar resposta",exact:true}).click();await expect(alternate.getByRole("status",{name:"Resultado da resposta"})).toContainText("Resposta correta");
-  await page.goto("/mistakes");await expect(page.getByText(/1 registro ativo|1 erro ativo/)).toBeVisible();await page.getByText("Registros originais",{exact:true}).click();await expect(page.getByText(/Rever o raciocínio desta questão/)).toBeVisible();
+  await page.goto("/mistakes");await expect(page.getByText(/Falta corrigir 1\./)).toBeVisible();await page.getByText("Ver cada erro",{exact:true}).click();await expect(page.getByText(/· para corrigir/).first()).toBeVisible();
   for(const width of [320,1280]){await page.setViewportSize({width,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:testInfo.outputPath(`mistake-loop-${width}.png`),fullPage:true});}
 });

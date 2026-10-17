@@ -4,7 +4,8 @@ import { AppShell } from "@/components/layout/app-shell";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
 import { listKnowledgeMapConcepts,getKnowledgeMapSnapshot } from "@/features/concepts/knowledge-map-api";
 import { getFeatureFlags } from "@/lib/feature-flags";
-import { KnowledgeMapView } from "@/features/concepts/knowledge-map-view";
+import { KnowledgeMapView } from "@/features/concepts/knowledge-map-view";
+import { studentConceptLabel } from "@/features/concepts/student-label";
 
 export const dynamic = "force-dynamic";
 
@@ -35,7 +36,7 @@ export default async function KnowledgeMapPage() {
                 {focusedConcepts.map((concept) => (
                   <li key={concept.stableId}>
                     <Link href={`/concepts/${concept.stableId}`}>
-                      <strong>{concept.title}</strong>
+                      <strong>{studentConceptLabel(concept.title)}</strong>
                       <span>{concept.summary ?? "Sem resumo."}</span>
                       <small>{formatConceptScope(concept.lessonCount)}</small>
                     </Link>
@@ -54,7 +55,7 @@ export default async function KnowledgeMapPage() {
                 {concepts.map((concept) => (
                   <li key={concept.stableId}>
                     <Link href={`/concepts/${concept.stableId}`}>
-                      <strong>{concept.title}</strong>
+                      <strong>{studentConceptLabel(concept.title)}</strong>
                       <span>{concept.summary ?? "Sem resumo."}</span>
                       <small>{formatConceptScope(concept.lessonCount)}</small>
                     </Link>

@@ -5,7 +5,8 @@ import { AppShell } from "@/components/layout/app-shell";
 import { getConcept } from "@/features/concepts/api";
 import { getFeatureFlags } from "@/lib/feature-flags";
 import { listPublishedAiRelations } from "@/features/ai/concept-relations";
-import { AiActionControl } from "@/features/ai/action-control";
+import { AiActionControl } from "@/features/ai/action-control";
+import { studentConceptLabel } from "@/features/concepts/student-label";
 
 type ConceptPageProps = Readonly<{
   params: Promise<{ conceptId: string }>;
@@ -24,7 +25,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
     <AppShell>
       <article className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="concept-title">
         <p className="eyebrow">Conceito</p>
-        <h1 id="concept-title">{concept.title}</h1>
+        <h1 id="concept-title">{studentConceptLabel(concept.title)}</h1>
         <p>{concept.summary ?? "Sem resumo importado."}</p>
         {relations.length>0&&<section className="module-section" aria-label="Relações curriculares declaradas"><h2>Conceitos que ajudam aqui</h2><p>Estas relações vêm do currículo importado. A IA apenas explica a ligação.</p><ul className="record-list">{relations.map(edge=><li key={edge.prerequisiteConceptId}><div><Link href={`/concepts/${encodeURIComponent(edge.prerequisiteConceptId)}`}>{edge.title}</Link><span>{edge.strength==="required"?"Pré-requisito obrigatório":"Relação recomendada"}</span><AiActionControl label="Explicar esta ligação com IA" spec={{action:"explain_concept_relation",target:{kind:"relation",conceptId,relatedConceptId:edge.prerequisiteConceptId}}}/></div></li>)}</ul></section>}
 
@@ -46,12 +47,11 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
         <section className="module-section" aria-labelledby="concept-mastery-title">
           <h2 id="concept-mastery-title">Domínio</h2>
           <div className="mastery-panel" aria-label="Domínio do conceito">
-            <p className="technical-label">Política {concept.mastery.policyVersion}</p>
             <p className="mastery-score">
               {concept.mastery.label} <span>{concept.mastery.level}/5</span>
             </p>
             <p className="lesson-text">
-              {concept.mastery.evidenceCount} {concept.mastery.evidenceCount === 1 ? "evidência registrada" : "evidências registradas"}. Força total: {concept.mastery.totalStrength}.
+              {concept.mastery.evidenceCount} {concept.mastery.evidenceCount === 1 ? "resposta conta" : "respostas contam"} para este conceito.
             </p>
             <ul>
               {concept.mastery.reasons.map((reason) => (

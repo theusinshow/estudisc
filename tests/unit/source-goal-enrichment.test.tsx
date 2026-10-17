@@ -13,7 +13,7 @@ it.each(["CIE-03","POR-02"] as const)("preserves original absent goals/mappings 
  expect(blueprint.reviewState).toBe("UNREVIEWED");expect(blueprint.learningGoal).toBeNull();expect((preview.newBlocks[0].payload as Record<string,unknown>).content).toContain("Objetivo proposto desta exploração:");
  const packet={schema:"caderno.lesson.v2",packId:`fixture.${id}.source-goal`,version:1,authorId:recipe.authorId,target:{trackId:pack.track.id,trackVersion:pack.version,moduleId:pack.track.modules.find(m=>m.lessons.some(l=>l.id===id))!.id,lessonId:id,baseVersion:source.version,baseHash:recipe.sourceLessonHash},lesson:preview.lesson,questionReferences:preview.questionReferences};
  expect(()=>resolveLessonVersionContext([pack],packet as never)).not.toThrow();
- const block=preview.newBlocks[0];const html=renderToStaticMarkup(<LessonBlockList blocks={[{stableId:block.id,type:block.type,payload:block.payload}]}/>);expect(html).toContain("Objetivo proposto");expect(html).not.toContain("Nota oficial");
+ const block=preview.newBlocks[0];const html=renderToStaticMarkup(<LessonBlockList blocks={[{stableId:block.id,type:block.type,payload:block.payload}]}/>);expect(html).toContain("Objetivo: ");expect(html).not.toContain("Objetivo proposto");expect(html).not.toContain("Nota oficial");
 });
 it("rejects fabricated original goals, source quotes, links, observations and source changes",()=>{
  const {pack,source,recipe,blueprint}=sourceGoalFixture();

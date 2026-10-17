@@ -46,7 +46,8 @@ it.each([
  const packet={schema:'caderno.lesson.v2',packId:`fixture.science-prediction.${id.toLowerCase()}`,version:1,authorId:recipe.authorId,target:{trackId:pack.track.id,trackVersion:pack.version,moduleId:moduleRecord.id,lessonId:id,baseVersion:source.version,baseHash:recipe.sourceLessonHash},lesson:preview.lesson,questionReferences:preview.questionReferences};
  expect(()=>resolveLessonVersionContext([pack],packet as never)).not.toThrow();
  const html=renderToStaticMarkup(<LessonBlockList blocks={[{stableId:addition.id,type:addition.type,payload:addition.payload}]}/>);
- expect(html).toContain('Objetivo proposto desta exploração');
+ // The goal shows as a plain goal; its 'proposed' provenance stays in the pack metadata.
+ expect(html).toContain(`Objetivo: ${recipe.additions[0].proposedGoal}`); expect(html).not.toContain('Objetivo proposto');
  expect(html).toContain(recipe.additions[0].parameters.title);
  expect(hashCanonicalJson(pack)).toBe(before);
 });

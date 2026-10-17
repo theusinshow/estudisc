@@ -25,7 +25,7 @@ function useOpenMistakes() {
 // Formulas are never cut in half.
 const shortStem = (stem: string) => { const text = stem.replace(/\s+/g, " ").trim(); return text.length > 90 && !text.includes("$") ? `${text.slice(0, 87)}…` : text; };
 
-export type LessonStep = { id: string; kind: "intro" | "concept" | "example" | "warning" | "summary" | "check" | "practice" | "exit" | "interaction" | "figure" | "prediction"; label: string; node: ReactNode };
+export type LessonStep = { id: string; kind: "intro" | "concept" | "example" | "warning" | "summary" | "check" | "practice" | "exit" | "interaction" | "reading" | "figure" | "prediction"; label: string; node: ReactNode };
 export type LessonCompletion = Readonly<{ trackHref: string; nextLesson?: Readonly<{ href: string; title: string }> }>;
 
 const DONE_HASH = "#concluida";

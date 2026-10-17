@@ -1,0 +1,19 @@
+{
+  "$comment": "Internal wording that must never reach a student screen. Checked by tests/component/student-copy-blacklist.test.tsx against every draft pack lesson and question as rendered. Everywhere patterns are case-insensitive regular expressions; conceptLabels patterns are case-sensitive.",
+  "everywhere": [
+    { "pattern": "Objetivo proposto desta exploração", "why": "authoring provenance label" },
+    { "pattern": "\\b(mastery|review|gamification)\\.v\\d", "why": "policy version" },
+    { "pattern": "Pol[ií]tica mastery", "why": "policy name" },
+    { "pattern": "For[çc]a total", "why": "internal evidence strength" },
+    { "pattern": "Explica[çc][ãa]o opcional", "why": "internal AI scope label" },
+    { "pattern": "correção explícita de pelo menos", "why": "rubric criterion" },
+    { "pattern": "Resposta curta ou classificação justificada", "why": "authoring response format" },
+    { "pattern": "SOURCE_DERIVED|EXIT_TICKET|ACTIVE_LEARNING|MEDIA_RECOMMENDATION|contentStudio", "why": "editorial metadata" },
+    { "pattern": "\\[object Object\\]|\\bundefined\\b", "why": "rendering bug" }
+  ],
+  "conceptLabels": [
+    { "pattern": "\\bem nível (fundamental|escolar|introdutório|conceitual|básico|essencial|funcional)$", "why": "authoring scope note" },
+    { "pattern": "quando pertinente$", "why": "authoring scope note" },
+    { "pattern": "^[a-zà-ú]", "why": "label must start with a capital letter" }
+  ]
+}

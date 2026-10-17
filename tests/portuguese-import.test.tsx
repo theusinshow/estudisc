@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { LessonBlockList } from "@/features/lessons/blocks";
+import { writtenNoteText } from "@/features/lessons/blocks/written-note";
 import { QuestionPanel } from "@/features/activities/components/question-panel";
 import { studentQuestion } from "@/features/questions/student-view";
 import { canExposeQuestion, evaluateQuestion } from "@/features/questions/api";
@@ -47,13 +48,19 @@ describe("Portuguese editorial integration", () => {
       const markup = renderToStaticMarkup(<LessonBlockList blocks={lesson.blocks.map(block => ({ stableId: block.id, type: block.type, payload: block.payload }))}/>);
       const document = new DOMParser().parseFromString(markup, "text/html");
       expect(document.body.textContent).not.toMatch(/Bloco inválido|Conteúdo inválido|renderer aprovado/);
-      for (const block of lesson.blocks) for (const paragraph of String(block.payload.content).split(/\n\s*\n/)) expect((document.body.textContent ?? "").replace(/\s+/g, "")).toContain(paragraph.replace(/\s+/g, "")); // single line breaks render as separate lines
+      const flat = (document.body.textContent ?? "").replace(/\s+/g, ""), squash = (text: string) => text.replace(/\s+/g, "");
+      for (const block of lesson.blocks) {
+        // Written notes show the prompt before "Conferir" and never the authoring format line.
+        const written = writtenNoteText(block.payload);
+        if (written) { for (const text of written.visible) expect(flat).toContain(squash(text)); for (const text of written.never) expect(flat).not.toContain(squash(text)); continue; }
+        for (const paragraph of String(block.payload.content).split(/\n\s*\n/)) expect(flat).toContain(squash(paragraph)); // single line breaks render as separate lines
+      }
     }
     for (const question of pack.questions) {
       const student = studentQuestion(question);
       const markup = renderToStaticMarkup(<QuestionPanel question={student} activityStableId={`${question.id}-ACT`}/>);
       const document = new DOMParser().parseFromString(markup, "text/html");
-      for (const line of question.stem.split(/\n\s*\n/)) expect(document.body.textContent).toContain(line);
+      for (const line of question.stem.split(/\n\s*\n/)) expect((document.body.textContent ?? "").replace(/\s+/g, "")).toContain(line.replace(/\s+/g, ""));
       for (const choice of question.choices ?? []) {
         expect(document.body.textContent).toContain(choice.content);
         expect(evaluateQuestion(question, choice.id)).toMatchObject({ correct: choice.correct, evidenceEligible: true });

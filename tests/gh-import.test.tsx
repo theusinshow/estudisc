@@ -63,7 +63,7 @@ it("renders unchanged GH text and Questions with core evaluators, without exposi
       const html = renderToStaticMarkup(<QuestionPanel question={student} activityStableId={`${q.id}-ACT`}/>);
       const rendered = new DOMParser().parseFromString(html, "text/html");
       expect(rendered.querySelectorAll('input[type="radio"]')).toHaveLength(5);
-      expect(rendered.body.textContent).toContain(q.stem);
+      expect((rendered.body.textContent ?? "").replace(/\s+/g, "")).toContain(q.stem.replace(/\s+/g, ""));
       for (const option of originalQuestion.options) expect(rendered.body.textContent).toContain(option.text);
     }
   }

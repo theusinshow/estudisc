@@ -138,3 +138,7 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .item-key { display: block; font-size: 0.9em; font-weight: 600; }
 .answer-row .item-key { display: inline; }
 .learning-answer.answer-row[data-key] { outline: 2px solid var(--estudisc-color-ink); outline-offset: 2px; }
+
+/* Pressed link while the next page opens. */
+a[data-pending] { opacity: 0.75; cursor: progress; }
+.link-pending { display: block; font-size: 0.85em; font-weight: 700; }

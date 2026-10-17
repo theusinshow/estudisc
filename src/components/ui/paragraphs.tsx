@@ -22,8 +22,18 @@ export function MathText({ text }: Readonly<{ text: string }>) {
   return <>{renderSegments(parseMathNotation(text))}</>;
 }
 
+/** A line that is only a web address becomes a link that opens in a new tab. */
+function webLink(line: string) {
+  const text = line.trim();
+  if (!/^https?:\/\/\S+$/.test(text)) return null;
+  try { return new URL(text); } catch { return null; }
+}
+function Line({ text }: Readonly<{ text: string }>) {
+  const url = webLink(text);
+  return url ? <a href={url.href} target="_blank" rel="noopener noreferrer">Abrir em {url.hostname.replace(/^www\./, "")} ↗</a> : <MathText text={text} />;
+}
 function Lines({ lines }: Readonly<{ lines: readonly string[] }>) {
-  return <>{lines.flatMap((line, index) => index ? [<br key={`br-${index}`} />, <MathText key={index} text={line} />] : [<MathText key={index} text={line} />])}</>;
+  return <>{lines.flatMap((line, index) => index ? [<br key={`br-${index}`} />, <Line key={index} text={line} />] : [<Line key={index} text={line} />])}</>;
 }
 
 function Paragraph({ text }: Readonly<{ text: string }>) {

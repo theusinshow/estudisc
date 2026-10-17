@@ -36,40 +36,40 @@ export function calculateConceptMastery(evidence: readonly MasteryEvidence[]): C
 
   if (evidence.length === 0) {
     return buildMastery("unseen", totalStrength, evidence.length, [
-      "Nenhuma evidência registrada para este conceito."
+      "Você ainda não respondeu questões deste conceito."
     ]);
   }
 
   if (hasDelayedReview && hasTransferEvidence && totalStrength >= 8 && evidence.length >= 3) {
     return buildMastery("mastered", totalStrength, evidence.length, [
-      "Há revisão espaçada e aplicação em novo contexto.",
-      "A evidência acumulada atingiu o limiar de domínio."
+      "Você revisou em outros dias e aplicou em situações novas.",
+      "Suas respostas mostram que você domina este conceito."
     ]);
   }
 
   if (hasDelayedReview && totalStrength >= 6 && distinctEvidenceTypes.size >= 2) {
     return buildMastery("strong", totalStrength, evidence.length, [
-      "Há revisão espaçada aprovada.",
-      "A evidência vem de mais de um tipo de atividade."
+      "Você acertou numa revisão feita em outro dia.",
+      "Você acertou em mais de um tipo de atividade."
     ]);
   }
 
   if (passedEvidence.length >= 2 || (totalStrength >= 4 && distinctEvidenceTypes.size >= 2)) {
     return buildMastery("practicing", totalStrength, evidence.length, [
-      "Há prática suficiente para acompanhar progresso.",
-      "Ainda falta revisão espaçada ou transferência para domínio completo."
+      "Você já praticou o bastante para ver seu avanço.",
+      "Para dominar, revise em outro dia e aplique em situações novas."
     ]);
   }
 
   if (passedEvidence.length >= 1 || totalStrength >= 2) {
     return buildMastery("understood", totalStrength, evidence.length, [
-      "Há pelo menos uma evidência aprovada.",
-      "Uma evidência imediata não pode marcar o conceito como Mastered."
+      "Você já acertou pelo menos uma vez.",
+      "Um acerto logo depois da aula ainda não basta: volte a revisar em outro dia."
     ]);
   }
 
   return buildMastery("introduced", totalStrength, evidence.length, [
-    "O conceito já apareceu em uma tentativa ou interação.",
+    "Você já começou a praticar este conceito.",
     "Ainda não há evidência aprovada suficiente para compreensão."
   ]);
 }

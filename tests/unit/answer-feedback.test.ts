@@ -28,3 +28,13 @@ describe("question reward", () => {
     expect(questionReward({ ...passed, outcome: "failed" }, 0)).toBeUndefined();
   });
 });
+
+import { splitStem } from "@/features/questions/stem-layout";
+describe("stem layout", () => {
+  it("keeps only the question as heading", () => {
+    expect(splitStem("Analise:\nI. Um.\nII. Dois.\nEstão corretas:")).toEqual({ body: "Analise:\nI. Um.\nII. Dois.", question: "Estão corretas:" });
+    expect(splitStem("Quanto é 2 + 2?")).toEqual({ question: "Quanto é 2 + 2?" });
+    const long = `${"Texto base com várias frases sobre o tema. ".repeat(8)}Qual é a ideia central?`;
+    expect(splitStem(long)).toEqual({ body: long.replace(" Qual é a ideia central?", "").trim(), question: "Qual é a ideia central?" });
+  });
+});

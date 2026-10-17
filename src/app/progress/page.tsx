@@ -10,7 +10,8 @@ import { MasteryGlyph } from "@/features/progress/mastery-glyph";
 import { MasteryLadder } from "@/features/progress/mastery-ladder";
 import { masteryOrder } from "@/features/progress/overview";
 import { AreaBalanceChart, RhythmChart } from "@/features/progress/progress-charts";
-import { ReportCard, RhythmTable } from "@/features/progress/report-card";
+import { ReportCard, RhythmTable } from "@/features/progress/report-card";
+import { studentConceptLabel } from "@/features/concepts/student-label";
 
 export const dynamic = "force-dynamic";
 
@@ -74,7 +75,7 @@ export default async function ProgressPage() {
                   <li key={concept.stableId}>
                     <Link href={`/concepts/${concept.stableId}`} className="memory-item">
                       <span className="memory-title">
-                        <strong>{concept.title}</strong>
+                        <strong>{studentConceptLabel(concept.title)}</strong>
                         <small>
                           <MasteryGlyph level={masteryOrder.indexOf(concept.state)} />
                           {concept.label}

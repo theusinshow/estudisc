@@ -6,6 +6,7 @@ import type { StudentQuestion } from "@/features/questions/student-view";
 import { initialResponse, ResponseFields,type QuestionResponse,type ResponseReview } from "./response-fields";
 import type { AnswerKey, ItemResult } from "@/features/questions/answer-feedback";
 import { QuestionAssets } from "@/features/questions/question-assets";
+import { splitStem } from "@/features/questions/stem-layout";
 import { MathText, Paragraphs } from "@/components/ui/paragraphs";
 import { TutorPanel } from "@/features/questions/tutor-panel";
 import { ATTEMPT_RECORDED_EVENT, type AttemptRecordedDetail } from "@/features/progress/live-progress-summary";
@@ -56,7 +57,8 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
   }
   const result=feedback?(feedback.attemptId?(feedback.correct?"correct":"incorrect"):"solution"):null;
   const solutionShown=result==="solution";
-  return <section className="learning-interaction question-sheet" aria-labelledby={`${id}-title`} onKeyDown={pickByKey}>{question.stimulus&&<div className="question-stimulus"><Paragraphs text={question.stimulus}/></div>}<h3 id={`${id}-title`}><MathText text={question.stem}/></h3>
+  const stem=splitStem(question.stem);
+  return <section className="learning-interaction question-sheet" aria-labelledby={`${id}-title`} onKeyDown={pickByKey}>{question.stimulus&&<div className="question-stimulus"><Paragraphs text={question.stimulus}/></div>}{stem.body&&<div className="question-stem-body"><Paragraphs text={stem.body}/></div>}<h3 id={`${id}-title`}><MathText text={stem.question}/></h3>
     <QuestionAssets assets={question.assets}/>
     <form onSubmit={event=>{event.preventDefault();void send("submit");}}><ResponseFields id={id} question={question} response={response} disabled={busy} review={reviewOf(question,feedback)} onChange={value=>{const submissionKey=crypto.randomUUID();setResponse(value);setFeedback(null);setKey(submissionKey);resume?.setDraft({activityId:activityStableId,questionId:question.id,questionVersion:question.version,response:value,submissionKey,baseAttemptId},activityStableId);}} /><button className="primary-button" disabled={busy||feedback?.correct===true} type="submit">{busy?"Registrando…":feedback?.correct?"Resposta registrada":"Enviar resposta"}</button></form>
     {/* The live wrapper exists before any answer, so screen readers announce the stamp when it appears. */}
@@ -83,6 +85,7 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
     </div>}
     {error&&<p role="alert">{error}</p>}
     {feedback&&<p className="question-report"><Link href={`/suporte?erro=${encodeURIComponent(`${question.id} v${question.version}`)}`}>Achou um erro nesta questão? Avise</Link></p>}
-    <TutorPanel activityId={activityStableId} questionId={question.id} questionVersion={question.version} sessionId={sessionId} enhanced={aiEnabled}/>
+    {/* Only offered when a provider is actually available. */}
+    {aiEnabled&&<TutorPanel activityId={activityStableId} questionId={question.id} questionVersion={question.version} sessionId={sessionId} enhanced/>}
   </section>;
 }

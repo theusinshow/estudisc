@@ -12,7 +12,8 @@ export const interactionStateSchema = z.discriminatedUnion("kind", [
   z.object({ ...target, kind: z.literal("atom"), state: z.object({ protons: z.string().max(64), neutrons: z.string().max(64), electrons: z.string().max(64), prediction: z.string().max(64), revealed: z.boolean() }).strict() }).strict(),
   z.object({ ...target, kind: z.literal("comparison"), state: z.object({ position: z.number().int().min(0).max(100) }).strict() }).strict(),
   z.object({ ...target, kind: z.literal("hotspot"), state: z.object({ selectedId: id.nullable(), zoom: z.number().min(1).max(3).multipleOf(0.25) }).strict() }).strict(),
-  z.object({ ...target, kind: z.literal("map"), state: z.object({ selectedId: id.nullable() }).strict() }).strict()
+  z.object({ ...target, kind: z.literal("map"), state: z.object({ selectedId: id.nullable() }).strict() }).strict(),
+  z.object({ ...target, kind: z.literal("written"), state: z.object({ response: text, checked: z.boolean() }).strict() }).strict()
 ]);
 export type InteractionState = z.infer<typeof interactionStateSchema>;
 export type InteractionKind = InteractionState["kind"];

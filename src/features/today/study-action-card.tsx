@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PendingAnchor } from "@/components/navigation/pending-anchor";
 import { ArrowRight } from "lucide-react";
 
 export type StudyActionVariant = "review" | "continue" | "lesson" | "practice" | "quick-review" | "simulation" | "project";
@@ -17,7 +18,7 @@ export function StudyActionCard({ variant, title, reason, href, estimatedMinutes
   /** Presentation only: colors the identification tab of the subject. */
   subjectCode?: string;
 }>) {
-  const ActionLink = href.startsWith("/study/") ? "a" : Link;
+  const ActionLink = href.startsWith("/study/") ? PendingAnchor : Link;
   return <ActionLink className="next-card study-action-card" data-kind={variant} data-subject={subjectCode} href={href}>
     <strong>{title}</strong><span>{reason}</span>
     {(activityCount !== undefined || estimatedMinutes !== undefined) && <span className="study-action-metadata">
