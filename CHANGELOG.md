@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-17 — Vibrante theme for everyone and tab navigation (ADR 0069)
+
+- Theme: vibrante (lime frame, white sheets, ink outlines, one color per subject, Archivo heavy) is the default for all users; pill buttons, fields, checkbox/radio and blue focus come from the theme; buttons may wrap so nothing overflows at 320 px.
+- Navigation (mobile-first): Hoje · Estudar · (▶ Continuar) · Provas · Você. `/continuar` resolves on tap (unfinished lesson, then due reviews, then next lesson). New hubs `/provas` (mock + past exams) and `/voce` (progress, study tools, account, admin). The "Mais" menu and profile sheet are removed; the shell no longer reads the profile per page.
+- The bar hides while typing and returns 250 ms after focus leaves, and sticky lesson controls sit above the raised central button.
+- Design lab: catalog of nine blocks (foundations to interactive learning ideas), contrast report; theme toggle removed now that the theme is the default.
+
 ## 2026-10-17 — Accounts, passwordless e-mail sign-in and sign-up (ADR 0068)
 
 - New additive tables `user_accounts`, `account_identities` and `email_login_codes` (migration 0023), keyed by the existing `ownerId`, so learning state is never rewritten.
