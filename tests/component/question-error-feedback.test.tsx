@@ -49,3 +49,14 @@ it("marks each pair of a matching question and labels a recovered success apart 
   await user.click(screen.getByRole("button", { name: "Enviar resposta" }));
   expect(await screen.findByRole("status", { name: "Recompensas de estudo" })).toHaveTextContent("+10 XP · Acertou depois de revisar.");
 });
+
+it("shows no shouted REVISE stamp on a wrong answer inside the lesson", async () => {
+  const question = studentQuestion(questionSchema.parse({ ...source.questions[0], type: "multiple_choice", choices: [{ id: "a", content: "Um", correct: false }, { id: "b", content: "Dois", correct: true }], answer: { kind: "multiple_choice", choiceId: "b" } }));
+  vi.stubGlobal("fetch", vi.fn().mockReturnValueOnce(reply({ attemptId: "1", correct: false, solutionShown: false, xpAwarded: 0 })));
+  const user = userEvent.setup();
+  const { container } = render(<QuestionPanel question={question} activityStableId="activity" />);
+  await user.click(screen.getByRole("radio", { name: /Um/ }));
+  await user.click(screen.getByRole("button", { name: "Enviar resposta" }));
+  expect(await screen.findByRole("status", { name: "Resultado da resposta" })).toHaveTextContent("Ainda não");
+  expect(container.querySelector(".answer-stamp")).toBeNull();
+});
