@@ -27,3 +27,9 @@ Identities live only in configuration: code accounts in `ESTUDISC_ACCOUNTS` (ADR
 - E-mail delivery is a new external dependency (Resend, via `fetch`, no SDK). Without `RESEND_API_KEY` production refuses to send; development and tests use an in-memory outbox.
 - Rate limits for sending codes are per e-mail and per IP, in memory per instance (as ADR 0031), plus the per-code attempt cap stored in the database.
 - The guardian declaration is weaker than verified parental consent; it is recorded so the product can move to verified consent later without losing history.
+
+## Amendment — consolidation (2026-10-17)
+
+- A parallel, smaller implementation (email-as-identity, Auth.js Credentials, Postgres rate limits) briefly landed on `main` under the same number and was reverted in favour of this ADR, because account records are needed for terms/guardian evidence, revocation and linking code profiles.
+- The e-mail forms (sign-in, sign-up, link in `/conta`) render only when a sender can deliver: Resend in production (`isEmailDeliveryAvailable`), the in-memory outbox elsewhere. Deploying without `RESEND_API_KEY` therefore changes nothing for visitors.
+- Known limit kept on purpose: the per-IP send cap is in memory. Production runs one Railway instance, so it behaves as a global cap; move it to Postgres before scaling out. The per-e-mail cap and per-code attempts are already in the database.

@@ -33,6 +33,11 @@ export class MemoryEmailSender implements EmailSender {
   }
 }
 
+/** E-mail codes can actually be sent: Resend in production, the in-memory outbox elsewhere. Hides the forms otherwise. */
+export function isEmailDeliveryAvailable(env: Readonly<{ RESEND_API_KEY?: string }>, production = process.env.NODE_ENV === "production") {
+  return Boolean(env.RESEND_API_KEY) || !production;
+}
+
 export function createEmailSender(env: Readonly<{ RESEND_API_KEY?: string; EMAIL_FROM?: string }>, production = process.env.NODE_ENV === "production"): EmailSender {
   if (env.RESEND_API_KEY) return new ResendEmailSender(env.RESEND_API_KEY, env.EMAIL_FROM ?? "Estudisc <acesso@estudisc.com.br>");
   if (production) return { async send() { throw new EmailUnavailableError(); } };

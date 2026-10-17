@@ -4,6 +4,7 @@ import { BrandLockup } from "@/components/brand/brand-lockup";
 import { getDatabaseUrl } from "@/db/connection";
 import { SignupForm } from "@/features/auth/email-account-forms";
 import { getServerEnv } from "@/lib/env";
+import { isEmailDeliveryAvailable } from "@/features/auth/email-delivery";
 
 export const metadata: Metadata = { title: "Criar conta — Estudisc" };
 export const dynamic = "force-dynamic";
@@ -11,13 +12,13 @@ export const dynamic = "force-dynamic";
 /** Self-service sign-up (ADR 0068), shown only with FEATURE_OPEN_SIGNUP. */
 export default async function SignupPage({ searchParams }: Readonly<{ searchParams?: Promise<{ email?: string }> }>) {
   const env = getServerEnv();
-  const open = Boolean(env.FEATURE_OPEN_SIGNUP && env.AUTH_SECRET && getDatabaseUrl());
+  const open = Boolean(env.FEATURE_OPEN_SIGNUP && env.AUTH_SECRET && getDatabaseUrl() && isEmailDeliveryAvailable(env));
   const email = (await searchParams)?.email?.slice(0, 254) ?? "";
   return (
     <main className="auth-surface" aria-labelledby="signup-title">
       <section className="auth-panel">
         <div className="auth-panel-header">
-          <BrandLockup priority />
+          <BrandLockup />
           <p className="auth-kicker">Criar conta</p>
         </div>
         <div className="auth-copy">

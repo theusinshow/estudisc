@@ -5,6 +5,7 @@ import { LinkEmailForm } from "@/features/auth/email-account-forms";
 import { getOwnerProfile } from "@/features/auth/owner";
 import { getServerEnv } from "@/lib/env";
 import { getDatabaseUrl } from "@/db/connection";
+import { isEmailDeliveryAvailable } from "@/features/auth/email-delivery";
 
 export const metadata: Metadata = { title: "Minha conta — Estudisc" };
 export const dynamic = "force-dynamic";
@@ -12,7 +13,7 @@ export const dynamic = "force-dynamic";
 /** ADR 0068: who is signed in and, for code profiles, linking an e-mail to keep the same progress. */
 export default async function AccountPage() {
   const profile = await getOwnerProfile();
-  const emailReady = Boolean(getServerEnv().AUTH_SECRET && getDatabaseUrl());
+  const emailReady = Boolean(getServerEnv().AUTH_SECRET && getDatabaseUrl() && isEmailDeliveryAvailable(getServerEnv()));
   const account = emailReady ? await getAccountStore().findById(profile.ownerId) : null;
   const email = account?.email ?? profile.email ?? null;
   return (

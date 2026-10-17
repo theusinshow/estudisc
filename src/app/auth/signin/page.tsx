@@ -11,6 +11,7 @@ import { AccountSignIn } from "@/features/auth/account-sign-in";
 import { GoogleSubmitButton } from "@/features/auth/google-submit-button";
 import { daysUntilExam, examCountdownLabel } from "@/features/public-site/countdown";
 import { accessLastDay } from "@/features/public-site/content-summary";
+import { isEmailDeliveryAvailable } from "@/features/auth/email-delivery";
 
 type SignInPageProps = {
   searchParams?: Promise<{
@@ -73,8 +74,8 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
   const accountConfig = getAccountConfig(env);
   const hybrid = isHybridSignIn(env);
   const withCallback = (extra: Record<string, string>) => `/auth/signin?${new URLSearchParams({ callbackUrl, ...extra })}`;
-  // ADR 0068: e-mail sign-in needs the session secret and a database.
-  const emailSignIn = Boolean(env.AUTH_SECRET && getDatabaseUrl());
+  // ADR 0068: e-mail sign-in needs the session secret, a database and a working e-mail sender.
+  const emailSignIn = Boolean(env.AUTH_SECRET && getDatabaseUrl() && isEmailDeliveryAvailable(env));
   const signupOpen = emailSignIn && env.FEATURE_OPEN_SIGNUP;
 
   if (accountConfig && (!hybrid || params?.perfil === "1")) {
