@@ -6,6 +6,7 @@
 - Classification and matching: tap a piece, then its box (the piece flies in; tap it to send it back). Long sentences or more than six items switch to one card per item with the destinations as pills. Scored and practice activities share both renderers; the "every item placed" rule is kept.
 - Evidence highlight (text-highlight): passages are marked like a marker pen; extra picks turn pink and right picks green after checking.
 - Phones: the lesson sheet has less side padding so activities keep a readable width.
+- Content (draft, not yet published): batch `f5a-20261017` with 10 hand-written practice interactions for MAT-03/04/06/07/13 (solution steps, percent/fraction sorting, equation modelling, direct vs inverse) and sentence building for POR-09 (direct order) and POR-12 (passive voice). `scripts/release-interactions.mts` previews by default and, with `--publish`, appends each next lesson version and activates it through Admin Direct; lessons that already have interactions continue the INT numbering.
 
 ## 2026-10-17 — Study tools and app interactions (ADR 0069, F3–F4)
 

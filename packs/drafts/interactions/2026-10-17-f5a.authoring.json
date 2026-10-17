@@ -1,0 +1,218 @@
+{
+  "batchId": "f5a-20261017",
+  "note": "Hand-written practice interactions (ADR 0063 builder). Ordering items are listed in the correct order; the builder scrambles them. Provenance: generated (authored in-session), not official IFSC questions. Portuguese entries are only sentence-building orderings, a format those lessons did not have yet.",
+  "interactions": [
+    {
+      "lessonId": "MAT-07",
+      "type": "ordering",
+      "conceptId": "MAT.PCT.DISCOUNT",
+      "difficulty": "direct",
+      "stimulus": "Uma blusa custa R$ 80,00 e está com 15% de desconto.",
+      "stem": "Ordene os passos para encontrar o preço final da blusa.",
+      "items": [
+        "Escrever 15% como 15/100 = 0,15",
+        "Calcular o desconto: 0,15 × 80 = 12",
+        "Tirar o desconto do preço: 80 − 12 = 68",
+        "Responder: o preço final é R$ 68,00"
+      ],
+      "explanation": "Primeiro a porcentagem vira número (0,15), depois calculamos quanto vale o desconto (R$ 12,00) e só então tiramos esse valor do preço original. Atalho equivalente: com 15% de desconto você paga 85%, e 0,85 × 80 = 68."
+    },
+    {
+      "lessonId": "MAT-07",
+      "type": "classification",
+      "conceptId": "MAT.PCT.CONVERT",
+      "difficulty": "foundation",
+      "stem": "Coloque cada fração ou decimal na porcentagem que ele representa.",
+      "items": [
+        "1/4",
+        "0,5",
+        "3/4",
+        "0,25",
+        "2/4",
+        "0,75"
+      ],
+      "destinations": [
+        "25%",
+        "50%",
+        "75%"
+      ],
+      "answer": {
+        "1/4": "25%",
+        "0,5": "50%",
+        "3/4": "75%",
+        "0,25": "25%",
+        "2/4": "50%",
+        "0,75": "75%"
+      },
+      "explanation": "Porcentagem é parte de 100: 1/4 = 25/100 = 0,25 = 25%; 2/4 = 1/2 = 0,5 = 50%; 3/4 = 75/100 = 0,75 = 75%. Escritas diferentes podem representar a mesma porcentagem."
+    },
+    {
+      "lessonId": "MAT-13",
+      "type": "ordering",
+      "conceptId": "MAT.EQ1.SOLVE",
+      "difficulty": "direct",
+      "stem": "Ordene os passos para resolver a equação 3x + 5 = 20.",
+      "items": [
+        "Subtrair 5 dos dois lados: 3x = 15",
+        "Dividir os dois lados por 3: x = 5",
+        "Conferir: 3 · 5 + 5 = 15 + 5 = 20",
+        "Responder: a solução é x = 5"
+      ],
+      "explanation": "Para isolar x, desfazemos as operações na ordem inversa: primeiro tiramos o + 5 (subtraindo 5 dos dois lados), depois desfazemos a multiplicação por 3 (dividindo os dois lados por 3). Conferir na equação original mostra que x = 5 torna a igualdade verdadeira."
+    },
+    {
+      "lessonId": "MAT-13",
+      "type": "matching",
+      "conceptId": "MAT.EQ1.MODEL",
+      "difficulty": "direct",
+      "stem": "Relacione cada frase à equação que a representa.",
+      "items": [
+        "O dobro de um número mais 3 é 11",
+        "Um número menos 4 é igual a 10",
+        "O triplo de um número é 18",
+        "A metade de um número é 7"
+      ],
+      "destinations": [
+        "2x + 3 = 11",
+        "x − 4 = 10",
+        "3x = 18",
+        "x/2 = 7"
+      ],
+      "answer": {
+        "O dobro de um número mais 3 é 11": "2x + 3 = 11",
+        "Um número menos 4 é igual a 10": "x − 4 = 10",
+        "O triplo de um número é 18": "3x = 18",
+        "A metade de um número é 7": "x/2 = 7"
+      },
+      "explanation": "“Dobro” e “triplo” multiplicam o número (2x e 3x), “metade” divide por 2 (x/2), “mais” e “menos” somam ou subtraem, e o “é” vira o sinal de igual."
+    },
+    {
+      "lessonId": "MAT-06",
+      "type": "classification",
+      "conceptId": "MAT.RULE3.IDENTIFY",
+      "difficulty": "direct",
+      "stem": "Classifique cada par de grandezas como diretamente ou inversamente proporcionais.",
+      "items": [
+        "Quantidade de pães comprados e valor pago",
+        "Velocidade do carro e tempo de viagem no mesmo trajeto",
+        "Número de pedreiros e dias para erguer o mesmo muro",
+        "Litros de gasolina e distância que o carro percorre",
+        "Torneiras iguais abertas e tempo para encher a mesma caixa",
+        "Horas trabalhadas e valor recebido, pago por hora"
+      ],
+      "destinations": [
+        "Diretamente proporcionais",
+        "Inversamente proporcionais"
+      ],
+      "answer": {
+        "Quantidade de pães comprados e valor pago": "Diretamente proporcionais",
+        "Velocidade do carro e tempo de viagem no mesmo trajeto": "Inversamente proporcionais",
+        "Número de pedreiros e dias para erguer o mesmo muro": "Inversamente proporcionais",
+        "Litros de gasolina e distância que o carro percorre": "Diretamente proporcionais",
+        "Torneiras iguais abertas e tempo para encher a mesma caixa": "Inversamente proporcionais",
+        "Horas trabalhadas e valor recebido, pago por hora": "Diretamente proporcionais"
+      },
+      "explanation": "Pergunte: se eu dobrar uma grandeza, o que acontece com a outra? Diretas dobram juntas (o dobro de pães custa o dobro). Inversas fazem o contrário: com o dobro de pedreiros, o mesmo muro fica pronto na metade dos dias."
+    },
+    {
+      "lessonId": "MAT-06",
+      "type": "ordering",
+      "conceptId": "MAT.RULE3.DIRECT",
+      "difficulty": "direct",
+      "stimulus": "3 kg de arroz custam R$ 18,00.",
+      "stem": "Ordene os passos para descobrir quanto custam 5 kg do mesmo arroz.",
+      "items": [
+        "Organizar: 3 kg custam 18 reais; 5 kg custam x",
+        "Decidir: mais quilos, mais reais, então é direta",
+        "Multiplicar cruzado: 3 · x = 5 · 18",
+        "Resolver: x = 90 ÷ 3 = 30, ou seja, R$ 30,00"
+      ],
+      "explanation": "Na regra de três, primeiro organizamos as grandezas e depois decidimos se a relação é direta ou inversa, porque isso define como montar a conta. Sendo direta, multiplicamos cruzado: 3x = 90 e x = 30."
+    },
+    {
+      "lessonId": "MAT-03",
+      "type": "classification",
+      "conceptId": "MAT.FRACTION.COMPARE",
+      "difficulty": "direct",
+      "stem": "Compare cada fração com 1/2.",
+      "items": [
+        "2/5",
+        "3/6",
+        "5/8",
+        "4/8",
+        "1/3",
+        "7/10"
+      ],
+      "destinations": [
+        "Menor que 1/2",
+        "Igual a 1/2",
+        "Maior que 1/2"
+      ],
+      "answer": {
+        "2/5": "Menor que 1/2",
+        "3/6": "Igual a 1/2",
+        "5/8": "Maior que 1/2",
+        "4/8": "Igual a 1/2",
+        "1/3": "Menor que 1/2",
+        "7/10": "Maior que 1/2"
+      },
+      "explanation": "Compare o numerador com a metade do denominador. Em 5/8, a metade de 8 é 4 e 5 é maior que 4, então 5/8 > 1/2. Em 2/5, a metade de 5 é 2,5 e 2 é menor, então 2/5 < 1/2. Em 3/6 e 4/8, o numerador é exatamente a metade do denominador."
+    },
+    {
+      "lessonId": "MAT-04",
+      "type": "matching",
+      "conceptId": "MAT.FRACTION.DECIMAL.CONVERT",
+      "difficulty": "foundation",
+      "stem": "Relacione cada fração ao número decimal equivalente.",
+      "items": [
+        "1/2",
+        "1/5",
+        "3/4",
+        "1/8"
+      ],
+      "destinations": [
+        "0,5",
+        "0,2",
+        "0,75",
+        "0,125"
+      ],
+      "answer": {
+        "1/2": "0,5",
+        "1/5": "0,2",
+        "3/4": "0,75",
+        "1/8": "0,125"
+      },
+      "explanation": "Divida o numerador pelo denominador: 1 ÷ 2 = 0,5; 1 ÷ 5 = 0,2; 3 ÷ 4 = 0,75; 1 ÷ 8 = 0,125. Outra saída é buscar denominador 10, 100 ou 1000: 1/5 = 2/10 = 0,2."
+    },
+    {
+      "lessonId": "POR-09",
+      "type": "ordering",
+      "conceptId": "por.por-09-c06.v1",
+      "difficulty": "foundation",
+      "stem": "Monte a frase na ordem direta: sujeito, verbo, objeto direto, objeto indireto e, por fim, o adjunto adverbial de tempo.",
+      "items": [
+        "Os alunos",
+        "entregaram",
+        "o trabalho",
+        "ao professor",
+        "na sexta-feira"
+      ],
+      "explanation": "Na ordem direta, o sujeito (Os alunos) vem antes do verbo (entregaram). Depois vêm os complementos: primeiro o objeto direto, sem preposição (o trabalho), e então o objeto indireto, com preposição (ao professor). O adjunto adverbial de tempo (na sexta-feira) fecha a frase."
+    },
+    {
+      "lessonId": "POR-12",
+      "type": "ordering",
+      "conceptId": "por.por-12-c02.v1",
+      "difficulty": "direct",
+      "stimulus": "Voz ativa: A avó preparou o bolo na véspera.",
+      "stem": "Monte a mesma informação na voz passiva analítica, na ordem direta: sujeito paciente, locução verbal, agente da passiva e adjunto de tempo.",
+      "items": [
+        "O bolo",
+        "foi preparado",
+        "pela avó",
+        "na véspera"
+      ],
+      "explanation": "Na passiva analítica, o objeto direto da ativa (o bolo) vira sujeito paciente; o verbo vira locução com ser + particípio (foi preparado), no mesmo tempo da ativa; quem praticou a ação vira agente da passiva, introduzido por “por” (pela avó). O adjunto de tempo (na véspera) não muda de função."
+    }
+  ]
+}

@@ -89,10 +89,14 @@ export function appendInteractions(input: {
   const taken = new Set([...context.questions.map(question => question.id), ...base.activities.map(activity => activity.id)]);
   const lesson = structuredClone({ ...base, version: base.version + 1, status: "draft" as const });
   const fresh: Question[] = [];
+  // A lesson that already received interactions continues the numbering instead of colliding with them.
+  const prefix = `${base.id}-INT-`;
+  const used = [...taken].filter(id => id.startsWith(prefix)).map(id => Number(id.slice(prefix.length).replace(/^(Q|ACT)/, ""))).filter(Number.isInteger);
+  const offset = used.length ? Math.max(...used) : 0;
   input.authored.forEach((authored, index) => {
     if (authored.lessonId !== base.id) throw new Error(`Interaction for ${authored.lessonId} given to ${base.id}`);
     if (!concepts.has(authored.conceptId)) throw new Error(`${authored.conceptId} is not a Concept of ${base.id}`);
-    const n = String(index + 1).padStart(2, "0");
+    const n = String(offset + index + 1).padStart(2, "0");
     const questionId = `${base.id}-INT-Q${n}`, activityId = `${base.id}-INT-ACT${n}`;
     if (taken.has(questionId) || taken.has(activityId)) throw new Error(`${questionId} or ${activityId} already exists`);
     const question = buildInteractionQuestion(authored, { questionId, subjectCode, generationRunId: input.generationRunId });
