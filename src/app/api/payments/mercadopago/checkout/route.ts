@@ -10,6 +10,7 @@ import {
   parseExternalReference
 } from "@/features/payments/mercadopago";
 import { getServerEnv } from "@/lib/env";
+import { logFunnelEvent } from "@/lib/funnel-events";
 
 const checkoutBodySchema = z
   .object({
@@ -25,6 +26,7 @@ export async function POST(request: NextRequest) {
     const access = await resolveAccessState(profile, env);
 
     if (access.hasFullAccess) {
+      logFunnelEvent("checkout_started", { status: "already_entitled" });
       return NextResponse.json(
         { alreadyEntitled: true, checkoutUrl: "/plan", sandboxMode: false },
         { status: 200 }
@@ -69,6 +71,7 @@ export async function POST(request: NextRequest) {
       accessToken: env.MERCADOPAGO_ACCESS_TOKEN
     });
 
+    logFunnelEvent("checkout_started", { status: preference.sandboxMode ? "sandbox" : "created" });
     return NextResponse.json(
       {
         alreadyEntitled: false,
@@ -84,6 +87,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ code: "access_denied", message: "Entre com sua conta para continuar." }, { status: 403 });
     }
     if (error instanceof MercadoPagoError) {
+      logFunnelEvent("checkout_failed", { reasonCode: error.code });
       const status = error.code === "not_configured" ? 503 : 502;
       return NextResponse.json({ code: error.code, message: error.message }, { status });
     }

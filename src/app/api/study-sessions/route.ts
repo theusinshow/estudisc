@@ -6,6 +6,7 @@ import { SessionStateError } from "@/db/repositories/study-session-repository";
 import { RoutineConflictError } from "@/features/study-sessions/routine-contracts";
 import { getFeatureFlags } from "@/lib/feature-flags";
 import { OpenSessionError, TargetedPracticeError } from "@/features/study-sessions/targeted-selection";
+import { denyWithoutFullAccess } from "@/features/payments/activity-access";
 const retrievalBudget=z.union([z.literal(10),z.literal(15)]);
 const requestSchema=z.discriminatedUnion("action",[
   z.object({action:z.literal("plan"),budgetMinutes:z.union([z.literal(10),z.literal(15),z.literal(20),z.literal(30),z.literal(45),z.literal(60)])}).strict(),
@@ -19,6 +20,8 @@ export async function POST(request:Request){
   if((input.data.action==="quick_review"||input.data.action==="practice_mistake")&&!getFeatureFlags().FEATURE_SMART_MISTAKES)return NextResponse.json({code:"feature_disabled"},{status:404});
   try{
     const ownerId=await getOwnerId(),repo=studySessionRepository(),data=input.data;
+    // Free preview (ADR 0061 §3): planning a new session needs full access; existing sessions can still be started, finished or abandoned.
+    if(data.action==="plan"||data.action==="quick_review"||data.action==="practice_mistake"){const denied=await denyWithoutFullAccess("As sessões de estudo adaptativas fazem parte do acesso completo do Estudisc.","study_session");if(denied)return denied;}
     const session=data.action==="plan"?await repo.plan(ownerId,data.budgetMinutes)
       :data.action==="quick_review"?await repo.plan(ownerId,data.budgetMinutes,new Date(),{kind:"review",conceptId:data.conceptId,startNew:data.startNew})
       :data.action==="practice_mistake"?await repo.plan(ownerId,data.budgetMinutes,new Date(),{kind:"remediation",mistakeId:data.mistakeId,startNew:data.startNew})

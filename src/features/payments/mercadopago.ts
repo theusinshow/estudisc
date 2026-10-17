@@ -1,5 +1,7 @@
 import { createHmac, randomUUID, timingSafeEqual } from "node:crypto";
 import { z } from "zod";
+import { logEvent } from "@/lib/logger";
+import { logFunnelEvent } from "@/lib/funnel-events";
 import { getEntitlementRepository, type EntitlementRepository } from "@/db/repositories/entitlement-repository";
 import {
   LIFETIME_CURRENCY,
@@ -259,6 +261,13 @@ export async function processMercadoPagoWebhook(params: {
       );
     }
 
+    // A second approved payment for an owner who already has access (e.g. two Pix codes paid) is still
+    // recorded, but flagged for a manual refund; refunds are never automated.
+    const prior = await repo.hasActiveEntitlement(reference.ownerId, params.now ?? new Date(), reference.productId);
+    if (prior.active && prior.latest?.providerPaymentId && prior.latest.providerPaymentId !== payment.id) {
+      logEvent("warn", "mercadopago_duplicate_payment", { providerPaymentId: payment.id, reasonCode: "refund_review_required" });
+    }
+
     const { record, created } = await repo.appendEntitlement({
       ownerId: reference.ownerId,
       productId: reference.productId,
@@ -276,6 +285,7 @@ export async function processMercadoPagoWebhook(params: {
       },
       createdAt: params.now ?? new Date()
     });
+    if (created) logFunnelEvent("entitlement_granted", { source: "mercadopago" });
     return { action: "granted", created, record };
   }
 

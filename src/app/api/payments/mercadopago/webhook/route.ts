@@ -9,6 +9,11 @@ export async function POST(request: NextRequest) {
     | { type?: string; action?: string; data?: { id?: string | number }; id?: string | number }
     | null;
 
+  // Only payment notifications carry a payment id; merchant_order and other topics would fail the payment lookup and be retried forever.
+  const topic = body?.type ?? request.nextUrl.searchParams.get("type") ?? request.nextUrl.searchParams.get("topic");
+  if (topic && topic !== "payment") {
+    return NextResponse.json({ ok: true, action: "ignored" }, { status: 200 });
+  }
   const queryDataId = request.nextUrl.searchParams.get("data.id") ?? request.nextUrl.searchParams.get("id");
   const bodyDataId = body?.data?.id !== undefined ? String(body.data.id) : body?.id !== undefined ? String(body.id) : null;
   const dataId = queryDataId ?? bodyDataId;
@@ -27,7 +32,7 @@ export async function POST(request: NextRequest) {
     });
 
     logEvent("info", "mercadopago_webhook_processed", {
-      dataId,
+      providerPaymentId: dataId,
       action: result.action,
       created: result.action === "ignored" ? false : result.created
     });
@@ -35,7 +40,12 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ ok: true, action: result.action }, { status: 200 });
   } catch (error) {
     if (error instanceof MercadoPagoError) {
-      logEvent("warn", "mercadopago_webhook_rejected", { dataId, reasonCode: error.code });
+      logEvent("warn", "mercadopago_webhook_rejected", { providerPaymentId: dataId, reasonCode: error.code });
+      // A payment that will never match (wrong amount/currency or a foreign reference) is acknowledged so
+      // Mercado Pago stops retrying; the warning above is the alert for manual reconciliation.
+      if (error.code === "amount_mismatch" || error.code === "invalid_reference") {
+        return NextResponse.json({ ok: true, action: "ignored", reasonCode: error.code }, { status: 200 });
+      }
       const status =
         error.code === "invalid_signature"
           ? 401

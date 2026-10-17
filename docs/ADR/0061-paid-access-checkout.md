@@ -54,3 +54,12 @@ The owner confirmed that a single payment of R$ 50 gives access **until the end 
 - 2026-10-16: `/suporte` and `/pais-e-escolas` joined `PUBLIC_SITE_PATHS`; `robots.txt`, `sitemap.xml` and `/opengraph-image*` are public so crawlers and link previews work without a session.
 
 - 2026-10-16: free sample lessons changed to the most interactive published lesson per subject (read-only production audit of interactive blocks and activities): `MAT-07` Porcentagem (numeric explorer + guided steps), `CIE-01` Movimento (prediction), `POR-03` Inferência (prediction), `GH-51` Fusos horários (worked calculations; no Geography/History lesson has interactive blocks yet).
+
+## Amendment — enforcement and first run (2026-10-17)
+
+- Full access is now checked in the APIs too, not only on the lesson page: the legacy `/api/tutor` route (it reached the AI provider without the check), planning a study session (`plan`, `quick_review`, `practice_mistake`; starting or closing an existing session stays open) and answering a question whose activity belongs to a lesson outside the free sample. Locked requests answer 403 `paid_access_required`.
+- A signed-in account without full access sees a free-preview home on `/` and `/plan` (Diagnostic, the four sample lessons, price one click away) instead of session controls it cannot use. "Começar agora" on `/conheca` now returns to `/` after sign-in; "Criar conta e comprar" still goes to `/upgrade`.
+- Webhook: non-payment topics and payments that can never match (`amount_mismatch`, `invalid_reference`) are acknowledged with 200 so Mercado Pago stops retrying; the warning log is the reconciliation alert. A second approved payment for an owner with active access is recorded and logged as `mercadopago_duplicate_payment` for a manual refund; refunds are not automated.
+- The payment-confirmation page polls every 3 s for a minute, then every 10 s, and stops after 10 minutes with a message that the student can come back; it tells the student not to generate a second Pix.
+- Funnel events and queries: [docs/29-CONVERSION-FUNNEL.md](../29-CONVERSION-FUNNEL.md).
+

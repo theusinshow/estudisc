@@ -4,11 +4,14 @@ import { getOwnerId } from "@/features/auth/owner";
 import { aiRequestSchema } from "@/features/ai/contracts";
 import { executeLearningAi } from "@/features/ai/server";
 import { aiHttpError } from "@/features/ai/http-errors";
+import { denyWithoutFullAccess } from "@/features/payments/activity-access";
 
 const inputSchema=z.object({activityId:z.string().min(1).max(160),questionId:z.string().min(1).max(160),questionVersion:z.number().int().positive(),sessionId:z.uuid().optional(),mode:z.enum(["SOCRATIC","EXPLAIN","REVIEW","QUESTION_HELP"]),message:z.string().trim().min(1).max(1000)}).strict();
 /** Legacy requests share owner/context/usage controls; no bypass route. */
 export async function POST(request:Request){try{
-  const owner=await getOwnerId(),raw=await request.text();
+  const owner=await getOwnerId();
+  const denied=await denyWithoutFullAccess("O apoio de IA está incluído no acesso completo do Estudisc.","tutor");if(denied)return denied;
+  const raw=await request.text();
   if(raw.length>4000)return NextResponse.json({code:"body_too_large"},{status:413});
   const input=inputSchema.safeParse(JSON.parse(raw));
   if(!input.success)return NextResponse.json({code:"invalid_request"},{status:400});

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-17 — Paid access enforced in the APIs, free-preview home, funnel events
+
+- Without full access, `/api/tutor` (legacy AI route), new study sessions and questions outside the four free sample lessons answer 403 `paid_access_required`. Before, only the lesson page checked, so a free account could reach the AI provider and every question through the APIs.
+- Free accounts land on a free-preview home on `/` and `/plan`: Diagnostic, the sample lessons and the price. "Começar agora" returns there after sign-in instead of the paywall. Session and targeted-practice errors link to `/upgrade` when access is the reason.
+- Mercado Pago webhook: other topics and never-matching payments get 200 (no endless retries); duplicate approved payments are logged for a manual refund; the logger now keeps the payment id, action and `created` fields it used to drop.
+- Payment confirmation polling backs off and stops after 10 minutes, and says not to generate a second Pix.
+- Funnel: `funnel_event` structured logs plus SQL in docs/29-CONVERSION-FUNNEL.md. ADR 0061 amended.
+
 ## 2026-10-17 — Canonical host and sales opened
 
 - In production the proxy answers 308 from alias hosts (Railway service domain, bare `estudisc.com.br`) to the `APP_URL` host, keeping path and query; the Railway health check host and local hosts are exempt. One origin keeps cookies, Auth.js callbacks and the mutation-origin check consistent.

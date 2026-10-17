@@ -3,6 +3,7 @@ import { AppShell } from "@/components/layout/app-shell";
 import { resolveAccessState } from "@/features/payments/access-guard";
 import { PaywallPanel } from "@/features/payments/paywall-panel";
 import { CONTENT_SUMMARY, formatCount } from "@/features/public-site/content-summary";
+import { logFunnelEvent } from "@/lib/funnel-events";
 
 type UpgradePageProps = Readonly<{
   searchParams?: Promise<{ status?: string; ref?: string; lesson?: string }>;
@@ -45,6 +46,7 @@ export default async function UpgradePage({ searchParams }: UpgradePageProps) {
           ? "sandbox"
           : "idle";
 
+  logFunnelEvent(initialStatus === "idle" ? "paywall_viewed" : "checkout_returned", { status: initialStatus, reasonCode: query?.lesson ? "lesson_locked" : "upgrade_page" });
   return (
     <AppShell mode="page">
       <PaywallPanel

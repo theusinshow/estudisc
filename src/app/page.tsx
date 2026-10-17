@@ -8,6 +8,9 @@ import { WeekStrip } from "@/features/progress/week-strip";
 import { getTodayDashboard } from "@/features/today/get-today-dashboard";
 import { SessionControls } from "@/features/study-sessions/session-controls";
 import { getFeatureFlags } from "@/lib/feature-flags";
+import { resolveAccessState } from "@/features/payments/access-guard";
+import { FreePreviewHome } from "@/features/payments/free-preview-home";
+import { logFunnelEvent } from "@/lib/funnel-events";
 import { TodayPage } from "@/features/today/today-page";
 import { remainingRoutineMinutes } from "@/features/study-sessions/routine-session-constraints";
 import { formatTodayDate } from "@/features/today/today-date";
@@ -17,6 +20,11 @@ export const dynamic = "force-dynamic";
 const kindLabel = { continue: "Continuar", review: "Revisar", mistake: "Corrigir erro", project: "Projeto" } as const;
 
 export default async function HomePage() {
+  // Free preview (ADR 0061): show what the account can open instead of sessions that need full access.
+  if (!(await resolveAccessState()).hasFullAccess) {
+    logFunnelEvent("free_home_viewed");
+    return <AppShell><FreePreviewHome /></AppShell>;
+  }
   const dashboard = await getTodayDashboard();
   if (getFeatureFlags().FEATURE_NEW_TODAY) return <TodayPage dashboard={dashboard} />;
   const primaryRecommendation = dashboard.nextAction;

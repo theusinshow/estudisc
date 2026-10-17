@@ -30,7 +30,7 @@ export default async function ConhecaPage() {
           <div className="auth-actions">
             {salesOpen ? (
               <>
-                <Link href="/auth/signin?callbackUrl=%2Fupgrade" className="primary-action elev-action">Começar agora</Link>
+                <Link href="/auth/signin?callbackUrl=%2F" className="primary-action elev-action">Começar agora</Link>
                 <a href="#preco" className="text-link">Ver preço</a>
               </>
             ) : (

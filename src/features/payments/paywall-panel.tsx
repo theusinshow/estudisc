@@ -15,6 +15,8 @@ function navigateTo(destination: string) {
   window.location.assign(destination);
 }
 
+const PAYMENT_POLL_LIMIT_MS = 10 * 60_000;
+
 export function PaywallPanel({
   lockedLessonTitle,
   initialStatus = "idle",
@@ -26,7 +28,7 @@ export function PaywallPanel({
     initialStatus === "confirming"
       ? {
           tone: "info",
-          text: "Confirmando seu pagamento no Mercado Pago. Assim que o Pix ou cartão for aprovado, seu acesso até a prova será liberado automaticamente."
+          text: "Confirmando seu pagamento no Mercado Pago. Você pode fechar esta página: o acesso é liberado assim que o Pix ou o cartão for aprovado. Se já gerou um Pix, pague esse mesmo código; não gere outro."
         }
       : initialStatus === "failure"
         ? {
@@ -38,26 +40,39 @@ export function PaywallPanel({
 
   useEffect(() => {
     if (initialStatus !== "confirming") return;
+    // Card approvals arrive in seconds, Pix can take minutes: check often at first, then slow down and stop.
+    const startedAt = Date.now();
     let cancelled = false;
-    const interval = setInterval(async () => {
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    async function check() {
       try {
         const res = await fetch("/api/payments/status", { cache: "no-store" });
-        if (!res.ok || cancelled) return;
-        const data = (await res.json()) as { hasFullAccess?: boolean };
-        if (data.hasFullAccess && !cancelled) {
-          setFeedback({
-            tone: "success",
-            text: "Pagamento confirmado! Redirecionando para o seu plano de estudos..."
-          });
-          navigateTo("/plan");
+        if (res.ok && !cancelled) {
+          const data = (await res.json()) as { hasFullAccess?: boolean };
+          if (data.hasFullAccess) {
+            setFeedback({ tone: "success", text: "Pagamento confirmado! Redirecionando para o seu plano de estudos..." });
+            navigateTo("/plan");
+            return;
+          }
         }
       } catch {
         // Ignore transient network errors while polling
       }
-    }, 3000);
+      if (cancelled) return;
+      const elapsed = Date.now() - startedAt;
+      if (elapsed >= PAYMENT_POLL_LIMIT_MS) {
+        setFeedback({
+          tone: "info",
+          text: "Ainda não recebemos a confirmação. Se você pagou com Pix, ela pode levar alguns minutos: volte mais tarde ou recarregue esta página. Não é preciso pagar de novo."
+        });
+        return;
+      }
+      timer = setTimeout(check, elapsed < 60_000 ? 3_000 : 10_000);
+    }
+    timer = setTimeout(check, 3_000);
     return () => {
       cancelled = true;
-      clearInterval(interval);
+      if (timer) clearTimeout(timer);
     };
   }, [initialStatus]);
 

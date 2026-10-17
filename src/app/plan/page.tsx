@@ -10,10 +10,13 @@ import { sessionItemsSchema } from "@/features/study-sessions/contracts";
 import { studyPlanRepository } from "@/features/study-sessions/routine-api";
 import { RoutinePlanner } from "@/features/study-sessions/routine-planner";
 import { remainingRoutineMinutes } from "@/features/study-sessions/routine-session-constraints";
+import { resolveAccessState } from "@/features/payments/access-guard";
+import { FreePreviewHome } from "@/features/payments/free-preview-home";
 
 export const dynamic = "force-dynamic";
 
 export default async function PlanPage() {
+  if (!(await resolveAccessState()).hasFullAccess) return <AppShell><FreePreviewHome /></AppShell>;
   if (!getFeatureFlags().FEATURE_STUDY_PLANNER) notFound();
   const ownerId = await getOwnerId();
   const sessions = getDatabaseUrl() ? await studySessionRepository().list(ownerId) : [];

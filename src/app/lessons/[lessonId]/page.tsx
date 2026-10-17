@@ -14,6 +14,7 @@ import { LessonSteps } from "@/features/lessons/lesson-steps";
 import { getTrack } from "@/features/tracks/api";
 import { getLessonResume } from "@/features/lessons/resume-api";
 import { canAccessLesson, resolveAccessState } from "@/features/payments/access-guard";
+import { logFunnelEvent } from "@/lib/funnel-events";
 import { PaywallPanel } from "@/features/payments/paywall-panel";
 import { subjectCodeFromTitle } from "@/components/ui/subject";
 import { studentConceptLabel } from "@/features/concepts/student-label";
@@ -37,6 +38,7 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
     notFound();
   }
   if (!canAccessLesson(lesson.stableId, access)) {
+    logFunnelEvent("paywall_viewed", { reasonCode: "lesson_locked" });
     return (
       <AppShell mode="page" exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha" }}>
         <PaywallPanel lockedLessonTitle={lesson.title} />

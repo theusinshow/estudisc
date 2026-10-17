@@ -5,6 +5,7 @@ import { isAllowedGoogleEmail, isGoogleAuthConfigured } from "@/features/auth/au
 import { googleAuthorizationParams } from "@/features/auth/google-oauth";
 import { getServerEnv } from "@/lib/env";
 import { logEvent } from "@/lib/logger";
+import { logFunnelEvent } from "@/lib/funnel-events";
 
 const env = getServerEnv();
 const googleAuthConfigured = isGoogleAuthConfigured(env);
@@ -34,6 +35,7 @@ export const authConfig = {
 
       const allowed = isAllowedGoogleEmail(profile?.email, env);
       if (!allowed) logEvent("warn", "auth_failure", { reasonCode: "account_not_allowed" });
+      else logFunnelEvent("signin_completed", { source: "google" });
       return allowed;
     }
   }

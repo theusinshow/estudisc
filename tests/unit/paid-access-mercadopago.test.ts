@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { MemoryEntitlementRepository } from "@/db/repositories/entitlement-repository";
 import { getMemoryStore } from "@/db/repositories/memory/store";
 import { isAllowedGoogleEmail, isLegacyAllowlistedGoogleEmail } from "@/features/auth/auth-readiness";
@@ -129,6 +129,30 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
     const evaluated = evaluateEntitlementAccess(history, new Date("2026-10-16T12:05:00Z"));
     expect(evaluated.active).toBe(false);
     expect(evaluated.latest?.status).toBe("revoked");
+  });
+
+  it("flags a second approved payment from an owner who already has access for a manual refund", async () => {
+    const repo = new MemoryEntitlementRepository();
+    const webhookSecret = "mp-webhook-secret-test-123456";
+    const ownerId = "google-double-payer";
+    const externalReference = buildExternalReference(ownerId, "nonce-dup");
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => undefined);
+    const deliver = async (dataId: string) => {
+      const ts = "1760565600";
+      const xRequestId = `req-${dataId}`;
+      const v1 = signMercadoPagoManifest(computeMercadoPagoSignatureManifest({ dataId, xRequestId, ts }), webhookSecret);
+      return processMercadoPagoWebhook({
+        dataId, xSignature: `ts=${ts},v1=${v1}`, xRequestId, webhookSecret, accessToken: "TEST", repo,
+        now: new Date("2026-10-15T15:00:00Z"),
+        fetchPayment: async () => ({ id: dataId, status: "approved", transaction_amount: 50, currency_id: "BRL", external_reference: externalReference, payment_type_id: "bank_transfer" })
+      });
+    };
+    await deliver("111");
+    await deliver("111");
+    expect(warn.mock.calls.flat().join(" ")).not.toContain("mercadopago_duplicate_payment");
+    await deliver("222");
+    expect(warn.mock.calls.flat().join(" ")).toContain("mercadopago_duplicate_payment");
+    warn.mockRestore();
   });
 
   it("verifies Mercado Pago HMAC signatures, grants R$ 50 lifetime access idempotently, and handles refunds", async () => {
