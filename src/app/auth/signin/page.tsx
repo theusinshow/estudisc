@@ -116,7 +116,7 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
       <section className="auth-panel">
         <div className="auth-panel-header">
 <BrandLockup />
-          <p className="auth-kicker">{env.FEATURE_PAID_ACCESS ? "Entrar" : "Acesso do proprietário"}</p>
+          {env.FEATURE_PAID_ACCESS ? null : <p className="auth-kicker">Acesso do proprietário</p>}
         </div>
 
         <div className="auth-copy">
@@ -140,21 +140,8 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
         {emailSignIn ? <><h2 className="auth-subtitle">Ou entre com seu e-mail</h2><EmailSignIn callbackUrl={callbackUrl} signupOpen={signupOpen} /></> : null}
         {signupOpen ? <p className="auth-alternate">Ainda não tem conta? <Link href="/auth/cadastro">Criar conta</Link></p> : null}
 
-        <dl className="auth-status" aria-label="Regras de acesso">
-          <div>
-            <dt>Conta</dt>
-            <dd>Google OAuth com seleção manual.</dd>
-          </div>
-          <div>
-            <dt>Escopo</dt>
-            <dd>{env.FEATURE_PAID_ACCESS ? "Qualquer conta Google; o acesso completo depende do pagamento." : "Somente e-mails permitidos."}</dd>
-          </div>
-          <div>
-            <dt>Sessão</dt>
-            <dd>Rotas privadas ficam bloqueadas sem login.</dd>
-          </div>
-        </dl>
-        {hybrid ? <p className="auth-alternate"><Link href={withCallback({ perfil: "1" })}>Tenho um perfil com código</Link></p> : null}
+        <p className="auth-note">{env.FEATURE_PAID_ACCESS ? "Use qualquer conta Google. A conta é grátis e já libera uma aula de cada matéria; o acesso completo é pago." : "Somente e-mails autorizados entram."}</p>
+        {hybrid ? <p className="auth-alternate"><Link className="text-button" href={withCallback({ perfil: "1" })}>Tenho um perfil com código</Link></p> : null}
       </section>
       <ExamCountdown />
       <LegalLinks />

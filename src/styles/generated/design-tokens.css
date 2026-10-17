@@ -228,7 +228,7 @@
   --estudisc-color-subject-accent-mathematics: #FF7357;
   --estudisc-color-subject-accent-portuguese: #B08CFF;
   --estudisc-color-subject-accent-science: #4CC96B;
-  --estudisc-color-surface-lime: #D4FF4F;
+  --estudisc-color-surface-lime: #C9F7D5;
   --estudisc-color-surface-orange: #FF9E5E;
   --estudisc-color-surface-pink: #FF9AD5;
   --estudisc-color-surface-sky: #7FD6FF;
@@ -242,6 +242,7 @@
   --estudisc-typography-body-weights-regular: 500;
   --estudisc-typography-body-weights-semibold: 700;
   --estudisc-typography-display-weight: 900;
+  --estudisc-typography-technical-family: var(--font-archivo);
 }
 [data-theme="vibrante"][data-palette="b"] {
   --estudisc-color-desk: #B6A0FF;

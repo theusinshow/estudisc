@@ -283,3 +283,5 @@
 .auth-kicker { margin: 0; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--estudisc-color-dim); }
 /* The single-card sign-in sits in the middle of the screen on wide viewports too. */
 .auth-surface { justify-items: center; }
+
+.auth-note { margin: 0; color: var(--estudisc-color-dim); font-size: 0.875rem; font-weight: 600; line-height: 1.5; }
