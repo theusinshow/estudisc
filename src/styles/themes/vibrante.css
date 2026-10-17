@@ -1,2 +1,37 @@
 /* Vibrante theme (ADMIN preview, docs/superpowers/specs/2026-10-17-vibrant-theme-lab-design.md).
    Every rule is scoped under [data-theme="vibrante"]; token values come from design-tokens.json. */
+
+[data-theme="vibrante"] body { background: var(--estudisc-color-paper); }
+[data-theme="vibrante"] { font-weight: var(--estudisc-typography-body-weights-regular); }
+
+/* Pills: actions and chips. */
+[data-theme="vibrante"] .primary-action,
+[data-theme="vibrante"] .secondary-action { border-radius: 999px; font-weight: 800; letter-spacing: 0.01em; }
+[data-theme="vibrante"] .primary-action { background: var(--estudisc-color-signal); color: var(--estudisc-color-signal-ink); }
+[data-theme="vibrante"] .secondary-action { background: var(--estudisc-color-panel); }
+
+/* Surfaces: white sheets with a black outline on a colored frame. */
+[data-theme="vibrante"] .elev-surface,
+[data-theme="vibrante"] .question-sheet { background: var(--estudisc-color-panel); border-radius: var(--estudisc-radius-learning-card); }
+[data-theme="vibrante"] .answer-row { border-radius: var(--estudisc-radius-interactive); }
+[data-theme="vibrante"] .answer-bubble { font-weight: 800; }
+
+/* Reading stays calm: a white sheet, larger and heavier body text. */
+[data-theme="vibrante"] .lesson-article,
+[data-theme="vibrante"] .reading-column { background: var(--estudisc-color-panel); border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-sheet); padding: var(--estudisc-spacing-16); }
+[data-theme="vibrante"] .lesson-article p,
+[data-theme="vibrante"] .reading-column p { font-size: 1.0625rem; line-height: 1.6; }
+
+/* Heavier type; meta captions move from monospace to the body face in caps. */
+[data-theme="vibrante"] :is(h1, h2, h3, .type-display, .type-hero, .type-title) { font-weight: var(--estudisc-typography-display-weight); }
+[data-theme="vibrante"] .type-meta { font-family: var(--font-archivo), sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; }
+[data-theme="vibrante"][data-type="rounded"] :is(h1, h2, h3, .type-display, .type-hero, .type-title, .brand-word) { font-family: var(--font-rounded), var(--font-archivo), sans-serif; font-weight: 700; letter-spacing: -0.01em; }
+
+/* Phones: the bottom navigation becomes a dark floating pill. */
+@media (max-width: 899px) {
+  [data-theme="vibrante"] .sidebar { inset: auto var(--estudisc-spacing-4) var(--estudisc-spacing-4) var(--estudisc-spacing-4); background: var(--estudisc-color-ink); border: 0; border-radius: 999px; padding-bottom: var(--estudisc-spacing-4); }
+  [data-theme="vibrante"] .sidebar > .nav-link,
+  [data-theme="vibrante"] .sidebar > .nav-current,
+  [data-theme="vibrante"] .sidebar .nav-more > summary { color: var(--estudisc-color-panel); }
+  [data-theme="vibrante"] .sidebar .nav-current .nav-icon { color: var(--estudisc-color-ink); border-color: var(--estudisc-color-panel); box-shadow: none; }
+}
