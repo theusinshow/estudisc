@@ -8,6 +8,7 @@ import { restoredStep } from "./resume-contracts";
 import { playStepTransition } from "@/components/motion/step-transition";
 import { ATTEMPT_RECORDED_EVENT, type AttemptRecordedDetail } from "@/features/progress/live-progress-summary";
 import { MathText } from "@/components/ui/paragraphs";
+import { ReadAloudButton } from "@/features/study-tools/read-aloud";
 
 /** Questions answered in this visit whose latest answer is still wrong; the server keeps the durable record in /review. */
 function useOpenMistakes() {
@@ -81,6 +82,7 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
       <div className="stepper-head">
         {showAll ? <span className="stepper-count">Aula inteira · {steps.length} partes</span> : <span className="stepper-count" aria-live="polite">{done ? <strong>Aula concluída</strong> : <>Passo {index + 1} de {steps.length} · <strong>{current?.label}</strong></>}</span>}
         <button type="button" className="stepper-toggle" disabled={!ready} onClick={() => { setShowAll(!showAll); resume?.update({ showAll: !showAll }); }} aria-pressed={showAll}>{showAll ? "Um passo por vez" : "Ver tudo"}</button>
+        {!showAll && !done && !["check", "practice", "exit"].includes(steps[index]?.kind ?? "") && <ReadAloudButton label="Ouvir este passo" getText={() => stepRefs.current[index]?.innerText ?? ""} />}
         {!showAll && <progress className="stepper-bar" value={Math.min(index + 1, steps.length)} max={steps.length} aria-label="Progresso da aula" />}
       </div>
       {steps.map((step, position) => (

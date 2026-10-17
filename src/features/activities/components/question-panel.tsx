@@ -13,6 +13,9 @@ import { ATTEMPT_RECORDED_EVENT, type AttemptRecordedDetail } from "@/features/p
 import { useLessonResume } from "@/features/lessons/resume-provider";
 import { usableDraft } from "@/features/lessons/resume-contracts";
 import { draftResponseMatches } from "@/features/lessons/resume-policy";
+import { useFeedbackSignals } from "@/features/study-tools/feedback-signals";
+import { ReadAloudButton } from "@/features/study-tools/read-aloud";
+import { ScratchpadToggle } from "@/features/study-tools/scratchpad";
 
 type Feedback={correct:boolean;explanation?:string;attemptId?:string;xpAwarded?:number;reward?:"first_try"|"assisted";choiceFeedback?:string;itemResults?:ItemResult[];solutionShown?:boolean;answerKey?:AnswerKey};
 /** Ordering marks are by position; matching and classification marks are by item. */
@@ -58,7 +61,10 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
   const result=feedback?(feedback.attemptId?(feedback.correct?"correct":"incorrect"):"solution"):null;
   const solutionShown=result==="solution";
   const stem=splitStem(question.stem);
+  // Opt-in sound/vibration (study preferences) once per recorded attempt.
+  useFeedbackSignals(result,feedback?.attemptId);
   return <section className="learning-interaction question-sheet" aria-labelledby={`${id}-title`} onKeyDown={pickByKey}>{question.stimulus&&<div className="question-stimulus"><Paragraphs text={question.stimulus}/></div>}{stem.body&&<div className="question-stem-body"><Paragraphs text={stem.body}/></div>}<h3 id={`${id}-title`}><MathText text={stem.question}/></h3>
+    <ReadAloudButton text={[question.stimulus,stem.body,stem.question].filter(Boolean).join(". ")} label="Ouvir a questão"/>
     <QuestionAssets assets={question.assets}/>
     <form onSubmit={event=>{event.preventDefault();void send("submit");}}><ResponseFields id={id} question={question} response={response} disabled={busy} review={reviewOf(question,feedback)} onChange={value=>{const submissionKey=crypto.randomUUID();setResponse(value);setFeedback(null);setKey(submissionKey);resume?.setDraft({activityId:activityStableId,questionId:question.id,questionVersion:question.version,response:value,submissionKey,baseAttemptId},activityStableId);}} /><button className="primary-button" disabled={busy||feedback?.correct===true} type="submit">{busy?"Registrando…":feedback?.correct?"Resposta registrada":"Enviar resposta"}</button></form>
     {/* The live wrapper exists before any answer, so screen readers announce the stamp when it appears. */}
@@ -80,6 +86,7 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
       {hintLevel<hintCount&&<button type="button" className="aid-request" disabled={busy} onClick={()=>void send("hint")}><Lightbulb aria-hidden="true"/>{hintLevel>0?"Ver mais uma dica":"Ver uma dica"}</button>}
       {!solutionShown&&!feedback?.solutionShown&&<button type="button" className="aid-request" disabled={busy} onClick={()=>void send("solution")}><BookOpen aria-hidden="true"/>Ver solução</button>}
     </div>
+    <ScratchpadToggle/>
     {feedback?.attemptId && feedback.correct && <div className="question-study-reward">
       {typeof feedback.xpAwarded === "number" && feedback.xpAwarded > 0 && <p role="status" aria-label="Recompensas de estudo"><strong>+{feedback.xpAwarded} XP</strong> · {feedback.reward==="assisted"?"Acertou depois de revisar.":"Acertou de primeira, sem ajuda."}</p>}
       <Link href="/achievements">Ver minhas conquistas</Link>

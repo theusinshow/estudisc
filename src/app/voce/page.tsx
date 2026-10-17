@@ -8,6 +8,7 @@ import { AppShell } from "@/components/layout/app-shell";
 import { getAccountConfig } from "@/features/auth/account-mode";
 import { getOwnerProfile } from "@/features/auth/owner";
 import { SignOutButton } from "@/features/navigation/sign-out-button";
+import { StudyPreferencesPanel } from "@/features/study-tools/study-preferences-panel";
 import { getServerEnv } from "@/lib/env";
 
 export const dynamic = "force-dynamic";
@@ -63,6 +64,10 @@ export default async function YouPage() {
         </header>
         <Section title="Seu progresso" links={PROGRESS} />
         <Section title="Para estudar" links={STUDY} />
+        <section className="hub-section" aria-label="Preferências de estudo">
+          <h2 className="type-meta">Preferências de estudo</h2>
+          <StudyPreferencesPanel />
+        </section>
         <section className="hub-section" aria-label="Conta">
           <h2 className="type-meta">Conta</h2>
           <ul className="hub-list">
