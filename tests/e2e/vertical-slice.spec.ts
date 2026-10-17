@@ -153,7 +153,7 @@ test("imports a Track Pack, browses the lesson, runs code, submits and shows his
   await expect(page.getByLabel("Domínio do conceito")).not.toContainText("mastery.v");
   await expect(page.getByLabel("Domínio do conceito")).toContainText(/Entendido|Praticando/);
   await expect(page.getByLabel("Domínio do conceito")).toContainText(/[23]\/5/);
-  await expect(page.getByLabel("Domínio do conceito")).toContainText(/evidências? registradas?/);
+  await expect(page.getByLabel("Domínio do conceito")).toContainText(/respostas? conta/);
 
   await page.goto("/tracks/javascript");
   await expect(page.getByLabel("Progresso")).toContainText("Aulas concluídas");
