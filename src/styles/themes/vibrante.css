@@ -78,7 +78,6 @@
 /* Heavier type; meta captions move from monospace to the body face in caps. */
 [data-theme="vibrante"] :is(h1, h2, h3, .type-display, .type-hero, .type-title) { font-weight: var(--estudisc-typography-display-weight); }
 [data-theme="vibrante"] .type-meta { font-family: var(--font-archivo), sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; }
-[data-theme="vibrante"][data-type="rounded"] :is(h1, h2, h3, .type-display, .type-hero, .type-title, .brand-word) { font-family: var(--font-rounded), var(--font-archivo), sans-serif; font-weight: 700; letter-spacing: -0.01em; }
 
 /* Phones: the bottom navigation becomes a dark floating pill. */
 @media (max-width: 899px) {

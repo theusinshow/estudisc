@@ -1,4 +1,3 @@
-import { cookies } from "next/headers";
 import { notFound } from "next/navigation";
 
 import { AppShell } from "@/components/layout/app-shell";
@@ -13,8 +12,6 @@ import { IdeasTwoBlock } from "@/features/design-lab/catalog/ideas2/block";
 import { InteractiveBlock } from "@/features/design-lab/catalog/interactive";
 import { MotionBlock } from "@/features/design-lab/catalog/motion";
 import { contrastReport } from "@/features/design-lab/contrast";
-import { parseThemeCookie, THEME_COOKIE } from "@/features/design-lab/theme-cookie";
-import { setLabTheme } from "./actions";
 
 export const dynamic = "force-dynamic";
 
@@ -38,20 +35,12 @@ export default async function DesignLabPage() {
     if (error instanceof AccessDeniedError) notFound();
     throw error;
   }
-  const saved = parseThemeCookie((await cookies()).get(THEME_COOKIE)?.value);
   const report = contrastReport("a");
 
   return (
     <AppShell>
       <div className="lab-page">
-        <form className="lab-controls" action={setLabTheme}>
-          <h1 className="type-title">Lab de design</h1>
-          <input type="hidden" name="palette" value="a" />
-          <input type="hidden" name="type" value="archivo" />
-          <button type="submit" name="apply" value="on" className="primary-action">Ver o app inteiro neste tema</button>
-          <button type="submit" name="apply" value="off" className="secondary-action">Voltar ao tema atual</button>
-          <p role="status">{saved ? "App inteiro: Vibrante (Limão, Archivo)" : "App inteiro: tema atual"}</p>
-        </form>
+        <header className="lab-controls"><h1 className="type-title">Lab de design</h1><p className="dc-note">Catálogo do Design System vibrante (ADR 0069), agora padrão no app inteiro.</p></header>
         <div className="dc" data-theme="vibrante" data-palette="a" data-type="archivo">
           <nav className="dc-toc" aria-label="Blocos do catálogo">
             {BLOCKS.map(([id, label]) => <a key={id} href={`#${id}`}>{label}</a>)}
