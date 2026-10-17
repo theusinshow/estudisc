@@ -2,101 +2,54 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
-import {
-  ArrowLeft, BookOpen, CalendarDays, ChartNoAxesColumnIncreasing, ClipboardCheck,
-  Database, Download, FileText, FolderKanban, History, LogOut, Map, Medal,
-  LifeBuoy, MoreHorizontal, RotateCcw, Sun, TriangleAlert, Upload, UserRound
-} from "lucide-react";
+import { ArrowLeft, BookOpen, FileText, Play, Sun, UserRound } from "lucide-react";
 import { BrandLockup } from "@/components/brand/brand-lockup";
-import { Sheet } from "@/components/ui/dialog";
 
-const home = { label: "Hoje", href: "/", icon: Sun, match: ["/"] };
-const learn = { label: "Aprender", href: "/tracks", icon: BookOpen, match: ["/tracks", "/lessons", "/concepts"] };
-const progress = { label: "Progresso", href: "/progress", icon: ChartNoAxesColumnIncreasing, match: ["/progress"] };
-const review = { label: "Revisar", href: "/review", icon: RotateCcw, match: ["/review"] };
-const plan = { label: "Plano", href: "/plan", icon: CalendarDays, match: ["/plan", "/study"] };
-const secondaryNavigationItems = [
-  review,
-  { label: "Simulados", href: "/assessments", icon: BookOpen, match: ["/assessments"] },
-  { label: "Provas anteriores", href: "/past-exams", icon: FileText, match: ["/past-exams"] },
-  { label: "Importar", href: "/import", icon: Upload, match: ["/import"], adminOnly: true },
-  { label: "Revisar aulas", href: "/admin/review", icon: ClipboardCheck, match: ["/admin/review"], adminOnly: true },
-  { label: "Administração", href: "/admin", icon: Database, match: ["/admin"], adminOnly: true },
-  { label: "Histórico", href: "/history", icon: History, match: ["/history"] },
-  { label: "Erros", href: "/mistakes", icon: TriangleAlert, match: ["/mistakes"] },
-  { label: "Projetos", href: "/projects", icon: FolderKanban, match: ["/projects"], adminOnly: true },
-  { label: "Mapa", href: "/knowledge-map", icon: Map, match: ["/knowledge-map"] },
-  { label: "Exportar", href: "/exports", icon: Download, match: ["/exports"], adminOnly: true },
-  { label: "Conquistas", href: "/achievements", icon: Medal, match: ["/achievements"] },
-  { label: "Suporte", href: "/suporte", icon: LifeBuoy, match: ["/suporte"] }
-];
+/** Mobile-first: four tabs around one central "Continuar" action (owner decision, 2026-10-17). */
+const tabs = [
+  { label: "Hoje", href: "/", icon: Sun, match: ["/"] },
+  { label: "Estudar", href: "/tracks", icon: BookOpen, match: ["/tracks", "/lessons", "/concepts", "/knowledge-map", "/review", "/mistakes", "/plan", "/study"] },
+  { label: "Provas", href: "/provas", icon: FileText, match: ["/provas", "/assessments", "/past-exams"] },
+  { label: "Você", href: "/voce", icon: UserRound, match: ["/voce", "/progress", "/achievements", "/history", "/conta", "/suporte", "/admin", "/import", "/projects", "/exports"] }
+] as const;
+
 /** Resolved on the server by AppShell for the current request; never cached across owners. */
 export type ShellProfile = Readonly<{ role: "ADMIN" | "STUDENT"; name: string | null; accountMode: boolean }>;
 
-function isCurrentRoute(pathname: string, matches: string[]) {
+function isCurrentRoute(pathname: string, matches: readonly string[]) {
   return matches.some(match => match === "/" ? pathname === "/" : pathname.startsWith(match));
 }
 
-/** One server profile read serves the topbar and navigation. Focus has no global navigation. */
-export function ShellNavigation({ studyNavigation, focus, exit, profile = null }: Readonly<{
-  studyNavigation: boolean;
+function Tab({ tab, pathname }: Readonly<{ tab: (typeof tabs)[number]; pathname: string }>) {
+  const Icon = tab.icon;
+  const current = isCurrentRoute(pathname, tab.match);
+  return <Link className={current ? "nav-current" : "nav-link"} href={tab.href} aria-current={current ? "page" : undefined}>
+    <span className="nav-icon"><Icon aria-hidden="true" /></span><span className="nav-label">{tab.label}</span>
+  </Link>;
+}
+
+/** One server profile read serves the shell. Focus mode has no global navigation, only an exit. */
+export function ShellNavigation({ focus, exit }: Readonly<{
+  studyNavigation?: boolean;
   focus: boolean;
   exit?: Readonly<{ href: string; label: string }>;
   profile?: ShellProfile | null;
 }>) {
-  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname() ?? "/";
-  async function signOut() {
-    await fetch("/api/session", { method: "DELETE" }).catch(() => {});
-    window.location.replace(new URL("/auth/signin", window.location.origin).href);
-  }
-
-  const primaryItems = studyNavigation ? [home, plan, learn, review, progress] : [home, learn, progress];
-  const secondaryItems = secondaryNavigationItems.filter(item =>
-    (!("adminOnly" in item) || profile?.role === "ADMIN") && (!studyNavigation || item.href !== review.href)
-  );
-  const hasSecondaryCurrent = secondaryItems.some(item => isCurrentRoute(pathname, item.match));
-  const secondaryLinks = <>
-    {profile?.accountMode && <section className="nav-account" aria-label="Perfil">
-      <p className="nav-account-title">Perfil</p>
-      <span>Conectado como <strong>{profile.name}</strong></span>
-      <Link className="nav-link" href="/conta" onClick={() => setMenuOpen(false)}><span>Minha conta</span></Link>
-      <button type="button" className="nav-link" onClick={() => void signOut()}><LogOut aria-hidden="true" /><span>Sair</span></button>
-    </section>}
-    {secondaryItems.map(item => {
-      const Icon = item.icon;
-      const current = isCurrentRoute(pathname, item.match);
-      return <Link className={current ? "nav-current" : "nav-link"} href={item.href}
-        aria-current={current ? "page" : undefined} key={item.href} onClick={() => setMenuOpen(false)}>
-        <Icon aria-hidden="true" /><span>{item.label}</span>
-      </Link>;
-    })}
-  </>;
-
   return <>
     <header className="topbar">
       <Link className="brand-link" href="/" aria-label="Estudisc, página inicial"><BrandLockup /></Link>
-      {focus && exit ? <Link className="focus-exit" href={exit.href}><ArrowLeft aria-hidden="true" />{exit.label}</Link>
-        : studyNavigation && <button className="account-menu-trigger" type="button" aria-label="Abrir perfil e outras páginas"
-          aria-haspopup="dialog" aria-expanded={menuOpen} onClick={() => setMenuOpen(true)}><UserRound aria-hidden="true" /></button>}
+      {focus && exit ? <Link className="focus-exit" href={exit.href}><ArrowLeft aria-hidden="true" />{exit.label}</Link> : null}
     </header>
-    {!focus && <nav className="sidebar" data-navigation={studyNavigation ? "study" : "legacy"} aria-label="Navegação principal">
-      {primaryItems.map(item => {
-        const Icon = item.icon;
-        const current = isCurrentRoute(pathname, item.match);
-        return <Link className={current ? "nav-current" : "nav-link"} href={item.href}
-          aria-current={current ? "page" : undefined} key={item.href}>
-          <span className="nav-icon"><Icon aria-hidden="true" /></span><span>{item.label}</span>
-        </Link>;
-      })}
-      {!studyNavigation && <details className={hasSecondaryCurrent ? "nav-more nav-more-current" : "nav-more"}>
-        <summary><span className="nav-icon"><MoreHorizontal aria-hidden="true" /></span><span>Mais</span></summary>
-        <div className="nav-more-panel">{secondaryLinks}</div>
-      </details>}
+    {!focus && <nav className="sidebar" data-navigation="tabs" aria-label="Navegação principal">
+      <Tab tab={tabs[0]} pathname={pathname} />
+      <Tab tab={tabs[1]} pathname={pathname} />
+      {/* Plain link (no prefetch): the server decides the destination only when it is tapped. */}
+      <a className="nav-continue" href="/continuar" aria-label="Continuar de onde parei">
+        <span className="nav-continue-button"><Play aria-hidden="true" /></span><span className="nav-label">Continuar</span>
+      </a>
+      <Tab tab={tabs[2]} pathname={pathname} />
+      <Tab tab={tabs[3]} pathname={pathname} />
     </nav>}
-    {!focus && studyNavigation && <Sheet open={menuOpen} title="Perfil e outras páginas" onClose={() => setMenuOpen(false)}>
-      <nav className="secondary-navigation" aria-label="Outras páginas">{secondaryLinks}</nav>
-    </Sheet>}
   </>;
 }

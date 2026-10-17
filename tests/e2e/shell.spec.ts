@@ -6,19 +6,24 @@ test("foundation shell renders on desktop", async ({ page }) => {
   await expect(page.getByRole("link", { name: "Estudisc, página inicial" })).toBeVisible();
   await expect(page.getByRole("navigation", { name: "Navegação principal" })).toBeVisible();
   await expect(page.getByRole("main")).toContainText("Próxima ação");
-  await expect(page.getByRole("link", { name: /Aprender/ })).toBeVisible();
-  await expect(page.getByText("Mais", { exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Estudar", exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Continuar de onde parei" })).toBeVisible();
+  await expect(page.getByText("Mais", { exact: true })).toHaveCount(0);
   await expect(page.getByText("Fundação ativa")).toHaveCount(0);
 });
 
-test("mobile shell keeps primary study navigation visible", async ({ page }) => {
+test("mobile shell keeps four tabs and the central Continuar within thumb reach", async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
   await page.goto("/");
 
-  await expect(page.getByRole("link", { name: /Hoje/ })).toBeVisible();
-  await expect(page.getByRole("link", { name: /Aprender/ })).toBeVisible();
-  await expect(page.getByRole("link", { name: /Progresso/ })).toBeVisible();
-  await expect(page.getByText("Mais", { exact: true })).toBeVisible();
+  const nav = page.getByRole("navigation", { name: "Navegação principal" });
+  for (const name of ["Hoje", "Estudar", "Continuar de onde parei", "Provas", "Você"]) {
+    const link = nav.getByRole("link", { name, exact: true });
+    await expect(link).toBeVisible();
+    const box = await link.boundingBox();
+    expect(box?.width).toBeGreaterThanOrEqual(44);
+    expect(box?.height).toBeGreaterThanOrEqual(44);
+  }
 
   await expect
     .poll(async () =>
@@ -27,19 +32,30 @@ test("mobile shell keeps primary study navigation visible", async ({ page }) => 
     .toBe(true);
 });
 
-test("mobile secondary navigation stays collapsed until requested", async ({ page }) => {
+test("secondary pages live in the Você tab, admin links only for ADMIN", async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
-  await page.goto("/import");
-
-  await expect(page.getByRole("heading", { name: "Ativar catálogo" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Importar" })).toBeHidden();
-
-  await page.getByText("Mais", { exact: true }).click();
-  const importLink = page.getByRole("link", { name: "Importar" });
+  await page.goto("/voce");
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  for (const name of ["Progresso", "Conquistas", "Mapa de conceitos", "Histórico", "Revisão", "Erros", "Suporte"]) {
+    await expect(page.getByRole("link", { name: new RegExp(`^${name}`) })).toBeVisible();
+  }
+  const importLink = page.getByRole("link", { name: /Importar/ });
   await expect(importLink).toBeVisible();
+  expect((await importLink.boundingBox())?.height).toBeGreaterThanOrEqual(44);
+});
 
-  const importBox = await importLink.boundingBox();
-  expect(importBox?.height).toBeGreaterThanOrEqual(44);
+test("Provas tab gathers mock and past exams", async ({ page }) => {
+  await page.goto("/provas");
+  await expect(page.getByRole("heading", { name: "Provas", level: 1 })).toBeVisible();
+  await expect(page.getByRole("link", { name: /Simulados completos/ })).toHaveAttribute("href", "/assessments");
+  await expect(page.getByRole("link", { name: /Provas anteriores/ })).toHaveAttribute("href", "/past-exams");
+  await expect(page.getByRole("navigation", { name: "Navegação principal" }).getByRole("link", { name: "Provas", exact: true })).toHaveAttribute("aria-current", "page");
+});
+
+test("central Continuar resolves a destination on tap", async ({ page }) => {
+  await page.goto("/");
+  await page.getByRole("link", { name: "Continuar de onde parei" }).click();
+  await expect(page).toHaveURL(/\/(lessons\/|review|$)/);
 });
 
 test("skip link targets the main landmark", async ({ page }) => {

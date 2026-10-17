@@ -4,7 +4,7 @@ import source from "../../packs/seeds/ifsc-2027.golden.track.v2.json";
 test.describe("flagged study foundation", () => {
   test.skip(process.env.FEATURE_STUDY_PLANNER !== "true" || process.env.FEATURE_NEW_TODAY !== "true" || process.env.FEATURE_INTERACTIVE_LESSONS !== "true", "Run this suite with the study foundation flags enabled.");
 
-  test("keeps five touch destinations, an accessible secondary sheet and keyboard tabs", async ({ page }) => {
+  test("keeps five touch destinations and keyboard tabs", async ({ page }) => {
     for (const width of [320, 360, 390, 430]) {
       await page.setViewportSize({ width, height: 844 });
       await page.goto("/plan");
@@ -17,17 +17,6 @@ test.describe("flagged study foundation", () => {
       }
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
     }
-    const trigger = page.getByRole("button", { name: "Abrir perfil e outras páginas" });
-    await trigger.click();
-    const sheet = page.getByRole("dialog", { name: "Perfil e outras páginas" });
-    await expect(sheet).toBeVisible();
-    for (let index = 0; index < 16; index++) {
-      await page.keyboard.press("Tab");
-      expect(await sheet.evaluate(element => element.contains(document.activeElement))).toBe(true);
-    }
-    await page.keyboard.press("Escape");
-    await expect(sheet).toBeHidden();
-    await expect(trigger).toBeFocused();
     await page.getByRole("tab", { name: "Próximas sessões" }).focus();
     await page.keyboard.press("ArrowRight");
     await expect(page.getByRole("tab", { name: "Concluídas" })).toBeFocused();
