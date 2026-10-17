@@ -124,6 +124,7 @@
 .ix2-story-progress span { display: block; height: 100%; width: 0; background: var(--estudisc-color-ink); }
 .ix2-story-progress [data-state="done"] span { width: 100%; }
 .ix2-story-progress [data-state="now"] span { animation: ix2-story 4s linear both; }
+.ix2-story[data-playing="false"] .ix2-story-progress [data-state="now"] span { animation: none; width: 100%; }
 @keyframes ix2-story { to { width: 100%; } }
 .dc .ix2-story-tap { position: absolute; top: 0; bottom: 0; z-index: 1; width: 40%; min-height: 0; padding: 0; border: 0; background: transparent; box-shadow: none; transform: none; cursor: pointer; }
 .dc .ix2-story-tap:hover { transform: none; box-shadow: none; }

@@ -1,7 +1,7 @@
 "use client";
 
-import { Check, Copy, Download, Lock, Share2, Smartphone, Users, Vibrate } from "lucide-react";
-import { AnimatePresence, motion } from "motion/react";
+import { Check, Copy, Download, Lock, Pause, Play, Share2, Smartphone, Users, Vibrate } from "lucide-react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
 
 /* 9.2 — Exam pace: compares answered questions with the IFSC average time per question; floating answer sheet. */
@@ -80,7 +80,10 @@ function drawStoryImage(): Promise<Blob | null> {
 export function WeeklyRecap() {
   const [index, setIndex] = useState(0);
   const [saving, setSaving] = useState(false);
-  useEffect(() => { const t = window.setTimeout(() => setIndex((i) => (i + 1) % STORIES.length), 4000); return () => window.clearTimeout(t); }, [index]);
+  const reduce = useReducedMotion();
+  const [playing, setPlaying] = useState(true);
+  const auto = playing && !reduce;
+  useEffect(() => { if (!auto) return; const t = window.setTimeout(() => setIndex((i) => (i + 1) % STORIES.length), 4000); return () => window.clearTimeout(t); }, [index, auto]);
   async function share() {
     setSaving(true);
     const blob = await drawStoryImage(); setSaving(false);
@@ -93,7 +96,7 @@ export function WeeklyRecap() {
   const story = STORIES[index];
   return (
     <div className="ix2-recap">
-      <div className="ix2-story" data-tone={story.tone}>
+      <div className="ix2-story" data-tone={story.tone} data-playing={auto}>
         <ol className="ix2-story-progress" aria-hidden="true">{STORIES.map((s, i) => <li key={s.kicker} data-state={i < index ? "done" : i === index ? "now" : "next"}><span key={`${index}-${i}`} /></li>)}</ol>
         <button type="button" className="ix2-story-tap" data-side="prev" aria-label="Anterior" onClick={() => setIndex((i) => Math.max(0, i - 1))} />
         <button type="button" className="ix2-story-tap" data-side="next" aria-label="Próximo" onClick={() => setIndex((i) => (i + 1) % STORIES.length)} />
@@ -103,6 +106,7 @@ export function WeeklyRecap() {
           </motion.div>
         </AnimatePresence>
       </div>
+      {!reduce ? <button type="button" className="text-button" onClick={() => setPlaying((p) => !p)}>{playing ? <><Pause aria-hidden="true" />Pausar stories</> : <><Play aria-hidden="true" />Continuar stories</>}</button> : null}
       <button type="button" className="primary-button" disabled={saving} onClick={() => void share()}>{saving ? "Gerando…" : <><Share2 aria-hidden="true" />Postar no story</>}</button>
       <p className="dc-note"><Download aria-hidden="true" className="ix2-inline-icon" />No celular abre o compartilhar; no computador baixa a imagem (1080×1920).</p>
     </div>
