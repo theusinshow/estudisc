@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-17 — Study tools and app interactions (ADR 0069, F3–F4)
+
+- Lessons and questions: answers as 3D keys, result banner and hint pills; the wrong tint appears only once the key is shown. Track lessons and Today's action card are sticker cards with the subject color (getTrack now returns each module's subjectCode).
+- Study tools: scratchpad in every lesson and exam question (ephemeral, nothing saved), "Ouvir" read-aloud for questions and lesson steps (device voice, nothing sent), opt-in sound and vibration on answer results (preferences on the device, off by default).
+- Exams: pace chip in the exam timer ("3 min adiantado", even pace = total time ÷ questions); flip-board countdown on the Provas tab.
+- Você: weekly recap stories built only from the student's real record (days studied, answers, most practiced area, concepts practicing or above, days to the exam) with a 1080×1920 image to post; study preference switches.
+- Theme: Archivo for every non-code label; positive surfaces in light green; landing stats as tiles; friendlier sign-in note.
+
 ## 2026-10-17 — Accounts fix: e-mail code reuses the Google account
 
 - Signing in or signing up by e-mail code with an address that already uses Google now lands on that same account (and its progress) instead of "no account" or a new empty account. `linkEmail` also accepts the account's own e-mail.

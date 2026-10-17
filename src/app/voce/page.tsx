@@ -8,6 +8,10 @@ import { AppShell } from "@/components/layout/app-shell";
 import { getAccountConfig } from "@/features/auth/account-mode";
 import { getOwnerProfile } from "@/features/auth/owner";
 import { SignOutButton } from "@/features/navigation/sign-out-button";
+import { getProgressOverview } from "@/features/progress/api";
+import { buildWeeklyRecap } from "@/features/progress/weekly-recap";
+import { WeeklyRecapStories } from "@/features/progress/weekly-recap-stories";
+import { daysUntilExam } from "@/features/public-site/countdown";
 import { StudyPreferencesPanel } from "@/features/study-tools/study-preferences-panel";
 import { getServerEnv } from "@/lib/env";
 
@@ -55,6 +59,8 @@ export default async function YouPage() {
   const profile = await getOwnerProfile().catch(() => null);
   const accountMode = Boolean(getAccountConfig(getServerEnv()));
   const name = profile?.name ?? (profile?.role === "ADMIN" ? "Administrador" : "Estudante");
+  const overview = profile ? await getProgressOverview().catch(() => null) : null;
+  const recap = overview ? buildWeeklyRecap(overview, daysUntilExam()) : [];
   return (
     <AppShell>
       <section className="hub" aria-labelledby="voce-title">
@@ -62,6 +68,7 @@ export default async function YouPage() {
           <span className="hub-avatar" aria-hidden="true">{name.slice(0, 1).toUpperCase()}</span>
           <div><p className="eyebrow">Você</p><h1 id="voce-title">{name}</h1></div>
         </header>
+        {recap.length > 0 ? <section className="hub-section" aria-label="Resumo da semana"><h2 className="type-meta">Resumo da semana</h2><WeeklyRecapStories stories={recap} /></section> : null}
         <Section title="Seu progresso" links={PROGRESS} />
         <Section title="Para estudar" links={STUDY} />
         <section className="hub-section" aria-label="Preferências de estudo">

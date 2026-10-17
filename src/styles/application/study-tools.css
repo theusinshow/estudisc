@@ -38,3 +38,40 @@
 .study-switch-track { display: flex; flex: none; width: 52px; height: 30px; padding: 3px; border: 3px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); }
 .study-switch[aria-checked="true"] .study-switch-track { justify-content: flex-end; background: var(--estudisc-color-ink); }
 .study-switch-thumb { width: 18px; height: 18px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-signal); }
+
+/* Exam pace chip inside the exam timer (lab 9.2). */
+.exam-pace { display: inline-flex; align-items: center; justify-self: start; padding: 4px 12px; border: 3px solid var(--estudisc-color-ink); border-radius: 999px; font-size: 0.8125rem; font-weight: 900; color: var(--estudisc-color-ink); }
+.exam-pace[data-status="ahead"] { background: #C9F7D5; }
+.exam-pace[data-status="on"] { background: var(--estudisc-color-signal); }
+.exam-pace[data-status="behind"] { background: #FFDCD4; }
+
+/* Flip board countdown (lab 8.13). */
+.flip-board { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
+.flip-cell { display: grid; justify-items: center; gap: 4px; }
+.flip-cell small { font-size: 0.6875rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.06em; }
+.flip-digit { position: relative; display: grid; place-items: center; width: 100%; height: 64px; overflow: hidden; border: 3px solid var(--estudisc-color-ink); border-radius: 14px; background: var(--estudisc-color-ink); color: var(--estudisc-color-signal); font-size: 2rem; font-weight: 900; font-variant-numeric: tabular-nums; perspective: 300px; box-shadow: 3px 3px 0 var(--estudisc-color-ink); }
+.flip-digit::after { content: ""; position: absolute; inset: 50% 0 auto; height: 2px; background: var(--estudisc-color-paper); opacity: 0.35; }
+.flip-digit > span { grid-area: 1 / 1; }
+@media (min-width: 640px) { .flip-digit { height: 80px; font-size: 2.5rem; } }
+
+/* Weekly recap stories (lab 9.8) on the Você tab. */
+.recap { display: grid; gap: var(--estudisc-spacing-6); justify-items: center; }
+.recap-story { position: relative; width: 100%; max-width: 300px; aspect-ratio: 9 / 13; overflow: hidden; border: 3px solid var(--estudisc-color-ink); border-radius: 24px; box-shadow: 5px 5px 0 var(--estudisc-color-ink); background: var(--estudisc-color-signal); transition: background-color 300ms linear; }
+.recap-story[data-tone="mathematics"] { background: var(--estudisc-color-subject-accent-mathematics); }
+.recap-story[data-tone="portuguese"] { background: var(--estudisc-color-subject-accent-portuguese); }
+.recap-story[data-tone="science"] { background: var(--estudisc-color-subject-accent-science); }
+.recap-progress { position: absolute; inset: 10px 10px auto; z-index: 2; display: grid; grid-auto-flow: column; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.recap-progress li { height: 5px; overflow: hidden; border-radius: 999px; background: rgba(23, 20, 31, 0.25); }
+.recap-progress span { display: block; height: 100%; width: 0; background: var(--estudisc-color-ink); }
+.recap-progress [data-state="done"] span { width: 100%; }
+.recap-progress [data-state="now"] span { animation: recap-story 4s linear both; }
+.recap-story[data-playing="false"] .recap-progress [data-state="now"] span { animation: none; width: 100%; }
+@keyframes recap-story { to { width: 100%; } }
+.main-surface .recap-tap { position: absolute; top: 0; bottom: 0; z-index: 1; width: 40%; min-height: 0; padding: 0; border: 0; background: transparent; box-shadow: none; transform: none; cursor: pointer; }
+.main-surface .recap-tap:hover { transform: none; box-shadow: none; }
+.recap-tap[data-side="prev"] { left: 0; } .recap-tap[data-side="next"] { right: 0; }
+.recap-body { position: absolute; inset: 0; display: grid; align-content: center; gap: 6px; padding: 22px; color: var(--estudisc-color-ink); }
+.recap-body p { margin: 0; font-weight: 700; }
+.recap-body strong { font-size: 2.25rem; font-weight: 900; line-height: 1; overflow-wrap: anywhere; }
+.recap-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: center; }
+@media (prefers-reduced-motion: reduce) { .recap-progress [data-state="now"] span { animation: none; width: 100%; } .recap-story { transition: none; } }

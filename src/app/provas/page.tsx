@@ -1,21 +1,20 @@
 import Link from "next/link";
-import { ArrowRight, ClipboardList, FileText, Timer } from "lucide-react";
+import { ArrowRight, ClipboardList, FileText } from "lucide-react";
 
 import { AppShell } from "@/components/layout/app-shell";
-import { daysUntilExam, examCountdownLabel } from "@/features/public-site/countdown";
+import { ExamCountdownBoard } from "@/features/study-tools/exam-countdown";
 
 export const dynamic = "force-dynamic";
 
 /** "Provas" tab: mock exams in the IFSC format and the official past exams, side by side. */
 export default function ExamsHubPage() {
-  const days = daysUntilExam();
   return (
     <AppShell>
       <section className="hub" aria-labelledby="provas-title">
         <header className="hub-head">
           <p className="eyebrow">Treino no formato da prova</p>
           <h1 id="provas-title">Provas</h1>
-          {days !== null ? <p className="hub-countdown"><Timer aria-hidden="true" />{examCountdownLabel(days)} · 29/11</p> : null}
+          <ExamCountdownBoard />
         </header>
         <ul className="hub-cards">
           <li>
