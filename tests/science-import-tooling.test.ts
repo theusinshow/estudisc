@@ -10,10 +10,10 @@ import { SCIENCE_DRAFT_PACK, SCIENCE_MEDIA_ASSETS } from "../tools/science-impor
 describe("Science draft import infrastructure", () => {
   it("pins the cleaned forty-lesson snapshot without publishing Questions or losing import compatibility", () => {
     const bytes = readFileSync(SCIENCE_DRAFT_PACK);
-    expect(sha256(bytes)).toBe("8eb61c700085da9c506a9531a9f37b57470c3f13e838b4ace3a6c88726607d79");
+    expect(sha256(bytes)).toBe("630feb418e915d1aed5ad440114fc87ef86f60db7398772d41dc3735de42a717");
     expect(bytes.byteLength).toBeLessThanOrEqual(MAX_TRACK_PACK_BYTES);
     const pack = JSON.parse(bytes.toString("utf8"));
-    expect(hashCanonicalJson(pack)).toBe("4925a5dad855df4553f8548d5a27803f2ee9bab0cdc51d0548faa7ab28c3df0c");
+    expect(hashCanonicalJson(pack)).toBe("8d2280983feb42d44ec857f58e735556ef603e2592e9a980448e997c6b8c5863");
     const lessons = pack.track.modules.flatMap((entry: { lessons: { id: string; status: string }[] }) => entry.lessons);
     expect(lessons.map((lesson: { id: string }) => lesson.id).sort()).toEqual(Array.from({ length: 40 }, (_, index) => `CIE-${String(index + 1).padStart(2, "0")}`));
     expect(lessons.every((lesson: { status: string }) => lesson.status === "draft")).toBe(true);
@@ -48,14 +48,20 @@ describe("Science draft import infrastructure", () => {
     const ids = [...PILOT, ...BATCHES.flat()];
     const before = buildSciencePack(process.cwd(), ids, 6).pack;
     const media = mediaAssetsSchema.parse(JSON.parse(readFileSync(SCIENCE_MEDIA_ASSETS, "utf8")));
-    expect(media.assets).toHaveLength(13);
+    expect(media.assets).toHaveLength(14);
     const result = buildCriticalSciencePack();
     expect(result.byteLength).toBeLessThanOrEqual(MAX_TRACK_PACK_BYTES);
     expect(result.pack.version).toBe(8);
-    expect(result.pack.questions).toEqual(before.questions);
+    // Only the authored distractor rationales are added, as a new version of the Questions that carry them.
+    const plain = <T extends { targetsError?: unknown; rationale?: unknown }>(choice: T) => { const copy = { ...choice }; delete copy.targetsError; delete copy.rationale; return copy; };
+    const withoutRationales = result.pack.questions.map(question => ({ ...question, version: before.questions.find(original => original.id === question.id)!.version, choices: question.choices?.map(plain) }));
+    expect(withoutRationales).toEqual(before.questions.map(question => ({ ...question, choices: question.choices?.map(plain) })));
+    const rationalized = result.pack.questions.filter(question => question.choices?.some(choice => choice.rationale));
+    expect(rationalized.every(question => question.version === 3 && question.choices!.filter(choice => !choice.correct && choice.rationale).length === 4)).toBe(true);
+    expect(rationalized.flatMap(question => question.choices!.filter(choice => choice.rationale))).toHaveLength(512);
     const lessons = result.pack.track.modules[0].lessons;
     const figures = lessons.filter(lesson => lesson.blocks.some(block => block.type === "figure"));
-    expect(figures).toHaveLength(13);
+    expect(figures).toHaveLength(14);
     for (const lesson of lessons) {
       const original = before.track.modules[0].lessons.find(candidate => candidate.id === lesson.id)!;
       expect(lesson.version).toBe(lesson.blocks.some(block => block.type === "figure") ? 4 : 3);

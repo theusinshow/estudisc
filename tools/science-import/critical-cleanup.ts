@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { dirname, resolve } from "node:path";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { hashCanonicalJson } from "../../src/lib/canonical-json";
 import { MAX_TRACK_PACK_BYTES } from "../../src/features/import/application/import-request";
 import { trackPackV2Schema } from "../../src/features/import/application/track-pack-v2-schema";
@@ -24,12 +24,16 @@ type RuntimePack = {
   version: number;
   track: { metadata: Record<string, unknown>; modules: { lessons: RuntimeLesson[] }[] };
 };
+type RuntimeQuestion = { id: string; version: number; choices: { id: string; content: string; correct: boolean; targetsError?: string; rationale?: string }[] };
+type AuthoredQuestion = { id: string; options: { key: string; text: string; targetsError?: string; rationale?: string }[] };
 type MediaRequest = { id: string; lessonId: string; description: string; status?: string };
 type MediaQueue = { requests: MediaRequest[] };
 
 const SNAPSHOT_VERSION = 8;
 const LESSON_VERSION = 3;
 const MEDIA_LESSON_VERSION = 4;
+/** Questions whose authored distractor rationales reach the runtime (2026-10-16). */
+const RATIONALE_QUESTION_VERSION = 3;
 const OLD_CREDIT = "VECTA Science V2 - representação determinística local; revisão humana pendente.";
 const OLD_REVIEW_NOTICE = "Versão estática em rascunho; revisão humana pendente.";
 
@@ -114,7 +118,27 @@ export function buildCriticalSciencePack(root = process.cwd()) {
     if (lesson.version !== MEDIA_LESSON_VERSION) lesson.version = LESSON_VERSION;
   }
 
+  // The approved option contract is {key, text}; distractor rationales live in author/questions.json.
+  // Carry them to the runtime choices (the error has to teach) as a new immutable Question version.
+  const authoredRationales: string[] = [];
+  for (const question of (pack as unknown as { questions: RuntimeQuestion[] }).questions) {
+    const authoredPath = resolve(root, SCIENCE_SOURCE_ROOT, "workspace", question.id.slice(0, 6), "author/questions.json");
+    if (!existsSync(authoredPath)) continue;
+    const authored = (readJson(authoredPath) as AuthoredQuestion[]).find(candidate => candidate.id === question.id);
+    if (!authored?.options.some(candidate => candidate.rationale)) continue;
+    for (const choice of question.choices) {
+      const option: AuthoredQuestion["options"][number] | undefined = authored.options.find(candidate => candidate.key === choice.id);
+      assert(option && option.text === choice.content, "Authored option differs from approved source " + question.id + "/" + choice.id);
+      if (choice.correct) { assert.equal(option.rationale, undefined, "Correct choice cannot carry a distractor rationale: " + question.id); continue; }
+      if (option.targetsError) choice.targetsError = option.targetsError;
+      if (option.rationale) choice.rationale = option.rationale;
+    }
+    question.version = RATIONALE_QUESTION_VERSION;
+    authoredRationales.push(question.id);
+  }
+
   const integration = pack.track.metadata.scienceIntegration as Record<string, unknown>;
+  integration.rationaleQuestionVersions = Object.fromEntries(authoredRationales.map(id => [id, RATIONALE_QUESTION_VERSION]));
   integration.runtimeMediaLessonVersions = Object.fromEntries(lessons.filter(lesson => lesson.version === MEDIA_LESSON_VERSION).map(lesson => [lesson.id, MEDIA_LESSON_VERSION]));
   assert.equal(Object.keys(integration.runtimeMediaLessonVersions as Record<string, number>).length, media.assets.length);
 

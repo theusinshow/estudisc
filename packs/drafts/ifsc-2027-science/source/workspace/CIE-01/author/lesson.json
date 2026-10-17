@@ -59,17 +59,24 @@
       "id": "CIE-01-B03",
       "type": "EXPLANATION",
       "title": "Base conceitual",
-      "content": "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo. Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final. Em vez de decorar frases isoladas, use essas relações como um modelo mental para interpretar situações envolvendo movimento.",
+      "content": "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo. Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final. Exemplo: numa pista de atletismo de 400 m, quem dá uma volta completa percorre 400 m de trajetória, mas termina onde começou, então o deslocamento é zero.",
       "items": [
         "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo.",
         "Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final."
       ]
     },
     {
+      "id": "CIE-01-B17",
+      "type": "DETERMINISTIC_COMPONENT_REQUEST",
+      "title": "Componente visual/interativo",
+      "request": "SVG estático comparando trajetória (caminho curvo, tracejado) e deslocamento (seta reta do início ao fim), com o caso da ida e volta.",
+      "status": "IMPLEMENTATION_REQUIRED"
+    },
+    {
       "id": "CIE-01-B04",
       "type": "EXPLANATION",
       "title": "Como as ideias se conectam",
-      "content": "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido. Um mesmo objeto pode estar em repouso para um observador e em movimento para outro. Em uma questão, procure descobrir o que muda, o que permanece e qual relação causal, funcional ou quantitativa está sendo descrita.",
+      "content": "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido. Um mesmo objeto pode estar em repouso para um observador e em movimento para outro. Exemplo: dentro de um ônibus andando, o passageiro sentado está parado em relação ao motorista e em movimento em relação a quem espera no ponto.",
       "items": [
         "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido.",
         "Um mesmo objeto pode estar em repouso para um observador e em movimento para outro."
@@ -79,7 +86,7 @@
       "id": "CIE-01-B05",
       "type": "EXPLANATION",
       "title": "Aplicações, limites e leitura científica",
-      "content": "Forças podem alterar o estado de movimento; o atrito é uma interação importante em situações cotidianas. Os movimentos da Terra mostram que estar 'parado' na superfície não significa estar parado no espaço. Esse último conjunto de ideias é importante para evitar generalizações: a alternativa correta precisa respeitar simultaneamente o conceito e as condições da situação apresentada.",
+      "content": "Forças podem alterar o estado de movimento; o atrito é uma interação importante em situações cotidianas. Os movimentos da Terra mostram que estar 'parado' na superfície não significa estar parado no espaço. Exemplo: um livro em cima da mesa está parado em relação à sala, mas gira junto com a Terra; em relação ao Sol, ele está em movimento.",
       "items": [
         "Forças podem alterar o estado de movimento; o atrito é uma interação importante em situações cotidianas.",
         "Os movimentos da Terra mostram que estar 'parado' na superfície não significa estar parado no espaço."
@@ -91,11 +98,11 @@
       "variant": "KEY_TERMS",
       "title": "Termos que precisam estar claros",
       "items": [
-        "referencial e posição",
-        "trajetória e deslocamento",
-        "rapidez/velocidade média em nível fundamental",
-        "interpretação de situações de movimento",
-        "movimentos da Terra como aplicação contextual quando pertinente"
+        "Referencial e posição",
+        "Trajetória e deslocamento",
+        "Rapidez média e velocidade média",
+        "Como interpretar situações de movimento",
+        "Movimentos da Terra: rotação e translação"
       ]
     },
     {
@@ -132,7 +139,7 @@
       "title": "Exemplo resolvido passo a passo",
       "prompt": "Uma pessoa caminha 100 m para leste e depois retorna 100 m ao ponto inicial. Qual interpretação é correta?",
       "answer": "Ela percorreu 200 m, mas seu deslocamento final é zero.",
-      "reasoning": "1) Use esta relação: Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo. 2) Use esta relação: Trajetória é o caminho descrito pelo móvel; deslocamento compara a posição inicial com a posição final. 3) Use esta relação: Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido. 4) Aplicando essas relações à situação, a conclusão correta é: Ela percorreu 200 m, mas seu deslocamento final é zero."
+      "reasoning": "Escolha o referencial: o ponto de onde a pessoa saiu.\n\nNa ida, ela anda 100 m para leste. Na volta, anda mais 100 m, agora para oeste. Somando todo o caminho, a distância percorrida é 100 m + 100 m = 200 m.\n\nAgora compare só o começo e o fim: ela saiu do ponto inicial e terminou nele. A posição final é igual à inicial, então o deslocamento é zero.\n\nPor isso, ela percorreu 200 m, mas seu deslocamento final é zero."
     },
     {
       "id": "CIE-01-B10",
@@ -149,10 +156,11 @@
       "id": "CIE-01-B15",
       "type": "EXPLANATION",
       "title": "Rapidez média e conversão de unidades",
-      "content": "Para calcular a rapidez média, divida a distância percorrida pelo tempo decorrido. A velocidade média também informa a direção e o sentido do deslocamento.",
+      "content": "Para calcular a rapidez média, divida a distância percorrida pelo tempo. Para a velocidade média, use o deslocamento, que também tem direção e sentido.",
       "items": [
         "v = Δs / Δt",
-        "v é a rapidez média, em m/s ou km/h; Δs é a distância percorrida, em m ou km; Δt é o intervalo de tempo, em s ou h.",
+        "Na velocidade média v, Δs é o deslocamento: a variação de posição, isto é, a posição final menos a posição inicial, em m ou km. Δt é o intervalo de tempo, em s ou h.",
+        "Quando o movimento é em linha reta e sempre no mesmo sentido, a distância percorrida e o deslocamento têm o mesmo valor; nesse caso, rapidez média e velocidade média também coincidem.",
         "Para converter: km/h para m/s, divida por 3,6; m/s para km/h, multiplique por 3,6."
       ]
     },
@@ -160,9 +168,9 @@
       "id": "CIE-01-B16",
       "type": "WORKED_EXAMPLE",
       "title": "Exemplo de cálculo passo a passo",
-      "prompt": "Uma ciclista percorre 180 m em 60 s, mantendo a mesma rapidez. Qual é sua rapidez em m/s e em km/h?",
+      "prompt": "Uma ciclista anda 180 m em linha reta, sempre no mesmo sentido, em 60 s. Qual é sua velocidade média em m/s e em km/h?",
       "answer": "3 m/s, que correspondem a 10,8 km/h.",
-      "reasoning": "1) Identifique os dados: Δs = 180 m e Δt = 60 s.\n\n2) Use v = Δs / Δt: v = 180 m / 60 s = 3 m/s.\n\n3) Converta para km/h: 3 × 3,6 = 10,8 km/h.\n\nConferência: 10,8 ÷ 3,6 = 3 m/s, igual ao valor calculado a partir da distância e do tempo."
+      "reasoning": "1) Identifique os dados: como ela não volta, o deslocamento é Δs = 180 m; o tempo é Δt = 60 s.\n\n2) Use v = Δs / Δt: v = 180 m / 60 s = 3 m/s.\n\n3) Converta para km/h: 3 × 3,6 = 10,8 km/h.\n\nConferência: 10,8 ÷ 3,6 = 3 m/s, igual ao valor calculado a partir do deslocamento e do tempo."
     },
     {
       "id": "CIE-01-B11",
@@ -195,7 +203,7 @@
         "mustMention": [
           "Um corpo está em movimento quando sua posição muda em relação a um referencial ao longo do tempo.",
           "Rapidez média relaciona a distância percorrida com o intervalo de tempo, enquanto a velocidade também envolve direção e sentido.",
-          "correção explícita de pelo menos um erro conceitual da aula"
+          "Exemplo de erro corrigido: trajetória e deslocamento não são sempre iguais; numa ida e volta de 100 m, o caminho tem 200 m e o deslocamento é zero."
         ]
       }
     }

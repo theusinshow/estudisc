@@ -24,7 +24,7 @@ import { hotspotSchema, authoredMapSchema, type HotspotConfig } from "./visual-i
 import type { ImportedLessonBlock, LessonBlockRendererProps } from "@/features/lessons/blocks/types";
 import { splitWrittenNote, writtenNoteRole } from "./written-note";
 import { WrittenResponsePanel } from "./written-response-panel";
-import { studentPredictionPrompt } from "./student-copy";
+import { studentPredictionPrompt, withoutPlaceholders, withoutRepeatedPrompt } from "./student-copy";
 
 type BlockRenderer = (block: ImportedLessonBlock) => React.ReactNode;
 
@@ -131,7 +131,7 @@ function renderConceptBlock(block: ImportedLessonBlock) {
 
   return (
     <BlockShell label="Conceito" variant="concept">
-      <strong>{parsed.data.title ?? parsed.data.conceptId ?? "Conceito importado"}</strong>
+      <strong>{parsed.data.title ?? "Conceito"}</strong>
       {parsed.data.content ? <Paragraphs text={parsed.data.content} /> : null}
     </BlockShell>
   );
@@ -155,7 +155,7 @@ function renderPredictionBlock(block: ImportedLessonBlock) {
   if (getFeatureFlags().FEATURE_INTERACTIVE_LESSONS) {
     const parsed = titledTextBlockSchema.safeParse(block.payload), extra = block.payload as { observation?: unknown; explanation?: unknown };
     if (!parsed.success) return <InvalidBlock block={block}/>;
-    return <PredictionPanel title={parsed.data.title ?? "Antes de observar"} prompt={studentPredictionPrompt(parsed.data.content)} observation={typeof extra.observation === "string" ? extra.observation : undefined} explanation={typeof extra.explanation === "string" ? extra.explanation : undefined} interaction={{ target: "block", id: block.stableId }}/>;
+    return <PredictionPanel title={parsed.data.title ?? "Antes de observar"} prompt={studentPredictionPrompt(parsed.data.content)} observation={typeof extra.observation === "string" ? withoutRepeatedPrompt(extra.observation, parsed.data.content) : undefined} explanation={typeof extra.explanation === "string" ? extra.explanation : undefined} interaction={{ target: "block", id: block.stableId }}/>;
   }
   const payload = block.payload as { content?: unknown } | null;
   return renderTitledTextBlock(typeof payload?.content === "string" ? { ...block, payload: { ...payload, content: studentPredictionPrompt(payload.content) } } : block, "Predição", "prediction");
@@ -172,7 +172,9 @@ function renderTitledTextBlock(block: ImportedLessonBlock, label: string, varian
     return <InvalidBlock block={block} />;
   }
 
-  return <TitledTextBlock label={label} payload={parsed.data} variant={variant} />;
+  const content = withoutPlaceholders(parsed.data.content);
+  if (!content) return null;
+  return <TitledTextBlock label={label} payload={{ ...parsed.data, content }} variant={variant} />;
 }
 
 function renderUnsupportedBlock(block: ImportedLessonBlock) {

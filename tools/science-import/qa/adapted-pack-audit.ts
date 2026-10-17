@@ -91,7 +91,8 @@ export function auditAdaptedPack(pack: TrackPackV2) {
       const operation = { UNDERSTAND: "interpret", ANALYZE: "analyze", APPLY: "apply", TRANSFER: "apply", EVALUATE: "evaluate" }[original.cognitiveOperation as "UNDERSTAND" | "ANALYZE" | "APPLY" | "TRANSFER" | "EVALUATE"];
       assert.deepEqual(question.cognitiveOperations, [operation]);
       assert.equal(question.type, "multiple_choice");
-      assert.equal(question.version, 2);
+      // Questions that carry the authored distractor rationales are version 3; the rest stay at 2.
+      assert.equal(question.version, question.choices?.some(choice => choice.rationale) ? 3 : 2);
       assert.equal(question.status, "draft");
       assert.deepEqual(question.choices?.map(choice => ({ key: choice.id, text: choice.content })), original.options);
       assert.deepEqual(question.choices?.filter(choice => choice.correct).map(choice => choice.id), [original.correctOption]);

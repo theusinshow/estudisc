@@ -5,6 +5,7 @@ import { ALL, PACK, PILOT, OUTPUT, buildGhPack, ghPackSchema, loadGh, runtimeId,
 import { readJson } from "../tools/science-import/mapper";
 import { hashCanonicalJson } from "@/lib/canonical-json";
 import { LessonBlockList } from "@/features/lessons/blocks";
+import { isPlaceholderOnly } from "@/features/lessons/blocks/student-copy";
 import { QuestionPanel } from "@/features/activities/components/question-panel";
 import { studentQuestion } from "@/features/questions/student-view";
 import { evaluateQuestion, canExposeQuestion } from "@/features/questions/api";
@@ -45,6 +46,9 @@ it("renders unchanged GH text and Questions with core evaluators, without exposi
     const text = document.body.textContent!;
     expect(text).not.toMatch(/Bloco inválido|Conteúdo inválido|ainda não possui renderer aprovado/i);
     for (const block of original.lesson.blocks) {
+      // Authoring placeholders ("Ilustração pendente: …") are never shown to students.
+      const runtime = lesson.blocks.find(b => b.id === runtimeId(block.id));
+      if (runtime && isPlaceholderOnly(runtime.payload)) { expect(text, block.id).not.toContain("Ilustração pendente"); continue; }
       const guide = typeof block.answerGuide === "string" ? [block.answerGuide] : block.answerGuide?.mustMention ?? [];
       const reasoning = Array.isArray(block.reasoning) ? block.reasoning : [block.reasoning];
       for (const value of [block.title, block.content, ...(block.items ?? []), block.prompt, block.answer, ...reasoning, ...guide].filter((v): v is string => !!v)) expect(text, block.id).toContain(value);

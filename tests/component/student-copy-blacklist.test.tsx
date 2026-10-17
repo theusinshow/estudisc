@@ -13,7 +13,8 @@ import { calculateConceptMasteryV2 } from "@/features/mastery/mastery-policy-v2"
 type Pack = { questions: unknown[]; track: { modules: { lessons: { id: string; concepts?: { title: string }[]; blocks: { id: string; type: string; payload: Record<string, unknown> }[] }[] }[] } };
 const root = "packs/drafts";
 const packs = readdirSync(root).flatMap(dir => readdirSync(join(root, dir)).filter(file => file.endsWith(".pack.json")).map(file => JSON.parse(readFileSync(join(root, dir, file), "utf8")) as Pack));
-const everywhere = blacklist.everywhere.map(rule => ({ ...rule, regex: new RegExp(rule.pattern, "i") }));
+const compile = (rules: { pattern: string; why: string }[], flags: string) => rules.map(rule => ({ ...rule, regex: new RegExp(rule.pattern, flags) }));
+const everywhere = [...compile(blacklist.rendered, "i"), ...compile(blacklist.renderedExact, "")];
 const visibleText = (markup: string) => {
   const document = new DOMParser().parseFromString(markup, "text/html");
   document.querySelectorAll(".math-visual").forEach(node => node.remove());
@@ -51,6 +52,18 @@ describe("student-facing copy never shows internal wording", () => {
     expect(offenders(text)).toEqual([]);
     expect(text).toContain("Explique movimento.");
     expect(text).not.toContain("Um corpo se move"); // opens only after "Conferir"
+  });
+
+  it("fails when an internal label is reintroduced", () => {
+    const text = visibleText(renderToStaticMarkup(<p>POLÍTICA MASTERY.V2 · Força total: 0 · CIE-01-Q017</p>));
+    expect(offenders(text).length).toBeGreaterThanOrEqual(3);
+  });
+
+  it("in student-facing UI code", () => {
+    const source = compile(blacklist.source, "i");
+    const files = readdirSync("src", { recursive: true }).map(String).filter(file => file.endsWith(".tsx") && !/admin|content-qa/.test(file));
+    const found = files.flatMap(file => { const text = readFileSync(join("src", file), "utf8"); return source.filter(rule => rule.regex.test(text)).map(rule => `${file}: ${rule.pattern}`); });
+    expect(found).toEqual([]);
   });
 
   it("in concept labels and mastery reasons", () => {

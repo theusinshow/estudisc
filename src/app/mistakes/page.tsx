@@ -50,6 +50,7 @@ export default async function MistakesPage() {
               {group.resolvedCount>0&&<small>{group.resolvedCount} {group.resolvedCount===1?"já corrigido":"já corrigidos"}</small>}
               <Link href={`/concepts/${encodeURIComponent(group.conceptId)}`}>Rever a explicação e as aulas</Link>
               {group.activeMistakeId&&<TargetedPracticeControls kind="remediation" mistakeId={group.activeMistakeId}/>}
+              {!reflections.some(r=>group.mistakeIds.includes(r.mistakeId))&&<p>Ainda não sabemos por que você errou. Quer contar?</p>}
               <MistakeReflectionForm mistakeId={group.activeMistakeId??group.mistakeIds[0]}/>
               {reflections.filter(r=>group.mistakeIds.includes(r.mistakeId)).length>0&&<details><summary>O que você anotou</summary><ul>{reflections.filter(r=>group.mistakeIds.includes(r.mistakeId)).map(r=><li key={r.id}><strong>{pedagogicalMistakeLabels[r.category]} </strong>{r.note&&<p>{r.note}</p>}</li>)}</ul></details>}
               <details><summary>Ver cada erro</summary><ul>{mistakes.filter(row=>group.mistakeIds.includes(row.id)).map(row=><li key={row.id}>Erro {categoryLabel(row.category)}, em {dayMonth.format(row.createdAt)} · {statusLabel(row.status)}</li>)}</ul></details>

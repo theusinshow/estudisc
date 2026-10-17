@@ -7,6 +7,7 @@ import { LessonStepper, type LessonCompletion, type LessonStep } from "./lesson-
 import { LessonResumeProvider } from "./resume-provider";
 import type { ResumeScope, ResumeSnapshot } from "./resume-contracts";
 import { writtenNoteRole } from "./blocks/written-note";
+import { isPlaceholderOnly } from "./blocks/student-copy";
 
 const blockKind: Record<string, LessonStep["kind"]> = { concept: "concept", "worked-example": "example", example: "example", warning: "warning", summary: "summary", figure: "figure", prediction: "prediction" };
 // Only blocks the student acts on are called "Atividade"; anything else to read is "Leitura".
@@ -16,7 +17,9 @@ const stepLabel: Record<LessonStep["kind"], string> = { intro: "Para começar", 
 const config = (activity: ActivityRecord) => (activity.config ?? {}) as { phase?: string; checkpointFor?: string };
 
 /** Turns the existing lesson blocks and activities into one-idea-per-screen steps. Content-driven, no subject branches. */
-export function LessonSteps({ blocks, activities, completion, resumeScope, resumeSnapshot = null, aiScope }: Readonly<{ blocks: ReadonlyArray<ImportedLessonBlock>; activities: ReadonlyArray<ActivityRecord>; completion?: LessonCompletion; resumeScope?: ResumeScope; resumeSnapshot?: ResumeSnapshot | null; aiScope?: Pick<ResumeScope,"trackId"|"lessonId"|"version"> }>) {
+export function LessonSteps({ blocks: allBlocks, activities, completion, resumeScope, resumeSnapshot = null, aiScope }: Readonly<{ blocks: ReadonlyArray<ImportedLessonBlock>; activities: ReadonlyArray<ActivityRecord>; completion?: LessonCompletion; resumeScope?: ResumeScope; resumeSnapshot?: ResumeSnapshot | null; aiScope?: Pick<ResumeScope,"trackId"|"lessonId"|"version"> }>) {
+  // A block that is only an authoring placeholder ("Ilustração pendente: …") gets no step of its own.
+  const blocks = allBlocks.filter(block => !isPlaceholderOnly(block.payload));
   const steps: Array<Omit<LessonStep, "label"> & { node: ReactNode }> = [];
   const used = new Set<string>();
   let pendingText: ImportedLessonBlock[] = [];
