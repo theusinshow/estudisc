@@ -5,34 +5,34 @@
     "options": [
       {
         "key": "A",
-        "text": "A rapidez média foi 2,5 m/s no trecho registrado.",
+        "text": "A rapidez média foi 0,3 m/s.",
         "targetsError": "calculation",
-        "rationale": "Atribui ao percurso uma duração menor que a indicada."
+        "rationale": "Esse valor vem de 80 ÷ 240, o tempo dividido pela distância. A rapidez média é a distância dividida pelo tempo: 240 ÷ 80."
       },
       {
         "key": "B",
-        "text": "Júlia avançou, em média, 3 m a cada segundo do trecho."
+        "text": "A rapidez média foi 3 m/s."
       },
       {
         "key": "C",
-        "text": "A rapidez média foi 1,5 m/s ao longo do percurso.",
-        "targetsError": "interpretation",
-        "rationale": "Considera apenas parte do trajeto ao estimar a rapidez."
+        "text": "A rapidez média foi 10,8 m/s.",
+        "targetsError": "conceptual",
+        "rationale": "10,8 é o valor de 3 m/s convertido para km/h (3 × 3,6). A pergunta pede o resultado em metros por segundo."
       },
       {
         "key": "D",
-        "text": "A rapidez média foi 4 m/s durante a corrida.",
+        "text": "A rapidez média foi 320 m/s.",
         "targetsError": "calculation",
-        "rationale": "Usa um intervalo menor do que os 80 s anotados."
+        "rationale": "320 é a soma 240 + 80. Distância e tempo não se somam: divida a distância pelo tempo."
       },
       {
         "key": "E",
-        "text": "A rapidez média foi 0,3 m/s no trecho de 240 m.",
-        "targetsError": "conceptual",
-        "rationale": "Confunde a comparação entre distância e tempo ao determinar a taxa."
+        "text": "A rapidez média foi 1,5 m/s.",
+        "targetsError": "interpretation",
+        "rationale": "Esse valor usaria só metade do trecho (120 m) nos 80 s. Júlia correu os 240 m inteiros."
       }
     ],
-    "explanation": "A equipe anotou 240 m em 80 s; a razão entre essas medidas é 3 m/s. As demais estimativas não correspondem à distância e ao intervalo registrados.",
+    "explanation": "Rapidez média é a distância dividida pelo tempo: 240 m ÷ 80 s = 3 m/s. Como Júlia correu em linha reta e não voltou, esse também é o valor da velocidade média.",
     "difficulty": "FOUNDATION",
     "cognitiveOperation": "UNDERSTAND",
     "conceptIds": [
@@ -255,9 +255,9 @@
       },
       {
         "key": "C",
-        "text": "Na faixa lisa, o carrinho conserva melhor o movimento depois de ser solto.",
+        "text": "Na faixa lisa, o carrinho nunca para, porque ali não existe resistência.",
         "targetsError": "conceptual",
-        "rationale": "Desconsidera que a resistência restante também altera o movimento do carrinho."
+        "rationale": "Na faixa lisa há menos atrito, mas ainda há algum: o carrinho anda mais e acaba parando."
       },
       {
         "key": "D",

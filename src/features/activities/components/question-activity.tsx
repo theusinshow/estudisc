@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { isLearningAiAvailable } from "@/features/ai/availability";
 
 import { MathText, Paragraphs } from "@/components/ui/paragraphs";
 import { getDatabaseUrl } from "@/db/connection";
@@ -9,7 +10,6 @@ import { getOwnerId, getOwnerProfile } from "@/features/auth/owner";
 import type { Question } from "@/features/questions/contracts";
 import type { QuestionReferenceConfig } from "../application/question-reference";
 import { QuestionPanel } from "./question-panel";
-import { getFeatureFlags } from "@/lib/feature-flags";
 
 export async function QuestionActivity({ config,activityStableId,sessionId }: { config: QuestionReferenceConfig;activityStableId:string;sessionId?:string }) {
   let view;
@@ -17,7 +17,7 @@ export async function QuestionActivity({ config,activityStableId,sessionId }: { 
     const repository=getDatabaseUrl()==="memory://local"?new MemoryQuestionStudyRepository():new QuestionStudyRepository();
     view=await repository.view(await getOwnerId(),activityStableId,config.questionId,config.questionVersion,sessionId);
   } catch(error) {if(!(error instanceof QuestionUnavailableError))throw error;}
-  if(view)return <QuestionPanel question={view.question} hintCount={view.hintCount} activityStableId={activityStableId} sessionId={sessionId} lastAnswer={view.lastAnswer} lastAttempt={view.lastAttempt} assistance={view.assistance} aiEnabled={getFeatureFlags().FEATURE_AI_LEARNING} />;
+  if(view)return <QuestionPanel question={view.question} hintCount={view.hintCount} activityStableId={activityStableId} sessionId={sessionId} lastAnswer={view.lastAnswer} lastAttempt={view.lastAttempt} assistance={view.assistance} aiEnabled={isLearningAiAvailable()} />;
   return <UnavailableQuestion questionId={config.questionId} version={config.questionVersion} />;
 }
 

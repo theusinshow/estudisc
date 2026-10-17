@@ -1,4 +1,4 @@
-import { and, eq, lte } from "drizzle-orm";
+import { and, eq, lte, or, sql } from "drizzle-orm";
 import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 import type * as schema from "@/db/schema";
 import { assessmentInstances, attempts, concepts, mistakes, questions, questionVersions, reviewSchedules } from "@/db/schema";
@@ -17,7 +17,7 @@ export async function sqlTargetedSelection(db: PgDatabase<PgQueryResultHKT, type
   const [exam] = await db.select({ id: assessmentInstances.id }).from(assessmentInstances).where(and(eq(assessmentInstances.ownerId, ownerId), eq(assessmentInstances.status, "ACTIVE"), eq(assessmentInstances.mode, "EXAM"))).limit(1);
   if (exam) throw new TargetedPracticeError("exam_active");
   if (request.kind === "review") {
-    const rows = await db.select({ id: concepts.stableId }).from(reviewSchedules).innerJoin(concepts, eq(concepts.id, reviewSchedules.conceptId)).where(and(eq(reviewSchedules.ownerId, ownerId), lte(reviewSchedules.nextReviewAt, now)));
+    const rows = await db.select({ id: concepts.stableId }).from(reviewSchedules).innerJoin(concepts, eq(concepts.id, reviewSchedules.conceptId)).where(and(eq(reviewSchedules.ownerId, ownerId), or(lte(reviewSchedules.nextReviewAt, now), sql`exists (select 1 from ${mistakes} where ${mistakes.ownerId} = ${ownerId} and ${mistakes.conceptId} = ${reviewSchedules.conceptId} and ${mistakes.status} = 'active')`)));
     return reviewSelection(rows.map(r => r.id), request.conceptId);
   }
   const [row] = await db.select({ conceptId: concepts.stableId, questionId: questions.stableId }).from(mistakes)
@@ -29,7 +29,7 @@ export async function sqlTargetedSelection(db: PgDatabase<PgQueryResultHKT, type
 }
 export function memoryTargetedSelection(store: MemoryStore, ownerId: string, request: TargetedPracticeRequest, now: Date): TargetedSelection {
   if (store.assessmentInstances.some(a => a.ownerId === ownerId && a.status === "ACTIVE" && a.snapshot.mode === "EXAM")) throw new TargetedPracticeError("exam_active");
-  if (request.kind === "review") return reviewSelection(store.reviewSchedules.filter(r => r.ownerId === ownerId && r.nextReviewAt <= now).map(r => r.conceptStableId), request.conceptId);
+  if (request.kind === "review") return reviewSelection(store.reviewSchedules.filter(r => r.ownerId === ownerId && (r.nextReviewAt <= now || store.mistakes.some(m => m.ownerId === ownerId && m.conceptStableId === r.conceptStableId && m.status === "active"))).map(r => r.conceptStableId), request.conceptId);
   const mistake = store.mistakes.find(m => m.ownerId === ownerId && m.id === request.mistakeId && m.status === "active");
   const attempt = mistake && store.attempts.find(a => a.ownerId === ownerId && a.id === mistake.attemptId);
   if (!mistake || !attempt) throw new TargetedPracticeError("target_unavailable");

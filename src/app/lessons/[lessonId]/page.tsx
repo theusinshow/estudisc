@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { isLearningAiAvailable } from "@/features/ai/availability";
 import Link from "next/link";
 import { z } from "zod";
 
@@ -15,6 +16,7 @@ import { getLessonResume } from "@/features/lessons/resume-api";
 import { canAccessLesson, resolveAccessState } from "@/features/payments/access-guard";
 import { PaywallPanel } from "@/features/payments/paywall-panel";
 import { subjectCodeFromTitle } from "@/components/ui/subject";
+import { studentConceptLabel } from "@/features/concepts/student-label";
 
 type LessonPageProps = Readonly<{
   params: Promise<{ lessonId: string }>;
@@ -55,7 +57,7 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
   const stepped = !lesson.activities.some(activity => activity.type === "code" || activity.type === "debug");
   const resumeScope = stepped && getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? lesson.resumeScope : undefined;
   const resumeSnapshot = await getLessonResume(resumeScope);
-  const aiScope=getFeatureFlags().FEATURE_AI_LEARNING&&(!lesson.metadata?.kind||lesson.metadata.status==="published")?lesson.resumeScope:undefined;
+  const aiScope=isLearningAiAvailable()&&(!lesson.metadata?.kind||lesson.metadata.status==="published")?lesson.resumeScope:undefined;
 
   return (
     <AppShell mode={getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? "focus" : "page"} exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha" }}>
@@ -98,7 +100,7 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
             {lesson.concepts.map((concept) => (
               <li key={concept.stableId}>
                 <Link href={`/concepts/${concept.stableId}`}>
-                  <strong>{concept.title}</strong>
+                  <strong>{studentConceptLabel(concept.title)}</strong>
                   <span>{concept.summary}</span>
                 </Link>
               </li>

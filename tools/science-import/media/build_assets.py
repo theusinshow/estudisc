@@ -13,6 +13,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 QUEUE = json.loads((SOURCE / 'MEDIA-PRODUCTION/DETERMINISTIC-ASSET-QUEUE.json').read_text(encoding='utf-8-sig'))
 REQUESTS = {r['lessonId']: r for r in QUEUE['requests']}
 DIDACTIC_CAPTIONS = {
+    'CIE-01': 'A trajetória é o caminho feito; o deslocamento liga o início ao fim em linha reta.',
     'CIE-06': 'A chave aberta interrompe o circuito; fechada, permite a passagem de corrente.',
     'CIE-07': 'O consumo em quilowatt-hora é a potência em quilowatts multiplicada pelo tempo em horas.',
     'CIE-09': 'Novas evidências levaram a diferentes modelos científicos para a estrutura do átomo.',
@@ -78,7 +79,7 @@ class Diagram:
         return raw, height
 
 
-def register(number, drawing, family, limitation=None):
+def register(number, drawing, family, limitation=None, alt=None):
     lesson_id, lesson, source = load(number)
     request = REQUESTS[lesson_id]
     raw, height = drawing.finish()
@@ -89,7 +90,7 @@ def register(number, drawing, family, limitation=None):
     assets.append({
         'requestId': request['id'], 'path': f'packs/drafts/ifsc-2027-science/media/{filename}',
         'sha256': hashlib.sha256(path.read_bytes()).hexdigest(), 'mime': 'svg+xml',
-        'alt': lesson['title'], 'caption': DIDACTIC_CAPTIONS[lesson_id],
+        'alt': alt or lesson['title'], 'caption': DIDACTIC_CAPTIONS[lesson_id],
         'credit': 'Estudisc — diagrama didático.',
         'longDescription': text_equivalent, 'width': WIDTH, 'height': height,
         'status': 'LOCAL_DETERMINISTIC_DRAFT',
@@ -115,6 +116,29 @@ def source_cards(number, groups, family='SOURCE_FACT_COMPARISON', flow=False, li
         drawing.card(heading, [source['keyFacts'][index] for index in indexes])
     register(number, drawing, family, limitation)
 
+
+# Trajectory (dashed curve) versus displacement (straight arrow); line style and labels, never color alone.
+_, lesson, source = load(1)
+example = next(b for b in lesson['blocks'] if b['type'] == 'WORKED_EXAMPLE')
+assert 'percorreu 200 m' in example['reasoning'] and 'deslocamento é zero' in example['reasoning']
+drawing = Diagram('Trajetória × deslocamento')
+top = drawing.y + 10
+ground = top + 150
+drawing.parts.append(f'<path d="M50 {ground}C80 {top},170 {top-10},210 {top+60}S285 {ground-10},310 {ground}" fill="none" stroke="#102a43" stroke-width="3" stroke-dasharray="9 7"/>')
+drawing.parts.append(f'<path d="M50 {ground}H296" stroke="#b5482a" stroke-width="5"/><path d="M290 {ground-10}L310 {ground}L290 {ground+10}Z" fill="#b5482a"/>')
+drawing.parts.append(f'<circle cx="50" cy="{ground}" r="7" fill="#102a43"/><circle cx="310" cy="{ground}" r="7" fill="#102a43"/>')
+for x, value in [(50, 'Início'), (310, 'Fim')]:
+    drawing.labels.append(value)
+    drawing.parts.append(f'<text x="{x}" y="{ground+30}" text-anchor="middle" fill="#102a43" font-family="Arial, sans-serif" font-size="16" font-weight="700">{value}</text>')
+for x, y, value in [(268, top+40, 'trajetória'), (180, ground-12, 'deslocamento')]:
+    drawing.labels.append(value)
+    drawing.parts.append(f'<text x="{x}" y="{y}" text-anchor="middle" fill="#102a43" font-family="Arial, sans-serif" font-size="16">{value}</text>')
+drawing.labels.append('Desenho: um caminho curvo e tracejado vai do Início ao Fim; uma seta reta liga o Início ao Fim.')
+drawing.y = ground + 50
+drawing.card('Trajetória', ['É o caminho que o corpo faz (linha tracejada).'])
+drawing.card('Deslocamento', ['Liga a posição inicial à final em linha reta e tem sentido (seta).'])
+drawing.card('Ida e volta', ['Quem anda 100 m e volta ao ponto de partida percorre 200 m, mas o deslocamento é zero.'])
+register(1, drawing, 'TRAJECTORY_DISPLACEMENT_COMPARISON', alt='Trajetória curva e deslocamento em linha reta entre o início e o fim')
 
 # Circuits use only the battery/switch/lamp/wires requested in the queue.
 # Both topologies have identical connections except for the switch contact.
@@ -222,7 +246,7 @@ for number, reason in PENDING.items():
 
 assets.sort(key=lambda row: row['requestId'])
 coverage.sort(key=lambda row: row['requestId'])
-assert len(assets) == 13 and len(coverage) == 24
+assert len(assets) == 14 and len(coverage) == 25
 assert set(row['requestId'] for row in coverage) == {row['id'] for row in QUEUE['requests']}
 
 validation = []
@@ -251,7 +275,7 @@ for asset in assets:
                        'mobileViewBoxVerified': True})
 
 for filename, value in [('assets.json', {'assets': assets}),
-                        ('asset-status.json', {'sourceQueueCount': 24, 'localDraftStaticFallbacks': 13,
+                        ('asset-status.json', {'sourceQueueCount': 25, 'localDraftStaticFallbacks': 14,
                           'pendingWithoutAssets': 11, 'factualReviewStatus': 'PENDING',
                           'visualReviewStatus': 'PENDING', 'requests': coverage}),
                         ('validation.json', {'status': 'PASSED_PROGRAMMATIC_CHECKS',

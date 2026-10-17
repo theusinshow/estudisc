@@ -6,8 +6,26 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useLessonResume } from "./resume-provider";
 import { restoredStep } from "./resume-contracts";
 import { playStepTransition } from "@/components/motion/step-transition";
+import { ATTEMPT_RECORDED_EVENT, type AttemptRecordedDetail } from "@/features/progress/live-progress-summary";
+import { MathText } from "@/components/ui/paragraphs";
 
-export type LessonStep = { id: string; kind: "intro" | "concept" | "example" | "warning" | "summary" | "check" | "practice" | "exit" | "interaction" | "figure" | "prediction"; label: string; node: ReactNode };
+/** Questions answered in this visit whose latest answer is still wrong; the server keeps the durable record in /review. */
+function useOpenMistakes() {
+  const [latest, setLatest] = useState<ReadonlyMap<string, AttemptRecordedDetail>>(new Map());
+  useEffect(() => {
+    const record = (event: Event) => {
+      const detail = (event as CustomEvent<AttemptRecordedDetail | undefined>).detail;
+      if (detail?.questionId) setLatest(current => new Map(current).set(detail.questionId, detail));
+    };
+    window.addEventListener(ATTEMPT_RECORDED_EVENT, record);
+    return () => window.removeEventListener(ATTEMPT_RECORDED_EVENT, record);
+  }, []);
+  return [...latest.values()].filter(item => !item.correct);
+}
+// Formulas are never cut in half.
+const shortStem = (stem: string) => { const text = stem.replace(/\s+/g, " ").trim(); return text.length > 90 && !text.includes("$") ? `${text.slice(0, 87)}…` : text; };
+
+export type LessonStep = { id: string; kind: "intro" | "concept" | "example" | "warning" | "summary" | "check" | "practice" | "exit" | "interaction" | "reading" | "figure" | "prediction"; label: string; node: ReactNode };
 export type LessonCompletion = Readonly<{ trackHref: string; nextLesson?: Readonly<{ href: string; title: string }> }>;
 
 const DONE_HASH = "#concluida";
@@ -25,6 +43,7 @@ function stepFromHash(hash: string, total: number) {
 export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonStep[]; completion?: LessonCompletion }>) {
   const ready = useSyncExternalStore(subscribe, clientReady, serverReady);
   const resume = useLessonResume();
+  const openMistakes = useOpenMistakes();
   const restored = restoredStep(steps.map(step => step.id), resume?.data.stepId ?? null, resume?.data.completed ?? false);
   const [index, setIndex] = useState(() => restored.index);
   const [showAll, setShowAll] = useState(() => resume?.data.showAll ?? false);
@@ -72,7 +91,13 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
       {!showAll && done && (
         <section className="lesson-step lesson-complete" aria-labelledby="lesson-complete-title">
           <h2 id="lesson-complete-title">Você chegou ao fim da aula</h2>
-          <p>O domínio de cada conceito vem das respostas enviadas às questões, da prática sem ajuda e das revisões ao longo do tempo.</p>
+          {openMistakes.length ? (
+            <div className="lesson-mistakes">
+              <p><strong>{openMistakes.length === 1 ? "1 questão ficou com erro" : `${openMistakes.length} questões ficaram com erro`} nesta aula.</strong> Revisar agora, com a aula fresca, ajuda a fixar o que faltou.</p>
+              <ul>{openMistakes.map(item => <li key={item.questionId}><MathText text={shortStem(item.stem)} /></li>)}</ul>
+              <Link className="secondary-button" href="/review">Revisar meus erros</Link>
+            </div>
+          ) : <p>Você aprende de verdade quando acerta sem ajuda e volta a revisar nos próximos dias.</p>}
           <nav className="lesson-complete-actions" aria-label="Depois da aula">
             {completion?.nextLesson ? (
               <Link className="primary-button" href={completion.nextLesson.href}>Próxima aula: {completion.nextLesson.title}<ArrowRight aria-hidden="true" /></Link>

@@ -1,13 +1,10 @@
 import type { ConceptEvidenceRecord } from "@/db/repositories/concept-evidence-repository";
 import { masteryStateLabels, type MasteryState } from "@/features/mastery/mastery-policy";
 import { calculateVersionedMastery } from "@/features/mastery/mastery-policy-v2";
+import { answeredQuestions, STUDY_TIME_ZONE, studyDayKey, studyStreak } from "./study-days";
+import { subjectAreas } from "./subject-alias";
 
 export const masteryOrder: readonly MasteryState[] = ["unseen", "introduced", "understood", "practicing", "strong", "mastered"];
-
-/** Saving availability is configuration, not evidence that a study day happened. */
-export function studyActivityDates(events: readonly { type: string; occurredAt: Date }[]) {
-  return events.filter(event => !["study_plan_applied","evolution_schema_activation","ai_request"].includes(event.type)).map(event => event.occurredAt);
-}
 
 export type OverviewConcept = Readonly<{ stableId: string; title: string; areaTitles: readonly string[] }>;
 
@@ -37,12 +34,13 @@ export type ProgressOverview = Readonly<{
   week: readonly ActivityDay[];
   activeDaysLast28: number;
   activeDaysThisWeek: number;
+  /** Consecutive days with an answer, ending today (or yesterday while today is still open). */
+  streakDays: number;
 }>;
 
 type OverviewInput = Readonly<{
   concepts: readonly OverviewConcept[];
   evidence: readonly ConceptEvidenceRecord[];
-  eventDates: readonly Date[];
   now: Date;
   timeZone?: string;
   weeks?: number;
@@ -54,9 +52,11 @@ const COOLING_LIMIT = 5;
 
 /**
  * Progress is described by concept mastery from append-only evidence, computed with the same versioned
- * policy used everywhere else. Study days count study events and answered attempts; there is no streak to lose.
+ * policy used everywhere else. A study day is a day with an answered question (progress/study-days), the same rule as Hoje.
  */
-export function buildProgressOverview({ concepts, evidence, eventDates, now, timeZone = "America/Sao_Paulo", weeks = 16 }: OverviewInput): ProgressOverview {
+export function buildProgressOverview({ concepts: listed, evidence, now, timeZone = STUDY_TIME_ZONE, weeks = 16 }: OverviewInput): ProgressOverview {
+  // A Concept listed by two tracks is one Concept: the ladder counts always add up to the total.
+  const concepts = [...new Map(listed.map((concept) => [concept.stableId, concept])).values()];
   const evidenceByConcept = new Map<string, ConceptEvidenceRecord[]>();
   for (const item of evidence) {
     const list = evidenceByConcept.get(item.conceptStableId) ?? [];
@@ -88,7 +88,7 @@ export function buildProgressOverview({ concepts, evidence, eventDates, now, tim
 
   const areaMap = new Map<string, { conceptCount: number; practicedCount: number; levelSum: number }>();
   for (const entry of assessed) {
-    for (const title of entry.concept.areaTitles) {
+    for (const title of subjectAreas(entry.concept.areaTitles)) {
       const area = areaMap.get(title) ?? { conceptCount: 0, practicedCount: 0, levelSum: 0 };
       area.conceptCount += 1;
       area.levelSum += entry.level;
@@ -100,9 +100,8 @@ export function buildProgressOverview({ concepts, evidence, eventDates, now, tim
     .map(([title, area]) => ({ title, conceptCount: area.conceptCount, practicedCount: area.practicedCount, averageLevel: area.levelSum / area.conceptCount }))
     .sort((left, right) => left.title.localeCompare(right.title, "pt-BR"));
 
-  // Question answers are recorded as attempts with evidence, not always as study events, so both count.
-  const attemptDates = new Map(evidence.map((item) => [item.attemptId ?? item.id, item.createdAt]));
-  const { activity, week } = buildActivity([...eventDates, ...attemptDates.values()], now, timeZone, weeks);
+  const answerDates = answeredQuestions(evidence, now).map((answer) => answer.createdAt);
+  const { activity, week } = buildActivity(answerDates, now, timeZone, weeks);
   const todayIndex = activity.findIndex((day) => day.isToday);
   const last28 = activity.slice(Math.max(0, todayIndex - 27), todayIndex + 1);
 
@@ -116,7 +115,8 @@ export function buildProgressOverview({ concepts, evidence, eventDates, now, tim
     activity,
     week,
     activeDaysLast28: last28.filter((day) => day.count > 0).length,
-    activeDaysThisWeek: week.filter((day) => day.count > 0).length
+    activeDaysThisWeek: week.filter((day) => day.count > 0).length,
+    streakDays: studyStreak(new Set(answerDates.map((date) => studyDayKey(date, timeZone))), now, timeZone)
   };
 }
 

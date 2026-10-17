@@ -8,7 +8,7 @@ import { getSellerIdentity } from "@/features/public-site/seller";
 export const metadata: Metadata = { title: "Suporte — Estudisc", description: "Perguntas frequentes sobre conta, pagamento, reembolso e estudo no Estudisc, e como falar com a gente." };
 export const dynamic = "force-dynamic";
 
-type SupportPageProps = Readonly<{ searchParams?: Promise<{ erro?: string }> }>;
+type SupportPageProps = Readonly<{ searchParams?: Promise<{ erro?: string; acesso?: string }> }>;
 
 /** Question reference sent by the "report a problem" link: a stable id and a version, nothing else. */
 function questionReference(value: string | undefined) {
@@ -48,7 +48,9 @@ const faq: ReadonlyArray<{ topic: string; items: ReadonlyArray<{ q: string; a: s
 
 export default async function SuportePage({ searchParams }: SupportPageProps) {
   const seller = getSellerIdentity();
-  const reference = questionReference((await searchParams)?.erro);
+  const params = await searchParams;
+  const reference = questionReference(params?.erro);
+  const accessRequest = params?.acesso === "1";
   return (
     <PublicLayout labelledBy="suporte-title">
       <section className="public-hero">
@@ -63,6 +65,16 @@ export default async function SuportePage({ searchParams }: SupportPageProps) {
           <p>Obrigado por avisar! Conte o que parece errado: o enunciado, uma alternativa, o gabarito ou a explicação. A questão já vai identificada como <strong>{reference}</strong>.</p>
           {seller
             ? <a className="primary-action" href={mailto(seller.email, `Erro na questão ${reference}`, `Questão: ${reference}\n\nO que parece errado:\n`)}>Escrever e-mail sobre esta questão</a>
+            : <p className="public-note">O canal de contato será publicado em breve.</p>}
+        </section>
+      ) : null}
+
+      {accessRequest ? (
+        <section className="public-section public-price" aria-labelledby="acesso-title">
+          <h2 id="acesso-title">Pedir acesso</h2>
+          <p>O cadastro aberto ainda não começou. Escreva para a gente com seu nome e, se você tem menos de 18 anos, o contato do seu responsável. Quando o acesso for criado, você recebe o nome do perfil e um código de 6 dígitos para entrar.</p>
+          {seller
+            ? <a className="primary-action" href={mailto(seller.email, "Pedido de acesso ao Estudisc", "Nome:\nIdade:\nContato do responsável (se menor de 18):\n")}>Pedir acesso por e-mail</a>
             : <p className="public-note">O canal de contato será publicado em breve.</p>}
         </section>
       ) : null}

@@ -132,3 +132,13 @@
 @media (prefers-reduced-motion: reduce) {
   .main-surface .ladder-step, .ladder-concepts a { transition: none; }
 }
+
+/* Top summary: three numbers and the next step; the rest is behind "Ver detalhes". */
+.progress-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: var(--estudisc-spacing-6); margin-block: var(--estudisc-spacing-8); }
+.progress-stat { display: grid; gap: var(--estudisc-spacing-3); align-content: start; padding: var(--estudisc-spacing-8); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); }
+.progress-stat-value { font-size: 2.25rem; font-weight: 900; line-height: 1; font-variant-numeric: tabular-nums; }
+.progress-stat-label { font-weight: 800; }
+.progress-stat small { color: var(--estudisc-color-dim); }
+.progress-next { display: flex; flex-wrap: wrap; align-items: center; gap: var(--estudisc-spacing-6) var(--estudisc-spacing-10); }
+.progress-details { margin-top: var(--estudisc-spacing-10); }
+.progress-details > summary { min-height: 44px; display: flex; align-items: center; font-weight: 800; cursor: pointer; }

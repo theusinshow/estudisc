@@ -278,3 +278,8 @@
     transform: none !important;
   }
 }
+
+/* "Entrar" is a label, not a control: plain uppercase text, no pill border or fill. */
+.auth-kicker { margin: 0; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--estudisc-color-dim); }
+/* The single-card sign-in sits in the middle of the screen on wide viewports too. */
+.auth-surface { justify-items: center; }

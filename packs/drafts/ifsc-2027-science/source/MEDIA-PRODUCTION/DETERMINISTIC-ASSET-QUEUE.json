@@ -1,7 +1,33 @@
 {
   "version": 2,
-  "count": 24,
+  "count": 25,
   "requests": [
+    {
+      "id": "COMP-CIE-01-001",
+      "lessonId": "CIE-01",
+      "title": "Trajetória e deslocamento",
+      "type": "DETERMINISTIC_ASSET",
+      "description": "SVG estático comparando trajetória (caminho curvo, tracejado) e deslocamento (seta reta do início ao fim), com o caso da ida e volta.",
+      "mustNotFallbackToGeneratedImage": true,
+      "status": "IMPLEMENTATION_REQUIRED",
+      "sourceRefs": [
+        "SRC-IFSC-001",
+        "SRC-FIS-001",
+        "SRC-PHET-001"
+      ],
+      "conceptIds": [
+        "CIE-01-CON-02"
+      ],
+      "acceptanceCriteria": [
+        "Scientifically correct for Ensino Fundamental.",
+        "Responsive at phone and desktop widths.",
+        "Keyboard accessible when interactive.",
+        "No essential information conveyed only by color.",
+        "Labels remain selectable/editable text when practical.",
+        "No external tracking scripts.",
+        "Renderer must have a static fallback if interaction fails."
+      ]
+    },
     {
       "id": "COMP-CIE-06-001",
       "lessonId": "CIE-06",

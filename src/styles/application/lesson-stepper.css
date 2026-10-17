@@ -58,3 +58,8 @@ progress.bar::-moz-progress-bar { background: var(--subject, var(--estudisc-colo
   .progress-summary dl:not(:has(.progress-summary-mastery)) > div { display: flex; align-items: baseline; justify-content: space-between; gap: var(--estudisc-spacing-6); }
 }
 
+
+/* End-of-lesson summary of the questions still wrong in this visit. */
+.lesson-mistakes { display: grid; gap: var(--estudisc-spacing-6); margin-block: var(--estudisc-spacing-8); padding: var(--estudisc-spacing-8); background: var(--estudisc-color-surface-pink); }
+.lesson-mistakes ul { margin: 0; padding-left: var(--estudisc-spacing-10); }
+.lesson-mistakes .secondary-button { justify-self: start; }

@@ -1,0 +1,91 @@
+{
+  "$comment": "Internal wording that must never reach a student screen. Checked by tests/component/student-copy-blacklist.test.tsx. 'rendered' (case-insensitive) and 'renderedExact' (case-sensitive) run on every draft pack lesson and question as rendered; 'source' runs on student-facing .tsx under src (admin and content QA excluded); 'conceptLabels' (case-sensitive) runs on studentConceptLabel output. To add a term, append {pattern, why} to the right list.",
+  "rendered": [
+    {
+      "pattern": "Objetivo proposto",
+      "why": "authoring provenance label"
+    },
+    {
+      "pattern": "\\b(mastery|review|gamification)\\.v\\d",
+      "why": "policy version"
+    },
+    {
+      "pattern": "Pol[ií]tica (mastery|review)",
+      "why": "policy name"
+    },
+    {
+      "pattern": "For[çc]a total",
+      "why": "internal evidence strength"
+    },
+    {
+      "pattern": "Explica[çc][ãa]o opcional",
+      "why": "internal AI scope label"
+    },
+    {
+      "pattern": "\\brubric|\\brubrica",
+      "why": "rubric field"
+    },
+    {
+      "pattern": "correção explícita de pelo menos",
+      "why": "rubric criterion"
+    },
+    {
+      "pattern": "Resposta curta ou classificação",
+      "why": "authoring response format"
+    },
+    {
+      "pattern": "SOURCE_DERIVED|EXIT_TICKET|ACTIVE_LEARNING|MEDIA_RECOMMENDATION|contentStudio",
+      "why": "editorial metadata"
+    },
+    {
+      "pattern": "\\[object Object\\]|\\bundefined\\b",
+      "why": "rendering bug"
+    },
+    {
+      "pattern": "como aplicação contextual quando pertinente",
+      "why": "raw concept title"
+    },
+    {
+      "pattern": "Ilustração pendente|Componente determinístico pendente",
+      "why": "authoring placeholder"
+    }
+  ],
+  "renderedExact": [
+    {
+      "pattern": "POLÍTICA|INCORRECT|\\bTODO\\b",
+      "why": "internal marker"
+    },
+    {
+      "pattern": "(?<![/\\w])(CIE|POR|MAT|GH)-(V2-)?\\d{2}(-[A-Z0-9]+)*\\b",
+      "why": "raw lesson or question ID (a figure credit path like VECTA/MAT-03 is allowed)"
+    }
+  ],
+  "source": [
+    {
+      "pattern": "Objetivo proposto|For[çc]a total|Pol[ií]tica \\{|Explica[çc][ãa]o opcional",
+      "why": "internal label in UI code"
+    },
+    {
+      "pattern": "causa ainda não estabelecida|Recorrência não é",
+      "why": "adult diagnostic wording on /mistakes"
+    },
+    {
+      "pattern": "IA opcional indisponível",
+      "why": "hide unavailable AI instead"
+    }
+  ],
+  "conceptLabels": [
+    {
+      "pattern": "\\bem nível (fundamental|escolar|introdutório|conceitual|básico|essencial|funcional)$",
+      "why": "authoring scope note"
+    },
+    {
+      "pattern": "quando pertinente$",
+      "why": "authoring scope note"
+    },
+    {
+      "pattern": "^[a-zà-ú]",
+      "why": "label must start with a capital letter"
+    }
+  ]
+}

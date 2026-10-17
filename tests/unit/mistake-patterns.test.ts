@@ -8,7 +8,7 @@ it("deduplicates records and reports actual Attempt recurrence without inferring
   const input=[first,first,second],snapshot=JSON.stringify(input),[group]=groupMistakeObservations(input);
   expect(group.attemptIds).toEqual(["attempt-one","attempt-two"]);expect(group.activeCount).toBe(2);
   expect(group.recurring).toBe(true);expect(group.causeStatus).toBe("not_established");
-  expect(group.explanation).toContain("não identifica a causa");expect(JSON.stringify(input)).toBe(snapshot);
+  expect(group.explanation).toMatch(/^Você errou/);expect(JSON.stringify(input)).toBe(snapshot);
 });
 it("keeps resolved history and avoids counting one Attempt as repeated evidence",()=>{
   const [group]=groupMistakeObservations([row("one"),row("two",{attemptId:"attempt-one",status:"resolved",resolvedAt:now})]);

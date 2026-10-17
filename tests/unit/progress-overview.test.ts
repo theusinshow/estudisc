@@ -1,15 +1,16 @@
 import { describe, expect, it } from "vitest";
 
 import type { ConceptEvidenceRecord } from "@/db/repositories/concept-evidence-repository";
-import { buildProgressOverview, studyActivityDates } from "@/features/progress/overview";
+import { buildProgressOverview } from "@/features/progress/overview";
+import { buildGamificationSummary } from "@/features/gamification/gamification-rules";
 
 // 2026-10-01 is a Thursday; 15:00Z is midday in São Paulo.
 const now = new Date("2026-10-01T15:00:00Z");
 
-it("does not count routine configuration, schema operations or AI reservations as a study day", () => {
-  const eventDates = studyActivityDates(["study_plan_applied","evolution_schema_activation","ai_request"].map(type=>({type,occurredAt:now})));
-  expect(buildProgressOverview({ concepts: [], evidence: [], eventDates, now }).activeDaysThisWeek).toBe(0);
-  expect(studyActivityDates([{ type: "study_plan_applied", occurredAt: now }, { type: "review_reflection", occurredAt: now }])).toEqual([now]);
+it("counts a study day only when a question was answered, never self-ratings or seeds", () => {
+  const seed = { ...evidence("fractions", now, "q1"), attemptId: null };
+  expect(buildProgressOverview({ concepts: [], evidence: [seed], now }).activeDaysThisWeek).toBe(0);
+  expect(buildProgressOverview({ concepts: [], evidence: [{ ...seed, attemptId: "a1" }], now }).activeDaysThisWeek).toBe(1);
 });
 
 const concepts = [
@@ -42,7 +43,7 @@ describe("buildProgressOverview", () => {
         evidence("fractions", new Date("2026-10-01T14:00:00Z"), "q2"),
         evidence("atoms", new Date("2026-10-01T14:00:00Z"), "q3")
       ],
-      eventDates: [],
+
       now
     });
 
@@ -61,7 +62,7 @@ describe("buildProgressOverview", () => {
         evidence("atoms", new Date("2026-09-29T15:00:00Z"), "q3"),
         evidence("ratios", new Date("2026-10-01T14:00:00Z"), "q4")
       ],
-      eventDates: [],
+
       now
     });
 
@@ -78,7 +79,7 @@ describe("buildProgressOverview", () => {
         evidence("ratios", new Date("2026-10-01T13:00:00Z"), "q2", "failed"),
         evidence("commas", new Date("2026-10-01T13:00:00Z"), "q3", "failed")
       ],
-      eventDates: [],
+
       now
     });
 
@@ -86,28 +87,25 @@ describe("buildProgressOverview", () => {
   });
 
   it("counts answered attempts as study even without a study event", () => {
-    const overview = buildProgressOverview({ concepts, evidence: [{ ...evidence("fractions", now, "q1"), attemptId: "a1" }, { ...evidence("ratios", now, "q1"), attemptId: "a1" }], eventDates: [], now });
+    const overview = buildProgressOverview({ concepts, evidence: [{ ...evidence("fractions", now, "q1"), attemptId: "a1" }, { ...evidence("ratios", now, "q1"), attemptId: "a1" }], now });
 
     expect(overview.activity.at(-1)?.count).toBe(1);
     expect(overview.activeDaysThisWeek).toBe(1);
   });
 
   it("averages mastery levels per area including unseen concepts", () => {
-    const overview = buildProgressOverview({ concepts, evidence: [evidence("fractions", now, "q1")], eventDates: [], now });
+    const overview = buildProgressOverview({ concepts, evidence: [evidence("fractions", now, "q1")], now });
     const math = overview.areas.find((area) => area.title === "Matemática");
 
-    expect(overview.areas.map((area) => area.title)).toEqual(["Ciências", "Matemática", "Português"]);
+    expect(overview.areas.map((area) => area.title)).toEqual(["Ciências", "Língua Portuguesa", "Matemática"]); // "Português" reads as its canonical subject
     expect(math).toMatchObject({ conceptCount: 2, practicedCount: 1, averageLevel: 1 });
   });
 
   it("counts study days in the São Paulo calendar on a Sunday-aligned grid without future days", () => {
-    const overview = buildProgressOverview({
-      concepts: [],
-      evidence: [],
-      // 02:00Z on Oct 1 is still Sep 30 in São Paulo.
-      eventDates: [new Date("2026-10-01T02:00:00Z"), new Date("2026-09-30T20:00:00Z"), new Date("2026-10-01T13:00:00Z"), new Date("2026-08-01T12:00:00Z")],
-      now
-    });
+    // 02:00Z on Oct 1 is still Sep 30 in São Paulo.
+    const answers = [new Date("2026-10-01T02:00:00Z"), new Date("2026-09-30T20:00:00Z"), new Date("2026-10-01T13:00:00Z"), new Date("2026-08-01T12:00:00Z")]
+      .map((date, index) => ({ ...evidence("fractions", date, `q${index}`), attemptId: `a${index}` }));
+    const overview = buildProgressOverview({ concepts: [], evidence: answers, now });
 
     expect(overview.activity[0].weekday).toBe(0);
     expect(overview.activity.at(-1)).toMatchObject({ date: "2026-10-01", isToday: true, count: 1 });
@@ -116,5 +114,15 @@ describe("buildProgressOverview", () => {
     expect(overview.week.map((day) => day.date)).toEqual(["2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03"]);
     expect(overview.week.filter((day) => day.isFuture)).toHaveLength(2);
     expect(overview.activeDaysThisWeek).toBe(2);
+    expect(overview.streakDays).toBe(2);
+  });
+
+  it("uses the same study days as Hoje and the achievements", () => {
+    const answers = ["2026-09-29T15:00:00Z", "2026-09-30T02:00:00Z", "2026-10-01T15:00:00Z"].map((iso, index) => ({ ...evidence("fractions", new Date(iso), `q${index}`), attemptId: `a${index}` }));
+    const overview = buildProgressOverview({ concepts: [], evidence: answers, now });
+    const gamification = buildGamificationSummary({ xp: { totalXp: 0, transactions: [] } as never, dueReviews: [], mistakes: [], evidence: answers, now });
+    expect(overview.activeDaysThisWeek).toBe(gamification.week.activeDays);
+    // 09-30 02:00Z is still 09-29 in São Paulo, so 09-30 has no answer and the streak restarts on 10-01.
+    expect(overview.streakDays).toBe(1);
   });
 });

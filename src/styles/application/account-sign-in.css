@@ -36,3 +36,6 @@
   .learning-catalog .learning-field { margin-block: var(--estudisc-spacing-4); }
   .learning-catalog .learning-controls > a { margin-bottom: 0; }
 }
+.account-profile input { max-width: 22rem; }
+.account-help { margin: 0; max-width: 36rem; color: var(--estudisc-color-dim); }
+.account-help a { text-decoration: underline; font-weight: 700; color: var(--estudisc-color-ink); }

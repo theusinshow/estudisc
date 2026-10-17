@@ -49,7 +49,7 @@ describe("ReviewRepository", () => {
         conceptStableId: "js-logical-and",
         currentMasteryState: "understood",
         recentQuality: 3,
-        reason: expect.stringContaining("vencida")
+        reason: expect.stringContaining("hora de revisar")
       }
     ]);
 

@@ -6,7 +6,8 @@ import { AppShell } from "@/components/layout/app-shell";
 import { completeConceptReview, getDueReviews } from "@/features/review/api";
 import { masteryStateLabels, type MasteryState } from "@/features/mastery/mastery-policy";
 import { getFeatureFlags } from "@/lib/feature-flags";
-import { TargetedPracticeControls } from "@/features/study-sessions/targeted-practice-controls";
+import { TargetedPracticeControls } from "@/features/study-sessions/targeted-practice-controls";
+import { studentConceptLabel } from "@/features/concepts/student-label";
 
 export const dynamic = "force-dynamic";
 
@@ -51,12 +52,12 @@ export default async function ReviewPage() {
             <ol className="review-list" aria-label="Revisões vencidas">
               {dueReviews.map((review) => (
                 <li key={review.conceptStableId}>
-                  <Link href={`/concepts/${review.conceptStableId}`}><strong>{review.conceptTitle}</strong></Link>
+                  <Link href={`/concepts/${review.conceptStableId}`}><strong>{studentConceptLabel(review.conceptTitle)}</strong></Link>
                   <span><time className="type-meta" dateTime={review.nextReviewAt.toISOString()}>{reviewDue(review.nextReviewAt)}</time> · {review.reason}</span>
                   <small>
                     {masteryStateLabels[review.currentMasteryState as MasteryState] ?? review.currentMasteryState} · {review.reviewCount === 1 ? "1 revisão" : `${review.reviewCount} revisões`}
                   </small>
-                  {enhanced?<TargetedPracticeControls kind="review" conceptId={review.conceptStableId} label={`Praticar ${review.conceptTitle}`}/>:<form action={completeReviewAction}>
+                  {enhanced?<TargetedPracticeControls kind="review" conceptId={review.conceptStableId} label={`Praticar ${studentConceptLabel(review.conceptTitle)}`}/>:<form action={completeReviewAction}>
                     <input type="hidden" name="conceptId" value={review.conceptStableId} />
                     <button className="secondary-action" type="submit"><Check aria-hidden="true" />Concluir revisão</button>
                   </form>}

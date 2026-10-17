@@ -24,7 +24,7 @@ export function calculateConceptMasteryV2(evidence:readonly Evidence[],now:Date)
   const retention=latest?Math.exp(-age/(delayed?14:3)):0;
   const confidence=Math.min(1,questions.size/4)*Math.min(1,days.size/3);
   const latestFailure=facts.filter(item=>item.conditions.outcome==="failed").some(item=>!latest||item.createdAt>latest.createdAt);
-  return {state,level:["unseen","introduced","understood","practicing","strong","mastered"].indexOf(state),label:masteryStateLabels[state],policyVersion:MASTERY_V2,evidenceCount:facts.length,totalStrength:strength,retention,confidence,reviewDue:retention<0.6||latestFailure,reasons:[`${useful.length} evidências independentes em ${days.size} dias e ${questions.size} questões.`,state==="mastered"?"Há recuperação posterior e aplicação em contexto diferente.":"Mais prática independente e recuperação posterior podem fortalecer o domínio."]};
+  return {state,level:["unseen","introduced","understood","practicing","strong","mastered"].indexOf(state),label:masteryStateLabels[state],policyVersion:MASTERY_V2,evidenceCount:facts.length,totalStrength:strength,retention,confidence,reviewDue:retention<0.6||latestFailure,reasons:[`${useful.length} ${useful.length===1?"acerto":"acertos"} sem ajuda, em ${days.size} ${days.size===1?"dia":"dias"} e ${questions.size} ${questions.size===1?"questão":"questões"}.`,state==="mastered"?"Você lembrou depois de alguns dias e aplicou em situações novas.":"Para avançar: acerte sem dica e volte a revisar em outro dia."]};
 }
 export function calculateVersionedMastery(evidence:readonly ConceptEvidenceRecord[],now=new Date()){
   return evidence.some(item=>item.conditions.policyVersion===MASTERY_V2)?calculateConceptMasteryV2(evidence,now):calculateConceptMastery(evidence);

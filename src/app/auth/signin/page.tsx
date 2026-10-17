@@ -5,7 +5,6 @@ import { googleAuthorizationParams } from "@/features/auth/google-oauth";
 import { getServerEnv } from "@/lib/env";
 import Link from "next/link";
 import { getAccountConfig, isHybridSignIn } from "@/features/auth/account-mode";
-import { publicAccounts } from "@/features/auth/code-accounts";
 import { AccountSignIn } from "@/features/auth/account-sign-in";
 import { GoogleSubmitButton } from "@/features/auth/google-submit-button";
 import { daysUntilExam, examCountdownLabel } from "@/features/public-site/countdown";
@@ -79,13 +78,13 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
         <section className="auth-panel">
           <div className="auth-panel-header">
             <BrandLockup priority />
-            <p className="eyebrow">Entrar</p>
+            <p className="auth-kicker">Entrar</p>
           </div>
           <div className="auth-copy">
-            <h1 id="signin-title">Escolha seu perfil</h1>
-            <p>Cada perfil guarda o próprio progresso.</p>
+            <h1 id="signin-title">Entre no seu perfil</h1>
+            <p>Digite o nome do seu perfil e o código de 6 dígitos. Cada perfil guarda o próprio progresso.</p>
           </div>
-          <AccountSignIn accounts={publicAccounts(accountConfig.accounts)} callbackUrl={callbackUrl} />
+          <AccountSignIn callbackUrl={callbackUrl} />
           {hybrid ? <p className="auth-alternate"><Link href={withCallback({})}>Entrar com conta Google</Link></p> : null}
         </section>
         <LegalLinks />
@@ -108,7 +107,7 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
       <section className="auth-panel">
         <div className="auth-panel-header">
 <BrandLockup priority />
-          <p className="eyebrow">{env.FEATURE_PAID_ACCESS ? "Entrar" : "Acesso do proprietário"}</p>
+          <p className="auth-kicker">{env.FEATURE_PAID_ACCESS ? "Entrar" : "Acesso do proprietário"}</p>
         </div>
 
         <div className="auth-copy">

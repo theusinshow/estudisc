@@ -2,6 +2,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { dirname, join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { LessonBlockList } from "@/features/lessons/blocks";
+import { writtenNoteText } from "@/features/lessons/blocks/written-note";
 import { QuestionPanel } from "@/features/activities/components/question-panel";
 import { studentQuestion } from "@/features/questions/student-view";
 import { canExposeQuestion, evaluateQuestion } from "@/features/questions/api";
@@ -52,6 +53,9 @@ describe("independent Science adapted pack QA", () => {
           expect(renderedParagraphs, block.id).toEqual((block.payload.longDescription as string).split(/\n\s*\n/));
         } else {
           expect(document.body.textContent, block.id).toContain(block.payload.title);
+          // Recall notes keep the expected ideas closed until "Conferir" and never show rubric criteria.
+          const written = writtenNoteText(block.payload), flat = (document.body.textContent ?? "").replace(/\s+/g, "");
+          if (written) { for (const text of written.visible) expect(flat, block.id).toContain(text.replace(/\s+/g, "")); for (const text of written.never) expect(flat, block.id).not.toContain(text.replace(/\s+/g, "")); continue; }
           const editorial = sourceBlocks.find((candidate: { id: string }) => candidate.id === block.id) as { content?: string; items?: string[]; prompt?: string; answer?: string; reasoning?: string; answerGuide?: { mustMention: string[] } };
           for (const text of [editorial.content, ...(editorial.items ?? []), editorial.prompt, editorial.answer, editorial.reasoning, ...(editorial.answerGuide?.mustMention ?? [])].filter(Boolean)) expect((document.body.textContent ?? "").replace(/\s+/g, ""), block.id).toContain(String(text).replace(/\s+/g, "")); // single line breaks render as separate lines
         }
@@ -63,7 +67,8 @@ describe("independent Science adapted pack QA", () => {
       // Compare authored text: math notation adds an aria-hidden visual form before the original source text.
       document.querySelectorAll(".math-visual").forEach(node => node.remove());
       const visible = document.body.textContent ?? "";
-      expect(visible, question.id).toContain(question.stem);
+      // The base text before the question renders as paragraphs, so line breaks become <br>.
+      expect(visible.replace(/\s+/g, ""), question.id).toContain(question.stem.replace(/\s+/g, ""));
       expect(document.querySelectorAll('input[type="radio"]'), question.id).toHaveLength(5);
       for (const choice of question.choices ?? []) {
         expect(visible, question.id).toContain(choice.content);

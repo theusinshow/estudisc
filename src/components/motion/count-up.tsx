@@ -46,7 +46,7 @@ function CountUpDigits({ value, delay = 0, duration = 0.6, className }: CountUpP
   return (
     <span className={["count-up", className].filter(Boolean).join(" ")}>
       <span ref={ref} aria-hidden="true">{formatter.format(value)}</span>
-      <span className="sr-only">{formatter.format(value)}</span>
+      <span className="visually-hidden">{formatter.format(value)}</span>
     </span>
   );
 }

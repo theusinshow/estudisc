@@ -22,7 +22,7 @@ describe("review policy", () => {
   });
 
   it("explains whether a scheduled review is due", () => {
-    expect(explainDueReview(new Date("2026-07-29T12:00:00.000Z"), base)).toContain("vencida");
-    expect(explainDueReview(new Date("2026-08-01T12:00:00.000Z"), base)).toContain("ainda não venceu");
+    expect(explainDueReview(new Date("2026-07-29T12:00:00.000Z"), base)).toContain("hora de revisar");
+    expect(explainDueReview(new Date("2026-08-01T12:00:00.000Z"), base)).toContain("ainda não chegou");
   });
 });

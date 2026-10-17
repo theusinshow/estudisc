@@ -10,7 +10,7 @@ import { buildRoutineWeek, normalizeRoutine } from "@/features/study-sessions/ro
 import { assertRoutineBudget, assertRoutineStart } from "@/features/study-sessions/routine-session-constraints";
 import { memoryAdaptiveChoices } from "./memory-adaptive-session-data";
 import { summarizeSession } from "@/features/study-sessions/session-summary";
-import type { TargetedPracticeRequest } from "@/features/study-sessions/targeted-selection";
+import { OpenSessionError, type TargetedPracticeRequest } from "@/features/study-sessions/targeted-selection";
 import { memoryTargetedSelection } from "./targeted-session-selection";
 export class MemoryStudySessionRepository{
   constructor(private readonly store=getMemoryStore(),private readonly routineEnabled=false,private readonly adaptiveEnabled=false){}
@@ -19,12 +19,15 @@ export class MemoryStudySessionRepository{
     const allowedBudgets: readonly number[] = target ? [10,15] : [...LEGACY_SESSION_BUDGETS, ...(this.adaptiveEnabled ? ADAPTIVE_SESSION_BUDGETS : [])];
     if(!allowedBudgets.includes(budgetMinutes))throw new SessionStateError();
     const selection=target?memoryTargetedSelection(this.store,ownerId,target,now):undefined;
-    const active=this.store.studySessions.find(row=>row.ownerId===ownerId&&row.status==="ACTIVE");if(active)return active;
+    const active=this.store.studySessions.find(row=>row.ownerId===ownerId&&row.status==="ACTIVE");
+    if(active&&!target)return active;
+    if(active&&!target?.startNew)throw new OpenSessionError(active.id);
     const subjectLimits=assertRoutineBudget(this.routineWeek(ownerId,now),budgetMinutes);
     if(this.adaptiveEnabled||selection){
       const data=memoryAdaptiveChoices(this.store,ownerId,budgetMinutes,subjectLimits,now,selection);
       const plan=planCandidates(data.choices.map(choice=>choice.candidate),budgetMinutes,"FOUNDATION",data.subjectMinutes,subjectLimits,true);
       if(!plan.items.length)return null;
+      if(active){active.status="ABANDONED";active.endedAt=now;}
       for(const old of this.store.studySessions.filter(row=>row.ownerId===ownerId&&row.status==="PLANNED")){old.status="ABANDONED";old.endedAt=now;}
       const items=plan.items.map(candidate=>data.choices.find(choice=>choice.candidate.id===candidate.id)!.item);
       const row={id:crypto.randomUUID(),ownerId,trackId:items[0].trackId!,status:"PLANNED",budgetMinutes,items,policyVersion:plan.policyVersion,startedAt:null,endedAt:null,createdAt:now};this.store.studySessions.push(row);return row;

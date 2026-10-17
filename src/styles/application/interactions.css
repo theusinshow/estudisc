@@ -130,3 +130,15 @@ h1, h2, h3 { font-stretch: 112%; letter-spacing: -0.02em; text-wrap: balance; }
 .accent-progress > .eyebrow { background: var(--estudisc-color-surface-sky); }
 .accent-mistakes > .eyebrow { background: var(--estudisc-color-surface-orange); }
 
+
+/* Corrections after a wrong answer: per-part marks and the expected answer once the solution opens. */
+.item-mark { font-size: 0.85em; font-weight: 700; margin-inline-start: var(--estudisc-spacing-4); white-space: nowrap; }
+.item-mark[data-correct="true"] { color: var(--estudisc-color-ink); background: var(--estudisc-color-surface-lime); padding-inline: var(--estudisc-spacing-4); }
+.item-mark[data-correct="false"] { color: var(--estudisc-color-ink); background: var(--estudisc-color-surface-pink); padding-inline: var(--estudisc-spacing-4); }
+.item-key { display: block; font-size: 0.9em; font-weight: 600; }
+.answer-row .item-key { display: inline; }
+.learning-answer.answer-row[data-key] { outline: 2px solid var(--estudisc-color-ink); outline-offset: 2px; }
+
+/* Pressed link while the next page opens. */
+a[data-pending] { opacity: 0.75; cursor: progress; }
+.link-pending { display: block; font-size: 0.85em; font-weight: 700; }

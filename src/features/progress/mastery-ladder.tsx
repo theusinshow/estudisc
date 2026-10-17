@@ -7,7 +7,8 @@ import { CountUp } from "@/components/motion/count-up";
 import { Reveal } from "@/components/motion/reveal";
 import type { MasteryState } from "@/features/mastery/mastery-policy";
 import { MasteryGlyph } from "./mastery-glyph";
-import type { LadderRung } from "./overview";
+import type { LadderRung } from "./overview";
+import { studentConceptLabel } from "@/features/concepts/student-label";
 
 // Wording follows mastery.v2 thresholds; concepts still on mastery.v1 evidence use the older policy.
 const rungMeaning: Record<MasteryState, string> = {
@@ -70,7 +71,7 @@ export function MasteryLadder({ rungs }: Readonly<{ rungs: readonly LadderRung[]
           <ul className="ladder-concepts">
             {current.concepts.slice(0, VISIBLE_CONCEPTS).map((concept) => (
               <li key={concept.stableId}>
-                <Link href={`/concepts/${concept.stableId}`}>{concept.title}</Link>
+                <Link href={`/concepts/${concept.stableId}`}>{studentConceptLabel(concept.title)}</Link>
               </li>
             ))}
             {current.count > VISIBLE_CONCEPTS ? (

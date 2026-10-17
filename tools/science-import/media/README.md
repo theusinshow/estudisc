@@ -2,7 +2,7 @@
 
 Draft only. No scientific/editorial source rewrite, research, generative imagery, service calls, publication or factual approval.
 
-`.local/science-integration/media/assets.json`contains 13 safe local SVG static fallbacks for CIE-06/07/09/10/17/18/22/25/27/30/33/34/40. `asset-status.json` covers every deterministic request, retaining limitations of static delivery and explicit pending reasons for the 11 requests without assets: CIE-08/11/13/15/16/29/31/32/37/38/39.
+`.local/science-integration/media/assets.json`contains 14 safe local SVG static fallbacks for CIE-01/06/07/09/10/17/18/22/25/27/30/33/34/40. `asset-status.json` covers every deterministic request, retaining limitations of static delivery and explicit pending reasons for the 11 requests without assets: CIE-08/11/13/15/16/29/31/32/37/38/39.
 
 One source-driven SVG machinery implements mobile text cards, comparisons and flows. The only drawing exceptions are the requested open/closed circuit, the exact supplied Aa × Aa Punnett table, and the two mass-dependent stellar branches. Worked energy and atomic-count examples use only the supplied numbers. Model/classification comparisons do not introduce anatomical, molecular or exact phylogenetic geometry. The current figure renderer displays an image; live calculator/atom/crossing controls are not claimed.
 

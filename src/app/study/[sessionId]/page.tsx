@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { isLearningAiAvailable } from "@/features/ai/availability";
 import { notFound } from "next/navigation";
 import { z } from "zod";
 import { AppShell } from "@/components/layout/app-shell";
@@ -29,7 +30,7 @@ export default async function StudyPage({params}:{params:Promise<{sessionId:stri
       {result.summary.independentConcepts.length>0&&<p>Prática independente registrada: {result.summary.independentConcepts.map(concept=>concept.title).join(" · ")}.</p>}
       {result.summary.reviewedConcepts>0&&<p>{result.summary.reviewedConcepts} conceito(s) com recuperação posterior registrada.</p>}
       {next&&<Link className="primary-action" href={next.href}>Próximo passo: {next.title}</Link>}</section>}
-    {completed&&getFeatureFlags().FEATURE_AI_LEARNING&&<AiActionControl label="Resumir sessão com IA" spec={{action:"summarize_session",target:{kind:"session",sessionId:session.id}}}/>}
+    {completed&&isLearningAiAvailable()&&<AiActionControl label="Resumir sessão com IA" spec={{action:"summarize_session",target:{kind:"session",sessionId:session.id}}}/>}
     {items.length>0&&<ol className="session-plan" aria-label="Roteiro da sessão">{items.map(item=><li key={JSON.stringify([item.trackId,item.lessonId,item.version])}><span>{item.title}{item.reason&&<small>{item.reason}</small>}</span><small>~{item.minutes} min</small></li>)}</ol>}
     {session.status!=="ACTIVE"&&<SessionControls sessionId={session.id} status={session.status} />}
     {session.status==="ACTIVE"&&await Promise.all(items.map(async item=>{const key=JSON.stringify([item.trackId,item.lessonId,item.version]);

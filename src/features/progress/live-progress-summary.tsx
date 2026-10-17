@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { ProgressSummary, type ProgressSummaryData } from "./progress-summary";
 
 export const ATTEMPT_RECORDED_EVENT = "estudisc:attempt-recorded";
+/** Optional detail of a question attempt, read by the end-of-lesson summary. */
+export type AttemptRecordedDetail = { questionId: string; stem: string; correct: boolean };
 
 /** Re-reads lesson progress after each recorded attempt without re-rendering (and re-exposing) the questions. */
 export function LiveLessonProgress({ lessonStableId, initial }: Readonly<{ lessonStableId: string; initial: ProgressSummaryData | null }>) {
