@@ -1,6 +1,8 @@
 /* Tab hubs (/provas, /voce): mobile-first lists and sticker cards built only from tokens. */
 .hub { box-sizing: border-box; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--estudisc-spacing-12); width: 100%; max-width: 720px; min-width: 0; margin-inline: auto; padding: var(--estudisc-spacing-8) var(--estudisc-spacing-8) var(--estudisc-spacing-24); }
-.hub h1 { margin: 0; overflow-wrap: break-word; hyphens: auto; font-size: clamp(1.5rem, 6.5vw, 2.75rem); font-weight: 900; line-height: 1; letter-spacing: -0.03em; }
+/* Same display title as Hoje: Provas and Você read as tabs of one app (F5 point 4). */
+.hub h1 { margin: 0; overflow-wrap: break-word; hyphens: manual; font-size: clamp(3rem, 12vw, 4.5rem); font-weight: 900; font-stretch: 125%; line-height: 0.9; }
+.hub-countdown-note { margin: 0; color: var(--estudisc-color-dim); font-size: 0.8125rem; font-weight: 800; text-align: center; text-transform: uppercase; letter-spacing: 0.04em; }
 .hub .eyebrow { margin: 0 0 4px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
 .hub-head { display: grid; gap: 6px; }
 .hub-countdown { display: inline-flex; align-items: center; gap: 6px; justify-self: start; margin: 4px 0 0; padding: 6px 12px; border-radius: 999px; background: var(--estudisc-color-ink); color: var(--estudisc-color-signal); font-weight: 800; font-size: 0.875rem; }

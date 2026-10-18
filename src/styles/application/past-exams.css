@@ -43,3 +43,14 @@
 .sheet-result-table th, .sheet-result-table td { overflow-wrap: anywhere; }
 .sheet-result-table th, .sheet-result-table td { padding: var(--estudisc-spacing-2) var(--estudisc-spacing-4); border-bottom: var(--estudisc-border-hair) solid var(--estudisc-color-ink); text-align: left; }
 .sheet-result-table tr[data-outcome="incorrect"] td:last-child, .sheet-result-table tr[data-outcome="blank"] td:last-child { font-weight: 900; }
+
+/* F5 point 4: year filter as one scrollable row of pills; compact cards with a visible official link. */
+.past-exams .year-chips { flex-wrap: nowrap; gap: 8px; margin: var(--estudisc-spacing-6) 0; padding: 2px 2px 6px; overflow-x: auto; scrollbar-width: none; }
+.past-exams .year-chips::-webkit-scrollbar { display: none; }
+.past-exams .year-chips a { flex: none; padding: 0 16px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); font-weight: 800; text-decoration: none; }
+.past-exams .year-chips a[aria-current="page"] { background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); }
+.past-exams .past-exam-card { gap: 10px; padding: 16px 18px; }
+.past-exams .past-exam-card .kind-chip { justify-self: start; }
+.past-exams .past-exam-actions { gap: 0 16px; }
+.past-exam-link svg { width: 16px; height: 16px; margin-left: 6px; flex: none; }
+.past-exam-link { text-decoration: underline; text-decoration-thickness: 2px; }

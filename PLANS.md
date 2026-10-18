@@ -32,7 +32,8 @@ Public pages redo complete (d6f5ff5 live). No Hoje fixes had landed from another
 Estudar + Hoje live 2026-10-18 (d938c43, Railway success). Lesson review (approved): progress panel to the end, save line only on error/conflict, fixed toolbar with icon tools, white bands, "← Trilha", subject-only tag, 320 title, confidence options unbroken. Local MAT-07 approximation: F5 batch applied on the release pack v4 (.local/build-mat07.mts, memory only).
 Known pre-existing failure (flag-gated, fails on main too): tests/e2e/interactive-blocks.spec.ts "Relacione os locais" still clicks the old matching UI (tap-to-place since 62f07f6).
 Lesson batch live 2026-10-18 (999d101, Railway success). Revisão (approved): shorter intro, one time choice, card button "Praticar este conceito", "Para revisar…" meta, shorter hint. The local memory 404 on answers came only from the golden seed content; the MAT-07 build answers fine.
-NEXT ACTION: push Revisão after approval; then Provas (/provas, a simulado, past exams).
+Revisão live 2026-10-18 (19fcdc7, Railway success). Provas (approved): display title, countdown note, counts on hub cards, pill year filter, compact past-exam cards with visible official links, plurals, focus mode for active simulados. Past exams previewed locally from scripts/build-past-exam-templates.ts output posted to memory://local (.local/import-past.mjs).
+NEXT ACTION: push Provas after approval; then Você (/voce, progress, map, achievements, account).
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 

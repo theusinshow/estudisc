@@ -47,8 +47,8 @@ test("secondary pages live in the Você tab, admin links only for ADMIN", async 
 test("Provas tab gathers mock and past exams", async ({ page }) => {
   await page.goto("/provas");
   await expect(page.getByRole("heading", { name: "Provas", level: 1 })).toBeVisible();
-  await expect(page.getByRole("link", { name: /Simulados completos/ })).toHaveAttribute("href", "/assessments");
-  await expect(page.getByRole("link", { name: /Provas anteriores/ })).toHaveAttribute("href", "/past-exams");
+  await expect(page.getByRole("link", { name: /simulados completos/i })).toHaveAttribute("href", "/assessments");
+  await expect(page.getByRole("link", { name: /provas, de 2022 a 2026/ })).toHaveAttribute("href", "/past-exams");
   await expect(page.getByRole("navigation", { name: "Navegação principal" }).getByRole("link", { name: "Provas", exact: true })).toHaveAttribute("aria-current", "page");
 });
 

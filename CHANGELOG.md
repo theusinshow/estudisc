@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-18 — Provas screens (F5 point 4)
+
+- /provas: the tab title has the Hoje display size (also on Você), the countdown board gains "até 29/11, dia da prova" (it counts to midnight of the exam day; the landing counts calendar days), and the cards name their counts ("3 simulados completos", "11 provas, de 2022 a 2026").
+- /past-exams: year filter as one scrollable row of pills, tighter cards, the official links read "Caderno oficial ↗" / "Gabarito oficial ↗" (screen readers hear that they open the official site in another tab), "1 anulada"/"2 anuladas" and "tentativa(s)" pluralised, shorter kicker. Subject lines stay on each card: editions differ (e.g. "Linguagens · Matemática · Ciências Humanas").
+- An active simulado always uses focus mode (no tab bar, "← Provas"); FEATURE_REAL_EXAM still gates navigation and final review. An active past-exam sheet's exit reads "← Provas".
+
 ## 2026-10-18 — Review screen (F5 point 4)
 
 - /review: shorter intro ("O que você errou ou está perto de esquecer…"); the practice time is chosen once, above the deck, and each card starts a 10-minute practice with "Praticar este conceito" (the concept stays in the accessible name); the card shows "Para revisar hoje/desde dd/mm" instead of the mastery state; the swipe hint is shorter. The list view keeps the mastery state.

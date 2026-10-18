@@ -18,7 +18,7 @@ export default async function AssessmentPage({params}:{params:Promise<{assessmen
   const {assessmentId}=await params;if(!z.uuid().safeParse(assessmentId).success)notFound();
   const repo=assessmentRepository(),ownerId=await getOwnerId();
   const sheet=await repo.sheetView(ownerId,assessmentId);
-  if(sheet)return <AppShell mode={sheet.status==="ACTIVE"?"focus":"page"} exit={{href:"/past-exams",label:"Voltar às provas anteriores"}}><article className="foundation-panel content-panel assessment-page">
+  if(sheet)return <AppShell mode={sheet.status==="ACTIVE"?"focus":"page"} exit={{href:"/past-exams",label:"Voltar às provas anteriores",short:"Provas"}}><article className="foundation-panel content-panel assessment-page">
     <p className="eyebrow">{assessmentKindLabel.PAST_EXAM_SHEET} · modo prova</p><h1>{sheet.status==="FINALIZED"?"Seu resultado":sheet.title}</h1>
     {sheet.status==="ACTIVE"?<AnswerSheetPanel view={sheet}/>:<PastExamResult view={sheet}/>}
   </article></AppShell>;
@@ -26,7 +26,8 @@ export default async function AssessmentPage({params}:{params:Promise<{assessmen
   const result=resultSchema.safeParse(view.result);
   const conceptScores=result.success&&getFeatureFlags().FEATURE_REAL_EXAM?summarizeAssessmentConcepts(result.data.items):[];
   const names=conceptScores.length?new Map((await listKnowledgeMapConcepts()).map(concept=>[concept.stableId,concept.title])):new Map<string,string>();
-  return <AppShell mode={view.status === "ACTIVE" && getFeatureFlags().FEATURE_REAL_EXAM ? "focus" : "page"} exit={{ href: "/assessments", label: "Voltar aos simulados" }}><article className="foundation-panel content-panel assessment-page">
+  // An active simulado always hides the tab bar (no accidental exits); FEATURE_REAL_EXAM still gates navigation and final review.
+  return <AppShell mode={view.status === "ACTIVE" ? "focus" : "page"} exit={{ href: "/provas", label: "Voltar às provas", short: "Provas" }}><article className="foundation-panel content-panel assessment-page">
     <p className="eyebrow">{assessmentKindLabel[view.kind]??view.kind}{view.mode==="EXAM"?" · modo prova":""}</p>
     <h1>{view.status==="FINALIZED"?"Seu resultado":"Simulado"}</h1>
     {view.status==="ACTIVE"?<AssessmentPanel view={view} serverNow={view.serverNow} enhanced={getFeatureFlags().FEATURE_REAL_EXAM}/>:result.success?<>

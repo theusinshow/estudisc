@@ -7,7 +7,7 @@ test("lists, answers, resumes and corrects a past-exam answer sheet",async({page
   for(const template of [free,reserved])expect((await request.post("/api/admin/assessment-templates",{data:template})).ok()).toBe(true);
   await page.goto("/past-exams");
   const reservedCard=page.locator(".past-exam-card",{hasText:`Prova 2026.1 ${tag}`});await expect(reservedCard.getByText(/Simulado reservado/)).toBeVisible();await expect(reservedCard.getByRole("link")).toHaveCount(0);
-  const card=page.locator(".past-exam-card",{hasText:`Prova 2025.1 ${tag}`});await expect(card.getByRole("link",{name:"Abrir caderno oficial"})).toHaveAttribute("href",/www\.ifsc\.edu\.br/);await expect(card.getByRole("link",{name:"Gabarito oficial"})).toHaveCount(0);
+  const card=page.locator(".past-exam-card",{hasText:`Prova 2025.1 ${tag}`});await expect(card.getByRole("link",{name:"Caderno oficial"})).toHaveAttribute("href",/www\.ifsc\.edu\.br/);await expect(card.getByRole("link",{name:"Gabarito oficial"})).toHaveCount(0);
   for(const width of [320,1280]){await page.setViewportSize({width,height:900});expect(await page.evaluate(()=>document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);await page.screenshot({path:testInfo.outputPath(`past-exams-${width}.png`)});}
   await card.getByRole("button",{name:"Responder"}).click();await page.waitForURL(/\/assessments\//);
   await page.getByRole("radio",{name:"Questão 1, alternativa A"}).check();

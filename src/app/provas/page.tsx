@@ -3,6 +3,7 @@ import { ArrowRight, ClipboardList, FileText } from "lucide-react";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { ExamCountdownBoard } from "@/features/study-tools/exam-countdown";
+import { accessLastDay, CONTENT_SUMMARY } from "@/features/public-site/content-summary";
 
 export const dynamic = "force-dynamic";
 
@@ -15,13 +16,15 @@ export default function ExamsHubPage() {
           <p className="eyebrow">Treino no formato da prova</p>
           <h1 id="provas-title">Provas</h1>
           <ExamCountdownBoard />
+          {/* The board counts to midnight of the exam day; the landing counts calendar days (42 vs 41 d 18 h). */}
+          <p className="hub-countdown-note">até {accessLastDay().slice(0, 5)}, dia da prova</p>
         </header>
         <ul className="hub-cards">
           <li>
             <Link className="hub-card" href="/assessments" data-subject="mathematics">
               <span className="hub-card-sticker">Simulados</span>
               <span className="hub-card-icon" aria-hidden="true"><ClipboardList /></span>
-              <strong>Simulados completos</strong>
+              <strong>{CONTENT_SUMMARY.simulationTemplates} simulados completos</strong>
               <span>No formato do IFSC, com tempo de prova e correção no fim.</span>
               <span className="hub-card-cta">Abrir simulados <ArrowRight aria-hidden="true" /></span>
             </Link>
@@ -30,8 +33,8 @@ export default function ExamsHubPage() {
             <Link className="hub-card" href="/past-exams" data-subject="science">
               <span className="hub-card-sticker">Oficiais</span>
               <span className="hub-card-icon" aria-hidden="true"><FileText /></span>
-              <strong>Provas anteriores</strong>
-              <span>Cadernos oficiais de 2022 a 2026 com cartão-resposta e correção pelo gabarito.</span>
+              <strong>{CONTENT_SUMMARY.pastExams} provas, de 2022 a 2026</strong>
+              <span>Cadernos oficiais com cartão-resposta e correção pelo gabarito.</span>
               <span className="hub-card-cta">Ver provas <ArrowRight aria-hidden="true" /></span>
             </Link>
           </li>
