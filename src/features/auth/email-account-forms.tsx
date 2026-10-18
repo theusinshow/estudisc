@@ -26,6 +26,8 @@ export function SignupForm({ initialEmail = "" }: Readonly<{ initialEmail?: stri
   const [guardian, setGuardian] = useState(false);
   const [terms, setTerms] = useState(false);
   const [error, setError] = useState("");
+  // Once the code is sent only the code step stays on screen; "Trocar e-mail" brings the filled form back.
+  const [codeSent, setCodeSent] = useState(false);
 
   function details(): SignupDetails | null {
     if (name.trim().length < 2) { setError("Digite seu nome."); return null; }
@@ -38,16 +40,18 @@ export function SignupForm({ initialEmail = "" }: Readonly<{ initialEmail?: stri
 
   return (
     <div className="signup-form">
-      <label className="learning-field">Seu nome<input autoComplete="name" maxLength={60} value={name} onChange={event => setName(event.target.value)} /></label>
-      <fieldset className="signup-age">
-        <legend>Idade</legend>
-        <label><input type="radio" name="age" checked={age === "adult"} onChange={() => setAge("adult")} /> Tenho 18 anos ou mais</label>
-        <label><input type="radio" name="age" checked={age === "minor"} onChange={() => setAge("minor")} /> Tenho menos de 18 anos</label>
-      </fieldset>
-      {age === "minor" && <label className="signup-check"><input type="checkbox" checked={guardian} onChange={event => setGuardian(event.target.checked)} /><span>Meu pai, mãe ou responsável sabe que vou usar o Estudisc e autorizou.</span></label>}
-      <label className="signup-check"><input type="checkbox" checked={terms} onChange={event => setTerms(event.target.checked)} /><span>Li e aceito os <Link href="/termos" target="_blank">termos de uso</Link> e a <Link href="/privacidade" target="_blank">política de privacidade</Link>.</span></label>
-      {error && <p className="account-code-message" data-tone="error" role="alert">{error}</p>}
-      <EmailCodeStep intent="signup" callbackUrl="/" signup={details} initialEmail={initialEmail} submitLabel="Criar conta e receber código" />
+      <div className="signup-details" hidden={codeSent}>
+        <label className="learning-field">Seu nome<input autoComplete="name" maxLength={60} value={name} onChange={event => setName(event.target.value)} /></label>
+        <fieldset className="signup-age">
+          <legend>Idade</legend>
+          <label className="signup-age-option"><input type="radio" name="age" checked={age === "adult"} onChange={() => setAge("adult")} /><span>Tenho 18 anos ou mais</span></label>
+          <label className="signup-age-option"><input type="radio" name="age" checked={age === "minor"} onChange={() => setAge("minor")} /><span>Tenho menos de 18 anos</span></label>
+        </fieldset>
+        {age === "minor" && <label className="signup-check signup-guardian"><input type="checkbox" checked={guardian} onChange={event => setGuardian(event.target.checked)} /><span>Meu pai, mãe ou responsável sabe que vou usar o Estudisc e autorizou.</span></label>}
+        <label className="signup-check"><input type="checkbox" checked={terms} onChange={event => setTerms(event.target.checked)} /><span>Li e aceito os <Link href="/termos" target="_blank">termos de uso</Link> e a <Link href="/privacidade" target="_blank">política de privacidade</Link>.</span></label>
+        {error && <p className="account-code-message" data-tone="error" role="alert">{error}</p>}
+      </div>
+      <EmailCodeStep intent="signup" callbackUrl="/" signup={details} initialEmail={initialEmail} submitLabel="Criar conta e receber código" onSentChange={setCodeSent} />
     </div>
   );
 }

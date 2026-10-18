@@ -6,6 +6,8 @@
 - Public footer links sit in two columns on phones.
 - Goal tower: every fourth block used a token that does not exist and rendered blank; it now takes the Geografia e História yellow.
 - /auth/signin: "Entrar ou criar conta" on one rounded sheet; white "Continuar com o Google" button with the Google mark, an "ou com seu e-mail" divider, full-width e-mail field ("Receber código"), one hint line with "Criar conta", the terms as a linked line and "Tenho um perfil com código" last. The exam countdown block below the panel was removed. Through "Tenho um perfil com código" the page shows only the profile form, with a link back to Google or e-mail.
+- /auth/cadastro: "Criar conta" on the same sheet; age as two large tap cards, the guardian declaration highlighted, a larger terms check. After the code is sent only the code step stays on screen; "Trocar e-mail" brings the filled form back.
+- 6-digit code step (sign-up, e-mail and profile sign-in): the slots took 328 px and pushed the card past the screen on phones; they now size to the width (48/40/36 px tiers via `useCodeSlotSize`), and "Trocar e-mail · Reenviar código" are plain links on one line.
 
 ## 2026-10-18 — Review deck, lit concept map, goal tower and focus mode (ADR 0069, F5 point 3)
 

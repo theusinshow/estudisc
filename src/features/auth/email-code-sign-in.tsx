@@ -2,6 +2,7 @@
 
 import { useState, useSyncExternalStore } from "react";
 import CodeSlots, { type CodeSlotsStatus } from "@/components/code-slots/code-slots";
+import { useCodeSlotSize } from "@/components/code-slots/use-code-slot-size";
 
 const CODE_LENGTH = 6;
 const noSubscription = () => () => {};
@@ -13,11 +14,14 @@ export type SignupDetails = Readonly<{ name: string; minor: boolean; guardianAut
  * Passwordless e-mail step (ADR 0068): send a 6-digit code, then type it. Used for sign-in, sign-up
  * (with the sign-up details) and linking an e-mail to the signed-in profile.
  */
-export function EmailCodeStep({ intent, callbackUrl, signup, submitLabel, onDone, onNoAccount, initialEmail = "" }: Readonly<{
+export function EmailCodeStep({ intent, callbackUrl, signup, submitLabel, onDone, onNoAccount, onSentChange, initialEmail = "" }: Readonly<{
   intent: Intent; callbackUrl: string; signup?: () => SignupDetails | null; submitLabel: string; initialEmail?: string;
   onDone?: (name: string) => void; onNoAccount?: (email: string) => void;
+  /** Tells the parent when the code step opens (true) or "Trocar e-mail" returns to the form (false). */
+  onSentChange?: (sent: boolean) => void;
 }>) {
   const mounted = useSyncExternalStore(noSubscription, () => true, () => false);
+  const slot = useCodeSlotSize();
   const [email, setEmail] = useState(initialEmail);
   const [sentTo, setSentTo] = useState<string | null>(null);
   const [status, setStatus] = useState<CodeSlotsStatus>("idle");
@@ -33,7 +37,7 @@ export function EmailCodeStep({ intent, callbackUrl, signup, submitLabel, onDone
       const response = await fetch("/api/auth/email/start", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, intent, ...(details ? { signup: details } : {}) }) });
       const body = (await response.json().catch(() => ({}))) as { message?: string };
       if (!response.ok) { setMessage({ text: body.message ?? "Não foi possível enviar o código. Tente de novo.", tone: "error" }); return; }
-      setSentTo(email.trim().toLowerCase()); setStatus("idle");
+      setSentTo(email.trim().toLowerCase()); setStatus("idle"); onSentChange?.(true);
       setMessage({ text: "Enviamos um código de 6 dígitos. Confira a caixa de entrada e o spam.", tone: "info" });
     } catch {
       setMessage({ text: "Sem conexão com o servidor. Tente de novo.", tone: "error" });
@@ -75,10 +79,10 @@ export function EmailCodeStep({ intent, callbackUrl, signup, submitLabel, onDone
         <div className="account-code">
           <p id="email-code-label">Código enviado para <strong>{sentTo}</strong></p>
           {mounted ? (
-            <CodeSlots length={CODE_LENGTH} slotSize={44} gap={8} mask={false} autoFocus status={status} ariaLabel={`Código de ${CODE_LENGTH} dígitos enviado por e-mail`}
+            <CodeSlots length={CODE_LENGTH} slotSize={slot.slotSize} gap={slot.gap} className={slot.className} mask={false} autoFocus status={status} ariaLabel={`Código de ${CODE_LENGTH} dígitos enviado por e-mail`}
               onChange={() => { if (status === "error") setStatus("idle"); }} onComplete={code => void verify(code)} />
           ) : null}
-          <p className="account-help"><button type="button" className="text-link" onClick={() => { setSentTo(null); setMessage(null); }}>Trocar e-mail</button> · <button type="button" className="text-link" disabled={busy} onClick={() => void send()}>Reenviar código</button></p>
+          <p className="account-help"><button type="button" className="text-link" onClick={() => { setSentTo(null); setMessage(null); onSentChange?.(false); }}>Trocar e-mail</button> · <button type="button" className="text-link" disabled={busy} onClick={() => void send()}>Reenviar código</button></p>
         </div>
       )}
       <p className="account-code-message" role="status" data-tone={message?.tone}>{message?.text}</p>
