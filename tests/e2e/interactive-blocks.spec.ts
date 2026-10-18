@@ -64,7 +64,8 @@ test("explores and resumes typed blocks with keyboard/touch, image fallback and 
   await expect(page.locator(".lesson-resume-controls")).toContainText("Ponto da aula salvo");
   await page.reload();
   await expect(page.getByRole("textbox", { name: "Sua previsão", exact: true })).toHaveValue("O fundo muda");
-  await expect(matching.getByRole("combobox", { name: "Primeiro local", exact: true })).toHaveValue("y");
+  // Tap-to-place matching (ADR 0069): the restored piece sits in the "Local B" box.
+  await expect(matching.locator(".place-box", { has: page.getByRole("button", { name: "Local B", exact: true }) }).getByRole("button", { name: /^Primeiro local,/ })).toBeVisible();
   await expect(matching).toContainText("Passo a passo");
   await expect(matching).toContainText("Parte do raciocínio está no caminho");
   await expect(timeline).toContainText("Resposta correta");

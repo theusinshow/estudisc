@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-18 — Matching boxes keep their names (F5 point 4)
+
+- Tap-to-place matching: the "+ colocar aqui" hint on a box is visual only (empty CSS alternative text), so screen readers and tests hear "Local B", not "Local B + colocar aqui". The flag-gated interactive-blocks e2e is green again (it also checks the restored piece in its box instead of the old select).
+
 ## 2026-10-18 — Você screens (F5 point 4)
 
 - One study week, Monday to Sunday, everywhere: Hoje's "Sua semana" and the progress heatmap now use the week of the weekly achievement, so a Sunday counts in the same week for both (owner took the recommendation; the reward rule is unchanged). Test added for the Sunday boundary.
