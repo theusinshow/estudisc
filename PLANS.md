@@ -1,4 +1,13 @@
 # Estudisc current plan
+## F5 point 4 — screen-by-screen review on the vibrante visual (2026-10-18, next session)
+
+State: F0–F5 points 1–3 are live (main at cab628f, Railway SUCCESS). Points done: tactile activities + ADR 0070 explorers + content batch f5a-20261017 published; ADR 0071 confidence check; review deck, lit concept map, goal tower, focus mode.
+Method agreed with the owner: one screen at a time, mobile first (390×844 and 320 wide), in navigation order: Hoje → Estudar (/tracks, a track) → one full lesson (MAT-07 v9: activities, explorers, confidence picker, focus mode) → Revisão (/review deck) → Provas (/provas, a simulado, past exams) → Você (/voce, progress, map, achievements, account) → public pages (/conheca, /auth/signin, /auth/cadastro).
+For each screen: send the production link (https://www.estudisc.com.br/...) plus what I would change; the owner approves or adjusts; apply approved changes in batches, run focused checks, push to main (owner approves pushes) and wait for Railway SUCCESS.
+Local preview with production flags: `DATABASE_URL=memory://local ESTUDISC_OWNER_ID=local-owner AUTH_TRUST_HOST=true FEATURE_SMART_MISTAKES=true FEATURE_NEW_TODAY=true FEATURE_KNOWLEDGE_MAP=true FEATURE_CONTINUOUS_STUDY=true FEATURE_INTERACTIVE_LESSONS=true FEATURE_ADAPTIVE_SESSION=true node node_modules/next/dist/bin/next dev -p 3311`, then `node scripts/seed-local-demo.mjs http://localhost:3311`.
+Known open items to raise during the review: /conheca stat overlapping its label, mixed widths and weak final CTA (noted 2026-10-17); goal tower uses a fixed suggested goal of 10 (owner may want it configurable); lit map not yet seen with consolidated Concepts.
+NEXT ACTION: start with Hoje.
+
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 
 Owner decisions: Google + passwordless e-mail code, Resend, guardian declaration for minors, existing profiles link e-mail later.
