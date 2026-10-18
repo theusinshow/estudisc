@@ -10,7 +10,8 @@ import { buildRoutineWeek, normalizeRoutine } from "@/features/study-sessions/ro
 import { assertRoutineBudget, assertRoutineStart } from "@/features/study-sessions/routine-session-constraints";
 import { memoryAdaptiveChoices } from "./memory-adaptive-session-data";
 import { summarizeSession } from "@/features/study-sessions/session-summary";
-import { OpenSessionError, type TargetedPracticeRequest } from "@/features/study-sessions/targeted-selection";
+import { OpenSessionError, TargetedPracticeError, type TargetedPracticeRequest } from "@/features/study-sessions/targeted-selection";
+import { PRACTICE_BLOCK_MINUTES, capBlockItems, practiceBlockPolicy, toBlockAnswer, type PracticeBlockTarget } from "@/features/study-sessions/practice-block";
 import { memoryTargetedSelection } from "./targeted-session-selection";
 export class MemoryStudySessionRepository{
   constructor(private readonly store=getMemoryStore(),private readonly routineEnabled=false,private readonly adaptiveEnabled=false){}
@@ -56,6 +57,25 @@ export class MemoryStudySessionRepository{
       const row={id:crypto.randomUUID(),ownerId,trackId:pack.track.id,status:"PLANNED",budgetMinutes,items:plan.items.map(candidate=>choices.find(choice=>choice.candidate.id===candidate.id)!.item),policyVersion:plan.policyVersion,startedAt:null,endedAt:null,createdAt:new Date()};this.store.studySessions.push(row);return row;
     }return null;
   }
+  /** ADR 0072: mirrors StudySessionRepository.startBlock. */
+  async startBlock(ownerId:string,target:PracticeBlockTarget,now=new Date()){
+    const policyVersion=practiceBlockPolicy(target);
+    const open=this.store.studySessions.find(row=>row.ownerId===ownerId&&row.status==="ACTIVE");
+    if(open?.policyVersion===policyVersion)return open;
+    const items=this.blockItems(ownerId,target,now);
+    if(!items.length)return null;
+    for(const old of this.store.studySessions.filter(row=>row.ownerId===ownerId&&(row.status==="ACTIVE"||row.status==="PLANNED"))){old.status="ABANDONED";old.endedAt=now;}
+    const row={id:crypto.randomUUID(),ownerId,trackId:items[0].trackId!,status:"ACTIVE",budgetMinutes:PRACTICE_BLOCK_MINUTES,items,policyVersion,startedAt:now as Date|null,endedAt:null as Date|null,createdAt:now};this.store.studySessions.push(row);return row;
+  }
+  async blockHasMore(ownerId:string,target:PracticeBlockTarget,now=new Date()){
+    try{return this.blockItems(ownerId,target,now).length>0;}catch(error){if(error instanceof TargetedPracticeError)return false;throw error;}
+  }
+  private blockItems(ownerId:string,target:PracticeBlockTarget,now:Date){
+    const selection=memoryTargetedSelection(this.store,ownerId,target,now);
+    const data=memoryAdaptiveChoices(this.store,ownerId,PRACTICE_BLOCK_MINUTES,undefined,now,selection);
+    const plan=planCandidates(data.choices.map(choice=>choice.candidate),PRACTICE_BLOCK_MINUTES,"FOUNDATION",data.subjectMinutes,undefined,true);
+    return capBlockItems(plan.items.map(candidate=>data.choices.find(choice=>choice.candidate.id===candidate.id)!.item));
+  }
   async get(ownerId:string,id:string){return this.store.studySessions.find(row=>row.ownerId===ownerId&&row.id===id)??null;}
   async list(ownerId:string){return this.store.studySessions.filter(row=>row.ownerId===ownerId).slice(-15).reverse();}
   async planningFacts(ownerId:string,now=new Date()){return this.store.studySessions.filter(row=>row.ownerId===ownerId&&(["ACTIVE","PLANNED"].includes(row.status)||row.status==="COMPLETED"&&row.endedAt&&row.endedAt.getTime()>=now.getTime()-9*86400_000)).slice().reverse();}
@@ -71,6 +91,6 @@ export class MemoryStudySessionRepository{
     const rows = this.store.attempts.filter(row => row.ownerId === ownerId && row.context?.contextKey === id);
     const evidence = this.store.conceptEvidence.filter(fact => fact.ownerId === ownerId && rows.some(row => row.id === fact.attemptId)).map(fact => ({ conceptId: fact.conceptStableId, title: this.store.concepts.find(concept => concept.stableId === fact.conceptStableId)?.title ?? fact.conceptStableId, strength: fact.strength, conditions: fact.conditions }));
     const summary = summarizeSession(session, rows.map(row => ({ key: row.context?.questionId ? JSON.stringify([row.context.questionId, row.context.questionVersion]) : row.questionVersionId ?? row.activityStableId, outcome: row.outcome })), evidence);
-    return { session, items: sessionItemsSchema.parse(session.items), attempts: summary.attempts, correct: summary.correct, answered: summary.answered, summary };
+    return { session, items: sessionItemsSchema.parse(session.items), attempts: summary.attempts, correct: summary.correct, answered: summary.answered, summary, answers: rows.map(row => toBlockAnswer(row.context, row.outcome)) };
   }
 }

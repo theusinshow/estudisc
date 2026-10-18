@@ -26,6 +26,7 @@ import { AIService } from "@/features/ai/ai-service";
 import { aiRequestSchema } from "@/features/ai/contracts";
 import { resolveAiContext } from "@/features/ai/context";
 import { KnowledgeMapRepository,MemoryKnowledgeMapRepository } from "@/db/repositories/knowledge-map-repository";
+import { PRACTICE_BLOCK_SIZE, blockQuestions, practiceBlockPolicy, summarizeBlock } from "@/features/study-sessions/practice-block";
 
 const now = new Date("2026-10-06T12:00:00Z");
 function fixture(version = 1) {
@@ -58,6 +59,55 @@ async function setup(kind: "memory" | "sql", seed = true, initial = fixture()) {
 }
 
 describe.each(["memory", "sql"] as const)("adaptive sessions (%s)", kind => {
+  async function dueNow(ctx: Awaited<ReturnType<typeof setup>>, conceptIds: readonly string[]) {
+    if (ctx.database) {
+      await ctx.database.db.insert(owners).values({ id: "learner", displayName: "Test learner" }).onConflictDoNothing();
+      for (const stableId of conceptIds) {
+        const [concept] = await ctx.database.db.select().from(concepts).where(eq(concepts.stableId, stableId));
+        await ctx.database.db.insert(reviewSchedules).values({ ownerId: "learner", conceptId: concept.id, currentMasteryState: "learning", nextReviewAt: now, policyVersion: "review.v2", reviewCount: 0, recentQuality: 0 });
+      }
+    } else for (const stableId of conceptIds) ctx.store.reviewSchedules.push({ ownerId: "learner", conceptStableId: stableId, currentMasteryState: "learning", lastReviewedAt: null, nextReviewAt: now, reviewCount: 0, recentQuality: 0, policyVersion: "review.v2", updatedAt: now });
+  }
+  it("starts an ACTIVE practice block of up to five Questions, resumes the same target and replaces another", async () => {
+    const ctx = await setup(kind);
+    try {
+      await dueNow(ctx, [...new Set(source.questions.flatMap(question => question.conceptIds))]);
+      const whole = (await ctx.sessions.startBlock("learner", { kind: "review" }, now))!;
+      expect(whole.status).toBe("ACTIVE");
+      expect(whole.startedAt).not.toBeNull();
+      expect(whole.policyVersion).toBe(practiceBlockPolicy({ kind: "review" }));
+      expect(blockQuestions(sessionItemsSchema.parse(whole.items))).toHaveLength(PRACTICE_BLOCK_SIZE);
+      expect((await ctx.sessions.startBlock("learner", { kind: "review" }, now))!.id).toBe(whole.id);
+      const conceptId = "MAT.PCT.CALCULATE";
+      const single = (await ctx.sessions.startBlock("learner", { kind: "review", conceptId }, now))!;
+      expect(single.id).not.toBe(whole.id);
+      expect((await ctx.sessions.get("learner", whole.id))?.status).toBe("ABANDONED");
+      const questions = blockQuestions(sessionItemsSchema.parse(single.items));
+      // Fewer than five eligible: the block holds what exists.
+      expect(questions).toHaveLength(Math.min(PRACTICE_BLOCK_SIZE, source.questions.filter(question => question.conceptIds.includes(conceptId)).length));
+      expect(questions.every(question => source.questions.find(row => row.id === question.questionId)?.conceptIds.includes(conceptId))).toBe(true);
+      expect(await ctx.sessions.blockHasMore("learner", { kind: "review", conceptId }, now)).toBe(true);
+      expect(await ctx.sessions.blockHasMore("other", { kind: "review", conceptId }, now)).toBe(false);
+      await expect(ctx.sessions.startBlock("other", { kind: "review", conceptId }, now)).rejects.toMatchObject({ code: "review_not_due" });
+    } finally { await ctx.database?.close(); }
+  });
+  it("reports each block Question's first Attempt for the summary", async () => {
+    const ctx = await setup(kind);
+    try {
+      await dueNow(ctx, ["MAT.PCT.CALCULATE"]);
+      const block = (await ctx.sessions.startBlock("learner", { kind: "review", conceptId: "MAT.PCT.CALCULATE" }, now))!;
+      const [first] = blockQuestions(sessionItemsSchema.parse(block.items));
+      const canonical = source.questions.find(question => question.id === first.questionId)!;
+      const wrong = canonical.answer.kind === "numeric" ? String((canonical.answer.value ?? 0) + 999) : canonical.answer.kind === "multiple_choice" ? canonical.choices!.find(choice => !choice.correct)!.id : "invalid-response";
+      await ctx.questions.view("learner", first.stableId, first.questionId, first.questionVersion, block.id);
+      expect(await ctx.questions.interact("learner", first.stableId, { action: "submit", questionId: first.questionId, questionVersion: first.questionVersion, sessionId: block.id, submissionKey: crypto.randomUUID(), response: wrong })).toMatchObject({ correct: false });
+      const result = (await ctx.sessions.result("learner", block.id))!;
+      expect(result.answers).toHaveLength(1);
+      const summary = summarizeBlock(blockQuestions(result.items), result.answers);
+      expect(summary.rows[0].mark).toBe("retry");
+      expect(summary).toMatchObject({ answered: 1, independent: 0 });
+    } finally { await ctx.database?.close(); }
+  });
   it("reads a published, owned knowledge map without creating evidence or conflating schedules",async()=>{
     const ctx=await setup(kind);
     try{
