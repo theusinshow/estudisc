@@ -6,9 +6,15 @@ import { GoalTower, goalTowerText } from "@/features/today/goal-tower";
 import { FocusMode, focusLabel } from "@/features/study-tools/focus-mode";
 
 afterEach(() => { vi.useRealTimers(); });
-const card = (id: string, blindSpot = false) => ({ conceptId: id, title: `Conceito ${id}`, reason: "Motivo", due: "venceu em 17/10", state: "Em prática", blindSpot });
+const card = (id: string, blindSpot = false) => ({ conceptId: id, title: `Conceito ${id}`, reason: "Motivo", due: "Para revisar desde 17/10", blindSpot });
 
 describe("review deck", () => {
+  it("starts a practice from the card without its own time choice, naming the concept for screen readers", () => {
+    render(<ReviewDeck cards={[card("a")]} />);
+    expect(screen.getByRole("button", { name: "Praticar Conceito a" })).toHaveTextContent("Praticar este conceito");
+    expect(screen.queryByLabelText("Tempo para esta prática")).toBeNull();
+    expect(screen.getByText("Para revisar desde 17/10")).toBeVisible();
+  });
   it("moves between cards without recording anything and flags blind spots", async () => {
     vi.useFakeTimers({ shouldAdvanceTime: true });
     const user = userEvent.setup({ advanceTimers: vi.advanceTimersByTime });

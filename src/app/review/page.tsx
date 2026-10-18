@@ -14,6 +14,12 @@ export const dynamic = "force-dynamic";
 
 const dayMonth = new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit" });
 const reviewDue = (date: Date) => `${date.getTime() <= Date.now() ? "venceu em" : "vence em"} ${dayMonth.format(date)}`;
+/** Deck wording: when the concept is (or was) due, without mastery jargon. */
+const deckDue = (date: Date) => {
+  const day = dayMonth.format(date);
+  if (day === dayMonth.format(new Date())) return "Para revisar hoje";
+  return date.getTime() < Date.now() ? `Para revisar desde ${day}` : `Para revisar em ${day}`;
+};
 
 async function completeReviewAction(formData: FormData) {
   "use server";
@@ -54,7 +60,7 @@ export default async function ReviewPage() {
       <section className="foundation-panel content-panel accent-panel accent-review" aria-labelledby="review-title">
         <p className="eyebrow">Revisão</p>
         <h1 id="review-title">Revisões de hoje</h1>
-        <p>{enhanced?"As revisões são previstas a partir das suas respostas registradas. Responder uma questão recupera o conteúdo; ler ou refletir não registra um acerto.":"Cada conceito volta quando está perto de ser esquecido. Revisar na hora certa fixa o conteúdo para a prova."}</p>
+        <p>{enhanced?"O que você errou ou está perto de esquecer. Responder conta como revisão; só ler não conta.":"Cada conceito volta quando está perto de ser esquecido. Revisar na hora certa fixa o conteúdo para a prova."}</p>
 
         {dueReviews.length === 0 ? (
           <div className="empty-state">
@@ -68,7 +74,7 @@ export default async function ReviewPage() {
               <p className="queue-count"><strong>{dueReviews.length}</strong> <span>{dueReviews.length === 1 ? "conceito na fila" : "conceitos na fila"}</span></p>
               {enhanced&&<TargetedPracticeControls kind="review" label="Começar revisão rápida"/>}
             </div>
-            {enhanced && <ReviewDeck cards={dueReviews.map(review => ({ conceptId: review.conceptStableId, title: studentConceptLabel(review.conceptTitle), reason: review.reason, due: reviewDue(review.nextReviewAt), state: masteryStateLabels[review.currentMasteryState as MasteryState] ?? review.currentMasteryState, blindSpot: Boolean(review.blindSpot) }))} />}
+            {enhanced && <ReviewDeck cards={dueReviews.map(review => ({ conceptId: review.conceptStableId, title: studentConceptLabel(review.conceptTitle), reason: review.reason, due: deckDue(review.nextReviewAt), blindSpot: Boolean(review.blindSpot) }))} />}
             {enhanced ? <details className="review-list-toggle"><summary>Ver a fila em lista</summary>{list}</details> : list}
           </>
         )}

@@ -4,7 +4,8 @@ import { useId, useState, useSyncExternalStore } from "react";
 import { openStudySession } from "./session-navigation";
 import { apiErrorSchema, readValidatedResponse, sessionResponseSchema } from "@/lib/api-response";
 
-type Props = { kind:"review";conceptId?:string;label?:string } | { kind:"remediation";mistakeId:string;label?:string };
+/** `showTime={false}`: a card that starts a 10-minute practice without its own time choice; `ariaLabel` names a short label. */
+type Props = ({ kind:"review";conceptId?:string;label?:string } | { kind:"remediation";mistakeId:string;label?:string }) & { showTime?:boolean;ariaLabel?:string };
 const subscribe = () => () => {};
 const clientReady = () => true;
 const serverReady = () => false;
@@ -24,8 +25,8 @@ export function TargetedPracticeControls(props:Props){
   }
   return <div className="learning-controls targeted-practice-controls" aria-busy={busy}>
     {!ready&&<p role="status">Carregando controles da sessão…</p>}
-    <label className="learning-field" htmlFor={`${id}-minutes`}>Tempo para esta prática<select id={`${id}-minutes`} value={minutes} disabled={!ready || busy} onChange={event=>setMinutes(Number(event.target.value) as 10|15)}><option value={10}>10 minutos</option><option value={15}>15 minutos</option></select></label>
-    <button className="primary-button" type="button" disabled={!ready || busy} onClick={()=>void start(false)}>{busy?"Preparando…":props.label??(props.kind==="review"?"Revisão rápida":"Praticar outra questão")}</button>
+    {props.showTime!==false&&<label className="learning-field" htmlFor={`${id}-minutes`}>Tempo para esta prática<select id={`${id}-minutes`} value={minutes} disabled={!ready || busy} onChange={event=>setMinutes(Number(event.target.value) as 10|15)}><option value={10}>10 minutos</option><option value={15}>15 minutos</option></select></label>}
+    <button className="primary-button" type="button" aria-label={busy?undefined:props.ariaLabel} disabled={!ready || busy} onClick={()=>void start(false)}>{busy?"Preparando…":props.label??(props.kind==="review"?"Revisão rápida":"Praticar outra questão")}</button>
     {openSessionId&&<div role="group" aria-label="Sessão em andamento" className="learning-controls"><p role="status">Você tem uma sessão de estudo em andamento. Quer continuar nela ou começar esta prática do zero?</p><button className="secondary-action" type="button" onClick={()=>openStudySession(openSessionId)}>Continuar a sessão</button><button className="primary-button" type="button" disabled={busy} onClick={()=>void start(true)}>Começar esta prática</button></div>}
     {busy&&<p role="status">Abrindo sessão…</p>}{error&&<p role="alert">{error}{locked&&<> <Link href="/upgrade">Ver acesso completo</Link></>}</p>}
   </div>;

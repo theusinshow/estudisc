@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-18 — Review screen (F5 point 4)
+
+- /review: shorter intro ("O que você errou ou está perto de esquecer…"); the practice time is chosen once, above the deck, and each card starts a 10-minute practice with "Praticar este conceito" (the concept stays in the accessible name); the card shows "Para revisar hoje/desde dd/mm" instead of the mastery state; the swipe hint is shorter. The list view keeps the mastery state.
+
 ## 2026-10-18 — Lesson screen review (F5 point 4)
 
 - Stepped lessons open on the content: the progress panel moved to the end ("Você chegou ao fim da aula", or the end of "Ver tudo"), and the save line is visible only when a save fails ("Tentar salvar de novo") or another tab saved a newer point; saving stays automatic and the status remains for screen readers.

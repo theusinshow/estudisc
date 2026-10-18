@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Flame } from "lucide-react";
 import { useRef, useState, type PointerEvent } from "react";
 import { TargetedPracticeControls } from "@/features/study-sessions/targeted-practice-controls";
 
-export type ReviewCard = Readonly<{ conceptId: string; title: string; reason: string; due: string; state: string; blindSpot: boolean }>;
+export type ReviewCard = Readonly<{ conceptId: string; title: string; reason: string; due: string; blindSpot: boolean }>;
 
 /**
  * The review queue as a deck (ADR 0069, lab 8.5). Swiping or the arrows only move between cards; nothing is
@@ -37,15 +37,16 @@ export function ReviewDeck({ cards }: Readonly<{ cards: readonly ReviewCard[] }>
           {card.blindSpot ? <p className="review-card-flag"><Flame aria-hidden="true" />Ponto cego</p> : null}
           <h2>{card.title}</h2>
           <p>{card.reason}</p>
-          <small>{card.state} · {card.due}</small>
-          <TargetedPracticeControls kind="review" conceptId={card.conceptId} label={`Praticar ${card.title}`} />
+          <small>{card.due}</small>
+          {/* The time is chosen once, above the deck; a card starts a 10-minute practice. */}
+          <TargetedPracticeControls kind="review" conceptId={card.conceptId} label="Praticar este conceito" ariaLabel={`Praticar ${card.title}`} showTime={false} />
         </article>
       </div>
       <div className="review-deck-nav">
         <button type="button" className="secondary-button" disabled={index === 0} onClick={() => go(-1)}><ChevronLeft aria-hidden="true" />Anterior</button>
         <button type="button" className="secondary-button" disabled={index >= count - 1} onClick={() => go(1)}>Próximo<ChevronRight aria-hidden="true" /></button>
       </div>
-      <p className="review-deck-hint">Deslize para o lado para passar os cartões. Só responder conta como revisão.</p>
+      <p className="review-deck-hint">Deslize para passar os cartões.</p>
     </section>
   );
 }

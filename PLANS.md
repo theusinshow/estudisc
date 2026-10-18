@@ -31,7 +31,8 @@ Paywall live 2026-10-18 (7e822fe, Railway success). SEO PR #61 integrated with t
 Public pages redo complete (d6f5ff5 live). No Hoje fixes had landed from another session; owner approved Hoje items 1, 3–7 together with Estudar (single-track redirect, compact progress, Hoje study card, subject bars, compact lesson rows).
 Estudar + Hoje live 2026-10-18 (d938c43, Railway success). Lesson review (approved): progress panel to the end, save line only on error/conflict, fixed toolbar with icon tools, white bands, "← Trilha", subject-only tag, 320 title, confidence options unbroken. Local MAT-07 approximation: F5 batch applied on the release pack v4 (.local/build-mat07.mts, memory only).
 Known pre-existing failure (flag-gated, fails on main too): tests/e2e/interactive-blocks.spec.ts "Relacione os locais" still clicks the old matching UI (tap-to-place since 62f07f6).
-NEXT ACTION: push the lesson batch after approval; then Revisão (/review deck).
+Lesson batch live 2026-10-18 (999d101, Railway success). Revisão (approved): shorter intro, one time choice, card button "Praticar este conceito", "Para revisar…" meta, shorter hint. The local memory 404 on answers came only from the golden seed content; the MAT-07 build answers fine.
+NEXT ACTION: push Revisão after approval; then Provas (/provas, a simulado, past exams).
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 
