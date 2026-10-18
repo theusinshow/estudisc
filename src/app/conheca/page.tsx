@@ -10,7 +10,9 @@ import { loadSampleQuestion } from "@/features/public-site/sample-question-loade
 
 export const metadata: Metadata = {
   title: "Estudisc — preparação para a prova do IFSC 2027",
-  description: "Aulas, questões comentadas, simulados e provas anteriores para a prova de ingresso do IFSC 2027/1."
+  description: "Aulas, questões comentadas, simulados e provas anteriores para a prova de ingresso do IFSC 2027/1.",
+  // "/" redirects visitors here, so search engines should index this URL as the home of the product.
+  alternates: { canonical: "/conheca" }
 };
 export const dynamic = "force-dynamic";
 

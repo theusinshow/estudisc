@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { isHybridSignIn } from "@/features/auth/account-mode";
 import { hashAccessCode } from "@/features/auth/code-accounts";
 import { isPublicRuntimePath } from "@/features/auth/session-guard";
@@ -35,4 +35,13 @@ describe("hybrid sign-in (ADR 0061)", () => {
     expect(isHybridSignIn(getServerEnv({ AUTH_SECRET: secret, ESTUDISC_ACCOUNTS: accounts, FEATURE_PAID_ACCESS: "true" }))).toBe(false);
     expect(isHybridSignIn(getServerEnv({ ...google, FEATURE_PAID_ACCESS: "true" }))).toBe(false);
   });
+});
+
+it("lets crawlers reach the home redirect but keeps the app disallowed", async () => {
+  vi.doMock("@/features/public-site/site-url", () => ({ siteUrl: async () => "https://www.estudisc.com.br" }));
+  const { default: robots } = await import("@/app/robots");
+  const rules = (await robots()).rules as { allow: string[]; disallow: string[] };
+  expect(rules.allow).toContain("/$");
+  expect(rules.allow).toContain("/conheca");
+  expect(rules.disallow).toEqual(["/"]);
 });
