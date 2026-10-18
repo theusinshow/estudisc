@@ -1,55 +1,48 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
-import { CONTENT_SUMMARY, formatCount } from "@/features/public-site/content-summary";
+import "@/styles/today.css";
+import "@/styles/access-offer.css";
+import { StudyActionCard } from "@/features/today/study-action-card";
+import { formatTodayDate } from "@/features/today/today-date";
+import { accessLastDay } from "@/features/public-site/content-summary";
 import { FREE_SAMPLE_LESSONS, LIFETIME_PRICE_BRL } from "./contracts";
 
+/** Subject code from a lesson id ("MAT-07" → "MAT"); colors the subject tab. */
+const subjectOf = (lessonId: string) => lessonId.split("-")[0];
+
 /**
- * Home for a signed-in student without full access (ADR 0061 free preview). It leads to what the
- * account can actually open — the Diagnostic and one lesson per subject — instead of adaptive
- * sessions that would only answer "paid access required". The price stays one click away.
+ * Hoje for a signed-in student without full access (ADR 0061 free preview), laid out like the full
+ * Hoje. It leads to what the account can actually open — one lesson per subject and the Diagnostic —
+ * instead of adaptive sessions that would only answer "paid access required". The price stays one tap away.
  */
 export function FreePreviewHome() {
+  const [first, ...others] = FREE_SAMPLE_LESSONS;
   return (
-    <section className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="free-home-title">
-      <p className="eyebrow">Comece por aqui · grátis</p>
-      <h1 id="free-home-title">Conheça o Estudisc antes de decidir</h1>
-      <p>Sua conta já abre o simulado diagnóstico e uma aula completa de cada matéria. Não precisa pagar nada para começar.</p>
-
-      <div className="learning-controls">
-        <Link href="/assessments" className="primary-action">
-          Fazer o simulado diagnóstico
-        </Link>
-        <Link href={`/lessons/${FREE_SAMPLE_LESSONS[0].id}`} className="secondary-action">
-          Começar por uma aula
-        </Link>
-      </div>
-
-      <section className="module-section" aria-labelledby="free-home-lessons">
-        <h2 id="free-home-lessons">Aulas liberadas na sua conta</h2>
-        <ul className="concept-list">
-          {FREE_SAMPLE_LESSONS.map((sample) => (
-            <li key={sample.id}>
-              <Link href={`/lessons/${sample.id}`}>
-                <strong>
-                  {sample.subject} · {sample.title}
-                </strong>
-                <span>{sample.interactiveFeature}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+    <div className="today today-evolution">
+      <header className="today-header">
+        <p className="today-date">{formatTodayDate()}</p>
+        <h1>Hoje</h1>
+      </header>
+      <section className="today-next" aria-labelledby="free-start-title">
+        <h2 id="free-start-title">Comece por aqui</h2>
+        <StudyActionCard variant="lesson" title={first.title} reason={`${first.subject} · aula grátis. ${first.interactiveFeature}.`}
+          href={`/lessons/${first.id}`} subjectCode={subjectOf(first.id)} />
       </section>
-
-      <section className="module-section" aria-labelledby="free-home-full">
-        <h2 id="free-home-full">Quando quiser o curso inteiro</h2>
-        <p>
-          {formatCount(CONTENT_SUMMARY.lessons)} aulas, {formatCount(CONTENT_SUMMARY.lessonQuestions)} questões, simulados e plano de estudos
-          adaptativo. Pagamento único de R$ {LIFETIME_PRICE_BRL},00 por Pix ou cartão, com acesso até o dia da prova (29/11/2026).
-        </p>
-        <Link href="/upgrade" className="secondary-action">
-          Ver acesso completo
-        </Link>
+      <section className="today-queue" aria-labelledby="free-more-title">
+        <h2 id="free-more-title">Ou escolha outra matéria</h2>
+        <ol>{others.map(sample => <li key={sample.id}>
+          <Link href={`/lessons/${sample.id}`} data-kind="continue" data-subject={subjectOf(sample.id)}>
+            <span><strong>{sample.subject}</strong><small>Grátis: {sample.title}</small></span>
+          </Link>
+        </li>)}</ol>
       </section>
-    </section>
+      <Link href="/assessments" className="offer-link">Fazer o simulado diagnóstico <span className="offer-link-end">grátis<ArrowRight aria-hidden="true" /></span></Link>
+      <section className="offer-mini" aria-labelledby="free-full-title">
+        <h2 id="free-full-title">Acesso completo</h2>
+        <p><strong>R$&nbsp;{LIFETIME_PRICE_BRL}</strong> uma vez, com tudo liberado até {accessLastDay()}, o dia da prova.</p>
+        <Link href="/upgrade" className="secondary-action">Ver acesso completo</Link>
+      </section>
+    </div>
   );
 }
