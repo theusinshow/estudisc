@@ -5,7 +5,7 @@ const pages = [
   { path: "/termos", heading: "Termos de uso" },
   { path: "/privacidade", heading: "Política de privacidade" },
   { path: "/suporte", heading: "Como podemos ajudar?" },
-  { path: "/pais-e-escolas", heading: /plano de estudo para o Exame de Classificação do IFSC/ }
+  { path: "/pais-e-escolas", heading: /plano para a prova do IFSC/ }
 ];
 
 test("public sales and legal pages render with landmarks and fit a 320 px screen", async ({ page }) => {

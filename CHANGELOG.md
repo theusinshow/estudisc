@@ -18,6 +18,7 @@
 - 6-digit code step (sign-up, e-mail and profile sign-in): the slots took 328 px and pushed the card past the screen on phones; they now size to the width (48/40/36 px tiers via `useCodeSlotSize`), and "Trocar e-mail · Reenviar código" are plain links on one line.
 - Paywall (/upgrade and locked lessons): "Tudo do Estudisc por R$ 50, até a prova" (or "Esta aula faz parte do acesso completo"), one price card with what is included and the 7-day refund right (shared `AccessFacts`), "Pagar R$ 50 com Pix ou cartão", the no-guarantee and guardian notices, free sample lessons as subject chips plus the Diagnostic, and the scholarship code behind "Tenho um código de bolsa ou convite". Checkout, sandbox and invite flows are unchanged.
 - Free-account Hoje (/ and /plan without full access) is laid out like Hoje: date and "Hoje", the first free lesson as the "Comece por aqui" card, the other subjects as "Ou escolha outra matéria", the Diagnostic link and a small "Acesso completo" card.
+- /pais-e-escolas uses the same vibrante pieces in the guardian's voice: kicker with the exam, short H1 "Um plano para a prova do IFSC que seu filho usa no celular" with the buy button, numbers 2×2, rounded sheets for following progress, safety and schools, the shared price card (`AccessFacts`) and the independence notices as fine print.
 
 ## 2026-10-18 — Review deck, lit concept map, goal tower and focus mode (ADR 0069, F5 point 3)
 
