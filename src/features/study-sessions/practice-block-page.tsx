@@ -24,7 +24,7 @@ export async function PracticeBlockPage({ result, target }: Readonly<{ result: B
   const back = target.kind === "remediation" ? { href: "/mistakes", label: "Voltar para Erros" } : { href: "/review", label: "Voltar para Revisão" };
   const conceptId = target.kind === "review" ? target.conceptId ?? null : blockConceptId(items);
   const concept = conceptId ? await getConcept(conceptId) : null;
-  const title = concept ? studentConceptLabel(concept.title) : target.kind === "review" ? "Revisão" : "Prática";
+  const title = concept ? studentConceptLabel(concept.title) : target.kind === "review" ? "Revisão de hoje" : "Prática";
   const header = <header className="study-header"><p className="eyebrow">{target.kind === "remediation" ? "Erros" : "Revisão"}</p><h1>{title}</h1></header>;
   if (session.status === "ACTIVE") {
     const steps = questions.map(question => {
