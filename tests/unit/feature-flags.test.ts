@@ -9,11 +9,16 @@ describe("progressive feature flags", () => {
   });
 
   it("enables independent explicit flags without serializing unrelated configuration", () => {
-    const flags = getFeatureFlags({ FEATURE_STUDY_PLANNER: "true", FEATURE_NEW_TODAY: "false", AUTH_SECRET: "private" });
-    expect(flags.FEATURE_STUDY_PLANNER).toBe(true);
+    const flags = getFeatureFlags({ FEATURE_KNOWLEDGE_MAP: "true", FEATURE_NEW_TODAY: "false", AUTH_SECRET: "private" });
+    expect(flags.FEATURE_KNOWLEDGE_MAP).toBe(true);
     expect(flags.FEATURE_NEW_TODAY).toBe(false);
     expect(flags).not.toHaveProperty("AUTH_SECRET");
     expect(getServerEnv({ FEATURE_INTERACTIVE_LESSONS: "true" }).FEATURE_INTERACTIVE_LESSONS).toBe(true);
+  });
+
+  it("ignores the flags retired by ADR 0072 even when production still sets them", () => {
+    const flags = getFeatureFlags({ FEATURE_STUDY_PLANNER: "true", FEATURE_ADAPTIVE_SESSION: "true", FEATURE_CONTINUOUS_STUDY: "true" });
+    for (const retired of ["FEATURE_STUDY_PLANNER", "FEATURE_ADAPTIVE_SESSION", "FEATURE_CONTINUOUS_STUDY"]) expect(flags).not.toHaveProperty(retired);
   });
 
   it.each(["yes", "1", "TRUE", " false "])("rejects ambiguous flag configuration: %s", value => {

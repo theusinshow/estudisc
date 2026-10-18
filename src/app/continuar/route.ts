@@ -5,7 +5,6 @@ import { resolveContinueTarget } from "@/features/navigation/continue-target";
 import { getRecommendationInputs } from "@/features/recommendations/api";
 import { getStudyFlow } from "@/features/study-flow/api";
 import { getServerEnv } from "@/lib/env";
-import { getFeatureFlags } from "@/lib/feature-flags";
 
 export const dynamic = "force-dynamic";
 
@@ -16,10 +15,10 @@ export async function GET(request: NextRequest) {
   try {
     const profile = await getOwnerProfile();
     const [flow, inputs] = await Promise.all([
-      getFeatureFlags().FEATURE_CONTINUOUS_STUDY ? getStudyFlow(profile.ownerId) : Promise.resolve(null),
+      getStudyFlow(profile.ownerId),
       getRecommendationInputs(profile)
     ]);
-    const target = resolveContinueTarget({ next: flow?.next ?? null, dueReviewCount: inputs.dueReviews.length });
+    const target = resolveContinueTarget({ next: flow.next ?? null, dueReviewCount: inputs.dueReviews.length });
     return NextResponse.redirect(new URL(target, origin), 303);
   } catch (error) {
     if (error instanceof AccessDeniedError) return NextResponse.redirect(new URL("/auth/signin?callbackUrl=%2Fcontinuar", origin), 303);

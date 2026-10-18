@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 import source from "../../packs/seeds/ifsc-2027.golden.track.v2.json";
 
 test.describe("continuous study flow (ADR 0060)", () => {
-  test.skip(process.env.FEATURE_CONTINUOUS_STUDY !== "true" || process.env.FEATURE_NEW_TODAY !== "true" || process.env.FEATURE_INTERACTIVE_LESSONS !== "true", "Enable the continuous study, new Today and interactive lesson rollouts.");
+  test.skip(process.env.FEATURE_NEW_TODAY !== "true" || process.env.FEATURE_INTERACTIVE_LESSONS !== "true", "Enable the continuous study, new Today and interactive lesson rollouts.");
   test("opens a whole lesson from Today and resumes it after leaving mid-way", async ({ page, request }) => {
     test.setTimeout(60000);
     const fixture = structuredClone(source);

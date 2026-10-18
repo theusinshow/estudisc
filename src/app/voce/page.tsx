@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {
-  CalendarDays, ChartNoAxesColumnIncreasing, ChevronRight, ClipboardCheck, Database, Download, FolderKanban,
+  ChartNoAxesColumnIncreasing, ChevronRight, ClipboardCheck, Database, Download, FolderKanban,
   History, LifeBuoy, Map, Medal, Palette, RotateCcw, TriangleAlert, Upload, UserRound
 } from "lucide-react";
 
@@ -14,7 +14,6 @@ import { WeeklyRecapStories } from "@/features/progress/weekly-recap-stories";
 import { daysUntilExam } from "@/features/public-site/countdown";
 import { StudyPreferencesPanel } from "@/features/study-tools/study-preferences-panel";
 import { getServerEnv } from "@/lib/env";
-import { getFeatureFlags } from "@/lib/feature-flags";
 
 export const dynamic = "force-dynamic";
 
@@ -28,11 +27,8 @@ const PROGRESS: HubLink[] = [
 ];
 const STUDY: HubLink[] = [
   { href: "/review", label: "Revisão", detail: "O que voltou para revisar", icon: RotateCcw },
-  { href: "/mistakes", label: "Erros", detail: "Questões para refazer", icon: TriangleAlert },
-  { href: "/plan", label: "Plano", detail: "Sua rotina de estudo", icon: CalendarDays }
+  { href: "/mistakes", label: "Erros", detail: "Questões para refazer", icon: TriangleAlert }
 ];
-// "Plano" is listed only while the planner exists (FEATURE_STUDY_PLANNER); without it /plan redirects to Hoje.
-const studyLinks = (planner: boolean) => STUDY.filter(link => planner || link.href !== "/plan");
 const ADMIN: HubLink[] = [
   { href: "/admin", label: "Administração", detail: "Usuários e conteúdo", icon: Database },
   { href: "/admin/review", label: "Revisar aulas", detail: "Revisão editorial", icon: ClipboardCheck },
@@ -73,7 +69,7 @@ export default async function YouPage() {
         </header>
         {recap.length > 0 ? <section className="hub-section" aria-label="Resumo da semana"><h2 className="type-meta">Resumo da semana</h2><WeeklyRecapStories stories={recap} /></section> : null}
         <Section title="Seu progresso" links={PROGRESS} />
-        <Section title="Para estudar" links={studyLinks(getFeatureFlags().FEATURE_STUDY_PLANNER)} />
+        <Section title="Para estudar" links={STUDY} />
         <section className="hub-section" aria-label="Preferências de estudo">
           <h2 className="type-meta">Preferências de estudo</h2>
           <StudyPreferencesPanel />

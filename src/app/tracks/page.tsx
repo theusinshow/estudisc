@@ -3,18 +3,14 @@ import { redirect } from "next/navigation";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
-import { listTracks,getTrack } from "@/features/tracks/api";
-import { getFeatureFlags } from "@/lib/feature-flags";
-import { LearningCatalog } from "@/features/tracks/learning-catalog";
+import { listTracks } from "@/features/tracks/api";
 
 export const dynamic = "force-dynamic";
 
 export default async function TracksPage() {
   const tracks = await safeListTracks();
-  const enhanced = getFeatureFlags().FEATURE_STUDY_PLANNER;
   // One published track: "Estudar" opens it directly instead of a one-card catalog.
-  if (!enhanced && tracks.status === "ok" && tracks.items.length === 1) redirect(`/tracks/${encodeURIComponent(tracks.items[0]!.stableId)}`);
-  const details = enhanced ? (await Promise.all(tracks.items.map(track=>getTrack(track.stableId)))).filter((track):track is NonNullable<typeof track>=>track!==null) : [];
+  if (tracks.status === "ok" && tracks.items.length === 1) redirect(`/tracks/${encodeURIComponent(tracks.items[0]!.stableId)}`);
 
   return (
     <AppShell>
@@ -28,7 +24,7 @@ export default async function TracksPage() {
             title="Nenhuma trilha importada."
             description="O catálogo fica vazio até você validar e ativar um Pack ou uma lição."
           />
-        ) : enhanced ? <LearningCatalog tracks={details}/> : (
+        ) : (
           <ul className="record-list" aria-label="Trilhas disponíveis">
             {tracks.items.map((track) => (
               <li key={track.stableId}>
