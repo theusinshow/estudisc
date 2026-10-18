@@ -90,7 +90,10 @@
 .landing .landing-fine h2 { font-size: 1rem; line-height: 1.3; }
 .landing-fine ul { display: grid; gap: 6px; padding-left: 18px; list-style: disc; }
 .landing-fine a { color: var(--estudisc-color-ink); font-weight: 700; text-underline-offset: 3px; }
-.landing-faq { display: grid; gap: 10px; margin: 0; }
-.landing-faq dt { color: var(--estudisc-color-ink); font-weight: 700; }
-.landing-faq dd { margin: 2px 0 0; }
+/* FAQ (also FAQPage JSON-LD): questions stay visible, answers open on tap. */
+.landing-faq { display: grid; margin: 0; border-top: 2px solid var(--estudisc-color-ink); }
+.landing-faq details { border-bottom: 2px solid var(--estudisc-color-ink); }
+.landing-faq summary { display: flex; align-items: center; min-height: 44px; color: var(--estudisc-color-ink); font-weight: 700; cursor: pointer; }
+.landing-faq summary:focus-visible { outline: 3px solid var(--estudisc-color-ink); outline-offset: 2px; }
+.landing-faq details p { padding-bottom: 10px; }
 .landing-fine p { margin: 0; }

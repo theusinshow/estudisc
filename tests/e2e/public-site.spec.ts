@@ -5,7 +5,7 @@ const pages = [
   { path: "/termos", heading: "Termos de uso" },
   { path: "/privacidade", heading: "Política de privacidade" },
   { path: "/suporte", heading: "Como podemos ajudar?" },
-  { path: "/pais-e-escolas", heading: /plano de estudo para a prova do IFSC/ }
+  { path: "/pais-e-escolas", heading: /plano de estudo para o Exame de Classificação do IFSC/ }
 ];
 
 test("public sales and legal pages render with landmarks and fit a 320 px screen", async ({ page }) => {
@@ -19,7 +19,7 @@ test("public sales and legal pages render with landmarks and fit a 320 px screen
     expect(overflow, entry.path).toBeLessThanOrEqual(0);
   }
   await page.goto("/conheca");
-  await expect(page.getByText("R$ 50")).toBeVisible();
+  await expect(page.getByText("R$ 50", { exact: true })).toBeVisible();
   await expect(page.getByText(/até 29\/11\/2026/)).toBeVisible();
   await page.getByRole("navigation", { name: "Informações legais" }).getByRole("link", { name: "Termos de uso" }).click();
   await expect(page).toHaveURL(/\/termos$/);
@@ -36,8 +36,10 @@ test("support explains a question report, FAQ answers open, and crawler files li
   await expect(page.getByRole("heading", { name: "Avisar um erro na questão" })).toHaveCount(0);
 
   const robots = await (await request.get("/robots.txt")).text();
-  expect(robots).toContain("Allow: /conheca");
-  expect(robots).toContain("Disallow: /");
+  // Crawl everything but the API and admin; indexing is decided by noindex metadata (docs/30-SEO.md).
+  expect(robots).toContain("Allow: /");
+  expect(robots).toContain("Disallow: /api/");
+  expect(robots).toContain("Disallow: /admin");
   const sitemap = await (await request.get("/sitemap.xml")).text();
   for (const path of ["/conheca", "/termos", "/privacidade", "/suporte", "/pais-e-escolas"]) expect(sitemap).toContain(path);
   // Without APP_URL, absolute links follow the host that served the request, never a hard-coded localhost.

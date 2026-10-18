@@ -58,7 +58,7 @@ export default function PaisEEscolasPage() {
         <p>Acesso completo até {accessLastDay()}, o dia da prova. Sem mensalidade e sem renovação automática. É possível testar uma aula de cada matéria antes de pagar, e desistir em até 7 dias após a compra com reembolso integral.</p>
         {salesOpen
           ? <div className="public-actions">
-              <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=parents_price" className="primary-action">Criar conta e assinar</Link>
+              <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=parents_price" className="primary-action">Criar conta e comprar</Link>
               <Link href="/conheca" className="secondary-action">Ver como funciona</Link>
             </div>
           : <Link href="/conheca" className="primary-action">Ver como funciona</Link>}

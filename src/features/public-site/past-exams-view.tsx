@@ -33,7 +33,7 @@ export function PastExamsCta({ salesOpen }: Readonly<{ salesOpen: boolean }>) {
     <h2 id="provas-cta-title">Resolva com cartão-resposta e correção</h2>
     <p>No Estudisc, você abre o caderno oficial, marca as respostas no cartão com o tempo da prova e vê a correção pelo gabarito oficial quando finalizar.</p>
     {salesOpen
-      ? <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=past_exams" className="primary-action">Criar conta e assinar</Link>
+      ? <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=past_exams" className="primary-action">Criar conta e comprar</Link>
       : <Link href="/conheca" className="primary-action">Ver como funciona</Link>}
   </section>;
 }

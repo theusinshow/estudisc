@@ -2,8 +2,8 @@ import { Check } from "lucide-react";
 import { accessLastDay, CONTENT_SUMMARY, formatCount } from "./content-summary";
 
 /**
- * What the paid access includes, with the refund right. One source for the paywall (and, once the SEO
- * branch lands, the landing price card) so the price terms never drift apart.
+ * What the paid access includes, with the refund right. One source for the landing price card and the
+ * paywall so the price terms never drift apart (the landing FAQ restates them for FAQPage data).
  */
 export function AccessFacts({ className = "offer-checks", withContent = true }: Readonly<{ className?: string; withContent?: boolean }>) {
   const c = CONTENT_SUMMARY;

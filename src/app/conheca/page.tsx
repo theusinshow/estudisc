@@ -9,6 +9,7 @@ import { courseJsonLd, faqJsonLd, JsonLd, organizationJsonLd, type FaqItem } fro
 import { publicPageMetadata } from "@/features/public-site/seo";
 import { siteUrl } from "@/features/public-site/site-url";
 import { PublicLayout } from "@/features/public-site/public-layout";
+import { AccessFacts } from "@/features/public-site/access-facts";
 import { daysUntilExam } from "@/features/public-site/countdown";
 import { SampleQuestion } from "@/features/public-site/sample-question";
 import { loadSampleQuestion } from "@/features/public-site/sample-question-loader";
@@ -49,12 +50,12 @@ export default async function ConhecaPage() {
       <div className="landing">
         <section className="landing-hero">
           <div className="landing-hero-top">
-            <p className="landing-kicker">IFSC 2027/1 · técnico integrado</p>
+            <p className="landing-kicker">Exame de Classificação IFSC 2027/1</p>
             {days === null ? null : days === 0
               ? <p className="landing-countdown"><span>A prova é hoje</span></p>
               : <p className="landing-countdown"><strong>{days}</strong><span>{days === 1 ? "dia" : "dias"} para a prova<br />{lastDay}</span></p>}
           </div>
-          <h1 id="conheca-title">Estude para o Exame de Classificação do IFSC com um plano que diz o que fazer hoje</h1>
+          <h1 id="conheca-title">Seu plano para a prova do IFSC, uma aula por vez</h1>
           <p className="landing-lead">Aulas curtas, questões com explicação, simulados e provas anteriores do IFSC, tudo no celular. {salesOpen ? "Comece grátis." : "Por enquanto, o acesso é por convite."}</p>
           <div className="landing-actions">
             {signup("landing_hero")}
@@ -124,12 +125,7 @@ export default async function ConhecaPage() {
         <section id="preco" className="landing-price" aria-labelledby="preco-title">
           <h2 id="preco-title">Acesso completo</h2>
           <p className="landing-price-value"><strong>R$ {LIFETIME_PRICE_BRL}</strong><span>pagamento único</span></p>
-          <ul className="landing-checks">
-            <li><Check aria-hidden="true" />Tudo liberado até {lastDay}, o dia da prova.</li>
-            <li><Check aria-hidden="true" />Sem mensalidade e sem renovação automática.</li>
-            <li><Check aria-hidden="true" />Pix ou cartão, pelo Mercado Pago.</li>
-            <li><Check aria-hidden="true" />Desistiu em até 7 dias após a compra? Você recebe o valor de volta, como prevê o Código de Defesa do Consumidor.</li>
-          </ul>
+          <AccessFacts className="landing-checks" withContent={false} />
           {salesOpen
             ? <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=landing_price" className="primary-action">Criar conta e comprar<ArrowRight aria-hidden="true" /></Link>
             : <p className="landing-note">As inscrições abrem em breve. <Link href="/suporte?acesso=1">Peça acesso</Link> enquanto isso.</p>}
@@ -137,9 +133,9 @@ export default async function ConhecaPage() {
 
         <section className="landing-fine" aria-labelledby="aviso-title">
           <h2 id="aviso-title">Antes de comprar</h2>
-          <dl className="landing-faq">
-            {faq.map(item => <div key={item.question}><dt>{item.question}</dt><dd>{item.answer}</dd></div>)}
-          </dl>
+          <div className="landing-faq">
+            {faq.map(item => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}
+          </div>
           <ul>
             <li>O Estudisc não garante aprovação. Ele organiza o estudo; o resultado depende da dedicação de cada estudante.</li>
             <li>Confira sempre datas, regras e conteúdos no edital oficial do IFSC.</li>

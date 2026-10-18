@@ -3,7 +3,7 @@
 
 Scope: public pages only (metadata, JSON-LD, sitemap, noindex defaults, /provas-anteriores, Search Console meta, CTA click funnel step). No change to robots.txt rules until the owner approves the route list (item 4d). Main URL stays /conheca: "/" is the signed-in app home, so it cannot be a permanent redirect.
 
-Status: implemented on the branch; PR open for review. robots.txt approved and applied. NEXT ACTION (owner): merge PR #61; release /provas-anteriores when commented content exists.
+Status: integrated into main 2026-10-18 by the F5 point 4 session (owner-approved): main merged in without conflicts; "Criar conta e assinar" → "Criar conta e comprar" (one-time payment, /pais-e-escolas and /provas-anteriores); owner kept the short /conheca H1 with the exam named in the kicker, and the FAQ answers open on tap. NEXT ACTION (owner): release /provas-anteriores when commented content exists.
 
 Acceptance: canonical + index on every sitemap page; everything else noindex by default (layout metadata + X-Robots-Tag on /api); Organization/Course/FAQPage/BreadcrumbList JSON-LD only with real site data; /provas-anteriores noindex and out of the sitemap; tests for registry/metadata/JSON-LD/sitemap.
 
@@ -24,8 +24,9 @@ Acceptance: no horizontal scroll at 390 and 320; h1 still names "prova do IFSC";
 /conheca live 2026-10-18 (e324eed). /auth/signin (approved): "Entrar ou criar conta", Google first (white, G mark), divider, full-width e-mail, one hint line, linked terms line, profile link last, countdown removed; the hybrid profile page shows only the profile form. Open question for the owner: Google sign-up skips the age/guardian/terms checks that e-mail sign-up asks (flow change, not visual).
 /auth/signin live 2026-10-18 (6d6432d). Owner: Google sign-up does not need age/guardian checks (keep it as is; Google is still not offered on /auth/cadastro). The Hoje items 1–7 are handled in another agent's session (goal-block color already fixed in e324eed).
 /auth/cadastro (approved): same sheet, age tap cards, highlighted guardian check, larger terms check, code step alone after sending; code slots fit the card via `useCodeSlotSize` (also fixes e-mail and profile sign-in overflow at 390/320).
-/auth/cadastro live 2026-10-18 (2b690e0). Paywall + free Hoje (approved): offer layout with shared `AccessFacts` (refund right on the paywall), subject-chip free lessons, invite code in a disclosure; free Hoje reuses the Hoje card/queue. Follow-up after SEO PR #61 merges: move the landing price list to `AccessFacts` and the landing price/free/fine classes to `access-offer.css` (the PR also repeats the refund text in its FAQ).
-NEXT ACTION: push the paywall after approval; then propose /pais-e-escolas.
+/auth/cadastro live 2026-10-18 (2b690e0). Paywall + free Hoje (approved): offer layout with shared `AccessFacts` (refund right on the paywall), subject-chip free lessons, invite code in a disclosure; free Hoje reuses the Hoje card/queue. Landing price list now uses `AccessFacts` (done with the SEO integration); the landing price/free/fine classes still live in landing.css.
+Paywall live 2026-10-18 (7e822fe, Railway success). SEO PR #61 integrated with the owner's headline/FAQ choices.
+NEXT ACTION: propose /pais-e-escolas (now with the SEO H1 and CTA from PR #61), then polish termos/privacidade/suporte.
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 
