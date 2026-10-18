@@ -1,4 +1,10 @@
 # Estudisc current plan
+## SEO pass (2026-10-18, Claude, branch feat/seo-20261018, PR for owner review, no deploy)
+
+Scope: public pages only (metadata, JSON-LD, sitemap, noindex defaults, /provas-anteriores, Search Console meta, CTA click funnel step). No change to robots.txt rules until the owner approves the route list (item 4d). Main URL stays /conheca: "/" is the signed-in app home, so it cannot be a permanent redirect.
+
+Acceptance: canonical + index on every sitemap page; everything else noindex by default (layout metadata + X-Robots-Tag on /api); Organization/Course/FAQPage/BreadcrumbList JSON-LD only with real site data; /provas-anteriores noindex and out of the sitemap; tests for registry/metadata/JSON-LD/sitemap.
+
 ## F5 point 4 — screen-by-screen review on the vibrante visual (2026-10-18, next session)
 
 State: F0–F5 points 1–3 are live (main at cab628f, Railway SUCCESS). Points done: tactile activities + ADR 0070 explorers + content batch f5a-20261017 published; ADR 0071 confidence check; review deck, lit concept map, goal tower, focus mode.

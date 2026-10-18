@@ -33,9 +33,10 @@ export function SampleQuestion({ question }: Readonly<{ question: SampleQuestion
     if (!radio) return;
     event.preventDefault(); radio.click(); radio.focus();
   }
-  return <section className="sample-question learning-interaction question-sheet" aria-labelledby={`${id}-stem`} onKeyDown={pickByKey}>
+  // A figure, not a section: the stem is not a heading, so the page outline keeps only real sections (SEO pass).
+  return <figure className="sample-question learning-interaction question-sheet" aria-label="Questão de exemplo" onKeyDown={pickByKey}>
     <p className="sample-question-source type-meta">Questão de amostra · {question.subject} · aula “{question.lessonTitle}”</p>
-    <h2 id={`${id}-stem`} className="sample-question-stem"><MathText text={question.stem} /></h2>
+    <p id={`${id}-stem`} className="sample-question-stem"><MathText text={question.stem} /></p>
     <form onSubmit={event => { event.preventDefault(); if (!choice) return; setChecked(true); if (choice !== question.correctChoiceId) setMisses(count => count + 1); }}>
       <fieldset className="answer-sheet-field"><legend>Sua resposta<span className="answer-keys-hint"> · teclas A–E marcam; Enter confere</span></legend>
         {question.choices.map((entry, index) => <label className="learning-answer answer-row" key={entry.id}>
@@ -55,5 +56,5 @@ export function SampleQuestion({ question }: Readonly<{ question: SampleQuestion
         {(correct || misses >= 2) && question.explanation ? <p>{!correct && <strong>Como resolver: </strong>}<MathText text={question.explanation} /></p> : null}
       </div>}
     </div>
-  </section>;
+  </figure>;
 }

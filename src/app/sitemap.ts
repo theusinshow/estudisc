@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
-import { PUBLIC_SITE_PATHS } from "@/features/auth/session-guard";
+import { INDEXABLE_PAGES } from "@/features/public-site/seo";
 import { siteUrl } from "@/features/public-site/site-url";
 
 export const dynamic = "force-dynamic";
 
+/** Only indexable public pages (noindex pages such as /provas-anteriores stay out until they are opened). */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = await siteUrl();
-  return PUBLIC_SITE_PATHS.map(path => ({ url: `${base}${path}`, changeFrequency: "weekly", priority: path === "/conheca" ? 1 : 0.5 }));
+  return INDEXABLE_PAGES.map(page => ({ url: `${base}${page.path}`, lastModified: page.lastModified, changeFrequency: "weekly", priority: page.priority }));
 }

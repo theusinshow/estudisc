@@ -11,12 +11,14 @@ import { getAccountConfig, isHybridSignIn } from "@/features/auth/account-mode";
 import { AccountSignIn } from "@/features/auth/account-sign-in";
 import { GoogleSubmitButton } from "@/features/auth/google-submit-button";
 import { isEmailDeliveryAvailable } from "@/features/auth/email-delivery";
+import { logCtaClick } from "@/lib/funnel-events";
 
 type SignInPageProps = {
   searchParams?: Promise<{
     callbackUrl?: string;
     error?: string;
     perfil?: string;
+    origem?: string;
   }>;
 };
 
@@ -67,6 +69,7 @@ function getErrorMessage(error: string | undefined) {
 
 export default async function SignInPage({ searchParams }: SignInPageProps) {
   const params = await searchParams;
+  logCtaClick(params?.origem);
   const callbackUrl = normalizeCallbackUrl(params?.callbackUrl);
   const errorMessage = getErrorMessage(params?.error);
   const env = getServerEnv();

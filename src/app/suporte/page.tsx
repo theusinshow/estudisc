@@ -4,8 +4,9 @@ import { LIFETIME_PRICE_BRL } from "@/features/payments/contracts";
 import { accessLastDay } from "@/features/public-site/content-summary";
 import { PublicLayout } from "@/features/public-site/public-layout";
 import { getSellerIdentity } from "@/features/public-site/seller";
+import { publicPageMetadata } from "@/features/public-site/seo";
 
-export const metadata: Metadata = { title: "Suporte — Estudisc", description: "Perguntas frequentes sobre conta, pagamento, reembolso e estudo no Estudisc, e como falar com a gente." };
+export const metadata: Metadata = publicPageMetadata({ path: "/suporte", title: "Suporte — Estudisc", description: "Perguntas frequentes sobre conta, pagamento, reembolso e estudo no Estudisc, e como falar com a gente." });
 export const dynamic = "force-dynamic";
 
 type SupportPageProps = Readonly<{ searchParams?: Promise<{ erro?: string; acesso?: string }> }>;

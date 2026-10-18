@@ -4,21 +4,25 @@ import { LIFETIME_PRICE_BRL } from "@/features/payments/contracts";
 import { accessLastDay, CONTENT_SUMMARY, formatCount } from "@/features/public-site/content-summary";
 import { PublicLayout } from "@/features/public-site/public-layout";
 import { getSellerIdentity } from "@/features/public-site/seller";
+import { publicPageMetadata } from "@/features/public-site/seo";
+import { getServerEnv } from "@/lib/env";
 
-export const metadata: Metadata = {
-  title: "Para pais e escolas — Estudisc",
+export const metadata: Metadata = publicPageMetadata({
+  path: "/pais-e-escolas",
+  title: "Preparatório IFSC integrado para seu filho do 9º ano · Estudisc",
   description: "Como o Estudisc ajuda estudantes do 9º ano a se prepararem para a prova do IFSC 2027, quanto custa e como escolas e projetos podem participar."
-};
+});
 export const dynamic = "force-dynamic";
 
 export default function PaisEEscolasPage() {
   const seller = getSellerIdentity();
   const c = CONTENT_SUMMARY;
+  const salesOpen = getServerEnv().FEATURE_PAID_ACCESS;
   return (
     <PublicLayout labelledBy="pais-title">
       <section className="public-hero">
         <p className="eyebrow">Para pais, responsáveis e escolas</p>
-        <h1 id="pais-title">Um plano de estudo para a prova do IFSC, do jeito que o estudante usa: no celular</h1>
+        <h1 id="pais-title">Um plano de estudo para o Exame de Classificação do IFSC, do jeito que seu filho usa: no celular</h1>
         <p>O Estudisc organiza o que estudar a cada dia para a prova de ingresso nos cursos técnicos integrados do IFSC 2027/1, com aulas curtas, questões explicadas e revisão do que o estudante erra.</p>
       </section>
 
@@ -43,7 +47,7 @@ export default function PaisEEscolasPage() {
         <ul className="public-list">
           <li>Sem anúncios e sem venda de dados.</li>
           <li>Sem chat entre usuários: o estudante não conversa com desconhecidos dentro da plataforma.</li>
-          <li>Login pela conta Google, sem senha própria do Estudisc.</li>
+          <li>Entrada pela conta Google ou por um código enviado ao e-mail, sem senha.</li>
           <li>Tratamento de dados conforme a LGPD, com atenção ao uso por menores de idade. Detalhes na <Link href="/privacidade">política de privacidade</Link>.</li>
         </ul>
       </section>
@@ -52,7 +56,12 @@ export default function PaisEEscolasPage() {
         <h2 id="preco-pais-title">Quanto custa</h2>
         <p className="public-price-value"><strong>R$ {LIFETIME_PRICE_BRL}</strong> pagamento único</p>
         <p>Acesso completo até {accessLastDay()}, o dia da prova. Sem mensalidade e sem renovação automática. É possível testar uma aula de cada matéria antes de pagar, e desistir em até 7 dias após a compra com reembolso integral.</p>
-        <Link href="/conheca" className="primary-action">Ver como funciona</Link>
+        {salesOpen
+          ? <div className="public-actions">
+              <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=parents_price" className="primary-action">Criar conta e assinar</Link>
+              <Link href="/conheca" className="secondary-action">Ver como funciona</Link>
+            </div>
+          : <Link href="/conheca" className="primary-action">Ver como funciona</Link>}
       </section>
 
       <section className="public-section" aria-labelledby="escolas-title">

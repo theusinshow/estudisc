@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { PublicLayout } from "@/features/public-site/public-layout";
 import { getSellerIdentity } from "@/features/public-site/seller";
 import { SellerBlock } from "@/features/public-site/seller-block";
+import { publicPageMetadata } from "@/features/public-site/seo";
 
-export const metadata: Metadata = { title: "Política de privacidade — Estudisc" };
+export const metadata: Metadata = publicPageMetadata({ path: "/privacidade", title: "Política de privacidade — Estudisc" });
 export const dynamic = "force-dynamic";
 
 export default function PrivacidadePage() {

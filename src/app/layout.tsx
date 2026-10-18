@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Archivo, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { siteUrl } from "@/features/public-site/site-url";
+import { NOINDEX_ROBOTS } from "@/features/public-site/seo";
+import { getServerEnv } from "@/lib/env";
 // Private owner state is always request-scoped, never a shared prerendered page.
 export const dynamic="force-dynamic";
 
@@ -10,11 +12,15 @@ const archivo = Archivo({ subsets: ["latin"], axes: ["wdth"], variable: "--font-
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
 export async function generateMetadata(): Promise<Metadata> {
+  const googleSiteVerification = getServerEnv().GOOGLE_SITE_VERIFICATION;
   return {
     metadataBase: new URL(await siteUrl()),
     title: "Estudisc",
     description: "Preparação para a prova do IFSC 2027 com aulas, questões explicadas, simulados e provas anteriores.",
     applicationName: "Estudisc",
+    // Private by default: only public pages built with publicPageMetadata opt into indexing (SEO pass).
+    robots: NOINDEX_ROBOTS,
+    ...(googleSiteVerification ? { verification: { google: googleSiteVerification } } : {}),
     openGraph: { title: "Estudisc — preparação para o IFSC 2027", description: "Aulas, questões explicadas, simulados e provas anteriores do IFSC.", siteName: "Estudisc", locale: "pt_BR", type: "website" }
   };
 }

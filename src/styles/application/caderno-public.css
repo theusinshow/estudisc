@@ -32,6 +32,7 @@
   background-size: var(--estudisc-pattern-grid-cell) var(--estudisc-pattern-grid-cell);
 }
 .sample-question .sample-question-source { margin: 0; padding: 0; background: none; }
+figure.sample-question { margin: 0; }
 .sample-question .sample-question-stem { margin: 0; font-size: var(--estudisc-typography-scale-lead); font-weight: 800; line-height: 1.3; }
 .sample-question form > .sample-question-check { background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); }
 

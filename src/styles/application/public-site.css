@@ -22,6 +22,7 @@
 .public-price-value { font-size: var(--estudisc-typography-body-sizes-lg); }
 .public-price-value strong { font-family: var(--estudisc-typography-display-family), Arial, sans-serif; font-size: var(--estudisc-typography-display-sizes-md); }
 .public-note { margin: 0; border-left: var(--estudisc-spacing-2) solid var(--estudisc-color-signal); padding-left: var(--estudisc-spacing-6); font-weight: 700; }
+.public-actions { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-6); align-items: center; }
 
 .public-legal { display: grid; gap: var(--estudisc-spacing-6); }
 .public-legal p, .public-legal ul { margin: 0; max-width: 70ch; }
@@ -61,3 +62,9 @@
 /* "Report a problem" link under a question result. */
 .question-report { margin: 0; font-size: var(--estudisc-typography-body-sizes-sm); }
 .question-report a { min-height: 44px; display: inline-flex; align-items: center; color: var(--estudisc-color-ink); text-underline-offset: 3px; }
+/* Public breadcrumb and official past-exam links (SEO pass). */
+.public-breadcrumb ol { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-3); margin: 0 0 var(--estudisc-spacing-6); padding: 0; list-style: none; font-size: 0.875rem; }
+.public-breadcrumb li + li::before { content: "›"; margin-right: var(--estudisc-spacing-3); color: var(--estudisc-color-dim); }
+.public-breadcrumb a { color: var(--estudisc-color-ink); text-underline-offset: 3px; }
+.past-exam-public-links { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-6); margin-top: var(--estudisc-spacing-3); }
+.past-exam-public-links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--estudisc-color-ink); font-weight: 700; text-underline-offset: 3px; }

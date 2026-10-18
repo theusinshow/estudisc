@@ -21,3 +21,8 @@ export function formatCount(value: number) {
 export function accessLastDay(endsAt: string = PAID_ACCESS_ENDS_AT) {
   return new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date(Date.parse(endsAt) - 1));
 }
+
+/** Same day as `accessLastDay`, as an ISO date (YYYY-MM-DD) for structured data. */
+export function accessLastDayIso(endsAt: string = PAID_ACCESS_ENDS_AT) {
+  return new Intl.DateTimeFormat("en-CA", { timeZone: "America/Sao_Paulo", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(Date.parse(endsAt) - 1));
+}

@@ -4,19 +4,22 @@ import { ArrowRight, Check, Lightbulb, X } from "lucide-react";
 import "@/styles/landing.css";
 import { getServerEnv } from "@/lib/env";
 import { FREE_SAMPLE_LESSONS, LIFETIME_PRICE_BRL } from "@/features/payments/contracts";
-import { accessLastDay, CONTENT_SUMMARY, formatCount } from "@/features/public-site/content-summary";
+import { accessLastDay, accessLastDayIso, CONTENT_SUMMARY, formatCount } from "@/features/public-site/content-summary";
+import { courseJsonLd, faqJsonLd, JsonLd, organizationJsonLd, type FaqItem } from "@/features/public-site/json-ld";
+import { publicPageMetadata } from "@/features/public-site/seo";
+import { siteUrl } from "@/features/public-site/site-url";
 import { PublicLayout } from "@/features/public-site/public-layout";
 import { daysUntilExam } from "@/features/public-site/countdown";
 import { SampleQuestion } from "@/features/public-site/sample-question";
 import { loadSampleQuestion } from "@/features/public-site/sample-question-loader";
 import { GoalTower } from "@/features/today/goal-tower";
 
-export const metadata: Metadata = {
-  title: "Estudisc — preparação para a prova do IFSC 2027",
-  description: "Aulas, questões comentadas, simulados e provas anteriores para a prova de ingresso do IFSC 2027/1.",
-  // "/" redirects visitors here, so search engines should index this URL as the home of the product.
-  alternates: { canonical: "/conheca" }
-};
+// The product's main URL: "/" redirects visitors here (for signed-in students "/" is the study app).
+export const metadata: Metadata = publicPageMetadata({
+  path: "/conheca",
+  title: "Exame de Classificação IFSC 2027/1 (técnico integrado) · Estudisc",
+  description: "Preparação para o Exame de Classificação do IFSC 2027/1 com aulas, questões comentadas, simulados e provas anteriores. R$ 50, acesso até o dia da prova."
+});
 export const dynamic = "force-dynamic";
 
 /** Subject code from a lesson id ("MAT-07" → "MAT"); colors the chip with the subject accent. */
@@ -28,8 +31,18 @@ export default async function ConhecaPage() {
   const days = daysUntilExam();
   const sample = await loadSampleQuestion();
   const c = CONTENT_SUMMARY;
-  const signup = salesOpen
-    ? <Link href="/auth/signin?callbackUrl=%2F" className="primary-action">Criar conta grátis<ArrowRight aria-hidden="true" /></Link>
+  const base = await siteUrl();
+  // Visible FAQ and FAQPage data share one source; every answer restates what this page already says.
+  const faq: FaqItem[] = [
+    { question: "Quanto custa?", answer: `R$ ${LIFETIME_PRICE_BRL}, pagamento único.` },
+    { question: "Até quando vale o acesso?", answer: `Até ${lastDay}, o dia da prova.` },
+    { question: "Posso desistir?", answer: "Sim, em até 7 dias após a compra. Você recebe o valor de volta, como prevê o Código de Defesa do Consumidor." },
+    { question: "O Estudisc tem vínculo com o IFSC?", answer: "Não. O Estudisc é um material de estudo independente, sem vínculo com o IFSC." },
+    { question: "Quem compra se o aluno for menor de idade?", answer: "O responsável. Menores de 18 anos usam o Estudisc com autorização do responsável, que faz a compra." }
+  ];
+  // `origem` names the button in the cta_clicked funnel event logged by the sign-in page.
+  const signup = (origem: "landing_hero" | "landing_free") => salesOpen
+    ? <Link href={`/auth/signin?callbackUrl=%2F&origem=${origem}`} className="primary-action">Criar conta grátis<ArrowRight aria-hidden="true" /></Link>
     : <Link href="/suporte?acesso=1" className="primary-action">Peça acesso<ArrowRight aria-hidden="true" /></Link>;
   return (
     <PublicLayout labelledBy="conheca-title">
@@ -41,10 +54,10 @@ export default async function ConhecaPage() {
               ? <p className="landing-countdown"><span>A prova é hoje</span></p>
               : <p className="landing-countdown"><strong>{days}</strong><span>{days === 1 ? "dia" : "dias"} para a prova<br />{lastDay}</span></p>}
           </div>
-          <h1 id="conheca-title">Seu plano para a prova do IFSC, uma aula por vez</h1>
+          <h1 id="conheca-title">Estude para o Exame de Classificação do IFSC com um plano que diz o que fazer hoje</h1>
           <p className="landing-lead">Aulas curtas, questões com explicação, simulados e provas anteriores do IFSC, tudo no celular. {salesOpen ? "Comece grátis." : "Por enquanto, o acesso é por convite."}</p>
           <div className="landing-actions">
-            {signup}
+            {signup("landing_hero")}
             <Link href="/auth/signin" className="landing-text-link">Já tenho conta</Link>
           </div>
         </section>
@@ -105,7 +118,7 @@ export default async function ConhecaPage() {
               <span>{lesson.subject}</span><strong>{lesson.title}</strong>
             </li>)}
           </ul>
-          {signup}
+          {signup("landing_free")}
         </section>
 
         <section id="preco" className="landing-price" aria-labelledby="preco-title">
@@ -118,18 +131,22 @@ export default async function ConhecaPage() {
             <li><Check aria-hidden="true" />Desistiu em até 7 dias após a compra? Você recebe o valor de volta, como prevê o Código de Defesa do Consumidor.</li>
           </ul>
           {salesOpen
-            ? <Link href="/auth/signin?callbackUrl=%2Fupgrade" className="primary-action">Criar conta e comprar<ArrowRight aria-hidden="true" /></Link>
+            ? <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=landing_price" className="primary-action">Criar conta e comprar<ArrowRight aria-hidden="true" /></Link>
             : <p className="landing-note">As inscrições abrem em breve. <Link href="/suporte?acesso=1">Peça acesso</Link> enquanto isso.</p>}
         </section>
 
         <section className="landing-fine" aria-labelledby="aviso-title">
           <h2 id="aviso-title">Antes de comprar</h2>
+          <dl className="landing-faq">
+            {faq.map(item => <div key={item.question}><dt>{item.question}</dt><dd>{item.answer}</dd></div>)}
+          </dl>
           <ul>
             <li>O Estudisc não garante aprovação. Ele organiza o estudo; o resultado depende da dedicação de cada estudante.</li>
             <li>Confira sempre datas, regras e conteúdos no edital oficial do IFSC.</li>
-            <li>Menores de 18 anos usam o Estudisc com autorização do responsável, que faz a compra. Responsáveis: veja <Link href="/pais-e-escolas">Pais e escolas</Link>.</li>
           </ul>
+          <p>É responsável por um estudante do 9º ano? Veja como acompanhar o estudo em <Link href="/pais-e-escolas">Estudisc para pais e responsáveis</Link>.</p>
         </section>
+        <JsonLd data={[organizationJsonLd(base), courseJsonLd(base, accessLastDayIso()), faqJsonLd(faq)]} />
       </div>
     </PublicLayout>
   );

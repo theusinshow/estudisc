@@ -5,8 +5,9 @@ import { accessLastDay } from "@/features/public-site/content-summary";
 import { PublicLayout } from "@/features/public-site/public-layout";
 import { getSellerIdentity } from "@/features/public-site/seller";
 import { SellerBlock } from "@/features/public-site/seller-block";
+import { publicPageMetadata } from "@/features/public-site/seo";
 
-export const metadata: Metadata = { title: "Termos de uso — Estudisc" };
+export const metadata: Metadata = publicPageMetadata({ path: "/termos", title: "Termos de uso — Estudisc" });
 export const dynamic = "force-dynamic";
 
 export default function TermosPage() {
