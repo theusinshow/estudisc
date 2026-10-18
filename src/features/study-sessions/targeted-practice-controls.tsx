@@ -1,17 +1,29 @@
 "use client";
 import Link from "next/link";
-import { useId, useState, useSyncExternalStore } from "react";
+import { createContext, useContext, useId, useState, useSyncExternalStore, type ReactNode } from "react";
 import { openStudySession } from "./session-navigation";
 import { apiErrorSchema, readValidatedResponse, sessionResponseSchema } from "@/lib/api-response";
 
 /** `showTime={false}`: a card that starts a 10-minute practice without its own time choice; `ariaLabel` names a short label. */
 type Props = ({ kind:"review";conceptId?:string;label?:string } | { kind:"remediation";mistakeId:string;label?:string }) & { showTime?:boolean;ariaLabel?:string };
+/** One practice length for a whole page (Revisão, Erros): the picker sets it, every card or subject uses it. */
+const PracticeMinutesContext = createContext<{ minutes: 10 | 15; setMinutes: (value: 10 | 15) => void } | null>(null);
+export function PracticeMinutesProvider({ children }: Readonly<{ children: ReactNode }>) {
+  const [minutes, setMinutes] = useState<10 | 15>(10);
+  return <PracticeMinutesContext.Provider value={{ minutes, setMinutes }}>{children}</PracticeMinutesContext.Provider>;
+}
+export function PracticeMinutesPicker({ label = "Tempo para cada prática" }: Readonly<{ label?: string }>) {
+  const shared = useContext(PracticeMinutesContext);
+  const id = useId();
+  if (!shared) return null;
+  return <label className="learning-field practice-minutes-picker" htmlFor={id}>{label}<select id={id} value={shared.minutes} onChange={event => shared.setMinutes(Number(event.target.value) as 10 | 15)}><option value={10}>10 minutos</option><option value={15}>15 minutos</option></select></label>;
+}
 const subscribe = () => () => {};
 const clientReady = () => true;
 const serverReady = () => false;
 export function TargetedPracticeControls(props:Props){
   const ready = useSyncExternalStore(subscribe, clientReady, serverReady);
-  const id=useId();const [minutes,setMinutes]=useState<10|15>(10),[busy,setBusy]=useState(false),[error,setError]=useState(""),[locked,setLocked]=useState(false),[openSessionId,setOpenSessionId]=useState<string|null>(null);
+  const id=useId();const shared=useContext(PracticeMinutesContext);const [ownMinutes,setOwnMinutes]=useState<10|15>(10);const minutes=shared?.minutes??ownMinutes,setMinutes=shared?.setMinutes??setOwnMinutes;const [busy,setBusy]=useState(false),[error,setError]=useState(""),[locked,setLocked]=useState(false),[openSessionId,setOpenSessionId]=useState<string|null>(null);
   async function start(startNew=false){
     if(busy)return;setBusy(true);setError("");setOpenSessionId(null);
     try{

@@ -1,0 +1,13 @@
+/* /history (F5 point 4): recent answers as compact rows with a result mark, then other study records. */
+.history-page { gap: var(--estudisc-spacing-10); }
+.history-page h2 { margin: 0 0 var(--estudisc-spacing-6); font-size: clamp(1.25rem, 5.5vw, 1.5rem); }
+.history-answers { margin: 0; padding: 0; list-style: none; overflow: hidden; border: 3px solid var(--estudisc-color-ink); border-radius: 16px; background: var(--estudisc-color-panel); }
+.history-answers li { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; }
+.history-answers li + li { border-top: 2px solid color-mix(in srgb, var(--estudisc-color-ink) 15%, transparent); }
+.history-mark { display: grid; flex: none; place-items: center; width: 28px; height: 28px; margin-top: 2px; border: 2px solid var(--estudisc-color-ink); border-radius: 50%; }
+.history-mark svg { width: 16px; height: 16px; stroke-width: 3; }
+.history-answers li[data-result="correct"] .history-mark { background: var(--estudisc-color-surface-lime); }
+.history-answers li[data-result="incorrect"] .history-mark { background: color-mix(in srgb, var(--estudisc-color-subject-accent-mathematics) 35%, var(--estudisc-color-panel)); }
+.history-answer-text { display: grid; gap: 4px; min-width: 0; }
+.history-stem { font-weight: 700; line-height: 1.35; overflow-wrap: break-word; }
+.history-answer-text small { color: var(--estudisc-color-dim); font-size: 0.8125rem; }

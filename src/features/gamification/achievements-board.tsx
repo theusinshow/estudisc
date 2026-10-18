@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Backpack, Brain, CalendarDays, Check, Code2, LockKeyhole, Rocket, RotateCcw, Trophy, Zap } from "lucide-react";
+import { ArrowRight, Backpack, Brain, CalendarCheck, CalendarDays, Check, ClipboardCheck, Code2, Compass, LockKeyhole, Medal, Mountain, Repeat, Rocket, RotateCcw, Sparkles, Trophy, Zap } from "lucide-react";
 import type { BadgeSummary, GamificationSummary } from "./gamification-rules";
 
 const badgeIcons = {
@@ -8,7 +8,14 @@ const badgeIcons = {
   "study-practice-twenty": Backpack,
   "returned-stronger": Brain,
   "study-comeback": RotateCcw,
-  "study-steady-three": CalendarDays
+  "study-steady-three": CalendarDays,
+  "study-practice-fifty": Medal,
+  "exam-level-five": Mountain,
+  "study-all-subjects": Compass,
+  "first-simulado": ClipboardCheck,
+  "returned-stronger-five": Sparkles,
+  "study-comeback-three": Repeat,
+  "study-steady-ten": CalendarCheck
 };
 
 function BadgeMark({ badge }: Readonly<{ badge: BadgeSummary }>) {

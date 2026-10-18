@@ -13,3 +13,12 @@ export async function listHistoryEvents() {
   return withHistoryRepository((repository) => repository.listEvents(ownerId));
 }
 
+export async function listRecentAnswers() {
+  const ownerId = await getOwnerId();
+
+  if (getDatabaseUrl() === "memory://local") {
+    return new MemoryHistoryRepository().listRecentAnswers(ownerId);
+  }
+
+  return withHistoryRepository((repository) => repository.listRecentAnswers(ownerId));
+}

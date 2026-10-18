@@ -62,6 +62,10 @@ const rankThresholds = [
   { label: "Foco em ação", xp: 300 }
 ] as const;
 
+/** Subject codes of the IFSC track (Concept id prefix) and the difficulties that read as exam level. */
+const STUDY_SUBJECTS: readonly string[] = ["MAT", "POR", "CIE", "GH"];
+const EXAM_LEVELS: readonly string[] = ["ifsc", "challenge"];
+
 export function buildGamificationSummary({ xp, dueReviews, mistakes, evidence = [], now = new Date(), timeZone = "America/Sao_Paulo" }: Readonly<{
   xp: XpSummary;
   dueReviews: readonly DueReview[];
@@ -85,6 +89,11 @@ export function buildGamificationSummary({ xp, dueReviews, mistakes, evidence = 
     if (answer.conditions.outcome === "failed") failedAt.set(questionId, answer.createdAt.getTime());
     if (isIndependentQuestionSuccess(answer.conditions) && failedAt.has(questionId) && failedAt.get(questionId)! <= answer.createdAt.getTime()) corrected.add(questionId);
   }
+  // 2026-10-18 achievements: the same records as above, read per Concept (an answer can touch several subjects).
+  const independentRows = evidence.filter(item => item.attemptId && item.createdAt <= now && ["question_result", "assessment_result"].includes(item.type) && isIndependentQuestionSuccess(item.conditions));
+  const subjects = new Set(independentRows.map(item => item.conceptStableId.split(".")[0]).filter(code => STUDY_SUBJECTS.includes(code))).size;
+  const simulados = new Set(evidence.filter(item => item.type === "assessment_result" && item.createdAt <= now && typeof item.conditions.assessmentId === "string").map(item => String(item.conditions.assessmentId))).size;
+  const examLevel = new Set(independent.filter(item => EXAM_LEVELS.includes(String(item.conditions.difficulty))).map(item => item.conditions.questionId)).size;
   const week = buildStudyWeek(answers.map(item => item.createdAt), now, timeZone);
   const allStudyDays = new Set(answers.map(item => dateKey(item.createdAt, timeZone))).size;
   const legacySuccess = xp.transactions.some(item => item.amount > 0 && ["code_activity_passed", "debug_activity_passed", QUESTION_SUCCESS_REASON].includes(item.reason));
@@ -95,9 +104,16 @@ export function buildGamificationSummary({ xp, dueReviews, mistakes, evidence = 
     badge("first-submit", "Saiu do zero", "Acerte sua primeira questão sem dica nem solução aberta. Seu primeiro acerto no Lab também vale.", solved > 0 || legacySuccess ? 1 : 0, 1, "acerto", "practice"),
     badge("study-practice-five", "Pegou o embalo", "Acerte 5 questões diferentes sem dica nem solução aberta.", solved, 5, "questões", "practice"),
     badge("study-practice-twenty", "Bagagem de estudo", "Acerte 20 questões diferentes sem dica nem solução aberta.", solved, 20, "questões", "practice"),
+    badge("study-practice-fifty", "Cinquentinha", "Acerte 50 questões diferentes sem dica nem solução aberta.", solved, 50, "questões", "practice"),
+    badge("exam-level-five", "Nível prova", "Acerte 5 questões diferentes de nível IFSC ou desafio, sem dica nem solução aberta.", examLevel, 5, "questões", "practice"),
+    badge("study-all-subjects", "Volta pelo edital", "Acerte, sem dica nem solução aberta, pelo menos uma questão de cada matéria: Matemática, Português, Ciências e Geografia e História.", subjects, STUDY_SUBJECTS.length, "matérias", "practice", "/tracks"),
+    badge("first-simulado", "Primeiro simulado", "Termine um simulado com suas respostas registradas.", simulados, 1, "simulado", "practice", "/assessments"),
     badge("returned-stronger", "Ficou na memória", "Depois de pelo menos 24 horas, acerte uma questão de um conceito já estudado, sem dica nem solução aberta.", reviews, 1, "revisão", "memory", "/review"),
+    badge("returned-stronger-five", "Memória de elefante", "Acerte 5 revisões feitas depois de pelo menos 24 horas, sem dica nem solução aberta.", reviews, 5, "revisões", "memory", "/review"),
     badge("study-comeback", "Virou o jogo", "Errou uma questão? Acerte essa mesma questão depois, sem dica nem solução aberta.", corrected.size, 1, "virada", "comeback"),
-    badge("study-steady-three", "No seu ritmo", "Responda questões em 3 dias diferentes. Eles não precisam ser seguidos; errar também conta como prática.", allStudyDays, 3, "dias", "rhythm")
+    badge("study-comeback-three", "Virada tripla", "Acerte, sem dica nem solução aberta, 3 questões que você tinha errado.", corrected.size, 3, "viradas", "comeback", "/mistakes"),
+    badge("study-steady-three", "No seu ritmo", "Responda questões em 3 dias diferentes. Eles não precisam ser seguidos; errar também conta como prática.", allStudyDays, 3, "dias", "rhythm"),
+    badge("study-steady-ten", "Dez dias de estudo", "Responda questões em 10 dias diferentes. Eles não precisam ser seguidos; errar também conta como prática.", allStudyDays, 10, "dias", "rhythm")
   ];
   // Keep programming achievements identifiable; never relabel Debugger as study evidence.
   if (xp.transactions.some(item => item.reason === "debug_activity_passed")) {

@@ -1,3 +1,4 @@
+import { subjectNameFromTitle } from "@/components/ui/subject";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
@@ -26,7 +27,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
       <article className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="concept-title">
         <p className="eyebrow">Conceito</p>
         <h1 id="concept-title">{studentConceptLabel(concept.title)}</h1>
-        <p>{concept.summary ?? "Sem resumo importado."}</p>
+        {concept.summary ? <p>{concept.summary}</p> : null}
         {relations.length>0&&<section className="module-section" aria-label="Relações curriculares declaradas"><h2>Conceitos que ajudam aqui</h2><p>Estas relações vêm do currículo importado. A IA apenas explica a ligação.</p><ul className="record-list">{relations.map(edge=><li key={edge.prerequisiteConceptId}><div><Link href={`/concepts/${encodeURIComponent(edge.prerequisiteConceptId)}`}>{edge.title}</Link><span>{edge.strength==="required"?"Pré-requisito obrigatório":"Relação recomendada"}</span><AiActionControl label="Explicar esta ligação com IA" spec={{action:"explain_concept_relation",target:{kind:"relation",conceptId,relatedConceptId:edge.prerequisiteConceptId}}}/></div></li>)}</ul></section>}
 
         <section className="module-section" aria-labelledby="concept-lessons-title">
@@ -36,7 +37,7 @@ export default async function ConceptPage({ params }: ConceptPageProps) {
               <li key={lesson.stableId}>
                 <Link href={`/lessons/${lesson.stableId}`}>
                   <strong>{lesson.title}</strong>
-                  <span>{lesson.trackTitle}</span>
+                  <span>{subjectNameFromTitle(lesson.trackTitle)}</span>
                   <small>{lesson.activityCount} {lesson.activityCount === 1 ? "atividade relacionada" : "atividades relacionadas"}</small>
                 </Link>
               </li>

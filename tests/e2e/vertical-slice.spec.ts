@@ -160,7 +160,9 @@ test("imports a Track Pack, browses the lesson, runs code, submits and shows his
 
   await page.getByRole("link", { name: "Você", exact: true }).click();
   await page.getByRole("link", { name: /Histórico/ }).click();
-  await expect(page.getByRole("heading", { name: "Eventos" })).toBeVisible();
-  await expect(page.getByLabel("Eventos de estudo")).toContainText("activity_submitted");
-  await expect(page.getByLabel("Eventos de estudo")).toContainText("js-logical-and-code-001");
+  await expect(page.getByRole("heading", { name: "Histórico", level: 1 })).toBeVisible();
+  await expect(page.getByRole("list", { name: "Outros registros" })).toContainText("Atividade de programação enviada");
+  // The code and the debug submissions both appear, without technical ids.
+  expect(await page.getByRole("list", { name: "Outros registros" }).getByText("Atividade de programação enviada").count()).toBeGreaterThanOrEqual(2);
+  await expect(page.getByRole("list", { name: "Outros registros" })).not.toContainText("js-logical-and-code-001");
 });

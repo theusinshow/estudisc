@@ -52,8 +52,8 @@ export function PaywallPanel({
         if (res.ok && !cancelled) {
           const data = (await res.json()) as { hasFullAccess?: boolean };
           if (data.hasFullAccess) {
-            setFeedback({ tone: "success", text: "Pagamento confirmado! Redirecionando para o seu plano de estudos..." });
-            navigateTo("/plan");
+            setFeedback({ tone: "success", text: "Pagamento confirmado! Redirecionando para o Hoje…" });
+            navigateTo("/");
             return;
           }
         }
@@ -122,7 +122,7 @@ export function PaywallPanel({
           tone: "success",
           text: "Acesso liberado em modo de teste! Redirecionando..."
         });
-        navigateTo("/plan");
+        navigateTo("/");
         return;
       }
       const data = (await response.json().catch(() => ({}))) as { message?: string };
@@ -157,7 +157,7 @@ export function PaywallPanel({
         tone: "success",
         text: "Bolsa / convite ativado com sucesso! Todas as aulas e questões foram liberadas até a prova."
       });
-      navigateTo("/plan");
+      navigateTo("/");
     } catch {
       setFeedback({ tone: "error", text: "Sem conexão com o servidor. Tente novamente." });
     } finally {

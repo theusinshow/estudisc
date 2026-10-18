@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-18 — New achievements and the remaining screens (F5 point 4)
+
+- Seven new badges, computed from the answers already recorded (retroactive, no XP, no mastery effect): Cinquentinha (50 right without help), Nível prova (5 IFSC/challenge right without help), Volta pelo edital (one right answer without help in each subject), Primeiro simulado (a finished simulado), Memória de elefante (5 delayed reviews right), Virada tripla (3 failed Questions later right without help) and Dez dias de estudo (answers on 10 different days). The album now has 13; rules documented in the gamification README; confidence is deliberately not rewarded.
+- /plan without the planner (FEATURE_STUDY_PLANNER off) redirects to Hoje instead of a 404: the Você "Plano" link is hidden then, the full-access page says "Começar a estudar", and post-payment, invite and already-entitled returns go to Hoje.
+- /mistakes: one practice time above the subjects (shared PracticeMinutesProvider, also used by /review so cards follow the chosen time), a visible "Rever a explicação e as aulas →" link and a rounded "Registrar minha percepção".
+- /history: "Histórico" lists the latest answers (question, right/wrong, with help, lesson or simulado, date) from the attempts record, and other records with student-facing names instead of event codes and ids.
+- /concepts: no "Sem resumo importado" placeholder; lessons show the subject instead of the track title.
+
 ## 2026-10-18 — Matching boxes keep their names (F5 point 4)
 
 - Tap-to-place matching: the "+ colocar aqui" hint on a box is visual only (empty CSS alternative text), so screen readers and tests hear "Local B", not "Local B + colocar aqui". The flag-gated interactive-blocks e2e is green again (it also checks the restored piece in its box instead of the old select).

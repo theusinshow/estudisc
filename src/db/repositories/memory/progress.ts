@@ -1,4 +1,4 @@
-import type { HistoryEvent } from "@/db/repositories/history-repository";
+import { toHistoryAnswer, type HistoryAnswer, type HistoryEvent } from "@/db/repositories/history-repository";
 import type { LessonProgressSummary, TrackProgressSummary } from "@/db/repositories/progress-repository";
 import { getMemoryStore } from './store';
 
@@ -89,5 +89,14 @@ export class MemoryHistoryRepository {
 
   async listEvents(ownerId="local-owner"): Promise<HistoryEvent[]> {
     return this.store.events.filter(event=>!event.ownerId||event.ownerId===ownerId).sort((left, right) => right.occurredAt.getTime() - left.occurredAt.getTime());
+  }
+
+  /** Question answers in memory: the stem comes from the latest imported pack with that Question version. */
+  async listRecentAnswers(ownerId="local-owner", limit=40): Promise<HistoryAnswer[]> {
+    const questions = [...this.store.packImports].reverse().flatMap(entry => entry.manifest?.schema === "caderno.track.v2" ? entry.manifest.questions : []);
+    return this.store.attempts.filter(item => item.ownerId === ownerId && typeof item.context?.questionId === "string")
+      .sort((left, right) => right.createdAt.getTime() - left.createdAt.getTime()).slice(0, limit)
+      .map(item => toHistoryAnswer({ id: item.id, outcome: item.outcome, context: item.context, createdAt: item.createdAt,
+        content: questions.find(question => question.id === item.context?.questionId && (item.context?.questionVersion === undefined || question.version === item.context.questionVersion)) ?? null }));
   }
 }

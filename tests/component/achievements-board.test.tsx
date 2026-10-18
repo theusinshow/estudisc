@@ -11,7 +11,7 @@ describe("AchievementsBoard", () => {
     expect(screen.getByRole("link", { name: "Buscar essa conquista" })).toHaveAttribute("href", "/");
     expect(screen.getByRole("progressbar", { name: "Progresso para Saiu do zero" })).toHaveAttribute("value", "0");
     const album = screen.getByRole("list", { name: "Selos de estudo" });
-    expect(within(album).getAllByText("A conquistar")).toHaveLength(6);
+    expect(within(album).getAllByText("A conquistar")).toHaveLength(13);
     const badge = album.querySelector("details")!;
     expect(badge).not.toHaveAttribute("open");
     expect(badge.querySelector("summary")).toHaveTextContent("Saiu do zero");
@@ -26,6 +26,6 @@ describe("AchievementsBoard", () => {
     expect(screen.getByText("Coleção completa")).toBeVisible();
     expect(screen.queryByRole("link", { name: "Buscar essa conquista" })).not.toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Continuar meu estudo" })).toHaveAttribute("href", "/");
-    expect(screen.getByText("6/6 conquistados")).toBeVisible();
+    expect(screen.getByText("13/13 conquistados")).toBeVisible();
   });
 });

@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import { AppShell } from "@/components/layout/app-shell";
 import { Tabs } from "@/components/ui/tabs";
 import { getFeatureFlags } from "@/lib/feature-flags";
@@ -17,7 +17,8 @@ export const dynamic = "force-dynamic";
 
 export default async function PlanPage() {
   if (!(await resolveAccessState()).hasFullAccess) return <AppShell><FreePreviewHome /></AppShell>;
-  if (!getFeatureFlags().FEATURE_STUDY_PLANNER) notFound();
+  // Without the planner, links and post-payment returns that point here land on Hoje instead of a 404.
+  if (!getFeatureFlags().FEATURE_STUDY_PLANNER) redirect("/");
   const ownerId = await getOwnerId();
   const sessions = getDatabaseUrl() ? await studySessionRepository().list(ownerId) : [];
   const routineState = getDatabaseUrl() ? await studyPlanRepository().getState(ownerId) : null;

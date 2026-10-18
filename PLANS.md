@@ -34,7 +34,9 @@ Fixed 2026-10-18: tests/e2e/interactive-blocks.spec.ts — the box hint "+ coloc
 Lesson batch live 2026-10-18 (999d101, Railway success). Revisão (approved): shorter intro, one time choice, card button "Praticar este conceito", "Para revisar…" meta, shorter hint. The local memory 404 on answers came only from the golden seed content; the MAT-07 build answers fine.
 Revisão live 2026-10-18 (19fcdc7, Railway success). Provas (approved): display title, countdown note, counts on hub cards, pill year filter, compact past-exam cards with visible official links, plurals, focus mode for active simulados. Past exams previewed locally from scripts/build-past-exam-templates.ts output posted to memory://local (.local/import-past.mjs).
 Provas live 2026-10-18 (14679aa, Railway success). Você (approved; week start = Monday, the recommendation): shared Monday week for Hoje/heatmap, shorter recap preview, progress details card, grouped compact map list with plainer caveat, full-width e-mail on /conta. Local CSP console errors are dev-only (production public pages: 0).
-NEXT ACTION: push Você after approval. In-app screen review then complete (Hoje → Estudar → aula → Revisão → Provas → Você); ask the owner what to review next.
+Você live 2026-10-18 (7d5fd11). Owner then asked: fix the broken test (done, b6f0694), review the remaining screens (Erros, Plano 404, Histórico, Conceito — approved) and add achievements (all 7 approved).
+Known pre-existing failure (planner flags only; fails on main before this batch): tests/e2e/session-navigation.spec.ts line 24 waits for "Começar sessão" on Hoje with the planner on. Planner is off in production.
+NEXT ACTION: push the test fix + remaining screens + achievements after approval.
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 

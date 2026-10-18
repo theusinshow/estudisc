@@ -22,11 +22,11 @@ export default async function UpgradePage({ searchParams }: UpgradePageProps) {
           <p className="eyebrow">Acesso Completo Ativo</p>
           <h1 id="entitled-title">Seu acesso completo até a prova está liberado!</h1>
           <p>
-            Você tem acesso irrestrito a todas as {formatCount(CONTENT_SUMMARY.lessons)} aulas, {formatCount(CONTENT_SUMMARY.lessonQuestions)} questões, simulados, provas anteriores e plano de estudos do Estudisc.
+            Você tem acesso irrestrito a todas as {formatCount(CONTENT_SUMMARY.lessons)} aulas, {formatCount(CONTENT_SUMMARY.lessonQuestions)} questões, simulados e provas anteriores do Estudisc.
           </p>
           <div className="learning-controls">
-            <Link href="/plan" className="primary-action">
-              Ir para o Plano de Estudos
+            <Link href="/" className="primary-action">
+              Começar a estudar
             </Link>
             <Link href="/tracks" className="secondary-action">
               Explorar Trilhas e Aulas

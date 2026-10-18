@@ -10,6 +10,32 @@ function answer(id: string, questionId = id, conditions: Record<string, unknown>
 }
 
 describe("study gamification", () => {
+  it("adds the 2026-10-18 achievements from the same records, without XP", () => {
+    const day = (n: number) => new Date(Date.UTC(2026, 8, n, 15));
+    const ladder = Array.from({ length: 50 }, (_, index) => answer(`s${index}`, `q${index}`, {}, day(1 + (index % 10))));
+    const subjects = ["POR", "CIE", "GH"].map(code => ({ ...answer(`sub-${code}`, `q-${code}`), conceptStableId: `${code}.TEST` }));
+    const exam = ["e1", "e2", "e3", "e4", "e5"].map(id => answer(id, id, { difficulty: id === "e5" ? "challenge" : "ifsc" }));
+    const simulado = { ...answer("sim-1", "q-sim", { assessmentId: "inst-1", mode: "assessment" }), type: "assessment_result" };
+    const reviews = ["r1", "r2", "r3", "r4", "r5"].map(id => answer(id, id, { delayedRetrieval: true }));
+    const comebacks = ["c1", "c2", "c3"].flatMap(id => [answer(`${id}-fail`, id, { outcome: "failed" }, day(20)), answer(`${id}-fix`, id, {}, day(21))]);
+    const summary = buildGamificationSummary({ ...base, evidence: [...ladder, ...subjects, ...exam, simulado, ...reviews, ...comebacks] });
+    const earned = (id: string) => summary.badges.find(badge => badge.id === id)?.earned;
+    for (const id of ["study-practice-fifty", "study-all-subjects", "first-simulado", "exam-level-five", "returned-stronger-five", "study-steady-ten", "study-comeback-three"]) expect(earned(id), id).toBe(true);
+    expect(summary.rank.currentXp).toBe(0);
+  });
+
+  it("keeps the new achievements locked below their thresholds or with help", () => {
+    const summary = buildGamificationSummary({ ...base, evidence: [
+      answer("a", "q1"), { ...answer("b", "q2", { hintLevel: 1 }), conceptStableId: "POR.TEST" },
+      answer("x1", "x1", { difficulty: "ifsc", solutionRevealed: true }), answer("x2", "x2", { difficulty: "applied" })
+    ] });
+    const badge = (id: string) => summary.badges.find(item => item.id === id);
+    expect(badge("study-all-subjects")).toMatchObject({ current: 1, target: 4, earned: false });
+    expect(badge("exam-level-five")).toMatchObject({ current: 0, earned: false });
+    expect(badge("first-simulado")).toMatchObject({ current: 0, earned: false });
+    expect(badge("study-steady-ten")).toMatchObject({ current: 1, earned: false });
+  });
+
   it("does not award anything for an empty queue or page visits", () => {
     const summary = buildGamificationSummary(base);
     expect(summary.badges.every(badge => !badge.earned)).toBe(true);

@@ -28,7 +28,7 @@ export async function POST(request: NextRequest) {
     if (access.hasFullAccess) {
       logFunnelEvent("checkout_started", { status: "already_entitled" });
       return NextResponse.json(
-        { alreadyEntitled: true, checkoutUrl: "/plan", sandboxMode: false },
+        { alreadyEntitled: true, checkoutUrl: "/", sandboxMode: false },
         { status: 200 }
       );
     }
@@ -59,7 +59,7 @@ export async function POST(request: NextRequest) {
         endsAt: paidAccessEndsAt(),
         metadata: { sandbox: true, nonce: ref.nonce }
       });
-      return NextResponse.json({ alreadyEntitled: true, checkoutUrl: "/plan", sandboxMode: true }, { status: 200 });
+      return NextResponse.json({ alreadyEntitled: true, checkoutUrl: "/", sandboxMode: true }, { status: 200 });
     }
 
     const appUrl = env.APP_URL ?? new URL(request.url).origin;

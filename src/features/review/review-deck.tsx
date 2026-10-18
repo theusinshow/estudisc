@@ -38,7 +38,7 @@ export function ReviewDeck({ cards }: Readonly<{ cards: readonly ReviewCard[] }>
           <h2>{card.title}</h2>
           <p>{card.reason}</p>
           <small>{card.due}</small>
-          {/* The time is chosen once, above the deck; a card starts a 10-minute practice. */}
+          {/* The time is chosen once, above the deck (PracticeMinutesProvider); the card uses it. */}
           <TargetedPracticeControls kind="review" conceptId={card.conceptId} label="Praticar este conceito" ariaLabel={`Praticar ${card.title}`} showTime={false} />
         </article>
       </div>

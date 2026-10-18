@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { isLearningAiAvailable } from "@/features/ai/availability";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
 import { getMistakeReflections, listMistakes } from "@/features/mistakes/api";
 import { groupMistakeObservations } from "@/features/mistakes/mistake-patterns";
-import { TargetedPracticeControls } from "@/features/study-sessions/targeted-practice-controls";
+import { PracticeMinutesPicker, PracticeMinutesProvider, TargetedPracticeControls } from "@/features/study-sessions/targeted-practice-controls";
 import { getFeatureFlags } from "@/lib/feature-flags";
 import { MistakeReflectionForm } from "@/features/mistakes/reflection-form";
 import { pedagogicalMistakeLabels } from "@/features/mistakes/mistake-patterns";
@@ -42,21 +43,23 @@ export default async function MistakesPage() {
             studentTitle="Nenhum erro por enquanto."
             studentDescription="Quando uma resposta não der certo, o erro fica guardado aqui para você corrigir depois."
           />
-        ) : enhanced ? <>
+        ) : enhanced ? <PracticeMinutesProvider>
           <p>Comece pelo assunto em que você errou mais vezes.</p>
+          {/* One practice length for every subject below. */}
+          <PracticeMinutesPicker />
           <ol className="record-list mistake-queue" aria-label="Erros por assunto">{groups.map(group=><li key={group.conceptId}>
             <div><Link href={`/concepts/${encodeURIComponent(group.conceptId)}`}><strong>{studentConceptLabel(group.conceptTitle)}</strong></Link>
               <span>{group.recurring?"Errou mais de uma vez":"Errou uma vez"}</span><p>{group.explanation}</p>
               {group.resolvedCount>0&&<small>{group.resolvedCount} {group.resolvedCount===1?"já corrigido":"já corrigidos"}</small>}
-              <Link href={`/concepts/${encodeURIComponent(group.conceptId)}`}>Rever a explicação e as aulas</Link>
-              {group.activeMistakeId&&<TargetedPracticeControls kind="remediation" mistakeId={group.activeMistakeId}/>}
+              <Link className="mistake-review-link" href={`/concepts/${encodeURIComponent(group.conceptId)}`}>Rever a explicação e as aulas<ArrowRight aria-hidden="true" /></Link>
+              {group.activeMistakeId&&<TargetedPracticeControls kind="remediation" mistakeId={group.activeMistakeId} showTime={false}/>}
               {!reflections.some(r=>group.mistakeIds.includes(r.mistakeId))&&<p>Ainda não sabemos por que você errou. Quer contar?</p>}
               <MistakeReflectionForm mistakeId={group.activeMistakeId??group.mistakeIds[0]}/>
               {reflections.filter(r=>group.mistakeIds.includes(r.mistakeId)).length>0&&<details><summary>O que você anotou</summary><ul>{reflections.filter(r=>group.mistakeIds.includes(r.mistakeId)).map(r=><li key={r.id}><strong>{pedagogicalMistakeLabels[r.category]} </strong>{r.note&&<p>{r.note}</p>}</li>)}</ul></details>}
               <details><summary>Ver cada erro</summary><ul>{mistakes.filter(row=>group.mistakeIds.includes(row.id)).map(row=><li key={row.id}>Erro {categoryLabel(row.category)}, em {dayMonth.format(row.createdAt)} · {statusLabel(row.status)}</li>)}</ul></details>
             </div>
           </li>)}</ol>
-        </> : (
+        </PracticeMinutesProvider> : (
           <ol className="record-list mistake-queue" aria-label="Erros por assunto">
             {mistakes.map((mistake) => (
               <li key={mistake.id}>
