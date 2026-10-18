@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-18 — Student-first landing (F5 point 4, public pages)
+
+- /conheca is rebuilt for students on the vibrante visual: countdown sticker and shorter headline with "Criar conta grátis", the sample question as "Tenta uma", "Como é estudar aqui" with three decorative app pieces (lesson card, hint, the real goal tower), compact numbers, free sample lessons as subject chips and one price card. The price, 7-day refund, no-approval-guarantee, official-edital, minors-buy-through-a-guardian and IFSC-independence notices stay visible.
+- Public footer links sit in two columns on phones.
+- Goal tower: every fourth block used a token that does not exist and rendered blank; it now takes the Geografia e História yellow.
+
 ## 2026-10-18 — Review deck, lit concept map, goal tower and focus mode (ADR 0069, F5 point 3)
 
 - /review shows the queue as swipeable cards (blind spots flagged) with "Praticar" on each card; swiping only navigates, nothing is recorded without answering. The list stays under "Ver a fila em lista".

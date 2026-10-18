@@ -6,7 +6,14 @@ Method agreed with the owner: one screen at a time, mobile first (390×844 and 3
 For each screen: send the production link (https://www.estudisc.com.br/...) plus what I would change; the owner approves or adjusts; apply approved changes in batches, run focused checks, push to main (owner approves pushes) and wait for Railway SUCCESS.
 Local preview with production flags: `DATABASE_URL=memory://local ESTUDISC_OWNER_ID=local-owner AUTH_TRUST_HOST=true FEATURE_SMART_MISTAKES=true FEATURE_NEW_TODAY=true FEATURE_KNOWLEDGE_MAP=true FEATURE_CONTINUOUS_STUDY=true FEATURE_INTERACTIVE_LESSONS=true FEATURE_ADAPTIVE_SESSION=true node node_modules/next/dist/bin/next dev -p 3311`, then `node scripts/seed-local-demo.mjs http://localhost:3311`.
 Known open items to raise during the review: /conheca stat overlapping its label, mixed widths and weak final CTA (noted 2026-10-17); goal tower uses a fixed suggested goal of 10 (owner may want it configurable); lit map not yet seen with consolidated Concepts.
-NEXT ACTION: start with Hoje.
+Hoje reviewed 2026-10-18 (proposals 1–7 sent: subject tab hidden by the caderno `::before`, every 4th goal block uncolored — `--estudisc-color-subject-accent-history` does not exist, nav "Continuar" label 6 px low, hyphenated card title, goal slots, 320 wraps, shorter card copy); owner paused it to redo the public pages first.
+
+### Public pages redo (2026-10-18, owner-approved direction)
+Owner decisions: change structure and copy (keep the vibrante visual); student-first voice on /conheca with a short note and link for parents; paywall keeps its current flow (no new parent link/backend). Production has FEATURE_OPEN_SIGNUP and FEATURE_PAID_ACCESS on — review against production, not the local preview.
+Order: /conheca → /auth/signin → /auth/cadastro → paywall (/upgrade + FreePreviewHome) → /pais-e-escolas → termos/privacidade/suporte (polish).
+/conheca (approved): hero with countdown badge and short student headline + "Criar conta grátis"/"Já tenho conta"; "Tenta uma" sample question; "Como é estudar aqui" with 3 decorative app pieces (lesson card, hint, goal tower); compact 2×2 numbers; free sample lessons as subject chips; one price card with the required notes (no approval guarantee, official edital, minors buy through a guardian, link to /pais-e-escolas); two-column public footer. CTA destination stays /auth/signin until the login screen step decides it.
+Acceptance: no horizontal scroll at 390 and 320; h1 still names "prova do IFSC"; truthful price/refund/independence disclosures kept; e2e public-site spec passes; owner approves screenshots before push.
+NEXT ACTION: implement /conheca, screenshot 390/320, ask for push approval; then propose the login screen.
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 
