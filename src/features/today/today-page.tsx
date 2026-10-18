@@ -9,6 +9,7 @@ import { TodayPlan } from "./today-plan";
 import type { getTodayDashboard } from "./get-today-dashboard";
 import { formatTodayDate } from "./today-date";
 import { ContinueStudy } from "@/features/study-flow/continue-study";
+import { GoalTower } from "./goal-tower";
 
 type Dashboard = Awaited<ReturnType<typeof getTodayDashboard>>;
 
@@ -46,6 +47,7 @@ export function TodayPage({ dashboard }: Readonly<{ dashboard: Dashboard }>) {
         <Link href={action.href} data-kind={action.kind}><span><strong>{action.title}</strong><small>{action.reason}</small></span></Link>
       </li>)}</ol>
     </section>}
+    <GoalTower answered={overview.week.find(day => day.isToday)?.count ?? 0} />
     <section className="today-week" aria-labelledby="week-title">
       <div className="today-week-head"><h2 id="week-title">Sua semana</h2><Link href="/progress">Ver progresso<ArrowRight aria-hidden="true" /></Link></div>
       <WeekStrip days={overview.week} />

@@ -8,6 +8,7 @@ import { masteryStateLabels, type MasteryState } from "@/features/mastery/master
 import { getFeatureFlags } from "@/lib/feature-flags";
 import { TargetedPracticeControls } from "@/features/study-sessions/targeted-practice-controls";
 import { studentConceptLabel } from "@/features/concepts/student-label";
+import { ReviewDeck } from "@/features/review/review-deck";
 
 export const dynamic = "force-dynamic";
 
@@ -30,6 +31,24 @@ export default async function ReviewPage() {
   const dueReviews = await getDueReviews();
   const enhanced=getFeatureFlags().FEATURE_SMART_MISTAKES;
 
+  const list = (
+      <ol className="review-list" aria-label="Revisões vencidas">
+        {dueReviews.map((review) => (
+          <li key={review.conceptStableId}>
+            <Link href={`/concepts/${review.conceptStableId}`}><strong>{studentConceptLabel(review.conceptTitle)}</strong></Link>
+            <span><time className="type-meta" dateTime={review.nextReviewAt.toISOString()}>{reviewDue(review.nextReviewAt)}</time> · {review.reason}</span>
+            <small>
+              {masteryStateLabels[review.currentMasteryState as MasteryState] ?? review.currentMasteryState} · {review.reviewCount === 1 ? "1 revisão" : `${review.reviewCount} revisões`}
+            </small>
+            {enhanced?<TargetedPracticeControls kind="review" conceptId={review.conceptStableId} label={`Praticar ${studentConceptLabel(review.conceptTitle)}`}/>:<form action={completeReviewAction}>
+              <input type="hidden" name="conceptId" value={review.conceptStableId} />
+              <button className="secondary-action" type="submit"><Check aria-hidden="true" />Concluir revisão</button>
+            </form>}
+          </li>
+        ))}
+      </ol>
+  );
+
   return (
     <AppShell>
       <section className="foundation-panel content-panel accent-panel accent-review" aria-labelledby="review-title">
@@ -49,21 +68,8 @@ export default async function ReviewPage() {
               <p className="queue-count"><strong>{dueReviews.length}</strong> <span>{dueReviews.length === 1 ? "conceito na fila" : "conceitos na fila"}</span></p>
               {enhanced&&<TargetedPracticeControls kind="review" label="Começar revisão rápida"/>}
             </div>
-            <ol className="review-list" aria-label="Revisões vencidas">
-              {dueReviews.map((review) => (
-                <li key={review.conceptStableId}>
-                  <Link href={`/concepts/${review.conceptStableId}`}><strong>{studentConceptLabel(review.conceptTitle)}</strong></Link>
-                  <span><time className="type-meta" dateTime={review.nextReviewAt.toISOString()}>{reviewDue(review.nextReviewAt)}</time> · {review.reason}</span>
-                  <small>
-                    {masteryStateLabels[review.currentMasteryState as MasteryState] ?? review.currentMasteryState} · {review.reviewCount === 1 ? "1 revisão" : `${review.reviewCount} revisões`}
-                  </small>
-                  {enhanced?<TargetedPracticeControls kind="review" conceptId={review.conceptStableId} label={`Praticar ${studentConceptLabel(review.conceptTitle)}`}/>:<form action={completeReviewAction}>
-                    <input type="hidden" name="conceptId" value={review.conceptStableId} />
-                    <button className="secondary-action" type="submit"><Check aria-hidden="true" />Concluir revisão</button>
-                  </form>}
-                </li>
-              ))}
-            </ol>
+            {enhanced && <ReviewDeck cards={dueReviews.map(review => ({ conceptId: review.conceptStableId, title: studentConceptLabel(review.conceptTitle), reason: review.reason, due: reviewDue(review.nextReviewAt), state: masteryStateLabels[review.currentMasteryState as MasteryState] ?? review.currentMasteryState, blindSpot: Boolean(review.blindSpot) }))} />}
+            {enhanced ? <details className="review-list-toggle"><summary>Ver a fila em lista</summary>{list}</details> : list}
           </>
         )}
       </section>

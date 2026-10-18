@@ -75,3 +75,22 @@
 .recap-body strong { font-size: 2.25rem; font-weight: 900; line-height: 1; overflow-wrap: anywhere; }
 .recap-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: center; }
 @media (prefers-reduced-motion: reduce) { .recap-progress [data-state="now"] span { animation: none; width: 100%; } .recap-story { transition: none; } }
+
+/* Focus mode (ADR 0069, lab 8.12): the tab bar hides; a small ring timer floats above the lesson controls. */
+html[data-focus-mode="on"] .sidebar[data-navigation="tabs"] { display: none; }
+.stepper-head .focus-mode-toggle { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); font: inherit; font-size: 0.875rem; font-weight: 800; box-shadow: none; transform: none; }
+.stepper-head .focus-mode-toggle[aria-pressed="true"] { background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); }
+.focus-mode-toggle svg { width: 18px; height: 18px; }
+.focus-pill { position: fixed; z-index: 40; top: 76px; right: 12px; display: flex; align-items: center; gap: 8px; padding: 6px 8px 6px 6px; border: 3px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); box-shadow: 0 4px 0 var(--estudisc-color-ink); }
+.focus-pill[data-phase="break"] { background: #C9F2D6; }
+.focus-pill svg { width: 44px; height: 44px; flex: none; }
+.focus-track { fill: none; stroke: rgba(23, 20, 31, 0.15); stroke-width: 6; }
+.focus-fill { fill: none; stroke: var(--estudisc-color-ink); stroke-width: 6; stroke-linecap: round; transition: stroke-dashoffset 500ms linear; }
+.focus-pill[data-phase="break"] svg { animation: focus-breathe 8s ease-in-out infinite; }
+.focus-text { display: grid; line-height: 1.05; }
+.focus-text strong { font-size: 1.125rem; font-variant-numeric: tabular-nums; }
+.focus-text small { font-size: 0.75rem; font-weight: 700; }
+.focus-pill .focus-pill-button { display: grid; place-items: center; width: 40px; min-width: 40px; height: 40px; min-height: 40px; padding: 0; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); box-shadow: none; transform: none; }
+.focus-pill-button svg { width: 18px; height: 18px; }
+@keyframes focus-breathe { 50% { transform: scale(1.2); } }
+@media (prefers-reduced-motion: reduce) { .focus-pill[data-phase="break"] svg { animation: none; } .focus-fill { transition: none; } }

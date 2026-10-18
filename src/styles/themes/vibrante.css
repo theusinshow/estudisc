@@ -177,3 +177,15 @@ html[data-theme="vibrante"] body .public-steps.ruled-sheet li::before { font-fam
 [data-theme="vibrante"] .study-action-card[data-subject] { padding-left: 26px; }
 [data-theme="vibrante"] .study-action-card[data-subject]::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 12px; border-right: 3px solid var(--estudisc-color-ink); background: var(--subject); }
 @media (prefers-reduced-motion: reduce) { [data-theme="vibrante"] .record-list li > a { transition: none; } }
+
+/* Concept map lighting (ADR 0069, lab 8.9): consolidated Concepts glow and light the link to what they unlock. */
+[data-theme="vibrante"] .knowledge-flow-node { border-width: 3px; border-radius: 16px; background: var(--estudisc-color-panel); box-shadow: 0 4px 0 var(--estudisc-color-ink); }
+[data-theme="vibrante"] .knowledge-state-unseen { border-style: dashed; background: #F4F4F0; box-shadow: none; }
+[data-theme="vibrante"] .knowledge-state-unseen strong { color: var(--estudisc-color-dim); }
+[data-theme="vibrante"] .knowledge-state-developing { background: #FFF4B0; }
+[data-theme="vibrante"] .knowledge-state-consolidated { background: #8EE8A6; box-shadow: 0 4px 0 var(--estudisc-color-ink), 0 0 0 6px rgba(142, 232, 166, 0.45); animation: knowledge-glow 2.8s ease-in-out infinite; }
+[data-theme="vibrante"] .knowledge-state-review_due { background: #FFC9A8; }
+[data-theme="vibrante"] .knowledge-flow-frame .react-flow__edge.knowledge-edge-lit path { stroke: #1F9D55; stroke-width: 3.5; stroke-dasharray: 8 6; animation: knowledge-flow-dash 1.2s linear infinite; }
+@keyframes knowledge-glow { 50% { box-shadow: 0 4px 0 var(--estudisc-color-ink), 0 0 0 11px rgba(142, 232, 166, 0.2); } }
+@keyframes knowledge-flow-dash { to { stroke-dashoffset: -28; } }
+@media (prefers-reduced-motion: reduce) { [data-theme="vibrante"] .knowledge-state-consolidated, [data-theme="vibrante"] .knowledge-flow-frame .react-flow__edge.knowledge-edge-lit path { animation: none; } }

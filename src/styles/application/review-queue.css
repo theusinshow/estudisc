@@ -15,3 +15,24 @@
 .summary-text small { overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; color: var(--estudisc-color-dim); font-weight: 500; }
 .review-items details[open] .summary-text small { display: none; }
 
+
+/* Review deck (ADR 0069, lab 8.5): the same queue as cards; swiping only navigates. */
+.review-deck { display: grid; gap: var(--estudisc-spacing-6); margin-block: var(--estudisc-spacing-8); }
+.review-deck-stage { position: relative; display: grid; touch-action: pan-y; }
+.review-card { grid-area: 1 / 1; display: grid; align-content: start; gap: var(--estudisc-spacing-4); min-width: 0; min-height: 260px; padding: var(--estudisc-spacing-10) var(--estudisc-spacing-8); border: 3px solid var(--estudisc-color-ink); border-radius: 24px; background: var(--estudisc-color-panel); box-shadow: 0 6px 0 var(--estudisc-color-ink); overflow-wrap: break-word; animation: review-card-in 220ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+.review-card h2 { margin: 0; font-size: clamp(1.5rem, 6vw, 2rem); line-height: 1.1; }
+.review-card p { margin: 0; }
+.review-card-under { transform: rotate(-3deg) translateY(8px); background: #FFF4B0; box-shadow: none; animation: none; }
+.review-card[data-blind-spot] { background: #FFE1D6; }
+.review-card[data-leaving="left"] { transform: translateX(-110%) rotate(-10deg); opacity: 0; transition: transform 180ms ease-in, opacity 180ms ease-in; }
+.review-card[data-leaving="right"] { transform: translateX(110%) rotate(10deg); opacity: 0; transition: transform 180ms ease-in, opacity 180ms ease-in; }
+.review-card-count { color: var(--estudisc-color-dim); font-size: 0.875rem; font-weight: 700; }
+.review-card-flag { display: inline-flex; justify-self: start; align-items: center; gap: 4px; padding: 2px 10px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: #FF8A65; font-weight: 800; }
+.review-card-flag svg { width: 16px; height: 16px; }
+.review-deck-nav { display: grid; grid-template-columns: 1fr 1fr; gap: var(--estudisc-spacing-4); }
+.review-deck-hint { margin: 0; color: var(--estudisc-color-dim); font-size: 0.875rem; text-align: center; }
+.review-list-toggle summary { min-height: 44px; padding-block: var(--estudisc-spacing-4); font-weight: 700; cursor: pointer; }
+@keyframes review-card-in { from { transform: translateY(12px) scale(0.98); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .review-card { animation: none; } .review-card[data-leaving] { transition: none; } }
+.review-card { position: relative; z-index: 1; }
+.review-card.review-card-under { z-index: 0; }

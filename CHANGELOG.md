@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-18 — Review deck, lit concept map, goal tower and focus mode (ADR 0069, F5 point 3)
+
+- /review shows the queue as swipeable cards (blind spots flagged) with "Praticar" on each card; swiping only navigates, nothing is recorded without answering. The list stays under "Ver a fila em lista".
+- Concept map: nodes take the vibrante look by mastery state (not seen dashed, developing yellow, consolidated green with a soft glow, review due orange); a link lights up once its prerequisite is consolidated and the next Concept was started. Same states colour the list view.
+- Today: "Meta do dia" tower stacks one block per Question answered today (suggested goal 10), from the real record.
+- Lessons: "Modo foco" hides the tab bar and floats a 25-minute ring timer, then a 5-minute breathing break; local only, nothing recorded.
+
 ## 2026-10-17 — Confidence check (ADR 0071)
 
 - Lesson and review questions offer an optional "Quanto você tem certeza?" (Tenho certeza · Acho que sim · Chutei) before submitting. The value is stored in the Attempt context and in the evidence conditions; no migration.

@@ -43,3 +43,19 @@
   .resume-card, .next-card, :where(.main-surface) :where(button, .primary-action, .secondary-action) { transition: none; transform: none !important; }
 }
 
+
+/* Goal tower (ADR 0069, lab 8.11): blocks drop in subject colours; the base shows the count. */
+.goal-tower { display: grid; grid-template-columns: minmax(0, 1fr) 96px; align-items: center; gap: var(--estudisc-spacing-8); padding: var(--estudisc-spacing-8); border: 3px solid var(--estudisc-color-ink); border-radius: 24px; background: var(--estudisc-color-panel); box-shadow: 0 6px 0 var(--estudisc-color-ink); }
+.goal-tower[data-done] { background: #8EE8A6; }
+.goal-tower h2 { margin: 0 0 var(--estudisc-spacing-4); }
+.goal-tower p { margin: 0; }
+.goal-tower-stack { display: flex; flex-direction: column-reverse; align-items: center; gap: 3px; min-height: 150px; }
+.goal-block { width: 64px; height: 11px; border: 2px solid var(--estudisc-color-ink); border-radius: 4px; background: var(--estudisc-color-subject-accent-mathematics); animation: goal-drop 420ms cubic-bezier(0.34, 1.5, 0.64, 1) both; }
+.goal-block:nth-child(4n + 2) { background: var(--estudisc-color-subject-accent-portuguese); transform: rotate(2deg); }
+.goal-block:nth-child(4n + 3) { background: var(--estudisc-color-subject-accent-science); transform: rotate(-2deg); }
+.goal-block:nth-child(4n + 4) { background: var(--estudisc-color-subject-accent-history); }
+.goal-block:nth-child(2) { animation-delay: 60ms; } .goal-block:nth-child(3) { animation-delay: 120ms; } .goal-block:nth-child(4) { animation-delay: 180ms; } .goal-block:nth-child(5) { animation-delay: 240ms; }
+.goal-block:nth-child(6) { animation-delay: 300ms; } .goal-block:nth-child(7) { animation-delay: 360ms; } .goal-block:nth-child(8) { animation-delay: 420ms; } .goal-block:nth-child(9) { animation-delay: 480ms; } .goal-block:nth-child(10) { animation-delay: 540ms; }
+.goal-tower-base { order: -1; width: 88px; padding: 2px 0; border: 3px solid var(--estudisc-color-ink); border-radius: 8px; background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); font-weight: 900; text-align: center; }
+@keyframes goal-drop { from { transform: translateY(-120px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .goal-block { animation: none; } }
