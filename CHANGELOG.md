@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-18 — SEO pass (PR, not deployed)
+
+- Public pages declare a self canonical and `index`; everything else is `noindex` by default (layout metadata) and `/api/*` sends `X-Robots-Tag: noindex`. The sitemap is generated from `INDEXABLE_PAGES` with lastmod.
+- `/conheca`: new title, description and H1 for the "Exame de Classificação do IFSC 2027/1"; "Antes de comprar" is a visible FAQ with FAQPage data; Organization and Course JSON-LD use only the real price and access date; the sample question and the decorative goal tower no longer add H2s.
+- `/pais-e-escolas`: new title and H1, "Criar conta e assinar" CTA, sign-in copy mentions e-mail codes.
+- New `/provas-anteriores` and `/provas-anteriores/[ano]` (official IFSC links, breadcrumb, noindex until released). robots.txt rules unchanged pending approval; see docs/30-SEO.md.
+- `GOOGLE_SITE_VERIFICATION` env and the `cta_clicked` funnel step (`?origem=` on subscribe buttons).
+
 ## 2026-10-18 — Student-first landing (F5 point 4, public pages)
 
 - /conheca is rebuilt for students on the vibrante visual: countdown sticker and shorter headline with "Criar conta grátis", the sample question as "Tenta uma", "Como é estudar aqui" with three decorative app pieces (lesson card, hint, the real goal tower), compact numbers, free sample lessons as subject chips and one price card. The price, 7-day refund, no-approval-guarantee, official-edital, minors-buy-through-a-guardian and IFSC-independence notices stay visible.

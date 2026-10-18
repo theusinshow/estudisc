@@ -58,7 +58,8 @@
 /* The real goal tower component, flattened to fit the illustration frame. */
 .landing-shot-goal { background: var(--estudisc-color-panel); }
 .landing-shot-goal .goal-tower { grid-template-columns: minmax(0, 1fr) 88px; gap: 12px; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; }
-.landing-shot-goal .goal-tower h2 { margin-bottom: 6px; font-size: 1.125rem; line-height: 1.15; }
+.landing-shot-goal .goal-tower h2, .landing-shot-goal .goal-tower .goal-tower-title { margin: 0 0 6px; font-size: 1.125rem; line-height: 1.15; }
+.landing-shot-goal .goal-tower .goal-tower-title { font-weight: 900; font-stretch: 112%; letter-spacing: -0.02em; color: var(--estudisc-color-ink); }
 .landing-shot-goal .goal-tower p { font-size: 0.875rem; line-height: 1.35; }
 .landing-shot-goal .goal-tower-stack { min-height: 116px; }
 

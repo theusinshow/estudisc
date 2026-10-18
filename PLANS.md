@@ -3,6 +3,8 @@
 
 Scope: public pages only (metadata, JSON-LD, sitemap, noindex defaults, /provas-anteriores, Search Console meta, CTA click funnel step). No change to robots.txt rules until the owner approves the route list (item 4d). Main URL stays /conheca: "/" is the signed-in app home, so it cannot be a permanent redirect.
 
+Status: implemented on the branch; PR open for review. NEXT ACTION (owner): approve or edit the robots.txt proposal in docs/30-SEO.md; release /provas-anteriores when commented content exists.
+
 Acceptance: canonical + index on every sitemap page; everything else noindex by default (layout metadata + X-Robots-Tag on /api); Organization/Course/FAQPage/BreadcrumbList JSON-LD only with real site data; /provas-anteriores noindex and out of the sitemap; tests for registry/metadata/JSON-LD/sitemap.
 
 ## F5 point 4 — screen-by-screen review on the vibrante visual (2026-10-18, next session)

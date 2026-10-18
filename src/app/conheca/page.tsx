@@ -92,7 +92,7 @@ export default async function ConhecaPage() {
               <p>Tente de novo, peça uma dica ou veja a solução comentada de cada questão.</p>
             </li>
             <li>
-              <div className="landing-shot landing-shot-goal" aria-hidden="true"><GoalTower answered={6} /></div>
+              <div className="landing-shot landing-shot-goal" aria-hidden="true"><GoalTower answered={6} decorative /></div>
               <h3>O que você erra volta para revisar</h3>
               <p>Nos dias seguintes, o que você errou volta para revisão. A meta do dia mostra quanto falta.</p>
             </li>

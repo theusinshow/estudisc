@@ -47,7 +47,7 @@
 /* Goal tower (ADR 0069, lab 8.11): blocks drop in subject colours; the base shows the count. */
 .goal-tower { display: grid; grid-template-columns: minmax(0, 1fr) 96px; align-items: center; gap: var(--estudisc-spacing-8); padding: var(--estudisc-spacing-8); border: 3px solid var(--estudisc-color-ink); border-radius: 24px; background: var(--estudisc-color-panel); box-shadow: 0 6px 0 var(--estudisc-color-ink); }
 .goal-tower[data-done] { background: #8EE8A6; }
-.goal-tower h2 { margin: 0 0 var(--estudisc-spacing-4); }
+.goal-tower h2, .goal-tower .goal-tower-title { margin: 0 0 var(--estudisc-spacing-4); }
 .goal-tower p { margin: 0; }
 .goal-tower-stack { display: flex; flex-direction: column-reverse; align-items: center; gap: 3px; min-height: 150px; }
 .goal-block { width: 64px; height: 11px; border: 2px solid var(--estudisc-color-ink); border-radius: 4px; background: var(--estudisc-color-subject-accent-mathematics); animation: goal-drop 420ms cubic-bezier(0.34, 1.5, 0.64, 1) both; }

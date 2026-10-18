@@ -52,3 +52,7 @@ Activation rate = owners with first value / new owners. Conversion = owners with
 
 - Checkout abandonment inside Mercado Pago's page and the payment method chosen before abandoning: Checkout Pro does not report them to us. Approved payments carry `paymentTypeId`.
 - Retention after payment: use `study_events` per owner after the grant date.
+
+## Subscribe button clicks (2026-10-18)
+
+`cta_clicked` (`source` = `landing_hero`, `landing_free`, `landing_price`, `parents_price` or `past_exams`) is logged when the sign-in page opens from a subscribe button carrying `?origem=`. Unknown values are ignored.
