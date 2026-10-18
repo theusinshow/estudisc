@@ -1,18 +1,16 @@
 import Link from "next/link";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 import "@/styles/today.css";
 import { AppShell } from "@/components/layout/app-shell";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
 import { WeekStrip } from "@/features/progress/week-strip";
 import { getTodayDashboard } from "@/features/today/get-today-dashboard";
-import { SessionControls } from "@/features/study-sessions/session-controls";
 import { getFeatureFlags } from "@/lib/feature-flags";
 import { resolveAccessState } from "@/features/payments/access-guard";
 import { FreePreviewHome } from "@/features/payments/free-preview-home";
 import { logFunnelEvent } from "@/lib/funnel-events";
 import { TodayPage } from "@/features/today/today-page";
-import { remainingRoutineMinutes } from "@/features/study-sessions/routine-session-constraints";
 import { formatTodayDate } from "@/features/today/today-date";
 
 export const dynamic = "force-dynamic";
@@ -32,7 +30,6 @@ export default async function HomePage() {
   const overview = dashboard.progress;
   const dueReviews = dashboard.dueReviews;
   const mistakes = dashboard.mistakes;
-  const openSessions = dashboard.sessions.filter(session => session.status === "ACTIVE" || session.status === "PLANNED");
   const activeMistakes = mistakes.filter(mistake => mistake.status === "active").length;
   const pulse = [
     { href: "/review", kind: "review", count: dueReviews.length, label: dueReviews.length === 1 ? "revisão para hoje" : "revisões para hoje" },
@@ -44,7 +41,7 @@ export default async function HomePage() {
     <AppShell>
       <div className="today">
         <header className="today-header">
-          <p className="today-date">{formatTodayDate(dashboard.routine?.week?.today)}</p>
+          <p className="today-date">{formatTodayDate()}</p>
           <h1>Hoje</h1>
           <ul className="today-pulse" aria-label="Resumo de hoje">
             {pulse.map(item => (
@@ -56,24 +53,6 @@ export default async function HomePage() {
             ))}
           </ul>
         </header>
-
-        {openSessions.map(session => (
-          <Link className="resume-card" href={`/study/${session.id}`} key={session.id}>
-            <span className="resume-icon"><Play aria-hidden="true" /></span>
-            <span>
-              <strong>Continuar de onde parou</strong>
-              <small>Sessão de {session.budgetMinutes} min</small>
-            </span>
-            <ArrowRight aria-hidden="true" />
-          </Link>
-        ))}
-
-        {/* Without anything to study, the session buttons could only fail; the callout below explains instead. */}
-        {primaryRecommendation && <section className="time-card" aria-labelledby="time-title">
-          <h2 id="time-title">Quanto tempo você tem agora?</h2>
-          <p>Montamos a sessão com revisões, erros pendentes e a próxima aula.</p>
-          <SessionControls adaptive={getFeatureFlags().FEATURE_ADAPTIVE_SESSION} availableMinutes={dashboard.routine?.week?.activeSessionId ? undefined : remainingRoutineMinutes(dashboard.routine?.week ?? null)} />
-        </section>}
 
         <section className="today-next" aria-labelledby="next-title">
           <h2 id="next-title">Próxima ação</h2>
@@ -116,7 +95,7 @@ export default async function HomePage() {
           <WeekStrip days={overview.week} />
           <p>
             {overview.activeDaysThisWeek === 0
-              ? "Nenhum dia com estudo ainda nesta semana. Uma sessão curta já marca o dia."
+              ? "Nenhum dia com estudo ainda nesta semana. Responder uma questão já marca o dia."
               : overview.activeDaysThisWeek === 1 ? "1 dia com estudo nesta semana." : `${overview.activeDaysThisWeek} dias com estudo nesta semana.`}
           </p>
         </section>
