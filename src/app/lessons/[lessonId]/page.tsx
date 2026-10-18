@@ -16,7 +16,7 @@ import { getLessonResume } from "@/features/lessons/resume-api";
 import { canAccessLesson, resolveAccessState } from "@/features/payments/access-guard";
 import { logFunnelEvent } from "@/lib/funnel-events";
 import { PaywallPanel } from "@/features/payments/paywall-panel";
-import { subjectCodeFromTitle } from "@/components/ui/subject";
+import { subjectCodeFromTitle, subjectNameFromTitle } from "@/components/ui/subject";
 import { studentConceptLabel } from "@/features/concepts/student-label";
 
 type LessonPageProps = Readonly<{
@@ -40,7 +40,7 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
   if (!canAccessLesson(lesson.stableId, access)) {
     logFunnelEvent("paywall_viewed", { reasonCode: "lesson_locked" });
     return (
-      <AppShell mode="page" exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha" }}>
+      <AppShell mode="page" exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha", short: "Trilha" }}>
         <PaywallPanel lockedLessonTitle={lesson.title} />
       </AppShell>
     );
@@ -62,16 +62,18 @@ export default async function LessonPage({ params, searchParams }: LessonPagePro
   const aiScope=isLearningAiAvailable()&&(!lesson.metadata?.kind||lesson.metadata.status==="published")?lesson.resumeScope:undefined;
 
   return (
-    <AppShell mode={getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? "focus" : "page"} exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha" }}>
+    <AppShell mode={getFeatureFlags().FEATURE_INTERACTIVE_LESSONS ? "focus" : "page"} exit={{ href: `/tracks/${lesson.trackStableId}`, label: "Voltar à trilha", short: "Trilha" }}>
       <article className="foundation-panel content-panel accent-panel accent-learn lesson-article" aria-labelledby="lesson-title" data-subject={subjectCodeFromTitle(lesson.trackTitle)}>
-        <p className="eyebrow subject-tab">{lesson.trackTitle}</p>
+        <p className="eyebrow subject-tab">{subjectNameFromTitle(lesson.trackTitle)}</p>
         <h1 id="lesson-title">{lesson.title}</h1>
         {Boolean(lesson.metadata?.kind)&&(!lesson.metadata?.qaReleaseId||lesson.metadata?.status!=="published")&&<p className="learning-hint">Prévia administrativa · versão ainda não publicada.</p>}
-        <LiveLessonProgress lessonStableId={lesson.stableId} initial={progress} />
+        {/* Stepped lessons show the progress panel at the end (LessonStepper summary). */}
+        {!stepped && <LiveLessonProgress lessonStableId={lesson.stableId} initial={progress} />}
         {!stepped && <LessonSessionCallout progress={progress} />}
 
         {stepped ? (
-          <LessonSteps blocks={lesson.blocks} activities={lesson.activities} completion={completion} resumeScope={resumeScope} resumeSnapshot={resumeSnapshot} aiScope={aiScope}/>
+          <LessonSteps blocks={lesson.blocks} activities={lesson.activities} completion={completion} resumeScope={resumeScope} resumeSnapshot={resumeSnapshot} aiScope={aiScope}
+            summary={<LiveLessonProgress lessonStableId={lesson.stableId} initial={progress} />}/>
         ) : (
           <>
         <nav className="lesson-flow-nav" aria-label="Fluxo da aula">

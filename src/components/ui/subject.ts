@@ -10,3 +10,11 @@ export function subjectCodeFromTitle(title: string | undefined): "MAT" | "POR" |
   if (text.includes("geografia") || text.includes("historia")) return "GH";
   return undefined;
 }
+
+const SUBJECT_NAMES = { MAT: "Matemática", POR: "Língua Portuguesa", CIE: "Ciências", GH: "Geografia e História" } as const;
+
+/** Visible subject name for a track title ("IFSC 2027 — Matemática" → "Matemática"); unknown titles stay as they are. */
+export function subjectNameFromTitle(title: string): string {
+  const code = subjectCodeFromTitle(title);
+  return code ? SUBJECT_NAMES[code] : title;
+}

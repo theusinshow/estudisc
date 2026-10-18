@@ -64,8 +64,10 @@ export function LessonResumeProvider({ scope, initial, children }: Readonly<{ sc
     return () => clearTimeout(timer);
   }, [data, status, save]);
   const context = useMemo(() => ({ data, update, setDraft, setInteraction }), [data, update, setDraft, setInteraction]);
-  return <Context.Provider value={context}><div className="lesson-resume-controls">
-    <p role="status" aria-live="polite">{status === "new" ? "Seu ponto será salvo durante o estudo" : status === "saved" ? "Ponto da aula salvo" : status === "saving" ? "Salvando ponto da aula…" : status === "changed" ? "Há mudanças para salvar" : status === "conflict" ? "Outra aba salvou um ponto mais recente. Recarregue a aula para continuar a partir dele." : "Não foi possível salvar. Mantenha esta página aberta e tente novamente."}</p>
-    {status === "conflict" ? <button className="secondary-button" type="button" onClick={() => window.location.reload()}>Recarregar aula</button> : <button className="secondary-button" type="button" disabled={status === "saving"} onClick={() => void save(true, true)}>Salvar ponto da aula</button>}
+  // Saving is automatic: the line stays for screen readers and becomes visible only when the student must act.
+  const alert = status === "error" || status === "conflict";
+  return <Context.Provider value={context}><div className="lesson-resume-controls" data-alert={alert || undefined}>
+    <p role="status" aria-live="polite" className={alert ? undefined : "visually-hidden"}>{status === "new" ? "Seu ponto será salvo durante o estudo" : status === "saved" ? "Ponto da aula salvo" : status === "saving" ? "Salvando ponto da aula…" : status === "changed" ? "Há mudanças para salvar" : status === "conflict" ? "Outra aba salvou um ponto mais recente. Recarregue a aula para continuar a partir dele." : "Não foi possível salvar. Mantenha esta página aberta e tente novamente."}</p>
+    {status === "conflict" ? <button className="secondary-button" type="button" onClick={() => window.location.reload()}>Recarregar aula</button> : status === "error" ? <button className="secondary-button" type="button" onClick={() => void save(true, true)}>Tentar salvar de novo</button> : null}
   </div>{children}</Context.Provider>;
 }

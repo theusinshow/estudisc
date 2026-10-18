@@ -17,7 +17,7 @@ const stepLabel: Record<LessonStep["kind"], string> = { intro: "Para começar", 
 const config = (activity: ActivityRecord) => (activity.config ?? {}) as { phase?: string; checkpointFor?: string };
 
 /** Turns the existing lesson blocks and activities into one-idea-per-screen steps. Content-driven, no subject branches. */
-export function LessonSteps({ blocks: allBlocks, activities, completion, resumeScope, resumeSnapshot = null, aiScope }: Readonly<{ blocks: ReadonlyArray<ImportedLessonBlock>; activities: ReadonlyArray<ActivityRecord>; completion?: LessonCompletion; resumeScope?: ResumeScope; resumeSnapshot?: ResumeSnapshot | null; aiScope?: Pick<ResumeScope,"trackId"|"lessonId"|"version"> }>) {
+export function LessonSteps({ blocks: allBlocks, activities, completion, resumeScope, resumeSnapshot = null, aiScope, summary }: Readonly<{ summary?: ReactNode; blocks: ReadonlyArray<ImportedLessonBlock>; activities: ReadonlyArray<ActivityRecord>; completion?: LessonCompletion; resumeScope?: ResumeScope; resumeSnapshot?: ResumeSnapshot | null; aiScope?: Pick<ResumeScope,"trackId"|"lessonId"|"version"> }>) {
   // A block that is only an authoring placeholder ("Ilustração pendente: …") gets no step of its own.
   const blocks = allBlocks.filter(block => !isPlaceholderOnly(block.payload));
   const steps: Array<Omit<LessonStep, "label"> & { node: ReactNode }> = [];
@@ -49,6 +49,6 @@ export function LessonSteps({ blocks: allBlocks, activities, completion, resumeS
   const remaining = activities.filter(activity => !used.has(activity.stableId));
   for (const exit of [false, true]) for (const activity of remaining) if ((config(activity).phase === "exit_ticket") === exit) steps.push({ id: activity.stableId, kind: exit ? "exit" : "practice", node: <ActivityList activities={[activity]} /> });
 
-  const body = <LessonStepper steps={steps.map(step => ({ ...step, label: stepLabel[step.kind] }))} completion={completion} />;
+  const body = <LessonStepper steps={steps.map(step => ({ ...step, label: stepLabel[step.kind] }))} completion={completion} summary={summary} />;
   return resumeScope ? <LessonResumeProvider scope={resumeScope} initial={resumeSnapshot}>{body}</LessonResumeProvider> : body;
 }

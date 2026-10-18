@@ -5,7 +5,7 @@ import { ShellNavigation } from "@/components/layout/primary-nav";
 export function AppShell({ children, mode = "page", exit }: Readonly<{
   children: ReactNode;
   mode?: "page" | "focus";
-  exit?: Readonly<{ href: string; label: string }>;
+  exit?: Readonly<{ href: string; label: string; short?: string }>;
 }>) {
   const focus = mode === "focus";
   return (

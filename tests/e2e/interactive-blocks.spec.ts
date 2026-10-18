@@ -58,8 +58,9 @@ test("explores and resumes typed blocks with keyboard/touch, image fallback and 
   await hot.getByRole("button", { name: "2. Local B", exact: true }).click();
   await hot.getByRole("slider").focus(); await page.keyboard.press("ArrowRight");
   const map = page.getByRole("region", { name: "Explore o diagrama de locais" });
+  // Saving is automatic: the status leaves "saved" on this change, then returns once it is stored.
   await map.getByRole("button", { name: "1. Local A", exact: true }).click();
-  await page.getByRole("button", { name: "Salvar ponto da aula", exact: true }).click();
+  await expect(page.locator(".lesson-resume-controls")).not.toContainText("Ponto da aula salvo");
   await expect(page.locator(".lesson-resume-controls")).toContainText("Ponto da aula salvo");
   await page.reload();
   await expect(page.getByRole("textbox", { name: "Sua previsão", exact: true })).toHaveValue("O fundo muda");

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-18 — Lesson screen review (F5 point 4)
+
+- Stepped lessons open on the content: the progress panel moved to the end ("Você chegou ao fim da aula", or the end of "Ver tudo"), and the save line is visible only when a save fails ("Tentar salvar de novo") or another tab saved a newer point; saving stays automatic and the status remains for screen readers.
+- The step toolbar is one fixed-height row on the white sheet: "4/35 · label" (screen readers hear "Passo 4 de 35"), icon buttons for Ver tudo, Modo foco and Ouvir (44 px, the text stays the accessible name) and the bar; the Voltar/Próximo band is white with a rule instead of lime.
+- The header exit reads "← Trilha" (accessible name "Voltar à trilha"), the lesson tag shows only the subject, a one-word title fits 320 px without a hyphen, and the confidence options never break mid-word.
+
 ## 2026-10-18 — Estudar and Hoje review fixes (F5 point 4)
 
 - Estudar: with a single published track, /tracks opens it directly (the catalog stays for several tracks and says "aulas", not "lições importadas"). The track page shows "N de M aulas concluídas" with a bar, the next lesson in the Hoje study card, one subject bar per module (chevron, "x de y aulas", progress; the next lesson's subject opens by itself) and compact lesson rows marked done/next/todo. Lesson lists are named "Aulas de …".

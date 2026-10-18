@@ -23,8 +23,9 @@ test.describe("persisted lesson resume", () => {
     await expect(page.locator(".stepper-count")).toContainText("Passo 2 de");
     await page.getByRole("button", { name: "Ver tudo", exact: true }).click();
     const question = page.locator(".learning-interaction").filter({ has: page.getByRole("heading", { name: source.questions.find(question => question.id === "Q-CIE-GOLDEN-4")!.stem, exact: true }) });
+    // Saving is automatic: the status leaves "saved" on the typed draft, then returns once it is stored.
     await question.getByRole("textbox").fill("11");
-    await page.getByRole("button", { name: "Salvar ponto da aula" }).click();
+    await expect(page.locator(".lesson-resume-controls")).not.toContainText("Ponto da aula salvo");
     await expect(page.locator(".lesson-resume-controls")).toContainText("Ponto da aula salvo");
     await page.reload();
     await expect(page.getByRole("button", { name: "Um passo por vez" })).toHaveAttribute("aria-pressed", "true");
@@ -34,7 +35,8 @@ test.describe("persisted lesson resume", () => {
     await expect(page.locator(".lesson-resume-controls")).toContainText("Não foi possível salvar");
     await expect(question.getByRole("textbox")).toHaveValue("12");
     await page.unroute("**/api/lesson-resume");
-    await page.getByRole("button", { name: "Salvar ponto da aula" }).click();
+    // The retry button appears only after a failed save.
+    await page.getByRole("button", { name: "Tentar salvar de novo" }).click();
     await expect(page.locator(".lesson-resume-controls")).toContainText("Ponto da aula salvo");
     await page.reload(); await expect(question.getByRole("textbox")).toHaveValue("12");
     await question.getByRole("button", { name: "Ver uma dica" }).click();
@@ -53,7 +55,8 @@ test.describe("persisted lesson resume", () => {
       await page.screenshot({ path: testInfo.outputPath(`lesson-resume-${width}.png`), caret: "initial" });
       const overflow = await page.evaluate(() => [...document.querySelectorAll("main *")].filter(element => { const rect = element.getBoundingClientRect(); return rect.width > 0 && rect.right > innerWidth + 1; }).slice(0, 6).map(element => ({ tag: element.tagName, className: element.className, right: element.getBoundingClientRect().right })));
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), JSON.stringify(overflow)).toBe(true);
-      const button = await page.getByRole("button", { name: "Salvar ponto da aula" }).boundingBox();
+      // Icon tools in the lesson toolbar keep a 44 px touch target.
+      const button = await page.locator(".stepper-head .stepper-toggle").boundingBox();
       expect(button!.width).toBeGreaterThanOrEqual(44); expect(button!.height).toBeGreaterThanOrEqual(44);
     }
   });

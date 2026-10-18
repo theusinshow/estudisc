@@ -132,6 +132,9 @@
 .confidence-picker legend span { color: var(--estudisc-color-dim); font-weight: 500; }
 .confidence-levels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--estudisc-spacing-4); }
 .confidence-picker .confidence-level { min-height: 44px; padding: 4px 6px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); font: inherit; font-size: 0.875rem; font-weight: 700; line-height: 1.15; box-shadow: none; transform: none; }
+/* Options as wide as their words and never broken mid-word; they wrap to a second row when the card is narrow. */
+.learning-interaction .confidence-picker .confidence-levels { display: flex; flex-wrap: wrap; }
+.learning-interaction .confidence-picker .confidence-levels .confidence-level { flex: 1 1 auto; padding: 4px 12px; font-size: 0.875rem; letter-spacing: 0; line-height: 1.2; white-space: nowrap; }
 .confidence-picker .confidence-level[aria-pressed="true"] { background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); }
 .confidence-picker .confidence-level[data-level="guess"][aria-pressed="true"] { background: #FFC2B5; color: var(--estudisc-color-ink); }
 .confidence-note { font-weight: 700; }

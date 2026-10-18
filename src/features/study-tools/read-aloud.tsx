@@ -33,8 +33,8 @@ export function ReadAloudButton({ text = "", getText, label = "Ouvir" }: Readonl
   return (
     <span className="read-aloud" role="group" aria-label="Leitura em voz alta">
       {state === "speaking"
-        ? <button type="button" className="read-aloud-button" onClick={() => { window.speechSynthesis.pause(); setState("paused"); }}><Pause aria-hidden="true" />Pausar</button>
-        : <button type="button" className="read-aloud-button" onClick={play}>{state === "paused" ? <Play aria-hidden="true" /> : <Volume2 aria-hidden="true" />}{state === "paused" ? "Continuar" : label}</button>}
+        ? <button type="button" className="read-aloud-button" onClick={() => { window.speechSynthesis.pause(); setState("paused"); }}><Pause aria-hidden="true" /><span className="tool-label">Pausar</span></button>
+        : <button type="button" className="read-aloud-button" onClick={play}>{state === "paused" ? <Play aria-hidden="true" /> : <Volume2 aria-hidden="true" />}<span className="tool-label">{state === "paused" ? "Continuar" : label}</span></button>}
       {state !== "idle" ? <button type="button" className="read-aloud-button" aria-label="Parar leitura" onClick={() => { window.speechSynthesis.cancel(); setState("idle"); }}><Square aria-hidden="true" /></button> : null}
     </span>
   );

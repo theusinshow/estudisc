@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, List } from "lucide-react";
 import { useLessonResume } from "./resume-provider";
 import { restoredStep } from "./resume-contracts";
 import { playStepTransition } from "@/components/motion/step-transition";
@@ -42,7 +42,8 @@ function stepFromHash(hash: string, total: number) {
 }
 
 /** Shows one step at a time. Every step stays mounted, so answers and feedback survive navigation. */
-export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonStep[]; completion?: LessonCompletion }>) {
+/** `summary`: the lesson progress panel, shown at the end of the lesson (or with every part visible). */
+export function LessonStepper({ steps, completion, summary }: Readonly<{ steps: LessonStep[]; completion?: LessonCompletion; summary?: ReactNode }>) {
   const ready = useSyncExternalStore(subscribe, clientReady, serverReady);
   const resume = useLessonResume();
   const openMistakes = useOpenMistakes();
@@ -81,8 +82,8 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
       {!ready && <p role="status">Carregando controles da aula…</p>}
       {restored.stale && <p role="status">O passo salvo não está disponível. Retomamos o primeiro passo desta versão.</p>}
       <div className="stepper-head">
-        {showAll ? <span className="stepper-count">Aula inteira · {steps.length} partes</span> : <span className="stepper-count" aria-live="polite">{done ? <strong>Aula concluída</strong> : <>Passo {index + 1} de {steps.length} · <strong>{current?.label}</strong></>}</span>}
-        <button type="button" className="stepper-toggle" disabled={!ready} onClick={() => { setShowAll(!showAll); resume?.update({ showAll: !showAll }); }} aria-pressed={showAll}>{showAll ? "Um passo por vez" : "Ver tudo"}</button>
+        {showAll ? <span className="stepper-count">Aula inteira · {steps.length} partes</span> : <span className="stepper-count" aria-live="polite">{done ? <strong>Aula concluída</strong> : <><span className="visually-hidden">Passo {index + 1} de {steps.length}</span><span aria-hidden="true">{index + 1}/{steps.length}</span> · <strong>{current?.label}</strong></>}</span>}
+        <button type="button" className="stepper-toggle" disabled={!ready} onClick={() => { setShowAll(!showAll); resume?.update({ showAll: !showAll }); }} aria-pressed={showAll}><List aria-hidden="true" /><span className="tool-label">{showAll ? "Um passo por vez" : "Ver tudo"}</span></button>
         <FocusMode />
         {!showAll && !done && !["check", "practice", "exit"].includes(steps[index]?.kind ?? "") && <ReadAloudButton label="Ouvir este passo" getText={() => stepRefs.current[index]?.innerText ?? ""} />}
         {!showAll && <progress className="stepper-bar" value={Math.min(index + 1, steps.length)} max={steps.length} aria-label="Progresso da aula" />}
@@ -113,6 +114,7 @@ export function LessonStepper({ steps, completion }: Readonly<{ steps: LessonSte
           </nav>
         </section>
       )}
+      {summary ? <div className="lesson-summary" hidden={!done && !showAll}>{summary}</div> : null}
       {!showAll && !done && (
         <nav className="stepper-nav" aria-label="Navegação da aula">
           <button type="button" onClick={() => go(index - 1)} disabled={!ready || index === 0}><ArrowLeft aria-hidden="true" />Voltar</button>

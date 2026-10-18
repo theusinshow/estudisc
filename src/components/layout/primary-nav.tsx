@@ -32,14 +32,14 @@ function Tab({ tab, pathname }: Readonly<{ tab: (typeof tabs)[number]; pathname:
 export function ShellNavigation({ focus, exit }: Readonly<{
   studyNavigation?: boolean;
   focus: boolean;
-  exit?: Readonly<{ href: string; label: string }>;
+  exit?: Readonly<{ href: string; label: string; short?: string }>;
   profile?: ShellProfile | null;
 }>) {
   const pathname = usePathname() ?? "/";
   return <>
     <header className="topbar">
       <Link className="brand-link" href="/" aria-label="Estudisc, página inicial"><BrandLockup /></Link>
-      {focus && exit ? <Link className="focus-exit" href={exit.href}><ArrowLeft aria-hidden="true" />{exit.label}</Link> : null}
+      {focus && exit ? <Link className="focus-exit" href={exit.href} aria-label={exit.short ? exit.label : undefined}><ArrowLeft aria-hidden="true" />{exit.short ?? exit.label}</Link> : null}
     </header>
     {!focus && <nav className="sidebar" data-navigation="tabs" aria-label="Navegação principal">
       <Tab tab={tabs[0]} pathname={pathname} />
