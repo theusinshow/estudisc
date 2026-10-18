@@ -6,11 +6,10 @@ import { signIn } from "@/auth";
 import { googleAuthorizationParams } from "@/features/auth/google-oauth";
 import { getServerEnv } from "@/lib/env";
 import Link from "next/link";
+import "@/styles/auth-entry.css";
 import { getAccountConfig, isHybridSignIn } from "@/features/auth/account-mode";
 import { AccountSignIn } from "@/features/auth/account-sign-in";
 import { GoogleSubmitButton } from "@/features/auth/google-submit-button";
-import { daysUntilExam, examCountdownLabel } from "@/features/public-site/countdown";
-import { accessLastDay } from "@/features/public-site/content-summary";
 import { isEmailDeliveryAvailable } from "@/features/auth/email-delivery";
 
 type SignInPageProps = {
@@ -79,22 +78,23 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
   const signupOpen = emailSignIn && env.FEATURE_OPEN_SIGNUP;
 
   if (accountConfig && (!hybrid || params?.perfil === "1")) {
+    // In hybrid mode this page is reached through "Tenho um perfil com código": the profile form only.
+    const showEmail = emailSignIn && !hybrid;
     return (
-      <main className="auth-surface" aria-labelledby="signin-title">
+      <main className="auth-surface auth-entry" aria-labelledby="signin-title">
         <section className="auth-panel">
           <div className="auth-panel-header">
             <BrandLockup />
-            <p className="auth-kicker">Entrar</p>
           </div>
           <div className="auth-copy">
-            <h1 id="signin-title">{emailSignIn ? "Entrar no Estudisc" : "Entre no seu perfil"}</h1>
-            <p>{emailSignIn ? "Entre com o e-mail da sua conta. Mandamos um código de 6 dígitos; você não precisa de senha." : "Digite o nome do seu perfil e o código de 6 dígitos. Cada perfil guarda o próprio progresso."}</p>
+            <h1 id="signin-title">{showEmail ? "Entrar no Estudisc" : "Entre no seu perfil"}</h1>
+            <p>{showEmail ? "Entre com o e-mail da sua conta. Mandamos um código de 6 dígitos; você não precisa de senha." : "Digite o nome do seu perfil e o código de 6 dígitos. Cada perfil guarda o próprio progresso."}</p>
           </div>
-          {emailSignIn ? <EmailSignIn callbackUrl={callbackUrl} signupOpen={signupOpen} /> : null}
-          {signupOpen ? <p className="auth-alternate">Ainda não tem conta? <Link href="/auth/cadastro">Criar conta</Link></p> : null}
-          {emailSignIn ? <h2 className="auth-subtitle">Ou entre com seu perfil e código</h2> : null}
+          {showEmail ? <EmailSignIn callbackUrl={callbackUrl} signupOpen={signupOpen} /> : null}
+          {showEmail && signupOpen ? <p className="auth-alternate">Ainda não tem conta? <Link href="/auth/cadastro">Criar conta</Link></p> : null}
+          {showEmail ? <h2 className="auth-divider">ou com perfil e código</h2> : null}
           <AccountSignIn callbackUrl={callbackUrl} />
-          {hybrid ? <p className="auth-alternate"><Link href={withCallback({})}>Entrar com conta Google</Link></p> : null}
+          {hybrid ? <p className="auth-alternate"><Link href={withCallback({})}>Entrar com Google ou e-mail</Link></p> : null}
         </section>
         <LegalLinks />
       </main>
@@ -112,7 +112,7 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
   }
 
   return (
-    <main className="auth-surface auth-split" aria-labelledby="signin-title">
+    <main className="auth-surface auth-entry" aria-labelledby="signin-title">
       <section className="auth-panel">
         <div className="auth-panel-header">
 <BrandLockup />
@@ -120,9 +120,9 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
         </div>
 
         <div className="auth-copy">
-          <h1 id="signin-title">{env.FEATURE_PAID_ACCESS ? "Entre com sua conta Google" : "Escolha a conta Google"}</h1>
+          <h1 id="signin-title">{env.FEATURE_PAID_ACCESS ? "Entrar ou criar conta" : "Escolha a conta Google"}</h1>
           <p>{env.FEATURE_PAID_ACCESS
-            ? "Crie sua conta gratuita ou entre para continuar estudando. Ao continuar, você aceita os termos de uso e a política de privacidade."
+            ? "É grátis e já libera uma aula de cada matéria."
             : "Use somente o e-mail autorizado para abrir seu ambiente pessoal de aprendizado."}</p>
         </div>
 
@@ -137,35 +137,26 @@ export default async function SignInPage({ searchParams }: SignInPageProps) {
         <form action={signInWithGoogle} className="auth-actions">
           <GoogleSubmitButton />
         </form>
-        {emailSignIn ? <><h2 className="auth-subtitle">Ou entre com seu e-mail</h2><EmailSignIn callbackUrl={callbackUrl} signupOpen={signupOpen} /></> : null}
-        {signupOpen ? <p className="auth-alternate">Ainda não tem conta? <Link href="/auth/cadastro">Criar conta</Link></p> : null}
+        {emailSignIn ? <>
+          <h2 className="auth-divider">ou com seu e-mail</h2>
+          <EmailSignIn callbackUrl={callbackUrl} signupOpen={signupOpen} />
+          <p className="auth-note">Mandamos um código de 6 dígitos. Sem senha.{signupOpen ? <> Primeira vez com e-mail? <Link href="/auth/cadastro">Criar conta</Link></> : null}</p>
+        </> : null}
 
-        <p className="auth-note">{env.FEATURE_PAID_ACCESS ? "Use qualquer conta Google. A conta é grátis e já libera uma aula de cada matéria; o acesso completo é pago." : "Somente e-mails autorizados entram."}</p>
+        <p className="auth-note">{env.FEATURE_PAID_ACCESS
+          ? <>Ao continuar, você aceita os <Link href="/termos">Termos de uso</Link> e a <Link href="/privacidade">Política de privacidade</Link>.</>
+          : "Somente e-mails autorizados entram."}</p>
         {hybrid ? <p className="auth-alternate"><Link className="text-button" href={withCallback({ perfil: "1" })}>Tenho um perfil com código</Link></p> : null}
       </section>
-      <ExamCountdown />
       <LegalLinks />
     </main>
-  );
-}
-
-/** Real countdown to the exam day (the last day of paid access); hidden once the date has passed. */
-function ExamCountdown() {
-  const days = daysUntilExam();
-  if (days === null) return null;
-  return (
-    <aside className="auth-countdown" aria-label="Contagem para a prova">
-      <p className="auth-countdown-days"><strong>{days}</strong> <span>{days === 1 ? "dia" : "dias"}</span></p>
-      <p className="type-meta">{examCountdownLabel(days)} · {accessLastDay()}</p>
-      <p>Ao entrar, o Hoje mostra a próxima aula e o que voltou para revisão.</p>
-    </aside>
   );
 }
 
 function LegalLinks() {
   return (
     <nav className="auth-legal" aria-label="Informações legais">
-      <Link href="/conheca">Conheça o Estudisc</Link>
+      <Link href="/conheca">Conheça</Link>
       <Link href="/termos">Termos de uso</Link>
       <Link href="/privacidade">Privacidade</Link>
     </nav>

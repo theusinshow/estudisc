@@ -19,7 +19,7 @@ function cssTimeListToMs(value: string) {
 test("sign-in surface uses approved motion tokens for feedback and reveal", async ({ page }, testInfo) => {
   await page.goto("/auth/signin");
 
-  const button = page.getByRole("button", { name: "Continuar com Google" });
+  const button = page.getByRole("button", { name: "Continuar com o Google" });
   await expect(button).toBeVisible();
 
   const buttonMotion = await button.evaluate((element) => {
@@ -51,7 +51,7 @@ test("reduced motion keeps state visible without displacement choreography", asy
   const page = await context.newPage();
 
   await page.goto("/auth/signin");
-  const button = page.getByRole("button", { name: "Continuar com Google" });
+  const button = page.getByRole("button", { name: "Continuar com o Google" });
   await expect(button).toBeVisible();
 
   const reducedMotion = await button.evaluate((element) => {

@@ -77,19 +77,6 @@
 .receipt .public-price-value strong { font-stretch: var(--estudisc-typography-width-expanded); }
 .receipt .secondary-action { justify-self: start; }
 
-/* Sign-in: the form and a real countdown side by side on wide screens. */
-.auth-split { justify-items: center; align-content: center; gap: var(--estudisc-spacing-12); }
-@media (min-width: 1024px) {
-  .auth-split { grid-template-columns: minmax(0, 720px) minmax(0, 320px); justify-content: center; align-items: stretch; }
-  .auth-split > .auth-legal { grid-column: 1 / -1; }
-}
-.auth-split .auth-panel { box-shadow: var(--estudisc-elevation-surface-shadow); border-width: var(--estudisc-elevation-surface-border); }
-.auth-countdown { display: grid; align-content: start; gap: var(--estudisc-spacing-6); width: min(100%, 720px); padding: var(--estudisc-spacing-10) 0; border-top: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); }
-@media (min-width: 1024px) { .auth-countdown { padding: var(--estudisc-spacing-4) 0 0 var(--estudisc-spacing-12); border-top: 0; border-left: var(--estudisc-elevation-structure-border) solid var(--estudisc-color-ink); } }
-.auth-countdown p { margin: 0; }
-.auth-countdown-days { display: flex; align-items: baseline; gap: var(--estudisc-spacing-4); }
-.auth-countdown-days strong { font-size: var(--estudisc-typography-scale-hero); font-stretch: var(--estudisc-typography-width-expanded); font-weight: var(--estudisc-typography-display-weight); font-variant-numeric: tabular-nums; line-height: 0.9; }
-.auth-countdown-days span { font-family: var(--font-mono), "JetBrains Mono", ui-monospace, monospace; font-size: var(--estudisc-typography-scale-meta); }
 .auth-pending:empty { display: none; }
 .auth-pending { font-size: var(--estudisc-typography-scale-meta); }
 .auth-primary-action:disabled { cursor: progress; }

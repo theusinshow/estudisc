@@ -13,7 +13,8 @@ Owner decisions: change structure and copy (keep the vibrante visual); student-f
 Order: /conheca → /auth/signin → /auth/cadastro → paywall (/upgrade + FreePreviewHome) → /pais-e-escolas → termos/privacidade/suporte (polish).
 /conheca (approved): hero with countdown badge and short student headline + "Criar conta grátis"/"Já tenho conta"; "Tenta uma" sample question; "Como é estudar aqui" with 3 decorative app pieces (lesson card, hint, goal tower); compact 2×2 numbers; free sample lessons as subject chips; one price card with the required notes (no approval guarantee, official edital, minors buy through a guardian, link to /pais-e-escolas); two-column public footer. CTA destination stays /auth/signin until the login screen step decides it.
 Acceptance: no horizontal scroll at 390 and 320; h1 still names "prova do IFSC"; truthful price/refund/independence disclosures kept; e2e public-site spec passes; owner approves screenshots before push.
-NEXT ACTION: implement /conheca, screenshot 390/320, ask for push approval; then propose the login screen.
+/conheca live 2026-10-18 (e324eed). /auth/signin (approved): "Entrar ou criar conta", Google first (white, G mark), divider, full-width e-mail, one hint line, linked terms line, profile link last, countdown removed; the hybrid profile page shows only the profile form. Open question for the owner: Google sign-up skips the age/guardian/terms checks that e-mail sign-up asks (flow change, not visual).
+NEXT ACTION: push /auth/signin after approval; then propose /auth/cadastro.
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 

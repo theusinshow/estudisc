@@ -1,0 +1,34 @@
+/* /auth/signin and /auth/cadastro on the vibrante visual: one rounded sheet, full-width fields and
+   buttons, a single line of legal links. Base panel rules live in application/authentication.css. */
+
+.auth-entry { align-content: start; gap: 24px; padding: 24px 16px 32px; }
+@media (min-width: 768px) { .auth-entry { align-content: center; padding: 48px 24px; } }
+.auth-entry .auth-panel { width: min(100%, 480px); gap: 20px; padding: 24px 20px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); box-shadow: 6px 6px 0 var(--estudisc-color-ink); }
+.auth-entry .auth-panel:focus-within { box-shadow: 6px 6px 0 var(--estudisc-color-ink); }
+.auth-entry .auth-panel-header { padding-bottom: 0; border-bottom: 0; }
+.auth-entry .auth-copy { gap: 8px; }
+.auth-entry .auth-copy h1 { max-width: none; font-size: clamp(2rem, 9vw, 2.75rem); font-weight: 900; font-stretch: 125%; line-height: 1; text-wrap: balance; }
+.auth-entry .auth-copy p { font-size: 1.0625rem; line-height: 1.45; }
+
+.auth-entry .auth-actions { display: grid; }
+.auth-entry :is(.auth-primary-action, .auth-form .primary-button, .email-code-step > .primary-action) { width: 100%; }
+.auth-google-action svg { width: 22px; height: 22px; }
+
+.auth-divider { display: flex; align-items: center; gap: 12px; margin: 0; color: var(--estudisc-color-dim); font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.auth-divider::before, .auth-divider::after { content: ""; flex: 1; border-top: 2px solid var(--estudisc-color-ink); }
+
+.auth-entry .auth-form { justify-items: stretch; }
+.auth-entry .auth-form input { width: 100%; min-width: 0; }
+.auth-entry .auth-note { font-size: 0.875rem; }
+.auth-entry .auth-note a, .auth-entry .auth-alternate a { color: var(--estudisc-color-ink); font-weight: 800; text-underline-offset: 3px; }
+.auth-entry .auth-note a { display: inline; min-height: 0; }
+
+.auth-entry > .auth-legal { gap: 0 20px; padding-top: 0; }
+/* The status line stays in the tree for screen readers; it only stops reserving space while empty. */
+.auth-entry .account-code-message:empty { min-height: 0; margin-top: -12px; }
+.auth-entry .auth-alternate .text-button { padding-inline: 0; }
+.auth-entry .auth-actions .auth-google-action { padding-inline: 12px; gap: 8px; }
+@media (max-width: 360px) {
+  .auth-entry .auth-panel { padding: 20px 16px; }
+  .auth-entry .auth-actions .auth-google-action { font-size: 0.9375rem; }
+}

@@ -12,7 +12,7 @@ it("asks for the e-mail, then the 6-digit code, and offers sign-up when the inbo
   const user = userEvent.setup();
   render(<EmailSignIn callbackUrl="/" signupOpen />);
   await user.type(screen.getByRole("textbox", { name: "E-mail" }), "Ana@Example.com");
-  await user.click(screen.getByRole("button", { name: "Receber código por e-mail" }));
+  await user.click(screen.getByRole("button", { name: "Receber código" }));
   expect(await screen.findByText(/Código enviado para/)).toHaveTextContent("ana@example.com");
   expect(JSON.parse(fetch.mock.calls[0][1].body)).toEqual({ email: "Ana@Example.com", intent: "signin" });
   await user.keyboard("123456");

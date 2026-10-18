@@ -16,7 +16,7 @@ export function EmailSignIn({ callbackUrl, signupOpen }: Readonly<{ callbackUrl:
       <button type="button" className="text-link" onClick={() => setMissing(null)}>Tentar outro e-mail</button>
     </div>
   );
-  return <EmailCodeStep intent="signin" callbackUrl={callbackUrl} submitLabel="Receber código por e-mail" onNoAccount={setMissing} />;
+  return <EmailCodeStep intent="signin" callbackUrl={callbackUrl} submitLabel="Receber código" onNoAccount={setMissing} />;
 }
 
 /** Self-service sign-up (ADR 0068): name, age band with the guardian declaration, terms, then the e-mail code. */
