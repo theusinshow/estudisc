@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-18 — Practice blocks replace time-budget sessions (ADR 0072)
+
+- Revisão: "Revisar agora" and "Praticar este conceito" start a block of up to 5 Questions, one at a time ("2 de 5"), with "Próxima", then a summary ("3 de 5 sem ajuda", ✓/↺, "Mais 5", "Voltar"). Leaving and coming back resumes the block.
+- Erros: "Praticar este assunto" starts a block with other Questions of the Concept; the missed Question stays out.
+- No practice time choice anymore. "Sessão de N min", "Começar/Concluir sessão", the session chooser on Hoje, /plan (now redirects to Hoje), the weekly routine and the enhanced catalog are gone; old session links show a read-only summary.
+- Flags retired: FEATURE_STUDY_PLANNER, FEATURE_ADAPTIVE_SESSION, FEATURE_CONTINUOUS_STUDY (continuous study is always on). No migration.
+
 ## 2026-10-18 — New achievements and the remaining screens (F5 point 4)
 
 - Seven new badges, computed from the answers already recorded (retroactive, no XP, no mastery effect): Cinquentinha (50 right without help), Nível prova (5 IFSC/challenge right without help), Volta pelo edital (one right answer without help in each subject), Primeiro simulado (a finished simulado), Memória de elefante (5 delayed reviews right), Virada tripla (3 failed Questions later right without help) and Dez dias de estudo (answers on 10 different days). The album now has 13; rules documented in the gamification README; confidence is deliberately not rewarded.

@@ -16,7 +16,7 @@ Use Archivo for reading/interface and JetBrains Mono for technical metadata/code
 
 ## Layout
 
-Keep prose readable, with few containers and a central reading column on wider screens. Student mobile navigation defaults to Hoje, Aprender, Progresso, Mais. Under ADR 0040 and `FEATURE_STUDY_PLANNER`, it becomes Hoje, Plano, Aprender, Revisar, Progresso; secondary/account destinations move to the topbar Sheet. Flagged Focus keeps explicit exit/main/skip link while removing global navigation. Desktop expands the same study destinations. Canonical composition: `design-system/SCREEN_SPECS.md` and `design-system/RESPONSIVE.md`.
+Keep prose readable, with few containers and a central reading column on wider screens. Student mobile navigation defaults to Hoje, Aprender, Progresso, Mais. The planner variant of ADR 0040 (`FEATURE_STUDY_PLANNER`, with a Plano destination) was retired by ADR 0072. Flagged Focus keeps explicit exit/main/skip link while removing global navigation. Desktop expands the same study destinations. Canonical composition: `design-system/SCREEN_SPECS.md` and `design-system/RESPONSIVE.md`.
 
 ## Elevation & Depth
 
@@ -28,7 +28,7 @@ New learning surfaces use moderate canonical radii and 56px answer targets. Othe
 
 ## Components
 
-Reuse `design-system/COMPONENT_REGISTRY.md` and existing feature components. The shared AppShell owns TopBar/navigation/Focus; native Dialog/Sheet and keyboard Tabs provide the tested foundation. StudyActionCard and TodayPlan display authoritative reasons and real session facts. Flagged `/plan` now adds actual weekly routine onboarding, time/subject views, manual allocation and explicit preview/apply under ADR 0041. Tutor is contextual. Admin has denser editorial tools and existing permission boundaries. Programming Lab retains its approved technical controls.
+Reuse `design-system/COMPONENT_REGISTRY.md` and existing feature components. The shared AppShell owns TopBar/navigation/Focus; native Dialog/Sheet and keyboard Tabs provide the tested foundation. StudyActionCard displays authoritative reasons. Review and mistake practice run as blocks of up to five Questions, one at a time (`PracticeBlockButton`, `PracticeBlockStepper`, ADR 0072); `/plan`, the weekly routine (ADR 0041) and time-budget sessions are retired. Tutor is contextual. Admin has denser editorial tools and existing permission boundaries. Programming Lab retains its approved technical controls.
 
 ## Do's and Don'ts
 

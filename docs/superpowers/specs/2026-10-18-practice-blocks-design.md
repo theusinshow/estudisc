@@ -1,7 +1,7 @@
 # Practice blocks replace time-budget sessions — design
 
 Date: 2026-10-18
-Status: approved by the owner in conversation (sections 1–4), pending written-spec review
+Status: approved by the owner (2026-10-18); implemented by docs/superpowers/plans/2026-10-18-practice-blocks.md
 Decision record to write with the implementation: ADR 0072
 
 ## Why

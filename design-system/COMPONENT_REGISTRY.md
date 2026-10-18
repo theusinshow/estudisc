@@ -5,10 +5,12 @@ Search existing components/features before adding one. Status describes rollout/
 | Component / capability | Status | Source / consumer | Contract |
 |---|---|---|---|
 | Button / Input / Progress | FOUNDATION | Native controls; application CSS | Canonical tokens, focus and 44px targets; no redundant wrapper |
-| AppShell / TopBar / BottomNavigation | FOUNDATION | `src/components/layout/`; primary pages | Legacy default; five destinations under FEATURE_STUDY_PLANNER |
+| AppShell / TopBar / BottomNavigation | FOUNDATION | `src/components/layout/`; primary pages | Five destinations; the planner variant (FEATURE_STUDY_PLANNER) was retired by ADR 0072 |
 | FocusShell mode | EXPERIMENTAL | AppShell; lesson/ACTIVE study/assessment routes | Flagged; main/skip/exit preserved; exit does not change session status |
 | Dialog / Sheet | FOUNDATION | `src/components/ui/dialog.tsx`; topbar menu | Native modal, title, Escape, focus containment/return |
-| Tabs | FOUNDATION | `src/components/ui/tabs.tsx`; `/plan` | Manual activation, arrows/Home/End, Enter/Space, labeled panels |
+| Tabs | FOUNDATION | `src/components/ui/tabs.tsx`; design lab catalog | Manual activation, arrows/Home/End, Enter/Space, labeled panels |
+| PracticeBlockButton | ACTIVE | `src/features/study-sessions/practice-block-button.tsx`; `/review`, `/mistakes`, block summary | One native button starts or resumes a block of up to five Questions (ADR 0072); no time choice; alert with lesson or paywall link on failure |
+| PracticeBlockStepper | ACTIVE | `src/features/study-sessions/practice-block-stepper.tsx`; `/study/[sessionId]` | One Question at a time (`hidden` steps), "N de M" + native progress, "Próxima" after an Attempt, focus moves to the progress line, completes the block on the last Attempt |
 | SegmentedControl | EXPERIMENTAL | Not implemented | Add for a concrete routine-form need; prefer native radio semantics |
 | Reveal / CountUp / Motion | APPROVED | Existing motion components/screens | Canonical tokens and reduced motion; ClickSpark only on achievements (ADR 0067) |
 | Answer sheet / correction stamp | APPROVED | QuestionPanel, SampleQuestion; `caderno-study.css` | Bubble A–E over native radio (name = choice text), A–E/1–5 keys, live region before answer, stamp text+icon; ADR 0067 |
@@ -30,4 +32,4 @@ Search existing components/features before adding one. Status describes rollout/
 
 External sources are adopted for a concrete unmet need and retain Estudisc identity. shadcn, dnd-kit, React Flow and MapLibre are not blanket installation requirements.
 
-Phase 3 additions (EXPERIMENTAL/default-off): `RoutinePlanner` and `RoutineWeekView` in `src/features/study-sessions/`. They consume the shared native controls/Tabs, canonical tokens and authoritative routine DTO. Their budgets are planned time, never measured elapsed time or mastery.
+Retired by ADR 0072: `RoutinePlanner`, `RoutineWeekView`, `SessionControls`, `TargetedPracticeControls` (with the practice time pickers) and `TodayPlan`.
