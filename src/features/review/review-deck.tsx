@@ -2,7 +2,7 @@
 
 import { ChevronLeft, ChevronRight, Flame } from "lucide-react";
 import { useRef, useState, type PointerEvent } from "react";
-import { TargetedPracticeControls } from "@/features/study-sessions/targeted-practice-controls";
+import { PracticeBlockButton } from "@/features/study-sessions/practice-block-button";
 
 export type ReviewCard = Readonly<{ conceptId: string; title: string; reason: string; due: string; blindSpot: boolean }>;
 
@@ -38,8 +38,8 @@ export function ReviewDeck({ cards }: Readonly<{ cards: readonly ReviewCard[] }>
           <h2>{card.title}</h2>
           <p>{card.reason}</p>
           <small>{card.due}</small>
-          {/* The time is chosen once, above the deck (PracticeMinutesProvider); the card uses it. */}
-          <TargetedPracticeControls kind="review" conceptId={card.conceptId} label="Praticar este conceito" ariaLabel={`Praticar ${card.title}`} showTime={false} />
+          {/* ADR 0072: a block of up to five Questions of this Concept. */}
+          <PracticeBlockButton target={{ kind: "review", conceptId: card.conceptId }} label="Praticar este conceito" ariaLabel={`Praticar ${card.title}`} lessonHref={`/concepts/${card.conceptId}`} />
         </article>
       </div>
       <div className="review-deck-nav">

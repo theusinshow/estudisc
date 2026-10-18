@@ -149,9 +149,8 @@
   .today .next-card { transition: none; }
 }
 
-/* Erros (F5 point 4): one time picker above the subjects, a visible link back to the lessons and the
-   reflection disclosure as a rounded button instead of the old square caderno summary. */
-.practice-minutes-picker { max-width: 22rem; }
+/* Erros (F5 point 4): a visible link back to the lessons and the reflection disclosure as a rounded
+   button instead of the old square caderno summary. */
 .record-list.mistake-queue .mistake-review-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: var(--estudisc-color-ink); font-weight: 800; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .record-list.mistake-queue .mistake-review-link svg { width: 18px; height: 18px; }
 .record-list.mistake-queue .activity-technical-details { border: 0; background: none; padding: 0; }

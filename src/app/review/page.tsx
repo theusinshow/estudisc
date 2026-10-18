@@ -6,7 +6,7 @@ import { AppShell } from "@/components/layout/app-shell";
 import { completeConceptReview, getDueReviews } from "@/features/review/api";
 import { masteryStateLabels, type MasteryState } from "@/features/mastery/mastery-policy";
 import { getFeatureFlags } from "@/lib/feature-flags";
-import { PracticeMinutesProvider, TargetedPracticeControls } from "@/features/study-sessions/targeted-practice-controls";
+import { PracticeBlockButton } from "@/features/study-sessions/practice-block-button";
 import { studentConceptLabel } from "@/features/concepts/student-label";
 import { ReviewDeck } from "@/features/review/review-deck";
 
@@ -46,7 +46,7 @@ export default async function ReviewPage() {
             <small>
               {masteryStateLabels[review.currentMasteryState as MasteryState] ?? review.currentMasteryState} · {review.reviewCount === 1 ? "1 revisão" : `${review.reviewCount} revisões`}
             </small>
-            {enhanced?<TargetedPracticeControls kind="review" conceptId={review.conceptStableId} label={`Praticar ${studentConceptLabel(review.conceptTitle)}`} showTime={false}/>:<form action={completeReviewAction}>
+            {enhanced?<PracticeBlockButton target={{kind:"review",conceptId:review.conceptStableId}} label="Praticar este conceito" ariaLabel={`Praticar ${studentConceptLabel(review.conceptTitle)}`} variant="secondary" lessonHref={`/concepts/${review.conceptStableId}`}/>:<form action={completeReviewAction}>
               <input type="hidden" name="conceptId" value={review.conceptStableId} />
               <button className="secondary-action" type="submit"><Check aria-hidden="true" />Concluir revisão</button>
             </form>}
@@ -65,18 +65,18 @@ export default async function ReviewPage() {
         {dueReviews.length === 0 ? (
           <div className="empty-state">
             <strong>Nada para revisar hoje</strong>
-            <p>As revisões aparecem depois que você responde questões nas sessões de estudo.</p>
+            <p>As revisões aparecem depois que você responde questões nas aulas.</p>
             <Link className="primary-action" href="/">Ir para Hoje</Link>
           </div>
         ) : (
-          <PracticeMinutesProvider>
+          <>
             <div className="queue-head">
               <p className="queue-count"><strong>{dueReviews.length}</strong> <span>{dueReviews.length === 1 ? "conceito na fila" : "conceitos na fila"}</span></p>
-              {enhanced&&<TargetedPracticeControls kind="review" label="Começar revisão rápida"/>}
+              {enhanced&&<PracticeBlockButton target={{kind:"review"}} label="Revisar agora"/>}
             </div>
             {enhanced && <ReviewDeck cards={dueReviews.map(review => ({ conceptId: review.conceptStableId, title: studentConceptLabel(review.conceptTitle), reason: review.reason, due: deckDue(review.nextReviewAt), blindSpot: Boolean(review.blindSpot) }))} />}
             {enhanced ? <details className="review-list-toggle"><summary>Ver a fila em lista</summary>{list}</details> : list}
-          </PracticeMinutesProvider>
+          </>
         )}
       </section>
     </AppShell>

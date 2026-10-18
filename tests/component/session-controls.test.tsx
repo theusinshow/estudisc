@@ -1,7 +1,6 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, expect, it, vi } from "vitest";
 import { SessionControls } from "@/features/study-sessions/session-controls";
-import { TargetedPracticeControls } from "@/features/study-sessions/targeted-practice-controls";
 
 const navigation = vi.hoisted(() => ({ open: vi.fn() }));
 vi.mock("@/features/study-sessions/session-navigation", () => ({ openStudySession: navigation.open }));
@@ -47,12 +46,3 @@ it("rejects an invalid returned session ID without navigating", async () => {
   expect(screen.getByRole("button", { name: "Estudar 15 min" })).toBeEnabled();
 });
 
-it("opens targeted practice with the same pending document navigation", async () => {
-  vi.stubGlobal("fetch", vi.fn(async () => Response.json({ sessionId, status: "PLANNED" })));
-  render(<TargetedPracticeControls kind="review" />);
-  const button = screen.getByRole("button", { name: "Revisão rápida" });
-  fireEvent.click(button);
-  await waitFor(() => expect(navigation.open).toHaveBeenCalledWith(sessionId));
-  expect(screen.getByRole("status")).toHaveTextContent("Abrindo sessão");
-  expect(button).toBeDisabled();
-});
