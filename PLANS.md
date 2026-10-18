@@ -36,7 +36,11 @@ Revisão live 2026-10-18 (19fcdc7, Railway success). Provas (approved): display 
 Provas live 2026-10-18 (14679aa, Railway success). Você (approved; week start = Monday, the recommendation): shared Monday week for Hoje/heatmap, shorter recap preview, progress details card, grouped compact map list with plainer caveat, full-width e-mail on /conta. Local CSP console errors are dev-only (production public pages: 0).
 Você live 2026-10-18 (7d5fd11). Owner then asked: fix the broken test (done, b6f0694), review the remaining screens (Erros, Plano 404, Histórico, Conceito — approved) and add achievements (all 7 approved).
 Known pre-existing failure (planner flags only; fails on main before this batch): tests/e2e/session-navigation.spec.ts line 24 waits for "Começar sessão" on Hoje with the planner on. Planner is off in production.
-NEXT ACTION: push the test fix + remaining screens + achievements after approval.
+Test fix + remaining screens + 7 achievements live 2026-10-18 (b7ff5b4, Railway success).
+
+### Practice blocks replace time-budget sessions (2026-10-18, owner-approved design)
+Owner: the old planner/session flow is confusing; keep continuous lessons only; review and mistake practice become blocks of up to 5 Questions with a summary; approach 1 (same session engine underneath, new practice screen, planner and time budgets retired). Spec: docs/superpowers/specs/2026-10-18-practice-blocks-design.md (ADR 0072 to write with the implementation).
+NEXT ACTION: owner reviews the written spec; then write the implementation plan (writing-plans) and implement.
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 
