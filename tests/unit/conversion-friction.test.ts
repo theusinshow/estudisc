@@ -3,14 +3,14 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { getMemoryStore } from "@/db/repositories/memory/store";
 import { canAccessActivity, findActivityLessonStableIds } from "@/features/payments/activity-access";
 
-const mocks = vi.hoisted(() => ({ full: false, execute: vi.fn(), interact: vi.fn(), plan: vi.fn(), transition: vi.fn() }));
+const mocks = vi.hoisted(() => ({ full: false, execute: vi.fn(), interact: vi.fn(), startBlock: vi.fn(), transition: vi.fn() }));
 vi.mock("@/features/payments/access-guard", async (original) => ({
   ...(await original<object>()),
   resolveAccessState: async () => ({ hasFullAccess: mocks.full, source: mocks.full ? "mercadopago" : "free_preview", entitlement: null, sampleLessonIds: [] })
 }));
 vi.mock("@/features/auth/owner", async (original) => ({ ...(await original<object>()), getOwnerId: async () => "owner-free" }));
 vi.mock("@/features/ai/server", () => ({ executeLearningAi: mocks.execute }));
-vi.mock("@/features/study-sessions/api", () => ({ studySessionRepository: () => ({ plan: mocks.plan, transition: mocks.transition }) }));
+vi.mock("@/features/study-sessions/api", () => ({ studySessionRepository: () => ({ startBlock: mocks.startBlock, transition: mocks.transition }) }));
 vi.mock("@/db/repositories/memory-question-study-repository", () => ({ MemoryQuestionStudyRepository: class { interact = mocks.interact; } }));
 vi.mock("@/db/repositories/question-study-repository", async (original) => ({ ...(await original<object>()), QuestionStudyRepository: class { interact = mocks.interact; } }));
 
@@ -50,8 +50,8 @@ beforeEach(() => {
   seedTrack();
   mocks.execute.mockResolvedValue({ text: "Pista.", source: "ai", cached: false, assisted: true });
   mocks.interact.mockResolvedValue({ ok: true });
-  mocks.plan.mockResolvedValue({ id: "11111111-1111-4111-8111-111111111111", status: "PLANNED" });
-  mocks.transition.mockResolvedValue({ id: "11111111-1111-4111-8111-111111111111", status: "ACTIVE" });
+  mocks.startBlock.mockResolvedValue({ id: "11111111-1111-4111-8111-111111111111", status: "ACTIVE" });
+  mocks.transition.mockResolvedValue({ id: "11111111-1111-4111-8111-111111111111", status: "COMPLETED" });
 });
 
 describe("free preview gating (ADR 0061 §3)", () => {
@@ -75,15 +75,17 @@ describe("free preview gating (ADR 0061 §3)", () => {
     expect((await tutor(json("/api/tutor", legacy))).status).toBe(200);
   });
 
-  it("blocks planning new study sessions but still lets an existing session be started or closed", async () => {
-    for (const body of [{ action: "plan", budgetMinutes: 15 }]) {
-      const response = await studySessions(json("/api/study-sessions", body));
+  it("blocks starting a practice block but still lets an open one be completed", async () => {
+    vi.stubEnv("FEATURE_SMART_MISTAKES", "true");
+    for (const target of [{ kind: "review" }, { kind: "review", conceptId: "MAT.X" }]) {
+      const response = await studySessions(json("/api/study-sessions", { action: "practice_block", target }));
       expect(response.status).toBe(403);
     }
-    expect(mocks.plan).not.toHaveBeenCalled();
-    const start = await studySessions(json("/api/study-sessions", { action: "start", sessionId: "11111111-1111-4111-8111-111111111111" }));
-    expect(start.status).toBe(200);
+    expect(mocks.startBlock).not.toHaveBeenCalled();
+    const complete = await studySessions(json("/api/study-sessions", { action: "complete", sessionId: "11111111-1111-4111-8111-111111111111" }));
+    expect(complete.status).toBe(200);
     expect(mocks.transition).toHaveBeenCalled();
+    vi.unstubAllEnvs();
   });
 
   it("answers questions from free sample lessons and refuses the rest", async () => {
