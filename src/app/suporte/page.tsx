@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { LIFETIME_PRICE_BRL } from "@/features/payments/contracts";
 import { accessLastDay } from "@/features/public-site/content-summary";
 import { PublicLayout } from "@/features/public-site/public-layout";
@@ -22,7 +21,7 @@ function mailto(email: string, subject: string, body: string) {
 
 const faq: ReadonlyArray<{ topic: string; items: ReadonlyArray<{ q: string; a: string }> }> = [
   { topic: "Conta e acesso", items: [
-    { q: "Como eu entro?", a: "Com a sua conta Google. Não existe senha do Estudisc: se esquecer a senha, recupere pelo próprio Google." },
+    { q: "Como eu entro?", a: "Com a sua conta Google ou com o seu e-mail: mandamos um código de 6 dígitos. Não existe senha do Estudisc." },
     { q: "Preciso instalar algum aplicativo?", a: "Não. O Estudisc funciona no navegador do celular ou do computador. No celular, você pode usar a opção “Adicionar à tela inicial” do navegador para abrir mais rápido." },
     { q: "Posso dividir a conta com um amigo?", a: "Não. A conta é pessoal e guarda o seu progresso, seus erros e a sua revisão. Dividir mistura o histórico e é proibido pelos termos de uso." },
     { q: "O que dá para fazer sem pagar?", a: "Ver o catálogo, fazer o diagnóstico e estudar uma aula completa de cada matéria. Assim você conhece o Estudisc antes de comprar." }
@@ -30,7 +29,7 @@ const faq: ReadonlyArray<{ topic: string; items: ReadonlyArray<{ q: string; a: s
   { topic: "Pagamento", items: [
     { q: "Quanto custa e até quando vale?", a: `R$ ${LIFETIME_PRICE_BRL}, em pagamento único, com acesso completo até ${accessLastDay()}, o dia da prova. Não tem mensalidade nem renovação automática.` },
     { q: "Como posso pagar?", a: "Por Pix ou cartão, pelo Mercado Pago. Os dados do cartão ficam com o Mercado Pago; o Estudisc não os recebe." },
-    { q: "Paguei e o acesso não liberou. E agora?", a: "Pagamentos por Pix costumam liberar em poucos minutos; cartão pode levar um pouco mais. Atualize a página de acesso completo. Se passar de uma hora, escreva para a gente com o e-mail da sua conta Google e o comprovante." },
+    { q: "Paguei e o acesso não liberou. E agora?", a: "Pagamentos por Pix costumam liberar em poucos minutos; cartão pode levar um pouco mais. Atualize a página de acesso completo. Se passar de uma hora, escreva para a gente com o e-mail da sua conta e o comprovante." },
     { q: "Quem paga é meu responsável. Tem problema?", a: "Não, é o recomendado. Menores de 18 anos devem usar o Estudisc com autorização do responsável, e a compra pode ser feita por ele." }
   ] },
   { topic: "Reembolso", items: [
@@ -84,7 +83,7 @@ export default async function SuportePage({ searchParams }: SupportPageProps) {
         <h2 id="contato-title">Fale com a gente</h2>
         {seller ? (
           <>
-            <p>Respondemos por e-mail em até 2 dias úteis. Para assuntos de pagamento, informe o e-mail da sua conta Google.</p>
+            <p>Respondemos por e-mail em até 2 dias úteis. Para assuntos de pagamento, informe o e-mail da sua conta.</p>
             <a className="secondary-action" href={mailto(seller.email, "Suporte Estudisc", "")}>{seller.email}</a>
           </>
         ) : <p className="public-note">O canal de contato será publicado em breve.</p>}
@@ -102,10 +101,6 @@ export default async function SuportePage({ searchParams }: SupportPageProps) {
         </section>
       ))}
 
-      <section className="public-section" aria-labelledby="docs-title">
-        <h2 id="docs-title">Documentos</h2>
-        <p><Link href="/termos">Termos de uso</Link> · <Link href="/privacidade">Política de privacidade</Link></p>
-      </section>
     </PublicLayout>
   );
 }

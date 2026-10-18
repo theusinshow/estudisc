@@ -19,6 +19,8 @@
 - Paywall (/upgrade and locked lessons): "Tudo do Estudisc por R$ 50, até a prova" (or "Esta aula faz parte do acesso completo"), one price card with what is included and the 7-day refund right (shared `AccessFacts`), "Pagar R$ 50 com Pix ou cartão", the no-guarantee and guardian notices, free sample lessons as subject chips plus the Diagnostic, and the scholarship code behind "Tenho um código de bolsa ou convite". Checkout, sandbox and invite flows are unchanged.
 - Free-account Hoje (/ and /plan without full access) is laid out like Hoje: date and "Hoje", the first free lesson as the "Comece por aqui" card, the other subjects as "Ou escolha outra matéria", the Diagnostic link and a small "Acesso completo" card.
 - /pais-e-escolas uses the same vibrante pieces in the guardian's voice: kicker with the exam, short H1 "Um plano para a prova do IFSC que seu filho usa no celular" with the buy button, numbers 2×2, rounded sheets for following progress, safety and schools, the shared price card (`AccessFacts`) and the independence notices as fine print.
+- /termos and /privacidade: the legal text sits on a rounded reading sheet, the seller block is rounded, and a collapsed "Neste documento" index links to each numbered section (titles come from one list per page; no legal wording changed).
+- /suporte: rounded sheets; "Como eu entro?" now mentions the e-mail code next to Google, payment help asks for "o e-mail da sua conta", and the "Documentos" card (duplicate of the footer) is gone. Public sections on past-exam and 404 pages share the rounded sheet.
 
 ## 2026-10-18 — Review deck, lit concept map, goal tower and focus mode (ADR 0069, F5 point 3)
 

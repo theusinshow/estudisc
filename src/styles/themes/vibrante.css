@@ -189,3 +189,21 @@ html[data-theme="vibrante"] body .public-steps.ruled-sheet li::before { font-fam
 @keyframes knowledge-glow { 50% { box-shadow: 0 4px 0 var(--estudisc-color-ink), 0 0 0 11px rgba(142, 232, 166, 0.2); } }
 @keyframes knowledge-flow-dash { to { stroke-dashoffset: -28; } }
 @media (prefers-reduced-motion: reduce) { [data-theme="vibrante"] .knowledge-state-consolidated, [data-theme="vibrante"] .knowledge-flow-frame .react-flow__edge.knowledge-edge-lit path { animation: none; } }
+
+/* Public text pages (support, legal, past exams, 404): rounded sheets like the landing (F5 point 4). */
+[data-theme="vibrante"] .public-section { gap: 14px; padding: 18px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); box-shadow: 5px 5px 0 var(--estudisc-color-ink); }
+[data-theme="vibrante"] .public-main .public-section h2 { font-size: clamp(1.375rem, 6vw, 1.75rem); line-height: 1.15; }
+[data-theme="vibrante"] .public-faq details:last-child { border-bottom: 0; }
+[data-theme="vibrante"] .public-faq summary { min-height: 52px; }
+[data-theme="vibrante"] .public-seller { padding: 14px 16px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); }
+[data-theme="vibrante"] .public-legal h1 { font-size: clamp(2.25rem, 10vw, 3rem); font-weight: 900; font-stretch: 125%; line-height: 1; }
+[data-theme="vibrante"] .legal-sheet { display: grid; gap: 14px; padding: 20px 18px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 5px 5px 0 var(--estudisc-color-ink); }
+[data-theme="vibrante"] .legal-sheet h2 { margin: 12px 0 0; font-size: 1.1875rem; line-height: 1.25; scroll-margin-top: 16px; }
+[data-theme="vibrante"] .legal-sheet h2:first-child { margin-top: 0; }
+[data-theme="vibrante"] .legal-sheet :is(p, ul) { margin: 0; line-height: 1.55; }
+[data-theme="vibrante"] .legal-index { border-top: 3px solid var(--estudisc-color-ink); border-bottom: 3px solid var(--estudisc-color-ink); }
+[data-theme="vibrante"] .legal-index summary { display: flex; align-items: center; gap: 6px; min-height: 52px; font-weight: 800; cursor: pointer; }
+[data-theme="vibrante"] .legal-index summary span { color: var(--estudisc-color-dim); font-weight: 600; }
+[data-theme="vibrante"] .legal-index summary:focus-visible { outline: 3px solid var(--estudisc-color-ink); outline-offset: 2px; }
+[data-theme="vibrante"] .legal-index ol { display: grid; margin: 0; padding: 0 0 12px 22px; }
+[data-theme="vibrante"] .legal-index a { display: inline-flex; align-items: center; min-height: 40px; color: var(--estudisc-color-ink); font-weight: 700; text-underline-offset: 3px; }

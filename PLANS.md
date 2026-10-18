@@ -27,7 +27,8 @@ Acceptance: no horizontal scroll at 390 and 320; h1 still names "prova do IFSC";
 /auth/cadastro live 2026-10-18 (2b690e0). Paywall + free Hoje (approved): offer layout with shared `AccessFacts` (refund right on the paywall), subject-chip free lessons, invite code in a disclosure; free Hoje reuses the Hoje card/queue. Landing price list now uses `AccessFacts` (done with the SEO integration); the landing price/free/fine classes still live in landing.css.
 Paywall live 2026-10-18 (7e822fe, Railway success). SEO PR #61 integrated with the owner's headline/FAQ choices.
 /pais-e-escolas (approved): landing/offer pieces, short H1 with the exam in the kicker, shared price card.
-NEXT ACTION: push /pais-e-escolas after approval; then propose the polish of termos/privacidade/suporte (last public pages).
+/pais-e-escolas live 2026-10-18 (3a5eb36). termos/privacidade/suporte polish approved with the index (owner: "aprovo tudo, pode ir até o final"): reading sheet, LegalIndex, support copy fixes (e-mail sign-in), documents card removed.
+Public pages redo complete once this batch is live. NEXT ACTION: resume the in-app screen review (Hoje items 1–7 are with another agent's session; next in order: Estudar /tracks) after checking which Hoje fixes landed.
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 
