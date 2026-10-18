@@ -19,6 +19,8 @@ export function GoalTower({ answered, goal = DAILY_GOAL, decorative = false }: R
       </div>
       <div className="goal-tower-stack" role="img" aria-label={`${blocks} de ${goal} blocos empilhados`}>
         {Array.from({ length: blocks }, (_, index) => <span key={index} className="goal-block" />)}
+        {/* Dashed slots show how much of the goal is left. */}
+        {Array.from({ length: goal - blocks }, (_, index) => <span key={`slot-${index}`} className="goal-slot" />)}
         <span className="goal-tower-base">{Math.min(answered, 999)}/{goal}</span>
       </div>
     </section>

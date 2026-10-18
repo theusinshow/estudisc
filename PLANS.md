@@ -28,7 +28,8 @@ Acceptance: no horizontal scroll at 390 and 320; h1 still names "prova do IFSC";
 Paywall live 2026-10-18 (7e822fe, Railway success). SEO PR #61 integrated with the owner's headline/FAQ choices.
 /pais-e-escolas (approved): landing/offer pieces, short H1 with the exam in the kicker, shared price card.
 /pais-e-escolas live 2026-10-18 (3a5eb36). termos/privacidade/suporte polish approved with the index (owner: "aprovo tudo, pode ir até o final"): reading sheet, LegalIndex, support copy fixes (e-mail sign-in), documents card removed.
-Public pages redo complete once this batch is live. NEXT ACTION: resume the in-app screen review (Hoje items 1–7 are with another agent's session; next in order: Estudar /tracks) after checking which Hoje fixes landed.
+Public pages redo complete (d6f5ff5 live). No Hoje fixes had landed from another session; owner approved Hoje items 1, 3–7 together with Estudar (single-track redirect, compact progress, Hoje study card, subject bars, compact lesson rows).
+NEXT ACTION: push Estudar + Hoje after approval; then review one full lesson (MAT-07: activities, explorers, confidence picker, focus mode).
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-18 — Estudar and Hoje review fixes (F5 point 4)
+
+- Estudar: with a single published track, /tracks opens it directly (the catalog stays for several tracks and says "aulas", not "lições importadas"). The track page shows "N de M aulas concluídas" with a bar, the next lesson in the Hoje study card, one subject bar per module (chevron, "x de y aulas", progress; the next lesson's subject opens by itself) and compact lesson rows marked done/next/todo. Lesson lists are named "Aulas de …".
+- Hoje: the subject tab shows on the study card (the caderno top strip hid it), card titles break between words at a phone-sized font, the goal tower shows dashed slots for what is left, "Meta do dia" and "Sua semana · Ver progresso" stay on one line at 320 px, the "Continuar" tab label lines up with the others and the next-lesson copy is shorter.
+
 ## 2026-10-18 — SEO pass (PR, not deployed)
 
 - Public pages declare a self canonical and `index`; everything else is `noindex` by default (layout metadata) and `/api/*` sends `X-Robots-Tag: noindex`. The sitemap is generated from `INDEXABLE_PAGES` with lastmod.

@@ -56,6 +56,7 @@
 .goal-block:nth-child(4n + 4) { background: var(--estudisc-color-subject-accent-history-geography); }
 .goal-block:nth-child(2) { animation-delay: 60ms; } .goal-block:nth-child(3) { animation-delay: 120ms; } .goal-block:nth-child(4) { animation-delay: 180ms; } .goal-block:nth-child(5) { animation-delay: 240ms; }
 .goal-block:nth-child(6) { animation-delay: 300ms; } .goal-block:nth-child(7) { animation-delay: 360ms; } .goal-block:nth-child(8) { animation-delay: 420ms; } .goal-block:nth-child(9) { animation-delay: 480ms; } .goal-block:nth-child(10) { animation-delay: 540ms; }
+.goal-slot { width: 64px; height: 11px; border: 2px dashed color-mix(in srgb, var(--estudisc-color-ink) 45%, transparent); border-radius: 4px; }
 .goal-tower-base { order: -1; width: 88px; padding: 2px 0; border: 3px solid var(--estudisc-color-ink); border-radius: 8px; background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); font-weight: 900; text-align: center; }
 @keyframes goal-drop { from { transform: translateY(-120px); opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .goal-block { animation: none; } }

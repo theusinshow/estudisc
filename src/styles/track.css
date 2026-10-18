@@ -1,0 +1,48 @@
+/* /tracks/[trackId] (Estudar) on the vibrante visual: compact progress, the Hoje study card, one
+   subject bar per module with its progress, and compact lesson rows with a done/next/todo mark. */
+
+.track-page .study-action-card { margin: 0; }
+.track-progress { display: grid; gap: 8px; }
+.track-progress p { margin: 0; font-weight: 700; }
+.track-progress strong { font-size: 1.75rem; font-weight: 900; font-stretch: 125%; }
+
+.track-page progress { display: block; width: 100%; height: 12px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); overflow: hidden; appearance: none; }
+.track-page progress::-webkit-progress-bar { background: var(--estudisc-color-panel); }
+.track-page progress::-webkit-progress-value { background: var(--estudisc-color-subject-accent-science); }
+.track-page progress::-moz-progress-bar { background: var(--estudisc-color-subject-accent-science); }
+
+.track-done { margin: 0; padding: 14px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-surface-lime); }
+
+.track-modules { display: grid; gap: 12px; }
+.track-module { overflow: hidden; border: 3px solid var(--estudisc-color-ink); border-radius: 16px; background: var(--estudisc-color-panel); box-shadow: 4px 4px 0 var(--estudisc-color-ink); }
+.track-module summary { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px 12px; min-height: 64px; padding: 12px 14px 12px 28px; list-style: none; cursor: pointer; }
+.track-module summary::-webkit-details-marker { display: none; }
+.track-module summary::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 12px; border-right: 3px solid var(--estudisc-color-ink); background: var(--subject); }
+.track-module summary:focus-visible { outline: 3px solid var(--estudisc-color-ink); outline-offset: -6px; }
+.track-module-head { display: grid; gap: 2px; min-width: 0; }
+.track-page .track-module h2 { margin: 0; font-size: 1.25rem; line-height: 1.2; }
+.track-module-head small { color: var(--estudisc-color-dim); font-weight: 700; }
+.track-module summary > svg { width: 22px; height: 22px; stroke-width: 2.75; transition: transform 160ms var(--estudisc-motion-easing); }
+.track-module[open] summary > svg { transform: rotate(180deg); }
+.track-module summary progress { grid-column: 1 / -1; height: 8px; }
+.track-module summary progress::-webkit-progress-value { background: var(--subject); }
+.track-module summary progress::-moz-progress-bar { background: var(--subject); }
+.track-module[open] summary { border-bottom: 2px solid var(--estudisc-color-ink); }
+
+.track-lessons { margin: 0; padding: 0; list-style: none; }
+.track-lessons li + li { border-top: 2px solid color-mix(in srgb, var(--estudisc-color-ink) 15%, transparent); }
+.track-lessons a { display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 10px 14px; color: var(--estudisc-color-ink); text-decoration: none; }
+.track-lessons a:hover strong { text-decoration: underline; text-decoration-thickness: 2px; }
+.track-lessons a:focus-visible { outline: 3px solid var(--estudisc-color-ink); outline-offset: -4px; }
+.track-lessons a[data-state="next"] { background: color-mix(in srgb, var(--estudisc-color-signal) 30%, var(--estudisc-color-panel)); }
+.track-lesson-mark { display: grid; flex: none; place-items: center; width: 28px; height: 28px; border: 2px solid var(--estudisc-color-ink); border-radius: 50%; background: var(--estudisc-color-panel); }
+.track-lesson-mark svg { width: 16px; height: 16px; stroke-width: 3; }
+[data-state="done"] > .track-lesson-mark { background: var(--estudisc-color-surface-lime); }
+[data-state="next"] > .track-lesson-mark { background: var(--estudisc-color-signal); }
+[data-state="next"] > .track-lesson-mark svg { margin-left: 2px; fill: currentColor; }
+[data-state="todo"] > .track-lesson-mark { border-style: dashed; border-color: color-mix(in srgb, var(--estudisc-color-ink) 45%, transparent); }
+.track-lessons strong, .track-lessons small { display: block; }
+.track-lessons strong { font-weight: 800; line-height: 1.25; }
+.track-lessons small { color: var(--estudisc-color-dim); font-size: 0.8125rem; font-weight: 600; }
+
+@media (prefers-reduced-motion: reduce) { .track-module summary > svg { transition: none; } }

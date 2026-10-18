@@ -15,7 +15,7 @@ test("imports one new lesson version through existing UI, keeps collection size 
   const directory = join(process.cwd(), ".local/targeted-import-ui"); mkdirSync(directory, { recursive: true });
   await page.getByRole("status", { name: "Versão da aula importada." }).screenshot({ path: join(directory, `${testInfo.project.name}-import.png`) });
   await page.goto("/tracks/targeted-version-fixture");
-  await expect(page.getByRole("link", { name: /Porcentagem/ })).toHaveCount(1);
+  await expect(page.getByRole("list", { name: /^Aulas de / }).getByRole("link", { name: /Porcentagem/ })).toHaveCount(1);
   await page.goto("/lessons/MAT-07");
   await expect(page.getByText("Prévia administrativa · versão ainda não publicada.", { exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Ver tudo", exact: true }).click();

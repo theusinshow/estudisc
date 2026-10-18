@@ -45,3 +45,12 @@
 @media (prefers-reduced-motion: reduce) {
   .today-pulse a { transition: none; }
 }
+
+/* 320 px: "Meta do dia" and "Sua semana · Ver progresso" stay on one line each. */
+@media (max-width: 360px) {
+  .goal-tower { grid-template-columns: minmax(0, 1fr) 80px; gap: 12px; }
+  .goal-tower .goal-block, .goal-tower .goal-slot { width: 56px; }
+  .goal-tower .goal-tower-base { width: 76px; }
+  .today-week-head { flex-wrap: nowrap; }
+  .today-week-head a { flex: none; font-size: 0.875rem; white-space: nowrap; }
+}

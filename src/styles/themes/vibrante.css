@@ -175,7 +175,10 @@ html[data-theme="vibrante"] body .public-steps.ruled-sheet li::before { font-fam
 /* Today's action card: sticker card with the subject tab; one clear action. */
 [data-theme="vibrante"] .study-action-card { position: relative; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 5px 5px 0 var(--estudisc-color-ink); overflow: hidden; }
 [data-theme="vibrante"] .study-action-card[data-subject] { padding-left: 26px; }
-[data-theme="vibrante"] .study-action-card[data-subject]::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 12px; border-right: 3px solid var(--estudisc-color-ink); background: var(--subject); }
+/* height/margin/border resets: the caderno ".today .next-card::before" top strip would otherwise hide the tab. */
+[data-theme="vibrante"] .study-action-card[data-subject]::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 12px; height: auto; margin: 0; border: 0; border-right: 3px solid var(--estudisc-color-ink); border-radius: 0; background: var(--subject); }
+/* Card titles break between words; a word that cannot fit its own line still wraps. */
+[data-theme="vibrante"] .study-action-card strong { font-size: clamp(1.375rem, 6vw, 1.75rem); hyphens: manual; overflow-wrap: break-word; text-wrap: balance; }
 @media (prefers-reduced-motion: reduce) { [data-theme="vibrante"] .record-list li > a { transition: none; } }
 
 /* Concept map lighting (ADR 0069, lab 8.9): consolidated Concepts glow and light the link to what they unlock. */

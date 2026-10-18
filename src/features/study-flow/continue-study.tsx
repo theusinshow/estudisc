@@ -13,7 +13,7 @@ export function ContinueStudy({ next, bySubject }: Readonly<{ next: NextLesson |
       <h2 id="continue-title">Continuar estudando</h2>
       {next ? <StudyActionCard variant={next.resume ? "continue" : "lesson"} title={next.lesson.title}
         reason={next.resume ? `${subjectName(next.lesson.subjectCode)} · você parou no meio desta aula. Continue de onde parou.`
-          : `${subjectName(next.lesson.subjectCode)} · próxima aula. Faça no seu ritmo: se sair no meio, continua de onde parou.`}
+          : `Próxima aula de ${subjectName(next.lesson.subjectCode)}. Se sair no meio, volta de onde parou.`}
         href={`/lessons/${next.lesson.id}`} estimatedMinutes={next.lesson.estimatedMinutes} subjectCode={next.lesson.subjectCode} />
         : <p>Você terminou todas as aulas publicadas. Use Revisão e Erros para manter o que aprendeu.</p>}
     </section>

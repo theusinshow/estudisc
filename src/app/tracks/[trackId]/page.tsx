@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Check, ChevronDown, Play } from "lucide-react";
 
+import "@/styles/today.css";
+import "@/styles/track.css";
 import { AppShell } from "@/components/layout/app-shell";
 import { getTrackProgress } from "@/features/progress/api";
-import { ProgressSummary } from "@/features/progress/progress-summary";
 import { getTrack } from "@/features/tracks/api";
+import { StudyActionCard } from "@/features/today/study-action-card";
 
 type TrackPageProps = Readonly<{
   params: Promise<{ trackId: string }>;
@@ -22,50 +25,64 @@ export default async function TrackPage({ params }: TrackPageProps) {
   const completed = new Set(progress?.completedLessonStableIds ?? []);
   const nextLesson = lessons.find((lesson) => !completed.has(lesson.stableId));
   const started = completed.size > 0;
+  const nextModule = track.modules.find((module) => module.lessons.some((lesson) => lesson.stableId === nextLesson?.stableId));
+  // The subject of the next lesson opens by itself; with everything done, the first one.
+  const openModuleId = (nextModule ?? track.modules[0])?.stableId;
 
   return (
     <AppShell>
-      <section className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="track-title">
+      <section className="foundation-panel content-panel accent-panel accent-learn track-page" aria-labelledby="track-title">
         <p className="eyebrow">Trilha</p>
         <h1 id="track-title">{track.title}</h1>
         <p>{track.description}</p>
-        <ProgressSummary progress={progress} />
+        <div className="track-progress" aria-label="Progresso">
+          <p><strong>{completed.size}</strong> de {lessons.length} {lessons.length === 1 ? "aula concluída" : "aulas concluídas"}</p>
+          <progress value={completed.size} max={Math.max(lessons.length, 1)} aria-hidden="true" />
+        </div>
 
         {nextLesson ? (
-          <Link className="today-action study-next-action" href={`/lessons/${nextLesson.stableId}`}>
-            <strong>{started ? "Continuar pela próxima aula" : "Começar pela primeira aula"}</strong>
-            <span>{nextLesson.title}</span>
-          </Link>
+          // ".today" gives the card the same treatment as on Hoje (subject tab, yellow action bar).
+          <div className="today">
+            <StudyActionCard variant={started ? "continue" : "lesson"} title={nextLesson.title}
+              reason={`${started ? "Próxima aula" : "Primeira aula"} de ${nextModule?.title ?? track.title}.`}
+              href={`/lessons/${nextLesson.stableId}`} subjectCode={nextModule?.subjectCode ?? undefined} />
+          </div>
         ) : lessons.length ? (
-          <p className="today-action study-next-action">
-            <strong>Todas as aulas desta trilha foram concluídas</strong>
-            <span>Continue pelas revisões na tela Hoje.</span>
-          </p>
+          <p className="track-done"><strong>Todas as aulas desta trilha foram concluídas.</strong> Continue pelas revisões na tela Hoje.</p>
         ) : null}
 
-        <div className="module-stack" aria-label="Módulos da trilha">
-          {track.modules.map((module, moduleIndex) => (
-            <details key={module.stableId} className="module-section module-disclosure" data-subject={module.subjectCode ?? undefined} open={moduleIndex === 0}>
-              <summary aria-labelledby={`module-${module.stableId}`}>
-                <span className="technical-label">Módulo {moduleIndex + 1}</span>
-                <h2 id={`module-${module.stableId}`}>{module.title}</h2>
-                <span>{plural(module.lessons.length, "aula", "aulas")}</span>
-              </summary>
-              <ol className="record-list">
-                {module.lessons.map((lesson) => (
-                  <li key={lesson.stableId}>
-                    <Link href={`/lessons/${lesson.stableId}`} data-complete={completed.has(lesson.stableId) || undefined}>
-                      <strong>{lesson.title}</strong>
-                      <span>
-                        {completed.has(lesson.stableId) ? "Concluída · " : ""}
-                        {plural(lesson.activityCount, "atividade", "atividades")}
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ol>
-            </details>
-          ))}
+        <div className="track-modules" aria-label="Matérias da trilha">
+          {track.modules.map((module) => {
+            const done = module.lessons.filter((lesson) => completed.has(lesson.stableId)).length;
+            return (
+              <details key={module.stableId} className="track-module" data-subject={module.subjectCode ?? undefined} open={module.stableId === openModuleId}>
+                <summary>
+                  <span className="track-module-head">
+                    <h2 id={`module-${module.stableId}`}>{module.title}</h2>
+                    <small>{done} de {plural(module.lessons.length, "aula", "aulas")}</small>
+                  </span>
+                  <ChevronDown aria-hidden="true" />
+                  <progress value={done} max={Math.max(module.lessons.length, 1)} aria-hidden="true" />
+                </summary>
+                <ol className="track-lessons" aria-label={`Aulas de ${module.title}`}>
+                  {module.lessons.map((lesson) => {
+                    const state = completed.has(lesson.stableId) ? "done" : lesson.stableId === nextLesson?.stableId ? "next" : "todo";
+                    return (
+                      <li key={lesson.stableId}>
+                        <Link href={`/lessons/${lesson.stableId}`} data-state={state}>
+                          <span className="track-lesson-mark" aria-hidden="true">{state === "done" ? <Check /> : state === "next" ? <Play /> : null}</span>
+                          <span>
+                            <strong>{lesson.title}</strong>
+                            <small>{state === "done" ? "Concluída" : state === "next" ? "Próxima aula" : plural(lesson.activityCount, "atividade", "atividades")}</small>
+                          </span>
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </details>
+            );
+          })}
         </div>
       </section>
     </AppShell>

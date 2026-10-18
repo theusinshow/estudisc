@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
 import { AppShell } from "@/components/layout/app-shell";
 import { FirstRunCallout } from "@/components/ui/first-run-callout";
@@ -11,6 +12,8 @@ export const dynamic = "force-dynamic";
 export default async function TracksPage() {
   const tracks = await safeListTracks();
   const enhanced = getFeatureFlags().FEATURE_STUDY_PLANNER;
+  // One published track: "Estudar" opens it directly instead of a one-card catalog.
+  if (!enhanced && tracks.status === "ok" && tracks.items.length === 1) redirect(`/tracks/${encodeURIComponent(tracks.items[0]!.stableId)}`);
   const details = enhanced ? (await Promise.all(tracks.items.map(track=>getTrack(track.stableId)))).filter((track):track is NonNullable<typeof track>=>track!==null) : [];
 
   return (
@@ -32,7 +35,7 @@ export default async function TracksPage() {
                 <Link href={`/tracks/${track.stableId}`}>
                   <strong>{track.title}</strong>
                   <span>{track.description ?? "Sem descrição"}</span>
-                  <small>{track.lessonCount} {track.lessonCount === 1 ? "lição importada" : "lições importadas"}</small>
+                  <small>{track.lessonCount} {track.lessonCount === 1 ? "aula" : "aulas"}</small>
                 </Link>
               </li>
             ))}
