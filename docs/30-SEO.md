@@ -6,7 +6,7 @@ Last updated: 2026-10-18 (SEO pass, branch `feat/seo-20261018`).
 
 The product's main URL is **`/conheca`**. `/` cannot be the public home: for a signed-in student it is the study app (Hoje). A visitor without a session who opens `/` gets a **307** to `/conheca` from the proxy.
 
-`/` is not a 301/308 on purpose. Browsers cache permanent redirects, so a student who once opened `/` signed out would keep being sent to the sales page after signing in. The canonical on `/conheca` and the sitemap tell Google which URL to show; robots.txt allows `/$` so the crawler can follow the redirect.
+`/` is not a 301/308 on purpose. Browsers cache permanent redirects, so a student who once opened `/` signed out would keep being sent to the sales page after signing in. The canonical on `/conheca` and the sitemap tell Google which URL to show; robots.txt allows `/`, so the crawler can follow the redirect.
 
 ## How indexing is decided
 
@@ -30,9 +30,7 @@ The product's main URL is **`/conheca`**. `/` cannot be the public home: for a s
 
 ## robots.txt
 
-Current rules (unchanged, pending owner approval): `Disallow: /` plus `Allow` for `/$`, `/conheca`, `/termos`, `/privacidade`, `/suporte`, `/pais-e-escolas`.
-
-Proposal, to apply only after approval: allow by default and block only areas that are never useful to crawl.
+Approved by the owner on 2026-10-18 (replaces the former `Disallow: /` allowlist): allow by default and block only areas that are never useful to crawl.
 
 ```
 User-agent: *
@@ -49,7 +47,7 @@ Signed-in routes stay crawlable on purpose: for a crawler they redirect to the s
 1. Fill `PAST_EXAM_COMMENTED_QUESTIONS` in `src/features/public-site/past-exams.ts` with 3–5 published Question ids per year (only Questions that already exist in the product) and render them in `src/app/provas-anteriores/[ano]/page.tsx`.
 2. Remove `indexable: false` from both `/provas-anteriores` pages.
 3. Add `/provas-anteriores` to `INDEXABLE_PAGES`, and extend `src/app/sitemap.ts` with one entry per released year.
-4. Make sure robots.txt allows `/provas-anteriores` (the proposal above does; the current allowlist does not).
+4. robots.txt already allows `/provas-anteriores`.
 
 ## Measurement
 

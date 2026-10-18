@@ -3,15 +3,17 @@ import { siteUrl } from "@/features/public-site/site-url";
 
 export const dynamic = "force-dynamic";
 
-const ROBOTS_ALLOW = ["/$", "/conheca", "/termos", "/privacidade", "/suporte", "/pais-e-escolas"];
 
-/** Only the public sales, support and legal pages are meant for search engines; the study app requires sign-in.
- *  "/$" lets crawlers follow the home redirect to /conheca without opening any app route. */
+/**
+ * Crawl everything except the API and admin (approved by the owner on 2026-10-18, docs/30-SEO.md). Indexing is
+ * decided by noindex metadata, which crawlers can only honour on pages they may fetch; signed-in routes redirect
+ * to the noindex sign-in page. Never block a bare prefix that also matches a public page ("/provas" would block
+ * "/provas-anteriores").
+ */
 export default async function robots(): Promise<MetadataRoute.Robots> {
   const base = await siteUrl();
   return {
-    // Frozen on purpose (SEO pass 2026-10-18): changing these rules waits for the owner's approval of the route list.
-    rules: { userAgent: "*", allow: ROBOTS_ALLOW, disallow: ["/"] },
+    rules: { userAgent: "*", allow: "/", disallow: ["/api/", "/admin"] },
     sitemap: `${base}/sitemap.xml`
   };
 }

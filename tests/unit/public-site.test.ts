@@ -37,11 +37,13 @@ describe("hybrid sign-in (ADR 0061)", () => {
   });
 });
 
-it("lets crawlers reach the home redirect but keeps the app disallowed", async () => {
+it("lets crawlers fetch public and noindex pages and blocks only the API and admin", async () => {
   vi.doMock("@/features/public-site/site-url", () => ({ siteUrl: async () => "https://www.estudisc.com.br" }));
   const { default: robots } = await import("@/app/robots");
-  const rules = (await robots()).rules as { allow: string[]; disallow: string[] };
-  expect(rules.allow).toContain("/$");
-  expect(rules.allow).toContain("/conheca");
-  expect(rules.disallow).toEqual(["/"]);
+  const result = await robots();
+  expect(result.rules).toEqual({ userAgent: "*", allow: "/", disallow: ["/api/", "/admin"] });
+  expect(result.sitemap).toBe("https://www.estudisc.com.br/sitemap.xml");
+  const blocked = (path: string) => ["/api/", "/admin"].some(prefix => path.startsWith(prefix));
+  for (const path of ["/", "/conheca", "/provas-anteriores", "/provas-anteriores/2024", "/auth/signin"]) expect(blocked(path)).toBe(false);
+  for (const path of ["/api/health/db", "/admin/users"]) expect(blocked(path)).toBe(true);
 });
