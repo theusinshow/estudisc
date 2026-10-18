@@ -142,3 +142,15 @@
 .progress-next { display: flex; flex-wrap: wrap; align-items: center; gap: var(--estudisc-spacing-6) var(--estudisc-spacing-10); }
 .progress-details { margin-top: var(--estudisc-spacing-10); }
 .progress-details > summary { min-height: 44px; display: flex; align-items: center; font-weight: 800; cursor: pointer; }
+
+/* F5 point 4: tighter page rhythm and a visible "Ver detalhes" disclosure. */
+.progress-page { gap: var(--estudisc-spacing-12); }
+.progress-details { overflow: hidden; border: 3px solid var(--estudisc-color-ink); border-radius: 16px; background: var(--estudisc-color-panel); }
+.progress-details > summary { justify-content: space-between; gap: 12px; min-height: 56px; padding: 10px 14px; list-style: none; }
+.progress-details > summary::-webkit-details-marker { display: none; }
+.progress-details > summary::after { content: ""; flex: none; width: 10px; height: 10px; border-right: 3px solid var(--estudisc-color-ink); border-bottom: 3px solid var(--estudisc-color-ink); transform: rotate(45deg) translateY(-3px); }
+.progress-details[open] > summary { border-bottom: 2px solid var(--estudisc-color-ink); }
+.progress-details[open] > summary::after { transform: rotate(-135deg) translateY(-3px); }
+.progress-details > summary:focus-visible { outline: 3px solid var(--estudisc-color-ink); outline-offset: -6px; }
+.progress-details > :not(summary) { margin-inline: 14px; }
+.progress-details > :last-child { margin-bottom: 14px; }

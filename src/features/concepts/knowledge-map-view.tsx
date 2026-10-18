@@ -19,6 +19,8 @@ export function KnowledgeMapView({snapshot}:{snapshot:KnowledgeSnapshot}){
   const nodes=snapshot.nodes.filter(node=>area==="all"||node.areas.some(row=>row.id===area));
   const edges=snapshot.edges.filter(edge=>nodes.some(node=>node.id===edge.conceptId)&&nodes.some(node=>node.id===edge.prerequisiteId));
   const canvasNodes=nodes.slice(0,36),canvasEdges=edges.filter(edge=>canvasNodes.some(node=>node.id===edge.conceptId)&&canvasNodes.some(node=>node.id===edge.prerequisiteId));
+  // A Concept in several areas is listed under its first one, so each appears once.
+  const groups=[...nodes.reduce((map,node)=>{const first=node.areas[0]??{id:"outros",title:"Outros"};const group=map.get(first.id)??{id:first.id,title:first.title,nodes:[] as typeof nodes,started:0};group.nodes.push(node);if(node.state!=="unseen")group.started++;return map.set(first.id,group);},new Map<string,{id:string;title:string;nodes:typeof nodes;started:number}>()).values()].sort((a,b)=>a.title.localeCompare(b.title,"pt-BR"));
   const concept=snapshot.nodes.find(node=>node.id===selected);
   const related=concept?snapshot.edges.filter(edge=>edge.conceptId===concept.id):[];
   return <>
@@ -26,7 +28,15 @@ export function KnowledgeMapView({snapshot}:{snapshot:KnowledgeSnapshot}){
     <p>O domínio vem das respostas registradas. As relações mostram pré-requisitos declarados em cada trilha.</p>
     {showMap&&<><p>Mapa de {canvasNodes.length} conceitos desta seleção. A lista abaixo reúne todos os {nodes.length} conceitos.</p><CanvasFallback key={area}><Flow concepts={canvasNodes} edges={canvasEdges} onSelect={select}/></CanvasFallback></>}
     {snapshot.caveats.map(note=><p className="learning-hint" key={note}>{note}</p>)}
-    <ol className="record-list" aria-label="Conceitos por área">{nodes.map(node=><li key={node.id}><div className={`knowledge-list-node knowledge-state-${node.state}`}><button type="button" className="knowledge-concept-button" disabled={!ready} onClick={()=>select(node.id)}>{node.title}</button><span>{labels[node.state]} · {node.masteryLabel}</span><small>{countLabel(node.evidenceCount,"evidência registrada","evidências registradas")} · {countLabel(node.lessons.length,"aula publicada","aulas publicadas")}</small><Link href={`/concepts/${encodeURIComponent(node.id)}`}>Ver conceito e aulas</Link></div></li>)}</ol>
+    {/* Grouped by area (all closed: the student opens a subject), one compact row per Concept. */}
+    <ol className="knowledge-groups" aria-label="Conceitos por área">{groups.map(group=><li key={group.id}><details className="knowledge-group">
+      <summary><span><strong>{group.title}</strong><small>{countLabel(group.nodes.length,"conceito","conceitos")}{group.started>0?` · ${countLabel(group.started,"praticado","praticados")}`:""}</small></span></summary>
+      <ul aria-label={`Conceitos de ${group.title}`}>{group.nodes.map(node=><li key={node.id} className="knowledge-list-node">
+        <span className={`knowledge-dot knowledge-state-${node.state}`} aria-hidden="true" />
+        <span className="knowledge-row-text"><button type="button" className="knowledge-concept-button" disabled={!ready} onClick={()=>select(node.id)}>{node.title}</button><small>{node.state==="unseen"?labels.unseen:`${labels[node.state]} · ${node.masteryLabel}`} · {countLabel(node.lessons.length,"aula","aulas")}</small></span>
+        <Link href={`/concepts/${encodeURIComponent(node.id)}`} aria-label={`Ver conceito e aulas: ${studentConceptLabel(node.title)}`}>Ver</Link>
+      </li>)}</ul>
+    </details></li>)}</ol>
     {nodes.length===0&&<p>Nenhum conceito publicado nesta área.</p>}
     <Sheet open={Boolean(concept)} title={concept?studentConceptLabel(concept.title):"Detalhes do conceito"} onClose={()=>setSelected(null)}>{concept&&<><p>{concept.summary??"Este conceito ainda não tem resumo."}</p><p><strong>{concept.masteryLabel}</strong> · {countLabel(concept.evidenceCount,"resposta","respostas")}</p>{concept.reasons.map(reason=><p key={reason}>{reason}</p>)}{concept.reviewAt&&<Link className="primary-action" href="/review">Abrir revisões previstas</Link>}<h3>Relações curriculares</h3>{related.length===0?<p>Nenhuma relação importada para este conceito.</p>:<ul>{related.map(edge=><li key={edge.id}><Link href={`/concepts/${encodeURIComponent(edge.prerequisiteId)}`}>{snapshot.nodes.find(node=>node.id===edge.prerequisiteId)?.title??edge.prerequisiteId}</Link> · {edge.strength==="required"?"Obrigatório":"Recomendado"} · {edge.trackTitle}{edge.strength==="required"&&<p>{edge.ready?"Nível Entendido ou superior já registrado neste pré-requisito.":"O planejamento de uma aula completa considera este pré-requisito antes de avançar."}</p>}</li>)}</ul>}<h3>Aulas publicadas</h3><ul>{concept.lessons.map(lesson=><li key={JSON.stringify([lesson.id,lesson.trackTitle])}><Link href={`/lessons/${encodeURIComponent(lesson.id)}`}>{lesson.title}</Link> · {lesson.trackTitle}</li>)}</ul></>}</Sheet>
   </>;

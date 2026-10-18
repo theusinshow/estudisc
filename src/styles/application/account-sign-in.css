@@ -53,3 +53,7 @@
 .account-facts div { display: flex; flex-wrap: wrap; gap: var(--estudisc-spacing-4); }
 .account-facts dt { font-weight: 800; min-width: 5rem; }
 .account-facts dd { margin: 0; }
+/* Linking an e-mail on /conta: full-width field and button, like the sign-in sheet (F5 point 4). */
+.main-surface .auth-form { justify-items: stretch; max-width: 480px; }
+.main-surface .auth-form input { width: 100%; min-width: 0; }
+.main-surface .auth-form .primary-button { width: 100%; }

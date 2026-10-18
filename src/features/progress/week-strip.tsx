@@ -15,7 +15,7 @@ function dayState(day: ActivityDay) {
   return day.isToday ? "hoje, ainda sem estudo" : "sem estudo";
 }
 
-/** Current week, Sunday first. Studied days are marked; missed days stay neutral — nothing to lose. */
+/** Current week, Monday first (same week as the weekly achievement). Studied days are marked; missed days stay neutral — nothing to lose. */
 export function WeekStrip({ days }: Readonly<{ days: readonly ActivityDay[] }>) {
   const ref = useRef<HTMLOListElement>(null);
 

@@ -120,7 +120,10 @@ export function buildProgressOverview({ concepts: listed, evidence, now, timeZon
   };
 }
 
-/** Sunday-aligned day grid ending on the current week, so each heatmap row is one weekday. */
+/**
+ * Monday-aligned day grid ending on the current week, so each heatmap row is one weekday. Monday to Sunday is
+ * the same week as the weekly achievement (gamification-rules buildStudyWeek), so a Sunday counts once.
+ */
 function buildActivity(eventDates: readonly Date[], now: Date, timeZone: string, weeks: number) {
   const keyOf = new Intl.DateTimeFormat("en-CA", { timeZone, year: "numeric", month: "2-digit", day: "2-digit" });
   const counts = new Map<string, number>();
@@ -132,7 +135,7 @@ function buildActivity(eventDates: readonly Date[], now: Date, timeZone: string,
   const todayKey = keyOf.format(now);
   const today = new Date(`${todayKey}T00:00:00Z`);
   const start = new Date(today);
-  start.setUTCDate(today.getUTCDate() - today.getUTCDay() - (weeks - 1) * 7);
+  start.setUTCDate(today.getUTCDate() - ((today.getUTCDay() + 6) % 7) - (weeks - 1) * 7);
 
   const days: ActivityDay[] = [];
   for (let cursor = new Date(start); days.length < weeks * 7; cursor.setUTCDate(cursor.getUTCDate() + 1)) {

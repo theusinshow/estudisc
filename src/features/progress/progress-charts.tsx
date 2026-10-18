@@ -38,6 +38,7 @@ export function RhythmChart({ days }: Readonly<{ days: readonly ActivityDay[] }>
     <ActivityHeatmapChart
       data={data}
       weeks={Math.ceil(days.length / 7)}
+      dayLabels={["Seg", "", "Qua", "", "Sex", "", ""]}
       months={monthMarks(days)}
       title="Dias com estudo nas últimas semanas"
       valueFormatter={studyCount}

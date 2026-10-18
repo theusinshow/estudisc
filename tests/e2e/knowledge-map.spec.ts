@@ -8,6 +8,8 @@ test("loads a read-only map on demand with an accessible list and keyboard/touch
   const fixture=reviewMistakeFixture();fixture.packId+=".knowledge";fixture.track.id+="-knowledge";expect((await request.post("/api/import/track",{data:fixture})).ok()).toBe(true);
   const loaded:string[]=[];page.on("request",r=>{if(r.url().includes("knowledge-flow"))loaded.push(r.url());});
   await page.goto("/knowledge-map");await expect(page.getByRole("list",{name:"Conceitos por área"})).toBeVisible();expect(loaded).toHaveLength(0);
+  // Areas start closed: open the first one, then use its first Concept.
+  await page.getByRole("list",{name:"Conceitos por área"}).locator("summary").first().click();
   const first=page.getByRole("list",{name:"Conceitos por área"}).getByRole("button").first();
   // The list is server-rendered with disabled buttons until hydration; press() does not wait for enabled.
   await expect(first).toBeEnabled();await first.press("Enter");await expect(page.getByRole("dialog")).toBeVisible();await page.keyboard.press("Escape");await expect(page.getByRole("dialog")).not.toBeVisible();

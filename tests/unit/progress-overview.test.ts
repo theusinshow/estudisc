@@ -101,18 +101,18 @@ describe("buildProgressOverview", () => {
     expect(math).toMatchObject({ conceptCount: 2, practicedCount: 1, averageLevel: 1 });
   });
 
-  it("counts study days in the São Paulo calendar on a Sunday-aligned grid without future days", () => {
+  it("counts study days in the São Paulo calendar on a Monday-aligned grid without future days", () => {
     // 02:00Z on Oct 1 is still Sep 30 in São Paulo.
     const answers = [new Date("2026-10-01T02:00:00Z"), new Date("2026-09-30T20:00:00Z"), new Date("2026-10-01T13:00:00Z"), new Date("2026-08-01T12:00:00Z")]
       .map((date, index) => ({ ...evidence("fractions", date, `q${index}`), attemptId: `a${index}` }));
     const overview = buildProgressOverview({ concepts: [], evidence: answers, now });
 
-    expect(overview.activity[0].weekday).toBe(0);
+    expect(overview.activity[0].weekday).toBe(1);
     expect(overview.activity.at(-1)).toMatchObject({ date: "2026-10-01", isToday: true, count: 1 });
     expect(overview.activity.find((day) => day.date === "2026-09-30")?.count).toBe(2);
     expect(overview.activeDaysLast28).toBe(2);
-    expect(overview.week.map((day) => day.date)).toEqual(["2026-09-27", "2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03"]);
-    expect(overview.week.filter((day) => day.isFuture)).toHaveLength(2);
+    expect(overview.week.map((day) => day.date)).toEqual(["2026-09-28", "2026-09-29", "2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03", "2026-10-04"]);
+    expect(overview.week.filter((day) => day.isFuture)).toHaveLength(3);
     expect(overview.activeDaysThisWeek).toBe(2);
     expect(overview.streakDays).toBe(2);
   });
@@ -124,5 +124,15 @@ describe("buildProgressOverview", () => {
     expect(overview.activeDaysThisWeek).toBe(gamification.week.activeDays);
     // 09-30 02:00Z is still 09-29 in São Paulo, so 09-30 has no answer and the streak restarts on 10-01.
     expect(overview.streakDays).toBe(1);
+  });
+
+  it("puts a Sunday in the same week as Hoje and the weekly achievement (Monday to Sunday)", () => {
+    const sunday = new Date("2026-10-04T15:00:00Z");
+    const answers = ["2026-09-28T15:00:00Z", "2026-10-04T13:00:00Z", "2026-09-27T15:00:00Z"].map((iso, index) => ({ ...evidence("fractions", new Date(iso), `q${index}`), attemptId: `a${index}` }));
+    const overview = buildProgressOverview({ concepts: [], evidence: answers, now: sunday });
+    const gamification = buildGamificationSummary({ xp: { totalXp: 0, transactions: [] } as never, dueReviews: [], mistakes: [], evidence: answers, now: sunday });
+    expect(overview.week.at(-1)).toMatchObject({ date: "2026-10-04", isToday: true });
+    expect(overview.activeDaysThisWeek).toBe(2);
+    expect(overview.activeDaysThisWeek).toBe(gamification.week.activeDays);
   });
 });

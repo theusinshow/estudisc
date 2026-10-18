@@ -33,7 +33,8 @@ Estudar + Hoje live 2026-10-18 (d938c43, Railway success). Lesson review (approv
 Known pre-existing failure (flag-gated, fails on main too): tests/e2e/interactive-blocks.spec.ts "Relacione os locais" still clicks the old matching UI (tap-to-place since 62f07f6).
 Lesson batch live 2026-10-18 (999d101, Railway success). Revisão (approved): shorter intro, one time choice, card button "Praticar este conceito", "Para revisar…" meta, shorter hint. The local memory 404 on answers came only from the golden seed content; the MAT-07 build answers fine.
 Revisão live 2026-10-18 (19fcdc7, Railway success). Provas (approved): display title, countdown note, counts on hub cards, pill year filter, compact past-exam cards with visible official links, plurals, focus mode for active simulados. Past exams previewed locally from scripts/build-past-exam-templates.ts output posted to memory://local (.local/import-past.mjs).
-NEXT ACTION: push Provas after approval; then Você (/voce, progress, map, achievements, account).
+Provas live 2026-10-18 (14679aa, Railway success). Você (approved; week start = Monday, the recommendation): shared Monday week for Hoje/heatmap, shorter recap preview, progress details card, grouped compact map list with plainer caveat, full-width e-mail on /conta. Local CSP console errors are dev-only (production public pages: 0).
+NEXT ACTION: push Você after approval. In-app screen review then complete (Hoje → Estudar → aula → Revisão → Provas → Você); ask the owner what to review next.
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-18 — Você screens (F5 point 4)
+
+- One study week, Monday to Sunday, everywhere: Hoje's "Sua semana" and the progress heatmap now use the week of the weekly achievement, so a Sunday counts in the same week for both (owner took the recommendation; the reward rule is unchanged). Test added for the Sunday boundary.
+- /voce: the weekly recap preview is half as tall (the posted story image keeps its 9:16 size).
+- /progress: "Ver detalhes do progresso" is a card with a chevron, and the page rhythm is tighter.
+- /knowledge-map: the list under the interactive map groups Concepts by area in closed disclosures ("106 conceitos · 5 praticados"), one compact row per Concept with a state dot, a single status label and "1 aula"; the caveat now reads "As ligações entre conceitos vêm do currículo do Estudisc, não de um mapeamento oficial do IFSC."
+- /conta: the e-mail field and button to link an e-mail are full width.
+
 ## 2026-10-18 — Provas screens (F5 point 4)
 
 - /provas: the tab title has the Hoje display size (also on Você), the countdown board gains "até 29/11, dia da prova" (it counts to midnight of the exam day; the landing counts calendar days), and the cards name their counts ("3 simulados completos", "11 provas, de 2022 a 2026").

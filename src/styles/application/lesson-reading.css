@@ -122,3 +122,23 @@
 .authoring-mobile-preview { width: min(100%,390px); margin-block: var(--estudisc-spacing-8); }
 .authoring-mobile-preview iframe { width: 100%; height: 700px; border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }
 
+
+/* Knowledge map list (F5 point 4): one disclosure per area, compact rows with a state dot. */
+.knowledge-groups { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.knowledge-group { overflow: hidden; border: 3px solid var(--estudisc-color-ink); border-radius: 16px; background: var(--estudisc-color-panel); }
+.knowledge-group summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; padding: 10px 14px; cursor: pointer; list-style: none; }
+.knowledge-group summary::-webkit-details-marker { display: none; }
+.knowledge-group summary::after { content: ""; flex: none; width: 10px; height: 10px; border-right: 3px solid var(--estudisc-color-ink); border-bottom: 3px solid var(--estudisc-color-ink); transform: rotate(45deg) translateY(-3px); }
+.knowledge-group[open] summary::after { transform: rotate(-135deg) translateY(-3px); }
+.knowledge-group summary:focus-visible { outline: 3px solid var(--estudisc-color-ink); outline-offset: -6px; }
+.knowledge-group summary span { display: grid; gap: 2px; }
+.knowledge-group summary small { color: var(--estudisc-color-dim); font-weight: 700; }
+.knowledge-group[open] summary { border-bottom: 2px solid var(--estudisc-color-ink); }
+.knowledge-group ul { margin: 0; padding: 0; list-style: none; }
+.knowledge-group .knowledge-list-node { display: flex; align-items: center; gap: 10px; padding: 6px 14px; border: 0; border-radius: 0; background: none; box-shadow: none; }
+.knowledge-group .knowledge-list-node + .knowledge-list-node { border-top: 2px solid color-mix(in srgb, var(--estudisc-color-ink) 15%, transparent); }
+.knowledge-dot { flex: none; width: 16px; height: 16px; border: 2px solid var(--estudisc-color-ink); border-radius: 50%; }
+.knowledge-row-text { display: grid; flex: 1 1 auto; min-width: 0; }
+.knowledge-group .knowledge-concept-button { min-height: 36px; padding: 0; background: none; text-align: left; font-weight: 800; }
+.knowledge-row-text small { color: var(--estudisc-color-dim); font-size: 0.8125rem; }
+.knowledge-group .knowledge-list-node > a { flex: none; min-height: 44px; padding: 0 4px; font-weight: 800; }
