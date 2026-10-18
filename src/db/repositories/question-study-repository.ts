@@ -1,3 +1,4 @@
+import { BLIND_SPOT_SUMMARY, countsAsIndependent, isBlindSpot, type Confidence } from "@/features/review/confidence";
 import { and, count, desc, eq, inArray, sql } from "drizzle-orm";
 import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 import type * as schema from "@/db/schema";
@@ -85,7 +86,7 @@ export class QuestionStudyRepository {
         assistance:{hintLevel:opened?.hintLevel??0,hint:ctx.config.hints[(opened?.hintLevel??0)-1]??"",solutionRevealed:Boolean(opened?.solutionRevealed),explanation:opened?.solutionRevealed?ctx.question.explanation:undefined}};
     });
   }
-  async interact(ownerId:string,activity:string,input:{questionId:string;questionVersion:number;action:"submit"|"hint"|"solution";submissionKey:string;response:unknown;sessionId?:string}) {
+  async interact(ownerId:string,activity:string,input:{questionId:string;questionVersion:number;action:"submit"|"hint"|"solution";submissionKey:string;response:unknown;sessionId?:string;confidence?:Confidence}) {
     return this.db.transaction(async tx=>{
       await tx.insert(owners).values({id:ownerId,displayName:"Private learner"}).onConflictDoNothing();
       await tx.select().from(owners).where(eq(owners.id,ownerId)).for("update");
@@ -117,7 +118,9 @@ export class QuestionStudyRepository {
       const [number]=await tx.select({value:count()}).from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.activityId,ctx.activity.id)));
       const [failed]=await tx.select({value:count()}).from(attempts).where(and(eq(attempts.ownerId,ownerId),eq(attempts.outcome,"failed"),sql`${attempts.context}->>'questionId' = ${ctx.question.id}`));
       const now=new Date();
-      const conditions={policyVersion:MASTERY_V2,outcome:evaluation.outcome,difficulty:ctx.question.difficulty,mode:"learn",hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed===1,questionId:ctx.question.id,questionVersion:ctx.question.version,contextKey:ctx.contextKey};
+      const conditions={policyVersion:MASTERY_V2,outcome:evaluation.outcome,difficulty:ctx.question.difficulty,mode:"learn",hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed===1,questionId:ctx.question.id,questionVersion:ctx.question.version,contextKey:ctx.contextKey,...(input.confidence?{confidence:input.confidence}:{})};
+      // ADR 0071: a correct guess is not independent for spacing or closing mistakes; mastery strength is unchanged.
+      const independent=countsAsIndependent({hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed===1,confidence:input.confidence});
       const [attempt]=await tx.insert(attempts).values({ownerId,activityId:ctx.activity.id,attemptNumber:number.value+1,response:{answer:input.response},outcome:evaluation.outcome,output:evaluation,evaluatorVersion:QUESTION_EVALUATOR_VERSION,submissionKey:input.submissionKey,questionVersionId:ctx.versionId,context:conditions}).returning();
       // Atomic with the Attempt, once per stable Question across versions/activities/sessions.
       // Full XP only for a first-try independent answer; a recovery after a mistake or hint earns a smaller, distinct reward.
@@ -143,13 +146,13 @@ export class QuestionStudyRepository {
         await tx.insert(conceptEvidence).values({ownerId,conceptId:concept.id,attemptId:attempt.id,type:"question_result",strength,sourceType:"question_attempt",sourceId:attempt.id,conditions:event});
         const [previousReview]=await tx.select().from(reviewSchedules).where(and(eq(reviewSchedules.ownerId,ownerId),eq(reviewSchedules.conceptId,concept.id)));
         const stage=previousReview?.policyVersion===REVIEW_V2?Number((previousReview.metadata as Record<string,unknown>).stage??0):0;
-        const scheduled=delayedRetrieval?scheduleReviewV2({correct:evaluation.correct,independent:!assistance.hintLevel&&!assistance.solutionRevealed,stage,reviewedAt:now}):{stage:0,stabilityDays:1,nextReviewAt:new Date(now.getTime()+86400000),policyVersion:REVIEW_V2};
+        const scheduled=delayedRetrieval?scheduleReviewV2({correct:evaluation.correct,independent,stage,reviewedAt:now}):{stage:0,stabilityDays:1,nextReviewAt:new Date(now.getTime()+86400000),policyVersion:REVIEW_V2};
         // A wrong answer makes the Concept reviewable right away; a correct one keeps the spaced schedule.
         const schedule=evaluation.correct?scheduled:{...scheduled,nextReviewAt:now};
         await tx.insert(reviewSchedules).values({ownerId,conceptId:concept.id,currentMasteryState:evaluation.correct?"understood":"introduced",nextReviewAt:schedule.nextReviewAt,recentQuality:evaluation.correct?3:1,policyVersion:REVIEW_V2,metadata:{stage:schedule.stage,stabilityDays:schedule.stabilityDays}}).onConflictDoUpdate({target:[reviewSchedules.ownerId,reviewSchedules.conceptId],set:{nextReviewAt:schedule.nextReviewAt,lastReviewedAt:delayedRetrieval?now:previousReview?.lastReviewedAt,reviewCount:delayedRetrieval?sql`${reviewSchedules.reviewCount}+1`:sql`${reviewSchedules.reviewCount}`,recentQuality:evaluation.correct?3:1,policyVersion:REVIEW_V2,metadata:{stage:schedule.stage,stabilityDays:schedule.stabilityDays},updatedAt:now}});
         // An independent correct answer closes the Concept's open mistakes (history is kept with resolvedAt).
-        if(evaluation.correct&&!assistance.hintLevel&&!assistance.solutionRevealed)await tx.update(mistakes).set({status:"resolved",resolvedAt:now}).where(and(eq(mistakes.ownerId,ownerId),eq(mistakes.conceptId,concept.id),eq(mistakes.status,"active")));
-        if(!evaluation.correct)await tx.insert(mistakes).values({ownerId,conceptId:concept.id,attemptId:attempt.id,category:ctx.question.type==="numeric"?"CALCULATION":"INTERPRETATION",summary:"Rever o raciocínio desta questão."});
+        if(evaluation.correct&&independent)await tx.update(mistakes).set({status:"resolved",resolvedAt:now}).where(and(eq(mistakes.ownerId,ownerId),eq(mistakes.conceptId,concept.id),eq(mistakes.status,"active")));
+        if(!evaluation.correct)await tx.insert(mistakes).values({ownerId,conceptId:concept.id,attemptId:attempt.id,category:ctx.question.type==="numeric"?"CALCULATION":"INTERPRETATION",summary:isBlindSpot(false,input.confidence)?BLIND_SPOT_SUMMARY:"Rever o raciocínio desta questão."});
       }
       await tx.insert(studyEvents).values({ownerId,type:"activity_submitted",entityType:"activity",entityId:ctx.activity.stableId,payload:{attemptId:attempt.id,outcome:evaluation.outcome,sessionId:input.sessionId??null}});
       // The first wrong answer explains the chosen option only, so a retry still counts as independent evidence; the second opens the solution.

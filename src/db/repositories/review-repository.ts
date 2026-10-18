@@ -4,7 +4,8 @@ import { and, asc, eq, lte, or, sql } from "drizzle-orm";
 import type { PgDatabase, PgQueryResultHKT } from "drizzle-orm/pg-core";
 
 import { getDatabase } from "@/db/connection";
-import { conceptEvidence, concepts, mistakes, owners, reviewSchedules, studyEvents } from "@/db/schema";
+import { attempts, conceptEvidence, concepts, mistakes, owners, reviewSchedules, studyEvents } from "@/db/schema";
+import { BLIND_SPOT_REASON } from "@/features/review/confidence";
 import type * as schema from "@/db/schema";
 import {
   calculateNextReviewAt,
@@ -23,8 +24,15 @@ export type DueReview = Readonly<{
   reviewCount: number;
   recentQuality: number;
   hasActiveMistake?: boolean;
+  /** ADR 0071: an active mistake answered with "Tenho certeza". */
+  blindSpot?: boolean;
   reason: string;
 }>;
+
+/** ADR 0071: an active mistake whose Attempt was answered with confidence "sure" (a blind spot). */
+function activeBlindSpotExists(ownerId: string) {
+  return sql<boolean>`exists (select 1 from ${mistakes} join ${attempts} on ${attempts.id} = ${mistakes.attemptId} where ${mistakes.ownerId} = ${ownerId} and ${mistakes.conceptId} = ${reviewSchedules.conceptId} and ${mistakes.status} = 'active' and ${attempts.context}->>'confidence' = 'sure')`;
+}
 
 /** True when the owner has an unresolved mistake for the review row's Concept. */
 function activeMistakeExists(ownerId: string) {
@@ -50,18 +58,21 @@ export class ReviewRepository {
         nextReviewAt: reviewSchedules.nextReviewAt,
         reviewCount: reviewSchedules.reviewCount,
         recentQuality: reviewSchedules.recentQuality,
-        hasActiveMistake: activeMistakeExists(ownerId)
+        hasActiveMistake: activeMistakeExists(ownerId),
+        blindSpot: activeBlindSpotExists(ownerId)
       })
       .from(reviewSchedules)
       .innerJoin(concepts, eq(concepts.id, reviewSchedules.conceptId))
       // Pending = scheduled review that is due, or any Concept with an active mistake (one source for Today, /review and Progress).
       .where(and(eq(reviewSchedules.ownerId, ownerId), or(lte(reviewSchedules.nextReviewAt, now), activeMistakeExists(ownerId))))
-      .orderBy(asc(reviewSchedules.nextReviewAt), asc(concepts.title));
+      // Blind spots lead the queue; then the usual due order.
+      .orderBy(sql`${activeBlindSpotExists(ownerId)} desc`, asc(reviewSchedules.nextReviewAt), asc(concepts.title));
 
-    return rows.map(({ hasActiveMistake, ...row }) => ({
+    return rows.map(({ hasActiveMistake, blindSpot, ...row }) => ({
       ...row,
       hasActiveMistake: Boolean(hasActiveMistake),
-      reason: hasActiveMistake ? "Você errou uma questão deste conceito. Praticar agora ajuda a fixar." : explainDueReview(row.nextReviewAt, now)
+      blindSpot: Boolean(blindSpot),
+      reason: blindSpot ? BLIND_SPOT_REASON : hasActiveMistake ? "Você errou uma questão deste conceito. Praticar agora ajuda a fixar." : explainDueReview(row.nextReviewAt, now)
     }));
   }
 

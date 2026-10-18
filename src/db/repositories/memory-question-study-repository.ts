@@ -1,3 +1,4 @@
+import { BLIND_SPOT_SUMMARY, countsAsIndependent, isBlindSpot } from "@/features/review/confidence";
 import { getMemoryStore } from "./memory-store";
 import { QuestionUnavailableError, SubmissionConflictError, type QuestionStudyRepository } from "./question-study-repository";
 import { questionSchema } from "@/features/questions/contracts";
@@ -72,7 +73,8 @@ export class MemoryQuestionStudyRepository {
     const evaluation=evaluateQuestion(ctx.question,input.response); if(!evaluation.evidenceEligible)throw new QuestionUnavailableError();
     const id=crypto.randomUUID();const now=new Date();
     const failedBefore=this.store.attempts.filter(item=>item.ownerId===ownerId&&item.outcome==="failed"&&(item.context as Record<string,unknown>|undefined)?.questionId===ctx.question.id).length;
-    const conditions={policyVersion:MASTERY_V2,outcome:evaluation.outcome,hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed,difficulty:ctx.question.difficulty,mode:"learn",questionId:ctx.question.id,questionVersion:ctx.question.version,contextKey:ctx.contextKey};
+    const conditions={policyVersion:MASTERY_V2,outcome:evaluation.outcome,hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed,difficulty:ctx.question.difficulty,mode:"learn",questionId:ctx.question.id,questionVersion:ctx.question.version,contextKey:ctx.contextKey,...(input.confidence?{confidence:input.confidence}:{})};
+    const independent=countsAsIndependent({hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed,confidence:input.confidence});
     this.store.attempts.push({id,ownerId,activityStableId:activityId,attemptNumber:this.store.attempts.filter(item=>item.ownerId===ownerId&&item.activityStableId===activityId).length+1,outcome:evaluation.correct?"passed":"failed",source:JSON.stringify(input.response),response:input.response,submissionKey:input.submissionKey,context:conditions,createdAt:now,tests:[],output:{status:"completed",stdout:[],stderr:[],result:null,runtimeVersion:"question.v1",limits:{timeoutMs:0,outputLimit:0},capabilities:{dom:false,network:false,ambientSecrets:false}}});
     for(const conceptStableId of ctx.question.conceptIds){
       const history=this.store.conceptEvidence.filter(item=>item.ownerId===ownerId&&item.conceptStableId===conceptStableId);
@@ -81,13 +83,13 @@ export class MemoryQuestionStudyRepository {
       const mode=delayedRetrieval?"review" as const:"learn" as const;
       this.store.conceptEvidence.push({id:crypto.randomUUID(),ownerId,conceptStableId,attemptId:id,type:"question_result",strength:evidenceStrengthV2({correct:evaluation.correct,difficulty:ctx.question.difficulty,mode,hintLevel:assistance.hintLevel,solutionRevealed:assistance.solutionRevealed,questionId:ctx.question.id,delayedRetrieval,transfer,createdAt:now}),sourceType:"question_attempt",sourceId:id,conditions:{...conditions,mode,delayedRetrieval,transfer},createdAt:now});
       const review=this.store.reviewSchedules.find(item=>item.ownerId===ownerId&&item.conceptStableId===conceptStableId);
-      const scheduled=delayedRetrieval?scheduleReviewV2({correct:evaluation.correct,independent:!assistance.hintLevel&&!assistance.solutionRevealed,stage:review?.metadata?.stage??0,reviewedAt:now}):{stage:0,stabilityDays:1,nextReviewAt:new Date(now.getTime()+86400000),policyVersion:REVIEW_V2};
+      const scheduled=delayedRetrieval?scheduleReviewV2({correct:evaluation.correct,independent,stage:review?.metadata?.stage??0,reviewedAt:now}):{stage:0,stabilityDays:1,nextReviewAt:new Date(now.getTime()+86400000),policyVersion:REVIEW_V2};
       // Same rule as the SQL repository: a wrong answer is reviewable now; a correct one keeps the spaced schedule.
       const schedule=evaluation.correct?scheduled:{...scheduled,nextReviewAt:now};
       if(review){review.nextReviewAt=schedule.nextReviewAt;review.policyVersion=REVIEW_V2;review.metadata={stage:schedule.stage,stabilityDays:schedule.stabilityDays};if(delayedRetrieval){review.lastReviewedAt=now;review.reviewCount++;}}
       else this.store.reviewSchedules.push({ownerId,conceptStableId,currentMasteryState:evaluation.correct?"understood":"introduced",lastReviewedAt:null,nextReviewAt:schedule.nextReviewAt,reviewCount:0,recentQuality:evaluation.correct?3:1,policyVersion:REVIEW_V2,updatedAt:now,metadata:{stage:schedule.stage,stabilityDays:schedule.stabilityDays}});
-      if(evaluation.correct&&!assistance.hintLevel&&!assistance.solutionRevealed)for(const mistake of this.store.mistakes)if(mistake.ownerId===ownerId&&mistake.conceptStableId===conceptStableId&&mistake.status==="active"){mistake.status="resolved";mistake.resolvedAt=now;}
-      if(!evaluation.correct)this.store.mistakes.push({id:crypto.randomUUID(),ownerId,conceptStableId,attemptId:id,category:ctx.question.type==="numeric"?"CALCULATION":"INTERPRETATION",summary:"Rever o raciocínio desta questão.",status:"active",createdAt:now,resolvedAt:null});
+      if(evaluation.correct&&independent)for(const mistake of this.store.mistakes)if(mistake.ownerId===ownerId&&mistake.conceptStableId===conceptStableId&&mistake.status==="active"){mistake.status="resolved";mistake.resolvedAt=now;}
+      if(!evaluation.correct)this.store.mistakes.push({id:crypto.randomUUID(),ownerId,conceptStableId,attemptId:id,category:ctx.question.type==="numeric"?"CALCULATION":"INTERPRETATION",summary:isBlindSpot(false,input.confidence)?BLIND_SPOT_SUMMARY:"Rever o raciocínio desta questão.",status:"active",createdAt:now,resolvedAt:null});
     }
     let xpAwarded = 0;
     let reward = questionReward(conditions, failedBefore);

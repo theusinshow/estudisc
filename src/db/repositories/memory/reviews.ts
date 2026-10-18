@@ -2,6 +2,7 @@ import type { CompletedReview, DueReview } from "@/db/repositories/review-reposi
 import type { MistakeRecord } from "@/db/repositories/mistake-repository";
 import { calculateNextReviewAt, explainDueReview, REVIEW_POLICY_VERSION, type ReviewQuality } from "@/features/review/review-policy";
 import { getMemoryStore } from './store';
+import { BLIND_SPOT_REASON } from "@/features/review/confidence";
 import { randomUUID } from "node:crypto";
 import { mistakeReflectionPayloadSchema, mistakeReflectionSchema, type MistakeReflection, type MistakeReflectionInput } from "@/features/mistakes/reflection-contracts";
 
@@ -12,9 +13,10 @@ export class MemoryReviewRepository {
   async listDueReviews(ownerId: string, now = new Date()): Promise<DueReview[]> {
     // Same rule as ReviewRepository: due by schedule, or the Concept has an active mistake.
     const withMistake = (conceptStableId: string) => this.store.mistakes.some((mistake) => mistake.ownerId === ownerId && mistake.conceptStableId === conceptStableId && mistake.status === "active");
+    const blindSpot = (conceptStableId: string) => this.store.mistakes.some((mistake) => mistake.ownerId === ownerId && mistake.conceptStableId === conceptStableId && mistake.status === "active" && (this.store.attempts.find((attempt) => attempt.id === mistake.attemptId)?.context as Record<string, unknown> | undefined)?.confidence === "sure");
     return this.store.reviewSchedules
       .filter((schedule) => schedule.ownerId === ownerId && (schedule.nextReviewAt.getTime() <= now.getTime() || withMistake(schedule.conceptStableId)))
-      .sort((left, right) => left.nextReviewAt.getTime() - right.nextReviewAt.getTime())
+      .sort((left, right) => Number(blindSpot(right.conceptStableId)) - Number(blindSpot(left.conceptStableId)) || left.nextReviewAt.getTime() - right.nextReviewAt.getTime())
       .map((schedule) => {
         const concept = this.store.concepts.find((entry) => entry.stableId === schedule.conceptStableId);
 
@@ -26,7 +28,8 @@ export class MemoryReviewRepository {
           reviewCount: schedule.reviewCount,
           recentQuality: schedule.recentQuality,
           hasActiveMistake: withMistake(schedule.conceptStableId),
-          reason: withMistake(schedule.conceptStableId) ? "Você errou uma questão deste conceito. Praticar agora ajuda a fixar." : explainDueReview(schedule.nextReviewAt, now)
+          blindSpot: blindSpot(schedule.conceptStableId),
+          reason: blindSpot(schedule.conceptStableId) ? BLIND_SPOT_REASON : withMistake(schedule.conceptStableId) ? "Você errou uma questão deste conceito. Praticar agora ajuda a fixar." : explainDueReview(schedule.nextReviewAt, now)
         };
       });
   }

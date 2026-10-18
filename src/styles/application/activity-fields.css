@@ -125,3 +125,13 @@
 .zone strong { font-size: 0.875rem; line-height: 1.2; }
 .zone small { font-size: 0.75rem; }
 @media (min-width: 560px) { .zone-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* Confidence check (ADR 0071): optional, three pills before submitting. */
+.learning-interaction .confidence-picker { display: grid; gap: var(--estudisc-spacing-4); min-width: 0; margin: 0; padding: 0; border: 0; }
+.confidence-picker legend { padding: 0; margin-bottom: var(--estudisc-spacing-4); font-weight: 700; }
+.confidence-picker legend span { color: var(--estudisc-color-dim); font-weight: 500; }
+.confidence-levels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--estudisc-spacing-4); }
+.confidence-picker .confidence-level { min-height: 44px; padding: 4px 6px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); font: inherit; font-size: 0.875rem; font-weight: 700; line-height: 1.15; box-shadow: none; transform: none; }
+.confidence-picker .confidence-level[aria-pressed="true"] { background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); }
+.confidence-picker .confidence-level[data-level="guess"][aria-pressed="true"] { background: #FFC2B5; color: var(--estudisc-color-ink); }
+.confidence-note { font-weight: 700; }

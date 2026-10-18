@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-17 — Confidence check (ADR 0071)
+
+- Lesson and review questions offer an optional "Quanto você tem certeza?" (Tenho certeza · Acho que sim · Chutei) before submitting. The value is stored in the Attempt context and in the evidence conditions; no migration.
+- A correct guess no longer counts as independent: the review stage does not advance and the Concept's open mistakes stay open. A confident error is a blind spot: it leads the review queue (Today, /review and Progress) with its own reason. Mastery strength, XP and exams are unchanged.
+- A short calibration line follows the result (for example, "Ponto cego encontrado…").
+
 ## 2026-10-17 — Model explorers in lessons (ADR 0070, F5 stage B)
 
 - Four new `numeric-explorer` modes, exploration only (no Attempt, evidence or score): `percent-grid` (paint a 10×10 grid, same value as %, /100 and decimal), `number-line` (place a value such as 3/4 on a divided line), `balance` (remove equal weights from both sides, divide, try values of x) and `time-zones` (move the UTC hour and see local times, day/night and date change). Touch and keyboard, no inline styles, reduced motion respected.

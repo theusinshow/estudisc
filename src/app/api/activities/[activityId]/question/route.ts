@@ -6,8 +6,9 @@ import { MemoryQuestionStudyRepository } from "@/db/repositories/memory-question
 import { AccessDeniedError, getOwnerId } from "@/features/auth/owner";
 import { resolveAccessState } from "@/features/payments/access-guard";
 import { canAccessActivity, paidAccessRequiredResponse } from "@/features/payments/activity-access";
+import { confidenceSchema } from "@/features/review/confidence";
 export const runtime="nodejs";export const dynamic="force-dynamic";
-const requestSchema=z.object({questionId:z.string().min(1).max(160),questionVersion:z.number().int().positive(),action:z.enum(["submit","hint","solution"]),submissionKey:z.uuid(),response:z.json(),sessionId:z.uuid().optional()}).strict();
+const requestSchema=z.object({questionId:z.string().min(1).max(160),questionVersion:z.number().int().positive(),action:z.enum(["submit","hint","solution"]),submissionKey:z.uuid(),response:z.json(),sessionId:z.uuid().optional(),confidence:confidenceSchema.optional()}).strict();
 export async function POST(request:Request,{params}:{params:Promise<{activityId:string}>}){
   if(Number(request.headers.get("content-length")??0)>20000)return NextResponse.json({code:"too_large"},{status:413});
   const raw=await request.text();if(raw.length>20000)return NextResponse.json({code:"too_large"},{status:413});

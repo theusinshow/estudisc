@@ -16,6 +16,8 @@ import { draftResponseMatches } from "@/features/lessons/resume-policy";
 import { useFeedbackSignals } from "@/features/study-tools/feedback-signals";
 import { ReadAloudButton } from "@/features/study-tools/read-aloud";
 import { ScratchpadToggle } from "@/features/study-tools/scratchpad";
+import type { Confidence } from "@/features/review/confidence";
+import { ConfidencePicker, confidenceNote } from "@/features/review/confidence-picker";
 
 type Feedback={correct:boolean;explanation?:string;attemptId?:string;xpAwarded?:number;reward?:"first_try"|"assisted";choiceFeedback?:string;itemResults?:ItemResult[];solutionShown?:boolean;answerKey?:AnswerKey};
 /** Ordering marks are by position; matching and classification marks are by item. */
@@ -41,13 +43,15 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
     const revealed=assistance?.solutionRevealed?{correct:false,explanation:assistance.explanation}:null;
     return draft?revealed:lastAttempt??revealed;
   }); const [error,setError]=useState("");
+  // ADR 0071: optional confidence, sent with the next submission only; the note below the result uses what was sent.
+  const [confidence,setConfidence]=useState<Confidence|null>(null); const [sentConfidence,setSentConfidence]=useState<Confidence|null>(null);
   async function send(action:"submit"|"hint"|"solution") {
     setBusy(true);setError("");
     try {
-      const result=await fetch(`/api/activities/${encodeURIComponent(activityStableId)}/question`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({questionId:question.id,questionVersion:question.version,action,response,submissionKey:key,sessionId})});
+      const result=await fetch(`/api/activities/${encodeURIComponent(activityStableId)}/question`,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({questionId:question.id,questionVersion:question.version,action,response,submissionKey:key,sessionId,...(action==="submit"&&confidence?{confidence}:{})})});
       if(!result.ok)throw new Error("Não foi possível registrar. Sua resposta foi preservada; tente novamente.");
       const body=await result.json();
-      if(action==="hint"){setHintLevel(body.hintLevel);setHint(body.hint??"");setHintOpen(true);} else {setFeedback(body);if(body.attemptId){setBaseAttemptId(body.attemptId);resume?.setDraft(undefined,activityStableId);window.dispatchEvent(new CustomEvent<AttemptRecordedDetail>(ATTEMPT_RECORDED_EVENT,{detail:{questionId:question.id,stem:question.stem,correct:body.correct===true}}));}}
+      if(action==="hint"){setHintLevel(body.hintLevel);setHint(body.hint??"");setHintOpen(true);} else {setFeedback(body);if(body.attemptId){setSentConfidence(action==="submit"?confidence:null);setConfidence(null);setBaseAttemptId(body.attemptId);resume?.setDraft(undefined,activityStableId);window.dispatchEvent(new CustomEvent<AttemptRecordedDetail>(ATTEMPT_RECORDED_EVENT,{detail:{questionId:question.id,stem:question.stem,correct:body.correct===true}}));}}
     } catch(error) {setError(error instanceof Error?error.message:"Falha ao registrar resposta.");} finally {setBusy(false);}
   }
   // Answer-sheet keys: A–E or 1–5 mark a choice while focus is inside this question (never inside a text field).
@@ -66,7 +70,7 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
   return <section className="learning-interaction question-sheet" aria-labelledby={`${id}-title`} onKeyDown={pickByKey}>{question.stimulus&&<div className="question-stimulus"><Paragraphs text={question.stimulus}/></div>}{stem.body&&<div className="question-stem-body"><Paragraphs text={stem.body}/></div>}<h3 id={`${id}-title`}><MathText text={stem.question}/></h3>
     <ReadAloudButton text={[question.stimulus,stem.body,stem.question].filter(Boolean).join(". ")} label="Ouvir a questão"/>
     <QuestionAssets assets={question.assets}/>
-    <form onSubmit={event=>{event.preventDefault();void send("submit");}}><ResponseFields id={id} question={question} response={response} disabled={busy} review={reviewOf(question,feedback)} onChange={value=>{const submissionKey=crypto.randomUUID();setResponse(value);setFeedback(null);setKey(submissionKey);resume?.setDraft({activityId:activityStableId,questionId:question.id,questionVersion:question.version,response:value,submissionKey,baseAttemptId},activityStableId);}} /><button className="primary-button" disabled={busy||feedback?.correct===true} type="submit">{busy?"Registrando…":feedback?.correct?"Resposta registrada":"Enviar resposta"}</button></form>
+    <form onSubmit={event=>{event.preventDefault();void send("submit");}}><ResponseFields id={id} question={question} response={response} disabled={busy} review={reviewOf(question,feedback)} onChange={value=>{const submissionKey=crypto.randomUUID();setResponse(value);setFeedback(null);setKey(submissionKey);resume?.setDraft({activityId:activityStableId,questionId:question.id,questionVersion:question.version,response:value,submissionKey,baseAttemptId},activityStableId);}} />{feedback?.correct!==true&&<ConfidencePicker value={confidence} onChange={setConfidence} disabled={busy}/>}<button className="primary-button" disabled={busy||feedback?.correct===true} type="submit">{busy?"Registrando…":feedback?.correct?"Resposta registrada":"Enviar resposta"}</button></form>
     {/* The live wrapper exists before any answer, so screen readers announce the stamp when it appears. */}
     <div className="answer-result" aria-live="polite" aria-atomic="true">
       {feedback&&result&&<div role="status" aria-live="off" aria-label="Resultado da resposta" className="learning-feedback" data-result={result} key={feedback.attemptId??"solution"}>
@@ -75,6 +79,7 @@ export function QuestionPanel({question,activityStableId,hintCount=0,sessionId,l
         <strong>{feedback.attemptId?(feedback.correct?"Resposta correta":"Ainda não"):"Solução consultada"}</strong>
         {feedback.attemptId&&!feedback.correct&&<p><MathText text={wrongMessage(feedback)}/></p>}
         {(feedback.correct||!feedback.attemptId||feedback.solutionShown)&&feedback.explanation&&<p>{feedback.solutionShown&&<strong className="solution-label">Como resolver: </strong>}<MathText text={feedback.explanation}/></p>}
+        {feedback.attemptId&&confidenceNote(Boolean(feedback.correct),sentConfidence)&&<p className="confidence-note">{confidenceNote(Boolean(feedback.correct),sentConfidence)}</p>}
         {feedback.attemptId&&!feedback.correct&&<small>{feedback.solutionShown?"Leia a solução e tente de novo quando quiser. Este conceito entrou na sua revisão.":hintLevel<hintCount?"Tente de novo. Se travar, peça uma dica.":"Tente de novo. Este conceito entrou na sua revisão."}</small>}</div>}
     </div>
     {/* Progressive help: a hint first, the solution last. Each request is recorded as assistance, as before. */}
