@@ -32,3 +32,23 @@
   .auth-entry .auth-panel { padding: 20px 16px; }
   .auth-entry .auth-actions .auth-google-action { font-size: 0.9375rem; }
 }
+
+/* Sign-up: age as large tap cards, the guardian declaration highlighted, a larger terms check. */
+.auth-entry .signup-form { gap: 16px; }
+.signup-details { display: grid; gap: 16px; }
+.signup-details[hidden] { display: none; }
+.auth-entry .signup-age { gap: 10px; }
+.auth-entry .signup-age legend { margin-bottom: 8px; font-weight: 800; }
+.auth-entry .signup-age-option { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 14px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-panel); font-weight: 700; cursor: pointer; }
+.auth-entry .signup-age-option:has(input:checked) { background: var(--estudisc-color-signal); box-shadow: 3px 3px 0 var(--estudisc-color-ink); }
+.auth-entry .signup-age-option:has(input:focus-visible) { outline: 3px solid var(--estudisc-color-ink); outline-offset: 3px; }
+.auth-entry .signup-check { gap: 12px; font-size: 0.9375rem; line-height: 1.4; cursor: pointer; }
+.auth-entry .signup-check input { flex: none; width: 24px; height: 24px; margin: 0; }
+.auth-entry .signup-guardian { padding: 12px 14px; border: 2px dashed var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: color-mix(in srgb, var(--estudisc-color-signal) 40%, var(--estudisc-color-panel)); font-weight: 700; }
+.auth-entry .signup-check a { color: var(--estudisc-color-ink); font-weight: 800; }
+
+/* Code step: the slots size to the card (useCodeSlotSize); change e-mail and resend are plain links. */
+.auth-entry .account-code { gap: 12px; }
+.auth-entry .account-code > p:first-child { overflow-wrap: anywhere; }
+.auth-entry .account-help { display: flex; flex-wrap: wrap; align-items: center; gap: 0 6px; font-size: 0.9375rem; }
+.auth-entry .account-help .text-link { min-height: 44px; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none; color: var(--estudisc-color-ink); font: inherit; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; transform: none; }

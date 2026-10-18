@@ -36,3 +36,18 @@ it("requires the guardian declaration for minors and the terms before sending a 
   await user.click(screen.getByRole("button", { name: "Criar conta e receber código" }));
   expect(JSON.parse(fetch.mock.calls[0][1].body)).toEqual({ email: "bia@example.com", intent: "signup", signup: { name: "Bia", minor: true, guardianAuthorized: true, acceptTerms: true } });
 });
+
+it("keeps only the code step on screen after a sign-up code is sent and restores the filled form on Trocar e-mail", async () => {
+  vi.stubGlobal("fetch", vi.fn().mockReturnValue(reply(200, { status: "sent" })));
+  const user = userEvent.setup();
+  render(<SignupForm initialEmail="caio@example.com" />);
+  await user.type(screen.getByRole("textbox", { name: "Seu nome" }), "Caio");
+  await user.click(screen.getByRole("radio", { name: "Tenho 18 anos ou mais" }));
+  await user.click(screen.getByRole("checkbox", { name: /termos de uso/ }));
+  await user.click(screen.getByRole("button", { name: "Criar conta e receber código" }));
+  expect(await screen.findByText(/Código enviado para/)).toHaveTextContent("caio@example.com");
+  expect(screen.queryByRole("textbox", { name: "Seu nome" })).not.toBeInTheDocument();
+  await user.click(screen.getByRole("button", { name: "Trocar e-mail" }));
+  expect(screen.getByRole("textbox", { name: "Seu nome" })).toHaveValue("Caio");
+  expect(screen.getByRole("radio", { name: "Tenho 18 anos ou mais" })).toBeChecked();
+});

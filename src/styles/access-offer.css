@@ -1,0 +1,53 @@
+/* Paid-access offer on the vibrante visual: paywall (/upgrade, locked lessons) and the free-account
+   Hoje. Mirrors the landing price card; the landing moves to these classes after the SEO branch lands. */
+
+.offer { display: grid; gap: 28px; min-width: 0; }
+.offer h1 { margin: 0; font-size: clamp(2rem, 9vw, 3rem); font-weight: 900; font-stretch: 125%; line-height: 1; text-wrap: balance; overflow-wrap: break-word; hyphens: manual; }
+.offer h2 { margin: 0; font-size: clamp(1.5rem, 6.5vw, 2rem); line-height: 1.1; text-wrap: balance; }
+.offer p { margin: 0; max-width: 60ch; }
+.offer-head { display: grid; gap: 10px; }
+.offer-head p { font-size: 1.0625rem; line-height: 1.45; }
+.offer-feedback { padding: 12px 14px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-panel); font-weight: 700; }
+.offer-feedback[data-tone="success"] { background: var(--estudisc-color-surface-lime); }
+.offer-feedback[data-tone="error"] { background: color-mix(in srgb, var(--estudisc-color-subject-accent-mathematics) 30%, var(--estudisc-color-panel)); }
+
+.offer-price { display: grid; gap: 16px; padding: 20px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 6px 6px 0 var(--estudisc-color-ink); }
+.offer-price .primary-action, .offer-price .secondary-action { justify-content: center; width: 100%; }
+.offer-price-value { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.offer-price-value strong { font-size: 3.25rem; font-weight: 900; font-stretch: 125%; line-height: 1; }
+.offer-price-value span { font-weight: 800; }
+.offer-checks, .offer-free, .offer-fine { margin: 0; padding: 0; list-style: none; }
+.offer-checks { display: grid; gap: 12px; }
+.offer-checks li { display: flex; align-items: flex-start; gap: 10px; line-height: 1.4; }
+.offer-checks svg { flex: none; width: 24px; height: 24px; padding: 3px; border: 2px solid var(--estudisc-color-ink); border-radius: 50%; background: var(--estudisc-color-surface-lime); stroke-width: 3; }
+
+.offer-fine { display: grid; gap: 6px; margin-top: -12px; padding-left: 18px; list-style: disc; color: var(--estudisc-color-dim); font-size: 0.875rem; }
+
+.offer-block { display: grid; gap: 14px; }
+.offer-free { display: grid; gap: 10px; }
+@media (min-width: 720px) { .offer-free { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.offer-free a { position: relative; display: grid; gap: 2px; min-height: 64px; padding: 12px 14px 12px 28px; overflow: hidden; border: 3px solid var(--estudisc-color-ink); border-radius: 16px; background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); text-decoration: none; }
+.offer-free a::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 12px; border-right: 3px solid var(--estudisc-color-ink); background: var(--subject); }
+.offer-free a:hover strong { text-decoration: underline; text-decoration-thickness: 2px; }
+.offer-free a:focus-visible { outline: 3px solid var(--estudisc-color-ink); outline-offset: 3px; }
+.offer-free span { font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--estudisc-color-dim); }
+.offer-free strong { font-size: 1.0625rem; font-weight: 800; line-height: 1.25; }
+.offer-link { display: inline-block; justify-self: start; max-width: 100%; padding: 10px 0; color: var(--estudisc-color-ink); font-weight: 800; line-height: 1.4; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.offer-link svg { display: inline; width: 18px; height: 18px; margin-left: 6px; vertical-align: -3px; }
+
+.offer-invite { border-top: 3px solid var(--estudisc-color-ink); border-bottom: 3px solid var(--estudisc-color-ink); }
+.offer-invite summary { display: flex; align-items: center; min-height: 52px; font-weight: 800; cursor: pointer; }
+.offer-invite summary:focus-visible { outline: 3px solid var(--estudisc-color-ink); outline-offset: 2px; }
+.offer-invite form { display: grid; gap: 10px; padding-bottom: 16px; }
+.offer-invite label { font-weight: 700; }
+.offer-invite input { width: 100%; min-width: 0; }
+.offer-invite button { justify-self: start; }
+
+/* Free-account Hoje: a small card that leads to the paywall. */
+.offer-mini { display: grid; gap: 12px; padding: 18px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 5px 5px 0 var(--estudisc-color-ink); }
+.offer-mini h2 { margin: 0; font-size: 1.375rem; }
+.offer-mini p { margin: 0; }
+.offer-mini p strong { font-size: 1.5rem; font-weight: 900; font-stretch: 125%; }
+.offer-mini .secondary-action { justify-self: stretch; justify-content: center; }
+@media (min-width: 768px) { .offer-mini .secondary-action { justify-self: start; } }
+.offer-link-end { white-space: nowrap; }

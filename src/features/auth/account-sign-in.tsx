@@ -3,6 +3,7 @@
 import { useRef, useState, useSyncExternalStore } from "react";
 
 import CodeSlots, { type CodeSlotsStatus } from "@/components/code-slots/code-slots";
+import { useCodeSlotSize } from "@/components/code-slots/use-code-slot-size";
 
 /** Same slug rule as scripts/create-account.mjs: "Kauã" -> "account-kaua". Unknown profiles fail like a wrong code. */
 export function profileAccountId(profile: string) {
@@ -14,13 +15,6 @@ export function profileAccountId(profile: string) {
 
 const CODE_LENGTH = 6;
 const noSubscription = () => () => {};
-// Narrow phones get smaller slots; sizes must match .code-slots--compact in globals.css (caret math).
-const COMPACT_QUERY = "(max-width: 420px)";
-const subscribeCompact = (onChange: () => void) => {
-  const query = window.matchMedia(COMPACT_QUERY);
-  query.addEventListener("change", onChange);
-  return () => query.removeEventListener("change", onChange);
-};
 
 /** Profile name + Code Slots. Profile names are never listed to signed-out visitors: the student types their own.
  *  The slots render only on the client: their motion styles are applied
@@ -29,7 +23,7 @@ const subscribeCompact = (onChange: () => void) => {
  *  submit() ignores overlapping requests instead. */
 export function AccountSignIn({ callbackUrl }: Readonly<{ callbackUrl: string }>) {
   const mounted = useSyncExternalStore(noSubscription, () => true, () => false);
-  const compact = useSyncExternalStore(subscribeCompact, () => window.matchMedia(COMPACT_QUERY).matches, () => false);
+  const slot = useCodeSlotSize();
   const [profile, setProfile] = useState("");
   const [status, setStatus] = useState<CodeSlotsStatus>("idle");
   const [message, setMessage] = useState<{ text: string; tone: "error" | "success" } | null>(null);
@@ -102,9 +96,9 @@ export function AccountSignIn({ callbackUrl }: Readonly<{ callbackUrl: string }>
           {mounted ? (
             <CodeSlots
               length={CODE_LENGTH}
-              slotSize={compact ? 40 : 48}
-              gap={compact ? 6 : 8}
-              className={compact ? "code-slots--compact" : ""}
+              slotSize={slot.slotSize}
+              gap={slot.gap}
+              className={slot.className}
               mask
               status={status}
               ariaLabel={`Código de acesso, ${CODE_LENGTH} dígitos`}

@@ -12,12 +12,14 @@
 .account-code-message { min-height: 1.5em; margin: 0; font-weight: 700; }
 .account-code-message[data-tone="error"] { color: var(--estudisc-color-error); }
 .code-slots.code-slots--compact { --cs-size: 40px; --cs-height: 47px; --cs-gap: 6px; --cs-font: 20px; }
+.code-slots.code-slots--tight { --cs-size: 36px; --cs-height: 42px; --cs-gap: 6px; --cs-font: 18px; }
 .code-slots-placeholder { display: inline-flex; gap: 8px; }
 .code-slots-placeholder span { width: 48px; height: 57px; border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: 12px; background: var(--estudisc-color-paper); }
 .nav-account { display: grid; gap: var(--estudisc-spacing-4); margin-top: var(--estudisc-spacing-6); padding-top: var(--estudisc-spacing-6); border-top: var(--estudisc-border-rule) solid var(--estudisc-color-ink); }
 .nav-account > span { padding: 0 var(--estudisc-spacing-6); font-size: 0.875rem; }
 .nav-account button { display: flex; align-items: center; gap: var(--estudisc-spacing-6); width: 100%; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; }
 @media (max-width: 420px) { .code-slots-placeholder { gap: 6px; } .code-slots-placeholder span { width: 40px; height: 47px; } }
+@media (max-width: 360px) { .code-slots-placeholder span { width: 36px; height: 42px; } }
 .nav-account button { font-weight: 700; }
 
 .question-study-reward { display: grid; gap: var(--estudisc-spacing-3); margin-top: var(--estudisc-spacing-6); font-size: var(--estudisc-typography-body-sizes-sm); }

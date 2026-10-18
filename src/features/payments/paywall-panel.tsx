@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import "@/styles/access-offer.css";
 import { useEffect, useState } from "react";
 import { FREE_SAMPLE_LESSONS, LIFETIME_PRICE_BRL } from "./contracts";
-import { CONTENT_SUMMARY, formatCount } from "@/features/public-site/content-summary";
+import { AccessFacts } from "@/features/public-site/access-facts";
 
 export type PaywallPanelProps = Readonly<{
   lockedLessonTitle?: string;
@@ -164,72 +166,45 @@ export function PaywallPanel({
   }
 
   return (
-    <section className="foundation-panel content-panel accent-panel accent-learn" aria-labelledby="paywall-title">
-      <p className="eyebrow">Acesso completo até a prova · Projeto social Estudisc</p>
-      <h1 id="paywall-title">
-        {lockedLessonTitle
-          ? `Desbloqueie "${lockedLessonTitle}" e todo o curso IFSC`
-          : `Desbloqueie todas as ${formatCount(CONTENT_SUMMARY.lessons)} aulas e ${formatCount(CONTENT_SUMMARY.lessonQuestions)} questões por R$ ${LIFETIME_PRICE_BRL}`}
-      </h1>
-      <p>
-        Pagamento único de <strong>R$ {LIFETIME_PRICE_BRL},00</strong> via <strong>Pix ou cartão no Mercado Pago</strong>.
-        Sem mensalidade e sem cobranças recorrentes: você paga uma única vez e tem acesso completo até o dia da prova (29/11/2026).
-      </p>
-
-      {feedback ? (
-        <p role="status" className="learning-hint">
-          {feedback.text}
-        </p>
-      ) : null}
-
-      <div className="learning-controls">
-        <button
-          type="button"
-          className="primary-action"
-          disabled={busy}
-          onClick={startCheckout}
-        >
-          {busy ? "Abrindo Mercado Pago..." : `Liberar acesso até a prova por R$ ${LIFETIME_PRICE_BRL} (Pix ou cartão)`}
+    <section className="offer" aria-labelledby="paywall-title">
+      <header className="offer-head">
+        <h1 id="paywall-title">{lockedLessonTitle ? "Esta aula faz parte do acesso completo" : `Tudo do Estudisc por R$ ${LIFETIME_PRICE_BRL}, até a prova`}</h1>
+        {lockedLessonTitle ? <p>“{lockedLessonTitle}” e todas as outras aulas ficam liberadas com o acesso completo.</p> : null}
+      </header>
+      {feedback ? <p role="status" className="offer-feedback" data-tone={feedback.tone}>{feedback.text}</p> : null}
+      <div className="offer-price">
+        <p className="offer-price-value"><strong>R$ {LIFETIME_PRICE_BRL}</strong><span>pagamento único</span></p>
+        <AccessFacts />
+        <button type="button" className="primary-action" disabled={busy} onClick={startCheckout}>
+          {busy ? "Abrindo Mercado Pago…" : `Pagar R$ ${LIFETIME_PRICE_BRL} com Pix ou cartão`}
         </button>
         {initialStatus === "sandbox" && sandboxRef ? (
-          <button
-            type="button"
-            className="secondary-action"
-            disabled={busy}
-            onClick={confirmSandbox}
-          >
+          <button type="button" className="secondary-action" disabled={busy} onClick={confirmSandbox}>
             Simular aprovação Pix (Sandbox Local)
           </button>
         ) : null}
-        <Link href="/assessments" className="secondary-action">
-          Fazer Simulado Diagnóstico grátis
-        </Link>
       </div>
-
-      <section className="module-section" aria-labelledby="free-samples-title">
-        <p className="technical-label">Degustação gratuita liberada</p>
-        <h2 id="free-samples-title">Experimente grátis 1 aula interativa de cada matéria</h2>
-        <p>
-          Antes de decidir, você pode estudar gratuitamente nossas 4 aulas mais interativas do edital IFSC:
-        </p>
-        <ul className="concept-list">
-          {FREE_SAMPLE_LESSONS.map((sample) => (
+      <ul className="offer-fine">
+        <li>O Estudisc não garante aprovação. Ele organiza o estudo; o resultado depende da dedicação de cada estudante.</li>
+        <li>Menores de 18 anos usam o Estudisc com autorização do responsável, que faz a compra.</li>
+      </ul>
+      <section className="offer-block" aria-labelledby="free-samples-title">
+        <h2 id="free-samples-title">Enquanto isso, grátis</h2>
+        <p>Sua conta já abre uma aula completa de cada matéria:</p>
+        <ul className="offer-free">
+          {FREE_SAMPLE_LESSONS.map(sample => (
             <li key={sample.id}>
-              <Link href={`/lessons/${sample.id}`}>
-                <strong>
-                  {sample.subject} · {sample.title}
-                </strong>
-                <span>{sample.interactiveFeature}</span>
+              <Link href={`/lessons/${sample.id}`} data-subject={sample.id.split("-")[0]}>
+                <span>{sample.subject}</span><strong>{sample.title}</strong>
               </Link>
             </li>
           ))}
         </ul>
+        <Link href="/assessments" className="offer-link">Fazer o simulado diagnóstico <span className="offer-link-end">grátis<ArrowRight aria-hidden="true" /></span></Link>
       </section>
-
-      <section className="module-section" aria-labelledby="invite-code-title">
-        <p className="technical-label">Bolsa Social ou Turma Parceira</p>
-        <h2 id="invite-code-title">Tem um código de bolsa ou convite?</h2>
-        <form onSubmit={handleRedeemInvite} className="learning-controls">
+      <details className="offer-invite">
+        <summary>Tenho um código de bolsa ou convite</summary>
+        <form onSubmit={handleRedeemInvite}>
           <label htmlFor="invite-code-input">Código de convite</label>
           <input
             id="invite-code-input"
@@ -243,7 +218,7 @@ export function PaywallPanel({
             Ativar código de bolsa
           </button>
         </form>
-      </section>
+      </details>
     </section>
   );
 }
