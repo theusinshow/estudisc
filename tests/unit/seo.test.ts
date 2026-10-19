@@ -65,7 +65,7 @@ describe("structured data", () => {
   it("describes the course with the real one-time price and no ratings", () => {
     const base = "https://www.estudisc.com.br";
     const course = courseJsonLd(base, "2026-11-29");
-    expect(course).toMatchObject({ "@type": "Course", offers: { price: "50", priceCurrency: "BRL", availabilityEnds: "2026-11-29" }, provider: { "@id": `${base}/#organization` } });
+    expect(course).toMatchObject({ "@type": "Course", offers: { price: "39.90", priceCurrency: "BRL", availabilityEnds: "2026-11-29" }, provider: { "@id": `${base}/#organization` } });
     expect(JSON.stringify([course, organizationJsonLd(base)])).not.toMatch(/aggregateRating|review/i);
     expect(faqJsonLd([{ question: "Quanto custa?", answer: "R$ 50, pagamento único." }])).toMatchObject({ "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: "Quanto custa?", acceptedAnswer: { text: "R$ 50, pagamento único." } }] });
   });

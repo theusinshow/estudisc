@@ -4,8 +4,12 @@ export const LIFETIME_PRODUCT_ID = "ifsc-2027-1-full" as const;
 /** Owner decision (2026-10-16): one payment gives access until the end of the IFSC 2027/1 exam day (29/11/2026, Brasília). */
 export const PAID_ACCESS_ENDS_AT = "2026-11-30T03:00:00.000Z" as const;
 export function paidAccessEndsAt(): Date { return new Date(PAID_ACCESS_ENDS_AT); }
-export const LIFETIME_PRICE_CENTS = 5000 as const;
-export const LIFETIME_PRICE_BRL = 50 as const;
+/** Owner decision (2026-10-19): R$ 39,90, a more social price (was R$ 50). Payments at or above it grant access. */
+export const LIFETIME_PRICE_CENTS = 3990 as const;
+/** Amount sent to Mercado Pago and structured data (39.9). */
+export const LIFETIME_PRICE_AMOUNT = LIFETIME_PRICE_CENTS / 100;
+/** Price as students read it, without "R$": "39,90". */
+export const LIFETIME_PRICE_BRL = (LIFETIME_PRICE_CENTS / 100).toFixed(2).replace(".", ",");
 export const LIFETIME_CURRENCY = "BRL" as const;
 
 export const FREE_SAMPLE_LESSON_IDS = ["MAT-07", "CIE-01", "POR-03", "GH-51"] as const;

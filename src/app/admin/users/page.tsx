@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getEntitlementRepository } from "@/db/repositories/entitlement-repository";
 import { AccessDeniedError, requireAdmin } from "@/features/auth/owner";
 import { AdminUsersPanel } from "@/features/payments/admin-users-panel";
+import { LIFETIME_PRICE_BRL } from "@/features/payments/contracts";
 
 export const dynamic = "force-dynamic";
 
@@ -23,7 +24,7 @@ export default async function AdminUsersPage() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <h1>Alunos, bolsas e acesso até a prova (R$ 50)</h1>
+        <h1>Alunos, bolsas e acesso até a prova (R$ {LIFETIME_PRICE_BRL})</h1>
         <Link href="/admin">Voltar à administração</Link>
         <Link href="/">Abrir visão do aluno</Link>
       </header>

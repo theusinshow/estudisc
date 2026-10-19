@@ -1,4 +1,4 @@
-import { LIFETIME_PRICE_BRL } from "@/features/payments/contracts";
+import { LIFETIME_PRICE_AMOUNT } from "@/features/payments/contracts";
 
 type JsonLdValue = Record<string, unknown>;
 
@@ -35,7 +35,7 @@ export function courseJsonLd(base: string, accessEndsOn: string): JsonLdValue {
     offers: {
       "@type": "Offer",
       category: "Paid",
-      price: String(LIFETIME_PRICE_BRL),
+      price: LIFETIME_PRICE_AMOUNT.toFixed(2),
       priceCurrency: "BRL",
       availabilityEnds: accessEndsOn,
       url: `${base}/conheca#preco`

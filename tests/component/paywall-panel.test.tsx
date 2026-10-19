@@ -8,13 +8,13 @@ afterEach(() => {
 });
 
 describe("PaywallPanel component", () => {
-  it("renders the R$ 50 checkout with the refund right, the 4 free sample lessons and the scholarship invite form", async () => {
+  it("renders the R$ 39,90 checkout with the refund right, the 4 free sample lessons and the scholarship invite form", async () => {
     const user = userEvent.setup();
     render(<PaywallPanel lockedLessonTitle="Equações do 1º grau" />);
 
     expect(screen.getByRole("heading", { level: 1, name: "Esta aula faz parte do acesso completo" })).toBeInTheDocument();
     expect(screen.getByText(/Equações do 1º grau/)).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /^Pagar R\$\s50 com Pix ou cartão$/ })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /^Pagar R\$\s39,90 com Pix ou cartão$/ })).toBeInTheDocument();
     expect(screen.getByText(/Desistiu em até 7 dias/)).toHaveTextContent("Código de Defesa do Consumidor");
     expect(screen.getByText(/Menores de 18 anos/)).toHaveTextContent("responsável, que faz a compra");
 
@@ -32,6 +32,6 @@ describe("PaywallPanel component", () => {
 
   it("titles the general paywall with the price", () => {
     render(<PaywallPanel />);
-    expect(screen.getByRole("heading", { level: 1, name: /^Tudo do Estudisc por R\$\s50, até a prova$/ })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: /^Tudo do Estudisc por R\$\s39,90, até a prova$/ })).toBeInTheDocument();
   });
 });

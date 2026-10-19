@@ -19,7 +19,7 @@ import { GoalTower } from "@/features/today/goal-tower";
 export const metadata: Metadata = publicPageMetadata({
   path: "/conheca",
   title: "Exame de Classificação IFSC 2027/1 (técnico integrado) · Estudisc",
-  description: "Preparação para o Exame de Classificação do IFSC 2027/1 com aulas, questões comentadas, simulados e provas anteriores. R$ 50, acesso até o dia da prova."
+  description: `Preparação para o Exame de Classificação do IFSC 2027/1 com aulas, questões comentadas, simulados e provas anteriores. R$ ${LIFETIME_PRICE_BRL}, acesso até o dia da prova.`
 });
 export const dynamic = "force-dynamic";
 

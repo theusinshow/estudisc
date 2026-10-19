@@ -144,7 +144,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
       return processMercadoPagoWebhook({
         dataId, xSignature: `ts=${ts},v1=${v1}`, xRequestId, webhookSecret, accessToken: "TEST", repo,
         now: new Date("2026-10-15T15:00:00Z"),
-        fetchPayment: async () => ({ id: dataId, status: "approved", transaction_amount: 50, currency_id: "BRL", external_reference: externalReference, payment_type_id: "bank_transfer" })
+        fetchPayment: async () => ({ id: dataId, status: "approved", transaction_amount: 39.9, currency_id: "BRL", external_reference: externalReference, payment_type_id: "bank_transfer" })
       });
     };
     await deliver("111");
@@ -155,7 +155,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
     warn.mockRestore();
   });
 
-  it("verifies Mercado Pago HMAC signatures, grants R$ 50 lifetime access idempotently, and handles refunds", async () => {
+  it("verifies Mercado Pago HMAC signatures, grants R$ 39,90 lifetime access idempotently, and handles refunds", async () => {
     expect(isPublicRuntimePath("/api/payments/mercadopago/webhook")).toBe(true);
 
     const repo = new MemoryEntitlementRepository();
@@ -189,7 +189,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
       })
     ).toBe(false);
 
-    // 1. Approved R$ 50 payment grants lifetime entitlement
+    // 1. Approved R$ 39,90 payment grants lifetime entitlement
     const firstResult = await processMercadoPagoWebhook({
       dataId,
       xSignature,
@@ -201,7 +201,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
       fetchPayment: async () => ({
         id: dataId,
         status: "approved",
-        transaction_amount: 50,
+        transaction_amount: 39.9,
         currency_id: "BRL",
         external_reference: externalReference,
         payment_type_id: "bank_transfer"
@@ -210,7 +210,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
     expect(firstResult.action).toBe("granted");
     if (firstResult.action === "granted") {
       expect(firstResult.created).toBe(true);
-      expect(firstResult.record.amountCents).toBe(5000);
+      expect(firstResult.record.amountCents).toBe(3990);
       expect(firstResult.record.endsAt?.toISOString()).toBe(PAID_ACCESS_ENDS_AT);
     }
 
@@ -226,7 +226,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
       fetchPayment: async () => ({
         id: dataId,
         status: "approved",
-        transaction_amount: 50,
+        transaction_amount: 39.9,
         currency_id: "BRL",
         external_reference: externalReference,
         payment_type_id: "bank_transfer"
@@ -269,7 +269,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
       fetchPayment: async () => ({
         id: dataId,
         status: "refunded",
-        transaction_amount: 50,
+        transaction_amount: 39.9,
         currency_id: "BRL",
         external_reference: externalReference
       })
@@ -296,7 +296,7 @@ describe("SaaS paid access, Mercado Pago webhook, and interactive free preview (
       nonce: "livenonce",
       fetchImpl: (async (_url, init) => {
         const body = JSON.parse(String(init?.body));
-        expect(body.items[0].unit_price).toBe(50);
+        expect(body.items[0].unit_price).toBe(39.9);
         expect(body.items[0].currency_id).toBe("BRL");
         expect(body.external_reference).toBe("google-live-user:ifsc-2027-1-full:livenonce");
         return new Response(

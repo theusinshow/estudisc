@@ -63,3 +63,7 @@ The owner confirmed that a single payment of R$ 50 gives access **until the end 
 - The payment-confirmation page polls every 3 s for a minute, then every 10 s, and stops after 10 minutes with a message that the student can come back; it tells the student not to generate a second Pix.
 - Funnel events and queries: [docs/29-CONVERSION-FUNNEL.md](../29-CONVERSION-FUNNEL.md).
 
+
+## Amendment 2026-10-19 — price R$ 39,90
+
+The owner lowered the price to **R$ 39,90 (`3990` cents BRL)** to make access more social. Same terms: one payment, full access until the end of the IFSC 2027/1 exam day, refund right unchanged. `LIFETIME_PRICE_CENTS` is the single source; screens show `LIFETIME_PRICE_BRL` ("39,90") and Mercado Pago receives `LIFETIME_PRICE_AMOUNT` (39.9). The webhook keeps accepting payments at or above the price, so checkouts opened at R$ 50 before the change still grant access; existing entitlements are untouched.

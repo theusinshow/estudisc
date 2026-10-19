@@ -43,7 +43,7 @@ export default function TermosPage() {
           <p>Para usar o Estudisc é preciso ter uma conta: você entra com o seu e-mail, recebendo um código de 6 dígitos, ou com uma conta Google. A conta é pessoal: não compartilhe o acesso. Menores de 18 anos só podem usar o serviço com autorização do pai, da mãe ou do responsável legal, que deve fazer a compra.</p>
 
           <LegalHeading number={3} sections={SECTIONS} />
-          <p>Sem pagamento, a conta dá acesso ao catálogo, ao diagnóstico e a uma aula de demonstração por matéria. O acesso completo custa R$ {LIFETIME_PRICE_BRL},00, em pagamento único, processado pelo Mercado Pago (Pix ou cartão). Ele vale até as 23h59 de {lastDay} (horário de Brasília), o dia da prova, e não se renova automaticamente.</p>
+          <p>Sem pagamento, a conta dá acesso ao catálogo, ao diagnóstico e a uma aula de demonstração por matéria. O acesso completo custa R$ {LIFETIME_PRICE_BRL}, em pagamento único, processado pelo Mercado Pago (Pix ou cartão). Ele vale até as 23h59 de {lastDay} (horário de Brasília), o dia da prova, e não se renova automaticamente.</p>
 
           <LegalHeading number={4} sections={SECTIONS} />
           <p>Você pode desistir da compra em até 7 dias corridos após o pagamento, sem precisar justificar, conforme o artigo 49 do Código de Defesa do Consumidor. Para isso, escreva para o contato indicado acima. O valor é devolvido pelo mesmo meio de pagamento, e o acesso completo é encerrado.</p>

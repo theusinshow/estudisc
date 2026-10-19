@@ -78,7 +78,7 @@
 
 .landing-price { display: grid; gap: 16px; padding: 20px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 6px 6px 0 var(--estudisc-color-ink); scroll-margin-top: 16px; }
 .landing-price-value { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
-.landing-price-value strong { font-size: 3.25rem; font-weight: 900; font-stretch: 125%; line-height: 1; }
+.landing-price-value strong { font-size: clamp(2rem, 11vw, 3.25rem); font-weight: 900; font-stretch: 125%; line-height: 1; }
 .landing-price-value span { font-weight: 800; }
 .landing-checks { display: grid; gap: 12px; }
 .landing-checks li { display: flex; align-items: flex-start; gap: 10px; line-height: 1.4; }

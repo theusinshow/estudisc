@@ -19,7 +19,7 @@ test("public sales and legal pages render with landmarks and fit a 320 px screen
     expect(overflow, entry.path).toBeLessThanOrEqual(0);
   }
   await page.goto("/conheca");
-  await expect(page.getByText("R$ 50", { exact: true })).toBeVisible();
+  await expect(page.getByText("R$ 39,90", { exact: true })).toBeVisible();
   await expect(page.getByText(/até 29\/11\/2026/)).toBeVisible();
   await page.getByRole("navigation", { name: "Informações legais" }).getByRole("link", { name: "Termos de uso" }).click();
   await expect(page).toHaveURL(/\/termos$/);

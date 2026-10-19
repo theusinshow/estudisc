@@ -14,7 +14,7 @@
 .offer-price { display: grid; gap: 16px; padding: 20px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 6px 6px 0 var(--estudisc-color-ink); }
 .offer-price .primary-action, .offer-price .secondary-action { justify-content: center; width: 100%; }
 .offer-price-value { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
-.offer-price-value strong { font-size: 3.25rem; font-weight: 900; font-stretch: 125%; line-height: 1; }
+.offer-price-value strong { font-size: clamp(2rem, 11vw, 3.25rem); font-weight: 900; font-stretch: 125%; line-height: 1; }
 .offer-price-value span { font-weight: 800; }
 .offer-checks, .offer-free, .offer-fine { margin: 0; padding: 0; list-style: none; }
 .offer-checks { display: grid; gap: 12px; }

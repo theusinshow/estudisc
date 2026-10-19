@@ -6,7 +6,7 @@ import { getEntitlementRepository, type EntitlementRepository } from "@/db/repos
 import {
   LIFETIME_CURRENCY,
   paidAccessEndsAt,
-  LIFETIME_PRICE_BRL,
+  LIFETIME_PRICE_AMOUNT,
   LIFETIME_PRICE_CENTS,
   LIFETIME_PRODUCT_ID,
   type EntitlementRecord
@@ -141,7 +141,7 @@ export async function createMercadoPagoCheckoutPreference(params: {
           description: "Acesso completo a todas as aulas, questões e revisões até o dia da prova (29/11/2026).",
           quantity: 1,
           currency_id: LIFETIME_CURRENCY,
-          unit_price: LIFETIME_PRICE_BRL
+          unit_price: LIFETIME_PRICE_AMOUNT
         }
       ],
       payer: {

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-19 — Price R$ 39,90
+
+- Full access now costs R$ 39,90 (was R$ 50), same terms: one payment, access until the exam day, refund right. Every screen, the Mercado Pago checkout, the terms and the structured data read the same constant; existing purchases are untouched.
+- The big price on /conheca and /pais-e-escolas scales with the screen so "R$ 39,90" fits a 320 px phone.
+
 ## 2026-10-19 — Steadier end-to-end tests
 
 - Playwright waits up to 10s per assertion and 60s per test: `next dev` compiles each route on first use (about 5s for a lesson), which made whichever test hit a heavy route first fail intermittently.
