@@ -144,7 +144,7 @@ describe("standalone simulado Questions (ADR 0065)", () => {
     } finally { await database.close(); }
   });
 
-  it("never offers a standalone Question in lesson practice, review or planning", async () => {
+  it("never offers a standalone Question in lesson practice, review or practice blocks", async () => {
     const database = await setup();
     try {
       await new StandaloneQuestionRepository(database.db).importSet(admin, { trackId: "ifsc-2027", questions: bank });
@@ -152,16 +152,11 @@ describe("standalone simulado Questions (ADR 0065)", () => {
       await database.db.insert(owners).values({ id: "learner", displayName: "Test learner" }).onConflictDoNothing();
       const [concept] = await database.db.select().from(concepts).where(eq(concepts.stableId, subjectConcepts.MAT));
       await database.db.insert(reviewSchedules).values({ ownerId: "learner", conceptId: concept.id, currentMasteryState: "learning", nextReviewAt: now, policyVersion: "review.v2", reviewCount: 0, recentQuality: 0 });
-      const targeted = await new StudySessionRepository(database.db, false, false).plan("learner", 10, now, { kind: "review", conceptId: subjectConcepts.MAT });
+      const targeted = await new StudySessionRepository(database.db).startBlock("learner", { kind: "review", conceptId: subjectConcepts.MAT }, now);
       expect(targeted).not.toBeNull();
       const offered = sessionItemsSchema.parse(targeted!.items).flatMap(item => item.questions.map(ref => ref.id));
       expect(offered.length).toBeGreaterThan(0);
       expect(offered.some(id => id.startsWith("SIM-"))).toBe(false);
-      for (const adaptive of [false, true]) {
-        const planned = await new StudySessionRepository(database.db, false, adaptive).plan(`planner-${adaptive}`, 30, now);
-        expect(planned).not.toBeNull();
-        expect(sessionItemsSchema.parse(planned!.items).flatMap(item => item.questions.map(ref => ref.id)).some(id => id.startsWith("SIM-"))).toBe(false);
-      }
       const activity = (source.track.modules[0].lessons[0].activities as { id: string }[])[0].id;
       await expect(new QuestionStudyRepository(database.db).isAvailable("learner", activity, "SIM-MAT-1", 1)).rejects.toThrow("unavailable");
     } finally { await database.close(); }

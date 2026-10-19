@@ -13,7 +13,7 @@ import { MemoryCatalogRepository } from "@/db/repositories/memory/catalog";
 import { emptyResume } from "@/features/lessons/resume-contracts";
 import type { InteractionState } from "@/features/lessons/interaction-state";
 import { sessionItemsSchema } from "@/features/study-sessions/contracts";
-import { attempts, conceptEvidence, lessons, questionVersions } from "@/db/schema";
+import { attempts, conceptEvidence, concepts, lessons, owners, questionVersions, reviewSchedules } from "@/db/schema";
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
 
 describe.each(["memory", "sql"] as const)("lesson resume (%s)", kind => {
@@ -52,8 +52,15 @@ describe.each(["memory", "sql"] as const)("lesson resume (%s)", kind => {
       expect(await repository.save("learner", legacyUpdate)).toEqual(legacyReply);
       const retained = { ...legacyUpdate.data, interactions: [atom] };
       expect((await repository.get("learner", scope))?.data).toEqual(retained);
-      const sessions = database ? new StudySessionRepository(database.db, false, true) : new MemoryStudySessionRepository(store, false, true);
-      const session = (await sessions.plan("learner", 10))!; await sessions.transition("learner", session.id, "start");
+      const sessions = database ? new StudySessionRepository(database.db) : new MemoryStudySessionRepository(store);
+      // A practice block (ADR 0072) is the ACTIVE session that scopes this resume.
+      const dueConcept = fixture.questions[0].conceptIds[0], dueAt = new Date();
+      if (database) {
+        await database.db.insert(owners).values({ id: "learner", displayName: "Test learner" }).onConflictDoNothing();
+        const [concept] = await database.db.select().from(concepts).where(eq(concepts.stableId, dueConcept));
+        await database.db.insert(reviewSchedules).values({ ownerId: "learner", conceptId: concept.id, currentMasteryState: "learning", nextReviewAt: dueAt, policyVersion: "review.v2", reviewCount: 0, recentQuality: 0 });
+      } else store.reviewSchedules.push({ ownerId: "learner", conceptStableId: dueConcept, currentMasteryState: "learning", lastReviewedAt: null, nextReviewAt: dueAt, reviewCount: 0, recentQuality: 0, policyVersion: "review.v2", updatedAt: dueAt });
+      const session = (await sessions.startBlock("learner", { kind: "review", conceptId: dueConcept }, dueAt))!;
       const item = sessionItemsSchema.parse(session.items)[0];
       const sessionScope = { trackId: item.trackId!, lessonId: item.lessonId, version: item.version, sessionId: session.id };
       const sessionInput = { scope: sessionScope, revision: 0, mutationId: crypto.randomUUID(), data: emptyResume() };

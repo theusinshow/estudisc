@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-19 — Old planner code removed (ADR 0072)
+
+- Removed the time-budget session planner and the weekly routine engine (repositories, policies, budgets) and their tests; practice blocks keep the selection core. Planner and routine tables remain as history and in backups.
+- Practice blocks: an open block can no longer be resumed while a simulado in exam mode is running.
+
 ## 2026-10-19 — Simulado timer fits small phones
 
 - Simulado: the timer bar (time left, questions, pace badge) wraps on phones narrower than ~360px instead of widening the page; at 320px the simulado page no longer scrolls sideways.

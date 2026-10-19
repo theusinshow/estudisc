@@ -1,68 +1,22 @@
 import { getMemoryStore } from "./memory-store";
 import { SessionStateError, type StudySessionRepository } from "./study-session-repository";
-import { canExposeQuestion } from "@/features/questions/exposure";
-import { questionSchema } from "@/features/questions/contracts";
-import { sessionItemsSchema,LEGACY_SESSION_BUDGETS,ADAPTIVE_SESSION_BUDGETS,type SessionItem,type SessionBudget } from "@/features/study-sessions/contracts";
-import { planCandidates,examPhase,type PlannerCandidate } from "@/features/study-sessions/planner-policy";
-import { calculateVersionedMastery } from "@/features/mastery/mastery-policy-v2";
-import { memoryRoutineContext } from "./memory-study-plan-repository";
-import { buildRoutineWeek, normalizeRoutine } from "@/features/study-sessions/routine-policy";
-import { assertRoutineBudget, assertRoutineStart } from "@/features/study-sessions/routine-session-constraints";
+import { sessionItemsSchema } from "@/features/study-sessions/contracts";
+import { planCandidates } from "@/features/study-sessions/planner-policy";
 import { memoryAdaptiveChoices } from "./memory-adaptive-session-data";
 import { summarizeSession } from "@/features/study-sessions/session-summary";
-import { OpenSessionError, TargetedPracticeError, type TargetedPracticeRequest } from "@/features/study-sessions/targeted-selection";
+import { TargetedPracticeError } from "@/features/study-sessions/targeted-selection";
 import { PRACTICE_BLOCK_MINUTES, capBlockItems, practiceBlockPolicy, toBlockAnswer, type PracticeBlockTarget } from "@/features/study-sessions/practice-block";
 import { memoryTargetedSelection } from "./targeted-session-selection";
+/** ADR 0072: mirrors StudySessionRepository (practice blocks only). */
 export class MemoryStudySessionRepository{
-  constructor(private readonly store=getMemoryStore(),private readonly routineEnabled=false,private readonly adaptiveEnabled=false){}
-  private routineWeek(ownerId:string,now:Date){const row=this.routineEnabled?this.store.studyPlans.find(plan=>plan.ownerId===ownerId):undefined;return row?buildRoutineWeek(normalizeRoutine(row.settings),memoryRoutineContext(this.store,ownerId),now):null;}
-  async plan(ownerId:string,budgetMinutes:SessionBudget,now=new Date(),target?:TargetedPracticeRequest){
-    const allowedBudgets: readonly number[] = target ? [10,15] : [...LEGACY_SESSION_BUDGETS, ...(this.adaptiveEnabled ? ADAPTIVE_SESSION_BUDGETS : [])];
-    if(!allowedBudgets.includes(budgetMinutes))throw new SessionStateError();
-    const selection=target?memoryTargetedSelection(this.store,ownerId,target,now):undefined;
-    const active=this.store.studySessions.find(row=>row.ownerId===ownerId&&row.status==="ACTIVE");
-    if(active&&!target)return active;
-    if(active&&!target?.startNew)throw new OpenSessionError(active.id);
-    const subjectLimits=assertRoutineBudget(this.routineWeek(ownerId,now),budgetMinutes);
-    if(this.adaptiveEnabled||selection){
-      const data=memoryAdaptiveChoices(this.store,ownerId,budgetMinutes,subjectLimits,now,selection);
-      const plan=planCandidates(data.choices.map(choice=>choice.candidate),budgetMinutes,"FOUNDATION",data.subjectMinutes,subjectLimits,true);
-      if(!plan.items.length)return null;
-      if(active){active.status="ABANDONED";active.endedAt=now;}
-      for(const old of this.store.studySessions.filter(row=>row.ownerId===ownerId&&row.status==="PLANNED")){old.status="ABANDONED";old.endedAt=now;}
-      const items=plan.items.map(candidate=>data.choices.find(choice=>choice.candidate.id===candidate.id)!.item);
-      const row={id:crypto.randomUUID(),ownerId,trackId:items[0].trackId!,status:"PLANNED",budgetMinutes,items,policyVersion:plan.policyVersion,startedAt:null,endedAt:null,createdAt:now};this.store.studySessions.push(row);return row;
-    }
-    for(const entry of [...this.store.packImports].reverse()){
-      const pack=entry.manifest;if(pack?.schema!=="caderno.track.v2")continue;
-      const choices:Array<{candidate:PlannerCandidate;item:SessionItem}>=[];const mastery=(id:string)=>calculateVersionedMastery(this.store.conceptEvidence.filter(item=>item.ownerId===ownerId&&item.conceptStableId===id));
-      for(const moduleDefinition of pack.track.modules)for(const lesson of moduleDefinition.lessons){
-        if(lesson.status!=="published")continue;
-        const candidateBudget=subjectLimits?Math.min(budgetMinutes,subjectLimits[moduleDefinition.subjectCode]??0):budgetMinutes;
-        if(candidateBudget<15)continue;
-        const selected=lesson.activities.filter(activity=>activity.type==="question"&&pack.questions.some(input=>{const question=questionSchema.parse(input);return question.id===activity.questionId&&canExposeQuestion(question,{now:new Date(),context:"training",exposure:this.store.questionExposures.find(item=>item.ownerId===ownerId&&item.questionId===question.id)});})).slice(0,candidateBudget<=15?3:6);
-        if(!selected.length)continue;
-        const minutes=Math.min(candidateBudget,Math.max(15,Math.min(30,lesson.estimatedMinutes)));
-        const ids=lesson.concepts.map(concept=>concept.id);const levels=ids.map(id=>mastery(id).level);
-        const due=this.store.reviewSchedules.filter(item=>item.ownerId===ownerId&&ids.includes(item.conceptStableId)&&item.nextReviewAt.getTime()<=Date.now());
-        const required=pack.conceptPrerequisites.filter(edge=>ids.includes(edge.conceptId)&&edge.strength==="required"&&!ids.includes(edge.prerequisiteConceptId));
-        const requiredPrerequisitesReady=required.every(edge=>mastery(edge.prerequisiteConceptId).level>=2)&&lesson.prerequisiteConceptIds.every(id=>mastery(id).level>=2);
-        const candidate:PlannerCandidate={id:lesson.id,subjectCode:moduleDefinition.subjectCode,kind:due.length?"review":levels.some(level=>level>0)?"practice":"learn",minutes,importance:Math.max(...lesson.concepts.map(concept=>({low:1,medium:2,high:3,critical:4})[concept.importance])),weakness:1-levels.reduce((sum,level)=>sum+level,0)/levels.length/5,dueDays:Math.max(0,...due.map(item=>(Date.now()-item.nextReviewAt.getTime())/86400000)),requiredPrerequisitesReady,plannerReady:true,reserved:false};
-        choices.push({candidate,item:{lessonId:lesson.id,version:lesson.version,title:lesson.title,subjectCode:moduleDefinition.subjectCode,minutes,activityIds:selected.map(item=>item.id),questions:selected.map(item=>({id:item.questionId!,version:pack.questions.find(question=>question.id===item.questionId)!.version}))}});
-      }
-      const subjectMinutes:Record<string,number>=Object.create(null);for(const session of this.store.studySessions.filter(row=>row.ownerId===ownerId&&row.status==="COMPLETED"&&row.endedAt&&row.endedAt.getTime()>=Date.now()-7*86400000))for(const item of sessionItemsSchema.parse(session.items))subjectMinutes[item.subjectCode]=(subjectMinutes[item.subjectCode]??0)+item.minutes;
-      const deadline=pack.track.metadata.examDate;const phase=typeof deadline==="string"&&Number.isFinite(Date.parse(deadline))?examPhase(new Date(),new Date(deadline)):"FOUNDATION";
-      const plan=planCandidates(choices.map(choice=>choice.candidate),budgetMinutes,phase,subjectMinutes,subjectLimits);if(!plan.items.length)continue;
-      for(const old of this.store.studySessions.filter(row=>row.ownerId===ownerId&&row.status==="PLANNED")){old.status="ABANDONED";old.endedAt=new Date();}
-      const row={id:crypto.randomUUID(),ownerId,trackId:pack.track.id,status:"PLANNED",budgetMinutes,items:plan.items.map(candidate=>choices.find(choice=>choice.candidate.id===candidate.id)!.item),policyVersion:plan.policyVersion,startedAt:null,endedAt:null,createdAt:new Date()};this.store.studySessions.push(row);return row;
-    }return null;
-  }
-  /** ADR 0072: mirrors StudySessionRepository.startBlock. */
+  constructor(private readonly store=getMemoryStore()){}
   async startBlock(ownerId:string,target:PracticeBlockTarget,now=new Date()){
     const policyVersion=practiceBlockPolicy(target);
     const open=this.store.studySessions.find(row=>row.ownerId===ownerId&&row.status==="ACTIVE");
-    if(open?.policyVersion===policyVersion)return open;
-    const items=this.blockItems(ownerId,target,now);
+    const resumable=open?.policyVersion===policyVersion?open:undefined;
+    let items;
+    try{items=this.blockItems(ownerId,target,now);}catch(error){if(resumable&&error instanceof TargetedPracticeError&&error.code!=="exam_active")return resumable;throw error;}
+    if(resumable)return resumable;
     if(!items.length)return null;
     for(const old of this.store.studySessions.filter(row=>row.ownerId===ownerId&&(row.status==="ACTIVE"||row.status==="PLANNED"))){old.status="ABANDONED";old.endedAt=now;}
     const row={id:crypto.randomUUID(),ownerId,trackId:items[0].trackId!,status:"ACTIVE",budgetMinutes:PRACTICE_BLOCK_MINUTES,items,policyVersion,startedAt:now as Date|null,endedAt:null as Date|null,createdAt:now};this.store.studySessions.push(row);return row;
@@ -72,19 +26,16 @@ export class MemoryStudySessionRepository{
   }
   private blockItems(ownerId:string,target:PracticeBlockTarget,now:Date){
     const selection=memoryTargetedSelection(this.store,ownerId,target,now);
-    const data=memoryAdaptiveChoices(this.store,ownerId,PRACTICE_BLOCK_MINUTES,undefined,now,selection);
+    const data=memoryAdaptiveChoices(this.store,ownerId,PRACTICE_BLOCK_MINUTES,now,selection);
     const plan=planCandidates(data.choices.map(choice=>choice.candidate),PRACTICE_BLOCK_MINUTES,"FOUNDATION",data.subjectMinutes,undefined,true);
     return capBlockItems(plan.items.map(candidate=>data.choices.find(choice=>choice.candidate.id===candidate.id)!.item));
   }
   async get(ownerId:string,id:string){return this.store.studySessions.find(row=>row.ownerId===ownerId&&row.id===id)??null;}
-  async list(ownerId:string){return this.store.studySessions.filter(row=>row.ownerId===ownerId).slice(-15).reverse();}
-  async planningFacts(ownerId:string,now=new Date()){return this.store.studySessions.filter(row=>row.ownerId===ownerId&&(["ACTIVE","PLANNED"].includes(row.status)||row.status==="COMPLETED"&&row.endedAt&&row.endedAt.getTime()>=now.getTime()-9*86400_000)).slice().reverse();}
   async transition(...[ownerId,id,action,now=new Date()]:Parameters<StudySessionRepository["transition"]>){
     const row=this.store.studySessions.find(row=>row.id===id&&row.ownerId===ownerId);if(!row)throw new SessionStateError();
-    const target=action==="start"?"ACTIVE":action==="complete"?"COMPLETED":"ABANDONED";if(row.status===target)return row;
-    if(action==="start"?row.status!=="PLANNED":row.status!=="ACTIVE")throw new SessionStateError();
-    if(action==="start"&&this.store.studySessions.some(row=>row.ownerId===ownerId&&row.status==="ACTIVE"))throw new SessionStateError();
-    sessionItemsSchema.parse(row.items);if(action==="start")assertRoutineStart(this.routineWeek(ownerId,now),row.items);row.status=target;if(action==="start")row.startedAt=now;else row.endedAt=now;return row;
+    const target=action==="complete"?"COMPLETED":"ABANDONED";if(row.status===target)return row;
+    if(row.status!=="ACTIVE")throw new SessionStateError();
+    sessionItemsSchema.parse(row.items);row.status=target;row.endedAt=now;return row;
   }
   async result(ownerId: string, id: string) {
     const session = await this.get(ownerId, id); if (!session) return null;

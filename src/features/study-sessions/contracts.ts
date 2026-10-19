@@ -8,7 +8,3 @@ export const sessionItemSchema=z.object({lessonId:z.string().min(1),version:z.nu
 });
 export const sessionItemsSchema=z.array(sessionItemSchema).min(1);
 export type SessionItem=z.infer<typeof sessionItemSchema>;
-export const STUDY_SESSION_POLICY="session.v1";
-export const LEGACY_SESSION_BUDGETS=[15,30,60] as const;
-export const ADAPTIVE_SESSION_BUDGETS=[10,20,30,45] as const;
-export type SessionBudget=10|15|20|30|45|60;

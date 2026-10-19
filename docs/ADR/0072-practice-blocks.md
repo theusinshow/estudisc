@@ -21,5 +21,6 @@ ADR 0060 made continuous lessons the main study path, but Revisão and Erros sti
 ## Consequences
 
 - Mastery, ConceptEvidence, spacing, mistakes, achievements and Attempts are unchanged; blocks only change how Questions are offered.
-- The engine's untargeted `plan()` (planner.v1/v2), routine constraints and `StudyPlanRepository` remain as dormant code exercised by tests; a later cleanup can remove them with their tests. Planner, routine and session tables stay as history and in exports.
+- Cleanup (2026-10-19): the untargeted `plan()`, `planningFacts()`, `list()`, session budgets, routine constraints/policy/context and `StudyPlanRepository` were removed with their tests. Practice blocks keep the composition core (`planCandidates`, adaptive choices, targeted selection). Planner, routine and session tables stay as history and in backups.
+- An open block is not resumed while an EXAM is active (same rule as starting one).
 - Production can drop the three retired env vars at any time; the flag schema ignores them.

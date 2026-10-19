@@ -44,7 +44,10 @@ Plan: docs/superpowers/plans/2026-10-18-practice-blocks.md (tasks 1–9 done loc
 Acceptance: lint, typecheck, pnpm test (760 passed / 4 skipped), pnpm test:e2e (43 passed / 17 skipped per project), flagged rollout 10/12 suites PASS; exam-navigation and source-goal-prediction fail the same way on b7ff5b4 (pre-existing, open as separate fixes).
 LIVE 2026-10-19: owner approved; pushed e5ebad9, Railway deployment success.
 Fixed 2026-10-19: exam-navigation (the F4 pace badge made the nowrap exam timer 351px wide at 320; the timer now wraps) and source-goal-prediction (stale assertion: since 2833ff1 students see "Objetivo:" instead of "Objetivo proposto desta exploração:").
-NEXT ACTION: optional — drop the three retired env vars on Railway.
+Env vars dropped on Railway 2026-10-19.
+Planner code cleanup (2026-10-19, owner request): remove the session engine's untargeted plan()/planningFacts()/list(), routine planner modules (StudyPlanRepository, routine-*), session budgets and the routine subject limits; keep planCandidates/adaptive choices (used by practice blocks), summarizeSession (AI context) and the planner/routine tables (history, exports). Port integration tests that used plan() to practice blocks. Also: an open block must not be resumed while an EXAM is active.
+Done locally 2026-10-19: lint, typecheck, pnpm test 745 passed / 4 skipped; integration tests ported to practice blocks.
+NEXT ACTION: owner approves the push.
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 

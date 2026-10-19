@@ -7,7 +7,7 @@ import { StudySessionRepository } from "@/db/repositories/study-session-reposito
 import { attempts,conceptEvidence,reviewSchedules,concepts,owners,xpTransactions } from "@/db/schema";
 import { createMigratedPgliteTestDatabase } from "./pglite-test-db";
 import { simulatePublication } from "./ifsc-publication-fixture";
-it("completes the percentage slice, deduplicates retries and isolates owners",async()=>{
+it("completes the percentage practice block, deduplicates retries and isolates owners",async()=>{
   const database=await createMigratedPgliteTestDatabase();
   try{
     // Publication is simulated only in this disposable fixture. The source seed remains draft.
@@ -18,10 +18,11 @@ it("completes the percentage slice, deduplicates retries and isolates owners",as
     const prerequisites=(await database.db.select().from(concepts)).filter(concept=>["MAT.FRACTION.MEANING","MAT.DECIMAL.MEANING","MAT.PROPORTION.CONCEPT"].includes(concept.stableId));
     for(const concept of prerequisites)await database.db.insert(conceptEvidence).values({ownerId:"student-a",conceptId:concept.id,type:"diagnostic_result",strength:2,sourceType:"disposable_test",sourceId:crypto.randomUUID(),conditions:{outcome:"passed"}});
     const sessions=new StudySessionRepository(database.db);const questions=new QuestionStudyRepository(database.db);
-    const session=await sessions.plan("student-a",15);expect(session).not.toBeNull();
+    const [percentage]=(await database.db.select().from(concepts)).filter(concept=>concept.stableId==="MAT.PCT.CALCULATE");
+    await database.db.insert(reviewSchedules).values({ownerId:"student-a",conceptId:percentage.id,currentMasteryState:"learning",nextReviewAt:new Date(),policyVersion:"review.v2",reviewCount:0,recentQuality:0});
+    const session=await sessions.startBlock("student-a",{kind:"review",conceptId:"MAT.PCT.CALCULATE"});expect(session).not.toBeNull();
     expect(await sessions.get("student-b",session!.id)).toBeNull();
-    await sessions.transition("student-a",session!.id,"start");
-    const frozen=session!.items;expect((await sessions.plan("student-a",30))!.items).toEqual(frozen);
+    const frozen=session!.items;expect((await sessions.startBlock("student-a",{kind:"review",conceptId:"MAT.PCT.CALCULATE"}))!.items).toEqual(frozen);
     const view=await questions.view("student-a","mat07-q3","Q-MAT-GOLDEN-3",1,session!.id);
     expect(view.question).not.toHaveProperty("answer");expect(view.question).not.toHaveProperty("explanation");
     // A wrong answer hides the worked solution, so the corrected retry is still independent evidence.
@@ -40,6 +41,6 @@ it("completes the percentage slice, deduplicates retries and isolates owners",as
     expect(await database.db.select().from(conceptEvidence)).toHaveLength(5);
     expect(await database.db.select().from(reviewSchedules)).toHaveLength(1);
     await sessions.transition("student-a",session!.id,"complete");expect((await sessions.result("student-a",session!.id))!).toMatchObject({answered:1,correct:1});
-    await expect(sessions.transition("student-a",session!.id,"start")).rejects.toThrow("Session state");
+    await expect(sessions.transition("student-a",session!.id,"abandon")).rejects.toThrow("Session state");
   }finally{await database.close();}
 });
