@@ -43,7 +43,8 @@ Owner: the old planner/session flow is confusing; keep continuous lessons only; 
 Plan: docs/superpowers/plans/2026-10-18-practice-blocks.md (tasks 1–9 done locally; ADR 0072).
 Acceptance: lint, typecheck, pnpm test (760 passed / 4 skipped), pnpm test:e2e (43 passed / 17 skipped per project), flagged rollout 10/12 suites PASS; exam-navigation and source-goal-prediction fail the same way on b7ff5b4 (pre-existing, open as separate fixes).
 LIVE 2026-10-19: owner approved; pushed e5ebad9, Railway deployment success.
-NEXT ACTION: optional — drop the three retired env vars on Railway; fix the pre-existing exam-navigation and source-goal-prediction e2e failures.
+Fixed 2026-10-19: exam-navigation (the F4 pace badge made the nowrap exam timer 351px wide at 320; the timer now wraps) and source-goal-prediction (stale assertion: since 2833ff1 students see "Objetivo:" instead of "Objetivo proposto desta exploração:").
+NEXT ACTION: optional — drop the three retired env vars on Railway.
 
 ## Accounts and e-mail sign-in — ADR 0068 (2026-10-17, Claude, branch feat/saas-signup)
 

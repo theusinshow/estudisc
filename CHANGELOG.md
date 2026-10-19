@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-19 — Simulado timer fits small phones
+
+- Simulado: the timer bar (time left, questions, pace badge) wraps on phones narrower than ~360px instead of widening the page; at 320px the simulado page no longer scrolls sideways.
+- Tests: the source-goal prediction e2e expects the student-facing "Objetivo:" prefix shown since the student-copy review.
+
 ## 2026-10-18 — Practice blocks replace time-budget sessions (ADR 0072)
 
 - Revisão: "Revisar agora" and "Praticar este conceito" start a block of up to 5 Questions, one at a time ("2 de 5"), with "Próxima", then a summary ("3 de 5 sem ajuda", ✓/↺, "Mais 5", "Voltar"). Leaving and coming back resumes the block.

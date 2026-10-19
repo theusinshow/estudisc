@@ -34,7 +34,7 @@
 /* Running an assessment */
 .assessment-page { width: min(100%, 820px); }
 .assessment-run { display: grid; gap: var(--estudisc-spacing-10); }
-.exam-timer { position: sticky; top: 72px; z-index: 20; display: flex; align-items: baseline; gap: var(--estudisc-spacing-8); padding: var(--estudisc-spacing-6) var(--estudisc-spacing-10); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); box-shadow: var(--estudisc-shadow-structural); }
+.exam-timer { position: sticky; top: 72px; z-index: 20; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--estudisc-spacing-4) var(--estudisc-spacing-8); padding: var(--estudisc-spacing-6) var(--estudisc-spacing-10); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); box-shadow: var(--estudisc-shadow-structural); }
 .exam-timer span { font-size: 0.8125rem; font-weight: 700; }
 .exam-timer strong { font-family: var(--font-mono), monospace; font-size: 1.5rem; font-variant-numeric: tabular-nums; color: var(--estudisc-color-signal); }
 .exam-timer small { margin-left: auto; font-weight: 600; }
