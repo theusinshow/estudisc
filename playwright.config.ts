@@ -6,6 +6,10 @@ export default defineConfig({
   workers: 1,
   retries: process.env.CI ? 2 : 0,
   reporter: process.env.CI ? "github" : "list",
+  // `next dev` compiles each route and client bundle on first use (~5s for a lesson on an idle machine, more under load);
+  // the defaults (30s per test, 5s per assertion) turned those first hits into intermittent failures.
+  timeout: 60_000,
+  expect: { timeout: 10_000 },
   use: {
     baseURL: "http://127.0.0.1:3210",
     trace: "on-first-retry"

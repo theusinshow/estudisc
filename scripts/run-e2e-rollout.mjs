@@ -11,7 +11,7 @@ mkdirSync(".local/evolution-final",{recursive:true});let failed=false;
 // cannot contaminate another feature's canonical fixture in the process-global memory harness.
 for(const suite of selected)for(const project of ["chromium","mobile-chrome"]){
  const result=spawnSync(process.execPath,[cli,"test",`tests/e2e/${suite}.spec.ts`,`--project=${project}`,`--output=test-results/evolution-rollout/${project}-${suite}`],{env:{...process.env,...flags},encoding:"utf8",maxBuffer:8*1024*1024});
- const log=`${result.stdout??""}\n${result.stderr??""}`;writeFileSync(`.local/evolution-final/${project}-${suite}.log`,log);
+ const log=`${result.stdout??""}\n${result.stderr??""}\n[rollout] status=${result.status} signal=${result.signal??""} error=${result.error?.message??""}\n`;writeFileSync(`.local/evolution-final/${project}-${suite}.log`,log);
  console.log(`${project}/${suite}: ${result.status===0?"PASS":"FAIL"} ${log.split(/\r?\n/).filter(line=>/\d+ (passed|skipped|failed)/.test(line)).map(line=>line.trim()).join("; ")}`);
  if(result.error||result.signal)console.error(result.error?.message??result.signal);
  if(result.status!==0)failed=true;

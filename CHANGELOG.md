@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-19 — Steadier end-to-end tests
+
+- Playwright waits up to 10s per assertion and 60s per test: `next dev` compiles each route on first use (about 5s for a lesson), which made whichever test hit a heavy route first fail intermittently.
+- The rollout e2e script records each suite process status in its log.
+
 ## 2026-10-19 — Old planner code removed (ADR 0072)
 
 - Removed the time-budget session planner and the weekly routine engine (repositories, policies, budgets) and their tests; practice blocks keep the selection core. Planner and routine tables remain as history and in backups.
