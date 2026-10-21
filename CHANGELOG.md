@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-21 — Coded Insights tracker
+
+- The Coded Insights tracker script loads from the root layout `<head>` on every page. The content security policy allows that script to send events to `insights.codedbym.com`.
+
 ## 2026-10-21 — Public home redirect and legal meta descriptions
 
 - Visitors without a session who open `/` now get a 301 to `/conheca` (was a 307), with `Cache-Control: private, no-store` so browsers do not pin it. Signed-in `/` stays the study app. `/conheca` remains the canonical, the sitemap URL and the target of public internal links.
