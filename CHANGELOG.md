@@ -8,6 +8,14 @@
 - The landing hero countdown is a compact card: “Faltam N dias” beside the exam date, sized to its content. The flip board on `/provas` is unchanged.
 - SEO is unchanged: canonical and title on `/conheca`, the non-cached 301 from signed-out `/`, robots.txt and the sitemap. The sitemap `lastmod` for `/conheca` is 2026-10-21.
 
+## 2026-10-21 — Coded Insights script source
+
+- The content security policy allows `https://insights.codedbym.com` in `script-src` as well as `connect-src`. The tracker script, and the vitals and heatmap scripts it loads from that origin, are covered. Event delivery still uses `connect-src`.
+
+## 2026-10-21 — Coded Insights tracker
+
+- The Coded Insights tracker script loads from the root layout `<head>` on every page. The content security policy allows that script to send events to `insights.codedbym.com`.
+
 ## 2026-10-21 — Public home redirect and legal meta descriptions
 
 - Visitors without a session who open `/` now get a 301 to `/conheca` (was a 307), with `Cache-Control: private, no-store` so browsers do not pin it. Signed-in `/` stays the study app. `/conheca` remains the canonical, the sitemap URL and the target of public internal links.

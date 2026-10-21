@@ -1,6 +1,6 @@
 # Conversion funnel
 
-How Estudisc measures the path from the sales page to paid access (ADR 0061). Two sources, no third-party tracker:
+How Estudisc measures the path from the sales page to paid access (ADR 0061). Two first-party sources. The Coded Insights tracker in the root layout records page views separately and is not one of the steps below:
 
 - **Structured logs** (`event: "funnel_event"`, field `funnelStep`) for steps that leave nothing in the database. Written by `logFunnelEvent` in `src/lib/funnel-events.ts`; the logger allowlist keeps personal data and owner ids out.
 - **The database** for everything it already records. It is the source of truth for revenue.

@@ -9,11 +9,14 @@ describe("buildContentSecurityPolicy", () => {
       isDevelopment: false
     });
 
-    expect(policy).toContain("script-src 'self' 'nonce-abc123' 'strict-dynamic'");
+    expect(policy).toContain("script-src 'self' 'nonce-abc123' 'strict-dynamic' https://insights.codedbym.com");
     expect(policy).not.toContain("'unsafe-inline'");
     expect(policy).not.toContain("'unsafe-eval'");
     expect(policy).toContain("style-src 'self' 'nonce-abc123'");
     expect(policy).toContain("frame-src https://accounts.google.com");
+    expect(policy).toContain(
+      "connect-src 'self' ws: wss: https://accounts.google.com https://oauth2.googleapis.com https://www.googleapis.com https://insights.codedbym.com"
+    );
   });
 
   it("allows eval only for the local Next.js development server", () => {
@@ -22,7 +25,7 @@ describe("buildContentSecurityPolicy", () => {
       isDevelopment: true
     });
 
-    expect(policy).toContain("script-src 'self' 'nonce-dev123' 'strict-dynamic' 'unsafe-eval'");
+    expect(policy).toContain("script-src 'self' 'nonce-dev123' 'strict-dynamic' https://insights.codedbym.com 'unsafe-eval'");
     expect(policy).not.toContain("'unsafe-inline'");
   });
 });
