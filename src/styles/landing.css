@@ -105,3 +105,155 @@
 .landing-sheet .secondary-action { justify-self: start; max-width: 100%; overflow-wrap: anywhere; }
 .landing .offer-price .primary-action { justify-content: space-between; }
 .landing .offer-price h2 { font-size: clamp(1.5rem, 6.5vw, 2rem); }
+
+/* /conheca sales page. Scoped so /pais-e-escolas keeps the shared sheets above.
+   Poster headline on the lime frame, one study sheet, one ink price block. */
+.public-main > .landing-sales { width: min(100%, 1040px); }
+.landing-sales { gap: 56px; }
+.landing-sales .sales-intro { display: grid; gap: 28px; }
+.landing-sales .sales-hero { display: grid; gap: 22px; align-items: center; }
+.landing-sales .sales-hero-copy { display: grid; gap: 16px; min-width: 0; }
+.landing-sales .sales-hero h1 { margin: 0; font-size: clamp(2.35rem, 8vw, 4.25rem); font-weight: 900; font-stretch: 125%; line-height: 0.94; text-wrap: balance; overflow-wrap: break-word; }
+.landing-sales .sales-stage { display: grid; gap: 14px; min-width: 0; }
+.landing-sales .sales-clock { justify-self: center; display: inline-grid; grid-template-columns: auto auto; width: max-content; max-width: 100%; border: 3px solid var(--estudisc-color-ink); border-radius: 16px; background: var(--estudisc-color-panel); box-shadow: 4px 4px 0 var(--estudisc-color-ink); overflow: hidden; }
+.landing-sales .sales-clock-days,
+.landing-sales .sales-clock-date { display: grid; gap: 2px; align-content: center; min-width: 0; padding: 8px 14px 10px; }
+.landing-sales .sales-clock-date { border-left: 3px solid var(--estudisc-color-ink); background: var(--estudisc-color-signal); }
+.landing-sales .sales-clock small { font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--estudisc-color-dim); }
+.landing-sales .sales-clock-date small { color: var(--estudisc-color-ink); }
+.landing-sales .sales-clock strong { font-size: 1.75rem; font-weight: 900; font-stretch: 125%; line-height: 0.95; font-variant-numeric: tabular-nums; }
+.landing-sales .sales-clock strong span { font-size: 0.875rem; font-weight: 800; font-stretch: 100%; }
+.landing-sales .sales-clock time { font-size: 1.05rem; font-weight: 900; line-height: 1.1; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* Product loop in the hero: wrong answer, hint, then the correct one. The resting state is the
+   resolved question, so reduced motion and browsers without animation still show the point. */
+.landing-sales .sales-device { --cycle: 8s; position: relative; display: grid; gap: 10px; margin: 0; padding: 16px 16px 14px; overflow: hidden; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 8px 8px 0 var(--estudisc-color-ink); }
+.landing-sales .sales-device-progress { position: absolute; inset: 0 0 auto; height: 5px; background: var(--estudisc-color-signal); transform: scaleX(1); transform-origin: left center; }
+.landing-sales .sales-device-top { display: flex; justify-content: space-between; gap: 8px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--estudisc-color-dim); }
+.landing-sales .sales-device-top [data-subject] { color: var(--estudisc-color-ink); }
+.landing-sales .sales-device-stem { margin: 0; font-size: 1.25rem; font-weight: 900; font-stretch: 112%; line-height: 1.15; }
+.landing-sales .sales-device-answers { display: grid; gap: 8px; }
+.landing-sales .sales-device-answer { position: relative; isolation: isolate; display: flex; align-items: center; gap: 10px; min-width: 0; padding: 8px 10px; border: 3px solid var(--estudisc-color-ink); border-radius: 14px; background: var(--estudisc-color-panel); font-weight: 800; }
+.landing-sales .sales-device-answer::before { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; }
+.landing-sales .sales-device-answer > * { position: relative; z-index: 1; }
+.landing-sales .sales-device-answer b { display: inline-grid; place-items: center; width: 28px; height: 28px; border: 2px solid var(--estudisc-color-ink); border-radius: 8px; background: var(--estudisc-color-panel); }
+.landing-sales .sales-device-answer svg { width: 18px; height: 18px; margin-left: auto; stroke-width: 3; }
+.landing-sales .sales-device-answer[data-result="incorrect"]::before { background: color-mix(in srgb, var(--estudisc-color-subject-accent-mathematics) 42%, var(--estudisc-color-panel)); opacity: 0; }
+.landing-sales .sales-device-answer[data-result="incorrect"] svg { opacity: 0; }
+.landing-sales .sales-device-answer[data-result="correct"]::before { background: var(--estudisc-color-surface-lime); opacity: 1; }
+.landing-sales .sales-device-hint, .landing-sales .sales-device-stamp { display: flex; align-items: center; gap: 8px; margin: 0; font-weight: 800; }
+.landing-sales .sales-device-hint { padding: 8px 10px; border: 2px dashed var(--estudisc-color-ink); border-radius: 12px; background: color-mix(in srgb, var(--estudisc-color-signal) 55%, var(--estudisc-color-panel)); font-size: 0.875rem; }
+.landing-sales .sales-device-hint svg, .landing-sales .sales-device-stamp svg { width: 18px; height: 18px; flex: none; stroke-width: 2.75; }
+.landing-sales .sales-device-stamp { justify-self: start; padding: 4px 10px; border: 3px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-surface-lime); }
+.landing-sales .sales-facts { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.landing-sales .sales-facts li { padding: 6px 12px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); font-size: 0.8125rem; font-weight: 800; line-height: 1.3; }
+
+.landing-sales .sales-rail { display: grid; gap: 10px; }
+.landing-sales .sales-rail h2 { font-size: 0.8125rem; font-weight: 800; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; color: var(--estudisc-color-dim); }
+.landing-sales .sales-subjects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
+.landing-sales .sales-subjects li { min-width: 0; padding: 12px 12px 12px 16px; border: 3px solid var(--estudisc-color-ink); border-left-width: 12px; border-left-color: var(--subject, var(--estudisc-color-signal)); border-radius: 16px; background: var(--estudisc-color-panel); font-weight: 800; line-height: 1.25; overflow-wrap: break-word; }
+
+.landing-sales .sales-block { display: grid; gap: 16px; min-width: 0; }
+.landing-sales .sales-head { display: grid; gap: 8px; max-width: 42rem; }
+.landing-sales .sales-head p { color: var(--estudisc-color-dim); }
+
+.landing-sales .sales-flow { display: grid; margin: 0; padding: 0; list-style: none; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 5px 5px 0 var(--estudisc-color-ink); overflow: hidden; }
+.landing-sales .sales-flow > li { display: grid; gap: 14px; min-width: 0; padding: 16px; }
+.landing-sales .sales-flow > li + li { border-top: 3px solid var(--estudisc-color-ink); }
+.landing-sales .sales-flow-copy { display: grid; gap: 6px; align-content: center; min-width: 0; }
+.landing-sales .sales-flow h3 { display: grid; grid-template-columns: 30px minmax(0, 1fr); align-items: center; gap: 10px; }
+.landing-sales .sales-flow h3 .sales-step { display: inline-grid; place-items: center; width: 30px; height: 30px; border: 2px solid var(--estudisc-color-ink); border-radius: 50%; background: var(--estudisc-color-signal); font-size: 0.9375rem; }
+.landing-sales .sales-flow p { color: var(--estudisc-color-dim); }
+.landing-sales .sales-flow .landing-shot { min-height: 0; }
+
+.landing-sales .sales-index { display: grid; grid-template-columns: max-content minmax(0, 1fr); margin: 0; padding: 0; list-style: none; border-top: 3px solid var(--estudisc-color-ink); }
+.landing-sales .sales-index li { display: grid; grid-column: 1 / -1; grid-template-columns: subgrid; gap: 8px 20px; align-items: baseline; padding: 14px 0; border-bottom: 3px solid var(--estudisc-color-ink); }
+.landing-sales .sales-index strong { font-size: clamp(1.75rem, 6vw, 2.75rem); font-weight: 900; font-stretch: 125%; line-height: 0.95; font-variant-numeric: tabular-nums; }
+.landing-sales .sales-index span { font-weight: 700; line-height: 1.35; overflow-wrap: break-word; }
+
+.landing-sales .landing-free small { font-size: 0.8125rem; font-weight: 700; line-height: 1.35; color: var(--estudisc-color-dim); }
+.landing-sales .landing-free strong { overflow-wrap: break-word; }
+
+/* Decision block: ink sheet, lime type, the yellow button is the only signal color. */
+.landing-sales .sales-price { display: grid; gap: 20px; padding: 20px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); box-shadow: 6px 6px 0 var(--estudisc-color-signal); scroll-margin-top: 16px; }
+.landing-sales .sales-price-offer { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.landing-sales .sales-price .landing-price-value span { font-weight: 800; }
+.landing-sales .sales-price .landing-checks svg { color: var(--estudisc-color-ink); }
+.landing-sales .sales-price .landing-note { border-left-color: var(--estudisc-color-signal); }
+.landing-sales .sales-price .landing-note a { color: var(--estudisc-color-paper); }
+
+[data-theme="vibrante"] .public-header .header-signup { display: none; }
+
+@media (min-width: 720px) {
+  .landing-sales .sales-subjects { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  [data-theme="vibrante"] .public-header .header-signup { display: inline-flex; min-height: 44px; padding: 0 16px; box-shadow: 3px 3px 0 var(--estudisc-color-ink); }
+}
+@media (min-width: 800px) {
+  .landing-sales .sales-hero { grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr); column-gap: 36px; }
+  .landing-sales .sales-flow > li { grid-template-columns: minmax(0, 1fr) minmax(220px, 300px); align-items: center; column-gap: 24px; }
+  .landing-sales .sales-price { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 28px; align-items: center; padding: 28px; }
+  .landing-sales .sales-price .landing-checks { padding-left: 28px; border-left: 3px solid color-mix(in srgb, var(--estudisc-color-paper) 45%, transparent); }
+}
+@media (max-width: 719px) {
+  .landing-sales { gap: 40px; }
+  .landing-sales .sales-intro { gap: 22px; }
+  .landing-sales .sales-clock-days,
+  .landing-sales .sales-clock-date { padding: 8px 12px; }
+  .landing-sales .sales-clock strong { font-size: 1.5rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .landing-sales .sales-hero-copy > * { animation: sales-rise 0.7s var(--estudisc-motion-easing) both; }
+  .landing-sales .sales-hero-copy > *:nth-child(2) { animation-delay: 0.06s; }
+  .landing-sales .sales-hero-copy > *:nth-child(3) { animation-delay: 0.12s; }
+  .landing-sales .sales-hero-copy > *:nth-child(4) { animation-delay: 0.18s; }
+  .landing-sales .sales-hero-copy > *:nth-child(5) { animation-delay: 0.24s; }
+  .landing-sales .sales-device { animation: sales-float 6.5s ease-in-out infinite; will-change: transform; }
+  .landing-sales .sales-device-progress { animation: sales-progress var(--cycle) linear infinite; will-change: transform, opacity; }
+  .landing-sales .sales-device-answer::before { animation: var(--wash) var(--cycle) var(--estudisc-motion-easing) infinite; will-change: opacity; }
+  .landing-sales .sales-device-answer[data-result="incorrect"] { --wash: sales-wrong; }
+  .landing-sales .sales-device-answer[data-result="correct"] { --wash: sales-right; }
+  .landing-sales .sales-device-answer[data-result="incorrect"] svg { animation: sales-wrong-mark var(--cycle) var(--estudisc-motion-easing) infinite; will-change: opacity; }
+  .landing-sales .sales-device-answer[data-result="correct"] svg { animation: sales-right-mark var(--cycle) var(--estudisc-motion-easing) infinite; will-change: opacity; }
+  .landing-sales .sales-device-hint,
+  .landing-sales .sales-device-stamp { animation: sales-appear var(--cycle) var(--estudisc-motion-easing) infinite; will-change: transform, opacity; }
+  .landing-sales .landing-actions .primary-action svg { transition: transform 160ms var(--estudisc-motion-easing); }
+  .landing-sales .landing-actions .primary-action:hover svg { transform: translateX(4px); }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .landing-sales .sales-reveal { animation: sales-rise linear both; animation-timeline: view(); animation-range: entry 0% cover 28%; }
+  }
+}
+@keyframes sales-rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes sales-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes sales-progress {
+  0% { transform: scaleX(0); opacity: 1; }
+  86% { transform: scaleX(1); opacity: 1; }
+  100% { transform: scaleX(1); opacity: 0; }
+}
+@keyframes sales-wrong {
+  0%, 10%, 100% { opacity: 0; }
+  20%, 42% { opacity: 1; }
+  54% { opacity: 0; }
+}
+@keyframes sales-wrong-mark {
+  0%, 12%, 100% { opacity: 0; }
+  22%, 42% { opacity: 1; }
+  54% { opacity: 0; }
+}
+@keyframes sales-right {
+  0%, 48%, 100% { opacity: 0; }
+  60%, 84% { opacity: 1; }
+}
+@keyframes sales-right-mark {
+  0%, 50%, 100% { opacity: 0; }
+  62%, 84% { opacity: 1; }
+}
+@keyframes sales-appear {
+  0%, 32%, 100% { opacity: 0; transform: translateY(8px); }
+  44%, 84% { opacity: 1; transform: translateY(0); }
+}

@@ -6,7 +6,7 @@ import type { Metadata } from "next";
  * Everything else inherits `noindex` from the root layout. Update `lastModified` when a page's content changes.
  */
 export const INDEXABLE_PAGES = [
-  { path: "/conheca", lastModified: "2026-10-18", priority: 1 },
+  { path: "/conheca", lastModified: "2026-10-21", priority: 1 },
   { path: "/pais-e-escolas", lastModified: "2026-10-18", priority: 0.8 },
   { path: "/suporte", lastModified: "2026-10-17", priority: 0.5 },
   { path: "/termos", lastModified: "2026-10-17", priority: 0.3 },

@@ -1,6 +1,7 @@
 /* Public sales and legal pages (/conheca, /termos, /privacidade). Visitors open them without signing in. */
 .public-site { min-height: 100dvh; display: grid; grid-template-rows: auto 1fr auto; background: var(--estudisc-color-paper); color: var(--estudisc-color-ink); }
 .public-header { display: flex; align-items: center; justify-content: space-between; gap: var(--estudisc-spacing-6); min-height: 60px; padding: var(--estudisc-spacing-4) var(--estudisc-spacing-8); border-bottom: var(--estudisc-border-rule) solid var(--estudisc-color-ink); background: var(--estudisc-color-panel); }
+.public-header nav { display: flex; align-items: center; gap: var(--estudisc-spacing-4); }
 .public-header .secondary-action { display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--estudisc-spacing-8); border: var(--estudisc-border-rule) solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-interactive); background: var(--estudisc-color-panel); color: var(--estudisc-color-ink); font-weight: 700; text-decoration: none; box-shadow: var(--estudisc-shadow-structural); }
 .public-main.auth-surface { min-height: 0; align-items: start; justify-items: center; gap: var(--estudisc-spacing-12); padding: var(--estudisc-spacing-12) var(--estudisc-spacing-8); }
 .public-main > * { width: min(100%, 760px); }
