@@ -3,6 +3,7 @@
 ## 2026-10-21 — Public sales page
 
 - `/conheca` is a poster landing on the vibrante frame: headline and signup first, the four edital subjects, how study works, the published catalog, the four free lessons, then the ink price block. Same facts as before (price, access date, refund, no approval guarantee, no IFSC link, guardian buys for minors). No new social proof.
+- Second pass: stronger student-facing copy, a CSS loop of a question (wrong, hint, correct) in the hero, the existing exam flip-clock, and scroll reveals. Motion is transform/opacity and turns off under `prefers-reduced-motion`. SEO, robots and sign-in are unchanged.
 - SEO is unchanged: canonical and title on `/conheca`, the non-cached 301 from signed-out `/`, robots.txt and the sitemap. The sitemap `lastmod` for `/conheca` is 2026-10-21.
 
 ## 2026-10-21 — Public home redirect and legal meta descriptions

@@ -10,9 +10,10 @@ import { publicPageMetadata } from "@/features/public-site/seo";
 import { siteUrl } from "@/features/public-site/site-url";
 import { PublicLayout } from "@/features/public-site/public-layout";
 import { AccessFacts } from "@/features/public-site/access-facts";
-import { daysUntilExam, examCountdownLabel } from "@/features/public-site/countdown";
+import { daysUntilExam } from "@/features/public-site/countdown";
 import { SampleQuestion } from "@/features/public-site/sample-question";
 import { loadSampleQuestion } from "@/features/public-site/sample-question-loader";
+import { ExamCountdownBoard } from "@/features/study-tools/exam-countdown";
 import { GoalTower } from "@/features/today/goal-tower";
 
 // The product's main URL: signed-out "/" 301s here (for signed-in students "/" is the study app).
@@ -48,8 +49,8 @@ export default async function ConhecaPage() {
     { question: "Quem compra se o aluno for menor de idade?", answer: "O responsável. Menores de 18 anos usam o Estudisc com autorização do responsável, que faz a compra." }
   ];
   // `origem` names the button in the cta_clicked funnel event logged by the sign-in page.
-  const signup = (origem: "landing_hero" | "landing_free") => salesOpen
-    ? <Link href={`/auth/signin?callbackUrl=%2F&origem=${origem}`} className="primary-action">Criar conta grátis<ArrowRight aria-hidden="true" /></Link>
+  const signup = (origem: "landing_hero" | "landing_free", label: string) => salesOpen
+    ? <Link href={`/auth/signin?callbackUrl=%2F&origem=${origem}`} className="primary-action">{label}<ArrowRight aria-hidden="true" /></Link>
     : <Link href="/suporte?acesso=1" className="primary-action">Peça acesso<ArrowRight aria-hidden="true" /></Link>;
   const catalog = [
     { value: formatCount(c.lessons), label: "aulas sobre os conteúdos do edital" },
@@ -68,19 +69,11 @@ export default async function ConhecaPage() {
         <div className="sales-intro">
           <section className="sales-hero">
             <div className="sales-hero-copy">
-              <div className="sales-hero-top">
-                <p className="landing-kicker">Exame de Classificação IFSC 2027/1</p>
-                {days === null ? null : days === 0
-                  ? <p className="sales-countdown">A prova é hoje</p>
-                  : <p className="sales-countdown" aria-label={`${examCountdownLabel(days)}, ${lastDay}`}>
-                    <strong aria-hidden="true">{days}</strong>
-                    <span aria-hidden="true">{days === 1 ? "dia" : "dias"} para a prova<br />{lastDay}</span>
-                  </p>}
-              </div>
-              <h1 id="conheca-title">A prova do IFSC, uma aula por vez.</h1>
-              <p className="landing-lead">Aulas curtas, questões com dica e explicação, simulados no formato da prova e as provas anteriores do IFSC. No celular. {salesOpen ? "A conta grátis abre uma aula de cada matéria." : "Por enquanto, o acesso é por convite."}</p>
+              <p className="landing-kicker">Exame de Classificação IFSC 2027/1 · técnico integrado</p>
+              <h1 id="conheca-title">Pare de adivinhar o que estudar para a prova do IFSC.</h1>
+              <p className="landing-lead">A próxima aula abre sozinha. Errou? Tem dica e solução comentada, e o assunto volta nos dias seguintes. Simulados no formato da prova e {c.pastExams} provas anteriores do IFSC, corrigidas pelo gabarito oficial. {salesOpen ? "A primeira aula de cada matéria é grátis." : "Por enquanto, o acesso é por convite."}</p>
               <div className="landing-actions">
-                {signup("landing_hero")}
+                {signup("landing_hero", "Começar grátis")}
                 <Link href="/auth/signin" className="landing-text-link">Já tenho conta</Link>
               </div>
               <ul className="sales-facts">
@@ -89,9 +82,26 @@ export default async function ConhecaPage() {
                 <li>7 dias para desistir</li>
               </ul>
             </div>
+            <div className="sales-stage">
+              <figure className="sales-device" aria-hidden="true">
+                <span className="sales-device-progress" />
+                <span className="sales-device-top"><span>Hoje</span><span data-subject="MAT">Matemática</span></span>
+                <p className="sales-device-stem">Quanto é 25% de 80?</p>
+                <div className="sales-device-answers">
+                  <span className="sales-device-answer" data-result="incorrect"><b>B</b><span>25</span><X /></span>
+                  <span className="sales-device-answer" data-result="correct"><b>D</b><span>20</span><Check /></span>
+                </div>
+                <p className="sales-device-hint"><Lightbulb />Dica: 25% é a quarta parte do todo.</p>
+                <p className="sales-device-stamp"><Check />Certo</p>
+              </figure>
+              {days === null ? null : <div className="sales-clock">
+                <p aria-hidden="true">Até o dia da prova</p>
+                {days === 0 ? <p className="sales-countdown">A prova é hoje</p> : <ExamCountdownBoard />}
+              </div>}
+            </div>
           </section>
 
-          <section className="sales-rail" aria-labelledby="materias-title">
+          <section className="sales-rail sales-reveal" aria-labelledby="materias-title">
             <h2 id="materias-title">Matérias do edital</h2>
             <ul className="sales-subjects">
               {SUBJECTS.map(subject => <li key={subject.code} data-subject={subject.code}>{subject.name}</li>)}
@@ -99,16 +109,16 @@ export default async function ConhecaPage() {
           </section>
         </div>
 
-        <section className="sales-block" aria-labelledby="como-title">
+        <section className="sales-block sales-reveal" aria-labelledby="como-title">
           <div className="sales-head">
-            <h2 id="como-title">Como é estudar aqui</h2>
-            <p>A próxima aula abre sozinha. Você responde, vê a explicação, e o que errou volta nos dias seguintes.</p>
+            <h2 id="como-title">O app estuda com você</h2>
+            <p>Três coisas que acontecem de verdade, em toda aula.</p>
           </div>
           <ol className="sales-flow">
             <li>
               <div className="sales-flow-copy">
-                <h3><span className="sales-step">1</span>Um botão abre a próxima aula</h3>
-                <p>Você não precisa decidir por onde começar. Parou no meio? Ele volta de onde você parou.</p>
+                <h3><span className="sales-step">1</span>A próxima aula já está escolhida</h3>
+                <p>Um botão abre o que vem agora. Parou no meio? Ele volta de onde você parou.</p>
               </div>
               <div className="landing-shot landing-shot-lesson" data-subject="MAT" aria-hidden="true">
                 <span className="landing-shot-subject">Matemática</span>
@@ -119,8 +129,8 @@ export default async function ConhecaPage() {
             </li>
             <li>
               <div className="sales-flow-copy">
-                <h3><span className="sales-step">2</span>Errou? Tem dica e explicação</h3>
-                <p>Tente de novo, peça uma dica ou veja a solução comentada de cada questão.</p>
+                <h3><span className="sales-step">2</span>O erro vira explicação</h3>
+                <p>Tente de novo, peça uma dica ou leia a solução comentada daquela questão.</p>
               </div>
               <div className="landing-shot landing-shot-hint" aria-hidden="true">
                 <span className="landing-shot-stem">Quanto é 25% de 80?</span>
@@ -131,36 +141,36 @@ export default async function ConhecaPage() {
             </li>
             <li>
               <div className="sales-flow-copy">
-                <h3><span className="sales-step">3</span>O que você erra volta para revisar</h3>
-                <p>Nos dias seguintes, o que você errou volta para revisão. A meta do dia mostra quanto falta.</p>
+                <h3><span className="sales-step">3</span>O que você erra volta</h3>
+                <p>Nos dias seguintes, o assunto entra na revisão. A meta do dia mostra quanto falta.</p>
               </div>
               <div className="landing-shot landing-shot-goal" aria-hidden="true"><GoalTower answered={6} decorative /></div>
             </li>
           </ol>
         </section>
 
-        {sample ? <section className="sales-block landing-try" aria-labelledby="try-title">
+        {sample ? <section className="sales-block sales-reveal landing-try" aria-labelledby="try-title">
           <div className="sales-head">
-            <h2 id="try-title">Tenta uma</h2>
+            <h2 id="try-title">Tenta uma agora</h2>
             <p>Uma questão publicada, de uma aula grátis. Marque e confira. Nada fica gravado.</p>
           </div>
           <SampleQuestion question={sample} />
         </section> : null}
 
-        <section className="sales-block" aria-labelledby="conteudo-title">
+        <section className="sales-block sales-reveal" aria-labelledby="conteudo-title">
           <div className="sales-head">
-            <h2 id="conteudo-title">O que já está publicado</h2>
-            <p>Conteúdo publicado para o Exame de Classificação 2027/1, nas quatro matérias do edital.</p>
+            <h2 id="conteudo-title">Isto já está no curso</h2>
+            <p>Material publicado para o Exame de Classificação 2027/1, nas quatro matérias do edital.</p>
           </div>
           <ul className="sales-index">
             {catalog.map(item => <li key={item.label}><strong>{item.value}</strong><span>{item.label}</span></li>)}
           </ul>
         </section>
 
-        <section className="sales-block" aria-labelledby="gratis-title">
+        <section className="sales-block sales-reveal" aria-labelledby="gratis-title">
           <div className="sales-head">
-            <h2 id="gratis-title">Grátis para começar</h2>
-            <p>{salesOpen ? "Crie sua conta e faça uma aula completa de cada matéria, sem pagar nada." : "Quem recebe acesso começa por uma aula completa de cada matéria."}</p>
+            <h2 id="gratis-title">A primeira aula de cada matéria sai de graça</h2>
+            <p>{salesOpen ? "Crie a conta e faça uma aula completa, sem pagar nada." : "Quem recebe acesso começa por uma aula completa de cada matéria."}</p>
           </div>
           <ul className="landing-free">
             {FREE_SAMPLE_LESSONS.map(lesson => <li key={lesson.id} data-subject={subjectOf(lesson.id)}>
@@ -169,15 +179,15 @@ export default async function ConhecaPage() {
               <small>{lesson.interactiveFeature}</small>
             </li>)}
           </ul>
-          {signup("landing_free")}
+          {signup("landing_free", "Criar conta grátis")}
         </section>
 
-        <section id="preco" className="sales-price" aria-labelledby="preco-title">
+        <section id="preco" className="sales-price sales-reveal" aria-labelledby="preco-title">
           <div className="sales-price-offer">
-            <h2 id="preco-title">Acesso completo</h2>
+            <h2 id="preco-title">Um pagamento. Até o dia da prova.</h2>
             <p className="landing-price-value"><strong>R$ {LIFETIME_PRICE_BRL}</strong><span>pagamento único</span></p>
             {salesOpen
-              ? <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=landing_price" className="primary-action">Criar conta e comprar<ArrowRight aria-hidden="true" /></Link>
+              ? <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=landing_price" className="primary-action">Garantir o acesso<ArrowRight aria-hidden="true" /></Link>
               : <p className="landing-note">As inscrições abrem em breve. <Link href="/suporte?acesso=1">Peça acesso</Link> enquanto isso.</p>}
           </div>
           <AccessFacts className="landing-checks" withContent={false} />
