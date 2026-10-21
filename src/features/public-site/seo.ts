@@ -13,7 +13,7 @@ export const INDEXABLE_PAGES = [
   { path: "/privacidade", lastModified: "2026-10-17", priority: 0.3 }
 ] as const;
 
-/** The product's main URL. "/" redirects here for visitors; for signed-in students "/" is the study app. */
+/** The product's main URL. Signed-out "/" 301s here; for signed-in students "/" is the study app. */
 export const MAIN_PUBLIC_PATH = "/conheca";
 
 export const NOINDEX_ROBOTS: NonNullable<Metadata["robots"]> = { index: false, follow: false };

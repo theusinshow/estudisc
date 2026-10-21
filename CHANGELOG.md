@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-21 — Public home redirect and legal meta descriptions
+
+- Visitors without a session who open `/` now get a 301 to `/conheca` (was a 307), with `Cache-Control: private, no-store` so browsers do not pin it. Signed-in `/` stays the study app. `/conheca` remains the canonical, the sitemap URL and the target of public internal links.
+- `/termos` and `/privacidade` each set their own meta description, written from what those pages say. They no longer inherit the site-wide description.
+
 ## 2026-10-19 — Price R$ 39,90
 
 - Full access now costs R$ 39,90 (was R$ 50), same terms: one payment, access until the exam day, refund right. Every screen, the Mercado Pago checkout, the terms and the structured data read the same constant; existing purchases are untouched.
