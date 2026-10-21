@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-21 — Coded Insights script source
+
+- The content security policy allows `https://insights.codedbym.com` in `script-src` as well as `connect-src`. The tracker script, and the vitals and heatmap scripts it loads from that origin, are covered. Event delivery still uses `connect-src`.
+
 ## 2026-10-21 — Coded Insights tracker
 
 - The Coded Insights tracker script loads from the root layout `<head>` on every page. The content security policy allows that script to send events to `insights.codedbym.com`.

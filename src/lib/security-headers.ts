@@ -26,7 +26,10 @@ export function buildContentSecurityPolicy({
   nonce: string;
   isDevelopment: boolean;
 }>) {
-  const scriptSources = ["'self'", `'nonce-${nonce}'`, "'strict-dynamic'"];
+  // Host allowlist is for browsers that ignore 'strict-dynamic'. Modern browsers still
+  // require the nonce on the parser-inserted tracker; strict-dynamic then allows the
+  // vitals and heatmap scripts it injects from the same origin.
+  const scriptSources = ["'self'", `'nonce-${nonce}'`, "'strict-dynamic'", "https://insights.codedbym.com"];
 
   if (isDevelopment) {
     scriptSources.push("'unsafe-eval'");
