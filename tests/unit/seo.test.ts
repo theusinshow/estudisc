@@ -34,6 +34,27 @@ describe("indexable public pages", () => {
     expect((await pageModules["/pais-e-escolas"]!()).metadata?.title).toBe("Preparatório IFSC integrado para seu filho do 9º ano · Estudisc");
   });
 
+  it("gives /termos and /privacidade distinct descriptions within the snippet length", async () => {
+    const shared = "Preparação para a prova do IFSC 2027 com aulas, questões explicadas, simulados e provas anteriores.";
+    const termos = (await pageModules["/termos"]!()).metadata?.description;
+    const privacidade = (await pageModules["/privacidade"]!()).metadata?.description;
+    expect(typeof termos).toBe("string");
+    expect(typeof privacidade).toBe("string");
+    expect(termos).not.toBe(privacidade);
+    expect(termos).not.toBe(shared);
+    expect(privacidade).not.toBe(shared);
+    expect(termos!.length).toBeLessThanOrEqual(155);
+    expect(privacidade!.length).toBeLessThanOrEqual(155);
+  });
+
+  it("redirects a signed-out / to /conheca with a non-cached 301", async () => {
+    const { visitorHomeRedirect } = await import("@/features/public-site/visitor-home-redirect");
+    const response = visitorHomeRedirect("https://www.estudisc.com.br/?utm=home");
+    expect(response.status).toBe(301);
+    expect(response.headers.get("location")).toBe("https://www.estudisc.com.br/conheca");
+    expect(response.headers.get("cache-control")).toBe("private, no-store");
+  });
+
   it("keeps everything else noindex by default and reads Search Console verification from the environment", async () => {
     vi.stubEnv("GOOGLE_SITE_VERIFICATION", "");
     const { generateMetadata } = await import("@/app/layout");

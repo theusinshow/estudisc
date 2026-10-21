@@ -8,7 +8,11 @@ import { SellerBlock } from "@/features/public-site/seller-block";
 import { LegalHeading, LegalIndex } from "@/features/public-site/legal-index";
 import { publicPageMetadata } from "@/features/public-site/seo";
 
-export const metadata: Metadata = publicPageMetadata({ path: "/termos", title: "Termos de uso — Estudisc" });
+export const metadata: Metadata = publicPageMetadata({
+  path: "/termos",
+  title: "Termos de uso — Estudisc",
+  description: "Termos de uso do Estudisc: conta pessoal, acesso gratuito e completo até a prova, arrependimento em até 7 dias, uso do conteúdo e a lei brasileira."
+});
 export const dynamic = "force-dynamic";
 
 const SECTIONS = [

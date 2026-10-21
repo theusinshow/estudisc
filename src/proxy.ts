@@ -4,6 +4,7 @@ import { readUserSession, USER_SESSION_COOKIE } from "@/features/auth/user-sessi
 import { auth } from "@/auth";
 import { getAuthGuardDecision, isPublicRuntimePath,isAdminRuntimePath } from "@/features/auth/session-guard";
 import { isGoogleAuthConfigured } from "@/features/auth/auth-readiness";
+import { visitorHomeRedirect } from "@/features/public-site/visitor-home-redirect";
 import { getCanonicalRedirectUrl } from "@/lib/canonical-host";
 import { getServerEnv } from "@/lib/env";
 import { isAllowedMutationOrigin } from "@/features/auth/mutation-origin";
@@ -98,7 +99,7 @@ const authProxy = auth((request: AuthenticatedRequest) => {
     // Hybrid sign-in (ADR 0061): without an account cookie, fall through to the Google session check below.
     if (!isHybridSignIn(getServerEnv())) {
       if (pathname.startsWith("/api/")) return secureResponse(NextResponse.json({ code: "auth_required", message: "Entre com sua conta para continuar." }, { status: 401 }), contentSecurityPolicy);
-      if (pathname === "/") return secureResponse(NextResponse.redirect(new URL("/conheca", request.url)), contentSecurityPolicy);
+      if (pathname === "/") return secureResponse(visitorHomeRedirect(request.url), contentSecurityPolicy);
       const accountSignInUrl = new URL("/auth/signin", request.url);
       accountSignInUrl.searchParams.set("callbackUrl", `${request.nextUrl.pathname}${request.nextUrl.search}`);
       return secureResponse(NextResponse.redirect(accountSignInUrl), contentSecurityPolicy);
@@ -130,7 +131,7 @@ const authProxy = auth((request: AuthenticatedRequest) => {
   }
 
   // Visitors without a session who open the home page see the sales page instead of the sign-in form.
-  if (pathname === "/") return secureResponse(NextResponse.redirect(new URL("/conheca", request.url)), contentSecurityPolicy);
+  if (pathname === "/") return secureResponse(visitorHomeRedirect(request.url), contentSecurityPolicy);
   const signInUrl = new URL("/auth/signin", request.url);
   signInUrl.searchParams.set("callbackUrl", request.nextUrl.href);
   return secureResponse(NextResponse.redirect(signInUrl), contentSecurityPolicy);

@@ -5,7 +5,11 @@ import { SellerBlock } from "@/features/public-site/seller-block";
 import { LegalHeading, LegalIndex } from "@/features/public-site/legal-index";
 import { publicPageMetadata } from "@/features/public-site/seo";
 
-export const metadata: Metadata = publicPageMetadata({ path: "/privacidade", title: "Política de privacidade — Estudisc" });
+export const metadata: Metadata = publicPageMetadata({
+  path: "/privacidade",
+  title: "Política de privacidade — Estudisc",
+  description: "Política de privacidade do Estudisc: dados de conta, estudo e pagamento, para que os usamos, com quem compartilhamos e os seus direitos pela LGPD."
+});
 export const dynamic = "force-dynamic";
 
 const SECTIONS = [

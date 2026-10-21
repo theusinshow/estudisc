@@ -15,7 +15,7 @@ import { SampleQuestion } from "@/features/public-site/sample-question";
 import { loadSampleQuestion } from "@/features/public-site/sample-question-loader";
 import { GoalTower } from "@/features/today/goal-tower";
 
-// The product's main URL: "/" redirects visitors here (for signed-in students "/" is the study app).
+// The product's main URL: signed-out "/" 301s here (for signed-in students "/" is the study app).
 export const metadata: Metadata = publicPageMetadata({
   path: "/conheca",
   title: "Exame de Classificação IFSC 2027/1 (técnico integrado) · Estudisc",

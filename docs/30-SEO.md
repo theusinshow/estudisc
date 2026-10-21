@@ -1,12 +1,12 @@
 # SEO — public pages, indexing and crawling
 
-Last updated: 2026-10-18 (SEO pass, branch `feat/seo-20261018`).
+Last updated: 2026-10-21 (visitor `/` is a non-cached 301; legal pages have their own descriptions).
 
 ## Main URL
 
-The product's main URL is **`/conheca`**. `/` cannot be the public home: for a signed-in student it is the study app (Hoje). A visitor without a session who opens `/` gets a **307** to `/conheca` from the proxy.
+The product's main URL is **`/conheca`**. `/` cannot be the public home: for a signed-in student it is the study app (Hoje). A visitor without a session who opens `/` gets a **301** to `/conheca` from the proxy (`Cache-Control: private, no-store`).
 
-`/` is not a 301/308 on purpose. Browsers cache permanent redirects, so a student who once opened `/` signed out would keep being sent to the sales page after signing in. The canonical on `/conheca` and the sitemap tell Google which URL to show; robots.txt allows `/`, so the crawler can follow the redirect.
+The 301 tells crawlers the move is permanent, so they consolidate on `/conheca` (self-canonical, sitemap, internal public links). The response is not stored: a browser that cached a permanent redirect would keep sending a signed-in student from `/` to the sales page. Serving the sales page at `/` was rejected for the same reason — that URL is Hoje once there is a session, so it is not a stable canonical. Sitemap entries and public-site links already use `/conheca`. Signed-in links to `/` stay on Hoje. `robots.txt` is unchanged and still allows `/`, so a crawler can follow the redirect.
 
 ## How indexing is decided
 
@@ -21,7 +21,7 @@ The product's main URL is **`/conheca`**. `/` cannot be the public home: for a s
 |---|---|---|
 | `/conheca`, `/pais-e-escolas`, `/suporte`, `/termos`, `/privacidade` | public | **index** + canonical, in the sitemap |
 | `/provas-anteriores`, `/provas-anteriores/[ano]` | public | **noindex, follow** until the content is released; not in the sitemap |
-| `/` | visitors → 307 `/conheca`; signed-in → app | not indexed (redirect) |
+| `/` | visitors → 301 `/conheca` (not cached); signed-in → app | not indexed (redirect) |
 | `/auth/signin`, `/auth/cadastro` | public | noindex |
 | `/robots.txt`, `/sitemap.xml`, `/opengraph-image` | public | files |
 | `/achievements`, `/assessments`, `/assessments/[id]`, `/concepts/[id]`, `/conta`, `/exports`, `/history`, `/import`, `/knowledge-map`, `/lessons/[id]`, `/mistakes`, `/past-exams`, `/plan`, `/progress`, `/projects`, `/provas`, `/review`, `/study/[id]`, `/tracks`, `/tracks/[id]`, `/upgrade`, `/voce`, `/continuar` | sign-in | noindex |
