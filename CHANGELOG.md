@@ -4,7 +4,8 @@
 
 - `/conheca` is a poster landing on the vibrante frame: headline and signup first, the four edital subjects, how study works, the published catalog, the four free lessons, then the ink price block. Same facts as before (price, access date, refund, no approval guarantee, no IFSC link, guardian buys for minors). No new social proof.
 - Second pass: stronger student-facing copy, a CSS loop of a question (wrong, hint, correct) in the hero, the existing exam flip-clock, and scroll reveals. Motion is transform/opacity and turns off under `prefers-reduced-motion`. SEO, robots and sign-in are unchanged.
-- Hero loop smoothness: answer color is an opacity overlay (no animated background), state changes use the system ease-out, and the cycle fades back to the start instead of cutting. The countdown still ticks once a second. The first clip was encoded at 6 fps.
+- Hero loop smoothness: answer color is an opacity overlay (no animated background), state changes use the system ease-out, and the cycle fades back to the start instead of cutting. The first clip was encoded at 6 fps.
+- The landing hero countdown is a compact card: “Faltam N dias” beside the exam date, sized to its content. The flip board on `/provas` is unchanged.
 - SEO is unchanged: canonical and title on `/conheca`, the non-cached 301 from signed-out `/`, robots.txt and the sitemap. The sitemap `lastmod` for `/conheca` is 2026-10-21.
 
 ## 2026-10-21 — Public home redirect and legal meta descriptions

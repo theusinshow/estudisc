@@ -5,6 +5,7 @@ import "@/styles/landing.css";
 import { getServerEnv } from "@/lib/env";
 import { FREE_SAMPLE_LESSONS, LIFETIME_PRICE_BRL } from "@/features/payments/contracts";
 import { accessLastDay, accessLastDayIso, CONTENT_SUMMARY, formatCount } from "@/features/public-site/content-summary";
+import { examCountdownLabel } from "@/features/public-site/countdown";
 import { courseJsonLd, faqJsonLd, JsonLd, organizationJsonLd, type FaqItem } from "@/features/public-site/json-ld";
 import { publicPageMetadata } from "@/features/public-site/seo";
 import { siteUrl } from "@/features/public-site/site-url";
@@ -13,7 +14,6 @@ import { AccessFacts } from "@/features/public-site/access-facts";
 import { daysUntilExam } from "@/features/public-site/countdown";
 import { SampleQuestion } from "@/features/public-site/sample-question";
 import { loadSampleQuestion } from "@/features/public-site/sample-question-loader";
-import { ExamCountdownBoard } from "@/features/study-tools/exam-countdown";
 import { GoalTower } from "@/features/today/goal-tower";
 
 // The product's main URL: signed-out "/" 301s here (for signed-in students "/" is the study app).
@@ -94,9 +94,15 @@ export default async function ConhecaPage() {
                 <p className="sales-device-hint"><Lightbulb />Dica: 25% é a quarta parte do todo.</p>
                 <p className="sales-device-stamp"><Check />Certo</p>
               </figure>
-              {days === null ? null : <div className="sales-clock">
-                <p aria-hidden="true">Até o dia da prova</p>
-                {days === 0 ? <p className="sales-countdown">A prova é hoje</p> : <ExamCountdownBoard />}
+              {days === null ? null : <div className="sales-clock" role="timer" aria-label={`${examCountdownLabel(days)}, ${lastDay}`}>
+                <span className="sales-clock-days">
+                  <small>{days === 0 ? "Hoje" : days === 1 ? "Falta" : "Faltam"}</small>
+                  <strong>{days === 0 ? "É a prova" : <>{days}<span>{days === 1 ? " dia" : " dias"}</span></>}</strong>
+                </span>
+                <span className="sales-clock-date">
+                  <small>Dia da prova</small>
+                  <time dateTime={accessLastDayIso()}>{lastDay}</time>
+                </span>
               </div>}
             </div>
           </section>

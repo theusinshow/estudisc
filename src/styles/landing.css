@@ -114,12 +114,16 @@
 .landing-sales .sales-hero { display: grid; gap: 22px; align-items: center; }
 .landing-sales .sales-hero-copy { display: grid; gap: 16px; min-width: 0; }
 .landing-sales .sales-hero h1 { margin: 0; font-size: clamp(2.35rem, 8vw, 4.25rem); font-weight: 900; font-stretch: 125%; line-height: 0.94; text-wrap: balance; overflow-wrap: break-word; }
-.landing-sales .sales-countdown { display: inline-flex; align-items: center; margin: 0; padding: 8px 12px; border: 3px solid var(--estudisc-color-ink); border-radius: 14px; background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); font-weight: 800; }
 .landing-sales .sales-stage { display: grid; gap: 14px; min-width: 0; }
-.landing-sales .sales-clock { display: grid; gap: 6px; min-width: 0; min-height: 96px; }
-.landing-sales .sales-clock > p { margin: 0; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--estudisc-color-dim); }
-.landing-sales .flip-board { margin-top: 0; }
-.landing-sales .flip-digit { height: 52px; font-size: 1.35rem; box-shadow: 3px 3px 0 color-mix(in srgb, var(--estudisc-color-ink) 35%, transparent); }
+.landing-sales .sales-clock { justify-self: center; display: inline-grid; grid-template-columns: auto auto; width: max-content; max-width: 100%; border: 3px solid var(--estudisc-color-ink); border-radius: 16px; background: var(--estudisc-color-panel); box-shadow: 4px 4px 0 var(--estudisc-color-ink); overflow: hidden; }
+.landing-sales .sales-clock-days,
+.landing-sales .sales-clock-date { display: grid; gap: 2px; align-content: center; min-width: 0; padding: 8px 14px 10px; }
+.landing-sales .sales-clock-date { border-left: 3px solid var(--estudisc-color-ink); background: var(--estudisc-color-signal); }
+.landing-sales .sales-clock small { font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--estudisc-color-dim); }
+.landing-sales .sales-clock-date small { color: var(--estudisc-color-ink); }
+.landing-sales .sales-clock strong { font-size: 1.75rem; font-weight: 900; font-stretch: 125%; line-height: 0.95; font-variant-numeric: tabular-nums; }
+.landing-sales .sales-clock strong span { font-size: 0.875rem; font-weight: 800; font-stretch: 100%; }
+.landing-sales .sales-clock time { font-size: 1.05rem; font-weight: 900; line-height: 1.1; font-variant-numeric: tabular-nums; white-space: nowrap; }
 
 /* Product loop in the hero: wrong answer, hint, then the correct one. The resting state is the
    resolved question, so reduced motion and browsers without animation still show the point. */
@@ -193,7 +197,9 @@
 @media (max-width: 719px) {
   .landing-sales { gap: 40px; }
   .landing-sales .sales-intro { gap: 22px; }
-  .landing-sales .flip-digit { height: 46px; font-size: 1.15rem; }
+  .landing-sales .sales-clock-days,
+  .landing-sales .sales-clock-date { padding: 8px 12px; }
+  .landing-sales .sales-clock strong { font-size: 1.5rem; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
