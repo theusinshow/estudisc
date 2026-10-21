@@ -123,18 +123,20 @@
 
 /* Product loop in the hero: wrong answer, hint, then the correct one. The resting state is the
    resolved question, so reduced motion and browsers without animation still show the point. */
-.landing-sales .sales-device { --cycle: 7.5s; position: relative; display: grid; gap: 10px; margin: 0; padding: 16px 16px 14px; overflow: hidden; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 8px 8px 0 var(--estudisc-color-ink); }
+.landing-sales .sales-device { --cycle: 8s; position: relative; display: grid; gap: 10px; margin: 0; padding: 16px 16px 14px; overflow: hidden; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 8px 8px 0 var(--estudisc-color-ink); }
 .landing-sales .sales-device-progress { position: absolute; inset: 0 0 auto; height: 5px; background: var(--estudisc-color-signal); transform: scaleX(1); transform-origin: left center; }
 .landing-sales .sales-device-top { display: flex; justify-content: space-between; gap: 8px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--estudisc-color-dim); }
 .landing-sales .sales-device-top [data-subject] { color: var(--estudisc-color-ink); }
 .landing-sales .sales-device-stem { margin: 0; font-size: 1.25rem; font-weight: 900; font-stretch: 112%; line-height: 1.15; }
 .landing-sales .sales-device-answers { display: grid; gap: 8px; }
-.landing-sales .sales-device-answer { display: flex; align-items: center; gap: 10px; min-width: 0; padding: 8px 10px; border: 3px solid var(--estudisc-color-ink); border-radius: 14px; font-weight: 800; }
+.landing-sales .sales-device-answer { position: relative; isolation: isolate; display: flex; align-items: center; gap: 10px; min-width: 0; padding: 8px 10px; border: 3px solid var(--estudisc-color-ink); border-radius: 14px; background: var(--estudisc-color-panel); font-weight: 800; }
+.landing-sales .sales-device-answer::before { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; }
+.landing-sales .sales-device-answer > * { position: relative; z-index: 1; }
 .landing-sales .sales-device-answer b { display: inline-grid; place-items: center; width: 28px; height: 28px; border: 2px solid var(--estudisc-color-ink); border-radius: 8px; background: var(--estudisc-color-panel); }
 .landing-sales .sales-device-answer svg { width: 18px; height: 18px; margin-left: auto; stroke-width: 3; }
-.landing-sales .sales-device-answer[data-result="incorrect"] { background: var(--estudisc-color-panel); }
+.landing-sales .sales-device-answer[data-result="incorrect"]::before { background: color-mix(in srgb, var(--estudisc-color-subject-accent-mathematics) 42%, var(--estudisc-color-panel)); opacity: 0; }
 .landing-sales .sales-device-answer[data-result="incorrect"] svg { opacity: 0; }
-.landing-sales .sales-device-answer[data-result="correct"] { background: var(--estudisc-color-surface-lime); }
+.landing-sales .sales-device-answer[data-result="correct"]::before { background: var(--estudisc-color-surface-lime); opacity: 1; }
 .landing-sales .sales-device-hint, .landing-sales .sales-device-stamp { display: flex; align-items: center; gap: 8px; margin: 0; font-weight: 800; }
 .landing-sales .sales-device-hint { padding: 8px 10px; border: 2px dashed var(--estudisc-color-ink); border-radius: 12px; background: color-mix(in srgb, var(--estudisc-color-signal) 55%, var(--estudisc-color-panel)); font-size: 0.875rem; }
 .landing-sales .sales-device-hint svg, .landing-sales .sales-device-stamp svg { width: 18px; height: 18px; flex: none; stroke-width: 2.75; }
@@ -200,12 +202,15 @@
   .landing-sales .sales-hero-copy > *:nth-child(3) { animation-delay: 0.12s; }
   .landing-sales .sales-hero-copy > *:nth-child(4) { animation-delay: 0.18s; }
   .landing-sales .sales-hero-copy > *:nth-child(5) { animation-delay: 0.24s; }
-  .landing-sales .sales-device { animation: sales-float 6.5s ease-in-out infinite; }
-  .landing-sales .sales-device-progress { animation: sales-progress var(--cycle) linear infinite; }
-  .landing-sales .sales-device-answer[data-result="incorrect"] { animation: sales-wrong var(--cycle) linear infinite; }
-  .landing-sales .sales-device-answer[data-result="correct"] { animation: sales-right var(--cycle) linear infinite; }
+  .landing-sales .sales-device { animation: sales-float 6.5s ease-in-out infinite; will-change: transform; }
+  .landing-sales .sales-device-progress { animation: sales-progress var(--cycle) linear infinite; will-change: transform, opacity; }
+  .landing-sales .sales-device-answer::before { animation: var(--wash) var(--cycle) var(--estudisc-motion-easing) infinite; will-change: opacity; }
+  .landing-sales .sales-device-answer[data-result="incorrect"] { --wash: sales-wrong; }
+  .landing-sales .sales-device-answer[data-result="correct"] { --wash: sales-right; }
+  .landing-sales .sales-device-answer[data-result="incorrect"] svg { animation: sales-wrong-mark var(--cycle) var(--estudisc-motion-easing) infinite; will-change: opacity; }
+  .landing-sales .sales-device-answer[data-result="correct"] svg { animation: sales-right-mark var(--cycle) var(--estudisc-motion-easing) infinite; will-change: opacity; }
   .landing-sales .sales-device-hint,
-  .landing-sales .sales-device-stamp { animation: sales-appear var(--cycle) linear infinite; }
+  .landing-sales .sales-device-stamp { animation: sales-appear var(--cycle) var(--estudisc-motion-easing) infinite; will-change: transform, opacity; }
   .landing-sales .landing-actions .primary-action svg { transition: transform 160ms var(--estudisc-motion-easing); }
   .landing-sales .landing-actions .primary-action:hover svg { transform: translateX(4px); }
 }
@@ -214,35 +219,35 @@
     .landing-sales .sales-reveal { animation: sales-rise linear both; animation-timeline: view(); animation-range: entry 0% cover 28%; }
   }
 }
-@keyframes sales-rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
-@keyframes sales-float { 50% { transform: translateY(-8px); } }
-@keyframes sales-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes sales-rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes sales-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes sales-progress {
+  0% { transform: scaleX(0); opacity: 1; }
+  86% { transform: scaleX(1); opacity: 1; }
+  100% { transform: scaleX(1); opacity: 0; }
+}
 @keyframes sales-wrong {
-  0%, 14% { background: var(--estudisc-color-panel); }
-  22%, 46% { background: color-mix(in srgb, var(--estudisc-color-subject-accent-mathematics) 42%, var(--estudisc-color-panel)); }
-  58%, 100% { background: var(--estudisc-color-panel); }
+  0%, 10%, 100% { opacity: 0; }
+  20%, 42% { opacity: 1; }
+  54% { opacity: 0; }
 }
 @keyframes sales-wrong-mark {
-  0%, 16% { opacity: 0; }
-  24%, 46% { opacity: 1; }
-  58%, 100% { opacity: 0; }
+  0%, 12%, 100% { opacity: 0; }
+  22%, 42% { opacity: 1; }
+  54% { opacity: 0; }
 }
-.landing-sales .sales-device-answer[data-result="incorrect"] svg { animation: sales-wrong-mark var(--cycle) linear infinite; }
 @keyframes sales-right {
-  0%, 50% { background: var(--estudisc-color-panel); }
-  62%, 100% { background: var(--estudisc-color-surface-lime); }
+  0%, 48%, 100% { opacity: 0; }
+  60%, 84% { opacity: 1; }
 }
 @keyframes sales-right-mark {
-  0%, 52% { opacity: 0; }
-  64%, 100% { opacity: 1; }
+  0%, 50%, 100% { opacity: 0; }
+  62%, 84% { opacity: 1; }
 }
 @keyframes sales-appear {
-  0%, 38% { opacity: 0; transform: translateY(8px); }
-  50%, 100% { opacity: 1; transform: none; }
-}
-@media (prefers-reduced-motion: no-preference) {
-  .landing-sales .sales-device-answer[data-result="correct"] svg { animation: sales-right-mark var(--cycle) linear infinite; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .landing-sales .sales-device-answer[data-result="incorrect"] svg { animation: none; opacity: 0; }
+  0%, 32%, 100% { opacity: 0; transform: translateY(8px); }
+  44%, 84% { opacity: 1; transform: translateY(0); }
 }
