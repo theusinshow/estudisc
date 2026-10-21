@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-21 — Coded Insights tracker
+
+- The Coded Insights tracker script loads from the root layout `<head>` on every page. The content security policy allows that script to send events to `insights.codedbym.com`.
+
 ## 2026-10-19 — Price R$ 39,90
 
 - Full access now costs R$ 39,90 (was R$ 50), same terms: one payment, access until the exam day, refund right. Every screen, the Mercado Pago checkout, the terms and the structured data read the same constant; existing purchases are untouched.

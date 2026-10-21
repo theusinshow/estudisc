@@ -42,7 +42,7 @@ export function buildContentSecurityPolicy({
     `style-src 'self' 'nonce-${nonce}'`,
     "img-src 'self' data: blob: https://lh3.googleusercontent.com https://*.googleusercontent.com",
     "font-src 'self' data:",
-    "connect-src 'self' ws: wss: https://accounts.google.com https://oauth2.googleapis.com https://www.googleapis.com",
+    "connect-src 'self' ws: wss: https://accounts.google.com https://oauth2.googleapis.com https://www.googleapis.com https://insights.codedbym.com",
     "frame-src https://accounts.google.com",
     "worker-src 'self' blob:",
     "manifest-src 'self'",

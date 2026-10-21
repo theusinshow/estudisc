@@ -52,4 +52,4 @@ Signed-in routes stay crawlable on purpose: for a crawler they redirect to the s
 ## Measurement
 
 - Search Console: the domain is verified by DNS TXT. `GOOGLE_SITE_VERIFICATION` (empty by default) adds the HTML meta tag if a URL-prefix property is ever needed.
-- Subscribe buttons link to sign-in with `origem=<source>`; the sign-in page logs the `cta_clicked` funnel step for known sources only (`CTA_SOURCES` in `src/lib/funnel-events.ts`). No third-party tracker. See `docs/29-CONVERSION-FUNNEL.md`.
+- Subscribe buttons link to sign-in with `origem=<source>`; the sign-in page logs the `cta_clicked` funnel step for known sources only (`CTA_SOURCES` in `src/lib/funnel-events.ts`). The Coded Insights tracker in the root layout records page views separately. See `docs/29-CONVERSION-FUNNEL.md`.

@@ -14,6 +14,7 @@ describe("buildContentSecurityPolicy", () => {
     expect(policy).not.toContain("'unsafe-eval'");
     expect(policy).toContain("style-src 'self' 'nonce-abc123'");
     expect(policy).toContain("frame-src https://accounts.google.com");
+    expect(policy).toContain("https://insights.codedbym.com");
   });
 
   it("allows eval only for the local Next.js development server", () => {
