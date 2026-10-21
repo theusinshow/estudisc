@@ -10,7 +10,7 @@ import { publicPageMetadata } from "@/features/public-site/seo";
 import { siteUrl } from "@/features/public-site/site-url";
 import { PublicLayout } from "@/features/public-site/public-layout";
 import { AccessFacts } from "@/features/public-site/access-facts";
-import { daysUntilExam } from "@/features/public-site/countdown";
+import { daysUntilExam, examCountdownLabel } from "@/features/public-site/countdown";
 import { SampleQuestion } from "@/features/public-site/sample-question";
 import { loadSampleQuestion } from "@/features/public-site/sample-question-loader";
 import { GoalTower } from "@/features/today/goal-tower";
@@ -26,13 +26,19 @@ export const dynamic = "force-dynamic";
 /** Subject code from a lesson id ("MAT-07" → "MAT"); colors the chip with the subject accent. */
 const subjectOf = (lessonId: string) => lessonId.split("-")[0];
 
+const SUBJECTS = [
+  { code: "MAT", name: "Matemática" },
+  { code: "CIE", name: "Ciências" },
+  { code: "POR", name: "Língua Portuguesa" },
+  { code: "GH", name: "Geografia e História" }
+] as const;
+
 export default async function ConhecaPage() {
   const salesOpen = getServerEnv().FEATURE_PAID_ACCESS;
   const lastDay = accessLastDay();
   const days = daysUntilExam();
-  const sample = await loadSampleQuestion();
+  const [sample, base] = await Promise.all([loadSampleQuestion(), siteUrl()]);
   const c = CONTENT_SUMMARY;
-  const base = await siteUrl();
   // Visible FAQ and FAQPage data share one source; every answer restates what this page already says.
   const faq: FaqItem[] = [
     { question: "Quanto custa?", answer: `R$ ${LIFETIME_PRICE_BRL}, pagamento único.` },
@@ -45,90 +51,136 @@ export default async function ConhecaPage() {
   const signup = (origem: "landing_hero" | "landing_free") => salesOpen
     ? <Link href={`/auth/signin?callbackUrl=%2F&origem=${origem}`} className="primary-action">Criar conta grátis<ArrowRight aria-hidden="true" /></Link>
     : <Link href="/suporte?acesso=1" className="primary-action">Peça acesso<ArrowRight aria-hidden="true" /></Link>;
+  const catalog = [
+    { value: formatCount(c.lessons), label: "aulas sobre os conteúdos do edital" },
+    { value: formatCount(c.lessonQuestions), label: "questões com dica e solução comentada" },
+    { value: formatCount(c.simulationTemplates), label: `simulados completos no formato da prova, com ${formatCount(c.simulationQuestions)} questões` },
+    { value: formatCount(c.pastExams), label: "provas anteriores do IFSC, corrigidas pelo gabarito oficial" }
+  ];
   return (
-    <PublicLayout labelledBy="conheca-title">
-      <div className="landing">
-        <section className="landing-hero">
-          <div className="landing-hero-top">
-            <p className="landing-kicker">Exame de Classificação IFSC 2027/1</p>
-            {days === null ? null : days === 0
-              ? <p className="landing-countdown"><span>A prova é hoje</span></p>
-              : <p className="landing-countdown"><strong>{days}</strong><span>{days === 1 ? "dia" : "dias"} para a prova<br />{lastDay}</span></p>}
-          </div>
-          <h1 id="conheca-title">Seu plano para a prova do IFSC, uma aula por vez</h1>
-          <p className="landing-lead">Aulas curtas, questões com explicação, simulados e provas anteriores do IFSC, tudo no celular. {salesOpen ? "Comece grátis." : "Por enquanto, o acesso é por convite."}</p>
-          <div className="landing-actions">
-            {signup("landing_hero")}
-            <Link href="/auth/signin" className="landing-text-link">Já tenho conta</Link>
-          </div>
-        </section>
+    <PublicLayout
+      labelledBy="conheca-title"
+      headerAction={salesOpen
+        ? <Link href="/auth/signin?callbackUrl=%2F&origem=landing_hero" className="primary-action header-signup">Criar conta</Link>
+        : <Link href="/suporte?acesso=1" className="primary-action header-signup">Peça acesso</Link>}
+    >
+      <div className="landing landing-sales">
+        <div className="sales-intro">
+          <section className="sales-hero">
+            <div className="sales-hero-copy">
+              <div className="sales-hero-top">
+                <p className="landing-kicker">Exame de Classificação IFSC 2027/1</p>
+                {days === null ? null : days === 0
+                  ? <p className="sales-countdown">A prova é hoje</p>
+                  : <p className="sales-countdown" aria-label={`${examCountdownLabel(days)}, ${lastDay}`}>
+                    <strong aria-hidden="true">{days}</strong>
+                    <span aria-hidden="true">{days === 1 ? "dia" : "dias"} para a prova<br />{lastDay}</span>
+                  </p>}
+              </div>
+              <h1 id="conheca-title">A prova do IFSC, uma aula por vez.</h1>
+              <p className="landing-lead">Aulas curtas, questões com dica e explicação, simulados no formato da prova e as provas anteriores do IFSC. No celular. {salesOpen ? "A conta grátis abre uma aula de cada matéria." : "Por enquanto, o acesso é por convite."}</p>
+              <div className="landing-actions">
+                {signup("landing_hero")}
+                <Link href="/auth/signin" className="landing-text-link">Já tenho conta</Link>
+              </div>
+              <ul className="sales-facts">
+                <li>R$ {LIFETIME_PRICE_BRL}, pagamento único</li>
+                <li>Acesso até {lastDay}</li>
+                <li>7 dias para desistir</li>
+              </ul>
+            </div>
+          </section>
 
-        {sample ? <section className="landing-block landing-try" aria-labelledby="try-title">
-          <h2 id="try-title">Tenta uma</h2>
-          <p>Uma questão de verdade, tirada de uma aula. Marque e confira.</p>
-          <SampleQuestion question={sample} />
-        </section> : null}
+          <section className="sales-rail" aria-labelledby="materias-title">
+            <h2 id="materias-title">Matérias do edital</h2>
+            <ul className="sales-subjects">
+              {SUBJECTS.map(subject => <li key={subject.code} data-subject={subject.code}>{subject.name}</li>)}
+            </ul>
+          </section>
+        </div>
 
-        <section className="landing-block" aria-labelledby="como-title">
-          <h2 id="como-title">Como é estudar aqui</h2>
-          <ol className="landing-steps">
+        <section className="sales-block" aria-labelledby="como-title">
+          <div className="sales-head">
+            <h2 id="como-title">Como é estudar aqui</h2>
+            <p>A próxima aula abre sozinha. Você responde, vê a explicação, e o que errou volta nos dias seguintes.</p>
+          </div>
+          <ol className="sales-flow">
             <li>
+              <div className="sales-flow-copy">
+                <h3><span className="sales-step">1</span>Um botão abre a próxima aula</h3>
+                <p>Você não precisa decidir por onde começar. Parou no meio? Ele volta de onde você parou.</p>
+              </div>
               <div className="landing-shot landing-shot-lesson" data-subject="MAT" aria-hidden="true">
                 <span className="landing-shot-subject">Matemática</span>
                 <strong>Porcentagem</strong>
-                <span className="landing-shot-meta">Próxima aula · ~15 min</span>
+                <span className="landing-shot-meta">Próxima aula</span>
                 <span className="landing-shot-cta">Continuar<ArrowRight /></span>
               </div>
-              <h3>Um botão abre a próxima aula</h3>
-              <p>Você não precisa decidir por onde começar. Parou no meio? Ele volta de onde você parou.</p>
             </li>
             <li>
+              <div className="sales-flow-copy">
+                <h3><span className="sales-step">2</span>Errou? Tem dica e explicação</h3>
+                <p>Tente de novo, peça uma dica ou veja a solução comentada de cada questão.</p>
+              </div>
               <div className="landing-shot landing-shot-hint" aria-hidden="true">
                 <span className="landing-shot-stem">Quanto é 25% de 80?</span>
                 <span className="landing-shot-answer" data-result="incorrect"><b>B</b><span>25</span><X /></span>
                 <span className="landing-shot-answer" data-result="correct"><b>D</b><span>20</span><Check /></span>
                 <span className="landing-shot-tip"><Lightbulb />Dica: 25% é a quarta parte do todo.</span>
               </div>
-              <h3>Errou? Tem dica e explicação</h3>
-              <p>Tente de novo, peça uma dica ou veja a solução comentada de cada questão.</p>
             </li>
             <li>
+              <div className="sales-flow-copy">
+                <h3><span className="sales-step">3</span>O que você erra volta para revisar</h3>
+                <p>Nos dias seguintes, o que você errou volta para revisão. A meta do dia mostra quanto falta.</p>
+              </div>
               <div className="landing-shot landing-shot-goal" aria-hidden="true"><GoalTower answered={6} decorative /></div>
-              <h3>O que você erra volta para revisar</h3>
-              <p>Nos dias seguintes, o que você errou volta para revisão. A meta do dia mostra quanto falta.</p>
             </li>
           </ol>
         </section>
 
-        <section className="landing-block" aria-labelledby="conteudo-title">
-          <h2 id="conteudo-title">Tudo para a prova</h2>
-          <ul className="landing-numbers">
-            <li><strong>{formatCount(c.lessons)}</strong><span>aulas sobre os conteúdos do edital</span></li>
-            <li><strong>{formatCount(c.lessonQuestions)}</strong><span>questões com dica e solução comentada</span></li>
-            <li><strong>{c.simulationTemplates}</strong><span>simulados completos no formato da prova</span></li>
-            <li><strong>{c.pastExams}</strong><span>provas anteriores do IFSC, corrigidas pelo gabarito oficial</span></li>
+        {sample ? <section className="sales-block landing-try" aria-labelledby="try-title">
+          <div className="sales-head">
+            <h2 id="try-title">Tenta uma</h2>
+            <p>Uma questão publicada, de uma aula grátis. Marque e confira. Nada fica gravado.</p>
+          </div>
+          <SampleQuestion question={sample} />
+        </section> : null}
+
+        <section className="sales-block" aria-labelledby="conteudo-title">
+          <div className="sales-head">
+            <h2 id="conteudo-title">O que já está publicado</h2>
+            <p>Conteúdo publicado para o Exame de Classificação 2027/1, nas quatro matérias do edital.</p>
+          </div>
+          <ul className="sales-index">
+            {catalog.map(item => <li key={item.label}><strong>{item.value}</strong><span>{item.label}</span></li>)}
           </ul>
-          <p>{c.subjects.join(", ").replace(/, ([^,]+)$/, " e $1")}.</p>
         </section>
 
-        <section className="landing-block" aria-labelledby="gratis-title">
-          <h2 id="gratis-title">Grátis para começar</h2>
-          <p>{salesOpen ? "Crie sua conta e faça uma aula completa de cada matéria, sem pagar nada:" : "Quem recebe acesso começa por uma aula completa de cada matéria:"}</p>
+        <section className="sales-block" aria-labelledby="gratis-title">
+          <div className="sales-head">
+            <h2 id="gratis-title">Grátis para começar</h2>
+            <p>{salesOpen ? "Crie sua conta e faça uma aula completa de cada matéria, sem pagar nada." : "Quem recebe acesso começa por uma aula completa de cada matéria."}</p>
+          </div>
           <ul className="landing-free">
             {FREE_SAMPLE_LESSONS.map(lesson => <li key={lesson.id} data-subject={subjectOf(lesson.id)}>
-              <span>{lesson.subject}</span><strong>{lesson.title}</strong>
+              <span>{lesson.subject}</span>
+              <strong>{lesson.title}</strong>
+              <small>{lesson.interactiveFeature}</small>
             </li>)}
           </ul>
           {signup("landing_free")}
         </section>
 
-        <section id="preco" className="landing-price" aria-labelledby="preco-title">
-          <h2 id="preco-title">Acesso completo</h2>
-          <p className="landing-price-value"><strong>R$ {LIFETIME_PRICE_BRL}</strong><span>pagamento único</span></p>
+        <section id="preco" className="sales-price" aria-labelledby="preco-title">
+          <div className="sales-price-offer">
+            <h2 id="preco-title">Acesso completo</h2>
+            <p className="landing-price-value"><strong>R$ {LIFETIME_PRICE_BRL}</strong><span>pagamento único</span></p>
+            {salesOpen
+              ? <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=landing_price" className="primary-action">Criar conta e comprar<ArrowRight aria-hidden="true" /></Link>
+              : <p className="landing-note">As inscrições abrem em breve. <Link href="/suporte?acesso=1">Peça acesso</Link> enquanto isso.</p>}
+          </div>
           <AccessFacts className="landing-checks" withContent={false} />
-          {salesOpen
-            ? <Link href="/auth/signin?callbackUrl=%2Fupgrade&origem=landing_price" className="primary-action">Criar conta e comprar<ArrowRight aria-hidden="true" /></Link>
-            : <p className="landing-note">As inscrições abrem em breve. <Link href="/suporte?acesso=1">Peça acesso</Link> enquanto isso.</p>}
         </section>
 
         <section className="landing-fine" aria-labelledby="aviso-title">

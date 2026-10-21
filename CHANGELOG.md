@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-21 — Public sales page
+
+- `/conheca` is a poster landing on the vibrante frame: headline and signup first, the four edital subjects, how study works, the published catalog, the four free lessons, then the ink price block. Same facts as before (price, access date, refund, no approval guarantee, no IFSC link, guardian buys for minors). No new social proof.
+- SEO is unchanged: canonical and title on `/conheca`, the non-cached 301 from signed-out `/`, robots.txt and the sitemap. The sitemap `lastmod` for `/conheca` is 2026-10-21.
+
 ## 2026-10-21 — Public home redirect and legal meta descriptions
 
 - Visitors without a session who open `/` now get a 301 to `/conheca` (was a 307), with `Cache-Control: private, no-store` so browsers do not pin it. Signed-in `/` stays the study app. `/conheca` remains the canonical, the sitemap URL and the target of public internal links.

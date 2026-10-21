@@ -105,3 +105,73 @@
 .landing-sheet .secondary-action { justify-self: start; max-width: 100%; overflow-wrap: anywhere; }
 .landing .offer-price .primary-action { justify-content: space-between; }
 .landing .offer-price h2 { font-size: clamp(1.5rem, 6.5vw, 2rem); }
+
+/* /conheca sales page. Scoped so /pais-e-escolas keeps the shared sheets above.
+   Poster headline on the lime frame, one study sheet, one ink price block. */
+.public-main > .landing-sales { width: min(100%, 1040px); }
+.landing-sales { gap: 56px; }
+.landing-sales .sales-intro { display: grid; gap: 28px; }
+.landing-sales .sales-hero-copy { display: grid; gap: 16px; min-width: 0; }
+.landing-sales .sales-hero-top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.landing-sales .sales-hero h1 { margin: 0; font-size: clamp(2.5rem, 11vw, 4.75rem); font-weight: 900; font-stretch: 125%; line-height: 0.92; text-wrap: balance; overflow-wrap: break-word; }
+.landing-sales .sales-countdown { display: inline-flex; align-items: center; gap: 10px; margin: 0; padding: 6px 12px; border: 3px solid var(--estudisc-color-ink); border-radius: 14px; background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); }
+.landing-sales .sales-countdown strong { font-size: 1.75rem; font-weight: 900; font-stretch: 125%; line-height: 1; }
+.landing-sales .sales-countdown span { font-size: 0.75rem; font-weight: 800; line-height: 1.2; text-transform: uppercase; letter-spacing: 0.04em; }
+.landing-sales .sales-facts { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.landing-sales .sales-facts li { padding: 6px 12px; border: 2px solid var(--estudisc-color-ink); border-radius: 999px; background: var(--estudisc-color-panel); font-size: 0.8125rem; font-weight: 800; line-height: 1.3; }
+
+.landing-sales .sales-rail { display: grid; gap: 10px; }
+.landing-sales .sales-rail h2 { font-size: 0.8125rem; font-weight: 800; line-height: 1.3; letter-spacing: 0.06em; text-transform: uppercase; color: var(--estudisc-color-dim); }
+.landing-sales .sales-subjects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0; padding: 0; list-style: none; }
+.landing-sales .sales-subjects li { min-width: 0; padding: 12px 12px 12px 16px; border: 3px solid var(--estudisc-color-ink); border-left-width: 12px; border-left-color: var(--subject, var(--estudisc-color-signal)); border-radius: 16px; background: var(--estudisc-color-panel); font-weight: 800; line-height: 1.25; overflow-wrap: break-word; }
+
+.landing-sales .sales-block { display: grid; gap: 16px; min-width: 0; }
+.landing-sales .sales-head { display: grid; gap: 8px; max-width: 42rem; }
+.landing-sales .sales-head p { color: var(--estudisc-color-dim); }
+
+.landing-sales .sales-flow { display: grid; margin: 0; padding: 0; list-style: none; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-panel); box-shadow: 5px 5px 0 var(--estudisc-color-ink); overflow: hidden; }
+.landing-sales .sales-flow > li { display: grid; gap: 14px; min-width: 0; padding: 16px; }
+.landing-sales .sales-flow > li + li { border-top: 3px solid var(--estudisc-color-ink); }
+.landing-sales .sales-flow-copy { display: grid; gap: 6px; align-content: center; min-width: 0; }
+.landing-sales .sales-flow h3 { display: grid; grid-template-columns: 30px minmax(0, 1fr); align-items: center; gap: 10px; }
+.landing-sales .sales-flow h3 .sales-step { display: inline-grid; place-items: center; width: 30px; height: 30px; border: 2px solid var(--estudisc-color-ink); border-radius: 50%; background: var(--estudisc-color-signal); font-size: 0.9375rem; }
+.landing-sales .sales-flow p { color: var(--estudisc-color-dim); }
+.landing-sales .sales-flow .landing-shot { min-height: 0; }
+
+.landing-sales .sales-index { display: grid; grid-template-columns: max-content minmax(0, 1fr); margin: 0; padding: 0; list-style: none; border-top: 3px solid var(--estudisc-color-ink); }
+.landing-sales .sales-index li { display: grid; grid-column: 1 / -1; grid-template-columns: subgrid; gap: 8px 20px; align-items: baseline; padding: 14px 0; border-bottom: 3px solid var(--estudisc-color-ink); }
+.landing-sales .sales-index strong { font-size: clamp(1.75rem, 6vw, 2.75rem); font-weight: 900; font-stretch: 125%; line-height: 0.95; font-variant-numeric: tabular-nums; }
+.landing-sales .sales-index span { font-weight: 700; line-height: 1.35; overflow-wrap: break-word; }
+
+.landing-sales .landing-free small { font-size: 0.8125rem; font-weight: 700; line-height: 1.35; color: var(--estudisc-color-dim); }
+.landing-sales .landing-free strong { overflow-wrap: break-word; }
+
+/* Decision block: ink sheet, lime type, the yellow button is the only signal color. */
+.landing-sales .sales-price { display: grid; gap: 20px; padding: 20px; border: 3px solid var(--estudisc-color-ink); border-radius: var(--estudisc-radius-learning-card); background: var(--estudisc-color-ink); color: var(--estudisc-color-paper); box-shadow: 6px 6px 0 var(--estudisc-color-signal); scroll-margin-top: 16px; }
+.landing-sales .sales-price-offer { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.landing-sales .sales-price .landing-price-value span { font-weight: 800; }
+.landing-sales .sales-price .landing-checks svg { color: var(--estudisc-color-ink); }
+.landing-sales .sales-price .landing-note { border-left-color: var(--estudisc-color-signal); }
+.landing-sales .sales-price .landing-note a { color: var(--estudisc-color-paper); }
+
+[data-theme="vibrante"] .public-header .header-signup { display: none; }
+
+@media (min-width: 720px) {
+  .landing-sales .sales-subjects { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  [data-theme="vibrante"] .public-header .header-signup { display: inline-flex; min-height: 44px; padding: 0 16px; box-shadow: 3px 3px 0 var(--estudisc-color-ink); }
+}
+@media (min-width: 800px) {
+  .landing-sales .sales-hero-copy { grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr); column-gap: 48px; row-gap: 14px; align-items: end; }
+  .landing-sales .sales-hero-top { grid-column: 2; grid-row: 1; align-self: start; }
+  .landing-sales .sales-hero h1 { grid-column: 1; grid-row: 1 / span 4; max-width: none; align-self: end; }
+  .landing-sales .sales-hero .landing-lead,
+  .landing-sales .sales-hero .landing-actions,
+  .landing-sales .sales-hero .sales-facts { grid-column: 2; }
+  .landing-sales .sales-flow > li { grid-template-columns: minmax(0, 1fr) minmax(220px, 300px); align-items: center; column-gap: 24px; }
+  .landing-sales .sales-price { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); gap: 28px; align-items: center; padding: 28px; }
+  .landing-sales .sales-price .landing-checks { padding-left: 28px; border-left: 3px solid color-mix(in srgb, var(--estudisc-color-paper) 45%, transparent); }
+}
+@media (max-width: 719px) {
+  .landing-sales { gap: 40px; }
+  .landing-sales .sales-intro { gap: 22px; }
+}
